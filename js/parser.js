@@ -39,17 +39,33 @@ function parseMultiDocument(content) {
 }
 
 /**
+ * Gets the base path for the application, accounting for GitHub Pages subdirectory.
+ * @returns {string} The base path (e.g., '' for root, '/ew-bachelor/' for GitHub Pages)
+ */
+function getBasePath() {
+    // Get the path name and extract the base directory if present
+    const path = window.location.pathname;
+    const match = path.match(/^\/([^\/]+)\//);
+    // If running on GitHub Pages (e.g., /ew-bachelor/), return that path
+    // Otherwise return empty string for local/root deployment
+    return match ? `/${match[1]}/` : '/';
+}
+
+/**
  * Fetches the list of content files and parses them into a structured object.
  * @returns {object} The structured content of the entire application.
  */
 async function parseContent() {
     const content = {};
-    const response = await fetch('content/content-list.json');
+    const basePath = getBasePath();
+    const contentListPath = basePath === '/' ? 'content/content-list.json' : `${basePath}content/content-list.json`;
+    const response = await fetch(contentListPath);
     const fileList = await response.json();
 
     for (const filePath of fileList) {
         try {
-            const fileResponse = await fetch(filePath);
+            const fullPath = basePath === '/' ? filePath : `${basePath}${filePath}`;
+            const fileResponse = await fetch(fullPath);
             const fileContent = await fileResponse.text();
             
             // Extract module and lecture ID from file path
