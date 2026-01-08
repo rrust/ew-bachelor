@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutritional Science Learning App</title>
+    <title>Ernährungswissenschaft Lern-App</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
     <!-- View for the initial welcome screen -->
     <div id="welcome-view" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg max-w-md text-center">
-        <h1 class="text-3xl font-bold mb-4">Welcome to the Nutritional Science Learning App!</h1>
-        <p class="mb-6">Please enter your name to get started:</p>
-        <input type="text" id="name-input" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <button id="start-button" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Start Learning</button>
+        <h1 class="text-3xl font-bold mb-4">Willkommen zur Ernährungswissenschaft Lern-App!</h1>
+        <p class="mb-6">Bitte gib deinen Namen ein, um zu beginnen:</p>
+        <input type="text" id="name-input" placeholder="Dein Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="start-button" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Lernen beginnen</button>
     </div>
 
     <!-- View for the module map -->
@@ -23,14 +23,50 @@
 
     <!-- View for a single lecture -->
     <div id="lecture-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg">
-        <button id="back-to-map-button" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Back to Module Map</button>
-        <div id="lecture-content" class="prose max-w-none"></div>
-        <button id="start-quiz-button" style="display: none;" class="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md transition duration-300">Start Quiz</button>
+        <button id="back-to-map-button" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Modulübersicht</button>
+        
+        <div id="lecture-content" class="prose max-w-none">
+            <div id="lecture-item-display" class="mb-8">
+                <!-- Current lecture item will be rendered here -->
+            </div>
+        </div>
+
+        <div id="lecture-nav" class="flex justify-between items-center mt-8">
+            <button id="prev-item-button" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">Zurück</button>
+            <select id="lecture-jump-to" class="mx-4 border-gray-300 rounded-md"></select>
+            <span id="lecture-progress" class="text-gray-600"></span>
+            <button id="next-item-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Weiter</button>
+        </div>
+        
+        <button id="start-quiz-button" style="display: none;" class="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md transition duration-300 w-full">Zum Abschlussquiz</button>
     </div>
 
     <!-- View for the quiz -->
     <div id="quiz-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg max-w-2xl">
+        <button id="back-to-lecture-button" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Vorlesung</button>
+        
+        <div id="quiz-progress-container" class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+            <div id="quiz-progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+        </div>
+        <p id="quiz-progress-text" class="text-center text-sm text-gray-600 mb-2"></p>
+        <p id="quiz-live-score" class="text-center text-sm text-gray-600 font-bold mb-6">Punkte: 0</p>
+
         <div id="quiz-content"></div>
+    </div>
+
+    <!-- View for Quiz Results (unified for both existing and just-completed) -->
+    <div id="quiz-results-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg max-w-md text-center">
+        <button id="back-to-lecture-from-results" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300 float-left">&larr; Zurück</button>
+        <div class="clear-both"></div>
+        <h2 id="results-title" class="text-2xl font-bold mb-4">Quiz abgeschlossen!</h2>
+        <p id="results-subtitle" class="mb-4">Dein Ergebnis:</p>
+        <p id="final-score-display" class="text-5xl font-bold mb-4 text-blue-600">0%</p>
+        <p id="final-badge-display" class="text-lg mb-8"></p>
+        <p id="retake-prompt" class="text-gray-600 mb-6" style="display: none;">Möchtest du das Quiz erneut absolvieren? Dies wird dein bisheriges Ergebnis überschreiben.</p>
+        <div class="space-y-3">
+            <button id="retake-quiz-button" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition duration-300" style="display: none;">Quiz wiederholen</button>
+            <button id="results-to-map-button" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Zurück zur Modulübersicht</button>
+        </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>

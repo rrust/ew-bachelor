@@ -28,21 +28,32 @@ The user is first greeted by a clean, welcoming screen.
 
 - **Initial State:** If it's the user's first visit, the app asks for their name.
 - **Returning User:** If progress is found in `localStorage`, it displays a "Welcome back, [Name]!" message.
-- **Main View (Module Map):** The central UI is a "Module Map," which visually represents the entire curriculum. Modules are displayed as cards or nodes.
+- **Main View (Module Map):** The central UI is a "Module Map," which visually represents the entire curriculum. All 14 modules from the Bachelor's curriculum are displayed as cards.
 - **Unlocking Logic:**
-    - **STEOPs (Grundlagen):** The initial set of modules (e.g., Modul 1-5) are unlocked by default.
-    - **Dependencies:** Higher-level modules are visually "locked." Hovering reveals the prerequisites (e.g., "Requires completion of Modul 5 & 8").
-    - **Completion:** Once a module's exam is passed, its card gets a golden border and a "Completed" checkmark.
-- **Module Cards:** Each card shows the module title, the user's current progress (as a percentage or progress bar), and the ECTS points.
+    - **STEOPs (Grundlagen):** The initial set of modules (Modul 1-5) are unlocked by default.
+    - **Dependencies:** Higher-level modules (6-14) are visually "locked" (not yet implemented: automatic unlocking based on prerequisites).
+    - **Completion:** Once a module's exam is passed (not yet implemented), its card displays completion status.
+- **Module Cards:** Each card shows:
+    - Module title and ECTS points
+    - Status badge (locked/unlocked)
+    - Overall progress badge: 🥇 (≥90% avg), 🥈 (≥70% avg), 🥉 (≥50% avg), or ⚪ (incomplete/no quizzes taken)
+    - Two icon buttons at bottom (right-aligned): 📚 (view lectures) and 📝 (module exam)
+    - Exam button disabled until 80% average quiz score is achieved
+    - Tooltips show detailed progress on hover
 
 ### 4.2. Learning & Exam Modes
 
-- **Learning Mode:** This is where the primary teaching occurs. When a user enters a lecture, they are in Learning Mode.
-    -   **Content Delivery:** For each topic, content is presented in various formats: reading material, embedded media, and interactive formats like flashcards.
-    -   **Lecture Quiz:** At the end of each lecture, a short quiz is presented. Based on the score, the user earns a **Bronze, Silver, or Gold badge**.
-- **Exam Mode:** The "Exam" is the final test for an entire module.
-    -   **Unlocking:** The Exam is locked until the user achieves an **average score of 80% or higher across all lecture quizzes** within that module.
-    -   **Format:** The exam is a longer, timed test pulling questions from all lectures in the module.
+- **Learning Mode:** This is where the primary teaching occurs. When a user clicks the lectures icon (📚) on a module card, they see all lectures for that module.
+    -   **Lecture List:** Each lecture shows title with two buttons: "Vorlesung" (learning) and "Quiz" (assessment).
+    -   **Content Delivery:** Lecture content is presented as a sequence of items: text, self-assessment questions, and other learning materials.
+    -   **Navigation:** Users navigate through lecture items using prev/next buttons or jump-to dropdown.
+    -   **Self-Assessment:** Interactive multiple-choice questions with immediate feedback (not graded).
+    -   **Lecture Quiz:** Separate graded quiz accessible via "Quiz" button. Based on score, user earns **Bronze (≥50%), Silver (≥70%), or Gold (≥90%) badge**.
+    -   **Quiz Retake:** When accessing a completed quiz, users see their existing score and can choose to retake (overwrites previous score).
+    -   **Badge Display:** Completed quizzes show badge emoji (🥇/🥈/🥉) next to Quiz button with percentage tooltip.
+- **Exam Mode:** The "Exam" is the final test for an entire module (not yet implemented).
+    -   **Unlocking:** The Exam button is disabled until the user achieves an **average score of 80% or higher across all lecture quizzes** within that module.
+    -   **Format:** Planned as a longer, timed test pulling questions from all lectures in the module.
 
 ## 5. Gamification & Progress
 
@@ -101,9 +112,53 @@ This section breaks down the concept into actionable implementation steps using 
 
 -   **[x] Task 3.1: Create Progress Management Utility**
     -   **AC:** A `js/progress.js` file is created.
-    -   **AC:** It contains functions to `getUserProgress`, `updateUserProgress`, and `resetUserProgress` in `localStorage`.
--   [x] Task 3.2: Implement Lecture Quiz Logic
+    -   **AC:** It contains functions to `getUserProgress`, `updateLectureProgress`, `resetLectureProgress`, and `resetUserProgress` in `localStorage`.
+    -   **AC:** Progress includes score and badge (gold/silver/bronze) based on quiz performance.
+-   **[x] Task 3.2: Implement Lecture Quiz Logic**
     -   **AC:** A function in `app.js` renders questions from parsed markdown into the DOM.
     -   **AC:** It checks answers, calculates a score, and updates the user's progress via the `progress.js` utility.
--   **[ ] Task 3.3: Implement Progress Backup**
+    -   **AC:** Quiz questions are rendered one at a time with progress tracking.
+    -   **AC:** Live score display during quiz shows current points.
+    -   **AC:** Final score is displayed at the end with percentage calculation.
+-   **[x] Task 3.3: Implement Lecture Selection View**
+    -   **AC:** Clicking a module card displays a list of available lectures for that module.
+    -   **AC:** Each lecture shows its title (from markdown metadata) and two buttons: "Vorlesung" and "Quiz".
+    -   **AC:** Badge emoji displays next to Quiz button if completed (🥇/🥈/🥉).
+    -   **AC:** Tooltip on badge shows exact percentage score.
+    -   **AC:** Users can directly start a lecture (learning mode) or jump to the quiz.
+-   **[x] Task 3.4: Implement Lecture Player**
+    -   **AC:** Learning items are displayed one at a time with navigation controls (prev/next/jump-to).
+    -   **AC:** Self-assessment MC questions are interactive with immediate feedback.
+    -   **AC:** A "Zum Abschlussquiz" button appears on the last lecture item if a quiz exists.
+-   **[x] Task 3.5: Display Current Score on Quiz Start**
+    -   **AC:** Unified results view shows existing score with badge when starting completed quiz.
+    -   **AC:** "Quiz wiederholen" button allows retaking with automatic score reset.
+    -   **AC:** Same view used for just-completed quizzes (without retake option).
+-   **[x] Task 3.6: Implement Module-Level Progress**
+    -   **AC:** Module cards display overall badge based on average quiz scores.
+    -   **AC:** Badge shows: 🥇 (≥90%), 🥈 (≥70%), 🥉 (≥50%), or ⚪ (incomplete).
+    -   **AC:** Tooltip displays "X of Y quizzes taken" or average percentage.
+-   **[x] Task 3.7: Implement Exam Unlocking**
+    -   **AC:** Exam button on module card requires 80% average to unlock.
+    -   **AC:** Disabled exam button shows tooltip: "Your current score: X%, you need 80%".
+    -   **AC:** Icon buttons (📚 for lectures, 📝 for exam) right-aligned at card bottom.
+-   **[x] Task 3.8: Add All 14 Modules**
+    -   **AC:** All modules from Bachelor's curriculum added to module map.
+    -   **AC:** Modules 1-5 unlocked by default (STEOPs), modules 6-14 locked.
+    -   **AC:** Cards have uniform minimum height for consistent appearance.
+-   **[ ] Task 3.9: Implement Progress Backup**
     -   **AC:** A button triggers a function to download the `localStorage` progress object as a JSON file.
+
+### Phase 4: Module Exams & Advanced Features
+
+-   **[ ] Task 4.1: Implement Module Exam**
+    -   **AC:** Module exam pulls questions from all lectures in the module.
+    -   **AC:** Exam is timed and tracks completion.
+    -   **AC:** Passing exam updates module status and unlocks dependent modules.
+-   **[ ] Task 4.2: Implement Module Dependencies**
+    -   **AC:** Higher-level modules show prerequisites when locked.
+    -   **AC:** Modules automatically unlock when dependencies are met.
+-   **[ ] Task 4.3: Add Progress Dashboard**
+    -   **AC:** Dedicated view shows overall completion statistics.
+    -   **AC:** Displays per-module breakdown with scores and time spent.
+    -   **AC:** Shows all earned badges and achievements.

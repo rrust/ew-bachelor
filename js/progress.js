@@ -57,3 +57,15 @@ function updateLectureProgress(moduleId, lectureId, score) {
     saveUserProgress(progress);
     console.log('Progress updated:', progress);
 }
+
+// Resets the progress for a specific lecture
+function resetLectureProgress(moduleId, lectureId) {
+    const progress = getUserProgress();
+    if (!progress) return;
+
+    if (progress.modules?.[moduleId]?.lectures?.[lectureId]) {
+        delete progress.modules[moduleId].lectures[lectureId];
+        saveUserProgress(progress);
+        console.log(`Progress for ${lectureId} in ${moduleId} reset.`);
+    }
+}
