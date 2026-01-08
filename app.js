@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const buttons = {
         start: document.getElementById('start-button'),
         backToMap: document.getElementById('back-to-map-button'),
+        backToLectures: document.getElementById('back-to-lectures-button'),
         startQuiz: document.getElementById('start-quiz-button'),
         prevItem: document.getElementById('prev-item-button'),
         nextItem: document.getElementById('next-item-button'),
@@ -326,8 +327,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
         
-        document.getElementById('lecture-nav').style.display = 'none';
-        buttons.startQuiz.style.display = 'none';
+        // Show lecture list, hide player
+        document.getElementById('lecture-list-container').style.display = 'block';
+        document.getElementById('lecture-player').style.display = 'none';
         showView('lecture');
     }
 
@@ -342,10 +344,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Set up the player structure
-        const lectureContentDiv = document.getElementById('lecture-content');
-        lectureContentDiv.innerHTML = '<div id="lecture-item-display" class="mb-8"></div>';
-
         currentLectureItems = lecture.items;
         currentItemIndex = 0;
         
@@ -358,7 +356,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             inputs.lectureJumpTo.appendChild(option);
         });
 
-        document.getElementById('lecture-nav').style.display = 'flex';
+        // Show player, hide lecture list
+        document.getElementById('lecture-list-container').style.display = 'none';
+        document.getElementById('lecture-player').style.display = 'flex';
         renderCurrentLectureItem();
         showView('lecture');
     }
@@ -595,6 +595,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         buttons.backToMap.addEventListener('click', () => {
             loadModules(); // Reload modules in case progress was made
             showView('moduleMap');
+        });
+
+        buttons.backToLectures.addEventListener('click', () => {
+            displayLecturesForModule(currentModuleId);
         });
 
         buttons.backToLecture.addEventListener('click', () => {
