@@ -8,13 +8,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   let currentLectureId = null;
 
   // State for the lecture player
-  let currentLectureItems = [];
-  let currentItemIndex = 0;
-
-  // State for the final quiz
-  let quizData = null;
-  let currentQuestionIndex = 0;
-  let userScore = 0;
+  const lectureState = {
+    currentItems: [],
+    currentIndex: 0
+  };
 
   // --- DOM Element Caching ---
   const views = {
@@ -82,6 +79,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     resultsTitle: document.getElementById('results-title'),
     resultsSubtitle: document.getElementById('results-subtitle'),
     retakePrompt: document.getElementById('retake-prompt')
+  };
+
+  const lectureElements = {
+    lectureJumpTo: inputs.lectureJumpTo,
+    lectureListContainer: document.getElementById('lecture-list-container'),
+    lecturePlayer: document.getElementById('lecture-player'),
+    lectureOverview: document.getElementById('lecture-overview')
   };
 
   // --- URL Routing ---
@@ -243,315 +247,65 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // --- Module & Lecture Loading ---
+  // --- Module & Lecture Loading (using ModulesModule) ---
   function getModuleStats(moduleId) {
-    const module = APP_CONTENT[moduleId];
-    const progress = getUserProgress();
-
-    if (!module || !module.lectures) {
-      return {
-        totalQuizzes: 0,
-        completedQuizzes: 0,
-        averageScore: 0,
-        badge: 'none'
-      };
-    }
-
-    let totalQuizzes = 0;
-    let completedQuizzes = 0;
-    let totalScore = 0;
-
-    for (const lectureId in module.lectures) {
-      const lecture = module.lectures[lectureId];
-      if (lecture.quiz && lecture.quiz.length > 0) {
-        totalQuizzes++;
-        const lectureProgress =
-          progress?.modules?.[moduleId]?.lectures?.[lectureId];
-        if (lectureProgress && lectureProgress.score !== undefined) {
-          completedQuizzes++;
-          totalScore += lectureProgress.score;
-        }
-      }
-    }
-
-    const averageScore =
-      completedQuizzes > 0 ? totalScore / completedQuizzes : 0;
-
-    // Determine badge based on average score of completed quizzes
-    let badge = 'none';
-    if (completedQuizzes > 0) {
-      if (averageScore >= 90) {
-        badge = 'gold';
-      } else if (averageScore >= 70) {
-        badge = 'silver';
-      } else if (averageScore >= 50) {
-        badge = 'bronze';
-      } else {
-        badge = 'incomplete';
-      }
-    }
-
-    return { totalQuizzes, completedQuizzes, averageScore, badge };
+    return window.ModulesModule.getModuleStats(
+      moduleId,
+      APP_CONTENT,
+      getUserProgress
+    );
   }
 
   function loadModuleCards() {
-    const moduleGrid = document.getElementById('module-grid');
-    moduleGrid.innerHTML = '';
-
-    // Sort modules by order
-    const sortedModules = [...MODULES].sort((a, b) => a.order - b.order);
-
-    for (const module of sortedModules) {
-      const card = createModuleCard(module.id, module, () =>
-        displayLecturesForModule(module.id)
-      );
-      moduleGrid.appendChild(card);
-    }
+    window.ModulesModule.loadModuleCards(
+      MODULES,
+      APP_CONTENT,
+      getUserProgress,
+      getModuleStats,
+      createModuleCard,
+      displayLecturesForModule
+    );
   }
 
   function createModuleCard(moduleId, moduleMeta, onClick) {
-    const stats = getModuleStats(moduleId);
-
-    const card = document.createElement('div');
-    card.className =
-      'module-card bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[200px]';
-
-    if (moduleMeta.status === 'gesperrt') {
-      card.classList.add('locked', 'opacity-50');
-    }
-
-    // Card Header: Status (left), ECTS (center), Badge (right)
-    let cardHTML = `
-            <div class="card-header flex items-center justify-between px-4 py-3 border-b dark:border-gray-700 rounded-t-lg">
-                <div class="status-badge text-xs font-semibold px-2 py-1 rounded-full ${
-                  moduleMeta.status === 'gesperrt'
-                    ? 'bg-red-200 dark:bg-red-900 text-red-800 dark:text-red-200'
-                    : 'bg-green-200 dark:bg-green-900 text-green-800 dark:text-green-200'
-                }">${moduleMeta.status}</div>
-                <span class="text-sm font-medium text-gray-600 dark:text-gray-400">${
-                  moduleMeta.ects
-                } ECTS</span>
-        `;
-
-    // Badge on the right
-    cardHTML += '<div class="badge-container">';
-    if (stats.totalQuizzes > 0 && moduleMeta.status !== 'gesperrt') {
-      if (stats.badge === 'gold') {
-        cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(
-          0
-        )}%">🥇</span>`;
-      } else if (stats.badge === 'silver') {
-        cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(
-          0
-        )}%">🥈</span>`;
-      } else if (stats.badge === 'bronze') {
-        cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(
-          0
-        )}%">🥉</span>`;
-      } else if (stats.badge === 'incomplete') {
-        cardHTML += `<span class="text-2xl" title="${stats.completedQuizzes} von ${stats.totalQuizzes} Quizzes absolviert">⚪</span>`;
-      } else {
-        cardHTML += `<span class="text-2xl text-gray-300" title="Noch keine Quizzes absolviert">⚪</span>`;
-      }
-    } else {
-      cardHTML +=
-        '<span class="text-2xl text-gray-300" title="Noch keine Quizzes absolviert">⚪</span>';
-    }
-    cardHTML += '</div>';
-    cardHTML += '</div>'; // Close header
-
-    // Card Content: Module Title and Description
-    cardHTML += `
-            <div class="card-content flex-grow px-4 py-6">
-                <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">${
-                  moduleMeta.title
-                }</h3>
-                <p class="text-sm text-gray-500 dark:text-gray-400">${
-                  moduleMeta.description || ''
-                }</p>
-            </div>
-        `;
-
-    // Card Footer: Action buttons (right aligned)
-    if (moduleMeta.status !== 'gesperrt') {
-      cardHTML +=
-        '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-end space-x-2">';
-      cardHTML += `<button class="view-lectures-btn text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesungen</button>`;
-
-      // Exam button
-      const examEnabled =
-        stats.averageScore >= 80 && stats.completedQuizzes > 0;
-      const examBtnClass = examEnabled
-        ? 'text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200'
-        : 'text-sm px-3 py-1.5 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 font-medium rounded cursor-not-allowed';
-
-      const examTooltip = examEnabled
-        ? 'Modulprüfung ablegen'
-        : `Deine aktuelle Punktzahl: ${stats.averageScore.toFixed(
-            0
-          )}%, du brauchst 80%`;
-
-      cardHTML += `<button class="exam-btn ${examBtnClass}" ${
-        !examEnabled ? 'disabled' : ''
-      } title="${examTooltip}">Prüfung</button>`;
-      cardHTML += '</div>'; // Close footer
-    }
-
-    card.innerHTML = cardHTML;
-
-    // Add event listeners
-    if (moduleMeta.status !== 'gesperrt') {
-      const viewLecturesBtn = card.querySelector('.view-lectures-btn');
-      viewLecturesBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        onClick();
-      });
-
-      const examBtn = card.querySelector('.exam-btn');
-      if (examBtn && !examBtn.disabled) {
-        examBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          // TODO: Start module exam
-          alert('Modulprüfung wird noch implementiert.');
-        });
-      }
-    }
-
-    return card;
+    return window.ModulesModule.createModuleCard(
+      moduleId,
+      moduleMeta,
+      APP_CONTENT,
+      getUserProgress,
+      getModuleStats,
+      onClick
+    );
   }
 
   function displayLecturesForModule(moduleId) {
     currentModuleId = moduleId;
-    const module = APP_CONTENT[moduleId];
-    const progress = getUserProgress();
-
-    if (!module || !module.lectures) {
-      alert('Für dieses Modul wurden keine Vorlesungen gefunden.');
-      return;
-    }
-
-    // Update URL
-    const moduleData = MODULES.find((m) => m.id === moduleId);
-    updateURL(`/module/${moduleId}`, moduleData?.title || 'Module');
-
-    // Hide player and overview, show lecture list
-    document.getElementById('lecture-player').style.display = 'none';
-    document.getElementById('lecture-overview').style.display = 'none';
-    document.getElementById('lecture-list-container').style.display = 'block';
-    showView('lecture');
-
-    const lectureContentDiv = document.getElementById('lecture-content');
-    lectureContentDiv.innerHTML = ''; // Clear previous player UI
-
-    const header = document.createElement('h2');
-    header.className = 'text-2xl font-bold mb-4';
-    header.textContent = `Vorlesungen für ${moduleData?.title || moduleId}`;
-    lectureContentDiv.appendChild(header);
-
-    const lectureList = document.createElement('ul');
-    lectureList.className = 'space-y-4';
-    for (const lectureId in module.lectures) {
-      const lecture = module.lectures[lectureId];
-      if (lecture.items.length === 0) continue; // Don't show empty lectures
-
-      const lectureProgress =
-        progress?.modules?.[moduleId]?.lectures?.[lectureId];
-
-      const listItem = document.createElement('li');
-      listItem.className =
-        'p-4 bg-gray-50 dark:bg-gray-700 rounded-lg flex justify-between items-center';
-
-      let contentHTML = `<div class="flex-grow">
-                <h3 class="font-bold">${
-                  lecture.topic || lectureId.replace(/-/g, ' ')
-                }</h3>`;
-
-      // Add description if available
-      if (lecture.description) {
-        contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">${lecture.description}</p>`;
-      }
-
-      contentHTML += `</div>`;
-
-      contentHTML += '<div class="flex-shrink-0 flex items-center space-x-2">';
-      contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Vorlesung</button>`;
-      contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Übersicht</button>`;
-
-      if (lecture.quiz && lecture.quiz.length > 0) {
-        contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-600 text-sm">Quiz</button>`;
-
-        // Determine badge emoji
-        let badgeEmoji = '';
-        let tooltipText = '';
-
-        if (lectureProgress?.badge === 'gold') {
-          badgeEmoji = '🥇';
-          tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(
-            0
-          )}%`;
-        } else if (lectureProgress?.badge === 'silver') {
-          badgeEmoji = '🥈';
-          tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(
-            0
-          )}%`;
-        } else if (lectureProgress?.badge === 'bronze') {
-          badgeEmoji = '🥉';
-          tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(
-            0
-          )}%`;
-        } else {
-          // No score yet - show placeholder
-          badgeEmoji = '⚪';
-          tooltipText = 'Quiz noch nicht absolviert';
-        }
-
-        // Add badge after quiz button with tooltip
-        contentHTML += `<span class="text-2xl ${
-          lectureProgress?.badge ? '' : 'text-gray-300'
-        }" title="${tooltipText}">${badgeEmoji}</span>`;
-      }
-      contentHTML += '</div>';
-
-      listItem.innerHTML = contentHTML;
-      lectureList.appendChild(listItem);
-    }
-    lectureContentDiv.appendChild(lectureList);
-
-    // Add event listeners for the new buttons
-    lectureList.addEventListener('click', (e) => {
-      const button = e.target.closest('button[data-action]');
-      if (!button) return;
-
-      const action = button.dataset.action;
-      const modId = button.dataset.module;
-      const lecId = button.dataset.lecture;
-
-      if (action === 'start-lecture') {
-        startLecture(modId, lecId);
-      } else if (action === 'show-lecture-overview') {
-        // Load lecture and show overview directly
+    window.ModulesModule.displayLecturesForModule(
+      moduleId,
+      APP_CONTENT,
+      MODULES,
+      getUserProgress,
+      updateURL,
+      showView,
+      startLecture,
+      (modId, lecId) => {
+        currentModuleId = modId;
+        currentLectureId = lecId;
+        startQuiz();
+      },
+      (modId, lecId) => {
         currentModuleId = modId;
         currentLectureId = lecId;
         const lecture = APP_CONTENT[modId]?.lectures[lecId];
         if (lecture && lecture.items && lecture.items.length > 0) {
-          currentLectureItems = lecture.items;
-          currentItemIndex = 0;
+          lectureState.currentItems = lecture.items;
+          lectureState.currentIndex = 0;
           showLectureOverview();
         } else {
           alert('Diese Vorlesung hat keinen Inhalt.');
         }
-      } else if (action === 'start-quiz') {
-        // Set current lecture context before starting quiz directly
-        currentModuleId = modId;
-        currentLectureId = lecId;
-        startQuiz();
       }
-    });
-
-    // Show lecture list, hide player
-    document.getElementById('lecture-list-container').style.display = 'block';
-    document.getElementById('lecture-player').style.display = 'none';
-    showView('lecture');
+    );
   }
 
   // --- Lecture Player Logic ---
@@ -565,8 +319,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
 
-    currentLectureItems = lecture.items;
-    currentItemIndex = 0;
+    lectureState.currentItems = lecture.items;
+    lectureState.currentIndex = 0;
 
     // Update URL
     const moduleData = MODULES.find((m) => m.id === moduleId);
@@ -578,7 +332,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Populate jump-to dropdown
     inputs.lectureJumpTo.innerHTML = '';
-    currentLectureItems.forEach((item, index) => {
+    lectureState.currentItems.forEach((item, index) => {
       const option = document.createElement('option');
       option.value = index;
       option.textContent = `Schritt ${index + 1}`;
@@ -593,7 +347,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderCurrentLectureItem() {
-    const item = currentLectureItems[currentItemIndex];
+    const item = lectureState.currentItems[lectureState.currentIndex];
     const lectureItemDisplay = document.getElementById('lecture-item-display');
     lectureItemDisplay.innerHTML = ''; // Clear previous item
 
@@ -744,25 +498,26 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function updateLectureNav() {
-    const totalItems = currentLectureItems.length;
+    const totalItems = lectureState.currentItems.length;
     displays.lectureProgress.textContent = `Schritt ${
-      currentItemIndex + 1
+      lectureState.currentIndex + 1
     } / ${totalItems}`;
-    inputs.lectureJumpTo.value = currentItemIndex;
+    inputs.lectureJumpTo.value = lectureState.currentIndex;
 
     // Update URL for current item
     updateURL(
-      `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
+      `/module/${currentModuleId}/lecture/${currentLectureId}/item/${lectureState.currentIndex}`,
       document.title.split(' - ')[0]
     );
 
-    buttons.prevItem.style.display = currentItemIndex > 0 ? 'block' : 'none';
+    buttons.prevItem.style.display =
+      lectureState.currentIndex > 0 ? 'block' : 'none';
     buttons.nextItem.style.display =
-      currentItemIndex < totalItems - 1 ? 'block' : 'none';
+      lectureState.currentIndex < totalItems - 1 ? 'block' : 'none';
 
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     buttons.startQuiz.style.display =
-      currentItemIndex === totalItems - 1 && lecture.quiz.length > 0
+      lectureState.currentIndex === totalItems - 1 && lecture.quiz.length > 0
         ? 'block'
         : 'none';
   }
@@ -800,20 +555,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Generate description based on content
-    const totalItems = currentLectureItems.length;
-    const contentCount = currentLectureItems.filter(
+    const totalItems = lectureState.currentItems.length;
+    const contentCount = lectureState.currentItems.filter(
       (i) => i.type === 'learning-content'
     ).length;
-    const questionCount = currentLectureItems.filter(
+    const questionCount = lectureState.currentItems.filter(
       (i) => i.type === 'self-assessment-mc'
     ).length;
-    const videoCount = currentLectureItems.filter(
+    const videoCount = lectureState.currentItems.filter(
       (i) => i.type === 'youtube-video'
     ).length;
-    const imageCount = currentLectureItems.filter(
+    const imageCount = lectureState.currentItems.filter(
       (i) => i.type === 'image'
     ).length;
-    const diagramCount = currentLectureItems.filter(
+    const diagramCount = lectureState.currentItems.filter(
       (i) => i.type === 'mermaid-diagram'
     ).length;
 
@@ -837,7 +592,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       ' • '
     )}`;
 
-    currentLectureItems.forEach((item, index) => {
+    lectureState.currentItems.forEach((item, index) => {
       const card = document.createElement('div');
       card.className =
         'bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer';
@@ -914,13 +669,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       `;
 
       card.addEventListener('click', () => {
-        currentItemIndex = index;
+        lectureState.currentIndex = index;
         renderCurrentLectureItem();
         document.getElementById('lecture-player').style.display = 'flex';
         document.getElementById('lecture-overview').style.display = 'none';
         // Update URL for the specific item
         updateURL(
-          `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
+          `/module/${currentModuleId}/lecture/${currentLectureId}/item/${lectureState.currentIndex}`,
           document.title.split(' - ')[0]
         );
       });
@@ -938,169 +693,85 @@ document.addEventListener('DOMContentLoaded', async () => {
     );
   }
 
-  // --- Quiz Logic ---
+  // --- Quiz Logic (using QuizModule) ---
+  const quizState = {
+    data: null,
+    currentQuestionIndex: 0,
+    userScore: 0
+  };
+
   function startQuiz() {
-    const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
-    if (!lecture || lecture.quiz.length === 0) {
-      alert('Für diese Vorlesung wurde kein Abschlussquiz gefunden.');
-      showView('lecture');
-      return;
-    }
-
-    // Update URL
-    const moduleData = MODULES.find((m) => m.id === currentModuleId);
-    const lectureTopic = lecture.topic || currentLectureId;
-    updateURL(
-      `/module/${currentModuleId}/lecture/${currentLectureId}/quiz`,
-      `Quiz: ${lectureTopic} - ${moduleData?.title || 'Module'}`
+    window.QuizModule.startQuiz(
+      APP_CONTENT,
+      MODULES,
+      currentModuleId,
+      currentLectureId,
+      showView,
+      updateURL,
+      getUserProgress,
+      (score, isExisting) =>
+        window.QuizModule.showQuizResults(
+          score,
+          isExisting,
+          displays,
+          buttons,
+          showView
+        ),
+      beginQuiz
     );
-
-    // Check if user has already completed this quiz
-    const progress = getUserProgress();
-    const existingProgress =
-      progress?.modules?.[currentModuleId]?.lectures?.[currentLectureId];
-
-    if (existingProgress && existingProgress.score !== undefined) {
-      // Show results view with existing score and retake option
-      showQuizResults(existingProgress.score, true);
-    } else {
-      // Start quiz fresh
-      beginQuiz();
-    }
   }
 
   function beginQuiz() {
-    const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
-    quizData = { questions: lecture.quiz };
-    currentQuestionIndex = 0;
-    userScore = 0;
-    displays.quizLiveScore.textContent = `Punkte: 0`;
-    renderCurrentQuizQuestion();
-    showView('quiz');
+    window.QuizModule.beginQuiz(
+      APP_CONTENT,
+      currentModuleId,
+      currentLectureId,
+      quizState,
+      displays,
+      renderCurrentQuizQuestion,
+      showView
+    );
   }
 
   function updateQuizProgress() {
-    const totalQuestions = quizData.questions.length;
-    const currentQ =
-      currentQuestionIndex + 1 > totalQuestions
-        ? totalQuestions
-        : currentQuestionIndex + 1;
-    const progressPercentage = (currentQuestionIndex / totalQuestions) * 100;
-
-    displays.quizProgressBar.style.width = `${progressPercentage}%`;
-    displays.quizProgressText.textContent = `Frage ${currentQ} von ${totalQuestions}`;
+    window.QuizModule.updateQuizProgress(quizState, displays);
   }
 
   function renderCurrentQuizQuestion() {
-    updateQuizProgress();
-    const quizContentDiv = document.getElementById('quiz-content');
-    quizContentDiv.innerHTML = '';
-
-    const questionData = quizData.questions[currentQuestionIndex];
-    if (!questionData) {
-      finishQuiz();
-      return;
-    }
-
-    const questionEl = document.createElement('p');
-    questionEl.className = 'quiz-question text-xl font-semibold mb-6';
-    questionEl.textContent = questionData.question;
-    quizContentDiv.appendChild(questionEl);
-
-    const optionsList = document.createElement('div');
-    optionsList.className = 'quiz-options space-y-3';
-    questionData.options.forEach((optionText) => {
-      const label = document.createElement('label');
-      label.className =
-        'option-label block p-4 border dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer';
-      const radio = document.createElement('input');
-      radio.type = 'radio';
-      radio.name = 'quiz-option';
-      radio.value = optionText;
-      radio.className = 'mr-3';
-      label.appendChild(radio);
-      label.appendChild(document.createTextNode(optionText));
-      optionsList.appendChild(label);
-    });
-    quizContentDiv.appendChild(optionsList);
-
-    const submitButton = document.createElement('button');
-    submitButton.textContent = 'Antwort abschicken';
-    submitButton.className =
-      'mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300';
-    submitButton.onclick = () => {
-      const selectedOption = document.querySelector(
-        'input[name="quiz-option"]:checked'
-      );
-      if (selectedOption) {
-        checkAnswer(selectedOption.value, questionData.correctAnswer);
-      } else {
-        alert('Bitte wähle eine Antwort aus.');
-      }
-    };
-    quizContentDiv.appendChild(submitButton);
+    window.QuizModule.renderCurrentQuizQuestion(
+      quizState,
+      updateQuizProgress,
+      checkAnswer,
+      finishQuiz
+    );
   }
 
   function checkAnswer(selectedValue, correctAnswer) {
-    if (selectedValue === correctAnswer) {
-      userScore++;
-      displays.quizLiveScore.textContent = `Punkte: ${userScore}`;
-    }
-    currentQuestionIndex++;
-    renderCurrentQuizQuestion();
+    window.QuizModule.checkAnswer(
+      selectedValue,
+      correctAnswer,
+      quizState,
+      displays,
+      renderCurrentQuizQuestion
+    );
   }
 
   function finishQuiz() {
-    displays.quizProgressBar.style.width = '100%'; // Fill bar at the end
-    const finalScore = (userScore / quizData.questions.length) * 100;
-    updateLectureProgress(currentModuleId, currentLectureId, finalScore);
-
-    // Show results with the just-completed score (no retake option)
-    showQuizResults(finalScore, false);
-
-    // Reset quiz state
-    quizData = null;
-    currentQuestionIndex = 0;
-    userScore = 0;
-  }
-
-  function showQuizResults(score, isExisting) {
-    displays.finalScore.textContent = `${score.toFixed(0)}%`;
-
-    // Display badge with emoji and styling
-    let badgeText = '';
-    let badgeClass = '';
-    if (score >= 90) {
-      badgeText = '🥇 Gold-Abzeichen';
-      badgeClass = 'text-yellow-500';
-    } else if (score >= 70) {
-      badgeText = '🥈 Silber-Abzeichen';
-      badgeClass = 'text-gray-400';
-    } else if (score >= 50) {
-      badgeText = '🥉 Bronze-Abzeichen';
-      badgeClass = 'text-orange-600';
-    } else {
-      badgeText = 'Kein Abzeichen';
-      badgeClass = 'text-gray-500';
-    }
-    displays.finalBadge.textContent = badgeText;
-    displays.finalBadge.className = `text-lg mb-8 font-semibold ${badgeClass}`;
-
-    // Configure view based on whether this is an existing score or just completed
-    if (isExisting) {
-      displays.resultsTitle.textContent = 'Bisheriges Ergebnis';
-      displays.resultsSubtitle.textContent =
-        'Du hast dieses Quiz bereits abgeschlossen mit:';
-      displays.retakePrompt.style.display = 'block';
-      buttons.retakeQuiz.style.display = 'block';
-    } else {
-      displays.resultsTitle.textContent = 'Quiz abgeschlossen!';
-      displays.resultsSubtitle.textContent = 'Dein Ergebnis:';
-      displays.retakePrompt.style.display = 'none';
-      buttons.retakeQuiz.style.display = 'none';
-    }
-
-    showView('quizResults');
+    window.QuizModule.finishQuiz(
+      quizState,
+      displays,
+      currentModuleId,
+      currentLectureId,
+      updateLectureProgress,
+      (score, isExisting) =>
+        window.QuizModule.showQuizResults(
+          score,
+          isExisting,
+          displays,
+          buttons,
+          showView
+        )
+    );
   }
 
   // --- Event Listeners ---
@@ -1164,23 +835,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.startQuiz.addEventListener('click', startQuiz);
 
     buttons.nextItem.addEventListener('click', () => {
-      if (currentItemIndex < currentLectureItems.length - 1) {
-        currentItemIndex++;
+      if (lectureState.currentIndex < lectureState.currentItems.length - 1) {
+        lectureState.currentIndex++;
         renderCurrentLectureItem();
       }
     });
 
     buttons.prevItem.addEventListener('click', () => {
-      if (currentItemIndex > 0) {
-        currentItemIndex--;
+      if (lectureState.currentIndex > 0) {
+        lectureState.currentIndex--;
         renderCurrentLectureItem();
       }
     });
 
     inputs.lectureJumpTo.addEventListener('change', (e) => {
       const newIndex = parseInt(e.target.value, 10);
-      if (newIndex >= 0 && newIndex < currentLectureItems.length) {
-        currentItemIndex = newIndex;
+      if (newIndex >= 0 && newIndex < lectureState.currentItems.length) {
+        lectureState.currentIndex = newIndex;
         renderCurrentLectureItem();
       }
     });
