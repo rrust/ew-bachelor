@@ -401,11 +401,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
-    <script src="js/components.js"></script>
+    <!-- Core utilities (load first) -->
+    <script src="js/state.js"></script>
+    <script src="js/dom-helpers.js"></script>
+    <script src="js/theme.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/views.js"></script>
-    <script src="js/parser.js"></script>
     <script src="js/progress.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/components.js"></script>
+    <!-- Main app (load last) -->
     <script src="app.js"></script>
   </body>
 </html>
