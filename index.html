@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungswissenschaft Lern-App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Dark mode initialization - must run before body renders
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors duration-200">
     <!-- View for the initial welcome screen -->
-    <div id="welcome-view" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg max-w-md text-center">
+    <div id="welcome-view" class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-md text-center">
         <h1 class="text-3xl font-bold mb-4">Willkommen zur Ernährungswissenschaft Lern-App!</h1>
         <p class="mb-6">Bitte gib deinen Namen ein, um zu beginnen:</p>
-        <input type="text" id="name-input" placeholder="Dein Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input type="text" id="name-input" placeholder="Dein Name" class="w-full px-4 py-2 border dark:border-gray-600 dark:bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
         <button id="start-button" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Lernen beginnen</button>
     </div>
 
     <!-- View for the module map -->
     <div id="module-map-view" style="display: none;">
         <!-- Application Header -->
-        <header class="bg-white shadow-md mb-8">
+        <header class="bg-white dark:bg-gray-800 shadow-md mb-8">
             <div class="container mx-auto px-8 py-4 flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <h1 class="text-xl font-bold text-gray-800">Bachelor Studium Ernährungswissenschaft</h1>
-                    <span class="text-gray-400">-</span>
-                    <span id="header-greeting" class="text-lg text-blue-600 font-medium"></span>
+                    <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">Bachelor Studium Ernährungswissenschaft</h1>
+                    <span class="text-gray-400 dark:text-gray-500">-</span>
+                    <span id="header-greeting" class="text-lg text-blue-600 dark:text-blue-400 font-medium"></span>
                 </div>
                 <nav class="flex items-center space-x-6">
-                    <button id="nav-map" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Map</button>
-                    <button id="nav-progress" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Progress</button>
+                    <button id="nav-map" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200">Map</button>
+                    <button id="nav-progress" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200">Progress</button>
+                    <button id="theme-toggle" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200" title="Farbschema umschalten">
+                        <!-- Sun icon (shown in dark mode) -->
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                        <!-- Moon icon (shown in light mode) -->
+                        <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
                 </nav>
             </div>
         </header>
@@ -40,24 +58,24 @@
     <!-- View for a single lecture -->
     <div id="lecture-view" style="display: none;">
         <!-- Lecture List View -->
-        <div id="lecture-list-container" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg">
-            <button id="back-to-map-button" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Modulübersicht</button>
+        <div id="lecture-list-container" class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+            <button id="back-to-map-button" class="mb-8 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Modulübersicht</button>
             <div id="lecture-content">
                 <!-- Lecture list will be rendered here -->
             </div>
         </div>
 
         <!-- Lecture Player View (fixed layout with header/footer) -->
-        <div id="lecture-player" style="display: none;" class="fixed inset-0 bg-gray-100 flex flex-col h-screen">
+        <div id="lecture-player" style="display: none;" class="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex flex-col h-screen">
             <!-- Sticky Header -->
-            <div class="bg-white shadow-md px-6 py-4 flex-shrink-0">
-                <button id="back-to-lectures-button" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Vorlesungsübersicht</button>
+            <div class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0">
+                <button id="back-to-lectures-button" class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Vorlesungsübersicht</button>
             </div>
             
             <!-- Scrollable Content Area -->
             <div class="flex-1 overflow-y-auto min-h-0">
                 <div class="container mx-auto p-8">
-                    <div class="prose max-w-none bg-white rounded-lg shadow-lg p-8">
+                    <div class="prose dark:prose-invert max-w-none bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
                         <div id="lecture-item-display">
                             <!-- Current lecture item will be rendered here -->
                         </div>
@@ -66,11 +84,11 @@
             </div>
 
             <!-- Sticky Footer -->
-            <div id="lecture-nav" class="bg-white shadow-md px-6 py-4 flex-shrink-0 flex justify-between items-center border-t">
-                <button id="prev-item-button" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">Zurück</button>
+            <div id="lecture-nav" class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0 flex justify-between items-center border-t dark:border-gray-700">
+                <button id="prev-item-button" class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300">Zurück</button>
                 <div class="flex items-center space-x-4">
-                    <select id="lecture-jump-to" class="border-gray-300 rounded-md"></select>
-                    <span id="lecture-progress" class="text-gray-600"></span>
+                    <select id="lecture-jump-to" class="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 rounded-md"></select>
+                    <span id="lecture-progress" class="text-gray-600 dark:text-gray-400"></span>
                 </div>
                 <button id="next-item-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Weiter</button>
             </div>
@@ -80,27 +98,27 @@
     </div>
 
     <!-- View for the quiz -->
-    <div id="quiz-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg max-w-2xl">
-        <button id="back-to-lecture-button" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Vorlesung</button>
+    <div id="quiz-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-2xl">
+        <button id="back-to-lecture-button" class="mb-8 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300">&larr; Zurück zur Vorlesung</button>
         
-        <div id="quiz-progress-container" class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
-            <div id="quiz-progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+        <div id="quiz-progress-container" class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mb-2">
+            <div id="quiz-progress-bar" class="bg-blue-600 dark:bg-blue-500 h-2.5 rounded-full" style="width: 0%"></div>
         </div>
-        <p id="quiz-progress-text" class="text-center text-sm text-gray-600 mb-2"></p>
-        <p id="quiz-live-score" class="text-center text-sm text-gray-600 font-bold mb-6">Punkte: 0</p>
+        <p id="quiz-progress-text" class="text-center text-sm text-gray-600 dark:text-gray-400 mb-2"></p>
+        <p id="quiz-live-score" class="text-center text-sm text-gray-600 dark:text-gray-400 font-bold mb-6">Punkte: 0</p>
 
         <div id="quiz-content"></div>
     </div>
 
     <!-- View for Quiz Results (unified for both existing and just-completed) -->
-    <div id="quiz-results-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow-lg max-w-md text-center">
-        <button id="back-to-lecture-from-results" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md transition duration-300 float-left">&larr; Zurück</button>
+    <div id="quiz-results-view" style="display: none;" class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-md text-center">
+        <button id="back-to-lecture-from-results" class="mb-8 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300 float-left">&larr; Zurück</button>
         <div class="clear-both"></div>
         <h2 id="results-title" class="text-2xl font-bold mb-4">Quiz abgeschlossen!</h2>
         <p id="results-subtitle" class="mb-4">Dein Ergebnis:</p>
-        <p id="final-score-display" class="text-5xl font-bold mb-4 text-blue-600">0%</p>
+        <p id="final-score-display" class="text-5xl font-bold mb-4 text-blue-600 dark:text-blue-400">0%</p>
         <p id="final-badge-display" class="text-lg mb-8"></p>
-        <p id="retake-prompt" class="text-gray-600 mb-6" style="display: none;">Möchtest du das Quiz erneut absolvieren? Dies wird dein bisheriges Ergebnis überschreiben.</p>
+        <p id="retake-prompt" class="text-gray-600 dark:text-gray-400 mb-6" style="display: none;">Möchtest du das Quiz erneut absolvieren? Dies wird dein bisheriges Ergebnis überschreiben.</p>
         <div class="space-y-3">
             <button id="retake-quiz-button" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition duration-300" style="display: none;">Quiz wiederholen</button>
             <button id="results-to-map-button" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300">Zurück zur Modulübersicht</button>

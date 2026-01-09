@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         retakeQuiz: document.getElementById('retake-quiz-button'),
         resultsToMap: document.getElementById('results-to-map-button'),
         navMap: document.getElementById('nav-map'),
-        navProgress: document.getElementById('nav-progress')
+        navProgress: document.getElementById('nav-progress'),
+        themeToggle: document.getElementById('theme-toggle')
     };
 
     const inputs = {
@@ -147,7 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const stats = getModuleStats(moduleId);
         
         const card = document.createElement('div');
-        card.className = 'module-card bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[200px]';
+        card.className = 'module-card bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[200px]';
         
         if (moduleMeta.status === 'gesperrt') {
             card.classList.add('locked', 'opacity-50');
@@ -155,9 +156,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         // Card Header: Status (left), ECTS (center), Badge (right)
         let cardHTML = `
-            <div class="card-header flex items-center justify-between px-4 py-3 border-b rounded-t-lg">
-                <div class="status-badge text-xs font-semibold px-2 py-1 rounded-full ${moduleMeta.status === 'gesperrt' ? 'bg-red-200 text-red-800' : 'bg-green-200 text-green-800'}">${moduleMeta.status}</div>
-                <span class="text-sm font-medium text-gray-600">${moduleMeta.ects} ECTS</span>
+            <div class="card-header flex items-center justify-between px-4 py-3 border-b dark:border-gray-700 rounded-t-lg">
+                <div class="status-badge text-xs font-semibold px-2 py-1 rounded-full ${moduleMeta.status === 'gesperrt' ? 'bg-red-200 dark:bg-red-900 text-red-800 dark:text-red-200' : 'bg-green-200 dark:bg-green-900 text-green-800 dark:text-green-200'}">${moduleMeta.status}</div>
+                <span class="text-sm font-medium text-gray-600 dark:text-gray-400">${moduleMeta.ects} ECTS</span>
         `;
         
         // Badge on the right
@@ -183,21 +184,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Card Content: Module Title and Description
         cardHTML += `
             <div class="card-content flex-grow px-4 py-6">
-                <h3 class="text-lg font-bold text-gray-800 mb-2">${moduleMeta.title}</h3>
-                <p class="text-sm text-gray-500">${moduleMeta.description || ''}</p>
+                <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">${moduleMeta.title}</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">${moduleMeta.description || ''}</p>
             </div>
         `;
         
         // Card Footer: Action buttons (right aligned)
         if (moduleMeta.status !== 'gesperrt') {
-            cardHTML += '<div class="card-footer px-4 py-3 border-t rounded-b-lg flex items-center justify-end space-x-2">';
+            cardHTML += '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-end space-x-2">';
             cardHTML += `<button class="view-lectures-btn text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesungen</button>`;
             
             // Exam button
             const examEnabled = stats.averageScore >= 80 && stats.completedQuizzes > 0;
             const examBtnClass = examEnabled 
                 ? 'text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200'
-                : 'text-sm px-3 py-1.5 bg-gray-300 text-gray-500 font-medium rounded cursor-not-allowed';
+                : 'text-sm px-3 py-1.5 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 font-medium rounded cursor-not-allowed';
             
             const examTooltip = examEnabled 
                 ? 'Modulprüfung ablegen'
@@ -644,10 +645,50 @@ document.addEventListener('DOMContentLoaded', async () => {
             // TODO: Implement progress view
             alert('Progress-Ansicht wird noch implementiert.');
         });
+
+        buttons.themeToggle.addEventListener('click', () => {
+            toggleTheme();
+        });
+    }
+
+    // --- Theme Toggle ---
+    function toggleTheme() {
+        const html = document.documentElement;
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        
+        if (html.classList.contains('dark')) {
+            // Switch to light mode
+            html.classList.remove('dark');
+            localStorage.theme = 'light';
+            lightIcon.classList.add('hidden');
+            darkIcon.classList.remove('hidden');
+        } else {
+            // Switch to dark mode
+            html.classList.add('dark');
+            localStorage.theme = 'dark';
+            lightIcon.classList.remove('hidden');
+            darkIcon.classList.add('hidden');
+        }
+    }
+
+    // --- Initialize Theme Icons ---
+    function initializeThemeIcons() {
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        
+        if (document.documentElement.classList.contains('dark')) {
+            lightIcon.classList.remove('hidden');
+            darkIcon.classList.add('hidden');
+        } else {
+            lightIcon.classList.add('hidden');
+            darkIcon.classList.remove('hidden');
+        }
     }
 
     // --- Initial Load ---
     init();
+    initializeThemeIcons();
 });
 
 // Stubs for functions that would be in progress.js
