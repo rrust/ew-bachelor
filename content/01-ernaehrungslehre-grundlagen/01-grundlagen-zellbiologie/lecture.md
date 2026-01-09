@@ -8,7 +8,7 @@ Die Zelle ist die kleinste lebende Einheit aller Organismen. Man unterscheidet z
 
 ### Wichtige Organellen einer eukaryotischen Zelle
 
-* **Zellkern:** Enthält die Erbinformation (DNA) und steuert die Zellaktivitäten.
+* **Zellkern:** Enthält die Erbinformation (DNA) und steuert die Zellaktivitäten. 11111
 * **Mitochondrien:** Die "Kraftwerke" der Zelle, verantwortlich für die Energieproduktion (ATP).
 * **Ribosomen:** Orte der Proteinsynthese.
 * **Endoplasmatisches Retikulum (ER):** Ein Netzwerk aus Membranen, beteiligt an der Protein- und Lipidsynthese.
