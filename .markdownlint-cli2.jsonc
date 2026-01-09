@@ -15,7 +15,13 @@
     // Allow HTML (used in explanations)
     "MD033": false,
     // Allow bare URLs
-    "MD034": false
+    "MD034": false,
+    // Disable unordered list style checks (YAML uses dashes, markdown content uses asterisks)
+    "MD004": false,
+    // Disable unordered list indentation (YAML needs specific indentation)
+    "MD007": false,
+    // Disable blank lines around lists (YAML frontmatter doesn't need them)
+    "MD032": false
   },
   // Ignore certain paths
   "ignores": ["node_modules/**", ".git/**"],
