@@ -108,9 +108,11 @@ async function parseContent() {
       const isLectureItems =
         fileName === 'lecture-items' && pathParts.length >= 5;
       const isLectureMetadata = fileName === 'lecture.md' && !isLectureItems;
+      const isQuizMetadata = fileName === 'quiz.md' && pathParts.length === 4;
+      const isQuizQuestion = fileName === 'questions' && pathParts.length >= 5;
 
-      // Determine if this is a quiz file
-      const isQuiz = fileName === 'quiz.md';
+      // Determine if this is a quiz file (legacy format - deprecated)
+      const isQuiz = fileName === 'quiz.md' && pathParts.length === 4;
 
       if (!content[moduleId]) {
         content[moduleId] = { lectures: {} };
@@ -120,6 +122,8 @@ async function parseContent() {
           topic: '',
           description: '',
           descriptionHtml: '',
+          quizDescription: '',
+          quizDescriptionHtml: '',
           items: [],
           quiz: []
         };
@@ -127,8 +131,31 @@ async function parseContent() {
 
       const documents = parseMultiDocument(fileContent);
 
-      if (isQuiz) {
-        // This is a quiz file, parse questions for the final quiz
+      if (isQuizMetadata) {
+        // This is quiz.md containing metadata/description for the quiz
+        const doc = documents[0];
+        if (doc && doc.attributes) {
+          content[moduleId].lectures[lectureId].quizDescription =
+            doc.attributes.description || '';
+          content[moduleId].lectures[lectureId].quizDescriptionHtml = doc.body
+            ? marked.parse(doc.body)
+            : '';
+        }
+      } else if (isQuizQuestion) {
+        // This is a single quiz question file
+        const questionFileName = pathParts[4];
+        const doc = documents[0];
+
+        if (doc) {
+          const question = {
+            ...doc.attributes,
+            explanation: doc.body ? marked.parse(doc.body) : '',
+            _order: parseInt(questionFileName.split('-')[0], 10) || 0
+          };
+          content[moduleId].lectures[lectureId].quiz.push(question);
+        }
+      } else if (isQuiz) {
+        // Legacy format: quiz.md with multiple questions (deprecated but still supported)
         const quizQuestions = documents.map((doc) => ({
           ...doc.attributes,
           explanation: doc.body ? marked.parse(doc.body) : ''
@@ -139,7 +166,7 @@ async function parseContent() {
         // Check if it's actually metadata (no 'type' attribute) or old format (has 'type')
         const doc = documents[0];
         if (doc && doc.attributes && !doc.attributes.type) {
-          // New format: metadata only
+          // New format: metadata at top, possibly followed by items
           content[moduleId].lectures[lectureId].topic =
             doc.attributes.topic || '';
           content[moduleId].lectures[lectureId].description =
@@ -147,6 +174,43 @@ async function parseContent() {
           content[moduleId].lectures[lectureId].descriptionHtml = doc.body
             ? marked.parse(doc.body)
             : '';
+
+          // Process remaining documents as items (if any)
+          const remainingDocs = documents.slice(1);
+          if (remainingDocs.length > 0) {
+            const lectureItems = remainingDocs.map((itemDoc) => {
+              const item = {
+                type: itemDoc.attributes.type || 'learning-content',
+                ...itemDoc.attributes
+              };
+
+              // Parse body content based on type
+              if (item.type === 'learning-content') {
+                item.html = marked.parse(itemDoc.body);
+              } else if (item.type === 'self-assessment-mc') {
+                item.explanation = itemDoc.body
+                  ? marked.parse(itemDoc.body)
+                  : '';
+              } else if (item.type === 'youtube-video') {
+                // URL and title are already in attributes
+              } else if (item.type === 'image') {
+                // URL, alt, caption, and title are already in attributes
+              } else if (item.type === 'mermaid-diagram') {
+                // Extract mermaid code from body
+                const mermaidMatch = itemDoc.body.match(
+                  /```mermaid\n([\s\S]*?)\n```/
+                );
+                if (mermaidMatch) {
+                  item.diagram = mermaidMatch[1].trim();
+                } else {
+                  item.diagram = itemDoc.body.trim();
+                }
+              }
+
+              return item;
+            });
+            content[moduleId].lectures[lectureId].items.push(...lectureItems);
+          }
         } else {
           // Old format: lecture.md with multiple items
           const lectureItems = documents.map((doc) => {
@@ -227,11 +291,16 @@ async function parseContent() {
   }
 
   // Sort lecture items by _order field (for files from lecture-items/ folder)
+  // Sort quiz questions by _order field (for files from questions/ folder)
   for (const moduleId in content) {
     for (const lectureId in content[moduleId].lectures) {
       const lecture = content[moduleId].lectures[lectureId];
       if (lecture.items.length > 0 && lecture.items[0]._order !== undefined) {
         lecture.items.sort((a, b) => (a._order || 0) - (b._order || 0));
+      }
+      // Sort quiz questions
+      if (lecture.quiz.length > 0 && lecture.quiz[0]._order !== undefined) {
+        lecture.quiz.sort((a, b) => (a._order || 0) - (b._order || 0));
       }
       // Promote topic from first item if not set
       if (
