@@ -1,77 +1,71 @@
 # Nutritional Science Learning App
 
-A simple, client-side web application for learning nutritional science, built with vanilla HTML, CSS, and JavaScript.
+Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesungen, Quizzes und Selbsttests.
 
-## 🌐 Live Demo
+## 🌐 Live App
 
-The app is deployed and accessible at: **[https://rrust.github.io/ew-bachelor/](https://rrust.github.io/ew-bachelor/)**
-
-## Overview
-
-This project is a single-page application designed to provide a gamified learning experience for students of nutritional science. All content is rendered from local Markdown files, and user progress is stored in the browser's `localStorage`.
-
-## Technology Stack
-
-- **HTML**
-- **Tailwind CSS** (via CDN)
-- **Vanilla JavaScript**
-- **GitHub Pages** (deployment)
-
-There is no backend or build step required.
-
-## Development Setup
-
-For detailed instructions on setting up your development environment on macOS, see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
-
-Quick start:
-
-1. Install [VS Code](https://code.visualstudio.com/) and the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-2. Clone this repository
-3. Open the project in VS Code
-4. Right-click `index.html` and select "Open with Live Server"
-
-## How to Run Locally
-
-1. Clone the repository.
-2. Use a local web server extension (like VS Code's **Live Server**) to open `index.html`. This is necessary to avoid browser CORS errors when fetching content files.
-3. Right-click `index.html` and select "Open with Live Server".
+**[https://rrust.github.io/ew-bachelor/](https://rrust.github.io/ew-bachelor/)**
 
 ## Content Development
 
-For creating and maintaining learning content (lectures, quizzes), see the comprehensive guide:
+Alle Lerninhalte werden als Markdown-Dateien im `content/` Verzeichnis verwaltet. Die Struktur ist modular aufgebaut mit separaten Dateien für jede Vorlesung, jeden Lerninhalt und jede Quizfrage.
+
+### Quick Start
+
+1. **Neue Inhalte erstellen**: Verwende die Templates in [docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md)
+2. **Content validieren**: Öffne `validate-content.html` im Browser oder nutze Header → "Tools" → "Content Validator"
+3. **Markdown linten**: `npx markdownlint-cli2 "**/*.md"` (ohne `--fix`!)
+
+### Wichtige Regeln
+
+- **YAML-Listen**: Immer `-` (dash) verwenden, niemals `*` (Asterisk)
+- **correctAnswer**: Muss exakt mit einer Option übereinstimmen (case-sensitive)
+- **Nummerierung**: Dateien mit `NN-` Prefix für Sortierung
+- **Validation**: Immer vor dem Commit validieren!
+
+### Vollständige Dokumentation
+
 → **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)**
 
-This includes:
+Enthält:
+- Detaillierte Content-Struktur und Formate
+- YAML-Syntax-Regeln und häufige Fehler
+- Validation-Workflow
+- Best Practices
+- Step-by-step Workflows für verschiedene Content-Typen
 
-- Content structure and formats
-- YAML syntax rules and common mistakes  
-- Validation workflow
-- Templates and best practices
-- Step-by-step workflows
+### Templates
 
-## Deployment
+→ **[docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md)**
 
-The app is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch. The deployment typically takes 1-2 minutes to complete.
+Copy-paste Templates für:
+- Vorlesungen (Metadata + Learning Items)
+- Quizzes (Metadata + Questions)
+- Alle Content-Typen (learning-content, self-assessment, videos, etc.)
 
-## Project Documentation
+## App Development
 
-### For App Developers
+Für technische Details zur App-Entwicklung, siehe:
 
-- **[GEMINI.md](GEMINI.md)** - Instructions for AI coding agents (required in root)
-- **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Complete development environment setup guide
-- **[docs/AI_CODING.md](docs/AI_CODING.md)** - Guide to AI-assisted development workflow
+→ **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Setup, Tech Stack, Build & Run  
+→ **[GEMINI.md](GEMINI.md)** - Architektur und Coding-Konventionen  
+→ **[docs/AI_CODING.md](docs/AI_CODING.md)** - AI-gestützte Entwicklung
 
-### For Content Creators
+## Projekt-Dokumentation
 
-- **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)** - Complete guide to creating and maintaining learning content
-- **[docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md)** - Copy-paste templates for lectures and quizzes
-- **[studium/](studium/)** - Reference materials (curriculum overview)
+### Content
 
-### Planning & Features
+- **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)** - Hauptdokumentation für Content-Entwicklung
+- **[docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md)** - Copy-paste Templates
+- **[studium/](studium/)** - Referenzmaterialien (Curriculum)
 
-- **[WIP/Learning_Flow_Concept.md](WIP/Learning_Flow_Concept.md)** - Feature planning and implementation roadmap
-- **[WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md)** - Enhancement ideas and future features
+### Development
 
-## AI-Assisted Development
+- **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Development Environment Setup
+- **[GEMINI.md](GEMINI.md)** - App-Architektur und Coding Guidelines
+- **[docs/AI_CODING.md](docs/AI_CODING.md)** - AI-Workflow
 
-This project is developed using **GitHub Copilot Agent Mode** with **Gemini 2.0 Flash Experimental**. The AI handles implementation while the human maintainer focuses on content, UX, and testing. See [docs/AI_CODING.md](docs/AI_CODING.md) for details on this workflow.
+### Planning
+
+- **[WIP/Learning_Flow_Concept.md](WIP/Learning_Flow_Concept.md)** - Feature Planning
+- **[WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md)** - Enhancement Ideas

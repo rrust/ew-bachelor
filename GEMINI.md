@@ -15,6 +15,11 @@ The project is a single-page, client-side web application built with **plain HTM
 
 ## Developer Workflows
 
+### Communication
+
+Development language is english, AI conversations about the code are in english.
+Content development is in german, AI conversations about content are in german.
+
 ### Setup
 
 There is no complex setup. Simply open the `index.html` file in a browser. For development, it's recommended to use a simple live server extension in your editor to handle auto-reloading.
