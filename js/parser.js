@@ -145,8 +145,10 @@ async function parseContent() {
             topic: '',
             description: '',
             descriptionHtml: '',
+            estimatedTime: 0,
             quizDescription: '',
             quizDescriptionHtml: '',
+            quizEstimatedTime: 0,
             items: [],
             quiz: []
           };
@@ -163,6 +165,8 @@ async function parseContent() {
             content[moduleId].lectures[lectureId].quizDescriptionHtml = doc.body
               ? marked.parse(doc.body)
               : '';
+            content[moduleId].lectures[lectureId].quizEstimatedTime =
+              doc.attributes.estimatedTime || 0;
           }
         } else if (isQuizQuestion) {
           // This is a single quiz question file
@@ -197,6 +201,8 @@ async function parseContent() {
             content[moduleId].lectures[lectureId].descriptionHtml = doc.body
               ? marked.parse(doc.body)
               : '';
+            content[moduleId].lectures[lectureId].estimatedTime =
+              doc.attributes.estimatedTime || 0;
 
             // Process remaining documents as items (if any)
             const remainingDocs = documents.slice(1);

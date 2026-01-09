@@ -1,6 +1,45 @@
 // Modules module - Handles module cards and lecture lists
 
 /**
+ * Calculates estimated time for a module (sum of all lectures and quizzes)
+ * @param {string} moduleId - Module ID
+ * @param {Object} APP_CONTENT - Content object
+ * @returns {number} Total estimated time in minutes
+ */
+function getModuleEstimatedTime(moduleId, APP_CONTENT) {
+  const module = APP_CONTENT[moduleId];
+  if (!module || !module.lectures) {
+    return 0;
+  }
+
+  let totalTime = 0;
+  for (const lectureId in module.lectures) {
+    const lecture = module.lectures[lectureId];
+    totalTime += lecture.estimatedTime || 0;
+    totalTime += lecture.quizEstimatedTime || 0;
+  }
+
+  return totalTime;
+}
+
+/**
+ * Formats minutes into a readable time string (e.g., "1h 30min" or "25min")
+ * @param {number} minutes - Time in minutes
+ * @returns {string} Formatted time string
+ */
+function formatEstimatedTime(minutes) {
+  if (minutes < 60) {
+    return `${minutes} min`;
+  }
+  const hours = Math.floor(minutes / 60);
+  const remainingMinutes = minutes % 60;
+  if (remainingMinutes === 0) {
+    return `${hours} h`;
+  }
+  return `${hours} h ${remainingMinutes} min`;
+}
+
+/**
  * Calculates statistics for a module (quiz completion, average score, badge)
  * @param {string} moduleId - Module ID
  * @param {Object} APP_CONTENT - Content object
@@ -111,6 +150,8 @@ function createModuleCard(
   onClick
 ) {
   const stats = getModuleStats(moduleId, APP_CONTENT, getUserProgress);
+  const estimatedTime = getModuleEstimatedTime(moduleId, APP_CONTENT);
+  const formattedTime = formatEstimatedTime(estimatedTime);
 
   const card = document.createElement('div');
   card.className =
@@ -166,9 +207,14 @@ function createModuleCard(
               <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">${
                 moduleMeta.title
               }</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">${
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${
                 moduleMeta.description || ''
               }</p>
+              ${
+                estimatedTime > 0
+                  ? `<p class="text-xs text-gray-400 dark:text-gray-500">⏱️ Geschätzte Dauer: ${formattedTime}</p>`
+                  : ''
+              }
           </div>
       `;
 
@@ -291,6 +337,21 @@ function displayLecturesForModule(
     // Add description if available
     if (lecture.description) {
       contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">${lecture.description}</p>`;
+    }
+
+    // Add estimated time if available
+    const lectureTime = lecture.estimatedTime || 0;
+    const quizTime = lecture.quizEstimatedTime || 0;
+    const totalTime = lectureTime + quizTime;
+    if (totalTime > 0) {
+      const timeStr = formatEstimatedTime(totalTime);
+      contentHTML += `<p class="text-xs text-gray-500 dark:text-gray-500 mt-1">⏱️ ${timeStr}`;
+      if (lectureTime > 0 && quizTime > 0) {
+        contentHTML += ` (Vorlesung: ${formatEstimatedTime(
+          lectureTime
+        )}, Quiz: ${formatEstimatedTime(quizTime)})`;
+      }
+      contentHTML += `</p>`;
     }
 
     contentHTML += `</div>`;

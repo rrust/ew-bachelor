@@ -1,5 +1,6 @@
 ---
 description: 'Teste dein Wissen über Kohlenhydrate, Proteine und Fette'
+estimatedTime: 12
 ---
 
 # Quiz: Makronährstoffe im Detail
