@@ -35,7 +35,6 @@ Makronährstoffe sind Nährstoffe, die der Körper in großen Mengen benötigt u
 type: 'self-assessment-mc'
 question: 'Welcher Makronährstoff liefert am meisten Energie pro Gramm?'
 options:
-
 - 'Kohlenhydrate'
 - 'Proteine'
 - 'Fette'
@@ -73,7 +72,6 @@ Der GI gibt an, wie schnell ein kohlenhydrathaltiges Lebensmittel den Blutzucker
 type: 'self-assessment-mc'
 question: 'Was ist Glykogen?'
 options:
-
 - 'Ein pflanzlicher Energiespeicher'
 - 'Ein tierischer Energiespeicher'
 - 'Ein Ballaststoff'
@@ -121,7 +119,6 @@ Die biologische Wertigkeit gibt an, wie effizient Nahrungsprotein in körpereige
 type: 'self-assessment-mc'
 question: 'Wie viele essentielle Aminosäuren gibt es?'
 options:
-
 - '5'
 - '9'
 - '15'

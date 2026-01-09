@@ -20,11 +20,10 @@ type: 'self-assessment-mc'
 topic: 'Grundlagen der Zellbiologie'
 question: 'Was ist die Hauptfunktion der Mitochondrien?'
 options:
-
-* 'Proteinsynthese'
-* 'Energiegewinnung (ATP-Produktion)'
-* 'Speicherung von Erbinformation'
-* 'Abbau von Abfallprodukten'
+  - 'Proteinsynthese'
+  - 'Energiegewinnung (ATP-Produktion)'
+  - 'Speicherung von Erbinformation'
+  - 'Abbau von Abfallprodukten'
 correctAnswer: 'Energiegewinnung (ATP-Produktion)'
 
 ---
@@ -35,11 +34,10 @@ type: 'self-assessment-mc'
 topic: 'Grundlagen der Zellbiologie'
 question: 'Welches Organell ist für die Verpackung und den Versand von Proteinen zuständig?'
 options:
-
-* 'Ribosom'
-* 'Lysosom'
-* 'Golgi-Apparat'
-* 'Zellkern'
+  - 'Ribosom'
+  - 'Lysosom'
+  - 'Golgi-Apparat'
+  - 'Zellkern'
 correctAnswer: 'Golgi-Apparat'
 
 ---
@@ -64,11 +62,10 @@ type: 'self-assessment-mc'
 topic: 'Grundlagen der Zellbiologie'
 question: 'Woraus besteht die Grundstruktur der Zellmembran?'
 options:
-
-* 'Aus einer einzelnen Schicht von Proteinen'
-* 'Aus einer Phospholipid-Doppelschicht'
-* 'Aus reiner Zellulose'
-* 'Aus einem Netzwerk von DNA'
+  - 'Aus einer einzelnen Schicht von Proteinen'
+  - 'Aus einer Phospholipid-Doppelschicht'
+  - 'Aus reiner Zellulose'
+  - 'Aus einem Netzwerk von DNA'
 correctAnswer: 'Aus einer Phospholipid-Doppelschicht'
 
 ---
@@ -98,11 +95,10 @@ type: 'self-assessment-mc'
 topic: 'Grundlagen der Ernährung'
 question: 'Welcher der folgenden Nährstoffe ist ein Makronährstoff?'
 options:
-
-* 'Vitamin C'
-* 'Eisen'
-* 'Kohlenhydrate'
-* 'Kalzium'
+  - 'Vitamin C'
+  - 'Eisen'
+  - 'Kohlenhydrate'
+  - 'Kalzium'
 correctAnswer: 'Kohlenhydrate'
 
 ---

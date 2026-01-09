@@ -13,7 +13,6 @@ correctAnswer: 'Fette (9 kcal/g)'
 type: 'multiple-choice'
 question: 'Was sind essentielle Aminosäuren?'
 options:
-
 - 'Aminosäuren, die der Körper selbst herstellen kann'
 - 'Aminosäuren, die über die Nahrung aufgenommen werden müssen'
 - 'Aminosäuren, die nur in tierischen Produkten vorkommen'
@@ -26,7 +25,6 @@ correctAnswer: 'Aminosäuren, die über die Nahrung aufgenommen werden müssen'
 type: 'multiple-choice'
 question: 'Was ist der glykämische Index (GI)?'
 options:
-
 - 'Ein Maß für den Vitamingehalt von Lebensmitteln'
 - 'Ein Maß für die Geschwindigkeit des Blutzuckeranstiegs'
 - 'Ein Maß für den Proteingehalt'
@@ -39,7 +37,6 @@ correctAnswer: 'Ein Maß für die Geschwindigkeit des Blutzuckeranstiegs'
 type: 'multiple-choice'
 question: 'Wo wird Glykogen im menschlichen Körper gespeichert?'
 options:
-
 - 'Im Gehirn'
 - 'In Leber und Muskulatur'
 - 'Im Blut'
@@ -52,7 +49,6 @@ correctAnswer: 'In Leber und Muskulatur'
 type: 'multiple-choice'
 question: 'Welche Funktion haben Ballaststoffe hauptsächlich?'
 options:
-
 - 'Sie liefern viel Energie'
 - 'Sie sind wichtig für die Verdauung'
 - 'Sie werden zu Proteinen umgebaut'
@@ -65,7 +61,6 @@ correctAnswer: 'Sie sind wichtig für die Verdauung'
 type: 'multiple-choice'
 question: 'Was bedeutet eine hohe biologische Wertigkeit eines Proteins?'
 options:
-
 - 'Das Protein enthält viele Kalorien'
 - 'Das Protein kann effizient in körpereigenes Protein umgewandelt werden'
 - 'Das Protein ist besonders teuer'
@@ -78,7 +73,6 @@ correctAnswer: 'Das Protein kann effizient in körpereigenes Protein umgewandelt
 type: 'multiple-choice'
 question: 'Wie hoch ist der tägliche Proteinbedarf für einen durchschnittlichen Erwachsenen?'
 options:
-
 - '0,3 g pro kg Körpergewicht'
 - '0,8 g pro kg Körpergewicht'
 - '2,5 g pro kg Körpergewicht'

@@ -30,7 +30,6 @@ Die meisten Nahrungsfette sind **Triglyceride**, bestehend aus:
 type: 'self-assessment-mc'
 question: 'Was ist ein Triglycerid?'
 options:
-
 - 'Ein Protein mit drei Aminosäuren'
 - 'Ein Fett mit drei Fettsäuren'
 - 'Ein Kohlenhydrat mit drei Zuckermolekülen'
@@ -77,7 +76,6 @@ type: 'learning-content'
 type: 'self-assessment-mc'
 question: 'Was unterscheidet gesättigte von ungesättigten Fettsäuren?'
 options:
-
 - 'Die Anzahl der Kohlenstoffatome'
 - 'Das Vorhandensein von Doppelbindungen'
 - 'Die Länge der Kette'
@@ -119,7 +117,6 @@ Cholesterin ist kein Fett, wird aber oft in diesem Kontext besprochen:
 type: 'self-assessment-mc'
 question: 'Welche Fettsäuren sollten weitgehend gemieden werden?'
 options:
-
 - 'Gesättigte Fettsäuren'
 - 'Einfach ungesättigte Fettsäuren'
 - 'Trans-Fettsäuren'

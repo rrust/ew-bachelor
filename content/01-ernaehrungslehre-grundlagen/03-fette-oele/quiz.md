@@ -13,7 +13,6 @@ correctAnswer: 'Fette sind fest, Öle flüssig bei Raumtemperatur'
 type: 'multiple-choice'
 question: 'Welche Fettsäuren sind essentiell und müssen über die Nahrung aufgenommen werden?'
 options:
-
 - 'Gesättigte Fettsäuren'
 - 'Trans-Fettsäuren'
 - 'Omega-3 und Omega-6 Fettsäuren'
@@ -26,7 +25,6 @@ correctAnswer: 'Omega-3 und Omega-6 Fettsäuren'
 type: 'multiple-choice'
 question: 'Wo kommen hauptsächlich Omega-3-Fettsäuren vor?'
 options:
-
 - 'In Butter und Sahne'
 - 'In fettreichem Fisch und Leinöl'
 - 'In Sonnenblumenöl'
@@ -39,7 +37,6 @@ correctAnswer: 'In fettreichem Fisch und Leinöl'
 type: 'multiple-choice'
 question: 'Was sind Trans-Fettsäuren?'
 options:
-
 - 'Natürlich vorkommende gesunde Fettsäuren'
 - 'Industriell gehärtete Fettsäuren mit negativen Gesundheitseffekten'
 - 'Essentielle Fettsäuren'
@@ -52,7 +49,6 @@ correctAnswer: 'Industriell gehärtete Fettsäuren mit negativen Gesundheitseffe
 type: 'multiple-choice'
 question: 'Was bedeutet HDL-Cholesterin?'
 options:
-
 - 'Schlechtes Cholesterin, das sich ablagert'
 - 'Gutes Cholesterin mit schützender Wirkung'
 - 'Eine Art von Fettsäure'
@@ -65,7 +61,6 @@ correctAnswer: 'Gutes Cholesterin mit schützender Wirkung'
 type: 'multiple-choice'
 question: 'Welche fettlöslichen Vitamine gibt es?'
 options:
-
 - 'A, B, C, D'
 - 'A, D, E, K'
 - 'B, C, E, K'
@@ -78,7 +73,6 @@ correctAnswer: 'A, D, E, K'
 type: 'multiple-choice'
 question: 'Wie viel Prozent der Energiezufuhr sollte laut DGE aus Fett stammen?'
 options:
-
 - '10%'
 - '20%'
 - '30%'
