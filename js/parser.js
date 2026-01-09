@@ -181,8 +181,7 @@ async function parseContent() {
 
           // Promote the topic from the first item to the lecture level
           if (lectureItems.length > 0 && lectureItems[0].topic) {
-            content[moduleId].lectures[lectureId].topic =
-              lectureItems[0].topic;
+            content[moduleId].lectures[lectureId].topic = lectureItems[0].topic;
           }
 
           content[moduleId].lectures[lectureId].items.push(...lectureItems);

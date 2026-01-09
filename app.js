@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     resultsToMap: document.getElementById('results-to-map-button'),
     lectureOverview: document.getElementById('lecture-overview-button'),
     backToPlayer: document.getElementById('back-to-player-button'),
-    overviewToLectures: document.getElementById('overview-to-lectures-button'),
     navModule: document.getElementById('nav-module'),
     navMap: document.getElementById('nav-map'),
     navProgress: document.getElementById('nav-progress'),
@@ -440,6 +439,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       contentHTML += '<div class="flex-shrink-0 flex items-center space-x-2">';
       contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Vorlesung</button>`;
+      contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Übersicht</button>`;
 
       if (lecture.quiz && lecture.quiz.length > 0) {
         contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-600 text-sm">Quiz</button>`;
@@ -492,6 +492,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       if (action === 'start-lecture') {
         startLecture(modId, lecId);
+      } else if (action === 'show-lecture-overview') {
+        // Load lecture and show overview directly
+        currentModuleId = modId;
+        currentLectureId = lecId;
+        const lecture = APP_CONTENT[modId]?.lectures[lecId];
+        if (lecture && lecture.items && lecture.items.length > 0) {
+          currentLectureItems = lecture.items;
+          currentItemIndex = 0;
+          showLectureOverview();
+        } else {
+          alert('Diese Vorlesung hat keinen Inhalt.');
+        }
       } else if (action === 'start-quiz') {
         // Set current lecture context before starting quiz directly
         currentModuleId = modId;
@@ -1071,10 +1083,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.backToPlayer.addEventListener('click', () => {
       document.getElementById('lecture-overview').style.display = 'none';
       document.getElementById('lecture-player').style.display = 'flex';
-    });
-
-    buttons.overviewToLectures.addEventListener('click', () => {
-      displayLecturesForModule(currentModuleId);
     });
 
     buttons.backToLecture.addEventListener('click', () => {
