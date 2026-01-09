@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     resultsToMap: document.getElementById('results-to-map-button'),
     lectureOverview: document.getElementById('lecture-overview-button'),
     backToPlayer: document.getElementById('back-to-player-button'),
+    overviewToLectures: document.getElementById('overview-to-lectures-button'),
     navModule: document.getElementById('nav-module'),
     navMap: document.getElementById('nav-map'),
     navProgress: document.getElementById('nav-progress'),
@@ -721,7 +722,55 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- Lecture Overview ---
   function showLectureOverview() {
     const overviewContent = document.getElementById('lecture-overview-content');
+    const overviewTitle = document.getElementById('lecture-overview-title');
+    const overviewDescription = document.getElementById(
+      'lecture-overview-description'
+    );
+
     overviewContent.innerHTML = '';
+
+    // Set title and description
+    const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
+    const moduleData = MODULES.find((m) => m.id === currentModuleId);
+    overviewTitle.textContent = lecture?.topic || 'Vorlesungsübersicht';
+
+    // Generate description based on content
+    const totalItems = currentLectureItems.length;
+    const contentCount = currentLectureItems.filter(
+      (i) => i.type === 'learning-content'
+    ).length;
+    const questionCount = currentLectureItems.filter(
+      (i) => i.type === 'self-assessment-mc'
+    ).length;
+    const videoCount = currentLectureItems.filter(
+      (i) => i.type === 'youtube-video'
+    ).length;
+    const imageCount = currentLectureItems.filter(
+      (i) => i.type === 'image'
+    ).length;
+    const diagramCount = currentLectureItems.filter(
+      (i) => i.type === 'mermaid-diagram'
+    ).length;
+
+    const descParts = [];
+    if (contentCount > 0)
+      descParts.push(
+        `${contentCount} Lerninhalt${contentCount > 1 ? 'e' : ''}`
+      );
+    if (questionCount > 0)
+      descParts.push(
+        `${questionCount} Selbsttest${questionCount > 1 ? 's' : ''}`
+      );
+    if (videoCount > 0)
+      descParts.push(`${videoCount} Video${videoCount > 1 ? 's' : ''}`);
+    if (imageCount > 0)
+      descParts.push(`${imageCount} Bild${imageCount > 1 ? 'er' : ''}`);
+    if (diagramCount > 0)
+      descParts.push(`${diagramCount} Diagramm${diagramCount > 1 ? 'e' : ''}`);
+
+    overviewDescription.textContent = `${totalItems} Schritte insgesamt • ${descParts.join(
+      ' • '
+    )}`;
 
     currentLectureItems.forEach((item, index) => {
       const card = document.createElement('div');
@@ -731,6 +780,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       let typeLabel = '';
       let icon = '';
       let preview = '';
+      let description = '';
 
       switch (item.type) {
         case 'learning-content':
@@ -743,31 +793,41 @@ document.addEventListener('DOMContentLoaded', async () => {
           preview = heading
             ? heading.textContent
             : tempDiv.textContent.substring(0, 100) + '...';
+          // Extract description from first paragraph
+          const firstP = tempDiv.querySelector('p');
+          description = firstP
+            ? firstP.textContent.substring(0, 150) + '...'
+            : '';
           break;
         case 'self-assessment-mc':
           typeLabel = 'Selbsttest';
           icon = '❓';
           preview = item.question;
+          description = `${item.options?.length || 0} Antwortmöglichkeiten`;
           break;
         case 'youtube-video':
           typeLabel = 'Video';
           icon = '🎥';
           preview = item.title || 'YouTube Video';
+          description = 'Eingebettetes YouTube-Video';
           break;
         case 'image':
           typeLabel = 'Bild';
           icon = '🖼️';
           preview = item.title || item.alt || 'Bild';
+          description = item.caption || item.alt || 'Bilddarstellung';
           break;
         case 'mermaid-diagram':
           typeLabel = 'Diagramm';
           icon = '📊';
           preview = item.title || 'Mermaid Diagramm';
+          description = 'Interaktives Diagramm';
           break;
         default:
           typeLabel = 'Inhalt';
           icon = '📄';
           preview = 'Unbekannter Typ';
+          description = '';
       }
 
       card.innerHTML = `
@@ -780,7 +840,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 index + 1
               }</span>
             </div>
-            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 truncate">${preview}</h3>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">${preview}</h3>
+            ${
+              description
+                ? `<p class="text-sm text-gray-600 dark:text-gray-400 mb-3">${description}</p>`
+                : ''
+            }
             <button class="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium">
               Zu diesem Schritt →
             </button>
@@ -999,6 +1064,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.backToPlayer.addEventListener('click', () => {
       document.getElementById('lecture-overview').style.display = 'none';
       document.getElementById('lecture-player').style.display = 'flex';
+    });
+
+    buttons.overviewToLectures.addEventListener('click', () => {
+      displayLecturesForModule(currentModuleId);
     });
 
     buttons.backToLecture.addEventListener('click', () => {

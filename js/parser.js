@@ -95,9 +95,10 @@ async function parseContent() {
       const fileContent = await fileResponse.text();
 
       // Extract module and lecture ID from file path
-      // Support both:
-      // - Old: content/MODULE_ID/LECTURE_ID/lecture.md (multi-document)
-      // - New: content/MODULE_ID/LECTURE_ID/lecture-items/01-item.md (single document per file)
+      // Support:
+      // - lecture.md: Lecture metadata/description
+      // - lecture-items/XX-name.md: Individual items (new format)
+      // - Old: lecture.md with multi-document items (legacy support)
       const pathParts = filePath.split('/');
       if (pathParts.length < 4) continue;
 
@@ -106,6 +107,7 @@ async function parseContent() {
       const fileName = pathParts[3];
       const isLectureItems =
         fileName === 'lecture-items' && pathParts.length >= 5;
+      const isLectureMetadata = fileName === 'lecture.md' && !isLectureItems;
 
       // Determine if this is a quiz file
       const isQuiz = fileName === 'quiz.md';
@@ -116,6 +118,8 @@ async function parseContent() {
       if (!content[moduleId].lectures[lectureId]) {
         content[moduleId].lectures[lectureId] = {
           topic: '',
+          description: '',
+          descriptionHtml: '',
           items: [],
           quiz: []
         };
@@ -130,6 +134,14 @@ async function parseContent() {
           explanation: doc.body ? marked.parse(doc.body) : ''
         }));
         content[moduleId].lectures[lectureId].quiz.push(...quizQuestions);
+      } else if (isLectureMetadata) {
+        // This is lecture.md containing metadata/description
+        const doc = documents[0]; // Should be single document
+        if (doc && doc.attributes) {
+          content[moduleId].lectures[lectureId].topic = doc.attributes.topic || '';
+          content[moduleId].lectures[lectureId].description = doc.attributes.description || '';
+          content[moduleId].lectures[lectureId].descriptionHtml = doc.body ? marked.parse(doc.body) : '';
+        }
       } else if (isLectureItems) {
         // This is a single lecture item file
         // File path: content/MODULE_ID/LECTURE_ID/lecture-items/XX-name.md
@@ -230,3 +242,7 @@ async function parseContent() {
   console.log('Parsed Content:', content);
   return content;
 }
+
+// Expose functions to global scope for use in app.js
+window.loadModules = loadModules;
+window.parseContent = parseContent;

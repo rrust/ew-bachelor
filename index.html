@@ -247,7 +247,7 @@
       >
         <!-- Sticky Header -->
         <div
-          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0"
+          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0 flex justify-between items-center"
         >
           <button
             id="back-to-player-button"
@@ -255,12 +255,25 @@
           >
             &larr; Zurück zur Vorlesung
           </button>
+          <button
+            id="overview-to-lectures-button"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+          >
+            📋 Übersicht
+          </button>
         </div>
 
         <!-- Scrollable Content Area -->
         <div class="flex-1 overflow-y-auto min-h-0">
           <div class="container mx-auto p-8">
-            <h2 class="text-3xl font-bold mb-8">Übersicht</h2>
+            <h2
+              class="text-3xl font-bold mb-2"
+              id="lecture-overview-title"
+            ></h2>
+            <p
+              class="text-gray-600 dark:text-gray-400 mb-8"
+              id="lecture-overview-description"
+            ></p>
             <div id="lecture-overview-content" class="space-y-6">
               <!-- Overview content will be rendered here -->
             </div>
@@ -604,6 +617,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
+    <script src="js/components.js"></script>
     <script src="js/parser.js"></script>
     <script src="js/progress.js"></script>
     <script src="app.js"></script>
