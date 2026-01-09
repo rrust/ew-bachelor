@@ -136,11 +136,56 @@ async function parseContent() {
         content[moduleId].lectures[lectureId].quiz.push(...quizQuestions);
       } else if (isLectureMetadata) {
         // This is lecture.md containing metadata/description
-        const doc = documents[0]; // Should be single document
-        if (doc && doc.attributes) {
-          content[moduleId].lectures[lectureId].topic = doc.attributes.topic || '';
-          content[moduleId].lectures[lectureId].description = doc.attributes.description || '';
-          content[moduleId].lectures[lectureId].descriptionHtml = doc.body ? marked.parse(doc.body) : '';
+        // Check if it's actually metadata (no 'type' attribute) or old format (has 'type')
+        const doc = documents[0];
+        if (doc && doc.attributes && !doc.attributes.type) {
+          // New format: metadata only
+          content[moduleId].lectures[lectureId].topic =
+            doc.attributes.topic || '';
+          content[moduleId].lectures[lectureId].description =
+            doc.attributes.description || '';
+          content[moduleId].lectures[lectureId].descriptionHtml = doc.body
+            ? marked.parse(doc.body)
+            : '';
+        } else {
+          // Old format: lecture.md with multiple items
+          const lectureItems = documents.map((doc) => {
+            const item = {
+              type: doc.attributes.type || 'learning-content',
+              ...doc.attributes
+            };
+
+            // Parse body content based on type
+            if (item.type === 'learning-content') {
+              item.html = marked.parse(doc.body);
+            } else if (item.type === 'self-assessment-mc') {
+              item.explanation = doc.body ? marked.parse(doc.body) : '';
+            } else if (item.type === 'youtube-video') {
+              // URL and title are already in attributes
+            } else if (item.type === 'image') {
+              // URL, alt, caption, and title are already in attributes
+            } else if (item.type === 'mermaid-diagram') {
+              // Extract mermaid code from body
+              const mermaidMatch = doc.body.match(
+                /```mermaid\n([\s\S]*?)\n```/
+              );
+              if (mermaidMatch) {
+                item.diagram = mermaidMatch[1].trim();
+              } else {
+                item.diagram = doc.body.trim();
+              }
+            }
+
+            return item;
+          });
+
+          // Promote the topic from the first item to the lecture level
+          if (lectureItems.length > 0 && lectureItems[0].topic) {
+            content[moduleId].lectures[lectureId].topic =
+              lectureItems[0].topic;
+          }
+
+          content[moduleId].lectures[lectureId].items.push(...lectureItems);
         }
       } else if (isLectureItems) {
         // This is a single lecture item file
@@ -176,45 +221,6 @@ async function parseContent() {
 
           content[moduleId].lectures[lectureId].items.push(item);
         }
-      } else {
-        // This is a lecture.md file with multiple items (old format)
-        const lectureItems = documents.map((doc) => {
-          const item = {
-            type: doc.attributes.type || 'learning-content',
-            ...doc.attributes
-          };
-
-          // Parse body content based on type
-          if (item.type === 'learning-content') {
-            item.html = marked.parse(doc.body);
-          } else if (item.type === 'self-assessment-mc') {
-            item.explanation = doc.body ? marked.parse(doc.body) : '';
-          } else if (item.type === 'youtube-video') {
-            // URL and title are already in attributes
-            // No additional parsing needed
-          } else if (item.type === 'image') {
-            // URL, alt, caption, and title are already in attributes
-            // No additional parsing needed
-          } else if (item.type === 'mermaid-diagram') {
-            // Extract mermaid code from body (between ```mermaid and ```)
-            const mermaidMatch = doc.body.match(/```mermaid\n([\s\S]*?)\n```/);
-            if (mermaidMatch) {
-              item.diagram = mermaidMatch[1].trim();
-            } else {
-              // If no code block, use entire body
-              item.diagram = doc.body.trim();
-            }
-          }
-
-          return item;
-        });
-
-        // Promote the topic from the first item to the lecture level
-        if (lectureItems.length > 0 && lectureItems[0].topic) {
-          content[moduleId].lectures[lectureId].topic = lectureItems[0].topic;
-        }
-
-        content[moduleId].lectures[lectureId].items.push(...lectureItems);
       }
     } catch (error) {
       console.error('Error parsing file:', filePath, error);

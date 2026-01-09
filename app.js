@@ -785,7 +785,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       switch (item.type) {
         case 'learning-content':
           typeLabel = 'Text';
-          badgeClass = 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
+          badgeClass =
+            'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
           // Extract first heading or first few words
           const tempDiv = document.createElement('div');
           tempDiv.innerHTML = item.html;
@@ -801,31 +802,36 @@ document.addEventListener('DOMContentLoaded', async () => {
           break;
         case 'self-assessment-mc':
           typeLabel = 'Selbsttest';
-          badgeClass = 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
+          badgeClass =
+            'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
           preview = item.question;
           description = `${item.options?.length || 0} Antwortmöglichkeiten`;
           break;
         case 'youtube-video':
           typeLabel = 'Video';
-          badgeClass = 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
+          badgeClass =
+            'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
           preview = item.title || 'YouTube Video';
           description = 'Eingebettetes YouTube-Video';
           break;
         case 'image':
           typeLabel = 'Bild';
-          badgeClass = 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+          badgeClass =
+            'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
           preview = item.title || item.alt || 'Bild';
           description = item.caption || item.alt || 'Bilddarstellung';
           break;
         case 'mermaid-diagram':
           typeLabel = 'Diagramm';
-          badgeClass = 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200';
+          badgeClass =
+            'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200';
           preview = item.title || 'Mermaid Diagramm';
           description = 'Interaktives Diagramm';
           break;
         default:
           typeLabel = 'Inhalt';
-          badgeClass = 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
+          badgeClass =
+            'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
           preview = 'Unbekannter Typ';
           description = '';
       }
