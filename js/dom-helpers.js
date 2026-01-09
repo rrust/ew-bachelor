@@ -150,9 +150,9 @@ function debounce(func, wait = 300) {
   return function executedFunction(...args) {
     const later = () => {
       clearTimeout(timeout);
-window.showElement = showElement;
-window.hideElement = hideElement;
-window.debounce = debounce;
+      window.showElement = showElement;
+      window.hideElement = hideElement;
+      window.debounce = debounce;
       func(...args);
     };
     clearTimeout(timeout);

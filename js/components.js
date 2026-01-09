@@ -3,7 +3,7 @@
 
 /**
  * Creates the application header with navigation and theme toggle
- * @param {string} view - Current view name ('moduleMap', 'tools', 'comingSoon')
+ * @param {string} view - Current view name ('moduleMap', 'tools', 'map', 'comingSoon')
  * @returns {HTMLElement} Header element
  */
 function createAppHeader(view = 'moduleMap') {
@@ -38,7 +38,11 @@ function createAppHeader(view = 'moduleMap') {
         </button>
         <button
           id="nav-map${idSuffix}"
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200 ${
+            activeNav === 'map'
+              ? 'text-blue-600 dark:text-blue-400 font-bold'
+              : ''
+          }"
         >
           Map
         </button>
@@ -94,7 +98,7 @@ function createAppHeader(view = 'moduleMap') {
 /**
  * Injects header into a view container
  * @param {string} viewId - DOM id of the view container
- * @param {string} viewName - Name identifier for the view ('moduleMap', 'tools', 'comingSoon')
+ * @param {string} viewName - Name identifier for the view ('moduleMap', 'tools', 'map', 'comingSoon')
  */
 function injectHeader(viewId, viewName) {
   const viewElement = document.getElementById(viewId);

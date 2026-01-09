@@ -16,9 +16,11 @@ function updateURL(path, title) {
  */
 function parseURL() {
   const hash = window.location.hash.slice(1); // Remove #
+  console.log('parseURL - hash:', hash);
   if (!hash || hash === '/') return null;
 
   const parts = hash.split('/').filter((p) => p);
+  console.log('parseURL - parts:', parts);
   const route = { view: parts[0] };
 
   // Parse route patterns
@@ -39,7 +41,9 @@ function parseURL() {
     }
   } else if (parts[0] === 'tools') {
     route.view = 'tools';
-  } else if (parts[0] === 'map' || parts[0] === 'progress') {
+  } else if (parts[0] === 'map') {
+    route.view = 'map';
+  } else if (parts[0] === 'progress') {
     route.view = 'comingSoon';
   }
 

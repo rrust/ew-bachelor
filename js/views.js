@@ -12,6 +12,7 @@ function showView(viewName) {
     'quiz',
     'quizResults',
     'tools',
+    'map',
     'comingSoon'
   ];
 
@@ -46,6 +47,7 @@ function updateGreeting(userName) {
   const greetingIds = [
     'header-greeting',
     'header-greeting-tools',
+    'header-greeting-map',
     'header-greeting-comingSoon'
   ];
 

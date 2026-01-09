@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     quiz: document.getElementById('quiz-view'),
     quizResults: document.getElementById('quiz-results-view'),
     tools: document.getElementById('tools-view'),
+    map: document.getElementById('map-view'),
     comingSoon: document.getElementById('coming-soon-view')
   };
 
@@ -123,7 +124,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     } else if (parts[0] === 'tools') {
       route.view = 'tools';
-    } else if (parts[0] === 'map' || parts[0] === 'progress') {
+    } else if (parts[0] === 'map') {
+      route.view = 'map';
+    } else if (parts[0] === 'progress') {
       route.view = 'comingSoon';
     }
 
@@ -132,6 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function navigateFromURL() {
     const route = parseURL();
+    console.log('navigateFromURL - parsed route:', route);
     if (!route) return false;
 
     if (route.view === 'module' && route.moduleId) {
@@ -170,6 +174,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateGreeting();
       showView('tools');
       return true;
+    } else if (route.view === 'map') {
+      updateGreeting();
+      showView('map');
+      renderModuleMap(MODULES, APP_CONTENT);
+      return true;
     } else if (route.view === 'comingSoon') {
       updateGreeting();
       showView('comingSoon');
@@ -194,6 +203,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Inject headers into views using components.js
     injectHeader('module-map-view', 'moduleMap');
     injectHeader('tools-view', 'tools');
+    injectHeader('map-view', 'map');
     injectHeader('coming-soon-view', 'comingSoon');
 
     // Load modules metadata from JSON
@@ -812,38 +822,48 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateURL('/', 'Module Overview');
     });
 
-    // Header navigation
-    if (buttons.navModule) {
-      buttons.navModule.addEventListener('click', () => {
+    // Header navigation using event delegation to handle all view variants
+    document.addEventListener('click', (e) => {
+      const target = e.target.closest('button');
+      if (!target) return;
+
+      // Module navigation (nav-module, nav-module-map, nav-module-tools, etc.)
+      if (target.id && target.id.startsWith('nav-module')) {
         loadModuleCards();
         showView('moduleMap');
         updateURL('/', 'Module Overview');
-      });
-    }
+      }
 
-    if (buttons.navMap) {
-      buttons.navMap.addEventListener('click', () => {
+      // Map navigation
+      else if (target.id && target.id.startsWith('nav-map')) {
         updateGreeting();
-        showView('comingSoon');
-        updateURL('/map', 'Map (Coming Soon)');
-      });
-    }
+        showView('map');
+        renderModuleMap(MODULES, APP_CONTENT);
+        updateURL('/map', 'Studienstruktur Map');
+      }
 
-    if (buttons.navProgress) {
-      buttons.navProgress.addEventListener('click', () => {
+      // Progress navigation
+      else if (target.id && target.id.startsWith('nav-progress')) {
         updateGreeting();
         showView('comingSoon');
         updateURL('/progress', 'Progress (Coming Soon)');
-      });
-    }
+      }
 
-    if (buttons.navTools) {
-      buttons.navTools.addEventListener('click', () => {
+      // Tools navigation
+      else if (
+        target.id &&
+        (target.id === 'nav-tools' || target.id === 'nav-tools-active')
+      ) {
         updateGreeting();
         showView('tools');
         updateURL('/tools', 'Tools');
-      });
-    }
+      }
+
+      // Theme toggle
+      else if (target.id && target.id.startsWith('theme-toggle')) {
+        toggleTheme();
+      }
+    });
   }
 
   function setupLectureListeners() {
@@ -905,7 +925,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   function setupThemeListener() {
     if (buttons.themeToggle) {
       // Debounce theme toggle to prevent rapid clicking issues
-      const debouncedToggle = window.debounce ? window.debounce(toggleTheme, 200) : toggleTheme;
+      const debouncedToggle = window.debounce
+        ? window.debounce(toggleTheme, 200)
+        : toggleTheme;
       buttons.themeToggle.addEventListener('click', debouncedToggle);
     }
   }
