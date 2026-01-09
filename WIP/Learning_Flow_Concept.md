@@ -29,6 +29,8 @@ The user is first greeted by a clean, welcoming screen.
 - **Initial State:** If it's the user's first visit, the app asks for their name.
 - **Returning User:** If progress is found in `localStorage`, it displays a "Welcome back, [Name]!" message.
 - **Main View (Module Map):** The central UI is a "Module Map," which visually represents the entire curriculum. All 14 modules from the Bachelor's curriculum are displayed as cards.
+- **Navigation:** Top navigation includes "Module" (home), "Map" (coming soon), "Progress" (coming soon), and "Tools"
+- **Dark Mode:** Full dark mode support with theme toggle in header, preference saved in localStorage
 - **Unlocking Logic:**
   - **STEOPs (Grundlagen):** The initial set of modules (Modul 1-5) are unlocked by default.
   - **Dependencies:** Higher-level modules (6-14) are visually "locked" (not yet implemented: automatic unlocking based on prerequisites).
@@ -37,6 +39,7 @@ The user is first greeted by a clean, welcoming screen.
   - Module title and ECTS points
   - Status badge (locked/unlocked)
   - Overall progress badge: 🥇 (≥90% avg), 🥈 (≥70% avg), 🥉 (≥50% avg), or ⚪ (incomplete/no quizzes taken)
+  - Badge awarded based on average of completed quizzes (not requiring all to be completed)
   - Two icon buttons at bottom (right-aligned): 📚 (view lectures) and 📝 (module exam)
   - Exam button disabled until 80% average quiz score is achieved
   - Tooltips show detailed progress on hover
@@ -96,6 +99,19 @@ This section breaks down the concept into actionable implementation steps using 
   - **AC:** On first load, the `welcome-view` is shown.
   - **AC:** A script saves the user's name from an input field to `localStorage`.
   - **AC:** On subsequent loads, the `module-map-view` is shown with a "Welcome back, [Name]!" message.
+- **[x] Task 1.5: Implement Dark Mode**
+  - **AC:** Theme toggle button in header switches between light and dark modes.
+  - **AC:** Theme preference is saved to localStorage and persists across sessions.
+  - **AC:** All views and components support dark mode with appropriate color schemes.
+  - **AC:** System preference detection on first load (prefers-color-scheme).
+  - **AC:** Smooth transitions between themes without flash of wrong theme.
+- **[x] Task 1.6: Implement Navigation Structure**
+  - **AC:** Top navigation with "Module", "Map", "Progress", and "Tools" buttons.
+  - **AC:** "Module" button navigates to module overview (main view).
+  - **AC:** "Map" and "Progress" show coming soon placeholder pages.
+  - **AC:** "Tools" opens tools view with content validator.
+  - **AC:** Navigation persists across all views with consistent header.
+  - **AC:** Coming soon view has back button to return to module overview.
 
 ### Phase 2: Content & Learning Mode
 
@@ -137,8 +153,10 @@ This section breaks down the concept into actionable implementation steps using 
   - **AC:** Same view used for just-completed quizzes (without retake option).
 - **[x] Task 3.6: Implement Module-Level Progress**
   - **AC:** Module cards display overall badge based on average quiz scores.
-  - **AC:** Badge shows: 🥇 (≥90%), 🥈 (≥70%), 🥉 (≥50%), or ⚪ (incomplete).
+  - **AC:** Badge shows: 🥇 (≥90%), 🥈 (≥70%), 🥉 (≥50%), or ⚪ (incomplete/none).
+  - **AC:** Badge awarded immediately when any quiz is completed (based on average of completed quizzes).
   - **AC:** Tooltip displays "X of Y quizzes taken" or average percentage.
+  - **AC:** Progress.js functions properly integrated (stub functions removed from app.js).
 - **[x] Task 3.7: Implement Exam Unlocking**
   - **AC:** Exam button on module card requires 80% average to unlock.
   - **AC:** Disabled exam button shows tooltip: "Your current score: X%, you need 80%".
@@ -147,8 +165,14 @@ This section breaks down the concept into actionable implementation steps using 
   - **AC:** All modules from Bachelor's curriculum added to module map.
   - **AC:** Modules 1-5 unlocked by default (STEOPs), modules 6-14 locked.
   - **AC:** Cards have uniform minimum height for consistent appearance.
-- **[ ] Task 3.9: Implement Progress Backup**
+- **[x] Task 3.9: Fix Dark Mode for All Components**
+  - **AC:** Lecture list items have dark mode background (dark:bg-gray-700).
+  - **AC:** Self-assessment questions styled for dark mode.
+  - **AC:** Quiz question options have dark mode hover states.
+  - **AC:** All borders, backgrounds, and text colors adapt to dark mode.
+- **[ ] Task 3.10: Implement Progress Backup**
   - **AC:** A button triggers a function to download the `localStorage` progress object as a JSON file.
+  - **AC:** Import function allows uploading and restoring progress from JSON file.
 
 ### Phase 4: Module Exams & Advanced Features
 

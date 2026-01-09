@@ -288,37 +288,207 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 - **Cloud Sync:** (Future) Sync across devices
 - **Backup Reminders:** Prompt to backup progress
 
-## Priority Ranking
+## Implementation Status & Roadmap
 
-### High Priority (Quick Wins)
+### ✅ Already Implemented
 
-1. Mobile responsiveness refinement
-2. Skills-based progression system
-3. Spaced repetition review mode
-4. Progress visualization improvements
-5. Note-taking capability
+1. **Light/Dark Mode Toggle** - Full dark mode support with theme persistence
+2. **Module Navigation Structure** - Clear navigation between Module, Map, Progress, and Tools
+3. **Coming Soon Placeholders** - Placeholder pages for Map and Progress features
+4. **Mobile Responsive Layout** - Basic responsive design using Tailwind CSS
+5. **Progress Tracking** - LocalStorage-based progress with badge system
 
-### Medium Priority (Significant Impact)
+### Phase 5: Enhanced Gamification & Motivation (Next Priority)
 
-1. Light/dark mode toggle
-2. Achievement system expansion
-3. Active recall question types
-4. Personal analytics dashboard
-5. Search functionality
+- **[ ] Task 5.1: Implement Skills-Based Progression**
+  - **AC:** Define skill categories mapped to content areas (e.g., "Zelluläre Grundlagen", "Makronährstoff-Kenner").
+  - **AC:** Each lecture awards specific skills with levels (Beginner → Intermediate → Advanced → Expert).
+  - **AC:** Skills display on user profile/progress dashboard.
+  - **AC:** Skill tree visualization showing dependencies and current levels.
+  - **AC:** Module cards show which skills they teach.
+  - **Effort:** Medium (3-5 days) - Requires new data model and UI components.
 
-### Low Priority (Nice Additions)
+- **[ ] Task 5.2: Expand Achievement System**
+  - **AC:** Implement time-based achievements (Frühaufsteher, Nachteule, Wochenend-Warrior, Streak-Champion).
+  - **AC:** Implement performance achievements (Perfektionist, Schnelldenker, Wissensdurst).
+  - **AC:** Implement exploration achievements (Entdecker, Vollender, Revisor).
+  - **AC:** Achievement notification system with celebratory animations.
+  - **AC:** "My Achievements" page showing all earned badges with unlock dates.
+  - **AC:** Achievement progress tracking (e.g., "3/7 days streak").
+  - **Effort:** Medium (4-6 days) - Multiple achievement types and notification system.
 
-1. Social features
-2. PWA capabilities
-3. Rich media integration
-4. Cloud sync
-5. 3D models and simulations
+- **[ ] Task 5.3: Add Progress Visualization Improvements**
+  - **AC:** Overall degree progress bar on main dashboard.
+  - **AC:** Visual progress indicators for each module (circular progress, percentage).
+  - **AC:** Time investment tracker: "You've studied X hours this month".
+  - **AC:** Knowledge growth graph showing score trends over time.
+  - **AC:** Milestone celebrations (e.g., "50% complete!" animation).
+  - **Effort:** Low (2-3 days) - Mostly UI/visual enhancements.
+
+### Phase 6: Enhanced Learning Experience
+
+- **[ ] Task 6.1: Implement Spaced Repetition Review Mode**
+  - **AC:** Algorithm tracks topics needing review based on time elapsed and performance.
+  - **AC:** "Review Mode" button on dashboard showing number of topics ready for review.
+  - **AC:** Review sessions present mixed questions from multiple lectures.
+  - **AC:** Smart scheduling based on forgetting curve principles.
+  - **AC:** Review history tracking and effectiveness metrics.
+  - **Effort:** High (7-10 days) - Complex algorithm and new mode.
+
+- **[ ] Task 6.2: Add Active Recall Question Types**
+  - **AC:** Fill-in-the-blank questions with text input validation.
+  - **AC:** Drag-and-drop matching exercises for terminology.
+  - **AC:** Flashcard mode for quick review of concepts.
+  - **AC:** Image labeling questions (e.g., label cell parts).
+  - **AC:** Sorting/ordering exercises for process sequences.
+  - **Effort:** High (8-12 days) - Multiple new question types and interactions.
+
+- **[ ] Task 6.3: Implement Note-Taking & Annotation**
+  - **AC:** "Add Note" button on each lecture section.
+  - **AC:** Personal notes stored in localStorage with timestamps.
+  - **AC:** Highlight text feature for important passages.
+  - **AC:** Bookmark lectures for quick access.
+  - **AC:** Search through personal notes functionality.
+  - **AC:** Export notes as formatted study guide (markdown/PDF).
+  - **AC:** Tags and categories for organizing notes.
+  - **Effort:** Medium (5-7 days) - Rich text editing and organization.
+
+- **[ ] Task 6.4: Add Personalized Learning Paths**
+  - **AC:** "Weak Areas" dashboard identifying topics needing improvement.
+  - **AC:** Recommendations based on quiz performance ("You might want to review...").
+  - **AC:** Custom study schedule generator for exam preparation.
+  - **AC:** Learning style preferences (visual/auditory/reading/kinesthetic).
+  - **AC:** Adaptive difficulty based on performance.
+  - **Effort:** High (10-14 days) - Analytics and recommendation engine.
+
+### Phase 7: Mobile & UX Polish
+
+- **[ ] Task 7.1: Refine Mobile Responsiveness**
+  - **AC:** Single-column card layout on mobile (< 640px).
+  - **AC:** Touch-friendly buttons (minimum 44x44px touch targets).
+  - **AC:** Swipe gestures for navigating lecture items.
+  - **AC:** Bottom navigation bar on mobile devices.
+  - **AC:** Collapsible header on scroll for more content space.
+  - **AC:** Test and optimize on iOS Safari and Android Chrome.
+  - **AC:** Optimize font sizes and line heights for mobile readability.
+  - **Effort:** Medium (4-6 days) - Device testing and touch optimization.
+
+- **[ ] Task 7.2: Implement PWA Capabilities**
+  - **AC:** Service worker for offline content caching.
+  - **AC:** Web app manifest for home screen installation.
+  - **AC:** Offline indicator when not connected.
+  - **AC:** Background sync for progress updates when back online.
+  - **AC:** App icon and splash screen for installed PWA.
+  - **AC:** Push notification support for study reminders (optional).
+  - **Effort:** Medium (5-7 days) - Service worker setup and testing.
+
+- **[ ] Task 7.3: Add Accessibility Features**
+  - **AC:** Full keyboard navigation support (tab order, shortcuts).
+  - **AC:** ARIA labels for screen readers.
+  - **AC:** Adjustable text size setting (small/medium/large/extra large).
+  - **AC:** High contrast mode option.
+  - **AC:** Text-to-speech for lecture content using Web Speech API.
+  - **AC:** Focus indicators clearly visible.
+  - **AC:** Dyslexia-friendly font option (OpenDyslexic).
+  - **Effort:** Medium (4-6 days) - WCAG compliance and testing.
+
+### Phase 8: Analytics & Social Features
+
+- **[ ] Task 8.1: Build Personal Analytics Dashboard**
+  - **AC:** Study time tracking per module and overall.
+  - **AC:** Score trends over time (line graph).
+  - **AC:** Heatmap of study activity (days of week, time of day).
+  - **AC:** Learning velocity metrics (pace of completion).
+  - **AC:** Strengths and weaknesses analysis.
+  - **AC:** Predicted exam readiness calculator.
+  - **AC:** Comparison to personal bests and goals.
+  - **Effort:** High (8-10 days) - Data collection and visualization.
+
+- **[ ] Task 8.2: Implement Progress Backup & Sync**
+  - **AC:** Export progress as JSON file download.
+  - **AC:** Import progress from JSON file upload.
+  - **AC:** Automatic backup reminders (weekly prompt).
+  - **AC:** Cloud sync option using GitHub Gists (anonymous).
+  - **AC:** Conflict resolution for manual sync.
+  - **Effort:** Low-Medium (3-5 days) - File handling and optional cloud integration.
+
+- **[ ] Task 8.3: Add Social & Sharing Features**
+  - **AC:** Share achievement on social media (Twitter, LinkedIn).
+  - **AC:** Anonymous leaderboard (opt-in, no personal data).
+  - **AC:** Export certificate of completion as image/PDF.
+  - **AC:** Share interesting facts with custom graphics.
+  - **AC:** Study group mode (synchronized viewing - advanced).
+  - **Effort:** Medium (5-7 days for basic, 10+ for study groups).
+
+### Phase 9: Rich Content & Media
+
+- **[ ] Task 9.1: Add Search & Discovery**
+  - **AC:** Global search box in header searching all content.
+  - **AC:** Search results show lectures and topics matching query.
+  - **AC:** Filter by module, difficulty, topic tags.
+  - **AC:** "Jump to content" from search results.
+  - **AC:** Search history and suggestions.
+  - **Effort:** Medium (4-6 days) - Search indexing and UI.
+
+- **[ ] Task 9.2: Implement Rich Media Support**
+  - **AC:** Embedded video player for lecture videos.
+  - **AC:** Interactive diagrams (zoomable, clickable).
+  - **AC:** Audio player for pronunciation guides.
+  - **AC:** Image gallery viewer for illustrations.
+  - **AC:** 3D model viewer for molecular structures (Three.js).
+  - **Effort:** High (10-15 days) - Multiple media types and players.
+
+- **[ ] Task 9.3: Add Real-World Context**
+  - **AC:** "Real-World Example" sections in lectures.
+  - **AC:** Case studies from nutritional practice.
+  - **AC:** Career path information linked to skills.
+  - **AC:** Recipe examples for nutritional concepts.
+  - **AC:** Links to recent research and news.
+  - **Effort:** Medium (content creation) - Mostly content work.
+
+## Priority Ranking Summary
+
+### 🔴 High Priority (Quick Impact)
+
+1. ✅ ~~Light/dark mode toggle~~ (Completed)
+2. Progress visualization improvements (Task 5.3) - 2-3 days
+3. Progress backup/export (Task 8.2 partial) - 2-3 days
+4. Skills-based progression (Task 5.1) - 3-5 days
+5. Mobile responsiveness refinement (Task 7.1) - 4-6 days
+
+### 🟡 Medium Priority (Significant Value)
+
+1. Achievement system expansion (Task 5.2) - 4-6 days
+2. Personal analytics dashboard (Task 8.1) - 8-10 days
+3. Note-taking capability (Task 6.3) - 5-7 days
+4. Search functionality (Task 9.1) - 4-6 days
+5. PWA capabilities (Task 7.2) - 5-7 days
+
+### 🟢 Low Priority (Future Enhancement)
+
+1. Spaced repetition (Task 6.1) - 7-10 days
+2. Active recall question types (Task 6.2) - 8-12 days
+3. Social features (Task 8.3) - 5-7+ days
+4. Rich media integration (Task 9.2) - 10-15 days
+5. Personalized learning paths (Task 6.4) - 10-14 days
 
 ---
 
-**Note:** These features should be evaluated based on:
+## Evaluation Criteria
 
-- Development effort vs. learning impact
-- User research and feedback
-- Technical feasibility
-- Alignment with educational goals
+Features should be prioritized based on:
+
+- **Learning Impact:** Does it improve retention and understanding?
+- **User Engagement:** Will it keep students motivated?
+- **Development Effort:** Time investment vs. value delivered
+- **Technical Feasibility:** Can it be built with current stack?
+- **User Feedback:** What do actual students request?
+- **Educational Research:** Is it backed by learning science?
+
+## Next Steps
+
+1. Complete Phase 5 (Enhanced Gamification) - ~2 weeks
+2. Implement Progress Backup (Task 8.2) - ~1 week
+3. Polish Mobile UX (Task 7.1) - ~1 week
+4. Gather user feedback and adjust priorities
+5. Begin Phase 6 based on user needs
