@@ -778,14 +778,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         'bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer';
 
       let typeLabel = '';
-      let icon = '';
+      let badgeClass = '';
       let preview = '';
       let description = '';
 
       switch (item.type) {
         case 'learning-content':
-          typeLabel = 'Lerninhalt';
-          icon = '📖';
+          typeLabel = 'Text';
+          badgeClass = 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
           // Extract first heading or first few words
           const tempDiv = document.createElement('div');
           tempDiv.innerHTML = item.html;
@@ -801,41 +801,42 @@ document.addEventListener('DOMContentLoaded', async () => {
           break;
         case 'self-assessment-mc':
           typeLabel = 'Selbsttest';
-          icon = '❓';
+          badgeClass = 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
           preview = item.question;
           description = `${item.options?.length || 0} Antwortmöglichkeiten`;
           break;
         case 'youtube-video':
           typeLabel = 'Video';
-          icon = '🎥';
+          badgeClass = 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
           preview = item.title || 'YouTube Video';
           description = 'Eingebettetes YouTube-Video';
           break;
         case 'image':
           typeLabel = 'Bild';
-          icon = '🖼️';
+          badgeClass = 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
           preview = item.title || item.alt || 'Bild';
           description = item.caption || item.alt || 'Bilddarstellung';
           break;
         case 'mermaid-diagram':
           typeLabel = 'Diagramm';
-          icon = '📊';
+          badgeClass = 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200';
           preview = item.title || 'Mermaid Diagramm';
           description = 'Interaktives Diagramm';
           break;
         default:
           typeLabel = 'Inhalt';
-          icon = '📄';
+          badgeClass = 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
           preview = 'Unbekannter Typ';
           description = '';
       }
 
       card.innerHTML = `
         <div class="flex items-start space-x-4">
-          <div class="text-4xl flex-shrink-0">${icon}</div>
+          <div class="flex-shrink-0">
+            <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full ${badgeClass}">${typeLabel}</span>
+          </div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">${typeLabel}</span>
               <span class="text-sm text-gray-500 dark:text-gray-400">Schritt ${
                 index + 1
               }</span>
