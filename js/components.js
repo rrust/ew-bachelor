@@ -111,6 +111,11 @@ function injectHeader(viewId, viewName) {
   // Create header and insert as first child
   const header = createAppHeader(viewName);
   viewElement.insertBefore(header, viewElement.firstChild);
+
+  // Update theme icons after header injection
+  if (window.updateThemeIcons) {
+    window.updateThemeIcons();
+  }
 }
 
 // Expose functions to global scope

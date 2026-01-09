@@ -842,7 +842,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Theme toggle
       else if (target.id && target.id.startsWith('theme-toggle')) {
-        toggleTheme();
+        if (window.toggleTheme) {
+          window.toggleTheme();
+        }
       }
     });
   }
@@ -903,76 +905,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  function setupThemeListener() {
-    if (buttons.themeToggle) {
-      // Debounce theme toggle to prevent rapid clicking issues
-      const debouncedToggle = window.debounce
-        ? window.debounce(toggleTheme, 200)
-        : toggleTheme;
-      buttons.themeToggle.addEventListener('click', debouncedToggle);
-    }
-  }
-
   function addEventListeners() {
     setupWelcomeListeners();
     setupNavigationListeners();
     setupLectureListeners();
     setupQuizListeners();
-    setupThemeListener();
-  }
-
-  // --- Theme Toggle ---
-  function toggleTheme() {
-    const html = document.documentElement;
-
-    // Get all light and dark icons (by ID and class)
-    const lightIcons = [
-      document.getElementById('theme-toggle-light-icon'),
-      ...document.querySelectorAll('.theme-toggle-light-icon')
-    ].filter(Boolean);
-
-    const darkIcons = [
-      document.getElementById('theme-toggle-dark-icon'),
-      ...document.querySelectorAll('.theme-toggle-dark-icon')
-    ].filter(Boolean);
-
-    if (html.classList.contains('dark')) {
-      // Switch to light mode
-      html.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      lightIcons.forEach((icon) => icon.classList.add('hidden'));
-      darkIcons.forEach((icon) => icon.classList.remove('hidden'));
-    } else {
-      // Switch to dark mode
-      html.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      lightIcons.forEach((icon) => icon.classList.remove('hidden'));
-      darkIcons.forEach((icon) => icon.classList.add('hidden'));
-    }
-  }
-
-  // --- Initialize Theme Icons ---
-  function initializeThemeIcons() {
-    const lightIcons = [
-      document.getElementById('theme-toggle-light-icon'),
-      ...document.querySelectorAll('.theme-toggle-light-icon')
-    ].filter(Boolean);
-
-    const darkIcons = [
-      document.getElementById('theme-toggle-dark-icon'),
-      ...document.querySelectorAll('.theme-toggle-dark-icon')
-    ].filter(Boolean);
-
-    if (document.documentElement.classList.contains('dark')) {
-      lightIcons.forEach((icon) => icon.classList.remove('hidden'));
-      darkIcons.forEach((icon) => icon.classList.add('hidden'));
-    } else {
-      lightIcons.forEach((icon) => icon.classList.add('hidden'));
-      darkIcons.forEach((icon) => icon.classList.remove('hidden'));
-    }
   }
 
   // --- Initial Load ---
   init();
-  initializeThemeIcons();
+
+  // Initialize theme icons after content loads
+  if (window.updateThemeIcons) {
+    window.updateThemeIcons();
+  }
 });
