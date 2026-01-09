@@ -36,7 +36,10 @@
       const REQUIRED_FIELDS = {
         'multiple-choice': ['type', 'question', 'options', 'correctAnswer'],
         'self-assessment-mc': ['type', 'question', 'options', 'correctAnswer'],
-        'learning-content': ['type']
+        'learning-content': ['type'],
+        'youtube-video': ['type', 'url'],
+        'image': ['type', 'url', 'alt'],
+        'mermaid-diagram': ['type']
       };
 
       async function validateAllContent() {
@@ -91,19 +94,63 @@
 
           const content = await response.text();
 
+          // Detect file type
+          const isLectureMetadata = filePath.endsWith('/lecture.md') && !filePath.includes('/lecture-items/');
+          const isQuizMetadata = filePath.endsWith('/quiz.md') && !filePath.includes('/questions/');
+          const isLectureItem = filePath.includes('/lecture-items/');
+          const isQuizQuestion = filePath.includes('/questions/');
+
           // Parse multi-document format
           const documents = parseMultiDocument(content);
           result.itemCount = documents.length;
 
-          // Validate each document
-          documents.forEach((doc, index) => {
-            validateDocument(doc, index, result);
-          });
+          // Validate based on file type
+          if (isLectureMetadata) {
+            validateLectureMetadata(documents[0], result);
+          } else if (isQuizMetadata) {
+            validateQuizMetadata(documents[0], result);
+          } else {
+            // Validate each document as content item
+            documents.forEach((doc, index) => {
+              validateDocument(doc, index, result);
+            });
+          }
         } catch (error) {
           result.errors.push(`Fehler beim Lesen: ${error.message}`);
         }
 
         return result;
+      }
+
+      function validateLectureMetadata(doc, result) {
+        if (doc.parseError) {
+          result.errors.push(`YAML Parse-Fehler: ${doc.parseError}`);
+          return;
+        }
+
+        const attrs = doc.attributes;
+        
+        // Check required metadata fields
+        if (!attrs.topic) {
+          result.errors.push(`Pflichtfeld 'topic' fehlt`);
+        }
+        if (!attrs.description) {
+          result.errors.push(`Pflichtfeld 'description' fehlt`);
+        }
+      }
+
+      function validateQuizMetadata(doc, result) {
+        if (doc.parseError) {
+          result.errors.push(`YAML Parse-Fehler: ${doc.parseError}`);
+          return;
+        }
+
+        const attrs = doc.attributes;
+        
+        // Check required metadata fields
+        if (!attrs.description) {
+          result.errors.push(`Pflichtfeld 'description' fehlt`);
+        }
       }
 
       function parseMultiDocument(content) {
