@@ -23,7 +23,53 @@ There is no complex setup. Simply open the `index.html` file in a browser. For d
 
 There is no build step. The application runs directly in the browser.
 
-### Linting
+### Content Validation
+
+**Critical:** Always validate content before completing tasks:
+
+1. Open `validate-content.html` in browser with Live Server
+2. Click "Alle Content-Dateien validieren"
+3. Fix all errors and warnings
+4. Re-validate until all green
+
+Or access via the app: Header → "Tools" → "Content Validator"
+
+**For detailed content development guidelines, see:**
+→ **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)**
+
+### YAML Formatting Rules
+
+1. **List syntax:** Always use `-` (dash) with 2-space indentation, NEVER `*` (asterisk)
+
+   ```yaml
+   # ✅ CORRECT
+   options:
+     - 'Option 1'
+     - 'Option 2'
+   
+   # ❌ WRONG - will cause parsing errors
+   options:
+   
+   * 'Option 1'
+   * 'Option 2'
+   ```
+
+2. **Required fields:**
+   - `multiple-choice`: type, question, options (array), correctAnswer
+   - `self-assessment-mc`: type, topic, question, options (array), correctAnswer
+   - `learning-content`: type
+
+3. **correctAnswer must exactly match one option** (case-sensitive)
+
+4. **Minimum 2 options** for multiple choice questions
+
+### Content Templates
+
+See `docs/CONTENT_TEMPLATES.md` for copy-paste templates.
+
+---
+
+## Linting
 
 Markdown content should be linted using **markdownlint-cli2** via **npx** (no installation required):
 
