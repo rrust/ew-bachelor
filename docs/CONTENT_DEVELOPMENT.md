@@ -22,7 +22,7 @@ Alle Inhalte sind modular aufgebaut für maximale Wartbarkeit und Übersichtlich
 ```text
 content/
 ├── modules.json                          # Modul-Metadaten
-├── content-list.json                     # Registrierung aller Content-Dateien
+├── content-list.json                     # Auto-generiertes Manifest (nicht manuell bearbeiten!)
 └── 01-modul-name/                       # Modul-Ordner (nummeriert)
     └── 01-vorlesung-thema/              # Vorlesungs-Ordner (nummeriert)
         ├── lecture.md                    # Vorlesungs-Metadaten
@@ -38,6 +38,8 @@ content/
             ├── 02-frage-thema-b.md
             └── 03-frage-thema-c.md
 ```
+
+**⚠️ Wichtig:** `content-list.json` wird automatisch generiert. Bearbeite diese Datei **nicht** manuell! Verwende stattdessen `npm run generate-manifest` nach Änderungen.
 
 ### Struktur-Prinzipien
 
@@ -318,25 +320,20 @@ Erstelle Dateien in `questions/`:
 
 Siehe [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md) für Vorlagen.
 
-#### 5. Dateien in content-list.json registrieren
+#### 5. Manifest generieren
 
-Füge **alle** neuen Dateien hinzu:
+Nach dem Hinzufügen neuer Dateien, generiere das Content-Manifest:
 
-```json
-[
-  ...existierende Dateien...,
-  "content/01-modul-name/NN-neues-thema/lecture.md",
-  "content/01-modul-name/NN-neues-thema/lecture-items/01-einleitung.md",
-  "content/01-modul-name/NN-neues-thema/lecture-items/02-konzept-test.md",
-  "content/01-modul-name/NN-neues-thema/lecture-items/03-video.md",
-  "content/01-modul-name/NN-neues-thema/quiz.md",
-  "content/01-modul-name/NN-neues-thema/questions/01-frage-grundlagen.md",
-  "content/01-modul-name/NN-neues-thema/questions/02-frage-vertiefung.md",
-  "content/01-modul-name/NN-neues-thema/questions/03-frage-anwendung.md"
-]
+```bash
+npm run generate-manifest
 ```
 
-**Wichtig:** Die Reihenfolge in `content-list.json` ist nicht wichtig - die Nummerierung in den Dateinamen bestimmt die Anzeige-Reihenfolge.
+Dieser Befehl scannt automatisch alle Markdown-Dateien im `content/` Verzeichnis und aktualisiert `content-list.json`.
+
+**Wichtig:** Führe diesen Befehl immer aus, nachdem du:
+- Neue lecture-items oder questions hinzugefügt hast
+- Dateien umbenannt hast
+- Dateien gelöscht hast
 
 #### 6. Validieren
 
@@ -347,7 +344,7 @@ Füge **alle** neuen Dateien hinzu:
 1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `lecture-items/` an
 2. **Neue Datei erstellen:** z.B. `07-neues-konzept.md`
 3. **Inhalt hinzufügen:** Verwende passende Vorlage aus CONTENT_TEMPLATES.md
-4. **In content-list.json eintragen:** Füge den Pfad zur Liste hinzu
+4. **Manifest generieren:** `npm run generate-manifest`
 5. **Validieren:** Überprüfe mit `validate-content.html`
 
 ### Schritt-für-Schritt: Neue Quiz-Frage hinzufügen
@@ -355,7 +352,7 @@ Füge **alle** neuen Dateien hinzu:
 1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `questions/` an
 2. **Neue Datei erstellen:** z.B. `08-neue-frage.md`
 3. **Frage schreiben:** Verwende die Multiple-Choice-Vorlage
-4. **In content-list.json eintragen:** Füge den Pfad zur Liste hinzu
+4. **Manifest generieren:** `npm run generate-manifest`
 5. **Validieren:** Überprüfe mit `validate-content.html`
 
 ### Inhalte umordnen
@@ -370,18 +367,13 @@ mv lecture-items/03-altes-item.md lecture-items/02-altes-item.md
 mv lecture-items/02-anderes-item.md lecture-items/03-anderes-item.md
 ```
 
-Nach dem Umbenennen: Pfade in `content-list.json` aktualisieren!
+Nach dem Umbenennen: **Manifest neu generieren!**
+
+```bash
+npm run generate-manifest
+```
 
 ### Neues Modul erstellen
-
-1. **Modul in `content/modules.json` definieren:**
-     "content/01-modul-name/NN-thema/quiz.md"
-   ]
-   ```
-
-4. **Validieren** (siehe unten)
-
-### 2. Neues Modul erstellen
 
 1. **Modul in `content/modules.json` definieren:**
 
@@ -391,21 +383,26 @@ Nach dem Umbenennen: Pfade in `content-list.json` aktualisieren!
      "title": "Modul 2: Titel",
      "description": "Beschreibung",
      "ects": 6,
-     "status": "verfügbar"
+     "status": "unlocked"
    }
    ```
 
 2. **Ordnerstruktur erstellen:**
 
    ```bash
-   mkdir -p content/02-neues-modul/01-erste-vorlesung
+   mkdir -p content/02-neues-modul/01-erste-vorlesung/lecture-items
+   mkdir -p content/02-neues-modul/01-erste-vorlesung/questions
    ```
 
-3. **Vorlesungsdateien erstellen** (siehe oben)
+3. **Vorlesungsdateien erstellen** (siehe Schritt-für-Schritt-Anleitung oben)
 
-4. **In content-list.json registrieren**
+4. **Manifest generieren:**
 
-5. **Validieren**
+   ```bash
+   npm run generate-manifest
+   ```
+
+5. **Validieren** mit `validate-content.html`
 
 ## Content Validation
 
