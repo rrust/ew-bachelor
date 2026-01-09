@@ -104,6 +104,7 @@ The application supports multiple content types to create rich, interactive lear
 ### 7.3. Content Format Examples
 
 **YouTube Video:**
+
 ```markdown
 ---
 type: 'youtube-video'
@@ -113,6 +114,7 @@ title: 'Video Title (optional)'
 ```
 
 **Image:**
+
 ```markdown
 ---
 type: 'image'
@@ -123,6 +125,7 @@ caption: 'Optional caption text'
 ```
 
 **Mermaid Diagram:**
+
 ```markdown
 ---
 type: 'mermaid-diagram'
@@ -133,7 +136,8 @@ graph TD
     A[Start] --> B[Process]
     B --> C[End]
 ```
-```
+
+```text
 
 ## 8. Implementation Plan & Tasks (Lo-Fi Vanilla JS)
 
