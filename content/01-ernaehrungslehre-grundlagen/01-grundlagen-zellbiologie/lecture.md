@@ -1,5 +1,5 @@
 ---
-type: 'learning-content' 11111
+type: 'learning-content'
 topic: 'Grundlagen der Zellbiologie'
 ---
 ## Die Zelle: Baustein des Lebens
