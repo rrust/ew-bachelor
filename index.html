@@ -10,6 +10,18 @@
         darkMode: 'class'
       };
     </script>
+    <script type="module">
+      // Initialize Mermaid
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ 
+        startOnLoad: false,
+        theme: 'default',
+        themeVariables: {
+          darkMode: false
+        }
+      });
+      window.mermaid = mermaid;
+    </script>
     <script>
       // Dark mode initialization - must run before body renders
       const savedTheme = localStorage.getItem('theme');

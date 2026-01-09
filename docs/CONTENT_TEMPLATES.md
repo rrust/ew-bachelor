@@ -59,6 +59,77 @@ Normaler Markdown-Inhalt mit Text, Listen, etc.
 **Fett** und *kursiv* formatierter Text.
 ```
 
+## YouTube Video (in lecture.md)
+
+```markdown
+---
+type: 'youtube-video'
+url: 'https://www.youtube.com/watch?v=VIDEO_ID'
+title: 'Video-Titel (optional)'
+---
+```
+
+**Wichtig:**
+
+- URL muss vollständige YouTube-URL sein (mit `watch?v=`)
+- Kurz-URLs (youtu.be) werden auch unterstützt
+- Video wird responsive eingebettet (16:9 Seitenverhältnis)
+
+## Image (in lecture.md)
+
+```markdown
+---
+type: 'image'
+url: 'https://example.com/path/to/image.png'
+alt: 'Beschreibung des Bildes für Screenreader'
+caption: 'Optionale Bildunterschrift (optional)'
+title: 'Bildtitel (optional)'
+---
+```
+
+**Wichtig:**
+
+- `url` kann remote URL oder lokaler Pfad sein
+- `alt` ist Pflichtfeld für Barrierefreiheit
+- Bild wird zentriert und responsive dargestellt
+- Unterstützte Formate: PNG, JPG, GIF, SVG, WebP
+
+## Mermaid Diagram (in lecture.md)
+
+```markdown
+---
+type: 'mermaid-diagram'
+title: 'Diagramm-Titel (optional)'
+---
+```mermaid
+graph TD
+    A[Start] --> B[Prozess]
+    B --> C{Entscheidung}
+    C -->|Ja| D[Ergebnis 1]
+    C -->|Nein| E[Ergebnis 2]
+```
+
+**Wichtig:**
+
+- Mermaid-Code muss in \`\`\`mermaid Code-Block eingeschlossen sein
+- Unterstützt: Flowcharts, Sequence Diagrams, Class Diagrams, etc.
+- Siehe [Mermaid Dokumentation](https://mermaid.js.org/) für Syntax
+- Diagramme werden automatisch gerendert
+
+**Beispiel Flowchart:**
+```markdown
+---
+type: 'mermaid-diagram'
+title: 'Zellatmung Übersicht'
+---
+```mermaid
+graph LR
+    A[Glukose] --> B[Glykolyse]
+    B --> C[Citratzyklus]
+    C --> D[Atmungskette]
+    D --> E[ATP]
+```
+
 ## Vollständige Vorlesung (lecture.md)
 
 ```markdown

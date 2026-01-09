@@ -548,11 +548,90 @@ document.addEventListener('DOMContentLoaded', async () => {
       case 'self-assessment-mc':
         renderSelfAssessment(item, lectureItemDisplay);
         break;
+      case 'youtube-video':
+        renderYouTubeVideo(item, lectureItemDisplay);
+        break;
+      case 'image':
+        renderImage(item, lectureItemDisplay);
+        break;
+      case 'mermaid-diagram':
+        renderMermaidDiagram(item, lectureItemDisplay);
+        break;
       default:
         lectureItemDisplay.innerHTML = `<p class="text-red-500">Unbekannter Inhaltstyp: ${item.type}</p>`;
     }
 
     updateLectureNav();
+  }
+
+  function renderYouTubeVideo(item, container) {
+    // Extract video ID from URL
+    let videoId = '';
+    if (item.url) {
+      const urlParams = new URLSearchParams(new URL(item.url).search);
+      videoId = urlParams.get('v') || item.url.split('/').pop();
+    }
+
+    const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
+    
+    container.innerHTML = `
+      <div class="video-container">
+        ${title}
+        <div class="relative" style="padding-bottom: 56.25%; height: 0;">
+          <iframe 
+            src="https://www.youtube.com/embed/${videoId}" 
+            class="absolute top-0 left-0 w-full h-full rounded-lg"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderImage(item, container) {
+    const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
+    const caption = item.caption ? `<p class="text-sm text-gray-600 dark:text-gray-400 mt-2 text-center italic">${item.caption}</p>` : '';
+    const alt = item.alt || item.title || 'Bild';
+    
+    container.innerHTML = `
+      <div class="image-container">
+        ${title}
+        <div class="flex justify-center">
+          <img 
+            src="${item.url}" 
+            alt="${alt}"
+            class="max-w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+        ${caption}
+      </div>
+    `;
+  }
+
+  async function renderMermaidDiagram(item, container) {
+    const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
+    const diagramId = `mermaid-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    
+    container.innerHTML = `
+      <div class="mermaid-container">
+        ${title}
+        <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg">
+          <div id="${diagramId}" class="mermaid-diagram"></div>
+        </div>
+      </div>
+    `;
+    
+    // Render mermaid diagram
+    try {
+      const diagramDiv = document.getElementById(diagramId);
+      const { svg } = await window.mermaid.render(`diagram-${diagramId}`, item.diagram);
+      diagramDiv.innerHTML = svg;
+    } catch (error) {
+      console.error('Error rendering Mermaid diagram:', error);
+      container.innerHTML = `<p class="text-red-500">Fehler beim Rendern des Diagramms: ${error.message}</p>`;
+    }
   }
 
   function renderSelfAssessment(item, container) {

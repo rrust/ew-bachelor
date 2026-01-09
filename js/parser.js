@@ -133,11 +133,29 @@ async function parseContent() {
             type: doc.attributes.type || 'learning-content',
             ...doc.attributes
           };
+          
+          // Parse body content based on type
           if (item.type === 'learning-content') {
             item.html = marked.parse(doc.body);
           } else if (item.type === 'self-assessment-mc') {
             item.explanation = doc.body ? marked.parse(doc.body) : '';
+          } else if (item.type === 'youtube-video') {
+            // URL and title are already in attributes
+            // No additional parsing needed
+          } else if (item.type === 'image') {
+            // URL, alt, caption, and title are already in attributes
+            // No additional parsing needed
+          } else if (item.type === 'mermaid-diagram') {
+            // Extract mermaid code from body (between ```mermaid and ```)
+            const mermaidMatch = doc.body.match(/```mermaid\n([\s\S]*?)\n```/);
+            if (mermaidMatch) {
+              item.diagram = mermaidMatch[1].trim();
+            } else {
+              // If no code block, use entire body
+              item.diagram = doc.body.trim();
+            }
           }
+          
           return item;
         });
 

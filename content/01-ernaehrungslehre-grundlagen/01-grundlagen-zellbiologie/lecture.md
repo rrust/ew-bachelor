@@ -44,7 +44,41 @@ correctAnswer: 'Golgi-Apparat'
 **Erklärung:** Der Golgi-Apparat modifiziert, sortiert und verpackt Proteine und Lipide für den Transport zu anderen Zielen in der Zelle oder für die Sekretion aus der Zelle.
 
 ---
+type: 'youtube-video'
+url: 'https://www.youtube.com/watch?v=9pEbfXxOong'
+title: 'Zellatmung und Mitochondrien'
+---
 
+---
+type: 'image'
+url: 'https://images.my.labster.com/1066cbea-a908-461d-b202-db9357feb22d/aerobic_cellular_respiration.de_DE.x512.png'
+alt: 'Aerobe Zellatmung - Übersicht'
+caption: 'Schematische Darstellung der aeroben Zellatmung in Mitochondrien'
+title: 'Die aerobe Zellatmung'
+---
+
+---
+type: 'mermaid-diagram'
+title: 'Proteinsynthese: Von der DNA zum Protein'
+---
+```mermaid
+graph TB
+    A[DNA im Zellkern] -->|Transkription| B[mRNA]
+    B -->|Transport| C[Ribosom im Cytoplasma]
+    C -->|Translation| D[Aminosäurekette]
+    D -->|Faltung| E[Funktionales Protein]
+    
+    F[tRNA] -->|bringt Aminosäuren| C
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#ffe1e1
+    style D fill:#e1ffe1
+    style E fill:#f0e1ff
+    style F fill:#fff4e1
+```
+
+---
 type: 'learning-content'
 topic: 'Grundlagen der Zellbiologie'
 ---
