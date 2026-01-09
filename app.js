@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     ),
     retakeQuiz: document.getElementById('retake-quiz-button'),
     resultsToMap: document.getElementById('results-to-map-button'),
+    lectureOverview: document.getElementById('lecture-overview-button'),
+    backToPlayer: document.getElementById('back-to-player-button'),
     navModule: document.getElementById('nav-module'),
     navMap: document.getElementById('nav-map'),
     navProgress: document.getElementById('nav-progress'),
@@ -85,17 +87,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   function updateURL(path, title) {
     if (window.history && window.history.pushState) {
       window.history.pushState({ path }, title, `#${path}`);
-      document.title = title ? `${title} - EW Bachelor` : 'EW Bachelor - Ernährungswissenschaft Lern-App';
+      document.title = title
+        ? `${title} - EW Bachelor`
+        : 'EW Bachelor - Ernährungswissenschaft Lern-App';
     }
   }
 
   function parseURL() {
     const hash = window.location.hash.slice(1); // Remove #
     if (!hash || hash === '/') return null;
-    
-    const parts = hash.split('/').filter(p => p);
+
+    const parts = hash.split('/').filter((p) => p);
     const route = { view: parts[0] };
-    
+
     // Parse route patterns
     if (parts[0] === 'module' && parts[1]) {
       route.moduleId = parts[1];
@@ -115,14 +119,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (parts[0] === 'map' || parts[0] === 'progress') {
       route.view = 'comingSoon';
     }
-    
+
     return route;
   }
 
   function navigateFromURL() {
     const route = parseURL();
     if (!route) return false;
-    
+
     if (route.view === 'module' && route.moduleId) {
       if (route.lectureId) {
         if (route.quiz) {
@@ -151,7 +155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('comingSoon');
       return true;
     }
-    
+
     return false;
   }
 
@@ -175,7 +179,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const progress = getUserProgress();
     if (progress && progress.userName) {
       updateGreeting(progress.userName);
-      
+
       // Try to navigate from URL first
       if (!navigateFromURL()) {
         loadModuleCards();
@@ -187,7 +191,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateURL('/', 'Welcome');
     }
     addEventListeners();
-    
+
     // Handle browser back/forward buttons
     window.addEventListener('popstate', (event) => {
       if (!navigateFromURL()) {
@@ -401,9 +405,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       alert('Für dieses Modul wurden keine Vorlesungen gefunden.');
       return;
     }
-    
+
     // Update URL
-    const moduleData = MODULES.find(m => m.id === moduleId);
+    const moduleData = MODULES.find((m) => m.id === moduleId);
     updateURL(`/module/${moduleId}`, moduleData?.title || 'Module');
 
     const lectureContentDiv = document.getElementById('lecture-content');
@@ -514,11 +518,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     currentLectureItems = lecture.items;
     currentItemIndex = 0;
-    
+
     // Update URL
-    const moduleData = MODULES.find(m => m.id === moduleId);
+    const moduleData = MODULES.find((m) => m.id === moduleId);
     const lectureTopic = lecture.topic || lectureId;
-    updateURL(`/module/${moduleId}/lecture/${lectureId}/item/0`, `${lectureTopic} - ${moduleData?.title || 'Module'}`);
+    updateURL(
+      `/module/${moduleId}/lecture/${lectureId}/item/0`,
+      `${lectureTopic} - ${moduleData?.title || 'Module'}`
+    );
 
     // Populate jump-to dropdown
     inputs.lectureJumpTo.innerHTML = '';
@@ -572,8 +579,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       videoId = urlParams.get('v') || item.url.split('/').pop();
     }
 
-    const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
-    
+    const title = item.title
+      ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>`
+      : '';
+
     container.innerHTML = `
       <div class="video-container">
         ${title}
@@ -591,10 +600,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderImage(item, container) {
-    const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
-    const caption = item.caption ? `<p class="text-sm text-gray-600 dark:text-gray-400 mt-2 text-center italic">${item.caption}</p>` : '';
+    const title = item.title
+      ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>`
+      : '';
+    const caption = item.caption
+      ? `<p class="text-sm text-gray-600 dark:text-gray-400 mt-2 text-center italic">${item.caption}</p>`
+      : '';
     const alt = item.alt || item.title || 'Bild';
-    
+
     container.innerHTML = `
       <div class="image-container">
         ${title}
@@ -611,9 +624,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   async function renderMermaidDiagram(item, container) {
-    const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
-    const diagramId = `mermaid-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
-    
+    const title = item.title
+      ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>`
+      : '';
+    const diagramId = `mermaid-${Date.now()}-${Math.random()
+      .toString(36)
+      .substr(2, 9)}`;
+
     container.innerHTML = `
       <div class="mermaid-container">
         ${title}
@@ -622,11 +639,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
       </div>
     `;
-    
+
     // Render mermaid diagram
     try {
       const diagramDiv = document.getElementById(diagramId);
-      const { svg } = await window.mermaid.render(`diagram-${diagramId}`, item.diagram);
+      const { svg } = await window.mermaid.render(
+        `diagram-${diagramId}`,
+        item.diagram
+      );
       diagramDiv.innerHTML = svg;
     } catch (error) {
       console.error('Error rendering Mermaid diagram:', error);
@@ -680,7 +700,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentItemIndex + 1
     } / ${totalItems}`;
     inputs.lectureJumpTo.value = currentItemIndex;
-    
+
     // Update URL for current item
     updateURL(
       `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
@@ -698,6 +718,90 @@ document.addEventListener('DOMContentLoaded', async () => {
         : 'none';
   }
 
+  // --- Lecture Overview ---
+  function showLectureOverview() {
+    const overviewContent = document.getElementById('lecture-overview-content');
+    overviewContent.innerHTML = '';
+
+    currentLectureItems.forEach((item, index) => {
+      const card = document.createElement('div');
+      card.className =
+        'bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer';
+
+      let typeLabel = '';
+      let icon = '';
+      let preview = '';
+
+      switch (item.type) {
+        case 'learning-content':
+          typeLabel = 'Lerninhalt';
+          icon = '📖';
+          // Extract first heading or first few words
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = item.html;
+          const heading = tempDiv.querySelector('h1, h2, h3, h4, h5, h6');
+          preview = heading
+            ? heading.textContent
+            : tempDiv.textContent.substring(0, 100) + '...';
+          break;
+        case 'self-assessment-mc':
+          typeLabel = 'Selbsttest';
+          icon = '❓';
+          preview = item.question;
+          break;
+        case 'youtube-video':
+          typeLabel = 'Video';
+          icon = '🎥';
+          preview = item.title || 'YouTube Video';
+          break;
+        case 'image':
+          typeLabel = 'Bild';
+          icon = '🖼️';
+          preview = item.title || item.alt || 'Bild';
+          break;
+        case 'mermaid-diagram':
+          typeLabel = 'Diagramm';
+          icon = '📊';
+          preview = item.title || 'Mermaid Diagramm';
+          break;
+        default:
+          typeLabel = 'Inhalt';
+          icon = '📄';
+          preview = 'Unbekannter Typ';
+      }
+
+      card.innerHTML = `
+        <div class="flex items-start space-x-4">
+          <div class="text-4xl flex-shrink-0">${icon}</div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">${typeLabel}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Schritt ${
+                index + 1
+              }</span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 truncate">${preview}</h3>
+            <button class="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium">
+              Zu diesem Schritt →
+            </button>
+          </div>
+        </div>
+      `;
+
+      card.addEventListener('click', () => {
+        currentItemIndex = index;
+        renderCurrentLectureItem();
+        document.getElementById('lecture-player').style.display = 'flex';
+        document.getElementById('lecture-overview').style.display = 'none';
+      });
+
+      overviewContent.appendChild(card);
+    });
+
+    document.getElementById('lecture-player').style.display = 'none';
+    document.getElementById('lecture-overview').style.display = 'flex';
+  }
+
   // --- Quiz Logic ---
   function startQuiz() {
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
@@ -706,11 +810,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('lecture');
       return;
     }
-    
+
     // Update URL
-    const moduleData = MODULES.find(m => m.id === currentModuleId);
+    const moduleData = MODULES.find((m) => m.id === currentModuleId);
     const lectureTopic = lecture.topic || currentLectureId;
-    updateURL(`/module/${currentModuleId}/lecture/${currentLectureId}/quiz`, `Quiz: ${lectureTopic} - ${moduleData?.title || 'Module'}`);
+    updateURL(
+      `/module/${currentModuleId}/lecture/${currentLectureId}/quiz`,
+      `Quiz: ${lectureTopic} - ${moduleData?.title || 'Module'}`
+    );
 
     // Check if user has already completed this quiz
     const progress = getUserProgress();
@@ -885,9 +992,21 @@ document.addEventListener('DOMContentLoaded', async () => {
       displayLecturesForModule(currentModuleId);
     });
 
+    buttons.lectureOverview.addEventListener('click', () => {
+      showLectureOverview();
+    });
+
+    buttons.backToPlayer.addEventListener('click', () => {
+      document.getElementById('lecture-overview').style.display = 'none';
+      document.getElementById('lecture-player').style.display = 'flex';
+    });
+
     buttons.backToLecture.addEventListener('click', () => {
       showView('lecture');
-      updateURL(`/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`, document.title.split(' - ')[0]);
+      updateURL(
+        `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
+        document.title.split(' - ')[0]
+      );
     });
 
     buttons.backToLectureFromResults.addEventListener('click', () => {

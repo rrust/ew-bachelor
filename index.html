@@ -13,7 +13,7 @@
     <script type="module">
       // Initialize Mermaid
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ 
+      mermaid.initialize({
         startOnLoad: false,
         theme: 'default',
         themeVariables: {
@@ -172,13 +172,19 @@
       >
         <!-- Sticky Header -->
         <div
-          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0"
+          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0 flex justify-between items-center"
         >
           <button
             id="back-to-lectures-button"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
           >
             &larr; Zurück zur Vorlesungsübersicht
+          </button>
+          <button
+            id="lecture-overview-button"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+          >
+            📋 Übersicht
           </button>
         </div>
 
@@ -231,6 +237,35 @@
         >
           Zum Abschlussquiz
         </button>
+      </div>
+
+      <!-- Lecture Overview View -->
+      <div
+        id="lecture-overview"
+        style="display: none"
+        class="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex flex-col h-screen"
+      >
+        <!-- Sticky Header -->
+        <div
+          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0"
+        >
+          <button
+            id="back-to-player-button"
+            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
+          >
+            &larr; Zurück zur Vorlesung
+          </button>
+        </div>
+
+        <!-- Scrollable Content Area -->
+        <div class="flex-1 overflow-y-auto min-h-0">
+          <div class="container mx-auto p-8">
+            <h2 class="text-3xl font-bold mb-8">Übersicht</h2>
+            <div id="lecture-overview-content" class="space-y-6">
+              <!-- Overview content will be rendered here -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

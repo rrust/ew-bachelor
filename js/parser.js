@@ -95,13 +95,17 @@ async function parseContent() {
       const fileContent = await fileResponse.text();
 
       // Extract module and lecture ID from file path
-      // New structure: content/MODULE_ID/LECTURE_ID/lecture.md or quiz.md
-      const pathParts = filePath.split('/'); // e.g., ["content", "01-ernaehrungslehre-grundlagen", "01-grundlagen-zellbiologie", "lecture.md"]
+      // Support both:
+      // - Old: content/MODULE_ID/LECTURE_ID/lecture.md (multi-document)
+      // - New: content/MODULE_ID/LECTURE_ID/lecture-items/01-item.md (single document per file)
+      const pathParts = filePath.split('/');
       if (pathParts.length < 4) continue;
 
       const moduleId = pathParts[1];
       const lectureId = pathParts[2];
       const fileName = pathParts[3];
+      const isLectureItems =
+        fileName === 'lecture-items' && pathParts.length >= 5;
 
       // Determine if this is a quiz file
       const isQuiz = fileName === 'quiz.md';
@@ -126,14 +130,48 @@ async function parseContent() {
           explanation: doc.body ? marked.parse(doc.body) : ''
         }));
         content[moduleId].lectures[lectureId].quiz.push(...quizQuestions);
+      } else if (isLectureItems) {
+        // This is a single lecture item file
+        // File path: content/MODULE_ID/LECTURE_ID/lecture-items/XX-name.md
+        const itemFileName = pathParts[4];
+        const doc = documents[0]; // Should only be one document per file
+
+        if (doc) {
+          const item = {
+            type: doc.attributes.type || 'learning-content',
+            ...doc.attributes,
+            _order: parseInt(itemFileName.split('-')[0], 10) || 0 // Extract order from filename
+          };
+
+          // Parse body content based on type
+          if (item.type === 'learning-content') {
+            item.html = marked.parse(doc.body);
+          } else if (item.type === 'self-assessment-mc') {
+            item.explanation = doc.body ? marked.parse(doc.body) : '';
+          } else if (item.type === 'youtube-video') {
+            // URL and title are already in attributes
+          } else if (item.type === 'image') {
+            // URL, alt, caption, and title are already in attributes
+          } else if (item.type === 'mermaid-diagram') {
+            // Extract mermaid code from body
+            const mermaidMatch = doc.body.match(/```mermaid\n([\s\S]*?)\n```/);
+            if (mermaidMatch) {
+              item.diagram = mermaidMatch[1].trim();
+            } else {
+              item.diagram = doc.body.trim();
+            }
+          }
+
+          content[moduleId].lectures[lectureId].items.push(item);
+        }
       } else {
-        // This is a lecture file with a series of items
+        // This is a lecture.md file with multiple items (old format)
         const lectureItems = documents.map((doc) => {
           const item = {
             type: doc.attributes.type || 'learning-content',
             ...doc.attributes
           };
-          
+
           // Parse body content based on type
           if (item.type === 'learning-content') {
             item.html = marked.parse(doc.body);
@@ -155,7 +193,7 @@ async function parseContent() {
               item.diagram = doc.body.trim();
             }
           }
-          
+
           return item;
         });
 
@@ -170,6 +208,25 @@ async function parseContent() {
       console.error('Error parsing file:', filePath, error);
     }
   }
+
+  // Sort lecture items by _order field (for files from lecture-items/ folder)
+  for (const moduleId in content) {
+    for (const lectureId in content[moduleId].lectures) {
+      const lecture = content[moduleId].lectures[lectureId];
+      if (lecture.items.length > 0 && lecture.items[0]._order !== undefined) {
+        lecture.items.sort((a, b) => (a._order || 0) - (b._order || 0));
+      }
+      // Promote topic from first item if not set
+      if (
+        !lecture.topic &&
+        lecture.items.length > 0 &&
+        lecture.items[0].topic
+      ) {
+        lecture.topic = lecture.items[0].topic;
+      }
+    }
+  }
+
   console.log('Parsed Content:', content);
   return content;
 }
