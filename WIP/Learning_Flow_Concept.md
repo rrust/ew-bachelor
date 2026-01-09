@@ -79,7 +79,67 @@ A separate page will provide a detailed overview of the user's progress.
 - **Module Breakdown:** Detailed stats for each module (score, time spent, badges earned).
 - **Data Management:** Buttons to **Download Progress** (exports the `localStorage` JSON object) and **Reset Progress**.
 
-## 6. Implementation Plan & Tasks (Lo-Fi Vanilla JS)
+## 7. Content Types
+
+The application supports multiple content types to create rich, interactive learning experiences:
+
+### 7.1. Learning Content Types
+
+- **Text Content (`learning-content`)**: Standard markdown content with headings, paragraphs, lists, and formatting
+- **YouTube Videos (`youtube-video`)**: Embedded YouTube videos with responsive player
+  - Example: `https://www.youtube.com/watch?v=9pEbfXxOong`
+- **Images (`image`)**: Support for both remote URLs and local images
+  - Remote: Full URLs to external images
+  - Local: Relative paths to images in `content/` directory
+  - Example: `https://images.my.labster.com/.../image.png`
+- **Mermaid Diagrams (`mermaid-diagram`)**: Interactive flowcharts and diagrams using Mermaid.js
+  - Supports flowcharts, sequence diagrams, class diagrams, etc.
+  - Automatically rendered client-side
+
+### 7.2. Assessment Types
+
+- **Self-Assessment MC (`self-assessment-mc`)**: Non-graded multiple choice questions with immediate feedback
+- **Multiple Choice (`multiple-choice`)**: Graded quiz questions
+
+### 7.3. Content Format Examples
+
+**YouTube Video:**
+
+```markdown
+---
+type: 'youtube-video'
+url: 'https://www.youtube.com/watch?v=VIDEO_ID'
+title: 'Video Title (optional)'
+---
+```
+
+**Image:**
+
+```markdown
+---
+type: 'image'
+url: 'https://example.com/image.png'
+alt: 'Image description'
+caption: 'Optional caption text'
+---
+```
+
+**Mermaid Diagram:**
+
+```markdown
+---
+type: 'mermaid-diagram'
+title: 'Diagram Title (optional)'
+---
+```mermaid
+graph TD
+    A[Start] --> B[Process]
+    B --> C[End]
+```
+
+```text
+
+## 8. Implementation Plan & Tasks (Lo-Fi Vanilla JS)
 
 This section breaks down the concept into actionable implementation steps using only **HTML, CSS, and plain JavaScript**.
 

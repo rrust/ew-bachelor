@@ -5,7 +5,12 @@
     "ects": 6,
     "status": "freigeschaltet",
     "order": 1,
-    "description": "Einführung in die Grundlagen der Ernährungswissenschaft"
+    "description": "Einführung in die Grundlagen der Ernährungswissenschaft",
+    "lectures": [
+      "01-grundlagen-zellbiologie",
+      "02-makronaehrstoffe-detail",
+      "03-fette-oele"
+    ]
   },
   {
     "id": "02-chemie-grundlagen",

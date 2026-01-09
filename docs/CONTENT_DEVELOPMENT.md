@@ -15,19 +15,48 @@ Die meiste laufende Arbeit an diesem Repository wird Content-Entwicklung sein.
 
 ## Content-Struktur
 
+### Modulare Struktur (Standard)
+
+Alle Inhalte sind modular aufgebaut für maximale Wartbarkeit und Übersichtlichkeit:
+
 ```text
 content/
 ├── modules.json                          # Modul-Metadaten
-├── content-list.json                     # Registrierung aller Content-Dateien
-└── 01-ernaehrungslehre-grundlagen/      # Modul-Ordner
-    ├── 01-grundlagen-zellbiologie/      # Vorlesungs-Ordner
-    │   ├── lecture.md                   # Vorlesungsinhalt
-    │   └── quiz.md                      # Quiz-Fragen
-    ├── 02-makronaehrstoffe-detail/
-    │   ├── lecture.md
-    │   └── quiz.md
-    └── ...
+├── content-list.json                     # Auto-generiertes Manifest (nicht manuell bearbeiten!)
+└── 01-modul-name/                       # Modul-Ordner (nummeriert)
+    └── 01-vorlesung-thema/              # Vorlesungs-Ordner (nummeriert)
+        ├── lecture.md                    # Vorlesungs-Metadaten
+        ├── lecture-items/                # Einzelne Lern-Items
+        │   ├── 01-einleitung.md         # Nummeriert für Reihenfolge
+        │   ├── 02-konzept-test.md       # Self-Assessment
+        │   ├── 03-video.md              # YouTube Video
+        │   ├── 04-diagramm.md           # Mermaid Diagramm
+        │   └── 05-zusammenfassung.md
+        ├── quiz.md                       # Quiz-Metadaten
+        └── questions/                    # Einzelne Quiz-Fragen
+            ├── 01-frage-thema-a.md      # Nummeriert für Reihenfolge
+            ├── 02-frage-thema-b.md
+            └── 03-frage-thema-c.md
 ```
+
+**⚠️ Wichtig:** `content-list.json` wird automatisch generiert. Bearbeite diese Datei **nicht** manuell! Verwende stattdessen `npm run generate-manifest` nach Änderungen.
+
+### Struktur-Prinzipien
+
+**Warum modular?**
+
+- ✅ **Kleine Dateien:** Einfacher zu bearbeiten und zu reviewen
+- ✅ **Klare Verantwortung:** Jede Datei = ein Konzept/Frage
+- ✅ **Git-freundlich:** Bessere Diffs, weniger Merge-Konflikte
+- ✅ **Flexible Reihenfolge:** Einfach umnummerieren zum Umordnen
+- ✅ **Einfaches Hinzufügen/Entfernen:** Neue Datei = neuer Inhalt
+
+**Nummerierung:**
+
+- Format: `NN-beschreibender-name.md` (z.B. `01-einleitung.md`, `02-test.md`)
+- Nummern bestimmen die Reihenfolge der Anzeige
+- Lücken sind erlaubt (01, 02, 05, 10...) - nützlich für spätere Einfügungen
+- Beschreibender Name hilft bei der Navigation
 
 ### Modul-Ordner
 
@@ -51,16 +80,38 @@ Beispiel: `01-grundlagen-zellbiologie/`
 
 Jeder Vorlesungs-Ordner muss enthalten:
 
-- **`lecture.md`** - Vorlesungsinhalt mit Lernmaterial
-- **`quiz.md`** - Quiz-Fragen zur Vorlesung
+1. **`lecture.md`** - Metadaten (Titel, Beschreibung)
+2. **`lecture-items/`** - Ordner mit einzelnen Lern-Items
+3. **`quiz.md`** - Metadaten für das Quiz
+4. **`questions/`** - Ordner mit einzelnen Quiz-Fragen
 
 ## Content-Formate
 
-### 1. Vorlesungen (lecture.md)
+### 1. Vorlesungs-Metadaten (lecture.md)
 
-Vorlesungen bestehen aus mehreren Dokumenten, getrennt durch `---`. Jedes Dokument kann sein:
+Die `lecture.md` Datei enthält **nur Metadaten** - keine Lern-Inhalte!
 
-#### Learning Content
+```yaml
+---
+topic: 'Grundlagen der Zellbiologie'
+description: 'Einführung in den Aufbau und die Funktion von Zellen'
+---
+
+# Grundlagen der Zellbiologie
+
+Kurze Einleitung oder Lernziele (optional).
+```
+
+**Pflichtfelder:**
+
+- `topic`: Titel der Vorlesung
+- `description`: Kurzbeschreibung (wird in der Vorlesungsliste angezeigt)
+
+### 2. Vorlesungs-Items (lecture-items/)
+
+Jede Datei in `lecture-items/` ist ein einzelnes Lern-Element.
+
+#### Learning Content (Text)
 
 ```yaml
 ---
@@ -90,24 +141,57 @@ correctAnswer: 'Energiegewinnung (ATP-Produktion)'
 **Erklärung:** Hier kommt die Erklärung der richtigen Antwort.
 ```
 
-### 2. Quizzes (quiz.md)
+**Weitere Content-Typen:**
 
-Quiz-Dateien enthalten Multiple-Choice-Fragen:
+- `youtube-video` - Eingebettete YouTube Videos
+- `image` - Bilder (lokal oder remote)
+- `mermaid-diagram` - Interaktive Diagramme
+
+Siehe [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md) für detaillierte Vorlagen.
+
+### 3. Quiz-Metadaten (quiz.md)
+
+Die `quiz.md` Datei enthält **nur Metadaten** - keine Fragen!
+
+```yaml
+---
+description: 'Teste dein Wissen über Zellbiologie und Organellen'
+---
+
+# Quiz: Grundlagen der Zellbiologie
+
+Überprüfe dein Verständnis der wichtigsten Konzepte aus dieser Vorlesung.
+```
+
+**Pflichtfelder:**
+
+- `description`: Kurzbeschreibung des Quiz
+
+### 4. Quiz-Fragen (questions/)
+
+Jede Datei in `questions/` ist eine einzelne Multiple-Choice-Frage.
 
 ```yaml
 ---
 type: 'multiple-choice'
-question: 'Was bedeutet "selektive Permeabilität" der Zellmembran?'
+question: 'Was ist die Hauptfunktion der Mitochondrien?'
 options:
-  - 'Die Membran lässt absolut keine Stoffe durch.'
-  - 'Die Membran lässt alle Stoffe ungehindert passieren.'
-  - 'Die Membran lässt nur bestimmte Stoffe durch und blockiert andere.'
-  - 'Die Membran ist nur für Wasser durchlässig.'
-correctAnswer: 'Die Membran lässt nur bestimmte Stoffe durch und blockiert andere.'
+  - 'Proteinsynthese'
+  - 'Energiegewinnung (ATP-Produktion)'
+  - 'Speicherung von Erbinformation'
+  - 'Abbau von Abfallprodukten'
+correctAnswer: 'Energiegewinnung (ATP-Produktion)'
 ---
 
-**Erklärung:** "Selektive Permeabilität" bedeutet, dass die Membran wählerisch ist...
+**Erklärung:** Mitochondrien sind die "Kraftwerke" der Zelle und produzieren ATP durch Zellatmung.
 ```
+
+**Pflichtfelder:**
+
+- `type`: `'multiple-choice'`
+- `question`: Die Fragestellung
+- `options`: Array mit mindestens 2 Antwortmöglichkeiten
+- `correctAnswer`: Muss exakt einer Option entsprechen (case-sensitive!)
 
 ## YAML-Syntax: Wichtige Regeln
 
@@ -147,7 +231,17 @@ options:
 
 ### Pflichtfelder
 
-Jeder Content-Typ hat Pflichtfelder:
+**Für Vorlesungs-Items:**
+
+- `learning-content`: type
+- `self-assessment-mc`: type, question, options, correctAnswer
+- `youtube-video`: type, url
+- `image`: type, url, alt
+- `mermaid-diagram`: type
+
+**Für Quiz-Fragen:**
+
+- `multiple-choice`: type, question, options (min. 2), correctAnswer
 
 **multiple-choice / self-assessment-mc:**
 
@@ -167,32 +261,119 @@ Detaillierte Vorlagen mit Copy-Paste-Beispielen findest du in:
 
 ## Neue Inhalte hinzufügen
 
-### 1. Neue Vorlesung zu bestehendem Modul
+### Schritt-für-Schritt: Neue Vorlesung erstellen
 
-1. **Ordner erstellen:**
+#### 1. Ordnerstruktur anlegen
 
-   ```bash
-   mkdir -p content/01-modul-name/NN-thema
-   ```
+```bash
+cd content/01-modul-name/
+mkdir -p NN-neues-thema/lecture-items
+mkdir -p NN-neues-thema/questions
+```
 
-2. **Dateien erstellen:**
-   - `lecture.md` - Kopiere Vorlage aus CONTENT_TEMPLATES.md
-   - `quiz.md` - Kopiere Quiz-Vorlage
+#### 2. Metadaten-Dateien erstellen
 
-3. **Inhalte registrieren** in `content/content-list.json`:
+**lecture.md:**
 
-   ```json
-   [
-     "content/01-modul-name/01-thema-1/lecture.md",
-     "content/01-modul-name/01-thema-1/quiz.md",
-     "content/01-modul-name/NN-thema/lecture.md",
-     "content/01-modul-name/NN-thema/quiz.md"
-   ]
-   ```
+```yaml
+---
+topic: 'Titel der Vorlesung'
+description: 'Kurzbeschreibung für die Vorlesungsliste'
+---
 
-4. **Validieren** (siehe unten)
+# Titel der Vorlesung
 
-### 2. Neues Modul erstellen
+Einleitung oder Lernziele (optional).
+```
+
+**quiz.md:**
+
+```yaml
+---
+description: 'Kurzbeschreibung des Quiz'
+---
+
+# Quiz: Titel der Vorlesung
+
+Überprüfe dein Verständnis der wichtigsten Konzepte.
+```
+
+#### 3. Lern-Items hinzufügen
+
+Erstelle Dateien in `lecture-items/`:
+
+- `01-einleitung.md` - Text-Inhalt
+- `02-konzept-test.md` - Self-Assessment
+- `03-video.md` - YouTube Video
+- Etc.
+
+Siehe [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md) für Vorlagen.
+
+#### 4. Quiz-Fragen hinzufügen
+
+Erstelle Dateien in `questions/`:
+
+- `01-frage-grundlagen.md`
+- `02-frage-vertiefung.md`
+- `03-frage-anwendung.md`
+- Etc.
+
+Siehe [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md) für Vorlagen.
+
+#### 5. Manifest generieren
+
+Nach dem Hinzufügen neuer Dateien, generiere das Content-Manifest:
+
+```bash
+npm run generate-manifest
+```
+
+Dieser Befehl scannt automatisch alle Markdown-Dateien im `content/` Verzeichnis und aktualisiert `content-list.json`.
+
+**Wichtig:** Führe diesen Befehl immer aus, nachdem du:
+- Neue lecture-items oder questions hinzugefügt hast
+- Dateien umbenannt hast
+- Dateien gelöscht hast
+
+#### 6. Validieren
+
+Öffne `validate-content.html` und überprüfe alle Dateien auf Fehler.
+
+### Schritt-für-Schritt: Neues Lern-Item hinzufügen
+
+1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `lecture-items/` an
+2. **Neue Datei erstellen:** z.B. `07-neues-konzept.md`
+3. **Inhalt hinzufügen:** Verwende passende Vorlage aus CONTENT_TEMPLATES.md
+4. **Manifest generieren:** `npm run generate-manifest`
+5. **Validieren:** Überprüfe mit `validate-content.html`
+
+### Schritt-für-Schritt: Neue Quiz-Frage hinzufügen
+
+1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `questions/` an
+2. **Neue Datei erstellen:** z.B. `08-neue-frage.md`
+3. **Frage schreiben:** Verwende die Multiple-Choice-Vorlage
+4. **Manifest generieren:** `npm run generate-manifest`
+5. **Validieren:** Überprüfe mit `validate-content.html`
+
+### Inhalte umordnen
+
+Um die Reihenfolge zu ändern, benenne die Dateien um:
+
+```bash
+# Beispiel: Item 03 wird zu Item 02
+mv lecture-items/03-altes-item.md lecture-items/02-altes-item.md
+
+# Item 02 wird zu Item 03
+mv lecture-items/02-anderes-item.md lecture-items/03-anderes-item.md
+```
+
+Nach dem Umbenennen: **Manifest neu generieren!**
+
+```bash
+npm run generate-manifest
+```
+
+### Neues Modul erstellen
 
 1. **Modul in `content/modules.json` definieren:**
 
@@ -202,21 +383,26 @@ Detaillierte Vorlagen mit Copy-Paste-Beispielen findest du in:
      "title": "Modul 2: Titel",
      "description": "Beschreibung",
      "ects": 6,
-     "status": "verfügbar"
+     "status": "unlocked"
    }
    ```
 
 2. **Ordnerstruktur erstellen:**
 
    ```bash
-   mkdir -p content/02-neues-modul/01-erste-vorlesung
+   mkdir -p content/02-neues-modul/01-erste-vorlesung/lecture-items
+   mkdir -p content/02-neues-modul/01-erste-vorlesung/questions
    ```
 
-3. **Vorlesungsdateien erstellen** (siehe oben)
+3. **Vorlesungsdateien erstellen** (siehe Schritt-für-Schritt-Anleitung oben)
 
-4. **In content-list.json registrieren**
+4. **Manifest generieren:**
 
-5. **Validieren**
+   ```bash
+   npm run generate-manifest
+   ```
+
+5. **Validieren** mit `validate-content.html`
 
 ## Content Validation
 

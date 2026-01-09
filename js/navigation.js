@@ -1,0 +1,121 @@
+// Navigation and URL handling
+
+/**
+ * Updates the URL hash and document title
+ * @param {string} path - The path to set (e.g., '/module/01-example')
+ * @param {string} title - The page title
+ */
+function updateURL(path, title) {
+  window.location.hash = path;
+  document.title = title ? `${title} - EW Bachelor` : 'EW Bachelor';
+}
+
+/**
+ * Parses the current URL hash
+ * @returns {Object|null} Route object or null
+ */
+function parseURL() {
+  const hash = window.location.hash.slice(1); // Remove #
+  console.log('parseURL - hash:', hash);
+  if (!hash || hash === '/') return null;
+
+  const parts = hash.split('/').filter((p) => p);
+  console.log('parseURL - parts:', parts);
+  const route = { view: parts[0] };
+
+  // Parse route patterns
+  if (parts[0] === 'module' && parts[1]) {
+    route.moduleId = parts[1];
+    if (parts[2] === 'lecture' && parts[3]) {
+      route.lectureId = parts[3];
+      if (parts[4] === 'overview') {
+        route.overview = true;
+      } else if (parts[4] === 'item' && parts[5] !== undefined) {
+        route.itemIndex = parseInt(parts[5], 10);
+      } else if (parts[4] === 'quiz') {
+        route.quiz = true;
+        if (parts[5] !== undefined) {
+          route.questionIndex = parseInt(parts[5], 10);
+        }
+      }
+    }
+  } else if (parts[0] === 'tools') {
+    route.view = 'tools';
+  } else if (parts[0] === 'map') {
+    route.view = 'map';
+  } else if (parts[0] === 'progress') {
+    route.view = 'comingSoon';
+  }
+
+  return route;
+}
+
+/**
+ * Builds a URL for the module overview
+ * @returns {string} URL path
+ */
+function buildModuleOverviewURL() {
+  return '/';
+}
+
+/**
+ * Builds a URL for a specific module
+ * @param {string} moduleId - Module ID
+ * @returns {string} URL path
+ */
+function buildModuleURL(moduleId) {
+  return `/module/${moduleId}`;
+}
+
+/**
+ * Builds a URL for a lecture within a module
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @returns {string} URL path
+ */
+function buildLectureURL(moduleId, lectureId) {
+  return `/module/${moduleId}/lecture/${lectureId}`;
+}
+
+/**
+ * Builds a URL for a specific lecture item
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @param {number} itemIndex - Item index
+ * @returns {string} URL path
+ */
+function buildLectureItemURL(moduleId, lectureId, itemIndex) {
+  return `/module/${moduleId}/lecture/${lectureId}/item/${itemIndex}`;
+}
+
+/**
+ * Builds a URL for the lecture overview
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @returns {string} URL path
+ */
+function buildLectureOverviewURL(moduleId, lectureId) {
+  return `/module/${moduleId}/lecture/${lectureId}/overview`;
+}
+
+/**
+ * Builds a URL for a quiz
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @param {number} [questionIndex] - Optional question index
+ * @returns {string} URL path
+ */
+function buildQuizURL(moduleId, lectureId, questionIndex) {
+  const base = `/module/${moduleId}/lecture/${lectureId}/quiz`;
+  return questionIndex !== undefined ? `${base}/${questionIndex}` : base;
+}
+
+// Expose to global scope
+window.updateURL = updateURL;
+window.parseURL = parseURL;
+window.buildModuleOverviewURL = buildModuleOverviewURL;
+window.buildModuleURL = buildModuleURL;
+window.buildLectureURL = buildLectureURL;
+window.buildLectureItemURL = buildLectureItemURL;
+window.buildLectureOverviewURL = buildLectureOverviewURL;
+window.buildQuizURL = buildQuizURL;

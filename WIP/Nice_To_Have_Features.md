@@ -4,39 +4,26 @@ This document outlines potential features and improvements that could enhance th
 
 ## UI/UX Enhancements
 
-### Path Awareness & Bookmarkable URLs
+### ✅ Path Awareness & Bookmarkable URLs (IMPLEMENTED)
 
 - **Feature:** Every lecture, question, and quiz has a unique, fully-qualified URL that can be bookmarked and shared
-- **Benefits:**
-  - Users can bookmark specific content and return directly to it
-  - Share specific lectures or quiz questions with classmates
-  - Browser back/forward buttons work intuitively
-  - Deep linking from external resources
-  - Better user experience for navigation
+- **Status:** ✅ **COMPLETE** - Hash-based routing implemented in `js/navigation.js`
 - **Implementation:**
-  - URL structure: `/module/:moduleId/lecture/:lectureId` or `/module/:moduleId/lecture/:lectureId/item/:itemIndex`
-  - Quiz URLs: `/module/:moduleId/lecture/:lectureId/quiz` or `/module/:moduleId/lecture/:lectureId/quiz/:questionIndex`
-  - Use History API (pushState/replaceState) to update URL without page reload
-  - Parse URL on page load to navigate directly to requested content
-  - Preserve user's position in lecture when navigating away and back
-  - Update document title based on current view
-- **Technical Notes:**
-  - Works with current SPA architecture (no routing library needed)
-  - GitHub Pages compatible (use hash-based routing as fallback: `#/module/...`)
-  - Update localStorage to track last visited URL per module
+  - ✅ URL structure: `#/module/:moduleId/lecture/:lectureId/item/:itemIndex`
+  - ✅ Quiz URLs: `#/module/:moduleId/lecture/:lectureId/quiz/:questionIndex`
+  - ✅ History API (pushState/replaceState) for smooth navigation
+  - ✅ URL parsing on page load for deep linking
+  - ✅ Document title updates based on current view
+  - ✅ GitHub Pages compatible hash-based routing
+- **Implemented in:**
+  - `js/navigation.js`: updateURL(), parseURL()
+  - `app.js`: Route handling and view rendering
 
-### Light/Dark Mode Toggle
+### ✅ Light/Dark Mode Toggle (IMPLEMENTED)
 
 - **Feature:** Theme switcher in the header allowing users to toggle between light and dark modes
-- **Benefits:**
-  - Reduces eye strain during extended study sessions
-  - Accommodates different lighting conditions and personal preferences
-  - Modern UX standard that users expect
-- **Implementation:**
-  - Toggle switch in navigation bar
-  - Persist preference in localStorage
-  - Use CSS variables for theme colors
-  - Smooth transitions between modes
+- **Status:** ✅ **COMPLETE** - Full dark mode support with localStorage persistence
+- **Implemented in:** `js/theme.js`
 
 ### Mobile Responsiveness Refinement
 
