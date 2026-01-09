@@ -29,10 +29,12 @@ const setContent = (content) => (AppState.content = content);
 const setModules = (modules) => (AppState.modules = modules);
 const setCurrentModule = (id) => (AppState.currentModuleId = id);
 const setCurrentLecture = (id) => (AppState.currentLectureId = id);
-const setCurrentLectureItems = (items) => (AppState.currentLectureItems = items);
+const setCurrentLectureItems = (items) =>
+  (AppState.currentLectureItems = items);
 const setCurrentItemIndex = (index) => (AppState.currentItemIndex = index);
 const setQuizData = (data) => (AppState.quizData = data);
-const setCurrentQuestionIndex = (index) => (AppState.currentQuestionIndex = index);
+const setCurrentQuestionIndex = (index) =>
+  (AppState.currentQuestionIndex = index);
 const setUserScore = (score) => (AppState.userScore = score);
 const incrementUserScore = (points) => (AppState.userScore += points);
 const resetQuizState = () => {
