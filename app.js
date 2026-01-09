@@ -144,8 +144,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           const lecture =
             APP_CONTENT[route.moduleId]?.lectures[route.lectureId];
           if (lecture && lecture.items && lecture.items.length > 0) {
-            currentLectureItems = lecture.items;
-            currentItemIndex = 0;
+            lectureState.currentItems = lecture.items;
+            lectureState.currentIndex = 0;
             showView('lecture'); // Show lecture view first
             showLectureOverview(); // Then show overview within lecture view
           }
