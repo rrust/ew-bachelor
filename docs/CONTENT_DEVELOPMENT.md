@@ -21,13 +21,35 @@ content/
 ├── content-list.json                     # Registrierung aller Content-Dateien
 └── 01-ernaehrungslehre-grundlagen/      # Modul-Ordner
     ├── 01-grundlagen-zellbiologie/      # Vorlesungs-Ordner
-    │   ├── lecture.md                   # Vorlesungsinhalt
+    │   ├── lecture-items/               # NEU: Einzelne Vorlesungs-Items
+    │   │   ├── 01-intro.md             # Nummeriert für Reihenfolge
+    │   │   ├── 02-video.md
+    │   │   ├── 03-diagram.md
+    │   │   └── ...
     │   └── quiz.md                      # Quiz-Fragen
     ├── 02-makronaehrstoffe-detail/
-    │   ├── lecture.md
+    │   ├── lecture-items/
+    │   │   └── ...
     │   └── quiz.md
     └── ...
 ```
+
+### NEU: Modulare Struktur (Empfohlen)
+
+- Jedes Vorlesungs-Item in separater Datei im `lecture-items/` Unterordner
+- Dateien nummeriert für Reihenfolge: `01-name.md`, `02-name.md`, etc.
+- **Vorteile:**
+  - Einfachere Wartung (kleinere Dateien, bessere git diffs)
+  - Flexibler (einfach umordnen, hinzufügen oder entfernen)
+  - Übersichtlicher für Content-Ersteller
+
+### Legacy-Struktur (Weiterhin Unterstützt)
+
+- Einzelne `lecture.md` Datei mit mehreren Items getrennt durch `---`
+- Funktioniert für einfache Vorlesungen
+- Schwieriger zu warten, wenn Vorlesungen wachsen
+
+**Beide Formate werden vollständig vom Parser unterstützt.**
 
 ### Modul-Ordner
 
