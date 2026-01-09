@@ -4,6 +4,27 @@ This document outlines potential features and improvements that could enhance th
 
 ## UI/UX Enhancements
 
+### Path Awareness & Bookmarkable URLs
+
+- **Feature:** Every lecture, question, and quiz has a unique, fully-qualified URL that can be bookmarked and shared
+- **Benefits:**
+  - Users can bookmark specific content and return directly to it
+  - Share specific lectures or quiz questions with classmates
+  - Browser back/forward buttons work intuitively
+  - Deep linking from external resources
+  - Better user experience for navigation
+- **Implementation:**
+  - URL structure: `/module/:moduleId/lecture/:lectureId` or `/module/:moduleId/lecture/:lectureId/item/:itemIndex`
+  - Quiz URLs: `/module/:moduleId/lecture/:lectureId/quiz` or `/module/:moduleId/lecture/:lectureId/quiz/:questionIndex`
+  - Use History API (pushState/replaceState) to update URL without page reload
+  - Parse URL on page load to navigate directly to requested content
+  - Preserve user's position in lecture when navigating away and back
+  - Update document title based on current view
+- **Technical Notes:**
+  - Works with current SPA architecture (no routing library needed)
+  - GitHub Pages compatible (use hash-based routing as fallback: `#/module/...`)
+  - Update localStorage to track last visited URL per module
+
 ### Light/Dark Mode Toggle
 
 - **Feature:** Theme switcher in the header allowing users to toggle between light and dark modes
