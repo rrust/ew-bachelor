@@ -533,23 +533,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- Lecture Overview ---
   function showLectureOverview() {
     const overviewContent = document.getElementById('lecture-overview-content');
-    const overviewTitle = document.getElementById('lecture-overview-title');
     const overviewDescription = document.getElementById(
       'lecture-overview-description'
     );
 
     overviewContent.innerHTML = '';
 
-    // Clear any existing description container
-    const existingDesc = overviewDescription.parentNode.querySelector('.prose');
-    if (existingDesc && existingDesc !== overviewDescription) {
-      existingDesc.remove();
-    }
-
-    // Set title and description
+    // Set description
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     const moduleData = MODULES.find((m) => m.id === currentModuleId);
-    overviewTitle.textContent = lecture?.topic || 'Vorlesungsübersicht';
 
     // Show lecture description if available
     if (lecture?.descriptionHtml) {
