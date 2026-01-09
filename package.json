@@ -1,0 +1,15 @@
+{
+  "name": "ew-bachelor",
+  "version": "1.0.0",
+  "description": "Bachelor Ernährungswissenschaften Learning App",
+  "scripts": {
+    "generate-manifest": "node generate-content-list.js"
+  },
+  "keywords": [
+    "education",
+    "nutrition",
+    "learning"
+  ],
+  "author": "",
+  "license": "MIT"
+}
