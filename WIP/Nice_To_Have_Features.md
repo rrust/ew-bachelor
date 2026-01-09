@@ -5,18 +5,20 @@ This document outlines potential features and improvements that could enhance th
 ## UI/UX Enhancements
 
 ### Light/Dark Mode Toggle
+
 - **Feature:** Theme switcher in the header allowing users to toggle between light and dark modes
-- **Benefits:** 
+- **Benefits:**
   - Reduces eye strain during extended study sessions
   - Accommodates different lighting conditions and personal preferences
   - Modern UX standard that users expect
-- **Implementation:** 
+- **Implementation:**
   - Toggle switch in navigation bar
   - Persist preference in localStorage
   - Use CSS variables for theme colors
   - Smooth transitions between modes
 
 ### Mobile Responsiveness Refinement
+
 - **Current State:** Basic responsive layout with Tailwind CSS
 - **Improvements Needed:**
   - Optimize card layouts for small screens (single column on mobile)
@@ -29,6 +31,7 @@ This document outlines potential features and improvements that could enhance th
   - Ensure quiz radio buttons are easily tappable
 
 ### Progressive Web App (PWA)
+
 - **Feature:** Add PWA capabilities for offline access
 - **Benefits:**
   - Install app on home screen
@@ -39,9 +42,11 @@ This document outlines potential features and improvements that could enhance th
 ## Advanced Gamification & Motivation
 
 ### Skills-Based Progression System
+
 Instead of just bronze/silver/gold badges, introduce **named skills** that match content:
 
 **Example Skills for Nutritional Sciences:**
+
 - **"Zelluläre Grundlagen"** - Understanding cellular biology
 - **"Makronährstoff-Kenner"** - Mastery of macronutrients
 - **"Mikronährstoff-Experte"** - Expertise in micronutrients
@@ -50,6 +55,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 - **"Ernährungsberatung-Kompetenz"** - Counseling skills
 
 **Implementation:**
+
 - Each lecture awards a specific skill with levels (Beginner → Intermediate → Advanced → Expert)
 - Skills can be prerequisites for unlocking content
   - Example: "Stoffwechsel-Meister (Intermediate)" required to unlock advanced biochemistry modules
@@ -58,6 +64,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 - Skills can be combined for special achievements
 
 ### Achievement System
+
 - **Time-based achievements:**
   - "Frühaufsteher" - Complete session before 8 AM
   - "Nachteule" - Complete session after 10 PM
@@ -77,6 +84,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 ## Learning Experience Enhancements
 
 ### 1. Spaced Repetition & Review
+
 - **Feature:** Smart review system that resurfaces content at optimal intervals
 - **Benefits:**
   - Combats the forgetting curve
@@ -89,6 +97,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Integration with quiz system to identify weak areas
 
 ### 2. Active Recall Techniques
+
 - **Feature:** More interactive question formats beyond multiple choice
 - **Options:**
   - Fill-in-the-blank questions
@@ -102,6 +111,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Variety keeps learning interesting
 
 ### 3. Personalized Learning Paths
+
 - **Feature:** Adaptive content based on performance
 - **Implementation:**
   - If user struggles with a topic, suggest related review material
@@ -110,6 +120,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Custom study plans: "Exam in 2 weeks? Here's your study schedule"
 
 ### 4. Social & Collaborative Features
+
 - **Study Groups:**
   - Share progress with classmates (optional)
   - Compare scores (anonymized leaderboards)
@@ -126,6 +137,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Share interesting facts learned
 
 ### 5. Contextual & Real-World Connections
+
 - **Feature:** Link abstract concepts to practical applications
 - **Implementation:**
   - "Real-World Example" sections in lectures
@@ -136,6 +148,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Videos from practitioners in the field
 
 ### 6. Multimodal Learning Support
+
 - **Feature:** Support different learning styles
 - **Content Types:**
   - Video explanations (visual learners)
@@ -146,6 +159,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Downloadable study guides (PDF)
 
 ### 7. Microlearning & Bite-Sized Content
+
 - **Feature:** Break complex topics into 5-10 minute chunks
 - **Benefits:**
   - Fits into busy schedules
@@ -158,6 +172,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Progress saved per sub-section
 
 ### 8. Emotional Support & Motivation
+
 - **Encouraging Messages:**
   - Positive reinforcement after correct answers
   - Constructive feedback after mistakes
@@ -177,6 +192,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Study break reminders (Pomodoro technique)
 
 ### 9. Note-Taking & Annotation
+
 - **Feature:** Personal notes system
 - **Implementation:**
   - Add notes to any lecture section
@@ -187,6 +203,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Tags and organization
 
 ### 10. Goal Setting & Planning
+
 - **Feature:** Help students set and track learning goals
 - **Implementation:**
   - "Set weekly study goals" (e.g., "Complete 3 lectures this week")
@@ -196,6 +213,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Weekly/monthly progress reports
 
 ### 11. Accessibility Features
+
 - **Implementation:**
   - Screen reader support
   - Keyboard navigation throughout app
@@ -208,6 +226,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 ## Data & Analytics
 
 ### Personal Analytics Dashboard
+
 - **Metrics to track:**
   - Study time per module
   - Average quiz scores over time
@@ -218,6 +237,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
   - Comparison to personal bests
 
 ### Export & Portfolio
+
 - **Feature:** Professional portfolio of learning
 - **Content:**
   - Certificate of completion
@@ -230,6 +250,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 ## Content Enhancements
 
 ### Rich Media Integration
+
 - **Videos:** Embedded lecture videos, animations
 - **Interactive Diagrams:** Zoomable, clickable anatomy diagrams
 - **3D Models:** Molecular structures, cellular components
@@ -237,12 +258,14 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 - **Simulations:** Virtual lab experiments
 
 ### Search & Discovery
+
 - **Global Search:** Find any topic across all modules
 - **Smart Recommendations:** "Students who liked this also studied..."
 - **Topic Tags:** Browse by tags (biochemistry, vitamins, etc.)
 - **Glossary:** Searchable terminology database
 
 ### Version Control for Learning
+
 - **Track Understanding Over Time:**
   - "First attempt vs. Latest attempt" comparison
   - See how explanations have evolved
@@ -252,12 +275,14 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 ## Technical Enhancements
 
 ### Performance Optimization
+
 - **Offline Mode:** Service workers for offline access
 - **Lazy Loading:** Load content as needed
 - **Caching Strategy:** Faster repeat visits
 - **Image Optimization:** WebP format, responsive images
 
 ### Data Portability
+
 - **Export Progress:** Download as JSON
 - **Import Progress:** Upload from another device
 - **Cloud Sync:** (Future) Sync across devices
@@ -266,6 +291,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 ## Priority Ranking
 
 ### High Priority (Quick Wins)
+
 1. Mobile responsiveness refinement
 2. Skills-based progression system
 3. Spaced repetition review mode
@@ -273,6 +299,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 5. Note-taking capability
 
 ### Medium Priority (Significant Impact)
+
 1. Light/dark mode toggle
 2. Achievement system expansion
 3. Active recall question types
@@ -280,6 +307,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 5. Search functionality
 
 ### Low Priority (Nice Additions)
+
 1. Social features
 2. PWA capabilities
 3. Rich media integration
@@ -289,6 +317,7 @@ Instead of just bronze/silver/gold badges, introduce **named skills** that match
 ---
 
 **Note:** These features should be evaluated based on:
+
 - Development effort vs. learning impact
 - User research and feedback
 - Technical feasibility

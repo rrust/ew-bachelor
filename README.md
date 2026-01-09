@@ -12,18 +12,18 @@ This project is a single-page application designed to provide a gamified learnin
 
 ## Technology Stack
 
--   **HTML**
--   **Tailwind CSS** (via CDN)
--   **Vanilla JavaScript**
--   **GitHub Pages** (deployment)
+- **HTML**
+- **Tailwind CSS** (via CDN)
+- **Vanilla JavaScript**
+- **GitHub Pages** (deployment)
 
 There is no backend or build step required.
 
 ## How to Run Locally
 
-1.  Clone the repository.
-2.  Use a local web server extension (like VS Code's **Live Server**) to open `index.html`. This is necessary to avoid browser CORS errors when fetching content files.
-3.  Right-click `index.html` and select "Open with Live Server".
+1. Clone the repository.
+2. Use a local web server extension (like VS Code's **Live Server**) to open `index.html`. This is necessary to avoid browser CORS errors when fetching content files.
+3. Right-click `index.html` and select "Open with Live Server".
 
 ## Deployment
 

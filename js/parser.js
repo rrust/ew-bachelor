@@ -39,6 +39,17 @@ function parseMultiDocument(content) {
 }
 
 /**
+ * Loads module metadata from modules.json
+ * @returns {Promise<Array>} Array of module objects
+ */
+async function loadModules() {
+    const basePath = getBasePath();
+    const modulesPath = basePath === '/' ? 'content/modules.json' : `${basePath}content/modules.json`;
+    const response = await fetch(modulesPath);
+    return await response.json();
+}
+
+/**
  * Gets the base path for the application, accounting for GitHub Pages subdirectory.
  * @returns {string} The base path (e.g., '' for root, '/ew-bachelor/' for GitHub Pages)
  */

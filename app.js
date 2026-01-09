@@ -3,24 +3,9 @@
 document.addEventListener('DOMContentLoaded', async () => {
     // --- State Management ---
     let APP_CONTENT = {};
+    let MODULES = []; // Will be loaded from modules.json
     let currentModuleId = null;
     let currentLectureId = null;
-    const modulesMeta = {
-        'modul-1': { title: 'Modul 1: Grundlagen der Ernährungslehre', ects: 6, status: 'unlocked' },
-        'modul-2': { title: 'Modul 2: Grundlagen der Chemie', ects: 10, status: 'unlocked' },
-        'modul-3': { title: 'Modul 3: Biostatistik und wissenschaftliches Arbeiten', ects: 10, status: 'unlocked' },
-        'modul-4': { title: 'Modul 4: Allgemeine und molekulare Biologie', ects: 10, status: 'unlocked' },
-        'modul-5': { title: 'Modul 5: Medizinische und biochemische Grundlagen', ects: 16, status: 'unlocked' },
-        'modul-6': { title: 'Modul 6: Chemische Vertiefungen', ects: 12, status: 'locked' },
-        'modul-7': { title: 'Modul 7: Praktische chemische Vertiefungen', ects: 10, status: 'locked' },
-        'modul-8': { title: 'Modul 8: Lebensmittelwissenschaften', ects: 19, status: 'locked' },
-        'modul-9': { title: 'Modul 9: Humanernährung I', ects: 10, status: 'locked' },
-        'modul-10': { title: 'Modul 10: Humanernährung II', ects: 10, status: 'locked' },
-        'modul-11': { title: 'Modul 11: Lebensmittelsicherheit', ects: 11, status: 'locked' },
-        'modul-12': { title: 'Modul 12: Public Health Nutrition und Diätetik', ects: 16, status: 'locked' },
-        'modul-13': { title: 'Modul 13: Alternatives Pflichtmodul', ects: 12, status: 'locked' },
-        'modul-14': { title: 'Modul 14: Wissenschaftliches Schreiben und Präsentieren', ects: 13, status: 'locked' }
-    };
 
     // State for the lecture player
     let currentLectureItems = [];
@@ -83,11 +68,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // --- App Initialization ---
     async function init() {
+        // Load modules metadata from JSON
+        MODULES = await loadModules();
+        // Load content
         APP_CONTENT = await parseContent();
+        
         const progress = getUserProgress();
         if (progress && progress.userName) {
             displays.welcomeMessage.textContent = `Willkommen zurück, ${progress.userName}!`;
-            loadModules();
+            loadModuleCards();
             showView('moduleMap');
         } else {
             showView('welcome');
@@ -139,13 +128,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         return { totalQuizzes, completedQuizzes, averageScore, badge };
     }
 
-    function loadModules() {
+    function loadModuleCards() {
         const moduleGrid = document.getElementById('module-grid');
         moduleGrid.innerHTML = '';
         
-        for (const moduleId in modulesMeta) {
-            const moduleMeta = modulesMeta[moduleId];
-            const card = createModuleCard(moduleId, moduleMeta, () => displayLecturesForModule(moduleId));
+        // Sort modules by order
+        const sortedModules = [...MODULES].sort((a, b) => a.order - b.order);
+        
+        for (const module of sortedModules) {
+            const card = createModuleCard(module.id, module, () => displayLecturesForModule(module.id));
             moduleGrid.appendChild(card);
         }
     }
@@ -260,9 +251,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         const lectureContentDiv = document.getElementById('lecture-content');
         lectureContentDiv.innerHTML = ''; // Clear previous player UI
         
+        const moduleData = MODULES.find(m => m.id === moduleId);
         const header = document.createElement('h2');
         header.className = 'text-2xl font-bold mb-4';
-        header.textContent = `Vorlesungen für ${modulesMeta[moduleId]?.title || moduleId}`;
+        header.textContent = `Vorlesungen für ${moduleData?.title || moduleId}`;
         lectureContentDiv.appendChild(header);
 
         const lectureList = document.createElement('ul');
@@ -585,7 +577,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (userName) {
                 saveUserProgress(getInitialProgress(userName));
                 displays.welcomeMessage.textContent = `Willkommen, ${userName}!`;
-                loadModules();
+                loadModuleCards();
                 showView('moduleMap');
             } else {
                 alert('Bitte gib deinen Namen ein.');
@@ -593,7 +585,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         buttons.backToMap.addEventListener('click', () => {
-            loadModules(); // Reload modules in case progress was made
+            loadModuleCards(); // Reload modules in case progress was made
             showView('moduleMap');
         });
 
@@ -616,7 +608,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         buttons.resultsToMap.addEventListener('click', () => {
-            loadModules();
+            loadModuleCards();
             showView('moduleMap');
         });
 

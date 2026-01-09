@@ -119,6 +119,7 @@ The user's progress is stored in `localStorage` under the key `userProgress`. Fu
 ### UI Components
 
 **Module Cards:**
+
 - Display module title, ECTS points, status badge (locked/unlocked), and overall progress badge
 - Progress badge shows: 🥇 (gold ≥90%), 🥈 (silver ≥70%), 🥉 (bronze ≥50%), or ⚪ (incomplete/none)
 - Two icon buttons: 📚 (view lectures) and 📝 (module exam)
@@ -127,11 +128,13 @@ The user's progress is stored in `localStorage` under the key `userProgress`. Fu
 - Cards have uniform height (min-height: 240px) with buttons right-aligned at bottom
 
 **Lecture List:**
+
 - Shows all lectures for a module with "Vorlesung" and "Quiz" buttons
 - Badge emoji appears next to Quiz button if completed, showing achievement level
 - Tooltip on badge shows exact percentage score
 
 **Quiz Flow:**
+
 - When starting a completed quiz, unified results view shows existing score with option to retake
 - Quiz questions displayed one at a time with progress bar and live score
 - Results view shows percentage, badge, and appropriate actions based on context
