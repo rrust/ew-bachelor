@@ -36,15 +36,39 @@ Quick start:
 2. Use a local web server extension (like VS Code's **Live Server**) to open `index.html`. This is necessary to avoid browser CORS errors when fetching content files.
 3. Right-click `index.html` and select "Open with Live Server".
 
+## Content Development
+
+For creating and maintaining learning content (lectures, quizzes), see the comprehensive guide:
+→ **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)**
+
+This includes:
+
+- Content structure and formats
+- YAML syntax rules and common mistakes  
+- Validation workflow
+- Templates and best practices
+- Step-by-step workflows
+
 ## Deployment
 
 The app is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch. The deployment typically takes 1-2 minutes to complete.
 
 ## Project Documentation
 
+### For App Developers
+
 - **[GEMINI.md](GEMINI.md)** - Instructions for AI coding agents (required in root)
 - **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Complete development environment setup guide
 - **[docs/AI_CODING.md](docs/AI_CODING.md)** - Guide to AI-assisted development workflow
+
+### For Content Creators
+
+- **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)** - Complete guide to creating and maintaining learning content
+- **[docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md)** - Copy-paste templates for lectures and quizzes
+- **[studium/](studium/)** - Reference materials (curriculum overview)
+
+### Planning & Features
+
 - **[WIP/Learning_Flow_Concept.md](WIP/Learning_Flow_Concept.md)** - Feature planning and implementation roadmap
 - **[WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md)** - Enhancement ideas and future features
 
