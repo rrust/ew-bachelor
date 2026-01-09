@@ -1,5 +1,6 @@
 {
   // markdownlint-cli2 configuration
+  // CRITICAL: Do NOT enable fix mode - it breaks YAML frontmatter in content files!
   "config": {
     // Disable line length rule since technical content often needs longer lines
     "MD013": false,
@@ -8,11 +9,17 @@
     // Allow duplicate headings (common in multi-document files with YAML)
     "MD024": false,
     // Allow both ATX and setext heading styles
-    "MD003": false
+    "MD003": false,
+    // Allow multiple top-level headings (each content block is separate)
+    "MD025": false,
+    // Allow HTML (used in explanations)
+    "MD033": false,
+    // Allow bare URLs
+    "MD034": false
   },
   // Ignore certain paths
-  "ignores": [
-    "node_modules/**",
-    ".git/**"
-  ]
+  "ignores": ["node_modules/**", ".git/**"],
+  // IMPORTANT: Fix is disabled to prevent breaking YAML frontmatter
+  // Only use linting to detect issues, fix manually
+  "fix": false
 }

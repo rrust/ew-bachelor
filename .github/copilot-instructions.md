@@ -47,7 +47,7 @@ As the **app development agent**, focus on:
 ### Critical Rules
 
 - **Always validate content after changes** using `validate-content.html`
-- **Lint markdown** before completing tasks: `npx markdownlint-cli2 --fix "**/*.md"`
+- **Lint markdown** before completing tasks: `npx markdownlint-cli2 "**/*.md"` (NO --fix flag!)
 - **Language**: User-facing text in German, code/comments in English
 - **No build step**: Everything runs directly in browser
 

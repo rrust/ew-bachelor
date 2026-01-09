@@ -77,15 +77,13 @@ Markdown content should be linted using **markdownlint-cli2** via **npx** (no in
 # Lint all markdown files
 npx markdownlint-cli2 "**/*.md"
 
-# Fix auto-fixable issues
-npx markdownlint-cli2 --fix "**/*.md"
-
 # Lint specific directories
 npx markdownlint-cli2 "content/**/*.md" "WIP/**/*.md"
-
-# Fix specific directories
-npx markdownlint-cli2 --fix "content/**/*.md" "WIP/**/*.md"
 ```
+
+**⚠️ IMPORTANT: Do NOT use `--fix` flag!**
+
+The `--fix` flag breaks YAML frontmatter in content files. Always fix markdown issues manually.
 
 **Why lint markdown?**
 
@@ -93,6 +91,8 @@ npx markdownlint-cli2 --fix "content/**/*.md" "WIP/**/*.md"
 - Catches common markdown syntax errors
 - Improves readability and maintainability
 - Helps content maintainers follow best practices
+
+**Note:** The `.markdownlint-cli2.jsonc` config has `"fix": false` to prevent accidental auto-fixing.
 
 ### Test
 
