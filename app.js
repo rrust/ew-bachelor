@@ -81,6 +81,80 @@ document.addEventListener('DOMContentLoaded', async () => {
     retakePrompt: document.getElementById('retake-prompt')
   };
 
+  // --- URL Routing ---
+  function updateURL(path, title) {
+    if (window.history && window.history.pushState) {
+      window.history.pushState({ path }, title, `#${path}`);
+      document.title = title ? `${title} - EW Bachelor` : 'EW Bachelor - Ernährungswissenschaft Lern-App';
+    }
+  }
+
+  function parseURL() {
+    const hash = window.location.hash.slice(1); // Remove #
+    if (!hash || hash === '/') return null;
+    
+    const parts = hash.split('/').filter(p => p);
+    const route = { view: parts[0] };
+    
+    // Parse route patterns
+    if (parts[0] === 'module' && parts[1]) {
+      route.moduleId = parts[1];
+      if (parts[2] === 'lecture' && parts[3]) {
+        route.lectureId = parts[3];
+        if (parts[4] === 'item' && parts[5] !== undefined) {
+          route.itemIndex = parseInt(parts[5], 10);
+        } else if (parts[4] === 'quiz') {
+          route.quiz = true;
+          if (parts[5] !== undefined) {
+            route.questionIndex = parseInt(parts[5], 10);
+          }
+        }
+      }
+    } else if (parts[0] === 'tools') {
+      route.view = 'tools';
+    } else if (parts[0] === 'map' || parts[0] === 'progress') {
+      route.view = 'comingSoon';
+    }
+    
+    return route;
+  }
+
+  function navigateFromURL() {
+    const route = parseURL();
+    if (!route) return false;
+    
+    if (route.view === 'module' && route.moduleId) {
+      if (route.lectureId) {
+        if (route.quiz) {
+          currentModuleId = route.moduleId;
+          currentLectureId = route.lectureId;
+          startQuiz();
+          return true;
+        } else {
+          startLecture(route.moduleId, route.lectureId);
+          if (route.itemIndex !== undefined) {
+            currentItemIndex = route.itemIndex;
+            renderCurrentLectureItem();
+          }
+          return true;
+        }
+      } else {
+        displayLecturesForModule(route.moduleId);
+        return true;
+      }
+    } else if (route.view === 'tools') {
+      updateGreeting();
+      showView('tools');
+      return true;
+    } else if (route.view === 'comingSoon') {
+      updateGreeting();
+      showView('comingSoon');
+      return true;
+    }
+    
+    return false;
+  }
+
   // --- View Management ---
   function showView(viewId) {
     Object.values(views).forEach((view) => {
@@ -101,12 +175,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     const progress = getUserProgress();
     if (progress && progress.userName) {
       updateGreeting(progress.userName);
-      loadModuleCards();
-      showView('moduleMap');
+      
+      // Try to navigate from URL first
+      if (!navigateFromURL()) {
+        loadModuleCards();
+        showView('moduleMap');
+        updateURL('/', 'Module Overview');
+      }
     } else {
       showView('welcome');
+      updateURL('/', 'Welcome');
     }
     addEventListeners();
+    
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', (event) => {
+      if (!navigateFromURL()) {
+        loadModuleCards();
+        showView('moduleMap');
+      }
+    });
   }
 
   // --- Update Greeting ---
@@ -313,11 +401,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       alert('Für dieses Modul wurden keine Vorlesungen gefunden.');
       return;
     }
+    
+    // Update URL
+    const moduleData = MODULES.find(m => m.id === moduleId);
+    updateURL(`/module/${moduleId}`, moduleData?.title || 'Module');
 
     const lectureContentDiv = document.getElementById('lecture-content');
     lectureContentDiv.innerHTML = ''; // Clear previous player UI
 
-    const moduleData = MODULES.find((m) => m.id === moduleId);
     const header = document.createElement('h2');
     header.className = 'text-2xl font-bold mb-4';
     header.textContent = `Vorlesungen für ${moduleData?.title || moduleId}`;
@@ -423,6 +514,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     currentLectureItems = lecture.items;
     currentItemIndex = 0;
+    
+    // Update URL
+    const moduleData = MODULES.find(m => m.id === moduleId);
+    const lectureTopic = lecture.topic || lectureId;
+    updateURL(`/module/${moduleId}/lecture/${lectureId}/item/0`, `${lectureTopic} - ${moduleData?.title || 'Module'}`);
 
     // Populate jump-to dropdown
     inputs.lectureJumpTo.innerHTML = '';
@@ -505,6 +601,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       currentItemIndex + 1
     } / ${totalItems}`;
     inputs.lectureJumpTo.value = currentItemIndex;
+    
+    // Update URL for current item
+    updateURL(
+      `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
+      document.title.split(' - ')[0]
+    );
 
     buttons.prevItem.style.display = currentItemIndex > 0 ? 'block' : 'none';
     buttons.nextItem.style.display =
@@ -525,6 +627,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('lecture');
       return;
     }
+    
+    // Update URL
+    const moduleData = MODULES.find(m => m.id === currentModuleId);
+    const lectureTopic = lecture.topic || currentLectureId;
+    updateURL(`/module/${currentModuleId}/lecture/${currentLectureId}/quiz`, `Quiz: ${lectureTopic} - ${moduleData?.title || 'Module'}`);
 
     // Check if user has already completed this quiz
     const progress = getUserProgress();
@@ -683,6 +790,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateGreeting(userName);
         loadModuleCards();
         showView('moduleMap');
+        updateURL('/', 'Module Overview');
       } else {
         alert('Bitte gib deinen Namen ein.');
       }
@@ -691,6 +799,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.backToMap.addEventListener('click', () => {
       loadModuleCards(); // Reload modules in case progress was made
       showView('moduleMap');
+      updateURL('/', 'Module Overview');
     });
 
     buttons.backToLectures.addEventListener('click', () => {
@@ -699,6 +808,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     buttons.backToLecture.addEventListener('click', () => {
       showView('lecture');
+      updateURL(`/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`, document.title.split(' - ')[0]);
     });
 
     buttons.backToLectureFromResults.addEventListener('click', () => {
@@ -714,6 +824,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.resultsToMap.addEventListener('click', () => {
       loadModuleCards();
       showView('moduleMap');
+      updateURL('/', 'Module Overview');
     });
 
     buttons.startQuiz.addEventListener('click', startQuiz);
@@ -743,62 +854,74 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.navModule.addEventListener('click', () => {
       loadModuleCards();
       showView('moduleMap');
+      updateURL('/', 'Module Overview');
     });
 
     buttons.navMap.addEventListener('click', () => {
       updateGreeting();
       showView('comingSoon');
+      updateURL('/map', 'Map (Coming Soon)');
     });
 
     buttons.navProgress.addEventListener('click', () => {
       updateGreeting();
       showView('comingSoon');
+      updateURL('/progress', 'Progress (Coming Soon)');
     });
 
     buttons.navTools.addEventListener('click', () => {
       updateGreeting();
       showView('tools');
+      updateURL('/tools', 'Tools');
     });
 
     buttons.navModuleTools.addEventListener('click', () => {
       loadModuleCards();
       showView('moduleMap');
+      updateURL('/', 'Module Overview');
     });
 
     buttons.navMapTools.addEventListener('click', () => {
       updateGreeting();
       showView('comingSoon');
+      updateURL('/map', 'Map (Coming Soon)');
     });
 
     buttons.navProgressTools.addEventListener('click', () => {
       updateGreeting();
       showView('comingSoon');
+      updateURL('/progress', 'Progress (Coming Soon)');
     });
 
     // Coming Soon View Navigation
     buttons.navModuleComingSoon.addEventListener('click', () => {
       loadModuleCards();
       showView('moduleMap');
+      updateURL('/', 'Module Overview');
     });
 
     buttons.navMapComingSoon.addEventListener('click', () => {
       updateGreeting();
       showView('comingSoon');
+      updateURL('/map', 'Map (Coming Soon)');
     });
 
     buttons.navProgressComingSoon.addEventListener('click', () => {
       updateGreeting();
       showView('comingSoon');
+      updateURL('/progress', 'Progress (Coming Soon)');
     });
 
     buttons.navToolsComingSoon.addEventListener('click', () => {
       updateGreeting();
       showView('tools');
+      updateURL('/tools', 'Tools');
     });
 
     buttons.backToModuleFromComingSoon.addEventListener('click', () => {
       loadModuleCards();
       showView('moduleMap');
+      updateURL('/', 'Module Overview');
     });
 
     buttons.themeToggle.addEventListener('click', () => {
