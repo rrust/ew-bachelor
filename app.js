@@ -904,7 +904,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function setupThemeListener() {
     if (buttons.themeToggle) {
-      buttons.themeToggle.addEventListener('click', toggleTheme);
+      // Debounce theme toggle to prevent rapid clicking issues
+      const debouncedToggle = window.debounce ? window.debounce(toggleTheme, 200) : toggleTheme;
+      buttons.themeToggle.addEventListener('click', debouncedToggle);
     }
   }
 

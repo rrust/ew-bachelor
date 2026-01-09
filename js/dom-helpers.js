@@ -120,8 +120,6 @@ function showElement(elementOrId, displayValue = 'block') {
     typeof elementOrId === 'string'
       ? document.getElementById(elementOrId)
       : elementOrId;
-  window.showElement = showElement;
-  window.hideElement = hideElement;
   if (element) {
     element.style.display = displayValue;
   }
@@ -139,6 +137,27 @@ function hideElement(elementOrId) {
   if (element) {
     element.style.display = 'none';
   }
+}
+
+/**
+ * Debounces a function call
+ * @param {Function} func - Function to debounce
+ * @param {number} wait - Wait time in milliseconds
+ * @returns {Function} Debounced function
+ */
+function debounce(func, wait = 300) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+window.showElement = showElement;
+window.hideElement = hideElement;
+window.debounce = debounce;
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
 }
 
 // Expose to global scope

@@ -46,6 +46,72 @@ function parseURL() {
   return route;
 }
 
+/**
+ * Builds a URL for the module overview
+ * @returns {string} URL path
+ */
+function buildModuleOverviewURL() {
+  return '/';
+}
+
+/**
+ * Builds a URL for a specific module
+ * @param {string} moduleId - Module ID
+ * @returns {string} URL path
+ */
+function buildModuleURL(moduleId) {
+  return `/module/${moduleId}`;
+}
+
+/**
+ * Builds a URL for a lecture within a module
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @returns {string} URL path
+ */
+function buildLectureURL(moduleId, lectureId) {
+  return `/module/${moduleId}/lecture/${lectureId}`;
+}
+
+/**
+ * Builds a URL for a specific lecture item
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @param {number} itemIndex - Item index
+ * @returns {string} URL path
+ */
+function buildLectureItemURL(moduleId, lectureId, itemIndex) {
+  return `/module/${moduleId}/lecture/${lectureId}/item/${itemIndex}`;
+}
+
+/**
+ * Builds a URL for the lecture overview
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @returns {string} URL path
+ */
+function buildLectureOverviewURL(moduleId, lectureId) {
+  return `/module/${moduleId}/lecture/${lectureId}/overview`;
+}
+
+/**
+ * Builds a URL for a quiz
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @param {number} [questionIndex] - Optional question index
+ * @returns {string} URL path
+ */
+function buildQuizURL(moduleId, lectureId, questionIndex) {
+  const base = `/module/${moduleId}/lecture/${lectureId}/quiz`;
+  return questionIndex !== undefined ? `${base}/${questionIndex}` : base;
+}
+
 // Expose to global scope
 window.updateURL = updateURL;
 window.parseURL = parseURL;
+window.buildModuleOverviewURL = buildModuleOverviewURL;
+window.buildModuleURL = buildModuleURL;
+window.buildLectureURL = buildLectureURL;
+window.buildLectureItemURL = buildLectureItemURL;
+window.buildLectureOverviewURL = buildLectureOverviewURL;
+window.buildQuizURL = buildQuizURL;
