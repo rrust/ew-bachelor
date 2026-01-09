@@ -36,11 +36,17 @@ function showLectureOverviewView() {
  * @returns {Object} {emoji, class, text}
  */
 function getBadgeInfo(score) {
-  if (score >= 90) {
+  const thresholds = window.BADGE_THRESHOLDS || {
+    GOLD: 90,
+    SILVER: 70,
+    BRONZE: 50
+  };
+
+  if (score >= thresholds.GOLD) {
     return { emoji: '🥇', class: 'gold', text: 'Gold' };
-  } else if (score >= 70) {
+  } else if (score >= thresholds.SILVER) {
     return { emoji: '🥈', class: 'silver', text: 'Silber' };
-  } else if (score >= 50) {
+  } else if (score >= thresholds.BRONZE) {
     return { emoji: '🥉', class: 'bronze', text: 'Bronze' };
   } else {
     return { emoji: '⚪', class: 'none', text: 'Nicht bestanden' };
@@ -101,6 +107,37 @@ function setHTMLContent(elementId, html) {
   const element = document.getElementById(elementId);
   if (element) {
     element.innerHTML = html;
+  }
+}
+
+/**
+ * Shows an element by setting display style
+ * @param {string|HTMLElement} elementOrId - Element or element ID
+ * @param {string} displayValue - Display value ('block', 'flex', 'inline', etc.)
+ */
+function showElement(elementOrId, displayValue = 'block') {
+  const element =
+    typeof elementOrId === 'string'
+      ? document.getElementById(elementOrId)
+      : elementOrId;
+  window.showElement = showElement;
+  window.hideElement = hideElement;
+  if (element) {
+    element.style.display = displayValue;
+  }
+}
+
+/**
+ * Hides an element by setting display to none
+ * @param {string|HTMLElement} elementOrId - Element or element ID
+ */
+function hideElement(elementOrId) {
+  const element =
+    typeof elementOrId === 'string'
+      ? document.getElementById(elementOrId)
+      : elementOrId;
+  if (element) {
+    element.style.display = 'none';
   }
 }
 

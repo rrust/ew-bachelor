@@ -52,13 +52,24 @@ function parseMultiDocument(content) {
  * @returns {Promise<Array>} Array of module objects
  */
 async function loadModules() {
-  const basePath = getBasePath();
-  const modulesPath =
-    basePath === '/'
-      ? 'content/modules.json'
-      : `${basePath}content/modules.json`;
-  const response = await fetch(modulesPath);
-  return await response.json();
+  try {
+    const basePath = getBasePath();
+    const modulesPath =
+      basePath === '/'
+        ? 'content/modules.json'
+        : `${basePath}content/modules.json`;
+    const response = await fetch(modulesPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to load modules: ${response.status} ${response.statusText}`);
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Error loading modules:', error);
+    alert('Fehler beim Laden der Module. Bitte aktualisiere die Seite.');
+    return [];
+  }
 }
 
 /**
@@ -80,13 +91,20 @@ function getBasePath() {
  */
 async function parseContent() {
   const content = {};
-  const basePath = getBasePath();
-  const contentListPath =
-    basePath === '/'
-      ? 'content/content-list.json'
-      : `${basePath}content/content-list.json`;
-  const response = await fetch(contentListPath);
-  const fileList = await response.json();
+  
+  try {
+    const basePath = getBasePath();
+    const contentListPath =
+      basePath === '/'
+        ? 'content/content-list.json'
+        : `${basePath}content/content-list.json`;
+    
+    const response = await fetch(contentListPath);
+    if (!response.ok) {
+      throw new Error(`Failed to load content list: ${response.status} ${response.statusText}`);
+    }
+    
+    const fileList = await response.json();
 
   for (const filePath of fileList) {
     try {
@@ -315,6 +333,12 @@ async function parseContent() {
 
   console.log('Parsed Content:', content);
   return content;
+  
+  } catch (error) {
+    console.error('Critical error parsing content:', error);
+    alert('Fehler beim Laden der Lerninhalte. Bitte aktualisiere die Seite.');
+    return {};
+  }
 }
 
 // Expose functions to global scope for use in app.js

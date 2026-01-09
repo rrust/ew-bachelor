@@ -775,7 +775,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // --- Event Listeners ---
-  function addEventListeners() {
+  function setupWelcomeListeners() {
     buttons.start.addEventListener('click', () => {
       const userName = inputs.name.value.trim();
       if (userName) {
@@ -788,7 +788,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         alert('Bitte gib deinen Namen ein.');
       }
     });
+  }
 
+  function setupNavigationListeners() {
     buttons.backToMap.addEventListener('click', () => {
       loadModuleCards(); // Reload modules in case progress was made
       showView('moduleMap');
@@ -799,63 +801,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       displayLecturesForModule(currentModuleId);
     });
 
-    buttons.lectureOverview.addEventListener('click', () => {
-      showLectureOverview();
-    });
-
     buttons.backToPlayer.addEventListener('click', () => {
       // Navigate back to lecture list
       displayLecturesForModule(currentModuleId);
     });
 
-    buttons.backToLecture.addEventListener('click', () => {
-      showView('lecture');
-      updateURL(
-        `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
-        document.title.split(' - ')[0]
-      );
-    });
-
-    buttons.backToLectureFromResults.addEventListener('click', () => {
-      displayLecturesForModule(currentModuleId);
-    });
-
-    buttons.retakeQuiz.addEventListener('click', () => {
-      // Reset the score and start quiz fresh
-      resetLectureProgress(currentModuleId, currentLectureId);
-      beginQuiz();
-    });
-
-    buttons.resultsToMap.addEventListener('click', () => {
+    buttons.backToModuleFromComingSoon.addEventListener('click', () => {
       loadModuleCards();
       showView('moduleMap');
       updateURL('/', 'Module Overview');
     });
 
-    buttons.startQuiz.addEventListener('click', startQuiz);
-
-    buttons.nextItem.addEventListener('click', () => {
-      if (lectureState.currentIndex < lectureState.currentItems.length - 1) {
-        lectureState.currentIndex++;
-        renderCurrentLectureItem();
-      }
-    });
-
-    buttons.prevItem.addEventListener('click', () => {
-      if (lectureState.currentIndex > 0) {
-        lectureState.currentIndex--;
-        renderCurrentLectureItem();
-      }
-    });
-
-    inputs.lectureJumpTo.addEventListener('change', (e) => {
-      const newIndex = parseInt(e.target.value, 10);
-      if (newIndex >= 0 && newIndex < lectureState.currentItems.length) {
-        lectureState.currentIndex = newIndex;
-        renderCurrentLectureItem();
-      }
-    });
-
+    // Header navigation
     if (buttons.navModule) {
       buttons.navModule.addEventListener('click', () => {
         loadModuleCards();
@@ -887,18 +844,76 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateURL('/tools', 'Tools');
       });
     }
+  }
 
-    if (buttons.backToModuleFromComingSoon) {
-      buttons.backToModuleFromComingSoon.addEventListener('click', () => {
-        loadModuleCards();
-        showView('moduleMap');
-        updateURL('/', 'Module Overview');
-      });
-    }
+  function setupLectureListeners() {
+    buttons.lectureOverview.addEventListener('click', () => {
+      showLectureOverview();
+    });
 
+    buttons.backToLecture.addEventListener('click', () => {
+      showView('lecture');
+      updateURL(
+        `/module/${currentModuleId}/lecture/${currentLectureId}/item/${lectureState.currentIndex}`,
+        document.title.split(' - ')[0]
+      );
+    });
+
+    buttons.nextItem.addEventListener('click', () => {
+      if (lectureState.currentIndex < lectureState.currentItems.length - 1) {
+        lectureState.currentIndex++;
+        renderCurrentLectureItem();
+      }
+    });
+
+    buttons.prevItem.addEventListener('click', () => {
+      if (lectureState.currentIndex > 0) {
+        lectureState.currentIndex--;
+        renderCurrentLectureItem();
+      }
+    });
+
+    inputs.lectureJumpTo.addEventListener('change', (e) => {
+      const newIndex = parseInt(e.target.value, 10);
+      if (newIndex >= 0 && newIndex < lectureState.currentItems.length) {
+        lectureState.currentIndex = newIndex;
+        renderCurrentLectureItem();
+      }
+    });
+  }
+
+  function setupQuizListeners() {
+    buttons.startQuiz.addEventListener('click', startQuiz);
+
+    buttons.backToLectureFromResults.addEventListener('click', () => {
+      displayLecturesForModule(currentModuleId);
+    });
+
+    buttons.retakeQuiz.addEventListener('click', () => {
+      // Reset the score and start quiz fresh
+      resetLectureProgress(currentModuleId, currentLectureId);
+      beginQuiz();
+    });
+
+    buttons.resultsToMap.addEventListener('click', () => {
+      loadModuleCards();
+      showView('moduleMap');
+      updateURL('/', 'Module Overview');
+    });
+  }
+
+  function setupThemeListener() {
     if (buttons.themeToggle) {
       buttons.themeToggle.addEventListener('click', toggleTheme);
     }
+  }
+
+  function addEventListeners() {
+    setupWelcomeListeners();
+    setupNavigationListeners();
+    setupLectureListeners();
+    setupQuizListeners();
+    setupThemeListener();
   }
 
   // --- Theme Toggle ---

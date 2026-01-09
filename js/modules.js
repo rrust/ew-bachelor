@@ -40,13 +40,18 @@ function getModuleStats(moduleId, APP_CONTENT, getUserProgress) {
   const averageScore = completedQuizzes > 0 ? totalScore / completedQuizzes : 0;
 
   // Determine badge based on average score of completed quizzes
+  const thresholds = window.BADGE_THRESHOLDS || {
+    GOLD: 90,
+    SILVER: 70,
+    BRONZE: 50
+  };
   let badge = 'none';
   if (completedQuizzes > 0) {
-    if (averageScore >= 90) {
+    if (averageScore >= thresholds.GOLD) {
       badge = 'gold';
-    } else if (averageScore >= 70) {
+    } else if (averageScore >= thresholds.SILVER) {
       badge = 'silver';
-    } else if (averageScore >= 50) {
+    } else if (averageScore >= thresholds.BRONZE) {
       badge = 'bronze';
     } else {
       badge = 'incomplete';
@@ -80,10 +85,8 @@ function loadModuleCards(
   const sortedModules = [...MODULES].sort((a, b) => a.order - b.order);
 
   for (const module of sortedModules) {
-    const card = createModuleCard(
-      module.id,
-      module,
-      () => displayLecturesForModule(module.id)
+    const card = createModuleCard(module.id, module, () =>
+      displayLecturesForModule(module.id)
     );
     moduleGrid.appendChild(card);
   }
@@ -176,7 +179,9 @@ function createModuleCard(
     cardHTML += `<button class="view-lectures-btn text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesungen</button>`;
 
     // Exam button
-    const examEnabled = stats.averageScore >= 80 && stats.completedQuizzes > 0;
+    const EXAM_UNLOCK_THRESHOLD = 80;
+    const examEnabled =
+      stats.averageScore >= EXAM_UNLOCK_THRESHOLD && stats.completedQuizzes > 0;
     const examBtnClass = examEnabled
       ? 'text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200'
       : 'text-sm px-3 py-1.5 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 font-medium rounded cursor-not-allowed';

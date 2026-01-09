@@ -226,22 +226,45 @@ function finishQuiz(
 function showQuizResults(score, isExisting, displays, buttons, showView) {
   displays.finalScore.textContent = `${score.toFixed(0)}%`;
 
-  // Display badge with emoji and styling
+  // Display badge with emoji and styling using helper
+  const badgeInfo = window.getBadgeInfo ? window.getBadgeInfo(score) : null;
   let badgeText = '';
   let badgeClass = '';
-  if (score >= 90) {
-    badgeText = '🥇 Gold-Abzeichen';
-    badgeClass = 'text-yellow-500';
-  } else if (score >= 70) {
-    badgeText = '🥈 Silber-Abzeichen';
-    badgeClass = 'text-gray-400';
-  } else if (score >= 50) {
-    badgeText = '🥉 Bronze-Abzeichen';
-    badgeClass = 'text-orange-600';
+
+  if (badgeInfo) {
+    badgeText = `${badgeInfo.emoji} ${badgeInfo.text}-Abzeichen`;
+    const colorClasses = {
+      gold: 'text-yellow-500',
+      silver: 'text-gray-400',
+      bronze: 'text-orange-600',
+      none: 'text-gray-500'
+    };
+    badgeClass = colorClasses[badgeInfo.class] || 'text-gray-500';
+    if (badgeInfo.class === 'none') {
+      badgeText = 'Kein Abzeichen';
+    }
   } else {
-    badgeText = 'Kein Abzeichen';
-    badgeClass = 'text-gray-500';
+    // Fallback if helper not available
+    const thresholds = window.BADGE_THRESHOLDS || {
+      GOLD: 90,
+      SILVER: 70,
+      BRONZE: 50
+    };
+    if (score >= thresholds.GOLD) {
+      badgeText = '🥇 Gold-Abzeichen';
+      badgeClass = 'text-yellow-500';
+    } else if (score >= thresholds.SILVER) {
+      badgeText = '🥈 Silber-Abzeichen';
+      badgeClass = 'text-gray-400';
+    } else if (score >= thresholds.BRONZE) {
+      badgeText = '🥉 Bronze-Abzeichen';
+      badgeClass = 'text-orange-600';
+    } else {
+      badgeText = 'Kein Abzeichen';
+      badgeClass = 'text-gray-500';
+    }
   }
+
   displays.finalBadge.textContent = badgeText;
   displays.finalBadge.className = `text-lg mb-8 font-semibold ${badgeClass}`;
 
@@ -250,13 +273,23 @@ function showQuizResults(score, isExisting, displays, buttons, showView) {
     displays.resultsTitle.textContent = 'Bisheriges Ergebnis';
     displays.resultsSubtitle.textContent =
       'Du hast dieses Quiz bereits abgeschlossen mit:';
-    displays.retakePrompt.style.display = 'block';
-    buttons.retakeQuiz.style.display = 'block';
+    if (window.showElement) {
+      window.showElement(displays.retakePrompt);
+      window.showElement(buttons.retakeQuiz);
+    } else {
+      displays.retakePrompt.style.display = 'block';
+      buttons.retakeQuiz.style.display = 'block';
+    }
   } else {
     displays.resultsTitle.textContent = 'Quiz abgeschlossen!';
     displays.resultsSubtitle.textContent = 'Dein Ergebnis:';
-    displays.retakePrompt.style.display = 'none';
-    buttons.retakeQuiz.style.display = 'none';
+    if (window.hideElement) {
+      window.hideElement(displays.retakePrompt);
+      window.hideElement(buttons.retakeQuiz);
+    } else {
+      displays.retakePrompt.style.display = 'none';
+      buttons.retakeQuiz.style.display = 'none';
+    }
   }
 
   showView('quizResults');

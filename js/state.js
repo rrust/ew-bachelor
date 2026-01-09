@@ -1,5 +1,12 @@
 // Centralized state management
 
+// Constants
+const BADGE_THRESHOLDS = {
+  GOLD: 90,
+  SILVER: 70,
+  BRONZE: 50
+};
+
 const AppState = {
   content: {},
   modules: [],
@@ -44,6 +51,7 @@ const resetQuizState = () => {
 };
 
 // Expose to global scope
+window.BADGE_THRESHOLDS = BADGE_THRESHOLDS;
 window.AppState = AppState;
 window.getState = getState;
 window.getContent = getContent;
