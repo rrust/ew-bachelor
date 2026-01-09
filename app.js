@@ -105,7 +105,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       route.moduleId = parts[1];
       if (parts[2] === 'lecture' && parts[3]) {
         route.lectureId = parts[3];
-        if (parts[4] === 'item' && parts[5] !== undefined) {
+        if (parts[4] === 'overview') {
+          route.overview = true;
+        } else if (parts[4] === 'item' && parts[5] !== undefined) {
           route.itemIndex = parseInt(parts[5], 10);
         } else if (parts[4] === 'quiz') {
           route.quiz = true;
@@ -129,7 +131,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (route.view === 'module' && route.moduleId) {
       if (route.lectureId) {
-        if (route.quiz) {
+        if (route.overview) {
+          // Show overview for this lecture
+          currentModuleId = route.moduleId;
+          currentLectureId = route.lectureId;
+          const lecture = APP_CONTENT[route.moduleId]?.lectures[route.lectureId];
+          if (lecture && lecture.items && lecture.items.length > 0) {
+            currentLectureItems = lecture.items;
+            currentItemIndex = 0;
+            showLectureOverview();
+          }
+          return true;
+        } else if (route.quiz) {
           currentModuleId = route.moduleId;
           currentLectureId = route.lectureId;
           startQuiz();
@@ -849,27 +862,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       card.innerHTML = `
-        <div class="flex items-start space-x-4">
-          <div class="flex-shrink-0">
-            <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full ${badgeClass}">${typeLabel}</span>
-          </div>
-          <div class="flex-1 min-w-0">
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-sm text-gray-500 dark:text-gray-400">Schritt ${
-                index + 1
-              }</span>
-            </div>
-            <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">${preview}</h3>
-            ${
-              description
-                ? `<p class="text-sm text-gray-600 dark:text-gray-400 mb-3">${description}</p>`
-                : ''
-            }
-            <button class="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium">
-              Zu diesem Schritt →
-            </button>
-          </div>
+        <div class="flex items-start justify-between mb-3">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 flex-1">${preview}</h3>
+          <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full ${badgeClass} ml-4 flex-shrink-0">${typeLabel}</span>
         </div>
+        ${
+          description
+            ? `<p class="text-sm text-gray-600 dark:text-gray-400">${description}</p>`
+            : ''
+        }
       `;
 
       card.addEventListener('click', () => {
@@ -877,6 +878,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCurrentLectureItem();
         document.getElementById('lecture-player').style.display = 'flex';
         document.getElementById('lecture-overview').style.display = 'none';
+        // Update URL for the specific item
+        updateURL(
+          `/module/${currentModuleId}/lecture/${currentLectureId}/item/${currentItemIndex}`,
+          document.title.split(' - ')[0]
+        );
       });
 
       overviewContent.appendChild(card);
@@ -884,6 +890,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('lecture-player').style.display = 'none';
     document.getElementById('lecture-overview').style.display = 'flex';
+    
+    // Update URL for overview
+    updateURL(
+      `/module/${currentModuleId}/lecture/${currentLectureId}/overview`,
+      lecture?.topic || 'Vorlesungsübersicht'
+    );
   }
 
   // --- Quiz Logic ---
