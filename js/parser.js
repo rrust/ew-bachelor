@@ -59,11 +59,13 @@ async function loadModules() {
         ? 'content/modules.json'
         : `${basePath}content/modules.json`;
     const response = await fetch(modulesPath);
-    
+
     if (!response.ok) {
-      throw new Error(`Failed to load modules: ${response.status} ${response.statusText}`);
+      throw new Error(
+        `Failed to load modules: ${response.status} ${response.statusText}`
+      );
     }
-    
+
     return await response.json();
   } catch (error) {
     console.error('Error loading modules:', error);
@@ -91,150 +93,198 @@ function getBasePath() {
  */
 async function parseContent() {
   const content = {};
-  
+
   try {
     const basePath = getBasePath();
     const contentListPath =
       basePath === '/'
         ? 'content/content-list.json'
         : `${basePath}content/content-list.json`;
-    
+
     const response = await fetch(contentListPath);
     if (!response.ok) {
-      throw new Error(`Failed to load content list: ${response.status} ${response.statusText}`);
+      throw new Error(
+        `Failed to load content list: ${response.status} ${response.statusText}`
+      );
     }
-    
+
     const fileList = await response.json();
 
-  for (const filePath of fileList) {
-    try {
-      const fullPath = basePath === '/' ? filePath : `${basePath}${filePath}`;
-      const fileResponse = await fetch(fullPath);
-      const fileContent = await fileResponse.text();
+    for (const filePath of fileList) {
+      try {
+        const fullPath = basePath === '/' ? filePath : `${basePath}${filePath}`;
+        const fileResponse = await fetch(fullPath);
+        const fileContent = await fileResponse.text();
 
-      // Extract module and lecture ID from file path
-      // Support:
-      // - lecture.md: Lecture metadata/description
-      // - lecture-items/XX-name.md: Individual items (new format)
-      // - Old: lecture.md with multi-document items (legacy support)
-      const pathParts = filePath.split('/');
-      if (pathParts.length < 4) continue;
+        // Extract module and lecture ID from file path
+        // Support:
+        // - lecture.md: Lecture metadata/description
+        // - lecture-items/XX-name.md: Individual items (new format)
+        // - Old: lecture.md with multi-document items (legacy support)
+        const pathParts = filePath.split('/');
+        if (pathParts.length < 4) continue;
 
-      const moduleId = pathParts[1];
-      const lectureId = pathParts[2];
-      const fileName = pathParts[3];
-      const isLectureItems =
-        fileName === 'lecture-items' && pathParts.length >= 5;
-      const isLectureMetadata = fileName === 'lecture.md' && !isLectureItems;
-      const isQuizMetadata = fileName === 'quiz.md' && pathParts.length === 4;
-      const isQuizQuestion = fileName === 'questions' && pathParts.length >= 5;
+        const moduleId = pathParts[1];
+        const lectureId = pathParts[2];
+        const fileName = pathParts[3];
+        const isLectureItems =
+          fileName === 'lecture-items' && pathParts.length >= 5;
+        const isLectureMetadata = fileName === 'lecture.md' && !isLectureItems;
+        const isQuizMetadata = fileName === 'quiz.md' && pathParts.length === 4;
+        const isQuizQuestion =
+          fileName === 'questions' && pathParts.length >= 5;
 
-      // Determine if this is a quiz file (legacy format - deprecated)
-      const isQuiz = fileName === 'quiz.md' && pathParts.length === 4;
+        // Determine if this is a quiz file (legacy format - deprecated)
+        const isQuiz = fileName === 'quiz.md' && pathParts.length === 4;
 
-      if (!content[moduleId]) {
-        content[moduleId] = { lectures: {} };
-      }
-      if (!content[moduleId].lectures[lectureId]) {
-        content[moduleId].lectures[lectureId] = {
-          topic: '',
-          description: '',
-          descriptionHtml: '',
-          quizDescription: '',
-          quizDescriptionHtml: '',
-          items: [],
-          quiz: []
-        };
-      }
-
-      const documents = parseMultiDocument(fileContent);
-
-      if (isQuizMetadata) {
-        // This is quiz.md containing metadata/description for the quiz
-        const doc = documents[0];
-        if (doc && doc.attributes) {
-          content[moduleId].lectures[lectureId].quizDescription =
-            doc.attributes.description || '';
-          content[moduleId].lectures[lectureId].quizDescriptionHtml = doc.body
-            ? marked.parse(doc.body)
-            : '';
+        if (!content[moduleId]) {
+          content[moduleId] = { lectures: {} };
         }
-      } else if (isQuizQuestion) {
-        // This is a single quiz question file
-        const questionFileName = pathParts[4];
-        const doc = documents[0];
-
-        if (doc) {
-          const question = {
-            ...doc.attributes,
-            explanation: doc.body ? marked.parse(doc.body) : '',
-            _order: parseInt(questionFileName.split('-')[0], 10) || 0
+        if (!content[moduleId].lectures[lectureId]) {
+          content[moduleId].lectures[lectureId] = {
+            topic: '',
+            description: '',
+            descriptionHtml: '',
+            quizDescription: '',
+            quizDescriptionHtml: '',
+            items: [],
+            quiz: []
           };
-          content[moduleId].lectures[lectureId].quiz.push(question);
         }
-      } else if (isQuiz) {
-        // Legacy format: quiz.md with multiple questions (deprecated but still supported)
-        const quizQuestions = documents.map((doc) => ({
-          ...doc.attributes,
-          explanation: doc.body ? marked.parse(doc.body) : ''
-        }));
-        content[moduleId].lectures[lectureId].quiz.push(...quizQuestions);
-      } else if (isLectureMetadata) {
-        // This is lecture.md containing metadata/description
-        // Check if it's actually metadata (no 'type' attribute) or old format (has 'type')
-        const doc = documents[0];
-        if (doc && doc.attributes && !doc.attributes.type) {
-          // New format: metadata at top, possibly followed by items
-          content[moduleId].lectures[lectureId].topic =
-            doc.attributes.topic || '';
-          content[moduleId].lectures[lectureId].description =
-            doc.attributes.description || '';
-          content[moduleId].lectures[lectureId].descriptionHtml = doc.body
-            ? marked.parse(doc.body)
-            : '';
 
-          // Process remaining documents as items (if any)
-          const remainingDocs = documents.slice(1);
-          if (remainingDocs.length > 0) {
-            const lectureItems = remainingDocs.map((itemDoc) => {
+        const documents = parseMultiDocument(fileContent);
+
+        if (isQuizMetadata) {
+          // This is quiz.md containing metadata/description for the quiz
+          const doc = documents[0];
+          if (doc && doc.attributes) {
+            content[moduleId].lectures[lectureId].quizDescription =
+              doc.attributes.description || '';
+            content[moduleId].lectures[lectureId].quizDescriptionHtml = doc.body
+              ? marked.parse(doc.body)
+              : '';
+          }
+        } else if (isQuizQuestion) {
+          // This is a single quiz question file
+          const questionFileName = pathParts[4];
+          const doc = documents[0];
+
+          if (doc) {
+            const question = {
+              ...doc.attributes,
+              explanation: doc.body ? marked.parse(doc.body) : '',
+              _order: parseInt(questionFileName.split('-')[0], 10) || 0
+            };
+            content[moduleId].lectures[lectureId].quiz.push(question);
+          }
+        } else if (isQuiz) {
+          // Legacy format: quiz.md with multiple questions (deprecated but still supported)
+          const quizQuestions = documents.map((doc) => ({
+            ...doc.attributes,
+            explanation: doc.body ? marked.parse(doc.body) : ''
+          }));
+          content[moduleId].lectures[lectureId].quiz.push(...quizQuestions);
+        } else if (isLectureMetadata) {
+          // This is lecture.md containing metadata/description
+          // Check if it's actually metadata (no 'type' attribute) or old format (has 'type')
+          const doc = documents[0];
+          if (doc && doc.attributes && !doc.attributes.type) {
+            // New format: metadata at top, possibly followed by items
+            content[moduleId].lectures[lectureId].topic =
+              doc.attributes.topic || '';
+            content[moduleId].lectures[lectureId].description =
+              doc.attributes.description || '';
+            content[moduleId].lectures[lectureId].descriptionHtml = doc.body
+              ? marked.parse(doc.body)
+              : '';
+
+            // Process remaining documents as items (if any)
+            const remainingDocs = documents.slice(1);
+            if (remainingDocs.length > 0) {
+              const lectureItems = remainingDocs.map((itemDoc) => {
+                const item = {
+                  type: itemDoc.attributes.type || 'learning-content',
+                  ...itemDoc.attributes
+                };
+
+                // Parse body content based on type
+                if (item.type === 'learning-content') {
+                  item.html = marked.parse(itemDoc.body);
+                } else if (item.type === 'self-assessment-mc') {
+                  item.explanation = itemDoc.body
+                    ? marked.parse(itemDoc.body)
+                    : '';
+                } else if (item.type === 'youtube-video') {
+                  // URL and title are already in attributes
+                } else if (item.type === 'image') {
+                  // URL, alt, caption, and title are already in attributes
+                } else if (item.type === 'mermaid-diagram') {
+                  // Extract mermaid code from body
+                  const mermaidMatch = itemDoc.body.match(
+                    /```mermaid\n([\s\S]*?)\n```/
+                  );
+                  if (mermaidMatch) {
+                    item.diagram = mermaidMatch[1].trim();
+                  } else {
+                    item.diagram = itemDoc.body.trim();
+                  }
+                }
+
+                return item;
+              });
+              content[moduleId].lectures[lectureId].items.push(...lectureItems);
+            }
+          } else {
+            // Old format: lecture.md with multiple items
+            const lectureItems = documents.map((doc) => {
               const item = {
-                type: itemDoc.attributes.type || 'learning-content',
-                ...itemDoc.attributes
+                type: doc.attributes.type || 'learning-content',
+                ...doc.attributes
               };
 
               // Parse body content based on type
               if (item.type === 'learning-content') {
-                item.html = marked.parse(itemDoc.body);
+                item.html = marked.parse(doc.body);
               } else if (item.type === 'self-assessment-mc') {
-                item.explanation = itemDoc.body
-                  ? marked.parse(itemDoc.body)
-                  : '';
+                item.explanation = doc.body ? marked.parse(doc.body) : '';
               } else if (item.type === 'youtube-video') {
                 // URL and title are already in attributes
               } else if (item.type === 'image') {
                 // URL, alt, caption, and title are already in attributes
               } else if (item.type === 'mermaid-diagram') {
                 // Extract mermaid code from body
-                const mermaidMatch = itemDoc.body.match(
+                const mermaidMatch = doc.body.match(
                   /```mermaid\n([\s\S]*?)\n```/
                 );
                 if (mermaidMatch) {
                   item.diagram = mermaidMatch[1].trim();
                 } else {
-                  item.diagram = itemDoc.body.trim();
+                  item.diagram = doc.body.trim();
                 }
               }
 
               return item;
             });
+
+            // Promote the topic from the first item to the lecture level
+            if (lectureItems.length > 0 && lectureItems[0].topic) {
+              content[moduleId].lectures[lectureId].topic =
+                lectureItems[0].topic;
+            }
+
             content[moduleId].lectures[lectureId].items.push(...lectureItems);
           }
-        } else {
-          // Old format: lecture.md with multiple items
-          const lectureItems = documents.map((doc) => {
+        } else if (isLectureItems) {
+          // This is a single lecture item file
+          // File path: content/MODULE_ID/LECTURE_ID/lecture-items/XX-name.md
+          const itemFileName = pathParts[4];
+          const doc = documents[0]; // Should only be one document per file
+
+          if (doc) {
             const item = {
               type: doc.attributes.type || 'learning-content',
-              ...doc.attributes
+              ...doc.attributes,
+              _order: parseInt(itemFileName.split('-')[0], 10) || 0 // Extract order from filename
             };
 
             // Parse body content based on type
@@ -258,82 +308,39 @@ async function parseContent() {
               }
             }
 
-            return item;
-          });
-
-          // Promote the topic from the first item to the lecture level
-          if (lectureItems.length > 0 && lectureItems[0].topic) {
-            content[moduleId].lectures[lectureId].topic = lectureItems[0].topic;
+            content[moduleId].lectures[lectureId].items.push(item);
           }
-
-          content[moduleId].lectures[lectureId].items.push(...lectureItems);
         }
-      } else if (isLectureItems) {
-        // This is a single lecture item file
-        // File path: content/MODULE_ID/LECTURE_ID/lecture-items/XX-name.md
-        const itemFileName = pathParts[4];
-        const doc = documents[0]; // Should only be one document per file
-
-        if (doc) {
-          const item = {
-            type: doc.attributes.type || 'learning-content',
-            ...doc.attributes,
-            _order: parseInt(itemFileName.split('-')[0], 10) || 0 // Extract order from filename
-          };
-
-          // Parse body content based on type
-          if (item.type === 'learning-content') {
-            item.html = marked.parse(doc.body);
-          } else if (item.type === 'self-assessment-mc') {
-            item.explanation = doc.body ? marked.parse(doc.body) : '';
-          } else if (item.type === 'youtube-video') {
-            // URL and title are already in attributes
-          } else if (item.type === 'image') {
-            // URL, alt, caption, and title are already in attributes
-          } else if (item.type === 'mermaid-diagram') {
-            // Extract mermaid code from body
-            const mermaidMatch = doc.body.match(/```mermaid\n([\s\S]*?)\n```/);
-            if (mermaidMatch) {
-              item.diagram = mermaidMatch[1].trim();
-            } else {
-              item.diagram = doc.body.trim();
-            }
-          }
-
-          content[moduleId].lectures[lectureId].items.push(item);
-        }
-      }
-    } catch (error) {
-      console.error('Error parsing file:', filePath, error);
-    }
-  }
-
-  // Sort lecture items by _order field (for files from lecture-items/ folder)
-  // Sort quiz questions by _order field (for files from questions/ folder)
-  for (const moduleId in content) {
-    for (const lectureId in content[moduleId].lectures) {
-      const lecture = content[moduleId].lectures[lectureId];
-      if (lecture.items.length > 0 && lecture.items[0]._order !== undefined) {
-        lecture.items.sort((a, b) => (a._order || 0) - (b._order || 0));
-      }
-      // Sort quiz questions
-      if (lecture.quiz.length > 0 && lecture.quiz[0]._order !== undefined) {
-        lecture.quiz.sort((a, b) => (a._order || 0) - (b._order || 0));
-      }
-      // Promote topic from first item if not set
-      if (
-        !lecture.topic &&
-        lecture.items.length > 0 &&
-        lecture.items[0].topic
-      ) {
-        lecture.topic = lecture.items[0].topic;
+      } catch (error) {
+        console.error('Error parsing file:', filePath, error);
       }
     }
-  }
 
-  console.log('Parsed Content:', content);
-  return content;
-  
+    // Sort lecture items by _order field (for files from lecture-items/ folder)
+    // Sort quiz questions by _order field (for files from questions/ folder)
+    for (const moduleId in content) {
+      for (const lectureId in content[moduleId].lectures) {
+        const lecture = content[moduleId].lectures[lectureId];
+        if (lecture.items.length > 0 && lecture.items[0]._order !== undefined) {
+          lecture.items.sort((a, b) => (a._order || 0) - (b._order || 0));
+        }
+        // Sort quiz questions
+        if (lecture.quiz.length > 0 && lecture.quiz[0]._order !== undefined) {
+          lecture.quiz.sort((a, b) => (a._order || 0) - (b._order || 0));
+        }
+        // Promote topic from first item if not set
+        if (
+          !lecture.topic &&
+          lecture.items.length > 0 &&
+          lecture.items[0].topic
+        ) {
+          lecture.topic = lecture.items[0].topic;
+        }
+      }
+    }
+
+    console.log('Parsed Content:', content);
+    return content;
   } catch (error) {
     console.error('Critical error parsing content:', error);
     alert('Fehler beim Laden der Lerninhalte. Bitte aktualisiere die Seite.');
