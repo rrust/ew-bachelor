@@ -464,8 +464,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       let contentHTML = `<div class="flex-grow">
                 <h3 class="font-bold">${
                   lecture.topic || lectureId.replace(/-/g, ' ')
-                }</h3>
-            </div>`;
+                }</h3>`;
+
+      // Add description if available
+      if (lecture.description) {
+        contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">${lecture.description}</p>`;
+      }
+
+      contentHTML += `</div>`;
 
       contentHTML += '<div class="flex-shrink-0 flex items-center space-x-2">';
       contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Vorlesung</button>`;
