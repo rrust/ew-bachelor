@@ -111,33 +111,48 @@ Learning content is defined in Markdown files with a clear, human-friendly hiera
 ```text
 content/
   modules.json                                    # Module metadata
+  content-list.json                               # Registry of all content files
   01-ernaehrungslehre-grundlagen/                # Module folder (numbered for order)
     01-grundlagen-zellbiologie/                  # Lecture folder (numbered for order)
-      lecture.md                                  # Main lecture content
-      quiz.md                                     # Graded quiz questions
-      questions/                                  # Optional: Individual question files
-        01-mitochondrien-funktion.md
+      lecture.md                                  # Lecture metadata (topic, description)
+      lecture-items/                              # Individual learning items
+        01-einleitung.md                         # Numbered for order
+        02-mitochondrien-test.md                 # Self-assessment
+        03-video.md                              # YouTube video
+        04-diagramm.md                           # Mermaid diagram
+        ...
+      quiz.md                                     # Quiz metadata (description)
+      questions/                                  # Individual quiz questions
+        01-mitochondrien-funktion.md             # Numbered for order
         02-golgi-apparat.md
+        03-zellmembran-aufbau.md
+        ...
     02-makronaehrstoffe-detail/
       lecture.md
-    03-fette-oele/
-      lecture.md
+      lecture-items/
+        ...
+      quiz.md
+      questions/
+        ...
 ```
 
 **Naming Conventions:**
 
 - **Modules:** `NN-descriptive-name/` - Number prefix for ordering, descriptive name for clarity
 - **Lectures:** `NN-descriptive-topic/` - Subfolder containing all lecture materials
-- **Files:** `lecture.md` and `quiz.md` - Standard names, no prefixes needed at this level
-- **Questions (optional):** `NN-topic.md` - Numbered for order within questions subfolder
+- **Metadata files:** `lecture.md` and `quiz.md` - Contain only metadata, no content
+- **Content files:** `lecture-items/NN-name.md` - Individual learning items, numbered
+- **Question files:** `questions/NN-topic.md` - Individual quiz questions, numbered
 
-**Benefits:**
+**Benefits of Modular Structure:**
 
 - Clear hierarchy that's easy to navigate manually
-- Numbers only indicate order within their context (not duplicated across levels)
-- Each file has a manageable length
+- Each file has a single responsibility (one concept/item/question)
+- Numbers indicate order within their context (not duplicated across levels)
+- Manageable file sizes (easier to edit, review, and version control)
 - Self-documenting structure (folder names describe content)
-- Easy to add new content without code changes
+- Easy to add, remove, or reorder content (rename file = change order)
+- Git-friendly (better diffs, fewer merge conflicts)
 
 **Module Metadata:**
 All module information is stored in `content/modules.json`:
@@ -154,25 +169,35 @@ All module information is stored in `content/modules.json`:
 ```
 
 **Lecture Structure:**
-A `lecture.md` file contains a **series of learning items**, separated by `---`. Each item begins with a YAML frontmatter block that defines its `type` and other metadata. This allows a lecture to be a sequence of text, images, videos, and self-assessments.
 
-The graded quiz for a lecture is stored in `quiz.md` within the same lecture folder and contains items of type `multiple-choice`.
-
-**Example: A Multi-Item Lecture File (`01-grundlagen-zellbiologie.md`)**
+**lecture.md** contains only metadata:
 
 ```markdown
 ---
+topic: 'Grundlagen der Zellbiologie'
+description: 'Einführung in die Zellbiologie: Aufbau und Funktion von Zellen'
+---
+
+# Grundlagen der Zellbiologie
+
+Einleitung oder Lernziele (optional).
+```
+
+**lecture-items/** contains individual learning items as separate files:
+
+```markdown
+# File: lecture-items/01-einleitung.md
+---
 type: 'learning-content'
-# This is the first item: a block of text.
 ---
 
 ## Die Zelle: Baustein des Lebens
 
-Die Zelle ist die kleinste lebende Einheit aller Organismen. Man unterscheidet zwischen prokaryotischen und eukaryotischen Zellen.
+Die Zelle ist die kleinste lebende Einheit aller Organismen.
 
+# File: lecture-items/02-selbsttest.md
 ---
 type: 'self-assessment-mc'
-# This is the second item: a non-graded, multiple choice self-assessment.
 question: 'Was ist die kleinste lebende Einheit?'
 options:
   - 'Das Organ'
@@ -183,20 +208,32 @@ correctAnswer: 'Die Zelle'
 
 **Erklärung:** Super! Die Zelle ist der fundamentale Baustein.
 
+# File: lecture-items/03-video.md
 ---
-type: 'learning-content'
-# This is the third item: more text content.
+type: 'youtube-video'
+url: 'https://www.youtube.com/watch?v=VIDEO_ID'
+title: 'Zellatmung erklärt'
 ---
-
-### Wichtige Organellen
-
-*   **Zellkern:** Enthält die DNA.
-*   **Mitochondrien:** Sind die Kraftwerke der Zelle.
 ```
 
-**Example: A Graded Quiz Question (`01-grundlagen-zellbiologie-quiz.md`)**
+**Quiz Structure:**
+
+**quiz.md** contains only metadata:
 
 ```markdown
+---
+description: 'Teste dein Wissen über Zellbiologie und Organellen'
+---
+
+# Quiz: Grundlagen der Zellbiologie
+
+Überprüfe dein Verständnis der wichtigsten Konzepte.
+```
+
+**questions/** contains individual quiz questions as separate files:
+
+```markdown
+# File: questions/01-mitochondrien-funktion.md
 ---
 type: 'multiple-choice'
 question: 'Welches Organell ist für die Energieproduktion zuständig?'
@@ -206,14 +243,56 @@ options:
   - 'Ribosomen'
 correctAnswer: 'Mitochondrien'
 ---
-```
 
-**Example: Individual Question File (`01-frage-mitochondrien-funktion.md`)**
+**Erklärung:** Mitochondrien sind die "Kraftwerke" der Zelle.
 
-```markdown
+# File: questions/02-golgi-apparat.md
 ---
 type: 'multiple-choice'
-lecture: 'lecture-1'
+question: 'Was ist die Hauptaufgabe des Golgi-Apparats?'
+options:
+  - 'Energieproduktion'
+  - 'Proteinmodifikation und Sortierung'
+  - 'DNA-Replikation'
+correctAnswer: 'Proteinmodifikation und Sortierung'
+---
+
+**Erklärung:** Der Golgi-Apparat modifiziert Proteine und sortiert sie für den Transport.
+```
+
+**Parsing Logic:**
+
+The parser (`js/parser.js`) handles this modular structure:
+
+1. **Detects file type** based on path:
+   - `lecture.md` → Lecture metadata
+   - `lecture-items/NN-name.md` → Individual lecture item
+   - `quiz.md` → Quiz metadata
+   - `questions/NN-name.md` → Individual quiz question
+
+2. **Extracts order from filename**: `NN` prefix determines display order
+
+3. **Sorts content**: Items and questions sorted by `_order` field (extracted from filename)
+
+4. **Builds data structure**: All content available in `APP_CONTENT` global object
+
+**Content Types Supported:**
+
+- `learning-content` - Markdown text with formatting
+- `self-assessment-mc` - Non-graded multiple choice questions
+- `multiple-choice` - Graded quiz questions
+- `youtube-video` - Embedded YouTube videos
+- `image` - Images (local or remote URLs)
+- `mermaid-diagram` - Interactive diagrams using Mermaid.js
+
+**Critical for AI Agents:**
+
+- **Always maintain modular structure**: One file = one concept/item/question
+- **Number files correctly**: `01-`, `02-`, etc. determines order
+- **Update content-list.json**: Every new file must be registered
+- **Validate after changes**: Use `validate-content.html` to check YAML syntax
+- **Follow YAML rules**: Use `-` (dash) for lists, never `*` (asterisk)
+- **Match correctAnswer exactly**: Must be identical to one option (case-sensitive)
 topic: 'Grundlagen der Zellbiologie'
 question: 'Was ist die Hauptfunktion der Mitochondrien?'
 options:
@@ -225,7 +304,8 @@ correctAnswer: 'Energiegewinnung (ATP-Produktion)'
 ---
 
 **Erklärung:** Mitochondrien sind die "Kraftwerke" der Zelle.
-```
+
+```text
 
 ### Code Structure
 
