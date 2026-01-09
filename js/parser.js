@@ -80,32 +80,33 @@ async function parseContent() {
             const fileContent = await fileResponse.text();
             
             // Extract module and lecture ID from file path
-            const pathParts = filePath.split('/'); // e.g., ["content", "modul-1", "lecture-1.md"]
-            if (pathParts.length < 3) continue;
+            // New structure: content/MODULE_ID/LECTURE_ID/lecture.md or quiz.md
+            const pathParts = filePath.split('/'); // e.g., ["content", "01-ernaehrungslehre-grundlagen", "01-grundlagen-zellbiologie", "lecture.md"]
+            if (pathParts.length < 4) continue;
 
-            const module = pathParts[1];
-            const fileName = pathParts[2];
-            // Assumes lecture file is named like 'lecture-X.md' and quiz is 'lecture-X-quiz.md'
-            const lectureId = fileName.includes('quiz') 
-                ? fileName.replace('-quiz.md', '')
-                : fileName.replace('.md', '');
+            const moduleId = pathParts[1];
+            const lectureId = pathParts[2];
+            const fileName = pathParts[3];
+            
+            // Determine if this is a quiz file
+            const isQuiz = fileName === 'quiz.md';
 
-            if (!content[module]) {
-                content[module] = { lectures: {} };
+            if (!content[moduleId]) {
+                content[moduleId] = { lectures: {} };
             }
-            if (!content[module].lectures[lectureId]) {
-                content[module].lectures[lectureId] = { topic: '', items: [], quiz: [] };
+            if (!content[moduleId].lectures[lectureId]) {
+                content[moduleId].lectures[lectureId] = { topic: '', items: [], quiz: [] };
             }
 
             const documents = parseMultiDocument(fileContent);
 
-            if (fileName.includes('quiz')) {
+            if (isQuiz) {
                 // This is a quiz file, parse questions for the final quiz
                 const quizQuestions = documents.map(doc => ({
                     ...doc.attributes,
                     explanation: doc.body ? marked.parse(doc.body) : ''
                 }));
-                content[module].lectures[lectureId].quiz.push(...quizQuestions);
+                content[moduleId].lectures[lectureId].quiz.push(...quizQuestions);
             } else {
                 // This is a lecture file with a series of items
                 const lectureItems = documents.map(doc => {
@@ -123,12 +124,11 @@ async function parseContent() {
                 
                 // Promote the topic from the first item to the lecture level
                 if (lectureItems.length > 0 && lectureItems[0].topic) {
-                    content[module].lectures[lectureId].topic = lectureItems[0].topic;
+                    content[moduleId].lectures[lectureId].topic = lectureItems[0].topic;
                 }
-
-                content[module].lectures[lectureId].items.push(...lectureItems);
+                
+                content[moduleId].lectures[lectureId].items.push(...lectureItems);
             }
-
         } catch (error) {
             console.error('Error parsing file:', filePath, error);
         }

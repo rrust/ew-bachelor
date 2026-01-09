@@ -1,7 +1,9 @@
 [
-    "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie.md",
-    "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie-quiz.md",
-    "content/01-ernaehrungslehre-grundlagen/02-makronaehrstoffe-detail.md",
-    "content/01-ernaehrungslehre-grundlagen/03-fette-oele.md"
+    "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie/lecture.md",
+    "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie/quiz.md",
+    "content/01-ernaehrungslehre-grundlagen/02-makronaehrstoffe-detail/lecture.md",
+    "content/01-ernaehrungslehre-grundlagen/02-makronaehrstoffe-detail/quiz.md",
+    "content/01-ernaehrungslehre-grundlagen/03-fette-oele/lecture.md",
+    "content/01-ernaehrungslehre-grundlagen/03-fette-oele/quiz.md"
 ]
 

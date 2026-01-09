@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         backToLecture: document.getElementById('back-to-lecture-button'),
         backToLectureFromResults: document.getElementById('back-to-lecture-from-results'),
         retakeQuiz: document.getElementById('retake-quiz-button'),
-        resultsToMap: document.getElementById('results-to-map-button')
+        resultsToMap: document.getElementById('results-to-map-button'),
+        navMap: document.getElementById('nav-map'),
+        navProgress: document.getElementById('nav-progress')
     };
 
     const inputs = {
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     const displays = {
-        welcomeMessage: document.getElementById('welcome-message'),
+        headerGreeting: document.getElementById('header-greeting'),
         lectureProgress: document.getElementById('lecture-progress'),
         quizProgressBar: document.getElementById('quiz-progress-bar'),
         quizProgressText: document.getElementById('quiz-progress-text'),
@@ -75,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         const progress = getUserProgress();
         if (progress && progress.userName) {
-            displays.welcomeMessage.textContent = `Willkommen zurück, ${progress.userName}!`;
+            displays.headerGreeting.textContent = `Hi ${progress.userName}!`;
             loadModuleCards();
             showView('moduleMap');
         } else {
@@ -145,29 +147,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         const stats = getModuleStats(moduleId);
         
         const card = document.createElement('div');
-        card.className = 'module-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[240px]';
+        card.className = 'module-card bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[200px]';
         
-        if (moduleMeta.status === 'locked') {
+        if (moduleMeta.status === 'gesperrt') {
             card.classList.add('locked', 'opacity-50');
         }
         
-        // Build card HTML with flex-grow for spacing
+        // Card Header: Status (left), ECTS (center), Badge (right)
         let cardHTML = `
-            <div class="flex-grow">
-                <h3 class="text-xl font-bold mb-3">${moduleMeta.title}</h3>
+            <div class="card-header flex items-center justify-between px-4 py-3 border-b rounded-t-lg">
+                <div class="status-badge text-xs font-semibold px-2 py-1 rounded-full ${moduleMeta.status === 'gesperrt' ? 'bg-red-200 text-red-800' : 'bg-green-200 text-green-800'}">${moduleMeta.status}</div>
+                <span class="text-sm font-medium text-gray-600">${moduleMeta.ects} ECTS</span>
         `;
         
-        // Single line for ECTS, Badge, and Status
-        cardHTML += '<div class="mb-4 flex items-center justify-between">';
-        
-        // Left side: ECTS
-        cardHTML += `<span class="text-gray-600 text-sm font-medium">${moduleMeta.ects} ECTS</span>`;
-        
-        // Right side: Badge and Status pill
-        cardHTML += '<div class="flex items-center space-x-2">';
-        
-        // Add badge display
-        if (stats.totalQuizzes > 0 && moduleMeta.status !== 'locked') {
+        // Badge on the right
+        cardHTML += '<div class="badge-container">';
+        if (stats.totalQuizzes > 0 && moduleMeta.status !== 'gesperrt') {
             if (stats.badge === 'gold') {
                 cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(0)}%">🥇</span>`;
             } else if (stats.badge === 'silver') {
@@ -177,48 +172,45 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else if (stats.badge === 'incomplete') {
                 cardHTML += `<span class="text-2xl" title="${stats.completedQuizzes} von ${stats.totalQuizzes} Quizzes absolviert">⚪</span>`;
             } else {
-                cardHTML += `<span class="text-2xl text-gray-300" title="${stats.completedQuizzes} von ${stats.totalQuizzes} Quizzes absolviert">⚪</span>`;
+                cardHTML += `<span class="text-2xl text-gray-300" title="Noch keine Quizzes absolviert">⚪</span>`;
             }
+        } else {
+            cardHTML += '<span class="text-2xl text-gray-300" title="Noch keine Quizzes absolviert">⚪</span>';
         }
+        cardHTML += '</div>';
+        cardHTML += '</div>'; // Close header
         
-        // Add status badge
-        cardHTML += `<div class="status-badge text-xs font-semibold px-2 py-1 rounded-full ${moduleMeta.status === 'locked' ? 'bg-red-200 text-red-800' : 'bg-green-200 text-green-800'}">${moduleMeta.status}</div>`;
+        // Card Content: Module Title and Description
+        cardHTML += `
+            <div class="card-content flex-grow px-4 py-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">${moduleMeta.title}</h3>
+                <p class="text-sm text-gray-500">${moduleMeta.description || ''}</p>
+            </div>
+        `;
         
-        cardHTML += '</div>'; // Close right side
-        cardHTML += '</div>'; // Close single line container
-        cardHTML += '</div>'; // Close flex-grow container
-        
-        // Add icon buttons at bottom
-        if (moduleMeta.status !== 'locked') {
-            cardHTML += '<div class="mt-4 flex justify-end space-x-4">';
-            cardHTML += `<button class="view-lectures-btn bg-blue-500 hover:bg-blue-600 text-white font-bold p-3 rounded-md transition duration-300 w-12 h-12 flex items-center justify-center" title="Vorlesungen ansehen">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-            </button>`;
+        // Card Footer: Action buttons (right aligned)
+        if (moduleMeta.status !== 'gesperrt') {
+            cardHTML += '<div class="card-footer px-4 py-3 border-t rounded-b-lg flex items-center justify-end space-x-2">';
+            cardHTML += `<button class="view-lectures-btn text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesungen</button>`;
             
             // Exam button
             const examEnabled = stats.averageScore >= 80 && stats.completedQuizzes > 0;
             const examBtnClass = examEnabled 
-                ? 'bg-green-500 hover:bg-green-600 text-white font-bold p-3 rounded-md transition duration-300 w-12 h-12 flex items-center justify-center'
-                : 'bg-gray-300 text-gray-500 font-bold p-3 rounded-md cursor-not-allowed w-12 h-12 flex items-center justify-center';
+                ? 'text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200'
+                : 'text-sm px-3 py-1.5 bg-gray-300 text-gray-500 font-medium rounded cursor-not-allowed';
             
             const examTooltip = examEnabled 
                 ? 'Modulprüfung ablegen'
                 : `Deine aktuelle Punktzahl: ${stats.averageScore.toFixed(0)}%, du brauchst 80%`;
             
-            cardHTML += `<button class="exam-btn ${examBtnClass}" ${!examEnabled ? 'disabled' : ''} title="${examTooltip}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-            </button>`;
-            cardHTML += '</div>';
+            cardHTML += `<button class="exam-btn ${examBtnClass}" ${!examEnabled ? 'disabled' : ''} title="${examTooltip}">Prüfung</button>`;
+            cardHTML += '</div>'; // Close footer
         }
         
         card.innerHTML = cardHTML;
         
         // Add event listeners
-        if (moduleMeta.status !== 'locked') {
+        if (moduleMeta.status !== 'gesperrt') {
             const viewLecturesBtn = card.querySelector('.view-lectures-btn');
             viewLecturesBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -280,18 +272,25 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 // Determine badge emoji
                 let badgeEmoji = '';
+                let tooltipText = '';
+                
                 if (lectureProgress?.badge === 'gold') {
                     badgeEmoji = '🥇';
+                    tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(0)}%`;
                 } else if (lectureProgress?.badge === 'silver') {
                     badgeEmoji = '🥈';
+                    tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(0)}%`;
                 } else if (lectureProgress?.badge === 'bronze') {
                     badgeEmoji = '🥉';
+                    tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(0)}%`;
+                } else {
+                    // No score yet - show placeholder
+                    badgeEmoji = '⚪';
+                    tooltipText = 'Quiz noch nicht absolviert';
                 }
                 
                 // Add badge after quiz button with tooltip
-                if (badgeEmoji) {
-                    contentHTML += `<span class="text-2xl" title="Erreichte Punktzahl: ${lectureProgress.score.toFixed(0)}%">${badgeEmoji}</span>`;
-                }
+                contentHTML += `<span class="text-2xl ${lectureProgress?.badge ? '' : 'text-gray-300'}" title="${tooltipText}">${badgeEmoji}</span>`;
             }
             contentHTML += '</div>';
             
@@ -576,7 +575,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const userName = inputs.name.value.trim();
             if (userName) {
                 saveUserProgress(getInitialProgress(userName));
-                displays.welcomeMessage.textContent = `Willkommen, ${userName}!`;
+                displays.headerGreeting.textContent = `Hi ${userName}!`;
                 loadModuleCards();
                 showView('moduleMap');
             } else {
@@ -634,6 +633,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 currentItemIndex = newIndex;
                 renderCurrentLectureItem();
             }
+        });
+
+        buttons.navMap.addEventListener('click', () => {
+            loadModuleCards();
+            showView('moduleMap');
+        });
+
+        buttons.navProgress.addEventListener('click', () => {
+            // TODO: Implement progress view
+            alert('Progress-Ansicht wird noch implementiert.');
         });
     }
 

@@ -19,6 +19,17 @@ This project is a single-page application designed to provide a gamified learnin
 
 There is no backend or build step required.
 
+## Development Setup
+
+For detailed instructions on setting up your development environment on macOS, see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
+
+Quick start:
+
+1. Install [VS Code](https://code.visualstudio.com/) and the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+2. Clone this repository
+3. Open the project in VS Code
+4. Right-click `index.html` and select "Open with Live Server"
+
 ## How to Run Locally
 
 1. Clone the repository.
@@ -28,3 +39,15 @@ There is no backend or build step required.
 ## Deployment
 
 The app is automatically deployed to GitHub Pages whenever changes are pushed to the `main` branch. The deployment typically takes 1-2 minutes to complete.
+
+## Project Documentation
+
+- **[GEMINI.md](GEMINI.md)** - Instructions for AI coding agents (required in root)
+- **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Complete development environment setup guide
+- **[docs/AI_CODING.md](docs/AI_CODING.md)** - Guide to AI-assisted development workflow
+- **[WIP/Learning_Flow_Concept.md](WIP/Learning_Flow_Concept.md)** - Feature planning and implementation roadmap
+- **[WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md)** - Enhancement ideas and future features
+
+## AI-Assisted Development
+
+This project is developed using **GitHub Copilot Agent Mode** with **Gemini 2.0 Flash Experimental**. The AI handles implementation while the human maintainer focuses on content, UX, and testing. See [docs/AI_CODING.md](docs/AI_CODING.md) for details on this workflow.

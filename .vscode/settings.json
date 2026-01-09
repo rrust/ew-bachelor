@@ -1,0 +1,82 @@
+{
+  // Editor settings
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true
+  },
+
+  // Copilot Chat settings
+  "github.copilot.chat.welcomeMessage": "always",
+  "github.copilot.chat.localeOverride": "de",
+
+  // Auto-approve settings for AI agent mode
+  "github.copilot.chat.runCommand.enabled": true,
+
+  // Markdown settings
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+
+  // JavaScript settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // HTML settings
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSON settings
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Files to exclude from explorer
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+
+  // Search settings
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.git": true
+  },
+
+  // Live Server settings
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // Tailwind CSS IntelliSense
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript"
+  },
+  "tailwindCSS.emmetCompletions": true,
+
+  // GitLens settings
+  "gitlens.codeLens.enabled": false,
+
+  // Prettier settings
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.tabWidth": 2
+}

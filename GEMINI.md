@@ -23,6 +23,31 @@ There is no complex setup. Simply open the `index.html` file in a browser. For d
 
 There is no build step. The application runs directly in the browser.
 
+### Linting
+
+Markdown content should be linted using **markdownlint-cli2** via **npx** (no installation required):
+
+```bash
+# Lint all markdown files
+npx markdownlint-cli2 "**/*.md"
+
+# Fix auto-fixable issues
+npx markdownlint-cli2 --fix "**/*.md"
+
+# Lint specific directories
+npx markdownlint-cli2 "content/**/*.md" "WIP/**/*.md"
+
+# Fix specific directories
+npx markdownlint-cli2 --fix "content/**/*.md" "WIP/**/*.md"
+```
+
+**Why lint markdown?**
+
+- Ensures consistent formatting across all content files
+- Catches common markdown syntax errors
+- Improves readability and maintainability
+- Helps content maintainers follow best practices
+
 ### Test
 
 Testing is done by manually interacting with the application in the browser.
@@ -33,11 +58,61 @@ Testing is done by manually interacting with the application in the browser.
 
 ### Content Format
 
-Learning content is defined in Markdown files. A single lecture file contains a **series of learning items**, separated by `---`. Each item begins with a YAML frontmatter block that defines its `type` and other metadata. This allows a lecture to be a sequence of text, images, videos, and self-assessments.
+Learning content is defined in Markdown files with a clear, human-friendly hierarchical structure optimized for maintainability.
 
-The final, graded quiz for a lecture is stored in a separate file (e.g., `lecture-1-quiz.md`) and contains items of type `multiple-choice`.
+**Content Organization:**
 
-**Example: A Multi-Item Lecture File (`lecture-1.md`)**
+```text
+content/
+  modules.json                                    # Module metadata
+  01-ernaehrungslehre-grundlagen/                # Module folder (numbered for order)
+    01-grundlagen-zellbiologie/                  # Lecture folder (numbered for order)
+      lecture.md                                  # Main lecture content
+      quiz.md                                     # Graded quiz questions
+      questions/                                  # Optional: Individual question files
+        01-mitochondrien-funktion.md
+        02-golgi-apparat.md
+    02-makronaehrstoffe-detail/
+      lecture.md
+    03-fette-oele/
+      lecture.md
+```
+
+**Naming Conventions:**
+
+- **Modules:** `NN-descriptive-name/` - Number prefix for ordering, descriptive name for clarity
+- **Lectures:** `NN-descriptive-topic/` - Subfolder containing all lecture materials
+- **Files:** `lecture.md` and `quiz.md` - Standard names, no prefixes needed at this level
+- **Questions (optional):** `NN-topic.md` - Numbered for order within questions subfolder
+
+**Benefits:**
+
+- Clear hierarchy that's easy to navigate manually
+- Numbers only indicate order within their context (not duplicated across levels)
+- Each file has a manageable length
+- Self-documenting structure (folder names describe content)
+- Easy to add new content without code changes
+
+**Module Metadata:**
+All module information is stored in `content/modules.json`:
+
+```json
+{
+  "id": "01-ernaehrungslehre-grundlagen",
+  "title": "Grundlagen der Ernährungslehre",
+  "ects": 6,
+  "status": "unlocked",
+  "order": 1,
+  "description": "Einführung in die Grundlagen der Ernährungswissenschaft"
+}
+```
+
+**Lecture Structure:**
+A `lecture.md` file contains a **series of learning items**, separated by `---`. Each item begins with a YAML frontmatter block that defines its `type` and other metadata. This allows a lecture to be a sequence of text, images, videos, and self-assessments.
+
+The graded quiz for a lecture is stored in `quiz.md` within the same lecture folder and contains items of type `multiple-choice`.
+
+**Example: A Multi-Item Lecture File (`01-grundlagen-zellbiologie.md`)**
 
 ```markdown
 ---
@@ -73,7 +148,7 @@ type: 'learning-content'
 *   **Mitochondrien:** Sind die Kraftwerke der Zelle.
 ```
 
-**Example: A Graded Quiz Question (`lecture-1-quiz.md`)**
+**Example: A Graded Quiz Question (`01-grundlagen-zellbiologie-quiz.md`)**
 
 ```markdown
 ---
@@ -87,12 +162,34 @@ correctAnswer: 'Mitochondrien'
 ---
 ```
 
+**Example: Individual Question File (`01-frage-mitochondrien-funktion.md`)**
+
+```markdown
+---
+type: 'multiple-choice'
+lecture: 'lecture-1'
+topic: 'Grundlagen der Zellbiologie'
+question: 'Was ist die Hauptfunktion der Mitochondrien?'
+options:
+  - 'Proteinsynthese'
+  - 'Energiegewinnung (ATP-Produktion)'
+  - 'Speicherung von Erbinformation'
+  - 'Abbau von Abfallprodukten'
+correctAnswer: 'Energiegewinnung (ATP-Produktion)'
+---
+
+**Erklärung:** Mitochondrien sind die "Kraftwerke" der Zelle.
+```
+
 ### Code Structure
 
 - **`index.html`**: The single HTML file containing the structure for all views.
 - **`app.js`**: The main JavaScript file for application logic, event handling, and DOM manipulation.
 - **`js/`**: A directory for additional JavaScript utilities (e.g., `parser.js`, `progress.js`).
-- **`content/`**: Markdown files containing all learning and quiz materials.
+- **`content/`**: Markdown files and JSON metadata for all learning materials:
+  - `modules.json`: Module metadata (title, ECTS, status, etc.)
+  - `content-list.json`: List of content files to load
+  - `XX-module-name/`: Folders containing lectures and quizzes for each module
 
 ### Progress Tracking
 

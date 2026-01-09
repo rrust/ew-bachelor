@@ -1,0 +1,27 @@
+{
+  "recommendations": [
+    // Essential for development
+    "ritwickdey.LiveServer",
+
+    // Markdown support
+    "yzhang.markdown-all-in-one",
+    "DavidAnson.vscode-markdownlint",
+
+    // Code quality
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+
+    // Tailwind CSS support
+    "bradlc.vscode-tailwindcss",
+
+    // AI coding assistants
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+
+    // Git integration
+    "eamodio.gitlens",
+
+    // Utilities
+    "christian-kohler.path-intellisense"
+  ]
+}

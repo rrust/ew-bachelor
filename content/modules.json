@@ -3,7 +3,7 @@
     "id": "01-ernaehrungslehre-grundlagen",
     "title": "Grundlagen der Ernährungslehre",
     "ects": 6,
-    "status": "unlocked",
+    "status": "freigeschaltet",
     "order": 1,
     "description": "Einführung in die Grundlagen der Ernährungswissenschaft"
   },
@@ -11,7 +11,7 @@
     "id": "02-chemie-grundlagen",
     "title": "Grundlagen der Chemie",
     "ects": 10,
-    "status": "unlocked",
+    "status": "freigeschaltet",
     "order": 2,
     "description": "Chemische Grundlagen für Ernährungswissenschaften"
   },
@@ -19,7 +19,7 @@
     "id": "03-biostatistik-wissenschaftliches-arbeiten",
     "title": "Biostatistik und wissenschaftliches Arbeiten",
     "ects": 10,
-    "status": "unlocked",
+    "status": "freigeschaltet",
     "order": 3,
     "description": "Einführung in statistische Methoden und wissenschaftliche Arbeitstechniken"
   },
@@ -27,7 +27,7 @@
     "id": "04-allgemeine-molekulare-biologie",
     "title": "Allgemeine und molekulare Biologie",
     "ects": 10,
-    "status": "unlocked",
+    "status": "freigeschaltet",
     "order": 4,
     "description": "Biologische Grundlagen auf zellulärer und molekularer Ebene"
   },
@@ -35,7 +35,7 @@
     "id": "05-medizinische-biochemische-grundlagen",
     "title": "Medizinische und biochemische Grundlagen",
     "ects": 16,
-    "status": "unlocked",
+    "status": "freigeschaltet",
     "order": 5,
     "description": "Medizinische und biochemische Grundlagen der Ernährung"
   },
@@ -43,7 +43,7 @@
     "id": "06-chemische-vertiefungen",
     "title": "Chemische Vertiefungen",
     "ects": 12,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 6,
     "description": "Vertiefende Kenntnisse in organischer und anorganischer Chemie"
   },
@@ -51,7 +51,7 @@
     "id": "07-praktische-chemische-vertiefungen",
     "title": "Praktische chemische Vertiefungen",
     "ects": 10,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 7,
     "description": "Laborpraxis und praktische Anwendungen chemischer Methoden"
   },
@@ -59,7 +59,7 @@
     "id": "08-lebensmittelwissenschaften",
     "title": "Lebensmittelwissenschaften",
     "ects": 19,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 8,
     "description": "Wissenschaftliche Grundlagen der Lebensmittelkunde"
   },
@@ -67,7 +67,7 @@
     "id": "09-humanaernaehrung-1",
     "title": "Humanernährung I",
     "ects": 10,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 9,
     "description": "Grundlagen der menschlichen Ernährung"
   },
@@ -75,7 +75,7 @@
     "id": "10-humanaernaehrung-2",
     "title": "Humanernährung II",
     "ects": 10,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 10,
     "description": "Vertiefung in speziellen Aspekten der Humanernährung"
   },
@@ -83,7 +83,7 @@
     "id": "11-lebensmittelsicherheit",
     "title": "Lebensmittelsicherheit",
     "ects": 11,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 11,
     "description": "Hygiene, Toxikologie und rechtliche Aspekte"
   },
@@ -91,7 +91,7 @@
     "id": "12-public-health-nutrition-diaetetik",
     "title": "Public Health Nutrition und Diätetik",
     "ects": 16,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 12,
     "description": "Bevölkerungsernährung und therapeutische Ernährungsberatung"
   },
@@ -99,7 +99,7 @@
     "id": "13-alternatives-pflichtmodul",
     "title": "Alternatives Pflichtmodul",
     "ects": 12,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 13,
     "description": "Wahlmodul aus verschiedenen Spezialisierungen"
   },
@@ -107,7 +107,7 @@
     "id": "14-wissenschaftliches-schreiben-praesentieren",
     "title": "Wissenschaftliches Schreiben und Präsentieren",
     "ects": 13,
-    "status": "locked",
+    "status": "gesperrt",
     "order": 14,
     "description": "Kommunikation wissenschaftlicher Inhalte"
   }

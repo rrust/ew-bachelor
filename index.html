@@ -16,9 +16,25 @@
     </div>
 
     <!-- View for the module map -->
-    <div id="module-map-view" style="display: none;" class="container mx-auto my-12 p-8">
-        <h2 id="welcome-message" class="text-3xl font-bold mb-8 text-center"></h2>
-        <div id="module-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    <div id="module-map-view" style="display: none;">
+        <!-- Application Header -->
+        <header class="bg-white shadow-md mb-8">
+            <div class="container mx-auto px-8 py-4 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-xl font-bold text-gray-800">Bachelor Studium Ernährungswissenschaft</h1>
+                    <span class="text-gray-400">-</span>
+                    <span id="header-greeting" class="text-lg text-blue-600 font-medium"></span>
+                </div>
+                <nav class="flex items-center space-x-6">
+                    <button id="nav-map" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Map</button>
+                    <button id="nav-progress" class="text-gray-700 hover:text-blue-600 font-medium transition duration-200">Progress</button>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="container mx-auto px-8">
+            <div id="module-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
     </div>
 
     <!-- View for a single lecture -->
