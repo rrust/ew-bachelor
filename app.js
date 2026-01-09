@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     quizResults: document.getElementById('quiz-results-view'),
     tools: document.getElementById('tools-view'),
     map: document.getElementById('map-view'),
-    comingSoon: document.getElementById('coming-soon-view')
+    progress: document.getElementById('progress-view')
   };
 
   const buttons = {
@@ -40,9 +40,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     resultsToMap: document.getElementById('results-to-map-button'),
     lectureOverview: document.getElementById('lecture-overview-button'),
     backToPlayer: document.getElementById('back-to-player-button'),
-    backToModuleFromComingSoon: document.getElementById(
-      'back-to-module-from-coming-soon'
-    ),
     // These will be set after headers are injected
     navModule: null,
     navMap: null,
@@ -127,7 +124,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (parts[0] === 'map') {
       route.view = 'map';
     } else if (parts[0] === 'progress') {
-      route.view = 'comingSoon';
+      route.view = 'progress';
     }
 
     return route;
@@ -179,9 +176,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('map');
       renderModuleMap(MODULES, APP_CONTENT);
       return true;
-    } else if (route.view === 'comingSoon') {
+    } else if (route.view === 'progress') {
       updateGreeting();
-      showView('comingSoon');
+      showView('progress');
+      renderProgressDashboard(MODULES, APP_CONTENT);
       return true;
     }
 
@@ -204,7 +202,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('module-map-view', 'moduleMap');
     injectHeader('tools-view', 'tools');
     injectHeader('map-view', 'map');
-    injectHeader('coming-soon-view', 'comingSoon');
+    injectHeader('progress-view', 'progress');
 
     // Load modules metadata from JSON
     MODULES = await loadModules();
@@ -816,12 +814,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       displayLecturesForModule(currentModuleId);
     });
 
-    buttons.backToModuleFromComingSoon.addEventListener('click', () => {
-      loadModuleCards();
-      showView('moduleMap');
-      updateURL('/', 'Module Overview');
-    });
-
     // Header navigation using event delegation to handle all view variants
     document.addEventListener('click', (e) => {
       const target = e.target.closest('button');
@@ -845,8 +837,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       // Progress navigation
       else if (target.id && target.id.startsWith('nav-progress')) {
         updateGreeting();
-        showView('comingSoon');
-        updateURL('/progress', 'Progress (Coming Soon)');
+        showView('progress');
+        renderProgressDashboard(MODULES, APP_CONTENT);
+        updateURL('/progress', 'Lernfortschritt');
       }
 
       // Tools navigation

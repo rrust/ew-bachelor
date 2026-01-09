@@ -13,7 +13,7 @@ function showView(viewName) {
     'quizResults',
     'tools',
     'map',
-    'comingSoon'
+    'progress'
   ];
 
   views.forEach((v) => {
@@ -24,8 +24,6 @@ function showView(viewName) {
         ? 'module-map-view'
         : v === 'quizResults'
         ? 'quiz-results-view'
-        : v === 'comingSoon'
-        ? 'coming-soon-view'
         : `${v}-view`;
 
     const element = document.getElementById(viewId);
@@ -48,7 +46,7 @@ function updateGreeting(userName) {
     'header-greeting',
     'header-greeting-tools',
     'header-greeting-map',
-    'header-greeting-comingSoon'
+    'header-greeting-progress'
   ];
 
   greetingIds.forEach((id) => {

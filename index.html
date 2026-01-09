@@ -456,39 +456,88 @@
       </div>
     </div>
 
-    <!-- View for Coming Soon (Progress placeholder) -->
-    <div id="coming-soon-view" style="display: none">
+    <!-- View for Progress Dashboard -->
+    <div id="progress-view" style="display: none">
       <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-8">
-        <div class="flex flex-col items-center justify-center min-h-[60vh]">
-          <div class="text-center">
-            <svg
-              class="w-24 h-24 mx-auto mb-6 text-blue-600 dark:text-blue-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        <h2 class="text-3xl font-bold mb-8">Dein Lernfortschritt</h2>
+
+        <!-- Overall Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <div
+              class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
-            </svg>
-            <h2 class="text-4xl font-bold mb-4">Coming Soon</h2>
-            <p
-              id="coming-soon-text"
-              class="text-xl text-gray-600 dark:text-gray-400 mb-8"
+              Gesamtfortschritt
+            </div>
+            <div
+              class="text-3xl font-bold text-blue-600 dark:text-blue-400"
+              id="total-progress"
             >
-              Diese Funktion wird gerade entwickelt.
-            </p>
-            <button
-              id="back-to-module-from-coming-soon"
-              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md transition duration-300"
+              0%
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <div
+              class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2"
             >
-              Zurück zur Modulübersicht
-            </button>
+              Module begonnen
+            </div>
+            <div
+              class="text-3xl font-bold text-green-600 dark:text-green-400"
+              id="modules-started"
+            >
+              0 / 0
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <div
+              class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2"
+            >
+              Quizze abgeschlossen
+            </div>
+            <div
+              class="text-3xl font-bold text-purple-600 dark:text-purple-400"
+              id="quizzes-completed"
+            >
+              0 / 0
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <div
+              class="text-gray-500 dark:text-gray-400 text-sm font-medium mb-2"
+            >
+              Durchschnittsscore
+            </div>
+            <div
+              class="text-3xl font-bold text-orange-600 dark:text-orange-400"
+              id="average-score"
+            >
+              0%
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
+          <h3 class="text-2xl font-bold mb-4">🏆 Errungenschaften</h3>
+          <div
+            id="achievements-grid"
+            class="grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            <!-- Achievements will be rendered here -->
+          </div>
+        </div>
+
+        <!-- Module Progress Detail -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-2xl font-bold mb-6">Module im Detail</h3>
+          <div id="module-progress-list" class="space-y-4">
+            <!-- Module progress items will be rendered here -->
           </div>
         </div>
       </div>
@@ -510,6 +559,7 @@
     <script src="js/lecture.js"></script>
     <script src="js/modules.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/progress-view.js"></script>
     <!-- Main app (load last) -->
     <script src="app.js"></script>
   </body>
