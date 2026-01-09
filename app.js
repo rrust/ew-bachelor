@@ -42,24 +42,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     resultsToMap: document.getElementById('results-to-map-button'),
     lectureOverview: document.getElementById('lecture-overview-button'),
     backToPlayer: document.getElementById('back-to-player-button'),
-    navModule: document.getElementById('nav-module'),
-    navMap: document.getElementById('nav-map'),
-    navProgress: document.getElementById('nav-progress'),
-    navTools: document.getElementById('nav-tools'),
-    navModuleTools: document.getElementById('nav-module-tools'),
-    navMapTools: document.getElementById('nav-map-tools'),
-    navProgressTools: document.getElementById('nav-progress-tools'),
-    navModuleComingSoon: document.getElementById('nav-module-coming-soon'),
-    navMapComingSoon: document.getElementById('nav-map-coming-soon'),
-    navProgressComingSoon: document.getElementById('nav-progress-coming-soon'),
-    navToolsComingSoon: document.getElementById('nav-tools-coming-soon'),
     backToModuleFromComingSoon: document.getElementById(
       'back-to-module-from-coming-soon'
     ),
-    themeToggle: document.getElementById('theme-toggle'),
-    themeToggleTools: document.getElementById('theme-toggle-tools'),
-    themeToggleComingSoon: document.getElementById('theme-toggle-coming-soon')
+    // These will be set after headers are injected
+    navModule: null,
+    navMap: null,
+    navProgress: null,
+    navTools: null,
+    themeToggle: null
   };
+
+  // Get references to dynamically created header buttons
+  function refreshHeaderButtons() {
+    buttons.navModule = document.getElementById('nav-module');
+    buttons.navMap = document.getElementById('nav-map');
+    buttons.navProgress = document.getElementById('nav-progress');
+    buttons.navTools = document.getElementById('nav-tools');
+    buttons.themeToggle = document.getElementById('theme-toggle');
+  }
 
   const inputs = {
     name: document.getElementById('name-input'),
@@ -135,11 +136,13 @@ document.addEventListener('DOMContentLoaded', async () => {
           // Show overview for this lecture
           currentModuleId = route.moduleId;
           currentLectureId = route.lectureId;
-          const lecture = APP_CONTENT[route.moduleId]?.lectures[route.lectureId];
+          const lecture =
+            APP_CONTENT[route.moduleId]?.lectures[route.lectureId];
           if (lecture && lecture.items && lecture.items.length > 0) {
             currentLectureItems = lecture.items;
             currentItemIndex = 0;
-            showLectureOverview();
+            showView('lecture'); // Show lecture view first
+            showLectureOverview(); // Then show overview within lecture view
           }
           return true;
         } else if (route.quiz) {
@@ -184,6 +187,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // --- App Initialization ---
   async function init() {
+    // Inject headers into views using components.js
+    injectHeader('module-map-view', 'moduleMap');
+    injectHeader('tools-view', 'tools');
+    injectHeader('coming-soon-view', 'comingSoon');
+
     // Load modules metadata from JSON
     MODULES = await loadModules();
     // Load content
@@ -203,6 +211,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('welcome');
       updateURL('/', 'Welcome');
     }
+
+    // Refresh button references after headers are injected
+    refreshHeaderButtons();
     addEventListeners();
 
     // Handle browser back/forward buttons
@@ -422,6 +433,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Update URL
     const moduleData = MODULES.find((m) => m.id === moduleId);
     updateURL(`/module/${moduleId}`, moduleData?.title || 'Module');
+
+    // Hide player and overview, show lecture list
+    document.getElementById('lecture-player').style.display = 'none';
+    document.getElementById('lecture-overview').style.display = 'none';
+    document.getElementById('lecture-list-container').style.display = 'block';
+    showView('lecture');
 
     const lectureContentDiv = document.getElementById('lecture-content');
     lectureContentDiv.innerHTML = ''; // Clear previous player UI
@@ -754,10 +771,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     overviewContent.innerHTML = '';
 
+    // Clear any existing description container
+    const existingDesc = overviewDescription.parentNode.querySelector('.prose');
+    if (existingDesc && existingDesc !== overviewDescription) {
+      existingDesc.remove();
+    }
+
     // Set title and description
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     const moduleData = MODULES.find((m) => m.id === currentModuleId);
     overviewTitle.textContent = lecture?.topic || 'Vorlesungsübersicht';
+
+    // Show lecture description if available
+    if (lecture?.descriptionHtml) {
+      const descContainer = document.createElement('div');
+      descContainer.className = 'prose dark:prose-invert mb-6 text-base';
+      descContainer.innerHTML = lecture.descriptionHtml;
+      overviewDescription.parentNode.insertBefore(
+        descContainer,
+        overviewDescription.nextSibling
+      );
+    }
 
     // Generate description based on content
     const totalItems = currentLectureItems.length;
@@ -890,7 +924,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('lecture-player').style.display = 'none';
     document.getElementById('lecture-overview').style.display = 'flex';
-    
+
     // Update URL for overview
     updateURL(
       `/module/${currentModuleId}/lecture/${currentLectureId}/overview`,
@@ -1093,8 +1127,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     buttons.backToPlayer.addEventListener('click', () => {
-      document.getElementById('lecture-overview').style.display = 'none';
-      document.getElementById('lecture-player').style.display = 'flex';
+      // Navigate back to lecture list
+      displayLecturesForModule(currentModuleId);
     });
 
     buttons.backToLecture.addEventListener('click', () => {
@@ -1145,93 +1179,48 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     });
 
-    buttons.navModule.addEventListener('click', () => {
-      loadModuleCards();
-      showView('moduleMap');
-      updateURL('/', 'Module Overview');
-    });
-
-    buttons.navMap.addEventListener('click', () => {
-      updateGreeting();
-      showView('comingSoon');
-      updateURL('/map', 'Map (Coming Soon)');
-    });
-
-    buttons.navProgress.addEventListener('click', () => {
-      updateGreeting();
-      showView('comingSoon');
-      updateURL('/progress', 'Progress (Coming Soon)');
-    });
-
-    buttons.navTools.addEventListener('click', () => {
-      updateGreeting();
-      showView('tools');
-      updateURL('/tools', 'Tools');
-    });
-
-    buttons.navModuleTools.addEventListener('click', () => {
-      loadModuleCards();
-      showView('moduleMap');
-      updateURL('/', 'Module Overview');
-    });
-
-    buttons.navMapTools.addEventListener('click', () => {
-      updateGreeting();
-      showView('comingSoon');
-      updateURL('/map', 'Map (Coming Soon)');
-    });
-
-    buttons.navProgressTools.addEventListener('click', () => {
-      updateGreeting();
-      showView('comingSoon');
-      updateURL('/progress', 'Progress (Coming Soon)');
-    });
-
-    // Coming Soon View Navigation
-    buttons.navModuleComingSoon.addEventListener('click', () => {
-      loadModuleCards();
-      showView('moduleMap');
-      updateURL('/', 'Module Overview');
-    });
-
-    buttons.navMapComingSoon.addEventListener('click', () => {
-      updateGreeting();
-      showView('comingSoon');
-      updateURL('/map', 'Map (Coming Soon)');
-    });
-
-    buttons.navProgressComingSoon.addEventListener('click', () => {
-      updateGreeting();
-      showView('comingSoon');
-      updateURL('/progress', 'Progress (Coming Soon)');
-    });
-
-    buttons.navToolsComingSoon.addEventListener('click', () => {
-      updateGreeting();
-      showView('tools');
-      updateURL('/tools', 'Tools');
-    });
-
-    buttons.backToModuleFromComingSoon.addEventListener('click', () => {
-      loadModuleCards();
-      showView('moduleMap');
-      updateURL('/', 'Module Overview');
-    });
-
-    buttons.themeToggle.addEventListener('click', () => {
-      toggleTheme();
-    });
-
-    if (buttons.themeToggleTools) {
-      buttons.themeToggleTools.addEventListener('click', () => {
-        toggleTheme();
+    if (buttons.navModule) {
+      buttons.navModule.addEventListener('click', () => {
+        loadModuleCards();
+        showView('moduleMap');
+        updateURL('/', 'Module Overview');
       });
     }
 
-    if (buttons.themeToggleComingSoon) {
-      buttons.themeToggleComingSoon.addEventListener('click', () => {
-        toggleTheme();
+    if (buttons.navMap) {
+      buttons.navMap.addEventListener('click', () => {
+        updateGreeting();
+        showView('comingSoon');
+        updateURL('/map', 'Map (Coming Soon)');
       });
+    }
+
+    if (buttons.navProgress) {
+      buttons.navProgress.addEventListener('click', () => {
+        updateGreeting();
+        showView('comingSoon');
+        updateURL('/progress', 'Progress (Coming Soon)');
+      });
+    }
+
+    if (buttons.navTools) {
+      buttons.navTools.addEventListener('click', () => {
+        updateGreeting();
+        showView('tools');
+        updateURL('/tools', 'Tools');
+      });
+    }
+
+    if (buttons.backToModuleFromComingSoon) {
+      buttons.backToModuleFromComingSoon.addEventListener('click', () => {
+        loadModuleCards();
+        showView('moduleMap');
+        updateURL('/', 'Module Overview');
+      });
+    }
+
+    if (buttons.themeToggle) {
+      buttons.themeToggle.addEventListener('click', toggleTheme);
     }
   }
 

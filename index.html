@@ -64,79 +64,7 @@
 
     <!-- View for the module map -->
     <div id="module-map-view" style="display: none">
-      <!-- Application Header -->
-      <header class="bg-white dark:bg-gray-800 shadow-md mb-8">
-        <div
-          class="container mx-auto px-8 py-4 flex items-center justify-between"
-        >
-          <div class="flex items-center space-x-2">
-            <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">
-              Bachelor Studium Ernährungswissenschaften
-            </h1>
-            <span class="text-gray-400 dark:text-gray-500">-</span>
-            <span
-              id="header-greeting"
-              class="text-lg text-blue-600 dark:text-blue-400 font-medium"
-            ></span>
-          </div>
-          <nav class="flex items-center space-x-6">
-            <button
-              id="nav-module"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Module
-            </button>
-            <button
-              id="nav-map"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Map
-            </button>
-            <button
-              id="nav-progress"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Progress
-            </button>
-            <button
-              id="nav-tools"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Tools
-            </button>
-            <button
-              id="theme-toggle"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200"
-              title="Farbschema umschalten"
-            >
-              <!-- Sun icon (shown in dark mode) -->
-              <svg
-                id="theme-toggle-light-icon"
-                class="hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <!-- Moon icon (shown in light mode) -->
-              <svg
-                id="theme-toggle-dark-icon"
-                class="w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-            </button>
-          </nav>
-        </div>
-      </header>
+      <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-8">
         <div
@@ -253,7 +181,7 @@
             id="back-to-player-button"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
           >
-            &larr; Zurück zur Vorlesung
+            &larr; Zurück zur Vorlesungsübersicht
           </button>
         </div>
 
@@ -364,77 +292,7 @@
 
     <!-- View for Tools -->
     <div id="tools-view" style="display: none">
-      <!-- Application Header -->
-      <header class="bg-white dark:bg-gray-800 shadow-md mb-8">
-        <div
-          class="container mx-auto px-8 py-4 flex items-center justify-between"
-        >
-          <div class="flex items-center space-x-2">
-            <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">
-              Bachelor Studium Ernährungswissenschaften
-            </h1>
-            <span class="text-gray-400 dark:text-gray-500">-</span>
-            <span
-              id="header-greeting-tools"
-              class="text-lg text-blue-600 dark:text-blue-400 font-medium"
-            ></span>
-          </div>
-          <nav class="flex items-center space-x-6">
-            <button
-              id="nav-module-tools"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Module
-            </button>
-            <button
-              id="nav-map-tools"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Map
-            </button>
-            <button
-              id="nav-progress-tools"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Progress
-            </button>
-            <button
-              id="nav-tools-active"
-              class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-bold transition duration-200"
-            >
-              Tools
-            </button>
-            <button
-              id="theme-toggle-tools"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200"
-              title="Farbschema umschalten"
-            >
-              <!-- Sun icon (shown in dark mode) -->
-              <svg
-                class="theme-toggle-light-icon hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <!-- Moon icon (shown in light mode) -->
-              <svg
-                class="theme-toggle-dark-icon w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-            </button>
-          </nav>
-        </div>
-      </header>
+      <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-8">
         <h2 class="text-3xl font-bold mb-8">Tools</h2>
@@ -505,75 +363,7 @@
 
     <!-- View for Coming Soon (Map/Progress placeholders) -->
     <div id="coming-soon-view" style="display: none">
-      <!-- Application Header -->
-      <header class="bg-white dark:bg-gray-800 shadow-md mb-8">
-        <div
-          class="container mx-auto px-8 py-4 flex items-center justify-between"
-        >
-          <div class="flex items-center space-x-2">
-            <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">
-              Bachelor Studium Ernährungswissenschaften
-            </h1>
-            <span class="text-gray-400 dark:text-gray-500">-</span>
-            <span
-              id="header-greeting-coming-soon"
-              class="text-lg text-blue-600 dark:text-blue-400 font-medium"
-            ></span>
-          </div>
-          <nav class="flex items-center space-x-6">
-            <button
-              id="nav-module-coming-soon"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Module
-            </button>
-            <button
-              id="nav-map-coming-soon"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Map
-            </button>
-            <button
-              id="nav-progress-coming-soon"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Progress
-            </button>
-            <button
-              id="nav-tools-coming-soon"
-              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200"
-            >
-              Tools
-            </button>
-            <button
-              id="theme-toggle-coming-soon"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200"
-              title="Farbschema umschalten"
-            >
-              <svg
-                class="theme-toggle-light-icon hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <svg
-                class="theme-toggle-dark-icon w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-            </button>
-          </nav>
-        </div>
-      </header>
+      <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-8">
         <div class="flex flex-col items-center justify-center min-h-[60vh]">
@@ -612,6 +402,8 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/views.js"></script>
     <script src="js/parser.js"></script>
     <script src="js/progress.js"></script>
     <script src="app.js"></script>
