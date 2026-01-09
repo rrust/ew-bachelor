@@ -38,7 +38,7 @@
         'self-assessment-mc': ['type', 'question', 'options', 'correctAnswer'],
         'learning-content': ['type'],
         'youtube-video': ['type', 'url'],
-        'image': ['type', 'url', 'alt'],
+        image: ['type', 'url', 'alt'],
         'mermaid-diagram': ['type']
       };
 
@@ -95,8 +95,11 @@
           const content = await response.text();
 
           // Detect file type
-          const isLectureMetadata = filePath.endsWith('/lecture.md') && !filePath.includes('/lecture-items/');
-          const isQuizMetadata = filePath.endsWith('/quiz.md') && !filePath.includes('/questions/');
+          const isLectureMetadata =
+            filePath.endsWith('/lecture.md') &&
+            !filePath.includes('/lecture-items/');
+          const isQuizMetadata =
+            filePath.endsWith('/quiz.md') && !filePath.includes('/questions/');
           const isLectureItem = filePath.includes('/lecture-items/');
           const isQuizQuestion = filePath.includes('/questions/');
 
@@ -129,7 +132,7 @@
         }
 
         const attrs = doc.attributes;
-        
+
         // Check required metadata fields
         if (!attrs.topic) {
           result.errors.push(`Pflichtfeld 'topic' fehlt`);
@@ -146,7 +149,7 @@
         }
 
         const attrs = doc.attributes;
-        
+
         // Check required metadata fields
         if (!attrs.description) {
           result.errors.push(`Pflichtfeld 'description' fehlt`);
