@@ -22,6 +22,11 @@ This project uses two AI assistants with distinct responsibilities:
 
 As the **app development agent**, focus on:
 
+### Communication
+
+Development language is english, AI conversations about the code are in english.
+Content development is in german, AI conversations about content are in german.
+
 ### Application Code
 
 - `index.html` - Main UI structure
