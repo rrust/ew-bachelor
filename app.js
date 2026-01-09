@@ -553,52 +553,48 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Show lecture description if available
     if (lecture?.descriptionHtml) {
-      const descContainer = document.createElement('div');
-      descContainer.className = 'prose dark:prose-invert mb-6 text-base';
-      descContainer.innerHTML = lecture.descriptionHtml;
-      overviewDescription.parentNode.insertBefore(
-        descContainer,
-        overviewDescription.nextSibling
-      );
+      overviewDescription.innerHTML = lecture.descriptionHtml;
+    } else {
+      // Generate description based on content
+      const totalItems = lectureState.currentItems.length;
+      const contentCount = lectureState.currentItems.filter(
+        (i) => i.type === 'learning-content'
+      ).length;
+      const questionCount = lectureState.currentItems.filter(
+        (i) => i.type === 'self-assessment-mc'
+      ).length;
+      const videoCount = lectureState.currentItems.filter(
+        (i) => i.type === 'youtube-video'
+      ).length;
+      const imageCount = lectureState.currentItems.filter(
+        (i) => i.type === 'image'
+      ).length;
+      const diagramCount = lectureState.currentItems.filter(
+        (i) => i.type === 'mermaid-diagram'
+      ).length;
+
+      const descParts = [];
+      if (contentCount > 0)
+        descParts.push(
+          `${contentCount} Lerninhalt${contentCount > 1 ? 'e' : ''}`
+        );
+      if (questionCount > 0)
+        descParts.push(
+          `${questionCount} Selbsttest${questionCount > 1 ? 's' : ''}`
+        );
+      if (videoCount > 0)
+        descParts.push(`${videoCount} Video${videoCount > 1 ? 's' : ''}`);
+      if (imageCount > 0)
+        descParts.push(`${imageCount} Bild${imageCount > 1 ? 'er' : ''}`);
+      if (diagramCount > 0)
+        descParts.push(
+          `${diagramCount} Diagramm${diagramCount > 1 ? 'e' : ''}`
+        );
+
+      overviewDescription.textContent = `${totalItems} Schritte insgesamt • ${descParts.join(
+        ' • '
+      )}`;
     }
-
-    // Generate description based on content
-    const totalItems = lectureState.currentItems.length;
-    const contentCount = lectureState.currentItems.filter(
-      (i) => i.type === 'learning-content'
-    ).length;
-    const questionCount = lectureState.currentItems.filter(
-      (i) => i.type === 'self-assessment-mc'
-    ).length;
-    const videoCount = lectureState.currentItems.filter(
-      (i) => i.type === 'youtube-video'
-    ).length;
-    const imageCount = lectureState.currentItems.filter(
-      (i) => i.type === 'image'
-    ).length;
-    const diagramCount = lectureState.currentItems.filter(
-      (i) => i.type === 'mermaid-diagram'
-    ).length;
-
-    const descParts = [];
-    if (contentCount > 0)
-      descParts.push(
-        `${contentCount} Lerninhalt${contentCount > 1 ? 'e' : ''}`
-      );
-    if (questionCount > 0)
-      descParts.push(
-        `${questionCount} Selbsttest${questionCount > 1 ? 's' : ''}`
-      );
-    if (videoCount > 0)
-      descParts.push(`${videoCount} Video${videoCount > 1 ? 's' : ''}`);
-    if (imageCount > 0)
-      descParts.push(`${imageCount} Bild${imageCount > 1 ? 'er' : ''}`);
-    if (diagramCount > 0)
-      descParts.push(`${diagramCount} Diagramm${diagramCount > 1 ? 'e' : ''}`);
-
-    overviewDescription.textContent = `${totalItems} Schritte insgesamt • ${descParts.join(
-      ' • '
-    )}`;
 
     lectureState.currentItems.forEach((item, index) => {
       const card = document.createElement('div');
