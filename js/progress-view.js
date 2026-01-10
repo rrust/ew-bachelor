@@ -241,7 +241,9 @@ function renderModuleProgressList(modules, content, progress) {
               </div>
             </div>
             <div class="min-w-0">
-              <div class="font-bold text-base md:text-lg truncate">${module.title}</div>
+              <div class="font-bold text-base md:text-lg truncate">${
+                module.title
+              }</div>
               <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400">${
                 module.ects
               } ECTS • ${
