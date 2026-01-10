@@ -14,10 +14,23 @@ function initSwipeGestures(element, callbacks, options = {}) {
   let touchEndX = 0;
   let touchEndY = 0;
   let isSwiping = false;
+  let isPinching = false;
+  let isZoomed = false;
 
+  // Track pinch-to-zoom state
   element.addEventListener(
     'touchstart',
     (e) => {
+      // Detect multi-touch (pinch gesture starting)
+      if (e.touches.length > 1) {
+        isPinching = true;
+        return;
+      }
+
+      // Don't start swipe if zoomed in
+      if (isZoomed) return;
+
+      isPinching = false;
       touchStartX = e.changedTouches[0].screenX;
       touchStartY = e.changedTouches[0].screenY;
       isSwiping = false;
@@ -34,6 +47,16 @@ function initSwipeGestures(element, callbacks, options = {}) {
   element.addEventListener(
     'touchmove',
     (e) => {
+      // Detect multi-touch (pinch gesture)
+      if (e.touches.length > 1) {
+        isPinching = true;
+        isZoomed = true; // Assume zooming in
+        return;
+      }
+
+      // Don't track swipe if pinching or zoomed
+      if (isPinching || isZoomed) return;
+
       if (!animateElement) return;
 
       const currentX = e.changedTouches[0].screenX;
@@ -58,12 +81,49 @@ function initSwipeGestures(element, callbacks, options = {}) {
   element.addEventListener(
     'touchend',
     (e) => {
+      // If was pinching, check if we're back to no zoom
+      if (isPinching) {
+        isPinching = false;
+        // Check zoom state after a small delay
+        setTimeout(() => {
+          checkZoomState();
+        }, 100);
+        return;
+      }
+
+      // Don't trigger swipe if zoomed
+      if (isZoomed) {
+        // Check if zoom was reset
+        checkZoomState();
+        return;
+      }
+
       touchEndX = e.changedTouches[0].screenX;
       touchEndY = e.changedTouches[0].screenY;
       handleSwipe();
     },
     { passive: true }
   );
+
+  /**
+   * Check if the page is zoomed by comparing visual viewport to layout viewport
+   */
+  function checkZoomState() {
+    if (window.visualViewport) {
+      // visualViewport.scale > 1 means zoomed in
+      isZoomed = window.visualViewport.scale > 1.05; // Small tolerance
+    } else {
+      // Fallback: assume not zoomed if API not available
+      isZoomed = false;
+    }
+  }
+
+  // Listen for viewport scale changes
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', () => {
+      checkZoomState();
+    });
+  }
 
   function handleSwipe() {
     const deltaX = touchEndX - touchStartX;
