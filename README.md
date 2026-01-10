@@ -28,15 +28,15 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 
 ## App Development
 
+→ **[docs/APP_CONCEPT.md](docs/APP_CONCEPT.md)** - Was die App macht  
 → **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Setup & Tech Stack  
 → **[GEMINI.md](GEMINI.md)** - AI Coding Instructions
 
 ## Planning & Reference
 
 **Konzepte:**
-- [Achievement_System_Concept.md](WIP/Achievement_System_Concept.md) - Achievement System
-- [Learning_Flow_Concept.md](WIP/Learning_Flow_Concept.md) - Feature Planning
-- [Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
+- [docs/ACHIEVEMENT_SYSTEM.md](docs/ACHIEVEMENT_SYSTEM.md) - Achievement System Design
+- [WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
 
 **Referenz:**
 - [studium/](studium/) - Curriculum-Materialien
