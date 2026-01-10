@@ -17,8 +17,10 @@ Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 | Self-Assessment     | `lecture-items/NN-name.md`  | [→ Vorlage](#self-assessment-in-lecturemd)                     |
 | Lerninhalt (Text)   | `lecture-items/NN-name.md`  | [→ Vorlage](#learning-content-in-lecturemd)                    |
 | YouTube Video       | `lecture-items/NN-name.md`  | [→ Vorlage](#youtube-video-in-lecturemd)                       |
+| External Video      | `lecture-items/NN-name.md`  | [→ Vorlage](#external-video-in-lecturemd)                      |
 | Bild                | `lecture-items/NN-name.md`  | [→ Vorlage](#image-in-lecturemd)                               |
 | Mermaid Diagramm    | `lecture-items/NN-name.md`  | [→ Vorlage](#mermaid-diagram-in-lecturemd)                     |
+| Balance Equation    | `lecture-items/NN-name.md`  | [→ Vorlage](#balance-equation-in-lecturemd)                    |
 
 ### Kritische YAML-Regeln
 
@@ -182,6 +184,36 @@ title: 'Video-Titel (optional)'
 - Kurz-URLs (youtu.be) werden auch unterstützt
 - Video wird responsive eingebettet (16:9 Seitenverhältnis)
 
+## External Video (in lecture.md)
+
+Für externe Videos, die Login erfordern (z.B. Moodle, LMS):
+
+```markdown
+---
+type: 'external-video'
+url: 'https://moodle.univie.ac.at/mod/page/view.php?id=12345'
+title: 'Vorlesung 1: Materie und Messen'
+description: 'Öffnet die Uni-Wien Moodle-Seite (Login erforderlich)'
+duration: '45 min'
+---
+```
+
+**Felder:**
+
+| Feld          | Pflicht | Beschreibung                                           |
+| ------------- | ------- | ------------------------------------------------------ |
+| `type`        | Ja      | Muss `'external-video'` sein                           |
+| `url`         | Ja      | Vollständige URL zum externen Video                    |
+| `title`       | Nein    | Titel des Videos (Standard: "Externes Video")          |
+| `description` | Nein    | Beschreibung/Hinweis (Standard: "Öffnet in neuem Tab") |
+| `duration`    | Nein    | Geschätzte Dauer (z.B. "45 min")                       |
+
+**Wichtig:**
+
+- Link öffnet in neuem Tab
+- Benutzer wird aufgefordert, nach dem Ansehen zurückzukehren
+- Ideal für Uni-Videos, die Authentifizierung erfordern
+
 ## Image (in lecture.md)
 
 ```markdown
@@ -236,6 +268,65 @@ graph LR
     B --> C[Citratzyklus]
     C --> D[Atmungskette]
     D --> E[ATP]
+```
+
+## Balance Equation (in lecture.md)
+
+Interaktive Übung zum Ausgleichen chemischer Gleichungen:
+
+```markdown
+---
+type: 'balance-equation'
+title: 'Wassersynthese'
+reactants:
+  - formula: 'H2'
+    coefficient: 2
+  - formula: 'O2'
+    coefficient: 1
+products:
+  - formula: 'H2O'
+    coefficient: 2
+hints:
+  - 'Zähle zuerst die Sauerstoff-Atome auf beiden Seiten'
+  - 'Ein O2-Molekül hat 2 Sauerstoff-Atome'
+explanation: 'Die Gleichung ist ausgeglichen: 4 H-Atome und 2 O-Atome auf jeder Seite.'
+---
+```
+
+**Felder:**
+
+| Feld          | Pflicht | Beschreibung                                       |
+| ------------- | ------- | -------------------------------------------------- |
+| `type`        | Ja      | Muss `'balance-equation'` sein                     |
+| `reactants`   | Ja      | Liste der Edukte mit `formula` und `coefficient`   |
+| `products`    | Ja      | Liste der Produkte mit `formula` und `coefficient` |
+| `title`       | Nein    | Überschrift der Übung                              |
+| `hints`       | Nein    | Liste von Hinweisen (ausklappbar)                  |
+| `explanation` | Nein    | Erklärung bei richtiger Lösung                     |
+
+**Formel-Notation:**
+
+- Im YAML: ASCII-Notation verwenden (`H2`, `O2`, `Fe2O3`, `CH4`)
+- KaTeX/mhchem rendert automatisch: H2 → H₂, Fe2O3 → Fe₂O₃
+- Unterstützt: Subscripts, Ionenladungen (Na+, Cl-), Reaktionspfeile
+
+**Beispiel: Methanverbrennung (schwieriger):**
+
+```markdown
+---
+type: 'balance-equation'
+title: 'Methanverbrennung'
+reactants:
+  - formula: 'CH4'
+    coefficient: 1
+  - formula: 'O2'
+    coefficient: 2
+products:
+  - formula: 'CO2'
+    coefficient: 1
+  - formula: 'H2O'
+    coefficient: 2
+---
 ```
 
 ## Vollständige Vorlesung (lecture.md)

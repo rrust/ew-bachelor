@@ -1,19 +1,23 @@
 # Kapitel 1: Materie und Messen
+
 *Basierend auf den Vorlesungsunterlagen von Kotz, Treichel, Townsend, Mortimer & Müller.*
 
 ## 1. Organisatorische Grundlagen und Einführung
+
 Zu Beginn des Semesters sind einige logistische Eckdaten für das erfolgreiche Bestehen des Moduls entscheidend. [cite_start]Die primäre Kontaktperson für administrative oder inhaltliche Rückfragen ist Michael Malarek (michael.malarek@univie.ac.at), zu finden in der Währingerstrasse 42, Wolkenflügel 1. Obergeschoß, Zimmer W2154 [cite: 23-25].
 
 Als begleitende Literatur wird das Lehrbuch *„Chemie: Das Basiswissen der Chemie“* von Charles E. Mortimer und Ulrich Müller (Thieme Verlag, 10. Auflage) empfohlen. Für den Zugriff auf digitale Lernmaterialien (Moodle) ist eine Anmeldung über Ufind zwingend erforderlich. Bitte beachten Sie, dass am 28.10. und 30.10. keine Vorlesungen oder Rechenübungen stattfinden. Die Prüfung erfolgt im Single-Choice-Format, wobei eine Quote von 60% korrekt beantworteter Fragen zum Bestehen notwendig ist.
 
 ### Definition der Chemie
+
 Chemie ist weit mehr als das Hantieren im Labor. Sie ist definiert als die Wissenschaft, die sich mit der Charakterisierung, Zusammensetzung und Umwandlung von Stoffen befasst. Ein zentraler Aspekt ist dabei die Untersuchung der Energieveränderungen, die mit diesen stofflichen Umwandlungen einhergehen.
 
 Um die Chemie zu verstehen, müssen zwei Grundbegriffe definiert werden:
-1.  **Materie:** Dies bezeichnet alles, was eine Masse besitzt und Raum einnimmt.
-2.  **Energie:** Dies ist die Kapazität eines Systems, Arbeit zu leisten oder Wärme zu übertragen.
+1. **Materie:** Dies bezeichnet alles, was eine Masse besitzt und Raum einnimmt.
+2. **Energie:** Dies ist die Kapazität eines Systems, Arbeit zu leisten oder Wärme zu übertragen.
 
 ### Wissenschaftliche Methodik und Gesetzmäßigkeiten
+
 Der Erkenntnisgewinn in der Chemie folgt der wissenschaftlichen Methode: Aus Beobachtungen werden Hypothesen gebildet. [cite_start]Diese werden durch Experimente überprüft, was zur Formulierung von Theorien führt [cite: 47-53]. Wenn sich ein beobachtetes Verhalten von Materie generell bestätigt und keine Ausnahmen bekannt sind, spricht man von einem **Naturgesetz** oder physikalischen Gesetz.
 
 Drei fundamentale Gesetze bilden das Rückgrat der chemischen Energetik und Massenbilanz:
@@ -28,22 +32,26 @@ Drei fundamentale Gesetze bilden das Rückgrat der chemischen Energetik und Mass
 ## 2. Die Bausteine der Materie: Atome und Elemente
 
 ### Das Periodensystem der Elemente (PSE)
+
 Das Periodensystem ist das zentrale Ordnungssystem der Chemie. [cite_start]Es listet alle chemischen Elemente, ihre Namen und Symbole auf [cite: 146-149]. Aktuell sind 118 Elemente bekannt. Historisch maßgeblich entwickelt wurde es von Dmitri Mendeleev (1834–1907) und Lothar Meyer (1830–1895). [cite_start]Eine besondere Ehre wurde Glenn Seaborg zuteil: Er entdeckte 8 neue Elemente und ist die einzige Person, nach der zu Lebzeiten ein Element (Seaborgium) benannt wurde [cite: 166-174].
 
 [cite_start]Die Elemente im PSE werden in drei Hauptkategorien unterteilt[cite: 71, 73, 76]:
-1.  **Metalle (Metals):** Die größte Gruppe (links und mittig im PSE, blau dargestellt), z.B. Natrium (Na), Eisen (Fe), Kupfer (Cu).
-2.  **Halbmetalle (Metalloids):** Die Grenzgänger mit Eigenschaften zwischen Metallen und Nichtmetallen (grün dargestellt), z.B. Silizium (Si), Arsen (As).
-3.  **Nichtmetalle (Nonmetals):** Zu finden auf der rechten Seite (gelb dargestellt), z.B. Sauerstoff (O), Chlor (Cl), sowie Wasserstoff (H).
+1. **Metalle (Metals):** Die größte Gruppe (links und mittig im PSE, blau dargestellt), z.B. Natrium (Na), Eisen (Fe), Kupfer (Cu).
+2. **Halbmetalle (Metalloids):** Die Grenzgänger mit Eigenschaften zwischen Metallen und Nichtmetallen (grün dargestellt), z.B. Silizium (Si), Arsen (As).
+3. **Nichtmetalle (Nonmetals):** Zu finden auf der rechten Seite (gelb dargestellt), z.B. Sauerstoff (O), Chlor (Cl), sowie Wasserstoff (H).
 
 ### Definition des chemischen Elements
+
 Was genau ist ein Element? [cite_start]Robert Boyle definierte bereits 1661 in *"The Sceptical Chymist"*, dass Elemente primitive, einfache Körper sind, die nicht aus anderen Körpern zusammengesetzt sind und in die alle gemischten Körper letztlich zerlegt werden[cite: 188, 191]. Modern ausgedrückt ist ein Element ein chemisch nicht weiter trennbarer Reinstoff.
 
 ### Der Aufbau des Atoms
+
 Jedes Element besteht aus Atomen. [cite_start]Ein Atom ist strukturell zweigeteilt [cite: 195-197]:
-1.  [cite_start]**Der Kern (Nucleus):** Er befindet sich im Zentrum, ist sehr klein und dicht, und enthält Protonen und Neutronen[cite: 196, 198].
-2.  **Die Elektronenhülle (Electron cloud):** Dies ist der Raum um den Kern, in dem sich die Elektronen aufhalten.
+1. [cite_start]**Der Kern (Nucleus):** Er befindet sich im Zentrum, ist sehr klein und dicht, und enthält Protonen und Neutronen[cite: 196, 198].
+2. **Die Elektronenhülle (Electron cloud):** Dies ist der Raum um den Kern, in dem sich die Elektronen aufhalten.
 
 ### Moleküle und Verbindungen
+
 Atome verbinden sich zu **chemischen Verbindungen**. Diese sind aus verschiedenen Atomen zusammengesetzt und können chemisch wieder in diese gespalten werden.
 Ein **Molekül** ist das kleinste Teilchen eines bestimmten Reinstoffes, das noch die chemischen Eigenschaften dieses Stoffes besitzt. Die Zusammensetzung wird durch eine **molekulare Formel** beschrieben.
 
@@ -55,11 +63,12 @@ Wenn Elemente reagieren, bilden sie Verbindungen mit völlig neuen Eigenschaften
 ---
 
 ## 3. Betrachtungsebenen der Chemie
+
 [cite_start]Ein essenzielles Konzept für das Verständnis der Chemie ist die Unterscheidung zwischen drei Betrachtungsebenen [cite: 237-242]:
 
-1.  **Makroskopisch:** Das, was wir mit bloßem Auge sehen und erfahren (z.B. ein Eisberg, kochendes Wasser, ein rostiges Metall).
-2.  **Submikroskopisch (Teilchenebene):** Die Ebene der Atome und Moleküle, die wir nicht sehen können, aber verstehen müssen, um die makroskopischen Phänomene zu erklären.
-3.  **Symbolisch:** Die Verwendung von chemischen Symbolen und Formeln (z.B. $H_2O$), um die beiden anderen Welten zu beschreiben.
+1. **Makroskopisch:** Das, was wir mit bloßem Auge sehen und erfahren (z.B. ein Eisberg, kochendes Wasser, ein rostiges Metall).
+2. **Submikroskopisch (Teilchenebene):** Die Ebene der Atome und Moleküle, die wir nicht sehen können, aber verstehen müssen, um die makroskopischen Phänomene zu erklären.
+3. **Symbolisch:** Die Verwendung von chemischen Symbolen und Formeln (z.B. $H_2O$), um die beiden anderen Welten zu beschreiben.
 
 Betrachten wir Wasser ($H_2O$):
 * *Makroskopisch:* Wir sehen flüssiges Wasser, Eis oder Dampf.
@@ -72,17 +81,19 @@ Betrachten wir Wasser ($H_2O$):
 
 [cite_start]Materie besteht kinetisch betrachtet aus sich ständig bewegenden Atomen und Molekülen [cite: 271-272]. [cite_start]Wir unterscheiden drei klassische Aggregatzustände [cite: 289-295]:
 
-1.  **Feststoffe (Solids):** Sie besitzen eine starre Gestalt und ein festes Volumen. Ihre äußere Form spiegelt oft die innere, geordnete atomare Struktur wider (z.B. Kristalle). Dieser Zustand ist wissenschaftlich gut verstanden.
-2.  **Flüssigkeiten (Liquids):** Sie haben ein festes Volumen, aber keine feste Gestalt; sie passen sich dem Behälter an, müssen ihn aber nicht füllen. Dieser Zustand ist komplex und teilweise nicht vollständig verstanden.
-3.  **Gase (Gases):** Sie haben weder feste Form noch festes Volumen und breiten sich aus, um jeden Behälter vollständig zu füllen. Theoretisch ist dieser Zustand sehr gut verstanden.
+1. **Feststoffe (Solids):** Sie besitzen eine starre Gestalt und ein festes Volumen. Ihre äußere Form spiegelt oft die innere, geordnete atomare Struktur wider (z.B. Kristalle). Dieser Zustand ist wissenschaftlich gut verstanden.
+2. **Flüssigkeiten (Liquids):** Sie haben ein festes Volumen, aber keine feste Gestalt; sie passen sich dem Behälter an, müssen ihn aber nicht füllen. Dieser Zustand ist komplex und teilweise nicht vollständig verstanden.
+3. **Gase (Gases):** Sie haben weder feste Form noch festes Volumen und breiten sich aus, um jeden Behälter vollständig zu füllen. Theoretisch ist dieser Zustand sehr gut verstanden.
 
 ### Physikalische vs. Chemische Eigenschaften & Veränderungen
+
 * **Physikalische Eigenschaften** können beobachtet werden, ohne die chemische Identität des Stoffes zu ändern. [cite_start]Beispiele sind Farbe, Schmelzpunkt, Siedepunkt und Geruch [cite: 298-302].
     * [cite_start]*Physikalische Veränderungen* ändern nur den Zustand, nicht die Substanz (z.B. Kochen, Schmelzen, Auflösen von Zucker in Wasser) [cite: 305-310].
 * **Chemische Eigenschaften** beschreiben die Fähigkeit eines Stoffes, sich in andere Stoffe umzuwandeln.
-    * [cite_start]*Chemische Veränderungen (Reaktionen)* transformieren Atome/Moleküle in neue Substanzen (z.B. Verbrennung von Wasserstoff zu Wasser, Rosten von Eisen)[cite: 433].
+    * [cite_start]*Chemische Veränderungen (Reaktionen)* transformieren Atome/Moleküle in neue Substanzen [z.B. Verbrennung von Wasserstoff zu Wasser, Rosten von Eisen](cite: 433).
 
 ### Klassifizierung von Materie
+
 [cite_start]Materie kann in **Reinstoffe** und **Mischungen** unterteilt werden [cite: 314-322]:
 * **Reinstoffe:** Bestehen nur aus einer Art von Materie (Elemente oder Verbindungen). Wasser oder Gold sind Reinstoffe.
 * **Mischungen:** Bestehen aus zwei oder mehr Substanzen.
@@ -94,6 +105,7 @@ Betrachten wir Wasser ($H_2O$):
 ## 5. Quantitative Chemie: Dichte und Messung
 
 ### Dichte (Density)
+
 Die Dichte ist eine charakteristische physikalische Eigenschaft und definiert als Masse pro Volumeneinheit:
 $$Dichte = \frac{Masse~(g)}{Volumen~(cm^{3})}$$
 [cite_start][cite: 342].
@@ -108,12 +120,12 @@ $$Dichte = \frac{Masse~(g)}{Volumen~(cm^{3})}$$
 > *Gesucht:* Dichte in $g/cm^{3}$.
 >
 > *Lösungsweg:*
-> 1.  Einheiten angleichen: Die Dicke ist in mm, muss aber in cm sein.
+> 1. Einheiten angleichen: Die Dicke ist in mm, muss aber in cm sein.
 >     $0.95~mm \times (\frac{1~cm}{10~mm}) = 0.095~cm$.
-> 2.  Volumen berechnen ($L \times B \times H$):
+> 2. Volumen berechnen ($L \times B \times H$):
 >     $9.36~cm \times 7.23~cm \times 0.095~cm = 6.428...~cm^{3}$.
 >     *Achtung:* Aufgrund der signifikanten Stellen (0.095 hat nur 2), runden wir das Zwischenergebnis des Volumens auf $6.4~cm^{3}$.
-> 3.  Dichte berechnen:
+> 3. Dichte berechnen:
 >     $\frac{57.54~g}{6.4~cm^{3}} = 9.0~g/cm^{3}$.
 
 > [cite_start]**Rechenbeispiel 2: Masse aus Volumen (Dimensionsanalyse)** [cite: 413-428]
@@ -126,6 +138,7 @@ $$Dichte = \frac{Masse~(g)}{Volumen~(cm^{3})}$$
 > In wissenschaftlicher Notation (angepasst an signifikante Stellen): $1.3 \times 10^{3}~g$.
 
 ### Einheiten und das SI-System
+
 [cite_start]In der Wissenschaft nutzen wir **SI-Einheiten** (Système International d'Unités) [cite: 447-448]:
 * Länge: Meter (m)
 * Masse: Kilogramm (kg) – *nicht Gramm!*
@@ -145,6 +158,7 @@ $$Dichte = \frac{Masse~(g)}{Volumen~(cm^{3})}$$
 Ein praktisches Beispiel für Größenordnungen: Der Abstand zwischen Sauerstoff und Wasserstoff in einem Molekül beträgt ca. [cite_start]$9.58 \times 10^{-11} m$, was $0.0958~nm$ entspricht[cite: 472].
 
 ### Temperaturskalen
+
 [cite_start]Es gibt drei gebräuchliche Skalen: Fahrenheit (USA), Celsius (Alltag) und Kelvin (SI/Wissenschaft) [cite: 512-514].
 [cite_start]Wichtige Fixpunkte für Wasser [cite: 523-535]:
 * **Siedepunkt:** $212^{\circ}F$ / $100^{\circ}C$ / $373~K$
@@ -160,9 +174,10 @@ $$T(K) = t(^{\circ}C) + 273.15$$
 ## 6. Messunsicherheit: Genauigkeit, Präzision & Signifikante Stellen
 
 ### Genauigkeit vs. Präzision
+
 [cite_start]Im wissenschaftlichen Messen unterscheiden wir strikt zwischen zwei Konzepten [cite: 598-603]:
-1.  **Genauigkeit (Accuracy):** Wie nah liegt ein Messwert am *wahren* Wert? (Das Treffen der Zielscheibenmitte).
-2.  **Präzision (Precision):** Wie nah liegen wiederholte Messungen *beieinander*? (Die Streuung der Treffer).
+1. **Genauigkeit (Accuracy):** Wie nah liegt ein Messwert am *wahren* Wert? (Das Treffen der Zielscheibenmitte).
+2. **Präzision (Precision):** Wie nah liegen wiederholte Messungen *beieinander*? (Die Streuung der Treffer).
 
 *Szenarien auf der Zielscheibe (Slides 46-65):*
 * Treffer weit verstreut und nicht in der Mitte: Weder genau noch präzise.
@@ -174,13 +189,14 @@ $$\frac{Experimenteller~Wert - Anerkannter~Wert}{Anerkannter~Wert} \times 100\%$
 [cite_start][cite: 692].
 
 ### Signifikante Stellen (Sig Figs)
+
 Signifikante Stellen geben an, wie verlässlich ein Messwert ist. Sie bestehen aus allen sicheren Ziffern plus einer ersten geschätzten Ziffer.
 
 [cite_start]**Die Regeln** [cite: 711-717, 725]:
-1.  Führende Nullen zählen **nie** (0.000357 hat 3 Sig Figs).
-2.  Nullen zwischen Zahlen zählen **immer** (3.0604 hat 5 Sig Figs).
-3.  Nullen am Ende sind knifflig. Bei ganzen Zahlen (2400) ist es unklar. Nutzen Sie daher wissenschaftliche Notation: $2.40 \times 10^3$ (3 Sig Figs) vs. $2.4 \times 10^3$ (2 Sig Figs).
-4.  [cite_start]Exakte Zahlen (z.B. „1 Dutzend = 12 Stück“) haben unendlich viele signifikante Stellen[cite: 700].
+1. Führende Nullen zählen **nie** (0.000357 hat 3 Sig Figs).
+2. Nullen zwischen Zahlen zählen **immer** (3.0604 hat 5 Sig Figs).
+3. Nullen am Ende sind knifflig. Bei ganzen Zahlen (2400) ist es unklar. Nutzen Sie daher wissenschaftliche Notation: $2.40 \times 10^3$ (3 Sig Figs) vs. $2.4 \times 10^3$ (2 Sig Figs).
+4. [cite_start]Exakte Zahlen (z.B. „1 Dutzend = 12 Stück“) haben unendlich viele signifikante Stellen[cite: 700].
 
 **Rechenregeln:**
 * [cite_start]**Multiplikation/Division:** Das Ergebnis darf nicht mehr signifikante Stellen haben als der Faktor mit den *wenigsten* signifikanten Stellen[cite: 761].
@@ -189,6 +205,7 @@ Signifikante Stellen geben an, wie verlässlich ein Messwert ist. Sie bestehen a
     * $3.6923 + 1.234 + 2.02 = 6.9463 \rightarrow$ Runden auf **6.95** (da 2.02 nur 2 Nachkommastellen hat).
 
 ### Erweiterte Dimensionsanalyse (Flächen und Volumen)
+
 Ein häufiger Fehler passiert bei der Umrechnung von quadrierten oder kubierten Einheiten.
 [cite_start]Wenn Sie eine Fläche von $mm^2$ in $m^2$ umrechnen, müssen Sie den Umrechnungsfaktor ebenfalls quadrieren! [cite: 800-802].
 

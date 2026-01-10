@@ -6,7 +6,7 @@
 
 - **Tech:** Plain HTML/CSS/JS, Tailwind CDN, no build step
 - **Code:** English | **UI text:** German
-- **Validate:** `validate-content.html` after content changes
+- **Validate:** Open `validate-content.html` in browser (NOT via node/shell!)
 - **Lint:** `npx markdownlint-cli2 "**/*.md"` (no --fix!)
 
 ## Git Workflow

@@ -129,6 +129,17 @@ function renderCurrentQuizQuestion(
   questionEl.textContent = questionData.question;
   quizContentDiv.appendChild(questionEl);
 
+  // Render math in question if available
+  if (window.renderMathInElement) {
+    renderMathInElement(questionEl, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false
+    });
+  }
+
   // Add hint for multiple choice questions
   if (isMultipleAnswers) {
     const hintEl = document.createElement('p');
@@ -152,6 +163,17 @@ function renderCurrentQuizQuestion(
     label.appendChild(input);
     label.appendChild(document.createTextNode(optionText));
     optionsList.appendChild(label);
+
+    // Render math in option label if available
+    if (window.renderMathInElement) {
+      renderMathInElement(label, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false }
+        ],
+        throwOnError: false
+      });
+    }
   });
   quizContentDiv.appendChild(optionsList);
 
