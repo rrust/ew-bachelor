@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.0.1';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -113,12 +113,14 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets - Cache first
-  if (
-    STATIC_ASSETS.includes(url.pathname) ||
-    url.pathname.startsWith('/js/') ||
-    url.pathname.startsWith('/css/')
-  ) {
+  // Static assets - Stale-while-revalidate for JS/CSS (fast load, background update)
+  if (url.pathname.startsWith('/js/') || url.pathname.startsWith('/css/')) {
+    event.respondWith(staleWhileRevalidate(event.request));
+    return;
+  }
+
+  // Other static assets (HTML, images) - Cache first
+  if (STATIC_ASSETS.includes(url.pathname)) {
     event.respondWith(cacheFirst(event.request));
     return;
   }
@@ -165,6 +167,23 @@ async function networkFirst(request) {
     console.error('[SW] Network and cache failed:', error);
     return new Response('Offline', { status: 503 });
   }
+}
+
+// Stale-while-revalidate: Return cache immediately, update in background
+async function staleWhileRevalidate(request) {
+  const cache = await caches.open(CACHE_NAME);
+  const cached = await cache.match(request);
+
+  // Fetch fresh version in background
+  const fetchPromise = fetch(request).then((response) => {
+    if (response.ok) {
+      cache.put(request, response.clone());
+    }
+    return response;
+  });
+
+  // Return cached version immediately, or wait for network
+  return cached || fetchPromise;
 }
 
 // Listen for messages (e.g., skip waiting)

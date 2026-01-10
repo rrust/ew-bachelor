@@ -220,7 +220,10 @@ function handleQuizKeys(e) {
       const label = option.closest('label');
       if (label) {
         label.classList.add('ring-2', 'ring-blue-500');
-        setTimeout(() => label.classList.remove('ring-2', 'ring-blue-500'), 200);
+        setTimeout(
+          () => label.classList.remove('ring-2', 'ring-blue-500'),
+          200
+        );
       }
     }
     return;

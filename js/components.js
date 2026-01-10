@@ -17,13 +17,13 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
         <button
           id="back-to-modules-button"
-          class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
+          class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300 text-sm md:text-base"
         >
           &larr; Zurück
         </button>
         ${
           options.moduleTitle
-            ? `<h2 class="text-xl md:text-2xl font-bold mt-3 md:mt-4">Vorlesungen für ${options.moduleTitle}</h2>`
+            ? `<h2 class="text-lg md:text-2xl font-bold mt-2 md:mt-4">Vorlesungen für ${options.moduleTitle}</h2>`
             : ''
         }
       </div>
