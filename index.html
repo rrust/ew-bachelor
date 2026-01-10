@@ -103,9 +103,7 @@
       style="display: none"
       class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-md text-center"
     >
-      <h1 class="text-3xl font-bold mb-4">
-        Willkommen zur Ernährungswissenschaft Lern-App!
-      </h1>
+      <h1 class="text-3xl font-bold mb-4">Willkommen zur Lern-App!</h1>
       <p class="mb-6">Bitte gib deinen Namen ein, um zu beginnen:</p>
       <input
         type="text"
@@ -118,8 +116,30 @@
         id="start-button"
         class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
       >
-        Lernen beginnen
+        Weiter
       </button>
+    </div>
+
+    <!-- View for study selection -->
+    <div
+      id="study-selection-view"
+      role="main"
+      style="display: none"
+      class="container mx-auto my-8 px-4"
+    >
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold mb-2">Wähle deinen Studiengang</h1>
+        <p
+          class="text-gray-600 dark:text-gray-400"
+          id="study-selection-greeting"
+        ></p>
+      </div>
+      <div
+        id="study-grid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto"
+        role="list"
+        aria-label="Verfügbare Studiengänge"
+      ></div>
     </div>
 
     <!-- View for the module map -->
@@ -582,6 +602,26 @@
               Zukünftige Tools werden hier erscheinen.
             </p>
           </div>
+
+          <!-- Study Switch Card -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
+          >
+            <div class="flex items-center mb-4">
+              <span class="text-3xl mr-3">📚</span>
+              <h3 class="text-xl font-bold">Studiengang wechseln</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Wechsle zu einem anderen Studiengang. Dein Fortschritt bleibt
+              erhalten.
+            </p>
+            <button
+              id="switch-study-button"
+              class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-md transition duration-200"
+            >
+              Studiengang wählen →
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -909,6 +949,7 @@
     <script src="js/views.js"></script>
     <script src="js/progress.js"></script>
     <script src="js/parser.js"></script>
+    <script src="js/studies.js"></script>
     <script src="js/achievements.js"></script>
     <script src="js/achievements-ui.js"></script>
     <script src="js/components.js"></script>

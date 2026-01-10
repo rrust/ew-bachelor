@@ -1,29 +1,103 @@
 // js/progress.js
 
-const PROGRESS_KEY = 'userProgress';
+// Keys for localStorage
+const GLOBAL_SETTINGS_KEY = 'appSettings';
+
+/**
+ * Gets the progress key for a specific study
+ * @param {string} studyId - The study ID
+ * @returns {string} The localStorage key for this study's progress
+ */
+function getProgressKey(studyId) {
+  return `progress_${studyId}`;
+}
+
+/**
+ * Gets global app settings (theme, active study, etc.)
+ * @returns {object} App settings object
+ */
+function getAppSettings() {
+  const settings = localStorage.getItem(GLOBAL_SETTINGS_KEY);
+  return settings
+    ? JSON.parse(settings)
+    : {
+        userName: null,
+        activeStudyId: null,
+        theme: 'light'
+      };
+}
+
+/**
+ * Saves global app settings
+ * @param {object} settings - Settings object to save
+ */
+function saveAppSettings(settings) {
+  localStorage.setItem(GLOBAL_SETTINGS_KEY, JSON.stringify(settings));
+}
 
 // Gets the initial structure for a new user's progress
 function getInitialProgress(userName) {
   return {
     userName: userName,
+    startedAt: new Date().toISOString(),
     modules: {}
   };
 }
 
-// Fetches the user's progress from localStorage
-function getUserProgress() {
-  const progress = localStorage.getItem(PROGRESS_KEY);
+/**
+ * Fetches the user's progress from localStorage
+ * @param {string|null} studyId - Optional study ID (uses active study if not provided)
+ * @returns {object|null} Progress object or null
+ */
+function getUserProgress(studyId = null) {
+  const settings = getAppSettings();
+  const activeStudy = studyId || settings.activeStudyId;
+
+  // If no active study, try legacy key for backward compatibility
+  if (!activeStudy) {
+    const legacyProgress = localStorage.getItem('userProgress');
+    return legacyProgress ? JSON.parse(legacyProgress) : null;
+  }
+
+  const key = getProgressKey(activeStudy);
+  const progress = localStorage.getItem(key);
   return progress ? JSON.parse(progress) : null;
 }
 
-// Saves the user's progress to localStorage
-function saveUserProgress(progressData) {
-  localStorage.setItem(PROGRESS_KEY, JSON.stringify(progressData));
+/**
+ * Saves the user's progress to localStorage
+ * @param {object} progressData - Progress object to save
+ * @param {string|null} studyId - Optional study ID (uses active study if not provided)
+ */
+function saveUserProgress(progressData, studyId = null) {
+  const settings = getAppSettings();
+  const activeStudy = studyId || settings.activeStudyId;
+
+  if (!activeStudy) {
+    // Fallback to legacy key if no active study
+    localStorage.setItem('userProgress', JSON.stringify(progressData));
+    return;
+  }
+
+  const key = getProgressKey(activeStudy);
+  localStorage.setItem(key, JSON.stringify(progressData));
 }
 
-// Resets all progress
-function resetUserProgress() {
-  localStorage.removeItem(PROGRESS_KEY);
+/**
+ * Resets all progress for a specific study
+ * @param {string|null} studyId - Optional study ID (uses active study if not provided)
+ */
+function resetUserProgress(studyId = null) {
+  const settings = getAppSettings();
+  const activeStudy = studyId || settings.activeStudyId;
+
+  if (!activeStudy) {
+    localStorage.removeItem('userProgress');
+    return;
+  }
+
+  const key = getProgressKey(activeStudy);
+  localStorage.removeItem(key);
 }
 
 // Updates the progress for a specific lecture
@@ -91,9 +165,62 @@ function resetLectureProgress(moduleId, lectureId) {
   }
 }
 
+/**
+ * Migrates legacy progress data to the new multi-study format
+ * @param {string} defaultStudyId - The study ID to migrate legacy data to
+ * @returns {boolean} True if migration occurred
+ */
+function migrateLegacyProgress(defaultStudyId) {
+  const legacyKey = 'userProgress';
+  const legacyProgress = localStorage.getItem(legacyKey);
+
+  if (!legacyProgress) {
+    return false;
+  }
+
+  try {
+    const progressData = JSON.parse(legacyProgress);
+
+    // Check if already migrated (has startedAt field)
+    if (progressData.startedAt) {
+      // Already in new format, just copy to new key
+      const newKey = getProgressKey(defaultStudyId);
+      if (!localStorage.getItem(newKey)) {
+        localStorage.setItem(newKey, legacyProgress);
+      }
+    } else {
+      // Old format, add metadata
+      progressData.startedAt = new Date().toISOString();
+      progressData.migratedAt = new Date().toISOString();
+      const newKey = getProgressKey(defaultStudyId);
+      localStorage.setItem(newKey, JSON.stringify(progressData));
+    }
+
+    // Update app settings
+    const settings = getAppSettings();
+    if (!settings.userName && progressData.userName) {
+      settings.userName = progressData.userName;
+    }
+    if (!settings.activeStudyId) {
+      settings.activeStudyId = defaultStudyId;
+    }
+    saveAppSettings(settings);
+
+    // Don't delete legacy key yet - keep as backup
+    console.log('Legacy progress migrated to:', defaultStudyId);
+    return true;
+  } catch (error) {
+    console.error('Error migrating legacy progress:', error);
+    return false;
+  }
+}
+
 // Exports all progress data as a JSON file download
 function exportProgress() {
-  const progress = getUserProgress();
+  const settings = getAppSettings();
+  const activeStudy = settings.activeStudyId;
+
+  const progress = getUserProgress(activeStudy);
   if (!progress) {
     alert('Keine Fortschrittsdaten vorhanden.');
     return;
@@ -102,7 +229,12 @@ function exportProgress() {
   // Add export metadata
   const exportData = {
     exportedAt: new Date().toISOString(),
-    version: '1.0',
+    version: '2.0',
+    studyId: activeStudy,
+    settings: {
+      userName: settings.userName,
+      theme: settings.theme
+    },
     progress: progress
   };
 
@@ -112,7 +244,8 @@ function exportProgress() {
 
   const link = document.createElement('a');
   link.href = url;
-  link.download = `lernfortschritt-${
+  const studySuffix = activeStudy ? `-${activeStudy}` : '';
+  link.download = `lernfortschritt${studySuffix}-${
     new Date().toISOString().split('T')[0]
   }.json`;
   document.body.appendChild(link);
@@ -138,11 +271,18 @@ function importProgress(file) {
           return;
         }
 
-        // Confirm with user before overwriting
         const currentProgress = getUserProgress();
         if (currentProgress) {
+          // Determine study ID from import or use active study
+          const settings = getAppSettings();
+          const studyId =
+            importData.studyId ||
+            settings.activeStudyId ||
+            'bsc-ernaehrungswissenschaften';
+
           const confirmed = confirm(
             `Aktueller Fortschritt wird überschrieben.\n\n` +
+              `Studiengang: ${studyId}\n` +
               `Aktuell: ${currentProgress.userName}\n` +
               `Import: ${importData.progress.userName}\n\n` +
               `Fortfahren?`
@@ -153,8 +293,28 @@ function importProgress(file) {
           }
         }
 
+        // Determine study ID
+        const settings = getAppSettings();
+        const studyId =
+          importData.studyId ||
+          settings.activeStudyId ||
+          'bsc-ernaehrungswissenschaften';
+
         // Save imported progress
-        saveUserProgress(importData.progress);
+        saveUserProgress(importData.progress, studyId);
+
+        // Update settings if provided
+        if (importData.settings) {
+          const newSettings = getAppSettings();
+          if (importData.settings.userName) {
+            newSettings.userName = importData.settings.userName;
+          }
+          if (!newSettings.activeStudyId) {
+            newSettings.activeStudyId = studyId;
+          }
+          saveAppSettings(newSettings);
+        }
+
         console.log(
           'Progress imported successfully from',
           importData.exportedAt
@@ -174,11 +334,15 @@ function importProgress(file) {
 }
 
 // Expose functions to global scope
+window.getAppSettings = getAppSettings;
+window.saveAppSettings = saveAppSettings;
+window.getProgressKey = getProgressKey;
 window.getUserProgress = getUserProgress;
 window.saveUserProgress = saveUserProgress;
 window.resetUserProgress = resetUserProgress;
 window.getInitialProgress = getInitialProgress;
 window.updateLectureProgress = updateLectureProgress;
 window.resetLectureProgress = resetLectureProgress;
+window.migrateLegacyProgress = migrateLegacyProgress;
 window.exportProgress = exportProgress;
 window.importProgress = importProgress;

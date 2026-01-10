@@ -8,6 +8,10 @@ const BADGE_THRESHOLDS = {
 };
 
 const AppState = {
+  // Study-Level State (NEW)
+  currentStudyId: null,
+  studies: [],
+  // Existing State
   content: {},
   modules: [],
   currentModuleId: null,
@@ -21,6 +25,8 @@ const AppState = {
 
 // State getters
 const getState = () => AppState;
+const getStudies = () => AppState.studies;
+const getCurrentStudy = () => AppState.currentStudyId;
 const getContent = () => AppState.content;
 const getModules = () => AppState.modules;
 const getCurrentModule = () => AppState.currentModuleId;
@@ -32,6 +38,8 @@ const getCurrentQuestionIndex = () => AppState.currentQuestionIndex;
 const getUserScore = () => AppState.userScore;
 
 // State setters
+const setStudies = (studies) => (AppState.studies = studies);
+const setCurrentStudy = (id) => (AppState.currentStudyId = id);
 const setContent = (content) => (AppState.content = content);
 const setModules = (modules) => (AppState.modules = modules);
 const setCurrentModule = (id) => (AppState.currentModuleId = id);
@@ -54,6 +62,8 @@ const resetQuizState = () => {
 window.BADGE_THRESHOLDS = BADGE_THRESHOLDS;
 window.AppState = AppState;
 window.getState = getState;
+window.getStudies = getStudies;
+window.getCurrentStudy = getCurrentStudy;
 window.getContent = getContent;
 window.getModules = getModules;
 window.getCurrentModule = getCurrentModule;
@@ -63,6 +73,8 @@ window.getCurrentItemIndex = getCurrentItemIndex;
 window.getQuizData = getQuizData;
 window.getCurrentQuestionIndex = getCurrentQuestionIndex;
 window.getUserScore = getUserScore;
+window.setStudies = setStudies;
+window.setCurrentStudy = setCurrentStudy;
 window.setContent = setContent;
 window.setModules = setModules;
 window.setCurrentModule = setCurrentModule;

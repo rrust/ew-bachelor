@@ -15,6 +15,23 @@
 
       <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
         <h2 class="text-xl font-semibold mb-4">Validierung starten</h2>
+
+        <!-- Study Selector -->
+        <div class="mb-4">
+          <label
+            for="study-select"
+            class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          >
+            Studiengang auswählen:
+          </label>
+          <select
+            id="study-select"
+            class="w-full md:w-auto px-4 py-2 border dark:border-gray-600 dark:bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="">Lädt...</option>
+          </select>
+        </div>
+
         <button
           id="validate-btn"
           class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md transition duration-300"
@@ -22,7 +39,7 @@
           Alle Content-Dateien validieren
         </button>
         <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-          Prüft alle Dateien in content-list.json auf Fehler
+          Prüft alle Dateien im ausgewählten Studiengang auf Fehler
         </p>
       </div>
 
@@ -30,7 +47,47 @@
     </div>
 
     <script>
-      const CONTENT_LIST_PATH = 'content/content-list.json';
+      let currentStudyId = '';
+
+      // Load available studies
+      async function loadStudies() {
+        try {
+          const response = await fetch('studies/studies.json');
+          if (!response.ok) throw new Error('Could not load studies');
+          const studies = await response.json();
+
+          const select = document.getElementById('study-select');
+          select.innerHTML = '';
+
+          for (const study of studies) {
+            const option = document.createElement('option');
+            option.value = study.id;
+            option.textContent = `${study.icon || '📚'} ${study.title}`;
+            select.appendChild(option);
+          }
+
+          // Set default
+          if (studies.length > 0) {
+            currentStudyId = studies[0].id;
+            select.value = currentStudyId;
+          }
+
+          select.addEventListener('change', (e) => {
+            currentStudyId = e.target.value;
+          });
+        } catch (error) {
+          console.error('Error loading studies:', error);
+          document.getElementById('study-select').innerHTML =
+            '<option value="bsc-ernaehrungswissenschaften">BSc Ernährungswissenschaften</option>';
+          currentStudyId = 'bsc-ernaehrungswissenschaften';
+        }
+      }
+
+      function getContentListPath() {
+        return currentStudyId
+          ? `content/${currentStudyId}/content-list.json`
+          : 'content/content-list.json';
+      }
 
       // Validation rules
       const REQUIRED_FIELDS = {
@@ -58,9 +115,10 @@
 
         try {
           // Load content list
-          const response = await fetch(CONTENT_LIST_PATH);
+          const contentListPath = getContentListPath();
+          const response = await fetch(contentListPath);
           if (!response.ok) {
-            throw new Error(`Konnte ${CONTENT_LIST_PATH} nicht laden`);
+            throw new Error(`Konnte ${contentListPath} nicht laden`);
           }
           const contentList = await response.json();
 
@@ -394,6 +452,9 @@
 
         resultsDiv.innerHTML = html;
       }
+
+      // Initialize
+      loadStudies();
 
       // Event listener
       document

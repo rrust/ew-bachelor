@@ -1,0 +1,11 @@
+[
+  {
+    "id": "bsc-ernaehrungswissenschaften",
+    "title": "Bachelorstudium Ernährungswissenschaften",
+    "shortTitle": "BSc EW",
+    "university": "Universität Wien",
+    "icon": "🍎",
+    "status": "active",
+    "order": 1
+  }
+]

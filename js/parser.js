@@ -48,16 +48,68 @@ function parseMultiDocument(content) {
 }
 
 /**
- * Loads module metadata from modules.json
- * @returns {Promise<Array>} Array of module objects
+ * Gets the content path for a specific study
+ * @param {string} studyId - Study ID
+ * @returns {string} Content base path
  */
-async function loadModules() {
+function getStudyContentPath(studyId) {
+  const basePath = getBasePath();
+  return basePath === '/'
+    ? `content/${studyId}/`
+    : `${basePath}content/${studyId}/`;
+}
+
+/**
+ * Loads studies metadata from studies.json
+ * @returns {Promise<Array>} Array of study objects
+ */
+async function loadStudies() {
   try {
     const basePath = getBasePath();
-    const modulesPath =
+    const studiesPath =
       basePath === '/'
-        ? 'content/modules.json'
-        : `${basePath}content/modules.json`;
+        ? 'studies/studies.json'
+        : `${basePath}studies/studies.json`;
+    const response = await fetch(studiesPath);
+
+    if (!response.ok) {
+      throw new Error(
+        `Failed to load studies: ${response.status} ${response.statusText}`
+      );
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error loading studies:', error);
+    return [];
+  }
+}
+
+/**
+ * Loads module metadata from modules.json for a specific study
+ * @param {string|null} studyId - Study ID (uses active study if not provided)
+ * @returns {Promise<Array>} Array of module objects
+ */
+async function loadModules(studyId = null) {
+  try {
+    const basePath = getBasePath();
+    const settings = window.getAppSettings ? window.getAppSettings() : {};
+    const activeStudy = studyId || settings.activeStudyId;
+
+    let modulesPath;
+    if (activeStudy) {
+      modulesPath =
+        basePath === '/'
+          ? `content/${activeStudy}/modules.json`
+          : `${basePath}content/${activeStudy}/modules.json`;
+    } else {
+      // Fallback to legacy path for backward compatibility
+      modulesPath =
+        basePath === '/'
+          ? 'content/modules.json'
+          : `${basePath}content/modules.json`;
+    }
+
     const response = await fetch(modulesPath);
 
     if (!response.ok) {
@@ -132,20 +184,32 @@ function getBasePath() {
 
 /**
  * Fetches the list of content files and parses them into a structured object.
+ * @param {string|null} studyId - Study ID (uses active study if not provided)
  * @returns {object} The structured content of the entire application.
  */
-async function parseContent() {
+async function parseContent(studyId = null) {
   const content = {};
 
   try {
     const basePath = getBasePath();
+    const settings = window.getAppSettings ? window.getAppSettings() : {};
+    const activeStudy = studyId || settings.activeStudyId;
     const content = {};
     const achievements = {}; // New: Store achievements separately
 
-    const contentListPath =
-      basePath === '/'
-        ? 'content/content-list.json'
-        : `${basePath}content/content-list.json`;
+    let contentListPath;
+    if (activeStudy) {
+      contentListPath =
+        basePath === '/'
+          ? `content/${activeStudy}/content-list.json`
+          : `${basePath}content/${activeStudy}/content-list.json`;
+    } else {
+      // Fallback to legacy path for backward compatibility
+      contentListPath =
+        basePath === '/'
+          ? 'content/content-list.json'
+          : `${basePath}content/content-list.json`;
+    }
 
     const response = await fetch(contentListPath);
     if (!response.ok) {
@@ -168,35 +232,40 @@ async function parseContent() {
         // - lecture-items/XX-name.md: Individual items (new format)
         // - achievements/XX-name.md: Achievement files (new)
         // - Old: lecture.md with multi-document items (legacy support)
+        // Path structure: content/{studyId}/{moduleId}/{lectureId}/...
         const pathParts = filePath.split('/');
-        if (pathParts.length < 3) continue;
 
-        const moduleId = pathParts[1];
-        const secondPart = pathParts[2];
+        // New structure: content/studyId/moduleId/lectureId/...
+        // pathParts[0] = 'content', pathParts[1] = studyId, pathParts[2] = moduleId, etc.
+        // We need at least 4 parts for the new structure
+        if (pathParts.length < 4) continue;
 
-        // Check if this is an achievement file (module/achievements/file.md)
+        const moduleId = pathParts[2];
+        const thirdPart = pathParts[3];
+
+        // Check if this is an achievement file (content/studyId/module/achievements/file.md)
         const isAchievement =
-          secondPart === 'achievements' && pathParts.length >= 4;
+          thirdPart === 'achievements' && pathParts.length >= 5;
 
-        // For lecture content, we need at least 4 parts
-        if (!isAchievement && pathParts.length < 4) continue;
+        // For lecture content, we need at least 5 parts
+        if (!isAchievement && pathParts.length < 5) continue;
 
-        const lectureId = isAchievement ? null : pathParts[2];
-        const fileName = isAchievement ? pathParts[3] : pathParts[3];
+        const lectureId = isAchievement ? null : pathParts[3];
+        const fileName = isAchievement ? pathParts[4] : pathParts[4];
         const isLectureItems =
           !isAchievement &&
           fileName === 'lecture-items' &&
-          pathParts.length >= 5;
+          pathParts.length >= 6;
         const isLectureMetadata =
           !isAchievement && fileName === 'lecture.md' && !isLectureItems;
         const isQuizMetadata =
-          !isAchievement && fileName === 'quiz.md' && pathParts.length === 4;
+          !isAchievement && fileName === 'quiz.md' && pathParts.length === 5;
         const isQuizQuestion =
-          !isAchievement && fileName === 'questions' && pathParts.length >= 5;
+          !isAchievement && fileName === 'questions' && pathParts.length >= 6;
 
         // Determine if this is a quiz file (legacy format - deprecated)
         const isQuiz =
-          !isAchievement && fileName === 'quiz.md' && pathParts.length === 4;
+          !isAchievement && fileName === 'quiz.md' && pathParts.length === 5;
 
         // Handle achievement files
         if (isAchievement) {
@@ -242,7 +311,7 @@ async function parseContent() {
           }
         } else if (isQuizQuestion) {
           // This is a single quiz question file
-          const questionFileName = pathParts[4];
+          const questionFileName = pathParts[5];
           const doc = documents[0];
 
           if (doc) {
@@ -354,8 +423,8 @@ async function parseContent() {
           }
         } else if (isLectureItems) {
           // This is a single lecture item file
-          // File path: content/MODULE_ID/LECTURE_ID/lecture-items/XX-name.md
-          const itemFileName = pathParts[4];
+          // File path: content/STUDY_ID/MODULE_ID/LECTURE_ID/lecture-items/XX-name.md
+          const itemFileName = pathParts[5];
           const doc = documents[0]; // Should only be one document per file
 
           if (doc) {
@@ -428,5 +497,8 @@ async function parseContent() {
 }
 
 // Expose functions to global scope for use in app.js
+window.loadStudies = loadStudies;
 window.loadModules = loadModules;
 window.parseContent = parseContent;
+window.getStudyContentPath = getStudyContentPath;
+window.getBasePath = getBasePath;

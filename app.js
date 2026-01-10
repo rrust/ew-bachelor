@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- DOM Element Caching ---
   const views = {
     welcome: document.getElementById('welcome-view'),
+    studySelection: document.getElementById('study-selection-view'),
     moduleMap: document.getElementById('module-map-view'),
     achievements: document.getElementById('achievements-view'),
     lecture: document.getElementById('lecture-view'),
@@ -93,10 +94,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- URL Routing ---
   function updateURL(path, title) {
     if (window.history && window.history.pushState) {
+      // Get current study for URL prefix (optional, for deep links)
+      const settings = getAppSettings();
+      const studyInfo = getCurrentStudyInfo();
+      const studyTitle = studyInfo ? studyInfo.shortTitle : 'Lern-App';
+
       window.history.pushState({ path }, title, `#${path}`);
       document.title = title
-        ? `${title} - EW Bachelor`
-        : 'EW Bachelor - Ernährungswissenschaft Lern-App';
+        ? `${title} - ${studyTitle}`
+        : `${studyTitle} - Lern-App`;
     }
   }
 
@@ -107,27 +113,49 @@ document.addEventListener('DOMContentLoaded', async () => {
     const parts = hash.split('/').filter((p) => p);
     const route = { view: parts[0] };
 
-    // Parse route patterns
-    if (parts[0] === 'module' && parts[1]) {
-      route.moduleId = parts[1];
-      if (parts[2] === 'lecture' && parts[3]) {
-        route.lectureId = parts[3];
-        if (parts[4] === 'overview') {
+    // Check for study-select route
+    if (parts[0] === 'study-select') {
+      route.view = 'studySelection';
+      return route;
+    }
+
+    // Check if first part is a known study ID
+    const studies = getStudies();
+    const firstPartIsStudy = studies.some((s) => s.id === parts[0]);
+
+    let offset = 0;
+    if (firstPartIsStudy) {
+      route.studyId = parts[0];
+      offset = 1;
+      // Adjust view to be the second part
+      route.view = parts[offset] || null;
+    }
+
+    // Parse route patterns (with offset for study prefix)
+    if (parts[offset] === 'module' && parts[offset + 1]) {
+      route.view = 'module';
+      route.moduleId = parts[offset + 1];
+      if (parts[offset + 2] === 'lecture' && parts[offset + 3]) {
+        route.lectureId = parts[offset + 3];
+        if (parts[offset + 4] === 'overview') {
           route.overview = true;
-        } else if (parts[4] === 'item' && parts[5] !== undefined) {
-          route.itemIndex = parseInt(parts[5], 10);
-        } else if (parts[4] === 'quiz') {
+        } else if (
+          parts[offset + 4] === 'item' &&
+          parts[offset + 5] !== undefined
+        ) {
+          route.itemIndex = parseInt(parts[offset + 5], 10);
+        } else if (parts[offset + 4] === 'quiz') {
           route.quiz = true;
-          if (parts[5] !== undefined) {
-            route.questionIndex = parseInt(parts[5], 10);
+          if (parts[offset + 5] !== undefined) {
+            route.questionIndex = parseInt(parts[offset + 5], 10);
           }
         }
       }
-    } else if (parts[0] === 'tools') {
+    } else if (parts[offset] === 'tools') {
       route.view = 'tools';
-    } else if (parts[0] === 'map') {
+    } else if (parts[offset] === 'map') {
       route.view = 'map';
-    } else if (parts[0] === 'progress') {
+    } else if (parts[offset] === 'progress') {
       route.view = 'progress';
     }
 
@@ -138,6 +166,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     const route = parseURL();
     console.log('navigateFromURL - parsed route:', route);
     if (!route) return false;
+
+    // Handle study selection route
+    if (route.view === 'studySelection') {
+      const settings = getAppSettings();
+      showStudySelectionView(settings.userName);
+      return true;
+    }
+
+    // If route contains a study ID, switch to that study if needed
+    if (route.studyId) {
+      const settings = getAppSettings();
+      if (settings.activeStudyId !== route.studyId) {
+        // Need to switch study - this requires async loading
+        // For now, just switch and reload
+        switchToStudy(route.studyId);
+        // Content will be loaded on next page load or we could do it async
+      }
+    }
 
     if (route.view === 'module' && route.moduleId) {
       if (route.lectureId) {
@@ -211,6 +257,71 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  // --- Helper Functions ---
+  function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+      loadingScreen.style.display = 'none';
+    }
+  }
+
+  /**
+   * Shows the study selection view
+   * @param {string} userName - The user's name for greeting
+   */
+  function showStudySelectionView(userName) {
+    const greetingEl = document.getElementById('study-selection-greeting');
+    if (greetingEl && userName) {
+      greetingEl.textContent = `Hallo ${userName}! Welchen Studiengang möchtest du lernen?`;
+    }
+
+    const studies = getStudies();
+    renderStudySelection(studies, async (studyId) => {
+      // User selected a study
+      switchToStudy(studyId);
+
+      // Load content for the selected study
+      await loadStudyContent(studyId);
+
+      // Create initial progress if needed
+      let progress = getUserProgress();
+      if (!progress) {
+        const settings = getAppSettings();
+        progress = getInitialProgress(settings.userName);
+        saveUserProgress(progress);
+      }
+
+      // Show module map
+      loadModuleCards();
+      showView('moduleMap');
+      updateURL('/', 'Module Overview');
+
+      if (window.updateGreeting) {
+        window.updateGreeting(getAppSettings().userName);
+      }
+    });
+
+    showView('studySelection');
+    updateURL('/study-select', 'Studiengang wählen');
+  }
+
+  /**
+   * Loads content for a specific study
+   * @param {string} studyId - The study ID to load
+   */
+  async function loadStudyContent(studyId) {
+    // Load modules metadata from JSON
+    MODULES = await loadModules(studyId);
+    window.MODULES = MODULES;
+    window.APP_MODULES = MODULES;
+
+    // Load content (returns {content, achievements})
+    const parsedData = await parseContent(studyId);
+    APP_CONTENT = parsedData.content || parsedData;
+    APP_CONTENT.achievements = parsedData.achievements || {};
+    window.APP_CONTENT = APP_CONTENT;
+  }
+
   // --- App Initialization ---
   async function init() {
     // Inject headers into views using components.js
@@ -221,19 +332,46 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('progress-view', 'progress');
     injectHeader('search-view', 'search');
 
-    // Load modules metadata from JSON
-    MODULES = await loadModules();
-    window.MODULES = MODULES; // Expose globally
-    window.APP_MODULES = MODULES; // Alias for search
+    // 1. Load available studies
+    const studies = await loadStudies();
+    setStudies(studies);
 
-    // Load content (returns {content, achievements})
-    const parsedData = await parseContent();
-    APP_CONTENT = parsedData.content || parsedData; // Support both old and new format
-    APP_CONTENT.achievements = parsedData.achievements || {};
-    window.APP_CONTENT = APP_CONTENT; // Expose globally
+    // 2. Check for saved user settings and migrate legacy progress
+    const settings = getAppSettings();
+
+    // Migrate legacy progress if needed
+    if (!settings.activeStudyId && studies.length > 0) {
+      migrateLegacyProgress(studies[0].id);
+    }
+
+    // 3. Determine if user needs to enter name or select study
+    const currentSettings = getAppSettings();
+
+    if (!currentSettings.userName) {
+      // New user - show welcome screen
+      showView('welcome');
+      updateURL('/', 'Welcome');
+      hideLoadingScreen();
+      refreshHeaderButtons();
+      addEventListeners();
+      return;
+    }
+
+    if (!currentSettings.activeStudyId) {
+      // User exists but no study selected - show study selection
+      showStudySelectionView(currentSettings.userName);
+      hideLoadingScreen();
+      refreshHeaderButtons();
+      addEventListeners();
+      return;
+    }
+
+    // 4. Load content for active study
+    setCurrentStudy(currentSettings.activeStudyId);
+    await loadStudyContent(currentSettings.activeStudyId);
 
     const progress = getUserProgress();
-    if (progress && progress.userName) {
+    if (progress) {
       // Try to navigate from URL first
       if (!navigateFromURL()) {
         loadModuleCards();
@@ -242,18 +380,21 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
       // Update greeting after view is shown to ensure elements exist
       if (window.updateGreeting) {
-        window.updateGreeting(progress.userName);
+        window.updateGreeting(currentSettings.userName);
       }
     } else {
-      showView('welcome');
-      updateURL('/', 'Welcome');
+      // Create initial progress for this study
+      const newProgress = getInitialProgress(currentSettings.userName);
+      saveUserProgress(newProgress);
+      loadModuleCards();
+      showView('moduleMap');
+      updateURL('/', 'Module Overview');
+      if (window.updateGreeting) {
+        window.updateGreeting(currentSettings.userName);
+      }
     }
 
-    // Hide loading screen - app is ready
-    const loadingScreen = document.getElementById('loading-screen');
-    if (loadingScreen) {
-      loadingScreen.style.display = 'none';
-    }
+    hideLoadingScreen();
 
     // Refresh button references after headers are injected
     refreshHeaderButtons();
@@ -513,11 +654,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     buttons.start.addEventListener('click', () => {
       const userName = inputs.name.value.trim();
       if (userName) {
-        saveUserProgress(getInitialProgress(userName));
-        updateGreeting(userName);
-        loadModuleCards();
-        showView('moduleMap');
-        updateURL('/', 'Module Overview');
+        // Save user name to global settings
+        const settings = getAppSettings();
+        settings.userName = userName;
+        saveAppSettings(settings);
+
+        // Check if there's already an active study
+        if (settings.activeStudyId) {
+          // User has a study, initialize progress and go to modules
+          let progress = getUserProgress();
+          if (!progress) {
+            progress = getInitialProgress(userName);
+            saveUserProgress(progress);
+          }
+          updateGreeting(userName);
+          loadModuleCards();
+          showView('moduleMap');
+          updateURL('/', 'Module Overview');
+        } else {
+          // Show study selection
+          showStudySelectionView(userName);
+        }
       } else {
         alert('Bitte gib deinen Namen ein.');
       }
@@ -699,6 +856,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupLectureListeners();
     setupQuizListeners();
     setupAchievementsListeners();
+    setupToolsListeners();
+  }
+
+  function setupToolsListeners() {
+    const switchStudyBtn = document.getElementById('switch-study-button');
+    if (switchStudyBtn) {
+      switchStudyBtn.addEventListener('click', () => {
+        const settings = getAppSettings();
+        showStudySelectionView(settings.userName);
+      });
+    }
   }
 
   // --- Initial Load ---
