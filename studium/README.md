@@ -2,6 +2,8 @@
 
 Dieser Ordner enthält **Quelldokumente** aus dem Studium, die als Grundlage für die App-Lerninhalte dienen.
 
+> **Hinweis:** Die offiziellen Studiengangs-Metadaten für die App befinden sich in `studies/`. Dieser Ordner hier ist nur für Rohmaterial/Notizen.
+
 ## Ordnerstruktur
 
 ```text

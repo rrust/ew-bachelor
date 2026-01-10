@@ -7,7 +7,7 @@ Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die
 **In 3 Schritten Content erstellen:**
 
 1. **Template kopieren** aus [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md)
-2. **Datei erstellen** in `content/XX-modul/XX-vorlesung/lecture-items/` oder `questions/`
+2. **Datei erstellen** in `content/{studyId}/XX-modul/XX-vorlesung/lecture-items/` oder `questions/`
 3. **Validieren** mit `validate-content.html` im Browser (unter "Tools")
 
 **Wichtigste Regeln:**
@@ -25,7 +25,7 @@ Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die
 
 ## Überblick
 
-Die App lädt Inhalte aus Markdown-Dateien mit YAML-Frontmatter. Alle Inhalte befinden sich im `content/` Ordner und werden über `content-list.json` registriert.
+Die App lädt Inhalte aus Markdown-Dateien mit YAML-Frontmatter. Alle Inhalte befinden sich im `content/{studyId}/` Ordner (z.B. `content/bsc-ernaehrungswissenschaften/`) und werden über `content-list.json` pro Studiengang registriert.
 
 ### Unterschied zu App-Entwicklung
 
@@ -42,9 +42,10 @@ Alle Inhalte sind modular aufgebaut für maximale Wartbarkeit und Übersichtlich
 
 ```text
 content/
-├── modules.json                          # Auto-generiert (nicht manuell bearbeiten!)
-├── content-list.json                     # Auto-generiert (nicht manuell bearbeiten!)
-└── 01-modul-name/                       # Modul-Ordner (nummeriert)
+└── {studyId}/                            # z.B. bsc-ernaehrungswissenschaften
+    ├── modules.json                      # Auto-generiert (nicht manuell bearbeiten!)
+    ├── content-list.json                 # Auto-generiert (nicht manuell bearbeiten!)
+    └── 01-modul-name/                    # Modul-Ordner (nummeriert)
     ├── module.md                         # Modul-Metadaten (Pflicht!)
     ├── achievements/                     # Achievements für dieses Modul (optional)
     │   └── 01-cheatsheet.md
@@ -466,23 +467,30 @@ npm run generate-manifest
 
 ### Neues Modul erstellen
 
-1. **Modul in `content/modules.json` definieren:**
+1. **Modul-Ordner erstellen:**
 
-   ```json
-   {
-     "id": "02-neues-modul",
-     "title": "Modul 2: Titel",
-     "description": "Beschreibung",
-     "ects": 6,
-     "status": "unlocked"
-   }
-   ```
-
-2. **Ordnerstruktur erstellen:**
+   Module werden automatisch aus `module.md` Dateien erkannt. Erstelle einfach den Ordner:
 
    ```bash
-   mkdir -p content/02-neues-modul/01-erste-vorlesung/lecture-items
-   mkdir -p content/02-neues-modul/01-erste-vorlesung/questions
+   mkdir -p content/bsc-ernaehrungswissenschaften/02-neues-modul/01-erste-vorlesung/lecture-items
+   mkdir -p content/bsc-ernaehrungswissenschaften/02-neues-modul/01-erste-vorlesung/questions
+   ```
+
+2. **`module.md` erstellen:**
+
+   ```markdown
+   ---
+   id: 02-neues-modul
+   title: "Modul 2: Titel"
+   description: "Beschreibung"
+   ects: 6
+   status: "freigeschaltet"
+   order: 2
+   ---
+
+   # Modul 2: Titel
+
+   Beschreibung des Moduls...
    ```
 
 3. **Vorlesungsdateien erstellen** (siehe Schritt-für-Schritt-Anleitung oben)
@@ -490,7 +498,7 @@ npm run generate-manifest
 4. **Manifest generieren:**
 
    ```bash
-   npm run generate-manifest
+   node generate-content-list.js
    ```
 
 5. **Validieren** mit `validate-content.html`

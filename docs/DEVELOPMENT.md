@@ -73,8 +73,9 @@ docs/               # Documentation
 | `js/lecture.js`             | Lecture player, content rendering           |
 | `js/quiz.js`                | Quiz logic, scoring                         |
 | `js/parser.js`              | Parses Markdown content                     |
-| `content/modules.json`      | Module metadata                             |
-| `content/content-list.json` | Registry of all content files               |
+| `content/{studyId}/modules.json`      | Module metadata per study           |
+| `content/{studyId}/content-list.json` | Registry of content files per study |
+| `studies/studies.json`                | Master list of all study programs   |
 
 ## Adding New Features
 

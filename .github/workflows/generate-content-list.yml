@@ -32,13 +32,13 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code content/content-list.json content/modules.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code content/*/content-list.json content/*/modules.json || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changed
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add content/content-list.json content/modules.json
+          git add content/*/content-list.json content/*/modules.json
           git commit -m "Auto-generate content-list.json and update modules.json"
           git push
