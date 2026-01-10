@@ -613,7 +613,7 @@ options:
 ### Typischer Content-Erstellungs-Zyklus
 
 1. **Planung:**
-   - Referenz in `studium/Module_BSc_Ernaehrungswissenschaften.md` prüfen
+   - Referenz in `studies/{studyId}/study.md` prüfen
    - Lernziele definieren
    - Themen festlegen
 
