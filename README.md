@@ -1,4 +1,4 @@
-# Study - Lernapp
+# Study
 
 Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesungen, Tests und Achievement-System.
 
@@ -27,25 +27,17 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 
 ## Content Development
 
-→ **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)** - Vollständige Anleitung
-→ **[docs/AI-Content-Creation-Setup.md](docs/AI-Content-Creation-Setup.md)** - AI-gestützte Content-Erstellung
-
-**Quick Start:**
-1. Templates aus [docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md) verwenden
-2. Content mit `validate-content.html` validieren
-3. Markdown linten: `npx markdownlint-cli2 "**/*.md"`
+→ [docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md) - Vollständige Anleitung \
+→ [docs/AI-Content-Creation-Setup.md](docs/AI-Content-Creation-Setup.md) - AI-gestützteContent-Erstellung \
+→ [studies-material/](studies-material/) - Quelldokumente & Referenzmaterial
 
 ## App Development
 
-→ **[docs/APP_CONCEPT.md](docs/APP_CONCEPT.md)** - Was die App macht  
-→ **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Setup & Tech Stack  
-→ **[GEMINI.md](GEMINI.md)** - AI Coding Instructions
+→ [docs/APP_CONCEPT.md](docs/APP_CONCEPT.md) - Was die App macht \
+→ [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) - Setup & Tech Stack \
+→ [GEMINI.md](GEMINI.md) - AI Coding Instructions
 
-## Planning & Reference
+## Konzepte
 
-**Konzepte:**
-- [docs/ACHIEVEMENT_SYSTEM.md](docs/ACHIEVEMENT_SYSTEM.md) - Achievement System Design
-- [WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
-
-**Referenz:**
-- [studies-material/](studies-material/) - Quelldokumente & Referenzmaterial
+→ [docs/ACHIEVEMENT_SYSTEM.md](docs/ACHIEVEMENT_SYSTEM.md) - Achievement System Design \
+→ [WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
