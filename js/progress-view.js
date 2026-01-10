@@ -110,21 +110,21 @@ function renderAchievements(stats) {
     {
       icon: '🎓',
       title: 'Erster Schritt',
-      description: 'Erstes Quiz abgeschlossen',
+      description: 'Erster Test abgeschlossen',
       unlocked: stats.quizzesCompleted >= 1,
       progress: Math.min(stats.quizzesCompleted, 1)
     },
     {
       icon: '📚',
       title: 'Fleißig',
-      description: '5 Quizze abgeschlossen',
+      description: '10 Tests abgeschlossen',
       unlocked: stats.quizzesCompleted >= 5,
       progress: Math.min(stats.quizzesCompleted / 5, 1)
     },
     {
       icon: '🌟',
       title: 'Experte',
-      description: '10 Quizze abgeschlossen',
+      description: '10 Tests abgeschlossen',
       unlocked: stats.quizzesCompleted >= 10,
       progress: Math.min(stats.quizzesCompleted / 10, 1)
     },
@@ -145,7 +145,7 @@ function renderAchievements(stats) {
     {
       icon: '💯',
       title: 'Vollständig',
-      description: 'Alle Quizze bestanden',
+      description: 'Alle Tests bestanden',
       unlocked:
         stats.totalQuizzes > 0 && stats.quizzesCompleted === stats.totalQuizzes,
       progress:
@@ -269,7 +269,7 @@ function renderModuleProgressList(modules, content, progress) {
               ${Math.round(moduleAverage)}%
             </div>
             <div class="text-xs text-gray-600 dark:text-gray-400">
-              ${completedLectures} / ${totalLectures} Quizze
+              ${completedLectures} / ${totalLectures} Tests
             </div>
           </div>
         </div>

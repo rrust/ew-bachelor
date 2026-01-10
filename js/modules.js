@@ -1,6 +1,45 @@
 // Modules module - Handles module cards and lecture lists
 
 /**
+ * Calculates estimated time for a module (sum of all lectures and quizzes)
+ * @param {string} moduleId - Module ID
+ * @param {Object} APP_CONTENT - Content object
+ * @returns {number} Total estimated time in minutes
+ */
+function getModuleEstimatedTime(moduleId, APP_CONTENT) {
+  const module = APP_CONTENT[moduleId];
+  if (!module || !module.lectures) {
+    return 0;
+  }
+
+  let totalTime = 0;
+  for (const lectureId in module.lectures) {
+    const lecture = module.lectures[lectureId];
+    totalTime += lecture.estimatedTime || 0;
+    totalTime += lecture.quizEstimatedTime || 0;
+  }
+
+  return totalTime;
+}
+
+/**
+ * Formats minutes into a readable time string (e.g., "1h 30min" or "25min")
+ * @param {number} minutes - Time in minutes
+ * @returns {string} Formatted time string
+ */
+function formatEstimatedTime(minutes) {
+  if (minutes < 60) {
+    return `${minutes} min`;
+  }
+  const hours = Math.floor(minutes / 60);
+  const remainingMinutes = minutes % 60;
+  if (remainingMinutes === 0) {
+    return `${hours} h`;
+  }
+  return `${hours} h ${remainingMinutes} min`;
+}
+
+/**
  * Calculates statistics for a module (quiz completion, average score, badge)
  * @param {string} moduleId - Module ID
  * @param {Object} APP_CONTENT - Content object
@@ -111,6 +150,8 @@ function createModuleCard(
   onClick
 ) {
   const stats = getModuleStats(moduleId, APP_CONTENT, getUserProgress);
+  const estimatedTime = getModuleEstimatedTime(moduleId, APP_CONTENT);
+  const formattedTime = formatEstimatedTime(estimatedTime);
 
   const card = document.createElement('div');
   card.className =
@@ -166,16 +207,34 @@ function createModuleCard(
               <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">${
                 moduleMeta.title
               }</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">${
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${
                 moduleMeta.description || ''
               }</p>
+              ${
+                estimatedTime > 0
+                  ? `<p class="text-xs text-gray-400 dark:text-gray-500">⏱️ Geschätzte Dauer: ${formattedTime}</p>`
+                  : ''
+              }
           </div>
       `;
 
   // Card Footer: Action buttons (right aligned)
   if (moduleMeta.status !== 'gesperrt') {
+    // Extract module number from ID (e.g., "01-" from "01-ernaehrungslehre-grundlagen")
+    const moduleNumber = moduleId.match(/^(\d+)-/)?.[1] || '';
+
     cardHTML +=
-      '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-end space-x-2">';
+      '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between">';
+
+    // Module number on the left
+    if (moduleNumber) {
+      cardHTML += `<span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Modul ${moduleNumber}</span>`;
+    } else {
+      cardHTML += '<div></div>'; // Empty div for spacing
+    }
+
+    // Action buttons on the right
+    cardHTML += '<div class="flex items-center space-x-2">';
     cardHTML += `<button class="view-lectures-btn text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesungen</button>`;
 
     // Exam button
@@ -195,6 +254,7 @@ function createModuleCard(
     cardHTML += `<button class="exam-btn ${examBtnClass}" ${
       !examEnabled ? 'disabled' : ''
     } title="${examTooltip}">Prüfung</button>`;
+    cardHTML += '</div>'; // Close action buttons
     cardHTML += '</div>'; // Close footer
   }
 
@@ -259,19 +319,39 @@ function displayLecturesForModule(
   // Hide player and overview, show lecture list
   document.getElementById('lecture-player').style.display = 'none';
   document.getElementById('lecture-overview').style.display = 'none';
-  document.getElementById('lecture-list-container').style.display = 'block';
+  const lectureListContainer = document.getElementById(
+    'lecture-list-container'
+  );
+  lectureListContainer.style.display = 'block';
   showView('lecture');
 
-  const lectureContentDiv = document.getElementById('lecture-content');
-  lectureContentDiv.innerHTML = ''; // Clear previous player UI
+  // Clear and inject header
+  lectureListContainer.innerHTML = '';
+  if (window.injectHeader) {
+    window.injectHeader('lecture-list-container', 'lecture', {
+      moduleTitle: moduleData?.title || moduleId
+    });
+  }
 
-  const header = document.createElement('h2');
-  header.className = 'text-2xl font-bold mb-4';
-  header.textContent = `Vorlesungen für ${moduleData?.title || moduleId}`;
-  lectureContentDiv.appendChild(header);
+  // Recreate the content structure
+  const container = document.createElement('div');
+  container.className = 'container mx-auto px-8';
+  const lectureContentDiv = document.createElement('div');
+  lectureContentDiv.id = 'lecture-content';
+  lectureContentDiv.className =
+    'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
+  container.appendChild(lectureContentDiv);
+  lectureListContainer.appendChild(container);
 
-  const lectureList = document.createElement('ul');
-  lectureList.className = 'space-y-4';
+  // Set up back button listener
+  const backButton = document.getElementById('back-to-modules-button');
+  if (backButton) {
+    backButton.addEventListener('click', () => {
+      showView('moduleMap');
+      updateURL('/', 'Module Overview');
+    });
+  }
+
   for (const lectureId in module.lectures) {
     const lecture = module.lectures[lectureId];
     if (lecture.items.length === 0) continue; // Don't show empty lectures
@@ -279,30 +359,19 @@ function displayLecturesForModule(
     const lectureProgress =
       progress?.modules?.[moduleId]?.lectures?.[lectureId];
 
-    const listItem = document.createElement('li');
-    listItem.className =
-      'p-4 bg-gray-50 dark:bg-gray-700 rounded-lg flex justify-between items-center';
+    const card = document.createElement('div');
+    card.className =
+      'bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[280px] border border-gray-200 dark:border-gray-700';
 
-    let contentHTML = `<div class="flex-grow">
-              <h3 class="font-bold">${
+    // Card Header with badge
+    let contentHTML = `<div class="px-5 py-4 border-b dark:border-gray-700">`;
+    contentHTML += `<div class="flex justify-between items-start mb-2">
+              <h3 class="font-bold text-lg text-gray-900 dark:text-gray-100 flex-grow pr-2">${
                 lecture.topic || lectureId.replace(/-/g, ' ')
               }</h3>`;
 
-    // Add description if available
-    if (lecture.description) {
-      contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">${lecture.description}</p>`;
-    }
-
-    contentHTML += `</div>`;
-
-    contentHTML += '<div class="flex-shrink-0 flex items-center space-x-2">';
-    contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Vorlesung</button>`;
-    contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm">Übersicht</button>`;
-
+    // Add quiz badge in header if available
     if (lecture.quiz && lecture.quiz.length > 0) {
-      contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-600 text-sm">Quiz</button>`;
-
-      // Determine badge emoji
       let badgeEmoji = '';
       let tooltipText = '';
 
@@ -322,25 +391,74 @@ function displayLecturesForModule(
           0
         )}%`;
       } else {
-        // No score yet - show placeholder
         badgeEmoji = '⚪';
         tooltipText = 'Quiz noch nicht absolviert';
       }
-
-      // Add badge after quiz button with tooltip
-      contentHTML += `<span class="text-2xl ${
+      contentHTML += `<span class="text-2xl flex-shrink-0 ${
         lectureProgress?.badge ? '' : 'text-gray-300'
       }" title="${tooltipText}">${badgeEmoji}</span>`;
     }
-    contentHTML += '</div>';
+    contentHTML += `</div>`;
 
-    listItem.innerHTML = contentHTML;
-    lectureList.appendChild(listItem);
+    // Time info in header
+    const lectureTime = lecture.estimatedTime || 0;
+    const quizTime = lecture.quizEstimatedTime || 0;
+    const totalTime = lectureTime + quizTime;
+    if (totalTime > 0) {
+      contentHTML += `<div class="flex items-center space-x-3 text-xs text-gray-500 dark:text-gray-400">`;
+      if (lectureTime > 0) {
+        contentHTML += `<span class="flex items-center">📚 ${formatEstimatedTime(
+          lectureTime
+        )}</span>`;
+      }
+      if (quizTime > 0) {
+        contentHTML += `<span class="flex items-center">✏️ ${formatEstimatedTime(
+          quizTime
+        )}</span>`;
+      }
+      contentHTML += `</div>`;
+    }
+    contentHTML += `</div>`; // Close header
+
+    // Card Content - Description
+    contentHTML += `<div class="flex-grow px-5 py-4">`;
+    if (lecture.description) {
+      contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">${lecture.description}</p>`;
+    }
+    contentHTML += `</div>`;
+
+    // Card Footer - Action buttons with lecture number
+    // Extract lecture number from ID (e.g., "01-" from "01-grundlagen-zellbiologie")
+    const lectureNumber = lectureId.match(/^(\d+)-/)?.[1] || '';
+
+    contentHTML += `<div class="px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between">`;
+
+    // Lecture number on the left
+    if (lectureNumber) {
+      contentHTML += `<span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Vorlesung ${lectureNumber}</span>`;
+    } else {
+      contentHTML += '<div></div>'; // Empty div for spacing
+    }
+
+    // Action buttons on the right
+    contentHTML += '<div class="flex items-center space-x-2">';
+    contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesung</button>`;
+    contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Übersicht</button>`;
+
+    if (lecture.quiz && lecture.quiz.length > 0) {
+      contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200">Test</button>`;
+    }
+
+    contentHTML += '</div>'; // Close action buttons
+
+    contentHTML += '</div>'; // Close footer
+
+    card.innerHTML = contentHTML;
+    lectureContentDiv.appendChild(card);
   }
-  lectureContentDiv.appendChild(lectureList);
 
   // Add event listeners for the new buttons
-  lectureList.addEventListener('click', (e) => {
+  lectureContentDiv.addEventListener('click', (e) => {
     const button = e.target.closest('button[data-action]');
     if (!button) return;
 

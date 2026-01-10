@@ -1,9 +1,11 @@
 // Main JavaScript file for the Nutritional Science Learning App
 
+// Global state (accessible by all modules)
+let APP_CONTENT = {};
+let MODULES = [];
+
 document.addEventListener('DOMContentLoaded', async () => {
   // --- State Management ---
-  let APP_CONTENT = {};
-  let MODULES = []; // Will be loaded from modules.json
   let currentModuleId = null;
   let currentLectureId = null;
 
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const views = {
     welcome: document.getElementById('welcome-view'),
     moduleMap: document.getElementById('module-map-view'),
+    achievements: document.getElementById('achievements-view'),
     lecture: document.getElementById('lecture-view'),
     quiz: document.getElementById('quiz-view'),
     quizResults: document.getElementById('quiz-results-view'),
@@ -27,7 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const buttons = {
     start: document.getElementById('start-button'),
-    backToMap: document.getElementById('back-to-map-button'),
     backToLectures: document.getElementById('back-to-lectures-button'),
     startQuiz: document.getElementById('start-quiz-button'),
     prevItem: document.getElementById('prev-item-button'),
@@ -200,14 +202,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   async function init() {
     // Inject headers into views using components.js
     injectHeader('module-map-view', 'moduleMap');
+    injectHeader('achievements-view', 'achievements');
     injectHeader('tools-view', 'tools');
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
 
     // Load modules metadata from JSON
     MODULES = await loadModules();
-    // Load content
-    APP_CONTENT = await parseContent();
+    window.MODULES = MODULES; // Expose globally
+
+    // Load content (returns {content, achievements})
+    const parsedData = await parseContent();
+    APP_CONTENT = parsedData.content || parsedData; // Support both old and new format
+    APP_CONTENT.achievements = parsedData.achievements || {};
+    window.APP_CONTENT = APP_CONTENT; // Expose globally
 
     const progress = getUserProgress();
     if (progress && progress.userName) {
@@ -787,12 +795,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function setupNavigationListeners() {
-    buttons.backToMap.addEventListener('click', () => {
-      loadModuleCards(); // Reload modules in case progress was made
-      showView('moduleMap');
-      updateURL('/', 'Module Overview');
-    });
-
     buttons.backToLectures.addEventListener('click', () => {
       displayLecturesForModule(currentModuleId);
     });
@@ -820,6 +822,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         showView('map');
         renderModuleMap(MODULES, APP_CONTENT);
         updateURL('/map', 'Studienstruktur Map');
+      }
+
+      // Achievements navigation
+      else if (target.id && target.id.startsWith('nav-achievements')) {
+        updateGreeting();
+        showView('achievements');
+        renderAchievementsGallery('all');
+        updateURL('/achievements', 'Achievements');
       }
 
       // Progress navigation
@@ -910,6 +920,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupNavigationListeners();
     setupLectureListeners();
     setupQuizListeners();
+    setupAchievementsListeners();
   }
 
   // --- Initial Load ---

@@ -1,6 +1,7 @@
 ---
 topic: 'Makronährstoffe im Detail'
 description: 'Detaillierte Betrachtung der drei Makronährstoffe: Kohlenhydrate, Proteine und Fette. Ihre Funktionen, Energiegehalt und Bedeutung für den menschlichen Körper.'
+estimatedTime: 20
 ---
 
 # Makronährstoffe im Detail
