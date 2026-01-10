@@ -1,6 +1,11 @@
-# Nutritional Science Learning App
+# Study - Lernapp
 
-Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesungen, Tests und Achievement-System.
+Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesungen, Tests und Achievement-System.
+
+**Aktuell unterstützte Studiengänge:**
+
+- BSc Ernährungswissenschaften (Uni Wien)
+- BSc Lebensmittel- und Biotechnologie (BOKU) - *in Entwicklung*
 
 ## 🌐 Live App
 

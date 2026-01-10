@@ -50,7 +50,15 @@ js/                 # Feature modules
   ├── modules.js    # Module cards
   ├── parser.js     # Content parsing
   └── ...           # Other utilities
-content/            # Markdown learning content
+content/            # Learning content
+  ├── studies.json  # Master list of study programs
+  ├── bsc-ernaehrungswissenschaften/  # Study program 1
+  │   ├── modules.json
+  │   ├── content-list.json
+  │   └── 01-modul-name/...
+  └── bsc-lebensmittel-biotechnologie/  # Study program 2
+      └── ...
+test-data/          # Test progress data for debugging
 docs/               # Documentation
 ```
 
@@ -91,3 +99,24 @@ The codebase follows a simple pattern:
 - **Code/Comments:** English
 - **User-facing text:** German
 - **Commit messages:** English
+
+## Developer Tools
+
+| Tool                        | Purpose                                      |
+| --------------------------- | -------------------------------------------- |
+| `validate-content.html`     | Browser-based content validator              |
+| `validate-content.js`       | CLI content validator (no npm deps)          |
+| `generate-content-list.js`  | Generates content-list.json and modules.json |
+| `generate-test-progress.js` | Creates mock progress data for testing       |
+
+### Testing Progress States
+
+```bash
+# Generate test progress data
+node generate-test-progress.js
+
+# Import via browser: Tools → Import Progress
+# Select a file from test-data/ folder
+```
+
+Scenarios: `fresh`, `beginner`, `intermediate`, `advanced`, `complete`, `mixed`
