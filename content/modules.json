@@ -11,7 +11,10 @@
       "02-makronaehrstoffe-detail",
       "03-fette-oele"
     ],
-    "achievements": ["cell-biology-cheatsheet", "makronaehrstoffe-cheatsheet"]
+    "achievements": [
+      "cell-biology-cheatsheet",
+      "makronaehrstoffe-cheatsheet"
+    ]
   },
   {
     "id": "02-chemie-grundlagen",
