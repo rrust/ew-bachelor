@@ -21,7 +21,8 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 
 ## Content Development
 
-→ **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)** - Vollständige Anleitung  
+→ **[docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)** - Vollständige Anleitung
+→ **[docs/AI-Content-Creation-Setup.md](docs/AI-Content-Creation-Setup.md)** - AI-gestützte Content-Erstellung
 
 **Quick Start:**
 1. Templates aus [docs/CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md) verwenden
