@@ -206,11 +206,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           startQuiz();
           return true;
         } else {
-          startLecture(route.moduleId, route.lectureId);
-          if (route.itemIndex !== undefined) {
-            currentItemIndex = route.itemIndex;
-            renderCurrentLectureItem();
-          }
+          // Pass itemIndex to startLecture so it starts at the correct position
+          startLecture(route.moduleId, route.lectureId, route.itemIndex);
           return true;
         }
       } else {
@@ -526,7 +523,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // --- Lecture Player Logic (using LectureModule) ---
-  function startLecture(moduleId, lectureId) {
+  function startLecture(moduleId, lectureId, startIndex = 0) {
     currentModuleId = moduleId;
     currentLectureId = lectureId;
     window.LectureModule.startLecture(
@@ -542,7 +539,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       },
       updateURL,
       renderCurrentLectureItem,
-      showView
+      showView,
+      startIndex
     );
   }
 

@@ -21,7 +21,8 @@ function startLecture(
   elements,
   updateURL,
   renderCurrentLectureItem,
-  showView
+  showView,
+  startIndex = 0
 ) {
   const lecture = APP_CONTENT[moduleId]?.lectures[lectureId];
 
@@ -31,7 +32,8 @@ function startLecture(
   }
 
   lectureState.currentItems = lecture.items;
-  lectureState.currentIndex = 0;
+  // Use startIndex if valid, otherwise default to 0
+  lectureState.currentIndex = (startIndex >= 0 && startIndex < lecture.items.length) ? startIndex : 0;
 
   // Show/hide header quiz button based on quiz availability
   const lectureQuizButton = document.getElementById('lecture-quiz-button');
@@ -44,7 +46,7 @@ function startLecture(
   const moduleData = MODULES.find((m) => m.id === moduleId);
   const lectureTopic = lecture.topic || lectureId;
   updateURL(
-    `/module/${moduleId}/lecture/${lectureId}/item/0`,
+    `/module/${moduleId}/lecture/${lectureId}/item/${lectureState.currentIndex}`,
     `${lectureTopic} - ${moduleData?.title || 'Module'}`
   );
 
@@ -415,13 +417,19 @@ async function renderMermaidInContent(container) {
     if (!preElement || preElement.tagName !== 'PRE') continue;
 
     // Create a container for the rendered diagram
-    const diagramId = `mermaid-inline-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    const diagramId = `mermaid-inline-${Date.now()}-${Math.random()
+      .toString(36)
+      .substr(2, 9)}`;
     const diagramContainer = document.createElement('div');
-    diagramContainer.className = 'flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg my-4';
+    diagramContainer.className =
+      'flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg my-4';
     diagramContainer.id = diagramId;
 
     try {
-      const { svg } = await window.mermaid.render(`render-${diagramId}`, diagramCode);
+      const { svg } = await window.mermaid.render(
+        `render-${diagramId}`,
+        diagramCode
+      );
       diagramContainer.innerHTML = svg;
       preElement.replaceWith(diagramContainer);
     } catch (error) {
