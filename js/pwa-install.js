@@ -147,9 +147,15 @@ window.PWAInstall = (function () {
 
   // Initialize on DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', () => {
+      init();
+      // Initial update of button state
+      updateInstallButton();
+    });
   } else {
     init();
+    // Initial update of button state
+    updateInstallButton();
   }
 
   // Public API

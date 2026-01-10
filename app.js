@@ -343,21 +343,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     const studies = await loadStudies();
     setStudies(studies);
 
-    // 2. Inject headers into views (now studies are available for title)
+    // 2. Check for saved user settings and migrate legacy progress
+    const settings = getAppSettings();
+
+    // Migrate legacy progress if needed (sets activeStudyId)
+    if (!settings.activeStudyId && studies.length > 0) {
+      migrateLegacyProgress(studies[0].id);
+    }
+
+    // 3. Inject headers into views (now studies AND activeStudyId are available)
     injectHeader('module-map-view', 'moduleMap');
     injectHeader('achievements-view', 'achievements');
     injectHeader('tools-view', 'tools');
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
     injectHeader('search-view', 'search');
-
-    // 3. Check for saved user settings and migrate legacy progress
-    const settings = getAppSettings();
-
-    // Migrate legacy progress if needed
-    if (!settings.activeStudyId && studies.length > 0) {
-      migrateLegacyProgress(studies[0].id);
-    }
 
     // 4. Determine if user needs to enter name or select study
     const currentSettings = getAppSettings();
@@ -750,6 +750,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       ) {
         if (window.updateGreeting) window.updateGreeting();
         showView('tools');
+        // Update PWA install button state
+        if (window.PWAInstall && window.PWAInstall.updateInstallButton) {
+          window.PWAInstall.updateInstallButton();
+        }
         updateURL('/tools', 'Tools');
       }
 
