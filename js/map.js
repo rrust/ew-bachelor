@@ -175,7 +175,7 @@ async function renderModuleMap(modules, content) {
     if (window.mermaid) {
       // Use mermaid.render() which is better for dynamic rendering
       const { svg } = await window.mermaid.render(diagramId, mermaidCode);
-      
+
       // Insert the rendered SVG
       mapContainer.innerHTML = `
         <div class="w-full h-full overflow-auto p-8 flex items-start justify-center">

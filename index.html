@@ -635,81 +635,8 @@
       <!-- Header injected by components.js -->
 
       <div
-        class="bg-white dark:bg-gray-800 shadow-md px-8 py-4 flex items-center justify-between flex-shrink-0"
-      >
-        <div>
-          <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-            📍 Studienstruktur Übersicht
-          </h2>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Diese Map zeigt alle Module und Vorlesungen in einer visuellen
-            Struktur.
-          </p>
-        </div>
-        <div class="flex items-center space-x-2">
-          <button
-            id="map-zoom-in"
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold p-2 rounded-md transition duration-200"
-            title="Vergrößern"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
-              ></path>
-            </svg>
-          </button>
-          <button
-            id="map-zoom-out"
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold p-2 rounded-md transition duration-200"
-            title="Verkleinern"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7"
-              ></path>
-            </svg>
-          </button>
-          <button
-            id="map-reset-zoom"
-            class="bg-gray-500 hover:bg-gray-600 text-white font-bold p-2 rounded-md transition duration-200"
-            title="Zurücksetzen"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div
         id="map-diagram-container"
-        class="flex-1 overflow-hidden bg-white dark:bg-gray-800 relative"
+        class="flex-1 overflow-hidden bg-gray-100 dark:bg-gray-900 relative"
         style="min-height: 0"
       >
         <!-- Mermaid diagram will be rendered here -->
@@ -718,6 +645,37 @@
         >
           Laden...
         </div>
+      </div>
+
+      <!-- Zoom controls floating -->
+      <div class="absolute bottom-4 right-4 flex items-center space-x-2 z-10">
+        <button
+          id="map-zoom-in"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold p-2 rounded-md shadow-lg transition duration-200"
+          title="Vergrößern"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+          </svg>
+        </button>
+        <button
+          id="map-zoom-out"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold p-2 rounded-md shadow-lg transition duration-200"
+          title="Verkleinern"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7"></path>
+          </svg>
+        </button>
+        <button
+          id="map-reset-zoom"
+          class="bg-gray-500 hover:bg-gray-600 text-white font-bold p-2 rounded-md shadow-lg transition duration-200"
+          title="Zurücksetzen"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+          </svg>
+        </button>
       </div>
     </div>
 
