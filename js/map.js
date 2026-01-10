@@ -161,11 +161,8 @@ async function renderModuleMap(modules, content) {
     return;
   }
 
-  console.log('Rendering map with modules:', modules, 'content:', content);
-
   // Generate Mermaid code
   const mermaidCode = generateModuleMapGraph(modules, content);
-  console.log('Generated Mermaid code:', mermaidCode);
 
   // Create a unique ID for this diagram
   const diagramId = `mermaid-map-${Date.now()}`;
@@ -182,18 +179,9 @@ ${mermaidCode}
   // Render with Mermaid
   try {
     if (window.mermaid) {
-      console.log('Mermaid available, rendering...');
       await window.mermaid.run({
         querySelector: `#${diagramId}`
       });
-      console.log('Mermaid rendering complete');
-
-      // Check if SVG was created
-      const svg = mapContainer.querySelector('svg');
-      console.log('SVG element found:', svg);
-      if (svg) {
-        console.log('SVG dimensions:', svg.getBoundingClientRect());
-      }
 
       // Initialize pan and zoom after rendering
       setTimeout(() => initializeMapPanZoom(), 100);
@@ -223,11 +211,8 @@ function initializeMapPanZoom() {
   const svg = mapContainer?.querySelector('svg');
 
   if (!wrapper || !svg) {
-    console.log('Pan/zoom init: wrapper or svg not found');
     return;
   }
-
-  console.log('Initializing pan and zoom');
 
   // Pan functionality
   wrapper.style.cursor = 'grab';

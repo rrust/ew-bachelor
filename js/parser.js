@@ -75,6 +75,49 @@ async function loadModules() {
 }
 
 /**
+ * Parses achievement content from markdown with frontmatter
+ * @param {string} content The raw achievement file content
+ * @param {string} filePath The file path for debugging
+ * @returns {object|null} Parsed achievement object or null
+ */
+function parseAchievement(content, filePath) {
+  try {
+    const documents = parseMultiDocument(content);
+    if (documents.length === 0) return null;
+
+    const doc = documents[0];
+    const achievement = {
+      id: doc.attributes.id,
+      title: doc.attributes.title,
+      description: doc.attributes.description,
+      icon: doc.attributes.icon || '🏆',
+      contentType: doc.attributes.contentType || 'markdown',
+      unlockCondition: doc.attributes.unlockCondition || {},
+      defaultDuration: doc.attributes.defaultDuration || 30,
+      extensionDuration: doc.attributes.extensionDuration || 14,
+      warningThreshold: doc.attributes.warningThreshold || 7,
+      content: doc.body ? marked.parse(doc.body) : '',
+      contentMarkdown: doc.body || ''
+    };
+
+    // Validate required fields
+    if (
+      !achievement.id ||
+      !achievement.title ||
+      !achievement.unlockCondition.type
+    ) {
+      console.error('Achievement missing required fields:', filePath);
+      return null;
+    }
+
+    return achievement;
+  } catch (error) {
+    console.error('Error parsing achievement:', filePath, error);
+    return null;
+  }
+}
+
+/**
  * Gets the base path for the application, accounting for GitHub Pages subdirectory.
  * @returns {string} The base path (e.g., '' for root, '/ew-bachelor/' for GitHub Pages)
  */
@@ -96,6 +139,9 @@ async function parseContent() {
 
   try {
     const basePath = getBasePath();
+    const content = {};
+    const achievements = {}; // New: Store achievements separately
+
     const contentListPath =
       basePath === '/'
         ? 'content/content-list.json'
@@ -120,22 +166,48 @@ async function parseContent() {
         // Support:
         // - lecture.md: Lecture metadata/description
         // - lecture-items/XX-name.md: Individual items (new format)
+        // - achievements/XX-name.md: Achievement files (new)
         // - Old: lecture.md with multi-document items (legacy support)
         const pathParts = filePath.split('/');
-        if (pathParts.length < 4) continue;
+        if (pathParts.length < 3) continue;
 
         const moduleId = pathParts[1];
-        const lectureId = pathParts[2];
-        const fileName = pathParts[3];
+        const secondPart = pathParts[2];
+
+        // Check if this is an achievement file (module/achievements/file.md)
+        const isAchievement =
+          secondPart === 'achievements' && pathParts.length >= 4;
+
+        // For lecture content, we need at least 4 parts
+        if (!isAchievement && pathParts.length < 4) continue;
+
+        const lectureId = isAchievement ? null : pathParts[2];
+        const fileName = isAchievement ? pathParts[3] : pathParts[3];
         const isLectureItems =
-          fileName === 'lecture-items' && pathParts.length >= 5;
-        const isLectureMetadata = fileName === 'lecture.md' && !isLectureItems;
-        const isQuizMetadata = fileName === 'quiz.md' && pathParts.length === 4;
+          !isAchievement &&
+          fileName === 'lecture-items' &&
+          pathParts.length >= 5;
+        const isLectureMetadata =
+          !isAchievement && fileName === 'lecture.md' && !isLectureItems;
+        const isQuizMetadata =
+          !isAchievement && fileName === 'quiz.md' && pathParts.length === 4;
         const isQuizQuestion =
-          fileName === 'questions' && pathParts.length >= 5;
+          !isAchievement && fileName === 'questions' && pathParts.length >= 5;
 
         // Determine if this is a quiz file (legacy format - deprecated)
-        const isQuiz = fileName === 'quiz.md' && pathParts.length === 4;
+        const isQuiz =
+          !isAchievement && fileName === 'quiz.md' && pathParts.length === 4;
+
+        // Handle achievement files
+        if (isAchievement) {
+          const achievement = parseAchievement(fileContent, filePath);
+          if (achievement) {
+            // Store achievement with module association
+            achievement.moduleId = moduleId;
+            achievements[achievement.id] = achievement;
+          }
+          continue;
+        }
 
         if (!content[moduleId]) {
           content[moduleId] = { lectures: {} };
@@ -346,11 +418,12 @@ async function parseContent() {
     }
 
     console.log('Parsed Content:', content);
-    return content;
+    console.log('Parsed Achievements:', achievements);
+    return { content, achievements };
   } catch (error) {
     console.error('Critical error parsing content:', error);
     alert('Fehler beim Laden der Lerninhalte. Bitte aktualisiere die Seite.');
-    return {};
+    return { content: {}, achievements: {} };
   }
 }
 

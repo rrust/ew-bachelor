@@ -1,10 +1,19 @@
 # Nutritional Science Learning App
 
-Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesungen, Quizzes und Selbsttests.
+Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesungen, Quizzes, Selbsttests und **Achievement-System** zur Motivation und Wiederholung.
 
 ## 🌐 Live App
 
 **[https://rrust.github.io/ew-bachelor/](https://rrust.github.io/ew-bachelor/)**
+
+## Features
+
+- 📚 **Modulare Vorlesungen** mit verschiedenen Content-Typen
+- 🎯 **Tests & Self-Assessments** für Wissensüberprüfung
+- 🏆 **Achievement-System** mit nützlichen Lernhilfen (Cheat Sheets, etc.)
+- 📊 **Progress Tracking** mit Badges und Statistiken
+- 🗺️ **Studienstruktur-Map** zur Übersicht
+- 🌓 **Dark Mode** Support
 
 ## Content Development
 
@@ -67,5 +76,6 @@ Für technische Details zur App-Entwicklung, siehe:
 
 ### Planning
 
+- **[WIP/Achievement_System_Concept.md](WIP/Achievement_System_Concept.md)** - Achievement System Design & Implementation
 - **[WIP/Learning_Flow_Concept.md](WIP/Learning_Flow_Concept.md)** - Feature Planning
 - **[WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md)** - Enhancement Ideas

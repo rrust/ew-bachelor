@@ -33,7 +33,11 @@ function updateLectureProgress(moduleId, lectureId, score) {
 
   // Ensure module and lecture objects exist
   if (!progress.modules[moduleId]) {
-    progress.modules[moduleId] = { status: 'in-progress', lectures: {} };
+    progress.modules[moduleId] = {
+      status: 'in-progress',
+      lectures: {},
+      achievements: {}
+    };
   }
   if (!progress.modules[moduleId].lectures[lectureId]) {
     progress.modules[moduleId].lectures[lectureId] = {};
@@ -56,6 +60,23 @@ function updateLectureProgress(moduleId, lectureId, score) {
 
   saveUserProgress(progress);
   console.log('Progress updated:', progress);
+
+  // Check for achievement unlocks after progress is saved
+  if (typeof window.checkAchievementUnlocksForQuiz === 'function') {
+    const unlockedAchievements = window.checkAchievementUnlocksForQuiz(
+      moduleId,
+      lectureId,
+      badge
+    );
+
+    // Show notification for newly unlocked achievements
+    if (unlockedAchievements.length > 0) {
+      unlockedAchievements.forEach((achievement) => {
+        console.log('🏆 Achievement unlocked:', achievement.title);
+        // TODO: Show UI notification
+      });
+    }
+  }
 }
 
 // Resets the progress for a specific lecture

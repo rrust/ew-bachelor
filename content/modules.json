@@ -10,7 +10,8 @@
       "01-grundlagen-zellbiologie",
       "02-makronaehrstoffe-detail",
       "03-fette-oele"
-    ]
+    ],
+    "achievements": ["cell-biology-cheatsheet"]
   },
   {
     "id": "02-chemie-grundlagen",

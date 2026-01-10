@@ -3,12 +3,33 @@
 
 /**
  * Creates the application header with navigation and theme toggle
- * @param {string} view - Current view name ('moduleMap', 'tools', 'map', 'progress')
+ * @param {string} view - Current view name ('moduleMap', 'tools', 'map', 'progress', 'lecture')
+ * @param {Object} options - Optional parameters like module title for lecture view
  * @returns {HTMLElement} Header element
  */
-function createAppHeader(view = 'moduleMap') {
+function createAppHeader(view = 'moduleMap', options = {}) {
   const header = document.createElement('header');
   header.className = 'bg-white dark:bg-gray-800 shadow-md mb-8';
+
+  // Special header for lecture list view with back button
+  if (view === 'lecture') {
+    header.innerHTML = `
+      <div class="container mx-auto px-8 py-4">
+        <button
+          id="back-to-modules-button"
+          class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
+        >
+          &larr; Zurück zur Modulübersicht
+        </button>
+        ${
+          options.moduleTitle
+            ? `<h2 class="text-2xl font-bold mt-4">Vorlesungen für ${options.moduleTitle}</h2>`
+            : ''
+        }
+      </div>
+    `;
+    return header;
+  }
 
   const idSuffix = view === 'moduleMap' ? '' : `-${view}`;
   const activeNav = view; // Which nav button is active
@@ -35,6 +56,16 @@ function createAppHeader(view = 'moduleMap') {
           }"
         >
           Module
+        </button>
+        <button
+          id="nav-achievements${idSuffix}"
+          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200 ${
+            activeNav === 'achievements'
+              ? 'text-blue-600 dark:text-blue-400 font-bold'
+              : ''
+          }"
+        >
+          🏆 Achievements
         </button>
         <button
           id="nav-map${idSuffix}"
@@ -102,14 +133,15 @@ function createAppHeader(view = 'moduleMap') {
 /**
  * Injects header into a view container
  * @param {string} viewId - DOM id of the view container
- * @param {string} viewName - Name identifier for the view ('moduleMap', 'tools', 'map', 'progress')
+ * @param {string} viewName - Name identifier for the view ('moduleMap', 'tools', 'map', 'progress', 'lecture')
+ * @param {Object} options - Optional parameters (e.g., moduleTitle for lecture view)
  */
-function injectHeader(viewId, viewName) {
+function injectHeader(viewId, viewName, options = {}) {
   const viewElement = document.getElementById(viewId);
   if (!viewElement) return;
 
   // Create header and insert as first child
-  const header = createAppHeader(viewName);
+  const header = createAppHeader(viewName, options);
   viewElement.insertBefore(header, viewElement.firstChild);
 
   // Update theme icons after header injection

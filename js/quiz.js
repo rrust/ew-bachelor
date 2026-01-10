@@ -272,7 +272,7 @@ function showQuizResults(score, isExisting, displays, buttons, showView) {
   if (isExisting) {
     displays.resultsTitle.textContent = 'Bisheriges Ergebnis';
     displays.resultsSubtitle.textContent =
-      'Du hast dieses Quiz bereits abgeschlossen mit:';
+      'Du hast diesen Test bereits abgeschlossen mit:';
     if (window.showElement) {
       window.showElement(displays.retakePrompt);
       window.showElement(buttons.retakeQuiz);
@@ -281,7 +281,7 @@ function showQuizResults(score, isExisting, displays, buttons, showView) {
       buttons.retakeQuiz.style.display = 'block';
     }
   } else {
-    displays.resultsTitle.textContent = 'Quiz abgeschlossen!';
+    displays.resultsTitle.textContent = 'Test abgeschlossen!';
     displays.resultsSubtitle.textContent = 'Dein Ergebnis:';
     if (window.hideElement) {
       window.hideElement(displays.retakePrompt);
