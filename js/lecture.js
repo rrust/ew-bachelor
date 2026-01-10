@@ -33,6 +33,12 @@ function startLecture(
   lectureState.currentItems = lecture.items;
   lectureState.currentIndex = 0;
 
+  // Show/hide header quiz button based on quiz availability
+  const lectureQuizButton = document.getElementById('lecture-quiz-button');
+  if (lectureQuizButton) {
+    lectureQuizButton.style.display = lecture.quiz && lecture.quiz.length > 0 ? 'block' : 'none';
+  }
+
   // Update URL
   const moduleData = MODULES.find((m) => m.id === moduleId);
   const lectureTopic = lecture.topic || lectureId;

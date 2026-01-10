@@ -133,7 +133,8 @@ function renderCurrentQuizQuestion(
   if (isMultipleAnswers) {
     const hintEl = document.createElement('p');
     hintEl.className = 'text-sm text-gray-600 dark:text-gray-400 mb-4 italic';
-    hintEl.textContent = 'Hinweis: Mehrere Antworten können richtig sein. Wähle alle zutreffenden Optionen.';
+    hintEl.textContent =
+      'Hinweis: Mehrere Antworten können richtig sein. Wähle alle zutreffenden Optionen.';
     quizContentDiv.appendChild(hintEl);
   }
 
@@ -161,15 +162,15 @@ function renderCurrentQuizQuestion(
   submitButton.onclick = () => {
     let selectedValue;
     let correctAnswer;
-    
+
     if (isMultipleAnswers) {
       // Collect all checked checkboxes
       const selectedCheckboxes = document.querySelectorAll(
         'input[name="quiz-option-checkbox"]:checked'
       );
-      selectedValue = Array.from(selectedCheckboxes).map(cb => cb.value);
+      selectedValue = Array.from(selectedCheckboxes).map((cb) => cb.value);
       correctAnswer = questionData.correctAnswers; // Note: plural for multiple choice
-      
+
       if (selectedValue.length === 0) {
         alert('Bitte wähle mindestens eine Antwort aus.');
         return;
@@ -186,7 +187,7 @@ function renderCurrentQuizQuestion(
       selectedValue = selectedOption.value;
       correctAnswer = questionData.correctAnswer; // Note: singular
     }
-    
+
     checkAnswer(selectedValue, correctAnswer);
   };
   quizContentDiv.appendChild(submitButton);
@@ -214,20 +215,21 @@ function checkAnswer(
   renderCurrentQuizQuestion
 ) {
   let isCorrect = false;
-  
+
   // Handle multiple choice with multiple answers
   if (Array.isArray(correctAnswer)) {
     const selectedSet = new Set(selectedValue);
     const correctSet = new Set(correctAnswer);
-    
+
     // Correct only if sets are identical (all correct selected, no wrong selected)
-    isCorrect = selectedSet.size === correctSet.size && 
-                [...selectedSet].every(answer => correctSet.has(answer));
+    isCorrect =
+      selectedSet.size === correctSet.size &&
+      [...selectedSet].every((answer) => correctSet.has(answer));
   } else {
     // Handle single answer multiple choice
     isCorrect = selectedValue === correctAnswer;
   }
-  
+
   if (isCorrect) {
     quizState.userScore++;
     displays.quizLiveScore.textContent = `Punkte: ${quizState.userScore}`;

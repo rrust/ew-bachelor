@@ -13,7 +13,7 @@ correctAnswers:
   - 'Der Golgi-Apparat modifiziert und sortiert Proteine'
 ---
 
-**Erklärung:** 
+**Erklärung:**
 
 **Richtig:**
 - Mitochondrien sind die "Kraftwerke" der Zelle und produzieren ATP durch Zellatmung

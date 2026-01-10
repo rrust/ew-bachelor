@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     retakeQuiz: document.getElementById('retake-quiz-button'),
     resultsToMap: document.getElementById('results-to-map-button'),
     lectureOverview: document.getElementById('lecture-overview-button'),
+    lectureQuizButton: document.getElementById('lecture-quiz-button'),
     backToPlayer: document.getElementById('back-to-player-button'),
     // These will be set after headers are injected
     navModule: null,
@@ -847,6 +848,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   function setupLectureListeners() {
     buttons.lectureOverview.addEventListener('click', () => {
       showLectureOverview();
+    });
+
+    buttons.lectureQuizButton.addEventListener('click', () => {
+      startQuiz(currentModuleId, currentLectureId);
     });
 
     buttons.backToLecture.addEventListener('click', () => {
