@@ -176,6 +176,12 @@ function injectHeader(viewId, viewName, options = {}) {
   const viewElement = document.getElementById(viewId);
   if (!viewElement) return;
 
+  // Remove existing header if present (for reinject after study switch)
+  const existingHeader = viewElement.querySelector('header');
+  if (existingHeader) {
+    existingHeader.remove();
+  }
+
   // Create header and insert as first child
   const header = createAppHeader(viewName, options);
   viewElement.insertBefore(header, viewElement.firstChild);

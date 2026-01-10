@@ -339,7 +339,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // --- App Initialization ---
   async function init() {
-    // Inject headers into views using components.js
+    // 1. Load available studies FIRST (needed for header title)
+    const studies = await loadStudies();
+    setStudies(studies);
+
+    // 2. Inject headers into views (now studies are available for title)
     injectHeader('module-map-view', 'moduleMap');
     injectHeader('achievements-view', 'achievements');
     injectHeader('tools-view', 'tools');
@@ -347,11 +351,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('progress-view', 'progress');
     injectHeader('search-view', 'search');
 
-    // 1. Load available studies
-    const studies = await loadStudies();
-    setStudies(studies);
-
-    // 2. Check for saved user settings and migrate legacy progress
+    // 3. Check for saved user settings and migrate legacy progress
     const settings = getAppSettings();
 
     // Migrate legacy progress if needed
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       migrateLegacyProgress(studies[0].id);
     }
 
-    // 3. Determine if user needs to enter name or select study
+    // 4. Determine if user needs to enter name or select study
     const currentSettings = getAppSettings();
 
     if (!currentSettings.userName) {
