@@ -21,7 +21,15 @@
     // Disable unordered list indentation (YAML needs specific indentation)
     "MD007": false,
     // Disable blank lines around lists (YAML frontmatter doesn't need them)
-    "MD032": false
+    "MD032": false,
+    // Disable reference link checks (studium files have citation markers)
+    "MD052": false,
+    // Disable emphasis-as-heading check (some source docs use bold for emphasis)
+    "MD036": false,
+    // Disable blank-line-in-blockquote (source docs may have formatting)
+    "MD028": false,
+    // Disable table column style (emojis have inconsistent widths)
+    "MD060": false
   },
   // Ignore certain paths
   "ignores": ["node_modules/**", ".git/**"],

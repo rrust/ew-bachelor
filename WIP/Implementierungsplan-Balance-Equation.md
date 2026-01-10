@@ -12,11 +12,11 @@
 
 Interaktiver Content-Typ zum Üben und Prüfen von chemischen Gleichungen. User muss Koeffizienten eingeben, um Gleichungen auszugleichen.
 
-| Phase   | Feature                      | Aufwand  | Status    |
-| ------- | ---------------------------- | -------- | --------- |
-| Phase 1 | Basis-Implementierung        | 2-3 Std. | ⏳ Geplant |
-| Phase 2 | Auto-Validierung             | 1 Tag    | 📋 Backlog |
-| Phase 3 | Erweiterte Aufgabentypen     | 1-2 Wo.  | 📋 Backlog |
+| Phase   | Feature                  | Aufwand  | Status     |
+| ------- | ------------------------ | -------- | ---------- |
+| Phase 1 | Basis-Implementierung    | 2-3 Std. | ⏳ Geplant  |
+| Phase 2 | Auto-Validierung         | 1 Tag    | 📋 Backlog  |
+| Phase 3 | Erweiterte Aufgabentypen | 1-2 Wo.  | 📋 Backlog  |
 
 ---
 
@@ -26,7 +26,7 @@ Interaktiver Content-Typ zum Üben und Prüfen von chemischen Gleichungen. User 
 
 User füllt Koeffizienten in vorgegebene Lücken aus. Validierung gegen vordefinierte korrekte Werte.
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  Gleiche die folgende Gleichung aus:                        │
 │                                                             │
@@ -434,16 +434,16 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 ## Zeitschätzung
 
-| Phase   | Task                         | Zeit       |
-| ------- | ---------------------------- | ---------- |
-| Phase 1 | Render-Funktion              | 1.5 Std.   |
-| Phase 1 | Event-Handling               | 30 min     |
-| Phase 1 | Validation + Docs            | 30 min     |
-| Phase 1 | Testing                      | 30 min     |
-| **Phase 1** | **Gesamt**               | **~3 Std.**|
-| Phase 2 | Formel-Parser                | 2-3 Std.   |
-| Phase 2 | Auto-Validierung             | 2-3 Std.   |
-| **Phase 2** | **Gesamt**               | **~1 Tag** |
+| Phase       | Task              | Zeit        |
+| ----------- | ----------------- | ----------- |
+| Phase 1     | Render-Funktion   | 1.5 Std.    |
+| Phase 1     | Event-Handling    | 30 min      |
+| Phase 1     | Validation + Docs | 30 min      |
+| Phase 1     | Testing           | 30 min      |
+| **Phase 1** | **Gesamt**        | **~3 Std.** |
+| Phase 2     | Formel-Parser     | 2-3 Std.    |
+| Phase 2     | Auto-Validierung  | 2-3 Std.    |
+| **Phase 2** | **Gesamt**        | **~1 Tag**  |
 
 ---
 

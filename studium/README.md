@@ -45,5 +45,5 @@ Für die AI-gestützte Content-Erstellung siehe:
 
 | Modul                | Quelldokumente | Content-Plan |
 | -------------------- | -------------- | ------------ |
-| 02-grundlagen-chemie | ✅ Vorhanden    | ✅ Vorhanden  |
-| Andere Module        | ⏳ Noch leer    | —            |
+| 02-grundlagen-chemie | ✅ Vorhanden   | ✅ Vorhanden  |
+| Andere Module        | ⏳ Noch leer   | —            |
