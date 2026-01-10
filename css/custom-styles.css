@@ -1,5 +1,12 @@
 /* Custom Typography for Lecture Content */
 
+/* Mobile viewport height fix - accounts for browser UI */
+#lecture-player,
+#lecture-overview {
+  height: 100vh; /* Fallback for older browsers */
+  height: 100dvh; /* Dynamic viewport height for modern browsers */
+}
+
 /* Lecture Item Display Styling */
 #lecture-item-display.prose h1 {
   font-size: 2.25rem;
