@@ -4,7 +4,7 @@ Dieser Ordner enthält **Referenzmaterialien**, die als Grundlage für die Inhal
 
 ## Inhalt
 
-- **[Module_BSc_Ernaehrungswissenschaften.md](Module_BSc_Ernaehrungswissenschaften.md)** - Offizielle Übersicht des Bachelorstudiengangs mit allen 14 Modulen, ECTS-Punkten und Wahlpflichtoptionen
+- **[BSc_Ernaehrungswissenschaften.md](BSc_Ernaehrungswissenschaften.md)** - Offizielle Übersicht des Bachelorstudiengangs mit allen 14 Modulen, ECTS-Punkten und Wahlpflichtoptionen
 
 ## Verwendung
 

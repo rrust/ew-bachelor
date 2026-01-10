@@ -1,4 +1,12 @@
-# Bachelorstudium Ernährungswissenschaften – Module
+# Bachelorstudium Ernährungswissenschaften
+
+## Überblick
+
+|                   |                                                                |
+| ----------------- | -------------------------------------------------------------- |
+| **Studiendauer**  | 6 Semester                                                     |
+| **Studienumfang** | 180 ECTS (15 im Rahmen von Erweiterungscurricula frei wählbar) |
+| **Abschluss**     | Bachelor of Science (BSc)                                      |
 
 ## Pflichtmodule
 
