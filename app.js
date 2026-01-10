@@ -610,15 +610,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     buttons.nextItem.addEventListener('click', () => {
       if (lectureState.currentIndex < lectureState.currentItems.length - 1) {
-        lectureState.currentIndex++;
-        renderCurrentLectureItem();
+        const lectureItemDisplay = document.getElementById(
+          'lecture-item-display'
+        );
+        window.SwipeGestures.animateSlide(lectureItemDisplay, 'left', () => {
+          lectureState.currentIndex++;
+          renderCurrentLectureItem();
+        });
       }
     });
 
     buttons.prevItem.addEventListener('click', () => {
       if (lectureState.currentIndex > 0) {
-        lectureState.currentIndex--;
-        renderCurrentLectureItem();
+        const lectureItemDisplay = document.getElementById(
+          'lecture-item-display'
+        );
+        window.SwipeGestures.animateSlide(lectureItemDisplay, 'right', () => {
+          lectureState.currentIndex--;
+          renderCurrentLectureItem();
+        });
       }
     });
 

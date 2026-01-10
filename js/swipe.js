@@ -143,7 +143,52 @@ function initSwipeGestures(element, callbacks, options = {}) {
   }
 }
 
+/**
+ * Animate a slide transition on an element
+ * @param {HTMLElement} element - Element to animate
+ * @param {string} direction - 'left' or 'right'
+ * @param {Function} callback - Function to call during the transition
+ */
+function animateSlide(element, direction, callback) {
+  if (!element) {
+    if (callback) callback();
+    return;
+  }
+
+  const slideOut = direction === 'left' ? '-100%' : '100%';
+  const slideIn = direction === 'left' ? '100%' : '-100%';
+
+  // Slide out
+  element.style.transition = 'transform 0.15s ease-out, opacity 0.15s ease-out';
+  element.style.transform = `translateX(${slideOut})`;
+  element.style.opacity = '0';
+
+  setTimeout(() => {
+    // Call the callback (which updates the content)
+    if (callback) callback();
+
+    // Reset position instantly
+    element.style.transition = 'none';
+    element.style.transform = `translateX(${slideIn})`;
+
+    // Force reflow
+    element.offsetHeight;
+
+    // Slide in
+    element.style.transition =
+      'transform 0.15s ease-out, opacity 0.15s ease-out';
+    element.style.transform = 'translateX(0)';
+    element.style.opacity = '1';
+
+    // Clean up
+    setTimeout(() => {
+      element.style.transition = '';
+    }, 200);
+  }, 150);
+}
+
 // Expose globally
 window.SwipeGestures = {
-  init: initSwipeGestures
+  init: initSwipeGestures,
+  animateSlide: animateSlide
 };
