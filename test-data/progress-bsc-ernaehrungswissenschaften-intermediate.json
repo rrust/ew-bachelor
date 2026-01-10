@@ -1,0 +1,20 @@
+{
+  "exportedAt": "2026-01-10T22:42:16.532Z",
+  "version": "2.0",
+  "studyId": "bsc-ernaehrungswissenschaften",
+  "settings": {
+    "userName": "TestUser",
+    "theme": "light"
+  },
+  "progress": {
+    "userName": "TestUser",
+    "startedAt": "2025-11-14T22:42:16.532Z",
+    "modules": {
+      "01-ernaehrungslehre-grundlagen": {
+        "status": "in-progress",
+        "lectures": {},
+        "achievements": {}
+      }
+    }
+  }
+}

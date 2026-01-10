@@ -1,0 +1,66 @@
+{
+  "exportedAt": "2026-01-10T22:42:16.532Z",
+  "version": "2.0",
+  "studyId": "bsc-ernaehrungswissenschaften",
+  "settings": {
+    "userName": "TestUser",
+    "theme": "light"
+  },
+  "progress": {
+    "userName": "TestUser",
+    "startedAt": "2025-09-01T22:42:16.532Z",
+    "modules": {
+      "01-ernaehrungslehre-grundlagen": {
+        "status": "completed",
+        "lectures": {
+          "01-grundlagen-zellbiologie": {
+            "score": 90,
+            "badge": "gold"
+          },
+          "02-makronaehrstoffe-detail": {
+            "score": 96,
+            "badge": "gold"
+          },
+          "03-fette-oele": {
+            "score": 99,
+            "badge": "gold"
+          }
+        },
+        "achievements": {
+          "cell-biology-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2025-12-22T22:42:16.532Z",
+            "expiresAt": "2026-01-21T22:42:16.532Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "makronaehrstoffe-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2025-12-12T22:42:16.532Z",
+            "expiresAt": "2026-01-11T22:42:16.532Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          }
+        }
+      },
+      "02-chemie-grundlagen": {
+        "status": "completed",
+        "lectures": {
+          "01-materie-messen": {
+            "score": 99,
+            "badge": "gold"
+          }
+        },
+        "achievements": {
+          "materie-messen-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2025-12-21T22:42:16.532Z",
+            "expiresAt": "2026-01-20T22:42:16.532Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          }
+        }
+      }
+    }
+  }
+}
