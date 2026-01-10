@@ -43,33 +43,33 @@ const solution = balancer.balance(problem);
 - Automatische Validierung von Schülereingaben
 - Kein eigener Parser nötig
 
-### 2. Darstellung: MathJax + mhchem
+### 2. Darstellung: KaTeX + mhchem (bereits integriert)
 
-Professionelle Darstellung chemischer Formeln mit Subscripts, Ionenladungen und Reaktionspfeilen.
+Die App nutzt bereits KaTeX für mathematische Formeln. Für chemische Formeln wird
+lediglich die mhchem-Extension hinzugefügt.
 
 ```html
-<script>
-  MathJax = {
-    tex: {
-      packages: {'[+]': ['mhchem']}
-    },
-    loader: {load: ['[tex]/mhchem']}
-  };
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Bereits vorhanden in index.html -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<!-- NEU: mhchem-Extension hinzufügen -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
 ```
 
 ```html
-<!-- Verwendung mit \ce{...} -->
-<p>Gleiche diese Gleichung aus: \(\ce{Fe + Cl2 -> FeCl3}\)</p>
+<!-- Verwendung mit \ce{...} im Markdown -->
+<p>Gleiche diese Gleichung aus: $\ce{Fe + Cl2 -> FeCl3}$</p>
 ```
 
 **Vorteile:**
 
+- Nutzt bestehende KaTeX-Integration (kein zusätzliches Framework)
 - Automatische Subscripts (H₂O statt H2O)
 - Ionenladungen (Na⁺, Cl⁻)
 - Professionelle Reaktionspfeile (→, ⇌)
-- Bildungsstandard für Chemie-Apps
+- Schneller als MathJax (~3x)
+- Bereits im Service Worker gecached
 
 ### 3. Alternative für Zukunft: OpenChemLib
 
@@ -140,7 +140,7 @@ function renderBalanceEquation(item, container) {
   const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
   
   // Build equation display with input fields
-  // Wrap formulas in \ce{} for MathJax/mhchem rendering
+  // Wrap formulas in \ce{} for KaTeX/mhchem rendering
   let equationHtml = '<div class="equation-container flex flex-wrap items-center justify-center gap-2 text-2xl my-6">';
   
   // Reactants
@@ -269,11 +269,9 @@ function renderBalanceEquation(item, container) {
     checkBtn.classList.remove('opacity-50', 'cursor-not-allowed');
   });
   
-  // Render formulas with MathJax/mhchem
-  if (window.MathJax) {
-    MathJax.typesetPromise([container]).catch((err) => {
-      console.warn('MathJax rendering failed:', err);
-    });
+  // Render formulas with KaTeX/mhchem (using existing renderMath function)
+  if (typeof renderMath === 'function') {
+    renderMath(container);
   }
 }
 ```
@@ -487,7 +485,7 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 ### Phase 1 (MVP)
 
-1. [ ] MathJax + mhchem in index.html einbinden
+1. [ ] KaTeX mhchem-Extension in index.html + sw.js einbinden
 2. [ ] `renderBalanceEquation()` in lecture.js
 3. [ ] Switch-Case für 'balance-equation'
 4. [ ] Validation Rules in validate-content.html
@@ -514,7 +512,7 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 | Phase       | Task                          | Zeit          |
 | ----------- | ----------------------------- | ------------- |
-| Phase 1     | Render-Funktion + MathJax     | 1.5 Std.      |
+| Phase 1     | Render-Funktion + KaTeX       | 1.5 Std.      |
 | Phase 1     | Event-Handling                | 30 min        |
 | Phase 1     | Validation + Docs             | 30 min        |
 | Phase 1     | Testing                       | 30 min        |
@@ -533,13 +531,13 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 - **CDN-Verfügbarkeit:** Fallback einplanen falls jsdelivr nicht erreichbar
 - **Mobile UX:** Kleine Input-Felder auf Smartphones
-- **MathJax-Ladezeit:** ~300-500ms, ggf. Lazy Loading
 
 ### Gelöste Probleme (durch Bibliotheken)
 
-- ~~Formel-Darstellung~~ → MathJax + mhchem
+- ~~Formel-Darstellung~~ → KaTeX + mhchem (bereits integriert)
 - ~~Komplexe Formeln (Klammern, Ionen)~~ → chemical-balancer parsed alles
 - ~~Subscripts/Superscripts~~ → \ce{H2O} rendert automatisch
+- ~~Ladezeit~~ → KaTeX ist ~3x schneller als MathJax
 
 ### Offene Fragen
 

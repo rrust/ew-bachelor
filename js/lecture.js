@@ -104,6 +104,9 @@ function renderCurrentLectureItem(
     case 'external-video':
       renderExternalVideo(item, lectureItemDisplay);
       break;
+    case 'balance-equation':
+      renderBalanceEquation(item, lectureItemDisplay);
+      break;
     default:
       lectureItemDisplay.innerHTML = `<p class="text-red-500">Unbekannter Inhaltstyp: ${item.type}</p>`;
   }
@@ -158,6 +161,180 @@ function renderExternalVideo(item, container) {
       </p>
     </div>
   `;
+}
+
+/**
+ * Renders a balance equation exercise for chemistry
+ * @param {Object} item - Equation item with reactants, products, hints, explanation
+ * @param {HTMLElement} container - Container element
+ */
+function renderBalanceEquation(item, container) {
+  const title = item.title
+    ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>`
+    : '';
+
+  // Build equation display with input fields
+  // Wrap formulas in \ce{} for KaTeX/mhchem rendering
+  let equationHtml =
+    '<div class="equation-container flex flex-wrap items-center justify-center gap-2 text-xl md:text-2xl my-6">';
+
+  // Reactants
+  item.reactants.forEach((r, i) => {
+    if (i > 0) equationHtml += '<span class="mx-1 md:mx-2">+</span>';
+    equationHtml += `
+      <div class="flex items-center">
+        <input type="number" 
+               min="1" max="20" 
+               class="coefficient-input w-10 h-10 md:w-12 md:h-12 text-center text-lg md:text-xl border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:border-blue-500 focus:outline-none"
+               data-correct="${r.coefficient}"
+               data-index="r${i}"
+               aria-label="Koeffizient für ${r.formula}">
+        <span class="ml-1 formula">$\\ce{${r.formula}}$</span>
+      </div>`;
+  });
+
+  // Arrow
+  equationHtml += '<span class="mx-2 md:mx-4">→</span>';
+
+  // Products
+  item.products.forEach((p, i) => {
+    if (i > 0) equationHtml += '<span class="mx-1 md:mx-2">+</span>';
+    equationHtml += `
+      <div class="flex items-center">
+        <input type="number" 
+               min="1" max="20" 
+               class="coefficient-input w-10 h-10 md:w-12 md:h-12 text-center text-lg md:text-xl border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:border-blue-500 focus:outline-none"
+               data-correct="${p.coefficient}"
+               data-index="p${i}"
+               aria-label="Koeffizient für ${p.formula}">
+        <span class="ml-1 formula">$\\ce{${p.formula}}$</span>
+      </div>`;
+  });
+
+  equationHtml += '</div>';
+
+  // Hints section (collapsible)
+  let hintsHtml = '';
+  if (item.hints && item.hints.length > 0) {
+    hintsHtml = `
+      <details class="mb-4">
+        <summary class="cursor-pointer text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+          💡 Hinweise anzeigen (${item.hints.length})
+        </summary>
+        <ol class="mt-2 ml-6 list-decimal text-gray-600 dark:text-gray-400 space-y-1">
+          ${item.hints.map((h) => `<li>${h}</li>`).join('')}
+        </ol>
+      </details>`;
+  }
+
+  container.innerHTML = `
+    <div class="balance-equation-container p-4 md:p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      ${title}
+      <p class="text-gray-600 dark:text-gray-400 mb-4">
+        Gib die Koeffizienten ein, um die Gleichung auszugleichen:
+      </p>
+      ${equationHtml}
+      ${hintsHtml}
+      <div class="flex justify-center gap-4 mt-6">
+        <button class="check-equation-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Prüfen
+        </button>
+        <button class="reset-equation-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg transition-colors">
+          Zurücksetzen
+        </button>
+      </div>
+      <div class="equation-feedback mt-4 p-4 rounded-lg hidden"></div>
+    </div>
+  `;
+
+  // Add event listeners
+  const checkBtn = container.querySelector('.check-equation-btn');
+  const resetBtn = container.querySelector('.reset-equation-btn');
+  const feedbackDiv = container.querySelector('.equation-feedback');
+  const inputs = container.querySelectorAll('.coefficient-input');
+
+  checkBtn.addEventListener('click', () => {
+    let allCorrect = true;
+    let allFilled = true;
+
+    inputs.forEach((input) => {
+      const userValue = parseInt(input.value);
+      const correctValue = parseInt(input.dataset.correct);
+
+      if (!input.value || isNaN(userValue)) {
+        allFilled = false;
+        input.classList.remove('border-green-500', 'border-red-500');
+        input.classList.add('border-yellow-500');
+      } else if (userValue === correctValue) {
+        input.classList.remove(
+          'border-gray-300',
+          'dark:border-gray-600',
+          'border-red-500',
+          'border-yellow-500'
+        );
+        input.classList.add('border-green-500');
+      } else {
+        allCorrect = false;
+        input.classList.remove(
+          'border-gray-300',
+          'dark:border-gray-600',
+          'border-green-500',
+          'border-yellow-500'
+        );
+        input.classList.add('border-red-500');
+      }
+    });
+
+    feedbackDiv.classList.remove(
+      'hidden',
+      'bg-green-100',
+      'bg-red-100',
+      'bg-yellow-100',
+      'dark:bg-green-900',
+      'dark:bg-red-900',
+      'dark:bg-yellow-900'
+    );
+
+    if (!allFilled) {
+      feedbackDiv.classList.add('bg-yellow-100', 'dark:bg-yellow-900');
+      feedbackDiv.innerHTML =
+        '<p class="text-yellow-700 dark:text-yellow-200">⚠️ Bitte fülle alle Felder aus.</p>';
+    } else if (allCorrect) {
+      feedbackDiv.classList.add('bg-green-100', 'dark:bg-green-900');
+      feedbackDiv.innerHTML = `
+        <p class="text-green-700 dark:text-green-200 font-bold">✅ Richtig! Die Gleichung ist ausgeglichen.</p>
+        ${
+          item.explanation
+            ? `<p class="text-green-600 dark:text-green-300 mt-2">${item.explanation}</p>`
+            : ''
+        }
+      `;
+      checkBtn.disabled = true;
+      checkBtn.classList.add('opacity-50', 'cursor-not-allowed');
+    } else {
+      feedbackDiv.classList.add('bg-red-100', 'dark:bg-red-900');
+      feedbackDiv.innerHTML =
+        '<p class="text-red-700 dark:text-red-200">❌ Noch nicht richtig. Überprüfe die rot markierten Koeffizienten.</p>';
+    }
+  });
+
+  resetBtn.addEventListener('click', () => {
+    inputs.forEach((input) => {
+      input.value = '';
+      input.classList.remove(
+        'border-green-500',
+        'border-red-500',
+        'border-yellow-500'
+      );
+      input.classList.add('border-gray-300', 'dark:border-gray-600');
+    });
+    feedbackDiv.classList.add('hidden');
+    checkBtn.disabled = false;
+    checkBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+  });
+
+  // Render formulas with KaTeX/mhchem
+  renderMath(container);
 }
 
 /**
@@ -496,6 +673,12 @@ function showLectureOverview(
         badgeClass =
           'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200';
         preview = item.title || 'Externes Video';
+        break;
+      case 'balance-equation':
+        typeLabel = 'Chemie';
+        badgeClass =
+          'bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200';
+        preview = item.title || 'Gleichung ausgleichen';
         break;
       default:
         typeLabel = 'Unbekannt';

@@ -20,6 +20,7 @@ Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 | External Video      | `lecture-items/NN-name.md`  | [→ Vorlage](#external-video-in-lecturemd)                      |
 | Bild                | `lecture-items/NN-name.md`  | [→ Vorlage](#image-in-lecturemd)                               |
 | Mermaid Diagramm    | `lecture-items/NN-name.md`  | [→ Vorlage](#mermaid-diagram-in-lecturemd)                     |
+| Balance Equation    | `lecture-items/NN-name.md`  | [→ Vorlage](#balance-equation-in-lecturemd)                    |
 
 ### Kritische YAML-Regeln
 
@@ -267,6 +268,65 @@ graph LR
     B --> C[Citratzyklus]
     C --> D[Atmungskette]
     D --> E[ATP]
+```
+
+## Balance Equation (in lecture.md)
+
+Interaktive Übung zum Ausgleichen chemischer Gleichungen:
+
+```markdown
+---
+type: 'balance-equation'
+title: 'Wassersynthese'
+reactants:
+  - formula: 'H2'
+    coefficient: 2
+  - formula: 'O2'
+    coefficient: 1
+products:
+  - formula: 'H2O'
+    coefficient: 2
+hints:
+  - 'Zähle zuerst die Sauerstoff-Atome auf beiden Seiten'
+  - 'Ein O2-Molekül hat 2 Sauerstoff-Atome'
+explanation: 'Die Gleichung ist ausgeglichen: 4 H-Atome und 2 O-Atome auf jeder Seite.'
+---
+```
+
+**Felder:**
+
+| Feld          | Pflicht | Beschreibung                                       |
+| ------------- | ------- | -------------------------------------------------- |
+| `type`        | Ja      | Muss `'balance-equation'` sein                     |
+| `reactants`   | Ja      | Liste der Edukte mit `formula` und `coefficient`   |
+| `products`    | Ja      | Liste der Produkte mit `formula` und `coefficient` |
+| `title`       | Nein    | Überschrift der Übung                              |
+| `hints`       | Nein    | Liste von Hinweisen (ausklappbar)                  |
+| `explanation` | Nein    | Erklärung bei richtiger Lösung                     |
+
+**Formel-Notation:**
+
+- Im YAML: ASCII-Notation verwenden (`H2`, `O2`, `Fe2O3`, `CH4`)
+- KaTeX/mhchem rendert automatisch: H2 → H₂, Fe2O3 → Fe₂O₃
+- Unterstützt: Subscripts, Ionenladungen (Na+, Cl-), Reaktionspfeile
+
+**Beispiel: Methanverbrennung (schwieriger):**
+
+```markdown
+---
+type: 'balance-equation'
+title: 'Methanverbrennung'
+reactants:
+  - formula: 'CH4'
+    coefficient: 1
+  - formula: 'O2'
+    coefficient: 2
+products:
+  - formula: 'CO2'
+    coefficient: 1
+  - formula: 'H2O'
+    coefficient: 2
+---
 ```
 
 ## Vollständige Vorlesung (lecture.md)
