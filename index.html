@@ -462,6 +462,23 @@
         <h2 class="text-3xl font-bold mb-8">Tools</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- PWA Install Card -->
+          <div
+            id="pwa-install-card"
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
+          >
+            <!-- Content injected by pwa-install.js -->
+            <div class="flex items-center mb-4">
+              <svg class="w-8 h-8 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              <h3 class="text-xl font-bold text-gray-500 dark:text-gray-400">App installieren</h3>
+            </div>
+            <p class="text-gray-500 dark:text-gray-500 mb-4">
+              Lädt...
+            </p>
+          </div>
+
           <!-- Content Validator Card -->
           <div
             class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
@@ -832,6 +849,7 @@
     <script src="js/swipe.js"></script>
     <script src="js/keyboard.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/pwa-install.js"></script>
     <!-- Feature modules -->
     <script src="js/quiz.js"></script>
     <script src="js/lecture.js"></script>
