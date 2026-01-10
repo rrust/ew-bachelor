@@ -13,6 +13,7 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 - 🏆 Achievement-System mit zeitlich begrenzten Lernhilfen
 - 📊 Progress Tracking mit Badges und Statistiken
 - 🗺️ Studienstruktur-Map zur Übersicht
+- 📱 Responsive Design für mobile Nutzung
 - 🌓 Dark Mode Support
 
 ## Content Development
