@@ -260,6 +260,32 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (viewId === 'moduleMap') {
       loadModuleCards();
     }
+
+    // Special handling for map - need to render the diagram
+    if (viewId === 'map') {
+      renderModuleMap(MODULES, APP_CONTENT);
+      updateURL('/map', 'Studienstruktur Map');
+    }
+
+    // Special handling for progress - need to render dashboard
+    if (viewId === 'progress') {
+      renderProgressDashboard(MODULES, APP_CONTENT);
+      updateURL('/progress', 'Lernfortschritt');
+    }
+
+    // Special handling for achievements - need to render gallery
+    if (viewId === 'achievements') {
+      renderAchievementsGallery('all');
+      updateURL('/achievements', 'Achievements');
+    }
+
+    // Special handling for tools
+    if (viewId === 'tools') {
+      if (window.PWAInstall && window.PWAInstall.updateInstallButton) {
+        window.PWAInstall.updateInstallButton();
+      }
+      updateURL('/tools', 'Tools');
+    }
   }
 
   // Expose showView globally for menu navigation
