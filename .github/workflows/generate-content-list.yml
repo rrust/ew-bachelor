@@ -6,6 +6,7 @@ on:
     paths:
       - 'content/**/*.md'
       - 'generate-content-list.js'
+  workflow_dispatch:
 
 permissions:
   contents: write
