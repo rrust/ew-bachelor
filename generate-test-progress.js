@@ -285,9 +285,9 @@ function generateCompleteProgress(progress, modules) {
     };
 
     lectures.forEach((lectureId) => {
-      const score = getRandomScore('gold');
+      // Perfect score for "complete" scenario
       progress.modules[module.id].lectures[lectureId] = {
-        score: score,
+        score: 100,
         badge: 'gold'
       };
     });
