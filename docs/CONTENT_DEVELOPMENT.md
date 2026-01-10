@@ -8,7 +8,7 @@ Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die
 
 1. **Template kopieren** aus [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md)
 2. **Datei erstellen** in `content/XX-modul/XX-vorlesung/lecture-items/` oder `questions/`
-3. **Validieren** mit `validate-content.html` im Browser
+3. **Validieren** mit `validate-content.html` im Browser (unter "Tools")
 
 **Wichtigste Regeln:**
 - ✅ YAML-Listen mit `-` (dash), NIEMALS `*` (asterisk)

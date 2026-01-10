@@ -603,6 +603,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCurrentLectureItem();
       }
     });
+
+    // Swipe gestures for mobile navigation
+    const lecturePlayer = document.getElementById('lecture-player');
+    if (lecturePlayer && window.SwipeGestures) {
+      window.SwipeGestures.init(lecturePlayer, {
+        onSwipeLeft: () => {
+          // Swipe left = next item
+          if (
+            lectureState.currentIndex <
+            lectureState.currentItems.length - 1
+          ) {
+            lectureState.currentIndex++;
+            renderCurrentLectureItem();
+          }
+        },
+        onSwipeRight: () => {
+          // Swipe right = previous item
+          if (lectureState.currentIndex > 0) {
+            lectureState.currentIndex--;
+            renderCurrentLectureItem();
+          }
+        }
+      });
+    }
   }
 
   function setupQuizListeners() {
