@@ -13,53 +13,16 @@ Technical and UX improvements beyond core functionality.
 - **Swipe Gestures** - `js/swipe.js`
 - **Progress Tracking** - `js/progress.js`
 - **Achievement System (Core)** - `js/achievements.js`
-
----
-
-## 🔴 High Priority (Quick Wins)
-
-### Progress Backup/Export
-
-- **Feature:** Download/upload progress as JSON file
-- **Why:** Prevents data loss, enables device switching
-- **Effort:** 1-2 hours
-- **Implementation:**
-  - Download button in Progress view → exports localStorage as JSON
-  - Upload button → imports JSON back to localStorage
-  - Optional: Weekly backup reminder
-
-### Mobile Responsiveness Polish
-
-- **Current State:** Basic responsive layout works
-- **Improvements:**
-  - Single-column card layout on mobile (< 640px)
-  - Touch-friendly buttons (minimum 44x44px touch targets)
-  - Test on iOS Safari and Android Chrome
-  - Ensure quiz radio buttons are easily tappable
-- **Effort:** 1 day
-
-### Progress Visualization
-
-- **Feature:** Better visual feedback on progress
-- **Implementation:**
-  - Overall module progress bar on dashboard
-  - Visual indicators per lecture (circular progress)
-  - Milestone celebrations ("50% complete!")
-- **Effort:** 2-3 hours
+- **Progress Backup/Export** - Download/upload progress as JSON (`js/progress.js`)
+- **Progress Visualization** - Overall progress bar, circular rings, milestone messages
+- **Global Search** - Dedicated search page with colored badges (`js/search.js`)
+- **Improved Header Navigation** - Icon-based navigation (🔍 Search, 📂 Map, 🏆 Achievements, 🌙 Theme)
+- **Mobile Responsiveness** - Single-column layout, touch-friendly buttons (44px+ targets), responsive header
+- **PWA / Offline Mode** - Installable app, Service Worker caching (`sw.js`, `manifest.json`)
 
 ---
 
 ## 🟡 Medium Priority
-
-### PWA / Offline Mode
-
-- **Feature:** Install app, work offline
-- **Benefits:**
-  - Home screen installation
-  - Works without internet (cached content)
-  - Native app-like experience
-- **Effort:** 1 week
-- **Consideration:** Service workers add complexity
 
 ### Note-Taking
 
@@ -71,15 +34,6 @@ Technical and UX improvements beyond core functionality.
   - Search through notes
 - **Effort:** 3-5 days
 - **Why deferred:** Students already use Notion/Obsidian, but could be useful for in-context notes
-
-### Global Search
-
-- **Feature:** Search across all content
-- **Implementation:**
-  - Search box in header
-  - Results show matching lectures/topics
-  - Jump to content from results
-- **Effort:** 2-3 days
 
 ### Accessibility Improvements
 
@@ -125,11 +79,12 @@ These features are explicitly out of scope:
 
 ## Implementation Order
 
-1. **Progress Backup/Export** ← Do this first (prevents data loss)
-2. **Progress Visualization** ← Quick motivational win
-3. **Mobile Polish** ← Many students study on phones
-4. **Note-Taking** ← If user feedback requests it
-5. **PWA** ← Nice-to-have for dedicated users
+1. ~~**Progress Backup/Export**~~ ✅ Done
+2. ~~**Progress Visualization**~~ ✅ Done
+3. ~~**Global Search**~~ ✅ Done
+4. ~~**Mobile Polish**~~ ✅ Done
+5. ~~**PWA / Offline Mode**~~ ✅ Done
+6. **Note-Taking** ← If user feedback requests it
 
 ---
 

@@ -44,7 +44,10 @@ function parseURL() {
   } else if (parts[0] === 'map') {
     route.view = 'map';
   } else if (parts[0] === 'progress') {
-    route.view = 'comingSoon';
+    route.view = 'progress';
+  } else if (parts[0] === 'search') {
+    route.view = 'search';
+    route.query = parts[1] ? decodeURIComponent(parts[1]) : '';
   }
 
   return route;
