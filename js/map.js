@@ -223,24 +223,36 @@ let mapScrollStart = { x: 0, y: 0 };
  * Initializes pan and zoom functionality for the map
  */
 function initializeMapPanZoom() {
-  const mapContainer = document.getElementById('map-diagram-container');
-  const wrapper = mapContainer?.querySelector('.overflow-auto');
-  const svg = mapContainer?.querySelector('svg');
+  try {
+    const mapContainer = document.getElementById('map-diagram-container');
+    if (!mapContainer) return;
+    
+    const wrapper = mapContainer.querySelector('.overflow-auto');
+    const svg = mapContainer.querySelector('svg');
 
-  if (!wrapper || !svg) {
-    console.warn('Map pan/zoom: wrapper or svg not found, retrying...');
-    // Retry after a short delay if elements aren't ready
-    setTimeout(() => {
-      const retryWrapper = mapContainer?.querySelector('.overflow-auto');
-      const retrySvg = mapContainer?.querySelector('svg');
-      if (retryWrapper && retrySvg) {
-        setupMapPanZoom(retryWrapper, retrySvg);
-      }
-    }, 200);
-    return;
+    if (!wrapper || !svg) {
+      console.warn('Map pan/zoom: wrapper or svg not found, retrying...');
+      // Retry after a short delay if elements aren't ready
+      setTimeout(() => {
+        try {
+          const retryMapContainer = document.getElementById('map-diagram-container');
+          if (!retryMapContainer) return;
+          const retryWrapper = retryMapContainer.querySelector('.overflow-auto');
+          const retrySvg = retryMapContainer.querySelector('svg');
+          if (retryWrapper && retrySvg) {
+            setupMapPanZoom(retryWrapper, retrySvg);
+          }
+        } catch (e) {
+          console.warn('Map pan/zoom retry failed:', e);
+        }
+      }, 200);
+      return;
+    }
+
+    setupMapPanZoom(wrapper, svg);
+  } catch (error) {
+    console.warn('Map pan/zoom initialization failed:', error);
   }
-
-  setupMapPanZoom(wrapper, svg);
 }
 
 /**
@@ -249,8 +261,11 @@ function initializeMapPanZoom() {
  * @param {SVGElement} svg - The SVG element
  */
 function setupMapPanZoom(wrapper, svg) {
-  // Pan functionality
-  wrapper.style.cursor = 'grab';
+  if (!wrapper || !svg) return;
+  
+  try {
+    // Pan functionality
+    wrapper.style.cursor = 'grab';
 
   wrapper.addEventListener('mousedown', (e) => {
     if (e.button === 0) {
@@ -309,6 +324,9 @@ function setupMapPanZoom(wrapper, svg) {
     },
     { passive: false }
   );
+  } catch (error) {
+    console.warn('Error setting up map pan/zoom:', error);
+  }
 }
 
 /**
