@@ -170,31 +170,18 @@ async function renderModuleMap(modules, content) {
   // Create a unique ID for this diagram
   const diagramId = `mermaid-map-${Date.now()}`;
 
-  // Clear previous content - simple structure
-  mapContainer.innerHTML = `
-    <div class="w-full h-full overflow-auto p-8 flex items-start justify-center">
-      <div class="mermaid" id="${diagramId}">
-${mermaidCode}
-      </div>
-    </div>
-  `;
-
-  // Render with Mermaid
+  // Render with Mermaid using render() for dynamic content
   try {
     if (window.mermaid) {
-      // Wait for the DOM to be ready and the element to be visible
-      const diagramElement = document.getElementById(diagramId);
-      if (!diagramElement) {
-        console.error('Diagram element not found after creation');
-        return;
-      }
-
-      // Wait a bit longer to ensure the view is fully visible
-      await new Promise((resolve) => setTimeout(resolve, 50));
-
-      await window.mermaid.run({
-        nodes: [diagramElement]
-      });
+      // Use mermaid.render() which is better for dynamic rendering
+      const { svg } = await window.mermaid.render(diagramId, mermaidCode);
+      
+      // Insert the rendered SVG
+      mapContainer.innerHTML = `
+        <div class="w-full h-full overflow-auto p-8 flex items-start justify-center">
+          ${svg}
+        </div>
+      `;
 
       // Initialize pan and zoom after rendering with longer delay
       setTimeout(() => initializeMapPanZoom(), 300);
@@ -226,7 +213,7 @@ function initializeMapPanZoom() {
   try {
     const mapContainer = document.getElementById('map-diagram-container');
     if (!mapContainer) return;
-    
+
     const wrapper = mapContainer.querySelector('.overflow-auto');
     const svg = mapContainer.querySelector('svg');
 
@@ -235,9 +222,12 @@ function initializeMapPanZoom() {
       // Retry after a short delay if elements aren't ready
       setTimeout(() => {
         try {
-          const retryMapContainer = document.getElementById('map-diagram-container');
+          const retryMapContainer = document.getElementById(
+            'map-diagram-container'
+          );
           if (!retryMapContainer) return;
-          const retryWrapper = retryMapContainer.querySelector('.overflow-auto');
+          const retryWrapper =
+            retryMapContainer.querySelector('.overflow-auto');
           const retrySvg = retryMapContainer.querySelector('svg');
           if (retryWrapper && retrySvg) {
             setupMapPanZoom(retryWrapper, retrySvg);
@@ -262,68 +252,68 @@ function initializeMapPanZoom() {
  */
 function setupMapPanZoom(wrapper, svg) {
   if (!wrapper || !svg) return;
-  
+
   try {
     // Pan functionality
     wrapper.style.cursor = 'grab';
 
-  wrapper.addEventListener('mousedown', (e) => {
-    if (e.button === 0) {
-      // Left mouse button
-      mapPanning = true;
-      mapPanStart = { x: e.clientX, y: e.clientY };
-      mapScrollStart = { x: wrapper.scrollLeft, y: wrapper.scrollTop };
-      wrapper.style.cursor = 'grabbing';
-      e.preventDefault();
+    wrapper.addEventListener('mousedown', (e) => {
+      if (e.button === 0) {
+        // Left mouse button
+        mapPanning = true;
+        mapPanStart = { x: e.clientX, y: e.clientY };
+        mapScrollStart = { x: wrapper.scrollLeft, y: wrapper.scrollTop };
+        wrapper.style.cursor = 'grabbing';
+        e.preventDefault();
+      }
+    });
+
+    wrapper.addEventListener('mousemove', (e) => {
+      if (mapPanning) {
+        const dx = mapPanStart.x - e.clientX;
+        const dy = mapPanStart.y - e.clientY;
+        wrapper.scrollLeft = mapScrollStart.x + dx;
+        wrapper.scrollTop = mapScrollStart.y + dy;
+      }
+    });
+
+    wrapper.addEventListener('mouseup', () => {
+      mapPanning = false;
+      wrapper.style.cursor = 'grab';
+    });
+
+    wrapper.addEventListener('mouseleave', () => {
+      mapPanning = false;
+      wrapper.style.cursor = 'grab';
+    });
+
+    // Zoom buttons
+    const zoomInBtn = document.getElementById('map-zoom-in');
+    const zoomOutBtn = document.getElementById('map-zoom-out');
+    const resetZoomBtn = document.getElementById('map-reset-zoom');
+
+    if (zoomInBtn) {
+      zoomInBtn.onclick = () => zoomMap(0.2, svg);
     }
-  });
 
-  wrapper.addEventListener('mousemove', (e) => {
-    if (mapPanning) {
-      const dx = mapPanStart.x - e.clientX;
-      const dy = mapPanStart.y - e.clientY;
-      wrapper.scrollLeft = mapScrollStart.x + dx;
-      wrapper.scrollTop = mapScrollStart.y + dy;
+    if (zoomOutBtn) {
+      zoomOutBtn.onclick = () => zoomMap(-0.2, svg);
     }
-  });
 
-  wrapper.addEventListener('mouseup', () => {
-    mapPanning = false;
-    wrapper.style.cursor = 'grab';
-  });
+    if (resetZoomBtn) {
+      resetZoomBtn.onclick = () => resetMapZoom(svg, wrapper);
+    }
 
-  wrapper.addEventListener('mouseleave', () => {
-    mapPanning = false;
-    wrapper.style.cursor = 'grab';
-  });
-
-  // Zoom buttons
-  const zoomInBtn = document.getElementById('map-zoom-in');
-  const zoomOutBtn = document.getElementById('map-zoom-out');
-  const resetZoomBtn = document.getElementById('map-reset-zoom');
-
-  if (zoomInBtn) {
-    zoomInBtn.onclick = () => zoomMap(0.2, svg);
-  }
-
-  if (zoomOutBtn) {
-    zoomOutBtn.onclick = () => zoomMap(-0.2, svg);
-  }
-
-  if (resetZoomBtn) {
-    resetZoomBtn.onclick = () => resetMapZoom(svg, wrapper);
-  }
-
-  // Mouse wheel zoom
-  wrapper.addEventListener(
-    'wheel',
-    (e) => {
-      e.preventDefault();
-      const delta = e.deltaY > 0 ? -0.1 : 0.1;
-      zoomMap(delta, svg);
-    },
-    { passive: false }
-  );
+    // Mouse wheel zoom
+    wrapper.addEventListener(
+      'wheel',
+      (e) => {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        zoomMap(delta, svg);
+      },
+      { passive: false }
+    );
   } catch (error) {
     console.warn('Error setting up map pan/zoom:', error);
   }
