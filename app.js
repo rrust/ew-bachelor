@@ -1,4 +1,7 @@
 // Main JavaScript file for the Nutritional Science Learning App
+// App Version - used for debugging PWA cache issues
+const APP_VERSION = '1.2.0';
+console.log(`[App] Version ${APP_VERSION} loaded`);
 
 // Global state (accessible by all modules)
 let APP_CONTENT = {};
