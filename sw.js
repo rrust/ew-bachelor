@@ -1,35 +1,36 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.0.1';
+const CACHE_VERSION = 'v1.0.2';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
+// Use relative paths for GitHub Pages compatibility
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/app.js',
-  '/css/styles.css',
-  '/css/custom-styles.css',
-  '/js/state.js',
-  '/js/dom-helpers.js',
-  '/js/theme.js',
-  '/js/navigation.js',
-  '/js/views.js',
-  '/js/progress.js',
-  '/js/parser.js',
-  '/js/achievements.js',
-  '/js/achievements-ui.js',
-  '/js/components.js',
-  '/js/swipe.js',
-  '/js/search.js',
-  '/js/quiz.js',
-  '/js/lecture.js',
-  '/js/modules.js',
-  '/js/map.js',
-  '/js/progress-view.js',
-  '/content/modules.json',
-  '/content/content-list.json',
-  '/manifest.json'
+  './',
+  './index.html',
+  './app.js',
+  './css/styles.css',
+  './css/custom-styles.css',
+  './js/state.js',
+  './js/dom-helpers.js',
+  './js/theme.js',
+  './js/navigation.js',
+  './js/views.js',
+  './js/progress.js',
+  './js/parser.js',
+  './js/achievements.js',
+  './js/achievements-ui.js',
+  './js/components.js',
+  './js/swipe.js',
+  './js/search.js',
+  './js/quiz.js',
+  './js/lecture.js',
+  './js/modules.js',
+  './js/map.js',
+  './js/progress-view.js',
+  './content/modules.json',
+  './content/content-list.json',
+  './manifest.json'
 ];
 
 // External CDN resources (cache but allow network fallback)
