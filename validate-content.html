@@ -35,11 +35,18 @@
       // Validation rules
       const REQUIRED_FIELDS = {
         'multiple-choice': ['type', 'question', 'options', 'correctAnswer'],
+        'multiple-choice-multiple': [
+          'type',
+          'question',
+          'options',
+          'correctAnswers'
+        ],
         'self-assessment-mc': ['type', 'question', 'options', 'correctAnswer'],
         'learning-content': ['type'],
         'youtube-video': ['type', 'url'],
         image: ['type', 'url', 'alt'],
-        'mermaid-diagram': ['type']
+        'mermaid-diagram': ['type'],
+        achievement: ['type', 'id', 'title', 'description', 'unlockCondition']
       };
 
       async function validateAllContent() {
@@ -100,6 +107,7 @@
             !filePath.includes('/lecture-items/');
           const isQuizMetadata =
             filePath.endsWith('/quiz.md') && !filePath.includes('/questions/');
+          const isModuleMetadata = filePath.endsWith('/module.md');
           const isLectureItem = filePath.includes('/lecture-items/');
           const isQuizQuestion = filePath.includes('/questions/');
 
@@ -112,6 +120,8 @@
             validateLectureMetadata(documents[0], result);
           } else if (isQuizMetadata) {
             validateQuizMetadata(documents[0], result);
+          } else if (isModuleMetadata) {
+            validateModuleMetadata(documents[0], result);
           } else {
             // Validate each document as content item
             documents.forEach((doc, index) => {
@@ -153,6 +163,23 @@
         // Check required metadata fields
         if (!attrs.description) {
           result.errors.push(`Pflichtfeld 'description' fehlt`);
+        }
+      }
+
+      function validateModuleMetadata(doc, result) {
+        if (doc.parseError) {
+          result.errors.push(`YAML Parse-Fehler: ${doc.parseError}`);
+          return;
+        }
+
+        const attrs = doc.attributes;
+
+        // Check required metadata fields for modules
+        if (!attrs.id) {
+          result.errors.push(`Pflichtfeld 'id' fehlt`);
+        }
+        if (!attrs.title) {
+          result.errors.push(`Pflichtfeld 'title' fehlt`);
         }
       }
 
@@ -254,12 +281,29 @@
               );
             }
 
-            // Check if correctAnswer is in options
+            // Check if correctAnswer is in options (single choice)
             if (attrs.correctAnswer && Array.isArray(attrs.options)) {
               if (!attrs.options.includes(attrs.correctAnswer)) {
                 result.errors.push(
                   `Item ${itemNum}: 'correctAnswer' ist nicht in 'options' enthalten`
                 );
+              }
+            }
+
+            // Check if correctAnswers are in options (multiple choice)
+            if (attrs.correctAnswers && Array.isArray(attrs.options)) {
+              if (!Array.isArray(attrs.correctAnswers)) {
+                result.errors.push(
+                  `Item ${itemNum}: 'correctAnswers' muss eine Liste sein`
+                );
+              } else {
+                attrs.correctAnswers.forEach((answer) => {
+                  if (!attrs.options.includes(answer)) {
+                    result.errors.push(
+                      `Item ${itemNum}: correctAnswer '${answer}' ist nicht in 'options' enthalten`
+                    );
+                  }
+                });
               }
             }
           }
