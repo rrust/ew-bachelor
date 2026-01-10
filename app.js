@@ -249,6 +249,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateURL('/', 'Welcome');
     }
 
+    // Hide loading screen - app is ready
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+      loadingScreen.style.display = 'none';
+    }
+
     // Refresh button references after headers are injected
     refreshHeaderButtons();
     addEventListeners();
@@ -403,7 +409,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           'lecture-overview-description'
         ),
         lecturePlayer: document.getElementById('lecture-player'),
-        lectureOverview: document.getElementById('lecture-overview')
+        lectureOverview: document.getElementById('lecture-overview'),
+        lectureListContainer: document.getElementById('lecture-list-container')
       },
       updateURL,
       (index) => {
@@ -615,36 +622,43 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     });
 
-    inputs.lectureJumpTo.addEventListener('change', (e) => {
-      const newIndex = parseInt(e.target.value, 10);
-      if (newIndex >= 0 && newIndex < lectureState.currentItems.length) {
-        lectureState.currentIndex = newIndex;
-        renderCurrentLectureItem();
-      }
-    });
+    if (inputs.lectureJumpTo) {
+      inputs.lectureJumpTo.addEventListener('change', (e) => {
+        const newIndex = parseInt(e.target.value, 10);
+        if (newIndex >= 0 && newIndex < lectureState.currentItems.length) {
+          lectureState.currentIndex = newIndex;
+          renderCurrentLectureItem();
+        }
+      });
+    }
 
     // Swipe gestures for mobile navigation
     const lecturePlayer = document.getElementById('lecture-player');
+    const lectureItemDisplay = document.getElementById('lecture-item-display');
     if (lecturePlayer && window.SwipeGestures) {
-      window.SwipeGestures.init(lecturePlayer, {
-        onSwipeLeft: () => {
-          // Swipe left = next item
-          if (
-            lectureState.currentIndex <
-            lectureState.currentItems.length - 1
-          ) {
-            lectureState.currentIndex++;
-            renderCurrentLectureItem();
+      window.SwipeGestures.init(
+        lecturePlayer,
+        {
+          onSwipeLeft: () => {
+            // Swipe left = next item
+            if (
+              lectureState.currentIndex <
+              lectureState.currentItems.length - 1
+            ) {
+              lectureState.currentIndex++;
+              renderCurrentLectureItem();
+            }
+          },
+          onSwipeRight: () => {
+            // Swipe right = previous item
+            if (lectureState.currentIndex > 0) {
+              lectureState.currentIndex--;
+              renderCurrentLectureItem();
+            }
           }
         },
-        onSwipeRight: () => {
-          // Swipe right = previous item
-          if (lectureState.currentIndex > 0) {
-            lectureState.currentIndex--;
-            renderCurrentLectureItem();
-          }
-        }
-      });
+        { animateElement: lectureItemDisplay }
+      );
     }
   }
 

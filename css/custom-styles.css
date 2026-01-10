@@ -236,3 +236,8 @@
 .dark #lecture-overview-description a {
   color: #60a5fa;
 }
+
+/* Swipe Animation for Lecture Items */
+#lecture-item-display {
+  will-change: transform, opacity;
+}

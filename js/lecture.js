@@ -48,14 +48,16 @@ function startLecture(
     `${lectureTopic} - ${moduleData?.title || 'Module'}`
   );
 
-  // Populate jump-to dropdown
-  elements.lectureJumpTo.innerHTML = '';
-  lectureState.currentItems.forEach((item, index) => {
-    const option = document.createElement('option');
-    option.value = index;
-    option.textContent = `Schritt ${index + 1}`;
-    elements.lectureJumpTo.appendChild(option);
-  });
+  // Populate jump-to dropdown (if exists)
+  if (elements.lectureJumpTo) {
+    elements.lectureJumpTo.innerHTML = '';
+    lectureState.currentItems.forEach((item, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.textContent = `Schritt ${index + 1}`;
+      elements.lectureJumpTo.appendChild(option);
+    });
+  }
 
   // Show player, hide lecture list
   elements.lectureListContainer.style.display = 'none';
@@ -269,10 +271,12 @@ function updateLectureNav(
   updateURL
 ) {
   const totalItems = lectureState.currentItems.length;
-  displays.lectureProgress.textContent = `Schritt ${
+  displays.lectureProgress.textContent = `${
     lectureState.currentIndex + 1
   } / ${totalItems}`;
-  elements.lectureJumpTo.value = lectureState.currentIndex;
+  if (elements.lectureJumpTo) {
+    elements.lectureJumpTo.value = lectureState.currentIndex;
+  }
 
   // Update URL for current item
   updateURL(
