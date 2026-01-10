@@ -2,6 +2,44 @@
 
 Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 
+## TL;DR - Quick Reference
+
+**Für Menschen:** Passende Vorlage kopieren, anpassen, validieren.
+**Für AI-Agents:** Nutze exakt diese Strukturen für Content-Generierung.
+
+### Template-Übersicht
+
+| Typ                 | Verwendung                  | Link                                                           |
+| ------------------- | --------------------------- | -------------------------------------------------------------- |
+| Modul-Metadaten     | `module.md` im Modul-Ordner | [→ Vorlage](#modul-metadaten-modulemd)                         |
+| Quiz-Frage (single) | `questions/NN-name.md`      | [→ Vorlage](#einfache-multiple-choice-eine-richtige-antwort)   |
+| Quiz-Frage (multi)  | `questions/NN-name.md`      | [→ Vorlage](#multiple-choice-mit-mehreren-richtigen-antworten) |
+| Self-Assessment     | `lecture-items/NN-name.md`  | [→ Vorlage](#self-assessment-in-lecturemd)                     |
+| Lerninhalt (Text)   | `lecture-items/NN-name.md`  | [→ Vorlage](#learning-content-in-lecturemd)                    |
+| YouTube Video       | `lecture-items/NN-name.md`  | [→ Vorlage](#youtube-video-in-lecturemd)                       |
+| Bild                | `lecture-items/NN-name.md`  | [→ Vorlage](#image-in-lecturemd)                               |
+| Mermaid Diagramm    | `lecture-items/NN-name.md`  | [→ Vorlage](#mermaid-diagram-in-lecturemd)                     |
+
+### Kritische YAML-Regeln
+
+```yaml
+# ✅ RICHTIG - Bindestrich mit 2 Leerzeichen Einrückung
+options:
+  - 'Option 1'
+  - 'Option 2'
+
+# ❌ FALSCH - Asterisk oder keine Einrückung
+options:
+* 'Option 1'      # Falsch: Asterisk
+- 'Option 2'      # Falsch: Keine Einrückung
+```
+
+**Goldene Regel:** `correctAnswer` muss EXAKT mit einer Option übereinstimmen!
+
+→ [Häufige Fehler](#häufige-fehler) | [Validierung](#validierung)
+
+---
+
 ## Modul-Metadaten (module.md)
 
 Jeder Modul-Ordner muss eine `module.md` enthalten:
@@ -32,14 +70,14 @@ Keine - dies ist ein Einstiegsmodul.
 
 **Pflichtfelder:**
 
-| Feld | Typ | Beschreibung |
-|------|-----|--------------|
-| `id` | String | Eindeutige ID (sollte dem Ordnernamen entsprechen) |
-| `title` | String | Anzeigename des Moduls |
-| `ects` | Number | ECTS-Punkte |
-| `status` | String | `'freigeschaltet'` oder `'gesperrt'` |
-| `order` | Number | Reihenfolge in der Modulübersicht (1, 2, 3...) |
-| `description` | String | Kurzbeschreibung für die Modulübersicht |
+| Feld          | Typ    | Beschreibung                                       |
+| ------------- | ------ | -------------------------------------------------- |
+| `id`          | String | Eindeutige ID (sollte dem Ordnernamen entsprechen) |
+| `title`       | String | Anzeigename des Moduls                             |
+| `ects`        | Number | ECTS-Punkte                                        |
+| `status`      | String | `'freigeschaltet'` oder `'gesperrt'`               |
+| `order`       | Number | Reihenfolge in der Modulübersicht (1, 2, 3...)     |
+| `description` | String | Kurzbeschreibung für die Modulübersicht            |
 
 **Automatisch erkannt (nicht manuell pflegen!):**
 

@@ -138,14 +138,14 @@ Optionale Beschreibung des Moduls mit Lernzielen, Voraussetzungen, etc.
 
 **Pflichtfelder im Frontmatter:**
 
-| Feld | Typ | Beschreibung |
-|------|-----|--------------|
-| `id` | String | Eindeutige ID (sollte dem Ordnernamen entsprechen) |
-| `title` | String | Anzeigename des Moduls |
-| `ects` | Number | ECTS-Punkte |
-| `status` | String | `'freigeschaltet'` oder `'gesperrt'` |
-| `order` | Number | Reihenfolge in der Modulübersicht |
-| `description` | String | Kurzbeschreibung für die Modulübersicht |
+| Feld          | Typ    | Beschreibung                                       |
+| ------------- | ------ | -------------------------------------------------- |
+| `id`          | String | Eindeutige ID (sollte dem Ordnernamen entsprechen) |
+| `title`       | String | Anzeigename des Moduls                             |
+| `ects`        | Number | ECTS-Punkte                                        |
+| `status`      | String | `'freigeschaltet'` oder `'gesperrt'`               |
+| `order`       | Number | Reihenfolge in der Modulübersicht                  |
+| `description` | String | Kurzbeschreibung für die Modulübersicht            |
 
 **Automatisch erkannt:**
 
