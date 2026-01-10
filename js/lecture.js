@@ -33,7 +33,8 @@ function startLecture(
 
   lectureState.currentItems = lecture.items;
   // Use startIndex if valid, otherwise default to 0
-  lectureState.currentIndex = (startIndex >= 0 && startIndex < lecture.items.length) ? startIndex : 0;
+  lectureState.currentIndex =
+    startIndex >= 0 && startIndex < lecture.items.length ? startIndex : 0;
 
   // Show/hide header quiz button based on quiz availability
   const lectureQuizButton = document.getElementById('lecture-quiz-button');
