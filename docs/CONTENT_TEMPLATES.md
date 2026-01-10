@@ -2,6 +2,50 @@
 
 Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 
+## Modul-Metadaten (module.md)
+
+Jeder Modul-Ordner muss eine `module.md` enthalten:
+
+```markdown
+---
+id: '01-ernaehrungslehre-grundlagen'
+title: 'Grundlagen der Ernährungslehre'
+ects: 6
+status: 'freigeschaltet'
+order: 1
+description: 'Einführung in die Grundlagen der Ernährungswissenschaft'
+---
+
+# Grundlagen der Ernährungslehre
+
+Dieses Modul vermittelt die Grundlagen...
+
+## Lernziele
+
+- Lernziel 1
+- Lernziel 2
+
+## Voraussetzungen
+
+Keine - dies ist ein Einstiegsmodul.
+```
+
+**Pflichtfelder:**
+
+| Feld | Typ | Beschreibung |
+|------|-----|--------------|
+| `id` | String | Eindeutige ID (sollte dem Ordnernamen entsprechen) |
+| `title` | String | Anzeigename des Moduls |
+| `ects` | Number | ECTS-Punkte |
+| `status` | String | `'freigeschaltet'` oder `'gesperrt'` |
+| `order` | Number | Reihenfolge in der Modulübersicht (1, 2, 3...) |
+| `description` | String | Kurzbeschreibung für die Modulübersicht |
+
+**Automatisch erkannt (nicht manuell pflegen!):**
+
+- `lectures`: Alle Unterordner mit `lecture.md`
+- `achievements`: Alle Dateien im `achievements/` Ordner
+
 ## Quiz-Frage (quiz.md)
 
 ### Einfache Multiple-Choice (eine richtige Antwort)

@@ -42,9 +42,12 @@ Alle Inhalte sind modular aufgebaut für maximale Wartbarkeit und Übersichtlich
 
 ```text
 content/
-├── modules.json                          # Modul-Metadaten
-├── content-list.json                     # Auto-generiertes Manifest (nicht manuell bearbeiten!)
+├── modules.json                          # Auto-generiert (nicht manuell bearbeiten!)
+├── content-list.json                     # Auto-generiert (nicht manuell bearbeiten!)
 └── 01-modul-name/                       # Modul-Ordner (nummeriert)
+    ├── module.md                         # Modul-Metadaten (Pflicht!)
+    ├── achievements/                     # Achievements für dieses Modul (optional)
+    │   └── 01-cheatsheet.md
     └── 01-vorlesung-thema/              # Vorlesungs-Ordner (nummeriert)
         ├── lecture.md                    # Vorlesungs-Metadaten
         ├── lecture-items/                # Einzelne Lern-Items
@@ -60,7 +63,7 @@ content/
             └── 03-frage-thema-c.md
 ```
 
-**✅ Automatisch:** `content-list.json` wird automatisch generiert wenn du auf `main` pushst (GitHub Action). Lokal kannst du `node generate-content-list.js` ausführen.
+**✅ Vollautomatisch:** Sowohl `content-list.json` als auch `modules.json` werden automatisch generiert, wenn du auf `main` pushst (GitHub Action). Lokal kannst du `node generate-content-list.js` ausführen.
 
 ### Struktur-Prinzipien
 
@@ -88,6 +91,8 @@ Benennungskonvention: `NN-kurzbeschreibung/`
 
 Beispiel: `01-ernaehrungslehre-grundlagen/`
 
+**Jeder Modul-Ordner muss eine `module.md` enthalten!** (siehe unten)
+
 ### Vorlesungs-Ordner
 
 Innerhalb eines Modul-Ordners: `NN-thema/`
@@ -99,7 +104,11 @@ Beispiel: `01-grundlagen-zellbiologie/`
 
 ### Erforderliche Dateien
 
-Jeder Vorlesungs-Ordner muss enthalten:
+**Jeder Modul-Ordner muss enthalten:**
+
+1. **`module.md`** - Modul-Metadaten (id, title, ects, status, order, description)
+
+**Jeder Vorlesungs-Ordner muss enthalten:**
 
 1. **`lecture.md`** - Metadaten (Titel, Beschreibung)
 2. **`lecture-items/`** - Ordner mit einzelnen Lern-Items
@@ -107,6 +116,41 @@ Jeder Vorlesungs-Ordner muss enthalten:
 4. **`questions/`** - Ordner mit einzelnen Quiz-Fragen
 
 ## Content-Formate
+
+### 0. Modul-Metadaten (module.md)
+
+Jeder Modul-Ordner **muss** eine `module.md` Datei enthalten. Diese definiert die Modul-Metadaten.
+
+```yaml
+---
+id: '01-ernaehrungslehre-grundlagen'
+title: 'Grundlagen der Ernährungslehre'
+ects: 6
+status: 'freigeschaltet'
+order: 1
+description: 'Einführung in die Grundlagen der Ernährungswissenschaft'
+---
+
+# Grundlagen der Ernährungslehre
+
+Optionale Beschreibung des Moduls mit Lernzielen, Voraussetzungen, etc.
+```
+
+**Pflichtfelder im Frontmatter:**
+
+| Feld | Typ | Beschreibung |
+|------|-----|--------------|
+| `id` | String | Eindeutige ID (sollte dem Ordnernamen entsprechen) |
+| `title` | String | Anzeigename des Moduls |
+| `ects` | Number | ECTS-Punkte |
+| `status` | String | `'freigeschaltet'` oder `'gesperrt'` |
+| `order` | Number | Reihenfolge in der Modulübersicht |
+| `description` | String | Kurzbeschreibung für die Modulübersicht |
+
+**Automatisch erkannt:**
+
+- **Lectures**: Alle Unterordner mit einer `lecture.md` Datei
+- **Achievements**: Alle Dateien im `achievements/` Ordner mit einer `id` im Frontmatter
 
 ### 1. Vorlesungs-Metadaten (lecture.md)
 
@@ -282,6 +326,35 @@ Detaillierte Vorlagen mit Copy-Paste-Beispielen findest du in:
 
 ## Neue Inhalte hinzufügen
 
+### Schritt-für-Schritt: Neues Modul erstellen
+
+#### 1. Modul-Ordner anlegen
+
+```bash
+mkdir content/NN-neues-modul
+```
+
+#### 2. module.md erstellen
+
+```yaml
+---
+id: 'NN-neues-modul'
+title: 'Titel des Moduls'
+ects: 10
+status: 'gesperrt'
+order: 15
+description: 'Kurzbeschreibung des Moduls'
+---
+
+# Titel des Moduls
+
+Beschreibung, Lernziele, Voraussetzungen, etc.
+```
+
+#### 3. Vorlesungen hinzufügen (siehe unten)
+
+Das wars! Die `modules.json` wird automatisch aktualisiert, wenn du auf `main` pushst.
+
 ### Schritt-für-Schritt: Neue Vorlesung erstellen
 
 #### 1. Ordnerstruktur anlegen
@@ -341,20 +414,17 @@ Erstelle Dateien in `questions/`:
 
 Siehe [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md) für Vorlagen.
 
-#### 5. Manifest generieren
-
-Nach dem Hinzufügen neuer Dateien, generiere das Content-Manifest:
+#### 5. Commit & Push
 
 ```bash
-npm run generate-manifest
+git add .
+git commit -m "content: add new lecture"
+git push
 ```
 
-Dieser Befehl scannt automatisch alle Markdown-Dateien im `content/` Verzeichnis und aktualisiert `content-list.json`.
+Die GitHub Action generiert automatisch `content-list.json` und `modules.json`.
 
-**Wichtig:** Führe diesen Befehl immer aus, nachdem du:
-- Neue lecture-items oder questions hinzugefügt hast
-- Dateien umbenannt hast
-- Dateien gelöscht hast
+**Lokal testen:** Vor dem Push kannst du `node generate-content-list.js` ausführen.
 
 #### 6. Validieren
 
@@ -365,16 +435,16 @@ Dieser Befehl scannt automatisch alle Markdown-Dateien im `content/` Verzeichnis
 1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `lecture-items/` an
 2. **Neue Datei erstellen:** z.B. `07-neues-konzept.md`
 3. **Inhalt hinzufügen:** Verwende passende Vorlage aus CONTENT_TEMPLATES.md
-4. **Manifest generieren:** `npm run generate-manifest`
-5. **Validieren:** Überprüfe mit `validate-content.html`
+4. **Validieren:** Überprüfe mit `validate-content.html`
+5. **Commit & Push:** Die Action aktualisiert automatisch die JSON-Dateien
 
 ### Schritt-für-Schritt: Neue Quiz-Frage hinzufügen
 
 1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `questions/` an
 2. **Neue Datei erstellen:** z.B. `08-neue-frage.md`
 3. **Frage schreiben:** Verwende die Multiple-Choice-Vorlage
-4. **Manifest generieren:** `npm run generate-manifest`
-5. **Validieren:** Überprüfe mit `validate-content.html`
+4. **Validieren:** Überprüfe mit `validate-content.html`
+5. **Commit & Push:** Die Action aktualisiert automatisch die JSON-Dateien
 
 ### Inhalte umordnen
 
