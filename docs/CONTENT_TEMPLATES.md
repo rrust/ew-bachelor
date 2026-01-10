@@ -17,6 +17,7 @@ Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 | Self-Assessment     | `lecture-items/NN-name.md`  | [→ Vorlage](#self-assessment-in-lecturemd)                     |
 | Lerninhalt (Text)   | `lecture-items/NN-name.md`  | [→ Vorlage](#learning-content-in-lecturemd)                    |
 | YouTube Video       | `lecture-items/NN-name.md`  | [→ Vorlage](#youtube-video-in-lecturemd)                       |
+| External Video      | `lecture-items/NN-name.md`  | [→ Vorlage](#external-video-in-lecturemd)                      |
 | Bild                | `lecture-items/NN-name.md`  | [→ Vorlage](#image-in-lecturemd)                               |
 | Mermaid Diagramm    | `lecture-items/NN-name.md`  | [→ Vorlage](#mermaid-diagram-in-lecturemd)                     |
 
@@ -181,6 +182,36 @@ title: 'Video-Titel (optional)'
 - URL muss vollständige YouTube-URL sein (mit `watch?v=`)
 - Kurz-URLs (youtu.be) werden auch unterstützt
 - Video wird responsive eingebettet (16:9 Seitenverhältnis)
+
+## External Video (in lecture.md)
+
+Für externe Videos, die Login erfordern (z.B. Moodle, LMS):
+
+```markdown
+---
+type: 'external-video'
+url: 'https://moodle.univie.ac.at/mod/page/view.php?id=12345'
+title: 'Vorlesung 1: Materie und Messen'
+description: 'Öffnet die Uni-Wien Moodle-Seite (Login erforderlich)'
+duration: '45 min'
+---
+```
+
+**Felder:**
+
+| Feld          | Pflicht | Beschreibung                                           |
+| ------------- | ------- | ------------------------------------------------------ |
+| `type`        | Ja      | Muss `'external-video'` sein                           |
+| `url`         | Ja      | Vollständige URL zum externen Video                    |
+| `title`       | Nein    | Titel des Videos (Standard: "Externes Video")          |
+| `description` | Nein    | Beschreibung/Hinweis (Standard: "Öffnet in neuem Tab") |
+| `duration`    | Nein    | Geschätzte Dauer (z.B. "45 min")                       |
+
+**Wichtig:**
+
+- Link öffnet in neuem Tab
+- Benutzer wird aufgefordert, nach dem Ansehen zurückzukehren
+- Ideal für Uni-Videos, die Authentifizierung erfordern
 
 ## Image (in lecture.md)
 

@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.0.3';
+const CACHE_VERSION = 'v1.1.0';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -38,7 +38,10 @@ const CDN_ASSETS = [
   'https://cdn.tailwindcss.com',
   'https://cdn.jsdelivr.net/npm/marked/marked.min.js',
   'https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js',
-  'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'
+  'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
+  'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
+  'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js',
+  'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js'
 ];
 
 // Install: Cache static assets

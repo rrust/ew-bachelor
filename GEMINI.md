@@ -78,9 +78,11 @@ Use conventional commit format:
 Before completing any task:
 
 1. ✅ Test in browser (Live Server auto-reloads)
-2. ✅ Validate content: `validate-content.html`
+2. ✅ Validate content: Open `validate-content.html` in browser (NOT via node/shell!)
 3. ✅ Lint markdown: `npx markdownlint-cli2 "**/*.md"` (NO --fix flag!)
 4. ✅ Check for console errors
+
+**Note:** The content validator is browser-only. Do NOT try to run it via Node.js.
 
 ## Debugging Protocol
 

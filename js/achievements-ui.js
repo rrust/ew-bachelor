@@ -213,6 +213,17 @@ function showAchievementModal(achievement) {
   title.textContent = achievement.title;
   content.innerHTML = achievement.content;
 
+  // Render math in achievement content if available
+  if (window.renderMathInElement) {
+    renderMathInElement(content, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false
+    });
+  }
+
   modal.classList.remove('hidden');
 
   // Close modal listeners

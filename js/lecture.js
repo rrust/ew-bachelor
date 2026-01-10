@@ -86,9 +86,11 @@ function renderCurrentLectureItem(
   switch (item.type) {
     case 'learning-content':
       lectureItemDisplay.innerHTML = item.html;
+      renderMath(lectureItemDisplay);
       break;
     case 'self-assessment-mc':
       renderSelfAssessment(item, lectureItemDisplay);
+      renderMath(lectureItemDisplay);
       break;
     case 'youtube-video':
       renderYouTubeVideo(item, lectureItemDisplay);
@@ -99,11 +101,63 @@ function renderCurrentLectureItem(
     case 'mermaid-diagram':
       renderMermaidDiagram(item, lectureItemDisplay);
       break;
+    case 'external-video':
+      renderExternalVideo(item, lectureItemDisplay);
+      break;
     default:
       lectureItemDisplay.innerHTML = `<p class="text-red-500">Unbekannter Inhaltstyp: ${item.type}</p>`;
   }
 
   updateLectureNav();
+}
+
+/**
+ * Renders math formulas using KaTeX if available
+ * @param {HTMLElement} container - Container element to process
+ */
+function renderMath(container) {
+  if (window.renderMathInElement) {
+    renderMathInElement(container, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false
+    });
+  }
+}
+
+/**
+ * Renders an external video link
+ * @param {Object} item - Video item with url, title, description, duration
+ * @param {HTMLElement} container - Container element
+ */
+function renderExternalVideo(item, container) {
+  const title = item.title || 'Externes Video';
+  const description = item.description || 'Öffnet in neuem Tab';
+  const duration = item.duration
+    ? `<span class="text-sm text-gray-500 dark:text-gray-400">(${item.duration})</span>`
+    : '';
+
+  container.innerHTML = `
+    <div class="external-video-container p-6 border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg text-center">
+      <div class="text-4xl mb-4">🎬</div>
+      <h3 class="text-xl font-bold mb-2">${title} ${duration}</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">${description}</p>
+      <a href="${item.url}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+        <span>Video öffnen</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+        </svg>
+      </a>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+        Nach dem Ansehen hierher zurückkehren und fortfahren.
+      </p>
+    </div>
+  `;
 }
 
 /**
@@ -364,6 +418,9 @@ function showLectureOverview(
   const diagramCount = lectureState.currentItems.filter(
     (i) => i.type === 'mermaid-diagram'
   ).length;
+  const externalVideoCount = lectureState.currentItems.filter(
+    (i) => i.type === 'external-video'
+  ).length;
 
   const descParts = [];
   if (contentCount > 0)
@@ -378,6 +435,10 @@ function showLectureOverview(
     descParts.push(`${imageCount} Bild${imageCount > 1 ? 'er' : ''}`);
   if (diagramCount > 0)
     descParts.push(`${diagramCount} Diagramm${diagramCount > 1 ? 'e' : ''}`);
+  if (externalVideoCount > 0)
+    descParts.push(
+      `${externalVideoCount} Ext. Video${externalVideoCount > 1 ? 's' : ''}`
+    );
 
   overviewDescription.textContent = `${totalItems} Schritte insgesamt • ${descParts.join(
     ' • '
@@ -430,6 +491,12 @@ function showLectureOverview(
           'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200';
         preview = item.title || 'Interaktives Diagramm';
         break;
+      case 'external-video':
+        typeLabel = 'Ext. Video';
+        badgeClass =
+          'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200';
+        preview = item.title || 'Externes Video';
+        break;
       default:
         typeLabel = 'Unbekannt';
         badgeClass =
@@ -479,6 +546,8 @@ window.LectureModule = {
   renderImage,
   renderMermaidDiagram,
   renderSelfAssessment,
+  renderExternalVideo,
+  renderMath,
   updateLectureNav,
   showLectureOverview
 };
