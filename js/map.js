@@ -182,8 +182,25 @@ ${mermaidCode}
   // Render with Mermaid
   try {
     if (window.mermaid) {
+      // Wait for the DOM to be ready and the element to be visible
+      const diagramElement = document.getElementById(diagramId);
+      if (!diagramElement) {
+        console.error('Diagram element not found after creation');
+        return;
+      }
+
+      // Use requestAnimationFrame to ensure the element is in the DOM and rendered
+      await new Promise((resolve) => requestAnimationFrame(resolve));
+
+      // Check if the map view is visible before rendering
+      const mapView = document.getElementById('map-view');
+      if (!mapView || mapView.style.display === 'none') {
+        console.warn('Map view is not visible, skipping Mermaid render');
+        return;
+      }
+
       await window.mermaid.run({
-        querySelector: `#${diagramId}`
+        nodes: [diagramElement]
       });
 
       // Initialize pan and zoom after rendering
@@ -195,7 +212,11 @@ ${mermaidCode}
     }
   } catch (error) {
     console.error('Error rendering Mermaid diagram:', error);
-    mapContainer.innerHTML = `<div class="flex items-center justify-center h-full"><p class="text-red-500 text-xl">Fehler beim Rendern: ${error.message}</p></div>`;
+    // Only show error if the view is still visible (user didn't navigate away)
+    const mapView = document.getElementById('map-view');
+    if (mapView && mapView.style.display !== 'none') {
+      mapContainer.innerHTML = `<div class="flex items-center justify-center h-full"><p class="text-red-500 text-xl">Fehler beim Rendern: ${error.message}</p></div>`;
+    }
   }
 }
 
