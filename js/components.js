@@ -34,11 +34,15 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   const idSuffix = view === 'moduleMap' ? '' : `-${view}`;
   const activeNav = view; // Which nav button is active
 
+  // Get current study title dynamically
+  const studyInfo = typeof getCurrentStudyInfo === 'function' ? getCurrentStudyInfo() : null;
+  const studyTitle = studyInfo ? studyInfo.shortTitle : 'Lern-App';
+
   header.innerHTML = `
     <div class="container mx-auto px-4 md:px-8 py-3 md:py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-0">
       <div class="flex items-center space-x-2">
         <h1 class="text-sm md:text-xl font-bold text-gray-800 dark:text-gray-100">
-          BSc Ernährungswissenschaften
+          ${studyTitle}
         </h1>
         <span class="hidden md:inline text-gray-400 dark:text-gray-500">-</span>
         <span

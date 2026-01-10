@@ -203,8 +203,8 @@ ${mermaidCode}
         nodes: [diagramElement]
       });
 
-      // Initialize pan and zoom after rendering
-      setTimeout(() => initializeMapPanZoom(), 100);
+      // Initialize pan and zoom after rendering with longer delay
+      setTimeout(() => initializeMapPanZoom(), 300);
     } else {
       console.error('Mermaid is not loaded');
       mapContainer.innerHTML =
@@ -235,9 +235,27 @@ function initializeMapPanZoom() {
   const svg = mapContainer?.querySelector('svg');
 
   if (!wrapper || !svg) {
+    console.warn('Map pan/zoom: wrapper or svg not found, retrying...');
+    // Retry after a short delay if elements aren't ready
+    setTimeout(() => {
+      const retryWrapper = mapContainer?.querySelector('.overflow-auto');
+      const retrySvg = mapContainer?.querySelector('svg');
+      if (retryWrapper && retrySvg) {
+        setupMapPanZoom(retryWrapper, retrySvg);
+      }
+    }, 200);
     return;
   }
 
+  setupMapPanZoom(wrapper, svg);
+}
+
+/**
+ * Sets up pan and zoom event listeners
+ * @param {HTMLElement} wrapper - The wrapper element
+ * @param {SVGElement} svg - The SVG element
+ */
+function setupMapPanZoom(wrapper, svg) {
   // Pan functionality
   wrapper.style.cursor = 'grab';
 

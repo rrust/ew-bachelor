@@ -266,6 +266,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   /**
+   * Re-injects all headers (used after study switch to update title)
+   */
+  function reinjectHeaders() {
+    injectHeader('module-map-view', 'moduleMap');
+    injectHeader('achievements-view', 'achievements');
+    injectHeader('tools-view', 'tools');
+    injectHeader('map-view', 'map');
+    injectHeader('progress-view', 'progress');
+    injectHeader('search-view', 'search');
+  }
+
+  /**
    * Shows the study selection view
    * @param {string} userName - The user's name for greeting
    */
@@ -282,6 +294,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Load content for the selected study
       await loadStudyContent(studyId);
+
+      // Re-inject headers with new study title
+      reinjectHeaders();
 
       // Create initial progress if needed
       let progress = getUserProgress();
