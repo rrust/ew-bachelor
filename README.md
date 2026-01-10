@@ -26,11 +26,6 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 2. Content mit `validate-content.html` validieren
 3. Markdown linten: `npx markdownlint-cli2 "**/*.md"`
 
-**Wichtigste Regeln:**
-- YAML-Listen mit `-` (dash), nie `*` (asterisk)
-- `correctAnswer` muss exakt mit Option übereinstimmen
-- Dateien mit `NN-` Prefix nummerieren
-
 ## App Development
 
 → **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Setup & Tech Stack  
