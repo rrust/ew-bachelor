@@ -1,5 +1,4 @@
 [
-  "content/01-ernaehrungslehre-grundlagen/achievements/01-cell-biology-cheatsheet.md",
   "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie/lecture.md",
   "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie/lecture-items/01-die-zelle.md",
   "content/01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie/lecture-items/02-mitochondrien-test.md",
@@ -47,5 +46,6 @@
   "content/01-ernaehrungslehre-grundlagen/03-fette-oele/questions/04-trans-fettsaeuren.md",
   "content/01-ernaehrungslehre-grundlagen/03-fette-oele/questions/05-hdl-cholesterin.md",
   "content/01-ernaehrungslehre-grundlagen/03-fette-oele/questions/06-fettloesliche-vitamine.md",
-  "content/01-ernaehrungslehre-grundlagen/03-fette-oele/questions/07-dge-empfehlung.md"
+  "content/01-ernaehrungslehre-grundlagen/03-fette-oele/questions/07-dge-empfehlung.md",
+  "content/01-ernaehrungslehre-grundlagen/achievements/01-cell-biology-cheatsheet.md"
 ]
