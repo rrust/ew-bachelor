@@ -29,8 +29,7 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 ## App Development
 
 → **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - Setup & Tech Stack  
-→ **[GEMINI.md](GEMINI.md)** - Architektur & Coding Guidelines  
-→ **[docs/AI_CODING.md](docs/AI_CODING.md)** - AI-Workflow
+→ **[GEMINI.md](GEMINI.md)** - AI Coding Instructions
 
 ## Planning & Reference
 

@@ -1,72 +1,22 @@
 # GitHub Copilot Instructions
 
-## Role Division
+**Read and follow: [`GEMINI.md`](../GEMINI.md)**
 
-This project uses two AI assistants with distinct responsibilities:
+## Quick Reference
 
-- **Gemini Code Assist**: Content development (creating and managing learning materials in `content/` directory)
-- **GitHub Copilot**: App development (implementing features, fixing bugs, improving architecture)
+- **Tech:** Plain HTML/CSS/JS, Tailwind CDN, no build step
+- **Code:** English | **UI text:** German
+- **Validate:** `validate-content.html` after content changes
+- **Lint:** `npx markdownlint-cli2 "**/*.md"` (no --fix!)
 
-## Primary Reference
+## Don't
 
-**All coding agents should read and follow the guidelines in [`GEMINI.md`](../GEMINI.md)**, which contains:
+- Add frameworks, TypeScript, or build tools
+- Over-engineer or refactor without reason
+- Ask permission for each step
 
-- Big picture architecture
-- Technology stack (plain HTML/CSS/JS, Tailwind CSS, no frameworks)
-- Content format and structure
-- Code organization and conventions
-- Development workflows
-- Project-specific rules
+## Do
 
-## Copilot-Specific Guidelines
-
-As the **app development agent**, focus on:
-
-### Communication
-
-Development language is english, AI conversations about the code are in english.
-Content development is in german, AI conversations about content are in german.
-
-### Application Code
-
-- `index.html` - Main UI structure
-- `app.js` - Core application logic
-- `js/` - Utility modules (parser, progress tracking, etc.)
-- Styling with Tailwind CSS (CDN-based)
-
-### Best Practices
-
-- Keep code simple and maintainable (no frameworks)
-- Implement features autonomously until ready for testing
-- Always validate changes by running the app in browser
-- Use `localStorage` for state management
-- Ensure responsive design with Tailwind
-
-### Content Handling
-
-- Parse Markdown files with YAML frontmatter
-- Support multiple item types: `learning-content`, `self-assessment-mc`, `multiple-choice`
-- Respect content structure defined in `content/modules.json` and `content-list.json`
-- When working with content, defer to content development guidelines in `GEMINI.md`
-
-### Critical Rules
-
-- **Always validate content after changes** using `validate-content.html`
-- **Lint markdown** before completing tasks: `npx markdownlint-cli2 "**/*.md"` (NO --fix flag!)
-- **Language**: User-facing text in German, code/comments in English
-- **No build step**: Everything runs directly in browser
-
-## When to Consult GEMINI.md
-
-Refer to [`GEMINI.md`](../GEMINI.md) for details on:
-
-- Content file structure and naming conventions
-- YAML formatting rules and required fields
-- Module and lecture organization
-- Progress tracking data structure
-- UI component specifications
-- Complete development workflows
-
-## Communication Style
-
-Implement features autonomously. Announce when ready for testing rather than asking permission at each step.
+- Work autonomously, announce when ready for testing
+- Keep code simple
+- Fix what breaks
