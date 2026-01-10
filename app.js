@@ -850,9 +850,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       showLectureOverview();
     });
 
-    buttons.lectureQuizButton.addEventListener('click', () => {
-      startQuiz(currentModuleId, currentLectureId);
-    });
+    if (buttons.lectureQuizButton) {
+      buttons.lectureQuizButton.addEventListener('click', () => {
+        startQuiz(currentModuleId, currentLectureId);
+      });
+    }
 
     buttons.backToLecture.addEventListener('click', () => {
       showView('lecture');

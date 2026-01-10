@@ -36,7 +36,8 @@ function startLecture(
   // Show/hide header quiz button based on quiz availability
   const lectureQuizButton = document.getElementById('lecture-quiz-button');
   if (lectureQuizButton) {
-    lectureQuizButton.style.display = lecture.quiz && lecture.quiz.length > 0 ? 'block' : 'none';
+    lectureQuizButton.style.display =
+      lecture.quiz && lecture.quiz.length > 0 ? 'block' : 'none';
   }
 
   // Update URL
