@@ -22,7 +22,13 @@
     "ects": 10,
     "status": "freigeschaltet",
     "order": 2,
-    "description": "Chemische Grundlagen für Ernährungswissenschaften"
+    "description": "Chemische Grundlagen für Ernährungswissenschaften",
+    "lectures": [
+      "01-materie-messen"
+    ],
+    "achievements": [
+      "materie-messen-cheatsheet"
+    ]
   },
   {
     "id": "03-biostatistik-wissenschaftliches-arbeiten",
