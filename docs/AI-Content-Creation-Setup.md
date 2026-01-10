@@ -23,7 +23,7 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 │  - Deep Research mit Web-Grounding                                      │
 │  - Vorlesungsinhalte aufbereiten                                        │
 │  - Videos transkribieren (Whisper)                                      │
-│  → Speichern in: studies/{studyId}/NN-modul/lecture-Y.md                    │
+│  → Speichern in: studies-material/{studyId}/NN-modul/lecture-Y.md          │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
                                 ▼
@@ -66,7 +66,7 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 - Lange Vorlesungsmitschriften aufbereiten
 - YouTube-Videos und Bilder recherchieren
 - Fakten verifizieren mit Web-Grounding
-- Inhalte für `studies/{studyId}/` Ordner erstellen
+- Inhalte für `studies-material/{studyId}/` Ordner erstellen
 
 ### Beispiel-Prompt für Quellinhalte
 
@@ -109,7 +109,7 @@ Zusätzliche Recherche (Web-Grounding aktivieren):
 
 ### Wann Copilot nutzen
 
-- Quellinhalte aus `studies/{studyId}/` in App-Format transformieren
+- Quellinhalte aus `studies-material/{studyId}/` in App-Format transformieren
 - lecture-items, questions, self-assessments erstellen
 - Achievements (Cheat Sheets) generieren
 - YAML-Strukturen korrekt formatieren
@@ -117,7 +117,7 @@ Zusätzliche Recherche (Web-Grounding aktivieren):
 ### Beispiel-Prompt für Content-Erstellung
 
 ```text
-Lies die Datei studies/bsc-ernaehrungswissenschaften/02-grundlagen-chemie/01-materie-messen.md 
+Lies die Datei studies-material/bsc-ernaehrungswissenschaften/02-grundlagen-chemie/01-materie-messen.md 
 und erstelle daraus strukturierte Lerninhalte für die App.
 
 Verwende die Templates aus docs/CONTENT_TEMPLATES.md.
@@ -180,7 +180,7 @@ whisper audio.mp3 --language German --model turbo
 ### Workflow: Video → Lerninhalte
 
 1. **Transkribieren** mit Whisper
-2. **Aufbereiten** → in `studies/{studyId}/NN-modul/` speichern
+2. **Aufbereiten** → in `studies-material/{studyId}/NN-modul/` speichern
 3. **Transformieren** mit Copilot → lecture-items + questions
 4. **Video einbinden** als `youtube-video` Type
 5. **Self-Assessments** zu Video-Inhalten erstellen

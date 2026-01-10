@@ -42,4 +42,4 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 - [WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
 
 **Referenz:**
-- [studies/](studies/) - Studiengang-Definitionen & Referenzmaterial
+- [studies-material/](studies-material/) - Quelldokumente & Referenzmaterial

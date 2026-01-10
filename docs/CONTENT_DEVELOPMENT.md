@@ -613,7 +613,7 @@ options:
 ### Typischer Content-Erstellungs-Zyklus
 
 1. **Planung:**
-   - Referenz in `studies/{studyId}/study.md` prüfen
+   - Referenz in `content/{studyId}/study.md` prüfen
    - Lernziele definieren
    - Themen festlegen
 
