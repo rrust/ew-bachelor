@@ -1,5 +1,21 @@
 # Achievement System - Concept
 
+## Philosophy: Why This App Exists
+
+**The Problem with Existing Learning Apps:**
+
+1. **Anki is only ONE learning pattern** - Pure spaced repetition is effective but monotonous. Students need variety: lectures, quizzes, self-assessments, visual aids, and summaries.
+
+2. **Generic badges are meaningless** - Other apps offer achievements like "Completed 10 questions!" that have no relation to actual course content. The motivation to unlock them is low because they provide no real benefit.
+
+**Our Solution:**
+
+- **Content-related achievements** that unlock actual study materials (cheat sheets, diagrams, summaries)
+- **Multiple learning patterns** within one app (read, test yourself, quiz, review)
+- **Time-limited rewards** that encourage regular engagement, not just one-time completion
+
+---
+
 ## Overview
 
 The Achievement System adds **useful rewards** that help students with learning. Unlike purely decorative badges, achievements provide practical value such as cheat sheets, graphics, or summaries.
@@ -564,9 +580,44 @@ content/
 1. **Extension Question Difficulty**: Should extension questions be harder than normal quiz questions?
 2. **Multiple Extensions**: Limit for maximum extensions?
 3. **Achievement Tiers**: Bronze/Silver/Gold achievements with different content?
-4. **Sharing**: Can students share/compare their achievements?
-5. **Offline Mode**: How does expiration work without internet connection?
-6. **Reset Options**: Can students voluntarily reset an achievement?
+4. **Offline Mode**: How does expiration work without internet connection?
+5. **Reset Options**: Can students voluntarily reset an achievement?
+
+---
+
+## Future Learning Concepts
+
+These features could enhance the learning experience but are not part of the initial achievement system:
+
+### Spaced Repetition Review Mode
+
+- **Feature:** Smart review system that resurfaces content at optimal intervals
+- **Why valuable:** Combats forgetting curve, scientifically proven
+- **Implementation idea:**
+  - "Review Mode" presents questions from completed lectures
+  - Algorithm tracks which topics need review based on time and performance
+  - Could integrate with achievement extension system
+- **Effort:** High (7-10 days)
+- **Status:** Consider after core achievement system is stable
+
+### Additional Question Types
+
+- **Feature:** More interactive formats beyond multiple choice
+- **Options:**
+  - Fill-in-the-blank questions
+  - Drag-and-drop matching exercises
+  - Flashcard mode for terminology
+- **Why valuable:** Active engagement improves memory encoding
+- **Effort:** High (8-12 days per type)
+- **Status:** Future enhancement
+
+### Microlearning / Quick Review
+
+- **Feature:** "Quick Review" mode (3-5 questions, 2 minutes)
+- **Why valuable:** Fits into busy schedules, good for commutes
+- **Could integrate with:** Achievement extension flow
+- **Effort:** Low (1-2 days)
+- **Status:** Good quick win after core system
 
 ## Implementation Plan
 

@@ -129,10 +129,13 @@ function escapeForMermaid(text) {
  * @returns {string} Badge emoji
  */
 function getProgressBadge(average) {
-  if (average >= 90) return '🥇';
-  if (average >= 70) return '🥈';
-  if (average >= 50) return '🥉';
-  return '⚪';
+  if (window.getBadgeInfo) {
+    return window.getBadgeInfo(average).emoji;
+  }
+  if (average >= 90) return '★';
+  if (average >= 70) return '★';
+  if (average >= 50) return '★';
+  return '☆';
 }
 
 /**
@@ -142,11 +145,11 @@ function getProgressBadge(average) {
  */
 function getBadgeEmoji(badge) {
   const badges = {
-    gold: '🥇',
-    silver: '🥈',
-    bronze: '🥉'
+    gold: '★',
+    silver: '★',
+    bronze: '★'
   };
-  return badges[badge] || '⚪';
+  return badges[badge] || '☆';
 }
 
 /**

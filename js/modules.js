@@ -174,29 +174,22 @@ function createModuleCard(
               } ECTS</span>
       `;
 
-  // Badge on the right
+  // Badge on the right - use colored stars
   cardHTML += '<div class="badge-container">';
   if (stats.totalQuizzes > 0 && moduleMeta.status !== 'gesperrt') {
-    if (stats.badge === 'gold') {
+    const badgeInfo = window.getBadgeInfo
+      ? window.getBadgeInfo(stats.averageScore)
+      : { html: '☆', text: '' };
+    if (stats.completedQuizzes > 0) {
       cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(
         0
-      )}%">🥇</span>`;
-    } else if (stats.badge === 'silver') {
-      cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(
-        0
-      )}%">🥈</span>`;
-    } else if (stats.badge === 'bronze') {
-      cardHTML += `<span class="text-2xl" title="Durchschnittliche Punktzahl: ${stats.averageScore.toFixed(
-        0
-      )}%">🥉</span>`;
-    } else if (stats.badge === 'incomplete') {
-      cardHTML += `<span class="text-2xl" title="${stats.completedQuizzes} von ${stats.totalQuizzes} Quizzes absolviert">⚪</span>`;
+      )}% (${badgeInfo.text})">${badgeInfo.html}</span>`;
     } else {
-      cardHTML += `<span class="text-2xl text-gray-300" title="Noch keine Quizzes absolviert">⚪</span>`;
+      cardHTML += `<span class="text-2xl" title="Noch keine Quizzes absolviert"><span style="color: #D1D5DB;">☆</span></span>`;
     }
   } else {
     cardHTML +=
-      '<span class="text-2xl text-gray-300" title="Noch keine Quizzes absolviert">⚪</span>';
+      '<span class="text-2xl" title="Noch keine Quizzes absolviert"><span style="color: #D1D5DB;">☆</span></span>';
   }
   cardHTML += '</div>';
   cardHTML += '</div>'; // Close header
@@ -223,8 +216,28 @@ function createModuleCard(
     // Extract module number from ID (e.g., "01-" from "01-ernaehrungslehre-grundlagen")
     const moduleNumber = moduleId.match(/^(\d+)-/)?.[1] || '';
 
+    // Calculate completion percentage for progress bar
+    const completionPercent =
+      stats.totalQuizzes > 0
+        ? (stats.completedQuizzes / stats.totalQuizzes) * 100
+        : 0;
+
+    // Mini progress bar
+    cardHTML += `
+      <div class="px-4 pt-2">
+        <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+          <span>${stats.completedQuizzes}/${stats.totalQuizzes} Tests</span>
+          <span>${Math.round(completionPercent)}%</span>
+        </div>
+        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+          <div class="bg-blue-500 dark:bg-blue-400 h-1.5 rounded-full transition-all duration-300" 
+               style="width: ${completionPercent}%"></div>
+        </div>
+      </div>
+    `;
+
     cardHTML +=
-      '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between">';
+      '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between mt-2">';
 
     // Module number on the left
     if (moduleNumber) {
@@ -375,28 +388,19 @@ function displayLecturesForModule(
       let badgeEmoji = '';
       let tooltipText = '';
 
-      if (lectureProgress?.badge === 'gold') {
-        badgeEmoji = '🥇';
+      if (lectureProgress?.score !== undefined) {
+        const badgeInfo = window.getBadgeInfo
+          ? window.getBadgeInfo(lectureProgress.score)
+          : { html: '☆', text: '' };
+        badgeEmoji = badgeInfo.html;
         tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(
           0
-        )}%`;
-      } else if (lectureProgress?.badge === 'silver') {
-        badgeEmoji = '🥈';
-        tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(
-          0
-        )}%`;
-      } else if (lectureProgress?.badge === 'bronze') {
-        badgeEmoji = '🥉';
-        tooltipText = `Erreichte Punktzahl: ${lectureProgress.score.toFixed(
-          0
-        )}%`;
+        )}% (${badgeInfo.text})`;
       } else {
-        badgeEmoji = '⚪';
+        badgeEmoji = '<span style="color: #D1D5DB;">☆</span>';
         tooltipText = 'Quiz noch nicht absolviert';
       }
-      contentHTML += `<span class="text-2xl flex-shrink-0 ${
-        lectureProgress?.badge ? '' : 'text-gray-300'
-      }" title="${tooltipText}">${badgeEmoji}</span>`;
+      contentHTML += `<span class="text-2xl flex-shrink-0" title="${tooltipText}">${badgeEmoji}</span>`;
     }
     contentHTML += `</div>`;
 
