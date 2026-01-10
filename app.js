@@ -174,6 +174,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (route.view === 'tools') {
       updateGreeting();
       showView('tools');
+      // Update PWA install button state
+      if (window.PWAInstall && window.PWAInstall.updateInstallButton) {
+        window.PWAInstall.updateInstallButton();
+      }
       return true;
     } else if (route.view === 'map') {
       updateGreeting();
