@@ -1,7 +1,11 @@
 ---
 id: bsc-ernaehrungswissenschaften
 title: Bachelorstudium Ernährungswissenschaften
+shortTitle: BSc EW
 university: Universität Wien
+icon: "🍎"
+status: active
+order: 1
 ects: 180
 semesters: 6
 curriculum_version: "September 2018"

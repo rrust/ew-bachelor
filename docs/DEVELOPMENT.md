@@ -75,7 +75,7 @@ docs/               # Documentation
 | `js/parser.js`                        | Parses Markdown content                     |
 | `content/{studyId}/modules.json`      | Module metadata per study                   |
 | `content/{studyId}/content-list.json` | Registry of content files per study         |
-| `content/studies.json`                | Master list of all study programs           |
+| `content/studies.json`                | Master list of all study programs (auto-generated) |
 
 ## Adding New Features
 

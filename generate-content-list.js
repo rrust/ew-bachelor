@@ -266,6 +266,55 @@ function isStudyFolder(dir) {
 }
 
 /**
+ * Generates studies.json from study.md files in each study folder.
+ * Extracts UI metadata: id, title, shortTitle, university, icon, status, order
+ */
+function generateStudiesJson(studyFolders) {
+  const studies = [];
+
+  for (const studyId of studyFolders) {
+    const studyFile = path.join(CONTENT_DIR, studyId, 'study.md');
+    
+    if (!fs.existsSync(studyFile)) {
+      console.warn(`  Warning: ${studyId}/study.md not found, using defaults`);
+      studies.push({
+        id: studyId,
+        title: studyId,
+        shortTitle: studyId,
+        university: '',
+        icon: '📚',
+        status: 'active',
+        order: 99
+      });
+      continue;
+    }
+
+    const content = fs.readFileSync(studyFile, 'utf-8');
+    const frontmatter = parseFrontmatter(content);
+
+    if (!frontmatter) {
+      console.warn(`  Warning: ${studyId}/study.md has no frontmatter`);
+      continue;
+    }
+
+    studies.push({
+      id: frontmatter.id || studyId,
+      title: frontmatter.title || studyId,
+      shortTitle: frontmatter.shortTitle || frontmatter.title || studyId,
+      university: frontmatter.university || '',
+      icon: frontmatter.icon || '📚',
+      status: frontmatter.status || 'active',
+      order: frontmatter.order || 99
+    });
+  }
+
+  // Sort by order
+  studies.sort((a, b) => a.order - b.order);
+
+  return studies;
+}
+
+/**
  * Main function - processes all study folders
  */
 function main() {
@@ -288,6 +337,13 @@ function main() {
   console.log(
     `Found ${studyFolders.length} study folder(s): ${studyFolders.join(', ')}`
   );
+
+  // Generate studies.json from study.md files
+  const studies = generateStudiesJson(studyFolders);
+  const studiesFile = path.join(CONTENT_DIR, 'studies.json');
+  fs.writeFileSync(studiesFile, JSON.stringify(studies, null, 2) + '\n');
+  console.log(`\n✓ Generated ${path.relative(__dirname, studiesFile)}`);
+  console.log(`  ${studies.length} studies registered`);
 
   for (const studyId of studyFolders) {
     console.log(`\n📚 Processing study: ${studyId}`);

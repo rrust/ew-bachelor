@@ -1,7 +1,11 @@
 ---
 id: bsc-lebensmittel-biotechnologie
 title: Bachelorstudium Lebensmittel- und Biotechnologie
+shortTitle: BSc LBT
 university: Universität für Bodenkultur Wien
+icon: "🧬"
+status: active
+order: 2
 ects: 180
 semesters: 6
 curriculum_version: "2023"
