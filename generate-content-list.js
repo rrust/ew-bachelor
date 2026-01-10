@@ -274,7 +274,7 @@ function generateStudiesJson(studyFolders) {
 
   for (const studyId of studyFolders) {
     const studyFile = path.join(CONTENT_DIR, studyId, 'study.md');
-    
+
     if (!fs.existsSync(studyFile)) {
       console.warn(`  Warning: ${studyId}/study.md not found, using defaults`);
       studies.push({

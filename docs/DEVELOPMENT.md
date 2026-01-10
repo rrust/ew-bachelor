@@ -67,14 +67,14 @@ docs/               # Documentation
 
 ## Key Files
 
-| File                                  | Purpose                                     |
-| ------------------------------------- | ------------------------------------------- |
-| `app.js`                              | Main orchestration, passes state to modules |
-| `js/lecture.js`                       | Lecture player, content rendering           |
-| `js/quiz.js`                          | Quiz logic, scoring                         |
-| `js/parser.js`                        | Parses Markdown content                     |
-| `content/{studyId}/modules.json`      | Module metadata per study                   |
-| `content/{studyId}/content-list.json` | Registry of content files per study         |
+| File                                  | Purpose                                            |
+| ------------------------------------- | -------------------------------------------------- |
+| `app.js`                              | Main orchestration, passes state to modules        |
+| `js/lecture.js`                       | Lecture player, content rendering                  |
+| `js/quiz.js`                          | Quiz logic, scoring                                |
+| `js/parser.js`                        | Parses Markdown content                            |
+| `content/{studyId}/modules.json`      | Module metadata per study                          |
+| `content/{studyId}/content-list.json` | Registry of content files per study                |
 | `content/studies.json`                | Master list of all study programs (auto-generated) |
 
 ## Adding New Features

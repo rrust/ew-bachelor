@@ -8,11 +8,12 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 
 ## Features
 
+- 🎓 Multi-Study Support – mehrere Studiengänge in einer App
 - 📚 Modulare Vorlesungen mit verschiedenen Content-Typen
 - 🎯 Tests & Self-Assessments für Wissensüberprüfung
 - 🏆 Achievement-System mit zeitlich begrenzten Lernhilfen
 - 📊 Progress Tracking mit Badges und Statistiken
-- � Fortschritt-Backup & Restore
+- 💾 Fortschritt-Backup & Restore
 - 🔍 Globale Suche über alle Inhalte
 - 📱 PWA – installierbar als Offline-App
 - 👆 Swipe-Gesten für mobile Navigation

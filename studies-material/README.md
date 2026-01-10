@@ -18,11 +18,11 @@ studies-material/
 
 ## Beziehung zu content/
 
-| Ordner/Datei                | Zweck                                     |
-| --------------------------- | ----------------------------------------- |
-| `content/studies.json`      | Master-Liste aller Studiengänge (für App) |
-| `content/{study-id}/`       | Strukturierte App-Lerninhalte             |
-| `studies-material/{study-id}/` | Unstrukturierte Quelldokumente/Notizen |
+| Ordner/Datei                   | Zweck                                     |
+| ------------------------------ | ----------------------------------------- |
+| `content/studies.json`         | Master-Liste aller Studiengänge (für App) |
+| `content/{study-id}/`          | Strukturierte App-Lerninhalte             |
+| `studies-material/{study-id}/` | Unstrukturierte Quelldokumente/Notizen    |
 
 ## Workflow: Quelldokumente → App-Inhalte
 
