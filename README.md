@@ -12,8 +12,11 @@ Eine spielerische Lern-App für Ernährungswissenschaften mit modularen Vorlesun
 - 🎯 Tests & Self-Assessments für Wissensüberprüfung
 - 🏆 Achievement-System mit zeitlich begrenzten Lernhilfen
 - 📊 Progress Tracking mit Badges und Statistiken
+- � Fortschritt-Backup & Restore
+- 🔍 Globale Suche über alle Inhalte
+- 📱 PWA – installierbar als Offline-App
+- 👆 Swipe-Gesten für mobile Navigation
 - 🗺️ Studienstruktur-Map zur Übersicht
-- 📱 Responsive Design für mobile Nutzung
 - 🌓 Dark Mode Support
 
 ## Content Development

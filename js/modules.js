@@ -305,6 +305,7 @@ function createModuleCard(
  * @param {Function} startLecture - Function to start a lecture
  * @param {Function} startQuiz - Function to start a quiz
  * @param {Function} showLectureOverview - Function to show overview
+ * @param {Function} loadModuleCards - Function to reload module cards when navigating back
  */
 function displayLecturesForModule(
   moduleId,
@@ -315,7 +316,8 @@ function displayLecturesForModule(
   showView,
   startLecture,
   startQuiz,
-  showLectureOverview
+  showLectureOverview,
+  loadModuleCards
 ) {
   const module = APP_CONTENT[moduleId];
   const progress = getUserProgress();
@@ -360,6 +362,9 @@ function displayLecturesForModule(
   const backButton = document.getElementById('back-to-modules-button');
   if (backButton) {
     backButton.addEventListener('click', () => {
+      if (loadModuleCards) {
+        loadModuleCards();
+      }
       showView('moduleMap');
       updateURL('/', 'Module Overview');
     });
