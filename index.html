@@ -59,9 +59,13 @@
   <body
     class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans transition-colors duration-200"
   >
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
     <!-- View for the initial welcome screen -->
     <div
       id="welcome-view"
+      role="main"
       class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-md text-center"
     >
       <h1 class="text-3xl font-bold mb-4">
@@ -72,6 +76,7 @@
         type="text"
         id="name-input"
         placeholder="Dein Name"
+        aria-label="Dein Name"
         class="w-full px-4 py-2 border dark:border-gray-600 dark:bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       <button
@@ -83,13 +88,20 @@
     </div>
 
     <!-- View for the module map -->
-    <div id="module-map-view" style="display: none">
+    <div
+      id="module-map-view"
+      id="main-content"
+      role="main"
+      style="display: none"
+    >
       <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-8">
         <div
           id="module-grid"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          role="list"
+          aria-label="Verfügbare Module"
         ></div>
       </div>
     </div>
@@ -242,6 +254,7 @@
         >
           <button
             id="back-to-lectures-button"
+            aria-label="Zurück zur Vorlesungsliste"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
           >
             &larr; Zurück
@@ -249,6 +262,7 @@
           <div class="flex gap-2">
             <button
               id="lecture-overview-button"
+              aria-label="Vorlesungsübersicht anzeigen (Taste O)"
               class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
             >
               Übersicht
@@ -282,6 +296,7 @@
         >
           <button
             id="prev-item-button"
+            aria-label="Vorheriger Schritt (Taste ←)"
             class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
           >
             Zurück
@@ -289,6 +304,7 @@
           <div class="flex items-center space-x-4">
             <select
               id="lecture-jump-to"
+              aria-label="Zu Schritt springen"
               class="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 rounded-md"
             ></select>
             <span
@@ -298,6 +314,7 @@
           </div>
           <button
             id="next-item-button"
+            aria-label="Nächster Schritt (Taste →)"
             class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
           >
             Weiter
@@ -349,11 +366,14 @@
     <!-- View for the quiz -->
     <div
       id="quiz-view"
+      role="main"
+      aria-label="Quiz"
       style="display: none"
       class="container mx-auto my-12 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-2xl"
     >
       <button
         id="back-to-lecture-button"
+        aria-label="Zurück zur Vorlesung (Taste Esc)"
         class="mb-8 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
       >
         &larr; Zurück
@@ -361,6 +381,8 @@
 
       <div
         id="quiz-progress-container"
+        role="progressbar"
+        aria-label="Quiz-Fortschritt"
         class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mb-2"
       >
         <div
@@ -380,7 +402,7 @@
         Punkte: 0
       </p>
 
-      <div id="quiz-content"></div>
+      <div id="quiz-content" role="form" aria-live="polite"></div>
     </div>
 
     <!-- View for Quiz Results (unified for both existing and just-completed) -->
@@ -808,6 +830,7 @@
     <script src="js/achievements-ui.js"></script>
     <script src="js/components.js"></script>
     <script src="js/swipe.js"></script>
+    <script src="js/keyboard.js"></script>
     <script src="js/search.js"></script>
     <!-- Feature modules -->
     <script src="js/quiz.js"></script>
