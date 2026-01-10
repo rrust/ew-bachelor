@@ -68,8 +68,8 @@ async function loadStudies() {
     const basePath = getBasePath();
     const studiesPath =
       basePath === '/'
-        ? 'studies/studies.json'
-        : `${basePath}studies/studies.json`;
+        ? 'content/studies.json'
+        : `${basePath}content/studies.json`;
     const response = await fetch(studiesPath);
 
     if (!response.ok) {

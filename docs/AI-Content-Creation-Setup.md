@@ -171,11 +171,11 @@ whisper audio.mp3 --language German --model turbo
 
 ### Modell-Empfehlungen
 
-| Modell   | RAM   | Qualität  | Für deutsche Vorlesungen  |
-| -------- | ----- | --------- | ------------------------- |
+| Modell   | RAM   | Qualität  | Für deutsche Vorlesungen |
+| -------- | ----- | --------- | ------------------------ |
 | `medium` | ~5 GB | Excellent | ✅ Empfohlen              |
 | `turbo`  | ~6 GB | Excellent | ✅ Empfohlen (schneller)  |
-| `small`  | ~2 GB | Sehr gut  | Akzeptabel                |
+| `small`  | ~2 GB | Sehr gut  | Akzeptabel               |
 
 ### Workflow: Video → Lerninhalte
 

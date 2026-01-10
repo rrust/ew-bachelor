@@ -1,40 +1,38 @@
-# Studies - Studiengänge
+# Studies - Quelldokumente & Referenzmaterial
 
-Dieser Ordner enthält die **Studiengangs-Definitionen** und **Referenzmaterial** für alle unterstützten Studiengänge.
+Dieser Ordner enthält **Quelldokumente und Referenzmaterial** für die Studiengänge (Vorlesungsnotizen, Skripte, Content-Pläne).
+
+> **Hinweis:** Die strukturierten App-Daten befinden sich in `content/` (inkl. `studies.json`).
 
 ## Ordnerstruktur
 
 ```text
 studies/
-├── studies.json                       # Master-Liste aller Studiengänge (für App)
 ├── README.md                          # Diese Datei
 └── {study-id}/                        # Pro Studiengang ein Ordner
-    ├── study.md                       # Studiengangs-Metadaten (für App)
-    └── NN-modul-name/                 # Quelldokumente/Notizen (optional)
+    ├── study.md                       # Studiengangs-Beschreibung (Referenz)
+    └── NN-modul-name/                 # Quelldokumente/Notizen
         ├── 00-uebersicht.md           # Modul-Übersicht, Prüfungsinfos
         ├── 01-kapitel-name.md         # Vorlesungsmitschriften, Skripte
         └── Content-Plan.md            # Plan für App-Content-Generierung
 ```
 
-## Dateien für die App
+## Beziehung zu content/
 
-| Datei | Zweck |
-|-------|-------|
-| `studies.json` | Master-Liste aller Studiengänge (Icon, Titel, Status) |
-| `{study-id}/study.md` | Studiengangs-Beschreibung mit YAML-Frontmatter |
+| Ordner/Datei | Zweck |
+|--------------|-------|
+| `content/studies.json` | Master-Liste aller Studiengänge (für App) |
+| `content/{study-id}/` | Strukturierte App-Lerninhalte |
+| `studies/{study-id}/` | Unstrukturierte Quelldokumente/Notizen |
 
-## Quelldokumente (Referenzmaterial)
-
-Zusätzlich können in den Studiengangs-Ordnern Quelldokumente abgelegt werden:
-
-### Workflow: Quelldokumente → App-Inhalte
+## Workflow: Quelldokumente → App-Inhalte
 
 ```text
 studies/{study-id}/NN-modul/XX-kapitel.md  →  content/{study-id}/NN-modul/XX-lecture/
               (Rohmaterial)                           (App-Lerninhalte)
 ```
 
-1. **Quelldokumente erstellen** - Vorlesungsmitschriften, Skripte
+1. **Quelldokumente erstellen** - Vorlesungsmitschriften, Skripte in `studies/`
 2. **Content-Plan erstellen** - Was soll in die App? (`Content-Plan.md`)
 3. **App-Inhalte generieren** - Lecture-Items, Quiz-Fragen in `content/{study-id}/`
 
@@ -45,7 +43,7 @@ Für die AI-gestützte Content-Erstellung siehe:
 
 ## Verfügbare Studiengänge
 
-| Studiengang | ID | Status |
-|-------------|-----|--------|
-| BSc Ernährungswissenschaften | `bsc-ernaehrungswissenschaften` | ✅ Aktiv |
+| Studiengang                          | ID                                | Status  |
+| ------------------------------------ | --------------------------------- | ------- |
+| BSc Ernährungswissenschaften         | `bsc-ernaehrungswissenschaften`   | ✅ Aktiv |
 | BSc Lebensmittel- und Biotechnologie | `bsc-lebensmittel-biotechnologie` | ✅ Aktiv |
