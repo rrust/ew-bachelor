@@ -11,11 +11,11 @@ curriculum_version: "2023"
 
 ## Überblick
 
-|                   |                                                                |
-| ----------------- | -------------------------------------------------------------- |
-| **Studiendauer**  | 6 Semester                                                     |
-| **Studienumfang** | 180 ECTS                                                       |
-| **Abschluss**     | Bachelor of Science (BSc)                                      |
+|                   |                           |
+| ----------------- | ------------------------- |
+| **Studiendauer**  | 6 Semester                |
+| **Studienumfang** | 180 ECTS                  |
+| **Abschluss**     | Bachelor of Science (BSc) |
 
 ## Studieninhalte
 

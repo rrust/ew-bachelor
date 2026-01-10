@@ -35,7 +35,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   const activeNav = view; // Which nav button is active
 
   // Get current study title dynamically
-  const studyInfo = typeof getCurrentStudyInfo === 'function' ? getCurrentStudyInfo() : null;
+  const studyInfo =
+    typeof getCurrentStudyInfo === 'function' ? getCurrentStudyInfo() : null;
   const studyTitle = studyInfo ? studyInfo.shortTitle : 'Lern-App';
 
   header.innerHTML = `
