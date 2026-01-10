@@ -19,8 +19,13 @@ function createStudyCard(study, onClick) {
   card.setAttribute('role', 'listitem');
   card.setAttribute('tabindex', isAvailable ? '0' : '-1');
 
+  // Render study icon as SVG
+  const studyIcon =
+    Icons.get(study.icon, 'w-12 h-12', 'text-gray-600 dark:text-gray-400') ||
+    Icons.get('graduationCap', 'w-12 h-12', 'text-gray-600 dark:text-gray-400');
+
   card.innerHTML = `
-    <div class="text-5xl mb-4 text-center">${study.icon || '📚'}</div>
+    <div class="flex justify-center mb-4">${studyIcon}</div>
     <h3 class="text-xl font-bold mb-2 text-center">${study.title}</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 text-center mb-2">
       ${study.university || ''}

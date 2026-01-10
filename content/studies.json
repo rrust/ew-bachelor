@@ -4,7 +4,7 @@
     "title": "Bachelorstudium Ernährungswissenschaften",
     "shortTitle": "BSc EW",
     "university": "Universität Wien",
-    "icon": "🍎",
+    "icon": "apple",
     "status": "active",
     "order": 1
   },
@@ -13,7 +13,7 @@
     "title": "Bachelorstudium Lebensmittel- und Biotechnologie",
     "shortTitle": "BSc LBT",
     "university": "Universität für Bodenkultur Wien",
-    "icon": "🧬",
+    "icon": "beaker",
     "status": "active",
     "order": 2
   }

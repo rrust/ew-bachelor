@@ -1,7 +1,7 @@
 {
-  "name": "BSc Ernährungswissenschaften - Lernapp",
-  "short_name": "EW Lernapp",
-  "description": "Interaktive Lernapp für das Ernährungswissenschaften Studium",
+  "name": "Study - Lernapp",
+  "short_name": "Study",
+  "description": "Interaktive Lernapp für dein Studium",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

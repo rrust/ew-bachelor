@@ -90,13 +90,15 @@ function createAchievementCard(achievement) {
   const { id, title, description, icon, currentStatus, progress } = achievement;
 
   let statusBadge = '';
+  let statusIcon = '';
   let statusColor = '';
   let cardClass = 'cursor-pointer hover:shadow-lg';
   let daysRemaining = '';
 
   switch (currentStatus) {
     case 'locked':
-      statusBadge = '🔒 Gesperrt';
+      statusIcon = Icons.get('lock', 'w-3 h-3 inline mr-1');
+      statusBadge = 'Gesperrt';
       statusColor = 'bg-gray-500';
       cardClass = 'opacity-75 cursor-not-allowed';
       break;
@@ -107,7 +109,8 @@ function createAchievementCard(achievement) {
         const days = Math.ceil((expiresAt - now) / (1000 * 60 * 60 * 24));
         daysRemaining = `noch ${days} Tage`;
       }
-      statusBadge = '🔓 Aktiv';
+      statusIcon = Icons.get('unlock', 'w-3 h-3 inline mr-1');
+      statusBadge = 'Aktiv';
       statusColor = 'bg-green-500';
       break;
     case 'locked-soon':
@@ -117,11 +120,13 @@ function createAchievementCard(achievement) {
         const days = Math.ceil((expiresAt - now) / (1000 * 60 * 60 * 24));
         daysRemaining = `${days} Tage!`;
       }
-      statusBadge = '⏰ Läuft bald ab';
+      statusIcon = Icons.get('clock', 'w-3 h-3 inline mr-1');
+      statusBadge = 'Läuft bald ab';
       statusColor = 'bg-yellow-500';
       break;
     case 'expired':
-      statusBadge = '⌛ Abgelaufen';
+      statusIcon = Icons.get('hourglass', 'w-3 h-3 inline mr-1');
+      statusBadge = 'Abgelaufen';
       statusColor = 'bg-red-500';
       cardClass = 'opacity-75 cursor-not-allowed';
       break;
@@ -130,12 +135,17 @@ function createAchievementCard(achievement) {
   // Get unlock condition description
   const unlockDesc = getUnlockConditionDescription(achievement.unlockCondition);
 
+  // Render achievement icon (use Icons.get if it's a known icon name, otherwise show placeholder)
+  const achievementIcon =
+    Icons.get(icon, 'w-10 h-10', 'text-gray-600 dark:text-gray-400') ||
+    Icons.get('document', 'w-10 h-10', 'text-gray-600 dark:text-gray-400');
+
   return `
     <div id="achievement-${id}" class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition duration-300 ${cardClass}">
       <div class="flex items-start justify-between mb-4">
-        <div class="text-4xl">${icon}</div>
-        <span class="${statusColor} text-white text-xs font-bold px-2 py-1 rounded-full">
-          ${statusBadge}
+        <div>${achievementIcon}</div>
+        <span class="${statusColor} text-white text-xs font-bold px-2 py-1 rounded-full flex items-center">
+          ${statusIcon}${statusBadge}
         </span>
       </div>
       
@@ -168,7 +178,7 @@ function createAchievementCard(achievement) {
           ? `
         <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
           <button class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium">
-            Öffnen →
+            Öffnen
           </button>
         </div>
       `
@@ -205,11 +215,14 @@ function getUnlockConditionDescription(condition) {
  */
 function showAchievementModal(achievement) {
   const modal = document.getElementById('achievement-modal');
-  const icon = document.getElementById('modal-achievement-icon');
+  const iconEl = document.getElementById('modal-achievement-icon');
   const title = document.getElementById('modal-achievement-title');
   const content = document.getElementById('modal-achievement-content');
 
-  icon.textContent = achievement.icon;
+  // Render achievement icon as SVG
+  iconEl.innerHTML =
+    Icons.get(achievement.icon, 'w-8 h-8', 'text-yellow-500') ||
+    Icons.get('document', 'w-8 h-8', 'text-yellow-500');
   title.textContent = achievement.title;
   content.innerHTML = achievement.content;
 

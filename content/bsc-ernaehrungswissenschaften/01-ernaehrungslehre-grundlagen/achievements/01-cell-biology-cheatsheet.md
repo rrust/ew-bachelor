@@ -3,7 +3,7 @@ type: 'achievement'
 id: 'cell-biology-cheatsheet'
 title: 'Zellbiologie Spickzettel'
 description: 'Kompakte Zusammenfassung aller wichtigen Zellbiologie-Konzepte für schnelle Wiederholung'
-icon: '📋'
+icon: 'clipboard'
 contentType: 'markdown'
 unlockCondition:
   type: 'lecture-quiz-gold'

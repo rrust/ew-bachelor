@@ -13,7 +13,8 @@ function showView(viewName) {
     'quizResults',
     'tools',
     'map',
-    'progress'
+    'progress',
+    'achievements'
   ];
 
   views.forEach((v) => {

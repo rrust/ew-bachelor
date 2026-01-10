@@ -84,9 +84,11 @@ window.PWAInstall = (function () {
       // App is already installed
       container.innerHTML = `
         <div class="flex items-center mb-4">
-          <svg class="w-8 h-8 text-green-600 dark:text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
+          ${Icons.get(
+            'checkCircle',
+            'w-8 h-8',
+            'text-green-600 dark:text-green-400 mr-3'
+          )}
           <h3 class="text-xl font-bold">App installiert</h3>
         </div>
         <p class="text-gray-600 dark:text-gray-400 mb-4">
@@ -100,10 +102,11 @@ window.PWAInstall = (function () {
       // Install is available
       container.innerHTML = `
         <div class="flex items-center mb-4">
-          <svg class="w-8 h-8 text-purple-600 dark:text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V7m0 4l-2-2m2 2l2-2"></path>
-          </svg>
+          ${Icons.get(
+            'phoneDownload',
+            'w-8 h-8',
+            'text-purple-600 dark:text-purple-400 mr-3'
+          )}
           <h3 class="text-xl font-bold">App installieren</h3>
         </div>
         <p class="text-gray-600 dark:text-gray-400 mb-4">
@@ -113,7 +116,7 @@ window.PWAInstall = (function () {
           id="pwa-install-button"
           class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-md transition duration-200"
         >
-          📲 Jetzt installieren
+          Jetzt installieren
         </button>
       `;
       // Add click handler
@@ -125,9 +128,7 @@ window.PWAInstall = (function () {
       // Install not available (browser doesn't support or already dismissed)
       container.innerHTML = `
         <div class="flex items-center mb-4">
-          <svg class="w-8 h-8 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-          </svg>
+          ${Icons.get('phone', 'w-8 h-8', 'text-gray-400 mr-3')}
           <h3 class="text-xl font-bold text-gray-500 dark:text-gray-400">App installieren</h3>
         </div>
         <p class="text-gray-500 dark:text-gray-500 mb-4">

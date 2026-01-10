@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <rect width="512" height="512" rx="64" fill="#3b82f6"/>
-  <text x="256" y="320" font-family="Arial, sans-serif" font-size="240" font-weight="bold" fill="white" text-anchor="middle">EW</text>
+  <g transform="translate(96, 96)" fill="none" stroke="white" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 40v208m0-208C136 31.7 108 27 80 27S24 31.7 0 40v208c24-8.3 52-12 80-12s56 3.7 80 12m0-208c24-8.3 52-13 80-13s56 4.7 80 13v208c-24-8.3-52-12-80-12s-56 3.7-80 12"/>
+  </g>
 </svg>

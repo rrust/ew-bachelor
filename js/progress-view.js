@@ -128,29 +128,32 @@ function renderOverallProgressBar(progress) {
 
   // Set milestone message based on progress
   let message = '';
-  let emoji = '';
+  let iconName = '';
 
   if (progress >= 100) {
-    emoji = '🎓';
+    iconName = 'graduationCap';
     message = 'Geschafft! Alle Quizze abgeschlossen!';
   } else if (progress >= 75) {
-    emoji = '🔥';
+    iconName = 'fire';
     message = 'Auf der Zielgeraden!';
   } else if (progress >= 50) {
-    emoji = '💪';
+    iconName = 'muscle';
     message = 'Halbzeit erreicht!';
   } else if (progress >= 25) {
-    emoji = '🚀';
+    iconName = 'rocket';
     message = 'Gut gestartet!';
   } else if (progress > 0) {
-    emoji = '📚';
+    iconName = 'book';
     message = "Los geht's!";
   } else {
-    emoji = '👋';
+    iconName = 'wave';
     message = 'Starte dein erstes Quiz!';
   }
 
-  milestoneText.textContent = `${emoji} ${message}`;
+  milestoneText.innerHTML = `<span class="inline-flex items-center gap-1">${Icons.get(
+    iconName,
+    'w-5 h-5'
+  )} ${message}</span>`;
 }
 
 /**
@@ -206,7 +209,7 @@ function renderModuleProgressList(modules, content, progress) {
         : { html: '☆' };
       const badge = hasContent
         ? badgeInfo.html
-        : '<span style="color: #9CA3AF;">⏳</span>';
+        : Icons.get('hourglassEmpty', 'w-5 h-5', 'text-gray-400');
 
       return `
       <div class="border dark:border-gray-700 rounded-lg p-3 md:p-4 ${
@@ -276,8 +279,11 @@ function renderModuleProgressList(modules, content, progress) {
         ${
           !hasContent
             ? `
-          <div class="text-xs md:text-sm text-gray-400 dark:text-gray-500 italic">
-            ⏳ Inhalte werden noch erstellt
+          <div class="text-xs md:text-sm text-gray-400 dark:text-gray-500 italic flex items-center gap-1">
+            ${Icons.get(
+              'hourglassEmpty',
+              'w-4 h-4'
+            )} Inhalte werden noch erstellt
           </div>
         `
             : completedLectures === 0
@@ -288,8 +294,8 @@ function renderModuleProgressList(modules, content, progress) {
         `
             : completedLectures === totalLectures
             ? `
-          <div class="text-xs md:text-sm text-green-600 dark:text-green-400 font-bold">
-            ✓ Modul abgeschlossen
+          <div class="text-xs md:text-sm text-green-600 dark:text-green-400 font-bold flex items-center gap-1">
+            ${Icons.get('check', 'w-4 h-4')} Modul abgeschlossen
           </div>
         `
             : `

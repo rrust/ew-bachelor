@@ -62,7 +62,7 @@
           for (const study of studies) {
             const option = document.createElement('option');
             option.value = study.id;
-            option.textContent = `${study.icon || '📚'} ${study.title}`;
+            option.textContent = study.title;
             select.appendChild(option);
           }
 

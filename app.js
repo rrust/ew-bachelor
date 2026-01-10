@@ -255,7 +255,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (views[viewId]) {
       views[viewId].style.display = 'block';
     }
+
+    // Special handling for moduleMap - need to reload cards
+    if (viewId === 'moduleMap') {
+      loadModuleCards();
+    }
   }
+
+  // Expose showView globally for menu navigation
+  window.showView = showView;
 
   // --- Helper Functions ---
   function hideLoadingScreen() {

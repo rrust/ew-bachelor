@@ -3,7 +3,7 @@ id: bsc-ernaehrungswissenschaften
 title: Bachelorstudium Ernährungswissenschaften
 shortTitle: BSc EW
 university: Universität Wien
-icon: "🍎"
+icon: "apple"
 status: active
 order: 1
 ects: 180

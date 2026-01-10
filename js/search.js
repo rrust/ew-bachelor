@@ -466,18 +466,10 @@ function renderSearchPage(results, query) {
   if (emptyState) {
     if (results.length === 0 && query.length >= 2) {
       emptyState.innerHTML = `
-        <div class="text-6xl mb-4">😕</div>
         <h3 class="text-xl font-bold text-gray-700 dark:text-gray-300 mb-2">Keine Ergebnisse</h3>
         <p class="text-gray-500 dark:text-gray-400">Keine Treffer für "${escapeHtml(
           query
         )}"</p>
-      `;
-      emptyState.classList.remove('hidden');
-    } else if (query.length < 2) {
-      emptyState.innerHTML = `
-        <div class="text-6xl mb-4">🔍</div>
-        <h3 class="text-xl font-bold text-gray-700 dark:text-gray-300 mb-2">Suche nach Lerninhalten</h3>
-        <p class="text-gray-500 dark:text-gray-400">Gib mindestens 2 Zeichen ein, um zu suchen</p>
       `;
       emptyState.classList.remove('hidden');
     } else {

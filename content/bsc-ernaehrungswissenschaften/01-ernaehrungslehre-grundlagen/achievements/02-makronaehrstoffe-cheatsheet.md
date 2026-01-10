@@ -3,7 +3,7 @@ type: 'achievement'
 id: 'makronaehrstoffe-cheatsheet'
 title: 'Makronährstoffe Spickzettel'
 description: 'Kompakte Zusammenfassung aller wichtigen Makronährstoff-Konzepte für schnelle Wiederholung'
-icon: '🍽️'
+icon: 'clipboard'
 contentType: 'markdown'
 unlockCondition:
   type: 'lecture-quiz-gold'

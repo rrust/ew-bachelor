@@ -344,7 +344,8 @@ function displayLecturesForModule(
   lectureListContainer.innerHTML = '';
   if (window.injectHeader) {
     window.injectHeader('lecture-list-container', 'lecture', {
-      moduleTitle: moduleData?.title || moduleId
+      moduleTitle: moduleData?.title || moduleId,
+      moduleIcon: moduleData?.icon || 'modules'
     });
   }
 
