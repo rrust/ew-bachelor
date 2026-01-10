@@ -12,11 +12,74 @@
 
 Interaktiver Content-Typ zum Üben und Prüfen von chemischen Gleichungen. User muss Koeffizienten eingeben, um Gleichungen auszugleichen.
 
-| Phase   | Feature                  | Aufwand  | Status     |
-| ------- | ------------------------ | -------- | ---------- |
-| Phase 1 | Basis-Implementierung    | 2-3 Std. | ⏳ Geplant  |
-| Phase 2 | Auto-Validierung         | 1 Tag    | 📋 Backlog  |
-| Phase 3 | Erweiterte Aufgabentypen | 1-2 Wo.  | 📋 Backlog  |
+| Phase   | Feature                  | Aufwand  | Status    |
+| ------- | ------------------------ | -------- | --------- |
+| Phase 1 | Basis-Implementierung    | 2-3 Std. | ⏳ Geplant |
+| Phase 2 | Auto-Validierung         | 1-2 Std. | 📋 Backlog |
+| Phase 3 | Erweiterte Aufgabentypen | 1-2 Wo.  | 📋 Backlog |
+
+---
+
+## Empfohlene Bibliotheken (CDN)
+
+### 1. Logik: @akikowo/chemical-balancer
+
+Automatisches Lösen und Prüfen von chemischen Gleichungen.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@akikowo/chemical-balancer/dist/index.min.js"></script>
+```
+
+```javascript
+// Globale Variable 'balancer' verfügbar
+const problem = "H2 + O2 = H2O";
+const solution = balancer.balance(problem);
+// Ergebnis: "2H2 + O2 = 2H2O"
+```
+
+**Vorteile:**
+
+- Dynamische Aufgabengenerierung (nur Edukte/Produkte vorgeben)
+- Automatische Validierung von Schülereingaben
+- Kein eigener Parser nötig
+
+### 2. Darstellung: MathJax + mhchem
+
+Professionelle Darstellung chemischer Formeln mit Subscripts, Ionenladungen und Reaktionspfeilen.
+
+```html
+<script>
+  MathJax = {
+    tex: {
+      packages: {'[+]': ['mhchem']}
+    },
+    loader: {load: ['[tex]/mhchem']}
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+```
+
+```html
+<!-- Verwendung mit \ce{...} -->
+<p>Gleiche diese Gleichung aus: \(\ce{Fe + Cl2 -> FeCl3}\)</p>
+```
+
+**Vorteile:**
+
+- Automatische Subscripts (H₂O statt H2O)
+- Ionenladungen (Na⁺, Cl⁻)
+- Professionelle Reaktionspfeile (→, ⇌)
+- Bildungsstandard für Chemie-Apps
+
+### 3. Alternative für Zukunft: OpenChemLib
+
+Für fortgeschrittene Features wie Molekülstrukturen oder Molmassen.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/openchemlib/dist/openchemlib-full.js"></script>
+```
+
+> **Hinweis:** Erst relevant, wenn App über Textaufgaben hinausgeht.
 
 ---
 
@@ -77,6 +140,7 @@ function renderBalanceEquation(item, container) {
   const title = item.title ? `<h3 class="text-xl font-bold mb-4">${item.title}</h3>` : '';
   
   // Build equation display with input fields
+  // Wrap formulas in \ce{} for MathJax/mhchem rendering
   let equationHtml = '<div class="equation-container flex flex-wrap items-center justify-center gap-2 text-2xl my-6">';
   
   // Reactants
@@ -89,7 +153,7 @@ function renderBalanceEquation(item, container) {
                class="coefficient-input w-12 h-12 text-center text-xl border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:border-blue-500 focus:outline-none"
                data-correct="${r.coefficient}"
                data-index="r${i}">
-        <span class="ml-1 formula">${r.formula}</span>
+        <span class="ml-1 formula">\\(\\ce{${r.formula}}\\)</span>
       </div>`;
   });
   
@@ -106,7 +170,7 @@ function renderBalanceEquation(item, container) {
                class="coefficient-input w-12 h-12 text-center text-xl border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:border-blue-500 focus:outline-none"
                data-correct="${p.coefficient}"
                data-index="p${i}">
-        <span class="ml-1 formula">${p.formula}</span>
+        <span class="ml-1 formula">\\(\\ce{${p.formula}}\\)</span>
       </div>`;
   });
   
@@ -205,16 +269,10 @@ function renderBalanceEquation(item, container) {
     checkBtn.classList.remove('opacity-50', 'cursor-not-allowed');
   });
   
-  // Render math in formulas
-  if (window.renderMathInElement) {
-    container.querySelectorAll('.formula').forEach(el => {
-      renderMathInElement(el, {
-        delimiters: [
-          { left: '$$', right: '$$', display: true },
-          { left: '$', right: '$', display: false }
-        ],
-        throwOnError: false
-      });
+  // Render formulas with MathJax/mhchem
+  if (window.MathJax) {
+    MathJax.typesetPromise([container]).catch((err) => {
+      console.warn('MathJax rendering failed:', err);
     });
   }
 }
@@ -254,59 +312,78 @@ Template für neuen Type hinzufügen.
 
 ---
 
-## Phase 2: Auto-Validierung (Future)
+## Phase 2: Auto-Validierung mit chemical-balancer
 
 ### Konzept
 
-Automatische Prüfung auf Massenerhaltung ohne vordefinierte Koeffizienten.
+Mit `@akikowo/chemical-balancer` wird die Auto-Validierung erheblich vereinfacht.
+Kein eigener Parser nötig – die Bibliothek übernimmt alles.
 
 ```yaml
 ---
 type: 'balance-equation'
 validation: 'auto'
-reactants:
-  - formula: 'Fe'
-  - formula: 'O2'
-products:
-  - formula: 'Fe2O3'
-# Keine Koeffizienten nötig - werden automatisch validiert
+equation: 'Fe + O2 = Fe2O3'
+# Keine Koeffizienten nötig - werden automatisch berechnet
 ---
 ```
 
-### Technische Anforderungen
-
-1. **Formel-Parser:** `Fe2O3` → `{Fe: 2, O: 3}`
-2. **Atom-Bilanzierer:** Prüft Σ Atome links = Σ Atome rechts
-3. **Mehrfach-Lösungen:** 4Fe + 3O₂ → 2Fe₂O₃ ist genauso gültig wie 8Fe + 6O₂ → 4Fe₂O₃
-
-### Formel-Parser Algorithmus
+### Implementierung
 
 ```javascript
-function parseFormula(formula) {
-  // Fe2O3 → {Fe: 2, O: 3}
-  // Ca(OH)2 → {Ca: 1, O: 2, H: 2}
-  const atoms = {};
-  // ... Regex-basierter Parser
-  return atoms;
+/**
+ * Validiert eine User-Eingabe gegen die korrekte Lösung
+ * @param {string} unbalanced - Unausgeglichene Gleichung z.B. "H2 + O2 = H2O"
+ * @param {number[]} userCoefficients - User-Eingaben [2, 1, 2]
+ * @returns {boolean} true wenn korrekt ausgeglichen
+ */
+function validateWithBalancer(unbalanced, userCoefficients) {
+  // Korrekte Lösung berechnen
+  const solution = balancer.balance(unbalanced);
+  // z.B. "2H2 + O2 = 2H2O"
+  
+  // Koeffizienten aus Lösung extrahieren
+  const correctCoefficients = extractCoefficients(solution);
+  
+  // Vergleichen (auch Vielfache akzeptieren)
+  return areEquivalent(userCoefficients, correctCoefficients);
 }
 
-function validateBalance(reactants, products, userCoefficients) {
-  const leftAtoms = {};
-  const rightAtoms = {};
+/**
+ * Prüft ob zwei Koeffizientensets äquivalent sind (Vielfache erlaubt)
+ * 2,1,2 ist äquivalent zu 4,2,4
+ */
+function areEquivalent(user, correct) {
+  if (user.length !== correct.length) return false;
   
-  // Summiere Atome mit Koeffizienten
-  reactants.forEach((r, i) => {
-    const coef = userCoefficients.reactants[i];
-    const atoms = parseFormula(r.formula);
-    for (const [atom, count] of Object.entries(atoms)) {
-      leftAtoms[atom] = (leftAtoms[atom] || 0) + count * coef;
-    }
-  });
+  // Finde den Faktor
+  const factor = user[0] / correct[0];
   
-  // Vergleiche beide Seiten
-  return JSON.stringify(leftAtoms) === JSON.stringify(rightAtoms);
+  // Prüfe ob alle Koeffizienten das gleiche Verhältnis haben
+  return correct.every((c, i) => user[i] === c * factor);
 }
 ```
+
+### Praxis-Tipp: Prüfen-Funktion
+
+```javascript
+// User gibt ein: "2 H2 + O2 = 2 H2O"
+function checkUserAnswer(userInput, originalEquation) {
+  // Normalisiere Leerzeichen
+  const normalized = userInput.replace(/\s+/g, ' ').trim();
+  const solution = balancer.balance(originalEquation);
+  
+  // Direkter Vergleich (nach Normalisierung)
+  return normalizeEquation(normalized) === normalizeEquation(solution);
+}
+```
+
+**Vorteile gegenüber eigenem Parser:**
+
+- Keine Edge-Cases (Klammern, Ionen, etc.)
+- Battle-tested Bibliothek
+- Weniger Code, weniger Bugs
+- Zeitersparnis: 1 Tag → 1-2 Stunden
 
 ---
 
@@ -410,19 +487,20 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 ### Phase 1 (MVP)
 
-1. [ ] `renderBalanceEquation()` in lecture.js
-2. [ ] Switch-Case für 'balance-equation'
-3. [ ] Validation Rules in validate-content.html
-4. [ ] Test-Datei erstellen
-5. [ ] Dokumentation in CONTENT_TEMPLATES.md
-6. [ ] Styling für Dark Mode
-7. [ ] Mobile-Responsive prüfen
+1. [ ] MathJax + mhchem in index.html einbinden
+2. [ ] `renderBalanceEquation()` in lecture.js
+3. [ ] Switch-Case für 'balance-equation'
+4. [ ] Validation Rules in validate-content.html
+5. [ ] Test-Datei erstellen
+6. [ ] Dokumentation in CONTENT_TEMPLATES.md
+7. [ ] Styling für Dark Mode
+8. [ ] Mobile-Responsive prüfen
 
-### Phase 2 (nach Phase 1)
+### Phase 2 (Auto-Validierung)
 
-1. [ ] Formel-Parser entwickeln
-2. [ ] Auto-Validierung implementieren
-3. [ ] Edge-Cases behandeln (Klammern, Ionen, etc.)
+1. [ ] chemical-balancer in index.html einbinden
+2. [ ] Validierung gegen berechnete Lösung
+3. [ ] Äquivalenz-Prüfung (Vielfache akzeptieren)
 
 ### Phase 3 (nach Phase 2)
 
@@ -434,16 +512,18 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 ## Zeitschätzung
 
-| Phase       | Task              | Zeit        |
-| ----------- | ----------------- | ----------- |
-| Phase 1     | Render-Funktion   | 1.5 Std.    |
-| Phase 1     | Event-Handling    | 30 min      |
-| Phase 1     | Validation + Docs | 30 min      |
-| Phase 1     | Testing           | 30 min      |
-| **Phase 1** | **Gesamt**        | **~3 Std.** |
-| Phase 2     | Formel-Parser     | 2-3 Std.    |
-| Phase 2     | Auto-Validierung  | 2-3 Std.    |
-| **Phase 2** | **Gesamt**        | **~1 Tag**  |
+| Phase       | Task                          | Zeit          |
+| ----------- | ----------------------------- | ------------- |
+| Phase 1     | Render-Funktion + MathJax     | 1.5 Std.      |
+| Phase 1     | Event-Handling                | 30 min        |
+| Phase 1     | Validation + Docs             | 30 min        |
+| Phase 1     | Testing                       | 30 min        |
+| **Phase 1** | **Gesamt**                    | **~3 Std.**   |
+| Phase 2     | chemical-balancer Integration | 1 Std.        |
+| Phase 2     | Äquivalenz-Prüfung            | 30 min        |
+| **Phase 2** | **Gesamt**                    | **~1.5 Std.** |
+
+> **Zeitersparnis durch Bibliotheken:** Phase 2 von ~1 Tag auf ~1.5 Stunden reduziert!
 
 ---
 
@@ -451,16 +531,21 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 
 ### Risiken
 
-- **Formel-Darstellung:** Subscripts (H₂) vs LaTeX ($H_2$) - KaTeX verwenden
+- **CDN-Verfügbarkeit:** Fallback einplanen falls jsdelivr nicht erreichbar
 - **Mobile UX:** Kleine Input-Felder auf Smartphones
-- **Komplexe Formeln:** Ca(OH)₂, Fe₂(SO₄)₃ brauchen guten Parser
+- **MathJax-Ladezeit:** ~300-500ms, ggf. Lazy Loading
+
+### Gelöste Probleme (durch Bibliotheken)
+
+- ~~Formel-Darstellung~~ → MathJax + mhchem
+- ~~Komplexe Formeln (Klammern, Ionen)~~ → chemical-balancer parsed alles
+- ~~Subscripts/Superscripts~~ → \ce{H2O} rendert automatisch
 
 ### Offene Fragen
 
-1. Sollen Koeffizienten von 1 angezeigt werden oder leer bleiben?
-2. Wie mit Ionen umgehen? (Na⁺, Cl⁻)
-3. Aggregatzustände anzeigen? (g), (l), (s), (aq)
-4. Teilpunkte bei Quiz oder alles-oder-nichts?
+1. ~~Sollen Koeffizienten von 1 angezeigt werden?~~ → Nein, wie in echter Chemie
+2. Teilpunkte bei Quiz oder alles-oder-nichts? → Empfehlung: Teilpunkte
+3. Soll Vielfache der Lösung akzeptiert werden? (4H2 + 2O2 = 4H2O) → Ja
 
 ---
 
@@ -472,12 +557,12 @@ function scoreBalanceEquation(userAnswers, correctAnswers) {
 type: 'balance-equation'
 title: 'Wassersynthese'
 reactants:
-  - formula: '$H_2$'
+  - formula: 'H2'
     coefficient: 2
-  - formula: '$O_2$'
+  - formula: 'O2'
     coefficient: 1
 products:
-  - formula: '$H_2O$'
+  - formula: 'H2O'
     coefficient: 2
 hints:
   - 'Zähle zuerst die Sauerstoff-Atome'
@@ -489,14 +574,14 @@ explanation: 'Die Gleichung ist ausgeglichen: 4 H-Atome und 2 O-Atome auf jeder 
 type: 'balance-equation'
 title: 'Methanverbrennung'
 reactants:
-  - formula: '$CH_4$'
+  - formula: 'CH4'
     coefficient: 1
-  - formula: '$O_2$'
+  - formula: 'O2'
     coefficient: 2
 products:
-  - formula: '$CO_2$'
+  - formula: 'CO2'
     coefficient: 1
-  - formula: '$H_2O$'
+  - formula: 'H2O'
     coefficient: 2
 ---
 
@@ -505,12 +590,18 @@ products:
 type: 'balance-equation'
 title: 'Rostbildung'
 reactants:
-  - formula: '$Fe$'
+  - formula: 'Fe'
     coefficient: 4
-  - formula: '$O_2$'
+  - formula: 'O2'
     coefficient: 3
 products:
-  - formula: '$Fe_2O_3$'
+  - formula: 'Fe2O3'
     coefficient: 2
 ---
 ```
+
+**Hinweis zur Formel-Notation:**
+
+- Im YAML: Einfache ASCII-Notation verwenden (`H2`, `O2`, `Fe2O3`)
+- MathJax/mhchem rendert automatisch mit `\ce{H2}` → H₂
+- Die Render-Funktion konvertiert `H2` → `\ce{H2}` für die Darstellung
