@@ -189,15 +189,8 @@ ${mermaidCode}
         return;
       }
 
-      // Use requestAnimationFrame to ensure the element is in the DOM and rendered
-      await new Promise((resolve) => requestAnimationFrame(resolve));
-
-      // Check if the map view is visible before rendering
-      const mapView = document.getElementById('map-view');
-      if (!mapView || mapView.style.display === 'none') {
-        console.warn('Map view is not visible, skipping Mermaid render');
-        return;
-      }
+      // Wait a bit longer to ensure the view is fully visible
+      await new Promise((resolve) => setTimeout(resolve, 50));
 
       await window.mermaid.run({
         nodes: [diagramElement]
