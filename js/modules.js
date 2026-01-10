@@ -435,7 +435,7 @@ function displayLecturesForModule(
 
     // Lecture number on the left
     if (lectureNumber) {
-      contentHTML += `<span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Vorlesung ${lectureNumber}</span>`;
+      contentHTML += `<span class="text-xs font-semibold text-gray-500 dark:text-gray-400">${lectureNumber}</span>`;
     } else {
       contentHTML += '<div></div>'; // Empty div for spacing
     }

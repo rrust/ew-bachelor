@@ -227,12 +227,21 @@
           >
             &larr; Zurück
           </button>
-          <button
-            id="lecture-overview-button"
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
-          >
-            Übersicht
-          </button>
+          <div class="flex gap-2">
+            <button
+              id="lecture-overview-button"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+            >
+              Übersicht
+            </button>
+            <button
+              id="lecture-quiz-button"
+              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+              style="display: none"
+            >
+              Test
+            </button>
+          </div>
         </div>
 
         <!-- Scrollable Content Area -->
@@ -384,7 +393,7 @@
         class="text-gray-600 dark:text-gray-400 mb-6"
         style="display: none"
       >
-        Möchtest du das Quiz erneut absolvieren? Dies wird dein bisheriges
+        Möchtest du den Test erneut absolvieren? Dies wird dein bisheriges
         Ergebnis überschreiben.
       </p>
       <div class="space-y-3">
@@ -393,7 +402,7 @@
           class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition duration-300"
           style="display: none"
         >
-          Quiz wiederholen
+          Test wiederholen
         </button>
         <button
           id="results-to-map-button"
@@ -670,6 +679,7 @@
     <script src="js/achievements.js"></script>
     <script src="js/achievements-ui.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/swipe.js"></script>
     <!-- Feature modules -->
     <script src="js/quiz.js"></script>
     <script src="js/lecture.js"></script>

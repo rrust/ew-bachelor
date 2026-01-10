@@ -8,13 +8,13 @@ Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die
 
 1. **Template kopieren** aus [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md)
 2. **Datei erstellen** in `content/XX-modul/XX-vorlesung/lecture-items/` oder `questions/`
-3. **Validieren** mit `validate-content.html` im Browser
+3. **Validieren** mit `validate-content.html` im Browser (unter "Tools")
 
 **Wichtigste Regeln:**
 - ✅ YAML-Listen mit `-` (dash), NIEMALS `*` (asterisk)
 - ✅ `correctAnswer` muss EXAKT mit Option übereinstimmen
 - ✅ Dateien mit `NN-` prefix nummerieren (01-, 02-, etc.)
-- ✅ Pfad in `content-list.json` eintragen (automatisch beim Validieren)
+- ✅ `content-list.json` wird automatisch generiert (GitHub Action)
 
 **Bei Problemen:**
 - Validator zeigt Fehler mit Zeilennummer → Im Editor fixen
@@ -60,7 +60,7 @@ content/
             └── 03-frage-thema-c.md
 ```
 
-**⚠️ Wichtig:** `content-list.json` wird automatisch generiert. Bearbeite diese Datei **nicht** manuell! Verwende stattdessen `npm run generate-manifest` nach Änderungen.
+**✅ Automatisch:** `content-list.json` wird automatisch generiert wenn du auf `main` pushst (GitHub Action). Lokal kannst du `node generate-content-list.js` ausführen.
 
 ### Struktur-Prinzipien
 

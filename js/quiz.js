@@ -122,10 +122,21 @@ function renderCurrentQuizQuestion(
     return;
   }
 
+  const isMultipleAnswers = questionData.type === 'multiple-choice-multiple';
+
   const questionEl = document.createElement('p');
   questionEl.className = 'quiz-question text-xl font-semibold mb-6';
   questionEl.textContent = questionData.question;
   quizContentDiv.appendChild(questionEl);
+
+  // Add hint for multiple choice questions
+  if (isMultipleAnswers) {
+    const hintEl = document.createElement('p');
+    hintEl.className = 'text-sm text-gray-600 dark:text-gray-400 mb-4 italic';
+    hintEl.textContent =
+      'Hinweis: Mehrere Antworten können richtig sein. Wähle alle zutreffenden Optionen.';
+    quizContentDiv.appendChild(hintEl);
+  }
 
   const optionsList = document.createElement('div');
   optionsList.className = 'quiz-options space-y-3';
@@ -133,12 +144,12 @@ function renderCurrentQuizQuestion(
     const label = document.createElement('label');
     label.className =
       'option-label block p-4 border dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer';
-    const radio = document.createElement('input');
-    radio.type = 'radio';
-    radio.name = 'quiz-option';
-    radio.value = optionText;
-    radio.className = 'mr-3';
-    label.appendChild(radio);
+    const input = document.createElement('input');
+    input.type = isMultipleAnswers ? 'checkbox' : 'radio';
+    input.name = isMultipleAnswers ? 'quiz-option-checkbox' : 'quiz-option';
+    input.value = optionText;
+    input.className = 'mr-3';
+    label.appendChild(input);
     label.appendChild(document.createTextNode(optionText));
     optionsList.appendChild(label);
   });
@@ -149,14 +160,35 @@ function renderCurrentQuizQuestion(
   submitButton.className =
     'mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300';
   submitButton.onclick = () => {
-    const selectedOption = document.querySelector(
-      'input[name="quiz-option"]:checked'
-    );
-    if (selectedOption) {
-      checkAnswer(selectedOption.value, questionData.correctAnswer);
+    let selectedValue;
+    let correctAnswer;
+
+    if (isMultipleAnswers) {
+      // Collect all checked checkboxes
+      const selectedCheckboxes = document.querySelectorAll(
+        'input[name="quiz-option-checkbox"]:checked'
+      );
+      selectedValue = Array.from(selectedCheckboxes).map((cb) => cb.value);
+      correctAnswer = questionData.correctAnswers; // Note: plural for multiple choice
+
+      if (selectedValue.length === 0) {
+        alert('Bitte wähle mindestens eine Antwort aus.');
+        return;
+      }
     } else {
-      alert('Bitte wähle eine Antwort aus.');
+      // Single selection radio button
+      const selectedOption = document.querySelector(
+        'input[name="quiz-option"]:checked'
+      );
+      if (!selectedOption) {
+        alert('Bitte wähle eine Antwort aus.');
+        return;
+      }
+      selectedValue = selectedOption.value;
+      correctAnswer = questionData.correctAnswer; // Note: singular
     }
+
+    checkAnswer(selectedValue, correctAnswer);
   };
   quizContentDiv.appendChild(submitButton);
 }
@@ -165,6 +197,12 @@ function renderCurrentQuizQuestion(
  * Checks the user's answer and updates score
  * @param {string} selectedValue - Selected answer
  * @param {string} correctAnswer - Correct answer
+ * @param {Object} quizState - Quiz state object
+ * @param {Object} displays - Display elements
+/**
+ * Checks if the selected answer(s) is correct
+ * @param {string|string[]} selectedValue - The selected answer(s)
+ * @param {string|string[]} correctAnswer - The correct answer(s)
  * @param {Object} quizState - Quiz state object
  * @param {Object} displays - Display elements
  * @param {Function} renderCurrentQuizQuestion - Function to render next question
@@ -176,7 +214,23 @@ function checkAnswer(
   displays,
   renderCurrentQuizQuestion
 ) {
-  if (selectedValue === correctAnswer) {
+  let isCorrect = false;
+
+  // Handle multiple choice with multiple answers
+  if (Array.isArray(correctAnswer)) {
+    const selectedSet = new Set(selectedValue);
+    const correctSet = new Set(correctAnswer);
+
+    // Correct only if sets are identical (all correct selected, no wrong selected)
+    isCorrect =
+      selectedSet.size === correctSet.size &&
+      [...selectedSet].every((answer) => correctSet.has(answer));
+  } else {
+    // Handle single answer multiple choice
+    isCorrect = selectedValue === correctAnswer;
+  }
+
+  if (isCorrect) {
     quizState.userScore++;
     displays.quizLiveScore.textContent = `Punkte: ${quizState.userScore}`;
   }

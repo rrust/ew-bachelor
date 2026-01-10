@@ -4,6 +4,8 @@ Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 
 ## Quiz-Frage (quiz.md)
 
+### Einfache Multiple-Choice (eine richtige Antwort)
+
 ```markdown
 ---
 type: 'multiple-choice'
@@ -17,12 +19,35 @@ correctAnswer: 'Richtige Antwort'
 ---
 ```
 
+### Multiple-Choice mit mehreren richtigen Antworten
+
+```markdown
+---
+type: 'multiple-choice-multiple'
+question: 'Welche der folgenden Aussagen sind korrekt? (Mehrfachauswahl möglich)'
+options:
+  - 'Richtige Aussage 1'
+  - 'Falsche Aussage'
+  - 'Richtige Aussage 2'
+  - 'Richtige Aussage 3'
+correctAnswers:
+  - 'Richtige Aussage 1'
+  - 'Richtige Aussage 2'
+  - 'Richtige Aussage 3'
+---
+
+**Erklärung:** Detaillierte Erklärung, warum diese Antworten richtig sind.
+```
+
 **Wichtig:**
 
 - `options:` muss eine Liste mit `-` (Bindestrich) und 2 Leerzeichen Einrückung sein
 - Niemals `*` (Stern) für Listen verwenden!
-- `correctAnswer` muss exakt mit einer Option übereinstimmen
+- Einfache MC: `correctAnswer` (Singular) - genau eine richtige Antwort
+- Multiple MC: `correctAnswers` (Plural) - eine oder mehrere richtige Antworten
+- Alle `correctAnswers` müssen exakt mit Optionen übereinstimmen
 - Mindestens 2 Optionen erforderlich
+- Bei Multiple MC können auch alle Optionen richtig sein
 
 ## Self-Assessment (in lecture.md)
 
@@ -117,6 +142,7 @@ graph TD
 - Diagramme werden automatisch gerendert
 
 **Beispiel Flowchart:**
+
 ```markdown
 ---
 type: 'mermaid-diagram'

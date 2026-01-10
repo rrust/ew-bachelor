@@ -31,7 +31,7 @@ This document outlines potential features and improvements that could enhance th
 - **Improvements Needed:**
   - Optimize card layouts for small screens (single column on mobile)
   - Touch-friendly button sizes (minimum 44x44px touch targets)
-  - Swipe gestures for navigating between lecture items
+  - ✅ Swipe gestures for navigating between lecture items (IMPLEMENTED in `js/swipe.js`)
   - Collapsible navigation on mobile
   - Bottom navigation bar for key actions on mobile
   - Test on various devices (iOS Safari, Android Chrome)
