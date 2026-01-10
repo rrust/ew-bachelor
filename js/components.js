@@ -58,26 +58,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           Module
         </button>
         <button
-          id="nav-achievements${idSuffix}"
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200 ${
-            activeNav === 'achievements'
-              ? 'text-blue-600 dark:text-blue-400 font-bold'
-              : ''
-          }"
-        >
-          <span class="md:hidden">🏆</span><span class="hidden md:inline">🏆 Achievements</span>
-        </button>
-        <button
-          id="nav-map${idSuffix}"
-          class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200 ${
-            activeNav === 'map'
-              ? 'text-blue-600 dark:text-blue-400 font-bold'
-              : ''
-          }"
-        >
-          Map
-        </button>
-        <button
           id="nav-progress${idSuffix}"
           class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200 ${
             activeNav === 'progress'
@@ -97,6 +77,57 @@ function createAppHeader(view = 'moduleMap', options = {}) {
         >
           Tools
         </button>
+        <!-- Search Icon -->
+        <button
+          id="nav-search${idSuffix}"
+          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+            activeNav === 'search'
+              ? 'text-blue-600 dark:text-blue-400'
+              : 'text-gray-600 dark:text-gray-400'
+          }"
+          title="Suche"
+          onclick="window.location.hash='#/search'"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+        <!-- Map Icon (Folder Tree) -->
+        <button
+          id="nav-map${idSuffix}"
+          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+            activeNav === 'map'
+              ? 'text-blue-600 dark:text-blue-400'
+              : 'text-gray-600 dark:text-gray-400'
+          }"
+          title="Modul-Map"
+          onclick="window.location.hash='#/map'"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="6" height="4" rx="1" stroke-width="1.5"/>
+            <rect x="14" y="7" width="6" height="4" rx="1" stroke-width="1.5"/>
+            <rect x="14" y="15" width="6" height="4" rx="1" stroke-width="1.5"/>
+            <path stroke-width="1.5" d="M5 6v13M5 9h9M5 17h9"/>
+          </svg>
+        </button>
+        <!-- Achievements Icon (Trophy) -->
+        <button
+          id="nav-achievements${idSuffix}"
+          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+            activeNav === 'achievements'
+              ? 'text-yellow-500'
+              : 'text-gray-600 dark:text-gray-400'
+          }"
+          title="Achievements"
+          onclick="window.showView && window.showView('achievements')"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3h14v4a7 7 0 01-14 0V3z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 5H3a2 2 0 000 4h2M19 5h2a2 2 0 010 4h-2"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14v3M8 21h8M10 17h4"/>
+          </svg>
+        </button>
+        <!-- Theme Toggle -->
         <button
           id="theme-toggle${idSuffix}"
           class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200"

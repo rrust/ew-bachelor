@@ -305,16 +305,16 @@ function showQuizResults(score, isExisting, displays, buttons, showView) {
       BRONZE: 50
     };
     if (score >= thresholds.GOLD) {
-      badgeText = '🥇 Gold-Abzeichen';
+      badgeText = '★ Gold-Stern';
       badgeClass = 'text-yellow-500';
     } else if (score >= thresholds.SILVER) {
-      badgeText = '🥈 Silber-Abzeichen';
+      badgeText = '★ Silber-Stern';
       badgeClass = 'text-gray-400';
     } else if (score >= thresholds.BRONZE) {
-      badgeText = '🥉 Bronze-Abzeichen';
+      badgeText = '★ Bronze-Stern';
       badgeClass = 'text-orange-600';
     } else {
-      badgeText = 'Kein Abzeichen';
+      badgeText = 'Kein Stern';
       badgeClass = 'text-gray-500';
     }
   }

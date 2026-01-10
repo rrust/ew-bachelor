@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ernährungswissenschaft Lern-App</title>
+
+    <!-- PWA Meta Tags -->
+    <meta
+      name="description"
+      content="Interaktive Lernapp für das Ernährungswissenschaften Studium"
+    />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="EW Lernapp" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icons/icon-192.png"
+    />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/custom-styles.css" />
     <script>
@@ -579,12 +598,132 @@
       </div>
     </div>
 
+    <!-- View for Search Results -->
+    <div id="search-view" style="display: none">
+      <!-- Header injected by components.js -->
+
+      <div class="container mx-auto px-8">
+        <!-- Search Input -->
+        <div class="mb-8">
+          <div class="relative max-w-2xl">
+            <input
+              type="text"
+              id="search-page-input"
+              placeholder="Suche nach Inhalten, Vorlesungen, Quiz-Fragen..."
+              class="w-full pl-12 pr-4 py-4 text-lg border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+            <svg
+              class="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Search Stats -->
+        <div
+          id="search-stats"
+          class="mb-6 text-gray-600 dark:text-gray-400"
+        ></div>
+
+        <!-- Search Results Grid -->
+        <div id="search-results-container" class="space-y-4">
+          <!-- Results will be rendered here -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="search-empty-state" class="text-center py-16">
+          <div class="text-6xl mb-4">🔍</div>
+          <h3 class="text-xl font-bold text-gray-700 dark:text-gray-300 mb-2">
+            Suche nach Lerninhalten
+          </h3>
+          <p class="text-gray-500 dark:text-gray-400">
+            Gib mindestens 2 Zeichen ein, um zu suchen
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- View for Progress Dashboard -->
     <div id="progress-view" style="display: none">
       <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-8">
-        <h2 class="text-3xl font-bold mb-8">Dein Lernfortschritt</h2>
+        <div class="flex flex-wrap justify-between items-center mb-8 gap-4">
+          <h2 class="text-3xl font-bold">Dein Lernfortschritt</h2>
+
+          <!-- Backup/Restore Buttons -->
+          <div class="flex gap-2">
+            <button
+              onclick="exportProgress()"
+              class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+              title="Fortschritt als Datei speichern"
+            >
+              <span>📥</span>
+              <span class="hidden sm:inline">Backup</span>
+            </button>
+            <label
+              class="flex items-center gap-2 px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors cursor-pointer text-sm"
+              title="Fortschritt aus Datei wiederherstellen"
+            >
+              <span>📤</span>
+              <span class="hidden sm:inline">Wiederherstellen</span>
+              <input
+                type="file"
+                accept=".json"
+                class="hidden"
+                onchange="handleProgressImport(this)"
+              />
+            </label>
+          </div>
+        </div>
+
+        <!-- Overall Progress Bar with Milestone -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-lg font-bold">Studienfortschritt</span>
+            <span
+              id="progress-milestone"
+              class="text-sm font-medium text-gray-500 dark:text-gray-400"
+            ></span>
+          </div>
+          <div class="relative">
+            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4">
+              <div
+                id="overall-progress-bar"
+                class="bg-gradient-to-r from-blue-500 to-green-500 h-4 rounded-full transition-all duration-500"
+                style="width: 0%"
+              ></div>
+            </div>
+            <!-- Milestone markers -->
+            <div
+              class="absolute top-0 left-1/4 w-px h-4 bg-gray-400 dark:bg-gray-500"
+            ></div>
+            <div
+              class="absolute top-0 left-1/2 w-px h-4 bg-gray-400 dark:bg-gray-500"
+            ></div>
+            <div
+              class="absolute top-0 left-3/4 w-px h-4 bg-gray-400 dark:bg-gray-500"
+            ></div>
+          </div>
+          <div
+            class="flex justify-between text-xs text-gray-500 dark:text-gray-400 mt-1"
+          >
+            <span>0%</span>
+            <span>25%</span>
+            <span>50%</span>
+            <span>75%</span>
+            <span>100%</span>
+          </div>
+        </div>
 
         <!-- Overall Stats Cards -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
@@ -645,17 +784,6 @@
           </div>
         </div>
 
-        <!-- Achievements Section -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
-          <h3 class="text-2xl font-bold mb-4">🏆 Errungenschaften</h3>
-          <div
-            id="achievements-grid"
-            class="grid grid-cols-2 md:grid-cols-4 gap-4"
-          >
-            <!-- Achievements will be rendered here -->
-          </div>
-        </div>
-
         <!-- Module Progress Detail -->
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
           <h3 class="text-2xl font-bold mb-6">Module im Detail</h3>
@@ -680,6 +808,7 @@
     <script src="js/achievements-ui.js"></script>
     <script src="js/components.js"></script>
     <script src="js/swipe.js"></script>
+    <script src="js/search.js"></script>
     <!-- Feature modules -->
     <script src="js/quiz.js"></script>
     <script src="js/lecture.js"></script>
@@ -688,5 +817,35 @@
     <script src="js/progress-view.js"></script>
     <!-- Main app (load last) -->
     <script src="app.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered:', registration.scope);
+
+              // Check for updates
+              registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                newWorker.addEventListener('statechange', () => {
+                  if (
+                    newWorker.state === 'installed' &&
+                    navigator.serviceWorker.controller
+                  ) {
+                    // New version available
+                    console.log('New version available!');
+                  }
+                });
+              });
+            })
+            .catch((error) => {
+              console.log('SW registration failed:', error);
+            });
+        });
+      }
+    </script>
   </body>
 </html>

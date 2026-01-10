@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     quizResults: document.getElementById('quiz-results-view'),
     tools: document.getElementById('tools-view'),
     map: document.getElementById('map-view'),
-    progress: document.getElementById('progress-view')
+    progress: document.getElementById('progress-view'),
+    search: document.getElementById('search-view')
   };
 
   const buttons = {
@@ -184,6 +185,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('progress');
       renderProgressDashboard(MODULES, APP_CONTENT);
       return true;
+    } else if (route.view === 'search') {
+      updateGreeting();
+      showView('search');
+      if (window.initSearchPage) {
+        window.initSearchPage(route.query || '');
+      }
+      return true;
     }
 
     return false;
@@ -207,10 +215,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('tools-view', 'tools');
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
+    injectHeader('search-view', 'search');
 
     // Load modules metadata from JSON
     MODULES = await loadModules();
     window.MODULES = MODULES; // Expose globally
+    window.APP_MODULES = MODULES; // Alias for search
 
     // Load content (returns {content, achievements})
     const parsedData = await parseContent();
@@ -238,6 +248,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Refresh button references after headers are injected
     refreshHeaderButtons();
     addEventListeners();
+
+    // Initialize global search
+    if (window.initGlobalSearch) {
+      window.initGlobalSearch();
+    }
 
     // Handle browser back/forward buttons
     window.addEventListener('popstate', (event) => {

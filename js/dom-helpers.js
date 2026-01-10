@@ -33,7 +33,7 @@ function showLectureOverviewView() {
 /**
  * Gets badge emoji and class based on score
  * @param {number} score - Score percentage (0-100)
- * @returns {Object} {emoji, class, text}
+ * @returns {Object} {emoji, html, class, text, color}
  */
 function getBadgeInfo(score) {
   const thresholds = window.BADGE_THRESHOLDS || {
@@ -43,13 +43,37 @@ function getBadgeInfo(score) {
   };
 
   if (score >= thresholds.GOLD) {
-    return { emoji: '🥇', class: 'gold', text: 'Gold' };
+    return {
+      emoji: '★',
+      html: '<span style="color: #FFD700; text-shadow: 0 0 2px #B8860B;">★</span>',
+      class: 'gold',
+      text: 'Gold',
+      color: '#FFD700'
+    };
   } else if (score >= thresholds.SILVER) {
-    return { emoji: '🥈', class: 'silver', text: 'Silber' };
+    return {
+      emoji: '★',
+      html: '<span style="color: #C0C0C0; text-shadow: 0 0 2px #808080;">★</span>',
+      class: 'silver',
+      text: 'Silber',
+      color: '#C0C0C0'
+    };
   } else if (score >= thresholds.BRONZE) {
-    return { emoji: '🥉', class: 'bronze', text: 'Bronze' };
+    return {
+      emoji: '★',
+      html: '<span style="color: #CD7F32; text-shadow: 0 0 2px #8B4513;">★</span>',
+      class: 'bronze',
+      text: 'Bronze',
+      color: '#CD7F32'
+    };
   } else {
-    return { emoji: '⚪', class: 'none', text: 'Nicht bestanden' };
+    return {
+      emoji: '☆',
+      html: '<span style="color: #9CA3AF;">☆</span>',
+      class: 'none',
+      text: 'Nicht bestanden',
+      color: '#9CA3AF'
+    };
   }
 }
 

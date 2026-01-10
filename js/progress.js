@@ -91,6 +91,88 @@ function resetLectureProgress(moduleId, lectureId) {
   }
 }
 
+// Exports all progress data as a JSON file download
+function exportProgress() {
+  const progress = getUserProgress();
+  if (!progress) {
+    alert('Keine Fortschrittsdaten vorhanden.');
+    return;
+  }
+
+  // Add export metadata
+  const exportData = {
+    exportedAt: new Date().toISOString(),
+    version: '1.0',
+    progress: progress
+  };
+
+  const dataStr = JSON.stringify(exportData, null, 2);
+  const blob = new Blob([dataStr], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `lernfortschritt-${
+    new Date().toISOString().split('T')[0]
+  }.json`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+
+  console.log('Progress exported successfully');
+}
+
+// Imports progress data from a JSON file
+function importProgress(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      try {
+        const importData = JSON.parse(e.target.result);
+
+        // Validate import data structure
+        if (!importData.progress || !importData.progress.userName) {
+          reject(new Error('Ungültiges Backup-Format'));
+          return;
+        }
+
+        // Confirm with user before overwriting
+        const currentProgress = getUserProgress();
+        if (currentProgress) {
+          const confirmed = confirm(
+            `Aktueller Fortschritt wird überschrieben.\n\n` +
+              `Aktuell: ${currentProgress.userName}\n` +
+              `Import: ${importData.progress.userName}\n\n` +
+              `Fortfahren?`
+          );
+          if (!confirmed) {
+            reject(new Error('Import abgebrochen'));
+            return;
+          }
+        }
+
+        // Save imported progress
+        saveUserProgress(importData.progress);
+        console.log(
+          'Progress imported successfully from',
+          importData.exportedAt
+        );
+        resolve(importData.progress);
+      } catch (err) {
+        reject(new Error('Fehler beim Lesen der Datei: ' + err.message));
+      }
+    };
+
+    reader.onerror = function () {
+      reject(new Error('Fehler beim Lesen der Datei'));
+    };
+
+    reader.readAsText(file);
+  });
+}
+
 // Expose functions to global scope
 window.getUserProgress = getUserProgress;
 window.saveUserProgress = saveUserProgress;
@@ -98,3 +180,5 @@ window.resetUserProgress = resetUserProgress;
 window.getInitialProgress = getInitialProgress;
 window.updateLectureProgress = updateLectureProgress;
 window.resetLectureProgress = resetLectureProgress;
+window.exportProgress = exportProgress;
+window.importProgress = importProgress;
