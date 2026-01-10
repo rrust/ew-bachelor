@@ -87,6 +87,7 @@ function renderCurrentLectureItem(
     case 'learning-content':
       lectureItemDisplay.innerHTML = item.html;
       renderMath(lectureItemDisplay);
+      renderMermaidInContent(lectureItemDisplay);
       break;
     case 'self-assessment-mc':
       renderSelfAssessment(item, lectureItemDisplay);
@@ -395,6 +396,39 @@ function renderImage(item, container) {
       ${caption}
     </div>
   `;
+}
+
+/**
+ * Finds and renders Mermaid code blocks within already-rendered HTML
+ * @param {HTMLElement} container - Container to search for mermaid blocks
+ */
+async function renderMermaidInContent(container) {
+  if (!window.mermaid) return;
+
+  // Find all code blocks with class 'language-mermaid'
+  const mermaidBlocks = container.querySelectorAll('code.language-mermaid');
+
+  for (const codeBlock of mermaidBlocks) {
+    const diagramCode = codeBlock.textContent;
+    const preElement = codeBlock.parentElement;
+
+    if (!preElement || preElement.tagName !== 'PRE') continue;
+
+    // Create a container for the rendered diagram
+    const diagramId = `mermaid-inline-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    const diagramContainer = document.createElement('div');
+    diagramContainer.className = 'flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg my-4';
+    diagramContainer.id = diagramId;
+
+    try {
+      const { svg } = await window.mermaid.render(`render-${diagramId}`, diagramCode);
+      diagramContainer.innerHTML = svg;
+      preElement.replaceWith(diagramContainer);
+    } catch (error) {
+      console.error('Error rendering inline Mermaid diagram:', error);
+      // Keep the code block visible if rendering fails
+    }
+  }
 }
 
 /**
