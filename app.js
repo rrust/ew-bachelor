@@ -330,7 +330,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
           alert('Diese Vorlesung hat keinen Inhalt.');
         }
-      }
+      },
+      loadModuleCards
     );
   }
 
