@@ -219,13 +219,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const progress = getUserProgress();
     if (progress && progress.userName) {
-      updateGreeting(progress.userName);
-
       // Try to navigate from URL first
       if (!navigateFromURL()) {
         loadModuleCards();
         showView('moduleMap');
         updateURL('/', 'Module Overview');
+      }
+      // Update greeting after view is shown to ensure elements exist
+      if (window.updateGreeting) {
+        window.updateGreeting(progress.userName);
       }
     } else {
       showView('welcome');
@@ -243,24 +245,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         showView('moduleMap');
       }
     });
-  }
-
-  // --- Update Greeting ---
-  function updateGreeting(userName) {
-    if (!userName) {
-      const progress = getUserProgress();
-      userName = progress?.userName || 'User';
-    }
-    const greeting = `Hi ${userName}!`;
-    if (displays.headerGreeting) {
-      displays.headerGreeting.textContent = greeting;
-    }
-    if (displays.headerGreetingTools) {
-      displays.headerGreetingTools.textContent = greeting;
-    }
-    if (displays.headerGreetingComingSoon) {
-      displays.headerGreetingComingSoon.textContent = greeting;
-    }
   }
 
   // --- Module & Lecture Loading (using ModulesModule) ---
@@ -811,6 +795,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Module navigation (nav-module, nav-module-map, nav-module-tools, etc.)
       if (target.id && target.id.startsWith('nav-module')) {
+        if (window.updateGreeting) window.updateGreeting();
         loadModuleCards();
         showView('moduleMap');
         updateURL('/', 'Module Overview');
@@ -818,7 +803,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Map navigation
       else if (target.id && target.id.startsWith('nav-map')) {
-        updateGreeting();
+        if (window.updateGreeting) window.updateGreeting();
         showView('map');
         renderModuleMap(MODULES, APP_CONTENT);
         updateURL('/map', 'Studienstruktur Map');
@@ -826,7 +811,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Achievements navigation
       else if (target.id && target.id.startsWith('nav-achievements')) {
-        updateGreeting();
+        if (window.updateGreeting) window.updateGreeting();
         showView('achievements');
         renderAchievementsGallery('all');
         updateURL('/achievements', 'Achievements');
@@ -834,7 +819,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Progress navigation
       else if (target.id && target.id.startsWith('nav-progress')) {
-        updateGreeting();
+        if (window.updateGreeting) window.updateGreeting();
         showView('progress');
         renderProgressDashboard(MODULES, APP_CONTENT);
         updateURL('/progress', 'Lernfortschritt');
@@ -845,7 +830,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         target.id &&
         (target.id === 'nav-tools' || target.id === 'nav-tools-active')
       ) {
-        updateGreeting();
+        if (window.updateGreeting) window.updateGreeting();
         showView('tools');
         updateURL('/tools', 'Tools');
       }

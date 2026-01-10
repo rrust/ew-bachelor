@@ -19,7 +19,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           id="back-to-modules-button"
           class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
         >
-          &larr; Zurück zur Modulübersicht
+          &larr; Zurück
         </button>
         ${
           options.moduleTitle
@@ -35,18 +35,18 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   const activeNav = view; // Which nav button is active
 
   header.innerHTML = `
-    <div class="container mx-auto px-8 py-4 flex items-center justify-between">
+    <div class="container mx-auto px-4 md:px-8 py-3 md:py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-0">
       <div class="flex items-center space-x-2">
-        <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">
-          Bachelor Studium Ernährungswissenschaften
+        <h1 class="text-sm md:text-xl font-bold text-gray-800 dark:text-gray-100">
+          BSc Ernährungswissenschaften
         </h1>
-        <span class="text-gray-400 dark:text-gray-500">-</span>
+        <span class="hidden md:inline text-gray-400 dark:text-gray-500">-</span>
         <span
           id="header-greeting${idSuffix}"
-          class="text-lg text-blue-600 dark:text-blue-400 font-medium"
+          class="hidden md:inline text-lg text-blue-600 dark:text-blue-400 font-medium"
         ></span>
       </div>
-      <nav class="flex items-center space-x-6">
+      <nav class="flex items-center flex-wrap gap-2 md:gap-4 text-xs md:text-base">
         <button
           id="nav-module${idSuffix}"
           class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition duration-200 ${
@@ -65,7 +65,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               : ''
           }"
         >
-          🏆 Achievements
+          <span class="md:hidden">🏆</span><span class="hidden md:inline">🏆 Achievements</span>
         </button>
         <button
           id="nav-map${idSuffix}"

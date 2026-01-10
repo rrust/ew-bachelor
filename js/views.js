@@ -46,7 +46,8 @@ function updateGreeting(userName) {
     'header-greeting',
     'header-greeting-tools',
     'header-greeting-map',
-    'header-greeting-progress'
+    'header-greeting-progress',
+    'header-greeting-achievements'
   ];
 
   greetingIds.forEach((id) => {
