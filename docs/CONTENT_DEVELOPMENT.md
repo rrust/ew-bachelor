@@ -1,6 +1,27 @@
 # Content Development Guide
 
-Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die Ernährungswissenschaft Lern-App entwickeln. Er beschreibt die Struktur, Formate und Prozesse für die Erstellung von Vorlesungen, Quizzes und anderen Lernmaterialien.
+Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die Ernährungswissenschaft Lern-App entwickeln.
+
+## TL;DR - Quick Start
+
+**In 3 Schritten Content erstellen:**
+
+1. **Template kopieren** aus [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md)
+2. **Datei erstellen** in `content/XX-modul/XX-vorlesung/lecture-items/` oder `questions/`
+3. **Validieren** mit `validate-content.html` im Browser
+
+**Wichtigste Regeln:**
+- ✅ YAML-Listen mit `-` (dash), NIEMALS `*` (asterisk)
+- ✅ `correctAnswer` muss EXAKT mit Option übereinstimmen
+- ✅ Dateien mit `NN-` prefix nummerieren (01-, 02-, etc.)
+- ✅ Pfad in `content-list.json` eintragen (automatisch beim Validieren)
+
+**Bei Problemen:**
+- Validator zeigt Fehler mit Zeilennummer → Im Editor fixen
+- YAML-Syntax prüfen (Einrückung, Anführungszeichen)
+- Markdown linten: `npx markdownlint-cli2 "**/*.md"`
+
+---
 
 ## Überblick
 
