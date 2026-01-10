@@ -1,0 +1,26 @@
+[
+  {
+    "id": "01-naturwissenschaftliche-grundlagen",
+    "title": "Modul 1: Naturwissenschaftliche Grundlagen",
+    "ects": 12,
+    "status": "verfügbar",
+    "order": 1,
+    "description": "Mathematik, Physik und Chemie als Basis für das Studium"
+  },
+  {
+    "id": "02-allgemeine-chemie",
+    "title": "Modul 2: Allgemeine und Anorganische Chemie",
+    "ects": 8,
+    "status": "gesperrt",
+    "order": 2,
+    "description": "Grundlagen der allgemeinen und anorganischen Chemie"
+  },
+  {
+    "id": "03-biologie-mikrobiologie",
+    "title": "Modul 3: Biologie und Mikrobiologie",
+    "ects": 10,
+    "status": "gesperrt",
+    "order": 3,
+    "description": "Grundlagen der Biologie mit Fokus auf Mikroorganismen"
+  }
+]
