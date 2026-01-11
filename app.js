@@ -186,6 +186,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (window.renderAlertsView) {
         window.renderAlertsView();
       }
+      // Prompt for notification permission if needed
+      if (window.Notifications && window.Notifications.promptIfNeeded) {
+        setTimeout(() => window.Notifications.promptIfNeeded(), 500);
+      }
       return true;
     } else if (route.view === 'search') {
       updateGreeting();
@@ -431,6 +435,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Initialize alerts badge
     if (window.updateAlertBadge) {
       window.updateAlertBadge();
+    }
+
+    // Initialize notifications (app badge and optional notification)
+    if (window.Notifications && window.Notifications.init) {
+      window.Notifications.init();
     }
 
     // Handle browser back/forward buttons

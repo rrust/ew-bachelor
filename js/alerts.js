@@ -452,7 +452,7 @@ function checkRenewalAnswer(selectedAnswer) {
         <p class="font-bold text-green-800 dark:text-green-200">Richtig!</p>
         <p class="text-sm text-green-700 dark:text-green-300">Dein Achievement wurde verlängert.</p>
         <button
-          onclick="closeQuickRenewalModal(); updateAlertBadge(); renderAlertsView();"
+          onclick="closeQuickRenewalModal(); updateAlertBadge(); updateAppBadgeFromAlerts(); renderAlertsView();"
           class="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
         >
           Schließen
@@ -616,6 +616,7 @@ function generateDemoAlerts() {
   if (addedCount > 0) {
     window.saveUserProgress(progress);
     updateAlertBadge();
+    updateAppBadgeFromAlerts();
     renderAlertsView();
     console.log('[Alerts] Generated', addedCount, 'demo achievement alerts');
   } else {
@@ -647,14 +648,26 @@ function clearDemoAlerts() {
 
   window.saveUserProgress(progress);
   updateAlertBadge();
+  updateAppBadgeFromAlerts();
   renderAlertsView();
   console.log('[Alerts] Cleared all achievement data');
+}
+
+/**
+ * Update the app badge (PWA icon badge) based on current alerts
+ */
+function updateAppBadgeFromAlerts() {
+  if (window.Notifications && window.Notifications.updateAppBadge) {
+    const alerts = getAchievementAlerts();
+    window.Notifications.updateAppBadge(alerts.total);
+  }
 }
 
 // Expose to global scope
 window.getAchievementAlerts = getAchievementAlerts;
 window.getAlertBadgeInfo = getAlertBadgeInfo;
 window.updateAlertBadge = updateAlertBadge;
+window.updateAppBadgeFromAlerts = updateAppBadgeFromAlerts;
 window.renderAlertsView = renderAlertsView;
 window.startRenewal = startRenewal;
 window.openQuickRenewalModal = openQuickRenewalModal;

@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.2.7';
+const CACHE_VERSION = 'v1.2.8';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -22,6 +22,7 @@ const STATIC_ASSETS = [
   './js/achievements.js',
   './js/achievements-ui.js',
   './js/alerts.js',
+  './js/notifications.js',
   './js/components.js',
   './js/swipe.js',
   './js/search.js',
