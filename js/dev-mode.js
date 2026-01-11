@@ -132,6 +132,11 @@ function getTestDataFiles() {
       name: 'Mixed',
       file: `progress-${studyId}-mixed.json`,
       description: 'Realistische Verteilung'
+    },
+    {
+      name: 'Alerts',
+      file: `progress-${studyId}-alerts.json`,
+      description: 'Ablaufende Achievements'
     }
   ];
 

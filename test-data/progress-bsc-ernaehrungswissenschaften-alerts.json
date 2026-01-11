@@ -1,0 +1,63 @@
+{
+  "exportedAt": "2026-01-11T12:00:00.000Z",
+  "version": "2.0",
+  "studyId": "bsc-ernaehrungswissenschaften",
+  "description": "Test data with expired and expiring-soon achievements for alerts testing",
+  "settings": {
+    "userName": "AlertTest",
+    "theme": "light"
+  },
+  "progress": {
+    "userName": "AlertTest",
+    "startedAt": "2025-11-01T10:00:00.000Z",
+    "modules": {
+      "01-ernaehrungslehre-grundlagen": {
+        "status": "completed",
+        "lectures": {
+          "01-grundlagen-zellbiologie": {
+            "score": 100,
+            "badge": "gold"
+          },
+          "02-makronaehrstoffe-detail": {
+            "score": 100,
+            "badge": "gold"
+          }
+        },
+        "achievements": {
+          "cell-biology-cheatsheet": {
+            "status": "expired",
+            "unlockedAt": "2025-11-15T10:00:00.000Z",
+            "expiresAt": "2026-01-05T10:00:00.000Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "makronaehrstoffe-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2025-12-20T10:00:00.000Z",
+            "expiresAt": "2026-01-14T10:00:00.000Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          }
+        }
+      },
+      "02-chemie-grundlagen": {
+        "status": "completed",
+        "lectures": {
+          "01-materie-messen": {
+            "score": 100,
+            "badge": "gold"
+          }
+        },
+        "achievements": {
+          "materie-messen-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2025-12-25T10:00:00.000Z",
+            "expiresAt": "2026-02-01T10:00:00.000Z",
+            "extensionCount": 1,
+            "lastExtensionAt": "2025-12-30T10:00:00.000Z"
+          }
+        }
+      }
+    }
+  }
+}
