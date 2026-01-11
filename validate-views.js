@@ -2,7 +2,7 @@
 /**
  * View Registration Validator
  *
- * Checks that all views defined in index.html are properly registered in app.js
+ * Checks that all views defined in index.html are properly registered in app.js and router.js
  * Run with: node validate-views.js
  */
 
@@ -11,9 +11,13 @@ const path = require('path');
 
 const indexPath = path.join(__dirname, 'index.html');
 const appPath = path.join(__dirname, 'app.js');
+const routerPath = path.join(__dirname, 'js', 'router.js');
 
 const indexContent = fs.readFileSync(indexPath, 'utf-8');
 const appContent = fs.readFileSync(appPath, 'utf-8');
+const routerContent = fs.existsSync(routerPath)
+  ? fs.readFileSync(routerPath, 'utf-8')
+  : '';
 
 // Find all view IDs in index.html (pattern: id="xxx-view")
 const viewIdRegex = /id="([a-z-]+)-view"/g;
@@ -50,12 +54,12 @@ htmlViews.forEach((viewId) => {
   const inViewsObject =
     viewsObjectMatch && viewsObjectMatch[0].includes(`${camelCase}:`);
 
-  // Check 2: Is it in route parsing? Check for patterns like:
-  // route.view === 'progress' or parts[offset] === 'progress'
+  // Check 2: Is it in route parsing? Check in both app.js and router.js
+  const allRouteCode = appContent + routerContent;
   const hasRoute =
-    appContent.includes(`route.view === '${routeName}'`) ||
-    appContent.includes(`parts[offset] === '${routeName}'`) ||
-    appContent.includes(`parts[offset] === '${viewId.split('-')[0]}'`);
+    allRouteCode.includes(`route.view === '${routeName}'`) ||
+    allRouteCode.includes(`parts[offset] === '${routeName}'`) ||
+    allRouteCode.includes(`parts[offset] === '${viewId.split('-')[0]}'`);
 
   // Determine status
   let status;

@@ -97,21 +97,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   // --- URL Routing ---
+  // Note: parseURL and updateURL are now in js/router.js
+  // We use the global window.parseURL and window.updateURL from there
+  
   function updateURL(path, title) {
-    if (window.history && window.history.pushState) {
-      // Get current study for URL prefix (optional, for deep links)
-      const settings = getAppSettings();
-      const studyInfo = getCurrentStudyInfo();
-      const studyTitle = studyInfo ? studyInfo.shortTitle : 'Lern-App';
-
-      window.history.pushState({ path }, title, `#${path}`);
-      document.title = title
-        ? `${title} - ${studyTitle}`
-        : `${studyTitle} - Lern-App`;
+    // Delegate to router module
+    if (window.Router && window.Router.updateURL) {
+      window.Router.updateURL(path, title);
     }
   }
 
   function parseURL() {
+    // Delegate to router module
+    if (window.Router && window.Router.parseURL) {
+      return window.Router.parseURL();
+    }
+    // Fallback for when router isn't loaded yet
     const hash = window.location.hash.slice(1); // Remove #
     if (!hash || hash === '/') return null;
 
