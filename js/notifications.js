@@ -77,25 +77,34 @@ async function showAlertNotification(alerts) {
   }
 
   console.log('[Notifications] Creating notification:', { title, body, icon });
+  console.log('[Notifications] SW in navigator:', 'serviceWorker' in navigator);
+  console.log('[Notifications] SW controller:', navigator.serviceWorker?.controller);
 
   // Try Service Worker notification first (required for Android PWA)
-  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+  if ('serviceWorker' in navigator) {
     try {
       const registration = await navigator.serviceWorker.ready;
-      await registration.showNotification(title, {
-        body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
-        icon: icon,
-        badge: icon,
-        tag: 'achievement-alerts',
-        requireInteraction: false,
-        silent: false,
-        data: { url: '#/alerts' }
-      });
-      console.log('[Notifications] SW notification shown successfully');
-      localStorage.setItem('lastAlertNotification', today);
-      return;
+      console.log('[Notifications] SW registration ready:', registration);
+      
+      if (registration.showNotification) {
+        await registration.showNotification(title, {
+          body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
+          icon: icon,
+          badge: icon,
+          tag: 'achievement-alerts',
+          requireInteraction: false,
+          vibrate: [200, 100, 200],
+          data: { url: '#/alerts' }
+        });
+        console.log('[Notifications] SW notification shown successfully');
+        localStorage.setItem('lastAlertNotification', today);
+        return;
+      }
     } catch (swError) {
-      console.log('[Notifications] SW notification failed, trying fallback:', swError);
+      console.log(
+        '[Notifications] SW notification failed, trying fallback:',
+        swError
+      );
     }
   }
 
@@ -284,7 +293,7 @@ function dismissNotificationPrompt() {
  * [DEV MODE] Force show a test notification (bypasses daily limit)
  * Shows visual feedback in a toast instead of alert()
  */
-function testNotification() {
+async function testNotification() {
   const results = [];
 
   // Check support
@@ -330,11 +339,23 @@ function testNotification() {
     return;
   }
 
+  // Check Service Worker
+  const hasSW = 'serviceWorker' in navigator;
+  results.push(`Service Worker: ${hasSW ? '✅' : '❌'}`);
+  
+  if (hasSW) {
+    const reg = await navigator.serviceWorker.getRegistration();
+    results.push(`SW registriert: ${reg ? '✅' : '❌'}`);
+    if (reg) {
+      results.push(`SW active: ${reg.active ? '✅' : '❌'}`);
+    }
+  }
+
   // Clear daily limit and show
   localStorage.removeItem('lastAlertNotification');
 
   try {
-    showAlertNotification(alerts);
+    await showAlertNotification(alerts);
     results.push('Notification gesendet! 🔔');
     showTestResult(results, 'success');
   } catch (e) {
