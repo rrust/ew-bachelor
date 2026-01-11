@@ -1,7 +1,7 @@
 ---
 type: 'achievement'
 id: 'cell-biology-cheatsheet'
-title: 'Zellbiologie Spickzettel'
+title: 'Zellbiologie Cheat-Sheet'
 description: 'Kompakte Zusammenfassung aller wichtigen Zellbiologie-Konzepte für schnelle Wiederholung'
 icon: 'clipboard'
 contentType: 'markdown'
@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Zellbiologie Spickzettel 📋
+# Zellbiologie Cheat-Sheet 📋
 
 ## Zellorganellen & Funktionen
 
@@ -181,7 +181,7 @@ mRNA → Protein
 - **"ER ist RAU beim Proteinbau"**: Raues ER = Proteine
 - **"Lyse = Abbau"**: Lysosomen bauen ab
 
-**💡 Tipp**: Drucke diesen Spickzettel aus und hänge ihn an deinen Schreibtisch!
+**💡 Tipp**: Drucke dieses Cheat-Sheet aus und hänge es an deinen Schreibtisch!
 
 **🔄 Gültig für**: 30 Tage (verlängerbar durch Quiz-Frage)
 

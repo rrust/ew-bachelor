@@ -231,12 +231,20 @@ function renderAlertsView() {
 
     // Expiring soon
     if (alerts.expiringSoon.length > 0) {
+      const tokenStats = window.getTrainingStats
+        ? window.getTrainingStats()
+        : { tokens: 0 };
       html += `
         <div class="mb-6">
-          <h3 class="flex items-center gap-2 text-lg font-bold text-yellow-600 dark:text-yellow-400 mb-3">
-            ${Icons.get('clock', 'w-5 h-5')}
-            Läuft bald ab (${alerts.expiringSoon.length})
-          </h3>
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="flex items-center gap-2 text-lg font-bold text-yellow-600 dark:text-yellow-400">
+              ${Icons.get('clock', 'w-5 h-5')}
+              Läuft bald ab (${alerts.expiringSoon.length})
+            </h3>
+            <span class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400" title="Verfügbare Trainings-Tokens">
+              ${Icons.get('token', 'w-4 h-4')} ${tokenStats.tokens} Tokens
+            </span>
+          </div>
           <div class="space-y-3">
             ${alerts.expiringSoon
               .map((alert) => renderAlertCard(alert))
@@ -275,6 +283,13 @@ function renderAlertCard(alert) {
     ? 'bg-red-600 hover:bg-red-700'
     : 'bg-yellow-600 hover:bg-yellow-700';
 
+  // Check if user has enough tokens for extension (only for non-expired)
+  const tokenStats = window.getTrainingStats
+    ? window.getTrainingStats()
+    : { tokens: 0 };
+  const TOKENS_FOR_EXTENSION = 3;
+  const canUseTokens = !isExpired && tokenStats.tokens >= TOKENS_FOR_EXTENSION;
+
   return `
     <div class="border ${borderColor} ${bgColor} rounded-lg p-4">
       <div class="flex items-start justify-between gap-4">
@@ -282,7 +297,7 @@ function renderAlertCard(alert) {
           <span class="text-2xl flex-shrink-0">${
             alert.icon
               ? Icons.get(alert.icon, 'w-8 h-8')
-              : Icons.get('trophy', 'w-8 h-8')
+              : Icons.get('achievement', 'w-8 h-8')
           }</span>
           <div class="min-w-0">
             <h4 class="font-medium text-gray-900 dark:text-gray-100 truncate">${
@@ -301,15 +316,31 @@ function renderAlertCard(alert) {
             </p>
           </div>
         </div>
-        <button
-          onclick="startRenewal('${alert.achievementId}', '${
+        <div class="flex flex-col gap-2 flex-shrink-0">
+          <button
+            onclick="startRenewal('${alert.achievementId}', '${
     alert.moduleId
   }', ${isExpired})"
-          class="flex-shrink-0 flex items-center gap-2 px-4 py-2 ${buttonClass} text-white text-sm font-medium rounded-lg transition-colors"
-        >
-          ${Icons.get('refresh', 'w-4 h-4')}
-          <span class="hidden sm:inline">${buttonText}</span>
-        </button>
+            class="flex items-center gap-2 px-4 py-2 ${buttonClass} text-white text-sm font-medium rounded-lg transition-colors"
+          >
+            ${Icons.get('refresh', 'w-4 h-4')}
+            <span class="hidden sm:inline">${buttonText}</span>
+          </button>
+          ${
+            canUseTokens
+              ? `
+            <button
+              onclick="extendWithTokens('${alert.achievementId}')"
+              class="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium rounded-lg transition-colors"
+              title="Mit ${TOKENS_FOR_EXTENSION} Tokens verlängern"
+            >
+              ${Icons.get('token', 'w-4 h-4')}
+              <span class="hidden sm:inline">${TOKENS_FOR_EXTENSION} Tokens</span>
+            </button>
+          `
+              : ''
+          }
+        </div>
       </div>
     </div>
   `;
@@ -1392,6 +1423,46 @@ function updateStreakDisplay() {
   badge.className = `text-sm font-bold ${info.color}`;
 }
 
+/**
+ * Extend an achievement using training tokens
+ * @param {string} achievementId - The achievement to extend
+ */
+function extendWithTokens(achievementId) {
+  const TOKENS_FOR_EXTENSION = 3;
+
+  // Check if spendTokensForExtension is available from training.js
+  if (typeof window.spendTokensForExtension === 'function') {
+    const success = window.spendTokensForExtension(achievementId);
+
+    if (success) {
+      const achievement = window.APP_CONTENT?.achievements?.[achievementId];
+      const extensionDays = achievement?.extensionDuration || 7;
+
+      // Show success notification
+      if (window.showNotification) {
+        window.showNotification(
+          `${
+            achievement?.title || 'Achievement'
+          } um ${extensionDays} Tage verlängert!`,
+          'success'
+        );
+      }
+
+      // Refresh the alerts view
+      renderAlertsView();
+    } else {
+      if (window.showNotification) {
+        window.showNotification(
+          'Nicht genug Tokens oder Achievement nicht verfügbar',
+          'error'
+        );
+      }
+    }
+  } else {
+    console.error('spendTokensForExtension not available');
+  }
+}
+
 // Expose to global scope
 window.getAchievementAlerts = getAchievementAlerts;
 window.getAlertBadgeInfo = getAlertBadgeInfo;
@@ -1402,6 +1473,7 @@ window.renderStreakSection = renderStreakSection;
 window.toggleAlertsHelp = toggleAlertsHelp;
 window.enableNotificationsAndRefresh = enableNotificationsAndRefresh;
 window.startRenewal = startRenewal;
+window.extendWithTokens = extendWithTokens;
 window.openQuickRenewalModal = openQuickRenewalModal;
 window.checkRenewalAnswer = checkRenewalAnswer;
 window.retryQuickRenewal = retryQuickRenewal;

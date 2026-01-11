@@ -9,6 +9,11 @@
   "progress": {
     "userName": "TestUser",
     "startedAt": "2025-10-05T22:45:37.222Z",
+    "training": {
+      "tokens": 7,
+      "totalAnswered": 110,
+      "totalRounds": 11
+    },
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",

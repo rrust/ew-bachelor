@@ -37,7 +37,8 @@ Studenten können den Lernstoff ihres Studiums strukturiert durcharbeiten, ihr W
 
 - **Badges** für Quiz-Leistungen: Gold (≥90%), Silber (≥70%), Bronze (≥50%)
 - **Modul-Fortschritt** basierend auf Quiz-Durchschnitt
-- **Achievements** für besondere Leistungen (geplant)
+- **Achievements** für besondere Leistungen mit Cheat-Sheets
+- **Training Mode** zum Wiederholen und Token sammeln
 
 ## Benutzerfluss
 
@@ -82,6 +83,7 @@ Start → Name eingeben → Studiengang wählen → Modulübersicht
 - [x] Fortschritts-Dashboard mit Statistiken
 - [x] Fortschritt exportieren/importieren (Backup & Restore)
 - [x] Achievement-System mit zeitlich begrenzten Lernhilfen
+- [x] Training-Modus mit Token-System für Achievement-Verlängerungen
 - [x] Globale Suche über alle Inhalte
 - [x] Studienstruktur-Map zur Übersicht
 - [x] PWA – installierbar als Offline-App

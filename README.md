@@ -13,6 +13,7 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 - 📚 Modulare Vorlesungen mit verschiedenen Content-Typen
 - 🎯 Tests & Self-Assessments für Wissensüberprüfung
 - 🏆 Achievement-System mit zeitlich begrenzten Lernhilfen
+- 🏋️ Trainings-Modus mit Token-System für Achievement-Verlängerungen
 - 📊 Progress Tracking mit Badges und Statistiken
 - 💾 Fortschritt-Backup & Restore
 - 🔍 Globale Suche über alle Inhalte

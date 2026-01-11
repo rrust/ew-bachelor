@@ -13,6 +13,7 @@
 | Achievement gallery             | ✅ Done    | Filter by status, view content    |
 | Local notifications             | ✅ Done    | On app start if alerts exist      |
 | App badge (PWA)                 | ✅ Done    | Shows alert count on icon         |
+| Training mode with tokens       | ✅ Done    | Earn tokens, extend achievements  |
 | Unlock celebration animation    | 🟡 Partial | Basic modal, no confetti yet      |
 | Multiple unlock conditions      | ❌ Todo    | Only lecture-quiz-gold for now    |
 
@@ -57,14 +58,14 @@ Each achievement has a **validity period**:
 
 - **Default Duration**: e.g., 30 days after unlock
 - **Warning Stage**: 7 days before expiration → Status "locked soon"
-- **Extension**: +14 days when correctly answering a random question
+- **Extension**: +14 days when correctly answering a random question OR using Training Tokens
 
 ### 3. Maintenance through Quiz Questions
 
-**Extension Process:**
+**Extension Process (Quick Renewal):**
 
 1. Achievement shows "🔓 Expiring soon" status
-2. Student clicks "Extend" button
+2. Student clicks "Schnell verlängern" button
 3. System selects random question from associated quiz
 4. **If answer is correct**: +14 days validity
 5. **If answer is wrong**:
@@ -73,7 +74,34 @@ Each achievement has a **validity period**:
    - Gold badge disappears
    - Achievement can only be regained by complete quiz retake
 
-### 4. Achievement Status
+### 4. Training Mode & Token System
+
+The Training Mode provides an alternative way to extend achievements without risk.
+
+**How it works:**
+
+1. Access Training Mode via "TRAIN" button in header
+2. Answer 10 random questions from all completed tests
+3. Earn tokens based on performance:
+   - **0-4 correct**: No tokens earned
+   - **5-7 correct**: 1 token earned
+   - **8-10 correct**: 3 tokens earned
+4. Continue training indefinitely ("Weiter trainieren")
+
+**Using Tokens:**
+
+- **3 tokens** = Extend one achievement by its extension duration (typically 7-14 days)
+- Tokens can only be used for `unlocked` or `locked-soon` achievements
+- Expired achievements cannot be extended with tokens (must re-earn gold)
+- Token balance shown in Training view and Alerts view
+
+**Benefits over Quick Renewal:**
+
+- No risk of losing the achievement
+- Can be done proactively before expiration warning
+- Combines review of multiple topics
+
+### 5. Achievement Status
 
 - **`locked`**: Not yet unlocked (shows unlock conditions)
 - **`unlocked`**: Active and available, expiration time running
@@ -229,7 +257,7 @@ Different achievement types require tailored presentation:
 
 ```text
 ┌─────────────────────────────────────────────┐
-│ 📋 Zellbiologie Spickzettel      [Print] [↓]│
+│ 📋 Zellbiologie Cheat-Sheet      [Print] [↓]│
 ├─────────────────────────────────────────────┤
 │ ┌─────────┐  Content Area                   │
 │ │ TOC     │  ┌───────────────────┐          │
@@ -282,7 +310,7 @@ Different achievement types require tailored presentation:
 ```text
 ┌─────────────────────────────────────────────┐
 │ ┌───────────────────────────────────────┐ × │
-│ │ 📋 Zellbiologie Spickzettel              │
+│ │ 📋 Zellbiologie Cheat-Sheet              │
 │ │ 🔓 Aktiv • noch 23 Tage                  │
 │ ├───────────────────────────────────────┤  │
 │ │ [Print] [Download] [Extend]  [Share]    │

@@ -297,7 +297,7 @@ Achievements motivieren durch nützliche Belohnungen (Cheat Sheets, Diagramme).
 
 | Typ                 | Beispiel                 | Unlock-Bedingung            |
 | ------------------- | ------------------------ | --------------------------- |
-| Lecture Cheat Sheet | Zellbiologie-Spickzettel | Gold Badge im Lecture Quiz  |
+| Lecture Cheat Sheet | Zellbiologie Cheat-Sheet | Gold Badge im Lecture Quiz  |
 | Visual Aid          | Proteinsynthese-Diagramm | Während Lecture bei Item X  |
 | Module Summary      | Modul-1-Zusammenfassung  | Gold Badge in Modul-Prüfung |
 
