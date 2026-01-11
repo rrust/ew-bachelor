@@ -272,7 +272,10 @@ function getRandomCelebrationGif() {
   let index = parseInt(localStorage.getItem(storageKey) || '0', 10);
   const gif = CELEBRATION_GIFS[index % CELEBRATION_GIFS.length];
   // Store next index for variety
-  localStorage.setItem(storageKey, String((index + 1) % CELEBRATION_GIFS.length));
+  localStorage.setItem(
+    storageKey,
+    String((index + 1) % CELEBRATION_GIFS.length)
+  );
   return gif;
 }
 

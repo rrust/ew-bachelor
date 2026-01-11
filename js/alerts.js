@@ -297,7 +297,7 @@ function renderAlertCard(alert) {
           <span class="text-2xl flex-shrink-0">${
             alert.icon
               ? Icons.get(alert.icon, 'w-8 h-8')
-              : Icons.get('trophy', 'w-8 h-8')
+              : Icons.get('achievement', 'w-8 h-8')
           }</span>
           <div class="min-w-0">
             <h4 class="font-medium text-gray-900 dark:text-gray-100 truncate">${

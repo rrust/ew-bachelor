@@ -134,7 +134,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('achievements');"
               class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
             >
-              ${Icons.get('trophy', 'w-5 h-5')}
+              ${Icons.get('achievement', 'w-5 h-5')}
               <span>Achievements</span>
             </button>
             <!-- Map -->
@@ -344,7 +344,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
                 : ''
             }"
           >
-            ${Icons.get('trophy', 'w-5 h-5')}
+            ${Icons.get('achievement', 'w-5 h-5')}
             <span>Achievements</span>
           </button>
           <!-- Map -->
