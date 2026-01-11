@@ -525,7 +525,7 @@ function generateDemoSnapshots() {
   const demoData = [
     {
       daysAgo: 0,
-      desc: 'Quiz: Zellbiologie Spickzettel',
+      desc: 'Quiz: Zellbiologie Cheat-Sheet',
       type: 'quiz',
       score: 92,
       modules: 3,

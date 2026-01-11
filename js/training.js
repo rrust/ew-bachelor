@@ -313,7 +313,9 @@ function renderTrainingQuestion(animateIn = false) {
   const isMultipleAnswers = question.type === 'multiple-choice-multiple';
 
   // Animation styles for slide-in
-  const initialStyle = animateIn ? 'transform: translateX(100%); opacity: 0;' : '';
+  const initialStyle = animateIn
+    ? 'transform: translateX(100%); opacity: 0;'
+    : '';
 
   container.innerHTML = `
     <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
@@ -350,10 +352,10 @@ function renderTrainingQuestion(animateIn = false) {
           <button
             onclick="showTrainingCheatSheet('${question.cheatSheet.id}')"
             class="inline-flex items-center gap-1 text-xs px-2 py-1 rounded bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 hover:bg-yellow-200 dark:hover:bg-yellow-900/50 transition"
-            title="Spickzettel anzeigen"
+            title="Cheat-Sheet anzeigen"
           >
             ${Icons.get('clipboard', 'w-3 h-3')}
-            <span>Spickzettel</span>
+            <span>Cheat-Sheet</span>
           </button>
         `
             : ''
@@ -413,7 +415,8 @@ function renderTrainingQuestion(animateIn = false) {
       questionCard.offsetHeight;
       // Animate to final position
       requestAnimationFrame(() => {
-        questionCard.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-out';
+        questionCard.style.transition =
+          'transform 0.3s ease-out, opacity 0.3s ease-out';
         questionCard.style.transform = 'translateX(0)';
         questionCard.style.opacity = '1';
       });
@@ -548,13 +551,14 @@ function showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers) {
 function nextTrainingQuestion() {
   const container = document.getElementById('training-content');
   const questionCard = container.querySelector('.training-question-card');
-  
+
   if (questionCard) {
     // Slide out to the left
-    questionCard.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-out';
+    questionCard.style.transition =
+      'transform 0.3s ease-out, opacity 0.3s ease-out';
     questionCard.style.transform = 'translateX(-100%)';
     questionCard.style.opacity = '0';
-    
+
     setTimeout(() => {
       trainingState.currentIndex++;
       renderTrainingQuestion(true); // true = animate in from right
@@ -652,7 +656,8 @@ function renderTrainingResults() {
     if (badge) {
       // Small delay before animation starts
       setTimeout(() => {
-        badge.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out';
+        badge.style.transition =
+          'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out';
         badge.style.transform = 'scale(1)';
         badge.style.opacity = '1';
       }, 200);

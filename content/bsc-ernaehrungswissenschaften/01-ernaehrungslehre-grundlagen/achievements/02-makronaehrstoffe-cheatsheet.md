@@ -1,7 +1,7 @@
 ---
 type: 'achievement'
 id: 'makronaehrstoffe-cheatsheet'
-title: 'Makronährstoffe Spickzettel'
+title: 'Makronährstoffe Cheat-Sheet'
 description: 'Kompakte Zusammenfassung aller wichtigen Makronährstoff-Konzepte für schnelle Wiederholung'
 icon: 'clipboard'
 contentType: 'markdown'
@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Makronährstoffe Spickzettel 🍽️
+# Makronährstoffe Cheat-Sheet 🍽️
 
 ## Die drei Makronährstoffe im Überblick
 
@@ -182,7 +182,7 @@ PAL (Physical Activity Level):
 - [ ] Glykogenspeicherorte kennen
 - [ ] Omega-3 vs. Omega-6 unterscheiden
 
-**💡 Tipp**: Drucke diesen Spickzettel aus und hänge ihn an deinen Schreibtisch!
+**💡 Tipp**: Drucke dieses Cheat-Sheet aus und hänge es an deinen Schreibtisch!
 
 **🔄 Gültig für**: 30 Tage (verlängerbar durch Quiz-Frage)
 
