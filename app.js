@@ -596,7 +596,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.LectureModule.renderCurrentLectureItem(
       lectureState,
       updateLectureNav,
-      renderSelfAssessment,
+      renderSelfAssessmentMC,
       renderYouTubeVideo,
       renderImage,
       renderMermaidDiagram,
@@ -616,8 +616,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     await window.LectureModule.renderMermaidDiagram(item, container);
   }
 
-  function renderSelfAssessment(item, container) {
-    window.LectureModule.renderSelfAssessment(item, container);
+  function renderSelfAssessmentMC(item, container) {
+    window.LectureModule.renderSelfAssessmentMC(item, container);
   }
 
   function updateLectureNav() {

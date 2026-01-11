@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.6.4';
+const CACHE_VERSION = 'v1.6.6';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -200,16 +200,38 @@ async function staleWhileRevalidate(request) {
   const cache = await caches.open(CACHE_NAME);
   const cached = await cache.match(request);
 
-  // Fetch fresh version in background
-  const fetchPromise = fetch(request).then((response) => {
-    if (response.ok) {
-      cache.put(request, response.clone());
-    }
-    return response;
-  });
+  // Fetch fresh version in background (don't await, fire-and-forget)
+  // Errors are caught silently - we already have cached version or will handle below
+  const fetchPromise = fetch(request)
+    .then((response) => {
+      if (response.ok) {
+        cache.put(request, response.clone());
+      }
+      return response;
+    })
+    .catch(() => {
+      // Network failed - silently ignore if we have cache
+      // If no cache, this will be handled below
+      return null;
+    });
 
-  // Return cached version immediately, or wait for network
-  return cached || fetchPromise;
+  // Return cached version immediately if available
+  if (cached) {
+    return cached;
+  }
+
+  // No cache - must wait for network
+  const networkResponse = await fetchPromise;
+  if (networkResponse) {
+    return networkResponse;
+  }
+
+  // Both cache and network failed
+  console.warn(
+    '[SW] Stale-while-revalidate: No cache and network failed for:',
+    request.url
+  );
+  return new Response('Offline', { status: 503 });
 }
 
 // Listen for messages (e.g., skip waiting)

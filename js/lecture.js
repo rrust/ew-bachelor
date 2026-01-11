@@ -127,7 +127,7 @@ function startLecture(
  * Renders the current lecture item based on its type
  * @param {Object} lectureState - State object { currentItems, currentIndex }
  * @param {Function} updateLectureNav - Navigation update function
- * @param {Function} renderSelfAssessment - Self-assessment render function
+ * @param {Function} renderSelfAssessmentMC - Self-assessment MC render function
  * @param {Function} renderYouTubeVideo - YouTube video render function
  * @param {Function} renderImage - Image render function
  * @param {Function} renderMermaidDiagram - Mermaid diagram render function
@@ -136,7 +136,7 @@ function startLecture(
 function renderCurrentLectureItem(
   lectureState,
   updateLectureNav,
-  renderSelfAssessment,
+  renderSelfAssessmentMC,
   renderYouTubeVideo,
   renderImage,
   renderMermaidDiagram,
@@ -156,8 +156,15 @@ function renderCurrentLectureItem(
       renderMermaidInContent(lectureItemDisplay);
       break;
     case 'self-assessment-mc':
-      renderSelfAssessment(item, lectureItemDisplay);
+      renderSelfAssessmentMC(item, lectureItemDisplay);
       renderMath(lectureItemDisplay);
+      // Add footnotes after self-assessment if present
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
+      break;
+    case 'self-assessment':
+      renderSelfAssessmentChecklist(item, lectureItemDisplay);
       // Add footnotes after self-assessment if present
       if (footnoteHtml) {
         lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
@@ -598,11 +605,70 @@ function openExpandedDiagram(title, svg) {
 }
 
 /**
+ * Renders a self-assessment checklist (non-quiz)
+ * @param {Object} item - Item with question, checkpoints, successMessage, reviewHint
+ * @param {HTMLElement} container - Container element
+ */
+function renderSelfAssessmentChecklist(item, container) {
+  const checkpoints = item.checkpoints || [];
+  const question = item.question || 'Selbsteinschätzung';
+  const successMessage =
+    item.successMessage || 'Sehr gut! Du hast alle Punkte abgehakt.';
+  const reviewHint =
+    item.reviewHint ||
+    'Falls du unsicher bist, geh den Inhalt noch einmal durch.';
+
+  let content = `<div class="p-4 border dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700">
+          <p class="font-semibold mb-4">${question}</p>
+          <div class="space-y-2">`;
+
+  checkpoints.forEach((checkpoint, index) => {
+    content += `<label class="flex items-start gap-3 p-3 border dark:border-gray-600 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer">
+              <input type="checkbox" class="self-assessment-checkbox mt-1" data-index="${index}">
+              <span>${checkpoint}</span>
+          </label>`;
+  });
+
+  content += `</div>
+          <div class="feedback mt-4 p-3 rounded-md" style="display:none;"></div>
+      </div>`;
+
+  container.innerHTML = content;
+
+  // Update feedback when checkboxes change
+  const checkboxes = container.querySelectorAll('.self-assessment-checkbox');
+  const feedbackDiv = container.querySelector('.feedback');
+
+  const updateFeedback = () => {
+    const checked = container.querySelectorAll(
+      '.self-assessment-checkbox:checked'
+    ).length;
+    const total = checkpoints.length;
+
+    if (checked === total) {
+      feedbackDiv.className =
+        'feedback mt-4 p-3 rounded-md bg-green-100 dark:bg-green-900/30 border-l-4 border-green-500';
+      feedbackDiv.innerHTML = `<p class="text-green-700 dark:text-green-300">${successMessage}</p>`;
+      feedbackDiv.style.display = 'block';
+    } else if (checked > 0) {
+      feedbackDiv.className =
+        'feedback mt-4 p-3 rounded-md bg-yellow-100 dark:bg-yellow-900/30 border-l-4 border-yellow-500';
+      feedbackDiv.innerHTML = `<p class="text-yellow-700 dark:text-yellow-300">${checked} von ${total} Punkten abgehakt. ${reviewHint}</p>`;
+      feedbackDiv.style.display = 'block';
+    } else {
+      feedbackDiv.style.display = 'none';
+    }
+  };
+
+  checkboxes.forEach((cb) => cb.addEventListener('change', updateFeedback));
+}
+
+/**
  * Renders a self-assessment multiple choice question
  * @param {Object} item - Question item with question, options, correctAnswer, explanation
  * @param {HTMLElement} container - Container element
  */
-function renderSelfAssessment(item, container) {
+function renderSelfAssessmentMC(item, container) {
   let content = `<div class="p-4 border dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700">
           <p class="font-semibold mb-4">${item.question}</p>
           <div class="space-y-2">`;
@@ -801,6 +867,9 @@ function showLectureOverview(
   const questionCount = lectureState.currentItems.filter(
     (i) => i.type === 'self-assessment-mc'
   ).length;
+  const checklistCount = lectureState.currentItems.filter(
+    (i) => i.type === 'self-assessment'
+  ).length;
   const videoCount = lectureState.currentItems.filter(
     (i) => i.type === 'youtube-video'
   ).length;
@@ -820,6 +889,10 @@ function showLectureOverview(
   if (questionCount > 0)
     descParts.push(
       `${questionCount} Selbsttest${questionCount > 1 ? 's' : ''}`
+    );
+  if (checklistCount > 0)
+    descParts.push(
+      `${checklistCount} Checkliste${checklistCount > 1 ? 'n' : ''}`
     );
   if (videoCount > 0)
     descParts.push(`${videoCount} Video${videoCount > 1 ? 's' : ''}`);
@@ -869,6 +942,12 @@ function showLectureOverview(
         badgeClass =
           'bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
         preview = item.question || 'Multiple-Choice Frage';
+        break;
+      case 'self-assessment':
+        typeLabel = 'Selbsteinschätzung';
+        badgeClass =
+          'bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200';
+        preview = item.question || 'Checkliste';
         break;
       case 'youtube-video':
         typeLabel = 'Video';
@@ -948,7 +1027,8 @@ window.LectureModule = {
   renderYouTubeVideo,
   renderImage,
   renderMermaidDiagram,
-  renderSelfAssessment,
+  renderSelfAssessmentMC,
+  renderSelfAssessmentChecklist,
   renderExternalVideo,
   renderMath,
   updateLectureNav,
