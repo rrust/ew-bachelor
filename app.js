@@ -573,13 +573,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderCurrentLectureItem() {
+    const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
+    const sources = lecture?.sources || [];
     window.LectureModule.renderCurrentLectureItem(
       lectureState,
       updateLectureNav,
       renderSelfAssessment,
       renderYouTubeVideo,
       renderImage,
-      renderMermaidDiagram
+      renderMermaidDiagram,
+      sources
     );
   }
 
