@@ -337,8 +337,8 @@ function renderTrainingQuestion() {
         </span>
         <span class="flex-1"></span>
         <!-- Token indicator -->
-        <span id="token-count-inline" class="text-xs text-gray-400 dark:text-gray-500" title="Trainings-Tokens">
-          🎟️ ${getTrainingStats().tokens}
+        <span id="token-count-inline" class="inline-flex items-center gap-1 text-xs text-gray-400 dark:text-gray-500" title="Trainings-Tokens">
+          ${Icons.get('token', 'w-3 h-3')} ${getTrainingStats().tokens}
         </span>
         ${
           question.cheatSheet
@@ -546,24 +546,27 @@ function renderTrainingResults() {
   updateTokenDisplay();
 
   // Determine feedback
-  let emoji, title, message, tokenMessage, tokenClass;
+  let icon, iconColor, title, message, tokenMessage, tokenClass;
 
   if (tokensEarned === 3) {
-    emoji = '🏆';
+    icon = Icons.get('trophy', 'w-12 h-12');
+    iconColor = 'text-yellow-500';
     title = 'Ausgezeichnet!';
     message = `${correctCount} von ${totalQuestions} richtig`;
     tokenMessage = `+${tokensEarned} Tokens!`;
     tokenClass =
       'text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30';
   } else if (tokensEarned === 1) {
-    emoji = '🌟';
+    icon = Icons.get('star', 'w-12 h-12');
+    iconColor = 'text-blue-500';
     title = 'Gut gemacht!';
     message = `${correctCount} von ${totalQuestions} richtig`;
     tokenMessage = `+${tokensEarned} Token!`;
     tokenClass =
       'text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30';
   } else {
-    emoji = '💪';
+    icon = Icons.get('muscle', 'w-12 h-12');
+    iconColor = 'text-gray-400';
     title = 'Weiter üben!';
     message = `${correctCount} von ${totalQuestions} richtig`;
     tokenMessage = null;
@@ -572,9 +575,9 @@ function renderTrainingResults() {
 
   container.innerHTML = `
     <div class="max-w-sm mx-auto text-center py-6">
-      <!-- Result animation -->
-      <div class="mb-4">
-        <span class="text-5xl block">${emoji}</span>
+      <!-- Result icon -->
+      <div class="mb-4 ${iconColor}">
+        ${icon}
       </div>
       
       <h2 class="text-xl font-bold mb-1">${title}</h2>
@@ -585,7 +588,7 @@ function renderTrainingResults() {
           ? `
         <!-- Token earned badge -->
         <div class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${tokenClass} text-sm font-medium mb-4">
-          🎟️ ${tokenMessage}
+          ${Icons.get('token', 'w-4 h-4')} ${tokenMessage}
         </div>
       `
           : ''
@@ -813,3 +816,4 @@ window.openTokenRedeemModal = openTokenRedeemModal;
 window.closeTokenRedeemModal = closeTokenRedeemModal;
 window.redeemTokenForAchievement = redeemTokenForAchievement;
 window.getTrainingStats = getTrainingStats;
+window.spendTokensForExtension = spendTokensForExtension;

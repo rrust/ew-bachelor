@@ -171,7 +171,19 @@ const Icons = (function () {
 
     // Training mode icon (dumbbell)
     training:
-      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h2m12 0h2M6 7v10M18 7v10M6 12h12M4 17h2m12 0h2M9 7v10M15 7v10"></path>'
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h2m12 0h2M6 7v10M18 7v10M6 12h12M4 17h2m12 0h2M9 7v10M15 7v10"></path>',
+
+    // Token icon (ticket/coupon)
+    token:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>',
+
+    // Muscle/strength icon (flexed arm)
+    muscle:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17v-5a3 3 0 013-3h2a3 3 0 013 3v1h4a3 3 0 013 3v4M7 14v3m4-3v3m4-3v3"></path>',
+
+    // Filled trophy icon
+    trophyFilled:
+      '<path fill="currentColor" d="M5 3h14v2h2v6h-2v2h-2v2h-2v2h-2v4h4v2H7v-2h4v-4H9v-2H7v-2H5v-2H3V5h2V3zm2 2v6h2v2h2v2h2v-2h2v-2h2V5H7z"/>'
   };
 
   // Icons with custom viewBox (different from default 24x24)
