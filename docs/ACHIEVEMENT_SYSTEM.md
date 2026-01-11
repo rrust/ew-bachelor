@@ -2,19 +2,19 @@
 
 ## Implementation Status (2026-01-11)
 
-| Feature | Status | Notes |
-|---------|--------|-------|
-| Achievement content in Markdown | ✅ Done | Stored in `achievements/` folders |
-| Unlock via quiz gold badge | ✅ Done | Automatic unlock after gold score |
-| Time-limited validity | ✅ Done | Default 30 days, configurable |
-| Expiration alerts | ✅ Done | Bell icon in header, alerts view |
-| Quick renewal (1 question) | ✅ Done | For expiring-soon achievements |
-| Full quiz for expired | ✅ Done | Must re-earn gold badge |
-| Achievement gallery | ✅ Done | Filter by status, view content |
-| Local notifications | ✅ Done | On app start if alerts exist |
-| App badge (PWA) | ✅ Done | Shows alert count on icon |
-| Unlock celebration animation | 🟡 Partial | Basic modal, no confetti yet |
-| Multiple unlock conditions | ❌ Todo | Only lecture-quiz-gold for now |
+| Feature                         | Status    | Notes                             |
+| ------------------------------- | --------- | --------------------------------- |
+| Achievement content in Markdown | ✅ Done    | Stored in `achievements/` folders |
+| Unlock via quiz gold badge      | ✅ Done    | Automatic unlock after gold score |
+| Time-limited validity           | ✅ Done    | Default 30 days, configurable     |
+| Expiration alerts               | ✅ Done    | Bell icon in header, alerts view  |
+| Quick renewal (1 question)      | ✅ Done    | For expiring-soon achievements    |
+| Full quiz for expired           | ✅ Done    | Must re-earn gold badge           |
+| Achievement gallery             | ✅ Done    | Filter by status, view content    |
+| Local notifications             | ✅ Done    | On app start if alerts exist      |
+| App badge (PWA)                 | ✅ Done    | Shows alert count on icon         |
+| Unlock celebration animation    | 🟡 Partial | Basic modal, no confetti yet      |
+| Multiple unlock conditions      | ❌ Todo    | Only lecture-quiz-gold for now    |
 
 ---
 
