@@ -116,11 +116,11 @@ warningThreshold: 7
 
 ↑ Reaktiv (unedle Metalle)
 
-```text
-Li > K > Ca > Na > Mg > Al > Zn > Fe > Ni > Sn > Pb
-                    ─── H₂ ───
-                Cu > Hg > Ag > Pt > Au
-```
+$$Li > K > Ca > Na > Mg > Al > Zn > Fe > Ni > Sn > Pb$$
+
+$$─────────────── H_2 ───────────────$$
+
+$$Cu > Hg > Ag > Pt > Au$$
 
 ↓ Edel (Edelmetalle)
 

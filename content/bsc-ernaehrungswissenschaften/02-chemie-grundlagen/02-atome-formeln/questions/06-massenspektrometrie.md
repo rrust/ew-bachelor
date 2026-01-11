@@ -7,7 +7,7 @@ options:
   - 'Die Probe muss zuerst ionisiert werden'
   - 'Das Ergebnis zeigt die relative Häufigkeit der Isotope'
   - 'Alle Ionen werden gleich stark abgelenkt'
-correctAnswer:
+correctAnswers:
   - 'Leichte Ionen werden stärker abgelenkt als schwere'
   - 'Die Probe muss zuerst ionisiert werden'
   - 'Das Ergebnis zeigt die relative Häufigkeit der Isotope'
