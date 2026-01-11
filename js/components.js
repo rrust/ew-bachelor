@@ -93,8 +93,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
               onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));"
             >
-              <span class="theme-icon-light hidden">${Icons.get('sun', 'w-5 h-5')}</span>
-              <span class="theme-icon-dark">${Icons.get('moon', 'w-5 h-5')}</span>
+              <span class="theme-icon-light hidden">${Icons.get(
+                'sun',
+                'w-5 h-5'
+              )}</span>
+              <span class="theme-icon-dark">${Icons.get(
+                'moon',
+                'w-5 h-5'
+              )}</span>
               <span class="theme-text">Farbschema</span>
             </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
