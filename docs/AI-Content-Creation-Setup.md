@@ -210,6 +210,41 @@ Die Chemie ist die Wissenschaft der Stoffumwandlung.
 | Mermaid-Diagramme    | Claude Opus 4   | Bestes Verständnis       |
 | Quellenextraktion    | Beide           | Pattern-Erkennung        |
 
+### Vollständiger Prompt für Content-Generierung (Copy-Paste)
+
+Diesen Prompt im Copilot Agent Mode (VS Code) verwenden:
+
+````text
+Generiere Lerninhalte aus der Material-Datei:
+studies-material/bsc-ernaehrungswissenschaften/[MODUL]/[LECTURE].md
+
+Zielordner:
+content/bsc-ernaehrungswissenschaften/[MODUL]/[LECTURE]/
+
+SCHRITT 1 - lecture.md erstellen:
+- Extrahiere "Titel:" und "Link:" vom Anfang der Material-Datei
+- Erstelle sources Array mit id, title, url, type
+- Füge topic, description, estimatedTime hinzu
+
+SCHRITT 2 - lecture-items/ erstellen:
+- Teile den Inhalt in logische Lerneinheiten (01-XX.md, 02-XX.md, ...)
+- Für jeden Abschnitt mit [cite: X-Y] Markierungen:
+  - Füge sourceRefs mit sourceId und pages hinzu
+  - Entferne [cite_start] und [cite: X-Y] aus dem Text
+- Nach jedem Themenblock: self-assessment-mc einfügen
+- Verwende Templates aus docs/CONTENT_TEMPLATES.md
+
+SCHRITT 3 - questions/ erstellen:
+- 10-15 Quiz-Fragen basierend auf dem Inhalt
+- Mix aus multiple-choice und multiple-choice-multiple
+- correctAnswer MUSS EXAKT mit einer Option übereinstimmen
+
+SCHRITT 4 - Validieren:
+- YAML-Listen mit - (dash), nie * (asterisk)
+- Dateien nummeriert (01-, 02-, ...)
+- node generate-content-list.js ausführen
+````
+
 ---
 
 ## Video-Transkription mit Whisper

@@ -61,11 +61,57 @@ Use conventional commit format:
 
 **For content rules, see:** [docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md)
 
+**For AI content generation, see:** [docs/AI-Content-Creation-Setup.md](docs/AI-Content-Creation-Setup.md)
+
 **Quick rules:**
 - YAML lists use `-` (dash), NEVER `*` (asterisk)
 - `correctAnswer` must exactly match an option
 - Files numbered `NN-name.md` for ordering
 - Always validate before committing
+
+### Content Generation from Study Materials
+
+When generating content from `studies-material/` files:
+
+1. **Extract sources** from material file header:
+
+   ```markdown
+   Titel: "Vorlesungsfolien Kapitel 1"
+   Link: https://moodle.univie.ac.at/path/to/file.pdf
+   ```
+
+2. **Add sources to `lecture.md`:**
+
+   ```yaml
+   sources:
+     - id: 'vorlesung-k1'
+       title: 'Vorlesungsfolien Kapitel 1'
+       url: 'https://moodle.univie.ac.at/...'
+       type: 'pdf'
+   ```
+
+3. **Process citations** `[cite_start]...[cite: X-Y]` → add `sourceRefs` to items:
+
+   ```yaml
+   sourceRefs:
+     - sourceId: 'vorlesung-k1'
+       pages: '23-25'
+   ```
+
+4. **Remove citation markers** from final content (keep text, remove `[cite_start]` and `[cite: X-Y]`)
+
+### Content File Structure
+
+```text
+studies-material/{studyId}/NN-modul/lecture.md  → Source with citations
+                ↓ generates ↓
+content/{studyId}/NN-modul/NN-lecture/
+├── lecture.md              → sources array
+├── lecture-items/
+│   └── 01-topic.md         → sourceRefs array
+└── questions/
+    └── 01-question.md
+```
 
 ## Adding New Views
 
