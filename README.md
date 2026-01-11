@@ -20,10 +20,16 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 - 📊 Progress Tracking mit Badges und Statistiken
 - 💾 Fortschritt-Backup & Restore
 - 🔍 Globale Suche über alle Inhalte
-- 📱 PWA – installierbar als Offline-App
+- 📱 PWA – installierbar als Offline-App mit Push-Benachrichtigungen
 - 👆 Swipe-Gesten für mobile Navigation
 - 🗺️ Studienstruktur-Map zur Übersicht
 - 🌓 Dark Mode Support
+
+## 📱 Mobile Installation
+
+Die App kann auf dem Smartphone installiert werden und sendet Push-Benachrichtigungen bei ablaufenden Achievements.
+
+→ [docs/MOBILE_INSTALLATION.md](docs/MOBILE_INSTALLATION.md) - Installationsanleitung für Android & iOS
 
 ## Content Development
 

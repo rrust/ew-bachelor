@@ -76,16 +76,11 @@ async function showAlertNotification(alerts) {
     body = alerts.expiringSoon.map((a) => a.title).join(', ');
   }
 
-  console.log('[Notifications] Creating notification:', { title, body, icon });
-  console.log('[Notifications] SW in navigator:', 'serviceWorker' in navigator);
-  console.log('[Notifications] SW controller:', navigator.serviceWorker?.controller);
-
   // Try Service Worker notification first (required for Android PWA)
   if ('serviceWorker' in navigator) {
     try {
       const registration = await navigator.serviceWorker.ready;
-      console.log('[Notifications] SW registration ready:', registration);
-      
+
       if (registration.showNotification) {
         await registration.showNotification(title, {
           body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
@@ -96,15 +91,11 @@ async function showAlertNotification(alerts) {
           vibrate: [200, 100, 200],
           data: { url: '#/alerts' }
         });
-        console.log('[Notifications] SW notification shown successfully');
         localStorage.setItem('lastAlertNotification', today);
         return;
       }
     } catch (swError) {
-      console.log(
-        '[Notifications] SW notification failed, trying fallback:',
-        swError
-      );
+      console.warn('[Notifications] SW notification failed:', swError);
     }
   }
 
@@ -164,23 +155,18 @@ async function updateAppBadge(count) {
  * - Show notification if needed and permission granted
  */
 async function initNotifications() {
-  console.log('[Notifications] Initializing...');
-
   // Wait a moment for alerts module to be ready
   if (!window.getAchievementAlerts) {
-    console.log('[Notifications] Alerts module not ready');
     return;
   }
 
   const alerts = window.getAchievementAlerts();
-  console.log('[Notifications] Found', alerts.total, 'alerts');
 
   // Update app badge
   await updateAppBadge(alerts.total);
 
   // Show notification if there are alerts and permission is granted
   if (alerts.total > 0) {
-    console.log('[Notifications] Permission status:', Notification.permission);
     showAlertNotification(alerts);
   }
 }
@@ -342,7 +328,7 @@ async function testNotification() {
   // Check Service Worker
   const hasSW = 'serviceWorker' in navigator;
   results.push(`Service Worker: ${hasSW ? '✅' : '❌'}`);
-  
+
   if (hasSW) {
     const reg = await navigator.serviceWorker.getRegistration();
     results.push(`SW registriert: ${reg ? '✅' : '❌'}`);
