@@ -948,7 +948,7 @@ function renderStreakSection() {
   if (!window.getStreakDisplayInfo || !window.hasCompletedTests) {
     return '';
   }
-  
+
   // Check if streak is available
   if (!window.hasCompletedTests()) {
     return `
@@ -963,23 +963,25 @@ function renderStreakSection() {
       </div>
     `;
   }
-  
+
   const info = window.getStreakDisplayInfo();
-  
+
   // Build streak progress bar
   const progressPercent = (info.current / info.max) * 100;
-  
+
   let actionButton = '';
   let cardClass = '';
   let statusIcon = '';
-  
+
   switch (info.status) {
     case 'active':
-      cardClass = 'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
+      cardClass =
+        'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
       statusIcon = Icons.get('checkCircle', 'w-5 h-5', 'text-green-500');
       break;
     case 'pending':
-      cardClass = 'bg-orange-50 dark:bg-orange-900/20 border-orange-300 dark:border-orange-700';
+      cardClass =
+        'bg-orange-50 dark:bg-orange-900/20 border-orange-300 dark:border-orange-700';
       actionButton = `
         <button
           onclick="openStreakChallengeModal()"
@@ -991,7 +993,8 @@ function renderStreakSection() {
       `;
       break;
     case 'at-risk':
-      cardClass = 'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+      cardClass =
+        'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
       actionButton = `
         <button
           onclick="openStreakRescueModal()"
@@ -1003,7 +1006,8 @@ function renderStreakSection() {
       `;
       break;
     case 'lost':
-      cardClass = 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
+      cardClass =
+        'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
       actionButton = `
         <button
           onclick="openStreakChallengeModal()"
@@ -1015,7 +1019,7 @@ function renderStreakSection() {
       `;
       break;
   }
-  
+
   return `
     <div class="border ${cardClass} rounded-lg p-4 mb-6">
       <div class="flex items-start justify-between gap-4 mb-3">
@@ -1023,11 +1027,17 @@ function renderStreakSection() {
           <span class="${info.color}">${Icons.get('fire', 'w-8 h-8')}</span>
           <div>
             <div class="flex items-center gap-2">
-              <span class="text-2xl font-bold ${info.color}">${info.current}</span>
-              <span class="text-sm text-gray-500 dark:text-gray-400">/ ${info.max} Tage</span>
+              <span class="text-2xl font-bold ${info.color}">${
+    info.current
+  }</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">/ ${
+                info.max
+              } Tage</span>
               ${statusIcon}
             </div>
-            <p class="text-sm text-gray-600 dark:text-gray-400">${info.statusText}</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">${
+              info.statusText
+            }</p>
           </div>
         </div>
         ${actionButton}
@@ -1036,16 +1046,24 @@ function renderStreakSection() {
       <!-- Progress bar -->
       <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
         <div 
-          class="h-2 rounded-full transition-all duration-500 ${info.current > 0 ? 'bg-gradient-to-r from-orange-400 to-orange-600' : 'bg-gray-300 dark:bg-gray-600'}"
+          class="h-2 rounded-full transition-all duration-500 ${
+            info.current > 0
+              ? 'bg-gradient-to-r from-orange-400 to-orange-600'
+              : 'bg-gray-300 dark:bg-gray-600'
+          }"
           style="width: ${progressPercent}%"
         ></div>
       </div>
       
-      ${info.longestStreak > 0 ? `
+      ${
+        info.longestStreak > 0
+          ? `
         <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
           Längster Streak: ${info.longestStreak} Tage • Gesamt: ${info.totalDays} Tage
         </p>
-      ` : ''}
+      `
+          : ''
+      }
     </div>
   `;
 }
@@ -1059,13 +1077,18 @@ function openStreakChallengeModal() {
     alert('Keine Fragen verfügbar. Schließe erst einen Test ab.');
     return;
   }
-  
+
   window.currentStreakChallenge = {
     ...questionData,
     mode: 'normal'
   };
-  
-  showStreakQuestionModal(questionData.question, 'Tägliche Streak-Challenge', 1, 1);
+
+  showStreakQuestionModal(
+    questionData.question,
+    'Tägliche Streak-Challenge',
+    1,
+    1
+  );
 }
 
 /**
@@ -1077,16 +1100,16 @@ function openStreakRescueModal() {
     alert('Nicht genügend Fragen verfügbar.');
     return;
   }
-  
+
   window.streakRescueQuestions = questions;
   window.streakRescueIndex = 0;
   window.currentStreakChallenge = {
     ...questions[0],
     mode: 'rescue'
   };
-  
+
   showStreakQuestionModal(
-    questions[0].question, 
+    questions[0].question,
     'Streak retten - Frage 1/3',
     1,
     window.STREAK_RESCUE_TOTAL
@@ -1099,33 +1122,39 @@ function openStreakRescueModal() {
 function showStreakQuestionModal(question, title, current, total) {
   const modal = document.getElementById('streak-challenge-modal');
   if (!modal) return;
-  
+
   const content = document.getElementById('streak-challenge-content');
   if (!content) return;
-  
+
   const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
-  
+
   content.innerHTML = `
     <div class="mb-4">
       <div class="flex items-center justify-between mb-2">
         <span class="text-sm text-gray-500 dark:text-gray-400">${title}</span>
         <span class="text-sm text-gray-500 dark:text-gray-400">${current}/${total}</span>
       </div>
-      <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-4">${question.question}</h3>
+      <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-4">${
+        question.question
+      }</h3>
       <div class="space-y-2" id="streak-options">
-        ${shuffledOptions.map((option) => `
+        ${shuffledOptions
+          .map(
+            (option) => `
           <button
             onclick="checkStreakAnswer('${escapeHtml(option)}')"
             class="w-full text-left p-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
           >
             ${option}
           </button>
-        `).join('')}
+        `
+          )
+          .join('')}
       </div>
     </div>
     <div id="streak-result" class="hidden"></div>
   `;
-  
+
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
 }
@@ -1136,44 +1165,58 @@ function showStreakQuestionModal(question, title, current, total) {
 function checkStreakAnswer(selectedAnswer) {
   const challenge = window.currentStreakChallenge;
   if (!challenge) return;
-  
+
   const question = challenge.question;
   const isCorrect = selectedAnswer === question.correctAnswer;
-  
+
   const resultDiv = document.getElementById('streak-result');
   const optionsDiv = document.getElementById('streak-options');
-  
+
   if (!resultDiv || !optionsDiv) return;
-  
+
   // Disable and highlight options
   optionsDiv.querySelectorAll('button').forEach((btn) => {
     btn.disabled = true;
     btn.classList.add('cursor-not-allowed', 'opacity-60');
-    
+
     if (btn.textContent.trim() === question.correctAnswer) {
       btn.classList.remove('border-gray-300', 'dark:border-gray-600');
-      btn.classList.add('border-green-500', 'bg-green-50', 'dark:bg-green-900/20');
+      btn.classList.add(
+        'border-green-500',
+        'bg-green-50',
+        'dark:bg-green-900/20'
+      );
     } else if (btn.textContent.trim() === selectedAnswer && !isCorrect) {
       btn.classList.remove('border-gray-300', 'dark:border-gray-600');
       btn.classList.add('border-red-500', 'bg-red-50', 'dark:bg-red-900/20');
     }
   });
-  
+
   resultDiv.classList.remove('hidden');
-  
+
   if (challenge.mode === 'rescue') {
     // Rescue mode
     const result = window.processRescueAnswer(isCorrect);
-    
+
     if (result.rescued === null) {
       // More questions to go
       resultDiv.innerHTML = `
-        <div class="p-4 rounded-lg ${isCorrect ? 'bg-green-100 dark:bg-green-900/30' : 'bg-red-100 dark:bg-red-900/30'} mb-4">
-          <p class="font-medium ${isCorrect ? 'text-green-700 dark:text-green-300' : 'text-red-700 dark:text-red-300'}">
+        <div class="p-4 rounded-lg ${
+          isCorrect
+            ? 'bg-green-100 dark:bg-green-900/30'
+            : 'bg-red-100 dark:bg-red-900/30'
+        } mb-4">
+          <p class="font-medium ${
+            isCorrect
+              ? 'text-green-700 dark:text-green-300'
+              : 'text-red-700 dark:text-red-300'
+          }">
             ${isCorrect ? 'Richtig!' : 'Leider falsch.'}
           </p>
           <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            Richtig: ${result.correctCount} / Benötigt: ${window.STREAK_RESCUE_REQUIRED}
+            Richtig: ${result.correctCount} / Benötigt: ${
+        window.STREAK_RESCUE_REQUIRED
+      }
           </p>
         </div>
         <button
@@ -1223,7 +1266,7 @@ function checkStreakAnswer(selectedAnswer) {
   } else {
     // Normal challenge
     const result = window.completeStreakChallenge(isCorrect);
-    
+
     if (isCorrect) {
       resultDiv.innerHTML = `
         <div class="p-4 rounded-lg bg-green-100 dark:bg-green-900/30 mb-4">
@@ -1257,7 +1300,7 @@ function checkStreakAnswer(selectedAnswer) {
       `;
     }
   }
-  
+
   // Refresh alerts view after closing
   window.currentStreakChallenge.needsRefresh = true;
 }
@@ -1269,13 +1312,13 @@ function continueStreakRescue() {
   window.streakRescueIndex++;
   const questions = window.streakRescueQuestions;
   const idx = window.streakRescueIndex;
-  
+
   if (idx < questions.length) {
     window.currentStreakChallenge = {
       ...questions[idx],
       mode: 'rescue'
     };
-    
+
     showStreakQuestionModal(
       questions[idx].question,
       `Streak retten - Frage ${idx + 1}/${window.STREAK_RESCUE_TOTAL}`,
@@ -1294,13 +1337,13 @@ function closeStreakChallengeModal() {
     modal.classList.add('hidden');
     document.body.style.overflow = '';
   }
-  
+
   // Refresh if needed
   if (window.currentStreakChallenge?.needsRefresh) {
     renderAlertsView();
     updateStreakDisplay();
   }
-  
+
   window.currentStreakChallenge = null;
   window.streakRescueQuestions = null;
   window.streakRescueIndex = 0;
@@ -1312,12 +1355,16 @@ function closeStreakChallengeModal() {
 function updateStreakDisplay() {
   const badge = document.querySelector('#streak-badge');
   if (!badge) return;
-  
-  if (!window.getStreakDisplayInfo || !window.hasCompletedTests || !window.hasCompletedTests()) {
+
+  if (
+    !window.getStreakDisplayInfo ||
+    !window.hasCompletedTests ||
+    !window.hasCompletedTests()
+  ) {
     badge.classList.add('hidden');
     return;
   }
-  
+
   const info = window.getStreakDisplayInfo();
   badge.classList.remove('hidden');
   badge.innerHTML = `${info.current}`;

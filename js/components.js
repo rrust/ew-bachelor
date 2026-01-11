@@ -155,8 +155,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   const showGreeting = view !== 'search';
 
   // Get streak info for display
-  const streakInfo = window.getStreakDisplayInfo ? window.getStreakDisplayInfo() : null;
-  const showStreak = streakInfo && window.hasCompletedTests && window.hasCompletedTests();
+  const streakInfo = window.getStreakDisplayInfo
+    ? window.getStreakDisplayInfo()
+    : null;
+  const showStreak =
+    streakInfo && window.hasCompletedTests && window.hasCompletedTests();
 
   header.innerHTML = `
     <div class="container mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
@@ -184,16 +187,29 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
         >DEV</span>
         <!-- Streak Display -->
-        ${showStreak ? `
+        ${
+          showStreak
+            ? `
         <button
           onclick="window.location.hash='#/alerts'"
-          class="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200"
+          class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-orange-500"
           title="${streakInfo.statusText}"
         >
-          <span class="${streakInfo.color}">${Icons.get('fire', 'w-4 h-4')}</span>
-          <span id="streak-badge${idSuffix}" class="text-sm font-bold ${streakInfo.color}">${streakInfo.current}</span>
+          ${Icons.get('fire')}
+          <span 
+            id="streak-badge${idSuffix}" 
+            class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full ${
+              streakInfo.current >= 5
+                ? 'bg-green-500'
+                : streakInfo.current >= 1
+                ? 'bg-yellow-500'
+                : 'bg-red-500'
+            }"
+          >${streakInfo.current}</span>
         </button>
-        ` : ''}
+        `
+            : ''
+        }
         <!-- Alerts Icon (Bell) -->
         <button
           id="nav-alerts${idSuffix}"
