@@ -8,17 +8,16 @@ Dieser Leitfaden richtet sich an Content-Ersteller, die Lernmaterialien für die
 
 1. **Template kopieren** aus [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md)
 2. **Datei erstellen** in `content/{studyId}/XX-modul/XX-vorlesung/lecture-items/` oder `questions/`
-3. **Validieren** mit `validate-content.html` im Browser (unter "Tools")
+3. **Commit & Push** → GitHub Action generiert automatisch alle JSON-Dateien!
 
 **Wichtigste Regeln:**
 - ✅ YAML-Listen mit `-` (dash), NIEMALS `*` (asterisk)
 - ✅ `correctAnswer` muss EXAKT mit Option übereinstimmen
 - ✅ Dateien mit `NN-` prefix nummerieren (01-, 02-, etc.)
-- ✅ `content-list.json` wird automatisch generiert (GitHub Action)
+- ✅ Alle JSON-Dateien werden **automatisch** generiert (keine Scripts ausführen nötig!)
 
-**Bei Problemen:**
-- Validator zeigt Fehler mit Zeilennummer → Im Editor fixen
-- YAML-Syntax prüfen (Einrückung, Anführungszeichen)
+**Validieren (optional, aber empfohlen):**
+- Im Browser: Tools → "Inhalte validieren"
 - Markdown linten: `npx markdownlint-cli2 "**/*.md"`
 
 ---
@@ -64,7 +63,9 @@ content/
             └── 03-frage-thema-c.md
 ```
 
-**✅ Vollautomatisch:** Sowohl `content-list.json` als auch `modules.json` werden automatisch generiert, wenn du auf `main` pushst (GitHub Action). Lokal kannst du `node generate-content-list.js` ausführen.
+**✅ Vollautomatisch:** Alle generierten Dateien (`content-list.json`, `modules.json`, `lecture-bundle.json`, `search-index.json`) werden automatisch erstellt, wenn du auf `main` pushst (GitHub Action). **Du musst keine Scripts ausführen!**
+
+> **Für Entwickler:** Lokal kannst du `npm run build` ausführen, um alle Dateien zu generieren.
 
 ### Struktur-Prinzipien
 
@@ -450,29 +451,32 @@ git commit -m "content: add new lecture"
 git push
 ```
 
-Die GitHub Action generiert automatisch `content-list.json` und `modules.json`.
+Die GitHub Action generiert automatisch alle JSON-Dateien:
+- `content-list.json` und `modules.json` (Modul-Übersicht)
+- `lecture-bundle.json` (Vorlesungs-Bundles für Lazy Loading)
+- `search-index.json` (Such-Index)
 
-**Lokal testen:** Vor dem Push kannst du `node generate-content-list.js` ausführen.
+> **Du musst nichts weiter tun!** Die Action commited die generierten Dateien automatisch.
 
-#### 6. Validieren
+#### 6. Validieren (optional)
 
-Öffne `validate-content.html` und überprüfe alle Dateien auf Fehler.
+Im Browser: Öffne die App → Tools → "Inhalte validieren"
 
 ### Schritt-für-Schritt: Neues Lern-Item hinzufügen
 
 1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `lecture-items/` an
 2. **Neue Datei erstellen:** z.B. `07-neues-konzept.md`
 3. **Inhalt hinzufügen:** Verwende passende Vorlage aus CONTENT_TEMPLATES.md
-4. **Validieren:** Überprüfe mit `validate-content.html`
-5. **Commit & Push:** Die Action aktualisiert automatisch die JSON-Dateien
+4. **Commit & Push:** Die Action aktualisiert automatisch die JSON-Dateien
+5. **Validieren (optional):** Tools → "Inhalte validieren" im Browser
 
 ### Schritt-für-Schritt: Neue Quiz-Frage hinzufügen
 
 1. **Nächste Nummer finden:** Schau dir die vorhandenen Dateien in `questions/` an
 2. **Neue Datei erstellen:** z.B. `08-neue-frage.md`
 3. **Frage schreiben:** Verwende die Multiple-Choice-Vorlage
-4. **Validieren:** Überprüfe mit `validate-content.html`
-5. **Commit & Push:** Die Action aktualisiert automatisch die JSON-Dateien
+4. **Commit & Push:** Die Action aktualisiert automatisch die JSON-Dateien
+5. **Validieren (optional):** Tools → "Inhalte validieren" im Browser
 
 ### Inhalte umordnen
 
@@ -486,11 +490,7 @@ mv lecture-items/03-altes-item.md lecture-items/02-altes-item.md
 mv lecture-items/02-anderes-item.md lecture-items/03-anderes-item.md
 ```
 
-Nach dem Umbenennen: **Manifest neu generieren!**
-
-```bash
-npm run generate-manifest
-```
+Nach dem Umbenennen: **Einfach commit & push!** Die Action aktualisiert automatisch alle Dateien.
 
 ### Neues Modul erstellen
 
@@ -522,13 +522,9 @@ npm run generate-manifest
 
 3. **Vorlesungsdateien erstellen** (siehe Schritt-für-Schritt-Anleitung oben)
 
-4. **Manifest generieren:**
+4. **Commit & Push** → Die Action generiert automatisch alle JSON-Dateien
 
-   ```bash
-   node generate-content-list.js
-   ```
-
-5. **Validieren** mit `validate-content.html`
+5. **Validieren** mit Tools → "Inhalte validieren" im Browser
 
 ---
 

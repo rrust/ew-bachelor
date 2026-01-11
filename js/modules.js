@@ -2,24 +2,46 @@
 
 /**
  * Calculates estimated time for a module (sum of all lectures and quizzes)
+ * Works with both full content and lazy-loading mode
  * @param {string} moduleId - Module ID
  * @param {Object} APP_CONTENT - Content object
  * @returns {number} Total estimated time in minutes
  */
 function getModuleEstimatedTime(moduleId, APP_CONTENT) {
   const module = APP_CONTENT[moduleId];
-  if (!module || !module.lectures) {
-    return 0;
+
+  // First, try from loaded content (full mode)
+  if (module && module.lectures) {
+    let totalTime = 0;
+    let hasLoadedLectures = false;
+
+    for (const lectureId in module.lectures) {
+      const lecture = module.lectures[lectureId];
+      if (lecture.estimatedTime !== undefined) {
+        hasLoadedLectures = true;
+        totalTime += lecture.estimatedTime || 0;
+        totalTime += lecture.quizEstimatedTime || 0;
+      }
+    }
+
+    if (hasLoadedLectures) {
+      return totalTime;
+    }
   }
 
-  let totalTime = 0;
-  for (const lectureId in module.lectures) {
-    const lecture = module.lectures[lectureId];
-    totalTime += lecture.estimatedTime || 0;
-    totalTime += lecture.quizEstimatedTime || 0;
+  // In lazy-loading mode, try to get from manifest
+  if (window.DownloadManager) {
+    const settings = window.getAppSettings ? window.getAppSettings() : {};
+    const studyId = settings.activeStudyId;
+    const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
+
+    if (moduleMeta && moduleMeta.lectures) {
+      // Estimate: 15 min per lecture as fallback
+      return moduleMeta.lectures.length * 15;
+    }
   }
 
-  return totalTime;
+  return 0;
 }
 
 /**
@@ -41,6 +63,7 @@ function formatEstimatedTime(minutes) {
 
 /**
  * Calculates statistics for a module (quiz completion, average score, badge)
+ * Works with both full content and lazy-loading mode
  * @param {string} moduleId - Module ID
  * @param {Object} APP_CONTENT - Content object
  * @param {Function} getUserProgress - Function to get user progress
@@ -50,23 +73,39 @@ function getModuleStats(moduleId, APP_CONTENT, getUserProgress) {
   const module = APP_CONTENT[moduleId];
   const progress = getUserProgress();
 
-  if (!module || !module.lectures) {
-    return {
-      totalQuizzes: 0,
-      completedQuizzes: 0,
-      averageScore: 0,
-      badge: 'none'
-    };
-  }
+  // Get module metadata from MODULES array for lecture count
+  const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
+  const lectureIds = moduleMeta?.lectures || [];
 
+  // In lazy-loading mode, we may not have lecture data loaded
+  // So we count quizzes from user progress instead
   let totalQuizzes = 0;
   let completedQuizzes = 0;
   let totalScore = 0;
 
-  for (const lectureId in module.lectures) {
-    const lecture = module.lectures[lectureId];
-    if (lecture.quiz && lecture.quiz.length > 0) {
-      totalQuizzes++;
+  // First, try to get stats from loaded content (full mode)
+  if (module && module.lectures) {
+    for (const lectureId in module.lectures) {
+      const lecture = module.lectures[lectureId];
+      if (lecture.quiz && lecture.quiz.length > 0) {
+        totalQuizzes++;
+        const lectureProgress =
+          progress?.modules?.[moduleId]?.lectures?.[lectureId];
+        if (lectureProgress && lectureProgress.score !== undefined) {
+          completedQuizzes++;
+          totalScore += lectureProgress.score;
+        }
+      }
+    }
+  }
+
+  // If no content loaded (lazy mode), estimate from manifest and progress
+  if (totalQuizzes === 0 && lectureIds.length > 0) {
+    // Assume each lecture has a quiz (will be refined when content loads)
+    totalQuizzes = lectureIds.length;
+
+    // Count completed from progress
+    for (const lectureId of lectureIds) {
       const lectureProgress =
         progress?.modules?.[moduleId]?.lectures?.[lectureId];
       if (lectureProgress && lectureProgress.score !== undefined) {
@@ -301,6 +340,7 @@ function createModuleCard(
 
 /**
  * Displays the lecture list for a module
+ * Works with both full content and lazy-loading mode
  * @param {string} moduleId - Module ID
  * @param {Object} APP_CONTENT - Content object
  * @param {Array} MODULES - Module metadata array
@@ -312,7 +352,7 @@ function createModuleCard(
  * @param {Function} showLectureOverview - Function to show overview
  * @param {Function} loadModuleCards - Function to reload module cards when navigating back
  */
-function displayLecturesForModule(
+async function displayLecturesForModule(
   moduleId,
   APP_CONTENT,
   MODULES,
@@ -326,14 +366,20 @@ function displayLecturesForModule(
 ) {
   const module = APP_CONTENT[moduleId];
   const progress = getUserProgress();
+  const moduleData = MODULES.find((m) => m.id === moduleId);
 
-  if (!module || !module.lectures) {
+  // Get lecture IDs from module metadata (works in lazy mode)
+  const lectureIds = moduleData?.lectures || [];
+
+  if (
+    lectureIds.length === 0 &&
+    (!module || !module.lectures || Object.keys(module.lectures).length === 0)
+  ) {
     alert('Für dieses Modul wurden keine Vorlesungen gefunden.');
     return;
   }
 
   // Update URL
-  const moduleData = MODULES.find((m) => m.id === moduleId);
   updateURL(`/module/${moduleId}`, moduleData?.title || 'Module');
 
   // Hide player and overview, show lecture list
@@ -376,9 +422,34 @@ function displayLecturesForModule(
     });
   }
 
-  for (const lectureId in module.lectures) {
-    const lecture = module.lectures[lectureId];
-    if (lecture.items.length === 0) continue; // Don't show empty lectures
+  // Get settings for manifest lookup
+  const settings = window.getAppSettings ? window.getAppSettings() : {};
+  const studyId = settings.activeStudyId;
+
+  // Determine which lectures to show
+  // In lazy mode: use lectureIds from module metadata
+  // In full mode: use loaded lectures from APP_CONTENT
+  const lecturesToShow =
+    lectureIds.length > 0 ? lectureIds : Object.keys(module?.lectures || {});
+
+  for (const lectureId of lecturesToShow) {
+    // Get lecture data from APP_CONTENT (if loaded) or from manifest
+    let lecture = module?.lectures?.[lectureId];
+    let lectureInfo = null;
+
+    // In lazy mode, get info from manifest
+    if (!lecture || !lecture.items || lecture.items.length === 0) {
+      if (window.DownloadManager) {
+        lectureInfo = await window.DownloadManager.getLectureInfo(
+          studyId,
+          moduleId,
+          lectureId
+        );
+      }
+    }
+
+    // Skip if no data at all
+    if (!lecture && !lectureInfo) continue;
 
     const lectureProgress =
       progress?.modules?.[moduleId]?.lectures?.[lectureId];
@@ -387,15 +458,29 @@ function displayLecturesForModule(
     card.className =
       'bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col min-h-[280px] border border-gray-200 dark:border-gray-700';
 
+    // Get display values - prefer loaded data, fall back to manifest
+    const topic =
+      lecture?.topic ||
+      lectureInfo?.topic ||
+      lectureId.replace(/^\d+-/, '').replace(/-/g, ' ');
+    const description = lecture?.description || lectureInfo?.description || '';
+    const lectureItemCount =
+      lecture?.items?.length || lectureInfo?.itemCount || 0;
+    const quizQuestionCount =
+      lecture?.quiz?.length || lectureInfo?.quizCount || 0;
+    const lectureTime =
+      lecture?.estimatedTime || lectureInfo?.estimatedTime || 0;
+    const quizTime =
+      lecture?.quizEstimatedTime || Math.round(quizQuestionCount * 2);
+    const hasQuiz = quizQuestionCount > 0;
+
     // Card Header with badge
     let contentHTML = `<div class="px-5 py-4 border-b dark:border-gray-700">`;
     contentHTML += `<div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-lg text-gray-900 dark:text-gray-100 flex-grow pr-2">${
-                lecture.topic || lectureId.replace(/-/g, ' ')
-              }</h3>`;
+              <h3 class="font-bold text-lg text-gray-900 dark:text-gray-100 flex-grow pr-2">${topic}</h3>`;
 
     // Add quiz badge in header if available
-    if (lecture.quiz && lecture.quiz.length > 0) {
+    if (hasQuiz) {
       let badgeEmoji = '';
       let tooltipText = '';
 
@@ -416,11 +501,6 @@ function displayLecturesForModule(
     contentHTML += `</div>`;
 
     // Content counts in header (lecture items and quiz questions)
-    const lectureItemCount = lecture.items ? lecture.items.length : 0;
-    const quizQuestionCount = lecture.quiz ? lecture.quiz.length : 0;
-    const lectureTime = lecture.estimatedTime || 0;
-    const quizTime = lecture.quizEstimatedTime || 0;
-
     if (lectureItemCount > 0 || quizQuestionCount > 0) {
       contentHTML += `<div class="flex items-center space-x-3 text-xs text-gray-500 dark:text-gray-400">`;
       if (lectureItemCount > 0) {
@@ -445,12 +525,12 @@ function displayLecturesForModule(
 
     // Card Content - Description
     contentHTML += `<div class="flex-grow px-5 py-4">`;
-    if (lecture.description) {
-      contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">${lecture.description}</p>`;
+    if (description) {
+      contentHTML += `<p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">${description}</p>`;
     }
     contentHTML += `</div>`;
 
-    // Card Footer - Action buttons with lecture number
+    // Card Footer - Action buttons with lecture number and download status
     // Extract lecture number from ID (e.g., "01-" from "01-grundlagen-zellbiologie")
     const lectureNumber = lectureId.match(/^(\d+)-/)?.[1] || '';
 
@@ -463,12 +543,12 @@ function displayLecturesForModule(
       contentHTML += '<div></div>'; // Empty div for spacing
     }
 
-    // Action buttons on the right
-    contentHTML += '<div class="flex items-center space-x-2">';
+    // Action buttons on the right - will be updated with download status
+    contentHTML += `<div class="flex items-center space-x-2 lecture-actions" data-module="${moduleId}" data-lecture="${lectureId}">`;
     contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesung</button>`;
     contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Übersicht</button>`;
 
-    if (lecture.quiz && lecture.quiz.length > 0) {
+    if (hasQuiz) {
       contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200">Test</button>`;
     }
 
@@ -495,8 +575,123 @@ function displayLecturesForModule(
       showLectureOverview(modId, lecId);
     } else if (action === 'start-quiz') {
       startQuiz(modId, lecId);
+    } else if (action === 'download-lecture') {
+      handleLectureDownload(modId, lecId, button);
+    } else if (action === 'sync-lecture') {
+      handleLectureDownload(modId, lecId, button);
     }
   });
+}
+
+/**
+ * Handle lecture download with progress UI
+ * @param {string} moduleId - Module ID
+ * @param {string} lectureId - Lecture ID
+ * @param {HTMLElement} button - The button that was clicked
+ */
+async function handleLectureDownload(moduleId, lectureId, button) {
+  if (!window.DownloadManager) {
+    console.error('[Modules] DownloadManager not available');
+    return;
+  }
+
+  const settings = window.getAppSettings ? window.getAppSettings() : {};
+  const studyId = settings.activeStudyId || 'bsc-ernaehrungswissenschaften';
+
+  // Disable button and show progress
+  const originalText = button.textContent;
+  button.disabled = true;
+  button.classList.remove(
+    'bg-yellow-500',
+    'hover:bg-yellow-600',
+    'bg-orange-500',
+    'hover:bg-orange-600'
+  );
+  button.classList.add('bg-gray-400');
+
+  try {
+    const success = await window.DownloadManager.download(
+      studyId,
+      moduleId,
+      lectureId,
+      (progress, message) => {
+        button.textContent = `${progress}%`;
+      }
+    );
+
+    if (success) {
+      // Update the button to show lecture is ready
+      button.textContent = 'Vorlesung';
+      button.classList.remove('bg-gray-400');
+      button.classList.add('bg-blue-500', 'hover:bg-blue-600');
+      button.dataset.action = 'start-lecture';
+      button.disabled = false;
+    } else {
+      // Restore original state on failure
+      button.textContent = originalText;
+      button.classList.remove('bg-gray-400');
+      button.classList.add('bg-yellow-500', 'hover:bg-yellow-600');
+      button.disabled = false;
+      alert('Download fehlgeschlagen. Bitte versuche es erneut.');
+    }
+  } catch (e) {
+    console.error('[Modules] Download error:', e);
+    button.textContent = originalText;
+    button.classList.remove('bg-gray-400');
+    button.classList.add('bg-yellow-500', 'hover:bg-yellow-600');
+    button.disabled = false;
+  }
+}
+
+/**
+ * Update download status indicators on lecture cards
+ * Should be called after rendering lecture cards
+ * @param {string} studyId - Study ID
+ */
+async function updateLectureDownloadStatus(studyId) {
+  if (!window.DownloadManager) return;
+
+  const actionContainers = document.querySelectorAll('.lecture-actions');
+
+  for (const container of actionContainers) {
+    const moduleId = container.dataset.module;
+    const lectureId = container.dataset.lecture;
+
+    const status = await window.DownloadManager.getStatus(
+      studyId,
+      moduleId,
+      lectureId
+    );
+    const lectureBtn = container.querySelector('[data-action="start-lecture"]');
+
+    if (!lectureBtn) continue;
+
+    if (status === 'not-downloaded') {
+      // Change to download button
+      lectureBtn.textContent = '⬇️ Download';
+      lectureBtn.dataset.action = 'download-lecture';
+      lectureBtn.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+      lectureBtn.classList.add('bg-yellow-500', 'hover:bg-yellow-600');
+
+      // Get size info
+      const info = await window.DownloadManager.getLectureInfo(
+        studyId,
+        moduleId,
+        lectureId
+      );
+      if (info && info.sizeKB) {
+        lectureBtn.title = `Größe: ~${info.sizeKB} KB`;
+      }
+    } else if (status === 'outdated') {
+      // Change to sync button
+      lectureBtn.textContent = '🔄 Sync';
+      lectureBtn.dataset.action = 'sync-lecture';
+      lectureBtn.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+      lectureBtn.classList.add('bg-orange-500', 'hover:bg-orange-600');
+      lectureBtn.title = 'Update verfügbar - klicken zum Synchronisieren';
+    }
+    // 'current' status keeps the default "Vorlesung" button
+  }
 }
 
 // Expose functions to global scope
@@ -504,5 +699,7 @@ window.ModulesModule = {
   getModuleStats,
   loadModuleCards,
   createModuleCard,
-  displayLecturesForModule
+  displayLecturesForModule,
+  updateLectureDownloadStatus,
+  handleLectureDownload
 };

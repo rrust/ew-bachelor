@@ -1,9 +1,14 @@
 {
   "name": "ew-bachelor",
   "version": "1.0.0",
-  "description": "Bachelor Ernährungswissenschaften Learning App",
+  "description": "Study App",
   "scripts": {
-    "generate-manifest": "node generate-content-list.js"
+    "generate:content-list": "node scripts/generate-content-list.js",
+    "generate:bundles": "node scripts/generate-lecture-bundles.js",
+    "generate:search-index": "node scripts/generate-search-index.js",
+    "validate:views": "node scripts/validate-views.js",
+    "validate:content": "node scripts/validate-content.js",
+    "build": "npm run generate:content-list && npm run generate:bundles && npm run generate:search-index"
   },
   "keywords": [
     "education",

@@ -1,0 +1,219 @@
+{
+  "moduleId": "01-ernaehrungslehre-grundlagen",
+  "lectureId": "01-grundlagen-zellbiologie",
+  "metadata": {
+    "topic": "Grundlagen der Zellbiologie",
+    "description": "Einführung in die Zellbiologie: Aufbau und Funktion von Zellen, wichtige Organellen, Zellmembran und ihre Bedeutung für die Ernährungswissenschaft. Grundlegende Konzepte von Makro- und Mikronährstoffen.",
+    "estimatedTime": 25,
+    "sources": []
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Grundlagen der Zellbiologie",
+      "content": "# Grundlagen der Zellbiologie\n\nIn dieser Vorlesung lernen Sie die grundlegenden Bausteine des Lebens kennen. Wir betrachten den Aufbau von Zellen, die wichtigsten Organellen und ihre Funktionen, sowie die Rolle der Zellmembran als selektive Barriere.\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Den Unterschied zwischen prokaryotischen und eukaryotischen Zellen erklären\n- Die wichtigsten Organellen einer Zelle und ihre Funktionen benennen\n- Die Struktur und Funktion der Zellmembran beschreiben\n- Makro- und Mikronährstoffe unterscheiden\n- Die Bedeutung dieser Grundlagen für die Ernährungswissenschaft verstehen",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "topic": "Grundlagen der Zellbiologie",
+      "content": "## Die Zelle: Baustein des Lebens\n\nDie Zelle ist die kleinste lebende Einheit aller Organismen. Man unterscheidet zwischen prokaryotischen Zellen (ohne Zellkern, z.B. Bakterien) und eukaryotischen Zellen (mit Zellkern, z.B. in Pflanzen, Tieren und Menschen).\n\n### Wichtige Organellen einer eukaryotischen Zelle\n\n* **Zellkern:** Enthält die Erbinformation (DNA) und steuert die Zellaktivitäten.\n* **Mitochondrien:** Die \"Kraftwerke\" der Zelle, verantwortlich für die Energieproduktion (ATP).\n* **Ribosomen:** Orte der Proteinsynthese.\n* **Endoplasmatisches Retikulum (ER):** Ein Netzwerk aus Membranen, beteiligt an der Protein- und Lipidsynthese.\n* **Golgi-Apparat:** Modifiziert, verpackt und transportiert Proteine.\n* **Lysosomen:** Verantwortlich für den Abbau von Abfallstoffen."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Was ist die Hauptfunktion der Mitochondrien?",
+      "options": [
+        "Proteinsynthese",
+        "Energiegewinnung (ATP-Produktion)",
+        "Speicherung von Erbinformation",
+        "Abbau von Abfallprodukten"
+      ],
+      "correctAnswer": "Energiegewinnung (ATP-Produktion)",
+      "content": "**Erklärung:** Mitochondrien sind die \"Kraftwerke\" der Zelle. In ihnen findet die Zellatmung statt, bei der aus Nährstoffen wie Glukose die universelle Energiewährung ATP (Adenosintriphosphat) gewonnen wird."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Welches Organell ist für die Verpackung und den Versand von Proteinen zuständig?",
+      "options": [
+        "Ribosom",
+        "Lysosom",
+        "Golgi-Apparat",
+        "Zellkern"
+      ],
+      "correctAnswer": "Golgi-Apparat",
+      "content": "**Erklärung:** Der Golgi-Apparat modifiziert, sortiert und verpackt Proteine und Lipide für den Transport zu anderen Zielen in der Zelle oder für die Sekretion aus der Zelle."
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=9pEbfXxOong",
+      "title": "Zellatmung und Mitochondrien",
+      "content": ""
+    },
+    {
+      "type": "image",
+      "url": "https://images.my.labster.com/1066cbea-a908-461d-b202-db9357feb22d/aerobic_cellular_respiration.de_DE.x512.png",
+      "alt": "Aerobe Zellatmung - Übersicht",
+      "caption": "Schematische Darstellung der aeroben Zellatmung in Mitochondrien",
+      "title": "Die aerobe Zellatmung",
+      "content": ""
+    },
+    {
+      "type": "mermaid-diagram",
+      "title": "Proteinsynthese: Von der DNA zum Protein",
+      "content": "```mermaid\ngraph TB\n    A[DNA im Zellkern] -->|Transkription| B[mRNA]\n    B -->|Transport| C[Ribosom im Cytoplasma]\n    C -->|Translation| D[Aminosäurekette]\n    D -->|Faltung| E[Funktionales Protein]\n    \n    F[tRNA] -->|bringt Aminosäuren| C\n    \n    style A fill:#e1f5ff\n    style B fill:#fff4e1\n    style C fill:#ffe1e1\n    style D fill:#e1ffe1\n    style E fill:#f0e1ff\n    style F fill:#fff4e1\n```"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Grundlagen der Zellbiologie",
+      "content": "### Die Zellmembran: Torwächter der Zelle\n\nJede Zelle ist von einer Zellmembran umschlossen, die als selektive Barriere dient. Sie kontrolliert, welche Stoffe in die Zelle hinein- und aus ihr herausgelangen.\n\n* **Phospholipid-Doppelschicht:** Die Grundstruktur der Membran. Jedes Phospholipid-Molekül hat einen hydrophilen (wasserliebenden) Kopf und einen hydrophoben (wasserabweisenden) Schwanz. Sie ordnen sich so an, dass die Köpfe nach außen und die Schwänze nach innen zeigen.\n* **Membranproteine:** Sind in die Membran eingebettet und erfüllen vielfältige Funktionen, z.B. als Kanäle für den Stofftransport, als Rezeptoren für Signale oder als Enzyme.\n* **Selektive Permeabilität:** Aufgrund ihrer Struktur lässt die Membran kleine, ungeladene Moleküle wie Wasser und Sauerstoff frei passieren, während größere oder geladene Teilchen (z.B. Ionen und Glukose) auf Transportproteine angewiesen sind."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Woraus besteht die Grundstruktur der Zellmembran?",
+      "options": [
+        "Aus einer einzelnen Schicht von Proteinen",
+        "Aus einer Phospholipid-Doppelschicht",
+        "Aus reiner Zellulose",
+        "Aus einem Netzwerk von DNA"
+      ],
+      "correctAnswer": "Aus einer Phospholipid-Doppelschicht",
+      "content": "**Erklärung:** Die Zellmembran besteht im Kern aus einer Phospholipid-Doppelschicht, bei der die hydrophoben (wasserabweisenden) Schwänze nach innen und die hydrophilen (wasserliebenden) Köpfe nach außen zeigen."
+    },
+    {
+      "type": "learning-content",
+      "content": "## KaTeX Test - Mathematische Formeln\n\nDiese Seite testet die KaTeX-Integration für mathematische Formeln.\n\n### Inline-Formeln\n\nDie berühmte Formel von Einstein: $E = mc^2$\n\nDie Dichte berechnet sich durch: $\\rho = \\frac{m}{V}$\n\n### Block-Formeln (zentriert)\n\n$$T(K) = t(°C) + 273.15$$\n\n### Chemische Gleichungen\n\nWassersynthese: $2~H_{2}(g) + O_{2}(g) \\rightarrow 2~H_{2}O(g)$\n\nZellatmung: $C_6H_{12}O_6 + 6O_2 \\rightarrow 6CO_2 + 6H_2O + ATP$\n\n### Komplexere Formel\n\n$$\\Delta G = \\Delta H - T \\cdot \\Delta S$$"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Grundlagen der Ernährung",
+      "content": "### Makro- vs. Mikronährstoffe\n\nNährstoffe sind die Substanzen in der Nahrung, die der Körper für Wachstum, Energiestoffwechsel und andere Körperfunktionen benötigt. Sie werden in zwei Hauptgruppen unterteilt:\n\n* **Makronährstoffe:** Werden in großen Mengen benötigt und liefern Energie (Kalorien). Dazu gehören:\n  * **Kohlenhydrate:** Die primäre Energiequelle des Körpers.\n  * **Proteine (Eiweiße):** Wichtig für den Aufbau und die Reparatur von Gewebe, z.B. Muskeln.\n  * **Fette (Lipide):** Dienen als Energiereserve und sind wichtig für die Aufnahme von fettlöslichen Vitaminen.\n\n* **Mikronährstoffe:** Werden nur in kleinen Mengen benötigt und liefern keine Energie, sind aber für zahlreiche Körperfunktionen unerlässlich. Dazu gehören:\n  * **Vitamine:** Organische Verbindungen, die z.B. das Immunsystem unterstützen.\n  * **Mineralstoffe:** Anorganische Elemente wie Kalzium (für die Knochen) und Eisen (für den Sauerstofftransport)."
+    },
+    {
+      "type": "external-video",
+      "url": "https://moodle.univie.ac.at/mod/page/view.php?id=12345",
+      "title": "Test: Externe Vorlesung",
+      "description": "Dies ist ein Test für den External-Video Content Type. Öffnet in neuem Tab.",
+      "duration": "45 min",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Grundlagen der Ernährung",
+      "question": "Welcher der folgenden Nährstoffe ist ein Makronährstoff?",
+      "options": [
+        "Vitamin C",
+        "Eisen",
+        "Kohlenhydrate",
+        "Kalzium"
+      ],
+      "correctAnswer": "Kohlenhydrate",
+      "content": "**Erklärung:** Kohlenhydrate sind neben Proteinen und Fetten einer der drei Makronährstoffe, die dem Körper Energie liefern. Vitamine und Mineralstoffe sind Mikronährstoffe."
+    },
+    {
+      "type": "balance-equation",
+      "title": "Wassersynthese - Gleichung ausgleichen",
+      "reactants": [
+        {
+          "formula": "H2",
+          "coefficient": "2"
+        },
+        {
+          "formula": "O2",
+          "coefficient": "1"
+        }
+      ],
+      "products": [
+        {
+          "formula": "H2O",
+          "coefficient": "2"
+        }
+      ],
+      "hints": [
+        "Zähle zuerst die Sauerstoff-Atome auf beiden Seiten",
+        "Ein O2-Molekül hat 2 Sauerstoff-Atome",
+        "Wie viele H-Atome brauchst du, um 2 H2O zu bilden?"
+      ],
+      "explanation": "Die Gleichung ist ausgeglichen: 4 H-Atome (2×H2) und 2 O-Atome (1×O2) auf der linken Seite entsprechen 4 H-Atomen und 2 O-Atomen in 2×H2O auf der rechten Seite.",
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice",
+      "lecture": "lecture-1",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Was ist die Hauptfunktion der Mitochondrien?",
+      "options": [
+        "Proteinsynthese",
+        "Energiegewinnung (ATP-Produktion)",
+        "Speicherung von Erbinformation",
+        "Abbau von Abfallprodukten"
+      ],
+      "correctAnswer": "Energiegewinnung (ATP-Produktion)",
+      "explanation": "**Erklärung:** Mitochondrien sind die \"Kraftwerke\" der Zelle. In ihnen findet die Zellatmung statt, bei der aus Nährstoffen wie Glukose die universelle Energiewährung ATP (Adenosintriphosphat) gewonnen wird."
+    },
+    {
+      "type": "multiple-choice",
+      "lecture": "lecture-1",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Welches Organell ist für die Verpackung und den Versand von Proteinen zuständig?",
+      "options": [
+        "Ribosom",
+        "Lysosom",
+        "Golgi-Apparat",
+        "Zellkern"
+      ],
+      "correctAnswer": "Golgi-Apparat",
+      "explanation": "**Erklärung:** Der Golgi-Apparat modifiziert, sortiert und verpackt Proteine und Lipide für den Transport zu anderen Zielen in der Zelle oder für die Sekretion aus der Zelle."
+    },
+    {
+      "type": "multiple-choice",
+      "lecture": "lecture-1",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Woraus besteht die Grundstruktur der Zellmembran?",
+      "options": [
+        "Aus einer einzelnen Schicht von Proteinen",
+        "Aus einer Phospholipid-Doppelschicht",
+        "Aus reiner Zellulose",
+        "Aus einem Netzwerk von DNA"
+      ],
+      "correctAnswer": "Aus einer Phospholipid-Doppelschicht",
+      "explanation": "**Erklärung:** Die Zellmembran besteht im Kern aus einer Phospholipid-Doppelschicht, bei der die hydrophoben (wasserabweisenden) Schwänze nach innen und die hydrophilen (wasserliebenden) Köpfe nach außen zeigen."
+    },
+    {
+      "type": "multiple-choice",
+      "lecture": "lecture-1",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Was bedeutet \"selektive Permeabilität\" der Zellmembran?",
+      "options": [
+        "Die Membran lässt absolut keine Stoffe durch.",
+        "Die Membran lässt alle Stoffe ungehindert passieren.",
+        "Die Membran lässt nur bestimmte Stoffe durch und blockiert andere.",
+        "Die Membran ist nur für Wasser durchlässig."
+      ],
+      "correctAnswer": "Die Membran lässt nur bestimmte Stoffe durch und blockiert andere.",
+      "explanation": "**Erklärung:** \"Selektive Permeabilität\" bedeutet, dass die Membran wählerisch ist. Sie erlaubt einigen Molekülen (wie Wasser) den freien Durchgang, während andere (wie Ionen oder Glukose) auf spezifische Transportproteine angewiesen sind, um die Membran zu überqueren."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "lecture": "lecture-1",
+      "topic": "Grundlagen der Zellbiologie",
+      "question": "Welche der folgenden Aussagen über Zellorganellen sind korrekt? (Mehrfachauswahl möglich)",
+      "options": [
+        "Mitochondrien produzieren ATP durch Zellatmung",
+        "Der Zellkern ist nur in prokaryotischen Zellen vorhanden",
+        "Der Golgi-Apparat modifiziert und sortiert Proteine",
+        "Ribosomen sind für die Fettsynthese verantwortlich"
+      ],
+      "correctAnswers": [
+        "Mitochondrien produzieren ATP durch Zellatmung",
+        "Der Golgi-Apparat modifiziert und sortiert Proteine"
+      ],
+      "explanation": "**Erklärung:**\n\n**Richtig:**\n- Mitochondrien sind die \"Kraftwerke\" der Zelle und produzieren ATP durch Zellatmung\n- Der Golgi-Apparat modifiziert Proteine nach ihrer Synthese und sortiert sie für den Transport\n\n**Falsch:**\n- Der Zellkern ist nur in eukaryotischen Zellen vorhanden, nicht in prokaryotischen\n- Ribosomen sind für die Proteinsynthese zuständig, nicht für die Fettsynthese (diese findet im glatten ER statt)"
+    }
+  ],
+  "generatedAt": "2026-01-11T23:14:27.613Z"
+}

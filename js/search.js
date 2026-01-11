@@ -1,6 +1,117 @@
 // js/search.js
 // Global search functionality across all content
 
+// Cache for search index
+let searchIndexCache = null;
+
+/**
+ * Load the search index for the current study
+ * @returns {Promise<Object|null>} Search index or null
+ */
+async function loadSearchIndex() {
+  if (searchIndexCache) return searchIndexCache;
+
+  const settings = window.getAppSettings ? window.getAppSettings() : {};
+  const studyId = settings.activeStudyId;
+  if (!studyId) return null;
+
+  try {
+    const basePath = window.getBasePath ? window.getBasePath() : '/';
+    const response = await fetch(
+      `${basePath}content/${studyId}/search-index.json`
+    );
+    if (response.ok) {
+      searchIndexCache = await response.json();
+      console.log(
+        `[Search] Index loaded: ${
+          searchIndexCache.entries?.length || 0
+        } entries`
+      );
+      return searchIndexCache;
+    }
+  } catch (e) {
+    console.warn('[Search] Failed to load search index:', e);
+  }
+  return null;
+}
+
+/**
+ * Search using the pre-built search index (for lazy loading mode)
+ * @param {string} query - Search query
+ * @param {Array} modules - Module metadata
+ * @returns {Promise<Array>} Search results
+ */
+async function searchWithIndex(query, modules) {
+  const index = await loadSearchIndex();
+  if (!index || !index.entries) return [];
+
+  const results = [];
+  const lowerQuery = query.toLowerCase();
+
+  // Search terms including shorter prefixes for German compound words
+  const searchTerms = [lowerQuery];
+  if (lowerQuery.length >= 4) {
+    searchTerms.push(lowerQuery.slice(0, -1));
+  }
+
+  for (const entry of index.entries) {
+    const module = modules.find((m) => m.id === entry.moduleId);
+    if (!module) continue;
+
+    let score = 0;
+
+    // Check topic
+    if (matchesAny(entry.topic, searchTerms)) {
+      score += 10;
+    }
+
+    // Check description
+    if (entry.description && matchesAny(entry.description, searchTerms)) {
+      score += 5;
+    }
+
+    // Check topics list
+    if (entry.topics) {
+      for (const topic of entry.topics) {
+        if (matchesAny(topic, searchTerms)) {
+          score += 3;
+        }
+      }
+    }
+
+    // Check keywords
+    if (entry.keywords) {
+      for (const keyword of entry.keywords) {
+        if (searchTerms.some((term) => keyword.startsWith(term))) {
+          score += 1;
+        }
+      }
+    }
+
+    // Check snippet
+    if (entry.snippet && matchesAny(entry.snippet, searchTerms)) {
+      score += 2;
+    }
+
+    if (score > 0) {
+      results.push({
+        type: 'lecture',
+        moduleId: entry.moduleId,
+        lectureId: entry.lectureId,
+        title: entry.topic,
+        subtitle: `${module.title} · ${entry.itemCount} Inhalte, ${entry.quizCount} Fragen`,
+        icon: 'book',
+        url: `#/module/${entry.moduleId}/lecture/${entry.lectureId}`,
+        score
+      });
+    }
+  }
+
+  // Sort by score and limit
+  results.sort((a, b) => b.score - a.score);
+  return results.slice(0, 15);
+}
+
 /**
  * Searches through all content for matches
  * @param {string} query - Search query
@@ -334,12 +445,18 @@ function initGlobalSearch() {
       return;
     }
 
-    debounceTimer = setTimeout(() => {
-      const results = searchContent(
+    debounceTimer = setTimeout(async () => {
+      // Use search index in lazy loading mode, fall back to content search
+      let results = searchContent(
         query,
         window.APP_CONTENT || {},
         window.APP_MODULES || []
       );
+
+      // If no results from loaded content, try the search index
+      if (results.length === 0) {
+        results = await searchWithIndex(query, window.APP_MODULES || []);
+      }
 
       searchResults.classList.remove('hidden');
       renderSearchResults(results, searchResults, (result) => {
@@ -584,12 +701,19 @@ function initSearchPage(query = '') {
 
   // Perform initial search
   if (query.length >= 2) {
-    const results = searchContent(
+    // Try loaded content first, then fall back to index
+    let results = searchContent(
       query,
       window.APP_CONTENT || {},
       window.APP_MODULES || []
     );
-    renderSearchPage(results, query);
+    if (results.length === 0) {
+      searchWithIndex(query, window.APP_MODULES || []).then((indexResults) => {
+        renderSearchPage(indexResults, query);
+      });
+    } else {
+      renderSearchPage(results, query);
+    }
   }
 
   let debounceTimer = null;
@@ -600,7 +724,7 @@ function initSearchPage(query = '') {
 
     clearTimeout(debounceTimer);
 
-    debounceTimer = setTimeout(() => {
+    debounceTimer = setTimeout(async () => {
       // Update URL without full navigation
       if (newQuery.length >= 2) {
         history.replaceState(
@@ -608,11 +732,15 @@ function initSearchPage(query = '') {
           '',
           `#/search/${encodeURIComponent(newQuery)}`
         );
-        const results = searchContent(
+        let results = searchContent(
           newQuery,
           window.APP_CONTENT || {},
           window.APP_MODULES || []
         );
+        // If no results from loaded content, try index
+        if (results.length === 0) {
+          results = await searchWithIndex(newQuery, window.APP_MODULES || []);
+        }
         renderSearchPage(results, newQuery);
       } else {
         history.replaceState(null, '', '#/search');
@@ -628,3 +756,5 @@ function initSearchPage(query = '') {
 // Expose to global scope
 window.initSearchPage = initSearchPage;
 window.renderSearchPage = renderSearchPage;
+window.loadSearchIndex = loadSearchIndex;
+window.searchWithIndex = searchWithIndex;

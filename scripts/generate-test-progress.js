@@ -24,8 +24,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONTENT_DIR = path.join(__dirname, 'content');
-const OUTPUT_DIR = path.join(__dirname, 'test-data');
+const CONTENT_DIR = path.join(__dirname, '..', 'content');
+const OUTPUT_DIR = path.join(__dirname, '..', 'test-data');
 
 // Badge thresholds (matching state.js)
 const BADGES = {

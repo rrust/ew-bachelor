@@ -39,10 +39,10 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
                                 │
                                 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 3: Validierung                                                   │
-│  - validate-content.html ausführen                                      │
-│  - npx markdownlint-cli2 "content/**/*.md"                              │
-│  - Links/Videos manuell prüfen                                          │
+│  PHASE 3: Commit & Push                                                 │
+│  - git add + commit + push                                              │
+│  - GitHub Action generiert automatisch alle JSON-Dateien                │
+│  - Validieren: Tools → "Inhalte validieren" in der App                  │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -242,7 +242,8 @@ SCHRITT 3 - questions/ erstellen:
 SCHRITT 4 - Validieren:
 - YAML-Listen mit - (dash), nie * (asterisk)
 - Dateien nummeriert (01-, 02-, ...)
-- node generate-content-list.js ausführen
+- npm run build ausführen (generiert content-list.json und lecture-bundles)
+- In Browser testen mit Live Server
 ````
 
 ---
@@ -352,7 +353,8 @@ Basierend auf diesem Lerninhalt:
 
 ### Checkliste nach AI-Generierung
 
-- [ ] `validate-content.html` zeigt keine Fehler
+- [ ] Commit & Push (GitHub Action generiert JSON-Dateien automatisch)
+- [ ] Tools → "Inhalte validieren" in der App zeigt keine Fehler
 - [ ] `npx markdownlint-cli2 "content/**/*.md"` erfolgreich
 - [ ] Videos/Links manuell geprüft
 - [ ] Inhaltliche Korrektheit geprüft

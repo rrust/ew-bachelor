@@ -126,7 +126,7 @@ Enable Dev Mode in the app (Tools → Enable Dev Mode) for:
 
 ```bash
 # Generate test progress data
-node generate-test-progress.js
+node scripts/generate-test-progress.js
 
 # Or use in-app: Dev Mode → Test-Daten laden
 # Select: Fresh, Beginner, Intermediate, Advanced, Complete, Mixed, Alerts

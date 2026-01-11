@@ -145,7 +145,7 @@ content/{studyId}/NN-modul/NN-vorlesung/
 5. ✅ `app.js` - Add header injection in `reinjectHeaders()` and initial setup
 6. ✅ `sw.js` - Add any new JS files to cache
 
-**Validate with:** `node validate-views.js`
+**Validate with:** `npm run validate:views`
 
 ## Language
 
@@ -159,9 +159,22 @@ Before completing any task:
 
 1. ✅ Test in browser (Live Server auto-reloads)
 2. ✅ Validate content: Use Tools menu → "Inhalte validieren" in the app
-3. ✅ Validate views: `node validate-views.js`
+3. ✅ Validate views: `npm run validate:views`
 4. ✅ Lint markdown: `npx markdownlint-cli2 "**/*.md"` (NO --fix flag!)
 5. ✅ Check for console errors
+
+### After Content Changes
+
+When creating or editing content in `content/` folder:
+
+1. ✅ Run `npm run build` to regenerate JSON files
+2. ✅ Test in browser to verify content loads correctly
+
+**What `npm run build` does:**
+- Generates `content-list.json` and `modules.json` for each study
+- Generates `lecture-bundle.json` for each lecture (lazy loading)
+- Generates `search-index.json` for search functionality
+- Generates `content-manifest.json` with checksums
 
 ## Debugging Protocol
 

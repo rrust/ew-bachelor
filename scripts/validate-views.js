@@ -9,9 +9,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const indexPath = path.join(__dirname, 'index.html');
-const appPath = path.join(__dirname, 'app.js');
-const routerPath = path.join(__dirname, 'js', 'router.js');
+const indexPath = path.join(__dirname, '..', 'index.html');
+const appPath = path.join(__dirname, '..', 'app.js');
+const routerPath = path.join(__dirname, '..', 'js', 'router.js');
 
 const indexContent = fs.readFileSync(indexPath, 'utf-8');
 const appContent = fs.readFileSync(appPath, 'utf-8');

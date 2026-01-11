@@ -5,7 +5,7 @@
       "label": "Validate Views",
       "type": "shell",
       "command": "node",
-      "args": ["validate-views.js"],
+      "args": ["scripts/validate-views.js"],
       "group": {
         "kind": "test",
         "isDefault": false
