@@ -132,7 +132,7 @@ function renderAlertsView() {
           title="Hilfe"
         >
           <span id="alerts-help-icon" class="text-gray-500 dark:text-gray-400">
-            ${Icons.get('questionCircle', 'w-5 h-5')}
+            ${Icons.get('help', 'w-5 h-5')}
           </span>
         </button>
       </div>
@@ -974,13 +974,16 @@ function renderStreakSection() {
   let streakColorClass = '';
   let progressBarColor = '';
   if (info.current === 0) {
-    streakColorClass = 'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+    streakColorClass =
+      'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
     progressBarColor = 'bg-red-500';
   } else if (info.current < 5) {
-    streakColorClass = 'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-300 dark:border-yellow-700';
+    streakColorClass =
+      'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-300 dark:border-yellow-700';
     progressBarColor = 'bg-gradient-to-r from-yellow-400 to-yellow-500';
   } else {
-    streakColorClass = 'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
+    streakColorClass =
+      'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
     progressBarColor = 'bg-gradient-to-r from-green-400 to-green-500';
   }
 
@@ -1005,7 +1008,8 @@ function renderStreakSection() {
       break;
     case 'at-risk':
       // Override to red for at-risk status
-      cardClass = 'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+      cardClass =
+        'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
       progressBarColor = 'bg-red-500';
       actionButton = `
         <button
@@ -1019,7 +1023,8 @@ function renderStreakSection() {
       break;
     case 'lost':
       // Override to gray for lost status
-      cardClass = 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
+      cardClass =
+        'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
       progressBarColor = 'bg-gray-400';
       actionButton = `
         <button
