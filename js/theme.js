@@ -7,6 +7,7 @@ function initializeTheme() {
     document.documentElement.classList.add('dark');
   }
   updateThemeIcons();
+  updateThemeColor();
 }
 
 function toggleTheme() {
@@ -21,6 +22,7 @@ function toggleTheme() {
   }
 
   updateThemeIcons();
+  updateThemeColor();
 }
 
 function updateThemeIcons() {
@@ -37,7 +39,22 @@ function updateThemeIcons() {
   });
 }
 
+/**
+ * Update the theme-color meta tag for PWA status bar
+ */
+function updateThemeColor() {
+  const isDark = document.documentElement.classList.contains('dark');
+  const themeColor = isDark ? '#1f2937' : '#ffffff';
+  
+  // Update all theme-color meta tags
+  const metaTags = document.querySelectorAll('meta[name="theme-color"]');
+  metaTags.forEach(meta => {
+    meta.setAttribute('content', themeColor);
+  });
+}
+
 // Expose to global scope
 window.initializeTheme = initializeTheme;
 window.toggleTheme = toggleTheme;
 window.updateThemeIcons = updateThemeIcons;
+window.updateThemeColor = updateThemeColor;
