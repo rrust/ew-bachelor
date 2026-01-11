@@ -255,42 +255,97 @@ function dismissNotificationPrompt() {
 
 /**
  * [DEV MODE] Force show a test notification (bypasses daily limit)
+ * Shows visual feedback in a toast instead of alert()
  */
 function testNotification() {
-  console.log('[Notifications] Testing...');
-  console.log('[Notifications] Supported:', isNotificationSupported());
-  console.log('[Notifications] Permission:', Notification.permission);
-
-  if (!isNotificationSupported()) {
-    alert('Notifications nicht unterstützt in diesem Browser');
+  const results = [];
+  
+  // Check support
+  const supported = isNotificationSupported();
+  results.push(`Unterstützt: ${supported ? '✅' : '❌'}`);
+  
+  if (!supported) {
+    // Check if iOS
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+      results.push('iOS erkannt - Notifications nur ab iOS 16.4+ in PWA');
+      results.push('PWA muss zum Home-Screen hinzugefügt sein');
+    }
+    showTestResult(results, 'error');
     return;
   }
-
-  if (Notification.permission !== 'granted') {
-    alert(
-      'Notification Permission: ' +
-        Notification.permission +
-        '\nGehe zu #/alerts und klicke "Aktivieren"'
-    );
+  
+  // Check permission
+  const permission = Notification.permission;
+  results.push(`Permission: ${permission}`);
+  
+  if (permission === 'default') {
+    results.push('Klicke erst "Aktivieren" oben');
+    showTestResult(results, 'warning');
     return;
   }
-
-  const alerts = window.getAchievementAlerts
-    ? window.getAchievementAlerts()
-    : null;
-  console.log('[Notifications] Alerts:', alerts);
-
+  
+  if (permission === 'denied') {
+    results.push('Blockiert - In Browser-Einstellungen erlauben');
+    showTestResult(results, 'error');
+    return;
+  }
+  
+  // Check alerts
+  const alerts = window.getAchievementAlerts ? window.getAchievementAlerts() : null;
+  results.push(`Alerts: ${alerts ? alerts.total : 0}`);
+  
   if (!alerts || alerts.total === 0) {
-    alert('Keine Alerts vorhanden. Lade erst Test-Daten (Dev Mode → Alerts)');
+    results.push('Keine Alerts - Klicke erst "Demo-Alerts"');
+    showTestResult(results, 'warning');
     return;
   }
-
-  // Clear the daily limit to force show
+  
+  // Clear daily limit and show
   localStorage.removeItem('lastAlertNotification');
+  
+  try {
+    showAlertNotification(alerts);
+    results.push('Notification gesendet! 🔔');
+    showTestResult(results, 'success');
+  } catch (e) {
+    results.push('Fehler: ' + e.message);
+    showTestResult(results, 'error');
+  }
+}
 
-  // Show notification
-  showAlertNotification(alerts);
-  alert('Notification sollte jetzt erscheinen!');
+/**
+ * Show test result as a toast on the page
+ */
+function showTestResult(messages, type) {
+  // Remove existing toast
+  const existing = document.getElementById('notification-test-toast');
+  if (existing) existing.remove();
+  
+  const colors = {
+    success: 'bg-green-100 border-green-300 text-green-800 dark:bg-green-900/30 dark:border-green-700 dark:text-green-300',
+    warning: 'bg-yellow-100 border-yellow-300 text-yellow-800 dark:bg-yellow-900/30 dark:border-yellow-700 dark:text-yellow-300',
+    error: 'bg-red-100 border-red-300 text-red-800 dark:bg-red-900/30 dark:border-red-700 dark:text-red-300'
+  };
+  
+  const toast = document.createElement('div');
+  toast.id = 'notification-test-toast';
+  toast.className = `fixed bottom-4 left-4 right-4 p-4 rounded-lg border ${colors[type]} z-50 shadow-lg`;
+  toast.innerHTML = `
+    <div class="font-medium mb-1">Notification Test</div>
+    <div class="text-sm space-y-1">
+      ${messages.map(m => `<div>${m}</div>`).join('')}
+    </div>
+    <button onclick="this.parentElement.remove()" class="absolute top-2 right-2 opacity-50 hover:opacity-100">✕</button>
+  `;
+  
+  document.body.appendChild(toast);
+  
+  // Auto-remove after 8 seconds
+  setTimeout(() => toast.remove(), 8000);
+  
+  // Also log to console
+  console.log('[Notifications Test]', messages);
 }
 
 /**
