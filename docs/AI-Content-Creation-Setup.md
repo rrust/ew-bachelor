@@ -121,7 +121,7 @@ Lies die Datei studies-material/bsc-ernaehrungswissenschaften/02-grundlagen-chem
 und erstelle daraus strukturierte Lerninhalte für die App.
 
 Verwende die Templates aus docs/CONTENT_TEMPLATES.md.
-Erstelle die Dateien in content/02-chemie-grundlagen/01-materie-messen/
+Erstelle die Dateien in content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/01-materie-messen/
 
 Struktur:
 1. lecture-items/ mit 01-XX.md, 02-XX.md, etc.
@@ -132,6 +132,72 @@ Beachte:
 - YAML-Listen mit - (dash), nie * (asterisk)
 - correctAnswer muss EXAKT mit Option übereinstimmen
 - Deutsche UI-Texte
+- Quellenreferenzen aus [cite: X-Y] Markierungen extrahieren (siehe unten)
+```
+
+### Quellenreferenzen verarbeiten
+
+Die Material-Dateien in `studies-material/` enthalten Zitationsmarkierungen, die bei der Content-Generierung verarbeitet werden müssen.
+
+**Material-Datei Format (studies-material/):**
+
+```markdown
+# Kapitel 1: Materie und Messen
+
+Titel: "Materie und Messen"
+Link: https://moodle.univie.ac.at/path/to/slides.pdf
+
+## Inhalt
+
+[cite_start]Die Chemie untersucht Materie und Energie[cite: 23-25].
+```
+
+**Prompt für Quellenextraktion:**
+
+```text
+1. QUELLEN EXTRAHIEREN:
+   - Lies Titel und Link am Anfang der Material-Datei
+   - Füge sie als `sources` Array in lecture.md ein:
+   
+   sources:
+     - id: 'vorlesung-k1'
+       title: '[Titel aus der Datei]'
+       url: '[Link aus der Datei]'
+       type: 'pdf'
+
+2. ZITATIONEN VERARBEITEN:
+   - Finde alle [cite_start]...[cite: X-Y] Markierungen
+   - Füge entsprechende sourceRefs in die lecture-items ein:
+   
+   sourceRefs:
+     - sourceId: 'vorlesung-k1'
+       pages: 'X-Y'
+
+3. TEXT BEREINIGEN:
+   - Entferne [cite_start] und [cite: X-Y] aus dem finalen Content
+   - Der Inhalt bleibt, nur die Markierungen werden entfernt
+```
+
+**Beispiel-Transformation:**
+
+Material-Datei:
+
+```markdown
+[cite_start]Die Chemie ist die Wissenschaft der Stoffumwandlung[cite: 23-25].
+```
+
+→ Generiertes Lecture-Item:
+
+```yaml
+---
+type: 'learning-content'
+topic: 'Einführung'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '23-25'
+---
+
+Die Chemie ist die Wissenschaft der Stoffumwandlung.
 ```
 
 ### Modell-Empfehlung
@@ -142,6 +208,7 @@ Beachte:
 | Schnelle Generierung | Claude Sonnet 4 | Schneller, gute Qualität |
 | YAML-Strukturierung  | Beide           | Präzise bei Syntax       |
 | Mermaid-Diagramme    | Claude Opus 4   | Bestes Verständnis       |
+| Quellenextraktion    | Beide           | Pattern-Erkennung        |
 
 ---
 
