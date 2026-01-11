@@ -149,8 +149,15 @@ function renderAlertsView() {
             <li><strong>Bald ablaufend:</strong> Beantworte nur 1 Frage aus dem Quiz richtig</li>
             <li><strong>Abgelaufen:</strong> Schließe den gesamten Test erneut mit Gold ab</li>
           </ul>
+          <p class="font-medium mb-2 mt-4">Tägliche Streak-Challenge:</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-300">
+            <li><strong>Streak aufbauen:</strong> Beantworte täglich 1 Frage richtig (max. 10 Punkte)</li>
+            <li><strong>Streak halten:</strong> Bei 10 Punkten täglich spielen um den Streak zu behalten</li>
+            <li><strong>Streak in Gefahr:</strong> Nach 2-3 Tagen Pause → 3 Fragen beantworten (2 richtig = gerettet)</li>
+            <li><strong>Streak verloren:</strong> Nach >3 Tagen oder fehlgeschlagener Rettung → neu starten</li>
+          </ul>
         </div>
-        <button onclick="toggleAlertsHelp()" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+        <button onclick="toggleAlertsHelp()" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 flex-shrink-0">
           ${Icons.get('close', 'w-4 h-4')}
         </button>
       </div>

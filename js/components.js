@@ -182,10 +182,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       }
       <nav class="flex items-center gap-2">
         <!-- Dev Mode Badge (shown when dev mode is active) -->
-        <span
+        <a
+          href="#/tools"
           id="header-dev-badge${idSuffix}"
-          class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-        >DEV</span>
+          class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+        >DEV</a>
         <!-- Streak Display -->
         ${
           showStreak
