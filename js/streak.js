@@ -180,7 +180,8 @@ function calculateStreakStatus() {
   const diffTime = todayDate - lastDate;
   const daysGap = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-  if (daysGap === 0) {
+  // If daysGap is negative or 0, activity was today (or in the future due to timezone)
+  if (daysGap <= 0) {
     // Already did today's streak
     return { status: 'active', daysGap: 0 };
   } else if (daysGap === 1) {
@@ -352,7 +353,7 @@ function getStreakDisplayInfo() {
   }
 
   return {
-    current: streak.current,
+    current: Math.min(streak.current, STREAK_MAX),
     max: STREAK_MAX,
     longestStreak: streak.longestStreak,
     totalDays: streak.totalDays,

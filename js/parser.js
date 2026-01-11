@@ -360,6 +360,9 @@ async function parseContent(studyId = null) {
               : '';
             content[moduleId].lectures[lectureId].estimatedTime =
               doc.attributes.estimatedTime || 0;
+            // Store sources for reference footnotes
+            content[moduleId].lectures[lectureId].sources =
+              doc.attributes.sources || [];
 
             // Process remaining documents as items (if any)
             const remainingDocs = documents.slice(1);
