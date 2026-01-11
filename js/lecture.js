@@ -523,7 +523,7 @@ async function renderMermaidDiagram(item, container) {
   container.innerHTML = `
     <div class="mermaid-container">
       ${title}
-      <button class="expand-btn hidden lg:block" title="Vergrößern" aria-label="Diagramm vergrößern">
+      <button class="expand-btn" title="Vergrößern" aria-label="Diagramm vergrößern">
         ${Icons.get('expand', 'w-5 h-5')}
       </button>
       <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg overflow-x-auto">
