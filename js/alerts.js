@@ -969,19 +969,30 @@ function renderStreakSection() {
   // Build streak progress bar
   const progressPercent = (info.current / info.max) * 100;
 
+  // Determine card color based on streak count (matching header badge logic)
+  // 0: red, 1-4: yellow, 5+: green
+  let streakColorClass = '';
+  let progressBarColor = '';
+  if (info.current === 0) {
+    streakColorClass = 'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+    progressBarColor = 'bg-red-500';
+  } else if (info.current < 5) {
+    streakColorClass = 'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-300 dark:border-yellow-700';
+    progressBarColor = 'bg-gradient-to-r from-yellow-400 to-yellow-500';
+  } else {
+    streakColorClass = 'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
+    progressBarColor = 'bg-gradient-to-r from-green-400 to-green-500';
+  }
+
   let actionButton = '';
-  let cardClass = '';
+  let cardClass = streakColorClass;
   let statusIcon = '';
 
   switch (info.status) {
     case 'active':
-      cardClass =
-        'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
       statusIcon = Icons.get('checkCircle', 'w-5 h-5', 'text-green-500');
       break;
     case 'pending':
-      cardClass =
-        'bg-orange-50 dark:bg-orange-900/20 border-orange-300 dark:border-orange-700';
       actionButton = `
         <button
           onclick="openStreakChallengeModal()"
@@ -993,8 +1004,9 @@ function renderStreakSection() {
       `;
       break;
     case 'at-risk':
-      cardClass =
-        'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+      // Override to red for at-risk status
+      cardClass = 'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+      progressBarColor = 'bg-red-500';
       actionButton = `
         <button
           onclick="openStreakRescueModal()"
@@ -1006,8 +1018,9 @@ function renderStreakSection() {
       `;
       break;
     case 'lost':
-      cardClass =
-        'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
+      // Override to gray for lost status
+      cardClass = 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
+      progressBarColor = 'bg-gray-400';
       actionButton = `
         <button
           onclick="openStreakChallengeModal()"
@@ -1046,11 +1059,7 @@ function renderStreakSection() {
       <!-- Progress bar -->
       <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
         <div 
-          class="h-2 rounded-full transition-all duration-500 ${
-            info.current > 0
-              ? 'bg-gradient-to-r from-orange-400 to-orange-600'
-              : 'bg-gray-300 dark:bg-gray-600'
-          }"
+          class="h-2 rounded-full transition-all duration-500 ${progressBarColor}"
           style="width: ${progressPercent}%"
         ></div>
       </div>
