@@ -1,10 +1,15 @@
 # UNIVERSAL ACADEMIC TUTOR: CHEMISCHE GRUNDLAGEN
+
 **Basierend auf:** modul 2 chemie kapitel 2.pdf
 **Thema:** Atome, Moleküle, Ionen & Stöchiometrie
 
+Titel:  Atome, Formeln & Stöchiometrie
+
+Link: https://moodle.univie.ac.at/pluginfile.php/31885029/mod_resource/content/1/MMChemieKapitel2.pdf
 ---
 
 # TEIL 1: MODUS B – DAS LEHRBUCH-SKRIPT (Deep Dive)
+>
 > **Dokument-Analyse**
 > ℹ️ *Basierend auf den Unterlagen wurde der folgende Lehrbuch-Text erstellt. Inhalte wurden durch akademisches Kontextwissen ergänzt, um eine vollständige Abdeckung des Themas zu gewährleisten.*
 
@@ -13,13 +18,14 @@
 Die moderne Chemie basiert auf dem Verständnis, dass Materie nicht kontinuierlich ist, sondern aus diskreten Einheiten, den Atomen, besteht. Ein tiefgreifendes Verständnis der subatomaren Architektur ist essenziell für alle weiteren Konzepte der Reaktivität und Bindungslehre.
 
 ### 2.1.1 Subatomare Teilchen
+
 Das Atom ist keineswegs unteilbar, sondern ein komplexes System aus subatomaren Partikeln. Historische Experimente (wie Rutherfords Streuversuch) zeigten, dass das Atom größtenteils aus leerem Raum besteht, in dessen Zentrum ein winziger, extrem dichter Kern (Nukleus) sitzt.
 
 Wir unterscheiden drei fundamentale Bausteine:
 
-1.  **Protonen ($p^+$):** Diese befinden sich im Atomkern und tragen eine positive elektrische Elementarladung ($+1$). Ihre Masse ist signifikant und definiert maßgeblich die Masse des Atoms ($1,672623 \times 10^{-24}$ g oder relativ $1,007$ u). Die Anzahl der Protonen bestimmt die chemische Identität des Elements.
-2.  **Neutronen ($n^0$):** Ebenfalls im Kern lokalisiert, sind diese Teilchen elektrisch neutral. Ihre Masse ($1,009$ u) ist fast identisch mit der des Protons. Sie fungieren als "Klebstoff" im Kern, indem sie die abstoßenden Kräfte zwischen den positiv geladenen Protonen durch die starke Kernkraft kompensieren.
-3.  **Elektronen ($e^-$):** Diese bewegen sich in der "Elektronenwolke" um den Kern herum. Sie tragen eine negative Elementarladung ($-1$) und sind extrem leicht ($0,0005$ u). Trotz ihrer geringen Masse ($9,109 \times 10^{-28}$ g) nehmen sie fast das gesamte Volumen des Atoms ein und sind für chemische Bindungen verantwortlich.
+1. **Protonen ($p^+$):** Diese befinden sich im Atomkern und tragen eine positive elektrische Elementarladung ($+1$). Ihre Masse ist signifikant und definiert maßgeblich die Masse des Atoms ($1,672623 \times 10^{-24}$ g oder relativ $1,007$ u). Die Anzahl der Protonen bestimmt die chemische Identität des Elements.
+2. **Neutronen ($n^0$):** Ebenfalls im Kern lokalisiert, sind diese Teilchen elektrisch neutral. Ihre Masse ($1,009$ u) ist fast identisch mit der des Protons. Sie fungieren als "Klebstoff" im Kern, indem sie die abstoßenden Kräfte zwischen den positiv geladenen Protonen durch die starke Kernkraft kompensieren.
+3. **Elektronen ($e^-$):** Diese bewegen sich in der "Elektronenwolke" um den Kern herum. Sie tragen eine negative Elementarladung ($-1$) und sind extrem leicht ($0,0005$ u). Trotz ihrer geringen Masse ($9,109 \times 10^{-28}$ g) nehmen sie fast das gesamte Volumen des Atoms ein und sind für chemische Bindungen verantwortlich.
 
 **Größenvergleich:** Der Kern ist im Vergleich zum Gesamtatom winzig. Ein anschaulicher Vergleich besagt: Wäre das Atom so groß wie ein Fußballstadion, wäre der Kern so klein wie eine Erbse im Anstoßkreis.
 
@@ -30,6 +36,7 @@ Wir unterscheiden drei fundamentale Bausteine:
 ## 2.2 Identität und Vielfalt: Ordnungszahl, Massenzahl und Isotope
 
 ### 2.2.1 Kennzahlen des Atoms
+
 Um Atome eindeutig zu klassifizieren, nutzen wir spezifische Kennzahlen:
 
 * **Ordnungszahl (Z):** Auch Kernladungszahl genannt. Sie entspricht der Anzahl der Protonen im Kern. Da Atome elektrisch neutral sind, entspricht $Z$ auch der Anzahl der Elektronen. Alle Atome eines bestimmten Elements haben *immer* dieselbe Ordnungszahl (z.B. Kohlenstoff hat immer $Z=6$).
@@ -40,6 +47,7 @@ Um Atome eindeutig zu klassifizieren, nutzen wir spezifische Kennzahlen:
 **[Referenz: Siehe Folien 5-7]**
 
 ### 2.2.2 Isotope: Variationen eines Elements
+
 Während die Protonenzahl ($Z$) für ein Element fix ist, kann die Anzahl der Neutronen variieren. Solche Atome nennt man **Isotope**.
 Isotope eines Elements besitzen nahezu identische chemische Eigenschaften (da diese von Elektronen bestimmt werden), unterscheiden sich aber in ihrer Masse und physikalischen Stabilität (Radioaktivität).
 
@@ -51,6 +59,7 @@ Isotope eines Elements besitzen nahezu identische chemische Eigenschaften (da di
 **[Referenz: Siehe Folien 8-9]**
 
 ### 2.2.3 Atomgewicht und Durchschnittliche Atommasse
+
 Das im Periodensystem angegebene Atomgewicht ist keine ganze Zahl, sondern der **gewichtete Durchschnitt** der Massen aller natürlich vorkommenden Isotope eines Elements.
 
 **Berechnungsformel:**
@@ -69,12 +78,12 @@ Dies erklärt, warum Bor im Periodensystem mit $10,81$ u geführt wird.
 
 Um die Existenz von Isotopen nachzuweisen und ihre Massen präzise zu bestimmen, wird die Massenspektrometrie eingesetzt. Der Prozess verläuft in vier Stufen:
 
-1.  **Ionisation:** Die Probe wird verdampft und mit hochenergetischen Elektronen beschossen. Dabei werden Elektronen aus den Atomen herausgeschlagen, es entstehen positive Ionen (Kationen, meist $+1$).
-2.  **Beschleunigung:** Die Kationen werden durch ein elektrisches Feld in Richtung eines Magnetfeldes beschleunigt.
-3.  **Ablenkung:** Im Magnetfeld werden die Ionen auf eine Kreisbahn gezwungen. Der Radius der Bahn hängt vom Verhältnis Masse zu Ladung ($m/z$) ab.
+1. **Ionisation:** Die Probe wird verdampft und mit hochenergetischen Elektronen beschossen. Dabei werden Elektronen aus den Atomen herausgeschlagen, es entstehen positive Ionen (Kationen, meist $+1$).
+2. **Beschleunigung:** Die Kationen werden durch ein elektrisches Feld in Richtung eines Magnetfeldes beschleunigt.
+3. **Ablenkung:** Im Magnetfeld werden die Ionen auf eine Kreisbahn gezwungen. Der Radius der Bahn hängt vom Verhältnis Masse zu Ladung ($m/z$) ab.
     * *Leichte Ionen* werden stark abgelenkt.
     * *Schwere Ionen* werden schwach abgelenkt.
-4.  **Detektion:** Durch Variation des Magnetfeldes treffen Ionen unterschiedlicher Masse nacheinander auf den Detektor. Das Resultat ist ein Massenspektrum, das die relative Häufigkeit gegen $m/z$ aufträgt.
+4. **Detektion:** Durch Variation des Magnetfeldes treffen Ionen unterschiedlicher Masse nacheinander auf den Detektor. Das Resultat ist ein Massenspektrum, das die relative Häufigkeit gegen $m/z$ aufträgt.
 
 **Beispiel Neon:** Ein Spektrum von Neon zeigt Peaks bei $m/z=20$, $21$ und $22$, was die Existenz der Isotope ${}^{20}\text{Ne}$, ${}^{21}\text{Ne}$ und ${}^{22}\text{Ne}$ beweist.
 
@@ -87,15 +96,17 @@ Um die Existenz von Isotopen nachzuweisen und ihre Massen präzise zu bestimmen,
 Das Periodensystem der Elemente (PSE), ursprünglich von Dmitri Mendeleev basierend auf Atomgewichten entwickelt, ist heute nach steigender **Ordnungszahl** sortiert. Es offenbart die periodische Wiederkehr chemischer Eigenschaften.
 
 ### 2.4.1 Struktur des PSE
+
 * **Perioden (Zeilen 1-7):** Elemente derselben Periode füllen sukzessive dieselben Elektronenschalen auf.
 * **Gruppen (Spalten 1-18):** Elemente einer Gruppe besitzen dieselbe Anzahl an Valenzelektronen und zeigen daher sehr ähnliches chemisches Verhalten.
 
 ### 2.4.2 Wichtige Hauptgruppen
-1.  **Alkalimetalle (1A, außer H):** (Li, Na, K...) Weiche, hochreaktive Metalle. Reagieren heftig mit Wasser unter Bildung von Laugen und Wasserstoffgas. Bilden stets $+1$ Ionen.
-2.  **Erdalkalimetalle (2A):** (Be, Mg, Ca...) Etwas härter und weniger reaktiv als Alkalimetalle. Bilden $+2$ Ionen.
-3.  **Chalkogene (6A):** (O, S, Se...) "Erzbildner". Sauerstoff und Schwefel sind essenziell für das Leben und viele Mineralien.
-4.  **Halogene (7A):** (F, Cl, Br, I) "Salzbildner". Hochreaktive Nichtmetalle, die als zweiatomige Moleküle vorkommen ($F_2, Cl_2$). Bilden $-1$ Ionen (Halogenide).
-5.  **Edelgase (8A):** (He, Ne, Ar...) Reaktionsträge Gase mit voller Valenzschale (Oktett).
+
+1. **Alkalimetalle (1A, außer H):** (Li, Na, K...) Weiche, hochreaktive Metalle. Reagieren heftig mit Wasser unter Bildung von Laugen und Wasserstoffgas. Bilden stets $+1$ Ionen.
+2. **Erdalkalimetalle (2A):** (Be, Mg, Ca...) Etwas härter und weniger reaktiv als Alkalimetalle. Bilden $+2$ Ionen.
+3. **Chalkogene (6A):** (O, S, Se...) "Erzbildner". Sauerstoff und Schwefel sind essenziell für das Leben und viele Mineralien.
+4. **Halogene (7A):** (F, Cl, Br, I) "Salzbildner". Hochreaktive Nichtmetalle, die als zweiatomige Moleküle vorkommen ($F_2, Cl_2$). Bilden $-1$ Ionen (Halogenide).
+5. **Edelgase (8A):** (He, Ne, Ar...) Reaktionsträge Gase mit voller Valenzschale (Oktett).
 
 **[Referenz: Siehe Folien 17-32]**
 
@@ -106,6 +117,7 @@ Das Periodensystem der Elemente (PSE), ursprünglich von Dmitri Mendeleev basier
 Atome verbinden sich, um energetisch günstigere Zustände zu erreichen. Wir unterscheiden zwei Hauptarten von Verbindungen:
 
 ### 2.5.1 Molekulare Verbindungen (Kovalente Bindung)
+
 Diese entstehen meist zwischen **Nichtmetallen**. Die Atome teilen sich Elektronenpaare.
 * Die kleinste Einheit ist das **Molekül**.
 * **Beispiele:** Wasser ($H_2O$), Methan ($CH_4$), Ozon ($O_3$).
@@ -114,6 +126,7 @@ Diese entstehen meist zwischen **Nichtmetallen**. Die Atome teilen sich Elektron
     * *Strukturformel:* Zeigt die Verknüpfung der Atome (z.B. $H_2N-CH_2-COOH$).
 
 ### 2.5.2 Ionische Verbindungen (Ionenbindung)
+
 Diese entstehen meist zwischen **Metallen** und **Nichtmetallen** durch Elektronenübertrag.
 * **Ionenbildung:**
     * **Kation:** Ein Metallatom gibt Elektronen ab und wird positiv geladen (z.B. $Na \to Na^+ + e^-$).
@@ -123,6 +136,7 @@ Diese entstehen meist zwischen **Metallen** und **Nichtmetallen** durch Elektron
 **[Referenz: Siehe Folien 35-46]**
 
 ### 2.5.3 Mehratomige Ionen (Molekülionen)
+
 Besondere Aufmerksamkeit verlangen Gruppen von Atomen, die kovalent gebunden sind, aber *insgesamt* eine Ladung tragen. Diese müssen auswendig gelernt werden, da sie als fixe Einheiten in Reaktionen auftreten.
 
 **Wichtige Beispiele:**
@@ -143,8 +157,8 @@ Die Stärke der ionischen Bindung wird durch das Coulomb-Gesetz beschrieben. Es 
 $$F \propto \frac{q_1 \times q_2}{d^2}$$
 
 **Implikationen:**
-1.  **Höhere Ladung = Stärkere Bindung:** $MgO$ ($Mg^{2+}, O^{2-}$) hat einen viel höheren Schmelzpunkt ($2800^\circ C$) als $NaCl$ ($Na^+, Cl^-$) ($804^\circ C$), da die Ladungen ($+2/-2$ vs. $+1/-1$) eine vierfach stärkere Anziehung erzeugen.
-2.  **Kleinerer Ionenradius = Stärkere Bindung:** Kleinere Ionen können sich näher kommen ($d$ wird kleiner), was die Kraft erhöht.
+1. **Höhere Ladung = Stärkere Bindung:** $MgO$ ($Mg^{2+}, O^{2-}$) hat einen viel höheren Schmelzpunkt ($2800^\circ C$) als $NaCl$ ($Na^+, Cl^-$) ($804^\circ C$), da die Ladungen ($+2/-2$ vs. $+1/-1$) eine vierfach stärkere Anziehung erzeugen.
+2. **Kleinerer Ionenradius = Stärkere Bindung:** Kleinere Ionen können sich näher kommen ($d$ wird kleiner), was die Kraft erhöht.
 
 **[Referenz: Siehe Folien 70-73]**
 
@@ -155,10 +169,12 @@ $$F \propto \frac{q_1 \times q_2}{d^2}$$
 Um die mikroskopische Welt der Atome mit der makroskopischen Welt des Labors zu verbinden, nutzen Chemiker das Mol.
 
 ### 2.7.1 Definition des Mols
+
 Ein Mol ist definiert als die Substanzmenge, die exakt so viele Teilchen enthält, wie Atome in 12 Gramm des Kohlenstoff-Isotops ${}^{12}\text{C}$ enthalten sind. Diese Zahl ist die **Avogadro-Konstante ($N_A$)**:
 $$N_A \approx 6,022 \times 10^{23} \text{ Teilchen pro Mol}$$
 
 ### 2.7.2 Molare Masse (M)
+
 Die Molare Masse (in g/mol) entspricht zahlenmäßig dem Atomgewicht (in u).
 * **Beispiel Ethanol ($C_2H_6O$):**
     * $2 \times C (12,01) + 6 \times H (1,01) + 1 \times O (16,00)$
@@ -178,19 +194,21 @@ $$\text{Masse (g)} \leftrightarrow \text{Mol (n)} \leftrightarrow \text{Teilchen
 Chemiker bestimmen die Formel einer unbekannten Verbindung oft durch Analyse der Massenprozente (Elementaranalyse).
 
 ### 2.8.1 Empirische Formel (Verhältnisformel)
+
 Sie gibt das kleinste ganzzahlige Verhältnis der Atome an.
 **Vorgehensweise (Beispiel Bor-Wasserstoff-Verbindung, 81,10% B):**
-1.  **Basis 100g:** Angenommen wir haben 100g Substanz $\to$ 81,10g B und 18,90g H.
-2.  **In Mol umrechnen:**
+1. **Basis 100g:** Angenommen wir haben 100g Substanz $\to$ 81,10g B und 18,90g H.
+2. **In Mol umrechnen:**
     * $B: 81,10\,\text{g} / 10,81\,\text{g/mol} = 7,502\,\text{mol}$
     * $H: 18,90\,\text{g} / 1,008\,\text{g/mol} = 18,75\,\text{mol}$
-3.  **Durch kleinste Zahl teilen:**
+3. **Durch kleinste Zahl teilen:**
     * $B: 7,502 / 7,502 = 1$
     * $H: 18,75 / 7,502 = 2,5$
-4.  **Ganzzahlig machen:** Verhältnis $1 : 2,5$ wird verdoppelt zu $2 : 5$.
+4. **Ganzzahlig machen:** Verhältnis $1 : 2,5$ wird verdoppelt zu $2 : 5$.
     * **Empirische Formel:** $B_2H_5$
 
 ### 2.8.2 Molekulare Formel
+
 Um die wahre Molekülformel zu finden, benötigt man die molare Masse der Verbindung (experimentell bestimmt).
 * Masse der empirischen Einheit $B_2H_5 = 2(10,8) + 5(1,0) = 26,6\,\text{g/mol}$.
 * Experimentelle Molmasse = $53,3\,\text{g/mol}$.
@@ -206,6 +224,7 @@ Um die wahre Molekülformel zu finden, benötigt man die molare Masse der Verbin
 Die Bestimmung chemischer Formeln ist keine rein theoretische Übung, sondern ein zentraler Bestandteil der analytischen Chemie. Wir analysieren hier detailliert die in den Unterlagen skizzierten Fallstudien.
 
 ### 2.9.1 Fallstudie: Synthese und Analyse einer Zinn-Iod-Verbindung
+
 *Basierend auf dem Experiment von Seite 108.*
 
 **Das Szenario:**
@@ -234,6 +253,7 @@ Das bedeutet, auf jedes Zinn-Atom kommen vier Iod-Atome.
 ---
 
 ### 2.9.2 Fallstudie: Vom Prozentgehalt zur Molekülformel
+
 *Basierend auf dem Beispiel von Seite 109.*
 
 **Das Problem:**
@@ -273,20 +293,21 @@ Bei $C_4H_8$ könnte es sich um Buten (ein Alken) oder Cyclobutan (ein Cycloalka
 Damit Sie chemische Sachverhalte präzise kommunizieren können, müssen Sie die systematischen Benennungsregeln (IUPAC) beherrschen. Dies ist essenziell für die Prüfung.
 
 ### 2.10.1 Benennung ionischer Verbindungen (Salze)
+
 Die Grundregel lautet: **Kation zuerst, Anion zuletzt.**
 
-1.  **Metalle mit fester Ladung (Hauptgruppen 1, 2, Al):**
+1. **Metalle mit fester Ladung (Hauptgruppen 1, 2, Al):**
     Der Name des Metalls bleibt unverändert.
     * $NaCl$ $\rightarrow$ Natriumchlorid
     * $Al_2O_3$ $\rightarrow$ Aluminiumoxid
 
-2.  **Metalle mit variabler Ladung (Übergangsmetalle):**
+2. **Metalle mit variabler Ladung (Übergangsmetalle):**
     Hier **muss** die Ladung des Kations in römischen Ziffern in Klammern angegeben werden (Stock-System). Ohne diese Angabe ist der Name falsch!
     * $FeCl_2$ ($Fe^{2+}$) $\rightarrow$ Eisen(II)-chlorid
     * $FeCl_3$ ($Fe^{3+}$) $\rightarrow$ Eisen(III)-chlorid
     * *Ausnahme:* Veraltete Trivialnamen (Ferro- / Ferri-) sollten in modernen Klausuren vermieden werden, sind aber in der Literatur noch zu finden.
 
-3.  **Anionen:**
+3. **Anionen:**
     * Monatomare Anionen erhalten die Endung **-id** (Chlor**id**, Ox**id**, Nitr**id**).
     * Polyatomare Anionen mit Sauerstoff (Oxoanionen) folgen einer Systematik basierend auf der Sauerstoff-Anzahl:
         * $NO_3^-$ (mehr O) $\rightarrow$ Nitr**at**
@@ -295,6 +316,7 @@ Die Grundregel lautet: **Kation zuerst, Anion zuletzt.**
         * $SO_3^{2-}$ $\rightarrow$ Sulf**it**
 
 ### 2.10.2 Benennung molekularer Verbindungen (Nichtmetalle)
+
 Hier gibt es keine Ionen. Das Verhältnis der Atome wird durch griechische Zahlwörter (Präfixe) angegeben:
 * 1 = mono- (wird beim ersten Element oft weggelassen)
 * 2 = di-
@@ -319,6 +341,7 @@ Hier gibt es keine Ionen. Das Verhältnis der Atome wird durch griechische Zahlw
 In diesem Abschnitt werden die grundlegenden Rechenfertigkeiten (Einheiten & Signifikante Stellen) überprüft und die zentralen Kapitelthemen in Mini-Checks abgefragt.
 
 ## I. Das Folien-Quiz (Seite 111) – Gelöst & Erklärt
+
 *Hier geht es um Präzision. Achten Sie besonders auf die Regeln für **Signifikante Stellen (SigFigs)**.*
 
 ### 🅰️ Gruppe A-I (Lösungen)
@@ -442,10 +465,12 @@ C) $2.409 \times 10^{24}$
 ---
 
 # TEIL 3: MODUS C (HARDCORE) – DIE MASTER-PRÜFUNG
+
 **Thema:** Atome, Moleküle, Ionen & Stöchiometrie
 **Hilfsmittel:** Taschenrechner, Periodensystem
 
 ## TEIL I: Konzept-Verständnis & Multiple Select
+
 *Wählen Sie alle zutreffenden Aussagen aus (1-5 Antworten können richtig sein).*
 
 **Frage 1: Subatomare Struktur & Isotope**
@@ -467,6 +492,7 @@ Das Element "X" hat drei natürlich vorkommende Isotope: X-24, X-25, X-26. Das A
 ---
 
 ## TEIL II: Angewandte Stöchiometrie (Rechenaufgaben)
+
 *Hier müssen Sie den Rechenweg sauber herleiten. Achten Sie auf signifikante Stellen.*
 
 **Aufgabe 3: Die "Detektiv"-Aufgabe (Rückwärtsrechnung)**
@@ -486,6 +512,7 @@ Die molare Masse beträgt ca. $183 \text{ g/mol}$.
 ---
 
 ## TEIL III: Nomenklatur-Albtraum
+
 *Benennen Sie die Verbindungen oder erstellen Sie die Formel. Fehler in der Ladungszahl oder Schreibweise führen zu 0 Punkten.*
 
 **Aufgabe 5: Tabelle vervollständigen**
@@ -501,6 +528,7 @@ Die molare Masse beträgt ca. $183 \text{ g/mol}$.
 ---
 
 ## TEIL IV: Transfer & Struktur
+
 **Aufgabe 6: Das Ionen-Gitter**
 Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt von $2572\,^\circ\mathrm{C}$, während Kaliumchlorid ($KCl$) bereits bei $770\,^\circ\mathrm{C}$ schmilzt?
 *Begründen Sie dies physikalisch unter Verwendung des **Coulomb-Gesetzes** und gehen Sie auf Ladung und Ionenradius ein.*
@@ -510,7 +538,8 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
 
 # 🛑 LÖSUNGS-SCHLÜSSEL (HARDCORE)
 
-### Zu Frage 1 (Struktur):
+### Zu Frage 1 (Struktur)
+
 * **Richtige Antworten:** **[A], [B]**
 * *Analyse:*
     * [A] Richtig. Beide haben A=58.
@@ -519,7 +548,8 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
     * [D] Falsch. Ni: $58-28=30$ Neutronen. Fe: $58-26=32$ Neutronen. Sie sind NICHT gleich.
     * [E] Falsch. Eisen (Z=26) hat weniger Protonen als Nickel (Z=28).
 
-### Zu Frage 2 (Massenspektrometrie):
+### Zu Frage 2 (Massenspektrometrie)
+
 * **Richtige Antworten:** **[B], [C], [E]**
 * *Analyse:*
     * [A] Falsch. Wäre 25 am häufigsten, läge der Schnitt näher bei 25. Er liegt aber bei 24,31.
@@ -528,41 +558,45 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
     * [D] Spekulation. Stabilität lässt sich hieraus nicht ableiten.
     * [E] Richtig. Der Wert 24,31 ist ein statistisches Mittel. Kein einzelnes Atom wiegt so viel.
 
-### Zu Aufgabe 3 (Das unbekannte Metall):
-1.  **Masse Sauerstoff:** $1,44 \text{ g}$
+### Zu Aufgabe 3 (Das unbekannte Metall)
+
+1. **Masse Sauerstoff:** $1,44 \text{ g}$
     * $n(O) = 1,44 \text{ g} / 16,00 \text{ g/mol} = 0,09 \text{ mol}$
-2.  **Stöchiometrie:** Formel ist $M_2O_3$.
+2. **Stöchiometrie:** Formel ist $M_2O_3$.
     * Verhältnis $M : O = 2 : 3$.
     * $n(M) = n(O) \times (2/3) = 0,09 \times 0,666... = 0,06 \text{ mol}$.
-3.  **Molare Masse M:**
+3. **Molare Masse M:**
     * $M = m / n = 3,24 \text{ g} / 0,06 \text{ mol} = 54,0 \text{ g/mol}$.
-4.  **Identifikation:**
+4. **Identifikation:**
     * Blick ins PSE $\to$ Masse 54,0 u entspricht am ehesten **Chrom (Cr)** oder Mangan (Mn), je nach Rundungsungenauigkeit im Experiment. Die mathematische Antwort ist **54,0 g/mol**.
 
-### Zu Aufgabe 4 (Adrenalin):
-1.  **Basis 100g:** $59 C, 7.1 H, 26.2 O, 7.7 N$.
-2.  **Mol:**
+### Zu Aufgabe 4 (Adrenalin)
+
+1. **Basis 100g:** $59 C, 7.1 H, 26.2 O, 7.7 N$.
+2. **Mol:**
     * $C: 59/12.01 = 4.91$
     * $H: 7.1/1.008 = 7.04$
     * $O: 26.2/16.00 = 1.64$
     * $N: 7.7/14.01 = 0.55$ (Der "Teiler")
-3.  **Verhältnisse (durch 0.55):**
+3. **Verhältnisse (durch 0.55):**
     * $C: 8.9 \approx 9$
     * $H: 12.8 \approx 13$
     * $O: 2.98 \approx 3$
     * $N: 1$
-4.  **Empirische Formel:** $C_9H_{13}NO_3$
-5.  **Check Masse:** $(9\times12) + 13 + 14 + (3\times16) = 108 + 13 + 14 + 48 = 183 \text{ g/mol}$.
-6.  **Molekülformel:** Identisch mit empirischer Formel. $\to$ **$C_9H_{13}NO_3$**
+4. **Empirische Formel:** $C_9H_{13}NO_3$
+5. **Check Masse:** $(9\times12) + 13 + 14 + (3\times16) = 108 + 13 + 14 + 48 = 183 \text{ g/mol}$.
+6. **Molekülformel:** Identisch mit empirischer Formel. $\to$ **$C_9H_{13}NO_3$**
 
-### Zu Aufgabe 5 (Nomenklatur):
+### Zu Aufgabe 5 (Nomenklatur)
+
 * $Cu(NO_3)_2$ $\to$ **Kupfer(II)-nitrat**
 * $P_4O_{10}$ $\to$ **Tetraphosphordecaoxid**
 * Eisen(III)-sulfat $\to$ **$Fe_2(SO_4)_3$**
 * Ammoniumcarbonat $\to$ **$(NH_4)_2CO_3$**
 * $K_2SO_3$ $\to$ **Kaliumsulfit**
 
-### Zu Aufgabe 6 (Gitterenergie):
+### Zu Aufgabe 6 (Gitterenergie)
+
 * **Ladung:** CaO besteht aus $Ca^{2+}$ und $O^{2-}$. KCl aus $K^+$ und $Cl^-$.
 * **Gesetz:** $F \propto (q_1 \times q_2)$. Das Produkt der Ladungen bei CaO ist $2 \times 2 = 4$. Bei KCl ist es $1 \times 1 = 1$.
 * **Schlussfolgerung:** Die Anziehungskraft (Gitterenergie) im CaO ist etwa **4-mal stärker** rein aufgrund der Ladung. Zudem sind $O^{2-}$-Ionen sehr klein, was den Abstand verringert und die Kraft weiter erhöht.
