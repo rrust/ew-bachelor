@@ -252,6 +252,30 @@ function shuffleArray(array) {
   return array;
 }
 
+// Celebration GIFs from Giphy for token rewards
+const CELEBRATION_GIFS = [
+  'https://media.giphy.com/media/g9582DNuQppxC/giphy.gif', // fireworks
+  'https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif', // confetti
+  'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif', // celebration
+  'https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif', // party
+  'https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif', // confetti burst
+  'https://media.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif', // celebrate
+  'https://media.giphy.com/media/artj92V8o75VPL7AeQ/giphy.gif', // yay
+  'https://media.giphy.com/media/3oz9ZE2Oo9zRC/giphy.gif' // party popper
+];
+
+/**
+ * Get a random celebration GIF, cycling through them
+ */
+function getRandomCelebrationGif() {
+  const storageKey = 'training-gif-index';
+  let index = parseInt(localStorage.getItem(storageKey) || '0', 10);
+  const gif = CELEBRATION_GIFS[index % CELEBRATION_GIFS.length];
+  // Store next index for variety
+  localStorage.setItem(storageKey, String((index + 1) % CELEBRATION_GIFS.length));
+  return gif;
+}
+
 // Training state
 let trainingState = {
   questions: [],
@@ -579,57 +603,69 @@ function renderTrainingResults() {
 
   // Award tokens based on performance
   const tokensEarned = awardTokensForRound(correctCount);
+  const totalTokens = getTrainingStats().tokens;
 
-  // Update the token display
-  updateTokenDisplay();
+  // Get celebration GIF if tokens earned
+  const celebrationGif = tokensEarned > 0 ? getRandomCelebrationGif() : null;
 
   // Determine feedback
-  let icon, iconColor, title, message, tokenMessage, tokenClass;
+  let title, message, tokenClass;
 
   if (tokensEarned === 3) {
-    icon = Icons.get('trophy', 'w-12 h-12');
-    iconColor = 'text-yellow-500';
     title = 'Ausgezeichnet!';
     message = `${correctCount} von ${totalQuestions} richtig`;
-    tokenMessage = `+${tokensEarned} Tokens!`;
     tokenClass =
       'text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30';
   } else if (tokensEarned === 1) {
-    icon = Icons.get('star', 'w-12 h-12');
-    iconColor = 'text-blue-500';
     title = 'Gut gemacht!';
     message = `${correctCount} von ${totalQuestions} richtig`;
-    tokenMessage = `+${tokensEarned} Token!`;
     tokenClass =
       'text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30';
   } else {
-    icon = Icons.get('muscle', 'w-12 h-12');
-    iconColor = 'text-gray-400';
     title = 'Weiter üben!';
     message = `${correctCount} von ${totalQuestions} richtig`;
-    tokenMessage = null;
     tokenClass = null;
   }
 
   container.innerHTML = `
     <div class="max-w-sm mx-auto text-center py-6">
-      <!-- Result icon -->
-      <div class="mb-4 ${iconColor}">
-        ${icon}
-      </div>
-      
-      <h2 class="text-xl font-bold mb-1">${title}</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-4">${message}</p>
-      
       ${
-        tokenMessage
+        celebrationGif
           ? `
-        <!-- Token earned badge with zoom animation -->
-        <div id="token-reward-badge" class="inline-flex items-center gap-1 px-4 py-2 rounded-full ${tokenClass} text-lg font-bold mb-4" style="transform: scale(0); opacity: 0;">
-          ${Icons.get('token', 'w-5 h-5')} ${tokenMessage}
+        <!-- Celebration GIF -->
+        <div class="mb-4 rounded-lg overflow-hidden mx-auto" style="max-width: 200px; max-height: 150px;">
+          <img src="${celebrationGif}" alt="Celebration" class="w-full h-full object-cover" loading="lazy">
         </div>
       `
-          : ''
+          : `
+        <!-- No tokens - simple message -->
+        <div class="mb-4 text-gray-400">
+          ${Icons.get('refresh', 'w-12 h-12 mx-auto')}
+        </div>
+      `
+      }
+      
+      <h2 class="text-xl font-bold mb-1">${title}</h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-2">${message}</p>
+      
+      ${
+        tokensEarned > 0
+          ? `
+        <!-- Token earned badge with zoom animation -->
+        <div id="token-reward-badge" class="inline-flex flex-col items-center gap-1 px-4 py-3 rounded-xl ${tokenClass} mb-4" style="transform: scale(0); opacity: 0;">
+          <div class="flex items-center gap-2 text-2xl font-bold">
+            ${Icons.get('token', 'w-6 h-6')} +${tokensEarned}
+          </div>
+          <div class="text-sm opacity-80">
+            Gesamt: ${totalTokens} Tokens
+          </div>
+        </div>
+      `
+          : `
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Ab 5 richtigen Antworten gibt es Tokens
+        </p>
+      `
       }
 
       <!-- Action buttons -->
@@ -651,7 +687,7 @@ function renderTrainingResults() {
   `;
 
   // Animate token badge with zoom effect
-  if (tokenMessage) {
+  if (tokensEarned > 0) {
     const badge = document.getElementById('token-reward-badge');
     if (badge) {
       // Small delay before animation starts
