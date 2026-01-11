@@ -267,9 +267,6 @@ function initTrainingView() {
   const completedTests = getCompletedTests();
   const container = document.getElementById('training-content');
 
-  // Update token display
-  updateTokenDisplay();
-
   if (completedTests.length === 0) {
     container.innerHTML = `
       <div class="text-center py-12">
@@ -333,10 +330,15 @@ function renderTrainingQuestion() {
         </div>
       </div>
 
-      <!-- Topic badge -->
-      <div class="mb-4 flex items-center justify-between flex-wrap gap-2">
+      <!-- Topic badge with token indicator -->
+      <div class="mb-4 flex items-center flex-wrap gap-2">
         <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
           ${question.topic}
+        </span>
+        <span class="flex-1"></span>
+        <!-- Token indicator -->
+        <span id="token-count-inline" class="text-xs text-gray-400 dark:text-gray-500" title="Trainings-Tokens">
+          🎟️ ${getTrainingStats().tokens}
         </span>
         ${
           question.cheatSheet
@@ -578,12 +580,16 @@ function renderTrainingResults() {
       <h2 class="text-xl font-bold mb-1">${title}</h2>
       <p class="text-gray-600 dark:text-gray-400 mb-4">${message}</p>
       
-      ${tokenMessage ? `
+      ${
+        tokenMessage
+          ? `
         <!-- Token earned badge -->
         <div class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${tokenClass} text-sm font-medium mb-4">
           🎟️ ${tokenMessage}
         </div>
-      ` : ''}
+      `
+          : ''
+      }
 
       <!-- Action buttons -->
       <div class="flex flex-col gap-2 mt-4">
