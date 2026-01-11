@@ -127,18 +127,24 @@ function renderAlertsView() {
           <span class="text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white">DEV</span>
           <span class="text-sm font-medium text-orange-800 dark:text-orange-200">Test-Funktionen</span>
         </div>
-        <div class="flex gap-2">
+        <div class="flex flex-wrap gap-2">
           <button
             onclick="generateDemoAlerts()"
             class="flex items-center gap-1 text-xs px-3 py-1.5 bg-orange-100 dark:bg-orange-800/30 border border-orange-300 dark:border-orange-600 rounded hover:bg-orange-200 dark:hover:bg-orange-700/30 transition-colors"
           >
-            ${Icons.get('plus', 'w-3 h-3')} Demo-Alerts generieren
+            ${Icons.get('plus', 'w-3 h-3')} Demo-Alerts
+          </button>
+          <button
+            onclick="testNotification()"
+            class="flex items-center gap-1 text-xs px-3 py-1.5 bg-blue-100 dark:bg-blue-800/30 border border-blue-300 dark:border-blue-600 rounded hover:bg-blue-200 dark:hover:bg-blue-700/30 transition-colors text-blue-700 dark:text-blue-300"
+          >
+            ${Icons.get('bell', 'w-3 h-3')} Test Push
           </button>
           <button
             onclick="clearDemoAlerts()"
             class="flex items-center gap-1 text-xs px-3 py-1.5 bg-red-100 dark:bg-red-800/30 border border-red-300 dark:border-red-600 rounded hover:bg-red-200 dark:hover:bg-red-700/30 transition-colors text-red-700 dark:text-red-300"
           >
-            ${Icons.get('trash', 'w-3 h-3')} Achievements löschen
+            ${Icons.get('trash', 'w-3 h-3')} Löschen
           </button>
         </div>
       </div>

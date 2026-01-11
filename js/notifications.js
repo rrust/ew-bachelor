@@ -253,6 +253,62 @@ function dismissNotificationPrompt() {
   }
 }
 
+/**
+ * [DEV MODE] Force show a test notification (bypasses daily limit)
+ */
+function testNotification() {
+  console.log('[Notifications] Testing...');
+  console.log('[Notifications] Supported:', isNotificationSupported());
+  console.log('[Notifications] Permission:', Notification.permission);
+
+  if (!isNotificationSupported()) {
+    alert('Notifications nicht unterstützt in diesem Browser');
+    return;
+  }
+
+  if (Notification.permission !== 'granted') {
+    alert(
+      'Notification Permission: ' +
+        Notification.permission +
+        '\nGehe zu #/alerts und klicke "Aktivieren"'
+    );
+    return;
+  }
+
+  const alerts = window.getAchievementAlerts
+    ? window.getAchievementAlerts()
+    : null;
+  console.log('[Notifications] Alerts:', alerts);
+
+  if (!alerts || alerts.total === 0) {
+    alert('Keine Alerts vorhanden. Lade erst Test-Daten (Dev Mode → Alerts)');
+    return;
+  }
+
+  // Clear the daily limit to force show
+  localStorage.removeItem('lastAlertNotification');
+
+  // Show notification
+  showAlertNotification(alerts);
+  alert('Notification sollte jetzt erscheinen!');
+}
+
+/**
+ * [DEV MODE] Show notification debug info
+ */
+function debugNotifications() {
+  const info = {
+    supported: isNotificationSupported(),
+    permission: 'Notification' in window ? Notification.permission : 'N/A',
+    badgeSupported: isBadgeSupported(),
+    lastNotification: localStorage.getItem('lastAlertNotification'),
+    today: new Date().toDateString(),
+    alerts: window.getAchievementAlerts ? window.getAchievementAlerts() : null
+  };
+  console.table(info);
+  return info;
+}
+
 // Expose to global scope
 window.Notifications = {
   isSupported: isNotificationSupported,
@@ -261,9 +317,12 @@ window.Notifications = {
   showAlertNotification: showAlertNotification,
   updateAppBadge: updateAppBadge,
   init: initNotifications,
-  promptIfNeeded: promptForNotificationsIfNeeded
+  promptIfNeeded: promptForNotificationsIfNeeded,
+  test: testNotification,
+  debug: debugNotifications
 };
 
 // Also expose individual functions for onclick handlers
 window.enableNotifications = enableNotifications;
 window.dismissNotificationPrompt = dismissNotificationPrompt;
+window.testNotification = testNotification;
