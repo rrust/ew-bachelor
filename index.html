@@ -1116,9 +1116,12 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker
-            .register('./sw.js')
+            .register('./sw.js', { updateViaCache: 'none' })
             .then((registration) => {
               console.log('SW registered:', registration.scope);
+
+              // Force check for updates on every page load
+              registration.update();
 
               // Check for updates
               registration.addEventListener('updatefound', () => {
