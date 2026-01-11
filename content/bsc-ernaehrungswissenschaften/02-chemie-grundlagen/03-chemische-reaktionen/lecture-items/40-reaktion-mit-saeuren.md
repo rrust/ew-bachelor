@@ -25,12 +25,12 @@ $$Mg(s) + 2H^+(aq) \rightarrow Mg^{2+}(aq) + H_2(g) \uparrow$$
 
 ### Weitere reaktive Metalle
 
-| Metall | Reaktion mit Säure |
-|--------|-------------------|
-| $Mg$ | Sehr heftig, schnell |
-| $Zn$ | Mäßig schnell |
-| $Fe$ | Langsam |
-| $Pb$ | Sehr langsam |
+| Metall | Reaktion mit Säure   |
+| ------ | -------------------- |
+| $Mg$   | Sehr heftig, schnell |
+| $Zn$   | Mäßig schnell        |
+| $Fe$   | Langsam              |
+| $Pb$   | Sehr langsam         |
 
 ### Edelmetalle reagieren NICHT
 

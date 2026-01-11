@@ -18,25 +18,25 @@ Nicht alle Redox-Reaktionen laufen spontan ab. Ob ein Metall ein anderes aus ein
 
 Von **reaktiv** (oben) bis **edel** (unten):
 
-| Metall | Symbol | Reaktivität |
-|--------|--------|-------------|
-| Lithium | $Li$ | ↑ sehr reaktiv |
-| Kalium | $K$ | ↑ |
-| Calcium | $Ca$ | |
-| Natrium | $Na$ | |
-| Magnesium | $Mg$ | |
-| Aluminium | $Al$ | |
-| Zink | $Zn$ | |
-| Eisen | $Fe$ | |
-| Nickel | $Ni$ | |
-| Zinn | $Sn$ | |
-| Blei | $Pb$ | |
-| **Wasserstoff** | $H_2$ | ← Referenzpunkt |
-| Kupfer | $Cu$ | |
-| Quecksilber | $Hg$ | |
-| Silber | $Ag$ | |
-| Platin | $Pt$ | ↓ |
-| Gold | $Au$ | ↓ sehr edel |
+| Metall          | Symbol | Reaktivität     |
+| --------------- | ------ | --------------- |
+| Lithium         | $Li$   | ↑ sehr reaktiv  |
+| Kalium          | $K$    | ↑               |
+| Calcium         | $Ca$   |                 |
+| Natrium         | $Na$   |                 |
+| Magnesium       | $Mg$   |                 |
+| Aluminium       | $Al$   |                 |
+| Zink            | $Zn$   |                 |
+| Eisen           | $Fe$   |                 |
+| Nickel          | $Ni$   |                 |
+| Zinn            | $Sn$   |                 |
+| Blei            | $Pb$   |                 |
+| **Wasserstoff** | $H_2$  | ← Referenzpunkt |
+| Kupfer          | $Cu$   |                 |
+| Quecksilber     | $Hg$   |                 |
+| Silber          | $Ag$   |                 |
+| Platin          | $Pt$   | ↓               |
+| Gold            | $Au$   | ↓ sehr edel     |
 
 ### Unedle vs. edle Metalle
 

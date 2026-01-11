@@ -21,12 +21,13 @@ warningThreshold: 7
 **Aufbau:** Edukte → Produkte
 
 **Aggregatzustände:**
-| Symbol | Bedeutung |
-|--------|-----------|
-| (s) | solid – fest |
-| (l) | liquid – flüssig |
-| (g) | gas – gasförmig |
-| (aq) | aqueous – in Wasser gelöst |
+
+| Symbol | Bedeutung                  |
+| ------ | -------------------------- |
+| (s)    | solid – fest               |
+| (l)    | liquid – flüssig           |
+| (g)    | gas – gasförmig            |
+| (aq)   | aqueous – in Wasser gelöst |
 
 **Massenerhaltung:** Atome werden weder erschaffen noch vernichtet – nur umgruppiert!
 
@@ -42,11 +43,11 @@ warningThreshold: 7
 
 ## Elektrolyte
 
-| Typ | Dissoziation | Leitfähigkeit | Pfeil |
-|-----|--------------|---------------|-------|
-| **Stark** | ~100% | Hoch | $\rightarrow$ |
-| **Schwach** | < 5% | Gering | $\rightleftharpoons$ |
-| **Nicht** | 0% | Keine | — |
+| Typ         | Dissoziation | Leitfähigkeit | Pfeil                |
+| ----------- | ------------ | ------------- | -------------------- |
+| **Stark**   | ~100%        | Hoch          | $\rightarrow$        |
+| **Schwach** | < 5%         | Gering        | $\rightleftharpoons$ |
+| **Nicht**   | 0%           | Keine         | —                    |
 
 **Beispiele:**
 - Stark: NaCl, HCl, NaOH
@@ -72,25 +73,25 @@ warningThreshold: 7
 
 ## Die 6 Starken Säuren
 
-| Säure | Formel |
-|-------|--------|
-| Salzsäure | HCl |
-| Bromwasserstoffsäure | HBr |
-| Iodwasserstoffsäure | HI |
-| Salpetersäure | HNO₃ |
-| Perchlorsäure | HClO₄ |
-| Schwefelsäure | H₂SO₄ |
+| Säure                | Formel |
+| -------------------- | ------ |
+| Salzsäure            | HCl    |
+| Bromwasserstoffsäure | HBr    |
+| Iodwasserstoffsäure  | HI     |
+| Salpetersäure        | HNO₃   |
+| Perchlorsäure        | HClO₄  |
+| Schwefelsäure        | H₂SO₄  |
 
 **Neutralisation:** Säure + Base → Salz + Wasser
 
 ## Gasbildende Reaktionen
 
-| Edukte | Gas |
-|--------|-----|
+| Edukte           | Gas |
+| ---------------- | --- |
 | Carbonat + Säure | CO₂ |
-| Sulfid + Säure | H₂S |
-| Sulfit + Säure | SO₂ |
-| NH₄⁺ + Base | NH₃ |
+| Sulfid + Säure   | H₂S |
+| Sulfit + Säure   | SO₂ |
+| NH₄⁺ + Base      | NH₃ |
 
 ## Oxidationszahlen – 5 Regeln
 
@@ -102,10 +103,10 @@ warningThreshold: 7
 
 ## Redox-Reaktionen
 
-| Prozess | Elektronen | Oxidationszahl |
-|---------|------------|----------------|
-| **Oxidation** | Abgabe | steigt ↑ |
-| **Reduktion** | Aufnahme | sinkt ↓ |
+| Prozess       | Elektronen | Oxidationszahl |
+| ------------- | ---------- | -------------- |
+| **Oxidation** | Abgabe     | steigt ↑       |
+| **Reduktion** | Aufnahme   | sinkt ↓        |
 
 **Merke:**
 - **Reduktionsmittel** wird oxidiert (gibt e⁻ ab)
@@ -114,11 +115,13 @@ warningThreshold: 7
 ## Spannungsreihe (Auswahl)
 
 ↑ Reaktiv (unedle Metalle)
-```
+
+```text
 Li > K > Ca > Na > Mg > Al > Zn > Fe > Ni > Sn > Pb
                     ─── H₂ ───
                 Cu > Hg > Ag > Pt > Au
 ```
+
 ↓ Edel (Edelmetalle)
 
 - **Unedle Metalle** (über H₂): Reagieren mit Säuren → H₂

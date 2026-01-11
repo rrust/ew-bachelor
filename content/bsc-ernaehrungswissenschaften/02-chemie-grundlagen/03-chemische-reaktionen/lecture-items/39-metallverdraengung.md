@@ -26,10 +26,10 @@ $$Cu(s) + 2Ag^+(aq) \rightarrow Cu^{2+}(aq) + 2Ag(s)$$
 
 ### Warum funktioniert das?
 
-| Metall | Position | Rolle |
-|--------|----------|-------|
-| Kupfer | Oberhalb von Silber | Reduktionsmittel |
-| Silber | Unterhalb von Kupfer | Wird reduziert |
+| Metall | Position             | Rolle            |
+| ------ | -------------------- | ---------------- |
+| Kupfer | Oberhalb von Silber  | Reduktionsmittel |
+| Silber | Unterhalb von Kupfer | Wird reduziert   |
 
 Kupfer ist reaktiver als Silber → Kupfer kann Silber-Ionen zu Silber-Metall reduzieren.
 
