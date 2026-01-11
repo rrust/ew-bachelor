@@ -473,6 +473,20 @@ function renderTrainingQuestion(animateIn = false) {
       });
     }
   }
+
+  // Dev mode: highlight correct answers with light green border
+  if (window.isDevMode && window.isDevMode()) {
+    const isMultiple = question.type === 'multiple-choice-multiple';
+    const correctAnswers = isMultiple ? question.correctAnswers : [question.correctAnswer];
+    
+    const labels = document.querySelectorAll('#training-options label');
+    labels.forEach((label) => {
+      const input = label.querySelector('input');
+      if (input && correctAnswers.includes(input.value)) {
+        label.classList.add('border-green-400', 'border-2');
+      }
+    });
+  }
 }
 
 /**
