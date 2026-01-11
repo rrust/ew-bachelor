@@ -297,8 +297,9 @@ function initTrainingView() {
 
 /**
  * Render the current training question
+ * @param {boolean} animateIn - If true, animate the question sliding in from right
  */
-function renderTrainingQuestion() {
+function renderTrainingQuestion(animateIn = false) {
   const container = document.getElementById('training-content');
 
   if (trainingState.currentIndex >= trainingState.questions.length) {
@@ -311,8 +312,11 @@ function renderTrainingQuestion() {
     (trainingState.currentIndex / trainingState.questions.length) * 100;
   const isMultipleAnswers = question.type === 'multiple-choice-multiple';
 
+  // Animation styles for slide-in
+  const initialStyle = animateIn ? 'transform: translateX(100%); opacity: 0;' : '';
+
   container.innerHTML = `
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
       <!-- Progress -->
       <div class="mb-6">
         <div class="flex justify-between items-center mb-2">
@@ -400,6 +404,21 @@ function renderTrainingQuestion() {
       </div>
     </div>
   `;
+
+  // Animate slide-in if requested
+  if (animateIn) {
+    const questionCard = container.querySelector('.training-question-card');
+    if (questionCard) {
+      // Trigger reflow to ensure initial styles are applied
+      questionCard.offsetHeight;
+      // Animate to final position
+      requestAnimationFrame(() => {
+        questionCard.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-out';
+        questionCard.style.transform = 'translateX(0)';
+        questionCard.style.opacity = '1';
+      });
+    }
+  }
 
   // Render math in question and options
   if (window.renderMathInElement) {
@@ -524,11 +543,26 @@ function showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers) {
 }
 
 /**
- * Move to next question
+ * Move to next question with slide animation
  */
 function nextTrainingQuestion() {
-  trainingState.currentIndex++;
-  renderTrainingQuestion();
+  const container = document.getElementById('training-content');
+  const questionCard = container.querySelector('.training-question-card');
+  
+  if (questionCard) {
+    // Slide out to the left
+    questionCard.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-out';
+    questionCard.style.transform = 'translateX(-100%)';
+    questionCard.style.opacity = '0';
+    
+    setTimeout(() => {
+      trainingState.currentIndex++;
+      renderTrainingQuestion(true); // true = animate in from right
+    }, 300);
+  } else {
+    trainingState.currentIndex++;
+    renderTrainingQuestion();
+  }
 }
 
 /**
@@ -586,9 +620,9 @@ function renderTrainingResults() {
       ${
         tokenMessage
           ? `
-        <!-- Token earned badge -->
-        <div class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${tokenClass} text-sm font-medium mb-4">
-          ${Icons.get('token', 'w-4 h-4')} ${tokenMessage}
+        <!-- Token earned badge with zoom animation -->
+        <div id="token-reward-badge" class="inline-flex items-center gap-1 px-4 py-2 rounded-full ${tokenClass} text-lg font-bold mb-4" style="transform: scale(0); opacity: 0;">
+          ${Icons.get('token', 'w-5 h-5')} ${tokenMessage}
         </div>
       `
           : ''
@@ -611,6 +645,19 @@ function renderTrainingResults() {
       </div>
     </div>
   `;
+
+  // Animate token badge with zoom effect
+  if (tokenMessage) {
+    const badge = document.getElementById('token-reward-badge');
+    if (badge) {
+      // Small delay before animation starts
+      setTimeout(() => {
+        badge.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-out';
+        badge.style.transform = 'scale(1)';
+        badge.style.opacity = '1';
+      }, 200);
+    }
+  }
 }
 
 /**
