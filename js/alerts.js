@@ -573,23 +573,76 @@ async function enableNotificationsAndRefresh() {
   if (window.enableNotifications) {
     await window.enableNotifications();
   }
+  // Enable in localStorage
+  localStorage.setItem('pushNotificationsEnabled', 'true');
   // Re-render to update the status icon
   renderAlertsView();
 }
 
 /**
- * Show notification status info
+ * Check if push notifications are enabled (user preference)
  */
-function showNotificationStatus() {
-  // Show a brief toast/info
+function arePushNotificationsEnabled() {
+  // If never set, default to true if permission is granted
+  const stored = localStorage.getItem('pushNotificationsEnabled');
+  if (stored === null) {
+    return Notification.permission === 'granted';
+  }
+  return stored === 'true';
+}
+
+/**
+ * Toggle push notifications on/off
+ */
+function togglePushNotifications() {
+  const permission = Notification.permission;
+  
+  if (permission !== 'granted') {
+    // Need to request permission first
+    enableNotificationsAndRefresh();
+    return;
+  }
+  
+  const currentlyEnabled = arePushNotificationsEnabled();
+  const newState = !currentlyEnabled;
+  
+  localStorage.setItem('pushNotificationsEnabled', newState ? 'true' : 'false');
+  
+  // Show feedback toast
+  showNotificationToggleToast(newState);
+  
+  // Re-render to update icon
+  renderAlertsView();
+}
+
+/**
+ * Show toast for notification toggle
+ */
+function showNotificationToggleToast(enabled) {
+  const existing = document.getElementById('notification-toggle-toast');
+  if (existing) existing.remove();
+  
   const toast = document.createElement('div');
-  toast.className = 'fixed bottom-20 left-4 right-4 bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 text-green-800 dark:text-green-200 rounded-lg p-3 z-50 shadow-lg text-sm';
-  toast.innerHTML = `
-    <div class="flex items-center gap-2">
-      ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
-      <span>Push-Benachrichtigungen sind aktiv</span>
-    </div>
-  `;
+  toast.id = 'notification-toggle-toast';
+  
+  if (enabled) {
+    toast.className = 'fixed bottom-20 left-4 right-4 bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 text-green-800 dark:text-green-200 rounded-lg p-3 z-50 shadow-lg text-sm';
+    toast.innerHTML = `
+      <div class="flex items-center gap-2">
+        ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
+        <span>Push-Benachrichtigungen aktiviert</span>
+      </div>
+    `;
+  } else {
+    toast.className = 'fixed bottom-20 left-4 right-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 text-red-800 dark:text-red-200 rounded-lg p-3 z-50 shadow-lg text-sm';
+    toast.innerHTML = `
+      <div class="flex items-center gap-2">
+        ${Icons.get('close', 'w-5 h-5', 'text-red-500')}
+        <span>Push-Benachrichtigungen deaktiviert</span>
+      </div>
+    `;
+  }
+  
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 3000);
 }
@@ -612,15 +665,29 @@ function renderNotificationStatusIcon() {
   const permission = Notification.permission;
 
   if (permission === 'granted') {
-    return `
-      <button
-        onclick="showNotificationStatus()"
-        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-        title="Push-Benachrichtigungen aktiv"
-      >
-        ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
-      </button>
-    `;
+    const enabled = arePushNotificationsEnabled();
+    
+    if (enabled) {
+      return `
+        <button
+          onclick="togglePushNotifications()"
+          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          title="Push-Benachrichtigungen aktiv (klicken zum Deaktivieren)"
+        >
+          ${Icons.get('bell', 'w-5 h-5', 'text-green-500')}
+        </button>
+      `;
+    } else {
+      return `
+        <button
+          onclick="togglePushNotifications()"
+          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          title="Push-Benachrichtigungen deaktiviert (klicken zum Aktivieren)"
+        >
+          ${Icons.get('bell', 'w-5 h-5', 'text-red-500')}
+        </button>
+      `;
+    }
   } else if (permission === 'denied') {
     return `
       <button
@@ -886,4 +953,5 @@ window.checkRenewalAfterQuiz = checkRenewalAfterQuiz;
 window.initAlerts = initAlerts;
 window.generateDemoAlerts = generateDemoAlerts;
 window.clearDemoAlerts = clearDemoAlerts;
-window.showNotificationStatus = showNotificationStatus;
+window.togglePushNotifications = togglePushNotifications;
+window.arePushNotificationsEnabled = arePushNotificationsEnabled;
