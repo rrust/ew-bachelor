@@ -103,6 +103,23 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           id="header-dev-badge${idSuffix}"
           class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
         >DEV</span>
+        <!-- Alerts Icon (Bell) -->
+        <button
+          id="nav-alerts${idSuffix}"
+          class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+            view === 'alerts'
+              ? 'text-blue-600 dark:text-blue-400'
+              : 'text-gray-600 dark:text-gray-400'
+          }"
+          title="Benachrichtigungen"
+          onclick="window.location.hash='#/alerts'"
+        >
+          ${Icons.get('bell')}
+          <span
+            id="alert-badge${idSuffix}"
+            class="hidden absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full bg-red-500"
+          ></span>
+        </button>
         <!-- Search Icon -->
         <button
           id="nav-search${idSuffix}"

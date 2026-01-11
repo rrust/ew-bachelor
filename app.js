@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     tools: document.getElementById('tools-view'),
     map: document.getElementById('map-view'),
     progress: document.getElementById('progress-view'),
+    alerts: document.getElementById('alerts-view'),
     search: document.getElementById('search-view')
   };
 
@@ -161,6 +162,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       route.view = 'map';
     } else if (parts[offset] === 'progress') {
       route.view = 'progress';
+    } else if (parts[offset] === 'alerts') {
+      route.view = 'alerts';
+    } else if (parts[offset] === 'search') {
+      route.view = 'search';
+      if (parts[offset + 1]) {
+        route.query = decodeURIComponent(parts[offset + 1]);
+      }
     } else if (parts[offset] === 'achievements') {
       route.view = 'achievements';
       if (parts[offset + 1]) {
@@ -240,6 +248,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateGreeting();
       showView('progress');
       renderProgressDashboard(MODULES, APP_CONTENT);
+      return true;
+    } else if (route.view === 'alerts') {
+      updateGreeting();
+      showView('alerts');
+      if (window.renderAlertsView) {
+        window.renderAlertsView();
+      }
       return true;
     } else if (route.view === 'search') {
       updateGreeting();
@@ -334,6 +349,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('tools-view', 'tools');
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
+    injectHeader('alerts-view', 'alerts');
     injectHeader('search-view', 'search');
   }
 
@@ -417,6 +433,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('tools-view', 'tools');
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
+    injectHeader('alerts-view', 'alerts');
     injectHeader('search-view', 'search');
 
     // 4. Determine if user needs to enter name or select study
@@ -478,6 +495,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Initialize global search
     if (window.initGlobalSearch) {
       window.initGlobalSearch();
+    }
+
+    // Initialize alerts badge
+    if (window.updateAlertBadge) {
+      window.updateAlertBadge();
     }
 
     // Handle browser back/forward buttons

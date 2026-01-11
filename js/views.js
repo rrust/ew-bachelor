@@ -14,7 +14,9 @@ function showView(viewName) {
     'tools',
     'map',
     'progress',
-    'achievements'
+    'achievements',
+    'alerts',
+    'search'
   ];
 
   views.forEach((v) => {
