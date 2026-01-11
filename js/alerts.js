@@ -119,6 +119,45 @@ function renderAlertsView() {
 
   let html = '';
 
+  // Header with title and status icons
+  html += `
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200">Benachrichtigungen</h2>
+      <div class="flex items-center gap-1">
+        ${renderNotificationStatusIcon()}
+        <button
+          onclick="toggleAlertsHelp()"
+          class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          title="Hilfe"
+        >
+          ${Icons.get(
+            'questionCircle',
+            'w-5 h-5',
+            'text-gray-500 dark:text-gray-400'
+          )}
+        </button>
+      </div>
+    </div>
+  `;
+
+  // Help section (hidden by default)
+  html += `
+    <div id="alerts-help" class="hidden bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-4">
+      <div class="flex items-start justify-between gap-2">
+        <div class="text-sm text-blue-800 dark:text-blue-200">
+          <p class="font-medium mb-2">So funktioniert die Verlängerung:</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-300">
+            <li><strong>Bald ablaufend:</strong> Beantworte nur 1 Frage aus dem Quiz richtig</li>
+            <li><strong>Abgelaufen:</strong> Schließe den gesamten Test erneut mit Gold ab</li>
+          </ul>
+        </div>
+        <button onclick="toggleAlertsHelp()" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
+          ${Icons.get('close', 'w-4 h-4')}
+        </button>
+      </div>
+    </div>
+  `;
+
   // Dev Mode section
   if (isDevMode) {
     html += `
@@ -151,9 +190,6 @@ function renderAlertsView() {
     `;
   }
 
-  // Notification settings section - always show
-  html += renderNotificationSettings();
-
   if (alerts.total === 0) {
     html += `
       <div class="text-center py-12 text-gray-500 dark:text-gray-400">
@@ -167,25 +203,7 @@ function renderAlertsView() {
       </div>
     `;
   } else {
-    // Info box
-    html += `
-      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
-        <div class="flex items-start gap-3">
-          <span class="flex-shrink-0 mt-0.5">${Icons.get(
-            'lightbulb',
-            'w-5 h-5',
-            'text-blue-500'
-          )}</span>
-          <div class="text-sm text-blue-800 dark:text-blue-200">
-            <p class="font-medium mb-1">So funktioniert die Verlängerung:</p>
-            <ul class="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-300">
-              <li><strong>Bald ablaufend:</strong> Beantworte nur 1 Frage aus dem Quiz richtig</li>
-              <li><strong>Abgelaufen:</strong> Schließe den gesamten Test erneut mit Gold ab</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `;
+    // Expired achievements
 
     // Expired achievements
     if (alerts.expired.length > 0) {
@@ -524,7 +542,63 @@ function closeQuickRenewalModal() {
 }
 
 /**
- * Render the notification settings section
+ * Toggle the help section visibility
+ */
+function toggleAlertsHelp() {
+  const helpSection = document.getElementById('alerts-help');
+  if (helpSection) {
+    helpSection.classList.toggle('hidden');
+  }
+}
+
+/**
+ * Render the notification status icon for the header
+ * @returns {string} HTML string
+ */
+function renderNotificationStatusIcon() {
+  const isSupported = 'Notification' in window;
+
+  if (!isSupported) {
+    return `
+      <span class="p-2" title="Push-Benachrichtigungen nicht unterstützt">
+        ${Icons.get('bell', 'w-5 h-5', 'text-gray-300 dark:text-gray-600')}
+      </span>
+    `;
+  }
+
+  const permission = Notification.permission;
+
+  if (permission === 'granted') {
+    return `
+      <span class="p-2" title="Push-Benachrichtigungen aktiv">
+        ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
+      </span>
+    `;
+  } else if (permission === 'denied') {
+    return `
+      <button
+        onclick="alert('Push-Benachrichtigungen sind blockiert. Aktiviere sie in den Browser-Einstellungen.')"
+        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+        title="Push-Benachrichtigungen blockiert"
+      >
+        ${Icons.get('exclamation', 'w-5 h-5', 'text-yellow-500')}
+      </button>
+    `;
+  } else {
+    return `
+      <button
+        onclick="enableNotifications()"
+        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+        title="Push-Benachrichtigungen aktivieren"
+      >
+        ${Icons.get('bell', 'w-5 h-5', 'text-gray-400 dark:text-gray-500')}
+      </button>
+    `;
+  }
+}
+
+/**
+ * Render the notification settings section (kept for compatibility)
  * @returns {string} HTML string
  */
 function renderNotificationSettings() {
@@ -754,6 +828,7 @@ window.getAlertBadgeInfo = getAlertBadgeInfo;
 window.updateAlertBadge = updateAlertBadge;
 window.updateAppBadgeFromAlerts = updateAppBadgeFromAlerts;
 window.renderAlertsView = renderAlertsView;
+window.toggleAlertsHelp = toggleAlertsHelp;
 window.startRenewal = startRenewal;
 window.openQuickRenewalModal = openQuickRenewalModal;
 window.checkRenewalAnswer = checkRenewalAnswer;
