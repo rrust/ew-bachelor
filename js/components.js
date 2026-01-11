@@ -196,17 +196,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
         >DEV</a>
         <!-- Training Mode Button -->
-        <button
-          onclick="window.location.hash='#/training'"
-          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+        <a
+          href="#/training"
+          class="text-xs font-bold px-2 py-0.5 rounded ${
             view === 'training'
-              ? 'text-blue-600 dark:text-blue-400'
-              : 'text-gray-600 dark:text-gray-400'
-          }"
-          title="Trainings-Modus"
-        >
-          ${Icons.get('training')}
-        </button>
+              ? 'bg-blue-600 text-white'
+              : 'bg-blue-500 text-white hover:bg-blue-600'
+          } transition-colors"
+        >TRAIN</a>
         <!-- Streak Display -->
         ${
           showStreak
