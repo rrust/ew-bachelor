@@ -9,7 +9,8 @@
  */
 function createAppHeader(view = 'moduleMap', options = {}) {
   const header = document.createElement('header');
-  header.className = 'bg-white dark:bg-gray-800 shadow-md mb-8';
+  header.className =
+    'bg-white dark:bg-gray-800 shadow-md mb-8 sticky top-0 z-40';
 
   // Get current study info
   const studyInfo =
@@ -29,33 +30,29 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Special header for lecture list view with back button
   if (view === 'lecture') {
     const moduleIcon = options.moduleIcon
-      ? Icons.get(
-          options.moduleIcon,
-          'w-6 h-6',
-          'text-blue-600 dark:text-blue-400'
-        )
-      : '';
+      ? Icons.get(options.moduleIcon, 'w-5 h-5', '')
+      : Icons.get('modules', 'w-5 h-5', '');
     header.innerHTML = `
       <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3 min-w-0">
             <button
               id="back-to-modules-button"
-              class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-3 rounded-md transition duration-300 text-sm flex-shrink-0"
+              class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold p-2 rounded-md transition duration-300 flex-shrink-0 flex items-center justify-center"
               title="Zurück zu den Modulen"
             >
-              ${Icons.get('close', 'w-4 h-4')}
+              ${moduleIcon}
             </button>
-            ${
-              moduleIcon
-                ? `<span class="flex-shrink-0">${moduleIcon}</span>`
-                : ''
-            }
             <h2 class="text-lg md:text-xl font-bold truncate" title="${
               options.moduleTitle || ''
             }">${options.moduleTitle || ''}</h2>
           </div>
           <div class="flex items-center gap-2">
+            <!-- Dev Mode Badge -->
+            <span
+              id="header-dev-badge-lecture"
+              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+            >DEV</span>
             <button
               id="nav-search-lecture"
               class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
@@ -101,6 +98,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
         }
       </div>
       <nav class="flex items-center gap-2">
+        <!-- Dev Mode Badge (shown when dev mode is active) -->
+        <span
+          id="header-dev-badge${idSuffix}"
+          class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+        >DEV</span>
         <!-- Search Icon -->
         <button
           id="nav-search${idSuffix}"
@@ -279,6 +281,11 @@ function injectHeader(viewId, viewName, options = {}) {
 
   // Update theme icons
   updateMenuThemeIcons(header);
+
+  // Update dev mode badge visibility
+  if (window.updateDevModeUI) {
+    window.updateDevModeUI();
+  }
 }
 
 function updateMenuThemeIcons(container) {

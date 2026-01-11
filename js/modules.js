@@ -239,9 +239,14 @@ function createModuleCard(
     cardHTML +=
       '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between mt-2">';
 
-    // Module number on the left
+    // Module icon + number on the left
     if (moduleNumber) {
-      cardHTML += `<span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Modul ${moduleNumber}</span>`;
+      const moduleIcon = Icons.get(
+        'modules',
+        'w-4 h-4',
+        'text-gray-500 dark:text-gray-400'
+      );
+      cardHTML += `<span class="flex items-center gap-1 text-xs font-semibold text-gray-500 dark:text-gray-400">${moduleIcon}${moduleNumber}</span>`;
     } else {
       cardHTML += '<div></div>'; // Empty div for spacing
     }

@@ -55,6 +55,7 @@ function renderAchievementsGallery(filter = 'all') {
     (a) => a.currentStatus === 'locked' || a.currentStatus === 'expired'
   ).length;
 
+  document.getElementById('achievements-all').textContent = achievements.length;
   document.getElementById('achievements-total').textContent = unlockedCount;
   document.getElementById('achievements-expiring').textContent = expiringCount;
   document.getElementById('achievements-locked').textContent = lockedCount;
@@ -137,53 +138,28 @@ function createAchievementCard(achievement) {
 
   // Render achievement icon (use Icons.get if it's a known icon name, otherwise show placeholder)
   const achievementIcon =
-    Icons.get(icon, 'w-10 h-10', 'text-gray-600 dark:text-gray-400') ||
-    Icons.get('document', 'w-10 h-10', 'text-gray-600 dark:text-gray-400');
+    Icons.get(icon, 'w-6 h-6', 'text-gray-600 dark:text-gray-400') ||
+    Icons.get('document', 'w-6 h-6', 'text-gray-600 dark:text-gray-400');
 
   return `
-    <div id="achievement-${id}" class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition duration-300 ${cardClass}">
-      <div class="flex items-start justify-between mb-4">
-        <div>${achievementIcon}</div>
-        <span class="${statusColor} text-white text-xs font-bold px-2 py-1 rounded-full flex items-center">
-          ${statusIcon}${statusBadge}
-        </span>
+    <div id="achievement-${id}" class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 transition duration-300 ${cardClass}">
+      <div class="flex items-start gap-3">
+        <div class="flex-shrink-0 mt-0.5">${achievementIcon}</div>
+        <div class="flex-grow min-w-0">
+          <div class="flex items-start justify-between gap-3 mb-1">
+            <h3 class="font-bold text-sm">${title}</h3>
+            <span class="${statusColor} text-white text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0">
+              ${statusBadge}
+            </span>
+          </div>
+          <p class="text-xs text-gray-600 dark:text-gray-400">${description}</p>
+          ${
+            daysRemaining
+              ? `<span class="text-xs font-medium text-blue-600 dark:text-blue-400 mt-1 inline-block">${daysRemaining}</span>`
+              : ''
+          }
+        </div>
       </div>
-      
-      <h3 class="text-xl font-bold mb-2">${title}</h3>
-      <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">${description}</p>
-      
-      ${
-        daysRemaining
-          ? `
-        <div class="text-sm font-medium text-blue-600 dark:text-blue-400 mb-2">
-          ${daysRemaining}
-        </div>
-      `
-          : ''
-      }
-      
-      ${
-        currentStatus === 'locked' || currentStatus === 'expired'
-          ? `
-        <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-          <p class="text-xs text-gray-500 dark:text-gray-500 font-medium mb-1">Freischalten:</p>
-          <p class="text-xs text-gray-600 dark:text-gray-400">${unlockDesc}</p>
-        </div>
-      `
-          : ''
-      }
-      
-      ${
-        currentStatus === 'unlocked' || currentStatus === 'locked-soon'
-          ? `
-        <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-          <button class="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium">
-            Öffnen
-          </button>
-        </div>
-      `
-          : ''
-      }
     </div>
   `;
 }
@@ -224,7 +200,9 @@ function showAchievementModal(achievement) {
     Icons.get(achievement.icon, 'w-8 h-8', 'text-yellow-500') ||
     Icons.get('document', 'w-8 h-8', 'text-yellow-500');
   title.textContent = achievement.title;
-  content.innerHTML = achievement.content;
+
+  // Content is already parsed as HTML in parser.js
+  content.innerHTML = achievement.content || '';
 
   // Render math in achievement content if available
   if (window.renderMathInElement) {
@@ -254,27 +232,15 @@ function showAchievementModal(achievement) {
  * Setup achievements view event listeners
  */
 function setupAchievementsListeners() {
-  // Filter buttons
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  filterButtons.forEach((btn) => {
+  // Stat card filters
+  const statButtons = document.querySelectorAll('.stat-filter-btn');
+  statButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      // Update active state
-      filterButtons.forEach((b) => {
-        b.classList.remove('bg-blue-500', 'text-white');
-        b.classList.add(
-          'bg-gray-200',
-          'dark:bg-gray-700',
-          'text-gray-800',
-          'dark:text-gray-200'
-        );
+      // Update active state - remove ring from all, add to clicked
+      statButtons.forEach((b) => {
+        b.classList.remove('ring-2', 'ring-blue-500');
       });
-      btn.classList.remove(
-        'bg-gray-200',
-        'dark:bg-gray-700',
-        'text-gray-800',
-        'dark:text-gray-200'
-      );
-      btn.classList.add('bg-blue-500', 'text-white');
+      btn.classList.add('ring-2', 'ring-blue-500');
 
       // Apply filter
       const filterId = btn.id.replace('filter-', '');

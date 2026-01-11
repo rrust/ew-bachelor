@@ -337,7 +337,11 @@ function renderSnapshotsModal() {
     <!-- Info Section -->
     <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3 mb-4 text-sm">
       <p class="text-blue-800 dark:text-blue-200 flex items-start gap-2">
-        <span class="flex-shrink-0 mt-0.5">${Icons.get('lightbulb', 'w-4 h-4', 'text-blue-500')}</span>
+        <span class="flex-shrink-0 mt-0.5">${Icons.get(
+          'lightbulb',
+          'w-4 h-4',
+          'text-blue-500'
+        )}</span>
         <span><strong>So funktioniert's:</strong> Die App speichert automatisch deinen Fortschritt nach jedem Quiz oder Test. 
         Du kannst bis zu ${MAX_UNPINNED_SNAPSHOTS} Speicherstände behalten. Ältere werden automatisch gelöscht, 
         es sei denn du pinnst sie.</span>
@@ -390,7 +394,11 @@ function renderSnapshotsModal() {
   if (snapshots.length === 0) {
     html += `
       <div class="text-center py-8 text-gray-500 dark:text-gray-400">
-        <div class="mb-3">${Icons.get('inbox', 'w-12 h-12 mx-auto', 'text-gray-300 dark:text-gray-600')}</div>
+        <div class="mb-3">${Icons.get(
+          'inbox',
+          'w-12 h-12 mx-auto',
+          'text-gray-300 dark:text-gray-600'
+        )}</div>
         <p>Noch keine Speicherstände vorhanden.</p>
         <p class="text-sm">Sie werden automatisch nach dem Abschluss eines Quiz erstellt.</p>
       </div>
@@ -417,16 +425,40 @@ function renderSnapshotsModal() {
                 <span class="font-medium text-sm truncate">${
                   snapshot.description
                 }</span>
-                ${isPinned ? `<span class="flex-shrink-0 text-yellow-500">${Icons.get('pinFilled', 'w-4 h-4')}</span>` : ''}
+                ${
+                  isPinned
+                    ? `<span class="flex-shrink-0 text-yellow-500">${Icons.get(
+                        'pinFilled',
+                        'w-4 h-4'
+                      )}</span>`
+                    : ''
+                }
               </div>
               <div class="text-xs text-gray-500 dark:text-gray-400">
                 ${formatSnapshotDate(snapshot.date)}
               </div>
               <div class="flex items-center gap-3 mt-1 text-xs text-gray-500 dark:text-gray-400">
-                <span class="flex items-center gap-1">${Icons.get('modules', 'w-3 h-3')} ${stats.modulesStarted || 0}</span>
-                <span class="flex items-center gap-1">${Icons.get('checkCircle', 'w-3 h-3')} ${stats.quizzesCompleted || 0}</span>
-                <span class="flex items-center gap-1">${Icons.get('chart', 'w-3 h-3')} ${stats.averageScore || 0}%</span>
-                ${stats.goldBadges ? `<span class="flex items-center gap-1">${Icons.get('trophy', 'w-3 h-3', 'text-yellow-500')} ${stats.goldBadges}</span>` : ''}
+                <span class="flex items-center gap-1">${Icons.get(
+                  'modules',
+                  'w-3 h-3'
+                )} ${stats.modulesStarted || 0}</span>
+                <span class="flex items-center gap-1">${Icons.get(
+                  'checkCircle',
+                  'w-3 h-3'
+                )} ${stats.quizzesCompleted || 0}</span>
+                <span class="flex items-center gap-1">${Icons.get(
+                  'chart',
+                  'w-3 h-3'
+                )} ${stats.averageScore || 0}%</span>
+                ${
+                  stats.goldBadges
+                    ? `<span class="flex items-center gap-1">${Icons.get(
+                        'trophy',
+                        'w-3 h-3',
+                        'text-yellow-500'
+                      )} ${stats.goldBadges}</span>`
+                    : ''
+                }
               </div>
             </div>
             <div class="flex items-center gap-1 flex-shrink-0">
@@ -434,10 +466,16 @@ function renderSnapshotsModal() {
                 onclick="event.stopPropagation(); toggleSnapshotPin('${
                   snapshot.id
                 }')"
-                class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${isPinned ? 'text-yellow-500' : 'text-gray-400'}"
+                class="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ${
+                  isPinned ? 'text-yellow-500' : 'text-gray-400'
+                }"
                 title="${isPinned ? 'Nicht mehr pinnen' : 'Pinnen'}"
               >
-                ${isPinned ? Icons.get('pinFilled', 'w-4 h-4') : Icons.get('pin', 'w-4 h-4')}
+                ${
+                  isPinned
+                    ? Icons.get('pinFilled', 'w-4 h-4')
+                    : Icons.get('pin', 'w-4 h-4')
+                }
               </button>
               <button
                 onclick="event.stopPropagation(); downloadSnapshot('${
