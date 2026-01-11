@@ -2,6 +2,10 @@
 
 ---
 
+Titel: Chemische Reaktionen
+
+Link: https://moodle.univie.ac.at/pluginfile.php/32079599/mod_resource/content/0/Kapitel3corrected.pdf
+
 # TEIL 1: LEHRBUCH-TRANSKRIPT (MODUS B)
 
 ## Kapitel 3: Chemische Reaktionen und Stöchiometrie
