@@ -45,10 +45,10 @@ function updateThemeIcons() {
 function updateThemeColor() {
   const isDark = document.documentElement.classList.contains('dark');
   const themeColor = isDark ? '#1f2937' : '#ffffff';
-  
+
   // Update all theme-color meta tags
   const metaTags = document.querySelectorAll('meta[name="theme-color"]');
-  metaTags.forEach(meta => {
+  metaTags.forEach((meta) => {
     meta.setAttribute('content', themeColor);
   });
 }
