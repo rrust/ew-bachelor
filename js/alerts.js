@@ -126,15 +126,14 @@ function renderAlertsView() {
       <div class="flex items-center gap-1">
         ${renderNotificationStatusIcon()}
         <button
+          id="alerts-help-button"
           onclick="toggleAlertsHelp()"
           class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
           title="Hilfe"
         >
-          ${Icons.get(
-            'questionCircle',
-            'w-5 h-5',
-            'text-gray-500 dark:text-gray-400'
-          )}
+          <span id="alerts-help-icon" class="text-gray-500 dark:text-gray-400">
+            ${Icons.get('questionCircle', 'w-5 h-5')}
+          </span>
         </button>
       </div>
     </div>
@@ -546,9 +545,36 @@ function closeQuickRenewalModal() {
  */
 function toggleAlertsHelp() {
   const helpSection = document.getElementById('alerts-help');
+  const helpButton = document.getElementById('alerts-help-button');
+  const helpIcon = document.getElementById('alerts-help-icon');
+  
   if (helpSection) {
-    helpSection.classList.toggle('hidden');
+    const isHidden = helpSection.classList.toggle('hidden');
+    
+    // Update button and icon color
+    if (helpButton && helpIcon) {
+      if (isHidden) {
+        helpButton.classList.remove('bg-blue-100', 'dark:bg-blue-900/30');
+        helpIcon.classList.remove('text-blue-500');
+        helpIcon.classList.add('text-gray-500', 'dark:text-gray-400');
+      } else {
+        helpButton.classList.add('bg-blue-100', 'dark:bg-blue-900/30');
+        helpIcon.classList.add('text-blue-500');
+        helpIcon.classList.remove('text-gray-500', 'dark:text-gray-400');
+      }
+    }
   }
+}
+
+/**
+ * Enable notifications and re-render the view
+ */
+async function enableNotificationsAndRefresh() {
+  if (window.enableNotifications) {
+    await window.enableNotifications();
+  }
+  // Re-render to update the status icon
+  renderAlertsView();
 }
 
 /**
@@ -587,7 +613,7 @@ function renderNotificationStatusIcon() {
   } else {
     return `
       <button
-        onclick="enableNotifications()"
+        onclick="enableNotificationsAndRefresh()"
         class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
         title="Push-Benachrichtigungen aktivieren"
       >
@@ -829,6 +855,7 @@ window.updateAlertBadge = updateAlertBadge;
 window.updateAppBadgeFromAlerts = updateAppBadgeFromAlerts;
 window.renderAlertsView = renderAlertsView;
 window.toggleAlertsHelp = toggleAlertsHelp;
+window.enableNotificationsAndRefresh = enableNotificationsAndRefresh;
 window.startRenewal = startRenewal;
 window.openQuickRenewalModal = openQuickRenewalModal;
 window.checkRenewalAnswer = checkRenewalAnswer;
