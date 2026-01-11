@@ -128,6 +128,8 @@ async function updateAppBadge(count) {
  * - Show notification if needed and permission granted
  */
 async function initNotifications() {
+  console.log('[Notifications] Initializing...');
+
   // Wait a moment for alerts module to be ready
   if (!window.getAchievementAlerts) {
     console.log('[Notifications] Alerts module not ready');
@@ -135,12 +137,14 @@ async function initNotifications() {
   }
 
   const alerts = window.getAchievementAlerts();
+  console.log('[Notifications] Found', alerts.total, 'alerts');
 
   // Update app badge
   await updateAppBadge(alerts.total);
 
-  // Show notification if there are alerts
+  // Show notification if there are alerts and permission is granted
   if (alerts.total > 0) {
+    console.log('[Notifications] Permission status:', Notification.permission);
     showAlertNotification(alerts);
   }
 }
@@ -220,45 +224,25 @@ async function promptForNotificationsIfNeeded() {
 async function enableNotifications() {
   const permission = await requestNotificationPermission();
 
-  const promptEl = document.getElementById('notification-prompt');
-  if (promptEl) {
-    if (permission === 'granted') {
-      promptEl.innerHTML = `
-        <div class="flex items-center gap-2 text-green-700 dark:text-green-300">
-          ${window.Icons ? Icons.get('checkCircle', 'w-5 h-5') : '✓'}
-          <span>Benachrichtigungen aktiviert!</span>
-        </div>
-      `;
-      promptEl.className =
-        'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 mb-4';
+  // Re-render alerts view to show updated status
+  if (window.renderAlertsView) {
+    window.renderAlertsView();
+  }
 
-      // Show test notification
-      setTimeout(() => {
-        const alerts = window.getAchievementAlerts
-          ? window.getAchievementAlerts()
-          : null;
-        if (alerts && alerts.total > 0) {
-          // Clear the "already showed today" flag to show notification
-          localStorage.removeItem('lastAlertNotification');
-          showAlertNotification(alerts);
-        }
-      }, 500);
-
-      // Remove after 3 seconds
-      setTimeout(() => promptEl.remove(), 3000);
-    } else {
-      promptEl.innerHTML = `
-        <div class="flex items-center gap-2 text-yellow-700 dark:text-yellow-300">
-          ${window.Icons ? Icons.get('exclamation', 'w-5 h-5') : '⚠️'}
-          <span>Benachrichtigungen wurden blockiert. Du kannst sie in den Browser-Einstellungen aktivieren.</span>
-        </div>
-      `;
-      promptEl.className =
-        'bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-4';
-    }
+  if (permission === 'granted') {
+    // Show test notification
+    setTimeout(() => {
+      const alerts = window.getAchievementAlerts
+        ? window.getAchievementAlerts()
+        : null;
+      if (alerts && alerts.total > 0) {
+        // Clear the "already showed today" flag to show notification
+        localStorage.removeItem('lastAlertNotification');
+        showAlertNotification(alerts);
+      }
+    }, 500);
   }
 }
-
 /**
  * Dismiss the notification prompt
  */

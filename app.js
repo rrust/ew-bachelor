@@ -186,10 +186,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (window.renderAlertsView) {
         window.renderAlertsView();
       }
-      // Prompt for notification permission if needed
-      if (window.Notifications && window.Notifications.promptIfNeeded) {
-        setTimeout(() => window.Notifications.promptIfNeeded(), 500);
-      }
       return true;
     } else if (route.view === 'search') {
       updateGreeting();

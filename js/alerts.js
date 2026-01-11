@@ -145,6 +145,9 @@ function renderAlertsView() {
     `;
   }
 
+  // Notification settings section - always show
+  html += renderNotificationSettings();
+
   if (alerts.total === 0) {
     html += `
       <div class="text-center py-12 text-gray-500 dark:text-gray-400">
@@ -512,6 +515,82 @@ function closeQuickRenewalModal() {
     document.body.style.overflow = '';
   }
   window.currentRenewalQuestion = null;
+}
+
+/**
+ * Render the notification settings section
+ * @returns {string} HTML string
+ */
+function renderNotificationSettings() {
+  // Check if notifications are supported
+  const isSupported = 'Notification' in window;
+
+  if (!isSupported) {
+    return `
+      <div class="bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-lg p-4 mb-6">
+        <div class="flex items-center gap-3">
+          ${Icons.get('bell', 'w-5 h-5', 'text-gray-400')}
+          <div>
+            <p class="font-medium text-gray-700 dark:text-gray-300">Push-Benachrichtigungen</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Nicht unterstützt in diesem Browser</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const permission = Notification.permission;
+
+  if (permission === 'granted') {
+    return `
+      <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 mb-6">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
+            <div>
+              <p class="font-medium text-green-700 dark:text-green-300">Push-Benachrichtigungen aktiv</p>
+              <p class="text-sm text-green-600 dark:text-green-400">Du erhältst Erinnerungen bei ablaufenden Achievements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  } else if (permission === 'denied') {
+    return `
+      <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-6">
+        <div class="flex items-center gap-3">
+          ${Icons.get('exclamation', 'w-5 h-5', 'text-yellow-500')}
+          <div>
+            <p class="font-medium text-yellow-700 dark:text-yellow-300">Push-Benachrichtigungen blockiert</p>
+            <p class="text-sm text-yellow-600 dark:text-yellow-400">
+              Aktiviere sie in den Browser-Einstellungen, um Erinnerungen zu erhalten.
+            </p>
+          </div>
+        </div>
+      </div>
+    `;
+  } else {
+    // Permission not yet requested
+    return `
+      <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-6">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            ${Icons.get('bell', 'w-5 h-5', 'text-blue-500')}
+            <div>
+              <p class="font-medium text-blue-700 dark:text-blue-300">Push-Benachrichtigungen</p>
+              <p class="text-sm text-blue-600 dark:text-blue-400">Erhalte Erinnerungen bei ablaufenden Achievements</p>
+            </div>
+          </div>
+          <button
+            onclick="enableNotifications()"
+            class="flex-shrink-0 px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Aktivieren
+          </button>
+        </div>
+      </div>
+    `;
+  }
 }
 
 /**
