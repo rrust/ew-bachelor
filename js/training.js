@@ -2,26 +2,36 @@
 // Training mode - Random questions from completed tests with cheat-sheet support
 
 // Token system constants
-const QUESTIONS_PER_TOKEN = 10;
+const QUESTIONS_PER_ROUND = 10;
 const TOKENS_FOR_EXTENSION = 3;
+
+// Token rewards based on correct answers
+const TOKEN_REWARDS = {
+  NONE: { min: 0, max: 4, tokens: 0 }, // 0-4 correct: no token
+  ONE: { min: 5, max: 7, tokens: 1 }, // 5-7 correct: 1 token
+  THREE: { min: 8, max: 10, tokens: 3 } // 8-10 correct: 3 tokens
+};
 
 /**
  * Get training stats from user progress
- * @returns {Object} { tokens, totalAnswered, progressToNextToken }
+ * @returns {Object} { tokens, totalAnswered, totalRounds }
  */
 function getTrainingStats() {
   const progress = getUserProgress();
   if (!progress) {
-    return { tokens: 0, totalAnswered: 0, progressToNextToken: 0 };
+    return { tokens: 0, totalAnswered: 0, totalRounds: 0 };
   }
 
-  const training = progress.training || { tokens: 0, totalAnswered: 0 };
-  const progressToNextToken = training.totalAnswered % QUESTIONS_PER_TOKEN;
+  const training = progress.training || {
+    tokens: 0,
+    totalAnswered: 0,
+    totalRounds: 0
+  };
 
   return {
     tokens: training.tokens || 0,
     totalAnswered: training.totalAnswered || 0,
-    progressToNextToken
+    totalRounds: training.totalRounds || 0
   };
 }
 
@@ -29,32 +39,43 @@ function getTrainingStats() {
  * Save training stats to user progress
  * @param {number} tokens
  * @param {number} totalAnswered
+ * @param {number} totalRounds
  */
-function saveTrainingStats(tokens, totalAnswered) {
+function saveTrainingStats(tokens, totalAnswered, totalRounds) {
   const progress = getUserProgress();
   if (!progress) return;
 
   progress.training = {
     tokens,
-    totalAnswered
+    totalAnswered,
+    totalRounds
   };
 
   saveUserProgress(progress);
 }
 
 /**
- * Record an answered question and award tokens if earned
- * @returns {boolean} True if a new token was earned
+ * Award tokens based on round performance
+ * @param {number} correctCount - Number of correct answers in this round
+ * @returns {number} Number of tokens earned
  */
-function recordTrainingAnswer() {
+function awardTokensForRound(correctCount) {
+  let tokensEarned = 0;
+
+  if (correctCount >= TOKEN_REWARDS.THREE.min) {
+    tokensEarned = TOKEN_REWARDS.THREE.tokens;
+  } else if (correctCount >= TOKEN_REWARDS.ONE.min) {
+    tokensEarned = TOKEN_REWARDS.ONE.tokens;
+  }
+
   const stats = getTrainingStats();
-  const newTotalAnswered = stats.totalAnswered + 1;
-  const earnedToken = newTotalAnswered % QUESTIONS_PER_TOKEN === 0;
-  const newTokens = earnedToken ? stats.tokens + 1 : stats.tokens;
+  const newTotalAnswered = stats.totalAnswered + QUESTIONS_PER_ROUND;
+  const newTotalRounds = stats.totalRounds + 1;
+  const newTokens = stats.tokens + tokensEarned;
 
-  saveTrainingStats(newTokens, newTotalAnswered);
+  saveTrainingStats(newTokens, newTotalAnswered, newTotalRounds);
 
-  return earnedToken;
+  return tokensEarned;
 }
 
 /**
@@ -246,8 +267,8 @@ function initTrainingView() {
   const completedTests = getCompletedTests();
   const container = document.getElementById('training-content');
 
-  // Always render the stats card
-  renderTrainingStatsCard();
+  // Update token display
+  updateTokenDisplay();
 
   if (completedTests.length === 0) {
     container.innerHTML = `
@@ -268,8 +289,8 @@ function initTrainingView() {
     return;
   }
 
-  // Start training with 10 random questions
-  trainingState.questions = getRandomTrainingQuestions(10);
+  // Start training with random questions
+  trainingState.questions = getRandomTrainingQuestions(QUESTIONS_PER_ROUND);
   trainingState.currentIndex = 0;
   trainingState.correctCount = 0;
   trainingState.answeredCount = 0;
@@ -448,27 +469,14 @@ function submitTrainingAnswer() {
     trainingState.correctCount++;
   }
 
-  // Record answer for token system
-  const earnedToken = recordTrainingAnswer();
-
-  // Show feedback
-  showTrainingFeedback(
-    isCorrect,
-    correctAnswer,
-    isMultipleAnswers,
-    earnedToken
-  );
+  // Show feedback (no token notification per question anymore)
+  showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers);
 }
 
 /**
  * Show feedback for the answer
  */
-function showTrainingFeedback(
-  isCorrect,
-  correctAnswer,
-  isMultipleAnswers,
-  earnedToken = false
-) {
+function showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers) {
   const options = document.querySelectorAll('#training-options label');
   const submitBtn = document.getElementById('training-submit-btn');
 
@@ -499,13 +507,6 @@ function showTrainingFeedback(
     }
   });
 
-  // Change button to "Next" with optional token earned notification
-  const tokenNotification = earnedToken
-    ? `<div class="mt-3 text-center text-sm font-medium text-yellow-600 dark:text-yellow-400 animate-pulse">
-        🎟️ +1 Trainings-Token verdient!
-      </div>`
-    : '';
-
   submitBtn.outerHTML = `
     <button
       onclick="nextTrainingQuestion()"
@@ -517,7 +518,6 @@ function showTrainingFeedback(
     >
       ${isCorrect ? '✓ Richtig!' : '✗ Leider falsch'} – Weiter →
     </button>
-    ${tokenNotification}
   `;
 }
 
@@ -530,69 +530,92 @@ function nextTrainingQuestion() {
 }
 
 /**
- * Render training results
+ * Render training results with token reward
  */
 function renderTrainingResults() {
   const container = document.getElementById('training-content');
-  const percentage = Math.round(
-    (trainingState.correctCount / trainingState.questions.length) * 100
-  );
+  const correctCount = trainingState.correctCount;
+  const totalQuestions = trainingState.questions.length;
 
-  let emoji, message;
-  if (percentage >= 90) {
+  // Award tokens based on performance
+  const tokensEarned = awardTokensForRound(correctCount);
+
+  // Update the token display
+  updateTokenDisplay();
+
+  // Determine feedback
+  let emoji, title, message, tokenMessage, tokenClass;
+
+  if (tokensEarned === 3) {
     emoji = '🏆';
-    message = 'Ausgezeichnet! Du beherrschst den Stoff!';
-  } else if (percentage >= 70) {
+    title = 'Ausgezeichnet!';
+    message = `${correctCount} von ${totalQuestions} richtig`;
+    tokenMessage = `+${tokensEarned} Tokens!`;
+    tokenClass =
+      'text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30';
+  } else if (tokensEarned === 1) {
     emoji = '🌟';
-    message = 'Sehr gut! Weiter so!';
-  } else if (percentage >= 50) {
-    emoji = '💪';
-    message = 'Gut gemacht! Übung macht den Meister.';
+    title = 'Gut gemacht!';
+    message = `${correctCount} von ${totalQuestions} richtig`;
+    tokenMessage = `+${tokensEarned} Token!`;
+    tokenClass =
+      'text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30';
   } else {
-    emoji = '📚';
-    message = 'Wiederhole die Lektionen und versuche es erneut!';
+    emoji = '💪';
+    title = 'Weiter üben!';
+    message = `${correctCount} von ${totalQuestions} richtig`;
+    tokenMessage = null;
+    tokenClass = null;
   }
 
   container.innerHTML = `
-    <div class="max-w-md mx-auto text-center py-8">
-      <span class="text-6xl mb-4 block">${emoji}</span>
-      <h2 class="text-2xl font-bold mb-2">Training abgeschlossen!</h2>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">${message}</p>
-      
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-        <div class="text-4xl font-bold ${
-          percentage >= 70
-            ? 'text-green-500'
-            : percentage >= 50
-            ? 'text-yellow-500'
-            : 'text-red-500'
-        } mb-2">
-          ${percentage}%
-        </div>
-        <p class="text-gray-600 dark:text-gray-400">
-          ${trainingState.correctCount} von ${
-    trainingState.questions.length
-  } richtig
-        </p>
+    <div class="max-w-sm mx-auto text-center py-6">
+      <!-- Result animation -->
+      <div class="mb-4">
+        <span class="text-5xl block">${emoji}</span>
       </div>
+      
+      <h2 class="text-xl font-bold mb-1">${title}</h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-4">${message}</p>
+      
+      ${tokenMessage ? `
+        <!-- Token earned badge -->
+        <div class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${tokenClass} text-sm font-medium mb-4">
+          🎟️ ${tokenMessage}
+        </div>
+      ` : ''}
 
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <!-- Action buttons -->
+      <div class="flex flex-col gap-2 mt-4">
         <button
-          onclick="initTrainingView()"
-          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition flex items-center justify-center gap-2"
+          onclick="continueTraining()"
+          class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition"
         >
-          ${Icons.get('refresh', 'w-5 h-5')}
-          Neues Training
+          Weiter trainieren
         </button>
         <button
           onclick="window.showView && window.showView('moduleMap')"
-          class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-3 px-6 rounded-lg transition"
+          class="w-full text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 py-2 transition"
         >
-          Zu den Modulen
+          Beenden
         </button>
       </div>
     </div>
   `;
+}
+
+/**
+ * Continue training with new questions
+ */
+function continueTraining() {
+  // Get new random questions
+  trainingState.questions = getRandomTrainingQuestions(QUESTIONS_PER_ROUND);
+  trainingState.currentIndex = 0;
+  trainingState.correctCount = 0;
+  trainingState.answeredCount = 0;
+
+  // Render first question
+  renderTrainingQuestion();
 }
 
 /**
@@ -646,57 +669,14 @@ function closeTrainingCheatSheet() {
 }
 
 /**
- * Render the token stats card
+ * Update the inline token display
  */
-function renderTrainingStatsCard() {
-  const card = document.getElementById('training-stats-card');
-  if (!card) return;
-
-  const stats = getTrainingStats();
-  const extendable = getExtendableAchievements();
-  const canExtend =
-    stats.tokens >= TOKENS_FOR_EXTENSION && extendable.length > 0;
-
-  card.innerHTML = `
-    <div class="text-center">
-      <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">
-        🎟️ ${stats.tokens}
-      </div>
-      <div class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-        Trainings-Tokens
-      </div>
-      <div class="text-xs text-gray-500 dark:text-gray-500 mb-3">
-        ${stats.progressToNextToken}/${QUESTIONS_PER_TOKEN} zum nächsten Token
-      </div>
-      <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mb-3">
-        <div class="bg-blue-500 h-1.5 rounded-full transition-all" style="width: ${
-          (stats.progressToNextToken / QUESTIONS_PER_TOKEN) * 100
-        }%"></div>
-      </div>
-      ${
-        canExtend
-          ? `
-        <button
-          onclick="openTokenRedeemModal()"
-          class="w-full text-sm bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-3 rounded-lg transition"
-        >
-          Achievement verlängern
-        </button>
-      `
-          : extendable.length > 0
-          ? `
-        <p class="text-xs text-gray-500 dark:text-gray-500">
-          ${TOKENS_FOR_EXTENSION} Tokens = 1 Verlängerung
-        </p>
-      `
-          : `
-        <p class="text-xs text-gray-500 dark:text-gray-500">
-          Keine Achievements zum Verlängern
-        </p>
-      `
-      }
-    </div>
-  `;
+function updateTokenDisplay() {
+  const tokenCount = document.getElementById('token-count-inline');
+  if (tokenCount) {
+    const stats = getTrainingStats();
+    tokenCount.textContent = stats.tokens;
+  }
 }
 
 /**
@@ -819,6 +799,7 @@ function escapeHtml(text) {
 window.initTrainingView = initTrainingView;
 window.submitTrainingAnswer = submitTrainingAnswer;
 window.nextTrainingQuestion = nextTrainingQuestion;
+window.continueTraining = continueTraining;
 window.showTrainingCheatSheet = showTrainingCheatSheet;
 window.closeTrainingCheatSheet = closeTrainingCheatSheet;
 window.getCompletedTests = getCompletedTests;

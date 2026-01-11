@@ -798,21 +798,19 @@
     <div id="training-view" style="display: none">
       <!-- Header injected by components.js -->
 
-      <div class="container mx-auto px-4 md:px-8 py-8">
-        <div class="mb-6 flex flex-wrap justify-between items-start gap-4">
+      <div class="container mx-auto px-4 md:px-8 py-4 md:py-8">
+        <!-- Compact header with subtle token indicator -->
+        <div class="flex items-center justify-between gap-4 mb-4">
           <div>
-            <h2 class="text-2xl md:text-3xl font-bold">Trainings-Modus</h2>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">
-              Zufällige Fragen aus deinen absolvierten Tests zur Wiederholung
-            </p>
+            <h2 class="text-xl md:text-2xl font-bold">Training</h2>
           </div>
-
-          <!-- Token Stats Card -->
+          <!-- Subtle token indicator -->
           <div
-            id="training-stats-card"
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 min-w-[200px]"
+            id="training-tokens-inline"
+            class="flex items-center gap-1 text-gray-500 dark:text-gray-400 text-sm"
+            title="Deine Trainings-Tokens"
           >
-            <!-- Stats will be rendered by training.js -->
+            🎟️ <span id="token-count-inline">0</span>
           </div>
         </div>
 
