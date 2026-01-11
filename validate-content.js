@@ -265,9 +265,9 @@ function validateModuleMetadata(doc, result) {
 }
 
 /**
- * Validate achievement metadata
+ * Validate study metadata (study.md files)
  */
-function validateAchievementMetadata(doc, result) {
+function validateStudyMetadata(doc, result) {
   if (doc.parseError) {
     result.errors.push(`YAML Parse-Fehler: ${doc.parseError}`);
     return;
@@ -281,8 +281,157 @@ function validateAchievementMetadata(doc, result) {
   if (!attrs.title) {
     result.errors.push(`Pflichtfeld 'title' fehlt`);
   }
+  if (!attrs.shortTitle) {
+    result.warnings.push(
+      `Feld 'shortTitle' fehlt (empfohlen für Header-Anzeige)`
+    );
+  }
+  if (!attrs.icon) {
+    result.warnings.push(`Feld 'icon' fehlt (empfohlen für Studiengang-Icon)`);
+  }
+}
+
+/**
+ * Validate achievement metadata
+ */
+function validateAchievementMetadata(doc, result) {
+  if (doc.parseError) {
+    result.errors.push(`YAML Parse-Fehler: ${doc.parseError}`);
+    return;
+  }
+
+  const attrs = doc.attributes;
+
+  // Required fields
+  if (!attrs.id) {
+    result.errors.push(`Pflichtfeld 'id' fehlt`);
+  }
+  if (!attrs.title) {
+    result.errors.push(`Pflichtfeld 'title' fehlt`);
+  }
   if (!attrs.description) {
     result.errors.push(`Pflichtfeld 'description' fehlt`);
+  }
+
+  // Recommended fields (warnings)
+  if (!attrs.type || attrs.type !== 'achievement') {
+    result.warnings.push(`Feld 'type: achievement' fehlt oder ist falsch`);
+  }
+  if (!attrs.contentType) {
+    result.warnings.push(`Feld 'contentType' fehlt (empfohlen: 'markdown')`);
+  }
+  if (!attrs.defaultDuration) {
+    result.warnings.push(
+      `Feld 'defaultDuration' fehlt (Standard-Dauer in Tagen)`
+    );
+  }
+  if (!attrs.extensionDuration) {
+    result.warnings.push(
+      `Feld 'extensionDuration' fehlt (Verlängerungs-Dauer in Tagen)`
+    );
+  }
+  if (!attrs.warningThreshold) {
+    result.warnings.push(
+      `Feld 'warningThreshold' fehlt (Tage vor Ablauf-Warnung)`
+    );
+  }
+
+  // Validate icon - must be a valid icon name, not an emoji
+  const validIcons = [
+    'search',
+    'menuDots',
+    'sun',
+    'moon',
+    'close',
+    'modules',
+    'chart',
+    'cog',
+    'map',
+    'trophy',
+    'phone',
+    'phoneDownload',
+    'checkCircle',
+    'book',
+    'zoomIn',
+    'zoomOut',
+    'reset',
+    'externalLink',
+    'lock',
+    'unlock',
+    'clock',
+    'hourglass',
+    'document',
+    'clipboard',
+    'apple',
+    'beaker',
+    'graduationCap',
+    'download',
+    'upload',
+    'hourglassEmpty',
+    'check',
+    'rocket',
+    'fire',
+    'muscle',
+    'star',
+    'wave'
+  ];
+
+  if (attrs.icon) {
+    // Check if icon contains emoji (non-ASCII characters that aren't common)
+    const hasEmoji =
+      /[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/u.test(
+        attrs.icon
+      );
+    if (hasEmoji) {
+      result.errors.push(
+        `Icon '${attrs.icon}' ist ein Emoji - bitte einen Icon-Namen verwenden (z.B. 'clipboard', 'document')`
+      );
+    } else if (!validIcons.includes(attrs.icon)) {
+      result.warnings.push(
+        `Icon '${
+          attrs.icon
+        }' ist kein bekannter Icon-Name. Gültige Werte: ${validIcons
+          .slice(0, 5)
+          .join(', ')}...`
+      );
+    }
+  } else {
+    result.warnings.push(
+      `Feld 'icon' fehlt (empfohlen: 'clipboard' oder 'document')`
+    );
+  }
+
+  // Validate unlockCondition
+  if (!attrs.unlockCondition) {
+    result.errors.push(`Pflichtfeld 'unlockCondition' fehlt`);
+  } else {
+    const validTypes = [
+      'lecture-quiz-gold',
+      'module-exam-gold',
+      'quiz-score',
+      'multiple-lecture-gold',
+      'consecutive-lecture-gold'
+    ];
+    if (!attrs.unlockCondition.type) {
+      result.errors.push(`unlockCondition.type fehlt`);
+    } else if (!validTypes.includes(attrs.unlockCondition.type)) {
+      result.warnings.push(
+        `unlockCondition.type '${attrs.unlockCondition.type}' ist unbekannt`
+      );
+    }
+
+    if (attrs.unlockCondition.type === 'lecture-quiz-gold') {
+      if (!attrs.unlockCondition.lectureId) {
+        result.errors.push(
+          `unlockCondition.lectureId fehlt für lecture-quiz-gold`
+        );
+      }
+      if (!attrs.unlockCondition.moduleId) {
+        result.errors.push(
+          `unlockCondition.moduleId fehlt für lecture-quiz-gold`
+        );
+      }
+    }
   }
 }
 
@@ -406,6 +555,7 @@ function validateFile(filePath) {
     const isQuizMetadata =
       filePath.endsWith('/quiz.md') && !filePath.includes('/questions/');
     const isModuleMetadata = filePath.endsWith('/module.md');
+    const isStudyMetadata = filePath.endsWith('/study.md');
     const isAchievement = filePath.includes('/achievements/');
     const isLectureItem = filePath.includes('/lecture-items/');
     const isQuizQuestion = filePath.includes('/questions/');
@@ -415,7 +565,10 @@ function validateFile(filePath) {
     result.itemCount = documents.length;
 
     // Validate based on file type
-    if (isLectureMetadata) {
+    if (isStudyMetadata) {
+      // Study metadata files have their own format - just check required fields
+      validateStudyMetadata(documents[0], result);
+    } else if (isLectureMetadata) {
       validateLectureMetadata(documents[0], result);
     } else if (isQuizMetadata) {
       validateQuizMetadata(documents[0], result);
