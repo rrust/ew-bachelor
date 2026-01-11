@@ -55,6 +55,7 @@ function saveStreakData(streakData) {
 
 /**
  * Check if user has any completed tests (streak prerequisite)
+ * A test is considered completed if it has a badge (bronze, silver, gold)
  */
 function hasCompletedTests() {
   const progress = window.getUserProgress ? window.getUserProgress() : null;
@@ -65,7 +66,8 @@ function hasCompletedTests() {
     if (module.lectures) {
       for (const lectureId in module.lectures) {
         const lecture = module.lectures[lectureId];
-        if (lecture.quizCompleted && lecture.badge) {
+        // A badge means the test was completed successfully
+        if (lecture.badge) {
           return true;
         }
       }
@@ -85,13 +87,13 @@ function getRandomStreakQuestion() {
 
   const completedQuizzes = [];
 
-  // Find all completed quizzes
+  // Find all completed quizzes (badge means completed)
   for (const moduleId in progress.modules) {
     const module = progress.modules[moduleId];
     if (module.lectures) {
       for (const lectureId in module.lectures) {
         const lecture = module.lectures[lectureId];
-        if (lecture.quizCompleted && lecture.badge) {
+        if (lecture.badge) {
           // Get quiz from APP_CONTENT
           const moduleContent = appContent[moduleId];
           const lectureContent = moduleContent?.lectures?.[lectureId];
