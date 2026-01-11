@@ -340,9 +340,13 @@ async function openQuickRenewalModal(renewalInfo) {
   // lecture.quiz is directly the array of questions, not an object with questions property
   const moduleContent = window.APP_CONTENT?.[renewalInfo.moduleId];
   const lecture = moduleContent?.lectures?.[renewalInfo.lectureId];
-  
+
   // lecture.quiz is the array of questions directly
   const quizQuestions = lecture?.quiz;
+
+  if (
+    !lecture ||
+    !quizQuestions ||
     !Array.isArray(quizQuestions) ||
     quizQuestions.length === 0
   ) {
