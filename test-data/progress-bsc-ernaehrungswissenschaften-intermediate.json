@@ -9,6 +9,15 @@
   "progress": {
     "userName": "TestUser",
     "startedAt": "2025-10-19T22:45:37.221Z",
+    "streak": {
+      "current": 2,
+      "lastActivityDate": "2026-01-09T10:00:00.000Z",
+      "totalDays": 5,
+      "longestStreak": 4,
+      "rescueMode": false,
+      "rescueCorrect": 0,
+      "rescueTotal": 0
+    },
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
