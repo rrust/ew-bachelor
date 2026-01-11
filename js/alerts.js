@@ -547,10 +547,10 @@ function toggleAlertsHelp() {
   const helpSection = document.getElementById('alerts-help');
   const helpButton = document.getElementById('alerts-help-button');
   const helpIcon = document.getElementById('alerts-help-icon');
-  
+
   if (helpSection) {
     const isHidden = helpSection.classList.toggle('hidden');
-    
+
     // Update button and icon color
     if (helpButton && helpIcon) {
       if (isHidden) {
@@ -578,6 +578,23 @@ async function enableNotificationsAndRefresh() {
 }
 
 /**
+ * Show notification status info
+ */
+function showNotificationStatus() {
+  // Show a brief toast/info
+  const toast = document.createElement('div');
+  toast.className = 'fixed bottom-20 left-4 right-4 bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 text-green-800 dark:text-green-200 rounded-lg p-3 z-50 shadow-lg text-sm';
+  toast.innerHTML = `
+    <div class="flex items-center gap-2">
+      ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
+      <span>Push-Benachrichtigungen sind aktiv</span>
+    </div>
+  `;
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 3000);
+}
+
+/**
  * Render the notification status icon for the header
  * @returns {string} HTML string
  */
@@ -596,9 +613,13 @@ function renderNotificationStatusIcon() {
 
   if (permission === 'granted') {
     return `
-      <span class="p-2" title="Push-Benachrichtigungen aktiv">
+      <button
+        onclick="showNotificationStatus()"
+        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+        title="Push-Benachrichtigungen aktiv"
+      >
         ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
-      </span>
+      </button>
     `;
   } else if (permission === 'denied') {
     return `
@@ -865,3 +886,4 @@ window.checkRenewalAfterQuiz = checkRenewalAfterQuiz;
 window.initAlerts = initAlerts;
 window.generateDemoAlerts = generateDemoAlerts;
 window.clearDemoAlerts = clearDemoAlerts;
+window.showNotificationStatus = showNotificationStatus;
