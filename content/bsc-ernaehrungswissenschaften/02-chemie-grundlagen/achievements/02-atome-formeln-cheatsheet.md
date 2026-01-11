@@ -1,13 +1,17 @@
 ---
+type: 'achievement'
 id: 'atome-formeln-cheatsheet'
 title: 'Atome & Stöchiometrie Cheat-Sheet'
 description: 'Kompakte Übersicht: Subatomare Teilchen, Isotope, PSE, Ionen, Mol-Berechnungen und Nomenklatur'
 icon: 'atom'
-category: 'lecture'
+contentType: 'markdown'
 unlockCondition:
-  type: 'quiz-score'
+  type: 'lecture-quiz-gold'
   lectureId: '02-atome-formeln'
-  minScore: 90
+  moduleId: '02-chemie-grundlagen'
+defaultDuration: 30
+extensionDuration: 14
+warningThreshold: 7
 ---
 
 # Atome & Stöchiometrie – Cheat-Sheet 🧪
@@ -20,8 +24,6 @@ unlockCondition:
 | Neutron  | $n^0$  | 0      | 1,009     | Kern  |
 | Elektron | $e^-$  | -1     | 0,0005    | Hülle |
 
----
-
 ## Nuklid-Schreibweise
 
 $${}^{A}_{Z}\text{E}$$
@@ -29,8 +31,6 @@ $${}^{A}_{Z}\text{E}$$
 - **A** (oben) = Massenzahl = Protonen + Neutronen
 - **Z** (unten) = Ordnungszahl = Protonen
 - Neutronen = A - Z
-
----
 
 ## Wichtige Hauptgruppen im PSE
 
@@ -40,8 +40,6 @@ $${}^{A}_{Z}\text{E}$$
 | 2      | Erdalkalimetalle | +2              | Mg, Ca, Ba   |
 | 17     | Halogene         | -1              | F, Cl, Br, I |
 | 18     | Edelgase         | 0               | He, Ne, Ar   |
-
----
 
 ## Wichtige mehratomige Ionen
 
@@ -54,16 +52,12 @@ $${}^{A}_{Z}\text{E}$$
 | Sulfat   | $SO_4^{2-}$ | -2     |
 | Phosphat | $PO_4^{3-}$ | -3     |
 
----
-
 ## Coulomb-Gesetz
 
 $$F \propto \frac{q_1 \times q_2}{d^2}$$
 
 - **Höhere Ladung** → stärkere Bindung
 - **Kleinerer Abstand** → stärkere Bindung
-
----
 
 ## Das Mol
 
@@ -78,8 +72,6 @@ $$N_A = 6,022 \times 10^{23} \text{ mol}^{-1}$$
 | Mol → Gramm    | $m = n \times M$   |
 | Mol → Teilchen | $N = n \times N_A$ |
 
----
-
 ## Formelermittlung
 
 ### Empirische Formel
@@ -92,8 +84,6 @@ $$N_A = 6,022 \times 10^{23} \text{ mol}^{-1}$$
 ### Molekulare Formel
 
 $$\text{Faktor} = \frac{M_{\text{real}}}{M_{\text{empirisch}}}$$
-
----
 
 ## Nomenklatur ionischer Verbindungen
 

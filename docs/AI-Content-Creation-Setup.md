@@ -23,7 +23,7 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 │  - Deep Research mit Web-Grounding                                      │
 │  - Vorlesungsinhalte aufbereiten                                        │
 │  - Videos transkribieren (Whisper)                                      │
-│  → Speichern in: studies-material/{studyId}/NN-modul/lecture-Y.md          │
+│  → Speichern in: studies-material/{studyId}/NN-modul/NN-vorlesung/      │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
                                 ▼
@@ -34,7 +34,7 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 │  - questions/ für Quizzes                                               │
 │  - Self-Assessments nach Konzepten                                      │
 │  - Achievements (Cheat Sheets)                                          │
-│  → Speichern in: content/XX-modul/XX-vorlesung/                         │
+│  → Speichern in: content/{studyId}/NN-modul/NN-vorlesung/               │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
                                 ▼

@@ -9,6 +9,13 @@
 - **Validate:** Open `validate-content.html` in browser (NOT via node/shell!)
 - **Lint:** `npx markdownlint-cli2 "**/*.md"` (no --fix!)
 
+## Critical Content Rules
+
+- YAML lists use `-` (dash), NEVER `*` (asterisk)
+- ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator
+- Use `***` for horizontal lines or just `##` headings for visual separation
+- `correctAnswer` must exactly match an option
+
 ## Content Generation
 
 When generating content from `studies-material/` files:

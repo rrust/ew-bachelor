@@ -408,7 +408,7 @@ In diesem Abschnitt werden die grundlegenden Rechenfertigkeiten (Einheiten & Sig
 
 ## II. Der Themen-Check (Kapitel 2)
 
-#### 🧪 Mini-Check 1: Atomaufbau & Isotope
+### 🧪 Mini-Check 1: Atomaufbau & Isotope
 
 **Frage 1:** Ein Atom hat die Kennzeichnung ${}^{31}_{15}\text{P}$.
 Wie viele Protonen, Neutronen und Elektronen hat dieses neutrale Atom?
@@ -428,7 +428,7 @@ C) Es ist der Durchschnitt der Isotope Cl-35 und Cl-37.
 > *Lösung:* **C**.
 > *Erklärung:* Chlor besteht zu ca. 75% aus Cl-35 und 25% aus Cl-37. Der gewichtete Durchschnitt ergibt 35.45.
 
-#### ⚡ Mini-Check 2: Ionen & Periodensystem
+### ⚡ Mini-Check 2: Ionen & Periodensystem
 
 **Frage 3:** Welches Ion bildet Magnesium (Mg) typischerweise und warum?
 A) $Mg^{+}$, weil es in Gruppe 1 steht.
@@ -448,7 +448,7 @@ D) $Fe_3O$
 > *Erklärung:* Eisen(III) hat Ladung $+3$. Sauerstoff (Gruppe 6) hat Ladung $-2$.
 > Das kleinste gemeinsame Vielfache von 2 und 3 ist 6. Wir brauchen also $2 \times Fe^{3+}$ ($+6$) und $3 \times O^{2-}$ ($-6$).
 
-#### ⚖️ Mini-Check 3: Stöchiometrie (Der Härtetest)
+### ⚖️ Mini-Check 3: Stöchiometrie (Der Härtetest)
 
 **Frage 5:** Sie haben 2 Mol Wasser ($H_2O$). Wie viele Wasserstoff-Atome sind das insgesamt?
 A) $1.204 \times 10^{24}$
@@ -538,7 +538,7 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
 
 # 🛑 LÖSUNGS-SCHLÜSSEL (HARDCORE)
 
-### Zu Frage 1 (Struktur)
+## Zu Frage 1 (Struktur)
 
 * **Richtige Antworten:** **[A], [B]**
 * *Analyse:*
@@ -548,7 +548,7 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
     * [D] Falsch. Ni: $58-28=30$ Neutronen. Fe: $58-26=32$ Neutronen. Sie sind NICHT gleich.
     * [E] Falsch. Eisen (Z=26) hat weniger Protonen als Nickel (Z=28).
 
-### Zu Frage 2 (Massenspektrometrie)
+## Zu Frage 2 (Massenspektrometrie)
 
 * **Richtige Antworten:** **[B], [C], [E]**
 * *Analyse:*
@@ -558,7 +558,7 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
     * [D] Spekulation. Stabilität lässt sich hieraus nicht ableiten.
     * [E] Richtig. Der Wert 24,31 ist ein statistisches Mittel. Kein einzelnes Atom wiegt so viel.
 
-### Zu Aufgabe 3 (Das unbekannte Metall)
+## Zu Aufgabe 3 (Das unbekannte Metall)
 
 1. **Masse Sauerstoff:** $1,44 \text{ g}$
     * $n(O) = 1,44 \text{ g} / 16,00 \text{ g/mol} = 0,09 \text{ mol}$
@@ -570,7 +570,7 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
 4. **Identifikation:**
     * Blick ins PSE $\to$ Masse 54,0 u entspricht am ehesten **Chrom (Cr)** oder Mangan (Mn), je nach Rundungsungenauigkeit im Experiment. Die mathematische Antwort ist **54,0 g/mol**.
 
-### Zu Aufgabe 4 (Adrenalin)
+## Zu Aufgabe 4 (Adrenalin)
 
 1. **Basis 100g:** $59 C, 7.1 H, 26.2 O, 7.7 N$.
 2. **Mol:**
@@ -587,7 +587,7 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
 5. **Check Masse:** $(9\times12) + 13 + 14 + (3\times16) = 108 + 13 + 14 + 48 = 183 \text{ g/mol}$.
 6. **Molekülformel:** Identisch mit empirischer Formel. $\to$ **$C_9H_{13}NO_3$**
 
-### Zu Aufgabe 5 (Nomenklatur)
+## Zu Aufgabe 5 (Nomenklatur)
 
 * $Cu(NO_3)_2$ $\to$ **Kupfer(II)-nitrat**
 * $P_4O_{10}$ $\to$ **Tetraphosphordecaoxid**
@@ -595,7 +595,7 @@ Warum hat Calciumoxid ($CaO$, "Gebrannter Kalk") einen extrem hohen Schmelzpunkt
 * Ammoniumcarbonat $\to$ **$(NH_4)_2CO_3$**
 * $K_2SO_3$ $\to$ **Kaliumsulfit**
 
-### Zu Aufgabe 6 (Gitterenergie)
+## Zu Aufgabe 6 (Gitterenergie)
 
 * **Ladung:** CaO besteht aus $Ca^{2+}$ und $O^{2-}$. KCl aus $K^+$ und $Cl^-$.
 * **Gesetz:** $F \propto (q_1 \times q_2)$. Das Produkt der Ladungen bei CaO ist $2 \times 2 = 4$. Bei KCl ist es $1 \times 1 = 1$.

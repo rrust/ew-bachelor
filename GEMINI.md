@@ -67,6 +67,7 @@ Use conventional commit format:
 - YAML lists use `-` (dash), NEVER `*` (asterisk)
 - `correctAnswer` must exactly match an option
 - Files numbered `NN-name.md` for ordering
+- ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
 - Always validate before committing
 
 ### Content Generation from Study Materials
@@ -103,9 +104,11 @@ When generating content from `studies-material/` files:
 ### Content File Structure
 
 ```text
-studies-material/{studyId}/NN-modul/lecture.md  → Source with citations
+studies-material/{studyId}/NN-modul/NN-vorlesung/
+├── Vorlesung.md            → Source with citations
+└── CONTENT_PLAN.md         → Plan for app content
                 ↓ generates ↓
-content/{studyId}/NN-modul/NN-lecture/
+content/{studyId}/NN-modul/NN-vorlesung/
 ├── lecture.md              → sources array
 ├── lecture-items/
 │   └── 01-topic.md         → sourceRefs array

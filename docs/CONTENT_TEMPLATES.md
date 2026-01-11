@@ -12,6 +12,7 @@ Diese Templates helfen beim Erstellen neuer Lerninhalte mit korrekter Struktur.
 | Typ                 | Verwendung                  | Link                                                           |
 | ------------------- | --------------------------- | -------------------------------------------------------------- |
 | Modul-Metadaten     | `module.md` im Modul-Ordner | [→ Vorlage](#modul-metadaten-modulemd)                         |
+| Achievement         | `achievements/NN-name.md`   | [→ Vorlage](#achievement-cheat-sheet)                          |
 | Quiz-Frage (single) | `questions/NN-name.md`      | [→ Vorlage](#einfache-multiple-choice-eine-richtige-antwort)   |
 | Quiz-Frage (multi)  | `questions/NN-name.md`      | [→ Vorlage](#multiple-choice-mit-mehreren-richtigen-antworten) |
 | Self-Assessment     | `lecture-items/NN-name.md`  | [→ Vorlage](#self-assessment-in-lecturemd)                     |
@@ -36,7 +37,9 @@ options:
 - 'Option 2'      # Falsch: Keine Einrückung
 ```
 
-**Goldene Regel:** `correctAnswer` muss EXAKT mit einer Option übereinstimmen!
+**Goldene Regeln:**
+- `correctAnswer` muss EXAKT mit einer Option übereinstimmen!
+- ⚠️ **NIEMALS `---` im Markdown-Content verwenden!** Der Parser interpretiert `---` als YAML-Dokumententrenner. Für horizontale Linien stattdessen `***` oder einfach Leerzeilen nutzen.
 
 → [Häufige Fehler](#häufige-fehler) | [Validierung](#validierung)
 
@@ -85,6 +88,69 @@ Keine - dies ist ein Einstiegsmodul.
 
 - `lectures`: Alle Unterordner mit `lecture.md`
 - `achievements`: Alle Dateien im `achievements/` Ordner
+
+## Achievement (Cheat-Sheet)
+
+Achievements werden freigeschaltet, wenn der Benutzer ein Quiz mit Gold-Status (≥90%) besteht. Sie enthalten nützliche Zusammenfassungen.
+
+**Speicherort:** `content/{studyId}/NN-modul/achievements/NN-name.md`
+
+```markdown
+---
+type: 'achievement'
+id: 'thema-cheatsheet'
+title: 'Thema Cheat-Sheet'
+description: 'Kompakte Zusammenfassung aller wichtigen Konzepte'
+icon: 'clipboard'
+contentType: 'markdown'
+unlockCondition:
+  type: 'lecture-quiz-gold'
+  lectureId: '01-thema'
+  moduleId: '01-modul-name'
+defaultDuration: 30
+extensionDuration: 14
+warningThreshold: 7
+---
+
+# Thema – Cheat-Sheet 📋
+
+## Abschnitt 1
+
+Inhalt hier...
+
+## Abschnitt 2
+
+Weiterer Inhalt...
+```
+
+**Pflichtfelder im Frontmatter:**
+
+| Feld                | Typ    | Beschreibung                                      |
+| ------------------- | ------ | ------------------------------------------------- |
+| `type`              | String | Immer `'achievement'`                             |
+| `id`                | String | Eindeutige ID (z.B. `'zellbiologie-cheatsheet'`)  |
+| `title`             | String | Anzeigename                                       |
+| `description`       | String | Kurzbeschreibung                                  |
+| `icon`              | String | Icon-Name (z.B. `'clipboard'`, `'atom'`)          |
+| `contentType`       | String | Immer `'markdown'`                                |
+| `unlockCondition`   | Object | Bedingung zum Freischalten (siehe unten)          |
+| `defaultDuration`   | Number | Gültigkeitsdauer in Tagen (Standard: 30)          |
+| `extensionDuration` | Number | Verlängerung bei korrekter Antwort (Standard: 14) |
+| `warningThreshold`  | Number | Tage vor Ablauf für Warnung (Standard: 7)         |
+
+**unlockCondition-Objekt:**
+
+```yaml
+unlockCondition:
+  type: 'lecture-quiz-gold'
+  lectureId: '01-thema'        # ID der Vorlesung
+  moduleId: '01-modul-name'    # ID des Moduls
+```
+
+⚠️ **WICHTIG für den Markdown-Content:**
+
+- **NIEMALS `---` als horizontale Linie verwenden!** Der Parser interpretiert `---` als YAML-Dokumententrenner.
+- Für visuelle Trennung: `***` verwenden oder einfach Leerzeilen und `##` Überschriften.
 
 ## Vorlesungs-Metadaten (lecture.md)
 
