@@ -237,7 +237,7 @@ async function parseContent(studyId = null) {
             progress
           );
         }
-        
+
         const fullPath = basePath === '/' ? filePath : `${basePath}${filePath}`;
         const fileResponse = await fetch(fullPath);
         const fileContent = await fileResponse.text();
