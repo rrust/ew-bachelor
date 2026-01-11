@@ -415,21 +415,29 @@ function displayLecturesForModule(
     }
     contentHTML += `</div>`;
 
-    // Time info in header
+    // Content counts in header (lecture items and quiz questions)
+    const lectureItemCount = lecture.items ? lecture.items.length : 0;
+    const quizQuestionCount = lecture.quiz ? lecture.quiz.length : 0;
     const lectureTime = lecture.estimatedTime || 0;
     const quizTime = lecture.quizEstimatedTime || 0;
-    const totalTime = lectureTime + quizTime;
-    if (totalTime > 0) {
+
+    if (lectureItemCount > 0 || quizQuestionCount > 0) {
       contentHTML += `<div class="flex items-center space-x-3 text-xs text-gray-500 dark:text-gray-400">`;
-      if (lectureTime > 0) {
-        contentHTML += `<span class="flex items-center">📚 ${formatEstimatedTime(
-          lectureTime
-        )}</span>`;
+      if (lectureItemCount > 0) {
+        const timeInfo =
+          lectureTime > 0 ? ` · ${formatEstimatedTime(lectureTime)}` : '';
+        contentHTML += `<span class="flex items-center gap-1">${Icons.get(
+          'book',
+          'w-3.5 h-3.5'
+        )} ${lectureItemCount}${timeInfo}</span>`;
       }
-      if (quizTime > 0) {
-        contentHTML += `<span class="flex items-center">✏️ ${formatEstimatedTime(
-          quizTime
-        )}</span>`;
+      if (quizQuestionCount > 0) {
+        const timeInfo =
+          quizTime > 0 ? ` · ${formatEstimatedTime(quizTime)}` : '';
+        contentHTML += `<span class="flex items-center gap-1">${Icons.get(
+          'pencil',
+          'w-3.5 h-3.5'
+        )} ${quizQuestionCount}${timeInfo}</span>`;
       }
       contentHTML += `</div>`;
     }

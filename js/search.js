@@ -55,7 +55,7 @@ function searchContent(query, content, modules) {
           lectureId: lectureId,
           title: lectureTopic,
           subtitle: module.title,
-          icon: '📚',
+          icon: 'book',
           url: `#/module/${module.id}/lecture/${lectureId}`
         });
       }
@@ -115,7 +115,7 @@ function searchContent(query, content, modules) {
                 questionText.substring(0, 80) +
                 (questionText.length > 80 ? '...' : ''),
               subtitle: `Quiz: ${lectureTopic}`,
-              icon: '❓',
+              icon: 'document',
               url: `#/module/${module.id}/lecture/${lectureId}/quiz`
             });
           }
@@ -142,7 +142,7 @@ function searchContent(query, content, modules) {
             achievementId: achievementId,
             title: title,
             subtitle: description,
-            icon: '🏆',
+            icon: 'trophy',
             url: `#/achievements/${achievementId}`
           });
         }
@@ -243,7 +243,11 @@ function renderSearchResults(results, container, onSelect) {
         data-index="${index}"
       >
         <div class="flex items-start gap-3">
-          <span class="text-xl flex-shrink-0">${result.icon}</span>
+          <span class="flex-shrink-0">${Icons.get(
+            result.icon,
+            'w-5 h-5',
+            'text-gray-500 dark:text-gray-400'
+          )}</span>
           <div class="min-w-0 flex-1">
             <div class="font-medium text-gray-900 dark:text-gray-100 truncate">
               ${escapeHtml(result.title)}
