@@ -86,13 +86,25 @@
       id="loading-screen"
       class="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center z-50"
     >
-      <div class="text-center">
+      <div class="text-center max-w-xs mx-auto px-4">
         <div
           class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent mb-4"
         ></div>
-        <p class="text-lg text-gray-600 dark:text-gray-400">
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-2">
           App wird geladen...
         </p>
+        <p id="loading-status" class="text-sm text-gray-500 dark:text-gray-500">
+          Initialisiere...
+        </p>
+        <div
+          class="mt-4 w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden"
+        >
+          <div
+            id="loading-progress"
+            class="bg-blue-500 h-full rounded-full transition-all duration-300"
+            style="width: 0%"
+          ></div>
+        </div>
       </div>
     </div>
 

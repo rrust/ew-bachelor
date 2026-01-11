@@ -264,6 +264,26 @@ document.addEventListener('DOMContentLoaded', async () => {
   window.showView = showView;
 
   // --- Helper Functions ---
+  
+  /**
+   * Update the loading screen status text and progress bar
+   * @param {string} status - Status text to show
+   * @param {number} progress - Progress percentage (0-100)
+   */
+  function updateLoadingStatus(status, progress = null) {
+    const statusEl = document.getElementById('loading-status');
+    const progressEl = document.getElementById('loading-progress');
+    if (statusEl) {
+      statusEl.textContent = status;
+    }
+    if (progressEl && progress !== null) {
+      progressEl.style.width = `${progress}%`;
+    }
+  }
+  
+  // Expose for use by parser
+  window.updateLoadingStatus = updateLoadingStatus;
+  
   function hideLoadingScreen() {
     const loadingScreen = document.getElementById('loading-screen');
     if (loadingScreen) {
@@ -346,10 +366,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // --- App Initialization ---
   async function init() {
+    updateLoadingStatus('Studiengänge laden...', 5);
+    
     // 1. Load available studies FIRST (needed for header title)
     const studies = await loadStudies();
     setStudies(studies);
 
+    updateLoadingStatus('Einstellungen prüfen...', 15);
+    
     // 2. Check for saved user settings and migrate legacy progress
     const settings = getAppSettings();
 
@@ -358,6 +382,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       migrateLegacyProgress(studies[0].id);
     }
 
+    updateLoadingStatus('Benutzeroberfläche vorbereiten...', 25);
+    
     // 3. Inject headers into views (now studies AND activeStudyId are available)
     injectHeader('module-map-view', 'moduleMap');
     injectHeader('achievements-view', 'achievements');
@@ -389,9 +415,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
 
+    updateLoadingStatus('Inhalte laden...', 35);
+    
     // 4. Load content for active study
     setCurrentStudy(currentSettings.activeStudyId);
     await loadStudyContent(currentSettings.activeStudyId);
+    
+    updateLoadingStatus('Fast fertig...', 95);
 
     const progress = getUserProgress();
     if (progress) {

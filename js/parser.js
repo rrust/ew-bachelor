@@ -219,9 +219,25 @@ async function parseContent(studyId = null) {
     }
 
     const fileList = await response.json();
+    const totalFiles = fileList.length;
+    let loadedFiles = 0;
 
     for (const filePath of fileList) {
       try {
+        // Update loading progress
+        loadedFiles++;
+        if (window.updateLoadingStatus) {
+          const progress = 35 + Math.floor((loadedFiles / totalFiles) * 55);
+          // Extract module name from path for status
+          const pathParts = filePath.split('/');
+          const modulePart = pathParts[2] || '';
+          const moduleName = modulePart.replace(/^\d+-/, '').replace(/-/g, ' ');
+          window.updateLoadingStatus(
+            `Lade ${moduleName}... (${loadedFiles}/${totalFiles})`,
+            progress
+          );
+        }
+        
         const fullPath = basePath === '/' ? filePath : `${basePath}${filePath}`;
         const fileResponse = await fetch(fullPath);
         const fileContent = await fileResponse.text();
