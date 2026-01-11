@@ -1,0 +1,152 @@
+{
+  "moduleId": "01-ernaehrungslehre-grundlagen",
+  "lectureId": "02-makronaehrstoffe-detail",
+  "metadata": {
+    "topic": "Makronährstoffe im Detail",
+    "description": "Detaillierte Betrachtung der drei Makronährstoffe: Kohlenhydrate, Proteine und Fette. Ihre Funktionen, Energiegehalt und Bedeutung für den menschlichen Körper.",
+    "estimatedTime": 20,
+    "sources": []
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Makronährstoffe im Detail",
+      "content": "# Makronährstoffe im Detail\n\nErfahren Sie mehr über die drei Hauptenergielieferanten unserer Ernährung und ihre spezifischen Funktionen im Körper.",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "content": "## Die drei Makronährstoffe\n\nMakronährstoffe sind Nährstoffe, die der Körper in großen Mengen benötigt und die Energie liefern. Man unterscheidet drei Hauptgruppen:\n\n### 1. Kohlenhydrate\n\n- **Funktion:** Hauptenergiequelle für den Körper\n- **Energiegehalt:** 4 kcal pro Gramm\n- **Wichtige Formen:**\n  - Monosaccharide (Glucose, Fructose)\n  - Disaccharide (Saccharose, Lactose)\n  - Polysaccharide (Stärke, Glykogen)\n\n### 2. Proteine (Eiweiße)\n\n- **Funktion:** Baustoff für Zellen, Enzyme, Hormone\n- **Energiegehalt:** 4 kcal pro Gramm\n- **Aufbau:** Ketten aus Aminosäuren\n- **Essentielle Aminosäuren:** Müssen über die Nahrung aufgenommen werden\n\n### 3. Fette (Lipide)\n\n- **Funktion:** Energiespeicher, Zellmembranen, Vitaminaufnahme\n- **Energiegehalt:** 9 kcal pro Gramm\n- **Wichtige Formen:**\n  - Gesättigte Fettsäuren\n  - Ungesättigte Fettsäuren (einfach und mehrfach)"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welcher Makronährstoff liefert am meisten Energie pro Gramm?",
+      "options": [
+        "Kohlenhydrate",
+        "Proteine",
+        "Fette"
+      ],
+      "correctAnswer": "Fette",
+      "content": "**Richtig!** Fette liefern mit 9 kcal/g mehr als doppelt so viel Energie wie Kohlenhydrate und Proteine (je 4 kcal/g)."
+    },
+    {
+      "type": "learning-content",
+      "content": "## Kohlenhydrate: Struktur und Funktion\n\n### Einfachzucker (Monosaccharide)\n\nGlucose ist der wichtigste Energieträger für den Körper. Das Gehirn ist besonders auf eine konstante Glucoseversorgung angewiesen.\n\n### Mehrfachzucker (Polysaccharide)\n\n- **Stärke:** Pflanzlicher Energiespeicher, wichtige Quelle in Getreide, Kartoffeln, Reis\n- **Glykogen:** Tierischer Energiespeicher in Leber und Muskulatur\n- **Ballaststoffe:** Unverdauliche Kohlenhydrate mit wichtigen Funktionen für die Verdauung\n\n### Glykämischer Index (GI)\n\nDer GI gibt an, wie schnell ein kohlenhydrathaltiges Lebensmittel den Blutzuckerspiegel ansteigen lässt:\n\n- **Hoher GI:** Schneller Anstieg (z.B. Weißbrot, Traubenzucker)\n- **Niedriger GI:** Langsamer Anstieg (z.B. Vollkornprodukte, Hülsenfrüchte)"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist Glykogen?",
+      "options": [
+        "Ein pflanzlicher Energiespeicher",
+        "Ein tierischer Energiespeicher",
+        "Ein Ballaststoff",
+        "Ein Einfachzucker"
+      ],
+      "correctAnswer": "Ein tierischer Energiespeicher",
+      "content": "**Korrekt!** Glykogen ist die Speicherform der Glucose in Leber und Muskulatur von Tieren und Menschen."
+    },
+    {
+      "type": "learning-content",
+      "content": "## Proteine: Aufbau und Bedeutung\n\n### Aminosäuren\n\nProteine bestehen aus Ketten von Aminosäuren. Es gibt 20 verschiedene Aminosäuren, von denen 9 essentiell sind:\n\n**Essentielle Aminosäuren (müssen über Nahrung aufgenommen werden):**\n\n- Leucin, Isoleucin, Valin\n- Lysin, Methionin, Threonin\n- Phenylalanin, Tryptophan, Histidin\n\n### Biologische Wertigkeit\n\nDie biologische Wertigkeit gibt an, wie effizient Nahrungsprotein in körpereigenes Protein umgewandelt werden kann:\n\n- **Vollei:** 100 (Referenzwert)\n- **Rindfleisch:** 92\n- **Thunfisch:** 92\n- **Milch:** 88\n- **Soja:** 84\n\n### Proteinbedarf\n\n- **Erwachsene:** 0,8 g pro kg Körpergewicht täglich\n- **Sportler:** 1,2-2,0 g pro kg Körpergewicht\n- **Schwangere/Stillende:** Erhöhter Bedarf"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wie viele essentielle Aminosäuren gibt es?",
+      "options": [
+        "5",
+        "9",
+        "15",
+        "20"
+      ],
+      "correctAnswer": 9,
+      "content": "**Genau!** Von den 20 proteinogenen Aminosäuren sind 9 essentiell und müssen über die Nahrung aufgenommen werden."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice",
+      "question": "Welcher Makronährstoff hat den höchsten Energiegehalt pro Gramm?",
+      "options": [
+        "Kohlenhydrate (4 kcal/g)",
+        "Proteine (4 kcal/g)",
+        "Fette (9 kcal/g)",
+        "Alle haben den gleichen Energiegehalt"
+      ],
+      "correctAnswer": "Fette (9 kcal/g)",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Was sind essentielle Aminosäuren?",
+      "options": [
+        "Aminosäuren, die der Körper selbst herstellen kann",
+        "Aminosäuren, die über die Nahrung aufgenommen werden müssen",
+        "Aminosäuren, die nur in tierischen Produkten vorkommen",
+        "Aminosäuren, die besonders viel Energie liefern"
+      ],
+      "correctAnswer": "Aminosäuren, die über die Nahrung aufgenommen werden müssen",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Was ist der glykämische Index (GI)?",
+      "options": [
+        "Ein Maß für den Vitamingehalt von Lebensmitteln",
+        "Ein Maß für die Geschwindigkeit des Blutzuckeranstiegs",
+        "Ein Maß für den Proteingehalt",
+        "Ein Maß für den Fettgehalt"
+      ],
+      "correctAnswer": "Ein Maß für die Geschwindigkeit des Blutzuckeranstiegs",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Wo wird Glykogen im menschlichen Körper gespeichert?",
+      "options": [
+        "Im Gehirn",
+        "In Leber und Muskulatur",
+        "Im Blut",
+        "Im Fettgewebe"
+      ],
+      "correctAnswer": "In Leber und Muskulatur",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Welche Funktion haben Ballaststoffe hauptsächlich?",
+      "options": [
+        "Sie liefern viel Energie",
+        "Sie sind wichtig für die Verdauung",
+        "Sie werden zu Proteinen umgebaut",
+        "Sie dienen als Vitaminquelle"
+      ],
+      "correctAnswer": "Sie sind wichtig für die Verdauung",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Was bedeutet eine hohe biologische Wertigkeit eines Proteins?",
+      "options": [
+        "Das Protein enthält viele Kalorien",
+        "Das Protein kann effizient in körpereigenes Protein umgewandelt werden",
+        "Das Protein ist besonders teuer",
+        "Das Protein kommt nur in biologischen Lebensmitteln vor"
+      ],
+      "correctAnswer": "Das Protein kann effizient in körpereigenes Protein umgewandelt werden",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Wie hoch ist der tägliche Proteinbedarf für einen durchschnittlichen Erwachsenen?",
+      "options": [
+        "0,3 g pro kg Körpergewicht",
+        "0,8 g pro kg Körpergewicht",
+        "2,5 g pro kg Körpergewicht",
+        "5,0 g pro kg Körpergewicht"
+      ],
+      "correctAnswer": "0,8 g pro kg Körpergewicht",
+      "explanation": ""
+    }
+  ],
+  "generatedAt": "2026-01-11T23:14:27.615Z"
+}

@@ -6,6 +6,7 @@
 
 - **Tech:** Plain HTML/CSS/JS, Tailwind CDN, no build step
 - **Code:** English | **UI text:** German
+- **Build:** `npm run build` after content changes
 - **Validate:** Open `validate-content.html` in browser (NOT via node/shell!)
 - **Lint:** `npx markdownlint-cli2 "**/*.md"` (no --fix!)
 
@@ -25,7 +26,8 @@ When generating content from `studies-material/` files:
 3. **Add `sources`** array to `lecture.md`
 4. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
 5. **Remove citation markers** from output text
-6. **Validate** with Tools → "Inhalte validieren"
+6. **Run `npm run build`** to regenerate JSON files
+7. **Validate** with Tools → "Inhalte validieren"
 
 ## Git Workflow
 

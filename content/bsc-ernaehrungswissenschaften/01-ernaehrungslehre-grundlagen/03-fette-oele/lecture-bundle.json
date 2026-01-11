@@ -1,0 +1,157 @@
+{
+  "moduleId": "01-ernaehrungslehre-grundlagen",
+  "lectureId": "03-fette-oele",
+  "metadata": {
+    "topic": "Fette und Öle",
+    "description": "Unterschiede zwischen Fetten und Ölen, Aufbau von Triglyceriden, gesättigte und ungesättigte Fettsäuren, sowie deren Bedeutung für die Gesundheit.",
+    "estimatedTime": 22,
+    "sources": []
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Fette und Öle",
+      "content": "# Fette und Öle\n\nLernen Sie die verschiedenen Arten von Fetten kennen und verstehen Sie deren Bedeutung für eine gesunde Ernährung.",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "content": "## Fette und Öle: Grundlagen\n\nFette und Öle gehören zur Gruppe der Lipide und sind essentielle Bestandteile unserer Ernährung. Der Hauptunterschied:\n\n- **Fette:** Bei Raumtemperatur fest (z.B. Butter, Schmalz)\n- **Öle:** Bei Raumtemperatur flüssig (z.B. Olivenöl, Sonnenblumenöl)\n\n### Aufbau von Fetten\n\nDie meisten Nahrungsfette sind **Triglyceride**, bestehend aus:\n\n- 1 Glycerinmolekül\n- 3 Fettsäuren\n\n### Funktionen von Fetten\n\n- Energiespeicher (höchste Energiedichte: 9 kcal/g)\n- Aufnahme fettlöslicher Vitamine (A, D, E, K)\n- Bestandteil von Zellmembranen\n- Bildung von Hormonen\n- Schutz und Isolation von Organen\n- Geschmacksträger"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist ein Triglycerid?",
+      "options": [
+        "Ein Protein mit drei Aminosäuren",
+        "Ein Fett mit drei Fettsäuren",
+        "Ein Kohlenhydrat mit drei Zuckermolekülen",
+        "Ein Vitamin mit drei Funktionen"
+      ],
+      "correctAnswer": "Ein Fett mit drei Fettsäuren",
+      "content": "**Richtig!** Triglyceride bestehen aus einem Glycerinmolekül und drei Fettsäuren und sind die Hauptform der Nahrungsfette."
+    },
+    {
+      "type": "learning-content",
+      "content": "## Fettsäuren: Gesättigt vs. Ungesättigt\n\n### Gesättigte Fettsäuren\n\n- **Struktur:** Keine Doppelbindungen zwischen C-Atomen\n- **Eigenschaften:** Fest bei Raumtemperatur\n- **Vorkommen:** Tierische Fette (Butter, Schmalz), Kokosfett, Palmfett\n- **Empfehlung:** Mäßiger Konsum (max. 10% der Gesamtenergie)\n\n### Einfach ungesättigte Fettsäuren\n\n- **Struktur:** Eine Doppelbindung\n- **Wichtigste:** Ölsäure (Omega-9)\n- **Vorkommen:** Olivenöl, Rapsöl, Avocados, Nüsse\n- **Wirkung:** Positiv für Herz-Kreislauf-System\n\n### Mehrfach ungesättigte Fettsäuren\n\n- **Struktur:** Mehrere Doppelbindungen\n- **Wichtige Gruppen:**\n  - **Omega-3-Fettsäuren:** Alpha-Linolensäure (ALA), EPA, DHA\n  - **Omega-6-Fettsäuren:** Linolsäure\n- **Essentiell:** Müssen über Nahrung aufgenommen werden\n- **Vorkommen:**\n  - Omega-3: Fettreicher Fisch, Leinöl, Walnüsse\n  - Omega-6: Sonnenblumenöl, Maiskeimöl"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was unterscheidet gesättigte von ungesättigten Fettsäuren?",
+      "options": [
+        "Die Anzahl der Kohlenstoffatome",
+        "Das Vorhandensein von Doppelbindungen",
+        "Die Länge der Kette",
+        "Der Energiegehalt"
+      ],
+      "correctAnswer": "Das Vorhandensein von Doppelbindungen",
+      "content": "**Genau!** Ungesättigte Fettsäuren haben eine oder mehrere Doppelbindungen, gesättigte Fettsäuren haben keine."
+    },
+    {
+      "type": "learning-content",
+      "content": "## Trans-Fettsäuren und Cholesterin\n\n### Trans-Fettsäuren\n\n- **Entstehung:** Industrielle Härtung von Ölen, beim Erhitzen\n- **Vorkommen:** Margarine, Fertigprodukte, frittierte Speisen\n- **Gesundheit:** Erhöhen LDL-Cholesterin, senken HDL-Cholesterin\n- **Empfehlung:** Weitgehend meiden (max. 1% der Energie)\n\n### Cholesterin\n\nCholesterin ist kein Fett, wird aber oft in diesem Kontext besprochen:\n\n- **Funktion:** Wichtig für Zellmembranen, Hormonbildung, Vitamin-D-Synthese\n- **Eigenproduktion:** Körper produziert selbst Cholesterin (Leber)\n- **Nahrungscholesterin:** Eier, Innereien, Butter\n\n**LDL vs. HDL:**\n\n- **LDL (\"schlechtes\" Cholesterin):** Transport zur Peripherie, Ablagerungen möglich\n- **HDL (\"gutes\" Cholesterin):** Abtransport zur Leber, schützende Wirkung"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Fettsäuren sollten weitgehend gemieden werden?",
+      "options": [
+        "Gesättigte Fettsäuren",
+        "Einfach ungesättigte Fettsäuren",
+        "Trans-Fettsäuren",
+        "Omega-3-Fettsäuren"
+      ],
+      "correctAnswer": "Trans-Fettsäuren",
+      "content": "**Richtig!** Trans-Fettsäuren haben negative Auswirkungen auf den Cholesterinspiegel und sollten weitgehend gemieden werden."
+    },
+    {
+      "type": "learning-content",
+      "content": "## Praktische Ernährungsempfehlungen\n\n### Optimale Fettzufuhr\n\nDie Deutsche Gesellschaft für Ernährung (DGE) empfiehlt:\n\n- **Gesamtfett:** 30% der Energiezufuhr\n- **Gesättigte Fettsäuren:** Max. 10% der Energie\n- **Omega-6 zu Omega-3:** Verhältnis 5:1 (aktuell oft 20:1)\n\n### Auswahl guter Fettquellen\n\n**Empfehlenswert:**\n\n- Olivenöl, Rapsöl (reich an Ölsäure)\n- Fettreicher Fisch (Lachs, Makrele, Hering) – Omega-3\n- Nüsse und Samen\n- Avocados\n\n**Mäßig konsumieren:**\n\n- Butter, Sahne\n- Fettes Fleisch\n- Wurstwaren\n\n**Meiden:**\n\n- Gehärtete Fette\n- Frittierte Fast-Food-Produkte\n- Fertigprodukte mit Trans-Fetten\n\n### Omega-3-Zufuhr erhöhen\n\n- 2x pro Woche fettreichen Seefisch\n- Leinöl, Walnussöl verwenden\n- Chiasamen, Leinsamen ins Müsli\n- Bei Bedarf: Algenöl (vegane EPA/DHA-Quelle)"
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice",
+      "question": "Welcher Hauptunterschied besteht zwischen Fetten und Ölen?",
+      "options": [
+        "Fette sind pflanzlich, Öle tierisch",
+        "Fette sind fest, Öle flüssig bei Raumtemperatur",
+        "Fette haben mehr Kalorien als Öle",
+        "Fette enthalten kein Cholesterin"
+      ],
+      "correctAnswer": "Fette sind fest, Öle flüssig bei Raumtemperatur",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Welche Fettsäuren sind essentiell und müssen über die Nahrung aufgenommen werden?",
+      "options": [
+        "Gesättigte Fettsäuren",
+        "Trans-Fettsäuren",
+        "Omega-3 und Omega-6 Fettsäuren",
+        "Einfach ungesättigte Fettsäuren"
+      ],
+      "correctAnswer": "Omega-3 und Omega-6 Fettsäuren",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Wo kommen hauptsächlich Omega-3-Fettsäuren vor?",
+      "options": [
+        "In Butter und Sahne",
+        "In fettreichem Fisch und Leinöl",
+        "In Sonnenblumenöl",
+        "In Kokosöl"
+      ],
+      "correctAnswer": "In fettreichem Fisch und Leinöl",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Was sind Trans-Fettsäuren?",
+      "options": [
+        "Natürlich vorkommende gesunde Fettsäuren",
+        "Industriell gehärtete Fettsäuren mit negativen Gesundheitseffekten",
+        "Essentielle Fettsäuren",
+        "Omega-3-Fettsäuren"
+      ],
+      "correctAnswer": "Industriell gehärtete Fettsäuren mit negativen Gesundheitseffekten",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Was bedeutet HDL-Cholesterin?",
+      "options": [
+        "Schlechtes Cholesterin, das sich ablagert",
+        "Gutes Cholesterin mit schützender Wirkung",
+        "Eine Art von Fettsäure",
+        "Ein Vitamin"
+      ],
+      "correctAnswer": "Gutes Cholesterin mit schützender Wirkung",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Welche fettlöslichen Vitamine gibt es?",
+      "options": [
+        "A, B, C, D",
+        "A, D, E, K",
+        "B, C, E, K",
+        "C, D, E, F"
+      ],
+      "correctAnswer": "A, D, E, K",
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Wie viel Prozent der Energiezufuhr sollte laut DGE aus Fett stammen?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "50%"
+      ],
+      "correctAnswer": "30%",
+      "explanation": ""
+    }
+  ],
+  "generatedAt": "2026-01-11T23:14:27.615Z"
+}

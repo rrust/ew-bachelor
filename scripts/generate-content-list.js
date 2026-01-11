@@ -22,7 +22,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONTENT_DIR = path.join(__dirname, 'content');
+const CONTENT_DIR = path.join(__dirname, '..', 'content');
 
 /**
  * Parses YAML frontmatter from markdown content.

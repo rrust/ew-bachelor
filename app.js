@@ -137,22 +137,64 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (route.view === 'module' && route.moduleId) {
       if (route.lectureId) {
         if (route.overview) {
-          // Show overview for this lecture
+          // Show overview for this lecture (async for lazy loading)
           currentModuleId = route.moduleId;
           currentLectureId = route.lectureId;
-          const lecture =
-            APP_CONTENT[route.moduleId]?.lectures[route.lectureId];
-          if (lecture && lecture.items && lecture.items.length > 0) {
-            lectureState.currentItems = lecture.items;
-            lectureState.currentIndex = 0;
-            showView('lecture'); // Show lecture view first
-            showLectureOverview(); // Then show overview within lecture view
-          }
+
+          // Load lecture first if needed (lazy loading)
+          (async () => {
+            const settings = getAppSettings();
+            if (window.BundleLoader) {
+              const hideLoading = window.showLoadingOverlay
+                ? window.showLoadingOverlay('Übersicht wird geladen...')
+                : null;
+
+              await window.BundleLoader.ensureLectureLoaded(
+                APP_CONTENT,
+                settings.activeStudyId,
+                route.moduleId,
+                route.lectureId
+              );
+
+              if (hideLoading) hideLoading();
+            }
+
+            const lecture =
+              APP_CONTENT[route.moduleId]?.lectures[route.lectureId];
+            if (lecture && lecture.items && lecture.items.length > 0) {
+              lectureState.currentItems = lecture.items;
+              lectureState.currentIndex = 0;
+              showView('lecture'); // Show lecture view first
+              showLectureOverview(); // Then show overview within lecture view
+            } else {
+              alert('Diese Vorlesung hat keinen Inhalt.');
+            }
+          })();
           return true;
         } else if (route.quiz) {
           currentModuleId = route.moduleId;
           currentLectureId = route.lectureId;
-          startQuiz();
+
+          // Load lecture first if needed (lazy loading)
+          (async () => {
+            const settings = getAppSettings();
+            if (window.BundleLoader) {
+              const hideLoading = window.showLoadingOverlay
+                ? window.showLoadingOverlay('Quiz wird geladen...')
+                : null;
+
+              await window.BundleLoader.ensureLectureLoaded(
+                APP_CONTENT,
+                settings.activeStudyId,
+                route.moduleId,
+                route.lectureId
+              );
+
+              if (hideLoading) hideLoading();
+            }
+
+            startQuiz();
+          })();
           return true;
         } else {
           // Pass itemIndex to startLecture so it starts at the correct position
@@ -365,7 +407,34 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   /**
-   * Loads content for a specific study
+   * Loads content for a specific study (LAZY mode - only metadata)
+   * Lectures are loaded on-demand via BundleLoader
+   * @param {string} studyId - The study ID to load
+   */
+  async function loadStudyContentLazy(studyId) {
+    // Load modules metadata from JSON
+    MODULES = await loadModules(studyId);
+    window.MODULES = MODULES;
+    window.APP_MODULES = MODULES;
+
+    // Initialize empty APP_CONTENT structure with module shells
+    APP_CONTENT = {};
+    for (const module of MODULES) {
+      APP_CONTENT[module.id] = {
+        lectures: {}
+      };
+    }
+    APP_CONTENT.achievements = {};
+    window.APP_CONTENT = APP_CONTENT;
+
+    console.log(
+      '[App] Lazy loading mode: Modules loaded, lectures will load on-demand'
+    );
+  }
+
+  /**
+   * Loads content for a specific study (FULL mode - all content)
+   * Used for search functionality and backward compatibility
    * @param {string} studyId - The study ID to load
    */
   async function loadStudyContent(studyId) {
@@ -435,9 +504,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     updateLoadingStatus('Inhalte laden...', 35);
 
-    // 4. Load content for active study
+    // 4. Load content for active study (lazy mode - only metadata)
     setCurrentStudy(currentSettings.activeStudyId);
-    await loadStudyContent(currentSettings.activeStudyId);
+    await loadStudyContentLazy(currentSettings.activeStudyId);
+
+    // 5. Preload content manifest for lazy loading
+    if (window.DownloadManager) {
+      await window.DownloadManager.loadManifest(currentSettings.activeStudyId);
+    }
 
     updateLoadingStatus('Fast fertig...', 95);
 
@@ -541,14 +615,50 @@ document.addEventListener('DOMContentLoaded', async () => {
       updateURL,
       showView,
       startLecture,
-      (modId, lecId) => {
+      async (modId, lecId) => {
         currentModuleId = modId;
         currentLectureId = lecId;
+
+        // Ensure lecture is loaded (lazy loading support)
+        const settings = getAppSettings();
+        if (window.BundleLoader) {
+          const hideLoading = window.showLoadingOverlay
+            ? window.showLoadingOverlay('Quiz wird geladen...')
+            : null;
+
+          await window.BundleLoader.ensureLectureLoaded(
+            APP_CONTENT,
+            settings.activeStudyId,
+            modId,
+            lecId
+          );
+
+          if (hideLoading) hideLoading();
+        }
+
         startQuiz();
       },
-      (modId, lecId) => {
+      async (modId, lecId) => {
         currentModuleId = modId;
         currentLectureId = lecId;
+
+        // Ensure lecture is loaded (lazy loading support)
+        const settings = getAppSettings();
+        if (window.BundleLoader) {
+          const hideLoading = window.showLoadingOverlay
+            ? window.showLoadingOverlay('Übersicht wird geladen...')
+            : null;
+
+          await window.BundleLoader.ensureLectureLoaded(
+            APP_CONTENT,
+            settings.activeStudyId,
+            modId,
+            lecId
+          );
+
+          if (hideLoading) hideLoading();
+        }
+
         const lecture = APP_CONTENT[modId]?.lectures[lecId];
         if (lecture && lecture.items && lecture.items.length > 0) {
           lectureState.currentItems = lecture.items;
@@ -563,9 +673,38 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // --- Lecture Player Logic (using LectureModule) ---
-  function startLecture(moduleId, lectureId, startIndex = 0) {
+  async function startLecture(moduleId, lectureId, startIndex = 0) {
     currentModuleId = moduleId;
     currentLectureId = lectureId;
+
+    // Ensure lecture is loaded (lazy loading support)
+    const settings = getAppSettings();
+    const studyId = settings.activeStudyId;
+
+    if (window.BundleLoader) {
+      // Show loading overlay
+      const hideLoading = window.showLoadingOverlay
+        ? window.showLoadingOverlay('Vorlesung wird geladen...')
+        : null;
+
+      const lecture = await window.BundleLoader.ensureLectureLoaded(
+        APP_CONTENT,
+        studyId,
+        moduleId,
+        lectureId
+      );
+
+      // Hide loading overlay
+      if (hideLoading) hideLoading();
+
+      if (!lecture) {
+        console.error(`[App] Failed to load lecture: ${moduleId}/${lectureId}`);
+        alert(
+          'Vorlesung konnte nicht geladen werden. Bitte versuche es erneut.'
+        );
+        return;
+      }
+    }
 
     // Get lecture topic for snapshot descriptions
     const moduleContent = APP_CONTENT[moduleId];

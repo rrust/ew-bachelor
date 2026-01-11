@@ -1,0 +1,553 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "01-materie-messen",
+  "metadata": {
+    "topic": "Materie und Messen",
+    "description": "Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit.",
+    "estimatedTime": 45,
+    "sources": [
+      {
+        "id": "vorlesung-k1",
+        "title": "Vorlesungsfolien Kapitel 1 (WS2025)",
+        "url": "https://moodle.univie.ac.at/pluginfile.php/31885078/mod_resource/content/0/Kapitel1WS2025.pdf",
+        "type": "pdf"
+      },
+      {
+        "id": "mortimer",
+        "title": "Mortimer & Müller: Chemie - Das Basiswissen der Chemie (10. Aufl.)",
+        "url": null,
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Materie und Messen",
+      "content": "# Materie und Messen\n\nIn dieser Vorlesung lernen Sie die grundlegenden Konzepte der Chemie kennen. Wir beginnen mit der Frage, was Chemie eigentlich ist und wie wir Materie wissenschaftlich untersuchen. Sie erfahren mehr über den Aufbau von Atomen, das Periodensystem und die verschiedenen Betrachtungsebenen der Chemie.\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Die Begriffe Materie und Energie definieren\n- Die wissenschaftliche Methode und fundamentale Naturgesetze erklären\n- Den Aufbau des Periodensystems und die Kategorien der Elemente beschreiben\n- Die drei Betrachtungsebenen der Chemie (makroskopisch, submikroskopisch, symbolisch) unterscheiden\n- Aggregatzustände und ihre Eigenschaften erklären\n- Die Dichte berechnen und SI-Einheiten korrekt anwenden\n- Mit signifikanten Stellen und Messunsicherheiten umgehen",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "topic": "Einführung in die Chemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "23-25"
+        }
+      ],
+      "content": "## Was ist Chemie?\n\nChemie ist weit mehr als das Hantieren im Labor. Sie ist definiert als die **Wissenschaft, die sich mit der Charakterisierung, Zusammensetzung und Umwandlung von Stoffen befasst**. Ein zentraler Aspekt ist dabei die Untersuchung der Energieveränderungen, die mit diesen stofflichen Umwandlungen einhergehen.\n\nUm die Chemie zu verstehen, müssen zwei Grundbegriffe definiert werden:\n\n### Materie\n\n**Materie** bezeichnet alles, was eine Masse besitzt und Raum einnimmt. Jeder Gegenstand um uns herum – ob fest, flüssig oder gasförmig – besteht aus Materie.\n\n### Energie\n\n**Energie** ist die Kapazität eines Systems, Arbeit zu leisten oder Wärme zu übertragen. Energie kann in verschiedenen Formen auftreten, z.B. als:\n\n- **Kinetische Energie** (Bewegungsenergie)\n- **Potenzielle Energie** (Lageenergie)\n- **Wärmeenergie** (thermische Energie)\n- **Chemische Energie** (in Bindungen gespeichert)\n\nDie Chemie untersucht, wie Materie sich umwandelt und welche Energieänderungen dabei auftreten."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Einführung in die Chemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "47-53"
+        }
+      ],
+      "content": "## Die wissenschaftliche Methode\n\nDer Erkenntnisgewinn in der Chemie folgt einem systematischen Prozess – der **wissenschaftlichen Methode**:\n\n```mermaid\ngraph LR\n    A[Beobachtung] --> B[Hypothese]\n    B --> C[Experiment]\n    C --> D{Bestätigt?}\n    D -->|Ja| E[Theorie]\n    D -->|Nein| B\n    E --> F[Naturgesetz]\n```\n\n### Die Schritte im Detail\n\n1. **Beobachtung:** Phänomene in der Natur werden sorgfältig beobachtet und dokumentiert.\n\n2. **Hypothese:** Aus den Beobachtungen wird eine vorläufige Erklärung formuliert – eine testbare Vermutung.\n\n3. **Experiment:** Die Hypothese wird durch kontrollierte Versuche überprüft. Experimente müssen reproduzierbar sein.\n\n4. **Theorie:** Wenn sich eine Hypothese in vielen Experimenten bestätigt, entwickelt sie sich zu einer wissenschaftlichen Theorie – einem gut gestützten Erklärungsmodell.\n\n5. **Naturgesetz:** Wenn sich ein beobachtetes Verhalten von Materie generell bestätigt und keine Ausnahmen bekannt sind, spricht man von einem **Naturgesetz** oder physikalischen Gesetz.\n\n### Der Unterschied\n\n> **Theorie** = erklärt *warum* etwas passiert\n>\n> **Naturgesetz** = beschreibt *was* passiert (ohne Erklärung)"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Einführung in die Chemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "59-67"
+        }
+      ],
+      "content": "## Fundamentale Naturgesetze\n\nDrei fundamentale Gesetze bilden das Rückgrat der chemischen Energetik und Massenbilanz:\n\n### Massenerhaltungssatz\n\n> Während einer chemischen Reaktion findet **keine beobachtbare Veränderung der Gesamtmasse** statt; die Masse der Edukte entspricht der Masse der Produkte.\n\nWenn Sie 10 g Wasserstoff mit 80 g Sauerstoff reagieren lassen, erhalten Sie genau 90 g Wasser – nicht mehr und nicht weniger.\n\n### Energieerhaltungssatz\n\n> In einem abgeschlossenen System kann Energie **weder erzeugt noch vernichtet** werden. Sie kann lediglich zwischen verschiedenen Formen umgewandelt werden.\n\nBeispiel: Kinetische Energie (Bewegung) kann in Wärmeenergie umgewandelt werden – etwa wenn Sie bremsen und die Bremsscheiben heiß werden.\n\n### Äquivalenz von Masse und Energie\n\nDie kombinierte Menge von Masse und Energie im Universum ist fixiert. Dieser Zusammenhang wird durch Einsteins berühmte Gleichung ausgedrückt:\n\n$$E = mc^{2}$$\n\nDabei ist:\n- $E$ = Energie\n- $m$ = Masse\n- $c$ = Lichtgeschwindigkeit ($\\approx 3 \\times 10^8 \\, \\text{m/s}$)\n\nDiese Gleichung zeigt, dass Masse und Energie äquivalent sind – eine kleine Menge Masse entspricht einer enormen Menge Energie."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Einführung in die Chemie",
+      "question": "Welches Naturgesetz besagt, dass die Gesamtmasse bei einer chemischen Reaktion konstant bleibt?",
+      "options": [
+        "Energieerhaltungssatz",
+        "Massenerhaltungssatz",
+        "Gesetz der konstanten Proportionen",
+        "Einsteins Relativitätstheorie"
+      ],
+      "correctAnswer": "Massenerhaltungssatz",
+      "content": "**Erklärung:** Der Massenerhaltungssatz (auch Gesetz der Erhaltung der Masse) besagt, dass bei chemischen Reaktionen die Gesamtmasse der Ausgangsstoffe (Edukte) gleich der Gesamtmasse der Produkte ist. Materie wird weder erschaffen noch vernichtet – sie wird nur umgewandelt."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Atome und Elemente",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "71, 73, 76, 146-149, 166-174"
+        }
+      ],
+      "content": "## Das Periodensystem der Elemente (PSE)\n\nDas Periodensystem ist das **zentrale Ordnungssystem der Chemie**. Es listet alle chemischen Elemente, ihre Namen und Symbole auf. Aktuell sind **118 Elemente** bekannt.\n\n### Historische Entwicklung\n\nDas Periodensystem wurde maßgeblich entwickelt von:\n- **Dmitri Mendeleev** (1834–1907)\n- **Lothar Meyer** (1830–1895)\n\nEine besondere Ehre wurde **Glenn Seaborg** zuteil: Er entdeckte 8 neue Elemente und ist die einzige Person, nach der zu Lebzeiten ein Element (Seaborgium, Sg) benannt wurde.\n\n### Die drei Hauptkategorien\n\nDie Elemente im PSE werden in drei Hauptkategorien unterteilt:\n\n| Kategorie        | Position im PSE                  | Beispiele                                   |\n| ---------------- | -------------------------------- | ------------------------------------------- |\n| **Metalle**      | Links und mittig (größte Gruppe) | Natrium (Na), Eisen (Fe), Kupfer (Cu)       |\n| **Halbmetalle**  | Entlang der Treppenlinie         | Silizium (Si), Arsen (As), Germanium (Ge)   |\n| **Nichtmetalle** | Rechte Seite                     | Sauerstoff (O), Chlor (Cl), Wasserstoff (H) |\n\n### Definition eines Elements\n\nWas genau ist ein Element? Robert Boyle definierte bereits 1661:\n\n> Elemente sind primitive, einfache Körper, die **nicht aus anderen Körpern zusammengesetzt** sind und in die alle gemischten Körper letztlich zerlegt werden.\n\nModern ausgedrückt: Ein Element ist ein **chemisch nicht weiter trennbarer Reinstoff**."
+    },
+    {
+      "type": "mermaid-diagram",
+      "title": "Kategorien der Elemente im Periodensystem",
+      "content": "```mermaid\ngraph TB\n    subgraph PSE[\"Periodensystem der Elemente\"]\n        direction TB\n        \n        M[\"🔵 METALLE<br/>≈80% aller Elemente<br/>Links & Mitte\"]\n        HM[\"🟢 HALBMETALLE<br/>Treppenlinie<br/>z.B. Si, Ge, As\"]\n        NM[\"🟡 NICHTMETALLE<br/>Rechte Seite<br/>z.B. O, N, C, Cl\"]\n    end\n    \n    M --> ME[\"Eigenschaften:<br/>• Elektrisch leitfähig<br/>• Wärmeleitend<br/>• Metallischer Glanz<br/>• Verformbar\"]\n    \n    HM --> HME[\"Eigenschaften:<br/>• Zwischen Metall & Nichtmetall<br/>• Halbleiter<br/>• Wichtig für Elektronik\"]\n    \n    NM --> NME[\"Eigenschaften:<br/>• Meist Isolatoren<br/>• Oft gasförmig<br/>• Essentiell für Leben\"]\n```\n\nDie Elemente sind im Periodensystem nach steigender Ordnungszahl angeordnet. Die Treppenlinie (Halbmetalle) trennt Metalle von Nichtmetallen."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Atome und Elemente",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "195-198"
+        }
+      ],
+      "content": "## Der Aufbau des Atoms\n\nJedes Element besteht aus **Atomen**. Ein Atom ist strukturell zweigeteilt:\n\n### 1. Der Atomkern (Nucleus)\n\nDer Kern befindet sich im Zentrum des Atoms. Er ist:\n- **Sehr klein** (ca. $10^{-15}$ m Durchmesser)\n- **Extrem dicht** (enthält fast die gesamte Masse des Atoms)\n\nDer Kern enthält zwei Arten von Teilchen:\n\n| Teilchen    | Ladung      | Masse         |\n| ----------- | ----------- | ------------- |\n| **Proton**  | positiv (+) | $\\approx 1$ u |\n| **Neutron** | neutral (0) | $\\approx 1$ u |\n\nDie Anzahl der Protonen bestimmt, um welches Element es sich handelt (**Ordnungszahl**).\n\n### 2. Die Elektronenhülle (Electron Cloud)\n\nDie **Elektronen** befinden sich im Raum um den Kern herum:\n- **Ladung:** negativ (–)\n- **Masse:** vernachlässigbar klein ($\\approx \\frac{1}{1836}$ der Protonenmasse)\n- **Anordnung:** in Schalen/Orbitalen\n\nIn einem neutralen Atom ist die Anzahl der Elektronen gleich der Anzahl der Protonen.\n\n### Größenverhältnisse\n\nWäre der Atomkern ein Tennisball in der Mitte eines Fußballstadions, würden sich die Elektronen in den äußeren Rängen befinden. Das Atom besteht also größtenteils aus **leerem Raum**!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Atome und Elemente",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "221, 224-230"
+        }
+      ],
+      "content": "## Moleküle und Verbindungen\n\n### Chemische Verbindungen\n\nAtome können sich verbinden und **chemische Verbindungen** bilden. Diese:\n- Sind aus verschiedenen Atomen zusammengesetzt\n- Können chemisch wieder in ihre Elemente gespalten werden\n- Haben völlig neue Eigenschaften als die Ausgangselemente\n\n### Moleküle\n\nEin **Molekül** ist das kleinste Teilchen eines bestimmten Reinstoffes, das noch die chemischen Eigenschaften dieses Stoffes besitzt.\n\nDie Zusammensetzung wird durch eine **molekulare Formel** beschrieben:\n\n> **Beispiel Koffein:** $\\ce{C8H10N4O2}$\n>\n> Ein Molekül Koffein besteht aus:\n> - 8 Kohlenstoffatomen (C)\n> - 10 Wasserstoffatomen (H)\n> - 4 Stickstoffatomen (N)\n> - 2 Sauerstoffatomen (O)\n\n### Neue Eigenschaften durch Reaktion\n\nWenn Elemente reagieren, bilden sie Verbindungen mit **völlig neuen Eigenschaften**:\n\n| Edukte                                    | Produkt                                               |\n| ----------------------------------------- | ----------------------------------------------------- |\n| Natrium (Na) – weiches, reaktives Metall  |                                                       |\n| Chlor ($\\ce{Cl2}$) – giftiges, grünes Gas | **Natriumchlorid** ($\\ce{NaCl}$) – weißes Speisesalz! |\n\nDie Eigenschaften der Verbindung haben nichts mit den Eigenschaften der einzelnen Elemente zu tun."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Atome und Elemente",
+      "question": "Welche Teilchen befinden sich im Atomkern?",
+      "options": [
+        "Elektronen und Protonen",
+        "Protonen und Neutronen",
+        "Elektronen und Neutronen",
+        "Nur Protonen"
+      ],
+      "correctAnswer": "Protonen und Neutronen",
+      "content": "**Erklärung:** Der Atomkern enthält Protonen (positiv geladen) und Neutronen (neutral). Die Elektronen (negativ geladen) befinden sich in der Elektronenhülle, die den Kern umgibt. Die Anzahl der Protonen im Kern bestimmt die Ordnungszahl und damit, um welches Element es sich handelt."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Betrachtungsebenen der Chemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "237-242"
+        }
+      ],
+      "content": "## Die drei Betrachtungsebenen der Chemie\n\nEin essenzielles Konzept für das Verständnis der Chemie ist die Unterscheidung zwischen **drei Betrachtungsebenen**:\n\n### 1. Makroskopische Ebene\n\nDas, was wir mit bloßem Auge sehen und erfahren können:\n- Ein Eisberg, der im Wasser schwimmt\n- Kochendes Wasser, das dampft\n- Ein rostiges Metall\n\nDies ist die **beobachtbare Welt** – die Ebene der alltäglichen Erfahrung.\n\n### 2. Submikroskopische Ebene (Teilchenebene)\n\nDie Ebene der Atome und Moleküle, die wir **nicht sehen können**, aber verstehen müssen, um die makroskopischen Phänomene zu erklären:\n- Wie sind die Moleküle angeordnet?\n- Wie bewegen sie sich?\n- Wie interagieren sie miteinander?\n\n### 3. Symbolische Ebene\n\nDie Verwendung von **chemischen Symbolen und Formeln**, um die beiden anderen Welten zu beschreiben:\n- Elementsymbole: Na, O, C, H\n- Molekülformeln: $\\ce{H2O}$, $\\ce{CO2}$, $\\ce{NaCl}$\n- Reaktionsgleichungen: $\\ce{2H2 + O2 -> 2H2O}$\n\n### Der Zusammenhang\n\nAlle drei Ebenen beschreiben **dieselbe Realität** – nur aus verschiedenen Perspektiven. Ein gutes Verständnis der Chemie erfordert, fließend zwischen diesen Ebenen wechseln zu können."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Betrachtungsebenen der Chemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "237-242"
+        }
+      ],
+      "content": "## Wasser auf allen drei Ebenen\n\nBetrachten wir **Wasser** ($\\ce{H2O}$) als Beispiel für die drei Betrachtungsebenen:\n\n### Makroskopische Ebene\n\nWas wir sehen und erleben:\n\n| Zustand              | Beobachtung                             |\n| -------------------- | --------------------------------------- |\n| **Eis**              | Fest, kalt, schwimmt auf Wasser         |\n| **Flüssiges Wasser** | Fließt, nimmt die Form des Behälters an |\n| **Wasserdampf**      | Unsichtbar, breitet sich aus            |\n\n### Submikroskopische Ebene\n\nWas auf molekularer Ebene passiert:\n\n| Zustand     | Molekülanordnung                                                      |\n| ----------- | --------------------------------------------------------------------- |\n| **Eis**     | Moleküle in starrem Gitter angeordnet, vibrieren nur leicht           |\n| **Flüssig** | Moleküle beweglich, aber nah beieinander, gleiten aneinander vorbei   |\n| **Gas**     | Moleküle weit voneinander entfernt, bewegen sich schnell und zufällig |\n\n### Symbolische Ebene\n\nWie wir es aufschreiben:\n\n- **Molekülformel:** $\\ce{H2O}$\n- **Strukturformel:** H–O–H\n- **Aggregatzustände:** $\\ce{H2O}$(s) für Eis, $\\ce{H2O}$(l) für flüssig, $\\ce{H2O}$(g) für gasförmig\n\nDas kleine Kürzel in Klammern zeigt den Aggregatzustand:\n- **(s)** = solid (fest)\n- **(l)** = liquid (flüssig)\n- **(g)** = gaseous (gasförmig)"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Betrachtungsebenen der Chemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "269"
+        }
+      ],
+      "content": "## Die Knallgasreaktion\n\nEin eindrucksvolles Beispiel für alle drei Betrachtungsebenen ist die **Knallgasreaktion** – die Reaktion von Wasserstoff mit Sauerstoff.\n\n### Makroskopische Beobachtung\n\nWenn ein Ballon mit Wasserstoff-Sauerstoff-Gemisch gezündet wird:\n- **Lauter Knall** (daher der Name)\n- **Helle Flamme**\n- **Wasser entsteht** (als Nebel/Dampf sichtbar)\n- **Energie wird freigesetzt** (Wärme und Licht)\n\n### Submikroskopische Erklärung\n\nAuf Teilchenebene passiert folgendes:\n1. Wasserstoffmoleküle ($\\ce{H2}$) und Sauerstoffmoleküle ($\\ce{O2}$) kollidieren\n2. Die Bindungen in $\\ce{H2}$ und $\\ce{O2}$ werden gebrochen\n3. Die Atome ordnen sich neu an\n4. Neue $\\ce{H2O}$-Moleküle entstehen\n\n### Symbolische Darstellung\n\n$$\\ce{2H2(g) + O2(g) -> 2H2O(g)}$$\n\nDiese Gleichung sagt uns:\n- **2 Moleküle** Wasserstoff reagieren mit **1 Molekül** Sauerstoff\n- Es entstehen **2 Moleküle** Wasser\n- Alle Stoffe sind gasförmig **(g)**\n- Die Gleichung ist **ausgeglichen**: gleich viele Atome links und rechts\n\n| Atom | Links (Edukte) | Rechts (Produkte) |\n| ---- | -------------- | ----------------- |\n| H    | 2 × 2 = 4      | 2 × 2 = 4 ✓       |\n| O    | 1 × 2 = 2      | 2 × 1 = 2 ✓       |"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Betrachtungsebenen der Chemie",
+      "question": "Welche Betrachtungsebene beschreibt die Anordnung und Bewegung von Molekülen?",
+      "options": [
+        "Makroskopische Ebene",
+        "Symbolische Ebene",
+        "Submikroskopische Ebene",
+        "Experimentelle Ebene"
+      ],
+      "correctAnswer": "Submikroskopische Ebene",
+      "content": "**Erklärung:** Die submikroskopische Ebene (auch Teilchenebene genannt) beschreibt, was auf der Ebene der Atome und Moleküle passiert. Hier betrachten wir, wie Teilchen angeordnet sind, wie sie sich bewegen und wie sie miteinander interagieren – Dinge, die wir nicht direkt sehen können, aber zum Verständnis chemischer Phänomene benötigen."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "271-272, 289-295"
+        }
+      ],
+      "content": "## Die drei Aggregatzustände\n\nMaterie besteht kinetisch betrachtet aus sich ständig bewegenden Atomen und Molekülen. Wir unterscheiden drei klassische **Aggregatzustände**:\n\n### 1. Feststoffe (Solids)\n\n| Eigenschaft       | Beschreibung                                     |\n| ----------------- | ------------------------------------------------ |\n| **Form**          | Starr, definierte Gestalt                        |\n| **Volumen**       | Fest, ändert sich kaum                           |\n| **Teilchen**      | In regelmäßigem Gitter angeordnet, vibrieren nur |\n| **Komprimierbar** | Praktisch nicht                                  |\n\nDie äußere Form von Kristallen spiegelt oft die innere, geordnete atomare Struktur wider.\n\n### 2. Flüssigkeiten (Liquids)\n\n| Eigenschaft       | Beschreibung                             |\n| ----------------- | ---------------------------------------- |\n| **Form**          | Keine eigene, passt sich dem Behälter an |\n| **Volumen**       | Fest, definiert                          |\n| **Teilchen**      | Beweglich, aber nah beieinander          |\n| **Komprimierbar** | Kaum                                     |\n\nFlüssigkeiten füllen den Behälter nicht vollständig – sie haben eine freie Oberfläche.\n\n### 3. Gase (Gases)\n\n| Eigenschaft       | Beschreibung                                    |\n| ----------------- | ----------------------------------------------- |\n| **Form**          | Keine eigene, füllt jeden Behälter vollständig  |\n| **Volumen**       | Kein eigenes, dehnt sich aus                    |\n| **Teilchen**      | Weit voneinander entfernt, bewegen sich schnell |\n| **Komprimierbar** | Sehr gut                                        |\n\nTheoretisch ist der gasförmige Zustand am besten verstanden."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "298-310, 433"
+        }
+      ],
+      "content": "## Physikalische vs. Chemische Eigenschaften\n\nEs ist wichtig, zwischen **physikalischen** und **chemischen** Eigenschaften bzw. Veränderungen zu unterscheiden.\n\n### Physikalische Eigenschaften\n\nKönnen beobachtet werden, **ohne die chemische Identität** des Stoffes zu ändern:\n\n- Farbe\n- Schmelzpunkt\n- Siedepunkt\n- Dichte\n- Geruch\n- Löslichkeit\n\n### Physikalische Veränderungen\n\nÄndern nur den **Zustand oder die Form**, nicht die Substanz:\n\n| Beispiel         | Was passiert                                           |\n| ---------------- | ------------------------------------------------------ |\n| Eis schmilzt     | $\\ce{H2O}$(s) → $\\ce{H2O}$(l) – immer noch Wasser      |\n| Wasser verdampft | $\\ce{H2O}$(l) → $\\ce{H2O}$(g) – immer noch Wasser      |\n| Zucker löst sich | Zucker + Wasser → Zuckerlösung (Zucker noch vorhanden) |\n\n### Chemische Eigenschaften\n\nBeschreiben die Fähigkeit eines Stoffes, sich **in andere Stoffe umzuwandeln**:\n\n- Brennbarkeit\n- Reaktivität mit Säuren\n- Oxidationsverhalten\n\n### Chemische Veränderungen (Reaktionen)\n\nTransformieren Atome/Moleküle in **neue Substanzen** mit neuen Eigenschaften:\n\n| Beispiel              | Was passiert                                        |\n| --------------------- | --------------------------------------------------- |\n| Wasserstoff verbrennt | $\\ce{H2 + O2 -> H2O}$ – neuer Stoff entsteht        |\n| Eisen rostet          | $\\ce{Fe + O2 -> Fe2O3}$ – Rost ist nicht mehr Eisen |\n| Holz verbrennt        | $\\ce{C + O2 -> CO2}$ – Asche und Gas entstehen      |\n\n> **Merke:** Bei chemischen Veränderungen entstehen **neue Stoffe**, bei physikalischen **nicht**."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "314-322"
+        }
+      ],
+      "content": "## Klassifizierung von Materie\n\nMaterie kann in **Reinstoffe** und **Mischungen** unterteilt werden:\n\n### Reinstoffe\n\nBestehen nur aus **einer Art von Materie** mit konstanten Eigenschaften:\n\n| Typ              | Definition                                               | Beispiele                                       |\n| ---------------- | -------------------------------------------------------- | ----------------------------------------------- |\n| **Elemente**     | Nicht weiter chemisch trennbar                           | Gold (Au), Sauerstoff (O₂), Kohlenstoff (C)     |\n| **Verbindungen** | Aus verschiedenen Elementen aufgebaut, chemisch trennbar | Wasser (H₂O), Kochsalz (NaCl), Zucker (C₆H₁₂O₆) |\n\n### Mischungen\n\nBestehen aus **zwei oder mehr Substanzen**, die physikalisch getrennt werden können:\n\n#### Homogene Mischungen (Lösungen)\n\nDie Komponenten sind **gleichmäßig verteilt** und nicht unterscheidbar:\n\n- Zuckerwasser (Zucker in Wasser gelöst)\n- Luft (Gemisch aus N₂, O₂, Ar, CO₂, ...)\n- Legierungen wie Bronze (Kupfer + Zinn)\n\n#### Heterogene Mischungen\n\nDie verschiedenen Teile sind **erkennbar**:\n\n- Sand und Eisenpulver\n- Öl in Wasser (Emulsion)\n- Granit (verschiedene Minerale sichtbar)\n- Salat (verschiedene Zutaten erkennbar)\n\n### Trennmethoden\n\n| Methode         | Trennt                       | Beispiel           |\n| --------------- | ---------------------------- | ------------------ |\n| Filtration      | Feststoff von Flüssigkeit    | Sand aus Wasser    |\n| Destillation    | Nach Siedepunkt              | Alkohol aus Wein   |\n| Magnettrennung  | Magnetisches von nicht-magn. | Eisen aus Sand     |\n| Chromatographie | Nach Laufgeschwindigkeit     | Farbstoffe trennen |"
+    },
+    {
+      "type": "mermaid-diagram",
+      "title": "Klassifizierung von Materie",
+      "content": "```mermaid\ngraph TD\n    M[MATERIE] --> R[Reinstoff]\n    M --> MI[Mischung]\n    \n    R --> E[Element<br/>z.B. Gold, Sauerstoff]\n    R --> V[Verbindung<br/>z.B. Wasser, NaCl]\n    \n    MI --> HO[Homogene Mischung<br/>= Lösung<br/>z.B. Zuckerwasser, Luft]\n    MI --> HE[Heterogene Mischung<br/>z.B. Sand+Wasser, Öl+Wasser]\n    \n    E --> |\"Nicht chemisch trennbar\"| EA[Nur Atome<br/>eines Elements]\n    V --> |\"Chemisch trennbar\"| VA[Atome verschiedener<br/>Elemente verbunden]\n    \n    HO --> |\"Physikalisch trennbar\"| HOA[Gleichmäßig verteilt<br/>Nicht unterscheidbar]\n    HE --> |\"Physikalisch trennbar\"| HEA[Ungleichmäßig verteilt<br/>Unterscheidbar]\n```\n\nDieses Diagramm zeigt, wie Materie hierarchisch klassifiziert wird. Der wichtigste Unterschied: **Chemische Trennverfahren** (z.B. Elektrolyse) trennen Verbindungen in Elemente, **physikalische Trennverfahren** (z.B. Destillation, Filtration) trennen Mischungen."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "question": "Welches ist ein Beispiel für eine homogene Mischung?",
+      "options": [
+        "Öl und Wasser",
+        "Granit",
+        "Luft",
+        "Sand und Kies"
+      ],
+      "correctAnswer": "Luft",
+      "content": "**Erklärung:** Luft ist eine homogene Mischung (Lösung) aus verschiedenen Gasen (hauptsächlich Stickstoff und Sauerstoff). Die Komponenten sind gleichmäßig verteilt und nicht unterscheidbar. Öl und Wasser, Granit sowie Sand und Kies sind heterogene Mischungen, bei denen die verschiedenen Bestandteile erkennbar sind."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Dichte und Messung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "342, 346-347"
+        }
+      ],
+      "content": "## Dichte (Density)\n\nDie **Dichte** ist eine charakteristische physikalische Eigenschaft, die hilft, Stoffe zu identifizieren. Sie ist definiert als **Masse pro Volumeneinheit**:\n\n$$\\rho = \\frac{m}{V}$$\n\nDabei ist:\n- $\\rho$ (griechisch: rho) = Dichte\n- $m$ = Masse (in Gramm)\n- $V$ = Volumen (in cm³ oder mL)\n\n### Typische Einheit\n\n$$\\text{Dichte} = \\frac{\\text{Gramm}}{\\text{Kubikzentimeter}} = \\frac{g}{cm^3}$$\n\n> **Wichtig:** $1 \\, \\text{mL} = 1 \\, \\text{cm}^3$\n\n### Beispiele für Dichten bei Raumtemperatur\n\n| Stoff           | Dichte                    | Anmerkung                        |\n| --------------- | ------------------------- | -------------------------------- |\n| **Aluminium**   | $2{,}7 \\, \\text{g/cm}^3$  | Leicht, daher für Flugzeuge      |\n| **Eisen**       | $7{,}9 \\, \\text{g/cm}^3$  | Mittelschwer                     |\n| **Kupfer**      | $8{,}9 \\, \\text{g/cm}^3$  | Elektrische Leiter               |\n| **Quecksilber** | $13{,}6 \\, \\text{g/cm}^3$ | Sehr dicht für eine Flüssigkeit! |\n| **Gold**        | $19{,}3 \\, \\text{g/cm}^3$ | Schwer                           |\n| **Platin**      | $21{,}5 \\, \\text{g/cm}^3$ | Extrem dicht                     |\n| **Wasser**      | $1{,}0 \\, \\text{g/cm}^3$  | Referenzwert                     |\n\n### Anwendung\n\nDie Dichte erklärt, warum manche Stoffe schwimmen und andere sinken:\n- Stoffe mit **Dichte < 1 g/cm³** schwimmen auf Wasser (z.B. Öl, Holz)\n- Stoffe mit **Dichte > 1 g/cm³** sinken in Wasser (z.B. Stein, Metalle)"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Dichte und Messung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "391-428"
+        }
+      ],
+      "content": "## Rechenbeispiel: Dichte berechnen\n\nLernen wir, wie man die Dichte praktisch berechnet – mit Fokus auf **Einheiten** und **signifikante Stellen**.\n\n### Aufgabe: Dichte von Kupfer\n\n> **Gegeben:** Ein Stück Kupfer\n> - Masse: $57{,}54 \\, \\text{g}$\n> - Länge: $9{,}36 \\, \\text{cm}$\n> - Breite: $7{,}23 \\, \\text{cm}$\n> - Dicke: $0{,}95 \\, \\text{mm}$\n>\n> **Gesucht:** Dichte in g/cm³\n\n### Lösungsweg\n\n**Schritt 1: Einheiten angleichen**\n\nDie Dicke ist in mm, muss aber in cm sein:\n\n$$0{,}95 \\, \\text{mm} \\times \\frac{1 \\, \\text{cm}}{10 \\, \\text{mm}} = 0{,}095 \\, \\text{cm}$$\n\n**Schritt 2: Volumen berechnen**\n\n$$V = L \\times B \\times H = 9{,}36 \\, \\text{cm} \\times 7{,}23 \\, \\text{cm} \\times 0{,}095 \\, \\text{cm}$$\n\n$$V = 6{,}428... \\, \\text{cm}^3$$\n\n⚠️ **Achtung:** Die Dicke $0{,}095$ hat nur **2 signifikante Stellen**!\nDaher runden wir: $V = 6{,}4 \\, \\text{cm}^3$\n\n**Schritt 3: Dichte berechnen**\n\n$$\\rho = \\frac{m}{V} = \\frac{57{,}54 \\, \\text{g}}{6{,}4 \\, \\text{cm}^3} = 9{,}0 \\, \\text{g/cm}^3$$\n\n### Ergebnis\n\nDie Dichte des Kupferstücks beträgt **$9{,}0 \\, \\text{g/cm}^3$**.\n\n(Literaturwert für Kupfer: $8{,}96 \\, \\text{g/cm}^3$ – unsere Messung ist also realistisch!)"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Dichte und Messung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "447-462, 475-507"
+        }
+      ],
+      "content": "## Das SI-Einheitensystem\n\nIn der Wissenschaft nutzen wir das **SI-System** (Système International d'Unités) für einheitliche Messungen weltweit.\n\n### Die wichtigsten SI-Basiseinheiten\n\n| Größe                  | Einheit   | Symbol |\n| ---------------------- | --------- | ------ |\n| **Länge**              | Meter     | m      |\n| **Masse**              | Kilogramm | kg     |\n| **Zeit**               | Sekunde   | s      |\n| **Temperatur**         | Kelvin    | K      |\n| **Stoffmenge**         | Mol       | mol    |\n| **Elektrischer Strom** | Ampere    | A      |\n\n> **Achtung:** Die SI-Einheit der Masse ist das **Kilogramm**, nicht das Gramm!\n\n### Metrische Vorsilben\n\nUm sehr große oder kleine Zahlen zu vermeiden, nutzen wir **Vorsilben**:\n\n| Vorsilbe | Symbol | Faktor       | Beispiel            |\n| -------- | ------ | ------------ | ------------------- |\n| Giga     | G      | $10^{9}$     | 1 GB = $10^9$ Bytes |\n| Mega     | M      | $10^{6}$     | 1 MHz = $10^6$ Hz   |\n| Kilo     | k      | $10^{3}$     | 1 km = 1000 m       |\n| —        | —      | $10^{0} = 1$ | Basiseinheit        |\n| Zenti    | c      | $10^{-2}$    | 1 cm = 0,01 m       |\n| Milli    | m      | $10^{-3}$    | 1 mm = 0,001 m      |\n| Mikro    | μ      | $10^{-6}$    | 1 μm = $10^{-6}$ m  |\n| Nano     | n      | $10^{-9}$    | 1 nm = $10^{-9}$ m  |\n| Piko     | p      | $10^{-12}$   | 1 pm = $10^{-12}$ m |\n\n### Größenordnungen in der Chemie\n\n- **Atomabstände:** ca. 0,1 nm = $10^{-10}$ m\n- **Moleküle:** einige nm\n- **Zellen:** einige μm\n- **Sichtbar:** ab ca. 0,1 mm"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Dichte und Messung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "512-535, 593-595"
+        }
+      ],
+      "content": "## Temperaturskalen\n\nEs gibt drei gebräuchliche Temperaturskalen:\n\n### Die drei Skalen im Vergleich\n\n| Skala          | Gefrierpunkt Wasser | Siedepunkt Wasser | Verwendung        |\n| -------------- | ------------------- | ----------------- | ----------------- |\n| **Fahrenheit** | 32°F                | 212°F             | USA im Alltag     |\n| **Celsius**    | 0°C                 | 100°C             | Weltweiter Alltag |\n| **Kelvin**     | 273 K               | 373 K             | Wissenschaft (SI) |\n\n### Die Kelvin-Skala\n\nDie **Kelvin-Skala** ist die SI-Einheit für Temperatur und hat besondere Eigenschaften:\n\n- **Absoluter Nullpunkt:** 0 K (= –273,15°C)\n  - Theoretisch tiefstmögliche Temperatur\n  - Alle Teilchenbewegung stoppt\n- **Keine negativen Werte** in Kelvin\n- **Keine Gradzeichen** – man schreibt „273 K\", nicht „273°K\"\n\n### Umrechnung Celsius ↔ Kelvin\n\nDie Schrittweite ist identisch (1°C = 1 K), nur der Nullpunkt ist verschoben:\n\n$$T(K) = t(°C) + 273{,}15$$\n\n$$t(°C) = T(K) - 273{,}15$$\n\n### Beispiele\n\n| Temperatur           | Celsius   | Kelvin |\n| -------------------- | --------- | ------ |\n| Zimmertemperatur     | 20°C      | 293 K  |\n| Körpertemperatur     | 37°C      | 310 K  |\n| Flüssiger Stickstoff | –196°C    | 77 K   |\n| Absoluter Nullpunkt  | –273,15°C | 0 K    |\n\n> **Beispielrechnung:**\n> Flüssiger Stickstoff bei –196°C:\n> $$T = -196 + 273{,}15 = 77 \\, \\text{K}$$"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Dichte und Messung",
+      "question": "Ein Metallblock hat eine Masse von 500 g und ein Volumen von 50 cm³. Wie groß ist seine Dichte?",
+      "options": [
+        "0,1 g/cm³",
+        "10 g/cm³",
+        "25 g/cm³",
+        "2500 g/cm³"
+      ],
+      "correctAnswer": "10 g/cm³",
+      "content": "**Erklärung:** Die Dichte berechnet sich als Masse geteilt durch Volumen:\n\n$$\\rho = \\frac{m}{V} = \\frac{500 \\, \\text{g}}{50 \\, \\text{cm}^3} = 10 \\, \\text{g/cm}^3$$\n\nDiese Dichte entspricht in etwa der von Silber (10,5 g/cm³)."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Messunsicherheit",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "598-603, 692"
+        }
+      ],
+      "content": "## Genauigkeit vs. Präzision\n\nIm wissenschaftlichen Messen unterscheiden wir strikt zwischen zwei Konzepten:\n\n### Genauigkeit (Accuracy)\n\n> Wie nah liegt ein Messwert am **wahren Wert**?\n\nEine Messung ist genau, wenn sie nahe am tatsächlichen (wahren) Wert liegt.\n\n### Präzision (Precision)\n\n> Wie nah liegen wiederholte Messungen **beieinander**?\n\nEine Messung ist präzise, wenn wiederholte Versuche sehr ähnliche Ergebnisse liefern.\n\n### Die Zielscheiben-Analogie\n\nStellen Sie sich Messungen als Pfeile auf einer Zielscheibe vor:\n\n| Szenario                    | Beschreibung                                                              |\n| --------------------------- | ------------------------------------------------------------------------- |\n| ❌ Weder genau noch präzise  | Treffer weit verstreut, nicht in der Mitte                                |\n| ⚠️ Präzise, aber nicht genau | Treffer eng beieinander, aber weit von der Mitte (systematischer Fehler!) |\n| ✅ Genau und präzise         | Treffer eng beieinander UND in der Mitte                                  |\n\n### Warum ist das wichtig?\n\n- **Mangelnde Präzision** deutet auf zufällige Fehler hin → mehr Messungen machen\n- **Mangelnde Genauigkeit** bei guter Präzision deutet auf einen **systematischen Fehler** hin → Messgerät kalibrieren!\n\n### Prozentualer Fehler\n\nDer prozentuale Fehler quantifiziert die Genauigkeit:\n\n$$\\text{Prozentualer Fehler} = \\frac{\\text{Experimenteller Wert} - \\text{Anerkannter Wert}}{\\text{Anerkannter Wert}} \\times 100\\%$$"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Messunsicherheit",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "700, 711-717, 725"
+        }
+      ],
+      "content": "## Signifikante Stellen (Significant Figures)\n\nSignifikante Stellen geben an, **wie verlässlich ein Messwert ist**. Sie bestehen aus allen sicheren Ziffern plus einer ersten geschätzten Ziffer.\n\n### Die Regeln\n\n#### Regel 1: Führende Nullen zählen NIE\n\nSie dienen nur als Platzhalter:\n\n| Zahl     | Signifikante Stellen |\n| -------- | -------------------- |\n| 0,000357 | 3 (nur 3, 5, 7)      |\n| 0,0102   | 3 (nur 1, 0, 2)      |\n\n#### Regel 2: Nullen zwischen Ziffern zählen IMMER\n\n| Zahl   | Signifikante Stellen |\n| ------ | -------------------- |\n| 3,0604 | 5                    |\n| 10,05  | 4                    |\n\n#### Regel 3: Endnullen sind knifflig\n\nBei ganzen Zahlen ist es oft **unklar**:\n\n| Schreibweise          | Bedeutung    | Sig Figs     |\n| --------------------- | ------------ | ------------ |\n| 2400                  | Unklar!      | 2, 3 oder 4? |\n| $2{,}4 \\times 10^3$   | Zwei Stellen | 2            |\n| $2{,}40 \\times 10^3$  | Drei Stellen | 3            |\n| $2{,}400 \\times 10^3$ | Vier Stellen | 4            |\n\n> **Tipp:** Nutzen Sie **wissenschaftliche Notation** für Klarheit!\n\n#### Regel 4: Exakte Zahlen haben unendlich viele Stellen\n\nDefinitionen und Zählungen sind exakt:\n- 1 Dutzend = genau 12 Stück\n- 1 km = genau 1000 m\n- Sie haben genau 2 Hände\n\nDiese Zahlen begrenzen nie die signifikanten Stellen!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Messunsicherheit",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "761, 775"
+        }
+      ],
+      "content": "## Rechenregeln für signifikante Stellen\n\nJe nach Rechenoperation gelten unterschiedliche Regeln:\n\n### Multiplikation und Division\n\n> Das Ergebnis darf **nicht mehr signifikante Stellen** haben als der Faktor mit den **wenigsten** signifikanten Stellen.\n\n**Beispiel:**\n\n$$4{,}242 \\times 1{,}23 = 5{,}21766...$$\n\n- $4{,}242$ hat 4 signifikante Stellen\n- $1{,}23$ hat **3** signifikante Stellen (limitierend!)\n- **Ergebnis:** $5{,}22$ (auf 3 signifikante Stellen gerundet)\n\n### Addition und Subtraktion\n\n> Das Ergebnis richtet sich nach der Zahl mit den **wenigsten Nachkommastellen**.\n\n**Beispiel:**\n\n$$3{,}6923 + 1{,}234 + 2{,}02 = 6{,}9463$$\n\n- $3{,}6923$ hat 4 Nachkommastellen\n- $1{,}234$ hat 3 Nachkommastellen\n- $2{,}02$ hat **2** Nachkommastellen (limitierend!)\n- **Ergebnis:** $6{,}95$ (auf 2 Nachkommastellen gerundet)\n\n### Zusammenfassung\n\n| Operation | Regel                             | Beispiel                      |\n| --------- | --------------------------------- | ----------------------------- |\n| × und ÷   | Wenigste **signifikante Stellen** | $2{,}0 \\times 3{,}00 = 6{,}0$ |\n| + und −   | Wenigste **Nachkommastellen**     | $2{,}0 + 3{,}001 = 5{,}0$     |\n\n### Rundungsregeln\n\n- < 5 → abrunden\n- ≥ 5 → aufrunden\n- Bei Zwischenrechnungen: **mehr Stellen behalten**, erst am Ende runden!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Messunsicherheit",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k1",
+          "pages": "800-802, 833-842"
+        }
+      ],
+      "content": "## Dimensionsanalyse: Quadrierte und kubierte Einheiten\n\nEin häufiger Fehler passiert bei der Umrechnung von Flächen (m²) und Volumen (m³).\n\n### Das Problem\n\nWenn Sie eine **Fläche** umrechnen, müssen Sie den Umrechnungsfaktor **quadrieren**!\n\n### Beispiel: mm² in m² umrechnen\n\n> Wandle $2{,}61 \\times 10^4 \\, \\text{mm}^2$ in $\\text{m}^2$ um.\n\n**❌ Falsch:** Einfach durch 1000 teilen\n\n**✅ Richtig:** Den Umrechnungsfaktor quadrieren!\n\n$$1 \\, \\text{m} = 1000 \\, \\text{mm}$$\n\nAlso:\n\n$$1 \\, \\text{m}^2 = (1000 \\, \\text{mm})^2 = 1.000.000 \\, \\text{mm}^2 = 10^6 \\, \\text{mm}^2$$\n\n**Rechnung:**\n\n$$2{,}61 \\times 10^4 \\, \\text{mm}^2 \\times \\frac{1 \\, \\text{m}^2}{10^6 \\, \\text{mm}^2} = 2{,}61 \\times 10^{-2} \\, \\text{m}^2$$\n\n### Beispiel: m³ in cm³ umrechnen\n\n> Wandle $2{,}61 \\, \\text{m}^3$ in $\\text{cm}^3$ um.\n\n$$1 \\, \\text{m} = 100 \\, \\text{cm}$$\n\nAlso:\n\n$$1 \\, \\text{m}^3 = (100 \\, \\text{cm})^3 = 1.000.000 \\, \\text{cm}^3 = 10^6 \\, \\text{cm}^3$$\n\n**Rechnung:**\n\n$$2{,}61 \\, \\text{m}^3 \\times \\frac{10^6 \\, \\text{cm}^3}{1 \\, \\text{m}^3} = 2{,}61 \\times 10^6 \\, \\text{cm}^3$$\n\n### Merkhilfe\n\n| Umrechnung | Faktor normal | Faktor bei m² | Faktor bei m³ |\n| ---------- | ------------- | ------------- | ------------- |\n| m → cm     | ×100          | ×10.000       | ×1.000.000    |\n| m → mm     | ×1000         | ×1.000.000    | ×10⁹          |"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Messunsicherheit",
+      "question": "Wie viele signifikante Stellen hat die Zahl 0,00340?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "content": "**Erklärung:** Die Zahl 0,00340 hat **3 signifikante Stellen**: 3, 4 und die abschließende 0.\n\n- Die führenden Nullen (0,00) zählen **nicht** – sie sind nur Platzhalter\n- Die Ziffern 3 und 4 zählen\n- Die Null am Ende (nach der 4) zählt, weil sie **bewusst geschrieben wurde** und die Messgenauigkeit anzeigt\n\nWäre die letzte Null nicht signifikant, würde man einfach 0,0034 schreiben."
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice",
+      "topic": "Einführung in die Chemie",
+      "question": "Welche Aussage beschreibt die Chemie am besten?",
+      "options": [
+        "Die Wissenschaft von der Bewegung von Körpern",
+        "Die Wissenschaft von der Zusammensetzung, Struktur und Umwandlung von Stoffen",
+        "Die Wissenschaft von lebenden Organismen",
+        "Die Wissenschaft von Himmelskörpern und dem Universum"
+      ],
+      "correctAnswer": "Die Wissenschaft von der Zusammensetzung, Struktur und Umwandlung von Stoffen",
+      "explanation": "**Erklärung:** Chemie befasst sich mit der Charakterisierung, Zusammensetzung und Umwandlung von Stoffen (Materie) sowie den dabei auftretenden Energieänderungen. Im Gegensatz dazu beschäftigt sich die Physik mit Bewegung, die Biologie mit Lebewesen und die Astronomie mit dem Universum."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Einführung in die Chemie",
+      "question": "Welche Schritte gehören zur wissenschaftlichen Methode? (Mehrfachauswahl möglich)",
+      "options": [
+        "Beobachtung eines Phänomens",
+        "Aufstellen einer Hypothese",
+        "Durchführen von Experimenten",
+        "Ignorieren von Widersprüchen",
+        "Entwicklung einer Theorie"
+      ],
+      "correctAnswers": [
+        "Beobachtung eines Phänomens",
+        "Aufstellen einer Hypothese",
+        "Durchführen von Experimenten",
+        "Entwicklung einer Theorie"
+      ],
+      "explanation": "**Erklärung:** Die wissenschaftliche Methode folgt einem systematischen Prozess: Beobachtung → Hypothese → Experiment → Theorie (→ Naturgesetz). Das Ignorieren von Widersprüchen ist unwissenschaftlich – im Gegenteil, Widersprüche führen zur Überarbeitung von Hypothesen und Theorien."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Einführung in die Chemie",
+      "question": "Was besagt der Energieerhaltungssatz?",
+      "options": [
+        "Energie kann aus dem Nichts erzeugt werden",
+        "Energie kann weder erzeugt noch vernichtet, nur umgewandelt werden",
+        "Energie nimmt bei jeder Umwandlung zu",
+        "Energie existiert nur in Form von Wärme"
+      ],
+      "correctAnswer": "Energie kann weder erzeugt noch vernichtet, nur umgewandelt werden",
+      "explanation": "**Erklärung:** Der Energieerhaltungssatz ist eines der fundamentalen Naturgesetze. In einem abgeschlossenen System bleibt die Gesamtenergie konstant – Energie kann nur zwischen verschiedenen Formen umgewandelt werden (z.B. kinetische Energie in Wärme), aber nie erschaffen oder zerstört werden."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Atome und Elemente",
+      "question": "Welche Elementkategorie macht den größten Anteil im Periodensystem aus?",
+      "options": [
+        "Nichtmetalle",
+        "Halbmetalle",
+        "Metalle",
+        "Edelgase"
+      ],
+      "correctAnswer": "Metalle",
+      "explanation": "**Erklärung:** Etwa 80% aller Elemente im Periodensystem sind Metalle. Sie befinden sich links und in der Mitte des PSE. Nichtmetalle sind rechts oben zu finden, Halbmetalle bilden eine kleine Gruppe entlang der Treppenlinie, und Edelgase sind eine Untergruppe der Nichtmetalle (Gruppe 18)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Atome und Elemente",
+      "question": "Welche Aussagen über den Atombau sind korrekt? (Mehrfachauswahl möglich)",
+      "options": [
+        "Der Atomkern enthält Protonen und Neutronen",
+        "Elektronen befinden sich im Atomkern",
+        "Protonen sind positiv geladen",
+        "Das Atom besteht größtenteils aus leerem Raum",
+        "Neutronen haben eine negative Ladung"
+      ],
+      "correctAnswers": [
+        "Der Atomkern enthält Protonen und Neutronen",
+        "Protonen sind positiv geladen",
+        "Das Atom besteht größtenteils aus leerem Raum"
+      ],
+      "explanation": "**Erklärung:** Der Atomkern enthält positiv geladene Protonen und neutral geladene Neutronen. Die Elektronen (negativ geladen) befinden sich in der Elektronenhülle um den Kern herum, nicht im Kern selbst. Da der Kern winzig ist im Vergleich zur Elektronenhülle, besteht das Atom tatsächlich größtenteils aus leerem Raum."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Betrachtungsebenen der Chemie",
+      "question": "Welche Betrachtungsebene verwendet chemische Formeln wie H₂O oder NaCl?",
+      "options": [
+        "Makroskopische Ebene",
+        "Submikroskopische Ebene",
+        "Symbolische Ebene",
+        "Experimentelle Ebene"
+      ],
+      "correctAnswer": "Symbolische Ebene",
+      "explanation": "**Erklärung:** Die symbolische Ebene nutzt chemische Symbole, Formeln und Reaktionsgleichungen, um chemische Sachverhalte darzustellen (z.B. H₂O, NaCl, 2H₂ + O₂ → 2H₂O). Die makroskopische Ebene beschreibt, was wir sehen, die submikroskopische Ebene erklärt, was auf Teilchenebene passiert."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "question": "Welcher Aggregatzustand hat ein definiertes Volumen, aber keine definierte Form?",
+      "options": [
+        "Feststoff",
+        "Flüssigkeit",
+        "Gas",
+        "Plasma"
+      ],
+      "correctAnswer": "Flüssigkeit",
+      "explanation": "**Erklärung:** Flüssigkeiten haben ein festes Volumen, passen sich aber der Form des Behälters an (keine eigene Form). Feststoffe haben sowohl feste Form als auch festes Volumen. Gase haben weder feste Form noch festes Volumen – sie breiten sich aus und füllen jeden verfügbaren Raum."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "question": "Welches ist ein Beispiel für eine chemische Veränderung?",
+      "options": [
+        "Eis schmilzt zu Wasser",
+        "Zucker löst sich in Wasser",
+        "Eisen rostet",
+        "Wasser verdampft"
+      ],
+      "correctAnswer": "Eisen rostet",
+      "explanation": "**Erklärung:** Beim Rosten reagiert Eisen mit Sauerstoff zu Eisenoxid (Rost) – ein neuer Stoff mit anderen Eigenschaften entsteht. Das ist eine chemische Veränderung. Schmelzen, Lösen und Verdampfen sind physikalische Veränderungen, bei denen die chemische Identität des Stoffes erhalten bleibt."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Aggregatzustände und Eigenschaften",
+      "question": "Welche der folgenden sind Reinstoffe? (Mehrfachauswahl möglich)",
+      "options": [
+        "Destilliertes Wasser",
+        "Luft",
+        "Gold",
+        "Meerwasser",
+        "Diamant"
+      ],
+      "correctAnswers": [
+        "Destilliertes Wasser",
+        "Gold",
+        "Diamant"
+      ],
+      "explanation": "**Erklärung:** Reinstoffe bestehen aus nur einer Art von Materie. Destilliertes Wasser (H₂O), Gold (Au) und Diamant (reiner Kohlenstoff, C) sind Reinstoffe. Luft ist eine homogene Mischung aus verschiedenen Gasen (N₂, O₂, Ar, CO₂, ...). Meerwasser ist eine Lösung mit vielen gelösten Salzen und anderen Stoffen."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Dichte und Messung",
+      "question": "Ein Objekt hat eine Masse von 240 g und ein Volumen von 30 cm³. Wie groß ist seine Dichte?",
+      "options": [
+        "0,125 g/cm³",
+        "8,0 g/cm³",
+        "80 g/cm³",
+        "7200 g/cm³"
+      ],
+      "correctAnswer": "8,0 g/cm³",
+      "explanation": "**Erklärung:** Die Dichte berechnet sich als Masse geteilt durch Volumen:\n\n$$\\rho = \\frac{m}{V} = \\frac{240 \\, \\text{g}}{30 \\, \\text{cm}^3} = 8{,}0 \\, \\text{g/cm}^3$$\n\nDiese Dichte entspricht in etwa der von Eisen (7,9 g/cm³) oder Kupfer (8,9 g/cm³)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Dichte und Messung",
+      "question": "Welche Vorsilbe steht für den Faktor 10⁻³ (ein Tausendstel)?",
+      "options": [
+        "Mikro (μ)",
+        "Milli (m)",
+        "Zenti (c)",
+        "Nano (n)"
+      ],
+      "correctAnswer": "Milli (m)",
+      "explanation": "**Erklärung:** Die metrische Vorsilbe \"Milli\" (Symbol: m) steht für 10⁻³ = 0,001 = ein Tausendstel. Beispiele: 1 mm = 0,001 m, 1 mL = 0,001 L. Zum Vergleich: Mikro (μ) = 10⁻⁶, Zenti (c) = 10⁻², Nano (n) = 10⁻⁹."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Dichte und Messung",
+      "question": "Welche Temperatur entspricht 25°C in Kelvin?",
+      "options": [
+        "25 K",
+        "248 K",
+        "298 K",
+        "373 K"
+      ],
+      "correctAnswer": "298 K",
+      "explanation": "**Erklärung:** Die Umrechnung von Celsius in Kelvin erfolgt mit der Formel T(K) = t(°C) + 273,15.\n\nFür 25°C: T = 25 + 273,15 ≈ 298 K\n\nDie Kelvin-Skala hat denselben Schrittgrad wie Celsius, aber der Nullpunkt liegt beim absoluten Nullpunkt (−273,15°C)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Messunsicherheit",
+      "question": "Wie viele signifikante Stellen hat die Zahl 0,00520?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "**Erklärung:** Die Zahl 0,00520 hat 3 signifikante Stellen: 5, 2 und die abschließende 0.\n\n- Die führenden Nullen (0,00) zählen nicht – sie sind nur Platzhalter für die Dezimalstelle\n- Die Ziffern 5 und 2 sind signifikant\n- Die Null am Ende ist ebenfalls signifikant, da sie bewusst geschrieben wurde und die Messgenauigkeit anzeigt"
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Messunsicherheit",
+      "question": "Was ist das Ergebnis von 2,5 × 3,42 mit korrekter Anzahl signifikanter Stellen?",
+      "options": [
+        "8,55",
+        "8,6",
+        "8,550",
+        "9,0"
+      ],
+      "correctAnswer": "8,6",
+      "explanation": "**Erklärung:** Bei Multiplikation und Division richtet sich die Anzahl der signifikanten Stellen nach dem Faktor mit den wenigsten signifikanten Stellen.\n\n- 2,5 hat **2** signifikante Stellen\n- 3,42 hat 3 signifikante Stellen\n\nDas Ergebnis darf also nur 2 signifikante Stellen haben: 2,5 × 3,42 = 8,55 → gerundet: **8,6**"
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Messunsicherheit",
+      "question": "Was beschreibt eine Messung, bei der wiederholte Werte eng beieinander liegen, aber alle weit vom wahren Wert entfernt sind?",
+      "options": [
+        "Genau und präzise",
+        "Genau, aber nicht präzise",
+        "Präzise, aber nicht genau",
+        "Weder genau noch präzise"
+      ],
+      "correctAnswer": "Präzise, aber nicht genau",
+      "explanation": "**Erklärung:**\n\n- **Präzision** beschreibt, wie nah wiederholte Messungen beieinander liegen (geringe Streuung)\n- **Genauigkeit** beschreibt, wie nah die Messwerte am wahren Wert liegen\n\nWenn Werte eng beieinander liegen (hohe Präzision), aber alle vom wahren Wert abweichen (geringe Genauigkeit), liegt ein **systematischer Fehler** vor – z.B. ein falsch kalibriertes Messgerät."
+    }
+  ],
+  "generatedAt": "2026-01-11T23:14:27.617Z"
+}

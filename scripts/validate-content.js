@@ -145,7 +145,7 @@ function parseValue(str) {
   return str;
 }
 
-const CONTENT_DIR = path.join(__dirname, 'content');
+const CONTENT_DIR = path.join(__dirname, '..', 'content');
 
 // ANSI color codes
 const colors = {

@@ -1,11 +1,13 @@
-name: Generate Content List
+name: Generate Content
 
 on:
   push:
     branches: [main]
     paths:
       - 'content/**/*.md'
-      - 'generate-content-list.js'
+      - 'scripts/generate-content-list.js'
+      - 'scripts/generate-lecture-bundles.js'
+      - 'scripts/generate-search-index.js'
   workflow_dispatch:
 
 permissions:
@@ -27,18 +29,24 @@ jobs:
           node-version: '20'
 
       - name: Generate content-list.json
-        run: node generate-content-list.js
+        run: node scripts/generate-content-list.js
+
+      - name: Generate lecture bundles
+        run: node scripts/generate-lecture-bundles.js
+
+      - name: Generate search index
+        run: node scripts/generate-search-index.js
 
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code content/studies.json content/*/content-list.json content/*/modules.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code content/ || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changed
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add content/studies.json content/*/content-list.json content/*/modules.json
-          git commit -m "Auto-generate studies.json, content-list.json and modules.json"
+          git add content/
+          git commit -m "chore: auto-generate content JSON files"
           git push
