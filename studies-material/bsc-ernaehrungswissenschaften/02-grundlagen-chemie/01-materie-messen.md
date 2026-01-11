@@ -2,6 +2,10 @@
 
 *Basierend auf den Vorlesungsunterlagen von Kotz, Treichel, Townsend, Mortimer & Müller.*
 
+Titel: "Materie und Messen"x
+
+Link: https://moodle.univie.ac.at/pluginfile.php/31885078/mod_resource/content/0/Kapitel1WS2025.pdf
+
 ## 1. Organisatorische Grundlagen und Einführung
 
 Zu Beginn des Semesters sind einige logistische Eckdaten für das erfolgreiche Bestehen des Moduls entscheidend. [cite_start]Die primäre Kontaktperson für administrative oder inhaltliche Rückfragen ist Michael Malarek (michael.malarek@univie.ac.at), zu finden in der Währingerstrasse 42, Wolkenflügel 1. Obergeschoß, Zimmer W2154 [cite: 23-25].

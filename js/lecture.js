@@ -1,6 +1,60 @@
 // Lecture module - Handles lecture player and content rendering
 
 /**
+ * Renders source reference footnotes for a lecture item
+ * @param {Object} item - Lecture item with optional sourceRefs
+ * @param {Array} sources - Array of source objects from lecture.md
+ * @returns {string} HTML string for footnote, or empty string if no refs
+ */
+function renderSourceFootnotes(item, sources) {
+  if (
+    !item.sourceRefs ||
+    !Array.isArray(item.sourceRefs) ||
+    item.sourceRefs.length === 0
+  ) {
+    return '';
+  }
+
+  if (!sources || !Array.isArray(sources) || sources.length === 0) {
+    return '';
+  }
+
+  // Build source lookup map
+  const sourceMap = {};
+  sources.forEach((s) => {
+    if (s.id) sourceMap[s.id] = s;
+  });
+
+  // Generate footnote entries
+  const footnotes = item.sourceRefs
+    .map((ref) => {
+      const source = sourceMap[ref.sourceId];
+      if (!source) return null;
+
+      const pages = ref.pages ? `, S. ${ref.pages}` : '';
+      const title = source.title || ref.sourceId;
+
+      if (source.url) {
+        return `<a href="${source.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">${title}</a>${pages}`;
+      } else {
+        return `${title}${pages}`;
+      }
+    })
+    .filter((f) => f !== null);
+
+  if (footnotes.length === 0) return '';
+
+  return `
+    <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+      <p class="text-xs text-gray-500 dark:text-gray-400 flex items-start gap-2">
+        <span class="flex-shrink-0">📖</span>
+        <span><strong>Quelle:</strong> ${footnotes.join(' | ')}</span>
+      </p>
+    </div>
+  `;
+}
+
+/**
  * Starts a lecture and shows the player
  * @param {string} moduleId - Module ID
  * @param {string} lectureId - Lecture ID
@@ -73,6 +127,11 @@ function startLecture(
  * Renders the current lecture item based on its type
  * @param {Object} lectureState - State object { currentItems, currentIndex }
  * @param {Function} updateLectureNav - Navigation update function
+ * @param {Function} renderSelfAssessment - Self-assessment render function
+ * @param {Function} renderYouTubeVideo - YouTube video render function
+ * @param {Function} renderImage - Image render function
+ * @param {Function} renderMermaidDiagram - Mermaid diagram render function
+ * @param {Array} sources - Array of source objects from lecture.md
  */
 function renderCurrentLectureItem(
   lectureState,
@@ -80,21 +139,29 @@ function renderCurrentLectureItem(
   renderSelfAssessment,
   renderYouTubeVideo,
   renderImage,
-  renderMermaidDiagram
+  renderMermaidDiagram,
+  sources = []
 ) {
   const item = lectureState.currentItems[lectureState.currentIndex];
   const lectureItemDisplay = document.getElementById('lecture-item-display');
   lectureItemDisplay.innerHTML = ''; // Clear previous item
 
+  // Get source footnote HTML (only for content types that support it)
+  const footnoteHtml = renderSourceFootnotes(item, sources);
+
   switch (item.type) {
     case 'learning-content':
-      lectureItemDisplay.innerHTML = item.html;
+      lectureItemDisplay.innerHTML = item.html + footnoteHtml;
       renderMath(lectureItemDisplay);
       renderMermaidInContent(lectureItemDisplay);
       break;
     case 'self-assessment-mc':
       renderSelfAssessment(item, lectureItemDisplay);
       renderMath(lectureItemDisplay);
+      // Add footnotes after self-assessment if present
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
       break;
     case 'youtube-video':
       renderYouTubeVideo(item, lectureItemDisplay);
@@ -456,7 +523,10 @@ async function renderMermaidDiagram(item, container) {
   container.innerHTML = `
     <div class="mermaid-container">
       ${title}
-      <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg">
+      <button class="expand-btn" title="Vergrößern" aria-label="Diagramm vergrößern">
+        ${Icons.get('expand', 'w-5 h-5')}
+      </button>
+      <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg overflow-x-auto">
         <div id="${diagramId}" class="mermaid-diagram"></div>
       </div>
     </div>
@@ -470,10 +540,61 @@ async function renderMermaidDiagram(item, container) {
       item.diagram
     );
     diagramDiv.innerHTML = svg;
+
+    // Add expand functionality
+    const expandBtn = container.querySelector('.expand-btn');
+    if (expandBtn) {
+      expandBtn.addEventListener('click', () => {
+        openExpandedDiagram(item.title || 'Diagramm', svg);
+      });
+    }
   } catch (error) {
     console.error('Error rendering Mermaid diagram:', error);
     container.innerHTML = `<p class="text-red-500">Fehler beim Rendern des Diagramms: ${error.message}</p>`;
   }
+}
+
+/**
+ * Opens a diagram in fullscreen/expanded mode
+ * @param {string} title - Diagram title
+ * @param {string} svg - SVG content
+ */
+function openExpandedDiagram(title, svg) {
+  const overlay = document.createElement('div');
+  overlay.className = 'expanded-overlay';
+  overlay.innerHTML = `
+    <div class="expanded-content">
+      <button class="close-expanded-btn">✕ Schließen</button>
+      <h2 class="text-2xl font-bold mb-4 pr-24">${title}</h2>
+      <div class="mermaid-diagram flex-1 flex items-center justify-center">${svg}</div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // Scale SVG to fit the container
+  const svgEl = overlay.querySelector('.mermaid-diagram svg');
+  if (svgEl) {
+    svgEl.removeAttribute('width');
+    svgEl.removeAttribute('height');
+    svgEl.style.width = 'auto';
+    svgEl.style.height = 'auto';
+    svgEl.style.maxWidth = '100%';
+    svgEl.style.maxHeight = 'calc(95vh - 8rem)';
+  }
+
+  // Close handlers
+  const closeBtn = overlay.querySelector('.close-expanded-btn');
+  closeBtn.addEventListener('click', () => overlay.remove());
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+  document.addEventListener('keydown', function escHandler(e) {
+    if (e.key === 'Escape') {
+      overlay.remove();
+      document.removeEventListener('keydown', escHandler);
+    }
+  });
 }
 
 /**
@@ -597,10 +718,14 @@ function showLectureOverview(
 
   overviewContent.innerHTML = '';
 
-  // Clear any existing description container
+  // Clear any existing description container and sources container
   const existingDesc = overviewDescription.parentNode.querySelector('.prose');
   if (existingDesc && existingDesc !== overviewDescription) {
     existingDesc.remove();
+  }
+  const existingSources = document.getElementById('lecture-overview-sources');
+  if (existingSources) {
+    existingSources.remove();
   }
 
   // Set title and description
@@ -617,6 +742,55 @@ function showLectureOverview(
       descContainer,
       overviewDescription.nextSibling
     );
+  }
+
+  // Show source links if available
+  if (lecture?.sources && lecture.sources.length > 0) {
+    const sourcesContainer = document.createElement('div');
+    sourcesContainer.id = 'lecture-overview-sources';
+    sourcesContainer.className =
+      'mb-6 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700';
+
+    const sourceLinks = lecture.sources
+      .filter((s) => s.url)
+      .map((s) => {
+        const icon = s.type === 'pdf' ? '📄' : s.type === 'video' ? '🎬' : '🔗';
+        return `<a href="${
+          s.url
+        }" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors text-sm">
+          <span>${icon}</span>
+          <span class="font-medium">${s.title}</span>
+          <span class="text-gray-400">${Icons.get(
+            'externalLink',
+            'w-3 h-3'
+          )}</span>
+        </a>`;
+      })
+      .join('');
+
+    if (sourceLinks) {
+      sourcesContainer.innerHTML = `
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-3">📚 Vorlesungsunterlagen</p>
+        <div class="flex flex-wrap gap-2">
+          ${sourceLinks}
+        </div>
+      `;
+
+      // Insert after description
+      const descContainer =
+        overviewDescription.parentNode.querySelector('.prose');
+      if (descContainer) {
+        descContainer.parentNode.insertBefore(
+          sourcesContainer,
+          descContainer.nextSibling
+        );
+      } else {
+        overviewDescription.parentNode.insertBefore(
+          sourcesContainer,
+          overviewDescription.nextSibling
+        );
+      }
+    }
   }
 
   // Generate description based on content
@@ -658,9 +832,14 @@ function showLectureOverview(
       `${externalVideoCount} Ext. Video${externalVideoCount > 1 ? 's' : ''}`
     );
 
-  overviewDescription.textContent = `${totalItems} Schritte insgesamt • ${descParts.join(
+  // Build description with estimated time if available
+  let descriptionText = `${totalItems} Schritte insgesamt • ${descParts.join(
     ' • '
   )}`;
+  if (lecture?.estimatedTime && lecture.estimatedTime > 0) {
+    descriptionText = `⏱️ ca. ${lecture.estimatedTime} Min. • ${descriptionText}`;
+  }
+  overviewDescription.textContent = descriptionText;
 
   lectureState.currentItems.forEach((item, index) => {
     const card = document.createElement('div');

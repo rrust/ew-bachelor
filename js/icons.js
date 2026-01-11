@@ -68,6 +68,10 @@ const Icons = (function () {
     externalLink:
       '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>',
 
+    // Expand/Fullscreen
+    expand:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>',
+
     // Achievement status icons
     lock: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>',
 
@@ -168,11 +172,25 @@ const Icons = (function () {
 
   // Icons with custom viewBox (different from default 24x24)
   const customViewBoxIcons = {
+    fire: {
+      viewBox: '0 0 1024 1024',
+      // Path uses dynamic gradient ID - must be processed in get()
+      pathTemplate: true,
+      getPath: (gradientId) =>
+        `<defs><linearGradient id="${gradientId}" x1="0%" y1="100%" x2="0%" y2="0%"><stop offset="0%" style="stop-color:#facc15"/><stop offset="40%" style="stop-color:#f97316"/><stop offset="100%" style="stop-color:#dc2626"/></linearGradient></defs><path fill="url(#${gradientId})" d="M336 972.8c-60.8-128-28.8-201.6 19.2-268.8 51.2-76.8 64-150.4 64-150.4s41.6 51.2 25.6 134.4c70.4-80 83.2-208 73.6-256 160 112 230.4 358.4 137.6 537.6 492.8-281.6 121.6-700.8 57.6-745.6 22.4 48 25.6 128-19.2 166.4-73.6-281.6-256-336-256-336 22.4 144-76.8 300.8-172.8 419.2-3.2-57.6-6.4-96-38.4-153.6-6.4 105.6-86.4 188.8-108.8 294.4C89.6 758.4 140.8 860.8 336 972.8z"/>`
+    },
+    help: {
+      viewBox: '0 0 1024 1024',
+      path: '<path fill="currentColor" d="M512 0a512 512 0 1 0 512 512A512 512 0 0 0 512 0z m0 870.4a51.2 51.2 0 1 1 51.2-51.2 51.2 51.2 0 0 1-51.2 51.2z m109.568-287.744A115.712 115.712 0 0 0 563.2 679.424V716.8H460.8v-37.376a218.624 218.624 0 0 1 105.984-183.296 102.4 102.4 0 0 0 45.056-111.616 102.4 102.4 0 0 0-74.752-74.752 102.4 102.4 0 0 0-88.576 19.456A102.4 102.4 0 0 0 409.6 409.6H307.2a204.8 204.8 0 0 1 77.312-160.256 204.8 204.8 0 0 1 175.104-39.424 204.8 204.8 0 0 1 61.952 372.224z"/>'
+    },
     apple: {
       viewBox: '0 0 490 490',
       path: '<path fill="currentColor" d="M348.399,104.848c-1.257,0-2.489,0.022-3.707,0.066c-45.669,1.659-74.383,25.793-91.667,32.88c-4.223-22.172-5.759-69.433,40.609-116.225L271.891,0.006c-25.597,25.826-39.003,51.986-45.658,75.607C173.742,6.109,104.742,15.819,104.742,15.819c48.35,91.049,106.284,70.783,120.351,64.088c-4.731,18.899-5.271,36.013-4.053,49.641c-17.489-9.865-41.998-23.41-75.732-24.635c-1.215-0.044-2.454-0.066-3.708-0.066C87.663,104.846,0,146.111,0,267.252c0,123.954,99.709,222.741,150.78,222.741c51.07,0,68.821-14.472,94.22-14.472c25.399,0,43.149,14.472,94.22,14.472c51.07,0,150.78-98.787,150.78-222.741C490,146.119,402.337,104.848,348.399,104.848z M339.22,459.369c-25.901,0-41.088-4.088-55.775-8.041c-11.746-3.162-23.891-6.431-38.445-6.431c-14.554,0-26.7,3.269-38.446,6.431c-14.687,3.953-29.875,8.041-55.774,8.041c-29.042,0-120.155-79.717-120.155-192.116c0-45.085,13.554-79.987,40.288-103.736c23.276-20.677,51.776-28.045,70.688-28.044c0.878,0,1.746,0.016,2.595,0.047c26.826,0.974,46.696,12.186,62.66,21.195c13.104,7.395,24.421,13.781,38.144,13.781c13.723,0,25.04-6.386,38.143-13.781c15.965-9.009,35.834-20.221,62.659-21.195c0.853-0.031,1.716-0.047,2.596-0.047c18.911,0,47.41,7.368,70.688,28.047c26.733,23.75,40.289,58.65,40.289,103.732C459.375,379.652,368.262,459.369,339.22,459.369z"/>'
     }
   };
+
+  // Counter for unique gradient IDs
+  let gradientCounter = 0;
 
   /**
    * Get an SVG icon
@@ -186,7 +204,18 @@ const Icons = (function () {
     if (customViewBoxIcons[name]) {
       const icon = customViewBoxIcons[name];
       const classes = [sizeClass, colorClass].filter(Boolean).join(' ');
-      return `<svg class="${classes}" fill="none" stroke="currentColor" viewBox="${icon.viewBox}">${icon.path}</svg>`;
+
+      // Handle icons with dynamic gradients
+      let pathContent;
+      if (icon.pathTemplate && icon.getPath) {
+        const gradientId = `grad-${name}-${++gradientCounter}`;
+        pathContent = icon.getPath(gradientId);
+      } else {
+        pathContent = icon.path;
+      }
+
+      // Custom icons use fill, not stroke (for filled icons like fire, apple)
+      return `<svg class="${classes}" viewBox="${icon.viewBox}" xmlns="http://www.w3.org/2000/svg">${pathContent}</svg>`;
     }
 
     const path = paths[name];

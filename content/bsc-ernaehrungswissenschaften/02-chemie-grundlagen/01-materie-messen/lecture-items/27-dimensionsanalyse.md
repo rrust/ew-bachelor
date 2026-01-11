@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Messunsicherheit'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '800-802, 833-842'
 ---
 
 ## Dimensionsanalyse: Quadrierte und kubierte Einheiten

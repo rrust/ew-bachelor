@@ -86,6 +86,52 @@ Keine - dies ist ein Einstiegsmodul.
 - `lectures`: Alle Unterordner mit `lecture.md`
 - `achievements`: Alle Dateien im `achievements/` Ordner
 
+## Vorlesungs-Metadaten (lecture.md)
+
+```markdown
+---
+topic: 'Materie und Messen'
+description: 'Einführung in Chemie, Atome und Messgrößen'
+estimatedTime: 45
+sources:
+  - id: 'vorlesung-k1'
+    title: 'Vorlesungsfolien Kapitel 1 (WS2025)'
+    url: 'https://moodle.univie.ac.at/path/to/Kapitel1.pdf'
+    type: 'pdf'
+  - id: 'mortimer'
+    title: 'Mortimer & Müller: Chemie - Das Basiswissen (10. Aufl.)'
+    url: null
+    type: 'book'
+---
+
+# Materie und Messen
+
+Kurze Einleitung oder Lernziele.
+```
+
+**Pflichtfelder:**
+
+| Feld          | Typ    | Beschreibung                             |
+| ------------- | ------ | ---------------------------------------- |
+| `topic`       | String | Titel der Vorlesung                      |
+| `description` | String | Kurzbeschreibung für die Vorlesungsliste |
+
+**Optionale Felder:**
+
+| Feld            | Typ    | Beschreibung                    |
+| --------------- | ------ | ------------------------------- |
+| `estimatedTime` | Number | Geschätzte Lernzeit in Minuten  |
+| `sources`       | Array  | Quellenreferenzen (siehe unten) |
+
+**Source-Objekte:**
+
+| Feld    | Typ    | Beschreibung                              |
+| ------- | ------ | ----------------------------------------- |
+| `id`    | String | Eindeutige ID für Referenzierung in Items |
+| `title` | String | Anzeigename der Quelle                    |
+| `url`   | String | Link zur Quelle (oder `null` bei Büchern) |
+| `type`  | String | `'pdf'`, `'book'`, `'video'`, `'website'` |
+
 ## Quiz-Frage (quiz.md)
 
 ### Einfache Multiple-Choice (eine richtige Antwort)
@@ -153,9 +199,12 @@ correctAnswer: 'Antwort B'
 
 ## Learning Content (in lecture.md)
 
+### Einfacher Lerninhalt
+
 ```markdown
 ---
 type: 'learning-content'
+topic: 'Themenbereich'
 ---
 
 ## Überschrift
@@ -167,6 +216,47 @@ Normaler Markdown-Inhalt mit Text, Listen, etc.
 
 **Fett** und *kursiv* formatierter Text.
 ```
+
+### Lerninhalt mit Quellenreferenz
+
+```markdown
+---
+type: 'learning-content'
+topic: 'Einführung in die Chemie'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '23-25'
+---
+
+## Was ist Chemie?
+
+Inhalt basierend auf der Originalquelle...
+```
+
+### Lerninhalt mit mehreren Quellen
+
+```markdown
+---
+type: 'learning-content'
+topic: 'Periodensystem'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '71, 73, 76'
+  - sourceId: 'mortimer'
+    pages: '45-48'
+---
+
+## Das Periodensystem der Elemente
+
+Inhalt mit Referenzen zu verschiedenen Quellen...
+```
+
+**SourceRef-Felder:**
+
+| Feld       | Typ    | Beschreibung                                        |
+| ---------- | ------ | --------------------------------------------------- |
+| `sourceId` | String | ID einer Quelle aus `sources` in `lecture.md`       |
+| `pages`    | String | Seitenangabe(n), z.B. `'23-25'` oder `'71, 73, 76'` |
 
 ## YouTube Video (in lecture.md)
 

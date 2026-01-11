@@ -6,57 +6,68 @@
 
 ---
 
+## Quellen
+
+Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
+
+| ID             | Titel                                                   | URL                                                                                           | Typ  |
+| -------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ---- |
+| `vorlesung-k1` | Vorlesungsfolien Kapitel 1 (WS2025)                     | https://moodle.univie.ac.at/pluginfile.php/31885078/mod_resource/content/0/Kapitel1WS2025.pdf | pdf  |
+| `mortimer`     | Mortimer & Müller: Chemie - Das Basiswissen (10. Aufl.) | -                                                                                             | book |
+
+---
+
 ## Lecture: Materie und Messen
 
 **Geschätzte Lernzeit:** 45 Minuten
 
 ### Themenblock 1: Einführung in die Chemie
 
-| Nr  | Dateiname                         | Typ              | Inhalt                                         |
-| --- | --------------------------------- | ---------------- | ---------------------------------------------- |
-| 01  | `01-was-ist-chemie.md`            | learning-content | Definition Chemie, Materie, Energie            |
-| 02  | `02-wissenschaftliche-methode.md` | learning-content | Beobachtung → Hypothese → Experiment → Theorie |
-| 03  | `03-naturgesetze.md`              | learning-content | Massenerhaltung, Energieerhaltung, $E=mc^2$    |
-| 04  | `04-check-grundlagen.md`          | self-assessment  | Verständnistest: Definitionen & Gesetze        |
+| Nr  | Dateiname                         | Typ              | Inhalt                                         | Quelle-Seiten |
+| --- | --------------------------------- | ---------------- | ---------------------------------------------- | ------------- |
+| 01  | `01-was-ist-chemie.md`            | learning-content | Definition Chemie, Materie, Energie            | 23-25         |
+| 02  | `02-wissenschaftliche-methode.md` | learning-content | Beobachtung → Hypothese → Experiment → Theorie | 47-53         |
+| 03  | `03-naturgesetze.md`              | learning-content | Massenerhaltung, Energieerhaltung, $E=mc^2$    | 59-67         |
+| 04  | `04-check-grundlagen.md`          | self-assessment  | Verständnistest: Definitionen & Gesetze        | -             |
 
 ### Themenblock 2: Atome und Elemente
 
-| Nr  | Dateiname                      | Typ              | Inhalt                                      |
-| --- | ------------------------------ | ---------------- | ------------------------------------------- |
-| 05  | `05-periodensystem.md`         | learning-content | Aufbau PSE, Historie, Kategorien            |
-| 06  | `06-pse-diagramm.md`           | mermaid-diagram  | Visuelle Darstellung der Element-Kategorien |
-| 07  | `07-atombau.md`                | learning-content | Kern, Protonen, Neutronen, Elektronenhülle  |
-| 08  | `08-molekuele-verbindungen.md` | learning-content | Definition, Beispiel Koffein, NaCl          |
-| 09  | `09-check-atome.md`            | self-assessment  | Verständnistest: Atome & Elemente           |
+| Nr  | Dateiname                      | Typ              | Inhalt                                      | Quelle-Seiten       |
+| --- | ------------------------------ | ---------------- | ------------------------------------------- | ------------------- |
+| 05  | `05-periodensystem.md`         | learning-content | Aufbau PSE, Historie, Kategorien            | 71, 73, 76, 146-174 |
+| 06  | `06-pse-diagramm.md`           | mermaid-diagram  | Visuelle Darstellung der Element-Kategorien | -                   |
+| 07  | `07-atombau.md`                | learning-content | Kern, Protonen, Neutronen, Elektronenhülle  | 188-200             |
+| 08  | `08-molekuele-verbindungen.md` | learning-content | Definition, Beispiel Koffein, NaCl          | 201-215             |
+| 09  | `09-check-atome.md`            | self-assessment  | Verständnistest: Atome & Elemente           | -                   |
 
 ### Themenblock 3: Betrachtungsebenen der Chemie
 
-| Nr  | Dateiname                 | Typ              | Inhalt                               |
-| --- | ------------------------- | ---------------- | ------------------------------------ |
-| 10  | `10-drei-ebenen.md`       | learning-content | Makro-, Submikroskopisch, Symbolisch |
-| 11  | `11-wasser-beispiel.md`   | learning-content | H₂O auf allen drei Ebenen            |
-| 12  | `12-knallgas-reaktion.md` | learning-content | Reaktion als Beispiel, Formel        |
-| 13  | `13-check-ebenen.md`      | self-assessment  | Verständnistest: Betrachtungsebenen  |
+| Nr  | Dateiname                 | Typ              | Inhalt                               | Quelle-Seiten |
+| --- | ------------------------- | ---------------- | ------------------------------------ | ------------- |
+| 10  | `10-drei-ebenen.md`       | learning-content | Makro-, Submikroskopisch, Symbolisch | 220-235       |
+| 11  | `11-wasser-beispiel.md`   | learning-content | H₂O auf allen drei Ebenen            | 236-240       |
+| 12  | `12-knallgas-reaktion.md` | learning-content | Reaktion als Beispiel, Formel        | 241-248       |
+| 13  | `13-check-ebenen.md`      | self-assessment  | Verständnistest: Betrachtungsebenen  | -             |
 
 ### Themenblock 4: Aggregatzustände und Eigenschaften
 
-| Nr  | Dateiname                        | Typ              | Inhalt                                      |
-| --- | -------------------------------- | ---------------- | ------------------------------------------- |
-| 14  | `14-aggregatzustaende.md`        | learning-content | Fest, Flüssig, Gas - Eigenschaften          |
-| 15  | `15-physikalisch-vs-chemisch.md` | learning-content | Eigenschaften & Veränderungen unterscheiden |
-| 16  | `16-klassifizierung-materie.md`  | learning-content | Reinstoffe, Mischungen (homogen/heterogen)  |
-| 17  | `17-materie-diagramm.md`         | mermaid-diagram  | Flowchart: Klassifizierung von Materie      |
-| 18  | `18-check-eigenschaften.md`      | self-assessment  | Verständnistest: Aggregatzustände           |
+| Nr  | Dateiname                        | Typ              | Inhalt                                      | Quelle-Seiten |
+| --- | -------------------------------- | ---------------- | ------------------------------------------- | ------------- |
+| 14  | `14-aggregatzustaende.md`        | learning-content | Fest, Flüssig, Gas - Eigenschaften          | 250-265       |
+| 15  | `15-physikalisch-vs-chemisch.md` | learning-content | Eigenschaften & Veränderungen unterscheiden | 266-275       |
+| 16  | `16-klassifizierung-materie.md`  | learning-content | Reinstoffe, Mischungen (homogen/heterogen)  | 276-290       |
+| 17  | `17-materie-diagramm.md`         | mermaid-diagram  | Flowchart: Klassifizierung von Materie      | -             |
+| 18  | `18-check-eigenschaften.md`      | self-assessment  | Verständnistest: Aggregatzustände           | -             |
 
 ### Themenblock 5: Dichte und Messung
 
-| Nr  | Dateiname                     | Typ              | Inhalt                                     |
-| --- | ----------------------------- | ---------------- | ------------------------------------------ |
-| 19  | `19-dichte.md`                | learning-content | Definition, Formel, Beispiele (Al, Hg, Pt) |
-| 20  | `20-rechenbeispiel-dichte.md` | learning-content | Kupfer-Beispiel mit Dimensionsanalyse      |
-| 21  | `21-si-einheiten.md`          | learning-content | SI-System, metrische Vorsilben             |
-| 22  | `22-temperaturskalen.md`      | learning-content | Fahrenheit, Celsius, Kelvin, Umrechnung    |
-| 23  | `23-check-messung.md`         | self-assessment  | Verständnistest: Dichte & Einheiten        |
+| Nr  | Dateiname                     | Typ              | Inhalt                                     | Quelle-Seiten |
+| --- | ----------------------------- | ---------------- | ------------------------------------------ | ------------- |
+| 19  | `19-dichte.md`                | learning-content | Definition, Formel, Beispiele (Al, Hg, Pt) | 300-315       |
+| 20  | `20-rechenbeispiel-dichte.md` | learning-content | Kupfer-Beispiel mit Dimensionsanalyse      | 316-325       |
+| 21  | `21-si-einheiten.md`          | learning-content | SI-System, metrische Vorsilben             | 326-340       |
+| 22  | `22-temperaturskalen.md`      | learning-content | Fahrenheit, Celsius, Kelvin, Umrechnung    | 341-355       |
+| 23  | `23-check-messung.md`         | self-assessment  | Verständnistest: Dichte & Einheiten        | -             |
 
 ### Themenblock 6: Messunsicherheit
 

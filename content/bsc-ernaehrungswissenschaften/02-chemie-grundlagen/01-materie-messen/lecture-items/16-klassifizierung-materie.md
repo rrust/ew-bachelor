@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Aggregatzustände und Eigenschaften'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '314-322'
 ---
 
 ## Klassifizierung von Materie

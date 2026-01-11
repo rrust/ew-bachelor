@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Atome und Elemente'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '195-198'
 ---
 
 ## Der Aufbau des Atoms

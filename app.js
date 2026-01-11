@@ -458,6 +458,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       window.initGlobalSearch();
     }
 
+    // Initialize streak system
+    if (window.initStreak) {
+      window.initStreak();
+    }
+
     // Initialize alerts badge
     if (window.updateAlertBadge) {
       window.updateAlertBadge();
@@ -568,13 +573,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderCurrentLectureItem() {
+    const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
+    const sources = lecture?.sources || [];
     window.LectureModule.renderCurrentLectureItem(
       lectureState,
       updateLectureNav,
       renderSelfAssessment,
       renderYouTubeVideo,
       renderImage,
-      renderMermaidDiagram
+      renderMermaidDiagram,
+      sources
     );
   }
 

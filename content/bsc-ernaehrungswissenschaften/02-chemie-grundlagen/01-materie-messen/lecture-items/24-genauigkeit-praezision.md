@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Messunsicherheit'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '598-603, 692'
 ---
 
 ## Genauigkeit vs. Präzision

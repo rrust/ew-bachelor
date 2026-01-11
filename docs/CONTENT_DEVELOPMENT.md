@@ -161,6 +161,16 @@ Die `lecture.md` Datei enthält **nur Metadaten** - keine Lern-Inhalte!
 ---
 topic: 'Grundlagen der Zellbiologie'
 description: 'Einführung in den Aufbau und die Funktion von Zellen'
+estimatedTime: 45
+sources:
+  - id: 'hauptquelle'
+    title: 'Vorlesungsfolien Kapitel 1'
+    url: 'https://moodle.univie.ac.at/path/to/slides.pdf'
+    type: 'pdf'
+  - id: 'lehrbuch'
+    title: 'Mortimer & Müller: Chemie - Das Basiswissen'
+    url: null
+    type: 'book'
 ---
 
 # Grundlagen der Zellbiologie
@@ -173,6 +183,11 @@ Kurze Einleitung oder Lernziele (optional).
 - `topic`: Titel der Vorlesung
 - `description`: Kurzbeschreibung (wird in der Vorlesungsliste angezeigt)
 
+**Optionale Felder:**
+
+- `estimatedTime`: Geschätzte Lernzeit in Minuten
+- `sources`: Array der Quellenreferenzen (siehe [Quellenreferenz-System](#quellenreferenz-system))
+
 ### 2. Vorlesungs-Items (lecture-items/)
 
 Jede Datei in `lecture-items/` ist ein einzelnes Lern-Element.
@@ -182,12 +197,24 @@ Jede Datei in `lecture-items/` ist ein einzelnes Lern-Element.
 ```yaml
 ---
 type: 'learning-content'
+topic: 'Themenbereich'
+sourceRefs:
+  - sourceId: 'hauptquelle'
+    pages: '23-25'
 ---
 
 # Überschrift
 
 Markdown-Inhalt mit **Formatierung**, Listen, etc.
 ```
+
+**Optionale Felder für Quellenreferenzen:**
+
+- `sourceRefs`: Array mit Verweisen auf die in `lecture.md` definierten Quellen
+  - `sourceId`: ID der Quelle (muss in `lecture.md` unter `sources` definiert sein)
+  - `pages`: Seitenangabe(n) als String, z.B. `'23-25'` oder `'47, 53'`
+
+Die App zeigt Quellenreferenzen als Fußnote am Ende des Content-Items an.
 
 #### Self-Assessment Multiple Choice
 
@@ -502,6 +529,135 @@ npm run generate-manifest
    ```
 
 5. **Validieren** mit `validate-content.html`
+
+---
+
+## Quellenreferenz-System
+
+Das Quellenreferenz-System ermöglicht die saubere Zuordnung von Lerninhalten zu ihren Original-Quellen (Vorlesungsfolien, Lehrbücher, etc.).
+
+### Überblick
+
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│  studies-material/.../01-lecture.md                                     │
+│  - Enthält [cite_start]...[cite: 23-25] Markierungen                   │
+│  - Hat Titel + Link zur Originalquelle am Datei-Anfang                  │
+└───────────────────────────────┬─────────────────────────────────────────┘
+                                │ Content-Generierung
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  content/.../lecture.md                                                 │
+│  - sources: Array mit id, title, url, type                              │
+└───────────────────────────────┬─────────────────────────────────────────┘
+                                │ Referenziert durch
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  content/.../lecture-items/01-topic.md                                  │
+│  - sourceRefs: Array mit sourceId, pages                                │
+│  → App zeigt Fußnote: "Quelle: [Titel], S. 23-25"                       │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### Schritt 1: Material-Datei vorbereiten
+
+In `studies-material/{studyId}/NN-modul/lecture-name.md`:
+
+```markdown
+# Kapitel 1: Materie und Messen
+
+Titel: "Materie und Messen"
+Link: https://moodle.univie.ac.at/path/to/slides.pdf
+
+## Inhalt
+
+[cite_start]Die Chemie untersucht Materie und Energie[cite: 23-25].
+
+Ein wichtiges Konzept ist [cite_start]die wissenschaftliche Methode, 
+die aus Beobachtung, Hypothese und Experiment besteht[cite: 47-53].
+```
+
+**Format der Zitationsmarkierungen:**
+- `[cite_start]` markiert den Beginn des zitierten Bereichs
+- `[cite: X-Y]` gibt die Seitenangabe(n) an
+- Kann auch mehrere Seiten sein: `[cite: 71, 73, 76]`
+
+### Schritt 2: Quellen in lecture.md definieren
+
+In `content/{studyId}/NN-modul/NN-lecture/lecture.md`:
+
+```yaml
+---
+topic: 'Materie und Messen'
+description: 'Einführung in Chemie, Atome und Messgrößen'
+estimatedTime: 45
+sources:
+  - id: 'vorlesung-k1'
+    title: 'Vorlesungsfolien Kapitel 1 (WS2025)'
+    url: 'https://moodle.univie.ac.at/path/to/Kapitel1.pdf'
+    type: 'pdf'
+  - id: 'mortimer'
+    title: 'Mortimer & Müller: Chemie - Das Basiswissen (10. Aufl.)'
+    url: null
+    type: 'book'
+---
+```
+
+**Source-Felder:**
+
+| Feld    | Typ    | Beschreibung                              |
+| ------- | ------ | ----------------------------------------- |
+| `id`    | String | Eindeutige ID für Referenzierung          |
+| `title` | String | Anzeigename der Quelle                    |
+| `url`   | String | Link zur Quelle (oder `null` bei Büchern) |
+| `type`  | String | `'pdf'`, `'book'`, `'video'`, `'website'` |
+
+### Schritt 3: Quellenreferenzen in Lecture-Items
+
+In `content/.../lecture-items/01-was-ist-chemie.md`:
+
+```yaml
+---
+type: 'learning-content'
+topic: 'Einführung in die Chemie'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '23-25'
+---
+
+## Was ist Chemie?
+
+Chemie ist die Wissenschaft, die sich mit der Charakterisierung...
+```
+
+**Mehrere Quellen pro Item:**
+
+```yaml
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '23-25'
+  - sourceId: 'mortimer'
+    pages: '15-18'
+```
+
+### Darstellung in der App
+
+Die App rendert Quellenreferenzen als Fußnote am Ende jedes Lecture-Items:
+
+```text
+┌─────────────────────────────────────────────────────────────────┐
+│  ## Was ist Chemie?                                             │
+│                                                                 │
+│  Chemie ist die Wissenschaft...                                 │
+│                                                                 │
+│  ─────────────────────────────────────────────────────────────  │
+│  📖 Quelle: Vorlesungsfolien Kapitel 1 (WS2025), S. 23-25      │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+Bei verlinkten Quellen wird der Titel klickbar angezeigt.
+
+---
 
 ## Content Validation
 

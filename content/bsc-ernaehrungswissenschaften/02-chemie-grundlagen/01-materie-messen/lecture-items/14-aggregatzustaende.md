@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Aggregatzustände und Eigenschaften'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '271-272, 289-295'
 ---
 
 ## Die drei Aggregatzustände

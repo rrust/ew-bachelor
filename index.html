@@ -10,9 +10,21 @@
       name="description"
       content="Interaktive Lernapp für das Ernährungswissenschaften Studium"
     />
-    <meta name="theme-color" content="#3b82f6" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#1f2937"
+      media="(prefers-color-scheme: dark)"
+    />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="apple-mobile-web-app-title" content="EW Lernapp" />
     <link rel="manifest" href="manifest.json" />
     <link
@@ -417,12 +429,12 @@
       >
         <!-- Sticky Header -->
         <div
-          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0 flex justify-between items-center"
+          class="bg-white dark:bg-gray-800 shadow-sm px-4 py-2 flex-shrink-0 flex justify-between items-center"
         >
           <button
             id="back-to-lectures-button"
             aria-label="Zurück zur Vorlesungsliste"
-            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
+            class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 text-sm py-1 px-2 rounded transition duration-300"
           >
             &larr; Zurück
           </button>
@@ -430,13 +442,13 @@
             <button
               id="lecture-overview-button"
               aria-label="Vorlesungsübersicht anzeigen (Taste O)"
-              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+              class="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium py-1.5 px-3 rounded-md transition duration-300"
             >
               Übersicht
             </button>
             <button
               id="lecture-quiz-button"
-              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300"
+              class="bg-green-500 hover:bg-green-600 text-white text-sm font-medium py-1.5 px-3 rounded-md transition duration-300"
               style="display: none"
             >
               Test
@@ -446,10 +458,10 @@
 
         <!-- Scrollable Content Area -->
         <div class="flex-1 overflow-y-auto min-h-0">
-          <div class="container mx-auto p-8 max-w-4xl">
+          <div class="container mx-auto px-4 py-4 max-w-3xl">
             <div
               id="lecture-item-display"
-              class="prose prose-lg dark:prose-invert max-w-none bg-white dark:bg-gray-800 rounded-lg shadow-lg p-10"
+              class="prose prose-base dark:prose-invert max-w-none bg-white dark:bg-gray-800 rounded-lg p-6"
             >
               <!-- Current lecture item will be rendered here -->
             </div>
@@ -459,23 +471,23 @@
         <!-- Sticky Footer -->
         <div
           id="lecture-nav"
-          class="bg-white dark:bg-gray-800 shadow-md px-4 py-3 flex-shrink-0 flex justify-between items-center border-t dark:border-gray-700"
+          class="bg-white dark:bg-gray-800 shadow-sm px-4 py-2 flex-shrink-0 flex justify-between items-center border-t dark:border-gray-700"
         >
           <button
             id="prev-item-button"
             aria-label="Vorheriger Schritt (Taste ←)"
-            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300 text-xl"
+            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium py-1.5 px-3 rounded-md transition duration-300 text-lg"
           >
             ←
           </button>
           <span
             id="lecture-progress"
-            class="text-gray-600 dark:text-gray-400 text-sm whitespace-nowrap"
+            class="text-gray-500 dark:text-gray-400 text-xs whitespace-nowrap"
           ></span>
           <button
             id="next-item-button"
             aria-label="Nächster Schritt (Taste →)"
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 text-xl"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-1.5 px-3 rounded-md transition duration-300 text-lg"
           >
             →
           </button>
@@ -813,6 +825,37 @@
       </div>
     </div>
 
+    <!-- Streak Challenge Modal -->
+    <div
+      id="streak-challenge-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-lg w-full overflow-hidden"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700"
+        >
+          <div class="flex items-center space-x-3">
+            <span
+              data-icon="fire"
+              data-icon-class="w-5 h-5 text-orange-500"
+            ></span>
+            <h3 class="text-lg font-bold">Streak Challenge</h3>
+          </div>
+          <button
+            onclick="closeStreakChallengeModal()"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div id="streak-challenge-content" class="p-4">
+          <!-- Content will be injected by alerts.js -->
+        </div>
+      </div>
+    </div>
+
     <!-- View for Search Results -->
     <div id="search-view" style="display: none">
       <!-- Header injected by components.js -->
@@ -1048,6 +1091,7 @@
     <script src="js/studies.js"></script>
     <script src="js/achievements.js"></script>
     <script src="js/achievements-ui.js"></script>
+    <script src="js/streak.js"></script>
     <script src="js/alerts.js"></script>
     <script src="js/notifications.js"></script>
     <script src="js/components.js"></script>
@@ -1072,9 +1116,12 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker
-            .register('./sw.js')
+            .register('./sw.js', { updateViaCache: 'none' })
             .then((registration) => {
               console.log('SW registered:', registration.scope);
+
+              // Force check for updates on every page load
+              registration.update();
 
               // Check for updates
               registration.addEventListener('updatefound', () => {
