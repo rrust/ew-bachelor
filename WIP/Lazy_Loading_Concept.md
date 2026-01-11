@@ -17,13 +17,13 @@ Nur die benötigten Inhalte laden, wenn sie gebraucht werden.
 
 ### Strategie
 
-| Was | Wann laden | Warum |
-|-----|------------|-------|
-| `modules.json` | App-Start | Modul-Übersicht für Cards |
-| `content-list.json` | App-Start | Wissen welche Dateien existieren |
-| Lecture Content | Beim Öffnen der Lecture | Nur wenn User es braucht |
-| Quiz Content | Beim Starten des Quiz | Nur wenn User es braucht |
-| Achievements | Beim Öffnen der Gallery | Oder beim Unlock-Check |
+| Was                 | Wann laden              | Warum                            |
+| ------------------- | ----------------------- | -------------------------------- |
+| `modules.json`      | App-Start               | Modul-Übersicht für Cards        |
+| `content-list.json` | App-Start               | Wissen welche Dateien existieren |
+| Lecture Content     | Beim Öffnen der Lecture | Nur wenn User es braucht         |
+| Quiz Content        | Beim Starten des Quiz   | Nur wenn User es braucht         |
+| Achievements        | Beim Öffnen der Gallery | Oder beim Unlock-Check           |
 
 ### Vorteile
 
@@ -55,6 +55,7 @@ Nur die benötigten Inhalte laden, wenn sie gebraucht werden.
 ### Phase 2: Lazy Loading implementieren
 
 1. **ModuleLoader erstellen**
+
    ```javascript
    // js/module-loader.js
    const ModuleLoader = {
@@ -100,7 +101,7 @@ Nur die benötigten Inhalte laden, wenn sie gebraucht werden.
 
 ## Dateistruktur (Vorschlag)
 
-```
+```text
 content/bsc-ernaehrungswissenschaften/
 ├── modules.json              # Modul-Metadaten (klein, lädt beim Start)
 ├── content-list.json         # Dateiliste (klein, lädt beim Start)  
@@ -115,11 +116,11 @@ content/bsc-ernaehrungswissenschaften/
 
 ## Aufwand
 
-| Phase | Geschätzter Aufwand | Priorität |
-|-------|---------------------|-----------|
-| Phase 1: Vorbereitung | 2-3 Tage | Hoch |
-| Phase 2: Lazy Loading | 3-5 Tage | Hoch |
-| Phase 3: Offline-Modus | 2-3 Tage | Mittel |
+| Phase                  | Geschätzter Aufwand | Priorität |
+| ---------------------- | ------------------- | --------- |
+| Phase 1: Vorbereitung  | 2-3 Tage            | Hoch      |
+| Phase 2: Lazy Loading  | 3-5 Tage            | Hoch      |
+| Phase 3: Offline-Modus | 2-3 Tage            | Mittel    |
 
 **Gesamt: ~1-2 Wochen**
 
@@ -131,7 +132,7 @@ content/bsc-ernaehrungswissenschaften/
 
 Statt Lazy Loading alle Inhalte in eine große JSON-Datei bündeln:
 
-```
+```text
 content/bsc-ernaehrungswissenschaften/bundle.json
 ```
 
