@@ -124,6 +124,32 @@ function searchContent(query, content, modules) {
     });
   });
 
+  // Search in achievements
+  if (content.achievements) {
+    Object.entries(content.achievements).forEach(
+      ([achievementId, achievement]) => {
+        const title = achievement.title || '';
+        const description = achievement.description || '';
+        const achievementContent = achievement.content || '';
+
+        if (
+          matchesAny(title, searchTerms) ||
+          matchesAny(description, searchTerms) ||
+          matchesAny(achievementContent, searchTerms)
+        ) {
+          results.push({
+            type: 'achievement',
+            achievementId: achievementId,
+            title: title,
+            subtitle: description,
+            icon: '🏆',
+            url: `#/achievements/${achievementId}`
+          });
+        }
+      }
+    );
+  }
+
   // Remove duplicates and limit results
   const uniqueResults = removeDuplicates(results);
   return uniqueResults.slice(0, 20);
@@ -261,7 +287,8 @@ function getTypeLabel(type) {
     module: 'Modul',
     lecture: 'Vorlesung',
     'lecture-item': 'Inhalt',
-    quiz: 'Quiz'
+    quiz: 'Quiz',
+    achievement: 'Achievement'
   };
   return labels[type] || type;
 }
@@ -400,7 +427,8 @@ function getTypeBadge(type) {
     module: { label: 'Modul', color: 'purple' },
     lecture: { label: 'Vorlesung', color: 'blue' },
     'lecture-item': { label: 'Inhalt', color: 'green' },
-    quiz: { label: 'Quiz', color: 'orange' }
+    quiz: { label: 'Quiz', color: 'orange' },
+    achievement: { label: 'Achievement', color: 'yellow' }
   };
   const badge = badges[type] || { label: type, color: 'gray' };
 
@@ -483,8 +511,36 @@ function renderSearchPage(results, query) {
   }
 
   container.innerHTML = results
-    .map(
-      (result) => `
+    .map((result) => {
+      // Special rendering for achievements to match achievement card style
+      if (result.type === 'achievement') {
+        const achievementIcon = Icons.get(
+          'document',
+          'w-6 h-6',
+          'text-gray-600 dark:text-gray-400'
+        );
+        return `
+          <a href="${
+            result.url
+          }" class="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border border-gray-100 dark:border-gray-700">
+            <div class="flex items-start gap-3">
+              <div class="flex-shrink-0 mt-0.5">${achievementIcon}</div>
+              <div class="flex-grow min-w-0">
+                <div class="flex items-start justify-between gap-3 mb-1">
+                  <h3 class="font-bold text-sm">${escapeHtml(result.title)}</h3>
+                  <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0">Achievement</span>
+                </div>
+                <p class="text-xs text-gray-600 dark:text-gray-400">${escapeHtml(
+                  result.subtitle
+                )}</p>
+              </div>
+            </div>
+          </a>
+        `;
+      }
+
+      // Default rendering for other result types
+      return `
       <a href="${
         result.url
       }" class="block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-100 dark:border-gray-700">
@@ -506,8 +562,8 @@ function renderSearchPage(results, query) {
             : ''
         }
       </a>
-    `
-    )
+    `;
+    })
     .join('');
 }
 
