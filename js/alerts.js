@@ -596,21 +596,21 @@ function arePushNotificationsEnabled() {
  */
 function togglePushNotifications() {
   const permission = Notification.permission;
-  
+
   if (permission !== 'granted') {
     // Need to request permission first
     enableNotificationsAndRefresh();
     return;
   }
-  
+
   const currentlyEnabled = arePushNotificationsEnabled();
   const newState = !currentlyEnabled;
-  
+
   localStorage.setItem('pushNotificationsEnabled', newState ? 'true' : 'false');
-  
+
   // Show feedback toast
   showNotificationToggleToast(newState);
-  
+
   // Re-render to update icon
   renderAlertsView();
 }
@@ -621,12 +621,13 @@ function togglePushNotifications() {
 function showNotificationToggleToast(enabled) {
   const existing = document.getElementById('notification-toggle-toast');
   if (existing) existing.remove();
-  
+
   const toast = document.createElement('div');
   toast.id = 'notification-toggle-toast';
-  
+
   if (enabled) {
-    toast.className = 'fixed bottom-20 left-4 right-4 bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 text-green-800 dark:text-green-200 rounded-lg p-3 z-50 shadow-lg text-sm';
+    toast.className =
+      'fixed bottom-20 left-4 right-4 bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 text-green-800 dark:text-green-200 rounded-lg p-3 z-50 shadow-lg text-sm';
     toast.innerHTML = `
       <div class="flex items-center gap-2">
         ${Icons.get('checkCircle', 'w-5 h-5', 'text-green-500')}
@@ -634,7 +635,8 @@ function showNotificationToggleToast(enabled) {
       </div>
     `;
   } else {
-    toast.className = 'fixed bottom-20 left-4 right-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 text-red-800 dark:text-red-200 rounded-lg p-3 z-50 shadow-lg text-sm';
+    toast.className =
+      'fixed bottom-20 left-4 right-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 text-red-800 dark:text-red-200 rounded-lg p-3 z-50 shadow-lg text-sm';
     toast.innerHTML = `
       <div class="flex items-center gap-2">
         ${Icons.get('close', 'w-5 h-5', 'text-red-500')}
@@ -642,7 +644,7 @@ function showNotificationToggleToast(enabled) {
       </div>
     `;
   }
-  
+
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 3000);
 }
@@ -666,7 +668,7 @@ function renderNotificationStatusIcon() {
 
   if (permission === 'granted') {
     const enabled = arePushNotificationsEnabled();
-    
+
     if (enabled) {
       return `
         <button
