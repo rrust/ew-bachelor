@@ -80,23 +80,23 @@ function createAppHeader(view = 'moduleMap', options = {}) {
 
   header.innerHTML = `
     <div class="container mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
-      <div class="flex items-center space-x-2">
+      <a href="#/modules" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
         ${studyIcon ? `<span class="flex-shrink-0">${studyIcon}</span>` : ''}
         <h1 class="text-sm md:text-xl font-bold text-gray-800 dark:text-gray-100">
           ${studyTitle}
         </h1>
-        ${
-          showGreeting
-            ? `
-        <span class="hidden md:inline text-gray-400 dark:text-gray-500">-</span>
-        <span
-          id="header-greeting${idSuffix}"
-          class="hidden md:inline text-lg text-blue-600 dark:text-blue-400 font-medium"
-        ></span>
-        `
-            : ''
-        }
-      </div>
+      </a>
+      ${
+        showGreeting
+          ? `
+      <span class="hidden md:inline text-gray-400 dark:text-gray-500 ml-2">-</span>
+      <span
+        id="header-greeting${idSuffix}"
+        class="hidden md:inline text-lg text-blue-600 dark:text-blue-400 font-medium ml-2 flex-1"
+      ></span>
+      `
+          : ''
+      }
       <nav class="flex items-center gap-2">
         <!-- Dev Mode Badge (shown when dev mode is active) -->
         <span
