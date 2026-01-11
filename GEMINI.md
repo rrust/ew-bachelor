@@ -66,9 +66,27 @@ Use conventional commit format:
 **Quick rules:**
 - YAML lists use `-` (dash), NEVER `*` (asterisk)
 - `correctAnswer` must exactly match an option
+- `multiple-choice-multiple` uses `correctAnswers` (plural!), not `correctAnswer`
 - Files numbered `NN-name.md` for ordering
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
 - Always validate before committing
+
+### Content Types Reference
+
+| Type                       | Required Fields                                       | Notes                        |
+| -------------------------- | ----------------------------------------------------- | ---------------------------- |
+| `multiple-choice`          | `type`, `question`, `options`, `correctAnswer`        | Single correct answer        |
+| `multiple-choice-multiple` | `type`, `question`, `options`, `correctAnswers`       | **Plural!** Multiple correct |
+| `self-assessment`          | `type`, `question`, `checkpoints`                     | Checklist, not quiz          |
+| `self-assessment-mc`       | `type`, `question`, `options`, `correctAnswer`        | Quiz-style self-check        |
+| `learning-content`         | `type`                                                | Main lecture content         |
+| `mermaid-diagram`          | `type`                                                | Flowcharts, diagrams         |
+| `youtube-video`            | `type`, `url`                                         | Embedded video               |
+| `achievement`              | See [CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md) | Cheat-sheets                 |
+
+### Valid Icon Names (for achievements)
+
+Only use these icons: `search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `chart`, `cog`, `map`, `trophy`, `phone`, `phoneDownload`, `checkCircle`, `book`, `zoomIn`, `zoomOut`, `reset`, `externalLink`, `lock`, `unlock`, `clock`, `hourglass`, `document`, `clipboard`, `apple`, `beaker`, `graduationCap`, `download`, `upload`, `hourglassEmpty`, `check`, `rocket`, `fire`, `muscle`, `star`, `wave`
 
 ### Content Generation from Study Materials
 
