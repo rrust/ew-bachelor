@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.2.0';
+const CACHE_VERSION = 'v1.2.5';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -28,33 +28,49 @@ const STATIC_ASSETS = [
   './js/modules.js',
   './js/map.js',
   './js/progress-view.js',
-  './content/modules.json',
-  './content/content-list.json',
+  './js/studies.js',
+  './js/icons.js',
+  './js/keyboard.js',
+  './js/pwa-install.js',
+  './js/validator.js',
+  './js/dev-mode.js',
+  './js/snapshots.js',
+  './content/studies.json',
   './manifest.json'
 ];
 
 // External CDN resources (cache but allow network fallback)
 const CDN_ASSETS = [
-  'https://cdn.tailwindcss.com',
+  'https://cdn.tailwindcss.com?plugins=typography',
   'https://cdn.jsdelivr.net/npm/marked/marked.min.js',
   'https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js',
-  'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js',
+  'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs',
   'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
   'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js',
   'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js',
   'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js'
 ];
 
-// Install: Cache static assets
+// Install: Cache static assets AND CDN assets for offline use
 self.addEventListener('install', (event) => {
   console.log('[SW] Installing service worker...');
 
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then((cache) => {
+      .then(async (cache) => {
         console.log('[SW] Caching static assets');
-        return cache.addAll(STATIC_ASSETS);
+        await cache.addAll(STATIC_ASSETS);
+
+        // Try to cache CDN assets (don't fail install if CDN is down)
+        console.log('[SW] Caching CDN assets');
+        for (const url of CDN_ASSETS) {
+          try {
+            await cache.add(url);
+          } catch (e) {
+            console.warn('[SW] Failed to cache CDN asset:', url);
+          }
+        }
       })
       .then(() => {
         // Skip waiting to activate immediately

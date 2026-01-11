@@ -268,6 +268,7 @@ function checkAnswer(
  * @param {string} currentLectureId - Current lecture ID
  * @param {Function} updateLectureProgress - Function to update progress
  * @param {Function} showQuizResults - Function to show results
+ * @param {string} lectureTopic - Topic name for snapshot description
  */
 function finishQuiz(
   quizState,
@@ -275,12 +276,26 @@ function finishQuiz(
   currentModuleId,
   currentLectureId,
   updateLectureProgress,
-  showQuizResults
+  showQuizResults,
+  lectureTopic = ''
 ) {
   displays.quizProgressBar.style.width = '100%'; // Fill bar at the end
   const finalScore =
     (quizState.userScore / quizState.data.questions.length) * 100;
   updateLectureProgress(currentModuleId, currentLectureId, finalScore);
+
+  // Create automatic snapshot after quiz completion
+  if (window.createSnapshot) {
+    const badgeInfo = window.getBadgeInfo
+      ? window.getBadgeInfo(finalScore)
+      : null;
+    const badgeName = badgeInfo ? badgeInfo.text : '';
+    const topicName = lectureTopic || currentLectureId;
+    window.createSnapshot(
+      `Quiz: ${topicName} (${Math.round(finalScore)}% - ${badgeName})`,
+      'quiz'
+    );
+  }
 
   // Show results with the just-completed score (no retake option)
   showQuizResults(finalScore, false);

@@ -23,7 +23,7 @@
     />
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="stylesheet" href="css/custom-styles.css" />
 
     <!-- KaTeX for math rendering -->
@@ -179,11 +179,26 @@
           </p>
         </div>
 
-        <!-- Achievement Stats -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+        <!-- Achievement Stats (clickable filters) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <button
+            id="filter-all"
+            class="stat-filter-btn bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 md:p-6 text-left hover:shadow-lg transition cursor-pointer ring-2 ring-blue-500"
+          >
             <div
-              class="text-3xl font-bold text-blue-600 dark:text-blue-400"
+              class="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400"
+              id="achievements-all"
+            >
+              0
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Alle</div>
+          </button>
+          <button
+            id="filter-unlocked"
+            class="stat-filter-btn bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 md:p-6 text-left hover:shadow-lg transition cursor-pointer"
+          >
+            <div
+              class="text-2xl md:text-3xl font-bold text-green-600 dark:text-green-400"
               id="achievements-total"
             >
               0
@@ -191,10 +206,13 @@
             <div class="text-sm text-gray-600 dark:text-gray-400">
               Freigeschaltet
             </div>
-          </div>
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          </button>
+          <button
+            id="filter-expiring"
+            class="stat-filter-btn bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 md:p-6 text-left hover:shadow-lg transition cursor-pointer"
+          >
             <div
-              class="text-3xl font-bold text-yellow-600 dark:text-yellow-400"
+              class="text-2xl md:text-3xl font-bold text-yellow-600 dark:text-yellow-400"
               id="achievements-expiring"
             >
               0
@@ -202,45 +220,18 @@
             <div class="text-sm text-gray-600 dark:text-gray-400">
               Läuft bald ab
             </div>
-          </div>
-          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          </button>
+          <button
+            id="filter-locked"
+            class="stat-filter-btn bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 md:p-6 text-left hover:shadow-lg transition cursor-pointer"
+          >
             <div
-              class="text-3xl font-bold text-gray-600 dark:text-gray-400"
+              class="text-2xl md:text-3xl font-bold text-gray-600 dark:text-gray-400"
               id="achievements-locked"
             >
               0
             </div>
-            <div class="text-sm text-gray-600 dark:text-gray-400">
-              Noch gesperrt
-            </div>
-          </div>
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="flex flex-wrap gap-2 mb-6">
-          <button
-            id="filter-all"
-            class="filter-btn bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition"
-          >
-            Alle
-          </button>
-          <button
-            id="filter-unlocked"
-            class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-          >
-            Freigeschaltet
-          </button>
-          <button
-            id="filter-locked"
-            class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-          >
-            Gesperrt
-          </button>
-          <button
-            id="filter-expiring"
-            class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-          >
-            Läuft bald ab
+            <div class="text-sm text-gray-600 dark:text-gray-400">Gesperrt</div>
           </button>
         </div>
 
@@ -289,6 +280,102 @@
           >
             <!-- Achievement content will be rendered here -->
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Validator Modal -->
+    <div
+      id="validator-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 flex-shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <span
+              data-icon="checkCircle"
+              data-icon-class="w-6 h-6 text-blue-500"
+            ></span>
+            <h3 class="text-xl font-bold">Content Validator</h3>
+          </div>
+          <button
+            id="close-validator-modal"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div id="validator-content" class="p-4 overflow-y-auto flex-grow">
+          <div class="text-center py-8 text-gray-500">
+            <div
+              class="animate-spin rounded-full h-8 w-8 border-2 border-blue-500 border-t-transparent mx-auto mb-4"
+            ></div>
+            Validiere Inhalte...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Test Data Modal (Dev Mode) -->
+    <div
+      id="test-data-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full overflow-hidden"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700"
+        >
+          <div class="flex items-center space-x-3">
+            <span
+              class="text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+              >DEV</span
+            >
+            <h3 class="text-lg font-bold">Test-Daten laden</h3>
+          </div>
+          <button
+            id="close-test-data-modal"
+            onclick="closeTestDataModal()"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div id="test-data-content" class="p-4">
+          <!-- Content will be injected by dev-mode.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Snapshots Modal -->
+    <div
+      id="snapshots-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-lg w-full max-h-[90vh] overflow-hidden flex flex-col"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 flex-shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <span data-icon="save" data-icon-class="w-5 h-5 text-purple-500"></span>
+            <h3 class="text-lg font-bold">Speicherstände</h3>
+          </div>
+          <button
+            onclick="closeSnapshotsModal()"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div id="snapshots-content" class="p-4 overflow-y-auto flex-grow">
+          <!-- Content will be injected by snapshots.js -->
         </div>
       </div>
     </div>
@@ -557,13 +644,12 @@
               Prüft alle Content-Dateien auf YAML-Fehler, fehlende Felder und
               häufige Syntaxfehler.
             </p>
-            <a
-              href="validate-content.html"
-              target="_blank"
+            <button
+              id="run-validator-button"
               class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-200"
             >
-              Validator öffnen
-            </a>
+              Validator starten
+            </button>
           </div>
 
           <!-- Study Switch Card -->
@@ -586,6 +672,37 @@
               class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-md transition duration-200"
             >
               Studiengang wählen
+            </button>
+          </div>
+
+          <!-- Dev Mode Card -->
+          <div
+            id="dev-mode-card"
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center">
+                <span
+                  data-icon="cog"
+                  data-icon-class="w-8 h-8 text-orange-600 dark:text-orange-400 mr-3"
+                ></span>
+                <h3 class="text-xl font-bold">Dev-Mode</h3>
+              </div>
+              <span
+                id="dev-mode-badge"
+                class="hidden text-xs font-bold px-2 py-1 rounded-full bg-orange-500 text-white"
+              >
+                AKTIV
+              </span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Entwickler-Funktionen für Content-Erstellung und Debugging.
+            </p>
+            <button
+              id="toggle-dev-mode-button"
+              class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-md transition duration-200"
+            >
+              Aktivieren
             </button>
           </div>
         </div>
@@ -689,6 +806,16 @@
 
           <!-- Backup/Restore Buttons -->
           <div class="flex gap-2">
+            <!-- Dev Mode: Test Data Button -->
+            <button
+              id="dev-test-data-button"
+              onclick="openTestDataModal()"
+              class="dev-only hidden flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm"
+              title="Test-Daten laden (Dev Mode)"
+            >
+              <span class="text-xs font-bold">DEV</span>
+              <span class="hidden sm:inline">Test-Daten</span>
+            </button>
             <button
               onclick="exportProgress()"
               class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
@@ -710,6 +837,14 @@
                 onchange="handleProgressImport(this)"
               />
             </label>
+            <button
+              onclick="openSnapshotsModal()"
+              class="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm"
+              title="Automatische Speicherstände anzeigen"
+            >
+              <span data-icon="save" data-icon-class="w-4 h-4"></span>
+              <span class="hidden sm:inline">Speicherstände</span>
+            </button>
           </div>
         </div>
 
@@ -860,6 +995,9 @@
     <script src="js/keyboard.js"></script>
     <script src="js/search.js"></script>
     <script src="js/pwa-install.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/dev-mode.js"></script>
+    <script src="js/snapshots.js"></script>
     <!-- Feature modules -->
     <script src="js/quiz.js"></script>
     <script src="js/lecture.js"></script>

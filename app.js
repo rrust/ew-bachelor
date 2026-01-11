@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- State Management ---
   let currentModuleId = null;
   let currentLectureId = null;
+  let currentLectureTopic = null;
 
   // State for the lecture player
   const lectureState = {
@@ -160,6 +161,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       route.view = 'map';
     } else if (parts[offset] === 'progress') {
       route.view = 'progress';
+    } else if (parts[offset] === 'achievements') {
+      route.view = 'achievements';
+      if (parts[offset + 1]) {
+        route.achievementId = parts[offset + 1];
+      }
     }
 
     return route;
@@ -240,6 +246,26 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView('search');
       if (window.initSearchPage) {
         window.initSearchPage(route.query || '');
+      }
+      return true;
+    } else if (route.view === 'achievements') {
+      updateGreeting();
+      showView('achievements');
+      renderAchievementsGallery('all');
+      // If specific achievement is requested, open its modal
+      if (route.achievementId && APP_CONTENT.achievements) {
+        const achievement = APP_CONTENT.achievements[route.achievementId];
+        if (achievement) {
+          const status = getAchievementStatus(route.achievementId);
+          const progress = getAchievementProgress(route.achievementId);
+          if (status === 'unlocked' || status === 'locked-soon') {
+            showAchievementModal({
+              ...achievement,
+              currentStatus: status,
+              progress
+            });
+          }
+        }
       }
       return true;
     }
@@ -529,6 +555,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   function startLecture(moduleId, lectureId, startIndex = 0) {
     currentModuleId = moduleId;
     currentLectureId = lectureId;
+
+    // Get lecture topic for snapshot descriptions
+    const moduleContent = APP_CONTENT[moduleId];
+    const lecture = moduleContent?.lectures?.[lectureId];
+    currentLectureTopic = lecture?.topic || lectureId;
+
     window.LectureModule.startLecture(
       moduleId,
       lectureId,
@@ -695,7 +727,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           displays,
           buttons,
           showView
-        )
+        ),
+      currentLectureTopic
     );
   }
 
@@ -911,6 +944,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupQuizListeners();
     setupAchievementsListeners();
     setupToolsListeners();
+
+    // Setup validator listeners
+    if (window.setupValidatorListeners) {
+      window.setupValidatorListeners();
+    }
+
+    // Setup dev mode listeners
+    if (window.setupDevModeListeners) {
+      window.setupDevModeListeners();
+    }
+
+    // Setup snapshots listeners
+    if (window.setupSnapshotsListeners) {
+      window.setupSnapshotsListeners();
+    }
   }
 
   function setupToolsListeners() {

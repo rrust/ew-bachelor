@@ -87,11 +87,7 @@ const Icons = (function () {
     clipboard:
       '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>',
 
-    // Study program icons
-    apple: `<ellipse cx="12" cy="14" rx="6" ry="7" stroke-width="1.5"/>
-            <path stroke-linecap="round" stroke-width="1.5" d="M12 7V4c0-1 1-2 3-2"/>
-            <path stroke-linecap="round" stroke-width="1.5" d="M10 5c-1 0-2 .5-2 1.5"/>`,
-
+    // Study program icons (apple is in customViewBoxIcons)
     beaker: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3h6v5l4 10a1 1 0 01-1 1H6a1 1 0 01-1-1l4-10V3z"/>
              <path stroke-linecap="round" stroke-width="1.5" d="M7 14h10"/>
              <path stroke-linecap="round" stroke-width="1.5" d="M9 3h6"/>`,
@@ -123,7 +119,40 @@ const Icons = (function () {
 
     star: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>',
 
-    wave: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>'
+    wave: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>',
+
+    // Snapshot icons
+    save: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path>',
+
+    pin: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>',
+
+    pinOutline:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>',
+
+    pinFilled:
+      '<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>',
+
+    trash:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>',
+
+    plus: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>',
+
+    lightbulb:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>',
+
+    inbox:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>',
+
+    medal:
+      '<circle cx="12" cy="8" r="6" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>'
+  };
+
+  // Icons with custom viewBox (different from default 24x24)
+  const customViewBoxIcons = {
+    apple: {
+      viewBox: '0 0 490 490',
+      path: '<path fill="currentColor" d="M348.399,104.848c-1.257,0-2.489,0.022-3.707,0.066c-45.669,1.659-74.383,25.793-91.667,32.88c-4.223-22.172-5.759-69.433,40.609-116.225L271.891,0.006c-25.597,25.826-39.003,51.986-45.658,75.607C173.742,6.109,104.742,15.819,104.742,15.819c48.35,91.049,106.284,70.783,120.351,64.088c-4.731,18.899-5.271,36.013-4.053,49.641c-17.489-9.865-41.998-23.41-75.732-24.635c-1.215-0.044-2.454-0.066-3.708-0.066C87.663,104.846,0,146.111,0,267.252c0,123.954,99.709,222.741,150.78,222.741c51.07,0,68.821-14.472,94.22-14.472c25.399,0,43.149,14.472,94.22,14.472c51.07,0,150.78-98.787,150.78-222.741C490,146.119,402.337,104.848,348.399,104.848z M339.22,459.369c-25.901,0-41.088-4.088-55.775-8.041c-11.746-3.162-23.891-6.431-38.445-6.431c-14.554,0-26.7,3.269-38.446,6.431c-14.687,3.953-29.875,8.041-55.774,8.041c-29.042,0-120.155-79.717-120.155-192.116c0-45.085,13.554-79.987,40.288-103.736c23.276-20.677,51.776-28.045,70.688-28.044c0.878,0,1.746,0.016,2.595,0.047c26.826,0.974,46.696,12.186,62.66,21.195c13.104,7.395,24.421,13.781,38.144,13.781c13.723,0,25.04-6.386,38.143-13.781c15.965-9.009,35.834-20.221,62.659-21.195c0.853-0.031,1.716-0.047,2.596-0.047c18.911,0,47.41,7.368,70.688,28.047c26.733,23.75,40.289,58.65,40.289,103.732C459.375,379.652,368.262,459.369,339.22,459.369z"/>'
+    }
   };
 
   /**
@@ -134,6 +163,13 @@ const Icons = (function () {
    * @returns {string} Complete SVG element as string
    */
   function get(name, sizeClass = 'w-5 h-5', colorClass = '') {
+    // Check for custom viewBox icons first
+    if (customViewBoxIcons[name]) {
+      const icon = customViewBoxIcons[name];
+      const classes = [sizeClass, colorClass].filter(Boolean).join(' ');
+      return `<svg class="${classes}" fill="none" stroke="currentColor" viewBox="${icon.viewBox}">${icon.path}</svg>`;
+    }
+
     const path = paths[name];
     if (!path) {
       console.warn(`Icon "${name}" not found`);
