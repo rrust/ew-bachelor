@@ -1,6 +1,126 @@
 // js/training.js
 // Training mode - Random questions from completed tests with cheat-sheet support
 
+// Token system constants
+const QUESTIONS_PER_TOKEN = 10;
+const TOKENS_FOR_EXTENSION = 3;
+
+/**
+ * Get training stats from user progress
+ * @returns {Object} { tokens, totalAnswered, progressToNextToken }
+ */
+function getTrainingStats() {
+  const progress = getUserProgress();
+  if (!progress) {
+    return { tokens: 0, totalAnswered: 0, progressToNextToken: 0 };
+  }
+
+  const training = progress.training || { tokens: 0, totalAnswered: 0 };
+  const progressToNextToken = training.totalAnswered % QUESTIONS_PER_TOKEN;
+
+  return {
+    tokens: training.tokens || 0,
+    totalAnswered: training.totalAnswered || 0,
+    progressToNextToken
+  };
+}
+
+/**
+ * Save training stats to user progress
+ * @param {number} tokens
+ * @param {number} totalAnswered
+ */
+function saveTrainingStats(tokens, totalAnswered) {
+  const progress = getUserProgress();
+  if (!progress) return;
+
+  progress.training = {
+    tokens,
+    totalAnswered
+  };
+
+  saveUserProgress(progress);
+}
+
+/**
+ * Record an answered question and award tokens if earned
+ * @returns {boolean} True if a new token was earned
+ */
+function recordTrainingAnswer() {
+  const stats = getTrainingStats();
+  const newTotalAnswered = stats.totalAnswered + 1;
+  const earnedToken = newTotalAnswered % QUESTIONS_PER_TOKEN === 0;
+  const newTokens = earnedToken ? stats.tokens + 1 : stats.tokens;
+
+  saveTrainingStats(newTokens, newTotalAnswered);
+
+  return earnedToken;
+}
+
+/**
+ * Spend tokens to extend an achievement
+ * @param {string} achievementId
+ * @returns {boolean} True if successful
+ */
+function spendTokensForExtension(achievementId) {
+  const stats = getTrainingStats();
+
+  if (stats.tokens < TOKENS_FOR_EXTENSION) {
+    return false;
+  }
+
+  // Check if achievement is extendable (unlocked or locked-soon, not expired)
+  const status = getAchievementStatus(achievementId);
+  if (status !== 'unlocked' && status !== 'locked-soon') {
+    return false;
+  }
+
+  // Extend the achievement
+  extendAchievement(achievementId);
+
+  // Deduct tokens
+  saveTrainingStats(stats.tokens - TOKENS_FOR_EXTENSION, stats.totalAnswered);
+
+  return true;
+}
+
+/**
+ * Get achievements that can be extended with tokens
+ * @returns {Array} Array of extendable achievements
+ */
+function getExtendableAchievements() {
+  const extendable = [];
+
+  if (!APP_CONTENT.achievements) return extendable;
+
+  for (const achievementId in APP_CONTENT.achievements) {
+    const achievement = APP_CONTENT.achievements[achievementId];
+    const status = getAchievementStatus(achievementId);
+    const progress = getAchievementProgress(achievementId);
+
+    // Only unlocked or locked-soon (expiring) can be extended
+    if (status === 'unlocked' || status === 'locked-soon') {
+      const expiresAt = progress ? new Date(progress.expiresAt) : null;
+      const daysRemaining = expiresAt
+        ? Math.ceil((expiresAt - new Date()) / (1000 * 60 * 60 * 24))
+        : 0;
+
+      extendable.push({
+        ...achievement,
+        id: achievementId,
+        status,
+        daysRemaining,
+        expiresAt
+      });
+    }
+  }
+
+  // Sort by days remaining (most urgent first)
+  extendable.sort((a, b) => a.daysRemaining - b.daysRemaining);
+
+  return extendable;
+}
+
 /**
  * Get all completed tests from user progress
  * @returns {Array} Array of {moduleId, lectureId, questions, badge, cheatSheet}
@@ -125,6 +245,9 @@ let trainingState = {
 function initTrainingView() {
   const completedTests = getCompletedTests();
   const container = document.getElementById('training-content');
+
+  // Always render the stats card
+  renderTrainingStatsCard();
 
   if (completedTests.length === 0) {
     container.innerHTML = `
@@ -325,14 +448,27 @@ function submitTrainingAnswer() {
     trainingState.correctCount++;
   }
 
+  // Record answer for token system
+  const earnedToken = recordTrainingAnswer();
+
   // Show feedback
-  showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers);
+  showTrainingFeedback(
+    isCorrect,
+    correctAnswer,
+    isMultipleAnswers,
+    earnedToken
+  );
 }
 
 /**
  * Show feedback for the answer
  */
-function showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers) {
+function showTrainingFeedback(
+  isCorrect,
+  correctAnswer,
+  isMultipleAnswers,
+  earnedToken = false
+) {
   const options = document.querySelectorAll('#training-options label');
   const submitBtn = document.getElementById('training-submit-btn');
 
@@ -363,7 +499,13 @@ function showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers) {
     }
   });
 
-  // Change button to "Next"
+  // Change button to "Next" with optional token earned notification
+  const tokenNotification = earnedToken
+    ? `<div class="mt-3 text-center text-sm font-medium text-yellow-600 dark:text-yellow-400 animate-pulse">
+        🎟️ +1 Trainings-Token verdient!
+      </div>`
+    : '';
+
   submitBtn.outerHTML = `
     <button
       onclick="nextTrainingQuestion()"
@@ -375,6 +517,7 @@ function showTrainingFeedback(isCorrect, correctAnswer, isMultipleAnswers) {
     >
       ${isCorrect ? '✓ Richtig!' : '✗ Leider falsch'} – Weiter →
     </button>
+    ${tokenNotification}
   `;
 }
 
@@ -503,6 +646,167 @@ function closeTrainingCheatSheet() {
 }
 
 /**
+ * Render the token stats card
+ */
+function renderTrainingStatsCard() {
+  const card = document.getElementById('training-stats-card');
+  if (!card) return;
+
+  const stats = getTrainingStats();
+  const extendable = getExtendableAchievements();
+  const canExtend =
+    stats.tokens >= TOKENS_FOR_EXTENSION && extendable.length > 0;
+
+  card.innerHTML = `
+    <div class="text-center">
+      <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">
+        🎟️ ${stats.tokens}
+      </div>
+      <div class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+        Trainings-Tokens
+      </div>
+      <div class="text-xs text-gray-500 dark:text-gray-500 mb-3">
+        ${stats.progressToNextToken}/${QUESTIONS_PER_TOKEN} zum nächsten Token
+      </div>
+      <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mb-3">
+        <div class="bg-blue-500 h-1.5 rounded-full transition-all" style="width: ${
+          (stats.progressToNextToken / QUESTIONS_PER_TOKEN) * 100
+        }%"></div>
+      </div>
+      ${
+        canExtend
+          ? `
+        <button
+          onclick="openTokenRedeemModal()"
+          class="w-full text-sm bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-3 rounded-lg transition"
+        >
+          Achievement verlängern
+        </button>
+      `
+          : extendable.length > 0
+          ? `
+        <p class="text-xs text-gray-500 dark:text-gray-500">
+          ${TOKENS_FOR_EXTENSION} Tokens = 1 Verlängerung
+        </p>
+      `
+          : `
+        <p class="text-xs text-gray-500 dark:text-gray-500">
+          Keine Achievements zum Verlängern
+        </p>
+      `
+      }
+    </div>
+  `;
+}
+
+/**
+ * Open the token redeem modal
+ */
+function openTokenRedeemModal() {
+  const modal = document.getElementById('training-redeem-modal');
+  if (!modal) return;
+
+  const stats = getTrainingStats();
+  const extendable = getExtendableAchievements();
+  const content = document.getElementById('training-redeem-content');
+
+  if (content) {
+    content.innerHTML = `
+      <div class="mb-4 text-center">
+        <span class="text-3xl">🎟️</span>
+        <p class="text-lg font-bold mt-2">Du hast ${stats.tokens} Tokens</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Wähle ein Achievement zum Verlängern (Kosten: ${TOKENS_FOR_EXTENSION} Tokens)
+        </p>
+      </div>
+      
+      <div class="space-y-3 max-h-[50vh] overflow-y-auto">
+        ${extendable
+          .map(
+            (achievement) => `
+          <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+            <div class="flex-1 min-w-0">
+              <p class="font-medium truncate">${achievement.title}</p>
+              <p class="text-sm ${
+                achievement.status === 'locked-soon'
+                  ? 'text-yellow-600 dark:text-yellow-400'
+                  : 'text-gray-500 dark:text-gray-400'
+              }">
+                ${
+                  achievement.daysRemaining <= 0
+                    ? 'Läuft heute ab!'
+                    : achievement.daysRemaining === 1
+                    ? 'Noch 1 Tag'
+                    : `Noch ${achievement.daysRemaining} Tage`
+                }
+              </p>
+            </div>
+            <button
+              onclick="redeemTokenForAchievement('${achievement.id}')"
+              class="ml-3 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-bold rounded-lg transition ${
+                stats.tokens < TOKENS_FOR_EXTENSION
+                  ? 'opacity-50 cursor-not-allowed'
+                  : ''
+              }"
+              ${stats.tokens < TOKENS_FOR_EXTENSION ? 'disabled' : ''}
+            >
+              Verlängern
+            </button>
+          </div>
+        `
+          )
+          .join('')}
+      </div>
+      
+      ${
+        extendable.length === 0
+          ? `
+        <p class="text-center text-gray-500 dark:text-gray-400 py-4">
+          Keine Achievements verfügbar, die verlängert werden können.
+        </p>
+      `
+          : ''
+      }
+    `;
+  }
+
+  modal.classList.remove('hidden');
+}
+
+/**
+ * Close the token redeem modal
+ */
+function closeTokenRedeemModal() {
+  const modal = document.getElementById('training-redeem-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+  }
+}
+
+/**
+ * Redeem tokens to extend an achievement
+ */
+function redeemTokenForAchievement(achievementId) {
+  const success = spendTokensForExtension(achievementId);
+
+  if (success) {
+    // Show success feedback
+    const achievement = APP_CONTENT.achievements[achievementId];
+    alert(
+      `✓ ${achievement.title} wurde um ${achievement.extensionDuration} Tage verlängert!`
+    );
+
+    // Update UI
+    closeTokenRedeemModal();
+    renderTrainingStatsCard();
+  } else {
+    alert(
+      'Verlängerung fehlgeschlagen. Nicht genug Tokens oder Achievement nicht verfügbar.'
+    );
+  }
+}
+
+/**
  * Escape HTML to prevent XSS
  */
 function escapeHtml(text) {
@@ -518,3 +822,7 @@ window.nextTrainingQuestion = nextTrainingQuestion;
 window.showTrainingCheatSheet = showTrainingCheatSheet;
 window.closeTrainingCheatSheet = closeTrainingCheatSheet;
 window.getCompletedTests = getCompletedTests;
+window.openTokenRedeemModal = openTokenRedeemModal;
+window.closeTokenRedeemModal = closeTokenRedeemModal;
+window.redeemTokenForAchievement = redeemTokenForAchievement;
+window.getTrainingStats = getTrainingStats;

@@ -799,17 +799,21 @@
       <!-- Header injected by components.js -->
 
       <div class="container mx-auto px-4 md:px-8 py-8">
-        <div class="mb-6">
-          <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-3">
-            <span
-              data-icon="training"
-              data-icon-class="w-8 h-8 text-blue-500"
-            ></span>
-            Trainings-Modus
-          </h2>
-          <p class="text-gray-600 dark:text-gray-400 mt-2">
-            Zufällige Fragen aus deinen absolvierten Tests zur Wiederholung
-          </p>
+        <div class="mb-6 flex flex-wrap justify-between items-start gap-4">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold">Trainings-Modus</h2>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">
+              Zufällige Fragen aus deinen absolvierten Tests zur Wiederholung
+            </p>
+          </div>
+
+          <!-- Token Stats Card -->
+          <div
+            id="training-stats-card"
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 min-w-[200px]"
+          >
+            <!-- Stats will be rendered by training.js -->
+          </div>
         </div>
 
         <div id="training-content">
@@ -850,6 +854,34 @@
           id="training-cheatsheet-content"
           class="p-6 overflow-y-auto prose dark:prose-invert max-w-none"
         >
+          <!-- Content will be injected by training.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Token Redeem Modal -->
+    <div
+      id="training-redeem-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-lg w-full overflow-hidden"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700"
+        >
+          <div class="flex items-center space-x-3">
+            <span class="text-xl">🎟️</span>
+            <h3 class="text-lg font-bold">Tokens einlösen</h3>
+          </div>
+          <button
+            onclick="closeTokenRedeemModal()"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div id="training-redeem-content" class="p-4">
           <!-- Content will be injected by training.js -->
         </div>
       </div>
