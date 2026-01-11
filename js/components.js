@@ -32,6 +32,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
     const moduleIcon = options.moduleIcon
       ? Icons.get(options.moduleIcon, 'w-5 h-5', '')
       : Icons.get('modules', 'w-5 h-5', '');
+    const idSuffix = '-lecture';
     header.innerHTML = `
       <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
         <div class="flex items-center justify-between">
@@ -65,10 +66,79 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               id="menu-toggle-lecture"
               class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
               title="Menü"
+              onclick="openOverlayMenu('${idSuffix}')"
             >
               ${Icons.get('menuDots')}
             </button>
           </div>
+        </div>
+      </div>
+      
+      <!-- Overlay Menu for Lecture View -->
+      <div id="overlay-menu${idSuffix}" class="hidden fixed inset-0 z-50">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black bg-opacity-50" onclick="closeOverlayMenu('${idSuffix}')"></div>
+        <!-- Menu Panel -->
+        <div class="absolute right-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
+          <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
+            <span class="font-bold text-lg">Menü</span>
+            <button onclick="closeOverlayMenu('${idSuffix}')" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
+              ${Icons.get('close', 'w-5 h-5')}
+            </button>
+          </div>
+          <nav class="p-4 space-y-2">
+            <!-- Theme Toggle -->
+            <button
+              id="theme-toggle-menu${idSuffix}"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+              onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));"
+            >
+              <span class="theme-icon-light hidden">${Icons.get('sun', 'w-5 h-5')}</span>
+              <span class="theme-icon-dark">${Icons.get('moon', 'w-5 h-5')}</span>
+              <span class="theme-text">Farbschema</span>
+            </button>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
+            <!-- Module -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('moduleMap');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('modules', 'w-5 h-5')}
+              <span>Module</span>
+            </button>
+            <!-- Progress -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('progress');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('chart', 'w-5 h-5')}
+              <span>Progress</span>
+            </button>
+            <!-- Achievements -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('achievements');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('trophy', 'w-5 h-5')}
+              <span>Achievements</span>
+            </button>
+            <!-- Map -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('map');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('map', 'w-5 h-5')}
+              <span>Modul-Map</span>
+            </button>
+            <!-- Tools -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('tools');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('cog', 'w-5 h-5')}
+              <span>Tools</span>
+            </button>
+          </nav>
         </div>
       </div>
     `;
