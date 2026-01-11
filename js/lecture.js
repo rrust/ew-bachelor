@@ -523,7 +523,10 @@ async function renderMermaidDiagram(item, container) {
   container.innerHTML = `
     <div class="mermaid-container">
       ${title}
-      <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg">
+      <button class="expand-btn hidden lg:block" title="Vergrößern" aria-label="Diagramm vergrößern">
+        ${Icons.get('expand', 'w-5 h-5')}
+      </button>
+      <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg overflow-x-auto">
         <div id="${diagramId}" class="mermaid-diagram"></div>
       </div>
     </div>
@@ -537,10 +540,61 @@ async function renderMermaidDiagram(item, container) {
       item.diagram
     );
     diagramDiv.innerHTML = svg;
+
+    // Add expand functionality
+    const expandBtn = container.querySelector('.expand-btn');
+    if (expandBtn) {
+      expandBtn.addEventListener('click', () => {
+        openExpandedDiagram(item.title || 'Diagramm', svg);
+      });
+    }
   } catch (error) {
     console.error('Error rendering Mermaid diagram:', error);
     container.innerHTML = `<p class="text-red-500">Fehler beim Rendern des Diagramms: ${error.message}</p>`;
   }
+}
+
+/**
+ * Opens a diagram in fullscreen/expanded mode
+ * @param {string} title - Diagram title
+ * @param {string} svg - SVG content
+ */
+function openExpandedDiagram(title, svg) {
+  const overlay = document.createElement('div');
+  overlay.className = 'expanded-overlay';
+  overlay.innerHTML = `
+    <div class="expanded-content">
+      <button class="close-expanded-btn">✕ Schließen</button>
+      <h2 class="text-2xl font-bold mb-4 pr-24">${title}</h2>
+      <div class="mermaid-diagram flex-1 flex items-center justify-center">${svg}</div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // Scale SVG to fit the container
+  const svgEl = overlay.querySelector('.mermaid-diagram svg');
+  if (svgEl) {
+    svgEl.removeAttribute('width');
+    svgEl.removeAttribute('height');
+    svgEl.style.width = 'auto';
+    svgEl.style.height = 'auto';
+    svgEl.style.maxWidth = '100%';
+    svgEl.style.maxHeight = 'calc(95vh - 8rem)';
+  }
+
+  // Close handlers
+  const closeBtn = overlay.querySelector('.close-expanded-btn');
+  closeBtn.addEventListener('click', () => overlay.remove());
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+  document.addEventListener('keydown', function escHandler(e) {
+    if (e.key === 'Escape') {
+      overlay.remove();
+      document.removeEventListener('keydown', escHandler);
+    }
+  });
 }
 
 /**
@@ -669,9 +723,7 @@ function showLectureOverview(
   if (existingDesc && existingDesc !== overviewDescription) {
     existingDesc.remove();
   }
-  const existingSources = overviewDescription.parentNode.querySelector(
-    '.bg-gray-50, .dark\\:bg-gray-800\\/50'
-  );
+  const existingSources = document.getElementById('lecture-overview-sources');
   if (existingSources) {
     existingSources.remove();
   }

@@ -251,3 +251,107 @@
 #lecture-item-display {
   will-change: transform, opacity;
 }
+
+/* Mermaid Diagram Styling */
+.mermaid-container {
+  position: relative;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+/* Expand button for diagrams and content */
+.expand-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dark .expand-btn {
+  background: rgba(31, 41, 55, 0.9);
+  border-color: #374151;
+}
+.expand-btn:hover {
+  background: #f3f4f6;
+  transform: scale(1.05);
+}
+.dark .expand-btn:hover {
+  background: #374151;
+}
+
+/* Fullscreen/Expanded mode */
+.expanded-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.expanded-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 95vw;
+  height: 95vh;
+  max-width: 1400px;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.dark .expanded-content {
+  background: #1f2937;
+}
+
+.expanded-content .mermaid-diagram {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.expanded-content .mermaid-diagram svg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(95vh - 8rem);
+  min-width: 0;
+}
+
+.close-expanded-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 10;
+}
+.close-expanded-btn:hover {
+  background: #dc2626;
+}
+
+/* Desktop: Larger default diagram size */
+@media (min-width: 1024px) {
+  .mermaid-diagram svg {
+    min-width: 500px;
+  }
+}
