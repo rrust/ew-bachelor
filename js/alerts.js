@@ -231,12 +231,20 @@ function renderAlertsView() {
 
     // Expiring soon
     if (alerts.expiringSoon.length > 0) {
+      const tokenStats = window.getTrainingStats
+        ? window.getTrainingStats()
+        : { tokens: 0 };
       html += `
         <div class="mb-6">
-          <h3 class="flex items-center gap-2 text-lg font-bold text-yellow-600 dark:text-yellow-400 mb-3">
-            ${Icons.get('clock', 'w-5 h-5')}
-            Läuft bald ab (${alerts.expiringSoon.length})
-          </h3>
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="flex items-center gap-2 text-lg font-bold text-yellow-600 dark:text-yellow-400">
+              ${Icons.get('clock', 'w-5 h-5')}
+              Läuft bald ab (${alerts.expiringSoon.length})
+            </h3>
+            <span class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400" title="Verfügbare Trainings-Tokens">
+              ${Icons.get('token', 'w-4 h-4')} ${tokenStats.tokens} Tokens
+            </span>
+          </div>
           <div class="space-y-3">
             ${alerts.expiringSoon
               .map((alert) => renderAlertCard(alert))
