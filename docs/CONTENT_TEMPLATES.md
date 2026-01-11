@@ -131,12 +131,18 @@ Weiterer Inhalt...
 | `id`                | String | Eindeutige ID (z.B. `'zellbiologie-cheatsheet'`)  |
 | `title`             | String | Anzeigename                                       |
 | `description`       | String | Kurzbeschreibung                                  |
-| `icon`              | String | Icon-Name (z.B. `'clipboard'`, `'atom'`)          |
+| `icon`              | String | Icon-Name (siehe gültige Icons unten)             |
 | `contentType`       | String | Immer `'markdown'`                                |
 | `unlockCondition`   | Object | Bedingung zum Freischalten (siehe unten)          |
 | `defaultDuration`   | Number | Gültigkeitsdauer in Tagen (Standard: 30)          |
 | `extensionDuration` | Number | Verlängerung bei korrekter Antwort (Standard: 14) |
 | `warningThreshold`  | Number | Tage vor Ablauf für Warnung (Standard: 7)         |
+
+**Gültige Icon-Namen:**
+
+`search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `chart`, `cog`, `map`, `trophy`, `phone`, `phoneDownload`, `checkCircle`, `book`, `zoomIn`, `zoomOut`, `reset`, `externalLink`, `lock`, `unlock`, `clock`, `hourglass`, `document`, `clipboard`, `apple`, `beaker`, `graduationCap`, `download`, `upload`, `hourglassEmpty`, `check`, `rocket`, `fire`, `muscle`, `star`, `wave`
+
+⚠️ **Hinweis:** `atom` ist KEIN gültiger Icon-Name! Für Chemie-Inhalte `beaker` verwenden.
 
 **unlockCondition-Objekt:**
 
@@ -262,6 +268,35 @@ correctAnswer: 'Antwort B'
 
 **Erklärung:** Detaillierte Erklärung, warum diese Antwort richtig ist.
 ```
+
+### Self-Assessment Checkliste (ohne Quiz)
+
+Für Selbsteinschätzungen am Ende eines Themenblocks, bei denen Studierende ihren Lernfortschritt selbst überprüfen:
+
+```markdown
+---
+type: 'self-assessment'
+topic: 'Thema der Vorlesung'
+question: 'Kannst du die wichtigsten Konzepte erklären?'
+checkpoints:
+  - 'Ich kann Konzept A erklären'
+  - 'Ich verstehe den Unterschied zwischen X und Y'
+  - 'Ich kann Beispiele für Z nennen'
+successMessage: 'Sehr gut! Du hast dieses Thema verstanden.'
+reviewHint: 'Falls du unsicher bist, lies den Abschnitt noch einmal durch.'
+---
+```
+
+**Felder:**
+
+| Feld             | Typ    | Pflicht | Beschreibung                                   |
+| ---------------- | ------ | ------- | ---------------------------------------------- |
+| `type`           | String | ✓       | `'self-assessment'`                            |
+| `question`       | String | ✓       | Hauptfrage für die Selbsteinschätzung          |
+| `checkpoints`    | Array  | ✓       | Liste von Aussagen zum Abhaken                 |
+| `topic`          | String |         | Themenbereich                                  |
+| `successMessage` | String |         | Nachricht bei vollständigem Abhaken            |
+| `reviewHint`     | String |         | Hinweis, falls nicht alle Punkte abgehakt sind |
 
 ## Learning Content (in lecture.md)
 

@@ -7,7 +7,7 @@ options:
   - 'Halogene kommen als zweiatomige Moleküle vor'
   - 'Alkalimetalle sind reaktionsträge'
   - 'Halogene bilden -1 Ionen'
-correctAnswer:
+correctAnswers:
   - 'Alkalimetalle bilden +1 Ionen'
   - 'Halogene kommen als zweiatomige Moleküle vor'
   - 'Halogene bilden -1 Ionen'

@@ -7,7 +7,7 @@ options:
   - 'Chlorid (Cl⁻)'
   - 'Ammonium (NH₄⁺)'
   - 'Nitrat (NO₃⁻)'
-correctAnswer:
+correctAnswers:
   - 'Sulfat (SO₄²⁻)'
   - 'Ammonium (NH₄⁺)'
   - 'Nitrat (NO₃⁻)'

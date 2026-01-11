@@ -3,7 +3,7 @@ type: 'achievement'
 id: 'atome-formeln-cheatsheet'
 title: 'Atome & Stöchiometrie Cheat-Sheet'
 description: 'Kompakte Übersicht: Subatomare Teilchen, Isotope, PSE, Ionen, Mol-Berechnungen und Nomenklatur'
-icon: 'atom'
+icon: 'beaker'
 contentType: 'markdown'
 unlockCondition:
   type: 'lecture-quiz-gold'
