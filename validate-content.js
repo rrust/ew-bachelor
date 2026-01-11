@@ -163,6 +163,7 @@ const REQUIRED_FIELDS = {
   'multiple-choice': ['type', 'question', 'options', 'correctAnswer'],
   'multiple-choice-multiple': ['type', 'question', 'options', 'correctAnswers'],
   'self-assessment-mc': ['type', 'question', 'options', 'correctAnswer'],
+  'self-assessment': ['type', 'question', 'checkpoints'],
   'learning-content': ['type'],
   'youtube-video': ['type', 'url'],
   'external-video': ['type', 'url'],
