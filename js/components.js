@@ -128,6 +128,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               ${Icons.get('trophy', 'w-5 h-5')}
               <span>Achievements</span>
             </button>
+            <!-- Training -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash='#/training';"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('training', 'w-5 h-5')}
+              <span>Training</span>
+            </button>
             <!-- Map -->
             <button
               onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('map');"
@@ -187,6 +195,18 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           id="header-dev-badge${idSuffix}"
           class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
         >DEV</a>
+        <!-- Training Mode Button -->
+        <button
+          onclick="window.location.hash='#/training'"
+          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+            view === 'training'
+              ? 'text-blue-600 dark:text-blue-400'
+              : 'text-gray-600 dark:text-gray-400'
+          }"
+          title="Trainings-Modus"
+        >
+          ${Icons.get('training')}
+        </button>
         <!-- Streak Display -->
         ${
           showStreak
@@ -315,6 +335,18 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           >
             ${Icons.get('trophy', 'w-5 h-5')}
             <span>Achievements</span>
+          </button>
+          <!-- Training -->
+          <button
+            onclick="closeOverlayMenu('${idSuffix}'); window.location.hash='#/training';"
+            class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left ${
+              view === 'training'
+                ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+                : ''
+            }"
+          >
+            ${Icons.get('training', 'w-5 h-5')}
+            <span>Training</span>
           </button>
           <!-- Map -->
           <button

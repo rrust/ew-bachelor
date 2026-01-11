@@ -167,7 +167,11 @@ const Icons = (function () {
 
     // Edit/Write icons
     pencil:
-      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>'
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>',
+
+    // Training mode icon (dumbbell)
+    training:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h2m12 0h2M6 7v10M18 7v10M6 12h12M4 17h2m12 0h2M9 7v10M15 7v10"></path>'
   };
 
   // Icons with custom viewBox (different from default 24x24)

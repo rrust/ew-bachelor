@@ -794,6 +794,67 @@
       </div>
     </div>
 
+    <!-- View for Training Mode -->
+    <div id="training-view" style="display: none">
+      <!-- Header injected by components.js -->
+
+      <div class="container mx-auto px-4 md:px-8 py-8">
+        <div class="mb-6">
+          <h2 class="text-2xl md:text-3xl font-bold flex items-center gap-3">
+            <span
+              data-icon="training"
+              data-icon-class="w-8 h-8 text-blue-500"
+            ></span>
+            Trainings-Modus
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">
+            Zufällige Fragen aus deinen absolvierten Tests zur Wiederholung
+          </p>
+        </div>
+
+        <div id="training-content">
+          <!-- Content will be rendered by training.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Cheatsheet Modal -->
+    <div
+      id="training-cheatsheet-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 flex-shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <span
+              data-icon="clipboard"
+              data-icon-class="w-5 h-5 text-yellow-500"
+            ></span>
+            <h3 id="training-cheatsheet-title" class="text-lg font-bold">
+              Spickzettel
+            </h3>
+          </div>
+          <button
+            id="close-training-cheatsheet"
+            onclick="closeTrainingCheatSheet()"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div
+          id="training-cheatsheet-content"
+          class="p-6 overflow-y-auto prose dark:prose-invert max-w-none"
+        >
+          <!-- Content will be injected by training.js -->
+        </div>
+      </div>
+    </div>
+
     <!-- Quick Renewal Modal -->
     <div
       id="quick-renewal-modal"
@@ -1102,6 +1163,7 @@
     <script src="js/validator.js"></script>
     <script src="js/dev-mode.js"></script>
     <script src="js/snapshots.js"></script>
+    <script src="js/training.js"></script>
     <!-- Feature modules -->
     <script src="js/quiz.js"></script>
     <script src="js/lecture.js"></script>

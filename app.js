@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     map: document.getElementById('map-view'),
     progress: document.getElementById('progress-view'),
     alerts: document.getElementById('alerts-view'),
+    training: document.getElementById('training-view'),
     search: document.getElementById('search-view')
   };
 
@@ -187,6 +188,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.renderAlertsView();
       }
       return true;
+    } else if (route.view === 'training') {
+      updateGreeting();
+      showView('training');
+      if (window.initTrainingView) {
+        window.initTrainingView();
+      }
+      return true;
     } else if (route.view === 'search') {
       updateGreeting();
       showView('search');
@@ -258,6 +266,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
       updateURL('/tools', 'Tools');
     }
+
+    // Special handling for training - initialize training view
+    if (viewId === 'training') {
+      if (window.initTrainingView) {
+        window.initTrainingView();
+      }
+      updateURL('/training', 'Training');
+    }
   }
 
   // Expose showView globally for menu navigation
@@ -301,6 +317,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
     injectHeader('alerts-view', 'alerts');
+    injectHeader('training-view', 'training');
     injectHeader('search-view', 'search');
   }
 
@@ -391,6 +408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('map-view', 'map');
     injectHeader('progress-view', 'progress');
     injectHeader('alerts-view', 'alerts');
+    injectHeader('training-view', 'training');
     injectHeader('search-view', 'search');
 
     // 4. Determine if user needs to enter name or select study

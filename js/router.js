@@ -73,6 +73,8 @@ function parseURL() {
     route.view = 'progress';
   } else if (parts[offset] === 'alerts') {
     route.view = 'alerts';
+  } else if (parts[offset] === 'training') {
+    route.view = 'training';
   } else if (parts[offset] === 'search') {
     route.view = 'search';
     if (parts[offset + 1]) {
@@ -141,6 +143,7 @@ function isValidRoute(viewName) {
     'map',
     'progress',
     'alerts',
+    'training',
     'search',
     'achievements',
     'studySelection',

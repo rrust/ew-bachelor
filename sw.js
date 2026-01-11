@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.6.3';
+const CACHE_VERSION = 'v1.6.4';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -39,6 +39,7 @@ const STATIC_ASSETS = [
   './js/validator.js',
   './js/dev-mode.js',
   './js/snapshots.js',
+  './js/training.js',
   './content/studies.json',
   './manifest.json'
 ];
