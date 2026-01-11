@@ -76,26 +76,34 @@ function showAlertNotification(alerts) {
     body = alerts.expiringSoon.map((a) => a.title).join(', ');
   }
 
+  console.log('[Notifications] Creating notification:', { title, body, icon });
+
   // Create and show notification
-  const notification = new Notification(title, {
-    body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
-    icon: icon,
-    badge: icon,
-    tag: 'achievement-alerts', // Prevents duplicate notifications
-    requireInteraction: false,
-    silent: false
-  });
+  try {
+    const notification = new Notification(title, {
+      body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
+      icon: icon,
+      badge: icon,
+      tag: 'achievement-alerts', // Prevents duplicate notifications
+      requireInteraction: false,
+      silent: false
+    });
 
-  // Handle click - open alerts page
-  notification.onclick = function () {
-    window.focus();
-    window.location.hash = '#/alerts';
-    notification.close();
-  };
+    console.log('[Notifications] Notification created:', notification);
 
-  // Remember that we showed a notification today
-  localStorage.setItem('lastAlertNotification', today);
-  console.log('[Notifications] Showed alert notification');
+    // Handle click - open alerts page
+    notification.onclick = function () {
+      window.focus();
+      window.location.hash = '#/alerts';
+      notification.close();
+    };
+
+    // Remember that we showed a notification today
+    localStorage.setItem('lastAlertNotification', today);
+    console.log('[Notifications] Showed alert notification successfully');
+  } catch (error) {
+    console.error('[Notifications] Failed to create notification:', error);
+  }
 }
 
 /**
