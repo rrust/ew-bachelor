@@ -68,19 +68,23 @@ docs/               # Documentation
 2. **Live Server auto-reloads** the browser
 3. **Test in browser** manually
 4. **Validate content** if you changed Markdown:
-   - Open `validate-content.html` in browser, or
-   - Header → Tools → Content Validator
-5. **Lint markdown**: `npx markdownlint-cli2 "**/*.md"` (no --fix!)
-6. **Commit and push**
+   - In-App: Tools menu → "Inhalte validieren"
+5. **Validate views** if you added a new view: `node validate-views.js`
+6. **Lint markdown**: `npx markdownlint-cli2 "**/*.md"` (no --fix!)
+7. **Commit and push**
 
 ## Key Files
 
 | File                                  | Purpose                                            |
 | ------------------------------------- | -------------------------------------------------- |
 | `app.js`                              | Main orchestration, passes state to modules        |
+| `js/router.js`                        | URL routing and navigation                         |
 | `js/lecture.js`                       | Lecture player, content rendering                  |
 | `js/quiz.js`                          | Quiz logic, scoring                                |
+| `js/alerts.js`                        | Achievement expiration alerts and renewal          |
+| `js/notifications.js`                 | Local notifications and app badge                  |
 | `js/parser.js`                        | Parses Markdown content                            |
+| `js/snapshots.js`                     | Progress backup/restore (Dev Mode)                 |
 | `content/{studyId}/modules.json`      | Module metadata per study                          |
 | `content/{studyId}/content-list.json` | Registry of content files per study                |
 | `content/studies.json`                | Master list of all study programs (auto-generated) |
@@ -104,10 +108,19 @@ The codebase follows a simple pattern:
 
 | Tool                        | Purpose                                      |
 | --------------------------- | -------------------------------------------- |
-| `validate-content.html`     | Browser-based content validator              |
+| `validate-views.js`         | CLI validator for view registration          |
 | `validate-content.js`       | CLI content validator (no npm deps)          |
 | `generate-content-list.js`  | Generates content-list.json and modules.json |
 | `generate-test-progress.js` | Creates mock progress data for testing       |
+
+### In-App Dev Mode
+
+Enable Dev Mode in the app (Tools → Enable Dev Mode) for:
+
+- **Test Data Loading** - Load predefined progress states
+- **Snapshot Management** - Save/restore progress states
+- **Demo Alerts** - Generate test alerts for debugging
+- **Content Validator** - Validate all content files
 
 ### Testing Progress States
 
@@ -115,8 +128,6 @@ The codebase follows a simple pattern:
 # Generate test progress data
 node generate-test-progress.js
 
-# Import via browser: Tools → Import Progress
-# Select a file from test-data/ folder
+# Or use in-app: Dev Mode → Test-Daten laden
+# Select: Fresh, Beginner, Intermediate, Advanced, Complete, Mixed, Alerts
 ```
-
-Scenarios: `fresh`, `beginner`, `intermediate`, `advanced`, `complete`, `mixed`

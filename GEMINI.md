@@ -6,7 +6,7 @@ Instructions for AI coding agents working on this project.
 
 1. **Keep it simple** - No frameworks, no build step, no TypeScript
 2. **Work autonomously** - Implement features fully, then announce ready for testing
-3. **Validate content** - Always run `validate-content.html` after content changes
+3. **Validate content** - Use Tools menu → "Inhalte validieren" in the app
 4. **Don't over-engineer** - This is maintained by a non-engineer (nutrition science student)
 5. **Debug with evidence** - Never guess at fixes; check console/logs first
 
@@ -73,12 +73,12 @@ Use conventional commit format:
 
 1. ✅ `index.html` - Add `<div id="newview-view">` with content
 2. ✅ `app.js` - Add to `views` object (~line 23): `newview: document.getElementById('newview-view')`
-3. ✅ `app.js` - Add route parsing (~line 160): `else if (parts[offset] === 'newview') { route.view = 'newview'; }`
-4. ✅ `app.js` - Add route handling (~line 250): `else if (route.view === 'newview') { showView('newview'); ... }`
+3. ✅ `js/router.js` - Add route parsing: `else if (parts[offset] === 'newview') { route.view = 'newview'; }`
+4. ✅ `app.js` - Add route handling in `navigateFromURL()`: `else if (route.view === 'newview') { showView('newview'); ... }`
 5. ✅ `app.js` - Add header injection in `reinjectHeaders()` and initial setup
 6. ✅ `sw.js` - Add any new JS files to cache
 
-**Quick check command:** `grep -c "newview" app.js index.html` should show matches in both files.
+**Validate with:** `node validate-views.js`
 
 ## Language
 
