@@ -284,17 +284,30 @@ function finishQuiz(
     (quizState.userScore / quizState.data.questions.length) * 100;
   updateLectureProgress(currentModuleId, currentLectureId, finalScore);
 
+  // Get badge info
+  const badgeInfo = window.getBadgeInfo
+    ? window.getBadgeInfo(finalScore)
+    : null;
+  const badge = badgeInfo ? badgeInfo.class : 'none';
+
   // Create automatic snapshot after quiz completion
   if (window.createSnapshot) {
-    const badgeInfo = window.getBadgeInfo
-      ? window.getBadgeInfo(finalScore)
-      : null;
     const badgeName = badgeInfo ? badgeInfo.text : '';
     const topicName = lectureTopic || currentLectureId;
     window.createSnapshot(
       `Quiz: ${topicName} (${Math.round(finalScore)}% - ${badgeName})`,
       'quiz'
     );
+  }
+
+  // Check if this quiz completes an achievement renewal
+  if (window.checkRenewalAfterQuiz) {
+    window.checkRenewalAfterQuiz(currentModuleId, currentLectureId, badge);
+  }
+
+  // Update alert badge after quiz (in case achievement status changed)
+  if (window.updateAlertBadge) {
+    window.updateAlertBadge();
   }
 
   // Show results with the just-completed score (no retake option)

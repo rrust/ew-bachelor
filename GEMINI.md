@@ -67,6 +67,19 @@ Use conventional commit format:
 - Files numbered `NN-name.md` for ordering
 - Always validate before committing
 
+## Adding New Views
+
+**When adding a new view (e.g., alerts, search, settings), you MUST update ALL of these:**
+
+1. ✅ `index.html` - Add `<div id="newview-view">` with content
+2. ✅ `app.js` - Add to `views` object (~line 23): `newview: document.getElementById('newview-view')`
+3. ✅ `app.js` - Add route parsing (~line 160): `else if (parts[offset] === 'newview') { route.view = 'newview'; }`
+4. ✅ `app.js` - Add route handling (~line 250): `else if (route.view === 'newview') { showView('newview'); ... }`
+5. ✅ `app.js` - Add header injection in `reinjectHeaders()` and initial setup
+6. ✅ `sw.js` - Add any new JS files to cache
+
+**Quick check command:** `grep -c "newview" app.js index.html` should show matches in both files.
+
 ## Language
 
 - **Code/comments:** English
@@ -78,11 +91,10 @@ Use conventional commit format:
 Before completing any task:
 
 1. ✅ Test in browser (Live Server auto-reloads)
-2. ✅ Validate content: Open `validate-content.html` in browser (NOT via node/shell!)
-3. ✅ Lint markdown: `npx markdownlint-cli2 "**/*.md"` (NO --fix flag!)
-4. ✅ Check for console errors
-
-**Note:** The content validator is browser-only. Do NOT try to run it via Node.js.
+2. ✅ Validate content: Use Tools menu → "Inhalte validieren" in the app
+3. ✅ Validate views: `node validate-views.js`
+4. ✅ Lint markdown: `npx markdownlint-cli2 "**/*.md"` (NO --fix flag!)
+5. ✅ Check for console errors
 
 ## Debugging Protocol
 

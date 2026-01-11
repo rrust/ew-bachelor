@@ -2,16 +2,17 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Validate Content (Browser)",
+      "label": "Validate Views",
       "type": "shell",
-      "command": "open",
-      "args": ["validate-content.html"],
+      "command": "node",
+      "args": ["validate-views.js"],
       "group": {
         "kind": "test",
         "isDefault": false
       },
       "presentation": {
-        "reveal": "never"
+        "reveal": "always",
+        "panel": "new"
       },
       "problemMatcher": []
     },
