@@ -18,6 +18,11 @@
       "rescueCorrect": 0,
       "rescueTotal": 0
     },
+    "training": {
+      "tokens": 12,
+      "totalAnswered": 180,
+      "totalRounds": 18
+    },
     "modules": {}
   }
 }

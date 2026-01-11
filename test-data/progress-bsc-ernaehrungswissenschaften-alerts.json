@@ -10,6 +10,11 @@
   "progress": {
     "userName": "AlertTest",
     "startedAt": "2025-11-01T10:00:00.000Z",
+    "training": {
+      "tokens": 9,
+      "totalAnswered": 150,
+      "totalRounds": 15
+    },
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "completed",

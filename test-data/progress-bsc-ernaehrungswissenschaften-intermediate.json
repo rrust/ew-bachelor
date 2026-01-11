@@ -18,6 +18,11 @@
       "rescueCorrect": 0,
       "rescueTotal": 0
     },
+    "training": {
+      "tokens": 5,
+      "totalAnswered": 80,
+      "totalRounds": 8
+    },
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",

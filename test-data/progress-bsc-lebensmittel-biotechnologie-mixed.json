@@ -9,6 +9,11 @@
   "progress": {
     "userName": "TestUser",
     "startedAt": "2025-08-14T22:45:37.223Z",
+    "training": {
+      "tokens": 7,
+      "totalAnswered": 110,
+      "totalRounds": 11
+    },
     "modules": {}
   }
 }
