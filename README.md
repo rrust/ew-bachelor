@@ -7,10 +7,6 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 - BSc Ernährungswissenschaften (Uni Wien)
 - BSc Lebensmittel- und Biotechnologie (BOKU) - *in Entwicklung*
 
-## 🌐 Live App
-
-**[https://rrust.github.io/ew-bachelor/](https://rrust.github.io/ew-bachelor/)**
-
 ## Features
 
 - 🎓 Multi-Study Support – mehrere Studiengänge in einer App
@@ -25,11 +21,21 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 - 🗺️ Studienstruktur-Map zur Übersicht
 - 🌓 Dark Mode Support
 
-## 📱 Mobile Installation
+## Browser App
 
-Die App kann auf dem Smartphone installiert werden und sendet Push-Benachrichtigungen bei ablaufenden Achievements.
+**[https://rrust.github.io/ew-bachelor/](https://rrust.github.io/ew-bachelor/)**
 
-→ [docs/MOBILE_INSTALLATION.md](docs/MOBILE_INSTALLATION.md) - Installationsanleitung für Android & iOS
+## App Installation
+
+Die App kann als Progressive Web App (PWA) auf allen Geräten installiert werden:
+
+- **Smartphone** (Android, iOS)
+- **Tablet** (Android, iPad)
+- **Desktop** (Windows, macOS, Linux)
+
+Mit Push-Benachrichtigungen wirst du an ablaufende Achievements erinnert.
+
+→ [docs/APP_INSTALLATION.md](docs/APP_INSTALLATION.md) - Installationsanleitung für alle Plattformen
 
 ## Content Development
 
