@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Dichte und Messung'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '342, 346-347'
 ---
 
 ## Dichte (Density)

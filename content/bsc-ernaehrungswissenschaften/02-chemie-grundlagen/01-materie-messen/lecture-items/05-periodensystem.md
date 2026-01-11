@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Atome und Elemente'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '71, 73, 76, 146-149, 166-174'
 ---
 
 ## Das Periodensystem der Elemente (PSE)

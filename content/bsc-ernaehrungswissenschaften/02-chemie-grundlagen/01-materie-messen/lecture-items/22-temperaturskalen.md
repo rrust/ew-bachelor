@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Dichte und Messung'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '512-535, 593-595'
 ---
 
 ## Temperaturskalen

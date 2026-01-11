@@ -48,11 +48,16 @@ async function showAlertNotification(alerts) {
   if (Notification.permission !== 'granted') return;
   if (!alerts || alerts.total === 0) return;
 
+  // Check if user has disabled notifications via toggle
+  const userEnabled = localStorage.getItem('pushNotificationsEnabled');
+  if (userEnabled === 'false') {
+    return;
+  }
+
   // Don't spam - check if we already showed a notification today
   const lastNotification = localStorage.getItem('lastAlertNotification');
   const today = new Date().toDateString();
   if (lastNotification === today) {
-    console.log('[Notifications] Already showed notification today');
     return;
   }
 

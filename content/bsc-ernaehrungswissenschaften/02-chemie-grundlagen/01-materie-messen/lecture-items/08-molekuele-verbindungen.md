@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Atome und Elemente'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '221, 224-230'
 ---
 
 ## Moleküle und Verbindungen

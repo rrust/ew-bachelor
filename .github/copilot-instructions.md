@@ -9,6 +9,17 @@
 - **Validate:** Open `validate-content.html` in browser (NOT via node/shell!)
 - **Lint:** `npx markdownlint-cli2 "**/*.md"` (no --fix!)
 
+## Content Generation
+
+When generating content from `studies-material/` files:
+
+1. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
+2. **Extract sources** (Titel + Link) from material file header
+3. **Add `sources`** array to `lecture.md`
+4. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
+5. **Remove citation markers** from output text
+6. **Validate** with Tools → "Inhalte validieren"
+
 ## Git Workflow
 
 - **Never commit to main** - Always use feature branches

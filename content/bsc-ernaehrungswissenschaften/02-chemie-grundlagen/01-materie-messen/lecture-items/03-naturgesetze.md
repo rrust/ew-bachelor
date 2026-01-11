@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Einführung in die Chemie'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '59-67'
 ---
 
 ## Fundamentale Naturgesetze

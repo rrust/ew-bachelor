@@ -9,6 +9,15 @@
   "progress": {
     "userName": "TestUser",
     "startedAt": "2025-10-12T22:45:37.223Z",
+    "streak": {
+      "current": 5,
+      "lastActivityDate": "2026-01-11T10:00:00.000Z",
+      "totalDays": 12,
+      "longestStreak": 7,
+      "rescueMode": false,
+      "rescueCorrect": 0,
+      "rescueTotal": 0
+    },
     "modules": {}
   }
 }
