@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.3.3';
+const CACHE_VERSION = 'v1.3.4';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -215,4 +215,30 @@ self.addEventListener('message', (event) => {
   if (event.data === 'skipWaiting') {
     self.skipWaiting();
   }
+});
+
+// Handle notification clicks
+self.addEventListener('notificationclick', (event) => {
+  console.log('[SW] Notification clicked:', event.notification.tag);
+  event.notification.close();
+
+  // Get the URL from notification data
+  const urlToOpen = event.notification.data?.url || '#/alerts';
+
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+      // If a window is already open, focus it and navigate
+      for (const client of clientList) {
+        if ('focus' in client) {
+          client.focus();
+          client.navigate(self.location.origin + '/' + urlToOpen);
+          return;
+        }
+      }
+      // Otherwise open a new window
+      if (clients.openWindow) {
+        return clients.openWindow('/' + urlToOpen);
+      }
+    })
+  );
 });

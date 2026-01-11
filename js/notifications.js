@@ -43,7 +43,7 @@ async function requestNotificationPermission() {
  * Show a notification for achievement alerts
  * @param {Object} alerts - The alerts object from getAchievementAlerts()
  */
-function showAlertNotification(alerts) {
+async function showAlertNotification(alerts) {
   if (!isNotificationSupported()) return;
   if (Notification.permission !== 'granted') return;
   if (!alerts || alerts.total === 0) return;
@@ -78,27 +78,46 @@ function showAlertNotification(alerts) {
 
   console.log('[Notifications] Creating notification:', { title, body, icon });
 
-  // Create and show notification
+  // Try Service Worker notification first (required for Android PWA)
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    try {
+      const registration = await navigator.serviceWorker.ready;
+      await registration.showNotification(title, {
+        body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
+        icon: icon,
+        badge: icon,
+        tag: 'achievement-alerts',
+        requireInteraction: false,
+        silent: false,
+        data: { url: '#/alerts' }
+      });
+      console.log('[Notifications] SW notification shown successfully');
+      localStorage.setItem('lastAlertNotification', today);
+      return;
+    } catch (swError) {
+      console.log('[Notifications] SW notification failed, trying fallback:', swError);
+    }
+  }
+
+  // Fallback to regular Notification API (works on desktop)
   try {
     const notification = new Notification(title, {
       body: body.substring(0, 100) + (body.length > 100 ? '...' : ''),
       icon: icon,
       badge: icon,
-      tag: 'achievement-alerts', // Prevents duplicate notifications
+      tag: 'achievement-alerts',
       requireInteraction: false,
       silent: false
     });
 
     console.log('[Notifications] Notification created:', notification);
 
-    // Handle click - open alerts page
     notification.onclick = function () {
       window.focus();
       window.location.hash = '#/alerts';
       notification.close();
     };
 
-    // Remember that we showed a notification today
     localStorage.setItem('lastAlertNotification', today);
     console.log('[Notifications] Showed alert notification successfully');
   } catch (error) {
