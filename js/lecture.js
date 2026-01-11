@@ -669,7 +669,9 @@ function showLectureOverview(
   if (existingDesc && existingDesc !== overviewDescription) {
     existingDesc.remove();
   }
-  const existingSources = overviewDescription.parentNode.querySelector('.bg-gray-50, .dark\\:bg-gray-800\\/50');
+  const existingSources = overviewDescription.parentNode.querySelector(
+    '.bg-gray-50, .dark\\:bg-gray-800\\/50'
+  );
   if (existingSources) {
     existingSources.remove();
   }
@@ -694,20 +696,26 @@ function showLectureOverview(
   if (lecture?.sources && lecture.sources.length > 0) {
     const sourcesContainer = document.createElement('div');
     sourcesContainer.id = 'lecture-overview-sources';
-    sourcesContainer.className = 'mb-6 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700';
-    
+    sourcesContainer.className =
+      'mb-6 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700';
+
     const sourceLinks = lecture.sources
-      .filter(s => s.url)
-      .map(s => {
+      .filter((s) => s.url)
+      .map((s) => {
         const icon = s.type === 'pdf' ? '📄' : s.type === 'video' ? '🎬' : '🔗';
-        return `<a href="${s.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors text-sm">
+        return `<a href="${
+          s.url
+        }" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors text-sm">
           <span>${icon}</span>
           <span class="font-medium">${s.title}</span>
-          <span class="text-gray-400">${Icons.get('externalLink', 'w-3 h-3')}</span>
+          <span class="text-gray-400">${Icons.get(
+            'externalLink',
+            'w-3 h-3'
+          )}</span>
         </a>`;
       })
       .join('');
-    
+
     if (sourceLinks) {
       sourcesContainer.innerHTML = `
         <p class="text-sm font-medium text-gray-600 dark:text-gray-400 mb-3">📚 Vorlesungsunterlagen</p>
@@ -715,13 +723,20 @@ function showLectureOverview(
           ${sourceLinks}
         </div>
       `;
-      
+
       // Insert after description
-      const descContainer = overviewDescription.parentNode.querySelector('.prose');
+      const descContainer =
+        overviewDescription.parentNode.querySelector('.prose');
       if (descContainer) {
-        descContainer.parentNode.insertBefore(sourcesContainer, descContainer.nextSibling);
+        descContainer.parentNode.insertBefore(
+          sourcesContainer,
+          descContainer.nextSibling
+        );
       } else {
-        overviewDescription.parentNode.insertBefore(sourcesContainer, overviewDescription.nextSibling);
+        overviewDescription.parentNode.insertBefore(
+          sourcesContainer,
+          overviewDescription.nextSibling
+        );
       }
     }
   }
@@ -766,7 +781,9 @@ function showLectureOverview(
     );
 
   // Build description with estimated time if available
-  let descriptionText = `${totalItems} Schritte insgesamt • ${descParts.join(' • ')}`;
+  let descriptionText = `${totalItems} Schritte insgesamt • ${descParts.join(
+    ' • '
+  )}`;
   if (lecture?.estimatedTime && lecture.estimatedTime > 0) {
     descriptionText = `⏱️ ca. ${lecture.estimatedTime} Min. • ${descriptionText}`;
   }
