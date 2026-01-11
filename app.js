@@ -458,6 +458,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       window.initGlobalSearch();
     }
 
+    // Initialize streak system
+    if (window.initStreak) {
+      window.initStreak();
+    }
+
     // Initialize alerts badge
     if (window.updateAlertBadge) {
       window.updateAlertBadge();

@@ -154,6 +154,10 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Only show greeting for non-search views
   const showGreeting = view !== 'search';
 
+  // Get streak info for display
+  const streakInfo = window.getStreakDisplayInfo ? window.getStreakDisplayInfo() : null;
+  const showStreak = streakInfo && window.hasCompletedTests && window.hasCompletedTests();
+
   header.innerHTML = `
     <div class="container mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
       <a href="#/modules" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
@@ -179,6 +183,17 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           id="header-dev-badge${idSuffix}"
           class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
         >DEV</span>
+        <!-- Streak Display -->
+        ${showStreak ? `
+        <button
+          onclick="window.location.hash='#/alerts'"
+          class="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200"
+          title="${streakInfo.statusText}"
+        >
+          <span class="${streakInfo.color}">${Icons.get('fire', 'w-4 h-4')}</span>
+          <span id="streak-badge${idSuffix}" class="text-sm font-bold ${streakInfo.color}">${streakInfo.current}</span>
+        </button>
+        ` : ''}
         <!-- Alerts Icon (Bell) -->
         <button
           id="nav-alerts${idSuffix}"

@@ -189,6 +189,9 @@ function renderAlertsView() {
     `;
   }
 
+  // Streak section
+  html += renderStreakSection();
+
   if (alerts.total === 0) {
     html += `
       <div class="text-center py-12 text-gray-500 dark:text-gray-400">
@@ -938,12 +941,396 @@ function updateAppBadgeFromAlerts() {
   }
 }
 
+/**
+ * Render the streak section for alerts view
+ */
+function renderStreakSection() {
+  if (!window.getStreakDisplayInfo || !window.hasCompletedTests) {
+    return '';
+  }
+  
+  // Check if streak is available
+  if (!window.hasCompletedTests()) {
+    return `
+      <div class="bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-lg p-4 mb-6">
+        <div class="flex items-center gap-3">
+          ${Icons.get('fire', 'w-6 h-6', 'text-gray-300 dark:text-gray-600')}
+          <div>
+            <p class="font-medium text-gray-500 dark:text-gray-400">Tägliche Streak-Challenge</p>
+            <p class="text-sm text-gray-400 dark:text-gray-500">Schließe erst einen Test ab um Streaks zu starten</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  const info = window.getStreakDisplayInfo();
+  
+  // Build streak progress bar
+  const progressPercent = (info.current / info.max) * 100;
+  
+  let actionButton = '';
+  let cardClass = '';
+  let statusIcon = '';
+  
+  switch (info.status) {
+    case 'active':
+      cardClass = 'bg-green-50 dark:bg-green-900/20 border-green-300 dark:border-green-700';
+      statusIcon = Icons.get('checkCircle', 'w-5 h-5', 'text-green-500');
+      break;
+    case 'pending':
+      cardClass = 'bg-orange-50 dark:bg-orange-900/20 border-orange-300 dark:border-orange-700';
+      actionButton = `
+        <button
+          onclick="openStreakChallengeModal()"
+          class="flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-lg transition-colors"
+        >
+          ${Icons.get('fire', 'w-4 h-4')}
+          Challenge starten
+        </button>
+      `;
+      break;
+    case 'at-risk':
+      cardClass = 'bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-700';
+      actionButton = `
+        <button
+          onclick="openStreakRescueModal()"
+          class="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white text-sm font-medium rounded-lg transition-colors"
+        >
+          ${Icons.get('exclamation', 'w-4 h-4')}
+          Streak retten!
+        </button>
+      `;
+      break;
+    case 'lost':
+      cardClass = 'bg-gray-50 dark:bg-gray-800/50 border-gray-200 dark:border-gray-700';
+      actionButton = `
+        <button
+          onclick="openStreakChallengeModal()"
+          class="flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-lg transition-colors"
+        >
+          ${Icons.get('fire', 'w-4 h-4')}
+          Neu starten
+        </button>
+      `;
+      break;
+  }
+  
+  return `
+    <div class="border ${cardClass} rounded-lg p-4 mb-6">
+      <div class="flex items-start justify-between gap-4 mb-3">
+        <div class="flex items-center gap-3">
+          <span class="${info.color}">${Icons.get('fire', 'w-8 h-8')}</span>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-2xl font-bold ${info.color}">${info.current}</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">/ ${info.max} Tage</span>
+              ${statusIcon}
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">${info.statusText}</p>
+          </div>
+        </div>
+        ${actionButton}
+      </div>
+      
+      <!-- Progress bar -->
+      <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+        <div 
+          class="h-2 rounded-full transition-all duration-500 ${info.current > 0 ? 'bg-gradient-to-r from-orange-400 to-orange-600' : 'bg-gray-300 dark:bg-gray-600'}"
+          style="width: ${progressPercent}%"
+        ></div>
+      </div>
+      
+      ${info.longestStreak > 0 ? `
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+          Längster Streak: ${info.longestStreak} Tage • Gesamt: ${info.totalDays} Tage
+        </p>
+      ` : ''}
+    </div>
+  `;
+}
+
+/**
+ * Open the streak challenge modal
+ */
+function openStreakChallengeModal() {
+  const questionData = window.getRandomStreakQuestion();
+  if (!questionData) {
+    alert('Keine Fragen verfügbar. Schließe erst einen Test ab.');
+    return;
+  }
+  
+  window.currentStreakChallenge = {
+    ...questionData,
+    mode: 'normal'
+  };
+  
+  showStreakQuestionModal(questionData.question, 'Tägliche Streak-Challenge', 1, 1);
+}
+
+/**
+ * Open the streak rescue modal
+ */
+function openStreakRescueModal() {
+  const questions = window.getStreakRescueQuestions();
+  if (questions.length < window.STREAK_RESCUE_TOTAL) {
+    alert('Nicht genügend Fragen verfügbar.');
+    return;
+  }
+  
+  window.streakRescueQuestions = questions;
+  window.streakRescueIndex = 0;
+  window.currentStreakChallenge = {
+    ...questions[0],
+    mode: 'rescue'
+  };
+  
+  showStreakQuestionModal(
+    questions[0].question, 
+    'Streak retten - Frage 1/3',
+    1,
+    window.STREAK_RESCUE_TOTAL
+  );
+}
+
+/**
+ * Show the streak question modal
+ */
+function showStreakQuestionModal(question, title, current, total) {
+  const modal = document.getElementById('streak-challenge-modal');
+  if (!modal) return;
+  
+  const content = document.getElementById('streak-challenge-content');
+  if (!content) return;
+  
+  const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);
+  
+  content.innerHTML = `
+    <div class="mb-4">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-sm text-gray-500 dark:text-gray-400">${title}</span>
+        <span class="text-sm text-gray-500 dark:text-gray-400">${current}/${total}</span>
+      </div>
+      <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-4">${question.question}</h3>
+      <div class="space-y-2" id="streak-options">
+        ${shuffledOptions.map((option) => `
+          <button
+            onclick="checkStreakAnswer('${escapeHtml(option)}')"
+            class="w-full text-left p-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+          >
+            ${option}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+    <div id="streak-result" class="hidden"></div>
+  `;
+  
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+/**
+ * Check streak answer
+ */
+function checkStreakAnswer(selectedAnswer) {
+  const challenge = window.currentStreakChallenge;
+  if (!challenge) return;
+  
+  const question = challenge.question;
+  const isCorrect = selectedAnswer === question.correctAnswer;
+  
+  const resultDiv = document.getElementById('streak-result');
+  const optionsDiv = document.getElementById('streak-options');
+  
+  if (!resultDiv || !optionsDiv) return;
+  
+  // Disable and highlight options
+  optionsDiv.querySelectorAll('button').forEach((btn) => {
+    btn.disabled = true;
+    btn.classList.add('cursor-not-allowed', 'opacity-60');
+    
+    if (btn.textContent.trim() === question.correctAnswer) {
+      btn.classList.remove('border-gray-300', 'dark:border-gray-600');
+      btn.classList.add('border-green-500', 'bg-green-50', 'dark:bg-green-900/20');
+    } else if (btn.textContent.trim() === selectedAnswer && !isCorrect) {
+      btn.classList.remove('border-gray-300', 'dark:border-gray-600');
+      btn.classList.add('border-red-500', 'bg-red-50', 'dark:bg-red-900/20');
+    }
+  });
+  
+  resultDiv.classList.remove('hidden');
+  
+  if (challenge.mode === 'rescue') {
+    // Rescue mode
+    const result = window.processRescueAnswer(isCorrect);
+    
+    if (result.rescued === null) {
+      // More questions to go
+      resultDiv.innerHTML = `
+        <div class="p-4 rounded-lg ${isCorrect ? 'bg-green-100 dark:bg-green-900/30' : 'bg-red-100 dark:bg-red-900/30'} mb-4">
+          <p class="font-medium ${isCorrect ? 'text-green-700 dark:text-green-300' : 'text-red-700 dark:text-red-300'}">
+            ${isCorrect ? 'Richtig!' : 'Leider falsch.'}
+          </p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Richtig: ${result.correctCount} / Benötigt: ${window.STREAK_RESCUE_REQUIRED}
+          </p>
+        </div>
+        <button
+          onclick="continueStreakRescue()"
+          class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+        >
+          Weiter zur nächsten Frage
+        </button>
+      `;
+    } else if (result.rescued) {
+      // Successfully rescued
+      resultDiv.innerHTML = `
+        <div class="p-4 rounded-lg bg-green-100 dark:bg-green-900/30 mb-4">
+          <p class="font-medium text-green-700 dark:text-green-300">
+            🎉 Streak gerettet!
+          </p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Du hast ${result.correctCount} von ${result.totalAnswered} Fragen richtig beantwortet.
+          </p>
+        </div>
+        <button
+          onclick="closeStreakChallengeModal()"
+          class="w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+        >
+          Super!
+        </button>
+      `;
+    } else {
+      // Failed rescue
+      resultDiv.innerHTML = `
+        <div class="p-4 rounded-lg bg-red-100 dark:bg-red-900/30 mb-4">
+          <p class="font-medium text-red-700 dark:text-red-300">
+            😢 Streak verloren
+          </p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Du hast nur ${result.correctCount} von ${result.totalAnswered} Fragen richtig. Starte morgen einen neuen Streak!
+          </p>
+        </div>
+        <button
+          onclick="closeStreakChallengeModal()"
+          class="w-full px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+        >
+          OK
+        </button>
+      `;
+    }
+  } else {
+    // Normal challenge
+    const result = window.completeStreakChallenge(isCorrect);
+    
+    if (isCorrect) {
+      resultDiv.innerHTML = `
+        <div class="p-4 rounded-lg bg-green-100 dark:bg-green-900/30 mb-4">
+          <p class="font-medium text-green-700 dark:text-green-300">
+            🔥 Richtig! Streak: ${result.newStreak}
+          </p>
+        </div>
+        <button
+          onclick="closeStreakChallengeModal()"
+          class="w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+        >
+          Weiter
+        </button>
+      `;
+    } else {
+      resultDiv.innerHTML = `
+        <div class="p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/30 mb-4">
+          <p class="font-medium text-yellow-700 dark:text-yellow-300">
+            Leider falsch. Versuche es morgen wieder!
+          </p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            Richtige Antwort: ${question.correctAnswer}
+          </p>
+        </div>
+        <button
+          onclick="closeStreakChallengeModal()"
+          class="w-full px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+        >
+          OK
+        </button>
+      `;
+    }
+  }
+  
+  // Refresh alerts view after closing
+  window.currentStreakChallenge.needsRefresh = true;
+}
+
+/**
+ * Continue to next rescue question
+ */
+function continueStreakRescue() {
+  window.streakRescueIndex++;
+  const questions = window.streakRescueQuestions;
+  const idx = window.streakRescueIndex;
+  
+  if (idx < questions.length) {
+    window.currentStreakChallenge = {
+      ...questions[idx],
+      mode: 'rescue'
+    };
+    
+    showStreakQuestionModal(
+      questions[idx].question,
+      `Streak retten - Frage ${idx + 1}/${window.STREAK_RESCUE_TOTAL}`,
+      idx + 1,
+      window.STREAK_RESCUE_TOTAL
+    );
+  }
+}
+
+/**
+ * Close the streak challenge modal
+ */
+function closeStreakChallengeModal() {
+  const modal = document.getElementById('streak-challenge-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+  
+  // Refresh if needed
+  if (window.currentStreakChallenge?.needsRefresh) {
+    renderAlertsView();
+    updateStreakDisplay();
+  }
+  
+  window.currentStreakChallenge = null;
+  window.streakRescueQuestions = null;
+  window.streakRescueIndex = 0;
+}
+
+/**
+ * Update streak display in header
+ */
+function updateStreakDisplay() {
+  const badge = document.querySelector('#streak-badge');
+  if (!badge) return;
+  
+  if (!window.getStreakDisplayInfo || !window.hasCompletedTests || !window.hasCompletedTests()) {
+    badge.classList.add('hidden');
+    return;
+  }
+  
+  const info = window.getStreakDisplayInfo();
+  badge.classList.remove('hidden');
+  badge.innerHTML = `${info.current}`;
+  badge.className = `text-sm font-bold ${info.color}`;
+}
+
 // Expose to global scope
 window.getAchievementAlerts = getAchievementAlerts;
 window.getAlertBadgeInfo = getAlertBadgeInfo;
 window.updateAlertBadge = updateAlertBadge;
 window.updateAppBadgeFromAlerts = updateAppBadgeFromAlerts;
 window.renderAlertsView = renderAlertsView;
+window.renderStreakSection = renderStreakSection;
 window.toggleAlertsHelp = toggleAlertsHelp;
 window.enableNotificationsAndRefresh = enableNotificationsAndRefresh;
 window.startRenewal = startRenewal;
@@ -957,3 +1344,9 @@ window.generateDemoAlerts = generateDemoAlerts;
 window.clearDemoAlerts = clearDemoAlerts;
 window.togglePushNotifications = togglePushNotifications;
 window.arePushNotificationsEnabled = arePushNotificationsEnabled;
+window.openStreakChallengeModal = openStreakChallengeModal;
+window.openStreakRescueModal = openStreakRescueModal;
+window.checkStreakAnswer = checkStreakAnswer;
+window.continueStreakRescue = continueStreakRescue;
+window.closeStreakChallengeModal = closeStreakChallengeModal;
+window.updateStreakDisplay = updateStreakDisplay;

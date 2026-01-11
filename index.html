@@ -825,6 +825,37 @@
       </div>
     </div>
 
+    <!-- Streak Challenge Modal -->
+    <div
+      id="streak-challenge-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-lg w-full overflow-hidden"
+      >
+        <div
+          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700"
+        >
+          <div class="flex items-center space-x-3">
+            <span
+              data-icon="fire"
+              data-icon-class="w-5 h-5 text-orange-500"
+            ></span>
+            <h3 class="text-lg font-bold">Streak Challenge</h3>
+          </div>
+          <button
+            onclick="closeStreakChallengeModal()"
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+          >
+            ×
+          </button>
+        </div>
+        <div id="streak-challenge-content" class="p-4">
+          <!-- Content will be injected by alerts.js -->
+        </div>
+      </div>
+    </div>
+
     <!-- View for Search Results -->
     <div id="search-view" style="display: none">
       <!-- Header injected by components.js -->
@@ -1060,6 +1091,7 @@
     <script src="js/studies.js"></script>
     <script src="js/achievements.js"></script>
     <script src="js/achievements-ui.js"></script>
+    <script src="js/streak.js"></script>
     <script src="js/alerts.js"></script>
     <script src="js/notifications.js"></script>
     <script src="js/components.js"></script>
