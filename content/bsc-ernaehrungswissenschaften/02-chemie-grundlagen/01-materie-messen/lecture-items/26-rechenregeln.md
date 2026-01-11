@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Messunsicherheit'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '761, 775'
 ---
 
 ## Rechenregeln für signifikante Stellen

@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Messunsicherheit'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '700, 711-717, 725'
 ---
 
 ## Signifikante Stellen (Significant Figures)

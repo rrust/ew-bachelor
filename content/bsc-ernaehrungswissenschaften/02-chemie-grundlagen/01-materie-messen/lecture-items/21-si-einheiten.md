@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Dichte und Messung'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '447-462, 475-507'
 ---
 
 ## Das SI-Einheitensystem

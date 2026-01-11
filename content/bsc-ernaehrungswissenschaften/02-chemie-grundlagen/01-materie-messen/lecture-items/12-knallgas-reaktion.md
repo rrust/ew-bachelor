@@ -1,6 +1,9 @@
 ---
 type: 'learning-content'
 topic: 'Betrachtungsebenen der Chemie'
+sourceRefs:
+  - sourceId: 'vorlesung-k1'
+    pages: '269'
 ---
 
 ## Die Knallgasreaktion
