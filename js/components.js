@@ -87,6 +87,15 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
+            <!-- Training Button (prominent) -->
+            <a
+              href="#/training"
+              onclick="closeOverlayMenu('${idSuffix}')"
+              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
+            >
+              TRAIN
+            </a>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -127,14 +136,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             >
               ${Icons.get('trophy', 'w-5 h-5')}
               <span>Achievements</span>
-            </button>
-            <!-- Training -->
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash='#/training';"
-              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
-            >
-              ${Icons.get('training', 'w-5 h-5')}
-              <span>Training</span>
             </button>
             <!-- Map -->
             <button
@@ -283,6 +284,19 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           </button>
         </div>
         <nav class="p-4 space-y-2">
+          <!-- Training Button (prominent) -->
+          <a
+            href="#/training"
+            onclick="closeOverlayMenu('${idSuffix}')"
+            class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg ${
+              view === 'training'
+                ? 'bg-blue-600 text-white'
+                : 'bg-blue-500 hover:bg-blue-600 text-white'
+            } font-bold transition text-center"
+          >
+            TRAIN
+          </a>
+          <hr class="border-gray-200 dark:border-gray-700 my-2">
           <!-- Theme Toggle -->
           <button
             id="theme-toggle-menu${idSuffix}"
@@ -332,18 +346,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           >
             ${Icons.get('trophy', 'w-5 h-5')}
             <span>Achievements</span>
-          </button>
-          <!-- Training -->
-          <button
-            onclick="closeOverlayMenu('${idSuffix}'); window.location.hash='#/training';"
-            class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left ${
-              view === 'training'
-                ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
-                : ''
-            }"
-          >
-            ${Icons.get('training', 'w-5 h-5')}
-            <span>Training</span>
           </button>
           <!-- Map -->
           <button
