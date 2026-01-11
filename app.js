@@ -97,87 +97,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   // --- URL Routing ---
-  // Note: parseURL and updateURL are now in js/router.js
-  // We use the global window.parseURL and window.updateURL from there
-  
+  // Main routing logic is in js/router.js
+  // These are thin wrappers for backward compatibility within this file
+
   function updateURL(path, title) {
-    // Delegate to router module
-    if (window.Router && window.Router.updateURL) {
+    if (window.Router) {
       window.Router.updateURL(path, title);
     }
   }
 
   function parseURL() {
-    // Delegate to router module
-    if (window.Router && window.Router.parseURL) {
-      return window.Router.parseURL();
-    }
-    // Fallback for when router isn't loaded yet
-    const hash = window.location.hash.slice(1); // Remove #
-    if (!hash || hash === '/') return null;
-
-    const parts = hash.split('/').filter((p) => p);
-    const route = { view: parts[0] };
-
-    // Check for study-select route
-    if (parts[0] === 'study-select') {
-      route.view = 'studySelection';
-      return route;
-    }
-
-    // Check if first part is a known study ID
-    const studies = getStudies();
-    const firstPartIsStudy = studies.some((s) => s.id === parts[0]);
-
-    let offset = 0;
-    if (firstPartIsStudy) {
-      route.studyId = parts[0];
-      offset = 1;
-      // Adjust view to be the second part
-      route.view = parts[offset] || null;
-    }
-
-    // Parse route patterns (with offset for study prefix)
-    if (parts[offset] === 'module' && parts[offset + 1]) {
-      route.view = 'module';
-      route.moduleId = parts[offset + 1];
-      if (parts[offset + 2] === 'lecture' && parts[offset + 3]) {
-        route.lectureId = parts[offset + 3];
-        if (parts[offset + 4] === 'overview') {
-          route.overview = true;
-        } else if (
-          parts[offset + 4] === 'item' &&
-          parts[offset + 5] !== undefined
-        ) {
-          route.itemIndex = parseInt(parts[offset + 5], 10);
-        } else if (parts[offset + 4] === 'quiz') {
-          route.quiz = true;
-          if (parts[offset + 5] !== undefined) {
-            route.questionIndex = parseInt(parts[offset + 5], 10);
-          }
-        }
-      }
-    } else if (parts[offset] === 'tools') {
-      route.view = 'tools';
-    } else if (parts[offset] === 'map') {
-      route.view = 'map';
-    } else if (parts[offset] === 'progress') {
-      route.view = 'progress';
-    } else if (parts[offset] === 'alerts') {
-      route.view = 'alerts';
-    } else if (parts[offset] === 'search') {
-      route.view = 'search';
-      if (parts[offset + 1]) {
-        route.query = decodeURIComponent(parts[offset + 1]);
-      }
-    } else if (parts[offset] === 'achievements') {
-      route.view = 'achievements';
-      if (parts[offset + 1]) {
-        route.achievementId = parts[offset + 1];
-      }
-    }
-
-    return route;
+    return window.Router ? window.Router.parseURL() : null;
   }
 
   function navigateFromURL() {
