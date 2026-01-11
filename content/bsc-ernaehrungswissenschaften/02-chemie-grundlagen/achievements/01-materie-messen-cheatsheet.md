@@ -1,12 +1,17 @@
 ---
+type: 'achievement'
 id: 'materie-messen-cheatsheet'
 title: 'Chemie-Grundlagen Cheat-Sheet'
 description: 'Kompakte Übersicht zu Materie, Messen und den Grundlagen der Chemie'
-icon: '📋'
+icon: 'clipboard'
+contentType: 'markdown'
 unlockCondition:
-  type: 'quiz-score'
+  type: 'lecture-quiz-gold'
   lectureId: '01-materie-messen'
-  minScore: 90
+  moduleId: '02-chemie-grundlagen'
+defaultDuration: 30
+extensionDuration: 14
+warningThreshold: 7
 ---
 
 # Chemie-Grundlagen: Cheat-Sheet
