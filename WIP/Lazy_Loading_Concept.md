@@ -35,6 +35,7 @@ App Start
     │
     ▼
 modules.json (2KB)     ← Lädt sofort
+achievements.json      ← Achievement-Daten für Unlock-Checks
 content-manifest.json  ← Metadaten für alle Vorlesungen
     │
     ▼
@@ -52,12 +53,13 @@ Vorlesung wird angezeigt
 
 ### Generierte Dateien
 
-| Datei                   | Beschreibung        | Größe   |
-| ----------------------- | ------------------- | ------- |
-| `modules.json`          | Modul-Metadaten     | ~2KB    |
-| `content-manifest.json` | Checksummen, Größen | ~1KB    |
-| `search-index.json`     | Such-Keywords       | ~15KB   |
-| `lecture-bundle.json`   | Pro Vorlesung       | 10-80KB |
+| Datei                   | Beschreibung                 | Größe   |
+| ----------------------- | ---------------------------- | ------- |
+| `modules.json`          | Modul-Metadaten              | ~2KB    |
+| `achievements.json`     | Achievement-Daten (Markdown) | ~10KB   |
+| `content-manifest.json` | Checksummen, Größen          | ~1KB    |
+| `search-index.json`     | Such-Keywords                | ~15KB   |
+| `lecture-bundle.json`   | Pro Vorlesung                | 10-80KB |
 
 ---
 
@@ -68,6 +70,7 @@ Vorlesung wird angezeigt
 - `generate-content-list.js` - Erzeugt modules.json
 - `generate-lecture-bundles.js` - Erzeugt Bundles + Manifest
 - `generate-search-index.js` - Erzeugt Such-Index
+- `generate-achievements.js` - Erzeugt achievements.json
 
 **Ausführen:** `npm run build`
 
