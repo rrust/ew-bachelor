@@ -40,59 +40,45 @@ function renderProgressDashboard(modules, content) {
 
 /**
  * Calculates overall progress statistics
- * @param {Array} modules - Module metadata
+ * Works with lazy loading - uses module metadata, not loaded lecture content
+ * @param {Array} modules - Module metadata (includes lectures array)
  * @param {Object} content - APP_CONTENT object
  * @param {Object} progress - User progress
  * @returns {Object} Statistics object
  */
 function calculateOverallStats(modules, content, progress) {
-  // Minimum assumed quizzes per module if no content exists yet
-  const MIN_QUIZZES_PER_MODULE = 3;
-
   let totalQuizzes = 0;
   let quizzesCompleted = 0;
   let totalScore = 0;
   let scoredQuizzes = 0;
   let modulesStarted = 0;
-  let modulesWithContent = 0;
 
   modules.forEach((module) => {
-    const moduleContent = content[module.id];
     const moduleProgress = progress.modules?.[module.id];
 
-    // Check if module has actual content
+    // Use lectures from module metadata (works with lazy loading)
+    const lectureIds = module.lectures || [];
+
+    // Each lecture is assumed to have 1 quiz
+    totalQuizzes += lectureIds.length;
+
+    // Check if module has been started
     if (
-      moduleContent?.lectures &&
-      Object.keys(moduleContent.lectures).length > 0
+      moduleProgress &&
+      Object.keys(moduleProgress.lectures || {}).length > 0
     ) {
-      modulesWithContent++;
-
-      // Count if module has been started
-      if (
-        moduleProgress &&
-        Object.keys(moduleProgress.lectures || {}).length > 0
-      ) {
-        modulesStarted++;
-      }
-
-      // Count quizzes and scores from actual content
-      Object.keys(moduleContent.lectures).forEach((lectureId) => {
-        const lecture = moduleContent.lectures[lectureId];
-        if (lecture.quiz && lecture.quiz.length > 0) {
-          totalQuizzes++;
-
-          const lectureData = moduleProgress?.lectures?.[lectureId];
-          if (lectureData?.score !== undefined) {
-            quizzesCompleted++;
-            totalScore += lectureData.score;
-            scoredQuizzes++;
-          }
-        }
-      });
-    } else {
-      // Module has no content yet - assume minimum quizzes
-      totalQuizzes += MIN_QUIZZES_PER_MODULE;
+      modulesStarted++;
     }
+
+    // Count completed quizzes and scores from progress
+    lectureIds.forEach((lectureId) => {
+      const lectureData = moduleProgress?.lectures?.[lectureId];
+      if (lectureData?.score !== undefined) {
+        quizzesCompleted++;
+        totalScore += lectureData.score;
+        scoredQuizzes++;
+      }
+    });
   });
 
   const averageScore = scoredQuizzes > 0 ? totalScore / scoredQuizzes : 0;
@@ -102,7 +88,8 @@ function calculateOverallStats(modules, content, progress) {
   return {
     totalModules: modules.length,
     modulesStarted,
-    modulesWithContent,
+    modulesWithContent: modules.filter((m) => (m.lectures || []).length > 0)
+      .length,
     totalQuizzes,
     quizzesCompleted,
     averageScore,
@@ -164,42 +151,31 @@ function renderOverallProgressBar(progress) {
  */
 function renderModuleProgressList(modules, content, progress) {
   const container = document.getElementById('module-progress-list');
-  const MIN_QUIZZES_PER_MODULE = 3;
 
   const sortedModules = [...modules].sort((a, b) => a.order - b.order);
 
   container.innerHTML = sortedModules
     .map((module) => {
-      const moduleContent = content[module.id];
       const moduleProgress = progress.modules?.[module.id];
-      const hasContent =
-        moduleContent?.lectures &&
-        Object.keys(moduleContent.lectures).length > 0;
 
-      // Calculate module stats
-      let totalLectures = 0;
+      // Use lectures from module metadata (works with lazy loading)
+      const lectureIds = module.lectures || [];
+      const hasContent = lectureIds.length > 0;
+
+      // Calculate module stats from progress data
+      let totalLectures = lectureIds.length;
       let completedLectures = 0;
       let totalScore = 0;
       let scoredCount = 0;
 
-      if (hasContent) {
-        Object.keys(moduleContent.lectures).forEach((lectureId) => {
-          const lecture = moduleContent.lectures[lectureId];
-          if (lecture.quiz && lecture.quiz.length > 0) {
-            totalLectures++;
-
-            const lectureData = moduleProgress?.lectures?.[lectureId];
-            if (lectureData?.score !== undefined) {
-              completedLectures++;
-              totalScore += lectureData.score;
-              scoredCount++;
-            }
-          }
-        });
-      } else {
-        // No content yet - show placeholder
-        totalLectures = MIN_QUIZZES_PER_MODULE;
-      }
+      lectureIds.forEach((lectureId) => {
+        const lectureData = moduleProgress?.lectures?.[lectureId];
+        if (lectureData?.score !== undefined) {
+          completedLectures++;
+          totalScore += lectureData.score;
+          scoredCount++;
+        }
+      });
 
       const moduleAverage = scoredCount > 0 ? totalScore / scoredCount : 0;
       const completionPercent =

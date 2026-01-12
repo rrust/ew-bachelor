@@ -131,9 +131,31 @@ async function getStatus(studyId, moduleId, lectureId) {
   const lectureKey = getLectureKey(studyId, moduleId, lectureId);
   const manifestKey = getManifestKey(moduleId, lectureId);
 
-  // Check if we have this lecture downloaded
+  // Check if we have this lecture in metadata
   const downloadInfo = meta[lectureKey];
   if (!downloadInfo) {
+    return 'not-downloaded';
+  }
+
+  // Verify data actually exists in IndexedDB
+  try {
+    const db = await openDatabase();
+    const exists = await new Promise((resolve) => {
+      const tx = db.transaction(STORE_NAME, 'readonly');
+      const store = tx.objectStore(STORE_NAME);
+      const request = store.get(lectureKey);
+      request.onsuccess = () => resolve(!!request.result);
+      request.onerror = () => resolve(false);
+    });
+
+    if (!exists) {
+      // Metadata exists but data doesn't - clean up metadata
+      delete meta[lectureKey];
+      saveDownloadMeta(meta);
+      return 'not-downloaded';
+    }
+  } catch (e) {
+    console.warn('[DownloadManager] Failed to verify IndexedDB data:', e);
     return 'not-downloaded';
   }
 
@@ -161,7 +183,6 @@ async function getModuleDownloadStatus(studyId, moduleId) {
     return { downloaded: 0, total: 0, outdated: 0 };
   }
 
-  const meta = getDownloadMeta();
   let downloaded = 0;
   let outdated = 0;
   let total = 0;
@@ -171,15 +192,15 @@ async function getModuleDownloadStatus(studyId, moduleId) {
     if (manifestKey.startsWith(moduleId + '/')) {
       total++;
       const lectureId = manifestKey.split('/')[1];
-      const lectureKey = getLectureKey(studyId, moduleId, lectureId);
-      const downloadInfo = meta[lectureKey];
 
-      if (downloadInfo) {
+      // Use getStatus which verifies IndexedDB
+      const status = await getStatus(studyId, moduleId, lectureId);
+
+      if (status === 'current') {
         downloaded++;
-        const serverChecksum = manifest.lectures[manifestKey].checksum;
-        if (downloadInfo.checksum !== serverChecksum) {
-          outdated++;
-        }
+      } else if (status === 'outdated') {
+        downloaded++;
+        outdated++;
       }
     }
   }

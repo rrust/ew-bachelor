@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-10T22:45:37.222Z",
+  "exportedAt": "2026-01-12T08:53:42.872Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,32 +8,32 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-10-19T22:45:37.221Z",
+    "startedAt": "2025-08-07T08:53:42.872Z",
+    "modules": {
+      "01-ernaehrungslehre-grundlagen": {
+        "status": "in-progress",
+        "lectures": {
+          "01-grundlagen-zellbiologie": {
+            "score": 90,
+            "badge": "gold"
+          }
+        },
+        "achievements": {}
+      }
+    },
     "streak": {
-      "current": 2,
-      "lastActivityDate": "2026-01-09T10:00:00.000Z",
-      "totalDays": 5,
-      "longestStreak": 4,
+      "current": 5,
+      "lastActivityDate": "2026-01-12T10:00:00.000Z",
+      "totalDays": 12,
+      "longestStreak": 7,
       "rescueMode": false,
       "rescueCorrect": 0,
       "rescueTotal": 0
     },
     "training": {
-      "tokens": 5,
-      "totalAnswered": 80,
-      "totalRounds": 8
-    },
-    "modules": {
-      "01-ernaehrungslehre-grundlagen": {
-        "status": "in-progress",
-        "lectures": {
-          "02-makronaehrstoffe-detail": {
-            "score": 59,
-            "badge": "bronze"
-          }
-        },
-        "achievements": {}
-      }
+      "tokens": 15,
+      "totalAnswered": 150,
+      "totalRounds": 15
     }
   }
 }

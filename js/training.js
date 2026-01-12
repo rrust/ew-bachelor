@@ -144,11 +144,15 @@ function getExtendableAchievements() {
 
 /**
  * Get all completed tests from user progress
- * @returns {Array} Array of {moduleId, lectureId, questions, badge, cheatSheet}
+ * Works with lazy loading - loads lectures as needed
+ * @returns {Promise<Array>} Array of {moduleId, lectureId, questions, badge, cheatSheet}
  */
-function getCompletedTests() {
+async function getCompletedTests() {
   const progress = getUserProgress();
   if (!progress || !progress.modules) return [];
+
+  const settings = window.getAppSettings ? window.getAppSettings() : {};
+  const studyId = settings.activeStudyId;
 
   const completedTests = [];
 
@@ -160,7 +164,19 @@ function getCompletedTests() {
       const lectureProgress = moduleProgress.lectures[lectureId];
       // Check if test was taken (has score)
       if (lectureProgress.score !== undefined) {
-        const lecture = APP_CONTENT[moduleId]?.lectures?.[lectureId];
+        // Ensure lecture is loaded (lazy loading support)
+        let lecture = APP_CONTENT[moduleId]?.lectures?.[lectureId];
+
+        if (!lecture && window.BundleLoader && studyId) {
+          // Load the lecture
+          lecture = await window.BundleLoader.ensureLectureLoaded(
+            APP_CONTENT,
+            studyId,
+            moduleId,
+            lectureId
+          );
+        }
+
         if (lecture && lecture.quiz && lecture.quiz.length > 0) {
           // Find cheat-sheet achievement for this lecture
           const cheatSheet = findCheatSheetForLecture(moduleId, lectureId);
@@ -213,18 +229,20 @@ function findCheatSheetForLecture(moduleId, lectureId) {
   return null;
 }
 
+// Cached completed tests for training session
+let cachedCompletedTests = [];
+
 /**
  * Get random questions from completed tests
  * @param {number} count Number of questions to get
  * @returns {Array} Array of question objects with metadata
  */
 function getRandomTrainingQuestions(count = 10) {
-  const completedTests = getCompletedTests();
-  if (completedTests.length === 0) return [];
+  if (cachedCompletedTests.length === 0) return [];
 
   // Collect all questions with their metadata
   const allQuestions = [];
-  for (const test of completedTests) {
+  for (const test of cachedCompletedTests) {
     for (const question of test.questions) {
       allQuestions.push({
         ...question,
@@ -252,31 +270,93 @@ function shuffleArray(array) {
   return array;
 }
 
-// Celebration GIFs from Giphy for token rewards
-const CELEBRATION_GIFS = [
-  'https://media.giphy.com/media/g9582DNuQppxC/giphy.gif', // fireworks
-  'https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif', // confetti
-  'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif', // celebration
-  'https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif', // party
-  'https://media.giphy.com/media/xT0xezQGU5xCDJuCPe/giphy.gif', // confetti burst
-  'https://media.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif', // celebrate
-  'https://media.giphy.com/media/artj92V8o75VPL7AeQ/giphy.gif', // yay
-  'https://media.giphy.com/media/3oz9ZE2Oo9zRC/giphy.gif' // party popper
-];
+// Celebration emojis for offline-friendly animations
+const CELEBRATION_EMOJIS = ['🎉', '🎊', '🏆', '⭐', '🌟', '✨', '🥳', '💪'];
 
 /**
- * Get a random celebration GIF, cycling through them
+ * Get a random celebration emoji
  */
-function getRandomCelebrationGif() {
-  const storageKey = 'training-gif-index';
-  let index = parseInt(localStorage.getItem(storageKey) || '0', 10);
-  const gif = CELEBRATION_GIFS[index % CELEBRATION_GIFS.length];
-  // Store next index for variety
-  localStorage.setItem(
-    storageKey,
-    String((index + 1) % CELEBRATION_GIFS.length)
-  );
-  return gif;
+function getRandomCelebrationEmoji() {
+  return CELEBRATION_EMOJIS[
+    Math.floor(Math.random() * CELEBRATION_EMOJIS.length)
+  ];
+}
+
+/**
+ * Create confetti animation HTML (CSS-based, works offline)
+ */
+function createConfettiAnimation() {
+  const colors = [
+    '#f44336',
+    '#e91e63',
+    '#9c27b0',
+    '#673ab7',
+    '#3f51b5',
+    '#2196f3',
+    '#00bcd4',
+    '#4caf50',
+    '#ffeb3b',
+    '#ff9800'
+  ];
+  let confettiHTML =
+    '<div class="confetti-container" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:1000;">';
+
+  for (let i = 0; i < 50; i++) {
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    const left = Math.random() * 100;
+    const delay = Math.random() * 3;
+    const duration = 3 + Math.random() * 2;
+    const size = 8 + Math.random() * 8;
+
+    confettiHTML += `
+      <div style="
+        position:absolute;
+        left:${left}%;
+        top:-20px;
+        width:${size}px;
+        height:${size}px;
+        background:${color};
+        opacity:0.8;
+        animation: confetti-fall ${duration}s ease-out ${delay}s forwards;
+        transform: rotate(${Math.random() * 360}deg);
+      "></div>
+    `;
+  }
+
+  confettiHTML += '</div>';
+  return confettiHTML;
+}
+
+/**
+ * Show celebration animation
+ */
+function showCelebration() {
+  // Add confetti CSS animation if not exists
+  if (!document.getElementById('confetti-styles')) {
+    const style = document.createElement('style');
+    style.id = 'confetti-styles';
+    style.textContent = `
+      @keyframes confetti-fall {
+        0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+      }
+      @keyframes celebration-bounce {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // Add confetti to page
+  const confettiDiv = document.createElement('div');
+  confettiDiv.innerHTML = createConfettiAnimation();
+  document.body.appendChild(confettiDiv);
+
+  // Remove after animation
+  setTimeout(() => {
+    confettiDiv.remove();
+  }, 5000);
 }
 
 // Training state
@@ -290,11 +370,21 @@ let trainingState = {
 /**
  * Initialize training view
  */
-function initTrainingView() {
-  const completedTests = getCompletedTests();
+async function initTrainingView() {
   const container = document.getElementById('training-content');
 
-  if (completedTests.length === 0) {
+  // Show loading state while fetching completed tests
+  container.innerHTML = `
+    <div class="text-center py-12">
+      <span class="text-6xl mb-4 block animate-pulse">🔄</span>
+      <p class="text-gray-600 dark:text-gray-400">Lade Trainingsfragen...</p>
+    </div>
+  `;
+
+  // Load and cache completed tests
+  cachedCompletedTests = await getCompletedTests();
+
+  if (cachedCompletedTests.length === 0) {
     container.innerHTML = `
       <div class="text-center py-12">
         <span class="text-6xl mb-4 block">📝</span>
@@ -624,8 +714,14 @@ function renderTrainingResults() {
   const tokensEarned = awardTokensForRound(correctCount);
   const totalTokens = getTrainingStats().tokens;
 
-  // Get celebration GIF if tokens earned
-  const celebrationGif = tokensEarned > 0 ? getRandomCelebrationGif() : null;
+  // Show celebration animation if tokens earned
+  if (tokensEarned > 0) {
+    showCelebration();
+  }
+
+  // Get celebration emoji
+  const celebrationEmoji =
+    tokensEarned > 0 ? getRandomCelebrationEmoji() : null;
 
   // Determine feedback
   let title, message, tokenClass;
@@ -649,11 +745,11 @@ function renderTrainingResults() {
   container.innerHTML = `
     <div class="max-w-sm mx-auto text-center py-6">
       ${
-        celebrationGif
+        celebrationEmoji
           ? `
-        <!-- Celebration GIF -->
-        <div class="mb-4 rounded-lg overflow-hidden mx-auto" style="max-width: 200px; max-height: 150px;">
-          <img src="${celebrationGif}" alt="Celebration" class="w-full h-full object-cover" loading="lazy">
+        <!-- Celebration Emoji -->
+        <div class="mb-4 text-6xl" style="animation: celebration-bounce 0.5s ease-in-out infinite;">
+          ${celebrationEmoji}
         </div>
       `
           : `

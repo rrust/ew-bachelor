@@ -109,6 +109,11 @@ function generateExportData(studyId, modules, scenario, userName = 'TestUser') {
     modules: {}
   };
 
+  // Add streak and training data based on scenario
+  const scenarioData = getScenarioData(scenario);
+  progress.streak = scenarioData.streak;
+  progress.training = scenarioData.training;
+
   // Filter modules that have lectures
   const modulesWithLectures = modules.filter(
     (m) => m.lectures && m.lectures.length > 0
@@ -151,6 +156,135 @@ function generateExportData(studyId, modules, scenario, userName = 'TestUser') {
     },
     progress: progress
   };
+}
+
+/**
+ * Get streak and training data for each scenario
+ */
+function getScenarioData(scenario) {
+  const now = new Date();
+  const today = now.toISOString().split('T')[0] + 'T10:00:00.000Z';
+
+  switch (scenario) {
+    case 'fresh':
+      return {
+        streak: {
+          current: 0,
+          lastActivityDate: null,
+          totalDays: 0,
+          longestStreak: 0,
+          rescueMode: false,
+          rescueCorrect: 0,
+          rescueTotal: 0
+        },
+        training: {
+          tokens: 0,
+          totalAnswered: 0,
+          totalRounds: 0
+        }
+      };
+
+    case 'beginner':
+      return {
+        streak: {
+          current: 2,
+          lastActivityDate: today,
+          totalDays: 3,
+          longestStreak: 2,
+          rescueMode: false,
+          rescueCorrect: 0,
+          rescueTotal: 0
+        },
+        training: {
+          tokens: 5,
+          totalAnswered: 20,
+          totalRounds: 2
+        }
+      };
+
+    case 'intermediate':
+      return {
+        streak: {
+          current: 5,
+          lastActivityDate: today,
+          totalDays: 12,
+          longestStreak: 7,
+          rescueMode: false,
+          rescueCorrect: 0,
+          rescueTotal: 0
+        },
+        training: {
+          tokens: 15,
+          totalAnswered: 150,
+          totalRounds: 15
+        }
+      };
+
+    case 'advanced':
+      return {
+        streak: {
+          current: 8,
+          lastActivityDate: today,
+          totalDays: 20,
+          longestStreak: 10,
+          rescueMode: false,
+          rescueCorrect: 0,
+          rescueTotal: 0
+        },
+        training: {
+          tokens: 25,
+          totalAnswered: 350,
+          totalRounds: 35
+        }
+      };
+
+    case 'complete':
+      return {
+        streak: {
+          current: 10,
+          lastActivityDate: today,
+          totalDays: 25,
+          longestStreak: 10,
+          rescueMode: false,
+          rescueCorrect: 0,
+          rescueTotal: 0
+        },
+        training: {
+          tokens: 30,
+          totalAnswered: 450,
+          totalRounds: 45
+        }
+      };
+
+    case 'mixed':
+      return {
+        streak: {
+          current: 3,
+          lastActivityDate: today,
+          totalDays: 8,
+          longestStreak: 5,
+          rescueMode: false,
+          rescueCorrect: 0,
+          rescueTotal: 0
+        },
+        training: {
+          tokens: 12,
+          totalAnswered: 100,
+          totalRounds: 10
+        }
+      };
+
+    default:
+      return {
+        streak: {
+          current: 0,
+          lastActivityDate: null,
+          totalDays: 0,
+          longestStreak: 0
+        },
+        training: { tokens: 0, totalAnswered: 0, totalRounds: 0 }
+      };
+  }
 }
 
 function generateBeginnerProgress(progress, modules) {

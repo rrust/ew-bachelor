@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-10T22:45:37.222Z",
+  "exportedAt": "2026-01-12T08:53:42.873Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,21 +8,7 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-12-02T22:45:37.222Z",
-    "streak": {
-      "current": 10,
-      "lastActivityDate": "2026-01-11T10:00:00.000Z",
-      "totalDays": 25,
-      "longestStreak": 10,
-      "rescueMode": false,
-      "rescueCorrect": 0,
-      "rescueTotal": 0
-    },
-    "training": {
-      "tokens": 30,
-      "totalAnswered": 450,
-      "totalRounds": 45
-    },
+    "startedAt": "2025-10-31T08:53:42.873Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "completed",
@@ -43,15 +29,15 @@
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-29T22:45:37.222Z",
-            "expiresAt": "2026-01-28T22:45:37.222Z",
+            "unlockedAt": "2026-01-07T08:53:42.873Z",
+            "expiresAt": "2026-02-06T08:53:42.873Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "makronaehrstoffe-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-24T22:45:37.222Z",
-            "expiresAt": "2026-01-23T22:45:37.222Z",
+            "unlockedAt": "2025-12-23T08:53:42.873Z",
+            "expiresAt": "2026-01-22T08:53:42.873Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -63,18 +49,54 @@
           "01-materie-messen": {
             "score": 100,
             "badge": "gold"
+          },
+          "02-atome-formeln": {
+            "score": 100,
+            "badge": "gold"
+          },
+          "03-chemische-reaktionen": {
+            "score": 100,
+            "badge": "gold"
           }
         },
         "achievements": {
           "materie-messen-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-18T22:45:37.222Z",
-            "expiresAt": "2026-01-17T22:45:37.222Z",
+            "unlockedAt": "2025-12-24T08:53:42.873Z",
+            "expiresAt": "2026-01-23T08:53:42.873Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "atome-formeln-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2026-01-09T08:53:42.873Z",
+            "expiresAt": "2026-02-08T08:53:42.873Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "chemische-reaktionen-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2026-01-10T08:53:42.873Z",
+            "expiresAt": "2026-02-09T08:53:42.873Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
         }
       }
+    },
+    "streak": {
+      "current": 10,
+      "lastActivityDate": "2026-01-12T10:00:00.000Z",
+      "totalDays": 25,
+      "longestStreak": 10,
+      "rescueMode": false,
+      "rescueCorrect": 0,
+      "rescueTotal": 0
+    },
+    "training": {
+      "tokens": 30,
+      "totalAnswered": 450,
+      "totalRounds": 45
     }
   }
 }

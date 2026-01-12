@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-10T22:45:37.223Z",
+  "exportedAt": "2026-01-12T08:53:42.874Z",
   "version": "2.0",
   "studyId": "bsc-lebensmittel-biotechnologie",
   "settings": {
@@ -8,12 +8,21 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-08-14T22:45:37.223Z",
-    "training": {
-      "tokens": 7,
-      "totalAnswered": 110,
-      "totalRounds": 11
+    "startedAt": "2025-10-01T08:53:42.874Z",
+    "modules": {},
+    "streak": {
+      "current": 3,
+      "lastActivityDate": "2026-01-12T10:00:00.000Z",
+      "totalDays": 8,
+      "longestStreak": 5,
+      "rescueMode": false,
+      "rescueCorrect": 0,
+      "rescueTotal": 0
     },
-    "modules": {}
+    "training": {
+      "tokens": 12,
+      "totalAnswered": 100,
+      "totalRounds": 10
+    }
   }
 }
