@@ -1,69 +1,86 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T22:05:03.910Z",
+  "generatedAt": "2026-01-12T22:43:23.982Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
-      "checksum": "2359ddae",
+      "checksum": "16293e2a",
       "sizeKB": 13,
       "itemCount": 14,
       "quizCount": 5,
       "topic": "Grundlagen der Zellbiologie",
       "description": "Einführung in die Zellbiologie: Aufbau und Funktion von Zellen, wichtige Organellen, Zellmembran und ihre Bedeutung für die Ernährungswissenschaft. Grundlegende Konzepte von Makro- und Mikronährstoffen.",
-      "estimatedTime": 25
+      "estimatedTime": 25,
+      "version": "0.0.1"
     },
     "01-ernaehrungslehre-grundlagen/02-makronaehrstoffe-detail": {
-      "checksum": "d9fddd1d",
-      "sizeKB": 7.3,
+      "checksum": "2e4b707e",
+      "sizeKB": 7.4,
       "itemCount": 7,
       "quizCount": 7,
       "topic": "Makronährstoffe im Detail",
       "description": "Detaillierte Betrachtung der drei Makronährstoffe: Kohlenhydrate, Proteine und Fette. Ihre Funktionen, Energiegehalt und Bedeutung für den menschlichen Körper.",
-      "estimatedTime": 20
+      "estimatedTime": 20,
+      "version": "0.0.1"
     },
     "01-ernaehrungslehre-grundlagen/03-fette-oele": {
-      "checksum": "b4aa605f",
+      "checksum": "19a82ee0",
       "sizeKB": 8,
       "itemCount": 8,
       "quizCount": 7,
       "topic": "Fette und Öle",
       "description": "Unterschiede zwischen Fetten und Ölen, Aufbau von Triglyceriden, gesättigte und ungesättigte Fettsäuren, sowie deren Bedeutung für die Gesundheit.",
-      "estimatedTime": 22
+      "estimatedTime": 22,
+      "version": "0.0.1"
     },
     "02-chemie-grundlagen/01-materie-messen": {
-      "checksum": "d6fcafbf",
+      "checksum": "cf95f8d1",
       "sizeKB": 62.2,
       "itemCount": 42,
       "quizCount": 12,
       "topic": "Materie und Messen",
       "description": "Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit.",
-      "estimatedTime": 60
+      "estimatedTime": 60,
+      "version": "0.0.1"
     },
     "02-chemie-grundlagen/02-atome-formeln": {
-      "checksum": "f5f50b1f",
+      "checksum": "0f3b2591",
       "sizeKB": 56.6,
       "itemCount": 33,
       "quizCount": 18,
       "topic": "Atome, Formeln & Stöchiometrie",
       "description": "Aufbau von Atomen, Ordnungszahl und Isotope, Periodensystem, Moleküle und Ionen, Coulomb-Gesetz, das Mol, Formelermittlung und Nomenklatur anorganischer Verbindungen.",
-      "estimatedTime": 60
+      "estimatedTime": 60,
+      "version": "0.0.1"
     },
     "02-chemie-grundlagen/03-chemische-reaktionen": {
-      "checksum": "ecca816f",
+      "checksum": "39bf2c8f",
       "sizeKB": 84.2,
       "itemCount": 42,
       "quizCount": 25,
       "topic": "Chemische Reaktionen & Stöchiometrie",
       "description": "Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen und Metallreaktivität.",
-      "estimatedTime": 75
+      "estimatedTime": 75,
+      "version": "0.0.1"
     },
     "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
-      "checksum": "cbcb75e2",
+      "checksum": "f5137008",
       "sizeKB": 90.8,
       "itemCount": 55,
       "quizCount": 28,
       "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
       "description": "Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsatz, Enthalpie, Satz von Hess und kalorimetrische Messungen.",
-      "estimatedTime": 90
+      "estimatedTime": 90,
+      "version": "0.0.1"
+    },
+    "02-chemie-grundlagen/06-elektronenstruktur-atome": {
+      "checksum": "3b3b6787",
+      "sizeKB": 87.8,
+      "itemCount": 74,
+      "quizCount": 12,
+      "topic": "Die Elektronenstruktur der Atome",
+      "description": "Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie Elektronenkonfiguration nach Pauli und Hund.",
+      "estimatedTime": 90,
+      "version": "0.0.1"
     }
   }
 }

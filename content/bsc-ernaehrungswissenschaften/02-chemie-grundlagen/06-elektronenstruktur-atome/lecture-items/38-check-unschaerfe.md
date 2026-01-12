@@ -1,0 +1,12 @@
+---
+type: 'self-assessment-mc'
+topic: 'Heisenberg-Unschärfe'
+question: 'Was besagt die Heisenbergsche Unschärferelation?'
+options:
+  - 'Man kann nie wissen, welches Element man vor sich hat'
+  - 'Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden'
+  - 'Elektronen bewegen sich in exakten Kreisbahnen'
+  - 'Die Lichtgeschwindigkeit ist die maximale Geschwindigkeit'
+correctAnswer: 'Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden'
+explanation: 'Dies ist das fundamentale Prinzip der Quantenmechanik. Je genauer wir den Ort kennen, desto ungenauer wird der Impuls – und umgekehrt. Das Bohr-Modell mit seinen festen Bahnen ist damit nicht vereinbar.'
+---

@@ -2,6 +2,7 @@
 topic: 'Atome, Formeln & Stöchiometrie'
 description: 'Aufbau von Atomen, Ordnungszahl und Isotope, Periodensystem, Moleküle und Ionen, Coulomb-Gesetz, das Mol, Formelermittlung und Nomenklatur anorganischer Verbindungen.'
 estimatedTime: 60
+version: '0.0.1'
 sources:
   - id: 'vorlesung-k2'
     title: 'Vorlesungsfolien Kapitel 2 (WS2025)'

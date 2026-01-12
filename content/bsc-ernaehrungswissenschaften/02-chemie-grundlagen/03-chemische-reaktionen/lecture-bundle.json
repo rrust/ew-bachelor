@@ -5,6 +5,7 @@
     "topic": "Chemische Reaktionen & Stöchiometrie",
     "description": "Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen und Metallreaktivität.",
     "estimatedTime": 75,
+    "version": "0.0.1",
     "sources": [
       {
         "id": "vorlesung-k3",
@@ -843,5 +844,5 @@
       "explanation": "**Erklärung:** Da Elektronen nicht einfach verschwinden können, muss jedes Elektron, das von einem Stoff abgegeben wird (Oxidation), von einem anderen aufgenommen werden (Reduktion). Daher treten beide Prozesse immer gemeinsam auf."
     }
   ],
-  "generatedAt": "2026-01-12T22:05:03.933Z"
+  "generatedAt": "2026-01-12T22:43:24.006Z"
 }

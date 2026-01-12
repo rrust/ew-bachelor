@@ -2,6 +2,7 @@
 topic: 'Chemische Reaktionen & Stöchiometrie'
 description: 'Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen und Metallreaktivität.'
 estimatedTime: 75
+version: '0.0.1'
 sources:
   - id: 'vorlesung-k3'
     title: 'Vorlesungsfolien Kapitel 3 (WS2025)'

@@ -5,6 +5,7 @@
     "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
     "description": "Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsatz, Enthalpie, Satz von Hess und kalorimetrische Messungen.",
     "estimatedTime": 90,
+    "version": "0.0.1",
     "sources": [
       {
         "id": "vorlesung-k5",
@@ -1067,5 +1068,5 @@
       "explanation": "**Erklärung:** Bei der Verbrennung erwärmt sich nicht nur das Wasser, sondern auch der Stahlbehälter (die \"Bombe\"), die Rührer und andere Metallteile. Ohne diese Korrektur würde man die freigesetzte Energie unterschätzen."
     }
   ],
-  "generatedAt": "2026-01-12T22:05:03.942Z"
+  "generatedAt": "2026-01-12T22:43:24.012Z"
 }

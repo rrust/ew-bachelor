@@ -2,6 +2,7 @@
 topic: 'Materie und Messen'
 description: 'Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit.'
 estimatedTime: 60
+version: '0.0.1'
 sources:
   - id: 'kapitel-1'
     title: 'Vorlesungsfolien Kapitel 1'

@@ -5,6 +5,7 @@
     "topic": "Fette und Öle",
     "description": "Unterschiede zwischen Fetten und Ölen, Aufbau von Triglyceriden, gesättigte und ungesättigte Fettsäuren, sowie deren Bedeutung für die Gesundheit.",
     "estimatedTime": 22,
+    "version": "0.0.1",
     "sources": []
   },
   "items": [
@@ -153,5 +154,5 @@
       "explanation": ""
     }
   ],
-  "generatedAt": "2026-01-12T22:05:03.920Z"
+  "generatedAt": "2026-01-12T22:43:23.989Z"
 }

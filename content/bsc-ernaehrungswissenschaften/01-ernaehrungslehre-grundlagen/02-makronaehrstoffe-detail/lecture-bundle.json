@@ -5,6 +5,7 @@
     "topic": "Makronährstoffe im Detail",
     "description": "Detaillierte Betrachtung der drei Makronährstoffe: Kohlenhydrate, Proteine und Fette. Ihre Funktionen, Energiegehalt und Bedeutung für den menschlichen Körper.",
     "estimatedTime": 20,
+    "version": "0.0.1",
     "sources": []
   },
   "items": [
@@ -148,5 +149,5 @@
       "explanation": ""
     }
   ],
-  "generatedAt": "2026-01-12T22:05:03.918Z"
+  "generatedAt": "2026-01-12T22:43:23.987Z"
 }

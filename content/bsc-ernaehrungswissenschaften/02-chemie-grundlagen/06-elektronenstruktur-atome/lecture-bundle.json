@@ -1,0 +1,1341 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "06-elektronenstruktur-atome",
+  "metadata": {
+    "topic": "Die Elektronenstruktur der Atome",
+    "description": "Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie Elektronenkonfiguration nach Pauli und Hund.",
+    "estimatedTime": 90,
+    "version": "0.0.1",
+    "sources": [
+      {
+        "id": "vorlesung-k6",
+        "title": "Vorlesungsfolien Kapitel 6: Elektronenstruktur der Atome (WS2025)",
+        "url": "https://moodle.univie.ac.at/mod/resource/view.php?id=19477197",
+        "type": "pdf"
+      },
+      {
+        "id": "mortimer",
+        "title": "Mortimer & Müller: Chemie - Das Basiswissen der Chemie (10. Aufl.)",
+        "url": null,
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Die Elektronenstruktur der Atome",
+      "content": "# Die Elektronenstruktur der Atome\n\nWie sind die Elektronen in einem Atom angeordnet? Diese fundamentale Frage führte zu revolutionären Erkenntnissen der Quantenmechanik. In dieser Vorlesung lernen wir, wie elektromagnetische Strahlung uns Einblicke in die Atomstruktur gibt und warum Elektronen keine festen Bahnen, sondern Aufenthaltswahrscheinlichkeiten haben.\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Die Beziehung zwischen Wellenlänge, Frequenz und Lichtgeschwindigkeit ($c = \\lambda \\cdot \\nu$) anwenden\n- Das elektromagnetische Spektrum nach Energie ordnen und Bereiche zuordnen\n- Den Zusammenhang zwischen Energie und Frequenz ($E = h \\cdot \\nu$) erklären und berechnen\n- Den photoelektrischen Effekt und seine Bedeutung für das Verständnis von Licht als Teilchen erläutern\n- Das Bohr'sche Atommodell beschreiben und seine Grenzen erkennen\n- Erklären, warum Atome Linienspektren und keine kontinuierlichen Spektren zeigen\n- Die Heisenberg'sche Unschärferelation in eigenen Worten formulieren\n- Den Unterschied zwischen Bahnen (Bohr) und Orbitalen (Quantenmechanik) erklären\n- Die vier Quantenzahlen (n, l, mₗ, mₛ) und ihre Bedeutung beschreiben\n- Die Formen von s-, p- und d-Orbitalen unterscheiden\n- Elektronenkonfigurationen nach dem Aufbauprinzip, dem Pauli-Prinzip und der Hund'schen Regel aufstellen\n- Die Elektronenkonfiguration eines Elements in Kurzschreibweise notieren",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "topic": "Licht als Welle",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "1-2"
+        }
+      ],
+      "content": "## Warum müssen wir Licht verstehen?\n\nUm die Struktur von Atomen zu verstehen, müssen wir zunächst die Natur des Lichts und der elektromagnetischen Strahlung begreifen. Diese scheinbar unzusammenhängenden Themen sind eng verknüpft: Atome verraten uns ihre Geheimnisse durch das Licht, das sie aussenden oder absorbieren.\n\n### Der Welle-Teilchen-Dualismus\n\nEine der erstaunlichsten Erkenntnisse der Physik ist der **Welle-Teilchen-Dualismus**:\n\n> Licht verhält sich manchmal wie eine Welle, manchmal wie ein Strom von Teilchen. Auch Elektronen und andere subatomare Teilchen zeigen dieses duale Verhalten.\n\nDiese Erkenntnis revolutionierte unser Verständnis der Physik im 20. Jahrhundert und führte zur Entwicklung der Quantenmechanik.\n\n### Licht als elektromagnetische Welle\n\nLicht ist eine Form von **elektromagnetischer Strahlung**. Es besteht aus sich ausbreitenden elektrischen und magnetischen Feldern, die senkrecht zueinander schwingen. Diese Wellen benötigen kein Medium – sie können sich auch durch das Vakuum des Weltraums ausbreiten.\n\n> 💡 **Für Ernährungswissenschaftler:** Die Spektroskopie nutzt Licht zur Analyse von Lebensmitteln. UV-Vis-Spektroskopie, Infrarot-Spektroskopie und viele andere Methoden basieren auf dem Wellencharakter des Lichts."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Wellengrößen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "2-3"
+        }
+      ],
+      "content": "## Die drei Hauptgrößen einer Welle\n\nElektromagnetische Wellen werden durch drei Hauptgrößen charakterisiert:\n\n### 1. Wellenlänge (λ, Lambda)\n\nDie **Wellenlänge** ist der Abstand zwischen zwei aufeinanderfolgenden Wellenbergen (oder Wellentälern).\n\n- **Symbol:** λ (griechisch: Lambda)\n- **Einheiten:** Meter (m), häufiger Nanometer (nm) für sichtbares Licht\n- **Umrechnung:** 1 nm = 10⁻⁹ m\n\n### 2. Frequenz (ν, Ny)\n\nDie **Frequenz** ist die Anzahl der Wellenzyklen, die einen bestimmten Punkt pro Sekunde passieren.\n\n- **Symbol:** ν (griechisch: Ny, sprich \"nü\")\n- **Einheit:** Hertz (Hz) = s⁻¹ (Schwingungen pro Sekunde)\n- **Beispiel:** Rotes Licht hat etwa 4,3 × 10¹⁴ Hz\n\n### 3. Amplitude\n\nDie **Amplitude** ist die Höhe der Welle, gemessen von der Nulllinie bis zum Maximum.\n\n- Sie bestimmt die **Intensität** (Helligkeit) des Lichts\n- Hat keinen Einfluss auf die Farbe (die wird durch λ bzw. ν bestimmt)\n\n> 💡 **Merke:** Wellenlänge bestimmt die *Farbe*, Amplitude die *Helligkeit*."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Lichtgeschwindigkeit und Wellenformel",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "3-4"
+        }
+      ],
+      "content": "## Die fundamentale Beziehung: c = λ · ν\n\nAlle elektromagnetischen Strahlungen bewegen sich im Vakuum mit derselben Geschwindigkeit – der **Lichtgeschwindigkeit**.\n\n$$c = \\lambda \\cdot \\nu$$\n\n### Die Konstante c\n\n- **Wert:** $c = 2,998 \\times 10^8 \\text{ m/s}$ (≈ 300.000 km/s)\n- Im Alltag oft gerundet: $c \\approx 3,00 \\times 10^8 \\text{ m/s}$\n\n### Inverse Proportionalität\n\nDa c konstant ist, besteht eine **inverse Proportionalität** zwischen Wellenlänge und Frequenz:\n\n| Wellenlänge         | Frequenz |\n| ------------------- | -------- |\n| Lang (z.B. Radio)   | Niedrig  |\n| Kurz (z.B. Röntgen) | Hoch     |\n\n> Wenn λ größer wird, muss ν kleiner werden, damit das Produkt c konstant bleibt.\n\n### Beispielrechnung: Frequenz berechnen\n\n**Problem:** Rotes Licht hat eine Wellenlänge von λ = 700 nm. Berechne die Frequenz.\n\n**Lösung:**\n\n1. Umrechnung in SI-Einheiten: $700 \\text{ nm} = 7,00 \\times 10^{-7} \\text{ m}$\n\n2. Formel umstellen: $\\nu = \\frac{c}{\\lambda}$\n\n3. Einsetzen:\n$$\\nu = \\frac{3,00 \\times 10^8 \\text{ m/s}}{7,00 \\times 10^{-7} \\text{ m}} = 4,29 \\times 10^{14} \\text{ Hz}$$\n\n> ⚠️ **Wichtig:** Immer zuerst in SI-Einheiten umrechnen (m statt nm)!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Das elektromagnetische Spektrum",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "4-5"
+        }
+      ],
+      "content": "## Das elektromagnetische Spektrum\n\nDas sichtbare Licht ist nur ein winziger Teil des gesamten elektromagnetischen Spektrums. Alle Strahlungsarten sind elektromagnetische Wellen – sie unterscheiden sich nur in Wellenlänge und Frequenz.\n\n### Das sichtbare Spektrum\n\nDas menschliche Auge kann nur einen kleinen Bereich wahrnehmen:\n\n| Farbe   | Wellenlänge (nm) |\n| ------- | ---------------- |\n| Violett | 400 - 450        |\n| Blau    | 450 - 495        |\n| Grün    | 495 - 570        |\n| Gelb    | 570 - 590        |\n| Orange  | 590 - 620        |\n| Rot     | 620 - 700        |\n\n### Das gesamte Spektrum (sortiert nach zunehmender Energie)\n\n1. **Radiowellen** (λ > 1 m) – Radio, TV, Mobilfunk\n2. **Mikrowellen** (1 mm - 1 m) – Mikrowellenherd, Radar\n3. **Infrarot (IR)** (700 nm - 1 mm) – Wärmestrahlung, Fernbedienung\n4. **Sichtbares Licht** (400 - 700 nm) – Farben, die wir sehen\n5. **Ultraviolett (UV)** (10 - 400 nm) – Sonnenbrand, Desinfektion\n6. **Röntgenstrahlen** (0,01 - 10 nm) – Medizinische Bildgebung\n7. **Gammastrahlen** (< 0,01 nm) – Radioaktiver Zerfall\n\n> 💡 **Merkhilfe:** **R**adio - **M**ikro - **I**nfra - **V**iolett...Rot - **U**ltra - rön**T**gen - **G**amma\n> → Von **harmlos bis gefährlich** (für biologisches Gewebe)"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Das elektromagnetische Spektrum",
+      "title": "Übersicht: Wellenlänge, Energie und Frequenz",
+      "content": "```mermaid\nflowchart LR\n    subgraph SPEKTRUM[\"📡 ELEKTROMAGNETISCHES SPEKTRUM\"]\n        direction LR\n        R[\"📻 Radio<br/>λ > 1 m<br/>niedrigste Energie\"]\n        M[\"🌡️ Mikro<br/>mm - m\"]\n        I[\"🔥 Infrarot<br/>μm - mm\"]\n        V[\"🌈 Sichtbar<br/>400-700 nm\"]\n        U[\"☀️ UV<br/>10-400 nm\"]\n        X[\"💀 Röntgen<br/>pm - nm\"]\n        G[\"☢️ Gamma<br/>< pm<br/>höchste Energie\"]\n        \n        R --> M --> I --> V --> U --> X --> G\n    end\n    \n    LOW[\"🔽 NIEDRIGE<br/>Frequenz<br/>Lange λ<br/>Wenig Energie\"] -.-> R\n    HIGH[\"🔼 HOHE<br/>Frequenz<br/>Kurze λ<br/>Viel Energie\"] -.-> G\n    \n    style R fill:#e8f5e9\n    style M fill:#fff3e0\n    style I fill:#ffebee\n    style V fill:#e3f2fd\n    style U fill:#f3e5f5\n    style X fill:#fce4ec\n    style G fill:#ffcdd2\n```\n\n## Zusammenfassung der Beziehungen\n\n- **Kurze Wellenlänge** → **Hohe Frequenz** → **Hohe Energie**\n- **Lange Wellenlänge** → **Niedrige Frequenz** → **Niedrige Energie**\n\nDie Energie nimmt von links (Radio) nach rechts (Gamma) zu!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispielrechnung: Wellenlänge und Frequenz",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "5"
+        },
+        {
+          "sourceId": "mortimer",
+          "pages": "Aufgabe 6.2"
+        }
+      ],
+      "content": "## Übungsbeispiel: Verschiedene Strahlungsarten\n\n### Beispiel 1: Mikrowelle\n\nEin Mikrowellenherd arbeitet mit einer Wellenlänge von λ = 2,50 cm.\n\n**Berechne die Frequenz:**\n\n1. Umrechnung: $2,50 \\text{ cm} = 0,0250 \\text{ m} = 2,50 \\times 10^{-2} \\text{ m}$\n\n2. Einsetzen:\n$$\\nu = \\frac{c}{\\lambda} = \\frac{3,00 \\times 10^8 \\text{ m/s}}{2,50 \\times 10^{-2} \\text{ m}} = 1,20 \\times 10^{10} \\text{ Hz}$$\n\nDas entspricht 12 GHz (Gigahertz).\n\n### Beispiel 2: Gelbes Licht\n\nGelbes Natriumlicht hat eine Wellenlänge von λ = 589 nm.\n\n**Berechne die Frequenz:**\n\n$$\\nu = \\frac{3,00 \\times 10^8 \\text{ m/s}}{5,89 \\times 10^{-7} \\text{ m}} = 5,09 \\times 10^{14} \\text{ Hz}$$\n\n### Vergleich\n\n| Strahlungsart | Wellenlänge | Frequenz      |\n| ------------- | ----------- | ------------- |\n| Mikrowelle    | 2,50 cm     | 1,2 × 10¹⁰ Hz |\n| Gelbes Licht  | 589 nm      | 5,1 × 10¹⁴ Hz |\n\n> 💡 Gelbes Licht hat eine ~40.000× höhere Frequenz als Mikrowellen!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Wellenlänge und Frequenz",
+      "question": "Wenn die Wellenlänge einer elektromagnetischen Strahlung zunimmt, was passiert mit ihrer Frequenz (bei konstanter Lichtgeschwindigkeit)?",
+      "options": [
+        "Die Frequenz nimmt zu",
+        "Die Frequenz nimmt ab",
+        "Die Frequenz bleibt gleich",
+        "Die Frequenz schwankt unregelmäßig"
+      ],
+      "correctAnswer": "Die Frequenz nimmt ab",
+      "explanation": "Wellenlänge und Frequenz sind indirekt proportional (c = λ · ν). Wenn λ steigt, muss ν sinken, damit das Produkt c konstant bleibt.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Energie im EM-Spektrum",
+      "question": "Welcher Bereich des elektromagnetischen Spektrums hat die höchste Energie?",
+      "options": [
+        "Radiowellen",
+        "Infrarot",
+        "Sichtbares Licht",
+        "Ultraviolett (UV)"
+      ],
+      "correctAnswer": "Ultraviolett (UV)",
+      "explanation": "Hohe Energie korrespondiert mit hoher Frequenz und kurzer Wellenlänge. UV-Licht hat kürzere Wellenlängen (höhere Frequenz) als sichtbares Licht, IR oder Radiowellen. Nur Röntgen- und Gammastrahlung haben noch höhere Energie.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Elektromagnetisches Spektrum",
+      "question": "Ordne jede Strahlungsart dem typischen Wellenlängenbereich zu",
+      "pairs": [
+        {
+          "term": "Radiowellen",
+          "match": "Größer als 1 Meter"
+        },
+        {
+          "term": "Mikrowellen",
+          "match": "Millimeter bis Meter"
+        },
+        {
+          "term": "Sichtbares Licht",
+          "match": "400 - 700 Nanometer"
+        },
+        {
+          "term": "Ultraviolett (UV)",
+          "match": "10 - 400 Nanometer"
+        },
+        {
+          "term": "Röntgenstrahlen",
+          "match": "Pikometer bis Nanometer"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Energie im EM-Spektrum",
+      "question": "Ordne die Strahlungsarten nach zunehmender Energie (von niedrigster zu höchster)",
+      "items": [
+        "Radiowellen",
+        "Mikrowellen",
+        "Infrarot",
+        "Sichtbares Licht",
+        "Ultraviolett",
+        "Röntgenstrahlen"
+      ],
+      "explanation": "Die Energie nimmt mit der Frequenz zu und mit der Wellenlänge ab. Radiowellen haben die längsten Wellenlängen und niedrigste Energie, Röntgenstrahlen die kürzesten Wellenlängen und höchste Energie (in dieser Auswahl).",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Frequenzberechnung",
+      "question": "Berechne die Frequenz einer Mikrowelle mit der Wellenlänge λ = 2,50 cm.",
+      "variables": {
+        "λ": "2,50 cm = 0,0250 m",
+        "c": "3,00 × 10⁸ m/s"
+      },
+      "formula": "\\nu = \\frac{c}{\\lambda}",
+      "correctAnswer": 12000000000,
+      "unit": "Hz",
+      "tolerance": 100000000,
+      "hints": [
+        "Zuerst die Wellenlänge in Meter umrechnen: 2,50 cm = 0,0250 m",
+        "Die Formel lautet: ν = c / λ",
+        "Einsetzen: ν = (3,00 × 10⁸) / (2,50 × 10⁻²)"
+      ],
+      "explanation": "ν = (3,00 × 10⁸ m/s) / (0,0250 m) = 1,20 × 10¹⁰ Hz = 12 GHz. Das ist die typische Frequenz eines Mikrowellenherds.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Elektromagnetisches Spektrum",
+      "url": "https://www.youtube.com/watch?v=k1tC5W_Z9vQ",
+      "title": "Elektromagnetisches Spektrum einfach erklärt",
+      "description": "musstewissen Physik erklärt das elektromagnetische Spektrum von Radiowellen bis Gammastrahlung.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Max Planck und die Quanten",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "6-7"
+        }
+      ],
+      "content": "## Die Revolution der Physik: Energie ist gequantelt\n\nDie klassische Physik des 19. Jahrhunderts nahm an, dass Energie **kontinuierlich** ist – wie Wasser, das man in beliebig kleine Portionen aufteilen kann. Max Planck (1858-1947) revolutionierte dieses Verständnis im Jahr 1900.\n\n### Plancks Entdeckung\n\nBei der Untersuchung der Wärmestrahlung von Körpern entdeckte Planck, dass die klassische Physik falsche Vorhersagen machte. Seine Lösung war revolutionär:\n\n> **Energie kann nur in diskreten \"Paketen\" abgegeben oder aufgenommen werden.**\n\nDiese kleinsten Energiepakete nannte er **Quanten** (lat. quantum = \"wie viel\").\n\n### Die Planck-Konstante\n\nPlanck führte eine neue fundamentale Naturkonstante ein:\n\n$$h = 6,626 \\times 10^{-34} \\text{ J} \\cdot \\text{s}$$\n\nDiese **Planck-Konstante** h ist eine der wichtigsten Konstanten der Physik und markiert die Grenze zwischen klassischer und Quantenphysik.\n\n> 💡 **Anschaulich:** Energie ist wie eine Treppe, nicht wie eine Rampe. Man kann nur ganze Stufen nehmen, nicht halbe."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Energie-Frequenz-Beziehung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "7-8"
+        }
+      ],
+      "content": "## Die fundamentale Formel: E = h · ν\n\nDie Energie eines Quants ist direkt proportional zur Frequenz der Strahlung:\n\n$$E = h \\cdot \\nu$$\n\n### Die Variablen\n\n| Symbol | Bedeutung            | Einheit           |\n| ------ | -------------------- | ----------------- |\n| E      | Energie eines Quants | Joule (J)         |\n| h      | Planck-Konstante     | 6,626 × 10⁻³⁴ J·s |\n| ν      | Frequenz             | Hz (s⁻¹)          |\n\n### Alternative Schreibweise\n\nMit $c = \\lambda \\cdot \\nu$ können wir auch schreiben:\n\n$$E = \\frac{h \\cdot c}{\\lambda}$$\n\n### Was bedeutet das?\n\n- **Kurze Wellenlänge** (hohe ν) → **Hohe Energie**\n- **Lange Wellenlänge** (niedrige ν) → **Niedrige Energie**\n\nDas erklärt, warum UV-Strahlung (kurz, hohe ν) Sonnenbrand verursacht, während Radiowellen (lang, niedrige ν) harmlos durch uns hindurchgehen.\n\n> ⚠️ **Wichtig:** Dies war der erste Hinweis, dass Licht Teilchencharakter hat – jedes \"Teilchen\" trägt ein Energiequant!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Der Photoelektrische Effekt",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "8-10"
+        }
+      ],
+      "content": "## Einstein und die Photonen\n\nAlbert Einstein (1879-1955) nutzte Plancks Theorie, um den **photoelektrischen Effekt** zu erklären – wofür er 1921 den Nobelpreis erhielt.\n\n### Das Experiment\n\nWenn Licht auf eine Metalloberfläche trifft, können Elektronen herausgeschlagen werden. Aber:\n\n1. **Beobachtung:** Es gibt eine **Mindestfrequenz** – unterhalb dieser passiert nichts\n2. **Überraschung:** Intensiveres (helleres) Licht unter der Schwelle schlägt **keine** Elektronen heraus\n3. **Aber:** Schwaches Licht über der Schwelle schlägt sofort Elektronen heraus\n\n### Einsteins Erklärung\n\nDie klassische Wellentheorie konnte das nicht erklären. Einstein schlug vor:\n\n> **Licht besteht aus Teilchen – Photonen genannt. Jedes Photon trägt genau ein Energiequant E = h·ν.**\n\n- Ein einzelnes Photon überträgt seine gesamte Energie an ein Elektron\n- Ist E < Austrittsarbeit → kein Elektronenaustritt (egal wie viele Photonen)\n- Ist E ≥ Austrittsarbeit → Elektron wird emittiert\n\n### Schlussfolgerung\n\nDer photoelektrische Effekt bewies, dass **Licht sich wie Teilchen verhält** – nicht nur wie eine Welle. Dies war ein fundamentaler Schritt zur Quantenmechanik.\n\n> 💡 **Für Ernährungswissenschaftler:** Die Photosynthese beginnt ebenfalls mit der Absorption einzelner Photonen durch Chlorophyll!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispielrechnung: Photonenenergie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "10-11"
+        }
+      ],
+      "content": "## Berechnung: Energie von Photonen roten Lichts\n\n**Problem:** Berechne die Energie von 1,00 Mol Photonen roten Lichts (λ = 700 nm, ν = 4,29 × 10¹⁴ Hz).\n\n### Schritt 1: Energie eines einzelnen Photons\n\n$$E_{Photon} = h \\cdot \\nu$$\n\n$$E_{Photon} = (6,626 \\times 10^{-34} \\text{ J·s}) \\times (4,29 \\times 10^{14} \\text{ s}^{-1})$$\n\n$$E_{Photon} = 2,84 \\times 10^{-19} \\text{ J}$$\n\n### Schritt 2: Energie pro Mol\n\nMultiplikation mit der Avogadro-Konstante ($N_A = 6,022 \\times 10^{23} \\text{ mol}^{-1}$):\n\n$$E_{Mol} = E_{Photon} \\times N_A$$\n\n$$E_{Mol} = (2,84 \\times 10^{-19} \\text{ J}) \\times (6,022 \\times 10^{23} \\text{ mol}^{-1})$$\n\n$$E_{Mol} = 171.000 \\text{ J/mol} \\approx 171 \\text{ kJ/mol}$$\n\n### Einordnung\n\n> 💡 **Diese Energie reicht aus, um chemische Bindungen zu brechen!**\n>\n> Typische Bindungsenergien liegen bei 150-400 kJ/mol. Sichtbares Licht (und erst recht UV) kann also photochemische Reaktionen auslösen."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Definition eines Quants",
+      "question": "Wie nennt man die kleinste Energiemenge, die von einem Atom emittiert oder absorbiert werden kann?",
+      "options": [
+        "Proton",
+        "Quant",
+        "Neutron",
+        "Isotop"
+      ],
+      "correctAnswer": "Quant",
+      "explanation": "Ein Quant ist die kleinstmögliche Energieeinheit (das \"Paket\"). Im Fall von Licht spricht man von Photonen. Protonen und Neutronen sind Teilchen im Atomkern, Isotope sind Varianten eines Elements.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Photoelektrischer Effekt",
+      "question": "Was bewies der photoelektrische Effekt?",
+      "options": [
+        "Licht verhält sich ausschließlich wie eine Welle",
+        "Licht verhält sich wie Teilchen (Photonen)",
+        "Die Lichtgeschwindigkeit ist konstant",
+        "Elektronen haben keine Masse"
+      ],
+      "correctAnswer": "Licht verhält sich wie Teilchen (Photonen)",
+      "explanation": "Einstein zeigte, dass Licht aus diskreten Energiepaketen (Photonen) besteht. Nur so lässt sich erklären, warum die Frequenz und nicht die Intensität entscheidend für den Elektronenaustritt ist.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Planck-Formel",
+      "question": "Vervollständige die Planck-Formel für die Energie eines Photons",
+      "text": "Die Energie E eines Photons berechnet sich nach der Formel: E = {{blank1}} · {{blank2}}. Dabei ist h die Planck-Konstante und ν die Frequenz der Strahlung.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "h",
+          "alternatives": [
+            "H",
+            "planck",
+            "Planck-Konstante"
+          ],
+          "hint": "Die fundamentale Konstante von Planck"
+        },
+        {
+          "id": "blank2",
+          "answer": "ν",
+          "alternatives": [
+            "nu",
+            "ny",
+            "Frequenz",
+            "f"
+          ],
+          "hint": "Die Schwingungshäufigkeit pro Sekunde"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Energie und Wellenlänge",
+      "question": "Ordne die Wellenlänge der entsprechenden Energieeigenschaft zu",
+      "pairs": [
+        {
+          "term": "Kurze Wellenlänge (z.B. UV)",
+          "match": "Hohe Energie pro Photon"
+        },
+        {
+          "term": "Lange Wellenlänge (z.B. Radio)",
+          "match": "Niedrige Energie pro Photon"
+        },
+        {
+          "term": "Hohe Frequenz",
+          "match": "Hohe Energie pro Photon"
+        },
+        {
+          "term": "Niedrige Frequenz",
+          "match": "Niedrige Energie pro Photon"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Photonenenergie berechnen",
+      "question": "Berechne die Energie eines Photons mit der Frequenz ν = 2,0 × 10¹⁵ Hz.",
+      "variables": {
+        "ν": "2,0 × 10¹⁵ Hz",
+        "h": "6,63 × 10⁻³⁴ J·s"
+      },
+      "formula": "E = h \\cdot \\nu",
+      "correctAnswer": 1.33e-18,
+      "unit": "J",
+      "tolerance": 1e-19,
+      "hints": [
+        "Setze die Werte in die Formel E = h · ν ein",
+        "E = 6,63 × 10⁻³⁴ × 2,0 × 10¹⁵",
+        "Multipliziere die Zahlen: 6,63 × 2,0 = 13,26",
+        "Addiere die Exponenten: (-34) + 15 = -19"
+      ],
+      "explanation": "E = (6,63 × 10⁻³⁴ J·s) × (2,0 × 10¹⁵ s⁻¹) = 1,33 × 10⁻¹⁸ J. Dies ist typisch für UV-Strahlung.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Plancksches Wirkungsquantum",
+      "url": "https://www.youtube.com/watch?v=QuqJMStV5hY",
+      "title": "Quantenphysik: Das Plancksche Wirkungsquantum",
+      "description": "musstewissen Physik erklärt das Plancksche Wirkungsquantum und die Grundlagen der Quantenphysik.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Linienspektren von Atomen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "12-13"
+        }
+      ],
+      "content": "## Linienspektren: Der Fingerabdruck der Atome\n\n### Kontinuierliches vs. Linienspektrum\n\nWenn weißes Licht durch ein Prisma fällt, entsteht ein **kontinuierliches Spektrum** – ein Regenbogen mit fließenden Übergängen zwischen allen Farben.\n\nAber wenn Hochspannung an ein Gas in einer Röhre angelegt wird (z.B. Wasserstoff, Neon), emittiert dieses Gas Licht. Sendet man dieses Licht durch ein Prisma, sieht man etwas völlig anderes:\n\n> **Nur einzelne, scharfe farbige Linien!**\n\nDies nennt man ein **Linienemissionsspektrum**.\n\n### Warum sind Linienspektren so wichtig?\n\n- Jedes Element hat ein **einzigartiges Linienspektrum** – wie ein Fingerabdruck\n- Die Linien erscheinen immer bei exakt denselben Wellenlängen\n- Man kann Elemente über ihre Spektrallinien identifizieren (Spektralanalyse)\n\n### Die Balmer-Serie\n\nJohann Balmer entdeckte 1885, dass die sichtbaren Linien im Wasserstoffspektrum einer mathematischen Formel folgen. Diese **Balmer-Serie** umfasst die Linien:\n\n| Farbe         | Wellenlänge |\n| ------------- | ----------- |\n| Rot (Hα)      | 656 nm      |\n| Blaugrün (Hβ) | 486 nm      |\n| Blau (Hγ)     | 434 nm      |\n| Violett (Hδ)  | 410 nm      |\n\n> 💡 Die Regelmäßigkeit der Linien deutete darauf hin, dass die Atomstruktur selbst geordnet sein muss!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die elektrische Essiggurke",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "13"
+        }
+      ],
+      "content": "## Ein spektakuläres Experiment: Die elektrische Essiggurke\n\nEin beliebtes Demonstrationsexperiment zeigt Linienspektren auf eindrucksvolle Weise:\n\n### Das Experiment\n\nWenn man eine Essiggurke an Netzspannung anschließt (bitte nicht nachmachen!), beginnt sie **gelblich-orange zu leuchten**.\n\n### Die Erklärung\n\n- Die Gurke enthält Salzwasser mit **Natrium-Ionen** (Na⁺)\n- Der elektrische Strom regt die Natriumatome an\n- Beim Zurückfallen in den Grundzustand emittieren sie Licht\n- Natrium hat eine **charakteristische gelbe Doppellinie** bei 589 nm\n\n### Anwendungen im Alltag\n\nDas gleiche Prinzip erklärt viele Alltagsphänomene:\n\n| Lichtquelle       | Element                   | Farbe       |\n| ----------------- | ------------------------- | ----------- |\n| Natriumdampflampe | Natrium                   | Gelb-orange |\n| Neonröhre         | Neon                      | Rot         |\n| Leuchtstoffröhre  | Quecksilber + Leuchtstoff | Weiß        |\n| Feuerwerk         | Verschiedene              | Bunt        |\n\n### Flammenfärbung\n\nIn der analytischen Chemie nutzt man die **Flammenfärbung** zur Elementidentifikation:\n- **Lithium:** Rot\n- **Natrium:** Gelb\n- **Kalium:** Violett\n- **Kupfer:** Grün-blau\n\n> 💡 **Für Ernährungswissenschaftler:** Mit Flammenphotometrie lässt sich der Natrium- und Kaliumgehalt in Lebensmitteln bestimmen!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Bohrs Atommodell",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "14-16"
+        }
+      ],
+      "content": "## Das Bohr'sche Atommodell (1913)\n\nNiels Bohr (1885-1962) entwickelte ein Modell, das die Linienspektren erklären konnte. Seine drei revolutionären Postulate:\n\n### Postulat 1: Feste Kreisbahnen\n\n> Elektronen bewegen sich auf **bestimmten, festen Kreisbahnen** um den Kern.\n\nNicht alle Bahnen sind erlaubt – nur bestimmte, stabile Bahnen existieren.\n\n### Postulat 2: Quantisierte Energieniveaus\n\n> Jede Bahn entspricht einem bestimmten **Energieniveau**, gekennzeichnet durch die **Hauptquantenzahl n**.\n\n| n   | Bezeichnung           | Energie    |\n| --- | --------------------- | ---------- |\n| 1   | Grundzustand          | Niedrigste |\n| 2   | 1. angeregter Zustand | Höher      |\n| 3   | 2. angeregter Zustand | Noch höher |\n| ... | ...                   | ...        |\n\nJe größer n, desto weiter ist das Elektron vom Kern entfernt und desto höher ist seine Energie.\n\n### Postulat 3: Quantensprünge\n\n> Energie wird nur absorbiert oder emittiert, wenn ein Elektron von einer Bahn auf eine andere **\"springt\"**.\n\n- **Absorption:** Elektron springt auf höheres Niveau (Energie wird aufgenommen)\n- **Emission:** Elektron fällt auf niedrigeres Niveau (Energie wird als Photon abgegeben)\n\nDie Energie des emittierten/absorbierten Photons entspricht genau der Energiedifferenz zwischen den Niveaus."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Energiesprünge berechnen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "16-18"
+        }
+      ],
+      "content": "## Die Mathematik der Quantensprünge\n\n### Die Energieänderung\n\nBeim Übergang zwischen zwei Energieniveaus gilt:\n\n$$\\Delta E = E_{end} - E_{initial}$$\n\n### Die Rydberg-Gleichung\n\nFür das Wasserstoffatom lässt sich die Energieänderung exakt berechnen:\n\n$$\\Delta E = -R_H \\cdot h \\cdot c \\left( \\frac{1}{n_{end}^2} - \\frac{1}{n_{initial}^2} \\right)$$\n\nMit der **Rydberg-Konstante** in Energieeinheiten:\n$$R_H \\cdot h \\cdot c = 2,18 \\times 10^{-18} \\text{ J}$$\n\n### Vorzeichen interpretieren\n\n| Vorzeichen | Bedeutung             | Prozess                                 |\n| ---------- | --------------------- | --------------------------------------- |\n| ΔE < 0     | Energie wird frei     | **Emission** (Licht wird ausgesendet)   |\n| ΔE > 0     | Energie wird benötigt | **Absorption** (Licht wird aufgenommen) |\n\n### Beispiel: Übergang n=2 → n=1\n\n$$\\Delta E = -2,18 \\times 10^{-18} \\text{ J} \\left( \\frac{1}{1^2} - \\frac{1}{2^2} \\right)$$\n\n$$\\Delta E = -2,18 \\times 10^{-18} \\text{ J} \\times (1 - 0,25) = -2,18 \\times 10^{-18} \\text{ J} \\times 0,75$$\n\n$$\\Delta E = -1,64 \\times 10^{-18} \\text{ J}$$\n\nDas **negative Vorzeichen** zeigt: Energie wird **abgegeben** (Emission).\n\nDie entsprechende Wellenlänge: λ = 121,6 nm (UV-Bereich, Lyman-Serie)"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Energieniveaus im Wasserstoffatom",
+      "title": "Elektronenübergänge und Spektralserien",
+      "content": "```mermaid\nflowchart TB\n    subgraph NIVEAUS[\"⚡ ENERGIENIVEAUS\"]\n        direction TB\n        N5[\"n = 5 ─────────── -0,54 eV\"]\n        N4[\"n = 4 ─────────── -0,85 eV\"]\n        N3[\"n = 3 ─────────── -1,51 eV\"]\n        N2[\"n = 2 ─────────── -3,40 eV\"]\n        N1[\"n = 1 ─────────── -13,6 eV<br/>(Grundzustand)\"]\n    end\n    \n    subgraph SERIEN[\"📊 SPEKTRALSERIEN\"]\n        L[\"🔵 Lyman-Serie<br/>→ n=1<br/>UV\"]\n        B[\"🟢 Balmer-Serie<br/>→ n=2<br/>Sichtbar\"]\n        P[\"🔴 Paschen-Serie<br/>→ n=3<br/>Infrarot\"]\n    end\n    \n    N2 -->|\"Hα 656 nm<br/>rot\"| N1\n    N3 -->|\"Hβ 486 nm<br/>blau\"| N2\n    N4 -->|\"UV 97 nm\"| N1\n    \n    style N1 fill:#fee2e2\n    style N2 fill:#fef3c7\n    style N3 fill:#d1fae5\n    style N4 fill:#dbeafe\n    style N5 fill:#e0e7ff\n```\n\n## Wichtige Erkenntnisse\n\n- Je größer der Sprung (Δn), desto mehr Energie wird freigesetzt\n- Übergänge zu n=1 (Lyman) → UV-Strahlung\n- Übergänge zu n=2 (Balmer) → Sichtbares Licht\n- Übergänge zu n=3 (Paschen) → Infrarot"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Grenzen des Bohr-Modells",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "18-19"
+        }
+      ],
+      "content": "## Was das Bohr-Modell kann – und was nicht\n\n### Erfolge des Modells\n\n✅ Erklärt das Linienspektrum des Wasserstoffs exakt\n✅ Führt das Konzept quantisierter Energieniveaus ein\n✅ Erklärt, warum Atome nicht kollabieren\n✅ Sagt die richtige Ionisierungsenergie für H voraus\n\n### Grenzen des Modells\n\n❌ Funktioniert **nur für Ein-Elektronen-Systeme** (H, He⁺, Li²⁺)\n❌ Kann Spektren von Mehrelektronenatomen nicht erklären\n❌ Widerspricht der Heisenberg'schen Unschärferelation\n❌ Elektronen auf \"Bahnen\" sind physikalisch nicht haltbar\n\n### Warum scheitert das Modell?\n\nDas Bohr-Modell behandelt Elektronen wie kleine Planeten auf festen Umlaufbahnen. Aber:\n\n> **Die Quantenmechanik zeigte später: Elektronen haben Wellencharakter und können nicht auf exakte Bahnen festgelegt werden.**\n\n### Der nächste Schritt\n\nDie Lösung kam durch die **Wellenmechanik** (Schrödinger, Heisenberg):\n- Statt Bahnen: **Orbitale** (Aufenthaltswahrscheinlichkeiten)\n- Statt exakter Position: **Wahrscheinlichkeitswolken**\n\n> 💡 Das Bohr-Modell ist ein wichtiges historisches Sprungbrett, aber nicht die endgültige Beschreibung der Atomstruktur!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Linienspektren",
+      "question": "Warum zeigen Atome Linienspektren und kein kontinuierliches Spektrum?",
+      "options": [
+        "Weil die Elektronen sich frei bewegen können",
+        "Weil die Energieniveaus im Atom quantisiert sind",
+        "Weil das Prisma nur bestimmte Wellenlängen durchlässt",
+        "Weil die Lichtquelle fehlerhaft ist"
+      ],
+      "correctAnswer": "Weil die Energieniveaus im Atom quantisiert sind",
+      "explanation": "Elektronen können nur bestimmte, diskrete Energieniveaus einnehmen. Beim Wechsel zwischen diesen Niveaus wird Licht mit ganz bestimmten Wellenlängen emittiert – daher die scharfen Linien.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Absorption vs. Emission",
+      "question": "Was passiert, wenn ein Elektron von n=1 auf n=3 wechselt?",
+      "options": [
+        "Energie wird emittiert (Licht wird ausgesendet)",
+        "Energie wird absorbiert (Licht wird aufgenommen)",
+        "Das Elektron verlässt das Atom",
+        "Das Atom zerfällt radioaktiv"
+      ],
+      "correctAnswer": "Energie wird absorbiert (Licht wird aufgenommen)",
+      "explanation": "Um vom niedrigen Energieniveau (n=1, nah am Kern) auf ein höheres (n=3, weiter weg) zu kommen, muss Energie zugeführt (absorbiert) werden. Der umgekehrte Weg (n=3 → n=1) setzt Energie frei.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Grenzen des Bohr-Modells",
+      "question": "Für welches Atom funktionierte das Bohr-Modell exakt?",
+      "options": [
+        "Helium (He)",
+        "Wasserstoff (H)",
+        "Alle Atome",
+        "Eisen (Fe)"
+      ],
+      "correctAnswer": "Wasserstoff (H)",
+      "explanation": "Das Bohr-Modell konnte mathematisch exakt nur das Wasserstoffatom (1-Elektronen-System) erklären. Bei Atomen mit mehreren Elektronen versagt es, weil die Elektron-Elektron-Wechselwirkungen nicht berücksichtigt werden.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Energieübergänge",
+      "question": "Ordne die Elektronenübergänge im Wasserstoffatom nach der Energie des emittierten Photons (von niedrigster zu höchster Energie)",
+      "items": [
+        "n=3 → n=2 (Hα, rot)",
+        "n=4 → n=2 (Hβ, blau)",
+        "n=2 → n=1 (Lyman α, UV)",
+        "n=∞ → n=1 (Ionisation, UV)"
+      ],
+      "explanation": "Je größer die Energiedifferenz zwischen den Niveaus, desto energiereicher das emittierte Photon. Übergänge zum Grundzustand (n=1) setzen am meisten Energie frei.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Wellenlänge eines Übergangs",
+      "question": "Berechne die Wellenlänge des Lichts, das beim Übergang n=3 → n=2 im Wasserstoffatom emittiert wird. Nutze die Rydberg-Konstante RH = 1,097 × 10⁷ m⁻¹.",
+      "variables": {
+        "RH": "1,097 × 10⁷ m⁻¹",
+        "n_initial": "3",
+        "n_end": "2"
+      },
+      "formula": "\\frac{1}{\\lambda} = R_H \\left( \\frac{1}{n_{end}^2} - \\frac{1}{n_{initial}^2} \\right)",
+      "correctAnswer": 656,
+      "unit": "nm",
+      "tolerance": 5,
+      "hints": [
+        "Setze ein: 1/λ = 1,097×10⁷ × (1/4 - 1/9)",
+        "Berechne: 1/4 - 1/9 = 9/36 - 4/36 = 5/36",
+        "1/λ = 1,097×10⁷ × 5/36 = 1,524×10⁶ m⁻¹",
+        "λ = 1/(1,524×10⁶) = 6,56×10⁻⁷ m = 656 nm"
+      ],
+      "explanation": "Dies ist die Hα-Linie (rot) der Balmer-Serie – die stärkste sichtbare Linie im Wasserstoffspektrum.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Bohrsches Atommodell",
+      "url": "https://www.youtube.com/watch?v=d_k8yVz4eQM",
+      "title": "Bohrsches Atommodell einfach erklärt",
+      "description": "Lehrerschmidt erklärt das Bohr-Modell mit seinen Postulaten und der Erklärung der Linienspektren.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "De Broglie und Materiewellen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "20-21"
+        }
+      ],
+      "content": "## Elektronen als Wellen: De Broglies Revolution\n\nLouis de Broglie stellte 1924 eine kühne Hypothese auf:\n\n> **Wenn Licht sowohl Wellen- als auch Teilchencharakter hat, dann sollte Materie auch Wellencharakter haben!**\n\n### Die de-Broglie-Wellenlänge\n\nJedes bewegte Objekt hat eine zugeordnete Wellenlänge:\n\n$$\\lambda = \\frac{h}{m \\cdot v}$$\n\n| Symbol | Bedeutung                            |\n| ------ | ------------------------------------ |\n| λ      | de-Broglie-Wellenlänge               |\n| h      | Planck-Konstante (6,626 × 10⁻³⁴ J·s) |\n| m      | Masse des Teilchens                  |\n| v      | Geschwindigkeit                      |\n\n### Warum bemerken wir das nicht im Alltag?\n\nDie Wellenlänge hängt von der Masse ab:\n\n**Beispiel 1: Baseball (m = 145 g, v = 40 m/s)**\n$$\\lambda = \\frac{6,626 \\times 10^{-34}}{0,145 \\times 40} \\approx 10^{-34} \\text{ m}$$\n\nDas ist **unvorstellbar klein** – kleiner als jede messbare Distanz!\n\n**Beispiel 2: Elektron (m = 9,1 × 10⁻³¹ kg, v = 10⁶ m/s)**\n$$\\lambda = \\frac{6,626 \\times 10^{-34}}{9,1 \\times 10^{-31} \\times 10^6} \\approx 7 \\times 10^{-10} \\text{ m} = 0,7 \\text{ nm}$$\n\nDas ist im Bereich von **Atomabständen** – hier ist der Wellencharakter messbar!\n\n> 💡 Makroskopische Objekte haben zu viel Masse für messbare Wellenlängen."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Heisenberg-Unschärferelation",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "22-23"
+        }
+      ],
+      "content": "## Das fundamentale Limit: Heisenbergs Unschärfe\n\nWerner Heisenberg zeigte 1927, dass es eine fundamentale Grenze für unser Wissen über Teilchen gibt:\n\n### Die Unschärferelation\n\n$$\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}$$\n\noder mit dem Impuls $p = m \\cdot v$:\n\n$$\\Delta x \\cdot m \\cdot \\Delta v \\geq \\frac{h}{4\\pi}$$\n\n### Was bedeutet das?\n\n> **Es ist prinzipiell unmöglich, gleichzeitig den Ort (x) und den Impuls (p = m·v) eines Teilchens exakt zu bestimmen.**\n\n- Je genauer wir den Ort kennen → desto ungenauer der Impuls\n- Je genauer wir den Impuls kennen → desto ungenauer der Ort\n\n### Das ist keine technische Beschränkung\n\nDies ist **kein** Problem unserer Messgeräte. Es ist ein fundamentales Naturgesetz. Die Natur \"weiß\" selbst nicht genau, wo das Elektron ist, wenn sein Impuls definiert ist.\n\n### Konsequenz für Atome\n\n> **Wir können nicht mehr von festen \"Bahnen\" sprechen wie bei Bohr!**\n\nWenn ein Elektron auf einer exakten Bahn wäre, wüssten wir sowohl seinen Ort als auch seinen Impuls genau – das widerspricht der Unschärferelation.\n\nStattdessen: **Aufenthaltswahrscheinlichkeiten** (Orbitale)"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Schrödinger und die Wellenfunktion",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "23-25"
+        }
+      ],
+      "content": "## Von Bahnen zu Orbitalen: Die Schrödinger-Gleichung\n\nErwin Schrödinger entwickelte 1926 die mathematische Beschreibung des Wellencharakters von Elektronen.\n\n### Die Wellenfunktion Ψ (Psi)\n\nDie Lösungen der Schrödinger-Gleichung heißen **Wellenfunktionen** und werden mit dem griechischen Buchstaben Ψ (Psi) bezeichnet.\n\n- **Ψ selbst** hat keine direkte physikalische Bedeutung\n- **Ψ² (Psi-Quadrat)** gibt die **Aufenthaltswahrscheinlichkeit** an\n\n### Was ist ein Orbital?\n\n> Ein **Orbital** ist der dreidimensionale Raum, in dem sich ein Elektron mit einer bestimmten Wahrscheinlichkeit (meist 90%) aufhält.\n\n### Unterschied: Bahn vs. Orbital\n\n| Bohr-Modell                         | Quantenmechanik            |\n| ----------------------------------- | -------------------------- |\n| Feste Kreisbahn                     | Wahrscheinlichkeitswolke   |\n| Elektron ist an einem Punkt         | Elektron ist \"verschmiert\" |\n| Exakte Position und Geschwindigkeit | Nur Wahrscheinlichkeiten   |\n| 2D (Kreis)                          | 3D (Wolke)                 |\n\n### Visualisierung\n\nStell dir vor, du machst 1000 Fotos eines Elektrons zu verschiedenen Zeitpunkten und überlagst sie. Das resultierende Bild zeigt, wo das Elektron am häufigsten war – das ist das Orbital.\n\n> 💡 **Wichtig:** Orbitale sind **nicht** die \"Bahnen\" des Elektrons, sondern statistische Aufenthaltsbereiche!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Heisenberg-Unschärfe",
+      "question": "Was besagt die Heisenbergsche Unschärferelation?",
+      "options": [
+        "Man kann nie wissen, welches Element man vor sich hat",
+        "Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden",
+        "Elektronen bewegen sich in exakten Kreisbahnen",
+        "Die Lichtgeschwindigkeit ist die maximale Geschwindigkeit"
+      ],
+      "correctAnswer": "Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden",
+      "explanation": "Dies ist das fundamentale Prinzip der Quantenmechanik. Je genauer wir den Ort kennen, desto ungenauer wird der Impuls – und umgekehrt. Das Bohr-Modell mit seinen festen Bahnen ist damit nicht vereinbar.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Definition Orbital",
+      "question": "Was beschreibt ein Orbital?",
+      "options": [
+        "Eine feste Kreisbahn um den Atomkern",
+        "Einen Raum, in dem sich ein Elektron mit hoher Wahrscheinlichkeit aufhält",
+        "Die exakte Position des Elektrons zu jedem Zeitpunkt",
+        "Die Ladung des Atomkerns"
+      ],
+      "correctAnswer": "Einen Raum, in dem sich ein Elektron mit hoher Wahrscheinlichkeit aufhält",
+      "explanation": "Orbitale sind Wahrscheinlichkeitswolken, keine festen Bahnen. Sie zeigen den Bereich, in dem sich das Elektron mit etwa 90% Wahrscheinlichkeit befindet.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "De-Broglie-Gleichung",
+      "question": "Vervollständige die de-Broglie-Gleichung für die Materiewellenlänge",
+      "text": "Die de-Broglie-Wellenlänge eines Teilchens berechnet sich nach: λ = h / ({{blank1}} · {{blank2}}). Dabei ist h die Planck-Konstante.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "m",
+          "alternatives": [
+            "Masse",
+            "masse",
+            "M"
+          ],
+          "hint": "Die Eigenschaft, die makroskopische Objekte so groß macht"
+        },
+        {
+          "id": "blank2",
+          "answer": "v",
+          "alternatives": [
+            "Geschwindigkeit",
+            "V",
+            "velocity"
+          ],
+          "hint": "Wie schnell sich das Teilchen bewegt"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Bohr vs. Quantenmechanik",
+      "question": "Ordne die Konzepte dem richtigen Modell zu",
+      "pairs": [
+        {
+          "term": "Feste Kreisbahnen",
+          "match": "Bohr-Modell"
+        },
+        {
+          "term": "Orbitale als Wahrscheinlichkeitswolken",
+          "match": "Quantenmechanik"
+        },
+        {
+          "term": "Exakte Position bekannt",
+          "match": "Bohr-Modell"
+        },
+        {
+          "term": "Unschärferelation gilt",
+          "match": "Quantenmechanik"
+        },
+        {
+          "term": "Nur für Wasserstoff exakt",
+          "match": "Bohr-Modell"
+        },
+        {
+          "term": "Für alle Atome gültig",
+          "match": "Quantenmechanik"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Warum bemerken wir Materiewellen nicht?",
+      "scenario": "Du wirfst einen Tennisball (Masse: 58 g) mit einer Geschwindigkeit von 20 m/s. Gleichzeitig bewegt sich ein Elektron (Masse: 9,1 × 10⁻³¹ kg) mit 2 × 10⁶ m/s.",
+      "tasks": [
+        {
+          "question": "Warum bemerken wir im Alltag keine Welleneigenschaften des Tennisballs?",
+          "type": "multiple-choice",
+          "options": [
+            "Weil der Tennisball zu langsam ist",
+            "Weil die Masse des Tennisballs zu groß ist und damit λ extrem klein wird",
+            "Weil der Tennisball nicht geladen ist",
+            "Weil Tennisbälle keine Wellen sein können"
+          ],
+          "correctAnswer": "Weil die Masse des Tennisballs zu groß ist und damit λ extrem klein wird"
+        },
+        {
+          "question": "Warum ist der Wellencharakter beim Elektron wichtig?",
+          "type": "multiple-choice",
+          "options": [
+            "Elektronen sind immer schneller als Licht",
+            "Die geringe Masse führt zu einer Wellenlänge im Bereich von Atomabständen",
+            "Elektronen haben keine Masse",
+            "Elektronen können nicht als Teilchen betrachtet werden"
+          ],
+          "correctAnswer": "Die geringe Masse führt zu einer Wellenlänge im Bereich von Atomabständen"
+        }
+      ],
+      "realWorldConnection": "Diese Erkenntnis ist die Grundlage für Elektronenmikroskope, die mit \"Elektronenwellen\" arbeiten und Auflösungen erreichen, die mit Licht unmöglich wären.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Heisenbergsche Unschärferelation",
+      "url": "https://www.youtube.com/watch?v=eCj0Kox_T0o",
+      "title": "Heisenbergsche Unschärferelation einfach erklärt",
+      "description": "musstewissen Physik erklärt die Heisenbergsche Unschärferelation und ihre Bedeutung für unser Verständnis der Quantenwelt.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Hauptquantenzahl n",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "26-27"
+        }
+      ],
+      "content": "## Die vier Quantenzahlen: Adresse eines Elektrons\n\nJedes Elektron in einem Atom wird durch vier Quantenzahlen eindeutig beschrieben – wie eine Adresse. Beginnen wir mit der wichtigsten:\n\n### Die Hauptquantenzahl n\n\nDie **Hauptquantenzahl n** bestimmt:\n- Die **Schale** (Energieniveau)\n- Die **Größe** des Orbitals\n- Die **Energie** des Elektrons\n\n### Erlaubte Werte\n\n$$n = 1, 2, 3, 4, 5, ...$$\n\n| n   | Schalenname | Periode im PSE |\n| --- | ----------- | -------------- |\n| 1   | K-Schale    | 1              |\n| 2   | L-Schale    | 2              |\n| 3   | M-Schale    | 3              |\n| 4   | N-Schale    | 4              |\n\n### Wichtige Zusammenhänge\n\n- **Größere n** → Elektron ist **weiter vom Kern** entfernt\n- **Größere n** → Elektron hat **höhere Energie**\n- **Größere n** → Orbital ist **größer**\n\n### Maximale Elektronenzahl pro Schale\n\n$$\\text{Max. Elektronen} = 2n^2$$\n\n| n   | Max. Elektronen |\n| --- | --------------- |\n| 1   | 2               |\n| 2   | 8               |\n| 3   | 18              |\n| 4   | 32              |\n\n> 💡 Die Hauptquantenzahl entspricht der Zeilennummer (Periode) im Periodensystem, in der das äußerste Elektron beginnt!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Nebenquantenzahl l",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "27-28"
+        }
+      ],
+      "content": "## Die Nebenquantenzahl l: Form des Orbitals\n\nDie **Nebenquantenzahl l** (auch: Drehimpulsquantenzahl) bestimmt die **Form** des Orbitals und damit die **Unterschale**.\n\n### Erlaubte Werte\n\n$$l = 0, 1, 2, ..., (n-1)$$\n\nDie Werte von l hängen von n ab:\n- Bei n=1: l kann nur 0 sein\n- Bei n=2: l kann 0 oder 1 sein\n- Bei n=3: l kann 0, 1 oder 2 sein\n- usw.\n\n### Buchstabenbezeichnung der Unterschalen\n\n| l-Wert | Bezeichnung     | Form            |\n| ------ | --------------- | --------------- |\n| 0      | s (sharp)       | Kugelförmig     |\n| 1      | p (principal)   | Hantelförmig    |\n| 2      | d (diffuse)     | Kleeblattförmig |\n| 3      | f (fundamental) | Komplex         |\n\n### Beispiele für Orbitalbezeichnungen\n\n- **1s:** n=1, l=0 → Kugel in der 1. Schale\n- **2p:** n=2, l=1 → Hantel in der 2. Schale\n- **3d:** n=3, l=2 → Kleeblatt in der 3. Schale\n\n### Unterschalen pro Schale\n\n| Schale (n) | Mögliche Unterschalen |\n| ---------- | --------------------- |\n| 1          | 1s                    |\n| 2          | 2s, 2p                |\n| 3          | 3s, 3p, 3d            |\n| 4          | 4s, 4p, 4d, 4f        |\n\n> 💡 Die Nebenquantenzahl bestimmt die Form, nicht die Größe!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Magnetquantenzahl mₗ",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "28-29"
+        }
+      ],
+      "content": "## Die Magnetquantenzahl mₗ: Orientierung im Raum\n\nDie **Magnetquantenzahl mₗ** bestimmt die **räumliche Orientierung** eines Orbitals.\n\n### Erlaubte Werte\n\n$$m_l = -l, ..., -1, 0, +1, ..., +l$$\n\n### Anzahl der Orbitale pro Unterschale\n\nDie Anzahl möglicher mₗ-Werte (= Anzahl der Orbitale) ist:\n\n$$\\text{Anzahl Orbitale} = 2l + 1$$\n\n| Unterschale | l   | mₗ-Werte                  | Anzahl Orbitale |\n| ----------- | --- | ------------------------- | --------------- |\n| s           | 0   | 0                         | 1               |\n| p           | 1   | -1, 0, +1                 | 3               |\n| d           | 2   | -2, -1, 0, +1, +2         | 5               |\n| f           | 3   | -3, -2, -1, 0, +1, +2, +3 | 7               |\n\n### Beispiel: Die drei p-Orbitale\n\nDie drei p-Orbitale ($p_x$, $p_y$, $p_z$) haben dieselbe Form (Hantel), unterscheiden sich aber in ihrer **Orientierung**:\n\n- $p_x$ → liegt entlang der x-Achse\n- $p_y$ → liegt entlang der y-Achse\n- $p_z$ → liegt entlang der z-Achse\n\nDie drei Orbitale stehen **senkrecht zueinander** (90°-Winkel).\n\n> 💡 Alle Orbitale einer Unterschale haben die gleiche Energie (sie sind \"entartet\")."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Übersicht der Quantenzahlen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "29-30"
+        }
+      ],
+      "content": "## Zusammenfassung: Die drei räumlichen Quantenzahlen\n\n| Quantenzahl       | Symbol | Bestimmt               | Erlaubte Werte      |\n| ----------------- | ------ | ---------------------- | ------------------- |\n| Hauptquantenzahl  | n      | Schale, Energie, Größe | 1, 2, 3, 4, ...     |\n| Nebenquantenzahl  | l      | Form (Unterschale)     | 0, 1, ..., n-1      |\n| Magnetquantenzahl | mₗ     | Orientierung           | -l, ..., 0, ..., +l |\n\n### Beispiel: Alle Orbitale der 3. Schale (n=3)\n\n| Unterschale | l   | mₗ-Werte          | Orbitale                        | Anzahl         |\n| ----------- | --- | ----------------- | ------------------------------- | -------------- |\n| 3s          | 0   | 0                 | 3s                              | 1              |\n| 3p          | 1   | -1, 0, +1         | 3px, 3py, 3pz                   | 3              |\n| 3d          | 2   | -2, -1, 0, +1, +2 | 3dxy, 3dxz, 3dyz, 3dx²-y², 3dz² | 5              |\n| **Gesamt**  |     |                   |                                 | **9 Orbitale** |\n\n### Kontrolle: 9 Orbitale × 2 Elektronen = 18 Elektronen\n\nDas passt zur Formel: $2n^2 = 2 \\times 3^2 = 18$\n\n### Die \"Adresse\" eines Orbitals\n\nEin Orbital ist durch (n, l, mₗ) eindeutig bestimmt:\n\n- (2, 1, 0) → ein 2p-Orbital (das pz)\n- (3, 2, -1) → eines der 3d-Orbitale\n- (1, 0, 0) → das 1s-Orbital"
+    },
+    {
+      "type": "learning-content",
+      "topic": "s-Orbitale",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "30-31"
+        }
+      ],
+      "content": "## Die s-Orbitale: Kugelform\n\n### Charakteristika\n\n- **Form:** Kugelförmig (sphärisch)\n- **Nebenquantenzahl:** l = 0\n- **Anzahl pro Schale:** 1 (mₗ = 0)\n- **Symmetrie:** Allseitig gleich (keine bevorzugte Richtung)\n\n### Größe hängt von n ab\n\n- **1s:** Kleinste Kugel, direkt am Kern\n- **2s:** Größere Kugel\n- **3s:** Noch größer\n- usw.\n\n### Knotenflächen\n\nEine **Knotenfläche** ist ein Bereich, wo die Aufenthaltswahrscheinlichkeit exakt null ist.\n\n$$\\text{Anzahl radialer Knotenflächen} = n - l - 1$$\n\n| Orbital | n   | l   | Knotenflächen |\n| ------- | --- | --- | ------------- |\n| 1s      | 1   | 0   | 0             |\n| 2s      | 2   | 0   | 1             |\n| 3s      | 3   | 0   | 2             |\n\n### Warum sind Knotenflächen wichtig?\n\nDas 2s-Orbital ist keine \"hohle Kugel\". Es hat:\n- Eine **innere Region** hoher Aufenthaltswahrscheinlichkeit\n- Eine **Knotenebene** (Ψ = 0)\n- Eine **äußere Region** hoher Aufenthaltswahrscheinlichkeit\n\n> 💡 s-Elektronen können dem Kern sehr nahe kommen – wichtig für die Abschirmung!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "p-Orbitale",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "31-32"
+        }
+      ],
+      "content": "## Die p-Orbitale: Hantelform\n\n### Charakteristika\n\n- **Form:** Hantelförmig (zwei Lappen)\n- **Nebenquantenzahl:** l = 1\n- **Anzahl pro Schale:** 3 (mₗ = -1, 0, +1)\n- **Bezeichnung:** px, py, pz\n\n### Räumliche Orientierung\n\nDie drei p-Orbitale sind **identisch in Form und Größe**, aber **unterschiedlich orientiert**:\n\n| Orbital | Orientierung    | mₗ                          |\n| ------- | --------------- | --------------------------- |\n| px      | entlang x-Achse | ±1 (eine Linearkombination) |\n| py      | entlang y-Achse | ±1 (eine Linearkombination) |\n| pz      | entlang z-Achse | 0                           |\n\nDie Orbitale stehen **senkrecht zueinander** (90°).\n\n### Knotenebene\n\nJedes p-Orbital hat eine **Knotenebene** durch den Kern:\n- px: yz-Ebene (x = 0)\n- py: xz-Ebene (y = 0)\n- pz: xy-Ebene (z = 0)\n\nAm Kernort selbst ist die Aufenthaltswahrscheinlichkeit **null** – im Gegensatz zu s-Orbitalen!\n\n### Erst ab n = 2\n\np-Orbitale gibt es **erst ab der 2. Schale**, da für n=1 nur l=0 möglich ist.\n\n> 💡 Die drei p-Orbitale können insgesamt 6 Elektronen aufnehmen (3 × 2)."
+    },
+    {
+      "type": "learning-content",
+      "topic": "d- und f-Orbitale",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "32-33"
+        }
+      ],
+      "content": "## d- und f-Orbitale: Komplexere Formen\n\n### d-Orbitale (l = 2)\n\n- **Anzahl:** 5 pro Schale (mₗ = -2, -1, 0, +1, +2)\n- **Form:** Meist kleeblattförmig (4 Lappen)\n- **Ausnahme:** dz² hat eine \"Hantel mit Ring\"-Form\n- **Vorkommen:** Erst ab n = 3 (3d, 4d, 5d, ...)\n\nDie fünf d-Orbitale:\n- dxy, dxz, dyz → Kleeblatt zwischen den Achsen\n- dx²-y² → Kleeblatt auf den Achsen\n- dz² → Hantel entlang z mit Ring in xy-Ebene\n\n### f-Orbitale (l = 3)\n\n- **Anzahl:** 7 pro Schale\n- **Form:** Sehr komplex (meist 6-8 Lappen)\n- **Vorkommen:** Erst ab n = 4 (4f, 5f, ...)\n- **Bedeutung:** Lanthanoide und Actinoide\n\n### Zusammenfassung: Elektronen pro Unterschale\n\n| Unterschale | l   | Orbitale | Max. Elektronen |\n| ----------- | --- | -------- | --------------- |\n| s           | 0   | 1        | 2               |\n| p           | 1   | 3        | 6               |\n| d           | 2   | 5        | 10              |\n| f           | 3   | 7        | 14              |\n\n> 💡 Für die Grundlagen-Chemie sind vor allem s, p und d wichtig. f-Orbitale werden erst bei den Lanthanoiden relevant."
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Orbitalformen",
+      "title": "Schematische Darstellung der Orbitalformen",
+      "content": "```mermaid\nflowchart TB\n    subgraph ORBITALE[\"🔮 ORBITALFORMEN\"]\n        direction TB\n        \n        subgraph S[\"s-Orbitale (l=0)\"]\n            S1[\"⚫ 1s<br/>Kugel<br/>1 Orbital\"]\n        end\n        \n        subgraph P[\"p-Orbitale (l=1)\"]\n            P1[\"🎱 px py pz<br/>Hantel<br/>3 Orbitale<br/>90° zueinander\"]\n        end\n        \n        subgraph D[\"d-Orbitale (l=2)\"]\n            D1[\"🍀 5 Orbitale<br/>Kleeblatt<br/>(dz² Sonderform)\"]\n        end\n        \n        subgraph F[\"f-Orbitale (l=3)\"]\n            F1[\"✳️ 7 Orbitale<br/>Sehr komplex\"]\n        end\n    end\n    \n    subgraph ELEKTRONEN[\"⚡ MAX. ELEKTRONEN\"]\n        E1[\"2 e⁻\"]\n        E2[\"6 e⁻\"]\n        E3[\"10 e⁻\"]\n        E4[\"14 e⁻\"]\n    end\n    \n    S1 --> E1\n    P1 --> E2\n    D1 --> E3\n    F1 --> E4\n    \n    style S fill:#dbeafe\n    style P fill:#fef3c7\n    style D fill:#d1fae5\n    style F fill:#fce7f3\n```\n\n## Merkregel\n\n- **s**harp → 1 Kugel → 2 Elektronen\n- **p**rincipal → 3 Hanteln → 6 Elektronen\n- **d**iffuse → 5 Kleeblätter → 10 Elektronen\n- **f**undamental → 7 komplexe → 14 Elektronen"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "s-Orbital Form",
+      "question": "Welche Form hat ein s-Orbital?",
+      "options": [
+        "Hantelförmig",
+        "Kugelförmig",
+        "Kleeblattförmig",
+        "Pyramidal"
+      ],
+      "correctAnswer": "Kugelförmig",
+      "explanation": "s-Orbitale (l=0) sind kugelförmig (sphärisch). Sie haben keine bevorzugte Raumrichtung und sind die einzigen Orbitale, bei denen das Elektron sich direkt am Kern aufhalten kann.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Anzahl p-Orbitale",
+      "question": "Wie viele Orbitale gibt es in einer p-Unterschale (l=1)?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "correctAnswer": "3",
+      "explanation": "Die Magnetquantenzahl mₗ läuft von -l bis +l. Für l=1 sind das die Werte -1, 0, +1, also 3 Orbitale (px, py, pz). Die Formel lautet: Anzahl = 2l + 1.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Hauptquantenzahl",
+      "question": "Welche Quantenzahl bestimmt maßgeblich die Energie und Größe des Orbitals?",
+      "options": [
+        "Hauptquantenzahl (n)",
+        "Nebenquantenzahl (l)",
+        "Magnetquantenzahl (mₗ)",
+        "Spinquantenzahl (mₛ)"
+      ],
+      "correctAnswer": "Hauptquantenzahl (n)",
+      "explanation": "Die Hauptquantenzahl n bestimmt die Schale und damit primär die Energie und Größe des Orbitals. Größere n bedeutet: weiter vom Kern, höhere Energie, größeres Orbital.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Quantenzahlen und Eigenschaften",
+      "question": "Ordne jede Quantenzahl der Eigenschaft zu, die sie bestimmt",
+      "pairs": [
+        {
+          "term": "Hauptquantenzahl n",
+          "match": "Schale, Energie, Größe des Orbitals"
+        },
+        {
+          "term": "Nebenquantenzahl l",
+          "match": "Form des Orbitals (Unterschale)"
+        },
+        {
+          "term": "Magnetquantenzahl mₗ",
+          "match": "Räumliche Orientierung des Orbitals"
+        },
+        {
+          "term": "l = 0",
+          "match": "s-Orbital (kugelförmig)"
+        },
+        {
+          "term": "l = 1",
+          "match": "p-Orbital (hantelförmig)"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Orbitalgröße",
+      "question": "Ordne die s-Orbitale nach ihrer Größe (vom kleinsten zum größten)",
+      "items": [
+        "1s",
+        "2s",
+        "3s",
+        "4s"
+      ],
+      "explanation": "Die Größe eines Orbitals nimmt mit der Hauptquantenzahl n zu. Ein 4s-Orbital ist deutlich größer als ein 1s-Orbital, weil das Elektron weiter vom Kern entfernt ist.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Unterschalen-Bezeichnungen",
+      "question": "Ergänze die Buchstabenbezeichnungen für die Unterschalen",
+      "text": "Die Unterschalen werden nach historischen Spektrallinien benannt: l=0 entspricht {{blank1}}, l=1 entspricht {{blank2}}, und l=2 entspricht {{blank3}}.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "s",
+          "alternatives": [
+            "S",
+            "sharp"
+          ],
+          "hint": "Von \"sharp\" (scharf)"
+        },
+        {
+          "id": "blank2",
+          "answer": "p",
+          "alternatives": [
+            "P",
+            "principal"
+          ],
+          "hint": "Von \"principal\" (Haupt-)"
+        },
+        {
+          "id": "blank3",
+          "answer": "d",
+          "alternatives": [
+            "D",
+            "diffuse"
+          ],
+          "hint": "Von \"diffuse\" (diffus)"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Orbitale in einer Schale",
+      "question": "Berechne die Gesamtzahl der Orbitale in der Schale n=4.",
+      "variables": {
+        "n": "4",
+        "mögliche_l": "0, 1, 2, 3"
+      },
+      "formula": "\\text{Gesamtzahl} = n^2",
+      "correctAnswer": 16,
+      "unit": "Orbitale",
+      "tolerance": 0,
+      "hints": [
+        "Für n=4 sind l = 0, 1, 2, 3 möglich (s, p, d, f)",
+        "s: 1 Orbital, p: 3 Orbitale, d: 5 Orbitale, f: 7 Orbitale",
+        "1 + 3 + 5 + 7 = 16",
+        "Oder direkt: n² = 4² = 16"
+      ],
+      "explanation": "Die Gesamtzahl der Orbitale pro Schale ist n². Für n=4: 4² = 16 Orbitale (1s + 3p + 5d + 7f = 16). Diese können maximal 2×16 = 32 Elektronen aufnehmen.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Orbitale und Quantenzahlen",
+      "url": "https://www.youtube.com/watch?v=pKeTfvKZzH8",
+      "title": "Orbitale und Quantenzahlen",
+      "description": "Duden Learnattack erklärt die Quantenzahlen und die verschiedenen Orbitalformen.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Der Elektronenspin",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "34-35"
+        }
+      ],
+      "content": "## Die vierte Quantenzahl: Der Spin\n\nNeben den drei räumlichen Quantenzahlen gibt es eine vierte, die mit der Eigenrotation des Elektrons zusammenhängt.\n\n### Die Spinquantenzahl mₛ\n\nDie **Spinquantenzahl mₛ** beschreibt die Drehrichtung des Elektrons um seine eigene Achse.\n\n$$m_s = +\\frac{1}{2} \\text{ oder } -\\frac{1}{2}$$\n\n### Symbolische Darstellung\n\n| mₛ  | Bezeichnung | Symbol |\n| --- | ----------- | ------ |\n| +½  | \"Spin up\"   | ↑      |\n| -½  | \"Spin down\" | ↓      |\n\n### Konsequenz für Orbitale\n\nDa jedes Elektron einen von zwei Spinzuständen haben kann, gilt:\n\n> **Jedes Orbital kann maximal 2 Elektronen aufnehmen – eines mit Spin ↑, eines mit Spin ↓.**\n\nZwei Elektronen im selben Orbital werden als **Elektronenpaar** bezeichnet und haben **entgegengesetzten Spin**: ↑↓\n\n### Die vollständige Adresse\n\nEin Elektron wird durch **vier Quantenzahlen** eindeutig beschrieben:\n\n| Quantenzahl | Bestimmt           |\n| ----------- | ------------------ |\n| n           | Schale             |\n| l           | Form (Unterschale) |\n| mₗ          | Orientierung       |\n| mₛ          | Spin               |\n\n> 💡 Beispiel: Ein Elektron im 2p-Orbital: n=2, l=1, mₗ=0 (für pz), mₛ=+½"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Das Pauli-Prinzip",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "35-36"
+        }
+      ],
+      "content": "## Das Pauli-Prinzip: Elektronen sind Individualisten\n\nWolfgang Pauli formulierte 1925 ein fundamentales Prinzip:\n\n### Das Pauli-Ausschlussprinzip\n\n> **In einem Atom dürfen keine zwei Elektronen in allen vier Quantenzahlen übereinstimmen.**\n\n### Praktische Konsequenz\n\nDa zwei Elektronen im **selben Orbital** die gleichen Werte für n, l und mₗ haben, müssen sie sich im **Spin unterscheiden**:\n\n- Elektron 1: n, l, mₗ, mₛ = **+½** (↑)\n- Elektron 2: n, l, mₗ, mₛ = **-½** (↓)\n\nEin drittes Elektron müsste einen der mₛ-Werte wiederholen – das ist **verboten**.\n\n### Daraus folgt\n\n> **Maximal 2 Elektronen pro Orbital!**\n\n### Beispiel: 1s-Orbital\n\n| Elektron | n   | l   | mₗ  | mₛ             |\n| -------- | --- | --- | --- | -------------- |\n| 1        | 1   | 0   | 0   | +½             |\n| 2        | 1   | 0   | 0   | -½             |\n| 3        | 1   | 0   | 0   | ? ← unmöglich! |\n\nDas Heliumatom (2 Elektronen) kann beide im 1s unterbringen.\nLithium (3 Elektronen) muss das dritte Elektron in ein anderes Orbital (2s) setzen.\n\n> 💡 Das Pauli-Prinzip erklärt den Aufbau des Periodensystems!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Das Aufbauprinzip",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "36-37"
+        }
+      ],
+      "content": "## Das Aufbauprinzip: Niedrigste Energie zuerst\n\nElektronen besetzen Orbitale in der Reihenfolge **zunehmender Energie**.\n\n### Die Befüllungsreihenfolge\n\n$$1s \\rightarrow 2s \\rightarrow 2p \\rightarrow 3s \\rightarrow 3p \\rightarrow 4s \\rightarrow 3d \\rightarrow 4p \\rightarrow 5s \\rightarrow 4d \\rightarrow ...$$\n\n### Warum 4s vor 3d?\n\nDas 4s-Orbital wird **vor** dem 3d-Orbital gefüllt, obwohl n=4 > n=3!\n\n**Erklärung:** Die Energie hängt nicht nur von n ab, sondern auch von l. Das 4s-Orbital (n+l=4+0=4) hat im neutralen Atom eine etwas niedrigere Energie als 3d (n+l=3+2=5).\n\n### Merkregel: Diagonalregel\n\nMan kann sich die Reihenfolge mit Diagonalen merken:\n\n```text\n1s\n2s  2p\n3s  3p  3d\n4s  4p  4d  4f\n5s  5p  5d  5f\n↘ ↘ ↘ ↘ (diagonal von oben rechts nach unten links lesen)\n```\n\n### Wichtig zu beachten\n\n- Bei Ionen kann sich die Reihenfolge ändern!\n- Bei d- und f-Elementen gibt es Ausnahmen (z.B. Cr, Cu)\n\n> 💡 Das Periodensystem ist nach dem Aufbauprinzip geordnet!"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Energiereihenfolge der Orbitale",
+      "title": "Aufbauprinzip: Befüllungsreihenfolge",
+      "content": "```mermaid\nflowchart LR\n    subgraph REIHENFOLGE[\"⚡ BEFÜLLUNGSREIHENFOLGE\"]\n        direction LR\n        O1[\"1s<br/>2 e⁻\"] --> O2[\"2s<br/>2 e⁻\"]\n        O2 --> O3[\"2p<br/>6 e⁻\"]\n        O3 --> O4[\"3s<br/>2 e⁻\"]\n        O4 --> O5[\"3p<br/>6 e⁻\"]\n        O5 --> O6[\"4s<br/>2 e⁻\"]\n        O6 --> O7[\"3d<br/>10 e⁻\"]\n        O7 --> O8[\"4p<br/>6 e⁻\"]\n        O8 --> O9[\"5s<br/>2 e⁻\"]\n        O9 --> O10[\"4d<br/>10 e⁻\"]\n    end\n    \n    subgraph ENERGIE[\"📈 ENERGIE\"]\n        LOW[\"Niedrig\"] -.-> O1\n        HIGH[\"Hoch\"] -.-> O10\n    end\n    \n    style O1 fill:#dbeafe\n    style O2 fill:#dbeafe\n    style O3 fill:#fef3c7\n    style O4 fill:#dbeafe\n    style O5 fill:#fef3c7\n    style O6 fill:#dbeafe\n    style O7 fill:#d1fae5\n    style O8 fill:#fef3c7\n```\n\n## Merke\n\nDie Energie steigt von links nach rechts. Beachte: 4s wird VOR 3d gefüllt!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Hundsche Regel",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "37-38"
+        }
+      ],
+      "content": "## Die Hund'sche Regel: Erst einzeln, dann paarweise\n\nFriedrich Hund formulierte eine Regel für die Besetzung energiegleicher (entarteter) Orbitale:\n\n### Die Hund'sche Regel\n\n> **Entartete Orbitale werden erst einfach mit gleichem Spin besetzt, bevor Elektronenpaarung eintritt.**\n\n### Die \"Bussitzplatz-Regel\"\n\nStell dir einen Bus vor: Passagiere setzen sich zuerst auf leere Doppelsitze, bevor sie sich zu jemandem dazusetzen. Elektronen verhalten sich ähnlich!\n\n### Beispiel: Stickstoff (N, Z=7)\n\nStickstoff hat 7 Elektronen: 1s² 2s² 2p³\n\nDie drei 2p-Elektronen verteilen sich auf:\n\n| px  | py  | pz  |\n| --- | --- | --- |\n| ↑   | ↑   | ↑   |\n\n**Nicht so** (falsch):\n\n| px  | py  | pz   |\n| --- | --- | ---- |\n| ↑↓  | ↑   | leer |\n\n### Warum ist das energetisch günstiger?\n\n- Elektronen mit gleichem Spin halten Abstand (Pauli-Prinzip)\n- Weniger Elektron-Elektron-Abstoßung\n- Niedrigere Gesamtenergie\n\n### Ungepaarte Elektronen und Magnetismus\n\nAtome mit ungepaarten Elektronen sind **paramagnetisch** – sie werden von Magneten angezogen.\n\n> 💡 Die Hund'sche Regel gilt für alle Unterschalen mit mehreren Orbitalen (p, d, f)."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Elektronenkonfiguration schreiben",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "38-40"
+        }
+      ],
+      "content": "## Elektronenkonfigurationen aufstellen\n\nDie **Elektronenkonfiguration** gibt an, wie die Elektronen eines Atoms auf die Orbitale verteilt sind.\n\n### Schreibweise\n\n**Orbital^Elektronenzahl**\n\nBeispiel: 1s² 2s² 2p⁶ 3s¹ (Natrium)\n\n### Beispiele für die ersten Elemente\n\n| Element | Z   | Elektronenkonfiguration |\n| ------- | --- | ----------------------- |\n| H       | 1   | 1s¹                     |\n| He      | 2   | 1s²                     |\n| Li      | 3   | 1s² 2s¹                 |\n| Be      | 4   | 1s² 2s²                 |\n| B       | 5   | 1s² 2s² 2p¹             |\n| C       | 6   | 1s² 2s² 2p²             |\n| N       | 7   | 1s² 2s² 2p³             |\n| O       | 8   | 1s² 2s² 2p⁴             |\n| F       | 9   | 1s² 2s² 2p⁵             |\n| Ne      | 10  | 1s² 2s² 2p⁶             |\n\n### Übergangsmetalle\n\n| Element | Z   | Elektronenkonfiguration      |\n| ------- | --- | ---------------------------- |\n| Sc      | 21  | 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹  |\n| Fe      | 26  | 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶  |\n| Zn      | 30  | 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ |\n\n### Ausnahmen: Cr und Cu\n\nHalbvolle und volle d-Schalen sind besonders stabil:\n- **Cr (Z=24):** [Ar] 4s¹ 3d⁵ (nicht 4s² 3d⁴)\n- **Cu (Z=29):** [Ar] 4s¹ 3d¹⁰ (nicht 4s² 3d⁹)\n\n> 💡 Die d-Schale wird hier \"auf Kosten\" eines s-Elektrons halb/voll gefüllt."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Kurzschreibweise mit Edelgaskern",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k6",
+          "pages": "40-41"
+        }
+      ],
+      "content": "## Die Kurzschreibweise: Edelgaskern-Notation\n\nBei schweren Atomen wird die Elektronenkonfiguration sehr lang. Die **Kurzschreibweise** nutzt den Edelgaskern als Abkürzung.\n\n### Das Prinzip\n\nMan schreibt das Symbol des vorhergehenden Edelgases in eckige Klammern und fügt nur die zusätzlichen Elektronen hinzu.\n\n### Edelgase als Referenz\n\n| Edelgas | Symbol | Konfiguration     |\n| ------- | ------ | ----------------- |\n| Helium  | [He]   | 1s²               |\n| Neon    | [Ne]   | 1s² 2s² 2p⁶       |\n| Argon   | [Ar]   | [Ne] 3s² 3p⁶      |\n| Krypton | [Kr]   | [Ar] 4s² 3d¹⁰ 4p⁶ |\n\n### Beispiele\n\n| Element | Z   | Vollständig                 | Kurzschreibweise  |\n| ------- | --- | --------------------------- | ----------------- |\n| Na      | 11  | 1s² 2s² 2p⁶ 3s¹             | [Ne] 3s¹          |\n| Cl      | 17  | 1s² 2s² 2p⁶ 3s² 3p⁵         | [Ne] 3s² 3p⁵      |\n| Ca      | 20  | 1s² 2s² 2p⁶ 3s² 3p⁶ 4s²     | [Ar] 4s²          |\n| Fe      | 26  | 1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶ | [Ar] 4s² 3d⁶      |\n| Br      | 35  | ...                         | [Ar] 4s² 3d¹⁰ 4p⁵ |\n\n### Vorteile\n\n- Schneller zu schreiben\n- Hebt die **Valenzelektronen** hervor (außerhalb des Edelgaskerns)\n- Verdeutlicht die Stellung im Periodensystem\n\n> 💡 Die Valenzelektronen (außerhalb des Edelgaskerns) bestimmen die chemischen Eigenschaften!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Pauli-Prinzip",
+      "question": "Wie viele Elektronen können maximal in einem einzelnen Orbital sein?",
+      "options": [
+        "1",
+        "2",
+        "6",
+        "8"
+      ],
+      "correctAnswer": "2",
+      "explanation": "Nach dem Pauli-Prinzip dürfen keine zwei Elektronen alle vier Quantenzahlen teilen. Da n, l und mₗ für ein Orbital festgelegt sind, können sich nur zwei Elektronen mit entgegengesetztem Spin (mₛ = +½ und -½) darin aufhalten.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Aufbaureihenfolge",
+      "question": "Welches Orbital wird zuerst gefüllt: 4s oder 3d?",
+      "options": [
+        "3d, weil n kleiner ist",
+        "4s, weil es energetisch günstiger ist",
+        "Beide gleichzeitig",
+        "4s und 3d haben die gleiche Energie"
+      ],
+      "correctAnswer": "4s, weil es energetisch günstiger ist",
+      "explanation": "Obwohl 3d eine kleinere Hauptquantenzahl hat, liegt das 4s-Orbital im neutralen Atom energetisch niedriger. Die Befüllungsreihenfolge ist: ...3p → 4s → 3d → 4p...",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Hundsche Regel",
+      "question": "Wie werden entartete Orbitale (z.B. die drei 2p-Orbitale) nach der Hundschen Regel besetzt?",
+      "options": [
+        "Erst alle Orbitale doppelt besetzen, dann die nächsten",
+        "Zufällig",
+        "Erst einfach mit gleichem Spin, dann doppelt besetzen",
+        "Erst einfach mit wechselndem Spin"
+      ],
+      "correctAnswer": "Erst einfach mit gleichem Spin, dann doppelt besetzen",
+      "explanation": "Die Hundsche Regel besagt, dass entartete Orbitale zunächst einzeln mit parallelem Spin (alle ↑ oder alle ↓) besetzt werden, bevor Elektronenpaarung eintritt. Das minimiert die Elektron-Elektron-Abstoßung.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Element und Konfiguration",
+      "question": "Ordne jedes Element seiner Elektronenkonfiguration zu",
+      "pairs": [
+        {
+          "term": "Kohlenstoff (C, Z=6)",
+          "match": "1s² 2s² 2p²"
+        },
+        {
+          "term": "Neon (Ne, Z=10)",
+          "match": "1s² 2s² 2p⁶"
+        },
+        {
+          "term": "Natrium (Na, Z=11)",
+          "match": "[Ne] 3s¹"
+        },
+        {
+          "term": "Chlor (Cl, Z=17)",
+          "match": "[Ne] 3s² 3p⁵"
+        },
+        {
+          "term": "Eisen (Fe, Z=26)",
+          "match": "[Ar] 4s² 3d⁶"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Befüllungsreihenfolge",
+      "question": "Ordne die Orbitale nach der Befüllungsreihenfolge (vom ersten zum letzten)",
+      "items": [
+        "1s",
+        "2s",
+        "2p",
+        "3s",
+        "3p",
+        "4s",
+        "3d",
+        "4p"
+      ],
+      "explanation": "Die Aufbaureihenfolge folgt zunehmender Energie. Beachte: 4s wird VOR 3d gefüllt, weil es im neutralen Atom etwas niedriger in der Energie liegt.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Elektronenkonfiguration aufstellen",
+      "scenario": "Du sollst die Elektronenkonfiguration von Arsen (As, Z=33) aufstellen. Arsen ist ein Halbmetall in der 5. Hauptgruppe.",
+      "tasks": [
+        {
+          "question": "Welcher Edelgaskern kommt vor Arsen?",
+          "type": "multiple-choice",
+          "options": [
+            "[He]",
+            "[Ne]",
+            "[Ar]",
+            "[Kr]"
+          ],
+          "correctAnswer": "[Ar]"
+        },
+        {
+          "question": "Wie viele Elektronen muss Arsen nach dem Ar-Kern noch haben?",
+          "type": "calculation",
+          "correctAnswer": 15,
+          "tolerance": 0,
+          "unit": "Elektronen"
+        },
+        {
+          "question": "Wie lautet die vollständige Kurzschreibweise für As?",
+          "type": "multiple-choice",
+          "options": [
+            "[Ar] 4s² 3d¹⁰ 4p³",
+            "[Ar] 4s² 4p⁵",
+            "[Ar] 3d¹⁰ 4s² 4p³",
+            "[Kr] 4s² 4p³"
+          ],
+          "correctAnswer": "[Ar] 4s² 3d¹⁰ 4p³"
+        },
+        {
+          "question": "Wie viele ungepaarte Elektronen hat Arsen?",
+          "type": "calculation",
+          "correctAnswer": 3,
+          "tolerance": 0,
+          "unit": "ungepaarte e⁻"
+        }
+      ],
+      "realWorldConnection": "Arsen ist trotz seiner Giftigkeit ein wichtiges Spurenelement in der Umwelt. Die Elektronenkonfiguration erklärt seine Stellung in der 5. Hauptgruppe (3 ungepaarte p-Elektronen wie bei N und P).",
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Bereitschaft für den Vorlesungs-Test",
+      "question": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
+      "checkpoints": [
+        "Ich kann die Beziehung c = λ · ν anwenden und Frequenzen/Wellenlängen berechnen",
+        "Ich kann das elektromagnetische Spektrum nach Energie ordnen",
+        "Ich verstehe den Zusammenhang E = h · ν zwischen Energie und Frequenz",
+        "Ich kann den photoelektrischen Effekt erklären",
+        "Ich verstehe das Bohr-Modell und warum Atome Linienspektren zeigen",
+        "Ich kann erklären, was die Heisenbergsche Unschärferelation besagt",
+        "Ich kenne die vier Quantenzahlen und ihre Bedeutung (n, l, mₗ, mₛ)",
+        "Ich kann s-, p- und d-Orbitale nach Form und Anzahl unterscheiden",
+        "Ich verstehe das Pauli-Prinzip (max. 2 e⁻ pro Orbital)",
+        "Ich kann die Hundsche Regel anwenden",
+        "Ich kann Elektronenkonfigurationen aufstellen und in Kurzschreibweise notieren"
+      ],
+      "successMessage": "Super! Du bist gut vorbereitet für den Test. Viel Erfolg!",
+      "reviewHint": "Gehe die nicht abgehakten Themen noch einmal durch, bevor du den Test startest.",
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Elektromagnetische Strahlung",
+      "question": "Welche der folgenden Aussagen über elektromagnetische Strahlung sind korrekt?",
+      "options": [
+        "Wellenlänge und Frequenz sind indirekt proportional (c = λ · ν)",
+        "Alle elektromagnetischen Wellen bewegen sich im Vakuum mit Lichtgeschwindigkeit",
+        "Je kürzer die Wellenlänge, desto höher die Energie eines Photons",
+        "Radiowellen haben mehr Energie als UV-Strahlung",
+        "Die Amplitude bestimmt die Farbe des Lichts"
+      ],
+      "correctAnswers": [
+        "Wellenlänge und Frequenz sind indirekt proportional (c = λ · ν)",
+        "Alle elektromagnetischen Wellen bewegen sich im Vakuum mit Lichtgeschwindigkeit",
+        "Je kürzer die Wellenlänge, desto höher die Energie eines Photons"
+      ],
+      "explanation": "**Erklärung:** Die Lichtgeschwindigkeit c ist konstant, daher sind λ und ν indirekt proportional. Mit E = hν folgt: kurze λ → hohe ν → hohe E. Radiowellen haben die niedrigste Energie, UV die höhere. Die Amplitude bestimmt die Intensität (Helligkeit), nicht die Farbe."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "EM-Spektrum Energie",
+      "question": "Ordne die folgenden Strahlungsarten korrekt nach ihrer Energie ein. Welche Aussagen sind richtig?",
+      "options": [
+        "Gammastrahlung hat die höchste Energie im EM-Spektrum",
+        "Infrarotstrahlung hat mehr Energie als sichtbares Licht",
+        "UV-Strahlung hat mehr Energie als sichtbares Licht",
+        "Mikrowellen haben weniger Energie als Röntgenstrahlen",
+        "Blaues Licht hat mehr Energie als rotes Licht"
+      ],
+      "correctAnswers": [
+        "Gammastrahlung hat die höchste Energie im EM-Spektrum",
+        "UV-Strahlung hat mehr Energie als sichtbares Licht",
+        "Mikrowellen haben weniger Energie als Röntgenstrahlen",
+        "Blaues Licht hat mehr Energie als rotes Licht"
+      ],
+      "explanation": "**Erklärung:** Die Energiereihenfolge ist: Radio < Mikro < IR < Sichtbar < UV < Röntgen < Gamma. Im sichtbaren Bereich hat blaues Licht (kürzere λ) mehr Energie als rotes (längere λ). Infrarot hat weniger Energie als sichtbares Licht, nicht mehr."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Photoelektrischer Effekt",
+      "question": "Welche Aussagen zum photoelektrischen Effekt sind korrekt?",
+      "options": [
+        "Der Effekt zeigte, dass Licht Teilchencharakter hat",
+        "Die Intensität des Lichts bestimmt, ob Elektronen emittiert werden",
+        "Es gibt eine Mindestfrequenz für den Elektronenaustritt",
+        "Jedes Photon trägt die Energie E = h · ν",
+        "Einstein erhielt dafür den Nobelpreis"
+      ],
+      "correctAnswers": [
+        "Der Effekt zeigte, dass Licht Teilchencharakter hat",
+        "Es gibt eine Mindestfrequenz für den Elektronenaustritt",
+        "Jedes Photon trägt die Energie E = h · ν",
+        "Einstein erhielt dafür den Nobelpreis"
+      ],
+      "explanation": "**Erklärung:** Der photoelektrische Effekt zeigte, dass Licht aus diskreten Energiepaketen (Photonen) besteht. Die Frequenz, nicht die Intensität, bestimmt, ob Elektronen emittiert werden können. Einstein erklärte dies 1905 und erhielt 1921 den Nobelpreis."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Bohrsches Atommodell",
+      "question": "Welche Aussagen zum Bohrschen Atommodell sind korrekt?",
+      "options": [
+        "Elektronen bewegen sich auf festen Kreisbahnen um den Kern",
+        "Jede Bahn entspricht einem quantisierten Energieniveau",
+        "Das Modell erklärt die Spektren aller Atome exakt",
+        "Beim Übergang zwischen Niveaus wird Energie als Photon emittiert oder absorbiert",
+        "Die Hauptquantenzahl n gibt das Energieniveau an"
+      ],
+      "correctAnswers": [
+        "Elektronen bewegen sich auf festen Kreisbahnen um den Kern",
+        "Jede Bahn entspricht einem quantisierten Energieniveau",
+        "Beim Übergang zwischen Niveaus wird Energie als Photon emittiert oder absorbiert",
+        "Die Hauptquantenzahl n gibt das Energieniveau an"
+      ],
+      "explanation": "**Erklärung:** Das Bohr-Modell postuliert feste Bahnen mit quantisierten Energien. Es erklärt jedoch nur das Wasserstoffspektrum exakt, nicht die Spektren von Mehrelektronenatomen. Bei Atomübergängen werden Photonen emittiert (Energie frei) oder absorbiert (Energie aufgenommen)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Elektronenübergänge",
+      "question": "Welche der folgenden Elektronenübergänge im Wasserstoffatom sind mit Emission von Licht verbunden?",
+      "options": [
+        "n = 3 → n = 1",
+        "n = 1 → n = 4",
+        "n = 5 → n = 2",
+        "n = 2 → n = 3",
+        "n = 4 → n = 2"
+      ],
+      "correctAnswers": [
+        "n = 3 → n = 1",
+        "n = 5 → n = 2",
+        "n = 4 → n = 2"
+      ],
+      "explanation": "**Erklärung:** Bei Übergängen von höheren zu niedrigeren Energieniveaus (größeres n → kleineres n) wird Energie freigesetzt und als Photon emittiert. Bei Übergängen zu höheren Niveaus (n=1→n=4 oder n=2→n=3) muss Energie absorbiert werden."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Heisenberg-Unschärfe",
+      "question": "Welche Konsequenzen hat die Heisenbergsche Unschärferelation für das Atommodell?",
+      "options": [
+        "Elektronen können nicht auf exakten Bahnen beschrieben werden",
+        "Wir können nur Aufenthaltswahrscheinlichkeiten angeben",
+        "Das Bohr-Modell ist mit der Unschärferelation vereinbar",
+        "Orbitale ersetzen das Konzept der festen Elektronenbahnen",
+        "Je genauer der Ort bekannt ist, desto ungenauer der Impuls"
+      ],
+      "correctAnswers": [
+        "Elektronen können nicht auf exakten Bahnen beschrieben werden",
+        "Wir können nur Aufenthaltswahrscheinlichkeiten angeben",
+        "Orbitale ersetzen das Konzept der festen Elektronenbahnen",
+        "Je genauer der Ort bekannt ist, desto ungenauer der Impuls"
+      ],
+      "explanation": "**Erklärung:** Die Unschärferelation besagt, dass Ort und Impuls nicht gleichzeitig exakt bestimmbar sind. Dies widerspricht dem Bohr-Modell mit seinen definierten Bahnen. In der Quantenmechanik beschreiben Orbitale Wahrscheinlichkeitsverteilungen."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Quantenzahlen",
+      "question": "Welche der folgenden Quantenzahlen-Kombinationen sind gültig?",
+      "options": [
+        "n=2, l=1, mₗ=0, mₛ=+½",
+        "n=1, l=1, mₗ=0, mₛ=+½",
+        "n=3, l=2, mₗ=-2, mₛ=-½",
+        "n=2, l=2, mₗ=0, mₛ=+½",
+        "n=4, l=0, mₗ=0, mₛ=+½"
+      ],
+      "correctAnswers": [
+        "n=2, l=1, mₗ=0, mₛ=+½",
+        "n=3, l=2, mₗ=-2, mₛ=-½",
+        "n=4, l=0, mₗ=0, mₛ=+½"
+      ],
+      "explanation": "**Erklärung:** Die Regeln sind: l = 0 bis n-1 und mₗ = -l bis +l.\n- n=1, l=1 ist ungültig (l max = n-1 = 0)\n- n=2, l=2 ist ungültig (l max = n-1 = 1)\nDie anderen Kombinationen erfüllen alle Bedingungen."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Orbital-Eigenschaften",
+      "question": "Welche Aussagen zu Orbitalformen sind korrekt?",
+      "options": [
+        "s-Orbitale sind kugelförmig",
+        "p-Orbitale sind hantelförmig und es gibt 3 davon pro Unterschale",
+        "d-Orbitale treten erst ab n=2 auf",
+        "Die Nebenquantenzahl l bestimmt die Form des Orbitals",
+        "Alle p-Orbitale einer Unterschale haben die gleiche Energie"
+      ],
+      "correctAnswers": [
+        "s-Orbitale sind kugelförmig",
+        "p-Orbitale sind hantelförmig und es gibt 3 davon pro Unterschale",
+        "Die Nebenquantenzahl l bestimmt die Form des Orbitals",
+        "Alle p-Orbitale einer Unterschale haben die gleiche Energie"
+      ],
+      "explanation": "**Erklärung:** s-Orbitale (l=0) sind kugelförmig, p-Orbitale (l=1) hantelförmig mit 3 Orientierungen. d-Orbitale (l=2) gibt es erst ab n=3 (nicht n=2), da l ≤ n-1 sein muss. Orbitale derselben Unterschale sind entartet (energiegleich)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Pauli und Hund",
+      "question": "Welche Aussagen zu den Besetzungsregeln sind korrekt?",
+      "options": [
+        "Nach dem Pauli-Prinzip können maximal 2 Elektronen in einem Orbital sein",
+        "Zwei Elektronen im selben Orbital müssen entgegengesetzten Spin haben",
+        "Nach der Hundschen Regel werden entartete Orbitale erst paarweise besetzt",
+        "Die Hundsche Regel minimiert die Elektron-Elektron-Abstoßung",
+        "Ungepaarte Elektronen haben parallelen Spin"
+      ],
+      "correctAnswers": [
+        "Nach dem Pauli-Prinzip können maximal 2 Elektronen in einem Orbital sein",
+        "Zwei Elektronen im selben Orbital müssen entgegengesetzten Spin haben",
+        "Die Hundsche Regel minimiert die Elektron-Elektron-Abstoßung",
+        "Ungepaarte Elektronen haben parallelen Spin"
+      ],
+      "explanation": "**Erklärung:** Das Pauli-Prinzip erlaubt max. 2 e⁻ pro Orbital mit entgegengesetztem Spin. Die Hundsche Regel besagt: Erst einfach besetzen (mit parallelem Spin), dann paaren – nicht umgekehrt. Dies minimiert die Abstoßung."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Elektronenkonfiguration",
+      "question": "Welche Elektronenkonfigurationen sind korrekt?",
+      "options": [
+        "Sauerstoff (Z=8): 1s² 2s² 2p⁴",
+        "Calcium (Z=20): [Ar] 4s²",
+        "Eisen (Z=26): [Ar] 3d⁶ 4s²",
+        "Kupfer (Z=29): [Ar] 4s² 3d⁹",
+        "Chlor (Z=17): [Ne] 3s² 3p⁵"
+      ],
+      "correctAnswers": [
+        "Sauerstoff (Z=8): 1s² 2s² 2p⁴",
+        "Calcium (Z=20): [Ar] 4s²",
+        "Eisen (Z=26): [Ar] 3d⁶ 4s²",
+        "Chlor (Z=17): [Ne] 3s² 3p⁵"
+      ],
+      "explanation": "**Erklärung:** Sauerstoff, Calcium, Eisen und Chlor haben die angegebenen Konfigurationen. Kupfer ist eine Ausnahme: Es hat [Ar] 4s¹ 3d¹⁰ (nicht 4s² 3d⁹), weil eine volle d-Schale besonders stabil ist."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Aufbaureihenfolge",
+      "question": "Welche Aussagen zur Befüllungsreihenfolge der Orbitale sind korrekt?",
+      "options": [
+        "Das 4s-Orbital wird vor dem 3d-Orbital gefüllt",
+        "Das 3d-Orbital wird vor dem 4p-Orbital gefüllt",
+        "Die Reihenfolge ist: 3s → 3p → 3d → 4s",
+        "Das 5s-Orbital wird vor dem 4d-Orbital gefüllt",
+        "Die Energie eines Orbitals hängt nur von n ab"
+      ],
+      "correctAnswers": [
+        "Das 4s-Orbital wird vor dem 3d-Orbital gefüllt",
+        "Das 3d-Orbital wird vor dem 4p-Orbital gefüllt",
+        "Das 5s-Orbital wird vor dem 4d-Orbital gefüllt"
+      ],
+      "explanation": "**Erklärung:** Die korrekte Reihenfolge ist: ...3p → 4s → 3d → 4p → 5s → 4d... Das 4s liegt energetisch niedriger als 3d. Die Energie hängt von n UND l ab (nicht nur von n), daher ist die letzte Aussage falsch."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Anwendung: Spektroskopie",
+      "question": "Welche Aussagen zur Anwendung der Elektronenstruktur in der Spektroskopie sind korrekt?",
+      "options": [
+        "Jedes Element hat ein einzigartiges Emissionsspektrum (Fingerabdruck)",
+        "Die gelbe Natriumlinie bei 589 nm entsteht durch Elektronenübergänge",
+        "Flammenfärbung basiert auf der Emission von Photonen bei Elektronenübergängen",
+        "UV-Vis-Spektroskopie nutzt nur den UV-Bereich des Spektrums",
+        "Die Atomabsorptionsspektroskopie (AAS) wird zur Elementanalyse in Lebensmitteln eingesetzt"
+      ],
+      "correctAnswers": [
+        "Jedes Element hat ein einzigartiges Emissionsspektrum (Fingerabdruck)",
+        "Die gelbe Natriumlinie bei 589 nm entsteht durch Elektronenübergänge",
+        "Flammenfärbung basiert auf der Emission von Photonen bei Elektronenübergängen",
+        "Die Atomabsorptionsspektroskopie (AAS) wird zur Elementanalyse in Lebensmitteln eingesetzt"
+      ],
+      "explanation": "**Erklärung:** Linienspektren sind elementspezifisch. Natrium emittiert charakteristisches gelbes Licht. Flammenfärbung und AAS nutzen diese Prinzipien zur Elementanalyse. UV-Vis-Spektroskopie nutzt sowohl UV als auch sichtbares Licht (daher \"UV-Vis\")."
+    }
+  ],
+  "generatedAt": "2026-01-12T22:43:24.022Z"
+}
