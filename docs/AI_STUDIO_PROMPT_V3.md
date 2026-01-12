@@ -323,8 +323,25 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 - **NIEMALS URLs erfinden** - Jede URL muss ein echtes Video sein
 - **Nur einbettbare Videos** - Standard YouTube-URLs (youtube.com/watch?v=...)
-- **Doppelt prüfen:** Vor dem Einfügen sicherstellen, dass das Video existiert
 - **Im Zweifel weglassen:** Lieber keine Video-Empfehlung als eine falsche
+
+### Video-Verifizierung mit oEmbed API
+
+**BEVOR du ein Video empfiehlst, verifiziere es mit diesem API-Call:**
+
+```text
+https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=[VIDEO_ID]&format=json
+```
+
+- ✅ Wenn JSON mit `"title"` zurückkommt → Video existiert und ist einbettbar
+- ❌ Wenn `Not Found` oder Fehler → Video existiert NICHT oder ist nicht einbettbar
+
+**Beispiel-Verifizierung:**
+
+```text
+GET https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=N2u8Syb-CIk&format=json
+→ {"title":"Dichte berechnen..."} ✓ OK
+```
 
 ⛔ **VERBOTENE KANÄLE (blockieren Embedding auf externen Seiten):**
 - **simpleclub** - NICHT verwenden! Hat Domain-Restrictions für Embedding
@@ -346,6 +363,7 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 > 📺 **Video-Empfehlung:** "[Exakter Videotitel vom Kanal]"
 > **Kanal:** [Kanalname - NICHT simpleclub!]
 > **URL:** https://www.youtube.com/watch?v=[VIDEO_ID]
+> **oEmbed-verifiziert:** ✓
 ```
 
 **WENN du dir nicht 100% sicher bist, dass ein Video existiert und einbettbar ist:**
@@ -370,7 +388,8 @@ Bevor du antwortest, prüfe:
 - [ ] ALLE Informationen aus dem PDF übernommen?
 - [ ] JEDES Kapitel hat 3-5 Selbsttest-Fragen?
 - [ ] JEDES Kapitel hat Video-Empfehlung?
-- [ ] Video-Empfehlungen sind ECHTE Videos (keine erfundenen URLs)?
+- [ ] Video-Empfehlungen sind mit oEmbed API verifiziert?
+- [ ] KEINE Videos von simpleclub (Embedding blockiert)?
 - [ ] Am Ende MINDESTENS 15 Prüfungsaufgaben?
 - [ ] Prüfungsaufgaben haben Punkteverteilung?
 - [ ] Prüfungsaufgaben haben Musterlösungen in `<details>`?
