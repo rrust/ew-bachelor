@@ -228,13 +228,13 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ## Prüfungsstatistik
 
-| Aufgabentyp | Anzahl | Punkte gesamt |
-|-------------|--------|---------------|
-| Konzeptverständnis | 4 | 32 |
-| Berechnungen | 4 | 36 |
-| Multiple Choice | 4 | 24 |
-| Transferaufgaben | 3 | 28 |
-| **Gesamt** | **15** | **120** |
+| Aufgabentyp        | Anzahl | Punkte gesamt |
+| ------------------ | ------ | ------------- |
+| Konzeptverständnis | 4      | 32            |
+| Berechnungen       | 4      | 36            |
+| Multiple Choice    | 4      | 24            |
+| Transferaufgaben   | 3      | 28            |
+| **Gesamt**         | **15** | **120**       |
 
 **Notenschlüssel (Vorschlag):**
 - Sehr gut (1): ≥90% (≥108 Punkte)
@@ -252,11 +252,11 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 **Zweck:** Lernfortschrittskontrolle während des Lernens
 
-| Niveau | Beispiel | Kognitive Stufe |
-|--------|----------|-----------------|
-| Wissen | "Was ist die Definition von X?" | Erinnern |
-| Verständnis | "Erkläre den Unterschied zwischen X und Y" | Verstehen |
-| Einfache Anwendung | "Berechne mit gegebener Formel" | Anwenden |
+| Niveau             | Beispiel                                   | Kognitive Stufe |
+| ------------------ | ------------------------------------------ | --------------- |
+| Wissen             | "Was ist die Definition von X?"            | Erinnern        |
+| Verständnis        | "Erkläre den Unterschied zwischen X und Y" | Verstehen       |
+| Einfache Anwendung | "Berechne mit gegebener Formel"            | Anwenden        |
 
 **Anzahl pro Kapitel:** 3-5 Fragen
 **Format:** Multiple Choice (single/multiple), kurze Rechenaufgaben
@@ -266,14 +266,14 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 **Zweck:** Modulprüfung, echte Leistungsbewertung
 
-| Niveau | Beispiel | Kognitive Stufe |
-|--------|----------|-----------------|
-| Analyse | "Vergleiche zwei Konzepte und bewerte ihre Anwendbarkeit" | Analysieren |
-| Synthese | "Kombiniere Wissen aus Kap. 1 und 3 für neues Problem" | Evaluieren |
-| Transfer | "Wende Konzepte auf unbekanntes Szenario an" | Kreieren |
+| Niveau   | Beispiel                                                  | Kognitive Stufe |
+| -------- | --------------------------------------------------------- | --------------- |
+| Analyse  | "Vergleiche zwei Konzepte und bewerte ihre Anwendbarkeit" | Analysieren     |
+| Synthese | "Kombiniere Wissen aus Kap. 1 und 3 für neues Problem"    | Evaluieren      |
+| Transfer | "Wende Konzepte auf unbekanntes Szenario an"              | Kreieren        |
 
 **Anzahl gesamt:** Mindestens 15 Aufgaben
-**Format:** 
+**Format:**
 - Offene Fragen mit Teilaufgaben
 - Komplexe Multiple Choice mit Begründungspflicht
 - Berechnungen mit mehreren Schritten
@@ -304,7 +304,7 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ### Prüfungsaufgaben-Regeln (PFLICHT am Ende)
 
-- **Mindestens 15 Aufgaben** 
+- **Mindestens 15 Aufgaben**
 - **Punkteverteilung angeben** (pro Aufgabe und Teilaufgaben)
 - **Musterlösungen in `<details>` Tag**
 - **Häufige Fehler erwähnen**

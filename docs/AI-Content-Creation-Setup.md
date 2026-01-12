@@ -14,6 +14,45 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 
 ---
 
+## Content-Struktur V4 (NEU)
+
+Jeder Abschnitt einer Vorlesung folgt dem Muster **Lernen → Überprüfen → Anwenden**:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│  ABSCHNITT                                                               │
+│  ├── 📚 Lerninhalte (learning-content)                                   │
+│  │       Theorie, Konzepte, Formeln                                     │
+│  │                                                                       │
+│  ├── ✅ Verständnis-Checks (direkt nach dem Lerninhalt)                  │
+│  │       • self-assessment-mc (einfache MC-Fragen)                      │
+│  │       • fill-in-the-blank (Lückentexte)                              │
+│  │       • matching (Zuordnungsaufgaben)                                │
+│  │       • ordering (Sortieraufgaben)                                   │
+│  │                                                                       │
+│  ├── 🧮 Praxis-Übung (practice-exercise, calculation)                   │
+│  │       Alltagsbezogene Anwendung des Gelernten                        │
+│  │                                                                       │
+│  └── 📺 Video (youtube-video)                                           │
+│          An thematisch passender Stelle                                 │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Am Ende der Vorlesung:
+┌─────────────────────────────────────────────────────────────────────────┐
+│  📋 Selbsttest (self-assessment)                                         │
+│      Checkliste: Bin ich bereit für den Vorlesungs-Test?                │
+│                                                                         │
+│  📝 Vorlesungs-Test (questions/)                                         │
+│      12 schwierige multiple-choice-multiple Fragen                      │
+│      Nur Mehrfachauswahl! Universitäts-Prüfungsniveau                   │
+│                                                                         │
+│  🎓 Modul-Prüfungsfragen (module-exam/)                                  │
+│      2 sehr schwierige Transferfragen pro Vorlesung                     │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## Der Workflow
 
 ```text
@@ -210,41 +249,180 @@ Die Chemie ist die Wissenschaft der Stoffumwandlung.
 | Mermaid-Diagramme    | Claude Opus 4   | Bestes Verständnis       |
 | Quellenextraktion    | Beide           | Pattern-Erkennung        |
 
-### Vollständiger Prompt für Content-Generierung (Copy-Paste)
+### Vollständiger Prompt für Content-Generierung V4 (Copy-Paste)
 
 Diesen Prompt im Copilot Agent Mode (VS Code) verwenden:
 
 ````text
 Generiere Lerninhalte aus der Material-Datei:
-studies-material/bsc-ernaehrungswissenschaften/[MODUL]/[LECTURE].md
+studies-material/bsc-ernaehrungswissenschaften/[MODUL]/[VORLESUNG]/Vorlesung.md
 
 Zielordner:
-content/bsc-ernaehrungswissenschaften/[MODUL]/[LECTURE]/
+content/bsc-ernaehrungswissenschaften/[MODUL]/[VORLESUNG]/
 
-SCHRITT 1 - lecture.md erstellen:
-- Extrahiere "Titel:" und "Link:" vom Anfang der Material-Datei
+## NEUE STRUKTUR V4: Lernen → Überprüfen → Anwenden
+
+Jeder Abschnitt besteht aus:
+1. Lerninhalte (learning-content)
+2. Verständnis-Checks (direkt danach!)
+3. Praxis-Übung
+4. Video (an thematisch passender Stelle)
+
+SCHRITT 1 - CONTENT_PLAN.md analysieren:
+- Lies den CONTENT_PLAN.md im Material-Ordner
+- Folge der dort definierten Struktur mit Abschnitten
+
+SCHRITT 2 - lecture.md erstellen:
+- Extrahiere Quellen aus dem Material-Header
 - Erstelle sources Array mit id, title, url, type
 - Füge topic, description, estimatedTime hinzu
 
-SCHRITT 2 - lecture-items/ erstellen:
-- Teile den Inhalt in logische Lerneinheiten (01-XX.md, 02-XX.md, ...)
-- Für jeden Abschnitt mit [cite: X-Y] Markierungen:
-  - Füge sourceRefs mit sourceId und pages hinzu
-  - Entferne [cite_start] und [cite: X-Y] aus dem Text
-- Nach jedem Themenblock: self-assessment-mc einfügen
-- Verwende Templates aus docs/CONTENT_TEMPLATES.md
+SCHRITT 3 - lecture-items/ erstellen (neue Typen!):
+Für jeden Abschnitt:
 
-SCHRITT 3 - questions/ erstellen:
-- 10-15 Quiz-Fragen basierend auf dem Inhalt
-- Mix aus multiple-choice und multiple-choice-multiple
-- correctAnswer MUSS EXAKT mit einer Option übereinstimmen
+a) Lerninhalte (01-XX.md):
+   - type: 'learning-content'
+   - Quellenreferenzen aus [cite: X-Y] extrahieren
+   - Formeln in LaTeX
 
-SCHRITT 4 - Validieren:
-- YAML-Listen mit - (dash), nie * (asterisk)
-- Dateien nummeriert (01-, 02-, ...)
-- npm run build ausführen (generiert content-list.json und lecture-bundles)
+b) Verständnis-Checks (02-check-XX.md) - DIREKT nach Lerninhalt:
+   - type: 'self-assessment-mc' (einfache MC)
+   - type: 'fill-in-the-blank' (Lückentext) - NEU
+   - type: 'matching' (Zuordnung) - NEU
+   - type: 'ordering' (Sortierung) - NEU
+
+c) Praxis-Übungen (03-uebung-XX.md):
+   - type: 'practice-exercise' - NEU
+   - type: 'calculation' - NEU
+   - Alltagsbezogene Szenarien
+
+d) Videos (04-video-XX.md):
+   - type: 'youtube-video'
+   - An thematisch passender Stelle, NICHT am Ende gesammelt
+
+SCHRITT 4 - Selbsttest erstellen (am Ende der lecture-items/):
+- type: 'self-assessment'
+- Checkliste zur Bereitschaftsprüfung vor dem Test
+- Verweise auf Abschnitte bei Unsicherheit
+
+SCHRITT 5 - questions/ erstellen (NUR schwer!):
+- 12 Fragen auf Universitäts-Prüfungsniveau
+- type: 'multiple-choice-multiple' (AUSSCHLIESSLICH!)
+- Mehrere richtige Antworten pro Frage
+- Keine einfachen single-choice Fragen!
+
+SCHRITT 6 - Modul-Prüfungsfragen:
+- 2 sehr schwierige Transferfragen pro Vorlesung
+- Speicherort: module-exam/ Ordner im Modul
+- Kombinieren Wissen aus mehreren Abschnitten
+
+SCHRITT 7 - Validieren:
+- npm run build ausführen
 - In Browser testen mit Live Server
+- Tools → "Inhalte validieren" in der App
 ````
+
+### Neue Content-Typen (YAML-Struktur)
+
+#### fill-in-the-blank (Lückentext)
+
+```yaml
+---
+type: 'fill-in-the-blank'
+question: 'Vervollständige die Formel zur Wärmeberechnung'
+text: 'Die Formel lautet: q = {{blank1}} · {{blank2}} · {{blank3}}'
+blanks:
+  - id: 'blank1'
+    answer: 'm'
+    alternatives:
+      - 'Masse'
+    hint: 'Die Stoffmenge in Gramm'
+  - id: 'blank2'
+    answer: 'c'
+    alternatives:
+      - 'spezifische Wärmekapazität'
+    hint: 'Die stoffspezifische Konstante'
+  - id: 'blank3'
+    answer: 'ΔT'
+    alternatives:
+      - 'Delta T'
+      - 'Temperaturdifferenz'
+    hint: 'Die Änderung einer Zustandsgröße'
+---
+```
+
+#### matching (Zuordnung)
+
+```yaml
+---
+type: 'matching'
+question: 'Ordne die Begriffe den richtigen Definitionen zu'
+pairs:
+  - term: 'Exotherm'
+    match: 'Wärme wird an die Umgebung abgegeben'
+  - term: 'Endotherm'
+    match: 'Wärme wird aus der Umgebung aufgenommen'
+  - term: 'Enthalpie'
+    match: 'Wärmeinhalt bei konstantem Druck'
+---
+```
+
+#### ordering (Sortierung)
+
+```yaml
+---
+type: 'ordering'
+question: 'Bringe die Schritte der Heizkurve in die richtige Reihenfolge'
+items:
+  - 'Eis erwärmen (-20°C bis 0°C)'
+  - 'Eis schmelzen (bei 0°C)'
+  - 'Wasser erwärmen (0°C bis 100°C)'
+  - 'Wasser verdampfen (bei 100°C)'
+  - 'Dampf erwärmen (über 100°C)'
+---
+```
+
+#### calculation (Berechnung)
+
+```yaml
+---
+type: 'calculation'
+question: 'Berechne die benötigte Wärme'
+variables:
+  m: '50 g'
+  c: '4,184 J/(g·K)'
+  ΔT: '60 K'
+formula: 'q = m · c · ΔT'
+correctAnswer: 12552
+unit: 'J'
+tolerance: 10
+hints:
+  - 'Setze die Werte in die Formel ein'
+  - 'q = 50 · 4,184 · 60'
+---
+```
+
+#### practice-exercise (Praxis-Übung)
+
+```yaml
+---
+type: 'practice-exercise'
+title: 'Energieberechnung am Beispiel Kaffee'
+scenario: 'Du erhitzt 250 ml Wasser für einen Kaffee von 20°C auf 95°C.'
+tasks:
+  - question: 'Wie viel Energie wird benötigt?'
+    type: 'calculation'
+    correctAnswer: 78450
+    unit: 'J'
+  - question: 'Ist dieser Vorgang exotherm oder endotherm?'
+    type: 'multiple-choice'
+    options:
+      - 'Exotherm'
+      - 'Endotherm'
+    correctAnswer: 'Endotherm'
+realWorldConnection: 'Diese Energie entspricht etwa 19 kcal!'
+---
+```
 
 ---
 
