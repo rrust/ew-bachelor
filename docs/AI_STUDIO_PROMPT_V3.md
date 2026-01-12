@@ -1,5 +1,7 @@
 # Akademischer Lernmaterial-Generator V3
 
+Dieser Prompt ist für die Erstellung von akademischem Lernmaterial in **Markdown-Format** über Google AI Studio mit Gemini 3 optimiert. Er generiert vollständige Kapitel mit **Selbsttests** und **Prüfungsaufgaben** basierend auf einem hochgeladenen PDF-Dokument.
+
 ## Zweck
 
 Dieser Prompt ist für **Google AI Studio (Gemini)** optimiert, um Rohmaterial zu erstellen, das anschließend von **GitHub Copilot** in die App-Struktur konvertiert wird.
@@ -228,13 +230,13 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ## Prüfungsstatistik
 
-| Aufgabentyp | Anzahl | Punkte gesamt |
-|-------------|--------|---------------|
-| Konzeptverständnis | 4 | 32 |
-| Berechnungen | 4 | 36 |
-| Multiple Choice | 4 | 24 |
-| Transferaufgaben | 3 | 28 |
-| **Gesamt** | **15** | **120** |
+| Aufgabentyp        | Anzahl | Punkte gesamt |
+| ------------------ | ------ | ------------- |
+| Konzeptverständnis | 4      | 32            |
+| Berechnungen       | 4      | 36            |
+| Multiple Choice    | 4      | 24            |
+| Transferaufgaben   | 3      | 28            |
+| **Gesamt**         | **15** | **120**       |
 
 **Notenschlüssel (Vorschlag):**
 - Sehr gut (1): ≥90% (≥108 Punkte)
@@ -252,11 +254,11 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 **Zweck:** Lernfortschrittskontrolle während des Lernens
 
-| Niveau | Beispiel | Kognitive Stufe |
-|--------|----------|-----------------|
-| Wissen | "Was ist die Definition von X?" | Erinnern |
-| Verständnis | "Erkläre den Unterschied zwischen X und Y" | Verstehen |
-| Einfache Anwendung | "Berechne mit gegebener Formel" | Anwenden |
+| Niveau             | Beispiel                                   | Kognitive Stufe |
+| ------------------ | ------------------------------------------ | --------------- |
+| Wissen             | "Was ist die Definition von X?"            | Erinnern        |
+| Verständnis        | "Erkläre den Unterschied zwischen X und Y" | Verstehen       |
+| Einfache Anwendung | "Berechne mit gegebener Formel"            | Anwenden        |
 
 **Anzahl pro Kapitel:** 3-5 Fragen
 **Format:** Multiple Choice (single/multiple), kurze Rechenaufgaben
@@ -266,14 +268,14 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 **Zweck:** Modulprüfung, echte Leistungsbewertung
 
-| Niveau | Beispiel | Kognitive Stufe |
-|--------|----------|-----------------|
-| Analyse | "Vergleiche zwei Konzepte und bewerte ihre Anwendbarkeit" | Analysieren |
-| Synthese | "Kombiniere Wissen aus Kap. 1 und 3 für neues Problem" | Evaluieren |
-| Transfer | "Wende Konzepte auf unbekanntes Szenario an" | Kreieren |
+| Niveau   | Beispiel                                                  | Kognitive Stufe |
+| -------- | --------------------------------------------------------- | --------------- |
+| Analyse  | "Vergleiche zwei Konzepte und bewerte ihre Anwendbarkeit" | Analysieren     |
+| Synthese | "Kombiniere Wissen aus Kap. 1 und 3 für neues Problem"    | Evaluieren      |
+| Transfer | "Wende Konzepte auf unbekanntes Szenario an"              | Kreieren        |
 
 **Anzahl gesamt:** Mindestens 15 Aufgaben
-**Format:** 
+**Format:**
 - Offene Fragen mit Teilaufgaben
 - Komplexe Multiple Choice mit Begründungspflicht
 - Berechnungen mit mehreren Schritten
@@ -304,7 +306,7 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ### Prüfungsaufgaben-Regeln (PFLICHT am Ende)
 
-- **Mindestens 15 Aufgaben** 
+- **Mindestens 15 Aufgaben**
 - **Punkteverteilung angeben** (pro Aufgabe und Teilaufgaben)
 - **Musterlösungen in `<details>` Tag**
 - **Häufige Fehler erwähnen**
@@ -317,10 +319,33 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ### YouTube-Video-Empfehlung (PFLICHT nach jedem Kapitel)
 
-- **Nach dem Selbsttest** kommt IMMER eine Video-Empfehlung
-- **Format:** `> 📺 **Video-Empfehlung:** [Titel]`
-- **Bevorzuge:** Studyflix, SimpleClub, The Organic Chemistry Tutor
-- **Suchbegriff angeben:** `Suche auf YouTube nach: "..."`
+⚠️ **KRITISCH: Nur ECHTE, EXISTIERENDE Videos verwenden!**
+
+- **NIEMALS URLs erfinden** - Jede URL muss ein echtes Video sein
+- **Nur einbettbare Videos** - Standard YouTube-URLs (youtube.com/watch?v=...)
+- **Doppelt prüfen:** Vor dem Einfügen sicherstellen, dass das Video existiert
+- **Im Zweifel weglassen:** Lieber keine Video-Empfehlung als eine falsche
+
+**Vertrauenswürdige Kanäle (deutsche Chemie/Biologie):**
+- **simpleclub** - z.B. "Massenerhaltungssatz simpleclub"
+- **Studyflix** - z.B. "Atommodelle Studyflix"
+- **musstewissen Chemie/Physik** - z.B. "Dichte musstewissen"
+- **TheSimpleChemics/TheSimpleBiology**
+
+**Format für Video-Empfehlung:**
+
+```markdown
+> 📺 **Video-Empfehlung:** "[Exakter Videotitel vom Kanal]"
+> **Kanal:** [Kanalname]
+> **Suche:** `[Thema] [Kanalname]` auf YouTube
+```
+
+**WENN du dir nicht 100% sicher bist, dass ein Video existiert:**
+
+```markdown
+> 📺 **Video-Suche empfohlen:** Suche auf YouTube nach "[Suchbegriffe]"
+> **Empfohlene Kanäle:** simpleclub, Studyflix, musstewissen
+```
 
 ### Formeln formatieren
 
@@ -337,6 +362,7 @@ Bevor du antwortest, prüfe:
 - [ ] ALLE Informationen aus dem PDF übernommen?
 - [ ] JEDES Kapitel hat 3-5 Selbsttest-Fragen?
 - [ ] JEDES Kapitel hat Video-Empfehlung?
+- [ ] Video-Empfehlungen sind ECHTE Videos (keine erfundenen URLs)?
 - [ ] Am Ende MINDESTENS 15 Prüfungsaufgaben?
 - [ ] Prüfungsaufgaben haben Punkteverteilung?
 - [ ] Prüfungsaufgaben haben Musterlösungen in `<details>`?
@@ -359,6 +385,8 @@ Bevor du antwortest, prüfe:
 ❌ Prüfungsteil vergessen oder kürzen
 ❌ Prüfungsaufgaben auf Selbsttest-Niveau
 ❌ Selbsttests auf Prüfungsniveau
+❌ **YouTube-URLs ERFINDEN** - Nur echte, verifizierte Videos!
+❌ **Nicht-einbettbare Video-Links** (nur youtube.com/watch?v=...)
 
 ---
 

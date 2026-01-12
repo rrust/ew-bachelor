@@ -19,17 +19,33 @@
 - ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen** - Erlaubt: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT: `xychart-beta`, `timeline`, `mindmap`.
 
-## Content Generation
+## Content Generation V4: Lernen → Überprüfen → Anwenden
 
-When generating content from `studies-material/` files:
+When generating content from `studies-material/` files, follow this structure:
+
+**Jeder Abschnitt:**
+
+1. 📚 **Lerninhalte** (learning-content) - Theorie, Konzepte
+2. ✅ **Verständnis-Checks** (direkt danach!) - self-assessment-mc, fill-in-the-blank, matching, ordering
+3. 🧮 **Praxis-Übung** - practice-exercise, calculation
+4. 📺 **Video** - an thematisch passender Stelle
+
+**Am Ende der Vorlesung:**
+
+- 📋 **Selbsttest** (self-assessment) - Bereitschafts-Checkliste
+- 📝 **Vorlesungs-Test** (questions/) - NUR multiple-choice-multiple, schwer
+- 🎓 **Modul-Prüfungsfragen** - 2 sehr schwierige pro Vorlesung
+
+**Workflow:**
 
 1. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
-2. **Extract sources** (Titel + Link) from material file header
-3. **Add `sources`** array to `lecture.md`
-4. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
-5. **Remove citation markers** from output text
-6. **Run `npm run build`** to regenerate JSON files
-7. **Validate** with Tools → "Inhalte validieren"
+2. **Read** CONTENT_PLAN.md in the material folder for structure
+3. **Extract sources** (Titel + Link) from material file header
+4. **Add `sources`** array to `lecture.md`
+5. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
+6. **Remove citation markers** from output text
+7. **Run `npm run build`** to regenerate JSON files
+8. **Validate** with Tools → "Inhalte validieren"
 
 ## Git Workflow
 

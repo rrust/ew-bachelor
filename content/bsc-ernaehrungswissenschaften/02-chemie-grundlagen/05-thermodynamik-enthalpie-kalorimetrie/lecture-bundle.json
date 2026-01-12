@@ -335,7 +335,9 @@
       "topic": "Erster Hauptsatz und Enthalpie",
       "question": "Kannst du den Ersten Hauptsatz und die Enthalpie erklären und anwenden?",
       "checkpoints": [
+        "Ich kann den Ersten Hauptsatz formulieren: ΔU = q + w",
         "Ich verstehe die Vorzeichenkonvention für q und w",
+        "Ich weiß, dass bei konstantem Druck gilt: ΔH = qp",
         "Ich kann ΔH-Vorzeichen interpretieren (negativ = exotherm, positiv = endotherm)",
         "Ich verstehe den Zusammenhang zwischen ΔH und ΔU"
       ],
@@ -502,6 +504,142 @@
       ],
       "successMessage": "Fantastisch! Du hast alle Themenblöcke der Thermochemie gemeistert. Bereit für das Quiz!",
       "reviewHint": "Verbinde die theoretischen Grundlagen mit den praktischen Anwendungen.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Vervollständige die Formel zur Wärmeberechnung",
+      "text": "Die Formel zur Berechnung der übertragenen Wärme lautet: q = {{blank1}} · {{blank2}} · {{blank3}}. Dabei ist m die Masse in Gramm, c die spezifische Wärmekapazität und ΔT die Temperaturänderung.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "m",
+          "alternatives": [
+            "Masse",
+            "masse"
+          ],
+          "hint": "Die Stoffmenge in Gramm"
+        },
+        {
+          "id": "blank2",
+          "answer": "c",
+          "alternatives": [
+            "C",
+            "spezifische Wärmekapazität"
+          ],
+          "hint": "Die stoffspezifische Konstante"
+        },
+        {
+          "id": "blank3",
+          "answer": "ΔT",
+          "alternatives": [
+            "Delta T",
+            "Temperaturdifferenz",
+            "deltaT",
+            "dT"
+          ],
+          "hint": "Die Änderung der Temperatur"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die thermodynamischen Begriffe den richtigen Definitionen zu",
+      "pairs": [
+        {
+          "term": "Exotherm",
+          "match": "Wärme wird an die Umgebung abgegeben (ΔH < 0)"
+        },
+        {
+          "term": "Endotherm",
+          "match": "Wärme wird aus der Umgebung aufgenommen (ΔH > 0)"
+        },
+        {
+          "term": "Enthalpie",
+          "match": "Wärmeinhalt bei konstantem Druck (H = U + pV)"
+        },
+        {
+          "term": "Innere Energie",
+          "match": "Summe aus kinetischer und potentieller Energie (U = KE + PE)"
+        },
+        {
+          "term": "Spezifische Wärmekapazität",
+          "match": "Wärmemenge zur Erwärmung von 1g Stoff um 1K"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Bringe die Schritte der Heizkurve von Wasser in die richtige Reihenfolge",
+      "items": [
+        "Eis erwärmen (-20°C bis 0°C)",
+        "Eis schmelzen (bei 0°C, Schmelzwärme)",
+        "Wasser erwärmen (0°C bis 100°C)",
+        "Wasser verdampfen (bei 100°C, Verdampfungswärme)",
+        "Dampf erwärmen (über 100°C)"
+      ],
+      "explanation": "Bei Phasenübergängen (Schmelzen, Verdampfen) bleibt die Temperatur konstant, obwohl Energie zugeführt wird. Diese Energie wird für die Umwandlung des Aggregatzustands benötigt.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Berechne die benötigte Wärme, um 250 ml Wasser für einen Kaffee von 20°C auf 95°C zu erhitzen.",
+      "variables": {
+        "m": "250 g (1 ml Wasser ≈ 1 g)",
+        "c": "4,184 J/(g·K)",
+        "ΔT": "95°C - 20°C = 75 K"
+      },
+      "formula": "q = m \\cdot c \\cdot \\Delta T",
+      "correctAnswer": 78450,
+      "unit": "J",
+      "tolerance": 100,
+      "hints": [
+        "Setze die Werte in die Formel ein: q = 250 · 4,184 · 75",
+        "Berechne zuerst: 250 · 4,184 = 1046",
+        "Dann: 1046 · 75 = 78450 J"
+      ],
+      "explanation": "Das entspricht etwa 78,5 kJ oder ungefähr 19 kcal. Ein Wasserkocher mit 2000W benötigt dafür etwa 40 Sekunden.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Energieberechnung im Alltag: Tee kochen",
+      "scenario": "Du möchtest dir eine Tasse Tee zubereiten. Du nimmst 300 ml Leitungswasser (20°C) und erhitzt es mit einem Wasserkocher auf 95°C. Der Wasserkocher hat eine Leistung von 2000 W.",
+      "tasks": [
+        {
+          "question": "Wie viel Energie (in Joule) wird benötigt?",
+          "type": "calculation",
+          "correctAnswer": 94140,
+          "tolerance": 200,
+          "unit": "J"
+        },
+        {
+          "question": "Wie viel entspricht das in Kilojoule (kJ)?",
+          "type": "calculation",
+          "correctAnswer": 94.14,
+          "tolerance": 1,
+          "unit": "kJ"
+        },
+        {
+          "question": "Ist dieser Vorgang exotherm oder endotherm?",
+          "type": "multiple-choice",
+          "options": [
+            "Exotherm (Wärme wird abgegeben)",
+            "Endotherm (Wärme wird aufgenommen)"
+          ],
+          "correctAnswer": "Endotherm (Wärme wird aufgenommen)"
+        },
+        {
+          "question": "Wie lange dauert das Erhitzen theoretisch (in Sekunden)?",
+          "type": "calculation",
+          "correctAnswer": 47,
+          "tolerance": 2,
+          "unit": "s"
+        }
+      ],
+      "realWorldConnection": "In der Praxis dauert es etwas länger, da nicht 100% der elektrischen Energie in Wärme für das Wasser umgewandelt wird (Wärmeverluste an die Umgebung).",
       "content": ""
     }
   ],
@@ -705,7 +843,11 @@
       "type": "multiple-choice",
       "topic": "Phasenübergänge",
       "question": "Welcher Prozess benötigt bei Wasser am meisten Energie pro Gramm?",
-      "options": [],
+      "options": [
+        "Schmelzen (Eis → Wasser): 333 J/g",
+        "Erwärmen von 0 °C auf 100 °C: ca. 418 J/g",
+        "Verdampfen (Wasser → Dampf): 2260 J/g"
+      ],
       "correctAnswer": "Verdampfen (Wasser → Dampf): 2260 J/g",
       "explanation": "**Erklärung:** Die Verdampfungswärme (2260 J/g) ist mit Abstand am höchsten. Sie ist etwa 7× größer als die Schmelzwärme (333 J/g) und etwa 5× größer als die Energie zum Erwärmen von 0 auf 100 °C (ca. 418 J/g)."
     },
@@ -778,8 +920,16 @@
       "type": "multiple-choice-multiple",
       "topic": "Vorzeichen",
       "question": "Welche der folgenden Kombinationen sind korrekt? (Mehrere Antworten möglich)",
-      "options": [],
-      "correctAnswers": [],
+      "options": [
+        "Wärme ins System: q > 0",
+        "Wärme aus dem System: q > 0",
+        "Kompression (Arbeit am System): w > 0",
+        "Expansion (Arbeit vom System): w > 0"
+      ],
+      "correctAnswers": [
+        "Wärme ins System: q > 0",
+        "Kompression (Arbeit am System): w > 0"
+      ],
       "explanation": "**Erklärung:** Nach der thermodynamischen Vorzeichenkonvention gilt: Energie ins System = positives Vorzeichen. Wärmeaufnahme: $q > 0$. Arbeit am System (Kompression): $w > 0$. Umgekehrt: Wärmeabgabe und Expansion haben negative Vorzeichen."
     },
     {
@@ -861,5 +1011,5 @@
       "explanation": "**Erklärung:** Bei der Verbrennung erwärmt sich nicht nur das Wasser, sondern auch der Stahlbehälter (die \"Bombe\"), die Rührer und andere Metallteile. Ohne diese Korrektur würde man die freigesetzte Energie unterschätzen."
     }
   ],
-  "generatedAt": "2026-01-12T18:45:01.366Z"
+  "generatedAt": "2026-01-12T20:18:52.066Z"
 }

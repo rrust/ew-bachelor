@@ -169,7 +169,12 @@ const REQUIRED_FIELDS = {
   'external-video': ['type', 'url'],
   image: ['type', 'url', 'alt'],
   'mermaid-diagram': ['type'],
-  'balance-equation': ['type', 'reactants', 'products']
+  'balance-equation': ['type', 'reactants', 'products'],
+  'fill-in-the-blank': ['type', 'question', 'text', 'blanks'],
+  matching: ['type', 'question', 'pairs'],
+  ordering: ['type', 'question', 'items'],
+  calculation: ['type', 'question', 'correctAnswer'],
+  'practice-exercise': ['type', 'title', 'scenario', 'tasks']
 };
 
 /**

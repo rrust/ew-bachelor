@@ -298,6 +298,216 @@ reviewHint: 'Falls du unsicher bist, lies den Abschnitt noch einmal durch.'
 | `successMessage` | String |         | Nachricht bei vollständigem Abhaken            |
 | `reviewHint`     | String |         | Hinweis, falls nicht alle Punkte abgehakt sind |
 
+## Neue Interaktive Typen (V4)
+
+### Fill-in-the-Blank (Lückentext)
+
+Lückentexte zum Ausfüllen von Formeln oder Konzepten:
+
+```markdown
+---
+type: 'fill-in-the-blank'
+topic: 'Wärmeberechnung'
+question: 'Vervollständige die Formel zur Wärmeberechnung'
+text: 'Die Formel lautet: q = {{blank1}} · {{blank2}} · {{blank3}}'
+blanks:
+  - id: 'blank1'
+    answer: 'm'
+    alternatives:
+      - 'Masse'
+    hint: 'Die Stoffmenge in Gramm'
+  - id: 'blank2'
+    answer: 'c'
+    alternatives:
+      - 'spezifische Wärmekapazität'
+    hint: 'Die stoffspezifische Konstante'
+  - id: 'blank3'
+    answer: 'ΔT'
+    alternatives:
+      - 'Delta T'
+      - 'Temperaturdifferenz'
+    hint: 'Die Änderung einer Zustandsgröße'
+---
+```
+
+**Felder:**
+
+| Feld       | Typ    | Pflicht | Beschreibung                           |
+| ---------- | ------ | ------- | -------------------------------------- |
+| `type`     | String | ✓       | `'fill-in-the-blank'`                  |
+| `question` | String | ✓       | Aufgabenstellung                       |
+| `text`     | String | ✓       | Text mit `{{blankId}}` Platzhaltern    |
+| `blanks`   | Array  | ✓       | Liste der Lücken mit id, answer, hints |
+| `topic`    | String |         | Themenbereich                          |
+
+**Blank-Objekt:**
+
+| Feld           | Typ    | Pflicht | Beschreibung                         |
+| -------------- | ------ | ------- | ------------------------------------ |
+| `id`           | String | ✓       | Eindeutige ID (referenziert im Text) |
+| `answer`       | String | ✓       | Richtige Antwort                     |
+| `alternatives` | Array  |         | Akzeptierte Alternativantworten      |
+| `hint`         | String |         | Hinweis für den Nutzer               |
+
+### Matching (Zuordnung)
+
+Zuordnungsaufgaben für Begriffe und Definitionen:
+
+```markdown
+---
+type: 'matching'
+topic: 'Thermodynamik Grundbegriffe'
+question: 'Ordne die Begriffe den richtigen Definitionen zu'
+pairs:
+  - term: 'Exotherm'
+    match: 'Wärme wird an die Umgebung abgegeben'
+  - term: 'Endotherm'
+    match: 'Wärme wird aus der Umgebung aufgenommen'
+  - term: 'Enthalpie'
+    match: 'Wärmeinhalt bei konstantem Druck'
+  - term: 'Innere Energie'
+    match: 'Summe aus potentieller und kinetischer Energie'
+---
+```
+
+**Felder:**
+
+| Feld       | Typ    | Pflicht | Beschreibung              |
+| ---------- | ------ | ------- | ------------------------- |
+| `type`     | String | ✓       | `'matching'`              |
+| `question` | String | ✓       | Aufgabenstellung          |
+| `pairs`    | Array  | ✓       | Liste der Zuordnungspaare |
+| `topic`    | String |         | Themenbereich             |
+
+**Pair-Objekt:**
+
+| Feld    | Typ    | Pflicht | Beschreibung             |
+| ------- | ------ | ------- | ------------------------ |
+| `term`  | String | ✓       | Begriff (linke Seite)    |
+| `match` | String | ✓       | Zuordnung (rechte Seite) |
+
+### Ordering (Sortierung)
+
+Sortieraufgaben für Reihenfolgen:
+
+```markdown
+---
+type: 'ordering'
+topic: 'Heizkurve'
+question: 'Bringe die Schritte der Heizkurve von Wasser in die richtige Reihenfolge'
+items:
+  - 'Eis erwärmen (-20°C bis 0°C)'
+  - 'Eis schmelzen (bei 0°C)'
+  - 'Wasser erwärmen (0°C bis 100°C)'
+  - 'Wasser verdampfen (bei 100°C)'
+  - 'Dampf erwärmen (über 100°C)'
+explanation: 'Die Heizkurve beginnt beim kältesten Zustand. Bei Phasenübergängen bleibt die Temperatur konstant.'
+---
+```
+
+**Felder:**
+
+| Feld          | Typ    | Pflicht | Beschreibung                    |
+| ------------- | ------ | ------- | ------------------------------- |
+| `type`        | String | ✓       | `'ordering'`                    |
+| `question`    | String | ✓       | Aufgabenstellung                |
+| `items`       | Array  | ✓       | Liste in RICHTIGER Reihenfolge! |
+| `topic`       | String |         | Themenbereich                   |
+| `explanation` | String |         | Erklärung nach korrekter Lösung |
+
+⚠️ **Wichtig:** Die `items` müssen in der RICHTIGEN Reihenfolge angegeben werden. Die App mischt sie automatisch für den Nutzer.
+
+### Calculation (Berechnung)
+
+Berechnungsaufgaben mit Eingabefeld:
+
+```markdown
+---
+type: 'calculation'
+topic: 'Wärmeberechnung'
+question: 'Berechne die Wärme, die benötigt wird um 50g Wasser von 20°C auf 80°C zu erwärmen.'
+variables:
+  m: '50 g'
+  c: '4,184 J/(g·K)'
+  ΔT: '60 K'
+formula: 'q = m · c · ΔT'
+correctAnswer: 12552
+unit: 'J'
+tolerance: 10
+hints:
+  - 'Setze die Werte in die Formel ein'
+  - 'q = 50 · 4,184 · 60'
+explanation: 'Die Berechnung ergibt: 50 × 4,184 × 60 = 12.552 J'
+---
+```
+
+**Felder:**
+
+| Feld            | Typ    | Pflicht | Beschreibung                 |
+| --------------- | ------ | ------- | ---------------------------- |
+| `type`          | String | ✓       | `'calculation'`              |
+| `question`      | String | ✓       | Aufgabenstellung             |
+| `correctAnswer` | Number | ✓       | Richtige Antwort (numerisch) |
+| `unit`          | String | ✓       | Einheit der Antwort          |
+| `topic`         | String |         | Themenbereich                |
+| `variables`     | Object |         | Gegebene Werte (key: value)  |
+| `formula`       | String |         | Anzuwendende Formel          |
+| `tolerance`     | Number |         | Erlaubte Abweichung (±)      |
+| `hints`         | Array  |         | Schrittweise Hinweise        |
+| `explanation`   | String |         | Erklärung nach Lösung        |
+
+### Practice-Exercise (Praxis-Übung)
+
+Komplexe Praxis-Übungen mit mehreren Teilaufgaben:
+
+```markdown
+---
+type: 'practice-exercise'
+topic: 'Thermodynamik im Alltag'
+title: 'Energieberechnung am Beispiel Kaffee'
+scenario: 'Du erhitzt 250 ml Wasser (≈ 250g) für einen Kaffee von 20°C auf 95°C.'
+tasks:
+  - question: 'Wie viel Energie wird benötigt?'
+    type: 'calculation'
+    correctAnswer: 78450
+    unit: 'J'
+  - question: 'Ist dieser Vorgang exotherm oder endotherm?'
+    type: 'multiple-choice'
+    options:
+      - 'Exotherm'
+      - 'Endotherm'
+    correctAnswer: 'Endotherm'
+  - question: 'Wie viele kcal entspricht das?'
+    type: 'calculation'
+    correctAnswer: 18.75
+    unit: 'kcal'
+    tolerance: 0.5
+realWorldConnection: 'Diese Energie entspricht etwa 19 kcal - weniger als ein Stück Würfelzucker!'
+---
+```
+
+**Felder:**
+
+| Feld                  | Typ    | Pflicht | Beschreibung               |
+| --------------------- | ------ | ------- | -------------------------- |
+| `type`                | String | ✓       | `'practice-exercise'`      |
+| `title`               | String | ✓       | Titel der Übung            |
+| `scenario`            | String | ✓       | Beschreibung der Situation |
+| `tasks`               | Array  | ✓       | Liste der Teilaufgaben     |
+| `topic`               | String |         | Themenbereich              |
+| `realWorldConnection` | String |         | Alltagsbezug als Abschluss |
+
+**Task-Objekt:**
+
+| Feld            | Typ    | Pflicht | Beschreibung                             |
+| --------------- | ------ | ------- | ---------------------------------------- |
+| `question`      | String | ✓       | Teilfrage                                |
+| `type`          | String | ✓       | `'calculation'` oder `'multiple-choice'` |
+| `correctAnswer` | Any    | ✓       | Richtige Antwort (Zahl oder String)      |
+| `unit`          | String |         | Einheit (bei calculation)                |
+| `options`       | Array  |         | Optionen (bei multiple-choice)           |
+| `tolerance`     | Number |         | Erlaubte Abweichung (bei calculation)    |
+
 ## Learning Content (in lecture.md)
 
 ### Einfacher Lerninhalt

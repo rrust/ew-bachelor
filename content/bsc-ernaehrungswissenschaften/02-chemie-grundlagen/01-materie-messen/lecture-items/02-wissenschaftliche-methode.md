@@ -1,39 +1,37 @@
 ---
 type: 'learning-content'
-topic: 'Einführung in die Chemie'
+topic: 'Grundlagen von Materie und Energie'
 sourceRefs:
-  - sourceId: 'vorlesung-k1'
-    pages: '47-53'
+  - sourceId: 'kapitel-1'
 ---
 
 ## Die wissenschaftliche Methode
 
-Der Erkenntnisgewinn in der Chemie folgt einem systematischen Prozess – der **wissenschaftlichen Methode**:
+Der Erkenntnisgewinn in der Chemie folgt einem systematischen, zyklischen Prozess:
 
 ```mermaid
-graph LR
-    A[Beobachtung] --> B[Hypothese]
-    B --> C[Experiment]
-    C --> D{Bestätigt?}
-    D -->|Ja| E[Theorie]
+flowchart TD
+    A[🔍 Beobachtung] --> B[💡 Hypothese aufstellen]
+    B --> C[🧪 Experiment durchführen]
+    C --> D{Ergebnis bestätigt<br/>Hypothese?}
     D -->|Nein| B
-    E --> F[Naturgesetz]
+    D -->|Ja| E[📐 Theorie formulieren]
+    E --> F[🔬 Weitere Experimente]
+    F --> G{Viele Bestätigungen<br/>ohne Ausnahmen?}
+    G -->|Nein| E
+    G -->|Ja| H[📜 Naturgesetz]
 ```
 
 ### Die Schritte im Detail
 
-1. **Beobachtung:** Phänomene in der Natur werden sorgfältig beobachtet und dokumentiert.
+1. **Beobachtung:** Phänomene in der Natur werden systematisch wahrgenommen und dokumentiert.
 
-2. **Hypothese:** Aus den Beobachtungen wird eine vorläufige Erklärung formuliert – eine testbare Vermutung.
+2. **Hypothese:** Eine vorläufige Erklärung wird formuliert, die durch Experimente überprüft werden kann.
 
-3. **Experiment:** Die Hypothese wird durch kontrollierte Versuche überprüft. Experimente müssen reproduzierbar sein.
+3. **Experiment:** Die Hypothese wird unter kontrollierten Bedingungen getestet.
 
-4. **Theorie:** Wenn sich eine Hypothese in vielen Experimenten bestätigt, entwickelt sie sich zu einer wissenschaftlichen Theorie – einem gut gestützten Erklärungsmodell.
+4. **Theorie:** Wenn viele Experimente die Hypothese bestätigen, entsteht eine wissenschaftliche Theorie.
 
-5. **Naturgesetz:** Wenn sich ein beobachtetes Verhalten von Materie generell bestätigt und keine Ausnahmen bekannt sind, spricht man von einem **Naturgesetz** oder physikalischen Gesetz.
+5. **Naturgesetz:** Eine Theorie, die sich ohne Ausnahmen bewährt hat, wird als Naturgesetz anerkannt.
 
-### Der Unterschied
-
-> **Theorie** = erklärt *warum* etwas passiert
->
-> **Naturgesetz** = beschreibt *was* passiert (ohne Erklärung)
+> **Wichtig:** Ein **Naturgesetz** ist eine generelle Feststellung, die auf dem beobachteten Verhalten von Materie basiert und bei der keine Ausnahmen bekannt sind.

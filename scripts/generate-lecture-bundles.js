@@ -16,8 +16,9 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const yaml = require('js-yaml');
 
-// Simple YAML parser for frontmatter (same approach as validate-content.js)
+// Parse YAML frontmatter using js-yaml for proper nested structure support
 function parseYamlFrontmatter(content) {
   const match = content.match(/^---\n([\s\S]*?)\n---/);
   if (!match) return { frontmatter: null, body: content };
@@ -25,159 +26,18 @@ function parseYamlFrontmatter(content) {
   const yamlContent = match[1];
   const body = content.slice(match[0].length).trim();
 
-  // Parse YAML manually (simple key-value and arrays)
-  const frontmatter = {};
-  const lines = yamlContent.split('\n');
-  let currentKey = null;
-  let currentArray = null;
-
-  for (const line of lines) {
-    // Skip empty lines and comments
-    if (!line.trim() || line.trim().startsWith('#')) continue;
-
-    // Array item
-    if (line.match(/^\s+-\s/)) {
-      const value = line.replace(/^\s+-\s/, '').trim();
-      if (currentArray && currentKey) {
-        // Clean up quotes
-        const cleanValue = value.replace(/^['"]|['"]$/g, '');
-        currentArray.push(cleanValue);
-      }
-      continue;
-    }
-
-    // Key-value pair
-    const kvMatch = line.match(/^(\w+):\s*(.*)$/);
-    if (kvMatch) {
-      const key = kvMatch[1];
-      let value = kvMatch[2].trim();
-
-      // Check if this starts an array
-      if (value === '' || value === '[]') {
-        currentKey = key;
-        currentArray = [];
-        frontmatter[key] = currentArray;
-      } else {
-        // Regular value - clean up quotes
-        value = value.replace(/^['"]|['"]$/g, '');
-
-        // Parse booleans and numbers
-        if (value === 'true') value = true;
-        else if (value === 'false') value = false;
-        else if (/^\d+$/.test(value)) value = parseInt(value, 10);
-        else if (/^\d+\.\d+$/.test(value)) value = parseFloat(value);
-
-        frontmatter[key] = value;
-        currentKey = null;
-        currentArray = null;
-      }
-    }
-  }
-
-  return { frontmatter, body };
-}
-
-// Parse nested YAML for sources and sourceRefs
-function parseNestedYaml(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return { frontmatter: null, body: content };
-
-  const yamlContent = match[1];
-  const body = content.slice(match[0].length).trim();
-
   try {
-    // Use a simple state machine for nested structures
-    const frontmatter = {};
-    const lines = yamlContent.split('\n');
-    let currentKey = null;
-    let currentArray = null;
-    let currentObject = null;
-    let inNestedArray = false;
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-
-      // Skip empty lines
-      if (!line.trim()) continue;
-
-      // Detect indentation level
-      const indent = line.search(/\S/);
-
-      // Top-level key with nested array (e.g., "sources:")
-      if (indent === 0 && line.match(/^(\w+):\s*$/)) {
-        const key = line.match(/^(\w+):/)[1];
-        currentKey = key;
-        currentArray = [];
-        frontmatter[key] = currentArray;
-        currentObject = null;
-        inNestedArray = true;
-        continue;
-      }
-
-      // Top-level simple key-value
-      if (indent === 0 && line.match(/^(\w+):\s*.+$/)) {
-        const kvMatch = line.match(/^(\w+):\s*(.*)$/);
-        const key = kvMatch[1];
-        let value = kvMatch[2].trim().replace(/^['"]|['"]$/g, '');
-
-        if (value === 'true') value = true;
-        else if (value === 'false') value = false;
-        else if (/^\d+$/.test(value)) value = parseInt(value, 10);
-
-        frontmatter[key] = value;
-        currentKey = null;
-        currentArray = null;
-        inNestedArray = false;
-        continue;
-      }
-
-      // Array item start (e.g., "  - id: 'vorlesung-k3'")
-      if (inNestedArray && line.match(/^\s+-\s+\w+:/)) {
-        // Start new object
-        currentObject = {};
-        currentArray.push(currentObject);
-
-        // Parse the first property
-        const propMatch = line.match(/^\s+-\s+(\w+):\s*(.*)$/);
-        if (propMatch) {
-          const propKey = propMatch[1];
-          let propValue = propMatch[2].trim().replace(/^['"]|['"]$/g, '');
-          if (propValue === 'null') propValue = null;
-          currentObject[propKey] = propValue;
-        }
-        continue;
-      }
-
-      // Nested object property (e.g., "    title: 'Vorlesungsfolien'")
-      if (inNestedArray && currentObject && line.match(/^\s+\w+:/)) {
-        const propMatch = line.match(/^\s+(\w+):\s*(.*)$/);
-        if (propMatch) {
-          const propKey = propMatch[1];
-          let propValue = propMatch[2].trim().replace(/^['"]|['"]$/g, '');
-          if (propValue === 'null') propValue = null;
-          currentObject[propKey] = propValue;
-        }
-        continue;
-      }
-
-      // Simple array item (e.g., "  - 'item'")
-      if (line.match(/^\s+-\s+[^:]+$/)) {
-        const value = line
-          .replace(/^\s+-\s+/, '')
-          .trim()
-          .replace(/^['"]|['"]$/g, '');
-        if (currentArray) {
-          currentArray.push(value);
-        }
-        continue;
-      }
-    }
-
+    const frontmatter = yaml.load(yamlContent) || {};
     return { frontmatter, body };
   } catch (e) {
     console.error('YAML parse error:', e.message);
-    return { frontmatter: null, body: content };
+    return { frontmatter: {}, body };
   }
+}
+
+// Alias for backwards compatibility - now uses the same robust parser
+function parseNestedYaml(content) {
+  return parseYamlFrontmatter(content);
 }
 
 // Convert Markdown to HTML (simplified - main parsing happens in browser)
