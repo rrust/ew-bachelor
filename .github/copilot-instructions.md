@@ -24,17 +24,20 @@
 When generating content from `studies-material/` files, follow this structure:
 
 **Jeder Abschnitt:**
+
 1. 📚 **Lerninhalte** (learning-content) - Theorie, Konzepte
 2. ✅ **Verständnis-Checks** (direkt danach!) - self-assessment-mc, fill-in-the-blank, matching, ordering
 3. 🧮 **Praxis-Übung** - practice-exercise, calculation
 4. 📺 **Video** - an thematisch passender Stelle
 
 **Am Ende der Vorlesung:**
+
 - 📋 **Selbsttest** (self-assessment) - Bereitschafts-Checkliste
 - 📝 **Vorlesungs-Test** (questions/) - NUR multiple-choice-multiple, schwer
 - 🎓 **Modul-Prüfungsfragen** - 2 sehr schwierige pro Vorlesung
 
 **Workflow:**
+
 1. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
 2. **Read** CONTENT_PLAN.md in the material folder for structure
 3. **Extract sources** (Titel + Link) from material file header
