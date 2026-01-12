@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T23:25:57.375Z",
+  "generatedAt": "2026-01-12T23:32:48.145Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "16293e2a",
@@ -61,6 +61,16 @@
       "description": "Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen und Metallreaktivität.",
       "estimatedTime": 75,
       "version": "0.0.1"
+    },
+    "02-chemie-grundlagen/04-gleichungen-stoechiometrie": {
+      "checksum": "ca91cec0",
+      "sizeKB": 32.9,
+      "itemCount": 30,
+      "quizCount": 8,
+      "topic": "Gleichungen und Stöchiometrie",
+      "description": "Stöchiometrische Berechnungen, Ausbeute, begrenzende Reaktanten, Molarität, pH-Wert und Titration.",
+      "estimatedTime": 90,
+      "version": "1.0.0"
     },
     "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
       "checksum": "f5137008",
