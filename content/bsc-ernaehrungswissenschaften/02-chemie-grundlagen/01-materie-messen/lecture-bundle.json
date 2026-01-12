@@ -138,10 +138,10 @@
     {
       "type": "youtube-video",
       "topic": "Grundlagen von Materie und Energie",
-      "url": "https://www.youtube.com/watch?v=GAnN9S7C_bY",
-      "title": "Chemische Reaktion & Massenerhaltung I musstewissen Chemie",
-      "description": "musstewissen Chemie erklärt das Gesetz der Massenerhaltung bei chemischen Reaktionen.",
-      "duration": "5:00",
+      "url": "https://www.youtube.com/watch?v=3FkP9Ql4tdc",
+      "title": "Gesetz von der Erhaltung der Masse - Chemische Gesetze",
+      "description": "Leicht Lernen erklärt das Gesetz der Massenerhaltung bei chemischen Reaktionen.",
+      "duration": "4:00",
       "content": ""
     },
     {
@@ -416,9 +416,9 @@
     {
       "type": "youtube-video",
       "topic": "Zustände und Eigenschaften der Materie",
-      "url": "https://www.youtube.com/watch?v=3S3_W1H6jL0",
-      "title": "Aggregatzustände I musstewissen Chemie",
-      "description": "musstewissen Chemie erklärt die drei Aggregatzustände fest, flüssig und gasförmig.",
+      "url": "https://www.youtube.com/watch?v=FEK9tTWGiSk",
+      "title": "Stoffgemische und Reinstoffe I musstewissen Chemie",
+      "description": "musstewissen Chemie erklärt Stoffgemische, Reinstoffe und Aggregatzustände.",
       "duration": "5:00",
       "content": ""
     },
@@ -964,5 +964,5 @@
       "explanation": "**Erklärung:** Präzision = Reproduzierbarkeit (enge Streuung), Genauigkeit = Übereinstimmung mit wahrem Wert. Beide sind unabhängig voneinander: Man kann präzise daneben liegen oder im Durchschnitt richtig, aber mit großer Streuung. Bei Flächenumrechnung: 1 m = 100 cm, also 1 m² = 10.000 cm² (Faktor quadriert)."
     }
   ],
-  "generatedAt": "2026-01-12T21:04:20.847Z"
+  "generatedAt": "2026-01-12T21:13:48.258Z"
 }

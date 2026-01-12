@@ -1,8 +1,8 @@
 ---
 type: 'youtube-video'
 topic: 'Zustände und Eigenschaften der Materie'
-url: 'https://www.youtube.com/watch?v=3S3_W1H6jL0'
-title: 'Aggregatzustände I musstewissen Chemie'
-description: 'musstewissen Chemie erklärt die drei Aggregatzustände fest, flüssig und gasförmig.'
+url: 'https://www.youtube.com/watch?v=FEK9tTWGiSk'
+title: 'Stoffgemische und Reinstoffe I musstewissen Chemie'
+description: 'musstewissen Chemie erklärt Stoffgemische, Reinstoffe und Aggregatzustände.'
 duration: '5:00'
 ---
