@@ -44,8 +44,8 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### 📚 Lerninhalte
 
-| Nr  | Dateiname                        | Typ              | Inhalt                                                              | Quelle |
-| --- | -------------------------------- | ---------------- | ------------------------------------------------------------------- | ------ |
+| Nr  | Dateiname                        | Typ              | Inhalt                                                              | Quelle  |
+| --- | -------------------------------- | ---------------- | ------------------------------------------------------------------- | ------- |
 | 01  | `01-thermochemie-einfuehrung.md` | learning-content | Was ist Thermochemie? Beispiel: Brennende Erdnüsse, Brennstoffzelle | Kap 1.1 |
 | 02  | `02-energieformen.md`            | learning-content | Definition Energie und Wärme, Unterschied zu anderen Energieformen  | Kap 1.2 |
 | 03  | `03-potentielle-energie.md`      | learning-content | Lageenergie auf atomarer Ebene, Ionenbildung und Stabilität         | Kap 1.2 |
@@ -62,15 +62,15 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### 🧮 Praxis-Übung
 
-| Nr  | Dateiname                       | Typ               | Inhalt                                              |
-| --- | ------------------------------- | ----------------- | --------------------------------------------------- |
-| 09  | `09-uebung-brennstoffzelle.md`  | practice-exercise | Analyse: Energieumwandlung in einer Brennstoffzelle |
+| Nr  | Dateiname                      | Typ               | Inhalt                                              |
+| --- | ------------------------------ | ----------------- | --------------------------------------------------- |
+| 09  | `09-uebung-brennstoffzelle.md` | practice-exercise | Analyse: Energieumwandlung in einer Brennstoffzelle |
 
 ### 📺 Video
 
-| Nr  | Dateiname                       | Typ           | Inhalt                                    |
-| --- | ------------------------------- | ------------- | ----------------------------------------- |
-| 10  | `10-video-thermodynamik.md`     | youtube-video | "Thermodynamik Grundlagen Chemie" o.ä.    |
+| Nr  | Dateiname                   | Typ           | Inhalt                                 |
+| --- | --------------------------- | ------------- | -------------------------------------- |
+| 10  | `10-video-thermodynamik.md` | youtube-video | "Thermodynamik Grundlagen Chemie" o.ä. |
 
 ***
 
@@ -123,18 +123,18 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### ✅ Verständnis-Checks
 
-| Nr  | Dateiname                           | Typ                | Inhalt                                   | Schwierigkeit |
-| --- | ----------------------------------- | ------------------ | ---------------------------------------- | ------------- |
-| 27  | `27-check-joule-kalorie.md`         | self-assessment-mc | Umrechnung: 100 cal = ? J                | Einfach       |
-| 28  | `28-check-vorzeichen-q.md`          | self-assessment-mc | Was bedeutet q < 0?                      | Einfach       |
-| 29  | `29-lueckentext-q-formel.md`        | fill-in-the-blank  | q = {{m}} · {{c}} · {{ΔT}}               | Einfach       |
-| 30  | `30-ordering-waermekapazitaet.md`   | ordering           | Stoffe nach Wärmekapazität sortieren     | Mittel        |
+| Nr  | Dateiname                         | Typ                | Inhalt                               | Schwierigkeit |
+| --- | --------------------------------- | ------------------ | ------------------------------------ | ------------- |
+| 27  | `27-check-joule-kalorie.md`       | self-assessment-mc | Umrechnung: 100 cal = ? J            | Einfach       |
+| 28  | `28-check-vorzeichen-q.md`        | self-assessment-mc | Was bedeutet q < 0?                  | Einfach       |
+| 29  | `29-lueckentext-q-formel.md`      | fill-in-the-blank  | q = {{m}} · {{c}} · {{ΔT}}           | Einfach       |
+| 30  | `30-ordering-waermekapazitaet.md` | ordering           | Stoffe nach Wärmekapazität sortieren | Mittel        |
 
 ### 🧮 Praxis-Übungen
 
-| Nr  | Dateiname                    | Typ               | Inhalt                                         |
-| --- | ---------------------------- | ----------------- | ---------------------------------------------- |
-| 31  | `31-uebung-wasserkocher.md`  | practice-exercise | Energie berechnen: Wasser für Tee erhitzen     |
+| Nr  | Dateiname                    | Typ               | Inhalt                                          |
+| --- | ---------------------------- | ----------------- | ----------------------------------------------- |
+| 31  | `31-uebung-wasserkocher.md`  | practice-exercise | Energie berechnen: Wasser für Tee erhitzen      |
 | 32  | `32-uebung-metall-wasser.md` | calculation       | Mischtemperatur: Heißes Metall in kaltem Wasser |
 
 ### 📺 Video
@@ -158,24 +158,24 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### ✅ Verständnis-Checks
 
-| Nr  | Dateiname                             | Typ                | Inhalt                                  | Schwierigkeit |
-| --- | ------------------------------------- | ------------------ | --------------------------------------- | ------------- |
-| 38  | `38-check-schmelzen-temperatur.md`    | self-assessment-mc | Temperatur während Schmelzvorgang       | Einfach       |
-| 39  | `39-check-verdunstung-kuehlung.md`    | self-assessment-mc | Warum kühlt Verdunstung?                | Einfach       |
-| 40  | `40-ordering-heizkurve.md`            | ordering           | Schritte der Heizkurve richtig anordnen | Mittel        |
-| 41  | `41-matching-phasenuebergaenge.md`    | matching           | Phasenübergang → Energiebedarf zuordnen | Mittel        |
+| Nr  | Dateiname                          | Typ                | Inhalt                                  | Schwierigkeit |
+| --- | ---------------------------------- | ------------------ | --------------------------------------- | ------------- |
+| 38  | `38-check-schmelzen-temperatur.md` | self-assessment-mc | Temperatur während Schmelzvorgang       | Einfach       |
+| 39  | `39-check-verdunstung-kuehlung.md` | self-assessment-mc | Warum kühlt Verdunstung?                | Einfach       |
+| 40  | `40-ordering-heizkurve.md`         | ordering           | Schritte der Heizkurve richtig anordnen | Mittel        |
+| 41  | `41-matching-phasenuebergaenge.md` | matching           | Phasenübergang → Energiebedarf zuordnen | Mittel        |
 
 ### 🧮 Praxis-Übungen
 
-| Nr  | Dateiname                           | Typ               | Inhalt                                         |
-| --- | ----------------------------------- | ----------------- | ---------------------------------------------- |
+| Nr  | Dateiname                           | Typ               | Inhalt                                          |
+| --- | ----------------------------------- | ----------------- | ----------------------------------------------- |
 | 42  | `42-uebung-eiswuerfel-schmelzen.md` | practice-exercise | Energie berechnen: Eiswürfel komplett schmelzen |
-| 43  | `43-uebung-heizkurve-komplett.md`   | calculation       | Eis -20°C → Dampf 120°C (5-Stufen-Berechnung)  |
+| 43  | `43-uebung-heizkurve-komplett.md`   | calculation       | Eis -20°C → Dampf 120°C (5-Stufen-Berechnung)   |
 
 ### 📺 Video
 
-| Nr  | Dateiname               | Typ           | Inhalt                    |
-| --- | ----------------------- | ------------- | ------------------------- |
+| Nr  | Dateiname               | Typ           | Inhalt                     |
+| --- | ----------------------- | ------------- | -------------------------- |
 | 44  | `44-video-heizkurve.md` | youtube-video | "Heizkurve Wasser erklärt" |
 
 ***
@@ -193,12 +193,12 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### ✅ Verständnis-Checks
 
-| Nr  | Dateiname                       | Typ                | Inhalt                              | Schwierigkeit |
-| --- | ------------------------------- | ------------------ | ----------------------------------- | ------------- |
-| 49  | `49-check-erster-hauptsatz.md`  | self-assessment-mc | Formel $\Delta U = q + w$           | Einfach       |
-| 50  | `50-check-enthalpie-druck.md`   | self-assessment-mc | Was gilt bei konstantem Druck?      | Einfach       |
-| 51  | `51-lueckentext-vorzeichen.md`  | fill-in-the-blank  | Vorzeichenkonventionen für q und w  | Mittel        |
-| 52  | `52-matching-delta-h.md`        | matching           | ΔH positiv/negativ → exotherm/endo  | Einfach       |
+| Nr  | Dateiname                      | Typ                | Inhalt                             | Schwierigkeit |
+| --- | ------------------------------ | ------------------ | ---------------------------------- | ------------- |
+| 49  | `49-check-erster-hauptsatz.md` | self-assessment-mc | Formel $\Delta U = q + w$          | Einfach       |
+| 50  | `50-check-enthalpie-druck.md`  | self-assessment-mc | Was gilt bei konstantem Druck?     | Einfach       |
+| 51  | `51-lueckentext-vorzeichen.md` | fill-in-the-blank  | Vorzeichenkonventionen für q und w | Mittel        |
+| 52  | `52-matching-delta-h.md`       | matching           | ΔH positiv/negativ → exotherm/endo | Einfach       |
 
 ### 🧮 Praxis-Übung
 
@@ -208,9 +208,9 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### 📺 Video
 
-| Nr  | Dateiname                | Typ           | Inhalt                                    |
-| --- | ------------------------ | ------------- | ----------------------------------------- |
-| 54  | `54-video-enthalpie.md`  | youtube-video | "Enthalpie vs Innere Energie Unterschied" |
+| Nr  | Dateiname               | Typ           | Inhalt                                    |
+| --- | ----------------------- | ------------- | ----------------------------------------- |
+| 54  | `54-video-enthalpie.md` | youtube-video | "Enthalpie vs Innere Energie Unterschied" |
 
 ***
 
@@ -245,8 +245,8 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### 📺 Video
 
-| Nr  | Dateiname                   | Typ           | Inhalt                    |
-| --- | --------------------------- | ------------- | ------------------------- |
+| Nr  | Dateiname                   | Typ           | Inhalt                     |
+| --- | --------------------------- | ------------- | -------------------------- |
 | 67  | `67-video-satz-von-hess.md` | youtube-video | "Satz von Hess Berechnung" |
 
 ***
@@ -277,9 +277,9 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### 📺 Video
 
-| Nr  | Dateiname                   | Typ           | Inhalt                       |
-| --- | --------------------------- | ------------- | ---------------------------- |
-| 75  | `75-video-kalorimetrie.md`  | youtube-video | "Bombenkalorimeter Rechnung" |
+| Nr  | Dateiname                  | Typ           | Inhalt                       |
+| --- | -------------------------- | ------------- | ---------------------------- |
+| 75  | `75-video-kalorimetrie.md` | youtube-video | "Bombenkalorimeter Rechnung" |
 
 ***
 
@@ -294,17 +294,17 @@ Diese Quellen müssen in `lecture.md` unter `sources` definiert werden:
 
 ### ✅ Verständnis-Checks
 
-| Nr  | Dateiname                 | Typ                | Inhalt                                          | Schwierigkeit |
-| --- | ------------------------- | ------------------ | ----------------------------------------------- | ------------- |
-| 78  | `78-check-brennwert.md`   | self-assessment-mc | Unterschied physikalischer/physiolog. Brennwert | Einfach       |
-| 79  | `79-matching-alltag.md`   | matching           | Alltagsphänomen → thermodynamische Erklärung    | Mittel        |
+| Nr  | Dateiname               | Typ                | Inhalt                                          | Schwierigkeit |
+| --- | ----------------------- | ------------------ | ----------------------------------------------- | ------------- |
+| 78  | `78-check-brennwert.md` | self-assessment-mc | Unterschied physikalischer/physiolog. Brennwert | Einfach       |
+| 79  | `79-matching-alltag.md` | matching           | Alltagsphänomen → thermodynamische Erklärung    | Mittel        |
 
 ### 🧮 Praxis-Übungen
 
-| Nr  | Dateiname                     | Typ               | Inhalt                                               |
-| --- | ----------------------------- | ----------------- | ---------------------------------------------------- |
-| 80  | `80-uebung-schokoriegel.md`   | practice-exercise | kcal in Joule umrechnen, Treppensteigen berechnen    |
-| 81  | `81-uebung-kaeltepackung.md`  | calculation       | Benötigte Menge Ammoniumnitrat für Kühlung berechnen |
+| Nr  | Dateiname                    | Typ               | Inhalt                                               |
+| --- | ---------------------------- | ----------------- | ---------------------------------------------------- |
+| 80  | `80-uebung-schokoriegel.md`  | practice-exercise | kcal in Joule umrechnen, Treppensteigen berechnen    |
+| 81  | `81-uebung-kaeltepackung.md` | calculation       | Benötigte Menge Ammoniumnitrat für Kühlung berechnen |
 
 ***
 
@@ -449,7 +449,7 @@ correctAnswers:
 **Geschätzte Lernzeit:** 120 Minuten (Lerninhalte + Übungen) + 30 Minuten (Test)
 - **Standard-Bildungsenthalpie:** Elemente in Standardzustand = 0
 
----
+***
 
 ## Zielstruktur
 
@@ -470,7 +470,7 @@ content/bsc-ernaehrungswissenschaften/02-grundlagen-chemie/05-thermodynamik-enth
     └── 05-thermodynamik-cheatsheet.md
 ```
 
----
+***
 
 ## YouTube-Video-Empfehlungen
 
@@ -486,7 +486,7 @@ Diese Videos können als `youtube-video` lecture-items eingebunden werden:
 | Satz von Hess              | "Satz von Hess einfach erklärt Beispiel"     | Nach Item 35   |
 | Kalorimetrie               | "Bombenkalorimeter Funktionsweise Rechnung"  | Nach Item 39   |
 
----
+***
 
 ## Prüfungsaufgaben-Integration
 
@@ -494,7 +494,7 @@ Die Vorlesung enthält 15 Prüfungsaufgaben auf Universitätsniveau (insgesamt 1
 
 **Empfehlung:** Link zur Prüfungsvorbereitung im Achievement-Cheatsheet hinzufügen.
 
----
+***
 
 ## Besondere Hinweise für die Content-Generierung
 
