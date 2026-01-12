@@ -395,6 +395,7 @@ Bevor du antwortest, prüfe:
 ❌ Selbsttests auf Prüfungsniveau
 ❌ **YouTube-URLs ERFINDEN** - Nur echte, verifizierte Videos!
 ❌ **Nicht-einbettbare Video-Links** (nur youtube.com/watch?v=...)
+❌ **Videos von simpleclub** - Haben Domain-Restrictions, NICHT einbettbar!
 
 ---
 
