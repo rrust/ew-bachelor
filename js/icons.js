@@ -54,6 +54,9 @@ const Icons = (function () {
 
     book: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>',
 
+    listBullet:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>',
+
     // Map zoom controls
     zoomIn:
       '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>',
@@ -105,6 +108,26 @@ const Icons = (function () {
 
     upload:
       '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>',
+
+    // Offline indicator icons - cloud icons from svgrepo.com
+    cloud:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z"></path>',
+
+    cloudOff:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5221 18.5208C17.9141 18.8274 17.2272 19 16.5 19L8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C7.59659 8.27034 7.70825 8.04754 7.83373 7.83303M10.9021 5.30015C11.4635 5.10615 12.0645 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 14.7799 20.9739 15.0568 20.924 15.3253M3 3L21 21"></path>',
+
+    cloudCheck:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13l2 2 4-4"></path>',
+
+    cloudDownload:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11v5m0 0l-2-2m2 2l2-2"></path>',
+
+    cloudSync:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z"></path><circle cx="12" cy="13" r="2" stroke-width="2" fill="none"></circle>',
+
+    // Spinner icon for loading states
+    spinner:
+      '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v4m0 12v4m10-10h-4M6 12H2m15.07-7.07l-2.83 2.83M9.76 14.24l-2.83 2.83m11.31 0l-2.83-2.83M9.76 9.76L6.93 6.93"></path>',
 
     hourglassEmpty:
       '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4h12M6 20h12M8 4v4a4 4 0 004 4 4 4 0 004-4V4M8 20v-4a4 4 0 014-4 4 4 0 014 4v4"></path>',

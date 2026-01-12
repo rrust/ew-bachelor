@@ -30,6 +30,7 @@ const VALID_ICONS = [
   'cog',
   'map',
   'trophy',
+  'achievement',
   'phone',
   'phoneDownload',
   'checkCircle',

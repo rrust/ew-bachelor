@@ -349,6 +349,7 @@ function validateAchievementMetadata(doc, result) {
     'cog',
     'map',
     'trophy',
+    'achievement',
     'phone',
     'phoneDownload',
     'checkCircle',

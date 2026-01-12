@@ -255,7 +255,7 @@ function searchContent(query, content, modules) {
             achievementId: achievementId,
             title: title,
             subtitle: description,
-            icon: 'trophy',
+            icon: 'achievement',
             url: `#/achievements/${achievementId}`
           });
         }

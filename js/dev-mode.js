@@ -149,26 +149,47 @@ function getTestDataFiles() {
  */
 async function loadTestProgress(filename) {
   try {
-    const response = await fetch(`test-data/${filename}`);
+    // Use basePath for correct URL resolution
+    const basePath = window.getBasePath ? window.getBasePath() : '';
+    const url = `${basePath}test-data/${filename}`;
+    console.log(`[Dev] Fetching test data from: ${url}`);
+
+    const response = await fetch(url);
     if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+      throw new Error(`HTTP ${response.status} for ${url}`);
     }
 
     const data = await response.json();
+    console.log(`[Dev] Received data:`, data);
 
     // Import the progress data
     if (data.studyId && data.progress) {
-      localStorage.setItem(
-        `progress_${data.studyId}`,
-        JSON.stringify(data.progress)
+      // Save progress data
+      const progressKey = `progress_${data.studyId}`;
+      localStorage.setItem(progressKey, JSON.stringify(data.progress));
+
+      // Also update app settings to ensure activeStudyId is set
+      const currentSettings = JSON.parse(
+        localStorage.getItem('appSettings') || '{}'
       );
+      const newSettings = {
+        ...currentSettings,
+        activeStudyId: data.studyId,
+        userName:
+          data.progress.userName ||
+          data.settings?.userName ||
+          currentSettings.userName,
+        theme: data.settings?.theme || currentSettings.theme || 'light'
+      };
+      localStorage.setItem('appSettings', JSON.stringify(newSettings));
+
       console.log(`[Dev] Loaded test data: ${filename}`);
 
       // Close modal and reload the page to apply changes
       closeTestDataModal();
       location.reload();
     } else {
-      throw new Error('Invalid test data format');
+      throw new Error('Invalid test data format - missing studyId or progress');
     }
   } catch (error) {
     console.error('[Dev] Failed to load test data:', error);

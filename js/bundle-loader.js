@@ -110,6 +110,20 @@ async function loadLectureFromBundle(studyId, moduleId, lectureId) {
       console.log(
         `[BundleLoader] Loaded from network: ${moduleId}/${lectureId}`
       );
+
+      // Auto-save to IndexedDB for offline access
+      if (window.DownloadManager) {
+        window.DownloadManager.saveBundle(studyId, moduleId, lectureId, bundle)
+          .then(() =>
+            console.log(
+              `[BundleLoader] Saved to IndexedDB: ${moduleId}/${lectureId}`
+            )
+          )
+          .catch((e) =>
+            console.warn('[BundleLoader] Failed to save bundle:', e)
+          );
+      }
+
       return bundleToLecture(bundle);
     }
   } catch (e) {

@@ -140,6 +140,166 @@ function getModuleStats(moduleId, APP_CONTENT, getUserProgress) {
 }
 
 /**
+ * Auto-sync all modules in the background
+ * Downloads all lectures for all unlocked modules
+ * @param {Array} MODULES - Module metadata array
+ * @param {HTMLElement} container - Container with module cards
+ */
+async function autoSyncAllModules(MODULES, container) {
+  if (!window.DownloadManager || !window.BundleLoader) return;
+
+  const settings = window.getAppSettings ? window.getAppSettings() : {};
+  const studyId = settings.activeStudyId;
+  if (!studyId) return;
+
+  // Only sync unlocked modules
+  const unlockedModules = MODULES.filter((m) => m.status !== 'gesperrt');
+
+  console.log(
+    `[Modules] Auto-syncing ${unlockedModules.length} modules in background`
+  );
+
+  for (const module of unlockedModules) {
+    const moduleId = module.id;
+    const lectureIds = module.lectures || [];
+
+    if (lectureIds.length === 0) continue;
+
+    // Get status element for this module
+    const statusEl = container.querySelector(
+      `.module-offline-status[data-module="${moduleId}"]`
+    );
+
+    // Check how many need syncing
+    let needsSync = false;
+    for (const lectureId of lectureIds) {
+      const status = await window.DownloadManager.getStatus(
+        studyId,
+        moduleId,
+        lectureId
+      );
+      if (status === 'not-downloaded' || status === 'outdated') {
+        needsSync = true;
+        break;
+      }
+    }
+
+    if (!needsSync) continue;
+
+    // Show spinner on module card and track start time
+    const spinnerStartTime = Date.now();
+    if (statusEl) {
+      statusEl.innerHTML = `<span class="text-blue-500 dark:text-blue-400 inline-block animate-spin" title="Wird synchronisiert...">${Icons.get(
+        'spinner',
+        'w-5 h-5'
+      )}</span>`;
+    }
+
+    // Sync all lectures for this module
+    let syncedCount = 0;
+    for (const lectureId of lectureIds) {
+      try {
+        const status = await window.DownloadManager.getStatus(
+          studyId,
+          moduleId,
+          lectureId
+        );
+        if (status === 'not-downloaded' || status === 'outdated') {
+          await window.BundleLoader.loadLectureFromBundle(
+            studyId,
+            moduleId,
+            lectureId
+          );
+          syncedCount++;
+        }
+      } catch (e) {
+        console.warn(`[Modules] Failed to sync ${moduleId}/${lectureId}:`, e);
+      }
+    }
+
+    // Ensure spinner is visible for at least 1 second
+    const elapsed = Date.now() - spinnerStartTime;
+    const minDisplayTime = 1000; // 1 second minimum
+    if (elapsed < minDisplayTime) {
+      await new Promise((resolve) =>
+        setTimeout(resolve, minDisplayTime - elapsed)
+      );
+    }
+
+    // Update module status to green
+    if (statusEl) {
+      statusEl.innerHTML = `<span class="text-green-500 dark:text-green-400" title="Alle ${
+        lectureIds.length
+      } Vorlesungen offline verfügbar">${Icons.get(
+        'cloudCheck',
+        'w-5 h-5'
+      )}</span>`;
+    }
+
+    if (syncedCount > 0) {
+      console.log(`[Modules] Synced ${syncedCount} lectures for ${moduleId}`);
+    }
+  }
+
+  console.log('[Modules] Background sync complete');
+}
+
+/**
+ * Update offline status indicators for module cards
+ * @param {HTMLElement} container - Container with module cards
+ */
+async function updateModuleOfflineStatus(container) {
+  if (!window.DownloadManager) return;
+
+  const settings = window.getAppSettings ? window.getAppSettings() : {};
+  const studyId = settings.activeStudyId;
+  if (!studyId) return;
+
+  const statusElements = container.querySelectorAll('.module-offline-status');
+
+  for (const el of statusElements) {
+    const moduleId = el.dataset.module;
+
+    const status = await window.DownloadManager.getModuleDownloadStatus(
+      studyId,
+      moduleId
+    );
+
+    if (status.downloaded === 0) {
+      // No lectures downloaded - show gray crossed-out cloud
+      el.innerHTML = `<span class="text-gray-400 dark:text-gray-500" title="Nicht offline verfügbar">${Icons.get(
+        'cloudOff',
+        'w-5 h-5'
+      )}</span>`;
+    } else if (status.downloaded === status.total && status.outdated === 0) {
+      // All lectures downloaded and current
+      el.innerHTML = `<span class="text-green-500 dark:text-green-400" title="Alle ${
+        status.total
+      } Vorlesungen offline verfügbar">${Icons.get(
+        'cloudCheck',
+        'w-5 h-5'
+      )}</span>`;
+    } else if (status.outdated > 0) {
+      // Some lectures have updates available
+      el.innerHTML = `<span class="text-amber-500 dark:text-amber-400" title="${
+        status.downloaded
+      }/${status.total} offline (${status.outdated} mit Updates)">${Icons.get(
+        'cloudDownload',
+        'w-5 h-5'
+      )}</span>`;
+    } else {
+      // Partial download - show yellow cloud
+      el.innerHTML = `<span class="text-amber-500 dark:text-amber-400" title="${
+        status.downloaded
+      }/${status.total} Vorlesungen offline verfügbar">${Icons.get(
+        'cloudCheck',
+        'w-5 h-5'
+      )}</span>`;
+    }
+  }
+}
+
+/**
  * Loads and displays all module cards
  * @param {Array} MODULES - Module metadata array
  * @param {Object} APP_CONTENT - Content object
@@ -167,6 +327,14 @@ function loadModuleCards(
       displayLecturesForModule(module.id)
     );
     moduleGrid.appendChild(card);
+  }
+
+  // Update offline status for all modules async
+  updateModuleOfflineStatus(moduleGrid);
+
+  // Auto-sync all modules in background when online
+  if (navigator.onLine) {
+    autoSyncAllModules(MODULES, moduleGrid);
   }
 }
 
@@ -278,7 +446,8 @@ function createModuleCard(
     cardHTML +=
       '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between mt-2">';
 
-    // Module icon + number on the left
+    // Module icon + number + middot + offline status on the left
+    cardHTML += `<div class="flex items-center gap-1.5">`;
     if (moduleNumber) {
       const moduleIcon = Icons.get(
         'modules',
@@ -286,9 +455,11 @@ function createModuleCard(
         'text-gray-500 dark:text-gray-400'
       );
       cardHTML += `<span class="flex items-center gap-1 text-xs font-semibold text-gray-500 dark:text-gray-400">${moduleIcon}${moduleNumber}</span>`;
-    } else {
-      cardHTML += '<div></div>'; // Empty div for spacing
+      cardHTML += `<span class="text-gray-400 dark:text-gray-500">&middot;</span>`;
     }
+    // Placeholder for offline status - will be updated async
+    cardHTML += `<span class="module-offline-status flex items-center" data-module="${moduleId}"></span>`;
+    cardHTML += `</div>`;
 
     // Action buttons on the right
     cardHTML += '<div class="flex items-center space-x-2">';
@@ -536,17 +707,26 @@ async function displayLecturesForModule(
 
     contentHTML += `<div class="px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between">`;
 
-    // Lecture number on the left
+    // Lecture number + middot + offline indicator on the left
+    contentHTML += `<div class="flex items-center gap-1.5">`;
     if (lectureNumber) {
       contentHTML += `<span class="text-xs font-semibold text-gray-500 dark:text-gray-400">${lectureNumber}</span>`;
-    } else {
-      contentHTML += '<div></div>'; // Empty div for spacing
+      contentHTML += `<span class="text-gray-400 dark:text-gray-500">&middot;</span>`;
     }
+    // Placeholder for offline status - will be updated async
+    contentHTML += `<span class="offline-status flex items-center" data-module="${moduleId}" data-lecture="${lectureId}"></span>`;
+    contentHTML += `</div>`;
 
     // Action buttons on the right - will be updated with download status
     contentHTML += `<div class="flex items-center space-x-2 lecture-actions" data-module="${moduleId}" data-lecture="${lectureId}">`;
-    contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesung</button>`;
-    contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Übersicht</button>`;
+    contentHTML += `<button data-action="start-lecture" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-2.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200" title="Vorlesung">${Icons.get(
+      'book',
+      'w-4 h-4'
+    )}</button>`;
+    contentHTML += `<button data-action="show-lecture-overview" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-2.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200" title="Übersicht">${Icons.get(
+      'listBullet',
+      'w-4 h-4'
+    )}</button>`;
 
     if (hasQuiz) {
       contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200">Test</button>`;
@@ -558,6 +738,19 @@ async function displayLecturesForModule(
 
     card.innerHTML = contentHTML;
     lectureContentDiv.appendChild(card);
+  }
+
+  // Update offline status indicators async, then auto-sync
+  await updateLectureOfflineStatus(lectureContentDiv, studyId);
+
+  // Auto-sync all lectures in background when online
+  if (navigator.onLine) {
+    autoSyncModuleLectures(
+      studyId,
+      moduleId,
+      lecturesToShow,
+      lectureContentDiv
+    );
   }
 
   // Add event listeners for the new buttons
@@ -581,6 +774,137 @@ async function displayLecturesForModule(
       handleLectureDownload(modId, lecId, button);
     }
   });
+}
+
+/**
+ * Update offline status indicators for lecture cards
+ * @param {HTMLElement} container - Container with lecture cards
+ * @param {string} studyId - Study ID
+ */
+async function updateLectureOfflineStatus(container, studyId) {
+  if (!window.DownloadManager) return;
+
+  const statusElements = container.querySelectorAll('.offline-status');
+
+  for (const el of statusElements) {
+    const moduleId = el.dataset.module;
+    const lectureId = el.dataset.lecture;
+
+    const status = await window.DownloadManager.getStatus(
+      studyId,
+      moduleId,
+      lectureId
+    );
+
+    if (status === 'current') {
+      el.innerHTML = `<span class="text-green-500 dark:text-green-400" title="Offline verfügbar">${Icons.get(
+        'cloudCheck',
+        'w-5 h-5'
+      )}</span>`;
+    } else if (status === 'outdated') {
+      el.innerHTML = `<span class="text-amber-500 dark:text-amber-400" title="Update verfügbar">${Icons.get(
+        'cloudDownload',
+        'w-5 h-5'
+      )}</span>`;
+    } else {
+      // not-downloaded - show gray cloud
+      el.innerHTML = `<span class="text-gray-400 dark:text-gray-500" title="Nicht offline verfügbar">${Icons.get(
+        'cloudOff',
+        'w-5 h-5'
+      )}</span>`;
+    }
+  }
+}
+
+/**
+ * Auto-sync all lectures in a module in the background
+ * Downloads lectures that haven't been cached yet
+ * @param {string} studyId - Study ID
+ * @param {string} moduleId - Module ID
+ * @param {Array} lectureIds - Array of lecture IDs to sync
+ * @param {HTMLElement} container - Container to update status after sync
+ */
+async function autoSyncModuleLectures(
+  studyId,
+  moduleId,
+  lectureIds,
+  container
+) {
+  if (!window.DownloadManager || !window.BundleLoader) return;
+
+  console.log(
+    `[Modules] Auto-syncing ${lectureIds.length} lectures for ${moduleId}`
+  );
+
+  let syncedCount = 0;
+
+  for (const lectureId of lectureIds) {
+    try {
+      const status = await window.DownloadManager.getStatus(
+        studyId,
+        moduleId,
+        lectureId
+      );
+
+      // Only download if not already cached
+      if (status === 'not-downloaded' || status === 'outdated') {
+        // Show loading spinner and track start time
+        const spinnerStartTime = Date.now();
+        const statusEl = container.querySelector(
+          `.offline-status[data-module="${moduleId}"][data-lecture="${lectureId}"]`
+        );
+        if (statusEl) {
+          statusEl.innerHTML = `<span class="text-blue-500 dark:text-blue-400 inline-block animate-spin" title="Wird synchronisiert...">${Icons.get(
+            'spinner',
+            'w-5 h-5'
+          )}</span>`;
+        }
+
+        // Use BundleLoader which auto-saves to IndexedDB
+        await window.BundleLoader.loadLectureFromBundle(
+          studyId,
+          moduleId,
+          lectureId
+        );
+        syncedCount++;
+
+        // Ensure spinner is visible for at least 1 second
+        const elapsed = Date.now() - spinnerStartTime;
+        const minDisplayTime = 1000; // 1 second minimum
+        if (elapsed < minDisplayTime) {
+          await new Promise((resolve) =>
+            setTimeout(resolve, minDisplayTime - elapsed)
+          );
+        }
+
+        // Update the status indicator to green check
+        if (statusEl) {
+          statusEl.innerHTML = `<span class="text-green-500 dark:text-green-400" title="Offline verfügbar">${Icons.get(
+            'cloudCheck',
+            'w-5 h-5'
+          )}</span>`;
+        }
+      }
+    } catch (e) {
+      console.warn(`[Modules] Failed to sync lecture ${lectureId}:`, e);
+      // Show error state - keep gray
+      const statusEl = container.querySelector(
+        `.offline-status[data-module="${moduleId}"][data-lecture="${lectureId}"]`
+      );
+      if (statusEl) {
+        statusEl.innerHTML = `<span class="text-gray-400 dark:text-gray-500" title="Synchronisierung fehlgeschlagen">${Icons.get(
+          'cloudOff',
+          'w-5 h-5'
+        )}</span>`;
+      }
+    }
+  }
+
+  if (syncedCount > 0) {
+    console.log(
+      `[Modules] Auto-synced ${syncedCount} lectures for ${moduleId}`
+    );
+  }
 }
 
 /**

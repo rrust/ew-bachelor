@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.7.1';
+const CACHE_VERSION = 'v1.8.0';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -42,6 +42,7 @@ const STATIC_ASSETS = [
   './js/training.js',
   './js/download-manager.js',
   './js/bundle-loader.js',
+  './js/offline-indicator.js',
   './content/studies.json',
   './manifest.json'
 ];
@@ -126,6 +127,27 @@ self.addEventListener('fetch', (event) => {
 
   // Skip chrome-extension and other non-http(s) requests
   if (!url.protocol.startsWith('http')) {
+    return;
+  }
+
+  // Lecture bundles - Cache first (for offline support)
+  if (
+    url.pathname.includes('/content/') &&
+    url.pathname.endsWith('lecture-bundle.json')
+  ) {
+    event.respondWith(cacheFirst(event.request));
+    return;
+  }
+
+  // Study metadata files - Stale-while-revalidate (fast load, background update)
+  if (
+    url.pathname.includes('/content/') &&
+    (url.pathname.endsWith('modules.json') ||
+      url.pathname.endsWith('search-index.json') ||
+      url.pathname.endsWith('content-manifest.json') ||
+      url.pathname.endsWith('content-list.json'))
+  ) {
+    event.respondWith(staleWhileRevalidate(event.request));
     return;
   }
 

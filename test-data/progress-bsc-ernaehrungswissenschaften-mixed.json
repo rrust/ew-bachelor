@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-10T22:45:37.222Z",
+  "exportedAt": "2026-01-12T08:53:42.873Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,37 +8,40 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-10-05T22:45:37.222Z",
-    "training": {
-      "tokens": 7,
-      "totalAnswered": 110,
-      "totalRounds": 11
-    },
+    "startedAt": "2025-09-18T08:53:42.873Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
-        "status": "in-progress",
+        "status": "completed",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 74,
+            "score": 82,
             "badge": "silver"
           },
           "02-makronaehrstoffe-detail": {
-            "score": 72,
+            "score": 78,
             "badge": "silver"
-          }
-        },
-        "achievements": {}
-      },
-      "02-chemie-grundlagen": {
-        "status": "completed",
-        "lectures": {
-          "01-materie-messen": {
-            "score": 51,
+          },
+          "03-fette-oele": {
+            "score": 62,
             "badge": "bronze"
           }
         },
         "achievements": {}
       }
+    },
+    "streak": {
+      "current": 3,
+      "lastActivityDate": "2026-01-12T10:00:00.000Z",
+      "totalDays": 8,
+      "longestStreak": 5,
+      "rescueMode": false,
+      "rescueCorrect": 0,
+      "rescueTotal": 0
+    },
+    "training": {
+      "tokens": 12,
+      "totalAnswered": 100,
+      "totalRounds": 10
     }
   }
 }

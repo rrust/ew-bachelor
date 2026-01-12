@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-10T22:45:37.222Z",
+  "exportedAt": "2026-01-12T08:53:42.873Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,55 +8,95 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-12-06T22:45:37.222Z",
-    "streak": {
-      "current": 5,
-      "lastActivityDate": "2026-01-11T10:00:00.000Z",
-      "totalDays": 12,
-      "longestStreak": 7,
-      "rescueMode": false,
-      "rescueCorrect": 0,
-      "rescueTotal": 0
-    },
-    "training": {
-      "tokens": 12,
-      "totalAnswered": 180,
-      "totalRounds": 18
-    },
+    "startedAt": "2025-10-26T08:53:42.873Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 92,
-            "badge": "gold"
-          },
-          "02-makronaehrstoffe-detail": {
-            "score": 76,
+            "score": 82,
             "badge": "silver"
           },
+          "02-makronaehrstoffe-detail": {
+            "score": 90,
+            "badge": "gold"
+          },
           "03-fette-oele": {
-            "score": 76,
+            "score": 78,
             "badge": "silver"
           }
         },
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-30T22:45:37.222Z",
-            "expiresAt": "2026-01-29T22:45:37.222Z",
+            "unlockedAt": "2026-01-03T08:53:42.873Z",
+            "expiresAt": "2026-02-02T08:53:42.873Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "makronaehrstoffe-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-21T22:45:37.222Z",
-            "expiresAt": "2026-01-20T22:45:37.222Z",
+            "unlockedAt": "2025-12-28T08:53:42.873Z",
+            "expiresAt": "2026-01-27T08:53:42.873Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          }
+        }
+      },
+      "02-chemie-grundlagen": {
+        "status": "in-progress",
+        "lectures": {
+          "01-materie-messen": {
+            "score": 87,
+            "badge": "silver"
+          },
+          "02-atome-formeln": {
+            "score": 95,
+            "badge": "gold"
+          },
+          "03-chemische-reaktionen": {
+            "score": 86,
+            "badge": "silver"
+          }
+        },
+        "achievements": {
+          "materie-messen-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2026-01-01T08:53:42.873Z",
+            "expiresAt": "2026-01-31T08:53:42.873Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "atome-formeln-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2025-12-29T08:53:42.873Z",
+            "expiresAt": "2026-01-28T08:53:42.873Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "chemische-reaktionen-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2026-01-07T08:53:42.873Z",
+            "expiresAt": "2026-02-06T08:53:42.873Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
         }
       }
+    },
+    "streak": {
+      "current": 8,
+      "lastActivityDate": "2026-01-12T10:00:00.000Z",
+      "totalDays": 20,
+      "longestStreak": 10,
+      "rescueMode": false,
+      "rescueCorrect": 0,
+      "rescueTotal": 0
+    },
+    "training": {
+      "tokens": 25,
+      "totalAnswered": 350,
+      "totalRounds": 35
     }
   }
 }

@@ -586,6 +586,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       window.Notifications.init();
     }
 
+    // Initialize offline indicator
+    if (window.OfflineIndicator && window.OfflineIndicator.init) {
+      window.OfflineIndicator.init();
+    }
+
     // Handle browser back/forward buttons
     window.addEventListener('popstate', (event) => {
       if (!navigateFromURL()) {
@@ -703,10 +708,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     const studyId = settings.activeStudyId;
 
     if (window.BundleLoader) {
-      // Show loading overlay
-      const hideLoading = window.showLoadingOverlay
-        ? window.showLoadingOverlay('Vorlesung wird geladen...')
-        : null;
+      // Check if lecture is already loaded in memory
+      const existingLecture = APP_CONTENT[moduleId]?.lectures?.[lectureId];
+      const isAlreadyLoaded = existingLecture?.items?.length > 0;
+
+      // Only show loading overlay if we need to load from disk/network
+      let hideLoading = null;
+      if (!isAlreadyLoaded) {
+        hideLoading = window.showLoadingOverlay
+          ? window.showLoadingOverlay('Vorlesung wird geladen...')
+          : null;
+      }
 
       const lecture = await window.BundleLoader.ensureLectureLoaded(
         APP_CONTENT,
@@ -720,9 +732,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       if (!lecture) {
         console.error(`[App] Failed to load lecture: ${moduleId}/${lectureId}`);
-        alert(
-          'Vorlesung konnte nicht geladen werden. Bitte versuche es erneut.'
-        );
+
+        // Show appropriate error message based on online/offline status
+        if (!navigator.onLine) {
+          alert(
+            'Du bist offline und diese Vorlesung wurde noch nicht heruntergeladen.\n\n' +
+              'Gehe online und öffne die Vorlesung einmal, dann ist sie auch offline verfügbar.'
+          );
+        } else {
+          alert(
+            'Vorlesung konnte nicht geladen werden. Bitte versuche es erneut.'
+          );
+        }
         return;
       }
     }

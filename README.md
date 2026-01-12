@@ -18,7 +18,8 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 - 💾 Fortschritt-Backup & Restore
 - 🔍 Globale Suche über alle Inhalte
 - 📱 PWA – installierbar als Offline-App mit Push-Benachrichtigungen
-- 👆 Swipe-Gesten für mobile Navigation
+- � Offline-Modus – alle Inhalte werden automatisch synchronisiert
+- �👆 Swipe-Gesten für mobile Navigation
 - 🗺️ Studienstruktur-Map zur Übersicht
 - 🌓 Dark Mode Support
 

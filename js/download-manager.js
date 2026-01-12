@@ -131,9 +131,31 @@ async function getStatus(studyId, moduleId, lectureId) {
   const lectureKey = getLectureKey(studyId, moduleId, lectureId);
   const manifestKey = getManifestKey(moduleId, lectureId);
 
-  // Check if we have this lecture downloaded
+  // Check if we have this lecture in metadata
   const downloadInfo = meta[lectureKey];
   if (!downloadInfo) {
+    return 'not-downloaded';
+  }
+
+  // Verify data actually exists in IndexedDB
+  try {
+    const db = await openDatabase();
+    const exists = await new Promise((resolve) => {
+      const tx = db.transaction(STORE_NAME, 'readonly');
+      const store = tx.objectStore(STORE_NAME);
+      const request = store.get(lectureKey);
+      request.onsuccess = () => resolve(!!request.result);
+      request.onerror = () => resolve(false);
+    });
+
+    if (!exists) {
+      // Metadata exists but data doesn't - clean up metadata
+      delete meta[lectureKey];
+      saveDownloadMeta(meta);
+      return 'not-downloaded';
+    }
+  } catch (e) {
+    console.warn('[DownloadManager] Failed to verify IndexedDB data:', e);
     return 'not-downloaded';
   }
 
@@ -161,7 +183,6 @@ async function getModuleDownloadStatus(studyId, moduleId) {
     return { downloaded: 0, total: 0, outdated: 0 };
   }
 
-  const meta = getDownloadMeta();
   let downloaded = 0;
   let outdated = 0;
   let total = 0;
@@ -171,15 +192,15 @@ async function getModuleDownloadStatus(studyId, moduleId) {
     if (manifestKey.startsWith(moduleId + '/')) {
       total++;
       const lectureId = manifestKey.split('/')[1];
-      const lectureKey = getLectureKey(studyId, moduleId, lectureId);
-      const downloadInfo = meta[lectureKey];
 
-      if (downloadInfo) {
+      // Use getStatus which verifies IndexedDB
+      const status = await getStatus(studyId, moduleId, lectureId);
+
+      if (status === 'current') {
         downloaded++;
-        const serverChecksum = manifest.lectures[manifestKey].checksum;
-        if (downloadInfo.checksum !== serverChecksum) {
-          outdated++;
-        }
+      } else if (status === 'outdated') {
+        downloaded++;
+        outdated++;
       }
     }
   }
@@ -421,6 +442,50 @@ async function getOutdatedLectures(studyId) {
   return outdated;
 }
 
+/**
+ * Save a bundle to IndexedDB (for automatic offline caching)
+ * @param {string} studyId
+ * @param {string} moduleId
+ * @param {string} lectureId
+ * @param {Object} bundle - The lecture bundle data
+ * @returns {Promise<boolean>}
+ */
+async function saveBundle(studyId, moduleId, lectureId, bundle) {
+  try {
+    const lectureKey = getLectureKey(studyId, moduleId, lectureId);
+    const manifestKey = getManifestKey(moduleId, lectureId);
+
+    // Get manifest info for checksum
+    const manifest = await loadManifest(studyId);
+    const lectureInfo = manifest?.lectures?.[manifestKey];
+
+    // Store in IndexedDB
+    const db = await openDatabase();
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE_NAME, 'readwrite');
+      const store = tx.objectStore(STORE_NAME);
+      store.put({ key: lectureKey, bundle });
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error);
+    });
+
+    // Update metadata
+    const meta = getDownloadMeta();
+    meta[lectureKey] = {
+      checksum: lectureInfo?.checksum || 'unknown',
+      downloadedAt: new Date().toISOString(),
+      sizeKB: lectureInfo?.sizeKB || 0,
+      autoSaved: true
+    };
+    saveDownloadMeta(meta);
+
+    return true;
+  } catch (e) {
+    console.error('[DownloadManager] saveBundle failed:', e);
+    return false;
+  }
+}
+
 // Expose to global scope
 window.DownloadManager = {
   // Status
@@ -433,6 +498,7 @@ window.DownloadManager = {
   download,
   deleteLecture,
   deleteStudy,
+  saveBundle,
 
   // Data access
   getLectureData,
