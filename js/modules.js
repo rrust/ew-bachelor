@@ -463,7 +463,10 @@ function createModuleCard(
 
     // Action buttons on the right
     cardHTML += '<div class="flex items-center space-x-2">';
-    cardHTML += `<button class="view-lectures-btn text-sm px-3 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200">Vorlesungen</button>`;
+    cardHTML += `<button class="view-lectures-btn text-sm px-2.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200" title="Vorlesungen">${Icons.get(
+      'book',
+      'w-4 h-4'
+    )}</button>`;
 
     // Exam button
     const EXAM_UNLOCK_THRESHOLD = 80;
@@ -481,7 +484,7 @@ function createModuleCard(
 
     cardHTML += `<button class="exam-btn ${examBtnClass}" ${
       !examEnabled ? 'disabled' : ''
-    } title="${examTooltip}">Prüfung</button>`;
+    } title="${examTooltip}">${Icons.get('exam', 'w-4 h-4')}</button>`;
     cardHTML += '</div>'; // Close action buttons
     cardHTML += '</div>'; // Close footer
   }
@@ -733,7 +736,10 @@ async function displayLecturesForModule(
     )}</button>`;
 
     if (hasQuiz) {
-      contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200">Test</button>`;
+      contentHTML += `<button data-action="start-quiz" data-module="${moduleId}" data-lecture="${lectureId}" class="text-sm px-2.5 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200" title="Test">${Icons.get(
+        'exam',
+        'w-4 h-4'
+      )}</button>`;
     }
 
     contentHTML += '</div>'; // Close action buttons
