@@ -241,7 +241,9 @@ function searchContent(query, content, modules) {
       ([achievementId, achievement]) => {
         const title = achievement.title || '';
         const description = achievement.description || '';
-        const achievementContent = achievement.content || '';
+        // Support both pre-parsed HTML content and markdown source
+        const achievementContent =
+          achievement.contentMarkdown || achievement.content || '';
 
         if (
           matchesAny(title, searchTerms) ||

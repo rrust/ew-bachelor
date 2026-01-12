@@ -201,8 +201,13 @@ function showAchievementModal(achievement) {
     Icons.get('document', 'w-8 h-8', 'text-yellow-500');
   title.textContent = achievement.title;
 
-  // Content is already parsed as HTML in parser.js
-  content.innerHTML = achievement.content || '';
+  // Parse markdown content on-the-fly (for lazy-loaded achievements)
+  // or use pre-parsed HTML if available (for full content mode)
+  if (achievement.contentMarkdown && window.marked) {
+    content.innerHTML = marked.parse(achievement.contentMarkdown);
+  } else {
+    content.innerHTML = achievement.content || '';
+  }
 
   // Render math in achievement content if available
   if (window.renderMathInElement) {

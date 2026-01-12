@@ -6,9 +6,10 @@
     "generate:content-list": "node scripts/generate-content-list.js",
     "generate:bundles": "node scripts/generate-lecture-bundles.js",
     "generate:search-index": "node scripts/generate-search-index.js",
+    "generate:achievements": "node scripts/generate-achievements.js",
     "validate:views": "node scripts/validate-views.js",
     "validate:content": "node scripts/validate-content.js",
-    "build": "npm run generate:content-list && npm run generate:bundles && npm run generate:search-index"
+    "build": "npm run generate:content-list && npm run generate:bundles && npm run generate:search-index && npm run generate:achievements"
   },
   "keywords": [
     "education",
