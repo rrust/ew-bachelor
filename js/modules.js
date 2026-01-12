@@ -374,7 +374,9 @@ function createModuleCard(
 ) {
   const stats = getModuleStats(moduleId, APP_CONTENT, getUserProgress);
   const detailedTime = getModuleDetailedTime(moduleId, APP_CONTENT);
-  const lectureTimeFormatted = formatEstimatedTime(detailedTime.lectureTime + detailedTime.quizTime);
+  const lectureTimeFormatted = formatEstimatedTime(
+    detailedTime.lectureTime + detailedTime.quizTime
+  );
   const examTimeFormatted = formatEstimatedTime(detailedTime.examTime);
 
   const card = document.createElement('div');
@@ -430,8 +432,16 @@ function createModuleCard(
               ${
                 detailedTime.lectureCount > 0
                   ? `<div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 dark:text-gray-500">
-                      <span class="flex items-center gap-1" title="Vorlesungen">${Icons.get('book', 'w-3.5 h-3.5')} ${detailedTime.lectureCount} · ${lectureTimeFormatted}</span>
-                      <span class="flex items-center gap-1" title="Modulprüfung">${Icons.get('exam', 'w-3.5 h-3.5')} ${examTimeFormatted}</span>
+                      <span class="flex items-center gap-1" title="Vorlesungen">${Icons.get(
+                        'book',
+                        'w-3.5 h-3.5'
+                      )} ${
+                      detailedTime.lectureCount
+                    } · ${lectureTimeFormatted}</span>
+                      <span class="flex items-center gap-1" title="Modulprüfung">${Icons.get(
+                        'exam',
+                        'w-3.5 h-3.5'
+                      )} ${examTimeFormatted}</span>
                     </div>`
                   : ''
               }
