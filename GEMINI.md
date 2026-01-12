@@ -122,6 +122,20 @@ Only use these icons: `search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `
 
 When generating content from `studies-material/` files:
 
+**WICHTIG: Zusätzliche Materialien prüfen!**
+
+**Im Modul-Ordner** (`studies-material/{studyId}/NN-modul/`):
+- `overview.md` - Modulziele, Prüfungsmodalitäten, Themengebiete
+- Fachliteratur-Fragen (z.B. `mortimer-questions.md`) - für Quiz-Fragen nutzen!
+- Prüfungsfragen und -lösungen - für schwierige questions/ nutzen
+
+**Im Vorlesungs-Ordner** (`studies-material/{studyId}/NN-modul/NN-vorlesung/`):
+- `Videos.md` - Verifizierte YouTube-Videos → als `youtube-video` einbinden
+- `CONTENT_PLAN.md` - Struktur für die Content-Generierung
+- `Vorlesung.md` - Hauptinhalt mit Quellenmarkierungen
+
+**Workflow:**
+
 1. **Extract sources** from material file header:
 
    ```markdown

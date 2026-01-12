@@ -40,12 +40,17 @@ When generating content from `studies-material/` files, follow this structure:
 
 1. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
 2. **Read** CONTENT_PLAN.md in the material folder for structure
-3. **Extract sources** (Titel + Link) from material file header
-4. **Add `sources`** array to `lecture.md`
-5. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
-6. **Remove citation markers** from output text
-7. **Run `npm run build`** to regenerate JSON files
-8. **Validate** with Tools → "Inhalte validieren"
+3. **Check module folder** for additional resources:
+   - Fachliteratur-Fragen (z.B. `mortimer-questions.md`)
+   - Prüfungsfragen und -lösungen
+   - `overview.md` mit Modulinfos und Prüfungsmodalitäten
+4. **Check lecture folder** for `Videos.md` with verified YouTube videos
+5. **Extract sources** (Titel + Link) from material file header
+6. **Add `sources`** array to `lecture.md`
+7. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
+8. **Remove citation markers** from output text
+9. **Run `npm run build`** to regenerate JSON files
+10. **Validate** with Tools → "Inhalte validieren"
 
 ## Git Workflow
 

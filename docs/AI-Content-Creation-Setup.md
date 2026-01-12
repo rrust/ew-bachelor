@@ -153,25 +153,53 @@ Zusätzliche Recherche (Web-Grounding aktivieren):
 - Achievements (Cheat Sheets) generieren
 - YAML-Strukturen korrekt formatieren
 
+### Zusätzliche Materialien im Material-Ordner
+
+Bei der Content-Generierung stehen neben den Vorlesungsinhalten weitere wichtige Ressourcen zur Verfügung:
+
+**Im Modul-Ordner** (`studies-material/{studyId}/NN-modul/`):
+
+| Datei                   | Inhalt                           | Verwendung                              |
+| ----------------------- | -------------------------------- | --------------------------------------- |
+| `overview.md`           | Modulziele, Prüfungsmodalitäten  | Schwierigkeitsgrad und Fokus anpassen   |
+| `mortimer-questions.md` | Übungsaufgaben aus Fachliteratur | Für questions/ und calculation-Aufgaben |
+| Prüfungsfragen (*.md)   | Alte Klausurfragen und Lösungen  | Für schwierige multiple-choice-multiple |
+
+**Im Vorlesungs-Ordner** (`studies-material/{studyId}/NN-modul/NN-vorlesung/`):
+
+| Datei             | Inhalt                          | Verwendung                          |
+| ----------------- | ------------------------------- | ----------------------------------- |
+| `Vorlesung.md`    | Hauptinhalt mit Zitationsmarken | Lerninhalte generieren              |
+| `CONTENT_PLAN.md` | Struktur der Abschnitte         | Gliederung folgen                   |
+| `Videos.md`       | Verifizierte YouTube-Videos     | Als `youtube-video` Items einbinden |
+
 ### Beispiel-Prompt für Content-Erstellung
 
 ```text
-Lies die Datei studies-material/bsc-ernaehrungswissenschaften/02-grundlagen-chemie/01-materie-messen.md 
+Lies die Datei studies-material/bsc-ernaehrungswissenschaften/02-grundlagen-chemie/01-materie-messen/Vorlesung.md 
 und erstelle daraus strukturierte Lerninhalte für die App.
+
+ZUERST PRÜFEN:
+1. Lies CONTENT_PLAN.md im Vorlesungs-Ordner für die Struktur
+2. Lies Videos.md im Vorlesungs-Ordner für verifizierte YouTube-Videos
+3. Lies overview.md im Modul-Ordner für Prüfungsmodalitäten
+4. Lies mortimer-questions.md (falls vorhanden) für Übungsaufgaben
 
 Verwende die Templates aus docs/CONTENT_TEMPLATES.md.
 Erstelle die Dateien in content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/01-materie-messen/
 
 Struktur:
 1. lecture-items/ mit 01-XX.md, 02-XX.md, etc.
-2. questions/ für Quiz-Fragen
+2. questions/ für Quiz-Fragen (nutze Prüfungsfragen aus Modul-Ordner!)
 3. Nach jedem Konzept einen self-assessment-mc Test
+4. Videos aus Videos.md an thematisch passender Stelle einbinden
 
 Beachte:
 - YAML-Listen mit - (dash), nie * (asterisk)
 - correctAnswer muss EXAKT mit Option übereinstimmen
 - Deutsche UI-Texte
 - Quellenreferenzen aus [cite: X-Y] Markierungen extrahieren (siehe unten)
+- Nutze Fachliteratur-Fragen für calculation und practice-exercise Typen
 ```
 
 ### Quellenreferenzen verarbeiten
@@ -268,6 +296,19 @@ Jeder Abschnitt besteht aus:
 3. Praxis-Übung
 4. Video (an thematisch passender Stelle)
 
+## VOR DEM START: Zusätzliche Materialien prüfen!
+
+SCHRITT 0 - Modul-Ordner prüfen:
+- Lies overview.md für Modulziele und Prüfungsmodalitäten
+- Lies Fachliteratur-Fragen (z.B. mortimer-questions.md) falls vorhanden
+- Lies Prüfungsfragen und -lösungen falls vorhanden
+→ Nutze diese für schwierige questions/ und calculation-Aufgaben!
+
+SCHRITT 0b - Videos.md prüfen:
+- Lies Videos.md im Vorlesungs-Ordner (falls vorhanden)
+- Nur verifizierte Videos aus dieser Datei verwenden!
+- Videos an thematisch passender Stelle einbinden
+
 SCHRITT 1 - CONTENT_PLAN.md analysieren:
 - Lies den CONTENT_PLAN.md im Material-Ordner
 - Folge der dort definierten Struktur mit Abschnitten
@@ -295,9 +336,11 @@ c) Praxis-Übungen (03-uebung-XX.md):
    - type: 'practice-exercise' - NEU
    - type: 'calculation' - NEU
    - Alltagsbezogene Szenarien
+   - Nutze Aufgaben aus Fachliteratur (z.B. mortimer-questions.md)!
 
 d) Videos (04-video-XX.md):
    - type: 'youtube-video'
+   - NUR Videos aus Videos.md verwenden (bereits verifiziert)
    - An thematisch passender Stelle, NICHT am Ende gesammelt
 
 SCHRITT 4 - Selbsttest erstellen (am Ende der lecture-items/):
@@ -310,6 +353,7 @@ SCHRITT 5 - questions/ erstellen (NUR schwer!):
 - type: 'multiple-choice-multiple' (AUSSCHLIESSLICH!)
 - Mehrere richtige Antworten pro Frage
 - Keine einfachen single-choice Fragen!
+- Nutze Prüfungsfragen aus dem Modul-Ordner als Inspiration!
 
 SCHRITT 6 - Modul-Prüfungsfragen:
 - 2 sehr schwierige Transferfragen pro Vorlesung

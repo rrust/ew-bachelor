@@ -163,6 +163,7 @@ Die `lecture.md` Datei enthält **nur Metadaten** - keine Lern-Inhalte!
 topic: 'Grundlagen der Zellbiologie'
 description: 'Einführung in den Aufbau und die Funktion von Zellen'
 estimatedTime: 45
+version: '0.0.1'
 sources:
   - id: 'hauptquelle'
     title: 'Vorlesungsfolien Kapitel 1'
@@ -187,6 +188,7 @@ Kurze Einleitung oder Lernziele (optional).
 **Optionale Felder:**
 
 - `estimatedTime`: Geschätzte Lernzeit in Minuten
+- `version`: Versionsnummer nach SemVer (z.B. '0.0.1', '1.0.0')
 - `sources`: Array der Quellenreferenzen (siehe [Quellenreferenz-System](#quellenreferenz-system))
 
 ### 2. Vorlesungs-Items (lecture-items/)
@@ -587,6 +589,7 @@ In `content/{studyId}/NN-modul/NN-lecture/lecture.md`:
 topic: 'Materie und Messen'
 description: 'Einführung in Chemie, Atome und Messgrößen'
 estimatedTime: 45
+version: '1.0.0'
 sources:
   - id: 'vorlesung-k1'
     title: 'Vorlesungsfolien Kapitel 1 (WS2025)'
