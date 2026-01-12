@@ -12,17 +12,11 @@ Um quantitative Fragen zu beantworten wie "Wie viel Produkt entsteht aus X Gramm
 
 ### Masse → Mol → Mol → Masse
 
-```text
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│  Masse Edukt    │     │   Mol Edukt     │     │  Mol Produkt    │
-│    (in g)       │ ──► │                 │ ──► │                 │
-└─────────────────┘     └─────────────────┘     └─────────────────┘
-        ÷ M                    × Faktor               × M
-                                                        ▼
-                                              ┌─────────────────┐
-                                              │ Masse Produkt   │
-                                              │    (in g)       │
-                                              └─────────────────┘
+```mermaid
+flowchart LR
+    A["Masse Edukt<br/>(in g)"] -->|÷ M| B["Mol Edukt"]
+    B -->|× Faktor| C["Mol Produkt"]
+    C -->|× M| D["Masse Produkt<br/>(in g)"]
 ```
 
 ### Die vier Schritte im Detail

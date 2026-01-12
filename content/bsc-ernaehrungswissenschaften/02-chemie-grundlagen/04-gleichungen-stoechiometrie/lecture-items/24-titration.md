@@ -16,12 +16,12 @@ Eine Lösung bekannter Konzentration (Maßlösung, Titrant) wird langsam zu eine
 
 ### Wichtige Begriffe
 
-| Begriff | Bedeutung |
-|---------|-----------|
-| **Titrant** | Lösung bekannter Konzentration (in der Bürette) |
-| **Analyt** | Lösung unbekannter Konzentration (im Kolben) |
+| Begriff             | Bedeutung                                                           |
+| ------------------- | ------------------------------------------------------------------- |
+| **Titrant**         | Lösung bekannter Konzentration (in der Bürette)                     |
+| **Analyt**          | Lösung unbekannter Konzentration (im Kolben)                        |
 | **Äquivalenzpunkt** | Punkt, an dem Edukte im stöchiometrischen Verhältnis reagiert haben |
-| **Indikator** | Farbstoff, der den Äquivalenzpunkt anzeigt |
+| **Indikator**       | Farbstoff, der den Äquivalenzpunkt anzeigt                          |
 
 ### Auswertung
 

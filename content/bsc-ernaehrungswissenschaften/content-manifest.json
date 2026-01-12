@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T23:32:48.145Z",
+  "generatedAt": "2026-01-12T23:35:31.957Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "16293e2a",
@@ -63,8 +63,8 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/04-gleichungen-stoechiometrie": {
-      "checksum": "ca91cec0",
-      "sizeKB": 32.9,
+      "checksum": "5b2f58cb",
+      "sizeKB": 33.1,
       "itemCount": 30,
       "quizCount": 8,
       "topic": "Gleichungen und Stöchiometrie",
@@ -83,8 +83,8 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/06-elektronenstruktur-atome": {
-      "checksum": "3b3b6787",
-      "sizeKB": 87.8,
+      "checksum": "dc0c9b97",
+      "sizeKB": 88.1,
       "itemCount": 74,
       "quizCount": 12,
       "topic": "Die Elektronenstruktur der Atome",

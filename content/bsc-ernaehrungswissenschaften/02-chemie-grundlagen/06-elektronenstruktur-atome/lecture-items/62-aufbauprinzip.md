@@ -22,16 +22,17 @@ Das 4s-Orbital wird **vor** dem 3d-Orbital gefüllt, obwohl n=4 > n=3!
 
 ### Merkregel: Diagonalregel
 
-Man kann sich die Reihenfolge mit Diagonalen merken:
+Man kann sich die Reihenfolge mit Diagonalen merken. Die Orbitale werden entlang der Diagonalen von oben rechts nach unten links befüllt:
 
-```text
-1s
-2s  2p
-3s  3p  3d
-4s  4p  4d  4f
-5s  5p  5d  5f
-↘ ↘ ↘ ↘ (diagonal von oben rechts nach unten links lesen)
-```
+| n=1      | n=2  | n=3  | n=4  | n=5 |
+| -------- | ---- | ---- | ---- | --- |
+| **1s** ↘ |      |      |      |     |
+| **2s** ↘ | 2p ↘ |      |      |     |
+| **3s** ↘ | 3p ↘ | 3d ↘ |      |     |
+| **4s** ↘ | 4p ↘ | 4d ↘ | 4f ↘ |     |
+| **5s**   | 5p   | 5d   | 5f   |     |
+
+**Leserichtung:** 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → ...
 
 ### Wichtig zu beachten
 
