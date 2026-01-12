@@ -200,7 +200,60 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/04-gleichungen-stoech
 └── questions/         (15 Dateien)
 ```
 
----
+## 🎓 Modul-Prüfungsfragen (2 sehr schwierige Fragen)
+
+**Speicherort:** `content/.../02-chemie-grundlagen/module-exam/`
+
+| Nr  | Dateiname                       | Typ                      | Inhalt                                                    |
+| --- | ------------------------------- | ------------------------ | --------------------------------------------------------- |
+| 01  | `04-stoechiometrie-modul-01.md` | multiple-choice-multiple | Kombinierte Frage: Stöchiometrie, Ausbeute, Lösungen      |
+| 02  | `04-stoechiometrie-modul-02.md` | multiple-choice-multiple | Komplexe Transferaufgabe: Nährstoffberechnung + Titration |
+
+### Beispiel Modul-Prüfungsfrage 1
+
+```yaml
+type: 'multiple-choice-multiple'
+question: |
+  Bei der enzymatischen Oxidation von Glucose (C₆H₁₂O₆, M = 180 g/mol) zu CO₂ und H₂O
+  werden pro Mol Glucose etwa 2870 kJ freigesetzt. Ein Mensch verbraucht täglich
+  etwa 10.000 kJ durch seinen Stoffwechsel.
+  
+  Welche stöchiometrischen Berechnungen und Zusammenhänge sind korrekt?
+options:
+  - 'Die Verbrennungsgleichung lautet: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O'
+  - 'Für den täglichen Energiebedarf werden etwa 3,5 mol Glucose benötigt'
+  - 'Bei der Oxidation von 180 g Glucose entstehen etwa 264 g CO₂'
+  - 'Der begrenzende Reaktant im Körper ist typischerweise der Sauerstoff'
+  - 'Pro Mol verbrauchtem O₂ werden etwa 478 kJ freigesetzt'
+correctAnswers:
+  - 'Die Verbrennungsgleichung lautet: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O'
+  - 'Für den täglichen Energiebedarf werden etwa 3,5 mol Glucose benötigt'
+  - 'Bei der Oxidation von 180 g Glucose entstehen etwa 264 g CO₂'
+  - 'Pro Mol verbrauchtem O₂ werden etwa 478 kJ freigesetzt'
+```
+
+### Beispiel Modul-Prüfungsfrage 2
+
+```yaml
+type: 'multiple-choice-multiple'
+question: |
+  Eine Fruchtsaftprobe wird auf ihren Vitamin-C-Gehalt (Ascorbinsäure, C₆H₈O₆, M = 176 g/mol)
+  durch Titration mit Iod-Lösung (c = 0,01 mol/L) untersucht. Für 50 mL Saft werden
+  12,5 mL Iod-Lösung bis zum Farbumschlag benötigt.
+  
+  Welche Aussagen zur Analyse sind korrekt?
+options:
+  - 'Die Stoffmenge an Iod beträgt 1,25 × 10⁻⁴ mol'
+  - 'Ascorbinsäure reagiert mit Iod im Verhältnis 1:1'
+  - 'Der Vitamin-C-Gehalt der Probe beträgt etwa 22 mg/100 mL'
+  - 'Bei der Titration wird Ascorbinsäure oxidiert'
+  - 'Das Lambert-Beer-Gesetz wird zur Auswertung verwendet'
+correctAnswers:
+  - 'Die Stoffmenge an Iod beträgt 1,25 × 10⁻⁴ mol'
+  - 'Ascorbinsäure reagiert mit Iod im Verhältnis 1:1'
+  - 'Der Vitamin-C-Gehalt der Probe beträgt etwa 22 mg/100 mL'
+  - 'Bei der Titration wird Ascorbinsäure oxidiert'
+```
 
 ## Nächste Schritte
 
@@ -209,5 +262,6 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/04-gleichungen-stoech
 3. [ ] In Videos.md dokumentieren
 4. [ ] lecture-items nach V4-Struktur erstellen
 5. [ ] Quiz-Fragen auf multiple-choice-multiple erstellen
-6. [ ] `npm run build` ausführen
-7. [ ] Im Browser testen
+6. [ ] Modul-Prüfungsfragen erstellen (module-exam/)
+7. [ ] `npm run build` ausführen
+8. [ ] Im Browser testen

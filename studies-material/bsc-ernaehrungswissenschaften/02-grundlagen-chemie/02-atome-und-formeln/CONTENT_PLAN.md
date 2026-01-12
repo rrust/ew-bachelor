@@ -191,7 +191,56 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/02-atome-formeln/
 └── questions/         (15 Dateien)
 ```
 
----
+## 🎓 Modul-Prüfungsfragen (2 sehr schwierige Fragen)
+
+**Speicherort:** `content/.../02-chemie-grundlagen/module-exam/`
+
+| Nr  | Dateiname                      | Typ                      | Inhalt                                                    |
+| --- | ------------------------------ | ------------------------ | --------------------------------------------------------- |
+| 01  | `02-atome-formeln-modul-01.md` | multiple-choice-multiple | Kombinierte Frage: Isotope, Atomgewicht, Mol-Berechnungen |
+| 02  | `02-atome-formeln-modul-02.md` | multiple-choice-multiple | Komplexe Transferaufgabe: Ionenbindung + Ernährung        |
+
+### Beispiel Modul-Prüfungsfrage 1
+
+```yaml
+type: 'multiple-choice-multiple'
+question: |
+  Ein Spurenelement-Präparat enthält 50 mg Zink (Zn, M = 65,38 g/mol) als Zinksulfat.
+  Zink kommt natürlich als Isotopenmischung vor (⁶⁴Zn: 48,6%, ⁶⁶Zn: 27,9%, ⁶⁷Zn: 4,1%, ⁶⁸Zn: 18,8%).
+  
+  Welche der folgenden Aussagen sind korrekt?
+options:
+  - 'Das Präparat enthält etwa 4,6 × 10²⁰ Zink-Atome'
+  - 'Die relative Atommasse von Zink ist ein gewichteter Durchschnitt der Isotopenmassen'
+  - 'Etwa 49% der Zink-Atome im Präparat haben 34 Neutronen'
+  - 'Zinksulfat ist eine ionische Verbindung aus Zn²⁺ und SO₄²⁻'
+  - 'Ein Mol Zinksulfat enthält 2 mol Sauerstoffatome'
+correctAnswers:
+  - 'Das Präparat enthält etwa 4,6 × 10²⁰ Zink-Atome'
+  - 'Die relative Atommasse von Zink ist ein gewichteter Durchschnitt der Isotopenmassen'
+  - 'Zinksulfat ist eine ionische Verbindung aus Zn²⁺ und SO₄²⁻'
+```
+
+### Beispiel Modul-Prüfungsfrage 2
+
+```yaml
+type: 'multiple-choice-multiple'
+question: |
+  Calcium ist essentiell für die Knochengesundheit. Ein Erwachsener benötigt täglich
+  etwa 1000 mg Calcium. Calciumcarbonat (CaCO₃) ist eine häufige Supplementform.
+  
+  Welche chemischen und ernährungsphysiologischen Zusammenhänge sind korrekt?
+options:
+  - 'CaCO₃ enthält etwa 40% elementares Calcium (bezogen auf die Masse)'
+  - 'Ca²⁺ entsteht durch Abgabe von 2 Elektronen aus dem neutralen Ca-Atom'
+  - 'CO₃²⁻ ist ein mehratomiges Ion mit insgesamt 30 Elektronen'
+  - 'Für 1000 mg Calcium werden etwa 2,5 g CaCO₃ benötigt'
+  - 'Calcium gehört zur Gruppe der Erdalkalimetalle und bildet typischerweise Ca⁺-Ionen'
+correctAnswers:
+  - 'CaCO₃ enthält etwa 40% elementares Calcium (bezogen auf die Masse)'
+  - 'Ca²⁺ entsteht durch Abgabe von 2 Elektronen aus dem neutralen Ca-Atom'
+  - 'Für 1000 mg Calcium werden etwa 2,5 g CaCO₃ benötigt'
+```
 
 ## Nächste Schritte
 
@@ -199,5 +248,6 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/02-atome-formeln/
 2. [ ] Bestehende 32 lecture-items erweitern auf 54 nach V4-Struktur
 3. [ ] Neue interaktive Typen hinzufügen (fill-in-blank, matching, calculation, etc.)
 4. [ ] Quiz-Fragen auf multiple-choice-multiple umstellen
-5. [ ] `npm run build` ausführen
-6. [ ] Im Browser testen
+5. [ ] Modul-Prüfungsfragen erstellen (module-exam/)
+6. [ ] `npm run build` ausführen
+7. [ ] Im Browser testen

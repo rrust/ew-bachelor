@@ -201,7 +201,58 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/03-chemische-reaktion
 └── questions/         (15 Dateien)
 ```
 
----
+## 🎓 Modul-Prüfungsfragen (2 sehr schwierige Fragen)
+
+**Speicherort:** `content/.../02-chemie-grundlagen/module-exam/`
+
+| Nr  | Dateiname                        | Typ                      | Inhalt                                                     |
+| --- | -------------------------------- | ------------------------ | ---------------------------------------------------------- |
+| 01  | `03-chem-reaktionen-modul-01.md` | multiple-choice-multiple | Kombinierte Frage: Elektrolyte, Säure-Base, Redox          |
+| 02  | `03-chem-reaktionen-modul-02.md` | multiple-choice-multiple | Komplexe Transferaufgabe: Verdauung + chemische Reaktionen |
+
+### Beispiel Modul-Prüfungsfrage 1
+
+```yaml
+type: 'multiple-choice-multiple'
+question: |
+  Magensäure (HCl) hat einen pH-Wert von etwa 1-2. Antazida wie Natriumhydrogencarbonat
+  (NaHCO₃) werden zur Neutralisation eingesetzt. Bei der Reaktion entsteht CO₂-Gas.
+  
+  Welche der folgenden Aussagen zu den chemischen Vorgängen sind korrekt?
+options:
+  - 'HCl ist eine starke Säure, die in Wasser vollständig zu H₃O⁺ und Cl⁻ dissoziiert'
+  - 'Die Neutralisation ist eine Säure-Base-Reaktion nach Brønsted-Lowry'
+  - 'NaHCO₃ wirkt als schwache Base und Protonenakzeptor'
+  - 'Die Netto-Ionengleichung lautet: HCO₃⁻(aq) + H⁺(aq) → H₂O(l) + CO₂(g)'
+  - 'Bei der Reaktion findet eine Redoxreaktion statt, da sich Oxidationszahlen ändern'
+correctAnswers:
+  - 'HCl ist eine starke Säure, die in Wasser vollständig zu H₃O⁺ und Cl⁻ dissoziiert'
+  - 'Die Neutralisation ist eine Säure-Base-Reaktion nach Brønsted-Lowry'
+  - 'NaHCO₃ wirkt als schwache Base und Protonenakzeptor'
+  - 'Die Netto-Ionengleichung lautet: HCO₃⁻(aq) + H⁺(aq) → H₂O(l) + CO₂(g)'
+```
+
+### Beispiel Modul-Prüfungsfrage 2
+
+```yaml
+type: 'multiple-choice-multiple'
+question: |
+  Eisen (Fe) in Lebensmitteln liegt als Fe²⁺ (Häm-Eisen) oder Fe³⁺ (Nicht-Häm-Eisen) vor.
+  Vitamin C (Ascorbinsäure) verbessert die Eisenresorption durch Reduktion von Fe³⁺ zu Fe²⁺.
+  
+  Welche chemischen Zusammenhänge sind korrekt?
+options:
+  - 'Bei der Reduktion von Fe³⁺ zu Fe²⁺ nimmt Eisen ein Elektron auf'
+  - 'Vitamin C wirkt als Reduktionsmittel und wird dabei selbst oxidiert'
+  - 'Die Oxidationszahl von Eisen ändert sich von +3 auf +2'
+  - 'Häm-Eisen aus tierischen Quellen ist ein Komplex mit Fe im Zentrum'
+  - 'Nicht-Häm-Eisen ist schwerer resorbierbar, weil Fe³⁺ stabiler ist als Fe²⁺'
+correctAnswers:
+  - 'Bei der Reduktion von Fe³⁺ zu Fe²⁺ nimmt Eisen ein Elektron auf'
+  - 'Vitamin C wirkt als Reduktionsmittel und wird dabei selbst oxidiert'
+  - 'Die Oxidationszahl von Eisen ändert sich von +3 auf +2'
+  - 'Häm-Eisen aus tierischen Quellen ist ein Komplex mit Fe im Zentrum'
+```
 
 ## Nächste Schritte
 
@@ -210,5 +261,6 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/03-chemische-reaktion
 3. [ ] In Videos.md dokumentieren
 4. [ ] Bestehende 41 lecture-items erweitern auf 56 nach V4-Struktur
 5. [ ] Quiz-Fragen auf multiple-choice-multiple umstellen
-6. [ ] `npm run build` ausführen
-7. [ ] Im Browser testen
+6. [ ] Modul-Prüfungsfragen erstellen (module-exam/)
+7. [ ] `npm run build` ausführen
+8. [ ] Im Browser testen
