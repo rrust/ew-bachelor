@@ -586,6 +586,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       window.Notifications.init();
     }
 
+    // Initialize offline indicator
+    if (window.OfflineIndicator && window.OfflineIndicator.init) {
+      window.OfflineIndicator.init();
+    }
+
     // Handle browser back/forward buttons
     window.addEventListener('popstate', (event) => {
       if (!navigateFromURL()) {

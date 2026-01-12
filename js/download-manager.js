@@ -421,6 +421,50 @@ async function getOutdatedLectures(studyId) {
   return outdated;
 }
 
+/**
+ * Save a bundle to IndexedDB (for automatic offline caching)
+ * @param {string} studyId
+ * @param {string} moduleId
+ * @param {string} lectureId
+ * @param {Object} bundle - The lecture bundle data
+ * @returns {Promise<boolean>}
+ */
+async function saveBundle(studyId, moduleId, lectureId, bundle) {
+  try {
+    const lectureKey = getLectureKey(studyId, moduleId, lectureId);
+    const manifestKey = getManifestKey(moduleId, lectureId);
+
+    // Get manifest info for checksum
+    const manifest = await loadManifest(studyId);
+    const lectureInfo = manifest?.lectures?.[manifestKey];
+
+    // Store in IndexedDB
+    const db = await openDatabase();
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE_NAME, 'readwrite');
+      const store = tx.objectStore(STORE_NAME);
+      store.put({ key: lectureKey, bundle });
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error);
+    });
+
+    // Update metadata
+    const meta = getDownloadMeta();
+    meta[lectureKey] = {
+      checksum: lectureInfo?.checksum || 'unknown',
+      downloadedAt: new Date().toISOString(),
+      sizeKB: lectureInfo?.sizeKB || 0,
+      autoSaved: true
+    };
+    saveDownloadMeta(meta);
+
+    return true;
+  } catch (e) {
+    console.error('[DownloadManager] saveBundle failed:', e);
+    return false;
+  }
+}
+
 // Expose to global scope
 window.DownloadManager = {
   // Status
@@ -433,6 +477,7 @@ window.DownloadManager = {
   download,
   deleteLecture,
   deleteStudy,
+  saveBundle,
 
   // Data access
   getLectureData,
