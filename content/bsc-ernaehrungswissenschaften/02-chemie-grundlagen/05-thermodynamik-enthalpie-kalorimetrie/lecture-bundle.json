@@ -87,6 +87,14 @@
       "content": ""
     },
     {
+      "type": "youtube-video",
+      "topic": "Grundlagen der Thermodynamik",
+      "url": "https://www.youtube.com/watch?v=9a29cCfeT48",
+      "title": "Einfuehrung in die Thermodynamik - Grundlagen, Grundbegriffe",
+      "description": "Think Logic erklaert die Grundlagen und Grundbegriffe der Thermodynamik.",
+      "content": ""
+    },
+    {
       "type": "learning-content",
       "topic": "Innere Energie",
       "sourceRefs": [
@@ -149,6 +157,14 @@
       ],
       "successMessage": "Super! Du verstehst die Grundlagen der Systemgrenzen und Energieflüsse. Jetzt geht es um konkrete Berechnungen.",
       "reviewHint": "Falls du unsicher bist, wiederhole besonders die Unterschiede zwischen exotherm und endotherm.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Exotherme und Endotherme Reaktionen",
+      "url": "https://www.youtube.com/watch?v=xAc3X3DeWNM",
+      "title": "Exotherme und Endotherme Reaktionen - Beispiele und Energiediagramme",
+      "description": "Studyflix erklaert den Unterschied zwischen exothermen und endothermen Reaktionen.",
       "content": ""
     },
     {
@@ -233,6 +249,14 @@
       "content": ""
     },
     {
+      "type": "youtube-video",
+      "topic": "Waermekapazitaet",
+      "url": "https://www.youtube.com/watch?v=-t0QylFTD3A",
+      "title": "Erklaervideo - Waermekapazitaet",
+      "description": "NiUP erklaert das Konzept der Waermekapazitaet und die Formel q = m*c*DeltaT.",
+      "content": ""
+    },
+    {
       "type": "learning-content",
       "topic": "Latente Wärme bei Phasenübergängen",
       "sourceRefs": [
@@ -284,6 +308,14 @@
       ],
       "successMessage": "Hervorragend! Du verstehst Phasenübergänge. Jetzt geht es zum Ersten Hauptsatz und zur Enthalpie.",
       "reviewHint": "Wiederhole besonders die Unterscheidung zwischen q = mcΔT (mit Temperaturänderung) und q = m·ΔH (bei Phasenübergängen).",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Aggregatzustaende und Phasenuebergaenge",
+      "url": "https://www.youtube.com/watch?v=8W-ZHz80g1U",
+      "title": "Aggregatzustaende | fest - fluessig - gasfoermig",
+      "description": "Lehrerschmidt erklaert die drei Aggregatzustaende und die Uebergaenge zwischen ihnen.",
       "content": ""
     },
     {
@@ -343,6 +375,14 @@
       ],
       "successMessage": "Ausgezeichnet! Du verstehst die thermodynamischen Grundgrößen. Weiter zum Satz von Hess!",
       "reviewHint": "Achte besonders auf die Vorzeichenkonventionen – sie sind entscheidend für korrekte Berechnungen.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Enthalpie",
+      "url": "https://www.youtube.com/watch?v=xAc3X3DeWNM",
+      "title": "Exotherme und Endotherme Reaktionen - Beispiele und Energiediagramme",
+      "description": "Studyflix erklaert Enthalpie im Kontext von exothermen und endothermen Reaktionen.",
       "content": ""
     },
     {
@@ -422,6 +462,14 @@
       "content": ""
     },
     {
+      "type": "youtube-video",
+      "topic": "Satz von Hess",
+      "url": "https://www.youtube.com/watch?v=CFonOcHklnw",
+      "title": "Satz von Hess - molare Standardreaktionsenthalpie",
+      "description": "Chemie - echt fetzig erklaert den Satz von Hess und die Berechnung der Reaktionsenthalpie.",
+      "content": ""
+    },
+    {
       "type": "learning-content",
       "topic": "Das Bombenkalorimeter",
       "sourceRefs": [
@@ -467,6 +515,14 @@
       ],
       "successMessage": "Sehr gut! Du verstehst die experimentelle Thermochemie. Zum Abschluss noch die Anwendung in der Ernährungswissenschaft!",
       "reviewHint": "Achte darauf, dass du beide Wärmebeiträge (Wasser UND Bombe) berücksichtigst.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Kalorimetrie",
+      "url": "https://www.youtube.com/watch?v=KLZ9gf8gG0c",
+      "title": "Kalorimetrische Bestimmung molarer Reaktionsenthalpien",
+      "description": "Chemie - echt fetzig erklaert die Grundlagen der Kalorimetrie und das Bombenkalorimeter.",
       "content": ""
     },
     {
@@ -1011,5 +1067,5 @@
       "explanation": "**Erklärung:** Bei der Verbrennung erwärmt sich nicht nur das Wasser, sondern auch der Stahlbehälter (die \"Bombe\"), die Rührer und andere Metallteile. Ohne diese Korrektur würde man die freigesetzte Energie unterschätzen."
     }
   ],
-  "generatedAt": "2026-01-12T21:13:59.813Z"
+  "generatedAt": "2026-01-12T22:01:18.461Z"
 }

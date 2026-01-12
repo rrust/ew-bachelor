@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T21:13:59.787Z",
+  "generatedAt": "2026-01-12T22:01:18.430Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "2359ddae",
@@ -57,9 +57,9 @@
       "estimatedTime": 75
     },
     "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
-      "checksum": "ea68efe0",
-      "sizeKB": 88.4,
-      "itemCount": 48,
+      "checksum": "cbcb75e2",
+      "sizeKB": 90.8,
+      "itemCount": 55,
       "quizCount": 28,
       "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
       "description": "Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsatz, Enthalpie, Satz von Hess und kalorimetrische Messungen.",

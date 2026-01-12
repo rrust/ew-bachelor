@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T21:13:59.857Z",
+  "generatedAt": "2026-01-12T22:01:18.600Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -721,12 +721,14 @@
         "Potentielle Energie",
         "Kinetische Energie",
         "Grundlagen der Energie",
+        "Grundlagen der Thermodynamik",
         "Innere Energie",
         "System und Umgebung",
         "Exotherme und endotherme Prozesse",
         "System und Energiefluss",
         "Energieerhaltung",
         "Innere Energie und Systemgrenzen",
+        "Exotherme und Endotherme Reaktionen",
         "Energieeinheiten",
         "Wärmekapazität",
         "Die Wärmeformel",
@@ -734,16 +736,19 @@
         "Beispielrechnung Wärmeabgabe",
         "Energietransfer zwischen Stoffen",
         "Wärmekapazität und Berechnungen",
+        "Waermekapazitaet",
         "Latente Wärme bei Phasenübergängen",
         "Verdunstungskälte",
         "Die Heizkurve von Wasser",
         "Phasenübergänge",
         "Phasenübergänge und Heizkurve",
+        "Aggregatzustaende und Phasenuebergaenge",
         "Volumenarbeit",
         "Der Erste Hauptsatz der Thermodynamik",
         "Definition der Enthalpie",
         "Vorzeichen der Enthalpie",
         "Erster Hauptsatz und Enthalpie",
+        "Enthalpie",
         "Der Satz von Hess",
         "Standardbedingungen",
         "Standard-Bildungsenthalpie",
@@ -862,7 +867,7 @@
         "umgesetzt"
       ],
       "snippet": "Thermodynamik, Enthalpie & Kalorimetrie Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsa...",
-      "itemCount": 48,
+      "itemCount": 55,
       "quizCount": 28
     }
   ]
