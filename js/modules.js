@@ -8,40 +8,56 @@
  * @returns {number} Total estimated time in minutes
  */
 function getModuleEstimatedTime(moduleId, APP_CONTENT) {
+  const times = getModuleDetailedTime(moduleId, APP_CONTENT);
+  return times.lectureTime + times.quizTime;
+}
+
+/**
+ * Calculates detailed time breakdown for a module
+ * @param {string} moduleId - Module ID
+ * @param {Object} APP_CONTENT - Content object
+ * @returns {Object} { lectureTime, quizTime, lectureCount, examTime }
+ */
+function getModuleDetailedTime(moduleId, APP_CONTENT) {
   const module = APP_CONTENT[moduleId];
+  const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
+  const lectureCount = moduleMeta?.lectures?.length || 0;
+
+  // Estimate exam time: 5 min per lecture (2 questions per lecture × ~2.5 min each)
+  const examTime = lectureCount * 5;
 
   // First, try from loaded content (full mode)
   if (module && module.lectures) {
-    let totalTime = 0;
+    let lectureTime = 0;
+    let quizTime = 0;
     let hasLoadedLectures = false;
 
     for (const lectureId in module.lectures) {
       const lecture = module.lectures[lectureId];
       if (lecture.estimatedTime !== undefined) {
         hasLoadedLectures = true;
-        totalTime += lecture.estimatedTime || 0;
-        totalTime += lecture.quizEstimatedTime || 0;
+        lectureTime += lecture.estimatedTime || 0;
+        quizTime += lecture.quizEstimatedTime || 0;
       }
     }
 
     if (hasLoadedLectures) {
-      return totalTime;
+      return { lectureTime, quizTime, lectureCount, examTime };
     }
   }
 
-  // In lazy-loading mode, try to get from manifest
-  if (window.DownloadManager) {
-    const settings = window.getAppSettings ? window.getAppSettings() : {};
-    const studyId = settings.activeStudyId;
-    const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
-
-    if (moduleMeta && moduleMeta.lectures) {
-      // Estimate: 15 min per lecture as fallback
-      return moduleMeta.lectures.length * 15;
-    }
+  // In lazy-loading mode, estimate based on lecture count
+  if (lectureCount > 0) {
+    // Estimate: 45 min lecture + 15 min quiz per lecture
+    return {
+      lectureTime: lectureCount * 45,
+      quizTime: lectureCount * 15,
+      lectureCount,
+      examTime
+    };
   }
 
-  return 0;
+  return { lectureTime: 0, quizTime: 0, lectureCount: 0, examTime: 0 };
 }
 
 /**
@@ -357,8 +373,9 @@ function createModuleCard(
   onClick
 ) {
   const stats = getModuleStats(moduleId, APP_CONTENT, getUserProgress);
-  const estimatedTime = getModuleEstimatedTime(moduleId, APP_CONTENT);
-  const formattedTime = formatEstimatedTime(estimatedTime);
+  const detailedTime = getModuleDetailedTime(moduleId, APP_CONTENT);
+  const lectureTimeFormatted = formatEstimatedTime(detailedTime.lectureTime + detailedTime.quizTime);
+  const examTimeFormatted = formatEstimatedTime(detailedTime.examTime);
 
   const card = document.createElement('div');
   card.className =
@@ -407,12 +424,15 @@ function createModuleCard(
               <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">${
                 moduleMeta.title
               }</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${
+              <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">${
                 moduleMeta.description || ''
               }</p>
               ${
-                estimatedTime > 0
-                  ? `<p class="text-xs text-gray-400 dark:text-gray-500">⏱️ Geschätzte Dauer: ${formattedTime}</p>`
+                detailedTime.lectureCount > 0
+                  ? `<div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 dark:text-gray-500">
+                      <span class="flex items-center gap-1" title="Vorlesungen">${Icons.get('book', 'w-3.5 h-3.5')} ${detailedTime.lectureCount} · ${lectureTimeFormatted}</span>
+                      <span class="flex items-center gap-1" title="Modulprüfung">${Icons.get('exam', 'w-3.5 h-3.5')} ${examTimeFormatted}</span>
+                    </div>`
                   : ''
               }
           </div>
