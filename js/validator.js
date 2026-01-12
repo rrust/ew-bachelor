@@ -16,9 +16,9 @@ const REQUIRED_FIELDS = {
   'mermaid-diagram': ['type'],
   'balance-equation': ['type', 'reactants', 'products'],
   'fill-in-the-blank': ['type', 'question', 'text', 'blanks'],
-  'matching': ['type', 'question', 'pairs'],
-  'ordering': ['type', 'question', 'items'],
-  'calculation': ['type', 'question', 'correctAnswer'],
+  matching: ['type', 'question', 'pairs'],
+  ordering: ['type', 'question', 'items'],
+  calculation: ['type', 'question', 'correctAnswer'],
   'practice-exercise': ['type', 'title', 'scenario', 'tasks']
 };
 

@@ -549,5 +549,5 @@
       "explanation": "**Erklärung:**\n\n- **Präzision** beschreibt, wie nah wiederholte Messungen beieinander liegen (geringe Streuung)\n- **Genauigkeit** beschreibt, wie nah die Messwerte am wahren Wert liegen\n\nWenn Werte eng beieinander liegen (hohe Präzision), aber alle vom wahren Wert abweichen (geringe Genauigkeit), liegt ein **systematischer Fehler** vor – z.B. ein falsch kalibriertes Messgerät."
     }
   ],
-  "generatedAt": "2026-01-12T19:41:09.746Z"
+  "generatedAt": "2026-01-12T19:51:02.337Z"
 }
