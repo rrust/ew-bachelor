@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T23:11:17.079Z",
+  "generatedAt": "2026-01-12T23:22:02.950Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -479,7 +479,16 @@
         "Coulomb-Gesetz und Gitterenergie",
         "Das Mol und Molare Masse",
         "Ermittlung chemischer Formeln",
-        "Nomenklatur anorganischer Verbindungen"
+        "Nomenklatur anorganischer Verbindungen",
+        "Isotope",
+        "Periodensystem",
+        "Ionen",
+        "Ionische Verbindungen",
+        "Das Mol",
+        "Coulomb-Gesetz",
+        "Formelbestimmung",
+        "Nomenklatur",
+        "Selbsttest"
       ],
       "keywords": [
         "atome",
@@ -584,7 +593,7 @@
         "atomkern"
       ],
       "snippet": "Atome, Formeln & Stöchiometrie Aufbau von Atomen, Ordnungszahl und Isotope, Periodensystem, Moleküle und Ionen, Coulomb-Gesetz, das Mol, Formelermittlung und Nomenklatur anorganischer Verbindungen. At...",
-      "itemCount": 33,
+      "itemCount": 46,
       "quizCount": 18
     },
     {

@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T23:11:16.989Z",
+  "generatedAt": "2026-01-12T23:22:02.754Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "16293e2a",
@@ -43,9 +43,9 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/02-atome-formeln": {
-      "checksum": "0f3b2591",
-      "sizeKB": 56.6,
-      "itemCount": 33,
+      "checksum": "36c5c060",
+      "sizeKB": 65.8,
+      "itemCount": 46,
       "quizCount": 18,
       "topic": "Atome, Formeln & Stöchiometrie",
       "description": "Aufbau von Atomen, Ordnungszahl und Isotope, Periodensystem, Moleküle und Ionen, Coulomb-Gesetz, das Mol, Formelermittlung und Nomenklatur anorganischer Verbindungen.",

@@ -380,6 +380,265 @@
       ],
       "correctAnswer": "Eisen(III)-oxid",
       "content": "**Erklärung:** Da Eisen variable Ladungen haben kann, muss die Ladung angegeben werden. In Fe₂O₃ haben wir 2 Eisen-Atome und 3 Sauerstoff-Atome. Sauerstoff hat immer -2, also insgesamt -6 Ladung. Um neutral zu sein, müssen die 2 Eisen-Atome zusammen +6 haben → jedes Eisen hat +3. Daher heißt die Verbindung Eisen(III)-oxid. \"Eisenoxid\" ohne Ladungsangabe ist unvollständig, und \"Dieisen-trioxid\" wäre nur für kovalente Verbindungen korrekt."
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Isotope",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k2",
+          "pages": "5-7"
+        }
+      ],
+      "content": "## Neutronenberechnung\n\nVervollständige die folgenden Aussagen über die Zusammensetzung von Atomen:\n\nEin Atom mit der Ordnungszahl Z = 6 und der Massenzahl A = 14 hat [[8]] Neutronen.\n\nDieses Isotop wird als [[Kohlenstoff-14]] oder $^{14}C$ bezeichnet und ist [[radioaktiv]].\n\nDie Formel zur Berechnung lautet: Neutronen = [[A - Z]] = 14 - 6 = 8."
+    },
+    {
+      "type": "matching",
+      "topic": "Atomaufbau",
+      "question": "Ordne die subatomaren Teilchen ihren Eigenschaften zu:",
+      "pairs": [
+        {
+          "left": "Proton",
+          "right": "Positive Ladung, im Kern"
+        },
+        {
+          "left": "Neutron",
+          "right": "Keine Ladung, im Kern"
+        },
+        {
+          "left": "Elektron",
+          "right": "Negative Ladung, in der Hülle"
+        },
+        {
+          "left": "Ordnungszahl Z",
+          "right": "Anzahl der Protonen"
+        },
+        {
+          "left": "Massenzahl A",
+          "right": "Protonen + Neutronen"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Isotope",
+      "question": "Bor kommt natürlich als Mischung zweier Isotope vor:\n- $^{10}B$: Masse 10,013 u, Häufigkeit 19,9%\n- $^{11}B$: Masse 11,009 u, Häufigkeit 80,1%\n\nBerechne das durchschnittliche Atomgewicht von Bor.\n",
+      "correctAnswer": "10.81",
+      "unit": "u",
+      "tolerance": 0.01,
+      "hint": "Atomgewicht = (Masse₁ × Häufigkeit₁) + (Masse₂ × Häufigkeit₂)",
+      "solution": "**Schritt 1:** Häufigkeiten in Dezimalzahlen umrechnen\n- $^{10}B$: 19,9% = 0,199\n- $^{11}B$: 80,1% = 0,801\n\n**Schritt 2:** Gewichteter Durchschnitt berechnen\n$$\\text{Atomgewicht} = (10,013 \\times 0,199) + (11,009 \\times 0,801)$$\n$$= 1,993 + 8,818 = 10,81 \\text{ u}$$\n",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Periodensystem",
+      "question": "Ordne die Elemente ihren Hauptgruppen und typischen Ionenladungen zu:",
+      "pairs": [
+        {
+          "left": "Natrium (Na)",
+          "right": "Alkalimetall, bildet Na⁺"
+        },
+        {
+          "left": "Calcium (Ca)",
+          "right": "Erdalkalimetall, bildet Ca²⁺"
+        },
+        {
+          "left": "Chlor (Cl)",
+          "right": "Halogen, bildet Cl⁻"
+        },
+        {
+          "left": "Argon (Ar)",
+          "right": "Edelgas, reagiert kaum"
+        },
+        {
+          "left": "Aluminium (Al)",
+          "right": "Gruppe 13, bildet Al³⁺"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Periodensystem",
+      "question": "Ordne die folgenden Elemente nach steigender Ordnungszahl (kleinstes zuerst):",
+      "items": [
+        "Kohlenstoff (C)",
+        "Stickstoff (N)",
+        "Sauerstoff (O)",
+        "Natrium (Na)",
+        "Schwefel (S)"
+      ],
+      "correctOrder": [
+        "Kohlenstoff (C)",
+        "Stickstoff (N)",
+        "Sauerstoff (O)",
+        "Natrium (Na)",
+        "Schwefel (S)"
+      ],
+      "explanation": "C (Z=6), N (Z=7), O (Z=8), Na (Z=11), S (Z=16)",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Ionen",
+      "question": "Ordne die mehratomigen Ionen ihren Formeln und Ladungen zu:",
+      "pairs": [
+        {
+          "left": "Sulfat",
+          "right": "SO₄²⁻"
+        },
+        {
+          "left": "Nitrat",
+          "right": "NO₃⁻"
+        },
+        {
+          "left": "Phosphat",
+          "right": "PO₄³⁻"
+        },
+        {
+          "left": "Ammonium",
+          "right": "NH₄⁺"
+        },
+        {
+          "left": "Carbonat",
+          "right": "CO₃²⁻"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "topic": "Ionische Verbindungen",
+      "title": "Salzformeln aufstellen",
+      "scenario": "Du arbeitest im Labor und musst verschiedene Salzlösungen herstellen. \nDafür musst du die korrekten chemischen Formeln kennen.\n",
+      "tasks": [
+        {
+          "question": "Wie lautet die Formel für Calciumchlorid (Ca²⁺ + Cl⁻)?",
+          "answer": "CaCl₂",
+          "explanation": "Ca²⁺ braucht 2× Cl⁻ für Ladungsneutralität"
+        },
+        {
+          "question": "Wie lautet die Formel für Aluminiumoxid (Al³⁺ + O²⁻)?",
+          "answer": "Al₂O₃",
+          "explanation": "kgV von 3 und 2 ist 6: 2×Al³⁺ = +6, 3×O²⁻ = -6"
+        },
+        {
+          "question": "Wie lautet die Formel für Natriumsulfat (Na⁺ + SO₄²⁻)?",
+          "answer": "Na₂SO₄",
+          "explanation": "SO₄²⁻ braucht 2× Na⁺ für Ladungsneutralität"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Das Mol",
+      "question": "Wie viel Gramm wiegen 0,5 mol Wasser (H₂O)?\n\nGegeben: M(H) = 1,0 g/mol, M(O) = 16,0 g/mol\n",
+      "correctAnswer": "9",
+      "unit": "g",
+      "tolerance": 0.1,
+      "hint": "Berechne erst die molare Masse von H₂O, dann m = n × M",
+      "solution": "**Schritt 1:** Molare Masse von H₂O berechnen\n$$M(H_2O) = 2 \\times 1,0 + 16,0 = 18,0 \\text{ g/mol}$$\n\n**Schritt 2:** Masse berechnen\n$$m = n \\times M = 0,5 \\text{ mol} \\times 18,0 \\text{ g/mol} = 9,0 \\text{ g}$$\n",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Das Mol",
+      "question": "Wie viele Sauerstoffatome sind in 60,0 g Ozon (O₃)?\n\nGegeben: M(O) = 16,0 g/mol, Nₐ = 6,022 × 10²³ mol⁻¹\n",
+      "correctAnswer": "2.26e24",
+      "unit": "Atome",
+      "tolerance": 5e+22,
+      "hint": "Berechne: Mol O₃ → Moleküle O₃ → Atome O (×3)",
+      "solution": "**Schritt 1:** Molare Masse und Stoffmenge\n$$M(O_3) = 3 \\times 16,0 = 48,0 \\text{ g/mol}$$\n$$n = \\frac{60,0 \\text{ g}}{48,0 \\text{ g/mol}} = 1,25 \\text{ mol}$$\n\n**Schritt 2:** Anzahl der O₃-Moleküle\n$$N_{O_3} = 1,25 \\times 6,022 \\times 10^{23} = 7,53 \\times 10^{23}$$\n\n**Schritt 3:** Anzahl der O-Atome (×3)\n$$N_O = 3 \\times 7,53 \\times 10^{23} = 2,26 \\times 10^{24} \\text{ Atome}$$\n",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Coulomb-Gesetz",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k2",
+          "pages": "18-19"
+        }
+      ],
+      "content": "## Coulomb-Gesetz und Gitterenergie\n\nVervollständige die folgenden Aussagen über ionische Bindungen:\n\nMgO hat einen [[höheren]] Schmelzpunkt als NaCl, weil die Ionenladungen [[größer]] sind (Mg²⁺/O²⁻ vs. Na⁺/Cl⁻).\n\nJe [[kleiner]] der Abstand zwischen den Ionen, desto [[stärker]] die Anziehungskraft.\n\nDas Coulomb-Gesetz beschreibt die [[elektrostatische]] Kraft zwischen geladenen Teilchen."
+    },
+    {
+      "type": "practice-exercise",
+      "topic": "Formelbestimmung",
+      "title": "Empirische Formel ermitteln",
+      "scenario": "Bei der Analyse eines unbekannten Kohlenwasserstoffs erhältst du folgende Daten:\nDie Verbindung enthält 92,3% Kohlenstoff und 7,7% Wasserstoff.\n",
+      "tasks": [
+        {
+          "question": "Wie viel mol C sind in 100 g der Verbindung? (M(C) = 12 g/mol)",
+          "answer": "7,69 mol",
+          "explanation": "92,3 g ÷ 12 g/mol = 7,69 mol"
+        },
+        {
+          "question": "Wie viel mol H sind in 100 g der Verbindung? (M(H) = 1 g/mol)",
+          "answer": "7,7 mol",
+          "explanation": "7,7 g ÷ 1 g/mol = 7,7 mol"
+        },
+        {
+          "question": "Wie lautet das Molverhältnis C:H (auf ganze Zahlen gerundet)?",
+          "answer": "1:1",
+          "explanation": "7,69 : 7,7 ≈ 1 : 1"
+        },
+        {
+          "question": "Wie lautet die empirische Formel?",
+          "answer": "CH",
+          "explanation": "Das einfachste ganzzahlige Verhältnis ist 1:1 → CH"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Nomenklatur",
+      "question": "Ordne die chemischen Formeln den korrekten IUPAC-Namen zu:",
+      "pairs": [
+        {
+          "left": "Fe₂O₃",
+          "right": "Eisen(III)-oxid"
+        },
+        {
+          "left": "CuSO₄",
+          "right": "Kupfer(II)-sulfat"
+        },
+        {
+          "left": "NaCl",
+          "right": "Natriumchlorid"
+        },
+        {
+          "left": "CaCO₃",
+          "right": "Calciumcarbonat"
+        },
+        {
+          "left": "Al(OH)₃",
+          "right": "Aluminiumhydroxid"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Selbsttest",
+      "question": "Bist du bereit für den Vorlesungs-Test?",
+      "checkpoints": [
+        "Ich kann die drei subatomaren Teilchen und ihre Eigenschaften nennen",
+        "Ich kann Ordnungszahl, Massenzahl und Neutronenzahl berechnen",
+        "Ich verstehe, was Isotope sind und wie man das Atomgewicht berechnet",
+        "Ich kenne die wichtigsten Hauptgruppen im Periodensystem",
+        "Ich kann Kationen von Anionen unterscheiden",
+        "Ich kenne die wichtigsten mehratomigen Ionen auswendig",
+        "Ich verstehe das Coulomb-Gesetz und seine Auswirkung auf Schmelzpunkte",
+        "Ich kann mit dem Mol rechnen (Masse ↔ Stoffmenge ↔ Teilchenzahl)",
+        "Ich kann empirische und molekulare Formeln aus Analysedaten ermitteln",
+        "Ich kann ionische Verbindungen nach IUPAC benennen"
+      ],
+      "content": ""
     }
   ],
   "quiz": [
@@ -630,5 +889,5 @@
       "explanation": "**Erklärung:** Da Kupfer variable Ladungen haben kann (+1 oder +2), muss die Ladung angegeben werden. Sulfat hat die Ladung -2. Da in CuSO₄ nur ein Kupfer-Ion vorkommt, muss es +2 sein, um die Ladung auszugleichen. Daher: Kupfer(II)-sulfat. \"Kupfersulfat\" ohne Ladungsangabe ist unvollständig."
     }
   ],
-  "generatedAt": "2026-01-12T23:11:17.007Z"
+  "generatedAt": "2026-01-12T23:22:02.777Z"
 }
