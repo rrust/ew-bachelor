@@ -16,6 +16,7 @@ function bundleToLecture(bundle) {
     topic: bundle.metadata?.topic || bundle.lectureId,
     description: bundle.metadata?.description || '',
     estimatedTime: bundle.metadata?.estimatedTime || 0,
+    version: bundle.metadata?.version || null,
     sources: bundle.metadata?.sources || [],
     items: [],
     quiz: []

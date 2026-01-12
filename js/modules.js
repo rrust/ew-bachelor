@@ -643,6 +643,7 @@ async function displayLecturesForModule(
       lecture?.estimatedTime || lectureInfo?.estimatedTime || 0;
     const quizTime =
       lecture?.quizEstimatedTime || Math.round(quizQuestionCount * 2);
+    const lectureVersion = lecture?.version || lectureInfo?.version || null;
     const hasQuiz = quizQuestionCount > 0;
 
     // Card Header with badge
@@ -689,6 +690,9 @@ async function displayLecturesForModule(
           'pencil',
           'w-3.5 h-3.5'
         )} ${quizQuestionCount}${timeInfo}</span>`;
+      }
+      if (lectureVersion) {
+        contentHTML += `<span class="text-gray-400 dark:text-gray-500">v${lectureVersion}</span>`;
       }
       contentHTML += `</div>`;
     }

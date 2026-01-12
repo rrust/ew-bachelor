@@ -953,12 +953,15 @@ function showLectureOverview(
       `${interactiveCount} Übung${interactiveCount > 1 ? 'en' : ''}`
     );
 
-  // Build description with estimated time if available
+  // Build description with estimated time and version if available
   let descriptionText = `${totalItems} Schritte insgesamt • ${descParts.join(
     ' • '
   )}`;
   if (lecture?.estimatedTime && lecture.estimatedTime > 0) {
     descriptionText = `⏱️ ca. ${lecture.estimatedTime} Min. • ${descriptionText}`;
+  }
+  if (lecture?.version) {
+    descriptionText = `${descriptionText} • v${lecture.version}`;
   }
   overviewDescription.textContent = descriptionText;
 

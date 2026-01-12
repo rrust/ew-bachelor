@@ -133,6 +133,7 @@ function createLectureBundle(lectureDir, moduleId, lectureId) {
       topic: frontmatter?.topic || lectureId,
       description: frontmatter?.description || '',
       estimatedTime: frontmatter?.estimatedTime || 0,
+      version: frontmatter?.version || null,
       sources: frontmatter?.sources || []
     };
 
@@ -280,7 +281,8 @@ async function main() {
           quizCount: bundle.quiz.length,
           topic: bundle.metadata.topic,
           description: bundle.metadata.description || '',
-          estimatedTime: bundle.metadata.estimatedTime
+          estimatedTime: bundle.metadata.estimatedTime,
+          version: bundle.metadata.version || null
         };
 
         console.log(
