@@ -725,9 +725,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       if (!lecture) {
         console.error(`[App] Failed to load lecture: ${moduleId}/${lectureId}`);
-        alert(
-          'Vorlesung konnte nicht geladen werden. Bitte versuche es erneut.'
-        );
+        
+        // Show appropriate error message based on online/offline status
+        if (!navigator.onLine) {
+          alert(
+            'Du bist offline und diese Vorlesung wurde noch nicht heruntergeladen.\n\n' +
+            'Gehe online und öffne die Vorlesung einmal, dann ist sie auch offline verfügbar.'
+          );
+        } else {
+          alert(
+            'Vorlesung konnte nicht geladen werden. Bitte versuche es erneut.'
+          );
+        }
         return;
       }
     }

@@ -131,17 +131,22 @@ self.addEventListener('fetch', (event) => {
   }
 
   // Lecture bundles - Cache first (for offline support)
-  if (url.pathname.includes('/content/') && url.pathname.endsWith('lecture-bundle.json')) {
+  if (
+    url.pathname.includes('/content/') &&
+    url.pathname.endsWith('lecture-bundle.json')
+  ) {
     event.respondWith(cacheFirst(event.request));
     return;
   }
 
   // Study metadata files - Stale-while-revalidate (fast load, background update)
-  if (url.pathname.includes('/content/') && 
-      (url.pathname.endsWith('modules.json') || 
-       url.pathname.endsWith('search-index.json') ||
-       url.pathname.endsWith('content-manifest.json') ||
-       url.pathname.endsWith('content-list.json'))) {
+  if (
+    url.pathname.includes('/content/') &&
+    (url.pathname.endsWith('modules.json') ||
+      url.pathname.endsWith('search-index.json') ||
+      url.pathname.endsWith('content-manifest.json') ||
+      url.pathname.endsWith('content-list.json'))
+  ) {
     event.respondWith(staleWhileRevalidate(event.request));
     return;
   }
