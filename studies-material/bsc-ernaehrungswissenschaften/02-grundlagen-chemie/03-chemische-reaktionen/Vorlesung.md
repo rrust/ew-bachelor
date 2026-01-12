@@ -1,853 +1,884 @@
-# UNIVERSITY CHEATCODE: CHEMIE KAPITEL 3 - KOMPENDIUM
+# Chemische Reaktionen
+
+**Quelle:** Chemische Reaktionen (Vorlesungsfolien)
+**Original-PDF:** https://moodle.univie.ac.at/mod/resource/view.php?id=19442803
+**Thema:** Grundlagen der Stöchiometrie, Reaktionstypen, chemisches Gleichgewicht, Lösungen und Redoxreaktionen
+**Autoren:** John C. Kotz, Paul M. Treichel, John Townsend
 
 ---
 
-Titel: Chemische Reaktionen
+## Kapitel 1: Grundlagen chemischer Reaktionen
 
-Link: https://moodle.univie.ac.at/pluginfile.php/32079599/mod_resource/content/0/Kapitel3corrected.pdf
+### 1.1 Aufbau einer Reaktionsgleichung
 
-# TEIL 1: LEHRBUCH-TRANSKRIPT (MODUS B)
+Chemische Reaktionen beschreiben die Umwandlung von Stoffen. Eine Reaktionsgleichung zeigt die Art der **Reaktanden** (auch **Edukte** genannt) und der **Produkte** sowie deren Mengenverhältnisse.
 
-## Kapitel 3: Chemische Reaktionen und Stöchiometrie
+Die allgemeine Form lautet:
+$$\text{Edukte} \rightarrow \text{Produkte}$$
 
-### 3.1 Die Natur chemischer Gleichungen
-
-Die Chemie ist die Lehre von der Veränderung der Materie. Um diese Veränderungen präzise zu kommunizieren, verwenden Chemiker eine standardisierte Symbolsprache: die **chemische Reaktionsgleichung**. Eine solche Gleichung ist weit mehr als eine bloße Auflistung von Stoffen; sie ist ein quantitatives und qualitatives Rezept, das die Umgruppierung von Atomen beschreibt.
-
-#### 3.1.1 Aufbau einer Reaktionsgleichung
-
-Eine chemische Gleichung besteht aus zwei Hauptkomponenten, die durch einen Reaktionspfeil getrennt sind. Der Pfeil ($\rightarrow$) symbolisiert den zeitlichen Verlauf und die Umwandlung:
-
-1. **Edukte (Reaktanden):** Diese stehen traditionell auf der linken Seite des Pfeils. Es sind die Ausgangsstoffe, die chemische Bindungen brechen und miteinander reagieren. Ein klassisches Beispiel aus den vorliegenden Unterlagen ist die Reaktion von Zink mit Iod oder Phosphor mit Chlor.
-2. **Produkte:** Diese stehen auf der rechten Seite. Sie sind die neu entstandenen Stoffe, die durch die Neuknüpfung von Bindungen hervorgehen.
-
-Ein einfaches, illustratives Beispiel ist die Bildung von Zinkiodid:
+Ein klassisches Beispiel ist die Reaktion von Zink und Iod:
 $$Zn + I_2 \rightarrow ZnI_2$$
-Hier sind $Zn$ und $I_2$ die Edukte und $ZnI_2$ das Produkt.
-[cite: 2, 808-810]
 
-#### 3.1.2 Zustandsbeschreibungen (Aggregatzustände)
+Ein weiteres Beispiel ist die Reaktion von Aluminium mit Sauerstoff:
+$$4 Al(s) + 3 O_2(g) \rightarrow 2 Al_2O_3(s)$$
 
-Um eine Reaktion vollständig zu verstehen, muss der physikalische Zustand aller beteiligten Substanzen angegeben werden. Diese werden als tiefgestellte Buchstaben in Klammern hinter die chemische Formel gesetzt:
-* **(s)** für *solid* (fest): Der Stoff liegt als Feststoff vor (z.B. Metallpulver, Kristalle).
-* **(g)** für *gas* (gasförmig): Der Stoff ist ein Gas.
-* **(l)** für *liquid* (flüssig): Der Stoff ist eine reine Flüssigkeit (z.B. Wasser, Brom).
-* **(aq)** für *aqueous* (wässrig): Der Stoff ist in Wasser gelöst (wird in späteren Kapiteln zu Lösungen relevant).
+**Wichtige Begriffe:**
+- **Edukte (Reaktanden):** Die Ausgangsstoffe einer chemischen Reaktion (stehen links vom Pfeil).
+- **Produkte:** Die Stoffe, die bei der Reaktion entstehen (stehen rechts vom Pfeil).
+- **Koeffizienten (Stöchiometrische Koeffizienten):** Die Zahlen *vor* den chemischen Formeln (z.B. die "4" vor Al). Sie geben das Anzahlverhältnis der Teilchen oder die Mol-Verhältnisse an.
+- **Aggregatzustände:** Werden in Klammern hinter die Formel geschrieben:
+  - $(s)$ = solid (fest)
+  - $(g)$ = gaseous (gasförmig)
+  - $(l)$ = liquid (flüssig)
+  - $(aq)$ = aqueous (in Wasser gelöst)
 
-Betrachten wir die Reaktion von Aluminium mit Sauerstoff:
-$$4Al(s) + 3O_2(g) \rightarrow 2Al_2O_3(s)$$
-Diese Gleichung sagt uns nicht nur, *was* reagiert, sondern auch *wie*: Festes Aluminium reagiert mit gasförmigem Sauerstoff zu festem Aluminiumoxid.
-[cite_start][cite: 3]
+### 1.2 Interpretation der Koeffizienten
 
----
+Die Koeffizienten in einer Gleichung können auf zwei Ebenen gelesen werden:
 
-### 3.2 Stöchiometrie: Das Gesetz der Erhaltung der Masse
-
-Eines der fundamentalen Prinzipien der Chemie, formuliert von Antoine Lavoisier im Jahr 1789, ist das **Gesetz der Erhaltung der Masse**. Es besagt, dass Materie bei einer chemischen Reaktion weder geschaffen noch zerstört wird. Die Masse der Edukte muss exakt der Masse der Produkte entsprechen.
-
-#### 3.2.1 Die Bedeutung der Koeffizienten
-
-Da Atome unzerstörbar sind (im Kontext chemischer Reaktionen), muss die Anzahl der Atome jedes Elements auf der linken Seite (Edukte) gleich der Anzahl auf der rechten Seite (Produkte) sein. Um dies zu erreichen, nutzen wir **stöchiometrische Koeffizienten**.
-
-* **Subskripte (z.B. die "2" in $O_2$):** Definieren die Identität des Moleküls. Diese dürfen **niemals** verändert werden, da dies den Stoff selbst verändern würde.
-* **Koeffizienten (z.B. die "4" vor $Al$):** Geben das Mengenverhältnis an. Sie sagen aus, wie viele Moleküle oder Moleinheiten reagieren.
-
-Im Beispiel der Phosphorchlorid-Bildung:
-$$P_4(s) + 6Cl_2(g) \rightarrow 4PCl_3(l)$$
-Hier sehen wir:
-* **Links:** 4 Phosphor-Atome (in einem $P_4$ Molekül) und 12 Chlor-Atome (in 6 $Cl_2$ Molekülen).
-* **Rechts:** 4 Phosphor-Atome und 12 Chlor-Atome (verteilt auf 4 $PCl_3$ Moleküle).
-
-Die Gleichung ist somit "ausgeglichen" oder "bilanziert".
-[cite: 4, 8, 863-868]
-
-#### 3.2.2 Interpretation auf Teilchen- und Molebene
-
-Chemische Gleichungen können auf zwei Ebenen gelesen werden:
-1. **Mikroskopisch (Teilchenebene):** "4 Atome Aluminium reagieren mit 3 Molekülen Sauerstoff."
-2. **Makroskopisch (Stoffmengen-Ebene):** "4 Mol Aluminium reagieren mit 3 Mol Sauerstoff."
-
-Diese Dualität ist entscheidend für laborpraktische Berechnungen. Wenn wir die Reaktion von Aluminiumoxid betrachten:
-$$4Al(s) + 3O_2(g) \rightarrow 2Al_2O_3(s)$$
-Bedeutet dies konkret: 4 Mol Al stehen im Verhältnis zu 3 Mol $O_2$ und erzeugen 2 Mol Produkt. Dieses Verhältnis (4:3:2) ist fix.
-[cite: 6, 843-850]
+1. **Teilchen-Ebene:** 4 Atome Al reagieren mit 3 Molekülen $O_2$ zu 2 Formeleinheiten ("Molekülen") $Al_2O_3$.
+2. **Molare Ebene:** 4 Mol Al reagieren mit 3 Mol $O_2$ zu 2 Mol $Al_2O_3$.
 
 ---
 
-### 3.3 Systematisches Ausgleichen von Gleichungen
+### ✅ Selbsttest: Kapitel 1
 
-Das Ausgleichen von Reaktionsgleichungen ist oft ein iterativer Prozess ("Trial and Error"), der jedoch systematisch angegangen werden sollte.
+<!-- ÜBUNGSFRAGEN: Einfaches Niveau für Trainingsmodus -->
 
-**Beispiel: Die Verbrennung von Propan**
-Betrachten wir die unbalancierte Gleichung:
-$$C_3H_8(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$$
+**Frage 1.1** (Wissen)
+Wie nennt man die Zahlen, die in einer Reaktionsgleichung *vor* den chemischen Formeln stehen?
+- A) Indizes
+- B) Exponenten
+- C) Koeffizienten ✓
+- D) Isotope
 
-**Schritt-für-Schritt Strategie:**
-1. **Kohlenstoff (C) ausgleichen:** Links sind 3 C-Atome, rechts nur 1. Wir setzen eine 3 vor $CO_2$.
-    $\rightarrow \dots \rightarrow 3CO_2 + \dots$
-2. **Wasserstoff (H) ausgleichen:** Links sind 8 H-Atome, rechts sind 2 (im Wasser). Wir benötigen 8 H-Atome rechts, also setzen wir eine 4 vor $H_2O$.
-    $\rightarrow \dots \rightarrow 3CO_2 + 4H_2O$
-3. **Sauerstoff (O) ausgleichen:** Zählen wir nun die O-Atome auf der Produktseite.
-    * Im $3CO_2$: $3 \times 2 = 6$ Sauerstoffatome.
-    * Im $4H_2O$: $4 \times 1 = 4$ Sauerstoffatome.
-    * Summe: 10 Sauerstoffatome.
-    * Um links auf 10 zu kommen, setzen wir eine 5 vor das $O_2$.
+> **Erklärung:** Koeffizienten (stöchiometrische Faktoren) geben das Mengenverhältnis an. Indizes (kleine tiefgestellte Zahlen) gehören fest zur chemischen Formel.
 
-**Endergebnis:**
-$$C_3H_8(g) + 5O_2(g) \rightarrow 3CO_2(g) + 4H_2O(g)$$
+**Frage 1.2** (Verständnis)
+Was bedeutet das Kürzel $(aq)$ hinter einer chemischen Formel, z.B. $NaCl(aq)$?
+- A) Der Stoff ist fest (solid).
+- B) Der Stoff ist in Wasser gelöst (aqueous). ✓
+- C) Der Stoff ist geschmolzen (liquid).
+- D) Der Stoff ist gasförmig (gaseous).
 
-Dieser Prozess stellt sicher, dass das Gesetz der Massenerhaltung erfüllt ist.
-[cite_start][cite: 10]
+> **Erklärung:** $(aq)$ steht für "aqueous" und bezeichnet eine wässrige Lösung. Flüssige Reinstoffe (Schmelzen) werden mit $(l)$ gekennzeichnet.
 
----
+**Frage 1.3** (Anwendung)
+Betrachte die Reaktion: $P_4(s) + 6 Cl_2(g) \rightarrow 4 PCl_3(l)$. Welche Aussage ist FALSCH?
+- A) Phosphor liegt als Feststoff vor.
+- B) Es entstehen 4 Mol Produkt aus 1 Mol $P_4$.
+- C) Chlor ist das Lösungsmittel. ✓
+- D) Chlor liegt gasförmig vor.
 
-### 3.4 Chemisches Gleichgewicht (Equilibrium)
-
-Bisher haben wir Reaktionen betrachtet, als ob sie nur in eine Richtung (von links nach rechts) ablaufen würden. In der Realität sind viele chemische Reaktionen jedoch **reversibel** (umkehrbar).
-
-#### 3.4.1 Das Konzept der Reversibilität
-
-Eine Reaktion kann in beide Richtungen ablaufen:
-1. **Hinreaktion:** Edukte reagieren zu Produkten.
-    $$N_2(g) + 3H_2(g) \rightarrow 2NH_3(g)$$ (Synthese von Ammoniak)
-2. **Rückreaktion:** Produkte zerfallen wieder zu Edukten.
-    $$2NH_3(g) \rightarrow N_2(g) + 3H_2(g)$$ (Zersetzung von Ammoniak)
-
-Um diese Reversibilität in einer Gleichung darzustellen, verwendet man einen **Doppelpfeil** ($\rightleftharpoons$).
-$$N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$$
-[cite_start][cite: 11]
-
-#### 3.4.2 Das Dynamische Gleichgewicht
-
-Wenn man Edukte in ein geschlossenes Gefäß gibt, läuft zunächst nur die Hinreaktion ab. Mit der Zeit entstehen Produkte, die wiederum beginnen, zurückzureagieren. Schließlich wird ein Punkt erreicht, an dem die Geschwindigkeit der Hinreaktion exakt gleich der Geschwindigkeit der Rückreaktion ist.
-
-Dies nennt man das **chemische Gleichgewicht**.
-* **Dynamisch:** Es bedeutet *nicht*, dass die Reaktion stoppt. Auf molekularer Ebene finden ständig Hin- und Rückreaktionen statt ("Hin" und "Her").
-* **Konstant:** Makroskopisch ändern sich die Konzentrationen (Mengen) von Edukten und Produkten nicht mehr. Es gibt keine **Nettoänderung** der Stoffmengen.
-
-Die Grafik in den Unterlagen zeigt dies deutlich: Die Konzentrationen der Edukte ($N_2, H_2$) sinken zunächst schnell und flachen dann ab. Die Konzentration des Produkts ($NH_3$) steigt und flacht ebenfalls ab. Sobald die Kurven parallel zur Zeitachse verlaufen, ist das Gleichgewicht erreicht.
-[cite_start][cite: 11, 14]
-
-#### 3.4.3 Fallbeispiel aus der Natur: Stalaktiten und Stalagmiten
-
-Ein faszinierendes Beispiel für reversible Reaktionen und Gleichgewichte findet sich in Kalksteinhöhlen.
-Die Bildung von Calciumcarbonat ($CaCO_3$) ist abhängig von der Konzentration an gelöstem Kohlendioxid ($CO_2$).
-
-Die Reaktionsgleichung lautet:
-$$Ca^{2+}(aq) + 2HCO_3^-(aq) \rightleftharpoons CaCO_3(s) + CO_2(g) + H_2O(l)$$
-
-* **Höhlenbildung (Auflösung):** Wenn Wasser viel $CO_2$ enthält (Säure), verschiebt sich das Gleichgewicht nach links. Der feste Kalkstein ($CaCO_3$) löst sich auf.
-* **Tropfsteinbildung (Fällung):** Wenn das Wasser von der Decke tropft, entweicht $CO_2$ in die Höhlenluft. Das System versucht, den $CO_2$-Verlust auszugleichen, indem die Reaktion nach rechts abläuft. Dabei fällt festes $CaCO_3$ aus – ein Stalaktit wächst.
-
-Dies illustriert, wie empfindlich chemische Gleichgewichte auf Änderungen der Außenbedingungen reagieren.
-[cite_start][cite: 12, 13]
+> **Erklärung:** Chlor ist hier ein Edukt (Reaktionspartner) im gasförmigen Zustand, kein Lösungsmittel.
 
 ---
 
-### 3.5 Die Natur wässriger Lösungen
+> 📺 **Video-Empfehlung:** "Reaktionsgleichungen aufstellen und ausgleichen"
+> *Suche auf YouTube nach:* **"Reaktionsgleichungen Grundlagen Chemie simpleclub"**
 
-Ein Großteil der Chemie, insbesondere in biologischen Systemen und industriellen Prozessen, findet nicht zwischen Feststoffen oder Gasen statt, sondern in flüssiger Umgebung. Wasser spielt hierbei als universelles Lösungsmittel eine zentrale Rolle.
+---
 
-Eine **Lösung** ist ein homogenes Gemisch aus zwei oder mehr Substanzen. In diesem Kontext definieren wir die Komponenten wie folgt:
-* **Lösungsmittel (Solvens):** Die Komponente, die im Überschuss vorhanden ist und das Medium bildet (hier: Wasser, $H_2O$).
-* **Gelöster Stoff (Solut):** Die Substanz, die im Lösungsmittel aufgelöst wird (z.B. Salz, Zucker, Säuren).
+## Kapitel 2: Massenerhaltung und Ausgleichen von Gleichungen
 
-Wenn wir von einer **wässrigen Lösung** sprechen (gekennzeichnet durch *(aq)*), meinen wir explizit Wasser als Lösungsmittel.
+### 2.1 Gesetz der Erhaltung der Masse
 
-#### 3.5.1 Der Lösungsprozess (Solvatation)
+Das **Gesetz der Erhaltung der Masse** (formuliert von Lavoisier, 1788) besagt: Da Atome in einer chemischen Reaktion weder geschaffen noch vernichtet, sondern nur neu angeordnet werden, ändert sich die Gesamtmasse nicht.
 
-Wie löst sich ein Feststoff eigentlich auf? Betrachten wir die Auflösung von Kaliumpermanganat ($KMnO_4$) oder Kupferchlorid ($CuCl_2$).
+Das bedeutet für Reaktionsgleichungen:
+> Es muss immer dieselbe Anzahl an Atomen derselben Art auf beiden Seiten der Gleichung geben.
 
-Wasser ist ein polares Molekül. Das Sauerstoffatom zieht Elektronen stärker an und trägt eine partielle negative Ladung ($\delta-$), während die Wasserstoffatome partiell positiv geladen sind ($\delta+$).
-Wenn eine ionische Verbindung (ein Salz) in Wasser gegeben wird, geschieht Folgendes:
-1. Die positiven Enden der Wassermoleküle lagern sich an die negativen Anionen des Salzes an (z.B. $Cl^-$ oder $MnO_4^-$).
-2. Die negativen Enden der Wassermoleküle umzingeln die positiven Kationen (z.B. $K^+$ oder $Cu^{2+}$).
+Eine Gleichung muss daher **ausgewogen** (balanced) sein.
 
-Dieser Prozess heißt **Hydratation**. Die Wassermoleküle "ziehen" die Ionen aus dem Kristallgitter heraus und bilden eine Hydrathülle um jedes Ion. Diese Hülle verhindert, dass sich die Ionen wieder zu einem Feststoff vereinigen.
-Das Ergebnis ist eine Lösung, in der sich die Ionen frei bewegen können:
+### 2.2 Beispiele zum Ausgleichen
+
+**Beispiel 1: Aluminium und Brom**
+Ungleiche Form: $Al(s) + Br_2(l) \rightarrow Al_2Br_6(s)$
+Ausgeglichen: $2 Al(s) + 3 Br_2(l) \rightarrow Al_2Br_6(s)$
+
+**Beispiel 2: Verbrennung von Propan**
+Ungleiche Form: $C_3H_8(g) + O_2(g) \rightarrow CO_2(g) + H_2O(g)$
+Ausgeglichen: $C_3H_8(g) + 5 O_2(g) \rightarrow 3 CO_2(g) + 4 H_2O(g)$
+
+---
+
+### ✅ Selbsttest: Kapitel 2
+
+**Frage 2.1** (Verständnis)
+Warum müssen Reaktionsgleichungen ausgeglichen werden?
+- A) Um die Reaktion zu beschleunigen.
+- B) Um dem Gesetz der Erhaltung der Energie zu folgen.
+- C) Um dem Gesetz der Erhaltung der Masse zu folgen. ✓
+- D) Damit die Aggregatzustände stimmen.
+
+> **Erklärung:** Atome gehen nicht verloren. Die Masse der Edukte muss gleich der Masse der Produkte sein.
+
+**Frage 2.2** (Anwendung)
+Welche Koeffizienten gleichen die folgende Gleichung aus?
+$\_\_ Fe + \_\_ Cl_2 \rightarrow \_\_ FeCl_3$
+- A) 1, 1, 1
+- B) 2, 3, 2 ✓
+- C) 1, 3, 2
+- D) 3, 3, 2
+
+> **Erklärung:** Links: 2 Fe, 6 Cl. Rechts: 2 Fe, 6 Cl ($2 \times 3$).
+
+**Frage 2.3** (Anwendung)
+Gleiche aus: $B_4H_{10} + O_2 \rightarrow B_2O_3 + H_2O$. Wie viele Moleküle $O_2$ werden benötigt?
+- A) 5
+- B) 7
+- C) 11
+- D) 11/2 oder Koeffizienten verdoppeln (dann 11) ✓
+
+> **Lösung:** $2 B_4H_{10} + 11 O_2 \rightarrow 4 B_2O_3 + 10 H_2O$. (Oder mit Brüchen: 1 + 5.5 -> 2 + 5).
+
+---
+
+> 📺 **Video-Empfehlung:** "Stöchiometrie Koeffizienten bestimmen"
+> *Suche auf YouTube nach:* **"Reaktionsgleichungen ausgleichen Studyflix"**
+
+---
+
+## Kapitel 3: Chemisches Gleichgewicht (Equilibrium)
+
+### 3.1 Umkehrbarkeit von Reaktionen
+
+Viele chemische Reaktionen sind umkehrbar (reversibel). Ein berühmtes Beispiel ist der **Haber-Bosch-Prozess** zur Ammoniak-Synthese:
+
+$$N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g)$$
+
+Der Doppelpfeil ($\rightleftharpoons$) zeigt an, dass die Reaktion in beide Richtungen abläuft:
+1. Hinreaktion: Bildung von Ammoniak
+2. Rückreaktion: Zerfall von Ammoniak in Stickstoff und Wasserstoff
+
+### 3.2 Dynamisches Gleichgewicht
+
+In einem geschlossenen System stellt sich schließlich ein Zustand ein, in dem die Hin- und Rückreaktion gleich schnell ablaufen.
+Dies nennt man **dynamisches Gleichgewicht**.
+
+**Eigenschaften:**
+- Es gibt keine *Nettoänderungen* mehr in den Mengen von Edukten und Produkten.
+- Die Reaktionen laufen auf teilchenebene *ständig* weiter ("dynamisch"), aber heben sich gegenseitig auf.
+
+Ein Beispiel aus der Natur ist die Bildung von Stalaktiten/Stalagmiten (Kalkstein):
+$$Ca^{2+}(aq) + 2 HCO_3^-(aq) \rightleftharpoons CaCO_3(s) + CO_2(g) + H_2O(l)$$
+
+---
+
+### ✅ Selbsttest: Kapitel 3
+
+**Frage 3.1** (Wissen)
+Was symbolisiert der Doppelpfeil $\rightleftharpoons$ in einer chemischen Gleichung?
+- A) Die Reaktion ist explosionsartig.
+- B) Die Reaktion stoppt nach kurzer Zeit.
+- C) Es handelt sich um eine Gleichgewichtsreaktion (Hin- und Rückreaktion). ✓
+- D) Es entsteht nur Gas.
+
+> **Erklärung:** Der Doppelpfeil steht für Reversibilität und das chemische Gleichgewicht.
+
+**Frage 3.2** (Verständnis)
+Was bedeutet "dynamisches" Gleichgewicht?
+- A) Die Reaktion steht still.
+- B) Edukte und Produkte sind in exakt gleicher Menge vorhanden.
+- C) Hin- und Rückreaktion laufen gleich schnell ab, die Konzentrationen bleiben konstant. ✓
+- D) Die Temperatur ändert sich ständig.
+
+> **Erklärung:** "Dynamisch" bedeutet, dass die Prozesse auf molekularer Ebene weiterlaufen, sich makroskopisch aber nichts ändert.
+
+---
+
+> 📺 **Video-Empfehlung:** "Chemisches Gleichgewicht einfach erklärt"
+> *Suche auf YouTube nach:* **"Chemisches Gleichgewicht simpleclub"**
+
+---
+
+## Kapitel 4: Wässrige Lösungen und Elektrolyte
+
+### 4.1 Lösungsmittel und Gelöster Stoff
+
+Reaktionen finden oft in Wasser statt ("wässrige Lösung").
+- **Lösungsmittel (Solvens):** Das Medium im Überschuss (z.B. Wasser).
+- **Gelöster Stoff (Solvat):** Die Substanz, die aufgelöst wird.
+
+Beispiel: Lösen von $KMnO_4$ in Wasser:
 $$KMnO_4(s) \xrightarrow{H_2O} K^+(aq) + MnO_4^-(aq)$$
-[cite_start][cite: 15, 16]
+
+### 4.2 Elektrolyte
+
+Stoffe werden danach klassifiziert, ob ihre wässrigen Lösungen elektrischen Strom leiten. Die Leitfähigkeit basiert auf der Anwesenheit von **Ionen**.
+
+1. **Starke Elektrolyte:**
+    - Zerfallen **vollständig** (oder fast vollständig) in Ionen.
+    - Leiten Strom sehr gut.
+    - Beispiele: Gut lösliche Salze (NaCl, $CuCl_2$), starke Säuren (HCl).
+    - Gleichung: $HCl(aq) \rightarrow H^+(aq) + Cl^-(aq)$
+
+2. **Schwache Elektrolyte:**
+    - Zerfallen nur zu einem **geringen Ausmaß** in Ionen.
+    - Leiten Strom schlecht.
+    - Beispiele: Schwache Säuren (Essigsäure $CH_3CO_2H$), Ammoniak.
+    - Gleichung: $CH_3CO_2H(aq) \rightleftharpoons CH_3CO_2^-(aq) + H^+(aq)$
+
+3. **Nichtelektrolyte:**
+    - Lösen sich in Wasser, bilden aber **keine Ionen**.
+    - Leiten keinen Strom.
+    - Beispiele: Zucker, Ethanol, Ethylenglycol.
 
 ---
 
-### 3.6 Elektrolyte: Stromleitung in Lösungen
+### ✅ Selbsttest: Kapitel 4
 
-Eine faszinierende Eigenschaft vieler wässriger Lösungen ist ihre Fähigkeit, elektrischen Strom zu leiten. Reines Wasser leitet Strom kaum. Die Leitfähigkeit entsteht erst durch gelöste Ionen, die als mobile Ladungsträger fungieren. Basierend auf dieser Eigenschaft klassifizieren wir Stoffe in drei Kategorien:
+**Frage 4.1** (Wissen)
+Welcher der folgenden Stoffe ist ein starker Elektrolyt?
+- A) Zucker
+- B) Essigsäure
+- C) Kochsalz (NaCl) ✓
+- D) Ethanol
 
-#### 3.6.1 Starke Elektrolyte
+> **Erklärung:** NaCl ist ein ionisches Salz, das im Wasser vollständig in $Na^+$ und $Cl^-$ dissoziiert.
 
-Starke Elektrolyte sind Substanzen, die in Wasser **vollständig** (zu fast 100%) in Ionen zerfallen (dissoziieren). Da viele Ionen vorhanden sind, leitet die Lösung Strom sehr gut. Eine Glühbirne in einem Stromkreis mit dieser Lösung würde hell leuchten.
+**Frage 4.2** (Anwendung)
+Wie sieht die Dissoziationsgleichung für $CuCl_2$ in Wasser aus?
+- A) $CuCl_2(s) \rightarrow Cu(aq) + Cl_2(g)$
+- B) $CuCl_2(s) \rightarrow Cu^{2+}(aq) + 2 Cl^-(aq)$ ✓
+- C) $CuCl_2(s) \rightarrow Cu^+(aq) + Cl_2^-(aq)$
+- D) Es löst sich nicht.
 
-* **Beispiele:**
-    * Lösliche Salze: $NaCl, CuCl_2$
-    * Starke Säuren: $HCl$ (Salzsäure)
-    * Starke Basen: $NaOH$
-
-Die Dissoziationsgleichung wird mit einem einfachen Pfeil ($\rightarrow$) geschrieben, um die Vollständigkeit anzuzeigen:
-$$CuCl_2(s) \rightarrow Cu^{2+}(aq) + 2Cl^-(aq)$$
-[cite_start][cite: 17, 18]
-
-#### 3.6.2 Schwache Elektrolyte
-
-Diese Stoffe lösen sich zwar in Wasser, dissoziieren aber nur zu einem sehr **geringen Prozentsatz** (oft < 5%) in Ionen. Der Großteil der Substanz bleibt als neutrales Molekül erhalten. Die elektrische Leitfähigkeit ist daher gering (die Glühbirne würde nur glimmen).
-
-* **Klassisches Beispiel:** Essigsäure ($CH_3CO_2H$).
-    In einer Essigsäurelösung liegen die meisten Teilchen als intakte $CH_3CO_2H$-Moleküle vor. Nur wenige Protonen spalten sich ab.
-    Wir kennzeichnen dies durch den Gleichgewichtspfeil ($\rightleftharpoons$):
-    $$CH_3CO_2H(aq) \rightleftharpoons CH_3CO_2^-(aq) + H^+(aq)$$
-[cite_start][cite: 19, 20]
-
-#### 3.6.3 Nichtelektrolyte
-
-Nichtelektrolyte sind Stoffe, die sich in Wasser lösen (oft aufgrund von Wasserstoffbrückenbindungen), aber **keine Ionen** bilden. Sie zerfallen lediglich in neutrale Moleküle. Da keine Ladungsträger vorhanden sind, leitet die Lösung keinen Strom.
-
-* **Beispiele:** Zucker (Saccharose), Ethanol (Alkohol), Ethylenglykol (Frostschutzmittel).
-    $$C_{12}H_{22}O_{11}(s) \xrightarrow{H_2O} C_{12}H_{22}O_{11}(aq)$$
-    (Keine Ionenbildung!)
-[cite_start][cite: 21]
+> **Erklärung:** Kupfer(II)-chlorid zerfällt in ein Kupfer-Ion ($2+$) und zwei Chlorid-Ionen ($1-$).
 
 ---
 
-### 3.7 Löslichkeit und Fällungsreaktionen
+> 📺 **Video-Empfehlung:** "Was sind Elektrolyte?"
+> *Suche auf YouTube nach:* **"Elektrolyte starke schwache Chemie"**
 
-Nicht alle ionischen Verbindungen lösen sich in Wasser. Wenn wir zwei klare Salzlösungen mischen und plötzlich eine Trübung oder ein Feststoff entsteht, sprechen wir von einer **Fällungsreaktion** (Precipitation). Der entstandene Feststoff ist das **Präzipitat** (Niederschlag).
+---
 
-Um vorherzusagen, ob ein Niederschlag entsteht, nutzen wir empirische **Löslichkeitsregeln**.
+## Kapitel 5: Fällungsreaktionen und Löslichkeit
 
-#### 3.7.1 Die Löslichkeitsregeln (Wichtig für Prüfungen!)
+### 5.1 Austauschreaktionen
 
-Man unterscheidet zwischen "löslich" (soluble) und "unlöslich" (insoluble). "Unlöslich" bedeutet in der Praxis oft "schwerlöslich", also dass sich extrem wenig löst.
-
-**Grundsätzlich LÖSLICH sind:**
-1. Fast alle Salze der Alkalimetalle ($Na^+, K^+, Li^+$) und Ammonium ($NH_4^+$).
-2. Alle Nitrate ($NO_3^-$), Acetate ($CH_3COO^-$), Chlorate ($ClO_3^-$) und Perchlorate ($ClO_4^-$).
-3. Die meisten Chloride ($Cl^-$), Bromide ($Br^-$) und Iodide ($I^-$).
-    * *Ausnahmen (Unlöslich):* Verbindungen mit Silber ($Ag^+$), Blei ($Pb^{2+}$), Quecksilber ($Hg_2^{2+}$).
-4. Die meisten Sulfate ($SO_4^{2-}$).
-    * *Ausnahmen (Unlöslich):* $Ca^{2+}, Sr^{2+}, Ba^{2+}, Pb^{2+}$.
-
-**Grundsätzlich UNLÖSLICH sind:**
-1. Karbonate ($CO_3^{2-}$), Phosphate ($PO_4^{3-}$), Sulfide ($S^{2-}$), Chromate ($CrO_4^{2-}$).
-    * *Ausnahmen:* Salze der Alkalimetalle und Ammonium (siehe Regel 1).
-2. Die meisten Hydroxide ($OH^-$).
-    * *Ausnahmen:* Alkalimetall-Hydroxide und Bariumhydroxid ($Ba(OH)_2$).
-
-**Beispiele aus der Natur:**
-* **Azurit:** Ein unlösliches Kupfercarbonat (blaues Mineral).
-* **Pyrit (Katzengold):** Ein Eisensulfid ($FeS_2$), ebenfalls unlöslich.
-[cite_start][cite: 22, 23]
-
-#### 3.7.2 Austauschreaktionen (Metathese)
-
-Fällungsreaktionen folgen oft dem Muster einer **doppelten Austauschreaktion** (Metathese). Hierbei tauschen die Kationen und Anionen zweier Verbindungen ihre Partner:
+In wässrigen Lösungen treten häufig Austauschreaktionen (Metathese) auf, bei denen Ionen ihre Partner tauschen:
 $$AX + BY \rightarrow AY + BX$$
 
-**Der Prozess der Vorhersage:**
-1. Identifizieren Sie die Ionen in den Edukten.
-2. Tauschen Sie die Partner (Kation A geht zu Anion Y, Kation B zu Anion X).
-3. Prüfen Sie mit den Löslichkeitsregeln, ob eines der neuen Produkte ($AY$ oder $BX$) unlöslich ist.
-4. Wenn ja $\rightarrow$ Fällungsreaktion. Schreiben Sie *(s)* hinter das unlösliche Produkt.
-5. Wenn nein (beide Produkte löslich) $\rightarrow$ Keine Reaktion.
+Eine **Fällungsreaktion** liegt vor, wenn dabei ein schwerlösliches Produkt (ein **Niederschlag** oder **Präzipitat**) entsteht. Dies ist die "treibende Kraft" der Reaktion.
 
-**Beispiel:** Mischen von Bleinitrat und Kaliumiodid.
-1. Ionen: $Pb^{2+}, NO_3^-, K^+, I^-$.
-2. Mögliche Produkte: $KNO_3$ und $PbI_2$.
-3. Check: $KNO_3$ ist löslich (Regel: alle Nitrate/Kaliumsalze löslich). $PbI_2$ ist unlöslich (Regel: Iodide löslich, *außer* Blei).
-4. Reaktion:
-    $$Pb(NO_3)_2(aq) + 2KI(aq) \rightarrow PbI_2(s) + 2KNO_3(aq)$$
-    Es bildet sich ein gelber Niederschlag aus Bleiiodid.
-[cite_start][cite: 24, 25]
+Beispiel:
+$$Pb(NO_3)_2(aq) + 2 KI(aq) \rightarrow PbI_2(s) + 2 KNO_3(aq)$$
+Hier ist Blei(II)-iodid ($PbI_2$) der gelbe Niederschlag.
 
-#### 3.7.3 Arten von Gleichungen: Von der Molekül- zur Netto-Ionen-Form
+### 5.2 Löslichkeitsregeln (Tendenzen)
 
-Chemiker nutzen drei Stufen, um solche Reaktionen zu beschreiben:
+Um vorherzusagen, ob ein Niederschlag entsteht, helfen folgende Regeln:
+- **Löslich:** Fast alle Nitrate ($NO_3^-$), Alkalimetallsalze ($Na^+, K^+$) und Ammoniumsalze ($NH_4^+$).
+- **Unlöslich (Ausnahmen beachten):** Viele Carbonate, Phosphate, Sulfide und Hydroxide (außer Alkali/Ammonium).
+- Minerale wie Eisenkies (Sulfid) oder Azurit (Carbonat) sind Beispiele für unlösliche Verbindungen in der Natur.
 
-1. **Molekulargleichung (Stoffgleichung):** Zeigt die kompletten Formeln aller Stoffe.
-    $$Pb(NO_3)_2(aq) + K_2CrO_4(aq) \rightarrow PbCrO_4(s) + 2KNO_3(aq)$$
+### 5.3 Net Ionic Equations (Verkürzte Ionengleichungen)
 
-2. **Vollständige Ionengleichung:** Alle starken Elektrolyte (lösliche Salze) werden in ihre Ionen zerlegt dargestellt. Feststoffe bleiben als Molekül stehen.
-    $$Pb^{2+}(aq) + 2NO_3^-(aq) + 2K^+(aq) + CrO_4^{2-}(aq) \rightarrow PbCrO_4(s) + 2K^+(aq) + 2NO_3^-(aq)$$
+Man unterscheidet drei Schreibweisen:
 
-3. **Netto-Ionengleichung (Verkürzte Ionenform):** Hier streichen wir die "Zuschauer-Ionen" (Spectator Ions). Das sind Ionen, die auf beiden Seiten der Gleichung unverändert auftauchen (hier: $K^+$ und $NO_3^-$). Sie nehmen nicht aktiv an der Reaktion teil. Übrig bleibt der Kern der chemischen Veränderung:
+1. **Stoffgleichung (Ganze Gleichung):**
+    $Pb(NO_3)_2(aq) + K_2CrO_4(aq) \rightarrow PbCrO_4(s) + 2 KNO_3(aq)$
+
+2. **Vollständige Ionengleichung:**
+    Starke Elektrolyte werden in Ionen getrennt geschrieben:
+    $Pb^{2+} + 2 NO_3^- + 2 K^+ + CrO_4^{2-} \rightarrow PbCrO_4(s) + 2 K^+ + 2 NO_3^-$
+
+3. **Verkürzte Ionengleichung (Net Ionic Equation):**
+    Man streicht die **Zuschauer-Ionen** (Spectator Ions), die sich nicht verändern ($K^+$ und $NO_3^-$):
     $$Pb^{2+}(aq) + CrO_4^{2-}(aq) \rightarrow PbCrO_4(s)$$
-    Diese Gleichung sagt uns: "Blei-Ionen reagieren mit Chromat-Ionen zu festem Bleichromat." Woher die Ionen ursprünglich kamen (ob aus Kaliumchromat oder Natriumchromat), ist für die Fällung irrelevant.
-[cite_start][cite: 26, 27]
 
 ---
 
-### 3.8 Die Chemie der Säuren und Basen
+### ✅ Selbsttest: Kapitel 5
 
-Historisch gesehen wurden Säuren durch ihren sauren Geschmack (lat. *acidus*) und Basen (Laugen) durch ihren seifigen Charakter und bitteren Geschmack identifiziert. Chemisch betrachtet definieren wir sie präziser anhand ihres Verhaltens in Wasser (Arrhenius-Definition) oder ihrer Fähigkeit, Protonen zu übertragen (Brønsted-Lowry-Definition).
+**Frage 5.1** (Anwendung)
+Welche Ionen sind die "Zuschauer-Ionen" bei der Reaktion von $NaCl(aq) + AgNO_3(aq) \rightarrow AgCl(s) + NaNO_3(aq)$?
+- A) $Ag^+$ und $Cl^-$
+- B) $Na^+$ und $NO_3^-$ ✓
+- C) Nur $Na^+$
+- D) Es gibt keine Zuschauer.
 
-#### 3.8.1 Was ist eine Säure?
+> **Erklärung:** $Na^+$ und $NO_3^-$ bleiben gelöst $(aq)$ und ändern ihren Zustand nicht. $Ag^+$ und $Cl^-$ bilden den Feststoff.
 
-Nach der **Arrhenius-Definition** ist eine Säure eine Substanz, die in Wasser dissoziiert, um die Konzentration an Wasserstoffionen ($H^+$) zu erhöhen. Da ein nacktes Proton ($H^+$) in Wasser extrem reaktiv ist, bindet es sich sofort an ein Wassermolekül und bildet das **Hydronium-Ion** ($H_3O^+$).
+**Frage 5.2** (Wissen)
+Welches der folgenden Salze ist gemäß den allgemeinen Regeln wahrscheinlich wasserlöslich?
+- A) $CaCO_3$ (Kalk)
+- B) $PbS$ (Bleisulfid)
+- C) $KNO_3$ (Kaliumnitrat) ✓
+- D) $BaSO_4$ (Bariumsulfat)
 
-Die allgemeine Reaktion einer Säure $HA$ in Wasser lautet:
-$$HA(aq) + H_2O(l) \rightarrow H_3O^+(aq) + A^-(aq)$$
-
-Wir unterscheiden Säuren anhand ihrer Stärke, also dem Ausmaß ihrer Dissoziation:
-
-**1. Starke Säuren (Starke Elektrolyte)**
-Diese Säuren geben ihre Protonen praktisch vollständig an das Wasser ab. Das Gleichgewicht liegt zu 100 % auf der Seite der Produkte.
-* **Beispiel Salzsäure ($HCl$):**
-    $$HCl(aq) + H_2O(l) \rightarrow H_3O^+(aq) + Cl^-(aq)$$
-    In einer $HCl$-Lösung finden sich keine intakten $HCl$-Moleküle mehr, sondern nur Ionen.
-* **Die "Großen 6" (Wichtig für Klausuren!):** Chemiker sollten diese starken Säuren auswendig kennen:
-    * Salzsäure ($HCl$)
-    * Bromwasserstoffsäure ($HBr$)
-    * Iodwasserstoffsäure ($HI$)
-    * Salpetersäure ($HNO_3$)
-    * Perchlorsäure ($HClO_4$)
-    * Schwefelsäure ($H_2SO_4$)
-
-**2. Schwache Säuren (Schwache Elektrolyte)**
-Schwache Säuren geben nur einen Bruchteil ihrer Protonen ab. Es stellt sich ein dynamisches Gleichgewicht ein, bei dem die meisten Säuremoleküle undissoziiert bleiben.
-* **Beispiel Essigsäure ($CH_3COOH$):**
-    $$CH_3COOH(aq) + H_2O(l) \rightleftharpoons H_3O^+(aq) + CH_3COO^-(aq)$$
-* **Weitere Beispiele:** Flusssäure ($HF$), Phosphorsäure ($H_3PO_4$), Kohlensäure ($H_2CO_3$).
-
-**3. Saure Oxide (Nichtmetall-Oxide)**
-Interessanterweise können auch Stoffe, die selbst keinen Wasserstoff enthalten, saure Lösungen erzeugen. Nichtmetalloxide wie $CO_2$ oder $SO_3$ reagieren mit Wasser zu Säuren. Dies ist der chemische Mechanismus hinter dem "Sauren Regen":
-* $CO_2(g) + H_2O(l) \rightleftharpoons H_2CO_3(aq)$ (Kohlensäure)
-* $SO_3(g) + H_2O(l) \rightarrow H_2SO_4(aq)$ (Schwefelsäure)
-[cite_start][cite: 28-32, 466-505]
-
-#### 3.8.2 Was ist eine Base?
-
-Eine Base ist das chemische Gegenstück zur Säure.
-* **Arrhenius:** Eine Substanz, die in Wasser Hydroxid-Ionen ($OH^-$) freisetzt.
-* **Brønsted-Lowry:** Ein Protonenakzeptor (ein Teilchen, das ein $H^+$ aufnimmt).
-
-Auch hier unterscheiden wir nach Stärke:
-
-**1. Starke Basen (Lösliche Hydroxide)**
-Dies sind meist Metallhydroxide der Alkali- und Erdalkalimetalle. Sie dissoziieren vollständig.
-* **Beispiel Natriumhydroxid ($NaOH$):**
-    $$NaOH(s) \xrightarrow{H_2O} Na^+(aq) + OH^-(aq)$$
-* **Wichtige Vertreter:** $LiOH, NaOH, KOH, Ba(OH)_2$.
-
-**2. Schwache Basen**
-Die wichtigste schwache Base ist **Ammoniak ($NH_3$)**. Ammoniak besitzt selbst keine OH-Gruppe. Stattdessen "stiehlt" es einem Wassermolekül ein Proton (es wirkt als Protonenakzeptor). Dabei bleibt vom Wasser ein $OH^-$-Ion übrig:
-$$NH_3(aq) + H_2O(l) \rightleftharpoons NH_4^+(aq) + OH^-(aq)$$
-Das Gleichgewicht liegt hier stark auf der linken Seite; Ammoniak ist ein schwacher Elektrolyt.
-
-**3. Basische Oxide (Metall-Oxide)**
-Ähnlich wie Nichtmetalloxide Säuren bilden, reagieren Metalloxide mit Wasser zu Basen (Hydroxiden):
-$$CaO(s) + H_2O(l) \rightarrow Ca(OH)_2(aq)$$
-Der Indikator in der Lösung würde einen basischen pH-Wert anzeigen.
-[cite_start][cite: 33-35, 466-512]
+> **Erklärung:** Fast alle Nitrate und Kaliumsalze sind gut wasserlöslich.
 
 ---
 
-### 3.9 Neutralisationsreaktionen
+> 📺 **Video-Empfehlung:** "Netto-Ionengleichungen aufstellen"
+> *Suche auf YouTube nach:* **"Ionenreaktion Fällung aufstellen"**
 
-Was passiert, wenn man eine Säure und eine Base mischt? Ihre gegensätzlichen Eigenschaften heben sich auf – sie neutralisieren sich.
+---
 
-#### 3.9.1 Der Mechanismus
+## Kapitel 6: Säuren und Basen
 
-Die "treibende Kraft" hinter dieser Reaktion ist die Bildung von sehr stabilen, schwach dissoziierten Wassermolekülen aus den Ionen $H_3O^+$ und $OH^-$.
+### 6.1 Definitionen
 
-Betrachten wir die Reaktion von Salzsäure mit Natronlauge:
-**Molekulargleichung:**
+* **Arrhenius-Definition:**
+    * **Säure:** Bildet $H^+$ (bzw. $H_3O^+$) in Wasser.
+    * **Base:** Bildet $OH^-$ in Wasser.
+
+* **Brønsted-Lowry-Definition:**
+    * **Säure:** Protonen-Donator ($H^+$ Spender).
+    * **Base:** Protonen-Akzeptor ($H^+$ Aufnehmer).
+
+### 6.2 Starke vs. Schwache Säuren und Basen
+
+Es ist essentiell, die starken Säuren und Basen auswendig zu kennen, da sie starke Elektrolyte sind.
+
+**Wichtige Starke Säuren:**
+1. Salzsäure ($HCl$)
+2. Schwefelsäure ($H_2SO_4$)
+3. Salpetersäure ($HNO_3$)
+4. Perchlorsäure ($HClO_4$)
+5. Bromwasserstoffsäure ($HBr$)
+6. Iodwasserstoffsäure ($HI$)
+
+**Schwache Säuren** (Gleichgewicht): Essigsäure ($CH_3CO_2H$), Kohlensäure ($H_2CO_3$), Flusssäure ($HF$).
+
+**Wichtige Basen:**
+- **Stark:** $NaOH$ (Natriumhydroxid), $KOH$. Auch Metalloxide wie $CaO$ reagieren in Wasser basisch zu $Ca(OH)_2$.
+- **Schwach:** Ammoniak ($NH_3$). Reaktion: $NH_3 + H_2O \rightleftharpoons NH_4^+ + OH^-$.
+
+### 6.3 Neutralisation
+
+Reagiert eine Säure mit einer Base, entsteht Wasser und ein Salz. Dies nennt man **Neutralisation**.
+
+Stoffgleichung:
 $$HCl(aq) + NaOH(aq) \rightarrow NaCl(aq) + H_2O(l)$$
-Das Produkt ist Wasser und ein **Salz** (hier Kochsalz, $NaCl$).
 
-**Vollständige Ionengleichung:**
-$$H^+(aq) + Cl^-(aq) + Na^+(aq) + OH^-(aq) \rightarrow Na^+(aq) + Cl^-(aq) + H_2O(l)$$
-
-**Netto-Ionengleichung:**
-Streichen wir die Zuschauer-Ionen ($Na^+, Cl^-$), bleibt die Essenz jeder Neutralisation einer starken Säure mit einer starken Base:
-$$H^+(aq) + OH^-(aq) \rightarrow H_2O(l)$$
-*(Anmerkung: $H^+$ wird oft vereinfachend für $H_3O^+$ geschrieben)*
-
-Die Lösung ist am Ende weder sauer noch basisch (pH-neutral), vorausgesetzt, die Mengenverhältnisse waren stöchiometrisch exakt.
-[cite_start][cite: 37-39, 514-539]
+Verkürzte Ionengleichung (für alle starken Säuren/Basen gleich):
+$$H_3O^+(aq) + OH^-(aq) \rightarrow 2 H_2O(l)$$
 
 ---
 
-### 3.10 Gasbildende Reaktionen
+### ✅ Selbsttest: Kapitel 6
 
-Eine spezielle Unterklasse von Reaktionen (oft Säure-Base-Reaktionen im weiteren Sinne) führt zur spontanen Bildung eines Gases. Dies ist, ähnlich wie die Bildung von Wasser oder eines Niederschlags, eine starke treibende Kraft für den Ablauf der Reaktion, da das Gas aus dem System entweicht.
+**Frage 6.1** (Wissen)
+Welche der folgenden Säuren ist eine **schwache** Säure?
+- A) $HCl$
+- B) $HNO_3$
+- C) $CH_3CO_2H$ (Essigsäure) ✓
+- D) $H_2SO_4$
 
-#### 3.10.1 Carbonate und Hydrogencarbonate
+> **Erklärung:** Essigsäure dissoziiert nicht vollständig und ist daher schwach. Die anderen sind starke Mineralsäuren.
 
-Wenn Carbonate (z.B. Kalkstein, $CaCO_3$) mit Säure in Kontakt kommen, entsteht Gas. Dies ist der klassische "Vulkanausbruch" im Schulexperiment oder das Sprudeln einer Alka-Seltzer-Tablette.
+**Frage 6.2** (Konzept)
+Was ist das typische Reaktionsprodukt einer Neutralisation (neben Wasser)?
+- A) Ein Gas
+- B) Ein Salz ✓
+- C) Eine Säure
+- D) Ein Metall
 
-**Reaktionsmechanismus:**
-1. **Austausch:** Die Säure ($H^+$) reagiert mit dem Carbonat ($CO_3^{2-}$) zu Kohlensäure ($H_2CO_3$).
-2. **Zersetzung:** Kohlensäure ist bei Raumtemperatur instabil und zerfällt sofort in Wasser und Kohlendioxid.
-
-Gesamtgleichung am Beispiel von Calciumcarbonat und Schwefelsäure:
-$$CaCO_3(s) + H_2SO_4(aq) \rightarrow CaSO_4(s) + H_2CO_3(aq)$$
-$$\hookrightarrow H_2CO_3(aq) \rightarrow H_2O(l) + CO_2(g)$$
-**Netto:**
-$$CaCO_3(s) + H_2SO_4(aq) \rightarrow CaSO_4(s) + H_2O(l) + CO_2(g)$$
-[cite_start][cite: 554-556]
-
-Dieser Reaktionstyp wird in Antazida (Magenmedikamenten) genutzt, um überschüssige Magensäure unter Aufstoßen ($CO_2$) zu neutralisieren.
-
-#### 3.10.2 Weitere gasbildende Reaktionen (Übersicht)
-
-Neben $CO_2$ können auch andere Gase entstehen, die oft giftig sind oder streng riechen.
-
-| Edukte                    | Gasprodukt                   | Beispielreaktion                                                             |
-| :------------------------ | :--------------------------- | :--------------------------------------------------------------------------- |
-| **Metall-Sulfid + Säure** | Schwefelwasserstoff ($H_2S$) | $Na_2S + 2HCl \rightarrow 2NaCl + H_2S(g)$ <br> *(Geruch nach faulen Eiern)* |
-| **Metall-Sulfit + Säure** | Schwefeldioxid ($SO_2$)      | $Na_2SO_3 + 2HCl \rightarrow 2NaCl + H_2O + SO_2(g)$                         |
-| **Ammoniumsalz + Base**   | Ammoniak ($NH_3$)            | $NH_4Cl + NaOH \rightarrow NaCl + H_2O + NH_3(g)$ <br> *(Stechender Geruch)* |
-[cite_start][cite: 40-42, 559-566]
+> **Erklärung:** Säure + Base $\rightarrow$ Salz + Wasser.
 
 ---
 
-### 3.11 Das Wesen der Redox-Reaktion
-
-Während bei Fällungs- und Säure-Base-Reaktionen oft Ionen lediglich ihre Partner tauschen, findet bei Redox-Reaktionen eine fundamentale Veränderung der atomaren Elektronenhülle statt.
-
-#### 3.11.1 Definition durch Elektronenübertragung
-
-Eine Redox-Reaktion ist definiert als ein Prozess, bei dem **Elektronen ($e^-$) von einem Stoff auf einen anderen übertragen werden**. Da Elektronen nicht einfach verschwinden können, treten Oxidation und Reduktion immer als gekoppeltes Paar auf:
-
-1. **Oxidation:** Der **Verlust** von Elektronen.
-    * Ein Stoff gibt Elektronen ab.
-    * Die Oxidationszahl dieses Stoffes **steigt** (wird positiver).
-2. **Reduktion:** Die **Aufnahme** von Elektronen.
-    * Ein Stoff nimmt Elektronen auf.
-    * Die Oxidationszahl dieses Stoffes **sinkt** (wird negativer / "reduziert").
-
-Ein klassisches Beispiel ist die Reaktion von Magnesium mit Sauerstoff:
-$$2Mg(s) + O_2(g) \rightarrow 2MgO(s)$$
-Hier gibt das Magnesium Elektronen an den Sauerstoff ab. Magnesium wird oxidiert, Sauerstoff wird reduziert.
-[cite_start][cite: 45, 646-651, 725-727]
+> 📺 **Video-Empfehlung:** "Säuren und Basen Definitionen"
+> *Suche auf YouTube nach:* **"Brönsted Säuren Basen simpleclub"**
 
 ---
 
-### 3.12 Das Werkzeug der Chemiker: Oxidationszahlen
+## Kapitel 7: Gasentwickelnde Reaktionen
 
-Um nachzuverfolgen, wo die Elektronen hingehen, weisen Chemiker jedem Atom in einer Verbindung eine sogenannte **Oxidationszahl** (oder Oxidationsstufe) zu. Dies ist eine Buchhaltungsmethode – die Ladung, die ein Atom hätte, wenn die Elektronen in einer Bindung vollständig dem elektronegativeren Partner zugeordnet würden.
+Einige Reaktionen erzeugen Gase als Produkte. Besonders wichtig ist die Reaktion von **Carbonaten** mit Säuren.
 
-#### 3.12.1 Die 5 Regeln zur Bestimmung
+Reaktionsschema:
+$$\text{Metallcarbonat} + \text{Säure} \rightarrow \text{Salz} + CO_2(g) + H_2O(l)$$
 
-Die folgenden Regeln müssen hierarchisch angewendet werden:
+**Beispiel:** Calciumcarbonat (Kalkstein) und Säure
+$$CaCO_3(s) + 2 H^+(aq) \rightarrow Ca^{2+}(aq) + H_2CO_3(aq)$$
+Da Kohlensäure ($H_2CO_3$) instabil ist, zerfällt sie sofort:
+$$H_2CO_3(aq) \rightarrow H_2O(l) + CO_2(g)$$
 
-1. **Elemente:** Jedes Atom in seiner elementaren Form hat die Oxidationszahl **0**.
-    * Beispiele: $Zn$, $O_2$, $I_2$, $S_8$ $\rightarrow$ alle 0.
-2. **Einatomige Ionen:** Bei einfachen Ionen entspricht die Oxidationszahl der Ionenladung.
-    * $K^+$ hat +1, $Mg^{2+}$ hat +2, $Cl^-$ hat -1.
-    [cite_start][cite: 659, 661-662]
-3. **Sauerstoff:** In Verbindungen hat Sauerstoff fast immer die Zahl **-2**.
-    * *Ausnahme:* In Peroxiden (wie $H_2O_2$) ist es -1.
-    [cite_start][cite: 665-666]
-4. **Wasserstoff:** In Verbindungen mit Nichtmetallen hat Wasserstoff die Zahl **+1**.
-    * *Ausnahme:* In Metallhydriden (z.B. $NaH$) ist es -1.
-    [cite_start][cite: 667-668]
-5. **Summenregel:**
-    * In einem **neutralen Molekül** muss die Summe aller Oxidationszahlen **0** ergeben.
-    * In einem **Polyatomaren Ion** (z.B. $SO_4^{2-}$) muss die Summe der Ladung des Ions entsprechen.
-    [cite_start][cite: 669-670]
-
-**Übungsbeispiel aus den Unterlagen:** Bestimmung von P in Phosphorsäure ($H_3PO_4$).
-* Wir wissen: $H = +1$ (3 Stück), $O = -2$ (4 Stück).
-* Gleichung: $3 \cdot (+1) + P + 4 \cdot (-2) = 0$
-* $3 + P - 8 = 0 \Rightarrow P - 5 = 0 \Rightarrow \mathbf{P = +5}$.
-[cite_start][cite: 51-53]
+Diese Reaktion wird z.B. bei Antazida-Tabletten genutzt (Zitronensäure + $NaHCO_3$), die im Wasser sprudeln.
 
 ---
 
-### 3.13 Analyse einer Redox-Reaktion
+### ✅ Selbsttest: Kapitel 7
 
-Lassen Sie uns die Korrosion von Aluminium durch Kupferionen analysieren. Dies ist ein Schlüsselexperiment, um die Begriffe "Oxidationsmittel" und "Reduktionsmittel" zu verstehen.
+**Frage 7.1** (Anwendung)
+Welches Gas entsteht, wenn man Essig auf Backpulver ($NaHCO_3$) tropft?
+- A) Wasserstoff ($H_2$)
+- B) Sauerstoff ($O_2$)
+- C) Kohlendioxid ($CO_2$) ✓
+- D) Stickstoff ($N_2$)
 
-**Gesamtgleichung:**
-$$2Al(s) + 3Cu^{2+}(aq) \rightarrow 2Al^{3+}(aq) + 3Cu(s)$$
-
-Wir zerlegen dies in zwei **Halbreaktionen**:
-
-1. **Oxidations-Halbreaktion (Elektronenabgabe):**
-    $$Al(s) \rightarrow Al^{3+}(aq) + 3e^-$$
-    * Die Oxidationszahl von Aluminium steigt von 0 auf +3.
-    * **Aluminium wird oxidiert.**
-    * Da Aluminium dem Kupfer Elektronen *gibt* und es damit zur Reduktion zwingt, ist Aluminium das **Reduktionsmittel**.
-    [cite_start][cite: 691-696]
-
-2. **Reduktions-Halbreaktion (Elektronenaufnahme):**
-    $$Cu^{2+}(aq) + 2e^- \rightarrow Cu(s)$$
-    * Die Oxidationszahl von Kupfer sinkt von +2 auf 0.
-    * **Kupfer wird reduziert.**
-    * Da das Kupfer-Ion Elektronen *akzeptiert* und Aluminium damit zur Oxidation zwingt, ist das Kupfer-Ion das **Oxidationsmittel**.
-    [cite_start][cite: 701-706]
-
-**Wichtige Zusammenfassung:**
-* Das **Reduktionsmittel** selbst wird **oxidiert** (verliert Elektronen).
-* Das **Oxidationsmittel** selbst wird **reduziert** (gewinnt Elektronen).
-[cite_start][cite: 54-56, 728-741]
+> **Erklärung:** Carbonate/Hydrogenkarbonate reagieren mit Säuren unter Freisetzung von $CO_2$.
 
 ---
 
-### 3.14 Die Spannungsreihe: Wer reagiert mit wem?
-
-Nicht alle Redox-Reaktionen laufen freiwillig ab. Ob ein Metall ein anderes aus einer Lösung verdrängen kann ("Opferanode", Korrosion), hängt von seiner Position in der Spannungsreihe (Aktivitätsreihe) ab.
-
-#### 3.14.1 Metallverdrängung
-
-Ein aktiveres Metall (stärkeres Reduktionsmittel) kann Ionen eines weniger aktiven Metalls zu elementarem Metall reduzieren.
-
-* **Reaktion:** $Cu(s) + 2Ag^+(aq) \rightarrow Cu^{2+}(aq) + 2Ag(s)$
-    Kupfer ist reaktiver als Silber. Wenn man einen Kupferdraht in Silbernitratlösung taucht, löst sich das Kupfer auf (wird blau, $Cu^{2+}$) und reines Silber kristallisiert am Draht aus ("Silberbäumchen").
-    [cite_start][cite: 608-635]
-
-#### 3.14.2 Reaktion mit Säuren
-
-Viele Metalle (wie Magnesium, Zink, Eisen) sind aktiv genug, um Wasserstoffionen ($H^+$) aus einer Säure zu Wasserstoffgas ($H_2$) zu reduzieren.
-$$Mg(s) + 2H^+(aq) \rightarrow Mg^{2+}(aq) + H_2(g)$$
-Hierbei fungiert das Metall als Reduktionsmittel und das $H^+$-Ion als Oxidationsmittel.
-[cite_start][cite: 763-764]
-
-Edelmetalle wie **Kupfer, Silber oder Gold** stehen in der Spannungsreihe *unter* Wasserstoff. Sie reagieren **nicht** mit einfachen Säuren wie $HCl$ unter Wasserstoffbildung. Um Kupfer aufzulösen, benötigt man eine Säure, die ein stärkeres Oxidationsmittel als $H^+$ enthält, z.B. Salpetersäure ($HNO_3$), wo das Nitrat-Ion ($NO_3^-$) als Oxidationsmittel wirkt:
-$$Cu(s) + HNO_3 \rightarrow Cu^{2+} + NO_2(g) \dots$$
-[cite_start][cite: 60, 61, 751-752, 766-769]
+> 📺 **Video-Empfehlung:** "Nachweisreaktionen von Carbonaten"
+> *Suche auf YouTube nach:* **"Carbonat Nachweis Säure"**
 
 ---
 
-# TEIL 2: LERNBEGLEITER QUIZ (MODUS C LIGHT - RUNDE 1 & 2)
+## Kapitel 8: Redoxreaktionen
 
-**1. Was bedeuten die Koeffizienten in einer chemischen Gleichung (z.B. die "4" in $4Al$)?**
-A) Sie geben die Anzahl der Protonen an.
-B) Sie geben das molare Verhältnis der reagierenden Teilchen an.
-C) Sie ändern die chemische Identität des Stoffes.
-D) Sie zeigen den Aggregatzustand an.
+### 8.1 Definition
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B) Sie geben das molare Verhältnis an.** (Die Indizes/Subskripte definieren die Identität, die Koeffizienten die Menge.)
-</details>
+**Redoxreaktionen** sind Reaktionen mit **Elektronenübertragung**.
+- **Oxidation:** Abgabe von Elektronen (Oxidationszahl steigt).
+- **Reduktion:** Aufnahme von Elektronen (Oxidationszahl sinkt).
 
-**2. Ist die folgende Gleichung ausgeglichen? $C_3H_8 + 3O_2 \rightarrow 3CO_2 + 4H_2O$**
-A) Ja.
-B) Nein, der Sauerstoff fehlt links.
-C) Nein, der Wasserstoff fehlt rechts.
+Eselsbrücke: "Oxidation ist Verlust, Reduktion ist Gewinn" (bezogen auf Elektronen).
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-❌ **B) Nein.** Rechts sind $3\times2 + 4\times1 = 10$ Sauerstoffatome. Links sind nur $3\times2 = 6$. Es müssten $5O_2$ sein.
-</details>
+### 8.2 Oxidationszahlen
 
-**3. Was bedeutet "dynamisches Gleichgewicht"?**
-A) Die Reaktion ist vollständig gestoppt.
-B) Es gibt mehr Produkte als Edukte.
-C) Hin- und Rückreaktion laufen gleich schnell ab; die Konzentrationen ändern sich makroskopisch nicht mehr.
+Um Redoxreaktionen zu erkennen, nutzt man Oxidationszahlen (fiktive Ladungen).
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **C)** Die Reaktionen laufen auf Teilchenebene weiter ("dynamisch"), heben sich aber gegenseitig auf.
-</details>
+**Regeln:**
+1. Elemente (z.B. $Zn, O_2, I_2$) haben die Zahl **0**.
+2. Einfache Ionen haben die Zahl ihrer Ladung (z.B. $Na^+ = +1, Cl^- = -1$).
+3. Sauerstoff in Verbindungen meist **-2** (Ausnahme Peroxide: -1).
+4. Wasserstoff in Verbindungen meist **+1** (bei Metallhydriden -1).
+5. Die Summe aller Oxidationszahlen in einer neutralen Verbindung ist **0**.
 
-**4. Welche Aussage zu Elektrolyten ist korrekt?**
-A) Zucker ist ein starker Elektrolyt.
-B) Starke Elektrolyte (wie NaCl) dissoziieren vollständig in Ionen und leiten Strom gut.
-C) Schwache Elektrolyte leiten Strom besser als starke Elektrolyte.
+### 8.3 Oxidations- und Reduktionsmittel
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B)** Starke Elektrolyte zerfallen zu ~100% in Ionen. Zucker ist ein Nichtelektrolyt.
-</details>
+- **Reduktionsmittel:** Der Stoff, der oxidiert wird (er gibt e- ab und reduziert damit den Partner). Metalle sind oft Reduktionsmittel.
+- **Oxidationsmittel:** Der Stoff, der reduziert wird (er nimmt e- auf). $O_2$, Halogene oder $HNO_3$ sind typische Oxidationsmittel.
 
-**5. Wahr oder Falsch: Reines Wasser leitet elektrischen Strom sehr gut.**
-A) Wahr
-B) Falsch
+**Beispiel:**
+$$2 Al(s) + 3 Cu^{2+}(aq) \rightarrow 2 Al^{3+}(aq) + 3 Cu(s)$$
+- $Al$ wird zu $Al^{3+}$: Oxidationszahl 0 $\rightarrow$ +3. (Oxidation, $Al$ ist Reduktionsmittel).
+- $Cu^{2+}$ wird zu $Cu$: Oxidationszahl +2 $\rightarrow$ 0. (Reduktion, $Cu^{2+}$ ist Oxidationsmittel).
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-❌ **B) Falsch.** Reines Wasser enthält kaum Ionen. Erst gelöste Salze (Elektrolyte) machen es leitfähig.
-</details>
+---
 
-**6. Basierend auf den Regeln: Was passiert, wenn man $NaNO_3$ (Natriumnitrat) in Wasser gibt?**
-A) Es bildet sich ein Niederschlag.
-B) Es löst sich vollständig auf.
+### ✅ Selbsttest: Kapitel 8
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B)** Es löst sich. Regel: Alle Nitrate und alle Natriumsalze sind löslich.
-</details>
+**Frage 8.1** (Anwendung)
+Welche Oxidationszahl hat Mangan im Permanganat-Ion ($MnO_4^-$)?
+- A) +2
+- B) +4
+- C) +7 ✓
+- D) -1
 
-**7. Welches dieser Salze ist UNLÖSLICH (bildet einen Niederschlag)?**
-A) $KCl$ (Kaliumchlorid)
-B) $CaCO_3$ (Calciumcarbonat / Kalk)
-C) $Na_2SO_4$ (Natriumsulfat)
+> **Erklärung:** O hat -2. Summe: $x + 4(-2) = -1$ (Ladung des Ions). $x - 8 = -1 \Rightarrow x = +7$.
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B) Calciumcarbonat.** Carbonate sind meist unlöslich (außer Alkali-Carbonate).
-</details>
+**Frage 8.2** (Verständnis)
+Ein Stoff, der Elektronen aufnimmt, wird selbst...
+- A) oxidiert.
+- B) reduziert. ✓
+- C) zum Niederschlag.
+- D) hydrolysiert.
 
-**8. Welche dieser Säuren gehört zu den "starken Säuren"?**
-A) Essigsäure ($CH_3COOH$)
-B) Kohlensäure ($H_2CO_3$)
-C) Salzsäure ($HCl$)
+> **Erklärung:** Elektronenaufnahme = Reduktion (Ladung/Oxidationszahl wird reduziert).
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **C) Salzsäure.** Sie dissoziiert vollständig. A und B sind schwache Säuren.
-</details>
+---
 
-**9. Was sind die Produkte einer Neutralisation von $HCl$ mit $NaOH$?**
-A) Salz und Wasserstoffgas
-B) Salz und Wasser
-C) Zwei neue Säuren
+> 📺 **Video-Empfehlung:** "Oxidationszahlen bestimmen"
+> *Suche auf YouTube nach:* **"Oxidationszahlen bestimmen Regeln simpleclub"**
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B) Salz ($NaCl$) und Wasser ($H_2O$).**
-</details>
+---
 
-**10. Wenn ein Atom Elektronen VERLIERT, wird es...**
-A) oxidiert.
-B) reduziert.
-C) neutralisiert.
+# 📝 Prüfungsaufgaben (Universitätsniveau)
+
+<!-- Diese Aufgaben sind für die Modul-Prüfung gedacht -->
+
+## Hinweise für Studierende
+
+- Bearbeitungszeit: ca. 90 Minuten
+- Hilfsmittel: Periodensystem
+- Alle Reaktionsgleichungen sind vollständig auszugleichen.
+
+---
+
+### Aufgabe 1 (6 Punkte) - Stöchiometrie & Ausgleichen
+
+Gleichen Sie die folgenden Reaktionsgleichungen aus. Bestimmen Sie dabei die korrekten stöchiometrischen Koeffizienten.
+
+a) Die Verbrennung von Pentan:
+$$... C_5H_{12} + ... O_2 \rightarrow ... CO_2 + ... H_2O$$
+
+b) Die Reaktion von Borhydrid mit Sauerstoff:
+$$... B_4H_{10}(g) + ... O_2(g) \rightarrow ... B_2O_3(g) + ... H_2O(g)$$
+
+c) Die Neutralisation von Phosphorsäure mit Calciumhydroxid:
+$$... H_3PO_4 + ... Ca(OH)_2 \rightarrow ... Ca_3(PO_4)_2 + ... H_2O$$
 
 <details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **A) oxidiert.** (Eselsbrücke: **O**xidation = **O**hne Elektronen / Elektronenabgabe).
-</details>
+<summary>Musterlösung anzeigen</summary>
 
-**11. Bestimme die Oxidationszahl von Schwefel (S) im Molekül $SO_3$.**
-*(Hinweis: O hat meist -2)*
-A) +4
-B) +6
-C) 0
+**a)** $1 C_5H_{12} + 8 O_2 \rightarrow 5 CO_2 + 6 H_2O$
+*Weg: 5 C links $\rightarrow$ 5 $CO_2$. 12 H links $\rightarrow$ 6 $H_2O$. O-Bilanz rechts: $10+6=16$. Also 8 $O_2$.*
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B) +6.** Rechnung: $S + 3\times(-2) = 0 \Rightarrow S - 6 = 0 \Rightarrow S = +6$.
-</details>
+**b)** $2 B_4H_{10} + 11 O_2 \rightarrow 4 B_2O_3 + 10 H_2O$
+*Weg: Zuerst B und H ausgleichen, dann O. O-Summe rechts ist ungerade (11), daher alles verdoppeln.*
 
-**12. Was besagt das Gesetz der Erhaltung der Masse von Lavoisier?**
-A) Masse geht bei Reaktionen in Energie über.
-B) Die Masse der Edukte ist gleich der Masse der Produkte; Atome werden weder erzeugt noch vernichtet.
-C) Bei Gasreaktionen nimmt die Masse immer ab.
+**c)** $2 H_3PO_4 + 3 Ca(OH)_2 \rightarrow 1 Ca_3(PO_4)_2 + 6 H_2O$
+*Weg: 3 Ca benötigt $\rightarrow$ 3 $Ca(OH)_2$. 2 P benötigt $\rightarrow$ 2 $H_3PO_4$. Wasser aus H-Bilanz: $6H + 6OH = 6 H_2O$.*
 
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **B)** Materie wird bei chemischen Reaktionen nur umgruppiert, nicht zerstört. [cite: 57-65]
-</details>
-
-**13. In der Reaktion $4Al(s) + 3O_2(g) \rightarrow 2Al_2O_3(s)$ bedeuten die Aggregatzustände (s) und (g):**
-A) (s) = sauer, (g) = gasförmig
-B) (s) = solid (fest), (g) = gasförmig
-C) (s) = soluble (löslich), (g) = gelartig
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **B)** (s) steht für solid (fest), (g) für gas (gasförmig). [cite: 19-20]
-</details>
-
-**14. Was passiert mit einem chemischen Gleichgewicht, wenn man ein Edukt entfernt?**
-*(Denkaufgabe basierend auf dem Prinzip von Le Chatelier / Dynamik)*
-A) Die Reaktion stoppt sofort.
-B) Das Gleichgewicht verschiebt sich nach links (Richtung Edukte), um den Verlust auszugleichen.
-C) Das Gleichgewicht verschiebt sich nach rechts (Richtung Produkte).
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **B)** Das System versucht, dem Zwang auszuweichen und bildet mehr Edukte nach (Rückreaktion wird begünstigt). [cite: 133-134]
-</details>
-
-**15. Welches Symbol zeigt in einer Reaktionsgleichung an, dass es sich um eine reversible Reaktion (Gleichgewicht) handelt?**
-A) Ein einfacher Pfeil nach rechts ($\rightarrow$)
-B) Ein Doppelpfeil ($\rightleftharpoons$)
-C) Ein Gleichheitszeichen ($=$)
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B)** Der Doppelpfeil symbolisiert Hin- und Rückreaktion.
-</details>
-
-**16. Warum leitet eine Kochsalzlösung ($NaCl$ in Wasser) Strom, festes Kochsalz aber nicht?**
-A) Im Feststoff bewegen sich die Elektronen schneller.
-B) In der Lösung sind die Ionen beweglich und können Ladung transportieren; im Gitter sind sie fixiert.
-C) Wasser selbst leitet den Strom, das Salz stört nur nicht.
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **B)** Leitfähigkeit in Elektrolyten basiert auf mobilen Ionen. [cite: 177-181]
-</details>
-
-**17. Zu welcher Kategorie gehört reines Ethanol ($C_2H_5OH$)?**
-A) Starker Elektrolyt
-B) Schwacher Elektrolyt
-C) Nichtelektrolyt
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **C)** Ethanol löst sich molekular, bildet aber keine Ionen. [cite_start]Es leitet nicht. [cite: 252-258]
-</details>
-
-**18. Sind Sulfate ($SO_4^{2-}$) grundsätzlich löslich?**
-A) Nein, Sulfate sind nie löslich.
-B) Ja, mit wenigen Ausnahmen wie Barium- oder Bleisulfat.
-C) Ja, aber nur wenn sie erhitzt werden.
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B)** Sulfate sind meist löslich. Wichtige Ausnahmen: $BaSO_4, PbSO_4, CaSO_4$.
-</details>
-
-**19. Was sind "Zuschauer-Ionen" (Spectator Ions)?**
-A) Ionen, die einen farbigen Niederschlag bilden.
-B) Ionen, die an der Reaktion nicht teilnehmen und unverändert in der Lösung bleiben.
-C) Ionen, die als Katalysator wirken.
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **B)** Sie stehen links und rechts unverändert in der Gleichung und werden in der Netto-Ionengleichung weggelassen. [cite: 331-332]
-</details>
-
-**20. Welches Gas entsteht typischerweise, wenn ein Metallcarbonat mit einer Säure reagiert?**
-A) Wasserstoff ($H_2$)
-B) Kohlendioxid ($CO_2$)
-C) Sauerstoff ($O_2$)
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **B)** Carbonat + Säure $\rightarrow$ Salz + Wasser + **$CO_2$**. [cite: 544-547, 560]
-</details>
-
-**21. Ammoniak ($NH_3$) ist eine Base, obwohl es keine OH-Gruppe hat. Warum?**
-A) Es ist ein Druckfehler im Lehrbuch.
-B) Es spaltet in Wasser $H^+$ ab.
-C) Es nimmt ein Proton ($H^+$) vom Wasser auf, wodurch $OH^-$ frei wird (Brønsted-Base).
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-[cite_start]✅ **C)** $NH_3 + H_2O \rightleftharpoons NH_4^+ + OH^-$. [cite: 442-452]
-</details>
-
-**22. In der Reaktion $2Na + Cl_2 \rightarrow 2NaCl$: Welche Substanz ist das REDUKTIONSMITTEL?**
-A) Chlor ($Cl_2$), weil es Elektronen aufnimmt.
-B) Natrium ($Na$), weil es oxidiert wird und Elektronen abgibt.
-C) Das Produkt $NaCl$.
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **B) Natrium.** Wer Elektronen liefert (oxidiert wird), ist das Reduktionsmittel.
-</details>
-
-**23. Edelmetalle wie Gold oder Platin reagieren nicht mit Salzsäure. Warum?**
-A) Sie stehen in der Spannungsreihe unterhalb von Wasserstoff und können $H^+$ nicht reduzieren.
-B) Sie bilden sofort eine Oxidschicht.
-C) Säuren reagieren generell nur mit Nichtmetallen.
-
-<details>
-<summary>👀 <i>Lösung anzeigen</i></summary>
-✅ **A)** Sie sind "edler" als Wasserstoff. [cite_start]Nur unedle Metalle (oberhalb H) reagieren unter Wasserstoffentwicklung. [cite: 763-764]
 </details>
 
 ---
 
-# TEIL 3: KLAUSUR-SIMULATION (MODUS C HARDCORE)
+### Aufgabe 2 (8 Punkte) - Vorhersage von Fällungsreaktionen
 
-### TEIL I: Konzeptionelles Verständnis (Multiple Select)
+Gegeben sind folgende Mischungen wässriger Salzlösungen.
+1. Schreiben Sie die **molekulare Reaktionsgleichung** (mit Aggregatzuständen).
+2. Entscheiden Sie anhand der Löslichkeitsregeln, ob ein Niederschlag (Präzipitat) entsteht. Wenn ja, unterstreichen Sie diesen.
+3. Wenn keine Reaktion stattfindet (kein Niederschlag), schreiben Sie "Keine Reaktion".
 
-*Hinweis: Es können 1 bis alle Antworten richtig sein.*
+a) $Na_2CO_3(aq) + Mg(NO_3)_2(aq) \rightarrow ...$
+b) $NH_4Cl(aq) + ZnSO_4(aq) \rightarrow ...$
+c) $Pb(NO_3)_2(aq) + Na_2SO_4(aq) \rightarrow ...$
 
-**Frage 1: Dynamisches Gleichgewicht & Reversibilität**
-Betrachten Sie die Haber-Bosch-Synthese: $N_2(g) + 3H_2(g) \rightleftharpoons 2NH_3(g)$.
-Das System befindet sich im Gleichgewicht. Welche Aussagen sind **korrekt**?
-A) Die Reaktion ist zum Stillstand gekommen; es werden keine $NH_3$-Moleküle mehr gebildet.
-B) Die Konzentration von $N_2$ ist zwangsläufig gleich der Konzentration von $NH_3$.
-C) Die Geschwindigkeit der Hinreaktion ist identisch mit der Geschwindigkeit der Rückreaktion.
-D) Eine Erhöhung der $H_2$-Konzentration würde das System stören und zu einer (vorübergehenden) Netto-Bildung von $NH_3$ führen.
-E) Die Gesamtmasse im geschlossenen System bleibt konstant (Massenerhaltung).
+<details>
+<summary>Musterlösung anzeigen</summary>
 
-**Frage 2: Elektrolyte & Lösungsverhalten**
-Sie haben drei Bechergläser mit wässrigen Lösungen: (I) $C_{12}H_{22}O_{11}$ (Zucker), (II) $CH_3COOH$ (Essigsäure), (III) $K_2SO_4$ (Kaliumsulfat).
-Welche Beobachtungen/Aussagen treffen zu?
-A) Lösung (III) leitet den Strom am besten, da Kaliumsulfat vollständig in 3 Ionen pro Formeleinheit dissoziiert.
-B) In Lösung (II) liegen fast ausschließlich Ionen ($CH_3COO^-$ und $H^+$) vor.
-C) Lösung (I) enthält hydratisierte Moleküle, aber keine Ionen.
-D) Mischt man Lösung (III) mit einer $BaCl_2$-Lösung, entsteht ein weißer Niederschlag.
-E) Essigsäure ist ein Nichtelektrolyt.
+**a) Reaktion:**
+$$Na_2CO_3(aq) + Mg(NO_3)_2(aq) \rightarrow \underline{MgCO_3(s)} + 2 NaNO_3(aq)$$
+*Begründung:* Carbonate sind meist schwerlöslich (außer Alkali). Nitrate sind löslich. Magnesiumcarbonat fällt aus.
 
-**Frage 3: Redox-Identifikation**
-Welche der folgenden Reaktionsgleichungen stellen **Redox-Reaktionen** dar?
-A) $CaCO_3(s) + 2HCl(aq) \rightarrow CaCl_2(aq) + CO_2(g) + H_2O(l)$
-B) $2Al(s) + 3Br_2(l) \rightarrow 2Al_2Br_6(s)$
-C) $Ag^+(aq) + Cl^-(aq) \rightarrow AgCl(s)$
-D) $CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(g)$
-E) $Cu(s) + 2AgNO_3(aq) \rightarrow Cu(NO_3)_2(aq) + 2Ag(s)$
+**b) Keine Reaktion:**
+Mögliche Produkte wären $(NH_4)_2SO_4$ und $ZnCl_2$. Beide sind laut Regeln gut wasserlöslich. Es findet keine Fällung statt.
 
-### TEIL II: Angewandte Stöchiometrie (Rechenaufgaben)
+**c) Reaktion:**
+$$Pb(NO_3)_2(aq) + Na_2SO_4(aq) \rightarrow \underline{PbSO_4(s)} + 2 NaNO_3(aq)$$
+*Begründung:* Bleisulfat ist schwerlöslich.
 
-**Aufgabe 4: Der limitierende Reaktant**
-Die Thermit-Reaktion wird genutzt, um flüssiges Eisen zu erzeugen:
-$$Fe_2O_3(s) + 2Al(s) \rightarrow 2Fe(l) + Al_2O_3(s)$$
-Sie mischen **10,0 Mol $Fe_2O_3$** mit **15,0 Mol $Al$**.
-
-4.1. Welcher Stoff ist der limitierende Reaktant (begrenzender Edukt)?
-4.2. Wie viel Mol Eisen ($Fe$) können theoretisch maximal entstehen?
-4.3. Wie viel Mol des Überschuss-Reaktanten bleiben übrig?
-
-### TEIL III: Analyse & Transfer (Netto-Ionen & Oxidationszahlen)
-
-**Aufgabe 5: Fällungsreaktionen**
-Sie mischen eine wässrige Lösung von **Eisen(III)-chlorid ($FeCl_3$)** mit einer Lösung von **Natriumhydroxid ($NaOH$)**.
-5.1. Sagen Sie anhand der Löslichkeitsregeln voraus, ob ein Niederschlag entsteht. Wenn ja, welcher?
-5.2. Schreiben Sie die **ausgeglichene Netto-Ionengleichung** für diese Reaktion.
-
-**Aufgabe 6: Oxidationszahlen-Bestimmung**
-Bestimmen Sie die Oxidationszahl des **fettgedruckten** Elements in den folgenden Verbindungen:
-A) K**Mn**O₄
-B) **S**O₃²⁻ (Sulfit-Ion)
-C) **O**₂ (Sauerstoffgas)
-D) Na**H** (Natriumhydrid)
-
-### TEIL IV: Die "Killer"-Frage (Synthese)
-
-**Aufgabe 7: Komplexe Reaktionsanalyse**
-Betrachten Sie die Reaktion von Kupfer mit verdünnter Salpetersäure:
-$$3Cu(s) + 8HNO_3(aq) \rightarrow 3Cu(NO_3)_2(aq) + 2NO(g) + 4H_2O(l)$$
-
-A) Identifizieren Sie das Oxidationsmittel und das Reduktionsmittel.
-B) Welche Spezies wird reduziert?
-C) Begründen Sie, warum Kupfer mit $HCl$ (Salzsäure) keine vergleichbare Reaktion (unter $H_2$-Bildung) zeigt, basierend auf der Spannungsreihe.
+</details>
 
 ---
 
-### 🔑 LÖSUNGSSCHLÜSSEL & ERKLÄRUNGEN (MODUS HARDCORE)
+### Aufgabe 3 (10 Punkte) - Ionenreaktionen & Zuschauerionen
 
-**Zu Frage 1 (Gleichgewicht):**
-* ✅ **C, E** sind korrekt.
-* *Falsch:* A (Reaktion läuft mikroskopisch weiter), B (Konzentrationen sind konstant, aber selten gleich), D (Mehr Edukt verschiebt Gleichgewicht nach rechts -> Verbrauch von Edukt, Bildung von Produkt).
+Betrachten Sie die Reaktion zwischen Eisen(III)-chlorid und Natriumhydroxid.
 
-**Zu Frage 2 (Elektrolyte):**
-* ✅ **A, C, D** sind korrekt.
-* *Erklärung A:* $K_2SO_4 \rightarrow 2K^+ + SO_4^{2-}$ (3 Ionen, starker Elektrolyt).
-* *Erklärung D:* Sulfate sind löslich, *außer* Ba, Pb, Ca, Sr. Daher fällt $BaSO_4$ aus.
-* *Falsch:* B (Essigsäure ist schwach, liegt meist als Molekül vor), E (Essigsäure ist ein schwacher Elektrolyt, kein Nichtelektrolyt).
+a) Formulieren Sie die ausgeglichene Stoffgleichung. (2 P)
+b) Formulieren Sie die vollständige Ionengleichung. (3 P)
+c) Benennen Sie die Zuschauer-Ionen (Spectator Ions). (2 P)
+d) Formulieren Sie die verkürzte Ionengleichung (Net Ionic Equation). (3 P)
 
-**Zu Frage 3 (Redox):**
-* ✅ **B, D, E** sind korrekt.
-* *Analyse:* A ist Säure-Base/Gasbildung (Ox-Zahlen ändern sich nicht). C ist Fällung. B ist Synthese (Al 0 -> +3), D ist Verbrennung (C -4 -> +4), E ist Metallverdrängung.
+<details>
+<summary>Musterlösung anzeigen</summary>
 
-**Zu Aufgabe 4 (Thermit):**
-* 4.1. **Aluminium (Al)** ist limitierend.
-    * *Rechnung:* Man braucht 2 Mol Al für 1 Mol $Fe_2O_3$. Für 10 Mol $Fe_2O_3$ bräuchte man 20 Mol Al. Man hat nur 15. Also bestimmt Al das Ende.
-* 4.2. **15,0 Mol Fe**.
-    * *Rechnung:* Verhältnis Al zu Fe ist 2:2 (also 1:1). 15 Mol Al $\rightarrow$ 15 Mol Fe.
-* 4.3. **2,5 Mol $Fe_2O_3$**.
-    * *Rechnung:* 15 Mol Al verbrauchen 7,5 Mol $Fe_2O_3$ (Verhältnis 2:1). Start 10,0 - Verbrauch 7,5 = 2,5 Rest.
+**a) Stoffgleichung:**
+$$FeCl_3(aq) + 3 NaOH(aq) \rightarrow Fe(OH)_3(s) + 3 NaCl(aq)$$
+*(Hinweis: Eisenhydroxide sind schwerlöslich)*
 
-**Zu Aufgabe 5 (Netto-Ionen):**
-* 5.1. **Ja, Eisen(III)-hydroxid ($Fe(OH)_3$)**. Regel: Hydroxide sind unlöslich (außer Alkali/Ba).
-* 5.2. **$Fe^{3+}(aq) + 3OH^-(aq) \rightarrow Fe(OH)_3(s)$**
+**b) Vollständige Ionengleichung:**
+$$Fe^{3+}(aq) + 3 Cl^-(aq) + 3 Na^+(aq) + 3 OH^-(aq) \rightarrow Fe(OH)_3(s) + 3 Na^+(aq) + 3 Cl^-(aq)$$
 
-**Zu Aufgabe 6 (Ox-Zahlen):**
-* A) Mn = **+7** ($K=+1, O=-8$, Summe muss 0 sein).
-* B) S = **+4** ($O=-6$, Summe muss -2 sein).
-* C) O = **0** (Element).
-* D) H = **-1** (Ausnahme: Hydride mit Metallen).
+**c) Zuschauer-Ionen:**
+$Na^+(aq)$ und $Cl^-(aq)$ (tauchen unverändert auf beiden Seiten auf).
 
-**Zu Aufgabe 7 (Synthese):**
-* A) **Reduktionsmittel:** Cu (wird oxidiert 0 -> +2). **Oxidationsmittel:** $HNO_3$ (N wird reduziert +5 -> +2).
-* B) **$HNO_3$ (spezifisch das Stickstoff-Atom)** wird reduziert.
-* C) Kupfer steht in der Spannungsreihe **unter (edler als)** Wasserstoff. Es kann $H^+$ nicht zu $H_2$ reduzieren. Salpetersäure wirkt hier oxidierend durch das Anion ($NO_3^-$), nicht durch das Proton.
+**d) Verkürzte Ionengleichung:**
+$$Fe^{3+}(aq) + 3 OH^-(aq) \rightarrow Fe(OH)_3(s)$$
+
+</details>
+
+---
+
+### Aufgabe 4 (8 Punkte) - Konzeptverständnis Säuren/Basen
+
+a) Ordnen Sie die folgenden Verbindungen in die Kategorien "Starke Säure", "Schwache Säure", "Starke Base", "Schwache Base" ein:
+$H_2SO_4$, $NH_3$, $KOH$, $HF$. (4 P)
+
+b) Erklären Sie den Unterschied zwischen einer Arrhenius-Säure und einer Brønsted-Säure am Beispiel von $NH_4^+$. (4 P)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Einordnung:**
+- $H_2SO_4$: Starke Säure
+- $NH_3$: Schwache Base
+- $KOH$: Starke Base
+- $HF$: Schwache Säure
+
+**b) Definitionen:**
+- **Arrhenius:** Definition erfordert Bildung von $H^+$ in Wasser. $NH_4^+$ ist keine typische Arrhenius-Säure im strengen Sinne, erhöht aber die $H^+$ Konzentration.
+- **Brønsted:** Definition ist Protonen-Donator. $NH_4^+$ kann ein Proton abgeben ($NH_4^+ \rightarrow NH_3 + H^+$) und ist damit ganz klar eine Brønsted-Säure. Die Brønsted-Definition ist breiter und besser geeignet.
+
+</details>
+
+---
+
+### Aufgabe 5 (12 Punkte) - Redoxreaktionen Analyse
+
+Gegeben ist folgende Reaktion:
+$$3 Cu(s) + 8 HNO_3(aq) \rightarrow 3 Cu(NO_3)_2(aq) + 2 NO(g) + 4 H_2O(l)$$
+
+a) Bestimmen Sie die Oxidationszahlen aller beteiligten Atome in Edukten und Produkten. (4 P)
+b) Welches Element wird oxidiert, welches reduziert? (4 P)
+c) Benennen Sie das Oxidationsmittel und das Reduktionsmittel. (4 P)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Oxidationszahlen:**
+- Links: $Cu = 0$, $H = +1$, $N (in HNO_3) = +5$, $O = -2$.
+- Rechts: $Cu (in Cu(NO_3)_2) = +2$, $N (im Nitrat) = +5$, $N (in NO) = +2$, $O = -2$, $H = +1$.
+
+**b) Änderung:**
+- **Oxidiert:** Kupfer ($Cu$). Von 0 auf +2.
+- **Reduziert:** Stickstoff ($N$). Ein Teil des Stickstoffs geht von +5 (in $HNO_3$) auf +2 (in $NO$).
+
+**c) Mittel:**
+- **Reduktionsmittel:** $Cu$ (gibt Elektronen ab).
+- **Oxidationsmittel:** $HNO_3$ (nimmt Elektronen auf, spezifisch das N-Atom darin).
+
+</details>
+
+---
+
+### Aufgabe 6 (6 Punkte) - Gasentwicklung
+
+Sie geben Salzsäure ($HCl$) auf festes Magnesiumcarbonat ($MgCO_3$).
+
+a) Formulieren Sie die Reaktionsgleichung.
+b) Was beobachten Sie optisch im Reagenzglas?
+c) Warum sprudeln Antazida-Tabletten (Mittel gegen Sodbrennen)?
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Gleichung:**
+$$MgCO_3(s) + 2 HCl(aq) \rightarrow MgCl_2(aq) + CO_2(g) + H_2O(l)$$
+
+**b) Beobachtung:**
+Der Feststoff löst sich auf und es bilden sich Gasblasen (Sprudeln).
+
+**c) Transfer:**
+Antazida enthalten oft Carbonate oder Hydrogencarbonate (z.B. $NaHCO_3$) und eine feste Säure (z.B. Zitronensäure). Im Wasser lösen sich diese, reagieren miteinander und setzen $CO_2$ frei, was das Sprudeln verursacht.
+
+</details>
+
+---
+
+### Aufgabe 7 (8 Punkte) - Klassifizierung von Stoffen
+
+Klassifizieren Sie die folgenden Substanzen hinsichtlich ihrer Wasserlöslichkeit (löslich/unlöslich) und ihrer Eigenschaft als Elektrolyt (stark/schwach/nicht) in Wasser.
+
+1. Silbernitrat ($AgNO_3$)
+2. Ethanol ($C_2H_5OH$)
+3. Bariumsulfat ($BaSO_4$)
+4. Essigsäure ($CH_3COOH$)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+1. **AgNO3:** Wasserlöslich (Nitrate!), Starker Elektrolyt (Salz).
+2. **Ethanol:** Wasserlöslich, Nichtelektrolyt (molekular).
+3. **BaSO4:** WasserUNlöslich (Ausnahme bei Sulfaten), daher praktisch kein Elektrolyt in der Lösung (obwohl Ionen vorhanden wären, wenn es sich lösen würde).
+4. **Essigsäure:** Wasserlöslich, Schwacher Elektrolyt (schwache Säure).
+
+</details>
+
+---
+
+### Aufgabe 8 (10 Punkte) - Das chemische Gleichgewicht
+
+Die Synthese von Ammoniak verläuft exotherm:
+$$N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g)$$
+
+a) Was bedeutet der Doppelpfeil in dieser Reaktion konkret für die Reaktionsgeschwindigkeit im Gleichgewichtszustand? (3 P)
+b) Handelt es sich um ein statisches oder dynamisches Gleichgewicht? Begründen Sie. (3 P)
+c) Wäre diese Reaktion vollständig, wenn man sie in einem offenen Gefäß durchführt, bei dem $NH_3$ ständig entweicht? Begründen Sie. (4 P)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Bedeutung:**
+Im Gleichgewicht ist die Geschwindigkeit der Hinreaktion ($v_{hin}$) exakt gleich der Geschwindigkeit der Rückreaktion ($v_{rück}$).
+
+**b) Art:**
+Dynamisches Gleichgewicht. Die Reaktion stoppt nicht auf Teilchenebene. $N_2$ und $H_2$ reagieren weiter zu $NH_3$, und $NH_3$ zerfällt weiter, aber mit gleicher Rate.
+
+**c) Offenes System:**
+Wenn $NH_3$ entweicht, wird das Produkt entfernt. Das System versucht gemäß dem Prinzip von Le Chatelier, dem Verlust entgegenzuwirken und bildet neues $NH_3$. Da das Produkt aber nie eine Konzentration aufbauen kann, um die Rückreaktion signifikant zu starten, würde die Reaktion (fast) vollständig ablaufen, bis die Edukte verbraucht sind.
+
+</details>
+
+---
+
+### Aufgabe 9 (8 Punkte) - Multiple Choice (Begründung)
+
+Welche Aussage zu Elektrolyten ist KORREKT? Begründen Sie Ihre Wahl und widerlegen Sie die falschen Aussagen.
+
+- [ ] A) Alle wasserlöslichen Verbindungen sind starke Elektrolyte.
+- [ ] B) Reines Wasser leitet Strom sehr gut.
+- [ ] C) NaCl leitet im festen Zustand Strom.
+- [ ] D) Eine Lösung von Essigsäure enthält sowohl Moleküle als auch Ionen.
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**Korrekt ist: D**
+
+**Begründung:** Essigsäure ist ein schwacher Elektrolyt. Sie dissoziiert unvollständig, daher liegen undissoziierte $CH_3COOH$-Moleküle im Gleichgewicht mit $H^+$ und $CH_3COO^-$ Ionen vor.
+
+**Widerlegung A:** Zucker ist wasserlöslich, aber ein Nichtelektrolyt.
+**Widerlegung B:** Reines Wasser enthält sehr wenige Ionen (Eigendissoziation) und leitet extrem schlecht.
+**Widerlegung C:** Im festen NaCl sind die Ionen im Gitter fixiert und nicht beweglich $\rightarrow$ keine Leitung.
+
+</details>
+
+---
+
+### Aufgabe 10 (8 Punkte) - Berechnung von Atomen
+
+Gegeben ist die Reaktionsgleichung: $2 H_2 + O_2 \rightarrow 2 H_2O$.
+Sie setzen 10 Moleküle Wasserstoff und 10 Moleküle Sauerstoff ein.
+
+a) Welcher Stoff ist der limitierende Faktor? (3 P)
+b) Wie viele Wassermoleküle entstehen maximal? (3 P)
+c) Was bleibt übrig? (2 P)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Limitierender Faktor:**
+Das Verhältnis ist 2:1.
+Für 10 Moleküle $H_2$ bräuchte man 5 Moleküle $O_2$.
+Da 10 Moleküle $O_2$ vorhanden sind, ist **Wasserstoff ($H_2$)** der limitierende Faktor.
+
+**b) Produkt:**
+Aus 2 $H_2$ entstehen 2 $H_2O$. Aus 10 $H_2$ entstehen also **10 Moleküle $H_2O$**.
+
+**c) Rest:**
+Verbraucht wurden 5 $O_2$. Übrig bleiben **5 Moleküle $O_2$**.
+
+</details>
+
+---
+
+### Aufgabe 11 (Quiz-Adaption 1) - Austausch & Produkte (6 Punkte)
+
+Schreiben Sie die chemischen Formeln für folgende Reaktionen und gleichen Sie aus:
+
+a) Aluminium + Brom $\rightarrow$ ... (Synthese)
+b) Natriumphosphat + Calciumchlorid $\rightarrow$ ... (Fällung)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Aluminiumbromid-Synthese:**
+$$2 Al(s) + 3 Br_2(l) \rightarrow 2 Al_2Br_6(s)$$
+*(Hinweis: Im PDF wird $Al_2Br_6$ als Produkt genannt, $AlBr_3$ als empirische Formel wäre auch akzeptabel, wenn nicht anders gelernt)*
+
+**b) Phosphat-Fällung:**
+$$2 Na_3PO_4(aq) + 3 CaCl_2(aq) \rightarrow \underline{Ca_3(PO_4)_2(s)} + 6 NaCl(aq)$$
+Calciumphosphat ist unlöslich.
+
+</details>
+
+---
+
+### Aufgabe 12 (Quiz-Adaption 2) - Formeln benennen (8 Punkte)
+
+Geben Sie die korrekte chemische Formel an und entscheiden Sie, ob die Verbindung in Wasser löslich (L) oder unlöslich (U) ist.
+
+1. Magnesiumfluorid
+2. Eisen(II)-sulfat
+3. Silberchlorid
+4. Kaliumcarbonat
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+1. **Magnesiumfluorid:** $MgF_2$ - **U** (Fluoride oft schwerlöslich, außer Alkali/Ag)
+2. **Eisen(II)-sulfat:** $FeSO_4$ - **L** (Sulfate meist löslich)
+3. **Silberchlorid:** $AgCl$ - **U** (Wichtige Ausnahme bei Chloriden!)
+4. **Kaliumcarbonat:** $K_2CO_3$ - **L** (Alkalicarbonate sind löslich)
+
+</details>
+
+---
+
+### Aufgabe 13 (10 Punkte) - Transfer Korrosion
+
+Korrosion ist ein Redoxprozess. Aluminium korrodiert an der Luft, rostet aber nicht weiter durch, im Gegensatz zu Eisen.
+
+a) Formulieren Sie die Reaktion von Aluminium mit Sauerstoff. (3 P)
+b) Erklären Sie anhand der Oxidationszahlen, warum es eine Redoxreaktion ist. (3 P)
+c) Recherchieren/Erklären Sie kurz, warum diese Oxidschicht schützt (Passivierung). (4 P)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) Reaktion:**
+$$4 Al(s) + 3 O_2(g) \rightarrow 2 Al_2O_3(s)$$
+
+**b) Redox:**
+$Al$ (0) $\rightarrow$ $Al$ (+3) (Oxidation)
+$O$ (0) $\rightarrow$ $O$ (-2) (Reduktion)
+
+**c) Passivierung:**
+Die entstehende Aluminiumoxidschicht ($Al_2O_3$) ist sehr hart, chemisch stabil und undurchlässig für Sauerstoff. Sie haftet fest auf dem Metall und versiegelt es, sodass keine weitere Luft an das darunterliegende Aluminium kommt. Bei Eisen ist der Rost ($Fe_2O_3$) porös und blättert ab.
+
+</details>
+
+---
+
+### Aufgabe 14 (6 Punkte) - Teilchenebene
+
+Stellen Sie sich vor, Sie haben ein Gefäß mit einer wässrigen Lösung von $CuCl_2$ (Kupferchlorid).
+Zeichnen/Beschreiben Sie, welche Teilchen sich in der Lösung befinden und wie sie sich verhalten, wenn man zwei Elektroden eintaucht und Strom anlegt.
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**Teilchen:**
+Es liegen vorwiegend Wassermoleküle ($H_2O$) vor. Dazwischen schwimmen frei bewegliche $Cu^{2+}$-Ionen und $Cl^-$-Ionen. Die Ionen sind von einer Hydrathülle aus Wassermolekülen umgeben.
+
+**Bei Stromfluss:**
+Die positiven Kationen ($Cu^{2+}$) wandern zur Kathode (Minuspol).
+Die negativen Anionen ($Cl^-$) wandern zur Anode (Pluspol).
+Dadurch fließt elektrischer Strom durch die Lösung.
+
+</details>
+
+---
+
+### Aufgabe 15 (8 Punkte) - Komplexaufgabe Säuren
+
+Gegeben ist Salzsäure ($HCl$) und Essigsäure ($CH_3COOH$) gleicher Konzentration (z.B. 1 mol/L).
+
+a) Welche Lösung hat den niedrigeren pH-Wert (ist saurer)? Begründen Sie. (4 P)
+b) Welche Lösung benötigt mehr Natronlauge ($NaOH$) zur vollständigen Neutralisation? Begründen Sie. (4 P)
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+**a) pH-Wert:**
+Die **Salzsäure** hat den niedrigeren pH-Wert.
+Begründung: $HCl$ ist eine starke Säure und dissoziiert vollständig ($100\% \rightarrow H^+$). Essigsäure dissoziiert nur zu ca. 1%, daher ist die $H^+$-Konzentration in der Essigsäure viel geringer.
+
+**b) Neutralisation:**
+Beide benötigen **gleich viel** $NaOH$.
+Begründung: Für die Neutralisation zählt die *Gesamtstoffmenge* an verfügbarer Säure, nicht die aktuelle $H^+$-Konzentration. Während der Titration liefert die Essigsäure durch Verschiebung des Gleichgewichts immer weitere $H^+$-Ionen nach, bis alle Moleküle neutralisiert sind.
+$HCl + NaOH \rightarrow NaCl + H_2O$
+$CH_3COOH + NaOH \rightarrow CH_3COONa + H_2O$
+Das Stoffmengenverhältnis ist in beiden Fällen 1:1.
+
+</details>
+
+---
+
+## Prüfungsstatistik
+
+| Aufgabentyp                 | Anzahl | Punkte gesamt |
+| --------------------------- | ------ | ------------- |
+| Stöchiometrie & Ausgleichen | 3      | 24            |
+| Fällung & Löslichkeit       | 3      | 22            |
+| Säuren & Basen              | 3      | 26            |
+| Redox & Elektrochemie       | 3      | 26            |
+| Konzept & Transfer          | 3      | 22            |
+| **Gesamt**                  | **15** | **120**       |
+
+**Notenschlüssel (Vorschlag):**
+- Sehr gut (1): ≥ 108 Punkte
+- Gut (2): ≥ 96 Punkte
+- Befriedigend (3): ≥ 84 Punkte
+- Genügend (4): ≥ 72 Punkte
+- Nicht genügend (5): < 72 Punkte
