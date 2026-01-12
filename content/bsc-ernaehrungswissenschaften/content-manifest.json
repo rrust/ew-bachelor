@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T23:35:31.957Z",
+  "generatedAt": "2026-01-12T23:50:39.864Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "16293e2a",
@@ -53,9 +53,9 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/03-chemische-reaktionen": {
-      "checksum": "39bf2c8f",
-      "sizeKB": 84.2,
-      "itemCount": 42,
+      "checksum": "e3d5cca1",
+      "sizeKB": 108.6,
+      "itemCount": 60,
       "quizCount": 25,
       "topic": "Chemische Reaktionen & Stöchiometrie",
       "description": "Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen und Metallreaktivität.",
@@ -83,7 +83,7 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/06-elektronenstruktur-atome": {
-      "checksum": "dc0c9b97",
+      "checksum": "9911296d",
       "sizeKB": 88.1,
       "itemCount": 74,
       "quizCount": 12,

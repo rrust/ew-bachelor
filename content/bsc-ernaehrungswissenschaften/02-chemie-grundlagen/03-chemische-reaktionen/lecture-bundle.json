@@ -504,72 +504,416 @@
       "successMessage": "Hervorragend! Du hast alle Themen dieser Vorlesung gemeistert. Zeit für das Quiz!",
       "reviewHint": "Präge dir die Reihenfolge einiger wichtiger Metalle ein: Mg, Zn, Fe, (H₂), Cu, Ag, Au",
       "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Grundlagen Reaktionsgleichungen",
+      "question": "Ergänze die fehlenden Begriffe zu Reaktionsgleichungen:",
+      "text": "{{blank1}} sind die Ausgangsstoffe einer chemischen Reaktion und stehen {{blank2}} vom Reaktionspfeil. Die Zahlen vor den chemischen Formeln heißen {{blank3}} und geben das Mengenverhältnis an.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "Edukte",
+          "alternatives": [
+            "Reaktanden"
+          ]
+        },
+        {
+          "id": "blank2",
+          "answer": "links"
+        },
+        {
+          "id": "blank3",
+          "answer": "Koeffizienten",
+          "alternatives": [
+            "stöchiometrische Koeffizienten"
+          ]
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Reaktionsgleichungen aufstellen",
+      "url": "https://www.youtube.com/watch?v=R_7hykV1AAw",
+      "description": "Einführung in Reaktionsgleichungen: Edukte, Produkte und die Bedeutung der Symbole.",
+      "content": "## Video: Reaktionsgleichungen aufstellen\n\nIn diesem Video lernst du, wie chemische Reaktionsgleichungen aufgebaut sind und was die verschiedenen Symbole bedeuten.\n\n**Achte besonders auf:**\n- Den Unterschied zwischen Edukten und Produkten\n- Die Bedeutung der Aggregatzustandssymbole (s), (l), (g), (aq)\n- Wie Koeffizienten das Mengenverhältnis angeben"
+    },
+    {
+      "type": "calculation",
+      "topic": "Reaktionsgleichungen ausgleichen",
+      "question": "Gleiche die folgende Reaktionsgleichung aus: Fe + Cl₂ → FeCl₃. Wie lautet der Koeffizient vor Cl₂?",
+      "correctAnswer": 3,
+      "unit": "",
+      "tolerance": 0,
+      "hint": "Zähle die Atome auf beiden Seiten. Im Produkt FeCl₃ sind 3 Chlor-Atome pro Eisen.",
+      "solution": "**Schritt 1:** Unausgeglichene Gleichung analysieren\nFe + Cl₂ → FeCl₃\n\n**Schritt 2:** Atome zählen\n- Links: 1 Fe, 2 Cl\n- Rechts: 1 Fe, 3 Cl\n\n**Schritt 3:** Ausgleichen\nUm 6 Cl auf beiden Seiten zu haben:\n- 3 Cl₂ liefern 6 Cl-Atome\n- 2 FeCl₃ enthalten 6 Cl-Atome\n\n**Ergebnis:** 2 Fe + 3 Cl₂ → 2 FeCl₃\n\nDer Koeffizient vor Cl₂ ist **3**.\n",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "topic": "Verbrennungsreaktionen",
+      "title": "Verbrennungsgleichungen aufstellen",
+      "scenario": "Du arbeitest im Labor und sollst die vollständige Verbrennung von Butan (C₄H₁₀) mit Sauerstoff untersuchen. Bei der Verbrennung entstehen Kohlendioxid und Wasser.\n",
+      "tasks": [
+        {
+          "id": "task1",
+          "description": "Schreibe die unausgeglichene Reaktionsgleichung mit Aggregatzuständen auf.",
+          "hint": "Butan ist gasförmig, Sauerstoff auch. CO₂ ist gasförmig, H₂O entsteht als Dampf."
+        },
+        {
+          "id": "task2",
+          "description": "Gleiche die Gleichung aus. Beginne mit den Kohlenstoff-Atomen.",
+          "hint": "C₄H₁₀ hat 4 C-Atome, also brauchst du 4 CO₂."
+        },
+        {
+          "id": "task3",
+          "description": "Überprüfe dein Ergebnis durch Zählen aller Atome auf beiden Seiten.",
+          "hint": "Die Summenformel sollte sein: 2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O"
+        }
+      ],
+      "solution": "**Schritt 1:** Unausgeglichene Gleichung\nC₄H₁₀(g) + O₂(g) → CO₂(g) + H₂O(g)\n\n**Schritt 2:** C-Atome ausgleichen\nC₄H₁₀ hat 4 C → wir brauchen 4 CO₂\n\n**Schritt 3:** H-Atome ausgleichen\nC₄H₁₀ hat 10 H → wir brauchen 5 H₂O\n\n**Schritt 4:** O-Atome ausgleichen\nRechts: 4×2 + 5×1 = 13 O-Atome → 6,5 O₂\n\n**Schritt 5:** Brüche entfernen (×2)\n**2 C₄H₁₀(g) + 13 O₂(g) → 8 CO₂(g) + 10 H₂O(g)**\n\n**Kontrolle:**\n- C: 2×4 = 8 = 8 ✓\n- H: 2×10 = 20 = 10×2 ✓\n- O: 13×2 = 26 = 8×2 + 10×1 ✓\n",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Reaktionsgleichungen ausgleichen",
+      "url": "https://www.youtube.com/watch?v=g8tOjY30HIA",
+      "description": "Schritt-für-Schritt-Anleitung zum Ausgleichen von Reaktionsgleichungen.",
+      "content": "## Video: Reaktionsgleichungen ausgleichen\n\nDieses Video zeigt dir die systematische Methode zum Ausgleichen chemischer Gleichungen.\n\n**Wichtige Schritte:**\n1. Zähle die Atome auf beiden Seiten\n2. Beginne mit dem Element, das am seltensten vorkommt\n3. Gleiche Sauerstoff und Wasserstoff zuletzt aus\n4. Überprüfe dein Ergebnis durch erneutes Zählen"
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Chemisches Gleichgewicht",
+      "question": "Ergänze die Begriffe zum chemischen Gleichgewicht:",
+      "text": "Der Doppelpfeil ⇌ symbolisiert eine {{blank1}} Reaktion. Im {{blank2}} Gleichgewicht laufen Hin- und Rückreaktion mit {{blank3}} Geschwindigkeit ab.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "reversible",
+          "alternatives": [
+            "umkehrbare"
+          ]
+        },
+        {
+          "id": "blank2",
+          "answer": "dynamischen"
+        },
+        {
+          "id": "blank3",
+          "answer": "gleicher",
+          "alternatives": [
+            "derselben"
+          ]
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Chemisches Gleichgewicht",
+      "url": "https://www.youtube.com/watch?v=PK5SlkdYDpA",
+      "description": "Anschauliche Erklärung des chemischen Gleichgewichts mit Beispielen.",
+      "content": "## Video: Chemisches Gleichgewicht\n\nDieses Video erklärt das Konzept des dynamischen Gleichgewichts anhand anschaulicher Beispiele.\n\n**Du lernst:**\n- Was \"dynamisch\" beim Gleichgewicht bedeutet\n- Warum Hin- und Rückreaktion gleichzeitig ablaufen\n- Wie sich das Gleichgewicht einstellt\n- Das Beispiel der Stalaktiten-Bildung"
+    },
+    {
+      "type": "matching",
+      "topic": "Elektrolyte",
+      "question": "Ordne die Stoffe dem richtigen Elektrolyttyp zu:",
+      "pairs": [
+        {
+          "left": "NaCl in Wasser",
+          "right": "Starker Elektrolyt"
+        },
+        {
+          "left": "Essigsäure (CH₃COOH)",
+          "right": "Schwacher Elektrolyt"
+        },
+        {
+          "left": "Zucker (C₁₂H₂₂O₁₁)",
+          "right": "Nichtelektrolyt"
+        },
+        {
+          "left": "Salzsäure (HCl)",
+          "right": "Starker Elektrolyt"
+        },
+        {
+          "left": "Ammoniak (NH₃)",
+          "right": "Schwacher Elektrolyt"
+        },
+        {
+          "left": "Ethanol (C₂H₅OH)",
+          "right": "Nichtelektrolyt"
+        }
+      ],
+      "explanation": "**Starke Elektrolyte** dissoziieren vollständig in Ionen (Salze, starke Säuren/Basen).\n**Schwache Elektrolyte** dissoziieren nur teilweise (schwache Säuren/Basen wie Essigsäure, Ammoniak).\n**Nichtelektrolyte** bilden keine Ionen in Lösung (molekulare Stoffe wie Zucker, Alkohol).\n",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Elektrolyte",
+      "url": "https://www.youtube.com/watch?v=fTcnELa-v88",
+      "description": "Einführung in Ionen, Salze und Elektrolyte.",
+      "content": "## Video: Ionen und Elektrolyte\n\nDieses Video von musstewissen Chemie erklärt die Grundlagen der Elektrolyte.\n\n**Themen:**\n- Was sind Ionen?\n- Wie entstehen Ionen beim Lösen von Salzen?\n- Unterschied zwischen starken und schwachen Elektrolyten\n- Warum leiten Elektrolyte Strom?"
+    },
+    {
+      "type": "practice-exercise",
+      "topic": "Fällungsreaktionen",
+      "title": "Vorhersage von Niederschlägen",
+      "scenario": "Im Labor mischst du zwei Lösungen: Silbernitrat (AgNO₃) und Natriumchlorid (NaCl).\nDu beobachtest, dass sich sofort ein weißer Niederschlag bildet.\n",
+      "tasks": [
+        {
+          "id": "task1",
+          "description": "Schreibe die vollständige Ionengleichung für diese Reaktion auf.",
+          "hint": "Beide Salze liegen als Ionen vor. Welche Kombination ist unlöslich?"
+        },
+        {
+          "id": "task2",
+          "description": "Identifiziere die Zuschauer-Ionen und schreibe die Netto-Ionengleichung.",
+          "hint": "Zuschauer-Ionen erscheinen auf beiden Seiten unverändert."
+        },
+        {
+          "id": "task3",
+          "description": "Nutze die Löslichkeitsregeln: Warum fällt AgCl aus, aber NaNO₃ nicht?",
+          "hint": "Silberhalogenide sind schwerlöslich, Nitrate sind immer löslich."
+        }
+      ],
+      "solution": "**Vollständige Ionengleichung:**\nAg⁺(aq) + NO₃⁻(aq) + Na⁺(aq) + Cl⁻(aq) → AgCl(s) + Na⁺(aq) + NO₃⁻(aq)\n\n**Zuschauer-Ionen:** Na⁺ und NO₃⁻ (erscheinen auf beiden Seiten)\n\n**Netto-Ionengleichung:**\nAg⁺(aq) + Cl⁻(aq) → AgCl(s)\n\n**Erklärung:**\n- AgCl ist ein Silberhalogenid und nach den Löslichkeitsregeln **schwerlöslich**\n- NaNO₃ bleibt gelöst, da Nitrate **immer löslich** sind\n- Na⁺ ist ein Alkalimetall-Kation und daher auch **immer löslich**\n",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Fällungsreaktionen",
+      "url": "https://www.youtube.com/watch?v=2kLX4QVnbv4",
+      "description": "Reaktionsgleichungen und Fällungsreaktionen verstehen.",
+      "content": "## Video: Fällungsreaktionen\n\nDieses Video erklärt, wie Fällungsreaktionen ablaufen und wie man sie vorhersagen kann.\n\n**Lernziele:**\n- Was ist ein Niederschlag?\n- Wie nutzt man Löslichkeitsregeln?\n- Was sind Zuschauer-Ionen?\n- Wie schreibt man Netto-Ionengleichungen?"
+    },
+    {
+      "type": "matching",
+      "topic": "Säuren und Basen",
+      "question": "Ordne die Substanzen der richtigen Kategorie zu:",
+      "pairs": [
+        {
+          "left": "HCl (Salzsäure)",
+          "right": "Starke Säure"
+        },
+        {
+          "left": "H₂SO₄ (Schwefelsäure)",
+          "right": "Starke Säure"
+        },
+        {
+          "left": "CH₃COOH (Essigsäure)",
+          "right": "Schwache Säure"
+        },
+        {
+          "left": "H₂CO₃ (Kohlensäure)",
+          "right": "Schwache Säure"
+        },
+        {
+          "left": "NaOH (Natronlauge)",
+          "right": "Starke Base"
+        },
+        {
+          "left": "NH₃ (Ammoniak)",
+          "right": "Schwache Base"
+        }
+      ],
+      "explanation": "**Starke Säuren** dissoziieren vollständig in Wasser (HCl, HNO₃, H₂SO₄, HClO₄, HBr, HI).\n**Schwache Säuren** dissoziieren nur teilweise (Essigsäure, Kohlensäure, Phosphorsäure).\n**Starke Basen** sind Hydroxide der Alkali- und Erdalkalimetalle (NaOH, KOH, Ca(OH)₂).\n**Schwache Basen** reagieren nur teilweise mit Wasser (NH₃, organische Amine).\n",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Säurestärke",
+      "question": "Ordne die folgenden Säuren nach ihrer Stärke (stärkste zuerst):",
+      "items": [
+        "HCl (Salzsäure)",
+        "H₂SO₄ (Schwefelsäure)",
+        "HNO₃ (Salpetersäure)",
+        "H₃PO₄ (Phosphorsäure)",
+        "CH₃COOH (Essigsäure)",
+        "H₂CO₃ (Kohlensäure)"
+      ],
+      "correctOrder": [
+        "HCl (Salzsäure)",
+        "H₂SO₄ (Schwefelsäure)",
+        "HNO₃ (Salpetersäure)",
+        "H₃PO₄ (Phosphorsäure)",
+        "CH₃COOH (Essigsäure)",
+        "H₂CO₃ (Kohlensäure)"
+      ],
+      "explanation": "**Starke Säuren** (vollständige Dissoziation):\n- HCl, H₂SO₄, HNO₃ sind alle sehr starke Säuren\n\n**Schwache Säuren** (teilweise Dissoziation):\n- H₃PO₄ ist eine mittelstarke Säure\n- CH₃COOH (Essigsäure) ist schwach\n- H₂CO₃ (Kohlensäure) ist sehr schwach\n\nDie Stärke einer Säure hängt davon ab, wie leicht sie ihr Proton abgibt (pKs-Wert).\n",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Säuren und Basen",
+      "url": "https://www.youtube.com/watch?v=x93KKVDahKY",
+      "description": "Die Säure-Base-Theorie nach Brønsted-Lowry erklärt.",
+      "content": "## Video: Säuren und Basen nach Brønsted\n\nDieses Video von musstewissen Chemie erklärt die moderne Säure-Base-Definition.\n\n**Wichtige Konzepte:**\n- Säuren als Protonendonatoren\n- Basen als Protonenakzeptoren\n- Konjugierte Säure-Base-Paare\n- Unterschied zwischen starken und schwachen Säuren/Basen"
+    },
+    {
+      "type": "calculation",
+      "topic": "Oxidationszahlen",
+      "question": "Bestimme die Oxidationszahl von Mangan (Mn) im Permanganat-Ion MnO₄⁻. Gib nur die Zahl ein (mit Vorzeichen).",
+      "correctAnswer": 7,
+      "unit": "",
+      "tolerance": 0,
+      "hint": "Sauerstoff hat die Oxidationszahl -2. Die Summe aller Oxidationszahlen ergibt die Ionenladung.",
+      "solution": "**Gegeben:**\n- MnO₄⁻ (Permanganat-Ion)\n- Ladung des Ions: -1\n- Oxidationszahl von O: -2\n\n**Berechnung:**\nSei x die Oxidationszahl von Mn.\n\n$$x + 4 \\times (-2) = -1$$\n$$x - 8 = -1$$\n$$x = +7$$\n\n**Ergebnis:** Die Oxidationszahl von Mn in MnO₄⁻ ist **+7**.\n\nDies ist die höchste Oxidationsstufe des Mangans und macht das Permanganat zu einem starken Oxidationsmittel.\n",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Redoxreaktionen",
+      "question": "Ordne die Begriffe der richtigen Beschreibung zu:",
+      "pairs": [
+        {
+          "left": "Oxidation",
+          "right": "Abgabe von Elektronen"
+        },
+        {
+          "left": "Reduktion",
+          "right": "Aufnahme von Elektronen"
+        },
+        {
+          "left": "Oxidationsmittel",
+          "right": "Nimmt Elektronen auf, wird reduziert"
+        },
+        {
+          "left": "Reduktionsmittel",
+          "right": "Gibt Elektronen ab, wird oxidiert"
+        },
+        {
+          "left": "Erhöhung der Oxidationszahl",
+          "right": "Oxidation"
+        },
+        {
+          "left": "Erniedrigung der Oxidationszahl",
+          "right": "Reduktion"
+        }
+      ],
+      "explanation": "**Merkhilfe OIL RIG:**\n- **O**xidation **I**s **L**oss (of electrons)\n- **R**eduction **I**s **G**ain (of electrons)\n\nDas **Oxidationsmittel** oxidiert einen anderen Stoff und wird dabei selbst reduziert.\nDas **Reduktionsmittel** reduziert einen anderen Stoff und wird dabei selbst oxidiert.\n",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Redoxreaktionen",
+      "url": "https://www.youtube.com/watch?v=csRIZZuIC0Q",
+      "description": "Grundlagen der Redoxreaktionen und Oxidationszahlen.",
+      "content": "## Video: Redoxreaktionen\n\nDieses Video von musstewissen Chemie erklärt die Grundlagen der Redoxreaktionen.\n\n**Du lernst:**\n- Was sind Oxidation und Reduktion?\n- Wie bestimmt man Oxidationszahlen?\n- Was sind Oxidations- und Reduktionsmittel?\n- Wie erkennt man Redoxreaktionen?\n\n**Merkhilfe:** OIL RIG - Oxidation Is Loss, Reduction Is Gain (of electrons)"
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Selbsttest Chemische Reaktionen",
+      "question": "Bist du bereit für den Vorlesungstest?",
+      "checkpoints": [
+        "Ich kann Reaktionsgleichungen lesen und die Bedeutung von Koeffizienten erklären",
+        "Ich kann Aggregatzustandssymbole (s), (l), (g), (aq) korrekt interpretieren",
+        "Ich kann einfache Reaktionsgleichungen ausgleichen",
+        "Ich verstehe das Gesetz der Massenerhaltung",
+        "Ich kann reversible Reaktionen und das dynamische Gleichgewicht beschreiben",
+        "Ich kann zwischen starken, schwachen Elektrolyten und Nichtelektrolyten unterscheiden",
+        "Ich kann Löslichkeitsregeln anwenden und Fällungsreaktionen vorhersagen",
+        "Ich kann Zuschauer-Ionen identifizieren und Netto-Ionengleichungen schreiben",
+        "Ich kenne den Unterschied zwischen starken und schwachen Säuren/Basen",
+        "Ich kann Neutralisationsreaktionen formulieren",
+        "Ich kann Oxidationszahlen bestimmen",
+        "Ich kann Oxidation und Reduktion in einer Reaktion identifizieren",
+        "Ich verstehe die Begriffe Oxidations- und Reduktionsmittel"
+      ],
+      "content": "## Bereit für den Test?\n\nGehe die Checkliste durch und markiere, welche Punkte du sicher beherrschst.\n\n> 💡 **Tipp:** Wenn du bei einem Punkt unsicher bist, gehe zurück zum entsprechenden Abschnitt und wiederhole das Material.\n\n### Mindestanforderung\n\nDu solltest **mindestens 10 von 13 Punkten** sicher beherrschen, bevor du den Test startest."
     }
   ],
   "quiz": [
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Chemische Gleichungen",
-      "question": "Was bedeuten die Koeffizienten in einer chemischen Gleichung (z.B. die \"4\" in 4Al)?",
+      "question": "Welche Aussagen zu Koeffizienten in chemischen Gleichungen sind korrekt?",
       "options": [
-        "Sie geben die Anzahl der Protonen an",
-        "Sie geben das molare Verhältnis der reagierenden Teilchen an",
-        "Sie ändern die chemische Identität des Stoffes",
-        "Sie zeigen den Aggregatzustand an"
+        "Koeffizienten geben das molare Verhältnis der reagierenden Teilchen an",
+        "Koeffizienten dürfen beim Ausgleichen einer Gleichung geändert werden",
+        "Koeffizienten ändern die chemische Identität des Stoffes",
+        "Ein Koeffizient von 1 wird in der Regel weggelassen",
+        "Koeffizienten beziehen sich auf die Anzahl der Protonen im Molekül"
       ],
-      "correctAnswer": "Sie geben das molare Verhältnis der reagierenden Teilchen an",
+      "correctAnswers": [
+        "Koeffizienten geben das molare Verhältnis der reagierenden Teilchen an",
+        "Koeffizienten dürfen beim Ausgleichen einer Gleichung geändert werden",
+        "Ein Koeffizient von 1 wird in der Regel weggelassen"
+      ],
       "explanation": "**Erklärung:** Die Koeffizienten vor den chemischen Formeln geben das Mengenverhältnis (molares Verhältnis) an, in dem die Stoffe reagieren. Die Subskripte (Indizes innerhalb der Formel) definieren die chemische Identität des Moleküls und dürfen nicht verändert werden."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Chemische Gleichungen",
-      "question": "Ist die folgende Gleichung ausgeglichen? $C_3H_8 + 3O_2 \\rightarrow 3CO_2 + 4H_2O$",
+      "question": "Welche Aussagen zur Gleichung $C_3H_8 + 3O_2 \\rightarrow 3CO_2 + 4H_2O$ sind korrekt?",
       "options": [
-        "Ja, die Gleichung ist korrekt ausgeglichen",
-        "Nein, es fehlt Sauerstoff auf der linken Seite",
-        "Nein, es fehlt Wasserstoff auf der rechten Seite",
-        "Nein, es fehlt Kohlenstoff auf beiden Seiten"
+        "Die Gleichung ist nicht ausgeglichen, es fehlt Sauerstoff auf der Eduktseite",
+        "Auf der Produktseite sind insgesamt 10 Sauerstoffatome vorhanden",
+        "Die Kohlenstoffbilanz ist ausgeglichen (3 C auf jeder Seite)",
+        "Die korrekte Gleichung wäre $C_3H_8 + 5O_2 \\rightarrow 3CO_2 + 4H_2O$",
+        "Die Wasserstoffbilanz ist nicht ausgeglichen"
       ],
-      "correctAnswer": "Nein, es fehlt Sauerstoff auf der linken Seite",
+      "correctAnswers": [
+        "Die Gleichung ist nicht ausgeglichen, es fehlt Sauerstoff auf der Eduktseite",
+        "Auf der Produktseite sind insgesamt 10 Sauerstoffatome vorhanden",
+        "Die Kohlenstoffbilanz ist ausgeglichen (3 C auf jeder Seite)",
+        "Die korrekte Gleichung wäre $C_3H_8 + 5O_2 \\rightarrow 3CO_2 + 4H_2O$"
+      ],
       "explanation": "**Erklärung:** Rechts sind $3 \\times 2 + 4 \\times 1 = 10$ Sauerstoffatome. Links sind nur $3 \\times 2 = 6$. Es müssten $5O_2$ statt $3O_2$ sein, um die Gleichung auszugleichen."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Chemische Gleichungen",
-      "question": "Was bedeuten die Aggregatzustandssymbole (s) und (g) in der Reaktionsgleichung $4Al(s) + 3O_2(g) \\rightarrow 2Al_2O_3(s)$?",
+      "question": "Welche Aussagen zu Aggregatzustandssymbolen in chemischen Gleichungen sind korrekt?",
       "options": [
-        "(s) = sauer, (g) = gasförmig",
-        "(s) = solid (fest), (g) = gasförmig",
-        "(s) = soluble (löslich), (g) = gelartig",
-        "(s) = Salz, (g) = gelöst"
+        "(s) steht für solid und bezeichnet den festen Aggregatzustand",
+        "(g) steht für gas und bezeichnet den gasförmigen Aggregatzustand",
+        "(aq) steht für aqueous und bedeutet in Wasser gelöst",
+        "(l) steht für löslich und beschreibt die Wasserlöslichkeit",
+        "(s) steht für solution und bezeichnet eine Lösung"
       ],
-      "correctAnswer": "(s) = solid (fest), (g) = gasförmig",
+      "correctAnswers": [
+        "(s) steht für solid und bezeichnet den festen Aggregatzustand",
+        "(g) steht für gas und bezeichnet den gasförmigen Aggregatzustand",
+        "(aq) steht für aqueous und bedeutet in Wasser gelöst"
+      ],
       "explanation": "**Erklärung:** Die Symbole beschreiben den Aggregatzustand: (s) = solid (fest), (l) = liquid (flüssig), (g) = gas (gasförmig), (aq) = aqueous (in Wasser gelöst). Diese Information ist wichtig, um die Reaktionsbedingungen zu verstehen."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Chemisches Gleichgewicht",
-      "question": "Was bedeutet \"dynamisches Gleichgewicht\" bei einer chemischen Reaktion?",
+      "question": "Welche Aussagen zum dynamischen chemischen Gleichgewicht sind korrekt?",
       "options": [
+        "Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab",
+        "Die Konzentrationen ändern sich makroskopisch nicht mehr",
+        "Auf molekularer Ebene laufen weiterhin Reaktionen ab",
         "Die Reaktion ist vollständig gestoppt",
-        "Es gibt mehr Produkte als Edukte",
-        "Hin- und Rückreaktion laufen gleich schnell ab; die Konzentrationen ändern sich makroskopisch nicht mehr",
-        "Die Reaktion kann nur in eine Richtung ablaufen"
+        "Edukte und Produkte liegen immer im Verhältnis 1:1 vor"
       ],
-      "correctAnswer": "Hin- und Rückreaktion laufen gleich schnell ab; die Konzentrationen ändern sich makroskopisch nicht mehr",
+      "correctAnswers": [
+        "Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab",
+        "Die Konzentrationen ändern sich makroskopisch nicht mehr",
+        "Auf molekularer Ebene laufen weiterhin Reaktionen ab"
+      ],
       "explanation": "**Erklärung:** Im dynamischen Gleichgewicht laufen Hin- und Rückreaktion auf molekularer Ebene weiter (\"dynamisch\"), aber mit gleicher Geschwindigkeit. Dadurch bleiben die Konzentrationen makroskopisch konstant – es gibt keine Nettoänderung der Stoffmengen."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Chemisches Gleichgewicht",
-      "question": "Welches Symbol zeigt in einer Reaktionsgleichung an, dass es sich um eine reversible Reaktion (Gleichgewicht) handelt?",
+      "question": "Welche Aussagen zur Notation von Reaktionsgleichungen sind korrekt?",
       "options": [
-        "Ein einfacher Pfeil nach rechts ($\\rightarrow$)",
-        "Ein Doppelpfeil ($\\rightleftharpoons$)",
-        "Ein Gleichheitszeichen (=)",
-        "Ein Pluszeichen (+)"
+        "Der Doppelpfeil ($\\rightleftharpoons$) zeigt eine reversible Reaktion an",
+        "Der einfache Pfeil ($\\rightarrow$) wird bei praktisch vollständigen Reaktionen verwendet",
+        "Bei Gleichgewichtsreaktionen können Produkte wieder zu Edukten reagieren",
+        "Das Gleichheitszeichen (=) ist die moderne Standardnotation für Reaktionen",
+        "Ein einfacher Pfeil bedeutet, dass keine Rückreaktion stattfinden kann"
       ],
-      "correctAnswer": "Ein Doppelpfeil ($\\rightleftharpoons$)",
+      "correctAnswers": [
+        "Der Doppelpfeil ($\\rightleftharpoons$) zeigt eine reversible Reaktion an",
+        "Der einfache Pfeil ($\\rightarrow$) wird bei praktisch vollständigen Reaktionen verwendet",
+        "Bei Gleichgewichtsreaktionen können Produkte wieder zu Edukten reagieren"
+      ],
       "explanation": "**Erklärung:** Der Doppelpfeil ($\\rightleftharpoons$) symbolisiert, dass die Reaktion reversibel ist – sie kann sowohl in Hin- als auch in Rückrichtung ablaufen. Der einfache Pfeil ($\\rightarrow$) wird verwendet, wenn die Reaktion praktisch vollständig in eine Richtung abläuft."
     },
     {
@@ -591,81 +935,114 @@
       "explanation": "**Erklärung:** Starke Elektrolyte (wie NaCl) dissoziieren zu ~100% in Ionen und leiten Strom gut. Nichtelektrolyte (wie Zucker) lösen sich molekular ohne Ionenbildung. Schwache Elektrolyte leiten Strom schlechter als starke, nicht besser."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Lösungen und Elektrolyte",
-      "question": "Welcher Pfeil wird verwendet, um die Dissoziation eines starken Elektrolyten darzustellen?",
+      "question": "Welche Aussagen zu starken Elektrolyten sind korrekt?",
       "options": [
-        "Doppelpfeil ($\\rightleftharpoons$)",
-        "Einfacher Pfeil ($\\rightarrow$)",
-        "Gleichheitszeichen (=)",
-        "Kein Pfeil nötig"
+        "Ihre Dissoziation wird mit einem einfachen Pfeil ($\\rightarrow$) dargestellt",
+        "Sie dissoziieren zu nahezu 100% in Ionen",
+        "NaCl, HCl und NaOH sind Beispiele für starke Elektrolyte",
+        "Sie leiten elektrischen Strom in wässriger Lösung",
+        "Sie bilden in Lösung ein Gleichgewicht zwischen Ionen und undissoziierten Molekülen"
       ],
-      "correctAnswer": "Einfacher Pfeil ($\\rightarrow$)",
+      "correctAnswers": [
+        "Ihre Dissoziation wird mit einem einfachen Pfeil ($\\rightarrow$) dargestellt",
+        "Sie dissoziieren zu nahezu 100% in Ionen",
+        "NaCl, HCl und NaOH sind Beispiele für starke Elektrolyte",
+        "Sie leiten elektrischen Strom in wässriger Lösung"
+      ],
       "explanation": "**Erklärung:** Da starke Elektrolyte vollständig dissoziieren (zu ~100% in Ionen zerfallen), verwendet man den einfachen Pfeil ($\\rightarrow$). Der Doppelpfeil wird nur bei schwachen Elektrolyten verwendet, wo ein Gleichgewicht zwischen dissoziierten und undissoziierten Formen besteht."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Lösungen und Elektrolyte",
-      "question": "Zu welcher Kategorie gehört reines Ethanol ($C_2H_5OH$) in wässriger Lösung?",
+      "question": "Welche Aussagen zu Nichtelektrolyten sind korrekt?",
       "options": [
-        "Starker Elektrolyt",
-        "Schwacher Elektrolyt",
-        "Nichtelektrolyt",
-        "Säure"
+        "Ethanol ($C_2H_5OH$) ist ein typischer Nichtelektrolyt",
+        "Nichtelektrolyte bilden keine Ionen in Lösung",
+        "Zuckerlösungen leiten keinen elektrischen Strom",
+        "Nichtelektrolyte können sich nicht in Wasser lösen",
+        "Alle organischen Verbindungen sind Nichtelektrolyte"
       ],
-      "correctAnswer": "Nichtelektrolyt",
+      "correctAnswers": [
+        "Ethanol ($C_2H_5OH$) ist ein typischer Nichtelektrolyt",
+        "Nichtelektrolyte bilden keine Ionen in Lösung",
+        "Zuckerlösungen leiten keinen elektrischen Strom"
+      ],
       "explanation": "**Erklärung:** Ethanol löst sich zwar gut in Wasser (durch Wasserstoffbrückenbindungen), bildet aber keine Ionen. Es bleibt als neutrales Molekül in Lösung und leitet daher keinen Strom – es ist ein Nichtelektrolyt."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Löslichkeit und Fällungsreaktionen",
-      "question": "Was passiert, wenn man Natriumnitrat ($NaNO_3$) in Wasser gibt?",
+      "question": "Welche Aussagen zur Löslichkeit von Nitraten sind korrekt?",
       "options": [
-        "Es bildet sich ein Niederschlag",
-        "Es löst sich vollständig auf",
-        "Es reagiert mit Wasser zu einer Säure",
-        "Es schwimmt auf der Oberfläche"
+        "Alle Nitrate sind in Wasser löslich",
+        "Natriumnitrat ($NaNO_3$) löst sich vollständig in Wasser",
+        "Nitrate von Schwermetallen bilden unlösliche Niederschläge",
+        "Auch $Ca(NO_3)_2$ und $Pb(NO_3)_2$ sind wasserlöslich",
+        "Nitrate sind nur bei hohen Temperaturen löslich"
       ],
-      "correctAnswer": "Es löst sich vollständig auf",
+      "correctAnswers": [
+        "Alle Nitrate sind in Wasser löslich",
+        "Natriumnitrat ($NaNO_3$) löst sich vollständig in Wasser",
+        "Auch $Ca(NO_3)_2$ und $Pb(NO_3)_2$ sind wasserlöslich"
+      ],
       "explanation": "**Erklärung:** Nach den Löslichkeitsregeln sind alle Nitrate ($NO_3^-$) und alle Natriumsalze ($Na^+$) löslich. Natriumnitrat erfüllt beide Kriterien und löst sich daher vollständig in Wasser auf."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Löslichkeit und Fällungsreaktionen",
-      "question": "Welches dieser Salze ist UNLÖSLICH in Wasser?",
+      "question": "Welche Aussagen zur Löslichkeit von Carbonaten sind korrekt?",
       "options": [
-        "Kaliumchlorid ($KCl$)",
-        "Calciumcarbonat ($CaCO_3$)",
-        "Natriumsulfat ($Na_2SO_4$)",
-        "Ammoniumnitrat ($NH_4NO_3$)"
+        "Calciumcarbonat ($CaCO_3$) ist in Wasser unlöslich",
+        "Carbonate der Alkalimetalle (z.B. $Na_2CO_3$) sind wasserlöslich",
+        "Alle Carbonate sind grundsätzlich unlöslich",
+        "$CaCO_3$ ist der Hauptbestandteil von Kalkstein und Marmor",
+        "Ammoniumcarbonat ($(NH_4)_2CO_3$) ist wasserlöslich"
       ],
-      "correctAnswer": "Calciumcarbonat ($CaCO_3$)",
+      "correctAnswers": [
+        "Calciumcarbonat ($CaCO_3$) ist in Wasser unlöslich",
+        "Carbonate der Alkalimetalle (z.B. $Na_2CO_3$) sind wasserlöslich",
+        "$CaCO_3$ ist der Hauptbestandteil von Kalkstein und Marmor",
+        "Ammoniumcarbonat ($(NH_4)_2CO_3$) ist wasserlöslich"
+      ],
       "explanation": "**Erklärung:** Carbonate ($CO_3^{2-}$) sind grundsätzlich unlöslich, außer die Salze der Alkalimetalle und Ammonium. Da Calcium kein Alkalimetall ist, ist $CaCO_3$ (Kalkstein) unlöslich. Die anderen Optionen sind alle löslich."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Löslichkeit und Fällungsreaktionen",
-      "question": "Was sind \"Zuschauer-Ionen\" (Spectator Ions)?",
+      "question": "Welche Aussagen zu Zuschauer-Ionen (Spectator Ions) sind korrekt?",
       "options": [
-        "Ionen, die einen farbigen Niederschlag bilden",
-        "Ionen, die an der Reaktion nicht teilnehmen und unverändert in der Lösung bleiben",
-        "Ionen, die als Katalysator wirken",
-        "Ionen, die nur in Säuren vorkommen"
+        "Sie nehmen nicht aktiv an der chemischen Reaktion teil",
+        "Sie erscheinen auf beiden Seiten der Gleichung unverändert",
+        "Sie werden in der Netto-Ionengleichung weggelassen",
+        "Sie sind immer Kationen, niemals Anionen",
+        "Sie bilden den Niederschlag bei Fällungsreaktionen"
       ],
-      "correctAnswer": "Ionen, die an der Reaktion nicht teilnehmen und unverändert in der Lösung bleiben",
+      "correctAnswers": [
+        "Sie nehmen nicht aktiv an der chemischen Reaktion teil",
+        "Sie erscheinen auf beiden Seiten der Gleichung unverändert",
+        "Sie werden in der Netto-Ionengleichung weggelassen"
+      ],
       "explanation": "**Erklärung:** Zuschauer-Ionen erscheinen auf beiden Seiten der Gleichung unverändert. Sie nehmen nicht aktiv an der chemischen Reaktion teil und werden in der Netto-Ionengleichung weggelassen, um nur den Kern der Reaktion zu zeigen."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Löslichkeit und Fällungsreaktionen",
-      "question": "Was passiert, wenn man Bleinitrat-Lösung mit Kaliumiodid-Lösung mischt?",
+      "question": "Welche Aussagen zur Reaktion von Bleinitrat-Lösung mit Kaliumiodid-Lösung sind korrekt?",
       "options": [
-        "Keine Reaktion, alle Produkte sind löslich",
-        "Es bildet sich ein gelber Niederschlag (Bleiiodid)",
-        "Es entsteht ein Gas",
-        "Die Lösung wird sauer"
+        "Es bildet sich ein leuchtend gelber Niederschlag aus Bleiiodid ($PbI_2$)",
+        "Die Reaktionsgleichung lautet: $Pb(NO_3)_2 + 2KI \\rightarrow PbI_2 + 2KNO_3$",
+        "Blei ist eine Ausnahme bei den sonst löslichen Halogeniden",
+        "Das entstehende Kaliumnitrat bleibt in Lösung",
+        "Es entsteht kein Niederschlag, da alle Produkte löslich sind"
       ],
-      "correctAnswer": "Es bildet sich ein gelber Niederschlag (Bleiiodid)",
+      "correctAnswers": [
+        "Es bildet sich ein leuchtend gelber Niederschlag aus Bleiiodid ($PbI_2$)",
+        "Die Reaktionsgleichung lautet: $Pb(NO_3)_2 + 2KI \\rightarrow PbI_2 + 2KNO_3$",
+        "Blei ist eine Ausnahme bei den sonst löslichen Halogeniden",
+        "Das entstehende Kaliumnitrat bleibt in Lösung"
+      ],
       "explanation": "**Erklärung:** Beim Mischen tauschen die Ionen ihre Partner: $Pb(NO_3)_2 + 2KI \\rightarrow PbI_2 + 2KNO_3$. Bleiiodid ($PbI_2$) ist unlöslich (Blei ist eine Ausnahme bei Halogeniden) und fällt als leuchtend gelber Niederschlag aus."
     },
     {
@@ -688,161 +1065,229 @@
       "explanation": "**Erklärung:** Die 6 starken Säuren sind: HCl, HBr, HI, $HNO_3$, $HClO_4$ und $H_2SO_4$. Essigsäure, Kohlensäure und Flusssäure sind schwache Säuren, die nur teilweise dissoziieren."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Säuren und Basen",
-      "question": "Welcher Pfeil wird verwendet, um die Dissoziation von Essigsäure in Wasser darzustellen?",
+      "question": "Welche Aussagen zu schwachen Säuren wie Essigsäure sind korrekt?",
       "options": [
-        "Einfacher Pfeil ($\\rightarrow$), weil sie vollständig dissoziiert",
-        "Doppelpfeil ($\\rightleftharpoons$), weil sie nur teilweise dissoziiert",
-        "Kein Pfeil, Essigsäure dissoziiert nicht",
-        "Rückwärtspfeil ($\\leftarrow$)"
+        "Ihre Dissoziation wird mit einem Doppelpfeil ($\\rightleftharpoons$) dargestellt",
+        "Sie dissoziieren nur zu einem kleinen Teil (oft < 5%)",
+        "Es stellt sich ein Gleichgewicht zwischen Molekülen und Ionen ein",
+        "Schwache Säuren haben einen höheren pH-Wert als starke Säuren gleicher Konzentration",
+        "Essigsäure, Kohlensäure und Flusssäure gehören zu den starken Säuren"
       ],
-      "correctAnswer": "Doppelpfeil ($\\rightleftharpoons$), weil sie nur teilweise dissoziiert",
+      "correctAnswers": [
+        "Ihre Dissoziation wird mit einem Doppelpfeil ($\\rightleftharpoons$) dargestellt",
+        "Sie dissoziieren nur zu einem kleinen Teil (oft < 5%)",
+        "Es stellt sich ein Gleichgewicht zwischen Molekülen und Ionen ein",
+        "Schwache Säuren haben einen höheren pH-Wert als starke Säuren gleicher Konzentration"
+      ],
       "explanation": "**Erklärung:** Essigsäure ist eine schwache Säure und dissoziiert nur zu einem kleinen Teil (< 5%). Es stellt sich ein Gleichgewicht ein zwischen undissoziierten Molekülen und Ionen, daher verwendet man den Doppelpfeil."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Säuren und Basen",
-      "question": "Ammoniak ($NH_3$) ist eine Base, obwohl es keine OH-Gruppe enthält. Warum?",
+      "question": "Welche Aussagen zu Ammoniak ($NH_3$) als Base sind korrekt?",
       "options": [
-        "Es ist ein Druckfehler in den Lehrbüchern",
-        "Es spaltet in Wasser $H^+$-Ionen ab",
-        "Es nimmt ein Proton ($H^+$) vom Wasser auf, wodurch $OH^-$ frei wird (Brønsted-Base)",
-        "Es reagiert gar nicht mit Wasser"
+        "Ammoniak ist nach Brønsted-Lowry ein Protonenakzeptor",
+        "Es reagiert mit Wasser: $NH_3 + H_2O \\rightleftharpoons NH_4^+ + OH^-$",
+        "Das entstehende Hydroxid-Ion macht die Lösung basisch",
+        "Ammoniak muss OH-Gruppen enthalten, um als Base zu wirken",
+        "Ammoniak ist eine starke Base, die vollständig dissoziiert"
       ],
-      "correctAnswer": "Es nimmt ein Proton ($H^+$) vom Wasser auf, wodurch $OH^-$ frei wird (Brønsted-Base)",
+      "correctAnswers": [
+        "Ammoniak ist nach Brønsted-Lowry ein Protonenakzeptor",
+        "Es reagiert mit Wasser: $NH_3 + H_2O \\rightleftharpoons NH_4^+ + OH^-$",
+        "Das entstehende Hydroxid-Ion macht die Lösung basisch"
+      ],
       "explanation": "**Erklärung:** Nach der Brønsted-Lowry-Definition ist eine Base ein Protonenakzeptor. Ammoniak nimmt ein $H^+$ vom Wasser auf: $NH_3 + H_2O \\rightleftharpoons NH_4^+ + OH^-$. Dabei entsteht ein Hydroxid-Ion, was die Lösung basisch macht."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Neutralisation und Gasbildende Reaktionen",
-      "question": "Was sind die Produkte einer Neutralisation von Salzsäure ($HCl$) mit Natronlauge ($NaOH$)?",
+      "question": "Welche Aussagen zur Neutralisationsreaktion von HCl mit NaOH sind korrekt?",
       "options": [
-        "Salz und Wasserstoffgas",
-        "Salz und Wasser",
-        "Zwei neue Säuren",
-        "Nur Wasser"
+        "Die Produkte sind Natriumchlorid (NaCl) und Wasser",
+        "Die Reaktion folgt dem Schema: Säure + Base → Salz + Wasser",
+        "Die Netto-Ionengleichung lautet: $H^+ + OH^- \\rightarrow H_2O$",
+        "Bei der Reaktion wird Wärme freigesetzt (exotherm)",
+        "Es entsteht Wasserstoffgas als Nebenprodukt"
       ],
-      "correctAnswer": "Salz und Wasser",
+      "correctAnswers": [
+        "Die Produkte sind Natriumchlorid (NaCl) und Wasser",
+        "Die Reaktion folgt dem Schema: Säure + Base → Salz + Wasser",
+        "Die Netto-Ionengleichung lautet: $H^+ + OH^- \\rightarrow H_2O$",
+        "Bei der Reaktion wird Wärme freigesetzt (exotherm)"
+      ],
       "explanation": "**Erklärung:** Bei einer Neutralisation reagiert eine Säure mit einer Base nach dem Schema: Säure + Base → Salz + Wasser. Im Fall von HCl + NaOH entsteht NaCl (Kochsalz) und $H_2O$."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Neutralisation und Gasbildende Reaktionen",
-      "question": "Welches Gas entsteht typischerweise, wenn ein Metallcarbonat mit einer Säure reagiert?",
+      "question": "Welche Aussagen zur Reaktion von Carbonaten mit Säuren sind korrekt?",
       "options": [
-        "Wasserstoff ($H_2$)",
-        "Kohlendioxid ($CO_2$)",
-        "Sauerstoff ($O_2$)",
-        "Stickstoff ($N_2$)"
+        "Es entsteht Kohlendioxid ($CO_2$) als Gas",
+        "Zunächst bildet sich instabile Kohlensäure ($H_2CO_3$)",
+        "Die Kohlensäure zerfällt in Wasser und $CO_2$",
+        "Ein Beispiel: $CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2$",
+        "Es entsteht Wasserstoffgas durch Reduktion"
       ],
-      "correctAnswer": "Kohlendioxid ($CO_2$)",
+      "correctAnswers": [
+        "Es entsteht Kohlendioxid ($CO_2$) als Gas",
+        "Zunächst bildet sich instabile Kohlensäure ($H_2CO_3$)",
+        "Die Kohlensäure zerfällt in Wasser und $CO_2$",
+        "Ein Beispiel: $CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2$"
+      ],
       "explanation": "**Erklärung:** Wenn Carbonate mit Säuren reagieren, entsteht zunächst instabile Kohlensäure ($H_2CO_3$), die sofort in Wasser und Kohlendioxid zerfällt: $CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2 \\uparrow$"
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Redox-Reaktionen",
-      "question": "Wenn ein Atom Elektronen VERLIERT, wird es...",
+      "question": "Welche Aussagen zur Oxidation sind korrekt?",
       "options": [
-        "oxidiert",
-        "reduziert",
-        "neutralisiert",
-        "hydratisiert"
+        "Bei der Oxidation verliert ein Atom Elektronen",
+        "Die Oxidationszahl erhöht sich bei der Oxidation",
+        "Eselsbrücke: Oxidation = Ohne Elektronen",
+        "Oxidation und Reduktion treten immer gemeinsam auf",
+        "Bei der Oxidation nimmt ein Atom Elektronen auf"
       ],
-      "correctAnswer": "oxidiert",
+      "correctAnswers": [
+        "Bei der Oxidation verliert ein Atom Elektronen",
+        "Die Oxidationszahl erhöht sich bei der Oxidation",
+        "Eselsbrücke: Oxidation = Ohne Elektronen",
+        "Oxidation und Reduktion treten immer gemeinsam auf"
+      ],
       "explanation": "**Erklärung:** Oxidation ist definiert als Elektronenverlust. Eselsbrücke: **O**xidation = **O**hne Elektronen. Das Gegenteil, die Reduktion, ist die Aufnahme von Elektronen."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Redox-Reaktionen",
-      "question": "Welche Oxidationszahl hat Sauerstoff in den meisten Verbindungen?",
+      "question": "Welche Aussagen zur Oxidationszahl von Sauerstoff sind korrekt?",
       "options": [
-        "0",
-        "+2",
-        "-2",
-        "-1"
+        "In den meisten Verbindungen hat Sauerstoff die Oxidationszahl -2",
+        "In Peroxiden (z.B. $H_2O_2$) hat Sauerstoff die Oxidationszahl -1",
+        "Elementarer Sauerstoff ($O_2$) hat die Oxidationszahl 0",
+        "Sauerstoff hat immer die gleiche Oxidationszahl unabhängig von der Verbindung",
+        "In Wasser ($H_2O$) hat Sauerstoff die Oxidationszahl +2"
       ],
-      "correctAnswer": "-2",
+      "correctAnswers": [
+        "In den meisten Verbindungen hat Sauerstoff die Oxidationszahl -2",
+        "In Peroxiden (z.B. $H_2O_2$) hat Sauerstoff die Oxidationszahl -1",
+        "Elementarer Sauerstoff ($O_2$) hat die Oxidationszahl 0"
+      ],
       "explanation": "**Erklärung:** In fast allen Verbindungen hat Sauerstoff die Oxidationszahl -2. Die wichtige Ausnahme sind Peroxide (wie $H_2O_2$), wo Sauerstoff die Oxidationszahl -1 hat. In seiner elementaren Form ($O_2$) ist die Oxidationszahl 0."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Redox-Reaktionen",
-      "question": "Welche Oxidationszahl hat Schwefel (S) im Molekül $SO_3$?",
+      "question": "Welche Aussagen zur Oxidationszahl von Schwefel in $SO_3$ sind korrekt?",
       "options": [
-        "+4",
-        "+6",
-        "0",
-        "-2"
+        "Schwefel hat in $SO_3$ die Oxidationszahl +6",
+        "Die Summe aller Oxidationszahlen im neutralen Molekül ist 0",
+        "Berechnung: $S + 3 \\times (-2) = 0$, also $S = +6$",
+        "Jedes Sauerstoffatom trägt die Oxidationszahl -2 bei",
+        "Schwefel hat in allen Verbindungen die gleiche Oxidationszahl"
       ],
-      "correctAnswer": "+6",
+      "correctAnswers": [
+        "Schwefel hat in $SO_3$ die Oxidationszahl +6",
+        "Die Summe aller Oxidationszahlen im neutralen Molekül ist 0",
+        "Berechnung: $S + 3 \\times (-2) = 0$, also $S = +6$",
+        "Jedes Sauerstoffatom trägt die Oxidationszahl -2 bei"
+      ],
       "explanation": "**Erklärung:** Anwendung der Regeln: Sauerstoff hat -2 (dreimal = -6). In einem neutralen Molekül muss die Summe 0 sein. Also: $S + 3 \\times (-2) = 0 \\Rightarrow S - 6 = 0 \\Rightarrow S = +6$"
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Redox-Reaktionen",
-      "question": "In der Reaktion $2Na + Cl_2 \\rightarrow 2NaCl$: Welche Substanz ist das REDUKTIONSMITTEL?",
+      "question": "Welche Aussagen zur Reaktion $2Na + Cl_2 \\rightarrow 2NaCl$ sind korrekt?",
       "options": [
-        "Chlor ($Cl_2$), weil es Elektronen aufnimmt",
-        "Natrium ($Na$), weil es oxidiert wird und Elektronen abgibt",
-        "Das Produkt $NaCl$",
-        "Keines, es ist keine Redox-Reaktion"
+        "Natrium ist das Reduktionsmittel, weil es Elektronen abgibt",
+        "Das Reduktionsmittel wird selbst oxidiert",
+        "Natrium ermöglicht die Reduktion des Chlors",
+        "Chlor ist das Reduktionsmittel, weil es Elektronen aufnimmt",
+        "Es handelt sich nicht um eine Redox-Reaktion"
       ],
-      "correctAnswer": "Natrium ($Na$), weil es oxidiert wird und Elektronen abgibt",
+      "correctAnswers": [
+        "Natrium ist das Reduktionsmittel, weil es Elektronen abgibt",
+        "Das Reduktionsmittel wird selbst oxidiert",
+        "Natrium ermöglicht die Reduktion des Chlors"
+      ],
       "explanation": "**Erklärung:** Das Reduktionsmittel ist der Stoff, der Elektronen abgibt (und dabei selbst oxidiert wird). Er ermöglicht die Reduktion des anderen Stoffes. Natrium gibt hier Elektronen an Chlor ab, daher ist Na das Reduktionsmittel."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Redox-Reaktionen",
-      "question": "In der Reaktion $2Al + 3Cu^{2+} \\rightarrow 2Al^{3+} + 3Cu$: Was ist das Oxidationsmittel?",
+      "question": "Welche Aussagen zur Reaktion $2Al + 3Cu^{2+} \\rightarrow 2Al^{3+} + 3Cu$ sind korrekt?",
       "options": [
-        "Aluminium ($Al$)",
-        "Kupfer-Ion ($Cu^{2+}$)",
-        "Aluminium-Ion ($Al^{3+}$)",
-        "Kupfer ($Cu$)"
+        "$Cu^{2+}$ ist das Oxidationsmittel, weil es Elektronen aufnimmt",
+        "Das Oxidationsmittel wird selbst reduziert",
+        "$Cu^{2+}$ zwingt das Aluminium zur Oxidation",
+        "Aluminium ist das Oxidationsmittel",
+        "Das entstehende Kupfer (Cu) ist elementar und hat Oxidationszahl 0"
       ],
-      "correctAnswer": "Kupfer-Ion ($Cu^{2+}$)",
+      "correctAnswers": [
+        "$Cu^{2+}$ ist das Oxidationsmittel, weil es Elektronen aufnimmt",
+        "Das Oxidationsmittel wird selbst reduziert",
+        "$Cu^{2+}$ zwingt das Aluminium zur Oxidation",
+        "Das entstehende Kupfer (Cu) ist elementar und hat Oxidationszahl 0"
+      ],
       "explanation": "**Erklärung:** Das Oxidationsmittel nimmt Elektronen auf (wird selbst reduziert). $Cu^{2+}$ nimmt Elektronen vom Aluminium auf und wird zu elementarem Kupfer reduziert. Es \"zwingt\" das Aluminium zur Oxidation, daher ist es das Oxidationsmittel."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Spannungsreihe",
-      "question": "Ein Kupferdraht wird in Silbernitrat-Lösung getaucht. Was passiert?",
+      "question": "Welche Aussagen zur Reaktion von Kupfer in Silbernitrat-Lösung sind korrekt?",
       "options": [
-        "Keine Reaktion, weil Silber reaktiver ist als Kupfer",
         "Kupfer löst sich auf und Silber kristallisiert am Draht aus",
-        "Silber löst sich auf und Kupfer kristallisiert aus",
-        "Es bildet sich ein Gas"
+        "Kupfer steht in der Spannungsreihe über Silber (ist reaktiver)",
+        "Die Reaktionsgleichung: $Cu + 2Ag^+ \\rightarrow Cu^{2+} + 2Ag$",
+        "Es bilden sich Silberkristalle (Silberbäumchen)",
+        "Silber ist reaktiver als Kupfer und verdrängt es aus der Lösung"
       ],
-      "correctAnswer": "Kupfer löst sich auf und Silber kristallisiert am Draht aus",
+      "correctAnswers": [
+        "Kupfer löst sich auf und Silber kristallisiert am Draht aus",
+        "Kupfer steht in der Spannungsreihe über Silber (ist reaktiver)",
+        "Die Reaktionsgleichung: $Cu + 2Ag^+ \\rightarrow Cu^{2+} + 2Ag$",
+        "Es bilden sich Silberkristalle (Silberbäumchen)"
+      ],
       "explanation": "**Erklärung:** Kupfer steht in der Spannungsreihe über Silber (ist reaktiver). Daher kann Kupfer Silber-Ionen zu elementarem Silber reduzieren: $Cu + 2Ag^+ \\rightarrow Cu^{2+} + 2Ag$. Es bilden sich Silberkristalle (\"Silberbäumchen\")."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Spannungsreihe",
-      "question": "Warum reagieren Edelmetalle wie Gold oder Platin nicht mit Salzsäure?",
+      "question": "Welche Aussagen zu Edelmetallen und Säuren sind korrekt?",
       "options": [
-        "Sie stehen in der Spannungsreihe unterhalb von Wasserstoff und können $H^+$ nicht reduzieren",
-        "Sie bilden sofort eine schützende Oxidschicht",
-        "Salzsäure ist zu schwach für alle Metalle",
-        "Edelmetalle lösen sich nur in Wasser"
+        "Edelmetalle stehen in der Spannungsreihe unterhalb von Wasserstoff",
+        "Sie geben nicht freiwillig Elektronen an $H^+$-Ionen ab",
+        "Nur unedle Metalle (oberhalb von H) reagieren mit Säuren unter Wasserstoffentwicklung",
+        "Gold und Platin lösen sich in Königswasser (HNO₃/HCl-Gemisch)",
+        "Alle Metalle reagieren mit konzentrierter Salzsäure"
       ],
-      "correctAnswer": "Sie stehen in der Spannungsreihe unterhalb von Wasserstoff und können $H^+$ nicht reduzieren",
+      "correctAnswers": [
+        "Edelmetalle stehen in der Spannungsreihe unterhalb von Wasserstoff",
+        "Sie geben nicht freiwillig Elektronen an $H^+$-Ionen ab",
+        "Nur unedle Metalle (oberhalb von H) reagieren mit Säuren unter Wasserstoffentwicklung",
+        "Gold und Platin lösen sich in Königswasser (HNO₃/HCl-Gemisch)"
+      ],
       "explanation": "**Erklärung:** Edelmetalle stehen in der Spannungsreihe unter Wasserstoff. Sie sind \"edler\" und geben nicht freiwillig Elektronen an $H^+$-Ionen ab. Nur unedle Metalle (oberhalb von H) reagieren mit Säuren unter Wasserstoffentwicklung."
     },
     {
-      "type": "multiple-choice",
+      "type": "multiple-choice-multiple",
       "topic": "Redox-Reaktionen",
-      "question": "In einer Redox-Reaktion gilt immer:",
+      "question": "Welche Aussagen zu Redox-Reaktionen sind korrekt?",
       "options": [
-        "Nur Oxidation findet statt",
-        "Nur Reduktion findet statt",
-        "Oxidation und Reduktion treten als gekoppeltes Paar auf",
-        "Weder Oxidation noch Reduktion findet statt"
+        "Oxidation und Reduktion treten immer als gekoppeltes Paar auf",
+        "Elektronen, die abgegeben werden, müssen von einem anderen Stoff aufgenommen werden",
+        "Die Anzahl der abgegebenen Elektronen entspricht der Anzahl der aufgenommenen",
+        "Reduktion kann auch ohne Oxidation ablaufen",
+        "Bei Redox-Reaktionen ändert sich die Gesamtladung des Systems"
       ],
-      "correctAnswer": "Oxidation und Reduktion treten als gekoppeltes Paar auf",
+      "correctAnswers": [
+        "Oxidation und Reduktion treten immer als gekoppeltes Paar auf",
+        "Elektronen, die abgegeben werden, müssen von einem anderen Stoff aufgenommen werden",
+        "Die Anzahl der abgegebenen Elektronen entspricht der Anzahl der aufgenommenen"
+      ],
       "explanation": "**Erklärung:** Da Elektronen nicht einfach verschwinden können, muss jedes Elektron, das von einem Stoff abgegeben wird (Oxidation), von einem anderen aufgenommen werden (Reduktion). Daher treten beide Prozesse immer gemeinsam auf."
     }
   ],
-  "generatedAt": "2026-01-12T23:35:31.977Z"
+  "generatedAt": "2026-01-12T23:50:39.890Z"
 }
