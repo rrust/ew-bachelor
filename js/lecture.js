@@ -185,6 +185,41 @@ function renderCurrentLectureItem(
     case 'balance-equation':
       renderBalanceEquation(item, lectureItemDisplay);
       break;
+    case 'fill-in-the-blank':
+      renderFillInTheBlank(item, lectureItemDisplay);
+      renderMath(lectureItemDisplay);
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
+      break;
+    case 'matching':
+      renderMatching(item, lectureItemDisplay);
+      renderMath(lectureItemDisplay);
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
+      break;
+    case 'ordering':
+      renderOrdering(item, lectureItemDisplay);
+      renderMath(lectureItemDisplay);
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
+      break;
+    case 'calculation':
+      renderCalculation(item, lectureItemDisplay);
+      renderMath(lectureItemDisplay);
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
+      break;
+    case 'practice-exercise':
+      renderPracticeExercise(item, lectureItemDisplay);
+      renderMath(lectureItemDisplay);
+      if (footnoteHtml) {
+        lectureItemDisplay.insertAdjacentHTML('beforeend', footnoteHtml);
+      }
+      break;
     default:
       lectureItemDisplay.innerHTML = `<p class="text-red-500">Unbekannter Inhaltstyp: ${item.type}</p>`;
   }
@@ -882,6 +917,9 @@ function showLectureOverview(
   const externalVideoCount = lectureState.currentItems.filter(
     (i) => i.type === 'external-video'
   ).length;
+  const interactiveCount = lectureState.currentItems.filter(
+    (i) => ['fill-in-the-blank', 'matching', 'ordering', 'calculation', 'practice-exercise'].includes(i.type)
+  ).length;
 
   const descParts = [];
   if (contentCount > 0)
@@ -903,6 +941,10 @@ function showLectureOverview(
   if (externalVideoCount > 0)
     descParts.push(
       `${externalVideoCount} Ext. Video${externalVideoCount > 1 ? 's' : ''}`
+    );
+  if (interactiveCount > 0)
+    descParts.push(
+      `${interactiveCount} Übung${interactiveCount > 1 ? 'en' : ''}`
     );
 
   // Build description with estimated time if available
@@ -979,6 +1021,36 @@ function showLectureOverview(
           'bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200';
         preview = item.title || 'Gleichung ausgleichen';
         break;
+      case 'fill-in-the-blank':
+        typeLabel = 'Lückentext';
+        badgeClass =
+          'bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200';
+        preview = item.question || 'Lückentext ausfüllen';
+        break;
+      case 'matching':
+        typeLabel = 'Zuordnung';
+        badgeClass =
+          'bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200';
+        preview = item.question || 'Zuordnungsaufgabe';
+        break;
+      case 'ordering':
+        typeLabel = 'Sortierung';
+        badgeClass =
+          'bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200';
+        preview = item.question || 'Reihenfolge ordnen';
+        break;
+      case 'calculation':
+        typeLabel = 'Berechnung';
+        badgeClass =
+          'bg-lime-100 dark:bg-lime-900 text-lime-800 dark:text-lime-200';
+        preview = item.question || 'Berechnungsaufgabe';
+        break;
+      case 'practice-exercise':
+        typeLabel = 'Praxis';
+        badgeClass =
+          'bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200';
+        preview = item.title || 'Praxis-Übung';
+        break;
       default:
         typeLabel = 'Unbekannt';
         badgeClass =
@@ -1030,7 +1102,634 @@ window.LectureModule = {
   renderSelfAssessmentMC,
   renderSelfAssessmentChecklist,
   renderExternalVideo,
+  renderFillInTheBlank,
+  renderMatching,
+  renderOrdering,
+  renderCalculation,
+  renderPracticeExercise,
   renderMath,
   updateLectureNav,
   showLectureOverview
 };
+
+/**
+ * Renders a fill-in-the-blank exercise
+ * @param {Object} item - Item with question, text, blanks array
+ * @param {HTMLElement} container - Container element
+ */
+function renderFillInTheBlank(item, container) {
+  const question = item.question || 'Fülle die Lücken aus:';
+  
+  // Replace {{blankId}} placeholders with input fields
+  let textHtml = item.text || '';
+  const blanks = item.blanks || [];
+  
+  blanks.forEach((blank, index) => {
+    const placeholder = `{{${blank.id}}}`;
+    const inputHtml = `<input type="text" 
+      class="fill-blank-input inline-block w-24 md:w-32 px-2 py-1 mx-1 border-b-2 border-gray-400 dark:border-gray-500 bg-transparent text-center focus:border-blue-500 focus:outline-none"
+      data-blank-id="${blank.id}"
+      data-correct="${blank.answer}"
+      data-alternatives='${JSON.stringify(blank.alternatives || [])}'
+      placeholder="..."
+      autocomplete="off">`;
+    textHtml = textHtml.replace(placeholder, inputHtml);
+  });
+
+  // Build hints HTML
+  let hintsHtml = '';
+  const hintsWithContent = blanks.filter(b => b.hint);
+  if (hintsWithContent.length > 0) {
+    hintsHtml = `
+      <details class="mt-4">
+        <summary class="cursor-pointer text-blue-500 hover:text-blue-600 dark:text-blue-400 font-medium">
+          💡 Hinweise anzeigen
+        </summary>
+        <ul class="mt-2 ml-4 list-disc text-gray-600 dark:text-gray-400 space-y-1">
+          ${hintsWithContent.map(b => `<li><strong>Lücke ${blanks.indexOf(b) + 1}:</strong> ${b.hint}</li>`).join('')}
+        </ul>
+      </details>`;
+  }
+
+  container.innerHTML = `
+    <div class="fill-blank-container p-4 md:p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      <h3 class="text-xl font-bold mb-4">${question}</h3>
+      <p class="text-lg leading-relaxed mb-4">${textHtml}</p>
+      ${hintsHtml}
+      <div class="flex justify-center gap-4 mt-6">
+        <button class="check-blanks-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Prüfen
+        </button>
+        <button class="reset-blanks-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg transition-colors">
+          Zurücksetzen
+        </button>
+      </div>
+      <div class="blanks-feedback mt-4 p-4 rounded-lg hidden"></div>
+    </div>
+  `;
+
+  // Add event listeners
+  const checkBtn = container.querySelector('.check-blanks-btn');
+  const resetBtn = container.querySelector('.reset-blanks-btn');
+  const feedbackDiv = container.querySelector('.blanks-feedback');
+  const inputs = container.querySelectorAll('.fill-blank-input');
+
+  checkBtn.addEventListener('click', () => {
+    let allCorrect = true;
+    let allFilled = true;
+
+    inputs.forEach(input => {
+      const userValue = input.value.trim().toLowerCase();
+      const correctValue = input.dataset.correct.toLowerCase();
+      const alternatives = JSON.parse(input.dataset.alternatives || '[]').map(a => a.toLowerCase());
+      
+      if (!userValue) {
+        allFilled = false;
+        input.classList.remove('border-green-500', 'border-red-500');
+        input.classList.add('border-yellow-500');
+      } else if (userValue === correctValue || alternatives.includes(userValue)) {
+        input.classList.remove('border-gray-400', 'dark:border-gray-500', 'border-red-500', 'border-yellow-500');
+        input.classList.add('border-green-500');
+      } else {
+        allCorrect = false;
+        input.classList.remove('border-gray-400', 'dark:border-gray-500', 'border-green-500', 'border-yellow-500');
+        input.classList.add('border-red-500');
+      }
+    });
+
+    feedbackDiv.classList.remove('hidden');
+    if (!allFilled) {
+      feedbackDiv.className = 'blanks-feedback mt-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
+      feedbackDiv.innerHTML = '⚠️ Bitte fülle alle Lücken aus.';
+    } else if (allCorrect) {
+      feedbackDiv.className = 'blanks-feedback mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
+      feedbackDiv.innerHTML = '✅ Perfekt! Alle Lücken sind korrekt ausgefüllt.';
+    } else {
+      feedbackDiv.className = 'blanks-feedback mt-4 p-4 rounded-lg bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200';
+      feedbackDiv.innerHTML = '❌ Einige Antworten sind noch nicht richtig. Versuche es nochmal!';
+    }
+  });
+
+  resetBtn.addEventListener('click', () => {
+    inputs.forEach(input => {
+      input.value = '';
+      input.classList.remove('border-green-500', 'border-red-500', 'border-yellow-500');
+      input.classList.add('border-gray-400', 'dark:border-gray-500');
+    });
+    feedbackDiv.classList.add('hidden');
+  });
+}
+
+/**
+ * Renders a matching exercise (drag & drop or click-to-match)
+ * @param {Object} item - Item with question, pairs array [{term, match}]
+ * @param {HTMLElement} container - Container element
+ */
+function renderMatching(item, container) {
+  const question = item.question || 'Ordne die Begriffe richtig zu:';
+  const pairs = item.pairs || [];
+  
+  // Shuffle the matches for display
+  const shuffledMatches = [...pairs].sort(() => Math.random() - 0.5);
+  
+  container.innerHTML = `
+    <div class="matching-container p-4 md:p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      <h3 class="text-xl font-bold mb-4">${question}</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Klicke auf einen Begriff links und dann auf die passende Definition rechts.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Terms (left) -->
+        <div class="terms-column space-y-2">
+          <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Begriffe</h4>
+          ${pairs.map((p, i) => `
+            <button class="term-btn w-full text-left p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 hover:border-blue-500 transition-colors"
+                    data-term-index="${i}"
+                    data-correct-match="${i}">
+              ${p.term}
+            </button>
+          `).join('')}
+        </div>
+        
+        <!-- Matches (right) -->
+        <div class="matches-column space-y-2">
+          <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Definitionen</h4>
+          ${shuffledMatches.map((p, i) => `
+            <button class="match-btn w-full text-left p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 hover:border-blue-500 transition-colors"
+                    data-match-index="${pairs.indexOf(p)}">
+              ${p.match}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+      
+      <div class="flex justify-center gap-4 mt-6">
+        <button class="check-matching-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Prüfen
+        </button>
+        <button class="reset-matching-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg transition-colors">
+          Zurücksetzen
+        </button>
+      </div>
+      <div class="matching-feedback mt-4 p-4 rounded-lg hidden"></div>
+    </div>
+  `;
+
+  // State for matching
+  let selectedTerm = null;
+  const userMatches = {}; // termIndex -> matchIndex
+  
+  const termBtns = container.querySelectorAll('.term-btn');
+  const matchBtns = container.querySelectorAll('.match-btn');
+  const checkBtn = container.querySelector('.check-matching-btn');
+  const resetBtn = container.querySelector('.reset-matching-btn');
+  const feedbackDiv = container.querySelector('.matching-feedback');
+
+  termBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Deselect previous
+      termBtns.forEach(b => b.classList.remove('ring-2', 'ring-blue-500'));
+      // Select this term
+      btn.classList.add('ring-2', 'ring-blue-500');
+      selectedTerm = parseInt(btn.dataset.termIndex);
+    });
+  });
+
+  matchBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (selectedTerm === null) return;
+      
+      // Store the match
+      userMatches[selectedTerm] = parseInt(btn.dataset.matchIndex);
+      
+      // Visual feedback - connect them
+      const termBtn = container.querySelector(`[data-term-index="${selectedTerm}"]`);
+      termBtn.classList.remove('ring-2', 'ring-blue-500');
+      termBtn.classList.add('bg-blue-100', 'dark:bg-blue-900');
+      btn.classList.add('bg-blue-100', 'dark:bg-blue-900');
+      
+      selectedTerm = null;
+    });
+  });
+
+  checkBtn.addEventListener('click', () => {
+    let correct = 0;
+    const total = pairs.length;
+
+    termBtns.forEach(btn => {
+      const termIndex = parseInt(btn.dataset.termIndex);
+      const correctMatch = parseInt(btn.dataset.correctMatch);
+      const userMatch = userMatches[termIndex];
+
+      btn.classList.remove('bg-blue-100', 'dark:bg-blue-900', 'bg-green-100', 'dark:bg-green-900', 'bg-red-100', 'dark:bg-red-900');
+      
+      if (userMatch === correctMatch) {
+        btn.classList.add('bg-green-100', 'dark:bg-green-900', 'border-green-500');
+        correct++;
+      } else if (userMatch !== undefined) {
+        btn.classList.add('bg-red-100', 'dark:bg-red-900', 'border-red-500');
+      }
+    });
+
+    matchBtns.forEach(btn => {
+      btn.classList.remove('bg-blue-100', 'dark:bg-blue-900');
+    });
+
+    feedbackDiv.classList.remove('hidden');
+    if (correct === total) {
+      feedbackDiv.className = 'matching-feedback mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
+      feedbackDiv.innerHTML = `✅ Perfekt! Alle ${total} Zuordnungen sind korrekt!`;
+    } else {
+      feedbackDiv.className = 'matching-feedback mt-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
+      feedbackDiv.innerHTML = `${correct}/${total} richtig. Versuche es nochmal!`;
+    }
+  });
+
+  resetBtn.addEventListener('click', () => {
+    Object.keys(userMatches).forEach(k => delete userMatches[k]);
+    selectedTerm = null;
+    
+    termBtns.forEach(btn => {
+      btn.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-100', 'dark:bg-blue-900', 'bg-green-100', 'dark:bg-green-900', 'bg-red-100', 'dark:bg-red-900', 'border-green-500', 'border-red-500');
+    });
+    matchBtns.forEach(btn => {
+      btn.classList.remove('bg-blue-100', 'dark:bg-blue-900');
+    });
+    feedbackDiv.classList.add('hidden');
+  });
+}
+
+/**
+ * Renders an ordering exercise (drag to reorder)
+ * @param {Object} item - Item with question, items array (in correct order)
+ * @param {HTMLElement} container - Container element
+ */
+function renderOrdering(item, container) {
+  const question = item.question || 'Bringe die Elemente in die richtige Reihenfolge:';
+  const items = item.items || [];
+  const explanation = item.explanation || '';
+  
+  // Shuffle items for initial display
+  const shuffledItems = items.map((text, correctIndex) => ({ text, correctIndex }));
+  shuffledItems.sort(() => Math.random() - 0.5);
+
+  container.innerHTML = `
+    <div class="ordering-container p-4 md:p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      <h3 class="text-xl font-bold mb-4">${question}</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Klicke auf die Pfeile, um die Reihenfolge zu ändern.</p>
+      
+      <div class="ordering-list space-y-2" id="ordering-list-${Date.now()}">
+        ${shuffledItems.map((item, i) => `
+          <div class="ordering-item flex items-center gap-2 p-3 rounded-lg border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700"
+               data-correct-index="${item.correctIndex}"
+               data-current-index="${i}">
+            <div class="flex flex-col gap-1">
+              <button class="move-up-btn text-gray-500 hover:text-blue-500 disabled:opacity-30" ${i === 0 ? 'disabled' : ''}>▲</button>
+              <button class="move-down-btn text-gray-500 hover:text-blue-500 disabled:opacity-30" ${i === shuffledItems.length - 1 ? 'disabled' : ''}>▼</button>
+            </div>
+            <span class="ordering-number w-8 h-8 flex items-center justify-center bg-gray-200 dark:bg-gray-600 rounded-full font-bold">${i + 1}</span>
+            <span class="flex-1">${item.text}</span>
+          </div>
+        `).join('')}
+      </div>
+      
+      <div class="flex justify-center gap-4 mt-6">
+        <button class="check-ordering-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Prüfen
+        </button>
+        <button class="shuffle-ordering-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg transition-colors">
+          Neu mischen
+        </button>
+      </div>
+      <div class="ordering-feedback mt-4 p-4 rounded-lg hidden"></div>
+    </div>
+  `;
+
+  const listContainer = container.querySelector('.ordering-list');
+  const checkBtn = container.querySelector('.check-ordering-btn');
+  const shuffleBtn = container.querySelector('.shuffle-ordering-btn');
+  const feedbackDiv = container.querySelector('.ordering-feedback');
+
+  function updateOrderingUI() {
+    const orderItems = listContainer.querySelectorAll('.ordering-item');
+    orderItems.forEach((el, i) => {
+      el.dataset.currentIndex = i;
+      el.querySelector('.ordering-number').textContent = i + 1;
+      el.querySelector('.move-up-btn').disabled = i === 0;
+      el.querySelector('.move-down-btn').disabled = i === orderItems.length - 1;
+    });
+  }
+
+  listContainer.addEventListener('click', (e) => {
+    const moveUp = e.target.closest('.move-up-btn');
+    const moveDown = e.target.closest('.move-down-btn');
+    
+    if (moveUp && !moveUp.disabled) {
+      const item = moveUp.closest('.ordering-item');
+      const prev = item.previousElementSibling;
+      if (prev) {
+        listContainer.insertBefore(item, prev);
+        updateOrderingUI();
+      }
+    }
+    
+    if (moveDown && !moveDown.disabled) {
+      const item = moveDown.closest('.ordering-item');
+      const next = item.nextElementSibling;
+      if (next) {
+        listContainer.insertBefore(next, item);
+        updateOrderingUI();
+      }
+    }
+  });
+
+  checkBtn.addEventListener('click', () => {
+    const orderItems = listContainer.querySelectorAll('.ordering-item');
+    let allCorrect = true;
+
+    orderItems.forEach((el, currentPosition) => {
+      const correctPosition = parseInt(el.dataset.correctIndex);
+      el.classList.remove('border-green-500', 'border-red-500');
+      
+      if (currentPosition === correctPosition) {
+        el.classList.add('border-green-500');
+      } else {
+        el.classList.add('border-red-500');
+        allCorrect = false;
+      }
+    });
+
+    feedbackDiv.classList.remove('hidden');
+    if (allCorrect) {
+      feedbackDiv.className = 'ordering-feedback mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
+      let feedbackHtml = '✅ Perfekt! Die Reihenfolge ist korrekt!';
+      if (explanation) {
+        feedbackHtml += `<p class="mt-2 text-sm">${explanation}</p>`;
+      }
+      feedbackDiv.innerHTML = feedbackHtml;
+    } else {
+      feedbackDiv.className = 'ordering-feedback mt-4 p-4 rounded-lg bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200';
+      feedbackDiv.innerHTML = '❌ Die Reihenfolge ist noch nicht richtig. Versuche es nochmal!';
+    }
+  });
+
+  shuffleBtn.addEventListener('click', () => {
+    const orderItems = Array.from(listContainer.querySelectorAll('.ordering-item'));
+    orderItems.sort(() => Math.random() - 0.5);
+    orderItems.forEach(el => {
+      el.classList.remove('border-green-500', 'border-red-500');
+      listContainer.appendChild(el);
+    });
+    updateOrderingUI();
+    feedbackDiv.classList.add('hidden');
+  });
+}
+
+/**
+ * Renders a calculation exercise with input field
+ * @param {Object} item - Item with question, formula, variables, correctAnswer, unit, tolerance, hints
+ * @param {HTMLElement} container - Container element
+ */
+function renderCalculation(item, container) {
+  const question = item.question || 'Berechne:';
+  const formula = item.formula ? `<p class="text-lg font-mono bg-gray-100 dark:bg-gray-700 p-2 rounded mb-4">$${item.formula}$</p>` : '';
+  const unit = item.unit || '';
+  const tolerance = item.tolerance || 0;
+  const hints = item.hints || [];
+  const explanation = item.explanation || '';
+
+  // Build variables display
+  let variablesHtml = '';
+  if (item.variables && Object.keys(item.variables).length > 0) {
+    variablesHtml = `
+      <div class="mb-4 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+        <h4 class="font-semibold mb-2">Gegeben:</h4>
+        <ul class="list-disc list-inside">
+          ${Object.entries(item.variables).map(([key, val]) => `<li><strong>${key}</strong> = ${val}</li>`).join('')}
+        </ul>
+      </div>`;
+  }
+
+  // Build hints
+  let hintsHtml = '';
+  if (hints.length > 0) {
+    hintsHtml = `
+      <details class="mb-4">
+        <summary class="cursor-pointer text-blue-500 hover:text-blue-600 dark:text-blue-400 font-medium">
+          💡 Hinweise anzeigen (${hints.length})
+        </summary>
+        <ol class="mt-2 ml-6 list-decimal text-gray-600 dark:text-gray-400 space-y-1">
+          ${hints.map(h => `<li>${h}</li>`).join('')}
+        </ol>
+      </details>`;
+  }
+
+  container.innerHTML = `
+    <div class="calculation-container p-4 md:p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      <h3 class="text-xl font-bold mb-4">${question}</h3>
+      ${variablesHtml}
+      ${formula}
+      ${hintsHtml}
+      
+      <div class="flex items-center gap-2 mb-4">
+        <label class="font-semibold">Antwort:</label>
+        <input type="number" step="any"
+               class="calc-answer-input w-32 px-3 py-2 border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:border-blue-500 focus:outline-none"
+               placeholder="...">
+        <span class="text-gray-600 dark:text-gray-400">${unit}</span>
+      </div>
+      
+      <div class="flex justify-center gap-4">
+        <button class="check-calc-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Prüfen
+        </button>
+        <button class="show-solution-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg transition-colors">
+          Lösung zeigen
+        </button>
+      </div>
+      <div class="calc-feedback mt-4 p-4 rounded-lg hidden"></div>
+    </div>
+  `;
+
+  const input = container.querySelector('.calc-answer-input');
+  const checkBtn = container.querySelector('.check-calc-btn');
+  const showSolutionBtn = container.querySelector('.show-solution-btn');
+  const feedbackDiv = container.querySelector('.calc-feedback');
+
+  checkBtn.addEventListener('click', () => {
+    const userValue = parseFloat(input.value);
+    const correctValue = item.correctAnswer;
+    
+    feedbackDiv.classList.remove('hidden');
+    
+    if (isNaN(userValue)) {
+      feedbackDiv.className = 'calc-feedback mt-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
+      feedbackDiv.innerHTML = '⚠️ Bitte gib eine Zahl ein.';
+      return;
+    }
+
+    const isCorrect = Math.abs(userValue - correctValue) <= tolerance;
+    
+    if (isCorrect) {
+      input.classList.remove('border-gray-300', 'dark:border-gray-600', 'border-red-500');
+      input.classList.add('border-green-500');
+      feedbackDiv.className = 'calc-feedback mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
+      let feedbackHtml = `✅ Richtig! Die Antwort ist ${correctValue} ${unit}.`;
+      if (explanation) {
+        feedbackHtml += `<p class="mt-2 text-sm">${explanation}</p>`;
+      }
+      feedbackDiv.innerHTML = feedbackHtml;
+    } else {
+      input.classList.remove('border-gray-300', 'dark:border-gray-600', 'border-green-500');
+      input.classList.add('border-red-500');
+      feedbackDiv.className = 'calc-feedback mt-4 p-4 rounded-lg bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200';
+      feedbackDiv.innerHTML = `❌ Leider falsch. Deine Antwort: ${userValue} ${unit}. Versuche es nochmal!`;
+    }
+  });
+
+  showSolutionBtn.addEventListener('click', () => {
+    feedbackDiv.classList.remove('hidden');
+    feedbackDiv.className = 'calc-feedback mt-4 p-4 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200';
+    let solutionHtml = `<strong>Lösung:</strong> ${item.correctAnswer} ${unit}`;
+    if (explanation) {
+      solutionHtml += `<p class="mt-2">${explanation}</p>`;
+    }
+    feedbackDiv.innerHTML = solutionHtml;
+  });
+}
+
+/**
+ * Renders a practice exercise with multiple tasks
+ * @param {Object} item - Item with title, scenario, tasks array, realWorldConnection
+ * @param {HTMLElement} container - Container element
+ */
+function renderPracticeExercise(item, container) {
+  const title = item.title || 'Praxis-Übung';
+  const scenario = item.scenario || '';
+  const tasks = item.tasks || [];
+  const realWorldConnection = item.realWorldConnection || '';
+
+  let tasksHtml = tasks.map((task, i) => {
+    if (task.type === 'calculation') {
+      return `
+        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}">
+          <p class="font-medium mb-2">${i + 1}. ${task.question}</p>
+          <div class="flex items-center gap-2">
+            <input type="number" step="any"
+                   class="task-calc-input w-28 px-2 py-1 border-2 border-gray-300 dark:border-gray-600 rounded bg-gray-50 dark:bg-gray-800 focus:border-blue-500 focus:outline-none"
+                   data-correct="${task.correctAnswer}"
+                   data-tolerance="${task.tolerance || 0}"
+                   placeholder="...">
+            <span class="text-gray-600 dark:text-gray-400">${task.unit || ''}</span>
+            <span class="task-result ml-2"></span>
+          </div>
+        </div>`;
+    } else if (task.type === 'multiple-choice') {
+      return `
+        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}">
+          <p class="font-medium mb-2">${i + 1}. ${task.question}</p>
+          <div class="space-y-2">
+            ${task.options.map((opt, j) => `
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="task-${i}" value="${opt}" 
+                       class="task-mc-input" data-correct="${task.correctAnswer}">
+                <span>${opt}</span>
+              </label>
+            `).join('')}
+          </div>
+          <span class="task-result mt-2 block"></span>
+        </div>`;
+    }
+    return '';
+  }).join('');
+
+  container.innerHTML = `
+    <div class="practice-exercise-container p-4 md:p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+      <h3 class="text-xl font-bold mb-2">💡 ${title}</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-4 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg italic">${scenario}</p>
+      
+      <div class="tasks-container">
+        ${tasksHtml}
+      </div>
+      
+      <div class="flex justify-center gap-4 mt-4">
+        <button class="check-practice-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+          Alle prüfen
+        </button>
+        <button class="show-practice-solutions-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg transition-colors">
+          Lösungen zeigen
+        </button>
+      </div>
+      
+      <div class="practice-feedback mt-4 p-4 rounded-lg hidden"></div>
+      ${realWorldConnection ? `<div class="real-world-connection mt-4 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg text-green-800 dark:text-green-200 hidden"><strong>🌍 Alltagsbezug:</strong> ${realWorldConnection}</div>` : ''}
+    </div>
+  `;
+
+  const checkBtn = container.querySelector('.check-practice-btn');
+  const showSolutionsBtn = container.querySelector('.show-practice-solutions-btn');
+  const feedbackDiv = container.querySelector('.practice-feedback');
+  const realWorldDiv = container.querySelector('.real-world-connection');
+
+  checkBtn.addEventListener('click', () => {
+    let correct = 0;
+    const total = tasks.length;
+
+    tasks.forEach((task, i) => {
+      const taskEl = container.querySelector(`[data-task-index="${i}"]`);
+      const resultSpan = taskEl.querySelector('.task-result');
+      
+      if (task.type === 'calculation') {
+        const input = taskEl.querySelector('.task-calc-input');
+        const userValue = parseFloat(input.value);
+        const correctValue = parseFloat(input.dataset.correct);
+        const tolerance = parseFloat(input.dataset.tolerance) || 0;
+        
+        if (!isNaN(userValue) && Math.abs(userValue - correctValue) <= tolerance) {
+          resultSpan.innerHTML = '✅';
+          input.classList.add('border-green-500');
+          input.classList.remove('border-red-500');
+          correct++;
+        } else if (!isNaN(userValue)) {
+          resultSpan.innerHTML = '❌';
+          input.classList.add('border-red-500');
+          input.classList.remove('border-green-500');
+        }
+      } else if (task.type === 'multiple-choice') {
+        const selected = taskEl.querySelector('input[type="radio"]:checked');
+        if (selected) {
+          if (selected.value === selected.dataset.correct) {
+            resultSpan.innerHTML = '✅';
+            correct++;
+          } else {
+            resultSpan.innerHTML = '❌';
+          }
+        }
+      }
+    });
+
+    feedbackDiv.classList.remove('hidden');
+    if (correct === total) {
+      feedbackDiv.className = 'practice-feedback mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
+      feedbackDiv.innerHTML = `✅ Ausgezeichnet! Alle ${total} Aufgaben richtig!`;
+      if (realWorldDiv) realWorldDiv.classList.remove('hidden');
+    } else {
+      feedbackDiv.className = 'practice-feedback mt-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
+      feedbackDiv.innerHTML = `${correct}/${total} richtig. Weiter so!`;
+    }
+  });
+
+  showSolutionsBtn.addEventListener('click', () => {
+    tasks.forEach((task, i) => {
+      const taskEl = container.querySelector(`[data-task-index="${i}"]`);
+      const resultSpan = taskEl.querySelector('.task-result');
+      
+      if (task.type === 'calculation') {
+        resultSpan.innerHTML = `<span class="text-blue-600 dark:text-blue-400 font-medium">${task.correctAnswer} ${task.unit || ''}</span>`;
+      } else if (task.type === 'multiple-choice') {
+        resultSpan.innerHTML = `<span class="text-blue-600 dark:text-blue-400 font-medium">${task.correctAnswer}</span>`;
+      }
+    });
+    
+    if (realWorldDiv) realWorldDiv.classList.remove('hidden');
+  });
+}
