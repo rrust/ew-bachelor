@@ -1,0 +1,865 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "05-thermodynamik-enthalpie-kalorimetrie",
+  "metadata": {
+    "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
+    "description": "Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsatz, Enthalpie, Satz von Hess und kalorimetrische Messungen.",
+    "estimatedTime": 90,
+    "sources": [
+      {
+        "id": "vorlesung-k5",
+        "title": "Vorlesungsfolien Kapitel 5: Thermochemie (WS2025)",
+        "url": "https://moodle.univie.ac.at/mod/resource/view.php?id=19477196",
+        "type": "pdf"
+      },
+      {
+        "id": "mortimer",
+        "title": "Mortimer & Müller: Chemie - Das Basiswissen der Chemie (10. Aufl.)",
+        "url": null,
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
+      "content": "# Thermodynamik, Enthalpie & Kalorimetrie\n\nDie Thermochemie beschäftigt sich mit den Energieumsätzen bei chemischen Reaktionen. In dieser Vorlesung lernen wir, wie Energie in chemischen Systemen gespeichert, umgewandelt und gemessen wird. Diese Grundlagen sind essentiell für das Verständnis von Stoffwechselprozessen und dem Brennwert von Lebensmitteln.\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Die verschiedenen Energieformen (kinetisch, potentiell, Wärme) unterscheiden und auf molekularer Ebene erklären\n- Die Begriffe System, Umgebung und innere Energie definieren\n- Exotherme und endotherme Prozesse anhand von Beispielen erkennen\n- Die Einheiten Joule und Kalorie ineinander umrechnen\n- Die spezifische Wärmekapazität erklären und die Formel $q = m \\cdot c \\cdot \\Delta T$ anwenden\n- Energieberechnungen bei Phasenübergängen (Schmelzen, Verdampfen) durchführen\n- Den Ersten Hauptsatz der Thermodynamik formulieren und anwenden\n- Den Unterschied zwischen Enthalpie ($\\Delta H$) und innerer Energie ($\\Delta U$) erklären\n- Den Satz von Hess zur Berechnung von Reaktionsenthalpien nutzen\n- Standard-Bildungsenthalpien aus Tabellen für Berechnungen verwenden\n- Die Funktionsweise eines Bombenkalorimeters beschreiben und Messdaten auswerten\n- Den Zusammenhang zwischen Thermochemie und dem Brennwert von Lebensmitteln herstellen",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "topic": "Einführung in die Thermochemie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "1-3"
+        }
+      ],
+      "content": "## Was ist Thermochemie?\n\nDie **Thermochemie** ist der Teilbereich der Chemie, der sich mit den Energieumsätzen bei chemischen Reaktionen beschäftigt. Sie beantwortet die fundamentale Frage: *Woher kommt die Energie, die bei Reaktionen freigesetzt oder aufgenommen wird?*\n\n### Energie in chemischen Bindungen\n\nChemische Bindungen speichern Energie. Wenn Bindungen gebrochen und neue gebildet werden, wird Energie umgesetzt. Ein anschauliches Beispiel:\n\n> 🥜 **Brennende Erdnüsse** liefern genügend Energie, um eine Tasse Wasser zum Kochen zu bringen. Die in den Fetten gespeicherte chemische Energie wird bei der Verbrennung freigesetzt.\n\n### Die Brennstoffzelle: Chemie erzeugt Strom\n\nEin modernes Beispiel für die Nutzung chemischer Energie ist die **Wasserstoff-Brennstoffzelle**. Hier reagieren Wasserstoff und Sauerstoff kontrolliert miteinander:\n\n$$2 H_2(g) + O_2(g) \\rightarrow 2 H_2O(g) + \\text{Energie}$$\n\nDiese Reaktion setzt Energie in Form von **elektrischem Strom**, Wärme und Licht frei. Die Teilreaktionen laufen an getrennten Elektroden ab:\n\n- **Anode (Oxidation):** $2 H_2 \\rightarrow 4 H^+ + 4 e^-$\n- **Kathode (Reduktion):** $O_2 + 2 H_2O + 4 e^- \\rightarrow 4 OH^-$\n\n### Produktbevorzugende Reaktionen\n\nReaktionen, bei denen die Edukte fast vollständig zu Produkten umgewandelt werden und dabei Energie freisetzen, nennt man **produktbevorzugend**. Die Verbrennung von Zucker mit Kaliumchlorat ($KClO_3$) ist ein weiteres Beispiel für eine solche energiereiche Reaktion.\n\n> 💡 **Für Ernährungswissenschaftler:** Der gleiche Prozess – die Oxidation von Nährstoffen – findet in unserem Körper statt, nur kontrollierter. Die Energie wird nicht als Flamme, sondern als ATP (Adenosintriphosphat) gespeichert."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Energieformen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "3-5"
+        }
+      ],
+      "content": "## Energie und Wärme: Präzise Definitionen\n\nUm thermochemische Prozesse physikalisch korrekt zu beschreiben, müssen wir die Begriffe **Energie** und **Wärme** präzise definieren.\n\n### Was ist Energie?\n\n> **Energie** ist die Fähigkeit, Arbeit zu leisten oder Wärme zu übertragen.\n\nEnergie tritt in vielen Formen auf:\n- Kinetische Energie (Bewegung)\n- Potentielle Energie (Lage, chemische Bindungen)\n- Wärmeenergie (thermische Energie)\n- Elektrische Energie\n- Lichtenergie (elektromagnetische Strahlung)\n\n### Was ist Wärme?\n\n> **Wärme** ist eine Form von Energie, die zwischen zwei Objekten **ausschließlich aufgrund ihrer unterschiedlichen Temperaturen** fließt.\n\n**Wichtige Eigenschaften:**\n- Wärme fließt immer spontan von **warm nach kalt**\n- Wärme ist keine gespeicherte Energie, sondern ein **Energietransfer**\n- Das Symbol für Wärme ist $q$\n\n### Der Unterschied\n\n| Begriff     | Beschreibung                                  |\n| ----------- | --------------------------------------------- |\n| **Energie** | Gespeicherte Fähigkeit, etwas zu bewirken     |\n| **Wärme**   | Energie *in Bewegung* aufgrund von $\\Delta T$ |\n\n> ⚠️ **Häufiger Fehler:** Im Alltag sagen wir \"das Wasser hat viel Wärme\". Physikalisch korrekt wäre: \"Das Wasser hat eine hohe thermische Energie\" oder \"Das Wasser hat eine hohe Temperatur\"."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Potentielle Energie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "4-5"
+        }
+      ],
+      "content": "## Potentielle Energie auf atomarer Ebene\n\n**Potentielle Energie** (auch Lageenergie) ist die Energie, die ein Körper aufgrund seiner Position besitzt. In der Chemie betrachten wir die potentielle Energie auf **atomarer Ebene**.\n\n### Elektrostatische Anziehung\n\nGeladene Teilchen (Ionen) beeinflussen sich gegenseitig:\n- **Entgegengesetzte Ladungen** ($+$ und $-$) ziehen sich an\n- **Gleiche Ladungen** stoßen sich ab\n\n### Was passiert bei der Ionenbildung?\n\nWenn sich zwei entgegengesetzt geladene Ionen annähern:\n\n1. Die elektrostatische Anziehung zieht sie zusammen\n2. Energie wird **freigesetzt** (als Wärme)\n3. Die **potentielle Energie sinkt**\n\n$$\\text{Getrennte Ionen} \\xrightarrow{\\text{Annäherung}} \\text{Ionenpaar} + \\text{Energie}$$\n\n### Das Natriumchlorid-Beispiel\n\nBetrachten wir die Bildung eines $NaCl$-Kristalls:\n\n| Zustand                           | Potentielle Energie    |\n| --------------------------------- | ---------------------- |\n| Getrennte $Na^+$ und $Cl^-$ Ionen | **Hoch**               |\n| $NaCl$-Kristall                   | **Niedrig** (stabiler) |\n\n> 💡 **Merke:** Ein **stabiles System** besitzt immer eine **niedrigere potentielle Energie** als ein instabiles. Die Natur strebt Zustände mit niedriger Energie an.\n\n### Analogie: Fallender Ball\n\nGenauso wie ein Ball auf dem Boden (niedrige Lage = niedrige potentielle Energie) stabiler ist als auf einem Tisch, sind gebundene Ionen stabiler als getrennte.\n\n```text\nHohe PE     ○ Ball auf Tisch     Na⁺ ... Cl⁻ (getrennt)\n            ↓                     ↓\nNiedrige PE ● Ball am Boden      [Na⁺Cl⁻] (gebunden)\n```"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Kinetische Energie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "5-6"
+        }
+      ],
+      "content": "## Kinetische Energie auf molekularer Ebene\n\n**Kinetische Energie** ist die Energie der Bewegung. Auf molekularer Ebene manifestiert sie sich in drei Formen:\n\n### Die drei Bewegungsarten\n\n**1. Translation** – Bewegung durch den Raum\n- Das gesamte Molekül bewegt sich von A nach B\n- Besonders ausgeprägt in **Gasen**\n\n**2. Rotation** – Drehbewegung\n- Das Molekül dreht sich um seine Achsen\n- Hängt von der Molekülgeometrie ab\n\n**3. Vibration** – Schwingung\n- Die Atome schwingen innerhalb ihrer Bindungen\n- Bindungen werden gedehnt und gestaucht\n\n### Visualisierung am Wassermolekül\n\n```text\nTranslation:    H₂O →→→ (Molekül fliegt durch den Raum)\n\nRotation:       H₂O ↻ (Molekül dreht sich)\n\nVibration:      H—O—H (Bindungen schwingen)\n                ↔   ↔\n```\n\n### Zusammenhang mit Temperatur\n\nDie **Temperatur** ist ein direktes Maß für die mittlere kinetische Energie der Teilchen:\n\n$$T \\uparrow \\implies KE \\uparrow$$\n\n- Höhere Temperatur = schnellere Teilchenbewegung\n- Bei absolutem Nullpunkt (0 K = -273,15 °C) wäre die kinetische Energie minimal\n\n### Die zwei Energieformen im Vergleich\n\n| Energieform             | Abhängig von         | Beispiel                     |\n| ----------------------- | -------------------- | ---------------------------- |\n| **Potentielle Energie** | Position, Bindungen  | Energie in einer C-H Bindung |\n| **Kinetische Energie**  | Bewegung, Temperatur | Vibration einer Bindung      |\n\n> 💡 **Merke:** Bei chemischen Reaktionen wird oft **potentielle Energie** in **kinetische Energie** umgewandelt (und umgekehrt). Das spüren wir als Temperaturänderung!"
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Grundlagen der Energie",
+      "question": "Kannst du die grundlegenden Energiekonzepte der Thermochemie erklären?",
+      "checkpoints": [
+        "Ich kann erklären, was Thermochemie untersucht",
+        "Ich kenne den Unterschied zwischen Energie und Wärme",
+        "Ich verstehe potentielle Energie auf atomarer Ebene",
+        "Ich kann die drei Formen kinetischer Energie (Translation, Rotation, Vibration) nennen",
+        "Ich weiß, wie Temperatur mit kinetischer Energie zusammenhängt"
+      ],
+      "successMessage": "Ausgezeichnet! Du hast die Grundlagen verstanden. Weiter geht es mit der inneren Energie und Systemgrenzen.",
+      "reviewHint": "Falls du unsicher bist, lies die Abschnitte zu Energieformen und kinetischer/potentieller Energie noch einmal durch.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Innere Energie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "6-7"
+        }
+      ],
+      "content": "## Die Innere Energie (U)\n\nDie **Innere Energie** ($U$) eines Systems ist die Summe aus kinetischer und potentieller Energie aller Teilchen im System.\n\n$$\\boxed{U = PE + KE}$$\n\n### Wovon hängt die Innere Energie ab?\n\nDie innere Energie eines chemischen Systems wird durch drei Faktoren bestimmt:\n\n| Faktor                                     | Einfluss auf U                                                 |\n| ------------------------------------------ | -------------------------------------------------------------- |\n| **Anzahl der Teilchen** (Masse)            | Mehr Teilchen = mehr Energie                                   |\n| **Art der Teilchen** (Bindungen, Struktur) | Unterschiedliche Stoffe speichern unterschiedlich viel Energie |\n| **Temperatur**                             | Höhere T = höhere kinetische Energie                           |\n\n### Der Zusammenhang mit Temperatur\n\nEs gilt ein wichtiger Zusammenhang:\n\n$$T \\uparrow \\implies U \\uparrow$$\n\nJe **höher die Temperatur**, desto höher ist die innere Energie. Daher können wir **Temperaturänderungen** ($\\Delta T$) nutzen, um Änderungen der inneren Energie ($\\Delta U$) zu beobachten.\n\n### Warum ist U wichtig?\n\nDie innere Energie ist eine **Zustandsgröße**:\n- Sie hängt nur vom aktuellen Zustand ab, nicht davon, wie man dorthin gekommen ist\n- Wir können absolute Werte nicht messen, aber **Änderungen** ($\\Delta U$) schon\n\n$$\\Delta U = U_{\\text{nachher}} - U_{\\text{vorher}}$$\n\n> 💡 **Für die Praxis:** Wenn bei einer Reaktion die Temperatur steigt, hat sich kinetische Energie erhöht. Wenn die Temperatur sinkt, wurde kinetische Energie entzogen."
+    },
+    {
+      "type": "learning-content",
+      "topic": "System und Umgebung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "7-8"
+        }
+      ],
+      "content": "## System, Umgebung und Energiefluss\n\nIn der Thermodynamik ist die genaue Abgrenzung des betrachteten Bereichs entscheidend.\n\n### Wichtige Definitionen\n\n> **System:** Das untersuchte Objekt – z.B. der Inhalt eines Reaktionsgefäßes, die Chemikalien, der reagierende Stoff.\n\n> **Umgebung:** Alles außerhalb des Systems – z.B. das Gefäß selbst, die Luft, das Thermometer, letztlich das gesamte Universum.\n\n### Beispiel: Reaktion im Becherglas\n\n```text\n┌─────────────────────────────────────────┐\n│            UMGEBUNG                     │\n│  ┌──────────────────────────────────┐   │\n│  │         Becherglas               │   │\n│  │   ┌──────────────────────────┐   │   │\n│  │   │                          │   │   │\n│  │   │      S Y S T E M         │   │   │\n│  │   │   (Chemikalien in        │   │   │\n│  │   │    der Lösung)           │   │   │\n│  │   │                          │   │   │\n│  │   └──────────────────────────┘   │   │\n│  └──────────────────────────────────┘   │\n│            Luft, Thermometer...         │\n└─────────────────────────────────────────┘\n```\n\n### Thermisches Gleichgewicht\n\nEnergieübertragung in Form von Wärme erfolgt immer spontan vom **wärmeren** zum **kühleren** Objekt.\n\nDieser Prozess setzt sich fort, bis ein **thermisches Gleichgewicht** erreicht ist – beide Objekte haben dann die gleiche Temperatur.\n\n$$T_{\\text{warm}} > T_{\\text{kalt}} \\xrightarrow{\\text{Wärmefluss}} T_{\\text{Gleichgewicht}}$$\n\n> 💡 **Alltagsbeispiel:** Eine heiße Tasse Kaffee kühlt ab, weil Wärme vom Kaffee (System) an die Luft (Umgebung) fließt, bis beide gleich warm sind."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Exotherme und endotherme Prozesse",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "8-10"
+        }
+      ],
+      "content": "## Exotherm und Endotherm: Die zwei Richtungen des Energieflusses\n\nBei chemischen Reaktionen kann Energie in zwei Richtungen fließen:\n\n### Exotherme Prozesse\n\n> **Exotherm** (griech. \"exo\" = heraus): Energie fließt vom **SYSTEM zur UMGEBUNG**.\n\n**Kennzeichen:**\n- Das System **gibt Energie ab**\n- Die **Umgebung erwärmt sich** (z.B. Reaktionsgefäß wird warm)\n- Vorzeichen: $q < 0$ (negativ)\n\n**Beispiele:**\n- Verbrennung von Holz, Benzin, Nahrung\n- Neutralisationsreaktionen (Säure + Base)\n- Kristallisation\n\n### Endotherme Prozesse\n\n> **Endotherm** (griech. \"endo\" = hinein): Energie fließt von der **UMGEBUNG zum SYSTEM**.\n\n**Kennzeichen:**\n- Das System **nimmt Energie auf**\n- Die **Umgebung kühlt ab** (z.B. Reaktionsgefäß wird kalt)\n- Vorzeichen: $q > 0$ (positiv)\n\n**Beispiele:**\n- Schmelzen von Eis\n- Verdampfen von Wasser\n- Photosynthese\n- Kältepackungen (Instant Cold Packs)\n\n### Übersicht\n\n| Prozess       | Energiefluss      | Umgebung    | Vorzeichen |\n| ------------- | ----------------- | ----------- | ---------- |\n| **Exotherm**  | System → Umgebung | wird wärmer | $q < 0$    |\n| **Endotherm** | Umgebung → System | wird kälter | $q > 0$    |\n\n> 🧪 **Schnelltest:** Wenn du während einer Reaktion das Gefäß anfasst und es **warm** wird → exotherm. Wenn es **kalt** wird → endotherm."
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "System und Energiefluss",
+      "title": "Exotherme und endotherme Prozesse",
+      "content": "```mermaid\nflowchart LR\n    subgraph EXOTHERM[\"🔥 EXOTHERM\"]\n        direction LR\n        S1[System<br/>Energie ↓] -->|\"Wärme q\"| U1[Umgebung<br/>Energie ↑]\n        S1 -.->|\"wird kühler\"| S1\n        U1 -.->|\"wird wärmer\"| U1\n    end\n    \n    subgraph ENDOTHERM[\"❄️ ENDOTHERM\"]\n        direction LR\n        U2[Umgebung<br/>Energie ↓] -->|\"Wärme q\"| S2[System<br/>Energie ↑]\n        U2 -.->|\"wird kühler\"| U2\n        S2 -.->|\"wird wärmer\"| S2\n    end\n    \n    style S1 fill:#fee2e2\n    style U1 fill:#fef3c7\n    style S2 fill:#dbeafe\n    style U2 fill:#e0e7ff\n```\n\n## Zusammenfassung der Energieflüsse\n\n| Aspekt                  | Exotherm           | Endotherm          |\n| ----------------------- | ------------------ | ------------------ |\n| **Energierichtung**     | System → Umgebung  | Umgebung → System  |\n| **Systemenergie**       | nimmt ab           | nimmt zu           |\n| **Umgebungstemperatur** | steigt             | sinkt              |\n| **Gefäß anfassen**      | fühlt sich warm an | fühlt sich kalt an |\n| **Vorzeichen q**        | negativ (−)        | positiv (+)        |\n| **Beispiel**            | Verbrennung        | Verdunstung        |"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Energieerhaltung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "10-11"
+        }
+      ],
+      "content": "## Das Gesetz der Energieerhaltung\n\nDie Thermodynamik basiert auf einem fundamentalen Naturgesetz:\n\n> **Erster Hauptsatz der Thermodynamik:** Die Gesamtenergie in einem abgeschlossenen System bleibt konstant. Energie kann weder erzeugt noch vernichtet, sondern nur **umgewandelt** werden.\n\n### Energieumwandlung bei chemischen Reaktionen\n\nIn chemischen Prozessen beobachten wir oft eine Umwandlung zwischen potentieller und kinetischer Energie:\n\n**Wenn $PE$ der Produkte < $PE$ der Edukte:**\n- Die Energiedifferenz wird als kinetische Energie freigesetzt\n- Kinetische Energie → Temperaturerhöhung\n- **Exotherme Reaktion**\n\n$$PE_{\\text{Edukte}} > PE_{\\text{Produkte}} \\implies KE \\uparrow \\implies T \\uparrow$$\n\n### Schema der Energieumwandlung\n\n```text\nExotherme Reaktion:\nSystem-PE sinkt → KE steigt → Temperatur T steigt → Wärme fließt zur Umgebung\n\nEndotherme Reaktion:\nUmgebung gibt Wärme → KE steigt im System → wird in PE umgewandelt → T sinkt\n```\n\n### Energiebilanz\n\nFür das Universum (System + Umgebung) gilt immer:\n\n$$\\Delta E_{\\text{Universum}} = \\Delta E_{\\text{System}} + \\Delta E_{\\text{Umgebung}} = 0$$\n\nWas das System verliert, gewinnt die Umgebung – und umgekehrt.\n\n> 💡 **Merke:** Wenn du eine Tasse heißen Kaffee in einem Raum stehen lässt, kühlt der Kaffee ab und die Raumluft erwärmt sich minimal. Die Gesamtenergie bleibt gleich!"
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Innere Energie und Systemgrenzen",
+      "question": "Kannst du die Konzepte von System, Umgebung und Energiefluss erklären?",
+      "checkpoints": [
+        "Ich kann System und Umgebung definieren und Beispiele nennen",
+        "Ich weiß, woraus sich die innere Energie U zusammensetzt (PE + KE)",
+        "Ich kann exotherme von endothermen Prozessen unterscheiden",
+        "Ich verstehe, dass Wärme spontan von warm nach kalt fließt",
+        "Ich kann das Gesetz der Energieerhaltung formulieren"
+      ],
+      "successMessage": "Super! Du verstehst die Grundlagen der Systemgrenzen und Energieflüsse. Jetzt geht es um konkrete Berechnungen.",
+      "reviewHint": "Falls du unsicher bist, wiederhole besonders die Unterschiede zwischen exotherm und endotherm.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Energieeinheiten",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "12-13"
+        }
+      ],
+      "content": "## Energieeinheiten: Joule und Kalorie\n\nFür die Messung von Wärmeenergie gibt es zwei wichtige Einheiten.\n\n### Die Kalorie (cal)\n\nDie **Kalorie** ist eine historische Einheit, die besonders in der Ernährungswissenschaft noch verwendet wird.\n\n> **Definition:** 1 Kalorie ist die Wärmemenge, die nötig ist, um **1,00 g Wasser** um **1,0 °C** zu erwärmen.\n\n**Achtung bei Lebensmitteln!**\n\nDie \"Kalorien\" auf Lebensmittelverpackungen sind eigentlich **Kilokalorien (kcal)**:\n\n$$1 \\text{ kcal} = 1000 \\text{ cal}$$\n\n> 🍎 Wenn ein Apfel \"80 Kalorien\" hat, sind damit 80 kcal gemeint – genug Energie, um 80 Liter Wasser um 1 °C zu erwärmen!\n\n### Das Joule (J) – Die SI-Einheit\n\nIn der Wissenschaft verwenden wir die SI-Einheit **Joule (J)**.\n\n$$\\boxed{1 \\text{ cal} = 4,184 \\text{ J}}$$\n\nOder umgekehrt:\n$$1 \\text{ J} = 0,239 \\text{ cal}$$\n\n### Umrechnungstabelle\n\n| Einheit | Umrechnung        |\n| ------- | ----------------- |\n| 1 cal   | 4,184 J           |\n| 1 kcal  | 4184 J = 4,184 kJ |\n| 1 kJ    | 239 cal           |\n| 100 cal | 418,4 J           |\n\n### Beispielrechnung\n\nEin Schokoriegel hat 250 kcal. Wie viel ist das in kJ?\n\n$$250 \\text{ kcal} \\times 4,184 \\frac{\\text{kJ}}{\\text{kcal}} = 1046 \\text{ kJ}$$\n\n> 💡 **Merke:** In wissenschaftlichen Berechnungen immer Joule verwenden! Die Umrechnung 1 cal ≈ 4,2 J reicht oft für Überschlagsrechnungen."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Wärmekapazität",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "13-15"
+        }
+      ],
+      "content": "## Wärmekapazität und spezifische Wärmekapazität\n\nVerschiedene Stoffe nehmen Wärme unterschiedlich gut auf. Das beschreiben wir mit der Wärmekapazität.\n\n### Wärmekapazität (C)\n\n> **Wärmekapazität** ist die Wärmemenge, die benötigt wird, um die Temperatur eines **gesamten Körpers** um 1 °C (oder 1 K) zu erhöhen.\n\n- Symbol: $C$\n- Einheit: J/K oder J/°C\n\n**Beispiel:** Eine volle Badewanne hat eine größere Wärmekapazität als eine Tasse Wasser – es braucht mehr Energie, sie um 1 °C zu erwärmen.\n\n### Spezifische Wärmekapazität (c)\n\n> Die **spezifische Wärmekapazität** bezieht die Wärmekapazität auf **1 Gramm** des Stoffes. Das macht verschiedene Materialien vergleichbar.\n\n- Symbol: $c$ (oder $s$)\n- Einheit: $\\frac{J}{g \\cdot K}$ oder $\\frac{J}{g \\cdot °C}$\n\n### Werte für wichtige Stoffe\n\n| Stoff         | Spezifische Wärmekapazität    |\n| ------------- | ----------------------------- |\n| **Wasser**    | $4,184 \\frac{J}{g \\cdot K}$ ⭐ |\n| Ethylenglykol | $2,39 \\frac{J}{g \\cdot K}$    |\n| Aluminium     | $0,897 \\frac{J}{g \\cdot K}$   |\n| Glas          | $0,84 \\frac{J}{g \\cdot K}$    |\n| Eisen         | $0,449 \\frac{J}{g \\cdot K}$   |\n\n### Warum ist Wasser besonders?\n\nWasser hat eine **außergewöhnlich hohe** spezifische Wärmekapazität!\n\n**Grund:** Wasserstoffbrückenbindungen zwischen den Molekülen speichern viel Energie.\n\n**Bedeutung:**\n- Ozeane stabilisieren das Klima\n- Unser Körper (70% Wasser) hält die Temperatur stabil\n- Wasser ist ein gutes Kühlmittel\n\n> 💡 **Merke:** Je höher die spezifische Wärmekapazität, desto mehr Energie braucht man zum Erwärmen – aber auch desto mehr Energie kann der Stoff speichern!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Wärmeformel",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "15-16"
+        }
+      ],
+      "content": "## Die fundamentale Wärmeformel: q = m · c · ΔT\n\nDie wichtigste Formel der Kalorimetrie verknüpft Wärme mit Masse, spezifischer Wärmekapazität und Temperaturänderung.\n\n### Die Formel\n\n$$\\boxed{q = m \\cdot c \\cdot \\Delta T}$$\n\n### Die Variablen\n\n| Variable   | Bedeutung                  | Einheit               |\n| ---------- | -------------------------- | --------------------- |\n| $q$        | Übertragene Wärmeenergie   | Joule (J)             |\n| $m$        | Masse des Stoffes          | Gramm (g)             |\n| $c$        | Spezifische Wärmekapazität | $\\frac{J}{g \\cdot K}$ |\n| $\\Delta T$ | Temperaturänderung         | Kelvin (K) oder °C    |\n\n### Temperaturänderung berechnen\n\n$$\\Delta T = T_{\\text{Ende}} - T_{\\text{Start}}$$\n\n**Wichtig:** Die Temperaturdifferenz in °C und K ist identisch!\n$$\\Delta T = 10 \\text{ °C} = 10 \\text{ K}$$\n\n### Beispielrechnung\n\n**Frage:** Wie viel Energie braucht man, um 200 g Wasser von 20 °C auf 80 °C zu erwärmen?\n\n**Gegeben:**\n- $m = 200$ g\n- $c_{\\text{Wasser}} = 4,184 \\frac{J}{g \\cdot K}$\n- $\\Delta T = 80 - 20 = 60$ K\n\n**Rechnung:**\n$$q = 200 \\text{ g} \\times 4,184 \\frac{J}{g \\cdot K} \\times 60 \\text{ K}$$\n$$q = 50.208 \\text{ J} = 50,2 \\text{ kJ}$$\n\n> 💡 **Tipp:** Achte immer auf die Einheiten! Wenn $c$ in $\\frac{J}{g \\cdot K}$ gegeben ist, muss $m$ in Gramm sein."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Spezifische Wärmekapazitäten im Vergleich",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "14-15"
+        }
+      ],
+      "content": "## Vergleich verschiedener Materialien\n\nDie spezifische Wärmekapazität variiert stark zwischen verschiedenen Stoffklassen.\n\n### Übersichtstabelle\n\n| Stoff       | $c$ in $\\frac{J}{g \\cdot K}$ | Kategorie   |\n| ----------- | ---------------------------- | ----------- |\n| Wasser      | **4,184**                    | Flüssigkeit |\n| Eis         | 2,03                         | Feststoff   |\n| Wasserdampf | 1,99                         | Gas         |\n| Ethanol     | 2,44                         | Flüssigkeit |\n| Aluminium   | 0,897                        | Metall      |\n| Glas        | 0,84                         | Feststoff   |\n| Eisen       | 0,449                        | Metall      |\n| Kupfer      | 0,385                        | Metall      |\n\n### Was fällt auf?\n\n**1. Wasser ist der Spitzenreiter**\n- Höchste spezifische Wärmekapazität aller gängigen Stoffe\n- Grund: Starke Wasserstoffbrückenbindungen\n\n**2. Metalle haben niedrige Werte**\n- Leiten Wärme gut weiter, speichern aber wenig\n- Deshalb fühlt sich Metall kalt an (entzieht schnell Wärme)\n\n**3. Aggregatzustand macht einen Unterschied**\n- Eis ($c = 2,03$) vs. Wasser ($c = 4,18$) vs. Dampf ($c = 1,99$)\n- Flüssiges Wasser speichert am meisten\n\n### Praktische Konsequenzen\n\n| Situation                        | Erklärung                           |\n| -------------------------------- | ----------------------------------- |\n| Metallpfanne wird schnell heiß   | Niedriges $c$ → wenig Energie nötig |\n| Wasserkochtopf braucht länger    | Hohes $c$ des Wassers               |\n| Sand am Strand wird mittags heiß | Niedriges $c$ von Sand              |\n| Meer bleibt kühl                 | Hohes $c$ von Wasser                |\n\n> 🌊 **Klimarelevanz:** Küstenregionen haben milderes Klima als Binnenland, weil Ozeane als riesige Wärmespeicher wirken."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispielrechnung Wärmeabgabe",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "16-17"
+        }
+      ],
+      "content": "## Beispielrechnung: Abkühlung von Aluminium\n\nLassen wir uns die Wärmeformel an einem konkreten Beispiel anwenden und dabei das **Vorzeichen** verstehen.\n\n### Aufgabe\n\nWir kühlen **25,0 g Aluminium** von **310 °C** auf **37 °C** ab. Wie viel Energie verliert das Aluminium?\n\n### Gegeben\n\n- $m = 25,0$ g\n- $c_{\\text{Al}} = 0,897 \\frac{J}{g \\cdot K}$\n- $T_{\\text{Start}} = 310$ °C\n- $T_{\\text{Ende}} = 37$ °C\n\n### Schritt 1: Temperaturänderung berechnen\n\n$$\\Delta T = T_{\\text{Ende}} - T_{\\text{Start}} = 37 - 310 = -273 \\text{ K}$$\n\nDas negative Vorzeichen zeigt: **Die Temperatur sinkt**.\n\n### Schritt 2: Wärme berechnen\n\n$$q = m \\cdot c \\cdot \\Delta T$$\n$$q = 25,0 \\text{ g} \\times 0,897 \\frac{J}{g \\cdot K} \\times (-273 \\text{ K})$$\n$$q = -6.120 \\text{ J} = -6,12 \\text{ kJ}$$\n\n### Interpretation des Vorzeichens\n\n| Vorzeichen        | Bedeutung                              |\n| ----------------- | -------------------------------------- |\n| $q < 0$ (negativ) | System **gibt Wärme ab** (exotherm)    |\n| $q > 0$ (positiv) | System **nimmt Wärme auf** (endotherm) |\n\n**Ergebnis:** Das Aluminium gibt **6,12 kJ Wärme** an die Umgebung ab.\n\n> 💡 **Merke:** Das Vorzeichen von $q$ ergibt sich automatisch aus $\\Delta T$. Abkühlung → negatives $\\Delta T$ → negatives $q$ → Wärmeabgabe."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Energietransfer zwischen Stoffen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "17-18"
+        }
+      ],
+      "content": "## Energietransfer zwischen zwei Stoffen\n\nWenn ein heißer und ein kalter Stoff in Kontakt kommen, findet Energieaustausch statt.\n\n### Das Prinzip\n\nNach dem **Energieerhaltungssatz** gilt bei idealer Isolierung:\n\n$$\\boxed{q_{\\text{heiß}} = -q_{\\text{kalt}}}$$\n\nOder anders ausgedrückt:\n$$q_{\\text{heiß}} + q_{\\text{kalt}} = 0$$\n\n**Bedeutung:** Die Energie, die der heiße Stoff verliert, gewinnt der kalte Stoff.\n\n### Beispiel: Heißes Metall in kaltes Wasser\n\n```text\nVorher:                    Nachher:\n┌──────────┐               ┌──────────┐\n│ Metall   │               │ Metall   │\n│ 100 °C   │──────────────▶│  45 °C   │\n└──────────┘               └──────────┘\n                                 \n┌──────────┐               ┌──────────┐\n│ Wasser   │               │ Wasser   │\n│  20 °C   │──────────────▶│  45 °C   │\n└──────────┘               └──────────┘\n```\n\n- Metall gibt Energie ab: $q_{\\text{Metall}} < 0$\n- Wasser nimmt Energie auf: $q_{\\text{Wasser}} > 0$\n- Im Gleichgewicht: gleiche Endtemperatur\n\n### Die Gleichung aufstellen\n\n$$m_{\\text{Metall}} \\cdot c_{\\text{Metall}} \\cdot \\Delta T_{\\text{Metall}} = -m_{\\text{Wasser}} \\cdot c_{\\text{Wasser}} \\cdot \\Delta T_{\\text{Wasser}}$$\n\n### Anwendung: Unbekanntes Metall identifizieren\n\nDiese Methode wird genutzt, um die **spezifische Wärmekapazität** eines unbekannten Materials zu bestimmen:\n\n1. Metall erhitzen und in Wasser bekannter Temperatur geben\n2. Endtemperatur messen\n3. Aus der Energiebilanz $c_{\\text{Metall}}$ berechnen\n\n> 🔬 **Praxistipp:** Diese Methode setzt voraus, dass keine Wärme an die Umgebung verloren geht – daher verwendet man isolierte Gefäße (Kalorimeter)."
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Wärmekapazität und Berechnungen",
+      "question": "Kannst du Wärmeberechnungen mit der Formel q = m · c · ΔT durchführen?",
+      "checkpoints": [
+        "Ich kann Joule in Kalorien umrechnen (1 cal = 4,184 J)",
+        "Ich verstehe den Unterschied zwischen Wärmekapazität und spezifischer Wärmekapazität",
+        "Ich kann die Formel q = m · c · ΔT anwenden",
+        "Ich verstehe die Bedeutung des Vorzeichens von q (positiv/negativ)",
+        "Ich kann Energiebilanzen zwischen zwei Stoffen aufstellen"
+      ],
+      "successMessage": "Sehr gut! Du beherrschst die Grundlagen der Wärmeberechnungen. Jetzt geht es um Phasenübergänge.",
+      "reviewHint": "Übe besonders die Vorzeichenkonvention: negatives q bedeutet Wärmeabgabe.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Latente Wärme bei Phasenübergängen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "19-21"
+        }
+      ],
+      "content": "## Latente Wärme: Energie ohne Temperaturänderung\n\nBei Phasenübergängen geschieht etwas Besonderes: Energie wird zugeführt oder abgegeben, aber die **Temperatur ändert sich nicht**!\n\n### Das Phänomen\n\n> **Latente Wärme** (\"verborgene Wärme\") ist die Energie, die bei einem Phasenübergang benötigt wird, um die Anziehungskräfte zwischen den Teilchen zu überwinden.\n\nWährend des Schmelzens oder Verdampfens wird alle zugeführte Energie verwendet, um:\n- Bindungen zwischen Molekülen zu lösen\n- Die Moleküle weiter auseinander zu bringen\n- **Nicht** um sie schneller zu bewegen (→ keine T-Änderung)\n\n### Die Formel\n\n$$q = \\Delta H_{\\text{Umwandlung}} \\cdot m$$\n\n### Wichtige Werte für Wasser\n\n| Phasenübergang | Bezeichnung                                     | Wert         |\n| -------------- | ----------------------------------------------- | ------------ |\n| Eis → Wasser   | **Schmelzwärme** ($\\Delta H_{\\text{fus}}$)      | **333 J/g**  |\n| Wasser → Dampf | **Verdampfungswärme** ($\\Delta H_{\\text{vap}}$) | **2260 J/g** |\n\n### Vergleich der Energiemengen\n\nUm 1 g Wasser umzuwandeln, braucht man:\n\n| Prozess                    | Energie | Faktor   |\n| -------------------------- | ------- | -------- |\n| Eis schmelzen (0 °C)       | 333 J   | 1×       |\n| Wasser um 100 °C erwärmen  | 418 J   | 1,25×    |\n| Wasser verdampfen (100 °C) | 2260 J  | **6,8×** |\n\n> 💡 **Merke:** Das Verdampfen braucht die meiste Energie! Deshalb dauert Wasserkochen so lange, nachdem es einmal sprudelt."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Verdunstungskälte",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "21-22"
+        }
+      ],
+      "content": "## Verdunstungskälte: Warum Verdampfung kühlt\n\nDer Übergang von flüssig zu gasförmig benötigt Energie (Verdampfungswärme). Diese Energie wird der **Umgebung entzogen** – deshalb kühlt Verdunstung.\n\n### Alltagsbeispiele\n\n**1. Nach dem Schwimmen frieren** 🏊\n- Wasser verdunstet auf der Haut\n- Die nötige Verdampfungswärme wird dem Körper entzogen\n- Wir fühlen uns kalt\n\n**2. Feuer löschen mit Wasser** 🔥\n- Wasser verdampft am heißen Brandherd\n- Entzieht dem Feuer große Mengen Energie\n- 1 L Wasser → ~2,26 MJ Energieentzug!\n\n**3. Tonkühlung (\"Zeer Pot\")** 🏺\n- Traditionelle Methode in heißen Ländern\n- Wasser sickert durch porösen Ton nach außen\n- Verdunstung an der Oberfläche kühlt den Inhalt\n\n### Die physikalische Erklärung\n\n```text\nFlüssigkeit    →    Gas\n(geordneter)       (ungeordneter)\n\nEnergie nötig, um:\n• Molekülbindungen zu lösen\n• Moleküle schneller zu bewegen\n• Molekülabstände zu vergrößern\n\nDiese Energie = Verdampfungswärme = wird der Umgebung entzogen\n```\n\n### Schwitzen als Kühlmechanismus\n\nUnser Körper nutzt genau diesen Effekt zur **Thermoregulation**:\n\n$$\\text{Schweiß} \\xrightarrow{\\text{Verdunstung}} \\text{Kühlung der Haut}$$\n\nBei 37 °C Körpertemperatur und intensiver Aktivität können wir pro Stunde bis zu 2 L Schweiß produzieren – das entspricht einer Kühlleistung von über **4000 kJ**!\n\n> 💡 **Für Ernährungswissenschaftler:** Deshalb ist ausreichendes Trinken bei körperlicher Aktivität so wichtig – der Körper verliert viel Wasser durch Schwitzen."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Die Heizkurve von Wasser",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "22-24"
+        }
+      ],
+      "content": "## Berechnung über mehrere Stufen: Die Heizkurve\n\nWenn wir Eis zu Dampf umwandeln wollen, müssen wir mehrere Prozesse berücksichtigen – jeder mit seiner eigenen Formel.\n\n### Beispielaufgabe\n\n**Frage:** Wie viel Energie braucht man, um **500 g Eis bei 0 °C** in **Dampf bei 100 °C** umzuwandeln?\n\n### Die drei Schritte\n\n**Schritt 1: Eis schmelzen (bei 0 °C)**\n\nTemperatur bleibt konstant! Wir nutzen die Schmelzwärme:\n$$q_1 = m \\cdot \\Delta H_{\\text{fus}} = 500 \\text{ g} \\times 333 \\frac{J}{g} = 166.500 \\text{ J}$$\n\n**Schritt 2: Wasser erwärmen (0 °C → 100 °C)**\n\nJetzt nutzen wir $q = mc\\Delta T$:\n$$q_2 = 500 \\text{ g} \\times 4,184 \\frac{J}{g \\cdot K} \\times 100 \\text{ K} = 209.200 \\text{ J}$$\n\n**Schritt 3: Wasser verdampfen (bei 100 °C)**\n\nWieder konstante Temperatur! Verdampfungswärme:\n$$q_3 = m \\cdot \\Delta H_{\\text{vap}} = 500 \\text{ g} \\times 2260 \\frac{J}{g} = 1.130.000 \\text{ J}$$\n\n### Gesamtenergie\n\n$$q_{\\text{ges}} = q_1 + q_2 + q_3 = 166.500 + 209.200 + 1.130.000 \\text{ J}$$\n$$\\boxed{q_{\\text{ges}} = 1.505.700 \\text{ J} \\approx 1.506 \\text{ kJ}}$$\n\n### Anteil am Gesamtprozess\n\n| Schritt    | Energie (kJ) | Anteil  |\n| ---------- | ------------ | ------- |\n| Schmelzen  | 166,5        | 11%     |\n| Erwärmen   | 209,2        | 14%     |\n| Verdampfen | 1130         | **75%** |\n\n> 💡 **Erkenntnis:** Das Verdampfen braucht mit Abstand am meisten Energie – etwa 3/4 der Gesamtenergie!"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Phasenübergänge",
+      "title": "Heizkurve von Wasser",
+      "content": "```mermaid\n%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '14px'}}}%%\nxychart-beta\n    title \"Heizkurve: Temperatur vs. zugeführte Energie\"\n    x-axis \"Zugeführte Energie (kJ)\" [0, 50, 100, 150, 200, 250, 300, 350]\n    y-axis \"Temperatur (°C)\" -20 --> 120\n    line [0, 0, 0, 0, 20, 60, 100, 100]\n```\n\n## Die fünf Phasen der Heizkurve\n\n| Phase | Prozess           | Formel                              | Temperatur          |\n| ----- | ----------------- | ----------------------------------- | ------------------- |\n| **A** | Eis erwärmen      | $q = mc_{\\text{Eis}}\\Delta T$       | steigt              |\n| **B** | Eis schmelzen     | $q = m \\cdot \\Delta H_{\\text{fus}}$ | **konstant 0 °C**   |\n| **C** | Wasser erwärmen   | $q = mc_{\\text{Wasser}}\\Delta T$    | steigt              |\n| **D** | Wasser verdampfen | $q = m \\cdot \\Delta H_{\\text{vap}}$ | **konstant 100 °C** |\n| **E** | Dampf erwärmen    | $q = mc_{\\text{Dampf}}\\Delta T$     | steigt              |\n\n## Wichtige Beobachtungen\n\n1. **Plateaus** bei 0 °C und 100 °C: Hier findet Phasenumwandlung statt\n2. **Steigung** der Kurve hängt von der spezifischen Wärmekapazität ab\n3. Das **Verdampfungsplateau** ist am längsten (meiste Energie nötig)"
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Phasenübergänge und Heizkurve",
+      "question": "Kannst du Energieberechnungen bei Phasenübergängen durchführen?",
+      "checkpoints": [
+        "Ich verstehe, warum bei Phasenübergängen die Temperatur konstant bleibt",
+        "Ich kenne die Schmelzwärme (333 J/g) und Verdampfungswärme (2260 J/g) von Wasser",
+        "Ich kann erklären, warum Verdunstung kühlt",
+        "Ich kann mehrstufige Heizkurvenberechnungen durchführen",
+        "Ich weiß, dass Verdampfen am meisten Energie benötigt"
+      ],
+      "successMessage": "Hervorragend! Du verstehst Phasenübergänge. Jetzt geht es zum Ersten Hauptsatz und zur Enthalpie.",
+      "reviewHint": "Wiederhole besonders die Unterscheidung zwischen q = mcΔT (mit Temperaturänderung) und q = m·ΔH (bei Phasenübergängen).",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Volumenarbeit",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "25-26"
+        }
+      ],
+      "content": "## Volumenarbeit: Wenn Gase sich ausdehnen\n\nNeben Wärme kann ein System auch **Arbeit** leisten oder empfangen. Die wichtigste Form in der Chemie ist die **Volumenarbeit** (PV-Arbeit).\n\n### Beispiel: Sublimation von Trockeneis\n\nTrockeneis ($CO_2$, fest) sublimiert bei -78 °C direkt zu Gas:\n\n$$CO_2(s, -78°C) \\rightarrow CO_2(g, -78°C)$$\n\nWas passiert energetisch?\n\n**1. Die innere Energie steigt**\n- Gasmoleküle haben mehr kinetische Energie\n- Sie bewegen sich frei durch den Raum\n\n**2. Das System leistet Volumenarbeit**\n- Das entstehende Gas verdrängt die umgebende Luft\n- Das System \"drückt gegen\" den Atmosphärendruck\n\n### Volumenarbeit berechnen\n\n$$w = -P \\cdot \\Delta V$$\n\n- $P$ = Druck (konstant)\n- $\\Delta V$ = Volumenänderung\n\nDas Vorzeichen:\n- **Expansion** ($\\Delta V > 0$): $w < 0$ (System leistet Arbeit)\n- **Kompression** ($\\Delta V < 0$): $w > 0$ (Arbeit wird am System verrichtet)\n\n### Visualisierung\n\n```text\nExpansion:                    Kompression:\n┌─────────────────┐           ┌─────────────────┐\n│    Gas          │           │   │ Kolben ↓    │\n│   (Druck)       │ → Kolben  │   ▼             │\n│                 │   bewegt  │    Gas          │\n│   → → →         │   sich    │   ← ← ←         │\n└─────────────────┘   raus    └─────────────────┘\n\nSystem leistet Arbeit         Arbeit am System\nw < 0                         w > 0\n```\n\n> 💡 **Merke:** Bei Reaktionen mit Gasbildung (z.B. Verbrennung) muss immer auch Volumenarbeit berücksichtigt werden!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Der Erste Hauptsatz der Thermodynamik",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "26-28"
+        }
+      ],
+      "content": "## Der Erste Hauptsatz der Thermodynamik\n\nDer Erste Hauptsatz verknüpft alle Energieformen mathematisch:\n\n$$\\boxed{\\Delta U = q + w}$$\n\n### Die Variablen\n\n| Symbol     | Bedeutung                    |\n| ---------- | ---------------------------- |\n| $\\Delta U$ | Änderung der inneren Energie |\n| $q$        | Übertragene Wärme            |\n| $w$        | Verrichtete Arbeit           |\n\n### Die Vorzeichenkonvention\n\n**Für Wärme (q):**\n\n| Richtung           | Vorzeichen | Bezeichnung |\n| ------------------ | ---------- | ----------- |\n| Energie IN System  | $+q$       | Endotherm   |\n| Energie AUS System | $-q$       | Exotherm    |\n\n**Für Arbeit (w):**\n\n| Richtung          | Vorzeichen | Prozess     |\n| ----------------- | ---------- | ----------- |\n| Arbeit AM System  | $+w$       | Kompression |\n| Arbeit VOM System | $-w$       | Expansion   |\n\n### Beispiel: Gas wird erhitzt und dehnt sich aus\n\nEin Gas wird erhitzt ($q = +500$ J) und dehnt sich dabei aus ($w = -200$ J).\n\n$$\\Delta U = q + w = (+500) + (-200) = +300 \\text{ J}$$\n\nDie innere Energie steigt um 300 J:\n- 500 J kamen durch Wärme rein\n- 200 J wurden als Arbeit abgegeben\n\n### Merkregel\n\n```text\n    Wärme rein (+q)\n         ↓\n   ┌─────────────┐\n   │   SYSTEM    │ → Arbeit raus (-w)\n   │     ΔU      │\n   └─────────────┘\n```\n\n> 💡 **Eselsbrücke:** \"Plus rein, minus raus\" – Alles, was ins System fließt, ist positiv."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Definition der Enthalpie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "28-30"
+        }
+      ],
+      "content": "## Enthalpie: Die praktische Energiegröße\n\nDa die meisten chemischen Reaktionen in offenen Gefäßen bei **konstantem Druck** stattfinden, führen wir eine neue Größe ein: die **Enthalpie**.\n\n### Warum brauchen wir Enthalpie?\n\nBei konstantem Druck (offenes Gefäß, Atmosphärendruck) ist die **übertragene Wärme** besonders einfach zu messen. Diese Wärme entspricht der Enthalpieänderung:\n\n$$\\boxed{q_p = \\Delta H}$$\n\nwobei $p$ für \"konstanter Druck\" steht.\n\n### Definition der Enthalpie\n\n$$H = U + PV$$\n\nDie Enthalpieänderung bei einer Reaktion:\n$$\\Delta H = \\Delta U + P\\Delta V$$\n\nBei vielen Reaktionen ist $P\\Delta V$ klein, daher gilt oft:\n$$\\Delta H \\approx \\Delta U$$\n\n### Die Bedeutung von ΔH\n\n$$\\Delta H = H_{\\text{Produkte}} - H_{\\text{Edukte}}$$\n\n| Vorzeichen     | Bedeutung     | Energiefluss             |\n| -------------- | ------------- | ------------------------ |\n| $\\Delta H < 0$ | **Exotherm**  | Energie wird freigesetzt |\n| $\\Delta H > 0$ | **Endotherm** | Energie wird aufgenommen |\n\n### Beispiel: Wasserbildung\n\n$$H_2(g) + \\frac{1}{2}O_2(g) \\rightarrow H_2O(g) \\quad \\Delta H = -241,8 \\text{ kJ}$$\n\nDie Reaktion ist **exotherm** – es werden 241,8 kJ pro Mol Wasser freigesetzt.\n\n> 💡 **Praxisrelevanz:** Auf Lebensmittelverpackungen steht der \"Brennwert\" in kJ – das ist nichts anderes als die Reaktionsenthalpie der Oxidation!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Vorzeichen der Enthalpie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "30-31"
+        }
+      ],
+      "content": "## Das Vorzeichen von ΔH verstehen\n\nDas Vorzeichen der Enthalpieänderung gibt direkt Auskunft über die Energiebilanz einer Reaktion.\n\n### Übersicht\n\n| $\\Delta H$          | Reaktionstyp | Energie          | Produkte vs. Edukte     |\n| ------------------- | ------------ | ---------------- | ----------------------- |\n| **Negativ** ($< 0$) | Exotherm     | wird freigesetzt | Produkte energieärmer   |\n| **Positiv** ($> 0$) | Endotherm    | wird aufgenommen | Produkte energiereicher |\n\n### Energiediagramme\n\n**Exotherme Reaktion ($\\Delta H < 0$):**\n\n```text\nEnergie\n   ↑\n   │  ┌───────┐\n   │  │Edukte │ ←── Höhere Energie\n   │  └───┬───┘\n   │      │ ↓ Energie frei\n   │      ↓ ΔH < 0\n   │  ┌───────┐\n   │  │Produkte│ ←── Niedrigere Energie\n   │  └───────┘\n   └────────────────→ Reaktionsverlauf\n```\n\n**Endotherme Reaktion ($\\Delta H > 0$):**\n\n```text\nEnergie\n   ↑\n   │  ┌───────┐\n   │  │Produkte│ ←── Höhere Energie\n   │  └───┬───┘\n   │      ↑ ΔH > 0\n   │      │ Energie rein\n   │  ┌───────┐\n   │  │Edukte │ ←── Niedrigere Energie\n   │  └───────┘\n   └────────────────→ Reaktionsverlauf\n```\n\n### Beispiele\n\n| Reaktion               | $\\Delta H$   | Typ       |\n| ---------------------- | ------------ | --------- |\n| Verbrennung von Methan | −890 kJ/mol  | Exotherm  |\n| Wasserbildung          | −286 kJ/mol  | Exotherm  |\n| Photosynthese          | +2803 kJ/mol | Endotherm |\n| Verdampfen von Wasser  | +40,7 kJ/mol | Endotherm |\n\n> 💡 **Merke:** Exotherme Reaktionen ($\\Delta H < 0$) laufen oft spontan ab, weil das System einen energieärmeren, stabileren Zustand erreicht."
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Erster Hauptsatz und Enthalpie",
+      "question": "Kannst du den Ersten Hauptsatz und die Enthalpie erklären und anwenden?",
+      "checkpoints": [
+        "Ich verstehe die Vorzeichenkonvention für q und w",
+        "Ich kann ΔH-Vorzeichen interpretieren (negativ = exotherm, positiv = endotherm)",
+        "Ich verstehe den Zusammenhang zwischen ΔH und ΔU"
+      ],
+      "successMessage": "Ausgezeichnet! Du verstehst die thermodynamischen Grundgrößen. Weiter zum Satz von Hess!",
+      "reviewHint": "Achte besonders auf die Vorzeichenkonventionen – sie sind entscheidend für korrekte Berechnungen.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Der Satz von Hess",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "32-34"
+        }
+      ],
+      "content": "## Der Satz von Hess: Wegunabhängigkeit der Enthalpie\n\nDie Enthalpie ist eine **Zustandsgröße**. Das bedeutet: Die Änderung $\\Delta H$ hängt nur vom Anfangs- und Endzustand ab, **nicht vom Weg**.\n\n### Der Satz von Hess\n\n> **Gesetz der konstanten Wärmesummen:** Wenn eine Reaktion die Summe aus zwei oder mehreren Teilreaktionen ist, dann ist $\\Delta H_{\\text{ges}}$ die Summe der einzelnen $\\Delta H$-Werte.\n\n$$\\Delta H_{\\text{ges}} = \\Delta H_1 + \\Delta H_2 + \\Delta H_3 + ...$$\n\n### Beispiel: Bildung von flüssigem Wasser\n\n**Weg A (direkt):**\n$$H_2(g) + \\frac{1}{2}O_2(g) \\rightarrow H_2O(l) \\quad \\Delta H = -286 \\text{ kJ}$$\n\n**Weg B (über Dampf):**\n\nSchritt 1: Gasförmiges Wasser bilden\n$$H_2(g) + \\frac{1}{2}O_2(g) \\rightarrow H_2O(g) \\quad \\Delta H_1 = -242 \\text{ kJ}$$\n\nSchritt 2: Dampf kondensieren\n$$H_2O(g) \\rightarrow H_2O(l) \\quad \\Delta H_2 = -44 \\text{ kJ}$$\n\n**Summe Weg B:**\n$$\\Delta H_{\\text{ges}} = -242 + (-44) = -286 \\text{ kJ}$$\n\n✓ Beide Wege liefern das gleiche Ergebnis!\n\n### Praktischer Nutzen\n\nMit dem Satz von Hess können wir Reaktionsenthalpien berechnen, die:\n- Schwer direkt messbar sind\n- Zu langsam oder zu gefährlich wären\n- Aus tabellierten Werten konstruiert werden können\n\n> 💡 **Analogie:** Egal ob du direkt auf den Gipfel wanderst oder erst ins Tal und dann hoch – die Höhendifferenz ist dieselbe!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Standardbedingungen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "34-35"
+        }
+      ],
+      "content": "## Standardbedingungen in der Thermochemie\n\nUm Enthalpiewerte vergleichbar zu machen, definiert man **Standardbedingungen**.\n\n### Definition der Standardbedingungen\n\n| Parameter         | Standardwert      | Symbol |\n| ----------------- | ----------------- | ------ |\n| **Druck**         | 1 atm (101,3 kPa) | °      |\n| **Konzentration** | 1 mol/L           |        |\n| **Temperatur**    | 25 °C (298 K)     |        |\n\nDas hochgestellte ° (Kreis) zeigt an, dass es sich um Standardbedingungen handelt:\n- $\\Delta H°$ = Standard-Reaktionsenthalpie\n- $\\Delta_f H°$ = Standard-Bildungsenthalpie\n\n### Standardzustand der Elemente\n\nJedes Element hat bei Standardbedingungen einen definierten **Referenzzustand**:\n\n| Element     | Standardzustand            |\n| ----------- | -------------------------- |\n| Sauerstoff  | $O_2(g)$ – gasförmig       |\n| Wasserstoff | $H_2(g)$ – gasförmig       |\n| Stickstoff  | $N_2(g)$ – gasförmig       |\n| Kohlenstoff | $C(s)$, Graphit – fest     |\n| Schwefel    | $S_8(s)$ – fest, rhombisch |\n| Phosphor    | $P_4(s)$ – fest, weiß      |\n| Brom        | $Br_2(l)$ – flüssig        |\n| Quecksilber | $Hg(l)$ – flüssig          |\n\n### Warum ist das wichtig?\n\n- Ermöglicht Vergleich von Literaturwerten\n- Definierter Nullpunkt für Berechnungen\n- Alle tabellierten Werte beziehen sich auf Standardbedingungen\n\n> ⚠️ **Achtung:** Die Standardtemperatur 25 °C ist **nicht** \"Normalbedingungen\" (0 °C, 1 atm) aus der Physik!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Standard-Bildungsenthalpie",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "35-37"
+        }
+      ],
+      "content": "## Standard-Bildungsenthalpie ($\\Delta_f H°$)\n\nDie Standard-Bildungsenthalpie ist ein zentraler Begriff für thermochemische Berechnungen.\n\n### Definition\n\n> Die **Standard-Bildungsenthalpie** ($\\Delta_f H°$) ist die Enthalpieänderung, wenn **1 Mol** einer Verbindung aus ihren **Elementen im Standardzustand** gebildet wird.\n\n### Die wichtigste Regel\n\n$$\\boxed{\\Delta_f H° \\text{ (Elemente im Standardzustand)} = 0}$$\n\nFür reine Elemente in ihrer stabilsten Form gilt: $\\Delta_f H° = 0$\n\n**Beispiele:**\n- $\\Delta_f H°(O_2, g) = 0$\n- $\\Delta_f H°(C, \\text{Graphit}) = 0$\n- $\\Delta_f H°(Fe, s) = 0$\n- $\\Delta_f H°(Br_2, l) = 0$\n\n**Aber Achtung:**\n- $\\Delta_f H°(O_3, g) \\neq 0$ (Ozon ist nicht der Standardzustand!)\n- $\\Delta_f H°(C, \\text{Diamant}) \\neq 0$ (Diamant ist nicht die stabilste Form!)\n\n### Wichtige Bildungsenthalpien\n\n| Verbindung                  | $\\Delta_f H°$ (kJ/mol) |\n| --------------------------- | ---------------------- |\n| $H_2O(l)$                   | −285,8                 |\n| $H_2O(g)$                   | −241,8                 |\n| $CO_2(g)$                   | −393,5                 |\n| $CH_4(g)$                   | −74,8                  |\n| $C_6H_{12}O_6(s)$ (Glucose) | −1274                  |\n| $NH_3(g)$                   | −46,1                  |\n| $NaCl(s)$                   | −411,2                 |\n\n### Interpretation\n\n- **Negative Werte:** Bildung ist exotherm, Verbindung ist stabil\n- **Positive Werte:** Bildung ist endotherm, Verbindung ist energiereich\n\n> 💡 **Merke:** Mit tabellierten $\\Delta_f H°$-Werten können wir die Enthalpie jeder beliebigen Reaktion berechnen!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Berechnung von Reaktionsenthalpien",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "37-39"
+        }
+      ],
+      "content": "## Die Master-Formel für Reaktionsenthalpien\n\nMit den Standard-Bildungsenthalpien können wir die Enthalpie jeder Reaktion berechnen.\n\n### Die Formel\n\n$$\\boxed{\\Delta_r H° = \\sum \\Delta_f H°(\\text{Produkte}) - \\sum \\Delta_f H°(\\text{Edukte})}$$\n\n**Kurz:** \"Produkte minus Edukte\"\n\n### Vorgehen\n\n1. Reaktionsgleichung aufstellen\n2. $\\Delta_f H°$-Werte für alle Stoffe nachschlagen\n3. Koeffizienten berücksichtigen (multiplizieren!)\n4. Produktsumme minus Eduktsumme berechnen\n\n### Beispiel: Verbrennung von Methan\n\n$$CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(g)$$\n\n**Schritt 1: Werte nachschlagen**\n\n| Stoff     | $\\Delta_f H°$ (kJ/mol) |\n| --------- | ---------------------- |\n| $CH_4(g)$ | −74,8                  |\n| $O_2(g)$  | 0 (Element!)           |\n| $CO_2(g)$ | −393,5                 |\n| $H_2O(g)$ | −241,8                 |\n\n**Schritt 2: Summen berechnen**\n\nProdukte: $(1 \\times -393,5) + (2 \\times -241,8) = -877,1$ kJ\n\nEdukte: $(1 \\times -74,8) + (2 \\times 0) = -74,8$ kJ\n\n**Schritt 3: Differenz**\n\n$$\\Delta_r H° = -877,1 - (-74,8) = -802,3 \\text{ kJ/mol}$$\n\n### Interpretation\n\nDie Verbrennung von Methan setzt **802 kJ pro Mol** frei – eine stark exotherme Reaktion!\n\n> 💡 **Tipp:** Vergiss nie die stöchiometrischen Koeffizienten! 2 mol $H_2O$ bedeutet, dass du den $\\Delta_f H°$-Wert mit 2 multiplizieren musst."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispiel Methanolverbrennung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "39-40"
+        }
+      ],
+      "content": "## Vollständige Berechnung: Verbrennung von Methanol\n\nWenden wir die Berechnungsmethode auf die Verbrennung von Methanol an.\n\n### Die Reaktion\n\n$$CH_3OH(g) + \\frac{3}{2}O_2(g) \\rightarrow CO_2(g) + 2H_2O(g)$$\n\n### Gegebene Werte\n\n| Verbindung  | $\\Delta_f H°$ (kJ/mol) |\n| ----------- | ---------------------- |\n| $CH_3OH(g)$ | −201,5                 |\n| $O_2(g)$    | 0                      |\n| $CO_2(g)$   | −393,5                 |\n| $H_2O(g)$   | −241,8                 |\n\n### Berechnung\n\n**Produkte:**\n$$\\sum \\Delta_f H°(\\text{Produkte}) = 1 \\times (-393,5) + 2 \\times (-241,8)$$\n$$= -393,5 - 483,6 = -877,1 \\text{ kJ}$$\n\n**Edukte:**\n$$\\sum \\Delta_f H°(\\text{Edukte}) = 1 \\times (-201,5) + \\frac{3}{2} \\times 0$$\n$$= -201,5 \\text{ kJ}$$\n\n**Reaktionsenthalpie:**\n$$\\Delta_r H° = -877,1 - (-201,5) = -675,6 \\text{ kJ/mol}$$\n\n### Ergebnis\n\nBei der Verbrennung von **1 mol Methanol** (32 g) werden **675,6 kJ** Energie freigesetzt.\n\n### Umrechnung auf Masse\n\nPro Gramm Methanol:\n$$\\frac{675,6 \\text{ kJ}}{32 \\text{ g}} = 21,1 \\text{ kJ/g}$$\n\nZum Vergleich:\n- Benzin: ~44 kJ/g\n- Ethanol: ~27 kJ/g\n- Wasserstoff: ~120 kJ/g\n\n> 🚗 **Anwendung:** Methanol wird als alternativer Kraftstoff erforscht, hat aber einen niedrigeren Energiegehalt als Benzin."
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Satz von Hess",
+      "title": "Wegunabhängigkeit der Enthalpie",
+      "content": "```mermaid\nflowchart TD\n    A[\"H₂(g) + ½O₂(g)<br/>Edukte\"] --> |\"Weg A<br/>ΔH = -286 kJ\"| B[\"H₂O(l)<br/>Produkt\"]\n    \n    A --> |\"Schritt 1<br/>ΔH₁ = -242 kJ\"| C[\"H₂O(g)<br/>Zwischenprodukt\"]\n    C --> |\"Schritt 2<br/>ΔH₂ = -44 kJ\"| B\n    \n    style A fill:#fee2e2\n    style B fill:#dcfce7\n    style C fill:#dbeafe\n```\n\n## Die Wegunabhängigkeit\n\nBeide Wege führen zum gleichen Ergebnis:\n\n| Weg                | Berechnung                               | Ergebnis |\n| ------------------ | ---------------------------------------- | -------- |\n| **A** (direkt)     | $\\Delta H_A$                             | −286 kJ  |\n| **B** (über Dampf) | $\\Delta H_1 + \\Delta H_2 = -242 + (-44)$ | −286 kJ  |\n\n## Anwendung: Reaktionen kombinieren\n\nMit dem Satz von Hess können wir:\n\n1. **Gleichungen addieren** → $\\Delta H$-Werte addieren\n2. **Gleichungen umkehren** → $\\Delta H$ Vorzeichen wechseln\n3. **Gleichungen multiplizieren** → $\\Delta H$ mit gleichem Faktor multiplizieren"
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Satz von Hess und Bildungsenthalpien",
+      "question": "Kannst du Reaktionsenthalpien mit dem Satz von Hess berechnen?",
+      "checkpoints": [
+        "Ich verstehe, dass Enthalpie eine Zustandsgröße ist (wegunabhängig)",
+        "Ich kenne die Standardbedingungen (1 atm, 25 °C)",
+        "Ich weiß, dass ΔfH° für Elemente im Standardzustand = 0 ist",
+        "Ich kann die Formel ΔrH° = Σ(Produkte) - Σ(Edukte) anwenden",
+        "Ich kann Enthalpien aus Teilreaktionen berechnen (Hess)"
+      ],
+      "successMessage": "Hervorragend! Du beherrschst die Enthalpieberechnungen. Jetzt zur experimentellen Messung!",
+      "reviewHint": "Übe besonders das Aufstellen der Summen mit den stöchiometrischen Koeffizienten.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Das Bombenkalorimeter",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "41-43"
+        }
+      ],
+      "content": "## Das Bombenkalorimeter: Präzisionsmessung von Verbrennungswärmen\n\nZur experimentellen Bestimmung von Reaktionsenthalpien nutzt man **Kalorimeter**. Das genaueste Gerät für Verbrennungen ist das Bombenkalorimeter.\n\n### Aufbau\n\n```text\n┌─────────────────────────────────────────┐\n│     Isolierung (Dewargefäß)             │\n│  ┌───────────────────────────────────┐  │\n│  │        Wasser                     │  │\n│  │     ┌─────────────────┐           │  │\n│  │     │   \"Bombe\"       │ ← Stahl-  │  │\n│  │     │   ┌─────┐       │   behälter│  │\n│  │     │   │Probe│       │           │  │\n│  │     │   └─────┘       │           │  │\n│  │     │   + O₂ unter    │           │  │\n│  │     │     Druck       │           │  │\n│  │     └─────────────────┘           │  │\n│  │  🌡️ Thermometer    ⟳ Rührer      │  │\n│  └───────────────────────────────────┘  │\n└─────────────────────────────────────────┘\n```\n\n### Funktionsprinzip\n\n1. **Probe einwiegen** und in der Bombe platzieren\n2. **Sauerstoff** unter Druck einfüllen (~30 atm)\n3. **Zündung** über einen elektrischen Draht\n4. Die freigesetzte Wärme erwärmt Wasser und Bombe\n5. **Temperaturanstieg** messen\n\n### Was wird gemessen?\n\nDa das Volumen der Bombe **konstant** ist (isochor), misst man hier:\n\n$$q_V = \\Delta U$$\n\n(die innere Energie, nicht die Enthalpie!)\n\nDer Unterschied zu $\\Delta H$ ist bei den meisten Reaktionen aber gering.\n\n### Vorteile des Bombenkalorimeters\n\n| Vorteil                  | Erklärung                   |\n| ------------------------ | --------------------------- |\n| Vollständige Verbrennung | Reiner O₂ unter hohem Druck |\n| Keine Wärmeverluste      | Perfekte Isolierung         |\n| Hohe Genauigkeit         | Präzisionsthermometer       |\n| Reproduzierbar           | Standardisierte Bedingungen |\n\n> 🥜 **Fun Fact:** Mit genau dieser Methode wird der Brennwert von Lebensmitteln bestimmt!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Kalorimetrie-Berechnungen",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "43-45"
+        }
+      ],
+      "content": "## Auswertung kalorimetrischer Messungen\n\nBei der Verbrennung im Bombenkalorimeter wird die freigesetzte Wärme von **zwei Komponenten** aufgenommen.\n\n### Die Energiebilanz\n\n$$q_{\\text{Reaktion}} = -(q_{\\text{Wasser}} + q_{\\text{Bombe}})$$\n\nDas negative Vorzeichen, weil die Reaktion Energie **abgibt**, während Wasser und Bombe sie **aufnehmen**.\n\n### Die Teilgleichungen\n\n**Wärme ans Wasser:**\n$$q_{\\text{Wasser}} = m_{\\text{Wasser}} \\cdot c_{\\text{Wasser}} \\cdot \\Delta T$$\n\n**Wärme an die Bombe:**\n$$q_{\\text{Bombe}} = C_{\\text{Bombe}} \\cdot \\Delta T$$\n\nDabei ist $C_{\\text{Bombe}}$ die **Wärmekapazität des Geräts** (in J/K), die durch Kalibrierung bestimmt wird.\n\n### Gesamtgleichung\n\n$$q_{\\text{gesamt}} = (m_{\\text{Wasser}} \\cdot c_{\\text{Wasser}} + C_{\\text{Bombe}}) \\cdot \\Delta T$$\n\n### Warum die Bombe berücksichtigen?\n\nNicht nur das Wasser erwärmt sich – auch der Stahlbehälter, die Rührer und andere Metallteile nehmen Wärme auf. Ohne diese Korrektur wären die Ergebnisse zu niedrig!\n\n### Typische Größenordnungen\n\n| Größe                      | Typischer Wert |\n| -------------------------- | -------------- |\n| Wassermenge                | 1000–2000 g    |\n| $c_{\\text{Wasser}}$        | 4,184 J/(g·K)  |\n| $C_{\\text{Bombe}}$         | 500–2000 J/K   |\n| $\\Delta T$ bei Verbrennung | 2–10 K         |\n\n> 💡 **Tipp:** Bei Prüfungsaufgaben werden $C_{\\text{Bombe}}$ und Wassermenge immer angegeben!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispielrechnung Oktan",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "45-46"
+        }
+      ],
+      "content": "## Beispiel: Verbrennung von Oktan im Kalorimeter\n\nBerechnen wir die Verbrennungswärme von Oktan (Bestandteil von Benzin).\n\n### Gegeben\n\n- Masse Oktan: $m_{\\text{Oktan}} = 1,00$ g\n- Masse Wasser: $m_{\\text{Wasser}} = 1200$ g\n- Wärmekapazität Bombe: $C_{\\text{Bombe}} = 837$ J/K\n- Temperaturanstieg: $\\Delta T = 33,20 - 25,00 = 8,20$ K\n\n### Berechnung\n\n**Schritt 1: Wärme ans Wasser**\n$$q_{\\text{Wasser}} = m \\cdot c \\cdot \\Delta T$$\n$$q_{\\text{Wasser}} = 1200 \\text{ g} \\times 4,184 \\frac{J}{g \\cdot K} \\times 8,20 \\text{ K}$$\n$$q_{\\text{Wasser}} = 41.170 \\text{ J}$$\n\n**Schritt 2: Wärme an die Bombe**\n$$q_{\\text{Bombe}} = C_{\\text{Bombe}} \\cdot \\Delta T$$\n$$q_{\\text{Bombe}} = 837 \\frac{J}{K} \\times 8,20 \\text{ K}$$\n$$q_{\\text{Bombe}} = 6.863 \\text{ J}$$\n\n**Schritt 3: Gesamtwärme**\n$$q_{\\text{gesamt}} = 41.170 + 6.863 = 48.033 \\text{ J} = 48,0 \\text{ kJ}$$\n\n**Schritt 4: Reaktionswärme**\nDa die Energie freigesetzt wurde:\n$$\\Delta U = -48,0 \\text{ kJ} \\text{ (pro 1,00 g Oktan)}$$\n\n### Umrechnung auf molare Größe\n\nMolare Masse Oktan ($C_8H_{18}$): $M = 114$ g/mol\n\n$$\\Delta U_m = \\frac{-48,0 \\text{ kJ}}{1,00 \\text{ g}} \\times 114 \\frac{g}{mol} = -5472 \\text{ kJ/mol}$$\n\n> ⛽ Das entspricht ziemlich genau dem Literaturwert für die Verbrennungsenthalpie von Oktan!"
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Kalorimetrie",
+      "question": "Kannst du kalorimetrische Messungen verstehen und auswerten?",
+      "checkpoints": [
+        "Ich kenne den Aufbau eines Bombenkalorimeters",
+        "Ich weiß, dass bei konstantem Volumen ΔU gemessen wird",
+        "Ich verstehe, warum die Wärmekapazität der Bombe berücksichtigt werden muss",
+        "Ich kann die Gesamtwärme aus qWasser + qBombe berechnen",
+        "Ich kann von der Masse auf die molare Enthalpie umrechnen"
+      ],
+      "successMessage": "Sehr gut! Du verstehst die experimentelle Thermochemie. Zum Abschluss noch die Anwendung in der Ernährungswissenschaft!",
+      "reviewHint": "Achte darauf, dass du beide Wärmebeiträge (Wasser UND Bombe) berücksichtigst.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Brennwert von Nahrungsmitteln",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "47-49"
+        }
+      ],
+      "content": "## Brennwert von Nahrungsmitteln\n\nDie Thermochemie hat direkte Anwendung in der Ernährungswissenschaft: Der **Brennwert** von Lebensmitteln wird kalorimetrisch bestimmt.\n\n### Physikalischer vs. Physiologischer Brennwert\n\n| Brennwert         | Beschreibung                                | Messmethode              |\n| ----------------- | ------------------------------------------- | ------------------------ |\n| **Physikalisch**  | Vollständige Oxidation zu $CO_2$ und $H_2O$ | Bombenkalorimeter        |\n| **Physiologisch** | Nutzbare Energie im Körper                  | Korrigiert für Verdauung |\n\n### Warum der Unterschied?\n\nDer Körper kann nicht alle Stoffe vollständig oxidieren:\n- **Protein** wird nicht zu $N_2$ verbrannt, sondern als Harnstoff ausgeschieden\n- Daher ist der physiologische Brennwert von Protein niedriger\n\n### Standard-Brennwerte (Atwater-Faktoren)\n\n| Nährstoff         | Physikalisch | Physiologisch          |\n| ----------------- | ------------ | ---------------------- |\n| **Kohlenhydrate** | 17,1 kJ/g    | **17 kJ/g** (4 kcal/g) |\n| **Proteine**      | 23,6 kJ/g    | **17 kJ/g** (4 kcal/g) |\n| **Fette**         | 39,7 kJ/g    | **37 kJ/g** (9 kcal/g) |\n| **Alkohol**       | 29,7 kJ/g    | **29 kJ/g** (7 kcal/g) |\n\n### Warum sind Fette so energiereich?\n\nFette enthalten:\n- Mehr C-H Bindungen (energiereich)\n- Weniger Sauerstoff (weniger \"vorab oxidiert\")\n- Längere Kohlenstoffketten\n\n$$\\text{Fettsäure} + O_2 \\rightarrow CO_2 + H_2O + \\text{VIEL Energie}$$\n\n> 💡 **Für die Praxis:** Ein Gramm Fett liefert mehr als doppelt so viel Energie wie ein Gramm Kohlenhydrate – deshalb sind fettreiche Lebensmittel so kalorienreich!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Kältepackungen als Anwendung",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k5",
+          "pages": "49-50"
+        }
+      ],
+      "content": "## Anwendungsbeispiel: Die Kältepackung (Instant Cold Pack)\n\nEndotherme Reaktionen finden praktische Anwendung in Erste-Hilfe-Kältepackungen.\n\n### Das Prinzip\n\nIn einer Kältepackung reagiert **Ammoniumnitrat** mit Wasser:\n\n$$NH_4NO_3(s) \\rightarrow NH_4^+(aq) + NO_3^-(aq)$$\n\n### Thermochemische Analyse\n\nMit den Bildungsenthalpien können wir die Lösungsenthalpie berechnen:\n\n| Spezies       | $\\Delta_f H°$ (kJ/mol) |\n| ------------- | ---------------------- |\n| $NH_4NO_3(s)$ | −365,6                 |\n| $NH_4^+(aq)$  | −132,5                 |\n| $NO_3^-(aq)$  | −205,0                 |\n\n**Berechnung:**\n$$\\Delta_r H° = [(-132,5) + (-205,0)] - [-365,6]$$\n$$\\Delta_r H° = -337,5 + 365,6 = +28,1 \\text{ kJ/mol}$$\n\n### Interpretation\n\n- $\\Delta H > 0$ → **Endotherm**\n- Das System (Lösung) entzieht der Umgebung (Haut) Wärme\n- Die Packung fühlt sich **kalt** an\n\n### Praktische Nutzung\n\n```text\nPlastikbeutel mit Wasser\n       ↓ (zerdrücken)\nInnenbeutel mit NH₄NO₃ reißt\n       ↓\nSalz löst sich auf\n       ↓\nEndotherme Reaktion\n       ↓\nKühlung der Verletzung\n```\n\n### Quantitative Abschätzung\n\nWie viel Salz braucht man, um 100 g Wasser um 20 °C abzukühlen?\n\nBenötigte Energie: $q = 100 \\times 4,184 \\times 20 = 8.368$ J = 8,37 kJ\n\nStoffmenge: $n = \\frac{8,37}{28,1} = 0,30$ mol\n\nMasse: $m = 0,30 \\times 80 \\text{ g/mol} = 24$ g Ammoniumnitrat\n\n> 🏥 **Erste Hilfe:** Kältepackungen werden bei Prellungen und Verstauchungen eingesetzt, um Schwellungen zu reduzieren."
+    },
+    {
+      "type": "self-assessment",
+      "topic": "Anwendungen der Thermochemie",
+      "question": "Kannst du die Thermochemie auf praktische Beispiele anwenden?",
+      "checkpoints": [
+        "Ich verstehe den Unterschied zwischen physikalischem und physiologischem Brennwert",
+        "Ich kenne die Atwater-Faktoren für Kohlenhydrate, Proteine und Fette",
+        "Ich kann erklären, warum Fette energiereicher sind als Kohlenhydrate",
+        "Ich kann berechnen, wie eine Kältepackung funktioniert (endotherme Lösung)",
+        "Ich kann den Zusammenhang zwischen Thermochemie und Ernährung herstellen"
+      ],
+      "successMessage": "Fantastisch! Du hast alle Themenblöcke der Thermochemie gemeistert. Bereit für das Quiz!",
+      "reviewHint": "Verbinde die theoretischen Grundlagen mit den praktischen Anwendungen.",
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice",
+      "topic": "Energieformen",
+      "question": "Was versteht man unter \"Wärme\" im thermodynamischen Sinne?",
+      "options": [
+        "Die gesamte gespeicherte Energie in einem Stoff",
+        "Die Energie, die aufgrund von Temperaturunterschieden zwischen Objekten fließt",
+        "Die Energie, die in chemischen Bindungen entsteht",
+        "Die Fähigkeit eines Stoffes, zu brennen"
+      ],
+      "correctAnswer": "Die Energie, die aufgrund von Temperaturunterschieden zwischen Objekten fließt",
+      "explanation": "**Erklärung:** Wärme ist definiert als der Energietransfer, der durch eine Temperaturdifferenz verursacht wird ($\\Delta T$). Sie ist keine gespeicherte Energie, sondern beschreibt den Prozess der Energieübertragung von warm nach kalt."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Potentielle Energie",
+      "question": "Was passiert mit der potentiellen Energie auf atomarer Ebene, wenn sich zwei entgegengesetzt geladene Ionen annähern?",
+      "options": [
+        "Die potentielle Energie steigt",
+        "Die potentielle Energie bleibt gleich",
+        "Die potentielle Energie sinkt",
+        "Die Ionen stoßen sich ab"
+      ],
+      "correctAnswer": "Die potentielle Energie sinkt",
+      "explanation": "**Erklärung:** Entgegengesetzte Ladungen ziehen sich an. Wenn sie sich annähern, wird Energie freigesetzt und das System wird stabiler. Ein stabiles System hat immer eine niedrigere potentielle Energie als ein instabiles."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Kinetische Energie",
+      "question": "Welche der folgenden ist KEINE Form von kinetischer Energie auf molekularer Ebene?",
+      "options": [
+        "Translation (Bewegung durch den Raum)",
+        "Rotation (Drehbewegung)",
+        "Vibration (Schwingung der Bindungen)",
+        "Ionisierung (Abgabe von Elektronen)"
+      ],
+      "correctAnswer": "Ionisierung (Abgabe von Elektronen)",
+      "explanation": "**Erklärung:** Kinetische Energie auf molekularer Ebene manifestiert sich in drei Formen: Translation, Rotation und Vibration. Ionisierung ist ein chemischer Prozess, keine Form kinetischer Energie."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Brennstoffzelle",
+      "question": "In einer Wasserstoff-Sauerstoff-Brennstoffzelle wird chemische Energie primär in welche Energieform umgewandelt?",
+      "options": [
+        "Nur Wärme",
+        "Mechanische Arbeit",
+        "Elektrische Energie",
+        "Kernenergie"
+      ],
+      "correctAnswer": "Elektrische Energie",
+      "explanation": "**Erklärung:** Der Hauptzweck einer Brennstoffzelle ist die direkte Umwandlung von chemischer Reaktionsenthalpie in elektrischen Strom. Dies geschieht durch räumlich getrennte Oxidations- und Reduktionsprozesse."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Innere Energie",
+      "question": "Woraus setzt sich die Innere Energie U eines Systems zusammen?",
+      "options": [
+        "Nur aus der Temperatur",
+        "Aus der Summe von potentieller Energie (PE) und kinetischer Energie (KE)",
+        "Nur aus der bewegten Masse",
+        "Aus Wärme und Arbeit"
+      ],
+      "correctAnswer": "Aus der Summe von potentieller Energie (PE) und kinetischer Energie (KE)",
+      "explanation": "**Erklärung:** Die Definition der inneren Energie lautet $U = PE + KE$. Sie umfasst alle Energieformen auf Teilchenebene – sowohl die Energie der chemischen Bindungen (PE) als auch die Bewegungsenergie der Teilchen (KE)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Exotherm und Endotherm",
+      "question": "Ein Reaktionsgefäß fühlt sich während einer Reaktion kalt an. Welcher Prozess liegt vor?",
+      "options": [
+        "Exotherm",
+        "Endotherm",
+        "Isotherm",
+        "Adiabatisch"
+      ],
+      "correctAnswer": "Endotherm",
+      "explanation": "**Erklärung:** Wenn das Gefäß kalt wird, entzieht das System (die Reaktion) der Umgebung (dem Gefäß und der Hand) Wärme. Der Prozess ist endotherm – Energie fließt von der Umgebung zum System."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Exotherm und Endotherm",
+      "question": "Bei einer exothermen Reaktion gilt für die Wärme q:",
+      "options": [
+        "q ist positiv, das System nimmt Energie auf",
+        "q ist negativ, das System gibt Energie ab",
+        "q ist null, keine Energie wird übertragen",
+        "q kann nicht bestimmt werden"
+      ],
+      "correctAnswer": "q ist negativ, das System gibt Energie ab",
+      "explanation": "**Erklärung:** Bei exothermen Reaktionen fließt Energie vom System zur Umgebung. Nach der thermodynamischen Vorzeichenkonvention ist q negativ, wenn das System Energie abgibt."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Wärmefluss",
+      "question": "Welche Aussage zur spontanen Wärmeübertragung ist korrekt?",
+      "options": [
+        "Wärme fließt spontan von kalt nach warm",
+        "Wärme fließt nur im Vakuum",
+        "Wärme fließt spontan von warm nach kalt, bis thermisches Gleichgewicht herrscht",
+        "Energie geht bei der Übertragung verloren"
+      ],
+      "correctAnswer": "Wärme fließt spontan von warm nach kalt, bis thermisches Gleichgewicht herrscht",
+      "explanation": "**Erklärung:** Der spontane Wärmefluss folgt immer dem Temperaturgefälle – von höherer zu niedrigerer Temperatur. Dieser Prozess endet, wenn beide Körper die gleiche Temperatur haben (thermisches Gleichgewicht)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Energieeinheiten",
+      "question": "Wie viel Joule entsprechen 100 Kalorien?",
+      "options": [
+        "418,4 J",
+        "23,9 J",
+        "41.840 J",
+        "100 J"
+      ],
+      "correctAnswer": "418,4 J",
+      "explanation": "**Erklärung:** Die Umrechnung lautet: 1 cal = 4,184 J. Daher: $100 \\times 4,184 = 418,4$ J."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Wärmeberechnung",
+      "question": "Wie viel Wärme ist nötig, um 10 g Wasser um 10 °C zu erwärmen? (c = 4,184 J/(g·K))",
+      "options": [
+        "41,84 J",
+        "418,4 J",
+        "4184 J",
+        "83,68 J"
+      ],
+      "correctAnswer": "418,4 J",
+      "explanation": "**Erklärung:** Mit der Formel $q = m \\cdot c \\cdot \\Delta T$: $q = 10 \\text{ g} \\times 4,184 \\frac{J}{g \\cdot K} \\times 10 \\text{ K} = 418,4$ J."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Vorzeichen",
+      "question": "Was bedeutet ein negatives Vorzeichen bei q (q < 0)?",
+      "options": [
+        "Das System hat Wärme aufgenommen",
+        "Die Temperatur ist gestiegen",
+        "Das System hat Wärme abgegeben",
+        "Die Wärmekapazität ist negativ"
+      ],
+      "correctAnswer": "Das System hat Wärme abgegeben",
+      "explanation": "**Erklärung:** Nach der thermodynamischen Vorzeichenkonvention gilt: Energie, die aus dem System herausfließt, hat ein negatives Vorzeichen. $q < 0$ bedeutet also Wärmeabgabe (exothermer Prozess)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Spezifische Wärmekapazität",
+      "question": "Warum hat Wasser eine besonders hohe spezifische Wärmekapazität im Vergleich zu Metallen?",
+      "options": [
+        "Wasser leitet Wärme schneller",
+        "Wasserstoffbrückenbindungen speichern viel Energie",
+        "Wasser hat eine höhere Dichte",
+        "Wasser enthält mehr Protonen"
+      ],
+      "correctAnswer": "Wasserstoffbrückenbindungen speichern viel Energie",
+      "explanation": "**Erklärung:** Die starken Wasserstoffbrückenbindungen zwischen den Wassermolekülen müssen gedehnt oder gebrochen werden, bevor die Temperatur steigt. Dadurch kann Wasser viel Energie aufnehmen, ohne sich stark zu erwärmen."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Energietransfer",
+      "question": "Ein heißes Metallstück (100 °C) wird in kaltes Wasser (20 °C) getaucht. Im thermischen Gleichgewicht gilt:",
+      "options": [
+        "Das Metall hat mehr Energie aufgenommen als das Wasser abgegeben hat",
+        "Die Energie, die das Metall abgibt, entspricht der Energie, die das Wasser aufnimmt",
+        "Das Wasser kühlt sich weiter ab",
+        "Die Gesamtenergie nimmt zu"
+      ],
+      "correctAnswer": "Die Energie, die das Metall abgibt, entspricht der Energie, die das Wasser aufnimmt",
+      "explanation": "**Erklärung:** Nach dem Energieerhaltungssatz gilt: $q_{\\text{Metall}} = -q_{\\text{Wasser}}$. Die Energie, die das Metall verliert, gewinnt das Wasser – bei idealer Isolierung geht keine Energie verloren."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Phasenübergänge",
+      "question": "Wie verhält sich die Temperatur eines Reinstoffs während des Schmelzvorgangs?",
+      "options": [
+        "Sie steigt linear an",
+        "Sie sinkt leicht",
+        "Sie bleibt konstant",
+        "Sie steigt exponentiell"
+      ],
+      "correctAnswer": "Sie bleibt konstant",
+      "explanation": "**Erklärung:** Die zugeführte Energie wird vollständig für die Phasenumwandlung (Aufbrechen der Kristallstruktur) verwendet, nicht für die Erhöhung der kinetischen Energie der Teilchen. Daher bleibt die Temperatur während des Schmelzens konstant."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Verdunstungskälte",
+      "question": "Warum kühlt Verdunstung die Umgebung?",
+      "options": [
+        "Weil Dampf kälter ist als Wasser",
+        "Weil der Phasenübergang flüssig → gasförmig endotherm ist",
+        "Weil Wasser Wärme isoliert",
+        "Weil Gasteilchen langsamer sind"
+      ],
+      "correctAnswer": "Weil der Phasenübergang flüssig → gasförmig endotherm ist",
+      "explanation": "**Erklärung:** Um Teilchen aus der flüssigen Phase in die Gasphase zu überführen, muss Energie (Verdampfungswärme) aufgebracht werden. Diese Energie wird der Umgebung entzogen, weshalb sich die Umgebung abkühlt."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Phasenübergänge",
+      "question": "Welcher Prozess benötigt bei Wasser am meisten Energie pro Gramm?",
+      "options": [],
+      "correctAnswer": "Verdampfen (Wasser → Dampf): 2260 J/g",
+      "explanation": "**Erklärung:** Die Verdampfungswärme (2260 J/g) ist mit Abstand am höchsten. Sie ist etwa 7× größer als die Schmelzwärme (333 J/g) und etwa 5× größer als die Energie zum Erwärmen von 0 auf 100 °C (ca. 418 J/g)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Heizkurve",
+      "question": "Wie viel Energie wird benötigt, um 100 g Eis bei 0 °C vollständig zu schmelzen? (Schmelzwärme = 333 J/g)",
+      "options": [
+        "3,33 kJ",
+        "33,3 kJ",
+        "333 J",
+        "3330 J"
+      ],
+      "correctAnswer": "33,3 kJ",
+      "explanation": "**Erklärung:** Bei Phasenübergängen gilt: $q = m \\cdot \\Delta H_{\\text{fus}}$. Also: $q = 100 \\text{ g} \\times 333 \\frac{J}{g} = 33.300$ J = 33,3 kJ."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Erster Hauptsatz",
+      "question": "Wie lautet der Erste Hauptsatz der Thermodynamik?",
+      "options": [
+        "ΔU = q · w",
+        "ΔU = q + w",
+        "ΔH = q + w",
+        "ΔU = q - w"
+      ],
+      "correctAnswer": "ΔU = q + w",
+      "explanation": "**Erklärung:** Der Erste Hauptsatz lautet $\\Delta U = q + w$. Die Änderung der inneren Energie ist die Summe aus übertragener Wärme (q) und verrichteter Arbeit (w)."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Enthalpie",
+      "question": "Was gilt für einen chemischen Prozess bei konstantem Druck?",
+      "options": [
+        "ΔU = q",
+        "ΔH = qp",
+        "w = 0",
+        "ΔH = 0"
+      ],
+      "correctAnswer": "ΔH = qp",
+      "explanation": "**Erklärung:** Bei konstantem Druck ist die Enthalpieänderung gleich der ausgetauschten Wärme: $\\Delta H = q_p$. Deshalb ist die Enthalpie die praktisch wichtigste Größe für Reaktionen im Labor."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Volumenarbeit",
+      "question": "Ein Gas dehnt sich aus und leistet dabei Arbeit an der Umgebung. Welches Vorzeichen hat w?",
+      "options": [
+        "Positiv (+)",
+        "Negativ (−)",
+        "Null",
+        "Hängt von der Temperatur ab"
+      ],
+      "correctAnswer": "Negativ (−)",
+      "explanation": "**Erklärung:** Wenn das System Arbeit leistet (Expansion), verliert es Energie. Nach der Vorzeichenkonvention ist Arbeit, die vom System geleistet wird, negativ: $w < 0$."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Enthalpie",
+      "question": "Wenn ΔH > 0 ist, dann ist die Reaktion...",
+      "options": [
+        "Exotherm",
+        "Endotherm",
+        "Spontan",
+        "Explosiv"
+      ],
+      "correctAnswer": "Endotherm",
+      "explanation": "**Erklärung:** Eine positive Enthalpieänderung ($\\Delta H > 0$) bedeutet, dass die Produkte energiereicher sind als die Edukte. Das System nimmt Energie auf – der Prozess ist endotherm."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "topic": "Vorzeichen",
+      "question": "Welche der folgenden Kombinationen sind korrekt? (Mehrere Antworten möglich)",
+      "options": [],
+      "correctAnswers": [],
+      "explanation": "**Erklärung:** Nach der thermodynamischen Vorzeichenkonvention gilt: Energie ins System = positives Vorzeichen. Wärmeaufnahme: $q > 0$. Arbeit am System (Kompression): $w > 0$. Umgekehrt: Wärmeabgabe und Expansion haben negative Vorzeichen."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Bildungsenthalpie",
+      "question": "Welchen Wert hat die Standard-Bildungsenthalpie ΔfH° für O₂(g)?",
+      "options": [
+        "−241 kJ/mol",
+        "100 kJ/mol",
+        "0 kJ/mol",
+        "Hängt vom Druck ab"
+      ],
+      "correctAnswer": "0 kJ/mol",
+      "explanation": "**Erklärung:** Elemente in ihrem Standardzustand haben per Definition eine Bildungsenthalpie von 0. $O_2(g)$ ist die stabilste Form von Sauerstoff bei Standardbedingungen, daher ist $\\Delta_f H° = 0$."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Reaktionsenthalpie",
+      "question": "Wie lautet die Formel für die Reaktionsenthalpie ΔrH° nach Hess?",
+      "options": [
+        "ΣΔfH°(Edukte) − ΣΔfH°(Produkte)",
+        "ΣΔfH°(Produkte) + ΣΔfH°(Edukte)",
+        "ΣΔfH°(Produkte) − ΣΔfH°(Edukte)",
+        "ΣΔfH°(Produkte) × ΣΔfH°(Edukte)"
+      ],
+      "correctAnswer": "ΣΔfH°(Produkte) − ΣΔfH°(Edukte)",
+      "explanation": "**Erklärung:** Die Reaktionsenthalpie berechnet sich als \"Produkte minus Edukte\": $\\Delta_r H° = \\Sigma \\Delta_f H°(\\text{Produkte}) - \\Sigma \\Delta_f H°(\\text{Edukte})$. Dies folgt aus der Zustandseigenschaft der Enthalpie."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Satz von Hess",
+      "question": "Warum ist der Satz von Hess praktisch nützlich?",
+      "options": [
+        "Man kann Enthalpien berechnen, ohne jede Reaktion im Labor messen zu müssen",
+        "Er beweist, dass Energie verloren geht",
+        "Er gilt nur für Gase",
+        "Er erklärt die Aktivierungsenergie"
+      ],
+      "correctAnswer": "Man kann Enthalpien berechnen, ohne jede Reaktion im Labor messen zu müssen",
+      "explanation": "**Erklärung:** Da Enthalpie eine Zustandsgröße ist, können wir Reaktionsenthalpien aus tabellierten Bildungsenthalpien berechnen – auch für Reaktionen, die schwer messbar, zu langsam oder zu gefährlich sind."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Reaktionsenthalpie",
+      "question": "Die Verbrennung von Methan: CH₄ + 2O₂ → CO₂ + 2H₂O hat ΔrH° = −802 kJ. Dies bedeutet:",
+      "options": [
+        "Die Reaktion ist endotherm und benötigt Energie",
+        "Die Reaktion ist exotherm und setzt 802 kJ pro Mol Methan frei",
+        "Die Produkte haben mehr Energie als die Edukte",
+        "Die Reaktion läuft nicht spontan ab"
+      ],
+      "correctAnswer": "Die Reaktion ist exotherm und setzt 802 kJ pro Mol Methan frei",
+      "explanation": "**Erklärung:** Ein negatives $\\Delta H$ bedeutet, dass die Reaktion exotherm ist – Energie wird freigesetzt. Bei der Verbrennung von 1 mol Methan werden 802 kJ an die Umgebung abgegeben."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Kalorimetrie",
+      "question": "Was wird im Bombenkalorimeter konstant gehalten?",
+      "options": [
+        "Der Druck (P)",
+        "Das Volumen (V)",
+        "Die Temperatur (T)",
+        "Die Stoffmenge (n)"
+      ],
+      "correctAnswer": "Das Volumen (V)",
+      "explanation": "**Erklärung:** Das Bombenkalorimeter ist ein starrer Stahlbehälter – das Volumen kann sich nicht ändern. Daher ist der Prozess isochor ($V = \\text{konstant}$), und man misst direkt $\\Delta U$ statt $\\Delta H$."
+    },
+    {
+      "type": "multiple-choice",
+      "topic": "Kalorimetrie",
+      "question": "Warum muss bei kalorimetrischen Messungen die Wärmekapazität der \"Bombe\" berücksichtigt werden?",
+      "options": [
+        "Weil sie aus Metall ist und auch Wärme aufnimmt",
+        "Weil Wasser verdunstet",
+        "Weil der Druck steigt",
+        "Weil das Thermometer Wärme abgibt"
+      ],
+      "correctAnswer": "Weil sie aus Metall ist und auch Wärme aufnimmt",
+      "explanation": "**Erklärung:** Bei der Verbrennung erwärmt sich nicht nur das Wasser, sondern auch der Stahlbehälter (die \"Bombe\"), die Rührer und andere Metallteile. Ohne diese Korrektur würde man die freigesetzte Energie unterschätzen."
+    }
+  ],
+  "generatedAt": "2026-01-12T18:21:48.824Z"
+}

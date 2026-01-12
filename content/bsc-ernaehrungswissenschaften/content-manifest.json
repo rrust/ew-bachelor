@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T10:09:28.138Z",
+  "generatedAt": "2026-01-12T18:21:48.800Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "8f34f2a2",
@@ -55,6 +55,15 @@
       "topic": "Chemische Reaktionen & Stöchiometrie",
       "description": "Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen und Metallreaktivität.",
       "estimatedTime": 75
+    },
+    "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
+      "checksum": "ff78fc55",
+      "sizeKB": 83,
+      "itemCount": 43,
+      "quizCount": 28,
+      "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
+      "description": "Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsatz, Enthalpie, Satz von Hess und kalorimetrische Messungen.",
+      "estimatedTime": 90
     }
   }
 }
