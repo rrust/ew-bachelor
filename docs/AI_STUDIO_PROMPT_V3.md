@@ -1,5 +1,7 @@
 # Akademischer Lernmaterial-Generator V3
 
+Dieser Prompt ist für die Erstellung von akademischem Lernmaterial in **Markdown-Format** über Google AI Studio mit Gemini 3 optimiert. Er generiert vollständige Kapitel mit **Selbsttests** und **Prüfungsaufgaben** basierend auf einem hochgeladenen PDF-Dokument.
+
 ## Zweck
 
 Dieser Prompt ist für **Google AI Studio (Gemini)** optimiert, um Rohmaterial zu erstellen, das anschließend von **GitHub Copilot** in die App-Struktur konvertiert wird.

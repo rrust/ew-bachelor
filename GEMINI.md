@@ -73,6 +73,29 @@ Use conventional commit format:
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen verwenden** - Erlaubt sind: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT verwenden: `xychart-beta`, `timeline`, `mindmap` oder andere experimentelle Typen (oft fehlerhaft).
 - Always validate before committing
 
+### Content-Struktur V4: Lernen → Überprüfen → Anwenden
+
+Jeder Abschnitt einer Vorlesung folgt diesem Muster:
+
+```text
+ABSCHNITT
+├── 📚 Lerninhalte (learning-content) - Theorie, Konzepte, Formeln
+├── ✅ Verständnis-Checks (direkt danach!)
+│     • self-assessment-mc (einfache MC-Fragen)
+│     • fill-in-the-blank (Lückentexte) - NEU
+│     • matching (Zuordnungsaufgaben) - NEU
+│     • ordering (Sortieraufgaben) - NEU
+├── 🧮 Praxis-Übung
+│     • practice-exercise (Alltagsszenarien) - NEU
+│     • calculation (Berechnungen) - NEU
+└── 📺 Video (youtube-video) - an passender Stelle, NICHT am Ende gesammelt
+
+Am Ende der Vorlesung:
+├── 📋 Selbsttest (self-assessment) - Bereitschafts-Checkliste
+├── 📝 Vorlesungs-Test (questions/) - NUR multiple-choice-multiple, schwer
+└── 🎓 Modul-Prüfungsfragen - 2 sehr schwierige pro Vorlesung
+```
+
 ### Content Types Reference
 
 | Type                       | Required Fields                                       | Notes                        |
@@ -84,6 +107,11 @@ Use conventional commit format:
 | `learning-content`         | `type`                                                | Main lecture content         |
 | `mermaid-diagram`          | `type`                                                | Flowcharts, diagrams         |
 | `youtube-video`            | `type`, `url`                                         | Embedded video               |
+| `fill-in-the-blank`        | `type`, `question`, `text`, `blanks`                  | Lückentexte - NEU            |
+| `matching`                 | `type`, `question`, `pairs`                           | Zuordnung - NEU              |
+| `ordering`                 | `type`, `question`, `items`                           | Sortierung - NEU             |
+| `calculation`              | `type`, `question`, `correctAnswer`, `unit`           | Berechnung - NEU             |
+| `practice-exercise`        | `type`, `title`, `scenario`, `tasks`                  | Praxis-Übung - NEU           |
 | `achievement`              | See [CONTENT_TEMPLATES.md](docs/CONTENT_TEMPLATES.md) | Cheat-sheets                 |
 
 ### Valid Icon Names (for achievements)
