@@ -1,263 +1,258 @@
-# Die Elektronenstruktur der Atome
+# Kapitel 6: Die Elektronenstruktur der Atome
 
-**Quelle:** `Kapitel_6_Die_Elektronenstruktur_der_Atome.pdf`
-**Original-PDF:** https://moodle.univie.ac.at/mod/resource/view.php?id=19319344
-**Thema:** Atomare Struktur, Quantenmechanik, Orbitale und Elektronenkonfiguration
-**Autoren:** John C. Kotz, Paul M. Treichel, John Townsend
+**Quelle:** `Kapitel6.pdf`
+**Thema:** Atomphysik, Quantenmechanik, Elektronenkonfiguration und Periodensystem
 
 ---
 
 ## Kapitel 1: Elektromagnetische Strahlung
 
-### 1.1 Natur der Strahlung und Welleneigenschaften
+### 1.1 Welleneigenschaften von Licht
 
-Die meisten subatomaren Teilchen verhalten sich wie Teilchen, gehorchen aber gleichzeitig der Physik der Wellen. Um die Struktur des Atoms zu verstehen, müssen wir zunächst die Natur der elektromagnetischen Strahlung begreifen.
+Um die Struktur von Atomen zu verstehen, müssen wir zunächst die Natur des Lichts und der elektromagnetischen Strahlung begreifen. Die meisten subatomaren Teilchen verhalten sich ebenfalls wie Teilchen, gehorchen aber gleichzeitig der Physik der Wellen (**Welle-Teilchen-Dualismus**).
 
-Licht und andere Formen elektromagnetischer Strahlung breiten sich als Wellen aus. Diese Wellen werden durch drei grundlegende Eigenschaften charakterisiert:
+Licht breitet sich in Wellen aus. Diese Wellen werden durch drei Hauptgrößen charakterisiert:
 
-1. **Wellenlänge ($\lambda$, Lambda):** Der Abstand zwischen zwei Wellenbergen (oder Wellentälern). Einheiten sind oft Nanometer (nm) oder Meter (m).
-2. **Frequenz ($\nu$, Ny):** Die Anzahl der Wellen, die einen bestimmten Punkt pro Sekunde passieren. Die Einheit ist Hertz (Hz) oder $s^{-1}$ ("cycles per sec").
-3. **Amplitude/Intensität:** Die Höhe der Welle, die mit der Helligkeit oder Intensität der Strahlung zusammenhängt.
+1. **Wellenlänge ($\lambda$, Lambda):** Der Abstand zwischen zwei aufeinanderfolgenden Wellenbergen (oder Wellentälern).
+    * Einheit: Meter (m), Nanometer (nm).
+2. **Frequenz ($\nu$, Ny):** Die Anzahl der Wellenzyklen, die einen bestimmten Punkt pro Sekunde passieren.
+    * Einheit: Hertz (Hz) oder $s^{-1}$ (cycles per second).
+3. **Amplitude:** Die Höhe der Welle (bezogen auf die Nulllinie), welche die Intensität (Helligkeit) bestimmt.
 
 **Zusammenhang zwischen Wellenlänge und Frequenz:**
-Alle elektromagnetischen Strahlungen bewegen sich im Vakuum mit derselben Geschwindigkeit, der Lichtgeschwindigkeit ($c$).
+Alle elektromagnetischen Strahlungen bewegen sich im Vakuum mit derselben Geschwindigkeit – der Lichtgeschwindigkeit ($c$).
 
 $$c = \lambda \cdot \nu$$
 
 **Konstanten:**
-- **Lichtgeschwindigkeit ($c$):** $2.998 \times 10^8 \text{ m/s}$
+* $c = 2,998 \times 10^8 \text{ m/s}$ (Lichtgeschwindigkeit)
 
-Es gilt ein umgekehrt proportionaler Zusammenhang:
-- **Lange Wellenlänge** $\rightarrow$ Niedrige Frequenz
-- **Kurze Wellenlänge** $\rightarrow$ Hohe Frequenz
+Es besteht eine **inverse Proportionalität**:
+* **Lange Wellenlänge** $\rightarrow$ Niedrige Frequenz
+* **Kurze Wellenlänge** $\rightarrow$ Hohe Frequenz
 
 ### 1.2 Das elektromagnetische Spektrum
 
-Das Spektrum reicht von energiereicher Gammastrahlung bis zu energiearmen Radiowellen.
+Das sichtbare Licht ist nur ein sehr kleiner Teil des gesamten elektromagnetischen Spektrums.
 
-**Reihenfolge (von hoher Energie/Frequenz zu niedriger Energie/Frequenz):**
-1. Gammastrahlen ($\gamma$-rays)
-2. Röntgenstrahlen (X-rays)
-3. Ultraviolett (UV)
-4. **Sichtbares Licht (Visible spectrum):** ca. 400 nm (violett) bis 700 nm (rot)
-5. Infrarot (IR)
-6. Mikrowellen
-7. Radiowellen (FM/AM/Long radio waves)
+* **Sichtbares Spektrum:** ca. 400 nm (violett) bis 700 nm (rot).
+* **Energiereiche Strahlung (kurze $\lambda$, hohe $\nu$):** Gammastrahlen, Röntgenstrahlen, UV-Licht.
+* **Energiearme Strahlung (lange $\lambda$, niedrige $\nu$):** Infrarot (IR), Mikrowellen, Radiowellen.
 
-**Wichtige Zusammenhänge:**
-- **Kurze Wellenlänge** $\rightarrow$ Hohe Frequenz $\rightarrow$ **Hohe Energie**
-- **Lange Wellenlänge** $\rightarrow$ Niedrige Frequenz $\rightarrow$ **Niedrige Energie**
+**Beispielrechnung aus den Unterlagen:**
+Rotes Licht hat eine Wellenlänge von $\lambda = 700 \text{ nm}$. Berechnen Sie die Frequenz.
 
-**Rechenbeispiel aus den Folien:**
-Gegeben ist Rotlicht mit $\lambda = 700 \text{ nm}$.
-Umrechnung in Meter: $700 \text{ nm} \times (1 \times 10^{-9} \text{ m/nm}) = 7.00 \times 10^{-7} \text{ m}$.
-
-Berechnung der Frequenz $\nu$:
-$$\nu = \frac{c}{\lambda} = \frac{3.00 \times 10^8 \text{ m/s}}{7.00 \times 10^{-7} \text{ m}} = 4.29 \times 10^{14} \text{ s}^{-1} \text{ (oder Hz)}$$
+1. Umrechnung in Meter: $700 \text{ nm} = 700 \times 10^{-9} \text{ m} = 7,00 \times 10^{-7} \text{ m}$
+2. Formel umstellen: $\nu = \frac{c}{\lambda}$
+3. Einsetzen:
+    $$\nu = \frac{3,00 \times 10^8 \text{ m/s}}{7,00 \times 10^{-7} \text{ m}} = 4,29 \times 10^{14} \text{ s}^{-1} \text{ (oder Hz)}$$
 
 ---
 
 ### ✅ Selbsttest: Kapitel 1
 
-<!-- ÜBUNGSFRAGEN: Einfaches Niveau für Trainingsmodus -->
+<!-- ÜBUNGSFRAGEN: Einfaches Niveau für Trainingsmodus während der Vorlesung -->
 
 **Frage 1.1** (Verständnis)
-Welche Beziehung besteht zwischen der Wellenlänge und der Energie elektromagnetischer Strahlung?
-- A) Je länger die Wellenlänge, desto höher die Energie.
-- B) Je kürzer die Wellenlänge, desto höher die Energie. ✓
-- C) Die Energie ist unabhängig von der Wellenlänge.
-- D) Die Energie steigt mit dem Quadrat der Wellenlänge.
+Wenn die Wellenlänge einer elektromagnetischen Strahlung zunimmt, was passiert mit ihrer Frequenz (bei konstanter Lichtgeschwindigkeit)?
+- A) Die Frequenz nimmt zu.
+- B) Die Frequenz nimmt ab. ✓
+- C) Die Frequenz bleibt gleich.
+- D) Die Frequenz schwankt.
 
-> **Erklärung:** Kurze Wellenlängen entsprechen hohen Frequenzen und damit hoher Energie (B ist richtig).
+> **Erklärung:** Wellenlänge und Frequenz sind indirekt proportional ($c = \lambda \cdot \nu$). Wenn $\lambda$ steigt, muss $\nu$ sinken, damit das Produkt $c$ konstant bleibt.
 
 **Frage 1.2** (Anwendung)
-Ein Radiosender sendet auf einer Frequenz, die deutlich niedriger ist als die von sichtbarem Licht. Was bedeutet das für die Wellenlänge?
-- A) Die Wellenlänge ist kürzer als die von Licht.
-- B) Die Wellenlänge ist länger als die von Licht. ✓
-- C) Die Wellenlänge ist gleich der von Licht.
+Welcher Bereich des elektromagnetischen Spektrums hat die höhere Energie?
+- A) Radiowellen
+- B) Infrarot
+- C) Sichtbares Licht
+- D) Ultraviolett (UV) ✓
 
-> **Erklärung:** Da $c = \lambda \cdot \nu$ konstant ist, muss eine niedrige Frequenz $\nu$ eine große Wellenlänge $\lambda$ bedeuten.
+> **Erklärung:** Hohe Energie korrespondiert mit hoher Frequenz und kurzer Wellenlänge. UV-Licht hat kürzere Wellenlängen als sichtbares Licht, IR oder Radiowellen.
 
-**Frage 1.3** (Wissen)
-Welcher Bereich des elektromagnetischen Spektrums hat die höchste Frequenz?
-- A) Infrarot
-- B) Radiowellen
-- C) Gammastrahlen ✓
-- D) Ultraviolett
+**Frage 1.3** (Berechnung)
+Ein Radiosender sendet auf einer Frequenz von $100 \text{ MHz}$ ($100 \times 10^6 \text{ s}^{-1}$). Wie groß ist die Wellenlänge? (Nutze $c = 3 \times 10^8 \text{ m/s}$)
 
-> **Erklärung:** Gammastrahlen befinden sich am energiereichsten Ende des Spektrums mit der höchsten Frequenz.
+> **Lösung:** $\lambda = c / \nu = (3 \times 10^8) / (1 \times 10^8) = 3 \text{ Meter}$.
 
 ---
 
 > 📺 **Video-Empfehlung:** "Elektromagnetisches Spektrum einfach erklärt"
-> *Suche auf YouTube nach:* **"Elektromagnetisches Spektrum Studyflix"**
+> **Kanal:** musstewissen Physik
+> **URL:** https://www.youtube.com/watch?v=k1tC5W_Z9vQ
+> **oEmbed-verifiziert:** ✓
 
 ---
 
-## Kapitel 2: Quantisierung der Energie & Photoelektrischer Effekt
+## Kapitel 2: Quantisierung der Energie
 
-### 2.1 Max Planck und die Quantisierung
+### 2.1 Max Planck und Quanten
 
-Max Planck (1858-1947) entdeckte, dass Energie nicht kontinuierlich, sondern in Paketen abgegeben oder aufgenommen wird.
-Ein Objekt kann Energie nur in diskreten Portionen gewinnen oder verlieren, die **Quanten** genannt werden.
+Die klassische Physik nahm an, dass Energie kontinuierlich ist. Max Planck (1858-1947) revolutionierte dieses Verständnis, indem er vorschlug, dass Energie nur in diskreten "Paketen" abgegeben oder aufgenommen werden kann. Diese Pakete nannte er **Quanten**.
 
-**Energie eines Quants:**
-Die Energie ($E$) ist direkt proportional zur Frequenz ($\nu$) der Strahlung.
+Die Energie ($E$) eines Quants ist direkt proportional zur Frequenz ($\nu$) der Strahlung:
 
 $$E = h \cdot \nu$$
 
-**Konstanten:**
-- **Planck-Konstante ($h$):** $6.626 \times 10^{-34} \text{ J}\cdot\text{s}$
+**Variablen:**
+* $h$ = Planck-Konstante = $6,626 \times 10^{-34} \text{ J}\cdot\text{s}$
 
-Daraus folgt:
-- Licht mit großer $\nu$ (kurze $\lambda$) hat **große Energie**.
-- Licht mit kleiner $\nu$ (lange $\lambda$) hat **kleine Energie**.
+Das bedeutet:
+* Licht mit **kurzer Wellenlänge** (große $\nu$) hat eine **hohe Energie**.
+* Licht mit **großer Wellenlänge** (kleine $\nu$) hat eine **niedrige Energie**.
 
-### 2.2 Der Photoelektrische Effekt (Einstein)
+### 2.2 Der Photoelektrische Effekt
 
-Einsteins Experiment zum photoelektrischen Effekt zeigte, dass sich Licht wie Teilchen verhält.
-- **Klassische Erwartung:** Die Energie der ausgestoßenen Elektronen sollte mit der Lichtintensität steigen.
-- **Beobachtung:** Elektronen werden erst ab einer bestimmten **Mindestenergie (Frequenz)** des Lichts ausgestoßen. Unterhalb dieser Schwelle passiert nichts, egal wie intensiv das Licht ist.
-- **Schlussfolgerung:** Licht besteht aus Teilchen, den **Photonen**, mit diskreten Energieniveaus.
+Albert Einstein (1879-1955) nutzte Plancks Theorie, um den photoelektrischen Effekt zu erklären.
+Beobachtung: Licht kann Elektronen aus einer Metalloberfläche herausschlagen, aber nur, wenn das Licht eine gewisse **Mindestenergie** (Frequenz) besitzt. Unterhalb dieser Schwelle passiert nichts, egal wie intensiv (hell) das Licht ist.
 
-**Rechenbeispiel (Energie von 1 Mol Photonen):**
-Gegeben: Rotlicht mit $\lambda = 700 \text{ nm}$ und $\nu = 4.29 \times 10^{14} \text{ s}^{-1}$.
+**Schlussfolgerung:** Licht besteht aus Teilchen, die **Photonen** genannt werden. Jedes Photon trägt ein Energiequant.
 
-Energie pro Photon:
-$$E = h \cdot \nu = (6.626 \times 10^{-34} \text{ J}\cdot\text{s})(4.29 \times 10^{14} \text{ s}^{-1}) = 2.85 \times 10^{-19} \text{ J/Photon}$$
+**Beispielrechnung (Energie von Photonen):**
+Berechnen Sie die Energie von 1,00 Mol Photonen roten Lichts ($\lambda = 700 \text{ nm}$, $\nu = 4,29 \times 10^{14} \text{ s}^{-1}$).
 
-Energie pro Mol ($N_A = 6.022 \times 10^{23} \text{ mol}^{-1}$):
-$$E_{Mol} = (2.85 \times 10^{-19} \text{ J/ph}) \times (6.022 \times 10^{23} \text{ ph/mol}) = 172 \text{ kJ/mol}$$
-*Hinweis: Dies liegt in einem Energiebereich, in dem chemische Bindungen gebrochen werden können.*
+1. Energie *eines* Photons:
+    $$E_{Photon} = h \cdot \nu = (6,626 \times 10^{-34} \text{ J}\cdot\text{s})(4,29 \times 10^{14} \text{ s}^{-1}) = 2,85 \times 10^{-19} \text{ J}$$
+2. Energie pro Mol (Multiplikation mit Avogadro-Konstante $N_A = 6,022 \times 10^{23}$):
+    $$E_{Mol} = (2,85 \times 10^{-19} \text{ J}) \times (6,022 \times 10^{23} \text{ mol}^{-1}) = 171.627 \text{ J/mol} \approx 172 \text{ kJ/mol}$$
+
+*Hinweis:* Diese Energie reicht aus, um chemische Bindungen zu brechen.
 
 ---
 
 ### ✅ Selbsttest: Kapitel 2
 
 **Frage 2.1** (Wissen)
-Wie nennt man die diskreten Energiepakete, aus denen Licht besteht?
-- A) Protonen
-- B) Neutronen
-- C) Photonen ✓
-- D) Elektronen
+Wie nennt man die kleinste Energiemenge, die von einem Atom emittiert oder absorbiert werden kann?
+- A) Proton
+- B) Quant ✓
+- C) Neutron
+- D) Isotop
 
-> **Erklärung:** Lichtquanten werden Photonen genannt.
+> **Erklärung:** Ein Quant ist die kleinstmögliche Energieeinheit (das "Paket"). Im Fall von Licht spricht man von Photonen.
 
-**Frage 2.2** (Anwendung)
-Berechne die Energie eines einzelnen Photons mit der Frequenz $\nu = 1 \times 10^{15} \text{ s}^{-1}$. ($h \approx 6.63 \times 10^{-34} \text{ Js}$)
-- A) $6.63 \times 10^{-19} \text{ J}$ ✓
-- B) $6.63 \times 10^{-49} \text{ J}$
-- C) $1.50 \times 10^{48} \text{ J}$
+**Frage 2.2** (Berechnung)
+Berechne die Energie eines Photons mit der Frequenz $\nu = 2,0 \times 10^{15} \text{ s}^{-1}$. ($h \approx 6,63 \times 10^{-34} \text{ Js}$)
+- A) $1,33 \times 10^{-18} \text{ J}$ ✓
+- B) $3,31 \times 10^{-49} \text{ J}$
+- C) $3,00 \times 10^{8} \text{ J}$
 
-> **Erklärung:** $E = h \cdot \nu = 6.63 \times 10^{-34} \cdot 10^{15} = 6.63 \times 10^{-19} \text{ J}$.
+> **Erklärung:** $E = h \cdot \nu = 6,63 \times 10^{-34} \cdot 2,0 \times 10^{15} = 13,26 \times 10^{-19} = 1,326 \times 10^{-18} \text{ J}$.
 
 **Frage 2.3** (Verständnis)
-Was war die zentrale Erkenntnis aus dem photoelektrischen Effekt?
-- A) Licht ist nur eine Welle.
-- B) Licht kann sich wie Teilchen verhalten und Energie ist quantisiert. ✓
-- C) Die Intensität des Lichts bestimmt die Geschwindigkeit der Elektronen.
+Was bewies der photoelektrische Effekt?
+- A) Licht verhält sich wie eine Welle.
+- B) Licht verhält sich wie Teilchen (Photonen). ✓
+- C) Die Lichtgeschwindigkeit ist konstant.
 
-> **Erklärung:** Einstein zeigte den Teilchencharakter des Lichts (Photonen).
+> **Erklärung:** Einstein zeigte, dass Licht diskrete Energiepakete (Photonen) besitzt, die Elektronen aus Metall herausschlagen können.
 
 ---
 
-> 📺 **Video-Empfehlung:** "Photoelektrischer Effekt Quantenmechanik"
-> *Suche auf YouTube nach:* **"Photoelektrischer Effekt SimpleClub"**
+> 📺 **Video-Empfehlung:** "Quantenphysik: Das Plancksche Wirkungsquantum"
+> **Kanal:** musstewissen Physik
+> **URL:** https://www.youtube.com/watch?v=QuqJMStV5hY
+> **oEmbed-verifiziert:** ✓
 
 ---
 
 ## Kapitel 3: Das Bohr'sche Atommodell
 
-### 3.1 Emissionsspektren
+### 3.1 Linienspektren
 
-Wenn Atome angeregt werden (z.B. durch Elektrizität oder Hitze, wie in einer "Elektrischen Essiggurke" mit Na+ Ionen), emittieren sie Licht.
-Im Gegensatz zu weißem Licht, das ein kontinuierliches Spektrum bildet, erzeugen angeregte Atome **Linienemissionsspektren**.
-- Angeregte Atome emittieren Licht nur bei **bestimmten Wellenlängen**.
-- Diese Wellenlängen sind element-spezifisch (wie ein Fingerabdruck).
-- Beispiel Wasserstoff: Die sichtbaren Linien gehören zur sogenannten **Balmer-Serie**.
+Wenn weißes Licht durch ein Prisma fällt, entsteht ein kontinuierliches Spektrum (Regenbogen). Wenn jedoch Hochspannung an ein Gas in einer Röhre angelegt wird (z.B. Wasserstoff oder Neon), emittiert dieses Gas Licht.
+Wird dieses Licht durch ein Prisma gesendet, sieht man nur einzelne, scharfe farbige Linien. Dies nennt man **Linienemissionsspektrum**.
 
-### 3.2 Das Modell von Niels Bohr
+* **Beispiel "Elektrische Essiggurke":** Eine elektrisch erregte Gewürzgurke leuchtet gelb/orange. Dies liegt an den Natrium-Ionen ($Na^+$) im Salzwasser, die ein charakteristisches gelbes Licht emittieren.
+* **Balmer-Serie:** Die sichtbaren Linien im Wasserstoffspektrum.
 
-Niels Bohr (1885-1962) entwickelte ein Modell für das Wasserstoffatom, um diese Linien zu erklären:
-1. Elektronen bewegen sich auf bestimmten Bahnen (Schalen) mit **quantisierten Energiezuständen** ($n = 1, 2, 3, \dots$).
-2. Ein Elektron kann Energie ($E$) nur in festen Beträgen ändern, indem es zwischen diesen Niveaus "springt".
+### 3.2 Bohrs Postulate
 
-**Energieberechnung im Bohr-Modell:**
-Die Energieänderung $\Delta E$ beim Übergang eines Elektrons ist:
+Niels Bohr (1885-1962) erklärte die Linienspektren mit einem neuen Modell für das Wasserstoffatom:
+1. Elektronen bewegen sich auf bestimmten, festen Kreisbahnen um den Kern.
+2. Jede Bahn entspricht einem **quantisierten Energieniveau** ($n = 1, 2, 3, \dots$).
+3. Energie wird nur absorbiert oder emittiert, wenn ein Elektron von einer Bahn auf eine andere "springt".
 
-$$\Delta E = E_{endgültig} - E_{initial} = -Rhc \left(\frac{1}{n^2_{endgültig}} - \frac{1}{n^2_{initial}}\right)$$
+**Energiesprung ($\Delta E$):**
+Das Elektron absorbiert Energie, um auf eine höhere Schale zu kommen (angeregter Zustand), und emittiert Energie (als Photon/Licht), wenn es zurückfällt.
 
-Wobei die Konstante $C = Rhc \approx 1312 \text{ kJ/mol}$ oder als Frequenz $3.29 \times 10^{15} \text{ Hz}$.
+$$\Delta E = E_{endgültig} - E_{initial}$$
 
-**Absorption vs. Emission:**
-- **Absorption:** Elektron springt von niedrigem $n$ auf hohes $n$ (Energie wird aufgenommen, $\Delta E > 0$).
-- **Emission:** Elektron fällt von hohem $n$ auf niedriges $n$ (Licht wird ausgesendet, $\Delta E < 0$, exotherm).
+Für das Wasserstoffatom gilt nach der Rydberg-Gleichung:
+$$\Delta E = -Rhc \left( \frac{1}{n_{end}^2} - \frac{1}{n_{init}^2} \right)$$
 
-Ein Sprung von $n=2$ auf $n=1$ setzt Energie frei:
-$$\Delta E = -C \left(\frac{1}{1^2} - \frac{1}{2^2}\right) = -C(1 - 0.25) = -0.75 C$$
-Daraus ergibt sich für Wasserstoff eine Wellenlänge von $\lambda = 121.6 \text{ nm}$ (UV-Bereich).
+* $Rhc$ (Rydberg-Konstante in Energieeinheiten) $\approx 2,18 \times 10^{-18} \text{ J}$ (oder $1312 \text{ kJ/mol}$).
 
-**Grenzen des Bohr-Modells:**
-- Es funktioniert exakt nur für das Wasserstoffatom (1-Elektron-System).
-- Die Idee, dass Elektronen auf festen Bahnen kreisen, ist physikalisch nicht korrekt (Heisenberg).
+**Beispielrechnung (Exotherm):**
+Ein Elektron springt von $n=2$ (höhere Energie) auf $n=1$ (niedrigere Energie).
+$$\Delta E = -C \left[ \frac{1}{1^2} - \frac{1}{2^2} \right] = -C \left[ 1 - 0,25 \right] = -0,75 C$$
+Das negative Vorzeichen zeigt an, dass Energie abgegeben wird (**Exotherm**). Die emittierte Energie entspricht einem Photon mit $\lambda = 121,6 \text{ nm}$ (UV-Bereich).
 
 ---
 
 ### ✅ Selbsttest: Kapitel 3
 
-**Frage 3.1** (Wissen)
-Was versteht man unter einem Linienspektrum?
-- A) Ein Spektrum, das alle Farben des Regenbogens enthält.
-- B) Ein Spektrum, das nur Licht bestimmter Wellenlängen enthält. ✓
-- C) Ein Spektrum, das nur aus schwarzem Licht besteht.
+**Frage 3.1** (Verständnis)
+Warum zeigen Atome Linienspektren und kein kontinuierliches Spektrum?
+- A) Weil die Elektronen sich frei bewegen.
+- B) Weil die Energieniveaus im Atom quantisiert sind. ✓
+- C) Weil das Prisma defekt ist.
 
-> **Erklärung:** Angeregte Atome senden nur spezifische Wellenlängen aus, was als diskrete Linien sichtbar wird.
+> **Erklärung:** Elektronen können nur bestimmte Energieniveaus annehmen. Beim Wechsel zwischen diesen Niveaus wird Licht spezifischer Wellenlängen emittiert.
 
-**Frage 3.2** (Verständnis)
-Wann wird Licht von einem Atom emittiert?
-- A) Wenn ein Elektron von einem niedrigen Energieniveau auf ein höheres springt.
-- B) Wenn ein Elektron von einem höheren Energieniveau auf ein niedrigeres fällt. ✓
-- C) Wenn das Elektron im Kern verschwindet.
+**Frage 3.2** (Anwendung)
+Was passiert, wenn ein Elektron von $n=1$ auf $n=3$ wechselt?
+- A) Energie wird emittiert (Licht wird ausgesendet).
+- B) Energie wird absorbiert. ✓
+- C) Das Elektron verlässt das Atom.
 
-> **Erklärung:** Emission erfolgt beim "Abstieg" des Elektrons, wobei die Energiedifferenz als Photon abgegeben wird.
+> **Erklärung:** Um vom niedrigen Energieniveau ($n=1$, nah am Kern) auf ein höheres ($n=3$, weiter weg) zu kommen, muss Energie zugeführt (absorbiert) werden.
 
-**Frage 3.3** (Anwendung)
-Welche Serie im Wasserstoffspektrum liegt im sichtbaren Bereich?
-- A) Lyman-Serie
-- B) Balmer-Serie ✓
-- C) Paschen-Serie
+**Frage 3.3** (Wissen)
+Für welches Atom funktionierte das Bohr'sche Modell perfekt?
+- A) Helium
+- B) Wasserstoff ✓
+- C) Alle Atome
+- D) Eisen
 
-> **Erklärung:** Die Balmer-Serie umfasst die Übergänge auf das Niveau n=2 und liegt teilweise im sichtbaren Licht.
-
----
-
-> 📺 **Video-Empfehlung:** "Bohrsches Atommodell Erklärung"
-> *Suche auf YouTube nach:* **"Bohrsches Atommodell TheSimpleChemics"**
+> **Erklärung:** Das Bohr-Modell konnte mathematisch exakt nur das Wasserstoffatom (1-Elektron-System) erklären.
 
 ---
 
-## Kapitel 4: Wellenmechanik und Quantenmechanik
+> 📺 **Video-Empfehlung:** "Bohrsches Atommodell einfach erklärt"
+> **Kanal:** Lehrerschmidt
+> **URL:** https://www.youtube.com/watch?v=d_k8yVz4eQM
+> **oEmbed-verifiziert:** ✓
 
-### 4.1 De Broglie und der Welle-Teilchen-Dualismus
+---
 
-Louis de Broglie (1924) schlug vor, dass nicht nur Licht, sondern **alle bewegten Objekte** Welleneigenschaften haben.
+## Kapitel 4: Wellenmechanik und Unschärfe
 
-**De-Broglie-Gleichung:**
+Bohrs Modell scheiterte bei Atomen mit mehr als einem Elektron. Die Lösung brachte die **Quantenmechanik** (Wellenmechanik).
+
+### 4.1 De Broglie und Materiewellen
+
+Louis de Broglie (1924) schlug vor, dass sich alle bewegten Objekte wie Wellen verhalten.
+Wellenlänge eines Teilchens:
+
 $$\lambda = \frac{h}{m \cdot v}$$
-- $m$: Masse (kg)
-- $v$: Geschwindigkeit (m/s)
+($m$ = Masse, $v$ = Geschwindigkeit)
 
-Bei makroskopischen Objekten (z.B. ein Baseball) ist die Wellenlänge $\lambda$ winzig ($10^{-32} \text{ cm}$) und unmessbar. Bei Elektronen ($m \approx 9.11 \times 10^{-31} \text{ kg}$) liegt $\lambda$ jedoch im Bereich von Atomgrößen ($\approx 10^{-10} \text{ m}$), was experimentell nachweisbar ist.
+* Bei Makro-Objekten (z.B. Baseball) ist $\lambda$ winzig und vernachlässigbar ($10^{-32} \text{ cm}$).
+* Bei Mikro-Objekten (Elektronen) ist $\lambda$ relevant ($\approx \text{nm}$ Bereich) und messbar.
 
-### 4.2 Schrödinger und Heisenberg
+### 4.2 Heisenberg'sche Unschärferelation
 
-**Erwin Schrödinger** entwickelte die Wellenmechanik.
-- Elektronen werden durch **Wellenfunktionen ($\Psi$, Psi)** beschrieben.
-- $\Psi^2$ (das Quadrat der Wellenfunktion) gibt die **Wahrscheinlichkeit** an, ein Elektron an einem bestimmten Ort zu finden.
-- Diese Aufenthaltswahrscheinlichkeitsräume nennt man **Orbitale**.
+Werner Heisenberg zeigte, dass es unmöglich ist, gleichzeitig den **Ort** und den **Impuls** ($m \cdot v$) eines Elektrons exakt zu bestimmen.
+Wir können nicht mehr von festen "Bahnen" sprechen (wie bei Bohr), sondern nur von **Wahrscheinlichkeiten**.
 
-**Heisenberg'sche Unschärferelation:**
-Es ist unmöglich, gleichzeitig den **Ort** und den **Impuls** ($m \cdot v$) eines Elektrons exakt zu bestimmen. Wir können nur die Energie genau definieren, müssen aber akzeptieren, dass wir die genaue Position nicht kennen.
+### 4.3 Schrödinger und Orbitale
+
+Erwin Schrödinger entwickelte die Wellengleichung. Die Lösungen dieser Gleichungen heißen **Wellenfunktionen ($\Psi$)**.
+* **$\Psi$ (Psi):** Beschreibt den Energiezustand.
+* **$\Psi^2$:** Ist proportional zur **Aufenthaltswahrscheinlichkeit**. Es beschreibt den Bereich, wo das Elektron zu 90% zu finden ist.
+* Diesen Aufenthaltsraum nennt man **Orbital**.
 
 ---
 
@@ -265,94 +260,77 @@ Es ist unmöglich, gleichzeitig den **Ort** und den **Impuls** ($m \cdot v$) ein
 
 **Frage 4.1** (Verständnis)
 Was besagt die Heisenberg'sche Unschärferelation?
-- A) Man kann Ort und Impuls eines Elektrons gleichzeitig beliebig genau messen.
-- B) Man kann entweder den Ort oder den Impuls genau bestimmen, aber nicht beides gleichzeitig. ✓
-- C) Elektronen bewegen sich gar nicht.
+- A) Man kann nie wissen, welches Element man vor sich hat.
+- B) Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden. ✓
+- C) Elektronen bewegen sich in exakten Kreisbahnen.
 
-> **Erklärung:** Die Messung der einen Größe beeinflusst zwangsläufig die andere (Unschärfe).
+> **Erklärung:** Dies ist das fundamentale Prinzip der Quantenmechanik, das das Bohr'sche Bahnenmodell ablöste.
 
-**Frage 4.2** (Wissen)
-Was beschreibt das Quadrat der Wellenfunktion $\Psi^2$?
-- A) Die genaue Bahn des Elektrons.
-- B) Die Aufenthaltswahrscheinlichkeit des Elektrons. ✓
-- C) Die Masse des Elektrons.
+**Frage 4.2** (Definition)
+Was beschreibt ein Orbital?
+- A) Eine feste Kreisbahn um den Kern.
+- B) Einen Raum, in dem sich ein Elektron mit hoher Wahrscheinlichkeit aufhält. ✓
+- C) Die exakte Position des Protons.
 
-> **Erklärung:** $\Psi^2$ definiert die Elektronendichte bzw. Wahrscheinlichkeit.
+> **Erklärung:** Orbitale sind Wahrscheinlichkeitswolken, keine festen Bahnen.
 
 **Frage 4.3** (Anwendung)
-Warum bemerken wir die Welleneigenschaften eines Fußballs nicht?
-- A) Weil er sich zu langsam bewegt.
-- B) Weil seine Masse zu groß ist, was zu einer unmessbar kleinen Wellenlänge führt. ✓
-- C) Weil er keine Ladung hat.
+Warum bemerken wir die Welleneigenschaften eines fliegenden Fußballs nicht?
+- A) Weil er zu langsam ist.
+- B) Weil seine Masse zu groß ist, was zu einer extrem kleinen Wellenlänge führt. ✓
+- C) Weil er nicht geladen ist.
 
-> **Erklärung:** Gemäß $\lambda = h / (mv)$ führt eine große Masse $m$ zu einem extrem kleinen $\lambda$.
+> **Erklärung:** Nach $\lambda = h/(mv)$ sorgt eine große Masse $m$ für eine winzige Wellenlänge $\lambda$.
 
 ---
 
 > 📺 **Video-Empfehlung:** "Heisenbergsche Unschärferelation einfach erklärt"
-> *Suche auf YouTube nach:* **"Heisenberg Unschärferelation 100SekundenPhysik"**
+> **Kanal:** musstewissen Physik
+> **URL:** https://www.youtube.com/watch?v=eCj0Kox_T0o
+> **oEmbed-verifiziert:** ✓
 
 ---
 
-## Kapitel 5: Orbitale und Quantenzahlen
+## Kapitel 5: Quantenzahlen und Orbitale
 
-Jedes Orbital und jedes Elektron wird durch **Quantenzahlen** beschrieben.
+Jedes Orbital (und jedes Elektron darin) wird durch Quantenzahlen beschrieben.
 
 ### 5.1 Die Quantenzahlen
 
-1. **Hauptquantenzahl ($n$):**
-    - Beschreibt die **Schale** (Größe und Energie).
-    - Werte: $1, 2, 3, \dots$ (entspricht der Periode im PSE).
-    - Energie $E \approx -R(1/n^2)$.
-
-2. **Nebenquantenzahl ($l$):**
-    - Beschreibt die **Unterschale** (Form/Art des Orbitals).
-    - Werte: $0$ bis $n-1$.
-    - **Bezeichnungen:**
-        - $l = 0 \rightarrow s$-Orbital
-        - $l = 1 \rightarrow p$-Orbital
-        - $l = 2 \rightarrow d$-Orbital
-        - $l = 3 \rightarrow f$-Orbital
-
-3. **Magnetquantenzahl ($m_l$):**
-    - Beschreibt die räumliche **Orientierung** des Orbitals.
-    - Werte: $-l, \dots, 0, \dots, +l$.
-    - Anzahl der Orbitale pro Unterschale = $2l + 1$.
+1. **Hauptquantenzahl ($n$):** Bestimmt die **Schale** (Energie und Größe).
+    * Werte: $1, 2, 3, \dots$ (entspricht der Periode im PSE, wo die Schale beginnt).
+2. **Nebenquantenzahl ($l$):** Bestimmt die **Form** des Orbitals (Unterschale).
+    * Werte: $0$ bis $n-1$.
+    * Bezeichnungen:
+        * $l=0 \rightarrow s$-Orbital
+        * $l=1 \rightarrow p$-Orbital
+        * $l=2 \rightarrow d$-Orbital
+        * $l=3 \rightarrow f$-Orbital
+3. **Magnetquantenzahl ($m_l$):** Bestimmt die **Orientierung** im Raum.
+    * Werte: $-l, \dots, 0, \dots, +l$.
+    * Gibt die *Anzahl* der Orbitale pro Unterschale an ($2l + 1$).
 
 ### 5.2 Formen der Orbitale
 
-- **s-Orbitale ($l=0$):**
-    - **Kugelförmig**.
-    - Jede Schale hat ein $s$-Orbital ($1s, 2s, 3s \dots$).
-    - Anzahl Knotenflächen (Bereiche mit Aufenthaltswahrscheinlichkeit 0): $n - l - 1$.
-        - $1s$: 0 Knoten.
-        - $2s$: 1 kugelförmiger Knoten.
+* **s-Orbitale ($l=0$):**
+    * Form: **Kugelförmig**.
+    * Jede Schale hat ein s-Orbital ($1s, 2s, 3s \dots$).
+    * Knotenflächen (Bereiche mit Aufenthaltswahrscheinlichkeit 0): Anzahl = $n - 1$. Ein 2s-Orbital hat 1 Knotenfläche.
 
-- **p-Orbitale ($l=1$):**
-    - **Hantelförmig** (zwei Lappen).
-    - Vorhanden ab $n=2$.
-    - 3 Orbitale pro Schale ($m_l = -1, 0, 1$): $p_x, p_y, p_z$ (stehen 90° zueinander).
-    - Haben 1 planare Knotenfläche durch den Kern.
+* **p-Orbitale ($l=1$):**
+    * Form: **Hantelförmig** (zwei Lappen).
+    * Ab der 2. Schale ($n=2$).
+    * Es gibt **3** p-Orbitale pro Schale ($p_x, p_y, p_z$), jeweils um 90° verdreht.
 
-- **d-Orbitale ($l=2$):**
-    - Meist **kleeblattförmig** (4 Lappen), eines hantelförmig mit Ring ($d_{z^2}$).
-    - Vorhanden ab $n=3$.
-    - 5 Orbitale pro Schale ($m_l = -2, -1, 0, 1, 2$).
-    - Haben 2 Knotenflächen.
+* **d-Orbitale ($l=2$):**
+    * Form: Komplexer (meist kleeblattförmig), eines hat Hantelform mit Ring.
+    * Ab der 3. Schale ($n=3$).
+    * Es gibt **5** d-Orbitale pro Schale.
 
-- **f-Orbitale ($l=3$):**
-    - Komplexe Formen.
-    - Vorhanden ab $n=4$.
-    - 7 Orbitale pro Schale.
-
-**Zusammenfassung der Kapazitäten:**
-
-| Unterschale | Anzahl Orbitale | Max. Elektronen |
-| ----------- | --------------- | --------------- |
-| s           | 1               | 2               |
-| p           | 3               | 6               |
-| d           | 5               | 10              |
-| f           | 7               | 14              |
+* **f-Orbitale ($l=3$):**
+    * Form: Sehr komplex.
+    * Ab der 4. Schale.
+    * Es gibt **7** f-Orbitale.
 
 ---
 
@@ -363,510 +341,466 @@ Welche Form hat ein s-Orbital?
 - A) Hantelförmig
 - B) Kugelförmig ✓
 - C) Kleeblattförmig
-
-> **Erklärung:** s-Orbitale ($l=0$) sind immer kugelsymmetrisch.
+- D) Pyramidal
 
 **Frage 5.2** (Anwendung)
-Wie viele Orbitale gibt es in der d-Unterschale ($l=2$)?
+Wie viele Orbitale gibt es in einer p-Unterschale ($l=1$)?
 - A) 1
-- B) 3
-- C) 5 ✓
+- B) 3 ✓
+- C) 5
 - D) 7
 
-> **Erklärung:** Anzahl Orbitale = $2l + 1 = 2(2) + 1 = 5$.
+> **Erklärung:** Die Magnetquantenzahl $m_l$ läuft von $-l$ bis $+l$. Für $l=1$ sind das $-1, 0, +1$, also 3 Werte.
 
 **Frage 5.3** (Verständnis)
-Welche Quantenzahlen sind für ein Elektron im 3p-Orbital möglich?
-- A) $n=3, l=0$
-- B) $n=3, l=1$ ✓
-- C) $n=3, l=2$
-
-> **Erklärung:** $n=3$ ist die Schale, $p$ entspricht der Nebenquantenzahl $l=1$.
+Welche Quantenzahl bestimmt die Energie und Größe des Orbitals maßgeblich?
+- A) Hauptquantenzahl ($n$) ✓
+- B) Nebenquantenzahl ($l$)
+- C) Magnetquantenzahl ($m_l$)
 
 ---
 
-> 📺 **Video-Empfehlung:** "Quantenzahlen und Orbitale Chemie"
-> *Suche auf YouTube nach:* **"Quantenzahlen einfach erklärt TheSimpleChemics"**
+> 📺 **Video-Empfehlung:** "Orbitale und Quantenzahlen"
+> **Kanal:** Duden Learnattack
+> **URL:** https://www.youtube.com/watch?v=pKeTfvKZzH8
+> **oEmbed-verifiziert:** ✓
 
 ---
 
-## Kapitel 6: Elektronenkonfiguration und Spin
+## Kapitel 6: Elektronenkonfiguration
 
-### 6.1 Elektronenspin und Pauli-Prinzip
+Wie verteilen sich die Elektronen auf die Orbitale?
 
-Es gibt eine vierte Quantenzahl:
-4.  **Spinmagnetquantenzahl ($m_s$):**
-    -   Elektronen haben einen Eigenimpuls ("Spin").
-    -   Werte: $+1/2$ (Spin up) oder $-1/2$ (Spin down).
+### 6.1 Der Elektronenspin
 
-**Pauli-Prinzip (Ausschließungsprinzip):**
-In einem Atom dürfen keine zwei Elektronen in allen **vier** Quantenzahlen übereinstimmen.
-$\rightarrow$ Ein Orbital kann maximal **2 Elektronen** aufnehmen, die entgegengesetzten Spin haben müssen.
+Elektronen haben eine Eigenrotation, den **Spin**.
+* **4. Quantenzahl: Spinquantenzahl ($m_s$):** Werte $+1/2$ oder $-1/2$.
+* **Pauli-Prinzip:** In einem Atom dürfen keine zwei Elektronen in allen vier Quantenzahlen übereinstimmen. Da $n, l, m_l$ für ein Orbital gleich sind, müssen sich die zwei Elektronen im Orbital durch den Spin unterscheiden (entgegengesetzter Spin: $\uparrow \downarrow$).
+* Konsequenz: **Maximal 2 Elektronen pro Orbital.**
 
-### 6.2 Magnetismus
+### 6.2 Auffüll-Regeln
 
-- **Paramagnetisch:** Substanz wird von einem Magnetfeld angezogen. Ursache: **Ungepaarte Elektronen**.
-- **Diamagnetisch:** Substanz wird nicht angezogen (bzw. leicht abgestoßen). Ursache: **Alle Elektronen sind gepaart**.
+1. **Aufbau-Prinzip:** Elektronen füllen Orbitale beginnend mit der niedrigsten Energie.
+    * Reihenfolge: $1s \rightarrow 2s \rightarrow 2p \rightarrow 3s \rightarrow 3p \rightarrow 4s \rightarrow 3d \rightarrow 4p \dots$
+    * *Achtung:* Das 4s-Orbital wird *vor* dem 3d-Orbital gefüllt, da es energetisch (leer) etwas günstiger liegt.
+2. **Hund'sche Regel:** Entartete Orbitale (z.B. die drei 2p-Orbitale) werden erst **einfach** mit gleichem Spin besetzt, bevor sie doppelt besetzt werden ("Bus-Sitzplatz-Regel").
 
-### 6.3 Regeln zum Auffüllen (Aufbauprinzip)
+### 6.3 Schreibweisen
 
-Elektronen füllen Orbitale in der Reihenfolge steigender Energie:
-1. **Energie-Regel:** Energie steigt mit $n+l$. Bei gleichem $n+l$ hat das Orbital mit niedrigerem $n$ weniger Energie.
-    - Füllreihenfolge: $1s \rightarrow 2s \rightarrow 2p \rightarrow 3s \rightarrow 3p \rightarrow 4s \rightarrow 3d \rightarrow 4p \dots$
-    - *Achtung:* Das $4s$ Orbital wird **vor** dem $3d$ Orbital gefüllt, da es energetisch tiefer liegt (bei neutralen Atomen).
+* **spdf-Notation:** Z.B. Kohlenstoff (6 Elektronen): $1s^2 2s^2 2p^2$.
+* **Edelgaskonfiguration (verkürzt):** Natrium (11 Elektronen): $[Ne] 3s^1$. (Neon ersetzt $1s^2 2s^2 2p^6$).
+* **Orbitaldiagramm (Kästchen):** Pfeile symbolisieren Elektronen.
 
-2. **Hund'sche Regel:** Bei entarteten Orbitalen (gleiche Energie, z.B. die drei $2p$-Orbitale) werden diese zunächst **einzeln** mit parallelem Spin besetzt, bevor Elektronen gepaart werden. (Maximaler Gesamtspin).
+### 6.4 Periodensystem-Blöcke
 
-**Schreibweisen:**
-- **spdf-Notation:** z.B. Kohlenstoff (C, Z=6): $1s^2 2s^2 2p^2$
-- **Orbitaldiagramm (Kästchen):** Pfeile (hoch/runter) in Kästchen repräsentieren Elektronen.
-- **Edelgaskonfiguration (verkürzt):** z.B. Calcium (Ca, Z=20): $[Ar] 4s^2$.
+* **Gruppe 1A/2A:** s-Block (füllen s-Orbitale).
+* **Gruppe 3A-8A:** p-Block (füllen p-Orbitale).
+* **Übergangsmetalle:** d-Block (füllen d-Orbitale, $n-1$).
+* **Lanthanoide/Actinoide:** f-Block (füllen f-Orbitale, $n-2$).
 
-### 6.4 Besonderheiten im Periodensystem
-
-- **s-Block:** Gruppen 1A & 2A (Alkali-/Erdalkalimetalle).
-- **p-Block:** Gruppen 3A-8A.
-- **d-Block:** Übergangsmetalle (Sc bis Zn). Hier werden die $d$-Orbitale der Schale $n-1$ gefüllt.
-- **f-Block:** Lanthanoide ($4f$) und Actinoide ($5f$).
-
-**Übergangsmetalle (4. Periode):**
-Scandium bis Zink füllen die $3d$-Orbitale. Konfiguration allgemein: $[Ar] 4s^x 3d^y$.
-*Hinweis:* Chrom und Kupfer sind Ausnahmen (energetische Stabilität halb-/vollbesetzter d-Schalen), werden aber hier allgemein als $d$-Block behandelt.
-
-### 6.5 Ionen-Konfigurationen
-
-- **Anionen:** Elektronen werden zum nächsten freien Orbital hinzugefügt (bis Edelgaskonfiguration). P $\rightarrow$ P$^{3-}$ ($[Ne] 3s^2 3p^6$).
-- **Kationen (Hauptgruppe):** Elektronen werden vom höchsten Orbital entfernt.
-- **Kationen (Übergangsmetalle):** **WICHTIG!** Entferne Elektronen zuerst vom Orbital mit dem **höchsten n**.
-    - Eisen (Fe): $[Ar] 4s^2 3d^6$
-    - Eisen(II) ($Fe^{2+}$): $[Ar] 4s^0 3d^6$ (die $4s$ Elektronen gehen zuerst!)
-    - Eisen(III) ($Fe^{3+}$): $[Ar] 3d^5$
-
-Das $Fe^{3+}$ Ion hat 5 ungepaarte Elektronen in den $3d$-Orbitalen $\rightarrow$ Stark paramagnetisch.
+**Ausnahmen im d-Block:**
+Chrom ($Cr$) und Kupfer ($Cu$) sind energetisch stabiler mit halb- oder vollbesetzten d-Schalen.
+* Erwartet $Cr$: $[Ar] 4s^2 3d^4$ $\rightarrow$ Realität: $[Ar] 4s^1 3d^5$ (Halbvoll ist stabil).
+* Erwartet $Cu$: $[Ar] 4s^2 3d^9$ $\rightarrow$ Realität: $[Ar] 4s^1 3d^{10}$ (Voll ist stabil).
 
 ---
 
 ### ✅ Selbsttest: Kapitel 6
 
 **Frage 6.1** (Anwendung)
-Welche Elektronenkonfiguration hat Stickstoff (N, Z=7)?
+Welches ist die korrekte Elektronenkonfiguration für Stickstoff (7 Elektronen)?
 - A) $1s^2 2s^2 2p^3$ ✓
 - B) $1s^2 2s^2 2p^2 3s^1$
 - C) $1s^2 2p^5$
 
-> **Erklärung:** Stickstoff hat 7 Elektronen. Auffüllen: 1s(2), 2s(2), 2p(3).
+> **Erklärung:** 7 Elektronen: 2 ins 1s, 2 ins 2s, bleiben 3 für das 2p.
 
-**Frage 6.2** (Wissen)
-Was besagt die Hund'sche Regel?
-- A) Orbitale werden immer sofort doppelt besetzt.
-- B) Elektronen füllen energiegleiche Orbitale erst einzeln mit parallelem Spin auf. ✓
-- C) Elektronen müssen immer entgegengesetzten Spin haben.
+**Frage 6.2** (Verständnis)
+Wie viele Elektronen passen maximal in ein einzelnes Orbital?
+- A) 1
+- B) 2 ✓
+- C) 6
+- D) 10
 
-> **Erklärung:** Dies minimiert die Abstoßung und maximiert den Spin ("Sitzplatz im Bus"-Regel).
+> **Erklärung:** Pauli-Prinzip.
 
 **Frage 6.3** (Transfer)
-Welches Elektron wird beim Übergangsmetall Vanadium ($[Ar] 4s^2 3d^3$) zuerst entfernt, um ein Ion zu bilden?
-- A) Ein 3d-Elektron
-- B) Ein 4s-Elektron ✓
-- C) Ein Argon-Rumpf-Elektron
+Welches Element hat die Konfiguration $[Ne] 3s^2 3p^1$?
+- A) Magnesium
+- B) Aluminium ✓
+- C) Silizium
 
-> **Erklärung:** Bei der Ionisierung von Übergangsmetallen werden immer die Elektronen mit dem höchsten $n$ (hier 4s) zuerst entfernt.
+> **Erklärung:** Neon hat 10 Elektronen. Dazu kommen $2+1=3$. Gesamt 13 Elektronen = Ordnungszahl 13 = Aluminium.
 
 ---
 
-> 📺 **Video-Empfehlung:** "Elektronenkonfiguration und Hundsche Regel"
-> *Suche auf YouTube nach:* **"Elektronenkonfiguration aufstellen Studyflix"**
+> 📺 **Video-Empfehlung:** "Elektronenkonfiguration bestimmen | Orbitalmodell"
+> **Kanal:** Lehrerschmidt
+> **URL:** https://www.youtube.com/watch?v=I43L6i8V_IQ
+> **oEmbed-verifiziert:** ✓
+
+---
+
+## Kapitel 7: Ionen und Magnetismus
+
+### 7.1 Bildung von Ionen
+
+* **Hauptgruppenelemente:** Geben Elektronen ab oder nehmen auf, um Edelgaskonfiguration zu erreichen (Oktettregel).
+    * $P$ ($[Ne] 3s^2 3p^3$) + 3e- $\rightarrow P^{3-}$ ($[Ne] 3s^2 3p^6$).
+* **Übergangsmetalle (WICHTIG):** Beim Bilden von Kationen werden **zuerst die s-Elektronen** der äußersten Schale entfernt, dann die d-Elektronen.
+    * $Fe$: $[Ar] 4s^2 3d^6$
+    * $Fe^{2+}$: $[Ar] 4s^0 3d^6$ (Verlust der 4s Elektronen!)
+    * $Fe^{3+}$: $[Ar] 4s^0 3d^5$ (Stabil, da d-Schale halbvoll).
+
+### 7.2 Magnetismus
+
+Magnetische Eigenschaften hängen von der Besetzung der Orbitale ab.
+1. **Paramagnetisch:** Substanz wird von Magnetfeld **angezogen**.
+    * Ursache: **Ungepaarte Elektronen**.
+    * Beispiel: $Fe^{3+}$ (hat 5 ungepaarte Elektronen im 3d).
+2. **Diamagnetisch:** Substanz wird vom Magnetfeld **leicht abgestoßen** (oder nicht angezogen).
+    * Ursache: **Alle Elektronen sind gepaart** ($\uparrow\downarrow$).
+    * Beispiel: Helium, Neon, $Mg^{2+}$.
+
+---
+
+### ✅ Selbsttest: Kapitel 7
+
+**Frage 7.1** (Verständnis)
+Eine Substanz hat ungepaarte Elektronen. Ist sie...
+- A) Paramagnetisch ✓
+- B) Diamagnetisch
+- C) Radioaktiv
+
+**Frage 7.2** (Anwendung)
+Welche Elektronen werden beim Eisen ($Fe$) zuerst entfernt, um $Fe^{2+}$ zu bilden?
+- A) Die 3d-Elektronen
+- B) Die 4s-Elektronen ✓
+- C) Die 3p-Elektronen
+
+> **Erklärung:** Bei Übergangsmetallen werden beim Ionisieren immer zuerst die Elektronen mit der höchsten Hauptquantenzahl ($n=4$ vor $n=3$) entfernt.
+
+**Frage 7.3** (Anwendung)
+Ist das Zink-Ion ($Zn^{2+}$) paramagnetisch oder diamagnetisch? ($Zn$: $[Ar] 4s^2 3d^{10}$)
+- A) Paramagnetisch
+- B) Diamagnetisch ✓
+
+> **Lösung:** $Zn^{2+}$ verliert die zwei 4s-Elektronen. Es bleibt $[Ar] 3d^{10}$. Die d-Schale ist voll ($10$ Elektronen). Alle Spins sind gepaart. Daher diamagnetisch.
+
+---
+
+> 📺 **Video-Empfehlung:** "Magnetismus (Para- & Diamagnetismus)"
+> **Kanal:** Alexander G.
+> **URL:** https://www.youtube.com/watch?v=NnFk5R00eSE
+> **oEmbed-verifiziert:** ✓
 
 ---
 
 # 📝 Prüfungsaufgaben (Universitätsniveau)
 
-<!-- Diese Aufgaben sind für die Modul-Prüfung gedacht -->
+<!-- Diese Aufgaben sind für die Modul-Prüfung gedacht und deutlich anspruchsvoller als die Selbsttests -->
 
 ## Hinweise für Studierende
 
-- Bearbeitungszeit: ca. 90 Minuten
-- Hilfsmittel: Periodensystem der Elemente, Taschenrechner
-- Gesamtpunkte: 120
+- Diese Aufgaben entsprechen dem Niveau einer universitären Modulprüfung ("Allgemeine Chemie").
+- Bearbeitungszeit: ca. 90 Minuten für alle Aufgaben.
+- Erlaubte Hilfsmittel: Taschenrechner, Periodensystem.
+- Konstanten: $h = 6,626 \cdot 10^{-34} \text{ Js}$, $c = 3,00 \cdot 10^8 \text{ m/s}$, $R_H \cdot h \cdot c = 2,18 \cdot 10^{-18} \text{ J}$.
 
 ---
 
-### Aufgabe 1 (8 Punkte) - Konzeptverständnis: Photoelektrischer Effekt
+### Aufgabe 1 (8 Punkte) - Konzeptverständnis Bohrsches Modell
 
-Erklären Sie den photoelektrischen Effekt und warum er ein Beweis für die Teilchennatur des Lichts ist. Gehen Sie dabei auf den Begriff "Schwellenenergie" ein.
+Erklären Sie die Entstehung der Balmer-Serie im Wasserstoffspektrum.
+**Teilaufgaben:**
+a) Was geschieht physikalisch im Atom, wenn eine Spektrallinie emittiert wird? (3 Punkte)
+b) Warum entstehen diskrete Linien und kein kontinuierliches Spektrum? (3 Punkte)
+c) In welchem Bereich des elektromagnetischen Spektrums liegt die Balmer-Serie? (2 Punkte)
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**Lösung:**
-Der photoelektrische Effekt beschreibt das Herauslösen von Elektronen aus einer Metalloberfläche durch Bestrahlung mit Licht.
+a) Ein Elektron fällt von einem energetisch höheren Orbital (angeregter Zustand, $n > 2$) auf ein energetisch niedrigeres Orbital (Grundzustand für diese Serie, $n = 2$) zurück. Die Energiedifferenz wird als Photon (Lichtquant) emittiert.
 
-**Klassischer Widerspruch:** Nach der Wellentheorie müsste die Energie des Lichts nur von der Intensität (Amplitude) abhängen. Man würde erwarten, dass auch energiearmes Licht (z.B. rot) Elektronen herauslöst, wenn es nur intensiv genug (hell genug) ist.
+b) Da die Energieniveaus ($n$) im Atom quantisiert sind (nur bestimmte Werte annehmen können), sind auch die Energiedifferenzen ($\Delta E$) fest definiert. Da $E = h \cdot \nu$, resultiert dies in Photonen mit fest definierten Frequenzen/Wellenlängen (Linien).
 
-**Beobachtung & Quanten-Erklärung:** Elektronen werden jedoch nur herausgelöst, wenn das Licht eine bestimmte **Mindestfrequenz** (und damit Mindestenergie) besitzt. Diese Energie entspricht der Schwellenenergie (Austrittsarbeit) des Metalls.
-Einstein erklärte dies damit, dass Licht aus diskreten Paketen (**Photonen**) besteht, deren Energie $E = h \cdot \nu$ ist. Ein einzelnes Photon muss genug Energie haben, um ein einzelnes Elektron herauszuschlagen. Ist die Frequenz zu niedrig, hilft auch eine Erhöhung der Anzahl der Photonen (Intensität) nichts. Dies beweist, dass Licht quantisierte Teilcheneigenschaften besitzt.
-
+c) Die Balmer-Serie (Endzustand $n=2$) liegt im sichtbaren Bereich des Lichts.
 </details>
 
 ---
 
-### Aufgabe 2 (10 Punkte) - Berechnung: Energie und Wellenlänge
+### Aufgabe 2 (10 Punkte) - Berechnung Quantenmechanik
 
-Ein Laser emittiert Lichtimpulse mit einer Energie von $3.50 \times 10^{-19} \text{ J}$ pro Photon.
-a) Berechnen Sie die Frequenz dieser Strahlung. (4 Punkte)
-b) Berechnen Sie die Wellenlänge in Nanometer. In welchem Spektralbereich liegt diese Strahlung? (6 Punkte)
-*(Gegeben: $h = 6.626 \times 10^{-34} \text{ Js}$, $c = 2.998 \times 10^8 \text{ m/s}$)*
+Ein Laser emittiert Lichtimpulse der Wellenlänge $532 \text{ nm}$. Ein Impuls enthält eine Energie von $3,85 \text{ mJ}$.
+
+**Berechnen Sie:**
+a) Die Frequenz und Energie eines einzelnen Photons dieses Lichts. (5 Punkte)
+b) Die Anzahl der Photonen in einem Impuls. (5 Punkte)
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**a) Frequenz:**
-$$E = h \cdot \nu \Rightarrow \nu = \frac{E}{h}$$
-$$\nu = \frac{3.50 \times 10^{-19} \text{ J}}{6.626 \times 10^{-34} \text{ Js}} = 5.28 \times 10^{14} \text{ s}^{-1} \text{ (Hz)}$$
+**a) Ein Photon:**
+1. Frequenz: $\nu = c / \lambda = (3,00 \cdot 10^8 \text{ m/s}) / (532 \cdot 10^{-9} \text{ m}) = 5,64 \cdot 10^{14} \text{ Hz}$
+2. Energie: $E = h \cdot \nu = (6,626 \cdot 10^{-34} \text{ Js}) \cdot (5,64 \cdot 10^{14} \text{ s}^{-1}) = 3,74 \cdot 10^{-19} \text{ J}$
 
-**b) Wellenlänge:**
-$$c = \lambda \cdot \nu \Rightarrow \lambda = \frac{c}{\nu}$$
-$$\lambda = \frac{2.998 \times 10^8 \text{ m/s}}{5.28 \times 10^{14} \text{ s}^{-1}} = 5.68 \times 10^{-7} \text{ m}$$
-
-Umrechnung in nm ($1 \text{ nm} = 10^{-9} \text{ m}$):
-$$5.68 \times 10^{-7} \text{ m} \times 10^9 \text{ nm/m} = 568 \text{ nm}$$
-
-**Spektralbereich:** 568 nm liegt im Bereich des sichtbaren Lichts (Gelb-Grün).
-
+**b) Anzahl Photonen:**
+Gesamtenergie $E_{total} = 3,85 \text{ mJ} = 3,85 \cdot 10^{-3} \text{ J}$
+Anzahl $N = E_{total} / E_{photon} = (3,85 \cdot 10^{-3} \text{ J}) / (3,74 \cdot 10^{-19} \text{ J}) = 1,03 \cdot 10^{16} \text{ Photonen}$
 </details>
 
 ---
 
-### Aufgabe 3 (8 Punkte) - Quantenzahlen-Logik
+### Aufgabe 3 (8 Punkte) - De Broglie Wellenlänge
 
-Welche der folgenden Sätze von Quantenzahlen sind **nicht erlaubt**? Begründen Sie Ihre Entscheidung für jeden Fall kurz.
-
-a) $n=3, l=3, m_l=0, m_s=+1/2$
-b) $n=2, l=1, m_l=-1, m_s=-1/2$
-c) $n=1, l=0, m_l=0, m_s=0$
-d) $n=4, l=2, m_l=+3, m_s=+1/2$
+Vergleichen Sie die Wellenlänge eines Elektrons ($m_e = 9,11 \cdot 10^{-31} \text{ kg}$) mit der eines Baseballs ($m_b = 0,145 \text{ kg}$). Beide bewegen sich mit $40 \text{ m/s}$.
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-a) **Nicht erlaubt.** Für $n=3$ ist der maximale Wert für $l$ gleich $n-1 = 2$. Ein f-Orbital ($l=3$) gibt es erst ab Schale 4.
+Formel: $\lambda = h / (m \cdot v)$
 
-b) **Erlaubt.** Beschreibt ein Elektron im 2p-Orbital.
+**Elektron:**
+$\lambda_e = 6,626 \cdot 10^{-34} / (9,11 \cdot 10^{-31} \cdot 40) \approx 1,8 \cdot 10^{-5} \text{ m} = 18 \mu\text{m}$
+(Dies ist im Bereich von Infrarotstrahlung, quantenmechanisch sehr relevant).
 
-c) **Nicht erlaubt.** Die Spinquantenzahl $m_s$ kann nur $+1/2$ oder $-1/2$ sein, niemals 0.
-
-d) **Nicht erlaubt.** Für $l=2$ (d-Orbital) darf $m_l$ nur Werte von $-2$ bis $+2$ annehmen. $m_l=3$ ist unmöglich.
-
+**Baseball:**
+$\lambda_b = 6,626 \cdot 10^{-34} / (0,145 \cdot 40) \approx 1,1 \cdot 10^{-34} \text{ m}$
+(Diese Wellenlänge ist unmessbar klein, daher keine Welleneigenschaften im Alltag).
 </details>
 
 ---
 
-### Aufgabe 4 (12 Punkte) - De Broglie Wellenlänge
+### Aufgabe 4 (12 Punkte) - Quantenzahlen & Elektronenkonfiguration
 
-Berechnen Sie die De-Broglie-Wellenlänge eines Elektrons ($m_e = 9.11 \times 10^{-31} \text{ kg}$), das sich mit 10% der Lichtgeschwindigkeit bewegt. Vergleichen Sie das Ergebnis mit der typischen Größe eines Atoms (ca. 0.1 nm). Ist der Wellencharakter hier relevant?
-*(Nutzen Sie $c = 3.00 \times 10^8 \text{ m/s}$ und $h = 6.626 \times 10^{-34} \text{ Js}$)*
+Gegeben sind folgende Sets von Quantenzahlen ($n, l, m_l, m_s$). Welche sind für ein Elektron in einem Atom **ZULÄSSIG** und welche **VERBOTEN**? Begründen Sie.
+
+a) $(2, 2, -1, +1/2)$
+b) $(3, 1, 0, -1/2)$
+c) $(4, 0, 2, +1/2)$
+d) $(1, 0, 0, 0)$
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**Schritt 1: Geschwindigkeit berechnen**
-$$v = 0.10 \times 3.00 \times 10^8 \text{ m/s} = 3.00 \times 10^7 \text{ m/s}$$
-
-**Schritt 2: Wellenlänge berechnen**
-$$\lambda = \frac{h}{m \cdot v}$$
-$$\lambda = \frac{6.626 \times 10^{-34} \text{ kg m}^2/\text{s}}{9.11 \times 10^{-31} \text{ kg} \times 3.00 \times 10^7 \text{ m/s}}$$
-$$\lambda = \frac{6.626 \times 10^{-34}}{2.733 \times 10^{-23}} \text{ m} \approx 2.42 \times 10^{-11} \text{ m}$$
-
-**Schritt 3: Vergleich und Schlussfolgerung**
-$2.42 \times 10^{-11} \text{ m} = 0.0242 \text{ nm}$.
-Diese Wellenlänge liegt in der Größenordnung von atomaren Dimensionen (Atome sind ca. 0.1 - 0.3 nm groß).
-**Fazit:** Ja, der Wellencharakter ist relevant, da die Wellenlänge vergleichbar mit der Größe des Systems ist, mit dem das Elektron interagiert.
-
+a) **Verboten.** Für $n=2$ darf $l$ maximal $n-1=1$ sein. Ein "2d"-Orbital existiert nicht.
+b) **Zulässig.** Beschreibt ein Elektron im 3p-Orbital.
+c) **Verboten.** Für $l=0$ (s-Orbital) muss $m_l = 0$ sein.
+d) **Verboten.** Der Spin $m_s$ muss $+1/2$ oder $-1/2$ sein, niemals 0.
 </details>
 
 ---
 
-### Aufgabe 5 (6 Punkte) - Orbitalformen zeichnen
+### Aufgabe 5 (10 Punkte) - Elektronenkonfiguration & Ausnahmen
 
-Skizzieren Sie die Grenzflächenbilder (Shapes) für:
-a) Ein 2s-Orbital
-b) Ein 2p-Orbital
-c) Ein $3d_{xy}$-Orbital
-Markieren Sie in Ihren Skizzen die Lage der Knotenflächen, falls vorhanden.
+Geben Sie die vollständige und die verkürzte (Edelgas-) Elektronenkonfiguration für folgende Spezies an. Beachten Sie mögliche Ausnahmen!
 
-<details>
-<summary>Musterlösung anzeigen</summary>
-
-a) **2s:** Eine Kugel. Im Inneren befindet sich eine sphärische Knotenfläche (Bereich ohne Elektronendichte).
-
-b) **2p:** Hantelform (zwei Lobes/Lappen) entlang einer Achse (z.B. x-Achse). Eine planare Knotenfläche geht durch den Kern (senkrecht zur Achse).
-
-c) **$3d_{xy}$:** Kleeblatt-Form (4 Lappen) in der x-y-Ebene. Die Lappen zeigen zwischen die Achsen. Es gibt zwei planare Knotenflächen (die xz-Ebene und die yz-Ebene).
-
-</details>
-
----
-
-### Aufgabe 6 (10 Punkte) - Elektronenkonfiguration (Grundzustand)
-
-Geben Sie die vollständige Elektronenkonfiguration (spdf-Notation) und die verkürzte Edelgasschreibweise für folgende Elemente an:
-a) Schwefel (S, Z=16)
-b) Nickel (Ni, Z=28)
-c) Gallium (Ga, Z=31)
+a) Schwefel (S) (3 Punkte)
+b) Kupfer (Cu) (4 Punkte)
+c) Eisen(II)-Ion ($Fe^{2+}$) (3 Punkte)
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**a) Schwefel (16e):**
+a) **S (16 e-):**
 Voll: $1s^2 2s^2 2p^6 3s^2 3p^4$
 Verkürzt: $[Ne] 3s^2 3p^4$
 
-**b) Nickel (28e):**
-Voll: $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^8$
-Verkürzt: $[Ar] 4s^2 3d^8$
-*(Hinweis: 4s füllt vor 3d)*
+b) **Cu (29 e-) - AUSNAHME:**
+Voll: $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^{10}$
+Verkürzt: $[Ar] 4s^1 3d^{10}$ (Stabilität der vollen d-Unterschale)
 
-**c) Gallium (31e):**
-Voll: $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^{10} 3p^1$
-Verkürzt: $[Ar] 4s^2 3d^{10} 3p^1$
-*(Hinweis: nach 3d kommt 4p)*
-
+c) **Fe2+ (24 e-):**
+Neutrales Fe: $[Ar] 4s^2 3d^6$
+Verlust der Valenzelektronen (4s) zuerst!
+Ion: $[Ar] 3d^6$
 </details>
 
 ---
 
-### Aufgabe 7 (8 Punkte) - Orbitaldiagramme und Hund'sche Regel
+### Aufgabe 6 (6 Punkte) - Orbitaldiagramme (Hund'sche Regel)
 
-Zeichnen Sie das Orbitaldiagramm (Kästchenschreibweise) für die Valenzschale von Sauerstoff (O). Bestimmen Sie die Anzahl der ungepaarten Elektronen. Ist Sauerstoff paramagnetisch oder diamagnetisch?
+Zeichnen Sie das Orbitaldiagramm (Kästchenschreibweise) für die Valenzschale von Sauerstoff. Bestimmen Sie die Anzahl der ungepaarten Elektronen.
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-Sauerstoff (Z=8): $[He] 2s^2 2p^4$.
-Valenzschale: 2s und 2p.
+Sauerstoff (O, 8e-): $[He] 2s^2 2p^4$.
 
-**Diagramm:**
-- **2s:** [⇅] (ein Kästchen, voll besetzt)
-- **2p:** [⇅][↑][↑] (drei Kästchen)
+**2s-Orbital:** [⇅]
+**2p-Orbitale:** [⇅] [↑] [↑]
 
-**Erklärung:**
-Nach der Hund'schen Regel werden die drei 2p-Orbitale zuerst einzeln besetzt ($p_x^1, p_y^1, p_z^1$), das vierte Elektron paart sich dann in einem der Orbitale ($p_x^2$).
-Es verbleiben **2 ungepaarte Elektronen**.
-Daher ist Sauerstoff **paramagnetisch**.
-
+Hund'sche Regel: Die p-Orbitale werden zuerst einfach besetzt.
+Anzahl ungepaarte Elektronen: **2**.
 </details>
 
 ---
 
-### Aufgabe 8 (8 Punkte) - Ionenbildung bei Übergangsmetallen
+### Aufgabe 7 (8 Punkte) - Magnetismus
 
-Geben Sie die Elektronenkonfiguration für das Cobalt-Ion $Co^{3+}$ an.
-Cobalt (Element) hat die Ordnungszahl 27.
-Erklären Sie genau, welche Elektronen entfernt wurden.
+Ordnen Sie folgende Spezies als **paramagnetisch** oder **diamagnetisch** ein. Begründen Sie kurz anhand der Konfiguration.
+a) $Mg$
+b) $Mn$
+c) $Zn^{2+}$
+d) $Cr^{3+}$
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-Neutrales Cobalt (Co): $[Ar] 4s^2 3d^7$.
-
-**Bildung von $Co^{3+}$:**
-Es müssen 3 Elektronen entfernt werden. Bei Übergangsmetallen werden Elektronen immer zuerst aus dem Orbital mit der höchsten Hauptquantenzahl ($n$) entfernt.
-1. Entferne zwei Elektronen aus $4s$ ($n=4$). $\rightarrow [Ar] 4s^0 3d^7$
-2. Entferne ein Elektron aus $3d$ ($n=3$). $\rightarrow [Ar] 4s^0 3d^6$
-
-**Ergebnis:** $Co^{3+}: [Ar] 3d^6$
-
-**Häufiger Fehler:** Einfach vom d-Orbital abziehen ($[Ar] 4s^2 3d^4$) ist falsch!
-
+a) **Mg ($[Ne] 3s^2$):** Alle Elektronen gepaart. -> **Diamagnetisch**.
+b) **Mn ($[Ar] 4s^2 3d^5$):** 5 ungepaarte d-Elektronen. -> **Paramagnetisch**.
+c) **Zn2+ ($[Ar] 3d^{10}$):** Volle d-Schale, alle gepaart. -> **Diamagnetisch**.
+d) **Cr3+:** Cr ist $[Ar] 4s^1 3d^5$. Verlust von 3 Elektronen (1x 4s, 2x 3d) -> $[Ar] 3d^3$. 3 ungepaarte Elektronen. -> **Paramagnetisch**.
 </details>
 
 ---
 
-### Aufgabe 9 (6 Punkte) - Periodizität und Blöcke
+### Aufgabe 8 (10 Punkte) - Rydberg-Gleichung Transfer
 
-Ein hypothetisches Element hat die Konfiguration $[Kr] 5s^2 4d^{10} 5p^3$.
-a) In welcher Gruppe und Periode steht es?
-b) Zu welchem "Block" (s, p, d, f) gehört es?
-c) Wie viele Valenzelektronen hat es?
+Berechnen Sie die Energie, die benötigt wird, um das Elektron des Wasserstoffatoms vom Grundzustand ($n=1$) vollständig zu entfernen (Ionisierung, $n=\infty$). Geben Sie das Ergebnis in Joule und kJ/mol an.
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-a) **Periode:** Bestimmt durch das höchste $n$. Hier $n=5$. **5. Periode.**
-**Gruppe:** Valenzelektronen sind $5s^2 + 5p^3 = 5$. Es steht in der **5. Hauptgruppe** (Gruppe 15, Stickstoffgruppe).
+$\Delta E = -Rhc (1/n_{final}^2 - 1/n_{initial}^2)$
+Mit $n_{final} = \infty$ ist $1/\infty^2 = 0$.
 
-b) **Block:** Das zuletzt gefüllte Orbital ist ein p-Orbital ($5p^3$). **p-Block.**
+$\Delta E = -2,18 \cdot 10^{-18} \text{ J} \cdot (0 - 1/1^2)$
+$\Delta E = +2,18 \cdot 10^{-18} \text{ J pro Atom}$
 
-c) **Valenzelektronen:** Elektronen in der äußersten Schale ($n=5$). $2 (aus 5s) + 3 (aus 5p) = 5$.
-
-*(Das Element wäre Antimon, Sb)*
-
+Pro Mol:
+$E_{Mol} = 2,18 \cdot 10^{-18} \text{ J} \cdot 6,022 \cdot 10^{23} \text{ mol}^{-1} = 1,31 \cdot 10^6 \text{ J/mol} = 1312 \text{ kJ/mol}$
 </details>
 
 ---
 
-### Aufgabe 10 (10 Punkte) - Multiple Choice mit Begründung
+### Aufgabe 9 (6 Punkte) - Photoelektrischer Effekt (Konzept)
 
-Welche Aussage zum Bohr'schen Atommodell ist **FALSCH**?
-- A) Die Energie des Elektrons im Wasserstoffatom ist quantisiert.
-- B) Das Modell kann die Linienspektren von Wasserstoff exakt vorhersagen.
-- C) Das Modell erklärt korrekt, dass Elektronen auf festen Kreisbahnen um den Kern laufen, ähnlich wie Planeten.
-- D) Beim Übergang von $n=4$ auf $n=2$ wird Licht emittiert.
+Ein Metall wird mit rotem Licht bestrahlt – es werden keine Elektronen ausgelöst. Dann wird es mit blauem Licht gleicher Intensität bestrahlt – Elektronen werden ausgelöst.
+Warum half dieses Experiment Einstein zu beweisen, dass Licht Teilchencharakter hat?
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**Falsch ist: C**
-
-**Begründung:** Zwar postulierte Bohr Kreisbahnen, aber die spätere Quantenmechanik (Heisenberg, Schrödinger) zeigte, dass dies falsch ist. Elektronen bewegen sich nicht auf definierten Bahnen, sondern befinden sich in Orbitalen (Wahrscheinlichkeitswolken). Ort und Impuls können nicht gleichzeitig bestimmt werden (Unschärferelation), was Kreisbahnen physikalisch unmöglich macht.
-A, B und D sind im Kontext des Bohr-Modells (bzw. für Wasserstoff) korrekte Aussagen.
-
+Nach der klassischen Wellentheorie müsste auch rotes Licht Elektronen auslösen, wenn man nur die Intensität (Helligkeit) lange genug erhöht (Energieakkumulation). Das passierte aber nicht.
+Einstein erklärte: Ein einzelnes Lichtteilchen (Photon) muss genug Energie haben ($E=h\nu$), um *ein* Elektron herauszuschlagen. Rot (niedrige Frequenz) hat zu schwache Photonen. Blau (hohe Frequenz) hat energiereichere Photonen, die die Austrittsarbeit des Metalls überwinden. Dies beweist die Quantisierung (Paket-Natur) des Lichts.
 </details>
 
 ---
 
-### Aufgabe 11 (8 Punkte) - Knotenflächen
+### Aufgabe 10 (8 Punkte) - Knotenebenen
 
-Wie viele radiale (sphärische) Knotenflächen und wie viele winkelabhängige (planare) Knotenflächen besitzen folgende Orbitale?
-a) 1s
-b) 3p
-c) 4d
+a) Wie viele Knotenflächen hat ein 3p-Orbital insgesamt? (3 Punkte)
+b) Skizzieren Sie schematisch den Querschnitt eines 2s-Orbitals und markieren Sie die Knotenfläche. (5 Punkte)
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-Die Gesamtzahl der Knoten ist $n-1$.
-Winkelabhängige Knoten (Planar) = $l$.
-Radiale Knoten (Sphärisch) = $n - l - 1$.
+a) Gesamtknoten = $n - 1$. Für 3p ($n=3$) gibt es **2 Knotenflächen**.
+(Davon $l=1$ planare Knotenfläche durch den Kern und $n-l-1 = 3-1-1 = 1$ sphärische Knotenfläche).
 
-**a) 1s ($n=1, l=0$):**
-- Planar: $l = 0$
-- Sphärisch: $1 - 0 - 1 = 0$
-
-**b) 3p ($n=3, l=1$):**
-- Planar: $l = 1$
-- Sphärisch: $3 - 1 - 1 = 1$
-
-**c) 4d ($n=4, l=2$):**
-- Planar: $l = 2$
-- Sphärisch: $4 - 2 - 1 = 1$
-
+b) Skizze sollte zeigen:
+- Einen inneren Kreis (hohe Wahrscheinlichkeit am Kern).
+- Einen weißen Ring (Knotenfläche, Wahrscheinlichkeit 0).
+- Einen äußeren Ring (wieder Aufenthaltswahrscheinlichkeit).
 </details>
 
 ---
 
-### Aufgabe 12 (8 Punkte) - Magnetismus experimentell
+### Aufgabe 11 (8 Punkte) - Periodizität und Ionenradien
 
-Sie haben zwei Proben: Zinkoxid (ZnO) und Eisen(III)-oxid (Fe$_2$O$_3$). Im Experiment wird eine Probe von einem starken Magneten angezogen, die andere nicht.
-Analysieren Sie die Elektronenkonfigurationen der Kationen ($Zn^{2+}$ und $Fe^{3+}$), um vorherzusagen, welche Probe angezogen wird.
+Erklären Sie, warum das Kation $Fe^{3+}$ kleiner ist als das Kation $Fe^{2+}$, obwohl beide den gleichen Kern haben.
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**Zink ($Zn$, Z=30):** $[Ar] 4s^2 3d^{10}$
-**$Zn^{2+}$ Ion:** Verlust der 4s Elektronen $\rightarrow [Ar] 3d^{10}$.
-Die 3d-Schale ist voll besetzt. **Alle Elektronen sind gepaart.**
-$\rightarrow$ **Diamagnetisch** (wird nicht angezogen).
-
-**Eisen ($Fe$, Z=26):** $[Ar] 4s^2 3d^6$
-**$Fe^{3+}$ Ion:** Verlust von zwei 4s und einem 3d Elektron $\rightarrow [Ar] 3d^5$.
-Die 3d-Schale ist halb besetzt. Nach Hund'scher Regel gibt es **5 ungepaarte Elektronen**.
-$\rightarrow$ **Paramagnetisch** (wird angezogen).
-
-**Ergebnis:** Eisen(III)-oxid wird vom Magneten angezogen.
-
+$Fe^{2+}$ hat die Konfiguration $[Ar] 3d^6$.
+$Fe^{3+}$ hat die Konfiguration $[Ar] 3d^5$.
+$Fe^{3+}$ hat ein Elektron weniger. Dadurch verringert sich die Elektron-Elektron-Abstoßung in der Hülle. Da die Kernladung (26 Protonen) gleich bleibt und stark anzieht, werden die verbleibenden 5 d-Elektronen stärker an den Kern gezogen. Die Elektronenwolke kontrahiert, der Radius sinkt.
 </details>
 
 ---
 
-### Aufgabe 13 (6 Punkte) - Transferaufgabe: Mikrowellenherd
+### Aufgabe 12 (6 Punkte) - Multiple Choice Expert
 
-Mikrowellen haben eine Frequenz von etwa $2.45 \times 10^9 \text{ Hz}$.
-Vergleichen Sie die Energie eines Mikrowellen-Photons mit der eines Photons von sichtbarem grünem Licht ($\nu \approx 6 \times 10^{14} \text{ Hz}$). Warum werden Lebensmittel in der Mikrowelle warm, obwohl die Photonenenergie viel geringer ist als bei Licht, das keine Erwärmung (in diesem Ausmaß) beim bloßen Anstrahlen bewirkt?
+Welche Aussage über das 4s-Orbital im Vergleich zum 3d-Orbital ist **FALSCH**?
+- A) Im neutralen K-Atom wird das 4s vor dem 3d gefüllt.
+- B) Das 4s-Orbital ist im Durchschnitt weiter vom Kern entfernt als das 3d.
+- C) Beim Ionisieren von Übergangsmetallen werden Elektronen aus dem 3d vor dem 4s entfernt.
+- D) Das 4s-Orbital hat Elektronenaufenthaltswahrscheinlichkeit sehr nah am Kern (Durchdringung).
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-**Berechnung:**
-$E_{Mikro} \propto 10^9$, $E_{Licht} \propto 10^{14}$.
-Licht-Photonen haben ca. 100.000-mal mehr Energie als Mikrowellen-Photonen.
-
-**Begründung:**
-Die Erwärmung in der Mikrowelle beruht nicht auf der hohen Energie einzelner Photonen (wie beim Photoeffekt oder Bindungsbruch), sondern auf **Resonanz**. Die Frequenz der Mikrowellen regt die Rotation von Wassermolekülen (Dipole) im Essen an. Durch die Reibung der rotierenden Moleküle entsteht Wärme.
-Sichtbares Licht wird meist reflektiert oder absorbiert (Elektronenanregung), regt aber nicht spezifisch die Molekülrotation von Wasser an.
-
+**Falsch ist C.**
+Begründung: Beim Ionisieren (Entfernen von Elektronen) werden immer die Elektronen der äußersten Hauptschale zuerst entfernt. Das ist die 4. Schale ($4s$), nicht die 3. Schale ($3d$).
 </details>
 
 ---
 
-### Aufgabe 14 (12 Punkte) - Wasserstoffspektrum Berechnung
+### Aufgabe 13 (8 Punkte) - Transfer isoelektronisch
 
-Berechnen Sie die Energie und die Wellenlänge des Lichts, das emittiert wird, wenn ein Elektron im Wasserstoffatom von der Schale $n=4$ auf die Schale $n=2$ fällt.
-Nutzen Sie $C = 3.29 \times 10^{15} \text{ Hz}$ für die Frequenzberechnung oder Rydberg-Konstante $R_H = 1.097 \times 10^7 \text{ m}^{-1}$.
+Nennen Sie drei Ionen, die isoelektronisch zum Edelgas Argon sind. Ordnen Sie diese nach steigendem Ionenradius.
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-Formel für Frequenz $\nu$:
-$$\nu = C \times \left(\frac{1}{n_{low}^2} - \frac{1}{n_{high}^2}\right)$$
-$$\nu = 3.29 \times 10^{15} \text{ Hz} \times \left(\frac{1}{2^2} - \frac{1}{4^2}\right)$$
-$$\nu = 3.29 \times 10^{15} \times \left(\frac{1}{4} - \frac{1}{16}\right)$$
-$$\nu = 3.29 \times 10^{15} \times \left(\frac{4}{16} - \frac{1}{16}\right) = 3.29 \times 10^{15} \times \frac{3}{16}$$
-$$\nu = 6.17 \times 10^{14} \text{ Hz}$$
+Isoelektronisch zu Argon (18 e-):
+$S^{2-}$, $Cl^-$, $K^+$, $Ca^{2+}$.
 
-Energie pro Photon:
-$$E = h \cdot \nu = 6.626 \times 10^{-34} \cdot 6.17 \times 10^{14} \approx 4.09 \times 10^{-19} \text{ J}$$
-
-Wellenlänge:
-$$\lambda = \frac{c}{\nu} = \frac{3.00 \times 10^8}{6.17 \times 10^{14}} = 4.86 \times 10^{-7} \text{ m} = 486 \text{ nm}$$
-
-Farbe: Blau-Grün (Teil der Balmer-Serie).
-
+Radius-Trend: Je höher die positive Kernladung bei gleicher Elektronenzahl, desto stärker die Anziehung -> desto kleiner der Radius.
+Reihenfolge (steigender Radius):
+$Ca^{2+} < K^+ < Ar < Cl^- < S^{2-}$
 </details>
 
 ---
 
-### Aufgabe 15 (8 Punkte) - Alles kombiniert
+### Aufgabe 14 (10 Punkte) - Unbekanntes Element
 
-Identifizieren Sie das Element X anhand folgender Hinweise:
-1. Es ist ein Metall der 4. Periode.
-2. Es ist paramagnetisch.
-3. Sein Ion $X^{2+}$ hat 3 ungepaarte Elektronen.
-4. Es gehört zu den Übergangsmetallen.
+Ein Element X hat im Grundzustand 3 ungepaarte Elektronen in der 4. Schale (Hauptquantenzahl 4) und ist ein Übergangsmetall.
+a) Identifizieren Sie das Element. (5 Punkte)
+b) Ist es paramagnetisch? (2 Punkte)
+c) Geben Sie die Quantenzahlen für das letzte hinzugefügte Elektron an. (3 Punkte)
 
 <details>
 <summary>Musterlösung anzeigen</summary>
 
-Übergangsmetalle Periode 4: Sc bis Zn.
-Konfiguration neutral: $[Ar] 4s^2 3d^n$.
-Ion $X^{2+}$: Verliert die zwei 4s Elektronen $\rightarrow [Ar] 3d^n$.
+a) Übergangsmetall in Periode 4 füllt 3d-Orbitale. Es muss aber Elektronen in der 4. Schale haben (4s).
+Wir suchen 3 ungepaarte Elektronen im d-Block ($n=4$ Periode füllt $3d$).
+Möglichkeiten im 3d: $d^3$ (Vanadium) oder $d^7$ (Cobalt -> 3 ungepaarte, da 10 Plätze).
+Element: **Cobalt (Co)** ($[Ar] 4s^2 3d^7$) oder **Vanadium (V)** ($[Ar] 4s^2 3d^3$).
+*Korrektur:* Aufgabe sagt "in der 4. Schale". Übergangsmetalle haben Valenzelektronen im 4s und 3d. Meist wird $d$ gezählt. Nehmen wir Cobalt oder Vanadium als korrekt an.
 
-Wir suchen eine $d^n$ Konfiguration mit **3 ungepaarten Elektronen**.
-Möglichkeiten für d-Orbitale (5 Boxen):
-- $d^3$: [↑][↑][↑][ ][ ] (3 ungepaart) $\rightarrow$ V (Vanadium)
-- $d^7$: [⇅][⇅][↑][↑][↑] (3 ungepaart) $\rightarrow$ Co (Cobalt)
+b) Ja, paramagnetisch (ungepaarte Elektronen).
 
-Prüfung neutraler Zustand:
-- Vanadium (Z=23): $[Ar] 4s^2 3d^3$. $V^{2+} \rightarrow 3d^3$.
-- Cobalt (Z=27): $[Ar] 4s^2 3d^7$. $Co^{2+} \rightarrow 3d^7$.
+c) Für Cobalt (letztes Elektron ins 3d, Spin gepaart $\downarrow$): $n=3, l=2, m_l=-1, m_s=-1/2$ (Beispielhaft).
+</details>
 
-Beide Elemente erfüllen die Bedingungen. (In einer Klausur würden beide Antworten als richtig gelten, oder es gäbe einen weiteren Hinweis, z.B. zur Dichte oder Farbe).
-**Lösung:** Vanadium (V) oder Cobalt (Co).
+---
 
+### Aufgabe 15 (10 Punkte) - Synthese (Gitterenergie/Spektrum)
+
+Warum leuchtet Natriumchlorid in einer Flamme gelb, während Magnesiumchlorid fast farblos brennt bzw. im UV-Bereich emittiert? Argumentieren Sie mit Energieniveaus.
+
+<details>
+<summary>Musterlösung anzeigen</summary>
+
+Die Flammenfärbung entsteht durch Anregung von Valenzelektronen in höhere Orbitale und deren Rückfall (Emission).
+Bei Natrium ($Na$, Gruppe 1) ist das Valenzelektron ($3s^1$) relativ locker gebunden. Die Energiedifferenz zum nächsten Niveau ($3p$) entspricht genau der Energie von gelbem Licht (sichtbar, geringere Energie).
+Bei Magnesium ($Mg$, Gruppe 2) sind die Elektronen stärker gebunden (höhere Kernladung). Die Energiedifferenzen zwischen den Orbitalen sind größer. Die emittierten Photonen haben daher eine höhere Frequenz/Energie, die oft im nicht-sichtbaren UV-Bereich liegt.
 </details>
 
 ---
 
 ## Prüfungsstatistik
 
-| Aufgabentyp             | Anzahl | Punkte gesamt |
-| ----------------------- | ------ | ------------- |
-| Konzeptverständnis      | 4      | 34            |
-| Berechnungen            | 3      | 34            |
-| Multiple Choice/Logik   | 2      | 18            |
-| Zeichnen/Diagramme      | 2      | 14            |
-| Elektronenkonfig./Ionen | 3      | 20            |
-| **Gesamt**              | **14** | **120**       |
+| Aufgabentyp          | Anzahl | Punkte gesamt |
+| :------------------- | :----- | :------------ |
+| Konzeptverständnis   | 4      | 32            |
+| Berechnungen         | 3      | 28            |
+| Multiple Choice      | 1      | 6             |
+| Transfer & Anwendung | 7      | 54            |
+| **Gesamt**           | **15** | **120**       |
 
 **Notenschlüssel (Vorschlag):**
 - Sehr gut (1): ≥ 108 Punkte
