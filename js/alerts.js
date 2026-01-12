@@ -156,6 +156,12 @@ function renderAlertsView() {
             <li><strong>Streak in Gefahr:</strong> Nach 2-3 Tagen Pause → 3 Fragen beantworten (2 richtig = gerettet)</li>
             <li><strong>Streak verloren:</strong> Nach >3 Tagen oder fehlgeschlagener Rettung → neu starten</li>
           </ul>
+          <p class="font-medium mb-2 mt-4">Push-Benachrichtigungen aktivieren:</p>
+          <ul class="list-disc list-inside space-y-1 text-blue-700 dark:text-blue-300">
+            <li><strong>iPhone:</strong> Öffne die App im Safari → Tippe auf "Teilen" → "Zum Home-Bildschirm" → Erlaube Mitteilungen in den Einstellungen</li>
+            <li><strong>Android:</strong> Öffne die App in Chrome → Tippe auf das Menü (⋮) → "App installieren" oder "Zum Startbildschirm hinzufügen"</li>
+            <li><strong>Desktop:</strong> Klicke auf das Installieren-Symbol in der Adressleiste oder nutze das Browser-Menü</li>
+          </ul>
         </div>
         <button onclick="toggleAlertsHelp()" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 flex-shrink-0">
           ${Icons.get('close', 'w-4 h-4')}

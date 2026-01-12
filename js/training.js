@@ -477,8 +477,10 @@ function renderTrainingQuestion(animateIn = false) {
   // Dev mode: highlight correct answers with light green border
   if (window.isDevMode && window.isDevMode()) {
     const isMultiple = question.type === 'multiple-choice-multiple';
-    const correctAnswers = isMultiple ? question.correctAnswers : [question.correctAnswer];
-    
+    const correctAnswers = isMultiple
+      ? question.correctAnswers
+      : [question.correctAnswer];
+
     const labels = document.querySelectorAll('#training-options label');
     labels.forEach((label) => {
       const input = label.querySelector('input');
@@ -745,9 +747,10 @@ function showTrainingCheatSheet(achievementId) {
 
   if (title) title.textContent = achievement.title;
   if (content) {
-    // Parse markdown content
-    if (window.marked && achievement.content) {
-      content.innerHTML = marked.parse(achievement.content);
+    // Parse markdown content (prefer contentMarkdown for lazy-loaded achievements)
+    const markdownSource = achievement.contentMarkdown || achievement.content;
+    if (window.marked && markdownSource) {
+      content.innerHTML = marked.parse(markdownSource);
       // Render math if available
       if (window.renderMathInElement) {
         renderMathInElement(content, {

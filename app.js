@@ -424,7 +424,28 @@ document.addEventListener('DOMContentLoaded', async () => {
         lectures: {}
       };
     }
-    APP_CONTENT.achievements = {};
+
+    // Load achievements from pre-generated JSON
+    try {
+      const basePath = window.getBasePath ? window.getBasePath() : '/';
+      const achievementsPath = `${basePath}content/${studyId}/achievements.json`;
+      const response = await fetch(achievementsPath);
+      if (response.ok) {
+        APP_CONTENT.achievements = await response.json();
+        console.log(
+          `[App] Loaded ${
+            Object.keys(APP_CONTENT.achievements).length
+          } achievements`
+        );
+      } else {
+        console.warn('[App] No achievements.json found, achievements disabled');
+        APP_CONTENT.achievements = {};
+      }
+    } catch (e) {
+      console.warn('[App] Failed to load achievements:', e);
+      APP_CONTENT.achievements = {};
+    }
+
     window.APP_CONTENT = APP_CONTENT;
 
     console.log(
