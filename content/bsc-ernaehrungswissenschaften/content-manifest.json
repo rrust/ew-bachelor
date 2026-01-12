@@ -1,6 +1,10 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
+<<<<<<< HEAD
   "generatedAt": "2026-01-12T23:07:26.797Z",
+=======
+  "generatedAt": "2026-01-12T22:45:15.571Z",
+>>>>>>> 6830277c59202664b4d65be2d38de927b8d430b4
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "16293e2a",

@@ -630,5 +630,9 @@
       "explanation": "**Erklärung:** Da Kupfer variable Ladungen haben kann (+1 oder +2), muss die Ladung angegeben werden. Sulfat hat die Ladung -2. Da in CuSO₄ nur ein Kupfer-Ion vorkommt, muss es +2 sein, um die Ladung auszugleichen. Daher: Kupfer(II)-sulfat. \"Kupfersulfat\" ohne Ladungsangabe ist unvollständig."
     }
   ],
+<<<<<<< HEAD
   "generatedAt": "2026-01-12T23:07:26.813Z"
+=======
+  "generatedAt": "2026-01-12T22:45:15.588Z"
+>>>>>>> 6830277c59202664b4d65be2d38de927b8d430b4
 }

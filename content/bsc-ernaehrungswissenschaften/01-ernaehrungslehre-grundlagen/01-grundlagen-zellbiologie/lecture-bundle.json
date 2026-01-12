@@ -216,5 +216,9 @@
       "explanation": "**Erklärung:**\n\n**Richtig:**\n- Mitochondrien sind die \"Kraftwerke\" der Zelle und produzieren ATP durch Zellatmung\n- Der Golgi-Apparat modifiziert Proteine nach ihrer Synthese und sortiert sie für den Transport\n\n**Falsch:**\n- Der Zellkern ist nur in eukaryotischen Zellen vorhanden, nicht in prokaryotischen\n- Ribosomen sind für die Proteinsynthese zuständig, nicht für die Fettsynthese (diese findet im glatten ER statt)"
     }
   ],
+<<<<<<< HEAD
   "generatedAt": "2026-01-12T23:07:26.798Z"
+=======
+  "generatedAt": "2026-01-12T22:45:15.572Z"
+>>>>>>> 6830277c59202664b4d65be2d38de927b8d430b4
 }
