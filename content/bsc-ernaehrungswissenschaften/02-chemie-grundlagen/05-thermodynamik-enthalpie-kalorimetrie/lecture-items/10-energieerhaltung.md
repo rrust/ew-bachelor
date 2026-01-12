@@ -25,13 +25,11 @@ $$PE_{\text{Edukte}} > PE_{\text{Produkte}} \implies KE \uparrow \implies T \upa
 
 ### Schema der Energieumwandlung
 
-```text
-Exotherme Reaktion:
-System-PE sinkt → KE steigt → Temperatur T steigt → Wärme fließt zur Umgebung
+**Exotherme Reaktion:**
+System-PE sinkt → KE steigt → Temperatur steigt → Wärme fließt zur Umgebung
 
-Endotherme Reaktion:
+**Endotherme Reaktion:**
 Umgebung gibt Wärme → KE steigt im System → wird in PE umgewandelt → T sinkt
-```
 
 ### Energiebilanz
 

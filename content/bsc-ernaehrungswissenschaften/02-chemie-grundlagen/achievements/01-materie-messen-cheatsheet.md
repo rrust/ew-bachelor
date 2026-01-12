@@ -89,15 +89,12 @@ $$T(K) = t(°C) + 273{,}15$$
 
 ## Klassifizierung von Materie
 
-```text
-MATERIE
-├── Reinstoff
-│   ├── Element (nicht trennbar: Au, O₂)
-│   └── Verbindung (chemisch trennbar: H₂O, NaCl)
-└── Mischung
-    ├── Homogen (Lösung: Luft, Zuckerwasser)
-    └── Heterogen (Sand + Wasser, Öl + Wasser)
-```
+| Kategorie     | Unterkategorie   | Beispiele                     |
+| ------------- | ---------------- | ----------------------------- |
+| **Reinstoff** | Element          | Au, O₂ (nicht trennbar)       |
+|               | Verbindung       | H₂O, NaCl (chemisch trennbar) |
+| **Mischung**  | Homogen (Lösung) | Luft, Zuckerwasser            |
+|               | Heterogen        | Sand + Wasser, Öl + Wasser    |
 
 ***
 

@@ -113,30 +113,26 @@ warningThreshold: 7
 
 ### 1. Transkription (im Zellkern)
 
-```text
-DNA → mRNA
+**DNA → mRNA**
+
 - RNA-Polymerase liest DNA-Strang
 - mRNA-Kopie wird erstellt
 - Introns werden entfernt (Splicing)
-```
 
 ### 2. Translation (am Ribosom)
 
-```text
-mRNA → Protein
+**mRNA → Protein**
+
 - mRNA verlässt Zellkern
 - Ribosom bindet an mRNA
 - tRNA bringt Aminosäuren
 - Aminosäurekette wird gebildet
-```
 
 ### 3. Proteinmodifikation
 
-```text
 - Faltung in 3D-Struktur
 - Modifikation im ER/Golgi
 - Transport zum Zielort
-```
 
 ## Zellatmung (Energiegewinnung) ⚡
 

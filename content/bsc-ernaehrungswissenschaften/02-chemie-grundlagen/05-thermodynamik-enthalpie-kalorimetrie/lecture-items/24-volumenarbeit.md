@@ -37,19 +37,11 @@ Das Vorzeichen:
 - **Expansion** ($\Delta V > 0$): $w < 0$ (System leistet Arbeit)
 - **Kompression** ($\Delta V < 0$): $w > 0$ (Arbeit wird am System verrichtet)
 
-### Visualisierung
+### Vergleich: Expansion vs. Kompression
 
-```text
-Expansion:                    Kompression:
-┌─────────────────┐           ┌─────────────────┐
-│    Gas          │           │   │ Kolben ↓    │
-│   (Druck)       │ → Kolben  │   ▼             │
-│                 │   bewegt  │    Gas          │
-│   → → →         │   sich    │   ← ← ←         │
-└─────────────────┘   raus    └─────────────────┘
-
-System leistet Arbeit         Arbeit am System
-w < 0                         w > 0
-```
+| Prozess         | Was passiert?                          | Arbeit                    | Vorzeichen |
+| --------------- | -------------------------------------- | ------------------------- | ---------- |
+| **Expansion**   | Gas dehnt sich aus, drückt Kolben raus | System **leistet** Arbeit | $w < 0$    |
+| **Kompression** | Kolben drückt Gas zusammen             | Arbeit **am** System      | $w > 0$    |
 
 > 💡 **Merke:** Bei Reaktionen mit Gasbildung (z.B. Verbrennung) muss immer auch Volumenarbeit berücksichtigt werden!

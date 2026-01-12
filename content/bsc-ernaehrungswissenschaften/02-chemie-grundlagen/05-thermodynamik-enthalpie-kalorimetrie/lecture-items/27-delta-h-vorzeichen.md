@@ -21,35 +21,19 @@ Das Vorzeichen der Enthalpieänderung gibt direkt Auskunft über die Energiebila
 
 **Exotherme Reaktion ($\Delta H < 0$):**
 
-```text
-Energie
-   ↑
-   │  ┌───────┐
-   │  │Edukte │ ←── Höhere Energie
-   │  └───┬───┘
-   │      │ ↓ Energie frei
-   │      ↓ ΔH < 0
-   │  ┌───────┐
-   │  │Produkte│ ←── Niedrigere Energie
-   │  └───────┘
-   └────────────────→ Reaktionsverlauf
-```
+| Energieniveau |                | Erklärung          |
+| ------------- | -------------- | ------------------ |
+| **Hoch**      | Edukte         | Höhere Energie     |
+| ↓             | $\Delta H < 0$ | Energie wird frei  |
+| **Niedrig**   | Produkte       | Niedrigere Energie |
 
 **Endotherme Reaktion ($\Delta H > 0$):**
 
-```text
-Energie
-   ↑
-   │  ┌───────┐
-   │  │Produkte│ ←── Höhere Energie
-   │  └───┬───┘
-   │      ↑ ΔH > 0
-   │      │ Energie rein
-   │  ┌───────┐
-   │  │Edukte │ ←── Niedrigere Energie
-   │  └───────┘
-   └────────────────→ Reaktionsverlauf
-```
+| Energieniveau |                | Erklärung                |
+| ------------- | -------------- | ------------------------ |
+| **Hoch**      | Produkte       | Höhere Energie           |
+| ↑             | $\Delta H > 0$ | Energie wird aufgenommen |
+| **Niedrig**   | Edukte         | Niedrigere Energie       |
 
 ### Beispiele
 

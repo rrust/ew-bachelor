@@ -41,8 +41,8 @@ Betrachten wir die Bildung eines $NaCl$-Kristalls:
 
 Genauso wie ein Ball auf dem Boden (niedrige Lage = niedrige potentielle Energie) stabiler ist als auf einem Tisch, sind gebundene Ionen stabiler als getrennte.
 
-```text
-Hohe PE     ○ Ball auf Tisch     Na⁺ ... Cl⁻ (getrennt)
-            ↓                     ↓
-Niedrige PE ● Ball am Boden      [Na⁺Cl⁻] (gebunden)
-```
+| Energieniveau            | Mechanik           | Chemie                      |
+| ------------------------ | ------------------ | --------------------------- |
+| **Hohe PE** (instabil)   | Ball auf dem Tisch | Getrennte Ionen Na⁺ ... Cl⁻ |
+| ↓ Energie wird frei ↓    | ↓                  | ↓                           |
+| **Niedrige PE** (stabil) | Ball am Boden      | Ionenpaar [Na⁺Cl⁻]          |

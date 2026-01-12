@@ -38,17 +38,13 @@ $$\Delta_r H° = -337,5 + 365,6 = +28,1 \text{ kJ/mol}$$
 
 ### Praktische Nutzung
 
-```text
-Plastikbeutel mit Wasser
-       ↓ (zerdrücken)
-Innenbeutel mit NH₄NO₃ reißt
-       ↓
-Salz löst sich auf
-       ↓
-Endotherme Reaktion
-       ↓
-Kühlung der Verletzung
-```
+**Ablauf beim Aktivieren einer Kältepackung:**
+
+1. Plastikbeutel mit Wasser zerdrücken
+2. Innenbeutel mit NH₄NO₃ reißt
+3. Salz löst sich im Wasser auf
+4. Endotherme Reaktion entzieht Wärme
+5. Kühlung der Verletzung
 
 ### Quantitative Abschätzung
 
