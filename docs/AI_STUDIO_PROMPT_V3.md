@@ -319,32 +319,40 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ### YouTube-Video-Empfehlung (PFLICHT nach jedem Kapitel)
 
-⚠️ **KRITISCH: Nur ECHTE, EXISTIERENDE Videos verwenden!**
+⚠️ **KRITISCH: Nur ECHTE, EXISTIERENDE und EINBETTBARE Videos verwenden!**
 
 - **NIEMALS URLs erfinden** - Jede URL muss ein echtes Video sein
 - **Nur einbettbare Videos** - Standard YouTube-URLs (youtube.com/watch?v=...)
 - **Doppelt prüfen:** Vor dem Einfügen sicherstellen, dass das Video existiert
 - **Im Zweifel weglassen:** Lieber keine Video-Empfehlung als eine falsche
 
-**Vertrauenswürdige Kanäle (deutsche Chemie/Biologie):**
-- **simpleclub** - z.B. "Massenerhaltungssatz simpleclub"
-- **Studyflix** - z.B. "Atommodelle Studyflix"
-- **musstewissen Chemie/Physik** - z.B. "Dichte musstewissen"
-- **TheSimpleChemics/TheSimpleBiology**
+⛔ **VERBOTENE KANÄLE (blockieren Embedding auf externen Seiten):**
+- **simpleclub** - NICHT verwenden! Hat Domain-Restrictions für Embedding
+- **Chemie - simpleclub** - NICHT verwenden!
+- **Physik - simpleclub** - NICHT verwenden!
+- **TheSimpleClub** - NICHT verwenden!
+
+✅ **Empfohlene Kanäle (erlauben Embedding):**
+- **Lehrerschmidt** - Mathe, Physik, Chemie
+- **musstewissen Chemie** - funk/ARD
+- **musstewissen Physik** - funk/ARD
+- **Leicht Lernen** - Chemie, Biologie
+- **Duden Learnattack** - verschiedene Fächer
+- **MedChem** - Chemie für Mediziner
 
 **Format für Video-Empfehlung:**
 
 ```markdown
 > 📺 **Video-Empfehlung:** "[Exakter Videotitel vom Kanal]"
-> **Kanal:** [Kanalname]
-> **Suche:** `[Thema] [Kanalname]` auf YouTube
+> **Kanal:** [Kanalname - NICHT simpleclub!]
+> **URL:** https://www.youtube.com/watch?v=[VIDEO_ID]
 ```
 
-**WENN du dir nicht 100% sicher bist, dass ein Video existiert:**
+**WENN du dir nicht 100% sicher bist, dass ein Video existiert und einbettbar ist:**
 
 ```markdown
 > 📺 **Video-Suche empfohlen:** Suche auf YouTube nach "[Suchbegriffe]"
-> **Empfohlene Kanäle:** simpleclub, Studyflix, musstewissen
+> **Empfohlene Kanäle:** Lehrerschmidt, musstewissen, Leicht Lernen (NICHT simpleclub!)
 ```
 
 ### Formeln formatieren
