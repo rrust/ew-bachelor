@@ -5,12 +5,30 @@ title: 'Heizkurve von Wasser'
 ---
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '14px'}}}%%
-xychart-beta
-    title "Heizkurve: Temperatur vs. zugeführte Energie"
-    x-axis "Zugeführte Energie (kJ)" [0, 50, 100, 150, 200, 250, 300, 350]
-    y-axis "Temperatur (°C)" -20 --> 120
-    line [0, 0, 0, 0, 20, 60, 100, 100]
+flowchart LR
+    subgraph A["Phase A"]
+        A1["Eis erwärmen<br/>−20 → 0 °C"]
+    end
+    subgraph B["Phase B"]
+        B1["Eis schmelzen<br/>0 °C (konstant)"]
+    end
+    subgraph C["Phase C"]
+        C1["Wasser erwärmen<br/>0 → 100 °C"]
+    end
+    subgraph D["Phase D"]
+        D1["Wasser verdampfen<br/>100 °C (konstant)"]
+    end
+    subgraph E["Phase E"]
+        E1["Dampf erwärmen<br/>100 → 120 °C"]
+    end
+    
+    A --> B --> C --> D --> E
+    
+    style A fill:#dbeafe
+    style B fill:#bfdbfe
+    style C fill:#93c5fd
+    style D fill:#fef3c7
+    style E fill:#fecaca
 ```
 
 ## Die fünf Phasen der Heizkurve

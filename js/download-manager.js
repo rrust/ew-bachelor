@@ -81,34 +81,45 @@ function getManifestKey(moduleId, lectureId) {
   return `${moduleId}/${lectureId}`;
 }
 
-// Cached manifest
+// Cached manifest (per session)
 let manifestCache = {};
+let manifestCacheTime = {};
+const MANIFEST_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
 /**
  * Load content manifest for a study
  * @param {string} studyId
+ * @param {boolean} forceRefresh - Force fetch from network
  * @returns {Promise<Object>}
  */
-async function loadManifest(studyId) {
-  if (manifestCache[studyId]) {
+async function loadManifest(studyId, forceRefresh = false) {
+  // Check if cache is still valid (< 5 minutes old)
+  const cacheAge = Date.now() - (manifestCacheTime[studyId] || 0);
+  if (
+    !forceRefresh &&
+    manifestCache[studyId] &&
+    cacheAge < MANIFEST_CACHE_TTL
+  ) {
     return manifestCache[studyId];
   }
 
   try {
     const basePath = window.getBasePath ? window.getBasePath() : '/';
     const manifestPath = `${basePath}content/${studyId}/content-manifest.json`;
-    const response = await fetch(manifestPath);
+    // Add cache-busting param to bypass Service Worker cache
+    const response = await fetch(`${manifestPath}?_t=${Date.now()}`);
 
     if (!response.ok) {
       console.warn(`[DownloadManager] No manifest found for ${studyId}`);
-      return null;
+      return manifestCache[studyId] || null; // Return old cache if available
     }
 
     manifestCache[studyId] = await response.json();
+    manifestCacheTime[studyId] = Date.now();
     return manifestCache[studyId];
   } catch (e) {
     console.error('[DownloadManager] Error loading manifest:', e);
-    return null;
+    return manifestCache[studyId] || null; // Return old cache if available
   }
 }
 

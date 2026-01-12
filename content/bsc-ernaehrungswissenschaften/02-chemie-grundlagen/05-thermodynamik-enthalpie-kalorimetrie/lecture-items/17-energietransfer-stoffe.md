@@ -23,18 +23,10 @@ $$q_{\text{heiß}} + q_{\text{kalt}} = 0$$
 
 ### Beispiel: Heißes Metall in kaltes Wasser
 
-```text
-Vorher:                    Nachher:
-┌──────────┐               ┌──────────┐
-│ Metall   │               │ Metall   │
-│ 100 °C   │──────────────▶│  45 °C   │
-└──────────┘               └──────────┘
-                                 
-┌──────────┐               ┌──────────┐
-│ Wasser   │               │ Wasser   │
-│  20 °C   │──────────────▶│  45 °C   │
-└──────────┘               └──────────┘
-```
+| Stoff      | Vorher | Nachher (Gleichgewicht) |
+| ---------- | ------ | ----------------------- |
+| **Metall** | 100 °C | 45 °C                   |
+| **Wasser** | 20 °C  | 45 °C                   |
 
 - Metall gibt Energie ab: $q_{\text{Metall}} < 0$
 - Wasser nimmt Energie auf: $q_{\text{Wasser}} > 0$

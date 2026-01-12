@@ -16,6 +16,8 @@
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator
 - Use `***` for horizontal lines or just `##` headings for visual separation
 - `correctAnswer` must exactly match an option
+- ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
+- ⚠️ **Mermaid: Nur stabile Diagrammtypen** - Erlaubt: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT: `xychart-beta`, `timeline`, `mindmap`.
 
 ## Content Generation
 

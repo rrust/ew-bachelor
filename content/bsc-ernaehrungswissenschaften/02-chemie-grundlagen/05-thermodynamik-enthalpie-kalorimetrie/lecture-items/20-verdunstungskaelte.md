@@ -29,17 +29,13 @@ Der Übergang von flüssig zu gasförmig benötigt Energie (Verdampfungswärme).
 
 ### Die physikalische Erklärung
 
-```text
-Flüssigkeit    →    Gas
-(geordneter)       (ungeordneter)
+Beim Übergang **Flüssigkeit → Gas** wird Energie benötigt für:
 
-Energie nötig, um:
-• Molekülbindungen zu lösen
-• Moleküle schneller zu bewegen
-• Molekülabstände zu vergrößern
+1. Lösen der Molekülbindungen
+2. Beschleunigung der Moleküle
+3. Vergrößerung der Molekülabstände
 
-Diese Energie = Verdampfungswärme = wird der Umgebung entzogen
-```
+Diese Energie (= **Verdampfungswärme**) wird der Umgebung entzogen → Kühlung!
 
 ### Schwitzen als Kühlmechanismus
 

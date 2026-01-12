@@ -48,13 +48,11 @@ Die innere Energie steigt um 300 J:
 
 ### Merkregel
 
-```text
-    Wärme rein (+q)
-         ↓
-   ┌─────────────┐
-   │   SYSTEM    │ → Arbeit raus (-w)
-   │     ΔU      │
-   └─────────────┘
-```
+| Richtung                  | Vorzeichen |
+| ------------------------- | ---------- |
+| Wärme **rein** ins System | $+q$       |
+| Wärme **raus** aus System | $-q$       |
+| Arbeit **am** System      | $+w$       |
+| Arbeit **vom** System     | $-w$       |
 
 > 💡 **Eselsbrücke:** "Plus rein, minus raus" – Alles, was ins System fließt, ist positiv.

@@ -131,16 +131,17 @@ warningThreshold: 7
 
 ### Berechnung des Energiebedarfs
 
-```text
-Gesamtumsatz = Grundumsatz × PAL-Faktor
+**Formel:** Gesamtumsatz = Grundumsatz × PAL-Faktor
 
-PAL (Physical Activity Level):
-- 1,2: Bettlägerig
-- 1,4-1,5: Sitzende Tätigkeit
-- 1,6-1,7: Überwiegend stehend
-- 1,8-1,9: Körperlich anstrengend
-- 2,0-2,4: Schwerstarbeit/Leistungssport
-```
+**PAL (Physical Activity Level):**
+
+| PAL-Wert | Aktivitätsniveau              |
+| -------- | ----------------------------- |
+| 1,2      | Bettlägerig                   |
+| 1,4-1,5  | Sitzende Tätigkeit            |
+| 1,6-1,7  | Überwiegend stehend           |
+| 1,8-1,9  | Körperlich anstrengend        |
+| 2,0-2,4  | Schwerstarbeit/Leistungssport |
 
 ### Makronährstoffverteilung (DGE-Empfehlung)
 

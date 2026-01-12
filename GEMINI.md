@@ -69,6 +69,8 @@ Use conventional commit format:
 - `multiple-choice-multiple` uses `correctAnswers` (plural!), not `correctAnswer`
 - Files numbered `NN-name.md` for ordering
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
+- ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
+- ⚠️ **Mermaid: Nur stabile Diagrammtypen verwenden** - Erlaubt sind: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT verwenden: `xychart-beta`, `timeline`, `mindmap` oder andere experimentelle Typen (oft fehlerhaft).
 - Always validate before committing
 
 ### Content Types Reference

@@ -26,14 +26,11 @@ sourceRefs:
 
 ### Visualisierung am Wassermolekül
 
-```text
-Translation:    H₂O →→→ (Molekül fliegt durch den Raum)
-
-Rotation:       H₂O ↻ (Molekül dreht sich)
-
-Vibration:      H—O—H (Bindungen schwingen)
-                ↔   ↔
-```
+| Bewegungsart    | Beschreibung                          | Symbol  |
+| --------------- | ------------------------------------- | ------- |
+| **Translation** | Molekül fliegt durch den Raum         | H₂O →→→ |
+| **Rotation**    | Molekül dreht sich um seine Achse     | H₂O ↻   |
+| **Vibration**   | Bindungen schwingen (dehnen/stauchen) | H—O—H ↔ |
 
 ### Zusammenhang mit Temperatur
 

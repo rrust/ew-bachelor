@@ -18,22 +18,12 @@ In der Thermodynamik ist die genaue Abgrenzung des betrachteten Bereichs entsche
 
 ### Beispiel: Reaktion im Becherglas
 
-```text
-┌─────────────────────────────────────────┐
-│            UMGEBUNG                     │
-│  ┌──────────────────────────────────┐   │
-│  │         Becherglas               │   │
-│  │   ┌──────────────────────────┐   │   │
-│  │   │                          │   │   │
-│  │   │      S Y S T E M         │   │   │
-│  │   │   (Chemikalien in        │   │   │
-│  │   │    der Lösung)           │   │   │
-│  │   │                          │   │   │
-│  │   └──────────────────────────┘   │   │
-│  └──────────────────────────────────┘   │
-│            Luft, Thermometer...         │
-└─────────────────────────────────────────┘
-```
+Stell dir ein Becherglas mit einer chemischen Reaktion vor:
+
+| Bereich              | Was gehört dazu?                                               |
+| -------------------- | -------------------------------------------------------------- |
+| **System** (innen)   | Die Chemikalien in der Lösung                                  |
+| **Umgebung** (außen) | Becherglas, Luft, Thermometer, letztlich das gesamte Universum |
 
 ### Thermisches Gleichgewicht
 

@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T18:21:48.800Z",
+  "generatedAt": "2026-01-12T18:45:01.348Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "8f34f2a2",
@@ -57,8 +57,8 @@
       "estimatedTime": 75
     },
     "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
-      "checksum": "ff78fc55",
-      "sizeKB": 83,
+      "checksum": "9520a8c2",
+      "sizeKB": 83.3,
       "itemCount": 43,
       "quizCount": 28,
       "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
