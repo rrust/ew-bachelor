@@ -1,8 +1,8 @@
 ---
 type: 'youtube-video'
 topic: 'Zustände und Eigenschaften der Materie'
-url: 'https://www.youtube.com/watch?v=XFjxXvv1CNo'
-title: 'Die Aggregatzustände einfach erklärt'
-description: 'simpleclub erklärt die drei Aggregatzustände und Zustandsänderungen.'
+url: 'https://www.youtube.com/watch?v=3S3_W1H6jL0'
+title: 'Aggregatzustände I musstewissen Chemie'
+description: 'musstewissen Chemie erklärt die drei Aggregatzustände fest, flüssig und gasförmig.'
 duration: '5:00'
 ---

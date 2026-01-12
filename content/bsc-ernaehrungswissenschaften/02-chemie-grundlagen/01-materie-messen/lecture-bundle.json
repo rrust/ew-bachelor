@@ -138,10 +138,10 @@
     {
       "type": "youtube-video",
       "topic": "Grundlagen von Materie und Energie",
-      "url": "https://www.youtube.com/watch?v=3FkP9Ql4tdc",
-      "title": "Gesetz von der Erhaltung der Masse - Chemische Gesetze",
-      "description": "Leicht Lernen erklärt das Gesetz der Massenerhaltung bei chemischen Reaktionen.",
-      "duration": "4:00",
+      "url": "https://www.youtube.com/watch?v=GAnN9S7C_bY",
+      "title": "Chemische Reaktion & Massenerhaltung I musstewissen Chemie",
+      "description": "musstewissen Chemie erklärt das Gesetz der Massenerhaltung bei chemischen Reaktionen.",
+      "duration": "5:00",
       "content": ""
     },
     {
@@ -279,9 +279,9 @@
     {
       "type": "youtube-video",
       "topic": "Elemente, Atome und Verbindungen",
-      "url": "https://www.youtube.com/watch?v=ZD2HWNkA6WI",
-      "title": "Entwicklung der Atommodelle - REMAKE",
-      "description": "simpleclub erklärt die Entwicklung der Atommodelle von Dalton bis zum Orbitalmodell.",
+      "url": "https://www.youtube.com/watch?v=kD_ClTRcQRQ",
+      "title": "Atome und Stoffe im John Dalton Modell I musstewissen Chemie",
+      "description": "musstewissen Chemie erklärt das Dalton Atommodell - ideal als Einstieg in die Atomtheorie.",
       "duration": "6:00",
       "content": ""
     },
@@ -416,9 +416,9 @@
     {
       "type": "youtube-video",
       "topic": "Zustände und Eigenschaften der Materie",
-      "url": "https://www.youtube.com/watch?v=XFjxXvv1CNo",
-      "title": "Die Aggregatzustände einfach erklärt",
-      "description": "simpleclub erklärt die drei Aggregatzustände und Zustandsänderungen.",
+      "url": "https://www.youtube.com/watch?v=3S3_W1H6jL0",
+      "title": "Aggregatzustände I musstewissen Chemie",
+      "description": "musstewissen Chemie erklärt die drei Aggregatzustände fest, flüssig und gasförmig.",
       "duration": "5:00",
       "content": ""
     },
@@ -964,5 +964,5 @@
       "explanation": "**Erklärung:** Präzision = Reproduzierbarkeit (enge Streuung), Genauigkeit = Übereinstimmung mit wahrem Wert. Beide sind unabhängig voneinander: Man kann präzise daneben liegen oder im Durchschnitt richtig, aber mit großer Streuung. Bei Flächenumrechnung: 1 m = 100 cm, also 1 m² = 10.000 cm² (Faktor quadriert)."
     }
   ],
-  "generatedAt": "2026-01-12T20:53:06.484Z"
+  "generatedAt": "2026-01-12T21:04:09.118Z"
 }
