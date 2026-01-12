@@ -319,10 +319,33 @@ c) [Bewertung/Schlussfolgerung] (4 Punkte)
 
 ### YouTube-Video-Empfehlung (PFLICHT nach jedem Kapitel)
 
-- **Nach dem Selbsttest** kommt IMMER eine Video-Empfehlung
-- **Format:** `> 📺 **Video-Empfehlung:** [Titel]`
-- **Bevorzuge:** Studyflix, SimpleClub, The Organic Chemistry Tutor
-- **Suchbegriff angeben:** `Suche auf YouTube nach: "..."`
+⚠️ **KRITISCH: Nur ECHTE, EXISTIERENDE Videos verwenden!**
+
+- **NIEMALS URLs erfinden** - Jede URL muss ein echtes Video sein
+- **Nur einbettbare Videos** - Standard YouTube-URLs (youtube.com/watch?v=...)
+- **Doppelt prüfen:** Vor dem Einfügen sicherstellen, dass das Video existiert
+- **Im Zweifel weglassen:** Lieber keine Video-Empfehlung als eine falsche
+
+**Vertrauenswürdige Kanäle (deutsche Chemie/Biologie):**
+- **simpleclub** - z.B. "Massenerhaltungssatz simpleclub"
+- **Studyflix** - z.B. "Atommodelle Studyflix"
+- **musstewissen Chemie/Physik** - z.B. "Dichte musstewissen"
+- **TheSimpleChemics/TheSimpleBiology**
+
+**Format für Video-Empfehlung:**
+
+```markdown
+> 📺 **Video-Empfehlung:** "[Exakter Videotitel vom Kanal]"
+> **Kanal:** [Kanalname]
+> **Suche:** `[Thema] [Kanalname]` auf YouTube
+```
+
+**WENN du dir nicht 100% sicher bist, dass ein Video existiert:**
+
+```markdown
+> 📺 **Video-Suche empfohlen:** Suche auf YouTube nach "[Suchbegriffe]"
+> **Empfohlene Kanäle:** simpleclub, Studyflix, musstewissen
+```
 
 ### Formeln formatieren
 
@@ -339,6 +362,7 @@ Bevor du antwortest, prüfe:
 - [ ] ALLE Informationen aus dem PDF übernommen?
 - [ ] JEDES Kapitel hat 3-5 Selbsttest-Fragen?
 - [ ] JEDES Kapitel hat Video-Empfehlung?
+- [ ] Video-Empfehlungen sind ECHTE Videos (keine erfundenen URLs)?
 - [ ] Am Ende MINDESTENS 15 Prüfungsaufgaben?
 - [ ] Prüfungsaufgaben haben Punkteverteilung?
 - [ ] Prüfungsaufgaben haben Musterlösungen in `<details>`?
@@ -361,6 +385,8 @@ Bevor du antwortest, prüfe:
 ❌ Prüfungsteil vergessen oder kürzen
 ❌ Prüfungsaufgaben auf Selbsttest-Niveau
 ❌ Selbsttests auf Prüfungsniveau
+❌ **YouTube-URLs ERFINDEN** - Nur echte, verifizierte Videos!
+❌ **Nicht-einbettbare Video-Links** (nur youtube.com/watch?v=...)
 
 ---
 

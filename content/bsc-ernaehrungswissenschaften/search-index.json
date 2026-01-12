@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T19:49:26.057Z",
+  "generatedAt": "2026-01-12T20:18:52.197Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -352,12 +352,12 @@
       "description": "Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit.",
       "topics": [
         "Materie und Messen",
-        "Einführung in die Chemie",
-        "Atome und Elemente",
-        "Betrachtungsebenen der Chemie",
-        "Aggregatzustände und Eigenschaften",
-        "Dichte und Messung",
-        "Messunsicherheit"
+        "Grundlagen von Materie und Energie",
+        "Elemente, Atome und Verbindungen",
+        "Zustände und Eigenschaften der Materie",
+        "Messen, Einheiten und Dichte",
+        "Genauigkeit, Präzision und Fehlerrechnung",
+        "Abschluss"
       ],
       "keywords": [
         "materie",
@@ -415,10 +415,6 @@
         "stellen",
         "messunsicherheiten",
         "umgehen",
-        "weit",
-        "hantieren",
-        "labor",
-        "definiert",
         "wissenschaft",
         "charakterisierung",
         "zusammensetzung",
@@ -434,10 +430,9 @@
         "stofflichen",
         "umwandlungen",
         "einhergehen",
-        "verstehen",
-        "müssen",
         "zwei",
-        "grundbegriffe",
+        "bilden",
+        "basis",
         "bezeichnet",
         "alles",
         "masse",
@@ -459,11 +454,16 @@
         "übertragen",
         "formen",
         "auftreten",
-        "kinetische"
+        "energieform",
+        "beschreibung",
+        "beispiel",
+        "kinetische",
+        "bewegungsenergie",
+        "fahrendes"
       ],
       "snippet": "Materie und Messen Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit. Materie...",
-      "itemCount": 29,
-      "quizCount": 15
+      "itemCount": 42,
+      "quizCount": 12
     },
     {
       "moduleId": "02-chemie-grundlagen",

@@ -17,5 +17,8 @@
     "learning"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "js-yaml": "^4.1.1"
+  }
 }

@@ -1,14 +1,14 @@
 ---
 topic: 'Materie und Messen'
 description: 'Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit.'
-estimatedTime: 45
+estimatedTime: 60
 sources:
-  - id: 'vorlesung-k1'
-    title: 'Vorlesungsfolien Kapitel 1 (WS2025)'
-    url: 'https://moodle.univie.ac.at/pluginfile.php/31885078/mod_resource/content/0/Kapitel1WS2025.pdf'
+  - id: 'kapitel-1'
+    title: 'Vorlesungsfolien Kapitel 1'
+    url: 'https://moodle.univie.ac.at/mod/resource/view.php?id=19319369'
     type: 'pdf'
   - id: 'mortimer'
-    title: 'Mortimer & Müller: Chemie - Das Basiswissen der Chemie (10. Aufl.)'
+    title: 'Mortimer & Müller: Chemie - Das Basiswissen der Chemie'
     url: null
     type: 'book'
 ---

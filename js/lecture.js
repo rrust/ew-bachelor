@@ -1792,6 +1792,7 @@ function renderPracticeExercise(item, container) {
 
   checkBtn.addEventListener('click', () => {
     let correct = 0;
+    let answered = 0;
     const total = tasks.length;
 
     tasks.forEach((task, i) => {
@@ -1804,22 +1805,23 @@ function renderPracticeExercise(item, container) {
         const correctValue = parseFloat(input.dataset.correct);
         const tolerance = parseFloat(input.dataset.tolerance) || 0;
 
-        if (
-          !isNaN(userValue) &&
-          Math.abs(userValue - correctValue) <= tolerance
-        ) {
-          resultSpan.innerHTML = '✅';
-          input.classList.add('border-green-500');
-          input.classList.remove('border-red-500');
-          correct++;
-        } else if (!isNaN(userValue)) {
-          resultSpan.innerHTML = '❌';
-          input.classList.add('border-red-500');
-          input.classList.remove('border-green-500');
+        if (!isNaN(userValue) && input.value.trim() !== '') {
+          answered++;
+          if (Math.abs(userValue - correctValue) <= tolerance) {
+            resultSpan.innerHTML = '✅';
+            input.classList.add('border-green-500');
+            input.classList.remove('border-red-500');
+            correct++;
+          } else {
+            resultSpan.innerHTML = '❌';
+            input.classList.add('border-red-500');
+            input.classList.remove('border-green-500');
+          }
         }
       } else if (task.type === 'multiple-choice') {
         const selected = taskEl.querySelector('input[type="radio"]:checked');
         if (selected) {
+          answered++;
           if (selected.value === selected.dataset.correct) {
             resultSpan.innerHTML = '✅';
             correct++;
@@ -1831,15 +1833,26 @@ function renderPracticeExercise(item, container) {
     });
 
     feedbackDiv.classList.remove('hidden');
-    if (correct === total) {
+
+    if (answered === 0) {
+      feedbackDiv.className =
+        'practice-feedback mt-4 p-4 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300';
+      feedbackDiv.innerHTML = `⚠️ Bitte beantworte mindestens eine Aufgabe, bevor du prüfst.`;
+    } else if (correct === total && answered === total) {
       feedbackDiv.className =
         'practice-feedback mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
       feedbackDiv.innerHTML = `✅ Ausgezeichnet! Alle ${total} Aufgaben richtig!`;
       if (realWorldDiv) realWorldDiv.classList.remove('hidden');
+    } else if (answered < total) {
+      feedbackDiv.className =
+        'practice-feedback mt-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
+      feedbackDiv.innerHTML = `${correct}/${answered} beantwortet richtig. Noch ${
+        total - answered
+      } Aufgabe${total - answered > 1 ? 'n' : ''} offen.`;
     } else {
       feedbackDiv.className =
         'practice-feedback mt-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200';
-      feedbackDiv.innerHTML = `${correct}/${total} richtig. Weiter so!`;
+      feedbackDiv.innerHTML = `${correct}/${total} richtig. Versuch's nochmal!`;
     }
   });
 

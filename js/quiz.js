@@ -177,6 +177,21 @@ function renderCurrentQuizQuestion(
   });
   quizContentDiv.appendChild(optionsList);
 
+  // Dev mode: highlight correct answers with light green border
+  if (window.isDevMode && window.isDevMode()) {
+    const correctAnswers = isMultipleAnswers
+      ? questionData.correctAnswers
+      : [questionData.correctAnswer];
+
+    const labels = optionsList.querySelectorAll('label');
+    labels.forEach((label) => {
+      const input = label.querySelector('input');
+      if (input && correctAnswers.includes(input.value)) {
+        label.classList.add('border-green-400', 'border-2');
+      }
+    });
+  }
+
   const submitButton = document.createElement('button');
   submitButton.textContent = 'Antwort abschicken';
   submitButton.className =

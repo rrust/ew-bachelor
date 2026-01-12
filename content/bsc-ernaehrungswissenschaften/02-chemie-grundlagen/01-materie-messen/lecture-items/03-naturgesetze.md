@@ -1,36 +1,37 @@
 ---
 type: 'learning-content'
-topic: 'Einführung in die Chemie'
+topic: 'Grundlagen von Materie und Energie'
 sourceRefs:
-  - sourceId: 'vorlesung-k1'
-    pages: '59-67'
+  - sourceId: 'kapitel-1'
+  - sourceId: 'mortimer'
 ---
 
 ## Fundamentale Naturgesetze
 
-Drei fundamentale Gesetze bilden das Rückgrat der chemischen Energetik und Massenbilanz:
+Drei grundlegende Gesetze beschreiben das Verhalten von Materie und Energie:
 
-### Massenerhaltungssatz
+### 1. Massenerhaltungssatz
 
-> Während einer chemischen Reaktion findet **keine beobachtbare Veränderung der Gesamtmasse** statt; die Masse der Edukte entspricht der Masse der Produkte.
+> Während einer chemischen Reaktion lässt sich keine Veränderung der Gesamtmasse beobachten. Die Masse der Edukte entspricht der Masse der Produkte.
 
-Wenn Sie 10 g Wasserstoff mit 80 g Sauerstoff reagieren lassen, erhalten Sie genau 90 g Wasser – nicht mehr und nicht weniger.
+**Beispiel:** Wenn 10 g Holz verbrennen und alle Produkte (Asche, Rauch, CO₂, H₂O) aufgefangen werden, beträgt deren Gesamtmasse ebenfalls 10 g.
 
-### Energieerhaltungssatz
+### 2. Energieerhaltungssatz
 
-> In einem abgeschlossenen System kann Energie **weder erzeugt noch vernichtet** werden. Sie kann lediglich zwischen verschiedenen Formen umgewandelt werden.
+> Es ist nicht möglich, innerhalb eines abgeschlossenen Systems Energie zu erzeugen oder zu vernichten. Energie kann jedoch zwischen verschiedenen Energieformen umgewandelt werden.
 
-Beispiel: Kinetische Energie (Bewegung) kann in Wärmeenergie umgewandelt werden – etwa wenn Sie bremsen und die Bremsscheiben heiß werden.
+**Beispiel:** Beim Bremsen eines Autos wird kinetische Energie (Bewegung) in Wärmeenergie (heiße Bremsscheiben) umgewandelt – die Gesamtenergie bleibt konstant.
 
-### Äquivalenz von Masse und Energie
+### 3. Äquivalenz von Masse und Energie
 
-Die kombinierte Menge von Masse und Energie im Universum ist fixiert. Dieser Zusammenhang wird durch Einsteins berühmte Gleichung ausgedrückt:
+Einstein zeigte, dass Masse und Energie äquivalent sind:
 
-$$E = mc^{2}$$
+$$E = mc^2$$
 
-Dabei ist:
-- $E$ = Energie
-- $m$ = Masse
-- $c$ = Lichtgeschwindigkeit ($\approx 3 \times 10^8 \, \text{m/s}$)
+| Variable | Bedeutung            | Einheit             |
+| -------- | -------------------- | ------------------- |
+| $E$      | Energie              | Joule (J)           |
+| $m$      | Masse                | Kilogramm (kg)      |
+| $c$      | Lichtgeschwindigkeit | $3 \times 10^8$ m/s |
 
-Diese Gleichung zeigt, dass Masse und Energie äquivalent sind – eine kleine Menge Masse entspricht einer enormen Menge Energie.
+Die kombinierte Menge von Masse und Energie im Universum ist konstant. Bei chemischen Reaktionen ist die Massenänderung durch Energieumwandlung jedoch so gering, dass sie nicht messbar ist.
