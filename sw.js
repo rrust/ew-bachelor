@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.8.0';
+const CACHE_VERSION = 'v1.10.0';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -130,12 +130,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Lecture bundles - Cache first (for offline support)
+  // Lecture bundles - Stale-while-revalidate (fast load from cache, update in background)
   if (
     url.pathname.includes('/content/') &&
     url.pathname.endsWith('lecture-bundle.json')
   ) {
-    event.respondWith(cacheFirst(event.request));
+    event.respondWith(staleWhileRevalidate(event.request));
     return;
   }
 

@@ -84,22 +84,37 @@ function bundleToLecture(bundle) {
  * @returns {Promise<Object|null>} Lecture in APP_CONTENT format
  */
 async function loadLectureFromBundle(studyId, moduleId, lectureId) {
-  // First, try to get from IndexedDB (downloaded bundles)
+  let indexedDbStatus = 'not-downloaded';
+
+  // First, check if we have a current version in IndexedDB
   if (window.DownloadManager) {
-    const bundleData = await window.DownloadManager.getLectureData(
+    indexedDbStatus = await window.DownloadManager.getStatus(
       studyId,
       moduleId,
       lectureId
     );
-    if (bundleData) {
-      console.log(
-        `[BundleLoader] Loaded from IndexedDB: ${moduleId}/${lectureId}`
+
+    // Only use IndexedDB data if it's current (not outdated)
+    if (indexedDbStatus === 'current') {
+      const bundleData = await window.DownloadManager.getLectureData(
+        studyId,
+        moduleId,
+        lectureId
       );
-      return bundleToLecture(bundleData);
+      if (bundleData) {
+        console.log(
+          `[BundleLoader] Loaded from IndexedDB (current): ${moduleId}/${lectureId}`
+        );
+        return bundleToLecture(bundleData);
+      }
+    } else if (indexedDbStatus === 'outdated') {
+      console.log(
+        `[BundleLoader] IndexedDB data outdated, trying network: ${moduleId}/${lectureId}`
+      );
     }
   }
 
-  // Not in IndexedDB - try to fetch from network
+  // Try to fetch from network
   try {
     const basePath = window.getBasePath ? window.getBasePath() : '/';
     const bundlePath = `${basePath}content/${studyId}/${moduleId}/${lectureId}/lecture-bundle.json`;
@@ -131,6 +146,21 @@ async function loadLectureFromBundle(studyId, moduleId, lectureId) {
       `[BundleLoader] Failed to fetch bundle: ${moduleId}/${lectureId}`,
       e
     );
+  }
+
+  // OFFLINE FALLBACK: If network failed but we have outdated data in IndexedDB, use it anyway
+  if (indexedDbStatus === 'outdated' && window.DownloadManager) {
+    const bundleData = await window.DownloadManager.getLectureData(
+      studyId,
+      moduleId,
+      lectureId
+    );
+    if (bundleData) {
+      console.log(
+        `[BundleLoader] Offline fallback - using outdated IndexedDB data: ${moduleId}/${lectureId}`
+      );
+      return bundleToLecture(bundleData);
+    }
   }
 
   return null;
