@@ -241,7 +241,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
               title="Vorlesungs-Übersicht (O)"
             >
-              ${Icons.get('listBullet', 'w-5 h-5')}
+              ${Icons.get('clipboard', 'w-5 h-5')}
             </button>
             <!-- Test Button (Icon) -->
             <button
