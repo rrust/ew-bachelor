@@ -75,6 +75,17 @@ function parseURL() {
     route.view = 'alerts';
   } else if (parts[offset] === 'training') {
     route.view = 'training';
+    // Parse query parameters for context-specific training
+    const queryString = window.location.hash.split('?')[1];
+    if (queryString) {
+      const params = new URLSearchParams(queryString);
+      if (params.has('module')) {
+        route.trainingModuleId = params.get('module');
+      }
+      if (params.has('lecture')) {
+        route.trainingLectureId = params.get('lecture');
+      }
+    }
   } else if (parts[offset] === 'search') {
     route.view = 'search';
     if (parts[offset + 1]) {

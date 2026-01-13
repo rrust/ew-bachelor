@@ -230,6 +230,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (route.view === 'training') {
       updateGreeting();
       showView('training');
+      // Set training context from URL parameters
+      if (window.setTrainingContext) {
+        window.setTrainingContext(
+          route.trainingModuleId || null,
+          route.trainingLectureId || null
+        );
+      }
       if (window.initTrainingView) {
         window.initTrainingView();
       }
@@ -759,6 +766,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const moduleData = MODULES.find(m => m.id === moduleId);
     injectLecturePlayerHeader({
       moduleId: moduleId,
+      lectureId: lectureId,
       moduleTitle: moduleData?.title || moduleId,
       moduleIcon: moduleData?.icon || 'modules',
       lectureTopic: lecture?.topic || lectureId,

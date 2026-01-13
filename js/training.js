@@ -367,6 +367,86 @@ let trainingState = {
   answeredCount: 0
 };
 
+// Training context for filtered training
+let trainingContext = {
+  moduleId: null,    // null = all modules
+  lectureId: null    // null = all lectures in module
+};
+
+/**
+ * Set training context for filtered training
+ * @param {string|null} moduleId - Filter by module (null = all)
+ * @param {string|null} lectureId - Filter by lecture (null = all in module)
+ */
+function setTrainingContext(moduleId = null, lectureId = null) {
+  trainingContext.moduleId = moduleId;
+  trainingContext.lectureId = lectureId;
+}
+
+/**
+ * Get current training context
+ * @returns {Object} { moduleId, lectureId }
+ */
+function getTrainingContext() {
+  return { ...trainingContext };
+}
+
+/**
+ * Clear training context (train on all tests)
+ */
+function clearTrainingContext() {
+  trainingContext.moduleId = null;
+  trainingContext.lectureId = null;
+}
+
+/**
+ * Get completed tests filtered by context
+ * @param {string|null} moduleId - Filter by module
+ * @param {string|null} lectureId - Filter by lecture
+ * @returns {Promise<Array>} Filtered array of completed tests
+ */
+async function getCompletedTestsFiltered(moduleId = null, lectureId = null) {
+  const allTests = await getCompletedTests();
+  
+  if (lectureId && moduleId) {
+    return allTests.filter(t => 
+      t.moduleId === moduleId && t.lectureId === lectureId
+    );
+  }
+  
+  if (moduleId) {
+    return allTests.filter(t => t.moduleId === moduleId);
+  }
+  
+  return allTests;
+}
+
+/**
+ * Get context description for display
+ * @param {Object} context - { moduleId, lectureId }
+ * @param {Array} modules - MODULES array
+ * @returns {string} Human-readable context description
+ */
+function getTrainingContextDescription(context, modules) {
+  if (!context.moduleId) {
+    return 'Alle abgeschlossenen Tests';
+  }
+  
+  const module = modules?.find(m => m.id === context.moduleId);
+  const moduleTitle = module?.title || context.moduleId;
+  
+  if (context.lectureId) {
+    // Find lecture topic from cached tests
+    const test = cachedCompletedTests.find(
+      t => t.moduleId === context.moduleId && t.lectureId === context.lectureId
+    );
+    const lectureTopic = test?.topic || context.lectureId;
+    return `${moduleTitle} → ${lectureTopic}`;
+  }
+  
+  return moduleTitle;
+}
+
 /**
  * Initialize training view
  */
@@ -382,16 +462,37 @@ async function initTrainingView() {
   `;
 
   // Load and cache completed tests
-  cachedCompletedTests = await getCompletedTests();
+  // Load and cache completed tests (filtered by context)
+  const allTests = await getCompletedTests();
+  cachedCompletedTests = await getCompletedTestsFiltered(
+    trainingContext.moduleId,
+    trainingContext.lectureId
+  );
+
+  // Get context description for display
+  const contextDesc = getTrainingContextDescription(trainingContext, window.MODULES || []);
+  const isFiltered = trainingContext.moduleId !== null;
 
   if (cachedCompletedTests.length === 0) {
+    const noTestsMessage = isFiltered
+      ? `Keine abgeschlossenen Tests für "${contextDesc}" gefunden.`
+      : 'Schließe erst einen Vorlesungs-Test ab, um den Trainings-Modus zu nutzen.';
+    
     container.innerHTML = `
       <div class="text-center py-12">
         <span class="text-6xl mb-4 block">📝</span>
         <h3 class="text-xl font-bold mb-2">Noch keine Tests abgeschlossen</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
-          Schließe erst einen Vorlesungs-Test ab, um den Trainings-Modus zu nutzen.
+          ${noTestsMessage}
         </p>
+        ${isFiltered ? `
+        <button
+          onclick="window.clearTrainingContext && window.clearTrainingContext(); window.initTrainingView && window.initTrainingView();"
+          class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition mr-2"
+        >
+          Alle Tests trainieren
+        </button>
+        ` : ''}
         <button
           onclick="window.showView && window.showView('moduleMap')"
           class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition"
@@ -434,8 +535,25 @@ function renderTrainingQuestion(animateIn = false) {
     ? 'transform: translateX(100%); opacity: 0;'
     : '';
 
+  // Context info for filtered training
+  const contextDesc = getTrainingContextDescription(trainingContext, window.MODULES || []);
+  const isFiltered = trainingContext.moduleId !== null;
+  const contextBadge = isFiltered
+    ? `<div class="mb-4 text-center">
+        <span class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm px-3 py-1 rounded-full">
+          <span>📚 ${escapeHtml(contextDesc)}</span>
+          <button 
+            onclick="window.clearTrainingContext(); window.initTrainingView();"
+            class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-200"
+            title="Filter entfernen"
+          >✕</button>
+        </span>
+       </div>`
+    : '';
+
   container.innerHTML = `
     <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
+      ${contextBadge}
       <!-- Progress -->
       <div class="mb-6">
         <div class="flex justify-between items-center mb-2">
@@ -1016,6 +1134,10 @@ window.continueTraining = continueTraining;
 window.showTrainingCheatSheet = showTrainingCheatSheet;
 window.closeTrainingCheatSheet = closeTrainingCheatSheet;
 window.getCompletedTests = getCompletedTests;
+window.getCompletedTestsFiltered = getCompletedTestsFiltered;
+window.setTrainingContext = setTrainingContext;
+window.getTrainingContext = getTrainingContext;
+window.clearTrainingContext = clearTrainingContext;
 window.openTokenRedeemModal = openTokenRedeemModal;
 window.closeTokenRedeemModal = closeTokenRedeemModal;
 window.redeemTokenForAchievement = redeemTokenForAchievement;
