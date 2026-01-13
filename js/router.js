@@ -168,11 +168,13 @@ function isValidRoute(viewName) {
  */
 function debugRoute() {
   const route = parseURL();
-  console.group('[Router] Debug Info');
-  console.log('Hash:', window.location.hash);
-  console.log('Parsed route:', route);
-  console.log('Registered routes:', getRegisteredRoutes());
-  console.groupEnd();
+  if (window.isDevMode && window.isDevMode()) {
+    console.group('[Router] Debug Info');
+    console.log('Hash:', window.location.hash);
+    console.log('Parsed route:', route);
+    console.log('Registered routes:', getRegisteredRoutes());
+    console.groupEnd();
+  }
   return route;
 }
 

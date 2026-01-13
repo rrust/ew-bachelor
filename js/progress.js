@@ -133,7 +133,6 @@ function updateLectureProgress(moduleId, lectureId, score) {
   };
 
   saveUserProgress(progress);
-  console.log('Progress updated:', progress);
 
   // Check for achievement unlocks after progress is saved
   if (typeof window.checkAchievementUnlocksForQuiz === 'function') {
@@ -161,7 +160,6 @@ function resetLectureProgress(moduleId, lectureId) {
   if (progress.modules?.[moduleId]?.lectures?.[lectureId]) {
     delete progress.modules[moduleId].lectures[lectureId];
     saveUserProgress(progress);
-    console.log(`Progress for ${lectureId} in ${moduleId} reset.`);
   }
 }
 
@@ -207,7 +205,6 @@ function migrateLegacyProgress(defaultStudyId) {
     saveAppSettings(settings);
 
     // Don't delete legacy key yet - keep as backup
-    console.log('Legacy progress migrated to:', defaultStudyId);
     return true;
   } catch (error) {
     console.error('Error migrating legacy progress:', error);
@@ -252,8 +249,6 @@ function exportProgress() {
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
-
-  console.log('Progress exported successfully');
 }
 
 // Imports progress data from a JSON file
@@ -315,10 +310,6 @@ function importProgress(file) {
           saveAppSettings(newSettings);
         }
 
-        console.log(
-          'Progress imported successfully from',
-          importData.exportedAt
-        );
         resolve(importData.progress);
       } catch (err) {
         reject(new Error('Fehler beim Lesen der Datei: ' + err.message));

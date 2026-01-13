@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function navigateFromURL() {
     const route = parseURL();
-    console.log('navigateFromURL - parsed route:', route);
     if (!route) return false;
 
     // Handle study selection route

@@ -115,8 +115,6 @@ async function showAlertNotification(alerts) {
       silent: false
     });
 
-    console.log('[Notifications] Notification created:', notification);
-
     notification.onclick = function () {
       window.focus();
       window.location.hash = '#/alerts';
@@ -124,7 +122,6 @@ async function showAlertNotification(alerts) {
     };
 
     localStorage.setItem('lastAlertNotification', today);
-    console.log('[Notifications] Showed alert notification successfully');
   } catch (error) {
     console.error('[Notifications] Failed to create notification:', error);
   }
@@ -136,17 +133,14 @@ async function showAlertNotification(alerts) {
  */
 async function updateAppBadge(count) {
   if (!isBadgeSupported()) {
-    console.log('[Notifications] Badge API not supported');
     return;
   }
 
   try {
     if (count > 0) {
       await navigator.setAppBadge(count);
-      console.log('[Notifications] App badge set to', count);
     } else {
       await navigator.clearAppBadge();
-      console.log('[Notifications] App badge cleared');
     }
   } catch (error) {
     console.error('[Notifications] Failed to set app badge:', error);

@@ -798,13 +798,13 @@ function injectHeader(viewId, viewName, options = {}) {
   // Check for dedicated header container (for sticky headers)
   const headerContainerId = viewId.replace('-view', '') + '-header-container';
   const headerContainer = document.getElementById(headerContainerId);
-  
+
   if (headerContainer) {
     // Use dedicated container (e.g., training-header-container)
     headerContainer.innerHTML = '';
     const header = createAppHeader(viewName, options);
     headerContainer.appendChild(header);
-    
+
     // Setup menu toggle
     const idSuffix = viewName === 'moduleMap' ? '' : `-${viewName}`;
     const menuToggle = header.querySelector(`#menu-toggle${idSuffix}`);
@@ -813,7 +813,9 @@ function injectHeader(viewId, viewName, options = {}) {
     }
 
     // Setup theme toggle in menu
-    const themeToggleMenu = header.querySelector(`#theme-toggle-menu${idSuffix}`);
+    const themeToggleMenu = header.querySelector(
+      `#theme-toggle-menu${idSuffix}`
+    );
     if (themeToggleMenu) {
       themeToggleMenu.addEventListener('click', () => {
         if (window.toggleTheme) window.toggleTheme();

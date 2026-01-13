@@ -22,11 +22,6 @@ async function loadSearchIndex() {
     );
     if (response.ok) {
       searchIndexCache = await response.json();
-      console.log(
-        `[Search] Index loaded: ${
-          searchIndexCache.entries?.length || 0
-        } entries`
-      );
       return searchIndexCache;
     }
   } catch (e) {
