@@ -20,22 +20,23 @@
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen** - Erlaubt: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT: `xychart-beta`, `timeline`, `mindmap`.
 - ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 
-## Content Generation V4: Lernen → Überprüfen → Anwenden
+## Content Generation: 3-Phasen-Workflow
 
-When generating content from `studies-material/` files, follow this structure:
+⚠️ **VERBINDLICHER WORKFLOW - Keine Schritte überspringen!**
 
-**Jeder Abschnitt:**
+### Phase 1: Rohmaterial (bereits erledigt)
+Material liegt in `studies-material/{studyId}/NN-modul/NN-vorlesung/`
 
-1. 📚 **Lerninhalte** (learning-content) - Theorie, Konzepte
-2. ✅ **Verständnis-Checks** (direkt danach!) - self-assessment-mc, fill-in-the-blank, matching, ordering
-3. 🧮 **Praxis-Übung** - practice-exercise, calculation
-4. 📺 **Video** - an thematisch passender Stelle
+### Phase 2: CONTENT_PLAN.md erstellen/prüfen
+Plan definiert exakte Struktur der zu generierenden Dateien
 
-**Am Ende der Vorlesung:**
+### Phase 3: Content generieren NACH dem CONTENT_PLAN
 
-- 📋 **Selbsttest** (self-assessment) - Bereitschafts-Checkliste
-- 📝 **Vorlesungs-Test** (questions/) - NUR multiple-choice-multiple, schwer
-- 🎓 **Modul-Prüfungsfragen** - 2 sehr schwierige pro Vorlesung
+⚠️ **CONTENT_PLAN.md ist VERBINDLICH!**
+- Erstelle **EXAKT** die Dateien aus dem CONTENT_PLAN
+- Verwende **EXAKT** die dort definierten Typen und Dateinamen
+- Erfinde **KEINE eigene Struktur** - der Plan ist das Gesetz
+- Wenn der Plan `04-video-stoechiometrie.md` sagt, erstelle `04-video-stoechiometrie.md`
 
 **Workflow:**
 
@@ -46,8 +47,8 @@ Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich se
 - Den **existierenden** Modul-Ordner verwenden, NICHT blind den Namen aus studies-material übernehmen
 - Beispiel: `studies-material/.../02-grundlagen-chemie/` → `content/.../02-chemie-grundlagen/`
 
-1. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
-2. **Read** CONTENT_PLAN.md in the material folder for structure
+1. **ZUERST:** Lies `CONTENT_PLAN.md` im Material-Ordner - **DAS IST DIE VERBINDLICHE STRUKTUR**
+2. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
 3. **Check module folder** for additional resources:
    - Fachliteratur-Fragen (z.B. `mortimer-questions.md`)
    - Prüfungsfragen und -lösungen

@@ -182,10 +182,23 @@ Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich se
 
 **Im Vorlesungs-Ordner** (`studies-material/{studyId}/NN-modul/NN-vorlesung/`):
 - `Videos.md` - Verifizierte YouTube-Videos → als `youtube-video` einbinden
-- `CONTENT_PLAN.md` - Struktur für die Content-Generierung
+- ⚠️ `CONTENT_PLAN.md` - **VERBINDLICHE** Struktur für die Content-Generierung
 - `Vorlesung.md` - Hauptinhalt mit Quellenmarkierungen
 
-**Workflow:**
+### ⚠️ CONTENT_PLAN ist VERBINDLICH!
+
+**Der 3-Phasen-Workflow:**
+1. **Phase 1:** Rohmaterial in `studies-material/` ablegen
+2. **Phase 2:** CONTENT_PLAN.md erstellen und verifizieren
+3. **Phase 3:** Content **EXAKT nach CONTENT_PLAN** generieren
+
+**Regeln für Phase 3:**
+- Erstelle **EXAKT** die Dateien aus dem CONTENT_PLAN (Dateinamen, Typen, Reihenfolge)
+- Erfinde **KEINE eigene Struktur** - der Plan ist das Gesetz
+- Wenn der Plan `15-video-ausbeute.md` mit `type: youtube-video` sagt, erstelle genau das
+- Bei Abweichungen: STOPP und nachfragen, nicht improvisieren
+
+**Workflow (nach CONTENT_PLAN):**
 
 1. **Extract sources** from material file header:
 
