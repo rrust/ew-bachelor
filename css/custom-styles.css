@@ -412,8 +412,9 @@ header.sticky {
   right: 0;
   z-index: 30;
   background: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   #search-view .search-sticky-header {
@@ -422,10 +423,9 @@ header.sticky {
 }
 .dark #search-view .search-sticky-header {
   background: #1f2937;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 /* Spacer for the fixed search input */
 #search-view .search-results-wrapper {
-  padding-top: 5.5rem; /* Space for fixed search input */
+  padding-top: 4.5rem; /* Space for fixed search input */
 }
