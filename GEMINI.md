@@ -123,6 +123,12 @@ Only use these icons: `search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `
 
 When generating content from `studies-material/` files:
 
+⚠️ **KRITISCH - Zielordner ermitteln!**
+Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich sein!
+- **ZUERST** mit `list_dir` den content-Ordner prüfen: `content/{studyId}/`
+- Den **existierenden** Modul-Ordner verwenden, NICHT blind den Namen aus studies-material übernehmen
+- Beispiel: `studies-material/.../02-grundlagen-chemie/` → `content/.../02-chemie-grundlagen/`
+
 **WICHTIG: Zusätzliche Materialien prüfen!**
 
 **Im Modul-Ordner** (`studies-material/{studyId}/NN-modul/`):
@@ -214,8 +220,9 @@ When creating or editing content in `content/` folder:
 
 1. ✅ Run `npm run build` to regenerate JSON files
 2. ✅ Run `npm run validate:content` to check for errors
-3. ✅ Run `node scripts/generate-test-progress.js` to regenerate test data
-4. ✅ Test in browser to verify content loads correctly
+3. ✅ Run `npx markdownlint-cli2 "content/**/*.md"` to check formatting
+4. ✅ Run `node scripts/generate-test-progress.js` to regenerate test data
+5. ✅ Test in browser to verify content loads correctly
 
 **What `npm run build` does:**
 - Generates `content-list.json` and `modules.json` for each study

@@ -39,6 +39,13 @@ When generating content from `studies-material/` files, follow this structure:
 
 **Workflow:**
 
+⚠️ **KRITISCH - Schritt 0: Zielordner ermitteln!**
+Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich sein!
+
+- **ZUERST** mit `list_dir` den content-Ordner prüfen: `content/{studyId}/`
+- Den **existierenden** Modul-Ordner verwenden, NICHT blind den Namen aus studies-material übernehmen
+- Beispiel: `studies-material/.../02-grundlagen-chemie/` → `content/.../02-chemie-grundlagen/`
+
 1. **Read** `docs/AI-Content-Creation-Setup.md` for full workflow
 2. **Read** CONTENT_PLAN.md in the material folder for structure
 3. **Check module folder** for additional resources:
@@ -52,8 +59,9 @@ When generating content from `studies-material/` files, follow this structure:
 8. **Remove citation markers** from output text
 9. **Run `npm run build`** to regenerate JSON files
 10. **Run `npm run validate:content`** to check for errors
-11. **Run `node scripts/generate-test-progress.js`** to regenerate test data
-12. **Validate** with Tools → "Inhalte validieren"
+11. **Run `npx markdownlint-cli2 "content/**/\*.md"`\*\* to check formatting
+12. **Run `node scripts/generate-test-progress.js`** to regenerate test data
+13. **Validate** with Tools → "Inhalte validieren"
 
 ## Lecture Versioning
 

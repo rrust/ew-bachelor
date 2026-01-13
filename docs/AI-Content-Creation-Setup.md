@@ -285,8 +285,14 @@ Diesen Prompt im Copilot Agent Mode (VS Code) verwenden:
 Generiere Lerninhalte aus der Material-Datei:
 studies-material/bsc-ernaehrungswissenschaften/[MODUL]/[VORLESUNG]/Vorlesung.md
 
-Zielordner:
-content/bsc-ernaehrungswissenschaften/[MODUL]/[VORLESUNG]/
+⚠️ KRITISCH - ZIELORDNER ERMITTELN (SCHRITT 0):
+Die Ordnernamen in studies-material/ und content/ können UNTERSCHIEDLICH sein!
+→ ZUERST mit list_dir den content-Ordner prüfen: content/bsc-ernaehrungswissenschaften/
+→ Den EXISTIERENDEN Modul-Ordner verwenden, NICHT blind den Namen aus studies-material!
+→ Beispiel: studies-material/.../02-grundlagen-chemie/ → content/.../02-chemie-grundlagen/
+
+Zielordner (nach Prüfung!):
+content/bsc-ernaehrungswissenschaften/[EXISTIERENDER-MODUL-ORDNER]/[VORLESUNG]/
 
 ## NEUE STRUKTUR V4: Lernen → Überprüfen → Anwenden
 
@@ -298,13 +304,18 @@ Jeder Abschnitt besteht aus:
 
 ## VOR DEM START: Zusätzliche Materialien prüfen!
 
-SCHRITT 0 - Modul-Ordner prüfen:
+SCHRITT 0a - ZIELORDNER im content/ PRÜFEN:
+- Führe list_dir für content/{studyId}/ aus
+- Finde den korrekten existierenden Modul-Ordner
+- Der Name kann abweichen vom studies-material Ordner!
+
+SCHRITT 0b - Modul-Ordner Materialien prüfen:
 - Lies overview.md für Modulziele und Prüfungsmodalitäten
 - Lies Fachliteratur-Fragen (z.B. mortimer-questions.md) falls vorhanden
 - Lies Prüfungsfragen und -lösungen falls vorhanden
 → Nutze diese für schwierige questions/ und calculation-Aufgaben!
 
-SCHRITT 0b - Videos.md prüfen:
+SCHRITT 0c - Videos.md prüfen:
 - Lies Videos.md im Vorlesungs-Ordner (falls vorhanden)
 - Nur verifizierte Videos aus dieser Datei verwenden!
 - Videos an thematisch passender Stelle einbinden
