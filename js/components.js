@@ -29,9 +29,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
 
   // Special header for lecture list view with back button
   if (view === 'lecture') {
-    const moduleIcon = options.moduleIcon
-      ? Icons.get(options.moduleIcon, 'w-5 h-5', '')
-      : Icons.get('modules', 'w-5 h-5', '');
     const idSuffix = '-lecture';
     header.innerHTML = `
       <div class="flex items-center">
@@ -53,15 +50,16 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
               title="Zur Modulübersicht"
             >
-              ${Icons.get('modules', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+              ${Icons.get(
+                'modules',
+                'w-5 h-5',
+                'text-gray-600 dark:text-gray-400'
+              )}
             </button>
             <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
-            <span class="flex items-center gap-2">
-              ${moduleIcon}
-              <h2 class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${
-                options.moduleTitle || ''
-              }">${options.moduleTitle || ''}</h2>
-            </span>
+            <h2 class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${
+              options.moduleTitle || ''
+            }">${options.moduleTitle || ''}</h2>
           </div>
           <div class="flex items-center gap-1">
             <!-- Dev Mode Badge -->
@@ -397,7 +395,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               title="Zur Modulübersicht"
               onclick="window.showView && window.showView('moduleMap'); window.updateURL && window.updateURL('/', 'Module Overview');"
             >
-              ${Icons.get('modules', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+              ${Icons.get(
+                'modules',
+                'w-5 h-5',
+                'text-gray-600 dark:text-gray-400'
+              )}
             </button>
             <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
             <!-- Buch-Icon → Vorlesungsliste -->
@@ -405,13 +407,21 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               id="breadcrumb-lectures${idSuffix}"
               class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
               title="${options.moduleTitle || 'Modul'} - Zur Vorlesungsliste"
-              onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${options.moduleId || ''}');"
+              onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${
+                options.moduleId || ''
+              }');"
             >
-              ${Icons.get('book', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+              ${Icons.get(
+                'book',
+                'w-5 h-5',
+                'text-gray-600 dark:text-gray-400'
+              )}
             </button>
             <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
             <!-- Lecture Title -->
-            <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${options.lectureTopic || ''}">${options.lectureTopic || ''}</span>
+            <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${
+              options.lectureTopic || ''
+            }">${options.lectureTopic || ''}</span>
             <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
             <span class="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">Übersicht</span>
           </div>
@@ -470,8 +480,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
               onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));"
             >
-              <span class="theme-icon-light hidden">${Icons.get('sun', 'w-5 h-5')}</span>
-              <span class="theme-icon-dark">${Icons.get('moon', 'w-5 h-5')}</span>
+              <span class="theme-icon-light hidden">${Icons.get(
+                'sun',
+                'w-5 h-5'
+              )}</span>
+              <span class="theme-icon-dark">${Icons.get(
+                'moon',
+                'w-5 h-5'
+              )}</span>
               <span class="theme-text">Farbschema</span>
             </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
@@ -548,7 +564,9 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       <div class="container mx-auto px-2 md:px-4 py-2 flex items-center justify-between min-w-0 flex-1">
         <div class="flex items-center gap-2 min-w-0">
           <a href="#/modules" class="flex items-center space-x-2 hover:opacity-80 transition-opacity min-w-0">
-            ${studyIcon ? `<span class="flex-shrink-0">${studyIcon}</span>` : ''}
+            ${
+              studyIcon ? `<span class="flex-shrink-0">${studyIcon}</span>` : ''
+            }
             <h1 class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-100 truncate">
               ${studyTitle}
             </h1>

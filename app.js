@@ -825,26 +825,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Helper function to inject lecture overview header
   function injectLectureOverviewHeader(options) {
-    const container = document.getElementById('lecture-overview-header-container');
+    const container = document.getElementById(
+      'lecture-overview-header-container'
+    );
     if (!container) return;
-    
+
     container.innerHTML = '';
     if (window.createAppHeader) {
       const header = window.createAppHeader('lectureOverview', options);
       container.appendChild(header);
-      
+
       // Update theme icons
       if (window.updateMenuThemeIcons) {
         window.updateMenuThemeIcons(header);
       }
-      
+
       // Update dev mode badge
       if (window.updateDevModeUI) {
         window.updateDevModeUI();
       }
-      
+
       // Setup back-to-player button
-      const backBtn = header.querySelector('#back-to-player-btn-lectureOverview');
+      const backBtn = header.querySelector(
+        '#back-to-player-btn-lectureOverview'
+      );
       if (backBtn) {
         backBtn.addEventListener('click', () => {
           document.getElementById('lecture-player').style.display = 'flex';
@@ -904,7 +908,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- Lecture Overview ---
   function showLectureOverview() {
     // Inject dynamic header for lecture overview
-    const moduleData = MODULES.find(m => m.id === currentModuleId);
+    const moduleData = MODULES.find((m) => m.id === currentModuleId);
     const lecture = APP_CONTENT[currentModuleId]?.lectures?.[currentLectureId];
     injectLectureOverviewHeader({
       moduleId: currentModuleId,
