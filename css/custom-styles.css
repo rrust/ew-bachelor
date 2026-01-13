@@ -405,8 +405,8 @@ header.sticky {
 /* ===== Search View Fixed Input ===== */
 
 /* Remove header margin in search view */
-#search-view header.sticky {
-  margin-bottom: 0;
+#search-view > header {
+  margin-bottom: 0 !important;
 }
 
 /* Fixed search input container - directly below the app header */
