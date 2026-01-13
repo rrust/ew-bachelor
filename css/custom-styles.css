@@ -394,23 +394,30 @@
 
 /* Subtle bottom shadow for app header */
 header.sticky {
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 1px 2px -1px rgba(0, 0, 0, 0.03);
 }
 .dark header.sticky {
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25), 0 1px 2px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25),
+    0 1px 2px -1px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== Search View Sticky Input ===== */
 
-/* Sticky search input container */
+/* Sticky search input container - positioned below the app header */
 #search-view .search-sticky-header {
   position: sticky;
-  top: 0;
+  top: 56px; /* Height of the app header */
   z-index: 30;
   background: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  #search-view .search-sticky-header {
+    top: 64px; /* Slightly larger header on desktop */
+  }
 }
 .dark #search-view .search-sticky-header {
   background: #1f2937;
