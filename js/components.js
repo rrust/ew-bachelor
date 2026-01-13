@@ -646,6 +646,12 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   const showStreak =
     streakInfo && window.hasCompletedTests && window.hasCompletedTests();
 
+  // Get training tokens for display
+  const trainingStats = window.getTrainingStats
+    ? window.getTrainingStats()
+    : { tokens: 0 };
+  const tokenCount = trainingStats.tokens || 0;
+
   header.innerHTML = `
     <div class="flex items-center">
       <!-- Burger Menu (außerhalb Container, ganz links) -->
@@ -688,17 +694,25 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             id="header-dev-badge${idSuffix}"
             class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
           >DEV</a>
-          <!-- Training Mode Button (Token Icon) -->
+          <!-- Training Mode Button (Token Icon with Badge) -->
           <button
             onclick="window.location.hash='#/training'"
-            class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+            class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
               view === 'training'
                 ? 'text-blue-600 dark:text-blue-400'
                 : 'text-blue-500'
             }"
-            title="Training (alle Tests)"
+            title="Training (${tokenCount} Tokens)"
           >
             ${Icons.get('token')}
+            ${
+              tokenCount > 0
+                ? `<span 
+                    id="token-badge${idSuffix}" 
+                    class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full bg-blue-500"
+                  >${tokenCount > 99 ? '99+' : tokenCount}</span>`
+                : ''
+            }
           </button>
           <!-- Streak Display -->
           ${
