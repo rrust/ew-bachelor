@@ -2,6 +2,136 @@
 // Reusable functions for generating common UI elements following DRY principles
 
 /**
+ * Generate the consistent right-side icon buttons for headers
+ * @param {Object} options - Configuration options
+ * @param {string} options.idSuffix - ID suffix for elements
+ * @param {string} options.trainingUrl - URL for training button
+ * @param {string} options.trainingTitle - Tooltip for training button
+ * @param {boolean} options.showSearch - Whether to show search button (default: true)
+ * @param {Array} options.extraButtons - Additional buttons to insert before standard icons
+ * @returns {string} HTML string for icon buttons
+ */
+function generateHeaderIconButtons(options) {
+  const {
+    idSuffix = '',
+    trainingUrl = '#/training',
+    trainingTitle = 'Training',
+    showSearch = true,
+    extraButtons = []
+  } = options;
+
+  // Get training tokens
+  const trainingStats = window.getTrainingStats
+    ? window.getTrainingStats()
+    : { tokens: 0 };
+  const tokenCount = trainingStats.tokens || 0;
+
+  // Get streak info
+  const streakInfo = window.getStreakDisplayInfo
+    ? window.getStreakDisplayInfo()
+    : null;
+  const showStreak =
+    streakInfo && window.hasCompletedTests && window.hasCompletedTests();
+
+  // Get alerts count
+  const unreadCount =
+    window.AlertsModule && window.AlertsModule.getUnreadCount
+      ? window.AlertsModule.getUnreadCount()
+      : 0;
+
+  let html = `
+    <!-- Dev Mode Badge -->
+    <span
+      id="header-dev-badge${idSuffix}"
+      class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+    >DEV</span>
+  `;
+
+  // Add extra buttons (like Overview, Quiz, Back)
+  html += extraButtons.join('');
+
+  // Training Button with Token Badge
+  html += `
+    <button
+      onclick="window.location.hash='${trainingUrl}'"
+      class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
+      title="${trainingTitle} (${tokenCount} Tokens)"
+    >
+      ${Icons.get('token')}
+      ${
+        tokenCount > 0
+          ? `<span class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full bg-blue-500">${
+              tokenCount > 99 ? '99+' : tokenCount
+            }</span>`
+          : ''
+      }
+    </button>
+  `;
+
+  // Streak Button (if available)
+  if (showStreak) {
+    html += `
+      <button
+        onclick="window.location.hash='#/alerts'"
+        class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-orange-500"
+        title="${streakInfo.statusText}"
+      >
+        ${Icons.get('fire')}
+        <span 
+          id="streak-badge${idSuffix}" 
+          class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full ${
+            streakInfo.current >= 5
+              ? 'bg-green-500'
+              : streakInfo.current >= 1
+              ? 'bg-yellow-500'
+              : 'bg-red-500'
+          }"
+        >${streakInfo.current}</span>
+      </button>
+    `;
+  }
+
+  // Alerts Button
+  html += `
+    <button
+      id="nav-alerts${idSuffix}"
+      onclick="window.location.hash='#/alerts'"
+      class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+        unreadCount > 0
+          ? 'text-blue-600 dark:text-blue-400'
+          : 'text-gray-600 dark:text-gray-400'
+      }"
+      title="Benachrichtigungen"
+    >
+      ${Icons.get('bell')}
+      ${
+        unreadCount > 0
+          ? `<span id="alerts-badge${idSuffix}" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white bg-red-500 rounded-full">${
+              unreadCount > 9 ? '9+' : unreadCount
+            }</span>`
+          : ''
+      }
+    </button>
+  `;
+
+  // Search Button
+  if (showSearch) {
+    html += `
+      <button
+        id="nav-search${idSuffix}"
+        class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
+        title="Suche"
+        onclick="window.location.hash='#/search'"
+      >
+        ${Icons.get('search')}
+      </button>
+    `;
+  }
+
+  return html;
+}
+
+/**
  * Creates the application header with navigation and theme toggle
  * @param {string} view - Current view name ('moduleMap', 'tools', 'map', 'progress', 'lecture')
  * @param {Object} options - Optional parameters like module title for lecture view
@@ -68,27 +198,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             }">${options.moduleTitle || ''}</h2>
           </div>
           <div class="flex items-center gap-1">
-            <!-- Dev Mode Badge -->
-            <span
-              id="header-dev-badge-lecture"
-              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-            >DEV</span>
-            <!-- Training Button (contextual) -->
-            <button
-              onclick="window.location.hash='${trainingModuleUrl}'"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
-              title="Training für dieses Modul"
-            >
-              ${Icons.get('token')}
-            </button>
-            <button
-              id="nav-search-lecture"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Suche"
-              onclick="window.location.hash='#/search'"
-            >
-              ${Icons.get('search')}
-            </button>
+            ${generateHeaderIconButtons({
+              idSuffix: '-lecture',
+              trainingUrl: trainingModuleUrl,
+              trainingTitle: 'Training für dieses Modul'
+            })}
           </div>
         </div>
       </div>
@@ -247,45 +361,30 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             }">${options.lectureTopic || ''}</span>
           </div>
           <div class="flex items-center gap-1 flex-shrink-0">
-            <!-- Dev Mode Badge -->
-            <span
-              id="header-dev-badge${idSuffix}"
-              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-            >DEV</span>
-            <!-- Overview Button (Icon) -->
-            <button
-              id="lecture-overview-btn${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
-              title="Vorlesungs-Übersicht (O)"
-            >
-              ${Icons.get('clipboard', 'w-5 h-5')}
-            </button>
-            <!-- Test Button (Icon) -->
-            <button
-              id="lecture-quiz-btn${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-green-600 dark:text-green-400"
-              title="Test"
-              style="display: none;"
-            >
-              ${Icons.get('exam', 'w-5 h-5')}
-            </button>
-            <!-- Training Button (contextual) -->
-            <button
-              onclick="window.location.hash='${trainingLectureUrl}'"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
-              title="Training für diese Vorlesung"
-            >
-              ${Icons.get('token')}
-            </button>
-            <!-- Search -->
-            <button
-              id="nav-search${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Suche"
-              onclick="window.location.hash='#/search'"
-            >
-              ${Icons.get('search')}
-            </button>
+            ${generateHeaderIconButtons({
+              idSuffix: idSuffix,
+              trainingUrl: trainingLectureUrl,
+              trainingTitle: 'Training für diese Vorlesung',
+              extraButtons: [
+                `<!-- Overview Button (Icon) -->
+                <button
+                  id="lecture-overview-btn${idSuffix}"
+                  class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
+                  title="Vorlesungs-Übersicht (O)"
+                >
+                  ${Icons.get('clipboard', 'w-5 h-5')}
+                </button>`,
+                `<!-- Test Button (Icon) -->
+                <button
+                  id="lecture-quiz-btn${idSuffix}"
+                  class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-green-600 dark:text-green-400"
+                  title="Test"
+                  style="display: none;"
+                >
+                  ${Icons.get('exam', 'w-5 h-5')}
+                </button>`
+              ]
+            })}
           </div>
         </div>
       </div>
@@ -436,36 +535,21 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             <span class="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">Übersicht</span>
           </div>
           <div class="flex items-center gap-1 flex-shrink-0">
-            <!-- Dev Mode Badge -->
-            <span
-              id="header-dev-badge${idSuffix}"
-              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-            >DEV</span>
-            <!-- Back to Player Button -->
-            <button
-              id="back-to-player-btn${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
-              title="Zurück zur Vorlesung"
-            >
-              ${Icons.get('close', 'w-5 h-5')}
-            </button>
-            <!-- Training Button (contextual) -->
-            <button
-              onclick="window.location.hash='${trainingLectureUrl}'"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
-              title="Training für diese Vorlesung"
-            >
-              ${Icons.get('token')}
-            </button>
-            <!-- Search -->
-            <button
-              id="nav-search${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Suche"
-              onclick="window.location.hash='#/search'"
-            >
-              ${Icons.get('search')}
-            </button>
+            ${generateHeaderIconButtons({
+              idSuffix: idSuffix,
+              trainingUrl: trainingLectureUrl,
+              trainingTitle: 'Training für diese Vorlesung',
+              extraButtons: [
+                `<!-- Back to Player Button -->
+                <button
+                  id="back-to-player-btn${idSuffix}"
+                  class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
+                  title="Zurück zur Vorlesung"
+                >
+                  ${Icons.get('book', 'w-5 h-5')}
+                </button>`
+              ]
+            })}
           </div>
         </div>
       </div>
