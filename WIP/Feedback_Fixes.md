@@ -13,17 +13,19 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 
 ## UI/UX Verbesserungen
 
-### ⬜ Such-Eingabe sticky machen
+### ✅ Such-Eingabe sticky machen
 
 **Problem:** Die Such-Eingabe scrollt mit dem Content mit.
 **Gewünscht:** Suchfeld soll fixed/sticky am oberen Rand bleiben.
-**Betroffene Dateien:** `index.html`, `css/styles.css`
+**Betroffene Dateien:** `index.html`, `css/custom-styles.css`
+**Commit:** `feat: sticky search input and subtle header shadow`
 
-### ⬜ App Header Drop-Shadow
+### ✅ App Header Drop-Shadow
 
 **Problem:** Der App-Header hat keine visuelle Abgrenzung zum Content.
 **Gewünscht:** Leichter drop-shadow an der Unterkante des Headers.
-**Betroffene Dateien:** `css/styles.css`
+**Betroffene Dateien:** `css/custom-styles.css`, `js/components.js`
+**Commit:** `feat: sticky search input and subtle header shadow`
 
 ---
 
