@@ -1,7 +1,6 @@
 // Main JavaScript file for the Nutritional Science Learning App
 // App Version - used for debugging PWA cache issues
 const APP_VERSION = '1.2.0';
-console.log(`[App] Version ${APP_VERSION} loaded`);
 
 // Global state (accessible by all modules)
 let APP_CONTENT = {};
@@ -434,11 +433,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       const response = await fetch(achievementsPath);
       if (response.ok) {
         APP_CONTENT.achievements = await response.json();
-        console.log(
-          `[App] Loaded ${
-            Object.keys(APP_CONTENT.achievements).length
-          } achievements`
-        );
       } else {
         console.warn('[App] No achievements.json found, achievements disabled');
         APP_CONTENT.achievements = {};
@@ -449,10 +443,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     window.APP_CONTENT = APP_CONTENT;
-
-    console.log(
-      '[App] Lazy loading mode: Modules loaded, lectures will load on-demand'
-    );
   }
 
   /**
