@@ -591,6 +591,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       window.OfflineIndicator.init();
     }
 
+    // Initialize app update manager
+    if (window.AppUpdate && window.AppUpdate.init) {
+      window.AppUpdate.init();
+    }
+
     // Handle browser back/forward buttons
     window.addEventListener('popstate', (event) => {
       if (!navigateFromURL()) {

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T00:50:41.890Z",
+  "exportedAt": "2026-01-13T08:28:42.875Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,29 +8,21 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-11-08T00:50:41.889Z",
+    "startedAt": "2025-11-22T08:28:42.875Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 100,
-            "badge": "gold"
+            "score": 80,
+            "badge": "silver"
           },
           "02-makronaehrstoffe-detail": {
-            "score": 91,
-            "badge": "gold"
+            "score": 17,
+            "badge": "none"
           }
         },
-        "achievements": {
-          "cell-biology-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2025-12-24T00:50:41.890Z",
-            "expiresAt": "2026-01-23T00:50:41.890Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          }
-        }
+        "achievements": {}
       }
     },
     "streak": {

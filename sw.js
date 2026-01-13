@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.14.0';
+const CACHE_VERSION = 'v1.16.0';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -43,6 +43,7 @@ const STATIC_ASSETS = [
   './js/download-manager.js',
   './js/bundle-loader.js',
   './js/offline-indicator.js',
+  './js/app-update.js',
   './content/studies.json',
   './manifest.json'
 ];
@@ -58,6 +59,14 @@ const CDN_ASSETS = [
   'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js',
   'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js'
 ];
+
+// Listen for SKIP_WAITING message from app
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    console.log('[SW] Received SKIP_WAITING, activating new version...');
+    self.skipWaiting();
+  }
+});
 
 // Install: Cache static assets AND CDN assets for offline use
 self.addEventListener('install', (event) => {
@@ -194,14 +203,25 @@ async function cacheFirst(request) {
     }
     return response;
   } catch (error) {
+    const url = new URL(request.url);
     console.error('[SW] Fetch failed:', error);
-    // Return offline page or error
+
+    // Return appropriate fallback based on file type
+    if (url.pathname.endsWith('.json')) {
+      return new Response('{}', {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
     return new Response('Offline', { status: 503 });
   }
 }
 
 // Network-first strategy
 async function networkFirst(request) {
+  const url = new URL(request.url);
+  const isJsonFile = url.pathname.endsWith('.json');
+
   try {
     const response = await fetch(request);
     if (response.ok) {
@@ -215,6 +235,22 @@ async function networkFirst(request) {
       return cached;
     }
     console.error('[SW] Network and cache failed:', error);
+
+    // Return appropriate fallback based on file type
+    if (isJsonFile) {
+      // Return empty JSON object/array to prevent parse errors
+      const fallback =
+        url.pathname.includes('modules.json') ||
+        url.pathname.includes('content-list.json') ||
+        url.pathname.includes('search-index.json')
+          ? '[]'
+          : '{}';
+      return new Response(fallback, {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
     return new Response('Offline', { status: 503 });
   }
 }

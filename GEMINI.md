@@ -38,9 +38,53 @@ content/*.md    → Learning content in Markdown
 **Never commit directly to `main` branch!**
 
 1. Create a feature branch: `git checkout -b feature/descriptive-name`
-2. Make changes and commit
-3. Push and create Pull Request
-4. Merge via GitHub
+2. Make atomic commits (one logical change per commit)
+3. Push branch: `git push -u origin feature/branch-name`
+4. Create PR with `gh` CLI (see below)
+5. Merge via GitHub
+
+### GitHub CLI (`gh`)
+
+**Always use `gh` CLI for Pull Requests!**
+
+```bash
+# Check if gh is installed
+gh --version
+
+# If not installed, install via Homebrew (macOS)
+brew install gh
+
+# Authenticate (one-time setup)
+gh auth login
+
+# Create PR from current branch
+gh pr create --title "feat: description" --body "Details here"
+
+# Or interactive mode
+gh pr create
+
+# View PR status
+gh pr status
+
+# Merge PR
+gh pr merge --squash
+```
+
+### Atomic Commits
+
+**One logical change per commit!**
+
+✅ **Good (atomic):**
+```bash
+git commit -m "feat: add update banner component"
+git commit -m "feat: add reset button to tools"
+git commit -m "content: regenerate lecture with V4 structure"
+```
+
+❌ **Bad (mixed changes):**
+```bash
+git commit -m "add update system and fix content and update docs"
+```
 
 ### Commit Messages
 
@@ -123,6 +167,12 @@ Only use these icons: `search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `
 
 When generating content from `studies-material/` files:
 
+⚠️ **KRITISCH - Zielordner ermitteln!**
+Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich sein!
+- **ZUERST** mit `list_dir` den content-Ordner prüfen: `content/{studyId}/`
+- Den **existierenden** Modul-Ordner verwenden, NICHT blind den Namen aus studies-material übernehmen
+- Beispiel: `studies-material/.../02-grundlagen-chemie/` → `content/.../02-chemie-grundlagen/`
+
 **WICHTIG: Zusätzliche Materialien prüfen!**
 
 **Im Modul-Ordner** (`studies-material/{studyId}/NN-modul/`):
@@ -132,10 +182,23 @@ When generating content from `studies-material/` files:
 
 **Im Vorlesungs-Ordner** (`studies-material/{studyId}/NN-modul/NN-vorlesung/`):
 - `Videos.md` - Verifizierte YouTube-Videos → als `youtube-video` einbinden
-- `CONTENT_PLAN.md` - Struktur für die Content-Generierung
+- ⚠️ `CONTENT_PLAN.md` - **VERBINDLICHE** Struktur für die Content-Generierung
 - `Vorlesung.md` - Hauptinhalt mit Quellenmarkierungen
 
-**Workflow:**
+### ⚠️ CONTENT_PLAN ist VERBINDLICH!
+
+**Der 3-Phasen-Workflow:**
+1. **Phase 1:** Rohmaterial in `studies-material/` ablegen
+2. **Phase 2:** CONTENT_PLAN.md erstellen und verifizieren
+3. **Phase 3:** Content **EXAKT nach CONTENT_PLAN** generieren
+
+**Regeln für Phase 3:**
+- Erstelle **EXAKT** die Dateien aus dem CONTENT_PLAN (Dateinamen, Typen, Reihenfolge)
+- Erfinde **KEINE eigene Struktur** - der Plan ist das Gesetz
+- Wenn der Plan `15-video-ausbeute.md` mit `type: youtube-video` sagt, erstelle genau das
+- Bei Abweichungen: STOPP und nachfragen, nicht improvisieren
+
+**Workflow (nach CONTENT_PLAN):**
 
 1. **Extract sources** from material file header:
 
@@ -214,8 +277,9 @@ When creating or editing content in `content/` folder:
 
 1. ✅ Run `npm run build` to regenerate JSON files
 2. ✅ Run `npm run validate:content` to check for errors
-3. ✅ Run `node scripts/generate-test-progress.js` to regenerate test data
-4. ✅ Test in browser to verify content loads correctly
+3. ✅ Run `npx markdownlint-cli2 "content/**/*.md"` to check formatting
+4. ✅ Run `node scripts/generate-test-progress.js` to regenerate test data
+5. ✅ Test in browser to verify content loads correctly
 
 **What `npm run build` does:**
 - Generates `content-list.json` and `modules.json` for each study
