@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T08:28:42.874Z",
+  "exportedAt": "2026-01-13T12:33:39.725Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,17 +8,17 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-07-25T08:28:42.874Z",
+    "startedAt": "2025-09-28T12:33:39.725Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 50,
+            "score": 55,
             "badge": "bronze"
           },
           "02-makronaehrstoffe-detail": {
-            "score": 19,
+            "score": 0,
             "badge": "none"
           }
         },
@@ -26,7 +26,12 @@
       },
       "02-chemie-grundlagen": {
         "status": "in-progress",
-        "lectures": {},
+        "lectures": {
+          "02-atome-formeln": {
+            "score": 35,
+            "badge": "none"
+          }
+        },
         "achievements": {}
       }
     },

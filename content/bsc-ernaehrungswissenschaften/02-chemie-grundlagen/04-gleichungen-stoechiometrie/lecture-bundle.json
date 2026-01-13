@@ -24,29 +24,28 @@
     },
     {
       "type": "learning-content",
-      "topic": "Stöchiometrie",
+      "topic": "Einführung in Gleichungen und Stöchiometrie",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "1-2"
+          "pages": "1-3"
         }
       ],
-      "content": "## Was ist Stöchiometrie?\n\nDie **Stöchiometrie** (griech. stoicheion = Grundstoff, metron = Maß) ist die Lehre von den quantitativen Beziehungen in chemischen Reaktionen. Sie bildet das mathematische Fundament der Chemie.\n\n### Lernziele dieser Vorlesung\n\nNach dieser Einheit können Sie:\n\n- Stöchiometrische Berechnungen mit dem 4-Schritte-Plan durchführen\n- Prozentuale Ausbeuten berechnen\n- Den begrenzenden Reaktanten identifizieren\n- Molarität und Verdünnungen berechnen\n- pH-Werte berechnen\n- Titrationen auswerten\n\n### Warum ist Stöchiometrie wichtig?\n\nIn der Ernährungswissenschaft und Lebensmittelchemie ist Stöchiometrie unverzichtbar:\n\n- **Nährstoffanalyse:** Wie viel Vitamin C ist in einer Probe?\n- **Rezepturberechnung:** Wie viel Säure neutralisiert eine Pufferlösung?\n- **Stoffwechsel:** Wie viel Energie liefert die Oxidation von Glucose?"
+      "content": "# Gleichungen und Stöchiometrie\n\nWillkommen zur Vorlesung über **Gleichungen und Stöchiometrie** – dem mathematischen Herzstück der Chemie!\n\n## Was ist Stöchiometrie?\n\nDas Wort \"Stöchiometrie\" kommt aus dem Griechischen:\n- **stoicheion** = Element\n- **metron** = Maß\n\nDie Stöchiometrie befasst sich mit der **quantitativen Beziehung** zwischen Reaktanten (Edukten) und Produkten in chemischen Reaktionen.\n\n## Warum ist das wichtig?\n\n> 💡 **Praxisbezug für Ernährungswissenschaft:**\n> - Wie viel Glucose wird bei der Zellatmung zu CO₂ und H₂O umgesetzt?\n> - Welche Menge an Vitamin C neutralisiert eine bestimmte Menge an freien Radikalen?\n> - Wie berechnet man die Calciumaufnahme aus einem Milchprodukt?\n\n## In dieser Vorlesung lernen Sie\n\n1. **Grundlagen** – Das Massenerhaltungsgesetz und chemische Gleichungen\n2. **4-Schritte-Plan** – Systematische stöchiometrische Berechnungen\n3. **Ausbeute** – Theoretische vs. tatsächliche Produktmengen\n4. **Begrenzende Reaktanten** – Was limitiert eine Reaktion?\n5. **Chemische Analyse** – Empirische Formeln bestimmen\n6. **Lösungen** – Molarität und Verdünnungen\n7. **pH-Wert** – Säuregehalt berechnen\n8. **Titration** – Konzentrationen analytisch bestimmen\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Reaktionsgleichungen aufstellen und interpretieren\n- Den 4-Schritte-Plan für stöchiometrische Berechnungen anwenden\n- Den begrenzenden Reaktanten identifizieren\n- Molarität berechnen und Verdünnungen durchführen\n- pH-Werte berechnen und interpretieren\n- Titrationen auswerten"
     },
     {
       "type": "learning-content",
-      "topic": "Stöchiometrie",
+      "topic": "Definition der Stöchiometrie",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "2-3"
+          "pages": "3-5"
         }
       ],
-      "content": "## Das Gesetz der Massenerhaltung\n\nDas Fundament der Stöchiometrie ist das **Gesetz der Massenerhaltung** (Lavoisier, 1789):\n\n> In einer chemischen Reaktion kann Materie weder geschaffen noch vernichtet werden. Die Gesamtmasse der Edukte entspricht der Gesamtmasse der Produkte.\n\n### Konsequenzen für chemische Gleichungen\n\nEine chemische Gleichung muss **ausgeglichen** sein:\n\n$$2\\text{Al}(s) + 3\\text{Br}_2(l) \\rightarrow \\text{Al}_2\\text{Br}_6(s)$$\n\n| Element | Links   | Rechts |\n| ------- | ------- | ------ |\n| Al      | 2       | 2      |\n| Br      | 6 (3×2) | 6      |\n\nDie **Koeffizienten** (die Zahlen vor den Formeln) geben das Molverhältnis an:\n- 2 mol Aluminium reagieren mit 3 mol Brom\n- Es entsteht 1 mol Aluminiumbromid\n\n### Stöchiometrische Faktoren\n\nDas Verhältnis zweier Koeffizienten nennt man **stöchiometrischen Faktor**:\n\n$$\\frac{3\\text{ mol Br}_2}{2\\text{ mol Al}} = 1,5$$\n\nDieser Faktor ist der Schlüssel für alle quantitativen Berechnungen!"
+      "content": "# Was ist Stöchiometrie?\n\nDie **Stöchiometrie** ist die Untersuchung der quantitativen Aspekte chemischer Reaktionen. Sie bildet das mathematische Fundament der Chemie.\n\n## Das Gesetz der Massenerhaltung\n\nDas zugrundeliegende Prinzip ist das **Gesetz der Massenerhaltung** (auch: Lavoisier-Gesetz):\n\n> **In einer chemischen Reaktion kann Materie weder geschaffen noch vernichtet werden.**\n\nDie Masse der Edukte (Reaktanten) muss gleich der Masse der Produkte sein.\n\n## Beispielreaktion\n\nBetrachten wir die Reaktion von Aluminium mit Brom:\n\n$$2\\ Al(s) + 3\\ Br_2(l) \\rightarrow Al_2Br_6(s)$$\n\n**Was sagt uns diese Gleichung?**\n\n| Komponente | Bedeutung                      |\n| ---------- | ------------------------------ |\n| **2 Al**   | 2 Atome Aluminium              |\n| **3 Br₂**  | 3 Moleküle Brom (= 6 Br-Atome) |\n| **Al₂Br₆** | 1 Molekül Aluminiumbromid      |\n\n## Atomzählung (Massenerhaltung prüfen)\n\n| Element | Links (Edukte) | Rechts (Produkte) |\n| ------- | -------------- | ----------------- |\n| **Al**  | 2              | 2 ✓               |\n| **Br**  | 3 × 2 = 6      | 6 ✓               |\n\nDie Anzahl der Atome jedes Elements ist auf **beiden Seiten gleich** – das ist das Wesen der Massenerhaltung!\n\n## Die Koeffizienten\n\nDie Zahlen **vor** den chemischen Formeln heißen **Koeffizienten** (oder stöchiometrische Faktoren):\n- Sie geben das **Mol-Verhältnis** der Reaktionspartner an\n- Sie dürfen beim Ausgleichen verändert werden\n- Die **Indizes** (kleine Zahlen in den Formeln) dürfen NICHT verändert werden!"
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Stöchiometrie",
       "question": "Worauf beruht das Prinzip der Stöchiometrie?",
       "options": [
         "Auf der Änderung der Aggregatzustände",
@@ -55,553 +54,923 @@
         "Auf der Änderung der Atomkerne"
       ],
       "correctAnswer": "Auf dem Gesetz der Massenerhaltung",
-      "explanation": "Die Stöchiometrie basiert auf dem Massenerhaltungsgesetz: Bei chemischen Reaktionen geht keine Masse verloren. Die Anzahl der Atome jedes Elements bleibt konstant.",
+      "hint": "Überlegen Sie: Was bleibt bei einer chemischen Reaktion immer konstant?",
+      "explanation": "Die Stöchiometrie basiert auf dem **Massenerhaltungsgesetz**:\n\n- Bei chemischen Reaktionen werden Atome nur **neu angeordnet**, nicht vernichtet oder erschaffen\n- Die Gesamtmasse der Edukte = Gesamtmasse der Produkte\n- Dieses Prinzip wurde von Antoine Lavoisier im 18. Jahrhundert formuliert\n\nDie anderen Optionen beschreiben keine Grundlage der Stöchiometrie:\n- Aggregatzustände ändern sich zwar oft, sind aber keine Berechnungsgrundlage\n- Energie wird umgewandelt, aber das ist Thermochemie\n- Atomkerne ändern sich nur bei Kernreaktionen, nicht bei chemischen Reaktionen\n",
       "content": ""
     },
     {
-      "type": "learning-content",
-      "topic": "Stöchiometrische Berechnungen",
-      "sourceRefs": [
-        {
-          "sourceId": "kapitel-4",
-          "pages": "4-6"
-        }
-      ],
-      "content": "## Der 4-Schritte-Plan\n\nUm quantitative Fragen zu beantworten wie \"Wie viel Produkt entsteht aus X Gramm Edukt?\", verwenden wir einen systematischen Ansatz:\n\n### Masse → Mol → Mol → Masse\n\n```mermaid\nflowchart LR\n    A[\"Masse Edukt<br/>(in g)\"] -->|÷ M| B[\"Mol Edukt\"]\n    B -->|× Faktor| C[\"Mol Produkt\"]\n    C -->|× M| D[\"Masse Produkt<br/>(in g)\"]\n```\n\n### Die vier Schritte im Detail\n\n1. **Masse → Mol** (Edukt)\n   $$n = \\frac{m}{M}$$\n\n2. **Mol Edukt → Mol Produkt** (stöchiometrischer Faktor)\n   $$n_{Produkt} = n_{Edukt} \\times \\frac{\\text{Koeffizient Produkt}}{\\text{Koeffizient Edukt}}$$\n\n3. **Mol → Masse** (Produkt)\n   $$m = n \\times M$$\n\n### Wichtig zu beachten\n\n- Immer zuerst die Reaktionsgleichung **ausgleichen**!\n- Der stöchiometrische Faktor kommt aus den **Koeffizienten**\n- Einheiten kontrollieren: g/mol, mol, g"
+      "type": "youtube-video",
+      "topic": "Stöchiometrie Grundlagen",
+      "url": "https://www.youtube.com/watch?v=3FkP9Ql4tdc",
+      "content": "# Video: Gesetz der Massenerhaltung\n\nIn diesem Video wird das Gesetz der Erhaltung der Masse erklärt – die Grundlage aller stöchiometrischen Berechnungen.\n\n**Inhalte:**\n- Das Lavoisier-Gesetz verstehen\n- Warum Atome bei Reaktionen erhalten bleiben\n- Anwendung auf chemische Gleichungen"
     },
     {
       "type": "learning-content",
-      "topic": "Stöchiometrische Berechnungen",
+      "topic": "Der 4-Schritte-Plan",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "6-8"
+          "pages": "6-10"
         }
       ],
-      "content": "## Beispiel: Zerfall von Ammoniumnitrat\n\n$$\\text{NH}_4\\text{NO}_3(s) \\rightarrow \\text{N}_2\\text{O}(g) + 2\\text{H}_2\\text{O}(g)$$\n\n**Frage:** Wie viel N₂O und H₂O entstehen aus 454 g NH₄NO₃?\n\n### Schritt 1: Masse → Mol (Edukt)\n\n$$M(\\text{NH}_4\\text{NO}_3) = 14 + 4 + 14 + 48 = 80{,}04\\text{ g/mol}$$\n\n$$n = \\frac{454\\text{ g}}{80{,}04\\text{ g/mol}} = 5{,}67\\text{ mol NH}_4\\text{NO}_3$$\n\n### Schritt 2: Mol Edukt → Mol Produkte\n\nAus der Gleichung: 1 mol NH₄NO₃ → 1 mol N₂O + 2 mol H₂O\n\n- $n(\\text{N}_2\\text{O}) = 5{,}67\\text{ mol} \\times \\frac{1}{1} = 5{,}67\\text{ mol}$\n- $n(\\text{H}_2\\text{O}) = 5{,}67\\text{ mol} \\times \\frac{2}{1} = 11{,}34\\text{ mol}$\n\n### Schritt 3: Mol → Masse (Produkte)\n\n$$m(\\text{N}_2\\text{O}) = 5{,}67\\text{ mol} \\times 44{,}01\\text{ g/mol} = 250\\text{ g}$$\n\n$$m(\\text{H}_2\\text{O}) = 11{,}34\\text{ mol} \\times 18{,}02\\text{ g/mol} = 204\\text{ g}$$\n\n### Kontrolle: Massenerhaltung\n\n$$454\\text{ g (Edukt)} = 250\\text{ g} + 204\\text{ g} = 454\\text{ g (Produkte)} \\checkmark$$"
+      "content": "# Der 4-Schritte-Plan für stöchiometrische Berechnungen\n\nUm quantitative Probleme systematisch zu lösen, verwenden wir den **4-Schritte-Plan**.\n\n## Typische Fragestellung\n\n> *\"Wie viel Gramm Produkt entstehen aus 100 g Reaktant?\"*\n\n## Die vier Schritte im Überblick\n\n| Schritt | Umrechnung                    | Formel / Methode                       |\n| ------- | ----------------------------- | -------------------------------------- |\n| **1**   | Masse Reaktant → Mol Reaktant | $n = \\frac{m}{M}$                      |\n| **2**   | Mol Reaktant → Mol Produkt    | Stöchiometrischer Faktor aus Gleichung |\n| **3**   | Mol Produkt → Masse Produkt   | $m = n \\times M$                       |\n\n## Die Schritte im Detail\n\n### Schritt 1: Masse → Mol (Reaktant)\n\n$$n = \\frac{m}{M}$$\n\nwobei:\n- $n$ = Stoffmenge in mol\n- $m$ = Masse in g\n- $M$ = Molmasse in g/mol\n\n### Schritt 2: Mol Reaktant → Mol Produkt\n\nHier kommt der **stöchiometrische Faktor** aus der Reaktionsgleichung:\n\n$$n_{Produkt} = n_{Reaktant} \\times \\frac{\\text{Koeffizient Produkt}}{\\text{Koeffizient Reaktant}}$$\n\n### Schritt 3: Mol → Masse (Produkt)\n\n$$m = n \\times M$$\n\n## Merksatz\n\n> 📝 **Masse → Mol → Mol → Masse**\n>\n> Denken Sie immer daran: Stöchiometrische Berechnungen laufen über die Stoffmenge (Mol)!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispielrechnung Ammoniumnitrat",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "10-14"
+        }
+      ],
+      "content": "# Beispielrechnung: Zerfall von Ammoniumnitrat\n\nWenden wir den 4-Schritte-Plan auf ein konkretes Beispiel an.\n\n## Reaktionsgleichung\n\n$$NH_4NO_3(s) \\rightarrow N_2O(g) + 2\\ H_2O(g)$$\n\n**Frage:** Wie viel N₂O und H₂O entstehen aus 454 g NH₄NO₃?\n\n## Schritt 1: Masse → Mol (Reaktant)\n\nZuerst berechnen wir die Molmasse von NH₄NO₃:\n- N: 2 × 14,01 = 28,02 g/mol\n- H: 4 × 1,01 = 4,04 g/mol\n- O: 3 × 16,00 = 48,00 g/mol\n- **Gesamt: 80,04 g/mol**\n\n$$n_{NH_4NO_3} = \\frac{454\\ g}{80,04\\ g/mol} = 5,67\\ mol$$\n\n## Schritt 2: Mol Reaktant → Mol Produkt\n\nAus der Gleichung lesen wir die Verhältnisse ab:\n- 1 mol NH₄NO₃ → 1 mol N₂O\n- 1 mol NH₄NO₃ → 2 mol H₂O\n\n**Für N₂O:**\n$$n_{N_2O} = 5,67\\ mol \\times \\frac{1\\ mol\\ N_2O}{1\\ mol\\ NH_4NO_3} = 5,67\\ mol$$\n\n**Für H₂O:**\n$$n_{H_2O} = 5,67\\ mol \\times \\frac{2\\ mol\\ H_2O}{1\\ mol\\ NH_4NO_3} = 11,34\\ mol$$\n\n## Schritt 3: Mol → Masse (Produkt)\n\n**Für N₂O** (M = 44,01 g/mol):\n$$m_{N_2O} = 5,67\\ mol \\times 44,01\\ g/mol = 250\\ g$$\n\n**Für H₂O** (M = 18,02 g/mol):\n$$m_{H_2O} = 11,34\\ mol \\times 18,02\\ g/mol = 204\\ g$$\n\n## Kontrolle: Massenerhaltung\n\n| Stoff              | Masse       |\n| ------------------ | ----------- |\n| NH₄NO₃ (Edukt)     | 454 g       |\n| N₂O (Produkt)      | 250 g       |\n| H₂O (Produkt)      | 204 g       |\n| **Summe Produkte** | **454 g** ✓ |\n\nDie Masse bleibt erhalten!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Mengentabelle zur Bilanzierung",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "14-16"
+        }
+      ],
+      "content": "# Die Mengentabelle (Bilanzierung)\n\nEine **Mengentabelle** hilft, die Übersicht zu behalten und die Massenerhaltung zu prüfen.\n\n## Aufbau einer Mengentabelle\n\nAm Beispiel: $NH_4NO_3(s) \\rightarrow N_2O(g) + 2\\ H_2O(g)$\n\n| Zeile                 | NH₄NO₃   | N₂O   | H₂O     |\n| --------------------- | -------- | ----- | ------- |\n| **Anfangs (g)**       | 454 g    | 0     | 0       |\n| **Anfangs (mol)**     | 5,67 mol | 0     | 0       |\n| **Veränderung (mol)** | −5,67    | +5,67 | +2×5,67 |\n| **Final (mol)**       | 0        | 5,67  | 11,34   |\n| **Final (g)**         | 0        | 250 g | 204 g   |\n\n## Vorteile der Mengentabelle\n\n1. **Übersichtlichkeit:** Alle Werte auf einen Blick\n2. **Fehlerkontrolle:** Massenerhaltung leicht prüfbar\n3. **Systematik:** Funktioniert für jede Reaktion\n\n## Vorzeichen-Konvention\n\n| Vorzeichen    | Bedeutung                         |\n| ------------- | --------------------------------- |\n| **−** (Minus) | Stoff wird **verbraucht** (Edukt) |\n| **+** (Plus)  | Stoff **entsteht** (Produkt)      |\n\n## Wichtige Beziehung\n\nDie Veränderungen stehen im **Verhältnis der Koeffizienten**:\n\n$$\\frac{\\Delta n_A}{\\text{Koeff}_A} = \\frac{\\Delta n_B}{\\text{Koeff}_B}$$\n\nIm Beispiel:\n- NH₄NO₃ hat Koeffizient 1 → Δn = −5,67\n- H₂O hat Koeffizient 2 → Δn = +2 × 5,67 = +11,34"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Visualisierung des 4-Schritte-Plans",
+      "content": "# Der 4-Schritte-Plan im Überblick\n\nDas folgende Diagramm zeigt den systematischen Weg für stöchiometrische Berechnungen.\n\n\n\n## Zusammenfassung der Umrechnungen\n\n| Schritt | Umrechnung                 | Formel                                     |\n| ------- | -------------------------- | ------------------------------------------ |\n| **1**   | Masse → Mol (Reaktant)     | $n = \\frac{m}{M}$                          |\n| **2**   | Mol Reaktant → Mol Produkt | $n_P = n_R \\times \\frac{Koeff_P}{Koeff_R}$ |\n| **3**   | Mol → Masse (Produkt)      | $m = n \\times M$                           |\n\n## Merkhilfe\n\n> 🎯 **Gramm rein, Mol hin, Faktor drauf, Gramm raus!**",
+      "diagram": "flowchart LR\n    subgraph \"EDUKT\"\n        A[\"Masse<br/>Reaktant (g)\"]\n        B[\"Mol<br/>Reaktant\"]\n    end\n    \n    subgraph \"PRODUKT\"\n        C[\"Mol<br/>Produkt\"]\n        D[\"Masse<br/>Produkt (g)\"]\n    end\n    \n    A -->|\"÷ Molmasse<br/>(g/mol)\"| B\n    B -->|\"× Stöchio-<br/>metrischer<br/>Faktor\"| C\n    C -->|\"× Molmasse<br/>(g/mol)\"| D\n    \n    style A fill:#ffcccc\n    style B fill:#ffffcc\n    style C fill:#ffffcc\n    style D fill:#ccffcc"
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Stöchiometrie",
       "question": "Was ist der stöchiometrische Faktor?",
       "options": [
-        "Die Masse eines Moleküls in Gramm",
+        "Die Masse eines Moleküls",
         "Das Mol-Verhältnis zwischen zwei Stoffen in der ausgeglichenen Gleichung",
-        "Die prozentuale Ausbeute einer Reaktion",
+        "Die prozentuale Ausbeute",
         "Die Avogadro-Konstante"
       ],
       "correctAnswer": "Das Mol-Verhältnis zwischen zwei Stoffen in der ausgeglichenen Gleichung",
-      "explanation": "Der stöchiometrische Faktor wird aus den Koeffizienten der ausgeglichenen Reaktionsgleichung abgeleitet. Z.B. reagieren 2 mol H₂ mit 1 mol O₂ zu 2 mol H₂O - der Faktor H₂O/O₂ ist 2/1 = 2.",
+      "hint": "Schauen Sie sich die Koeffizienten in einer Reaktionsgleichung an.",
+      "explanation": "Der **stöchiometrische Faktor** leitet sich aus den **Koeffizienten** der Reaktionsgleichung ab.\n\n**Beispiel:** $2\\ H_2 + O_2 \\rightarrow 2\\ H_2O$\n\n- Faktor H₂ zu H₂O: $\\frac{2}{2} = 1$\n- Faktor O₂ zu H₂O: $\\frac{2}{1} = 2$\n- Faktor H₂ zu O₂: $\\frac{1}{2} = 0,5$\n\nDer stöchiometrische Faktor ermöglicht die Umrechnung von Mol Edukt zu Mol Produkt!\n",
       "content": ""
     },
     {
       "type": "calculation",
-      "topic": "Stöchiometrie",
-      "question": "Gegeben: $2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O} + \\text{O}_2$\n\nWie viel mol O₂ entstehen aus 4 mol H₂O₂?\n",
+      "question": "Berechnen Sie die Stoffmenge des Produkts aus der gegebenen Eduktmenge.",
+      "task": "**Reaktion:** $2\\ H_2O_2 \\rightarrow 2\\ H_2O + O_2$\n\nWasserstoffperoxid (H₂O₂) zerfällt in Wasser und Sauerstoff.\n\n**Gegeben:** 4,0 mol H₂O₂\n\n**Gesucht:** Wie viel mol O₂ entstehen?\n",
       "correctAnswer": "2",
       "unit": "mol",
-      "tolerance": 0.01,
-      "hint": "Nutze den stöchiometrischen Faktor aus den Koeffizienten: 1 mol O₂ pro 2 mol H₂O₂",
-      "solution": "**Stöchiometrischer Faktor:**\n$$\\frac{1\\text{ mol O}_2}{2\\text{ mol H}_2\\text{O}_2} = 0{,}5$$\n\n**Berechnung:**\n$$n(\\text{O}_2) = 4\\text{ mol} \\times 0{,}5 = 2\\text{ mol}$$\n",
+      "solution": "**Schritt 1: Stöchiometrisches Verhältnis ablesen**\n\nAus der Gleichung: $2\\ H_2O_2 \\rightarrow O_2$\n\nDas Verhältnis ist: 2 mol H₂O₂ : 1 mol O₂\n\n**Schritt 2: Stöchiometrischen Faktor anwenden**\n\n$$n_{O_2} = n_{H_2O_2} \\times \\frac{1\\ mol\\ O_2}{2\\ mol\\ H_2O_2}$$\n\n$$n_{O_2} = 4,0\\ mol \\times \\frac{1}{2} = 2,0\\ mol$$\n\n**Ergebnis:** Es entstehen **2,0 mol O₂**\n",
+      "hint": "Lesen Sie das Verhältnis der Koeffizienten ab: 2 mol H₂O₂ reagieren zu 1 mol O₂.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Verbrennungsprodukte berechnen",
+      "scenario": "Sie arbeiten im Labor und analysieren die Verbrennung von Kohlenwasserstoffen.\n\n**Allgemeine Verbrennungsreaktion:**\n$$C_xH_y + O_2 \\rightarrow CO_2 + H_2O$$\n\nBei der vollständigen Verbrennung wird der gesamte Kohlenstoff zu CO₂ und der gesamte Wasserstoff zu H₂O.\n",
+      "tasks": [
+        {
+          "id": "task1",
+          "description": "Butan (C₄H₁₀, M = 58 g/mol) verbrennt: 2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O. Wie viel mol CO₂ entstehen aus 116 g Butan?",
+          "solution": "8 mol CO₂ (116 g = 2 mol Butan, daraus entstehen 2 × 4 = 8 mol CO₂)"
+        },
+        {
+          "id": "task2",
+          "description": "Berechnen Sie die Masse des entstehenden Wassers aus derselben Reaktion (116 g Butan).",
+          "solution": "180 g H₂O (2 mol Butan → 10 mol H₂O → 10 × 18 g/mol = 180 g)"
+        },
+        {
+          "id": "task3",
+          "description": "Prüfen Sie die Massenerhaltung: 116 g Butan reagieren mit wie viel g O₂ zu wie viel g Produkten?",
+          "solution": "416 g O₂ verbraucht (13 mol × 32 g/mol). Produkte: 352 g CO₂ + 180 g H₂O = 532 g. Summe Edukte: 116 + 416 = 532 g ✓"
+        }
+      ],
+      "hint": "**Lösungsstrategie:**\n1. Masse → Mol umrechnen\n2. Stöchiometrische Faktoren aus der Gleichung ablesen\n3. Mol → Masse zurückrechnen\n4. Massenerhaltung prüfen: Masse(Edukte) = Masse(Produkte)\n",
       "content": ""
     },
     {
       "type": "learning-content",
-      "topic": "Ausbeute",
+      "topic": "Ausbeute bei chemischen Reaktionen",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "8-9"
+          "pages": "16-18"
         }
       ],
-      "content": "## Theoretische und tatsächliche Ausbeute\n\nIn der Praxis erhält man oft weniger Produkt als berechnet. Warum?\n\n- Nebenreaktionen\n- Unvollständige Reaktion\n- Verluste bei Aufarbeitung/Reinigung\n\n### Definitionen\n\n| Begriff                   | Bedeutung                                               |\n| ------------------------- | ------------------------------------------------------- |\n| **Theoretische Ausbeute** | Die maximal berechnete Produktmenge (aus Stöchiometrie) |\n| **Tatsächliche Ausbeute** | Die experimentell isolierte Produktmenge                |\n| **Prozentuale Ausbeute**  | Verhältnis tatsächlich/theoretisch in %                 |\n\n### Formel\n\n$$\\%\\text{ Ausbeute} = \\frac{\\text{Tatsächliche Ausbeute}}{\\text{Theoretische Ausbeute}} \\times 100\\%$$\n\n### Beispiel\n\nTheoretisch berechnet: 250 g N₂O\nTatsächlich isoliert: 131 g N₂O\n\n$$\\%\\text{ Ausbeute} = \\frac{131\\text{ g}}{250\\text{ g}} \\times 100\\% = 52{,}4\\%$$\n\n> **Praxistipp:** Ausbeuten von 80-90% gelten als gut, über 90% als exzellent!"
-    },
-    {
-      "type": "calculation",
-      "topic": "Ausbeute",
-      "question": "Bei einer Synthese wurden theoretisch 100 g Produkt erwartet.\nTatsächlich konnten nur 72 g isoliert werden.\n\nBerechne die prozentuale Ausbeute.\n",
-      "correctAnswer": "72",
-      "unit": "%",
-      "tolerance": 0.5,
-      "hint": "% Ausbeute = (tatsächlich / theoretisch) × 100%",
-      "solution": "$$\\%\\text{ Ausbeute} = \\frac{72\\text{ g}}{100\\text{ g}} \\times 100\\% = 72\\%$$\n",
-      "content": ""
-    },
-    {
-      "type": "learning-content",
-      "topic": "Begrenzender Reaktant",
-      "sourceRefs": [
-        {
-          "sourceId": "kapitel-4",
-          "pages": "10-12"
-        }
-      ],
-      "content": "## Begrenzende Reaktanten\n\nWas passiert, wenn Edukte nicht im exakten stöchiometrischen Verhältnis vorliegen?\n\n### Definitionen\n\n| Begriff                                       | Bedeutung                                               |\n| --------------------------------------------- | ------------------------------------------------------- |\n| **Begrenzender Reaktant** (Limiting Reactant) | Wird zuerst vollständig verbraucht, stoppt die Reaktion |\n| **Überschussreaktant**                        | Bleibt nach der Reaktion teilweise übrig                |\n\n### Analogie: Sandwich-Herstellung\n\nRezept: 2 Brot + 1 Käse + 1 Schinken → 1 Sandwich\n\nDu hast: 10 Brot, 6 Käse, 3 Schinken\n\n- Für 10 Brot → max. 5 Sandwiches\n- Für 6 Käse → max. 6 Sandwiches\n- Für 3 Schinken → max. 3 Sandwiches\n\n**Schinken ist der begrenzende Faktor!** → Du machst 3 Sandwiches.\n\n### Warum ist das wichtig?\n\nAlle Berechnungen (Produktmenge, Überschuss) müssen sich auf den **begrenzenden Reaktanten** beziehen!"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Begrenzender Reaktant",
-      "sourceRefs": [
-        {
-          "sourceId": "kapitel-4",
-          "pages": "12-14"
-        }
-      ],
-      "content": "## Identifikation des Begrenzenden Reaktanten\n\n$$2\\text{Al}(s) + 3\\text{Cl}_2(g) \\rightarrow \\text{Al}_2\\text{Cl}_6(s)$$\n\n**Gegeben:** 5,40 g Al und 8,10 g Cl₂\n\n### Methode: Verhältnisvergleich\n\n**Schritt 1: Stoffmengen berechnen**\n\n$$n(\\text{Al}) = \\frac{5{,}40\\text{ g}}{27{,}0\\text{ g/mol}} = 0{,}200\\text{ mol}$$\n\n$$n(\\text{Cl}_2) = \\frac{8{,}10\\text{ g}}{70{,}9\\text{ g/mol}} = 0{,}114\\text{ mol}$$\n\n**Schritt 2: Aktuelles vs. theoretisches Verhältnis**\n\nTheoretisch benötigt (aus Gleichung):\n$$\\frac{3\\text{ mol Cl}_2}{2\\text{ mol Al}} = 1{,}5$$\n\nAktuell vorhanden:\n$$\\frac{0{,}114\\text{ mol Cl}_2}{0{,}200\\text{ mol Al}} = 0{,}57$$\n\n**Schritt 3: Vergleich**\n\n$0{,}57 < 1{,}5$ → Es ist relativ **zu wenig Cl₂** vorhanden!\n\n**→ Cl₂ ist der begrenzende Reaktant.**"
+      "content": "# Prozentuale Ausbeute\n\nIn der Praxis erhält man oft **weniger Produkt** als berechnet. Warum?\n\n## Gründe für verminderte Ausbeute\n\n- **Nebenreaktionen:** Es entstehen unerwünschte Nebenprodukte\n- **Verluste:** Bei Umfüllen, Filtrieren, Trocknen geht Material verloren\n- **Unvollständige Reaktion:** Nicht alle Edukte reagieren\n- **Gleichgewicht:** Bei reversiblen Reaktionen wird nie 100% Umsatz erreicht\n\n## Definitionen\n\n| Begriff                   | Definition                                                 |\n| ------------------------- | ---------------------------------------------------------- |\n| **Theoretische Ausbeute** | Die maximal berechnete Produktmenge (aus Stöchiometrie)    |\n| **Tatsächliche Ausbeute** | Die im Experiment isolierte Produktmenge                   |\n| **Prozentuale Ausbeute**  | Das Verhältnis von tatsächlicher zu theoretischer Ausbeute |\n\n## Die Formel\n\n$$\\%\\ Ausbeute = \\frac{\\text{Tatsächliche Ausbeute}}{\\text{Theoretische Ausbeute}} \\times 100\\%$$\n\n## Beispiel\n\nAus dem Ammoniumnitrat-Beispiel:\n- **Theoretische Ausbeute N₂O:** 250 g\n- **Tatsächliche Ausbeute:** 131 g (gemessen im Labor)\n\n$$\\%\\ Ausbeute = \\frac{131\\ g}{250\\ g} \\times 100\\% = 52,4\\%$$\n\n> 💡 **Praxishinweis:** In der organischen Synthese sind Ausbeuten von 60-80% oft schon sehr gut! Bei der pharmazeutischen Produktion werden dagegen hohe Ausbeuten über 95% angestrebt."
     },
     {
       "type": "self-assessment-mc",
+      "question": "Wie berechnet man die prozentuale Ausbeute?",
+      "options": [
+        "Theoretische Ausbeute / Tatsächliche Ausbeute × 100%",
+        "Tatsächliche Ausbeute / Theoretische Ausbeute × 100%",
+        "Tatsächliche Ausbeute − Theoretische Ausbeute",
+        "Theoretische Ausbeute − Tatsächliche Ausbeute"
+      ],
+      "correctAnswer": "Tatsächliche Ausbeute / Theoretische Ausbeute × 100%",
+      "hint": "Die prozentuale Ausbeute gibt an, wie viel Prozent des maximal Möglichen erreicht wurde.",
+      "explanation": "Die Formel lautet:\n\n$$\\%\\ Ausbeute = \\frac{\\text{Tatsächliche Ausbeute}}{\\text{Theoretische Ausbeute}} \\times 100\\%$$\n\n**Beispiel:**\n- Theoretisch möglich: 100 g\n- Tatsächlich erhalten: 80 g\n- Ausbeute: 80/100 × 100% = **80%**\n\nDie prozentuale Ausbeute kann **niemals über 100%** liegen (wenn doch gemessen, liegt ein Fehler vor, z.B. Verunreinigung).\n",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Berechnen Sie die prozentuale Ausbeute einer Reaktion.",
+      "task": "**Reaktion:** Synthese von Aspirin (Acetylsalicylsäure)\n\nSie haben mit den stöchiometrischen Berechnungen eine **theoretische Ausbeute** von 12,5 g Aspirin ermittelt.\n\nIm Labor konnten Sie nach Umkristallisieren und Trocknen **9,8 g** reines Aspirin isolieren.\n\n**Berechnen Sie die prozentuale Ausbeute.**\n",
+      "correctAnswer": "78,4",
+      "unit": "%",
+      "solution": "**Gegebene Werte:**\n- Theoretische Ausbeute: 12,5 g\n- Tatsächliche Ausbeute: 9,8 g\n\n**Berechnung:**\n\n$$\\%\\ Ausbeute = \\frac{\\text{Tatsächliche Ausbeute}}{\\text{Theoretische Ausbeute}} \\times 100\\%$$\n\n$$\\%\\ Ausbeute = \\frac{9,8\\ g}{12,5\\ g} \\times 100\\%$$\n\n$$\\%\\ Ausbeute = 0,784 \\times 100\\% = 78,4\\%$$\n\n**Ergebnis:** Die Ausbeute beträgt **78,4%**.\n\n> Das ist für eine organische Synthese ein gutes Ergebnis!\n",
+      "hint": "Setzen Sie die Werte einfach in die Formel ein: (tatsächlich / theoretisch) × 100%",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Ausbeute berechnen",
+      "url": "https://www.youtube.com/watch?v=Z_94Iy8QhAI",
+      "content": "# Video: Ausbeuteberechnung\n\nDieses Video erklärt, wie man die theoretische und tatsächliche Ausbeute berechnet und interpretiert.\n\n**Inhalte:**\n- Unterschied zwischen theoretischer und tatsächlicher Ausbeute\n- Die Formel für die prozentuale Ausbeute\n- Praktische Berechnungsbeispiele"
+    },
+    {
+      "type": "learning-content",
       "topic": "Begrenzender Reaktant",
-      "question": "Warum bestimmt der begrenzende Reaktant die Produktmenge?",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "18-22"
+        }
+      ],
+      "content": "# Das Konzept des Begrenzenden Reaktanten\n\nIn vielen Reaktionen werden die Edukte **nicht im exakten stöchiometrischen Verhältnis** gemischt.\n\n## Definitionen\n\n| Begriff                   | Bedeutung                                                               |\n| ------------------------- | ----------------------------------------------------------------------- |\n| **Begrenzender Reaktant** | Der Stoff, der **zuerst aufgebraucht** ist → limitiert die Produktmenge |\n| **Überschussreaktant**    | Der Stoff, der **übrig bleibt** nach der Reaktion                       |\n\n## Alltagsbeispiel: Sandwiches\n\nStellen Sie sich vor, Sie machen Sandwiches:\n- 1 Sandwich = 2 Brotscheiben + 1 Käsescheibe + 1 Salatblatt\n- Sie haben: 10 Brotscheiben, 3 Käsescheiben, 8 Salatblätter\n\n**Wie viele Sandwiches können Sie machen?**\n\n| Zutat | Vorhanden   | Benötigt pro Sandwich | Reicht für   |\n| ----- | ----------- | --------------------- | ------------ |\n| Brot  | 10 Scheiben | 2                     | 5 Sandwiches |\n| Käse  | 3 Scheiben  | 1                     | 3 Sandwiches |\n| Salat | 8 Blätter   | 1                     | 8 Sandwiches |\n\n→ **Käse ist der begrenzende \"Reaktant\"** – Sie können nur 3 Sandwiches machen!\n\n## Chemisches Beispiel\n\n$$Zn + 2\\ HCl \\rightarrow ZnCl_2 + H_2$$\n\nWenn Sie mehr Zink als HCl haben:\n- HCl wird zuerst aufgebraucht\n- HCl ist der **begrenzende Reaktant**\n- Zink bleibt übrig (Überschuss)\n\n> ⚠️ **Wichtig:** Alle Berechnungen (Produktmenge, verbrauchte Menge) müssen auf Basis des **begrenzenden Reaktanten** durchgeführt werden!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Identifikation des begrenzenden Reaktanten",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "22-25"
+        }
+      ],
+      "content": "# Methode: Begrenzenden Reaktanten identifizieren\n\nEs gibt eine systematische Methode, um den begrenzenden Reaktanten zu finden.\n\n## Die Methode: Verhältnisvergleich\n\n### Schritt 1: Stoffmengen berechnen\n\nBerechne für jeden Reaktanten: $n = \\frac{m}{M}$\n\n### Schritt 2: Verhältnisse vergleichen\n\nVergleiche das **tatsächliche Verhältnis** mit dem **theoretischen Verhältnis** aus der Gleichung.\n\n## Beispiel\n\n**Reaktion:** $2\\ Al(s) + 3\\ Cl_2(g) \\rightarrow Al_2Cl_6(s)$\n\n**Gegeben:** 5,40 g Al und 8,10 g Cl₂\n\n### Schritt 1: Mol berechnen\n\n| Stoff | Masse  | Molmasse   | Stoffmenge |\n| ----- | ------ | ---------- | ---------- |\n| Al    | 5,40 g | 27,0 g/mol | 0,200 mol  |\n| Cl₂   | 8,10 g | 70,9 g/mol | 0,114 mol  |\n\n### Schritt 2: Verhältnisse vergleichen\n\n**Theoretisches Verhältnis** (aus Gleichung):\n$$\\frac{n_{Cl_2}}{n_{Al}} = \\frac{3}{2} = 1,5$$\n\n**Tatsächliches Verhältnis** (vorhanden):\n$$\\frac{n_{Cl_2}}{n_{Al}} = \\frac{0,114}{0,200} = 0,57$$\n\n### Schritt 3: Interpretation\n\nDa **0,57 < 1,5**, ist verhältnismäßig zu **wenig Chlor** vorhanden.\n\n→ **Cl₂ ist der begrenzende Reaktant**\n\n## Zusammenfassung der Methode\n\n| Vergleich                                | Bedeutung                                    |\n| ---------------------------------------- | -------------------------------------------- |\n| Tatsächliches Verhältnis < Theoretisches | Der Stoff im Zähler ist limitierend          |\n| Tatsächliches Verhältnis > Theoretisches | Der Stoff im Nenner ist limitierend          |\n| Tatsächliches Verhältnis = Theoretisches | Beide Stoffe exakt stöchiometrisch (selten!) |"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Beispielrechnung mit begrenzem Reaktanten",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "25-28"
+        }
+      ],
+      "content": "# Beispielrechnung: Aluminium + Chlor\n\nFühren wir die vollständige Berechnung für unser Beispiel durch.\n\n## Ausgangssituation\n\n**Reaktion:** $2\\ Al(s) + 3\\ Cl_2(g) \\rightarrow Al_2Cl_6(s)$\n\n**Gegeben:**\n- 5,40 g Al (0,200 mol)\n- 8,10 g Cl₂ (0,114 mol)\n- Cl₂ ist der begrenzende Reaktant\n\n## Produktberechnung (basierend auf BR!)\n\nStöchiometrischer Faktor: $\\frac{1\\ mol\\ Al_2Cl_6}{3\\ mol\\ Cl_2}$\n\n$$n_{Al_2Cl_6} = 0,114\\ mol\\ Cl_2 \\times \\frac{1\\ mol\\ Al_2Cl_6}{3\\ mol\\ Cl_2} = 0,0380\\ mol$$\n\n**Masse des Produkts:**\n\nMolmasse Al₂Cl₆: 2×27,0 + 6×35,45 = 266,4 g/mol\n\n$$m_{Al_2Cl_6} = 0,0380\\ mol \\times 266,4\\ g/mol = 10,1\\ g$$\n\n## Berechnung des Überschusses (Al)\n\n### Wie viel Al wurde verbraucht?\n\n$$n_{Al\\ verbraucht} = 0,114\\ mol\\ Cl_2 \\times \\frac{2\\ mol\\ Al}{3\\ mol\\ Cl_2} = 0,0760\\ mol$$\n\n### Wie viel Al bleibt übrig?\n\n$$n_{Al\\ übrig} = 0,200\\ mol - 0,0760\\ mol = 0,124\\ mol$$\n\n$$m_{Al\\ übrig} = 0,124\\ mol \\times 27,0\\ g/mol = 3,35\\ g$$\n\n## Übersichtstabelle\n\n| Stoff  | Anfangs | Verbraucht | Entstanden | Endbestand |\n| ------ | ------- | ---------- | ---------- | ---------- |\n| Al     | 5,40 g  | 2,05 g     | –          | 3,35 g     |\n| Cl₂    | 8,10 g  | 8,10 g     | –          | 0 g        |\n| Al₂Cl₆ | 0 g     | –          | 10,1 g     | 10,1 g     |\n\n**Kontrolle:** 5,40 + 8,10 = 13,5 g = 3,35 + 0 + 10,1 = 13,45 g ✓ (Rundungsfehler)"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Visualisierung des begrenzenden Reaktanten",
+      "content": "# Begrenzender Reaktant im Überblick\n\nDas folgende Diagramm zeigt den Entscheidungsprozess zur Identifikation des begrenzenden Reaktanten.\n\n\n\n## Merkhilfe\n\n> 🎯 **Der begrenzende Reaktant bestimmt, wie viel Produkt entstehen kann!**\n>\n> Stellen Sie sich vor: Sie können nur so viele Sandwiches machen, wie Sie Käse haben – egal wie viel Brot noch da ist.",
+      "diagram": "flowchart TD\n    A[\"Start: Zwei oder mehr<br/>Reaktanten gegeben\"] --> B[\"Mol für jeden<br/>Reaktanten berechnen\"]\n    B --> C[\"Tatsächliches Verhältnis<br/>berechnen\"]\n    C --> D[\"Mit theoretischem Verhältnis<br/>aus Gleichung vergleichen\"]\n    D --> E{Vergleich?}\n    E -->|\"Tatsächlich < Theoretisch\"| F[\"Zähler-Stoff ist<br/>BEGRENZEND\"]\n    E -->|\"Tatsächlich > Theoretisch\"| G[\"Nenner-Stoff ist<br/>BEGRENZEND\"]\n    E -->|\"Gleich\"| H[\"Exakt stöchiometrisch<br/>(beide aufgebraucht)\"]\n    F --> I[\"Alle Berechnungen mit<br/>dem BR durchführen!\"]\n    G --> I\n    H --> I\n    \n    style F fill:#ffcccc\n    style G fill:#ffcccc\n    style I fill:#ccffcc"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum bestimmt der begrenzende Reaktant die maximale Produktmenge?",
       "options": [
         "Weil er die größte Masse hat",
         "Weil er zuerst vollständig verbraucht ist und die Reaktion dann stoppt",
-        "Weil er die höchste Molare Masse hat",
-        "Weil er am teuersten ist"
+        "Weil er der Katalysator ist",
+        "Weil er im Überschuss vorliegt"
       ],
       "correctAnswer": "Weil er zuerst vollständig verbraucht ist und die Reaktion dann stoppt",
-      "explanation": "Wenn ein Reaktant aufgebraucht ist, kann die Reaktion nicht weiterlaufen - egal wie viel vom anderen Reaktant noch übrig ist. Daher limitiert der begrenzende Reaktant die maximale Produktmenge.",
+      "hint": "Was passiert, wenn ein Reaktionspartner aufgebraucht ist?",
+      "explanation": "Sobald **ein Edukt vollständig verbraucht** ist, kann die Reaktion nicht weitergehen – egal wie viel vom anderen Edukt noch vorhanden ist.\n\n**Analogie:**\n- Sie haben 100 Brotscheiben, aber nur 5 Käsescheiben\n- Sie können nur 5 Käsebrote machen\n- Die 90 übrigen Brotscheiben sind \"Überschuss\"\n\nDer begrenzende Reaktant...\n- ...hat **nicht** unbedingt die kleinste Masse\n- ...ist **nicht** der Katalysator (der wird nicht verbraucht)\n- ...liegt **nicht** im Überschuss vor (das wäre der andere Reaktant)\n",
       "content": ""
     },
     {
       "type": "fill-in-the-blank",
-      "topic": "Begrenzender Reaktant",
       "question": "Vervollständigen Sie die Aussagen zum begrenzenden Reaktanten.",
-      "text": "Der {{blank1}} Reaktant wird zuerst vollständig verbraucht. Der {{blank2}}-Reaktant bleibt nach der Reaktion teilweise übrig. Alle Berechnungen der Produktmenge müssen sich auf den {{blank3}} Reaktanten beziehen.",
+      "text": "Bei einer chemischen Reaktion ist der {{blank1}} Reaktant derjenige Stoff, \nder zuerst vollständig aufgebraucht wird.\n\nDer andere Reaktant, der nach Ende der Reaktion noch vorhanden ist, \nheißt {{blank2}}.\n\nAlle Berechnungen zur Produktmenge müssen auf Basis des {{blank3}} Reaktanten erfolgen.\n",
       "blanks": [
         {
           "id": "blank1",
           "answer": "begrenzende",
           "alternatives": [
-            "limitierende"
+            "limitierende",
+            "begrenzender",
+            "limitierender"
           ],
-          "hint": "Dieser Reaktant limitiert die Produktmenge"
+          "hint": "Dieser Stoff \"begrenzt\" die Reaktion"
         },
         {
           "id": "blank2",
-          "answer": "Überschuss",
+          "answer": "Überschussreaktant",
           "alternatives": [
-            "überschüssige"
+            "Überschuss",
+            "Überschussreaktand",
+            "Überschuss-Reaktant"
           ],
-          "hint": "Dieser Reaktant ist im ..."
+          "hint": "Er ist im \"Überschuss\" vorhanden"
         },
         {
           "id": "blank3",
           "answer": "begrenzenden",
           "alternatives": [
-            "limitierenden"
+            "limitierenden",
+            "begrenzender"
           ],
-          "hint": "Welcher Reaktant bestimmt die maximale Produktmenge?"
+          "hint": "Welcher Reaktant bestimmt die Produktmenge?"
         }
       ],
-      "explanation": "Der begrenzende Reaktant bestimmt die maximale Produktmenge, da er zuerst aufgebraucht wird. Der Überschuss-Reaktant bleibt teilweise übrig.",
+      "hint": "Denken Sie an die beiden Arten von Reaktanten: einer wird aufgebraucht, einer bleibt übrig.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Identifizieren Sie den begrenzenden Reaktanten und berechnen Sie die Produktmenge.",
+      "task": "**Reaktion:** $N_2 + 3\\ H_2 \\rightarrow 2\\ NH_3$\n\nDie Ammoniaksynthese ist einer der wichtigsten industriellen Prozesse weltweit.\n\n**Gegeben:**\n- 28 g Stickstoff (N₂, M = 28 g/mol)\n- 9 g Wasserstoff (H₂, M = 2 g/mol)\n\n**Aufgaben:**\n1. Welcher Stoff ist der begrenzende Reaktant?\n2. Wie viel mol NH₃ entstehen?\n",
+      "correctAnswer": "2",
+      "unit": "mol NH₃",
+      "solution": "**Schritt 1: Stoffmengen berechnen**\n\n- $n_{N_2} = \\frac{28\\ g}{28\\ g/mol} = 1,0\\ mol$\n- $n_{H_2} = \\frac{9\\ g}{2\\ g/mol} = 4,5\\ mol$\n\n**Schritt 2: Verhältnisse vergleichen**\n\nTheoretisches Verhältnis: $\\frac{H_2}{N_2} = \\frac{3}{1} = 3$\n\nTatsächliches Verhältnis: $\\frac{4,5}{1,0} = 4,5$\n\nDa 4,5 > 3 → **N₂ ist der begrenzende Reaktant** (verhältnismäßig zu wenig N₂)\n\n**Schritt 3: Produktmenge berechnen**\n\n$$n_{NH_3} = 1,0\\ mol\\ N_2 \\times \\frac{2\\ mol\\ NH_3}{1\\ mol\\ N_2} = 2,0\\ mol$$\n\n**Ergebnis:** Es entstehen **2,0 mol NH₃** (= 34 g)\n",
+      "hint": "Berechnen Sie zuerst die Stoffmengen beider Reaktanten. Vergleichen Sie dann das tatsächliche Verhältnis mit dem theoretischen aus der Gleichung (3:1).",
       "content": ""
     },
     {
       "type": "practice-exercise",
-      "topic": "Begrenzender Reaktant",
-      "title": "Begrenzenden Reaktant identifizieren",
-      "scenario": "Du führst folgende Reaktion durch: 2 H₂ + O₂ → 2 H₂O\n\nDu hast 4,0 g H₂ und 16,0 g O₂.\n",
+      "title": "Überschuss berechnen",
+      "scenario": "Bei der Reaktion von Phosphor mit Chlor wird Phosphortrichlorid hergestellt:\n\n$$P_4(s) + 6\\ Cl_2(g) \\rightarrow 4\\ PCl_3(l)$$\n\nSie setzen **125 g P₄** (M = 124 g/mol) und **325 g Cl₂** (M = 71 g/mol) ein.\n",
       "tasks": [
         {
-          "question": "Wie viel mol H₂ hast du? (M = 2 g/mol)",
-          "answer": "2,0 mol",
-          "explanation": "n = 4,0 g / 2 g/mol = 2,0 mol"
+          "id": "task1",
+          "description": "Berechnen Sie die Stoffmengen beider Reaktanten in mol.",
+          "solution": "n(P₄) = 125/124 ≈ 1,01 mol; n(Cl₂) = 325/71 ≈ 4,58 mol"
         },
         {
-          "question": "Wie viel mol O₂ hast du? (M = 32 g/mol)",
-          "answer": "0,5 mol",
-          "explanation": "n = 16,0 g / 32 g/mol = 0,5 mol"
+          "id": "task2",
+          "description": "Bestimmen Sie den begrenzenden Reaktanten durch Verhältnisvergleich.",
+          "solution": "Theoretisch: Cl₂/P₄ = 6/1 = 6. Tatsächlich: 4,58/1,01 = 4,5. Da 4,5 < 6 → Cl₂ ist begrenzend (zu wenig Cl₂)"
         },
         {
-          "question": "Wie viel mol O₂ würden für 2,0 mol H₂ benötigt?",
-          "answer": "1,0 mol",
-          "explanation": "Faktor aus Gleichung: 1 mol O₂ / 2 mol H₂ = 0,5. Also 2,0 × 0,5 = 1,0 mol"
-        },
-        {
-          "question": "Welcher Stoff ist der begrenzende Reaktant?",
-          "answer": "O₂",
-          "explanation": "Benötigt: 1,0 mol O₂. Vorhanden: 0,5 mol O₂. → O₂ ist limitierend."
+          "id": "task3",
+          "description": "Berechnen Sie, wie viel mol P₄ übrig bleibt (Überschuss).",
+          "solution": "Verbraucht: 4,58 mol Cl₂ × (1 mol P₄ / 6 mol Cl₂) = 0,76 mol P₄. Übrig: 1,01 - 0,76 = 0,25 mol P₄ (≈ 31 g)"
         }
       ],
+      "hint": "**Strategie:**\n1. Stoffmengen berechnen: n = m/M\n2. Verhältnis Cl₂/P₄ berechnen und mit 6/1 vergleichen\n3. Für Überschuss: Verbrauchte Menge vom Anfangsbestand abziehen\n",
       "content": ""
     },
     {
-      "type": "learning-content",
-      "topic": "Molarität",
-      "sourceRefs": [
-        {
-          "sourceId": "kapitel-4",
-          "pages": "20-22"
-        }
-      ],
-      "content": "## Molarität - Konzentration von Lösungen\n\nDie **Molarität** (c oder M) gibt an, wie viel Mol eines Stoffes in einem Liter Lösung gelöst sind.\n\n### Definition\n\n$$c = \\frac{n}{V}$$\n\n| Symbol | Bedeutung                 | Einheit      |\n| ------ | ------------------------- | ------------ |\n| c      | Molarität (Konzentration) | mol/L oder M |\n| n      | Stoffmenge                | mol          |\n| V      | Volumen der Lösung        | L            |\n\n### Umgestellte Formeln\n\n$$n = c \\times V$$\n\n$$V = \\frac{n}{c}$$\n\n### Beispiel\n\nWie viel Gramm NaCl (M = 58,44 g/mol) werden für 500 mL einer 0,1 M Lösung benötigt?\n\n1. **Stoffmenge berechnen:**\n   $$n = c \\times V = 0{,}1\\text{ mol/L} \\times 0{,}5\\text{ L} = 0{,}05\\text{ mol}$$\n\n2. **Masse berechnen:**\n   $$m = n \\times M = 0{,}05\\text{ mol} \\times 58{,}44\\text{ g/mol} = 2{,}92\\text{ g}$$"
+      "type": "youtube-video",
+      "topic": "Begrenzender Reaktant",
+      "url": "https://www.youtube.com/watch?v=5-swmhWPjPs",
+      "content": "# Video: Limitierender Faktor bestimmen\n\nDieses Video erklärt, wie man den begrenzenden (limitierenden) Reaktanten identifiziert und die entsprechenden Berechnungen durchführt.\n\n**Inhalte:**\n- Das Konzept des limitierenden Faktors\n- Systematische Identifikation durch Verhältnisvergleich\n- Berechnung der Produktmenge und des Überschusses"
     },
     {
       "type": "learning-content",
-      "topic": "Verdünnung",
+      "topic": "Gravimetrische Analyse",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "22-24"
+          "pages": "28-31"
         }
       ],
-      "content": "## Verdünnung von Lösungen\n\nBeim Verdünnen einer Lösung bleibt die **Stoffmenge konstant** - nur das Volumen ändert sich.\n\n### Die Verdünnungsgleichung\n\n$$c_1 \\times V_1 = c_2 \\times V_2$$\n\n| Symbol | Bedeutung                                  |\n| ------ | ------------------------------------------ |\n| c₁     | Konzentration vor Verdünnung (Stammlösung) |\n| V₁     | Volumen vor Verdünnung                     |\n| c₂     | Konzentration nach Verdünnung              |\n| V₂     | Volumen nach Verdünnung                    |\n\n### Beispiel\n\nWie viel mL einer 6 M HCl werden benötigt, um 500 mL 0,5 M HCl herzustellen?\n\n$$V_1 = \\frac{c_2 \\times V_2}{c_1} = \\frac{0{,}5\\text{ M} \\times 500\\text{ mL}}{6\\text{ M}} = 41{,}7\\text{ mL}$$\n\n### Praktische Durchführung\n\n1. 41,7 mL konzentrierte HCl abmessen\n2. In Messkolben geben (NICHT umgekehrt!)\n3. Mit Wasser auf 500 mL auffüllen\n\n> ⚠️ **Sicherheit:** Immer Säure ins Wasser, nie umgekehrt!"
+      "content": "# Analyse durch Fällung (Gravimetrie)\n\nDie **Gravimetrie** ist eine analytische Methode, bei der ein Stoff durch Fällung bestimmt wird.\n\n## Prinzip\n\n1. Der gesuchte Stoff wird in eine **unlösliche Verbindung** überführt (Niederschlag)\n2. Der Niederschlag wird **gefiltert, gewaschen und gewogen**\n3. Aus der Masse wird auf die ursprüngliche Stoffmenge zurückgerechnet\n\n## Beispiel: Sulfatbestimmung\n\n**Fragestellung:** Wie viel Na₂SO₄ enthält eine Mineralprobe?\n\n**Reaktion:**\n$$Na_2SO_4(aq) + BaCl_2(aq) \\rightarrow BaSO_4(s) + 2\\ NaCl(aq)$$\n\nDas Sulfat wird als **Bariumsulfat** gefällt – ein schwerlöslicher weißer Niederschlag.\n\n## Berechnung\n\nWenn 1,0882 g BaSO₄ gewogen wurden:\n\n**Schritt 1: Mol BaSO₄**\n$$n_{BaSO_4} = \\frac{1,0882\\ g}{233,4\\ g/mol} = 0,00466\\ mol$$\n\n**Schritt 2: Mol Na₂SO₄** (Stöchiometrie 1:1)\n$$n_{Na_2SO_4} = 0,00466\\ mol$$\n\n**Schritt 3: Masse Na₂SO₄**\n$$m_{Na_2SO_4} = 0,00466\\ mol \\times 142,0\\ g/mol = 0,662\\ g$$\n\n## Vorteile der Gravimetrie\n\n| Vorteil              | Erklärung                  |\n| -------------------- | -------------------------- |\n| **Hohe Genauigkeit** | Waagen sind sehr präzise   |\n| **Einfache Geräte**  | Nur Filter und Waage nötig |\n| **Rückführbarkeit**  | Masse ist eine Grundgröße  |"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Verbrennungsanalyse",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "31-35"
+        }
+      ],
+      "content": "# Verbrennungsanalyse: Empirische Formel bestimmen\n\nDie **Verbrennungsanalyse** wird verwendet, um die Zusammensetzung organischer Verbindungen zu bestimmen.\n\n## Prinzip\n\nEine Probe eines Kohlenwasserstoffs $C_xH_yO_z$ wird vollständig verbrannt:\n\n$$C_xH_yO_z + O_2 \\rightarrow CO_2 + H_2O$$\n\n**Wichtige Erkenntnis:**\n- Alles **Kohlenstoff (C)** aus der Probe landet im **CO₂**\n- Alles **Wasserstoff (H)** aus der Probe landet im **H₂O**\n\n## Beispielrechnung\n\n**Probe:** 0,115 g einer unbekannten Verbindung\n\n**Produkte:**\n- 0,379 g CO₂\n- 0,1035 g H₂O\n\n### Schritt 1: Mol C berechnen\n\n$$n_{CO_2} = \\frac{0,379\\ g}{44,01\\ g/mol} = 8,61 \\times 10^{-3}\\ mol$$\n\nDa 1 mol CO₂ genau 1 mol C enthält:\n$$n_C = 8,61 \\times 10^{-3}\\ mol$$\n\n### Schritt 2: Mol H berechnen\n\n$$n_{H_2O} = \\frac{0,1035\\ g}{18,02\\ g/mol} = 5,74 \\times 10^{-3}\\ mol$$\n\nDa 1 mol H₂O genau **2 mol H** enthält:\n$$n_H = 2 \\times 5,74 \\times 10^{-3} = 1,15 \\times 10^{-2}\\ mol$$\n\n### Schritt 3: Verhältnis bestimmen\n\n$$\\frac{n_H}{n_C} = \\frac{1,15 \\times 10^{-2}}{8,61 \\times 10^{-3}} = 1,33 \\approx \\frac{4}{3}$$\n\nDas Verhältnis C:H ist 3:4.\n\n**Empirische Formel: C₃H₄**\n\n> 💡 Die empirische Formel zeigt nur das **einfachste Zahlenverhältnis**. Die tatsächliche Molekülformel kann ein Vielfaches sein (z.B. C₆H₈)."
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Molarität",
+      "question": "Woher stammt bei der Verbrennungsanalyse der Kohlenstoff im aufgefangenen CO₂?",
+      "options": [
+        "Aus dem Sauerstoff der Luft",
+        "Vollständig aus der verbrannten Probe",
+        "Aus dem Katalysator",
+        "Er entsteht neu bei der Reaktion"
+      ],
+      "correctAnswer": "Vollständig aus der verbrannten Probe",
+      "hint": "Denken Sie an das Massenerhaltungsgesetz: Woher können Atome kommen?",
+      "explanation": "Aufgrund des **Massenerhaltungsgesetzes** kann Materie nicht entstehen oder verschwinden.\n\nDer Kohlenstoff im CO₂ muss also aus den Edukten stammen:\n- **O₂** enthält keinen Kohlenstoff\n- Also muss **alles C aus der Probe** kommen!\n\nDas macht die Verbrennungsanalyse so wertvoll: Die CO₂-Menge verrät uns direkt, wie viel Kohlenstoff in der Probe war.\n",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Bestimmen Sie die empirische Formel aus Verbrennungsdaten.",
+      "task": "**Verbrennungsanalyse von Ethanol**\n\nBei der Verbrennung von 2,30 g einer Probe entstehen:\n- 4,40 g CO₂\n- 2,70 g H₂O\n\nDie Probe enthält nur C, H und O.\n\n**Bestimmen Sie die empirische Formel.**\n\n*Geben Sie die Formel als C₂H₆O (ohne Leerzeichen) ein.*\n",
+      "correctAnswer": "C2H6O",
+      "unit": "",
+      "solution": "**Schritt 1: Mol C aus CO₂**\n\n$n_{CO_2} = \\frac{4,40\\ g}{44,0\\ g/mol} = 0,100\\ mol$\n\n$n_C = 0,100\\ mol$ (1:1 Verhältnis)\n\n$m_C = 0,100\\ mol \\times 12,0\\ g/mol = 1,20\\ g$\n\n**Schritt 2: Mol H aus H₂O**\n\n$n_{H_2O} = \\frac{2,70\\ g}{18,0\\ g/mol} = 0,150\\ mol$\n\n$n_H = 2 \\times 0,150 = 0,300\\ mol$\n\n$m_H = 0,300\\ mol \\times 1,0\\ g/mol = 0,30\\ g$\n\n**Schritt 3: Masse O (Differenz)**\n\n$m_O = 2,30\\ g - 1,20\\ g - 0,30\\ g = 0,80\\ g$\n\n$n_O = \\frac{0,80\\ g}{16,0\\ g/mol} = 0,050\\ mol$\n\n**Schritt 4: Verhältnis**\n\nC : H : O = 0,100 : 0,300 : 0,050\n\nDurch die kleinste Zahl (0,050) teilen:\n\nC : H : O = 2 : 6 : 1\n\n**Empirische Formel: C₂H₆O** (Ethanol!)\n",
+      "hint": "Berechnen Sie zuerst die Massen von C und H, dann ergibt sich O aus der Differenz zur Probenmasse.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Verhältnisformel berechnen",
+      "url": "https://www.youtube.com/watch?v=f6F-xRJTR-M",
+      "content": "# Video: Salzformeln / Verhältnisformeln aufstellen\n\nIn diesem Video wird erklärt, wie man aus Analysedaten die empirische Formel (Verhältnisformel) einer Verbindung bestimmt.\n\n**Inhalte:**\n- Von Messdaten zur Formel\n- Berechnung der Atomverhältnisse\n- Umgang mit nicht-ganzzahligen Verhältnissen"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Molarität – Konzentration von Lösungen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "35-38"
+        }
+      ],
+      "content": "# Molarität: Konzentration in der Chemie\n\nIn der Chemie arbeiten wir häufig mit **Lösungen**. Die wichtigste Konzentrationsangabe ist die **Molarität**.\n\n## Grundbegriffe\n\n| Begriff            | Definition                                                              |\n| ------------------ | ----------------------------------------------------------------------- |\n| **Lösungsmittel**  | Die Komponente, die den physikalischen Zustand beibehält (meist Wasser) |\n| **Gelöster Stoff** | Die Komponente, die gelöst wird (z.B. Salz, Zucker)                     |\n| **Lösung**         | Homogene Mischung aus Lösungsmittel und gelöstem Stoff                  |\n\n## Definition der Molarität\n\n$$\\text{Molarität } (c) = \\frac{\\text{Stoffmenge des gelösten Stoffes (mol)}}{\\text{Volumen der Lösung (L)}}$$\n\n**Einheit:** mol/L oder M (gesprochen: \"molar\")\n\n## Wichtiger Hinweis\n\n> ⚠️ Das Volumen bezieht sich auf die **gesamte Lösung**, nicht auf das Lösungsmittel allein!\n\n## Beispiel\n\nEine 0,5 M NaCl-Lösung enthält:\n- 0,5 mol NaCl pro Liter Lösung\n- Das entspricht: 0,5 × 58,44 g/mol = 29,22 g NaCl pro Liter\n\n## Umgekehrt: Von Molarität zur Stoffmenge\n\n$$n = c \\times V$$\n\nwobei:\n- $n$ = Stoffmenge in mol\n- $c$ = Molarität in mol/L\n- $V$ = Volumen in L"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Anwendung der Formel n = c × V",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "38-40"
+        }
+      ],
+      "content": "# Anwendung: Lösungen herstellen\n\nMit der Formel $n = c \\times V$ können wir berechnen, wie viel Substanz wir zum Herstellen einer Lösung benötigen.\n\n## Beispielaufgabe\n\n**Gesucht:** Wie viel Gramm Oxalsäure (H₂C₂O₄, M = 90,0 g/mol) benötigen wir für 250 mL einer 0,0500 M Lösung?\n\n### Schritt 1: Stoffmenge berechnen\n\n$$n = c \\times V = 0,0500\\ mol/L \\times 0,250\\ L = 0,0125\\ mol$$\n\n### Schritt 2: Masse berechnen\n\n$$m = n \\times M = 0,0125\\ mol \\times 90,0\\ g/mol = 1,13\\ g$$\n\n## Praktische Durchführung\n\n1. **1,13 g** Oxalsäure einwiegen\n2. In einen **250 mL Messkolben** geben\n3. Etwas destilliertes Wasser zugeben und lösen\n4. Mit Wasser **bis zur Eichmarke** auffüllen\n5. Gut schütteln\n\n## Wichtige Hinweise\n\n| Fehler                        | Konsequenz               |\n| ----------------------------- | ------------------------ |\n| Wasser zuerst in den Kolben   | Volumen wird ungenau     |\n| Nicht bis zur Marke auffüllen | Konzentration zu hoch    |\n| Über die Marke auffüllen      | Konzentration zu niedrig |\n\n> 💡 **Merke:** Immer zuerst den Feststoff, dann das Lösungsmittel!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Verdünnung von Lösungen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "40-43"
+        }
+      ],
+      "content": "# Verdünnung: C₁V₁ = C₂V₂\n\nBeim Verdünnen einer Lösung ändert sich das Volumen, aber die **Stoffmenge des gelösten Stoffes bleibt konstant**.\n\n## Das Grundprinzip\n\n$$n_{\\text{vorher}} = n_{\\text{nachher}}$$\n\nDa $n = c \\times V$, folgt:\n\n$$c_1 \\times V_1 = c_2 \\times V_2$$\n\nwobei:\n- $c_1$ = Konzentration der Stammlösung\n- $V_1$ = Volumen der Stammlösung\n- $c_2$ = Konzentration der verdünnten Lösung\n- $V_2$ = Volumen der verdünnten Lösung\n\n## Beispielrechnung\n\n**Aufgabe:** 50,0 mL einer 3,0 M NaOH-Lösung sollen auf 0,50 M verdünnt werden.\n\n**Gesucht:** Endvolumen der verdünnten Lösung\n\n### Berechnung\n\n$$c_1 \\times V_1 = c_2 \\times V_2$$\n$$3,0\\ M \\times 50,0\\ mL = 0,50\\ M \\times V_2$$\n$$V_2 = \\frac{3,0 \\times 50,0}{0,50} = 300\\ mL$$\n\n### Interpretation\n\n- Startvolumen: 50 mL\n- Endvolumen: 300 mL\n- **Zugabe von Wasser: 250 mL** (300 - 50)\n\n## Merkregel\n\n> 🎯 **Beim Verdünnen:**\n> - Konzentration wird **kleiner**\n> - Volumen wird **größer**\n> - Stoffmenge bleibt **konstant**"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Visualisierung der Verdünnung",
+      "content": "# Verdünnung visualisiert\n\nDas folgende Diagramm zeigt, was bei einer Verdünnung passiert.\n\n\n\n## Was bleibt konstant?\n\n| Größe            | Verändert sich?      |\n| ---------------- | -------------------- |\n| Volumen V        | ↑ Wird größer        |\n| Konzentration c  | ↓ Wird kleiner       |\n| **Stoffmenge n** | **= Bleibt gleich!** |\n\n## Die goldene Regel\n\n$$\\boxed{c_1 \\times V_1 = c_2 \\times V_2}$$\n\n> Die Anzahl der gelösten Teilchen ändert sich nicht – sie werden nur auf ein größeres Volumen verteilt!",
+      "diagram": "flowchart LR\n    subgraph \"STAMMLÖSUNG\"\n        A[\"V₁ = klein<br/>c₁ = hoch<br/>●●●●●\"]\n    end\n    \n    subgraph \"WASSER ZUGEBEN\"\n        B[\"+ H₂O\"]\n    end\n    \n    subgraph \"VERDÜNNTE LÖSUNG\"\n        C[\"V₂ = groß<br/>c₂ = niedrig<br/>● ● ● ● ●\"]\n    end\n    \n    A --> B --> C\n    \n    style A fill:#ff9999\n    style B fill:#99ccff\n    style C fill:#ffcccc"
+    },
+    {
+      "type": "self-assessment-mc",
       "question": "Welche Einheit hat die Molarität?",
       "options": [
-        "g/L",
-        "mol/L",
-        "L/mol",
-        "g/mol"
+        "g/L (Gramm pro Liter)",
+        "mol/g (Mol pro Gramm)",
+        "mol/L (Mol pro Liter)",
+        "L/mol (Liter pro Mol)"
       ],
-      "correctAnswer": "mol/L",
-      "explanation": "Die Molarität gibt die Stoffmenge (in mol) pro Volumen Lösung (in Liter) an. Die Einheit ist daher mol/L, oft auch als \"M\" (molar) abgekürzt.",
+      "correctAnswer": "mol/L (Mol pro Liter)",
+      "hint": "Die Molarität gibt an, wie viel Stoffmenge in einem bestimmten Volumen gelöst ist.",
+      "explanation": "Die **Molarität** ist definiert als:\n\n$$c = \\frac{n}{V} = \\frac{\\text{Stoffmenge (mol)}}{\\text{Volumen (L)}}$$\n\nDie Einheit ist daher **mol/L** oder kurz **M** (molar).\n\n**Beispiele:**\n- 1 M NaCl = 1 mol NaCl pro Liter Lösung\n- 0,1 M HCl = 0,1 mol HCl pro Liter Lösung\n\n**Unterschied zu anderen Konzentrationsangaben:**\n- g/L = Massenkonzentration\n- % (w/w) = Massenanteil\n- % (w/v) = Masse pro Volumen\n",
       "content": ""
     },
     {
       "type": "fill-in-the-blank",
-      "topic": "Verdünnung",
-      "question": "Vervollständigen Sie die Aussagen zur Verdünnung von Lösungen.",
-      "text": "Beim Verdünnen bleibt die {{blank1}} konstant. Die Verdünnungsgleichung lautet: c₁ × V₁ = {{blank2}}. Beim Verdünnen wird die Konzentration {{blank3}} und das Volumen {{blank4}}.",
+      "question": "Vervollständigen Sie die Aussage zur Verdünnung.",
+      "text": "Beim Verdünnen einer Lösung mit Wasser bleibt die {{blank1}} des gelösten Stoffes konstant.\n\nDie Verdünnungsformel lautet: c₁ × V₁ = {{blank2}} × {{blank3}}\n\nBeim Verdünnen wird die Konzentration {{blank4}} und das Volumen {{blank5}}.\n",
       "blanks": [
         {
           "id": "blank1",
           "answer": "Stoffmenge",
           "alternatives": [
-            "Stoffmenge n",
-            "Molzahl"
+            "stoffmenge",
+            "Molzahl",
+            "Anzahl der Mol"
           ],
-          "hint": "n bleibt konstant"
+          "hint": "Was wird in mol gemessen?"
         },
         {
           "id": "blank2",
-          "answer": "c₂ × V₂",
+          "answer": "c₂",
           "alternatives": [
-            "c2 × V2",
-            "c2*V2"
+            "c2",
+            "C₂",
+            "C2"
           ],
-          "hint": "Konzentration mal Volumen nach der Verdünnung"
+          "hint": "Die neue Konzentration"
         },
         {
           "id": "blank3",
-          "answer": "kleiner",
+          "answer": "V₂",
           "alternatives": [
-            "geringer",
-            "niedriger"
+            "v2",
+            "V2"
           ],
-          "hint": "Was passiert mit der Konzentration?"
+          "hint": "Das neue Volumen"
         },
         {
           "id": "blank4",
+          "answer": "kleiner",
+          "alternatives": [
+            "niedriger",
+            "geringer"
+          ],
+          "hint": "Die Teilchen werden auf mehr Volumen verteilt"
+        },
+        {
+          "id": "blank5",
           "answer": "größer",
           "alternatives": [
             "höher",
             "mehr"
           ],
-          "hint": "Was passiert mit dem Volumen?"
+          "hint": "Wir geben ja Wasser dazu"
         }
       ],
-      "explanation": "Bei der Verdünnung gilt: c₁ × V₁ = c₂ × V₂. Die Stoffmenge bleibt konstant, aber die Konzentration sinkt, während das Volumen steigt. Bei Säuren immer Säure ins Wasser geben!",
+      "hint": "Denken Sie daran: Die gelösten Teilchen werden auf mehr Volumen verteilt.",
       "content": ""
     },
     {
       "type": "calculation",
-      "topic": "Molarität",
-      "question": "Wie viel Gramm Glucose (C₆H₁₂O₆, M = 180 g/mol) werden benötigt,\num 250 mL einer 0,2 M Lösung herzustellen?\n",
-      "correctAnswer": "9",
+      "question": "Berechnen Sie die Masse für die Herstellung einer Lösung.",
+      "task": "**Laboraufgabe:** Herstellung einer NaCl-Lösung\n\nSie sollen **500 mL** einer **0,1 M Natriumchlorid-Lösung** herstellen.\n\nMolmasse NaCl: 58,44 g/mol\n\n**Wie viel Gramm NaCl müssen Sie einwiegen?**\n",
+      "correctAnswer": "2,92",
       "unit": "g",
-      "tolerance": 0.1,
-      "hint": "Erst n = c × V berechnen, dann m = n × M",
-      "solution": "**Schritt 1: Stoffmenge berechnen**\n$$n = c \\times V = 0{,}2\\text{ mol/L} \\times 0{,}25\\text{ L} = 0{,}05\\text{ mol}$$\n\n**Schritt 2: Masse berechnen**\n$$m = n \\times M = 0{,}05\\text{ mol} \\times 180\\text{ g/mol} = 9{,}0\\text{ g}$$\n",
+      "solution": "**Schritt 1: Stoffmenge berechnen**\n\n$$n = c \\times V = 0,1\\ mol/L \\times 0,5\\ L = 0,05\\ mol$$\n\n**Schritt 2: Masse berechnen**\n\n$$m = n \\times M = 0,05\\ mol \\times 58,44\\ g/mol = 2,922\\ g$$\n\n**Ergebnis:** Sie müssen **2,92 g NaCl** einwiegen.\n\n**Praktische Durchführung:**\n1. 2,92 g NaCl in 500 mL Messkolben geben\n2. Mit destilliertem Wasser auffüllen bis zur Marke\n3. Gut schütteln bis alles gelöst ist\n",
+      "hint": "Verwenden Sie n = c × V, dann m = n × M. Achten Sie auf die Einheiten (mL in L umrechnen)!",
       "content": ""
     },
     {
       "type": "calculation",
-      "topic": "Verdünnung",
-      "question": "Wie viel mL einer 10 M Essigsäure-Stammlösung werden benötigt,\num 1 Liter 0,5 M Essigsäure herzustellen?\n",
-      "correctAnswer": "50",
+      "question": "Berechnen Sie das Verdünnungsvolumen.",
+      "task": "**Laboraufgabe:** Verdünnung einer HCl-Lösung\n\nSie haben eine **konzentrierte Salzsäure** mit c = 6,0 M.\n\nSie benötigen **250 mL** einer **0,3 M HCl-Lösung**.\n\n**Wie viel mL der konzentrierten Säure müssen Sie verwenden?**\n",
+      "correctAnswer": "12,5",
       "unit": "mL",
-      "tolerance": 0.5,
-      "hint": "Nutze die Verdünnungsgleichung: V₁ = (c₂ × V₂) / c₁",
-      "solution": "$$V_1 = \\frac{c_2 \\times V_2}{c_1} = \\frac{0{,}5\\text{ M} \\times 1000\\text{ mL}}{10\\text{ M}} = 50\\text{ mL}$$\n",
+      "solution": "**Verdünnungsformel anwenden:**\n\n$$c_1 \\times V_1 = c_2 \\times V_2$$\n\n**Gegeben:**\n- $c_1$ = 6,0 M (Stammlösung)\n- $c_2$ = 0,3 M (gewünschte Konzentration)\n- $V_2$ = 250 mL (gewünschtes Volumen)\n\n**Gesucht:** $V_1$\n\n$$V_1 = \\frac{c_2 \\times V_2}{c_1} = \\frac{0,3\\ M \\times 250\\ mL}{6,0\\ M} = 12,5\\ mL$$\n\n**Ergebnis:** Sie benötigen **12,5 mL** der konzentrierten Säure.\n\n**Praktische Durchführung:**\n1. Ca. 200 mL Wasser in Messkolben vorlegen\n2. 12,5 mL konz. HCl mit Pipette zugeben\n3. Mit Wasser auf 250 mL auffüllen\n\n> ⚠️ **Sicherheit:** Immer Säure ins Wasser, nie umgekehrt!\n",
+      "hint": "Stellen Sie die Verdünnungsformel nach V₁ um: V₁ = (c₂ × V₂) / c₁",
       "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Molarität und Verdünnung",
+      "url": "https://www.youtube.com/watch?v=-8SDQTkPZ6w",
+      "content": "# Video: Konzentration berechnen\n\nDieses Video erklärt die Berechnung von Konzentrationen (Molarität) und Verdünnungen.\n\n**Inhalte:**\n- Definition der Molarität (Stoffmengenkonzentration)\n- Berechnung: Wie viel Substanz für eine Lösung?\n- Die Verdünnungsformel c₁V₁ = c₂V₂\n- Praktische Anwendungsbeispiele"
     },
     {
       "type": "learning-content",
-      "topic": "pH-Wert",
+      "topic": "pH-Wert Definition",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "26-28"
+          "pages": "43-46"
         }
       ],
-      "content": "## Der pH-Wert\n\nDer pH-Wert ist ein Maß für die Konzentration von Wasserstoff-Ionen (H₃O⁺) in einer Lösung.\n\n### Definition\n\n$$\\text{pH} = -\\log[\\text{H}_3\\text{O}^+]$$\n\nDie eckigen Klammern bedeuten \"Konzentration in mol/L\".\n\n### Die pH-Skala\n\n| pH-Bereich | Eigenschaft | Beispiele                                     |\n| ---------- | ----------- | --------------------------------------------- |\n| 0-6        | sauer       | Magensäure (1-2), Zitronensaft (2), Essig (3) |\n| 7          | neutral     | Reines Wasser                                 |\n| 8-14       | basisch     | Seife (9-10), Bleiche (12-13)                 |\n\n### Wichtige Zusammenhänge\n\n- **pH nimmt um 1 ab** → [H₃O⁺] wird **10× größer** (saurer)\n- **pH nimmt um 1 zu** → [H₃O⁺] wird **10× kleiner** (basischer)\n\n### Beispielrechnung\n\npH = 3 → Was ist [H₃O⁺]?\n\n$$[\\text{H}_3\\text{O}^+] = 10^{-\\text{pH}} = 10^{-3} = 0{,}001\\text{ mol/L}$$"
+      "content": "# Der pH-Wert: Maß für den Säuregehalt\n\nDer **pH-Wert** ist das wichtigste Maß für den Säuregehalt einer Lösung.\n\n## Definition\n\n$$pH = -\\log[H_3O^+]$$\n\nwobei $[H_3O^+]$ die Konzentration der Hydronium-Ionen in mol/L ist.\n\n## Die pH-Skala\n\n| pH-Bereich | Eigenschaft | Beispiele                                       |\n| ---------- | ----------- | ----------------------------------------------- |\n| **pH < 7** | Sauer       | Magensäure (1-2), Zitronensaft (2-3), Essig (3) |\n| **pH = 7** | Neutral     | Reines Wasser                                   |\n| **pH > 7** | Basisch     | Seife (9-10), Haushaltsreiniger (11-12)         |\n\n## Zusammenhang mit der Konzentration\n\n| $[H_3O^+]$   | pH  | Eigenschaft   |\n| ------------ | --- | ------------- |\n| $10^{-1}$ M  | 1   | Stark sauer   |\n| $10^{-3}$ M  | 3   | Sauer         |\n| $10^{-7}$ M  | 7   | Neutral       |\n| $10^{-10}$ M | 10  | Basisch       |\n| $10^{-13}$ M | 13  | Stark basisch |\n\n## Wichtig: Logarithmische Skala\n\n> ⚠️ Eine Änderung um **1 pH-Einheit** bedeutet eine **10-fache** Änderung der H₃O⁺-Konzentration!\n>\n> - pH 3 → pH 4: Konzentration sinkt auf 1/10\n> - pH 5 → pH 3: Konzentration steigt um Faktor 100\n\n## Ernährungsrelevanz\n\n- **Blut-pH:** 7,35-7,45 (lebenswichtig konstant!)\n- **Mageninhalt:** pH 1-3 (zur Verdauung)\n- **Lebensmittelkonservierung:** Niedriger pH hemmt Bakterienwachstum"
+    },
+    {
+      "type": "learning-content",
+      "topic": "pH-Wert Berechnungen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "46-48"
+        }
+      ],
+      "content": "# pH-Berechnungen\n\n## Von Konzentration zu pH\n\n$$pH = -\\log[H_3O^+]$$\n\n### Beispiel 1\n\n$[H_3O^+] = 1,6 \\times 10^{-3}\\ M$\n\n$$pH = -\\log(1,6 \\times 10^{-3}) = -(-2,80) = 2,80$$\n\n### Rechenweg mit Taschenrechner\n\n1. Eingeben: 1.6E-3 (oder 0.0016)\n2. LOG-Taste drücken\n3. Ergebnis: -2.796...\n4. Vorzeichen umkehren: **2,80**\n\n## Von pH zu Konzentration (Antilog)\n\n$$[H_3O^+] = 10^{-pH}$$\n\n### Beispiel 2\n\npH = 3,12\n\n$$[H_3O^+] = 10^{-3,12} = 7,6 \\times 10^{-4}\\ M$$\n\n### Rechenweg mit Taschenrechner\n\n1. Eingeben: -3.12\n2. 10^x-Taste drücken (oder SHIFT + LOG)\n3. Ergebnis: 7.59 × 10⁻⁴\n\n## Zusammenfassung\n\n| Wenn gegeben... | Dann berechnen... | Formel                |\n| --------------- | ----------------- | --------------------- |\n| $[H_3O^+]$      | pH                | $pH = -\\log[H_3O^+]$  |\n| pH              | $[H_3O^+]$        | $[H_3O^+] = 10^{-pH}$ |\n\n## Der pOH-Wert\n\nFür basische Lösungen gibt es analog:\n\n$$pOH = -\\log[OH^-]$$\n\n$$pH + pOH = 14 \\text{ (bei 25°C)}$$"
     },
     {
       "type": "self-assessment-mc",
-      "topic": "pH-Wert",
-      "question": "Eine Lösung hat pH = 4. Ist sie sauer, neutral oder basisch?",
+      "question": "Eine Lösung hat einen pH-Wert von 3. Ist sie sauer oder basisch?",
       "options": [
         "Sauer",
         "Neutral",
         "Basisch",
-        "Kann nicht bestimmt werden"
+        "Kann man nicht sagen"
       ],
       "correctAnswer": "Sauer",
-      "explanation": "pH < 7 bedeutet sauer. Eine Lösung mit pH = 4 hat eine H₃O⁺-Konzentration von 10⁻⁴ mol/L und ist damit sauer (wie z.B. Tomatensaft).",
+      "hint": "Erinnern Sie sich an die pH-Skala: Was bedeuten Werte unter 7?",
+      "explanation": "Die pH-Skala:\n\n| pH-Bereich | Eigenschaft |\n| ---------- | ----------- |\n| **< 7**    | **Sauer**   |\n| = 7        | Neutral     |\n| > 7        | Basisch     |\n\n**pH 3** liegt deutlich unter 7, also ist die Lösung **sauer**.\n\nBeispiele für pH 3:\n- Essig\n- Saurer Wein\n- Limonade\n\nBei pH 3 ist $[H_3O^+] = 10^{-3} = 0,001\\ mol/L$ – das ist 10.000× mehr H₃O⁺ als in neutralem Wasser!\n",
       "content": ""
     },
     {
       "type": "calculation",
-      "topic": "pH-Wert",
-      "question": "Eine Salzsäure-Lösung hat eine H₃O⁺-Konzentration von 0,01 mol/L.\nBerechne den pH-Wert.\n",
-      "correctAnswer": "2",
+      "question": "Berechnen Sie den pH-Wert aus der Konzentration.",
+      "task": "**pH-Berechnung**\n\nEine Salzsäurelösung hat eine H₃O⁺-Konzentration von:\n\n$$[H_3O^+] = 1,0 \\times 10^{-4}\\ mol/L$$\n\n**Berechnen Sie den pH-Wert.**\n",
+      "correctAnswer": "4",
       "unit": "",
-      "tolerance": 0.01,
-      "hint": "pH = -log[H₃O⁺]. Beachte: 0,01 = 10⁻²",
-      "solution": "$$[\\text{H}_3\\text{O}^+] = 0{,}01\\text{ mol/L} = 10^{-2}\\text{ mol/L}$$\n\n$$\\text{pH} = -\\log(10^{-2}) = -(-2) = 2$$\n",
+      "solution": "**Formel anwenden:**\n\n$$pH = -\\log[H_3O^+]$$\n\n$$pH = -\\log(1,0 \\times 10^{-4})$$\n\n**Berechnung:**\n\n$\\log(1,0 \\times 10^{-4}) = \\log(1,0) + \\log(10^{-4}) = 0 + (-4) = -4$\n\n$$pH = -(-4) = 4$$\n\n**Ergebnis:** Der pH-Wert beträgt **4**.\n\n> 💡 **Merke:** Bei Zehnerpotenzen ist der pH-Wert gleich dem Absolutwert des Exponenten!\n> $10^{-4}$ → pH = 4\n",
+      "hint": "Bei einer Konzentration von 10⁻ⁿ ist der pH-Wert einfach n (wenn der Faktor vor 10 gleich 1 ist).",
       "content": ""
     },
     {
+      "type": "calculation",
+      "question": "Berechnen Sie die H₃O⁺-Konzentration aus dem pH-Wert.",
+      "task": "**Konzentration aus pH**\n\nOrangensaft hat einen pH-Wert von etwa **3,5**.\n\n**Berechnen Sie die H₃O⁺-Konzentration in mol/L.**\n\n*Geben Sie das Ergebnis als Zahl × 10⁻⁴ an (also nur die Zahl vor × 10⁻⁴).*\n",
+      "correctAnswer": "3,16",
+      "unit": "× 10⁻⁴ mol/L",
+      "solution": "**Formel anwenden:**\n\n$$[H_3O^+] = 10^{-pH} = 10^{-3,5}$$\n\n**Berechnung mit Taschenrechner:**\n\n$10^{-3,5} = 10^{-4} \\times 10^{0,5} = 10^{-4} \\times \\sqrt{10}$\n\n$= 10^{-4} \\times 3,162...$\n\n$$[H_3O^+] = 3,16 \\times 10^{-4}\\ mol/L$$\n\n**Ergebnis:** Die H₃O⁺-Konzentration beträgt **3,16 × 10⁻⁴ mol/L**\n\n> 💡 Zum Vergleich: Neutrales Wasser hat $10^{-7}$ mol/L – Orangensaft hat also ca. 3000× mehr H₃O⁺!\n",
+      "hint": "Verwenden Sie die 10^x-Taste (oder SHIFT + LOG) auf Ihrem Taschenrechner mit -3,5 als Eingabe.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "pH-Wert berechnen",
+      "url": "https://www.youtube.com/watch?v=5KWQqEBK4qI",
+      "content": "# Video: pH-Wert berechnen – einfach erklärt\n\nDieses Video erklärt die Berechnung des pH-Werts und die Umrechnung zwischen pH und Konzentration.\n\n**Inhalte:**\n- Definition des pH-Werts\n- Berechnung: Von Konzentration zu pH\n- Berechnung: Von pH zu Konzentration\n- Anwendung auf Säuren und Basen"
+    },
+    {
       "type": "learning-content",
-      "topic": "Titration",
+      "topic": "Titration – Prinzip und Durchführung",
       "sourceRefs": [
         {
           "sourceId": "kapitel-4",
-          "pages": "30-33"
+          "pages": "48-52"
         }
       ],
-      "content": "## Titration - Konzentrationsbestimmung\n\nDie **Titration** ist eine wichtige analytische Methode zur Bestimmung unbekannter Konzentrationen.\n\n### Prinzip\n\nEine Lösung bekannter Konzentration (Maßlösung, Titrant) wird langsam zu einer Probe unbekannter Konzentration gegeben, bis die Reaktion vollständig ist.\n\n### Wichtige Begriffe\n\n| Begriff             | Bedeutung                                                           |\n| ------------------- | ------------------------------------------------------------------- |\n| **Titrant**         | Lösung bekannter Konzentration (in der Bürette)                     |\n| **Analyt**          | Lösung unbekannter Konzentration (im Kolben)                        |\n| **Äquivalenzpunkt** | Punkt, an dem Edukte im stöchiometrischen Verhältnis reagiert haben |\n| **Indikator**       | Farbstoff, der den Äquivalenzpunkt anzeigt                          |\n\n### Auswertung\n\nAm Äquivalenzpunkt gilt:\n\n$$n(\\text{Analyt}) = \\text{Faktor} \\times n(\\text{Titrant})$$\n\nMit $n = c \\times V$:\n\n$$c(\\text{Analyt}) \\times V(\\text{Analyt}) = c(\\text{Titrant}) \\times V(\\text{Titrant})$$\n\n(bei 1:1-Reaktionen)"
+      "content": "# Titration: Konzentrationsbestimmung\n\nDie **Titration** ist eine analytische Methode zur genauen Bestimmung der Konzentration einer Lösung.\n\n## Prinzip\n\n1. Eine Lösung **unbekannter Konzentration** (Analyt) wird vorgelegt\n2. Eine Lösung **bekannter Konzentration** (Titrator) wird langsam zugegeben\n3. Am **Äquivalenzpunkt** hat genau die stöchiometrische Menge reagiert\n4. Der Äquivalenzpunkt wird durch einen **Indikator** (Farbumschlag) angezeigt\n\n## Aufbau\n\n| Bestandteil          | Funktion                                           |\n| -------------------- | -------------------------------------------------- |\n| **Bürette**          | Enthält Titrator, ermöglicht genaue Volumenmessung |\n| **Erlenmeyerkolben** | Enthält Analyt (Probe)                             |\n| **Indikator**        | Zeigt Äquivalenzpunkt durch Farbwechsel an         |\n\n## Der Äquivalenzpunkt\n\nAm Äquivalenzpunkt sind **Stoffmenge Säure** und **Stoffmenge Base** im exakten stöchiometrischen Verhältnis:\n\n$$n_{Säure} \\times z_{Säure} = n_{Base} \\times z_{Base}$$\n\nwobei $z$ die Anzahl der übertragbaren H⁺ bzw. OH⁻ ist.\n\n## Typische Indikatoren\n\n| Indikator           | Farbumschlag   | pH-Bereich |\n| ------------------- | -------------- | ---------- |\n| **Phenolphthalein** | farblos → rosa | 8,2 - 10   |\n| **Methylorange**    | rot → gelb     | 3,1 - 4,4  |\n| **Bromthymolblau**  | gelb → blau    | 6,0 - 7,6  |"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Titration – Rechenbeispiel",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "52-55"
+        }
+      ],
+      "content": "# Titrationsrechnung: Schritt für Schritt\n\n## Das Schema\n\n1. **Volumen × Molarität** der Titratorlösung → **Mol Titrator**\n2. **Mol Titrator** → **Mol Analyt** (Stöchiometrie)\n3. **Mol Analyt** → **Konzentration** oder **Masse**\n\n## Beispiel: Apfelsäure-Bestimmung\n\n**Aufgabe:** Ein Apfel wird analysiert. Die enthaltene Apfelsäure (H₂C₄H₄O₅, diprotische Säure) wird mit NaOH titriert.\n\n**Gegeben:**\n- Apfelmasse: 76,80 g\n- Verbrauch NaOH: 22,9 mL einer 1,00 M Lösung\n- Reaktion: 1 Säure : 2 NaOH (weil diprotisch)\n\n### Schritt 1: Mol NaOH\n\n$$n_{NaOH} = c \\times V = 1,00\\ mol/L \\times 0,0229\\ L = 0,0229\\ mol$$\n\n### Schritt 2: Mol Säure\n\n$$n_{Säure} = 0,0229\\ mol\\ NaOH \\times \\frac{1\\ mol\\ Säure}{2\\ mol\\ NaOH} = 0,0115\\ mol$$\n\n### Schritt 3: Masse Säure\n\nMolmasse Apfelsäure: 134 g/mol\n\n$$m_{Säure} = 0,0115\\ mol \\times 134\\ g/mol = 1,54\\ g$$\n\n### Schritt 4: Massenanteil\n\n$$\\%\\ Apfelsäure = \\frac{1,54\\ g}{76,80\\ g} \\times 100\\% = 2,01\\%$$\n\n## Ergebnis\n\nDer Apfel enthält etwa **2% Apfelsäure** – typisch für säuerliche Apfelsorten!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Spektrophotometrie – Lambert-Beer-Gesetz",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-4",
+          "pages": "55-58"
+        }
+      ],
+      "content": "# Spektrophotometrie: Konzentration durch Lichtabsorption\n\nDie **Spektrophotometrie** nutzt die Lichtabsorption zur Konzentrationsbestimmung.\n\n## Das Lambert-Beer-Gesetz\n\n$$A = \\varepsilon \\times l \\times c$$\n\n| Symbol        | Bedeutung                                | Einheit       |\n| ------------- | ---------------------------------------- | ------------- |\n| $A$           | Absorption (Extinktion)                  | dimensionslos |\n| $\\varepsilon$ | Absorptionskoeffizient (stoffspezifisch) | L/(mol·cm)    |\n| $l$           | Schichtdicke (Küvettenbreite)            | cm            |\n| $c$           | Konzentration                            | mol/L         |\n\n## Wichtige Erkenntnis\n\nEs besteht eine **lineare Beziehung** zwischen Absorption und Konzentration:\n\n$$A \\propto c$$\n\nJe **höher die Konzentration**, desto **mehr Licht wird absorbiert**.\n\n## Praktische Anwendung: Kalibrierung\n\n1. **Standardlösungen** mit bekannten Konzentrationen herstellen\n2. **Absorption messen** für jede Standardlösung\n3. **Kalibriergerade** erstellen (A gegen c)\n4. **Probe messen** und Konzentration aus Gerade ablesen\n\n## Anwendungen in der Ernährungswissenschaft\n\n| Anwendung                    | Wellenlänge |\n| ---------------------------- | ----------- |\n| Proteinbestimmung (Bradford) | 595 nm      |\n| DNA/RNA-Quantifizierung      | 260 nm      |\n| Eisengehalt in Lebensmitteln | 510 nm      |\n| Vitamin A (Retinol)          | 325 nm      |\n\n> 💡 **Vorteil:** Schnelle, zerstörungsfreie Analyse mit kleinen Probenmengen!"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Titrationsaufbau",
+      "content": "# Aufbau einer Titration\n\nDas folgende Diagramm zeigt den typischen Aufbau einer Säure-Base-Titration.\n\n\n\n## Ablauf in Kurzform\n\n| Schritt | Aktion                                         |\n| ------- | ---------------------------------------------- |\n| **1**   | Analyt + Indikator in Kolben                   |\n| **2**   | Bürette mit Titrator füllen, Nullpunkt ablesen |\n| **3**   | Langsam zutropfen lassen                       |\n| **4**   | Bei Farbumschlag stoppen                       |\n| **5**   | Volumen ablesen                                |\n| **6**   | Berechnung durchführen                         |\n\n## Wichtig\n\n> ⚠️ **Präzision ist entscheidend!**\n> - Tropfenweise zugeben nahe dem Äquivalenzpunkt\n> - Volumen auf 0,05 mL genau ablesen\n> - Kolben regelmäßig schwenken",
+      "diagram": "flowchart TB\n    subgraph \"BÜRETTE\"\n        A[\"Titratorlösung<br/>(bekannte Konz.)\"]\n        B[\"↓ tropfenweise<br/>zugeben\"]\n    end\n    \n    subgraph \"ERLENMEYERKOLBEN\"\n        C[\"Analyt + Indikator<br/>(unbekannte Konz.)\"]\n    end\n    \n    subgraph \"ABLAUF\"\n        D[\"Start:<br/>Indikatorfarbe A\"]\n        E[\"Titration:<br/>Zugabe\"]\n        F[\"Äquivalenzpunkt:<br/>Farbumschlag!\"]\n        G[\"Ablesen:<br/>Verbrauchtes Volumen\"]\n    end\n    \n    A --> B --> C\n    D --> E --> F --> G\n    \n    style F fill:#ffcccc"
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Titration",
       "question": "Was passiert am Äquivalenzpunkt einer Säure-Base-Titration?",
       "options": [
-        "Die Lösung beginnt zu kochen",
-        "Säure und Base haben vollständig miteinander reagiert",
-        "Der Indikator wird farblos",
-        "Die Reaktion beginnt erst"
+        "Die Lösung gefriert",
+        "Die Konzentration wird null",
+        "Die Säure hat vollständig stöchiometrisch mit der Base reagiert",
+        "Es entsteht ein Gas"
       ],
-      "correctAnswer": "Säure und Base haben vollständig miteinander reagiert",
-      "explanation": "Am Äquivalenzpunkt ist genau so viel Base zugegeben worden, dass alle Säure neutralisiert wurde (oder umgekehrt). Die Stoffmengen sind im stöchiometrischen Verhältnis.",
+      "correctAnswer": "Die Säure hat vollständig stöchiometrisch mit der Base reagiert",
+      "hint": "Was bedeutet \"äquivalent\"?",
+      "explanation": "Am **Äquivalenzpunkt** sind die Stoffmengen von Säure und Base im exakten stöchiometrischen Verhältnis.\n\n**Beispiel:** HCl + NaOH → NaCl + H₂O\n\n- 1 mol HCl reagiert mit 1 mol NaOH\n- Am Äquivalenzpunkt: $n_{HCl} = n_{NaOH}$\n\n**Was passiert:**\n- Die Neutralisationsreaktion ist vollständig\n- Der pH springt stark (bei starker Säure/Base)\n- Der Indikator wechselt die Farbe\n\n**Wichtig:** Nach dem Äquivalenzpunkt ist ein Überschuss an Titrator vorhanden!\n",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was beschreibt das Lambert-Beer-Gesetz?",
+      "options": [
+        "Den Zusammenhang zwischen pH und pOH",
+        "Die Beziehung zwischen Lichtabsorption und Konzentration",
+        "Die Neutralisation von Säuren",
+        "Die Dichte von Gasen"
+      ],
+      "correctAnswer": "Die Beziehung zwischen Lichtabsorption und Konzentration",
+      "hint": "Was misst ein Spektrophotometer?",
+      "explanation": "Das **Lambert-Beer-Gesetz** beschreibt den linearen Zusammenhang:\n\n$$A = \\varepsilon \\times l \\times c$$\n\n**Bedeutung:**\n- Je **höher die Konzentration** (c), desto **mehr Licht wird absorbiert** (A)\n- Der Zusammenhang ist **linear** (bei nicht zu hohen Konzentrationen)\n\n**Anwendung:**\n- Kalibriergerade erstellen mit Standards\n- Unbekannte Proben messen\n- Konzentration aus der Geraden ablesen\n\nDas Gesetz hat nichts mit pH, Säure-Base-Reaktionen oder Gasen zu tun – es geht rein um **Lichtabsorption**!\n",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordnen Sie die analytischen Methoden den korrekten Anwendungen zu.",
+      "pairs": [
+        {
+          "term": "Gravimetrie",
+          "match": "Bestimmung durch Fällung und Wägen"
+        },
+        {
+          "term": "Titration",
+          "match": "Konzentrationsbestimmung durch Zugabe eines Reaktionspartners"
+        },
+        {
+          "term": "Spektrophotometrie",
+          "match": "Konzentrationsbestimmung durch Lichtabsorption"
+        },
+        {
+          "term": "Verbrennungsanalyse",
+          "match": "Bestimmung der empirischen Formel organischer Verbindungen"
+        }
+      ],
+      "hint": "Überlegen Sie, was bei jeder Methode gemessen wird: Masse, Volumen, Lichtintensität oder Verbrennungsprodukte.",
       "content": ""
     },
     {
       "type": "calculation",
-      "topic": "Titration",
-      "question": "25 mL einer Essigsäure-Lösung werden mit 0,1 M NaOH titriert.\nBis zum Äquivalenzpunkt werden 20 mL NaOH benötigt.\n\nBerechne die Konzentration der Essigsäure.\n(Reaktion: CH₃COOH + NaOH → CH₃COONa + H₂O, 1:1-Verhältnis)\n",
-      "correctAnswer": "0.08",
+      "question": "Berechnen Sie die Konzentration aus Titrationsdaten.",
+      "task": "**Titrationsanalyse**\n\n25,0 mL einer Essigsäure-Lösung (CH₃COOH, monoprotisch) werden mit 0,1 M NaOH titriert.\n\nBis zum Farbumschlag werden **18,5 mL NaOH** verbraucht.\n\nReaktion: CH₃COOH + NaOH → CH₃COONa + H₂O (1:1)\n\n**Berechnen Sie die Konzentration der Essigsäure in mol/L.**\n",
+      "correctAnswer": "0,074",
       "unit": "mol/L",
-      "tolerance": 0.005,
-      "hint": "Am Äquivalenzpunkt: n(Säure) = n(Base). Berechne n(NaOH), dann c(Säure) = n/V",
-      "solution": "**Schritt 1: Stoffmenge NaOH berechnen**\n$$n(\\text{NaOH}) = c \\times V = 0{,}1\\text{ mol/L} \\times 0{,}020\\text{ L} = 0{,}002\\text{ mol}$$\n\n**Schritt 2: Stoffmenge Essigsäure (1:1-Verhältnis)**\n$$n(\\text{CH}_3\\text{COOH}) = 0{,}002\\text{ mol}$$\n\n**Schritt 3: Konzentration berechnen**\n$$c = \\frac{n}{V} = \\frac{0{,}002\\text{ mol}}{0{,}025\\text{ L}} = 0{,}08\\text{ mol/L}$$\n",
+      "solution": "**Schritt 1: Mol NaOH berechnen**\n\n$$n_{NaOH} = c \\times V = 0,1\\ mol/L \\times 0,0185\\ L = 0,00185\\ mol$$\n\n**Schritt 2: Mol Essigsäure (1:1 Verhältnis)**\n\n$$n_{CH_3COOH} = n_{NaOH} = 0,00185\\ mol$$\n\n**Schritt 3: Konzentration berechnen**\n\n$$c_{CH_3COOH} = \\frac{n}{V} = \\frac{0,00185\\ mol}{0,025\\ L} = 0,074\\ mol/L$$\n\n**Ergebnis:** Die Essigsäure-Konzentration beträgt **0,074 M** (oder 74 mM).\n",
+      "hint": "Berechnen Sie zuerst die Stoffmenge NaOH (n = c × V), dann nutzen Sie das 1:1 Verhältnis, dann c = n/V für die Essigsäure.",
       "content": ""
     },
     {
-      "type": "learning-content",
-      "topic": "Spektrophotometrie",
-      "sourceRefs": [
-        {
-          "sourceId": "kapitel-4",
-          "pages": "35-37"
-        }
-      ],
-      "content": "## Spektrophotometrie und das Lambert-Beer-Gesetz\n\nDie Spektrophotometrie nutzt Lichtabsorption zur Konzentrationsbestimmung.\n\n### Das Lambert-Beer-Gesetz\n\n$$A = \\varepsilon \\times l \\times c$$\n\n| Symbol | Bedeutung                      | Einheit       |\n| ------ | ------------------------------ | ------------- |\n| A      | Absorption (Extinktion)        | dimensionslos |\n| ε      | molarer Extinktionskoeffizient | L/(mol·cm)    |\n| l      | Schichtdicke (Küvettenlänge)   | cm            |\n| c      | Konzentration                  | mol/L         |\n\n### Anwendungen\n\n- **Proteinbestimmung** (z.B. Bradford-Assay)\n- **Enzymaktivität** (Reaktionsgeschwindigkeit über Zeit)\n- **Lebensmittelanalyse** (Farbstoffe, Vitamine)\n\n### Wichtig\n\n- Die Absorption ist **proportional zur Konzentration**\n- Gilt nur im linearen Bereich (nicht zu hohe Konzentrationen)\n- Jeder Stoff hat bei jeder Wellenlänge einen spezifischen ε-Wert"
-    },
-    {
-      "type": "matching",
-      "topic": "Analysemethoden",
-      "question": "Ordne die Analysemethoden ihren Anwendungen zu:",
-      "pairs": [
-        {
-          "left": "Titration",
-          "right": "Konzentrationsbestimmung durch Volumenverbrauch"
-        },
-        {
-          "left": "Spektrophotometrie",
-          "right": "Konzentrationsbestimmung durch Lichtabsorption"
-        },
-        {
-          "left": "Gravimetrie",
-          "right": "Bestimmung durch Fällung und Wägung"
-        },
-        {
-          "left": "Verbrennungsanalyse",
-          "right": "Elementaranalyse durch CO₂- und H₂O-Messung"
-        }
-      ],
-      "content": ""
+      "type": "youtube-video",
+      "topic": "Titration erklärt",
+      "url": "https://www.youtube.com/watch?v=g_v_7v2Sba8",
+      "content": "# Video: Säure-Base-Titration\n\nDieses Video erklärt den Ablauf einer Säure-Base-Titration und die zugehörigen Berechnungen.\n\n**Inhalte:**\n- Aufbau und Durchführung einer Titration\n- Was passiert am Äquivalenzpunkt?\n- Berechnung der unbekannten Konzentration\n- Praktische Tipps für genaue Ergebnisse"
     },
     {
       "type": "self-assessment",
-      "topic": "Selbsttest",
-      "question": "Bist du bereit für den Vorlesungs-Test?",
+      "topic": "Bereitschaftstest",
+      "question": "Sind Sie bereit für den Vorlesungstest zu Gleichungen und Stöchiometrie?",
       "checkpoints": [
-        "Ich kann das Gesetz der Massenerhaltung erklären",
+        "Ich kann das Massenerhaltungsgesetz erklären",
         "Ich kann den 4-Schritte-Plan für stöchiometrische Berechnungen anwenden",
-        "Ich verstehe den Unterschied zwischen theoretischer und tatsächlicher Ausbeute",
+        "Ich kann theoretische und prozentuale Ausbeute berechnen",
         "Ich kann den begrenzenden Reaktanten identifizieren",
-        "Ich verstehe, warum der BR die Produktmenge limitiert",
-        "Ich kann Molarität (c = n/V) berechnen",
-        "Ich kann die Verdünnungsgleichung (c₁V₁ = c₂V₂) anwenden",
-        "Ich weiß, was der pH-Wert bedeutet und kann ihn berechnen",
+        "Ich kann empirische Formeln aus Verbrennungsdaten bestimmen",
+        "Ich kann mit Molarität rechnen und Verdünnungen berechnen",
+        "Ich kann pH-Werte berechnen und interpretieren",
         "Ich verstehe das Prinzip der Titration",
-        "Ich kenne das Lambert-Beer-Gesetz"
+        "Ich verstehe das Lambert-Beer-Gesetz"
       ],
+      "successMessage": "🎉 Ausgezeichnet! Sie sind gut auf den Test vorbereitet.\n\nDenken Sie daran: Der Test enthält anspruchsvolle Multiple-Choice-Fragen mit mehreren richtigen Antworten. Lesen Sie jede Option sorgfältig!\n",
+      "reviewHint": "📚 Bei Unsicherheiten empfehlen wir:\n\n- **Stöchiometrie:** Abschnitt zum 4-Schritte-Plan wiederholen\n- **Ausbeute/BR:** Die Beispielrechnungen nochmals durcharbeiten\n- **Lösungen:** Die Verdünnungsformel üben\n- **pH-Wert:** Berechnungsbeispiele wiederholen\n- **Titration:** Das Prinzip und die Rechenmethode verstehen\n",
       "content": ""
     }
   ],
   "quiz": [
     {
       "type": "multiple-choice-multiple",
-      "question": "Welche Aussagen zur Stöchiometrie und zum Gesetz der Massenerhaltung sind korrekt?\n",
+      "question": "Welche Aussagen zur Stöchiometrie und zum Massenerhaltungsgesetz sind korrekt?\n",
       "options": [
-        "Die Koeffizienten in einer chemischen Gleichung geben das Molverhältnis an",
-        "Die Gesamtmasse der Produkte muss der Gesamtmasse der Edukte entsprechen",
-        "Bei einer Verbrennung geht Masse verloren, weil Gase entstehen",
-        "Der stöchiometrische Faktor wird aus den Koeffizienten berechnet",
-        "In einer ausgeglichenen Gleichung muss die Anzahl der Atome jedes Elements gleich sein"
+        "Bei chemischen Reaktionen bleibt die Gesamtmasse der Edukte gleich der Gesamtmasse der Produkte",
+        "Die Koeffizienten in einer Reaktionsgleichung geben das Mol-Verhältnis der Reaktionspartner an",
+        "Die Anzahl der Atome jedes Elements muss auf beiden Seiten der Gleichung gleich sein",
+        "Bei chemischen Reaktionen können neue Atome entstehen",
+        "Der stöchiometrische Faktor errechnet sich aus den Indizes der chemischen Formeln"
       ],
       "correctAnswers": [
-        "Die Koeffizienten in einer chemischen Gleichung geben das Molverhältnis an",
-        "Die Gesamtmasse der Produkte muss der Gesamtmasse der Edukte entsprechen",
-        "Der stöchiometrische Faktor wird aus den Koeffizienten berechnet",
-        "In einer ausgeglichenen Gleichung muss die Anzahl der Atome jedes Elements gleich sein"
+        "Bei chemischen Reaktionen bleibt die Gesamtmasse der Edukte gleich der Gesamtmasse der Produkte",
+        "Die Koeffizienten in einer Reaktionsgleichung geben das Mol-Verhältnis der Reaktionspartner an",
+        "Die Anzahl der Atome jedes Elements muss auf beiden Seiten der Gleichung gleich sein"
       ],
-      "explanation": "Bei Verbrennungen geht KEINE Masse verloren - die Gase haben Masse! Sie entweichen nur aus dem Reaktionsgefäß, weshalb es so erscheint."
+      "explanation": "**Erklärung:** Das Massenerhaltungsgesetz besagt, dass Materie bei chemischen Reaktionen weder erschaffen noch vernichtet werden kann. Die Koeffizienten (nicht die Indizes!) geben das Mol-Verhältnis an und daraus leitet sich der stöchiometrische Faktor ab."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Bei der Reaktion 2 H₂ + O₂ → 2 H₂O reagieren 8 g H₂ (M = 2 g/mol) mit ausreichend Sauerstoff.\n\nWelche Aussagen sind korrekt?\n",
+      "question": "Beim 4-Schritte-Plan für stöchiometrische Berechnungen sind welche Aussagen korrekt?\n",
       "options": [
-        "Es sind 4 mol H₂ vorhanden",
-        "Es werden 2 mol O₂ benötigt",
-        "Es entstehen 4 mol H₂O",
-        "Die Produktmasse beträgt 72 g",
-        "Der stöchiometrische Faktor H₂O/H₂ beträgt 2"
+        "Der erste Schritt ist die Umrechnung von Masse in Stoffmenge mittels der Molmasse",
+        "Der stöchiometrische Faktor ergibt sich aus dem Verhältnis der Koeffizienten in der Reaktionsgleichung",
+        "Die Umrechnung von Mol Reaktant zu Mol Produkt erfolgt direkt ohne Verwendung der Molmasse",
+        "Man kann direkt von Gramm Edukt zu Gramm Produkt umrechnen ohne den Umweg über Mol",
+        "Im letzten Schritt wird die Stoffmenge des Produkts mit seiner Molmasse multipliziert"
       ],
       "correctAnswers": [
-        "Es sind 4 mol H₂ vorhanden",
-        "Es werden 2 mol O₂ benötigt",
-        "Es entstehen 4 mol H₂O",
-        "Die Produktmasse beträgt 72 g"
+        "Der erste Schritt ist die Umrechnung von Masse in Stoffmenge mittels der Molmasse",
+        "Der stöchiometrische Faktor ergibt sich aus dem Verhältnis der Koeffizienten in der Reaktionsgleichung",
+        "Die Umrechnung von Mol Reaktant zu Mol Produkt erfolgt direkt ohne Verwendung der Molmasse",
+        "Im letzten Schritt wird die Stoffmenge des Produkts mit seiner Molmasse multipliziert"
       ],
-      "explanation": "n(H₂) = 8 g / 2 g/mol = 4 mol\nn(O₂) = 4 mol × (1/2) = 2 mol (Faktor aus Gleichung)\nn(H₂O) = 4 mol × (2/2) = 4 mol\nm(H₂O) = 4 mol × 18 g/mol = 72 g\nDer Faktor H₂O/H₂ = 2/2 = 1, nicht 2!\n"
+      "explanation": "**Erklärung:** Der 4-Schritte-Plan läuft immer über die Stoffmenge (Mol): Masse → Mol → Mol → Masse. Eine direkte Umrechnung von Gramm zu Gramm ohne den Mol-Umweg ist nicht möglich, da die Molmassen von Edukt und Produkt unterschiedlich sind."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Bei einer Synthese wurden theoretisch 150 g Produkt erwartet. Tatsächlich wurden 120 g isoliert.\n\nWelche Aussagen sind korrekt?\n",
+      "question": "Bei einer chemischen Synthese werden theoretisch 150 g Produkt erwartet, aber nur 105 g isoliert. Welche Aussagen zur Ausbeute sind korrekt?\n",
       "options": [
-        "Die prozentuale Ausbeute beträgt 80%",
-        "Die theoretische Ausbeute ist immer größer oder gleich der tatsächlichen",
-        "Eine Ausbeute über 100% ist bei korrekter Messung unmöglich",
-        "Mögliche Gründe für geringere Ausbeute sind Nebenreaktionen oder Verluste",
-        "Die Massenerhaltung wurde verletzt"
+        "Die prozentuale Ausbeute beträgt 70%",
+        "Die tatsächliche Ausbeute ist immer kleiner oder gleich der theoretischen Ausbeute",
+        "Mögliche Gründe für eine verminderte Ausbeute sind Nebenreaktionen und Verluste bei der Aufarbeitung",
+        "Die prozentuale Ausbeute beträgt 143%",
+        "Bei einer Ausbeute von über 100% liegt ein Messfehler oder eine Verunreinigung vor"
       ],
       "correctAnswers": [
-        "Die prozentuale Ausbeute beträgt 80%",
-        "Die theoretische Ausbeute ist immer größer oder gleich der tatsächlichen",
-        "Eine Ausbeute über 100% ist bei korrekter Messung unmöglich",
-        "Mögliche Gründe für geringere Ausbeute sind Nebenreaktionen oder Verluste"
+        "Die prozentuale Ausbeute beträgt 70%",
+        "Die tatsächliche Ausbeute ist immer kleiner oder gleich der theoretischen Ausbeute",
+        "Mögliche Gründe für eine verminderte Ausbeute sind Nebenreaktionen und Verluste bei der Aufarbeitung",
+        "Bei einer Ausbeute von über 100% liegt ein Messfehler oder eine Verunreinigung vor"
       ],
-      "explanation": "% Ausbeute = 120/150 × 100 = 80%. Die Massenerhaltung wurde NICHT verletzt - die \"fehlende\" Masse ist in Nebenprodukten, nicht gereinigtem Produkt oder Verlusten."
+      "explanation": "**Erklärung:** Die prozentuale Ausbeute berechnet sich als (105/150) × 100% = 70%. Eine Ausbeute über 100% ist physikalisch unmöglich und deutet auf Fehler hin."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Bei der Reaktion A + 2B → C hast du 1 mol A und 1 mol B.\n\nWelche Aussagen zum begrenzenden Reaktanten sind korrekt?\n",
+      "question": "Zur Reaktion 2 Al + 3 Cl₂ → Al₂Cl₆ werden 54 g Al (M = 27 g/mol) und 142 g Cl₂ (M = 71 g/mol) eingesetzt. Welche Aussagen sind korrekt?\n",
       "options": [
-        "B ist der begrenzende Reaktant",
-        "A ist im Überschuss vorhanden",
-        "Es können maximal 0,5 mol C entstehen",
-        "Nach der Reaktion bleibt 0,5 mol A übrig",
-        "Das theoretische Verhältnis A:B ist 1:2"
+        "Die Stoffmenge von Al beträgt 2,0 mol",
+        "Die Stoffmenge von Cl₂ beträgt 2,0 mol",
+        "Das theoretische Verhältnis Cl₂/Al beträgt 1,5",
+        "Cl₂ ist der begrenzende Reaktant",
+        "Al ist der begrenzende Reaktant"
       ],
       "correctAnswers": [
-        "B ist der begrenzende Reaktant",
-        "A ist im Überschuss vorhanden",
-        "Es können maximal 0,5 mol C entstehen",
-        "Nach der Reaktion bleibt 0,5 mol A übrig",
-        "Das theoretische Verhältnis A:B ist 1:2"
+        "Die Stoffmenge von Al beträgt 2,0 mol",
+        "Die Stoffmenge von Cl₂ beträgt 2,0 mol",
+        "Das theoretische Verhältnis Cl₂/Al beträgt 1,5",
+        "Cl₂ ist der begrenzende Reaktant"
       ],
-      "explanation": "Für 1 mol A bräuchte man 2 mol B. Vorhanden: 1 mol B. → B ist limitierend.\nMit 1 mol B entstehen 0,5 mol C (Faktor 1/2).\nVerbraucht werden 0,5 mol A → 0,5 mol A bleibt übrig.\n"
+      "explanation": "**Erklärung:** n(Al) = 54/27 = 2,0 mol; n(Cl₂) = 142/71 = 2,0 mol. Theoretisches Verhältnis: 3/2 = 1,5. Tatsächliches Verhältnis: 2,0/2,0 = 1,0. Da 1,0 < 1,5, ist verhältnismäßig zu wenig Cl₂ vorhanden → Cl₂ ist der begrenzende Reaktant."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Welche Aussagen zur Molarität und Verdünnung sind korrekt?\n",
+      "question": "Bei der Reaktion N₂ + 3 H₂ → 2 NH₃ werden 28 g N₂ und 12 g H₂ eingesetzt. Welche Aussagen sind korrekt? (M(N₂) = 28 g/mol, M(H₂) = 2 g/mol, M(NH₃) = 17 g/mol)\n",
       "options": [
-        "Die Molarität hat die Einheit mol/L",
-        "Bei Verdünnung bleibt die Stoffmenge konstant",
-        "c₁ × V₁ = c₂ × V₂ ist die Verdünnungsgleichung",
-        "Beim Verdünnen wird die Konzentration größer",
-        "Eine 1 M Lösung enthält 1 mol Stoff pro Liter"
+        "Es liegen 1 mol N₂ und 6 mol H₂ vor",
+        "Das theoretisch benötigte Verhältnis H₂/N₂ beträgt 3",
+        "H₂ ist der Überschussreaktant",
+        "Es können maximal 2 mol NH₃ entstehen",
+        "Es bleiben 3 mol H₂ als Überschuss zurück"
       ],
       "correctAnswers": [
-        "Die Molarität hat die Einheit mol/L",
-        "Bei Verdünnung bleibt die Stoffmenge konstant",
-        "c₁ × V₁ = c₂ × V₂ ist die Verdünnungsgleichung",
-        "Eine 1 M Lösung enthält 1 mol Stoff pro Liter"
+        "Es liegen 1 mol N₂ und 6 mol H₂ vor",
+        "Das theoretisch benötigte Verhältnis H₂/N₂ beträgt 3",
+        "H₂ ist der Überschussreaktant",
+        "Es können maximal 2 mol NH₃ entstehen",
+        "Es bleiben 3 mol H₂ als Überschuss zurück"
       ],
-      "explanation": "Beim Verdünnen wird die Konzentration KLEINER, nicht größer - man fügt Lösungsmittel hinzu."
+      "explanation": "**Erklärung:** n(N₂) = 1 mol, n(H₂) = 6 mol. Tatsächliches Verhältnis: 6/1 = 6 > 3 (theoretisch). Also ist N₂ der begrenzende Reaktant und H₂ im Überschuss. Aus 1 mol N₂ entstehen 2 mol NH₃. Verbraucht werden 3 mol H₂, übrig bleiben 6 - 3 = 3 mol H₂."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Welche Aussagen zum pH-Wert sind korrekt?\n",
+      "question": "Bei der Verbrennungsanalyse einer organischen Verbindung CₓHᵧ entstehen aus 0,460 g Probe 1,32 g CO₂ und 0,720 g H₂O. Welche Aussagen sind korrekt? (M(C) = 12 g/mol, M(H) = 1 g/mol, M(CO₂) = 44 g/mol, M(H₂O) = 18 g/mol)\n",
       "options": [
-        "pH = -log[H₃O⁺]",
-        "pH 7 bedeutet neutrale Lösung",
-        "pH 2 ist saurer als pH 4",
-        "Ein pH-Unterschied von 1 bedeutet 10-fache Konzentrationsänderung",
-        "Basische Lösungen haben pH-Werte unter 7"
+        "Die Stoffmenge an CO₂ beträgt 0,03 mol",
+        "Die Probe enthält 0,03 mol Kohlenstoff",
+        "Die Stoffmenge an Wasserstoff in der Probe beträgt 0,08 mol",
+        "Das Verhältnis C:H beträgt 3:8",
+        "Die empirische Formel lautet C₃H₈"
       ],
       "correctAnswers": [
-        "pH = -log[H₃O⁺]",
-        "pH 7 bedeutet neutrale Lösung",
-        "pH 2 ist saurer als pH 4",
-        "Ein pH-Unterschied von 1 bedeutet 10-fache Konzentrationsänderung"
+        "Die Stoffmenge an CO₂ beträgt 0,03 mol",
+        "Die Probe enthält 0,03 mol Kohlenstoff",
+        "Die Stoffmenge an Wasserstoff in der Probe beträgt 0,08 mol",
+        "Das Verhältnis C:H beträgt 3:8",
+        "Die empirische Formel lautet C₃H₈"
       ],
-      "explanation": "Basische Lösungen haben pH-Werte ÜBER 7, nicht unter 7."
+      "explanation": "**Erklärung:** n(CO₂) = 1,32/44 = 0,03 mol → n(C) = 0,03 mol. n(H₂O) = 0,720/18 = 0,04 mol → n(H) = 2 × 0,04 = 0,08 mol. Verhältnis C:H = 0,03:0,08 = 3:8. Empirische Formel: C₃H₈ (Propan)."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Bei einer Titration von 50 mL HCl mit 0,2 M NaOH werden 25 mL bis zum Äquivalenzpunkt benötigt.\n(Reaktion: HCl + NaOH → NaCl + H₂O)\n\nWelche Aussagen sind korrekt?\n",
+      "question": "Zur Herstellung von 250 mL einer 0,2 M Glucoselösung (M = 180 g/mol) sind welche Aussagen korrekt?\n",
       "options": [
-        "Die Stoffmenge NaOH am Äquivalenzpunkt beträgt 0,005 mol",
-        "Die Konzentration der HCl beträgt 0,1 mol/L",
-        "Am Äquivalenzpunkt sind gleiche Stoffmengen Säure und Base reagiert",
-        "Der Indikator zeigt den Äquivalenzpunkt an",
-        "Es wurden insgesamt 0,01 mol HCl neutralisiert"
+        "Die benötigte Stoffmenge beträgt 0,05 mol",
+        "Die benötigte Masse beträgt 9,0 g",
+        "Man wiegt die Glucose ein und füllt mit Wasser auf 250 mL auf",
+        "Die Molarität gibt die Stoffmenge pro Liter Lösungsmittel an",
+        "Die Einheit der Molarität ist mol/L"
       ],
       "correctAnswers": [
-        "Die Stoffmenge NaOH am Äquivalenzpunkt beträgt 0,005 mol",
-        "Die Konzentration der HCl beträgt 0,1 mol/L",
-        "Am Äquivalenzpunkt sind gleiche Stoffmengen Säure und Base reagiert",
-        "Der Indikator zeigt den Äquivalenzpunkt an"
+        "Die benötigte Stoffmenge beträgt 0,05 mol",
+        "Die benötigte Masse beträgt 9,0 g",
+        "Man wiegt die Glucose ein und füllt mit Wasser auf 250 mL auf",
+        "Die Einheit der Molarität ist mol/L"
       ],
-      "explanation": "n(NaOH) = 0,2 M × 0,025 L = 0,005 mol\nBei 1:1-Reaktion: n(HCl) = 0,005 mol\nc(HCl) = 0,005 mol / 0,050 L = 0,1 mol/L\nEs wurden 0,005 mol HCl neutralisiert, nicht 0,01 mol.\n"
+      "explanation": "**Erklärung:** n = c × V = 0,2 mol/L × 0,25 L = 0,05 mol. m = n × M = 0,05 × 180 = 9,0 g. Die Molarität bezieht sich auf das Volumen der Lösung (nicht des Lösungsmittels!)."
     },
     {
       "type": "multiple-choice-multiple",
-      "question": "Welche Aussagen zum Lambert-Beer-Gesetz (A = ε × l × c) sind korrekt?\n",
+      "question": "Bei der Verdünnung von 25 mL einer 4,0 M HCl-Lösung auf 500 mL Endvolumen sind welche Aussagen korrekt?\n",
       "options": [
-        "A steht für Absorption (Extinktion)",
-        "Die Absorption ist proportional zur Konzentration",
-        "ε ist der molare Extinktionskoeffizient",
-        "Das Gesetz gilt nur für feste Proben",
-        "l ist die Schichtdicke der Küvette"
+        "Die Stoffmenge an HCl bleibt bei der Verdünnung konstant",
+        "Die neue Konzentration beträgt 0,2 M",
+        "Es gilt die Formel c₁V₁ = c₂V₂",
+        "Die Konzentration wird um den Faktor 20 verdünnt",
+        "Es müssen 475 mL Wasser zugegeben werden"
       ],
       "correctAnswers": [
-        "A steht für Absorption (Extinktion)",
-        "Die Absorption ist proportional zur Konzentration",
-        "ε ist der molare Extinktionskoeffizient",
-        "l ist die Schichtdicke der Küvette"
+        "Die Stoffmenge an HCl bleibt bei der Verdünnung konstant",
+        "Die neue Konzentration beträgt 0,2 M",
+        "Es gilt die Formel c₁V₁ = c₂V₂",
+        "Die Konzentration wird um den Faktor 20 verdünnt",
+        "Es müssen 475 mL Wasser zugegeben werden"
       ],
-      "explanation": "Das Lambert-Beer-Gesetz gilt für Lösungen und Gase, nicht für feste Proben (diese streuen das Licht zu stark)."
+      "explanation": "**Erklärung:** c₂ = (c₁V₁)/V₂ = (4,0 × 25)/500 = 0,2 M. Verdünnungsfaktor: 4,0/0,2 = 20. Wasserzugabe: 500 - 25 = 475 mL. Bei der Verdünnung ändert sich nur das Volumen, nicht die Stoffmenge."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Zum pH-Wert und der Konzentration von H₃O⁺-Ionen sind welche Aussagen korrekt?\n",
+      "options": [
+        "Der pH-Wert ist definiert als pH = -log[H₃O⁺]",
+        "Eine Lösung mit pH 2 ist 100-mal saurer als eine mit pH 4",
+        "Bei pH 7 beträgt die H₃O⁺-Konzentration 10⁻⁷ mol/L",
+        "Ein steigender pH-Wert bedeutet eine steigende H₃O⁺-Konzentration",
+        "Die Summe von pH und pOH beträgt bei 25°C immer 14"
+      ],
+      "correctAnswers": [
+        "Der pH-Wert ist definiert als pH = -log[H₃O⁺]",
+        "Eine Lösung mit pH 2 ist 100-mal saurer als eine mit pH 4",
+        "Bei pH 7 beträgt die H₃O⁺-Konzentration 10⁻⁷ mol/L",
+        "Die Summe von pH und pOH beträgt bei 25°C immer 14"
+      ],
+      "explanation": "**Erklärung:** Der pH-Wert ist logarithmisch: Eine Änderung um 2 Einheiten bedeutet Faktor 100. Ein steigender pH bedeutet eine sinkende H₃O⁺-Konzentration (nicht steigend!). pH + pOH = 14 bei 25°C."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Eine NaOH-Lösung wird hergestellt, indem 0,80 g NaOH in Wasser gelöst und auf 500 mL aufgefüllt werden. (M(NaOH) = 40 g/mol) Welche Aussagen sind korrekt?\n",
+      "options": [
+        "Die Stoffmenge an NaOH beträgt 0,02 mol",
+        "Die OH⁻-Konzentration beträgt 0,04 mol/L",
+        "Der pOH-Wert beträgt etwa 1,4",
+        "Der pH-Wert beträgt etwa 12,6",
+        "Die Lösung ist sauer"
+      ],
+      "correctAnswers": [
+        "Die Stoffmenge an NaOH beträgt 0,02 mol",
+        "Die OH⁻-Konzentration beträgt 0,04 mol/L",
+        "Der pOH-Wert beträgt etwa 1,4",
+        "Der pH-Wert beträgt etwa 12,6"
+      ],
+      "explanation": "**Erklärung:** n = 0,80/40 = 0,02 mol. c = 0,02/0,5 = 0,04 M. pOH = -log(0,04) ≈ 1,4. pH = 14 - 1,4 = 12,6. Die Lösung ist basisch (pH > 7), nicht sauer."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Bei einer Säure-Base-Titration werden 20,0 mL einer HCl-Lösung unbekannter Konzentration mit 0,1 M NaOH titriert. Der Farbumschlag tritt nach Zugabe von 15,0 mL NaOH auf. Welche Aussagen sind korrekt?\n",
+      "options": [
+        "Am Äquivalenzpunkt haben Säure und Base stöchiometrisch vollständig reagiert",
+        "Die Stoffmenge an NaOH am Äquivalenzpunkt beträgt 1,5 mmol",
+        "Die Stoffmenge an HCl beträgt ebenfalls 1,5 mmol (1:1 Reaktion)",
+        "Die Konzentration der HCl-Lösung beträgt 0,075 M",
+        "Der Indikator zeigt an, wann die Säure im Überschuss ist"
+      ],
+      "correctAnswers": [
+        "Am Äquivalenzpunkt haben Säure und Base stöchiometrisch vollständig reagiert",
+        "Die Stoffmenge an NaOH am Äquivalenzpunkt beträgt 1,5 mmol",
+        "Die Stoffmenge an HCl beträgt ebenfalls 1,5 mmol (1:1 Reaktion)",
+        "Die Konzentration der HCl-Lösung beträgt 0,075 M"
+      ],
+      "explanation": "**Erklärung:** n(NaOH) = 0,1 × 0,015 = 0,0015 mol = 1,5 mmol. n(HCl) = 1,5 mmol (1:1). c(HCl) = 1,5/20 = 0,075 M. Der Indikator zeigt den Äquivalenzpunkt, nicht den Säureüberschuss."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Zum Lambert-Beer-Gesetz A = ε × l × c sind welche Aussagen korrekt?\n",
+      "options": [
+        "Die Absorption A ist direkt proportional zur Konzentration c",
+        "ε ist der stoffspezifische Extinktionskoeffizient",
+        "l bezeichnet die Schichtdicke der Küvette",
+        "Eine Verdopplung der Konzentration führt zu einer Verdopplung der Absorption",
+        "Die Absorption nimmt bei höherer Konzentration ab"
+      ],
+      "correctAnswers": [
+        "Die Absorption A ist direkt proportional zur Konzentration c",
+        "ε ist der stoffspezifische Extinktionskoeffizient",
+        "l bezeichnet die Schichtdicke der Küvette",
+        "Eine Verdopplung der Konzentration führt zu einer Verdopplung der Absorption"
+      ],
+      "explanation": "**Erklärung:** Das Lambert-Beer-Gesetz beschreibt den linearen Zusammenhang zwischen Absorption und Konzentration. Bei höherer Konzentration steigt die Absorption (mehr Licht wird absorbiert), sie nimmt nicht ab."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Im Labor sollen Sie eine Proteinlösung analysieren. Welche Aussagen zu den analytischen Methoden sind korrekt?\n",
+      "options": [
+        "Die Spektrophotometrie eignet sich zur schnellen Konzentrationsbestimmung",
+        "Für die Bradford-Methode wird die Absorption bei 595 nm gemessen",
+        "Eine Kalibriergerade ermöglicht die Berechnung unbekannter Konzentrationen",
+        "Titration wäre für die Proteinbestimmung die Methode der Wahl",
+        "Das Lambert-Beer-Gesetz gilt nur bei nicht zu hohen Konzentrationen"
+      ],
+      "correctAnswers": [
+        "Die Spektrophotometrie eignet sich zur schnellen Konzentrationsbestimmung",
+        "Für die Bradford-Methode wird die Absorption bei 595 nm gemessen",
+        "Eine Kalibriergerade ermöglicht die Berechnung unbekannter Konzentrationen",
+        "Das Lambert-Beer-Gesetz gilt nur bei nicht zu hohen Konzentrationen"
+      ],
+      "explanation": "**Erklärung:** Proteinbestimmung erfolgt typischerweise spektrophotometrisch (Bradford, BCA). Eine Titration wäre nicht geeignet. Das Lambert-Beer-Gesetz zeigt bei sehr hohen Konzentrationen Abweichungen von der Linearität."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Bei der Zellatmung wird Glucose (C₆H₁₂O₆, M = 180 g/mol) zu CO₂ und H₂O oxidiert: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O. Welche Aussagen sind korrekt?\n",
+      "options": [
+        "Pro Mol Glucose werden 6 Mol Sauerstoff verbraucht",
+        "Aus 18 g Glucose entstehen 26,4 g CO₂",
+        "Der begrenzende Faktor im Körper ist normalerweise die Glucose, nicht der Sauerstoff",
+        "Das Mol-Verhältnis Glucose : CO₂ beträgt 1:6",
+        "Aus 360 g Glucose entstehen 12 Mol CO₂"
+      ],
+      "correctAnswers": [
+        "Pro Mol Glucose werden 6 Mol Sauerstoff verbraucht",
+        "Aus 18 g Glucose entstehen 26,4 g CO₂",
+        "Das Mol-Verhältnis Glucose : CO₂ beträgt 1:6"
+      ],
+      "explanation": "**Erklärung:** 18 g Glucose = 0,1 mol → 0,6 mol CO₂ = 26,4 g. 360 g = 2 mol Glucose → 12 mol CO₂ (nicht 12 Mol aus dem Rechenweg). Im Körper ist O₂ normalerweise nicht limitierend (Atmung). Glucose ist oft der begrenzende Faktor bei Nahrungsmangel."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "In der Lebensmittelindustrie wird häufig mit Säuren und Basen gearbeitet. Welche Aussagen sind korrekt?\n",
+      "options": [
+        "Ein niedriger pH-Wert hemmt das Bakterienwachstum und dient der Konservierung",
+        "Zur pH-Einstellung von Lebensmitteln können Titrationsmethoden zur Qualitätskontrolle eingesetzt werden",
+        "Bei der Käseherstellung ist die Säuerung (Senkung des pH) ein wichtiger Prozessschritt",
+        "Die Molarität von Lebensmittelzusätzen ist für die Dosierung irrelevant",
+        "Spektrophotometrie kann zur Überwachung von Farbänderungen bei pH-Änderungen eingesetzt werden"
+      ],
+      "correctAnswers": [
+        "Ein niedriger pH-Wert hemmt das Bakterienwachstum und dient der Konservierung",
+        "Zur pH-Einstellung von Lebensmitteln können Titrationsmethoden zur Qualitätskontrolle eingesetzt werden",
+        "Bei der Käseherstellung ist die Säuerung (Senkung des pH) ein wichtiger Prozessschritt",
+        "Spektrophotometrie kann zur Überwachung von Farbänderungen bei pH-Änderungen eingesetzt werden"
+      ],
+      "explanation": "**Erklärung:** Säuerung ist ein wichtiges Konservierungsverfahren. Titration wird in der Qualitätskontrolle eingesetzt. Die Molarität ist sehr relevant für die präzise Dosierung von Zusatzstoffen (nicht irrelevant!)."
     }
   ],
-  "generatedAt": "2026-01-13T09:03:56.387Z"
+  "generatedAt": "2026-01-13T12:44:00.000Z"
 }

@@ -171,6 +171,16 @@ function createLectureBundle(lectureDir, moduleId, lectureId) {
         content: body || ''
       };
 
+      // Extract mermaid diagram code if present
+      if (frontmatter.type === 'mermaid-diagram' && body) {
+        const mermaidMatch = body.match(/```mermaid\n([\s\S]*?)\n```/);
+        if (mermaidMatch) {
+          item.diagram = mermaidMatch[1].trim();
+          // Keep content without the mermaid block for additional text
+          item.content = body.replace(/```mermaid\n[\s\S]*?\n```/, '').trim();
+        }
+      }
+
       // Parse sourceRefs if present
       if (frontmatter.sourceRefs) {
         item.sourceRefs = frontmatter.sourceRefs;

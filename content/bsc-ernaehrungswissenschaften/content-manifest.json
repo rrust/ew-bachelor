@@ -1,9 +1,9 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-13T09:03:56.352Z",
+  "generatedAt": "2026-01-13T12:43:59.965Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
-      "checksum": "16293e2a",
+      "checksum": "8793fcde",
       "sizeKB": 13,
       "itemCount": 14,
       "quizCount": 5,
@@ -33,7 +33,7 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/01-materie-messen": {
-      "checksum": "95395d90",
+      "checksum": "376004a3",
       "sizeKB": 61.6,
       "itemCount": 42,
       "quizCount": 12,
@@ -43,7 +43,7 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/02-atome-formeln": {
-      "checksum": "02fba436",
+      "checksum": "2af50b43",
       "sizeKB": 75.7,
       "itemCount": 55,
       "quizCount": 15,
@@ -53,7 +53,7 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/03-chemische-reaktionen": {
-      "checksum": "b7f9565d",
+      "checksum": "b7d3cd10",
       "sizeKB": 83.2,
       "itemCount": 57,
       "quizCount": 15,
@@ -63,17 +63,17 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/04-gleichungen-stoechiometrie": {
-      "checksum": "9c4d758d",
-      "sizeKB": 34.9,
-      "itemCount": 30,
-      "quizCount": 8,
+      "checksum": "d8d6909b",
+      "sizeKB": 81.3,
+      "itemCount": 55,
+      "quizCount": 15,
       "topic": "Gleichungen und Stöchiometrie",
       "description": "Stöchiometrische Berechnungen, Ausbeute, begrenzende Reaktanten, Molarität, pH-Wert und Titration.",
       "estimatedTime": 90,
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
-      "checksum": "3708da63",
+      "checksum": "62db00ca",
       "sizeKB": 90.7,
       "itemCount": 55,
       "quizCount": 28,
@@ -83,7 +83,7 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/06-elektronenstruktur-atome": {
-      "checksum": "5de9c99a",
+      "checksum": "a9c5272e",
       "sizeKB": 87.7,
       "itemCount": 74,
       "quizCount": 12,
