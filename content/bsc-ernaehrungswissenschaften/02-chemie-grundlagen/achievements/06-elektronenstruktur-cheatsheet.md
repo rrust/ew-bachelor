@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# ⚛️ Elektronenstruktur Cheat-Sheet
+# Elektronenstruktur Cheat-Sheet
 
 ## Elektromagnetische Strahlung
 

@@ -222,15 +222,31 @@ function showAchievementModal(achievement) {
 
   modal.classList.remove('hidden');
 
+  // Get modal container for fullscreen toggle
+  const container = document.getElementById('achievement-modal-container');
+
   // Close modal listeners
   const closeBtn = document.getElementById('close-achievement-modal');
-  closeBtn.onclick = () => modal.classList.add('hidden');
+  closeBtn.onclick = () => {
+    modal.classList.add('hidden');
+    // Reset fullscreen state when closing
+    container.classList.remove('fullscreen-modal');
+  };
 
   modal.onclick = (e) => {
     if (e.target === modal) {
       modal.classList.add('hidden');
+      container.classList.remove('fullscreen-modal');
     }
   };
+
+  // Fullscreen toggle
+  const fullscreenBtn = document.getElementById('fullscreen-achievement-modal');
+  if (fullscreenBtn) {
+    fullscreenBtn.onclick = () => {
+      container.classList.toggle('fullscreen-modal');
+    };
+  }
 }
 
 /**

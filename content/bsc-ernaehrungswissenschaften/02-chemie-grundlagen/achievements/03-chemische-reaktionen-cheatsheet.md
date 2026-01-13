@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Chemische Reaktionen – Cheat-Sheet 📋
+# Chemische Reaktionen – Cheat-Sheet
 
 ## Reaktionsgleichungen
 

@@ -2,6 +2,134 @@
 // Reusable functions for generating common UI elements following DRY principles
 
 /**
+ * Generate the consistent right-side icon buttons for headers
+ * @param {Object} options - Configuration options
+ * @param {string} options.idSuffix - ID suffix for elements
+ * @param {string} options.trainingUrl - URL for training button
+ * @param {string} options.trainingTitle - Tooltip for training button
+ * @param {boolean} options.showSearch - Whether to show search button (default: true)
+ * @param {Array} options.extraButtons - Additional buttons to insert before standard icons
+ * @returns {string} HTML string for icon buttons
+ */
+function generateHeaderIconButtons(options) {
+  const {
+    idSuffix = '',
+    trainingUrl = '#/training',
+    trainingTitle = 'Training',
+    showSearch = true,
+    extraButtons = []
+  } = options;
+
+  // Get training tokens
+  const trainingStats = window.getTrainingStats
+    ? window.getTrainingStats()
+    : { tokens: 0 };
+  const tokenCount = trainingStats.tokens || 0;
+
+  // Get streak info
+  const streakInfo = window.getStreakDisplayInfo
+    ? window.getStreakDisplayInfo()
+    : null;
+  const showStreak =
+    streakInfo && window.hasCompletedTests && window.hasCompletedTests();
+
+  // Get alerts count
+  const unreadCount =
+    window.AlertsModule && window.AlertsModule.getUnreadCount
+      ? window.AlertsModule.getUnreadCount()
+      : 0;
+
+  let html = `
+    <!-- Dev Mode Badge -->
+    <span
+      id="header-dev-badge${idSuffix}"
+      class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+    >DEV</span>
+  `;
+
+  // Add extra buttons (like Overview, Quiz, Back)
+  html += extraButtons.join('');
+
+  // Training Button with Token Badge
+  html += `
+    <button
+      onclick="window.location.hash='${trainingUrl}'"
+      class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
+      title="${trainingTitle} (${tokenCount} Tokens)"
+    >
+      ${Icons.get('token')}
+      ${
+        tokenCount > 0
+          ? `<span class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full bg-blue-500">${
+              tokenCount > 99 ? '99+' : tokenCount
+            }</span>`
+          : ''
+      }
+    </button>
+  `;
+
+  // Streak Button (if available)
+  if (showStreak) {
+    html += `
+      <button
+        onclick="window.location.hash='#/alerts'"
+        class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-orange-500"
+        title="${streakInfo.statusText}"
+      >
+        ${Icons.get('fire')}
+        <span 
+          id="streak-badge${idSuffix}" 
+          class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full ${
+            streakInfo.current >= 5
+              ? 'bg-green-500'
+              : streakInfo.current >= 1
+              ? 'bg-yellow-500'
+              : 'bg-red-500'
+          }"
+        >${streakInfo.current}</span>
+      </button>
+    `;
+  }
+
+  // Alerts Button
+  html += `
+    <button
+      id="nav-alerts${idSuffix}"
+      onclick="window.location.hash='#/alerts'"
+      class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+        unreadCount > 0
+          ? 'text-blue-600 dark:text-blue-400'
+          : 'text-gray-600 dark:text-gray-400'
+      }"
+      title="Benachrichtigungen"
+    >
+      ${Icons.get('bell')}
+      <span id="alert-badge${idSuffix}" class="${
+    unreadCount > 0 ? '' : 'hidden '
+  }absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white bg-red-500 rounded-full">${
+    unreadCount > 9 ? '9+' : unreadCount
+  }</span>
+    </button>
+  `;
+
+  // Search Button
+  if (showSearch) {
+    html += `
+      <button
+        id="nav-search${idSuffix}"
+        class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
+        title="Suche"
+        onclick="window.location.hash='#/search'"
+      >
+        ${Icons.get('search')}
+      </button>
+    `;
+  }
+
+  return html;
+}
+
+/**
  * Creates the application header with navigation and theme toggle
  * @param {string} view - Current view name ('moduleMap', 'tools', 'map', 'progress', 'lecture')
  * @param {Object} options - Optional parameters like module title for lecture view
@@ -9,8 +137,9 @@
  */
 function createAppHeader(view = 'moduleMap', options = {}) {
   const header = document.createElement('header');
-  header.className =
-    'bg-white dark:bg-gray-800 shadow-md mb-8 sticky top-0 z-40';
+  // No margin-bottom for search view (fixed search input sits directly below)
+  const marginClass = view === 'search' ? '' : 'mb-8';
+  header.className = `bg-white dark:bg-gray-800 ${marginClass} sticky top-0 z-40`;
 
   // Get current study info
   const studyInfo =
@@ -30,6 +159,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Special header for lecture list view with back button
   if (view === 'lecture') {
     const idSuffix = '-lecture';
+    const moduleId = options.moduleId || '';
+    const trainingModuleUrl = moduleId
+      ? `#/training?module=${moduleId}`
+      : '#/training';
+
     header.innerHTML = `
       <div class="flex items-center">
         <!-- Burger Menu (außerhalb Container, ganz links) -->
@@ -62,19 +196,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             }">${options.moduleTitle || ''}</h2>
           </div>
           <div class="flex items-center gap-1">
-            <!-- Dev Mode Badge -->
-            <span
-              id="header-dev-badge-lecture"
-              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-            >DEV</span>
-            <button
-              id="nav-search-lecture"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Suche"
-              onclick="window.location.hash='#/search'"
-            >
-              ${Icons.get('search')}
-            </button>
+            ${generateHeaderIconButtons({
+              idSuffix: '-lecture',
+              trainingUrl: trainingModuleUrl,
+              trainingTitle: 'Training für dieses Modul'
+            })}
           </div>
         </div>
       </div>
@@ -92,15 +218,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Button (prominent) -->
-            <a
-              href="#/training"
-              onclick="closeOverlayMenu('${idSuffix}')"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
-            >
-              TRAIN
-            </a>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -168,6 +285,20 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Breadcrumb header for lecture player view
   if (view === 'lecturePlayer') {
     const idSuffix = '-lecturePlayer';
+    const moduleId = options.moduleId || '';
+    const lectureId = options.lectureId || '';
+
+    // DEBUG
+    const trainingLectureUrl =
+      moduleId && lectureId
+        ? `#/training?module=${moduleId}&lecture=${lectureId}`
+        : moduleId
+        ? `#/training?module=${moduleId}`
+        : '#/training';
+    const trainingModuleUrl = moduleId
+      ? `#/training?module=${moduleId}`
+      : '#/training';
+
     const moduleIcon = options.moduleIcon
       ? Icons.get(
           options.moduleIcon,
@@ -228,37 +359,30 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             }">${options.lectureTopic || ''}</span>
           </div>
           <div class="flex items-center gap-1 flex-shrink-0">
-            <!-- Dev Mode Badge -->
-            <span
-              id="header-dev-badge${idSuffix}"
-              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-            >DEV</span>
-            <!-- Overview Button (Icon) -->
-            <button
-              id="lecture-overview-btn${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
-              title="Vorlesungs-Übersicht (O)"
-            >
-              ${Icons.get('clipboard', 'w-5 h-5')}
-            </button>
-            <!-- Test Button (Icon) -->
-            <button
-              id="lecture-quiz-btn${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-green-600 dark:text-green-400"
-              title="Test"
-              style="display: none;"
-            >
-              ${Icons.get('exam', 'w-5 h-5')}
-            </button>
-            <!-- Search -->
-            <button
-              id="nav-search${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Suche"
-              onclick="window.location.hash='#/search'"
-            >
-              ${Icons.get('search')}
-            </button>
+            ${generateHeaderIconButtons({
+              idSuffix: idSuffix,
+              trainingUrl: trainingLectureUrl,
+              trainingTitle: 'Training für diese Vorlesung',
+              extraButtons: [
+                `<!-- Overview Button (Icon) -->
+                <button
+                  id="lecture-overview-btn${idSuffix}"
+                  class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
+                  title="Vorlesungs-Übersicht (O)"
+                >
+                  ${Icons.get('clipboard', 'w-5 h-5')}
+                </button>`,
+                `<!-- Test Button (Icon) -->
+                <button
+                  id="lecture-quiz-btn${idSuffix}"
+                  class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-green-600 dark:text-green-400"
+                  title="Test"
+                  style="display: none;"
+                >
+                  ${Icons.get('exam', 'w-5 h-5')}
+                </button>`
+              ]
+            })}
           </div>
         </div>
       </div>
@@ -276,34 +400,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Buttons (context-specific for lecture player) -->
-            <a
-              href="#/training?module=${options.moduleId || ''}&lecture=${
-      options.lectureId || ''
-    }"
-              onclick="closeOverlayMenu('${idSuffix}')"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
-              title="Training für diese Vorlesung"
-            >
-              TRAIN (Vorlesung)
-            </a>
-            <a
-              href="#/training?module=${options.moduleId || ''}"
-              onclick="closeOverlayMenu('${idSuffix}')"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-400 hover:bg-blue-500 text-white font-medium transition text-center text-sm"
-              title="Training für dieses Modul"
-            >
-              TRAIN (Modul)
-            </a>
-            <a
-              href="#/training"
-              onclick="closeOverlayMenu('${idSuffix}')"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
-              title="Training für alle Tests"
-            >
-              TRAIN (Alle)
-            </a>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -371,6 +467,17 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Header for lecture overview view (similar to lecturePlayer but with back-to-player button)
   if (view === 'lectureOverview') {
     const idSuffix = '-lectureOverview';
+    const moduleId = options.moduleId || '';
+    const lectureId = options.lectureId || '';
+    const trainingLectureUrl =
+      moduleId && lectureId
+        ? `#/training?module=${moduleId}&lecture=${lectureId}`
+        : moduleId
+        ? `#/training?module=${moduleId}`
+        : '#/training';
+    const trainingModuleUrl = moduleId
+      ? `#/training?module=${moduleId}`
+      : '#/training';
 
     header.className = 'bg-white dark:bg-gray-800 shadow-sm flex-shrink-0';
     header.innerHTML = `
@@ -426,28 +533,21 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             <span class="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">Übersicht</span>
           </div>
           <div class="flex items-center gap-1 flex-shrink-0">
-            <!-- Dev Mode Badge -->
-            <span
-              id="header-dev-badge${idSuffix}"
-              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-            >DEV</span>
-            <!-- Back to Player Button -->
-            <button
-              id="back-to-player-btn${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
-              title="Zurück zur Vorlesung"
-            >
-              ${Icons.get('close', 'w-5 h-5')}
-            </button>
-            <!-- Search -->
-            <button
-              id="nav-search${idSuffix}"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Suche"
-              onclick="window.location.hash='#/search'"
-            >
-              ${Icons.get('search')}
-            </button>
+            ${generateHeaderIconButtons({
+              idSuffix: idSuffix,
+              trainingUrl: trainingLectureUrl,
+              trainingTitle: 'Training für diese Vorlesung',
+              extraButtons: [
+                `<!-- Back to Player Button -->
+                <button
+                  id="back-to-player-btn${idSuffix}"
+                  class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
+                  title="Zurück zur Vorlesung"
+                >
+                  ${Icons.get('book', 'w-5 h-5')}
+                </button>`
+              ]
+            })}
           </div>
         </div>
       </div>
@@ -465,15 +565,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Button -->
-            <a
-              href="#/training"
-              onclick="closeOverlayMenu('${idSuffix}')"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
-            >
-              TRAIN
-            </a>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -538,6 +629,95 @@ function createAppHeader(view = 'moduleMap', options = {}) {
     return header;
   }
 
+  // Special minimal header for search view with integrated search input
+  if (view === 'search') {
+    const idSuffix = '-search';
+    header.className = 'bg-white dark:bg-gray-800 sticky top-0 z-40';
+    header.innerHTML = `
+      <div class="flex items-center">
+        <!-- Burger Menu -->
+        <button
+          id="menu-toggle${idSuffix}"
+          class="p-3 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400 flex-shrink-0 self-stretch flex items-center"
+          title="Menü"
+          onclick="openOverlayMenu('${idSuffix}')"
+        >
+          ${Icons.get('listBullet')}
+        </button>
+        
+        <!-- Study Icon -->
+        <a href="#/modules" class="flex-shrink-0 hover:opacity-80 transition-opacity px-2">
+          ${
+            studyIcon ||
+            Icons.get(
+              'modules',
+              'w-5 h-5 md:w-6 md:h-6',
+              'text-gray-600 dark:text-gray-400'
+            )
+          }
+        </a>
+        
+        <!-- Centered Search Input -->
+        <div class="flex-1 flex justify-center py-2 pr-4">
+          <div class="relative w-full max-w-md">
+            <input
+              type="text"
+              id="search-page-input"
+              placeholder="Suche..."
+              class="w-full pl-10 pr-4 py-2 text-base border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+            <span class="absolute left-3 top-1/2 transform -translate-y-1/2">
+              ${Icons.get('search', 'w-5 h-5', 'text-gray-400')}
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Overlay Menu for Search View -->
+      <div id="overlay-menu${idSuffix}" class="hidden fixed inset-0 z-50">
+        <div class="absolute inset-0 bg-black bg-opacity-50" onclick="closeOverlayMenu('${idSuffix}')"></div>
+        <div class="absolute left-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
+          <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
+            <span class="font-bold text-lg">Menü</span>
+            <button onclick="closeOverlayMenu('${idSuffix}')" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
+              ${Icons.get('close', 'w-5 h-5')}
+            </button>
+          </div>
+          <nav class="p-4 space-y-2">
+            <button id="theme-toggle-menu${idSuffix}" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left" onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));">
+              <span class="theme-icon-light hidden">${Icons.get(
+                'sun',
+                'w-5 h-5'
+              )}</span>
+              <span class="theme-icon-dark">${Icons.get(
+                'moon',
+                'w-5 h-5'
+              )}</span>
+              <span class="theme-text">Farbschema</span>
+            </button>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('moduleMap');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('modules', 'w-5 h-5')}<span>Module</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('progress');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('chart', 'w-5 h-5')}<span>Progress</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('achievements');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('achievement', 'w-5 h-5')}<span>Achievements</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('map');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('map', 'w-5 h-5')}<span>Modul-Map</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('tools');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('cog', 'w-5 h-5')}<span>Tools</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    `;
+    return header;
+  }
+
   // Only show greeting for non-search views
   const showGreeting = view !== 'search';
 
@@ -547,6 +727,12 @@ function createAppHeader(view = 'moduleMap', options = {}) {
     : null;
   const showStreak =
     streakInfo && window.hasCompletedTests && window.hasCompletedTests();
+
+  // Get training tokens for display
+  const trainingStats = window.getTrainingStats
+    ? window.getTrainingStats()
+    : { tokens: 0 };
+  const tokenCount = trainingStats.tokens || 0;
 
   header.innerHTML = `
     <div class="flex items-center">
@@ -584,21 +770,32 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           }
         </div>
         <nav class="flex items-center gap-1">
-          <!-- Dev Mode Badge (shown when dev mode is active) -->
+          <!-- Dev Mode Badge (shown when dev mode is active, desktop only) -->
           <a
             href="#/tools"
             id="header-dev-badge${idSuffix}"
             class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
           >DEV</a>
-          <!-- Training Mode Button -->
-          <a
-            href="#/training"
-            class="text-xs font-bold px-2 py-0.5 rounded ${
+          <!-- Training Mode Button (Token Icon with Badge) -->
+          <button
+            onclick="window.location.hash='#/training'"
+            class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
               view === 'training'
-                ? 'bg-blue-600 text-white'
-                : 'bg-blue-500 text-white hover:bg-blue-600'
-            } transition-colors"
-          >TRAIN</a>
+                ? 'text-blue-600 dark:text-blue-400'
+                : 'text-blue-500'
+            }"
+            title="Training (${tokenCount} Tokens)"
+          >
+            ${Icons.get('token')}
+            ${
+              tokenCount > 0
+                ? `<span 
+                    id="token-badge${idSuffix}" 
+                    class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white rounded-full bg-blue-500"
+                  >${tokenCount > 99 ? '99+' : tokenCount}</span>`
+                : ''
+            }
+          </button>
           <!-- Streak Display -->
           ${
             showStreak
@@ -670,19 +867,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           </button>
         </div>
         <nav class="p-4 space-y-2">
-          <!-- Training Button (prominent) -->
-          <a
-            href="#/training"
-            onclick="closeOverlayMenu('${idSuffix}')"
-            class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg ${
-              view === 'training'
-                ? 'bg-blue-600 text-white'
-                : 'bg-blue-500 hover:bg-blue-600 text-white'
-            } font-bold transition text-center"
-          >
-            TRAIN
-          </a>
-          <hr class="border-gray-200 dark:border-gray-700 my-2">
           <!-- Theme Toggle -->
           <button
             id="theme-toggle-menu${idSuffix}"

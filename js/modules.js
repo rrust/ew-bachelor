@@ -596,6 +596,7 @@ async function displayLecturesForModule(
   lectureListContainer.innerHTML = '';
   if (window.injectHeader) {
     window.injectHeader('lecture-list-container', 'lecture', {
+      moduleId: moduleId,
       moduleTitle: moduleData?.title || moduleId,
       moduleIcon: moduleData?.icon || 'modules'
     });

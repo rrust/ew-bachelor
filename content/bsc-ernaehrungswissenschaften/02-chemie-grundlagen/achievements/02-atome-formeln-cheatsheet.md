@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Atome & Stöchiometrie – Cheat-Sheet 🧪
+# Atome & Stöchiometrie – Cheat-Sheet
 
 ## Subatomare Teilchen
 

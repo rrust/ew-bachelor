@@ -364,7 +364,8 @@ let trainingState = {
   questions: [],
   currentIndex: 0,
   correctCount: 0,
-  answeredCount: 0
+  answeredCount: 0,
+  results: [] // Array of 'correct', 'incorrect', or null for each question
 };
 
 // Training context for filtered training
@@ -517,6 +518,7 @@ async function initTrainingView() {
   trainingState.currentIndex = 0;
   trainingState.correctCount = 0;
   trainingState.answeredCount = 0;
+  trainingState.results = new Array(QUESTIONS_PER_ROUND).fill(null);
 
   renderTrainingQuestion();
 }
@@ -549,47 +551,58 @@ function renderTrainingQuestion(animateIn = false) {
     window.MODULES || []
   );
   const isFiltered = trainingContext.moduleId !== null;
-  const contextBadge = isFiltered
-    ? `<div class="mb-4 text-center">
-        <span class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm px-3 py-1 rounded-full">
-          <span>📚 ${escapeHtml(contextDesc)}</span>
-          <button 
-            onclick="window.clearTrainingContext(); window.initTrainingView();"
-            class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-200"
-            title="Filter entfernen"
-          >✕</button>
-        </span>
-       </div>`
-    : '';
+
+  // Get module title for current question
+  const questionModule = window.MODULES?.find(
+    (m) => m.id === question.moduleId
+  );
+  const questionModuleTitle = questionModule?.title || question.moduleId;
+  const questionContext = question.lectureId
+    ? `${questionModuleTitle} → ${question.topic}`
+    : questionModuleTitle;
+
+  // Build segmented progress bar (10 segments)
+  const progressSegments = trainingState.results
+    .map((result, i) => {
+      let colorClass = 'bg-gray-300 dark:bg-gray-600'; // unanswered
+      if (result === 'correct') {
+        colorClass = 'bg-green-500';
+      } else if (result === 'incorrect') {
+        colorClass = 'bg-red-500';
+      }
+      const isCurrentClass =
+        i === trainingState.currentIndex
+          ? 'ring-2 ring-blue-500 ring-offset-1 dark:ring-offset-gray-900'
+          : '';
+      return `<div class="flex-1 h-3 ${colorClass} ${isCurrentClass} transition-all duration-200"></div>`;
+    })
+    .join('');
 
   container.innerHTML = `
     <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
-      ${contextBadge}
-      <!-- Progress -->
-      <div class="mb-6">
-        <div class="flex justify-between items-center mb-2">
-          <span class="text-sm text-gray-600 dark:text-gray-400">
-            Frage ${trainingState.currentIndex + 1} von ${
-    trainingState.questions.length
-  }
-          </span>
-          <span class="text-sm font-medium text-green-600 dark:text-green-400">
-            ${trainingState.correctCount} richtig
-          </span>
-        </div>
-        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-          <div class="bg-blue-500 h-2 rounded-full transition-all duration-300" style="width: ${progress}%"></div>
-        </div>
+      <!-- Segmented Progress Bar -->
+      <div class="flex gap-1 mb-4 rounded overflow-hidden">
+        ${progressSegments}
       </div>
 
-      <!-- Topic badge with token indicator -->
-      <div class="mb-4 flex items-center flex-wrap gap-2">
-        <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-          ${question.topic}
+      <!-- Context + Token + CheatSheet row -->
+      <div class="mb-4 flex items-center flex-wrap gap-2 text-xs">
+        <!-- Training scope -->
+        <span class="inline-flex items-center gap-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded-full">
+          ${escapeHtml(contextDesc)}
+          ${
+            isFiltered
+              ? `<button 
+                  onclick="window.clearTrainingContext(); window.initTrainingView();"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-200 ml-1"
+                  title="Filter entfernen"
+                >✕</button>`
+              : ''
+          }
         </span>
         <span class="flex-1"></span>
         <!-- Token indicator -->
-        <span id="token-count-inline" class="inline-flex items-center gap-1 text-xs text-gray-400 dark:text-gray-500" title="Trainings-Tokens">
+        <span id="token-count-inline" class="inline-flex items-center gap-1 text-gray-400 dark:text-gray-500" title="Trainings-Tokens">
           ${Icons.get('token', 'w-3 h-3')} ${getTrainingStats().tokens}
         </span>
         ${
@@ -597,15 +610,22 @@ function renderTrainingQuestion(animateIn = false) {
             ? `
           <button
             onclick="showTrainingCheatSheet('${question.cheatSheet.id}')"
-            class="inline-flex items-center gap-1 text-xs px-2 py-1 rounded bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 hover:bg-yellow-200 dark:hover:bg-yellow-900/50 transition"
+            class="inline-flex items-center gap-1 px-2 py-1 rounded bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 hover:bg-yellow-200 dark:hover:bg-yellow-900/50 transition"
             title="Cheat-Sheet anzeigen"
           >
             ${Icons.get('clipboard', 'w-3 h-3')}
-            <span>Cheat-Sheet</span>
+            Cheat-Sheet
           </button>
         `
             : ''
         }
+      </div>
+
+      <!-- Topic badge -->
+      <div class="mb-4">
+        <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+          ${question.topic}
+        </span>
       </div>
 
       <!-- Question -->
@@ -751,6 +771,9 @@ function submitTrainingAnswer() {
   }
 
   trainingState.answeredCount++;
+  trainingState.results[trainingState.currentIndex] = isCorrect
+    ? 'correct'
+    : 'incorrect';
   if (isCorrect) {
     trainingState.correctCount++;
   }

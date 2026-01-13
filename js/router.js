@@ -21,10 +21,14 @@ const ROUTE_PATTERNS = {
  * @returns {Object|null} Route object with view and parameters, or null for home
  */
 function parseURL() {
-  const hash = window.location.hash.slice(1); // Remove #
-  if (!hash || hash === '/') return null;
+  const fullHash = window.location.hash.slice(1); // Remove #
 
-  const parts = hash.split('/').filter((p) => p);
+  if (!fullHash || fullHash === '/') return null;
+
+  // Separate path from query string BEFORE splitting
+  const [hashPath, queryString] = fullHash.split('?');
+
+  const parts = hashPath.split('/').filter((p) => p);
   const route = { view: parts[0] };
 
   // Check for study-select route
@@ -76,14 +80,17 @@ function parseURL() {
   } else if (parts[offset] === 'training') {
     route.view = 'training';
     // Parse query parameters for context-specific training
-    const queryString = window.location.hash.split('?')[1];
+    // queryString was extracted at the top of parseURL()
     if (queryString) {
       const params = new URLSearchParams(queryString);
-      if (params.has('module')) {
-        route.trainingModuleId = params.get('module');
+      // Only set if parameter has a non-empty value
+      const moduleParam = params.get('module');
+      const lectureParam = params.get('lecture');
+      if (moduleParam) {
+        route.trainingModuleId = moduleParam;
       }
-      if (params.has('lecture')) {
-        route.trainingLectureId = params.get('lecture');
+      if (lectureParam) {
+        route.trainingLectureId = lectureParam;
       }
     }
   } else if (parts[offset] === 'search') {
