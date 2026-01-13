@@ -94,22 +94,20 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           </div>
           <nav class="p-4 space-y-2">
             <!-- Training Buttons (context-specific for module) -->
-            <a
-              href="#/training?module=${options.moduleId || ''}"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${options.moduleId || ''}';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
               title="Training für dieses Modul"
             >
               TRAIN (Modul)
-            </a>
-            <a
-              href="#/training"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            </button>
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
               title="Training für alle Tests"
             >
               TRAIN (Alle)
-            </a>
+            </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
@@ -287,32 +285,31 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           </div>
           <nav class="p-4 space-y-2">
             <!-- Training Buttons (context-specific for lecture player) -->
-            <a
-              href="#/training?module=${options.moduleId || ''}&lecture=${
-      options.lectureId || ''
-    }"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
+      options.moduleId || ''
+    }&lecture=${options.lectureId || ''}';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
               title="Training für diese Vorlesung"
             >
               TRAIN (Vorlesung)
-            </a>
-            <a
-              href="#/training?module=${options.moduleId || ''}"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            </button>
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
+      options.moduleId || ''
+    }';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-400 hover:bg-blue-500 text-white font-medium transition text-center text-sm"
               title="Training für dieses Modul"
             >
               TRAIN (Modul)
-            </a>
-            <a
-              href="#/training"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            </button>
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
               title="Training für alle Tests"
             >
               TRAIN (Alle)
-            </a>
+            </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
@@ -476,32 +473,27 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           </div>
           <nav class="p-4 space-y-2">
             <!-- Training Buttons (context-specific for lecture overview) -->
-            <a
-              href="#/training?module=${options.moduleId || ''}&lecture=${
-      options.lectureId || ''
-    }"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${options.moduleId || ''}&lecture=${options.lectureId || ''}';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
               title="Training für diese Vorlesung"
             >
               TRAIN (Vorlesung)
-            </a>
-            <a
-              href="#/training?module=${options.moduleId || ''}"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            </button>
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${options.moduleId || ''}';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-400 hover:bg-blue-500 text-white font-medium transition text-center text-sm"
               title="Training für dieses Modul"
             >
               TRAIN (Modul)
-            </a>
-            <a
-              href="#/training"
-              onclick="closeOverlayMenu('${idSuffix}')"
+            </button>
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
               title="Training für alle Tests"
             >
               TRAIN (Alle)
-            </a>
+            </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
@@ -622,7 +614,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <a href="#/training" onclick="closeOverlayMenu('${idSuffix}')" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center">TRAIN</a>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center">TRAIN</button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
             <button id="theme-toggle-menu${idSuffix}" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left" onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));">
               <span class="theme-icon-light hidden">${Icons.get(
@@ -711,14 +703,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
           >DEV</a>
           <!-- Training Mode Button -->
-          <a
-            href="#/training"
+          <button
+            onclick="window.location.hash='#/training'"
             class="text-xs font-bold px-2 py-0.5 rounded ${
               view === 'training'
                 ? 'bg-blue-600 text-white'
                 : 'bg-blue-500 text-white hover:bg-blue-600'
             } transition-colors"
-          >TRAIN</a>
+          >TRAIN</button>
           <!-- Streak Display -->
           ${
             showStreak
@@ -791,9 +783,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
         </div>
         <nav class="p-4 space-y-2">
           <!-- Training Button (prominent) -->
-          <a
-            href="#/training"
-            onclick="closeOverlayMenu('${idSuffix}')"
+          <button
+            onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
             class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg ${
               view === 'training'
                 ? 'bg-blue-600 text-white'
@@ -801,7 +792,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             } font-bold transition text-center"
           >
             TRAIN
-          </a>
+          </button>
           <hr class="border-gray-200 dark:border-gray-700 my-2">
           <!-- Theme Toggle -->
           <button
