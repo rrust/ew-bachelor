@@ -901,6 +901,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lecture = APP_CONTENT[currentModuleId]?.lectures?.[currentLectureId];
     injectLectureOverviewHeader({
       moduleId: currentModuleId,
+      lectureId: currentLectureId,
       moduleTitle: moduleData?.title || currentModuleId,
       lectureTopic: lecture?.topic || currentLectureId
     });
