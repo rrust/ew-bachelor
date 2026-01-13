@@ -233,29 +233,29 @@ listBullet: '<path stroke-linecap="round" stroke-linejoin="round"
 
 ### Phase 1: Burger-Menü links
 
-- [ ] Icon `listBullet` für Burger-Menü verwenden (bereits vorhanden)
-- [ ] `createAppHeader()` - Menü-Toggle als erstes Element
-- [ ] Overlay-Panel Position: `left-0` statt `right-0`
-- [ ] Animation: Von links einschieben
+- [x] Icon `listBullet` für Burger-Menü verwenden (bereits vorhanden)
+- [x] `createAppHeader()` - Menü-Toggle als erstes Element
+- [x] Overlay-Panel Position: `left-0` statt `right-0`
+- [x] Animation: Von links einschieben
 
 ### Phase 2: Breadcrumb-Navigation
 
-- [ ] Neue Header-Variante `breadcrumb` in `createAppHeader()`
-- [ ] Klickbare Icons für Study → Module → Lecture Navigation
-- [ ] `injectHeader()` in `modules.js` mit erweiterten Options
+- [x] Neue Header-Variante `lecturePlayer` in `createAppHeader()`
+- [x] Klickbare Icons für Study → Module → Lecture Navigation
+- [x] Header dynamisch in `app.js` injiziert
 
 ### Phase 3: Icon-Buttons
 
-- [ ] Player-Header: Text-Buttons durch Icon-Buttons ersetzen
-- [ ] Icons konsistent mit Lecture-Karten
-- [ ] Tooltips für Accessibility
+- [x] Player-Header: Text-Buttons durch Icon-Buttons ersetzen
+- [x] Icons konsistent mit Lecture-Karten (`listBullet`, `exam`)
+- [x] Tooltips für Accessibility
 
 ### Phase 4: Kontextspezifisches Training
 
-- [ ] `trainingContext` in State speichern
-- [ ] `getCompletedTestsFiltered()` implementieren
-- [ ] Train-Button URL/State entsprechend setzen
-- [ ] Training-View zeigt Kontext-Info an
+- [x] `trainingContext` in State speichern
+- [x] `getCompletedTestsFiltered()` implementieren
+- [x] Train-Button URL/State entsprechend setzen
+- [x] Training-View zeigt Kontext-Info an
 
 ## Risiken & Fallbacks
 
