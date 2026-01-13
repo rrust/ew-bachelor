@@ -174,83 +174,76 @@ function createAppHeader(view = 'moduleMap', options = {}) {
 
     header.className = 'bg-white dark:bg-gray-800 shadow-sm flex-shrink-0';
     header.innerHTML = `
-      <div class="px-4 py-2 flex items-center justify-between">
-        <div class="flex items-center gap-1 md:gap-2 min-w-0 flex-1">
-          <!-- Burger Menu -->
-          <button
-            id="menu-toggle${idSuffix}"
-            class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400 flex-shrink-0"
-            title="Menü"
-            onclick="openOverlayMenu('${idSuffix}')"
-          >
-            ${Icons.get('listBullet')}
-          </button>
-          <!-- Breadcrumb: Study Icon -->
-          <button
-            id="breadcrumb-study${idSuffix}"
-            class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
-            title="${studyTitle} - Zur Modulübersicht"
-            onclick="window.showView && window.showView('moduleMap'); window.updateURL && window.updateURL('/', 'Module Overview');"
-          >
-            ${
-              studyIcon ||
-              Icons.get(
-                'modules',
-                'w-5 h-5',
-                'text-gray-600 dark:text-gray-400'
-              )
-            }
-          </button>
-          <span class="text-gray-400 dark:text-gray-500 text-sm flex-shrink-0">/</span>
-          <!-- Breadcrumb: Module Icon -->
-          <button
-            id="breadcrumb-module${idSuffix}"
-            class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
-            title="${options.moduleTitle || 'Modul'} - Zur Vorlesungsliste"
-            onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${
-              options.moduleId || ''
-            }');"
-          >
-            ${moduleIcon}
-          </button>
-          <span class="text-gray-400 dark:text-gray-500 text-sm flex-shrink-0">/</span>
-          <!-- Lecture Title -->
-          <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${
-            options.lectureTopic || ''
-          }">${options.lectureTopic || ''}</span>
-        </div>
-        <div class="flex items-center gap-1 flex-shrink-0">
-          <!-- Dev Mode Badge -->
-          <span
-            id="header-dev-badge${idSuffix}"
-            class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
-          >DEV</span>
-          <!-- Overview Button (Icon) -->
-          <button
-            id="lecture-overview-btn${idSuffix}"
-            class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
-            title="Übersicht (O)"
-          >
-            ${Icons.get('listBullet', 'w-5 h-5')}
-          </button>
-          <!-- Test Button (Icon) -->
-          <button
-            id="lecture-quiz-btn${idSuffix}"
-            class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-green-600 dark:text-green-400"
-            title="Test"
-            style="display: none;"
-          >
-            ${Icons.get('exam', 'w-5 h-5')}
-          </button>
-          <!-- Search -->
-          <button
-            id="nav-search${idSuffix}"
-            class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-            title="Suche"
-            onclick="window.location.hash='#/search'"
-          >
-            ${Icons.get('search')}
-          </button>
+      <div class="flex items-center">
+        <!-- Burger Menu (außerhalb Container, ganz links) -->
+        <button
+          id="menu-toggle${idSuffix}"
+          class="p-3 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400 flex-shrink-0 self-stretch flex items-center"
+          title="Menü"
+          onclick="openOverlayMenu('${idSuffix}')"
+        >
+          ${Icons.get('listBullet')}
+        </button>
+        
+        <!-- Rest im Container mit max-width -->
+        <div class="container mx-auto px-2 md:px-4 py-2 flex items-center justify-between min-w-0 flex-1">
+          <div class="flex items-center gap-2 md:gap-3 min-w-0 flex-1">
+            <!-- Modul-Icon → Modulübersicht -->
+            <button
+              id="breadcrumb-modules${idSuffix}"
+              class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
+              title="Zur Modulübersicht"
+              onclick="window.showView && window.showView('moduleMap'); window.updateURL && window.updateURL('/', 'Module Overview');"
+            >
+              ${Icons.get('modules', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+            </button>
+            <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
+            <!-- Buch-Icon → Vorlesungsliste -->
+            <button
+              id="breadcrumb-lectures${idSuffix}"
+              class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0 flex items-center gap-1"
+              title="${options.moduleTitle || 'Modul'} - Zur Vorlesungsliste"
+              onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${options.moduleId || ''}');"
+            >
+              ${Icons.get('book', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+            </button>
+            <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
+            <!-- Lecture Title -->
+            <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${options.lectureTopic || ''}">${options.lectureTopic || ''}</span>
+          </div>
+          <div class="flex items-center gap-1 flex-shrink-0">
+            <!-- Dev Mode Badge -->
+            <span
+              id="header-dev-badge${idSuffix}"
+              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+            >DEV</span>
+            <!-- Overview Button (Icon) -->
+            <button
+              id="lecture-overview-btn${idSuffix}"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
+              title="Vorlesungs-Übersicht (O)"
+            >
+              ${Icons.get('listBullet', 'w-5 h-5')}
+            </button>
+            <!-- Test Button (Icon) -->
+            <button
+              id="lecture-quiz-btn${idSuffix}"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-green-600 dark:text-green-400"
+              title="Test"
+              style="display: none;"
+            >
+              ${Icons.get('exam', 'w-5 h-5')}
+            </button>
+            <!-- Search -->
+            <button
+              id="nav-search${idSuffix}"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
+              title="Suche"
+              onclick="window.location.hash='#/search'"
+            >
+              ${Icons.get('search')}
+            </button>
+          </div>
         </div>
       </div>
       
