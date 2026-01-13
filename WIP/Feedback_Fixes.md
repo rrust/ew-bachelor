@@ -56,11 +56,15 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 
 ## Training & Navigation
 
-### ⬜ Kontextuelles Training funktioniert nicht
+### ✅ Kontextuelles Training funktioniert nicht
 
-**Problem:** Bei kontextuellem Training (aus einer Vorlesung heraus) landet man auf der Modul-Übersicht statt im Training.
-**Analyse erforderlich:** Router/Navigation-Logik prüfen.
-**Betroffene Dateien:** `js/training.js`, `js/router.js`, `app.js`
+**Problem:** Bei kontextuellem Training (aus einer Vorlesung heraus) fehlten die kontextspezifischen Buttons im lectureOverview-Menü.
+**Ursache:** `lectureId` wurde nicht an `injectLectureOverviewHeader` übergeben, und das Menü hatte nur einen generischen TRAIN-Button.
+**Fix:** 
+1. `lectureId` zu den Header-Options hinzugefügt
+2. Kontextspezifische TRAIN-Buttons (Vorlesung/Modul/Alle) im lectureOverview-Menü hinzugefügt
+**Betroffene Dateien:** `app.js`, `js/components.js`
+**Commit:** `fix: add contextual training buttons to lecture overview menu`
 
 ---
 
