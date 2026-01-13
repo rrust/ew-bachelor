@@ -31,23 +31,26 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 
 ## Cheat-Sheets
 
-### ⬜ Kein Icon im Titel
+### ✅ Kein Icon im Titel
 
 **Problem:** Cheat-Sheets zeigen ein Icon im Modal-Titel.
 **Gewünscht:** Icon entfernen, nur Text-Titel.
-**Betroffene Dateien:** `js/achievements-ui.js`
+**Betroffene Dateien:** `index.html`
+**Commit:** `feat: improve cheat-sheet modal - remove icon, add fullscreen, compact mobile`
 
-### ⬜ Kleinere Darstellung auf Mobile
+### ✅ Kleinere Darstellung auf Mobile
 
 **Problem:** Cheat-Sheets sind auf Mobile zu groß.
 **Gewünscht:** Kompaktere Darstellung, kleinere Schriftgröße auf kleinen Screens.
-**Betroffene Dateien:** `css/styles.css`, `js/achievements-ui.js`
+**Betroffene Dateien:** `css/custom-styles.css`, `index.html`
+**Commit:** `feat: improve cheat-sheet modal - remove icon, add fullscreen, compact mobile`
 
-### ⬜ Fullscreen-Ansicht ermöglichen
+### ✅ Fullscreen-Ansicht ermöglichen
 
 **Problem:** Cheat-Sheets können nur im Modal angezeigt werden.
 **Gewünscht:** Button für Fullscreen-Ansicht.
-**Betroffene Dateien:** `js/achievements-ui.js`, `css/styles.css`
+**Betroffene Dateien:** `js/achievements-ui.js`, `css/custom-styles.css`, `index.html`
+**Commit:** `feat: improve cheat-sheet modal - remove icon, add fullscreen, compact mobile`
 
 ---
 
