@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const buttons = {
     start: document.getElementById('start-button'),
-    backToLectures: document.getElementById('back-to-lectures-button'),
     startQuiz: document.getElementById('start-quiz-button'),
     prevItem: document.getElementById('prev-item-button'),
     nextItem: document.getElementById('next-item-button'),
@@ -48,8 +47,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     ),
     retakeQuiz: document.getElementById('retake-quiz-button'),
     resultsToMap: document.getElementById('results-to-map-button'),
-    lectureOverview: document.getElementById('lecture-overview-button'),
-    lectureQuizButton: document.getElementById('lecture-quiz-button'),
     backToPlayer: document.getElementById('back-to-player-button'),
     // These will be set after headers are injected
     navModule: null,
@@ -758,6 +755,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lecture = moduleContent?.lectures?.[lectureId];
     currentLectureTopic = lecture?.topic || lectureId;
 
+    // Inject dynamic breadcrumb header for lecture player
+    const moduleData = MODULES.find(m => m.id === moduleId);
+    injectLecturePlayerHeader({
+      moduleId: moduleId,
+      moduleTitle: moduleData?.title || moduleId,
+      moduleIcon: moduleData?.icon || 'modules',
+      lectureTopic: lecture?.topic || lectureId,
+      hasQuiz: lecture?.quiz && lecture.quiz.length > 0
+    });
+
     window.LectureModule.startLecture(
       moduleId,
       lectureId,
@@ -774,6 +781,34 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView,
       startIndex
     );
+  }
+
+  // Helper function to inject lecture player header
+  function injectLecturePlayerHeader(options) {
+    const container = document.getElementById('lecture-player-header-container');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    if (window.createAppHeader) {
+      const header = window.createAppHeader('lecturePlayer', options);
+      container.appendChild(header);
+      
+      // Update theme icons
+      if (window.updateMenuThemeIcons) {
+        window.updateMenuThemeIcons(header);
+      }
+      
+      // Update dev mode badge
+      if (window.updateDevModeUI) {
+        window.updateDevModeUI();
+      }
+      
+      // Show/hide quiz button based on availability
+      const quizBtn = header.querySelector('#lecture-quiz-btn-lecturePlayer');
+      if (quizBtn) {
+        quizBtn.style.display = options.hasQuiz ? 'block' : 'none';
+      }
+    }
   }
 
   function renderCurrentLectureItem() {
@@ -965,10 +1000,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function setupNavigationListeners() {
-    buttons.backToLectures.addEventListener('click', () => {
-      displayLecturesForModule(currentModuleId);
-    });
-
     buttons.backToPlayer.addEventListener('click', () => {
       // Navigate back to lecture list
       displayLecturesForModule(currentModuleId);
@@ -1031,20 +1062,22 @@ document.addEventListener('DOMContentLoaded', async () => {
           window.toggleTheme();
         }
       }
+      
+      // Lecture player: Overview button (breadcrumb header)
+      else if (target.id && target.id.startsWith('lecture-overview-btn')) {
+        showLectureOverview();
+      }
+      
+      // Lecture player: Quiz button (breadcrumb header)
+      else if (target.id && target.id.startsWith('lecture-quiz-btn')) {
+        startQuiz(currentModuleId, currentLectureId);
+      }
     });
   }
 
   function setupLectureListeners() {
-    buttons.lectureOverview.addEventListener('click', () => {
-      showLectureOverview();
-    });
-
-    if (buttons.lectureQuizButton) {
-      buttons.lectureQuizButton.addEventListener('click', () => {
-        startQuiz(currentModuleId, currentLectureId);
-      });
-    }
-
+    // Overview and Quiz buttons are now handled via event delegation in setupNavigationListeners
+    
     buttons.backToLecture.addEventListener('click', () => {
       showView('lecture');
       updateURL(
