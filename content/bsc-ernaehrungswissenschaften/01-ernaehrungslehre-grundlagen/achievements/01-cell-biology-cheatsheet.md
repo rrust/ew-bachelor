@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Zellbiologie Cheat-Sheet 📋
+# Zellbiologie Cheat-Sheet
 
 ## Zellorganellen & Funktionen
 

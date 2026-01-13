@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# 🔥 Thermodynamik Cheat-Sheet
+# Thermodynamik Cheat-Sheet
 
 ## Energieformen
 

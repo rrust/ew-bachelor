@@ -14,7 +14,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Makronährstoffe Cheat-Sheet 🍽️
+# Makronährstoffe Cheat-Sheet
 
 ## Die drei Makronährstoffe im Überblick
 
