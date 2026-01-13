@@ -171,10 +171,6 @@ async function autoSyncAllModules(MODULES, container) {
   // Only sync unlocked modules
   const unlockedModules = MODULES.filter((m) => m.status !== 'gesperrt');
 
-  console.log(
-    `[Modules] Auto-syncing ${unlockedModules.length} modules in background`
-  );
-
   for (const module of unlockedModules) {
     const moduleId = module.id;
     const lectureIds = module.lectures || [];
@@ -251,13 +247,7 @@ async function autoSyncAllModules(MODULES, container) {
         'w-5 h-5'
       )}</span>`;
     }
-
-    if (syncedCount > 0) {
-      console.log(`[Modules] Synced ${syncedCount} lectures for ${moduleId}`);
-    }
   }
-
-  console.log('[Modules] Background sync complete');
 }
 
 /**
@@ -879,10 +869,6 @@ async function autoSyncModuleLectures(
 ) {
   if (!window.DownloadManager || !window.BundleLoader) return;
 
-  console.log(
-    `[Modules] Auto-syncing ${lectureIds.length} lectures for ${moduleId}`
-  );
-
   let syncedCount = 0;
 
   for (const lectureId of lectureIds) {
@@ -945,12 +931,6 @@ async function autoSyncModuleLectures(
         )}</span>`;
       }
     }
-  }
-
-  if (syncedCount > 0) {
-    console.log(
-      `[Modules] Auto-synced ${syncedCount} lectures for ${moduleId}`
-    );
   }
 }
 

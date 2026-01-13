@@ -75,6 +75,17 @@ function parseURL() {
     route.view = 'alerts';
   } else if (parts[offset] === 'training') {
     route.view = 'training';
+    // Parse query parameters for context-specific training
+    const queryString = window.location.hash.split('?')[1];
+    if (queryString) {
+      const params = new URLSearchParams(queryString);
+      if (params.has('module')) {
+        route.trainingModuleId = params.get('module');
+      }
+      if (params.has('lecture')) {
+        route.trainingLectureId = params.get('lecture');
+      }
+    }
   } else if (parts[offset] === 'search') {
     route.view = 'search';
     if (parts[offset + 1]) {
@@ -157,11 +168,13 @@ function isValidRoute(viewName) {
  */
 function debugRoute() {
   const route = parseURL();
-  console.group('[Router] Debug Info');
-  console.log('Hash:', window.location.hash);
-  console.log('Parsed route:', route);
-  console.log('Registered routes:', getRegisteredRoutes());
-  console.groupEnd();
+  if (window.isDevMode && window.isDevMode()) {
+    console.group('[Router] Debug Info');
+    console.log('Hash:', window.location.hash);
+    console.log('Parsed route:', route);
+    console.log('Registered routes:', getRegisteredRoutes());
+    console.groupEnd();
+  }
   return route;
 }
 

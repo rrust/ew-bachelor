@@ -16,11 +16,9 @@ function updateURL(path, title) {
  */
 function parseURL() {
   const hash = window.location.hash.slice(1); // Remove #
-  console.log('parseURL - hash:', hash);
   if (!hash || hash === '/') return null;
 
   const parts = hash.split('/').filter((p) => p);
-  console.log('parseURL - parts:', parts);
   const route = { view: parts[0] };
 
   // Parse route patterns

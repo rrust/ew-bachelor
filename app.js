@@ -1,7 +1,6 @@
 // Main JavaScript file for the Nutritional Science Learning App
 // App Version - used for debugging PWA cache issues
 const APP_VERSION = '1.2.0';
-console.log(`[App] Version ${APP_VERSION} loaded`);
 
 // Global state (accessible by all modules)
 let APP_CONTENT = {};
@@ -38,7 +37,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const buttons = {
     start: document.getElementById('start-button'),
-    backToLectures: document.getElementById('back-to-lectures-button'),
     startQuiz: document.getElementById('start-quiz-button'),
     prevItem: document.getElementById('prev-item-button'),
     nextItem: document.getElementById('next-item-button'),
@@ -48,9 +46,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     ),
     retakeQuiz: document.getElementById('retake-quiz-button'),
     resultsToMap: document.getElementById('results-to-map-button'),
-    lectureOverview: document.getElementById('lecture-overview-button'),
-    lectureQuizButton: document.getElementById('lecture-quiz-button'),
-    backToPlayer: document.getElementById('back-to-player-button'),
     // These will be set after headers are injected
     navModule: null,
     navMap: null,
@@ -113,7 +108,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function navigateFromURL() {
     const route = parseURL();
-    console.log('navigateFromURL - parsed route:', route);
     if (!route) return false;
 
     // Handle study selection route
@@ -233,6 +227,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else if (route.view === 'training') {
       updateGreeting();
       showView('training');
+      // Set training context from URL parameters
+      if (window.setTrainingContext) {
+        window.setTrainingContext(
+          route.trainingModuleId || null,
+          route.trainingLectureId || null
+        );
+      }
       if (window.initTrainingView) {
         window.initTrainingView();
       }
@@ -432,11 +433,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       const response = await fetch(achievementsPath);
       if (response.ok) {
         APP_CONTENT.achievements = await response.json();
-        console.log(
-          `[App] Loaded ${
-            Object.keys(APP_CONTENT.achievements).length
-          } achievements`
-        );
       } else {
         console.warn('[App] No achievements.json found, achievements disabled');
         APP_CONTENT.achievements = {};
@@ -447,10 +443,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     window.APP_CONTENT = APP_CONTENT;
-
-    console.log(
-      '[App] Lazy loading mode: Modules loaded, lectures will load on-demand'
-    );
   }
 
   /**
@@ -703,6 +695,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     );
   }
 
+  // Expose displayLecturesForModule globally for breadcrumb navigation
+  window.displayLecturesForModule = displayLecturesForModule;
+
   // --- Lecture Player Logic (using LectureModule) ---
   async function startLecture(moduleId, lectureId, startIndex = 0) {
     currentModuleId = moduleId;
@@ -758,6 +753,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lecture = moduleContent?.lectures?.[lectureId];
     currentLectureTopic = lecture?.topic || lectureId;
 
+    // Inject dynamic breadcrumb header for lecture player
+    const moduleData = MODULES.find((m) => m.id === moduleId);
+    injectLecturePlayerHeader({
+      moduleId: moduleId,
+      lectureId: lectureId,
+      moduleTitle: moduleData?.title || moduleId,
+      moduleIcon: moduleData?.icon || 'modules',
+      lectureTopic: lecture?.topic || lectureId,
+      hasQuiz: lecture?.quiz && lecture.quiz.length > 0
+    });
+
     window.LectureModule.startLecture(
       moduleId,
       lectureId,
@@ -774,6 +780,75 @@ document.addEventListener('DOMContentLoaded', async () => {
       showView,
       startIndex
     );
+  }
+
+  // Helper function to inject lecture player header
+  function injectLecturePlayerHeader(options) {
+    const container = document.getElementById(
+      'lecture-player-header-container'
+    );
+    if (!container) return;
+
+    container.innerHTML = '';
+    if (window.createAppHeader) {
+      const header = window.createAppHeader('lecturePlayer', options);
+      container.appendChild(header);
+
+      // Update theme icons
+      if (window.updateMenuThemeIcons) {
+        window.updateMenuThemeIcons(header);
+      }
+
+      // Update dev mode badge
+      if (window.updateDevModeUI) {
+        window.updateDevModeUI();
+      }
+
+      // Show/hide quiz button based on availability
+      const quizBtn = header.querySelector('#lecture-quiz-btn-lecturePlayer');
+      if (quizBtn) {
+        quizBtn.style.display = options.hasQuiz ? 'block' : 'none';
+      }
+    }
+  }
+
+  // Helper function to inject lecture overview header
+  function injectLectureOverviewHeader(options) {
+    const container = document.getElementById(
+      'lecture-overview-header-container'
+    );
+    if (!container) return;
+
+    container.innerHTML = '';
+    if (window.createAppHeader) {
+      const header = window.createAppHeader('lectureOverview', options);
+      container.appendChild(header);
+
+      // Update theme icons
+      if (window.updateMenuThemeIcons) {
+        window.updateMenuThemeIcons(header);
+      }
+
+      // Update dev mode badge
+      if (window.updateDevModeUI) {
+        window.updateDevModeUI();
+      }
+
+      // Setup back-to-player button
+      const backBtn = header.querySelector(
+        '#back-to-player-btn-lectureOverview'
+      );
+      if (backBtn) {
+        backBtn.addEventListener('click', () => {
+          document.getElementById('lecture-player').style.display = 'flex';
+          document.getElementById('lecture-overview').style.display = 'none';
+          updateURL(
+            `/module/${currentModuleId}/lecture/${currentLectureId}/item/${lectureState.currentIndex}`,
+            document.title.split(' - ')[0]
+          );
+        });
+      }
+    }
   }
 
   function renderCurrentLectureItem() {
@@ -821,6 +896,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // --- Lecture Overview ---
   function showLectureOverview() {
+    // Inject dynamic header for lecture overview
+    const moduleData = MODULES.find((m) => m.id === currentModuleId);
+    const lecture = APP_CONTENT[currentModuleId]?.lectures?.[currentLectureId];
+    injectLectureOverviewHeader({
+      moduleId: currentModuleId,
+      moduleTitle: moduleData?.title || currentModuleId,
+      lectureTopic: lecture?.topic || currentLectureId
+    });
+
     window.LectureModule.showLectureOverview(
       currentModuleId,
       currentLectureId,
@@ -965,14 +1049,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function setupNavigationListeners() {
-    buttons.backToLectures.addEventListener('click', () => {
-      displayLecturesForModule(currentModuleId);
-    });
-
-    buttons.backToPlayer.addEventListener('click', () => {
-      // Navigate back to lecture list
-      displayLecturesForModule(currentModuleId);
-    });
+    // backToPlayer is now handled dynamically in injectLectureOverviewHeader
 
     // Header navigation using event delegation to handle all view variants
     document.addEventListener('click', (e) => {
@@ -1031,19 +1108,21 @@ document.addEventListener('DOMContentLoaded', async () => {
           window.toggleTheme();
         }
       }
+
+      // Lecture player: Overview button (breadcrumb header)
+      else if (target.id && target.id.startsWith('lecture-overview-btn')) {
+        showLectureOverview();
+      }
+
+      // Lecture player: Quiz button (breadcrumb header)
+      else if (target.id && target.id.startsWith('lecture-quiz-btn')) {
+        startQuiz(currentModuleId, currentLectureId);
+      }
     });
   }
 
   function setupLectureListeners() {
-    buttons.lectureOverview.addEventListener('click', () => {
-      showLectureOverview();
-    });
-
-    if (buttons.lectureQuizButton) {
-      buttons.lectureQuizButton.addEventListener('click', () => {
-        startQuiz(currentModuleId, currentLectureId);
-      });
-    }
+    // Overview and Quiz buttons are now handled via event delegation in setupNavigationListeners
 
     buttons.backToLecture.addEventListener('click', () => {
       showView('lecture');

@@ -93,15 +93,8 @@ async function loadLectureFromBundle(studyId, moduleId, lectureId) {
         lectureId
       );
       if (bundleData) {
-        console.log(
-          `[BundleLoader] Loaded from IndexedDB (current): ${moduleId}/${lectureId}`
-        );
         return bundleToLecture(bundleData);
       }
-    } else if (indexedDbStatus === 'outdated') {
-      console.log(
-        `[BundleLoader] IndexedDB data outdated, trying network: ${moduleId}/${lectureId}`
-      );
     }
   }
 
@@ -113,21 +106,17 @@ async function loadLectureFromBundle(studyId, moduleId, lectureId) {
     const response = await fetch(bundlePath);
     if (response.ok) {
       const bundle = await response.json();
-      console.log(
-        `[BundleLoader] Loaded from network: ${moduleId}/${lectureId}`
-      );
 
       // Auto-save to IndexedDB for offline access
       if (window.DownloadManager) {
-        window.DownloadManager.saveBundle(studyId, moduleId, lectureId, bundle)
-          .then(() =>
-            console.log(
-              `[BundleLoader] Saved to IndexedDB: ${moduleId}/${lectureId}`
-            )
-          )
-          .catch((e) =>
-            console.warn('[BundleLoader] Failed to save bundle:', e)
-          );
+        window.DownloadManager.saveBundle(
+          studyId,
+          moduleId,
+          lectureId,
+          bundle
+        ).catch((e) =>
+          console.warn('[BundleLoader] Failed to save bundle:', e)
+        );
       }
 
       return bundleToLecture(bundle);
@@ -147,9 +136,6 @@ async function loadLectureFromBundle(studyId, moduleId, lectureId) {
       lectureId
     );
     if (bundleData) {
-      console.log(
-        `[BundleLoader] Offline fallback - using outdated IndexedDB data: ${moduleId}/${lectureId}`
-      );
       return bundleToLecture(bundleData);
     }
   }
@@ -205,7 +191,6 @@ function injectLectureIntoContent(APP_CONTENT, moduleId, lectureId, lecture) {
     APP_CONTENT[moduleId].lectures = {};
   }
   APP_CONTENT[moduleId].lectures[lectureId] = lecture;
-  console.log(`[BundleLoader] Injected lecture: ${moduleId}/${lectureId}`);
 }
 
 /**

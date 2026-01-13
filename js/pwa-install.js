@@ -15,14 +15,12 @@ window.PWAInstall = (function () {
       e.preventDefault();
       // Stash the event so it can be triggered later
       deferredPrompt = e;
-      console.log('[PWA] Install prompt saved');
       // Update UI to show the install button
       updateInstallButton();
     });
 
     // Listen for successful installation
     window.addEventListener('appinstalled', () => {
-      console.log('[PWA] App was installed');
       deferredPrompt = null;
       updateInstallButton();
     });

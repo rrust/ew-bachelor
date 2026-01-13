@@ -22,11 +22,6 @@ async function loadSearchIndex() {
     );
     if (response.ok) {
       searchIndexCache = await response.json();
-      console.log(
-        `[Search] Index loaded: ${
-          searchIndexCache.entries?.length || 0
-        } entries`
-      );
       return searchIndexCache;
     }
   } catch (e) {
@@ -54,6 +49,70 @@ async function searchWithIndex(query, modules) {
     searchTerms.push(lowerQuery.slice(0, -1));
   }
 
+  // Type filter keywords mapping
+  const typeFilters = {
+    video: 'youtube-video',
+    youtube: 'youtube-video',
+    film: 'youtube-video',
+    diagramm: 'mermaid-diagram',
+    grafik: 'mermaid-diagram',
+    flowchart: 'mermaid-diagram',
+    schema: 'mermaid-diagram',
+    lückentext: 'fill-in-the-blank',
+    zuordnung: 'matching',
+    sortierung: 'ordering',
+    berechnung: 'calculation',
+    übung: [
+      'practice-exercise',
+      'fill-in-the-blank',
+      'matching',
+      'ordering',
+      'calculation'
+    ],
+    selbsttest: ['self-assessment', 'self-assessment-mc'],
+    checkliste: 'self-assessment',
+    quiz: ['multiple-choice', 'multiple-choice-multiple', 'self-assessment-mc']
+  };
+
+  // Check if query is a type filter
+  const filterType = typeFilters[lowerQuery];
+  const isTypeFilter = filterType !== undefined;
+
+  // If type filter, search for items of that type
+  if (isTypeFilter) {
+    const filterTypes = Array.isArray(filterType) ? filterType : [filterType];
+
+    for (const entry of index.entries) {
+      const module = modules.find((m) => m.id === entry.moduleId);
+      if (!module) continue;
+
+      // Check items for matching types
+      if (entry.items) {
+        for (const item of entry.items) {
+          if (filterTypes.includes(item.type)) {
+            results.push({
+              type: 'lecture-item',
+              itemType: item.type,
+              moduleId: entry.moduleId,
+              lectureId: entry.lectureId,
+              itemIndex: item.index,
+              title: item.title,
+              subtitle: `${entry.topic} · ${module.title}`,
+              icon: getItemIconForType(item.type),
+              url: `#/module/${entry.moduleId}/lecture/${entry.lectureId}/item/${item.index}`,
+              score: 10
+            });
+          }
+        }
+      }
+    }
+
+    // Sort and return
+    results.sort((a, b) => b.score - a.score);
+    return results.slice(0, 50); // Allow more results for filters
+  }
+
+  // Regular search
   for (const entry of index.entries) {
     const module = modules.find((m) => m.id === entry.moduleId);
     if (!module) continue;
@@ -93,6 +152,26 @@ async function searchWithIndex(query, modules) {
       score += 2;
     }
 
+    // Also check individual items for title matches
+    if (entry.items) {
+      for (const item of entry.items) {
+        if (matchesAny(item.title, searchTerms)) {
+          results.push({
+            type: 'lecture-item',
+            itemType: item.type,
+            moduleId: entry.moduleId,
+            lectureId: entry.lectureId,
+            itemIndex: item.index,
+            title: item.title,
+            subtitle: `${entry.topic} · ${module.title}`,
+            icon: getItemIconForType(item.type),
+            url: `#/module/${entry.moduleId}/lecture/${entry.lectureId}/item/${item.index}`,
+            score: 5
+          });
+        }
+      }
+    }
+
     if (score > 0) {
       results.push({
         type: 'lecture',
@@ -109,7 +188,30 @@ async function searchWithIndex(query, modules) {
 
   // Sort by score and limit
   results.sort((a, b) => b.score - a.score);
-  return results.slice(0, 15);
+  return results.slice(0, 30);
+}
+
+/**
+ * Get icon for item type
+ * @param {string} type - Item type
+ * @returns {string} Icon name
+ */
+function getItemIconForType(type) {
+  const icons = {
+    'youtube-video': '📺',
+    'learning-content': 'book',
+    'self-assessment': 'clipboard',
+    'self-assessment-mc': 'document',
+    'mermaid-diagram': '📊',
+    'multiple-choice': 'document',
+    'multiple-choice-multiple': 'document',
+    'fill-in-the-blank': '✏️',
+    matching: '🔗',
+    ordering: '🔢',
+    calculation: '🧮',
+    'practice-exercise': '💪'
+  };
+  return icons[type] || 'document';
 }
 
 /**

@@ -222,7 +222,6 @@ function unlockAchievement(achievementId) {
   };
 
   saveUserProgress(progress);
-  console.log('Achievement unlocked:', achievementId);
 }
 
 /**
@@ -258,7 +257,6 @@ function extendAchievement(achievementId) {
   achievementProgress.status = 'unlocked';
 
   saveUserProgress(progress);
-  console.log('Achievement extended:', achievementId);
 }
 
 /**
@@ -278,7 +276,6 @@ function lockAchievement(achievementId) {
   if (progress.modules[moduleId]?.achievements?.[achievementId]) {
     delete progress.modules[moduleId].achievements[achievementId];
     saveUserProgress(progress);
-    console.log('Achievement locked:', achievementId);
   }
 }
 

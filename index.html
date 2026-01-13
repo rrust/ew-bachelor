@@ -100,10 +100,7 @@
     >
       <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-center">
-          <span
-            data-icon="rocket"
-            data-icon-class="w-5 h-5 mr-2"
-          ></span>
+          <span data-icon="rocket" data-icon-class="w-5 h-5 mr-2"></span>
           <span class="font-medium">Neue Version verfügbar!</span>
         </div>
         <button
@@ -449,34 +446,8 @@
         style="display: none"
         class="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex flex-col"
       >
-        <!-- Sticky Header -->
-        <div
-          class="bg-white dark:bg-gray-800 shadow-sm px-4 py-2 flex-shrink-0 flex justify-between items-center"
-        >
-          <button
-            id="back-to-lectures-button"
-            aria-label="Zurück zur Vorlesungsliste"
-            class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 text-sm py-1 px-2 rounded transition duration-300"
-          >
-            &larr; Zurück
-          </button>
-          <div class="flex gap-2">
-            <button
-              id="lecture-overview-button"
-              aria-label="Vorlesungsübersicht anzeigen (Taste O)"
-              class="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium py-1.5 px-3 rounded-md transition duration-300"
-            >
-              Übersicht
-            </button>
-            <button
-              id="lecture-quiz-button"
-              class="bg-green-500 hover:bg-green-600 text-white text-sm font-medium py-1.5 px-3 rounded-md transition duration-300"
-              style="display: none"
-            >
-              Test
-            </button>
-          </div>
-        </div>
+        <!-- Dynamic Breadcrumb Header (injected by JS) -->
+        <div id="lecture-player-header-container"></div>
 
         <!-- Scrollable Content Area -->
         <div class="flex-1 overflow-y-auto min-h-0">
@@ -530,17 +501,8 @@
         style="display: none"
         class="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex flex-col"
       >
-        <!-- Sticky Header -->
-        <div
-          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0"
-        >
-          <button
-            id="back-to-player-button"
-            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
-          >
-            &larr; Zurück
-          </button>
-        </div>
+        <!-- Dynamic Header (injected by JS) -->
+        <div id="lecture-overview-header-container"></div>
 
         <!-- Scrollable Content Area -->
         <div class="flex-1 overflow-y-auto min-h-0">
@@ -767,7 +729,8 @@
               <h3 class="text-xl font-bold">App zurücksetzen</h3>
             </div>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Behebt Probleme durch Löschen des Caches. Dein Lernfortschritt bleibt erhalten!
+              Behebt Probleme durch Löschen des Caches. Dein Lernfortschritt
+              bleibt erhalten!
             </p>
             <button
               id="reset-app-button"
@@ -839,12 +802,22 @@
     </div>
 
     <!-- View for Training Mode -->
-    <div id="training-view" style="display: none">
-      <!-- Header injected by components.js -->
+    <div
+      id="training-view"
+      style="display: none"
+      class="min-h-screen flex flex-col"
+    >
+      <!-- Sticky Header Container -->
+      <div
+        id="training-header-container"
+        class="sticky top-0 z-40 bg-white dark:bg-gray-800 shadow-sm"
+      ></div>
 
-      <div class="container mx-auto px-4 md:px-8 py-2 md:py-4">
-        <div id="training-content">
-          <!-- Content will be rendered by training.js -->
+      <div class="flex-1 overflow-y-auto">
+        <div class="container mx-auto px-4 md:px-8 py-2 md:py-4">
+          <div id="training-content">
+            <!-- Content will be rendered by training.js -->
+          </div>
         </div>
       </div>
     </div>
@@ -1245,7 +1218,6 @@
               './sw.js',
               { updateViaCache: 'none' }
             );
-            console.log('SW registered:', registration.scope);
 
             // Force check for updates on every page load
             try {
