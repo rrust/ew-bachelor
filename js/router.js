@@ -82,11 +82,14 @@ function parseURL() {
     // queryString was extracted at the top of parseURL()
     if (queryString) {
       const params = new URLSearchParams(queryString);
-      if (params.has('module')) {
-        route.trainingModuleId = params.get('module');
+      // Only set if parameter has a non-empty value
+      const moduleParam = params.get('module');
+      const lectureParam = params.get('lecture');
+      if (moduleParam) {
+        route.trainingModuleId = moduleParam;
       }
-      if (params.has('lecture')) {
-        route.trainingLectureId = params.get('lecture');
+      if (lectureParam) {
+        route.trainingLectureId = lectureParam;
       }
     }
   } else if (parts[offset] === 'search') {
