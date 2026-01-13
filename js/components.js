@@ -10,7 +10,7 @@
 function createAppHeader(view = 'moduleMap', options = {}) {
   const header = document.createElement('header');
   header.className =
-    'bg-white dark:bg-gray-800 shadow-md mb-8 sticky top-0 z-40';
+    'bg-white dark:bg-gray-800 mb-8 sticky top-0 z-40';
 
   // Get current study info
   const studyInfo =

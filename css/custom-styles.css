@@ -389,3 +389,29 @@
     height: 1rem;
   }
 }
+
+/* ===== App Header Improvements ===== */
+
+/* Subtle bottom shadow for app header */
+header.sticky {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+}
+.dark header.sticky {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25), 0 1px 2px -1px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Search View Sticky Input ===== */
+
+/* Sticky search input container */
+#search-view .search-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.dark #search-view .search-sticky-header {
+  background: #1f2937;
+}

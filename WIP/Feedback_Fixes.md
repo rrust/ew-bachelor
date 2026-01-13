@@ -74,7 +74,7 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 ### ⬜ Info-Dialog bei abgelaufenem Achievement
 
 **Problem:** Klick auf abgelaufenes Achievement zeigt keinen hilfreichen Dialog.
-**Gewünscht:** 
+**Gewünscht:**
 1. Info-Dialog: "Du musst den Test nochmal machen, um das Achievement zu verlängern"
 2. OK-Button führt direkt zum Test
 **Betroffene Dateien:** `js/achievements-ui.js`
@@ -94,7 +94,7 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 **Problem:** Suche findet nur exakt "Cheat-Sheet", nicht "Cheatsheet" oder "Cheat Sheet".
 **Gewünscht:** Fuzzy-Matching für Varianten:
 - "Cheat-Sheet"
-- "Cheatsheet" 
+- "Cheatsheet"
 - "Cheat Sheet"
 - "cheat sheet"
 **Betroffene Dateien:** `js/search.js`, `scripts/generate-search-index.js`
@@ -130,22 +130,25 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 ## Priorisierung
 
 ### Hoch (Funktionale Bugs)
+
 1. Kontextuelles Training funktioniert nicht
 2. Badge-Anzahl aktualisiert sich nicht
 3. Formel-Darstellung fehlerhaft
 
 ### Mittel (UX Verbesserungen)
+
 4. Such-Eingabe sticky
-5. Info-Dialog bei abgelaufenem Achievement
-6. YouTube-Video Validierung & Fallback
-7. Flexiblere Cheat-Sheet Suche
+2. Info-Dialog bei abgelaufenem Achievement
+3. YouTube-Video Validierung & Fallback
+4. Flexiblere Cheat-Sheet Suche
 
 ### Niedrig (Polish)
+
 8. App Header Drop-Shadow
-9. Cheat-Sheet Icon entfernen
-10. Cheat-Sheet kleinere Darstellung
-11. Cheat-Sheet Fullscreen
-12. Token-Verlängerung auf Achievements-Seite
+2. Cheat-Sheet Icon entfernen
+3. Cheat-Sheet kleinere Darstellung
+4. Cheat-Sheet Fullscreen
+5. Token-Verlängerung auf Achievements-Seite
 
 ---
 
