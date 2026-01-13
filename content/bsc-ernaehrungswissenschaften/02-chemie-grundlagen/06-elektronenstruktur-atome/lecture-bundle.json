@@ -621,29 +621,19 @@
       "scenario": "Du wirfst einen Tennisball (Masse: 58 g) mit einer Geschwindigkeit von 20 m/s. Gleichzeitig bewegt sich ein Elektron (Masse: 9,1 × 10⁻³¹ kg) mit 2 × 10⁶ m/s.",
       "tasks": [
         {
-          "question": "Warum bemerken wir im Alltag keine Welleneigenschaften des Tennisballs?",
-          "type": "multiple-choice",
-          "options": [
-            "Weil der Tennisball zu langsam ist",
-            "Weil die Masse des Tennisballs zu groß ist und damit λ extrem klein wird",
-            "Weil der Tennisball nicht geladen ist",
-            "Weil Tennisbälle keine Wellen sein können"
-          ],
-          "correctAnswer": "Weil die Masse des Tennisballs zu groß ist und damit λ extrem klein wird"
+          "id": "task1",
+          "instruction": "Warum bemerken wir im Alltag keine Welleneigenschaften des Tennisballs?",
+          "hint": "Denke an die de-Broglie-Gleichung λ = h/mv. Was passiert bei großer Masse?",
+          "solution": "Weil die Masse des Tennisballs zu groß ist und damit λ extrem klein wird (viel kleiner als Atomabstände)"
         },
         {
-          "question": "Warum ist der Wellencharakter beim Elektron wichtig?",
-          "type": "multiple-choice",
-          "options": [
-            "Elektronen sind immer schneller als Licht",
-            "Die geringe Masse führt zu einer Wellenlänge im Bereich von Atomabständen",
-            "Elektronen haben keine Masse",
-            "Elektronen können nicht als Teilchen betrachtet werden"
-          ],
-          "correctAnswer": "Die geringe Masse führt zu einer Wellenlänge im Bereich von Atomabständen"
+          "id": "task2",
+          "instruction": "Warum ist der Wellencharakter beim Elektron wichtig?",
+          "hint": "Elektronen haben eine sehr geringe Masse.",
+          "solution": "Die geringe Masse führt zu einer Wellenlänge im Bereich von Atomabständen, daher sind Welleneffekte (Beugung, Interferenz) beobachtbar"
         }
       ],
-      "realWorldConnection": "Diese Erkenntnis ist die Grundlage für Elektronenmikroskope, die mit \"Elektronenwellen\" arbeiten und Auflösungen erreichen, die mit Licht unmöglich wären.",
+      "explanation": "Diese Erkenntnis ist die Grundlage für Elektronenmikroskope, die mit \"Elektronenwellen\" arbeiten und Auflösungen erreichen, die mit Licht unmöglich wären.",
       "content": ""
     },
     {
@@ -1050,43 +1040,31 @@
       "scenario": "Du sollst die Elektronenkonfiguration von Arsen (As, Z=33) aufstellen. Arsen ist ein Halbmetall in der 5. Hauptgruppe.",
       "tasks": [
         {
-          "question": "Welcher Edelgaskern kommt vor Arsen?",
-          "type": "multiple-choice",
-          "options": [
-            "[He]",
-            "[Ne]",
-            "[Ar]",
-            "[Kr]"
-          ],
-          "correctAnswer": "[Ar]"
+          "id": "task1",
+          "instruction": "Welcher Edelgaskern kommt vor Arsen?",
+          "hint": "Welches Edelgas hat die höchste Ordnungszahl, die noch kleiner als 33 ist?",
+          "solution": "[Ar] (Argon, Z=18)"
         },
         {
-          "question": "Wie viele Elektronen muss Arsen nach dem Ar-Kern noch haben?",
-          "type": "calculation",
-          "correctAnswer": 15,
-          "tolerance": 0,
-          "unit": "Elektronen"
+          "id": "task2",
+          "instruction": "Wie viele Elektronen muss Arsen nach dem Ar-Kern noch haben?",
+          "hint": "33 - 18 = ?",
+          "solution": "15 Elektronen (33 - 18 = 15)"
         },
         {
-          "question": "Wie lautet die vollständige Kurzschreibweise für As?",
-          "type": "multiple-choice",
-          "options": [
-            "[Ar] 4s² 3d¹⁰ 4p³",
-            "[Ar] 4s² 4p⁵",
-            "[Ar] 3d¹⁰ 4s² 4p³",
-            "[Kr] 4s² 4p³"
-          ],
-          "correctAnswer": "[Ar] 4s² 3d¹⁰ 4p³"
+          "id": "task3",
+          "instruction": "Wie lautet die vollständige Kurzschreibweise für As?",
+          "hint": "Nach Ar kommen 4s, dann 3d, dann 4p",
+          "solution": "[Ar] 4s² 3d¹⁰ 4p³"
         },
         {
-          "question": "Wie viele ungepaarte Elektronen hat Arsen?",
-          "type": "calculation",
-          "correctAnswer": 3,
-          "tolerance": 0,
-          "unit": "ungepaarte e⁻"
+          "id": "task4",
+          "instruction": "Wie viele ungepaarte Elektronen hat Arsen?",
+          "hint": "Schau dir die 4p-Orbitale an (Hund-Regel)",
+          "solution": "3 ungepaarte Elektronen (in den 4p-Orbitalen)"
         }
       ],
-      "realWorldConnection": "Arsen ist trotz seiner Giftigkeit ein wichtiges Spurenelement in der Umwelt. Die Elektronenkonfiguration erklärt seine Stellung in der 5. Hauptgruppe (3 ungepaarte p-Elektronen wie bei N und P).",
+      "explanation": "Arsen ist trotz seiner Giftigkeit ein wichtiges Spurenelement in der Umwelt. Die Elektronenkonfiguration erklärt seine Stellung in der 5. Hauptgruppe (3 ungepaarte p-Elektronen wie bei N und P).",
       "content": ""
     },
     {
@@ -1337,5 +1315,5 @@
       "explanation": "**Erklärung:** Linienspektren sind elementspezifisch. Natrium emittiert charakteristisches gelbes Licht. Flammenfärbung und AAS nutzen diese Prinzipien zur Elementanalyse. UV-Vis-Spektroskopie nutzt sowohl UV als auch sichtbares Licht (daher \"UV-Vis\")."
     }
   ],
-  "generatedAt": "2026-01-13T00:00:40.215Z"
+  "generatedAt": "2026-01-13T00:50:07.150Z"
 }

@@ -3,25 +3,21 @@ type: 'practice-exercise'
 title: 'Molekülformeln lesen und verstehen'
 scenario: 'Du lernst für eine Chemie-Prüfung und übst das Lesen von Molekülformeln. Bei jeder Formel musst du die Atome zählen.'
 tasks:
-  - question: 'Wie viele Atome enthält ein Molekül Wasser (H₂O) insgesamt?'
-    type: 'calculation'
-    correctAnswer: 3
-    tolerance: 0
-    unit: 'Atome'
-  - question: 'Wie viele Kohlenstoffatome enthält ein Molekül Glucose (C₆H₁₂O₆)?'
-    type: 'calculation'
-    correctAnswer: 6
-    tolerance: 0
-    unit: 'Atome'
-  - question: 'Wie viele Atome enthält ein Molekül Ethanol (C₂H₆O) insgesamt?'
-    type: 'calculation'
-    correctAnswer: 9
-    tolerance: 0
-    unit: 'Atome'
-  - question: 'Wie viele Wasserstoffatome enthält ein Molekül Saccharose (Haushaltszucker, C₁₂H₂₂O₁₁)?'
-    type: 'calculation'
-    correctAnswer: 22
-    tolerance: 0
-    unit: 'Atome'
-realWorldConnection: 'Das Verständnis von Molekülformeln ist essenziell für die Ernährungswissenschaft, z.B. um die Zusammensetzung von Kohlenhydraten, Fetten und Proteinen zu verstehen.'
+  - id: 'task1'
+    instruction: 'Wie viele Atome enthält ein Molekül Wasser (H₂O) insgesamt?'
+    hint: 'Zähle H-Atome und O-Atome zusammen.'
+    solution: '3 Atome (2 H + 1 O)'
+  - id: 'task2'
+    instruction: 'Wie viele Kohlenstoffatome enthält ein Molekül Glucose (C₆H₁₂O₆)?'
+    hint: 'Die Zahl nach C gibt die Anzahl an.'
+    solution: '6 Kohlenstoffatome'
+  - id: 'task3'
+    instruction: 'Wie viele Atome enthält ein Molekül Ethanol (C₂H₆O) insgesamt?'
+    hint: 'Addiere: 2 + 6 + 1'
+    solution: '9 Atome (2 C + 6 H + 1 O)'
+  - id: 'task4'
+    instruction: 'Wie viele Wasserstoffatome enthält ein Molekül Saccharose (Haushaltszucker, C₁₂H₂₂O₁₁)?'
+    hint: 'Schaue auf den Index nach H.'
+    solution: '22 Wasserstoffatome'
+explanation: 'Das Verständnis von Molekülformeln ist essenziell für die Ernährungswissenschaft, z.B. um die Zusammensetzung von Kohlenhydraten, Fetten und Proteinen zu verstehen.'
 ---

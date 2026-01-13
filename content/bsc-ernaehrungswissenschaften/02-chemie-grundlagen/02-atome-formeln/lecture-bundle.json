@@ -2,20 +2,20 @@
   "moduleId": "02-chemie-grundlagen",
   "lectureId": "02-atome-formeln",
   "metadata": {
-    "topic": "Atome, Formeln & Stöchiometrie",
+    "topic": "Atome, Moleküle und Ionen",
     "description": "Aufbau von Atomen, Ordnungszahl und Isotope, Periodensystem, Moleküle und Ionen, Coulomb-Gesetz, das Mol, Formelermittlung und Nomenklatur anorganischer Verbindungen.",
     "estimatedTime": 60,
-    "version": "0.0.1",
+    "version": "1.0.0",
     "sources": [
       {
-        "id": "vorlesung-k2",
+        "id": "kapitel-2",
         "title": "Vorlesungsfolien Kapitel 2 (WS2025)",
-        "url": "https://moodle.univie.ac.at/pluginfile.php/31885029/mod_resource/content/1/MMChemieKapitel2.pdf",
+        "url": "https://moodle.univie.ac.at/mod/resource/view.php?id=19319340",
         "type": "pdf"
       },
       {
         "id": "mortimer",
-        "title": "Mortimer & Müller: Chemie - Das Basiswissen der Chemie (10. Aufl.)",
+        "title": "Mortimer & Müller: Chemie - Das Basiswissen der Chemie",
         "url": null,
         "type": "book"
       }
@@ -24,36 +24,47 @@
   "items": [
     {
       "type": "learning-content",
-      "topic": "Atome, Formeln & Stöchiometrie",
-      "content": "# Atome, Formeln & Stöchiometrie\n\nIn dieser Vorlesung vertiefen wir unser Verständnis der atomaren Struktur. Wir lernen, wie Atome aufgebaut sind, was Isotope sind und wie das Periodensystem organisiert ist. Außerdem beschäftigen wir uns mit chemischen Bindungen, dem Mol-Konzept und der Ermittlung chemischer Formeln.\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Die subatomaren Teilchen (Protonen, Neutronen, Elektronen) und ihre Eigenschaften beschreiben\n- Ordnungszahl, Massenzahl und die Nuklid-Schreibweise erklären\n- Isotope definieren und durchschnittliche Atommassen berechnen\n- Die Funktionsweise der Massenspektrometrie erläutern\n- Die Struktur des Periodensystems und wichtige Hauptgruppen benennen\n- Zwischen molekularen und ionischen Verbindungen unterscheiden\n- Das Coulomb-Gesetz auf Ionenbindungen anwenden\n- Das Mol und die Avogadro-Konstante verstehen und anwenden\n- Empirische und molekulare Formeln aus Analysedaten ermitteln\n- Ionische Verbindungen nach IUPAC benennen",
+      "topic": "Atome, Moleküle und Ionen",
+      "content": "# Atome, Moleküle und Ionen\n\nIn dieser Vorlesung vertiefen wir unser Verständnis der atomaren Struktur. Wir lernen, wie Atome aufgebaut sind, was Isotope sind und wie das Periodensystem organisiert ist. Außerdem beschäftigen wir uns mit chemischen Bindungen, dem Mol-Konzept und der Ermittlung chemischer Formeln.\n\n## Lernziele\n\nNach dieser Vorlesung können Sie:\n\n- Die subatomaren Teilchen (Protonen, Neutronen, Elektronen) und ihre Eigenschaften beschreiben\n- Ordnungszahl, Massenzahl und die Nuklid-Schreibweise erklären\n- Isotope definieren und durchschnittliche Atommassen berechnen\n- Die Struktur des Periodensystems und wichtige Hauptgruppen benennen\n- Zwischen molekularen und ionischen Verbindungen unterscheiden\n- Das Coulomb-Gesetz auf Ionenbindungen anwenden\n- Das Mol und die Avogadro-Konstante verstehen und anwenden\n- Empirische und molekulare Formeln aus Analysedaten ermitteln\n- Ionische Verbindungen nach IUPAC benennen",
       "sourceRefs": []
     },
     {
       "type": "learning-content",
-      "topic": "Atomaufbau",
+      "topic": "Einführung: Atome",
       "sourceRefs": [
         {
-          "sourceId": "vorlesung-k2",
-          "pages": "2-4"
+          "sourceId": "kapitel-2",
+          "pages": "1-3"
         }
       ],
-      "content": "## Die drei subatomaren Teilchen\n\nDas Atom ist keineswegs unteilbar, sondern ein komplexes System aus subatomaren Partikeln. Historische Experimente wie Rutherfords Streuversuch zeigten, dass das Atom größtenteils aus leerem Raum besteht, in dessen Zentrum ein winziger, extrem dichter Kern (Nukleus) sitzt.\n\nWir unterscheiden drei fundamentale Bausteine:\n\n### 1. Protonen ($p^+$)\n\n- Befinden sich im **Atomkern**\n- Tragen eine **positive elektrische Elementarladung** ($+1$)\n- Masse: $1,673 \\times 10^{-24}$ g (relativ: $1,007$ u)\n- Die **Anzahl der Protonen bestimmt die chemische Identität** des Elements\n\n### 2. Neutronen ($n^0$)\n\n- Ebenfalls im **Kern** lokalisiert\n- **Elektrisch neutral** (keine Ladung)\n- Masse: $1,009$ u (fast identisch mit Proton)\n- Fungieren als \"Klebstoff\" im Kern durch die **starke Kernkraft**\n\n### 3. Elektronen ($e^-$)\n\n- Bewegen sich in der **Elektronenwolke** um den Kern\n- Tragen eine **negative Elementarladung** ($-1$)\n- Extrem leicht: nur $0,0005$ u\n- Nehmen fast das gesamte **Volumen** des Atoms ein\n- Sind für **chemische Bindungen** verantwortlich\n\n| Teilchen | Ladung | Masse (u) | Ort   |\n| -------- | ------ | --------- | ----- |\n| Proton   | $+1$   | $1,007$   | Kern  |\n| Neutron  | $0$    | $1,009$   | Kern  |\n| Elektron | $-1$   | $0,0005$  | Hülle |"
+      "content": "# Atome: Die Bausteine der Materie\n\nIn diesem Kapitel werden wir den Aufbau von Atomen verstehen lernen – die grundlegenden Bausteine aller Materie. Dieses Wissen bildet die Basis für das Verständnis chemischer Reaktionen, Bindungen und letztlich auch für biochemische Prozesse in der Ernährungswissenschaft.\n\n## Übersicht der Themen\n\n1. **Subatomare Teilchen** – Protonen, Neutronen und Elektronen\n2. **Ordnungszahl und Massenzahl** – Die Identität eines Elements\n3. **Isotope** – Varianten desselben Elements\n4. **Das Periodensystem** – Ordnung der Elemente\n5. **Moleküle und Ionen** – Wie Atome sich verbinden\n6. **Das Mol** – Chemiker zählen in Paketen\n7. **Formelermittlung** – Von der Analyse zur Formel\n\n## Warum ist das wichtig für Ernährungswissenschaften?\n\nNährstoffe wie Kohlenhydrate, Fette und Proteine bestehen aus Atomen, die in bestimmten Verhältnissen verbunden sind. Um zu verstehen, wie diese Moleküle im Körper verarbeitet werden, müssen wir zunächst verstehen, woraus sie aufgebaut sind.\n\n> 💡 **Lernziel:** Nach diesem Abschnitt verstehen Sie, wie Atome aufgebaut sind und können die drei subatomaren Teilchen beschreiben."
     },
     {
       "type": "learning-content",
-      "topic": "Atomaufbau",
+      "topic": "Subatomare Teilchen",
       "sourceRefs": [
         {
-          "sourceId": "vorlesung-k2",
-          "pages": "2-4"
+          "sourceId": "kapitel-2",
+          "pages": "3-5"
         }
       ],
-      "content": "## Kern und Elektronenhülle\n\nDas Atom besteht aus zwei fundamental unterschiedlichen Bereichen:\n\n### Der Atomkern (Nukleus)\n\nDer Kern enthält alle **Protonen** und **Neutronen** – zusammen als **Nukleonen** bezeichnet. Er:\n\n- Ist extrem **klein** im Vergleich zum Gesamtatom\n- Enthält nahezu die **gesamte Masse** des Atoms\n- Ist **positiv geladen** (wegen der Protonen)\n\n### Die Elektronenhülle\n\nDie Elektronen bilden eine \"Wolke\" um den Kern und:\n\n- Nehmen fast das gesamte **Volumen** des Atoms ein\n- Sind für das **chemische Verhalten** verantwortlich\n- Bestimmen die **Bindungseigenschaften**\n\n### Der Größenvergleich\n\nDer Kern ist im Vergleich zum Gesamtatom winzig. Ein anschaulicher Vergleich:\n\n> **Wäre das Atom so groß wie ein Fußballstadion, wäre der Kern so klein wie eine Erbse im Anstoßkreis.**\n\nDas bedeutet: Das Atom besteht zu über 99,99% aus \"leerem Raum\" – wobei dieser Raum von der Elektronenwolke erfüllt ist.\n\n### Ladungsneutralität\n\nIn einem neutralen Atom gilt:\n\n$$\\text{Anzahl Protonen} = \\text{Anzahl Elektronen}$$\n\nDadurch heben sich die positiven und negativen Ladungen auf."
+      "content": "# Subatomare Teilchen\n\nEin Atom besteht aus drei Arten von subatomaren Teilchen mit unterschiedlichen Eigenschaften:\n\n## 1. Protonen (p⁺)\n\n| Eigenschaft        | Wert                           |\n| ------------------ | ------------------------------ |\n| **Ladung**         | Positiv (+1)                   |\n| **Masse**          | $1{,}672623 \\times 10^{-24}$ g |\n| **Relative Masse** | 1,007 u                        |\n| **Ort**            | Im Atomkern                    |\n\n## 2. Neutronen (n⁰)\n\n| Eigenschaft        | Wert                           |\n| ------------------ | ------------------------------ |\n| **Ladung**         | Neutral (0)                    |\n| **Masse**          | $1{,}674929 \\times 10^{-24}$ g |\n| **Relative Masse** | 1,009 u                        |\n| **Ort**            | Im Atomkern                    |\n\n## 3. Elektronen (e⁻)\n\n| Eigenschaft        | Wert                          |\n| ------------------ | ----------------------------- |\n| **Ladung**         | Negativ (−1)                  |\n| **Masse**          | $9{,}109 \\times 10^{-28}$ g   |\n| **Relative Masse** | 0,0005 u                      |\n| **Ort**            | Elektronenhülle (um den Kern) |\n\n## Merksatz\n\n> 🧠 **Protonen sind positiv, Elektronen sind negativ, Neutronen sind neutral.**\n>\n> Die Masse eines Elektrons ist etwa **1840-mal kleiner** als die eines Protons!\n\n## Atommasseneinheit (u)\n\nDie **Atommasseneinheit** (u) ist definiert als 1/12 der Masse eines $^{12}C$-Atoms:\n\n$$1 \\text{ u} = 1{,}66054 \\times 10^{-24} \\text{ g}$$\n\nDiese Einheit macht es praktischer, mit atomaren Massen zu arbeiten."
+    },
+    {
+      "type": "learning-content",
+      "topic": "Atomkern und Elektronenhülle",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "4-6"
+        }
+      ],
+      "content": "# Atomkern und Elektronenhülle\n\n## Aufbau des Atoms\n\nEin Atom besteht aus zwei Hauptbereichen:\n\n### Der Atomkern\n\n- Enthält **Protonen** und **Neutronen** (zusammen: Nukleonen)\n- Trägt fast die **gesamte Masse** des Atoms (> 99,9%)\n- Ist **extrem klein** im Vergleich zum Gesamtatom\n- Hat eine **positive Ladung** (wegen der Protonen)\n\n### Die Elektronenhülle\n\n- Enthält die **Elektronen**\n- Macht das **Volumen** des Atoms aus\n- Die Elektronen bewegen sich in der sogenannten **Elektronenwolke**\n- Hat insgesamt eine **negative Ladung** (die bei neutralen Atomen die positive Kernladung ausgleicht)\n\n## Größenverhältnisse\n\n> 🏟️ **Anschauliche Analogie:**\n>\n> Wenn ein Atom so groß wäre wie ein **Fußballstadion** (Durchmesser ~200 m), dann wäre der Atomkern nur so groß wie eine **Erbse** im Mittelkreis (Durchmesser ~1 cm).\n\n**In Zahlen:**\n- Atomdurchmesser: ca. $10^{-10}$ m = 100 pm (Pikometer)\n- Kerndurchmesser: ca. $10^{-15}$ m = 1 fm (Femtometer)\n- Verhältnis: Der Kern ist etwa **100.000-mal kleiner** als das Atom\n\n## Das Atom ist größtenteils leerer Raum\n\nDies erklärt, warum manche Strahlung (wie α-Teilchen im Rutherford-Experiment) durch Materie hindurchgehen kann – sie passiert einfach den leeren Raum zwischen Kern und Hülle."
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Atomaufbau",
-      "question": "Welches Teilchen ist für die chemische Identität eines Elements verantwortlich?",
+      "topic": "Subatomare Teilchen",
+      "question": "Welches subatomare Teilchen trägt eine positive Ladung und befindet sich im Atomkern?",
       "options": [
         "Elektron",
         "Neutron",
@@ -61,317 +72,691 @@
         "Photon"
       ],
       "correctAnswer": "Proton",
-      "content": "**Erklärung:** Die Anzahl der Protonen im Kern bestimmt die Ordnungszahl und damit die chemische Identität eines Elements. Ein Atom mit 6 Protonen ist immer Kohlenstoff, eines mit 8 Protonen immer Sauerstoff – unabhängig von der Anzahl der Neutronen oder Elektronen."
+      "explanation": "Protonen haben eine positive Ladung (+1) und befinden sich zusammen mit den Neutronen im Atomkern. Elektronen sind negativ geladen und umkreisen den Kern in der Elektronenhülle. Neutronen haben keine Ladung. Photonen sind Lichtteilchen und keine subatomaren Teilchen im klassischen Sinne.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Masse der Teilchen",
+      "question": "Ergänzen Sie die folgenden Aussagen zur Masse subatomarer Teilchen.",
+      "text": "Die Masse eines Elektrons ist etwa {{blank1}}-mal kleiner als die eines Protons. Protonen und {{blank2}} haben nahezu die gleiche Masse. Die Einheit für atomare Massen ist {{blank3}}.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "1840",
+          "alternatives": [
+            "1800",
+            "2000"
+          ],
+          "hint": "Eine Zahl im Tausenderbereich"
+        },
+        {
+          "id": "blank2",
+          "answer": "Neutronen",
+          "alternatives": [
+            "Neutron"
+          ],
+          "hint": "Teilchen ohne Ladung"
+        },
+        {
+          "id": "blank3",
+          "answer": "u",
+          "alternatives": [
+            "Atommasseneinheit",
+            "amu"
+          ],
+          "hint": "Abkürzung für Atommasseneinheit"
+        }
+      ],
+      "explanation": "Elektronen sind etwa 1840-mal leichter als Protonen. Protonen und Neutronen haben fast identische Massen (ca. 1 u). Die Atommasseneinheit (u) ist die Standardeinheit für atomare Massen.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Eigenschaften subatomarer Teilchen",
+      "question": "Ordnen Sie jedes subatomare Teilchen seiner Ladung und seinem Aufenthaltsort zu.",
+      "pairs": [
+        {
+          "left": "Proton",
+          "right": "Positiv geladen, im Kern"
+        },
+        {
+          "left": "Neutron",
+          "right": "Neutral, im Kern"
+        },
+        {
+          "left": "Elektron",
+          "right": "Negativ geladen, in der Hülle"
+        }
+      ],
+      "explanation": "Protonen (+) und Neutronen (neutral) befinden sich im Atomkern. Elektronen (−) bewegen sich in der Elektronenhülle um den Kern.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Atombau",
+      "url": "https://www.youtube.com/watch?v=7kuUxo1xlw0",
+      "title": "Protonen, Neutronen und Elektronen - einfach erklärt",
+      "description": "Eine anschauliche Erklärung der subatomaren Teilchen und des Atomaufbaus.",
+      "duration": "5:32",
+      "content": ""
     },
     {
       "type": "learning-content",
-      "topic": "Ordnungszahl und Isotope",
+      "topic": "Ordnungszahl und Massenzahl",
       "sourceRefs": [
         {
-          "sourceId": "vorlesung-k2",
+          "sourceId": "kapitel-2",
           "pages": "5-7"
         }
       ],
-      "content": "## Ordnungszahl und Massenzahl\n\nUm Atome eindeutig zu klassifizieren, nutzen wir zwei spezifische Kennzahlen:\n\n### Ordnungszahl (Z)\n\nDie **Ordnungszahl** (auch Kernladungszahl genannt) entspricht der **Anzahl der Protonen** im Kern.\n\n- Da neutrale Atome elektrisch neutral sind, entspricht $Z$ auch der Anzahl der Elektronen\n- Alle Atome eines Elements haben **immer dieselbe Ordnungszahl**\n- Beispiel: Kohlenstoff hat immer $Z = 6$, Sauerstoff hat immer $Z = 8$\n\n### Massenzahl (A)\n\nDie **Massenzahl** ist die Summe aller **Nukleonen** (Kernteilchen):\n\n$$A = \\text{Anzahl Protonen} + \\text{Anzahl Neutronen}$$\n\nDie Massenzahl ist immer eine **ganze Zahl**.\n\n### Die Nuklid-Schreibweise\n\nZur vollständigen Beschreibung eines Atoms verwenden wir die Nuklid-Schreibweise:\n\n$${}^{A}_{Z}\\text{E}$$\n\nDabei steht:\n- $A$ (oben links) für die **Massenzahl**\n- $Z$ (unten links) für die **Ordnungszahl**\n- $E$ für das **Elementsymbol**\n\n**Beispiel:** ${}^{12}_{6}\\text{C}$ bedeutet:\n- 6 Protonen (→ Kohlenstoff)\n- 12 - 6 = 6 Neutronen\n- Massenzahl = 12\n\n> **Tipp:** Die Ordnungszahl wird oft weggelassen, da sie durch das Elementsymbol bereits eindeutig ist: ${}^{12}\\text{C}$"
+      "content": "# Ordnungszahl und Massenzahl\n\n## Die Ordnungszahl (Z)\n\nDie **Ordnungszahl** (Symbol: Z) gibt die **Anzahl der Protonen** im Atomkern an.\n\n> 🔑 **Schlüsselkonzept:**\n>\n> Die Ordnungszahl definiert die **Identität** eines Elements. Jedes Element hat eine eindeutige Ordnungszahl.\n\n**Beispiele:**\n- Wasserstoff (H): Z = 1 (1 Proton)\n- Kohlenstoff (C): Z = 6 (6 Protonen)\n- Aluminium (Al): Z = 13 (13 Protonen)\n- Eisen (Fe): Z = 26 (26 Protonen)\n\nBei einem **neutralen Atom** entspricht die Anzahl der Elektronen der Anzahl der Protonen.\n\n## Die Massenzahl (A)\n\nDie **Massenzahl** (Symbol: A) ist die Summe aus **Protonen und Neutronen** im Kern.\n\n$$A = Z + N$$\n\nwobei:\n- A = Massenzahl\n- Z = Anzahl der Protonen (Ordnungszahl)\n- N = Anzahl der Neutronen\n\n## Nuklid-Schreibweise\n\nAtome werden in der Nuklid-Schreibweise dargestellt:\n\n$$^{A}_{Z}\\text{X}$$\n\n**Beispiel Aluminium-27:**\n\n$$^{27}_{13}\\text{Al}$$\n\n- Massenzahl A = 27 (oben links)\n- Ordnungszahl Z = 13 (unten links)\n- Anzahl Neutronen: N = 27 − 13 = **14**\n\n## Berechnung der Neutronen\n\n$$N = A - Z$$\n\n| Element        | Symbol    | Z   | A   | Neutronen |\n| -------------- | --------- | --- | --- | --------- |\n| Kohlenstoff-12 | $^{12}C$  | 6   | 12  | 6         |\n| Kohlenstoff-14 | $^{14}C$  | 6   | 14  | 8         |\n| Uran-235       | $^{235}U$ | 92  | 235 | 143       |"
     },
     {
       "type": "learning-content",
-      "topic": "Ordnungszahl und Isotope",
+      "topic": "Isotope",
       "sourceRefs": [
         {
-          "sourceId": "vorlesung-k2",
-          "pages": "8-9"
+          "sourceId": "kapitel-2",
+          "pages": "7-9"
         }
       ],
-      "content": "## Isotope: Variationen eines Elements\n\nWährend die **Protonenzahl** ($Z$) für ein Element fix ist, kann die **Anzahl der Neutronen** variieren. Solche Atome nennt man **Isotope**.\n\n### Definition\n\n**Isotope** sind Atome desselben Elements mit:\n- **Gleicher** Anzahl an Protonen (gleiche Ordnungszahl)\n- **Unterschiedlicher** Anzahl an Neutronen (unterschiedliche Massenzahl)\n\n### Eigenschaften von Isotopen\n\n- **Nahezu identische chemische Eigenschaften** (da diese von Elektronen bestimmt werden)\n- **Unterschiedliche Masse**\n- **Unterschiedliche physikalische Stabilität** (manche Isotope sind radioaktiv)\n\n### Beispiel: Die Wasserstoff-Isotope\n\nWasserstoff ist ein besonderes Element, da seine Isotope eigene Namen haben:\n\n| Isotop    | Symbol                      | Protonen | Neutronen | Häufigkeit | Besonderheit |\n| --------- | --------------------------- | -------- | --------- | ---------- | ------------ |\n| Protium   | ${}^{1}_{1}\\text{H}$        | 1        | 0         | 99,98%     | \"Normaler\" H |\n| Deuterium | ${}^{2}_{1}\\text{H}$ oder D | 1        | 1         | 0,02%      | \"Schwerer\" H |\n| Tritium   | ${}^{3}_{1}\\text{H}$ oder T | 1        | 2         | Spuren     | Radioaktiv   |\n\nAlle drei reagieren chemisch praktisch gleich (z.B. mit Sauerstoff zu Wasser), unterscheiden sich aber in der Masse."
+      "content": "# Isotope\n\n## Definition\n\n**Isotope** sind Atome desselben Elements (gleiche Ordnungszahl Z), die sich in der **Anzahl der Neutronen** unterscheiden.\n\n> 🔬 **Merksatz:**\n>\n> Gleiche Protonenzahl, aber unterschiedliche Neutronenzahl = Isotope\n\n## Beispiel: Wasserstoff\n\nWasserstoff hat drei natürlich vorkommende Isotope:\n\n| Isotop    | Symbol      | Protonen | Neutronen | Häufigkeit          |\n| --------- | ----------- | -------- | --------- | ------------------- |\n| Protium   | $^{1}H$     | 1        | 0         | 99,98%              |\n| Deuterium | $^{2}H$ (D) | 1        | 1         | 0,02%               |\n| Tritium   | $^{3}H$ (T) | 1        | 2         | Spuren (radioaktiv) |\n\n## Beispiel: Kohlenstoff\n\nKohlenstoff hat ebenfalls mehrere Isotope:\n\n| Isotop   | Protonen | Neutronen | Eigenschaft                       |\n| -------- | -------- | --------- | --------------------------------- |\n| $^{12}C$ | 6        | 6         | Stabil, 98,9%                     |\n| $^{13}C$ | 6        | 7         | Stabil, 1,1%                      |\n| $^{14}C$ | 6        | 8         | Radioaktiv (für Altersbestimmung) |\n\n## Beispiel: Bor\n\n| Isotop   | Protonen | Neutronen | Häufigkeit |\n| -------- | -------- | --------- | ---------- |\n| $^{10}B$ | 5        | 5         | ~20%       |\n| $^{11}B$ | 5        | 6         | ~80%       |\n\n## Eigenschaften von Isotopen\n\n- **Chemisch** verhalten sich Isotope nahezu **identisch** (gleiche Elektronenzahl)\n- **Physikalisch** unterscheiden sie sich (unterschiedliche Masse)\n- Manche Isotope sind **radioaktiv** (instabiler Kern zerfällt)"
     },
     {
       "type": "learning-content",
-      "topic": "Ordnungszahl und Isotope",
+      "topic": "Atomgewicht berechnen",
       "sourceRefs": [
         {
-          "sourceId": "vorlesung-k2",
+          "sourceId": "kapitel-2",
+          "pages": "9-11"
+        }
+      ],
+      "content": "# Atomgewicht (Relative Atommasse)\n\n## Definition\n\nDa Elemente in der Natur als **Mischung verschiedener Isotope** vorkommen, ist das im Periodensystem angegebene **Atomgewicht** ein **gewichteter Durchschnitt**.\n\n## Berechnungsformel\n\n$$\\text{Atomgewicht} = \\sum_{i} (\\text{Masse}_i \\times \\text{Häufigkeit}_i)$$\n\n## Beispiel: Lithium\n\nLithium kommt in zwei stabilen Isotopen vor:\n\n| Isotop   | Masse   | Häufigkeit |\n| -------- | ------- | ---------- |\n| $^{6}Li$ | 6,015 u | 7,5%       |\n| $^{7}Li$ | 7,016 u | 92,5%      |\n\n**Berechnung:**\n\n$$\\text{Atomgewicht} = (6{,}015 \\times 0{,}075) + (7{,}016 \\times 0{,}925)$$\n\n$$= 0{,}451 + 6{,}490 = 6{,}94 \\text{ u}$$\n\n> ✅ Dieser Wert stimmt mit dem Periodensystem überein!\n\n## Beispiel: Chlor\n\n| Isotop    | Masse   | Häufigkeit |\n| --------- | ------- | ---------- |\n| $^{35}Cl$ | 34,97 u | 75,8%      |\n| $^{37}Cl$ | 36,97 u | 24,2%      |\n\n$$\\text{Atomgewicht} = (34{,}97 \\times 0{,}758) + (36{,}97 \\times 0{,}242)$$\n\n$$= 26{,}51 + 8{,}95 = 35{,}45 \\text{ u}$$\n\n## Der Standard: Kohlenstoff-12\n\nDie Skala der Atommassen basiert auf dem Isotop **$^{12}C$**, das per Definition **exakt 12 u** wiegt.\n\n> 📏 **Referenz:** 1 u = 1/12 der Masse eines $^{12}C$-Atoms"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Ordnungszahl",
+      "question": "Was gibt die Ordnungszahl (Z) eines Elements an?",
+      "options": [
+        "Die Anzahl der Neutronen im Kern",
+        "Die Anzahl der Protonen im Kern",
+        "Die Summe aus Protonen und Neutronen",
+        "Die Anzahl der Elektronen in der äußersten Schale"
+      ],
+      "correctAnswer": "Die Anzahl der Protonen im Kern",
+      "explanation": "Die Ordnungszahl Z gibt die Anzahl der Protonen im Atomkern an. Sie ist für jedes Element einzigartig und definiert damit die Identität des Elements. Die Massenzahl A ist die Summe aus Protonen und Neutronen.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Isotope",
+      "question": "Wodurch unterscheiden sich Isotope desselben Elements?",
+      "options": [
+        "Durch die Anzahl der Protonen",
+        "Durch die Anzahl der Elektronen",
+        "Durch die Anzahl der Neutronen",
+        "Durch die chemischen Eigenschaften"
+      ],
+      "correctAnswer": "Durch die Anzahl der Neutronen",
+      "explanation": "Isotope haben dieselbe Anzahl an Protonen (gleiches Element), aber unterschiedlich viele Neutronen. Daher haben sie unterschiedliche Massenzahlen, aber fast identische chemische Eigenschaften.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Neutronenberechnung",
+      "question": "Berechnen Sie die Anzahl der Neutronen für verschiedene Atome.",
+      "text": "Ein Atom mit der Ordnungszahl Z = 6 und der Massenzahl A = 14 hat {{blank1}} Neutronen. Dies ist das Isotop {{blank2}}-14, das für die Altersbestimmung verwendet wird.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "8",
+          "hint": "N = A - Z = 14 - 6"
+        },
+        {
+          "id": "blank2",
+          "answer": "Kohlenstoff",
+          "alternatives": [
+            "C",
+            "Carbon"
+          ],
+          "hint": "Element mit Z = 6"
+        }
+      ],
+      "explanation": "Die Neutronenzahl berechnet sich als N = A - Z = 14 - 6 = 8. Das Element mit Z = 6 ist Kohlenstoff. C-14 wird in der Radiokarbondatierung zur Altersbestimmung organischer Materialien verwendet.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Atomgewicht berechnen",
+      "question": "Berechnen Sie das Atomgewicht von Bor. Bor besteht aus zwei Isotopen: B-10 (Masse 10,01 u, Häufigkeit 19,9%) und B-11 (Masse 11,01 u, Häufigkeit 80,1%).",
+      "correctAnswer": "10.81",
+      "unit": "u",
+      "tolerance": 0.02,
+      "solution": "**Schritt 1:** Formel aufstellen\n$$\\text{Atomgewicht} = (\\text{Masse}_1 \\times \\text{Häufigkeit}_1) + (\\text{Masse}_2 \\times \\text{Häufigkeit}_2)$$\n\n**Schritt 2:** Werte einsetzen\n$$= (10{,}01 \\times 0{,}199) + (11{,}01 \\times 0{,}801)$$\n\n**Schritt 3:** Berechnen\n$$= 1{,}992 + 8{,}819 = 10{,}81 \\text{ u}$$\n",
+      "explanation": "Das Atomgewicht ist der gewichtete Durchschnitt der Isotopenmassen. Jede Isotopenmasse wird mit ihrer relativen Häufigkeit (als Dezimalzahl) multipliziert und die Ergebnisse addiert.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Isotope",
+      "url": "https://www.youtube.com/watch?v=6DqCWFC4o6w",
+      "title": "Was sind Isotope? I musstewissen Chemie",
+      "description": "Verständliche Erklärung des Isotopenbegriffs mit anschaulichen Beispielen.",
+      "duration": "4:28",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Periodensystem - Aufbau",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "12-14"
+        }
+      ],
+      "content": "# Das Periodensystem der Elemente (PSE)\n\n## Geschichte\n\nDas Periodensystem wurde im 19. Jahrhundert von **Dmitri Mendeleev** entwickelt. Er ordnete die Elemente nach steigender Atommasse und bemerkte, dass sich chemische Eigenschaften **periodisch wiederholen**.\n\nHeute ordnen wir die Elemente nach **steigender Ordnungszahl** (Protonenzahl).\n\n## Struktur des Periodensystems\n\n### Perioden (horizontal)\n\n- Das PSE hat **7 Perioden** (Zeilen)\n- Die Periodennummer gibt die **Anzahl der Elektronenschalen** an\n- Elemente in derselben Periode haben die gleiche Anzahl an Schalen\n\n### Gruppen (vertikal)\n\n- Das PSE hat **18 Gruppen** (Spalten)\n- Elemente in derselben Gruppe haben **ähnliche chemische Eigenschaften**\n- Dies liegt an der gleichen Anzahl von **Valenzelektronen** (Elektronen in der äußersten Schale)\n\n## Bereiche des Periodensystems\n\n| Bereich              | Lage              | Eigenschaften                                 |\n| -------------------- | ----------------- | --------------------------------------------- |\n| **Metalle**          | Links und Mitte   | Leiten Strom, glänzend, formbar               |\n| **Nichtmetalle**     | Rechts oben (+ H) | Schlechte Leiter, oft Gase                    |\n| **Halbmetalle**      | Grenzbereich      | Eigenschaften zwischen Metall und Nichtmetall |\n| **Übergangsmetalle** | Mitte (d-Block)   | Variable Oxidationsstufen                     |\n\n## Kennzeichnung im PSE\n\nFür jedes Element findest du:\n- Elementsymbol (z.B. Na)\n- Ordnungszahl Z\n- Atomgewicht (relative Atommasse)\n- Elementname"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Hauptgruppen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
           "pages": "14-16"
         }
       ],
-      "content": "## Atomgewicht und Durchschnittliche Atommasse\n\nDas im Periodensystem angegebene **Atomgewicht** ist keine ganze Zahl, sondern der **gewichtete Durchschnitt** der Massen aller natürlich vorkommenden Isotope eines Elements.\n\n### Warum keine ganzen Zahlen?\n\nIn der Natur kommen die meisten Elemente als **Mischung verschiedener Isotope** vor. Das angegebene Atomgewicht berücksichtigt:\n- Die **Masse** jedes Isotops\n- Die **relative Häufigkeit** (Prozentanteil) in der Natur\n\n### Berechnungsformel\n\n$$\\text{Atomgewicht} = \\sum (\\text{Isotopenmasse} \\times \\text{relative Häufigkeit})$$\n\n### Fallstudie: Bor\n\nBor kommt in der Natur in zwei stabilen Isotopen vor:\n\n| Isotop | Masse  | Häufigkeit |\n| ------ | ------ | ---------- |\n| Bor-10 | 10,0 u | 19,9%      |\n| Bor-11 | 11,0 u | 80,1%      |\n\n**Berechnung:**\n$$\\text{Atomgewicht} = (0,199 \\times 10,0\\,\\text{u}) + (0,801 \\times 11,0\\,\\text{u})$$\n$$= 1,99\\,\\text{u} + 8,81\\,\\text{u} = 10,8\\,\\text{u}$$\n\nDies erklärt, warum Bor im Periodensystem mit **10,81 u** geführt wird – es ist der Durchschnitt, gewichtet nach der natürlichen Häufigkeit.\n\n> **Wichtig:** Kein einzelnes Bor-Atom hat tatsächlich die Masse 10,81 u. Jedes Atom ist entweder Bor-10 oder Bor-11!"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Ordnungszahl und Isotope",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "12-13"
-        }
-      ],
-      "content": "## Massenspektrometrie\n\nDie **Massenspektrometrie** ist die wichtigste Methode, um Isotope nachzuweisen und ihre Massen präzise zu bestimmen. Der Prozess verläuft in vier Stufen:\n\n### 1. Ionisation\n\nDie Probe wird **verdampft** und mit hochenergetischen Elektronen beschossen. Dabei werden Elektronen aus den Atomen herausgeschlagen – es entstehen **positive Ionen** (Kationen, meist mit Ladung $+1$).\n\n### 2. Beschleunigung\n\nDie Kationen werden durch ein **elektrisches Feld** beschleunigt und in Richtung eines Magnetfeldes gelenkt.\n\n### 3. Ablenkung\n\nIm **Magnetfeld** werden die Ionen auf eine Kreisbahn gezwungen. Der Radius der Bahn hängt vom Verhältnis **Masse zu Ladung** ($m/z$) ab:\n\n- **Leichte Ionen** → stark abgelenkt (kleiner Radius)\n- **Schwere Ionen** → schwach abgelenkt (großer Radius)\n\n### 4. Detektion\n\nDurch Variation des Magnetfeldes treffen Ionen unterschiedlicher Masse nacheinander auf den **Detektor**. Das Resultat ist ein **Massenspektrum**, das die relative Häufigkeit gegen $m/z$ aufträgt.\n\n### Beispiel: Neon\n\nEin Massenspektrum von Neon zeigt drei Peaks bei:\n- $m/z = 20$ (größter Peak)\n- $m/z = 21$ (kleinster Peak)\n- $m/z = 22$ (mittlerer Peak)\n\nDies beweist die Existenz der Isotope ${}^{20}\\text{Ne}$, ${}^{21}\\text{Ne}$ und ${}^{22}\\text{Ne}$ und zeigt ihre relativen Häufigkeiten."
-    },
-    {
-      "type": "self-assessment-mc",
-      "topic": "Ordnungszahl und Isotope",
-      "question": "Was unterscheidet zwei Isotope desselben Elements voneinander?",
-      "options": [
-        "Die Anzahl der Protonen",
-        "Die Anzahl der Neutronen",
-        "Die Anzahl der Elektronen",
-        "Die chemischen Eigenschaften"
-      ],
-      "correctAnswer": "Die Anzahl der Neutronen",
-      "content": "**Erklärung:** Isotope haben dieselbe Anzahl an Protonen (sonst wären es verschiedene Elemente) und dieselbe Anzahl an Elektronen (in neutralen Atomen). Sie unterscheiden sich nur in der Anzahl der Neutronen, was zu unterschiedlichen Massenzahlen führt. Da die Elektronen das chemische Verhalten bestimmen, sind die chemischen Eigenschaften von Isotopen nahezu identisch."
-    },
-    {
-      "type": "learning-content",
-      "topic": "Periodensystem der Elemente",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "17-20"
-        }
-      ],
-      "content": "## Struktur des Periodensystems\n\nDas **Periodensystem der Elemente (PSE)**, ursprünglich von Dmitri Mendeleev entwickelt, ist heute nach steigender **Ordnungszahl** sortiert. Es offenbart die periodische Wiederkehr chemischer Eigenschaften.\n\n### Historische Entwicklung\n\n- **Mendeleev (1869):** Ordnete Elemente nach Atomgewicht und erkannte wiederkehrende Muster\n- **Modernes PSE:** Sortierung nach Ordnungszahl (Anzahl der Protonen)\n- **Periodisches Gesetz:** Eigenschaften der Elemente wiederholen sich periodisch\n\n### Perioden (Zeilen 1-7)\n\nDie **horizontalen Zeilen** heißen Perioden:\n\n- Elemente derselben Periode füllen sukzessive **dieselben Elektronenschalen** auf\n- Die Periodennummer gibt die **Anzahl der Elektronenschalen** an\n- Von links nach rechts: zunehmende Ordnungszahl\n\n### Gruppen (Spalten 1-18)\n\nDie **vertikalen Spalten** heißen Gruppen (oder Hauptgruppen):\n\n- Elemente einer Gruppe besitzen dieselbe Anzahl an **Valenzelektronen**\n- Daher zeigen sie sehr **ähnliches chemisches Verhalten**\n- Die Gruppennummer (bei Hauptgruppen) entspricht oft der Valenzelektronenzahl\n\n### Elementkategorien\n\nDas PSE gliedert sich in verschiedene Kategorien:\n\n| Kategorie    | Position             | Eigenschaften                |\n| ------------ | -------------------- | ---------------------------- |\n| Metalle      | Links und Mitte      | Leitfähig, glänzend, formbar |\n| Nichtmetalle | Rechts oben          | Isolatoren, spröde           |\n| Halbmetalle  | Trennlinie           | Eigenschaften beider Gruppen |\n| Edelgase     | Ganz rechts (Gr. 18) | Reaktionsträge               |"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Periodensystem der Elemente",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "21-32"
-        }
-      ],
-      "content": "## Wichtige Hauptgruppen\n\nDie Hauptgruppen im Periodensystem zeigen besonders charakteristische Eigenschaften. Diese fünf solltest du kennen:\n\n### 1. Alkalimetalle (Gruppe 1, außer H)\n\n**Elemente:** Li, Na, K, Rb, Cs, Fr\n\n- **Weiche, hochreaktive Metalle** mit silbrigem Glanz\n- Reagieren **heftig mit Wasser** unter Bildung von Laugen und Wasserstoff\n- Bilden stets **+1 Ionen** (geben 1 Elektron ab)\n- Werden von oben nach unten reaktiver\n\n### 2. Erdalkalimetalle (Gruppe 2)\n\n**Elemente:** Be, Mg, Ca, Sr, Ba, Ra\n\n- Etwas **härter** und **weniger reaktiv** als Alkalimetalle\n- Bilden **+2 Ionen** (geben 2 Elektronen ab)\n- Wichtig: Calcium in Knochen, Magnesium in Chlorophyll\n\n### 3. Chalkogene (Gruppe 16)\n\n**Elemente:** O, S, Se, Te, Po\n\n- Name bedeutet \"**Erzbildner**\"\n- Sauerstoff und Schwefel sind **essenziell für das Leben**\n- Bilden typischerweise **-2 Ionen**\n\n### 4. Halogene (Gruppe 17)\n\n**Elemente:** F, Cl, Br, I, At\n\n- Name bedeutet \"**Salzbildner**\"\n- **Hochreaktive Nichtmetalle**\n- Kommen als **zweiatomige Moleküle** vor ($F_2$, $Cl_2$, $Br_2$, $I_2$)\n- Bilden **-1 Ionen** (Halogenide)\n\n### 5. Edelgase (Gruppe 18)\n\n**Elemente:** He, Ne, Ar, Kr, Xe, Rn\n\n- **Reaktionsträge** (inerte) Gase\n- Besitzen eine **volle Valenzschale** (Oktett bzw. Duplett bei He)\n- Gehen unter Normalbedingungen keine Bindungen ein"
+      "content": "# Die wichtigen Hauptgruppen\n\n## Überblick\n\nDie **Hauptgruppenelemente** (Gruppen 1, 2 und 13–18) zeigen besonders regelmäßige Trends in ihren Eigenschaften.\n\n## Gruppe 1: Alkalimetalle\n\n**Elemente:** Li, Na, K, Rb, Cs, Fr\n\n| Eigenschaft          | Beschreibung                           |\n| -------------------- | -------------------------------------- |\n| Valenzelektronen     | 1                                      |\n| Typische Ionenladung | **+1** (Na⁺, K⁺)                       |\n| Reaktivität          | Sehr hoch, reagieren heftig mit Wasser |\n| Vorkommen            | Nie elementar, nur in Verbindungen     |\n\n> ⚠️ Alkalimetalle müssen unter Schutzatmosphäre oder in Öl gelagert werden!\n\n## Gruppe 2: Erdalkalimetalle\n\n**Elemente:** Be, Mg, Ca, Sr, Ba, Ra\n\n| Eigenschaft          | Beschreibung                            |\n| -------------------- | --------------------------------------- |\n| Valenzelektronen     | 2                                       |\n| Typische Ionenladung | **+2** (Mg²⁺, Ca²⁺)                     |\n| Reaktivität          | Reaktiv, aber weniger als Alkalimetalle |\n| Bedeutung            | Ca wichtig für Knochen, Mg für Enzyme   |\n\n## Gruppe 17: Halogene\n\n**Elemente:** F, Cl, Br, I, At\n\n| Eigenschaft          | Beschreibung                         |\n| -------------------- | ------------------------------------ |\n| Valenzelektronen     | 7                                    |\n| Typische Ionenladung | **−1** (Cl⁻, Br⁻)                    |\n| Elementare Form      | Zweiatomige Moleküle (Cl₂, Br₂)      |\n| Name                 | \"Salzbildner\" (griech. halos = Salz) |\n\n## Gruppe 18: Edelgase\n\n**Elemente:** He, Ne, Ar, Kr, Xe, Rn\n\n| Eigenschaft          | Beschreibung                         |\n| -------------------- | ------------------------------------ |\n| Valenzelektronen     | 8 (außer He: 2)                      |\n| Typische Ionenladung | **0** (bilden kaum Ionen)            |\n| Reaktivität          | Sehr gering (\"Edelgaskonfiguration\") |\n| Vorkommen            | Einatomige Gase                      |\n\n> 💡 Die Edelgaskonfiguration (volle äußere Schale) ist der energetisch günstigste Zustand!"
     },
     {
       "type": "mermaid-diagram",
-      "topic": "Periodensystem der Elemente",
-      "content": "## Übersicht der wichtigen Hauptgruppen\n\n```mermaid\nflowchart TB\n    subgraph PSE[\"Periodensystem der Elemente\"]\n        direction TB\n        \n        subgraph Gr1[\"Gruppe 1\"]\n            A1[\"Alkalimetalle<br/>Li, Na, K, Rb, Cs\"]\n            A1Props[\"→ +1 Ionen<br/>→ Hochreaktiv<br/>→ Weiche Metalle\"]\n        end\n        \n        subgraph Gr2[\"Gruppe 2\"]\n            A2[\"Erdalkalimetalle<br/>Be, Mg, Ca, Sr, Ba\"]\n            A2Props[\"→ +2 Ionen<br/>→ Reaktiv<br/>→ Härtere Metalle\"]\n        end\n        \n        subgraph Gr17[\"Gruppe 17\"]\n            H[\"Halogene<br/>F, Cl, Br, I\"]\n            HProps[\"→ -1 Ionen<br/>→ Salzbildner<br/>→ Zweiatomig\"]\n        end\n        \n        subgraph Gr18[\"Gruppe 18\"]\n            E[\"Edelgase<br/>He, Ne, Ar, Kr, Xe\"]\n            EProps[\"→ Keine Ionen<br/>→ Reaktionsträge<br/>→ Volle Schale\"]\n        end\n    end\n    \n    A1 --> A1Props\n    A2 --> A2Props\n    H --> HProps\n    E --> EProps\n    \n    style Gr1 fill:#ffcccc\n    style Gr2 fill:#ffe6cc\n    style Gr17 fill:#ccffcc\n    style Gr18 fill:#cce6ff\n```\n\n### Merkhilfe für typische Ionenladungen\n\n| Hauptgruppe | Valenzelektronen | Typische Ladung | Beispiel  |\n| ----------- | ---------------- | --------------- | --------- |\n| 1           | 1                | +1              | $Na^+$    |\n| 2           | 2                | +2              | $Ca^{2+}$ |\n| 16          | 6                | -2              | $O^{2-}$  |\n| 17          | 7                | -1              | $Cl^-$    |\n| 18          | 8                | 0 (keine Ionen) | Ar        |"
+      "topic": "Periodensystem-Gruppen",
+      "content": "# Übersicht der wichtigen Hauptgruppen\n\nDas folgende Diagramm zeigt die Beziehung zwischen Hauptgruppen und typischen Ionenladungen:\n\n```mermaid\nflowchart LR\n    subgraph \"Metalle (geben Elektronen ab)\"\n        A[\"Gruppe 1<br/>Alkalimetalle<br/>Li, Na, K...\"] --> A1[\"**+1**\"]\n        B[\"Gruppe 2<br/>Erdalkalimetalle<br/>Mg, Ca...\"] --> B1[\"**+2**\"]\n        C[\"Gruppe 13<br/>Aluminium\"] --> C1[\"**+3**\"]\n    end\n    \n    subgraph \"Nichtmetalle (nehmen Elektronen auf)\"\n        D[\"Gruppe 15<br/>Stickstoffgruppe<br/>N, P...\"] --> D1[\"**−3**\"]\n        E[\"Gruppe 16<br/>Chalkogene<br/>O, S...\"] --> E1[\"**−2**\"]\n        F[\"Gruppe 17<br/>Halogene<br/>F, Cl...\"] --> F1[\"**−1**\"]\n    end\n    \n    subgraph \"Edelgase (reagieren kaum)\"\n        G[\"Gruppe 18<br/>He, Ne, Ar...\"] --> G1[\"**0**\"]\n    end\n```\n\n## Merkhilfe für Ladungen\n\n| Gruppe | Valenzelektronen | Ionenladung | Beispiel    |\n| ------ | ---------------- | ----------- | ----------- |\n| 1      | 1                | +1          | Na → Na⁺    |\n| 2      | 2                | +2          | Ca → Ca²⁺   |\n| 16     | 6                | −2          | O → O²⁻     |\n| 17     | 7                | −1          | Cl → Cl⁻    |\n| 18     | 8                | 0           | Ar (stabil) |"
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Periodensystem der Elemente",
-      "question": "Welche Hauptgruppe bildet typischerweise -1 Ionen und wird auch \"Salzbildner\" genannt?",
+      "topic": "Hauptgruppen",
+      "question": "Zu welcher Gruppe gehört Natrium (Na)?",
       "options": [
-        "Alkalimetalle",
         "Erdalkalimetalle",
+        "Alkalimetalle",
         "Halogene",
         "Edelgase"
       ],
-      "correctAnswer": "Halogene",
-      "content": "**Erklärung:** Die Halogene (Gruppe 17: F, Cl, Br, I) haben 7 Valenzelektronen und nehmen ein weiteres Elektron auf, um eine vollständige Valenzschale zu erreichen. Dadurch bilden sie -1 Ionen (Halogenide). Der Name \"Halogene\" kommt aus dem Griechischen und bedeutet \"Salzbildner\", da sie mit Metallen Salze wie NaCl bilden."
+      "correctAnswer": "Alkalimetalle",
+      "explanation": "Natrium (Na) steht in der 1. Hauptgruppe (Gruppe 1) und gehört damit zu den Alkalimetallen. Diese Elemente haben ein Valenzelektron und bilden typischerweise +1-Ionen.",
+      "content": ""
     },
     {
-      "type": "learning-content",
-      "topic": "Moleküle und Ionen",
-      "sourceRefs": [
+      "type": "matching",
+      "topic": "Elemente und Gruppen",
+      "question": "Ordnen Sie jedes Element seiner Hauptgruppe und der typischen Ionenladung zu.",
+      "pairs": [
         {
-          "sourceId": "vorlesung-k2",
-          "pages": "35-40"
-        }
-      ],
-      "content": "## Molekulare Verbindungen (Kovalente Bindung)\n\nAtome verbinden sich, um energetisch günstigere Zustände zu erreichen. Bei **molekularen Verbindungen** geschieht dies durch das **Teilen von Elektronenpaaren**.\n\n### Entstehung\n\nMolekulare Verbindungen entstehen meist zwischen **Nichtmetallen**:\n\n- Die Atome **teilen sich Elektronenpaare** (kovalente Bindung)\n- Jedes Atom erreicht so eine stabilere Elektronenkonfiguration\n- Die kleinste Einheit ist das **Molekül**\n\n### Beispiele\n\n| Verbindung   | Formel | Beteiligte Elemente |\n| ------------ | ------ | ------------------- |\n| Wasser       | $H_2O$ | H und O             |\n| Methan       | $CH_4$ | C und H             |\n| Ammoniak     | $NH_3$ | N und H             |\n| Ozon         | $O_3$  | O                   |\n| Kohlendioxid | $CO_2$ | C und O             |\n\n### Formelschreibweisen\n\nEs gibt verschiedene Arten, Moleküle darzustellen:\n\n**Molekularformel (Summenformel):**\n- Gibt die **exakte Anzahl** der Atome an\n- Beispiel Glycin: $C_2H_5NO_2$\n\n**Strukturformel:**\n- Zeigt die **Verknüpfung** der Atome\n- Beispiel Glycin: $H_2N-CH_2-COOH$\n\n**Lewisformel:**\n- Zeigt **Bindungselektronen** und **freie Elektronenpaare**\n- Wichtig für das Verständnis der Molekülgeometrie"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Moleküle und Ionen",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "41-46"
-        }
-      ],
-      "content": "## Ionische Verbindungen (Ionenbindung)\n\nIm Gegensatz zu molekularen Verbindungen entstehen **ionische Verbindungen** durch **Elektronenübertrag** – meist zwischen Metallen und Nichtmetallen.\n\n### Ionenbildung\n\n**Kation (positives Ion):**\n- Ein **Metallatom** gibt Elektronen ab\n- Es wird positiv geladen\n- Beispiel: $Na \\rightarrow Na^+ + e^-$\n\n**Anion (negatives Ion):**\n- Ein **Nichtmetallatom** nimmt Elektronen auf\n- Es wird negativ geladen\n- Beispiel: $Cl + e^- \\rightarrow Cl^-$\n\n### Der Bindungsmechanismus\n\n1. **Elektronentransfer:** Metall gibt Elektron(en) an Nichtmetall ab\n2. **Elektrostatische Anziehung:** Die entgegengesetzt geladenen Ionen ziehen sich an (Coulomb-Kraft)\n3. **Kristallgitterbildung:** Die Ionen ordnen sich in einem regelmäßigen Gitter an\n\n### Wichtige Unterschiede zu Molekülen\n\n| Eigenschaft         | Molekulare Verbindung  | Ionische Verbindung  |\n| ------------------- | ---------------------- | -------------------- |\n| Bindungstyp         | Elektronenpaare teilen | Elektronenübertrag   |\n| Beteiligte Elemente | Nichtmetalle           | Metall + Nichtmetall |\n| Kleinste Einheit    | Molekül                | Formeleinheit        |\n| Struktur            | Diskrete Teilchen      | Kristallgitter       |\n| Beispiel            | $H_2O$                 | $NaCl$               |\n\n> **Wichtig:** Bei ionischen Verbindungen gibt es keine \"Moleküle\". Wir sprechen von **Formeleinheiten** oder **Verhältnisformeln**, die das Verhältnis der Ionen angeben."
-    },
-    {
-      "type": "learning-content",
-      "topic": "Moleküle und Ionen",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "54-62"
-        }
-      ],
-      "content": "## Mehratomige Ionen (Molekülionen)\n\nNeben einfachen Ionen wie $Na^+$ oder $Cl^-$ gibt es auch **mehratomige Ionen** – Gruppen von Atomen, die kovalent gebunden sind, aber insgesamt eine Ladung tragen.\n\n### Wichtige Kationen\n\n| Name     | Formel   | Ladung |\n| -------- | -------- | ------ |\n| Ammonium | $NH_4^+$ | +1     |\n\n### Wichtige Anionen\n\nDiese Ionen treten häufig in Verbindungen auf und sollten auswendig gelernt werden:\n\n| Name             | Formel      | Ladung |\n| ---------------- | ----------- | ------ |\n| Hydroxid         | $OH^-$      | -1     |\n| Nitrat           | $NO_3^-$    | -1     |\n| Nitrit           | $NO_2^-$    | -1     |\n| Carbonat         | $CO_3^{2-}$ | -2     |\n| Hydrogencarbonat | $HCO_3^-$   | -1     |\n| Sulfat           | $SO_4^{2-}$ | -2     |\n| Sulfit           | $SO_3^{2-}$ | -2     |\n| Phosphat         | $PO_4^{3-}$ | -3     |\n| Acetat           | $CH_3COO^-$ | -1     |\n\n### Systematik bei Sauerstoff-Ionen\n\nBei Oxoanionen (Sauerstoff enthaltend) gibt es ein Muster:\n\n- **-at:** Mehr Sauerstoff (z.B. Nitrat $NO_3^-$, Sulfat $SO_4^{2-}$)\n- **-it:** Weniger Sauerstoff (z.B. Nitrit $NO_2^-$, Sulfit $SO_3^{2-}$)\n\n### Anwendung in Verbindungen\n\nMehratomige Ionen bleiben als **Einheit** erhalten. Bei Bedarf werden sie in Klammern gesetzt:\n\n- Calciumnitrat: $Ca(NO_3)_2$ (ein $Ca^{2+}$ braucht zwei $NO_3^-$)\n- Ammoniumsulfat: $(NH_4)_2SO_4$ (zwei $NH_4^+$ für ein $SO_4^{2-}$)"
-    },
-    {
-      "type": "mermaid-diagram",
-      "topic": "Moleküle und Ionen",
-      "content": "## Vergleich: Kovalente vs. Ionische Bindung\n\n```mermaid\nflowchart TB\n    subgraph Frage[\"Welcher Bindungstyp?\"]\n        Start[\"Chemische Verbindung\"] --> Check{\"Welche Elemente?\"}\n    end\n    \n    Check -->|\"Nichtmetall + Nichtmetall\"| Kovalent\n    Check -->|\"Metall + Nichtmetall\"| Ionisch\n    \n    subgraph Kovalent[\"Kovalente Bindung\"]\n        K1[\"Elektronenpaare werden GETEILT\"]\n        K2[\"→ Diskrete Moleküle\"]\n        K3[\"→ Niedrigere Schmelzpunkte\"]\n        K4[\"Beispiele: H₂O, CH₄, CO₂\"]\n    end\n    \n    subgraph Ionisch[\"Ionische Bindung\"]\n        I1[\"Elektronen werden ÜBERTRAGEN\"]\n        I2[\"→ Kristallgitter\"]\n        I3[\"→ Hohe Schmelzpunkte\"]\n        I4[\"Beispiele: NaCl, CaO, MgF₂\"]\n    end\n    \n    K1 --> K2 --> K3 --> K4\n    I1 --> I2 --> I3 --> I4\n    \n    style Kovalent fill:#e6f3ff\n    style Ionisch fill:#fff0e6\n```\n\n### Kurzübersicht\n\n| Kriterium              | Kovalent       | Ionisch                      |\n| ---------------------- | -------------- | ---------------------------- |\n| Elektronenverhalten    | Teilen         | Übertragen                   |\n| Beteiligte Elemente    | Nichtmetalle   | Metall + Nichtmetall         |\n| Struktur               | Moleküle       | Ionengitter                  |\n| Leitfähigkeit          | Nicht leitend  | Leitend (geschmolzen/gelöst) |\n| Typische Eigenschaften | Niedriger Smp. | Hoher Smp., spröde           |"
-    },
-    {
-      "type": "self-assessment-mc",
-      "topic": "Moleküle und Ionen",
-      "question": "Welche Aussage über ionische Verbindungen ist KORREKT?",
-      "options": [
-        "Sie entstehen durch das Teilen von Elektronenpaaren",
-        "Sie bestehen aus diskreten Molekülen",
-        "Sie bilden Kristallgitter aus Kationen und Anionen",
-        "Sie entstehen nur zwischen Nichtmetallen"
-      ],
-      "correctAnswer": "Sie bilden Kristallgitter aus Kationen und Anionen",
-      "content": "**Erklärung:** Ionische Verbindungen entstehen durch Elektronenübertrag (nicht Teilen) zwischen Metallen und Nichtmetallen. Die resultierenden positiven (Kationen) und negativen (Anionen) Ionen ordnen sich in einem regelmäßigen Kristallgitter an, das durch elektrostatische Anziehung zusammengehalten wird. Es gibt keine diskreten Moleküle wie bei kovalenten Verbindungen."
-    },
-    {
-      "type": "learning-content",
-      "topic": "Coulomb-Gesetz und Gitterenergie",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "70-73"
-        }
-      ],
-      "content": "## Das Coulomb-Gesetz\n\nDie Stärke der ionischen Bindung wird durch das **Coulomb-Gesetz** beschrieben. Es besagt, dass die Anziehungskraft zwischen zwei geladenen Teilchen von ihrer Ladung und ihrem Abstand abhängt.\n\n### Die Formel\n\n$$F \\propto \\frac{q_1 \\times q_2}{d^2}$$\n\nDabei bedeuten:\n- $F$ = Kraft zwischen den Ionen\n- $q_1, q_2$ = Ladungen der Ionen\n- $d$ = Abstand zwischen den Ionenzentren\n\n### Einfluss der Ladung\n\n**Höhere Ladung = Stärkere Bindung**\n\nDas Produkt der Ladungen ($q_1 \\times q_2$) steht im Zähler. Je größer die Ladungen, desto stärker die Anziehung.\n\n**Beispiel:**\n- $NaCl$: $Na^+$ und $Cl^-$ → Ladungsprodukt: $1 \\times 1 = 1$\n- $MgO$: $Mg^{2+}$ und $O^{2-}$ → Ladungsprodukt: $2 \\times 2 = 4$\n\nDie Bindung in MgO ist etwa **4-mal stärker** als in NaCl (nur aufgrund der Ladung).\n\n### Einfluss des Abstands\n\n**Kleinerer Abstand = Stärkere Bindung**\n\nDer Abstand steht im Nenner und ist quadriert. Kleinere Ionen können sich näher kommen, was die Kraft erhöht.\n\n- Kleine Ionen (z.B. $Li^+$, $O^{2-}$) → Starke Bindung\n- Große Ionen (z.B. $Cs^+$, $I^-$) → Schwächere Bindung"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Coulomb-Gesetz und Gitterenergie",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "70-73"
-        }
-      ],
-      "content": "## Gitterenergie und Schmelzpunkte\n\nDie **Gitterenergie** ist die Energie, die benötigt wird, um ein Ionengitter in einzelne, weit voneinander entfernte Ionen zu zerlegen. Sie ist ein direktes Maß für die Stärke der ionischen Bindung.\n\n### Vergleich: MgO vs. NaCl\n\n| Verbindung | Ionen               | Ladungsprodukt   | Schmelzpunkt |\n| ---------- | ------------------- | ---------------- | ------------ |\n| NaCl       | $Na^+$, $Cl^-$      | $1 \\times 1 = 1$ | 801°C        |\n| MgO        | $Mg^{2+}$, $O^{2-}$ | $2 \\times 2 = 4$ | 2852°C       |\n\n### Warum der enorme Unterschied?\n\n**1. Ladungseffekt:**\n- MgO: Ladungen $+2$ und $-2$ → vierfache Anziehung\n- NaCl: Ladungen $+1$ und $-1$ → einfache Anziehung\n\n**2. Größeneffekt:**\n- $O^{2-}$ ist kleiner als $Cl^-$\n- $Mg^{2+}$ ist kleiner als $Na^+$\n- Kleinere Ionen → kürzerer Abstand → stärkere Kraft\n\n### Praktische Bedeutung\n\nVerbindungen mit hoher Gitterenergie:\n- Haben **hohe Schmelz- und Siedepunkte**\n- Sind **hart und spröde**\n- Sind im festen Zustand **elektrische Isolatoren**\n- Leiten Strom nur **geschmolzen oder gelöst**\n\n> **Merke:** Je höher die Ladung und je kleiner die Ionen, desto stabiler das Ionengitter und desto höher der Schmelzpunkt."
-    },
-    {
-      "type": "self-assessment-mc",
-      "topic": "Coulomb-Gesetz und Gitterenergie",
-      "question": "Welche ionische Verbindung hat vermutlich den höchsten Schmelzpunkt?",
-      "options": [
-        "NaCl (Na⁺ und Cl⁻)",
-        "KBr (K⁺ und Br⁻)",
-        "MgO (Mg²⁺ und O²⁻)",
-        "CsI (Cs⁺ und I⁻)"
-      ],
-      "correctAnswer": "MgO (Mg²⁺ und O²⁻)",
-      "content": "**Erklärung:** Nach dem Coulomb-Gesetz ist die Anziehungskraft umso stärker, je höher die Ladungen und je kleiner der Abstand. MgO hat die höchsten Ladungen (+2 und -2) und gleichzeitig kleine Ionen. Das Ladungsprodukt ist 4 (vs. 1 bei den anderen). Außerdem sind Mg²⁺ und O²⁻ kleiner als die anderen Ionenpaare. Daher hat MgO die höchste Gitterenergie und den höchsten Schmelzpunkt (2852°C vs. 801°C für NaCl)."
-    },
-    {
-      "type": "learning-content",
-      "topic": "Das Mol und Molare Masse",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "77-80"
-        }
-      ],
-      "content": "## Das Mol: Die Brücke zwischen Mikro- und Makrowelt\n\nUm die mikroskopische Welt der Atome mit der makroskopischen Welt des Labors zu verbinden, nutzen Chemiker das **Mol** – eine der wichtigsten Einheiten der Chemie.\n\n### Definition des Mols\n\nEin **Mol** ist die Substanzmenge, die exakt so viele Teilchen enthält, wie Atome in **12 Gramm** des Kohlenstoff-Isotops ${}^{12}\\text{C}$ enthalten sind.\n\nDiese Zahl ist die **Avogadro-Konstante** ($N_A$):\n\n$$N_A = 6,022 \\times 10^{23} \\text{ Teilchen pro Mol}$$\n\n### Was bedeutet das praktisch?\n\n- 1 Mol Wasserstoffatome = $6,022 \\times 10^{23}$ Wasserstoffatome\n- 1 Mol Wassermoleküle = $6,022 \\times 10^{23}$ Wassermoleküle\n- 1 Mol Natriumionen = $6,022 \\times 10^{23}$ Natriumionen\n\n### Warum genau diese Zahl?\n\nDie Avogadro-Konstante wurde so gewählt, dass:\n\n> **Die Masse von 1 Mol eines Elements in Gramm = dem Atomgewicht in u**\n\nBeispiel:\n- Kohlenstoff hat ein Atomgewicht von 12,01 u\n- 1 Mol Kohlenstoff wiegt 12,01 g\n\nDiese elegante Beziehung macht das Umrechnen zwischen Atommasse und Labormengen sehr einfach.\n\n### Größenvorstellung\n\n$6,022 \\times 10^{23}$ ist eine unvorstellbar große Zahl:\n- Würde man diese Anzahl an Reiskörnern gleichmäßig über die Erde verteilen, wäre die Schicht etwa 100 Meter dick!"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Das Mol und Molare Masse",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "81-83"
-        }
-      ],
-      "content": "## Die Molare Masse\n\nDie **molare Masse** ($M$) gibt an, wie viel Gramm ein Mol einer Substanz wiegt. Sie hat die Einheit **g/mol**.\n\n### Für Elemente\n\nDie molare Masse entspricht **zahlenmäßig dem Atomgewicht** aus dem Periodensystem:\n\n| Element     | Atomgewicht (u) | Molare Masse (g/mol) |\n| ----------- | --------------- | -------------------- |\n| Wasserstoff | 1,008           | 1,008                |\n| Kohlenstoff | 12,01           | 12,01                |\n| Sauerstoff  | 16,00           | 16,00                |\n| Eisen       | 55,85           | 55,85                |\n\n### Für Verbindungen\n\nDie molare Masse einer Verbindung ist die **Summe der molaren Massen** aller Atome:\n\n**Beispiel: Ethanol ($C_2H_6O$)**\n\n$$M = 2 \\times M(C) + 6 \\times M(H) + 1 \\times M(O)$$\n$$M = 2 \\times 12,01 + 6 \\times 1,008 + 1 \\times 16,00$$\n$$M = 24,02 + 6,05 + 16,00 = 46,07 \\text{ g/mol}$$\n\n**Beispiel: Wasser ($H_2O$)**\n\n$$M = 2 \\times 1,008 + 1 \\times 16,00 = 18,02 \\text{ g/mol}$$\n\n### Praktische Bedeutung\n\nMit der molaren Masse können wir:\n- Aus einer **Masse** die **Stoffmenge** berechnen\n- Aus einer **Stoffmenge** die **Masse** berechnen\n- **Reaktionsmengen** im Labor abmessen"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Das Mol und Molare Masse",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "77-83"
-        }
-      ],
-      "content": "## Das Umrechnungs-Dreieck\n\nBei stöchiometrischen Berechnungen müssen wir häufig zwischen drei Größen umrechnen:\n\n$$\\text{Masse (g)} \\longleftrightarrow \\text{Stoffmenge (mol)} \\longleftrightarrow \\text{Teilchenzahl (N)}$$\n\n### Die Formeln\n\n**Von Gramm zu Mol:**\n$$n = \\frac{m}{M}$$\n\n**Von Mol zu Gramm:**\n$$m = n \\times M$$\n\n**Von Mol zu Teilchenzahl:**\n$$N = n \\times N_A$$\n\n**Von Teilchenzahl zu Mol:**\n$$n = \\frac{N}{N_A}$$\n\nDabei bedeuten:\n- $n$ = Stoffmenge in mol\n- $m$ = Masse in g\n- $M$ = Molare Masse in g/mol\n- $N$ = Anzahl der Teilchen\n- $N_A$ = Avogadro-Konstante ($6,022 \\times 10^{23}$ mol$^{-1}$)\n\n### Rechenbeispiel\n\n**Frage:** Wie viele Wassermoleküle sind in 36 g Wasser?\n\n**Schritt 1:** Mol berechnen\n$$n = \\frac{36 \\text{ g}}{18,02 \\text{ g/mol}} = 2,0 \\text{ mol}$$\n\n**Schritt 2:** Teilchenzahl berechnen\n$$N = 2,0 \\text{ mol} \\times 6,022 \\times 10^{23} \\text{ mol}^{-1}$$\n$$N = 1,2 \\times 10^{24} \\text{ Moleküle}$$\n\n**Antwort:** In 36 g Wasser sind etwa $1,2 \\times 10^{24}$ Wassermoleküle."
-    },
-    {
-      "type": "mermaid-diagram",
-      "topic": "Das Mol und Molare Masse",
-      "content": "## Das Mol-Umrechnungsdreieck\n\n```mermaid\nflowchart TB\n    subgraph Dreieck[\"Stöchiometrisches Dreieck\"]\n        Masse[\"<b>Masse</b><br/>m (in g)\"]\n        Mol[\"<b>Stoffmenge</b><br/>n (in mol)\"]\n        Teilchen[\"<b>Teilchenzahl</b><br/>N\"]\n    end\n    \n    Masse -->|\"÷ M\"| Mol\n    Mol -->|\"× M\"| Masse\n    \n    Mol -->|\"× Nₐ\"| Teilchen\n    Teilchen -->|\"÷ Nₐ\"| Mol\n    \n    style Masse fill:#ffcccc\n    style Mol fill:#ffffcc\n    style Teilchen fill:#ccffcc\n```\n\n### Schnellübersicht der Formeln\n\n| Von → Nach     | Formel              | Beispiel                         |\n| -------------- | ------------------- | -------------------------------- |\n| Gramm → Mol    | $n = \\frac{m}{M}$   | 18g H₂O ÷ 18 g/mol = 1 mol       |\n| Mol → Gramm    | $m = n \\times M$    | 2 mol H₂O × 18 g/mol = 36g       |\n| Mol → Teilchen | $N = n \\times N_A$  | 1 mol × 6,022×10²³ = 6,022×10²³  |\n| Teilchen → Mol | $n = \\frac{N}{N_A}$ | 3,01×10²³ ÷ 6,022×10²³ = 0,5 mol |\n\n### Wichtige Konstanten\n\n- **Avogadro-Konstante:** $N_A = 6,022 \\times 10^{23}$ mol$^{-1}$\n- **Molare Masse:** Entspricht zahlenmäßig dem Atomgewicht/Molekülgewicht\n\n> **Tipp:** Das Mol steht immer im Zentrum! Rechne immer erst in Mol um, dann weiter zur Zielgröße."
-    },
-    {
-      "type": "self-assessment-mc",
-      "topic": "Das Mol und Molare Masse",
-      "question": "Wie viel Mol sind 44 g Kohlendioxid (CO₂)? (M = 44 g/mol)",
-      "options": [
-        "0,5 mol",
-        "1 mol",
-        "2 mol",
-        "44 mol"
-      ],
-      "correctAnswer": "1 mol",
-      "content": "**Erklärung:** Die Stoffmenge berechnet sich nach der Formel $n = \\frac{m}{M}$. Mit m = 44 g und M = 44 g/mol ergibt sich: $n = \\frac{44\\,\\text{g}}{44\\,\\text{g/mol}} = 1\\,\\text{mol}$. Das bedeutet: 44 g CO₂ enthalten genau 1 Mol, also etwa $6,022 \\times 10^{23}$ Kohlendioxid-Moleküle."
-    },
-    {
-      "type": "learning-content",
-      "topic": "Ermittlung chemischer Formeln",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "96-100"
-        }
-      ],
-      "content": "## Empirische Formel (Verhältnisformel)\n\nDie **empirische Formel** gibt das **kleinste ganzzahlige Verhältnis** der Atome in einer Verbindung an. Sie wird häufig durch Elementaranalyse bestimmt.\n\n### Vorgehensweise\n\n**Schritt 1:** Massenprozente als Massen annehmen\n- Nehmen Sie eine hypothetische Probe von **100 g** an\n- Die Prozentangaben werden direkt zu Gramm\n\n**Schritt 2:** Massen in Mol umrechnen\n- Teilen Sie jede Masse durch die molare Masse des Elements\n\n**Schritt 3:** Durch die kleinste Molzahl teilen\n- Dividieren Sie alle Werte durch den kleinsten\n\n**Schritt 4:** Ganzzahlig machen\n- Falls nötig, mit einem Faktor multiplizieren\n\n### Beispiel: Bor-Wasserstoff-Verbindung\n\n**Gegeben:** 81,10% Bor, 18,90% Wasserstoff\n\n**Schritt 1:** Bei 100 g Probe:\n- 81,10 g Bor\n- 18,90 g Wasserstoff\n\n**Schritt 2:** In Mol umrechnen:\n- $n(B) = \\frac{81,10\\,\\text{g}}{10,81\\,\\text{g/mol}} = 7,50\\,\\text{mol}$\n- $n(H) = \\frac{18,90\\,\\text{g}}{1,008\\,\\text{g/mol}} = 18,75\\,\\text{mol}$\n\n**Schritt 3:** Durch kleinste Zahl teilen (7,50):\n- $B: \\frac{7,50}{7,50} = 1$\n- $H: \\frac{18,75}{7,50} = 2,5$\n\n**Schritt 4:** Ganzzahlig machen (×2):\n- Verhältnis $1 : 2,5$ wird zu $2 : 5$\n\n**Empirische Formel:** $B_2H_5$"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Ermittlung chemischer Formeln",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "101-104"
-        }
-      ],
-      "content": "## Von der empirischen zur molekularen Formel\n\nDie **empirische Formel** zeigt nur das Verhältnis. Die **molekulare Formel** zeigt die tatsächliche Anzahl der Atome im Molekül.\n\n### Der Zusammenhang\n\nDie molekulare Formel ist immer ein **ganzzahliges Vielfaches** der empirischen Formel:\n\n$$\\text{Molekulare Formel} = (\\text{Empirische Formel})_n$$\n\n### Vorgehensweise\n\n**Schritt 1:** Masse der empirischen Einheit berechnen\n\n**Schritt 2:** Experimentelle Molmasse durch empirische Masse teilen\n\n**Schritt 3:** Indizes der empirischen Formel mit dem Faktor multiplizieren\n\n### Beispiel: Fortsetzung Bor-Wasserstoff\n\n**Empirische Formel:** $B_2H_5$\n\n**Schritt 1:** Masse der empirischen Einheit berechnen\n$$M(B_2H_5) = 2 \\times 10,8 + 5 \\times 1,0 = 26,6\\,\\text{g/mol}$$\n\n**Schritt 2:** Faktor bestimmen\n- Experimentelle Molmasse: $53,3\\,\\text{g/mol}$\n$$\\text{Faktor} = \\frac{53,3}{26,6} = 2$$\n\n**Schritt 3:** Molekulare Formel\n$$(B_2H_5)_2 = B_4H_{10}$$\n\n### Typische Fälle\n\n| Empirische Formel | Faktor | Molekulare Formel            |\n| ----------------- | ------ | ---------------------------- |\n| $CH_2$            | 1      | $CH_2$ (Formaldehyd-Polymer) |\n| $CH_2$            | 2      | $C_2H_4$ (Ethen)             |\n| $CH_2$            | 3      | $C_3H_6$ (Propen)            |\n| $CH_2O$           | 6      | $C_6H_{12}O_6$ (Glucose)     |\n\n> **Wichtig:** Die molekulare Formel kann nur bestimmt werden, wenn die experimentelle Molmasse bekannt ist!"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Ermittlung chemischer Formeln",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "108"
-        }
-      ],
-      "content": "## Fallstudie: Zinn-Iod-Verbindung\n\nEin praktisches Beispiel aus dem Labor zeigt, wie chemische Formeln experimentell ermittelt werden.\n\n### Das Experiment\n\nIm Labor wird **Zinn (Sn)** mit elementarem **Iod ($I_2$)** zur Reaktion gebracht. Das Ziel: Die empirische Formel des entstehenden orangen Feststoffs ermitteln.\n\n### Hintergrund\n\n- Zinn ist ein Metall → bildet Kationen\n- Iod ist ein Halogen → bildet Anionen ($I^-$)\n- Zinn kann $+2$ oder $+4$ Ladung haben\n- Mögliche Formeln: $SnI_2$ oder $SnI_4$?\n\n### Die Messdaten\n\nDurch Wiegen vor und nach der Reaktion wurden ermittelt:\n- Stoffmenge Zinn: $3,83 \\times 10^{-3}$ mol\n- Stoffmenge Iod (als Atome): $1,534 \\times 10^{-2}$ mol\n\n### Berechnung\n\n$$\\frac{n(\\text{I})}{n(\\text{Sn})} = \\frac{1,534 \\times 10^{-2}\\,\\text{mol}}{3,83 \\times 10^{-3}\\,\\text{mol}} = 4,005 \\approx 4$$\n\n### Interpretation\n\nDas Verhältnis Iod zu Zinn ist **4:1**.\n\n- **Empirische Formel:** $SnI_4$\n- **Name:** Zinn(IV)-iodid\n\nDie römische Zahl (IV) zeigt an, dass Zinn hier die Ladung $+4$ hat. Mit vier Iodid-Ionen (je $-1$) ist die Verbindung elektrisch neutral:\n\n$$Sn^{4+} + 4\\,I^- \\rightarrow SnI_4$$"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Ermittlung chemischer Formeln",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "109-110"
-        }
-      ],
-      "content": "## Fallstudie: Vom Prozentgehalt zur Molekülformel\n\nEine weitere typische Aufgabe: Aus den Massenprozenten einer Elementaranalyse die vollständige Formel ermitteln.\n\n### Das Problem\n\nEine unbekannte Verbindung wird analysiert:\n- Kohlenstoff (C): **85,63%**\n- Wasserstoff (H): **14,37%**\n- Experimentelle molare Masse: **56,1 g/mol**\n\n### Schritt 1: Empirische Formel bestimmen\n\n**Basis 100 g:**\n- 85,63 g C und 14,37 g H\n\n**In Mol umrechnen:**\n- $n(C) = \\frac{85,63}{12,01} = 7,13\\,\\text{mol}$\n- $n(H) = \\frac{14,37}{1,008} = 14,26\\,\\text{mol}$\n\n**Durch kleinste Zahl teilen (7,13):**\n- $C: \\frac{7,13}{7,13} = 1$\n- $H: \\frac{14,26}{7,13} = 2,0$\n\n**Empirische Formel:** $CH_2$\n\n### Schritt 2: Molekulare Formel bestimmen\n\n**Masse der empirischen Einheit:**\n$$M(CH_2) = 12,01 + 2 \\times 1,008 = 14,03\\,\\text{g/mol}$$\n\n**Faktor berechnen:**\n$$\\text{Faktor} = \\frac{56,1\\,\\text{g/mol}}{14,03\\,\\text{g/mol}} \\approx 4$$\n\n**Molekulare Formel:**\n$$(CH_2)_4 = C_4H_8$$\n\n### Chemische Einordnung\n\nBei $C_4H_8$ könnte es sich handeln um:\n- **Buten** (ein Alken mit Doppelbindung)\n- **Cyclobutan** (ein Cycloalkan)\n\nDies zeigt: Die Summenformel allein legt die Struktur noch nicht fest (**Isomerie**), aber die atomare Zusammensetzung ist eindeutig definiert."
-    },
-    {
-      "type": "self-assessment-mc",
-      "topic": "Ermittlung chemischer Formeln",
-      "question": "Eine Verbindung hat die empirische Formel CH₂O und eine molare Masse von 180 g/mol. Wie lautet die Molekülformel?",
-      "options": [
-        "CH₂O",
-        "C₂H₄O₂",
-        "C₆H₁₂O₆",
-        "C₁₂H₂₄O₁₂"
-      ],
-      "correctAnswer": "C₆H₁₂O₆",
-      "content": "**Erklärung:** Zuerst berechnen wir die Masse der empirischen Einheit: M(CH₂O) = 12 + 2 + 16 = 30 g/mol. Der Faktor ist: 180 ÷ 30 = 6. Daher multiplizieren wir alle Indizes mit 6: (CH₂O)₆ = C₆H₁₂O₆. Dies ist übrigens die Summenformel von Glucose (Traubenzucker)!"
-    },
-    {
-      "type": "learning-content",
-      "topic": "Nomenklatur anorganischer Verbindungen",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "301-302"
+          "left": "Calcium (Ca)",
+          "right": "Erdalkalimetall, +2"
         },
         {
-          "sourceId": "mortimer"
+          "left": "Chlor (Cl)",
+          "right": "Halogen, −1"
+        },
+        {
+          "left": "Kalium (K)",
+          "right": "Alkalimetall, +1"
+        },
+        {
+          "left": "Neon (Ne)",
+          "right": "Edelgas, 0"
         }
       ],
-      "content": "## Nomenklatur ionischer Verbindungen\n\nUm chemische Sachverhalte präzise zu kommunizieren, müssen Sie die systematischen Benennungsregeln (IUPAC) beherrschen.\n\n### Grundregel\n\n**Kation zuerst, Anion zuletzt.**\n\n### 1. Metalle mit fester Ladung\n\nBei Hauptgruppenmetallen (Gruppe 1, 2, Aluminium) bleibt der Name unverändert:\n\n| Formel    | Name            |\n| --------- | --------------- |\n| $NaCl$    | Natriumchlorid  |\n| $CaO$     | Calciumoxid     |\n| $Al_2O_3$ | Aluminiumoxid   |\n| $MgBr_2$  | Magnesiumbromid |\n\n### 2. Metalle mit variabler Ladung\n\nBei Übergangsmetallen **muss** die Ladung in römischen Ziffern angegeben werden (Stock-System):\n\n| Formel   | Ion       | Name               |\n| -------- | --------- | ------------------ |\n| $FeCl_2$ | $Fe^{2+}$ | Eisen(II)-chlorid  |\n| $FeCl_3$ | $Fe^{3+}$ | Eisen(III)-chlorid |\n| $Cu_2O$  | $Cu^{+}$  | Kupfer(I)-oxid     |\n| $CuO$    | $Cu^{2+}$ | Kupfer(II)-oxid    |\n\n### 3. Anionen-Benennung\n\n**Einatomige Anionen:** Endung **-id**\n- $Cl^-$ → Chlorid\n- $O^{2-}$ → Oxid\n- $S^{2-}$ → Sulfid\n- $N^{3-}$ → Nitrid\n\n**Sauerstoffhaltige Anionen (Oxoanionen):**\n- Mehr Sauerstoff: **-at** (Nitrat $NO_3^-$, Sulfat $SO_4^{2-}$)\n- Weniger Sauerstoff: **-it** (Nitrit $NO_2^-$, Sulfit $SO_3^{2-}$)\n\n### 4. Verbindungen mit mehratomigen Ionen\n\n| Formel         | Name              |\n| -------------- | ----------------- |\n| $Ca(NO_3)_2$   | Calciumnitrat     |\n| $(NH_4)_2SO_4$ | Ammoniumsulfat    |\n| $Fe_2(SO_4)_3$ | Eisen(III)-sulfat |\n| $K_2CO_3$      | Kaliumcarbonat    |"
+      "explanation": "Die Gruppenzugehörigkeit bestimmt die typische Ionenladung: Alkalimetalle (+1), Erdalkalimetalle (+2), Halogene (−1), Edelgase (reagieren kaum, Ladung 0).",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "topic": "Ordnungszahlen",
+      "question": "Ordnen Sie die folgenden Elemente nach aufsteigender Ordnungszahl (vom kleinsten zum größten).",
+      "items": [
+        {
+          "id": "ca",
+          "text": "Calcium (Ca)",
+          "position": 4
+        },
+        {
+          "id": "he",
+          "text": "Helium (He)",
+          "position": 1
+        },
+        {
+          "id": "c",
+          "text": "Kohlenstoff (C)",
+          "position": 2
+        },
+        {
+          "id": "na",
+          "text": "Natrium (Na)",
+          "position": 3
+        }
+      ],
+      "explanation": "Die Ordnungszahlen sind: Helium (Z=2), Kohlenstoff (Z=6), Natrium (Z=11), Calcium (Z=20). Die Ordnungszahl entspricht der Position im Periodensystem.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Periodensystem",
+      "url": "https://www.youtube.com/watch?v=J2KJRRH0E3Y",
+      "title": "Periodensystem der Elemente I Teil 1 I musstewissen Chemie",
+      "description": "Grundlegender Aufbau des Periodensystems mit Erklärung von Perioden und Gruppen.",
+      "duration": "6:15",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Moleküle",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "17-19"
+        }
+      ],
+      "content": "# Moleküle und chemische Bindungen\n\n## Was ist ein Molekül?\n\nEin **Molekül** ist die kleinste Einheit einer chemischen Verbindung, die noch deren Eigenschaften besitzt. Moleküle entstehen durch **kovalente Bindungen**, bei denen sich Atome Elektronen teilen.\n\n## Darstellungsformen\n\nEs gibt verschiedene Möglichkeiten, Moleküle darzustellen:\n\n### 1. Summenformel (Molekularformel)\n\nZeigt die **exakte Anzahl** aller Atome im Molekül.\n\n| Verbindung   | Summenformel |\n| ------------ | ------------ |\n| Wasser       | H₂O          |\n| Kohlendioxid | CO₂          |\n| Glucose      | C₆H₁₂O₆      |\n| Ethanol      | C₂H₆O        |\n\n### 2. Strukturformel\n\nZeigt zusätzlich die **Verknüpfung** der Atome.\n\n**Beispiel Glycin (einfachste Aminosäure):**\n- Summenformel: C₂H₅NO₂\n- Strukturformel: H₂N−CH₂−COOH\n\n### 3. Modelle\n\n- **Kugel-Stab-Modell:** Zeigt Bindungen als Stäbe\n- **Kalottenmodell:** Zeigt die räumliche Ausdehnung\n\n## Zweiatomige Elemente\n\nEinige Elemente kommen in der Natur als **zweiatomige Moleküle** vor:\n\n> 🧠 **Merkhilfe:** \"**H**ofbräu **N**ieder **O**lm **F**eiert **Cl**ever **Br**emst **I**hn\"\n>\n> H₂, N₂, O₂, F₂, Cl₂, Br₂, I₂\n\n## Allotropie\n\n**Allotrope** sind verschiedene Erscheinungsformen desselben Elements.\n\n**Beispiel Kohlenstoff:**\n- Diamant (3D-Netzwerk)\n- Graphit (Schichtstruktur)\n- Buckminster-Fulleren (C₆₀, kugelförmig)"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Ionenbildung",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "19-21"
+        }
+      ],
+      "content": "# Bildung von Ionen\n\n## Was sind Ionen?\n\n**Ionen** sind elektrisch geladene Teilchen, die durch Aufnahme oder Abgabe von Elektronen entstehen. Das Ziel ist oft, die stabile **Edelgaskonfiguration** zu erreichen.\n\n## Kationen (positive Ionen)\n\nEntstehen durch **Abgabe** von Elektronen.\n\n> 💡 Kationen = Positiv = \"Kat**ion**en gehen zur Kat**h**ode (−)\"\n\n**Typisch für Metalle:**\n\n| Atom       | Elektronenabgabe | Ion          |\n| ---------- | ---------------- | ------------ |\n| Na (11 e⁻) | − 1 e⁻           | Na⁺ (10 e⁻)  |\n| Mg (12 e⁻) | − 2 e⁻           | Mg²⁺ (10 e⁻) |\n| Al (13 e⁻) | − 3 e⁻           | Al³⁺ (10 e⁻) |\n\nDiese Ionen haben dann die Elektronenkonfiguration von **Neon** (10 e⁻).\n\n## Anionen (negative Ionen)\n\nEntstehen durch **Aufnahme** von Elektronen.\n\n> 💡 Anionen = Negativ = \"**An**ionen gehen zur **An**ode (+)\"\n\n**Typisch für Nichtmetalle:**\n\n| Atom       | Elektronenaufnahme | Ion         |\n| ---------- | ------------------ | ----------- |\n| Cl (17 e⁻) | + 1 e⁻             | Cl⁻ (18 e⁻) |\n| O (8 e⁻)   | + 2 e⁻             | O²⁻ (10 e⁻) |\n| N (7 e⁻)   | + 3 e⁻             | N³⁻ (10 e⁻) |\n\n## Vorhersage von Ionenladungen aus dem PSE\n\n| Gruppe               | Typische Ladung | Beispiele    |\n| -------------------- | --------------- | ------------ |\n| 1 (Alkalimetalle)    | +1              | Na⁺, K⁺      |\n| 2 (Erdalkalimetalle) | +2              | Mg²⁺, Ca²⁺   |\n| 13                   | +3              | Al³⁺         |\n| 15                   | −3              | N³⁻ (Nitrid) |\n| 16                   | −2              | O²⁻, S²⁻     |\n| 17 (Halogene)        | −1              | F⁻, Cl⁻      |\n\n> ⚠️ **Übergangsmetalle** können verschiedene Ladungen haben (z.B. Fe²⁺ und Fe³⁺)!"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Mehratomige Ionen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "21-23"
+        }
+      ],
+      "content": "# Wichtige mehratomige Ionen\n\nNeben einatomigen Ionen (wie Na⁺ oder Cl⁻) gibt es **mehratomige Ionen**, die aus mehreren kovalent gebundenen Atomen bestehen und als Einheit eine Ladung tragen.\n\n## Wichtige Kationen\n\n| Name         | Formel | Ladung |\n| ------------ | ------ | ------ |\n| **Ammonium** | NH₄⁺   | +1     |\n| Hydronium    | H₃O⁺   | +1     |\n\n## Wichtige Anionen\n\n| Name               | Formel  | Ladung |\n| ------------------ | ------- | ------ |\n| **Hydroxid**       | OH⁻     | −1     |\n| **Nitrat**         | NO₃⁻    | −1     |\n| **Acetat**         | CH₃COO⁻ | −1     |\n| Hydrogencarbonat   | HCO₃⁻   | −1     |\n| **Carbonat**       | CO₃²⁻   | −2     |\n| **Sulfat**         | SO₄²⁻   | −2     |\n| Hydrogensulfat     | HSO₄⁻   | −1     |\n| **Phosphat**       | PO₄³⁻   | −3     |\n| Hydrogenphosphat   | HPO₄²⁻  | −2     |\n| Dihydrogenphosphat | H₂PO₄⁻  | −1     |\n\n> 🧠 **Diese Ionen sollten Sie auswendig kennen!** Sie kommen in vielen Verbindungen vor.\n\n## Benennung der Anionen\n\n- **-id:** Einatomige Anionen von Elementen (Chlorid, Oxid, Sulfid)\n- **-at:** Sauerstoffhaltige Anionen (Sulfat, Nitrat, Phosphat)\n- **-it:** Weniger Sauerstoff als -at (Sulfit, Nitrit)\n\n## Beispiele für Salze mit mehratomigen Ionen\n\n| Verbindung      | Formel    | Ionen            |\n| --------------- | --------- | ---------------- |\n| Natriumsulfat   | Na₂SO₄    | 2 Na⁺ + SO₄²⁻    |\n| Ammoniumchlorid | NH₄Cl     | NH₄⁺ + Cl⁻       |\n| Calciumphosphat | Ca₃(PO₄)₂ | 3 Ca²⁺ + 2 PO₄³⁻ |"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Bindungstypen",
+      "content": "# Kovalente vs. Ionische Bindung\n\nDas folgende Diagramm zeigt die beiden Haupttypen chemischer Bindungen:\n\n```mermaid\nflowchart TB\n    A[Chemische Bindung] --> B[Kovalente Bindung]\n    A --> C[Ionische Bindung]\n    \n    B --> B1[\"Elektronenpaare werden<br/>**geteilt**\"]\n    B --> B2[\"Zwischen **Nichtmetallen**\"]\n    B --> B3[\"Bildet **Moleküle**\"]\n    B --> B4[\"Beispiel: H₂O, CO₂, CH₄\"]\n    \n    C --> C1[\"Elektronen werden<br/>**übertragen**\"]\n    C --> C2[\"Zwischen **Metall + Nichtmetall**\"]\n    C --> C3[\"Bildet **Ionengitter** (Salze)\"]\n    C --> C4[\"Beispiel: NaCl, MgO, CaF₂\"]\n```\n\n## Vergleich der Bindungstypen\n\n| Eigenschaft                        | Kovalente Bindung         | Ionische Bindung     |\n| ---------------------------------- | ------------------------- | -------------------- |\n| Elektronen                         | Geteilt                   | Übertragen           |\n| Partner                            | Nichtmetall + Nichtmetall | Metall + Nichtmetall |\n| Struktureinheit                    | Moleküle                  | Ionen im Gitter      |\n| Schmelzpunkt                       | Oft niedrig               | Meist hoch           |\n| Leitfähigkeit (fest)               | Keine                     | Keine                |\n| Leitfähigkeit (geschmolzen/gelöst) | Keine                     | Ja (Ionen beweglich) |\n\n## Merksatz\n\n> 🔗 **Nichtmetalle teilen** (kovalent) → Moleküle\n>\n> ⚡ **Metall + Nichtmetall übertragen** (ionisch) → Salze"
     },
     {
       "type": "self-assessment-mc",
-      "topic": "Nomenklatur anorganischer Verbindungen",
-      "question": "Wie lautet der korrekte IUPAC-Name für Fe₂O₃?",
+      "topic": "Kationen und Anionen",
+      "question": "Was ist ein Kation?",
+      "options": [
+        "Ein negativ geladenes Ion, das Elektronen aufgenommen hat",
+        "Ein positiv geladenes Ion, das Elektronen abgegeben hat",
+        "Ein neutrales Atom",
+        "Ein Molekül aus mehreren Atomen"
+      ],
+      "correctAnswer": "Ein positiv geladenes Ion, das Elektronen abgegeben hat",
+      "explanation": "Ein Kation ist ein positiv geladenes Ion, das durch Abgabe von Elektronen entstanden ist. Typischerweise bilden Metalle Kationen. Anionen hingegen sind negativ geladen und entstehen durch Elektronenaufnahme.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Mehratomige Ionen",
+      "question": "Welches Ion wird als Sulfat bezeichnet?",
+      "options": [
+        "S²⁻",
+        "SO₃²⁻",
+        "SO₄²⁻",
+        "HS⁻"
+      ],
+      "correctAnswer": "SO₄²⁻",
+      "explanation": "Sulfat ist SO₄²⁻, ein mehratomiges Ion mit Schwefel und vier Sauerstoffatomen. S²⁻ ist das Sulfid-Ion (einatomig). SO₃²⁻ ist Sulfit. HS⁻ ist das Hydrogensulfid-Ion.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "topic": "Mehratomige Ionen",
+      "question": "Ordnen Sie jeden Ionennamen der richtigen Formel und Ladung zu.",
+      "pairs": [
+        {
+          "left": "Ammonium",
+          "right": "NH₄⁺"
+        },
+        {
+          "left": "Nitrat",
+          "right": "NO₃⁻"
+        },
+        {
+          "left": "Sulfat",
+          "right": "SO₄²⁻"
+        },
+        {
+          "left": "Phosphat",
+          "right": "PO₄³⁻"
+        },
+        {
+          "left": "Carbonat",
+          "right": "CO₃²⁻"
+        }
+      ],
+      "explanation": "Diese mehratomigen Ionen sollten Sie auswendig kennen. Ammonium ist das einzige häufige mehratomige Kation (+1). Die anderen sind Anionen mit unterschiedlichen Ladungen.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "topic": "Salzformeln aufstellen",
+      "title": "Formeln von Salzen aufstellen",
+      "scenario": "In der Ernährungswissenschaft und Lebensmittelchemie begegnen wir ständig Salzen wie Kochsalz (NaCl), Calciumcarbonat (in Eierschalen) oder Kaliumnitrat (Pökelsalz). Um Salzformeln aufzustellen, müssen die Ladungen der Ionen ausgeglichen werden, sodass die Gesamtladung null ist.\n",
+      "tasks": [
+        {
+          "id": "task1",
+          "instruction": "Stellen Sie die Formel für Calciumchlorid auf. (Ca²⁺ und Cl⁻)",
+          "hint": "Wie viele Cl⁻ brauchen Sie, um 2+ auszugleichen?",
+          "solution": "CaCl₂ (Ein Ca²⁺ braucht zwei Cl⁻, um die Ladung auszugleichen: 2+ und 2×(−1) = 0)"
+        },
+        {
+          "id": "task2",
+          "instruction": "Stellen Sie die Formel für Aluminiumoxid auf. (Al³⁺ und O²⁻)",
+          "hint": "Finden Sie das kleinste gemeinsame Vielfache von 3 und 2.",
+          "solution": "Al₂O₃ (kgV von 3 und 2 ist 6: 2×(3+) + 3×(2−) = 6+ und 6− = 0)"
+        },
+        {
+          "id": "task3",
+          "instruction": "Stellen Sie die Formel für Ammoniumphosphat auf. (NH₄⁺ und PO₄³⁻)",
+          "hint": "Wie viele NH₄⁺ brauchen Sie für ein PO₄³⁻?",
+          "solution": "(NH₄)₃PO₄ (Drei NH₄⁺ mit je +1 gleichen die −3-Ladung von PO₄³⁻ aus)"
+        }
+      ],
+      "explanation": "Beim Aufstellen von Salzformeln muss die Summe der positiven Ladungen gleich der Summe der negativen Ladungen sein (elektrische Neutralität). Mehratomige Ionen werden bei mehrfachem Vorkommen in Klammern gesetzt.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Ionen und Salze",
+      "url": "https://www.youtube.com/watch?v=fTcnELa-v88",
+      "title": "Ionen und Salze I Einführung I musstewissen Chemie",
+      "description": "Grundlagen der Ionenbildung und wie Salze entstehen.",
+      "duration": "5:47",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Coulomb-Gesetz",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "24-26"
+        }
+      ],
+      "content": "# Das Coulomb-Gesetz\n\n## Ionische Bindung\n\nIonische Verbindungen (Salze) werden durch **elektrostatische Anziehung** zwischen entgegengesetzt geladenen Ionen zusammengehalten. Die Stärke dieser Anziehung wird durch das **Coulomb-Gesetz** beschrieben.\n\n## Die Formel\n\n$$F = k \\cdot \\frac{Q_1 \\cdot Q_2}{d^2}$$\n\nwobei:\n- $F$ = Kraft (Anziehung)\n- $k$ = Coulomb-Konstante\n- $Q_1, Q_2$ = Ladungen der Ionen\n- $d$ = Abstand zwischen den Ionen\n\n## Zwei entscheidende Faktoren\n\n### 1. Ladung der Ionen\n\nJe **höher die Ladungen**, desto **stärker die Anziehung**.\n\n| Ionenpaar | Ladungsprodukt | Relative Stärke |\n| --------- | -------------- | --------------- |\n| Na⁺/Cl⁻   | 1 × 1 = 1      | Basis           |\n| Mg²⁺/O²⁻  | 2 × 2 = 4      | 4× stärker      |\n| Al³⁺/O²⁻  | 3 × 2 = 6      | 6× stärker      |\n\n### 2. Abstand (Ionenradius)\n\nJe **kleiner die Ionen** (kleinerer Abstand $d$), desto **stärker die Anziehung**.\n\n> 📐 Die Kraft nimmt mit dem **Quadrat** des Abstands ab!\n>\n> Halbiert man den Abstand, vervierfacht sich die Kraft.\n\n## Konsequenzen für den Schmelzpunkt\n\nStärkere elektrostatische Anziehung → Mehr Energie nötig zum Trennen → **Höherer Schmelzpunkt**\n\n| Verbindung | Ionenladungen | Schmelzpunkt |\n| ---------- | ------------- | ------------ |\n| NaCl       | +1/−1         | 801°C        |\n| MgO        | +2/−2         | 2852°C       |\n| Al₂O₃      | +3/−2         | 2072°C       |"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Gitterenergie",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "26-27"
+        }
+      ],
+      "content": "# Gitterenergie\n\n## Definition\n\nDie **Gitterenergie** ist die Energie, die freigesetzt wird, wenn gasförmige Ionen ein festes Ionengitter bilden (oder umgekehrt: die Energie, die benötigt wird, um ein Ionengitter vollständig in gasförmige Ionen zu zerlegen).\n\n## Vergleich: NaCl vs. MgO\n\n| Eigenschaft    | NaCl       | MgO         |\n| -------------- | ---------- | ----------- |\n| Kation         | Na⁺ (+1)   | Mg²⁺ (+2)   |\n| Anion          | Cl⁻ (−1)   | O²⁻ (−2)    |\n| Ladungsprodukt | 1          | 4           |\n| Gitterenergie  | 786 kJ/mol | 3850 kJ/mol |\n| Schmelzpunkt   | 801°C      | 2852°C      |\n\n**Fazit:** MgO hat eine etwa 5× höhere Gitterenergie als NaCl, weil die Ionenladungen höher sind.\n\n## Faktoren, die die Gitterenergie beeinflussen\n\n1. **Ladung der Ionen** (wichtigster Faktor)\n   - Höhere Ladung → Höhere Gitterenergie\n\n2. **Größe der Ionen**\n   - Kleinere Ionen → Kürzerer Abstand → Höhere Gitterenergie\n\n## Praktische Bedeutung\n\n- Salze mit hoher Gitterenergie sind **schwerer löslich**\n- Salze mit hoher Gitterenergie haben **höhere Schmelzpunkte**\n- Keramiken (wie Al₂O₃) nutzen die hohe Gitterenergie für Hitzebeständigkeit\n\n> 🔥 **Anwendung:** Feuerfeste Materialien in Öfen bestehen oft aus Aluminiumoxid (Al₂O₃) oder Magnesiumoxid (MgO) wegen ihrer extrem hohen Schmelzpunkte."
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Coulomb-Gesetz",
+      "question": "Welches Ionenpaar hat bei gleichem Abstand die stärkste elektrostatische Anziehung?",
+      "options": [
+        "Na⁺ und Cl⁻ (+1/−1)",
+        "K⁺ und Br⁻ (+1/−1)",
+        "Ca²⁺ und O²⁻ (+2/−2)",
+        "Li⁺ und F⁻ (+1/−1)"
+      ],
+      "correctAnswer": "Ca²⁺ und O²⁻ (+2/−2)",
+      "explanation": "Nach dem Coulomb-Gesetz ist die Kraft proportional zum Produkt der Ladungen. Bei Ca²⁺/O²⁻ ist das Ladungsprodukt 2×2=4, während es bei allen anderen Paaren nur 1×1=1 ist. Die Anziehung ist also viermal stärker.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "topic": "Schmelzpunkte und Gitterenergie",
+      "question": "Ergänzen Sie die Aussagen zu Gitterenergie und Schmelzpunkten.",
+      "text": "MgO hat einen höheren Schmelzpunkt als NaCl, weil die Ionen in MgO {{blank1}} Ladungen haben. Nach dem Coulomb-Gesetz steigt die Anziehungskraft, wenn die Ladungen {{blank2}} und der Abstand {{blank3}} wird.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "höhere",
+          "alternatives": [
+            "größere",
+            "stärkere"
+          ],
+          "hint": "+2/−2 vs. +1/−1"
+        },
+        {
+          "id": "blank2",
+          "answer": "steigen",
+          "alternatives": [
+            "größer werden",
+            "zunehmen"
+          ],
+          "hint": "F ∝ Q₁ × Q₂"
+        },
+        {
+          "id": "blank3",
+          "answer": "kleiner",
+          "alternatives": [
+            "geringer",
+            "kürzer"
+          ],
+          "hint": "F ∝ 1/d²"
+        }
+      ],
+      "explanation": "MgO hat Mg²⁺ und O²⁻ (Ladungsprodukt = 4), während NaCl Na⁺ und Cl⁻ hat (Ladungsprodukt = 1). Höhere Ladungen und kleinere Abstände erhöhen die Anziehungskraft nach dem Coulomb-Gesetz.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Das Mol und Avogadro-Konstante",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "28-30"
+        }
+      ],
+      "content": "# Das Mol und die Avogadro-Konstante\n\n## Das Problem: Atome sind zu klein zum Zählen\n\nAtome und Moleküle sind so winzig, dass wir sie nicht einzeln zählen können. Deshalb arbeiten Chemiker mit \"Paketen\" – dem **Mol**.\n\n## Definition des Mols\n\n> 📦 **Ein Mol** ist die Stoffmenge, die genauso viele Teilchen enthält, wie Atome in exakt **12 Gramm** des Kohlenstoff-Isotops $^{12}C$ enthalten sind.\n\nDiese Zahl ist die **Avogadro-Konstante**:\n\n$$N_A = 6{,}022 \\times 10^{23} \\text{ Teilchen/mol}$$\n\n## Was bedeutet das?\n\n| Stoffmenge         | Enthält                   |\n| ------------------ | ------------------------- |\n| 1 mol Kohlenstoff  | 6,022 × 10²³ C-Atome      |\n| 1 mol Wasser       | 6,022 × 10²³ H₂O-Moleküle |\n| 1 mol Natriumionen | 6,022 × 10²³ Na⁺-Ionen    |\n\n> 🤯 **Zum Vergleich:** Wenn man jede Sekunde ein Atom zählen würde, bräuchte man etwa **19 Billionen Jahre**, um ein Mol zu zählen!\n\n## Warum ist das nützlich?\n\n- 1 mol eines Elements in Gramm entspricht zahlenmäßig dem Atomgewicht in u\n- Ermöglicht einfache Umrechnungen zwischen Masse und Teilchenzahl\n- Chemische Reaktionen laufen in festen Teilchenverhältnissen ab (nicht Massenverhältnissen)\n\n## Das Mol in der Praxis\n\n| Element         | Atomgewicht | 1 mol wiegt |\n| --------------- | ----------- | ----------- |\n| Wasserstoff (H) | 1,008 u     | 1,008 g     |\n| Kohlenstoff (C) | 12,01 u     | 12,01 g     |\n| Sauerstoff (O)  | 16,00 u     | 16,00 g     |\n| Eisen (Fe)      | 55,85 u     | 55,85 g     |"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Molare Masse",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "30-32"
+        }
+      ],
+      "content": "# Molare Masse\n\n## Definition\n\nDie **molare Masse** (M) ist die Masse von einem Mol einer Substanz. Sie wird in **g/mol** angegeben.\n\n## Molare Masse von Elementen\n\nDie molare Masse eines Elements entspricht zahlenmäßig dem **Atomgewicht** im Periodensystem.\n\n| Element | Atomgewicht | Molare Masse |\n| ------- | ----------- | ------------ |\n| H       | 1,008 u     | 1,008 g/mol  |\n| C       | 12,01 u     | 12,01 g/mol  |\n| O       | 16,00 u     | 16,00 g/mol  |\n| N       | 14,01 u     | 14,01 g/mol  |\n\n## Molare Masse von Verbindungen\n\nDie molare Masse einer Verbindung berechnet sich aus der **Summe der molaren Massen aller Atome**.\n\n### Beispiel 1: Wasser (H₂O)\n\n$$M_{H_2O} = 2 \\times M_H + 1 \\times M_O$$\n$$= 2 \\times 1{,}008 + 1 \\times 16{,}00$$\n$$= 2{,}016 + 16{,}00 = 18{,}02 \\text{ g/mol}$$\n\n### Beispiel 2: Ethanol (C₂H₆O)\n\n$$M_{C_2H_6O} = 2 \\times 12{,}01 + 6 \\times 1{,}008 + 1 \\times 16{,}00$$\n$$= 24{,}02 + 6{,}05 + 16{,}00 = 46{,}07 \\text{ g/mol}$$\n\n### Beispiel 3: Glucose (C₆H₁₂O₆)\n\n$$M = 6 \\times 12{,}01 + 12 \\times 1{,}008 + 6 \\times 16{,}00$$\n$$= 72{,}06 + 12{,}10 + 96{,}00 = 180{,}16 \\text{ g/mol}$$\n\n> 💡 **Praxistipp:** In Klausuren wird oft mit gerundeten Werten gerechnet:\n> H ≈ 1, C ≈ 12, N ≈ 14, O ≈ 16, S ≈ 32"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Mol-Umrechnungen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "32-34"
+        }
+      ],
+      "content": "# Umrechnungen: Masse, Mol und Teilchenzahl\n\n## Die drei Größen\n\nIn der Chemie arbeiten wir mit drei zusammenhängenden Größen:\n\n| Größe        | Symbol | Einheit | Bedeutung           |\n| ------------ | ------ | ------- | ------------------- |\n| Masse        | m      | g       | Wie viel Gramm?     |\n| Stoffmenge   | n      | mol     | Wie viele \"Pakete\"? |\n| Teilchenzahl | N      | -       | Wie viele Teilchen? |\n\n## Die Grundformeln\n\n### Masse ↔ Stoffmenge\n\n$$n = \\frac{m}{M}$$\n\n$$m = n \\times M$$\n\nwobei M = molare Masse (g/mol)\n\n### Stoffmenge ↔ Teilchenzahl\n\n$$N = n \\times N_A$$\n\n$$n = \\frac{N}{N_A}$$\n\nwobei $N_A = 6{,}022 \\times 10^{23}$ mol⁻¹\n\n## Beispielrechnung\n\n**Aufgabe:** Wie viele Wassermoleküle sind in 36 g Wasser?\n\n**Schritt 1:** Stoffmenge berechnen\n$$n = \\frac{m}{M} = \\frac{36 \\text{ g}}{18 \\text{ g/mol}} = 2 \\text{ mol}$$\n\n**Schritt 2:** Teilchenzahl berechnen\n$$N = n \\times N_A = 2 \\times 6{,}022 \\times 10^{23}$$\n$$= 1{,}204 \\times 10^{24} \\text{ Moleküle}$$\n\n## Typische Umrechnungsaufgaben\n\n| Gegeben    | Gesucht      | Formel         |\n| ---------- | ------------ | -------------- |\n| Masse      | Stoffmenge   | n = m/M        |\n| Stoffmenge | Masse        | m = n × M      |\n| Stoffmenge | Teilchenzahl | N = n × Nₐ     |\n| Masse      | Teilchenzahl | N = (m/M) × Nₐ |"
+    },
+    {
+      "type": "mermaid-diagram",
+      "topic": "Mol-Umrechnungsdreieck",
+      "content": "# Das Mol-Umrechnungsdreieck\n\nDas folgende Diagramm zeigt die Beziehungen zwischen Masse, Stoffmenge und Teilchenzahl:\n\n```mermaid\nflowchart TB\n    A[\"**Masse m**<br/>(in Gramm)\"]\n    B[\"**Stoffmenge n**<br/>(in Mol)\"]\n    C[\"**Teilchenzahl N**<br/>(Anzahl Teilchen)\"]\n    \n    A -->|\"÷ M<br/>(÷ molare Masse)\"| B\n    B -->|\"× M<br/>(× molare Masse)\"| A\n    B -->|\"× Nₐ<br/>(× 6,022×10²³)\"| C\n    C -->|\"÷ Nₐ<br/>(÷ 6,022×10²³)\"| B\n```\n\n## Zusammenfassung der Formeln\n\n| Von                   | Nach  | Rechnung         |\n| --------------------- | ----- | ---------------- |\n| Masse → Stoffmenge    | m → n | n = m ÷ M        |\n| Stoffmenge → Masse    | n → m | m = n × M        |\n| Stoffmenge → Teilchen | n → N | N = n × Nₐ       |\n| Teilchen → Stoffmenge | N → n | n = N ÷ Nₐ       |\n| Masse → Teilchen      | m → N | N = (m ÷ M) × Nₐ |\n\n## Merkhilfe\n\n> 🔺 Das Mol steht in der Mitte!\n>\n> - Nach **oben** (Masse): **mal M**\n> - Nach **unten** (Teilchen): **mal Nₐ**\n> - Von Masse/Teilchen zum Mol: **teilen**"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Das Mol",
+      "question": "Was ist ein Mol?",
+      "options": [
+        "Die Masse eines Atoms in Gramm",
+        "Eine Stoffmenge mit 6,022 × 10²³ Teilchen",
+        "Die Anzahl der Protonen in einem Atom",
+        "Eine Einheit für das Volumen von Gasen"
+      ],
+      "correctAnswer": "Eine Stoffmenge mit 6,022 × 10²³ Teilchen",
+      "explanation": "Ein Mol ist eine Stoffmenge, die genau 6,022 × 10²³ Teilchen enthält (Avogadro-Konstante). Diese Definition gilt für alle Arten von Teilchen: Atome, Moleküle, Ionen usw.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Avogadro-Konstante",
+      "question": "Wie groß ist die Avogadro-Konstante?",
+      "options": [
+        "6,022 × 10²⁰",
+        "6,022 × 10²¹",
+        "6,022 × 10²³",
+        "6,022 × 10²⁶"
+      ],
+      "correctAnswer": "6,022 × 10²³",
+      "explanation": "Die Avogadro-Konstante beträgt Nₐ = 6,022 × 10²³ mol⁻¹. Sie gibt an, wie viele Teilchen in einem Mol enthalten sind. Die Zahl wurde zu Ehren des italienischen Physikers Amedeo Avogadro benannt.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Masse berechnen",
+      "question": "Berechnen Sie die Masse von 0,5 mol Wasser (H₂O). Molmassen: H = 1,0 g/mol, O = 16,0 g/mol",
+      "correctAnswer": "9",
+      "unit": "g",
+      "tolerance": 0.1,
+      "solution": "**Schritt 1:** Molare Masse von H₂O berechnen\n$$M_{H_2O} = 2 \\times 1{,}0 + 1 \\times 16{,}0 = 18{,}0 \\text{ g/mol}$$\n\n**Schritt 2:** Masse berechnen\n$$m = n \\times M = 0{,}5 \\text{ mol} \\times 18{,}0 \\text{ g/mol} = 9{,}0 \\text{ g}$$\n",
+      "explanation": "Die Masse berechnet sich aus Stoffmenge mal molare Masse: m = n × M. Zuerst muss die molare Masse der Verbindung aus den Atomgewichten berechnet werden.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Atomzahl berechnen",
+      "question": "Wie viele Sauerstoffatome sind in 60,0 g Ozon (O₃) enthalten? Molare Masse O = 16,0 g/mol",
+      "correctAnswer": "2.26e24",
+      "unit": "Atome",
+      "tolerance": 5e+22,
+      "solution": "**Schritt 1:** Molare Masse von O₃\n$$M_{O_3} = 3 \\times 16{,}0 = 48{,}0 \\text{ g/mol}$$\n\n**Schritt 2:** Stoffmenge berechnen\n$$n = \\frac{m}{M} = \\frac{60{,}0 \\text{ g}}{48{,}0 \\text{ g/mol}} = 1{,}25 \\text{ mol}$$\n\n**Schritt 3:** Anzahl O₃-Moleküle\n$$N_{Moleküle} = 1{,}25 \\times 6{,}022 \\times 10^{23} = 7{,}53 \\times 10^{23}$$\n\n**Schritt 4:** Anzahl O-Atome (3 pro Molekül!)\n$$N_{Atome} = 3 \\times 7{,}53 \\times 10^{23} = 2{,}26 \\times 10^{24}$$\n",
+      "explanation": "Wichtig: Jedes O₃-Molekül enthält 3 Sauerstoffatome! Daher muss die Molekülzahl mit 3 multipliziert werden, um die Atomzahl zu erhalten.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "topic": "Das Mol",
+      "url": "https://www.youtube.com/watch?v=WDXYXykdkMQ",
+      "title": "Was sind Teilchenzahl und Stoffmenge? I musstewissen Chemie",
+      "description": "Erklärung des Mol-Konzepts und der Avogadro-Konstante mit praktischen Beispielen.",
+      "duration": "5:12",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Empirische Formel",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "35-37"
+        }
+      ],
+      "content": "# Empirische Formel (Verhältnisformel)\n\n## Definition\n\nDie **empirische Formel** (auch Verhältnisformel) gibt das **kleinste ganzzahlige Verhältnis** der Atome in einer Verbindung an.\n\n| Verbindung | Molekularformel | Empirische Formel |\n| ---------- | --------------- | ----------------- |\n| Wasser     | H₂O             | H₂O               |\n| Glucose    | C₆H₁₂O₆         | CH₂O              |\n| Essigsäure | C₂H₄O₂          | CH₂O              |\n| Benzol     | C₆H₆            | CH                |\n\n> 💡 Glucose und Essigsäure haben dieselbe empirische Formel (CH₂O), aber unterschiedliche Molekularformeln!\n\n## Berechnung aus Massenprozenten\n\nWenn du die prozentuale Zusammensetzung einer Verbindung kennst, kannst du die empirische Formel berechnen:\n\n### Schritt-für-Schritt-Anleitung\n\n1. **Annehmen:** 100 g der Verbindung (dann % = Gramm)\n2. **Umrechnen:** Gramm → Mol (durch Atomgewicht teilen)\n3. **Verhältnis:** Alle Molwerte durch den kleinsten teilen\n4. **Ganzzahlig machen:** Falls nötig, mit kleiner Zahl multiplizieren\n\n### Beispiel: Verbindung mit 40% C, 6,7% H, 53,3% O\n\n**Schritt 1:** Bei 100 g Probe:\n- C: 40,0 g\n- H: 6,7 g\n- O: 53,3 g\n\n**Schritt 2:** In Mol umrechnen:\n- C: 40,0 g ÷ 12,0 g/mol = 3,33 mol\n- H: 6,7 g ÷ 1,0 g/mol = 6,7 mol\n- O: 53,3 g ÷ 16,0 g/mol = 3,33 mol\n\n**Schritt 3:** Durch kleinsten Wert teilen (3,33):\n- C: 3,33 ÷ 3,33 = 1\n- H: 6,7 ÷ 3,33 = 2\n- O: 3,33 ÷ 3,33 = 1\n\n**Ergebnis:** Empirische Formel = **CH₂O**"
+    },
+    {
+      "type": "learning-content",
+      "topic": "Molekularformel",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "37-39"
+        }
+      ],
+      "content": "# Von der empirischen zur Molekularformel\n\n## Definition\n\nDie **Molekularformel** (Summenformel) gibt die **tatsächliche Anzahl** aller Atome in einem Molekül an. Sie ist immer ein ganzzahliges Vielfaches der empirischen Formel.\n\n$$\\text{Molekularformel} = n \\times \\text{Empirische Formel}$$\n\n## Berechnung\n\nUm von der empirischen zur Molekularformel zu gelangen, benötigst du die **molare Masse der Verbindung** (oft experimentell durch Massenspektrometrie bestimmt).\n\n### Formel\n\n$$n = \\frac{M_{\\text{Verbindung}}}{M_{\\text{empirisch}}}$$\n\n## Beispiel: Benzol\n\n**Gegeben:**\n- Empirische Formel: CH\n- Molare Masse der empirischen Formel: 12 + 1 = 13 g/mol\n- Experimentell bestimmte molare Masse: 78 g/mol\n\n**Berechnung:**\n$$n = \\frac{78}{13} = 6$$\n\n**Molekularformel:**\n$$6 \\times (CH) = C_6H_6$$\n\n## Beispiel: Borhydrid\n\n**Gegeben:**\n- Massenanalyse: 81,1% B, 18,9% H\n- Experimentelle molare Masse: 53,3 g/mol\n\n**Schritt 1:** Empirische Formel bestimmen\n- B: 81,1 ÷ 10,8 = 7,5 mol\n- H: 18,9 ÷ 1,0 = 18,9 mol\n- Verhältnis H:B = 18,9 ÷ 7,5 = 2,5\n- Mit 2 multiplizieren → B₂H₅\n\n**Schritt 2:** Molare Masse der empirischen Formel\n$$M_{B_2H_5} = 2 \\times 10{,}8 + 5 \\times 1{,}0 = 26{,}6 \\text{ g/mol}$$\n\n**Schritt 3:** Faktor berechnen\n$$n = \\frac{53{,}3}{26{,}6} = 2$$\n\n**Molekularformel:** $B_4H_{10}$"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Empirische Formel",
+      "question": "Was ist eine empirische Formel?",
+      "options": [
+        "Die exakte Anzahl aller Atome in einem Molekül",
+        "Das kleinste ganzzahlige Verhältnis der Atome",
+        "Die Strukturformel einer Verbindung",
+        "Die Formel für die Gitterenergie"
+      ],
+      "correctAnswer": "Das kleinste ganzzahlige Verhältnis der Atome",
+      "explanation": "Die empirische Formel (Verhältnisformel) gibt das kleinste ganzzahlige Verhältnis der Atome an. Die Molekularformel hingegen zeigt die tatsächliche Anzahl. Beispiel: Glucose hat die empirische Formel CH₂O, aber die Molekularformel C₆H₁₂O₆.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Empirische Formel berechnen",
+      "question": "Eine Verbindung besteht aus 81,1% Bor (B) und 18,9% Wasserstoff (H). Bestimmen Sie die empirische Formel. Atomgewichte: B = 10,8 g/mol, H = 1,0 g/mol. Geben Sie das Verhältnis B:H als \"BxHy\" ein (z.B. B2H5).",
+      "correctAnswer": "B2H5",
+      "tolerance": 0,
+      "solution": "**Schritt 1:** Bei 100 g Probe:\n- B: 81,1 g\n- H: 18,9 g\n\n**Schritt 2:** In Mol umrechnen:\n- B: 81,1 ÷ 10,8 = 7,5 mol\n- H: 18,9 ÷ 1,0 = 18,9 mol\n\n**Schritt 3:** Verhältnis bilden:\n- H:B = 18,9 ÷ 7,5 = 2,5\n- B:B = 7,5 ÷ 7,5 = 1\n\n**Schritt 4:** Ganzzahlig machen (×2):\n- B: 1 × 2 = 2\n- H: 2,5 × 2 = 5\n\n**Empirische Formel: B₂H₅**\n",
+      "explanation": "Bei nicht-ganzzahligen Verhältnissen muss mit einer geeigneten Zahl multipliziert werden. Bei 2,5 multipliziert man mit 2, um auf ganze Zahlen zu kommen.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Molekularformel bestimmen",
+      "question": "Die empirische Formel einer Verbindung ist CH. Die experimentell bestimmte molare Masse beträgt 78 g/mol. Wie lautet die Molekularformel? Atomgewichte: C = 12 g/mol, H = 1 g/mol. Geben Sie die Formel als \"CxHx\" ein.",
+      "correctAnswer": "C6H6",
+      "tolerance": 0,
+      "solution": "**Schritt 1:** Molare Masse der empirischen Formel CH\n$$M_{CH} = 12 + 1 = 13 \\text{ g/mol}$$\n\n**Schritt 2:** Faktor berechnen\n$$n = \\frac{M_{\\text{exp}}}{M_{\\text{emp}}} = \\frac{78}{13} = 6$$\n\n**Schritt 3:** Molekularformel\n$$6 \\times (CH) = C_6H_6$$\n\n**Die Verbindung ist Benzol!**\n",
+      "explanation": "Die Molekularformel ist immer ein ganzzahliges Vielfaches der empirischen Formel. Der Faktor ergibt sich aus dem Quotienten der experimentellen und der berechneten molaren Masse.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "topic": "Formelbestimmung Adrenalin",
+      "title": "Fallstudie: Adrenalin",
+      "scenario": "Adrenalin (Epinephrin) ist ein wichtiges Hormon und ein Neurotransmitter, der bei Stress freigesetzt wird. Ein Biochemiker hat eine Probe Adrenalin analysiert und folgende Massenanteile gefunden:\n\n- Kohlenstoff (C): 59,0%\n- Wasserstoff (H): 7,1%\n- Sauerstoff (O): 26,2%\n- Stickstoff (N): 7,7%\n\nDie Massenspektrometrie ergab eine molare Masse von etwa 183 g/mol.\n",
+      "tasks": [
+        {
+          "id": "task1",
+          "instruction": "Berechnen Sie die Stoffmengen der einzelnen Elemente (bei 100 g Probe).",
+          "hint": "Teilen Sie die Masse durch das Atomgewicht: C=12, H=1, O=16, N=14",
+          "solution": "C: 59,0÷12 = 4,92 mol; H: 7,1÷1 = 7,1 mol; O: 26,2÷16 = 1,64 mol; N: 7,7÷14 = 0,55 mol"
+        },
+        {
+          "id": "task2",
+          "instruction": "Teilen Sie alle Werte durch den kleinsten (N) und runden Sie auf ganze Zahlen.",
+          "hint": "Der kleinste Wert ist 0,55 mol (Stickstoff)",
+          "solution": "C: 4,92÷0,55 ≈ 9; H: 7,1÷0,55 ≈ 13; O: 1,64÷0,55 ≈ 3; N: 0,55÷0,55 = 1"
+        },
+        {
+          "id": "task3",
+          "instruction": "Geben Sie die empirische Formel an und berechnen Sie deren molare Masse.",
+          "hint": "Formel: C₉H₁₃O₃N",
+          "solution": "C₉H₁₃O₃N; M = 9×12 + 13×1 + 3×16 + 1×14 = 108 + 13 + 48 + 14 = 183 g/mol"
+        },
+        {
+          "id": "task4",
+          "instruction": "Ist die empirische Formel gleich der Molekularformel?",
+          "hint": "Vergleichen Sie die berechnete mit der experimentellen molaren Masse.",
+          "solution": "Ja! 183 g/mol (berechnet) = 183 g/mol (experimentell). Molekularformel = C₉H₁₃NO₃"
+        }
+      ],
+      "explanation": "Bei Adrenalin ist die empirische Formel gleich der Molekularformel, da der Quotient der molaren Massen 1 ergibt. Die korrekte Schreibweise ist C₉H₁₃NO₃ (N vor O nach Hill-Konvention).",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "topic": "Nomenklatur ionischer Verbindungen",
+      "sourceRefs": [
+        {
+          "sourceId": "kapitel-2",
+          "pages": "40-42"
+        }
+      ],
+      "content": "# Nomenklatur ionischer Verbindungen\n\n## Grundregeln der IUPAC-Nomenklatur\n\nBei der Benennung ionischer Verbindungen (Salze) gilt:\n\n> 📝 **Reihenfolge:** Erst das **Kation**, dann das **Anion**\n\n## Einfache Salze\n\n### Kation-Benennung\n\n- Metalle der Hauptgruppen: Elementname (z.B. Natrium, Calcium)\n- Übergangsmetalle mit mehreren Oxidationsstufen: Elementname + römische Ziffer in Klammern\n\n| Ion | Name |\n|-----|------|\n| Na⁺ | Natrium |\n| Ca²⁺ | Calcium |\n| Fe²⁺ | Eisen(II) |\n| Fe³⁺ | Eisen(III) |\n| Cu⁺ | Kupfer(I) |\n| Cu²⁺ | Kupfer(II) |\n\n### Anion-Benennung\n\n- Einatomige Anionen: Stamm + **-id**\n- Mehratomige Anionen: Eigene Namen\n\n| Ion | Name |\n|-----|------|\n| Cl⁻ | Chlorid |\n| O²⁻ | Oxid |\n| S²⁻ | Sulfid |\n| N³⁻ | Nitrid |\n\n## Beispiele für Salznamen\n\n| Formel | Name |\n|--------|------|\n| NaCl | Natriumchlorid |\n| CaO | Calciumoxid |\n| MgS | Magnesiumsulfid |\n| Al₂O₃ | Aluminiumoxid |\n| FeO | Eisen(II)-oxid |\n| Fe₂O₃ | Eisen(III)-oxid |\n| Cu₂O | Kupfer(I)-oxid |\n| CuO | Kupfer(II)-oxid |\n\n## Salze mit mehratomigen Ionen\n\n| Formel | Name |\n|--------|------|\n| Na₂SO₄ | Natriumsulfat |\n| Ca(NO₃)₂ | Calciumnitrat |\n| (NH₄)₂CO₃ | Ammoniumcarbonat |\n| Fe₂(SO₄)₃ | Eisen(III)-sulfat |\n| CaHPO₄ | Calciumhydrogenphosphat |\n\n> ⚠️ **Achtung:** Bei Übergangsmetallen immer die Oxidationsstufe angeben!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "topic": "Nomenklatur",
+      "question": "Wie heißt die Verbindung Fe₂O₃?",
       "options": [
         "Eisenoxid",
         "Eisen(II)-oxid",
@@ -379,515 +764,319 @@
         "Dieisen-trioxid"
       ],
       "correctAnswer": "Eisen(III)-oxid",
-      "content": "**Erklärung:** Da Eisen variable Ladungen haben kann, muss die Ladung angegeben werden. In Fe₂O₃ haben wir 2 Eisen-Atome und 3 Sauerstoff-Atome. Sauerstoff hat immer -2, also insgesamt -6 Ladung. Um neutral zu sein, müssen die 2 Eisen-Atome zusammen +6 haben → jedes Eisen hat +3. Daher heißt die Verbindung Eisen(III)-oxid. \"Eisenoxid\" ohne Ladungsangabe ist unvollständig, und \"Dieisen-trioxid\" wäre nur für kovalente Verbindungen korrekt."
-    },
-    {
-      "type": "fill-in-the-blank",
-      "topic": "Isotope",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "5-7"
-        }
-      ],
-      "content": "## Neutronenberechnung\n\nVervollständige die folgenden Aussagen über die Zusammensetzung von Atomen:\n\nEin Atom mit der Ordnungszahl Z = 6 und der Massenzahl A = 14 hat [[8]] Neutronen.\n\nDieses Isotop wird als [[Kohlenstoff-14]] oder $^{14}C$ bezeichnet und ist [[radioaktiv]].\n\nDie Formel zur Berechnung lautet: Neutronen = [[A - Z]] = 14 - 6 = 8."
-    },
-    {
-      "type": "matching",
-      "topic": "Atomaufbau",
-      "question": "Ordne die subatomaren Teilchen ihren Eigenschaften zu:",
-      "pairs": [
-        {
-          "left": "Proton",
-          "right": "Positive Ladung, im Kern"
-        },
-        {
-          "left": "Neutron",
-          "right": "Keine Ladung, im Kern"
-        },
-        {
-          "left": "Elektron",
-          "right": "Negative Ladung, in der Hülle"
-        },
-        {
-          "left": "Ordnungszahl Z",
-          "right": "Anzahl der Protonen"
-        },
-        {
-          "left": "Massenzahl A",
-          "right": "Protonen + Neutronen"
-        }
-      ],
-      "content": ""
-    },
-    {
-      "type": "calculation",
-      "topic": "Isotope",
-      "question": "Bor kommt natürlich als Mischung zweier Isotope vor:\n- $^{10}B$: Masse 10,013 u, Häufigkeit 19,9%\n- $^{11}B$: Masse 11,009 u, Häufigkeit 80,1%\n\nBerechne das durchschnittliche Atomgewicht von Bor.\n",
-      "correctAnswer": "10.81",
-      "unit": "u",
-      "tolerance": 0.01,
-      "hint": "Atomgewicht = (Masse₁ × Häufigkeit₁) + (Masse₂ × Häufigkeit₂)",
-      "solution": "**Schritt 1:** Häufigkeiten in Dezimalzahlen umrechnen\n- $^{10}B$: 19,9% = 0,199\n- $^{11}B$: 80,1% = 0,801\n\n**Schritt 2:** Gewichteter Durchschnitt berechnen\n$$\\text{Atomgewicht} = (10,013 \\times 0,199) + (11,009 \\times 0,801)$$\n$$= 1,993 + 8,818 = 10,81 \\text{ u}$$\n",
-      "content": ""
-    },
-    {
-      "type": "matching",
-      "topic": "Periodensystem",
-      "question": "Ordne die Elemente ihren Hauptgruppen und typischen Ionenladungen zu:",
-      "pairs": [
-        {
-          "left": "Natrium (Na)",
-          "right": "Alkalimetall, bildet Na⁺"
-        },
-        {
-          "left": "Calcium (Ca)",
-          "right": "Erdalkalimetall, bildet Ca²⁺"
-        },
-        {
-          "left": "Chlor (Cl)",
-          "right": "Halogen, bildet Cl⁻"
-        },
-        {
-          "left": "Argon (Ar)",
-          "right": "Edelgas, reagiert kaum"
-        },
-        {
-          "left": "Aluminium (Al)",
-          "right": "Gruppe 13, bildet Al³⁺"
-        }
-      ],
-      "content": ""
-    },
-    {
-      "type": "ordering",
-      "topic": "Periodensystem",
-      "question": "Ordne die folgenden Elemente nach steigender Ordnungszahl (kleinstes zuerst):",
-      "items": [
-        "Kohlenstoff (C)",
-        "Stickstoff (N)",
-        "Sauerstoff (O)",
-        "Natrium (Na)",
-        "Schwefel (S)"
-      ],
-      "correctOrder": [
-        "Kohlenstoff (C)",
-        "Stickstoff (N)",
-        "Sauerstoff (O)",
-        "Natrium (Na)",
-        "Schwefel (S)"
-      ],
-      "explanation": "C (Z=6), N (Z=7), O (Z=8), Na (Z=11), S (Z=16)",
-      "content": ""
-    },
-    {
-      "type": "matching",
-      "topic": "Ionen",
-      "question": "Ordne die mehratomigen Ionen ihren Formeln und Ladungen zu:",
-      "pairs": [
-        {
-          "left": "Sulfat",
-          "right": "SO₄²⁻"
-        },
-        {
-          "left": "Nitrat",
-          "right": "NO₃⁻"
-        },
-        {
-          "left": "Phosphat",
-          "right": "PO₄³⁻"
-        },
-        {
-          "left": "Ammonium",
-          "right": "NH₄⁺"
-        },
-        {
-          "left": "Carbonat",
-          "right": "CO₃²⁻"
-        }
-      ],
-      "content": ""
-    },
-    {
-      "type": "practice-exercise",
-      "topic": "Ionische Verbindungen",
-      "title": "Salzformeln aufstellen",
-      "scenario": "Du arbeitest im Labor und musst verschiedene Salzlösungen herstellen. \nDafür musst du die korrekten chemischen Formeln kennen.\n",
-      "tasks": [
-        {
-          "question": "Wie lautet die Formel für Calciumchlorid (Ca²⁺ + Cl⁻)?",
-          "answer": "CaCl₂",
-          "explanation": "Ca²⁺ braucht 2× Cl⁻ für Ladungsneutralität"
-        },
-        {
-          "question": "Wie lautet die Formel für Aluminiumoxid (Al³⁺ + O²⁻)?",
-          "answer": "Al₂O₃",
-          "explanation": "kgV von 3 und 2 ist 6: 2×Al³⁺ = +6, 3×O²⁻ = -6"
-        },
-        {
-          "question": "Wie lautet die Formel für Natriumsulfat (Na⁺ + SO₄²⁻)?",
-          "answer": "Na₂SO₄",
-          "explanation": "SO₄²⁻ braucht 2× Na⁺ für Ladungsneutralität"
-        }
-      ],
-      "content": ""
-    },
-    {
-      "type": "calculation",
-      "topic": "Das Mol",
-      "question": "Wie viel Gramm wiegen 0,5 mol Wasser (H₂O)?\n\nGegeben: M(H) = 1,0 g/mol, M(O) = 16,0 g/mol\n",
-      "correctAnswer": "9",
-      "unit": "g",
-      "tolerance": 0.1,
-      "hint": "Berechne erst die molare Masse von H₂O, dann m = n × M",
-      "solution": "**Schritt 1:** Molare Masse von H₂O berechnen\n$$M(H_2O) = 2 \\times 1,0 + 16,0 = 18,0 \\text{ g/mol}$$\n\n**Schritt 2:** Masse berechnen\n$$m = n \\times M = 0,5 \\text{ mol} \\times 18,0 \\text{ g/mol} = 9,0 \\text{ g}$$\n",
-      "content": ""
-    },
-    {
-      "type": "calculation",
-      "topic": "Das Mol",
-      "question": "Wie viele Sauerstoffatome sind in 60,0 g Ozon (O₃)?\n\nGegeben: M(O) = 16,0 g/mol, Nₐ = 6,022 × 10²³ mol⁻¹\n",
-      "correctAnswer": "2.26e24",
-      "unit": "Atome",
-      "tolerance": 5e+22,
-      "hint": "Berechne: Mol O₃ → Moleküle O₃ → Atome O (×3)",
-      "solution": "**Schritt 1:** Molare Masse und Stoffmenge\n$$M(O_3) = 3 \\times 16,0 = 48,0 \\text{ g/mol}$$\n$$n = \\frac{60,0 \\text{ g}}{48,0 \\text{ g/mol}} = 1,25 \\text{ mol}$$\n\n**Schritt 2:** Anzahl der O₃-Moleküle\n$$N_{O_3} = 1,25 \\times 6,022 \\times 10^{23} = 7,53 \\times 10^{23}$$\n\n**Schritt 3:** Anzahl der O-Atome (×3)\n$$N_O = 3 \\times 7,53 \\times 10^{23} = 2,26 \\times 10^{24} \\text{ Atome}$$\n",
-      "content": ""
-    },
-    {
-      "type": "fill-in-the-blank",
-      "topic": "Coulomb-Gesetz",
-      "sourceRefs": [
-        {
-          "sourceId": "vorlesung-k2",
-          "pages": "18-19"
-        }
-      ],
-      "content": "## Coulomb-Gesetz und Gitterenergie\n\nVervollständige die folgenden Aussagen über ionische Bindungen:\n\nMgO hat einen [[höheren]] Schmelzpunkt als NaCl, weil die Ionenladungen [[größer]] sind (Mg²⁺/O²⁻ vs. Na⁺/Cl⁻).\n\nJe [[kleiner]] der Abstand zwischen den Ionen, desto [[stärker]] die Anziehungskraft.\n\nDas Coulomb-Gesetz beschreibt die [[elektrostatische]] Kraft zwischen geladenen Teilchen."
-    },
-    {
-      "type": "practice-exercise",
-      "topic": "Formelbestimmung",
-      "title": "Empirische Formel ermitteln",
-      "scenario": "Bei der Analyse eines unbekannten Kohlenwasserstoffs erhältst du folgende Daten:\nDie Verbindung enthält 92,3% Kohlenstoff und 7,7% Wasserstoff.\n",
-      "tasks": [
-        {
-          "question": "Wie viel mol C sind in 100 g der Verbindung? (M(C) = 12 g/mol)",
-          "answer": "7,69 mol",
-          "explanation": "92,3 g ÷ 12 g/mol = 7,69 mol"
-        },
-        {
-          "question": "Wie viel mol H sind in 100 g der Verbindung? (M(H) = 1 g/mol)",
-          "answer": "7,7 mol",
-          "explanation": "7,7 g ÷ 1 g/mol = 7,7 mol"
-        },
-        {
-          "question": "Wie lautet das Molverhältnis C:H (auf ganze Zahlen gerundet)?",
-          "answer": "1:1",
-          "explanation": "7,69 : 7,7 ≈ 1 : 1"
-        },
-        {
-          "question": "Wie lautet die empirische Formel?",
-          "answer": "CH",
-          "explanation": "Das einfachste ganzzahlige Verhältnis ist 1:1 → CH"
-        }
-      ],
+      "explanation": "In Fe₂O₃ muss die Gesamtladung null sein. Oxid hat −2, also 3×(−2) = −6. Diese Ladung muss von 2 Eisen-Ionen ausgeglichen werden: 2x = +6, also x = +3. Daher ist es Eisen(III)-oxid. Bei Übergangsmetallen muss die Oxidationsstufe immer angegeben werden.",
       "content": ""
     },
     {
       "type": "matching",
       "topic": "Nomenklatur",
-      "question": "Ordne die chemischen Formeln den korrekten IUPAC-Namen zu:",
+      "question": "Ordnen Sie jede Formel dem korrekten Namen zu.",
       "pairs": [
-        {
-          "left": "Fe₂O₃",
-          "right": "Eisen(III)-oxid"
-        },
         {
           "left": "CuSO₄",
           "right": "Kupfer(II)-sulfat"
         },
         {
-          "left": "NaCl",
-          "right": "Natriumchlorid"
+          "left": "Na₂CO₃",
+          "right": "Natriumcarbonat"
         },
         {
-          "left": "CaCO₃",
-          "right": "Calciumcarbonat"
+          "left": "Ca(OH)₂",
+          "right": "Calciumhydroxid"
         },
         {
-          "left": "Al(OH)₃",
-          "right": "Aluminiumhydroxid"
+          "left": "NH₄Cl",
+          "right": "Ammoniumchlorid"
+        },
+        {
+          "left": "MgO",
+          "right": "Magnesiumoxid"
         }
       ],
+      "explanation": "Bei der Benennung steht zuerst das Kation (Metall oder Ammonium), dann das Anion. Bei Übergangsmetallen wie Kupfer wird die Oxidationsstufe in römischen Ziffern angegeben.",
       "content": ""
     },
     {
       "type": "self-assessment",
-      "topic": "Selbsttest",
-      "question": "Bist du bereit für den Vorlesungs-Test?",
+      "topic": "Bereitschaft für den Test",
+      "question": "Überprüfen Sie Ihre Vorbereitung auf den Vorlesungstest",
       "checkpoints": [
-        "Ich kann die drei subatomaren Teilchen und ihre Eigenschaften nennen",
-        "Ich kann Ordnungszahl, Massenzahl und Neutronenzahl berechnen",
-        "Ich verstehe, was Isotope sind und wie man das Atomgewicht berechnet",
-        "Ich kenne die wichtigsten Hauptgruppen im Periodensystem",
-        "Ich kann Kationen von Anionen unterscheiden",
-        "Ich kenne die wichtigsten mehratomigen Ionen auswendig",
-        "Ich verstehe das Coulomb-Gesetz und seine Auswirkung auf Schmelzpunkte",
-        "Ich kann mit dem Mol rechnen (Masse ↔ Stoffmenge ↔ Teilchenzahl)",
-        "Ich kann empirische und molekulare Formeln aus Analysedaten ermitteln",
-        "Ich kann ionische Verbindungen nach IUPAC benennen"
+        "Ich kann die drei subatomaren Teilchen (Proton, Neutron, Elektron) mit ihren Ladungen und Massen beschreiben.",
+        "Ich kann die Ordnungszahl (Z) und Massenzahl (A) erklären und die Neutronenzahl berechnen.",
+        "Ich verstehe, was Isotope sind und kann das Atomgewicht als gewichteten Durchschnitt berechnen.",
+        "Ich kenne die Struktur des Periodensystems (Perioden, Gruppen) und die wichtigen Hauptgruppen.",
+        "Ich kann zwischen Kationen und Anionen unterscheiden und typische Ionenladungen vorhersagen.",
+        "Ich kenne die wichtigsten mehratomigen Ionen (Sulfat, Nitrat, Phosphat, Carbonat, Ammonium).",
+        "Ich kann das Coulomb-Gesetz anwenden und Schmelzpunkte von Salzen vergleichen.",
+        "Ich verstehe das Mol-Konzept und kann zwischen Masse, Stoffmenge und Teilchenzahl umrechnen.",
+        "Ich kann empirische und molekulare Formeln aus Analysedaten berechnen.",
+        "Ich kann ionische Verbindungen nach IUPAC-Regeln benennen."
       ],
       "content": ""
     }
   ],
   "quiz": [
     {
-      "type": "multiple-choice",
-      "topic": "Atomaufbau",
-      "question": "Welches subatomare Teilchen befindet sich in der Elektronenhülle und trägt eine negative Ladung?",
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen über die Zusammensetzung eines Atoms sind korrekt?",
       "options": [
-        "Proton",
-        "Neutron",
-        "Elektron",
-        "Nukleon"
+        "Protonen und Neutronen befinden sich im Atomkern",
+        "Elektronen haben eine größere Masse als Protonen",
+        "Die Ordnungszahl gibt die Anzahl der Protonen an",
+        "Neutronen tragen eine positive Ladung",
+        "Die Masse eines Atoms konzentriert sich fast vollständig im Kern"
       ],
-      "correctAnswer": "Elektron",
-      "explanation": "**Erklärung:** Elektronen ($e^-$) befinden sich in der Elektronenhülle um den Atomkern und tragen eine negative Ladung. Protonen (positiv) und Neutronen (neutral) befinden sich im Kern und werden zusammen als Nukleonen bezeichnet."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Atomaufbau",
-      "question": "Welche Aussage über die Masse der subatomaren Teilchen ist korrekt?",
-      "options": [
-        "Elektronen haben etwa die gleiche Masse wie Protonen",
-        "Neutronen sind deutlich leichter als Protonen",
-        "Protonen und Neutronen haben fast die gleiche Masse",
-        "Die Masse des Elektrons bestimmt hauptsächlich die Atommasse"
+      "correctAnswers": [
+        "Protonen und Neutronen befinden sich im Atomkern",
+        "Die Ordnungszahl gibt die Anzahl der Protonen an",
+        "Die Masse eines Atoms konzentriert sich fast vollständig im Kern"
       ],
-      "correctAnswer": "Protonen und Neutronen haben fast die gleiche Masse",
-      "explanation": "**Erklärung:** Protonen (1,007 u) und Neutronen (1,009 u) haben nahezu identische Massen und befinden sich beide im Kern. Elektronen sind mit nur 0,0005 u etwa 2000-mal leichter und tragen daher kaum zur Gesamtmasse des Atoms bei."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Ordnungszahl und Isotope",
-      "question": "Ein Atom hat die Nuklid-Schreibweise ³¹₁₅P. Wie viele Neutronen hat dieses Atom?",
-      "options": [
-        "15",
-        "16",
-        "31",
-        "46"
-      ],
-      "correctAnswer": "16",
-      "explanation": "**Erklärung:** In der Nuklid-Schreibweise steht die Massenzahl (A = 31) oben und die Ordnungszahl (Z = 15) unten. Die Anzahl der Neutronen berechnet sich als: Neutronen = A - Z = 31 - 15 = 16."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Ordnungszahl und Isotope",
-      "question": "Was haben Isotope desselben Elements gemeinsam?",
-      "options": [
-        "Die gleiche Anzahl an Neutronen",
-        "Die gleiche Massenzahl",
-        "Die gleiche Anzahl an Protonen",
-        "Die gleiche Masse"
-      ],
-      "correctAnswer": "Die gleiche Anzahl an Protonen",
-      "explanation": "**Erklärung:** Isotope sind Atome desselben Elements mit gleicher Protonenzahl (Ordnungszahl), aber unterschiedlicher Neutronenzahl. Da die Protonenzahl die Identität eines Elements bestimmt, haben alle Isotope eines Elements die gleiche Anzahl an Protonen. Die Massenzahl und damit die Masse variieren jedoch."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Ordnungszahl und Isotope",
-      "question": "Chlor hat zwei stabile Isotope: Cl-35 (75,77%) und Cl-37 (24,23%). Welches Atomgewicht erwartest du im Periodensystem?",
-      "options": [
-        "Genau 35,0 u",
-        "Genau 36,0 u",
-        "Etwa 35,5 u",
-        "Genau 37,0 u"
-      ],
-      "correctAnswer": "Etwa 35,5 u",
-      "explanation": "**Erklärung:** Das Atomgewicht ist der gewichtete Durchschnitt der Isotopenmassen. Berechnung: (0,7577 × 35) + (0,2423 × 37) = 26,52 + 8,97 = 35,49 ≈ 35,5 u. Da Cl-35 häufiger ist, liegt der Durchschnitt näher bei 35 als bei 37."
+      "explanation": "Protonen und Neutronen bilden den Kern, in dem sich über 99,9% der Atommasse befindet. Die Ordnungszahl Z ist die Protonenzahl. Elektronen sind etwa 1840-mal leichter als Protonen, und Neutronen sind neutral (keine Ladung)."
     },
     {
       "type": "multiple-choice-multiple",
-      "topic": "Ordnungszahl und Isotope",
-      "question": "Welche Aussagen über die Massenspektrometrie sind korrekt? (Mehrere Antworten möglich)",
+      "question": "Das Element Chlor besteht zu 75,8% aus ³⁵Cl (Masse 34,97 u) und zu 24,2% aus ³⁷Cl (Masse 36,97 u). Welche Aussagen sind korrekt?",
       "options": [
-        "Leichte Ionen werden stärker abgelenkt als schwere",
-        "Die Probe muss zuerst ionisiert werden",
-        "Das Ergebnis zeigt die relative Häufigkeit der Isotope",
-        "Alle Ionen werden gleich stark abgelenkt"
+        "Das durchschnittliche Atomgewicht beträgt etwa 35,5 u",
+        "Beide Isotope haben 17 Protonen",
+        "³⁷Cl hat 2 Neutronen mehr als ³⁵Cl",
+        "Die Isotope unterscheiden sich in ihren chemischen Eigenschaften erheblich",
+        "Das Atomgewicht ist näher an 35 als an 37, weil ³⁵Cl häufiger ist"
       ],
       "correctAnswers": [
-        "Leichte Ionen werden stärker abgelenkt als schwere",
-        "Die Probe muss zuerst ionisiert werden",
-        "Das Ergebnis zeigt die relative Häufigkeit der Isotope"
+        "Das durchschnittliche Atomgewicht beträgt etwa 35,5 u",
+        "Beide Isotope haben 17 Protonen",
+        "³⁷Cl hat 2 Neutronen mehr als ³⁵Cl",
+        "Das Atomgewicht ist näher an 35 als an 37, weil ³⁵Cl häufiger ist"
       ],
-      "explanation": "**Erklärung:** Bei der Massenspektrometrie wird die Probe zuerst ionisiert (meist zu Kationen), dann im Magnetfeld abgelenkt. Leichte Ionen werden stärker abgelenkt als schwere (kleinerer Radius). Das resultierende Spektrum zeigt Peaks für jedes Isotop, deren Höhe die relative Häufigkeit angibt."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Periodensystem der Elemente",
-      "question": "Warum haben Elemente derselben Gruppe ähnliche chemische Eigenschaften?",
-      "options": [
-        "Sie haben die gleiche Anzahl an Protonen",
-        "Sie haben die gleiche Anzahl an Valenzelektronen",
-        "Sie haben die gleiche Masse",
-        "Sie wurden zur gleichen Zeit entdeckt"
-      ],
-      "correctAnswer": "Sie haben die gleiche Anzahl an Valenzelektronen",
-      "explanation": "**Erklärung:** Elemente derselben Gruppe (Spalte) im Periodensystem haben die gleiche Anzahl an Valenzelektronen (Elektronen in der äußersten Schale). Da die Valenzelektronen für das chemische Verhalten verantwortlich sind, zeigen diese Elemente ähnliche Reaktivität und bilden ähnliche Verbindungen."
+      "explanation": "Isotope haben dieselbe Protonenzahl (Z=17 für Chlor), aber unterschiedliche Neutronenzahlen. ³⁵Cl hat 18 Neutronen, ³⁷Cl hat 20. Da ³⁵Cl häufiger vorkommt, liegt das Durchschnittsgewicht (35,45 u) näher bei 35. Isotope verhalten sich chemisch nahezu identisch."
     },
     {
       "type": "multiple-choice-multiple",
-      "topic": "Periodensystem der Elemente",
-      "question": "Welche Aussagen über Alkalimetalle und Halogene sind korrekt? (Mehrere Antworten möglich)",
+      "question": "Welche Aussagen über das Periodensystem der Elemente sind zutreffend?",
       "options": [
-        "Alkalimetalle bilden +1 Ionen",
-        "Halogene kommen als zweiatomige Moleküle vor",
-        "Alkalimetalle sind reaktionsträge",
-        "Halogene bilden -1 Ionen"
+        "Elemente in derselben Gruppe haben ähnliche chemische Eigenschaften",
+        "Die Perioden geben die Anzahl der Elektronenschalen an",
+        "Metalle befinden sich hauptsächlich auf der rechten Seite des PSE",
+        "Die Ordnungszahl steigt von links nach rechts und von oben nach unten",
+        "Edelgase stehen in der Gruppe 18 (früher Gruppe 8A)"
       ],
       "correctAnswers": [
-        "Alkalimetalle bilden +1 Ionen",
-        "Halogene kommen als zweiatomige Moleküle vor",
-        "Halogene bilden -1 Ionen"
+        "Elemente in derselben Gruppe haben ähnliche chemische Eigenschaften",
+        "Die Perioden geben die Anzahl der Elektronenschalen an",
+        "Die Ordnungszahl steigt von links nach rechts und von oben nach unten",
+        "Edelgase stehen in der Gruppe 18 (früher Gruppe 8A)"
       ],
-      "explanation": "**Erklärung:** Alkalimetalle (Gruppe 1) haben ein Valenzelektron, das sie leicht abgeben → +1 Ionen. Sie sind hochreaktiv (nicht reaktionsträge). Halogene (Gruppe 17) kommen elementar als zweiatomige Moleküle vor (F₂, Cl₂, Br₂, I₂) und nehmen ein Elektron auf → -1 Ionen (Halogenide)."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Moleküle und Ionen",
-      "question": "Welche Aussage beschreibt den Unterschied zwischen kovalenter und ionischer Bindung korrekt?",
-      "options": [
-        "Bei kovalenten Bindungen werden Elektronen übertragen, bei ionischen geteilt",
-        "Bei kovalenten Bindungen werden Elektronen geteilt, bei ionischen übertragen",
-        "Beide Bindungstypen basieren auf Elektronenübertragung",
-        "Kovalente Bindungen entstehen nur zwischen Metallen"
-      ],
-      "correctAnswer": "Bei kovalenten Bindungen werden Elektronen geteilt, bei ionischen übertragen",
-      "explanation": "**Erklärung:** Bei der kovalenten Bindung (zwischen Nichtmetallen) teilen sich Atome gemeinsame Elektronenpaare. Bei der ionischen Bindung (zwischen Metall und Nichtmetall) werden Elektronen vollständig übertragen: Das Metall gibt Elektronen ab (→ Kation), das Nichtmetall nimmt sie auf (→ Anion)."
-    },
-    {
-      "type": "multiple-choice",
-      "topic": "Moleküle und Ionen",
-      "question": "Welches Ion bildet Calcium (Ca, Gruppe 2) typischerweise?",
-      "options": [
-        "Ca⁺",
-        "Ca²⁺",
-        "Ca⁻",
-        "Ca²⁻"
-      ],
-      "correctAnswer": "Ca²⁺",
-      "explanation": "**Erklärung:** Calcium ist ein Erdalkalimetall (Gruppe 2) mit 2 Valenzelektronen. Um die stabile Edelgaskonfiguration zu erreichen, gibt es diese 2 Elektronen ab und bildet ein Ca²⁺-Kation. Alle Erdalkalimetalle bilden +2 Ionen."
+      "explanation": "Elemente derselben Gruppe haben gleiche Valenzelektronenzahl und damit ähnliche Eigenschaften. Die Periodennummer entspricht der Schalenzahl. Metalle befinden sich links und in der Mitte, nicht rechts. Die Ordnungszahl steigt kontinuierlich im PSE."
     },
     {
       "type": "multiple-choice-multiple",
-      "topic": "Moleküle und Ionen",
-      "question": "Welche der folgenden sind mehratomige Ionen? (Mehrere Antworten möglich)",
+      "question": "Welche Vorhersagen über die Ionenbildung der Hauptgruppenelemente sind korrekt?",
       "options": [
-        "Sulfat (SO₄²⁻)",
-        "Chlorid (Cl⁻)",
-        "Ammonium (NH₄⁺)",
-        "Nitrat (NO₃⁻)"
+        "Natrium bildet typischerweise Na⁺-Ionen",
+        "Chlor bildet typischerweise Cl²⁻-Ionen",
+        "Magnesium bildet typischerweise Mg²⁺-Ionen",
+        "Sauerstoff bildet typischerweise O²⁻-Ionen",
+        "Aluminium bildet typischerweise Al⁺-Ionen"
       ],
       "correctAnswers": [
-        "Sulfat (SO₄²⁻)",
-        "Ammonium (NH₄⁺)",
-        "Nitrat (NO₃⁻)"
+        "Natrium bildet typischerweise Na⁺-Ionen",
+        "Magnesium bildet typischerweise Mg²⁺-Ionen",
+        "Sauerstoff bildet typischerweise O²⁻-Ionen"
       ],
-      "explanation": "**Erklärung:** Mehratomige Ionen bestehen aus mehreren kovalent gebundenen Atomen, die insgesamt eine Ladung tragen. Sulfat (SO₄²⁻), Ammonium (NH₄⁺) und Nitrat (NO₃⁻) sind mehratomig. Chlorid (Cl⁻) besteht nur aus einem Atom und ist daher ein einatomiges Ion."
+      "explanation": "Metalle geben Elektronen ab (Kationen): Na (Gruppe 1) → Na⁺, Mg (Gruppe 2) → Mg²⁺, Al (Gruppe 13) → Al³⁺. Nichtmetalle nehmen Elektronen auf (Anionen): Cl (Gruppe 17) → Cl⁻ (nicht Cl²⁻!), O (Gruppe 16) → O²⁻."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Coulomb-Gesetz und Gitterenergie",
-      "question": "Laut Coulomb-Gesetz: Welcher Faktor führt zu einer stärkeren Anziehungskraft zwischen Ionen?",
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen über die Bildung von Ionen sind korrekt?",
       "options": [
+        "Kationen entstehen durch Abgabe von Elektronen",
+        "Anionen sind negativ geladen",
+        "Metalle bilden typischerweise Anionen",
+        "Bei der Ionenbildung ändert sich die Protonenzahl",
+        "Ionen streben oft die Edelgaskonfiguration an"
+      ],
+      "correctAnswers": [
+        "Kationen entstehen durch Abgabe von Elektronen",
+        "Anionen sind negativ geladen",
+        "Ionen streben oft die Edelgaskonfiguration an"
+      ],
+      "explanation": "Kationen (+) entstehen durch Elektronenabgabe (typisch für Metalle). Anionen (−) entstehen durch Elektronenaufnahme (typisch für Nichtmetalle). Die Protonenzahl bleibt bei der Ionenbildung unverändert – nur die Elektronenzahl ändert sich."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Zuordnungen von mehratomigen Ionen sind korrekt?",
+      "options": [
+        "Sulfat: SO₄²⁻",
+        "Nitrat: NO₂⁻",
+        "Phosphat: PO₄³⁻",
+        "Ammonium: NH₄⁺",
+        "Carbonat: CO₂²⁻"
+      ],
+      "correctAnswers": [
+        "Sulfat: SO₄²⁻",
+        "Phosphat: PO₄³⁻",
+        "Ammonium: NH₄⁺"
+      ],
+      "explanation": "Sulfat ist SO₄²⁻, Phosphat ist PO₄³⁻, und Ammonium ist NH₄⁺ (das einzige häufige mehratomige Kation). Nitrat ist NO₃⁻ (nicht NO₂⁻, das wäre Nitrit). Carbonat ist CO₃²⁻ (nicht CO₂²⁻)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Gemäß dem Coulomb-Gesetz: Welche Faktoren führen zu einer stärkeren elektrostatischen Anziehung zwischen Ionen?",
+      "options": [
+        "Höhere Ladungen der Ionen",
         "Größerer Abstand zwischen den Ionen",
-        "Kleinere Ladungen der Ionen",
-        "Höhere Ladungen bei kleinerem Abstand",
-        "Gleiche Ladungen der Ionen"
+        "Kleinere Ionenradien",
+        "Niedrigere Temperaturen",
+        "Gleiche Ladungszeichen der Ionen"
       ],
-      "correctAnswer": "Höhere Ladungen bei kleinerem Abstand",
-      "explanation": "**Erklärung:** Das Coulomb-Gesetz besagt: F ∝ (q₁ × q₂) / d². Die Kraft ist umso größer, je höher das Produkt der Ladungen und je kleiner der Abstand. Daher führen höhere Ladungen und kleinerer Abstand zu stärkerer Anziehung (und damit höherer Gitterenergie und höherem Schmelzpunkt)."
+      "correctAnswers": [
+        "Höhere Ladungen der Ionen",
+        "Kleinere Ionenradien"
+      ],
+      "explanation": "Nach dem Coulomb-Gesetz F = k·Q₁·Q₂/d² steigt die Kraft mit höheren Ladungen (Q) und sinkt mit größerem Abstand (d). Kleinere Ionen bedeuten kleineren Abstand. Die Temperatur spielt im Coulomb-Gesetz keine Rolle, und gleiche Ladungszeichen führen zu Abstoßung, nicht Anziehung."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Das Mol und Molare Masse",
-      "question": "Was gibt die Avogadro-Konstante (Nₐ ≈ 6,022 × 10²³) an?",
+      "type": "multiple-choice-multiple",
+      "question": "Vergleichen Sie NaCl (Na⁺/Cl⁻) und MgO (Mg²⁺/O²⁻). Welche Aussagen sind korrekt?",
       "options": [
-        "Die Masse eines Atoms in Gramm",
-        "Die Anzahl der Teilchen in einem Mol",
-        "Die Anzahl der Elemente im Periodensystem",
-        "Die Anzahl der Elektronen in einem Atom"
+        "MgO hat eine höhere Gitterenergie als NaCl",
+        "NaCl hat einen höheren Schmelzpunkt als MgO",
+        "Das Ladungsprodukt bei MgO ist viermal größer als bei NaCl",
+        "Beide Verbindungen sind ionische Salze",
+        "MgO wird als feuerfestes Material verwendet"
       ],
-      "correctAnswer": "Die Anzahl der Teilchen in einem Mol",
-      "explanation": "**Erklärung:** Die Avogadro-Konstante definiert, wie viele Teilchen (Atome, Moleküle, Ionen) in einem Mol enthalten sind. Diese Zahl (etwa 6,022 × 10²³) wurde so gewählt, dass die molare Masse in g/mol numerisch dem Atomgewicht in u entspricht."
+      "correctAnswers": [
+        "MgO hat eine höhere Gitterenergie als NaCl",
+        "Das Ladungsprodukt bei MgO ist viermal größer als bei NaCl",
+        "Beide Verbindungen sind ionische Salze",
+        "MgO wird als feuerfestes Material verwendet"
+      ],
+      "explanation": "MgO hat wegen der höheren Ionenladungen (+2/−2 vs. +1/−1) eine etwa 5× höhere Gitterenergie und damit einen viel höheren Schmelzpunkt (2852°C vs. 801°C für NaCl). Das Ladungsprodukt ist 4 vs. 1. Wegen des hohen Schmelzpunkts wird MgO in feuerfesten Materialien verwendet."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Das Mol und Molare Masse",
-      "question": "Wie groß ist die molare Masse von Schwefelsäure (H₂SO₄)? (H = 1, S = 32, O = 16 g/mol)",
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Mol-Konzept sind korrekt?",
       "options": [
-        "49 g/mol",
-        "82 g/mol",
-        "98 g/mol",
-        "114 g/mol"
+        "Ein Mol enthält 6,022 × 10²³ Teilchen",
+        "Die molare Masse von Kohlenstoff beträgt 12 g/mol",
+        "1 mol Helium enthält mehr Atome als 1 mol Uran",
+        "Die Stoffmenge n hat die Einheit mol",
+        "1 mol H₂O enthält 6,022 × 10²³ Wasserstoffatome"
       ],
-      "correctAnswer": "98 g/mol",
-      "explanation": "**Erklärung:** Die molare Masse berechnet sich aus der Summe der Atommassen: M(H₂SO₄) = 2 × M(H) + 1 × M(S) + 4 × M(O) = 2 × 1 + 32 + 4 × 16 = 2 + 32 + 64 = 98 g/mol."
+      "correctAnswers": [
+        "Ein Mol enthält 6,022 × 10²³ Teilchen",
+        "Die molare Masse von Kohlenstoff beträgt 12 g/mol",
+        "Die Stoffmenge n hat die Einheit mol"
+      ],
+      "explanation": "1 mol enthält immer Nₐ = 6,022 × 10²³ Teilchen, unabhängig vom Element. Kohlenstoff hat M = 12 g/mol. 1 mol jedes einatomigen Elements enthält gleich viele Atome. 1 mol H₂O enthält 2 mol H-Atome, also 2 × 6,022 × 10²³ = 1,2 × 10²⁴ H-Atome."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Das Mol und Molare Masse",
-      "question": "Wie viele Moleküle sind in 2 Mol Wasser (H₂O) enthalten?",
+      "type": "multiple-choice-multiple",
+      "question": "Für die Berechnung \"Wie viele Atome sind in 32 g Sauerstoff (O₂)?\" – welche Schritte sind notwendig?",
       "options": [
-        "6,022 × 10²³",
-        "1,204 × 10²⁴",
-        "3,011 × 10²³",
-        "36 × 10²³"
+        "Stoffmenge berechnen: n = m/M = 32g / 32g/mol = 1 mol O₂",
+        "Anzahl O₂-Moleküle: 1 mol × 6,022 × 10²³ = 6,022 × 10²³",
+        "Anzahl O-Atome: 2 × 6,022 × 10²³ = 1,2 × 10²⁴",
+        "Die molare Masse von O₂ beträgt 16 g/mol",
+        "Die Anzahl der Atome ist gleich der Anzahl der Moleküle"
       ],
-      "correctAnswer": "1,204 × 10²⁴",
-      "explanation": "**Erklärung:** Die Anzahl der Teilchen berechnet sich als N = n × Nₐ. Mit n = 2 mol und Nₐ = 6,022 × 10²³ mol⁻¹ ergibt sich: N = 2 × 6,022 × 10²³ = 1,204 × 10²⁴ Moleküle."
+      "correctAnswers": [
+        "Stoffmenge berechnen: n = m/M = 32g / 32g/mol = 1 mol O₂",
+        "Anzahl O₂-Moleküle: 1 mol × 6,022 × 10²³ = 6,022 × 10²³",
+        "Anzahl O-Atome: 2 × 6,022 × 10²³ = 1,2 × 10²⁴"
+      ],
+      "explanation": "M(O₂) = 2 × 16 = 32 g/mol (nicht 16!). 32 g O₂ = 1 mol O₂ = 6,022 × 10²³ Moleküle. Da jedes O₂-Molekül 2 Atome enthält, gibt es 1,2 × 10²⁴ O-Atome (doppelt so viele wie Moleküle)."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Ermittlung chemischer Formeln",
-      "question": "Eine Verbindung enthält 40% C, 6,7% H und 53,3% O. Was ist der erste Schritt zur Bestimmung der empirischen Formel?",
+      "type": "multiple-choice-multiple",
+      "question": "Eine Verbindung enthält 40% Kohlenstoff, 6,7% Wasserstoff und 53,3% Sauerstoff. Welche Aussagen zur Bestimmung der empirischen Formel sind korrekt?",
       "options": [
-        "Die Prozente addieren",
-        "Eine Basis von 100 g annehmen und die Massen in Mol umrechnen",
-        "Die molare Masse bestimmen",
-        "Die Strukturformel aufstellen"
+        "Bei 100 g Probe: 40 g C, 6,7 g H, 53,3 g O",
+        "Stoffmengen: C ≈ 3,3 mol, H ≈ 6,7 mol, O ≈ 3,3 mol",
+        "Die empirische Formel ist CH₂O",
+        "Die empirische Formel ist C₂H₄O₂",
+        "Diese empirische Formel könnte zu Glucose (C₆H₁₂O₆) gehören"
       ],
-      "correctAnswer": "Eine Basis von 100 g annehmen und die Massen in Mol umrechnen",
-      "explanation": "**Erklärung:** Bei der Bestimmung der empirischen Formel nehmen wir eine hypothetische Probe von 100 g an. Dann entsprechen die Prozentangaben direkt den Massen in Gramm (40 g C, 6,7 g H, 53,3 g O). Diese Massen werden dann in Mol umgerechnet, indem wir durch die jeweiligen molaren Massen teilen."
+      "correctAnswers": [
+        "Bei 100 g Probe: 40 g C, 6,7 g H, 53,3 g O",
+        "Stoffmengen: C ≈ 3,3 mol, H ≈ 6,7 mol, O ≈ 3,3 mol",
+        "Die empirische Formel ist CH₂O",
+        "Diese empirische Formel könnte zu Glucose (C₆H₁₂O₆) gehören"
+      ],
+      "explanation": "Massenprozente entsprechen Gramm bei 100 g Probe. n(C)=40/12≈3,3, n(H)=6,7/1≈6,7, n(O)=53,3/16≈3,3. Verhältnis C:H:O = 1:2:1 → CH₂O. C₂H₄O₂ ist nicht die einfachste Form (kürzt sich zu CH₂O). Glucose hat die Molekularformel C₆H₁₂O₆ = 6×(CH₂O)."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Ermittlung chemischer Formeln",
-      "question": "Die empirische Formel einer Verbindung ist CH₂O (M = 30 g/mol). Die experimentelle Molmasse beträgt 90 g/mol. Wie lautet die Molekülformel?",
+      "type": "multiple-choice-multiple",
+      "question": "Die empirische Formel einer Verbindung ist CH₂O (M = 30 g/mol). Die experimentelle molare Masse beträgt 180 g/mol. Welche Aussagen sind korrekt?",
       "options": [
-        "CH₂O",
-        "C₂H₄O₂",
-        "C₃H₆O₃",
-        "C₄H₈O₄"
+        "Der Faktor n = 180/30 = 6",
+        "Die Molekularformel ist C₆H₁₂O₆",
+        "Es könnte sich um Glucose handeln",
+        "Die Molekularformel ist C₃H₆O₃",
+        "Empirische und Molekularformel sind immer identisch"
       ],
-      "correctAnswer": "C₃H₆O₃",
-      "explanation": "**Erklärung:** Der Faktor zwischen molekularer und empirischer Masse ist: 90 g/mol ÷ 30 g/mol = 3. Die Indizes der empirischen Formel werden mit diesem Faktor multipliziert: (CH₂O)₃ = C₃H₆O₃."
+      "correctAnswers": [
+        "Der Faktor n = 180/30 = 6",
+        "Die Molekularformel ist C₆H₁₂O₆",
+        "Es könnte sich um Glucose handeln"
+      ],
+      "explanation": "n = M(exp)/M(emp) = 180/30 = 6. Molekularformel = 6 × (CH₂O) = C₆H₁₂O₆. Dies ist die Molekularformel von Glucose. C₃H₆O₃ wäre für n=3 (90 g/mol). Die Molekularformel ist nur dann gleich der empirischen, wenn n=1."
     },
     {
-      "type": "multiple-choice",
-      "topic": "Nomenklatur anorganischer Verbindungen",
-      "question": "Wie lautet der korrekte IUPAC-Name für CuSO₄?",
+      "type": "multiple-choice-multiple",
+      "question": "Welche Benennungen ionischer Verbindungen sind korrekt nach IUPAC?",
       "options": [
-        "Kupfersulfat",
-        "Kupfer(I)-sulfat",
-        "Kupfer(II)-sulfat",
-        "Kupfer-schwefelsäure"
+        "FeCl₃ = Eisen(III)-chlorid",
+        "Na₂SO₄ = Natriumsulfat",
+        "CuO = Kupferoxid (ohne Oxidationsstufe)",
+        "Ca(NO₃)₂ = Calciumnitrat",
+        "(NH₄)₂S = Ammoniumsulfid"
       ],
-      "correctAnswer": "Kupfer(II)-sulfat",
-      "explanation": "**Erklärung:** Da Kupfer variable Ladungen haben kann (+1 oder +2), muss die Ladung angegeben werden. Sulfat hat die Ladung -2. Da in CuSO₄ nur ein Kupfer-Ion vorkommt, muss es +2 sein, um die Ladung auszugleichen. Daher: Kupfer(II)-sulfat. \"Kupfersulfat\" ohne Ladungsangabe ist unvollständig."
+      "correctAnswers": [
+        "FeCl₃ = Eisen(III)-chlorid",
+        "Na₂SO₄ = Natriumsulfat",
+        "Ca(NO₃)₂ = Calciumnitrat",
+        "(NH₄)₂S = Ammoniumsulfid"
+      ],
+      "explanation": "Bei Übergangsmetallen mit mehreren möglichen Oxidationsstufen muss diese angegeben werden: FeCl₃ = Eisen(III)-chlorid. CuO sollte Kupfer(II)-oxid heißen, da Cu auch +1 sein kann. Hauptgruppenmetalle wie Na, Ca brauchen keine Angabe."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Adrenalin hat die Zusammensetzung 59% C, 7,1% H, 26,2% O, 7,7% N und eine molare Masse von 183 g/mol. Welche Aussagen zur Formelbestimmung sind korrekt?",
+      "options": [
+        "Die Stoffmenge Stickstoff (ca. 0,55 mol bei 100 g) ist die kleinste",
+        "Das Verhältnis C:H:O:N beträgt etwa 9:13:3:1",
+        "Die molare Masse der empirischen Formel beträgt 183 g/mol",
+        "Die Molekularformel ist C₁₈H₂₆N₂O₆",
+        "Empirische und Molekularformel sind identisch"
+      ],
+      "correctAnswers": [
+        "Die Stoffmenge Stickstoff (ca. 0,55 mol bei 100 g) ist die kleinste",
+        "Das Verhältnis C:H:O:N beträgt etwa 9:13:3:1",
+        "Die molare Masse der empirischen Formel beträgt 183 g/mol",
+        "Empirische und Molekularformel sind identisch"
+      ],
+      "explanation": "n(C)=4,9, n(H)=7,1, n(O)=1,64, n(N)=0,55. Teilen durch 0,55 gibt ≈9:13:3:1. M(C₉H₁₃NO₃) = 108+13+14+48 = 183 g/mol = M(exp). Da der Faktor 1 ist, sind empirische und Molekularformel identisch. Die Formel ist C₉H₁₃NO₃, nicht C₁₈H₂₆N₂O₆."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Calciumphosphat ist ein wichtiger Bestandteil von Knochen. Welche Aussagen sind korrekt?",
+      "options": [
+        "Calcium bildet Ca²⁺-Ionen",
+        "Phosphat hat die Formel PO₄³⁻",
+        "Die Formel für Calciumphosphat ist Ca₃(PO₄)₂",
+        "Die Formel für Calciumphosphat ist CaPO₄",
+        "Zur elektrischen Neutralität braucht man 3 Ca²⁺ und 2 PO₄³⁻"
+      ],
+      "correctAnswers": [
+        "Calcium bildet Ca²⁺-Ionen",
+        "Phosphat hat die Formel PO₄³⁻",
+        "Die Formel für Calciumphosphat ist Ca₃(PO₄)₂",
+        "Zur elektrischen Neutralität braucht man 3 Ca²⁺ und 2 PO₄³⁻"
+      ],
+      "explanation": "Ca ist in Gruppe 2 → Ca²⁺. Phosphat ist PO₄³⁻. Für Neutralität: 3×(+2) + 2×(−3) = +6 − 6 = 0. Daher ist die Formel Ca₃(PO₄)₂. CaPO₄ wäre nicht neutral (+2 + (−3) = −1)."
     }
   ],
-  "generatedAt": "2026-01-13T00:00:40.185Z"
+  "generatedAt": "2026-01-13T00:50:07.134Z"
 }

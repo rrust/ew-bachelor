@@ -18,6 +18,7 @@
 - `correctAnswer` must exactly match an option
 - ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen** - Erlaubt: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT: `xychart-beta`, `timeline`, `mindmap`.
+- ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 
 ## Content Generation V4: Lernen → Überprüfen → Anwenden
 
@@ -50,7 +51,19 @@ When generating content from `studies-material/` files, follow this structure:
 7. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
 8. **Remove citation markers** from output text
 9. **Run `npm run build`** to regenerate JSON files
-10. **Validate** with Tools → "Inhalte validieren"
+10. **Run `npm run validate:content`** to check for errors
+11. **Run `node scripts/generate-test-progress.js`** to regenerate test data
+12. **Validate** with Tools → "Inhalte validieren"
+
+## Lecture Versioning
+
+The `version` field in `lecture.md` follows semantic versioning:
+
+| Change    | Version Bump      | When to use                             |
+| --------- | ----------------- | --------------------------------------- |
+| **Patch** | `1.0.0` → `1.0.1` | Format fixes, typos, minor wording      |
+| **Minor** | `1.0.0` → `1.1.0` | Content item edited substantively       |
+| **Major** | `1.0.0` → `2.0.0` | Complete regeneration from CONTENT_PLAN |
 
 ## Git Workflow
 

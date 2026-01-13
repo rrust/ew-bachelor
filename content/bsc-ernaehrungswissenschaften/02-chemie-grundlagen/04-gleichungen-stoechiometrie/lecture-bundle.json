@@ -166,7 +166,36 @@
     {
       "type": "fill-in-the-blank",
       "topic": "Begrenzender Reaktant",
-      "content": "## Begrenzender Reaktant - Begriffe\n\nVervollständige die folgenden Aussagen:\n\nDer [[begrenzende]] Reaktant wird zuerst vollständig verbraucht.\n\nDer [[Überschuss]]-Reaktant bleibt nach der Reaktion teilweise übrig.\n\nAlle Berechnungen der Produktmenge müssen sich auf den [[begrenzenden]] Reaktanten beziehen.\n\nDie maximale Produktmenge ist durch den begrenzenden Reaktanten [[limitiert]]."
+      "question": "Vervollständigen Sie die Aussagen zum begrenzenden Reaktanten.",
+      "text": "Der {{blank1}} Reaktant wird zuerst vollständig verbraucht. Der {{blank2}}-Reaktant bleibt nach der Reaktion teilweise übrig. Alle Berechnungen der Produktmenge müssen sich auf den {{blank3}} Reaktanten beziehen.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "begrenzende",
+          "alternatives": [
+            "limitierende"
+          ],
+          "hint": "Dieser Reaktant limitiert die Produktmenge"
+        },
+        {
+          "id": "blank2",
+          "answer": "Überschuss",
+          "alternatives": [
+            "überschüssige"
+          ],
+          "hint": "Dieser Reaktant ist im ..."
+        },
+        {
+          "id": "blank3",
+          "answer": "begrenzenden",
+          "alternatives": [
+            "limitierenden"
+          ],
+          "hint": "Welcher Reaktant bestimmt die maximale Produktmenge?"
+        }
+      ],
+      "explanation": "Der begrenzende Reaktant bestimmt die maximale Produktmenge, da er zuerst aufgebraucht wird. Der Überschuss-Reaktant bleibt teilweise übrig.",
+      "content": ""
     },
     {
       "type": "practice-exercise",
@@ -236,7 +265,48 @@
     {
       "type": "fill-in-the-blank",
       "topic": "Verdünnung",
-      "content": "## Verdünnung - Konzepte\n\nVervollständige die folgenden Aussagen:\n\nBeim Verdünnen bleibt die [[Stoffmenge]] konstant.\n\nDie Verdünnungsgleichung lautet: c₁ × V₁ = [[c₂ × V₂]].\n\nBeim Verdünnen wird die Konzentration [[kleiner]] und das Volumen [[größer]].\n\nBei der praktischen Verdünnung von Säuren gibt man immer Säure ins [[Wasser]], nie umgekehrt."
+      "question": "Vervollständigen Sie die Aussagen zur Verdünnung von Lösungen.",
+      "text": "Beim Verdünnen bleibt die {{blank1}} konstant. Die Verdünnungsgleichung lautet: c₁ × V₁ = {{blank2}}. Beim Verdünnen wird die Konzentration {{blank3}} und das Volumen {{blank4}}.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "Stoffmenge",
+          "alternatives": [
+            "Stoffmenge n",
+            "Molzahl"
+          ],
+          "hint": "n bleibt konstant"
+        },
+        {
+          "id": "blank2",
+          "answer": "c₂ × V₂",
+          "alternatives": [
+            "c2 × V2",
+            "c2*V2"
+          ],
+          "hint": "Konzentration mal Volumen nach der Verdünnung"
+        },
+        {
+          "id": "blank3",
+          "answer": "kleiner",
+          "alternatives": [
+            "geringer",
+            "niedriger"
+          ],
+          "hint": "Was passiert mit der Konzentration?"
+        },
+        {
+          "id": "blank4",
+          "answer": "größer",
+          "alternatives": [
+            "höher",
+            "mehr"
+          ],
+          "hint": "Was passiert mit dem Volumen?"
+        }
+      ],
+      "explanation": "Bei der Verdünnung gilt: c₁ × V₁ = c₂ × V₂. Die Stoffmenge bleibt konstant, aber die Konzentration sinkt, während das Volumen steigt. Bei Säuren immer Säure ins Wasser geben!",
+      "content": ""
     },
     {
       "type": "calculation",
@@ -533,5 +603,5 @@
       "explanation": "Das Lambert-Beer-Gesetz gilt für Lösungen und Gase, nicht für feste Proben (diese streuen das Licht zu stark)."
     }
   ],
-  "generatedAt": "2026-01-13T00:00:40.204Z"
+  "generatedAt": "2026-01-13T00:50:07.144Z"
 }
