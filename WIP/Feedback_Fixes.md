@@ -127,6 +127,13 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 **Analyse erforderlich:** Beispiele sammeln und Parser prüfen.
 **Betroffene Dateien:** `js/parser.js`
 
+### ⬜ Practice-Exercise Rendering unvollständig
+
+**Problem:** Bei practice-exercise Items (z.B. "Warum bemerken wir Materiewellen nicht?") werden nur Titel und Szenario angezeigt, aber die eigentlichen Aufgaben/Tasks fehlen.
+**Screenshot:** Vorlesung "Die Elektronenstruktur", Item 43/76
+**Analyse erforderlich:** `js/lecture.js` - Rendering von `practice-exercise` Typ prüfen
+**Betroffene Dateien:** `js/lecture.js`, `js/quiz.js`
+
 ---
 
 ## Priorisierung
@@ -136,17 +143,18 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 1. Kontextuelles Training funktioniert nicht
 2. Badge-Anzahl aktualisiert sich nicht
 3. Formel-Darstellung fehlerhaft
+4. Practice-Exercise Rendering unvollständig
 
 ### Mittel (UX Verbesserungen)
 
-4. Such-Eingabe sticky
+1. Such-Eingabe sticky ✅
 2. Info-Dialog bei abgelaufenem Achievement
 3. YouTube-Video Validierung & Fallback
 4. Flexiblere Cheat-Sheet Suche
 
 ### Niedrig (Polish)
 
-8. App Header Drop-Shadow
+1. App Header Drop-Shadow ✅
 2. Cheat-Sheet Icon entfernen
 3. Cheat-Sheet kleinere Darstellung
 4. Cheat-Sheet Fullscreen
