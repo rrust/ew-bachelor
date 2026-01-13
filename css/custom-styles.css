@@ -402,17 +402,18 @@ header.sticky {
     0 1px 2px -1px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== Search View Sticky Input ===== */
+/* ===== Search View Fixed Input ===== */
 
-/* Sticky search input container - positioned below the app header */
+/* Fixed search input container - always positioned below the app header */
 #search-view .search-sticky-header {
-  position: sticky;
+  position: fixed;
   top: 56px; /* Height of the app header */
+  left: 0;
+  right: 0;
   z-index: 30;
   background: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 @media (min-width: 768px) {
   #search-view .search-sticky-header {
@@ -421,4 +422,10 @@ header.sticky {
 }
 .dark #search-view .search-sticky-header {
   background: #1f2937;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+
+/* Spacer for the fixed search input */
+#search-view .search-results-wrapper {
+  padding-top: 5.5rem; /* Space for fixed search input */
 }

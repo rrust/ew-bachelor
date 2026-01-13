@@ -953,9 +953,9 @@
     <div id="search-view" style="display: none">
       <!-- Header injected by components.js -->
 
-      <div class="container mx-auto px-8">
-        <!-- Search Input (Sticky) -->
-        <div class="search-sticky-header">
+      <!-- Fixed Search Input -->
+      <div class="search-sticky-header">
+        <div class="container mx-auto px-0">
           <div class="relative max-w-2xl">
             <input
               type="text"
@@ -970,7 +970,10 @@
             ></span>
           </div>
         </div>
+      </div>
 
+      <!-- Search Results (with padding for fixed header) -->
+      <div class="container mx-auto px-8 search-results-wrapper">
         <!-- Search Stats -->
         <div
           id="search-stats"
