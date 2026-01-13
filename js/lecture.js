@@ -562,6 +562,12 @@ async function renderMermaidDiagram(item, container) {
     .toString(36)
     .substr(2, 9)}`;
 
+  // Additional content is already parsed to HTML by bundle-loader
+  let additionalContent = '';
+  if (item.html && item.html.trim()) {
+    additionalContent = `<div class="prose dark:prose-invert max-w-none mt-4">${item.html}</div>`;
+  }
+
   container.innerHTML = `
     <div class="mermaid-container">
       ${title}
@@ -571,6 +577,7 @@ async function renderMermaidDiagram(item, container) {
       <div class="flex justify-center p-4 bg-white dark:bg-gray-800 rounded-lg overflow-x-auto">
         <div id="${diagramId}" class="mermaid-diagram"></div>
       </div>
+      ${additionalContent}
     </div>
   `;
 
@@ -582,6 +589,11 @@ async function renderMermaidDiagram(item, container) {
       item.diagram
     );
     diagramDiv.innerHTML = svg;
+
+    // Render math in additional content
+    if (additionalContent) {
+      renderMath(container);
+    }
 
     // Add expand functionality
     const expandBtn = container.querySelector('.expand-btn');

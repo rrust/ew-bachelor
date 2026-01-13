@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T08:28:42.875Z",
+  "exportedAt": "2026-01-13T12:33:39.726Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,18 +8,14 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-10-16T08:28:42.875Z",
+    "startedAt": "2025-07-25T12:33:39.726Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 53,
-            "badge": "bronze"
-          },
-          "02-makronaehrstoffe-detail": {
-            "score": 81,
-            "badge": "silver"
+            "score": 95,
+            "badge": "gold"
           },
           "03-fette-oele": {
             "score": 96,
@@ -29,45 +25,19 @@
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-02T08:28:42.875Z",
-            "expiresAt": "2026-02-01T08:28:42.875Z",
+            "unlockedAt": "2025-12-27T12:33:39.726Z",
+            "expiresAt": "2026-01-26T12:33:39.726Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "makronaehrstoffe-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-25T08:28:42.875Z",
-            "expiresAt": "2026-01-24T08:28:42.875Z",
+            "unlockedAt": "2025-12-15T12:33:39.726Z",
+            "expiresAt": "2026-01-14T12:33:39.726Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
         }
-      },
-      "02-chemie-grundlagen": {
-        "status": "in-progress",
-        "lectures": {
-          "01-materie-messen": {
-            "score": 85,
-            "badge": "silver"
-          },
-          "02-atome-formeln": {
-            "score": 88,
-            "badge": "silver"
-          },
-          "03-chemische-reaktionen": {
-            "score": 54,
-            "badge": "bronze"
-          },
-          "04-gleichungen-stoechiometrie": {
-            "score": 85,
-            "badge": "silver"
-          },
-          "05-thermodynamik-enthalpie-kalorimetrie": {
-            "score": 59,
-            "badge": "bronze"
-          }
-        },
-        "achievements": {}
       }
     },
     "streak": {

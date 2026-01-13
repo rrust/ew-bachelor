@@ -1,6 +1,6 @@
 // Service Worker for EW Lernapp
 // Version-based cache for easy invalidation
-const CACHE_VERSION = 'v1.16.0';
+const CACHE_VERSION = 'v1.20.0';
 const CACHE_NAME = `ew-lernapp-${CACHE_VERSION}`;
 
 // Files to cache on install
@@ -172,9 +172,10 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets - Stale-while-revalidate for JS/CSS (fast load, background update)
+  // Static assets - Network first for JS/CSS to get updates immediately
+  // Falls back to cache for offline use
   if (url.pathname.startsWith('/js/') || url.pathname.startsWith('/css/')) {
-    event.respondWith(staleWhileRevalidate(event.request));
+    event.respondWith(networkFirst(event.request));
     return;
   }
 

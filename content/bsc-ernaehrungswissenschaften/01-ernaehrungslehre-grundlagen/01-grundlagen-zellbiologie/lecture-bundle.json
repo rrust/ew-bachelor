@@ -63,7 +63,8 @@
     {
       "type": "mermaid-diagram",
       "title": "Proteinsynthese: Von der DNA zum Protein",
-      "content": "```mermaid\ngraph TB\n    A[DNA im Zellkern] -->|Transkription| B[mRNA]\n    B -->|Transport| C[Ribosom im Cytoplasma]\n    C -->|Translation| D[Aminosäurekette]\n    D -->|Faltung| E[Funktionales Protein]\n    \n    F[tRNA] -->|bringt Aminosäuren| C\n    \n    style A fill:#e1f5ff\n    style B fill:#fff4e1\n    style C fill:#ffe1e1\n    style D fill:#e1ffe1\n    style E fill:#f0e1ff\n    style F fill:#fff4e1\n```"
+      "content": "",
+      "diagram": "graph TB\n    A[DNA im Zellkern] -->|Transkription| B[mRNA]\n    B -->|Transport| C[Ribosom im Cytoplasma]\n    C -->|Translation| D[Aminosäurekette]\n    D -->|Faltung| E[Funktionales Protein]\n    \n    F[tRNA] -->|bringt Aminosäuren| C\n    \n    style A fill:#e1f5ff\n    style B fill:#fff4e1\n    style C fill:#ffe1e1\n    style D fill:#e1ffe1\n    style E fill:#f0e1ff\n    style F fill:#fff4e1"
     },
     {
       "type": "learning-content",
@@ -216,5 +217,5 @@
       "explanation": "**Erklärung:**\n\n**Richtig:**\n- Mitochondrien sind die \"Kraftwerke\" der Zelle und produzieren ATP durch Zellatmung\n- Der Golgi-Apparat modifiziert Proteine nach ihrer Synthese und sortiert sie für den Transport\n\n**Falsch:**\n- Der Zellkern ist nur in eukaryotischen Zellen vorhanden, nicht in prokaryotischen\n- Ribosomen sind für die Proteinsynthese zuständig, nicht für die Fettsynthese (diese findet im glatten ER statt)"
     }
   ],
-  "generatedAt": "2026-01-13T09:03:56.353Z"
+  "generatedAt": "2026-01-13T12:43:59.966Z"
 }

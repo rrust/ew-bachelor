@@ -32,21 +32,11 @@ function bundleToLecture(bundle) {
     if (item.content && item.type === 'learning-content') {
       convertedItem.html = marked.parse(item.content);
       delete convertedItem.content;
-    } else if (item.type === 'mermaid-diagram' && item.content) {
-      // Extract mermaid code from markdown code block
-      const mermaidMatch = item.content.match(/```mermaid\n([\s\S]*?)```/);
-      if (mermaidMatch) {
-        convertedItem.diagram = mermaidMatch[1].trim();
-      } else {
-        // If no code block, use content directly
-        convertedItem.diagram = item.content;
-      }
-      // Also parse any text after the mermaid block as HTML
-      const textAfterDiagram = item.content
-        .replace(/```mermaid[\s\S]*?```/, '')
-        .trim();
-      if (textAfterDiagram) {
-        convertedItem.html = marked.parse(textAfterDiagram);
+    } else if (item.type === 'mermaid-diagram') {
+      // diagram is already extracted by bundle generator
+      // Just convert additional content to HTML if present
+      if (item.content && item.content.trim()) {
+        convertedItem.html = marked.parse(item.content);
       }
       delete convertedItem.content;
     } else if (item.content) {

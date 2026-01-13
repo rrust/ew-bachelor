@@ -395,7 +395,8 @@
     {
       "type": "mermaid-diagram",
       "topic": "Zustände und Eigenschaften der Materie",
-      "content": "## Klassifizierung von Stoffen\n\nDas folgende Diagramm zeigt, wie Stoffe systematisch eingeteilt werden können:\n\n```mermaid\nflowchart TD\n    A[🧪 Stoff] --> B{Besteht aus einem<br/>Reinstoff?}\n    B -->|Ja| C[Reinstoff]\n    B -->|Nein| D[Mischung/Gemisch]\n    \n    C --> E{Kann chemisch<br/>zerlegt werden?}\n    E -->|Nein| F[⚛️ Element<br/>z.B. Gold, Sauerstoff]\n    E -->|Ja| G[🔬 Verbindung<br/>z.B. Wasser, NaCl]\n    \n    D --> H{Bestandteile<br/>erkennbar?}\n    H -->|Nein| I[Homogene Mischung<br/>z.B. Salzwasser, Luft]\n    H -->|Ja| J[Heterogene Mischung<br/>z.B. Müsli, Sand+Wasser]\n```\n\n**Entscheidungsfragen zur Klassifizierung:**\n\n1. Ist es ein einzelner Stoff oder eine Mischung?\n2. Bei Reinstoffen: Kann er chemisch zerlegt werden?\n3. Bei Mischungen: Sind die Bestandteile sichtbar unterschiedlich?"
+      "content": "## Klassifizierung von Stoffen\n\nDas folgende Diagramm zeigt, wie Stoffe systematisch eingeteilt werden können:\n\n\n\n**Entscheidungsfragen zur Klassifizierung:**\n\n1. Ist es ein einzelner Stoff oder eine Mischung?\n2. Bei Reinstoffen: Kann er chemisch zerlegt werden?\n3. Bei Mischungen: Sind die Bestandteile sichtbar unterschiedlich?",
+      "diagram": "flowchart TD\n    A[🧪 Stoff] --> B{Besteht aus einem<br/>Reinstoff?}\n    B -->|Ja| C[Reinstoff]\n    B -->|Nein| D[Mischung/Gemisch]\n    \n    C --> E{Kann chemisch<br/>zerlegt werden?}\n    E -->|Nein| F[⚛️ Element<br/>z.B. Gold, Sauerstoff]\n    E -->|Ja| G[🔬 Verbindung<br/>z.B. Wasser, NaCl]\n    \n    D --> H{Bestandteile<br/>erkennbar?}\n    H -->|Nein| I[Homogene Mischung<br/>z.B. Salzwasser, Luft]\n    H -->|Ja| J[Heterogene Mischung<br/>z.B. Müsli, Sand+Wasser]"
     },
     {
       "type": "learning-content",
@@ -934,5 +935,5 @@
       "explanation": "**Erklärung:** Präzision = Reproduzierbarkeit (enge Streuung), Genauigkeit = Übereinstimmung mit wahrem Wert. Beide sind unabhängig voneinander: Man kann präzise daneben liegen oder im Durchschnitt richtig, aber mit großer Streuung. Bei Flächenumrechnung: 1 m = 100 cm, also 1 m² = 10.000 cm² (Faktor quadriert)."
     }
   ],
-  "generatedAt": "2026-01-13T09:03:56.363Z"
+  "generatedAt": "2026-01-13T12:43:59.974Z"
 }
