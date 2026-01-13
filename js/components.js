@@ -195,7 +195,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               title="Zur Modulübersicht"
               onclick="window.showView && window.showView('moduleMap'); window.updateURL && window.updateURL('/', 'Module Overview');"
             >
-              ${Icons.get('modules', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+              ${Icons.get(
+                'modules',
+                'w-5 h-5',
+                'text-gray-600 dark:text-gray-400'
+              )}
             </button>
             <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
             <!-- Buch-Icon → Vorlesungsliste -->
@@ -203,13 +207,21 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               id="breadcrumb-lectures${idSuffix}"
               class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0 flex items-center gap-1"
               title="${options.moduleTitle || 'Modul'} - Zur Vorlesungsliste"
-              onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${options.moduleId || ''}');"
+              onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${
+                options.moduleId || ''
+              }');"
             >
-              ${Icons.get('book', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+              ${Icons.get(
+                'book',
+                'w-5 h-5',
+                'text-gray-600 dark:text-gray-400'
+              )}
             </button>
             <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
             <!-- Lecture Title -->
-            <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${options.lectureTopic || ''}">${options.lectureTopic || ''}</span>
+            <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${
+              options.lectureTopic || ''
+            }">${options.lectureTopic || ''}</span>
           </div>
           <div class="flex items-center gap-1 flex-shrink-0">
             <!-- Dev Mode Badge -->
@@ -302,6 +314,158 @@ function createAppHeader(view = 'moduleMap', options = {}) {
                 'moon',
                 'w-5 h-5'
               )}</span>
+              <span class="theme-text">Farbschema</span>
+            </button>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
+            <!-- Module -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('moduleMap');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('modules', 'w-5 h-5')}
+              <span>Module</span>
+            </button>
+            <!-- Progress -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('progress');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('chart', 'w-5 h-5')}
+              <span>Progress</span>
+            </button>
+            <!-- Achievements -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('achievements');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('achievement', 'w-5 h-5')}
+              <span>Achievements</span>
+            </button>
+            <!-- Map -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('map');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('map', 'w-5 h-5')}
+              <span>Modul-Map</span>
+            </button>
+            <!-- Tools -->
+            <button
+              onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('tools');"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+            >
+              ${Icons.get('cog', 'w-5 h-5')}
+              <span>Tools</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    `;
+    return header;
+  }
+
+  // Header for lecture overview view (similar to lecturePlayer but with back-to-player button)
+  if (view === 'lectureOverview') {
+    const idSuffix = '-lectureOverview';
+
+    header.className = 'bg-white dark:bg-gray-800 shadow-sm flex-shrink-0';
+    header.innerHTML = `
+      <div class="flex items-center">
+        <!-- Burger Menu (außerhalb Container, ganz links) -->
+        <button
+          id="menu-toggle${idSuffix}"
+          class="p-3 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400 flex-shrink-0 self-stretch flex items-center"
+          title="Menü"
+          onclick="openOverlayMenu('${idSuffix}')"
+        >
+          ${Icons.get('listBullet')}
+        </button>
+        
+        <!-- Rest im Container mit max-width -->
+        <div class="container mx-auto px-2 md:px-4 py-2 flex items-center justify-between min-w-0 flex-1">
+          <div class="flex items-center gap-2 md:gap-3 min-w-0 flex-1">
+            <!-- Modul-Icon → Modulübersicht -->
+            <button
+              id="breadcrumb-modules${idSuffix}"
+              class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
+              title="Zur Modulübersicht"
+              onclick="window.showView && window.showView('moduleMap'); window.updateURL && window.updateURL('/', 'Module Overview');"
+            >
+              ${Icons.get('modules', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+            </button>
+            <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
+            <!-- Buch-Icon → Vorlesungsliste -->
+            <button
+              id="breadcrumb-lectures${idSuffix}"
+              class="p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 flex-shrink-0"
+              title="${options.moduleTitle || 'Modul'} - Zur Vorlesungsliste"
+              onclick="if(window.displayLecturesForModule) window.displayLecturesForModule('${options.moduleId || ''}');"
+            >
+              ${Icons.get('book', 'w-5 h-5', 'text-gray-600 dark:text-gray-400')}
+            </button>
+            <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
+            <!-- Lecture Title -->
+            <span class="text-sm md:text-base font-medium text-gray-800 dark:text-gray-200 truncate" title="${options.lectureTopic || ''}">${options.lectureTopic || ''}</span>
+            <span class="text-gray-300 dark:text-gray-600 flex-shrink-0">/</span>
+            <span class="text-sm text-gray-500 dark:text-gray-400 flex-shrink-0">Übersicht</span>
+          </div>
+          <div class="flex items-center gap-1 flex-shrink-0">
+            <!-- Dev Mode Badge -->
+            <span
+              id="header-dev-badge${idSuffix}"
+              class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
+            >DEV</span>
+            <!-- Back to Player Button -->
+            <button
+              id="back-to-player-btn${idSuffix}"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-600 dark:text-blue-400"
+              title="Zurück zur Vorlesung"
+            >
+              ${Icons.get('close', 'w-5 h-5')}
+            </button>
+            <!-- Search -->
+            <button
+              id="nav-search${idSuffix}"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
+              title="Suche"
+              onclick="window.location.hash='#/search'"
+            >
+              ${Icons.get('search')}
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Overlay Menu for Lecture Overview -->
+      <div id="overlay-menu${idSuffix}" class="hidden fixed inset-0 z-50">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black bg-opacity-50" onclick="closeOverlayMenu('${idSuffix}')"></div>
+        <!-- Menu Panel (links) -->
+        <div class="absolute left-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
+          <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
+            <span class="font-bold text-lg">Menü</span>
+            <button onclick="closeOverlayMenu('${idSuffix}')" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
+              ${Icons.get('close', 'w-5 h-5')}
+            </button>
+          </div>
+          <nav class="p-4 space-y-2">
+            <!-- Training Button -->
+            <a
+              href="#/training"
+              onclick="closeOverlayMenu('${idSuffix}')"
+              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
+            >
+              TRAIN
+            </a>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
+            <!-- Theme Toggle -->
+            <button
+              id="theme-toggle-menu${idSuffix}"
+              class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left"
+              onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));"
+            >
+              <span class="theme-icon-light hidden">${Icons.get('sun', 'w-5 h-5')}</span>
+              <span class="theme-icon-dark">${Icons.get('moon', 'w-5 h-5')}</span>
               <span class="theme-text">Farbschema</span>
             </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">

@@ -501,17 +501,8 @@
         style="display: none"
         class="fixed inset-0 bg-gray-100 dark:bg-gray-900 flex flex-col"
       >
-        <!-- Sticky Header -->
-        <div
-          class="bg-white dark:bg-gray-800 shadow-md px-6 py-4 flex-shrink-0"
-        >
-          <button
-            id="back-to-player-button"
-            class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-md transition duration-300"
-          >
-            &larr; Zurück
-          </button>
-        </div>
+        <!-- Dynamic Header (injected by JS) -->
+        <div id="lecture-overview-header-container"></div>
 
         <!-- Scrollable Content Area -->
         <div class="flex-1 overflow-y-auto min-h-0">

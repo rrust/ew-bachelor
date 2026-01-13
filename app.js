@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     ),
     retakeQuiz: document.getElementById('retake-quiz-button'),
     resultsToMap: document.getElementById('results-to-map-button'),
-    backToPlayer: document.getElementById('back-to-player-button'),
     // These will be set after headers are injected
     navModule: null,
     navMap: null,
@@ -824,6 +823,41 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
+  // Helper function to inject lecture overview header
+  function injectLectureOverviewHeader(options) {
+    const container = document.getElementById('lecture-overview-header-container');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    if (window.createAppHeader) {
+      const header = window.createAppHeader('lectureOverview', options);
+      container.appendChild(header);
+      
+      // Update theme icons
+      if (window.updateMenuThemeIcons) {
+        window.updateMenuThemeIcons(header);
+      }
+      
+      // Update dev mode badge
+      if (window.updateDevModeUI) {
+        window.updateDevModeUI();
+      }
+      
+      // Setup back-to-player button
+      const backBtn = header.querySelector('#back-to-player-btn-lectureOverview');
+      if (backBtn) {
+        backBtn.addEventListener('click', () => {
+          document.getElementById('lecture-player').style.display = 'flex';
+          document.getElementById('lecture-overview').style.display = 'none';
+          updateURL(
+            `/module/${currentModuleId}/lecture/${currentLectureId}/item/${lectureState.currentIndex}`,
+            document.title.split(' - ')[0]
+          );
+        });
+      }
+    }
+  }
+
   function renderCurrentLectureItem() {
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     const sources = lecture?.sources || [];
@@ -869,6 +903,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // --- Lecture Overview ---
   function showLectureOverview() {
+    // Inject dynamic header for lecture overview
+    const moduleData = MODULES.find(m => m.id === currentModuleId);
+    const lecture = APP_CONTENT[currentModuleId]?.lectures?.[currentLectureId];
+    injectLectureOverviewHeader({
+      moduleId: currentModuleId,
+      moduleTitle: moduleData?.title || currentModuleId,
+      lectureTopic: lecture?.topic || currentLectureId
+    });
+
     window.LectureModule.showLectureOverview(
       currentModuleId,
       currentLectureId,
@@ -1013,10 +1056,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function setupNavigationListeners() {
-    buttons.backToPlayer.addEventListener('click', () => {
-      // Navigate back to lecture list
-      displayLecturesForModule(currentModuleId);
-    });
+    // backToPlayer is now handled dynamically in injectLectureOverviewHeader
 
     // Header navigation using event delegation to handle all view variants
     document.addEventListener('click', (e) => {
