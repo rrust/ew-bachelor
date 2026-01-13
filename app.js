@@ -595,6 +595,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         showView('moduleMap');
       }
     });
+
+    // Handle hash changes (for <a href="#/..."> links)
+    window.addEventListener('hashchange', (event) => {
+      if (!navigateFromURL()) {
+        loadModuleCards();
+        showView('moduleMap');
+      }
+    });
   }
 
   // --- Module & Lecture Loading (using ModulesModule) ---

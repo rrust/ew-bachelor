@@ -93,13 +93,22 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Button (prominent) -->
+            <!-- Training Buttons (context-specific for module) -->
+            <a
+              href="#/training?module=${options.moduleId || ''}"
+              onclick="closeOverlayMenu('${idSuffix}')"
+              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
+              title="Training für dieses Modul"
+            >
+              TRAIN (Modul)
+            </a>
             <a
               href="#/training"
               onclick="closeOverlayMenu('${idSuffix}')"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
+              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
+              title="Training für alle Tests"
             >
-              TRAIN
+              TRAIN (Alle)
             </a>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
