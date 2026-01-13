@@ -555,14 +555,21 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           ${Icons.get('listBullet')}
         </button>
         
-        <!-- Study Icon + Search Input -->
-        <div class="flex items-center gap-3 flex-1 pr-4 py-2">
-          <a href="#/modules" class="flex-shrink-0 hover:opacity-80 transition-opacity">
-            ${studyIcon || Icons.get('modules', 'w-5 h-5 md:w-6 md:h-6', 'text-gray-600 dark:text-gray-400')}
-          </a>
-          
-          <!-- Search Input -->
-          <div class="relative flex-1 max-w-xl">
+        <!-- Study Icon -->
+        <a href="#/modules" class="flex-shrink-0 hover:opacity-80 transition-opacity px-2">
+          ${
+            studyIcon ||
+            Icons.get(
+              'modules',
+              'w-5 h-5 md:w-6 md:h-6',
+              'text-gray-600 dark:text-gray-400'
+            )
+          }
+        </a>
+        
+        <!-- Centered Search Input -->
+        <div class="flex-1 flex justify-center py-2 pr-4">
+          <div class="relative w-full max-w-md">
             <input
               type="text"
               id="search-page-input"
@@ -590,8 +597,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             <a href="#/training" onclick="closeOverlayMenu('${idSuffix}')" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center">TRAIN</a>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
             <button id="theme-toggle-menu${idSuffix}" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left" onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));">
-              <span class="theme-icon-light hidden">${Icons.get('sun', 'w-5 h-5')}</span>
-              <span class="theme-icon-dark">${Icons.get('moon', 'w-5 h-5')}</span>
+              <span class="theme-icon-light hidden">${Icons.get(
+                'sun',
+                'w-5 h-5'
+              )}</span>
+              <span class="theme-icon-dark">${Icons.get(
+                'moon',
+                'w-5 h-5'
+              )}</span>
               <span class="theme-text">Farbschema</span>
             </button>
             <hr class="border-gray-200 dark:border-gray-700 my-2">
