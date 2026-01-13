@@ -1,8 +1,8 @@
 ---
 topic: 'Thermodynamik, Enthalpie & Kalorimetrie'
 description: 'Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsatz, Enthalpie, Satz von Hess und kalorimetrische Messungen.'
-estimatedTime: 90
-version: '0.0.1'
+estimatedTime: 120
+version: '2.0.0'
 sources:
   - id: 'vorlesung-k5'
     title: 'Vorlesungsfolien Kapitel 5: Thermochemie (WS2025)'

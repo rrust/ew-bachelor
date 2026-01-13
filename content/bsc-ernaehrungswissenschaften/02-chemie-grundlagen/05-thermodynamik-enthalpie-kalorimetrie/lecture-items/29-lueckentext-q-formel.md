@@ -1,0 +1,21 @@
+---
+type: 'fill-in-the-blank'
+topic: 'Wärmekapazität und spezifische Wärme'
+question: 'Vervollständige die Formel für die Wärmeberechnung:'
+text: 'Die übertragene Wärme berechnet sich aus: $q$ = {{m}} · {{c}} · {{ΔT}}. Dabei steht $m$ für die {{Masse}} in Gramm, $c$ für die {{spezifische Wärmekapazität}} und $\Delta T$ für die {{Temperaturänderung}}.'
+blanks:
+  - id: 'm'
+    answer: 'm'
+  - id: 'c'
+    answer: 'c'
+  - id: 'ΔT'
+    answer: 'ΔT'
+  - id: 'Masse'
+    answer: 'Masse'
+  - id: 'spezifische Wärmekapazität'
+    answer: 'spezifische Wärmekapazität'
+  - id: 'Temperaturänderung'
+    answer: 'Temperaturänderung'
+hint: 'Die drei Faktoren sind: Wie viel Stoff? Welcher Stoff? Wie stark erwärmt/abgekühlt?'
+explanation: 'Die Grundformel $q = m \cdot c \cdot \Delta T$ verbindet die übertragene Wärme mit der Masse ($m$), der stoffspezifischen Wärmekapazität ($c$) und der Temperaturänderung ($\Delta T$).'
+---

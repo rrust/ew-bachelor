@@ -113,7 +113,13 @@ Use conventional commit format:
 - `multiple-choice-multiple` uses `correctAnswers` (plural!), not `correctAnswer`
 - Files numbered `NN-name.md` for ordering
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
-- ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
+- ⚠️ **NIEMALS ASCII-Art oder Box-Zeichnungen verwenden!** Dies ist VERBOTEN:
+  ```
+  ┌────────┐      +--------+      |  Box  |
+  │  Box   │  OR  |  Box   |  OR  +-------+
+  └────────┘      +--------+
+  ```
+  **Stattdessen verwenden:** Tabellen, Listen, Blockquotes (`>`), Mermaid-Diagramme, oder einfache Textbeschreibungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen verwenden** - Erlaubt sind: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT verwenden: `xychart-beta`, `timeline`, `mindmap` oder andere experimentelle Typen (oft fehlerhaft).
 - ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 - Always validate before committing

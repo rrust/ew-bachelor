@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T12:33:39.726Z",
+  "exportedAt": "2026-01-13T13:14:42.157Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,85 +8,55 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-08-26T12:33:39.726Z",
+    "startedAt": "2025-10-18T13:14:42.157Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "completed",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 86,
-            "badge": "silver"
-          },
-          "02-makronaehrstoffe-detail": {
-            "score": 76,
-            "badge": "silver"
-          },
-          "03-fette-oele": {
             "score": 99,
             "badge": "gold"
+          },
+          "02-makronaehrstoffe-detail": {
+            "score": 56,
+            "badge": "bronze"
+          },
+          "03-fette-oele": {
+            "score": 10,
+            "badge": "none"
           }
         },
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-05T12:33:39.726Z",
-            "expiresAt": "2026-02-04T12:33:39.726Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "makronaehrstoffe-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2026-01-06T12:33:39.726Z",
-            "expiresAt": "2026-02-05T12:33:39.726Z",
+            "unlockedAt": "2025-12-31T13:14:42.157Z",
+            "expiresAt": "2026-01-30T13:14:42.157Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
         }
       },
       "02-chemie-grundlagen": {
-        "status": "completed",
+        "status": "in-progress",
         "lectures": {
           "01-materie-messen": {
-            "score": 64,
-            "badge": "bronze"
-          },
-          "02-atome-formeln": {
-            "score": 71,
+            "score": 77,
             "badge": "silver"
           },
-          "03-chemische-reaktionen": {
-            "score": 90,
-            "badge": "gold"
-          },
-          "04-gleichungen-stoechiometrie": {
-            "score": 57,
-            "badge": "bronze"
-          },
-          "05-thermodynamik-enthalpie-kalorimetrie": {
+          "02-atome-formeln": {
             "score": 53,
             "badge": "bronze"
           },
-          "06-elektronenstruktur-atome": {
-            "score": 63,
-            "badge": "bronze"
+          "03-chemische-reaktionen": {
+            "score": 72,
+            "badge": "silver"
+          },
+          "05-thermodynamik-enthalpie-kalorimetrie": {
+            "score": 40,
+            "badge": "none"
           }
         },
-        "achievements": {
-          "atome-formeln-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2025-12-29T12:33:39.726Z",
-            "expiresAt": "2026-01-28T12:33:39.726Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "chemische-reaktionen-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2026-01-11T12:33:39.726Z",
-            "expiresAt": "2026-02-10T12:33:39.726Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          }
-        }
+        "achievements": {}
       }
     },
     "streak": {
