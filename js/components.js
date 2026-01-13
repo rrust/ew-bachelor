@@ -95,7 +95,9 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           <nav class="p-4 space-y-2">
             <!-- Training Buttons (context-specific for module) -->
             <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${options.moduleId || ''}';"
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
+      options.moduleId || ''
+    }';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
               title="Training für dieses Modul"
             >
@@ -474,14 +476,18 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           <nav class="p-4 space-y-2">
             <!-- Training Buttons (context-specific for lecture overview) -->
             <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${options.moduleId || ''}&lecture=${options.lectureId || ''}';"
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
+      options.moduleId || ''
+    }&lecture=${options.lectureId || ''}';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
               title="Training für diese Vorlesung"
             >
               TRAIN (Vorlesung)
             </button>
             <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${options.moduleId || ''}';"
+              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
+      options.moduleId || ''
+    }';"
               class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-400 hover:bg-blue-500 text-white font-medium transition text-center text-sm"
               title="Training für dieses Modul"
             >
