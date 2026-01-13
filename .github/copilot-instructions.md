@@ -77,7 +77,10 @@ The `version` field in `lecture.md` follows semantic versioning:
 
 - **Never commit to main** - Always use feature branches
 - **Branch naming:** `feature/description` or `fix/description`
+- **Atomic commits:** One logical change per commit
 - **Commits:** `feat:`, `fix:`, `docs:`, `content:` prefixes
+- **PRs via `gh` CLI:** `gh pr create --title "..." --body "..."`
+- **If `gh` not installed:** `brew install gh && gh auth login`
 
 ## Don't
 

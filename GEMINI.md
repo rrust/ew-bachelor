@@ -38,9 +38,53 @@ content/*.md    → Learning content in Markdown
 **Never commit directly to `main` branch!**
 
 1. Create a feature branch: `git checkout -b feature/descriptive-name`
-2. Make changes and commit
-3. Push and create Pull Request
-4. Merge via GitHub
+2. Make atomic commits (one logical change per commit)
+3. Push branch: `git push -u origin feature/branch-name`
+4. Create PR with `gh` CLI (see below)
+5. Merge via GitHub
+
+### GitHub CLI (`gh`)
+
+**Always use `gh` CLI for Pull Requests!**
+
+```bash
+# Check if gh is installed
+gh --version
+
+# If not installed, install via Homebrew (macOS)
+brew install gh
+
+# Authenticate (one-time setup)
+gh auth login
+
+# Create PR from current branch
+gh pr create --title "feat: description" --body "Details here"
+
+# Or interactive mode
+gh pr create
+
+# View PR status
+gh pr status
+
+# Merge PR
+gh pr merge --squash
+```
+
+### Atomic Commits
+
+**One logical change per commit!**
+
+✅ **Good (atomic):**
+```bash
+git commit -m "feat: add update banner component"
+git commit -m "feat: add reset button to tools"
+git commit -m "content: regenerate lecture with V4 structure"
+```
+
+❌ **Bad (mixed changes):**
+```bash
+git commit -m "add update system and fix content and update docs"
+```
 
 ### Commit Messages
 
