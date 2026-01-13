@@ -409,17 +409,16 @@ header.sticky {
   margin-bottom: 0 !important;
 }
 
-/* Fixed search input container - directly below the app header */
+/* Search input bar - sticky directly below the header */
 #search-view .search-sticky-header {
-  position: fixed;
+  position: sticky;
   top: 56px; /* Height of the app header */
-  left: 0;
-  right: 0;
   z-index: 30;
   background: white;
   padding: 0.75rem 1rem;
   display: flex;
   justify-content: center;
+  margin-top: 0;
 }
 @media (min-width: 768px) {
   #search-view .search-sticky-header {
@@ -430,7 +429,7 @@ header.sticky {
   background: #1f2937;
 }
 
-/* Spacer for the fixed search input */
+/* No extra spacer needed with sticky positioning */
 #search-view .search-results-wrapper {
-  padding-top: 4.5rem; /* Space for fixed search input */
+  padding-top: 1rem;
 }
