@@ -707,6 +707,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     );
   }
 
+  // Expose displayLecturesForModule globally for breadcrumb navigation
+  window.displayLecturesForModule = displayLecturesForModule;
+
   // --- Lecture Player Logic (using LectureModule) ---
   async function startLecture(moduleId, lectureId, startIndex = 0) {
     currentModuleId = moduleId;
@@ -763,7 +766,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     currentLectureTopic = lecture?.topic || lectureId;
 
     // Inject dynamic breadcrumb header for lecture player
-    const moduleData = MODULES.find(m => m.id === moduleId);
+    const moduleData = MODULES.find((m) => m.id === moduleId);
     injectLecturePlayerHeader({
       moduleId: moduleId,
       lectureId: lectureId,
@@ -793,24 +796,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Helper function to inject lecture player header
   function injectLecturePlayerHeader(options) {
-    const container = document.getElementById('lecture-player-header-container');
+    const container = document.getElementById(
+      'lecture-player-header-container'
+    );
     if (!container) return;
-    
+
     container.innerHTML = '';
     if (window.createAppHeader) {
       const header = window.createAppHeader('lecturePlayer', options);
       container.appendChild(header);
-      
+
       // Update theme icons
       if (window.updateMenuThemeIcons) {
         window.updateMenuThemeIcons(header);
       }
-      
+
       // Update dev mode badge
       if (window.updateDevModeUI) {
         window.updateDevModeUI();
       }
-      
+
       // Show/hide quiz button based on availability
       const quizBtn = header.querySelector('#lecture-quiz-btn-lecturePlayer');
       if (quizBtn) {
@@ -1070,12 +1075,12 @@ document.addEventListener('DOMContentLoaded', async () => {
           window.toggleTheme();
         }
       }
-      
+
       // Lecture player: Overview button (breadcrumb header)
       else if (target.id && target.id.startsWith('lecture-overview-btn')) {
         showLectureOverview();
       }
-      
+
       // Lecture player: Quiz button (breadcrumb header)
       else if (target.id && target.id.startsWith('lecture-quiz-btn')) {
         startQuiz(currentModuleId, currentLectureId);
@@ -1085,7 +1090,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function setupLectureListeners() {
     // Overview and Quiz buttons are now handled via event delegation in setupNavigationListeners
-    
+
     buttons.backToLecture.addEventListener('click', () => {
       showView('lecture');
       updateURL(

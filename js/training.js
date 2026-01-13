@@ -369,8 +369,8 @@ let trainingState = {
 
 // Training context for filtered training
 let trainingContext = {
-  moduleId: null,    // null = all modules
-  lectureId: null    // null = all lectures in module
+  moduleId: null, // null = all modules
+  lectureId: null // null = all lectures in module
 };
 
 /**
@@ -407,17 +407,17 @@ function clearTrainingContext() {
  */
 async function getCompletedTestsFiltered(moduleId = null, lectureId = null) {
   const allTests = await getCompletedTests();
-  
+
   if (lectureId && moduleId) {
-    return allTests.filter(t => 
-      t.moduleId === moduleId && t.lectureId === lectureId
+    return allTests.filter(
+      (t) => t.moduleId === moduleId && t.lectureId === lectureId
     );
   }
-  
+
   if (moduleId) {
-    return allTests.filter(t => t.moduleId === moduleId);
+    return allTests.filter((t) => t.moduleId === moduleId);
   }
-  
+
   return allTests;
 }
 
@@ -431,19 +431,20 @@ function getTrainingContextDescription(context, modules) {
   if (!context.moduleId) {
     return 'Alle abgeschlossenen Tests';
   }
-  
-  const module = modules?.find(m => m.id === context.moduleId);
+
+  const module = modules?.find((m) => m.id === context.moduleId);
   const moduleTitle = module?.title || context.moduleId;
-  
+
   if (context.lectureId) {
     // Find lecture topic from cached tests
     const test = cachedCompletedTests.find(
-      t => t.moduleId === context.moduleId && t.lectureId === context.lectureId
+      (t) =>
+        t.moduleId === context.moduleId && t.lectureId === context.lectureId
     );
     const lectureTopic = test?.topic || context.lectureId;
     return `${moduleTitle} → ${lectureTopic}`;
   }
-  
+
   return moduleTitle;
 }
 
@@ -470,14 +471,17 @@ async function initTrainingView() {
   );
 
   // Get context description for display
-  const contextDesc = getTrainingContextDescription(trainingContext, window.MODULES || []);
+  const contextDesc = getTrainingContextDescription(
+    trainingContext,
+    window.MODULES || []
+  );
   const isFiltered = trainingContext.moduleId !== null;
 
   if (cachedCompletedTests.length === 0) {
     const noTestsMessage = isFiltered
       ? `Keine abgeschlossenen Tests für "${contextDesc}" gefunden.`
       : 'Schließe erst einen Vorlesungs-Test ab, um den Trainings-Modus zu nutzen.';
-    
+
     container.innerHTML = `
       <div class="text-center py-12">
         <span class="text-6xl mb-4 block">📝</span>
@@ -485,14 +489,18 @@ async function initTrainingView() {
         <p class="text-gray-600 dark:text-gray-400 mb-6">
           ${noTestsMessage}
         </p>
-        ${isFiltered ? `
+        ${
+          isFiltered
+            ? `
         <button
           onclick="window.clearTrainingContext && window.clearTrainingContext(); window.initTrainingView && window.initTrainingView();"
           class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition mr-2"
         >
           Alle Tests trainieren
         </button>
-        ` : ''}
+        `
+            : ''
+        }
         <button
           onclick="window.showView && window.showView('moduleMap')"
           class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition"
@@ -536,7 +544,10 @@ function renderTrainingQuestion(animateIn = false) {
     : '';
 
   // Context info for filtered training
-  const contextDesc = getTrainingContextDescription(trainingContext, window.MODULES || []);
+  const contextDesc = getTrainingContextDescription(
+    trainingContext,
+    window.MODULES || []
+  );
   const isFiltered = trainingContext.moduleId !== null;
   const contextBadge = isFiltered
     ? `<div class="mb-4 text-center">
