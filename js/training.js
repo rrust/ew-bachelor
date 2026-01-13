@@ -549,22 +549,36 @@ function renderTrainingQuestion(animateIn = false) {
     window.MODULES || []
   );
   const isFiltered = trainingContext.moduleId !== null;
-  const contextBadge = isFiltered
-    ? `<div class="mb-4 text-center">
-        <span class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm px-3 py-1 rounded-full">
-          <span>📚 ${escapeHtml(contextDesc)}</span>
-          <button 
-            onclick="window.clearTrainingContext(); window.initTrainingView();"
-            class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-200"
-            title="Filter entfernen"
-          >✕</button>
-        </span>
-       </div>`
-    : '';
+
+  // Get module title for current question
+  const questionModule = window.MODULES?.find(
+    (m) => m.id === question.moduleId
+  );
+  const questionModuleTitle = questionModule?.title || question.moduleId;
+  const questionContext = question.lectureId
+    ? `${questionModuleTitle} → ${question.topic}`
+    : questionModuleTitle;
+
+  // Training scope badge (always shown)
+  const scopeBadge = `
+    <div class="mb-4 text-center">
+      <span class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm px-3 py-1 rounded-full">
+        <span>🎯 ${escapeHtml(contextDesc)}</span>
+        ${
+          isFiltered
+            ? `<button 
+                onclick="window.clearTrainingContext(); window.initTrainingView();"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-200 ml-1"
+                title="Filter entfernen"
+              >✕</button>`
+            : ''
+        }
+      </span>
+    </div>`;
 
   container.innerHTML = `
     <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
-      ${contextBadge}
+      ${scopeBadge}
       <!-- Progress -->
       <div class="mb-6">
         <div class="flex justify-between items-center mb-2">
