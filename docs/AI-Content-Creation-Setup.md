@@ -53,26 +53,37 @@ Am Ende der Vorlesung:
 
 ---
 
-## Der Workflow
+## Der Workflow (3 Phasen)
+
+⚠️ **WICHTIG: Alle 3 Phasen müssen in Reihenfolge durchgeführt werden!**
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 1: Quellinhalte erstellen                                        │
+│  PHASE 1: Rohmaterial zusammenstellen                                   │
 │  Tool: Google AI Studio (Gemini Pro)                                    │
 │  - Deep Research mit Web-Grounding                                      │
-│  - Vorlesungsinhalte aufbereiten                                        │
-│  - Videos transkribieren (Whisper)                                      │
+│  - Vorlesungsinhalte aufbereiten (Vorlesung.md)                         │
+│  - Videos recherchieren und verifizieren (Videos.md)                    │
 │  → Speichern in: studies-material/{studyId}/NN-modul/NN-vorlesung/      │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
                                 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 2: App-Inhalte generieren                                        │
+│  PHASE 2: CONTENT_PLAN.md erstellen und verifizieren                    │
+│  - Definiert EXAKT welche Dateien erstellt werden                       │
+│  - Dateinamen, Typen, Reihenfolge festlegen                             │
+│  - Plan prüfen und bei Bedarf überarbeiten                              │
+│  - ERST NACH VERIFIZIERUNG zu Phase 3!                                  │
+│  → Speichern als: CONTENT_PLAN.md im Material-Ordner                    │
+└───────────────────────────────┬─────────────────────────────────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│  PHASE 3: Content EXAKT nach CONTENT_PLAN generieren                    │
 │  Tool: GitHub Copilot (Agent Mode) + Claude Opus 4                      │
-│  - lecture-items/ erstellen                                             │
-│  - questions/ für Quizzes                                               │
-│  - Self-Assessments nach Konzepten                                      │
-│  - Achievements (Cheat Sheets)                                          │
+│  ⚠️ CONTENT_PLAN.md ist VERBINDLICH - keine eigene Struktur!            │
+│  - Jede Zeile im Plan = eine Datei erstellen                            │
+│  - Dateiname und Typ EXAKT wie im Plan                                  │
 │  → Speichern in: content/{studyId}/NN-modul/NN-vorlesung/               │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
@@ -298,30 +309,51 @@ Jeder Abschnitt besteht aus:
 
 ## VOR DEM START: Zusätzliche Materialien prüfen!
 
-SCHRITT 0 - Modul-Ordner prüfen:
+⚠️ CONTENT_PLAN.md IST VERBINDLICH! ⚠️
+
+Der CONTENT_PLAN definiert EXAKT welche Dateien mit welchen Typen erstellt werden.
+Keine eigene Struktur erfinden! Wenn der Plan "04-video-stoechiometrie.md" sagt,
+erstelle genau diese Datei mit type: youtube-video.
+
+SCHRITT 0 - CONTENT_PLAN.md lesen (ZUERST!):
+- Öffne CONTENT_PLAN.md im Material-Ordner
+- Dies ist die VERBINDLICHE Struktur - keine Abweichungen!
+- Jede Zeile im Plan = eine zu erstellende Datei
+- Dateiname und Typ müssen EXAKT übereinstimmen
+
+SCHRITT 0b - Modul-Ordner prüfen:
 - Lies overview.md für Modulziele und Prüfungsmodalitäten
 - Lies Fachliteratur-Fragen (z.B. mortimer-questions.md) falls vorhanden
 - Lies Prüfungsfragen und -lösungen falls vorhanden
 → Nutze diese für schwierige questions/ und calculation-Aufgaben!
 
-SCHRITT 0b - Videos.md prüfen:
+SCHRITT 0c - Videos.md prüfen:
 - Lies Videos.md im Vorlesungs-Ordner (falls vorhanden)
 - Nur verifizierte Videos aus dieser Datei verwenden!
-- Videos an thematisch passender Stelle einbinden
+- Video-URLs müssen mit dem CONTENT_PLAN übereinstimmen
 
-SCHRITT 1 - CONTENT_PLAN.md analysieren:
-- Lies den CONTENT_PLAN.md im Material-Ordner
-- Folge der dort definierten Struktur mit Abschnitten
+SCHRITT 1 - Dateien gemäß CONTENT_PLAN erstellen:
+- Für JEDE Zeile im CONTENT_PLAN.md eine Datei erstellen
+- Dateiname EXAKT wie im Plan (z.B. "04-video-stoechiometrie.md")
+- Typ EXAKT wie im Plan (z.B. "youtube-video")
+- Reihenfolge EXAKT wie im Plan
 
 SCHRITT 2 - lecture.md erstellen:
 - Extrahiere Quellen aus dem Material-Header
 - Erstelle sources Array mit id, title, url, type
 - Füge topic, description, estimatedTime hinzu
 
-SCHRITT 3 - lecture-items/ erstellen (neue Typen!):
-Für jeden Abschnitt:
+SCHRITT 3 - lecture-items/ erstellen (EXAKT nach CONTENT_PLAN!):
+⚠️ Erstelle NUR die Dateien, die im CONTENT_PLAN stehen!
+⚠️ Verwende EXAKT die Dateinamen aus dem CONTENT_PLAN!
+⚠️ Verwende EXAKT die Typen aus dem CONTENT_PLAN!
 
-a) Lerninhalte (01-XX.md):
+Beispiel aus CONTENT_PLAN:
+| 04  | `04-video-stoechiometrie.md` | youtube-video | Stöchiometrie Grundlagen |
+
+→ Erstelle: lecture-items/04-video-stoechiometrie.md mit type: youtube-video
+
+a) Lerninhalte (laut Plan):
    - type: 'learning-content'
    - Quellenreferenzen aus [cite: X-Y] extrahieren
    - Formeln in LaTeX
