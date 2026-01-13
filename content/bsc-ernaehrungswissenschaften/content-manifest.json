@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-13T13:23:35.454Z",
+  "generatedAt": "2026-01-13T13:31:35.670Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "8793fcde",
@@ -83,14 +83,14 @@
       "version": "2.0.0"
     },
     "02-chemie-grundlagen/06-elektronenstruktur-atome": {
-      "checksum": "a9c5272e",
-      "sizeKB": 87.7,
-      "itemCount": 74,
+      "checksum": "36ca6711",
+      "sizeKB": 90.3,
+      "itemCount": 76,
       "quizCount": 12,
       "topic": "Die Elektronenstruktur der Atome",
       "description": "Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie Elektronenkonfiguration nach Pauli und Hund.",
-      "estimatedTime": 90,
-      "version": "0.0.1"
+      "estimatedTime": 120,
+      "version": "1.1.0"
     }
   }
 }
