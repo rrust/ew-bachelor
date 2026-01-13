@@ -71,6 +71,7 @@ Use conventional commit format:
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
 - ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen verwenden** - Erlaubt sind: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT verwenden: `xychart-beta`, `timeline`, `mindmap` oder andere experimentelle Typen (oft fehlerhaft).
+- ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 - Always validate before committing
 
 ### Content-Struktur V4: Lernen → Überprüfen → Anwenden
@@ -212,13 +213,30 @@ Before completing any task:
 When creating or editing content in `content/` folder:
 
 1. ✅ Run `npm run build` to regenerate JSON files
-2. ✅ Test in browser to verify content loads correctly
+2. ✅ Run `npm run validate:content` to check for errors
+3. ✅ Run `node scripts/generate-test-progress.js` to regenerate test data
+4. ✅ Test in browser to verify content loads correctly
 
 **What `npm run build` does:**
 - Generates `content-list.json` and `modules.json` for each study
 - Generates `lecture-bundle.json` for each lecture (lazy loading)
 - Generates `search-index.json` for search functionality
 - Generates `content-manifest.json` with checksums
+
+### Lecture Versioning (Semantic Versioning)
+
+The `version` field in `lecture.md` follows semantic versioning (`MAJOR.MINOR.PATCH`):
+
+| Change Type | Version Bump      | Example                                 | When to use                           |
+| ----------- | ----------------- | --------------------------------------- | ------------------------------------- |
+| **Patch**   | `1.0.0` → `1.0.1` | Format fixes, typos, minor wording      | Small fixes that don't change meaning |
+| **Minor**   | `1.0.0` → `1.1.0` | Content item edited, question changed   | Substantive content changes           |
+| **Major**   | `1.0.0` → `2.0.0` | Complete regeneration from CONTENT_PLAN | Full lecture rebuild                  |
+
+**Examples:**
+- Fixing a typo in a learning-content item → Patch (`1.0.0` → `1.0.1`)
+- Changing an explanation or adding a hint → Minor (`1.0.1` → `1.1.0`)
+- Regenerating all 54 items from CONTENT_PLAN → Major (`1.1.0` → `2.0.0`)
 
 ## Debugging Protocol
 

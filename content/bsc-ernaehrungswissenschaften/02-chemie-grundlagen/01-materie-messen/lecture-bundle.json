@@ -100,40 +100,25 @@
       "scenario": "Du beobachtest verschiedene Alltagsvorgänge und sollst die Energieumwandlungen identifizieren. Bei jedem Vorgang wird eine Energieform in eine andere umgewandelt.",
       "tasks": [
         {
-          "question": "Welche Energieumwandlung findet beim Kochen auf einem Elektroherd statt?",
-          "type": "multiple-choice",
-          "options": [
-            "Chemische Energie → Wärmeenergie",
-            "Elektrische Energie → Wärmeenergie",
-            "Kinetische Energie → Wärmeenergie",
-            "Potenzielle Energie → Wärmeenergie"
-          ],
-          "correctAnswer": "Elektrische Energie → Wärmeenergie"
+          "id": "task1",
+          "instruction": "Welche Energieumwandlung findet beim Kochen auf einem Elektroherd statt?",
+          "hint": "Der Herd bezieht Strom aus der Steckdose.",
+          "solution": "Elektrische Energie → Wärmeenergie"
         },
         {
-          "question": "Welche Energieumwandlung findet beim Verbrennen einer Kerze statt?",
-          "type": "multiple-choice",
-          "options": [
-            "Chemische Energie → Licht und Wärme",
-            "Elektrische Energie → Licht und Wärme",
-            "Kinetische Energie → Licht und Wärme",
-            "Potenzielle Energie → Licht und Wärme"
-          ],
-          "correctAnswer": "Chemische Energie → Licht und Wärme"
+          "id": "task2",
+          "instruction": "Welche Energieumwandlung findet beim Verbrennen einer Kerze statt?",
+          "hint": "Die Kerze besteht aus Wachs, das verbrennt.",
+          "solution": "Chemische Energie → Licht und Wärme"
         },
         {
-          "question": "Welche Energieumwandlung findet statt, wenn ein Ball vom Tisch fällt?",
-          "type": "multiple-choice",
-          "options": [
-            "Kinetische → Potenzielle Energie",
-            "Potenzielle → Kinetische Energie",
-            "Chemische → Kinetische Energie",
-            "Wärme → Kinetische Energie"
-          ],
-          "correctAnswer": "Potenzielle → Kinetische Energie"
+          "id": "task3",
+          "instruction": "Welche Energieumwandlung findet statt, wenn ein Ball vom Tisch fällt?",
+          "hint": "Lageenergie wird in Bewegungsenergie umgewandelt.",
+          "solution": "Potenzielle → Kinetische Energie"
         }
       ],
-      "realWorldConnection": "Der Energieerhaltungssatz gilt immer: Die Gesamtenergie bleibt konstant, sie wird nur von einer Form in eine andere umgewandelt.",
+      "explanation": "Der Energieerhaltungssatz gilt immer: Die Gesamtenergie bleibt konstant, sie wird nur von einer Form in eine andere umgewandelt.",
       "content": ""
     },
     {
@@ -246,35 +231,31 @@
       "scenario": "Du lernst für eine Chemie-Prüfung und übst das Lesen von Molekülformeln. Bei jeder Formel musst du die Atome zählen.",
       "tasks": [
         {
-          "question": "Wie viele Atome enthält ein Molekül Wasser (H₂O) insgesamt?",
-          "type": "calculation",
-          "correctAnswer": 3,
-          "tolerance": 0,
-          "unit": "Atome"
+          "id": "task1",
+          "instruction": "Wie viele Atome enthält ein Molekül Wasser (H₂O) insgesamt?",
+          "hint": "Zähle H-Atome und O-Atome zusammen.",
+          "solution": "3 Atome (2 H + 1 O)"
         },
         {
-          "question": "Wie viele Kohlenstoffatome enthält ein Molekül Glucose (C₆H₁₂O₆)?",
-          "type": "calculation",
-          "correctAnswer": 6,
-          "tolerance": 0,
-          "unit": "Atome"
+          "id": "task2",
+          "instruction": "Wie viele Kohlenstoffatome enthält ein Molekül Glucose (C₆H₁₂O₆)?",
+          "hint": "Die Zahl nach C gibt die Anzahl an.",
+          "solution": "6 Kohlenstoffatome"
         },
         {
-          "question": "Wie viele Atome enthält ein Molekül Ethanol (C₂H₆O) insgesamt?",
-          "type": "calculation",
-          "correctAnswer": 9,
-          "tolerance": 0,
-          "unit": "Atome"
+          "id": "task3",
+          "instruction": "Wie viele Atome enthält ein Molekül Ethanol (C₂H₆O) insgesamt?",
+          "hint": "Addiere: 2 + 6 + 1",
+          "solution": "9 Atome (2 C + 6 H + 1 O)"
         },
         {
-          "question": "Wie viele Wasserstoffatome enthält ein Molekül Saccharose (Haushaltszucker, C₁₂H₂₂O₁₁)?",
-          "type": "calculation",
-          "correctAnswer": 22,
-          "tolerance": 0,
-          "unit": "Atome"
+          "id": "task4",
+          "instruction": "Wie viele Wasserstoffatome enthält ein Molekül Saccharose (Haushaltszucker, C₁₂H₂₂O₁₁)?",
+          "hint": "Schaue auf den Index nach H.",
+          "solution": "22 Wasserstoffatome"
         }
       ],
-      "realWorldConnection": "Das Verständnis von Molekülformeln ist essenziell für die Ernährungswissenschaft, z.B. um die Zusammensetzung von Kohlenhydraten, Fetten und Proteinen zu verstehen.",
+      "explanation": "Das Verständnis von Molekülformeln ist essenziell für die Ernährungswissenschaft, z.B. um die Zusammensetzung von Kohlenhydraten, Fetten und Proteinen zu verstehen.",
       "content": ""
     },
     {
@@ -375,43 +356,31 @@
       "scenario": "Du bereitest ein Abendessen zu und beobachtest verschiedene Vorgänge. Entscheide, ob es sich um physikalische oder chemische Veränderungen handelt.",
       "tasks": [
         {
-          "question": "Du schneidest Zwiebeln in kleine Stücke. Was für eine Veränderung ist das?",
-          "type": "multiple-choice",
-          "options": [
-            "Physikalische Veränderung",
-            "Chemische Veränderung"
-          ],
-          "correctAnswer": "Physikalische Veränderung"
+          "id": "task1",
+          "instruction": "Du schneidest Zwiebeln in kleine Stücke. Was für eine Veränderung ist das?",
+          "hint": "Ändert sich die chemische Zusammensetzung der Zwiebel?",
+          "solution": "Physikalische Veränderung (nur die Form ändert sich, nicht die Substanz)"
         },
         {
-          "question": "Du brätst ein Steak bis es braun wird (Maillard-Reaktion). Was für eine Veränderung ist das?",
-          "type": "multiple-choice",
-          "options": [
-            "Physikalische Veränderung",
-            "Chemische Veränderung"
-          ],
-          "correctAnswer": "Chemische Veränderung"
+          "id": "task2",
+          "instruction": "Du brätst ein Steak bis es braun wird (Maillard-Reaktion). Was für eine Veränderung ist das?",
+          "hint": "Entstehen dabei neue Substanzen mit neuen Eigenschaften?",
+          "solution": "Chemische Veränderung (neue Aromastoffe und Farbstoffe entstehen)"
         },
         {
-          "question": "Du lässt Eiswürfel in einem Glas schmelzen. Was für eine Veränderung ist das?",
-          "type": "multiple-choice",
-          "options": [
-            "Physikalische Veränderung",
-            "Chemische Veränderung"
-          ],
-          "correctAnswer": "Physikalische Veränderung"
+          "id": "task3",
+          "instruction": "Du lässt Eiswürfel in einem Glas schmelzen. Was für eine Veränderung ist das?",
+          "hint": "Das Wasser bleibt chemisch H₂O.",
+          "solution": "Physikalische Veränderung (nur der Aggregatzustand ändert sich)"
         },
         {
-          "question": "Milch wird sauer und riecht anders. Was für eine Veränderung ist das?",
-          "type": "multiple-choice",
-          "options": [
-            "Physikalische Veränderung",
-            "Chemische Veränderung"
-          ],
-          "correctAnswer": "Chemische Veränderung"
+          "id": "task4",
+          "instruction": "Milch wird sauer und riecht anders. Was für eine Veränderung ist das?",
+          "hint": "Milchsäurebakterien wandeln Lactose um.",
+          "solution": "Chemische Veränderung (Lactose wird zu Milchsäure umgewandelt)"
         }
       ],
-      "realWorldConnection": "Das Verständnis dieser Unterschiede ist wichtig für die Lebensmittelwissenschaft: Physikalische Prozesse (Kühlen, Zerkleinern) verändern Nährwerte nicht, chemische Prozesse (Kochen, Gären) können es.",
+      "explanation": "Das Verständnis dieser Unterschiede ist wichtig für die Lebensmittelwissenschaft: Physikalische Prozesse (Kühlen, Zerkleinern) verändern Nährwerte nicht, chemische Prozesse (Kochen, Gären) können es.",
       "content": ""
     },
     {
@@ -965,5 +934,5 @@
       "explanation": "**Erklärung:** Präzision = Reproduzierbarkeit (enge Streuung), Genauigkeit = Übereinstimmung mit wahrem Wert. Beide sind unabhängig voneinander: Man kann präzise daneben liegen oder im Durchschnitt richtig, aber mit großer Streuung. Bei Flächenumrechnung: 1 m = 100 cm, also 1 m² = 10.000 cm² (Faktor quadriert)."
     }
   ],
-  "generatedAt": "2026-01-13T00:00:40.179Z"
+  "generatedAt": "2026-01-13T00:50:07.130Z"
 }
