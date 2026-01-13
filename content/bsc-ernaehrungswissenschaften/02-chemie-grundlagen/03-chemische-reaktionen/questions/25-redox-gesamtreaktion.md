@@ -1,13 +1,17 @@
 ---
-type: 'multiple-choice'
+type: 'multiple-choice-multiple'
 topic: 'Redox-Reaktionen'
-question: 'In einer Redox-Reaktion gilt immer:'
+question: 'Welche Aussagen zu Redox-Reaktionen sind korrekt?'
 options:
-  - 'Nur Oxidation findet statt'
-  - 'Nur Reduktion findet statt'
-  - 'Oxidation und Reduktion treten als gekoppeltes Paar auf'
-  - 'Weder Oxidation noch Reduktion findet statt'
-correctAnswer: 'Oxidation und Reduktion treten als gekoppeltes Paar auf'
+  - 'Oxidation und Reduktion treten immer als gekoppeltes Paar auf'
+  - 'Elektronen, die abgegeben werden, müssen von einem anderen Stoff aufgenommen werden'
+  - 'Die Anzahl der abgegebenen Elektronen entspricht der Anzahl der aufgenommenen'
+  - 'Reduktion kann auch ohne Oxidation ablaufen'
+  - 'Bei Redox-Reaktionen ändert sich die Gesamtladung des Systems'
+correctAnswers:
+  - 'Oxidation und Reduktion treten immer als gekoppeltes Paar auf'
+  - 'Elektronen, die abgegeben werden, müssen von einem anderen Stoff aufgenommen werden'
+  - 'Die Anzahl der abgegebenen Elektronen entspricht der Anzahl der aufgenommenen'
 ---
 
 **Erklärung:** Da Elektronen nicht einfach verschwinden können, muss jedes Elektron, das von einem Stoff abgegeben wird (Oxidation), von einem anderen aufgenommen werden (Reduktion). Daher treten beide Prozesse immer gemeinsam auf.

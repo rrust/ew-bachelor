@@ -1,13 +1,17 @@
 ---
-type: 'multiple-choice'
+type: 'multiple-choice-multiple'
 topic: 'Löslichkeit und Fällungsreaktionen'
-question: 'Was sind "Zuschauer-Ionen" (Spectator Ions)?'
+question: 'Welche Aussagen zu Zuschauer-Ionen (Spectator Ions) sind korrekt?'
 options:
-  - 'Ionen, die einen farbigen Niederschlag bilden'
-  - 'Ionen, die an der Reaktion nicht teilnehmen und unverändert in der Lösung bleiben'
-  - 'Ionen, die als Katalysator wirken'
-  - 'Ionen, die nur in Säuren vorkommen'
-correctAnswer: 'Ionen, die an der Reaktion nicht teilnehmen und unverändert in der Lösung bleiben'
+  - 'Sie nehmen nicht aktiv an der chemischen Reaktion teil'
+  - 'Sie erscheinen auf beiden Seiten der Gleichung unverändert'
+  - 'Sie werden in der Netto-Ionengleichung weggelassen'
+  - 'Sie sind immer Kationen, niemals Anionen'
+  - 'Sie bilden den Niederschlag bei Fällungsreaktionen'
+correctAnswers:
+  - 'Sie nehmen nicht aktiv an der chemischen Reaktion teil'
+  - 'Sie erscheinen auf beiden Seiten der Gleichung unverändert'
+  - 'Sie werden in der Netto-Ionengleichung weggelassen'
 ---
 
 **Erklärung:** Zuschauer-Ionen erscheinen auf beiden Seiten der Gleichung unverändert. Sie nehmen nicht aktiv an der chemischen Reaktion teil und werden in der Netto-Ionengleichung weggelassen, um nur den Kern der Reaktion zu zeigen.

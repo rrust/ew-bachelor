@@ -14,11 +14,11 @@ Die **Molarität** (c oder M) gibt an, wie viel Mol eines Stoffes in einem Liter
 
 $$c = \frac{n}{V}$$
 
-| Symbol | Bedeutung | Einheit |
-|--------|-----------|---------|
-| c | Molarität (Konzentration) | mol/L oder M |
-| n | Stoffmenge | mol |
-| V | Volumen der Lösung | L |
+| Symbol | Bedeutung                 | Einheit      |
+| ------ | ------------------------- | ------------ |
+| c      | Molarität (Konzentration) | mol/L oder M |
+| n      | Stoffmenge                | mol          |
+| V      | Volumen der Lösung        | L            |
 
 ### Umgestellte Formeln
 

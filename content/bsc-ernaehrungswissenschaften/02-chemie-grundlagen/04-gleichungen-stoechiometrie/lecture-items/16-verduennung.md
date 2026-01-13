@@ -14,12 +14,12 @@ Beim Verdünnen einer Lösung bleibt die **Stoffmenge konstant** - nur das Volum
 
 $$c_1 \times V_1 = c_2 \times V_2$$
 
-| Symbol | Bedeutung |
-|--------|-----------|
-| c₁ | Konzentration vor Verdünnung (Stammlösung) |
-| V₁ | Volumen vor Verdünnung |
-| c₂ | Konzentration nach Verdünnung |
-| V₂ | Volumen nach Verdünnung |
+| Symbol | Bedeutung                                  |
+| ------ | ------------------------------------------ |
+| c₁     | Konzentration vor Verdünnung (Stammlösung) |
+| V₁     | Volumen vor Verdünnung                     |
+| c₂     | Konzentration nach Verdünnung              |
+| V₂     | Volumen nach Verdünnung                    |
 
 ### Beispiel
 

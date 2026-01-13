@@ -14,12 +14,12 @@ Die Spektrophotometrie nutzt Lichtabsorption zur Konzentrationsbestimmung.
 
 $$A = \varepsilon \times l \times c$$
 
-| Symbol | Bedeutung | Einheit |
-|--------|-----------|---------|
-| A | Absorption (Extinktion) | dimensionslos |
-| ε | molarer Extinktionskoeffizient | L/(mol·cm) |
-| l | Schichtdicke (Küvettenlänge) | cm |
-| c | Konzentration | mol/L |
+| Symbol | Bedeutung                      | Einheit       |
+| ------ | ------------------------------ | ------------- |
+| A      | Absorption (Extinktion)        | dimensionslos |
+| ε      | molarer Extinktionskoeffizient | L/(mol·cm)    |
+| l      | Schichtdicke (Küvettenlänge)   | cm            |
+| c      | Konzentration                  | mol/L         |
 
 ### Anwendungen
 

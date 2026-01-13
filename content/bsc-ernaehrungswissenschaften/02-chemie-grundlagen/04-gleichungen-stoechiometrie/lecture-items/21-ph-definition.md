@@ -18,11 +18,11 @@ Die eckigen Klammern bedeuten "Konzentration in mol/L".
 
 ### Die pH-Skala
 
-| pH-Bereich | Eigenschaft | Beispiele |
-|------------|-------------|-----------|
-| 0-6 | sauer | Magensäure (1-2), Zitronensaft (2), Essig (3) |
-| 7 | neutral | Reines Wasser |
-| 8-14 | basisch | Seife (9-10), Bleiche (12-13) |
+| pH-Bereich | Eigenschaft | Beispiele                                     |
+| ---------- | ----------- | --------------------------------------------- |
+| 0-6        | sauer       | Magensäure (1-2), Zitronensaft (2), Essig (3) |
+| 7          | neutral     | Reines Wasser                                 |
+| 8-14       | basisch     | Seife (9-10), Bleiche (12-13)                 |
 
 ### Wichtige Zusammenhänge
 

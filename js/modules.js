@@ -388,13 +388,20 @@ function createModuleCard(
   }
 
   // Card Header: Status (left), ECTS (center), Badge (right)
+  const statusIcon =
+    moduleMeta.status === 'gesperrt'
+      ? Icons.get('lock', 'w-4 h-4')
+      : Icons.get('unlock', 'w-4 h-4');
+  const statusTitle =
+    moduleMeta.status === 'gesperrt' ? 'Gesperrt' : 'Freigeschaltet';
+
   let cardHTML = `
           <div class="card-header flex items-center justify-between px-4 py-3 border-b dark:border-gray-700 rounded-t-lg">
-              <div class="status-badge text-xs font-semibold px-2 py-1 rounded-full ${
+              <div class="status-badge flex items-center justify-center w-8 h-8 rounded-full ${
                 moduleMeta.status === 'gesperrt'
                   ? 'bg-red-200 dark:bg-red-900 text-red-800 dark:text-red-200'
                   : 'bg-green-200 dark:bg-green-900 text-green-800 dark:text-green-200'
-              }">${moduleMeta.status}</div>
+              }" title="${statusTitle}">${statusIcon}</div>
               <span class="text-sm font-medium text-gray-600 dark:text-gray-400">${
                 moduleMeta.ects
               } ECTS</span>

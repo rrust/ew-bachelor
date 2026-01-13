@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-12T23:33:38.044Z",
+  "generatedAt": "2026-01-13T00:00:11.442Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -610,7 +610,17 @@
         "Säuren und Basen",
         "Neutralisation und Gasbildende Reaktionen",
         "Redox-Reaktionen",
-        "Spannungsreihe"
+        "Spannungsreihe",
+        "Grundlagen Reaktionsgleichungen",
+        "Reaktionsgleichungen aufstellen",
+        "Reaktionsgleichungen ausgleichen",
+        "Verbrennungsreaktionen",
+        "Elektrolyte",
+        "Fällungsreaktionen",
+        "Säurestärke",
+        "Oxidationszahlen",
+        "Redoxreaktionen",
+        "Selbsttest Chemische Reaktionen"
       ],
       "keywords": [
         "chemische",
@@ -715,7 +725,7 @@
         "rechts"
       ],
       "snippet": "Chemische Reaktionen & Stöchiometrie Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation, Redox-Reaktionen u...",
-      "itemCount": 42,
+      "itemCount": 60,
       "quizCount": 25
     },
     {

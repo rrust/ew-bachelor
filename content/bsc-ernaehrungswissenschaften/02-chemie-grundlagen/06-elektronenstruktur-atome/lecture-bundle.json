@@ -916,7 +916,7 @@
           "pages": "36-37"
         }
       ],
-      "content": "## Das Aufbauprinzip: Niedrigste Energie zuerst\n\nElektronen besetzen Orbitale in der Reihenfolge **zunehmender Energie**.\n\n### Die Befüllungsreihenfolge\n\n$$1s \\rightarrow 2s \\rightarrow 2p \\rightarrow 3s \\rightarrow 3p \\rightarrow 4s \\rightarrow 3d \\rightarrow 4p \\rightarrow 5s \\rightarrow 4d \\rightarrow ...$$\n\n### Warum 4s vor 3d?\n\nDas 4s-Orbital wird **vor** dem 3d-Orbital gefüllt, obwohl n=4 > n=3!\n\n**Erklärung:** Die Energie hängt nicht nur von n ab, sondern auch von l. Das 4s-Orbital (n+l=4+0=4) hat im neutralen Atom eine etwas niedrigere Energie als 3d (n+l=3+2=5).\n\n### Merkregel: Diagonalregel\n\nMan kann sich die Reihenfolge mit Diagonalen merken:\n\n```text\n1s\n2s  2p\n3s  3p  3d\n4s  4p  4d  4f\n5s  5p  5d  5f\n↘ ↘ ↘ ↘ (diagonal von oben rechts nach unten links lesen)\n```\n\n### Wichtig zu beachten\n\n- Bei Ionen kann sich die Reihenfolge ändern!\n- Bei d- und f-Elementen gibt es Ausnahmen (z.B. Cr, Cu)\n\n> 💡 Das Periodensystem ist nach dem Aufbauprinzip geordnet!"
+      "content": "## Das Aufbauprinzip: Niedrigste Energie zuerst\n\nElektronen besetzen Orbitale in der Reihenfolge **zunehmender Energie**.\n\n### Die Befüllungsreihenfolge\n\n$$1s \\rightarrow 2s \\rightarrow 2p \\rightarrow 3s \\rightarrow 3p \\rightarrow 4s \\rightarrow 3d \\rightarrow 4p \\rightarrow 5s \\rightarrow 4d \\rightarrow ...$$\n\n### Warum 4s vor 3d?\n\nDas 4s-Orbital wird **vor** dem 3d-Orbital gefüllt, obwohl n=4 > n=3!\n\n**Erklärung:** Die Energie hängt nicht nur von n ab, sondern auch von l. Das 4s-Orbital (n+l=4+0=4) hat im neutralen Atom eine etwas niedrigere Energie als 3d (n+l=3+2=5).\n\n### Merkregel: Diagonalregel\n\nMan kann sich die Reihenfolge mit Diagonalen merken. Die Orbitale werden entlang der Diagonalen von oben rechts nach unten links befüllt:\n\n| n=1      | n=2  | n=3  | n=4  | n=5 |\n| -------- | ---- | ---- | ---- | --- |\n| **1s** ↘ |      |      |      |     |\n| **2s** ↘ | 2p ↘ |      |      |     |\n| **3s** ↘ | 3p ↘ | 3d ↘ |      |     |\n| **4s** ↘ | 4p ↘ | 4d ↘ | 4f ↘ |     |\n| **5s**   | 5p   | 5d   | 5f   |     |\n\n**Leserichtung:** 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → ...\n\n### Wichtig zu beachten\n\n- Bei Ionen kann sich die Reihenfolge ändern!\n- Bei d- und f-Elementen gibt es Ausnahmen (z.B. Cr, Cu)\n\n> 💡 Das Periodensystem ist nach dem Aufbauprinzip geordnet!"
     },
     {
       "type": "mermaid-diagram",
@@ -1337,5 +1337,5 @@
       "explanation": "**Erklärung:** Linienspektren sind elementspezifisch. Natrium emittiert charakteristisches gelbes Licht. Flammenfärbung und AAS nutzen diese Prinzipien zur Elementanalyse. UV-Vis-Spektroskopie nutzt sowohl UV als auch sichtbares Licht (daher \"UV-Vis\")."
     }
   ],
-  "generatedAt": "2026-01-12T23:33:37.991Z"
+  "generatedAt": "2026-01-13T00:00:11.309Z"
 }
