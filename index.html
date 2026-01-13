@@ -951,31 +951,14 @@
 
     <!-- View for Search Results -->
     <div id="search-view" style="display: none">
-      <!-- Header injected by components.js -->
+      <!-- Header with integrated search input injected by components.js -->
 
-      <!-- Fixed Search Input -->
-      <div class="search-sticky-header">
-        <div class="relative w-full max-w-xl">
-          <input
-            type="text"
-            id="search-page-input"
-            placeholder="Suche..."
-            class="w-full pl-10 pr-4 py-2.5 text-base border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          />
-          <span
-            class="absolute left-3 top-1/2 transform -translate-y-1/2"
-            data-icon="search"
-            data-icon-class="w-5 h-5 text-gray-400"
-          ></span>
-        </div>
-      </div>
-
-      <!-- Search Results (with padding for fixed header) -->
-      <div class="container mx-auto px-8 search-results-wrapper">
+      <!-- Search Results -->
+      <div class="container mx-auto px-4 md:px-8 pt-4">
         <!-- Search Stats -->
         <div
           id="search-stats"
-          class="mb-6 text-gray-600 dark:text-gray-400"
+          class="mb-4 text-gray-600 dark:text-gray-400"
         ></div>
 
         <!-- Search Results Grid -->

@@ -539,6 +539,84 @@ function createAppHeader(view = 'moduleMap', options = {}) {
     return header;
   }
 
+  // Special minimal header for search view with integrated search input
+  if (view === 'search') {
+    const idSuffix = '-search';
+    header.className = 'bg-white dark:bg-gray-800 sticky top-0 z-40';
+    header.innerHTML = `
+      <div class="flex items-center">
+        <!-- Burger Menu -->
+        <button
+          id="menu-toggle${idSuffix}"
+          class="p-3 md:p-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400 flex-shrink-0 self-stretch flex items-center"
+          title="Menü"
+          onclick="openOverlayMenu('${idSuffix}')"
+        >
+          ${Icons.get('listBullet')}
+        </button>
+        
+        <!-- Study Icon + Search Input -->
+        <div class="flex items-center gap-3 flex-1 pr-4 py-2">
+          <a href="#/modules" class="flex-shrink-0 hover:opacity-80 transition-opacity">
+            ${studyIcon || Icons.get('modules', 'w-5 h-5 md:w-6 md:h-6', 'text-gray-600 dark:text-gray-400')}
+          </a>
+          
+          <!-- Search Input -->
+          <div class="relative flex-1 max-w-xl">
+            <input
+              type="text"
+              id="search-page-input"
+              placeholder="Suche..."
+              class="w-full pl-10 pr-4 py-2 text-base border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+            <span class="absolute left-3 top-1/2 transform -translate-y-1/2">
+              ${Icons.get('search', 'w-5 h-5', 'text-gray-400')}
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Overlay Menu for Search View -->
+      <div id="overlay-menu${idSuffix}" class="hidden fixed inset-0 z-50">
+        <div class="absolute inset-0 bg-black bg-opacity-50" onclick="closeOverlayMenu('${idSuffix}')"></div>
+        <div class="absolute left-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
+          <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
+            <span class="font-bold text-lg">Menü</span>
+            <button onclick="closeOverlayMenu('${idSuffix}')" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
+              ${Icons.get('close', 'w-5 h-5')}
+            </button>
+          </div>
+          <nav class="p-4 space-y-2">
+            <a href="#/training" onclick="closeOverlayMenu('${idSuffix}')" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center">TRAIN</a>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
+            <button id="theme-toggle-menu${idSuffix}" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left" onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));">
+              <span class="theme-icon-light hidden">${Icons.get('sun', 'w-5 h-5')}</span>
+              <span class="theme-icon-dark">${Icons.get('moon', 'w-5 h-5')}</span>
+              <span class="theme-text">Farbschema</span>
+            </button>
+            <hr class="border-gray-200 dark:border-gray-700 my-2">
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('moduleMap');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('modules', 'w-5 h-5')}<span>Module</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('progress');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('chart', 'w-5 h-5')}<span>Progress</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('achievements');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('achievement', 'w-5 h-5')}<span>Achievements</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('map');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('map', 'w-5 h-5')}<span>Modul-Map</span>
+            </button>
+            <button onclick="closeOverlayMenu('${idSuffix}'); window.showView && window.showView('tools');" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left">
+              ${Icons.get('cog', 'w-5 h-5')}<span>Tools</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    `;
+    return header;
+  }
+
   // Only show greeting for non-search views
   const showGreeting = view !== 'search';
 
