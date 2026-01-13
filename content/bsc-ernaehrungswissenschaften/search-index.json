@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-13T13:23:35.566Z",
+  "generatedAt": "2026-01-13T13:31:35.832Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -1111,6 +1111,8 @@
         "Hundsche Regel",
         "Element und Konfiguration",
         "Befüllungsreihenfolge",
+        "Pauli-Prinzip und Hund-Regel",
+        "Ungepaarte Elektronen bestimmen",
         "Bereitschaft für den Vorlesungs-Test"
       ],
       "keywords": [
@@ -1216,7 +1218,7 @@
         "begreifen"
       ],
       "snippet": "Die Elektronenstruktur der Atome Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie El...",
-      "itemCount": 74,
+      "itemCount": 76,
       "quizCount": 12
     }
   ]

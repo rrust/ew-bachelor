@@ -1,8 +1,8 @@
 ---
 topic: 'Die Elektronenstruktur der Atome'
 description: 'Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie Elektronenkonfiguration nach Pauli und Hund.'
-estimatedTime: 90
-version: '0.0.1'
+estimatedTime: 120
+version: '1.1.0'
 sources:
   - id: 'vorlesung-k6'
     title: 'Vorlesungsfolien Kapitel 6: Elektronenstruktur der Atome (WS2025)'

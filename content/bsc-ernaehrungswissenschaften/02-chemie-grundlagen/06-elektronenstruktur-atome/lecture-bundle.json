@@ -4,8 +4,8 @@
   "metadata": {
     "topic": "Die Elektronenstruktur der Atome",
     "description": "Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie Elektronenkonfiguration nach Pauli und Hund.",
-    "estimatedTime": 90,
-    "version": "0.0.1",
+    "estimatedTime": 120,
+    "version": "1.1.0",
     "sources": [
       {
         "id": "vorlesung-k6",
@@ -1039,6 +1039,38 @@
       "content": ""
     },
     {
+      "type": "fill-in-the-blank",
+      "topic": "Pauli-Prinzip und Hund-Regel",
+      "question": "Ergänze die wichtigsten Regeln der Elektronenkonfiguration",
+      "text": "Nach dem Pauli-Prinzip können maximal {{blank1}} Elektronen ein einzelnes Orbital besetzen. Diese müssen {{blank2}} Spin haben. Nach der Hundschen Regel werden entartete Orbitale erst {{blank3}} besetzt, bevor sie doppelt besetzt werden.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "correctAnswer": "2",
+          "alternatives": [
+            "zwei"
+          ]
+        },
+        {
+          "id": "blank2",
+          "correctAnswer": "entgegengesetzten",
+          "alternatives": [
+            "antiparallelen",
+            "unterschiedlichen"
+          ]
+        },
+        {
+          "id": "blank3",
+          "correctAnswer": "einfach",
+          "alternatives": [
+            "einzeln"
+          ]
+        }
+      ],
+      "explanation": "Das Pauli-Prinzip besagt, dass keine zwei Elektronen in einem Atom identische Quantenzahlen haben dürfen. Da sich Elektronen im selben Orbital in n, l und mₗ gleichen, müssen sie sich in mₛ unterscheiden (↑ und ↓). Die Hundsche Regel optimiert die Gesamtenergie durch maximale Spinmultiplizität.",
+      "content": ""
+    },
+    {
       "type": "practice-exercise",
       "title": "Elektronenkonfiguration aufstellen",
       "scenario": "Du sollst die Elektronenkonfiguration von Arsen (As, Z=33) aufstellen. Arsen ist ein Halbmetall in der 5. Hauptgruppe.",
@@ -1069,6 +1101,27 @@
         }
       ],
       "explanation": "Arsen ist trotz seiner Giftigkeit ein wichtiges Spurenelement in der Umwelt. Die Elektronenkonfiguration erklärt seine Stellung in der 5. Hauptgruppe (3 ungepaarte p-Elektronen wie bei N und P).",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "topic": "Ungepaarte Elektronen bestimmen",
+      "question": "Nickel (Ni) hat die Ordnungszahl Z = 28. Bestimme die Anzahl der ungepaarten Elektronen im Nickel-Atom.",
+      "variables": {
+        "Z": "28",
+        "Elektronenkonfiguration": "[Ar] 4s² 3d⁸"
+      },
+      "formula": "Anzahl ungepaarter e⁻ = Gesamtzahl d-Elektronen - 2 × (Anzahl gepaarter Orbitale)",
+      "correctAnswer": 2,
+      "unit": "ungepaarte Elektronen",
+      "tolerance": 0,
+      "hints": [
+        "Nickel hat 28 Elektronen. Nach Argon (18 e⁻) bleiben 10 Elektronen für 4s und 3d.",
+        "Die Elektronenkonfiguration lautet: [Ar] 4s² 3d⁸",
+        "Es gibt 5 d-Orbitale. Bei 8 d-Elektronen sind 3 Orbitale doppelt besetzt (6 e⁻) und 2 Orbitale einfach besetzt (2 e⁻).",
+        "Die 2 einfach besetzten Orbitale haben je 1 ungepaartes Elektron."
+      ],
+      "explanation": "**Schritt 1:** Elektronenkonfiguration aufstellen\nNi (Z=28): [Ar] 4s² 3d⁸\n\n**Schritt 2:** d-Orbitale nach Hund-Regel besetzen\n- 5 d-Orbitale, 8 Elektronen\n- Erst alle 5 einfach besetzen: 5 e⁻\n- Dann 3 doppelt besetzen: 3 e⁻\n\n| d₁  | d₂  | d₃  | d₄  | d₅  |\n| --- | --- | --- | --- | --- |\n| ↑↓  | ↑↓  | ↑↓  | ↑   | ↑   |\n\n**Schritt 3:** Ungepaarte zählen\nAnzahl = **2 ungepaarte Elektronen**\n\n> 💡 Nickel ist paramagnetisch, da es ungepaarte Elektronen besitzt.\n",
       "content": ""
     },
     {
@@ -1319,5 +1372,5 @@
       "explanation": "**Erklärung:** Linienspektren sind elementspezifisch. Natrium emittiert charakteristisches gelbes Licht. Flammenfärbung und AAS nutzen diese Prinzipien zur Elementanalyse. UV-Vis-Spektroskopie nutzt sowohl UV als auch sichtbares Licht (daher \"UV-Vis\")."
     }
   ],
-  "generatedAt": "2026-01-13T13:23:35.512Z"
+  "generatedAt": "2026-01-13T13:31:35.696Z"
 }

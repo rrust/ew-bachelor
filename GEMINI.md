@@ -75,6 +75,7 @@ gh pr merge --squash
 **One logical change per commit!**
 
 ✅ **Good (atomic):**
+
 ```bash
 git commit -m "feat: add update banner component"
 git commit -m "feat: add reset button to tools"
@@ -82,6 +83,7 @@ git commit -m "content: regenerate lecture with V4 structure"
 ```
 
 ❌ **Bad (mixed changes):**
+
 ```bash
 git commit -m "add update system and fix content and update docs"
 ```
@@ -114,11 +116,13 @@ Use conventional commit format:
 - Files numbered `NN-name.md` for ordering
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
 - ⚠️ **NIEMALS ASCII-Art oder Box-Zeichnungen verwenden!** Dies ist VERBOTEN:
-  ```
+
+  ```text
   ┌────────┐      +--------+      |  Box  |
   │  Box   │  OR  |  Box   |  OR  +-------+
   └────────┘      +--------+
   ```
+
   **Stattdessen verwenden:** Tabellen, Listen, Blockquotes (`>`), Mermaid-Diagramme, oder einfache Textbeschreibungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen verwenden** - Erlaubt sind: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT verwenden: `xychart-beta`, `timeline`, `mindmap` oder andere experimentelle Typen (oft fehlerhaft).
 - ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
@@ -191,7 +195,7 @@ Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich se
 - ⚠️ `CONTENT_PLAN.md` - **VERBINDLICHE** Struktur für die Content-Generierung
 - `Vorlesung.md` - Hauptinhalt mit Quellenmarkierungen
 
-### ⚠️ CONTENT_PLAN ist VERBINDLICH!
+### ⚠️ CONTENT_PLAN ist VERBINDLICH
 
 **Der 3-Phasen-Workflow:**
 1. **Phase 1:** Rohmaterial in `studies-material/` ablegen
