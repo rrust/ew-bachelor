@@ -104,13 +104,11 @@ function generateHeaderIconButtons(options) {
       title="Benachrichtigungen"
     >
       ${Icons.get('bell')}
-      ${
-        unreadCount > 0
-          ? `<span id="alerts-badge${idSuffix}" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white bg-red-500 rounded-full">${
-              unreadCount > 9 ? '9+' : unreadCount
-            }</span>`
-          : ''
-      }
+      <span id="alert-badge${idSuffix}" class="${
+    unreadCount > 0 ? '' : 'hidden '
+  }absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white bg-red-500 rounded-full">${
+    unreadCount > 9 ? '9+' : unreadCount
+  }</span>
     </button>
   `;
 
@@ -772,7 +770,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           }
         </div>
         <nav class="flex items-center gap-1">
-          <!-- Dev Mode Badge (shown when dev mode is active) -->
+          <!-- Dev Mode Badge (shown when dev mode is active, desktop only) -->
           <a
             href="#/tools"
             id="header-dev-badge${idSuffix}"

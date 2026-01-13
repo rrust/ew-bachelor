@@ -63,8 +63,11 @@ function updateDevModeUI() {
       card.classList.add('ring-2', 'ring-orange-500');
     }
 
-    // Show all header dev badges
-    headerBadges.forEach((b) => b.classList.remove('hidden'));
+    // Show all header dev badges (desktop only)
+    headerBadges.forEach((b) => {
+      // Keep hidden for mobile, show on md+ screens
+      b.classList.add('md:inline-block');
+    });
 
     // Add dev indicator to body for CSS-based visibility
     document.body.classList.add('dev-mode');
@@ -83,7 +86,10 @@ function updateDevModeUI() {
     }
 
     // Hide all header dev badges
-    headerBadges.forEach((b) => b.classList.add('hidden'));
+    headerBadges.forEach((b) => {
+      b.classList.remove('md:inline-block');
+      b.classList.add('hidden');
+    });
 
     document.body.classList.remove('dev-mode');
   }
