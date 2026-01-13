@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-13T13:32:33.695Z",
+  "generatedAt": "2026-01-13T14:36:46.187Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -115,7 +115,139 @@
       ],
       "snippet": "Grundlagen der Zellbiologie Einführung in die Zellbiologie: Aufbau und Funktion von Zellen, wichtige Organellen, Zellmembran und ihre Bedeutung für die Ernährungswissenschaft. Grundlegende Konzepte vo...",
       "itemCount": 14,
-      "quizCount": 5
+      "quizCount": 5,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Grundlagen der Zellbiologie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Grundlagen der Zellbiologie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen der Zellbiologie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen der Zellbiologie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "youtube-video",
+          "title": "Zellatmung und Mitochondrien",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "image",
+          "title": "Die aerobe Zellatmung",
+          "typeKeywords": []
+        },
+        {
+          "index": 6,
+          "type": "mermaid-diagram",
+          "title": "Proteinsynthese: Von der DNA zum Protein",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "learning-content",
+          "title": "Grundlagen der Zellbiologie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen der Zellbiologie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "learning-content",
+          "title": "Item 10",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "learning-content",
+          "title": "Grundlagen der Ernährung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "external-video",
+          "title": "Test: Externe Vorlesung",
+          "typeKeywords": []
+        },
+        {
+          "index": 12,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen der Ernährung",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "balance-equation",
+          "title": "Wassersynthese - Gleichung ausgleichen",
+          "typeKeywords": []
+        }
+      ]
     },
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -229,7 +361,79 @@
       ],
       "snippet": "Makronährstoffe im Detail Detaillierte Betrachtung der drei Makronährstoffe: Kohlenhydrate, Proteine und Fette. Ihre Funktionen, Energiegehalt und Bedeutung für den menschlichen Körper. Makronährstoff...",
       "itemCount": 7,
-      "quizCount": 7
+      "quizCount": 7,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Makronährstoffe im Detail",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "self-assessment-mc",
+          "title": "Welcher Makronährstoff liefert am meisten Energie pro Gramm?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "self-assessment-mc",
+          "title": "Was ist Glykogen?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "learning-content",
+          "title": "Item 6",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "self-assessment-mc",
+          "title": "Wie viele essentielle Aminosäuren gibt es?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -343,7 +547,89 @@
       ],
       "snippet": "Fette und Öle Unterschiede zwischen Fetten und Ölen, Aufbau von Triglyceriden, gesättigte und ungesättigte Fettsäuren, sowie deren Bedeutung für die Gesundheit. Fette und Öle Lernen Sie die verschiede...",
       "itemCount": 8,
-      "quizCount": 7
+      "quizCount": 7,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Fette und Öle",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "self-assessment-mc",
+          "title": "Was ist ein Triglycerid?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "self-assessment-mc",
+          "title": "Was unterscheidet gesättigte von ungesättigten Fettsäuren?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "learning-content",
+          "title": "Item 6",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "self-assessment-mc",
+          "title": "Welche Fettsäuren sollten weitgehend gemieden werden?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "learning-content",
+          "title": "Item 8",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "02-chemie-grundlagen",
@@ -463,7 +749,435 @@
       ],
       "snippet": "Materie und Messen Einführung in die Chemie: Was ist Materie? Wie messen wir chemische Größen? Atome, Elemente, das Periodensystem, Aggregatzustände, Dichte, SI-Einheiten und Messunsicherheit. Materie...",
       "itemCount": 42,
-      "quizCount": 12
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Materie und Messen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Grundlagen von Materie und Energie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Grundlagen von Materie und Energie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Grundlagen von Materie und Energie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen von Materie und Energie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "matching",
+          "title": "Grundlagen von Materie und Energie",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "practice-exercise",
+          "title": "Energieumwandlungen im Alltag",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "youtube-video",
+          "title": "Grundlagen von Materie und Energie",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "learning-content",
+          "title": "Elemente, Atome und Verbindungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "learning-content",
+          "title": "Elemente, Atome und Verbindungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "learning-content",
+          "title": "Elemente, Atome und Verbindungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "self-assessment-mc",
+          "title": "Elemente, Atome und Verbindungen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "fill-in-the-blank",
+          "title": "Elemente, Atome und Verbindungen",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "practice-exercise",
+          "title": "Molekülformeln lesen und verstehen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "youtube-video",
+          "title": "Elemente, Atome und Verbindungen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "ordering",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "self-assessment-mc",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "matching",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "practice-exercise",
+          "title": "Vorgänge in der Küche klassifizieren",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "youtube-video",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "mermaid-diagram",
+          "title": "Zustände und Eigenschaften der Materie",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "matching",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "fill-in-the-blank",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "calculation",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "calculation",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "youtube-video",
+          "title": "Messen, Einheiten und Dichte",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "learning-content",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "learning-content",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "learning-content",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "learning-content",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "self-assessment-mc",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "fill-in-the-blank",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "calculation",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "calculation",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "youtube-video",
+          "title": "Genauigkeit, Präzision und Fehlerrechnung",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "self-assessment",
+          "title": "Abschluss",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "02-chemie-grundlagen",
@@ -620,7 +1334,567 @@
       ],
       "snippet": "Atome, Moleküle und Ionen Aufbau von Atomen, Ordnungszahl und Isotope, Periodensystem, Moleküle und Ionen, Coulomb-Gesetz, das Mol, Formelermittlung und Nomenklatur anorganischer Verbindungen. Atome,...",
       "itemCount": 55,
-      "quizCount": 15
+      "quizCount": 15,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Atome, Moleküle und Ionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Einführung: Atome",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Subatomare Teilchen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Atomkern und Elektronenhülle",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "self-assessment-mc",
+          "title": "Subatomare Teilchen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "fill-in-the-blank",
+          "title": "Masse der Teilchen",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "matching",
+          "title": "Eigenschaften subatomarer Teilchen",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "youtube-video",
+          "title": "Atombau",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "learning-content",
+          "title": "Ordnungszahl und Massenzahl",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "learning-content",
+          "title": "Isotope",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "learning-content",
+          "title": "Atomgewicht berechnen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "self-assessment-mc",
+          "title": "Ordnungszahl",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "self-assessment-mc",
+          "title": "Isotope",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "fill-in-the-blank",
+          "title": "Neutronenberechnung",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "calculation",
+          "title": "Atomgewicht berechnen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "youtube-video",
+          "title": "Isotope",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Periodensystem - Aufbau",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Hauptgruppen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "mermaid-diagram",
+          "title": "Periodensystem-Gruppen",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "self-assessment-mc",
+          "title": "Hauptgruppen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "matching",
+          "title": "Elemente und Gruppen",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "ordering",
+          "title": "Ordnungszahlen",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "youtube-video",
+          "title": "Periodensystem",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "learning-content",
+          "title": "Moleküle",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Ionenbildung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Mehratomige Ionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "mermaid-diagram",
+          "title": "Bindungstypen",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "self-assessment-mc",
+          "title": "Kationen und Anionen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "self-assessment-mc",
+          "title": "Mehratomige Ionen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "matching",
+          "title": "Mehratomige Ionen",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "practice-exercise",
+          "title": "Salzformeln aufstellen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "youtube-video",
+          "title": "Ionen und Salze",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "learning-content",
+          "title": "Coulomb-Gesetz",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "learning-content",
+          "title": "Gitterenergie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "self-assessment-mc",
+          "title": "Coulomb-Gesetz",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "fill-in-the-blank",
+          "title": "Schmelzpunkte und Gitterenergie",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Das Mol und Avogadro-Konstante",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Molare Masse",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "learning-content",
+          "title": "Mol-Umrechnungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "mermaid-diagram",
+          "title": "Mol-Umrechnungsdreieck",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "self-assessment-mc",
+          "title": "Das Mol",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "self-assessment-mc",
+          "title": "Avogadro-Konstante",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "calculation",
+          "title": "Masse berechnen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "calculation",
+          "title": "Atomzahl berechnen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "youtube-video",
+          "title": "Das Mol",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Empirische Formel",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Molekularformel",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "self-assessment-mc",
+          "title": "Empirische Formel",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "calculation",
+          "title": "Empirische Formel berechnen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "calculation",
+          "title": "Molekularformel bestimmen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "practice-exercise",
+          "title": "Formelbestimmung Adrenalin",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "learning-content",
+          "title": "Nomenklatur ionischer Verbindungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "self-assessment-mc",
+          "title": "Nomenklatur",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "matching",
+          "title": "Nomenklatur",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "self-assessment",
+          "title": "Bereitschaft für den Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "02-chemie-grundlagen",
@@ -769,7 +2043,588 @@
       ],
       "snippet": "Chemische Reaktionen Reaktionsgleichungen, Massenerhaltung, chemisches Gleichgewicht, Lösungen und Elektrolyte, Fällungsreaktionen, Säuren und Basen, Neutralisation und Redox-Reaktionen. Chemische Rea...",
       "itemCount": 57,
-      "quizCount": 15
+      "quizCount": 15,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Chemische Reaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Einführung in chemische Reaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Reaktionsgleichungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Aggregatzustände in Gleichungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "self-assessment-mc",
+          "title": "Wie nennt man die Zahlen, die in einer Reaktionsgleichung **vor** den chemischen Formeln stehen?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "fill-in-the-blank",
+          "title": "Vervollständigen Sie die Definitionen zu chemischen Reaktionen.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "youtube-video",
+          "title": "Reaktionsgleichungen aufstellen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "learning-content",
+          "title": "Massenerhaltung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "learning-content",
+          "title": "Ausgleichen von Reaktionsgleichungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "learning-content",
+          "title": "Ausgleichen – Beispiele",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "self-assessment-mc",
+          "title": "Welche Koeffizienten gleichen folgende Gleichung korrekt aus? __ Fe + __ Cl₂ → __ FeCl₃",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "calculation",
+          "title": "Gleichen Sie die folgende Reaktionsgleichung aus und geben Sie die Summe aller Koeffizienten an.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "practice-exercise",
+          "title": "Verbrennungsgleichungen aufstellen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "youtube-video",
+          "title": "Reaktionsgleichungen ausgleichen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "learning-content",
+          "title": "Reversible Reaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Dynamisches Gleichgewicht",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "mermaid-diagram",
+          "title": "Konzentrationsverlauf bis zum Gleichgewicht",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "self-assessment-mc",
+          "title": "Was bedeutet \"dynamisches Gleichgewicht\"?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "fill-in-the-blank",
+          "title": "Vervollständigen Sie die Aussagen zum chemischen Gleichgewicht.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "youtube-video",
+          "title": "Chemisches Gleichgewicht",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "learning-content",
+          "title": "Lösungen – Grundlagen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "learning-content",
+          "title": "Starke Elektrolyte",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "learning-content",
+          "title": "Schwache Elektrolyte",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "learning-content",
+          "title": "Nichtelektrolyte",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "mermaid-diagram",
+          "title": "Elektrolyttypen im Vergleich",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "self-assessment-mc",
+          "title": "Welcher der folgenden Stoffe ist ein starker Elektrolyt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "matching",
+          "title": "Ordnen Sie die Stoffe dem korrekten Elektrolyttyp zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "youtube-video",
+          "title": "Ionen und Elektrolyte",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "learning-content",
+          "title": "Metathese-Reaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "learning-content",
+          "title": "Löslichkeitsregeln",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "learning-content",
+          "title": "Ionengleichungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "self-assessment-mc",
+          "title": "Welches der folgenden Salze ist gemäß den Löslichkeitsregeln wahrscheinlich schwerlöslich?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "self-assessment-mc",
+          "title": "Was sind \"Zuschauer-Ionen\" (spectator ions) in einer Ionengleichung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "practice-exercise",
+          "title": "Fällungsreaktionen vorhersagen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "youtube-video",
+          "title": "Fällungsreaktionen und Ionengleichungen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "learning-content",
+          "title": "Säure-Base-Definitionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Starke Säuren",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Schwache Säuren",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "learning-content",
+          "title": "Basen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "learning-content",
+          "title": "Neutralisation",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "self-assessment-mc",
+          "title": "Welche der folgenden Säuren ist eine **schwache** Säure?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "matching",
+          "title": "Ordnen Sie die Substanzen korrekt zu: stark/schwach und Säure/Base.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "ordering",
+          "title": "Ordnen Sie die folgenden Säuren nach ihrer Stärke – von der stärksten zur schwächsten.",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "youtube-video",
+          "title": "Säuren und Basen nach Brønsted",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "learning-content",
+          "title": "Gasentwickelnde Reaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "self-assessment-mc",
+          "title": "Welches Gas entsteht, wenn man Essig (Essigsäure) auf Backpulver (NaHCO₃) tropft?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Redoxreaktionen – Definition",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "learning-content",
+          "title": "Oxidationszahlen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "learning-content",
+          "title": "Oxidationszahlen berechnen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "learning-content",
+          "title": "Halbreaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "learning-content",
+          "title": "Oxidations- und Reduktionsmittel",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "self-assessment-mc",
+          "title": "Was ist Oxidation?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "self-assessment-mc",
+          "title": "Welche Oxidationszahl hat Mangan im Permanganat-Ion (MnO₄⁻)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "calculation",
+          "title": "Bestimmen Sie die Oxidationszahl von Stickstoff in folgenden Verbindungen und berechnen Sie die Summe aller drei Oxidationszahlen.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "matching",
+          "title": "Ordnen Sie die Vorgänge den Begriffen Oxidation oder Reduktion zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "youtube-video",
+          "title": "Redoxreaktionen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "self-assessment",
+          "title": "Sind Sie bereit für den Vorlesungs-Test zu chemischen Reaktionen?",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "02-chemie-grundlagen",
@@ -913,7 +2768,570 @@
       ],
       "snippet": "Gleichungen und Stöchiometrie Stöchiometrische Berechnungen, Ausbeute, begrenzende Reaktanten, Molarität, pH-Wert und Titration. Gleichungen und Stöchiometrie In dieser Vorlesung lernen wir die quanti...",
       "itemCount": 55,
-      "quizCount": 15
+      "quizCount": 15,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Gleichungen und Stöchiometrie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Einführung in Gleichungen und Stöchiometrie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Definition der Stöchiometrie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "self-assessment-mc",
+          "title": "Worauf beruht das Prinzip der Stöchiometrie?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "youtube-video",
+          "title": "Stöchiometrie Grundlagen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "learning-content",
+          "title": "Der 4-Schritte-Plan",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "learning-content",
+          "title": "Beispielrechnung Ammoniumnitrat",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "learning-content",
+          "title": "Mengentabelle zur Bilanzierung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "mermaid-diagram",
+          "title": "Visualisierung des 4-Schritte-Plans",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "self-assessment-mc",
+          "title": "Was ist der stöchiometrische Faktor?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "calculation",
+          "title": "Berechnen Sie die Stoffmenge des Produkts aus der gegebenen Eduktmenge.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "practice-exercise",
+          "title": "Verbrennungsprodukte berechnen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "learning-content",
+          "title": "Ausbeute bei chemischen Reaktionen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "self-assessment-mc",
+          "title": "Wie berechnet man die prozentuale Ausbeute?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "calculation",
+          "title": "Berechnen Sie die prozentuale Ausbeute einer Reaktion.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "youtube-video",
+          "title": "Ausbeute berechnen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Begrenzender Reaktant",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Identifikation des begrenzenden Reaktanten",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "learning-content",
+          "title": "Beispielrechnung mit begrenzem Reaktanten",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "mermaid-diagram",
+          "title": "Visualisierung des begrenzenden Reaktanten",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "self-assessment-mc",
+          "title": "Warum bestimmt der begrenzende Reaktant die maximale Produktmenge?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "fill-in-the-blank",
+          "title": "Vervollständigen Sie die Aussagen zum begrenzenden Reaktanten.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "calculation",
+          "title": "Identifizieren Sie den begrenzenden Reaktanten und berechnen Sie die Produktmenge.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "practice-exercise",
+          "title": "Überschuss berechnen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "youtube-video",
+          "title": "Begrenzender Reaktant",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Gravimetrische Analyse",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Verbrennungsanalyse",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "self-assessment-mc",
+          "title": "Woher stammt bei der Verbrennungsanalyse der Kohlenstoff im aufgefangenen CO₂?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "calculation",
+          "title": "Bestimmen Sie die empirische Formel aus Verbrennungsdaten.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "youtube-video",
+          "title": "Verhältnisformel berechnen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "learning-content",
+          "title": "Molarität – Konzentration von Lösungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "learning-content",
+          "title": "Anwendung der Formel n = c × V",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "learning-content",
+          "title": "Verdünnung von Lösungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "mermaid-diagram",
+          "title": "Visualisierung der Verdünnung",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "self-assessment-mc",
+          "title": "Welche Einheit hat die Molarität?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "fill-in-the-blank",
+          "title": "Vervollständigen Sie die Aussage zur Verdünnung.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "calculation",
+          "title": "Berechnen Sie die Masse für die Herstellung einer Lösung.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "calculation",
+          "title": "Berechnen Sie das Verdünnungsvolumen.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "youtube-video",
+          "title": "Molarität und Verdünnung",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "learning-content",
+          "title": "pH-Wert Definition",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "learning-content",
+          "title": "pH-Wert Berechnungen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "self-assessment-mc",
+          "title": "Eine Lösung hat einen pH-Wert von 3. Ist sie sauer oder basisch?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "calculation",
+          "title": "Berechnen Sie den pH-Wert aus der Konzentration.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "calculation",
+          "title": "Berechnen Sie die H₃O⁺-Konzentration aus dem pH-Wert.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "youtube-video",
+          "title": "pH-Wert berechnen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Titration – Prinzip und Durchführung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Titration – Rechenbeispiel",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "learning-content",
+          "title": "Spektrophotometrie – Lambert-Beer-Gesetz",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "mermaid-diagram",
+          "title": "Titrationsaufbau",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "self-assessment-mc",
+          "title": "Was passiert am Äquivalenzpunkt einer Säure-Base-Titration?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "self-assessment-mc",
+          "title": "Was beschreibt das Lambert-Beer-Gesetz?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "matching",
+          "title": "Ordnen Sie die analytischen Methoden den korrekten Anwendungen zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "calculation",
+          "title": "Berechnen Sie die Konzentration aus Titrationsdaten.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "youtube-video",
+          "title": "Titration erklärt",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "self-assessment",
+          "title": "Bereitschaftstest",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "02-chemie-grundlagen",
@@ -1036,7 +3454,849 @@
       ],
       "snippet": "Thermodynamik, Enthalpie & Kalorimetrie Energieumsatz bei chemischen Reaktionen, innere Energie, System und Umgebung, exotherme und endotherme Prozesse, Wärmekapazität, Phasenübergänge, Erster Hauptsa...",
       "itemCount": 83,
-      "quizCount": 12
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Thermodynamik, Enthalpie & Kalorimetrie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "learning-content",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "self-assessment-mc",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "matching",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "fill-in-the-blank",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "practice-exercise",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "youtube-video",
+          "title": "Grundlagen von Energie und Chemie",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "learning-content",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "learning-content",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "learning-content",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "mermaid-diagram",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "self-assessment-mc",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "matching",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "fill-in-the-blank",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "practice-exercise",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "youtube-video",
+          "title": "Innere Energie und Systemgrenzen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "learning-content",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "learning-content",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "learning-content",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "self-assessment-mc",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "self-assessment-mc",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "fill-in-the-blank",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "ordering",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "practice-exercise",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "calculation",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "youtube-video",
+          "title": "Wärmekapazität und spezifische Wärme",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "learning-content",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "learning-content",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "mermaid-diagram",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "self-assessment-mc",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "self-assessment-mc",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "ordering",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "matching",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "practice-exercise",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "calculation",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "youtube-video",
+          "title": "Energie bei Phasenübergängen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "learning-content",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "learning-content",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "self-assessment-mc",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "self-assessment-mc",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "fill-in-the-blank",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "matching",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "practice-exercise",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "youtube-video",
+          "title": "Der Erste Hauptsatz und Enthalpie",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "learning-content",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "learning-content",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 57,
+          "type": "learning-content",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 58,
+          "type": "learning-content",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 59,
+          "type": "learning-content",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 60,
+          "type": "mermaid-diagram",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 61,
+          "type": "self-assessment-mc",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 62,
+          "type": "self-assessment-mc",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 63,
+          "type": "fill-in-the-blank",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 64,
+          "type": "matching",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 65,
+          "type": "calculation",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 66,
+          "type": "practice-exercise",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 67,
+          "type": "youtube-video",
+          "title": "Satz von Hess und Standard-Bildungsenthalpien",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 68,
+          "type": "learning-content",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 69,
+          "type": "learning-content",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 70,
+          "type": "learning-content",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 71,
+          "type": "self-assessment-mc",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 72,
+          "type": "self-assessment-mc",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 73,
+          "type": "fill-in-the-blank",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 74,
+          "type": "calculation",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 75,
+          "type": "youtube-video",
+          "title": "Kalorimetrie (Experimentelle Messung)",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 76,
+          "type": "learning-content",
+          "title": "Anwendung Ernährungswissenschaft",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 77,
+          "type": "learning-content",
+          "title": "Anwendung Ernährungswissenschaft",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 78,
+          "type": "self-assessment-mc",
+          "title": "Anwendung Ernährungswissenschaft",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 79,
+          "type": "matching",
+          "title": "Anwendung Ernährungswissenschaft",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 80,
+          "type": "practice-exercise",
+          "title": "Anwendung Ernährungswissenschaft",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 81,
+          "type": "calculation",
+          "title": "Anwendung Ernährungswissenschaft",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 82,
+          "type": "self-assessment",
+          "title": "Selbsttest vor dem Vorlesungs-Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
     },
     {
       "moduleId": "02-chemie-grundlagen",
@@ -1219,7 +4479,778 @@
       ],
       "snippet": "Die Elektronenstruktur der Atome Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie El...",
       "itemCount": 76,
-      "quizCount": 12
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Die Elektronenstruktur der Atome",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Licht als Welle",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Wellengrößen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Lichtgeschwindigkeit und Wellenformel",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "learning-content",
+          "title": "Das elektromagnetische Spektrum",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "mermaid-diagram",
+          "title": "Das elektromagnetische Spektrum",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "learning-content",
+          "title": "Beispielrechnung: Wellenlänge und Frequenz",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "self-assessment-mc",
+          "title": "Wellenlänge und Frequenz",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "self-assessment-mc",
+          "title": "Energie im EM-Spektrum",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "matching",
+          "title": "Elektromagnetisches Spektrum",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "ordering",
+          "title": "Energie im EM-Spektrum",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "calculation",
+          "title": "Frequenzberechnung",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "youtube-video",
+          "title": "Elektromagnetisches Spektrum",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "learning-content",
+          "title": "Max Planck und die Quanten",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "learning-content",
+          "title": "Die Energie-Frequenz-Beziehung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Der Photoelektrische Effekt",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Beispielrechnung: Photonenenergie",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "self-assessment-mc",
+          "title": "Definition eines Quants",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "self-assessment-mc",
+          "title": "Photoelektrischer Effekt",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "fill-in-the-blank",
+          "title": "Planck-Formel",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "matching",
+          "title": "Energie und Wellenlänge",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "calculation",
+          "title": "Photonenenergie berechnen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "youtube-video",
+          "title": "Plancksches Wirkungsquantum",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "learning-content",
+          "title": "Linienspektren von Atomen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Die elektrische Essiggurke",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Bohrs Atommodell",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Energiesprünge berechnen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "mermaid-diagram",
+          "title": "Energieniveaus im Wasserstoffatom",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "learning-content",
+          "title": "Grenzen des Bohr-Modells",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "self-assessment-mc",
+          "title": "Linienspektren",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "self-assessment-mc",
+          "title": "Absorption vs. Emission",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "self-assessment-mc",
+          "title": "Grenzen des Bohr-Modells",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "ordering",
+          "title": "Energieübergänge",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "calculation",
+          "title": "Wellenlänge eines Übergangs",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "youtube-video",
+          "title": "Bohrsches Atommodell",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "learning-content",
+          "title": "De Broglie und Materiewellen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Die Heisenberg-Unschärferelation",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Schrödinger und die Wellenfunktion",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "self-assessment-mc",
+          "title": "Heisenberg-Unschärfe",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "self-assessment-mc",
+          "title": "Definition Orbital",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "fill-in-the-blank",
+          "title": "De-Broglie-Gleichung",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "matching",
+          "title": "Bohr vs. Quantenmechanik",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "practice-exercise",
+          "title": "Warum bemerken wir Materiewellen nicht?",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "youtube-video",
+          "title": "Heisenbergsche Unschärferelation",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "learning-content",
+          "title": "Die Hauptquantenzahl n",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Die Nebenquantenzahl l",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Die Magnetquantenzahl mₗ",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "learning-content",
+          "title": "Übersicht der Quantenzahlen",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "learning-content",
+          "title": "s-Orbitale",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "learning-content",
+          "title": "p-Orbitale",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "learning-content",
+          "title": "d- und f-Orbitale",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "mermaid-diagram",
+          "title": "Orbitalformen",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "self-assessment-mc",
+          "title": "s-Orbital Form",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "self-assessment-mc",
+          "title": "Anzahl p-Orbitale",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "self-assessment-mc",
+          "title": "Hauptquantenzahl",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "matching",
+          "title": "Quantenzahlen und Eigenschaften",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "ordering",
+          "title": "Orbitalgröße",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 57,
+          "type": "fill-in-the-blank",
+          "title": "Unterschalen-Bezeichnungen",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 58,
+          "type": "calculation",
+          "title": "Orbitale in einer Schale",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 59,
+          "type": "youtube-video",
+          "title": "Orbitale und Quantenzahlen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 60,
+          "type": "learning-content",
+          "title": "Der Elektronenspin",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 61,
+          "type": "learning-content",
+          "title": "Das Pauli-Prinzip",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 62,
+          "type": "learning-content",
+          "title": "Das Aufbauprinzip",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 63,
+          "type": "mermaid-diagram",
+          "title": "Energiereihenfolge der Orbitale",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 64,
+          "type": "learning-content",
+          "title": "Die Hundsche Regel",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 65,
+          "type": "learning-content",
+          "title": "Elektronenkonfiguration schreiben",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 66,
+          "type": "learning-content",
+          "title": "Kurzschreibweise mit Edelgaskern",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 67,
+          "type": "self-assessment-mc",
+          "title": "Pauli-Prinzip",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 68,
+          "type": "self-assessment-mc",
+          "title": "Aufbaureihenfolge",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 69,
+          "type": "self-assessment-mc",
+          "title": "Hundsche Regel",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 70,
+          "type": "matching",
+          "title": "Element und Konfiguration",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 71,
+          "type": "ordering",
+          "title": "Befüllungsreihenfolge",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 72,
+          "type": "fill-in-the-blank",
+          "title": "Pauli-Prinzip und Hund-Regel",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 73,
+          "type": "practice-exercise",
+          "title": "Elektronenkonfiguration aufstellen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 74,
+          "type": "calculation",
+          "title": "Ungepaarte Elektronen bestimmen",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 75,
+          "type": "self-assessment",
+          "title": "Bereitschaft für den Vorlesungs-Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
     }
   ]
 }

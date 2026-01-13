@@ -174,11 +174,28 @@ function createSnippet(text, maxLength = 200) {
  * @param {Object} bundle - Lecture bundle
  * @param {string} moduleId - Module ID
  * @param {string} lectureId - Lecture ID
- * @returns {Object} Search entry
+ * @returns {Object} Search entry with items
  */
 function processBundle(bundle, moduleId, lectureId) {
   const allText = [];
   const topics = new Set();
+  const items = []; // Individual searchable items
+
+  // Type keyword mapping for search
+  const typeKeywords = {
+    'youtube-video': ['video', 'youtube', 'film', 'clip'],
+    'learning-content': ['lerninhalt', 'inhalt', 'text'],
+    'self-assessment': ['selbsttest', 'checkliste', 'assessment'],
+    'self-assessment-mc': ['selbsttest', 'quiz', 'frage'],
+    'mermaid-diagram': ['diagramm', 'grafik', 'flowchart', 'schema'],
+    'multiple-choice': ['quiz', 'frage', 'test', 'multiple-choice'],
+    'multiple-choice-multiple': ['quiz', 'frage', 'test', 'multiple-choice'],
+    'fill-in-the-blank': ['lückentext', 'übung', 'ausfüllen'],
+    matching: ['zuordnung', 'matching', 'übung'],
+    ordering: ['sortierung', 'reihenfolge', 'übung'],
+    calculation: ['berechnung', 'rechnung', 'formel'],
+    'practice-exercise': ['übung', 'praxis', 'aufgabe']
+  };
 
   // Add metadata
   if (bundle.metadata?.topic) {
@@ -189,8 +206,9 @@ function processBundle(bundle, moduleId, lectureId) {
     allText.push(bundle.metadata.description);
   }
 
-  // Process items
-  for (const item of bundle.items || []) {
+  // Process items - also create individual item entries
+  for (let i = 0; i < (bundle.items || []).length; i++) {
+    const item = bundle.items[i];
     if (item.topic) {
       topics.add(item.topic);
     }
@@ -203,6 +221,19 @@ function processBundle(bundle, moduleId, lectureId) {
     if (item.checkpoints) {
       allText.push(item.checkpoints.join(' '));
     }
+
+    // Create individual item entry for type-based search
+    const itemType = item.type || 'learning-content';
+    const itemKeywords = typeKeywords[itemType] || [];
+    const itemTitle =
+      item.topic || item.title || item.question || `Item ${i + 1}`;
+
+    items.push({
+      index: i,
+      type: itemType,
+      title: itemTitle,
+      typeKeywords: itemKeywords
+    });
   }
 
   // Process quiz questions
@@ -230,7 +261,8 @@ function processBundle(bundle, moduleId, lectureId) {
     keywords: keywords.slice(0, 100), // Limit keywords
     snippet: createSnippet(markdownToPlainText(allText.slice(0, 3).join(' '))),
     itemCount: bundle.items?.length || 0,
-    quizCount: bundle.quiz?.length || 0
+    quizCount: bundle.quiz?.length || 0,
+    items: items // Individual items for type-based filtering
   };
 }
 
