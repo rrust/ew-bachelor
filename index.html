@@ -288,44 +288,53 @@
       </div>
     </div>
 
-    <!-- Achievement Detail Modal -->
+    <!-- Achievement Detail Modal (Cheat-Sheets) -->
     <div
       id="achievement-modal"
       class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
     >
       <div
-        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden"
+        id="achievement-modal-container"
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden transition-all duration-200"
       >
         <div
-          class="flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-700"
+          class="flex justify-between items-center p-4 md:p-6 border-b border-gray-200 dark:border-gray-700"
         >
-          <div class="flex items-center space-x-3">
-            <span
-              id="modal-achievement-icon"
-              data-icon="achievement"
-              data-icon-class="w-8 h-8 text-yellow-500"
-            ></span>
-            <h3 id="modal-achievement-title" class="text-2xl font-bold">
-              Achievement Title
-            </h3>
+          <h3 id="modal-achievement-title" class="text-lg md:text-2xl font-bold">
+            Achievement Title
+          </h3>
+          <div class="flex items-center gap-2">
+            <!-- Fullscreen Toggle Button -->
+            <button
+              id="fullscreen-achievement-modal"
+              class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 p-1"
+              title="Vollbild"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+              </svg>
+            </button>
+            <button
+              id="close-achievement-modal"
+              class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
+            >
+              ×
+            </button>
           </div>
-          <button
-            id="close-achievement-modal"
-            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
-          >
-            ×
-          </button>
         </div>
-        <div class="p-6 overflow-y-auto max-h-[70vh]">
+        <div class="p-4 md:p-6 overflow-y-auto max-h-[70vh]">
           <div
             id="modal-achievement-content"
-            class="prose dark:prose-invert max-w-none"
+            class="prose prose-sm md:prose dark:prose-invert max-w-none achievement-content"
           >
             <!-- Achievement content will be rendered here -->
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Hidden icon holder for JS compatibility -->
+    <span id="modal-achievement-icon" class="hidden"></span>
 
     <!-- Validator Modal -->
     <div
