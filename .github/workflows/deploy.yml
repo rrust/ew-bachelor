@@ -10,11 +10,6 @@ on:
         required: false
         default: false
         type: boolean
-      deploy_branch:
-        description: 'Branch to deploy (leave empty for current branch)'
-        required: false
-        default: ''
-        type: string
 
 permissions:
   contents: write
@@ -36,7 +31,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.deploy_branch || github.ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
@@ -129,7 +123,7 @@ jobs:
         run: |
           echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Branch:** ${{ inputs.deploy_branch || github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Bundle Generation:** ${{ steps.should-generate.outputs.generate == 'true' && '✅ Executed' || '⏭️ Skipped' }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Content Committed:** ${{ steps.git-check.outputs.changed == 'true' && '✅ Yes' || '➖ No changes' }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Deployed URL:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
