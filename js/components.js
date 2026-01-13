@@ -37,6 +37,15 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3 min-w-0">
+            <!-- Burger Menu (links) -->
+            <button
+              id="menu-toggle-lecture"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
+              title="Menü"
+              onclick="openOverlayMenu('${idSuffix}')"
+            >
+              ${Icons.get('listBullet')}
+            </button>
             <button
               id="back-to-modules-button"
               class="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold p-2 rounded-md transition duration-300 flex-shrink-0 flex items-center justify-center"
@@ -62,14 +71,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             >
               ${Icons.get('search')}
             </button>
-            <button
-              id="menu-toggle-lecture"
-              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-              title="Menü"
-              onclick="openOverlayMenu('${idSuffix}')"
-            >
-              ${Icons.get('menuDots')}
-            </button>
           </div>
         </div>
       </div>
@@ -78,8 +79,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       <div id="overlay-menu${idSuffix}" class="hidden fixed inset-0 z-50">
         <!-- Backdrop -->
         <div class="absolute inset-0 bg-black bg-opacity-50" onclick="closeOverlayMenu('${idSuffix}')"></div>
-        <!-- Menu Panel -->
-        <div class="absolute right-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
+        <!-- Menu Panel (links) -->
+        <div class="absolute left-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
           <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
             <span class="font-bold text-lg">Menü</span>
             <button onclick="closeOverlayMenu('${idSuffix}')" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -172,12 +173,23 @@ function createAppHeader(view = 'moduleMap', options = {}) {
 
   header.innerHTML = `
     <div class="container mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
-      <a href="#/modules" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-        ${studyIcon ? `<span class="flex-shrink-0">${studyIcon}</span>` : ''}
-        <h1 class="text-sm md:text-xl font-bold text-gray-800 dark:text-gray-100">
-          ${studyTitle}
-        </h1>
-      </a>
+      <div class="flex items-center gap-2">
+        <!-- Burger Menu (links) -->
+        <button
+          id="menu-toggle${idSuffix}"
+          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
+          title="Menü"
+          onclick="openOverlayMenu('${idSuffix}')"
+        >
+          ${Icons.get('listBullet')}
+        </button>
+        <a href="#/modules" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          ${studyIcon ? `<span class="flex-shrink-0">${studyIcon}</span>` : ''}
+          <h1 class="text-sm md:text-xl font-bold text-gray-800 dark:text-gray-100">
+            ${studyTitle}
+          </h1>
+        </a>
+      </div>
       ${
         showGreeting
           ? `
@@ -259,15 +271,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
         >
           ${Icons.get('search')}
         </button>
-        <!-- Menu Toggle -->
-        <button
-          id="menu-toggle${idSuffix}"
-          class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
-          title="Menü"
-          onclick="openOverlayMenu('${idSuffix}')"
-        >
-          ${Icons.get('menuDots')}
-        </button>
       </nav>
     </div>
     
@@ -275,8 +278,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
     <div id="overlay-menu${idSuffix}" class="hidden fixed inset-0 z-50">
       <!-- Backdrop -->
       <div class="absolute inset-0 bg-black bg-opacity-50" onclick="closeOverlayMenu('${idSuffix}')"></div>
-      <!-- Menu Panel -->
-      <div class="absolute right-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
+      <!-- Menu Panel (links) -->
+      <div class="absolute left-0 top-0 h-full w-72 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300">
         <div class="p-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
           <span class="font-bold text-lg">Menü</span>
           <button onclick="closeOverlayMenu('${idSuffix}')" class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
