@@ -25,14 +25,17 @@
 ⚠️ **VERBINDLICHER WORKFLOW - Keine Schritte überspringen!**
 
 ### Phase 1: Rohmaterial (bereits erledigt)
+
 Material liegt in `studies-material/{studyId}/NN-modul/NN-vorlesung/`
 
 ### Phase 2: CONTENT_PLAN.md erstellen/prüfen
+
 Plan definiert exakte Struktur der zu generierenden Dateien
 
 ### Phase 3: Content generieren NACH dem CONTENT_PLAN
 
 ⚠️ **CONTENT_PLAN.md ist VERBINDLICH!**
+
 - Erstelle **EXAKT** die Dateien aus dem CONTENT_PLAN
 - Verwende **EXAKT** die dort definierten Typen und Dateinamen
 - Erfinde **KEINE eigene Struktur** - der Plan ist das Gesetz

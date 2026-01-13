@@ -1,6 +1,6 @@
 /**
  * App Update Manager
- * 
+ *
  * Handles:
  * - Showing update banner when new SW version is available
  * - App reset functionality (clear cache, keep localStorage)
@@ -40,7 +40,10 @@ const AppUpdate = {
         registration.addEventListener('updatefound', () => {
           const newWorker = registration.installing;
           newWorker.addEventListener('statechange', () => {
-            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            if (
+              newWorker.state === 'installed' &&
+              navigator.serviceWorker.controller
+            ) {
               this.showUpdateBanner(newWorker);
             }
           });
@@ -79,8 +82,8 @@ const AppUpdate = {
   async resetApp() {
     const confirmed = confirm(
       'App-Cache wird gelöscht und die Seite neu geladen.\n\n' +
-      'Dein Lernfortschritt bleibt erhalten!\n\n' +
-      'Fortfahren?'
+        'Dein Lernfortschritt bleibt erhalten!\n\n' +
+        'Fortfahren?'
     );
 
     if (!confirmed) return;
@@ -106,7 +109,7 @@ const AppUpdate = {
 
       // 3. Clear IndexedDB (downloaded content, but NOT localStorage!)
       if ('indexedDB' in window) {
-        const databases = await indexedDB.databases?.() || [];
+        const databases = (await indexedDB.databases?.()) || [];
         for (const db of databases) {
           if (db.name && db.name.includes('ew-lernapp')) {
             indexedDB.deleteDatabase(db.name);
@@ -117,7 +120,7 @@ const AppUpdate = {
 
       // Note: localStorage is NOT cleared - this preserves learning progress!
       console.log('[AppUpdate] Reset complete, reloading...');
-      
+
       // 4. Hard reload
       window.location.reload(true);
     } catch (error) {
