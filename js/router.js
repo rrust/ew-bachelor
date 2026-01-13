@@ -22,6 +22,7 @@ const ROUTE_PATTERNS = {
  */
 function parseURL() {
   const fullHash = window.location.hash.slice(1); // Remove #
+
   if (!fullHash || fullHash === '/') return null;
 
   // Separate path from query string BEFORE splitting

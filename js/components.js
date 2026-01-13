@@ -31,6 +31,11 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Special header for lecture list view with back button
   if (view === 'lecture') {
     const idSuffix = '-lecture';
+    const moduleId = options.moduleId || '';
+    const trainingModuleUrl = moduleId
+      ? `#/training?module=${moduleId}`
+      : '#/training';
+
     header.innerHTML = `
       <div class="flex items-center">
         <!-- Burger Menu (außerhalb Container, ganz links) -->
@@ -68,6 +73,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               id="header-dev-badge-lecture"
               class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white"
             >DEV</span>
+            <!-- Training Button (contextual) -->
+            <button
+              onclick="window.location.hash='${trainingModuleUrl}'"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
+              title="Training für dieses Modul"
+            >
+              ${Icons.get('token')}
+            </button>
             <button
               id="nav-search-lecture"
               class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-gray-600 dark:text-gray-400"
@@ -93,24 +106,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Buttons (context-specific for module) -->
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
-      options.moduleId || ''
-    }';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
-              title="Training für dieses Modul"
-            >
-              TRAIN (Modul)
-            </button>
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
-              title="Training für alle Tests"
-            >
-              TRAIN (Alle)
-            </button>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -178,6 +173,20 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Breadcrumb header for lecture player view
   if (view === 'lecturePlayer') {
     const idSuffix = '-lecturePlayer';
+    const moduleId = options.moduleId || '';
+    const lectureId = options.lectureId || '';
+
+    // DEBUG
+    const trainingLectureUrl =
+      moduleId && lectureId
+        ? `#/training?module=${moduleId}&lecture=${lectureId}`
+        : moduleId
+        ? `#/training?module=${moduleId}`
+        : '#/training';
+    const trainingModuleUrl = moduleId
+      ? `#/training?module=${moduleId}`
+      : '#/training';
+
     const moduleIcon = options.moduleIcon
       ? Icons.get(
           options.moduleIcon,
@@ -260,6 +269,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             >
               ${Icons.get('exam', 'w-5 h-5')}
             </button>
+            <!-- Training Button (contextual) -->
+            <button
+              onclick="window.location.hash='${trainingLectureUrl}'"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
+              title="Training für diese Vorlesung"
+            >
+              ${Icons.get('token')}
+            </button>
             <!-- Search -->
             <button
               id="nav-search${idSuffix}"
@@ -286,33 +303,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Buttons (context-specific for lecture player) -->
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
-      options.moduleId || ''
-    }&lecture=${options.lectureId || ''}';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
-              title="Training für diese Vorlesung"
-            >
-              TRAIN (Vorlesung)
-            </button>
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
-      options.moduleId || ''
-    }';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-400 hover:bg-blue-500 text-white font-medium transition text-center text-sm"
-              title="Training für dieses Modul"
-            >
-              TRAIN (Modul)
-            </button>
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
-              title="Training für alle Tests"
-            >
-              TRAIN (Alle)
-            </button>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -380,6 +370,17 @@ function createAppHeader(view = 'moduleMap', options = {}) {
   // Header for lecture overview view (similar to lecturePlayer but with back-to-player button)
   if (view === 'lectureOverview') {
     const idSuffix = '-lectureOverview';
+    const moduleId = options.moduleId || '';
+    const lectureId = options.lectureId || '';
+    const trainingLectureUrl =
+      moduleId && lectureId
+        ? `#/training?module=${moduleId}&lecture=${lectureId}`
+        : moduleId
+        ? `#/training?module=${moduleId}`
+        : '#/training';
+    const trainingModuleUrl = moduleId
+      ? `#/training?module=${moduleId}`
+      : '#/training';
 
     header.className = 'bg-white dark:bg-gray-800 shadow-sm flex-shrink-0';
     header.innerHTML = `
@@ -448,6 +449,14 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             >
               ${Icons.get('close', 'w-5 h-5')}
             </button>
+            <!-- Training Button (contextual) -->
+            <button
+              onclick="window.location.hash='${trainingLectureUrl}'"
+              class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
+              title="Training für diese Vorlesung"
+            >
+              ${Icons.get('token')}
+            </button>
             <!-- Search -->
             <button
               id="nav-search${idSuffix}"
@@ -474,33 +483,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <!-- Training Buttons (context-specific for lecture overview) -->
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
-      options.moduleId || ''
-    }&lecture=${options.lectureId || ''}';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center"
-              title="Training für diese Vorlesung"
-            >
-              TRAIN (Vorlesung)
-            </button>
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training?module=${
-      options.moduleId || ''
-    }';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-400 hover:bg-blue-500 text-white font-medium transition text-center text-sm"
-              title="Training für dieses Modul"
-            >
-              TRAIN (Modul)
-            </button>
-            <button
-              onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
-              class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium transition text-center text-sm"
-              title="Training für alle Tests"
-            >
-              TRAIN (Alle)
-            </button>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <!-- Theme Toggle -->
             <button
               id="theme-toggle-menu${idSuffix}"
@@ -620,8 +602,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             </button>
           </div>
           <nav class="p-4 space-y-2">
-            <button onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';" class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold transition text-center">TRAIN</button>
-            <hr class="border-gray-200 dark:border-gray-700 my-2">
             <button id="theme-toggle-menu${idSuffix}" class="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition text-left" onclick="if(window.toggleTheme) window.toggleTheme(); updateMenuThemeIcons(this.closest('#overlay-menu${idSuffix}'));">
               <span class="theme-icon-light hidden">${Icons.get(
                 'sun',
@@ -708,15 +688,18 @@ function createAppHeader(view = 'moduleMap', options = {}) {
             id="header-dev-badge${idSuffix}"
             class="hidden text-xs font-bold px-2 py-0.5 rounded bg-orange-500 text-white hover:bg-orange-600 transition-colors"
           >DEV</a>
-          <!-- Training Mode Button -->
+          <!-- Training Mode Button (Token Icon) -->
           <button
             onclick="window.location.hash='#/training'"
-            class="text-xs font-bold px-2 py-0.5 rounded ${
+            class="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
               view === 'training'
-                ? 'bg-blue-600 text-white'
-                : 'bg-blue-500 text-white hover:bg-blue-600'
-            } transition-colors"
-          >TRAIN</button>
+                ? 'text-blue-600 dark:text-blue-400'
+                : 'text-blue-500'
+            }"
+            title="Training (alle Tests)"
+          >
+            ${Icons.get('token')}
+          </button>
           <!-- Streak Display -->
           ${
             showStreak
@@ -788,18 +771,6 @@ function createAppHeader(view = 'moduleMap', options = {}) {
           </button>
         </div>
         <nav class="p-4 space-y-2">
-          <!-- Training Button (prominent) -->
-          <button
-            onclick="closeOverlayMenu('${idSuffix}'); window.location.hash = '#/training';"
-            class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg ${
-              view === 'training'
-                ? 'bg-blue-600 text-white'
-                : 'bg-blue-500 hover:bg-blue-600 text-white'
-            } font-bold transition text-center"
-          >
-            TRAIN
-          </button>
-          <hr class="border-gray-200 dark:border-gray-700 my-2">
           <!-- Theme Toggle -->
           <button
             id="theme-toggle-menu${idSuffix}"

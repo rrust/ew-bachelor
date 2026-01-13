@@ -589,7 +589,7 @@ function renderTrainingQuestion(animateIn = false) {
       <div class="mb-4 flex items-center flex-wrap gap-2 text-xs">
         <!-- Training scope -->
         <span class="inline-flex items-center gap-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded-full">
-          🎯 ${escapeHtml(contextDesc)}
+          ${escapeHtml(contextDesc)}
           ${
             isFiltered
               ? `<button 

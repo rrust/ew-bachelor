@@ -311,11 +311,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Special handling for training - initialize training view
+    // Note: Don't call initTrainingView here as it's called from navigateFromURL with context
+    // Also don't update URL here as it would lose query parameters
     if (viewId === 'training') {
-      if (window.initTrainingView) {
-        window.initTrainingView();
+      // Only init if not already initialized by navigateFromURL
+      // This handles direct showView('training') calls without URL navigation
+      if (!window.location.hash.includes('/training')) {
+        if (window.initTrainingView) {
+          window.initTrainingView();
+        }
+        updateURL('/training', 'Training');
       }
-      updateURL('/training', 'Training');
     }
   }
 
