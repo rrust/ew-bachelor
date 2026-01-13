@@ -1,40 +1,38 @@
 ---
 type: 'learning-content'
-topic: 'Energieformen'
+topic: 'Grundlagen von Energie und Chemie'
 sourceRefs:
   - sourceId: 'vorlesung-k5'
-    pages: '3-5'
+    pages: 'Kap 1.2'
 ---
 
-## Energie und Wärme: Präzise Definitionen
+# Definitionen von Energie und Wärme
 
-Um thermochemische Prozesse physikalisch korrekt zu beschreiben, müssen wir die Begriffe **Energie** und **Wärme** präzise definieren.
+Um thermochemische Prozesse physikalisch korrekt zu beschreiben, müssen wir die Begriffe Energie und Wärme präzise definieren.
 
-### Was ist Energie?
+## Grundlegende Definitionen
 
-> **Energie** ist die Fähigkeit, Arbeit zu leisten oder Wärme zu übertragen.
+| Begriff     | Definition                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Energie** | Die Fähigkeit, Arbeit zu leisten oder Wärme zu übertragen                                                                 |
+| **Wärme**   | Eine Form von Energie, die zwischen zwei Objekten **ausschließlich aufgrund ihrer unterschiedlichen Temperaturen** fließt |
 
-Energie tritt in vielen Formen auf:
-- Kinetische Energie (Bewegung)
-- Potentielle Energie (Lage, chemische Bindungen)
-- Wärmeenergie (thermische Energie)
-- Elektrische Energie
-- Lichtenergie (elektromagnetische Strahlung)
+## Wärme ist kein "Stoff"
 
-### Was ist Wärme?
+Ein wichtiges Konzept: Wärme ist keine Substanz, die in einem Körper gespeichert ist! Wärme existiert nur während des **Transfers** von Energie zwischen Objekten unterschiedlicher Temperatur.
 
-> **Wärme** ist eine Form von Energie, die zwischen zwei Objekten **ausschließlich aufgrund ihrer unterschiedlichen Temperaturen** fließt.
+**Wichtig:** Wärme fließt immer spontan von warm nach kalt - niemals umgekehrt.
 
-**Wichtige Eigenschaften:**
-- Wärme fließt immer spontan von **warm nach kalt**
-- Wärme ist keine gespeicherte Energie, sondern ein **Energietransfer**
-- Das Symbol für Wärme ist $q$
+## Weitere Energieformen
 
-### Der Unterschied
+Neben Wärme gibt es viele andere Energieformen:
 
-| Begriff     | Beschreibung                                  |
-| ----------- | --------------------------------------------- |
-| **Energie** | Gespeicherte Fähigkeit, etwas zu bewirken     |
-| **Wärme**   | Energie *in Bewegung* aufgrund von $\Delta T$ |
+- **Lichtenergie** (elektromagnetische Strahlung)
+- **Elektrische Energie** (bewegte Ladungsträger)
+- **Kinetische Energie** (Bewegungsenergie)
+- **Potentielle Energie** (Lageenergie)
+- **Chemische Energie** (in Bindungen gespeichert)
 
-> ⚠️ **Häufiger Fehler:** Im Alltag sagen wir "das Wasser hat viel Wärme". Physikalisch korrekt wäre: "Das Wasser hat eine hohe thermische Energie" oder "Das Wasser hat eine hohe Temperatur".
+In der Thermochemie konzentrieren wir uns besonders auf die **kinetische** und **potentielle** Energie auf molekularer Ebene sowie deren Umwandlung in Wärme.
+
+> **Für Ernährungswissenschaftler:** Der "Brennwert" von Lebensmitteln gibt an, wie viel Energie bei der vollständigen Oxidation der Nährstoffe freigesetzt wird - eine direkte Anwendung der Thermochemie!

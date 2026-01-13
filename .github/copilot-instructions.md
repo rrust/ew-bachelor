@@ -16,7 +16,13 @@
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator
 - Use `***` for horizontal lines or just `##` headings for visual separation
 - `correctAnswer` must exactly match an option
-- ⚠️ **Keine ASCII-Art in Code-Blöcken** - Die App rendert Code-Blöcke als Code. Verwende stattdessen Tabellen, Listen oder Mermaid-Diagramme für Visualisierungen.
+- ⚠️ **NIEMALS ASCII-Art oder Box-Zeichnungen verwenden!** Dies ist VERBOTEN:
+  ```
+  ┌────────┐      +--------+      |  Box  |
+  │  Box   │  OR  |  Box   |  OR  +-------+
+  └────────┘      +--------+
+  ```
+  **Stattdessen verwenden:** Tabellen, Listen, Blockquotes (`>`), Mermaid-Diagramme, oder einfache Textbeschreibungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen** - Erlaubt: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT: `xychart-beta`, `timeline`, `mindmap`.
 - ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 
@@ -25,14 +31,17 @@
 ⚠️ **VERBINDLICHER WORKFLOW - Keine Schritte überspringen!**
 
 ### Phase 1: Rohmaterial (bereits erledigt)
+
 Material liegt in `studies-material/{studyId}/NN-modul/NN-vorlesung/`
 
 ### Phase 2: CONTENT_PLAN.md erstellen/prüfen
+
 Plan definiert exakte Struktur der zu generierenden Dateien
 
 ### Phase 3: Content generieren NACH dem CONTENT_PLAN
 
 ⚠️ **CONTENT_PLAN.md ist VERBINDLICH!**
+
 - Erstelle **EXAKT** die Dateien aus dem CONTENT_PLAN
 - Verwende **EXAKT** die dort definierten Typen und Dateinamen
 - Erfinde **KEINE eigene Struktur** - der Plan ist das Gesetz

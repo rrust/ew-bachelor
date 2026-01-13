@@ -1,0 +1,21 @@
+---
+type: 'fill-in-the-blank'
+topic: 'Satz von Hess und Standard-Bildungsenthalpien'
+question: 'Vervollständige die Aussagen zum Satz von Hess:'
+text: 'Der Satz von Hess besagt, dass die Enthalpieänderung einer Reaktion nur vom {{Anfangs}}- und {{End}}zustand abhängt, nicht vom {{Weg}}. Enthalpie ist eine {{Zustandsgröße}}. Die Reaktionsenthalpie berechnet sich als Summe der Bildungsenthalpien der {{Produkte}} minus der Summe der Bildungsenthalpien der {{Edukte}}.'
+blanks:
+  - id: 'Anfangs'
+    answer: 'Anfangs'
+  - id: 'End'
+    answer: 'End'
+  - id: 'Weg'
+    answer: 'Weg'
+  - id: 'Zustandsgröße'
+    answer: 'Zustandsgröße'
+  - id: 'Produkte'
+    answer: 'Produkte'
+  - id: 'Edukte'
+    answer: 'Edukte'
+hint: 'Der Satz von Hess basiert auf der Tatsache, dass Enthalpie eine Zustandsgröße ist.'
+explanation: 'Der Satz von Hess ist so nützlich, weil Enthalpie eine Zustandsgröße ist - sie hängt nur davon ab, WO wir sind (Anfang/Ende), nicht WIE wir dorthin gekommen sind. Dies erlaubt uns, komplexe Reaktionen über einfachere Teilreaktionen zu berechnen.'
+---

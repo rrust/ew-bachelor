@@ -1,34 +1,36 @@
 ---
 type: 'learning-content'
-topic: 'Einführung in die Thermochemie'
+topic: 'Grundlagen von Energie und Chemie'
 sourceRefs:
   - sourceId: 'vorlesung-k5'
-    pages: '1-3'
+    pages: 'Kap 1.1'
 ---
 
-## Was ist Thermochemie?
+# Thermochemie: Energie in chemischen Reaktionen
 
-Die **Thermochemie** ist der Teilbereich der Chemie, der sich mit den Energieumsätzen bei chemischen Reaktionen beschäftigt. Sie beantwortet die fundamentale Frage: *Woher kommt die Energie, die bei Reaktionen freigesetzt oder aufgenommen wird?*
+Die **Thermochemie** beschäftigt sich mit den Energieumsätzen, die bei chemischen Reaktionen auftreten. Jede chemische Bindung speichert Energie - und wenn Bindungen gebrochen oder gebildet werden, wird Energie umgewandelt.
 
-### Energie in chemischen Bindungen
+## Alltägliche Beispiele
 
-Chemische Bindungen speichern Energie. Wenn Bindungen gebrochen und neue gebildet werden, wird Energie umgesetzt. Ein anschauliches Beispiel:
+### Brennende Erdnüsse
 
-> 🥜 **Brennende Erdnüsse** liefern genügend Energie, um eine Tasse Wasser zum Kochen zu bringen. Die in den Fetten gespeicherte chemische Energie wird bei der Verbrennung freigesetzt.
+Ein anschauliches Experiment: Brennende Erdnüsse liefern genügend Energie, um eine Tasse Wasser zum Kochen zu bringen! Die in den Fettmolekülen gespeicherte chemische Energie wird bei der Verbrennung freigesetzt.
 
-### Die Brennstoffzelle: Chemie erzeugt Strom
+### Zucker und Kaliumchlorat
 
-Ein modernes Beispiel für die Nutzung chemischer Energie ist die **Wasserstoff-Brennstoffzelle**. Hier reagieren Wasserstoff und Sauerstoff kontrolliert miteinander:
+Zucker reagiert heftig mit Kaliumchlorat ($\text{KClO}_3$), einem starken Oxidationsmittel. Diese Reaktion ist **produktbevorzugend**: Die Reaktanten (Edukte) reagieren fast vollständig zu Produkten und setzen dabei viel Energie frei.
 
-$$2 H_2(g) + O_2(g) \rightarrow 2 H_2O(g) + \text{Energie}$$
+## Die Brennstoffzelle
 
-Diese Reaktion setzt Energie in Form von **elektrischem Strom**, Wärme und Licht frei. Die Teilreaktionen laufen an getrennten Elektroden ab:
+Ein technologisch wichtiges Beispiel ist die **Brennstoffzelle**. Hier reagieren Wasserstoff und Sauerstoff kontrolliert miteinander:
 
-- **Anode (Oxidation):** $2 H_2 \rightarrow 4 H^+ + 4 e^-$
-- **Kathode (Reduktion):** $O_2 + 2 H_2O + 4 e^- \rightarrow 4 OH^-$
+$$2\,\text{H}_2(g) + \text{O}_2(g) \rightarrow 2\,\text{H}_2\text{O}(g) + \text{Wärme und Licht}$$
 
-### Produktbevorzugende Reaktionen
+In der Brennstoffzelle laufen getrennte Teilreaktionen ab:
 
-Reaktionen, bei denen die Edukte fast vollständig zu Produkten umgewandelt werden und dabei Energie freisetzen, nennt man **produktbevorzugend**. Die Verbrennung von Zucker mit Kaliumchlorat ($KClO_3$) ist ein weiteres Beispiel für eine solche energiereiche Reaktion.
+- **Oxidation (Minuspol):** $2\,\text{H}_2 \rightarrow 4\,\text{H}^+ + 4\,e^-$
+- **Reduktion (Pluspol):** $4\,e^- + \text{O}_2 + 2\,\text{H}_2\text{O} \rightarrow 4\,\text{OH}^-$
 
-> 💡 **Für Ernährungswissenschaftler:** Der gleiche Prozess – die Oxidation von Nährstoffen – findet in unserem Körper statt, nur kontrollierter. Die Energie wird nicht als Flamme, sondern als ATP (Adenosintriphosphat) gespeichert.
+Die chemische Energie wird direkt in **elektrische Energie** umgewandelt - viel effizienter als bei herkömmlichen Verbrennungsmotoren!
+
+> **Merke:** Die Thermochemie hilft uns zu verstehen, warum manche Reaktionen Wärme freisetzen (wie Verbrennung) und andere Wärme aufnehmen (wie das Verdampfen von Wasser).

@@ -556,6 +556,28 @@ function validateFile(filePath) {
 
     const content = fs.readFileSync(filePath, 'utf8');
 
+    // Check for ASCII art in code blocks (forbidden)
+    // But exclude mermaid blocks which are valid
+    const codeBlockRegex = /```(?!mermaid)(\w*)\n([\s\S]*?)```/g;
+    let match;
+    while ((match = codeBlockRegex.exec(content)) !== null) {
+      const codeContent = match[2];
+      // Check for Unicode box drawing characters
+      if (/[┌┐└┘├┤┬┴┼│─╔╗╚╝║═]/.test(codeContent)) {
+        result.errors.push(
+          'ASCII-Art (Unicode-Boxen) in Code-Block gefunden - verwende Tabellen, Listen oder Mermaid stattdessen'
+        );
+        break;
+      }
+      // Check for ASCII +---+ style boxes
+      if (/\+[-+]{3,}\+/.test(codeContent)) {
+        result.errors.push(
+          'ASCII-Art (+---+ Boxen) in Code-Block gefunden - verwende Tabellen, Listen oder Mermaid stattdessen'
+        );
+        break;
+      }
+    }
+
     // Detect file type
     const isLectureMetadata =
       filePath.endsWith('/lecture.md') && !filePath.includes('/lecture-items/');

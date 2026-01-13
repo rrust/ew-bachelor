@@ -1,0 +1,13 @@
+---
+type: 'self-assessment-mc'
+topic: 'Der Erste Hauptsatz und Enthalpie'
+question: 'Was gilt für einen Prozess bei konstantem Druck?'
+options:
+  - '$\Delta U = q$'
+  - '$\Delta H = q_p$'
+  - '$w = 0$'
+  - '$\Delta H = 0$'
+correctAnswer: '$\Delta H = q_p$'
+hint: 'Die Enthalpie wurde genau für diese Situation definiert.'
+explanation: 'Bei konstantem Druck entspricht die Enthalpieänderung ($\Delta H$) der ausgetauschten Wärme ($q_p$). Dies ist der praktische Vorteil der Enthalpie: Sie entspricht direkt der messbaren Wärme unter Laborbedingungen (offenes Gefäß, atmosphärischer Druck).'
+---

@@ -1,51 +1,45 @@
 ---
 type: 'learning-content'
-topic: 'Kinetische Energie'
+topic: 'Grundlagen von Energie und Chemie'
 sourceRefs:
   - sourceId: 'vorlesung-k5'
-    pages: '5-6'
+    pages: 'Kap 1.2'
 ---
 
-## Kinetische Energie auf molekularer Ebene
+# Kinetische Energie (Bewegungsenergie)
 
-**Kinetische Energie** ist die Energie der Bewegung. Auf molekularer Ebene manifestiert sie sich in drei Formen:
+Die **kinetische Energie** ist die Energie der Bewegung. Auf molekularer Ebene manifestiert sie sich in drei verschiedenen Formen.
 
-### Die drei Bewegungsarten
+## Die drei Bewegungsformen auf molekularer Ebene
 
-**1. Translation** – Bewegung durch den Raum
-- Das gesamte Molekül bewegt sich von A nach B
-- Besonders ausgeprägt in **Gasen**
+### 1. Translation
 
-**2. Rotation** – Drehbewegung
-- Das Molekül dreht sich um seine Achsen
-- Hängt von der Molekülgeometrie ab
+Die **Translationsbewegung** ist die Bewegung des gesamten Moleküls durch den Raum - das Molekül bewegt sich von einem Ort zum anderen.
 
-**3. Vibration** – Schwingung
-- Die Atome schwingen innerhalb ihrer Bindungen
-- Bindungen werden gedehnt und gestaucht
+### 2. Rotation
 
-### Visualisierung am Wassermolekül
+Bei der **Rotationsbewegung** dreht sich das Molekül um seine eigenen Achsen, ohne seinen Ort zu wechseln.
 
-| Bewegungsart    | Beschreibung                          | Symbol  |
-| --------------- | ------------------------------------- | ------- |
-| **Translation** | Molekül fliegt durch den Raum         | H₂O →→→ |
-| **Rotation**    | Molekül dreht sich um seine Achse     | H₂O ↻   |
-| **Vibration**   | Bindungen schwingen (dehnen/stauchen) | H—O—H ↔ |
+### 3. Vibration
 
-### Zusammenhang mit Temperatur
+Die **Vibrationsbewegung** beschreibt das Schwingen der Atome gegeneinander innerhalb der chemischen Bindungen. Die Atome bewegen sich rhythmisch aufeinander zu und voneinander weg.
 
-Die **Temperatur** ist ein direktes Maß für die mittlere kinetische Energie der Teilchen:
+## Zusammenhang mit der Temperatur
 
-$$T \uparrow \implies KE \uparrow$$
+> **Wichtiger Zusammenhang:** Die Temperatur eines Stoffes ist ein direktes Maß für die mittlere kinetische Energie seiner Teilchen.
 
-- Höhere Temperatur = schnellere Teilchenbewegung
-- Bei absolutem Nullpunkt (0 K = -273,15 °C) wäre die kinetische Energie minimal
+| Temperatur                | Kinetische Energie | Teilchenbewegung            |
+| ------------------------- | ------------------ | --------------------------- |
+| Hoch                      | Hoch               | Schnell, intensiv           |
+| Niedrig                   | Niedrig            | Langsam, gedämpft           |
+| Absoluter Nullpunkt (0 K) | Minimal            | Praktisch keine Translation |
 
-### Die zwei Energieformen im Vergleich
+## Aggregatzustände und kinetische Energie
 
-| Energieform             | Abhängig von         | Beispiel                     |
-| ----------------------- | -------------------- | ---------------------------- |
-| **Potentielle Energie** | Position, Bindungen  | Energie in einer C-H Bindung |
-| **Kinetische Energie**  | Bewegung, Temperatur | Vibration einer Bindung      |
+Die unterschiedlichen Aggregatzustände unterscheiden sich in ihrer kinetischen Energie:
 
-> 💡 **Merke:** Bei chemischen Reaktionen wird oft **potentielle Energie** in **kinetische Energie** umgewandelt (und umgekehrt). Das spüren wir als Temperaturänderung!
+- **Festkörper:** Niedrige KE, nur Vibration möglich
+- **Flüssigkeiten:** Mittlere KE, Translation und Rotation begrenzt
+- **Gase:** Hohe KE, alle drei Bewegungsformen ausgeprägt
+
+> **Merke:** Wenn wir einem Stoff Wärme zuführen, erhöhen wir die kinetische Energie seiner Teilchen - die Temperatur steigt!
