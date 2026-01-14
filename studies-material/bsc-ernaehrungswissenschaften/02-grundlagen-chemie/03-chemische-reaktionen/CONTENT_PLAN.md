@@ -1,10 +1,12 @@
 # Content-Erstellungsplan V4: Chemische Reaktionen
 
-> **Status:** Bereit zur Content-Generierung
+> **Status:** ✅ **VOLLSTÄNDIG GENERIERT** (56/56 Items, 15/15 Questions)
 >
 > **Quelldatei:** [Vorlesung.md](Vorlesung.md)
 >
 > **Struktur:** Lernen → Überprüfen → Anwenden (nach jedem Abschnitt)
+>
+> **Zielordner:** `content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/03-chemische-reaktionen/`
 
 ---
 

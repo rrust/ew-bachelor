@@ -1,10 +1,12 @@
 # Content-Erstellungsplan: Modul 2 - Kapitel 9 - Molekülstruktur und Molekülorbitale
 
-> **Status:** Überarbeitete Struktur V4 - Bereit zur Content-Generierung
+> **Status:** ⏳ **OFFEN** - Bereit zur Content-Generierung (0/69 Items, 0/14 Questions)
 >
 > **Quelldatei:** [Vorlesung.md](Vorlesung.md)
 >
 > **Neues Konzept:** Jeder Abschnitt folgt dem Muster **Lernen → Überprüfen → Anwenden**
+>
+> **Zielordner:** `content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/09-molekuelstruktur-molekuelorbitale/`
 
 ***
 

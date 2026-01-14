@@ -1,8 +1,9 @@
 # Content-Erstellungsplan: Materie und Messen
 
-> **Status:** Bereit zur Content-Generierung (V4)
+> **Status:** ✅ **VOLLSTÄNDIG GENERIERT** (41/41 Items, 12/12 Questions)
 > **Quelldatei:** [Vorlesung.md](Vorlesung.md)
 > **Struktur:** Lernen → Überprüfen → Anwenden
+> **Zielordner:** `content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/01-materie-messen/`
 
 ***
 

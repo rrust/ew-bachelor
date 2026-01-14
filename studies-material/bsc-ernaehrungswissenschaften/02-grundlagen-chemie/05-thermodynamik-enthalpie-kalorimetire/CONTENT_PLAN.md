@@ -1,10 +1,12 @@
 # Content-Erstellungsplan: Modul 2 - Kapitel 5 - Thermodynamik, Enthalpie & Kalorimetrie
 
-> **Status:** Überarbeitete Struktur V4 - Bereit zur Content-Generierung
+> **Status:** ✅ **VOLLSTÄNDIG GENERIERT** (82/82 Items, 12/12 Questions)
 >
 > **Quelldatei:** [Vorlesung.md](Vorlesung.md)
 >
 > **Neues Konzept:** Jeder Abschnitt folgt dem Muster **Lernen → Überprüfen → Anwenden**
+>
+> **Zielordner:** `content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie/`
 
 ***
 

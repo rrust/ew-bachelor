@@ -1,10 +1,12 @@
 # Content-Erstellungsplan: Modul 2 - Kapitel 8 - Die Kovalente Bindung
 
-> **Status:** Überarbeitete Struktur V4 - Bereit zur Content-Generierung
+> **Status:** ✅ **VOLLSTÄNDIG GENERIERT** (62/62 Items, 14/14 Questions)
 >
 > **Quelldatei:** [Vorlesung.md](Vorlesung.md)
 >
 > **Neues Konzept:** Jeder Abschnitt folgt dem Muster **Lernen → Überprüfen → Anwenden**
+>
+> **Zielordner:** `content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/08-kovalente-bindung/`
 
 ***
 
