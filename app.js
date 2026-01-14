@@ -879,10 +879,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     const sources = lecture?.sources || [];
     
-    // Build intro audio URL if available
+    // Build intro audio URL if available (only on first item)
     let introAudioUrl = null;
     if (lecture?.introAudio && lectureState.currentIndex === 0) {
-      const studyId = settings.activeStudyId;
+      const studyId = getAppSettings().activeStudyId;
       introAudioUrl = `content/${studyId}/${currentModuleId}/${currentLectureId}/${lecture.introAudio}`;
     }
     
