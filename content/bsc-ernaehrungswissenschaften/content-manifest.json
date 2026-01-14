@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T12:53:07.303Z",
+  "generatedAt": "2026-01-14T16:36:53.293Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "8793fcde",
@@ -100,6 +100,16 @@
       "topic": "Eigenschaften der Atome und die Ionenbindung",
       "description": "Periodentrends verstehen: Effektive Kernladung, Atom- und Ionenradien, Ionisierungsenergie und Elektronenaffinität",
       "estimatedTime": 100,
+      "version": "1.0.0"
+    },
+    "02-chemie-grundlagen/08-kovalente-bindung": {
+      "checksum": "16f08b31",
+      "sizeKB": 81.6,
+      "itemCount": 63,
+      "quizCount": 14,
+      "topic": "Die Kovalente Bindung",
+      "description": "Lewis-Formeln verstehen und anwenden: Oktettregel, Mehrfachbindungen, Mesomerie, Formalladungen und Ausnahmen",
+      "estimatedTime": 110,
       "version": "1.0.0"
     }
   }

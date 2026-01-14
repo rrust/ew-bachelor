@@ -1,0 +1,22 @@
+---
+type: 'calculation'
+question: 'Berechne die Anzahl der Valenzelektronen für die folgenden Teilchen.'
+tasks:
+  - question: 'Phosphat-Ion (PO₄³⁻)'
+    setup: 'P (Gruppe 5A) + 4 × O (Gruppe 6A) + 3 zusätzliche Elektronen (wegen 3−)'
+    correctAnswer: '32'
+    unit: 'Elektronen'
+    solution: '5 + (4 × 6) + 3 = 5 + 24 + 3 = 32 Elektronen'
+  - question: 'Ammonium-Ion (NH₄⁺)'
+    setup: 'N (Gruppe 5A) + 4 × H (Gruppe 1A) − 1 Elektron (wegen +)'
+    correctAnswer: '8'
+    unit: 'Elektronen'
+    solution: '5 + (4 × 1) − 1 = 5 + 4 − 1 = 8 Elektronen'
+  - question: 'Schwefeldioxid (SO₂)'
+    setup: 'S (Gruppe 6A) + 2 × O (Gruppe 6A)'
+    correctAnswer: '18'
+    unit: 'Elektronen'
+    solution: '6 + (2 × 6) = 6 + 12 = 18 Elektronen'
+hint: 'Bei Anionen addiere, bei Kationen subtrahiere die Ladungszahl!'
+successMessage: 'Sehr gut! Du beherrschst das Zählen der Valenzelektronen – auch bei Ionen.'
+---

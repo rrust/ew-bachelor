@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T12:53:07.437Z",
+  "generatedAt": "2026-01-14T16:36:53.516Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -5983,6 +5983,758 @@
         },
         {
           "index": 61,
+          "type": "self-assessment",
+          "title": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "08-kovalente-bindung",
+      "topic": "Die Kovalente Bindung",
+      "description": "Lewis-Formeln verstehen und anwenden: Oktettregel, Mehrfachbindungen, Mesomerie, Formalladungen und Ausnahmen",
+      "topics": [
+        "Die Kovalente Bindung"
+      ],
+      "keywords": [
+        "kovalente",
+        "bindung",
+        "lewisformeln",
+        "verstehen",
+        "anwenden",
+        "oktettregel",
+        "mehrfachbindungen",
+        "mesomerie",
+        "formalladungen",
+        "ausnahmen",
+        "diesem",
+        "kapitel",
+        "lernst",
+        "atome",
+        "gemeinsame",
+        "elektronenpaare",
+        "verbunden",
+        "wirst",
+        "systematisch",
+        "zeichnen",
+        "berechnen",
+        "können",
+        "lernziele",
+        "vorlesung",
+        "kannst",
+        "ionenbindung",
+        "unterscheiden",
+        "valenzelektronen",
+        "zählen",
+        "schritten",
+        "konstruieren",
+        "erkennen",
+        "bindungen",
+        "mesomere",
+        "grenzstrukturen",
+        "interpretieren",
+        "stabilitätsregeln",
+        "drei",
+        "erklären",
+        "einführung",
+        "chemische",
+        "chemie",
+        "beschäftigt",
+        "fundamentalen",
+        "fragen",
+        "materie",
+        "moleküle",
+        "mehratomige",
+        "ionen",
+        "zusammengehalten",
+        "warum",
+        "stehen",
+        "spezifischen",
+        "oft",
+        "seltsamen",
+        "winkeln",
+        "zueinander",
+        "meist",
+        "dreidimensional",
+        "flach",
+        "struktur",
+        "bestimmt",
+        "eigenschaften",
+        "wichtigste",
+        "grundsatz",
+        "molekülchemie",
+        "lautet",
+        "moleküls",
+        "seine",
+        "chemischen",
+        "physikalischen",
+        "bedeutet",
+        "miteinander",
+        "welche",
+        "räumliche",
+        "anordnung",
+        "einnehmen",
+        "vorhersagen",
+        "stoff",
+        "verhält",
+        "beispiele",
+        "struktureigenschaftszusammenhang",
+        "eigenschaft",
+        "beeinflusst",
+        "reaktivität",
+        "art",
+        "stärke",
+        "siedepunkt",
+        "molekülgröße",
+        "polarität",
+        "löslichkeit",
+        "funktionelle",
+        "gruppen",
+        "farbe",
+        "konjugierte",
+        "doppelbindungen",
+        "kennen",
+        "bindungsart",
+        "organischen",
+        "biochemie"
+      ],
+      "snippet": "Die Kovalente Bindung Lewis-Formeln verstehen und anwenden: Oktettregel, Mehrfachbindungen, Mesomerie, Formalladungen und Ausnahmen Die Kovalente Bindung In diesem Kapitel lernst du, wie Atome durch g...",
+      "itemCount": 63,
+      "quizCount": 14,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Die Kovalente Bindung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Item 3",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "learning-content",
+          "title": "Item 5",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "learning-content",
+          "title": "Item 6",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "self-assessment-mc",
+          "title": "Welche Aussage zur Ionenbindung ist korrekt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "self-assessment-mc",
+          "title": "Warum ist das N₂-Molekül im Vergleich zu weißem Phosphor (P₄) sehr unreaktiv?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "self-assessment-mc",
+          "title": "Welche Orbitale überlappen bei der Bildung von HCl?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "matching",
+          "title": "Ordne die Eigenschaften dem richtigen Bindungstyp zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "practice-exercise",
+          "title": "Bindungstyp vorhersagen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "youtube-video",
+          "title": "Ionenbindung einfach erklärt",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "learning-content",
+          "title": "Item 13",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "learning-content",
+          "title": "Item 14",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "learning-content",
+          "title": "Item 15",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Item 16",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "self-assessment-mc",
+          "title": "Wie viele Valenzelektronen hat ein Atom der Gruppe 6A (z.B. Schwefel)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "self-assessment-mc",
+          "title": "Was besagt die Oktettregel?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "self-assessment-mc",
+          "title": "Wie viele Bindungspaare erwartet man typischerweise für Stickstoff (Gruppe 5A)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "fill-in-the-blank",
+          "title": "Vervollständige die mathematische Formulierung der Oktettregel.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "matching",
+          "title": "Ordne jeder Gruppe die richtige Anzahl an Valenzelektronen zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "calculation",
+          "title": "Berechne die Anzahl der Valenzelektronen für die folgenden Teilchen.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "youtube-video",
+          "title": "Oktettregel einfach erklärt",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "learning-content",
+          "title": "Item 24",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Item 25",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Item 26",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Item 27",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "learning-content",
+          "title": "Item 28",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "self-assessment-mc",
+          "title": "Wie viele Valenzelektronen müssen für das Carbonat-Ion (CO₃²⁻) berücksichtigt werden?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "self-assessment-mc",
+          "title": "Wann werden Mehrfachbindungen in einer Lewis-Struktur eingeführt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "self-assessment-mc",
+          "title": "Wie nennt man das zweite Bindungspaar in einer Doppelbindung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "ordering",
+          "title": "Bringe die Schritte zum Zeichnen einer Lewis-Formel in die richtige Reihenfolge.",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "practice-exercise",
+          "title": "Lewis-Formel für PCl₃ zeichnen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "youtube-video",
+          "title": "Lewis Schreibweise / Strukturformel aufstellen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "learning-content",
+          "title": "Item 35",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "learning-content",
+          "title": "Item 36",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Item 37",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Item 38",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "self-assessment-mc",
+          "title": "Was bedeutet der Doppelpfeil (↔) zwischen zwei Lewis-Strukturen?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "self-assessment-mc",
+          "title": "Welches Molekül ist isoelektronisch zu N₂?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "self-assessment-mc",
+          "title": "Wie viele Valenzelektronen hat Harnstoff ((NH₂)₂CO)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "matching",
+          "title": "Ordne die Aussagen über Mesomerie (Resonanz) richtig zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "practice-exercise",
+          "title": "Grenzstrukturen für das Nitrat-Ion (NO₃⁻)",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "youtube-video",
+          "title": "Mesomerie",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "learning-content",
+          "title": "Item 45",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Item 46",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Item 47",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "learning-content",
+          "title": "Item 48",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "self-assessment-mc",
+          "title": "Berechne die Formalladung des Sauerstoffatoms in H₃O⁺. (O hat 3 Bindungen zu H und 1 freies Elektronenpaar)",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "self-assessment-mc",
+          "title": "Welche Resonanzstruktur ist im Allgemeinen stabiler?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "fill-in-the-blank",
+          "title": "Vervollständige die vereinfachte Formel zur Berechnung der Formalladung.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "calculation",
+          "title": "Berechne die Formalladungen für alle Atome im Cyanat-Ion (OCN⁻) für die Struktur O=C=N.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "youtube-video",
+          "title": "Formalladung berechnen und verstehen",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "learning-content",
+          "title": "Item 54",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "learning-content",
+          "title": "Item 55",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "learning-content",
+          "title": "Item 56",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "self-assessment-mc",
+          "title": "Welches Element neigt dazu, stabile Verbindungen mit weniger als 8 Valenzelektronen zu bilden?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 57,
+          "type": "self-assessment-mc",
+          "title": "Warum kann Schwefel mehr als 8 Elektronen um sich haben (wie in SF₆), Sauerstoff aber nicht?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 58,
+          "type": "self-assessment-mc",
+          "title": "Was ist ein \"freies Radikal\"?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 59,
+          "type": "matching",
+          "title": "Ordne jede Oktetausnahme dem passenden Beispielmolekül zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 60,
+          "type": "practice-exercise",
+          "title": "Lewis-Struktur für SF₄ (erweitertes Oktett)",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 61,
+          "type": "youtube-video",
+          "title": "Ausnahmen der Oktettregel",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 62,
           "type": "self-assessment",
           "title": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
           "typeKeywords": [

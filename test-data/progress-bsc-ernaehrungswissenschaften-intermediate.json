@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-14T12:53:03.303Z",
+  "exportedAt": "2026-01-14T16:37:11.452Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,13 +8,21 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-09-25T12:53:03.303Z",
+    "startedAt": "2025-07-31T16:37:11.452Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
+          "01-grundlagen-zellbiologie": {
+            "score": 53,
+            "badge": "bronze"
+          },
+          "02-makronaehrstoffe-detail": {
+            "score": 51,
+            "badge": "bronze"
+          },
           "03-fette-oele": {
-            "score": 52,
+            "score": 56,
             "badge": "bronze"
           }
         },
