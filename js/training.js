@@ -454,6 +454,10 @@ function getTrainingContextDescription(context, modules) {
  */
 async function initTrainingView() {
   const container = document.getElementById('training-content');
+  const stickyInfo = document.getElementById('training-sticky-info');
+
+  // Hide sticky info during loading
+  if (stickyInfo) stickyInfo.style.display = 'none';
 
   // Show loading state while fetching completed tests
   container.innerHTML = `
@@ -483,6 +487,7 @@ async function initTrainingView() {
       ? `Keine abgeschlossenen Tests für "${contextDesc}" gefunden.`
       : 'Schließe erst einen Vorlesungs-Test ab, um den Trainings-Modus zu nutzen.';
 
+    // Keep sticky info hidden for empty state
     container.innerHTML = `
       <div class="text-center py-12">
         <span class="text-6xl mb-4 block">📝</span>
@@ -518,7 +523,8 @@ async function initTrainingView() {
   trainingState.currentIndex = 0;
   trainingState.correctCount = 0;
   trainingState.answeredCount = 0;
-  trainingState.results = new Array(QUESTIONS_PER_ROUND).fill(null);
+  // Results array should match actual question count (may be less than QUESTIONS_PER_ROUND)
+  trainingState.results = new Array(trainingState.questions.length).fill(null);
 
   renderTrainingQuestion();
 }
@@ -529,11 +535,15 @@ async function initTrainingView() {
  */
 function renderTrainingQuestion(animateIn = false) {
   const container = document.getElementById('training-content');
+  const stickyInfo = document.getElementById('training-sticky-info');
 
   if (trainingState.currentIndex >= trainingState.questions.length) {
     renderTrainingResults();
     return;
   }
+
+  // Show sticky info bar during questions
+  if (stickyInfo) stickyInfo.style.display = '';
 
   const question = trainingState.questions[trainingState.currentIndex];
   const progress =
@@ -578,15 +588,17 @@ function renderTrainingQuestion(animateIn = false) {
     })
     .join('');
 
-  container.innerHTML = `
-    <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
+  // Render sticky info (progress bar, context, cheat-sheet) into dedicated container
+  const stickyContainer = document.getElementById('training-sticky-content');
+  if (stickyContainer) {
+    stickyContainer.innerHTML = `
       <!-- Segmented Progress Bar -->
-      <div class="flex gap-1 mb-4 rounded overflow-hidden">
+      <div class="flex gap-1 mb-2 rounded overflow-hidden">
         ${progressSegments}
       </div>
 
       <!-- Context + Token + CheatSheet row -->
-      <div class="mb-4 flex items-center flex-wrap gap-2 text-xs">
+      <div class="flex items-center flex-wrap gap-2 text-xs">
         <!-- Training scope -->
         <span class="inline-flex items-center gap-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded-full">
           ${escapeHtml(contextDesc)}
@@ -620,7 +632,11 @@ function renderTrainingQuestion(animateIn = false) {
             : ''
         }
       </div>
+    `;
+  }
 
+  container.innerHTML = `
+    <div class="max-w-2xl mx-auto training-question-card" style="${initialStyle}">
       <!-- Topic badge -->
       <div class="mb-4">
         <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
@@ -859,8 +875,12 @@ function nextTrainingQuestion() {
  */
 function renderTrainingResults() {
   const container = document.getElementById('training-content');
+  const stickyInfo = document.getElementById('training-sticky-info');
   const correctCount = trainingState.correctCount;
   const totalQuestions = trainingState.questions.length;
+
+  // Hide sticky info on results screen
+  if (stickyInfo) stickyInfo.style.display = 'none';
 
   // Award tokens based on performance
   const tokensEarned = awardTokensForRound(correctCount);
@@ -977,59 +997,23 @@ function continueTraining() {
   trainingState.currentIndex = 0;
   trainingState.correctCount = 0;
   trainingState.answeredCount = 0;
+  // Reset results array to match actual question count
+  trainingState.results = new Array(trainingState.questions.length).fill(null);
 
   // Render first question
   renderTrainingQuestion();
 }
 
 /**
- * Show cheat sheet in overlay
+ * Show cheat sheet in overlay - reuses the global achievement modal for DRY
  */
 function showTrainingCheatSheet(achievementId) {
   const achievement = APP_CONTENT.achievements[achievementId];
   if (!achievement) return;
 
-  const modal = document.getElementById('training-cheatsheet-modal');
-  const title = document.getElementById('training-cheatsheet-title');
-  const content = document.getElementById('training-cheatsheet-content');
-
-  if (title) title.textContent = achievement.title;
-  if (content) {
-    // Parse markdown content (prefer contentMarkdown for lazy-loaded achievements)
-    const markdownSource = achievement.contentMarkdown || achievement.content;
-    if (window.marked && markdownSource) {
-      content.innerHTML = marked.parse(markdownSource);
-      // Render math if available
-      if (window.renderMathInElement) {
-        renderMathInElement(content, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$', right: '$', display: false }
-          ],
-          throwOnError: false
-        });
-      }
-    } else {
-      content.innerHTML =
-        '<p class="text-gray-500">Inhalt konnte nicht geladen werden.</p>';
-    }
-  }
-
-  if (modal) {
-    modal.classList.remove('hidden');
-    // Focus close button for accessibility
-    const closeBtn = document.getElementById('close-training-cheatsheet');
-    if (closeBtn) closeBtn.focus();
-  }
-}
-
-/**
- * Close cheat sheet overlay
- */
-function closeTrainingCheatSheet() {
-  const modal = document.getElementById('training-cheatsheet-modal');
-  if (modal) {
-    modal.classList.add('hidden');
+  // Reuse the global showAchievementModal function from achievements-ui.js
+  if (window.showAchievementModal) {
+    window.showAchievementModal(achievement);
   }
 }
 
@@ -1166,7 +1150,6 @@ window.submitTrainingAnswer = submitTrainingAnswer;
 window.nextTrainingQuestion = nextTrainingQuestion;
 window.continueTraining = continueTraining;
 window.showTrainingCheatSheet = showTrainingCheatSheet;
-window.closeTrainingCheatSheet = closeTrainingCheatSheet;
 window.getCompletedTests = getCompletedTests;
 window.getCompletedTestsFiltered = getCompletedTestsFiltered;
 window.setTrainingContext = setTrainingContext;

@@ -235,27 +235,55 @@ function showAchievementModal(achievement) {
 
   // Get modal container for fullscreen toggle
   const container = document.getElementById('achievement-modal-container');
+  const fullscreenBtn = document.getElementById('fullscreen-achievement-modal');
+
+  // Helper to reset fullscreen state and icons
+  const resetFullscreenState = () => {
+    container.classList.remove('fullscreen-modal');
+    if (fullscreenBtn) {
+      const expandIcon = fullscreenBtn.querySelector('.fullscreen-expand-icon');
+      const collapseIcon = fullscreenBtn.querySelector(
+        '.fullscreen-collapse-icon'
+      );
+      if (expandIcon && collapseIcon) {
+        expandIcon.classList.remove('hidden');
+        collapseIcon.classList.add('hidden');
+      }
+      fullscreenBtn.title = 'Vollbild';
+    }
+  };
 
   // Close modal listeners
   const closeBtn = document.getElementById('close-achievement-modal');
   closeBtn.onclick = () => {
     modal.classList.add('hidden');
-    // Reset fullscreen state when closing
-    container.classList.remove('fullscreen-modal');
+    resetFullscreenState();
   };
 
   modal.onclick = (e) => {
     if (e.target === modal) {
       modal.classList.add('hidden');
-      container.classList.remove('fullscreen-modal');
+      resetFullscreenState();
     }
   };
 
   // Fullscreen toggle
-  const fullscreenBtn = document.getElementById('fullscreen-achievement-modal');
   if (fullscreenBtn) {
     fullscreenBtn.onclick = () => {
       container.classList.toggle('fullscreen-modal');
+      // Toggle icon visibility
+      const expandIcon = fullscreenBtn.querySelector('.fullscreen-expand-icon');
+      const collapseIcon = fullscreenBtn.querySelector(
+        '.fullscreen-collapse-icon'
+      );
+      if (expandIcon && collapseIcon) {
+        expandIcon.classList.toggle('hidden');
+        collapseIcon.classList.toggle('hidden');
+      }
+      // Update title
+      fullscreenBtn.title = container.classList.contains('fullscreen-modal')
+        ? 'Verkleinern'
+        : 'Vollbild';
     };
   }
 }

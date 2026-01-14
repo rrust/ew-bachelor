@@ -313,8 +313,9 @@
               class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 p-1"
               title="Vollbild"
             >
+              <!-- Expand icon (shown when not fullscreen) -->
               <svg
-                class="w-5 h-5"
+                class="w-5 h-5 fullscreen-expand-icon"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -324,6 +325,16 @@
                   stroke-linejoin="round"
                   stroke-width="2"
                   d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+                ></path>
+              </svg>
+              <!-- Collapse icon (shown when fullscreen) -->
+              <svg
+                class="w-5 h-5 fullscreen-collapse-icon hidden"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M11.493 8.757l-3.454-3.453-2.665 2.665 3.454 3.453-2.59 2.59 7.797 0.004-0.017-7.784-2.525 2.525zM23.172 11.422l3.454-3.453-2.665-2.665-3.454 3.453-2.525-2.525-0.017 7.784 7.797-0.004-2.59-2.59zM8.828 20.578l-3.454 3.453 2.665 2.665 3.454-3.453 2.526 2.525 0.017-7.784-7.797 0.004 2.589 2.59zM25.762 17.988l-7.797-0.004 0.017 7.784 2.525-2.525 3.454 3.453 2.665-2.665-3.454-3.453 2.59-2.59z"
                 ></path>
               </svg>
             </button>
@@ -829,54 +840,32 @@
       style="display: none"
       class="min-h-screen flex flex-col"
     >
-      <!-- Sticky Header Container -->
-      <div
-        id="training-header-container"
-        class="sticky top-0 z-40 bg-white dark:bg-gray-800 shadow-sm"
-      ></div>
+      <!-- Combined Sticky Header + Info Bar -->
+      <div class="sticky top-0 z-40">
+        <!-- Header Container -->
+        <div
+          id="training-header-container"
+          class="bg-white dark:bg-gray-800"
+        ></div>
+
+        <!-- Training Info (progress, context, cheat-sheet) -->
+        <div
+          id="training-sticky-info"
+          class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 shadow-sm"
+        >
+          <div class="container mx-auto px-4 md:px-8 py-2 md:py-3">
+            <div id="training-sticky-content" class="max-w-2xl mx-auto">
+              <!-- Populated by training.js -->
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="flex-1 overflow-y-auto">
         <div class="container mx-auto px-4 md:px-8 py-2 md:py-4">
           <div id="training-content">
             <!-- Content will be rendered by training.js -->
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Training Cheatsheet Modal -->
-    <div
-      id="training-cheatsheet-modal"
-      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
-    >
-      <div
-        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col"
-      >
-        <div
-          class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 flex-shrink-0"
-        >
-          <div class="flex items-center space-x-3">
-            <span
-              data-icon="clipboard"
-              data-icon-class="w-5 h-5 text-yellow-500"
-            ></span>
-            <h3 id="training-cheatsheet-title" class="text-lg font-bold">
-              Cheat-Sheet
-            </h3>
-          </div>
-          <button
-            id="close-training-cheatsheet"
-            onclick="closeTrainingCheatSheet()"
-            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-2xl"
-          >
-            ×
-          </button>
-        </div>
-        <div
-          id="training-cheatsheet-content"
-          class="p-6 overflow-y-auto prose dark:prose-invert max-w-none"
-        >
-          <!-- Content will be injected by training.js -->
         </div>
       </div>
     </div>

@@ -138,9 +138,12 @@ function generateHeaderIconButtons(options) {
  */
 function createAppHeader(view = 'moduleMap', options = {}) {
   const header = document.createElement('header');
-  // No margin-bottom for search view (fixed search input sits directly below)
-  const marginClass = view === 'search' ? '' : 'mb-8';
-  header.className = `bg-white dark:bg-gray-800 ${marginClass} sticky top-0 z-40`;
+  // No margin-bottom for search view and training view (they have their own sticky elements below)
+  const marginClass = view === 'search' || view === 'training' ? '' : 'mb-8';
+  // Training view has its own sticky wrapper, so header itself shouldn't be sticky
+  const stickyClass = view === 'training' ? '' : 'sticky top-0 z-40';
+  header.className =
+    `bg-white dark:bg-gray-800 ${marginClass} ${stickyClass}`.trim();
 
   // Get current study info
   const studyInfo =
