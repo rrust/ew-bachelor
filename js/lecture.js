@@ -159,7 +159,7 @@ function renderCurrentLectureItem(
 
   switch (item.type) {
     case 'learning-content':
-      lectureItemDisplay.innerHTML = item.html + footnoteHtml;
+      lectureItemDisplay.insertAdjacentHTML('beforeend', item.html + footnoteHtml);
       renderMath(lectureItemDisplay);
       renderMermaidInContent(lectureItemDisplay);
       break;
