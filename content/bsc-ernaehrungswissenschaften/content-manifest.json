@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T08:26:04.116Z",
+  "generatedAt": "2026-01-14T12:53:07.303Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "8793fcde",
@@ -91,6 +91,16 @@
       "description": "Elektromagnetische Strahlung und ihre Eigenschaften, Quantisierung der Energie (Planck, Einstein), das Bohr-Modell, Wellenmechanik und Orbitale, Quantenzahlen sowie Elektronenkonfiguration nach Pauli und Hund.",
       "estimatedTime": 120,
       "version": "1.1.0"
+    },
+    "02-chemie-grundlagen/07-eigenschaften-atome-ionenbindung": {
+      "checksum": "d0995584",
+      "sizeKB": 75.8,
+      "itemCount": 62,
+      "quizCount": 12,
+      "topic": "Eigenschaften der Atome und die Ionenbindung",
+      "description": "Periodentrends verstehen: Effektive Kernladung, Atom- und Ionenradien, Ionisierungsenergie und Elektronenaffinität",
+      "estimatedTime": 100,
+      "version": "1.0.0"
     }
   }
 }

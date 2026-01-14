@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T08:26:04.311Z",
+  "generatedAt": "2026-01-14T12:53:07.437Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -5244,6 +5244,747 @@
           "index": 75,
           "type": "self-assessment",
           "title": "Bereitschaft für den Vorlesungs-Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "07-eigenschaften-atome-ionenbindung",
+      "topic": "Eigenschaften der Atome und die Ionenbindung",
+      "description": "Periodentrends verstehen: Effektive Kernladung, Atom- und Ionenradien, Ionisierungsenergie und Elektronenaffinität",
+      "topics": [
+        "Eigenschaften der Atome und die Ionenbindung"
+      ],
+      "keywords": [
+        "eigenschaften",
+        "atome",
+        "ionenbindung",
+        "periodentrends",
+        "verstehen",
+        "effektive",
+        "kernladung",
+        "atom",
+        "ionenradien",
+        "ionisierungsenergie",
+        "elektronenaffinität",
+        "diesem",
+        "kapitel",
+        "lernst",
+        "elemente",
+        "systematisch",
+        "periodensystem",
+        "ändern",
+        "wirst",
+        "warum",
+        "unterschiedlich",
+        "groß",
+        "manche",
+        "leicht",
+        "elektronen",
+        "abgeben",
+        "andere",
+        "bevorzugt",
+        "aufnehmen",
+        "lernziele",
+        "vorlesung",
+        "kannst",
+        "berechnen",
+        "ihre",
+        "bedeutung",
+        "erklären",
+        "atomradiustrends",
+        "perioden",
+        "gruppen",
+        "vorhersagen",
+        "unterschied",
+        "zwischen",
+        "kationen",
+        "anionengrößen",
+        "isoelektronische",
+        "reihen",
+        "größe",
+        "ordnen",
+        "ionisierungsenergien",
+        "trends",
+        "interpretieren",
+        "elektronenaffinitäten",
+        "inkl",
+        "anomalien",
+        "unbekannte",
+        "anwenden",
+        "einführung",
+        "weit",
+        "bloße",
+        "auflistung",
+        "zeigt",
+        "systematische",
+        "physikalischen",
+        "chemischen",
+        "wiederholen",
+        "periodisch",
+        "essenziell",
+        "verständnis",
+        "chemischer",
+        "reaktionen",
+        "drei",
+        "wichtigsten",
+        "fundamentale",
+        "untersuchen",
+        "ionengröße",
+        "radien",
+        "energieaufwand",
+        "elektronenabgabe",
+        "energieumsatz",
+        "elektronenaufnahme",
+        "gibt",
+        "makroskopischen",
+        "lassen",
+        "elektronische",
+        "struktur",
+        "zurückführen",
+        "entscheidend",
+        "zusammenspiel",
+        "anziehung",
+        "positiv",
+        "geladenen",
+        "kern",
+        "abstoßung",
+        "untereinander",
+        "kernidee",
+        "stark",
+        "anzieht",
+        "können",
+        "meisten",
+        "haupttrends"
+      ],
+      "snippet": "Eigenschaften der Atome und die Ionenbindung Periodentrends verstehen: Effektive Kernladung, Atom- und Ionenradien, Ionisierungsenergie und Elektronenaffinität Eigenschaften der Atome und die Ionenbin...",
+      "itemCount": 62,
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Eigenschaften der Atome und die Ionenbindung",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Item 3",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "learning-content",
+          "title": "Item 5",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "learning-content",
+          "title": "Item 6",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "learning-content",
+          "title": "Item 7",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "self-assessment-mc",
+          "title": "Wie verhält sich die effektive Kernladung ($Z^*$) innerhalb einer Periode von links nach rechts?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "self-assessment-mc",
+          "title": "Welcher Effekt erklärt, warum Elektronen in äußeren Schalen weniger Anziehungskraft spüren als erwartet?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Formel für die effektive Kernladung:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "matching",
+          "title": "Ordne die Auswirkungen einer höheren effektiven Kernladung ($Z^*$) den Eigenschaften zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "calculation",
+          "title": "Berechne die effektive Kernladung ($Z^*$) für ein Stickstoff-Atom (N, Ordnungszahl 7) unter der Annahme, dass nur die inneren 1s-Elektronen (2 Stück) abschirmen.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "youtube-video",
+          "title": "Periodensystem Trends – Atomradius, Ionenradius, Ionisierungsenergie, Elektronenaffinität",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "learning-content",
+          "title": "Item 14",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "learning-content",
+          "title": "Item 15",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Item 16",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Item 17",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Item 18",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "learning-content",
+          "title": "Item 19",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "self-assessment-mc",
+          "title": "Warum werden Atome innerhalb einer Periode von links nach rechts kleiner?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "self-assessment-mc",
+          "title": "Welche Aussage zu Übergangsmetallen ist korrekt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "ordering",
+          "title": "Ordne die folgenden Atome nach steigendem Atomradius (vom kleinsten zum größten):",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "matching",
+          "title": "Ordne jeden Trend seiner Erklärung zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "practice-exercise",
+          "title": "Atomradien vorhersagen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "youtube-video",
+          "title": "Atomradius im Periodensystem",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Item 26",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Item 27",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "learning-content",
+          "title": "Item 28",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "learning-content",
+          "title": "Item 29",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "learning-content",
+          "title": "Item 30",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "self-assessment-mc",
+          "title": "Wie verändert sich der Radius, wenn aus einem Chlor-Atom (Cl) ein Chlorid-Ion (Cl⁻) wird?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "self-assessment-mc",
+          "title": "Welches Teilchen ist am kleinsten?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "ordering",
+          "title": "Ordne die isoelektronische Reihe nach steigender Größe (vom kleinsten zum größten):",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "matching",
+          "title": "Ordne jedem Ion zu, ob es größer oder kleiner als das entsprechende neutrale Atom ist:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "practice-exercise",
+          "title": "Isoelektronische Reihen analysieren",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "youtube-video",
+          "title": "Ionenradius im Periodensystem",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Item 37",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Item 38",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "learning-content",
+          "title": "Item 39",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "learning-content",
+          "title": "Item 40",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "learning-content",
+          "title": "Item 41",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "learning-content",
+          "title": "Item 42",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "learning-content",
+          "title": "Item 43",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "self-assessment-mc",
+          "title": "Was ist die 1. Ionisierungsenergie?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "self-assessment-mc",
+          "title": "Warum nimmt die Ionisierungsenergie in einer Gruppe von oben nach unten ab?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "self-assessment-mc",
+          "title": "Ein Element hat folgende Ionisierungsenergien: $I_1$ = 500, $I_2$ = 4600, $I_3$ = 6900 kJ/mol. Zu welcher Hauptgruppe gehört es wahrscheinlich?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Trends der Ionisierungsenergie im Periodensystem:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "matching",
+          "title": "Ordne die Ionisierungsenergie-Werte den Eigenschaften zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "practice-exercise",
+          "title": "Ionisierungsenergien analysieren",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "youtube-video",
+          "title": "Ionisierungsenergie Trend im Periodensystem",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "learning-content",
+          "title": "Item 51",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "learning-content",
+          "title": "Item 52",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "learning-content",
+          "title": "Item 53",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "learning-content",
+          "title": "Item 54",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "learning-content",
+          "title": "Item 55",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "self-assessment-mc",
+          "title": "Was bedeutet eine stark negative Elektronenaffinität?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "self-assessment-mc",
+          "title": "Warum ist die Elektronenaffinität von Stickstoff ca. 0 kJ/mol?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 57,
+          "type": "self-assessment-mc",
+          "title": "Welches Element hat die höchste (negativste) Elektronenaffinität im gesamten Periodensystem?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 58,
+          "type": "matching",
+          "title": "Ordne den EA-Wert der passenden Aussage zur Stabilität zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 59,
+          "type": "practice-exercise",
+          "title": "Fluor vs. Chlor – EA-Vergleich",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 60,
+          "type": "youtube-video",
+          "title": "Elektronenaffinität einfach erklärt",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 61,
+          "type": "self-assessment",
+          "title": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
           "typeKeywords": [
             "selbsttest",
             "checkliste",

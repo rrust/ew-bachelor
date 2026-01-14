@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T13:29:59.246Z",
+  "exportedAt": "2026-01-14T12:53:03.303Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,45 +8,11 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-09-20T13:29:59.246Z",
-    "modules": {
-      "01-ernaehrungslehre-grundlagen": {
-        "status": "in-progress",
-        "lectures": {
-          "01-grundlagen-zellbiologie": {
-            "score": 96,
-            "badge": "gold"
-          },
-          "02-makronaehrstoffe-detail": {
-            "score": 68,
-            "badge": "bronze"
-          },
-          "03-fette-oele": {
-            "score": 94,
-            "badge": "gold"
-          }
-        },
-        "achievements": {
-          "cell-biology-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2026-01-11T13:29:59.246Z",
-            "expiresAt": "2026-02-10T13:29:59.246Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "makronaehrstoffe-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2026-01-02T13:29:59.246Z",
-            "expiresAt": "2026-02-01T13:29:59.246Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          }
-        }
-      }
-    },
+    "startedAt": "2025-08-04T12:53:03.303Z",
+    "modules": {},
     "streak": {
       "current": 8,
-      "lastActivityDate": "2026-01-13T10:00:00.000Z",
+      "lastActivityDate": "2026-01-14T10:00:00.000Z",
       "totalDays": 20,
       "longestStreak": 10,
       "rescueMode": false,
