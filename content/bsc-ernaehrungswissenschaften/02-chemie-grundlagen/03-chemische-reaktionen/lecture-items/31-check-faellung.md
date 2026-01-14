@@ -2,10 +2,10 @@
 type: 'self-assessment-mc'
 question: 'Welches der folgenden Salze ist gemäß den Löslichkeitsregeln wahrscheinlich schwerlöslich?'
 options:
-  - 'KNO₃ (Kaliumnitrat)'
-  - 'NaCl (Natriumchlorid)'
+  - 'KNO₃ (Kaliumnitrat, gut löslich)'
+  - 'NaCl (Natriumchlorid, gut löslich)'
   - 'CaCO₃ (Calciumcarbonat)'
-  - 'NH₄Cl (Ammoniumchlorid)'
+  - 'NH₄Cl (Ammoniumchlorid, löslich)'
 correctAnswer: 'CaCO₃ (Calciumcarbonat)'
 hint: 'Denken Sie an die Regeln: Nitrate sind immer löslich, Alkalimetallsalze sind immer löslich, aber was ist mit Carbonaten?'
 explanation: |

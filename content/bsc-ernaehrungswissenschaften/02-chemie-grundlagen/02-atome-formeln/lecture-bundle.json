@@ -511,10 +511,10 @@
       "topic": "Coulomb-Gesetz",
       "question": "Welches Ionenpaar hat bei gleichem Abstand die stärkste elektrostatische Anziehung?",
       "options": [
-        "Na⁺ und Cl⁻ (+1/−1)",
-        "K⁺ und Br⁻ (+1/−1)",
+        "Na⁺ und Cl⁻ (Ladungen +1/−1)",
+        "K⁺ und Br⁻ (Ladungen +1/−1)",
         "Ca²⁺ und O²⁻ (+2/−2)",
-        "Li⁺ und F⁻ (+1/−1)"
+        "Li⁺ und F⁻ (Ladungen +1/−1)"
       ],
       "correctAnswer": "Ca²⁺ und O²⁻ (+2/−2)",
       "explanation": "Nach dem Coulomb-Gesetz ist die Kraft proportional zum Produkt der Ladungen. Bei Ca²⁺/O²⁻ ist das Ladungsprodukt 2×2=4, während es bei allen anderen Paaren nur 1×1=1 ist. Die Anziehung ist also viermal stärker.",
@@ -601,10 +601,10 @@
       "topic": "Das Mol",
       "question": "Was ist ein Mol?",
       "options": [
-        "Die Masse eines Atoms in Gramm",
+        "Die Masse eines Atoms in Gramm, ausgedrückt als atomare Masseneinheit",
         "Eine Stoffmenge mit 6,022 × 10²³ Teilchen",
-        "Die Anzahl der Protonen in einem Atom",
-        "Eine Einheit für das Volumen von Gasen"
+        "Die Anzahl der Protonen im Kern eines bestimmten Atoms",
+        "Eine Einheit für das Volumen von Gasen unter Standardbedingungen"
       ],
       "correctAnswer": "Eine Stoffmenge mit 6,022 × 10²³ Teilchen",
       "explanation": "Ein Mol ist eine Stoffmenge, die genau 6,022 × 10²³ Teilchen enthält (Avogadro-Konstante). Diese Definition gilt für alle Arten von Teilchen: Atome, Moleküle, Ionen usw.",
@@ -615,12 +615,12 @@
       "topic": "Avogadro-Konstante",
       "question": "Wie groß ist die Avogadro-Konstante?",
       "options": [
-        "6,022 × 10²⁰",
-        "6,022 × 10²¹",
-        "6,022 × 10²³",
-        "6,022 × 10²⁶"
+        "6,022 × 10²⁰ mol⁻¹ (tausendfach zu klein)",
+        "6,022 × 10²¹ mol⁻¹ (hundertfach zu klein)",
+        "6,022 × 10²³ mol⁻¹",
+        "6,022 × 10²⁶ mol⁻¹ (tausendfach zu groß)"
       ],
-      "correctAnswer": "6,022 × 10²³",
+      "correctAnswer": "6,022 × 10²³ mol⁻¹",
       "explanation": "Die Avogadro-Konstante beträgt Nₐ = 6,022 × 10²³ mol⁻¹. Sie gibt an, wie viele Teilchen in einem Mol enthalten sind. Die Zahl wurde zu Ehren des italienischen Physikers Amedeo Avogadro benannt.",
       "content": ""
     },
@@ -761,10 +761,10 @@
       "topic": "Nomenklatur",
       "question": "Wie heißt die Verbindung Fe₂O₃?",
       "options": [
-        "Eisenoxid",
-        "Eisen(II)-oxid",
+        "Eisenoxid (allgemeine Bezeichnung)",
+        "Eisen(II)-oxid (FeO-Variante)",
         "Eisen(III)-oxid",
-        "Dieisen-trioxid"
+        "Dieisen-trioxid (griechisch)"
       ],
       "correctAnswer": "Eisen(III)-oxid",
       "explanation": "In Fe₂O₃ muss die Gesamtladung null sein. Oxid hat −2, also 3×(−2) = −6. Diese Ladung muss von 2 Eisen-Ionen ausgeglichen werden: 2x = +6, also x = +3. Daher ist es Eisen(III)-oxid. Bei Übergangsmetallen muss die Oxidationsstufe immer angegeben werden.",
@@ -1081,5 +1081,5 @@
       "explanation": "Ca ist in Gruppe 2 → Ca²⁺. Phosphat ist PO₄³⁻. Für Neutralität: 3×(+2) + 2×(−3) = +6 − 6 = 0. Daher ist die Formel Ca₃(PO₄)₂. CaPO₄ wäre nicht neutral (+2 + (−3) = −1)."
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.018Z"
+  "generatedAt": "2026-01-14T21:45:24.936Z"
 }

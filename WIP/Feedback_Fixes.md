@@ -236,15 +236,15 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 **Betroffene Dateien:** AI-Instruktionen (GEMINI.md, copilot-instructions.md)
 **Fix:** GEMINI.md aktualisiert mit Richtlinien: Max. 3-5 Wörter pro Box, keine `<br/>`-Tags, bei komplexen Zusammenhängen Tabellen/Listen bevorzugen
 
-### 🔄 Längste Antwort ist immer die richtige
+### ✅ Längste Antwort ist immer die richtige
 
 **Problem:** Bei MC-Fragen (z.B. Item 18) ist die längste Antwortoption fast immer korrekt. Das ermöglicht "Gaming" ohne Inhalt zu verstehen.
 **Gewünscht:**
 1. AI-Instruktionen anpassen: Antwortlängen variieren, Distraktoren auch lang formulieren ✅
-2. Bestehende Items korrigieren ⬜
+2. Bestehende Items korrigieren ✅
 **Betroffene Dateien:** AI-Instruktionen, alle self-assessment-mc Items
 **Fix (Teil 1):** GEMINI.md aktualisiert mit Regel: Korrekte Antwort darf NICHT die längste sein, mind. 1 Distraktor länger als korrekte Antwort
-**TODO:** Bestehende MC-Fragen durchgehen und Antwortlängen anpassen
+**Fix (Teil 2):** 49 MC-Fragen korrigiert - Distraktoren verlängert, sodass die längste Antwort nicht mehr systematisch die korrekte ist. Analyse-Script `scripts/analyze-mc-lengths.js` erstellt zur Prüfung.
 
 ### ✅ Matching zeigt "undefined" für alle Optionen
 

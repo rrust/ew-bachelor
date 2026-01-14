@@ -2,10 +2,10 @@
 type: 'self-assessment-mc'
 question: 'Was beschreibt das Lambert-Beer-Gesetz?'
 options:
-  - 'Den Zusammenhang zwischen pH und pOH'
+  - 'Den Zusammenhang zwischen pH-Wert und pOH-Wert in wässrigen Lösungen'
   - 'Die Beziehung zwischen Lichtabsorption und Konzentration'
-  - 'Die Neutralisation von Säuren'
-  - 'Die Dichte von Gasen'
+  - 'Die Neutralisationsreaktion von Säuren und Basen in Lösung'
+  - 'Die Dichte von idealen Gasen bei unterschiedlichen Temperaturen'
 correctAnswer: 'Die Beziehung zwischen Lichtabsorption und Konzentration'
 hint: 'Was misst ein Spektrophotometer?'
 explanation: |

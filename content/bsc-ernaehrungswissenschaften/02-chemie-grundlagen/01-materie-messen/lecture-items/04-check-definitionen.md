@@ -3,10 +3,10 @@ type: 'self-assessment-mc'
 topic: 'Grundlagen von Materie und Energie'
 question: 'Was ist die korrekte Definition von Energie?'
 options:
-  - 'Alles, was Masse hat und Raum einnimmt'
+  - 'Alles, was Masse besitzt und einen Raum im Universum einnimmt'
   - 'Die Kapazität, Arbeit zu leisten oder Wärme zu übertragen'
-  - 'Die kleinste Einheit eines chemischen Elements'
-  - 'Die Geschwindigkeit von Teilchen in einem Stoff'
+  - 'Die kleinste nicht weiter teilbare Einheit eines chemischen Elements'
+  - 'Die durchschnittliche Bewegungsgeschwindigkeit von Teilchen in einem Stoff'
 correctAnswer: 'Die Kapazität, Arbeit zu leisten oder Wärme zu übertragen'
 ---
 

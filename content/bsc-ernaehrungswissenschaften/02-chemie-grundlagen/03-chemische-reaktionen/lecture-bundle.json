@@ -59,10 +59,10 @@
       "type": "self-assessment-mc",
       "question": "Wie nennt man die Zahlen, die in einer Reaktionsgleichung **vor** den chemischen Formeln stehen?",
       "options": [
-        "Indizes",
-        "Exponenten",
+        "Indizes (tiefgestellte Zahlen)",
+        "Exponenten (hochgestellte Zahlen)",
         "Koeffizienten",
-        "Isotope"
+        "Isotope (Atomvarianten)"
       ],
       "correctAnswer": "Koeffizienten",
       "hint": "Diese Zahlen geben das Mengenverhältnis der Reaktionspartner an.",
@@ -234,10 +234,10 @@
       "type": "self-assessment-mc",
       "question": "Was bedeutet \"dynamisches Gleichgewicht\"?",
       "options": [
-        "Die Reaktion steht still",
-        "Edukte und Produkte sind in exakt gleicher Menge vorhanden",
+        "Die chemische Reaktion steht vollständig still, es findet keine Umwandlung mehr statt",
+        "Edukte und Produkte liegen in exakt gleicher Stoffmenge vor, das Verhältnis ist immer 1:1",
         "Hin- und Rückreaktion laufen gleich schnell ab, die Konzentrationen bleiben konstant",
-        "Die Temperatur ändert sich ständig"
+        "Die Temperatur im System ändert sich ständig aufgrund der ablaufenden Reaktionen"
       ],
       "correctAnswer": "Hin- und Rückreaktion laufen gleich schnell ab, die Konzentrationen bleiben konstant",
       "hint": "Achten Sie auf das Wort \"dynamisch\" – es bedeutet, dass etwas in Bewegung ist.",
@@ -422,10 +422,10 @@
       "type": "self-assessment-mc",
       "question": "Welches der folgenden Salze ist gemäß den Löslichkeitsregeln wahrscheinlich schwerlöslich?",
       "options": [
-        "KNO₃ (Kaliumnitrat)",
-        "NaCl (Natriumchlorid)",
+        "KNO₃ (Kaliumnitrat, gut löslich)",
+        "NaCl (Natriumchlorid, gut löslich)",
         "CaCO₃ (Calciumcarbonat)",
-        "NH₄Cl (Ammoniumchlorid)"
+        "NH₄Cl (Ammoniumchlorid, löslich)"
       ],
       "correctAnswer": "CaCO₃ (Calciumcarbonat)",
       "hint": "Denken Sie an die Regeln: Nitrate sind immer löslich, Alkalimetallsalze sind immer löslich, aber was ist mit Carbonaten?",
@@ -436,12 +436,12 @@
       "type": "self-assessment-mc",
       "question": "Was sind \"Zuschauer-Ionen\" (spectator ions) in einer Ionengleichung?",
       "options": [
-        "Ionen, die den Niederschlag bilden",
-        "Ionen, die nicht an der Reaktion teilnehmen und auf beiden Seiten unverändert erscheinen",
-        "Ionen, die das Reaktionsgleichgewicht beeinflussen",
-        "Ionen, die elektrischen Strom leiten"
+        "Ionen, die den schwer löslichen Niederschlag bilden und dabei aus der Lösung ausfallen",
+        "Ionen, die nicht an der Reaktion teilnehmen und auf beiden Seiten erscheinen",
+        "Ionen, die das Reaktionsgleichgewicht durch ihre Konzentration maßgeblich beeinflussen",
+        "Ionen, die in wässriger Lösung den elektrischen Strom leiten und als Elektrolyte wirken"
       ],
-      "correctAnswer": "Ionen, die nicht an der Reaktion teilnehmen und auf beiden Seiten unverändert erscheinen",
+      "correctAnswer": "Ionen, die nicht an der Reaktion teilnehmen und auf beiden Seiten erscheinen",
       "hint": "Der Name \"Zuschauer\" gibt einen Hinweis: Was macht ein Zuschauer bei einem Fußballspiel?",
       "explanation": "**Zuschauer-Ionen** nehmen an der eigentlichen Reaktion nicht teil – sie \"schauen nur zu\".\n\nSie erscheinen auf beiden Seiten der vollständigen Ionengleichung unverändert und werden deshalb in der Netto-Ionengleichung weggelassen.\n\n**Beispiel:** Bei NaCl(aq) + AgNO₃(aq) → AgCl(s) + NaNO₃(aq)\n- Zuschauer-Ionen: Na⁺ und NO₃⁻\n- Reaktive Ionen: Ag⁺ und Cl⁻\n",
       "content": ""
@@ -619,10 +619,10 @@
       "type": "self-assessment-mc",
       "question": "Welches Gas entsteht, wenn man Essig (Essigsäure) auf Backpulver (NaHCO₃) tropft?",
       "options": [
-        "Wasserstoff (H₂)",
-        "Sauerstoff (O₂)",
+        "Wasserstoff (H₂, brennbar)",
+        "Sauerstoff (O₂, Oxidator)",
         "Kohlendioxid (CO₂)",
-        "Stickstoff (N₂)"
+        "Stickstoff (N₂, inert)"
       ],
       "correctAnswer": "Kohlendioxid (CO₂)",
       "hint": "Backpulver enthält Natriumhydrogencarbonat – ein Carbonat. Was passiert, wenn Carbonate mit Säuren reagieren?",
@@ -1062,5 +1062,5 @@
       "explanation": "- ✓ Fällungsreaktion: Niederschlag entsteht\n- ✓ PbI₂ ist charakteristisch gelb\n- ✓ K⁺ und NO₃⁻ ändern sich nicht\n- ✗ Keine Redoxreaktion – keine Änderung der Oxidationszahlen!\n- ✓ PbI₂ ist schwerlöslich (Ausnahme bei Iodiden)\n- ✗ Netto-Ionengleichung: Pb²⁺ + 2 I⁻ → PbI₂ (nur 2 Ionenarten!)\n"
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.026Z"
+  "generatedAt": "2026-01-14T21:45:24.939Z"
 }

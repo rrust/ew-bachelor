@@ -113,9 +113,9 @@
       "topic": "Energie im EM-Spektrum",
       "question": "Welcher Bereich des elektromagnetischen Spektrums hat die höchste Energie?",
       "options": [
-        "Radiowellen",
-        "Infrarot",
-        "Sichtbares Licht",
+        "Radiowellen (lange Wellenlänge)",
+        "Infrarot (Wärmestrahlung)",
+        "Sichtbares Licht (380-750 nm)",
         "Ultraviolett (UV)"
       ],
       "correctAnswer": "Ultraviolett (UV)",
@@ -429,10 +429,10 @@
       "topic": "Absorption vs. Emission",
       "question": "Was passiert, wenn ein Elektron von n=1 auf n=3 wechselt?",
       "options": [
-        "Energie wird emittiert (Licht wird ausgesendet)",
+        "Energie wird emittiert, d.h. Licht wird ausgesendet und das Atom kühlt ab",
         "Energie wird absorbiert (Licht wird aufgenommen)",
-        "Das Elektron verlässt das Atom",
-        "Das Atom zerfällt radioaktiv"
+        "Das Elektron verlässt das Atom vollständig und bildet ein Kation",
+        "Das Atom zerfällt durch radioaktive Strahlung in kleinere Fragmente"
       ],
       "correctAnswer": "Energie wird absorbiert (Licht wird aufgenommen)",
       "explanation": "Um vom niedrigen Energieniveau (n=1, nah am Kern) auf ein höheres (n=3, weiter weg) zu kommen, muss Energie zugeführt (absorbiert) werden. Der umgekehrte Weg (n=3 → n=1) setzt Energie frei.",
@@ -443,10 +443,10 @@
       "topic": "Grenzen des Bohr-Modells",
       "question": "Für welches Atom funktionierte das Bohr-Modell exakt?",
       "options": [
-        "Helium (He)",
+        "Helium (He, zwei Elektronen)",
         "Wasserstoff (H)",
-        "Alle Atome",
-        "Eisen (Fe)"
+        "Alle Atome des Periodensystems",
+        "Eisen (Fe, Übergangsmetall)"
       ],
       "correctAnswer": "Wasserstoff (H)",
       "explanation": "Das Bohr-Modell konnte mathematisch exakt nur das Wasserstoffatom (1-Elektronen-System) erklären. Bei Atomen mit mehreren Elektronen versagt es, weil die Elektron-Elektron-Wechselwirkungen nicht berücksichtigt werden.",
@@ -533,10 +533,10 @@
       "topic": "Heisenberg-Unschärfe",
       "question": "Was besagt die Heisenbergsche Unschärferelation?",
       "options": [
-        "Man kann nie wissen, welches Element man vor sich hat",
+        "Man kann nie mit Sicherheit wissen, welches chemische Element man vor sich hat",
         "Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden",
-        "Elektronen bewegen sich in exakten Kreisbahnen",
-        "Die Lichtgeschwindigkeit ist die maximale Geschwindigkeit"
+        "Elektronen bewegen sich in exakten Kreisbahnen mit definierten Radien um den Kern",
+        "Die Lichtgeschwindigkeit im Vakuum ist die maximale Geschwindigkeit im Universum"
       ],
       "correctAnswer": "Ort und Impuls eines Elektrons können nicht gleichzeitig exakt bestimmt werden",
       "explanation": "Dies ist das fundamentale Prinzip der Quantenmechanik. Je genauer wir den Ort kennen, desto ungenauer wird der Impuls – und umgekehrt. Das Bohr-Modell mit seinen festen Bahnen ist damit nicht vereinbar.",
@@ -547,10 +547,10 @@
       "topic": "Definition Orbital",
       "question": "Was beschreibt ein Orbital?",
       "options": [
-        "Eine feste Kreisbahn um den Atomkern",
+        "Eine feste Kreisbahn mit definiertem Radius um den Atomkern herum",
         "Einen Raum, in dem sich ein Elektron mit hoher Wahrscheinlichkeit aufhält",
-        "Die exakte Position des Elektrons zu jedem Zeitpunkt",
-        "Die Ladung des Atomkerns"
+        "Die exakte, messbare Position des Elektrons zu jedem beliebigen Zeitpunkt",
+        "Die positive Ladung des Atomkerns, die durch die Protonenzahl bestimmt wird"
       ],
       "correctAnswer": "Einen Raum, in dem sich ein Elektron mit hoher Wahrscheinlichkeit aufhält",
       "explanation": "Orbitale sind Wahrscheinlichkeitswolken, keine festen Bahnen. Sie zeigen den Bereich, in dem sich das Elektron mit etwa 90% Wahrscheinlichkeit befindet.",
@@ -970,10 +970,10 @@
       "topic": "Aufbaureihenfolge",
       "question": "Welches Orbital wird zuerst gefüllt: 4s oder 3d?",
       "options": [
-        "3d, weil n kleiner ist",
+        "3d, weil die Hauptquantenzahl n bei 3d kleiner ist als bei 4s",
         "4s, weil es energetisch günstiger ist",
-        "Beide gleichzeitig",
-        "4s und 3d haben die gleiche Energie"
+        "Beide Orbitale werden gleichzeitig mit Elektronen besetzt",
+        "4s und 3d haben exakt die gleiche Energie (entartet)"
       ],
       "correctAnswer": "4s, weil es energetisch günstiger ist",
       "explanation": "Obwohl 3d eine kleinere Hauptquantenzahl hat, liegt das 4s-Orbital im neutralen Atom energetisch niedriger. Die Befüllungsreihenfolge ist: ...3p → 4s → 3d → 4p...",
@@ -1372,5 +1372,5 @@
       "explanation": "**Erklärung:** Linienspektren sind elementspezifisch. Natrium emittiert charakteristisches gelbes Licht. Flammenfärbung und AAS nutzen diese Prinzipien zur Elementanalyse. UV-Vis-Spektroskopie nutzt sowohl UV als auch sichtbares Licht (daher \"UV-Vis\")."
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.062Z"
+  "generatedAt": "2026-01-14T21:45:24.950Z"
 }

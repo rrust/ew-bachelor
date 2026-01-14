@@ -39,10 +39,10 @@
       "type": "self-assessment-mc",
       "question": "Was unterscheidet gesättigte von ungesättigten Fettsäuren?",
       "options": [
-        "Die Anzahl der Kohlenstoffatome",
+        "Die Anzahl der Kohlenstoffatome in der Kette",
         "Das Vorhandensein von Doppelbindungen",
-        "Die Länge der Kette",
-        "Der Energiegehalt"
+        "Die Länge der gesamten Fettsäurekette",
+        "Der Energiegehalt pro Gramm Fettsäure"
       ],
       "correctAnswer": "Das Vorhandensein von Doppelbindungen",
       "content": "**Genau!** Ungesättigte Fettsäuren haben eine oder mehrere Doppelbindungen, gesättigte Fettsäuren haben keine."
@@ -154,5 +154,5 @@
       "explanation": ""
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.011Z"
+  "generatedAt": "2026-01-14T21:45:24.932Z"
 }

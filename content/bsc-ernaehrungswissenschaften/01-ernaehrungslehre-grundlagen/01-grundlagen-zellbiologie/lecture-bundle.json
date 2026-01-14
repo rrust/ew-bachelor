@@ -25,10 +25,10 @@
       "topic": "Grundlagen der Zellbiologie",
       "question": "Was ist die Hauptfunktion der Mitochondrien?",
       "options": [
-        "Proteinsynthese",
+        "Proteinsynthese und Herstellung neuer Proteine",
         "Energiegewinnung (ATP-Produktion)",
-        "Speicherung von Erbinformation",
-        "Abbau von Abfallprodukten"
+        "Speicherung und Vervielfältigung von Erbinformation",
+        "Abbau von Abfallprodukten und Zellresten"
       ],
       "correctAnswer": "Energiegewinnung (ATP-Produktion)",
       "content": "**Erklärung:** Mitochondrien sind die \"Kraftwerke\" der Zelle. In ihnen findet die Zellatmung statt, bei der aus Nährstoffen wie Glukose die universelle Energiewährung ATP (Adenosintriphosphat) gewonnen wird."
@@ -38,10 +38,10 @@
       "topic": "Grundlagen der Zellbiologie",
       "question": "Welches Organell ist für die Verpackung und den Versand von Proteinen zuständig?",
       "options": [
-        "Ribosom",
-        "Lysosom",
+        "Ribosom (Proteinbiosynthese)",
+        "Lysosom (Abbau von Makromolekülen)",
         "Golgi-Apparat",
-        "Zellkern"
+        "Zellkern (DNA-Speicherung)"
       ],
       "correctAnswer": "Golgi-Apparat",
       "content": "**Erklärung:** Der Golgi-Apparat modifiziert, sortiert und verpackt Proteine und Lipide für den Transport zu anderen Zielen in der Zelle oder für die Sekretion aus der Zelle."
@@ -106,10 +106,10 @@
       "topic": "Grundlagen der Ernährung",
       "question": "Welcher der folgenden Nährstoffe ist ein Makronährstoff?",
       "options": [
-        "Vitamin C",
-        "Eisen",
+        "Vitamin C (Ascorbinsäure)",
+        "Eisen (Spurenelement)",
         "Kohlenhydrate",
-        "Kalzium"
+        "Kalzium (Mineralstoff)"
       ],
       "correctAnswer": "Kohlenhydrate",
       "content": "**Erklärung:** Kohlenhydrate sind neben Proteinen und Fetten einer der drei Makronährstoffe, die dem Körper Energie liefern. Vitamine und Mineralstoffe sind Mikronährstoffe."
@@ -217,5 +217,5 @@
       "explanation": "**Erklärung:**\n\n**Richtig:**\n- Mitochondrien sind die \"Kraftwerke\" der Zelle und produzieren ATP durch Zellatmung\n- Der Golgi-Apparat modifiziert Proteine nach ihrer Synthese und sortiert sie für den Transport\n\n**Falsch:**\n- Der Zellkern ist nur in eukaryotischen Zellen vorhanden, nicht in prokaryotischen\n- Ribosomen sind für die Proteinsynthese zuständig, nicht für die Fettsynthese (diese findet im glatten ER statt)"
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.003Z"
+  "generatedAt": "2026-01-14T21:45:24.928Z"
 }

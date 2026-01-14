@@ -66,10 +66,10 @@
       "topic": "Grundlagen von Materie und Energie",
       "question": "Was ist die korrekte Definition von Energie?",
       "options": [
-        "Alles, was Masse hat und Raum einnimmt",
+        "Alles, was Masse besitzt und einen Raum im Universum einnimmt",
         "Die Kapazität, Arbeit zu leisten oder Wärme zu übertragen",
-        "Die kleinste Einheit eines chemischen Elements",
-        "Die Geschwindigkeit von Teilchen in einem Stoff"
+        "Die kleinste nicht weiter teilbare Einheit eines chemischen Elements",
+        "Die durchschnittliche Bewegungsgeschwindigkeit von Teilchen in einem Stoff"
       ],
       "correctAnswer": "Die Kapazität, Arbeit zu leisten oder Wärme zu übertragen",
       "content": "**Erklärung:** Energie ist definiert als die Kapazität eines Systems, Arbeit zu leisten oder Wärme zu übertragen. Die erste Option beschreibt Materie, nicht Energie. Energie kann in verschiedenen Formen existieren (kinetisch, potentiell, thermisch, chemisch) und zwischen diesen umgewandelt werden."
@@ -935,5 +935,5 @@
       "explanation": "**Erklärung:** Präzision = Reproduzierbarkeit (enge Streuung), Genauigkeit = Übereinstimmung mit wahrem Wert. Beide sind unabhängig voneinander: Man kann präzise daneben liegen oder im Durchschnitt richtig, aber mit großer Streuung. Bei Flächenumrechnung: 1 m = 100 cm, also 1 m² = 10.000 cm² (Faktor quadriert)."
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.013Z"
+  "generatedAt": "2026-01-14T21:45:24.933Z"
 }

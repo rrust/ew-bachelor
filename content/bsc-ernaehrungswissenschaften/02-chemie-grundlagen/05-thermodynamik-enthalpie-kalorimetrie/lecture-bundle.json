@@ -77,12 +77,12 @@
       "topic": "Grundlagen von Energie und Chemie",
       "question": "Was versteht man unter thermischer Energie (\"Wärme\") im thermodynamischen Sinne?",
       "options": [
-        "Die gesamte gespeicherte Energie in einem Stoff",
-        "Die Energie, die aufgrund von Temperaturunterschieden zwischen Objekten fließt",
-        "Die Energie, die durch chemische Bindungen entsteht",
-        "Die Fähigkeit eines Stoffes, zu brennen"
+        "Die gesamte in einem Stoff gespeicherte Energie inklusive aller Bindungsenergien",
+        "Die Energie, die aufgrund von Temperaturunterschieden fließt",
+        "Die durch chemische Bindungsbildung oder Bindungsbruch entstehende Energiemenge",
+        "Die Fähigkeit eines brennbaren Stoffes, mit Sauerstoff zu oxidieren"
       ],
-      "correctAnswer": "Die Energie, die aufgrund von Temperaturunterschieden zwischen Objekten fließt",
+      "correctAnswer": "Die Energie, die aufgrund von Temperaturunterschieden fließt",
       "hint": "Wärme ist kein gespeicherter \"Stoff\" - sie entsteht nur beim Transfer zwischen Objekten mit unterschiedlicher Temperatur.",
       "explanation": "Wärme ist definiert als der Energietransfer, der durch eine Temperaturdifferenz ($\\Delta T$) verursacht wird. Sie ist keine in einem Körper gespeicherte Substanz, sondern existiert nur während des Flusses von warm nach kalt.",
       "content": ""
@@ -246,10 +246,10 @@
       "topic": "Innere Energie und Systemgrenzen",
       "question": "Woraus setzt sich die Innere Energie $U$ eines Systems zusammen?",
       "options": [
-        "Nur aus der Temperatur",
+        "Ausschließlich aus der Temperatur des Systems, nicht aus den Teilchenbewegungen",
         "Aus der Summe von Potentieller Energie (PE) und Kinetischer Energie (KE)",
-        "Nur aus der bewegten Masse",
-        "Aus Wärme und Arbeit"
+        "Nur aus der bewegten Masse der Teilchen, ohne Berücksichtigung der Bindungen",
+        "Aus Wärme und Arbeit, die über die Systemgrenzen ausgetauscht werden"
       ],
       "correctAnswer": "Aus der Summe von Potentieller Energie (PE) und Kinetischer Energie (KE)",
       "hint": "Die Definition der inneren Energie bezieht sich auf die Energie aller Teilchen im System.",
@@ -421,9 +421,9 @@
       "question": "Wie viel Joule entsprechen 100 cal?",
       "options": [
         "418,4 J",
-        "23,9 J",
-        "41840 J",
-        "100 J"
+        "23,9 J (falsche Umrechnung)",
+        "41840 J (faktor 100 zu hoch)",
+        "100 J (ohne Umrechnung)"
       ],
       "correctAnswer": "418,4 J",
       "hint": "Die Umrechnung lautet: 1 cal = 4,184 J",
@@ -607,10 +607,10 @@
       "topic": "Energie bei Phasenübergängen",
       "question": "Warum kühlt Verdunstung die Umgebung?",
       "options": [
-        "Weil Dampf kälter ist als Wasser",
+        "Weil Dampf kälter ist als flüssiges Wasser und die Umgebung abkühlt",
         "Weil der Phasenübergang flüssig → gasförmig endotherm ist",
-        "Weil Wasser Wärme isoliert",
-        "Weil Gasteilchen langsamer sind als Flüssigkeitsteilchen"
+        "Weil Wasser durch seine hohe Wärmekapazität die Umgebung isoliert",
+        "Weil Gasteilchen langsamer sind als Flüssigkeitsteilchen bei gleicher Temperatur"
       ],
       "correctAnswer": "Weil der Phasenübergang flüssig → gasförmig endotherm ist",
       "hint": "Denke daran, woher die Energie für die Verdampfung kommt.",
@@ -777,10 +777,10 @@
       "topic": "Der Erste Hauptsatz und Enthalpie",
       "question": "Was gilt für einen Prozess bei konstantem Druck?",
       "options": [
-        "$\\Delta U = q$",
+        "$\\Delta U = q$ (bei konstantem Volumen)",
         "$\\Delta H = q_p$",
-        "$w = 0$",
-        "$\\Delta H = 0$"
+        "$w = 0$ (bei isochoren Prozessen)",
+        "$\\Delta H = 0$ (nur bei adiabatisch)"
       ],
       "correctAnswer": "$\\Delta H = q_p$",
       "hint": "Die Enthalpie wurde genau für diese Situation definiert.",
@@ -1137,12 +1137,12 @@
       "topic": "Kalorimetrie (Experimentelle Messung)",
       "question": "Warum muss man bei der Kalorimetrie die Wärmekapazität der \"Bombe\" berücksichtigen?",
       "options": [
-        "Weil sie aus Metall ist und auch Wärme aufnimmt",
-        "Weil Wasser verdunstet",
-        "Weil der Druck steigt",
-        "Weil die Probe nicht vollständig verbrennt"
+        "Weil das Metall auch Wärme aufnimmt",
+        "Weil Wasser verdunstet und Energie abführt",
+        "Weil der Druck steigt und die Messung verfälscht",
+        "Weil die Probe nicht immer vollständig verbrennt"
       ],
-      "correctAnswer": "Weil sie aus Metall ist und auch Wärme aufnimmt",
+      "correctAnswer": "Weil das Metall auch Wärme aufnimmt",
       "hint": "Nicht nur das Wasser wird bei der Reaktion erwärmt...",
       "explanation": "Nicht nur das Wasser wird durch die Reaktionswärme erwärmt, sondern auch der Stahlbehälter, der Rührer, das Thermometer und andere Metallteile. Diese absorbieren einen Teil der Reaktionswärme und müssen daher in der Berechnung berücksichtigt werden.",
       "content": ""
@@ -1233,12 +1233,12 @@
       "topic": "Anwendung Ernährungswissenschaft",
       "question": "Warum ist der physiologische Brennwert von Proteinen niedriger als der physikalische Brennwert?",
       "options": [
-        "Weil Proteine im Körper nicht vollständig abgebaut werden - der Stickstoff wird als Harnstoff ausgeschieden",
-        "Weil Proteine weniger Kalorien enthalten als Fett",
-        "Weil Proteine nicht im Bombenkalorimeter verbrannt werden können",
-        "Weil der Körper Proteine besser speichern kann als Kohlenhydrate"
+        "Weil Proteine im Körper nicht vollständig abgebaut werden - Stickstoff wird ausgeschieden",
+        "Weil Proteine grundsätzlich weniger Kalorien pro Gramm enthalten als Fett oder Kohlenhydrate und daher energetisch schlechter verwertet werden",
+        "Weil Proteine aufgrund ihrer Stickstoffatome nicht im Bombenkalorimeter verbrannt werden können",
+        "Weil der Körper Proteine als Baustoff verwendet und besser speichern kann als Kohlenhydrate"
       ],
-      "correctAnswer": "Weil Proteine im Körper nicht vollständig abgebaut werden - der Stickstoff wird als Harnstoff ausgeschieden",
+      "correctAnswer": "Weil Proteine im Körper nicht vollständig abgebaut werden - Stickstoff wird ausgeschieden",
       "hint": "Im Kalorimeter wird Protein zu CO₂, H₂O und N₂ verbrannt. Im Körper passiert etwas anderes mit dem Stickstoff...",
       "explanation": "Im Bombenkalorimeter wird Protein vollständig oxidiert. Im Körper wird der Stickstoff jedoch als Harnstoff (CO(NH₂)₂) ausgeschieden, der noch chemische Energie enthält. Diese \"verlorene\" Energie (etwa 5 kJ/g Protein) wird beim physiologischen Brennwert abgezogen.",
       "content": ""
@@ -1558,5 +1558,5 @@
       "explanation": "Alle Aussagen sind korrekt! Der physiologische Brennwert von Protein ist niedriger, weil Harnstoff noch Energie enthält. Umgangssprachliche \"Kalorien\" sind kcal. Fett (9 kcal/g) liefert etwa das Doppelte von KH/Protein (4 kcal/g). 1 kcal = 4,184 kJ. Ethanol (7 kcal/g) liegt dazwischen."
     }
   ],
-  "generatedAt": "2026-01-14T20:24:53.045Z"
+  "generatedAt": "2026-01-14T21:45:24.946Z"
 }
