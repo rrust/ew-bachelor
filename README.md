@@ -11,17 +11,19 @@ Eine spielerische Lern-App für Hochschul-Studiengänge mit modularen Vorlesunge
 
 - 🎓 Multi-Study Support – mehrere Studiengänge in einer App
 - 📚 Modulare Vorlesungen mit verschiedenen Content-Typen
-- 🎯 Tests & Self-Assessments für Wissensüberprüfung
+- 🎧 Audio-Unterstützung – optionale Audio-Dateien für Vorlesungen und Lern-Items
+- ✅ Tests & Self-Assessments für Wissensüberprüfung
 - 🏆 Achievement-System mit zeitlich begrenzten Lernhilfen
-- 🏋️ Trainings-Modus mit Token-System für Achievement-Verlängerungen
+- 💪 Trainings-Modus mit Token-System für Achievement-Verlängerungen
 - 📊 Progress Tracking mit Badges und Statistiken
 - 💾 Fortschritt-Backup & Restore
 - 🔍 Globale Suche über alle Inhalte
 - 📱 PWA – installierbar als Offline-App mit Push-Benachrichtigungen
-- � Offline-Modus – alle Inhalte werden automatisch synchronisiert
-- �👆 Swipe-Gesten für mobile Navigation
+- 📥 Offline-Modus – alle Inhalte werden automatisch synchronisiert
+- 👆 Swipe-Gesten für mobile Navigation
 - 🗺️ Studienstruktur-Map zur Übersicht
-- 🌓 Dark Mode Support
+- ⌨️ Tastaturkürzel für schnelle Navigation am Desktop
+- 🌙 Dark Mode Support
 
 ## Browser App
 

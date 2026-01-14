@@ -39,6 +39,13 @@ function handleKeyDown(e) {
     return;
   }
 
+  // Show keyboard shortcuts help with ? key
+  if (e.key === '?' || (e.shiftKey && e.key === '/')) {
+    e.preventDefault();
+    openKeyboardShortcutsOverlay();
+    return;
+  }
+
   // Get current active view
   const activeView = getActiveView();
 
@@ -59,6 +66,13 @@ function handleKeyDown(e) {
 function handleEscape(activeElement, isTyping) {
   if (isTyping) {
     activeElement.blur();
+    return;
+  }
+
+  // Close keyboard shortcuts overlay if open
+  const keyboardOverlay = document.getElementById('keyboard-shortcuts-overlay');
+  if (keyboardOverlay && !keyboardOverlay.classList.contains('hidden')) {
+    closeKeyboardShortcutsOverlay();
     return;
   }
 
@@ -118,13 +132,19 @@ function getActiveView() {
     'tools-view',
     'map-view',
     'progress-view',
-    'search-view'
+    'search-view',
+    'alerts-view',
+    'training-view'
   ];
 
   for (const viewId of views) {
     const view = document.getElementById(viewId);
-    if (view && view.style.display !== 'none') {
-      return viewId.replace('-view', '');
+    // Check both inline style and computed style for visibility
+    if (view) {
+      const style = window.getComputedStyle(view);
+      if (style.display !== 'none' && view.style.display !== 'none') {
+        return viewId.replace('-view', '');
+      }
     }
   }
   return null;
@@ -136,7 +156,11 @@ function getActiveView() {
  * @returns {boolean} True if visible
  */
 function isVisible(el) {
-  return !!(el && el.offsetParent !== null && el.style.display !== 'none');
+  if (!el) return false;
+  // Check computed style for more reliable visibility detection
+  // (offsetParent is null for fixed/sticky positioned elements)
+  const style = window.getComputedStyle(el);
+  return style.display !== 'none' && style.visibility !== 'hidden';
 }
 
 /**
@@ -147,6 +171,7 @@ function handleLectureKeys(e) {
   const lectureOverview = document.getElementById('lecture-overview');
 
   // Check if we're in player mode (not overview)
+  // Use computed style since lecture-player is position:fixed
   const inPlayer = lecturePlayer && isVisible(lecturePlayer);
   const inOverview = lectureOverview && isVisible(lectureOverview);
 
@@ -318,14 +343,54 @@ function showKeyboardHelp() {
   return { title: 'Tastaturkürzel', html, shortcuts };
 }
 
+/**
+ * Open the keyboard shortcuts overlay
+ */
+function openKeyboardShortcutsOverlay() {
+  const overlay = document.getElementById('keyboard-shortcuts-overlay');
+  if (overlay) {
+    overlay.classList.remove('hidden');
+    // Re-inject icons if needed
+    if (window.Icons && window.Icons.injectAll) {
+      window.Icons.injectAll();
+    }
+  }
+}
+
+/**
+ * Close the keyboard shortcuts overlay
+ */
+function closeKeyboardShortcutsOverlay() {
+  const overlay = document.getElementById('keyboard-shortcuts-overlay');
+  if (overlay) {
+    overlay.classList.add('hidden');
+  }
+}
+
+/**
+ * Initialize keyboard shortcuts button in Tools view
+ */
+function initKeyboardShortcutsButton() {
+  const btn = document.getElementById('show-keyboard-shortcuts-button');
+  if (btn) {
+    btn.addEventListener('click', openKeyboardShortcutsOverlay);
+  }
+}
+
 // Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
   initKeyboardNavigation();
   enhanceFocusStyles();
+  initKeyboardShortcutsButton();
 });
 
 // Expose globally
 window.KeyboardNav = {
   init: initKeyboardNavigation,
-  showHelp: showKeyboardHelp
+  showHelp: showKeyboardHelp,
+  openOverlay: openKeyboardShortcutsOverlay,
+  closeOverlay: closeKeyboardShortcutsOverlay
 };
+
+// Expose close function globally for onclick handlers
+window.closeKeyboardShortcutsOverlay = closeKeyboardShortcutsOverlay;

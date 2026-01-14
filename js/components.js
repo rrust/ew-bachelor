@@ -8,6 +8,7 @@
  * @param {string} options.trainingUrl - URL for training button
  * @param {string} options.trainingTitle - Tooltip for training button
  * @param {boolean} options.showSearch - Whether to show search button (default: true)
+ * @param {boolean} options.hideCoreIconsOnMobile - Hide training/streak/alerts on mobile (default: false)
  * @param {Array} options.extraButtons - Additional buttons to insert before standard icons
  * @returns {string} HTML string for icon buttons
  */
@@ -17,8 +18,14 @@ function generateHeaderIconButtons(options) {
     trainingUrl = '#/training',
     trainingTitle = 'Training',
     showSearch = true,
+    hideCoreIconsOnMobile = false,
     extraButtons = []
   } = options;
+
+  // CSS class to hide on mobile (only for lecturePlayer)
+  const mobileHideClass = hideCoreIconsOnMobile
+    ? 'lecture-player-hide-mobile'
+    : '';
 
   // Get training tokens
   const trainingStats = window.getTrainingStats
@@ -55,7 +62,7 @@ function generateHeaderIconButtons(options) {
   html += `
     <button
       onclick="window.location.hash='${trainingUrl}'"
-      class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
+      class="${mobileHideClass} relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-blue-500"
       title="${trainingTitle} (${tokenCount} Tokens)"
     >
       ${Icons.get('token')}
@@ -74,7 +81,7 @@ function generateHeaderIconButtons(options) {
     html += `
       <button
         onclick="window.location.hash='#/alerts'"
-        class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-orange-500"
+        class="${mobileHideClass} relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 text-orange-500"
         title="${streakInfo.statusText}"
       >
         ${Icons.get('fire')}
@@ -97,11 +104,11 @@ function generateHeaderIconButtons(options) {
     <button
       id="nav-alerts${idSuffix}"
       onclick="window.location.hash='#/alerts'"
-      class="relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
-        unreadCount > 0
-          ? 'text-blue-600 dark:text-blue-400'
-          : 'text-gray-600 dark:text-gray-400'
-      }"
+      class="${mobileHideClass} relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
+    unreadCount > 0
+      ? 'text-blue-600 dark:text-blue-400'
+      : 'text-gray-600 dark:text-gray-400'
+  }"
       title="Benachrichtigungen"
     >
       ${Icons.get('bell')}
@@ -367,6 +374,7 @@ function createAppHeader(view = 'moduleMap', options = {}) {
               idSuffix: idSuffix,
               trainingUrl: trainingLectureUrl,
               trainingTitle: 'Training für diese Vorlesung',
+              hideCoreIconsOnMobile: true,
               extraButtons: [
                 `<!-- Overview Button (Icon) -->
                 <button

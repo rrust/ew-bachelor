@@ -772,6 +772,175 @@
               Cache leeren
             </button>
           </div>
+
+          <!-- Keyboard Navigation Card -->
+          <div
+            class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
+          >
+            <div class="flex items-center mb-4">
+              <span
+                data-icon="keyboard"
+                data-icon-class="w-8 h-8 text-indigo-600 dark:text-indigo-400 mr-3"
+              ></span>
+              <h3 class="text-xl font-bold">Tastaturkürzel</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Navigiere schneller mit Tastaturkürzeln. Ideal für
+              Desktop-Nutzung.
+            </p>
+            <button
+              id="show-keyboard-shortcuts-button"
+              class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md transition duration-200"
+            >
+              Kürzel anzeigen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Keyboard Shortcuts Overlay -->
+    <div
+      id="keyboard-shortcuts-overlay"
+      class="hidden fixed inset-0 z-50 flex items-center justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50"
+        onclick="window.closeKeyboardShortcutsOverlay()"
+      ></div>
+      <div
+        class="relative bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-md w-full mx-4 p-6 max-h-[80vh] overflow-y-auto"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-bold text-gray-800 dark:text-gray-200">
+            ⌨️ Tastaturkürzel
+          </h2>
+          <button
+            onclick="window.closeKeyboardShortcutsOverlay()"
+            class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition"
+          >
+            <span
+              data-icon="close"
+              data-icon-class="w-5 h-5 text-gray-500"
+            ></span>
+          </button>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Lecture Player -->
+          <div>
+            <h3
+              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3"
+            >
+              Vorlesungs-Player
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Nächster Schritt</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >→</kbd
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Vorheriger Schritt</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >←</kbd
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Übersicht öffnen</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >O</kbd
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Quiz starten</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >Q</kbd
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Quiz -->
+          <div>
+            <h3
+              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3"
+            >
+              Quiz
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Antwort auswählen</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >1-9</kbd
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Antwort abschicken</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >Enter</kbd
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Global -->
+          <div>
+            <h3
+              class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3"
+            >
+              Global
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Suche öffnen</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >/</kbd
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700 dark:text-gray-300"
+                  >Zurück / Schließen</span
+                >
+                <kbd
+                  class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm font-mono"
+                  >Esc</kbd
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <p class="text-xs text-gray-500 dark:text-gray-400 text-center">
+            Tipp: Drücke
+            <kbd class="px-1 bg-gray-100 dark:bg-gray-700 rounded text-xs"
+              >?</kbd
+            >
+            um diese Hilfe jederzeit zu öffnen
+          </p>
         </div>
       </div>
     </div>

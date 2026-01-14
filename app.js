@@ -878,12 +878,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   function renderCurrentLectureItem() {
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     const sources = lecture?.sources || [];
+    const currentItem = lectureState.currentItems[lectureState.currentIndex];
 
-    // Build intro audio URL if available (only on first item)
-    let introAudioUrl = null;
-    if (lecture?.introAudio && lectureState.currentIndex === 0) {
+    // Build audio URL if available for current item
+    let itemAudioUrl = null;
+    if (currentItem?.audioFile) {
       const studyId = getAppSettings().activeStudyId;
-      introAudioUrl = `content/${studyId}/${currentModuleId}/${currentLectureId}/${lecture.introAudio}`;
+      // lecture.mp3 is in lecture folder, item audio files are in lecture-items/
+      const audioPath =
+        currentItem.audioFile === 'lecture.mp3'
+          ? `content/${studyId}/${currentModuleId}/${currentLectureId}/${currentItem.audioFile}`
+          : `content/${studyId}/${currentModuleId}/${currentLectureId}/lecture-items/${currentItem.audioFile}`;
+      itemAudioUrl = audioPath;
     }
 
     window.LectureModule.renderCurrentLectureItem(
@@ -894,7 +900,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       renderImage,
       renderMermaidDiagram,
       sources,
-      introAudioUrl
+      itemAudioUrl
     );
   }
 

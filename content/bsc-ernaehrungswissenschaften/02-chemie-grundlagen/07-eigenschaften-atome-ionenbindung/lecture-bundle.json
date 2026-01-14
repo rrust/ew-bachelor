@@ -18,15 +18,15 @@
         "title": "Mortimer & Müller: Chemie - Das Basiswissen (10. Aufl.)",
         "type": "book"
       }
-    ],
-    "introAudio": "intro.mp3"
+    ]
   },
   "items": [
     {
       "type": "learning-content",
       "topic": "Eigenschaften der Atome und die Ionenbindung",
       "content": "# Eigenschaften der Atome und die Ionenbindung\n\nIn diesem Kapitel lernst du, wie sich die Eigenschaften der Elemente systematisch im Periodensystem ändern. Du wirst verstehen, warum Atome unterschiedlich groß sind, warum manche Elemente leicht Elektronen abgeben und andere sie bevorzugt aufnehmen.\n\n## Lernziele\n\nNach dieser Vorlesung kannst du:\n\n- Die effektive Kernladung $Z^*$ berechnen und ihre Bedeutung erklären\n- Atomradius-Trends in Perioden und Gruppen vorhersagen\n- Den Unterschied zwischen Kationen- und Anionengrößen erklären\n- Isoelektronische Reihen nach Größe ordnen\n- Ionisierungsenergien und ihre Trends interpretieren\n- Elektronenaffinitäten erklären (inkl. Anomalien wie F vs. Cl)\n- Periodentrends auf unbekannte Elemente anwenden",
-      "sourceRefs": []
+      "sourceRefs": [],
+      "audioFile": "lecture.mp3"
     },
     {
       "type": "learning-content",
@@ -1168,5 +1168,5 @@
       "explanation": "Die F/Cl-Anomalie ist ein klassisches Prüfungsthema. Fluor ist zwar elektronegativer, hat aber wegen seiner geringen Größe und der daraus resultierenden hohen Ladungsdichte eine niedrigere EA als Chlor."
     }
   ],
-  "generatedAt": "2026-01-14T21:45:24.953Z"
+  "generatedAt": "2026-01-14T22:02:30.382Z"
 }

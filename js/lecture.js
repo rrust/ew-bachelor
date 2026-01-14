@@ -132,7 +132,7 @@ function startLecture(
  * @param {Function} renderImage - Image render function
  * @param {Function} renderMermaidDiagram - Mermaid diagram render function
  * @param {Array} sources - Array of source objects from lecture.md
- * @param {string|null} introAudioUrl - URL to intro audio file (only for first item)
+ * @param {string|null} itemAudioUrl - URL to audio file for current item
  */
 function renderCurrentLectureItem(
   lectureState,
@@ -142,15 +142,15 @@ function renderCurrentLectureItem(
   renderImage,
   renderMermaidDiagram,
   sources = [],
-  introAudioUrl = null
+  itemAudioUrl = null
 ) {
   const item = lectureState.currentItems[lectureState.currentIndex];
   const lectureItemDisplay = document.getElementById('lecture-item-display');
   lectureItemDisplay.innerHTML = ''; // Clear previous item
 
-  // Add intro audio player if available (only on first item)
-  if (introAudioUrl) {
-    const audioPlayerHtml = renderIntroAudioPlayer(introAudioUrl);
+  // Add audio player if available for this item
+  if (itemAudioUrl) {
+    const audioPlayerHtml = renderItemAudioPlayer(itemAudioUrl);
     lectureItemDisplay.insertAdjacentHTML('beforeend', audioPlayerHtml);
   }
 
@@ -1308,16 +1308,16 @@ function showLectureOverview(
 }
 
 /**
- * Renders an audio player for the lecture intro
+ * Renders an audio player for a lecture item
  * @param {string} audioUrl - URL to the audio file
  * @returns {string} HTML string for the audio player
  */
-function renderIntroAudioPlayer(audioUrl) {
+function renderItemAudioPlayer(audioUrl) {
   return `
-    <div class="intro-audio-player mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-750 rounded-xl border border-blue-100 dark:border-gray-700">
+    <div class="item-audio-player mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-750 rounded-xl border border-blue-100 dark:border-gray-700">
       <div class="flex items-center gap-3 mb-3">
         <span class="text-2xl">🎧</span>
-        <span class="font-medium text-gray-700 dark:text-gray-300">Einführung anhören</span>
+        <span class="font-medium text-gray-700 dark:text-gray-300">Anhören</span>
       </div>
       <audio controls class="w-full" preload="metadata">
         <source src="${audioUrl}" type="audio/mpeg">

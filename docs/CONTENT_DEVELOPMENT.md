@@ -50,8 +50,10 @@ content/
     │   └── 01-cheatsheet.md
     └── 01-vorlesung-thema/              # Vorlesungs-Ordner (nummeriert)
         ├── lecture.md                    # Vorlesungs-Metadaten
+        ├── lecture.mp3                   # Audio für Vorlesungs-Einführung (optional)
         ├── lecture-items/                # Einzelne Lern-Items
         │   ├── 01-einleitung.md         # Nummeriert für Reihenfolge
+        │   ├── 01-einleitung.mp3        # Audio für dieses Item (optional)
         │   ├── 02-konzept-test.md       # Self-Assessment
         │   ├── 03-video.md              # YouTube Video
         │   ├── 04-diagramm.md           # Mermaid Diagramm
@@ -191,9 +193,27 @@ Kurze Einleitung oder Lernziele (optional).
 - `version`: Versionsnummer nach SemVer (z.B. '0.0.1', '1.0.0')
 - `sources`: Array der Quellenreferenzen (siehe [Quellenreferenz-System](#quellenreferenz-system))
 
+**Audio-Datei (optional):**
+
+Lege eine `lecture.mp3` Datei neben der `lecture.md` ab, um die Vorlesungs-Einführung als Audio anzubieten. Die App erkennt die Datei automatisch und zeigt einen Audio-Player an.
+
 ### 2. Vorlesungs-Items (lecture-items/)
 
 Jede Datei in `lecture-items/` ist ein einzelnes Lern-Element.
+
+#### Audio für Lecture-Items
+
+Lege eine MP3-Datei mit **demselben Basisnamen** wie das Lecture-Item ab, um Audio für dieses Item anzubieten:
+
+```text
+lecture-items/
+├── 01-einleitung.md      ← Lecture-Item
+├── 01-einleitung.mp3     ← Audio für dieses Item (optional)
+├── 02-konzept.md
+└── 03-video.md
+```
+
+Die App erkennt Audio-Dateien automatisch und zeigt einen Audio-Player beim entsprechenden Item an.
 
 #### Learning Content (Text)
 
