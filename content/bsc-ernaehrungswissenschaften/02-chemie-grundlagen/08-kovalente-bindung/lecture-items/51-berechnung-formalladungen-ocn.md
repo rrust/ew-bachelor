@@ -1,0 +1,22 @@
+---
+type: 'calculation'
+question: 'Berechne die Formalladungen für alle Atome im Cyanat-Ion (OCN⁻) für die Struktur O=C=N.'
+tasks:
+  - question: 'Formalladung des Sauerstoffs (O)'
+    setup: 'O hat 2 Bindungen (Doppelbindung) und 4 freie Elektronen'
+    correctAnswer: '0'
+    unit: ''
+    solution: 'FL(O) = 6 − 2 − 4 = 0'
+  - question: 'Formalladung des Kohlenstoffs (C)'
+    setup: 'C hat 4 Bindungen (2 Doppelbindungen) und 0 freie Elektronen'
+    correctAnswer: '0'
+    unit: ''
+    solution: 'FL(C) = 4 − 4 − 0 = 0'
+  - question: 'Formalladung des Stickstoffs (N)'
+    setup: 'N hat 2 Bindungen (Doppelbindung) und 4 freie Elektronen'
+    correctAnswer: '-1'
+    unit: ''
+    solution: 'FL(N) = 5 − 2 − 4 = −1'
+hint: 'Vergiss nicht: Die Summe muss −1 ergeben (Gesamtladung des Ions).'
+successMessage: 'Richtig! FL(O)=0, FL(C)=0, FL(N)=−1. Summe: 0+0+(−1) = −1 ✓'
+---
