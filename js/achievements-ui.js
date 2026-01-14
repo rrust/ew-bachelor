@@ -203,11 +203,22 @@ function showAchievementModal(achievement) {
 
   // Parse markdown content on-the-fly (for lazy-loaded achievements)
   // or use pre-parsed HTML if available (for full content mode)
+  let htmlContent;
   if (achievement.contentMarkdown && window.marked) {
-    content.innerHTML = marked.parse(achievement.contentMarkdown);
+    htmlContent = marked.parse(achievement.contentMarkdown);
   } else {
-    content.innerHTML = achievement.content || '';
+    htmlContent = achievement.content || '';
   }
+
+  // Remove the first H1 tag from content (it's already shown in the modal header)
+  // This prevents duplicate title display
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = htmlContent;
+  const firstH1 = tempDiv.querySelector('h1');
+  if (firstH1) {
+    firstH1.remove();
+  }
+  content.innerHTML = tempDiv.innerHTML;
 
   // Render math in achievement content if available
   if (window.renderMathInElement) {
