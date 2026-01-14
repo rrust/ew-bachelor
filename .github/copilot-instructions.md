@@ -66,15 +66,21 @@ Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich se
    - Prüfungsfragen und -lösungen
    - `overview.md` mit Modulinfos und Prüfungsmodalitäten
 4. **Check lecture folder** for `Videos.md` with verified YouTube videos
-5. **Extract sources** (Titel + Link) from material file header
-6. **Add `sources`** array to `lecture.md`
-7. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
-8. **Remove citation markers** from output text
-9. **Run `npm run build`** to regenerate JSON files
-10. **Run `npm run validate:content`** to check for errors
-11. **Run `npx markdownlint-cli2 "content/**/\*.md"`\*\* to check formatting
-12. **Run `node scripts/generate-test-progress.js`** to regenerate test data
-13. **Validate** with Tools → "Inhalte validieren"
+5. **Verify YouTube videos** with oEmbed API (if no Videos.md exists):
+   ```bash
+   curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
+   ```
+   - Success: JSON with `title`, `author_name` → video available
+   - Error: HTTP 401/403/404 → DO NOT use this video
+6. **Extract sources** (Titel + Link) from material file header
+7. **Add `sources`** array to `lecture.md`
+8. **Process `[cite: X-Y]`** markers → add `sourceRefs` to lecture-items
+9. **Remove citation markers** from output text
+10. **Run `npm run build`** to regenerate JSON files
+11. **Run `npm run validate:content`** to check for errors
+12. **Run `npx markdownlint-cli2 "content/**/\*.md"`\*\* to check formatting
+13. **Run `node scripts/generate-test-progress.js`** to regenerate test data
+14. **Validate** with Tools → "Inhalte validieren"
 
 ## Lecture Versioning
 

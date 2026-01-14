@@ -890,7 +890,7 @@
           "pages": "44-46"
         }
       ],
-      "content": "## Bindende und Antibindende Molekülorbitale\n\nWenn zwei Atomorbitale kombiniert werden, entstehen zwei Molekülorbitale mit unterschiedlichen Eigenschaften:\n\n### Bindendes MO (σ, π)\n\n- Entsteht durch **konstruktive** Überlagerung (Wellenfunktionen addieren sich)\n- **Niedrigere Energie** als die ursprünglichen Atomorbitale\n- Hohe Elektronendichte **zwischen** den Kernen\n- Stabilisiert die Bindung\n\n### Antibindendes MO (σ*, π*)\n\n- Entsteht durch **destruktive** Überlagerung (Wellenfunktionen subtrahieren sich)\n- **Höhere Energie** als die ursprünglichen Atomorbitale\n- **Knotenebene** zwischen den Kernen (keine Elektronendichte)\n- Destabilisiert die Bindung\n- Gekennzeichnet mit einem Stern (*)\n\n### Energieschema\n\n| Energieniveau | Orbital | Besetzung |\n|:---:|:---|:---|\n| Hoch | σ* (antibindend) | Destabilisiert |\n| Mitte | Atomorbitale (AO) | Ursprungszustand |\n| Niedrig | σ (bindend) | Stabilisiert |\n\n> ⚠️ **Wichtig:** Elektronen besetzen zuerst die energieärmeren bindenden Orbitale!"
+      "content": "## Bindende und Antibindende Molekülorbitale\n\nWenn zwei Atomorbitale kombiniert werden, entstehen zwei Molekülorbitale mit unterschiedlichen Eigenschaften:\n\n### Bindendes MO (σ, π)\n\n- Entsteht durch **konstruktive** Überlagerung (Wellenfunktionen addieren sich)\n- **Niedrigere Energie** als die ursprünglichen Atomorbitale\n- Hohe Elektronendichte **zwischen** den Kernen\n- Stabilisiert die Bindung\n\n### Antibindendes MO (σ*, π*)\n\n- Entsteht durch **destruktive** Überlagerung (Wellenfunktionen subtrahieren sich)\n- **Höhere Energie** als die ursprünglichen Atomorbitale\n- **Knotenebene** zwischen den Kernen (keine Elektronendichte)\n- Destabilisiert die Bindung\n- Gekennzeichnet mit einem Stern (*)\n\n### Energieschema\n\n| Energieniveau | Orbital           | Besetzung        |\n| :-----------: | :---------------- | :--------------- |\n|     Hoch      | σ* (antibindend)  | Destabilisiert   |\n|     Mitte     | Atomorbitale (AO) | Ursprungszustand |\n|    Niedrig    | σ (bindend)       | Stabilisiert     |\n\n> ⚠️ **Wichtig:** Elektronen besetzen zuerst die energieärmeren bindenden Orbitale!"
     },
     {
       "type": "learning-content",
@@ -1275,5 +1275,5 @@
       "difficulty": "hard"
     }
   ],
-  "generatedAt": "2026-01-14T22:40:34.622Z"
+  "generatedAt": "2026-01-14T23:31:38.471Z"
 }

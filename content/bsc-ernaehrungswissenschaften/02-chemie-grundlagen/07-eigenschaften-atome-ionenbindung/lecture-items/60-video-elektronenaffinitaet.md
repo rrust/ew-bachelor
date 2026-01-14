@@ -1,8 +1,8 @@
 ---
 type: 'youtube-video'
-url: 'https://www.youtube.com/watch?v=F3Gya5T5KxM'
-title: 'Elektronenaffinität einfach erklärt'
-channel: 'musstewissen Chemie'
+url: 'https://www.youtube.com/watch?v=Td1q2VddHaM'
+title: 'Elektronenaffinität - Was ist das?'
+channel: 'Chemie - simpleclub'
 duration: 'ca. 5 min'
 description: 'Erklärt das Konzept der Elektronenaffinität und die Trends im Periodensystem.'
 watchFor:

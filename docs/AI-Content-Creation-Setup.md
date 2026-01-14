@@ -342,6 +342,9 @@ SCHRITT 0c - Videos.md prüfen:
 - Lies Videos.md im Vorlesungs-Ordner (falls vorhanden)
 - Nur verifizierte Videos aus dieser Datei verwenden!
 - Video-URLs müssen mit dem CONTENT_PLAN übereinstimmen
+- ⚠️ Falls keine Videos.md: Videos mit oEmbed API verifizieren!
+  curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
+  Nur Videos mit HTTP 200 und JSON-Response verwenden!
 
 SCHRITT 1 - Dateien gemäß CONTENT_PLAN erstellen:
 - Für JEDE Zeile im CONTENT_PLAN.md eine Datei erstellen
@@ -555,6 +558,123 @@ whisper audio.mp3 --language German --model turbo
 
 ---
 
+## YouTube-Video-Verifizierung
+
+⚠️ **KRITISCH:** YouTube-Video-IDs müssen VOR dem Einbinden verifiziert werden!
+
+Videos können gelöscht, privat gesetzt oder mit Altersbeschränkung versehen werden. Nicht-existierende Videos führen zu schlechter User Experience.
+
+### Verifizierung mit YouTube oEmbed API
+
+Die oEmbed API ist die zuverlässigste Methode zur Prüfung, ob ein Video öffentlich zugänglich ist:
+
+```bash
+# Einzelnes Video prüfen
+curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
+
+# Erfolgreich (Video existiert):
+# → Gibt JSON mit title, author_name, thumbnail_url zurück
+
+# Fehlgeschlagen (Video nicht verfügbar):
+# → HTTP 401/403/404 oder leere Antwort
+```
+
+### Batch-Verifizierung mehrerer Videos
+
+```bash
+# Mehrere Videos auf einmal prüfen
+for id in "abc123" "def456" "ghi789"; do
+  response=$(curl -s -o /dev/null -w "%{http_code}" "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=$id&format=json")
+  if [ "$response" = "200" ]; then
+    echo "✅ $id - verfügbar"
+  else
+    echo "❌ $id - NICHT verfügbar (HTTP $response)"
+  fi
+done
+```
+
+### Video-ID aus URL extrahieren
+
+| URL-Format                                    | Video-ID    |
+| --------------------------------------------- | ----------- |
+| `https://www.youtube.com/watch?v=dQw4w9WgXcQ` | dQw4w9WgXcQ |
+| `https://youtu.be/dQw4w9WgXcQ`                | dQw4w9WgXcQ |
+| `https://www.youtube.com/embed/dQw4w9WgXcQ`   | dQw4w9WgXcQ |
+| `https://www.youtube.com/v/dQw4w9WgXcQ`       | dQw4w9WgXcQ |
+
+### Workflow bei Content-Generierung
+
+1. **Videos.md prüfen** (falls vorhanden im Material-Ordner)
+   - Diese wurden bereits manuell verifiziert
+   - Bevorzugt verwenden!
+
+2. **Neue Videos verifizieren** (falls keine Videos.md existiert)
+   ```bash
+   # Video-ID extrahieren und prüfen
+   curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json" | jq .title
+   ```
+
+3. **Nur verifizierte Videos einbinden**
+   ```yaml
+   ---
+   type: 'youtube-video'
+   url: 'https://www.youtube.com/watch?v=VERIFIED_ID'
+   title: 'Titel aus oEmbed-Response'
+   channel: 'Kanal-Name aus author_name'
+   ---
+   ```
+
+### Empfohlene Kanäle (deutschsprachig)
+
+Diese Kanäle haben stabile, langlebige Videos für Chemie/Naturwissenschaften:
+
+| Kanal               | Themen               | Hinweis               |
+| ------------------- | -------------------- | --------------------- |
+| musstewissen Chemie | Schulchemie          | funk/ZDF, sehr stabil |
+| Studyflix           | Uni-Niveau           | Werbefinanziert       |
+| Simple Club         | Schulchemie          | Teils hinter Paywall  |
+| Khan Academy        | Englisch, sehr gut   | Sehr langlebig        |
+| Professor Dave      | Englisch, Uni-Niveau | Stabil                |
+
+### AI-Prompt für Video-Verifizierung
+
+```text
+Verifiziere folgende YouTube-Video-IDs mit der oEmbed API:
+
+1. Führe für jede Video-ID aus:
+   curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
+
+2. Nur Videos mit erfolgreicher Antwort (HTTP 200 + JSON) verwenden
+
+3. Titel und Kanal aus der oEmbed-Response übernehmen
+
+4. Nicht verfügbare Videos NICHT in den Content einbinden
+```
+
+### Automatische Video-Validierung
+
+Ein Script prüft alle Videos im Content-Ordner automatisch:
+
+```bash
+# Alle Studies prüfen
+npm run validate:videos
+
+# Nur ein Study prüfen
+npm run validate:videos bsc-ernaehrungswissenschaften
+```
+
+**Was das Script macht:**
+
+- Findet alle `youtube-video` Items im Content-Ordner
+- Extrahiert Video-IDs aus verschiedenen URL-Formaten
+- Prüft Verfügbarkeit via YouTube oEmbed API
+- Zeigt detaillierte Ergebnisse (verfügbar/nicht verfügbar/ungültige URLs)
+- Exit-Code 1 bei Problemen (für CI/CD geeignet)
+
+**Empfehlung:** Nach jeder Content-Generierung `npm run validate:videos` ausführen!
+
+---
+
 ## Achievement-Erstellung
 
 Achievements motivieren durch nützliche Belohnungen (Cheat Sheets, Diagramme).
@@ -621,7 +741,7 @@ Basierend auf diesem Lerninhalt:
 - [ ] Commit & Push (GitHub Action generiert JSON-Dateien automatisch)
 - [ ] Tools → "Inhalte validieren" in der App zeigt keine Fehler
 - [ ] `npx markdownlint-cli2 "content/**/*.md"` erfolgreich
-- [ ] Videos/Links manuell geprüft
+- [ ] **YouTube-Videos mit oEmbed API verifiziert** (siehe oben)
 - [ ] Inhaltliche Korrektheit geprüft
 - [ ] Self-Assessments nach Konzepten platziert
 - [ ] Nummerierung der Dateien logisch (01-, 02-, ...)

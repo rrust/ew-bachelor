@@ -1,7 +1,8 @@
 ---
 type: 'youtube-video'
 topic: 'Elektromagnetisches Spektrum'
-url: 'https://www.youtube.com/watch?v=k1tC5W_Z9vQ'
-title: 'Elektromagnetisches Spektrum einfach erklärt'
-description: 'musstewissen Physik erklärt das elektromagnetische Spektrum von Radiowellen bis Gammastrahlung.'
+url: 'https://www.youtube.com/watch?v=KBuc4XpzUUA'
+title: 'Elektromagnetisches Spektrum (einfach und anschaulich erklärt)'
+channel: 'physikdigital'
+description: 'Erklärt das elektromagnetische Spektrum von Radiowellen bis Gammastrahlung.'
 ---
