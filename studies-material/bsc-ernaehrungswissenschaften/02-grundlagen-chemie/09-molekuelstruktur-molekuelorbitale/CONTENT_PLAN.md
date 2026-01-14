@@ -1,6 +1,6 @@
 # Content-Erstellungsplan: Modul 2 - Kapitel 9 - Molekülstruktur und Molekülorbitale
 
-> **Status:** ⏳ **OFFEN** - Bereit zur Content-Generierung (0/69 Items, 0/14 Questions)
+> **Status:** ✅ **DONE** - Content generiert und gemergt (69/69 Items, 14/14 Questions)
 >
 > **Quelldatei:** [Vorlesung.md](Vorlesung.md)
 >

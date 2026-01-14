@@ -236,6 +236,19 @@ Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich se
 - ⚠️ `CONTENT_PLAN.md` - **VERBINDLICHE** Struktur für die Content-Generierung
 - `Vorlesung.md` - Hauptinhalt mit Quellenmarkierungen
 
+### YouTube-Video-Verifizierung
+
+⚠️ **Videos müssen VOR dem Einbinden mit der oEmbed API verifiziert werden!**
+
+```bash
+# Video-ID prüfen (muss HTTP 200 + JSON zurückgeben)
+curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
+```
+
+- Erfolg: JSON mit `title`, `author_name` → Video verfügbar
+- Fehler: HTTP 401/403/404 → Video NICHT verwenden
+- Details: Siehe `docs/AI-Content-Creation-Setup.md`
+
 ### ⚠️ CONTENT_PLAN ist VERBINDLICH
 
 **Der 3-Phasen-Workflow:**
