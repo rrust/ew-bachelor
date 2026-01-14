@@ -7,6 +7,13 @@
   height: 100dvh; /* Dynamic viewport height for modern browsers */
 }
 
+/* Hide certain header icons on mobile in lecture player to save space for title */
+@media (max-width: 640px) {
+  .lecture-player-hide-mobile {
+    display: none !important;
+  }
+}
+
 /* Compact Lecture Item Display Styling */
 #lecture-item-display.prose h1 {
   font-size: 1.75rem;

@@ -137,20 +137,25 @@ function createLectureBundle(lectureDir, moduleId, lectureId) {
       sources: frontmatter?.sources || []
     };
 
-    // Check for intro audio file
-    const introAudioPath = path.join(lectureDir, 'intro.mp3');
-    if (fs.existsSync(introAudioPath)) {
-      bundle.metadata.introAudio = 'intro.mp3';
-    }
+    // Check for lecture audio file (lecture.mp3)
+    const lectureAudioPath = path.join(lectureDir, 'lecture.mp3');
+    const hasLectureAudio = fs.existsSync(lectureAudioPath);
 
     // Add lecture intro as first item if there's content
     if (body && body.trim()) {
-      bundle.items.push({
+      const introItem = {
         type: 'learning-content',
         topic: bundle.metadata.topic,
         content: body,
         sourceRefs: []
-      });
+      };
+
+      // Add audio file reference if lecture.mp3 exists
+      if (hasLectureAudio) {
+        introItem.audioFile = 'lecture.mp3';
+      }
+
+      bundle.items.push(introItem);
     }
   }
 
@@ -176,6 +181,13 @@ function createLectureBundle(lectureDir, moduleId, lectureId) {
         ...frontmatter,
         content: body || ''
       };
+
+      // Check for audio file with same name as item
+      const itemBaseName = itemFile.replace(/\.md$/, '');
+      const audioPath = path.join(itemsDir, `${itemBaseName}.mp3`);
+      if (fs.existsSync(audioPath)) {
+        item.audioFile = `${itemBaseName}.mp3`;
+      }
 
       // Extract mermaid diagram code if present
       if (frontmatter.type === 'mermaid-diagram' && body) {
