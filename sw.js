@@ -225,7 +225,8 @@ async function networkFirst(request) {
 
   try {
     const response = await fetch(request);
-    if (response.ok) {
+    // Only cache full responses (not partial 206 responses from audio/video streaming)
+    if (response.ok && response.status !== 206) {
       const cache = await caches.open(CACHE_NAME);
       cache.put(request, response.clone());
     }
