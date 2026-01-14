@@ -12,7 +12,8 @@ sourceRefs:
 Eine **chemische Verbindung** entsteht, wenn Atome verschiedener Elemente sich verbinden. Die Eigenschaften einer Verbindung unterscheiden sich grundlegend von denen der Ausgangselemente.
 
 **Beispiel:** Natriumchlorid (Kochsalz)
-$$2 \text{Na}_{(s)} + \text{Cl}_{2(g)} \rightarrow 2 \text{NaCl}_{(s)}$$
+
+$$2 \, \mathrm{Na_{(s)}} + \mathrm{Cl_{2(g)}} \rightarrow 2 \, \mathrm{NaCl_{(s)}}$$
 
 - Natrium: reaktives, weiches Metall
 - Chlor: giftiges, grünliches Gas
