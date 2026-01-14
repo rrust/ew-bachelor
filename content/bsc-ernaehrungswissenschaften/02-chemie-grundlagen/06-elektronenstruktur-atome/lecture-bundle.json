@@ -188,9 +188,10 @@
     {
       "type": "youtube-video",
       "topic": "Elektromagnetisches Spektrum",
-      "url": "https://www.youtube.com/watch?v=k1tC5W_Z9vQ",
-      "title": "Elektromagnetisches Spektrum einfach erklärt",
-      "description": "musstewissen Physik erklärt das elektromagnetische Spektrum von Radiowellen bis Gammastrahlung.",
+      "url": "https://www.youtube.com/watch?v=KBuc4XpzUUA",
+      "title": "Elektromagnetisches Spektrum (einfach und anschaulich erklärt)",
+      "channel": "physikdigital",
+      "description": "Erklärt das elektromagnetische Spektrum von Radiowellen bis Gammastrahlung.",
       "content": ""
     },
     {
@@ -343,9 +344,10 @@
     {
       "type": "youtube-video",
       "topic": "Plancksches Wirkungsquantum",
-      "url": "https://www.youtube.com/watch?v=QuqJMStV5hY",
-      "title": "Quantenphysik: Das Plancksche Wirkungsquantum",
-      "description": "musstewissen Physik erklärt das Plancksche Wirkungsquantum und die Grundlagen der Quantenphysik.",
+      "url": "https://www.youtube.com/watch?v=2DOqF4Mt35Y",
+      "title": "Das Plancksche Wirkungsquantum",
+      "channel": "Physik - simpleclub",
+      "description": "Erklärt das Plancksche Wirkungsquantum und die Grundlagen der Quantenphysik.",
       "content": ""
     },
     {
@@ -490,9 +492,10 @@
     {
       "type": "youtube-video",
       "topic": "Bohrsches Atommodell",
-      "url": "https://www.youtube.com/watch?v=d_k8yVz4eQM",
-      "title": "Bohrsches Atommodell einfach erklärt",
-      "description": "Lehrerschmidt erklärt das Bohr-Modell mit seinen Postulaten und der Erklärung der Linienspektren.",
+      "url": "https://www.youtube.com/watch?v=CJPg9-jAnGk",
+      "title": "Bohrsches Atommodell (inkl. Schalenmodell) | Physik Tutorial",
+      "channel": "Studytiger - Physik & E-Technik",
+      "description": "Erklärt das Bohr-Modell mit Schalenmodell, Postulaten und der Erklärung der Linienspektren.",
       "content": ""
     },
     {
@@ -641,9 +644,10 @@
     {
       "type": "youtube-video",
       "topic": "Heisenbergsche Unschärferelation",
-      "url": "https://www.youtube.com/watch?v=eCj0Kox_T0o",
-      "title": "Heisenbergsche Unschärferelation einfach erklärt",
-      "description": "musstewissen Physik erklärt die Heisenbergsche Unschärferelation und ihre Bedeutung für unser Verständnis der Quantenwelt.",
+      "url": "https://www.youtube.com/watch?v=pBekV7dXdfY",
+      "title": "Die Heisenbergsche Unschärferelation",
+      "channel": "Physik - simpleclub",
+      "description": "Erklärt die Heisenbergsche Unschärferelation und ihre Bedeutung für unser Verständnis der Quantenwelt.",
       "content": ""
     },
     {
@@ -873,9 +877,10 @@
     {
       "type": "youtube-video",
       "topic": "Orbitale und Quantenzahlen",
-      "url": "https://www.youtube.com/watch?v=pKeTfvKZzH8",
-      "title": "Orbitale und Quantenzahlen",
-      "description": "Duden Learnattack erklärt die Quantenzahlen und die verschiedenen Orbitalformen.",
+      "url": "https://www.youtube.com/watch?v=PHEpwQQGuBU",
+      "title": "Quantenzahlen & Orbitale | (NEU)",
+      "channel": "Studytiger - Chemie",
+      "description": "Erklärt die Quantenzahlen und die verschiedenen Orbitalformen.",
       "content": ""
     },
     {
@@ -1372,5 +1377,5 @@
       "explanation": "**Erklärung:** Linienspektren sind elementspezifisch. Natrium emittiert charakteristisches gelbes Licht. Flammenfärbung und AAS nutzen diese Prinzipien zur Elementanalyse. UV-Vis-Spektroskopie nutzt sowohl UV als auch sichtbares Licht (daher \"UV-Vis\")."
     }
   ],
-  "generatedAt": "2026-01-14T22:40:34.610Z"
+  "generatedAt": "2026-01-14T23:31:38.461Z"
 }

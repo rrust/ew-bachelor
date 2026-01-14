@@ -189,9 +189,9 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=kY8eW-t1k6Y",
-      "title": "Periodensystem Trends – Atomradius, Ionenradius, Ionisierungsenergie, Elektronenaffinität",
-      "channel": "brainfaqk",
+      "url": "https://www.youtube.com/watch?v=CskxR8M98uk",
+      "title": "PERIODENSYSTEM – (Atomradius, Elektronegativität, Ionisierungsenergie) | Trends",
+      "channel": "Studytiger - Chemie",
       "duration": "ca. 10 min",
       "description": "Erklärt anschaulich die effektive Kernladung als Ursache für alle Periodentrends.",
       "watchFor": [
@@ -369,11 +369,11 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=XWv43NysqgE",
-      "title": "Atomradius im Periodensystem",
-      "channel": "musstewissen Chemie",
+      "url": "https://www.youtube.com/watch?v=H1E_O-tisv8",
+      "title": "Wie geht das Periodensystem?! - Atomradien und Ionenradien",
+      "channel": "Chemie - simpleclub",
       "duration": "ca. 6 min",
-      "description": "Erklärt anschaulich die Trends der Atomradien im Periodensystem.",
+      "description": "Erklärt anschaulich die Trends der Atomradien und Ionenradien im Periodensystem.",
       "watchFor": [
         "Wie verändert sich der Radius in einer Periode?",
         "Wie verändert sich der Radius in einer Gruppe?",
@@ -539,9 +539,9 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=q6g3tB4tTjs",
-      "title": "Ionenradius im Periodensystem",
-      "channel": "Chemie - einfach erklärt",
+      "url": "https://www.youtube.com/watch?v=qivPXdS1Nd0",
+      "title": "Atom- und Ionenradius im Periodensystem - REMAKE",
+      "channel": "Chemie - simpleclub",
       "duration": "ca. 7 min",
       "description": "Erklärt den Unterschied zwischen Atom- und Ionenradien und wie sich Kationen und Anionen in ihrer Größe unterscheiden.",
       "watchFor": [
@@ -745,9 +745,9 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=F01wT5g9zJ4",
-      "title": "Ionisierungsenergie Trend im Periodensystem",
-      "channel": "Duden Learnattack",
+      "url": "https://www.youtube.com/watch?v=rtSErvcwZRc",
+      "title": "Die Ionisierungsenergie | Chemie Tutorial",
+      "channel": "Studytiger - Chemie",
       "duration": "ca. 5 min",
       "description": "Erklärt die Trends der Ionisierungsenergie im Periodensystem und warum diese Trends existieren.",
       "watchFor": [
@@ -904,9 +904,9 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=F3Gya5T5KxM",
-      "title": "Elektronenaffinität einfach erklärt",
-      "channel": "musstewissen Chemie",
+      "url": "https://www.youtube.com/watch?v=Td1q2VddHaM",
+      "title": "Elektronenaffinität - Was ist das?",
+      "channel": "Chemie - simpleclub",
       "duration": "ca. 5 min",
       "description": "Erklärt das Konzept der Elektronenaffinität und die Trends im Periodensystem.",
       "watchFor": [
@@ -1168,5 +1168,5 @@
       "explanation": "Die F/Cl-Anomalie ist ein klassisches Prüfungsthema. Fluor ist zwar elektronegativer, hat aber wegen seiner geringen Größe und der daraus resultierenden hohen Ladungsdichte eine niedrigere EA als Chlor."
     }
   ],
-  "generatedAt": "2026-01-14T22:40:34.615Z"
+  "generatedAt": "2026-01-14T23:31:38.465Z"
 }

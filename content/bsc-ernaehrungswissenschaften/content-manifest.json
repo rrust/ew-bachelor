@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T22:40:34.573Z",
+  "generatedAt": "2026-01-14T23:31:38.433Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -83,8 +83,8 @@
       "version": "2.0.0"
     },
     "02-chemie-grundlagen/06-elektronenstruktur-atome": {
-      "checksum": "90e6639c",
-      "sizeKB": 90.8,
+      "checksum": "188bd396",
+      "sizeKB": 90.9,
       "itemCount": 76,
       "quizCount": 12,
       "topic": "Die Elektronenstruktur der Atome",
@@ -93,7 +93,7 @@
       "version": "1.1.0"
     },
     "02-chemie-grundlagen/07-eigenschaften-atome-ionenbindung": {
-      "checksum": "6f746e34",
+      "checksum": "dbbfb814",
       "sizeKB": 76.5,
       "itemCount": 62,
       "quizCount": 12,
@@ -103,8 +103,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/08-kovalente-bindung": {
-      "checksum": "8dabd000",
-      "sizeKB": 82.1,
+      "checksum": "7dbf39be",
+      "sizeKB": 82.2,
       "itemCount": 63,
       "quizCount": 14,
       "topic": "Die Kovalente Bindung",
@@ -113,8 +113,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/09-molekuelstruktur-molekuelorbitale": {
-      "checksum": "1dc99433",
-      "sizeKB": 72.7,
+      "checksum": "276f8772",
+      "sizeKB": 72.8,
       "itemCount": 70,
       "quizCount": 14,
       "topic": "Molekülstruktur und Molekülorbitale",

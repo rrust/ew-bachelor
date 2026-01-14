@@ -1,9 +1,9 @@
 ---
 type: 'youtube-video'
-url: 'https://www.youtube.com/watch?v=1F_tKtXnSdw'
-title: 'Ausnahmen der Oktettregel'
-channel: 'Die Merkhilfe'
-duration: '5:45'
+url: 'https://www.youtube.com/watch?v=Edd3LFZ92xE'
+title: 'Oktetterweiterung: Einführungsvideo, Schwefelsäure'
+channel: 'chemistrykicksass'
+duration: 'ca. 6 min'
 description: 'Die drei wichtigsten Ausnahmen der Oktettregel: Elektronenmangel, erweitertes Oktett und Radikale.'
 sourceRefs:
   - sourceId: 'vorlesung-k8'

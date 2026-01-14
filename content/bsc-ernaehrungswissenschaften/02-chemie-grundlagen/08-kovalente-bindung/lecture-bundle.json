@@ -178,10 +178,10 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=H7sAgj9gMdA",
-      "title": "Ionenbindung einfach erklärt",
+      "url": "https://www.youtube.com/watch?v=n6Dr3qY7c6M",
+      "title": "Ionenbindung I Chemische Bindungen I musstewissen Chemie",
       "channel": "musstewissen Chemie",
-      "duration": "5:23",
+      "duration": "ca. 6 min",
       "description": "In diesem Video wird erklärt, wie die Ionenbindung entsteht und warum Metalle und Nichtmetalle ionische Verbindungen bilden.",
       "sourceRefs": [
         {
@@ -363,10 +363,10 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=p7H9tV1d2XQ",
-      "title": "Oktettregel einfach erklärt",
-      "channel": "Lehrerschmidt",
-      "duration": "6:12",
+      "url": "https://www.youtube.com/watch?v=4LAKxGIC8UQ",
+      "title": "Oktettregel und Edelgase I musstewissen Chemie",
+      "channel": "musstewissen Chemie",
+      "duration": "ca. 6 min",
       "description": "In diesem Video wird die Oktettregel anschaulich erklärt: Warum streben Atome nach 8 Außenelektronen?",
       "sourceRefs": [
         {
@@ -512,10 +512,10 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=kYJ-w9F_5P8",
-      "title": "Lewis Schreibweise / Strukturformel aufstellen",
-      "channel": "Lehrerschmidt",
-      "duration": "7:45",
+      "url": "https://www.youtube.com/watch?v=eJEH63QszSQ",
+      "title": "Lewis Formel aufstellen - Erklärung, Beispiel, Schreibweise | Studyflix",
+      "channel": "Studyflix",
+      "duration": "ca. 8 min",
       "description": "Schritt-für-Schritt-Anleitung zum Zeichnen von Lewis-Formeln mit mehreren Beispielen.",
       "sourceRefs": [
         {
@@ -817,10 +817,10 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=F0S0D4v-gO8",
-      "title": "Formalladung berechnen und verstehen",
-      "channel": "BrainFAQ",
-      "duration": "8:12",
+      "url": "https://www.youtube.com/watch?v=C_iUHwYhczY",
+      "title": "Wie ermittelt man Formalladungen?",
+      "channel": "trossbegalle",
+      "duration": "ca. 8 min",
       "description": "Wie berechnet man Formalladungen? Was bedeuten sie? Dieses Video erklärt das Konzept mit mehreren Beispielen.",
       "sourceRefs": [
         {
@@ -957,10 +957,10 @@
     },
     {
       "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=1F_tKtXnSdw",
-      "title": "Ausnahmen der Oktettregel",
-      "channel": "Die Merkhilfe",
-      "duration": "5:45",
+      "url": "https://www.youtube.com/watch?v=Edd3LFZ92xE",
+      "title": "Oktetterweiterung: Einführungsvideo, Schwefelsäure",
+      "channel": "chemistrykicksass",
+      "duration": "ca. 6 min",
       "description": "Die drei wichtigsten Ausnahmen der Oktettregel: Elektronenmangel, erweitertes Oktett und Radikale.",
       "sourceRefs": [
         {
@@ -1274,5 +1274,5 @@
       "explanation": "O hat keine d-Orbitale (Periode 2) und kann maximal 8 Elektronen halten. Die Elektronegativität ist nicht der Grund für die Nichtexistenz von OF₄. SF₄ hat 5 Elektronenpaare (4 BP + 1 NBP) → wippen-förmige Geometrie."
     }
   ],
-  "generatedAt": "2026-01-14T22:40:34.618Z"
+  "generatedAt": "2026-01-14T23:31:38.468Z"
 }
