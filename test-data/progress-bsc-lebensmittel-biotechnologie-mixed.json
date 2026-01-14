@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T13:29:59.247Z",
+  "exportedAt": "2026-01-14T12:53:03.305Z",
   "version": "2.0",
   "studyId": "bsc-lebensmittel-biotechnologie",
   "settings": {
@@ -8,11 +8,11 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-12-07T13:29:59.247Z",
+    "startedAt": "2025-08-29T12:53:03.305Z",
     "modules": {},
     "streak": {
       "current": 3,
-      "lastActivityDate": "2026-01-13T10:00:00.000Z",
+      "lastActivityDate": "2026-01-14T10:00:00.000Z",
       "totalDays": 8,
       "longestStreak": 5,
       "rescueMode": false,
