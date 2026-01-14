@@ -95,6 +95,19 @@ Achievements werden freigeschaltet, wenn der Benutzer ein Quiz mit Gold-Status (
 
 **Speicherort:** `content/{studyId}/NN-modul/achievements/NN-name.md`
 
+### ⚠️ WICHTIG: Cheat-Sheet Content-Richtlinien
+
+Cheat-Sheets sollen **NUR kompakte Lerninhalte** enthalten. **VERBOTEN** sind:
+
+- ❌ Gratulationstexte ("Herzlichen Glückwunsch!", "Du hast es geschafft!")
+- ❌ Einleitungstexte ("Hier ist deine Zusammenfassung...")
+- ❌ Tipps zum Ausdrucken ("💡 Tipp: Drucke dieses Cheat-Sheet aus...")
+- ❌ Gültigkeitshinweise ("🔄 Gültig für: 30 Tage...")
+- ❌ Nächste-Schritte-Abschnitte ("📌 Nächste Schritte: ...")
+- ❌ Jeglicher Meta-Text über das Achievement selbst
+
+**Der Titel** wird automatisch im Modal-Header angezeigt – er sollte aber auch als `# Titel` im Markdown stehen, damit er bei Export/Druck erscheint.
+
 ```markdown
 ---
 type: 'achievement'
@@ -112,7 +125,7 @@ extensionDuration: 14
 warningThreshold: 7
 ---
 
-# Thema – Cheat-Sheet 📋
+# Thema – Cheat-Sheet
 
 ## Abschnitt 1
 

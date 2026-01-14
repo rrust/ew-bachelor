@@ -34,10 +34,11 @@ function generateHeaderIconButtons(options) {
     streakInfo && window.hasCompletedTests && window.hasCompletedTests();
 
   // Get alerts count
-  const unreadCount =
-    window.AlertsModule && window.AlertsModule.getUnreadCount
-      ? window.AlertsModule.getUnreadCount()
-      : 0;
+  const alertBadgeInfo = window.getAlertBadgeInfo
+    ? window.getAlertBadgeInfo()
+    : null;
+  const unreadCount = alertBadgeInfo ? alertBadgeInfo.count : 0;
+  const alertColor = alertBadgeInfo ? alertBadgeInfo.color : 'red';
 
   let html = `
     <!-- Dev Mode Badge -->
@@ -106,9 +107,9 @@ function generateHeaderIconButtons(options) {
       ${Icons.get('bell')}
       <span id="alert-badge${idSuffix}" class="${
     unreadCount > 0 ? '' : 'hidden '
-  }absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white bg-red-500 rounded-full">${
-    unreadCount > 9 ? '9+' : unreadCount
-  }</span>
+  }absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white ${
+    alertColor === 'red' ? 'bg-red-500' : 'bg-yellow-500'
+  } rounded-full">${unreadCount > 9 ? '9+' : unreadCount}</span>
     </button>
   `;
 
@@ -1014,6 +1015,11 @@ function injectHeader(viewId, viewName, options = {}) {
     if (window.updateDevModeUI) {
       window.updateDevModeUI();
     }
+
+    // Update alert badge
+    if (window.updateAlertBadge) {
+      window.updateAlertBadge();
+    }
     return;
   }
 
@@ -1049,6 +1055,11 @@ function injectHeader(viewId, viewName, options = {}) {
   // Update dev mode badge visibility
   if (window.updateDevModeUI) {
     window.updateDevModeUI();
+  }
+
+  // Update alert badge
+  if (window.updateAlertBadge) {
+    window.updateAlertBadge();
   }
 }
 

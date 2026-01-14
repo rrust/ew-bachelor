@@ -70,11 +70,17 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 
 ## Alerts & Notifications
 
-### ⬜ Badge-Anzahl aktualisiert sich nicht
+### ✅ Badge-Anzahl nur auf Modul-Übersicht sichtbar
 
-**Problem:** Wenn sich Alerts ändern (z.B. Token-Verlängerung), aktualisiert sich die Badge-Anzahl im Header-Icon nicht.
-**Gewünscht:** Badge soll sich reaktiv aktualisieren bei Alert-Änderungen.
-**Betroffene Dateien:** `js/alerts.js`, `js/notifications.js`, `app.js`
+**Problem:** Das Alert-Badge im Header wurde nur auf der Modul-Übersichtsseite angezeigt, nicht auf anderen Seiten.
+**Ursache:**
+1. `updateAlertBadge()` wurde nur beim App-Start aufgerufen, nicht bei Navigation
+2. `generateHeaderIconButtons` verwendete nicht-existierende `AlertsModule.getUnreadCount()`
+**Fix:**
+1. `updateAlertBadge()` wird jetzt nach jedem Header-Injection aufgerufen
+2. `getAlertBadgeInfo()` wird jetzt korrekt verwendet
+3. Badge-Farbe (rot/gelb) wird korrekt übernommen
+**Betroffene Dateien:** `js/components.js`, `app.js`
 
 ---
 
@@ -147,8 +153,8 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 
 ### Hoch (Funktionale Bugs)
 
-1. Kontextuelles Training funktioniert nicht
-2. Badge-Anzahl aktualisiert sich nicht
+1. ~~Kontextuelles Training funktioniert nicht~~ ✅
+2. ~~Badge-Anzahl aktualisiert sich nicht~~ ✅
 3. Formel-Darstellung fehlerhaft
 4. Practice-Exercise Rendering unvollständig
 
@@ -166,6 +172,45 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 3. Cheat-Sheet kleinere Darstellung
 4. Cheat-Sheet Fullscreen
 5. Token-Verlängerung auf Achievements-Seite
+
+---
+
+## Modul-Map
+
+### ✅ Map zeigt nicht alle Vorlesungen
+
+**Problem:** Die Modul-Map zeigt nur Vorlesungen an, die bereits besucht wurden. Es geht bei der Modul-Map aber darum, einen Überblick über das gesamte Studium zu haben.
+**Gewünscht:**
+1. Alle Module und Vorlesungen immer anzeigen (aus `modules.json`)
+2. Grau dargestellt, wenn noch nichts gemacht wurde
+3. Grün dargestellt, wenn der jeweilige Test bestanden wurde
+**Betroffene Dateien:** `js/map.js`
+**Commit:** `fix: show all lectures in module map (gray=unvisited, green=completed)`
+
+---
+
+## Cheat-Sheets (Weitere Issues)
+
+### ✅ Doppelter Titel im Cheat-Sheet Modal
+
+**Problem:** Der Titel wird einmal im Modal-Header und einmal im Content (als H1) angezeigt.
+**Gewünscht:** Titel aus dem Overlay-Body (H1 im Markdown) entfernen.
+**Betroffene Dateien:** `js/achievements-ui.js`
+**Commit:** `fix: remove duplicate title from cheat-sheet modal`
+
+### ✅ Cheat-Sheets enthalten überflüssigen Text
+
+**Problem:** Manche Cheat-Sheets enthalten Gratulationstexte und andere überflüssige Elemente:
+- "Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden."
+- "Hier ist deine kompakte Zusammenfassung..."
+- "💡 Tipp: Drucke dieses Cheat-Sheet aus..."
+- "🔄 Gültig für: 30 Tage..."
+- "📌 Nächste Schritte..."
+**Gewünscht:** Cheat-Sheets sollten NUR die kompakten Lerninhalte auf einer Seite zusammenfassen.
+**Betroffene Dateien:** 
+- `content/bsc-ernaehrungswissenschaften/achievements.json`
+- `scripts/clean-cheatsheets.py` (neues Script zum Bereinigen)
+**Commit:** `fix: clean up cheat-sheet content, remove unnecessary text`
 
 ---
 

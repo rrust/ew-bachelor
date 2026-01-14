@@ -818,6 +818,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.updateDevModeUI();
       }
 
+      // Update alert badge
+      if (window.updateAlertBadge) {
+        window.updateAlertBadge();
+      }
+
       // Show/hide quiz button based on availability
       const quizBtn = header.querySelector('#lecture-quiz-btn-lecturePlayer');
       if (quizBtn) {
@@ -846,6 +851,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       // Update dev mode badge
       if (window.updateDevModeUI) {
         window.updateDevModeUI();
+      }
+
+      // Update alert badge
+      if (window.updateAlertBadge) {
+        window.updateAlertBadge();
       }
 
       // Setup back-to-player button

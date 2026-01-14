@@ -118,7 +118,7 @@ warningThreshold: 7
 
 $$Li > K > Ca > Na > Mg > Al > Zn > Fe > Ni > Sn > Pb$$
 
-$$─────────────── H_2 ───────────────$$
+**― ― ― ― ― H₂ (Referenz) ― ― ― ― ―**
 
 $$Cu > Hg > Ag > Pt > Au$$
 

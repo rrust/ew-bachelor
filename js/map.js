@@ -3,8 +3,9 @@
 
 /**
  * Generates a Mermaid flowchart showing the structure of all modules and lectures
- * @param {Array} modules - Array of module metadata
- * @param {Object} content - APP_CONTENT object with lecture data
+ * Uses modules.json data to show ALL lectures, even unvisited ones
+ * @param {Array} modules - Array of module metadata (from modules.json)
+ * @param {Object} content - APP_CONTENT object with lecture data (for loaded lectures)
  * @returns {string} Mermaid diagram code
  */
 function generateModuleMapGraph(modules, content) {
@@ -19,6 +20,9 @@ function generateModuleMapGraph(modules, content) {
 
   // Sort modules by order
   const sortedModules = [...modules].sort((a, b) => a.order - b.order);
+
+  // Track all lecture nodes for styling
+  const lectureNodes = [];
 
   // Add all modules
   sortedModules.forEach((module, idx) => {
@@ -50,23 +54,32 @@ function generateModuleMapGraph(modules, content) {
 
     mermaidCode += `    ${moduleNodeId}["${badge} ${moduleTitle}<br/>${ects}"]\n`;
 
-    // Add lectures for this module
+    // Add lectures for this module from modules.json (always available)
+    // This ensures ALL lectures are shown, not just visited ones
+    const moduleLectures = module.lectures || [];
     const moduleContent = content[module.id];
-    if (moduleContent?.lectures) {
-      Object.keys(moduleContent.lectures).forEach((lectureId) => {
-        const lecture = moduleContent.lectures[lectureId];
-        const lectureNodeId = sanitizeMermaidId(`${module.id}-${lectureId}`);
-        const lectureTopic = escapeForMermaid(lecture.topic);
 
-        // Get lecture progress badge
-        const lectureData = moduleProgress?.lectures?.[lectureId];
-        const lectureBadge = lectureData?.badge
-          ? getBadgeEmoji(lectureData.badge)
-          : '⚪';
+    moduleLectures.forEach((lectureId) => {
+      const lectureNodeId = sanitizeMermaidId(`${module.id}-${lectureId}`);
 
-        mermaidCode += `    ${moduleNodeId} --> ${lectureNodeId}["${lectureBadge} ${lectureTopic}"]\n`;
-      });
-    }
+      // Try to get lecture topic from loaded content, fallback to formatted ID
+      const loadedLecture = moduleContent?.lectures?.[lectureId];
+      const lectureTopic = loadedLecture
+        ? escapeForMermaid(loadedLecture.topic)
+        : escapeForMermaid(formatLectureIdAsTitle(lectureId));
+
+      // Get lecture progress badge
+      const lectureData = moduleProgress?.lectures?.[lectureId];
+      const hasProgress = lectureData?.score !== undefined;
+      const lectureBadge = lectureData?.badge
+        ? getBadgeEmoji(lectureData.badge)
+        : '⚪';
+
+      mermaidCode += `    ${moduleNodeId} --> ${lectureNodeId}["${lectureBadge} ${lectureTopic}"]\n`;
+
+      // Track for styling - green if has progress, gray if not
+      lectureNodes.push({ nodeId: lectureNodeId, hasProgress });
+    });
 
     // Connect to next module with dotted line
     if (idx < sortedModules.length - 1) {
@@ -80,7 +93,9 @@ function generateModuleMapGraph(modules, content) {
   mermaidCode +=
     '\n    classDef moduleNode fill:#3b82f6,stroke:#1e40af,stroke-width:2px,color:#fff\n';
   mermaidCode +=
-    '    classDef lectureNode fill:#10b981,stroke:#059669,stroke-width:2px,color:#fff\n';
+    '    classDef lectureComplete fill:#10b981,stroke:#059669,stroke-width:2px,color:#fff\n';
+  mermaidCode +=
+    '    classDef lectureIncomplete fill:#9ca3af,stroke:#6b7280,stroke-width:2px,color:#fff\n';
   mermaidCode +=
     '    classDef startNode fill:#8b5cf6,stroke:#6d28d9,stroke-width:3px,color:#fff\n';
 
@@ -89,14 +104,12 @@ function generateModuleMapGraph(modules, content) {
   sortedModules.forEach((module) => {
     const moduleNodeId = sanitizeMermaidId(module.id);
     mermaidCode += `    class ${moduleNodeId} moduleNode\n`;
+  });
 
-    const moduleContent = content[module.id];
-    if (moduleContent?.lectures) {
-      Object.keys(moduleContent.lectures).forEach((lectureId) => {
-        const lectureNodeId = sanitizeMermaidId(`${module.id}-${lectureId}`);
-        mermaidCode += `    class ${lectureNodeId} lectureNode\n`;
-      });
-    }
+  // Apply lecture styles based on progress
+  lectureNodes.forEach(({ nodeId, hasProgress }) => {
+    const styleClass = hasProgress ? 'lectureComplete' : 'lectureIncomplete';
+    mermaidCode += `    class ${nodeId} ${styleClass}\n`;
   });
 
   return mermaidCode;
@@ -121,6 +134,20 @@ function escapeForMermaid(text) {
     .replace(/"/g, '#quot;')
     .replace(/\[/g, '#91;')
     .replace(/\]/g, '#93;');
+}
+
+/**
+ * Formats a lecture ID as a readable title
+ * Used as fallback when lecture content is not yet loaded
+ * @param {string} lectureId - The lecture ID (e.g., "01-materie-messen")
+ * @returns {string} Formatted title (e.g., "Materie Messen")
+ */
+function formatLectureIdAsTitle(lectureId) {
+  return lectureId
+    .replace(/^\d+-/, '') // Remove leading number prefix (e.g., "01-")
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
 /**
