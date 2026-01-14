@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-13T13:29:59.246Z",
+  "exportedAt": "2026-01-14T12:53:03.303Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,7 +8,7 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-08-05T13:29:59.246Z",
+    "startedAt": "2025-10-06T12:53:03.303Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "completed",
@@ -29,15 +29,15 @@
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-16T13:29:59.246Z",
-            "expiresAt": "2026-01-15T13:29:59.246Z",
+            "unlockedAt": "2026-01-10T12:53:03.303Z",
+            "expiresAt": "2026-02-09T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "makronaehrstoffe-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-30T13:29:59.246Z",
-            "expiresAt": "2026-01-29T13:29:59.246Z",
+            "unlockedAt": "2025-12-15T12:53:03.303Z",
+            "expiresAt": "2026-01-14T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -69,41 +69,45 @@
           "06-elektronenstruktur-atome": {
             "score": 100,
             "badge": "gold"
+          },
+          "07-eigenschaften-atome-ionenbindung": {
+            "score": 100,
+            "badge": "gold"
           }
         },
         "achievements": {
           "materie-messen-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-11T13:29:59.246Z",
-            "expiresAt": "2026-02-10T13:29:59.246Z",
+            "unlockedAt": "2025-12-29T12:53:03.303Z",
+            "expiresAt": "2026-01-28T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "atome-formeln-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-20T13:29:59.246Z",
-            "expiresAt": "2026-01-19T13:29:59.246Z",
+            "unlockedAt": "2025-12-19T12:53:03.303Z",
+            "expiresAt": "2026-01-18T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "chemische-reaktionen-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-11T13:29:59.246Z",
-            "expiresAt": "2026-02-10T13:29:59.246Z",
+            "unlockedAt": "2025-12-20T12:53:03.303Z",
+            "expiresAt": "2026-01-19T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "thermodynamik-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-31T13:29:59.246Z",
-            "expiresAt": "2026-01-30T13:29:59.246Z",
+            "unlockedAt": "2025-12-23T12:53:03.303Z",
+            "expiresAt": "2026-01-22T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "elektronenstruktur-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-06T13:29:59.246Z",
-            "expiresAt": "2026-02-05T13:29:59.246Z",
+            "unlockedAt": "2025-12-26T12:53:03.303Z",
+            "expiresAt": "2026-01-25T12:53:03.303Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -112,7 +116,7 @@
     },
     "streak": {
       "current": 10,
-      "lastActivityDate": "2026-01-13T10:00:00.000Z",
+      "lastActivityDate": "2026-01-14T10:00:00.000Z",
       "totalDays": 25,
       "longestStreak": 10,
       "rescueMode": false,

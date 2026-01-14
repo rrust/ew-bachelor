@@ -1,0 +1,1171 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "07-eigenschaften-atome-ionenbindung",
+  "metadata": {
+    "topic": "Eigenschaften der Atome und die Ionenbindung",
+    "description": "Periodentrends verstehen: Effektive Kernladung, Atom- und Ionenradien, Ionisierungsenergie und Elektronenaffinität",
+    "estimatedTime": 100,
+    "version": "1.0.0",
+    "sources": [
+      {
+        "id": "vorlesung-k7",
+        "title": "Vorlesungsfolien Kapitel 7: Eigenschaften der Atome (WS2025)",
+        "url": "https://moodle.univie.ac.at/pluginfile.php/31885034/mod_resource/content/1/Kapitel7.pdf",
+        "type": "pdf"
+      },
+      {
+        "id": "mortimer",
+        "title": "Mortimer & Müller: Chemie - Das Basiswissen (10. Aufl.)",
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Eigenschaften der Atome und die Ionenbindung",
+      "content": "# Eigenschaften der Atome und die Ionenbindung\n\nIn diesem Kapitel lernst du, wie sich die Eigenschaften der Elemente systematisch im Periodensystem ändern. Du wirst verstehen, warum Atome unterschiedlich groß sind, warum manche Elemente leicht Elektronen abgeben und andere sie bevorzugt aufnehmen.\n\n## Lernziele\n\nNach dieser Vorlesung kannst du:\n\n- Die effektive Kernladung $Z^*$ berechnen und ihre Bedeutung erklären\n- Atomradius-Trends in Perioden und Gruppen vorhersagen\n- Den Unterschied zwischen Kationen- und Anionengrößen erklären\n- Isoelektronische Reihen nach Größe ordnen\n- Ionisierungsenergien und ihre Trends interpretieren\n- Elektronenaffinitäten erklären (inkl. Anomalien wie F vs. Cl)\n- Periodentrends auf unbekannte Elemente anwenden",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.1.1"
+        }
+      ],
+      "content": "# Einführung in die Periodentrends\n\nDas Periodensystem der Elemente ist weit mehr als eine bloße Auflistung – es zeigt **systematische Trends** in den physikalischen und chemischen Eigenschaften der Elemente. Diese Trends wiederholen sich periodisch und sind essenziell für das Verständnis chemischer Reaktionen.\n\n## Die drei wichtigsten Trends\n\nIn diesem Kapitel werden wir drei fundamentale Eigenschaften untersuchen:\n\n1. **Atom- und Ionengröße** (Radien)\n2. **Ionisierungsenergien** (Energieaufwand zur Elektronenabgabe)\n3. **Elektronenaffinitäten** (Energieumsatz bei Elektronenaufnahme)\n\n## Warum gibt es diese Trends?\n\nDiese makroskopischen Eigenschaften lassen sich auf die **elektronische Struktur** der Atome zurückführen. Entscheidend ist das Zusammenspiel zwischen:\n\n- Der **Anziehung** durch den positiv geladenen Kern\n- Der **Abstoßung** der Elektronen untereinander\n\n> **Kernidee:** Wenn wir verstehen, wie stark der Kern die Elektronen anzieht, können wir die meisten Periodentrends erklären."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.1.1"
+        }
+      ],
+      "content": "# Die drei Haupttrends im Überblick\n\nBevor wir in die Details gehen, hier eine Übersicht der drei Haupttrends:\n\n## 1. Atomradien\n\n| Richtung     | Trend        | Erklärung                   |\n| ------------ | ------------ | --------------------------- |\n| In Periode → | **nimmt ab** | Höhere effektive Kernladung |\n| In Gruppe ↓  | **nimmt zu** | Neue Hauptschalen           |\n\n## 2. Ionisierungsenergie (IE)\n\n| Richtung     | Trend      | Erklärung                        |\n| ------------ | ---------- | -------------------------------- |\n| In Periode → | **steigt** | Elektronen fester gebunden       |\n| In Gruppe ↓  | **sinkt**  | Valenzelektronen weiter vom Kern |\n\n## 3. Elektronenaffinität (EA)\n\n| Richtung     | Trend                    | Erklärung                              |\n| ------------ | ------------------------ | -------------------------------------- |\n| In Periode → | **wird negativer**       | Stärkere Anziehung für neue Elektronen |\n| In Gruppe ↓  | **wird weniger negativ** | Schwächere Anziehung                   |\n\n> **Merke:** Die effektive Kernladung $Z^*$ ist der Schlüssel zum Verständnis aller drei Trends!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.1.2"
+        }
+      ],
+      "content": "# Die Effektive Kernladung ($Z^*$)\n\nEin zentrales Konzept zum Verständnis der Periodentrends ist die **effektive Kernladung**.\n\n## Das Problem: Abschirmung\n\nIn einem Mehrelektronenatom spüren die äußeren Elektronen (Valenzelektronen) **nicht** die volle positive Ladung des Atomkerns. Warum?\n\nDie **inneren Elektronen** schirmen die positive Ladung des Kerns teilweise ab. Sie bilden sozusagen einen \"Schild\" zwischen Kern und Valenzelektronen.\n\n## Definition\n\n> **Effektive Kernladung ($Z^*$):** Die positive Nettoladung, die ein Elektron in einem Atom tatsächlich \"spürt\".\n\n## Die Formel\n\n$$Z^* = Z - S$$\n\nDabei ist:\n- $Z$ = **Kernladung** (Anzahl der Protonen = Ordnungszahl)\n- $S$ = **Abschirmungskonstante** (entspricht näherungsweise der Zahl der inneren Elektronen)\n\n## Beispiel: Lithium\n\nLithium hat 3 Protonen und 3 Elektronen:\n- 2 Elektronen in der 1s-Schale (innere Schale)\n- 1 Elektron in der 2s-Schale (Valenzelektron)\n\nDas Valenzelektron spürt:\n$$Z^* = 3 - 2 = +1$$\n\nStatt der vollen +3 Ladung spürt das Valenzelektron nur etwa +1!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.1.2"
+        }
+      ],
+      "content": "# Trend der effektiven Kernladung\n\n## Innerhalb einer Periode: $Z^*$ nimmt zu\n\nWenn wir in einer Periode von links nach rechts gehen, passiert Folgendes:\n\n1. Die **Protonenzahl** ($Z$) steigt mit jedem Element um 1\n2. Die **Elektronenzahl** steigt ebenfalls um 1\n3. ABER: Das neue Elektron kommt in die **gleiche Schale**\n\n## Warum steigt $Z^*$?\n\nElektronen in der **gleichen Schale** schirmen sich gegenseitig nur **schlecht** ab!\n\n- Die inneren Rumpfelektronen bleiben konstant\n- Die Protonenzahl steigt\n- Die Valenzelektronen erfahren eine immer stärkere Anziehung\n\n## Beispiel: 2. Periode\n\n| Element | $Z$ (Protonen) | Innere e⁻ | $Z^*$ (Schätzung) |\n| ------- | -------------- | --------- | ----------------- |\n| Li      | 3              | 2         | +1                |\n| Be      | 4              | 2         | +2                |\n| B       | 5              | 2         | +3                |\n| C       | 6              | 2         | +4                |\n| N       | 7              | 2         | +5                |\n| O       | 8              | 2         | +6                |\n| F       | 9              | 2         | +7                |\n\n> **Konsequenz:** Vom Lithium zum Fluor werden die Valenzelektronen immer stärker zum Kern gezogen. Das erklärt, warum die Atome kleiner werden!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.1.3"
+        }
+      ],
+      "content": "# Berechnung von $Z^*$ – Beispiele\n\n## Vereinfachte Methode\n\nFür eine schnelle Schätzung ziehen wir einfach die Anzahl der inneren Elektronen von der Kernladung ab:\n\n$$Z^* \\approx Z - \\text{Innere Elektronen}$$\n\n## Beispielrechnungen\n\n### Lithium (Li)\n\n- Ordnungszahl: $Z = 3$\n- Konfiguration: $1s^2 \\, 2s^1$\n- Innere Elektronen: 2 (die 1s-Elektronen)\n\n$$Z^*_{Li} = 3 - 2 = +1$$\n\n### Beryllium (Be)\n\n- Ordnungszahl: $Z = 4$\n- Konfiguration: $1s^2 \\, 2s^2$\n- Innere Elektronen: 2\n\n$$Z^*_{Be} = 4 - 2 = +2$$\n\n### Bor (B)\n\n- Ordnungszahl: $Z = 5$\n- Konfiguration: $1s^2 \\, 2s^2 \\, 2p^1$\n- Innere Elektronen: 2\n\n$$Z^*_{B} = 5 - 2 = +3$$\n\n## Präzisere Werte (Slater-Regeln)\n\nDie tatsächlichen Werte weichen etwas ab, zeigen aber den gleichen Trend:\n\n| Element | Geschätzt | Slater-Wert |\n| ------- | --------- | ----------- |\n| Li      | +1        | +1,28       |\n| B       | +3        | +2,58       |\n| C       | +4        | +3,22       |\n| F       | +7        | +5,13       |\n\n> **Fazit:** Die Valenzelektronen im Fluor spüren eine etwa 5× stärkere Anziehung als im Lithium!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.1.3"
+        }
+      ],
+      "content": "# Penetration und Orbitalenergien\n\n## Was ist Penetration?\n\nDie 2s-Elektronen zeigen ein interessantes Verhalten: Sie dringen teilweise in die Region der 1s-Elektronen ein. Dieses Phänomen heißt **Penetration** (Durchdringung).\n\n## Konsequenz für die Energie\n\nDurch diese Durchdringung spüren 2s-Elektronen zeitweise eine höhere positive Ladung als erwartet. Das führt zu:\n\n$$E(2s) < E(2p)$$\n\nDas 2s-Orbital liegt **energetisch tiefer** als das 2p-Orbital!\n\n## Einfluss auf Orbitalenergien\n\nWenn $Z^*$ steigt (innerhalb einer Periode), passiert Folgendes:\n\n1. Die Orbitale werden stärker zum Kern gezogen\n2. Die Orbitalenergien werden **abgesenkt** (negativer)\n3. Die Elektronen werden **fester gehalten**\n\n## Visualisierung\n\nStell dir vor, der Kern ist ein Magnet und die Elektronen sind Eisenspäne:\n\n- **Stärkerer Magnet** ($Z^*$ hoch) → Späne werden eng angezogen\n- **Schwächerer Magnet** ($Z^*$ niedrig) → Späne verteilen sich weiter\n\n> **Merke:** Je höher $Z^*$, desto tiefer (stabiler) liegen die Orbitale und desto mehr Energie braucht man, um ein Elektron zu entfernen."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wie verhält sich die effektive Kernladung ($Z^*$) innerhalb einer Periode von links nach rechts?",
+      "options": [
+        "Sie nimmt ab, da mehr Elektronen vorhanden sind",
+        "Sie bleibt konstant, da Elektronen und Protonen gleichermaßen zunehmen",
+        "Sie nimmt zu, da die Protonenzahl steigt, aber die Abschirmung durch innere Elektronen konstant bleibt",
+        "Sie schwankt unregelmäßig"
+      ],
+      "correctAnswer": "Sie nimmt zu, da die Protonenzahl steigt, aber die Abschirmung durch innere Elektronen konstant bleibt",
+      "hint": "Denke daran: Elektronen in der gleichen Schale schirmen sich gegenseitig nur schlecht ab.",
+      "explanation": "Die Anzahl der Protonen ($Z$) wächst, die Anzahl der abschirmenden Rumpfelektronen bleibt in einer Periode jedoch gleich. Daher steigt die Anziehungskraft auf die Valenzelektronen.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welcher Effekt erklärt, warum Elektronen in äußeren Schalen weniger Anziehungskraft spüren als erwartet?",
+      "options": [
+        "Der Tunneleffekt",
+        "Der Abschirmeffekt (Shielding)",
+        "Der Photoelektrische Effekt",
+        "Die Hundsche Regel"
+      ],
+      "correctAnswer": "Der Abschirmeffekt (Shielding)",
+      "hint": "Es geht um einen \"Schild\" zwischen Kern und äußeren Elektronen.",
+      "explanation": "Innere Elektronen schirmen die positive Ladung des Kerns ab, sodass äußere Elektronen eine reduzierte effektive Kernladung spüren.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Formel für die effektive Kernladung:",
+      "text": "Die effektive Kernladung berechnet sich aus: $Z^* = {{blank1}} - {{blank2}}$",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "Z",
+          "alternatives": [
+            "Kernladung",
+            "Protonenzahl"
+          ],
+          "hint": "Die Anzahl der Protonen im Kern"
+        },
+        {
+          "id": "blank2",
+          "answer": "S",
+          "alternatives": [
+            "Abschirmung",
+            "Abschirmungskonstante"
+          ],
+          "hint": "Die Abschirmung durch innere Elektronen"
+        }
+      ],
+      "successMessage": "Richtig! $Z^* = Z - S$ wobei Z die Kernladung und S die Abschirmungskonstante ist.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Auswirkungen einer höheren effektiven Kernladung ($Z^*$) den Eigenschaften zu:",
+      "pairs": [
+        {
+          "left": "Höheres $Z^*$",
+          "right": "Orbitale liegen energetisch tiefer"
+        },
+        {
+          "left": "Stärkere Anziehung auf Valenzelektronen",
+          "right": "Kleinerer Atomradius"
+        },
+        {
+          "left": "Mehr Protonen bei gleicher Abschirmung",
+          "right": "Elektronen fester gebunden"
+        },
+        {
+          "left": "Niedrigeres $Z^*$",
+          "right": "Leichtere Elektronenabgabe"
+        }
+      ],
+      "successMessage": "Sehr gut! Du verstehst die Zusammenhänge zwischen $Z^*$ und den Atomeigenschaften.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Berechne die effektive Kernladung ($Z^*$) für ein Stickstoff-Atom (N, Ordnungszahl 7) unter der Annahme, dass nur die inneren 1s-Elektronen (2 Stück) abschirmen.",
+      "variables": {
+        "Z": 7,
+        "S": 2
+      },
+      "formula": "$Z^* = Z - S$",
+      "steps": [
+        "Stickstoff hat die Ordnungszahl Z = 7 (7 Protonen)",
+        "Die Elektronenkonfiguration ist: $1s^2 \\, 2s^2 \\, 2p^3$",
+        "Die inneren Elektronen (1s) sind 2 Stück: S = 2",
+        "Einsetzen: $Z^* = 7 - 2 = 5$"
+      ],
+      "correctAnswer": "5",
+      "unit": "",
+      "hint": "Wie viele Rumpfelektronen hat Stickstoff? Das sind die 1s-Elektronen.",
+      "explanation": "Mit $Z^* = Z - S = 7 - 2 = 5$ spüren die Valenzelektronen im Stickstoff eine effektive Kernladung von +5. Das ist deutlich mehr als beim Lithium (+1)!",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=kY8eW-t1k6Y",
+      "title": "Periodensystem Trends – Atomradius, Ionenradius, Ionisierungsenergie, Elektronenaffinität",
+      "channel": "brainfaqk",
+      "duration": "ca. 10 min",
+      "description": "Erklärt anschaulich die effektive Kernladung als Ursache für alle Periodentrends.",
+      "watchFor": [
+        "Wie wird die effektive Kernladung erklärt?",
+        "Welche vier Trends werden besprochen?",
+        "Warum werden Atome in einer Periode kleiner?"
+      ],
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.2.1"
+        }
+      ],
+      "content": "# Was ist der Atomradius?\n\n## Das Problem der Definition\n\nEin Atom hat keine scharfe Grenze – die Elektronenwolke erstreckt sich theoretisch bis ins Unendliche. Daher brauchen wir eine praktische Definition.\n\n## Kovalenter Radius\n\nDer **Atomradius** wird meist als die Hälfte des Abstands zwischen zwei Atomkernen in einer chemischen Bindung definiert:\n\n$$r_{Atom} = \\frac{d_{Bindung}}{2}$$\n\nFür ein Chlormolekül (Cl₂) mit einem Bindungsabstand von 198 pm gilt:\n$$r_{Cl} = \\frac{198 \\text{ pm}}{2} = 99 \\text{ pm}$$\n\n## Weitere Radiustypen\n\n| Typ                      | Definition                                | Anwendung    |\n| ------------------------ | ----------------------------------------- | ------------ |\n| **Kovalenter Radius**    | Hälfte des Abstands in kovalenter Bindung | Nichtmetalle |\n| **Metallischer Radius**  | Hälfte des Abstands im Metallgitter       | Metalle      |\n| **Van-der-Waals-Radius** | Abstand bei nicht-bindender Berührung     | Edelgase     |\n\n> **Wichtig:** Atomradien sind keine absoluten Werte, sondern hängen von der Messmethode ab. Für Vergleiche innerhalb des PSE verwenden wir konsistente Werte."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.2.1"
+        }
+      ],
+      "content": "# Atomradius-Trend in der Gruppe: Zunahme nach unten\n\n## Der Trend\n\n**Innerhalb einer Gruppe nimmt der Atomradius von oben nach unten ZU.**\n\n## Warum?\n\nWenn wir im Periodensystem nach unten gehen:\n\n1. Es werden **neue Hauptschalen** besetzt (höhere Hauptquantenzahl $n$)\n2. Diese äußeren Orbitale sind **weiter vom Kern entfernt**\n3. Die Anziehungskraft des Kerns nimmt mit der Entfernung ab\n\n## Beispiel: Gruppe 1A (Alkalimetalle)\n\n| Element | Schale | Atomradius |\n| ------- | ------ | ---------- |\n| Li      | 2      | 152 pm     |\n| Na      | 3      | 186 pm     |\n| K       | 4      | 227 pm     |\n| Rb      | 5      | 248 pm     |\n| Cs      | 6      | 265 pm     |\n\nDer Radius nimmt von Lithium (152 pm) bis Cäsium (265 pm) fast um das Doppelte zu!\n\n## Anschauliche Erklärung\n\nStell dir die Schalen wie Zwiebelringe vor:\n- Jede neue Periode fügt einen neuen \"Ring\" hinzu\n- Die äußeren Elektronen sind dadurch weiter vom Zentrum (Kern) entfernt\n- Das Atom wird insgesamt größer"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.2.1"
+        }
+      ],
+      "content": "# Atomradius-Trend in der Periode: Abnahme nach rechts\n\n## Der Trend\n\n**Innerhalb einer Periode nimmt der Atomradius von links nach rechts AB.**\n\n## Warum?\n\nWie wir bereits gelernt haben, steigt die effektive Kernladung ($Z^*$) von links nach rechts:\n\n1. Die Protonenzahl steigt\n2. Die neuen Elektronen kommen in die **gleiche Schale**\n3. Elektronen in der gleichen Schale schirmen sich **schlecht** ab\n4. Höheres $Z^*$ → stärkere Anziehung → die Elektronenwolke wird **kontrahiert**\n\n## Das Ergebnis\n\nDas Atom wird **kleiner**, obwohl es mehr Elektronen enthält!\n\n## Beispiel: 3. Periode\n\n| Element | Protonen | Atomradius |\n| ------- | -------- | ---------- |\n| Na      | 11       | 186 pm     |\n| Mg      | 12       | 160 pm     |\n| Al      | 13       | 143 pm     |\n| Si      | 14       | 117 pm     |\n| P       | 15       | 115 pm     |\n| S       | 16       | 104 pm     |\n| Cl      | 17       | 99 pm      |\n\nVon Natrium (186 pm) bis Chlor (99 pm) – fast eine Halbierung des Radius!\n\n> **Merke:** Der Periodentrend (Abnahme) ist die direkte Konsequenz der steigenden effektiven Kernladung."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.2.1"
+        }
+      ],
+      "content": "# Atomradien – Vergleichsdaten\n\n## 3. Periode: Abnahme von links nach rechts\n\n| Element   | Symbol | Protonen | Radius (pm) | Trend       |\n| --------- | ------ | -------- | ----------- | ----------- |\n| Natrium   | Na     | 11       | 186         | →           |\n| Magnesium | Mg     | 12       | 160         | →           |\n| Aluminium | Al     | 13       | 143         | →           |\n| Silicium  | Si     | 14       | 117         | →           |\n| Phosphor  | P      | 15       | 115         | →           |\n| Schwefel  | S      | 16       | 104         | →           |\n| Chlor     | Cl     | 17       | 99          | (kleinster) |\n\n**Abnahme:** ca. 47% vom größten zum kleinsten\n\n## Gruppe 1A: Zunahme von oben nach unten\n\n| Element  | Symbol | Schale | Radius (pm) | Trend     |\n| -------- | ------ | ------ | ----------- | --------- |\n| Lithium  | Li     | 2      | 152         | ↓         |\n| Natrium  | Na     | 3      | 186         | ↓         |\n| Kalium   | K      | 4      | 227         | ↓         |\n| Rubidium | Rb     | 5      | 248         | ↓         |\n| Cäsium   | Cs     | 6      | 265         | (größter) |\n\n**Zunahme:** ca. 74% vom kleinsten zum größten\n\n> **Fazit:** Der Gruppentrend (Zunahme durch neue Schalen) ist stärker als der Periodentrend (Abnahme durch höheres $Z^*$)."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.2.2"
+        }
+      ],
+      "content": "# Besonderheit: Übergangsmetalle\n\n## Ein anderes Verhalten\n\nBei den **Übergangselementen** (d-Block) verhalten sich die Radien anders als bei den Hauptgruppenelementen.\n\n## Die Beobachtung\n\nDie Atomradien:\n- Nehmen zu Beginn einer Übergangsmetall-Reihe ab\n- Bleiben dann aber über einen weiten Bereich **nahezu konstant**\n- Steigen am Ende leicht an\n\n## Warum ist das so?\n\n1. Elektronen werden in die $(n-1)d$-Unterschale aufgefüllt\n   - Beispiel: 3d wird gefüllt, während 4s bereits besetzt ist\n2. Die d-Unterschale liegt **innerhalb** der äußeren s-Unterschale\n3. Die d-Elektronen schirmen die äußeren s-Elektronen **effektiv ab**\n4. Die effektive Kernladung auf die 4s-Elektronen bleibt dadurch **annähernd konstant**\n\n## Die Konsequenz\n\nDa $Z^*$ kaum steigt, ändert sich auch der Radius kaum!\n\n> **Wichtig:** Dies erklärt auch, warum Übergangsmetalle chemisch sehr ähnliche Eigenschaften haben – ihre Valenzelektronen (4s) \"sehen\" fast die gleiche effektive Kernladung."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.2.2"
+        }
+      ],
+      "content": "# Dichte-Trend bei Übergangsmetallen\n\n## Die Beobachtung\n\nDie **Dichte** der Übergangsmetalle nimmt innerhalb einer Periode **deutlich zu**.\n\nDie Elemente mit der höchsten Dichte im gesamten Periodensystem sind:\n- **Osmium** (Os): 22,6 g/cm³\n- **Iridium** (Ir): 22,4 g/cm³\n\n## Warum steigt die Dichte?\n\nDie Dichte berechnet sich aus:\n$$\\text{Dichte} = \\frac{\\text{Masse}}{\\text{Volumen}}$$\n\nBei Übergangsmetallen passiert Folgendes:\n\n| Eigenschaft | Trend in Periode →                          |\n| ----------- | ------------------------------------------- |\n| Atommasse   | steigt deutlich (mehr Protonen + Neutronen) |\n| Atomradius  | bleibt fast konstant                        |\n| Volumen     | bleibt fast konstant                        |\n\n**Ergebnis:** Mehr Masse bei gleichem Volumen → höhere Dichte!\n\n## Anschaulich\n\nStell dir einen Koffer vor, der gleich groß bleibt, aber mit immer schwereren Sachen gefüllt wird. Der Koffer wird immer schwerer, obwohl er nicht größer wird.\n\n> **Merke:** Die fast konstanten Radien bei Übergangsmetallen führen dazu, dass die Dichte innerhalb einer Periode stark zunimmt."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum werden Atome innerhalb einer Periode von links nach rechts kleiner?",
+      "options": [
+        "Weil Elektronen abgestoßen werden",
+        "Weil die effektive Kernladung ($Z^*$) steigt und die Hülle stärker anzieht",
+        "Weil weniger Schalen besetzt sind",
+        "Weil die Atommasse zunimmt"
+      ],
+      "correctAnswer": "Weil die effektive Kernladung ($Z^*$) steigt und die Hülle stärker anzieht",
+      "hint": "Denke an den Zusammenhang zwischen Protonenzahl und Abschirmung in der gleichen Schale.",
+      "explanation": "Die steigende positive Ladung im Kern zieht die Elektronenwolke stärker zusammen, da die Abschirmung innerhalb der gleichen Schale nicht proportional mitwächst.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Aussage zu Übergangsmetallen ist korrekt?",
+      "options": [
+        "Ihr Radius nimmt drastisch zu innerhalb einer Periode",
+        "Ihr Radius bleibt innerhalb einer Periode annähernd konstant",
+        "Sie haben die geringste Dichte aller Elemente",
+        "Die 4s-Elektronen schirmen die 3d-Elektronen ab"
+      ],
+      "correctAnswer": "Ihr Radius bleibt innerhalb einer Periode annähernd konstant",
+      "hint": "Was passiert, wenn d-Elektronen aufgefüllt werden?",
+      "explanation": "Durch das Auffüllen der inneren d-Orbitale bleibt die effektive Kernladung auf die äußersten s-Elektronen fast gleich, weshalb sich der Radius kaum ändert.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Ordne die folgenden Atome nach steigendem Atomradius (vom kleinsten zum größten):",
+      "items": [
+        {
+          "id": "mg",
+          "text": "Mg (Magnesium)",
+          "correctPosition": 1
+        },
+        {
+          "id": "na",
+          "text": "Na (Natrium)",
+          "correctPosition": 2
+        },
+        {
+          "id": "k",
+          "text": "K (Kalium)",
+          "correctPosition": 3
+        }
+      ],
+      "hint": "Mg und Na sind in der gleichen Periode – wer ist weiter rechts? K steht unter Na in der Gruppe.",
+      "explanation": "Mg ist in der gleichen Periode wie Na, aber weiter rechts → kleiner als Na. K steht unter Na in der Gruppe → größer als Na. Reihenfolge: Mg (kleinstes) < Na < K (größtes).",
+      "successMessage": "Richtig! Mg < Na < K",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jeden Trend seiner Erklärung zu:",
+      "pairs": [
+        {
+          "left": "Radius nimmt in Periode ab",
+          "right": "Höhere $Z^*$ zieht Elektronen stärker an"
+        },
+        {
+          "left": "Radius nimmt in Gruppe zu",
+          "right": "Neue Hauptschalen werden besetzt"
+        },
+        {
+          "left": "Übergangsmetalle haben ähnliche Radien",
+          "right": "d-Elektronen schirmen effektiv ab"
+        },
+        {
+          "left": "Dichte steigt bei Übergangsmetallen",
+          "right": "Mehr Masse bei gleichem Volumen"
+        }
+      ],
+      "successMessage": "Ausgezeichnet! Du verstehst die Ursachen der Atomradius-Trends.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Atomradien vorhersagen",
+      "scenario": "Du sollst für verschiedene Elementpaare vorhersagen, welches Element den größeren Atomradius hat.",
+      "tasks": [
+        {
+          "question": "Welches Element ist größer: Sauerstoff (O) oder Schwefel (S)?",
+          "answer": "Schwefel (S)",
+          "explanation": "S steht unter O in der Gruppe → neue Schale → größerer Radius"
+        },
+        {
+          "question": "Welches Element ist größer: Natrium (Na) oder Magnesium (Mg)?",
+          "answer": "Natrium (Na)",
+          "explanation": "Mg steht rechts von Na in der gleichen Periode → höheres $Z^*$ → kleiner"
+        },
+        {
+          "question": "Welches Element ist größer: Kalium (K) oder Calcium (Ca)?",
+          "answer": "Kalium (K)",
+          "explanation": "Ca steht rechts von K in der gleichen Periode → höheres $Z^*$ → kleiner"
+        },
+        {
+          "question": "Welches Element ist größer: Lithium (Li) oder Fluor (F)?",
+          "answer": "Lithium (Li)",
+          "explanation": "F steht weit rechts von Li in der gleichen Periode → viel höheres $Z^*$ → deutlich kleiner"
+        }
+      ],
+      "successMessage": "Super! Du kannst die Atomradius-Trends anwenden.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=XWv43NysqgE",
+      "title": "Atomradius im Periodensystem",
+      "channel": "musstewissen Chemie",
+      "duration": "ca. 6 min",
+      "description": "Erklärt anschaulich die Trends der Atomradien im Periodensystem.",
+      "watchFor": [
+        "Wie verändert sich der Radius in einer Periode?",
+        "Wie verändert sich der Radius in einer Gruppe?",
+        "Welche Rolle spielt die Kernladung?"
+      ],
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.3.1"
+        }
+      ],
+      "content": "# Kationen – Kleiner als ihre Atome\n\n## Was sind Kationen?\n\n**Kationen** entstehen, wenn neutrale Atome Elektronen **abgeben**. Dies ist typisch für Metalle.\n\n$$\\text{Na} \\rightarrow \\text{Na}^+ + e^-$$\n\n## Der Trend\n\n**Kationen sind IMMER kleiner als ihre neutralen Ursprungsatome.**\n\n## Warum sind Kationen kleiner?\n\nZwei Effekte wirken zusammen:\n\n### 1. Verlust der äußeren Schale\n\nOft wird durch die Abgabe der Valenzelektronen die äußerste Hauptschale **komplett geleert**.\n\nBeispiel Lithium:\n- **Li-Atom:** $1s^2 \\, 2s^1$ (Valenzelektron in Schale 2)\n- **Li⁺-Ion:** $1s^2$ (nur noch Schale 1 besetzt)\n\n### 2. Erhöhte Anziehung\n\n- Die Anzahl der **Protonen** bleibt gleich\n- Die Anzahl der **Elektronen** sinkt\n- Das Verhältnis Protonen:Elektronen steigt\n- Die verbleibenden Elektronen werden **stärker angezogen**\n- Die Elektron-Elektron-Abstoßung nimmt ab\n\n## Beispiel: Lithium\n\n| Teilchen     | Elektronen | Radius |\n| ------------ | ---------- | ------ |\n| Li (Atom)    | 3          | 152 pm |\n| Li⁺ (Kation) | 2          | 78 pm  |\n\n**Fast eine Halbierung des Radius!**"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.3.2"
+        }
+      ],
+      "content": "# Anionen – Größer als ihre Atome\n\n## Was sind Anionen?\n\n**Anionen** entstehen, wenn neutrale Atome Elektronen **aufnehmen**. Dies ist typisch für Nichtmetalle.\n\n$$\\text{Cl} + e^- \\rightarrow \\text{Cl}^-$$\n\n## Der Trend\n\n**Anionen sind IMMER größer als ihre neutralen Ursprungsatome.**\n\n## Warum sind Anionen größer?\n\n### 1. Erhöhte Abstoßung\n\nEin zusätzliches Elektron wird in die Valenzschale aufgenommen. Mehr Elektronen bedeutet:\n- **Mehr Elektron-Elektron-Abstoßung**\n- Die Elektronenwolke **dehnt sich aus**\n\n### 2. Geringere effektive Anziehung\n\n- Die **Kernladung** bleibt gleich\n- Es müssen **mehr Elektronen** gebunden werden\n- Die Anziehung pro Elektron sinkt\n\n## Beispiel: Fluor\n\n| Teilchen   | Elektronen | Protonen | Radius |\n| ---------- | ---------- | -------- | ------ |\n| F (Atom)   | 9          | 9        | 71 pm  |\n| F⁻ (Anion) | 10         | 9        | 133 pm |\n\n**Fast eine Verdopplung des Radius!**\n\n> **Merke:** Bei Anionen bleiben die Protonen gleich, aber die Elektronen nehmen zu → Abstoßung steigt → Radius wächst."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.3.2"
+        }
+      ],
+      "content": "# Beispiele: Atom vs. Ion\n\n## Übersicht wichtiger Vergleiche\n\n| Atom/Ion | Elektronen | Protonen | Radius (pm) | Änderung |\n| -------- | ---------- | -------- | ----------- | -------- |\n| Li       | 3          | 3        | 152         | —        |\n| Li⁺      | 2          | 3        | 78          | −49%     |\n| Na       | 11         | 11       | 186         | —        |\n| Na⁺      | 10         | 11       | 102         | −45%     |\n| K        | 19         | 19       | 227         | —        |\n| K⁺       | 18         | 19       | 138         | −39%     |\n| F        | 9          | 9        | 71          | —        |\n| F⁻       | 10         | 9        | 133         | +87%     |\n| Cl       | 17         | 17       | 99          | —        |\n| Cl⁻      | 18         | 17       | 181         | +83%     |\n| O        | 8          | 8        | 73          | —        |\n| O²⁻      | 10         | 8        | 140         | +92%     |\n\n## Zusammenfassung\n\n- **Kationen:** Schrumpfen um ca. 40-50%\n- **Anionen:** Wachsen um ca. 80-90%\n\n> **Faustregel:** Je höher die Ladung des Ions, desto stärker der Effekt!\n>\n> Beispiel: Mg²⁺ ist noch kleiner als Na⁺, obwohl Mg größer als Na ist."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.3.3"
+        }
+      ],
+      "content": "# Isoelektronische Reihen\n\n## Definition\n\n> Eine **isoelektronische Reihe** besteht aus Atomen und Ionen, die die **gleiche Anzahl an Elektronen** besitzen, aber eine unterschiedliche Kernladung ($Z$) haben.\n\n## Beispiel: 10-Elektronen-Reihe\n\nAlle folgenden Teilchen haben 10 Elektronen (Neon-Konfiguration: $1s^2 2s^2 2p^6$):\n\n| Teilchen | Protonen ($Z$) | Elektronen | Ladung |\n| -------- | -------------- | ---------- | ------ |\n| N³⁻      | 7              | 10         | −3     |\n| O²⁻      | 8              | 10         | −2     |\n| F⁻       | 9              | 10         | −1     |\n| Ne       | 10             | 10         | 0      |\n| Na⁺      | 11             | 10         | +1     |\n| Mg²⁺     | 12             | 10         | +2     |\n| Al³⁺     | 13             | 10         | +3     |\n\n## Was haben sie gemeinsam?\n\n- **Gleiche Elektronenkonfiguration**\n- **Gleiche Anzahl an Elektronen**\n- Unterschiedliche Anzahl an Protonen\n\n## Warum ist das wichtig?\n\nIsoelektronische Teilchen ermöglichen einen direkten Vergleich: Wie wirkt sich die **Kernladung** auf die Größe aus, wenn die Elektronenzahl gleich ist?"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.3.3"
+        }
+      ],
+      "content": "# Größentrend in isoelektronischen Reihen\n\n## Die Regel\n\nIn einer isoelektronischen Reihe gilt:\n\n> **Je mehr Protonen, desto kleiner das Teilchen!**\n\n## Warum?\n\nDa die Elektronenzahl **identisch** ist, bestimmt allein die **Kernladung** die Größe:\n\n- Mehr Protonen → stärkere Anziehung\n- Stärkere Anziehung → Elektronen werden näher zum Kern gezogen\n- Ergebnis: kleinerer Radius\n\n## Beispiel: 10-Elektronen-Reihe\n\n| Teilchen | Protonen | Radius (pm) |\n| -------- | -------- | ----------- |\n| O²⁻      | 8        | 140         |\n| F⁻       | 9        | 133         |\n| Na⁺      | 11       | 102         |\n| Mg²⁺     | 12       | 72          |\n| Al³⁺     | 13       | 53          |\n\n**Reihenfolge nach Größe:**\n$$\\text{O}^{2-} > \\text{F}^- > \\text{Na}^+ > \\text{Mg}^{2+} > \\text{Al}^{3+}$$\n\n## Anschaulich\n\nStell dir 10 Gummibälle (Elektronen) in einem Netz vor:\n- Je stärker du am Netz ziehst (mehr Protonen), desto enger werden die Bälle zusammengedrückt\n- Alle haben die gleiche Anzahl Bälle, aber unterschiedlich starken \"Zug\" vom Zentrum"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wie verändert sich der Radius, wenn aus einem Chlor-Atom (Cl) ein Chlorid-Ion (Cl⁻) wird?",
+      "options": [
+        "Er wird kleiner",
+        "Er bleibt gleich",
+        "Er wird größer",
+        "Das kann man nicht vorhersagen"
+      ],
+      "correctAnswer": "Er wird größer",
+      "hint": "Bei der Bildung eines Anions kommen Elektronen hinzu.",
+      "explanation": "Bei der Bildung eines Anions (Cl⁻) kommen Elektronen hinzu. Die erhöhte Elektronen-Abstoßung führt zu einer Ausdehnung der Hülle.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welches Teilchen ist am kleinsten?",
+      "options": [
+        "Mg (Atom)",
+        "Mg²⁺ (Ion)",
+        "Na (Atom)",
+        "Na⁺ (Ion)"
+      ],
+      "correctAnswer": "Mg²⁺ (Ion)",
+      "hint": "Vergleiche: Kationen sind kleiner als ihre Atome. Mg²⁺ und Na⁺ sind isoelektronisch.",
+      "explanation": "Kationen sind kleiner als ihre Atome. Mg²⁺ ist isoelektronisch zu Na⁺ (beide haben 10 Elektronen), hat aber mehr Protonen (12 vs. 11) im Kern, zieht die Hülle also stärker zusammen. Zudem ist das neutrale Mg kleiner als Na.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Ordne die isoelektronische Reihe nach steigender Größe (vom kleinsten zum größten):",
+      "items": [
+        {
+          "id": "ca2plus",
+          "text": "Ca²⁺ (20 Protonen)",
+          "correctPosition": 1
+        },
+        {
+          "id": "kplus",
+          "text": "K⁺ (19 Protonen)",
+          "correctPosition": 2
+        },
+        {
+          "id": "clminus",
+          "text": "Cl⁻ (17 Protonen)",
+          "correctPosition": 3
+        },
+        {
+          "id": "s2minus",
+          "text": "S²⁻ (16 Protonen)",
+          "correctPosition": 4
+        }
+      ],
+      "hint": "Alle haben 18 Elektronen (Argon-Konfiguration). Je mehr Protonen, desto kleiner!",
+      "explanation": "Alle haben 18 Elektronen. Die Größe wird durch die Protonenzahl bestimmt: Ca²⁺ (20p) zieht am stärksten → kleinstes Ion. S²⁻ (16p) zieht am schwächsten → größtes Ion.",
+      "successMessage": "Richtig! Ca²⁺ < K⁺ < Cl⁻ < S²⁻",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jedem Ion zu, ob es größer oder kleiner als das entsprechende neutrale Atom ist:",
+      "pairs": [
+        {
+          "left": "Na⁺",
+          "right": "kleiner als Na"
+        },
+        {
+          "left": "Cl⁻",
+          "right": "größer als Cl"
+        },
+        {
+          "left": "Mg²⁺",
+          "right": "kleiner als Mg"
+        },
+        {
+          "left": "O²⁻",
+          "right": "größer als O"
+        }
+      ],
+      "successMessage": "Perfekt! Kationen sind immer kleiner, Anionen immer größer als ihre Atome.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Isoelektronische Reihen analysieren",
+      "scenario": "Du erhältst verschiedene Ionen und sollst sie als isoelektronische Reihe identifizieren und nach Größe ordnen.",
+      "tasks": [
+        {
+          "question": "Identifiziere die isoelektronische Reihe: O²⁻, F⁻, Ne, Na⁺, Mg²⁺. Wie viele Elektronen haben alle?",
+          "answer": "10 Elektronen",
+          "explanation": "Alle haben die Neon-Konfiguration mit 10 Elektronen: O(8)+2, F(9)+1, Ne(10), Na(11)-1, Mg(12)-2"
+        },
+        {
+          "question": "Ordne O²⁻, F⁻, Na⁺, Mg²⁺ nach steigender Größe.",
+          "answer": "Mg²⁺ < Na⁺ < F⁻ < O²⁻",
+          "explanation": "Je mehr Protonen bei gleicher Elektronenzahl, desto kleiner. Mg hat 12p, Na 11p, F 9p, O 8p."
+        },
+        {
+          "question": "Welches Ion ist größer: N³⁻ oder O²⁻? Beide haben 10 Elektronen.",
+          "answer": "N³⁻ ist größer",
+          "explanation": "N hat nur 7 Protonen (vs. 8 bei O), zieht die 10 Elektronen also schwächer an → größerer Radius."
+        }
+      ],
+      "successMessage": "Ausgezeichnet! Du beherrschst die isoelektronischen Reihen.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=q6g3tB4tTjs",
+      "title": "Ionenradius im Periodensystem",
+      "channel": "Chemie - einfach erklärt",
+      "duration": "ca. 7 min",
+      "description": "Erklärt den Unterschied zwischen Atom- und Ionenradien und wie sich Kationen und Anionen in ihrer Größe unterscheiden.",
+      "watchFor": [
+        "Warum sind Kationen kleiner als ihre Atome?",
+        "Warum sind Anionen größer als ihre Atome?",
+        "Was sind isoelektronische Reihen?"
+      ],
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.1"
+        }
+      ],
+      "content": "# Ionisierungsenergie – Definition\n\n## Was ist Ionisierungsenergie?\n\nDie **Ionisierungsenergie** (IE) ist ein Maß dafür, wie fest ein Atom seine Elektronen bindet.\n\n> **Definition:** Die Ionisierungsenergie ist die minimal benötigte Energie, um das am schwächsten gebundene Elektron aus einem isolierten Atom im **Gaszustand** vollständig zu entfernen.\n\n## Wichtige Bedingungen\n\n1. Das Atom muss im **Gaszustand** vorliegen (isoliert, keine Wechselwirkungen)\n2. Es wird das **schwächst gebundene** Elektron entfernt (das Valenzelektron)\n3. Das Elektron wird **vollständig entfernt** (ins Unendliche)\n\n## Notation\n\nDie erste Ionisierungsenergie wird oft als $I_1$ oder IE₁ geschrieben:\n\n$$I_1 = \\text{Energie für } X_{(g)} \\rightarrow X^+_{(g)} + e^-$$\n\n## Einheit\n\nDie Ionisierungsenergie wird üblicherweise in **kJ/mol** angegeben.\n\nBeispiel Wasserstoff: $I_1 = 1312$ kJ/mol"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.1"
+        }
+      ],
+      "content": "# Ionisierung ist endotherm\n\n## Die Reaktionsgleichung\n\n$$X_{(g)} + \\text{Energie} \\rightarrow X^+_{(g)} + e^-$$\n\n## Immer positiv\n\nDie Ionisierungsenergie ist **immer positiv** (endotherm), weil:\n- Das Elektron wird vom positiv geladenen Kern angezogen\n- Man muss **Energie aufwenden**, um diese Anziehung zu überwinden\n- Das Elektron verlässt das Atom nicht freiwillig\n\n## Beispiel: Magnesium\n\n$$\\text{Mg}_{(g)} + 738 \\text{ kJ/mol} \\rightarrow \\text{Mg}^+_{(g)} + e^-$$\n\nMan muss also 738 kJ/mol aufwenden, um einem Mol Magnesium-Atomen jeweils ein Elektron zu entreißen.\n\n## Was sagt uns die IE?\n\n| Hohe IE                        | Niedrige IE                   |\n| ------------------------------ | ----------------------------- |\n| Elektronen fest gebunden       | Elektronen locker gebunden    |\n| Schwer zu ionisieren           | Leicht zu ionisieren          |\n| Typisch für Nichtmetalle       | Typisch für Metalle           |\n| Beispiel: Helium (2372 kJ/mol) | Beispiel: Cäsium (376 kJ/mol) |\n\n> **Merke:** Elemente mit niedriger IE geben ihre Elektronen in chemischen Reaktionen leicht ab."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.2"
+        }
+      ],
+      "content": "# Mehrfache Ionisierung\n\n## Man kann mehrere Elektronen entfernen\n\nEinem Atom können sukzessive mehrere Elektronen entrissen werden:\n\n$$X \\xrightarrow{I_1} X^+ \\xrightarrow{I_2} X^{2+} \\xrightarrow{I_3} X^{3+} \\xrightarrow{I_4} \\ldots$$\n\n## Die Ionisierungsenergien steigen\n\n| Ionisierungsenergie | Prozess         | Warum höher?            |\n| ------------------- | --------------- | ----------------------- |\n| $I_1$ (1. IE)       | Atom → +1 Ion   | Grundwert               |\n| $I_2$ (2. IE)       | +1 Ion → +2 Ion | Ion ist bereits positiv |\n| $I_3$ (3. IE)       | +2 Ion → +3 Ion | Noch stärkere Ladung    |\n\n## Beispiel: Magnesium\n\n| IE    | Energie (kJ/mol) | Prozess     |\n| ----- | ---------------- | ----------- |\n| $I_1$ | 738              | Mg → Mg⁺    |\n| $I_2$ | 1451             | Mg⁺ → Mg²⁺  |\n| $I_3$ | 7733             | Mg²⁺ → Mg³⁺ |\n\n## Warum wird es immer schwerer?\n\nBei jeder Ionisierung:\n1. Das Verhältnis **Protonen : Elektronen** steigt\n2. Die verbleibenden Elektronen werden **stärker angezogen**\n3. Man braucht **mehr Energie**, um sie zu entfernen\n\n> **Beispiel $I_2$:** Beim Mg⁺ gibt es 12 Protonen, aber nur noch 11 Elektronen. Die Anziehung pro Elektron ist höher!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.2"
+        }
+      ],
+      "content": "# Der \"Sprung\" bei der Edelgasschale\n\n## Ein dramatischer Anstieg\n\nSchauen wir uns Magnesium genauer an:\n\n| IE    | Energie (kJ/mol) | Faktor zum Vorherigen |\n| ----- | ---------------- | --------------------- |\n| $I_1$ | 738              | —                     |\n| $I_2$ | 1451             | ×2,0                  |\n| $I_3$ | **7733**         | **×5,3**              |\n\nDer Sprung von $I_2$ zu $I_3$ ist **riesig**!\n\n## Warum dieser Sprung?\n\nNach der Entfernung der beiden Valenzelektronen (3s²) hat Mg²⁺ die **Edelgaskonfiguration** von Neon:\n\n$$\\text{Mg}^{2+}: 1s^2 \\, 2s^2 \\, 2p^6 \\quad \\text{(wie Neon)}$$\n\nDas dritte Elektron müsste aus dieser **stabilen inneren Schale** entfernt werden:\n- Die 2p-Elektronen sind viel näher am Kern\n- Sie werden viel stärker angezogen\n- Die Entfernung erfordert enorm viel Energie\n\n## Die Regel\n\n> **Der Sprung in der IE zeigt die Gruppennummer an!**\n\n| Element | Gruppe | Sprung zwischen |\n| ------- | ------ | --------------- |\n| Na      | 1      | $I_1$ und $I_2$ |\n| Mg      | 2      | $I_2$ und $I_3$ |\n| Al      | 3      | $I_3$ und $I_4$ |\n\nMetalle geben Elektronen nur bis zur Edelgaskonfiguration leicht ab!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.3"
+        }
+      ],
+      "content": "# IE-Trend in der Periode: Zunahme\n\n## Der Trend\n\n**Innerhalb einer Periode steigt die Ionisierungsenergie von links nach rechts.**\n\n## Warum?\n\nZwei Faktoren wirken zusammen:\n\n### 1. Steigende effektive Kernladung ($Z^*$)\n\n- Mehr Protonen → stärkere Anziehung\n- Die Valenzelektronen werden fester gehalten\n\n### 2. Sinkender Atomradius\n\n- Kleinere Atome → Elektronen näher am Kern\n- Näher am Kern → stärkere Anziehung\n\n## Die Konsequenz\n\nEs wird von links nach rechts immer **schwerer**, ein Elektron zu entfernen!\n\n## Beispiel: 2. Periode\n\n| Element | $Z$ | 1. IE (kJ/mol) |\n| ------- | --- | -------------- |\n| Li      | 3   | 520            |\n| Be      | 4   | 900            |\n| B       | 5   | 801            |\n| C       | 6   | 1086           |\n| N       | 7   | 1402           |\n| O       | 8   | 1314           |\n| F       | 9   | 1681           |\n| Ne      | 10  | 2081           |\n\n> **Folge:** Edelgase haben die höchsten Ionisierungsenergien!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.3"
+        }
+      ],
+      "content": "# IE-Trend in der Gruppe: Abnahme\n\n## Der Trend\n\n**Innerhalb einer Gruppe sinkt die Ionisierungsenergie von oben nach unten.**\n\n## Warum?\n\n### Größerer Atomradius\n\n- Je weiter unten in der Gruppe, desto mehr Schalen\n- Die Valenzelektronen sind weiter vom Kern entfernt\n- Die Anziehungskraft nimmt ab (Coulomb-Gesetz: $F \\propto \\frac{1}{r^2}$)\n\n## Die Konsequenz\n\nElektronen lassen sich bei größeren Atomen **leichter entfernen**!\n\n## Beispiel: Gruppe 1 (Alkalimetalle)\n\n| Element | Schale | 1. IE (kJ/mol) |\n| ------- | ------ | -------------- |\n| Li      | 2      | 520            |\n| Na      | 3      | 496            |\n| K       | 4      | 419            |\n| Rb      | 5      | 403            |\n| Cs      | 6      | 376            |\n\nVon Lithium zu Cäsium sinkt die IE um fast 30%!\n\n> **Folge:** Cäsium hat eine der niedrigsten Ionisierungsenergien und ist daher extrem reaktiv!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.4.3"
+        }
+      ],
+      "content": "# Ionisierungsenergie und Reaktivität\n\n## Der Zusammenhang\n\nDie Ionisierungsenergie bestimmt, wie leicht ein Metall seine Elektronen abgibt.\n\n| IE      | Elektronenabgabe | Reaktivität des Metalls |\n| ------- | ---------------- | ----------------------- |\n| Niedrig | Leicht           | Hoch (reaktiv)          |\n| Hoch    | Schwer           | Niedrig (unreaktiv)     |\n\n## Metalle als Reduktionsmittel\n\nMetalle mit **niedriger IE** sind gute **Reduktionsmittel**:\n- Sie geben ihre Elektronen leicht ab\n- Dabei werden sie selbst oxidiert\n- Sie reduzieren andere Stoffe\n\n## Beispiel: Alkalimetalle und Wasser\n\n$$2\\text{Na}_{(s)} + 2\\text{H}_2\\text{O}_{(l)} \\rightarrow 2\\text{NaOH}_{(aq)} + \\text{H}_{2(g)}$$\n\n| Alkalimetall | IE (kJ/mol) | Reaktion mit Wasser         |\n| ------------ | ----------- | --------------------------- |\n| Li           | 520         | Mäßig, Blasenbildung        |\n| Na           | 496         | Heftig, schmilzt            |\n| K            | 419         | Sehr heftig, entzündet sich |\n| Rb           | 403         | Explosiv                    |\n| Cs           | 376         | Explosiv                    |\n\n> **Je niedriger die IE, desto heftiger die Reaktion!**\n\nDie sinkende IE erklärt, warum Cäsium viel reaktiver ist als Lithium."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist die 1. Ionisierungsenergie?",
+      "options": [
+        "Energie, die frei wird, wenn ein Atom ein Elektron aufnimmt",
+        "Energie, die benötigt wird, um ein Elektron aus einem Gasphasen-Atom zu entfernen",
+        "Energie, um ein Atom zu spalten",
+        "Energie, um ein Elektron von der 1. in die 2. Schale zu heben"
+      ],
+      "correctAnswer": "Energie, die benötigt wird, um ein Elektron aus einem Gasphasen-Atom zu entfernen",
+      "hint": "Es geht um die Entfernung des schwächst gebundenen Elektrons.",
+      "explanation": "Die 1. Ionisierungsenergie ist die Energie, die benötigt wird, um das am schwächsten gebundene Elektron aus einem neutralen Atom im Gaszustand vollständig zu entfernen.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum nimmt die Ionisierungsenergie in einer Gruppe von oben nach unten ab?",
+      "options": [
+        "Weil die Kernladung abnimmt",
+        "Weil die Atome kleiner werden",
+        "Weil die Valenzelektronen weiter vom Kern entfernt sind und weniger stark angezogen werden",
+        "Weil die effektive Kernladung drastisch zunimmt"
+      ],
+      "correctAnswer": "Weil die Valenzelektronen weiter vom Kern entfernt sind und weniger stark angezogen werden",
+      "hint": "Was passiert mit der Entfernung der Valenzelektronen zum Kern, wenn neue Schalen dazukommen?",
+      "explanation": "Größerer Abstand zum Kern bedeutet schwächere Coulomb-Anziehung, daher wird weniger Energie benötigt, um das Elektron zu entfernen.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Ein Element hat folgende Ionisierungsenergien: $I_1$ = 500, $I_2$ = 4600, $I_3$ = 6900 kJ/mol. Zu welcher Hauptgruppe gehört es wahrscheinlich?",
+      "options": [
+        "1. Gruppe (Alkalimetalle)",
+        "2. Gruppe (Erdalkalimetalle)",
+        "3. Gruppe",
+        "Edelgase"
+      ],
+      "correctAnswer": "1. Gruppe (Alkalimetalle)",
+      "hint": "Wo ist der große Sprung? Das verrät die Anzahl der Valenzelektronen.",
+      "explanation": "Der Sprung zwischen $I_1$ und $I_2$ ist riesig (fast Faktor 10). Das bedeutet, das erste Elektron war ein Valenzelektron (leicht entfernbar), das zweite stammte aus einer stabilen inneren Schale. Das Element hat also 1 Valenzelektron → Gruppe 1.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Trends der Ionisierungsenergie im Periodensystem:",
+      "text": "In einer Periode (von links nach rechts): Die IE {{blank1}}. In einer Gruppe (von oben nach unten): Die IE {{blank2}}.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "answer": "steigt",
+          "alternatives": [
+            "nimmt zu",
+            "erhöht sich"
+          ],
+          "hint": "Was passiert mit der Elektronenbindung bei steigender Kernladung?"
+        },
+        {
+          "id": "blank2",
+          "answer": "sinkt",
+          "alternatives": [
+            "nimmt ab",
+            "verringert sich"
+          ],
+          "hint": "Was passiert, wenn die Elektronen weiter vom Kern entfernt sind?"
+        }
+      ],
+      "successMessage": "Richtig! IE steigt in der Periode und sinkt in der Gruppe.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Ionisierungsenergie-Werte den Eigenschaften zu:",
+      "pairs": [
+        {
+          "left": "Niedrige IE",
+          "right": "Gutes Reduktionsmittel (gibt e⁻ ab)"
+        },
+        {
+          "left": "Hohe IE",
+          "right": "Schwer zu ionisieren"
+        },
+        {
+          "left": "Alkalimetalle",
+          "right": "Niedrigste IE ihrer Periode"
+        },
+        {
+          "left": "Edelgase",
+          "right": "Höchste IE ihrer Periode"
+        }
+      ],
+      "successMessage": "Perfekt! Du verstehst den Zusammenhang zwischen IE und Reaktivität.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Ionisierungsenergien analysieren",
+      "scenario": "Du erhältst Ionisierungsenergien eines unbekannten Elements und sollst daraus Schlüsse ziehen.",
+      "tasks": [
+        {
+          "question": "Gegeben: $I_1$ = 578, $I_2$ = 1817, $I_3$ = 2745, $I_4$ = 11577 kJ/mol. Wo ist der große Sprung?",
+          "answer": "Zwischen $I_3$ und $I_4$",
+          "explanation": "$I_3$ zu $I_4$ ist etwa 4-fach. Das ist der große Sprung."
+        },
+        {
+          "question": "Wie viele Valenzelektronen hat das Element?",
+          "answer": "3 Valenzelektronen",
+          "explanation": "Der große Sprung nach $I_3$ zeigt: Die ersten 3 Elektronen waren Valenzelektronen."
+        },
+        {
+          "question": "In welcher Hauptgruppe befindet sich das Element?",
+          "answer": "3. Hauptgruppe",
+          "explanation": "3 Valenzelektronen = 3. Hauptgruppe (Bor-Gruppe oder Erdmetalle)"
+        },
+        {
+          "question": "Welches Element der 3. Periode passt zu diesen Werten?",
+          "answer": "Aluminium (Al)",
+          "explanation": "Al ist das Element der 3. Hauptgruppe in der 3. Periode."
+        }
+      ],
+      "successMessage": "Ausgezeichnet! Du kannst IE-Daten interpretieren.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=F01wT5g9zJ4",
+      "title": "Ionisierungsenergie Trend im Periodensystem",
+      "channel": "Duden Learnattack",
+      "duration": "ca. 5 min",
+      "description": "Erklärt die Trends der Ionisierungsenergie im Periodensystem und warum diese Trends existieren.",
+      "watchFor": [
+        "Wie verändert sich die IE in einer Periode?",
+        "Wie verändert sich die IE in einer Gruppe?",
+        "Warum haben Edelgase die höchsten IEs?"
+      ],
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.5.1"
+        }
+      ],
+      "content": "# Elektronenaffinität – Definition\n\n## Was ist Elektronenaffinität?\n\nDie **Elektronenaffinität** (EA) ist das energetische Gegenstück zur Ionisierungsenergie. Sie beschreibt die Energieänderung bei der **Aufnahme** eines Elektrons.\n\n> **Definition:** Die Elektronenaffinität ist die Energie, die umgesetzt wird, wenn ein Atom in der Gasphase ein Elektron aufnimmt, um ein Anion zu bilden.\n\n## Die Reaktionsgleichung\n\n$$A_{(g)} + e^- \\rightarrow A^-_{(g)} \\quad \\Delta U = EA$$\n\n## Vorzeichen beachten\n\nAnders als bei der IE kann die EA **positiv oder negativ** sein:\n\n| Vorzeichen  | Bedeutung                         | Das Atom...               |\n| ----------- | --------------------------------- | ------------------------- |\n| **Negativ** | Energie wird **freigesetzt**      | \"will\" das Elektron haben |\n| **Positiv** | Energie muss **zugeführt** werden | \"will\" das Elektron nicht |\n\n## Beispiel: Chlor\n\n$$\\text{Cl}_{(g)} + e^- \\rightarrow \\text{Cl}^-_{(g)} \\quad EA = -349 \\text{ kJ/mol}$$\n\nDas Chloratom setzt 349 kJ/mol frei, wenn es ein Elektron aufnimmt – ein sehr stabiles Anion!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.5.2"
+        }
+      ],
+      "content": "# Bedeutung des Vorzeichens\n\n## Negative EA: Stabiles Anion\n\nDie meisten Atome geben Energie ab, wenn sie ein Elektron aufnehmen:\n\n- Das Atom \"will\" das Elektron\n- Das gebildete Anion ist **stabil**\n- Je negativer der Wert, desto stabiler das Anion\n\n**Beispiele:**\n\n| Element | EA (kJ/mol) | Stabilität des Anions |\n| ------- | ----------- | --------------------- |\n| Cl      | −349        | Sehr stabil           |\n| F       | −328        | Sehr stabil           |\n| O       | −141        | Stabil                |\n| S       | −200        | Stabil                |\n\n## Positive EA: Ungünstige Aufnahme\n\nManche Atome nehmen Elektronen nur unter Zwang oder gar nicht auf:\n\n- Das Atom \"will\" das Elektron nicht\n- Energie muss zugeführt werden\n- Das Anion wäre instabil\n\n**Beispiele:**\n\n| Element | EA (kJ/mol) | Grund               |\n| ------- | ----------- | ------------------- |\n| He      | +21         | Volle Schale        |\n| Ne      | +29         | Volle Schale        |\n| Be      | +19         | Volle s-Unterschale |\n\n> **Merke:** Negative EA = \"Elektronen-hungrig\" (typisch für Nichtmetalle)"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.5.2"
+        }
+      ],
+      "content": "# EA-Trends im Periodensystem\n\n## Trend in der Periode (links → rechts)\n\n**Die EA wird zunehmend negativer** (stärkere Affinität)\n\nWarum?\n- Höhere effektive Kernladung $Z^*$\n- Stärkere Anziehung für das aufzunehmende Elektron\n- Halogene ziehen Elektronen stark an, um Edelgaskonfiguration zu erreichen\n\n## Trend in der Gruppe (oben → unten)\n\n**Die EA wird meist weniger negativ** (schwächere Affinität)\n\nWarum?\n- Größerer Atomradius\n- Das aufzunehmende Elektron ist weiter vom Kern entfernt\n- Geringere Anziehungskraft\n\n## Zusammenfassung der Trends\n\n| Richtung     | EA-Trend             | Erklärung       |\n| ------------ | -------------------- | --------------- |\n| In Periode → | Wird negativer       | Höhere $Z^*$    |\n| In Gruppe ↓  | Wird weniger negativ | Größerer Radius |\n\n## Wer hat die höchsten EAs?\n\nDie **Halogene** (Gruppe 17) haben die negativsten Elektronenaffinitäten:\n- Sie brauchen nur 1 Elektron für die Edelgaskonfiguration\n- Die Aufnahme ist energetisch sehr günstig"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.5.2"
+        }
+      ],
+      "content": "# Anomalien bei der Elektronenaffinität\n\n## Nicht alles folgt dem Trend\n\nEs gibt einige wichtige Ausnahmen, die man kennen sollte:\n\n## 1. Edelgase (positive EA)\n\nDie Edelgase haben **positive** Elektronenaffinitäten:\n- Ihre Valenzschale ist bereits voll\n- Ein zusätzliches Elektron müsste in die nächste Schale\n- Das ist energetisch ungünstig\n\n| Edelgas | EA (kJ/mol) |\n| ------- | ----------- |\n| He      | +21         |\n| Ne      | +29         |\n| Ar      | +35         |\n\n## 2. Stickstoff (EA ≈ 0)\n\nStickstoff hat eine EA von etwa **0 kJ/mol** – warum?\n\nDas N-Atom hat die Konfiguration $2p^3$ (halb gefüllte p-Schale):\n- Jedes p-Orbital hat genau 1 Elektron: ↑ ↑ ↑\n- Ein zusätzliches Elektron müsste sich paaren: ↑↓ ↑ ↑\n- Die Paarungsenergie (Abstoßung) kompensiert den Energiegewinn\n\n## 3. Chlor > Fluor\n\nObwohl Fluor über Chlor steht, hat **Chlor die höhere (negativere) EA**:\n- F: −328 kJ/mol\n- Cl: −349 kJ/mol\n\nDas ist eine wichtige Anomalie!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k7",
+          "pages": "7.5.2"
+        }
+      ],
+      "content": "# Warum hat Chlor eine höhere EA als Fluor?\n\n## Das scheinbare Paradox\n\nNach dem Periodentrend sollte Fluor die höchste EA haben:\n- Fluor ist elektronegativer\n- Fluor steht weiter oben in der Gruppe\n- Fluor hat die höhere effektive Kernladung\n\n**Aber:** Chlor (−349 kJ/mol) > Fluor (−328 kJ/mol)\n\n## Die Erklärung: Ladungsdichte\n\n### Fluor ist sehr klein\n\nDas Fluor-Atom ist extrem klein (Radius nur 71 pm). Die 7 Valenzelektronen drängen sich auf sehr kleinem Raum.\n\n### Hohe Ladungsdichte → starke Abstoßung\n\nWenn ein 8. Elektron hinzukommt:\n- Es muss in diesen bereits sehr dichten Raum eindringen\n- Es erfährt **starke Abstoßung** durch die 7 vorhandenen Elektronen\n- Diese Abstoßung verringert den Energiegewinn\n\n### Chlor hat mehr Platz\n\nChlor ist größer (Radius 99 pm):\n- Die Elektronen verteilen sich auf größerem Raum\n- Geringere Ladungsdichte\n- Weniger Abstoßung für das neue Elektron\n- **Mehr Energie wird netto freigesetzt**\n\n> **Fazit:** Bei Fluor ist die Abstoßung so stark, dass Chlor trotz seiner Position im PSE die höhere EA hat. Chlor ist der \"Rekordhalter\" der Elektronenaffinität!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was bedeutet eine stark negative Elektronenaffinität?",
+      "options": [
+        "Das Atom nimmt nur sehr schwer ein Elektron auf",
+        "Das Atom gibt viel Energie ab, wenn es ein Elektron aufnimmt; das Anion ist stabil",
+        "Das Atom ist ein Edelgas",
+        "Es handelt sich um ein Metall"
+      ],
+      "correctAnswer": "Das Atom gibt viel Energie ab, wenn es ein Elektron aufnimmt; das Anion ist stabil",
+      "hint": "Negative Werte bedeuten Energiefreisetzung (Exothermie).",
+      "explanation": "Eine stark negative EA bedeutet, dass bei der Elektronenaufnahme viel Energie freigesetzt wird. Das entstehende Anion ist sehr stabil. Halogene wie Chlor haben stark negative EAs.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum ist die Elektronenaffinität von Stickstoff ca. 0 kJ/mol?",
+      "options": [
+        "Stickstoff ist ein Edelgas",
+        "Stickstoff hat keine Valenzelektronen",
+        "Aufgrund der stabilen, halbgefüllten p-Schale und der daraus resultierenden Elektronen-Abstoßung bei Aufnahme eines weiteren Elektrons",
+        "Weil Stickstoff zu groß ist"
+      ],
+      "correctAnswer": "Aufgrund der stabilen, halbgefüllten p-Schale und der daraus resultierenden Elektronen-Abstoßung bei Aufnahme eines weiteren Elektrons",
+      "hint": "Denke an die Elektronenkonfiguration: $2p^3$ bedeutet 3 ungepaarte Elektronen.",
+      "explanation": "Die $2p^3$-Konfiguration ist energetisch günstig (Hundsche Regel). Ein 4. p-Elektron müsste gepaart werden, was starke Abstoßung erzeugt und den Energiegewinn kompensiert.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welches Element hat die höchste (negativste) Elektronenaffinität im gesamten Periodensystem?",
+      "options": [
+        "Fluor (F)",
+        "Chlor (Cl)",
+        "Sauerstoff (O)",
+        "Neon (Ne)"
+      ],
+      "correctAnswer": "Chlor (Cl)",
+      "hint": "Es ist nicht das Element, das man intuitiv erwarten würde!",
+      "explanation": "Wegen der geringen Größe von Fluor und der damit verbundenen starken Elektronenabstoßung ist Chlor das Element mit der größten (negativsten) Elektronenaffinität, nicht Fluor.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne den EA-Wert der passenden Aussage zur Stabilität zu:",
+      "pairs": [
+        {
+          "left": "Stark negativ (z.B. −349 kJ/mol)",
+          "right": "Sehr stabiles Anion"
+        },
+        {
+          "left": "Leicht negativ (z.B. −50 kJ/mol)",
+          "right": "Mäßig stabiles Anion"
+        },
+        {
+          "left": "Ca. 0 kJ/mol",
+          "right": "Anionenbildung weder günstig noch ungünstig"
+        },
+        {
+          "left": "Positiv (z.B. +30 kJ/mol)",
+          "right": "Anionenbildung energetisch ungünstig"
+        }
+      ],
+      "successMessage": "Sehr gut! Du verstehst die Bedeutung der EA-Werte.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Fluor vs. Chlor – EA-Vergleich",
+      "scenario": "Erkläre, warum Chlor trotz seiner tieferen Position im PSE eine höhere Elektronenaffinität als Fluor hat.",
+      "tasks": [
+        {
+          "question": "Welches der beiden Elemente ist kleiner: Fluor oder Chlor?",
+          "answer": "Fluor ist kleiner",
+          "explanation": "Fluor (2. Periode) hat nur 2 Schalen, Chlor (3. Periode) hat 3 Schalen."
+        },
+        {
+          "question": "Wie wirkt sich die geringe Größe von Fluor auf die Elektronenaufnahme aus?",
+          "answer": "Hohe Ladungsdichte führt zu starker Abstoßung",
+          "explanation": "Die 7 Valenzelektronen sind auf kleinem Raum konzentriert. Ein neues Elektron erfährt starke Abstoßung."
+        },
+        {
+          "question": "Warum kann Chlor trotzdem mehr Energie bei der Elektronenaufnahme freisetzen?",
+          "answer": "Chlor hat mehr Platz für das neue Elektron, weniger Abstoßung",
+          "explanation": "Chlor ist größer, die Ladungsdichte niedriger, daher weniger Abstoßung."
+        },
+        {
+          "question": "Welche EA-Werte haben F und Cl?",
+          "answer": "F: −328 kJ/mol, Cl: −349 kJ/mol",
+          "explanation": "Chlor setzt etwa 20 kJ/mol mehr Energie frei als Fluor."
+        }
+      ],
+      "successMessage": "Perfekt! Du verstehst die F/Cl-Anomalie.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=F3Gya5T5KxM",
+      "title": "Elektronenaffinität einfach erklärt",
+      "channel": "musstewissen Chemie",
+      "duration": "ca. 5 min",
+      "description": "Erklärt das Konzept der Elektronenaffinität und die Trends im Periodensystem.",
+      "watchFor": [
+        "Was ist der Unterschied zur Ionisierungsenergie?",
+        "Warum haben Halogene hohe Elektronenaffinitäten?",
+        "Warum haben Edelgase positive EA-Werte?"
+      ],
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "question": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
+      "checkpoints": [
+        "Ich kann $Z^* = Z - S$ erklären und anwenden",
+        "Ich kenne die Atomradius-Trends (Periode: nimmt ab, Gruppe: nimmt zu)",
+        "Ich verstehe, warum Kationen kleiner und Anionen größer als ihre Atome sind",
+        "Ich kann isoelektronische Reihen nach Größe ordnen",
+        "Ich kenne die IE-Trends und kann IE-Sprünge interpretieren",
+        "Ich verstehe die EA-Trends und die F/Cl-Anomalie",
+        "Ich kann Periodentrends auf unbekannte Elemente anwenden"
+      ],
+      "successMessage": "Super! Du bist gut vorbereitet für den Test.",
+      "reviewHint": "Gehe die nicht abgehakten Themen noch einmal durch, bevor du den Test startest.",
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur effektiven Kernladung ($Z^*$) sind korrekt?",
+      "options": [
+        "$Z^*$ steigt innerhalb einer Periode von links nach rechts",
+        "$Z^*$ wird berechnet als $Z^* = Z - S$",
+        "Elektronen in der gleichen Schale schirmen sich sehr effektiv ab",
+        "Eine höhere $Z^*$ führt zu kleineren Atomradien",
+        "$Z^*$ ist immer gleich der Kernladung $Z$",
+        "Rumpfelektronen schirmen die Valenzelektronen vom Kern ab"
+      ],
+      "correctAnswers": [
+        "$Z^*$ steigt innerhalb einer Periode von links nach rechts",
+        "$Z^*$ wird berechnet als $Z^* = Z - S$",
+        "Eine höhere $Z^*$ führt zu kleineren Atomradien",
+        "Rumpfelektronen schirmen die Valenzelektronen vom Kern ab"
+      ],
+      "explanation": "Elektronen in der gleichen Schale schirmen sich nur schwach ab. $Z^*$ ist kleiner als $Z$, da die Abschirmung ($S$) abgezogen wird."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu den Atomradius-Trends sind korrekt?",
+      "options": [
+        "Der Atomradius nimmt in einer Periode von links nach rechts ab",
+        "Der Atomradius nimmt in einer Gruppe von oben nach unten zu",
+        "Fluor hat einen größeren Radius als Natrium",
+        "Cäsium ist das größte Alkalimetall",
+        "Die Abnahme in der Periode wird durch steigende $Z^*$ verursacht",
+        "Bei Übergangsmetallen steigt der Radius drastisch"
+      ],
+      "correctAnswers": [
+        "Der Atomradius nimmt in einer Periode von links nach rechts ab",
+        "Der Atomradius nimmt in einer Gruppe von oben nach unten zu",
+        "Cäsium ist das größte Alkalimetall",
+        "Die Abnahme in der Periode wird durch steigende $Z^*$ verursacht"
+      ],
+      "explanation": "Fluor ist kleiner als Natrium (beide 2./3. Periode, aber F hat höhere $Z^*$). Bei Übergangsmetallen bleiben die Radien fast konstant, sie steigen nicht drastisch."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu Übergangsmetallen sind korrekt?",
+      "options": [
+        "Die Atomradien bleiben innerhalb einer Periode annähernd konstant",
+        "d-Elektronen schirmen die äußeren s-Elektronen effektiv ab",
+        "Die Dichte nimmt innerhalb einer Periode zu",
+        "Osmium und Iridium gehören zu den dichtesten Elementen",
+        "Die chemischen Eigenschaften variieren stark innerhalb einer Reihe",
+        "Die konstanten Radien werden durch wachsende d-Orbitale verursacht"
+      ],
+      "correctAnswers": [
+        "Die Atomradien bleiben innerhalb einer Periode annähernd konstant",
+        "d-Elektronen schirmen die äußeren s-Elektronen effektiv ab",
+        "Die Dichte nimmt innerhalb einer Periode zu",
+        "Osmium und Iridium gehören zu den dichtesten Elementen"
+      ],
+      "explanation": "Die chemischen Eigenschaften sind tatsächlich ähnlich (nicht stark variierend). Die konstanten Radien entstehen durch die Abschirmung der inneren d-Elektronen, nicht durch wachsende d-Orbitale."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Größenvergleiche zwischen Atom und Ion sind korrekt?",
+      "options": [
+        "Na⁺ ist kleiner als Na",
+        "Cl⁻ ist größer als Cl",
+        "Mg²⁺ ist größer als Mg",
+        "O²⁻ ist größer als O",
+        "K⁺ ist größer als K",
+        "F⁻ ist kleiner als F"
+      ],
+      "correctAnswers": [
+        "Na⁺ ist kleiner als Na",
+        "Cl⁻ ist größer als Cl",
+        "O²⁻ ist größer als O"
+      ],
+      "explanation": "Kationen sind immer kleiner als ihre Atome (Elektronenabgabe). Anionen sind immer größer als ihre Atome (Elektronenaufnahme). Mg²⁺ < Mg, K⁺ < K, F⁻ > F."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Gegeben ist die isoelektronische Reihe mit 10 Elektronen: O²⁻, F⁻, Na⁺, Mg²⁺. Welche Aussagen sind korrekt?",
+      "options": [
+        "Alle Teilchen haben die Neon-Elektronenkonfiguration",
+        "Mg²⁺ ist das kleinste Teilchen dieser Reihe",
+        "O²⁻ ist das größte Teilchen dieser Reihe",
+        "Die Größe wird allein durch die Protonenzahl bestimmt",
+        "Na⁺ ist größer als Mg²⁺",
+        "F⁻ ist größer als O²⁻"
+      ],
+      "correctAnswers": [
+        "Alle Teilchen haben die Neon-Elektronenkonfiguration",
+        "Mg²⁺ ist das kleinste Teilchen dieser Reihe",
+        "O²⁻ ist das größte Teilchen dieser Reihe",
+        "Die Größe wird allein durch die Protonenzahl bestimmt",
+        "Na⁺ ist größer als Mg²⁺"
+      ],
+      "explanation": "In isoelektronischen Reihen gilt: mehr Protonen → stärkere Anziehung → kleineres Teilchen. Reihenfolge: Mg²⁺ (12p) < Na⁺ (11p) < F⁻ (9p) < O²⁻ (8p). F⁻ ist kleiner als O²⁻."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu den Ionisierungsenergie-Trends sind korrekt?",
+      "options": [
+        "Die IE steigt in einer Periode von links nach rechts",
+        "Die IE sinkt in einer Gruppe von oben nach unten",
+        "Edelgase haben die niedrigsten IEs ihrer Periode",
+        "Alkalimetalle haben die niedrigsten IEs ihrer Periode",
+        "Cäsium hat eine niedrigere IE als Lithium",
+        "Hohe IE bedeutet, dass Elektronen leicht abgegeben werden"
+      ],
+      "correctAnswers": [
+        "Die IE steigt in einer Periode von links nach rechts",
+        "Die IE sinkt in einer Gruppe von oben nach unten",
+        "Alkalimetalle haben die niedrigsten IEs ihrer Periode",
+        "Cäsium hat eine niedrigere IE als Lithium"
+      ],
+      "explanation": "Edelgase haben die höchsten IEs (nicht niedrigsten). Hohe IE bedeutet, dass Elektronen schwer abgegeben werden."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Ein Element hat folgende Ionisierungsenergien: $I_1$ = 578, $I_2$ = 1817, $I_3$ = 2745, $I_4$ = 11577 kJ/mol. Welche Aussagen sind korrekt?",
+      "options": [
+        "Das Element hat 3 Valenzelektronen",
+        "Es gehört zur 3. Hauptgruppe",
+        "Der große Sprung liegt zwischen $I_3$ und $I_4$",
+        "Nach $I_3$ wird die Edelgaskonfiguration erreicht",
+        "Das Element ist wahrscheinlich Aluminium",
+        "Das Element ist wahrscheinlich Natrium"
+      ],
+      "correctAnswers": [
+        "Das Element hat 3 Valenzelektronen",
+        "Es gehört zur 3. Hauptgruppe",
+        "Der große Sprung liegt zwischen $I_3$ und $I_4$",
+        "Nach $I_3$ wird die Edelgaskonfiguration erreicht",
+        "Das Element ist wahrscheinlich Aluminium"
+      ],
+      "explanation": "Der große Sprung nach $I_3$ zeigt 3 Valenzelektronen an (3. Hauptgruppe). Nach Entfernung der 3 Valenzelektronen hat Al³⁺ Neon-Konfiguration. Natrium hat nur 1 Valenzelektron."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Elektronenaffinität (EA) sind korrekt?",
+      "options": [
+        "Chlor hat die höchste (negativste) EA aller Elemente",
+        "Fluor hat eine höhere EA als Chlor",
+        "Edelgase haben positive EA-Werte",
+        "Stickstoff hat eine EA von ca. 0 kJ/mol",
+        "Negative EA bedeutet, dass das Anion stabil ist",
+        "Die EA wird in einer Periode weniger negativ"
+      ],
+      "correctAnswers": [
+        "Chlor hat die höchste (negativste) EA aller Elemente",
+        "Edelgase haben positive EA-Werte",
+        "Stickstoff hat eine EA von ca. 0 kJ/mol",
+        "Negative EA bedeutet, dass das Anion stabil ist"
+      ],
+      "explanation": "Fluor hat eine niedrigere EA als Chlor wegen der hohen Ladungsdichte und Abstoßung. Die EA wird in einer Periode negativer (nicht weniger negativ)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Vergleiche Sauerstoff (O) und Schwefel (S). Welche Aussagen sind korrekt?",
+      "options": [
+        "Schwefel hat einen größeren Atomradius als Sauerstoff",
+        "Sauerstoff hat eine höhere IE als Schwefel",
+        "Schwefel hat eine höhere (negativere) EA als Sauerstoff",
+        "Sauerstoff ist elektronegativer als Schwefel",
+        "Schwefel hat eine höhere effektive Kernladung als Sauerstoff",
+        "Beide haben 6 Valenzelektronen"
+      ],
+      "correctAnswers": [
+        "Schwefel hat einen größeren Atomradius als Sauerstoff",
+        "Sauerstoff hat eine höhere IE als Schwefel",
+        "Schwefel hat eine höhere (negativere) EA als Sauerstoff",
+        "Sauerstoff ist elektronegativer als Schwefel",
+        "Beide haben 6 Valenzelektronen"
+      ],
+      "explanation": "Schwefel hat eine höhere $Z^*$ nach Slater-Regeln. Alle anderen Aussagen folgen den Gruppentrends: S ist größer (mehr Schalen), hat niedrigere IE (weiter vom Kern), höhere EA (weniger Abstoßung)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Element 119 (Ununennium, Uue) wird synthetisiert und steht in der 8. Periode in Gruppe 1 unter Francium. Welche Vorhersagen sind nach den Periodentrends korrekt?",
+      "options": [
+        "Uue wird größer sein als Francium",
+        "Uue wird eine niedrigere IE haben als Francium",
+        "Uue wird mit Wasser heftiger reagieren als Francium",
+        "Das Kation Uue⁺ wäre deutlich kleiner als das Uue-Atom",
+        "Das Oxid hätte die Formel Uue₂O",
+        "Uue wird eine höhere IE haben als Francium"
+      ],
+      "correctAnswers": [
+        "Uue wird größer sein als Francium",
+        "Uue wird eine niedrigere IE haben als Francium",
+        "Uue wird mit Wasser heftiger reagieren als Francium",
+        "Das Kation Uue⁺ wäre deutlich kleiner als das Uue-Atom",
+        "Das Oxid hätte die Formel Uue₂O"
+      ],
+      "explanation": "Nach dem Gruppentrend wird Uue größer und reaktiver sein mit niedrigerer IE. Als Alkalimetall bildet es +1 Ionen (Oxid: Uue₂O). Kationen sind immer kleiner als Atome."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Gegeben ist die isoelektronische Reihe mit 18 Elektronen: S²⁻, Cl⁻, Ar, K⁺, Ca²⁺. Welche Aussagen sind korrekt für die Ionenbindung in Salzen?",
+      "options": [
+        "Ca²⁺ ist das kleinste Ion dieser Reihe",
+        "S²⁻ ist das größte Ion dieser Reihe",
+        "Die Reihenfolge nach steigender Größe ist: Ca²⁺ < K⁺ < Cl⁻ < S²⁻",
+        "In CaCl₂ ist Ca²⁺ kleiner als Cl⁻",
+        "Die hohe Ladung von Ca²⁺ kompensiert die geringe Größe bei der Gitterenergie",
+        "K⁺ ist größer als S²⁻"
+      ],
+      "correctAnswers": [
+        "Ca²⁺ ist das kleinste Ion dieser Reihe",
+        "S²⁻ ist das größte Ion dieser Reihe",
+        "Die Reihenfolge nach steigender Größe ist: Ca²⁺ < K⁺ < Cl⁻ < S²⁻",
+        "In CaCl₂ ist Ca²⁺ kleiner als Cl⁻",
+        "Die hohe Ladung von Ca²⁺ kompensiert die geringe Größe bei der Gitterenergie"
+      ],
+      "explanation": "Bei isoelektronischen Ionen: mehr Protonen → kleineres Ion. Ca hat 20 Protonen (kleinstes), S hat 16 Protonen (größtes). K⁺ ist kleiner als S²⁻, nicht größer."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Vergleich Fluor vs. Chlor bezüglich der Elektronenaffinität sind korrekt?",
+      "options": [
+        "Chlor hat die höchste EA, obwohl es unter Fluor steht",
+        "Die geringe Größe von Fluor führt zu starker Elektronenabstoßung",
+        "Die hohe Ladungsdichte bei Fluor verringert den Energiegewinn bei Elektronenaufnahme",
+        "Chlor ist weniger elektronegativ, hat aber eine höhere EA",
+        "Fluor hat eine EA von −328 kJ/mol, Chlor von −349 kJ/mol",
+        "Die EA von Fluor ist höher als die von Chlor"
+      ],
+      "correctAnswers": [
+        "Chlor hat die höchste EA, obwohl es unter Fluor steht",
+        "Die geringe Größe von Fluor führt zu starker Elektronenabstoßung",
+        "Die hohe Ladungsdichte bei Fluor verringert den Energiegewinn bei Elektronenaufnahme",
+        "Chlor ist weniger elektronegativ, hat aber eine höhere EA",
+        "Fluor hat eine EA von −328 kJ/mol, Chlor von −349 kJ/mol"
+      ],
+      "explanation": "Die F/Cl-Anomalie ist ein klassisches Prüfungsthema. Fluor ist zwar elektronegativer, hat aber wegen seiner geringen Größe und der daraus resultierenden hohen Ladungsdichte eine niedrigere EA als Chlor."
+    }
+  ],
+  "generatedAt": "2026-01-14T12:53:07.333Z"
+}
