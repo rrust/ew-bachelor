@@ -2,10 +2,10 @@
 type: 'self-assessment-mc'
 question: 'Woher stammt bei der Verbrennungsanalyse der Kohlenstoff im aufgefangenen CO₂?'
 options:
-  - 'Aus dem Sauerstoff der Luft'
+  - 'Aus dem molekularen Sauerstoff (O₂), der bei der Verbrennung zugeführt wird'
   - 'Vollständig aus der verbrannten Probe'
-  - 'Aus dem Katalysator'
-  - 'Er entsteht neu bei der Reaktion'
+  - 'Aus dem Katalysator, der bei hohen Temperaturen Kohlenstoff freisetzt'
+  - 'Er entsteht durch Kernreaktion neu bei der Verbrennung'
 correctAnswer: 'Vollständig aus der verbrannten Probe'
 hint: 'Denken Sie an das Massenerhaltungsgesetz: Woher können Atome kommen?'
 explanation: |

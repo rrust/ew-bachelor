@@ -2,10 +2,10 @@
 type: 'self-assessment-mc'
 question: 'Welches Gas entsteht, wenn man Essig (Essigsäure) auf Backpulver (NaHCO₃) tropft?'
 options:
-  - 'Wasserstoff (H₂)'
-  - 'Sauerstoff (O₂)'
+  - 'Wasserstoff (H₂, brennbar)'
+  - 'Sauerstoff (O₂, Oxidator)'
   - 'Kohlendioxid (CO₂)'
-  - 'Stickstoff (N₂)'
+  - 'Stickstoff (N₂, inert)'
 correctAnswer: 'Kohlendioxid (CO₂)'
 hint: 'Backpulver enthält Natriumhydrogencarbonat – ein Carbonat. Was passiert, wenn Carbonate mit Säuren reagieren?'
 explanation: |

@@ -92,12 +92,12 @@
       "type": "self-assessment-mc",
       "question": "Wie verhält sich die effektive Kernladung ($Z^*$) innerhalb einer Periode von links nach rechts?",
       "options": [
-        "Sie nimmt ab, da mehr Elektronen vorhanden sind",
-        "Sie bleibt konstant, da Elektronen und Protonen gleichermaßen zunehmen",
-        "Sie nimmt zu, da die Protonenzahl steigt, aber die Abschirmung durch innere Elektronen konstant bleibt",
-        "Sie schwankt unregelmäßig"
+        "Sie nimmt ab, da mehr Elektronen vorhanden sind und diese sich gegenseitig abstoßen",
+        "Sie bleibt konstant, da Elektronen und Protonen bei jedem Element gleichermaßen zunehmen",
+        "Sie nimmt zu, da die Protonenzahl steigt, die Abschirmung aber konstant bleibt",
+        "Sie schwankt unregelmäßig je nach Orbitalbesetzung und Elektronenkonfiguration"
       ],
-      "correctAnswer": "Sie nimmt zu, da die Protonenzahl steigt, aber die Abschirmung durch innere Elektronen konstant bleibt",
+      "correctAnswer": "Sie nimmt zu, da die Protonenzahl steigt, die Abschirmung aber konstant bleibt",
       "hint": "Denke daran: Elektronen in der gleichen Schale schirmen sich gegenseitig nur schlecht ab.",
       "explanation": "Die Anzahl der Protonen ($Z$) wächst, die Anzahl der abschirmenden Rumpfelektronen bleibt in einer Periode jedoch gleich. Daher steigt die Anziehungskraft auf die Valenzelektronen.",
       "content": ""
@@ -106,10 +106,10 @@
       "type": "self-assessment-mc",
       "question": "Welcher Effekt erklärt, warum Elektronen in äußeren Schalen weniger Anziehungskraft spüren als erwartet?",
       "options": [
-        "Der Tunneleffekt",
+        "Der Tunneleffekt (quantenmechanisches Phänomen)",
         "Der Abschirmeffekt (Shielding)",
-        "Der Photoelektrische Effekt",
-        "Die Hundsche Regel"
+        "Der Photoelektrische Effekt (Einstein)",
+        "Die Hundsche Regel (Orbitalbesetzung)"
       ],
       "correctAnswer": "Der Abschirmeffekt (Shielding)",
       "hint": "Es geht um einen \"Schild\" zwischen Kern und äußeren Elektronen.",
@@ -265,12 +265,12 @@
       "type": "self-assessment-mc",
       "question": "Warum werden Atome innerhalb einer Periode von links nach rechts kleiner?",
       "options": [
-        "Weil Elektronen abgestoßen werden",
-        "Weil die effektive Kernladung ($Z^*$) steigt und die Hülle stärker anzieht",
-        "Weil weniger Schalen besetzt sind",
-        "Weil die Atommasse zunimmt"
+        "Weil Elektronen sich gegenseitig abstoßen und die Hülle dadurch kleiner wird",
+        "Weil die effektive Kernladung ($Z^*$) steigt und die Hülle anzieht",
+        "Weil weniger Elektronenschalen besetzt sind als bei den vorherigen Elementen",
+        "Weil die Atommasse zunimmt und schwere Atome kompakter sind"
       ],
-      "correctAnswer": "Weil die effektive Kernladung ($Z^*$) steigt und die Hülle stärker anzieht",
+      "correctAnswer": "Weil die effektive Kernladung ($Z^*$) steigt und die Hülle anzieht",
       "hint": "Denke an den Zusammenhang zwischen Protonenzahl und Abschirmung in der gleichen Schale.",
       "explanation": "Die steigende positive Ladung im Kern zieht die Elektronenwolke stärker zusammen, da die Abschirmung innerhalb der gleichen Schale nicht proportional mitwächst.",
       "content": ""
@@ -279,10 +279,10 @@
       "type": "self-assessment-mc",
       "question": "Welche Aussage zu Übergangsmetallen ist korrekt?",
       "options": [
-        "Ihr Radius nimmt drastisch zu innerhalb einer Periode",
+        "Ihr Atomradius nimmt drastisch zu innerhalb einer Periode von links nach rechts",
         "Ihr Radius bleibt innerhalb einer Periode annähernd konstant",
-        "Sie haben die geringste Dichte aller Elemente",
-        "Die 4s-Elektronen schirmen die 3d-Elektronen ab"
+        "Sie haben die geringste Dichte aller Elemente im Periodensystem",
+        "Die 4s-Elektronen schirmen die inneren 3d-Elektronen vollständig ab"
       ],
       "correctAnswer": "Ihr Radius bleibt innerhalb einer Periode annähernd konstant",
       "hint": "Was passiert, wenn d-Elektronen aufgefüllt werden?",
@@ -449,10 +449,10 @@
       "type": "self-assessment-mc",
       "question": "Welches Teilchen ist am kleinsten?",
       "options": [
-        "Mg (Atom)",
+        "Mg (neutrales Atom)",
         "Mg²⁺ (Ion)",
-        "Na (Atom)",
-        "Na⁺ (Ion)"
+        "Na (neutrales Atom)",
+        "Na⁺ (Ion mit 10 e⁻)"
       ],
       "correctAnswer": "Mg²⁺ (Ion)",
       "hint": "Vergleiche: Kationen sind kleiner als ihre Atome. Mg²⁺ und Na⁺ sind isoelektronisch.",
@@ -625,12 +625,12 @@
       "type": "self-assessment-mc",
       "question": "Was ist die 1. Ionisierungsenergie?",
       "options": [
-        "Energie, die frei wird, wenn ein Atom ein Elektron aufnimmt",
-        "Energie, die benötigt wird, um ein Elektron aus einem Gasphasen-Atom zu entfernen",
-        "Energie, um ein Atom zu spalten",
-        "Energie, um ein Elektron von der 1. in die 2. Schale zu heben"
+        "Energie, die frei wird, wenn ein neutrales Atom ein zusätzliches Elektron aufnimmt",
+        "Energie, um ein Elektron aus einem Gasphasen-Atom zu entfernen",
+        "Energie, die benötigt wird, um ein Atom in seine Bestandteile zu spalten",
+        "Energie, um ein Elektron von der ersten in die zweite Elektronenschale zu heben"
       ],
-      "correctAnswer": "Energie, die benötigt wird, um ein Elektron aus einem Gasphasen-Atom zu entfernen",
+      "correctAnswer": "Energie, um ein Elektron aus einem Gasphasen-Atom zu entfernen",
       "hint": "Es geht um die Entfernung des schwächst gebundenen Elektrons.",
       "explanation": "Die 1. Ionisierungsenergie ist die Energie, die benötigt wird, um das am schwächsten gebundene Elektron aus einem neutralen Atom im Gaszustand vollständig zu entfernen.",
       "content": ""
@@ -639,12 +639,12 @@
       "type": "self-assessment-mc",
       "question": "Warum nimmt die Ionisierungsenergie in einer Gruppe von oben nach unten ab?",
       "options": [
-        "Weil die Kernladung abnimmt",
-        "Weil die Atome kleiner werden",
-        "Weil die Valenzelektronen weiter vom Kern entfernt sind und weniger stark angezogen werden",
-        "Weil die effektive Kernladung drastisch zunimmt"
+        "Weil die Kernladung (Protonenzahl) innerhalb einer Gruppe von oben nach unten abnimmt",
+        "Weil die Atome kleiner werden und die Elektronen stärker gebunden sind",
+        "Weil die Valenzelektronen weiter vom Kern entfernt sind und weniger angezogen werden",
+        "Weil die effektive Kernladung bei jedem Element in der Gruppe drastisch zunimmt"
       ],
-      "correctAnswer": "Weil die Valenzelektronen weiter vom Kern entfernt sind und weniger stark angezogen werden",
+      "correctAnswer": "Weil die Valenzelektronen weiter vom Kern entfernt sind und weniger angezogen werden",
       "hint": "Was passiert mit der Entfernung der Valenzelektronen zum Kern, wenn neue Schalen dazukommen?",
       "explanation": "Größerer Abstand zum Kern bedeutet schwächere Coulomb-Anziehung, daher wird weniger Energie benötigt, um das Elektron zu entfernen.",
       "content": ""
@@ -811,10 +811,10 @@
       "type": "self-assessment-mc",
       "question": "Was bedeutet eine stark negative Elektronenaffinität?",
       "options": [
-        "Das Atom nimmt nur sehr schwer ein Elektron auf",
+        "Das Atom nimmt nur sehr schwer ein zusätzliches Elektron in seine Valenzschale auf",
         "Das Atom gibt viel Energie ab, wenn es ein Elektron aufnimmt; das Anion ist stabil",
-        "Das Atom ist ein Edelgas",
-        "Es handelt sich um ein Metall"
+        "Das Atom ist ein Edelgas und hat eine vollständig besetzte Außenschale",
+        "Es handelt sich um ein typisches Metall mit niedriger Elektronegativität"
       ],
       "correctAnswer": "Das Atom gibt viel Energie ab, wenn es ein Elektron aufnimmt; das Anion ist stabil",
       "hint": "Negative Werte bedeuten Energiefreisetzung (Exothermie).",
@@ -825,12 +825,12 @@
       "type": "self-assessment-mc",
       "question": "Warum ist die Elektronenaffinität von Stickstoff ca. 0 kJ/mol?",
       "options": [
-        "Stickstoff ist ein Edelgas",
-        "Stickstoff hat keine Valenzelektronen",
-        "Aufgrund der stabilen, halbgefüllten p-Schale und der daraus resultierenden Elektronen-Abstoßung bei Aufnahme eines weiteren Elektrons",
-        "Weil Stickstoff zu groß ist"
+        "Stickstoff ist ein Edelgas mit vollständig besetzter Außenschale und nimmt keine Elektronen auf",
+        "Stickstoff hat keine Valenzelektronen und kann daher keine weiteren aufnehmen",
+        "Aufgrund der stabilen, halbgefüllten p-Schale und der resultierenden Abstoßung",
+        "Weil Stickstoff ein zu großes Atom ist und Elektronen nicht stabil binden kann"
       ],
-      "correctAnswer": "Aufgrund der stabilen, halbgefüllten p-Schale und der daraus resultierenden Elektronen-Abstoßung bei Aufnahme eines weiteren Elektrons",
+      "correctAnswer": "Aufgrund der stabilen, halbgefüllten p-Schale und der resultierenden Abstoßung",
       "hint": "Denke an die Elektronenkonfiguration: $2p^3$ bedeutet 3 ungepaarte Elektronen.",
       "explanation": "Die $2p^3$-Konfiguration ist energetisch günstig (Hundsche Regel). Ein 4. p-Elektron müsste gepaart werden, was starke Abstoßung erzeugt und den Energiegewinn kompensiert.",
       "content": ""
@@ -1168,5 +1168,5 @@
       "explanation": "Die F/Cl-Anomalie ist ein klassisches Prüfungsthema. Fluor ist zwar elektronegativer, hat aber wegen seiner geringen Größe und der daraus resultierenden hohen Ladungsdichte eine niedrigere EA als Chlor."
     }
   ],
-  "generatedAt": "2026-01-14T17:20:41.696Z"
+  "generatedAt": "2026-01-14T21:45:24.953Z"
 }

@@ -2,11 +2,11 @@
 type: 'self-assessment-mc'
 question: 'Was ist der stöchiometrische Faktor?'
 options:
-  - 'Die Masse eines Moleküls'
-  - 'Das Mol-Verhältnis zwischen zwei Stoffen in der ausgeglichenen Gleichung'
-  - 'Die prozentuale Ausbeute'
-  - 'Die Avogadro-Konstante'
-correctAnswer: 'Das Mol-Verhältnis zwischen zwei Stoffen in der ausgeglichenen Gleichung'
+  - 'Die Masse eines einzelnen Moleküls in atomaren Masseneinheiten'
+  - 'Das Mol-Verhältnis zwischen zwei Stoffen in der Gleichung'
+  - 'Die prozentuale Ausbeute einer chemischen Reaktion'
+  - 'Die Avogadro-Konstante (Teilchen pro Mol)'
+correctAnswer: 'Das Mol-Verhältnis zwischen zwei Stoffen in der Gleichung'
 hint: 'Schauen Sie sich die Koeffizienten in einer Reaktionsgleichung an.'
 explanation: |
   Der **stöchiometrische Faktor** leitet sich aus den **Koeffizienten** der Reaktionsgleichung ab.

@@ -2,10 +2,10 @@
 type: 'self-assessment-mc'
 question: 'Wie nennt man die Zahlen, die in einer Reaktionsgleichung **vor** den chemischen Formeln stehen?'
 options:
-  - 'Indizes'
-  - 'Exponenten'
+  - 'Indizes (tiefgestellte Zahlen)'
+  - 'Exponenten (hochgestellte Zahlen)'
   - 'Koeffizienten'
-  - 'Isotope'
+  - 'Isotope (Atomvarianten)'
 correctAnswer: 'Koeffizienten'
 hint: 'Diese Zahlen geben das Mengenverhältnis der Reaktionspartner an.'
 explanation: |

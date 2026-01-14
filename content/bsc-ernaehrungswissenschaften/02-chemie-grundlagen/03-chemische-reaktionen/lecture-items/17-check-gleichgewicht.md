@@ -2,10 +2,10 @@
 type: 'self-assessment-mc'
 question: 'Was bedeutet "dynamisches Gleichgewicht"?'
 options:
-  - 'Die Reaktion steht still'
-  - 'Edukte und Produkte sind in exakt gleicher Menge vorhanden'
+  - 'Die chemische Reaktion steht vollständig still, es findet keine Umwandlung mehr statt'
+  - 'Edukte und Produkte liegen in exakt gleicher Stoffmenge vor, das Verhältnis ist immer 1:1'
   - 'Hin- und Rückreaktion laufen gleich schnell ab, die Konzentrationen bleiben konstant'
-  - 'Die Temperatur ändert sich ständig'
+  - 'Die Temperatur im System ändert sich ständig aufgrund der ablaufenden Reaktionen'
 correctAnswer: 'Hin- und Rückreaktion laufen gleich schnell ab, die Konzentrationen bleiben konstant'
 hint: 'Achten Sie auf das Wort "dynamisch" – es bedeutet, dass etwas in Bewegung ist.'
 explanation: |

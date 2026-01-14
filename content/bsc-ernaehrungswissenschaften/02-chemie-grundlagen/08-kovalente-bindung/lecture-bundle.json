@@ -81,12 +81,12 @@
       "type": "self-assessment-mc",
       "question": "Welche Aussage zur Ionenbindung ist korrekt?",
       "options": [
-        "Elektronen werden zwischen Atomen geteilt",
-        "Sie entsteht zwischen zwei Metallen",
-        "Sie basiert auf der Übertragung von Elektronen von einem Atom auf ein anderes",
-        "Sie tritt nur bei Gasen auf"
+        "Elektronen werden zwischen den Atomen gleichmäßig geteilt (kovalent)",
+        "Sie entsteht typischerweise zwischen zwei Metallen in einer Legierung",
+        "Sie basiert auf der Übertragung von Elektronen zwischen Atomen",
+        "Sie tritt nur bei Gasen unter hohem Druck und niedriger Temperatur auf"
       ],
-      "correctAnswer": "Sie basiert auf der Übertragung von Elektronen von einem Atom auf ein anderes",
+      "correctAnswer": "Sie basiert auf der Übertragung von Elektronen zwischen Atomen",
       "hint": "Denke daran, was mit den Elektronen bei der Ionenbindung passiert.",
       "successMessage": "Richtig! Ionenbindungen entstehen durch vollständigen Elektronenübertrag – meist von einem Metall zu einem Nichtmetall.",
       "content": ""
@@ -95,10 +95,10 @@
       "type": "self-assessment-mc",
       "question": "Warum ist das N₂-Molekül im Vergleich zu weißem Phosphor (P₄) sehr unreaktiv?",
       "options": [
-        "Weil Stickstoff ein Edelgas ist",
+        "Weil Stickstoff ein Edelgas ist und keine Bindungen eingeht",
         "Aufgrund der sehr stabilen Stickstoff-Dreifachbindung",
-        "Weil Stickstoffatome größer sind als Phosphoratome",
-        "Weil Stickstoff elektrisch geladen ist"
+        "Weil Stickstoffatome größer sind als Phosphoratome im P₄",
+        "Weil Stickstoff in elementarer Form elektrisch geladen ist"
       ],
       "correctAnswer": "Aufgrund der sehr stabilen Stickstoff-Dreifachbindung",
       "hint": "Vergleiche die Bindungsarten in N₂ (Dreifachbindung) und P₄ (gespannte Einfachbindungen).",
@@ -109,10 +109,10 @@
       "type": "self-assessment-mc",
       "question": "Welche Orbitale überlappen bei der Bildung von HCl?",
       "options": [
-        "Zwei s-Orbitale",
+        "Zwei kugelrörmige s-Orbitale (Wasserstoff-Wasserstoff)",
         "Ein 1s-Orbital (H) und ein 3p-Orbital (Cl)",
-        "Ein 2s-Orbital (H) und ein 2p-Orbital (Cl)",
-        "Zwei p-Orbitale"
+        "Ein 2s-Orbital von H und ein 2p-Orbital von Cl",
+        "Zwei p-Orbitale (σ-Bindung durch p-p-Überlappung)"
       ],
       "correctAnswer": "Ein 1s-Orbital (H) und ein 3p-Orbital (Cl)",
       "hint": "Wasserstoff hat nur eine Schale (n=1), Chlor ist in der 3. Periode.",
@@ -249,12 +249,12 @@
       "type": "self-assessment-mc",
       "question": "Was besagt die Oktettregel?",
       "options": [
-        "Atome versuchen immer 4 Bindungen einzugehen",
-        "Die Summe aus Bindungspaaren und einsamen Paaren soll 4 ergeben (8 Elektronen)",
-        "Jedes Molekül muss aus 8 Atomen bestehen",
-        "Elektronen kreisen in Form einer 8 um den Kern"
+        "Atome versuchen immer genau 4 kovalente Bindungen einzugehen",
+        "BP + NBP = 4 Paare = 8 Elektronen (Edelgaskonfiguration)",
+        "Jedes Molekül muss aus exakt 8 Atomen bestehen",
+        "Elektronen kreisen in Form einer 8 um den Atomkern"
       ],
-      "correctAnswer": "Die Summe aus Bindungspaaren und einsamen Paaren soll 4 ergeben (8 Elektronen)",
+      "correctAnswer": "BP + NBP = 4 Paare = 8 Elektronen (Edelgaskonfiguration)",
       "hint": "BP + NBP = 4 Paare = ?",
       "successMessage": "Richtig! BP + NBP = 4 Paare = 8 Elektronen. Atome streben nach der stabilen Edelgaskonfiguration.",
       "content": ""
@@ -444,12 +444,12 @@
       "type": "self-assessment-mc",
       "question": "Wann werden Mehrfachbindungen in einer Lewis-Struktur eingeführt?",
       "options": [
-        "Immer, wenn Sauerstoff beteiligt ist",
-        "Wenn Elektronen übrig bleiben",
-        "Wenn das Zentralatom nach Verteilung aller Elektronen noch kein Oktett erreicht hat",
-        "Nur bei Ionen"
+        "Immer, wenn Sauerstoff als Bindungspartner im Molekül beteiligt ist",
+        "Wenn nach der Elektronenverteilung noch Elektronen übrig bleiben",
+        "Wenn das Zentralatom nach Verteilung noch kein Oktett hat",
+        "Nur bei geladenen Ionen, nicht bei neutralen Molekülen"
       ],
-      "correctAnswer": "Wenn das Zentralatom nach Verteilung aller Elektronen noch kein Oktett erreicht hat",
+      "correctAnswer": "Wenn das Zentralatom nach Verteilung noch kein Oktett hat",
       "hint": "Was passiert, wenn alle Außenatome ihr Oktett haben, aber das Zentralatom noch nicht?",
       "successMessage": "Genau! Mehrfachbindungen \"retten\" das Zentralatom, indem freie Paare der Außenatome geteilt werden.",
       "content": ""
@@ -569,12 +569,12 @@
       "type": "self-assessment-mc",
       "question": "Was bedeutet der Doppelpfeil (↔) zwischen zwei Lewis-Strukturen?",
       "options": [
-        "Das Molekül springt schnell zwischen den Strukturen hin und her",
-        "Es handelt sich um eine chemische Reaktion",
-        "Die wahre Struktur ist ein Hybrid (Mischung) der gezeigten Strukturen",
-        "Die Strukturen sind falsch"
+        "Das Molekül springt schnell zwischen den verschiedenen Strukturen hin und her",
+        "Es handelt sich um eine reversible chemische Reaktion mit Gleichgewicht",
+        "Die wahre Struktur ist ein Hybrid (Mischung) der Strukturen",
+        "Die gezeigten Strukturen sind falsch und müssen korrigiert werden"
       ],
-      "correctAnswer": "Die wahre Struktur ist ein Hybrid (Mischung) der gezeigten Strukturen",
+      "correctAnswer": "Die wahre Struktur ist ein Hybrid (Mischung) der Strukturen",
       "hint": "Resonanz bedeutet nicht Oszillation, sondern delokalisierte Elektronen.",
       "successMessage": "Richtig! Das Molekül ist ein Hybrid – die Elektronen sind delokalisiert und \"verschmiert\".",
       "content": ""
@@ -727,10 +727,10 @@
       "type": "self-assessment-mc",
       "question": "Berechne die Formalladung des Sauerstoffatoms in H₃O⁺. (O hat 3 Bindungen zu H und 1 freies Elektronenpaar)",
       "options": [
-        "0",
+        "0 (neutral, keine Ladung)",
         "+1",
-        "−1",
-        "+2"
+        "−1 (negativ geladen)",
+        "+2 (zweifach positiv)"
       ],
       "correctAnswer": "+1",
       "hint": "FL = Gruppenzahl − Bindungen − freie Elektronen. O ist in Gruppe 6.",
@@ -878,12 +878,12 @@
       "type": "self-assessment-mc",
       "question": "Warum kann Schwefel mehr als 8 Elektronen um sich haben (wie in SF₆), Sauerstoff aber nicht?",
       "options": [
-        "Schwefel ist ein Metall",
-        "Schwefel steht in der 3. Periode und hat zugängliche d-Orbitale",
-        "Sauerstoff ist zu elektronegativ",
-        "Das ist falsch, beide können das"
+        "Schwefel ist ein typisches Metall mit metallischer Bindung",
+        "Schwefel steht in der 3. Periode und hat d-Orbitale",
+        "Sauerstoff ist zu elektronegativ für erweiterte Oktette",
+        "Das ist falsch, beide können mehr als 8 Elektronen haben"
       ],
-      "correctAnswer": "Schwefel steht in der 3. Periode und hat zugängliche d-Orbitale",
+      "correctAnswer": "Schwefel steht in der 3. Periode und hat d-Orbitale",
       "hint": "Ab welcher Periode sind d-Orbitale verfügbar?",
       "successMessage": "Richtig! Ab der 3. Periode stehen d-Orbitale zur Verfügung, die das Oktett erweitern können.",
       "content": ""
@@ -892,10 +892,10 @@
       "type": "self-assessment-mc",
       "question": "Was ist ein \"freies Radikal\"?",
       "options": [
-        "Ein Molekül ohne Bindungen",
-        "Ein Ion mit positiver Ladung",
+        "Ein Molekül ohne jegliche chemische Bindungen zu anderen Atomen",
+        "Ein Ion mit positiver elektrischer Ladung (Kation)",
         "Ein Teilchen mit mindestens einem ungepaarten Elektron",
-        "Ein Molekül mit Doppelbindungen"
+        "Ein Molekül mit einer oder mehreren Doppelbindungen"
       ],
       "correctAnswer": "Ein Teilchen mit mindestens einem ungepaarten Elektron",
       "hint": "Was passiert, wenn die Elektronenzahl ungerade ist?",
@@ -1274,5 +1274,5 @@
       "explanation": "O hat keine d-Orbitale (Periode 2) und kann maximal 8 Elektronen halten. Die Elektronegativität ist nicht der Grund für die Nichtexistenz von OF₄. SF₄ hat 5 Elektronenpaare (4 BP + 1 NBP) → wippen-förmige Geometrie."
     }
   ],
-  "generatedAt": "2026-01-14T17:20:41.706Z"
+  "generatedAt": "2026-01-14T21:45:24.956Z"
 }

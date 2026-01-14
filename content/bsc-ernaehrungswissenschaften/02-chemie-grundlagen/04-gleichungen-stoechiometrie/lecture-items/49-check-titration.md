@@ -2,11 +2,11 @@
 type: 'self-assessment-mc'
 question: 'Was passiert am Äquivalenzpunkt einer Säure-Base-Titration?'
 options:
-  - 'Die Lösung gefriert'
-  - 'Die Konzentration wird null'
-  - 'Die Säure hat vollständig stöchiometrisch mit der Base reagiert'
-  - 'Es entsteht ein Gas'
-correctAnswer: 'Die Säure hat vollständig stöchiometrisch mit der Base reagiert'
+  - 'Die Lösung gefriert aufgrund der freigesetzten Reaktionswärme'
+  - 'Die Konzentration aller gelösten Stoffe wird exakt null'
+  - 'Die Säure hat vollständig mit der Base reagiert'
+  - 'Es entsteht ein Gas, das aus der Lösung entweicht'
+correctAnswer: 'Die Säure hat vollständig mit der Base reagiert'
 hint: 'Was bedeutet "äquivalent"?'
 explanation: |
   Am **Äquivalenzpunkt** sind die Stoffmengen von Säure und Base im exakten stöchiometrischen Verhältnis.

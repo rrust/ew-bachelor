@@ -107,12 +107,12 @@
       "type": "self-assessment-mc",
       "question": "Was ist der stöchiometrische Faktor?",
       "options": [
-        "Die Masse eines Moleküls",
-        "Das Mol-Verhältnis zwischen zwei Stoffen in der ausgeglichenen Gleichung",
-        "Die prozentuale Ausbeute",
-        "Die Avogadro-Konstante"
+        "Die Masse eines einzelnen Moleküls in atomaren Masseneinheiten",
+        "Das Mol-Verhältnis zwischen zwei Stoffen in der Gleichung",
+        "Die prozentuale Ausbeute einer chemischen Reaktion",
+        "Die Avogadro-Konstante (Teilchen pro Mol)"
       ],
-      "correctAnswer": "Das Mol-Verhältnis zwischen zwei Stoffen in der ausgeglichenen Gleichung",
+      "correctAnswer": "Das Mol-Verhältnis zwischen zwei Stoffen in der Gleichung",
       "hint": "Schauen Sie sich die Koeffizienten in einer Reaktionsgleichung an.",
       "explanation": "Der **stöchiometrische Faktor** leitet sich aus den **Koeffizienten** der Reaktionsgleichung ab.\n\n**Beispiel:** $2\\ H_2 + O_2 \\rightarrow 2\\ H_2O$\n\n- Faktor H₂ zu H₂O: $\\frac{2}{2} = 1$\n- Faktor O₂ zu H₂O: $\\frac{2}{1} = 2$\n- Faktor H₂ zu O₂: $\\frac{1}{2} = 0,5$\n\nDer stöchiometrische Faktor ermöglicht die Umrechnung von Mol Edukt zu Mol Produkt!\n",
       "content": ""
@@ -235,12 +235,12 @@
       "type": "self-assessment-mc",
       "question": "Warum bestimmt der begrenzende Reaktant die maximale Produktmenge?",
       "options": [
-        "Weil er die größte Masse hat",
-        "Weil er zuerst vollständig verbraucht ist und die Reaktion dann stoppt",
-        "Weil er der Katalysator ist",
-        "Weil er im Überschuss vorliegt"
+        "Weil er unter allen Reaktanten die größte absolute Masse in der Mischung besitzt",
+        "Weil er zuerst vollständig verbraucht ist und die Reaktion stoppt",
+        "Weil er als Katalysator die Reaktionsgeschwindigkeit der Umsetzung bestimmt",
+        "Weil er im Überschuss vorliegt und deshalb nicht vollständig abreagiert"
       ],
-      "correctAnswer": "Weil er zuerst vollständig verbraucht ist und die Reaktion dann stoppt",
+      "correctAnswer": "Weil er zuerst vollständig verbraucht ist und die Reaktion stoppt",
       "hint": "Was passiert, wenn ein Reaktionspartner aufgebraucht ist?",
       "explanation": "Sobald **ein Edukt vollständig verbraucht** ist, kann die Reaktion nicht weitergehen – egal wie viel vom anderen Edukt noch vorhanden ist.\n\n**Analogie:**\n- Sie haben 100 Brotscheiben, aber nur 5 Käsescheiben\n- Sie können nur 5 Käsebrote machen\n- Die 90 übrigen Brotscheiben sind \"Überschuss\"\n\nDer begrenzende Reaktant...\n- ...hat **nicht** unbedingt die kleinste Masse\n- ...ist **nicht** der Katalysator (der wird nicht verbraucht)\n- ...liegt **nicht** im Überschuss vor (das wäre der andere Reaktant)\n",
       "content": ""
@@ -349,10 +349,10 @@
       "type": "self-assessment-mc",
       "question": "Woher stammt bei der Verbrennungsanalyse der Kohlenstoff im aufgefangenen CO₂?",
       "options": [
-        "Aus dem Sauerstoff der Luft",
+        "Aus dem molekularen Sauerstoff (O₂), der bei der Verbrennung zugeführt wird",
         "Vollständig aus der verbrannten Probe",
-        "Aus dem Katalysator",
-        "Er entsteht neu bei der Reaktion"
+        "Aus dem Katalysator, der bei hohen Temperaturen Kohlenstoff freisetzt",
+        "Er entsteht durch Kernreaktion neu bei der Verbrennung"
       ],
       "correctAnswer": "Vollständig aus der verbrannten Probe",
       "hint": "Denken Sie an das Massenerhaltungsgesetz: Woher können Atome kommen?",
@@ -615,12 +615,12 @@
       "type": "self-assessment-mc",
       "question": "Was passiert am Äquivalenzpunkt einer Säure-Base-Titration?",
       "options": [
-        "Die Lösung gefriert",
-        "Die Konzentration wird null",
-        "Die Säure hat vollständig stöchiometrisch mit der Base reagiert",
-        "Es entsteht ein Gas"
+        "Die Lösung gefriert aufgrund der freigesetzten Reaktionswärme",
+        "Die Konzentration aller gelösten Stoffe wird exakt null",
+        "Die Säure hat vollständig mit der Base reagiert",
+        "Es entsteht ein Gas, das aus der Lösung entweicht"
       ],
-      "correctAnswer": "Die Säure hat vollständig stöchiometrisch mit der Base reagiert",
+      "correctAnswer": "Die Säure hat vollständig mit der Base reagiert",
       "hint": "Was bedeutet \"äquivalent\"?",
       "explanation": "Am **Äquivalenzpunkt** sind die Stoffmengen von Säure und Base im exakten stöchiometrischen Verhältnis.\n\n**Beispiel:** HCl + NaOH → NaCl + H₂O\n\n- 1 mol HCl reagiert mit 1 mol NaOH\n- Am Äquivalenzpunkt: $n_{HCl} = n_{NaOH}$\n\n**Was passiert:**\n- Die Neutralisationsreaktion ist vollständig\n- Der pH springt stark (bei starker Säure/Base)\n- Der Indikator wechselt die Farbe\n\n**Wichtig:** Nach dem Äquivalenzpunkt ist ein Überschuss an Titrator vorhanden!\n",
       "content": ""
@@ -629,10 +629,10 @@
       "type": "self-assessment-mc",
       "question": "Was beschreibt das Lambert-Beer-Gesetz?",
       "options": [
-        "Den Zusammenhang zwischen pH und pOH",
+        "Den Zusammenhang zwischen pH-Wert und pOH-Wert in wässrigen Lösungen",
         "Die Beziehung zwischen Lichtabsorption und Konzentration",
-        "Die Neutralisation von Säuren",
-        "Die Dichte von Gasen"
+        "Die Neutralisationsreaktion von Säuren und Basen in Lösung",
+        "Die Dichte von idealen Gasen bei unterschiedlichen Temperaturen"
       ],
       "correctAnswer": "Die Beziehung zwischen Lichtabsorption und Konzentration",
       "hint": "Was misst ein Spektrophotometer?",
@@ -972,5 +972,5 @@
       "explanation": "**Erklärung:** Säuerung ist ein wichtiges Konservierungsverfahren. Titration wird in der Qualitätskontrolle eingesetzt. Die Molarität ist sehr relevant für die präzise Dosierung von Zusatzstoffen (nicht irrelevant!)."
     }
   ],
-  "generatedAt": "2026-01-14T17:20:41.618Z"
+  "generatedAt": "2026-01-14T21:45:24.943Z"
 }

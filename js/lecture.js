@@ -240,6 +240,7 @@ function renderCurrentLectureItem(
 
 /**
  * Renders math formulas using KaTeX if available
+ * Adds expand buttons for formulas that overflow their container
  * @param {HTMLElement} container - Container element to process
  */
 function renderMath(container) {
@@ -251,7 +252,101 @@ function renderMath(container) {
       ],
       throwOnError: false
     });
+
+    // After rendering, check for overflow and add expand buttons
+    // Use double RAF to ensure layout is complete
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        addFormulaExpandButtons(container);
+      });
+    });
   }
+}
+
+/**
+ * Checks display formulas for overflow and adds expand buttons
+ * @param {HTMLElement} container - Container with rendered KaTeX
+ */
+function addFormulaExpandButtons(container) {
+  const displayFormulas = container.querySelectorAll('.katex-display');
+
+  displayFormulas.forEach((formulaContainer) => {
+    // Skip if already processed
+    if (formulaContainer.dataset.expandProcessed) return;
+    formulaContainer.dataset.expandProcessed = 'true';
+
+    const katexEl = formulaContainer.querySelector('.katex');
+    if (!katexEl) return;
+
+    // Measure the natural width of the formula (scrollWidth gives full content width)
+    const containerWidth = formulaContainer.clientWidth;
+    const formulaWidth = katexEl.scrollWidth;
+
+    // Formula overflows if its width exceeds container width
+    const isOverflowing = formulaWidth > containerWidth + 5;
+
+    if (isOverflowing) {
+      // First add the class to clip the overflow
+      formulaContainer.classList.add('formula-overflow');
+
+      // Create expand button (icon only)
+      const expandBtn = document.createElement('button');
+      expandBtn.className = 'formula-expand-btn';
+      expandBtn.innerHTML = '⤢';
+      expandBtn.title = 'Formel vergrößern';
+
+      // Store the original unclipped HTML for fullscreen
+      const originalHtml = formulaContainer.innerHTML;
+
+      expandBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openExpandedFormula(originalHtml);
+      });
+
+      formulaContainer.appendChild(expandBtn);
+    }
+  });
+}
+
+/**
+ * Opens a formula in fullscreen/expanded mode
+ * @param {string} renderedHtml - Already rendered KaTeX HTML
+ */
+function openExpandedFormula(renderedHtml) {
+  const overlay = document.createElement('div');
+  overlay.className = 'expanded-overlay';
+  overlay.innerHTML = `
+    <div class="expanded-content formula-expanded">
+      <button class="close-expanded-btn">✕ Schließen</button>
+      <div class="formula-fullscreen-container">
+        ${renderedHtml}
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // Remove overflow class in fullscreen
+  const formulaDisplay = overlay.querySelector('.katex-display');
+  if (formulaDisplay) {
+    formulaDisplay.classList.remove('formula-overflow');
+    // Remove the expand button in fullscreen view
+    const expandBtn = formulaDisplay.querySelector('.formula-expand-btn');
+    if (expandBtn) expandBtn.remove();
+  }
+
+  // Close handlers
+  const closeBtn = overlay.querySelector('.close-expanded-btn');
+  closeBtn.addEventListener('click', () => overlay.remove());
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+  document.addEventListener('keydown', function escHandler(e) {
+    if (e.key === 'Escape') {
+      overlay.remove();
+      document.removeEventListener('keydown', escHandler);
+    }
+  });
 }
 
 /**
@@ -722,30 +817,62 @@ function renderSelfAssessmentChecklist(item, container) {
 }
 
 /**
+ * Simple inline markdown for bold/italic (avoids full marked.parse for short strings)
+ * @param {string} text - Text with potential markdown
+ * @returns {string} HTML with basic formatting
+ */
+function parseInlineMarkdown(text) {
+  if (!text) return '';
+  // Bold: **text** or __text__
+  let result = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  result = result.replace(/__(.+?)__/g, '<strong>$1</strong>');
+  // Italic: *text* or _text_
+  result = result.replace(/\*(.+?)\*/g, '<em>$1</em>');
+  result = result.replace(/_(.+?)_/g, '<em>$1</em>');
+  // Code: `text`
+  result = result.replace(
+    /`(.+?)`/g,
+    '<code class="bg-gray-200 dark:bg-gray-600 px-1 rounded">$1</code>'
+  );
+  return result;
+}
+
+/**
  * Renders a self-assessment multiple choice question
  * @param {Object} item - Question item with question, options, correctAnswer, explanation
  * @param {HTMLElement} container - Container element
  */
 function renderSelfAssessmentMC(item, container) {
+  // Parse question for inline markdown
+  const parsedQuestion = parseInlineMarkdown(item.question);
+
   let content = `<div class="p-4 border dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700">
-          <p class="font-semibold mb-4">${item.question}</p>
-          <div class="space-y-2">`;
+          <p class="font-semibold mb-4 self-assessment-question">${parsedQuestion}</p>
+          <div class="space-y-2 self-assessment-options">`;
 
   item.options.forEach((option, index) => {
+    const parsedOption = parseInlineMarkdown(option);
     content += `<label class="block p-3 border dark:border-gray-600 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer">
               <input type="radio" name="self-assessment-option" value="${option}" class="mr-2">
-              ${option}
+              <span>${parsedOption}</span>
           </label>`;
   });
 
   content += `</div>
-          <button class="check-answer-btn mt-4 bg-blue-200 dark:bg-blue-700 hover:bg-blue-300 dark:hover:bg-blue-600 text-blue-800 dark:text-blue-100 font-bold py-2 px-4 rounded-md">Antwort prüfen</button>
+          <div class="mt-4 flex gap-2">
+            <button class="check-answer-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md transition-colors">Antwort prüfen</button>
+            <button class="reset-answer-btn bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-md transition-colors" style="display:none;">Nochmal versuchen</button>
+          </div>
           <div class="explanation mt-3 p-3 border-l-4 border-yellow-400 dark:border-yellow-600 bg-yellow-50 dark:bg-yellow-900/30" style="display:none;"></div>
       </div>`;
 
   container.innerHTML = content;
 
   const checkBtn = container.querySelector('.check-answer-btn');
+  const resetBtn = container.querySelector('.reset-answer-btn');
+  const explanationDiv = container.querySelector('.explanation');
+  const optionsDiv = container.querySelector('.self-assessment-options');
+
   checkBtn.addEventListener('click', () => {
     const selected = container.querySelector(
       'input[name="self-assessment-option"]:checked'
@@ -755,14 +882,70 @@ function renderSelfAssessmentMC(item, container) {
       return;
     }
     const isCorrect = selected.value === item.correctAnswer;
-    const explanationDiv = container.querySelector('.explanation');
+
+    // Parse explanation with marked if available, otherwise use inline parser
+    let explanationHtml = '';
+    if (item.explanation) {
+      explanationHtml =
+        typeof marked !== 'undefined' && marked.parse
+          ? marked.parse(item.explanation)
+          : parseInlineMarkdown(item.explanation);
+    }
+
     explanationDiv.innerHTML =
       (isCorrect
-        ? '<p class="font-bold text-green-700">Richtig!</p>'
-        : '<p class="font-bold text-red-700">Leider falsch.</p>') +
-      item.explanation;
+        ? '<p class="font-bold text-green-700 dark:text-green-400">Richtig!</p>'
+        : '<p class="font-bold text-red-700 dark:text-red-400">Leider falsch.</p>') +
+      `<div class="explanation-content mt-2">${explanationHtml}</div>`;
     explanationDiv.style.display = 'block';
-    checkBtn.disabled = true; // Prevent re-checking
+
+    // Show reset button, hide check button
+    checkBtn.style.display = 'none';
+    resetBtn.style.display = 'inline-block';
+
+    // Disable all radio buttons
+    optionsDiv.querySelectorAll('input[type="radio"]').forEach((radio) => {
+      radio.disabled = true;
+    });
+
+    // Highlight correct/incorrect
+    optionsDiv.querySelectorAll('label').forEach((label) => {
+      const radio = label.querySelector('input');
+      if (radio.value === item.correctAnswer) {
+        label.classList.add(
+          'bg-green-100',
+          'dark:bg-green-900',
+          'border-green-500'
+        );
+      } else if (radio.checked) {
+        label.classList.add('bg-red-100', 'dark:bg-red-900', 'border-red-500');
+      }
+    });
+  });
+
+  resetBtn.addEventListener('click', () => {
+    // Reset all radio buttons
+    optionsDiv.querySelectorAll('input[type="radio"]').forEach((radio) => {
+      radio.checked = false;
+      radio.disabled = false;
+    });
+
+    // Remove highlight classes
+    optionsDiv.querySelectorAll('label').forEach((label) => {
+      label.classList.remove(
+        'bg-green-100',
+        'dark:bg-green-900',
+        'border-green-500',
+        'bg-red-100',
+        'dark:bg-red-900',
+        'border-red-500'
+      );
+    });
+
+    // Hide explanation, show check button
+    explanationDiv.style.display = 'none';
+    checkBtn.style.display = 'inline-block';
+    resetBtn.style.display = 'none';
   });
 }
 
@@ -1305,12 +1488,18 @@ function renderFillInTheBlank(item, container) {
 
 /**
  * Renders a matching exercise (drag & drop or click-to-match)
- * @param {Object} item - Item with question, pairs array [{term, match}]
+ * @param {Object} item - Item with question, pairs array [{term, match}] or [{left, right}]
  * @param {HTMLElement} container - Container element
  */
 function renderMatching(item, container) {
   const question = item.question || 'Ordne die Begriffe richtig zu:';
-  const pairs = item.pairs || [];
+  const rawPairs = item.pairs || [];
+
+  // Normalize pairs to support both {term, match} and {left, right} formats
+  const pairs = rawPairs.map((p) => ({
+    term: p.term || p.left || '',
+    match: p.match || p.right || ''
+  }));
 
   // Shuffle the matches for display
   const shuffledMatches = [...pairs].sort(() => Math.random() - 0.5);
@@ -1672,7 +1861,7 @@ function renderCalculation(item, container) {
       
       <div class="flex items-center gap-2 mb-4">
         <label class="font-semibold">Antwort:</label>
-        <input type="number" step="any"
+        <input type="text" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
                class="calc-answer-input w-32 px-3 py-2 border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 focus:border-blue-500 focus:outline-none"
                placeholder="...">
         <span class="text-gray-600 dark:text-gray-400">${unit}</span>
@@ -1696,7 +1885,9 @@ function renderCalculation(item, container) {
   const feedbackDiv = container.querySelector('.calc-feedback');
 
   checkBtn.addEventListener('click', () => {
-    const userValue = parseFloat(input.value);
+    // Support both comma and dot as decimal separator
+    const inputValue = input.value.replace(',', '.');
+    const userValue = parseFloat(inputValue);
     const correctValue = item.correctAnswer;
 
     feedbackDiv.classList.remove('hidden');
@@ -1759,15 +1950,17 @@ function renderPracticeExercise(item, container) {
   const scenario = item.scenario || '';
   const tasks = item.tasks || [];
   const realWorldConnection = item.realWorldConnection || '';
+  const hint = item.hint || '';
 
   let tasksHtml = tasks
     .map((task, i) => {
+      // Support both typed tasks (calculation, multiple-choice) and simple description/solution format
       if (task.type === 'calculation') {
         return `
-        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}">
+        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}" data-task-type="calculation">
           <p class="font-medium mb-2">${i + 1}. ${task.question}</p>
           <div class="flex items-center gap-2">
-            <input type="number" step="any"
+            <input type="text" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
                    class="task-calc-input w-28 px-2 py-1 border-2 border-gray-300 dark:border-gray-600 rounded bg-gray-50 dark:bg-gray-800 focus:border-blue-500 focus:outline-none"
                    data-correct="${task.correctAnswer}"
                    data-tolerance="${task.tolerance || 0}"
@@ -1780,7 +1973,7 @@ function renderPracticeExercise(item, container) {
         </div>`;
       } else if (task.type === 'multiple-choice') {
         return `
-        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}">
+        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}" data-task-type="multiple-choice">
           <p class="font-medium mb-2">${i + 1}. ${task.question}</p>
           <div class="space-y-2">
             ${task.options
@@ -1796,6 +1989,20 @@ function renderPracticeExercise(item, container) {
               .join('')}
           </div>
           <span class="task-result mt-2 block"></span>
+        </div>`;
+      } else if (task.description && task.solution) {
+        // Simple description/solution format - show as open-ended task with textarea
+        return `
+        <div class="task-item p-4 bg-white dark:bg-gray-700 rounded-lg mb-3" data-task-index="${i}" data-task-type="open-ended">
+          <p class="font-medium mb-2">${i + 1}. ${task.description}</p>
+          <textarea class="task-open-input w-full p-2 border-2 border-gray-300 dark:border-gray-600 rounded bg-gray-50 dark:bg-gray-800 focus:border-blue-500 focus:outline-none resize-y min-h-[60px]" 
+                    placeholder="Deine Antwort hier eingeben..."></textarea>
+          <button class="show-single-solution-btn mt-2 text-sm text-blue-500 hover:text-blue-600 dark:text-blue-400 underline">
+            Lösung anzeigen
+          </button>
+          <div class="task-solution hidden mt-2 p-2 bg-green-50 dark:bg-green-900/30 rounded text-green-800 dark:text-green-200">
+            <strong>Lösung:</strong> ${task.solution}
+          </div>
         </div>`;
       }
       return '';
@@ -1839,46 +2046,64 @@ function renderPracticeExercise(item, container) {
   checkBtn.addEventListener('click', () => {
     let correct = 0;
     let answered = 0;
-    const total = tasks.length;
+    // Count only typed tasks (calculation, multiple-choice), not open-ended
+    const typedTasks = tasks.filter(
+      (t) => t.type === 'calculation' || t.type === 'multiple-choice'
+    );
+    const total = typedTasks.length;
 
     tasks.forEach((task, i) => {
       const taskEl = container.querySelector(`[data-task-index="${i}"]`);
+      if (!taskEl) return;
+
+      const taskType = taskEl.dataset.taskType;
       const resultSpan = taskEl.querySelector('.task-result');
 
-      if (task.type === 'calculation') {
+      if (taskType === 'calculation') {
         const input = taskEl.querySelector('.task-calc-input');
-        const userValue = parseFloat(input.value);
+        // Support comma as decimal separator
+        const inputValue = input.value.replace(',', '.');
+        const userValue = parseFloat(inputValue);
         const correctValue = parseFloat(input.dataset.correct);
         const tolerance = parseFloat(input.dataset.tolerance) || 0;
 
         if (!isNaN(userValue) && input.value.trim() !== '') {
           answered++;
           if (Math.abs(userValue - correctValue) <= tolerance) {
-            resultSpan.innerHTML = '✅';
+            if (resultSpan) resultSpan.innerHTML = '✅';
             input.classList.add('border-green-500');
             input.classList.remove('border-red-500');
             correct++;
           } else {
-            resultSpan.innerHTML = '❌';
+            if (resultSpan) resultSpan.innerHTML = '❌';
             input.classList.add('border-red-500');
             input.classList.remove('border-green-500');
           }
         }
-      } else if (task.type === 'multiple-choice') {
+      } else if (taskType === 'multiple-choice') {
         const selected = taskEl.querySelector('input[type="radio"]:checked');
         if (selected) {
           answered++;
           if (selected.value === selected.dataset.correct) {
-            resultSpan.innerHTML = '✅';
+            if (resultSpan) resultSpan.innerHTML = '✅';
             correct++;
           } else {
-            resultSpan.innerHTML = '❌';
+            if (resultSpan) resultSpan.innerHTML = '❌';
           }
         }
       }
+      // open-ended tasks are handled by showSolutions only
     });
 
     feedbackDiv.classList.remove('hidden');
+
+    // If all tasks are open-ended, show a different message
+    if (total === 0) {
+      feedbackDiv.className =
+        'practice-feedback mt-4 p-4 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200';
+      feedbackDiv.innerHTML = `💡 Diese Übung enthält offene Aufgaben. Klicke auf "Lösungen zeigen" um deine Antworten zu überprüfen.`;
+      return;
+    }
 
     if (answered === 0) {
       feedbackDiv.className =
@@ -1905,17 +2130,39 @@ function renderPracticeExercise(item, container) {
   showSolutionsBtn.addEventListener('click', () => {
     tasks.forEach((task, i) => {
       const taskEl = container.querySelector(`[data-task-index="${i}"]`);
-      const resultSpan = taskEl.querySelector('.task-result');
+      if (!taskEl) return;
 
-      if (task.type === 'calculation') {
+      const taskType = taskEl.dataset.taskType;
+      const resultSpan = taskEl.querySelector('.task-result');
+      const solutionDiv = taskEl.querySelector('.task-solution');
+
+      if (taskType === 'calculation' && resultSpan) {
         resultSpan.innerHTML = `<span class="text-blue-600 dark:text-blue-400 font-medium">${
           task.correctAnswer
         } ${task.unit || ''}</span>`;
-      } else if (task.type === 'multiple-choice') {
+      } else if (taskType === 'multiple-choice' && resultSpan) {
         resultSpan.innerHTML = `<span class="text-blue-600 dark:text-blue-400 font-medium">${task.correctAnswer}</span>`;
+      } else if (taskType === 'open-ended' && solutionDiv) {
+        // Show the solution for open-ended tasks
+        solutionDiv.classList.remove('hidden');
+        // Hide the individual show solution button
+        const singleBtn = taskEl.querySelector('.show-single-solution-btn');
+        if (singleBtn) singleBtn.classList.add('hidden');
       }
     });
 
     if (realWorldDiv) realWorldDiv.classList.remove('hidden');
+  });
+
+  // Add event listeners for individual "show solution" buttons
+  container.querySelectorAll('.show-single-solution-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const taskItem = btn.closest('.task-item');
+      const solutionDiv = taskItem.querySelector('.task-solution');
+      if (solutionDiv) {
+        solutionDiv.classList.remove('hidden');
+        btn.classList.add('hidden');
+      }
+    });
   });
 }

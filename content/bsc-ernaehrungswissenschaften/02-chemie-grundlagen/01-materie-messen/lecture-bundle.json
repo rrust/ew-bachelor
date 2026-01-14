@@ -66,10 +66,10 @@
       "topic": "Grundlagen von Materie und Energie",
       "question": "Was ist die korrekte Definition von Energie?",
       "options": [
-        "Alles, was Masse hat und Raum einnimmt",
+        "Alles, was Masse besitzt und einen Raum im Universum einnimmt",
         "Die Kapazität, Arbeit zu leisten oder Wärme zu übertragen",
-        "Die kleinste Einheit eines chemischen Elements",
-        "Die Geschwindigkeit von Teilchen in einem Stoff"
+        "Die kleinste nicht weiter teilbare Einheit eines chemischen Elements",
+        "Die durchschnittliche Bewegungsgeschwindigkeit von Teilchen in einem Stoff"
       ],
       "correctAnswer": "Die Kapazität, Arbeit zu leisten oder Wärme zu übertragen",
       "content": "**Erklärung:** Energie ist definiert als die Kapazität eines Systems, Arbeit zu leisten oder Wärme zu übertragen. Die erste Option beschreibt Materie, nicht Energie. Energie kann in verschiedenen Formen existieren (kinetisch, potentiell, thermisch, chemisch) und zwischen diesen umgewandelt werden."
@@ -161,7 +161,7 @@
           "sourceId": "kapitel-1"
         }
       ],
-      "content": "## Verbindungen und Moleküle\n\n### Chemische Verbindungen\n\nEine **chemische Verbindung** entsteht, wenn Atome verschiedener Elemente sich verbinden. Die Eigenschaften einer Verbindung unterscheiden sich grundlegend von denen der Ausgangselemente.\n\n**Beispiel:** Natriumchlorid (Kochsalz)\n$$2 \\text{Na}_{(s)} + \\text{Cl}_{2(g)} \\rightarrow 2 \\text{NaCl}_{(s)}$$\n\n- Natrium: reaktives, weiches Metall\n- Chlor: giftiges, grünliches Gas\n- Natriumchlorid: weißer, essbarer Feststoff\n\n### Moleküle und Molekülformeln\n\nEin **Molekül** ist das kleinste Teilchen einer Verbindung, das deren chemische Eigenschaften besitzt.\n\nDie **Molekülformel** gibt an, welche und wie viele Atome ein Molekül enthält:\n\n| Molekül      | Formel            | Atome                                                     |\n| ------------ | ----------------- | --------------------------------------------------------- |\n| Wasser       | $H_2O$            | 2 Wasserstoff, 1 Sauerstoff                               |\n| Kohlendioxid | $CO_2$            | 1 Kohlenstoff, 2 Sauerstoff                               |\n| Glucose      | $C_6H_{12}O_6$    | 6 Kohlenstoff, 12 Wasserstoff, 6 Sauerstoff               |\n| Koffein      | $C_8H_{10}N_4O_2$ | 8 Kohlenstoff, 10 Wasserstoff, 4 Stickstoff, 2 Sauerstoff |\n\n### Formeln lesen\n\nDer **Index** (tiefgestellte Zahl) gibt die Anzahl der Atome an:\n- Kein Index = 1 Atom\n- Index 2 = 2 Atome\n- usw.\n\n> **Beispiel:** In $C_8H_{10}N_4O_2$ (Koffein) sind insgesamt 8 + 10 + 4 + 2 = **24 Atome** enthalten."
+      "content": "## Verbindungen und Moleküle\n\n### Chemische Verbindungen\n\nEine **chemische Verbindung** entsteht, wenn Atome verschiedener Elemente sich verbinden. Die Eigenschaften einer Verbindung unterscheiden sich grundlegend von denen der Ausgangselemente.\n\n**Beispiel:** Natriumchlorid (Kochsalz)\n\n$$2 \\, \\mathrm{Na_{(s)}} + \\mathrm{Cl_{2(g)}} \\rightarrow 2 \\, \\mathrm{NaCl_{(s)}}$$\n\n- Natrium: reaktives, weiches Metall\n- Chlor: giftiges, grünliches Gas\n- Natriumchlorid: weißer, essbarer Feststoff\n\n### Moleküle und Molekülformeln\n\nEin **Molekül** ist das kleinste Teilchen einer Verbindung, das deren chemische Eigenschaften besitzt.\n\nDie **Molekülformel** gibt an, welche und wie viele Atome ein Molekül enthält:\n\n| Molekül      | Formel            | Atome                                                     |\n| ------------ | ----------------- | --------------------------------------------------------- |\n| Wasser       | $H_2O$            | 2 Wasserstoff, 1 Sauerstoff                               |\n| Kohlendioxid | $CO_2$            | 1 Kohlenstoff, 2 Sauerstoff                               |\n| Glucose      | $C_6H_{12}O_6$    | 6 Kohlenstoff, 12 Wasserstoff, 6 Sauerstoff               |\n| Koffein      | $C_8H_{10}N_4O_2$ | 8 Kohlenstoff, 10 Wasserstoff, 4 Stickstoff, 2 Sauerstoff |\n\n### Formeln lesen\n\nDer **Index** (tiefgestellte Zahl) gibt die Anzahl der Atome an:\n- Kein Index = 1 Atom\n- Index 2 = 2 Atome\n- usw.\n\n> **Beispiel:** In $C_8H_{10}N_4O_2$ (Koffein) sind insgesamt 8 + 10 + 4 + 2 = **24 Atome** enthalten."
     },
     {
       "type": "self-assessment-mc",
@@ -935,5 +935,5 @@
       "explanation": "**Erklärung:** Präzision = Reproduzierbarkeit (enge Streuung), Genauigkeit = Übereinstimmung mit wahrem Wert. Beide sind unabhängig voneinander: Man kann präzise daneben liegen oder im Durchschnitt richtig, aber mit großer Streuung. Bei Flächenumrechnung: 1 m = 100 cm, also 1 m² = 10.000 cm² (Faktor quadriert)."
     }
   ],
-  "generatedAt": "2026-01-14T17:20:41.586Z"
+  "generatedAt": "2026-01-14T21:45:24.933Z"
 }

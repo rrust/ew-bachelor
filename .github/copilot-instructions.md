@@ -24,6 +24,9 @@
   ```
   **Stattdessen verwenden:** Tabellen, Listen, Blockquotes (`>`), Mermaid-Diagramme, oder einfache Textbeschreibungen.
 - ⚠️ **Mermaid: Nur stabile Diagrammtypen** - Erlaubt: `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`. NICHT: `xychart-beta`, `timeline`, `mindmap`.
+- ⚠️ **Mermaid: Max. 3-5 Wörter pro Box** - Lange Texte werden auf Mobile abgeschnitten. Keine `<br/>`-Tags. Bei komplexen Zusammenhängen Tabellen/Listen bevorzugen.
+- ⚠️ **MC-Antworten: Korrekte Antwort NICHT die längste!** - Alle Optionen ähnliche Länge, mind. 1 Distraktor länger als korrekte Antwort.
+- ⚠️ **KaTeX: Aggregatzustände in `\text{}`** - z.B. `\text{Na}_{\text{(s)}}` nicht `\text{Na}_{(s)}`
 - ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 
 ## Content Generation: 3-Phasen-Workflow

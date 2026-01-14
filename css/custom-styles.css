@@ -489,3 +489,132 @@ header.sticky {
     font-size: 1.125rem;
   }
 }
+
+/* Responsive KaTeX formulas */
+.katex-display {
+  max-width: 100%;
+  padding: 0.5rem 0;
+  position: relative;
+  /* overflow is set by JS after measuring */
+}
+
+/* Ensure inline formulas don't break layout */
+.katex {
+  white-space: nowrap;
+}
+
+/* Formulas that overflow get clipped with expand button */
+.katex-display.formula-overflow {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ellipsis indicator with solid background (only for overflow) */
+.katex-display.formula-overflow::after {
+  content: '···';
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #374151;
+  letter-spacing: 3px;
+  z-index: 15;
+  background: var(--bg-solid, #ffffff);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.dark .katex-display.formula-overflow::after {
+  color: #d1d5db;
+  --bg-solid: #1f2937;
+}
+
+/* Solid background to hide formula behind button area */
+.katex-display.formula-overflow::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.7) 20%,
+    var(--bg-fade, #ffffff) 60%,
+    var(--bg-fade, #ffffff) 100%
+  );
+  pointer-events: none;
+  z-index: 5;
+}
+
+.dark .katex-display.formula-overflow::before {
+  --bg-fade: #1f2937;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(31, 41, 55, 0.7) 20%,
+    #1f2937 60%,
+    #1f2937 100%
+  );
+}
+
+/* Expand button for overflowing formulas (icon only) */
+.formula-expand-btn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formula-expand-btn:hover {
+  background: #2563eb;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Fullscreen formula container */
+.formula-expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formula-fullscreen-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.formula-fullscreen-container .katex-display {
+  overflow: visible;
+  font-size: 1.5em;
+}
+
+.formula-fullscreen-container .katex-display::after {
+  display: none;
+}
+
+.formula-fullscreen-container .formula-expand-btn {
+  display: none;
+}
