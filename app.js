@@ -878,6 +878,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   function renderCurrentLectureItem() {
     const lecture = APP_CONTENT[currentModuleId]?.lectures[currentLectureId];
     const sources = lecture?.sources || [];
+    
+    // Build intro audio URL if available
+    let introAudioUrl = null;
+    if (lecture?.introAudio && lectureState.currentIndex === 0) {
+      const studyId = settings.activeStudyId;
+      introAudioUrl = `content/${studyId}/${currentModuleId}/${currentLectureId}/${lecture.introAudio}`;
+    }
+    
     window.LectureModule.renderCurrentLectureItem(
       lectureState,
       updateLectureNav,
@@ -885,7 +893,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       renderYouTubeVideo,
       renderImage,
       renderMermaidDiagram,
-      sources
+      sources,
+      introAudioUrl
     );
   }
 

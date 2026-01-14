@@ -132,6 +132,7 @@ function startLecture(
  * @param {Function} renderImage - Image render function
  * @param {Function} renderMermaidDiagram - Mermaid diagram render function
  * @param {Array} sources - Array of source objects from lecture.md
+ * @param {string|null} introAudioUrl - URL to intro audio file (only for first item)
  */
 function renderCurrentLectureItem(
   lectureState,
@@ -140,11 +141,18 @@ function renderCurrentLectureItem(
   renderYouTubeVideo,
   renderImage,
   renderMermaidDiagram,
-  sources = []
+  sources = [],
+  introAudioUrl = null
 ) {
   const item = lectureState.currentItems[lectureState.currentIndex];
   const lectureItemDisplay = document.getElementById('lecture-item-display');
   lectureItemDisplay.innerHTML = ''; // Clear previous item
+
+  // Add intro audio player if available (only on first item)
+  if (introAudioUrl) {
+    const audioPlayerHtml = renderIntroAudioPlayer(introAudioUrl);
+    lectureItemDisplay.insertAdjacentHTML('beforeend', audioPlayerHtml);
+  }
 
   // Get source footnote HTML (only for content types that support it)
   const footnoteHtml = renderSourceFootnotes(item, sources);
@@ -1111,6 +1119,26 @@ function showLectureOverview(
     `/module/${currentModuleId}/lecture/${currentLectureId}/overview`,
     lecture?.topic || 'Vorlesungsübersicht'
   );
+}
+
+/**
+ * Renders an audio player for the lecture intro
+ * @param {string} audioUrl - URL to the audio file
+ * @returns {string} HTML string for the audio player
+ */
+function renderIntroAudioPlayer(audioUrl) {
+  return `
+    <div class="intro-audio-player mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-750 rounded-xl border border-blue-100 dark:border-gray-700">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-2xl">🎧</span>
+        <span class="font-medium text-gray-700 dark:text-gray-300">Einführung anhören</span>
+      </div>
+      <audio controls class="w-full" preload="metadata">
+        <source src="${audioUrl}" type="audio/mpeg">
+        Dein Browser unterstützt kein Audio-Element.
+      </audio>
+    </div>
+  `;
 }
 
 // Expose functions to global scope

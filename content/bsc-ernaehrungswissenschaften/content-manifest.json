@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T16:36:53.293Z",
+  "generatedAt": "2026-01-14T17:20:41.576Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "8793fcde",
@@ -93,7 +93,7 @@
       "version": "1.1.0"
     },
     "02-chemie-grundlagen/07-eigenschaften-atome-ionenbindung": {
-      "checksum": "d0995584",
+      "checksum": "1a5f5baa",
       "sizeKB": 75.8,
       "itemCount": 62,
       "quizCount": 12,

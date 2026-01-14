@@ -137,6 +137,12 @@ function createLectureBundle(lectureDir, moduleId, lectureId) {
       sources: frontmatter?.sources || []
     };
 
+    // Check for intro audio file
+    const introAudioPath = path.join(lectureDir, 'intro.mp3');
+    if (fs.existsSync(introAudioPath)) {
+      bundle.metadata.introAudio = 'intro.mp3';
+    }
+
     // Add lecture intro as first item if there's content
     if (body && body.trim()) {
       bundle.items.push({
