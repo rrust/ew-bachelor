@@ -229,19 +229,22 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 **Betroffene Dateien:** `js/lecture.js` (renderPracticeExercise), Content-Items, AI-Instruktionen
 **Fix:** Code unterstützt jetzt beide Formate - `description`/`solution` für offene Aufgaben
 
-### ⬜ Mermaid-Diagramme mit abgeschnittenem Text
+### ✅ Mermaid-Diagramme mit abgeschnittenem Text
 
 **Problem:** Bei Item 17 und anderen Mermaid-Diagrammen wird Text in Boxen abgeschnitten (nur im eingebetteten Modus, Fullscreen funktioniert).
 **Gewünscht:** AI-Instruktionen anpassen: Mermaid-Diagramme sollten kurze Labels verwenden oder durch Tabellen/Listen ersetzt werden wo sinnvoller.
 **Betroffene Dateien:** AI-Instruktionen (GEMINI.md, copilot-instructions.md)
+**Fix:** GEMINI.md aktualisiert mit Richtlinien: Max. 3-5 Wörter pro Box, keine `<br/>`-Tags, bei komplexen Zusammenhängen Tabellen/Listen bevorzugen
 
-### ⬜ Längste Antwort ist immer die richtige
+### 🔄 Längste Antwort ist immer die richtige
 
 **Problem:** Bei MC-Fragen (z.B. Item 18) ist die längste Antwortoption fast immer korrekt. Das ermöglicht "Gaming" ohne Inhalt zu verstehen.
 **Gewünscht:**
-1. AI-Instruktionen anpassen: Antwortlängen variieren, Distraktoren auch lang formulieren
-2. Bestehende Items korrigieren
+1. AI-Instruktionen anpassen: Antwortlängen variieren, Distraktoren auch lang formulieren ✅
+2. Bestehende Items korrigieren ⬜
 **Betroffene Dateien:** AI-Instruktionen, alle self-assessment-mc Items
+**Fix (Teil 1):** GEMINI.md aktualisiert mit Regel: Korrekte Antwort darf NICHT die längste sein, mind. 1 Distraktor länger als korrekte Antwort
+**TODO:** Bestehende MC-Fragen durchgehen und Antwortlängen anpassen
 
 ### ✅ Matching zeigt "undefined" für alle Optionen
 
@@ -254,8 +257,12 @@ Gesammelte Verbesserungsvorschläge und Bugs aus dem User-Testing.
 
 **Problem:** Bei Item 31 (Ionengleichungen) und anderen Items mit langen Formeln: Formeln laufen auf Mobile aus dem Viewport.
 **Gewünscht:** Horizontales Scrolling für Formel-Container oder automatischer Zeilenumbruch.
-**Betroffene Dateien:** `css/custom-styles.css`, evtl. `js/lecture.js`
-**Fix:** CSS mit `overflow-x: auto` für `.katex-display` hinzugefügt
+**Betroffene Dateien:** `css/custom-styles.css`, `js/lecture.js`
+**Fix:** Expandierbare Formeln implementiert:
+- Formeln die Container-Breite überschreiten werden abgeschnitten
+- Ellipsis (···) zeigt an, dass Formel abgeschnitten ist
+- Runder Expand-Button (⤢) öffnet Fullscreen-Ansicht
+- Funktioniert auf Mobile und Desktop gleich
 
 ### ✅ Self-Assessment-MC: Reset nach Antwort-Check
 
