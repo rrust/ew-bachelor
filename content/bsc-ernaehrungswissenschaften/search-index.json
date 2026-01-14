@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T22:02:30.520Z",
+  "generatedAt": "2026-01-14T22:40:34.736Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -6735,6 +6735,827 @@
         },
         {
           "index": 62,
+          "type": "self-assessment",
+          "title": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "09-molekuelstruktur-molekuelorbitale",
+      "topic": "Molekülstruktur und Molekülorbitale",
+      "description": "VSEPR-Modell zur Geometrie-Vorhersage, Hybridisierung, σ/π-Bindungen und Grundlagen der MO-Theorie",
+      "topics": [
+        "Molekülstruktur und Molekülorbitale"
+      ],
+      "keywords": [
+        "molekülstruktur",
+        "molekülorbitale",
+        "vseprmodell",
+        "geometrievorhersage",
+        "hybridisierung",
+        "bindungen",
+        "grundlagen",
+        "motheorie",
+        "diesem",
+        "kapitel",
+        "lernst",
+        "dreidimensionale",
+        "gestalt",
+        "molekülen",
+        "vorhergesagt",
+        "erklären",
+        "warum",
+        "moleküle",
+        "bestimmte",
+        "formen",
+        "annehmen",
+        "dies",
+        "ihre",
+        "eigenschaften",
+        "beeinflusst",
+        "lernziele",
+        "vorlesung",
+        "kannst",
+        "anwenden",
+        "molekülgeometrien",
+        "vorherzusagen",
+        "einfluss",
+        "freier",
+        "elektronenpaare",
+        "bindungswinkel",
+        "erweiterte",
+        "oktette",
+        "elementen",
+        "periode",
+        "behandeln",
+        "molekulare",
+        "polarität",
+        "geometrie",
+        "elektronegativität",
+        "ableiten",
+        "bindungsordnung",
+        "länge",
+        "stärke",
+        "verknüpfen",
+        "hybridisierungstypen",
+        "spd",
+        "zuordnen",
+        "unterscheiden",
+        "zählen",
+        "paramagnetismus",
+        "vseprtheorie",
+        "valence",
+        "shell",
+        "electron",
+        "pair",
+        "repulsion",
+        "valenzelektronenpaarabstoßungstheorie",
+        "wichtigste",
+        "modell",
+        "vorhersage",
+        "dreidimensionalen",
+        "grundprinzip",
+        "molekül",
+        "nimmt",
+        "immer",
+        "abstoßung",
+        "zwischen",
+        "valenzelektronenpaaren",
+        "minimiert",
+        "merksatz",
+        "negativ",
+        "geladen",
+        "stoßen",
+        "gegenseitig",
+        "ordnen",
+        "daher",
+        "weit",
+        "möglich",
+        "voneinander",
+        "entfernt",
+        "zentralatom",
+        "molekülform",
+        "wichtig",
+        "struktur",
+        "moleküls",
+        "bestimmt",
+        "seine",
+        "chemischen",
+        "reaktivität",
+        "physikalischen",
+        "siedepunkt",
+        "löslichkeit",
+        "biologische",
+        "aktivität",
+        "enzymsubstratwechselwirkungen"
+      ],
+      "snippet": "Molekülstruktur und Molekülorbitale VSEPR-Modell zur Geometrie-Vorhersage, Hybridisierung, σ/π-Bindungen und Grundlagen der MO-Theorie Molekülstruktur und Molekülorbitale In diesem Kapitel lernst du,...",
+      "itemCount": 70,
+      "quizCount": 14,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Molekülstruktur und Molekülorbitale",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Item 3",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "mermaid-diagram",
+          "title": "Item 5",
+          "typeKeywords": [
+            "diagramm",
+            "grafik",
+            "flowchart",
+            "schema"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "self-assessment-mc",
+          "title": "Wofür steht die Abkürzung VSEPR?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "self-assessment-mc",
+          "title": "Warum nimmt ein Molekül mit 2 Elektronenpaaren um das Zentralatom (z.B. BeF₂) eine lineare Gestalt an?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "self-assessment-mc",
+          "title": "Welchen Bindungswinkel hat das CH₄-Molekül (Methan)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "matching",
+          "title": "Ordne die Geometrien ihren charakteristischen Bindungswinkeln zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "ordering",
+          "title": "Sortiere die Geometrien nach der Anzahl der Elektronenpaare (von wenig nach viel):",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "practice-exercise",
+          "title": "Molekülgeometrie bestimmen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "youtube-video",
+          "title": "VSEPR Theory",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "learning-content",
+          "title": "Item 13",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "learning-content",
+          "title": "Item 14",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "learning-content",
+          "title": "Item 15",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "learning-content",
+          "title": "Item 16",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Item 17",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "self-assessment-mc",
+          "title": "Warum ist der H-N-H Winkel in Ammoniak (107°) kleiner als der H-C-H Winkel in Methan (109,5°)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "self-assessment-mc",
+          "title": "Welche Molekülgeometrie hat das Wassermolekül (H₂O)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "self-assessment-mc",
+          "title": "Welche Geometrie liegt am Kohlenstoffatom in Formaldehyd (CH₂O) vor?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "matching",
+          "title": "Ordne die Moleküle ihrer Molekülgeometrie zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Aussage über den Platzbedarf von Elektronenpaaren:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "practice-exercise",
+          "title": "Geometrie mit freien Elektronenpaaren",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "youtube-video",
+          "title": "Steric Number and VSEPR",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Item 25",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Item 26",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Item 27",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "learning-content",
+          "title": "Item 28",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "self-assessment-mc",
+          "title": "Welche Position besetzt ein freies Elektronenpaar in einer trigonal-bipyramidalen Elektronengeometrie bevorzugt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "self-assessment-mc",
+          "title": "Welche Molekülgestalt hat SF₄ (Schwefeltetrafluorid)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "self-assessment-mc",
+          "title": "Welche Molekülgeometrie hat XeF₂ (Xenondifluorid)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "matching",
+          "title": "Ordne die Moleküle mit erweitertem Oktett ihrer Geometrie zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "ordering",
+          "title": "Sortiere die Strukturen nach der Anzahl der freien Elektronenpaare (von 0 nach 3):",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "practice-exercise",
+          "title": "XeF₄ Geometrie bestimmen",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "learning-content",
+          "title": "Item 35",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "learning-content",
+          "title": "Item 36",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "learning-content",
+          "title": "Item 37",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Item 38",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "self-assessment-mc",
+          "title": "Wann ist ein Molekül mit polaren Bindungen trotzdem unpolar (Dipolmoment = 0)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "self-assessment-mc",
+          "title": "Welches der folgenden Moleküle ist polar?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "self-assessment-mc",
+          "title": "Welches Element hat die höchste Elektronegativität?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "matching",
+          "title": "Ordne die Moleküle ihrer Polarität zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 42,
+          "type": "practice-exercise",
+          "title": "Polaritätsanalyse",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 43,
+          "type": "youtube-video",
+          "title": "Electronegativity and Bonding",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "learning-content",
+          "title": "Item 45",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Item 46",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Item 47",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 47,
+          "type": "self-assessment-mc",
+          "title": "Wie verhält sich die Bindungslänge zur Bindungsordnung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 48,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze den Zusammenhang zwischen Bindungsordnung und Bindungseigenschaften:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 49,
+          "type": "calculation",
+          "title": "Berechne die Reaktionsenthalpie für H₂ + Cl₂ → 2 HCl",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 50,
+          "type": "learning-content",
+          "title": "Item 51",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 51,
+          "type": "learning-content",
+          "title": "Item 52",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 52,
+          "type": "learning-content",
+          "title": "Item 53",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 53,
+          "type": "learning-content",
+          "title": "Item 54",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 54,
+          "type": "self-assessment-mc",
+          "title": "Welche Hybridisierung liegt am Kohlenstoffatom in Methan (CH₄) vor?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "self-assessment-mc",
+          "title": "Woraus besteht eine chemische Doppelbindung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "self-assessment-mc",
+          "title": "Warum ist Ethen (C₂H₄) ein planares Molekül?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 57,
+          "type": "matching",
+          "title": "Ordne die Hybridisierungen ihrer Geometrie zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 58,
+          "type": "ordering",
+          "title": "Sortiere die Hybridisierungen nach der Anzahl der verwendeten p-Orbitale (von wenig nach viel):",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 59,
+          "type": "practice-exercise",
+          "title": "Acrylnitril analysieren",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 60,
+          "type": "youtube-video",
+          "title": "sp³ Hybridized Orbitals and Sigma Bonds",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 61,
+          "type": "learning-content",
+          "title": "Item 62",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 62,
+          "type": "learning-content",
+          "title": "Item 63",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 63,
+          "type": "learning-content",
+          "title": "Item 64",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 64,
+          "type": "learning-content",
+          "title": "Item 65",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 65,
+          "type": "self-assessment-mc",
+          "title": "Was kennzeichnet ein antibindendes Molekülorbital?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 66,
+          "type": "self-assessment-mc",
+          "title": "Warum ist das Sauerstoffmolekül (O₂) paramagnetisch?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 67,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Formel für die Bindungsordnung in der MO-Theorie:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 68,
+          "type": "practice-exercise",
+          "title": "MO-Analyse von He₂",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 69,
           "type": "self-assessment",
           "title": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
           "typeKeywords": [

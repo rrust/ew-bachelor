@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-14T16:37:11.452Z",
+  "exportedAt": "2026-01-14T22:40:12.207Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,16 +8,12 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-12-14T16:37:11.452Z",
+    "startedAt": "2025-10-08T22:40:12.207Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 59,
-            "badge": "bronze"
-          },
-          "02-makronaehrstoffe-detail": {
             "score": 66,
             "badge": "bronze"
           }

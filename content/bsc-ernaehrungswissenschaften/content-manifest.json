@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-14T22:02:30.283Z",
+  "generatedAt": "2026-01-14T22:40:34.573Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -110,6 +110,16 @@
       "topic": "Die Kovalente Bindung",
       "description": "Lewis-Formeln verstehen und anwenden: Oktettregel, Mehrfachbindungen, Mesomerie, Formalladungen und Ausnahmen",
       "estimatedTime": 110,
+      "version": "1.0.0"
+    },
+    "02-chemie-grundlagen/09-molekuelstruktur-molekuelorbitale": {
+      "checksum": "1dc99433",
+      "sizeKB": 72.7,
+      "itemCount": 70,
+      "quizCount": 14,
+      "topic": "Molekülstruktur und Molekülorbitale",
+      "description": "VSEPR-Modell zur Geometrie-Vorhersage, Hybridisierung, σ/π-Bindungen und Grundlagen der MO-Theorie",
+      "estimatedTime": 120,
       "version": "1.0.0"
     }
   }
