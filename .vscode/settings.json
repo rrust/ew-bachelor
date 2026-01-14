@@ -78,5 +78,11 @@
   // Prettier settings
   "prettier.singleQuote": true,
   "prettier.trailingComma": "none",
-  "prettier.tabWidth": 2
+  "prettier.tabWidth": 2,
+  "chat.tools.terminal.autoApprove": {
+    "/^node scripts/generate-test-progress\\.js$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
 }
