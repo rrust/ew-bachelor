@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-14T22:40:12.208Z",
+  "exportedAt": "2026-01-15T08:37:58.047Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,25 +8,74 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-12-01T22:40:12.208Z",
+    "startedAt": "2025-07-27T08:37:58.046Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 4,
+            "score": 50,
+            "badge": "bronze"
+          },
+          "02-makronaehrstoffe-detail": {
+            "score": 73,
+            "badge": "silver"
+          }
+        },
+        "achievements": {}
+      },
+      "02-chemie-grundlagen": {
+        "status": "in-progress",
+        "lectures": {
+          "01-materie-messen": {
+            "score": 60,
+            "badge": "bronze"
+          },
+          "02-atome-formeln": {
+            "score": 78,
+            "badge": "silver"
+          },
+          "03-chemische-reaktionen": {
+            "score": 71,
+            "badge": "silver"
+          },
+          "04-gleichungen-stoechiometrie": {
+            "score": 54,
+            "badge": "bronze"
+          },
+          "05-thermodynamik-enthalpie-kalorimetrie": {
+            "score": 59,
+            "badge": "bronze"
+          },
+          "06-elektronenstruktur-atome": {
+            "score": 79,
+            "badge": "silver"
+          },
+          "07-eigenschaften-atome-ionenbindung": {
+            "score": 43,
             "badge": "none"
           },
-          "03-fette-oele": {
-            "score": 94,
+          "08-kovalente-bindung": {
+            "score": 37,
+            "badge": "none"
+          },
+          "13-loesungen": {
+            "score": 91,
             "badge": "gold"
           }
         },
         "achievements": {
-          "makronaehrstoffe-cheatsheet": {
+          "materie-messen-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-01T22:40:12.208Z",
-            "expiresAt": "2026-01-31T22:40:12.208Z",
+            "unlockedAt": "2025-12-29T08:37:58.047Z",
+            "expiresAt": "2026-01-28T08:37:58.047Z",
+            "extensionCount": 0,
+            "lastExtensionAt": null
+          },
+          "atome-formeln-cheatsheet": {
+            "status": "unlocked",
+            "unlockedAt": "2026-01-10T08:37:58.047Z",
+            "expiresAt": "2026-02-09T08:37:58.047Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -35,7 +84,7 @@
     },
     "streak": {
       "current": 3,
-      "lastActivityDate": "2026-01-14T10:00:00.000Z",
+      "lastActivityDate": "2026-01-15T10:00:00.000Z",
       "totalDays": 8,
       "longestStreak": 5,
       "rescueMode": false,
