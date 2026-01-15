@@ -173,14 +173,17 @@ Am Ende der Vorlesung:
 ### ⚠️ Content-Erstellung: Kritische Regeln
 
 #### Matching-Items: pairs Format
+
 ```yaml
 pairs:
   - left: 'Begriff links'       # ODER: term: 'Begriff'
     right: 'Definition rechts'  # ODER: match: 'Definition'
 ```
+
 Beide Formate (`left`/`right` oder `term`/`match`) werden unterstützt.
 
 #### Practice-Exercise: tasks Format
+
 ```yaml
 tasks:
   - description: 'Aufgabenbeschreibung'  # Einfaches Format
@@ -193,22 +196,27 @@ tasks:
 ```
 
 #### Multiple-Choice Antwortlängen ⚠️
+
 **KRITISCH:** Die korrekte Antwort darf NICHT systematisch die längste sein!
 - Alle Optionen sollen ähnliche Länge haben
 - Mind. 1 Distraktor soll länger sein als die korrekte Antwort
 - Korrekte Antwort darf kurz und prägnant sein
 
 #### Mermaid-Diagramme: Mobile-freundlich ⚠️
+
 - **Max. 3-5 Wörter pro Box** - lange Texte werden abgeschnitten
 - **Keine `<br/>`-Tags** in Labels verwenden
 - Bei komplexen Zusammenhängen: **Tabellen oder Listen bevorzugen**
 - Mermaid nur für echte Flussdiagramme/Prozesse, nicht für Textinhalte
 
 #### KaTeX-Formeln: Aggregatzustand-Notation
+
 Für chemische Formeln mit Aggregatzuständen:
+
 ```latex
 $$\text{Na}_{\text{(s)}} + \text{Cl}_{2\text{(g)}} \rightarrow \text{NaCl}_{\text{(s)}}$$
 ```
+
 Die Aggregatzustand-Klammern müssen in `\text{}` stehen!
 
 ### Valid Icon Names (for achievements)
