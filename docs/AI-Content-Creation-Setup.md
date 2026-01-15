@@ -4,11 +4,13 @@
 
 Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 
-| Aufgabe                          | Tool                           | Kosten                   |
-| -------------------------------- | ------------------------------ | ------------------------ |
-| **Deep Research & Quellinhalte** | Google AI Studio (Gemini Pro)  | Kostenlos (Free Tier)    |
-| **Content-Erstellung für App**   | GitHub Copilot + Claude Opus 4 | Kostenlos (Student Pack) |
-| **Video-Transkription**          | OpenAI Whisper (lokal)         | Kostenlos                |
+| Aufgabe                          | Tool                             | Kosten                   |
+| -------------------------------- | -------------------------------- | ------------------------ |
+| **Deep Research & Quellinhalte** | Google AI Studio (Gemini Pro)    | Kostenlos (Free Tier)    |
+| **Video-Recherche (Prompt)**     | VS Code + Claude Sonnet/Opus     | Kostenlos (Student Pack) |
+| **Video-Recherche (Suche)**      | Google AI Studio + Web-Grounding | Kostenlos (Free Tier)    |
+| **Content-Erstellung für App**   | GitHub Copilot + Claude Opus 4   | Kostenlos (Student Pack) |
+| **Video-Transkription**          | OpenAI Whisper (lokal)           | Kostenlos                |
 
 > **Geschätzte Gesamtkosten: €0/Monat**
 
@@ -60,18 +62,24 @@ Am Ende der Vorlesung:
 ```text
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  PHASE 1: Rohmaterial zusammenstellen                                   │
-│  Tool: Google AI Studio (Gemini Pro)                                    │
-│  - Deep Research mit Web-Grounding                                      │
-│  - Vorlesungsinhalte aufbereiten (Vorlesung.md)                         │
-│  - Videos recherchieren und verifizieren (Videos.md)                    │
+│  Tools: VS Code (Copilot) + Google AI Studio (Gemini Pro)               │
+│                                                                         │
+│  1a) Deep Research mit Web-Grounding → Vorlesung.md                     │
+│  1b) Video-Recherche:                                                   │
+│      - In VS Code: Copilot erstellt Video-Prompt für Gemini             │
+│      - In Gemini: Prompt mit Web-Grounding ausführen                    │
+│      - Ergebnis als Videos.md speichern + oEmbed verifizieren           │
+│                                                                         │
 │  → Speichern in: studies-material/{studyId}/NN-modul/NN-vorlesung/      │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
                                 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │  PHASE 2: CONTENT_PLAN.md erstellen und verifizieren                    │
+│  Tool: VS Code (Copilot) + manuelle Prüfung                             │
 │  - Definiert EXAKT welche Dateien erstellt werden                       │
 │  - Dateinamen, Typen, Reihenfolge festlegen                             │
+│  - Videos aus Videos.md an passender Stelle einplanen                   │
 │  - Plan prüfen und bei Bedarf überarbeiten                              │
 │  - ERST NACH VERIFIZIERUNG zu Phase 3!                                  │
 │  → Speichern als: CONTENT_PLAN.md im Material-Ordner                    │
@@ -84,12 +92,13 @@ Am Ende der Vorlesung:
 │  ⚠️ CONTENT_PLAN.md ist VERBINDLICH - keine eigene Struktur!            │
 │  - Jede Zeile im Plan = eine Datei erstellen                            │
 │  - Dateiname und Typ EXAKT wie im Plan                                  │
+│  - Videos aus Videos.md mit verifizierten URLs einbinden                │
 │  → Speichern in: content/{studyId}/NN-modul/NN-vorlesung/               │
 └───────────────────────────────┬─────────────────────────────────────────┘
                                 │
                                 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 3: Commit & Push                                                 │
+│  Commit & Push                                                          │
 │  - git add + commit + push                                              │
 │  - GitHub Action generiert automatisch alle JSON-Dateien                │
 │  - Validieren: Tools → "Inhalte validieren" in der App                  │
@@ -131,10 +140,114 @@ Anforderungen:
 - Formeln in LaTeX ($E=mc^2$)
 - Abschnitte mit ## Überschriften
 - Quellenangaben wo sinnvoll
+```
 
-Zusätzliche Recherche (Web-Grounding aktivieren):
-- Finde 2-3 passende YouTube-Videos auf Deutsch
-- Suche nach Creative Commons Bildern
+---
+
+## Video-Recherche Workflow
+
+**Zweck:** Passende YouTube-Videos für jede Vorlesung finden und verifizieren
+
+### Workflow-Schritte
+
+1. **In VS Code:** Copilot bitten, einen Video-Recherche-Prompt für die Vorlesung zu erstellen
+2. **In Google AI Studio:** Prompt mit Web-Grounding ausführen
+3. **Ergebnis:** Markdown-Tabelle kopieren und als `Videos.md` im Material-Ordner speichern
+4. **Verifizieren:** Jede Video-URL mit oEmbed-API prüfen (siehe unten)
+
+### Schritt 1: Prompt generieren lassen (VS Code)
+
+Öffne den CONTENT_PLAN.md der Vorlesung und sage zu Copilot:
+
+```text
+Gib mir bitte einen Video-Prompt für diese Vorlesung für Google Gemini
+```
+
+Copilot (mit Claude Sonnet/Opus) analysiert die Themen und erstellt einen passenden Recherche-Prompt.
+
+### Schritt 2: Gemini-Prompt ausführen
+
+Kopiere den generierten Prompt in Google AI Studio (mit **Web-Grounding aktiviert**).
+
+**Beispiel-Prompt-Struktur:**
+
+```text
+Du bist ein Experte für Chemie-Didaktik und recherchierst YouTube-Videos für eine Lern-App.
+
+## Aufgabe
+Finde passende deutschsprachige YouTube-Videos für die Vorlesung "[THEMA]".
+
+## Benötigte Videos
+
+### Video 1: [Thema]
+**Inhalt:** [Beschreibung der gewünschten Inhalte]
+
+### Video 2: [Thema]
+**Inhalt:** [Beschreibung der gewünschten Inhalte]
+
+[...]
+
+## Anforderungen an Videos
+- ✅ Deutschsprachig
+- ✅ Max. 15 Minuten Länge (optimal: 5-10 Min.)
+- ✅ Gute Erklärungen für Studienanfänger
+- ✅ KEIN simpleclub (Embedding blockiert!)
+- ✅ Veröffentlicht nach 2018 (aktuelle Didaktik)
+- ✅ Ein Video pro Thema (keine Alternativen)
+
+## Ausgabeformat
+⚠️ WICHTIG: Gib das Ergebnis als kopierfähigen Markdown-Text aus!
+
+Beginne mit diesem Header:
+
+# YouTube-Videos: [Vorlesungstitel]
+
+> **Status:** ⏳ oEmbed-Verifizierung ausstehend
+>
+> **Hinweis:** KEINE simpleclub-Videos (Embedding blockiert)
+
+---
+
+Dann für JEDES Video eine Tabelle im folgenden Format:
+
+## [Nummer]. [Thema]
+
+| Eigenschaft  | Wert                                       |
+| ------------ | ------------------------------------------ |
+| **Titel**    | [Exakter Titel des Videos]                 |
+| **Kanal**    | [Kanalname]                                |
+| **URL**      | https://www.youtube.com/watch?v=[VIDEO-ID] |
+| **Video-ID** | `[VIDEO-ID]`                               |
+| **Länge**    | [Minuten:Sekunden]                         |
+| **oEmbed**   | ⏳ zu verifizieren                          |
+
+---
+```
+
+### Schritt 3: Videos.md speichern
+
+1. Kopiere den **kompletten Markdown-Text** aus Geminis Antwort
+2. Erstelle eine neue Datei: `studies-material/{studyId}/NN-modul/NN-vorlesung/Videos.md`
+3. Füge den Markdown-Text ein und speichere
+
+### Schritt 4: oEmbed-Verifizierung
+
+**JEDE Video-URL muss verifiziert werden!**
+
+```bash
+# Im Terminal ausführen:
+curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
+```
+
+| Ergebnis         | Bedeutung                        |
+| ---------------- | -------------------------------- |
+| HTTP 200 + JSON  | ✅ Video verfügbar und einbettbar |
+| HTTP 401/403/404 | ❌ NICHT verwenden                |
+
+Aktualisiere `Videos.md` mit dem Verifizierungs-Status:
+
+```markdown
+| **oEmbed**   | ✓ verifiziert                          |
 ```
 
 ---
@@ -609,12 +722,14 @@ done
    - Bevorzugt verwenden!
 
 2. **Neue Videos verifizieren** (falls keine Videos.md existiert)
+
    ```bash
    # Video-ID extrahieren und prüfen
    curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json" | jq .title
    ```
 
 3. **Nur verifizierte Videos einbinden**
+
    ```yaml
    ---
    type: 'youtube-video'
