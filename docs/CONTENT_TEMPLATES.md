@@ -43,6 +43,54 @@ options:
 
 → [Häufige Fehler](#häufige-fehler) | [Validierung](#validierung)
 
+### ⚠️ KRITISCH: Frontmatter vs. Markdown-Body
+
+**Content-Typen haben unterschiedliche Strukturen:**
+
+| Typ                  | Frontmatter              | Markdown-Body       |
+| -------------------- | ------------------------ | ------------------- |
+| `learning-content`   | nur `type`, `sourceRefs` | ✅ Hauptinhalt hier  |
+| `youtube-video`      | nur `type`, `url`        | ✅ Beschreibung hier |
+| `self-assessment-mc` | **ALLE Felder**          | ❌ Kein Body!        |
+| `matching`           | **ALLE Felder**          | ❌ Kein Body!        |
+| `fill-in-the-blank`  | **ALLE Felder**          | ❌ Kein Body!        |
+| `ordering`           | **ALLE Felder**          | ❌ Kein Body!        |
+| `calculation`        | **ALLE Felder**          | ❌ Kein Body!        |
+| `practice-exercise`  | **ALLE Felder**          | ❌ Kein Body!        |
+| `self-assessment`    | **ALLE Felder**          | ❌ Kein Body!        |
+
+**Beispiel RICHTIG (self-assessment-mc):**
+
+```yaml
+---
+type: 'self-assessment-mc'
+question: 'Was ist die Hauptstadt von Österreich?'
+options:
+  - 'Salzburg'
+  - 'Wien'
+  - 'Graz'
+correctAnswer: 'Wien'
+explanation: 'Wien ist seit 1918 Bundeshauptstadt.'
+---
+```
+
+**Beispiel FALSCH:**
+
+```markdown
+---
+type: self-assessment-mc
+---
+
+# Frage hier als Überschrift
+
+Was ist die Hauptstadt...
+
+- Salzburg
+- Wien
+
+correctAnswer: Wien   ← Parser sieht das nicht!
+```
+
 ---
 
 ## Modul-Metadaten (module.md)

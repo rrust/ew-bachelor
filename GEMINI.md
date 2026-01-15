@@ -115,6 +115,7 @@ Use conventional commit format:
 - `multiple-choice-multiple` uses `correctAnswers` (plural!), not `correctAnswer`
 - Files numbered `NN-name.md` for ordering
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator. Use `***` for horizontal lines or just use `##` headings for visual separation.
+- ⚠️ **Interaktive Typen: ALLE Felder im YAML-Frontmatter!** Bei `self-assessment-mc`, `matching`, `fill-in-the-blank`, `ordering`, `calculation`, `practice-exercise` stehen **alle Felder im Frontmatter** – es gibt keinen Markdown-Body! Nur `learning-content` und `youtube-video` haben einen Markdown-Body.
 - ⚠️ **NIEMALS ASCII-Art oder Box-Zeichnungen verwenden!** Dies ist VERBOTEN:
 
   ```text
