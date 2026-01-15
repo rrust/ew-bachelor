@@ -21,27 +21,27 @@
 
 ## 2. Gitterenergie und Hydratationsenergie
 
-| Eigenschaft  | Wert                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------ |
+| Eigenschaft  | Wert                                                                                                 |
+| ------------ | ---------------------------------------------------------------------------------------------------- |
 | **Titel**    | Wie funktionieren selbsterhitzende Kaffeebecher? \| Gitterenergie und Hydratationsenergie von Salzen |
-| **Kanal**    | LED Learning every day                                                                           |
-| **URL**      | https://www.youtube.com/watch?v=xV0hl97T418                                                      |
-| **Video-ID** | `xV0hl97T418`                                                                                    |
-| **Länge**    | 06:02                                                                                            |
-| **oEmbed**   | ✓ verifiziert                                                                                    |
+| **Kanal**    | LED Learning every day                                                                               |
+| **URL**      | https://www.youtube.com/watch?v=xV0hl97T418                                                          |
+| **Video-ID** | `xV0hl97T418`                                                                                        |
+| **Länge**    | 06:02                                                                                                |
+| **oEmbed**   | ✓ verifiziert                                                                                        |
 
 ---
 
 ## 3. Konzentrationsmaße
 
-| Eigenschaft  | Wert                                                             |
-| ------------ | ---------------------------------------------------------------- |
-| **Titel**    | Gehaltsangaben: Massenanteil, Stoffmengenkonzentration & Co.     |
-| **Kanal**    | Studyflix                                                        |
-| **URL**      | https://www.youtube.com/watch?v=tT7uW-NIdhE                      |
-| **Video-ID** | `tT7uW-NIdhE`                                                    |
-| **Länge**    | 04:47                                                            |
-| **oEmbed**   | ✓ verifiziert                                                    |
+| Eigenschaft  | Wert                                                         |
+| ------------ | ------------------------------------------------------------ |
+| **Titel**    | Gehaltsangaben: Massenanteil, Stoffmengenkonzentration & Co. |
+| **Kanal**    | Studyflix                                                    |
+| **URL**      | https://www.youtube.com/watch?v=tT7uW-NIdhE                  |
+| **Video-ID** | `tT7uW-NIdhE`                                                |
+| **Länge**    | 04:47                                                        |
+| **oEmbed**   | ✓ verifiziert                                                |
 
 ---
 
