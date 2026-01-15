@@ -1,0 +1,1081 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "13-loesungen",
+  "metadata": {
+    "topic": "Lösungen",
+    "description": "Eigenschaften von Lösungen, Konzentrationsmaße, Thermodynamik des Lösungsprozesses, kolligative Eigenschaften und Osmose",
+    "estimatedTime": 120,
+    "version": "1.0.0",
+    "sources": [
+      {
+        "id": "vorlesung-k13",
+        "title": "Vorlesungsfolien Kapitel 13: Lösungen (WS2025)",
+        "url": "https://moodle.univie.ac.at/pluginfile.php/31885038/mod_resource/content/1/Kapitel13.pdf",
+        "type": "pdf"
+      },
+      {
+        "id": "mortimer",
+        "title": "Mortimer & Müller: Chemie - Das Basiswissen (10. Aufl.)",
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Lösungen",
+      "content": "# Lösungen\n\nIn diesem Kapitel lernst du, wie Stoffe in Lösung gehen, welche Energien dabei eine Rolle spielen und wie sich gelöste Teilchen auf die physikalischen Eigenschaften einer Lösung auswirken. Diese Grundlagen sind zentral für das Verständnis biochemischer Prozesse und pharmazeutischer Anwendungen.\n\n## Lernziele\n\nNach dieser Vorlesung kannst du:\n\n- Den Unterschied zwischen Lösungsmittel und gelöstem Stoff erklären\n- Gesättigte, ungesättigte und übersättigte Lösungen unterscheiden\n- Das Prinzip \"Like dissolves like\" auf Alltagsbeispiele anwenden\n- Die Lösungsenthalpie aus Gitter- und Hydratationsenthalpie herleiten\n- Konzentrationseinheiten (Molalität, Stoffmengenanteil, Massenanteil) berechnen\n- Das Henry-Gesetz für die Gaslöslichkeit anwenden\n- Kolligative Eigenschaften (Dampfdruck, Siedepunkt, Gefrierpunkt, Osmose) erklären\n- Den Van't Hoff Faktor für Elektrolyte bestimmen\n- Osmotische Phänomene in biologischen Systemen verstehen",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "1-2"
+        }
+      ],
+      "content": "# Was ist eine Lösung?\n\nEine **Lösung** ist ein **homogenes Gemisch** aus zwei oder mehr Substanzen, die in einer einzigen Phase vorliegen. Die Bestandteile sind auf molekularer Ebene so fein verteilt, dass sie optisch nicht mehr unterscheidbar sind.\n\n## Die zwei Hauptkomponenten\n\n| Komponente         | Bezeichnung | Beschreibung                                                |\n| ------------------ | ----------- | ----------------------------------------------------------- |\n| **Lösungsmittel**  | Solvens     | Meist im Überschuss vorhanden, bestimmt den Aggregatzustand |\n| **Gelöster Stoff** | Solute      | Die im Lösungsmittel verteilten Komponenten                 |\n\n> **Beispiel:** Bei einer Salzlösung ist Wasser das Lösungsmittel (Solvens) und NaCl der gelöste Stoff (Solute).\n\n## Wichtige Begriffe\n\n- **Homogen:** Gleichartig zusammengesetzt, keine Phasengrenzen erkennbar\n- **Phase:** Ein Bereich mit einheitlichen physikalischen und chemischen Eigenschaften\n\nIm Gegensatz zu **heterogenen Gemischen** (wie Suspensionen oder Emulsionen) zeigen Lösungen keine sichtbare Trennung der Bestandteile."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "2-3"
+        }
+      ],
+      "content": "# Sättigungszustände von Lösungen\n\nJe nach Menge des gelösten Stoffes können Lösungen in verschiedene Zustände eingeteilt werden:\n\n## Die drei Sättigungszustände\n\n| Zustand         | Beschreibung                                 | Verhalten bei Stoffzugabe                      |\n| --------------- | -------------------------------------------- | ---------------------------------------------- |\n| **Ungesättigt** | Weniger gelöster Stoff als maximal möglich   | Stoff löst sich weiter                         |\n| **Gesättigt**   | Maximale Menge bei gegebener Temperatur      | Kein weiteres Lösen, dynamisches Gleichgewicht |\n| **Übersättigt** | Mehr Stoff gelöst als thermodynamisch stabil | Instabil, kristallisiert bei Störung           |\n\n## Dynamisches Gleichgewicht\n\nIn einer **gesättigten Lösung** herrscht ein dynamisches Gleichgewicht: Ständig lösen sich Teilchen vom Feststoff, während gleichzeitig andere Teilchen auskristallisieren. Die Nettoänderung ist null.\n\n## Übersättigte Lösungen\n\nÜbersättigte Lösungen entstehen oft durch:\n1. Langsames Abkühlen einer heißen, gesättigten Lösung\n2. Vorsichtiges Verdampfen von Lösungsmittel\n\n> **Praxisbeispiel:** Ein Impfkristall oder leichtes Erschüttern kann die schlagartige Kristallisation des überschüssigen Stoffes auslösen."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "3-4"
+        }
+      ],
+      "content": "# Mischbarkeit: \"Like dissolves like\"\n\nDie Faustregel für Löslichkeit lautet: **\"Gleiches löst Gleiches\"** (Like dissolves like).\n\n## Das Prinzip\n\nDie Löslichkeit hängt von der Ähnlichkeit der intermolekularen Kräfte zwischen Lösungsmittel und gelöstem Stoff ab:\n\n| Lösungsmitteltyp          | Löst gut                         | Löst schlecht                |\n| ------------------------- | -------------------------------- | ---------------------------- |\n| **Polar** (z.B. Wasser)   | Polare Stoffe, Ionenverbindungen | Unpolare Stoffe (Fette, Öle) |\n| **Unpolar** (z.B. Benzin) | Unpolare Stoffe (Fette, Öle)     | Polare Stoffe, Salze         |\n\n## Flüssig-flüssig Mischungen\n\nBei Mischungen zweier Flüssigkeiten unterscheidet man:\n\n- **Mischbar:** Vollständige Vermengung (z.B. Ethanol und Wasser)\n- **Nicht mischbar:** Zwei separate Schichten (z.B. Öl und Wasser)\n\n> **Ernährungswissenschaftliche Relevanz:** Fettlösliche Vitamine (A, D, E, K) benötigen Fett als Trägermedium für die Aufnahme im Darm. Wasserlösliche Vitamine (B, C) werden dagegen im wässrigen Milieu transportiert."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Aussage definiert eine **übersättigte Lösung** korrekt?",
+      "options": [
+        "Sie enthält genau so viel Stoff, wie maximal löslich ist",
+        "Sie ist thermodynamisch sehr stabil",
+        "Sie enthält mehr gelösten Stoff als möglich und ist instabil",
+        "Sie liegt immer im festen Aggregatzustand vor"
+      ],
+      "correctAnswer": "Sie enthält mehr gelösten Stoff als möglich und ist instabil",
+      "explanation": "Eine übersättigte Lösung enthält zwangsweise mehr Stoff in Lösung als das Löslichkeitsprodukt erlaubt. Dieser Zustand ist thermodynamisch instabil und die Lösung kristallisiert bei jeder Störung (Impfkristall, Erschütterung) spontan aus.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Nach dem Prinzip \"Like dissolves like\": Welches Lösungsmittel eignet sich am besten, um **Fettflecken** zu entfernen?",
+      "options": [
+        "Wasser (polar)",
+        "Benzin (unpolar)",
+        "Eine Salzlösung (ionisch)",
+        "Essig (polar)"
+      ],
+      "correctAnswer": "Benzin (unpolar)",
+      "explanation": "Fette sind unpolare Moleküle. Nach der Regel \"Gleiches löst Gleiches\" lösen sich unpolare Stoffe in unpolaren Lösungsmitteln wie Benzin. Wasser als polares Lösungsmittel kann Fette nicht lösen – deshalb brauchen wir Seife als Vermittler.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Man gibt Salz in Wasser und rührt um, bis ein **Bodensatz** aus Salz verbleibt, der sich trotz Rühren nicht mehr löst. Welche Art von Lösung liegt vor?",
+      "options": [
+        "Ungesättigt",
+        "Gesättigt",
+        "Übersättigt",
+        "Emulsion"
+      ],
+      "correctAnswer": "Gesättigt",
+      "explanation": "Da sich kein weiterer Stoff löst und ein Bodensatz verbleibt, ist die maximale Löslichkeit erreicht. Es besteht ein dynamisches Gleichgewicht zwischen gelöstem und ungelöstem Salz – die Lösung ist gesättigt.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jeden Stofftyp dem am besten geeigneten Lösungsmittel zu:",
+      "pairs": [
+        {
+          "left": "Kochsalz (NaCl)",
+          "right": "Wasser"
+        },
+        {
+          "left": "Speiseöl",
+          "right": "Benzin"
+        },
+        {
+          "left": "Zucker (Glucose)",
+          "right": "Wasser"
+        },
+        {
+          "left": "Wachs",
+          "right": "Benzin"
+        }
+      ],
+      "explanation": "Polare und ionische Stoffe lösen sich in polaren Lösungsmitteln (Wasser), unpolare Stoffe in unpolaren Lösungsmitteln (Benzin).",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die fehlenden Begriffe zur Sättigung von Lösungen:",
+      "text": "Eine {{übersättigte}} Lösung enthält mehr gelösten Stoff als eigentlich möglich wäre. Dieser Zustand ist thermodynamisch {{instabil}} und kann durch einen Impfkristall zur Kristallisation gebracht werden.",
+      "blanks": [
+        {
+          "answer": "übersättigte",
+          "alternatives": [
+            "übersaettigte"
+          ]
+        },
+        {
+          "answer": "instabil",
+          "alternatives": [
+            "labil",
+            "nicht stabil"
+          ]
+        }
+      ],
+      "explanation": "Übersättigte Lösungen entstehen durch langsames Abkühlen und sind metastabil – sie kristallisieren bei kleinster Störung.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Nagellack und Wasser",
+      "scenario": "Du hast Nagellack an den Fingern und versuchst, ihn mit Wasser und Seife abzuwaschen. Trotz intensiven Rubbelns bleibt der Lack haften.",
+      "tasks": [
+        {
+          "description": "Erkläre, warum Nagellack sich nicht in Wasser löst.",
+          "solution": "Nagellack besteht hauptsächlich aus unpolaren organischen Verbindungen (Polymere, Weichmacher). Wasser ist ein polares Lösungsmittel. Nach dem Prinzip \"Like dissolves like\" können polare Lösungsmittel unpolare Stoffe nicht lösen."
+        },
+        {
+          "description": "Welche Art von Lösungsmittel enthält Nagellackentferner?",
+          "solution": "Nagellackentferner enthält unpolare oder schwach polare organische Lösungsmittel wie Aceton oder Ethylacetat. Diese können die unpolaren Bestandteile des Lacks lösen."
+        },
+        {
+          "description": "Nenne ein weiteres Alltagsbeispiel, bei dem das Prinzip \"Like dissolves like\" relevant ist.",
+          "solution": "Beispiele: Fettflecken auf Kleidung (mit Fleckentferner statt Wasser behandeln), Ölfarben (mit Terpentin statt Wasser reinigen), fettlösliche Vitamine (benötigen Fett zur Aufnahme im Darm)."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=vJzKHIgIY7I",
+      "content": "# Lösungen und Löslichkeit\n\nIn diesem Video von **musstewissen Chemie** werden die Grundlagen zu Lösungen und Löslichkeit anschaulich erklärt.\n\n**Themen im Video:**\n- Was ist eine Lösung?\n- Unterschied zwischen Lösungsmittel und gelöstem Stoff\n- Wann ist eine Lösung gesättigt?\n- Einflussfaktoren auf die Löslichkeit"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "5-6"
+        }
+      ],
+      "content": "# Hydratation von Ionen\n\nWenn sich ein ionischer Feststoff in Wasser löst, lagern sich Wassermoleküle aufgrund ihrer Dipol-Eigenschaft an die Ionen an. Dieser Prozess heißt **Hydratation**.\n\n## Orientierung der Wassermoleküle\n\nDie Wassermoleküle ordnen sich entsprechend ihrer Ladungsverteilung:\n\n| Ion                   | Anlagerung             | Erklärung                                      |\n| --------------------- | ---------------------- | ---------------------------------------------- |\n| **Kation** (z.B. Na⁺) | O-Atom zeigt zum Ion   | Sauerstoff trägt die negative Teilladung (δ−)  |\n| **Anion** (z.B. Cl⁻)  | H-Atome zeigen zum Ion | Wasserstoff trägt die positive Teilladung (δ+) |\n\n## Die Hydrathülle\n\nUm jedes gelöste Ion bildet sich eine **Hydrathülle** aus orientierten Wassermolekülen. Diese Hülle:\n\n- Stabilisiert die Ionen in Lösung\n- Verhindert die Rückkristallisation\n- Setzt Energie frei (Hydratationsenergie)\n\n> **Merke:** Die Hydratation ist ein exothermer Prozess – es wird Energie freigesetzt, wenn Ionen von Wassermolekülen umhüllt werden."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "6-7"
+        }
+      ],
+      "content": "# Lösungsenthalpie\n\nDer gesamte Lösungsprozess wird durch die **Lösungsenthalpie** ($\\Delta H_{\\text{Lösung}}$) beschrieben. Sie setzt sich aus zwei Komponenten zusammen:\n\n## Die zwei Teilprozesse\n\n### 1. Gitterenthalpie ($\\Delta H_{\\text{Gitter}}$)\n\n- Energie zum Aufbrechen des Kristallgitters\n- Immer **endotherm** (positiv, $> 0$)\n- Energie muss zugeführt werden\n\n### 2. Hydratationsenthalpie ($\\Delta H_{\\text{Hydratation}}$)\n\n- Energie bei der Anlagerung von Wassermolekülen\n- Immer **exotherm** (negativ, $< 0$)\n- Energie wird freigesetzt\n\n## Die Bilanzgleichung\n\n$$\\Delta H_{\\text{Lösung}} = \\Delta H_{\\text{Gitter}} + \\Delta H_{\\text{Hydratation}}$$\n\nDas Vorzeichen der Lösungsenthalpie entscheidet, ob sich die Lösung erwärmt oder abkühlt:\n\n| Verhältnis                            | Ergebnis            | Temperaturänderung |\n| ------------------------------------- | ------------------- | ------------------ |\n| Hydratation größer als Gitterenergie  | negativ (exotherm)  | Lösung wird warm   |\n| Hydratation kleiner als Gitterenergie | positiv (endotherm) | Lösung wird kalt   |"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "7-8"
+        }
+      ],
+      "content": "# Exothermes und endothermes Lösen\n\nOb sich eine Lösung beim Lösen erwärmt oder abkühlt, hängt von der Bilanz zwischen Gitter- und Hydratationsenergie ab.\n\n## Exothermes Lösen ($\\Delta H < 0$)\n\nDie Lösung **erwärmt sich**, weil mehr Energie bei der Hydratation frei wird, als zum Aufbrechen des Gitters benötigt wird.\n\n**Beispiel:** Calciumchlorid (CaCl₂)\n- Starke Hydratation durch die doppelt geladenen Ca²⁺-Ionen\n- Wird als Streusalz und in Trockenmitteln verwendet\n\n## Endothermes Lösen ($\\Delta H > 0$)\n\nDie Lösung **kühlt ab**, weil mehr Energie zum Aufbrechen des Gitters benötigt wird, als bei der Hydratation frei wird.\n\n**Beispiel:** Ammoniumnitrat (NH₄NO₃)\n- Anwendung in **Kältekompressen** (Instant Cold Packs)\n- Beim Knacken der Innenhülle löst sich das Salz und kühlt stark ab\n\n> **Alltagsrelevanz:** Die Kühlung bei Sportverletzungen basiert auf dem endothermen Lösen von Salzen in Wasser."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "8-9"
+        }
+      ],
+      "content": "# Taschenwärmer: Angewandte Thermodynamik\n\n**Taschenwärmer (Heat Packs)** nutzen die umgekehrte Reaktion – die Kristallisation einer übersättigten Lösung.\n\n## Das Prinzip\n\nNatriumacetat ($\\text{NaCH}_3\\text{CO}_2$) kann stark übersättigte Lösungen bilden. Die Kristallisation ist **exotherm**:\n\n$$\\text{Na}^+_{\\text{(aq)}} + \\text{CH}_3\\text{CO}_2^-_{\\text{(aq)}} \\rightarrow \\text{NaCH}_3\\text{CO}_2{}_{\\text{(s)}} + \\text{Wärme}$$\n\n## Funktionsweise\n\n1. **Vor der Aktivierung:** Klare, übersättigte Natriumacetat-Lösung\n2. **Aktivierung:** Knicken eines Metallplättchens löst Kristallisation aus\n3. **Wärmeabgabe:** Schlagartige Kristallisation setzt gespeicherte Energie frei\n4. **Regeneration:** Durch Erhitzen im Wasserbad wieder verflüssigbar\n\n## Energiespeicherung\n\nDie übersättigte Lösung speichert die Energie, die beim vorherigen Auflösen des Salzes (durch Erhitzen) aufgenommen wurde. Beim Kristallisieren wird diese Energie als Wärme wieder freigesetzt.\n\n> **Vorteil:** Wiederverwendbar – nach dem Erhitzen ist der Taschenwärmer wieder einsatzbereit."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wenn beim Lösen eines Salzes in Wasser das Becherglas **kalt** wird, ist der Prozess...",
+      "options": [
+        "exotherm",
+        "endotherm",
+        "adiabatisch",
+        "isobar"
+      ],
+      "correctAnswer": "endotherm",
+      "explanation": "Wenn sich das Becherglas abkühlt, nimmt das System Wärme aus der Umgebung auf. Per Definition ist ein Prozess, bei dem das System Wärme aufnimmt, endotherm (ΔH > 0).",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welcher Schritt beim Lösen von Salzen in Wasser **benötigt Energie** (ist endotherm)?",
+      "options": [
+        "Die Hydratation der Ionen",
+        "Das Aufbrechen des Kristallgitters",
+        "Die Bildung von Wasserstoffbrückenbindungen",
+        "Die Orientierung der Wassermoleküle"
+      ],
+      "correctAnswer": "Das Aufbrechen des Kristallgitters",
+      "explanation": "Um die starken elektrostatischen Anziehungskräfte zwischen den Ionen im Kristallgitter zu überwinden, muss Energie zugeführt werden. Die Gitterenthalpie ist daher immer positiv (endotherm).",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum ist **übersättigtes Natriumacetat** besonders gut für Taschenwärmer geeignet?",
+      "options": [
+        "Weil es beim Lösen Wärme abgibt",
+        "Weil die Kristallisation stark exotherm ist und bei Bedarf ausgelöst werden kann",
+        "Weil es unbegrenzt haltbar ist",
+        "Weil es den Gefrierpunkt von Wasser erhöht"
+      ],
+      "correctAnswer": "Weil die Kristallisation stark exotherm ist und bei Bedarf ausgelöst werden kann",
+      "explanation": "Die übersättigte Lösung ist metastabil – sie bleibt flüssig, bis ein Auslöser (Metallplättchen) die Kristallisation startet. Dabei wird die zuvor beim Lösen aufgenommene Energie schlagartig als Wärme freigesetzt.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jeden Prozess der richtigen Energiebilanz zu:",
+      "pairs": [
+        {
+          "left": "Aufbrechen des Kristallgitters",
+          "right": "endotherm"
+        },
+        {
+          "left": "Hydratation der Ionen",
+          "right": "exotherm"
+        },
+        {
+          "left": "Kristallisation aus übersättigter Lösung",
+          "right": "exotherm"
+        },
+        {
+          "left": "Lösen von NH₄NO₃ in Wasser",
+          "right": "endotherm"
+        }
+      ],
+      "explanation": "Das Aufbrechen von Bindungen braucht Energie (endotherm), die Bildung neuer Wechselwirkungen setzt Energie frei (exotherm).",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Begriffe zur Lösungsenthalpie:",
+      "text": "Die Lösungsenthalpie berechnet sich aus: ΔH_Lösung = ΔH_{{Gitter}} + ΔH_{{Hydratation}}. Das Aufbrechen des Gitters ist immer endotherm, die Hydratation immer exotherm.",
+      "blanks": [
+        {
+          "answer": "Gitter",
+          "alternatives": [
+            "Gitterenergie",
+            "Kristallgitter"
+          ]
+        },
+        {
+          "answer": "Hydratation",
+          "alternatives": [
+            "Hydratationsenergie",
+            "Hyd"
+          ]
+        }
+      ],
+      "explanation": "Die Gesamtenergie des Lösevorgangs ergibt sich aus der Summe dieser beiden gegensätzlichen Prozesse.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "CaCl₂ in Wasser",
+      "scenario": "Du hast wasserfreies Calciumchlorid (CaCl₂) und gibst es in Wasser. Calciumchlorid ist für seine stark exotherme Lösungsenthalpie bekannt.",
+      "tasks": [
+        {
+          "description": "Wird das Becherglas warm oder kalt? Begründe deine Antwort.",
+          "solution": "Das Becherglas wird warm. Die Hydratationsenergie der doppelt geladenen Ca²⁺-Ionen und der zwei Cl⁻-Ionen ist sehr hoch und übersteigt die Gitterenergie. Der Prozess ist exotherm (ΔH < 0), daher wird Wärme an die Umgebung abgegeben."
+        },
+        {
+          "description": "Erkläre auf molekularer Ebene, warum CaCl₂ so viel Hydratationsenergie freisetzt.",
+          "solution": "Ca²⁺ ist ein zweifach positiv geladenes Ion mit relativ kleinem Ionenradius. Die hohe Ladungsdichte zieht die δ−-Enden der Wassermoleküle sehr stark an. Pro Ion werden viele Wassermoleküle fest gebunden, was viel Energie freisetzt."
+        },
+        {
+          "description": "Nenne eine praktische Anwendung von CaCl₂, die auf dieser Eigenschaft basiert.",
+          "solution": "CaCl₂ wird als Trockenmittel verwendet (bindet Wasser stark), als Streusalz (senkt Gefrierpunkt und erzeugt Wärme), oder in Wärmekissen (exotherme Reaktion)."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=FjI-O99p2Fo",
+      "content": "# Gitterenergie und Hydratationsenergie\n\nIn diesem Video von **Die Merkhilfe** werden die energetischen Grundlagen des Lösungsvorgangs erklärt.\n\n**Themen im Video:**\n- Was ist Gitterenergie?\n- Was ist Hydratationsenergie?\n- Wie berechnet sich die Lösungsenthalpie?\n- Exotherme vs. endotherme Lösungsvorgänge"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "10-11"
+        }
+      ],
+      "content": "# Stoffmengenanteil (Mol-Bruch)\n\nDer **Stoffmengenanteil** $X$ (auch Mol-Bruch genannt) gibt das Verhältnis der Stoffmenge einer Komponente zur Gesamtstoffmenge an.\n\n## Definition\n\n$$X_A = \\frac{n_A}{n_A + n_B + n_C + \\dots} = \\frac{n_A}{n_{\\text{gesamt}}}$$\n\n## Eigenschaften\n\n| Eigenschaft   | Wert                                   |\n| ------------- | -------------------------------------- |\n| Einheit       | **dimensionslos** (mol/mol kürzt sich) |\n| Wertebereich  | 0 bis 1                                |\n| Summe aller X | Immer 1                                |\n\n## Beispiel\n\nIn einer Mischung mit 2 mol Ethanol und 8 mol Wasser:\n\n$$X_{\\text{Ethanol}} = \\frac{2}{2 + 8} = \\frac{2}{10} = 0{,}2$$\n\n$$X_{\\text{Wasser}} = \\frac{8}{10} = 0{,}8$$\n\n> **Prüfung:** $X_{\\text{Ethanol}} + X_{\\text{Wasser}} = 0{,}2 + 0{,}8 = 1$ ✓"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "11-12"
+        }
+      ],
+      "content": "# Molalität\n\nDie **Molalität** $m$ bezieht die Stoffmenge auf die **Masse des Lösungsmittels** – nicht auf das Volumen der Lösung.\n\n## Definition\n\n$$m = \\frac{n_{\\text{gelöster Stoff}}}{\\text{Masse Lösungsmittel in kg}}$$\n\n## Eigenschaften\n\n| Eigenschaft            | Wert                 |\n| ---------------------- | -------------------- |\n| Einheit                | mol/kg (auch: molal) |\n| Temperaturabhängigkeit | **keine**            |\n\n## Vorteil gegenüber Molarität\n\nDie Molarität (mol/L) ändert sich mit der Temperatur, da sich das Volumen ausdehnt oder zusammenzieht.\n\nDie Molalität bleibt konstant, da die Masse temperaturunabhängig ist. Daher wird sie bevorzugt in der **Thermodynamik** verwendet, insbesondere bei:\n\n- Kolligativen Eigenschaften\n- Gefrierpunktserniedrigung\n- Siedepunktserhöhung\n\n## Beispiel\n\n2 mol Glucose in 500 g Wasser:\n\n$$m = \\frac{2 \\text{ mol}}{0{,}5 \\text{ kg}} = 4 \\text{ mol/kg}$$"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "12"
+        }
+      ],
+      "content": "# Massenanteil (Gewichts-%)\n\nDer **Massenanteil** gibt an, wie viel Prozent der Gesamtmasse einer Lösung vom gelösten Stoff stammt.\n\n## Definition\n\n$$\\text{Massenanteil} = \\frac{m_{\\text{gelöster Stoff}}}{m_{\\text{Lösung}}} \\times 100\\%$$\n\nWobei $m_{\\text{Lösung}} = m_{\\text{gelöster Stoff}} + m_{\\text{Lösungsmittel}}$\n\n## Eigenschaften\n\n| Eigenschaft          | Wert                      |\n| -------------------- | ------------------------- |\n| Einheit              | % (Prozent)               |\n| Andere Bezeichnungen | Gewichts-%, Gew.-%, w/w-% |\n\n## Alltagsbeispiele\n\n| Lösung                        | Massenanteil       |\n| ----------------------------- | ------------------ |\n| Physiologische Kochsalzlösung | 0,9% NaCl          |\n| Essig                         | ca. 5% Essigsäure  |\n| Konzentrierte Schwefelsäure   | 98% H₂SO₄          |\n| Haushaltszucker-Sirup         | ca. 66% Saccharose |\n\n> **Beachte:** Der Massenanteil sagt nichts über die Stoffmenge aus. 10% Glucose (M = 180 g/mol) entspricht einer anderen Molzahl als 10% NaCl (M = 58 g/mol)."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "13-14"
+        }
+      ],
+      "content": "# Beispielrechnung: Ethylenglycol\n\nWir berechnen alle Konzentrationsmaße für eine Lösung von Ethylenglycol (Frostschutzmittel) in Wasser.\n\n## Gegeben\n\n- Masse Ethylenglycol: $62{,}1$ g ($= 1{,}00$ mol, da $M = 62{,}1$ g/mol)\n- Masse Wasser: $250$ g\n- Molare Masse Wasser: $18{,}02$ g/mol\n\n## Berechnung\n\n### Schritt 1: Stoffmenge Wasser\n\n$$n_{\\text{Wasser}} = \\frac{250 \\text{ g}}{18{,}02 \\text{ g/mol}} = 13{,}9 \\text{ mol}$$\n\n### Schritt 2: Stoffmengenanteil ($X$)\n\n$$X_{\\text{Glycol}} = \\frac{1{,}00 \\text{ mol}}{1{,}00 + 13{,}9 \\text{ mol}} = \\frac{1{,}00}{14{,}9} = 0{,}0672$$\n\n### Schritt 3: Molalität ($m$)\n\n$$m = \\frac{1{,}00 \\text{ mol}}{0{,}250 \\text{ kg}} = 4{,}00 \\text{ mol/kg}$$\n\n### Schritt 4: Massenanteil\n\n$$\\% = \\frac{62{,}1 \\text{ g}}{62{,}1 + 250 \\text{ g}} \\times 100\\% = \\frac{62{,}1}{312{,}1} \\times 100\\% = 19{,}9\\%$$\n\n## Zusammenfassung\n\n| Konzentrationsmaß     | Wert        |\n| --------------------- | ----------- |\n| Stoffmengenanteil $X$ | 0,0672      |\n| Molalität $m$         | 4,00 mol/kg |\n| Massenanteil          | 19,9%       |"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum wird in der Thermodynamik oft die **Molalität** (m) statt der Molarität (M) verwendet?",
+      "options": [
+        "Molalität ist einfacher zu berechnen",
+        "Molalität ist unabhängig von der Temperatur",
+        "Molalität bezieht sich auf das Volumen der Lösung",
+        "Molarität gilt nur für Gase"
+      ],
+      "correctAnswer": "Molalität ist unabhängig von der Temperatur",
+      "explanation": "Das Volumen von Flüssigkeiten ändert sich mit der Temperatur (Ausdehnung/Kontraktion). Daher ändert sich auch die Molarität (mol/L). Die Masse bleibt dagegen konstant – deshalb ist die Molalität (mol/kg) temperaturunabhängig.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Eine Lösung enthält **0,5 mol Zucker** in **500 g Wasser**. Wie hoch ist die Molalität?",
+      "options": [
+        "0,5 mol/kg",
+        "1,0 mol/kg",
+        "2,0 mol/kg",
+        "0,25 mol/kg"
+      ],
+      "correctAnswer": "1,0 mol/kg",
+      "explanation": "Die Molalität berechnet sich aus m = n / kg(Lösungsmittel). Mit n = 0,5 mol und Masse = 0,5 kg ergibt sich: m = 0,5 mol / 0,5 kg = 1,0 mol/kg.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist die Einheit des Stoffmengenanteils X?",
+      "options": [
+        "mol/L",
+        "g/mol",
+        "dimensionslos (keine Einheit)",
+        "Prozent (%)"
+      ],
+      "correctAnswer": "dimensionslos (keine Einheit)",
+      "explanation": "Der Stoffmengenanteil ist ein Verhältnis von Stoffmengen: X = n_A / n_gesamt. Da Mol durch Mol geteilt wird, kürzen sich die Einheiten und das Ergebnis ist dimensionslos (ein reiner Zahlenwert zwischen 0 und 1).",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jede Formel dem richtigen Konzentrationsmaß zu:",
+      "pairs": [
+        {
+          "left": "n / kg Lösungsmittel",
+          "right": "Molalität"
+        },
+        {
+          "left": "n_A / n_gesamt",
+          "right": "Stoffmengenanteil"
+        },
+        {
+          "left": "m_Stoff / m_Lösung × 100%",
+          "right": "Massenanteil"
+        },
+        {
+          "left": "n / L Lösung",
+          "right": "Molarität"
+        }
+      ],
+      "explanation": "Jedes Konzentrationsmaß hat seine spezifische Definition und Anwendung.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Bringe die Schritte zur Umrechnung von Massenanteil in Molalität in die richtige Reihenfolge:",
+      "items": [
+        "Masse des gelösten Stoffes aus Massenanteil berechnen",
+        "Masse des Lösungsmittels berechnen (Gesamtmasse minus gelöster Stoff)",
+        "Stoffmenge des gelösten Stoffes mit molarer Masse berechnen",
+        "Molalität = Stoffmenge / Masse Lösungsmittel in kg"
+      ],
+      "explanation": "Die Umrechnung erfordert diese schrittweise Vorgehensweise, da verschiedene Größen ineinander umgerechnet werden müssen.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Du löst 11,7 g Natriumchlorid (NaCl) in 200 g Wasser. Berechne die Molalität der Lösung. (M(NaCl) = 58,5 g/mol)",
+      "correctAnswer": 1,
+      "unit": "mol/kg",
+      "hint": "Berechne zuerst die Stoffmenge, dann teile durch die Masse des Lösungsmittels in kg.",
+      "solution": "Stoffmenge: n = 11,7 g / 58,5 g/mol = 0,2 mol. Masse Wasser: 200 g = 0,2 kg. Molalität: m = 0,2 mol / 0,2 kg = 1,0 mol/kg.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Du löst 18 g Glucose (C₆H₁₂O₆, M = 180 g/mol) in 90 g Wasser (M = 18 g/mol). Berechne den Stoffmengenanteil der Glucose.",
+      "correctAnswer": 0.02,
+      "unit": "",
+      "hint": "Berechne zuerst die Stoffmengen beider Komponenten, dann den Anteil der Glucose an der Gesamtstoffmenge.",
+      "solution": "n(Glucose) = 18 g / 180 g/mol = 0,1 mol. n(Wasser) = 90 g / 18 g/mol = 5,0 mol. X(Glucose) = 0,1 / (0,1 + 5,0) = 0,1 / 5,1 ≈ 0,02.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=sI91OAFE_kI",
+      "content": "# Konzentrationsangaben\n\nIn diesem Video von **Lehrerschmidt** werden die verschiedenen Konzentrationsangaben erklärt und berechnet.\n\n**Themen im Video:**\n- Massenanteil (Gewichtsprozent)\n- Stoffmengenanteil (Mol-Bruch)\n- Molarität (mol/L)\n- Molalität (mol/kg)\n- Umrechnung zwischen den Einheiten"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "15-16"
+        }
+      ],
+      "content": "# Das Henry-Gesetz\n\nDie Löslichkeit von Gasen in Flüssigkeiten verhält sich anders als bei Feststoffen. Sie hängt stark vom **Druck** ab.\n\n## Das Gesetz\n\nDas **Henry-Gesetz** besagt: Die Löslichkeit eines Gases ist direkt proportional zum Partialdruck des Gases über der Flüssigkeit.\n\n$$C_{\\text{Gas}} = k_H \\cdot P_{\\text{Gas}}$$\n\n## Die Variablen\n\n| Variable         | Bedeutung                         | Einheit     |\n| ---------------- | --------------------------------- | ----------- |\n| $C_{\\text{Gas}}$ | Gaskonzentration in der Lösung    | mol/L       |\n| $k_H$            | Henry-Konstante (stoffspezifisch) | mol/(L·atm) |\n| $P_{\\text{Gas}}$ | Partialdruck des Gases            | atm         |\n\n## Henry-Konstanten (bei 25°C in Wasser)\n\n| Gas | $k_H$ in mol/(L·atm)   |\n| --- | ---------------------- |\n| O₂  | $1{,}3 \\times 10^{-3}$ |\n| N₂  | $6{,}8 \\times 10^{-4}$ |\n| CO₂ | $3{,}4 \\times 10^{-2}$ |\n\n> **Merke:** Je höher der Druck über der Flüssigkeit, desto mehr Gas löst sich. Bei Druckabfall entweicht das Gas wieder."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "16-17"
+        }
+      ],
+      "content": "# Anwendungen des Henry-Gesetzes\n\nDas Henry-Gesetz erklärt viele Alltagsphänomene und hat wichtige physiologische Bedeutung.\n\n## Sprudelnde Getränke\n\n**Warum perlt Sekt beim Öffnen?**\n\n1. In der geschlossenen Flasche: Hoher CO₂-Druck → viel Gas gelöst\n2. Beim Öffnen: Druck fällt auf Atmosphärendruck\n3. Neue Gleichgewichtskonzentration ist viel niedriger\n4. Überschüssiges CO₂ entweicht als Bläschen\n\n## Taucherkrankheit (Dekompressionskrankheit)\n\nBei Tauchern steigt der Druck mit der Tiefe. Nach dem Henry-Gesetz löst sich mehr Stickstoff im Blut.\n\n| Tiefe      | Druck | N₂ im Blut |\n| ---------- | ----- | ---------- |\n| Oberfläche | 1 atm | Normal     |\n| 10 m       | 2 atm | 2× so viel |\n| 30 m       | 4 atm | 4× so viel |\n\n**Das Problem:** Bei zu schnellem Auftauchen kann sich der gelöste Stickstoff nicht schnell genug über die Lunge entleeren. Er bildet **Gasblasen im Blut**, die Gefäße verstopfen können.\n\n> **Ernährungswissenschaftliche Relevanz:** Die Sauerstoffversorgung der Gewebe hängt direkt vom O₂-Partialdruck in der Lunge ab – auch hier gilt das Henry-Gesetz."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was passiert mit der Löslichkeit von CO₂ in Wasser, wenn man den **Druck erhöht**?",
+      "options": [
+        "Sie nimmt ab",
+        "Sie bleibt gleich",
+        "Sie nimmt zu",
+        "Das Gas wird flüssig"
+      ],
+      "correctAnswer": "Sie nimmt zu",
+      "explanation": "Nach dem Henry-Gesetz ist die Löslichkeit direkt proportional zum Druck: C = k_H × P. Mehr Druck bedeutet mehr gelöstes Gas – deshalb werden Getränke unter hohem Druck mit CO₂ versetzt.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum perlt Sekt, wenn man die Flasche öffnet?",
+      "options": [
+        "Die Temperatur steigt plötzlich an",
+        "Der Druck fällt ab und die Gaslöslichkeit sinkt drastisch",
+        "Sauerstoff reagiert chemisch mit dem Alkohol",
+        "Der Korken hat als Katalysator gewirkt"
+      ],
+      "correctAnswer": "Der Druck fällt ab und die Gaslöslichkeit sinkt drastisch",
+      "explanation": "In der geschlossenen Flasche herrscht hoher CO₂-Druck. Beim Öffnen sinkt der Druck auf Atmosphärendruck. Nach dem Henry-Gesetz kann die Flüssigkeit nun viel weniger CO₂ halten – das überschüssige Gas entweicht als Blasen.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Begriffe zum Henry-Gesetz:",
+      "text": "Das Henry-Gesetz lautet: C = k_H × {{P}}. Die Löslichkeit eines Gases steigt mit zunehmendem {{Druck}} über der Flüssigkeit.",
+      "blanks": [
+        {
+          "answer": "P",
+          "alternatives": [
+            "p",
+            "Druck",
+            "Partialdruck"
+          ]
+        },
+        {
+          "answer": "Druck",
+          "alternatives": [
+            "Partialdruck",
+            "Gasdruck"
+          ]
+        }
+      ],
+      "explanation": "Das Henry-Gesetz beschreibt die lineare Beziehung zwischen Gasdruck und Löslichkeit.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Die Henry-Konstante für O₂ in Wasser bei 37°C beträgt etwa 1,3 × 10⁻³ mol/(L·atm). Der Sauerstoff-Partialdruck in der Lunge beträgt etwa 0,13 atm. Berechne die Konzentration des gelösten Sauerstoffs in mol/L.",
+      "correctAnswer": 0.000169,
+      "unit": "mol/L",
+      "tolerance": 0.00002,
+      "hint": "Setze die Werte direkt in das Henry-Gesetz ein: C = k_H × P",
+      "solution": "C = k_H × P = 1,3 × 10⁻³ mol/(L·atm) × 0,13 atm = 1,69 × 10⁻⁴ mol/L",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "18-19"
+        }
+      ],
+      "content": "# Kolligative Eigenschaften\n\n**Kolligative Eigenschaften** sind physikalische Eigenschaften einer Lösung, die nur von der **Anzahl** der gelösten Teilchen abhängen – nicht von deren chemischer Art.\n\n## Die vier kolligativen Eigenschaften\n\n| Eigenschaft                   | Effekt              |\n| ----------------------------- | ------------------- |\n| **Dampfdruckerniedrigung**    | Dampfdruck sinkt    |\n| **Siedepunktserhöhung**       | Siedepunkt steigt   |\n| **Gefrierpunktserniedrigung** | Gefrierpunkt sinkt  |\n| **Osmotischer Druck**         | Druck durch Membran |\n\n## Das Prinzip\n\nDer Effekt ist proportional zur Teilchenzahl:\n- 1 mol Glucose → 1 mol Teilchen\n- 1 mol NaCl → 2 mol Teilchen (Na⁺ + Cl⁻)\n- 1 mol CaCl₂ → 3 mol Teilchen (Ca²⁺ + 2 Cl⁻)\n\n> **Wichtig:** Es ist egal, ob man Zucker oder Salz löst – nur die Anzahl der gelösten Teilchen zählt. Deshalb heißen diese Eigenschaften \"kolligativ\" (von lat. *colligere* = sammeln)."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "19-20"
+        }
+      ],
+      "content": "# Das Raoult'sche Gesetz\n\nWenn ein nicht-flüchtiger Stoff in einem Lösungsmittel gelöst wird, sinkt der Dampfdruck des Lösungsmittels.\n\n## Das Gesetz\n\n$$P_{\\text{Lösungsmittel}} = X_{\\text{Lösungsmittel}} \\cdot P^0_{\\text{Lösungsmittel}}$$\n\n| Variable          | Bedeutung                            |\n| ----------------- | ------------------------------------ |\n| $P_{\\text{Lm}}$   | Dampfdruck über der Lösung           |\n| $X_{\\text{Lm}}$   | Stoffmengenanteil des Lösungsmittels |\n| $P^0_{\\text{Lm}}$ | Dampfdruck des reinen Lösungsmittels |\n\n## Dampfdruckerniedrigung\n\nDie Erniedrigung des Dampfdrucks ist:\n\n$$\\Delta P = X_{\\text{gelöst}} \\cdot P^0_{\\text{Lm}}$$\n\n## Warum sinkt der Dampfdruck?\n\nDie gelösten Teilchen an der Oberfläche der Lösung:\n- Nehmen Platz ein\n- \"Blockieren\" Lösungsmittelmoleküle beim Verdampfen\n- Reduzieren die Zahl der Moleküle, die in die Gasphase übergehen können\n\n> **Folge:** Da $X_{\\text{Lm}} < 1$ ist, gilt immer $P < P^0$ – der Dampfdruck der Lösung ist niedriger als der des reinen Lösungsmittels."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "20-21"
+        }
+      ],
+      "content": "# Beispiel: Dampfdruck einer Glycol-Lösung\n\nWir berechnen den Dampfdruck über einer Ethylenglycol-Wasser-Mischung.\n\n## Gegeben\n\n- Lösung: 62,1 g Glycol in 250 g Wasser\n- Stoffmengenanteil Glycol: $X_{\\text{Glycol}} = 0{,}0672$ (aus vorheriger Berechnung)\n- Dampfdruck reines Wasser bei 30°C: $P^0 = 31{,}8$ mmHg\n\n## Berechnung\n\n### Schritt 1: Stoffmengenanteil Wasser\n\n$$X_{\\text{Wasser}} = 1 - X_{\\text{Glycol}} = 1{,}000 - 0{,}0672 = 0{,}9328$$\n\n### Schritt 2: Raoult-Gesetz anwenden\n\n$$P_{\\text{Wasser}} = X_{\\text{Wasser}} \\cdot P^0_{\\text{Wasser}}$$\n\n$$P_{\\text{Wasser}} = 0{,}9328 \\times 31{,}8 \\text{ mmHg} = 29{,}7 \\text{ mmHg}$$\n\n## Ergebnis\n\n| Dampfdruck       | Wert      |\n| ---------------- | --------- |\n| Reines Wasser    | 31,8 mmHg |\n| Glycol-Lösung    | 29,7 mmHg |\n| **Erniedrigung** | 2,1 mmHg  |\n\nDer Dampfdruck ist um etwa 6,6% niedriger als bei reinem Wasser."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wovon hängen **kolligative Eigenschaften** ab?",
+      "options": [
+        "Von der chemischen Natur der Teilchen (Größe, Ladung)",
+        "Nur von der Anzahl der gelösten Teilchen",
+        "Nur von der Temperatur",
+        "Von der Dichte des Lösungsmittels"
+      ],
+      "correctAnswer": "Nur von der Anzahl der gelösten Teilchen",
+      "explanation": "\"Kolligativ\" bedeutet, dass nur die Menge (Anzahl) der gelösten Teilchen zählt – nicht deren chemische Identität. Ob Zucker oder Harnstoff gelöst wird, ist für den Effekt irrelevant, solange die Teilchenzahl gleich ist.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was passiert mit dem **Dampfdruck von Wasser**, wenn man Zucker darin auflöst?",
+      "options": [
+        "Er steigt",
+        "Er sinkt",
+        "Er bleibt konstant",
+        "Er schwankt periodisch"
+      ],
+      "correctAnswer": "Er sinkt",
+      "explanation": "Nach dem Raoultschen Gesetz sinkt der Dampfdruck, wenn ein Stoff gelöst wird. Die Zuckermoleküle an der Oberfläche reduzieren die Anzahl der Wassermoleküle, die verdampfen können.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jede Eigenschaft richtig zu: Ist sie kolligativ oder nicht?",
+      "pairs": [
+        {
+          "left": "Gefrierpunktserniedrigung",
+          "right": "kolligativ"
+        },
+        {
+          "left": "Farbe der Lösung",
+          "right": "nicht kolligativ"
+        },
+        {
+          "left": "Osmotischer Druck",
+          "right": "kolligativ"
+        },
+        {
+          "left": "Elektrische Leitfähigkeit",
+          "right": "nicht kolligativ"
+        }
+      ],
+      "explanation": "Kolligative Eigenschaften hängen nur von der Teilchenzahl ab, nicht von der Art der Teilchen. Farbe und Leitfähigkeit sind stoffspezifisch.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Der Dampfdruck von reinem Wasser bei 25°C beträgt 23,8 mmHg. Du löst einen nicht-flüchtigen Stoff so, dass der Stoffmengenanteil des Wassers auf 0,95 sinkt. Berechne den Dampfdruck über der Lösung in mmHg.",
+      "correctAnswer": 22.61,
+      "unit": "mmHg",
+      "tolerance": 0.1,
+      "hint": "Wende das Raoult-Gesetz an: P = X × P⁰",
+      "solution": "P = X × P⁰ = 0,95 × 23,8 mmHg = 22,61 mmHg. Der Dampfdruck ist um 1,19 mmHg niedriger als bei reinem Wasser.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "22-23"
+        }
+      ],
+      "content": "# Siedepunktserhöhung\n\nDie Erniedrigung des Dampfdrucks hat eine direkte Konsequenz: Der **Siedepunkt** einer Lösung ist höher als der des reinen Lösungsmittels.\n\n## Warum steigt der Siedepunkt?\n\nEine Flüssigkeit siedet, wenn ihr Dampfdruck den Außendruck (meist 1 atm) erreicht. Da der Dampfdruck einer Lösung niedriger ist, muss man sie stärker erhitzen, um den Außendruck zu erreichen.\n\n## Die Formel\n\n$$\\Delta T_{\\text{SP}} = E_{\\text{SP}} \\cdot m \\cdot i$$\n\n| Variable               | Bedeutung                  | Einheit       |\n| ---------------------- | -------------------------- | ------------- |\n| $\\Delta T_{\\text{SP}}$ | Siedepunktserhöhung        | °C            |\n| $E_{\\text{SP}}$        | Ebullioskopische Konstante | °C·kg/mol     |\n| $m$                    | Molalität                  | mol/kg        |\n| $i$                    | Van't Hoff Faktor          | dimensionslos |\n\n## Konstanten\n\n| Lösungsmittel | $E_{\\text{SP}}$ (°C·kg/mol) | Normaler Siedepunkt |\n| ------------- | --------------------------- | ------------------- |\n| Wasser        | 0,512                       | 100°C               |\n| Benzol        | 2,53                        | 80,1°C              |\n| Ethanol       | 1,22                        | 78,4°C              |"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "23-24"
+        }
+      ],
+      "content": "# Gefrierpunktserniedrigung\n\nDie gelösten Teilchen stören auch die Bildung des Kristallgitters beim Gefrieren. Deshalb **sinkt der Gefrierpunkt** einer Lösung.\n\n## Warum sinkt der Gefrierpunkt?\n\nUm ein geordnetes Kristallgitter zu bilden, müssen sich die Lösungsmittelmoleküle regelmäßig anordnen. Gelöste Teilchen:\n- Stören diese Ordnung\n- Müssen erst \"aussortiert\" werden\n- Erfordern niedrigere Temperaturen für die Kristallisation\n\n## Die Formel\n\n$$\\Delta T_{\\text{GP}} = K_{\\text{GP}} \\cdot m \\cdot i$$\n\n| Variable               | Bedeutung                 | Einheit       |\n| ---------------------- | ------------------------- | ------------- |\n| $\\Delta T_{\\text{GP}}$ | Gefrierpunktserniedrigung | °C            |\n| $K_{\\text{GP}}$        | Kryoskopische Konstante   | °C·kg/mol     |\n| $m$                    | Molalität                 | mol/kg        |\n| $i$                    | Van't Hoff Faktor         | dimensionslos |\n\n## Konstanten\n\n| Lösungsmittel | $K_{\\text{GP}}$ (°C·kg/mol) | Normaler Gefrierpunkt |\n| ------------- | --------------------------- | --------------------- |\n| Wasser        | 1,86                        | 0°C                   |\n| Benzol        | 5,12                        | 5,5°C                 |\n| Campher       | 37,7                        | 179°C                 |\n\n> **Beachte:** $K_{\\text{GP}} > E_{\\text{SP}}$ für Wasser – die Gefrierpunktserniedrigung ist stärker messbar als die Siedepunktserhöhung."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "24-25"
+        }
+      ],
+      "content": "# Der Van't Hoff Faktor\n\nDer **Van't Hoff Faktor** $i$ gibt an, in wie viele Teilchen ein Stoff beim Lösen zerfällt.\n\n## Werte für verschiedene Stoffe\n\n| Stofftyp          | Beispiel           | Dissoziation | $i$ |\n| ----------------- | ------------------ | ------------ | --- |\n| Molekulare Stoffe | Glucose, Harnstoff | Keine        | 1   |\n| 1:1-Elektrolyte   | NaCl, KBr          | Na⁺ + Cl⁻    | 2   |\n| 1:2-Elektrolyte   | CaCl₂, MgCl₂       | Ca²⁺ + 2Cl⁻  | 3   |\n| 1:3-Elektrolyte   | AlCl₃              | Al³⁺ + 3Cl⁻  | 4   |\n| 2:1-Elektrolyte   | Na₂SO₄             | 2Na⁺ + SO₄²⁻ | 3   |\n\n## Beispiel: NaCl vs. Glucose\n\nBei gleicher Molalität (z.B. 1 mol/kg):\n\n| Stoff   | Molalität | $i$ | Effektive Teilchen | $\\Delta T_{\\text{GP}}$ |\n| ------- | --------- | --- | ------------------ | ---------------------- |\n| Glucose | 1 mol/kg  | 1   | 1 mol/kg           | 1,86°C                 |\n| NaCl    | 1 mol/kg  | 2   | 2 mol/kg           | 3,72°C                 |\n\n> **Fazit:** NaCl senkt den Gefrierpunkt doppelt so stark wie Glucose bei gleicher Stoffmenge – weil es doppelt so viele Teilchen liefert."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "25-26"
+        }
+      ],
+      "content": "# Beispiel: Gefrierschutz berechnen\n\nWie viel NaCl braucht man, um den Gefrierpunkt von 4 kg Wasser auf -10°C zu senken?\n\n## Gegeben\n\n- Gewünschte Erniedrigung: $\\Delta T = 10{,}00°C$\n- Kryoskopische Konstante Wasser: $K_{\\text{GP}} = 1{,}86$ °C·kg/mol\n- Van't Hoff Faktor NaCl: $i = 2$\n- Masse Wasser: 4,00 kg\n- Molare Masse NaCl: 58,44 g/mol\n\n## Berechnung\n\n### Schritt 1: Formel nach Molalität umstellen\n\n$$\\Delta T = K_{\\text{GP}} \\cdot m \\cdot i$$\n\n$$m = \\frac{\\Delta T}{K_{\\text{GP}} \\cdot i} = \\frac{10{,}00}{1{,}86 \\cdot 2} = \\frac{10{,}00}{3{,}72} = 2{,}69 \\text{ mol/kg}$$\n\n### Schritt 2: Stoffmenge berechnen\n\n$$n = m \\cdot \\text{Masse}_{\\text{Wasser}} = 2{,}69 \\text{ mol/kg} \\times 4{,}00 \\text{ kg} = 10{,}76 \\text{ mol}$$\n\n### Schritt 3: In Masse umrechnen\n\n$$\\text{Masse} = n \\times M = 10{,}76 \\text{ mol} \\times 58{,}44 \\text{ g/mol} = 629 \\text{ g}$$\n\n## Ergebnis\n\nMan benötigt **629 g NaCl** (ca. 630 g), um 4 Liter Wasser auf -10°C gefrierbeständig zu machen."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum streut man im Winter **Salz** auf die Straße?",
+      "options": [
+        "Salz reagiert exotherm mit Eis und schmilzt es durch Hitze",
+        "Salz senkt den Gefrierpunkt des Wassers, sodass Eis zu Salzwasser wird",
+        "Salz erhöht die Reibung für Autoreifen",
+        "Salz erhöht den Dampfdruck des Eises"
+      ],
+      "correctAnswer": "Salz senkt den Gefrierpunkt des Wassers, sodass Eis zu Salzwasser wird",
+      "explanation": "Durch die Gefrierpunktserniedrigung gefriert Salzwasser erst bei tieferen Temperaturen als reines Wasser. Bei -5°C ist reines Wasser bereits gefroren, aber Salzwasser bleibt flüssig.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Lösung hat den **niedrigsten Gefrierpunkt** (bei gleicher Molalität)?",
+      "options": [
+        "Glucose-Lösung (i = 1)",
+        "NaCl-Lösung (i = 2)",
+        "CaCl₂-Lösung (i = 3)",
+        "Alle haben den gleichen Gefrierpunkt"
+      ],
+      "correctAnswer": "CaCl₂-Lösung (i = 3)",
+      "explanation": "Die Gefrierpunktserniedrigung ist ΔT = K × m × i. Bei gleicher Molalität m entscheidet der Van t Hoff Faktor i. CaCl₂ liefert 3 Teilchen pro Formeleinheit und senkt den Gefrierpunkt am stärksten.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist der **Van t Hoff Faktor** für Magnesiumchlorid (MgCl₂)?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": "3",
+      "explanation": "MgCl₂ dissoziiert vollständig in Wasser: MgCl₂ → Mg²⁺ + 2 Cl⁻. Das ergibt insgesamt 3 Teilchen pro Formeleinheit, also i = 3.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jedes Salz dem korrekten Van t Hoff Faktor zu:",
+      "pairs": [
+        {
+          "left": "KCl (Kaliumchlorid)",
+          "right": "i = 2"
+        },
+        {
+          "left": "MgSO₄ (Magnesiumsulfat)",
+          "right": "i = 2"
+        },
+        {
+          "left": "Na₃PO₄ (Natriumphosphat)",
+          "right": "i = 4"
+        },
+        {
+          "left": "Saccharose (Zucker)",
+          "right": "i = 1"
+        }
+      ],
+      "explanation": "Der Van t Hoff Faktor entspricht der Anzahl der Teilchen, in die eine Formeleinheit beim Lösen zerfällt. Zucker dissoziiert nicht.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Sortiere die folgenden Lösungen (alle 0,1 mol/kg) nach ihrem Gefrierpunkt, beginnend mit dem **höchsten** (wärmsten):",
+      "items": [
+        "Glucose-Lösung (i = 1)",
+        "NaCl-Lösung (i = 2)",
+        "CaCl₂-Lösung (i = 3)",
+        "AlCl₃-Lösung (i = 4)"
+      ],
+      "explanation": "Je mehr Teilchen entstehen (höheres i), desto stärker sinkt der Gefrierpunkt. Glucose hat den höchsten, AlCl₃ den niedrigsten Gefrierpunkt.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Du löst 22,2 g Calciumchlorid (CaCl₂, M = 111 g/mol) in 500 g Wasser. Um wie viel Grad Celsius sinkt der Gefrierpunkt? (K_GP = 1,86 °C·kg/mol, i = 3)",
+      "correctAnswer": 2.232,
+      "unit": "°C",
+      "tolerance": 0.05,
+      "hint": "Berechne zuerst die Stoffmenge, dann die Molalität. Vergiss den Van t Hoff Faktor nicht!",
+      "solution": "n = 22,2 g / 111 g/mol = 0,2 mol. m = 0,2 mol / 0,5 kg = 0,4 mol/kg. ΔT = K × m × i = 1,86 × 0,4 × 3 = 2,232 °C.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Glycol vs. Glycerin",
+      "scenario": "Du arbeitest in einem Labor und sollst entscheiden, welches Frostschutzmittel effizienter ist: Ethylenglycol (M = 62 g/mol) oder Glycerin (M = 92 g/mol). Beide sind nicht-ionische Stoffe (i = 1).",
+      "tasks": [
+        {
+          "description": "Berechne, wie viele Mol Teilchen 1 kg Ethylenglycol liefert.",
+          "solution": "n = 1000 g / 62 g/mol = 16,1 mol. Also liefert 1 kg Glycol 16,1 mol Teilchen."
+        },
+        {
+          "description": "Berechne, wie viele Mol Teilchen 1 kg Glycerin liefert.",
+          "solution": "n = 1000 g / 92 g/mol = 10,9 mol. Also liefert 1 kg Glycerin 10,9 mol Teilchen."
+        },
+        {
+          "description": "Welches Frostschutzmittel ist pro Kilogramm effizienter und warum?",
+          "solution": "Ethylenglycol ist effizienter, da es bei gleicher Masse mehr Mol Teilchen liefert (16,1 vs. 10,9 mol). Da die Gefrierpunktserniedrigung von der Teilchenzahl abhängt, senkt Glycol den Gefrierpunkt stärker pro kg eingesetztem Material."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "27-28"
+        }
+      ],
+      "content": "# Osmose\n\n**Osmose** ist der Fluss von Lösungsmittelmolekülen durch eine **semipermeable Membran** – von der Seite mit niedrigerer Konzentration zur Seite mit höherer Konzentration.\n\n## Semipermeable Membran\n\nEine **semipermeable** (halbdurchlässige) Membran lässt nur bestimmte Moleküle passieren:\n- ✓ Kleine Lösungsmittelmoleküle (z.B. Wasser)\n- ✗ Große gelöste Moleküle oder Ionen\n\n## Die Triebkraft\n\nDie treibende Kraft der Osmose ist die **Zunahme der Entropie** (Unordnung):\n- Das System strebt einen Konzentrationsausgleich an\n- Lösungsmittel fließt, bis die Konzentrationen gleich sind\n- Oder bis ein Gegendruck den Fluss stoppt\n\n## Alltagsbeispiel\n\nWenn du ein geschältes Ei in konzentrierte Salzlösung legst:\n1. Außen: Hohe Salzkonzentration, wenig \"freies\" Wasser\n2. Innen: Niedrige Salzkonzentration, viel \"freies\" Wasser\n3. Wasser strömt vom Ei nach außen → Ei schrumpft"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "28-29"
+        }
+      ],
+      "content": "# Osmotischer Druck\n\nDer **osmotische Druck** ($\\Pi$) ist der Druck, der aufgewendet werden muss, um den Fluss des Lösungsmittels durch eine semipermeable Membran zu stoppen.\n\n## Die Formel\n\nDie Formel ähnelt dem idealen Gasgesetz:\n\n$$\\Pi = c \\cdot R \\cdot T$$\n\n| Variable | Bedeutung         | Einheit              |\n| -------- | ----------------- | -------------------- |\n| $\\Pi$    | Osmotischer Druck | atm (oder Pa)        |\n| $c$      | Molarität         | mol/L                |\n| $R$      | Gaskonstante      | 0,0821 L·atm/(K·mol) |\n| $T$      | Temperatur        | Kelvin               |\n\n## Für Elektrolyte\n\nBei Elektrolyten muss der Van't Hoff Faktor berücksichtigt werden:\n\n$$\\Pi = i \\cdot c \\cdot R \\cdot T$$\n\n## Beispielwerte\n\nBei 25°C (298 K) und 1 mol/L:\n\n$$\\Pi = 1 \\times 0{,}0821 \\times 298 = 24{,}5 \\text{ atm}$$\n\n> **Beachte:** Der osmotische Druck ist überraschend hoch – eine 1-molare Lösung erzeugt fast 25 atm Druck!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "29-30"
+        }
+      ],
+      "content": "# Biologische Bedeutung der Osmose\n\nZellen haben semipermeable Membranen. Das Verhalten der Zelle hängt von der Konzentration der umgebenden Lösung ab.\n\n## Die drei Zustände\n\n| Bezeichnung      | Umgebung vs. Zelle              | Wasserfluss      | Zellreaktion      |\n| ---------------- | ------------------------------- | ---------------- | ----------------- |\n| **Isotonisch**   | Gleiche Konzentration           | Kein Nettofluss  | Zelle normal      |\n| **Hypertonisch** | Umgebung höher konzentriert     | Wasser aus Zelle | Zelle schrumpft   |\n| **Hypotonisch**  | Umgebung niedriger konzentriert | Wasser in Zelle  | Zelle schwillt an |\n\n## Beispiele\n\n### Rote Blutkörperchen\n\n- In **isotoner** Salzlösung (0,9% NaCl): Normal\n- In **reinem Wasser** (hypotonisch): Platzen (Hämolyse)\n- In **konzentrierter** Salzlösung (hypertonisch): Schrumpfen (Krenation)\n\n### Pflanzen\n\n- Osmotischer Druck hält Pflanzen straff (Turgor)\n- Zu wenig Wasser: Welken durch Wasserverlust der Zellen\n\n> **Ernährungswissenschaftliche Relevanz:** Infusionslösungen müssen isotonisch sein (0,9% NaCl oder 5% Glucose), um die Blutzellen nicht zu schädigen."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "30-31"
+        }
+      ],
+      "content": "# Molmassenbestimmung durch Osmometrie\n\nDer osmotische Druck ist sehr empfindlich und eignet sich daher zur Bestimmung der Molmasse großer Moleküle wie Proteine.\n\n## Warum Osmometrie?\n\nBei Makromolekülen (M > 10.000 g/mol) sind andere Methoden zu ungenau:\n\n| Methode                   | Problem bei Makromolekülen                            |\n| ------------------------- | ----------------------------------------------------- |\n| Gefrierpunktserniedrigung | $\\Delta T$ zu klein zum Messen                        |\n| Siedepunktserhöhung       | $\\Delta T$ noch kleiner                               |\n| **Osmometrie**            | $\\Pi$ gut messbar, auch bei niedrigen Konzentrationen |\n\n## Beispiel: Hämoglobin\n\n**Gegeben:**\n- 35,0 g Hämoglobin in 1,00 L Wasser\n- Osmotischer Druck bei 25°C: 10,0 mmHg\n\n**Berechnung:**\n\n1. Druck umrechnen: $10{,}0 \\text{ mmHg} / 760 = 0{,}0132 \\text{ atm}$\n\n2. Konzentration berechnen:\n$$c = \\frac{\\Pi}{R \\cdot T} = \\frac{0{,}0132}{0{,}0821 \\times 298} = 5{,}39 \\times 10^{-4} \\text{ mol/L}$$\n\n3. Molmasse berechnen:\n$$M = \\frac{\\text{Masse}}{n} = \\frac{35{,}0 \\text{ g}}{5{,}39 \\times 10^{-4} \\text{ mol}} = 65.000 \\text{ g/mol}$$\n\n> **Ergebnis:** Hämoglobin hat eine Molmasse von etwa 65.000 g/mol."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist eine **semipermeable Membran**?",
+      "options": [
+        "Eine Membran, die alles durchlässt",
+        "Eine Membran, die nur Lösungsmittelmoleküle durchlässt, aber keine gelösten Teilchen",
+        "Eine Membran, die nur Ionen durchlässt",
+        "Eine wasserdichte Wand"
+      ],
+      "correctAnswer": "Eine Membran, die nur Lösungsmittelmoleküle durchlässt, aber keine gelösten Teilchen",
+      "explanation": "\"Semipermeabel\" bedeutet halbdurchlässig. Für die Osmose ist entscheidend, dass das Lösungsmittel (meist Wasser) passieren kann, während gelöste Stoffe (Salze, Zucker, Proteine) zurückgehalten werden.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Rote Blutkörperchen werden in **reines destilliertes Wasser** gelegt. Was passiert?",
+      "options": [
+        "Nichts, die Zellen bleiben unverändert",
+        "Sie schrumpfen",
+        "Sie schwellen an und platzen",
+        "Sie werden blau"
+      ],
+      "correctAnswer": "Sie schwellen an und platzen",
+      "explanation": "Destilliertes Wasser ist hypotonisch gegenüber dem Zellinneren. Nach dem Prinzip der Osmose strömt Wasser in die Zelle, um die Konzentration auszugleichen. Die Zelle schwillt an, bis die Membran reißt – dieser Vorgang heißt Hämolyse.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist **Umkehrosmose** (Reverse Osmosis)?",
+      "options": [
+        "Ein Prozess zur Energiegewinnung aus Salzwasser",
+        "Ein Verfahren zur Wasserentsalzung, bei dem Druck gegen den osmotischen Druck ausgeübt wird",
+        "Wenn Wasser bergauf fließt",
+        "Die Diffusion von Salz in Wasser"
+      ],
+      "correctAnswer": "Ein Verfahren zur Wasserentsalzung, bei dem Druck gegen den osmotischen Druck ausgeübt wird",
+      "explanation": "Bei der Umkehrosmose wird ein Druck angewandt, der größer ist als der osmotische Druck. Dadurch wird Wasser entgegen dem natürlichen osmotischen Gefälle durch die Membran gepresst – das Ergebnis ist reines Wasser.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jede Situation dem korrekten Zustand zu:",
+      "pairs": [
+        {
+          "left": "Zelle schrumpft",
+          "right": "hypertonische Umgebung"
+        },
+        {
+          "left": "Zelle platzt",
+          "right": "hypotonische Umgebung"
+        },
+        {
+          "left": "Zelle bleibt unverändert",
+          "right": "isotonische Umgebung"
+        },
+        {
+          "left": "0,9% NaCl-Infusion",
+          "right": "isotonische Umgebung"
+        }
+      ],
+      "explanation": "In hypertonischer Umgebung verliert die Zelle Wasser, in hypotonischer nimmt sie Wasser auf. Isotonisch bedeutet Gleichgewicht.",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die fehlenden Begriffe zur Osmose:",
+      "text": "Bei der Osmose fließt Wasser von der Seite mit {{niedriger}} Konzentration zur Seite mit {{höherer}} Konzentration durch eine semipermeable Membran.",
+      "blanks": [
+        {
+          "answer": "niedriger",
+          "alternatives": [
+            "niedrigerer",
+            "geringerer",
+            "niedrigen"
+          ]
+        },
+        {
+          "answer": "höherer",
+          "alternatives": [
+            "hoher",
+            "höher",
+            "höheren"
+          ]
+        }
+      ],
+      "explanation": "Wasser fließt immer vom Ort niedriger Teilchenkonzentration (= hoher Wasserkonzentration) zum Ort hoher Teilchenkonzentration (= niedriger Wasserkonzentration).",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Physiologische Kochsalzlösung enthält 0,9% NaCl (9 g/L). Berechne den osmotischen Druck bei 37°C (310 K). M(NaCl) = 58,5 g/mol, i = 2, R = 0,0821 L·atm/(K·mol)",
+      "correctAnswer": 7.84,
+      "unit": "atm",
+      "tolerance": 0.2,
+      "hint": "Berechne zuerst die Molarität, dann wende Π = i × c × R × T an.",
+      "solution": "c = 9 g/L / 58,5 g/mol = 0,154 mol/L. Π = i × c × R × T = 2 × 0,154 × 0,0821 × 310 = 7,84 atm.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Warum keine reine Wasser-Infusion?",
+      "scenario": "Ein Patient kommt dehydriert in die Notaufnahme. Eine Pflegekraft fragt, warum man nicht einfach reines Wasser infundieren kann, anstatt teure Infusionslösungen zu verwenden.",
+      "tasks": [
+        {
+          "description": "Erkläre, was mit roten Blutkörperchen passiert, wenn reines Wasser infundiert wird.",
+          "solution": "Reines Wasser ist hypotonisch gegenüber dem Blutplasma. Durch Osmose würde Wasser in die roten Blutkörperchen strömen. Die Zellen würden anschwellen und schließlich platzen (Hämolyse). Dies kann lebensbedrohlich sein."
+        },
+        {
+          "description": "Welche Konzentration muss eine NaCl-Infusionslösung haben, um isotonisch zu sein?",
+          "solution": "Physiologische Kochsalzlösung enthält 0,9% NaCl (9 g/L). Diese Konzentration erzeugt denselben osmotischen Druck wie das Blutplasma und ist daher isotonisch."
+        },
+        {
+          "description": "Welche Alternative zu NaCl kann für isotonische Infusionen verwendet werden?",
+          "solution": "5% Glucose-Lösung (50 g/L) ist ebenfalls annähernd isotonisch. Der Vorteil: Die Glucose wird verstoffwechselt, sodass dem Körper reines Wasser zur Verfügung steht, ohne die Zellen zu schädigen."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=L-osEc07vMs",
+      "content": "# Osmose einfach erklärt\n\nIn diesem Video von **TheSimpleBiology** wird das Prinzip der Osmose anschaulich erklärt.\n\n**Themen im Video:**\n- Was ist Osmose?\n- Semipermeable Membranen\n- Isotonisch, hypertonisch, hypotonisch\n- Biologische Beispiele (Zellen, Pflanzen)\n- Osmotischer Druck"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "32-33"
+        }
+      ],
+      "content": "# Realer Van't Hoff Faktor\n\nIn der Praxis ist der gemessene Van't Hoff Faktor oft **kleiner** als der theoretische Wert. Dies liegt an der **Ionenpaarbildung**.\n\n## Das Problem\n\n| Salz  | Theoretischer $i$ | Gemessener $i$ (0,1 m) |\n| ----- | ----------------- | ---------------------- |\n| NaCl  | 2                 | 1,87                   |\n| MgCl₂ | 3                 | 2,7                    |\n| MgSO₄ | 2                 | 1,21                   |\n\n## Die Erklärung: Ionenpaarbildung\n\nIn realen Lösungen ziehen sich Kationen und Anionen gegenseitig an. Sie bilden kurzzeitig **Ionenpaare**, die sich wie ein einzelnes Teilchen verhalten:\n\n$$\\text{Na}^+ + \\text{Cl}^- \\rightleftharpoons [\\text{Na}^+ \\cdots \\text{Cl}^-]$$\n\nDas reduziert die effektive Teilchenzahl.\n\n## Einfluss der Ladung\n\nDie Coulomb-Anziehung zwischen Ionen ist:\n\n$$F \\propto \\frac{q_1 \\cdot q_2}{r^2}$$\n\nBei MgSO₄ (Mg²⁺ und SO₄²⁻) ist die Anziehung **viermal stärker** als bei NaCl (Na⁺ und Cl⁻), daher ist die Ionenpaarbildung viel ausgeprägter.\n\n> **Fazit:** Je höher die Ionenladungen, desto stärker weicht der reale $i$-Wert vom theoretischen ab."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "33-34"
+        }
+      ],
+      "content": "# Ideale Lösungen\n\nEine **ideale Lösung** zeigt keine Abweichungen vom Raoult'schen Gesetz. Ihre physikalischen Eigenschaften hängen nur von der Konzentration ab.\n\n## Voraussetzungen für Idealität\n\nDie intermolekularen Kräfte zwischen den Komponenten müssen gleich stark sein:\n\n$$\\text{Kraft}_{A-B} = \\text{Kraft}_{A-A} = \\text{Kraft}_{B-B}$$\n\n### Konsequenzen\n\n- Keine Wärmeentwicklung beim Mischen ($\\Delta H_{\\text{Mischung}} \\approx 0$)\n- Keine Volumenänderung ($\\Delta V_{\\text{Mischung}} \\approx 0$)\n- Das Raoult-Gesetz gilt exakt\n\n## Beispiele\n\n| Mischung            | Idealität   | Begründung                            |\n| ------------------- | ----------- | ------------------------------------- |\n| Benzol + Toluol     | ≈ ideal     | Sehr ähnliche Struktur, beide unpolar |\n| Hexan + Heptan      | ≈ ideal     | Beide unpolare Alkane                 |\n| Ethanol + Wasser    | nicht ideal | H-Brücken werden gestört              |\n| Aceton + Chloroform | nicht ideal | Zusätzliche H-Brücken bilden sich     |\n\n> **Praxis:** Perfekt ideale Lösungen existieren nicht, aber strukturell ähnliche Substanzen kommen dem nahe."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k13",
+          "pages": "34-35"
+        }
+      ],
+      "content": "# Phasendiagramm einer Lösung\n\nIm Phasendiagramm zeigt sich, wie gelöste Stoffe die Phasengrenzen verschieben.\n\n## Die Veränderungen\n\nVerglichen mit reinem Wasser zeigt eine wässrige Lösung:\n\n| Eigenschaft         | Änderung               | Ursache                         |\n| ------------------- | ---------------------- | ------------------------------- |\n| **Dampfdruckkurve** | nach unten verschoben  | Dampfdruckerniedrigung          |\n| **Siedepunkt**      | nach rechts (höher)    | Mehr Temperatur nötig für 1 atm |\n| **Gefrierpunkt**    | nach links (niedriger) | Kristallbildung gestört         |\n\n## Die Größenverhältnisse\n\nFür Wasser gilt:\n- $K_{\\text{GP}} = 1{,}86$ °C·kg/mol (Gefrierpunkt)\n- $E_{\\text{SP}} = 0{,}512$ °C·kg/mol (Siedepunkt)\n\nDer Gefrierpunkt sinkt also etwa **3,6-mal stärker** als der Siedepunkt steigt!\n\n## Praktische Bedeutung\n\nBei einer 1 molalen Lösung (z.B. Zucker in Wasser):\n- Gefrierpunkt: 0°C − 1,86°C = **−1,86°C**\n- Siedepunkt: 100°C + 0,51°C = **100,51°C**\n\nDie Gefrierpunktserniedrigung ist leichter zu messen und wird daher häufiger für analytische Zwecke genutzt."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum ist der experimentell gemessene Van t Hoff Faktor für MgSO₄ **deutlich kleiner** als der theoretische Wert von 2?",
+      "options": [
+        "MgSO₄ dissoziiert nicht vollständig in Wasser",
+        "Die mehrfach geladenen Ionen bilden verstärkt Ionenpaare",
+        "Das Sulfat-Ion reagiert chemisch mit Wasser",
+        "Magnesium ist zu schwer für die Dissoziation"
+      ],
+      "correctAnswer": "Die mehrfach geladenen Ionen bilden verstärkt Ionenpaare",
+      "explanation": "Mg²⁺ und SO₄²⁻ sind beide doppelt geladen. Die elektrostatische Anziehung zwischen ihnen ist viermal stärker als bei einfach geladenen Ionen. Dadurch bilden sich verstärkt Ionenpaare, die wie ein einzelnes Teilchen wirken.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Du hast zwei Lösungen mit jeweils 0,1 mol/L: eine mit NaCl und eine mit MgSO₄. Welche hat den **höheren osmotischen Druck**?",
+      "options": [
+        "MgSO₄, weil es schwerere Ionen hat",
+        "NaCl, weil es weniger Ionenpaare bildet",
+        "Beide haben den gleichen osmotischen Druck",
+        "MgSO₄, weil Magnesium essentiell ist"
+      ],
+      "correctAnswer": "NaCl, weil es weniger Ionenpaare bildet",
+      "explanation": "Theoretisch hätten beide i = 2. Aber die doppelt geladenen Ionen von MgSO₄ bilden viel mehr Ionenpaare (experimentell i ≈ 1,2 statt 2). NaCl hat einen realen i ≈ 1,9. Mehr freie Teilchen bedeuten höheren osmotischen Druck.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne jedes Salz der erwarteten Abweichung vom theoretischen i-Wert zu:",
+      "pairs": [
+        {
+          "left": "NaCl (1+ und 1- Ionen)",
+          "right": "geringe Abweichung"
+        },
+        {
+          "left": "MgSO₄ (2+ und 2- Ionen)",
+          "right": "starke Abweichung"
+        },
+        {
+          "left": "Glucose (kein Elektrolyt)",
+          "right": "keine Abweichung"
+        },
+        {
+          "left": "CaCl₂ (2+ und 1- Ionen)",
+          "right": "mittlere Abweichung"
+        }
+      ],
+      "explanation": "Je höher die Ionenladungen, desto stärker die Ionenpaarbildung und damit die Abweichung vom theoretischen Wert.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Drei Bechergläser unter einer Glocke",
+      "scenario": "Du stellst drei offene Bechergläser unter eine luftdichte Glasglocke bei Raumtemperatur. Glas 1 enthält reines Wasser, Glas 2 eine 1 M Glucoselösung, Glas 3 eine 1 M NaCl-Lösung. Nach einigen Tagen beobachtest du den Füllstand.",
+      "tasks": [
+        {
+          "description": "Was passiert mit dem Füllstand in Glas 1 (reines Wasser)?",
+          "solution": "Der Füllstand sinkt. Reines Wasser hat den höchsten Dampfdruck und verdunstet am stärksten. Das verdunstete Wasser kondensiert teilweise in den anderen Gläsern."
+        },
+        {
+          "description": "Was passiert mit den Füllständen in Glas 2 und 3?",
+          "solution": "Die Füllstände steigen. Der Dampfdruck über den Lösungen ist niedriger als über reinem Wasser. Daher kondensiert Wasserdampf aus der Atmosphäre in die Lösungen hinein. Glas 3 (NaCl, i=2) steigt stärker als Glas 2 (Glucose, i=1)."
+        },
+        {
+          "description": "Erkläre das Phänomen mit dem Raoult-Gesetz.",
+          "solution": "Nach Raoult ist der Dampfdruck P = X × P⁰. Reines Wasser hat X = 1 und damit den höchsten Dampfdruck. Die Lösungen haben X < 1 und damit niedrigere Dampfdrücke. Der Wasserdampf stellt sich auf ein Gleichgewicht ein, das zwischen den Dampfdrücken liegt."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Osmometrie statt Kryoskopie?",
+      "scenario": "Ein Biochemiker möchte die Molmasse eines Proteins (geschätzt ca. 50.000 g/mol) bestimmen. Er überlegt, ob er die Gefrierpunktserniedrigung oder den osmotischen Druck messen soll.",
+      "tasks": [
+        {
+          "description": "Berechne die erwartete Gefrierpunktserniedrigung für 10 g Protein in 1 kg Wasser (K_GP = 1,86 °C·kg/mol).",
+          "solution": "n = 10 g / 50.000 g/mol = 0,0002 mol. m = 0,0002 mol/kg. ΔT = 1,86 × 0,0002 = 0,000372 °C ≈ 0,0004 °C. Diese winzige Temperaturdifferenz ist praktisch nicht messbar!"
+        },
+        {
+          "description": "Berechne den erwarteten osmotischen Druck bei 25°C (c ≈ 0,0002 mol/L, R = 0,0821 L·atm/K·mol).",
+          "solution": "Π = c × R × T = 0,0002 × 0,0821 × 298 = 0,0049 atm ≈ 50 mm Wassersäule. Diese Steighöhe ist mit einem einfachen Osmometer gut messbar!"
+        },
+        {
+          "description": "Warum ist Osmometrie die bessere Methode für Makromoleküle?",
+          "solution": "Der osmotische Druck ist bei niedrigen Konzentrationen viel empfindlicher messbar als die Gefrierpunkts- oder Siedepunktsänderung. Selbst bei sehr geringen Stoffmengen liefert die Osmometrie verwertbare Ergebnisse."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "question": "Bin ich bereit für den Vorlesungs-Test?",
+      "checkpoints": [
+        "Ich kann erklären, was eine Lösung ist und die Begriffe Solvens und Solute unterscheiden.",
+        "Ich verstehe den Unterschied zwischen gesättigten, ungesättigten und übersättigten Lösungen.",
+        "Ich kann das Prinzip \"Like dissolves like\" auf Alltagsbeispiele anwenden.",
+        "Ich kann die Lösungsenthalpie aus Gitter- und Hydratationsenthalpie herleiten.",
+        "Ich kann die Konzentrationsmaße Molalität, Stoffmengenanteil und Massenanteil berechnen.",
+        "Ich kann das Henry-Gesetz anwenden und die Taucherkrankheit erklären.",
+        "Ich kenne die vier kolligativen Eigenschaften und verstehe, warum sie von der Teilchenzahl abhängen.",
+        "Ich kann den Van t Hoff Faktor für verschiedene Elektrolyte bestimmen.",
+        "Ich kann Gefrierpunktserniedrigung und Siedepunktserhöhung berechnen.",
+        "Ich verstehe Osmose und kann isotonische, hypertonische und hypotonische Lösungen unterscheiden.",
+        "Ich kann den osmotischen Druck berechnen und seine biologische Bedeutung erklären.",
+        "Ich verstehe, warum reale Van t Hoff Faktoren vom theoretischen Wert abweichen können."
+      ],
+      "successMessage": "Du bist gut vorbereitet für den Test!",
+      "reviewHint": "Falls du bei einzelnen Punkten unsicher bist, lies die entsprechenden Abschnitte noch einmal durch.",
+      "content": ""
+    }
+  ],
+  "quiz": [],
+  "generatedAt": "2026-01-15T08:37:58.631Z"
+}

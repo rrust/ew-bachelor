@@ -16,6 +16,7 @@
 - ⚠️ **NEVER use `---` in Markdown content** - parser sees it as YAML separator
 - Use `***` for horizontal lines or just `##` headings for visual separation
 - `correctAnswer` must exactly match an option
+- ⚠️ **Interaktive Typen: ALLE Felder im YAML-Frontmatter!** Bei `self-assessment-mc`, `matching`, `fill-in-the-blank`, `ordering`, `calculation`, `practice-exercise`, `self-assessment` stehen **alle Felder im Frontmatter** – es gibt keinen Markdown-Body! Nur `learning-content` und `youtube-video` haben einen Markdown-Body.
 - ⚠️ **NIEMALS ASCII-Art oder Box-Zeichnungen verwenden!** Dies ist VERBOTEN:
   ```
   ┌────────┐      +--------+      |  Box  |
