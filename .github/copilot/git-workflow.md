@@ -60,18 +60,20 @@ Conventional Commit Format:
 brew install gh
 gh auth login
 
-# PR erstellen
-gh pr create --title "feat: description" --body "Details"
+# PR erstellen (IMMER mit --assignee @me!)
+gh pr create --title "feat: description" --body "Details" --assignee @me
 
 # Interaktiv
-gh pr create
+gh pr create --assignee @me
 
 # Status prüfen
 gh pr status
 
 # Mergen
-gh pr merge --squash
+gh pr merge --squash --delete-branch
 ```
+
+⚠️ **PRs immer mit `--assignee @me` erstellen!**
 
 ## Destructive Commands ⚠️
 
