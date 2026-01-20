@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-20T16:29:47.101Z",
+  "generatedAt": "2026-01-20T16:45:15.422Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -123,7 +123,7 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/13-loesungen": {
-      "checksum": "a76487ea",
+      "checksum": "ef718d71",
       "sizeKB": 70.7,
       "itemCount": 76,
       "quizCount": 0,
