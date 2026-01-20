@@ -1,0 +1,25 @@
+Signifikante Stellen. Oder wie Chemiker sie nennen: Sig Figs. Ein Thema, das Studierende verrückt macht, aber extrem wichtig ist!
+
+...
+
+Die Idee: Jeder Messwert hat eine begrenzte Genauigkeit. Dein Ergebnis kann nicht genauer sein als deine schlechteste Eingabe.
+
+Wenn du sagst, ein Zimmer ist 5 Meter lang und 3,47 Meter breit ... die Fläche ist nicht 17,35 Quadratmeter. Sie ist 17 Quadratmeter. Weil die 5 nur eine signifikante Stelle hat.
+
+...
+
+Wie zählst du signifikante Stellen?
+
+Regel eins: Alle Ziffern außer Null zählen. 543 hat drei signifikante Stellen.
+
+Regel zwei: Nullen am Anfang zählen nie! Sie sind nur Platzhalter. 0,00357 hat nur drei signifikante Stellen. Die 3, die 5 und die 7.
+
+Regel drei: Nullen in der Mitte zählen immer. 303 hat drei signifikante Stellen.
+
+Regel vier: Nullen am Ende ... da wird es kompliziert. Bei 2,40 zeigt die Null an, dass du bis zur zweiten Nachkommastelle gemessen hast. Sie zählt! Aber bei 2400? Unklar. Hat das zwei, drei oder vier signifikante Stellen?
+
+...
+
+Die Lösung: Wissenschaftliche Schreibweise! 2,4 mal zehn hoch drei hat zwei signifikante Stellen. 2,400 mal zehn hoch drei hat vier.
+
+Ein letzter Tipp: Exakte Zahlen haben unendlich viele signifikante Stellen. Ein Dutzend ist exakt 12. Ein Meter hat exakt 100 Zentimeter. Das sind Definitionen, keine Messungen.
