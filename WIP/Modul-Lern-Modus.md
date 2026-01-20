@@ -90,7 +90,7 @@ Aktuell zwei Buttons im Footer:
 
 ### Struktur
 
-```
+```text
 CODING_PLAN/fragen/
 ├── 01_Aufbau_Atome_Periodensystem/
 │   ├── chemie-level-1.md  (10 Fragen)
@@ -209,7 +209,7 @@ Wenn man bei einem Thema nicht weiterkommt, muss man die entsprechenden Vorlesun
 
 In der Modul-Karte werden **zwei Fortschrittsbalken** angezeigt:
 
-```
+```text
 ┌─────────────────────────────────────┐
 │ Modul 2: Grundlagen der Chemie      │
 │                                     │
@@ -238,7 +238,7 @@ Neu: `[Training] [Vorlesung] [Test]`
 
 Markdown-Dateien **direkt übertragen** (nicht als JSON). Build-Script generiert JSON.
 
-```
+```text
 content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/
 └── module-training/
     ├── training.md                           # Metadaten (analog zu lecture.md)
@@ -259,6 +259,7 @@ content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/
 Das blabla-Format in ew-bachelor-Format konvertieren:
 
 **Vorher (blabla):**
+
 ```markdown
 ## Frage 1
 **Aus welchen Teilchen besteht ein Atom?**
@@ -270,6 +271,7 @@ Das blabla-Format in ew-bachelor-Format konvertieren:
 ```
 
 **Nachher (ew-bachelor):**
+
 ```yaml
 ---
 type: 'module-training-question'
@@ -352,7 +354,7 @@ localStorage-Struktur erweitern:
 
 3. **Neuer View in index.html**:
    - `<div id="module-training-view">`
-   
+
 4. **Router erweitern**:
    - `/module/{moduleId}/training` Route
 
