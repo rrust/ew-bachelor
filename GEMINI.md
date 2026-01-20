@@ -219,6 +219,34 @@ $$\text{Na}_{\text{(s)}} + \text{Cl}_{2\text{(g)}} \rightarrow \text{NaCl}_{\tex
 
 Die Aggregatzustand-Klammern müssen in `\text{}` stehen!
 
+#### KaTeX: Doppelte Sub-/Superscripts ⚠️
+
+**NIEMALS** Superscript direkt gefolgt von Subscript ohne Trennung:
+```latex
+# FALSCH - KaTeX rendert nicht:
+\text{Na}^+_{\text{(aq)}}
+
+# RICHTIG - leere Klammern als Trennung:
+\text{Na}^+{}_{(\text{aq})}
+```
+
+Bei Ionen mit Ladung UND Aggregatzustand immer `^{...}{}_{...}` verwenden!
+
+#### Fill-in-the-blank: blanks Format
+
+```yaml
+blanks:
+  - answer: 'Gitter'           # ← MUSS vorhanden sein, wird als Platzhalter verwendet
+    alternatives:              # Optional: alternative Schreibweisen
+      - 'Gitterenergie'
+      - 'Kristallgitter'
+```
+
+Der Platzhalter im `text`-Feld muss `{{answer}}` entsprechen:
+```yaml
+text: 'ΔH_Lösung = ΔH_{{Gitter}} + ΔH_{{Hydratation}}'
+```
+
 ### Valid Icon Names (for achievements)
 
 Only use these icons: `search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `chart`, `cog`, `map`, `trophy`, `achievement`, `phone`, `phoneDownload`, `checkCircle`, `book`, `zoomIn`, `zoomOut`, `reset`, `externalLink`, `lock`, `unlock`, `clock`, `hourglass`, `document`, `clipboard`, `apple`, `beaker`, `graduationCap`, `download`, `upload`, `hourglassEmpty`, `check`, `rocket`, `fire`, `muscle`, `star`, `wave`
