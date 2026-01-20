@@ -222,6 +222,7 @@ Die Aggregatzustand-Klammern müssen in `\text{}` stehen!
 #### KaTeX: Doppelte Sub-/Superscripts ⚠️
 
 **NIEMALS** Superscript direkt gefolgt von Subscript ohne Trennung:
+
 ```latex
 # FALSCH - KaTeX rendert nicht:
 \text{Na}^+_{\text{(aq)}}
@@ -243,6 +244,7 @@ blanks:
 ```
 
 Der Platzhalter im `text`-Feld muss `{{answer}}` entsprechen:
+
 ```yaml
 text: 'ΔH_Lösung = ΔH_{{Gitter}} + ΔH_{{Hydratation}}'
 ```
