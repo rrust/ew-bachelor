@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-15T08:37:58.778Z",
+  "generatedAt": "2026-01-20T18:10:31.614Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -7677,7 +7677,7 @@
         "beispiel"
       ],
       "snippet": "Lösungen Eigenschaften von Lösungen, Konzentrationsmaße, Thermodynamik des Lösungsprozesses, kolligative Eigenschaften und Osmose Lösungen In diesem Kapitel lernst du, wie Stoffe in Lösung gehen, welc...",
-      "itemCount": 79,
+      "itemCount": 76,
       "quizCount": 0,
       "items": [
         {
@@ -7782,13 +7782,12 @@
         },
         {
           "index": 10,
-          "type": "youtube-video",
+          "type": "learning-content",
           "title": "Item 11",
           "typeKeywords": [
-            "video",
-            "youtube",
-            "film",
-            "clip"
+            "lerninhalt",
+            "inhalt",
+            "text"
           ]
         },
         {
@@ -7823,16 +7822,6 @@
         },
         {
           "index": 14,
-          "type": "learning-content",
-          "title": "Item 15",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 15,
           "type": "self-assessment-mc",
           "title": "Wenn beim Lösen eines Salzes in Wasser das Becherglas **kalt** wird, ist der Prozess...",
           "typeKeywords": [
@@ -7842,7 +7831,7 @@
           ]
         },
         {
-          "index": 16,
+          "index": 15,
           "type": "self-assessment-mc",
           "title": "Welcher Schritt beim Lösen von Salzen in Wasser **benötigt Energie** (ist endotherm)?",
           "typeKeywords": [
@@ -7852,7 +7841,7 @@
           ]
         },
         {
-          "index": 17,
+          "index": 16,
           "type": "self-assessment-mc",
           "title": "Warum ist **übersättigtes Natriumacetat** besonders gut für Taschenwärmer geeignet?",
           "typeKeywords": [
@@ -7862,7 +7851,7 @@
           ]
         },
         {
-          "index": 18,
+          "index": 17,
           "type": "matching",
           "title": "Ordne jeden Prozess der richtigen Energiebilanz zu:",
           "typeKeywords": [
@@ -7872,7 +7861,7 @@
           ]
         },
         {
-          "index": 19,
+          "index": 18,
           "type": "fill-in-the-blank",
           "title": "Ergänze die Begriffe zur Lösungsenthalpie:",
           "typeKeywords": [
@@ -7882,7 +7871,7 @@
           ]
         },
         {
-          "index": 20,
+          "index": 19,
           "type": "practice-exercise",
           "title": "CaCl₂ in Wasser",
           "typeKeywords": [
@@ -7892,14 +7881,23 @@
           ]
         },
         {
+          "index": 20,
+          "type": "learning-content",
+          "title": "Item 21",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
           "index": 21,
-          "type": "youtube-video",
+          "type": "learning-content",
           "title": "Item 22",
           "typeKeywords": [
-            "video",
-            "youtube",
-            "film",
-            "clip"
+            "lerninhalt",
+            "inhalt",
+            "text"
           ]
         },
         {
@@ -7924,26 +7922,6 @@
         },
         {
           "index": 24,
-          "type": "learning-content",
-          "title": "Item 25",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 25,
-          "type": "learning-content",
-          "title": "Item 26",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 26,
           "type": "self-assessment-mc",
           "title": "Warum wird in der Thermodynamik oft die **Molalität** (m) statt der Molarität (M) verwendet?",
           "typeKeywords": [
@@ -7953,7 +7931,7 @@
           ]
         },
         {
-          "index": 27,
+          "index": 25,
           "type": "self-assessment-mc",
           "title": "Eine Lösung enthält **0,5 mol Zucker** in **500 g Wasser**. Wie hoch ist die Molalität?",
           "typeKeywords": [
@@ -7963,7 +7941,7 @@
           ]
         },
         {
-          "index": 28,
+          "index": 26,
           "type": "self-assessment-mc",
           "title": "Was ist die Einheit des Stoffmengenanteils X?",
           "typeKeywords": [
@@ -7973,7 +7951,7 @@
           ]
         },
         {
-          "index": 29,
+          "index": 27,
           "type": "matching",
           "title": "Ordne jede Formel dem richtigen Konzentrationsmaß zu:",
           "typeKeywords": [
@@ -7983,7 +7961,7 @@
           ]
         },
         {
-          "index": 30,
+          "index": 28,
           "type": "ordering",
           "title": "Bringe die Schritte zur Umrechnung von Massenanteil in Molalität in die richtige Reihenfolge:",
           "typeKeywords": [
@@ -7993,7 +7971,7 @@
           ]
         },
         {
-          "index": 31,
+          "index": 29,
           "type": "calculation",
           "title": "Du löst 11,7 g Natriumchlorid (NaCl) in 200 g Wasser. Berechne die Molalität der Lösung. (M(NaCl) = 58,5 g/mol)",
           "typeKeywords": [
@@ -8003,7 +7981,7 @@
           ]
         },
         {
-          "index": 32,
+          "index": 30,
           "type": "calculation",
           "title": "Du löst 18 g Glucose (C₆H₁₂O₆, M = 180 g/mol) in 90 g Wasser (M = 18 g/mol). Berechne den Stoffmengenanteil der Glucose.",
           "typeKeywords": [
@@ -8013,38 +7991,27 @@
           ]
         },
         {
+          "index": 31,
+          "type": "learning-content",
+          "title": "Item 32",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "learning-content",
+          "title": "Item 33",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
           "index": 33,
-          "type": "youtube-video",
-          "title": "Item 34",
-          "typeKeywords": [
-            "video",
-            "youtube",
-            "film",
-            "clip"
-          ]
-        },
-        {
-          "index": 34,
-          "type": "learning-content",
-          "title": "Item 35",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 35,
-          "type": "learning-content",
-          "title": "Item 36",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 36,
           "type": "self-assessment-mc",
           "title": "Was passiert mit der Löslichkeit von CO₂ in Wasser, wenn man den **Druck erhöht**?",
           "typeKeywords": [
@@ -8054,7 +8021,7 @@
           ]
         },
         {
-          "index": 37,
+          "index": 34,
           "type": "self-assessment-mc",
           "title": "Warum perlt Sekt, wenn man die Flasche öffnet?",
           "typeKeywords": [
@@ -8064,7 +8031,7 @@
           ]
         },
         {
-          "index": 38,
+          "index": 35,
           "type": "fill-in-the-blank",
           "title": "Ergänze die Begriffe zum Henry-Gesetz:",
           "typeKeywords": [
@@ -8074,7 +8041,7 @@
           ]
         },
         {
-          "index": 39,
+          "index": 36,
           "type": "calculation",
           "title": "Die Henry-Konstante für O₂ in Wasser bei 37°C beträgt etwa 1,3 × 10⁻³ mol/(L·atm). Der Sauerstoff-Partialdruck in der Lunge beträgt etwa 0,13 atm. Berechne die Konzentration des gelösten Sauerstoffs in mol/L.",
           "typeKeywords": [
@@ -8084,37 +8051,37 @@
           ]
         },
         {
+          "index": 37,
+          "type": "learning-content",
+          "title": "Item 38",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "learning-content",
+          "title": "Item 39",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "learning-content",
+          "title": "Item 40",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
           "index": 40,
-          "type": "learning-content",
-          "title": "Item 41",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 41,
-          "type": "learning-content",
-          "title": "Item 42",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 42,
-          "type": "learning-content",
-          "title": "Item 43",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 43,
           "type": "self-assessment-mc",
           "title": "Wovon hängen **kolligative Eigenschaften** ab?",
           "typeKeywords": [
@@ -8124,7 +8091,7 @@
           ]
         },
         {
-          "index": 44,
+          "index": 41,
           "type": "self-assessment-mc",
           "title": "Was passiert mit dem **Dampfdruck von Wasser**, wenn man Zucker darin auflöst?",
           "typeKeywords": [
@@ -8134,7 +8101,7 @@
           ]
         },
         {
-          "index": 45,
+          "index": 42,
           "type": "matching",
           "title": "Ordne jede Eigenschaft richtig zu: Ist sie kolligativ oder nicht?",
           "typeKeywords": [
@@ -8144,13 +8111,43 @@
           ]
         },
         {
-          "index": 46,
+          "index": 43,
           "type": "calculation",
           "title": "Der Dampfdruck von reinem Wasser bei 25°C beträgt 23,8 mmHg. Du löst einen nicht-flüchtigen Stoff so, dass der Stoffmengenanteil des Wassers auf 0,95 sinkt. Berechne den Dampfdruck über der Lösung in mmHg.",
           "typeKeywords": [
             "berechnung",
             "rechnung",
             "formel"
+          ]
+        },
+        {
+          "index": 44,
+          "type": "learning-content",
+          "title": "Item 45",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 45,
+          "type": "learning-content",
+          "title": "Item 46",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 46,
+          "type": "learning-content",
+          "title": "Item 47",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
           ]
         },
         {
@@ -8165,36 +8162,6 @@
         },
         {
           "index": 48,
-          "type": "learning-content",
-          "title": "Item 49",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 49,
-          "type": "learning-content",
-          "title": "Item 50",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 50,
-          "type": "learning-content",
-          "title": "Item 51",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 51,
           "type": "self-assessment-mc",
           "title": "Warum streut man im Winter **Salz** auf die Straße?",
           "typeKeywords": [
@@ -8204,7 +8171,7 @@
           ]
         },
         {
-          "index": 52,
+          "index": 49,
           "type": "self-assessment-mc",
           "title": "Welche Lösung hat den **niedrigsten Gefrierpunkt** (bei gleicher Molalität)?",
           "typeKeywords": [
@@ -8214,7 +8181,7 @@
           ]
         },
         {
-          "index": 53,
+          "index": 50,
           "type": "self-assessment-mc",
           "title": "Was ist der **Van t Hoff Faktor** für Magnesiumchlorid (MgCl₂)?",
           "typeKeywords": [
@@ -8224,7 +8191,7 @@
           ]
         },
         {
-          "index": 54,
+          "index": 51,
           "type": "matching",
           "title": "Ordne jedes Salz dem korrekten Van t Hoff Faktor zu:",
           "typeKeywords": [
@@ -8234,7 +8201,7 @@
           ]
         },
         {
-          "index": 55,
+          "index": 52,
           "type": "ordering",
           "title": "Sortiere die folgenden Lösungen (alle 0,1 mol/kg) nach ihrem Gefrierpunkt, beginnend mit dem **höchsten** (wärmsten):",
           "typeKeywords": [
@@ -8244,7 +8211,7 @@
           ]
         },
         {
-          "index": 56,
+          "index": 53,
           "type": "calculation",
           "title": "Du löst 22,2 g Calciumchlorid (CaCl₂, M = 111 g/mol) in 500 g Wasser. Um wie viel Grad Celsius sinkt der Gefrierpunkt? (K_GP = 1,86 °C·kg/mol, i = 3)",
           "typeKeywords": [
@@ -8254,13 +8221,43 @@
           ]
         },
         {
-          "index": 57,
+          "index": 54,
           "type": "practice-exercise",
           "title": "Glycol vs. Glycerin",
           "typeKeywords": [
             "übung",
             "praxis",
             "aufgabe"
+          ]
+        },
+        {
+          "index": 55,
+          "type": "learning-content",
+          "title": "Item 56",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 56,
+          "type": "learning-content",
+          "title": "Item 57",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 57,
+          "type": "learning-content",
+          "title": "Item 58",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
           ]
         },
         {
@@ -8275,36 +8272,6 @@
         },
         {
           "index": 59,
-          "type": "learning-content",
-          "title": "Item 60",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 60,
-          "type": "learning-content",
-          "title": "Item 61",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 61,
-          "type": "learning-content",
-          "title": "Item 62",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 62,
           "type": "self-assessment-mc",
           "title": "Was ist eine **semipermeable Membran**?",
           "typeKeywords": [
@@ -8314,7 +8281,7 @@
           ]
         },
         {
-          "index": 63,
+          "index": 60,
           "type": "self-assessment-mc",
           "title": "Rote Blutkörperchen werden in **reines destilliertes Wasser** gelegt. Was passiert?",
           "typeKeywords": [
@@ -8324,7 +8291,7 @@
           ]
         },
         {
-          "index": 64,
+          "index": 61,
           "type": "self-assessment-mc",
           "title": "Was ist **Umkehrosmose** (Reverse Osmosis)?",
           "typeKeywords": [
@@ -8334,7 +8301,7 @@
           ]
         },
         {
-          "index": 65,
+          "index": 62,
           "type": "matching",
           "title": "Ordne jede Situation dem korrekten Zustand zu:",
           "typeKeywords": [
@@ -8344,7 +8311,7 @@
           ]
         },
         {
-          "index": 66,
+          "index": 63,
           "type": "fill-in-the-blank",
           "title": "Ergänze die fehlenden Begriffe zur Osmose:",
           "typeKeywords": [
@@ -8354,7 +8321,7 @@
           ]
         },
         {
-          "index": 67,
+          "index": 64,
           "type": "calculation",
           "title": "Physiologische Kochsalzlösung enthält 0,9% NaCl (9 g/L). Berechne den osmotischen Druck bei 37°C (310 K). M(NaCl) = 58,5 g/mol, i = 2, R = 0,0821 L·atm/(K·mol)",
           "typeKeywords": [
@@ -8364,7 +8331,7 @@
           ]
         },
         {
-          "index": 68,
+          "index": 65,
           "type": "practice-exercise",
           "title": "Warum keine reine Wasser-Infusion?",
           "typeKeywords": [
@@ -8374,9 +8341,9 @@
           ]
         },
         {
-          "index": 69,
+          "index": 66,
           "type": "youtube-video",
-          "title": "Item 70",
+          "title": "Item 67",
           "typeKeywords": [
             "video",
             "youtube",
@@ -8385,37 +8352,37 @@
           ]
         },
         {
+          "index": 67,
+          "type": "learning-content",
+          "title": "Item 68",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 68,
+          "type": "learning-content",
+          "title": "Item 69",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 69,
+          "type": "learning-content",
+          "title": "Item 70",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
           "index": 70,
-          "type": "learning-content",
-          "title": "Item 71",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 71,
-          "type": "learning-content",
-          "title": "Item 72",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 72,
-          "type": "learning-content",
-          "title": "Item 73",
-          "typeKeywords": [
-            "lerninhalt",
-            "inhalt",
-            "text"
-          ]
-        },
-        {
-          "index": 73,
           "type": "self-assessment-mc",
           "title": "Warum ist der experimentell gemessene Van t Hoff Faktor für MgSO₄ **deutlich kleiner** als der theoretische Wert von 2?",
           "typeKeywords": [
@@ -8425,7 +8392,7 @@
           ]
         },
         {
-          "index": 74,
+          "index": 71,
           "type": "self-assessment-mc",
           "title": "Du hast zwei Lösungen mit jeweils 0,1 mol/L: eine mit NaCl und eine mit MgSO₄. Welche hat den **höheren osmotischen Druck**?",
           "typeKeywords": [
@@ -8435,7 +8402,7 @@
           ]
         },
         {
-          "index": 75,
+          "index": 72,
           "type": "matching",
           "title": "Ordne jedes Salz der erwarteten Abweichung vom theoretischen i-Wert zu:",
           "typeKeywords": [
@@ -8445,7 +8412,7 @@
           ]
         },
         {
-          "index": 76,
+          "index": 73,
           "type": "practice-exercise",
           "title": "Drei Bechergläser unter einer Glocke",
           "typeKeywords": [
@@ -8455,7 +8422,7 @@
           ]
         },
         {
-          "index": 77,
+          "index": 74,
           "type": "practice-exercise",
           "title": "Osmometrie statt Kryoskopie?",
           "typeKeywords": [
@@ -8465,7 +8432,7 @@
           ]
         },
         {
-          "index": 78,
+          "index": 75,
           "type": "self-assessment",
           "title": "Bin ich bereit für den Vorlesungs-Test?",
           "typeKeywords": [

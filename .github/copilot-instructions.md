@@ -28,6 +28,7 @@
 - ⚠️ **Mermaid: Max. 3-5 Wörter pro Box** - Lange Texte werden auf Mobile abgeschnitten. Keine `<br/>`-Tags. Bei komplexen Zusammenhängen Tabellen/Listen bevorzugen.
 - ⚠️ **MC-Antworten: Korrekte Antwort NICHT die längste!** - Alle Optionen ähnliche Länge, mind. 1 Distraktor länger als korrekte Antwort.
 - ⚠️ **KaTeX: Aggregatzustände in `\text{}`** - z.B. `\text{Na}_{\text{(s)}}` nicht `\text{Na}_{(s)}`
+- ⚠️ **KaTeX: Ionen mit Aggregatzuständen vermeiden** - Formeln wie `\text{Na}^+_{(aq)}` rendern nicht im Browser! Aggregatzustände im Text erklären, nicht in der Formel.
 - ⚠️ **NIEMALS fehlende Items hinten anhängen!** - Jedes lecture-item hat seinen sinnvollen Platz in der didaktischen Reihenfolge (gemäß CONTENT_PLAN). Fehlende Items müssen an der RICHTIGEN Stelle eingefügt werden, ggf. durch Umnummerierung aller nachfolgenden Dateien.
 
 ## Content Generation: 3-Phasen-Workflow
@@ -71,6 +72,7 @@ Die Ordnernamen in `studies-material/` und `content/` können unterschiedlich se
    ```bash
    curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
    ```
+
    - Success: JSON with `title`, `author_name` → video available
    - Error: HTTP 401/403/404 → DO NOT use this video
 6. **Extract sources** (Titel + Link) from material file header

@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-15T08:37:58.481Z",
+  "generatedAt": "2026-01-20T18:10:31.394Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -123,9 +123,9 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/13-loesungen": {
-      "checksum": "90738156",
-      "sizeKB": 72,
-      "itemCount": 79,
+      "checksum": "04f78cee",
+      "sizeKB": 70.7,
+      "itemCount": 76,
       "quizCount": 0,
       "topic": "Lösungen",
       "description": "Eigenschaften von Lösungen, Konzentrationsmaße, Thermodynamik des Lösungsprozesses, kolligative Eigenschaften und Osmose",

@@ -219,6 +219,38 @@ $$\text{Na}_{\text{(s)}} + \text{Cl}_{2\text{(g)}} \rightarrow \text{NaCl}_{\tex
 
 Die Aggregatzustand-Klammern müssen in `\text{}` stehen!
 
+#### KaTeX: Ionen mit Aggregatzuständen vermeiden ⚠️
+
+**PROBLEM:** Formeln mit Ladung (`^+`, `^-`) UND Subscript-Aggregatzustand (`_{(aq)}`) können im Browser **nicht zuverlässig gerendert** werden, auch nicht mit `{}` als Trenner.
+
+```latex
+# FUNKTIONIERT NICHT im Browser (auch mit {} Trenner):
+\text{Na}^+{}_{(\text{aq})} + \text{Cl}^-{}_{(\text{aq})}
+
+# LÖSUNG 1: Aggregatzustände weglassen
+\text{Na}^+ + \text{Cl}^- \rightarrow \text{NaCl}
+
+# LÖSUNG 2: Aggregatzustände als Text darunter erklären
+```
+
+**Best Practice:** Bei Reaktionsgleichungen die Aggregatzustände (aq), (s), (l), (g) im erklärenden Text erwähnen, nicht in der Formel selbst.
+
+#### Fill-in-the-blank: blanks Format
+
+```yaml
+blanks:
+  - answer: 'Gitter'           # ← MUSS vorhanden sein, wird als Platzhalter verwendet
+    alternatives:              # Optional: alternative Schreibweisen
+      - 'Gitterenergie'
+      - 'Kristallgitter'
+```
+
+Der Platzhalter im `text`-Feld muss `{{answer}}` entsprechen:
+
+```yaml
+text: 'ΔH_Lösung = ΔH_{{Gitter}} + ΔH_{{Hydratation}}'
+```
+
 ### Valid Icon Names (for achievements)
 
 Only use these icons: `search`, `menuDots`, `sun`, `moon`, `close`, `modules`, `chart`, `cog`, `map`, `trophy`, `achievement`, `phone`, `phoneDownload`, `checkCircle`, `book`, `zoomIn`, `zoomOut`, `reset`, `externalLink`, `lock`, `unlock`, `clock`, `hourglass`, `document`, `clipboard`, `apple`, `beaker`, `graduationCap`, `download`, `upload`, `hourglassEmpty`, `check`, `rocket`, `fire`, `muscle`, `star`, `wave`
