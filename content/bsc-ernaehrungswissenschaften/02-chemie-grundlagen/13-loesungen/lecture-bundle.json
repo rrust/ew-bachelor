@@ -163,11 +163,6 @@
       "content": ""
     },
     {
-      "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=vJzKHIgIY7I",
-      "content": "# Lösungen und Löslichkeit\n\nIn diesem Video von **musstewissen Chemie** werden die Grundlagen zu Lösungen und Löslichkeit anschaulich erklärt.\n\n**Themen im Video:**\n- Was ist eine Lösung?\n- Unterschied zwischen Lösungsmittel und gelöstem Stoff\n- Wann ist eine Lösung gesättigt?\n- Einflussfaktoren auf die Löslichkeit"
-    },
-    {
       "type": "learning-content",
       "sourceRefs": [
         {
@@ -314,11 +309,6 @@
       "content": ""
     },
     {
-      "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=FjI-O99p2Fo",
-      "content": "# Gitterenergie und Hydratationsenergie\n\nIn diesem Video von **Die Merkhilfe** werden die energetischen Grundlagen des Lösungsvorgangs erklärt.\n\n**Themen im Video:**\n- Was ist Gitterenergie?\n- Was ist Hydratationsenergie?\n- Wie berechnet sich die Lösungsenthalpie?\n- Exotherme vs. endotherme Lösungsvorgänge"
-    },
-    {
       "type": "learning-content",
       "sourceRefs": [
         {
@@ -450,11 +440,6 @@
       "hint": "Berechne zuerst die Stoffmengen beider Komponenten, dann den Anteil der Glucose an der Gesamtstoffmenge.",
       "solution": "n(Glucose) = 18 g / 180 g/mol = 0,1 mol. n(Wasser) = 90 g / 18 g/mol = 5,0 mol. X(Glucose) = 0,1 / (0,1 + 5,0) = 0,1 / 5,1 ≈ 0,02.",
       "content": ""
-    },
-    {
-      "type": "youtube-video",
-      "url": "https://www.youtube.com/watch?v=sI91OAFE_kI",
-      "content": "# Konzentrationsangaben\n\nIn diesem Video von **Lehrerschmidt** werden die verschiedenen Konzentrationsangaben erklärt und berechnet.\n\n**Themen im Video:**\n- Massenanteil (Gewichtsprozent)\n- Stoffmengenanteil (Mol-Bruch)\n- Molarität (mol/L)\n- Molalität (mol/kg)\n- Umrechnung zwischen den Einheiten"
     },
     {
       "type": "learning-content",
@@ -1077,5 +1062,5 @@
     }
   ],
   "quiz": [],
-  "generatedAt": "2026-01-15T08:37:58.631Z"
+  "generatedAt": "2026-01-20T16:25:37.742Z"
 }
