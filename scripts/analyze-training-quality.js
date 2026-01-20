@@ -255,7 +255,9 @@ function extractKeywords(text) {
     .toLowerCase()
     .replace(/[.,;:!?()[\]{}""„]/g, ' ')
     .split(/\s+/)
-    .filter((w) => w.length >= 4 && !stopwords.has(w) && !chemicalPattern.test(w))
+    .filter(
+      (w) => w.length >= 4 && !stopwords.has(w) && !chemicalPattern.test(w)
+    )
     .filter((w) => !w.match(/[₀₁₂₃₄₅₆₇₈₉⁺⁻²³]/)); // Remove words with subscripts/superscripts
 }
 
@@ -366,7 +368,13 @@ function checkQuestion(question, filePath, questionIndex) {
     stats.correctAnswerLengths.push(avgCorrectLen);
     stats.incorrectAnswerLengths.push(avgIncorrectLen);
 
-    if (avgCorrectLen > avgIncorrectLen * 1.5 && avgCorrectLen > 30) {
+    // Skip calculation questions (all answers are short numeric values)
+    const allAnswersShort = [...correctTexts, ...incorrectTexts].every(t => t.length < 25);
+    const looksLikeCalculation = allAnswersShort && 
+      [...correctTexts, ...incorrectTexts].every(t => /^[~≈<>]?\s*[\d,.\-+×÷\/]+\s*(kJ|mol|g|L|M|%|mmHg|Pa|°C|K|u)?/.test(t) || t.length < 20);
+
+    // Only flag if correct answers are 75%+ longer than incorrect (was 50%)
+    if (avgCorrectLen > avgIncorrectLen * 1.75 && avgCorrectLen > 35 && !looksLikeCalculation) {
       problems.lengthImbalance.push({
         location,
         detail: `Korrekt: ø${Math.round(avgCorrectLen)} vs. Falsch: ø${Math.round(avgIncorrectLen)} Zeichen`
@@ -380,7 +388,12 @@ function checkQuestion(question, filePath, questionIndex) {
   const correctHasNumbers = correctTexts.some((t) => /\d+/.test(t));
   const incorrectHasNumbers = incorrectTexts.some((t) => /\d+/.test(t));
 
-  if (correctHasNumbers && !incorrectHasNumbers && incorrectTexts.length >= 2) {
+  // Skip if this looks like a calculation question (most answers are numeric/short)
+  const allAnswers = [...correctTexts, ...incorrectTexts];
+  const numericAnswerCount = allAnswers.filter(t => /^[~≈<>]?\s*[\d,.\-+×÷\/]+/.test(t) || t.length < 15).length;
+  const isCalculationQuestion = numericAnswerCount >= allAnswers.length * 0.5;
+
+  if (correctHasNumbers && !incorrectHasNumbers && incorrectTexts.length >= 2 && !isCalculationQuestion) {
     problems.specificityImbalance.push({
       location,
       detail: `Nur korrekte Antworten enthalten Zahlen/Werte`
@@ -390,8 +403,12 @@ function checkQuestion(question, filePath, questionIndex) {
   // ═══════════════════════════════════════════════════════════════════
   // 6. OFFENSICHTLICHE DISTRAKTOREN
   // ═══════════════════════════════════════════════════════════════════
+  // Skip calculation questions where short numeric answers are expected
+  const avgAllLen = allAnswers.reduce((a, b) => a + b.length, 0) / allAnswers.length;
+  const isShortAnswerQuestion = avgAllLen < 20;
+
   incorrectTexts.forEach((text) => {
-    if (text.length < 10 && correctTexts.every((c) => c.length > 30)) {
+    if (text.length < 10 && correctTexts.every((c) => c.length > 30) && !isShortAnswerQuestion) {
       problems.obviousDistractors.push({
         location,
         detail: `Sehr kurze falsche Antwort: "${text}"`
