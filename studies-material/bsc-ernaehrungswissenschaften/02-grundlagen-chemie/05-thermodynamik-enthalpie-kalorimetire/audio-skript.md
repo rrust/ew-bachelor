@@ -1,13 +1,6 @@
-**(Intro)**
+In einer einzigen Erdnuss steckt genug chemische Energie, um eine Tasse Wasser zum Kochen zu bringen. [PAUSE] Chemische Bindungen sind nichts anderes als **Energiespeicher**.
 
-Hallo zusammen! Willkommen zurück im Hörsaal. [PAUSE]
-
-Heute wird es heiß. Oder kalt – je nachdem, wie man es betrachtet.
-Wir beschäftigen uns heute mit der **Thermochemie**. Das ist der Bereich der Chemie, der fragt: "Wo geht die Energie eigentlich hin, wenn es knallt, brennt oder blubbert?"
-
-Stellt euch vor: In einer einzigen, kleinen Erdnuss steckt genug chemische Energie, um eine ganze Tasse Wasser zum Kochen zu bringen – wenn man sie verbrennt. Verrückt, oder? Chemische Bindungen sind im Grunde nichts anderes als **Energiespeicher**. Und heute lernen wir, wie wir diese Energie berechnen und verstehen können.
-
-Also, Taschenrechner raus, Köpfe an – los geht’s!
+Die **Thermochemie** fragt: Wo geht die Energie hin, wenn es knallt, brennt oder blubbert? Und wie können wir diese Energie berechnen?
 
 ---
 

@@ -1,12 +1,6 @@
+Ein Atom ist fast nur ... **Leere**.
 
-**(Intro)**
-
-Hallo und herzlich willkommen zurück! Schön, dass ihr wieder dabei seid.
-
-Beginnen wir ganz am Anfang: Beim **Atom**.
-Man stellt sich das ja oft als feste Kugel vor, aber eigentlich ist ein Atom fast nur ... **Leere**.
-
-Stellt euch vor, ein Atom wäre so groß wie ein riesiges Fußballstadion. Der Atomkern? Der wäre so klein wie eine Erbse, die genau am Anstoßpunkt im Mittelkreis liegt. [PAUSE] Aber: In dieser winzigen Erbse steckt fast die **gesamte Masse** des Atoms.
+Wenn ein Atom so groß wäre wie ein Fußballstadion, dann wäre der Atomkern nur eine Erbse im Mittelkreis. [PAUSE] Aber in dieser winzigen Erbse steckt fast die **gesamte Masse** des Atoms.
 
 Dieser Kern besteht aus zwei Arten von Teilchen:
 Erstens, den **Protonen**. Die sind positiv geladen und bestimmen, wer oder was das Atom überhaupt ist.

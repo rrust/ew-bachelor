@@ -1,15 +1,4 @@
-Hier ist das Skript für deine Vorlesung. Ich habe den Text so angepasst, dass er wie eine lebendige, fesselnde Tutoriumsstunde klingt. Die trockenen administrativen Teile habe ich gestrafft, und die Prüfungsfragen habe ich in interaktive "Denkaufgaben" umgewandelt, damit der Zuhörer am Ball bleibt.
 
-***
-
-**Titel:** Materie, Messen und der Mount Everest – Die Grundlagen der Chemie
-**Sprecher:** Der Tutor (Charismatisch, energetisch, klar)
-
----
-
-**(Intro-Musik fadet aus)**
-
-**Tutor:**
 Hallo und herzlich willkommen zum ersten großen Meilenstein unseres Semesters! Ich hoffe, ihr seid wach und habt Kaffee dabei. Heute legen wir das Fundament für alles, was noch kommt. Wir beschäftigen uns mit **Kapitel 1: Materie und Messen**.
 
 Klingt erst mal trocken? [PAUSE] Glaubt mir, das ist es nicht. Denn heute lernen wir die Sprache, in der das Universum geschrieben ist. Wir klären, warum Atome so unfassbar klein sind, warum ihr auf dem Mount Everest euer Ei nicht hart gekocht bekommt – dazu später mehr – und warum Chemiker so besessen von signifikanten Stellen sind.
@@ -20,9 +9,9 @@ Also, Ärmel hochkrempeln. Los geht’s!
 
 ---
 
-**(Szenenwechsel: Grundlagen)**
 
-**Tutor:**
+
+
 Fangen wir ganz vorne an. Was ist Chemie eigentlich?
 Ganz simpel gesagt: Chemie ist die Lehre von der **Veränderung**. Wir schauen uns Stoffe an, wie sie aufgebaut sind und – das ist der spannende Teil – was passiert, wenn sie miteinander reagieren und Energie austauschen.
 
@@ -44,9 +33,9 @@ Energie ist Masse mal Lichtgeschwindigkeit zum Quadrat. Das bedeutet, Masse und 
 
 ---
 
-**(Szenenwechsel: Bausteine)**
 
-**Tutor:**
+
+
 Tauchen wir jetzt tiefer in die Materie ein – im wahrsten Sinne des Wortes.
 Alles besteht aus **Elementen**. Das sind Stoffe, die wir chemisch nicht weiter zerlegen können. Aktuell kennen wir 118 davon, alle schön sortiert im Periodensystem.
 
@@ -62,9 +51,9 @@ Und drittens: Das **Symbolische**. Die Formel $H_2O$ auf dem Papier.
 
 ---
 
-**(Szenenwechsel: Zustände)**
 
-**Tutor:**
+
+
 Apropos wild durcheinander wuseln – das bringt uns zu den Aggregatzuständen. Ihr kennt die Klassiker: Fest, Flüssig, Gasförmig.
 
 Bei **Feststoffen** sind die Teilchen wie Soldaten in einer Reihe. Sie vibrieren, aber sie bleiben am Platz. Deshalb haben Feststoffe eine feste Form.
@@ -77,9 +66,9 @@ Wenn aber Eisen rostet, dann ist das eine **chemische** Veränderung. Aus Eisen 
 
 ---
 
-**(Szenenwechsel: Messen & Dichte)**
 
-**Tutor:**
+
+
 Okay, wir wissen jetzt, was Materie ist. Aber als Wissenschaftler müssen wir sie auch messen.
 Wir nutzen das SI-System: Meter für Länge, Kilogramm für Masse, Kelvin für Temperatur.
 
@@ -95,9 +84,9 @@ Kleiner Tipp für die Prüfung: Achtet immer auf die Einheiten! Wenn ihr Gramm d
 
 ---
 
-**(Szenenwechsel: Genauigkeit & Sig Figs)**
 
-**Tutor:**
+
+
 Jetzt kommen wir zu einem Thema, das viele Studenten nervt, das aber extrem wichtig ist: **Fehlerrechnung und Signifikante Stellen.**
 
 Zuerst mal zwei Begriffe, die im Alltag oft vermischt werden: **Genauigkeit** und **Präzision**.
@@ -119,9 +108,9 @@ Wenn ihr zwei Zahlen multipliziert, darf euer Ergebnis nicht genauer sein als di
 
 ---
 
-**(Szenenwechsel: Interaktive Übung / Examens-Vorbereitung)**
 
-**Tutor:**
+
+
 So, genug Theorie. Lasst uns das Gelernte mal auf eine echte "Hardcore"-Situation anwenden. Ich habe hier eine Aufgabe aus dem Prüfungspool, die wir gemeinsam durchdenken. Es geht um den **Mount Everest**.
 
 Die Situation ist folgende: Auf Meereshöhe kocht Wasser bei 100 Grad Celsius. Auf dem Mount Everest ist der Luftdruck viel geringer, deshalb kocht das Wasser dort schon bei 70 Grad.
@@ -141,7 +130,7 @@ Denkt immer daran: Ein Liter sind 1000 Kubikzentimeter. Wenn ihr Flächen oder V
 
 **(Outro)**
 
-**Tutor:**
+
 Damit sind wir am Ende von Kapitel 1.
 Was solltet ihr heute mitnehmen?
 1. Materie und Energie sind erhalten – nichts geht verloren.

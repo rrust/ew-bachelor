@@ -1,18 +1,8 @@
-Hier ist das Skript für deine Vorlesung. Ich habe den Text so aufbereitet, dass er wie eine lebendige, engaging Vorlesung klingt. Die trockenen Fakten sind in anschauliche Erklärungen verpackt, und die Prüfungsfragen habe ich als interaktive "Denkaufgaben" integriert.
+Warum explodiert Natrium bei Wasserkontakt, während Helium sich weigert, überhaupt zu reagieren? [PAUSE]
 
-***
+Die Antwort liegt in den **Periodentrends** – den Mustern, die das Periodensystem so mächtig machen. Es geht um Atomgrößen und die Energie, die nötig ist, um Elektronen zu entreißen oder aufzunehmen.
 
-**(Audio-Skript Start)**
-
-Hallo und herzlich willkommen zurück im Hörsaal! Schön, dass ihr wieder dabei seid.
-
-Heute tauchen wir tief in das Herz der Chemie ein. Wir beschäftigen uns mit **Kapitel 7**. Und glaubt mir, das ist nicht irgendein Kapitel. Das ist der Schlüssel, um zu verstehen, *warum* Elemente überhaupt reagieren, warum manche explodieren, wenn sie Wasser berühren, und warum andere so träge sind wie ein Stein.
-
-Es geht um **Periodentrends**, um die **Größe von Atomen** und um die **Energie**, die nötig ist, um Elektronen zu klauen oder zu schenken. [PAUSE]
-
-Lasst uns direkt mit dem Fundament anfangen.
-
-Alles, was wir heute besprechen, basiert auf einem einzigen, genialen Konzept: Dem Tauziehen im Atom.
+Alles basiert auf einem genialen Konzept: Dem Tauziehen im Atom.
 Auf der einen Seite haben wir den positiven Kern, der zieht. Auf der anderen Seite die negativen Elektronen, die sich gegenseitig wegdrücken.
 
 Und hier kommt der wichtigste Begriff des heutigen Tages: Die **effektive Kernladung**, abgekürzt **Z-Stern** ($Z^*$).
