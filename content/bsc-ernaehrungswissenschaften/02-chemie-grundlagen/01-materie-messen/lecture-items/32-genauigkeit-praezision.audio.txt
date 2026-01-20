@@ -1,0 +1,31 @@
+Genauigkeit und Präzision. Zwei Wörter, die im Alltag oft synonym verwendet werden. Aber in der Wissenschaft haben sie völlig unterschiedliche Bedeutungen!
+
+...
+
+Stell dir eine Zielscheibe vor. Genauigkeit bedeutet: Triffst du die Mitte? Präzision bedeutet: Triffst du immer denselben Punkt?
+
+Du kannst präzise sein ohne genau zu sein. Alle fünf Pfeile landen eng beieinander ... aber weit von der Mitte entfernt. Präzise, aber nicht genau.
+
+Oder du kannst genau sein ohne präzise zu sein. Im Durchschnitt triffst du die Mitte, aber die Pfeile sind überall verstreut. Genau, aber nicht präzise.
+
+...
+
+Das Ideal? Beides! Alle Pfeile eng beieinander, genau in der Mitte.
+
+...
+
+In der Chemie messen wir ständig. Und jede Messung hat Fehler.
+
+Der Fehler ist einfach: Messwert minus wahrer Wert.
+
+Du misst die Dichte von Aluminium als 2,85 Gramm pro Kubikzentimeter. Der wahre Wert ist 2,70. Dein Fehler ist 0,15.
+
+Als Prozent ausgedrückt: 0,15 geteilt durch 2,70, mal hundert. Das sind 5,6 Prozent Abweichung.
+
+...
+
+Wenn deine Messungen immer zu hoch sind, hast du einen systematischen Fehler. Vielleicht ist deine Waage falsch kalibriert.
+
+Wenn sie mal zu hoch und mal zu niedrig sind, aber im Durchschnitt stimmen, sind das zufällige Fehler. Die lassen sich durch Wiederholung reduzieren.
+
+Systematische Fehler sind gefährlicher, weil du sie nicht durch Wiederholung findest!

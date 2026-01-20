@@ -1,0 +1,38 @@
+Bei Flächen und Volumen lauert eine gemeine Falle. Und fast jeder tappt am Anfang hinein!
+
+...
+
+Du weißt: Ein Meter hat hundert Zentimeter. Einfach, oder?
+
+Aber wie viele Quadratzentimeter hat ein Quadratmeter? ... Nicht hundert! Sondern zehntausend.
+
+Denk drüber nach. Ein Quadratmeter ist ein Meter mal ein Meter. In Zentimetern: hundert mal hundert. Das sind zehntausend.
+
+Der Umrechnungsfaktor wird quadriert!
+
+...
+
+Bei Volumen wird es noch extremer.
+
+Wie viele Kubikzentimeter hat ein Kubikmeter? Hundert hoch drei. Das sind eine Million!
+
+Ein Würfel mit einem Meter Kantenlänge hat eine Million Kubikzentimeter Volumen.
+
+...
+
+Ein klassisches Beispiel aus dem Alltag: Du hast ein Schwimmbecken mit 50.000 Litern und sollst berechnen, wie viel Chlor rein muss. Die Angabe ist in Milligramm pro Kubikzentimeter.
+
+Erster Schritt: Liter in Kubikzentimeter umrechnen.
+Ein Liter ist tausend Kubikzentimeter. 50.000 Liter sind 50 Millionen Kubikzentimeter.
+
+Wenn du das vergisst oder falsch machst, ist dein Ergebnis um den Faktor tausend daneben!
+
+...
+
+Die Eselsbrücke: Schau dir den Exponenten an. Quadrat bedeutet: Faktor hoch zwei. Kubik bedeutet: Faktor hoch drei.
+
+Zentimeter zu Meter bei Länge? Durch hundert.
+Bei Fläche? Durch hundert hoch zwei, also zehntausend.
+Bei Volumen? Durch hundert hoch drei, also eine Million.
+
+Wenn du das verinnerlicht hast, macht dir Dimensionsanalyse keine Probleme mehr!

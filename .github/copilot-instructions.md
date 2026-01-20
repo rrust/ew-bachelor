@@ -41,8 +41,9 @@ Detaillierte Anleitungen in `.github/copilot/`:
 | [validation.md](copilot/validation.md)                       | Validierungs-Befehle        |
 | [git-workflow.md](copilot/git-workflow.md)                   | Branches, Commits, PRs      |
 | [module-training.md](copilot/module-training.md)             | Training-Fragen             |
-| [audio-scripts.md](copilot/audio-scripts.md)                 | Audio-Scripts erstellen     |
-| [audio-generation.md](copilot/audio-generation.md)           | TTS-Generierung             |
+| [audio-workflow.md](copilot/audio-workflow.md)               | **Audio für Lerninhalte**   |
+| [audio-scripts.md](copilot/audio-scripts.md)                 | Audio-Script Format         |
+| [audio-generation.md](copilot/audio-generation.md)           | TTS-Generierung Details     |
 
 ## Quick Reference
 

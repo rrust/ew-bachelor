@@ -2,43 +2,69 @@
 
 Audio-Dateien aus Scripts generieren.
 
-## TTS-Tools
+## Prerequisites
 
-| Tool        | Kosten              | Qualität  | Empfehlung            |
-| ----------- | ------------------- | --------- | --------------------- |
-| OpenAI TTS  | ~$0.015/1K chars    | Sehr gut  | Für finale Produktion |
-| ElevenLabs  | Free Tier limitiert | Exzellent | Für wichtige Inhalte  |
-| Edge TTS    | Kostenlos           | Gut       | Für Prototypen        |
-| macOS `say` | Kostenlos           | Basic     | Nur zum Testen        |
+Bevor Audio generiert werden kann:
+
+```bash
+# 1. ffmpeg für MP3-Verarbeitung
+brew install ffmpeg
+
+# 2. edge-tts (Python-basiert, kostenlos!)
+pip3 install edge-tts
+
+# 3. Falls edge-tts nicht gefunden wird, PATH erweitern:
+echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# 4. Test
+edge-tts --list-voices | grep de-
+```
+
+## TTS-Tool: Edge TTS (empfohlen)
+
+| Eigenschaft | Wert                              |
+| ----------- | --------------------------------- |
+| Kosten      | **Kostenlos**                     |
+| Qualität    | Sehr gut (Neural Voices)          |
+| API-Key     | Nicht nötig                       |
+| Default     | `de-DE-FlorianMultilingualNeural` |
+
+### Deutsche Stimmen
+
+| Voice                               | Beschreibung                      |
+| ----------------------------------- | --------------------------------- |
+| `de-DE-FlorianMultilingualNeural`   | **Default** – Männlich, natürlich |
+| `de-DE-SeraphinaMultilingualNeural` | Weiblich, natürlich               |
+| `de-DE-ConradNeural`                | Männlich, sachlich                |
+| `de-DE-KatjaNeural`                 | Weiblich, freundlich              |
+| `de-AT-JonasNeural`                 | Männlich, österreichisch          |
+| `de-AT-IngridNeural`                | Weiblich, österreichisch          |
 
 ## Workflow
 
-### 1. Script erstellen
+### 1. Audio-Script erstellen
 
-Siehe [audio-scripts.md](audio-scripts.md)
+⚠️ **WICHTIG:** Audio-Scripts sind **Plain Text** (`.txt`), kein Markdown!
+
+Edge TTS liest Markdown-Syntax wie `#`, `**`, `-` wörtlich vor.
+
+```text
+01-learning-xyz.md         ← Content (Markdown)
+01-learning-xyz.audio.txt  ← Audio-Script (Plain Text!)
+```
+
+Siehe [audio-scripts.md](audio-scripts.md) für Format-Details.
 
 ### 2. TTS generieren
 
-**Mit OpenAI API:**
+**Mit Edge TTS:**
 
 ```bash
-# Beispiel mit curl
-curl https://api.openai.com/v1/audio/speech \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "tts-1-hd",
-    "input": "Der Sprechtext hier...",
-    "voice": "onyx",
-    "response_format": "mp3"
-  }' \
-  --output 04-learning-ionenbindung.mp3
+edge-tts --voice de-DE-FlorianMultilingualNeural \
+  -f 01-learning-xyz.audio.txt \
+  --write-media 01-learning-xyz.mp3
 ```
-
-**Empfohlene Stimmen:**
-- `onyx` – Männlich, klar, professionell
-- `nova` – Weiblich, warm, freundlich
-- `alloy` – Neutral, sachlich
 
 ### 3. Qualitätsprüfung
 
@@ -53,46 +79,39 @@ curl https://api.openai.com/v1/audio/speech \
 ```text
 content/{studyId}/NN-modul/NN-vorlesung/lecture-items/
 ├── 04-learning-ionenbindung.md
-└── 04-learning-ionenbindung.mp3   # ← Hier
+├── 04-learning-ionenbindung.audio.txt  # Audio-Script (Plain Text)
+└── 04-learning-ionenbindung.mp3        # Generierte MP3
 ```
 
 ## Dateinamen-Konvention
 
 ```text
-[NN]-[content-type]-[thema].mp3
+{name}.md          ← Content (Markdown)
+{name}.audio.txt   ← Audio-Script (Plain Text!)
+{name}.mp3         ← Generierte MP3
 
 Beispiele:
-01-learning-einleitung.mp3
-05-video-beschreibung.mp3
-10-self-assessment-check.mp3
-lecture.mp3  (für Vorlesungs-Intro)
+01-learning-einleitung.md / .audio.txt / .mp3
+lecture.md / .audio.txt / .mp3
 ```
 
 ## Batch-Generierung
 
-Für mehrere Dateien ein Script erstellen:
+Für mehrere Audio-Scripts in einem Ordner:
 
 ```bash
 #!/bin/bash
 # generate-audio.sh
 
-SCRIPTS_DIR="audio-scripts/"
-OUTPUT_DIR="content/bsc-ew/01-chemie/05-ionenbindung/lecture-items/"
+LECTURE_DIR="content/bsc-ew/01-chemie/05-ionenbindung/lecture-items/"
+VOICE="de-DE-FlorianMultilingualNeural"
 
-for script in "$SCRIPTS_DIR"/*.txt; do
-  filename=$(basename "$script" .txt)
-  echo "Generating: $filename.mp3"
+for script in "$LECTURE_DIR"/*.audio.txt; do
+  # 01-learning-xyz.audio.txt → 01-learning-xyz.mp3
+  output="${script%.audio.txt}.mp3"
   
-  # OpenAI TTS aufrufen
-  curl -s https://api.openai.com/v1/audio/speech \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -H "Content-Type: application/json" \
-    -d "{
-      \"model\": \"tts-1-hd\",
-      \"input\": \"$(cat "$script")\",
-      \"voice\": \"onyx\"
-    }" \
-    --output "$OUTPUT_DIR/$filename.mp3"
+  echo "Generating: $(basename "$output")"
+  edge-tts --voice "$VOICE" -f "$script" --write-media "$output"
 done
 ```
 
@@ -104,12 +123,18 @@ done
 - Abkürzungen ausschreiben: "z.B." → "zum Beispiel"
 - Zahlen ausschreiben: "3" → "drei"
 
-### Pausen erzwingen
+### Pausen erzwingen (kein SSML!)
 
-Bei OpenAI TTS:
-- Komma = kurze Pause
-- Punkt = längere Pause
-- `...` = noch längere Pause
+Edge TTS unterstützt **kein SSML**. Pausen werden durch Interpunktion erzeugt:
+
+| Technik                    | Wirkung               | Beispiel                        |
+| -------------------------- | --------------------- | ------------------------------- |
+| Punkt `.`                  | Kurze Pause (~0.5s)   | `Erster Satz. Zweiter Satz.`    |
+| Ellipse `...`              | Längere Pause (~1-2s) | `Denkt darüber nach... Fertig?` |
+| Doppelte Ellipse `... ...` | Noch länger (~2-3s)   | `Wichtig... ... Weiter.`        |
+| Fragezeichen `?`           | Steigende Intonation  | `Versteht ihr das?`             |
+| Ausrufezeichen `!`         | Betonung              | `Das ist wichtig!`              |
+| Leerzeile                  | Absatz-Pause          | Text durch Leerzeile trennen    |
 
 ### Formel-Aussprache
 
@@ -124,7 +149,7 @@ Bei OpenAI TTS:
 ## Checkliste vor Commit
 
 - [ ] Alle .mp3 Dateien vorhanden
-- [ ] Dateinamen = .md Dateinamen
+- [ ] Dateinamen = .md Dateinamen (ohne `.audio`)
 - [ ] Audio-Qualität geprüft
 - [ ] Länge angemessen
 - [ ] Im Browser getestet (Audio-Player funktioniert?)

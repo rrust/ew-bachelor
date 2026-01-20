@@ -1,0 +1,27 @@
+Die Dichte. Ein Konzept, das erklärt, warum manche Dinge schwimmen und andere sinken.
+
+...
+
+Die Formel ist simpel: Dichte gleich Masse geteilt durch Volumen. Rho gleich m durch V.
+
+Was bedeutet das praktisch? Nimm zwei Würfel, gleich groß. Einer aus Aluminium, einer aus Gold. Der Goldwürfel ist viel, viel schwerer. Nicht weil er größer ist, sondern weil Gold eine höhere Dichte hat.
+
+...
+
+Wasser hat eine Dichte von etwa einem Gramm pro Kubikzentimeter. Das ist unser Referenzpunkt.
+
+Alles mit niedrigerer Dichte schwimmt auf Wasser. Holz, Öl, Eis.
+
+Warte ... Eis? Ja! Eis ist tatsächlich leichter als flüssiges Wasser. Deshalb schwimmen Eisberge. Das ist eine der verrückten Eigenschaften von Wasser.
+
+Alles mit höherer Dichte sinkt. Steine, Metalle, dein Schlüsselbund.
+
+...
+
+Ein faszinierendes Beispiel: Quecksilber hat eine Dichte von 13,6 Gramm pro Kubikzentimeter. Das ist so schwer, dass sogar Eisenkugeln auf flüssigem Quecksilber schwimmen! Eisen hat nämlich nur eine Dichte von 7,9.
+
+...
+
+Für Berechnungen denk immer an die Einheiten. Gramm geteilt durch Kubikzentimeter gibt Gramm pro Kubikzentimeter. Das ist bei Dichte wichtig.
+
+Übrigens: Ein Milliliter ist exakt ein Kubikzentimeter. Das macht Umrechnungen einfacher!

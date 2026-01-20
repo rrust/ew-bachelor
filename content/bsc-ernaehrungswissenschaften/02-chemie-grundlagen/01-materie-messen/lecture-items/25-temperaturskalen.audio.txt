@@ -1,0 +1,27 @@
+Celsius, Fahrenheit, Kelvin. Drei Temperaturskalen ... aber welche ist die richtige?
+
+...
+
+Celsius kennst du aus dem Alltag. Null Grad ist der Gefrierpunkt von Wasser, hundert Grad der Siedepunkt. Praktisch, oder?
+
+Fahrenheit benutzen die Amerikaner. Da gefriert Wasser bei 32 Grad und kocht bei 212 Grad. Etwas willkürlich, aber so ist das eben historisch gewachsen.
+
+...
+
+Und dann gibt es Kelvin. Die SI-Einheit. Die wissenschaftliche Skala.
+
+Der große Unterschied: Kelvin startet beim absoluten Nullpunkt. Das ist die tiefste Temperatur, die physikalisch möglich ist. Minus 273,15 Grad Celsius. Bei dieser Temperatur kommt alle Teilchenbewegung zum Stillstand.
+
+...
+
+Das Praktische: Ein Kelvin-Schritt ist genauso groß wie ein Celsius-Schritt. Der einzige Unterschied ist der Startpunkt.
+
+Umrechnen ist super einfach: Celsius plus 273,15 ergibt Kelvin.
+Zwanzig Grad Zimmertemperatur? Das sind 293 Kelvin.
+Körpertemperatur von 37 Grad? Das sind 310 Kelvin.
+
+...
+
+Warum ist Kelvin in der Wissenschaft wichtig? Weil viele Formeln nur mit Kelvin funktionieren. Negative Kelvin-Werte gibt es nicht. Das macht Berechnungen sauberer.
+
+Merk dir: Für den Alltag Celsius. Für die Wissenschaft Kelvin. Und Fahrenheit ... das brauchst du nur, wenn du amerikanische Rezepte liest!

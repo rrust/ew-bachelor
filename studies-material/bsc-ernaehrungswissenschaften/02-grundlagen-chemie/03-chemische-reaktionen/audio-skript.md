@@ -1,16 +1,10 @@
-**(Intro)**
+Stoffe verwandeln sich. Eisen wird zu Rost. Holz wird zu Asche. Teig wird zu Brot. [PAUSE]
 
-Hallo zusammen und herzlich willkommen zu unserer heutigen Vorlesung über die **faszinierende Welt der chemischen Reaktionen**! Ich bin euer Tutor, und heute tauchen wir gemeinsam tief ein in die Art und Weise, wie Stoffe sich verwandeln, welche Regeln dabei gelten und wie wir diese Prozesse verstehen und sogar vorhersagen können.
-
-Dieses Thema ist absolut **fundamental** für die gesamte Chemie, also schnallt euch an – es wird spannend! Wir sprechen über Reaktionsgleichungen, das magische Gesetz der Massenerhaltung, das chemische Gleichgewicht, Lösungen, Fällungen, Säuren und Basen, Gasentwicklung und natürlich über die Elektronen-Jongleure, die Redoxreaktionen.
-
-Bereit? Dann legen wir los!
+Chemische Reaktionen folgen dabei klaren Regeln – Regeln, die wir verstehen und sogar vorhersagen können.
 
 ---
 
-**(Kapitel 1: Grundlagen chemischer Reaktionen)**
-
-Stellt euch vor, ihr habt zwei Stoffe, die ihr miteinander reagieren lasst. Was passiert? Sie verwandeln sich! Diese Verwandlung beschreiben wir mit einer **Reaktionsgleichung**. Das ist quasi die Bauanleitung für eine chemische Reaktion.
+Wenn zwei Stoffe miteinander reagieren, beschreiben wir das mit einer **Reaktionsgleichung** – quasi die Bauanleitung für eine chemische Reaktion. Diese Verwandlung beschreiben wir mit einer **Reaktionsgleichung**. Das ist quasi die Bauanleitung für eine chemische Reaktion.
 
 Ganz allgemein haben wir immer:
 Auf der linken Seite unsere **Edukte** – das sind die Ausgangsstoffe.
