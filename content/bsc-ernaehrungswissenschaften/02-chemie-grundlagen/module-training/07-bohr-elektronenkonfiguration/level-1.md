@@ -1,129 +1,129 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was beschreibt das Bohr-Modell des Atoms?'
 options:
-  - 'Elektronen bewegen sich auf festen Bahnen (Schalen) um den Kern'
+  - 'Der Kern besteht nur aus Elektronen'
   - 'Elektronen bewegen sich zufällig um den Kern'
   - 'Protonen kreisen um den Kern'
-  - 'Der Kern besteht nur aus Elektronen'
+  - 'Elektronen bewegen sich auf festen Bahnen (Schalen) um den Kern'
 correctAnswer: 'Elektronen bewegen sich auf festen Bahnen (Schalen) um den Kern'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Wie werden die Elektronenschalen im Bohr-Modell bezeichnet?'
 options:
-  - 'Mit römischen Zahlen (I, II, III)'
   - 'Mit Buchstaben (K, L, M, N, ...)'
+  - 'Mit römischen Zahlen (I, II, III)'
   - 'Mit griechischen Buchstaben (α, β, γ)'
   - 'Mit Dezimalzahlen'
 correctAnswer: 'Mit Buchstaben (K, L, M, N, ...)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Wie viele Elektronen passen maximal in die erste Schale (K-Schale)?'
 options:
-  - '1'
   - '2'
+  - '1'
   - '8'
   - '18'
 correctAnswer: '2'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was sind Valenzelektronen?'
 options:
-  - 'Elektronen im Atomkern'
+  - 'Protonen und Neutronen im Atomkern'
   - 'Elektronen in der äußersten besetzten Schale'
-  - 'Alle Elektronen eines Atoms'
-  - 'Elektronen, die negativ geladen sind'
+  - 'Die Gesamtzahl der Elektronen eines Atoms'
+  - 'Elektronen mit positiver Ladung'
 correctAnswer: 'Elektronen in der äußersten besetzten Schale'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was besagt das Pauli-Prinzip?'
 options:
-  - 'Elektronen füllen zuerst die niedrigsten Energieniveaus'
-  - 'Jedes Orbital kann maximal 2 Elektronen mit entgegengesetztem Spin enthalten'
-  - 'Elektronen besetzen Orbitale zuerst einzeln'
-  - 'Alle Elektronen haben den gleichen Spin'
-correctAnswer: 'Jedes Orbital kann maximal 2 Elektronen mit entgegengesetztem Spin enthalten'
----
+  - 'Elektronen füllen zuerst die Schalen mit n = 1, 2, 3'
+  - 'Elektronen im selben Orbital haben identischen Spin (+½)'
+  - 'Orbitale werden mit maximal 1 e⁻ zuerst besetzt'
+  - 'Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin'
+correctAnswer: 'Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin'
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was besagt die Hund''sche Regel?'
 options:
   - 'Elektronen paaren sich sofort in Orbitalen'
-  - 'Orbitale gleicher Energie werden zuerst einzeln besetzt'
   - 'Die K-Schale wird zuerst gefüllt'
+  - 'Orbitale gleicher Energie werden zuerst einzeln besetzt'
   - 'Jedes Orbital kann nur ein Elektron aufnehmen'
 correctAnswer: 'Orbitale gleicher Energie werden zuerst einzeln besetzt'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was ist ein Orbital?'
 options:
-  - 'Eine feste Kreisbahn des Elektrons'
   - 'Ein Raumbereich mit hoher Aufenthaltswahrscheinlichkeit für Elektronen'
+  - 'Eine feste Kreisbahn des Elektrons'
   - 'Der Atomkern'
   - 'Eine Elektronenschale'
 correctAnswer: 'Ein Raumbereich mit hoher Aufenthaltswahrscheinlichkeit für Elektronen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Welche Orbitaltypen gibt es?'
 options:
-  - 's, p, d, f'
   - 'a, b, c, d'
+  - 's, p, d, f'
   - 'K, L, M, N'
   - '1, 2, 3, 4'
 correctAnswer: 's, p, d, f'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Wie viele Elektronen kann ein p-Orbital maximal aufnehmen?'
 options:
   - '2'
-  - '6'
   - '10'
+  - '6'
   - '14'
 correctAnswer: '6'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was besagt das Aufbauprinzip?'
 options:
-  - 'Elektronen füllen zuerst die Orbitale mit niedrigster Energie'
+  - 'Nur s-Orbitale werden bei der Besetzung berücksichtigt'
   - 'Elektronen füllen zuerst die äußeren Schalen'
-  - 'Alle Orbitale werden gleichzeitig gefüllt'
-  - 'Nur s-Orbitale werden besetzt'
+  - 'Die Orbitale werden ohne bestimmte Reihenfolge besetzt'
+  - 'Elektronen füllen zuerst die Orbitale mit niedrigster Energie'
 correctAnswer: 'Elektronen füllen zuerst die Orbitale mit niedrigster Energie'
----

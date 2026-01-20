@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -12,22 +13,22 @@ correctAnswers:
   - 'Eis kann unter Druck schmelzen'
   - 'Der Schmelzpunkt sinkt mit steigendem Druck'
   - 'Wasser ist im festen Zustand weniger dicht als im flüssigen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
 question: 'Die Clausius-Clapeyron-Gleichung beschreibt:'
 options:
-  - 'Die Abhängigkeit des Dampfdrucks von der Temperatur'
   - 'Die ideale Gasgleichung'
+  - 'Die Abhängigkeit des Dampfdrucks von der Temperatur'
   - 'Die Schmelzwärme'
   - 'Die kritische Temperatur'
 correctAnswer: 'Die Abhängigkeit des Dampfdrucks von der Temperatur'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -41,9 +42,9 @@ correctAnswers:
   - 'Bei Normaldruck sublimiert festes CO₂ direkt'
   - 'Flüssiges CO₂ existiert nur unter Druck'
   - 'Trockeneis wird industriell genutzt'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -57,9 +58,9 @@ correctAnswers:
   - 'Die Clausius-Clapeyron-Gleichung zeigt eine exponentielle Beziehung'
   - 'Mehr Moleküle haben genügend Energie, um die Flüssigkeit zu verlassen'
   - 'Die Verdampfungsenthalpie wird überwunden'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -73,9 +74,9 @@ correctAnswers:
   - 'Die Energie, die benötigt wird, um 1 mol einer Flüssigkeit zu verdampfen'
   - 'Sie ist immer positiv (endotherm)'
   - 'Sie ist ein Maß für die Stärke der intermolekularen Kräfte'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -89,9 +90,9 @@ correctAnswers:
   - 'Beim Schmelzen werden nur einige Wasserstoffbrücken gebrochen'
   - 'Beim Verdampfen werden alle intermolekularen Kräfte überwunden'
   - 'Der Übergang flüssig → gas erfordert mehr Energie'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -105,9 +106,9 @@ correctAnswers:
   - 'Ein Zustand oberhalb des kritischen Punktes'
   - 'Eigenschaften zwischen Flüssigkeit und Gas'
   - 'Gutes Lösungsmittel mit einstellbaren Eigenschaften'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -121,9 +122,9 @@ correctAnswers:
   - 'Koffeinentfernung aus Kaffee'
   - 'Extraktion von Aromastoffen'
   - 'Reinigung von Elektronik'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -137,9 +138,9 @@ correctAnswers:
   - 'Höhere Temperatur bedeutet höheren Dampfdruck'
   - 'Die Verdampfung ist endotherm'
   - 'Das Gleichgewicht verschiebt sich zur Gasphase'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 3
@@ -153,4 +154,3 @@ correctAnswers:
   - 'Sublimation unter vermindertem Druck'
   - 'Das Wasser geht direkt von fest zu gasförmig'
   - 'Der Tripelpunkt wird unterschritten'
----

@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -12,9 +13,9 @@ correctAnswers:
   - 'Der pH steigt (respiratorische Alkalose)'
   - 'Weniger H₂CO₃ bedeutet weniger H⁺-Ionen'
   - 'Das Gleichgewicht H₂CO₃ ⇌ H⁺ + HCO₃⁻ verschiebt sich nach links'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -28,9 +29,9 @@ correctAnswers:
   - 'Wenn der Dissoziationsgrad α << 1 (α < 5%)'
   - 'Wenn c >> Ks'
   - 'Für nicht zu verdünnte Lösungen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -44,22 +45,22 @@ correctAnswers:
   - 'Schwer zu bestimmen, da die Titrationskurve flach verläuft'
   - 'Der pH hängt von den relativen pK-Werten ab'
   - 'Kein scharfer Farbumschlag mit Indikatoren'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
-question: 'Die isoelektrische Punkt (pI) einer Aminosäure ist der pH, bei dem sie keine Nettoladung hat. Für Glycin (pKs1 = 2,34, pKs2 = 9,60) ist pI:'
+question: 'Der isoelektrische Punkt (pI) ist der pH-Wert mit Nettoladung null. Berechne pI für Glycin (pKs1 = 2,34, pKs2 = 9,60):'
 options:
-  - '5,97'
   - '6,97'
+  - '5,97'
   - '2,34'
   - '9,60'
 correctAnswer: '5,97'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -70,9 +71,9 @@ options:
   - '0 kJ/mol'
   - 'ca. +40 kJ/mol'
 correctAnswer: 'ca. +80 kJ/mol'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -86,9 +87,9 @@ correctAnswers:
   - 'Außerhalb dieses Bereichs ist das Verhältnis [HA]/[A⁻] zu extrem (>10:1 oder <1:10)'
   - 'Die Pufferkapazität sinkt stark'
   - 'Eine Komponente ist nahezu erschöpft'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -102,9 +103,9 @@ correctAnswers:
   - 'Der pH sinkt bei Temperaturerhöhung (ΔpKa/ΔT ≈ -0,03/°C)'
   - 'TRIS-Puffer sollten bei der Arbeitstemperatur eingestellt werden'
   - 'Bei 37°C hat TRIS einen niedrigeren pKa als bei 25°C'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -118,9 +119,9 @@ correctAnswers:
   - 'Linearisierung der Titrationskurve vor und nach dem Äquivalenzpunkt'
   - 'Extrapolation zum Schnittpunkt mit der x-Achse'
   - 'Verbesserung der Genauigkeit gegenüber visueller Bestimmung'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -134,9 +135,9 @@ correctAnswers:
   - 'pKs3 ist so hoch, dass die Titrationskurve flach verläuft'
   - 'OH⁻-Ionen aus dem Lösungsmittel konkurrieren'
   - 'Die Dissoziation von HPO₄²⁻ ist gering'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Säuren, Basen, pH & Puffer'
 level: 5
@@ -150,4 +151,3 @@ correctAnswers:
   - 'Sie sind milliardenfach stärker als 100%ige Schwefelsäure'
   - 'Sie können selbst schwache Basen wie Alkane protonieren'
   - 'Der pH-Begriff ist hier nicht mehr anwendbar'
----

@@ -1,17 +1,18 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
 question: 'Ein Atom hat 17 Protonen. Wie viele Elektronen besitzt das neutrale Atom?'
 options:
   - '18'
-  - '17'
-  - '16'
   - '35'
+  - '16'
+  - '17'
 correctAnswer: '17'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
@@ -22,9 +23,9 @@ options:
   - '18'
   - '0'
 correctAnswer: '6'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
@@ -37,9 +38,9 @@ options:
 correctAnswers:
   - 'Sie haben die gleiche Anzahl an Valenzelektronen'
   - 'Sie haben ähnliche chemische Eigenschaften'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
@@ -50,22 +51,22 @@ options:
   - '37'
   - '3'
 correctAnswer: '37'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
 question: 'Welches Element gehört zu den Halbmetallen?'
 options:
-  - 'Natrium'
   - 'Silicium'
+  - 'Natrium'
   - 'Sauerstoff'
   - 'Eisen'
 correctAnswer: 'Silicium'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
@@ -73,25 +74,25 @@ question: 'In welcher Hauptgruppe befinden sich die Edelgase?'
 options:
   - '1. Hauptgruppe'
   - '7. Hauptgruppe'
-  - '8. Hauptgruppe'
   - '4. Hauptgruppe'
+  - '8. Hauptgruppe'
 correctAnswer: '8. Hauptgruppe'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
 question: 'Ein neutrales Atom hat 20 Elektronen. Welches Element ist es?'
 options:
   - 'Natrium (Na)'
-  - 'Kalium (K)'
   - 'Calcium (Ca)'
+  - 'Kalium (K)'
   - 'Argon (Ar)'
 correctAnswer: 'Calcium (Ca)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
@@ -105,22 +106,22 @@ correctAnswers:
   - 'Sie sind alle Metalle'
   - 'Sie werden auch Übergangsmetalle genannt'
   - 'Sie stehen in den Gruppen 3-12'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
 question: 'Uran-235 und Uran-238 unterscheiden sich in welcher Eigenschaft?'
 options:
-  - 'Anzahl der Protonen'
   - 'Anzahl der Neutronen'
+  - 'Anzahl der Protonen'
   - 'Anzahl der Elektronen'
   - 'Ordnungszahl'
 correctAnswer: 'Anzahl der Neutronen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 2
@@ -131,4 +132,3 @@ options:
   - '4. Periode'
   - '5. Periode'
 correctAnswer: '4. Periode'
----

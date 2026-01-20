@@ -1,20 +1,21 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
 question: 'Ein Element X steht in der 3. Periode und der 6. Hauptgruppe. Welche Aussagen sind korrekt?'
 options:
-  - 'Es hat 6 Valenzelektronen'
+  - 'Es gehört zu den Übergangsmetallen'
+  - 'Es hat 6 Valenzelektronen in der äußeren Schale'
   - 'Es hat 3 besetzte Elektronenschalen'
-  - 'Es handelt sich um Schwefel (S)'
-  - 'Es ist ein Metall'
+  - 'Es handelt sich um das Element Schwefel (S)'
 correctAnswers:
-  - 'Es hat 6 Valenzelektronen'
+  - 'Es hat 6 Valenzelektronen in der äußeren Schale'
   - 'Es hat 3 besetzte Elektronenschalen'
-  - 'Es handelt sich um Schwefel (S)'
----
+  - 'Es handelt sich um das Element Schwefel (S)'
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
@@ -27,22 +28,22 @@ options:
 correctAnswers:
   - 'Weil sie die gleiche Anzahl an Protonen haben'
   - 'Weil sie die gleiche Anzahl an Elektronen haben'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
 question: 'Das natürlich vorkommende Chlor besteht aus 75,77% ³⁵Cl und 24,23% ³⁷Cl. Welche Aussage zur mittleren Atommasse ist korrekt?'
 options:
   - 'Sie liegt genau bei 36'
-  - 'Sie liegt näher bei 35 als bei 37'
-  - 'Sie liegt näher bei 37 als bei 35'
   - 'Sie beträgt exakt 35,5'
+  - 'Sie liegt näher bei 37 als bei 35'
+  - 'Sie liegt näher bei 35 als bei 37'
 correctAnswer: 'Sie liegt näher bei 35 als bei 37'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
@@ -56,9 +57,9 @@ correctAnswers:
   - 'Die Atomradien nehmen zu'
   - 'Die Ionisierungsenergie nimmt ab'
   - 'Die Anzahl der Valenzelektronen bleibt gleich'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
@@ -72,9 +73,9 @@ correctAnswers:
   - 'Es handelt sich um ein Chlorid-Ion (Cl⁻)'
   - 'Das Ion ist negativ geladen'
   - 'Das Ion hat die gleiche Elektronenkonfiguration wie Argon'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
@@ -87,37 +88,37 @@ options:
 correctAnswers:
   - 'Silicium (Si)'
   - 'Germanium (Ge)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
 question: 'Ein Atom hat die Elektronenkonfiguration der 3. Schale vollständig gefüllt (insgesamt 18 Elektronen). Welches Element ist es und in welcher Periode steht es?'
 options:
-  - 'Argon (Ar), 3. Periode'
   - 'Krypton (Kr), 4. Periode'
+  - 'Argon (Ar), 3. Periode'
   - 'Neon (Ne), 2. Periode'
   - 'Calcium (Ca), 4. Periode'
 correctAnswer: 'Argon (Ar), 3. Periode'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
 question: 'Warum sind Edelgase unter normalen Bedingungen chemisch sehr reaktionsträge?'
 options:
   - 'Sie haben eine vollständig gefüllte Valenzschale'
-  - 'Sie haben keine Elektronen'
+  - 'Ihre Außenelektronen sind besonders fest gebunden'
   - 'Sie erreichen die stabile Edelgaskonfiguration bereits'
-  - 'Sie haben nur Protonen im Kern'
+  - 'Ihre hohe Kernladung verhindert Reaktionen'
 correctAnswers:
   - 'Sie haben eine vollständig gefüllte Valenzschale'
   - 'Sie erreichen die stabile Edelgaskonfiguration bereits'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
@@ -130,17 +131,16 @@ options:
 correctAnswers:
   - 'Das Atom gibt 2 Elektronen ab'
   - 'Das Ion hat danach eine Edelgaskonfiguration'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 3
 question: 'Ordne die folgenden Elemente nach steigendem Atomradius: Li, Na, K. Welche Begründung ist korrekt?'
 options:
   - 'Li < Na < K, weil die Anzahl der Elektronenschalen zunimmt'
-  - 'K < Na < Li, weil die Kernladung zunimmt'
-  - 'Li < Na < K, weil die Kernladung abnimmt'
-  - 'Alle haben den gleichen Atomradius'
+  - 'Li < Na < K, weil die Kernladung in der Gruppe abnimmt'
+  - 'Die Atomradien der Alkalimetalle sind nahezu identisch'
+  - 'K < Na < Li, weil die Kernladung in der Gruppe zunimmt'
 correctAnswer: 'Li < Na < K, weil die Anzahl der Elektronenschalen zunimmt'
----

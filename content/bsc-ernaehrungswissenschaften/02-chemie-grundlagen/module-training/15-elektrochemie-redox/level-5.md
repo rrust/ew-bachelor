@@ -1,20 +1,21 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
-question: 'Das Pourbaix-Diagramm zeigt Stabilitätsbereiche von Metallspezies als Funktion von pH und Potential. Was zeigt es für Eisen?'
+question: 'Das Pourbaix-Diagramm zeigt für ein Metall die Phasen als Funktion von pH und Potential. Welche Informationen liefert es für Fe?'
 options:
-  - 'Bereiche, in denen Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ stabil sind'
+  - 'Zeigt wo Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ vorliegen'
   - 'Die Korrosionsbedingungen können abgelesen werden'
   - 'Passivierung durch Oxidschichten ist bei bestimmten pH/E erkennbar'
-  - 'Das Pourbaix-Diagramm zeigt nur die Stabilität von reinem Metall'
+  - 'Das Diagramm zeigt nur die Stabilität von reinem Metall'
 correctAnswers:
-  - 'Bereiche, in denen Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ stabil sind'
+  - 'Zeigt wo Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ vorliegen'
   - 'Die Korrosionsbedingungen können abgelesen werden'
   - 'Passivierung durch Oxidschichten ist bei bestimmten pH/E erkennbar'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -28,9 +29,9 @@ correctAnswers:
   - 'Austauschstromdichte i₀'
   - 'Überspannung η'
   - 'Durchtrittsfaktor α'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -44,9 +45,9 @@ correctAnswers:
   - 'Die Eigenschaften von Elektroden und Elektrolyten zu charakterisieren'
   - 'Korrosionsprozesse zu untersuchen'
   - 'Batteriegesundheit zu überwachen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -60,9 +61,9 @@ correctAnswers:
   - 'Ionenaustausch-Membran trennt Anoden- und Kathodenraum'
   - 'Verhindert Vermischung von Cl₂ und NaOH'
   - 'Hohe Reinheit der Produkte'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -76,9 +77,9 @@ correctAnswers:
   - 'Kapazität und Leistung können unabhängig skaliert werden'
   - 'Lange Lebensdauer (über 20.000 Zyklen)'
   - 'Keine Degradation der aktiven Materialien'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -92,9 +93,9 @@ correctAnswers:
   - 'Hohe Überspannung bei der Sauerstoffentwicklung (OER)'
   - 'Teure Katalysatoren (Pt, Ir, Ru)'
   - 'Stabilität unter Betriebsbedingungen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -108,9 +109,9 @@ correctAnswers:
   - 'Das Katalysatormaterial (Cu für Kohlenwasserstoffe)'
   - 'Das angelegte Potential'
   - 'Der pH und die CO₂-Konzentration'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -124,9 +125,9 @@ correctAnswers:
   - 'Hoher Wirkungsgrad (bis 60%)'
   - 'Keine teuren Edelmetallkatalysatoren nötig'
   - 'Brennstoffflexibilität (H₂, CH₄, CO)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -140,9 +141,9 @@ correctAnswers:
   - 'Sie schützt die Graphit-Anode vor weiterer Zersetzung des Elektrolyten'
   - 'Sie ist ionenleitend aber elektronenisolierend'
   - 'Ihre Bildung verbraucht Lithium (irreversibler Kapazitätsverlust)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
@@ -156,4 +157,3 @@ correctAnswers:
   - 'Höhere Energiedichte durch Lithium-Metall-Anoden'
   - 'Verbesserte Sicherheit (kein flüssiger Elektrolyt)'
   - 'Breiteres Temperaturfenster'
----

@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
@@ -9,9 +10,9 @@ options:
   - '2'
   - '3'
 correctAnswer: '2'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
@@ -22,22 +23,22 @@ options:
   - 'Ca₂Cl'
   - 'Ca₂Cl₃'
 correctAnswer: 'CaCl₂'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
 question: 'Wie viele bindende und freie Elektronenpaare hat Ammoniak (NH₃)?'
 options:
-  - '3 bindend, 0 frei'
   - '3 bindend, 1 frei'
+  - '3 bindend, 0 frei'
   - '4 bindend, 0 frei'
   - '2 bindend, 2 frei'
 correctAnswer: '3 bindend, 1 frei'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
@@ -48,48 +49,48 @@ options:
   - 'Al³⁺'
   - 'Al⁻'
 correctAnswer: 'Al³⁺'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
 question: 'In der Lewis-Struktur von CO₂: Wie viele Bindungen hat jedes Sauerstoffatom zum Kohlenstoff?'
 options:
   - 'Eine Einfachbindung'
-  - 'Eine Doppelbindung'
+  - 'Eine koordinative Bindung'
   - 'Eine Dreifachbindung'
-  - 'Keine Bindung'
+  - 'Eine Doppelbindung'
 correctAnswer: 'Eine Doppelbindung'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
 question: 'Welche ionische Verbindung entsteht aus Magnesium und Sauerstoff?'
 options:
-  - 'MgO'
   - 'Mg₂O'
+  - 'MgO'
   - 'MgO₂'
   - 'Mg₂O₃'
 correctAnswer: 'MgO'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
 question: 'Wie viele Valenzelektronen sind in der Lewis-Struktur von N₂ insgesamt?'
 options:
-  - '5'
   - '10'
+  - '5'
   - '14'
   - '7'
 correctAnswer: '10'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
@@ -97,25 +98,25 @@ question: 'Welche Bindungsart liegt in N₂ vor?'
 options:
   - 'Einfachbindung'
   - 'Doppelbindung'
-  - 'Dreifachbindung'
   - 'Ionische Bindung'
+  - 'Dreifachbindung'
 correctAnswer: 'Dreifachbindung'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
 question: 'Welche Formel hat die ionische Verbindung aus Aluminium und Sauerstoff?'
 options:
   - 'AlO'
-  - 'Al₂O₃'
   - 'Al₃O₂'
+  - 'Al₂O₃'
   - 'AlO₃'
 correctAnswer: 'Al₂O₃'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 2
@@ -126,4 +127,3 @@ options:
   - '3'
   - '4'
 correctAnswer: '3'
----

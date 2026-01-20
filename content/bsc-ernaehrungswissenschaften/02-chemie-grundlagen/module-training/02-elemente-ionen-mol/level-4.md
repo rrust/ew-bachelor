@@ -1,30 +1,31 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Elemente, Ionen & Mol'
 level: 4
 question: 'Berechne die molare Masse von Kupfersulfat-Pentahydrat (CuSO₄·5H₂O). (Cu = 63,5; S = 32; O = 16; H = 1 g/mol)'
 options:
-  - '159,5 g/mol'
   - '249,5 g/mol'
+  - '159,5 g/mol'
   - '169,5 g/mol'
   - '339,5 g/mol'
 correctAnswer: '249,5 g/mol'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elemente, Ionen & Mol'
 level: 4
 question: 'Wie viel Gramm Natriumchlorid (NaCl) enthält 2,5 × 10²⁴ Formeleinheiten? (M(NaCl) = 58,44 g/mol)'
 options:
   - '58,44 g'
-  - '146,1 g'
   - '242,7 g'
+  - '146,1 g'
   - '23,38 g'
 correctAnswer: '242,7 g'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -37,22 +38,22 @@ options:
 correctAnswers:
   - '0,5 mol'
   - '3,011 × 10²⁴'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elemente, Ionen & Mol'
 level: 4
 question: 'Ein unbekanntes Element bildet ein Ion mit 54 Elektronen und der Ladung +2. Welches Element ist es?'
 options:
   - 'Xenon (Xe)'
-  - 'Barium (Ba)'
   - 'Cäsium (Cs)'
+  - 'Barium (Ba)'
   - 'Iod (I)'
 correctAnswer: 'Barium (Ba)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -60,12 +61,12 @@ question: 'Berechne, wie viele Sauerstoff-Atome in 25 g Glucose (C₆H₁₂O₆
 options:
   - '5,02 × 10²²'
   - '8,36 × 10²²'
-  - '5,02 × 10²³'
   - '8,36 × 10²¹'
+  - '5,02 × 10²³'
 correctAnswer: '5,02 × 10²³'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -76,9 +77,9 @@ options:
   - '2,99 × 10⁻²² g'
   - '3,01 × 10⁻²³ g'
 correctAnswer: '2,99 × 10⁻²³ g'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -93,9 +94,9 @@ correctAnswers:
   - 'Fe³⁺ hat 23 Elektronen'
   - 'Beide Ionen haben 26 Protonen'
   - 'Fe³⁺ ist stabiler wegen der Halbbesetzung der d-Orbitale'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -106,9 +107,9 @@ options:
   - '4,5 mol'
   - '6 mol'
 correctAnswer: '3 mol'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -121,9 +122,9 @@ options:
 correctAnswers:
   - '4,75 g'
   - '0,0747 mol'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Elemente, Ionen & Mol'
 level: 4
@@ -136,4 +137,3 @@ options:
 correctAnswers:
   - '3:8'
   - '12:32'
----

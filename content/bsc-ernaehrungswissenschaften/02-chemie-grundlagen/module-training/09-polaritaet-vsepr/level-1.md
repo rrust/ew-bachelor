@@ -1,82 +1,83 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Was ist Elektronegativität?'
 options:
   - 'Die Fähigkeit eines Atoms, Elektronen abzugeben'
-  - 'Die Fähigkeit eines Atoms, Bindungselektronen anzuziehen'
-  - 'Die Anzahl der Valenzelektronen'
   - 'Die Größe eines Atoms'
+  - 'Die Anzahl der Valenzelektronen'
+  - 'Die Fähigkeit eines Atoms, Bindungselektronen anzuziehen'
 correctAnswer: 'Die Fähigkeit eines Atoms, Bindungselektronen anzuziehen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Welches Element hat die höchste Elektronegativität?'
 options:
   - 'Sauerstoff'
-  - 'Chlor'
   - 'Fluor'
+  - 'Chlor'
   - 'Stickstoff'
 correctAnswer: 'Fluor'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Was ist eine polare Bindung?'
 options:
   - 'Eine Bindung zwischen gleichen Atomen'
-  - 'Eine Bindung mit ungleicher Elektronenverteilung'
-  - 'Eine ionische Bindung'
   - 'Eine Bindung ohne Elektronen'
+  - 'Eine ionische Bindung'
+  - 'Eine Bindung mit ungleicher Elektronenverteilung'
 correctAnswer: 'Eine Bindung mit ungleicher Elektronenverteilung'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Was ist ein Dipolmoment?'
 options:
-  - 'Die Stärke einer ionischen Bindung'
   - 'Ein Maß für die Polarität eines Moleküls'
+  - 'Die Stärke einer ionischen Bindung'
   - 'Die Masse eines Moleküls'
   - 'Die Anzahl der Bindungen'
 correctAnswer: 'Ein Maß für die Polarität eines Moleküls'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Wofür steht VSEPR?'
 options:
-  - 'Valence Shell Electron Pair Repulsion'
   - 'Variable Shell Electronic Polar Reaction'
+  - 'Valence Shell Electron Pair Repulsion'
   - 'Valence Structure Electron Proton Radius'
   - 'Vertical Shell Energy Position Rule'
 correctAnswer: 'Valence Shell Electron Pair Repulsion'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Was besagt das VSEPR-Modell?'
 options:
+  - 'Moleküle mit gleicher Summenformel haben gleiche Geometrie'
+  - 'Elektronen ziehen sich gegenseitig an'
   - 'Elektronenpaare stoßen sich ab und ordnen sich so an, dass die Abstoßung minimal ist'
-  - 'Elektronen ziehen sich an'
-  - 'Alle Moleküle sind linear'
-  - 'Bindungen sind immer gleich lang'
+  - 'Die Bindungslängen hängen nur vom Zentralatom ab'
 correctAnswer: 'Elektronenpaare stoßen sich ab und ordnen sich so an, dass die Abstoßung minimal ist'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
@@ -84,12 +85,12 @@ question: 'Welche Molekülgeometrie hat ein Molekül mit 4 Elektronenpaaren und 
 options:
   - 'Linear'
   - 'Trigonal-planar'
-  - 'Tetraedrisch'
   - 'Oktaedrisch'
+  - 'Tetraedrisch'
 correctAnswer: 'Tetraedrisch'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
@@ -100,9 +101,9 @@ options:
   - 'Trigonal-planar'
   - 'Tetraedrisch'
 correctAnswer: 'Linear'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
@@ -113,17 +114,16 @@ options:
   - 'Eine ionische Bindung'
   - 'Eine koordinative Bindung'
 correctAnswer: 'Eine Bindung zwischen gleichen oder ähnlichen Atomen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Polarität & VSEPR'
 level: 1
 question: 'Welcher Bindungswinkel liegt in einem tetraedrischen Molekül vor?'
 options:
   - '90°'
-  - '109,5°'
   - '120°'
+  - '109,5°'
   - '180°'
 correctAnswer: '109,5°'
----
