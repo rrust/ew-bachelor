@@ -117,8 +117,8 @@ question: 'Bei der Elektrolyse von geschmolzenem NaCl: Was passiert an den Elekt
 options:
   - 'Kathode: Cl₂-Entwicklung; Anode: Na-Abscheidung'
   - 'Kathode: Na⁺ + e⁻ → Na; Anode: 2 Cl⁻ → Cl₂ + 2e⁻'
-  - 'An beiden Elektroden entsteht NaCl'
-  - 'Nur Ionenwanderung ohne Elektrodenreaktion'
+  - 'An beiden Elektroden bildet sich NaCl zurück'
+  - 'Kathode: 2 H₂O + 2e⁻ → H₂ + 2 OH⁻'
 correctAnswer: 'Kathode: Na⁺ + e⁻ → Na; Anode: 2 Cl⁻ → Cl₂ + 2e⁻'
 
 ---

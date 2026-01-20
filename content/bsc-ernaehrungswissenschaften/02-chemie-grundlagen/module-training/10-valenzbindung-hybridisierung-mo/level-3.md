@@ -5,10 +5,10 @@ topic: 'Valenzbindung, Hybridisierung & MO'
 level: 3
 question: 'Warum ist das hypothetische He₂-Molekül instabil?'
 options:
-  - 'Helium-Atome sind zu klein für Bindungen'
+  - 'Helium-Atome mit 2 e⁻ sind zu klein für Bindungen'
   - 'Die Bindungsordnung beträgt 0'
-  - 'Helium besitzt nur s-Orbitale'
-  - 'Die Elektronegativitätsdifferenz ist zu gering'
+  - 'Helium besitzt nur 1s-Orbitale'
+  - 'Die Elektronegativitätsdifferenz von 0 ist zu gering'
 correctAnswer: 'Die Bindungsordnung beträgt 0'
 
 ---
@@ -44,10 +44,10 @@ topic: 'Valenzbindung, Hybridisierung & MO'
 level: 3
 question: 'Das O₂-Molekül ist paramagnetisch. Was erklärt dies?'
 options:
-  - 'Die VB-Theorie sagt eine Doppelbindung voraus'
-  - 'Sauerstoff hat freie Elektronenpaare'
+  - 'Die VB-Theorie sagt eine Bindungsordnung von 2 voraus'
+  - 'Sauerstoff hat 2 freie Elektronenpaare pro Atom'
   - 'Die MO-Theorie zeigt 2 ungepaarte Elektronen in antibindenden π*-Orbitalen'
-  - 'Sauerstoff ist elektronegativ'
+  - 'Sauerstoff hat eine Elektronegativität von 3,44'
 correctAnswer: 'Die MO-Theorie zeigt 2 ungepaarte Elektronen in antibindenden π*-Orbitalen'
 
 ---
@@ -109,10 +109,10 @@ topic: 'Valenzbindung, Hybridisierung & MO'
 level: 3
 question: 'Warum ist die Bindung in N₂ so stark?'
 options:
-  - 'N ist sehr elektronegativ'
+  - 'N hat hohe Elektronegativität von 3,04'
   - 'Dreifachbindung mit Bindungsordnung 3'
-  - 'N₂ ist unpolar'
-  - 'N hat viele freie Elektronenpaare'
+  - 'N₂ hat ein Dipolmoment von 0'
+  - 'N hat 5 Valenzelektronen'
 correctAnswer: 'Dreifachbindung mit Bindungsordnung 3'
 
 ---

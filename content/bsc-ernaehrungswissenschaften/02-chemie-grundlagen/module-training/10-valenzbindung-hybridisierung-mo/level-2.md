@@ -110,9 +110,9 @@ level: 2
 question: 'Was ist die Bindungsordnung?'
 options:
   - '(Bindende Elektronen - Antibindende Elektronen) / 2'
-  - 'Bindende Elektronen + Antibindende Elektronen'
-  - 'Die Anzahl der Bindungen'
-  - 'Die Anzahl der freien Elektronenpaare'
+  - '(Bindende Elektronen + Antibindende Elektronen) / 2'
+  - 'Anzahl der σ-Bindungen + Anzahl der π-Bindungen'
+  - 'Anzahl der freien Elektronenpaare × 2'
 correctAnswer: '(Bindende Elektronen - Antibindende Elektronen) / 2'
 
 ---

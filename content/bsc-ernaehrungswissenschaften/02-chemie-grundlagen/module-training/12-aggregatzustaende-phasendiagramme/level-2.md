@@ -45,9 +45,9 @@ level: 2
 question: 'Trockeneis (festes CO₂) sublimiert bei Normaldruck. Was bedeutet das?'
 options:
   - 'Der Tripelpunkt von CO₂ liegt oberhalb von 1 atm'
-  - 'CO₂ kann bei Normaldruck nicht flüssig werden'
-  - 'Der Schmelzpunkt von CO₂ liegt unter dem Tripelpunkt'
-  - 'CO₂ sublimiert bei jeder Temperatur'
+  - 'CO₂ kann bei 1 atm nicht flüssig werden'
+  - 'Der Schmelzpunkt von CO₂ liegt bei -78°C'
+  - 'CO₂ sublimiert bei -78°C und 1 atm'
 correctAnswer: 'Der Tripelpunkt von CO₂ liegt oberhalb von 1 atm'
 
 ---

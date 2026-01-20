@@ -61,12 +61,12 @@ topic: 'Elemente, Ionen & Mol'
 level: 5
 question: 'Vergleiche die Anzahl der e⁻ in 1 g Na⁺ mit der Anzahl in 1 g Mg²⁺. (Na = 23, Mg = 24,3 g/mol)'
 options:
-  - 'Na⁺ hat mehr e⁻ pro Gramm'
-  - 'Mg²⁺ hat mehr e⁻ pro Gramm'
-  - 'Beide haben gleich viele e⁻ pro Gramm'
+  - 'Na⁺ hat etwa 2,6 × 10²² e⁻ pro Gramm'
+  - 'Mg²⁺ hat etwa 2,5 × 10²² e⁻ pro Gramm'
+  - 'Beide haben etwa 2,5 × 10²² e⁻ pro Gramm'
   - 'Beide Ionen haben je 10 e⁻ pro Teilchen'
 correctAnswers:
-  - 'Mg²⁺ hat mehr e⁻ pro Gramm'
+  - 'Mg²⁺ hat etwa 2,5 × 10²² e⁻ pro Gramm'
   - 'Beide Ionen haben je 10 e⁻ pro Teilchen'
 
 ---

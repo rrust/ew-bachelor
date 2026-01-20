@@ -114,9 +114,9 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 5
 question: 'Der Übergang eines Elektrons im Wasserstoffatom von n=5 zu n=2 emittiert Licht. In welcher Serie liegt diese Linie und welche Farbe hat sie ungefähr?'
 options:
-  - 'Lyman-Serie, UV'
+  - 'Lyman-Serie, UV (unter 400 nm)'
   - 'Balmer-Serie, blau-violett'
-  - 'Paschen-Serie, IR'
+  - 'Paschen-Serie, IR (über 700 nm)'
   - 'Die Wellenlänge beträgt etwa 434 nm'
 correctAnswers:
   - 'Balmer-Serie, blau-violett'

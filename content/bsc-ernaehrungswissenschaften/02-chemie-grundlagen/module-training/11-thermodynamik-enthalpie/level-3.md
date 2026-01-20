@@ -60,10 +60,10 @@ topic: 'Thermodynamik & Enthalpie'
 level: 3
 question: 'Die Gitterenergie von NaCl ist der Energiebetrag, der:'
 options:
-  - 'Bei der Lösung von NaCl in Wasser frei wird'
-  - 'Benötigt wird, um NaCl zu schmelzen'
+  - 'Bei der Lösung von 1 mol NaCl in Wasser frei wird'
+  - 'Benötigt wird, um 1 mol NaCl zu schmelzen'
   - 'Bei der Bildung von 1 mol NaCl aus gasförmigen Ionen frei wird'
-  - 'Benötigt wird, um NaCl zu verdampfen'
+  - 'Benötigt wird, um 1 mol NaCl zu verdampfen'
 correctAnswer: 'Bei der Bildung von 1 mol NaCl aus gasförmigen Ionen frei wird'
 
 ---

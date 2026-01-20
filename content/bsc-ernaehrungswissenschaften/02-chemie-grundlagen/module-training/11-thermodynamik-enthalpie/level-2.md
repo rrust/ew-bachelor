@@ -83,10 +83,10 @@ topic: 'Thermodynamik & Enthalpie'
 level: 2
 question: 'Was ist die spezifische Wärmekapazität?'
 options:
-  - 'Die maximale Temperatur eines Stoffes'
-  - 'Die Wärmemenge bei der Verbrennung'
+  - 'Die maximale Temperatur in K oder °C'
+  - 'Die Wärmemenge in kJ/mol bei der Verbrennung'
   - 'Die Wärmemenge, die 1 g eines Stoffes um 1°C erwärmt'
-  - 'Die Wärmeleitfähigkeit'
+  - 'Die Wärmeleitfähigkeit in W/(m·K)'
 correctAnswer: 'Die Wärmemenge, die 1 g eines Stoffes um 1°C erwärmt'
 
 ---
@@ -122,8 +122,8 @@ topic: 'Thermodynamik & Enthalpie'
 level: 2
 question: 'Was ist die Verbrennungsenthalpie?'
 options:
-  - 'Die Enthalpie bei der Lösung in Wasser'
-  - 'Die Enthalpie bei der Bildung aus den Elementen'
-  - 'Die Enthalpie beim Schmelzen'
+  - 'Die Enthalpieänderung bei der Lösung in 1 L Wasser'
+  - 'Die Enthalpieänderung bei der Bildung aus 1 mol Elementen'
+  - 'Die Enthalpieänderung beim Schmelzen bei 0°C'
   - 'Die Enthalpieänderung bei der vollständigen Verbrennung von 1 mol einer Substanz mit O₂'
 correctAnswer: 'Die Enthalpieänderung bei der vollständigen Verbrennung von 1 mol einer Substanz mit O₂'

@@ -57,9 +57,9 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was besagt das Pauli-Prinzip?'
 options:
-  - 'Elektronen füllen zuerst die niedrigsten Energieniveaus'
-  - 'Elektronen im selben Orbital haben identischen Spin'
-  - 'Elektronen besetzen Orbitale zuerst einzeln'
+  - 'Elektronen füllen zuerst die Schalen mit n = 1, 2, 3'
+  - 'Elektronen im selben Orbital haben identischen Spin (+½)'
+  - 'Orbitale werden mit maximal 1 e⁻ zuerst besetzt'
   - 'Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin'
 correctAnswer: 'Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin'
 
