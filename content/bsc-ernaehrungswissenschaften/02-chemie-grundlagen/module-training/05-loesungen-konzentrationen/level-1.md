@@ -16,13 +16,13 @@ correctAnswer: 'Der Stoff, der in größerer Menge vorliegt und andere Stoffe l�
 type: 'multiple-choice'
 topic: 'Lösungen & Konzentrationen'
 level: 1
-question: 'Was ist der gelöste Stoff?'
+question: 'Wie bezeichnet man die Komponente, die im Lösungsmittel verteilt wird?'
 options:
-  - 'Der Stoff, der andere Stoffe löst'
-  - 'Der Niederschlag'
-  - 'Der Stoff, der in geringerer Menge im Lösungsmittel gelöst ist'
-  - 'Das Lösungsmittel selbst'
-correctAnswer: 'Der Stoff, der in geringerer Menge im Lösungsmittel gelöst ist'
+  - 'Das ist die Komponente, die andere auflöst'
+  - 'Das ist der Niederschlag einer Reaktion'
+  - 'Das ist die Komponente in geringerer Menge, die aufgelöst wird'
+  - 'Das ist das Lösungsmittel selbst'
+correctAnswer: 'Das ist die Komponente in geringerer Menge, die aufgelöst wird'
 
 ---
 
@@ -107,23 +107,23 @@ correctAnswer: 'Masse des gelösten Stoffes geteilt durch Gesamtmasse der Lösun
 type: 'multiple-choice'
 topic: 'Lösungen & Konzentrationen'
 level: 1
-question: 'Was ist eine übersättigte Lösung?'
+question: 'Was kennzeichnet eine übersättigte Lösung?'
 options:
-  - 'Eine Lösung, die mehr gelösten Stoff enthält, als der Sättigung entspricht'
-  - 'Eine Lösung mit weniger gelöstem Stoff als möglich'
-  - 'Eine stark verdünnte Lösung'
-  - 'Eine Lösung bei 0°C'
-correctAnswer: 'Eine Lösung, die mehr gelösten Stoff enthält, als der Sättigung entspricht'
+  - 'Sie enthält mehr Solut als dem Gleichgewicht entspricht'
+  - 'Sie hat weniger Solut als möglich'
+  - 'Sie ist stark verdünnt'
+  - 'Sie befindet sich bei 0°C'
+correctAnswer: 'Sie enthält mehr Solut als dem Gleichgewicht entspricht'
 
 ---
 
 type: 'multiple-choice'
 topic: 'Lösungen & Konzentrationen'
 level: 1
-question: 'Welche Aussage über Wasser als Lösungsmittel ist korrekt?'
+question: 'Welche Eigenschaft beschreibt H₂O als universelles Lösungsmittel am besten?'
 options:
-  - 'Wasser löst nur unpolare Stoffe'
-  - 'Wasser löst keine Salze'
-  - 'Wasser ist ein polares Lösungsmittel'
-  - 'Wasser ist unpolar'
-correctAnswer: 'Wasser ist ein polares Lösungsmittel'
+  - 'H₂O löst nur unpolare Verbindungen'
+  - 'H₂O kann keine Salze auflösen'
+  - 'H₂O ist polar und löst viele Stoffe'
+  - 'H₂O ist unpolar und inert'
+correctAnswer: 'H₂O ist polar und löst viele Stoffe'

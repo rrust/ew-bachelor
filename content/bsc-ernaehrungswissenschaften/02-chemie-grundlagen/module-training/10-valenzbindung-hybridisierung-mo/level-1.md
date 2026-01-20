@@ -42,26 +42,26 @@ correctAnswer: 'sp³'
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 1
-question: 'Was ist eine σ-Bindung (Sigma-Bindung)?'
+question: 'Was kennzeichnet eine σ-Bindung (Sigma-Bindung)?'
 options:
-  - 'Eine Bindung durch seitliche Orbitalüberlappung'
-  - 'Eine Bindung durch Überlappung entlang der Bindungsachse'
-  - 'Eine ionische Bindung'
-  - 'Eine Wasserstoffbrücke'
-correctAnswer: 'Eine Bindung durch Überlappung entlang der Bindungsachse'
+  - 'Seitliche Überlappung von p-Orbitalen'
+  - 'Frontal-Überlappung entlang der Kernverbindungsachse'
+  - 'Elektrostatische Anziehung zwischen Ionen'
+  - 'Schwache intermolekulare Wechselwirkung'
+correctAnswer: 'Frontal-Überlappung entlang der Kernverbindungsachse'
 
 ---
 
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 1
-question: 'Was ist eine π-Bindung (Pi-Bindung)?'
+question: 'Was kennzeichnet eine π-Bindung (Pi-Bindung)?'
 options:
-  - 'Eine Bindung durch Überlappung entlang der Bindungsachse'
-  - 'Eine Einfachbindung'
-  - 'Eine Bindung durch seitliche Orbitalüberlappung'
-  - 'Eine ionische Bindung'
-correctAnswer: 'Eine Bindung durch seitliche Orbitalüberlappung'
+  - 'Frontal-Überlappung entlang der Kernverbindungsachse'
+  - 'Charakteristisch für Einfachbindungen'
+  - 'Laterale Überlappung von p-Orbitalen'
+  - 'Elektrostatische Anziehung zwischen Ionen'
+correctAnswer: 'Laterale Überlappung von p-Orbitalen'
 
 ---
 

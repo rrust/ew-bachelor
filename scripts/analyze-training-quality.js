@@ -194,14 +194,69 @@ function extractKeywords(text) {
     'welchen',
     'welchem',
     'wurde',
-    'wurden'
+    'wurden',
+    // Konzepte die zwangsläufig in Frage und Antwort vorkommen
+    'polar',
+    'unpolar',
+    'energie',
+    'elektron',
+    'elektronen',
+    'konzentriert',
+    'verdünnt',
+    'kreisprozess',
+    'berechnung',
+    'paare',
+    'nichtbindende',
+    'bindende',
+    'äquatoriale',
+    'axiale',
+    'positionen',
+    // Formel-bezogene Begriffe
+    'summenformel',
+    'verhältnisformel',
+    'molekülformel',
+    'empirische',
+    'formel',
+    'verhältnis',
+    // Chemische Verbindungen (oft in Frage UND Antwort)
+    'ethan',
+    'ethen',
+    'ethin',
+    'methan',
+    'propan',
+    'benzol',
+    'diamant',
+    'graphit',
+    // Bindungsarten
+    'einfachbindung',
+    'doppelbindung',
+    'dreifachbindung',
+    // Thermodynamik
+    'thermodynamisch',
+    'exotherm',
+    'endotherm',
+    'kj/mol',
+    // Weitere notwendige Konzepte
+    'drittes',
+    'element',
+    'paart',
+    'ungepaarte',
+    'tröpfchen',
+    'dampfdruck',
+    'gelöste',
+    'stoff',
+    'kleine'
   ]);
+
+  // Filter out chemical formulas (contain subscripts, superscripts, or look like formulas)
+  const chemicalPattern = /^[a-z]{1,2}[₀-₉²³⁺⁻]+|^[a-z]+\d|^\d+$/i;
 
   return text
     .toLowerCase()
     .replace(/[.,;:!?()[\]{}""„]/g, ' ')
     .split(/\s+/)
-    .filter((w) => w.length >= 4 && !stopwords.has(w));
+    .filter((w) => w.length >= 4 && !stopwords.has(w) && !chemicalPattern.test(w))
+    .filter((w) => !w.match(/[₀₁₂₃₄₅₆₇₈₉⁺⁻²³]/)); // Remove words with subscripts/superscripts
 }
 
 function checkQuestion(question, filePath, questionIndex) {

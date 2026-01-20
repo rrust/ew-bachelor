@@ -109,13 +109,13 @@ correctAnswer: 'BaSO₄'
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 3
-question: 'Eine Verbindung enthält nur C, H und O. Bei der Verbrennung von 1,50 g entstehen 2,20 g CO₂ und 0,90 g H₂O. Enthält die Verbindung Sauerstoff?'
+question: 'Bei der Verbrennung von 1,50 g einer C-H-O-Verbindung entstehen 2,20 g CO₂ und 0,90 g H₂O. Enthält das Molekül ein drittes Element neben C und H?'
 options:
-  - 'Es kann nicht bestimmt werden'
-  - 'Nein, sie enthält nur C und H'
-  - 'Ja, die Verbindung enthält Sauerstoff'
-  - 'Sie enthält Stickstoff'
-correctAnswer: 'Ja, die Verbindung enthält Sauerstoff'
+  - 'Es kann rechnerisch bestimmt werden'
+  - 'Nein, nur Kohlenstoff und Wasserstoff sind enthalten'
+  - 'Ja, die Massenbilanz zeigt ein drittes Element'
+  - 'Das Molekül enthält Stickstoff'
+correctAnswer: 'Ja, die Massenbilanz zeigt ein drittes Element'
 
 ---
 

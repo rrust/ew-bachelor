@@ -128,31 +128,31 @@ correctAnswers:
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
-question: 'Die effektive Kernladung Z_eff für das Valenzelektron von Natrium beträgt etwa +2,2, obwohl die tatsächliche Kernladung +11 ist. Welche Schlussfolgerungen sind richtig?'
+question: 'Die effektive Kernladung für das äußerste Elektron von Na beträgt etwa +2,2, obwohl die tatsächliche Kernladung +11 ist. Welche Schlussfolgerungen sind richtig?'
 options:
   - 'Die inneren 10 Elektronen schirmen etwa 8,8 Kernladungen ab'
-  - 'Die Abschirmung ist nicht vollständig, da die Elektronenorbitale sich durchdringen'
-  - 'Z_eff erklärt, warum das Valenzelektron relativ leicht abgegeben wird'
-  - 'Bei Magnesium ist Z_eff für die Valenzelektronen höher als bei Natrium'
+  - 'Die Abschirmung ist nicht vollständig, da die Orbitale sich durchdringen'
+  - 'Dies erklärt, warum das äußerste Elektron relativ leicht abgegeben wird'
+  - 'Bei Mg ist dieser Wert für die äußersten Elektronen höher'
 correctAnswers:
   - 'Die inneren 10 Elektronen schirmen etwa 8,8 Kernladungen ab'
-  - 'Die Abschirmung ist nicht vollständig, da die Elektronenorbitale sich durchdringen'
-  - 'Z_eff erklärt, warum das Valenzelektron relativ leicht abgegeben wird'
-  - 'Bei Magnesium ist Z_eff für die Valenzelektronen höher als bei Natrium'
+  - 'Die Abschirmung ist nicht vollständig, da die Orbitale sich durchdringen'
+  - 'Dies erklärt, warum das äußerste Elektron relativ leicht abgegeben wird'
+  - 'Bei Mg ist dieser Wert für die äußersten Elektronen höher'
 
 ---
 
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
-question: 'Analysiere die Anomalie der Elektronenaffinität: EA(F) = -328 kJ/mol, EA(Cl) = -349 kJ/mol. Warum hat Chlor eine höhere (negativere) Elektronenaffinität als Fluor, obwohl Fluor elektronegativer ist?'
+question: 'Analysiere die Anomalie: EA(F) = -328 kJ/mol, EA(Cl) = -349 kJ/mol. Warum hat das größere Halogen die höhere (negativere) Elektronenaffinität?'
 options:
-  - 'Das kleine Fluoratom hat eine höhere Elektronendichte, was zu stärkerer Elektron-Elektron-Abstoßung führt'
-  - 'Chlor hat größere Orbitale, die ein zusätzliches Elektron besser aufnehmen können'
-  - 'Fluor ist zu klein für eine effiziente Aufnahme eines weiteren Elektrons'
-  - 'Die Elektronegativität und die Elektronenaffinität messen unterschiedliche Eigenschaften'
+  - 'Das kleine F-Atom hat hohe Elektronendichte, was zu stärkerer e⁻-e⁻-Abstoßung führt'
+  - 'Cl hat größere Orbitale, die ein zusätzliches e⁻ besser aufnehmen können'
+  - 'F ist zu klein für effiziente Aufnahme eines weiteren e⁻'
+  - 'Elektronegativität und Elektronenaffinität messen unterschiedliche Eigenschaften'
 correctAnswers:
-  - 'Das kleine Fluoratom hat eine höhere Elektronendichte, was zu stärkerer Elektron-Elektron-Abstoßung führt'
-  - 'Chlor hat größere Orbitale, die ein zusätzliches Elektron besser aufnehmen können'
-  - 'Fluor ist zu klein für eine effiziente Aufnahme eines weiteren Elektrons'
-  - 'Die Elektronegativität und die Elektronenaffinität messen unterschiedliche Eigenschaften'
+  - 'Das kleine F-Atom hat hohe Elektronendichte, was zu stärkerer e⁻-e⁻-Abstoßung führt'
+  - 'Cl hat größere Orbitale, die ein zusätzliches e⁻ besser aufnehmen können'
+  - 'F ist zu klein für effiziente Aufnahme eines weiteren e⁻'
+  - 'Elektronegativität und Elektronenaffinität messen unterschiedliche Eigenschaften'

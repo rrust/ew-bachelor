@@ -29,15 +29,15 @@ correctAnswer: 'S mit zwei Doppelbindungen und zwei Einfachbindungen (S: 0, zwei
 type: 'multiple-choice-multiple'
 topic: 'Ionenbindung & Lewis'
 level: 5
-question: 'Erkläre den Unterschied zwischen dem Born-Haber-Kreisprozess und der Born-Landé-Gleichung zur Bestimmung der Gitterenergie.'
+question: 'Wie unterscheiden sich die zwei Methoden zur Bestimmung der Gitterenergie (Kreisprozess vs. elektrostatische Berechnung)?'
 options:
-  - 'Born-Haber ist experimentell, Born-Landé ist theoretisch'
-  - 'Born-Haber nutzt Hess''schen Satz, Born-Landé nutzt elektrostatische Berechnungen'
+  - 'Der Kreisprozess ist experimentell, die Berechnung ist theoretisch'
+  - 'Der Kreisprozess nutzt den Hess''schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen'
   - 'Abweichungen zwischen beiden deuten auf kovalente Anteile hin'
-  - 'Beide Methoden liefern immer identische Werte'
+  - 'Beide Methoden liefern stets identische Werte'
 correctAnswers:
-  - 'Born-Haber ist experimentell, Born-Landé ist theoretisch'
-  - 'Born-Haber nutzt Hess''schen Satz, Born-Landé nutzt elektrostatische Berechnungen'
+  - 'Der Kreisprozess ist experimentell, die Berechnung ist theoretisch'
+  - 'Der Kreisprozess nutzt den Hess''schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen'
   - 'Abweichungen zwischen beiden deuten auf kovalente Anteile hin'
 
 ---
@@ -45,13 +45,13 @@ correctAnswers:
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 5
-question: 'Das ICl₄⁻-Ion hat eine quadratisch-planare Struktur. Wie viele freie Elektronenpaare hat Iod und wo sind diese positioniert?'
+question: 'Das ICl₄⁻-Ion hat quadratisch-planare Geometrie. Wie viele nichtbindende Elektronenpaare hat I und wie sind sie positioniert?'
 options:
-  - '3 freie Paare; Iod hat expandiertes Oktett'
-  - '1 freies Paar; es befindet sich in äquatorialer Position'
-  - '2 freie Paare; sie besetzen axiale Positionen der oktaedrischen Anordnung'
-  - '2 freie Paare; sie besetzen äquatoriale Positionen'
-correctAnswer: '2 freie Paare; sie besetzen axiale Positionen der oktaedrischen Anordnung'
+  - '3 nichtbindende Paare; expandierte Valenzschale'
+  - '1 nichtbindendes Paar; äquatoriale Position'
+  - '2 nichtbindende Paare; axiale Positionen im Oktaeder'
+  - '2 nichtbindende Paare; äquatoriale Positionen im Oktaeder'
+correctAnswer: '2 nichtbindende Paare; axiale Positionen im Oktaeder'
 
 ---
 

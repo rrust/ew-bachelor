@@ -94,15 +94,15 @@ correctAnswer: 'Ein Elektronenpaar, das nur an einem Atom lokalisiert ist'
 type: 'multiple-choice-multiple'
 topic: 'Ionenbindung & Lewis'
 level: 1
-question: 'Was ist die Gitterenergie?'
+question: 'Was beschreibt die Gitterenergie U einer Ionenverbindung?'
 options:
-  - 'Die Energie, die beim Bilden eines Ionengitters freigesetzt wird'
-  - 'Die Energie, die zur Trennung aller Ionen im Gitter benötigt wird'
+  - 'Die bei der Kristallbildung freigesetzte Energie'
+  - 'Die zur vollständigen Trennung des Kristalls nötige Energie'
   - 'Die kinetische Energie der Ionen'
-  - 'Die Gitterenergie ist unabhängig von den Ionenladungen'
+  - 'Der Wert ist unabhängig von den Ionenladungen'
 correctAnswers:
-  - 'Die Energie, die beim Bilden eines Ionengitters freigesetzt wird'
-  - 'Die Energie, die zur Trennung aller Ionen im Gitter benötigt wird'
+  - 'Die bei der Kristallbildung freigesetzte Energie'
+  - 'Die zur vollständigen Trennung des Kristalls nötige Energie'
   - 'Die kinetische Energie der Ionen'
 
 ---

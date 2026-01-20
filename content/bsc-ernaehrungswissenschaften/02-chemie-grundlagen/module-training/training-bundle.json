@@ -7,7 +7,7 @@
   "questionsPerLevel": 10,
   "levels": 5,
   "version": "1.0.0",
-  "generatedAt": "2026-01-20T22:10:03.256Z",
+  "generatedAt": "2026-01-20T22:23:33.448Z",
   "topics": [
     {
       "id": "01-aufbau-atome-periodensystem",
@@ -252,18 +252,18 @@
           },
           {
             "id": "01-aufbau-atome-periodensystem:4:1",
-            "question": "Welche Aussagen über die Ionisierungsenergie sind korrekt?",
+            "question": "Welche Aussagen über IE (Ionization Energy) sind korrekt?",
             "options": [
-              "Die erste Ionisierungsenergie ist die Energie, um das erste Elektron zu entfernen",
-              "Die zweite Ionisierungsenergie ist immer größer als die erste",
-              "Bei Alkalimetallen ist die zweite Ionisierungsenergie deutlich höher als die erste",
-              "Edelgase haben niedrige Ionisierungsenergien"
+              "IE₁ beschreibt die Energie zur Entfernung des ersten Elektrons",
+              "IE₂ ist stets größer als IE₁",
+              "Bei Alkalimetallen ist IE₂ deutlich höher als IE₁",
+              "Edelgase haben niedrige IE-Werte"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Die erste Ionisierungsenergie ist die Energie, um das erste Elektron zu entfernen",
-              "Die zweite Ionisierungsenergie ist immer größer als die erste",
-              "Bei Alkalimetallen ist die zweite Ionisierungsenergie deutlich höher als die erste"
+              "IE₁ beschreibt die Energie zur Entfernung des ersten Elektrons",
+              "IE₂ ist stets größer als IE₁",
+              "Bei Alkalimetallen ist IE₂ deutlich höher als IE₁"
             ]
           },
           {
@@ -298,18 +298,18 @@
           },
           {
             "id": "01-aufbau-atome-periodensystem:4:4",
-            "question": "Die Elektronenaffinität von Chlor beträgt -349 kJ/mol. Was bedeutet dieser negative Wert?",
+            "question": "Die Elektronenaffinität (EA) von Cl beträgt -349 kJ/mol. Was bedeutet dieser negative Wert?",
             "options": [
-              "Energie wird freigesetzt, wenn Chlor ein Elektron aufnimmt",
-              "Die Aufnahme eines Elektrons ist energetisch günstig",
-              "Chlor gibt leicht Elektronen ab",
-              "Das entstehende Cl⁻-Ion ist stabiler als das neutrale Cl-Atom"
+              "Bei der Aufnahme eines e⁻ wird Energie freigesetzt",
+              "Die e⁻-Aufnahme ist energetisch günstig",
+              "Cl gibt leicht Elektronen ab",
+              "Das entstehende Anion ist stabiler als das neutrale Atom"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Energie wird freigesetzt, wenn Chlor ein Elektron aufnimmt",
-              "Die Aufnahme eines Elektrons ist energetisch günstig",
-              "Das entstehende Cl⁻-Ion ist stabiler als das neutrale Cl-Atom"
+              "Bei der Aufnahme eines e⁻ wird Energie freigesetzt",
+              "Die e⁻-Aufnahme ist energetisch günstig",
+              "Das entstehende Anion ist stabiler als das neutrale Atom"
             ]
           }
         ],
@@ -378,19 +378,19 @@
           },
           {
             "id": "01-aufbau-atome-periodensystem:5:4",
-            "question": "Die effektive Kernladung Z_eff für das Valenzelektron von Natrium beträgt etwa +2,2, obwohl die tatsächliche Kernladung +11 ist. Welche Schlussfolgerungen sind richtig?",
+            "question": "Die effektive Kernladung für das äußerste Elektron von Na beträgt etwa +2,2, obwohl die tatsächliche Kernladung +11 ist. Welche Schlussfolgerungen sind richtig?",
             "options": [
               "Die inneren 10 Elektronen schirmen etwa 8,8 Kernladungen ab",
-              "Die Abschirmung ist nicht vollständig, da die Elektronenorbitale sich durchdringen",
-              "Z_eff erklärt, warum das Valenzelektron relativ leicht abgegeben wird",
-              "Bei Magnesium ist Z_eff für die Valenzelektronen höher als bei Natrium"
+              "Die Abschirmung ist nicht vollständig, da die Orbitale sich durchdringen",
+              "Dies erklärt, warum das äußerste Elektron relativ leicht abgegeben wird",
+              "Bei Mg ist dieser Wert für die äußersten Elektronen höher"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
               "Die inneren 10 Elektronen schirmen etwa 8,8 Kernladungen ab",
-              "Die Abschirmung ist nicht vollständig, da die Elektronenorbitale sich durchdringen",
-              "Z_eff erklärt, warum das Valenzelektron relativ leicht abgegeben wird",
-              "Bei Magnesium ist Z_eff für die Valenzelektronen höher als bei Natrium"
+              "Die Abschirmung ist nicht vollständig, da die Orbitale sich durchdringen",
+              "Dies erklärt, warum das äußerste Elektron relativ leicht abgegeben wird",
+              "Bei Mg ist dieser Wert für die äußersten Elektronen höher"
             ]
           }
         ]
@@ -733,17 +733,17 @@
           },
           {
             "id": "02-elemente-ionen-mol:5:2",
-            "question": "Vergleiche die Anzahl der Elektronen in 1 g Na⁺-Ionen mit der Anzahl in 1 g Mg²⁺-Ionen. (Na = 23, Mg = 24,3 g/mol)",
+            "question": "Vergleiche die Anzahl der e⁻ in 1 g Na⁺ mit der Anzahl in 1 g Mg²⁺. (Na = 23, Mg = 24,3 g/mol)",
             "options": [
-              "Na⁺ hat mehr Elektronen pro Gramm",
-              "Mg²⁺ hat mehr Elektronen pro Gramm",
-              "Beide haben gleich viele Elektronen pro Gramm",
-              "Na⁺ hat 10 Elektronen, Mg²⁺ hat 10 Elektronen pro Ion"
+              "Na⁺ hat mehr e⁻ pro Gramm",
+              "Mg²⁺ hat mehr e⁻ pro Gramm",
+              "Beide haben gleich viele e⁻ pro Gramm",
+              "Beide Ionen haben je 10 e⁻ pro Teilchen"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Mg²⁺ hat mehr Elektronen pro Gramm",
-              "Na⁺ hat 10 Elektronen, Mg²⁺ hat 10 Elektronen pro Ion"
+              "Mg²⁺ hat mehr e⁻ pro Gramm",
+              "Beide Ionen haben je 10 e⁻ pro Teilchen"
             ]
           },
           {
@@ -1360,16 +1360,16 @@
           },
           {
             "id": "04-reaktionen-empirische-formeln:3:4",
-            "question": "Eine Verbindung enthält nur C, H und O. Bei der Verbrennung von 1,50 g entstehen 2,20 g CO₂ und 0,90 g H₂O. Enthält die Verbindung Sauerstoff?",
+            "question": "Bei der Verbrennung von 1,50 g einer C-H-O-Verbindung entstehen 2,20 g CO₂ und 0,90 g H₂O. Enthält das Molekül ein drittes Element neben C und H?",
             "options": [
-              "Es kann nicht bestimmt werden",
-              "Nein, sie enthält nur C und H",
-              "Ja, die Verbindung enthält Sauerstoff",
-              "Sie enthält Stickstoff"
+              "Es kann rechnerisch bestimmt werden",
+              "Nein, nur Kohlenstoff und Wasserstoff sind enthalten",
+              "Ja, die Massenbilanz zeigt ein drittes Element",
+              "Das Molekül enthält Stickstoff"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "Ja, die Verbindung enthält Sauerstoff"
+              "Ja, die Massenbilanz zeigt ein drittes Element"
             ]
           }
         ],
@@ -1587,16 +1587,16 @@
           },
           {
             "id": "05-loesungen-konzentrationen:1:4",
-            "question": "Was ist eine übersättigte Lösung?",
+            "question": "Was kennzeichnet eine übersättigte Lösung?",
             "options": [
-              "Eine Lösung, die mehr gelösten Stoff enthält, als der Sättigung entspricht",
-              "Eine Lösung mit weniger gelöstem Stoff als möglich",
-              "Eine stark verdünnte Lösung",
-              "Eine Lösung bei 0°C"
+              "Sie enthält mehr Solut als dem Gleichgewicht entspricht",
+              "Sie hat weniger Solut als möglich",
+              "Sie ist stark verdünnt",
+              "Sie befindet sich bei 0°C"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "Eine Lösung, die mehr gelösten Stoff enthält, als der Sättigung entspricht"
+              "Sie enthält mehr Solut als dem Gleichgewicht entspricht"
             ]
           }
         ],
@@ -1973,16 +1973,16 @@
         "2": [
           {
             "id": "06-saeuren-basen-grundlagen:2:0",
-            "question": "Ordne die folgenden Säuren als stark oder schwach ein: HNO₃, CH₃COOH, H₂SO₄, HF",
+            "question": "Klassifiziere diese Säuren nach Stärke: HNO₃, CH₃COOH, H₂SO₄, HF",
             "options": [
-              "Alle sind stark",
-              "Alle sind schwach",
-              "HNO₃ und H₂SO₄ sind stark; CH₃COOH und HF sind schwach",
-              "Nur H₂SO₄ ist stark"
+              "Alle vier dissoziieren vollständig",
+              "Alle vier dissoziieren nur teilweise",
+              "HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise",
+              "Nur H₂SO₄ dissoziiert vollständig"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "HNO₃ und H₂SO₄ sind stark; CH₃COOH und HF sind schwach"
+              "HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise"
             ]
           },
           {
@@ -2880,16 +2880,16 @@
           },
           {
             "id": "08-ionenbindung-lewis:4:1",
-            "question": "Warum kann Schwefel in SF₆ die Oktettregel verletzen?",
+            "question": "Warum kann S in SF₆ mehr als 8 Valenzelektronen haben?",
             "options": [
-              "Schwefel ist ein Metall",
-              "Schwefel hat d-Orbitale zur Verfügung (expandiertes Oktett)",
-              "Fluor ist zu klein",
-              "Die Bindungen sind ionisch"
+              "S ist ein Metall mit metallischer Bindung",
+              "S nutzt d-Orbitale für expandierte Valenzschale",
+              "F-Atome sind zu klein für normale Bindungen",
+              "Die Bindungen sind überwiegend ionisch"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "Schwefel hat d-Orbitale zur Verfügung (expandiertes Oktett)"
+              "S nutzt d-Orbitale für expandierte Valenzschale"
             ]
           },
           {
@@ -2955,17 +2955,17 @@
           },
           {
             "id": "08-ionenbindung-lewis:5:1",
-            "question": "Erkläre den Unterschied zwischen dem Born-Haber-Kreisprozess und der Born-Landé-Gleichung zur Bestimmung der Gitterenergie.",
+            "question": "Wie unterscheiden sich die zwei Methoden zur Bestimmung der Gitterenergie (Kreisprozess vs. elektrostatische Berechnung)?",
             "options": [
-              "Born-Haber ist experimentell, Born-Landé ist theoretisch",
-              "Born-Haber nutzt Hess'schen Satz, Born-Landé nutzt elektrostatische Berechnungen",
+              "Der Kreisprozess ist experimentell, die Berechnung ist theoretisch",
+              "Der Kreisprozess nutzt den Hess'schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen",
               "Abweichungen zwischen beiden deuten auf kovalente Anteile hin",
-              "Beide Methoden liefern immer identische Werte"
+              "Beide Methoden liefern stets identische Werte"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Born-Haber ist experimentell, Born-Landé ist theoretisch",
-              "Born-Haber nutzt Hess'schen Satz, Born-Landé nutzt elektrostatische Berechnungen",
+              "Der Kreisprozess ist experimentell, die Berechnung ist theoretisch",
+              "Der Kreisprozess nutzt den Hess'schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen",
               "Abweichungen zwischen beiden deuten auf kovalente Anteile hin"
             ]
           },
@@ -3423,16 +3423,16 @@
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:2",
-            "question": "Was ist eine π-Bindung (Pi-Bindung)?",
+            "question": "Was kennzeichnet eine π-Bindung (Pi-Bindung)?",
             "options": [
-              "Eine Bindung durch Überlappung entlang der Bindungsachse",
-              "Eine Einfachbindung",
-              "Eine Bindung durch seitliche Orbitalüberlappung",
-              "Eine ionische Bindung"
+              "Frontal-Überlappung entlang der Kernverbindungsachse",
+              "Charakteristisch für Einfachbindungen",
+              "Laterale Überlappung von p-Orbitalen",
+              "Elektrostatische Anziehung zwischen Ionen"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "Eine Bindung durch seitliche Orbitalüberlappung"
+              "Laterale Überlappung von p-Orbitalen"
             ]
           },
           {
@@ -5586,16 +5586,16 @@
         "5": [
           {
             "id": "15-elektrochemie-redox:5:0",
-            "question": "Das Pourbaix-Diagramm zeigt Stabilitätsbereiche von Metallspezies als Funktion von pH und Potential. Was zeigt es für Eisen?",
+            "question": "Das Pourbaix-Diagramm zeigt für ein Metall die Phasen als Funktion von pH und Potential. Welche Informationen liefert es für Fe?",
             "options": [
-              "Bereiche, in denen Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ stabil sind",
+              "Zeigt wo Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ vorliegen",
               "Die Korrosionsbedingungen können abgelesen werden",
               "Passivierung durch Oxidschichten ist bei bestimmten pH/E erkennbar",
-              "Das Pourbaix-Diagramm zeigt nur die Stabilität von reinem Metall"
+              "Das Diagramm zeigt nur die Stabilität von reinem Metall"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Bereiche, in denen Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ stabil sind",
+              "Zeigt wo Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ vorliegen",
               "Die Korrosionsbedingungen können abgelesen werden",
               "Passivierung durch Oxidschichten ist bei bestimmten pH/E erkennbar"
             ]

@@ -3,13 +3,13 @@
 type: 'multiple-choice'
 topic: 'Säuren & Basen Grundlagen'
 level: 2
-question: 'Ordne die folgenden Säuren als stark oder schwach ein: HNO₃, CH₃COOH, H₂SO₄, HF'
+question: 'Klassifiziere diese Säuren nach Stärke: HNO₃, CH₃COOH, H₂SO₄, HF'
 options:
-  - 'Alle sind stark'
-  - 'Alle sind schwach'
-  - 'HNO₃ und H₂SO₄ sind stark; CH₃COOH und HF sind schwach'
-  - 'Nur H₂SO₄ ist stark'
-correctAnswer: 'HNO₃ und H₂SO₄ sind stark; CH₃COOH und HF sind schwach'
+  - 'Alle vier dissoziieren vollständig'
+  - 'Alle vier dissoziieren nur teilweise'
+  - 'HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise'
+  - 'Nur H₂SO₄ dissoziiert vollständig'
+correctAnswer: 'HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise'
 
 ---
 

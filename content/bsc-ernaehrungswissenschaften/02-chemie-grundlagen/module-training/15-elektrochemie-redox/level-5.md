@@ -3,14 +3,14 @@
 type: 'multiple-choice-multiple'
 topic: 'Elektrochemie & Redox'
 level: 5
-question: 'Das Pourbaix-Diagramm zeigt Stabilitätsbereiche von Metallspezies als Funktion von pH und Potential. Was zeigt es für Eisen?'
+question: 'Das Pourbaix-Diagramm zeigt für ein Metall die Phasen als Funktion von pH und Potential. Welche Informationen liefert es für Fe?'
 options:
-  - 'Bereiche, in denen Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ stabil sind'
+  - 'Zeigt wo Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ vorliegen'
   - 'Die Korrosionsbedingungen können abgelesen werden'
   - 'Passivierung durch Oxidschichten ist bei bestimmten pH/E erkennbar'
-  - 'Das Pourbaix-Diagramm zeigt nur die Stabilität von reinem Metall'
+  - 'Das Diagramm zeigt nur die Stabilität von reinem Metall'
 correctAnswers:
-  - 'Bereiche, in denen Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ stabil sind'
+  - 'Zeigt wo Fe, Fe²⁺, Fe³⁺, Fe(OH)₂ und Fe(OH)₃ vorliegen'
   - 'Die Korrosionsbedingungen können abgelesen werden'
   - 'Passivierung durch Oxidschichten ist bei bestimmten pH/E erkennbar'
 

@@ -16,13 +16,13 @@ correctAnswer: '6'
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 3
-question: 'Was ist eine Formalladung und wie berechnet man sie?'
+question: 'Wie berechnet man die Formalladung eines Atoms in einer Lewis-Struktur?'
 options:
-  - 'Formalladung entspricht immer der Ionenladung'
-  - 'Formalladung = Protonen - Elektronen'
-  - 'Formalladung = Bindende Elektronen - Freie Elektronen'
-  - 'Formalladung = Valenzelektronen - (freie Elektronen + ½ bindende Elektronen)'
-correctAnswer: 'Formalladung = Valenzelektronen - (freie Elektronen + ½ bindende Elektronen)'
+  - 'Sie entspricht der tatsächlichen Ionenladung'
+  - 'Protonen minus Elektronen'
+  - 'Bindende minus freie Elektronenpaare'
+  - 'Valenzelektronen minus (freie e⁻ + ½ bindende e⁻)'
+correctAnswer: 'Valenzelektronen minus (freie e⁻ + ½ bindende e⁻)'
 
 ---
 

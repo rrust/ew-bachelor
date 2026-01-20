@@ -29,16 +29,16 @@ correctAnswer: 'Kupfer (Cu)'
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 4
-question: 'Welche Aussagen über die Ionisierungsenergie sind korrekt?'
+question: 'Welche Aussagen über IE (Ionization Energy) sind korrekt?'
 options:
-  - 'Die erste Ionisierungsenergie ist die Energie, um das erste Elektron zu entfernen'
-  - 'Die zweite Ionisierungsenergie ist immer größer als die erste'
-  - 'Bei Alkalimetallen ist die zweite Ionisierungsenergie deutlich höher als die erste'
-  - 'Edelgase haben niedrige Ionisierungsenergien'
+  - 'IE₁ beschreibt die Energie zur Entfernung des ersten Elektrons'
+  - 'IE₂ ist stets größer als IE₁'
+  - 'Bei Alkalimetallen ist IE₂ deutlich höher als IE₁'
+  - 'Edelgase haben niedrige IE-Werte'
 correctAnswers:
-  - 'Die erste Ionisierungsenergie ist die Energie, um das erste Elektron zu entfernen'
-  - 'Die zweite Ionisierungsenergie ist immer größer als die erste'
-  - 'Bei Alkalimetallen ist die zweite Ionisierungsenergie deutlich höher als die erste'
+  - 'IE₁ beschreibt die Energie zur Entfernung des ersten Elektrons'
+  - 'IE₂ ist stets größer als IE₁'
+  - 'Bei Alkalimetallen ist IE₂ deutlich höher als IE₁'
 
 ---
 
@@ -104,31 +104,31 @@ correctAnswer: 'Al³⁺ < Mg²⁺ < Na⁺ < Ne'
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 4
-question: 'Welche Erklärung für die hohe erste Ionisierungsenergie von Stickstoff (im Vergleich zu Sauerstoff) ist korrekt?'
+question: 'Warum ist IE₁ von N höher als von O, obwohl O weiter rechts im PSE steht?'
 options:
-  - 'Stickstoff hat eine halb gefüllte p-Unterschale, die besonders stabil ist'
-  - 'Stickstoff hat mehr Protonen als Sauerstoff'
-  - 'Bei Sauerstoff führt die Elektron-Elektron-Abstoßung in einem doppelt besetzten p-Orbital zur leichteren Ionisierung'
-  - 'Sauerstoff ist ein Nichtmetall'
+  - 'N hat eine halb gefüllte p-Unterschale, die besonders stabil ist'
+  - 'N hat mehr Protonen als O'
+  - 'Bei O führt Elektron-Elektron-Abstoßung im doppelt besetzten p-Orbital zur leichteren Ionisierung'
+  - 'O ist ein Nichtmetall mit höherer Elektronegativität'
 correctAnswers:
-  - 'Stickstoff hat eine halb gefüllte p-Unterschale, die besonders stabil ist'
-  - 'Bei Sauerstoff führt die Elektron-Elektron-Abstoßung in einem doppelt besetzten p-Orbital zur leichteren Ionisierung'
+  - 'N hat eine halb gefüllte p-Unterschale, die besonders stabil ist'
+  - 'Bei O führt Elektron-Elektron-Abstoßung im doppelt besetzten p-Orbital zur leichteren Ionisierung'
 
 ---
 
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 4
-question: 'Die Elektronenaffinität von Chlor beträgt -349 kJ/mol. Was bedeutet dieser negative Wert?'
+question: 'Die Elektronenaffinität (EA) von Cl beträgt -349 kJ/mol. Was bedeutet dieser negative Wert?'
 options:
-  - 'Energie wird freigesetzt, wenn Chlor ein Elektron aufnimmt'
-  - 'Die Aufnahme eines Elektrons ist energetisch günstig'
-  - 'Chlor gibt leicht Elektronen ab'
-  - 'Das entstehende Cl⁻-Ion ist stabiler als das neutrale Cl-Atom'
+  - 'Bei der Aufnahme eines e⁻ wird Energie freigesetzt'
+  - 'Die e⁻-Aufnahme ist energetisch günstig'
+  - 'Cl gibt leicht Elektronen ab'
+  - 'Das entstehende Anion ist stabiler als das neutrale Atom'
 correctAnswers:
-  - 'Energie wird freigesetzt, wenn Chlor ein Elektron aufnimmt'
-  - 'Die Aufnahme eines Elektrons ist energetisch günstig'
-  - 'Das entstehende Cl⁻-Ion ist stabiler als das neutrale Cl-Atom'
+  - 'Bei der Aufnahme eines e⁻ wird Energie freigesetzt'
+  - 'Die e⁻-Aufnahme ist energetisch günstig'
+  - 'Das entstehende Anion ist stabiler als das neutrale Atom'
 
 ---
 

@@ -76,16 +76,16 @@ correctAnswer: '5'
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
-question: 'Warum wird beim Ionisieren von Übergangsmetallen zuerst das 4s-Elektron entfernt?'
+question: 'Warum wird bei Übergangsmetall-Ionen zuerst das s-Orbital geleert?'
 options:
-  - 'Das 4s-Orbital hat höhere Energie im Ion als 3d'
-  - 'Das 4s-Elektron ist weiter vom Kern entfernt'
+  - 'Das 4s-Orbital hat im Ion höhere Energie als 3d'
+  - 'Das s-Elektron befindet sich im äußersten Bereich'
   - 'Die effektive Kernladung beeinflusst 4s stärker als 3d'
-  - 'Das 4s-Orbital ist nach der Ionisierung energetisch ungünstiger'
+  - 'Nach der Ionisierung ist das s-Orbital energetisch ungünstiger'
 correctAnswers:
-  - 'Das 4s-Orbital hat höhere Energie im Ion als 3d'
-  - 'Das 4s-Elektron ist weiter vom Kern entfernt'
-  - 'Das 4s-Orbital ist nach der Ionisierung energetisch ungünstiger'
+  - 'Das 4s-Orbital hat im Ion höhere Energie als 3d'
+  - 'Das s-Elektron befindet sich im äußersten Bereich'
+  - 'Nach der Ionisierung ist das s-Orbital energetisch ungünstiger'
 
 ---
 

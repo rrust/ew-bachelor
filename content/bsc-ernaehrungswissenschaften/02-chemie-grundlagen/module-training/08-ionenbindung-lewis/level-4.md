@@ -29,13 +29,13 @@ correctAnswer: '+1'
 type: 'multiple-choice'
 topic: 'Ionenbindung & Lewis'
 level: 4
-question: 'Warum kann Schwefel in SF₆ die Oktettregel verletzen?'
+question: 'Warum kann S in SF₆ mehr als 8 Valenzelektronen haben?'
 options:
-  - 'Schwefel ist ein Metall'
-  - 'Schwefel hat d-Orbitale zur Verfügung (expandiertes Oktett)'
-  - 'Fluor ist zu klein'
-  - 'Die Bindungen sind ionisch'
-correctAnswer: 'Schwefel hat d-Orbitale zur Verfügung (expandiertes Oktett)'
+  - 'S ist ein Metall mit metallischer Bindung'
+  - 'S nutzt d-Orbitale für expandierte Valenzschale'
+  - 'F-Atome sind zu klein für normale Bindungen'
+  - 'Die Bindungen sind überwiegend ionisch'
+correctAnswer: 'S nutzt d-Orbitale für expandierte Valenzschale'
 
 ---
 
