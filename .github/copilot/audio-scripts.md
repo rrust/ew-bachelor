@@ -5,6 +5,7 @@ Erstellung von Audio-Scripts für TTS-Generierung.
 ## Zweck
 
 Audio-Dateien ergänzen Lerninhalte für:
+
 - Barrierefreiheit
 - Lernen unterwegs
 - Auditive Lerntypen
@@ -13,44 +14,46 @@ Audio-Dateien ergänzen Lerninhalte für:
 
 ```text
 content/{studyId}/NN-modul/NN-vorlesung/
-├── lecture.md           # Vorlesungs-Metadaten
-├── lecture.mp3          # Audio für Einführung (optional)
+├── lecture.md              # Vorlesungs-Metadaten
+├── lecture.audio.txt       # Audio-Script (Plain Text!)
+├── lecture.mp3             # Generierte MP3
 └── lecture-items/
     ├── 01-einleitung.md
-    ├── 01-einleitung.mp3   # Audio für dieses Item
-    ├── 02-konzept.md
-    └── 02-konzept.mp3
+    ├── 01-einleitung.audio.txt  # Audio-Script
+    ├── 01-einleitung.mp3        # Generierte MP3
+    └── ...
 ```
 
-Audio-Datei = gleicher Name wie .md, aber `.mp3`
+**Konvention:**
+
+- Audio-Script: `{name}.audio.txt` (Plain Text!)
+- Generierte MP3: `{name}.mp3`
+- Content: `{name}.md`
 
 ## Script-Format
 
-Audio-Scripts werden als Markdown geschrieben und dann per TTS konvertiert.
+⚠️ **WICHTIG:** Audio-Scripts sind **Plain Text** (`.txt`), kein Markdown!
 
-```markdown
-# Audio-Script: Ionenbindung
+Edge TTS liest Markdown-Syntax wie `#`, `**`, `-` wörtlich vor.
 
-## Sprechtext
+### Beispiel Audio-Script
+
+```text
+Willkommen zur Vorlesung über Ionenbindung.
 
 Die Ionenbindung ist eine der wichtigsten chemischen Bindungsarten.
 
-Sie entsteht, wenn ein Metallatom Elektronen an ein Nichtmetallatom abgibt.
+...
 
-[Pause]
+Sie entsteht, wenn ein Metallatom Elektronen an ein Nichtmetallatom abgibt.
 
 Das Metallatom wird dabei zum positiv geladenen Kation.
 Das Nichtmetallatom wird zum negativ geladenen Anion.
 
-[Pause]
+...
 
-Diese entgegengesetzt geladenen Ionen ziehen sich elektrostatisch an 
+Diese entgegengesetzt geladenen Ionen ziehen sich elektrostatisch an
 und bilden ein stabiles Ionengitter.
-
----
-
-**Länge:** ca. 45 Sekunden
-**Datei:** 04-learning-ionenbindung.mp3
 ```
 
 ## Sprachstil-Richtlinien
@@ -68,10 +71,18 @@ und bilden ein stabiles Ionengitter.
 2. **Hauptteil** – Konzepte erklären
 3. **Zusammenfassung** – Kernpunkte wiederholen
 
-### Pausen
+### Pausen (kein SSML!)
 
-- `[Pause]` – Kurze Pause (1-2 Sek.)
-- `[Längere Pause]` – Zwischen Abschnitten (3-4 Sek.)
+Edge TTS unterstützt **kein SSML**. Pausen werden durch Interpunktion erzeugt:
+
+| Technik                    | Wirkung               | Beispiel                        |
+| -------------------------- | --------------------- | ------------------------------- |
+| Punkt `.`                  | Kurze Pause (~0.5s)   | `Erster Satz. Zweiter Satz.`    |
+| Ellipse `...`              | Längere Pause (~1-2s) | `Denkt darüber nach... Fertig?` |
+| Doppelte Ellipse `... ...` | Noch länger (~2-3s)   | `Wichtig... ... Weiter.`        |
+| Fragezeichen `?`           | Steigende Intonation  | `Versteht ihr das?`             |
+| Ausrufezeichen `!`         | Betonung              | `Das ist wichtig!`              |
+| Leerzeile                  | Absatz-Pause          | Text durch Leerzeile trennen    |
 
 ### Formeln
 
@@ -94,59 +105,52 @@ und bilden ein stabiles Ionengitter.
 
 ### Einführung
 
-```markdown
-# Audio: Einführung [Thema]
+```text
+Willkommen zur Vorlesung über Ionenbindung.
 
-Willkommen zur Vorlesung über [Thema].
+In dieser Einheit lernst du, was Ionenbindung ist,
+wie sie entsteht, und warum sie so wichtig ist.
 
-In dieser Einheit lernst du:
-- [Lernziel 1]
-- [Lernziel 2]
-- [Lernziel 3]
-
-[Pause]
+...
 
 Lass uns beginnen.
 ```
 
 ### Konzept-Erklärung
 
-```markdown
-# Audio: [Konzeptname]
+```text
+Die Gitterenergie ist ein wichtiges Konzept in der Chemie.
 
-[Konzeptname] ist ein wichtiges Prinzip in der [Fachgebiet].
+...
 
-[Pause]
+Sie beschreibt die Energie, die frei wird, wenn sich Ionen
+zu einem Kristallgitter zusammenlagern.
 
-Es bedeutet, dass [einfache Erklärung].
+Ein Beispiel... Kochsalz, also Natriumchlorid, hat eine
+sehr hohe Gitterenergie von 786 Kilojoule pro Mol.
 
-[Pause]
+...
 
-Ein Beispiel: [Alltagsbeispiel]
-
-[Pause]
-
-Zusammengefasst: [Kernaussage in einem Satz].
+Zusammengefasst... Je höher die Gitterenergie, desto stabiler
+ist das Ionengitter.
 ```
 
 ### Zusammenfassung
 
-```markdown
-# Audio: Zusammenfassung
-
+```text
 Fassen wir zusammen, was wir gelernt haben.
 
-[Pause]
+...
 
-Erstens: [Hauptpunkt 1]
+Erstens... Die Ionenbindung entsteht durch Elektronenübertragung.
 
-Zweitens: [Hauptpunkt 2]
+Zweitens... Ionenverbindungen bilden Kristallgitter.
 
-Drittens: [Hauptpunkt 3]
+Drittens... Die Gitterenergie bestimmt die Stabilität.
 
-[Längere Pause]
+... ...
 
-Im nächsten Abschnitt beschäftigen wir uns mit [Vorschau].
+Im nächsten Abschnitt beschäftigen wir uns mit kovalenten Bindungen.
 ```
 
 ## Checkliste
