@@ -91,8 +91,8 @@ function generateHeaderIconButtons(options) {
             streakInfo.current >= 5
               ? 'bg-green-500'
               : streakInfo.current >= 1
-              ? 'bg-yellow-500'
-              : 'bg-red-500'
+                ? 'bg-yellow-500'
+                : 'bg-red-500'
           }"
         >${streakInfo.current}</span>
       </button>
@@ -105,18 +105,18 @@ function generateHeaderIconButtons(options) {
       id="nav-alerts${idSuffix}"
       onclick="window.location.hash='#/alerts'"
       class="${mobileHideClass} relative p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition duration-200 ${
-    unreadCount > 0
-      ? 'text-blue-600 dark:text-blue-400'
-      : 'text-gray-600 dark:text-gray-400'
-  }"
+        unreadCount > 0
+          ? 'text-blue-600 dark:text-blue-400'
+          : 'text-gray-600 dark:text-gray-400'
+      }"
       title="Benachrichtigungen"
     >
       ${Icons.get('bell')}
       <span id="alert-badge${idSuffix}" class="${
-    unreadCount > 0 ? '' : 'hidden '
-  }absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white ${
-    alertColor === 'red' ? 'bg-red-500' : 'bg-yellow-500'
-  } rounded-full">${unreadCount > 9 ? '9+' : unreadCount}</span>
+        unreadCount > 0 ? '' : 'hidden '
+      }absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center text-[10px] font-bold text-white ${
+        alertColor === 'red' ? 'bg-red-500' : 'bg-yellow-500'
+      } rounded-full">${unreadCount > 9 ? '9+' : unreadCount}</span>
     </button>
   `;
 
@@ -146,9 +146,13 @@ function generateHeaderIconButtons(options) {
 function createAppHeader(view = 'moduleMap', options = {}) {
   const header = document.createElement('header');
   // No margin-bottom for search view and training view (they have their own sticky elements below)
-  const marginClass = view === 'search' || view === 'training' ? '' : 'mb-8';
+  const marginClass =
+    view === 'search' || view === 'training' || view === 'moduleTraining'
+      ? ''
+      : 'mb-8';
   // Training view has its own sticky wrapper, so header itself shouldn't be sticky
-  const stickyClass = view === 'training' ? '' : 'sticky top-0 z-40';
+  const stickyClass =
+    view === 'training' || view === 'moduleTraining' ? '' : 'sticky top-0 z-40';
   header.className =
     `bg-white dark:bg-gray-800 ${marginClass} ${stickyClass}`.trim();
 
@@ -304,8 +308,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       moduleId && lectureId
         ? `#/training?module=${moduleId}&lecture=${lectureId}`
         : moduleId
-        ? `#/training?module=${moduleId}`
-        : '#/training';
+          ? `#/training?module=${moduleId}`
+          : '#/training';
     const trainingModuleUrl = moduleId
       ? `#/training?module=${moduleId}`
       : '#/training';
@@ -485,8 +489,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
       moduleId && lectureId
         ? `#/training?module=${moduleId}&lecture=${lectureId}`
         : moduleId
-        ? `#/training?module=${moduleId}`
-        : '#/training';
+          ? `#/training?module=${moduleId}`
+          : '#/training';
     const trainingModuleUrl = moduleId
       ? `#/training?module=${moduleId}`
       : '#/training';
@@ -824,8 +828,8 @@ function createAppHeader(view = 'moduleMap', options = {}) {
                 streakInfo.current >= 5
                   ? 'bg-green-500'
                   : streakInfo.current >= 1
-                  ? 'bg-yellow-500'
-                  : 'bg-red-500'
+                    ? 'bg-yellow-500'
+                    : 'bg-red-500'
               }"
             >${streakInfo.current}</span>
           </button>

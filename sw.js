@@ -40,6 +40,7 @@ const STATIC_ASSETS = [
   './js/dev-mode.js',
   './js/snapshots.js',
   './js/training.js',
+  './js/module-training.js',
   './js/download-manager.js',
   './js/bundle-loader.js',
   './js/offline-indicator.js',

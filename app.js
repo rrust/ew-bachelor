@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     progress: document.getElementById('progress-view'),
     alerts: document.getElementById('alerts-view'),
     training: document.getElementById('training-view'),
+    moduleTraining: document.getElementById('module-training-view'),
     search: document.getElementById('search-view')
   };
 
@@ -195,10 +196,28 @@ document.addEventListener('DOMContentLoaded', async () => {
           startLecture(route.moduleId, route.lectureId, route.itemIndex);
           return true;
         }
+      } else if (route.moduleTraining) {
+        // Module training mode: /module/{moduleId}/training
+        updateGreeting();
+        showView('moduleTraining');
+        currentModuleId = route.moduleId;
+        if (window.initModuleTrainingView) {
+          window.initModuleTrainingView(route.moduleId);
+        }
+        return true;
       } else {
         displayLecturesForModule(route.moduleId);
         return true;
       }
+    } else if (route.view === 'moduleTraining' && route.moduleId) {
+      // Direct moduleTraining view navigation
+      updateGreeting();
+      showView('moduleTraining');
+      currentModuleId = route.moduleId;
+      if (window.initModuleTrainingView) {
+        window.initModuleTrainingView(route.moduleId);
+      }
+      return true;
     } else if (route.view === 'tools') {
       updateGreeting();
       showView('tools');
@@ -367,6 +386,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('progress-view', 'progress');
     injectHeader('alerts-view', 'alerts');
     injectHeader('training-view', 'training');
+    injectHeader('module-training-view', 'moduleTraining');
     injectHeader('search-view', 'search');
   }
 
@@ -497,6 +517,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     injectHeader('progress-view', 'progress');
     injectHeader('alerts-view', 'alerts');
     injectHeader('training-view', 'training');
+    injectHeader('module-training-view', 'moduleTraining');
     injectHeader('search-view', 'search');
 
     // 4. Determine if user needs to enter name or select study

@@ -68,6 +68,10 @@ function parseURL() {
           route.questionIndex = parseInt(parts[offset + 5], 10);
         }
       }
+    } else if (parts[offset + 2] === 'training') {
+      // Module training mode: /module/{moduleId}/training
+      route.view = 'moduleTraining';
+      route.moduleTraining = true;
     }
   } else if (parts[offset] === 'tools') {
     route.view = 'tools';
