@@ -219,19 +219,21 @@ $$\text{Na}_{\text{(s)}} + \text{Cl}_{2\text{(g)}} \rightarrow \text{NaCl}_{\tex
 
 Die Aggregatzustand-Klammern müssen in `\text{}` stehen!
 
-#### KaTeX: Doppelte Sub-/Superscripts ⚠️
+#### KaTeX: Ionen mit Aggregatzuständen vermeiden ⚠️
 
-**NIEMALS** Superscript direkt gefolgt von Subscript ohne Trennung:
+**PROBLEM:** Formeln mit Ladung (`^+`, `^-`) UND Subscript-Aggregatzustand (`_{(aq)}`) können im Browser **nicht zuverlässig gerendert** werden, auch nicht mit `{}` als Trenner.
 
 ```latex
-# FALSCH - KaTeX rendert nicht:
-\text{Na}^+_{\text{(aq)}}
+# FUNKTIONIERT NICHT im Browser (auch mit {} Trenner):
+\text{Na}^+{}_{(\text{aq})} + \text{Cl}^-{}_{(\text{aq})}
 
-# RICHTIG - leere Klammern als Trennung:
-\text{Na}^+{}_{(\text{aq})}
+# LÖSUNG 1: Aggregatzustände weglassen
+\text{Na}^+ + \text{Cl}^- \rightarrow \text{NaCl}
+
+# LÖSUNG 2: Aggregatzustände als Text darunter erklären
 ```
 
-Bei Ionen mit Ladung UND Aggregatzustand immer `^{...}{}_{...}` verwenden!
+**Best Practice:** Bei Reaktionsgleichungen die Aggregatzustände (aq), (s), (l), (g) im erklärenden Text erwähnen, nicht in der Formel selbst.
 
 #### Fill-in-the-blank: blanks Format
 
