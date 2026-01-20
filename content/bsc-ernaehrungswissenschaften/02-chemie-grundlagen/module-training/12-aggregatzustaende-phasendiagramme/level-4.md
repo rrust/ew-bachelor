@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
@@ -9,9 +10,9 @@ options:
   - '~88 kJ/mol'
   - '~11 kJ/mol'
 correctAnswer: '~44 kJ/mol'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
@@ -25,22 +26,22 @@ correctAnswers:
   - 'Logarithmisch-linear'
   - 'Ein Plot von ln(P) gegen 1/T ergibt eine Gerade'
   - 'Die Steigung ist -ΔHvap/R'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
 question: 'Berechne den Dampfdruck von Ethanol bei 50°C, wenn P bei 25°C = 59 mmHg und ΔHvap = 38,6 kJ/mol.'
 options:
-  - '~220 mmHg'
-  - '~110 mmHg'
   - '~440 mmHg'
+  - '~110 mmHg'
+  - '~220 mmHg'
   - '~59 mmHg'
 correctAnswer: '~220 mmHg'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
@@ -54,9 +55,9 @@ correctAnswers:
   - 'Oberhalb dieser Werte existiert nur überkritisches Wasser'
   - 'Die Dichte von Flüssigkeit und Dampf werden am kritischen Punkt gleich'
   - 'Die Oberflächenspannung verschwindet am kritischen Punkt'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
@@ -70,48 +71,48 @@ correctAnswers:
   - 'Schmilzt das Eis, da die Schmelzkurve negative Steigung hat'
   - 'Der Schmelzpunkt sinkt auf etwa -4°C'
   - 'Die Dichteanomalie des Wassers ist verantwortlich'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
 question: 'Die Trouton-Regel besagt, dass ΔSvap ≈ 85 J/(mol·K) für viele unpolare Flüssigkeiten. Berechne den erwarteten Siedepunkt einer Substanz mit ΔHvap = 30 kJ/mol.'
 options:
-  - '~353 K (80°C)'
   - '~250 K (-23°C)'
+  - '~353 K (80°C)'
   - '~450 K (177°C)'
   - '~300 K (27°C)'
 correctAnswer: '~353 K (80°C)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
 question: 'Die Phasenregel von Gibbs lautet F = C - P + 2. Am Tripelpunkt von Wasser (C=1, P=3) ist F:'
 options:
-  - '0 (invarianter Punkt)'
+  - '3'
   - '1'
   - '2'
-  - '3'
+  - '0 (invarianter Punkt)'
 correctAnswer: '0 (invarianter Punkt)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
 question: 'Entlang der Schmelzkurve im Phasendiagramm gilt nach Gibbs F = ?'
 options:
-  - '1 (eine Variable kann geändert werden, die andere passt sich an)'
+  - '3'
   - '0'
   - '2'
-  - '3'
+  - '1 (eine Variable kann geändert werden, die andere passt sich an)'
 correctAnswer: '1 (eine Variable kann geändert werden, die andere passt sich an)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
@@ -125,17 +126,16 @@ correctAnswers:
   - 'Sie nimmt ab'
   - 'Thermische Bewegung schwächt die intermolekularen Kräfte'
   - 'Am kritischen Punkt wird sie null'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aggregatzustände & Phasendiagramme'
 level: 4
 question: 'Gegeben: c(Eis) = 2,1 J/(g·K), c(Wasser) = 4,18 J/(g·K), ΔHfus = 334 J/g, ΔHvap = 2260 J/g'
 options:
-  - '~30,5 kJ'
-  - '~22,6 kJ'
   - '~3,34 kJ'
+  - '~22,6 kJ'
+  - '~30,5 kJ'
   - '~45 kJ'
 correctAnswer: '~30,5 kJ'
----

@@ -1,56 +1,57 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Bestimme die Oxidationszahl von Schwefel in H₂SO₄.'
 options:
-  - '+6'
   - '+4'
+  - '+6'
   - '-2'
   - '0'
 correctAnswer: '+6'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Bestimme die Oxidationszahl von Stickstoff in HNO₃.'
 options:
-  - '+5'
-  - '+3'
   - '-3'
+  - '+3'
+  - '+5'
   - '0'
 correctAnswer: '+5'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Bei der Reaktion Zn + Cu²⁺ → Zn²⁺ + Cu: Was wird oxidiert?'
 options:
-  - 'Zink'
+  - 'Keines'
   - 'Kupfer'
   - 'Beide'
-  - 'Keines'
+  - 'Zink'
 correctAnswer: 'Zink'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Bei der gleichen Reaktion: Was ist das Oxidationsmittel?'
 options:
-  - 'Cu²⁺'
   - 'Zn'
+  - 'Cu²⁺'
   - 'Zn²⁺'
   - 'Cu'
 correctAnswer: 'Cu²⁺'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
@@ -61,22 +62,22 @@ options:
   - '-1,00 V'
   - '+0,76 V'
 correctAnswer: '0,00 V'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Ein positives Standardpotential (E° > 0) bedeutet:'
 options:
-  - 'Die Reduktion ist gegenüber der Wasserstoffelektrode bevorzugt'
-  - 'Das Element ist ein gutes Reduktionsmittel'
   - 'Das Element wird leicht oxidiert'
+  - 'Das Element ist ein gutes Reduktionsmittel'
+  - 'Die Reduktion ist gegenüber der Wasserstoffelektrode bevorzugt'
   - 'Die Reaktion ist endotherm'
 correctAnswer: 'Die Reduktion ist gegenüber der Wasserstoffelektrode bevorzugt'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
@@ -87,43 +88,42 @@ options:
   - 'Beide gleich'
   - 'Keines'
 correctAnswer: 'Zink'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Berechne die EMK (elektromotorische Kraft) der Daniell-Zelle (Zn/Zn²⁺//Cu²⁺/Cu).'
 options:
-  - '+1,10 V'
   - '-1,10 V'
+  - '+1,10 V'
   - '+0,42 V'
   - '-0,42 V'
 correctAnswer: '+1,10 V'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Bei der Elektrolyse von Wasser mit H₂SO₄ als Elektrolyt: Welches Gas entsteht an der Kathode?'
 options:
-  - 'Wasserstoff (H₂)'
+  - 'Kein Gas'
   - 'Sauerstoff (O₂)'
   - 'Schwefeldioxid (SO₂)'
-  - 'Kein Gas'
+  - 'Wasserstoff (H₂)'
 correctAnswer: 'Wasserstoff (H₂)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Elektrochemie & Redox'
 level: 2
 question: 'Welches Verhältnis haben die Volumina H₂ : O₂ bei der Wasserelektrolyse?'
 options:
-  - '2 : 1'
-  - '1 : 2'
   - '1 : 1'
+  - '1 : 2'
+  - '2 : 1'
   - '3 : 1'
 correctAnswer: '2 : 1'
----

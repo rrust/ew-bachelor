@@ -1,43 +1,44 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
 question: 'Das Molekül C₂ existiert im Gasphase. Bestimme seine Bindungsordnung und magnetische Eigenschaft nach MO-Theorie.'
 options:
-  - 'Bindungsordnung 2, diamagnetisch'
+  - 'Bindungsordnung 1, paramagnetisch'
   - 'Bindungsordnung 2, paramagnetisch'
   - 'Bindungsordnung 3, diamagnetisch'
-  - 'Bindungsordnung 1, paramagnetisch'
+  - 'Bindungsordnung 2, diamagnetisch'
 correctAnswer: 'Bindungsordnung 2, diamagnetisch'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
 question: 'Das Cyanid-Ion (CN⁻) ist isoelektronisch zu welchen Molekülen?'
 options:
-  - 'N₂ und CO'
   - 'O₂ und NO'
+  - 'N₂ und CO'
   - 'F₂ und Cl₂'
   - 'H₂ und He₂'
 correctAnswer: 'N₂ und CO'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
 question: 'Im Cyclopentadienyl-Anion (C₅H₅⁻) sind wie viele π-Elektronen delokalisiert und warum ist es aromatisch?'
 options:
-  - '6 π-Elektronen, erfüllt die Hückel-Regel (4n+2 mit n=1)'
-  - '4 π-Elektronen, antiaromatisch'
   - '5 π-Elektronen, nicht aromatisch'
+  - '4 π-Elektronen, antiaromatisch'
+  - '6 π-Elektronen, erfüllt die Hückel-Regel (4n+2 mit n=1)'
   - '8 π-Elektronen, erfüllt die Hückel-Regel'
 correctAnswer: '6 π-Elektronen, erfüllt die Hückel-Regel (4n+2 mit n=1)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
@@ -51,9 +52,9 @@ correctAnswers:
   - 'HOMO = Highest Occupied Molecular Orbital'
   - 'LUMO = Lowest Unoccupied Molecular Orbital'
   - 'Eine kleine HOMO-LUMO-Lücke bedeutet höhere Reaktivität'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
@@ -64,9 +65,9 @@ options:
   - 'CO hat kein Dipolmoment'
   - 'Das Dipolmoment zeigt immer zum elektronegativeren Atom'
 correctAnswer: 'Das freie Elektronenpaar am C überwiegt den Elektronegativitätsunterschied'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
@@ -80,9 +81,9 @@ correctAnswers:
   - 'O₂⁺ hat eine kürzere Bindung als O₂'
   - 'O₂⁺ hat eine höhere Bindungsordnung als O₂'
   - 'O₂⁺ ist paramagnetisch mit 1 ungepaarten Elektron'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
@@ -96,22 +97,22 @@ correctAnswers:
   - 'Konjugation der π-Elektronen über alle 4 C-Atome'
   - 'Delokalisierung führt zu einer Bindungsordnung > 1 zwischen C2-C3'
   - 'Das Molekül hat Resonanzstrukturen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
 question: 'Das Fluorid-Ion F⁻ reagiert als Lewis-Base. Welches Orbital stellt das Elektronenpaar bereit?'
 options:
-  - 'Ein gefülltes 2p-Orbital'
+  - 'Ein antibindendes Orbital'
   - 'Ein leeres 2s-Orbital'
   - 'Ein sp³-Hybridorbital'
-  - 'Ein antibindendes Orbital'
+  - 'Ein gefülltes 2p-Orbital'
 correctAnswer: 'Ein gefülltes 2p-Orbital'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
@@ -125,17 +126,16 @@ correctAnswers:
   - 'Ein Elektronenpaar wird von drei Atomen geteilt'
   - 'Es gibt Brücken-Wasserstoffatome zwischen den Boratomen'
   - 'Normale VB-Theorie kann diese Bindung nicht erklären'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 5
 question: 'Das Aufbauprinzip für Molekülorbitale folgt denselben Regeln wie für Atomorbitale. Ordne die MOs für O₂ nach steigender Energie.'
 options:
-  - 'σ₂s < σ*₂s < σ₂p < π₂p < π*₂p < σ*₂p'
   - 'σ₂s < σ*₂s < π₂p < σ₂p < π*₂p < σ*₂p'
+  - 'σ₂s < σ*₂s < σ₂p < π₂p < π*₂p < σ*₂p'
   - 'π₂p < σ₂s < σ*₂s < σ₂p < π*₂p < σ*₂p'
   - 'σ₂s < σ*₂s < σ₂p < π₂p < σ*₂p < π*₂p'
 correctAnswer: 'σ₂s < σ*₂s < σ₂p < π₂p < π*₂p < σ*₂p'
----

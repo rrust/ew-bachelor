@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -12,9 +13,9 @@ correctAnswers:
   - 'Gelöste Gase tragen zur Dampfdruckerniedrigung bei'
   - 'Der Partialdruck des gelösten Gases folgt c = kH × p'
   - 'Bei Tauchern kann schneller Druckabfall zur Dekompressionskrankheit führen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -28,25 +29,25 @@ correctAnswers:
   - 'a = γ × x, wobei γ der Aktivitätskoeffizient ist'
   - 'Sie berücksichtigt nicht-ideale Wechselwirkungen'
   - 'In sehr verdünnten Lösungen nähert sich γ → 1'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
-question: 'Ein azeotropes Gemisch von Ethanol und Wasser (95,6% Ethanol) kann nicht durch einfache Destillation getrennt werden. Warum?'
+question: 'Warum erfordert die Trennung des azeotropen Ethanol-Wasser-Gemisches (95,6% Ethanol) spezielle Methoden?'
 options:
-  - 'Dampf und Flüssigkeit haben die gleiche Zusammensetzung'
+  - 'Dampf und Flüssigkeit haben bei diesem Gemisch die gleiche Zusammensetzung'
   - 'Positive Abweichung vom Raoult''schen Gesetz führt zu einem Siedepunktminimum'
   - 'Das Azeotrop siedet bei niedrigerer Temperatur als beide reinen Komponenten'
-  - 'Azeotrope können durch einfache Destillation getrennt werden'
+  - 'Einfache Destillation reicht für vollständige Trennung aus'
 correctAnswers:
-  - 'Dampf und Flüssigkeit haben die gleiche Zusammensetzung'
+  - 'Dampf und Flüssigkeit haben bei diesem Gemisch die gleiche Zusammensetzung'
   - 'Positive Abweichung vom Raoult''schen Gesetz führt zu einem Siedepunktminimum'
   - 'Das Azeotrop siedet bei niedrigerer Temperatur als beide reinen Komponenten'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -60,9 +61,9 @@ correctAnswers:
   - 'Ionen sind von einer "Ionenwolke" entgegengesetzter Ladung umgeben'
   - 'Der Aktivitätskoeffizient sinkt mit steigender Ionenstärke'
   - 'Bei sehr hohen Konzentrationen versagt die Theorie'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -76,9 +77,9 @@ correctAnswers:
   - 'Der osmotische Druck, der durch Proteine im Blutplasma erzeugt wird'
   - 'Er hält Flüssigkeit in den Blutgefäßen'
   - 'Bei Proteinmangel kommt es zu Ödemen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -92,22 +93,22 @@ correctAnswers:
   - 'Meerwasser ist hyperton zu den Körperflüssigkeiten der Fische'
   - 'Süßwasserfische müssen überschüssiges Wasser ausscheiden'
   - 'Salzwasserfische müssen aktiv Wasser aufnehmen und Salz ausscheiden'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 5
 question: 'Die Zahlengemittelte Molmasse (Mn) und die Massengemittelte Molmasse (Mw) von Polymeren werden unterschiedlich bestimmt. Welche Methode liefert Mn?'
 options:
-  - 'Osmometrie'
+  - 'Gelpermeationschromatographie'
   - 'Lichtstreuung'
   - 'Viskosimetrie'
-  - 'Gelpermeationschromatographie'
+  - 'Osmometrie'
 correctAnswer: 'Osmometrie'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -118,9 +119,9 @@ options:
   - '0,5'
   - '1,5'
 correctAnswer: '2,0'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -134,9 +135,9 @@ correctAnswers:
   - 'Semipermeable Membranen sind selektiv für bestimmte Ionen'
   - 'Unterschiedliche Ionenkonzentrationen erzeugen ein elektrisches Potential'
   - 'Dies ist fundamental für Nervenimpulse'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 5
@@ -150,4 +151,3 @@ correctAnswers:
   - 'Osmose treibt Wasser in Richtung höherer Konzentration gelöster Stoffe'
   - 'Die Dialyselösung muss isoosmotisch zum Blut sein, um Zellschäden zu vermeiden'
   - 'Harnstoff und andere kleine Moleküle diffundieren durch die Membran'
----

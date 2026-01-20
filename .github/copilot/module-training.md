@@ -66,6 +66,42 @@ Alle:     A, B, C, D
 
 **Lösung:** Echte falsche Option einfügen, Antwort auf `A, B, C` ändern.
 
+### ❌ VERBOTEN: Negativ-Fragen
+
+```markdown
+# FALSCH - niemals verwenden!
+**Welche Aussage ist NICHT korrekt?**
+**Was trifft NICHT zu?**
+**Welche Option ist falsch?**
+```
+
+**Warum?** Negativ-Fragen sind kognitiv belastender und führen zu Verwirrung.
+**Lösung:** Positiv formulieren: "Welche Aussage ist korrekt?"
+
+### ❌ VERBOTEN: Antwort in Frage verraten
+
+```markdown
+# FALSCH - Antwort wird verraten!
+**Was beschreibt die Ionisierungsenergie?**
+- [ ] A. Die Ionisierungsenergie ist die Energie zur Entfernung eines Elektrons
+#         ^^^^^^^^^^^^^^^^ Begriff aus der Frage wiederholt!
+
+# BESSER:
+- [ ] A. Energie zur Entfernung eines Elektrons aus einem Atom
+```
+
+### ❌ VERBOTEN: Frage-Begriff in Antwort
+
+```markdown
+# FALSCH - triviale Antwort!
+**Was ist eine Doppelbindung?**
+- [ ] A. Doppelte Umsetzung zwischen Ionen
+#         ^^^^^^^ Begriff aus Frage!
+
+# BESSER:
+- [ ] A. Ionentausch zwischen zwei Verbindungen
+```
+
 ### ❌ VERBOTEN: Doppelte Optionen
 
 ```markdown
@@ -77,6 +113,7 @@ Alle:     A, B, C, D
 ### ❌ VERBOTEN: Alle 4 korrekt
 
 Wenn alle 4 Optionen korrekt sind:
+
 - Benutzer muss ALLE auswählen
 - Sehr verwirrend
 - **Besser:** 3 korrekte + 1 falsche
@@ -91,6 +128,110 @@ Wenn alle 4 Optionen korrekt sind:
 # Lösung: Fragetext anpassen
 **Welche Aussage ist korrekt?**
 ```
+
+## Qualitätskriterien für Antworten
+
+### 📏 Längen-Balance
+
+Alle Antwortoptionen sollten **ähnlich lang** sein!
+
+```markdown
+# FALSCH - korrekte Antwort viel länger!
+- [ ] A. Wärme
+- [ ] B. Licht
+- [ ] C. Schall
+- [ ] D. Die Freisetzung von Energie in Form von elektromagnetischer Strahlung ✓
+
+# BESSER - alle ähnlich lang:
+- [ ] A. Freisetzung von Wärmeenergie
+- [ ] B. Emission von sichtbarem Licht
+- [ ] C. Abstrahlung von Schallwellen
+- [ ] D. Elektromagnetische Strahlung ✓
+```
+
+**Regel:** Korrekte Antworten dürfen maximal 50% länger sein als falsche.
+
+### 🎯 Spezifitäts-Balance
+
+Korrekte Antworten dürfen NICHT spezifischer sein als falsche!
+
+```markdown
+# FALSCH - nur korrekte Antwort hat Zahlen!
+- [ ] A. Enthält Protonen
+- [ ] B. Enthält Neutronen
+- [ ] C. Hat 6 Protonen und 6 Neutronen ✓  # Zu spezifisch!
+- [ ] D. Ist ein Atom
+
+# BESSER - alle gleich spezifisch:
+- [ ] A. Hat 6 Protonen und 8 Neutronen
+- [ ] B. Hat 8 Protonen und 6 Neutronen
+- [ ] C. Hat 6 Protonen und 6 Neutronen ✓
+- [ ] D. Hat 12 Protonen und 6 Neutronen
+```
+
+### 🎭 Plausible Distraktoren
+
+Falsche Antworten müssen **plausibel** sein – nicht offensichtlich falsch!
+
+```markdown
+# FALSCH - D ist offensichtlich falsch!
+**Welches Element ist ein Edelgas?**
+- [ ] A. Helium ✓
+- [ ] B. Sauerstoff
+- [ ] C. Stickstoff
+- [ ] D. Banane    # Offensichtlich falsch!
+
+# BESSER - alle sind Elemente:
+- [ ] A. Helium ✓
+- [ ] B. Sauerstoff
+- [ ] C. Stickstoff
+- [ ] D. Wasserstoff
+```
+
+**Technik für Distraktoren:**
+
+- Häufige Missverständnisse nutzen
+- Ähnliche Konzepte verwenden
+- Typische Rechenfehler als Option anbieten
+
+### 🚫 Keine Formulierungshinweise
+
+Vermeide Wörter, die Hinweise geben:
+
+| In falschen Antworten   | Warum problematisch?              |
+| ----------------------- | --------------------------------- |
+| "immer", "niemals"      | Absolute Aussagen sind oft falsch |
+| "alle", "keine"         | Extremaussagen vermeiden          |
+| "nur", "ausschließlich" | Zu einschränkend                  |
+
+| In korrekten Antworten   | Warum problematisch?                    |
+| ------------------------ | --------------------------------------- |
+| "häufig", "meistens"     | Qualifizierte Aussagen sind oft richtig |
+| "kann", "typischerweise" | Zu vorsichtig formuliert                |
+| "in der Regel"           | Verräterisch vorsichtig                 |
+
+```markdown
+# FALSCH - "immer" verrät, dass B falsch ist!
+- [ ] A. Wasser löst polare Stoffe ✓
+- [ ] B. Wasser löst immer alle Stoffe  # "immer" = oft falsch!
+
+# BESSER - neutral formuliert:
+- [ ] A. Wasser löst polare Stoffe ✓
+- [ ] B. Wasser löst unpolare Stoffe
+```
+
+### 📊 Positions-Verteilung
+
+Korrekte Antworten sollten **gleichmäßig verteilt** sein:
+
+| Position | Ziel | Problem wenn abweichend        |
+| -------- | ---- | ------------------------------ |
+| A        | ~25% | Zu oft A → Muster erkennbar    |
+| B        | ~25% | Zu oft B → Muster erkennbar    |
+| C        | ~25% | Zu selten C → Muster erkennbar |
+| D        | ~25% | Zu selten D → Muster erkennbar |
+
+**Tipp:** Bei 10 Fragen pro Level: 2-3× A, 2-3× B, 2-3× C, 2-3× D
 
 ## Schwierigkeitsgrade
 
@@ -129,14 +270,17 @@ Wenn alle 4 Optionen korrekt sind:
 ### Scripts ausführen
 
 ```bash
-# Probleme finden
+# Technische Probleme finden (Format, doppelte Optionen, etc.)
 node scripts/analyzeQuestions.js
+
+# Qualitätsprobleme finden (Längen, Hinweise, Negativ-Fragen, etc.)
+node scripts/analyzeQuestionQuality.js
 
 # Bei 0 kritischen Problemen:
 node scripts/convertQuestions.js
 ```
 
-### analyzeQuestions.js prüft
+### analyzeQuestions.js prüft (technisch)
 
 | Kategorie         | Schwere  | Beschreibung            |
 | ----------------- | -------- | ----------------------- |
@@ -147,6 +291,26 @@ node scripts/convertQuestions.js
 | "Alle genannten"  | HOCH     | Meta-Optionen           |
 | Alle 4 korrekt    | MITTEL   | A, B, C, D              |
 | Duplikate         | MITTEL   | Gleiche Fragen          |
+
+### analyzeQuestionQuality.js prüft (inhaltlich)
+
+| Kategorie                 | Schwere  | Beschreibung                          |
+| ------------------------- | -------- | ------------------------------------- |
+| Negativ-Fragen            | KRITISCH | NICHT, kein, nie in Frage             |
+| Antwort in Frage          | KRITISCH | Antwort-Keywords in Frage enthalten   |
+| Frage-Begriff             | KRITISCH | Frage-Begriff erscheint in Antwort    |
+| Längen-Ungleichgewicht    | HOCH     | Korrekte Antwort >50% länger          |
+| Spezifitäts-Imbalance     | HOCH     | Nur korrekte Antworten haben Details  |
+| Offensichtl. Distraktoren | HOCH     | Falsche Antworten zu leicht erkennbar |
+| Absolute Begriffe         | MITTEL   | "immer/nie" in falschen Antworten     |
+| Grammatik-Hinweise        | MITTEL   | Genus/Kasus verrät Antwort            |
+
+### Statistiken beachten
+
+Das Script zeigt auch:
+
+- **Durchschnittliche Antwortlängen** – Sollten ~gleich sein
+- **Positions-Verteilung** – A/B/C/D sollten je ~25% haben
 
 ## Best Practices
 

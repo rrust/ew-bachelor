@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-20T19:28:50.210Z",
+  "generatedAt": "2026-01-20T22:10:03.082Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -33,8 +33,8 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/01-materie-messen": {
-      "checksum": "fe392e60",
-      "sizeKB": 61.7,
+      "checksum": "12b70ddc",
+      "sizeKB": 62.5,
       "itemCount": 42,
       "quizCount": 12,
       "topic": "Materie und Messen",

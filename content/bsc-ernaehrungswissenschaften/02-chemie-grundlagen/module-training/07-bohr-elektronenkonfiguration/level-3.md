@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -11,9 +12,9 @@ options:
 correctAnswers:
   - '1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶'
   - '1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -26,22 +27,22 @@ options:
 correctAnswers:
   - 'Halbgefüllte d-Orbitale sind besonders stabil'
   - 'Die symmetrische Verteilung der d-Elektronen ist energetisch günstiger'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
 question: 'Wie lautet die Elektronenkonfiguration des Fe²⁺-Ions?'
 options:
-  - '[Ar] 3d⁶'
   - '[Ar] 3d⁴ 4s²'
+  - '[Ar] 3d⁶'
   - '[Ar] 3d⁵ 4s¹'
   - '[Ar] 3d⁶ 4s²'
 correctAnswer: '[Ar] 3d⁶'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -56,22 +57,22 @@ correctAnswers:
   - 'Es hat 6 Valenzelektronen'
   - 'Es steht in der 6. Hauptgruppe'
   - 'Es handelt sich um Tellur (Te)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
 question: 'Wie viele ungepaarte Elektronen hat Fe³⁺ ([Ar] 3d⁵)?'
 options:
-  - '1'
-  - '3'
   - '5'
+  - '3'
+  - '1'
   - '0'
 correctAnswer: '5'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -85,9 +86,9 @@ correctAnswers:
   - 'Das 4s-Orbital hat höhere Energie im Ion als 3d'
   - 'Das 4s-Elektron ist weiter vom Kern entfernt'
   - 'Das 4s-Orbital ist nach der Ionisierung energetisch ungünstiger'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -101,9 +102,9 @@ correctAnswers:
   - 'ns² np⁶'
   - 'ns² (n-1)d¹⁰ np⁶'
   - '1s² (für Helium)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -117,22 +118,22 @@ correctAnswers:
   - 'Zn²⁺'
   - 'Cu⁺'
   - 'Ga³⁺'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
 question: 'Wie lautet die Kurzschreibweise der Elektronenkonfiguration von Brom (Br, Z=35)?'
 options:
-  - '[Ar] 3d¹⁰ 4s² 4p⁵'
   - '[Kr] 4p⁵'
+  - '[Ar] 3d¹⁰ 4s² 4p⁵'
   - '[Ar] 4s² 4p⁵'
   - '[Ar] 3d¹⁰ 4s² 4p⁷'
 correctAnswer: '[Ar] 3d¹⁰ 4s² 4p⁵'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 3
@@ -147,4 +148,3 @@ correctAnswers:
   - 'Ihre Valenzkonfiguration ist ns²'
   - 'Sie bilden bevorzugt 2+ Ionen'
   - 'Sie sind alle Metalle'
----

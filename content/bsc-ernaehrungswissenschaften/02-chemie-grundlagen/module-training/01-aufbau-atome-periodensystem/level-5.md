@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -13,9 +14,9 @@ correctAnswers:
   - 'Das Element bildet bevorzugt X²⁺-Ionen'
   - 'Nach der Abgabe von 2 Elektronen liegt eine Edelgaskonfiguration vor'
   - 'Es könnte sich um Magnesium oder Calcium handeln'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -29,9 +30,9 @@ correctAnswers:
   - 'Die zusätzlichen Elektronen besetzen d-Orbitale, die schlecht abschirmen'
   - 'Die steigende Kernladung wird durch die d-Elektronen fast vollständig kompensiert'
   - 'Die Kontraktion durch steigende Kernladung und die Abschirmung durch d-Elektronen heben sich nahezu auf'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -42,9 +43,9 @@ options:
   - '1. Hauptgruppe'
   - '2. Hauptgruppe'
 correctAnswer: '4. Hauptgruppe'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -59,22 +60,22 @@ correctAnswers:
   - 'Die 4f-Elektronen schirmen die Kernladung schlecht ab'
   - 'Die Lanthanoid-Kontraktion führt zu einer Verkleinerung der Atomradien'
   - 'Wolfram und Molybdän haben dadurch sehr ähnliche chemische Eigenschaften'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
 question: 'Berechne die Energie, die benötigt wird, um 1 mol Natrium-Atome vollständig zu ionisieren (alle 11 Elektronen zu entfernen). Die Summe aller Ionisierungsenergien beträgt 90 434 kJ/mol. Wie viel Energie ist das pro Atom?'
 options:
-  - '1,50 × 10⁻¹⁸ J'
-  - '1,50 × 10⁻¹⁵ J'
   - '8,22 × 10⁻¹⁸ J'
+  - '1,50 × 10⁻¹⁵ J'
+  - '1,50 × 10⁻¹⁸ J'
   - '90 434 J'
 correctAnswer: '1,50 × 10⁻¹⁸ J'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -87,9 +88,9 @@ options:
 correctAnswers:
   - 'Gallium hat eine ungewöhnliche Kristallstruktur mit Ga₂-Einheiten'
   - 'Die vollständig gefüllte d-Unterschale bei Gallium verringert die Bindungsstärke'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -104,9 +105,9 @@ correctAnswers:
   - 'Das entstehende O²⁻-Ion ist in der Gasphase instabil'
   - 'Die Aufnahme des zweiten Elektrons erfordert Energiezufuhr'
   - 'Die Gitterenergie in Ionenverbindungen stabilisiert O²⁻-Ionen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -121,9 +122,9 @@ correctAnswers:
   - 'Das häufigere Isotop ist ⁶³Cu'
   - 'Die Massendifferenz der Isotope beträgt 2 Neutronen'
   - 'Beide Isotope haben 29 Protonen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -138,9 +139,9 @@ correctAnswers:
   - 'Die Abschirmung ist nicht vollständig, da die Elektronenorbitale sich durchdringen'
   - 'Z_eff erklärt, warum das Valenzelektron relativ leicht abgegeben wird'
   - 'Bei Magnesium ist Z_eff für die Valenzelektronen höher als bei Natrium'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Aufbau der Atome & Periodensystem'
 level: 5
@@ -155,4 +156,3 @@ correctAnswers:
   - 'Chlor hat größere Orbitale, die ein zusätzliches Elektron besser aufnehmen können'
   - 'Fluor ist zu klein für eine effiziente Aufnahme eines weiteren Elektrons'
   - 'Die Elektronegativität und die Elektronenaffinität messen unterschiedliche Eigenschaften'
----

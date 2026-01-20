@@ -1,17 +1,18 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
 question: 'Welcher Reaktionstyp liegt vor: 2 Mg + O₂ → 2 MgO?'
 options:
   - 'Analyse'
-  - 'Synthese'
   - 'Einfach-Austausch'
+  - 'Synthese'
   - 'Doppel-Austausch'
 correctAnswer: 'Synthese'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
@@ -22,9 +23,9 @@ options:
   - 'Verbrennung'
   - 'Austausch'
 correctAnswer: 'Analyse (Zersetzung)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
@@ -38,35 +39,35 @@ correctAnswers:
   - '1:2:1'
   - '2:4:2'
   - '3:6:3'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
 question: 'Die Molekülformel von Glucose ist C₆H₁₂O₆. Wie lautet die empirische Formel?'
 options:
   - 'C₆H₁₂O₆'
-  - 'CH₂O'
   - 'C₃H₆O₃'
+  - 'CH₂O'
   - 'CHO'
 correctAnswer: 'CH₂O'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
 question: 'Welcher Reaktionstyp liegt vor: Zn + CuSO₄ → ZnSO₄ + Cu?'
 options:
-  - 'Synthese'
-  - 'Analyse'
   - 'Einfach-Austausch'
+  - 'Analyse'
+  - 'Synthese'
   - 'Doppel-Austausch'
 correctAnswer: 'Einfach-Austausch'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
@@ -77,9 +78,9 @@ options:
   - '50%'
   - '66,7%'
 correctAnswer: '88,9%'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
@@ -87,12 +88,12 @@ question: 'Welcher Reaktionstyp liegt vor: AgNO₃ + NaCl → AgCl↓ + NaNO₃?
 options:
   - 'Synthese'
   - 'Einfach-Austausch'
-  - 'Doppel-Austausch (Fällung)'
   - 'Verbrennung'
+  - 'Doppel-Austausch (Fällung)'
 correctAnswer: 'Doppel-Austausch (Fällung)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
@@ -100,12 +101,12 @@ question: 'Die empirische Formel einer Verbindung ist CH₂. Die molare Masse be
 options:
   - 'CH₂'
   - 'C₂H₄'
-  - 'C₃H₆'
   - 'C₄H₈'
+  - 'C₃H₆'
 correctAnswer: 'C₃H₆'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
@@ -120,17 +121,16 @@ correctAnswers:
   - 'Sauerstoff wird verbraucht'
   - 'Es wird Energie freigesetzt'
   - 'Es handelt sich um eine exotherme Reaktion'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Reaktionen & Empirische Formeln'
 level: 2
 question: 'Berechne den Massenanteil von Stickstoff in NH₄NO₃. (N = 14, H = 1, O = 16 g/mol)'
 options:
   - '17,5%'
-  - '28%'
   - '35%'
+  - '28%'
   - '14%'
 correctAnswer: '35%'
----

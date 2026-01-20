@@ -1,17 +1,18 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Die Formel für die Gefrierpunktserniedrigung lautet ΔTf = Kf × m. Was ist Kf?'
 options:
-  - 'Die kryoskopische Konstante (spezifisch für das Lösungsmittel)'
   - 'Die Molalität'
+  - 'Die kryoskopische Konstante (spezifisch für das Lösungsmittel)'
   - 'Die Molmasse'
   - 'Die Konzentration'
 correctAnswer: 'Die kryoskopische Konstante (spezifisch für das Lösungsmittel)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
@@ -22,35 +23,35 @@ options:
   - '0,93°C'
   - '5,58°C'
 correctAnswer: '1,86°C'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Die Formel für die Siedepunkterhöhung lautet ΔTb = Kb × m. Die ebullioskopische Konstante von Wasser ist Kb = 0,512 K·kg/mol. Berechne ΔTb für eine 2 m Lösung.'
 options:
-  - '1,024°C'
+  - '0,256°C'
   - '0,512°C'
   - '2,048°C'
-  - '0,256°C'
+  - '1,024°C'
 correctAnswer: '1,024°C'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Das Raoult''sche Gesetz lautet: P = x × P°. Was ist x?'
 options:
-  - 'Der Molenbruch des Lösungsmittels'
   - 'Die Molalität'
+  - 'Der Molenbruch des Lösungsmittels'
   - 'Die Masse des gelösten Stoffes'
   - 'Die Temperatur'
 correctAnswer: 'Der Molenbruch des Lösungsmittels'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Kolligative Eigenschaften'
 level: 2
@@ -64,22 +65,22 @@ correctAnswers:
   - 'Der gelöste Stoff blockiert Lösungsmittelmoleküle an der Oberfläche'
   - 'Der Molenbruch des Lösungsmittels sinkt'
   - 'Weniger Lösungsmittelmoleküle können verdampfen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Die van''t Hoff-Gleichung für den osmotischen Druck lautet: π = MRT. Was bedeuten die Symbole?'
 options:
-  - 'π = osmotischer Druck, M = Molarität, R = Gaskonstante, T = Temperatur'
-  - 'π = Dampfdruck, M = Masse, R = Radius, T = Zeit'
   - 'π = Pi, M = Molmasse, R = Reaktionsgeschwindigkeit, T = Temperatur'
+  - 'π = Dampfdruck, M = Masse, R = Radius, T = Zeit'
+  - 'π = osmotischer Druck, M = Molarität, R = Gaskonstante, T = Temperatur'
   - 'π = Partialdruck, M = Molalität, R = Rydberg-Konstante, T = Tripelpunkt'
 correctAnswer: 'π = osmotischer Druck, M = Molarität, R = Gaskonstante, T = Temperatur'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
@@ -90,35 +91,35 @@ options:
   - '24,5 atm'
   - '0,0245 atm'
 correctAnswer: '2,45 atm'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Welche Lösung hat den niedrigsten Gefrierpunkt?'
 options:
-  - '1 m NaCl'
+  - 'Alle haben den gleichen Gefrierpunkt'
   - '1 m Glucose'
   - '0,5 m CaCl₂'
-  - 'Alle haben den gleichen Gefrierpunkt'
+  - '1 m NaCl'
 correctAnswer: '1 m NaCl'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Was ist der van''t Hoff-Faktor i?'
 options:
-  - 'Die Anzahl der Teilchen, in die eine Formeleinheit dissoziiert'
+  - 'Die Temperaturänderung'
   - 'Die Molmasse des gelösten Stoffes'
   - 'Die Dichte der Lösung'
-  - 'Die Temperaturänderung'
+  - 'Die Anzahl der Teilchen, in die eine Formeleinheit dissoziiert'
 correctAnswer: 'Die Anzahl der Teilchen, in die eine Formeleinheit dissoziiert'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Kolligative Eigenschaften'
 level: 2
@@ -129,4 +130,3 @@ options:
   - 'Glucose (dissoziiert nicht)'
   - 'AlCl₃ (Al³⁺ + 3 Cl⁻)'
 correctAnswer: 'CaCl₂ (Ca²⁺ + 2 Cl⁻)'
----

@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -12,9 +13,9 @@ correctAnswers:
   - 'Die vollständige Füllung des 4d ist energetisch günstiger'
   - 'Die Elektronenpaarungsenergie im 4d ist geringer als die Energie des 5s'
   - 'Es gibt keine 5s-Elektronen in Pd'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -28,22 +29,22 @@ correctAnswers:
   - 'Von höheren Niveaus zu n=2'
   - 'Von n=3,4,5,... zu n=2'
   - 'Die Linien liegen im sichtbaren Bereich'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
 question: 'Ein Ion X²⁺ ist diamagnetisch und hat die Konfiguration [Ar] 3d¹⁰. Welches Element und wie viele Elektronen hat das neutrale Atom?'
 options:
-  - 'Zink (Zn), 30 Elektronen'
-  - 'Kupfer (Cu), 29 Elektronen'
   - 'Nickel (Ni), 28 Elektronen'
+  - 'Kupfer (Cu), 29 Elektronen'
+  - 'Zink (Zn), 30 Elektronen'
   - 'Gallium (Ga), 31 Elektronen'
 correctAnswer: 'Zink (Zn), 30 Elektronen'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -57,22 +58,22 @@ correctAnswers:
   - 'Sie alle füllen die 4f-Orbitale'
   - 'Die 4f-Elektronen sind stark abgeschirmt'
   - 'Die Valenzkonfiguration ist ähnlich (5d¹ 6s² oder 6s²)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
 question: 'Berechne die Ionisierungsenergie von He⁺ (wasserstoffähnliches Ion mit Z=2).'
 options:
   - '13,6 eV'
-  - '27,2 eV'
   - '54,4 eV'
+  - '27,2 eV'
   - '6,8 eV'
 correctAnswer: '54,4 eV'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -85,9 +86,9 @@ options:
 correctAnswers:
   - 'Mn²⁺ ([Ar] 3d⁵)'
   - 'Fe³⁺ ([Ar] 3d⁵)'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -101,9 +102,9 @@ correctAnswers:
   - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
   - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'
   - 'd- und f-Elektronen schirmen schlecht ab'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -116,9 +117,9 @@ options:
 correctAnswers:
   - 'Balmer-Serie, blau-violett'
   - 'Die Wellenlänge beträgt etwa 434 nm'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -133,9 +134,9 @@ correctAnswers:
   - 'Mg²⁺ hat Edelgaskonfiguration'
   - 'Die effektive Kernladung ist für das 2p-Elektron viel höher'
   - 'Es muss die stabile Neon-Konfiguration aufgebrochen werden'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Bohr & Elektronenkonfiguration'
 level: 5
@@ -148,4 +149,3 @@ options:
 correctAnswers:
   - '[Xe] 4f⁷ 5d¹ 6s² - halbgefüllte f-Schale ist besonders stabil'
   - 'Die Austauschenergie bei 7 parallelen f-Elektronen ist maximal'
----

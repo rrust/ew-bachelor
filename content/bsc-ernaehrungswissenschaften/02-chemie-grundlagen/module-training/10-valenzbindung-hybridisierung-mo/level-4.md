@@ -1,4 +1,5 @@
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
@@ -9,22 +10,22 @@ options:
   - 'Bindungsordnung 1,5, paramagnetisch'
   - 'Bindungsordnung 0, kein Molekül'
 correctAnswer: 'Bindungsordnung 1, diamagnetisch'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
 question: 'Ordne die Bindungsstärke: O₂, O₂⁺, O₂⁻, O₂²⁻'
 options:
-  - 'O₂⁺ > O₂ > O₂⁻ > O₂²⁻'
-  - 'O₂ > O₂⁺ > O₂⁻ > O₂²⁻'
   - 'O₂²⁻ > O₂⁻ > O₂ > O₂⁺'
+  - 'O₂ > O₂⁺ > O₂⁻ > O₂²⁻'
+  - 'O₂⁺ > O₂ > O₂⁻ > O₂²⁻'
   - 'Alle haben die gleiche Bindungsstärke'
 correctAnswer: 'O₂⁺ > O₂ > O₂⁻ > O₂²⁻'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
@@ -39,9 +40,9 @@ correctAnswers:
   - 'CO hat eine Bindungsordnung von 3'
   - 'CO hat ein Dipolmoment'
   - 'CO ist diamagnetisch'
----
 
 ---
+
 type: 'multiple-choice-multiple'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
@@ -56,9 +57,9 @@ correctAnswers:
   - 'Die π-Elektronen sind delokalisiert'
   - 'Alle C-C-Bindungen haben die gleiche Länge'
   - 'Das Molekül ist planar'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
@@ -69,48 +70,48 @@ options:
   - 'Alle sp'
   - 'C1: sp³, C2: sp², C3: sp'
 correctAnswer: 'C1: sp², C2: sp², C3: sp'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
 question: 'Das Molekül NO hat ein ungepaartes Elektron. Welche Bindungsordnung hat es?'
 options:
   - '2'
-  - '2,5'
-  - '3'
   - '1,5'
+  - '3'
+  - '2,5'
 correctAnswer: '2,5'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
 question: 'Bei homonuklearen zweiatomigen Molekülen der 2. Periode gibt es eine Orbitalumkehr bei O₂ und F₂. Was bedeutet das?'
 options:
-  - 'Das σ₂p-Orbital liegt energetisch unter den π₂p-Orbitalen'
   - 'Das σ₂p-Orbital liegt energetisch über den π₂p-Orbitalen'
+  - 'Das σ₂p-Orbital liegt energetisch unter den π₂p-Orbitalen'
   - 'Es gibt keine π-Orbitale'
   - 'Die Bindungsordnung ist negativ'
 correctAnswer: 'Das σ₂p-Orbital liegt energetisch unter den π₂p-Orbitalen'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
 question: 'Welches Molekül hat die stärkste Bindung?'
 options:
-  - 'N₂ (Bindungsordnung 3)'
-  - 'O₂ (Bindungsordnung 2)'
   - 'F₂ (Bindungsordnung 1)'
+  - 'O₂ (Bindungsordnung 2)'
+  - 'N₂ (Bindungsordnung 3)'
   - 'CO (Bindungsordnung 3, aber heteronuklear)'
 correctAnswer: 'N₂ (Bindungsordnung 3)'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
@@ -121,9 +122,9 @@ options:
   - 'Gemischte Hybridisierung, 3 π-Elektronen'
   - 'Lineare Struktur, keine π-Elektronen'
 correctAnswer: 'Alle C sp²-hybridisiert, 2 π-Elektronen delokalisiert'
----
 
 ---
+
 type: 'multiple-choice'
 topic: 'Valenzbindung, Hybridisierung & MO'
 level: 4
@@ -134,4 +135,3 @@ options:
   - 'Die Bindungsordnung ist 0'
   - 'Bor ist ein Metall'
 correctAnswer: 'Die beiden Elektronen im π-System sind ungepaart (Hund''sche Regel)'
----
