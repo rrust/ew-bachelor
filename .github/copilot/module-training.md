@@ -73,10 +73,24 @@ Alle:     A, B, C, D
 **Welche Aussage ist NICHT korrekt?**
 **Was trifft NICHT zu?**
 **Welche Option ist falsch?**
+**Was ist KEINE Eigenschaft von...?**
 ```
 
 **Warum?** Negativ-Fragen sind kognitiv belastender und führen zu Verwirrung.
 **Lösung:** Positiv formulieren: "Welche Aussage ist korrekt?"
+
+**Auch verboten:**
+- "kein", "keine", "keines"
+- "nie", "niemals"
+- "inkorrekt", "unzutreffend"
+
+```markdown
+# FALSCH:
+**Welches Element bildet KEINE Ionen?**
+
+# BESSER:
+**Welches Element bildet bevorzugt kovalente Bindungen?**
+```
 
 ### ❌ VERBOTEN: Antwort in Frage verraten
 
@@ -222,7 +236,7 @@ Vermeide Wörter, die Hinweise geben:
 
 ### 📊 Positions-Verteilung
 
-Korrekte Antworten sollten **gleichmäßig verteilt** sein:
+Korrekte Antworten **MÜSSEN gleichmäßig verteilt** sein:
 
 | Position | Ziel | Problem wenn abweichend        |
 | -------- | ---- | ------------------------------ |
@@ -231,7 +245,32 @@ Korrekte Antworten sollten **gleichmäßig verteilt** sein:
 | C        | ~25% | Zu selten C → Muster erkennbar |
 | D        | ~25% | Zu selten D → Muster erkennbar |
 
-**Tipp:** Bei 10 Fragen pro Level: 2-3× A, 2-3× B, 2-3× C, 2-3× D
+**Bei 10 Fragen pro Level:**
+- 2-3× A, 2-3× B, 2-3× C, 2-3× D
+- **NIEMALS** alle korrekten Antworten auf Position A!
+- Das Script `fix-answer-positions.js` kann die Verteilung automatisch korrigieren
+
+```bash
+# Positions-Verteilung automatisch korrigieren
+node scripts/fix-answer-positions.js
+```
+
+### ✅ Chemische Formeln sind OKAY
+
+Wenn die Frage nach einer spezifischen Verbindung fragt, ist es **unvermeidlich und erlaubt**, 
+dass die Antwort diese Formel enthält:
+
+```markdown
+# ERLAUBT - Formeln müssen in Frage und Antwort vorkommen
+**Klassifiziere H₂SO₄, HNO₃, CH₃COOH nach Säurestärke:**
+- [ ] A. H₂SO₄ und HNO₃ dissoziieren vollständig ✓  # Formeln hier sind OKAY!
+
+# AUCH ERLAUBT - Konzeptbegriffe die zum Thema gehören
+**Was zeigt das Pourbaix-Diagramm für Fe?**
+- [ ] A. Zeigt wo Fe, Fe²⁺, Fe³⁺ vorliegen ✓  # Fe muss hier vorkommen!
+```
+
+**Faustregel:** Wenn die Frage NACH X fragt, muss die Antwort X enthalten dürfen.
 
 ## Schwierigkeitsgrade
 
@@ -270,15 +309,33 @@ Korrekte Antworten sollten **gleichmäßig verteilt** sein:
 ### Scripts ausführen
 
 ```bash
+# Qualitätsprüfung für fertige Trainings-Fragen (YAML-Format)
+node scripts/analyze-training-quality.js
+
 # Technische Probleme finden (Format, doppelte Optionen, etc.)
 node scripts/analyzeQuestions.js
-
-# Qualitätsprobleme finden (Längen, Hinweise, Negativ-Fragen, etc.)
-node scripts/analyzeQuestionQuality.js
 
 # Bei 0 kritischen Problemen:
 node scripts/convertQuestions.js
 ```
+
+### analyze-training-quality.js prüft
+
+Das Hauptscript für Qualitätsprüfung. Zeigt:
+
+| Kategorie                 | Schwere  | Beschreibung                          |
+| ------------------------- | -------- | ------------------------------------- |
+| Negativ-Fragen            | KRITISCH | NICHT, kein, nie in Frage             |
+| Antwort in Frage          | KRITISCH | Antwort-Keywords in Frage enthalten   |
+| Frage-Begriff in Antwort  | KRITISCH | Frage-Begriff erscheint in Antwort    |
+| Längen-Ungleichgewicht    | HOCH     | Korrekte Antwort >50% länger          |
+| Spezifitäts-Imbalance     | HOCH     | Nur korrekte Antworten haben Details  |
+| Offensichtl. Distraktoren | HOCH     | Falsche Antworten zu leicht erkennbar |
+| Absolute Begriffe         | MITTEL   | "immer/nie" in falschen Antworten     |
+
+**Statistiken:**
+- **Längen-Balance** – Verhältnis korrekt/falsch sollte < 1.3x sein
+- **Positions-Verteilung** – A/B/C/D sollten je ~25% haben
 
 ### analyzeQuestions.js prüft (technisch)
 
@@ -291,19 +348,6 @@ node scripts/convertQuestions.js
 | "Alle genannten"  | HOCH     | Meta-Optionen           |
 | Alle 4 korrekt    | MITTEL   | A, B, C, D              |
 | Duplikate         | MITTEL   | Gleiche Fragen          |
-
-### analyzeQuestionQuality.js prüft (inhaltlich)
-
-| Kategorie                 | Schwere  | Beschreibung                          |
-| ------------------------- | -------- | ------------------------------------- |
-| Negativ-Fragen            | KRITISCH | NICHT, kein, nie in Frage             |
-| Antwort in Frage          | KRITISCH | Antwort-Keywords in Frage enthalten   |
-| Frage-Begriff             | KRITISCH | Frage-Begriff erscheint in Antwort    |
-| Längen-Ungleichgewicht    | HOCH     | Korrekte Antwort >50% länger          |
-| Spezifitäts-Imbalance     | HOCH     | Nur korrekte Antworten haben Details  |
-| Offensichtl. Distraktoren | HOCH     | Falsche Antworten zu leicht erkennbar |
-| Absolute Begriffe         | MITTEL   | "immer/nie" in falschen Antworten     |
-| Grammatik-Hinweise        | MITTEL   | Genus/Kasus verrät Antwort            |
 
 ### Statistiken beachten
 
