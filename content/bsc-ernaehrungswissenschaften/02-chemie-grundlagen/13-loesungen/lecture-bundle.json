@@ -200,7 +200,7 @@
           "pages": "8-9"
         }
       ],
-      "content": "# Taschenwärmer: Angewandte Thermodynamik\n\n**Taschenwärmer (Heat Packs)** nutzen die umgekehrte Reaktion – die Kristallisation einer übersättigten Lösung.\n\n## Das Prinzip\n\nNatriumacetat ($\\text{NaCH}_3\\text{CO}_2$) kann stark übersättigte Lösungen bilden. Die Kristallisation ist **exotherm**:\n\n$$\\text{Na}^+{}_{(\\text{aq})} + \\text{CH}_3\\text{CO}_2^-{}_{(\\text{aq})} \\rightarrow \\text{NaCH}_3\\text{CO}_{2(\\text{s})} + \\text{Wärme}$$\n\n## Funktionsweise\n\n1. **Vor der Aktivierung:** Klare, übersättigte Natriumacetat-Lösung\n2. **Aktivierung:** Knicken eines Metallplättchens löst Kristallisation aus\n3. **Wärmeabgabe:** Schlagartige Kristallisation setzt gespeicherte Energie frei\n4. **Regeneration:** Durch Erhitzen im Wasserbad wieder verflüssigbar\n\n## Energiespeicherung\n\nDie übersättigte Lösung speichert die Energie, die beim vorherigen Auflösen des Salzes (durch Erhitzen) aufgenommen wurde. Beim Kristallisieren wird diese Energie als Wärme wieder freigesetzt.\n\n> **Vorteil:** Wiederverwendbar – nach dem Erhitzen ist der Taschenwärmer wieder einsatzbereit."
+      "content": "# Taschenwärmer: Angewandte Thermodynamik\n\n**Taschenwärmer (Heat Packs)** nutzen die umgekehrte Reaktion – die Kristallisation einer übersättigten Lösung.\n\n## Das Prinzip\n\nNatriumacetat ($\\text{NaCH}_3\\text{CO}_2$) kann stark übersättigte Lösungen bilden. Die Kristallisation ist **exotherm**:\n\n$$\\text{Na}^+ + \\text{CH}_3\\text{CO}_2^- \\rightarrow \\text{NaCH}_3\\text{CO}_2 + \\Delta$$\n\n(Die Indizes (aq) und (s) kennzeichnen den gelösten bzw. festen Zustand)\n\n## Funktionsweise\n\n1. **Vor der Aktivierung:** Klare, übersättigte Natriumacetat-Lösung\n2. **Aktivierung:** Knicken eines Metallplättchens löst Kristallisation aus\n3. **Wärmeabgabe:** Schlagartige Kristallisation setzt gespeicherte Energie frei\n4. **Regeneration:** Durch Erhitzen im Wasserbad wieder verflüssigbar\n\n## Energiespeicherung\n\nDie übersättigte Lösung speichert die Energie, die beim vorherigen Auflösen des Salzes (durch Erhitzen) aufgenommen wurde. Beim Kristallisieren wird diese Energie als Wärme wieder freigesetzt.\n\n> **Vorteil:** Wiederverwendbar – nach dem Erhitzen ist der Taschenwärmer wieder einsatzbereit."
     },
     {
       "type": "self-assessment-mc",
@@ -1062,5 +1062,5 @@
     }
   ],
   "quiz": [],
-  "generatedAt": "2026-01-20T16:45:15.542Z"
+  "generatedAt": "2026-01-20T18:10:31.505Z"
 }

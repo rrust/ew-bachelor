@@ -13,7 +13,9 @@ sourceRefs:
 
 Natriumacetat ($\text{NaCH}_3\text{CO}_2$) kann stark übersättigte Lösungen bilden. Die Kristallisation ist **exotherm**:
 
-$$\text{Na}^+{}_{(\text{aq})} + \text{CH}_3\text{CO}_2^-{}_{(\text{aq})} \rightarrow \text{NaCH}_3\text{CO}_{2(\text{s})} + \text{Wärme}$$
+$$\text{Na}^+ + \text{CH}_3\text{CO}_2^- \rightarrow \text{NaCH}_3\text{CO}_2 + \Delta$$
+
+(Die Indizes (aq) und (s) kennzeichnen den gelösten bzw. festen Zustand)
 
 ## Funktionsweise
 
