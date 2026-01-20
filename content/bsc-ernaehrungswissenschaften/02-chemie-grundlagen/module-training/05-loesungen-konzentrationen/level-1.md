@@ -122,8 +122,8 @@ topic: 'Lösungen & Konzentrationen'
 level: 1
 question: 'Welche Eigenschaft beschreibt H₂O als universelles Lösungsmittel am besten?'
 options:
-  - 'H₂O löst nur unpolare Verbindungen'
-  - 'H₂O kann keine Salze auflösen'
+  - 'H₂O löst bevorzugt unpolare Verbindungen'
+  - 'H₂O löst Salze nur bei hohen Temperaturen'
   - 'H₂O ist polar und löst viele Stoffe'
-  - 'H₂O ist unpolar und inert'
+  - 'H₂O ist unpolar und chemisch inert'
 correctAnswer: 'H₂O ist polar und löst viele Stoffe'

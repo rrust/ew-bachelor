@@ -125,5 +125,5 @@ options:
   - 'Schwache Säure mit schwacher Base'
   - 'Starke Säure mit starker Base'
   - 'Starke Säure mit schwacher Base'
-  - 'Keine Titration'
+  - 'Titrationen im sauren pH-Bereich'
 correctAnswer: 'Starke Säure mit starker Base'

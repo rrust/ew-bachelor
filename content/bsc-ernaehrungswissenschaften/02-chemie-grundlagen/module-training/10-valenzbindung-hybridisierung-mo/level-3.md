@@ -18,9 +18,9 @@ topic: 'Valenzbindung, Hybridisierung & MO'
 level: 3
 question: 'Bestimme die Hybridisierung des zentralen Kohlenstoffs in Allen (H₂C=C=CH₂).'
 options:
-  - 'sp für alle C'
-  - 'sp² für alle C'
-  - 'sp³ für alle C'
+  - 'sp an der mittleren Position, sp² an den äußeren Positionen'
+  - 'sp² an der mittleren Position, sp an den äußeren Positionen'
+  - 'sp³ für den mittleren C, sp² für die äußeren C'
   - 'sp für den mittleren C, sp² für die äußeren C'
 correctAnswer: 'sp für den mittleren C, sp² für die äußeren C'
 

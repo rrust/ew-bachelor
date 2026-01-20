@@ -97,7 +97,11 @@ options:
   - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
   - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'
   - 'd- und f-Elektronen schirmen schlecht ab'
-  - 'Die effektive Kernladung ist für alle Elektronen gleich'
+  - 'Die effektive Kernladung ist für s- und p-Elektronen identisch'
+correctAnswers:
+  - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
+  - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'
+  - 'd- und f-Elektronen schirmen schlecht ab'
 correctAnswers:
   - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
   - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'

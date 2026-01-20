@@ -24,7 +24,7 @@ options:
   - 'a = γ × x, wobei γ der Aktivitätskoeffizient ist'
   - 'Sie berücksichtigt nicht-ideale Wechselwirkungen'
   - 'In sehr verdünnten Lösungen nähert sich γ → 1'
-  - 'Die Aktivität entspricht immer dem Molenbruch'
+  - 'Die Aktivität entspricht in konzentrierten Lösungen dem Molenbruch'
 correctAnswers:
   - 'a = γ × x, wobei γ der Aktivitätskoeffizient ist'
   - 'Sie berücksichtigt nicht-ideale Wechselwirkungen'
@@ -56,7 +56,7 @@ options:
   - 'Ionen sind von einer "Ionenwolke" entgegengesetzter Ladung umgeben'
   - 'Der Aktivitätskoeffizient sinkt mit steigender Ionenstärke'
   - 'Bei sehr hohen Konzentrationen versagt die Theorie'
-  - 'Die Debye-Hückel-Theorie gilt für alle Konzentrationen'
+  - 'Die Debye-Hückel-Theorie gilt uneingeschränkt für konzentrierte Lösungen'
 correctAnswers:
   - 'Ionen sind von einer "Ionenwolke" entgegengesetzter Ladung umgeben'
   - 'Der Aktivitätskoeffizient sinkt mit steigender Ionenstärke'

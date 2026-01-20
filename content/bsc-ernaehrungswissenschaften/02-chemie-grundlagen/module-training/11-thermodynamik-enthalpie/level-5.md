@@ -40,7 +40,7 @@ options:
   - 'Niedrige Temperatur begünstigt die exotherme Reaktion'
   - 'Hoher Druck begünstigt die Seite mit weniger Gasteilchen'
   - 'Kompromiss zwischen Thermodynamik (niedrige T) und Kinetik (hohe T für Geschwindigkeit)'
-  - 'Hohe Temperatur begünstigt immer höhere Ausbeute'
+  - 'Hohe Temperatur begünstigt bei exothermen Reaktionen höhere Ausbeute'
 correctAnswers:
   - 'Niedrige Temperatur begünstigt die exotherme Reaktion'
   - 'Hoher Druck begünstigt die Seite mit weniger Gasteilchen'

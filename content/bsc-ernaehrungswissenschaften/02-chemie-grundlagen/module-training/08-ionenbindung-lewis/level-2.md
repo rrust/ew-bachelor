@@ -58,7 +58,7 @@ level: 2
 question: 'In der Lewis-Struktur von CO₂: Wie viele Bindungen hat jedes Sauerstoffatom zum Kohlenstoff?'
 options:
   - 'Eine Einfachbindung'
-  - 'Keine Bindung'
+  - 'Eine koordinative Bindung'
   - 'Eine Dreifachbindung'
   - 'Eine Doppelbindung'
 correctAnswer: 'Eine Doppelbindung'

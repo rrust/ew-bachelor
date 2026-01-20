@@ -90,7 +90,7 @@ options:
   - 'NF₃ < OF₂ < BF₃'
   - 'BF₃ < NF₃ < OF₂'
   - 'OF₂ < NF₃ < BF₃'
-  - 'Alle haben den gleichen Winkel'
+  - 'Die Winkel unterscheiden sich nur minimal'
 correctAnswer: 'OF₂ < NF₃ < BF₃'
 
 ---

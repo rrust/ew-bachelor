@@ -112,7 +112,7 @@ options:
   - 'Sie beschreibt nur die Farbe der chemischen Stoffe'
   - 'Sie beschreibt die mengenmäßigen Verhältnisse bei Reaktionen'
   - 'Sie beschreibt die Geschwindigkeit chemischer Reaktionen'
-  - 'Sie gilt ausschließlich für gasförmige Stoffe'
+  - 'Sie gilt nur für Flüssigkeiten und Festkörper'
 correctAnswer: 'Sie beschreibt die mengenmäßigen Verhältnisse bei Reaktionen'
 
 ---

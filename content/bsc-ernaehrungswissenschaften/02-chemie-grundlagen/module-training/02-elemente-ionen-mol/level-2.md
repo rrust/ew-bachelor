@@ -102,7 +102,7 @@ options:
   - 'n = m / M (Masse geteilt durch molare Masse)'
   - 'Die Einheit ist mol'
   - 'n = N / Nₐ (Teilchenzahl geteilt durch Avogadro-Zahl)'
-  - 'n hat keine Einheit'
+  - 'n beschreibt die Masse eines Stoffes in Gramm'
 correctAnswers:
   - 'n = m / M (Masse geteilt durch molare Masse)'
   - 'Die Einheit ist mol'

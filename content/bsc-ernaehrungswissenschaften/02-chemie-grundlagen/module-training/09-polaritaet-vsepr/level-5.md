@@ -65,8 +65,8 @@ question: 'Das Molekül PCl₃F₂ kann verschiedene Isomere haben. Welches ist 
 options:
   - 'Cl-Atome in axialen Positionen'
   - 'F-Atome in axialen Positionen (trigonal-bipyramidal)'
-  - 'Gemischte Anordnung'
-  - 'Alle Isomere sind gleich stabil'
+  - 'Gemischte Anordnung ohne Vorzug'
+  - 'Die Stabilität hängt von der Temperatur ab'
 correctAnswer: 'Cl-Atome in axialen Positionen'
 
 ---

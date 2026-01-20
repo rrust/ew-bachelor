@@ -118,7 +118,7 @@ options:
   - 'Kathode: Cl₂-Entwicklung; Anode: Na-Abscheidung'
   - 'Kathode: Na⁺ + e⁻ → Na; Anode: 2 Cl⁻ → Cl₂ + 2e⁻'
   - 'An beiden Elektroden entsteht NaCl'
-  - 'Keine Reaktion'
+  - 'Nur Ionenwanderung ohne Elektrodenreaktion'
 correctAnswer: 'Kathode: Na⁺ + e⁻ → Na; Anode: 2 Cl⁻ → Cl₂ + 2e⁻'
 
 ---

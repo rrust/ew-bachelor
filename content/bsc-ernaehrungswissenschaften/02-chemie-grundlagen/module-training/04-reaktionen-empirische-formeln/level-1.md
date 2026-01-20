@@ -122,8 +122,8 @@ topic: 'Reaktionen & Empirische Formeln'
 level: 1
 question: 'Worin unterscheiden sich Summenformel und Verhältnisformel?'
 options:
-  - 'Die Summenformel zeigt die tatsächliche Atomanzahl, die Verhältnisformel das kleinste ganzzahlige Verhältnis'
-  - 'Beide zeigen immer identische Informationen'
-  - 'Es gibt keinen Unterschied zwischen ihnen'
-  - 'Die Verhältnisformel zeigt stets mehr Atome'
-correctAnswer: 'Die Summenformel zeigt die tatsächliche Atomanzahl, die Verhältnisformel das kleinste ganzzahlige Verhältnis'
+  - 'Summenformel: tatsächliche Atomzahl; Verhältnisformel: kleinstes Verhältnis'
+  - 'Summenformel: räumliche Struktur; Verhältnisformel: Bindungstypen'
+  - 'Es gibt keinen inhaltlichen Unterschied zwischen beiden Darstellungen'
+  - 'Die Verhältnisformel zeigt größere Atomzahlen als die Summenformel'
+correctAnswer: 'Summenformel: tatsächliche Atomzahl; Verhältnisformel: kleinstes Verhältnis'

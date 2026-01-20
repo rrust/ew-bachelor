@@ -99,7 +99,7 @@ topic: 'Kolligative Eigenschaften'
 level: 2
 question: 'Welche Lösung hat den niedrigsten Gefrierpunkt?'
 options:
-  - 'Alle haben den gleichen Gefrierpunkt'
+  - 'Die Gefrierpunkte sind nahezu identisch'
   - '1 m Glucose'
   - '0,5 m CaCl₂'
   - '1 m NaCl'

@@ -87,8 +87,8 @@ level: 3
 question: 'Was ist der Unterschied zwischen ΔH und ΔU (innere Energie)?'
 options:
   - 'ΔH = ΔU + PΔV (bei konstantem Druck)'
-  - 'ΔH und ΔU sind immer gleich'
-  - 'ΔH berücksichtigt keine Gase'
+  - 'ΔH und ΔU sind bei Festkörperreaktionen identisch'
+  - 'ΔH berücksichtigt nur flüssige Reaktanden'
   - 'ΔU ist nur für Festkörper definiert'
 correctAnswer: 'ΔH = ΔU + PΔV (bei konstantem Druck)'
 
@@ -128,8 +128,8 @@ topic: 'Thermodynamik & Enthalpie'
 level: 3
 question: 'Warum ist die Standardbildungsenthalpie von O₂(g) gleich null?'
 options:
-  - 'O₂ ist ein Gas'
-  - 'O₂ hat keine Bindungen'
+  - 'O₂ ist ein Gas bei Raumtemperatur'
+  - 'O₂ ist ein zweiatomiges Molekül'
   - 'Sauerstoff ist ein Nichtmetall'
   - 'O₂ ist die stabilste Form von Sauerstoff unter Standardbedingungen'
 correctAnswer: 'O₂ ist die stabilste Form von Sauerstoff unter Standardbedingungen'

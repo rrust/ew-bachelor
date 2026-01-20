@@ -56,7 +56,7 @@ options:
   - 'Es kann unpolare organische Verbindungen lösen'
   - 'Die Dielektrizitätskonstante sinkt stark'
   - 'Es ist korrosiv und reaktiv'
-  - 'Überkritisches Wasser kann keine unpolaren Stoffe lösen'
+  - 'Überkritisches Wasser löst unpolare Stoffe schlechter als normales Wasser'
 correctAnswers:
   - 'Es kann unpolare organische Verbindungen lösen'
   - 'Die Dielektrizitätskonstante sinkt stark'

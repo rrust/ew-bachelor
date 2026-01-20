@@ -34,7 +34,7 @@ options:
   - 'Der Kreisprozess ist experimentell, die Berechnung ist theoretisch'
   - 'Der Kreisprozess nutzt den Hess''schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen'
   - 'Abweichungen zwischen beiden deuten auf kovalente Anteile hin'
-  - 'Beide Methoden liefern stets identische Werte'
+  - 'Beide Methoden liefern bei rein ionischen Verbindungen sehr ähnliche Werte'
 correctAnswers:
   - 'Der Kreisprozess ist experimentell, die Berechnung ist theoretisch'
   - 'Der Kreisprozess nutzt den Hess''schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen'

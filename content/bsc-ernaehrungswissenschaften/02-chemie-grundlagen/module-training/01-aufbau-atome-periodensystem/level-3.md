@@ -110,9 +110,9 @@ level: 3
 question: 'Warum sind Edelgase unter normalen Bedingungen chemisch sehr reaktionsträge?'
 options:
   - 'Sie haben eine vollständig gefüllte Valenzschale'
-  - 'Sie besitzen überhaupt keine Elektronen in der Hülle'
+  - 'Ihre Außenelektronen sind besonders fest gebunden'
   - 'Sie erreichen die stabile Edelgaskonfiguration bereits'
-  - 'Sie bestehen ausschließlich aus Protonen im Kern'
+  - 'Ihre hohe Kernladung verhindert Reaktionen'
 correctAnswers:
   - 'Sie haben eine vollständig gefüllte Valenzschale'
   - 'Sie erreichen die stabile Edelgaskonfiguration bereits'
@@ -141,6 +141,6 @@ question: 'Ordne die folgenden Elemente nach steigendem Atomradius: Li, Na, K. W
 options:
   - 'Li < Na < K, weil die Anzahl der Elektronenschalen zunimmt'
   - 'Li < Na < K, weil die Kernladung in der Gruppe abnimmt'
-  - 'Alle Alkalimetalle haben den gleichen Atomradius'
+  - 'Die Atomradien der Alkalimetalle sind nahezu identisch'
   - 'K < Na < Li, weil die Kernladung in der Gruppe zunimmt'
 correctAnswer: 'Li < Na < K, weil die Anzahl der Elektronenschalen zunimmt'

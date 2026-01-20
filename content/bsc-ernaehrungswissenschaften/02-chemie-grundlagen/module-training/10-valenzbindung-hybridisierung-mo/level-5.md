@@ -62,8 +62,8 @@ question: 'Im Kohlenmonoxid (CO) zeigt das Dipolmoment in Richtung C. Warum?'
 options:
   - 'Das freie Elektronenpaar am C überwiegt den Elektronegativitätsunterschied'
   - 'Kohlenstoff ist elektronegativer als Sauerstoff'
-  - 'CO hat kein Dipolmoment'
-  - 'Das Dipolmoment zeigt immer zum elektronegativeren Atom'
+  - 'CO hat kein messbares Dipolmoment'
+  - 'Das Dipolmoment zeigt normalerweise zum elektronegativeren Atom'
 correctAnswer: 'Das freie Elektronenpaar am C überwiegt den Elektronegativitätsunterschied'
 
 ---

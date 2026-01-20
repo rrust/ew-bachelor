@@ -5,10 +5,10 @@ topic: 'Säuren & Basen Grundlagen'
 level: 2
 question: 'Klassifiziere diese Säuren nach Stärke: HNO₃, CH₃COOH, H₂SO₄, HF'
 options:
-  - 'Alle vier dissoziieren vollständig'
-  - 'Alle vier dissoziieren nur teilweise'
+  - 'HNO₃ und CH₃COOH dissoziieren vollständig; H₂SO₄ und HF nur teilweise'
+  - 'H₂SO₄ und HF dissoziieren vollständig; HNO₃ und CH₃COOH nur teilweise'
   - 'HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise'
-  - 'Nur H₂SO₄ dissoziiert vollständig'
+  - 'CH₃COOH und HF dissoziieren vollständig; HNO₃ und H₂SO₄ nur teilweise'
 correctAnswer: 'HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise'
 
 ---

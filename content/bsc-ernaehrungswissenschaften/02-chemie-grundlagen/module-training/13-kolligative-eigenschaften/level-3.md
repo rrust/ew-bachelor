@@ -98,7 +98,7 @@ options:
   - 'MgCl₂ hat den größten Effekt (i ≈ 3)'
   - 'NaCl hat einen mittleren Effekt (i ≈ 2)'
   - 'Glucose hat den kleinsten Effekt (i = 1)'
-  - 'Alle Lösungen haben den gleichen kolligativen Effekt'
+  - 'Die Reihenfolge ist umgekehrt: Glucose > NaCl > MgCl₂'
 correctAnswers:
   - 'MgCl₂ hat den größten Effekt (i ≈ 3)'
   - 'NaCl hat einen mittleren Effekt (i ≈ 2)'
@@ -146,7 +146,7 @@ options:
   - 'Sehr verdünnte Lösungen'
   - 'Lösungen mit ähnlichen intermolekularen Kräften'
   - 'Nicht-flüchtige gelöste Stoffe'
-  - 'Das Raoult''sche Gesetz gilt für alle Konzentrationen'
+  - 'Das Raoult''sche Gesetz gilt uneingeschränkt für konzentrierte Lösungen'
 correctAnswers:
   - 'Sehr verdünnte Lösungen'
   - 'Lösungen mit ähnlichen intermolekularen Kräften'

@@ -21,7 +21,7 @@ options:
   - 'O₂²⁻ > O₂⁻ > O₂ > O₂⁺'
   - 'O₂ > O₂⁺ > O₂⁻ > O₂²⁻'
   - 'O₂⁺ > O₂ > O₂⁻ > O₂²⁻'
-  - 'Alle haben die gleiche Bindungsstärke'
+  - 'Die Bindungsstärke ändert sich nicht mit der Ladung'
 correctAnswer: 'O₂⁺ > O₂ > O₂⁻ > O₂²⁻'
 
 ---
@@ -66,8 +66,8 @@ level: 4
 question: 'Bestimme die Hybridisierung jedes C-Atoms in Acrylnitril (H₂C=CH-C≡N).'
 options:
   - 'C1: sp², C2: sp², C3: sp'
-  - 'Alle sp²'
-  - 'Alle sp'
+  - 'C1: sp², C2: sp, C3: sp'
+  - 'C1: sp, C2: sp², C3: sp'
   - 'C1: sp³, C2: sp², C3: sp'
 correctAnswer: 'C1: sp², C2: sp², C3: sp'
 
@@ -93,7 +93,7 @@ question: 'Bei homonuklearen zweiatomigen Molekülen der 2. Periode gibt es eine
 options:
   - 'Das σ₂p-Orbital liegt energetisch über den π₂p-Orbitalen'
   - 'Das σ₂p-Orbital liegt energetisch unter den π₂p-Orbitalen'
-  - 'Es gibt keine π-Orbitale'
+  - 'Die π-Orbitale sind in diesen Molekülen nicht besetzt'
   - 'Die Bindungsordnung ist negativ'
 correctAnswer: 'Das σ₂p-Orbital liegt energetisch unter den π₂p-Orbitalen'
 

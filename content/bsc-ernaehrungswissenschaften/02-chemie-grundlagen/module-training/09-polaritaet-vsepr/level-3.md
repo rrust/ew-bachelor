@@ -86,7 +86,7 @@ options:
   - 'Kohlenstoff ist elektronegativer als Chlor'
   - 'Chlor ist nicht elektronegativ'
   - 'Die vier polaren Bindungen heben sich durch die tetraedrische Symmetrie auf'
-  - 'Es gibt keine Elektronenpaare'
+  - 'Die Bindungen sind zu kurz für messbare Dipole'
 correctAnswer: 'Die vier polaren Bindungen heben sich durch die tetraedrische Symmetrie auf'
 
 ---
@@ -111,7 +111,7 @@ question: 'In welcher Reihenfolge nehmen die Abstoßungen zwischen Elektronenpaa
 options:
   - 'frei-frei > frei-bindend > bindend-bindend'
   - 'bindend-bindend > frei-bindend > frei-frei'
-  - 'Alle Abstoßungen sind gleich'
+  - 'Die Abstoßungen unterscheiden sich nicht signifikant'
   - 'frei-bindend > frei-frei > bindend-bindend'
 correctAnswer: 'frei-frei > frei-bindend > bindend-bindend'
 

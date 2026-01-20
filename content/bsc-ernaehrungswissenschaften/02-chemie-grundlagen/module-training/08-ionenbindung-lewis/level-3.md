@@ -31,7 +31,7 @@ topic: 'Ionenbindung & Lewis'
 level: 3
 question: 'Welche Lewis-Struktur ist für Ozon (O₃) korrekt?'
 options:
-  - 'O=O=O (linear, keine freien Paare)'
+  - 'O=O=O (linear, symmetrisch)'
   - 'Ein zentrales O mit Doppelbindung zu einem O und Einfachbindung zum anderen (Resonanz)'
   - 'O-O-O mit Resonanzstrukturen'
   - 'Drei einzelne O-Atome'

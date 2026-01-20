@@ -99,7 +99,7 @@ options:
   - 'Beide gleichzeitig'
   - 'O₂ + 2H₂O + 4e⁻ → 4OH⁻ (Reduktion)'
   - 'Fe → Fe²⁺ + 2e⁻ (Oxidation)'
-  - 'Keine Reaktion'
+  - 'Elektronenaufnahme durch Eisen'
 correctAnswer: 'Fe → Fe²⁺ + 2e⁻ (Oxidation)'
 
 ---

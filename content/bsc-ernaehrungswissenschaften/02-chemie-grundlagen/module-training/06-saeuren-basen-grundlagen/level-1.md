@@ -122,8 +122,8 @@ topic: 'Säuren & Basen Grundlagen'
 level: 1
 question: 'Welche Aussage über die Neutralisation ist korrekt?'
 options:
-  - 'Sie ist immer endotherm'
+  - 'Die Reaktion benötigt Energiezufuhr'
   - 'Säure und Base reagieren zu Salz und Wasser'
-  - 'Es entstehen immer Gase'
-  - 'Der pH-Wert sinkt immer'
+  - 'Es entstehen gasförmige Produkte'
+  - 'Der pH-Wert der Lösung sinkt dabei'
 correctAnswer: 'Säure und Base reagieren zu Salz und Wasser'

@@ -34,7 +34,7 @@ options:
   - 'Beide Methoden sind korrekt'
   - 'ΔH°r = ΣD(Bindungen gebrochen) - ΣD(Bindungen gebildet)'
   - 'ΔH°r = ΣΔH°f(Produkte) - ΣΔH°f(Reaktanten)'
-  - 'Keine der Methoden ist korrekt'
+  - 'Nur die Bildungsenthalpie-Methode ist anwendbar'
 correctAnswer: 'Beide Methoden sind korrekt'
 
 ---

@@ -31,8 +31,8 @@ topic: 'Thermodynamik & Enthalpie'
 level: 2
 question: 'Was besagt der Satz von Hess?'
 options:
-  - 'Die Enthalpie hängt vom Druck ab'
-  - 'Alle Reaktionen sind exotherm'
+  - 'Die Enthalpie hängt direkt vom Druck ab'
+  - 'Die meisten Reaktionen sind exotherm'
   - 'Enthalpie kann nur bei hohen Temperaturen gemessen werden'
   - 'Die Gesamtenthalpieänderung ist unabhängig vom Reaktionsweg'
 correctAnswer: 'Die Gesamtenthalpieänderung ist unabhängig vom Reaktionsweg'

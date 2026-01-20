@@ -34,7 +34,7 @@ options:
   - 'Polar, weil C-O-Bindungen polar sind'
   - 'Polar, weil es Sauerstoff enthält'
   - 'Unpolar, weil die Dipolmomente sich aufheben'
-  - 'Unpolar, weil es keine Bindungen hat'
+  - 'Unpolar, weil CO₂ ein Gas ist'
 correctAnswer: 'Unpolar, weil die Dipolmomente sich aufheben'
 
 ---

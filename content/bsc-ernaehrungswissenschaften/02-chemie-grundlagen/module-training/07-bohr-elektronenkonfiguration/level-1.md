@@ -44,10 +44,10 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was sind Valenzelektronen?'
 options:
-  - 'Elektronen im Atomkern'
+  - 'Protonen und Neutronen im Atomkern'
   - 'Elektronen in der äußersten besetzten Schale'
-  - 'Alle Elektronen eines Atoms'
-  - 'Elektronen, die negativ geladen sind'
+  - 'Die Gesamtzahl der Elektronen eines Atoms'
+  - 'Elektronen mit positiver Ladung'
 correctAnswer: 'Elektronen in der äußersten besetzten Schale'
 
 ---
@@ -58,10 +58,10 @@ level: 1
 question: 'Was besagt das Pauli-Prinzip?'
 options:
   - 'Elektronen füllen zuerst die niedrigsten Energieniveaus'
-  - 'Alle Elektronen haben den gleichen Spin'
+  - 'Elektronen im selben Orbital haben identischen Spin'
   - 'Elektronen besetzen Orbitale zuerst einzeln'
-  - 'Jedes Orbital kann maximal 2 Elektronen mit entgegengesetztem Spin enthalten'
-correctAnswer: 'Jedes Orbital kann maximal 2 Elektronen mit entgegengesetztem Spin enthalten'
+  - 'Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin'
+correctAnswer: 'Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin'
 
 ---
 
@@ -122,8 +122,8 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 1
 question: 'Was besagt das Aufbauprinzip?'
 options:
-  - 'Nur s-Orbitale werden besetzt'
+  - 'Nur s-Orbitale werden bei der Besetzung berücksichtigt'
   - 'Elektronen füllen zuerst die äußeren Schalen'
-  - 'Alle Orbitale werden gleichzeitig gefüllt'
+  - 'Die Orbitale werden ohne bestimmte Reihenfolge besetzt'
   - 'Elektronen füllen zuerst die Orbitale mit niedrigster Energie'
 correctAnswer: 'Elektronen füllen zuerst die Orbitale mit niedrigster Energie'

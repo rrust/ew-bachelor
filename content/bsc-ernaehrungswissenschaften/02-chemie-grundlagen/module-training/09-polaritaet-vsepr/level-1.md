@@ -70,10 +70,10 @@ topic: 'Polarität & VSEPR'
 level: 1
 question: 'Was besagt das VSEPR-Modell?'
 options:
-  - 'Alle Moleküle sind linear'
-  - 'Elektronen ziehen sich an'
+  - 'Moleküle mit gleicher Summenformel haben gleiche Geometrie'
+  - 'Elektronen ziehen sich gegenseitig an'
   - 'Elektronenpaare stoßen sich ab und ordnen sich so an, dass die Abstoßung minimal ist'
-  - 'Bindungen sind immer gleich lang'
+  - 'Die Bindungslängen hängen nur vom Zentralatom ab'
 correctAnswer: 'Elektronenpaare stoßen sich ab und ordnen sich so an, dass die Abstoßung minimal ist'
 
 ---

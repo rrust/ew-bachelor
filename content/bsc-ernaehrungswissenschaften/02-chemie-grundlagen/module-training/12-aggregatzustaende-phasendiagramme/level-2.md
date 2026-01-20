@@ -45,9 +45,9 @@ level: 2
 question: 'Trockeneis (festes CO₂) sublimiert bei Normaldruck. Was bedeutet das?'
 options:
   - 'Der Tripelpunkt von CO₂ liegt oberhalb von 1 atm'
-  - 'CO₂ kann nicht flüssig werden'
+  - 'CO₂ kann bei Normaldruck nicht flüssig werden'
   - 'Der Schmelzpunkt von CO₂ liegt unter dem Tripelpunkt'
-  - 'CO₂ ist immer gasförmig'
+  - 'CO₂ sublimiert bei jeder Temperatur'
 correctAnswer: 'Der Tripelpunkt von CO₂ liegt oberhalb von 1 atm'
 
 ---
@@ -115,7 +115,7 @@ options:
   - 'Die feste und flüssige Phase'
   - 'Die flüssige und gasförmige Phase'
   - 'Die feste und gasförmige Phase'
-  - 'Alle drei Phasen'
+  - 'Die überkritische und gasförmige Phase'
 correctAnswer: 'Die feste und flüssige Phase'
 
 ---
