@@ -1360,10 +1360,12 @@ function renderFillInTheBlank(item, container) {
   const blanks = item.blanks || [];
 
   blanks.forEach((blank, index) => {
-    const placeholder = `{{${blank.id}}}`;
+    // Use blank.id if available, otherwise fall back to using answer as the placeholder
+    const blankId = blank.id || blank.answer;
+    const placeholder = `{{${blankId}}}`;
     const inputHtml = `<input type="text" 
       class="fill-blank-input inline-block w-24 md:w-32 px-2 py-1 mx-1 border-b-2 border-gray-400 dark:border-gray-500 bg-transparent text-center focus:border-blue-500 focus:outline-none"
-      data-blank-id="${blank.id}"
+      data-blank-id="${blankId}"
       data-correct="${blank.answer}"
       data-alternatives='${JSON.stringify(blank.alternatives || [])}'
       placeholder="..."

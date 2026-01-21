@@ -113,6 +113,7 @@ function generateExportData(studyId, modules, scenario, userName = 'TestUser') {
   const scenarioData = getScenarioData(scenario);
   progress.streak = scenarioData.streak;
   progress.training = scenarioData.training;
+  progress.moduleTraining = scenarioData.moduleTraining || {};
 
   // Filter modules that have lectures
   const modulesWithLectures = modules.filter(
@@ -158,6 +159,53 @@ function generateExportData(studyId, modules, scenario, userName = 'TestUser') {
   };
 }
 
+// Topic IDs for module training (15 topics)
+const TRAINING_TOPICS = [
+  '01-aufbau-atome-periodensystem',
+  '02-elemente-ionen-mol',
+  '03-gleichungen-stoechiometrie',
+  '04-reaktionen-empirische-formeln',
+  '05-loesungen-konzentrationen',
+  '06-saeuren-basen-grundlagen',
+  '07-bohr-elektronenkonfiguration',
+  '08-ionenbindung-lewis',
+  '09-polaritaet-vsepr',
+  '10-valenzbindung-hybridisierung-mo',
+  '11-thermodynamik-enthalpie',
+  '12-aggregatzustaende-phasendiagramme',
+  '13-kolligative-eigenschaften',
+  '14-saeuren-basen-ph-puffer',
+  '15-elektrochemie-redox'
+];
+
+/**
+ * Generate random correct answer IDs for module training
+ * Format: topicId:level:questionIndex
+ * @param {number} level - The level (1-5)
+ * @param {number} count - Number of correct answers to generate
+ * @returns {Array} Array of question IDs
+ */
+function generateRandomCorrectAnswers(level, count) {
+  const answers = [];
+  const questionsPerTopic = 10; // 10 questions per level per topic
+  const maxPerLevel = TRAINING_TOPICS.length * questionsPerTopic; // 150 per level
+
+  // Distribute across topics
+  const answersPerTopic = Math.ceil(count / TRAINING_TOPICS.length);
+
+  for (const topicId of TRAINING_TOPICS) {
+    for (let i = 0; i < answersPerTopic && answers.length < count; i++) {
+      // Ensure unique questions within each topic
+      if (i < questionsPerTopic) {
+        answers.push(`${topicId}:${level}:${i}`);
+      }
+    }
+  }
+
+  // Shuffle the array
+  return answers.sort(() => Math.random() - 0.5).slice(0, count);
+}
+
 /**
  * Get streak and training data for each scenario
  */
@@ -181,7 +229,8 @@ function getScenarioData(scenario) {
           tokens: 0,
           totalAnswered: 0,
           totalRounds: 0
-        }
+        },
+        moduleTraining: {}
       };
 
     case 'beginner':
@@ -199,6 +248,14 @@ function getScenarioData(scenario) {
           tokens: 5,
           totalAnswered: 20,
           totalRounds: 2
+        },
+        moduleTraining: {
+          '02-chemie-grundlagen': {
+            currentLevel: 1,
+            answeredCorrectly: generateRandomCorrectAnswers(1, 25),
+            totalCorrect: 25,
+            completedAt: null
+          }
         }
       };
 
@@ -217,6 +274,17 @@ function getScenarioData(scenario) {
           tokens: 15,
           totalAnswered: 150,
           totalRounds: 15
+        },
+        moduleTraining: {
+          '02-chemie-grundlagen': {
+            currentLevel: 2,
+            answeredCorrectly: [
+              ...generateRandomCorrectAnswers(1, 150),
+              ...generateRandomCorrectAnswers(2, 75)
+            ],
+            totalCorrect: 225,
+            completedAt: null
+          }
         }
       };
 
@@ -235,6 +303,19 @@ function getScenarioData(scenario) {
           tokens: 25,
           totalAnswered: 350,
           totalRounds: 35
+        },
+        moduleTraining: {
+          '02-chemie-grundlagen': {
+            currentLevel: 4,
+            answeredCorrectly: [
+              ...generateRandomCorrectAnswers(1, 150),
+              ...generateRandomCorrectAnswers(2, 150),
+              ...generateRandomCorrectAnswers(3, 150),
+              ...generateRandomCorrectAnswers(4, 50)
+            ],
+            totalCorrect: 500,
+            completedAt: null
+          }
         }
       };
 
@@ -253,6 +334,22 @@ function getScenarioData(scenario) {
           tokens: 30,
           totalAnswered: 450,
           totalRounds: 45
+        },
+        moduleTraining: {
+          '02-chemie-grundlagen': {
+            currentLevel: 5,
+            answeredCorrectly: [
+              ...generateRandomCorrectAnswers(1, 150),
+              ...generateRandomCorrectAnswers(2, 150),
+              ...generateRandomCorrectAnswers(3, 150),
+              ...generateRandomCorrectAnswers(4, 150),
+              ...generateRandomCorrectAnswers(5, 150)
+            ],
+            totalCorrect: 750,
+            completedAt: new Date(
+              Date.now() - 5 * 24 * 60 * 60 * 1000
+            ).toISOString()
+          }
         }
       };
 
@@ -271,6 +368,18 @@ function getScenarioData(scenario) {
           tokens: 12,
           totalAnswered: 100,
           totalRounds: 10
+        },
+        moduleTraining: {
+          '02-chemie-grundlagen': {
+            currentLevel: 3,
+            answeredCorrectly: [
+              ...generateRandomCorrectAnswers(1, 150),
+              ...generateRandomCorrectAnswers(2, 150),
+              ...generateRandomCorrectAnswers(3, 60)
+            ],
+            totalCorrect: 360,
+            completedAt: null
+          }
         }
       };
 
@@ -282,7 +391,8 @@ function getScenarioData(scenario) {
           totalDays: 0,
           longestStreak: 0
         },
-        training: { tokens: 0, totalAnswered: 0, totalRounds: 0 }
+        training: { tokens: 0, totalAnswered: 0, totalRounds: 0 },
+        moduleTraining: {}
       };
   }
 }

@@ -78,6 +78,23 @@ function formatEstimatedTime(minutes) {
 }
 
 /**
+ * Render level stars for module training (★★★☆☆)
+ * @param {number} level - Current level (1-5)
+ * @returns {string} HTML string with stars
+ */
+function renderModuleLevelStars(level) {
+  let stars = '';
+  for (let i = 1; i <= 5; i++) {
+    if (i <= level) {
+      stars += '<span class="text-yellow-500 text-xs">★</span>';
+    } else {
+      stars += '<span class="text-gray-400 text-xs">☆</span>';
+    }
+  }
+  return stars;
+}
+
+/**
  * Calculates statistics for a module (quiz completion, average score, badge)
  * Works with both full content and lazy-loading mode
  * @param {string} moduleId - Module ID
@@ -433,8 +450,8 @@ function createModuleCard(
                         'book',
                         'w-3.5 h-3.5'
                       )} ${
-                      detailedTime.lectureCount
-                    } · ${lectureTimeFormatted}</span>
+                        detailedTime.lectureCount
+                      } · ${lectureTimeFormatted}</span>
                       <span class="flex items-center gap-1" title="Modulprüfung">${Icons.get(
                         'exam',
                         'w-3.5 h-3.5'
@@ -450,25 +467,55 @@ function createModuleCard(
     // Extract module number from ID (e.g., "01-" from "01-ernaehrungslehre-grundlagen")
     const moduleNumber = moduleId.match(/^(\d+)-/)?.[1] || '';
 
-    // Calculate completion percentage for progress bar
+    // Calculate completion percentage for progress bar (Vorlesungs-Tests)
     const completionPercent =
       stats.totalQuizzes > 0
         ? (stats.completedQuizzes / stats.totalQuizzes) * 100
         : 0;
 
-    // Mini progress bar
+    // Get module training stats (if available)
+    const trainingStats = window.getModuleTrainingStats
+      ? window.getModuleTrainingStats(moduleId, 750) // 750 questions per module
+      : { percent: 0, currentLevel: 1, isComplete: false };
+    const hasTraining =
+      trainingStats.percent > 0 || trainingStats.currentLevel > 1;
+
+    // Mini progress bars container
+    cardHTML += `<div class="px-4 pt-2 space-y-2">`;
+
+    // Progress bar 1: Vorlesungs-Tests
     cardHTML += `
-      <div class="px-4 pt-2">
-        <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
-          <span>${stats.completedQuizzes}/${stats.totalQuizzes} Tests</span>
-          <span>${Math.round(completionPercent)}%</span>
+        <div>
+          <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+            <span class="flex items-center gap-1">${Icons.get('book', 'w-3 h-3')} Tests</span>
+            <span>${stats.completedQuizzes}/${stats.totalQuizzes} (${Math.round(completionPercent)}%)</span>
+          </div>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+            <div class="bg-blue-500 dark:bg-blue-400 h-1.5 rounded-full transition-all duration-300" 
+                 style="width: ${completionPercent}%"></div>
+          </div>
         </div>
-        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
-          <div class="bg-blue-500 dark:bg-blue-400 h-1.5 rounded-full transition-all duration-300" 
-               style="width: ${completionPercent}%"></div>
-        </div>
-      </div>
     `;
+
+    // Progress bar 2: Modul-Training (Level-based)
+    const levelStars = renderModuleLevelStars(trainingStats.currentLevel);
+    const trainingColor = trainingStats.isComplete
+      ? 'bg-yellow-500'
+      : 'bg-green-500';
+    cardHTML += `
+        <div>
+          <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
+            <span class="flex items-center gap-1">${Icons.get('muscle', 'w-3 h-3')} Training</span>
+            <span>${levelStars} ${trainingStats.percent}%</span>
+          </div>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
+            <div class="${trainingColor} h-1.5 rounded-full transition-all duration-300" 
+                 style="width: ${trainingStats.percent}%"></div>
+          </div>
+        </div>
+    `;
+
+    cardHTML += `</div>`; // Close progress bars container
 
     cardHTML +=
       '<div class="card-footer px-4 py-3 border-t dark:border-gray-700 rounded-b-lg flex items-center justify-between mt-2">';
@@ -488,8 +535,16 @@ function createModuleCard(
     cardHTML += `<span class="module-offline-status flex items-center" data-module="${moduleId}"></span>`;
     cardHTML += `</div>`;
 
-    // Action buttons on the right
+    // Action buttons on the right (Training, Vorlesung, Prüfung)
     cardHTML += '<div class="flex items-center space-x-2">';
+
+    // Training button (NEW - links to module training)
+    cardHTML += `<button class="module-training-btn text-sm px-2.5 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200" title="Level-Training" data-module="${moduleId}">${Icons.get(
+      'muscle',
+      'w-4 h-4'
+    )}</button>`;
+
+    // Lectures button
     cardHTML += `<button class="view-lectures-btn text-sm px-2.5 py-1.5 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-200" title="Vorlesungen">${Icons.get(
       'book',
       'w-4 h-4'
@@ -500,7 +555,7 @@ function createModuleCard(
     const examEnabled =
       stats.averageScore >= EXAM_UNLOCK_THRESHOLD && stats.completedQuizzes > 0;
     const examBtnClass = examEnabled
-      ? 'text-sm px-3 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200'
+      ? 'text-sm px-3 py-1.5 bg-purple-500 hover:bg-purple-600 text-white font-medium rounded transition duration-200'
       : 'text-sm px-3 py-1.5 bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 font-medium rounded cursor-not-allowed';
 
     const examTooltip = examEnabled
@@ -520,6 +575,16 @@ function createModuleCard(
 
   // Add event listeners
   if (moduleMeta.status !== 'gesperrt') {
+    // Training button
+    const trainingBtn = card.querySelector('.module-training-btn');
+    if (trainingBtn) {
+      trainingBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const modId = trainingBtn.dataset.module;
+        window.location.hash = `#/module/${modId}/training`;
+      });
+    }
+
     const viewLecturesBtn = card.querySelector('.view-lectures-btn');
     viewLecturesBtn.addEventListener('click', (e) => {
       e.stopPropagation();

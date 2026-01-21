@@ -1,24 +1,10 @@
-Hier ist das Skript für deine Vorlesung. Ich habe den Text so aufbereitet, dass er wie ein lebendiger, universitärer Vortrag klingt – ideal für eine TTS-Engine, die auf natürliche Betonung trainiert ist.
+Weißer Phosphor brennt spontan an der Luft. Stickstoff, direkt darüber im Periodensystem, ist so träge, dass er 78 Prozent unserer Atmosphäre ausmacht. [PAUSE] Wie kann das sein?
+
+Die Antwort liegt in der **kovalenten Bindung** – der Art, wie Atome Elektronen teilen. Die Struktur bestimmt die Funktion.
 
 ---
 
-**(Intro-Musik fadet aus)**
 
-**Tutor:**
-Herzlich willkommen zurück! Ich freue mich, dass ihr heute wieder dabei seid.
-
-Heute tauchen wir in eines der absolut **wichtigsten** Themen der gesamten Chemie ein. Es geht um das "soziale Verhalten" der Atome. Es geht darum, wie sie sich verbinden, wie sie Partnerschaften eingehen und warum Moleküle genau so aussehen, wie sie aussehen. [PAUSE]
-
-Wir sprechen über **Kapitel 8: Die Kovalente Bindung**.
-
-Habt ihr euch schon mal gefragt, warum weißer Phosphor so aggressiv und reaktiv ist, dass er an der Luft brennt, während Stickstoff – der ja direkt darüber im Periodensystem steht – so extrem entspannt und träge ist?
-Die Antwort liegt nicht in den Atomen selbst, sondern in der **Art**, wie sie verbunden sind. Die Struktur bestimmt die Funktion. Das ist unser Mantra für heute.
-
-Legen wir los!
-
----
-
-**Tutor:**
 Zuerst müssen wir klären: Welche Arten von "Beziehungen" können Atome eigentlich führen?
 Im Grunde gibt es hier zwei große Lager, auch wenn die Realität oft irgendwo dazwischen liegt.
 
@@ -33,7 +19,7 @@ Das Wasserstoffatom kommt mit seinem kugelförmigen s-Orbital an. Das Chloratom 
 
 ---
 
-**Tutor:**
+
 Um diese Bindungen auf Papier zu bringen, nutzen wir ein Werkzeug, das ihr alle kennenlernen müsst: Die **Lewis-Formeln**. Benannt nach G.N. Lewis.
 
 Das Wichtigste hierbei sind die **Valenzelektronen**. Das sind die Elektronen auf der äußersten Schale. Nur die spielen im "Dating-Game" der Chemie eine Rolle. Die inneren Elektronen? Die bleiben zu Hause auf der Couch.
@@ -47,7 +33,7 @@ Ein Strich in eurer Zeichnung steht dabei immer für ein Elektronenpaar – also
 
 ---
 
-**Tutor:**
+
 Wie zeichnet man so ein Molekül jetzt systematisch? Gehen wir das mal am Beispiel von Ammoniak, also $NH_3$, durch. [PAUSE]
 
 Schritt eins: Wer ist der Boss? Wer kommt in die Mitte? Meistens das Atom, das alleine ist oder die niedrigste Elektronenaffinität hat. Hier ist das der Stickstoff. Der Wasserstoff ist **nie** der Boss, der klebt immer außen dran.
@@ -61,7 +47,7 @@ Und siehe da: Stickstoff hat 3 Bindungen und 1 freies Paar. Macht 4 Paare. 8 Ele
 
 ---
 
-**Tutor:**
+
 Aber was passiert, wenn die Elektronen nicht reichen?
 Nehmen wir Kohlendioxid, $CO_2$.
 Wenn ihr das zeichnet, werdet ihr merken: Wenn wir nur Einfachbindungen machen, sitzt der Kohlenstoff in der Mitte und hungert. Er kriegt sein Oktett nicht voll.
@@ -75,7 +61,7 @@ Kommt eine zweite (oder dritte) dazu, nennen wir die **Pi-Bindung**.
 
 ---
 
-**Tutor:**
+
 Jetzt wird es kurz ein bisschen "tricky". Wir müssen über **Mesomerie** oder **Resonanz** sprechen.
 Das ist ein Konzept, das oft falsch verstanden wird.
 
@@ -88,7 +74,7 @@ In Prüfungen zeichnet ihr beide Varianten und macht so einen schicken Doppelpfe
 
 ---
 
-**Tutor:**
+
 Woher wissen wir, welche Struktur am stabilsten ist? Dafür gibt es ein Hilfsmittel: Die **Formalladung**.
 
 Das klingt kompliziert, ist aber super einfach zu berechnen.
@@ -100,7 +86,7 @@ Die beste Struktur ist die, wo am Ende bei allen Atomen möglichst eine **Null**
 
 ---
 
-**Tutor:**
+
 Zum Schluss müssen wir noch über die Rebellen sprechen. Die **Ausnahmen der Oktettregel**.
 Denn die Chemie wäre langweilig, wenn sich alle an die Regeln halten würden, oder?
 
@@ -117,7 +103,7 @@ Das Paradebeispiel ist Stickstoffmonoxid ($NO$). Dieses einsame, ungepaarte Elek
 
 ---
 
-**Tutor:**
+
 Lassen Sie uns das Ganze kurz zusammenfassen – was ist das "Takeaway" für heute?
 
 Erstens: Atome verbinden sich, um stabile Elektronenkonfigurationen zu erreichen – meistens das Oktett.

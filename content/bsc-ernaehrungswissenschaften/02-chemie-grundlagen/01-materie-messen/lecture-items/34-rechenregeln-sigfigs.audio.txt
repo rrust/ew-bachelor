@@ -1,0 +1,34 @@
+Jetzt wird es praktisch: Wie rechnet man mit signifikanten Stellen?
+
+Es gibt zwei verschiedene Regeln. Eine für Multiplikation und Division. Eine andere für Addition und Subtraktion.
+
+...
+
+Bei Multiplikation und Division: Das Ergebnis hat so viele signifikante Stellen wie die Zahl mit den wenigsten.
+
+Beispiel: 4,242 mal 1,23.
+
+4,242 hat vier signifikante Stellen.
+1,23 hat nur drei.
+
+Das Ergebnis? Der Taschenrechner sagt 5,21766. Aber du darfst nur drei signifikante Stellen angeben. Also: 5,22.
+
+...
+
+Bei Addition und Subtraktion ist die Regel anders. Hier zählen die Dezimalstellen, nicht die signifikanten Stellen!
+
+Beispiel: 3,6923 plus 1,234 plus 2,02.
+
+Die Zahlen haben unterschiedlich viele Nachkommastellen: vier, drei, zwei.
+
+Das Ergebnis wird auf zwei Nachkommastellen gerundet. Also: 6,95.
+
+...
+
+Warum der Unterschied? Denk drüber nach. Bei Addition addierst du Positionen. Die unsicherste Position bestimmt das Ergebnis. Bei Multiplikation multiplizierst du relative Unsicherheiten.
+
+...
+
+Ein wichtiger Tipp: Bei mehrstufigen Rechnungen erst ganz am Ende runden! Sonst summieren sich die Rundungsfehler.
+
+Rechne alles mit allen Stellen durch. Und erst wenn du das Endergebnis hast ... dann rundest du.

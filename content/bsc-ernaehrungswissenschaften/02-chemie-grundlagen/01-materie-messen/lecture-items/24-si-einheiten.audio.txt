@@ -1,0 +1,37 @@
+Wissenschaftler auf der ganzen Welt müssen die gleiche Sprache sprechen. Zumindest wenn es um Einheiten geht! Deshalb gibt es das SI-System.
+
+SI steht für Système International. Und es legt fest, wie wir messen.
+
+...
+
+Die sieben Grundeinheiten sind:
+Meter für Länge.
+Kilogramm für Masse. Übrigens die einzige Basiseinheit mit einer Vorsilbe!
+Sekunde für Zeit.
+Kelvin für Temperatur.
+Mol für Stoffmenge. Das wird später noch wichtig.
+Ampere für elektrischen Strom.
+Und Candela für Lichtstärke.
+
+...
+
+Aber was, wenn etwas sehr groß oder sehr klein ist? Da kommen die Vorsilben ins Spiel.
+
+Kilo bedeutet tausend. Ein Kilometer sind tausend Meter. Ein Kilogramm sind tausend Gramm.
+
+Milli bedeutet ein Tausendstel. Ein Millimeter ist ein Tausendstel Meter.
+
+Mikro bedeutet ein Millionstel. Bakterien misst man in Mikrometern.
+
+Nano bedeutet ein Milliardstel. Atome sind wenige Nanometer groß.
+
+...
+
+In der Ernährungswissenschaft wirst du vor allem diese brauchen:
+Kilo für große Mengen wie Körpergewicht.
+Milli für kleine Mengen wie Vitamine in Milligramm.
+Mikro für winzige Mengen wie Spurenelemente in Mikrogramm.
+
+Der Trick ist: Zwischen jeder Stufe liegt Faktor tausend. Milli zu Mikro? Mal tausend. Kilo zu Gramm? Durch tausend.
+
+Sobald du das verinnerlicht hast, sind Umrechnungen ein Kinderspiel!

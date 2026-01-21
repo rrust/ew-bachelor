@@ -1,18 +1,6 @@
-Hier ist das Skript für deine Vorlesung. Ich habe den Text so bearbeitet, dass er natürlich, dynamisch und gut hörbar ist. Formeln und Tabellen wurden in beschreibende Sprache übersetzt, und die "Selbsttests" habe ich als rhetorische Fragen oder direkte Ansprachen an den Hörer integriert, um den Fluss nicht zu unterbrechen.
+Wasser ist gewinkelt. Kohlendioxid ist linear. Methan bildet einen perfekten Tetraeder. [PAUSE] Warum haben Moleküle genau diese Formen?
 
-***
-
-**(Audio-Skript Start)**
-
-**[INTRO]**
-
-Hallo und herzlich willkommen zurück! Schön, dass ihr wieder dabei seid.
-
-Heute wird es spannend, denn wir verlassen die flache Welt des Papiers. Bisher haben wir Moleküle oft zweidimensional gezeichnet – als wären sie plattgedrückt. Aber heute... heute geben wir ihnen **Tiefe**. Wir schauen uns an, wie Moleküle wirklich im dreidimensionalen Raum aussehen.
-
-Das Thema lautet: **Molekülstruktur, Orbitale und die chemische Bindung.**
-
-Wir werden klären, warum Wasser gewinkelt ist, warum Sauerstoff magnetisch ist – ja, wirklich! – und was es mit dieser ominösen Hybridisierung auf sich hat. Also, Stifte raus, Ohren auf, los geht’s.
+Und hier eine Überraschung: Sauerstoff ist magnetisch! Die Erklärung dafür erfordert ein tieferes Verständnis von **Molekülorbitalen** und **Hybridisierung**.
 
 ---
 

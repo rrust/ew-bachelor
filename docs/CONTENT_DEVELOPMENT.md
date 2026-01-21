@@ -287,6 +287,8 @@ description: 'Teste dein Wissen über Zellbiologie und Organellen'
 
 Jede Datei in `questions/` ist eine einzelne Multiple-Choice-Frage.
 
+> **Hinweis:** Für Qualitätsrichtlinien bei MC-Fragen siehe [Modul-Training Qualitätskriterien](#modul-training).
+
 ```yaml
 ---
 type: 'multiple-choice'
@@ -824,6 +826,105 @@ Wenn du AI-Tools (GitHub Copilot, Gemini) verwendest:
 4. **Schritt für Schritt:** Erst eine Vorlesung generieren, validieren, dann weiter
 
 Siehe [docs/AI_CODING.md](AI_CODING.md) für Details zur AI-Entwicklung.
+
+## Modul-Training
+
+Das Modul-Training ist ein separater Übungsmodus mit **750 Fragen** (15 Kapitel × 5 Level × 10 Fragen), der vom Vorlesungs-Content unabhängig ist.
+
+### Struktur
+
+```text
+content/{studyId}/XX-modul/module-training/
+├── 01-kapitel-name/
+│   ├── level-1.md    # 10 Fragen (Grundbegriffe)
+│   ├── level-2.md    # 10 Fragen (Anwendung)
+│   ├── level-3.md    # 10 Fragen (Mittelschwer)
+│   ├── level-4.md    # 10 Fragen (Fortgeschritten)
+│   └── level-5.md    # 10 Fragen (Experte)
+├── 02-kapitel-name/
+│   └── ...
+└── training-bundle.json  # Auto-generiert
+```
+
+### Format (YAML-Frontmatter)
+
+```yaml
+---
+
+type: 'multiple-choice'
+topic: 'Kapitel-Thema'
+level: 1
+question: 'Was ist die Ordnungszahl eines Elements?'
+options:
+  - 'Die Anzahl der Neutronen im Kern'
+  - 'Die Anzahl der Protonen im Kern'
+  - 'Die Summe aus Protonen und Neutronen'
+  - 'Die Anzahl der Elektronen in der äußeren Schale'
+correctAnswer: 'Die Anzahl der Protonen im Kern'
+
+---
+```
+
+Für Fragen mit mehreren richtigen Antworten:
+
+```yaml
+---
+
+type: 'multiple-choice-multiple'
+topic: 'Kapitel-Thema'
+level: 3
+question: 'Welche Aussagen zur Ionenbindung sind korrekt?'
+options:
+  - 'Ionenbindungen entstehen durch Elektronenübertragung'
+  - 'Ionenbindungen sind gerichtet'
+  - 'Ionenverbindungen leiten als Schmelze Strom'
+  - 'Ionenbindungen entstehen nur zwischen Metallen'
+correctAnswers:
+  - 'Ionenbindungen entstehen durch Elektronenübertragung'
+  - 'Ionenverbindungen leiten als Schmelze Strom'
+
+---
+```
+
+### Qualitätskriterien
+
+Die Qualität der Training-Fragen ist entscheidend für den Lernerfolg. Folgende Regeln gelten:
+
+#### ❌ Verbotene Formulierungen
+
+| Kategorie         | Verboten                            | Besser                                  |
+| ----------------- | ----------------------------------- | --------------------------------------- |
+| Meta-Optionen     | "Alle genannten sind korrekt"       | Echte falsche Option hinzufügen         |
+| Negativ-Fragen    | "Was ist NICHT korrekt?"            | "Was ist korrekt?"                      |
+| Absolute Begriffe | "immer", "niemals", "alle", "keine" | "meistens", "selten", "viele", "wenige" |
+
+#### ✅ Qualitätsregeln
+
+1. **Längen-Balance:** Alle Antwortoptionen ähnlich lang (max. 50% Unterschied)
+2. **Spezifitäts-Balance:** Wenn korrekte Antworten Zahlen haben, sollten falsche auch Zahlen haben
+3. **Plausible Distraktoren:** Falsche Antworten müssen plausibel sein, nicht offensichtlich falsch
+4. **Positions-Verteilung:** A/B/C/D sollten je ~25% der korrekten Antworten haben
+
+### Qualitätsprüfung
+
+```bash
+# Hauptscript für Qualitätsprüfung
+node scripts/analyze-training-quality.js
+
+# Positions-Verteilung automatisch korrigieren
+node scripts/fix-answer-positions.js
+```
+
+**Qualitätsziele:**
+
+| Kategorie                   | Ziel  |
+| --------------------------- | ----- |
+| Kritische Probleme          | 0     |
+| Absolute Begriffe           | < 10  |
+| Spezifitäts-Ungleichgewicht | < 5   |
+| Längen-Ungleichgewicht      | < 100 |
+
+→ Ausführliche Dokumentation: [.github/copilot/module-training.md](../.github/copilot/module-training.md)
 
 ## Troubleshooting
 

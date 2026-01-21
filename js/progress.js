@@ -163,6 +163,168 @@ function resetLectureProgress(moduleId, lectureId) {
   }
 }
 
+// ============================================================================
+// MODULE TRAINING PROGRESS
+// ============================================================================
+
+/**
+ * Gets the module training progress for a specific module
+ * @param {string} moduleId - Module ID
+ * @returns {Object} Training progress { currentLevel, answeredCorrectly, totalCorrect, completedAt }
+ */
+function getModuleTrainingProgress(moduleId) {
+  const progress = getUserProgress();
+  if (!progress?.moduleTraining?.[moduleId]) {
+    return {
+      currentLevel: 1,
+      answeredCorrectly: [],
+      totalCorrect: 0,
+      completedAt: null
+    };
+  }
+  return progress.moduleTraining[moduleId];
+}
+
+/**
+ * Saves module training progress
+ * @param {string} moduleId - Module ID
+ * @param {Object} trainingProgress - Training progress object
+ */
+function saveModuleTrainingProgress(moduleId, trainingProgress) {
+  const progress = getUserProgress();
+  if (!progress) return;
+
+  if (!progress.moduleTraining) {
+    progress.moduleTraining = {};
+  }
+
+  progress.moduleTraining[moduleId] = trainingProgress;
+  saveUserProgress(progress);
+}
+
+/**
+ * Records a correctly answered training question
+ * @param {string} moduleId - Module ID
+ * @param {string} questionId - Question ID (format: topicId:level:index)
+ * @returns {Object} Updated training progress
+ */
+function recordCorrectTrainingAnswer(moduleId, questionId) {
+  const training = getModuleTrainingProgress(moduleId);
+
+  // Add to answered correctly if not already there
+  if (!training.answeredCorrectly.includes(questionId)) {
+    training.answeredCorrectly.push(questionId);
+    training.totalCorrect = training.answeredCorrectly.length;
+  }
+
+  saveModuleTrainingProgress(moduleId, training);
+  return training;
+}
+
+/**
+ * Checks if all questions of current level are answered correctly
+ * and advances to next level if so
+ * @param {string} moduleId - Module ID
+ * @param {Object} trainingBundle - Training bundle with question counts
+ * @returns {Object} { levelUp: boolean, newLevel: number, completed: boolean }
+ */
+function checkAndAdvanceLevel(moduleId, trainingBundle) {
+  const training = getModuleTrainingProgress(moduleId);
+  const currentLevel = training.currentLevel;
+
+  // Count correct answers for current level
+  const correctForLevel = training.answeredCorrectly.filter((id) => {
+    const parts = id.split(':');
+    return parseInt(parts[1]) === currentLevel;
+  });
+
+  // Count total questions for current level
+  let totalForLevel = 0;
+  for (const topic of trainingBundle.topics) {
+    totalForLevel += topic.questions[currentLevel]?.length || 0;
+  }
+
+  // Check if level complete
+  if (correctForLevel.length >= totalForLevel) {
+    if (currentLevel < 5) {
+      // Advance to next level
+      training.currentLevel = currentLevel + 1;
+      saveModuleTrainingProgress(moduleId, training);
+      return { levelUp: true, newLevel: currentLevel + 1, completed: false };
+    } else {
+      // All levels complete!
+      training.completedAt = new Date().toISOString();
+      saveModuleTrainingProgress(moduleId, training);
+      return { levelUp: false, newLevel: 5, completed: true };
+    }
+  }
+
+  return { levelUp: false, newLevel: currentLevel, completed: false };
+}
+
+/**
+ * Gets remaining questions for current level (not yet answered correctly)
+ * @param {string} moduleId - Module ID
+ * @param {Object} trainingBundle - Training bundle
+ * @returns {Array} Array of question objects with topic info
+ */
+function getRemainingQuestions(moduleId, trainingBundle) {
+  const training = getModuleTrainingProgress(moduleId);
+  const currentLevel = training.currentLevel;
+  const answeredSet = new Set(training.answeredCorrectly);
+  const remaining = [];
+
+  for (const topic of trainingBundle.topics) {
+    const levelQuestions = topic.questions[currentLevel] || [];
+    for (const question of levelQuestions) {
+      if (!answeredSet.has(question.id)) {
+        remaining.push({
+          ...question,
+          topicId: topic.id,
+          topicTitle: topic.title
+        });
+      }
+    }
+  }
+
+  return remaining;
+}
+
+/**
+ * Resets module training progress
+ * @param {string} moduleId - Module ID
+ */
+function resetModuleTrainingProgress(moduleId) {
+  const progress = getUserProgress();
+  if (!progress?.moduleTraining?.[moduleId]) return;
+
+  delete progress.moduleTraining[moduleId];
+  saveUserProgress(progress);
+}
+
+/**
+ * Gets module training stats for display
+ * @param {string} moduleId - Module ID
+ * @param {number} totalQuestions - Total questions in training bundle
+ * @returns {Object} { percent, currentLevel, totalCorrect, isComplete }
+ */
+function getModuleTrainingStats(moduleId, totalQuestions) {
+  const training = getModuleTrainingProgress(moduleId);
+  const percent =
+    totalQuestions > 0
+      ? Math.round((training.totalCorrect / totalQuestions) * 100)
+      : 0;
+
+  return {
+    percent,
+    currentLevel: training.currentLevel,
+    totalCorrect: training.totalCorrect,
+    isComplete: training.completedAt !== null
+  };
+}
+
+// ============================================================================
+
 /**
  * Migrates legacy progress data to the new multi-study format
  * @param {string} defaultStudyId - The study ID to migrate legacy data to
@@ -337,3 +499,12 @@ window.resetLectureProgress = resetLectureProgress;
 window.migrateLegacyProgress = migrateLegacyProgress;
 window.exportProgress = exportProgress;
 window.importProgress = importProgress;
+
+// Module Training Progress
+window.getModuleTrainingProgress = getModuleTrainingProgress;
+window.saveModuleTrainingProgress = saveModuleTrainingProgress;
+window.recordCorrectTrainingAnswer = recordCorrectTrainingAnswer;
+window.checkAndAdvanceLevel = checkAndAdvanceLevel;
+window.getRemainingQuestions = getRemainingQuestions;
+window.resetModuleTrainingProgress = resetModuleTrainingProgress;
+window.getModuleTrainingStats = getModuleTrainingStats;

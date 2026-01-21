@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -1003,6 +1003,29 @@
       </div>
     </div>
 
+    <!-- View for Module Training Mode (Level-based) -->
+    <div
+      id="module-training-view"
+      style="display: none"
+      class="min-h-screen flex flex-col"
+    >
+      <!-- Header Container -->
+      <div class="sticky top-0 z-40">
+        <div
+          id="module-training-header-container"
+          class="bg-white dark:bg-gray-800"
+        ></div>
+      </div>
+
+      <div class="flex-1 overflow-y-auto">
+        <div class="container mx-auto px-4 md:px-8 py-4">
+          <div id="module-training-content" class="max-w-2xl mx-auto">
+            <!-- Content will be rendered by module-training.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- View for Training Mode -->
     <div
       id="training-view"
@@ -1333,7 +1356,7 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml/dist/js-yaml.min.js"></script>
     <!-- Core utilities (load first) -->
     <script src="js/state.js"></script>
@@ -1360,6 +1383,7 @@
     <script src="js/dev-mode.js"></script>
     <script src="js/snapshots.js"></script>
     <script src="js/training.js"></script>
+    <script src="js/module-training.js"></script>
     <script src="js/download-manager.js"></script>
     <script src="js/bundle-loader.js"></script>
     <script src="js/offline-indicator.js"></script>
