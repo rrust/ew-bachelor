@@ -2,12 +2,12 @@
   "moduleId": "02-chemie-grundlagen",
   "title": "Modul-Training: Grundlagen der Chemie",
   "description": "Level-basiertes Training zur Prüfungsvorbereitung",
-  "totalQuestions": 375,
+  "totalQuestions": 374,
   "totalTopics": 15,
   "questionsPerLevel": 10,
   "levels": 5,
   "version": "1.0.0",
-  "generatedAt": "2026-01-20T22:23:33.448Z",
+  "generatedAt": "2026-01-21T18:48:56.086Z",
   "topics": [
     {
       "id": "01-aufbau-atome-periodensystem",
@@ -735,14 +735,14 @@
             "id": "02-elemente-ionen-mol:5:2",
             "question": "Vergleiche die Anzahl der e⁻ in 1 g Na⁺ mit der Anzahl in 1 g Mg²⁺. (Na = 23, Mg = 24,3 g/mol)",
             "options": [
-              "Na⁺ hat mehr e⁻ pro Gramm",
-              "Mg²⁺ hat mehr e⁻ pro Gramm",
-              "Beide haben gleich viele e⁻ pro Gramm",
+              "Na⁺ hat etwa 2,6 × 10²² e⁻ pro Gramm",
+              "Mg²⁺ hat etwa 2,5 × 10²² e⁻ pro Gramm",
+              "Beide haben etwa 2,5 × 10²² e⁻ pro Gramm",
               "Beide Ionen haben je 10 e⁻ pro Teilchen"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Mg²⁺ hat mehr e⁻ pro Gramm",
+              "Mg²⁺ hat etwa 2,5 × 10²² e⁻ pro Gramm",
               "Beide Ionen haben je 10 e⁻ pro Teilchen"
             ]
           },
@@ -845,7 +845,7 @@
               "Sie beschreibt nur die Farbe der chemischen Stoffe",
               "Sie beschreibt die mengenmäßigen Verhältnisse bei Reaktionen",
               "Sie beschreibt die Geschwindigkeit chemischer Reaktionen",
-              "Sie gilt ausschließlich für gasförmige Stoffe"
+              "Sie gilt nur für Flüssigkeiten und Festkörper"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -1975,10 +1975,10 @@
             "id": "06-saeuren-basen-grundlagen:2:0",
             "question": "Klassifiziere diese Säuren nach Stärke: HNO₃, CH₃COOH, H₂SO₄, HF",
             "options": [
-              "Alle vier dissoziieren vollständig",
-              "Alle vier dissoziieren nur teilweise",
+              "HNO₃ und CH₃COOH dissoziieren vollständig; H₂SO₄ und HF nur teilweise",
+              "H₂SO₄ und HF dissoziieren vollständig; HNO₃ und CH₃COOH nur teilweise",
               "HNO₃ und H₂SO₄ dissoziieren vollständig; CH₃COOH und HF nur teilweise",
-              "Nur H₂SO₄ dissoziiert vollständig"
+              "CH₃COOH und HF dissoziieren vollständig; HNO₃ und H₂SO₄ nur teilweise"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -2300,14 +2300,14 @@
             "id": "07-bohr-elektronenkonfiguration:1:2",
             "question": "Was besagt das Pauli-Prinzip?",
             "options": [
-              "Elektronen füllen zuerst die niedrigsten Energieniveaus",
-              "Alle Elektronen haben den gleichen Spin",
-              "Elektronen besetzen Orbitale zuerst einzeln",
-              "Jedes Orbital kann maximal 2 Elektronen mit entgegengesetztem Spin enthalten"
+              "Elektronen füllen zuerst die Schalen mit n = 1, 2, 3",
+              "Elektronen im selben Orbital haben identischen Spin (+½)",
+              "Orbitale werden mit maximal 1 e⁻ zuerst besetzt",
+              "Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "Jedes Orbital kann maximal 2 Elektronen mit entgegengesetztem Spin enthalten"
+              "Jedes Orbital fasst maximal 2 e⁻ mit entgegengesetztem Spin"
             ]
           },
           {
@@ -2608,22 +2608,6 @@
           },
           {
             "id": "07-bohr-elektronenkonfiguration:5:3",
-            "question": "Welche Aussagen zur Abschirmung und Penetration von Orbitalen sind korrekt?",
-            "options": [
-              "s-Elektronen penetrieren stärker zum Kern als p-Elektronen",
-              "Die Penetration erklärt, warum 4s vor 3d gefüllt wird",
-              "d- und f-Elektronen schirmen schlecht ab",
-              "Die effektive Kernladung ist für alle Elektronen gleich"
-            ],
-            "type": "multiple-choice-multiple",
-            "correctAnswers": [
-              "s-Elektronen penetrieren stärker zum Kern als p-Elektronen",
-              "Die Penetration erklärt, warum 4s vor 3d gefüllt wird",
-              "d- und f-Elektronen schirmen schlecht ab"
-            ]
-          },
-          {
-            "id": "07-bohr-elektronenkonfiguration:5:4",
             "question": "Warum ist die dritte Ionisierungsenergie von Magnesium (Mg) viel höher als die zweite?",
             "options": [
               "Das dritte Elektron kommt aus einer inneren, abgeschlossenen Schale",
@@ -2752,7 +2736,7 @@
             "question": "In der Lewis-Struktur von CO₂: Wie viele Bindungen hat jedes Sauerstoffatom zum Kohlenstoff?",
             "options": [
               "Eine Einfachbindung",
-              "Keine Bindung",
+              "Eine koordinative Bindung",
               "Eine Dreifachbindung",
               "Eine Doppelbindung"
             ],
@@ -2809,7 +2793,7 @@
             "id": "08-ionenbindung-lewis:3:1",
             "question": "Welche Lewis-Struktur ist für Ozon (O₃) korrekt?",
             "options": [
-              "O=O=O (linear, keine freien Paare)",
+              "O=O=O (linear, symmetrisch)",
               "Ein zentrales O mit Doppelbindung zu einem O und Einfachbindung zum anderen (Resonanz)",
               "O-O-O mit Resonanzstrukturen",
               "Drei einzelne O-Atome"
@@ -2960,7 +2944,7 @@
               "Der Kreisprozess ist experimentell, die Berechnung ist theoretisch",
               "Der Kreisprozess nutzt den Hess'schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen",
               "Abweichungen zwischen beiden deuten auf kovalente Anteile hin",
-              "Beide Methoden liefern stets identische Werte"
+              "Beide Methoden liefern bei rein ionischen Verbindungen sehr ähnliche Werte"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
@@ -3118,7 +3102,7 @@
               "Polar, weil C-O-Bindungen polar sind",
               "Polar, weil es Sauerstoff enthält",
               "Unpolar, weil die Dipolmomente sich aufheben",
-              "Unpolar, weil es keine Bindungen hat"
+              "Unpolar, weil CO₂ ein Gas ist"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3218,7 +3202,7 @@
               "Kohlenstoff ist elektronegativer als Chlor",
               "Chlor ist nicht elektronegativ",
               "Die vier polaren Bindungen heben sich durch die tetraedrische Symmetrie auf",
-              "Es gibt keine Elektronenpaare"
+              "Die Bindungen sind zu kurz für messbare Dipole"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3231,7 +3215,7 @@
             "options": [
               "frei-frei > frei-bindend > bindend-bindend",
               "bindend-bindend > frei-bindend > frei-frei",
-              "Alle Abstoßungen sind gleich",
+              "Die Abstoßungen unterscheiden sich nicht signifikant",
               "frei-bindend > frei-frei > bindend-bindend"
             ],
             "type": "multiple-choice",
@@ -3290,7 +3274,7 @@
               "NF₃ < OF₂ < BF₃",
               "BF₃ < NF₃ < OF₂",
               "OF₂ < NF₃ < BF₃",
-              "Alle haben den gleichen Winkel"
+              "Die Winkel unterscheiden sich nur minimal"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3347,8 +3331,8 @@
             "options": [
               "Cl-Atome in axialen Positionen",
               "F-Atome in axialen Positionen (trigonal-bipyramidal)",
-              "Gemischte Anordnung",
-              "Alle Isomere sind gleich stabil"
+              "Gemischte Anordnung ohne Vorzug",
+              "Die Stabilität hängt von der Temperatur ab"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3526,9 +3510,9 @@
             "question": "Was ist die Bindungsordnung?",
             "options": [
               "(Bindende Elektronen - Antibindende Elektronen) / 2",
-              "Bindende Elektronen + Antibindende Elektronen",
-              "Die Anzahl der Bindungen",
-              "Die Anzahl der freien Elektronenpaare"
+              "(Bindende Elektronen + Antibindende Elektronen) / 2",
+              "Anzahl der σ-Bindungen + Anzahl der π-Bindungen",
+              "Anzahl der freien Elektronenpaare × 2"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3541,10 +3525,10 @@
             "id": "10-valenzbindung-hybridisierung-mo:3:0",
             "question": "Warum ist das hypothetische He₂-Molekül instabil?",
             "options": [
-              "Helium-Atome sind zu klein für Bindungen",
+              "Helium-Atome mit 2 e⁻ sind zu klein für Bindungen",
               "Die Bindungsordnung beträgt 0",
-              "Helium besitzt nur s-Orbitale",
-              "Die Elektronegativitätsdifferenz ist zu gering"
+              "Helium besitzt nur 1s-Orbitale",
+              "Die Elektronegativitätsdifferenz von 0 ist zu gering"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3597,10 +3581,10 @@
             "id": "10-valenzbindung-hybridisierung-mo:3:4",
             "question": "Warum ist die Bindung in N₂ so stark?",
             "options": [
-              "N ist sehr elektronegativ",
+              "N hat hohe Elektronegativität von 3,04",
               "Dreifachbindung mit Bindungsordnung 3",
-              "N₂ ist unpolar",
-              "N hat viele freie Elektronenpaare"
+              "N₂ hat ein Dipolmoment von 0",
+              "N hat 5 Valenzelektronen"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3645,8 +3629,8 @@
             "question": "Bestimme die Hybridisierung jedes C-Atoms in Acrylnitril (H₂C=CH-C≡N).",
             "options": [
               "C1: sp², C2: sp², C3: sp",
-              "Alle sp²",
-              "Alle sp",
+              "C1: sp², C2: sp, C3: sp",
+              "C1: sp, C2: sp², C3: sp",
               "C1: sp³, C2: sp², C3: sp"
             ],
             "type": "multiple-choice",
@@ -3660,7 +3644,7 @@
             "options": [
               "Das σ₂p-Orbital liegt energetisch über den π₂p-Orbitalen",
               "Das σ₂p-Orbital liegt energetisch unter den π₂p-Orbitalen",
-              "Es gibt keine π-Orbitale",
+              "Die π-Orbitale sind in diesen Molekülen nicht besetzt",
               "Die Bindungsordnung ist negativ"
             ],
             "type": "multiple-choice",
@@ -3718,8 +3702,8 @@
             "options": [
               "Das freie Elektronenpaar am C überwiegt den Elektronegativitätsunterschied",
               "Kohlenstoff ist elektronegativer als Sauerstoff",
-              "CO hat kein Dipolmoment",
-              "Das Dipolmoment zeigt immer zum elektronegativeren Atom"
+              "CO hat kein messbares Dipolmoment",
+              "Das Dipolmoment zeigt normalerweise zum elektronegativeren Atom"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3856,8 +3840,8 @@
             "id": "11-thermodynamik-enthalpie:2:1",
             "question": "Was besagt der Satz von Hess?",
             "options": [
-              "Die Enthalpie hängt vom Druck ab",
-              "Alle Reaktionen sind exotherm",
+              "Die Enthalpie hängt direkt vom Druck ab",
+              "Die meisten Reaktionen sind exotherm",
               "Enthalpie kann nur bei hohen Temperaturen gemessen werden",
               "Die Gesamtenthalpieänderung ist unabhängig vom Reaktionsweg"
             ],
@@ -3884,10 +3868,10 @@
             "id": "11-thermodynamik-enthalpie:2:3",
             "question": "Was ist die spezifische Wärmekapazität?",
             "options": [
-              "Die maximale Temperatur eines Stoffes",
-              "Die Wärmemenge bei der Verbrennung",
+              "Die maximale Temperatur in K oder °C",
+              "Die Wärmemenge in kJ/mol bei der Verbrennung",
               "Die Wärmemenge, die 1 g eines Stoffes um 1°C erwärmt",
-              "Die Wärmeleitfähigkeit"
+              "Die Wärmeleitfähigkeit in W/(m·K)"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3942,10 +3926,10 @@
             "id": "11-thermodynamik-enthalpie:3:2",
             "question": "Die Gitterenergie von NaCl ist der Energiebetrag, der:",
             "options": [
-              "Bei der Lösung von NaCl in Wasser frei wird",
-              "Benötigt wird, um NaCl zu schmelzen",
+              "Bei der Lösung von 1 mol NaCl in Wasser frei wird",
+              "Benötigt wird, um 1 mol NaCl zu schmelzen",
               "Bei der Bildung von 1 mol NaCl aus gasförmigen Ionen frei wird",
-              "Benötigt wird, um NaCl zu verdampfen"
+              "Benötigt wird, um 1 mol NaCl zu verdampfen"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -3957,8 +3941,8 @@
             "question": "Was ist der Unterschied zwischen ΔH und ΔU (innere Energie)?",
             "options": [
               "ΔH = ΔU + PΔV (bei konstantem Druck)",
-              "ΔH und ΔU sind immer gleich",
-              "ΔH berücksichtigt keine Gase",
+              "ΔH und ΔU sind bei Festkörperreaktionen identisch",
+              "ΔH berücksichtigt nur flüssige Reaktanden",
               "ΔU ist nur für Festkörper definiert"
             ],
             "type": "multiple-choice",
@@ -4005,7 +3989,7 @@
               "Beide Methoden sind korrekt",
               "ΔH°r = ΣD(Bindungen gebrochen) - ΣD(Bindungen gebildet)",
               "ΔH°r = ΣΔH°f(Produkte) - ΣΔH°f(Reaktanten)",
-              "Keine der Methoden ist korrekt"
+              "Nur die Bildungsenthalpie-Methode ist anwendbar"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -4083,7 +4067,7 @@
               "Niedrige Temperatur begünstigt die exotherme Reaktion",
               "Hoher Druck begünstigt die Seite mit weniger Gasteilchen",
               "Kompromiss zwischen Thermodynamik (niedrige T) und Kinetik (hohe T für Geschwindigkeit)",
-              "Hohe Temperatur begünstigt immer höhere Ausbeute"
+              "Hohe Temperatur begünstigt bei exothermen Reaktionen höhere Ausbeute"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
@@ -4281,7 +4265,7 @@
               "Die feste und flüssige Phase",
               "Die flüssige und gasförmige Phase",
               "Die feste und gasförmige Phase",
-              "Alle drei Phasen"
+              "Die überkritische und gasförmige Phase"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
@@ -4733,7 +4717,7 @@
               "MgCl₂ hat den größten Effekt (i ≈ 3)",
               "NaCl hat einen mittleren Effekt (i ≈ 2)",
               "Glucose hat den kleinsten Effekt (i = 1)",
-              "Alle Lösungen haben den gleichen kolligativen Effekt"
+              "Die Reihenfolge ist umgekehrt: Glucose > NaCl > MgCl₂"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
@@ -5574,8 +5558,8 @@
             "options": [
               "Kathode: Cl₂-Entwicklung; Anode: Na-Abscheidung",
               "Kathode: Na⁺ + e⁻ → Na; Anode: 2 Cl⁻ → Cl₂ + 2e⁻",
-              "An beiden Elektroden entsteht NaCl",
-              "Keine Reaktion"
+              "An beiden Elektroden bildet sich NaCl zurück",
+              "Kathode: 2 H₂O + 2e⁻ → H₂ + 2 OH⁻"
             ],
             "type": "multiple-choice",
             "correctAnswers": [

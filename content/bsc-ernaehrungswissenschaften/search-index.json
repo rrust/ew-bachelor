@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-20T22:23:33.555Z",
+  "generatedAt": "2026-01-21T18:48:56.201Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -7558,6 +7558,547 @@
           "index": 69,
           "type": "self-assessment",
           "title": "Überprüfe deine Bereitschaft für den Vorlesungs-Test",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "11-fluessigkeiten-feststoffe",
+      "topic": "Flüssigkeiten und Feststoffe",
+      "description": "Intermolekulare Kräfte, Eigenschaften von Flüssigkeiten, Phasenübergänge und Phasendiagramme",
+      "topics": [
+        "Flüssigkeiten und Feststoffe"
+      ],
+      "keywords": [
+        "flüssigkeiten",
+        "feststoffe",
+        "intermolekulare",
+        "kräfte",
+        "eigenschaften",
+        "phasenübergänge",
+        "phasendiagramme",
+        "diesem",
+        "kapitel",
+        "lernst",
+        "kennen",
+        "zwischen",
+        "molekülen",
+        "wirken",
+        "maßgeblich",
+        "physikalischen",
+        "stoffen",
+        "bestimmen",
+        "wirst",
+        "verstehen",
+        "warum",
+        "wasser",
+        "raumtemperatur",
+        "flüssig",
+        "eis",
+        "schwimmt",
+        "aufgebaut",
+        "lernziele",
+        "unterschied",
+        "intra",
+        "intermolekularen",
+        "kräften",
+        "erklären",
+        "vier",
+        "arten",
+        "intermolekularer",
+        "benennen",
+        "stärke",
+        "ordnen",
+        "anomalien",
+        "wassers",
+        "wasserstoffbrückenbindungen",
+        "dampfdruck",
+        "siedepunkt",
+        "beziehung",
+        "setzen",
+        "lesen",
+        "interpretieren",
+        "einführung",
+        "wichtig",
+        "zwei",
+        "grundlegend",
+        "verschiedenen",
+        "unterscheiden",
+        "kraft",
+        "wirkt",
+        "beispiel",
+        "intramolekular",
+        "innerhalb",
+        "kovalente",
+        "bindung",
+        "stark",
+        "kjmol",
+        "intermolekular",
+        "anziehung",
+        "homolekülen",
+        "schwächer",
+        "intramolekulare",
+        "halten",
+        "atome",
+        "moleküls",
+        "zusammen",
+        "ohbindungen",
+        "wassermolekül",
+        "imkräfte",
+        "anziehungskräfte",
+        "physikalische",
+        "schmelzpunkt",
+        "aggregatzustand",
+        "viskosität",
+        "zähflüssigkeit",
+        "oberflächenspannung",
+        "überblick",
+        "gibt",
+        "haupttypen",
+        "geordnet",
+        "typischer",
+        "iondipolkräfte",
+        "ionen",
+        "polaren",
+        "spezialfall",
+        "dipoldipolkräfte",
+        "permanentem",
+        "dipol",
+        "dispersionskräfte",
+        "londonkräfte",
+        "allen",
+        "induzierte",
+        "dipole",
+        "merke"
+      ],
+      "snippet": "Flüssigkeiten und Feststoffe Intermolekulare Kräfte, Eigenschaften von Flüssigkeiten, Phasenübergänge und Phasendiagramme Flüssigkeiten und Feststoffe In diesem Kapitel lernst du die Kräfte kennen, di...",
+      "itemCount": 42,
+      "quizCount": 8,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Flüssigkeiten und Feststoffe",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "learning-content",
+          "title": "Item 3",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "self-assessment-mc",
+          "title": "Welche Kraft ist hauptsächlich dafür verantwortlich, dass sich Kochsalz (NaCl) in Wasser löst?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "self-assessment-mc",
+          "title": "Warum hat ICl einen höheren Siedepunkt als Br₂, obwohl beide fast die gleiche Masse haben?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "matching",
+          "title": "Ordne die intermolekularen Kräfte ihren charakteristischen Eigenschaften zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "youtube-video",
+          "title": "Item 8",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "learning-content",
+          "title": "Item 9",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "learning-content",
+          "title": "Item 10",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "learning-content",
+          "title": "Item 11",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "self-assessment-mc",
+          "title": "Welche Atome müssen an Wasserstoff gebunden sein, damit sich H-Brücken ausbilden können?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "self-assessment-mc",
+          "title": "Warum schwimmt Eis auf flüssigem Wasser?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "self-assessment-mc",
+          "title": "Welches Basenpaar in der DNA wird stärker zusammengehalten?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "ordering",
+          "title": "Ordne die folgenden Hydride nach steigendem Siedepunkt (niedrigster zuerst).",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "youtube-video",
+          "title": "Item 16",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Item 17",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Item 18",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "learning-content",
+          "title": "Item 19",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "self-assessment-mc",
+          "title": "Warum ist Iod (I₂) bei Raumtemperatur fest, während Fluor (F₂) gasförmig ist, obwohl beide Halogene unpolar sind?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "self-assessment-mc",
+          "title": "Welche der folgenden Substanzen hat nur Dispersionskräfte als intermolekulare Anziehung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "ordering",
+          "title": "Ordne die Alkane nach steigendem Siedepunkt (niedrigster zuerst).",
+          "typeKeywords": [
+            "sortierung",
+            "reihenfolge",
+            "übung"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "youtube-video",
+          "title": "Item 23",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "learning-content",
+          "title": "Item 24",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "learning-content",
+          "title": "Item 25",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Item 26",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Item 27",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "self-assessment-mc",
+          "title": "Was passiert mit dem Siedepunkt von Wasser, wenn man es auf dem Mount Everest kocht?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "self-assessment-mc",
+          "title": "Welcher Prozess ist exotherm (Energie wird frei)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Aussagen zum Dampfdruck.",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "youtube-video",
+          "title": "Item 31",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "learning-content",
+          "title": "Item 32",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "learning-content",
+          "title": "Item 33",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "learning-content",
+          "title": "Item 34",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "learning-content",
+          "title": "Item 35",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "self-assessment-mc",
+          "title": "Sie haben festes CO₂ (Trockeneis) bei −80°C und 1 atm. Sie erwärmen es auf Raumtemperatur. Was passiert?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "self-assessment-mc",
+          "title": "Was bedeutet der kritische Punkt im Phasendiagramm?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 37,
+          "type": "matching",
+          "title": "Ordne die Begriffe des Phasendiagramms ihrer Bedeutung zu.",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 38,
+          "type": "youtube-video",
+          "title": "Item 39",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 39,
+          "type": "practice-exercise",
+          "title": "Phasenübergänge im Alltag",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 40,
+          "type": "calculation",
+          "title": "Wie viel Energie (in kJ) wird benötigt, um 100 g Eis von 0°C vollständig in Dampf von 100°C umzuwandeln?",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 41,
+          "type": "self-assessment",
+          "title": "Bist du bereit für den Vorlesungstest?",
           "typeKeywords": [
             "selbsttest",
             "checkliste",
