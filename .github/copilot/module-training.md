@@ -326,13 +326,13 @@ node scripts/analyze-training-quality.js
 
 ### Qualitätsziele
 
-| Kategorie | Ziel | Akzeptabel |
-|-----------|------|------------|
-| Kritische Probleme | 0 | 0 |
-| Absolute Begriffe | 0 | < 10 |
-| Spezifitäts-Ungleichgewicht | 0 | < 5 |
-| Längen-Ungleichgewicht | 0 | < 100 |
-| Positions-Verteilung | je 25% | 20-30% pro Position |
+| Kategorie                   | Ziel   | Akzeptabel          |
+| --------------------------- | ------ | ------------------- |
+| Kritische Probleme          | 0      | 0                   |
+| Absolute Begriffe           | 0      | < 10                |
+| Spezifitäts-Ungleichgewicht | 0      | < 5                 |
+| Längen-Ungleichgewicht      | 0      | < 100               |
+| Positions-Verteilung        | je 25% | 20-30% pro Position |
 
 ### Scripts ausführen
 

@@ -43,8 +43,9 @@ Mit Push-Benachrichtigungen wirst du an ablaufende Achievements erinnert.
 
 ## Content Development
 
-→ [docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md) - Vollständige Anleitung \
-→ [docs/AI-Content-Creation-Setup.md](docs/AI-Content-Creation-Setup.md) - AI-gestützteContent-Erstellung \
+→ [docs/CONTENT_DEVELOPMENT.md](docs/CONTENT_DEVELOPMENT.md) - Vorlesungen & Quiz erstellen \
+→ [docs/AI-Content-Creation-Setup.md](docs/AI-Content-Creation-Setup.md) - AI-gestützte Content-Erstellung \
+→ [.github/copilot/module-training.md](.github/copilot/module-training.md) - Modul-Training Fragen & Qualität \
 → [studies-material/](studies-material/) - Quelldokumente & Referenzmaterial
 
 ## App Development
@@ -57,3 +58,4 @@ Mit Push-Benachrichtigungen wirst du an ablaufende Achievements erinnert.
 
 → [docs/ACHIEVEMENT_SYSTEM.md](docs/ACHIEVEMENT_SYSTEM.md) - Achievement System Design \
 → [WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
+
