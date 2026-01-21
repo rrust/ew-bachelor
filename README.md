@@ -58,4 +58,3 @@ Mit Push-Benachrichtigungen wirst du an ablaufende Achievements erinnert.
 
 → [docs/ACHIEVEMENT_SYSTEM.md](docs/ACHIEVEMENT_SYSTEM.md) - Achievement System Design \
 → [WIP/Nice_To_Have_Features.md](WIP/Nice_To_Have_Features.md) - Enhancement Ideas
-
