@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-15T08:37:58.044Z",
+  "exportedAt": "2026-01-20T16:40:39.230Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,114 +8,36 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-09-26T08:37:58.044Z",
+    "startedAt": "2025-08-30T16:40:39.230Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
+          "01-grundlagen-zellbiologie": {
+            "score": 78,
+            "badge": "silver"
+          },
           "02-makronaehrstoffe-detail": {
-            "score": 97,
+            "score": 98,
             "badge": "gold"
           },
           "03-fette-oele": {
-            "score": 81,
-            "badge": "silver"
+            "score": 68,
+            "badge": "bronze"
           }
         },
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-02T08:37:58.044Z",
-            "expiresAt": "2026-02-01T08:37:58.044Z",
+            "unlockedAt": "2025-12-22T16:40:39.230Z",
+            "expiresAt": "2026-01-21T16:40:39.230Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "makronaehrstoffe-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-02T08:37:58.044Z",
-            "expiresAt": "2026-02-01T08:37:58.044Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          }
-        }
-      },
-      "02-chemie-grundlagen": {
-        "status": "in-progress",
-        "lectures": {
-          "01-materie-messen": {
-            "score": 100,
-            "badge": "gold"
-          },
-          "02-atome-formeln": {
-            "score": 81,
-            "badge": "silver"
-          },
-          "03-chemische-reaktionen": {
-            "score": 95,
-            "badge": "gold"
-          },
-          "04-gleichungen-stoechiometrie": {
-            "score": 97,
-            "badge": "gold"
-          },
-          "05-thermodynamik-enthalpie-kalorimetrie": {
-            "score": 92,
-            "badge": "gold"
-          },
-          "06-elektronenstruktur-atome": {
-            "score": 90,
-            "badge": "gold"
-          },
-          "07-eigenschaften-atome-ionenbindung": {
-            "score": 73,
-            "badge": "silver"
-          },
-          "08-kovalente-bindung": {
-            "score": 71,
-            "badge": "silver"
-          },
-          "09-molekuelstruktur-molekuelorbitale": {
-            "score": 88,
-            "badge": "silver"
-          },
-          "13-loesungen": {
-            "score": 87,
-            "badge": "silver"
-          }
-        },
-        "achievements": {
-          "materie-messen-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2026-01-09T08:37:58.044Z",
-            "expiresAt": "2026-02-08T08:37:58.044Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "atome-formeln-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2025-12-25T08:37:58.044Z",
-            "expiresAt": "2026-01-24T08:37:58.044Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "chemische-reaktionen-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2025-12-23T08:37:58.044Z",
-            "expiresAt": "2026-01-22T08:37:58.044Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "thermodynamik-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2025-12-29T08:37:58.044Z",
-            "expiresAt": "2026-01-28T08:37:58.044Z",
-            "extensionCount": 0,
-            "lastExtensionAt": null
-          },
-          "elektronenstruktur-cheatsheet": {
-            "status": "unlocked",
-            "unlockedAt": "2025-12-18T08:37:58.044Z",
-            "expiresAt": "2026-01-17T08:37:58.044Z",
+            "unlockedAt": "2025-12-23T16:40:39.230Z",
+            "expiresAt": "2026-01-22T16:40:39.230Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -124,7 +46,7 @@
     },
     "streak": {
       "current": 8,
-      "lastActivityDate": "2026-01-15T10:00:00.000Z",
+      "lastActivityDate": "2026-01-20T10:00:00.000Z",
       "totalDays": 20,
       "longestStreak": 10,
       "rescueMode": false,

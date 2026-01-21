@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-15T08:37:58.043Z",
+  "exportedAt": "2026-01-20T16:40:39.229Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,18 +8,14 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-08-03T08:37:58.043Z",
+    "startedAt": "2025-12-12T16:40:39.229Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
-          "01-grundlagen-zellbiologie": {
-            "score": 94,
-            "badge": "gold"
-          },
           "03-fette-oele": {
-            "score": 87,
-            "badge": "silver"
+            "score": 11,
+            "badge": "none"
           }
         },
         "achievements": {}
@@ -27,7 +23,7 @@
     },
     "streak": {
       "current": 5,
-      "lastActivityDate": "2026-01-15T10:00:00.000Z",
+      "lastActivityDate": "2026-01-20T10:00:00.000Z",
       "totalDays": 12,
       "longestStreak": 7,
       "rescueMode": false,

@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-15T08:37:58.481Z",
+  "generatedAt": "2026-01-20T16:39:28.298Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -120,6 +120,16 @@
       "topic": "Molekülstruktur und Molekülorbitale",
       "description": "VSEPR-Modell zur Geometrie-Vorhersage, Hybridisierung, σ/π-Bindungen und Grundlagen der MO-Theorie",
       "estimatedTime": 120,
+      "version": "1.0.0"
+    },
+    "02-chemie-grundlagen/11-fluessigkeiten-feststoffe": {
+      "checksum": "2d6e1497",
+      "sizeKB": 50.8,
+      "itemCount": 42,
+      "quizCount": 8,
+      "topic": "Flüssigkeiten und Feststoffe",
+      "description": "Intermolekulare Kräfte, Eigenschaften von Flüssigkeiten, Phasenübergänge und Phasendiagramme",
+      "estimatedTime": 60,
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/13-loesungen": {

@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-15T08:37:58.044Z",
+  "exportedAt": "2026-01-20T16:40:39.231Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,7 +8,7 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-07-20T08:37:58.044Z",
+    "startedAt": "2025-11-23T16:40:39.230Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "completed",
@@ -29,15 +29,15 @@
         "achievements": {
           "cell-biology-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-02T08:37:58.044Z",
-            "expiresAt": "2026-02-01T08:37:58.044Z",
+            "unlockedAt": "2025-12-21T16:40:39.230Z",
+            "expiresAt": "2026-01-20T16:40:39.230Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "makronaehrstoffe-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-30T08:37:58.044Z",
-            "expiresAt": "2026-01-29T08:37:58.044Z",
+            "unlockedAt": "2025-12-28T16:40:39.230Z",
+            "expiresAt": "2026-01-27T16:40:39.230Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -82,6 +82,10 @@
             "score": 100,
             "badge": "gold"
           },
+          "11-fluessigkeiten-feststoffe": {
+            "score": 100,
+            "badge": "gold"
+          },
           "13-loesungen": {
             "score": 100,
             "badge": "gold"
@@ -90,36 +94,36 @@
         "achievements": {
           "materie-messen-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-14T08:37:58.044Z",
-            "expiresAt": "2026-02-13T08:37:58.044Z",
+            "unlockedAt": "2026-01-03T16:40:39.231Z",
+            "expiresAt": "2026-02-02T16:40:39.231Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "atome-formeln-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-03T08:37:58.044Z",
-            "expiresAt": "2026-02-02T08:37:58.044Z",
+            "unlockedAt": "2026-01-01T16:40:39.231Z",
+            "expiresAt": "2026-01-31T16:40:39.231Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "chemische-reaktionen-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-29T08:37:58.044Z",
-            "expiresAt": "2026-01-28T08:37:58.044Z",
+            "unlockedAt": "2026-01-13T16:40:39.231Z",
+            "expiresAt": "2026-02-12T16:40:39.231Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "thermodynamik-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2025-12-19T08:37:58.044Z",
-            "expiresAt": "2026-01-18T08:37:58.044Z",
+            "unlockedAt": "2025-12-28T16:40:39.231Z",
+            "expiresAt": "2026-01-27T16:40:39.231Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           },
           "elektronenstruktur-cheatsheet": {
             "status": "unlocked",
-            "unlockedAt": "2026-01-13T08:37:58.044Z",
-            "expiresAt": "2026-02-12T08:37:58.044Z",
+            "unlockedAt": "2025-12-25T16:40:39.231Z",
+            "expiresAt": "2026-01-24T16:40:39.231Z",
             "extensionCount": 0,
             "lastExtensionAt": null
           }
@@ -128,7 +132,7 @@
     },
     "streak": {
       "current": 10,
-      "lastActivityDate": "2026-01-15T10:00:00.000Z",
+      "lastActivityDate": "2026-01-20T10:00:00.000Z",
       "totalDays": 25,
       "longestStreak": 10,
       "rescueMode": false,

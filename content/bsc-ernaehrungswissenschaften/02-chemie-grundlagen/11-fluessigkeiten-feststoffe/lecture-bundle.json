@@ -1,0 +1,617 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "11-fluessigkeiten-feststoffe",
+  "metadata": {
+    "topic": "Flüssigkeiten und Feststoffe",
+    "description": "Intermolekulare Kräfte, Eigenschaften von Flüssigkeiten, Phasenübergänge und Phasendiagramme",
+    "estimatedTime": 60,
+    "version": "1.0.0",
+    "sources": [
+      {
+        "id": "vorlesung-k11",
+        "title": "Vorlesungsfolien Kapitel 11 (WS2025)",
+        "url": "https://moodle.univie.ac.at/path/to/Kapitel11.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "topic": "Flüssigkeiten und Feststoffe",
+      "content": "# Flüssigkeiten und Feststoffe\n\nIn diesem Kapitel lernst du die Kräfte kennen, die zwischen Molekülen wirken und maßgeblich die physikalischen Eigenschaften von Stoffen bestimmen. Du wirst verstehen, warum Wasser bei Raumtemperatur flüssig ist, warum Eis schwimmt und wie Phasendiagramme aufgebaut sind.\n\n## Lernziele\n\n- Unterschied zwischen intra- und intermolekularen Kräften erklären\n- Die vier Arten intermolekularer Kräfte benennen und nach Stärke ordnen\n- Anomalien des Wassers mit Wasserstoffbrückenbindungen erklären\n- Dampfdruck und Siedepunkt in Beziehung setzen\n- Phasendiagramme lesen und interpretieren",
+      "sourceRefs": []
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "1-3"
+        }
+      ],
+      "content": "# Einführung: Intermolekulare Kräfte\n\n## Intra- vs. Intermolekulare Kräfte\n\nEs ist wichtig, zwischen zwei grundlegend verschiedenen Arten von Kräften zu unterscheiden:\n\n| Kraft              | Wirkt...                  | Beispiel                         | Stärke                     |\n| ------------------ | ------------------------- | -------------------------------- | -------------------------- |\n| **Intramolekular** | *innerhalb* von Molekülen | Kovalente Bindung in H₂O         | Stark (100-400 kJ/mol)     |\n| **Intermolekular** | *zwischen* Molekülen      | Anziehung zwischen H₂O-Molekülen | Schwächer (0.05-40 kJ/mol) |\n\n**Intramolekulare Kräfte** halten die Atome eines Moleküls zusammen (z.B. die O-H-Bindungen im Wassermolekül).\n\n**Intermolekulare Kräfte (IM-Kräfte)** sind Anziehungskräfte zwischen verschiedenen Molekülen. Sie bestimmen physikalische Eigenschaften wie:\n\n- Siedepunkt und Schmelzpunkt\n- Aggregatzustand bei Raumtemperatur\n- Viskosität (Zähflüssigkeit)\n- Oberflächenspannung\n\n## Überblick der Intermolekularen Kräfte\n\nEs gibt vier Haupttypen, geordnet nach typischer Stärke:\n\n1. **Ion-Dipol-Kräfte** – zwischen Ionen und polaren Molekülen\n2. **Wasserstoffbrückenbindungen** – Spezialfall der Dipol-Dipol-Kräfte (H an N, O, F)\n3. **Dipol-Dipol-Kräfte** – zwischen Molekülen mit permanentem Dipol\n4. **Dispersionskräfte (London-Kräfte)** – in *allen* Molekülen durch induzierte Dipole\n\n> 💡 **Merke:** Intermolekulare Kräfte erklären, warum chemisch gleiche Stoffe (z.B. H₂O und H₂S) völlig unterschiedliche physikalische Eigenschaften haben können."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "3-5"
+        }
+      ],
+      "content": "# Ion-Dipol-Kräfte\n\nIon-Dipol-Kräfte wirken zwischen einem **Ion** (geladenes Teilchen) und einem **polaren Molekül** (Dipol).\n\n## Mechanismus\n\nWasser ist ein stark polares Molekül:\n- Das **Sauerstoffatom** trägt eine partielle negative Ladung ($\\delta^-$)\n- Die **Wasserstoffatome** tragen partielle positive Ladungen ($\\delta^+$)\n\nWenn ein Salz wie NaCl in Wasser gelöst wird:\n- **Kationen** (z.B. Na⁺) werden vom negativen Ende des Wasserdipols (O-Atom) angezogen\n- **Anionen** (z.B. Cl⁻) werden vom positiven Ende (H-Atome) angezogen\n\n## Hydratisierte Ionen\n\nDie Wassermoleküle ordnen sich um die Ionen herum an und bilden eine **Hydrathülle**:\n\n$$M^{n+} + x \\text{ H}_2\\text{O} \\rightarrow [M(\\text{H}_2\\text{O})_x]^{n+}$$\n\nDieser Prozess setzt Energie frei – die **Hydratationsenthalpie** ($\\Delta H_{\\text{Hydratation}}$).\n\n## Einflussfaktoren auf die Hydratationsenthalpie\n\n| Ion  | Radius (pm) | $\\Delta H_{\\text{Hydratation}}$ (kJ/mol) |\n| ---- | ----------- | ---------------------------------------- |\n| Li⁺  | 78          | −515                                     |\n| Na⁺  | 98          | −405                                     |\n| K⁺   | 133         | −321                                     |\n| Mg²⁺ | 79          | −1922                                    |\n\n**Zwei Faktoren bestimmen die Stärke:**\n\n1. **Ionenladung:** Höhere Ladung → stärkere Anziehung (Mg²⁺ >> Li⁺)\n2. **Ionenradius:** Kleinerer Radius → kürzere Distanz → stärkere Anziehung (Li⁺ > K⁺)\n\n> 💡 **Merke:** Ion-Dipol-Kräfte sind der Grund, warum sich Salze in Wasser lösen. Die freiwerdende Hydratationsenergie kompensiert die aufzuwendende Gitterenergie."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "5-7"
+        }
+      ],
+      "content": "# Dipol-Dipol-Kräfte\n\nDipol-Dipol-Kräfte entstehen zwischen Molekülen, die einen **permanenten Dipol** besitzen (polare Moleküle).\n\n## Mechanismus\n\nBei polaren Molekülen ist die Elektronendichte ungleich verteilt:\n- Ein Ende ist partiell negativ ($\\delta^-$)\n- Das andere Ende ist partiell positiv ($\\delta^+$)\n\nDie **positive Seite** eines Moleküls zieht die **negative Seite** eines Nachbarmoleküls an.\n\n## Einfluss auf den Siedepunkt\n\nVergleicht man Moleküle mit ähnlicher Masse, haben polare Moleküle höhere Siedepunkte:\n\n| Molekül | Molmasse (g/mol) | Polar? | Siedepunkt (°C) |\n| ------- | ---------------- | ------ | --------------- |\n| N₂      | 28               | Nein   | −196            |\n| CO      | 28               | Ja     | −192            |\n| Br₂     | 160              | Nein   | +59             |\n| ICl     | 162              | Ja     | +97             |\n\n**Beobachtung:**\n- CO siedet 4°C höher als N₂ (gleiche Masse, aber CO ist polar)\n- ICl siedet 38°C höher als Br₂ (ähnliche Masse, aber ICl ist polar)\n\n## Warum ist ICl polar, Br₂ aber nicht?\n\n- **Br₂:** Zwei gleiche Atome → symmetrische Elektronenverteilung → unpolar\n- **ICl:** Chlor ist elektronegativer als Iod → Elektronen werden zu Cl gezogen → Dipol\n\n> 💡 **Merke:** Bei ähnlicher Molmasse führen Dipol-Dipol-Kräfte zu höheren Siedepunkten im Vergleich zu rein unpolaren Molekülen."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Kraft ist hauptsächlich dafür verantwortlich, dass sich Kochsalz (NaCl) in Wasser löst?",
+      "options": [
+        "Dispersionskräfte",
+        "Dipol-Dipol-Kräfte",
+        "Ion-Dipol-Kräfte",
+        "Kovalente Bindungen"
+      ],
+      "correctAnswer": "Ion-Dipol-Kräfte",
+      "explanation": "Die Ionen des Salzes (Na⁺ und Cl⁻) interagieren mit den permanenten Dipolen der Wassermoleküle. Das negative Ende des Wassers (O) zieht Na⁺ an, das positive Ende (H) zieht Cl⁻ an.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum hat ICl einen höheren Siedepunkt als Br₂, obwohl beide fast die gleiche Masse haben?",
+      "options": [
+        "ICl ist schwerer als Br₂",
+        "ICl besitzt ein permanentes Dipolmoment, Br₂ nicht",
+        "Br₂ hat stärkere kovalente Bindungen",
+        "ICl bildet Wasserstoffbrücken"
+      ],
+      "correctAnswer": "ICl besitzt ein permanentes Dipolmoment, Br₂ nicht",
+      "explanation": "ICl ist ein polares Molekül, da Chlor elektronegativer ist als Iod (Elektronegativitätsdifferenz). Dies führt zu zusätzlichen Dipol-Dipol-Kräften. Br₂ besteht aus zwei gleichen Atomen und ist daher unpolar.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die intermolekularen Kräfte ihren charakteristischen Eigenschaften zu.",
+      "pairs": [
+        {
+          "left": "Ion-Dipol-Kräfte",
+          "right": "Wirken zwischen Ionen und polaren Molekülen"
+        },
+        {
+          "left": "Dipol-Dipol-Kräfte",
+          "right": "Wirken zwischen Molekülen mit permanentem Dipol"
+        },
+        {
+          "left": "Dispersionskräfte",
+          "right": "Entstehen durch induzierte Dipole in allen Molekülen"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=FhBKqKxJ3iM",
+      "content": "# Intermolekulare Kräfte – Überblick\n\nIn diesem Video von **musstewissen Chemie** werden die verschiedenen intermolekularen Kräfte anschaulich erklärt: Van-der-Waals-Kräfte, Dipol-Dipol-Wechselwirkungen und Wasserstoffbrückenbindungen."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "7-9"
+        }
+      ],
+      "content": "# Wasserstoffbrückenbindungen – Definition\n\nWasserstoffbrücken (H-Brücken) sind eine **besonders starke Form** der Dipol-Dipol-Anziehung.\n\n## Voraussetzungen\n\nH-Brücken treten auf, wenn ein **Wasserstoffatom** direkt an eines der drei **stark elektronegativen Atome** gebunden ist:\n\n| Atom               | Elektronegativität |\n| ------------------ | ------------------ |\n| **F** (Fluor)      | 4.0                |\n| **O** (Sauerstoff) | 3.5                |\n| **N** (Stickstoff) | 3.0                |\n\n> 💡 **Eselsbrücke:** **F**ür **O**rdentliche **N**oten – nur F, O und N können H-Brücken bilden!\n\n## Notation\n\nDie H-Brücke wird oft so dargestellt:\n\n$$\\text{X–H} \\cdots \\text{:Y}$$\n\nDabei sind:\n- **X** und **Y** = N, O oder F\n- **X–H** = kovalente Bindung (stark)\n- **···** = Wasserstoffbrücke (schwächer, aber stärker als normale Dipol-Dipol)\n- **:Y** = freies Elektronenpaar am Akzeptor-Atom\n\n## Warum sind H-Brücken so stark?\n\n1. **Hohe Polarität:** Die X–H Bindung ist extrem polar (große EN-Differenz)\n2. **Kleiner Wasserstoff:** H hat keine inneren Elektronen – der positive Kern kommt dem Akzeptor sehr nahe\n3. **Freie Elektronenpaare:** N, O, F haben freie Elektronenpaare als Andockstellen\n\n**Typische Stärke:** 5–30 kJ/mol (etwa 10× stärker als normale Dipol-Dipol-Kräfte)"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "9-12"
+        }
+      ],
+      "content": "# Wasserstoffbrücken in Wasser\n\nWasser (H₂O) ist das Paradebeispiel für Wasserstoffbrückenbindungen.\n\n## Warum sind H-Brücken in Wasser besonders stark?\n\n1. **Die O–H Bindung ist sehr polar** (EN-Differenz: 3.5 − 2.1 = 1.4)\n2. **Sauerstoff hat zwei freie Elektronenpaare** → kann zwei H-Brücken akzeptieren\n3. **Jedes Wassermolekül hat zwei O–H Bindungen** → kann zwei H-Brücken spenden\n\nEin Wassermolekül kann also **bis zu 4 H-Brücken** gleichzeitig bilden!\n\n## Anomalien des Wassers\n\n### 1. Anomal hoher Siedepunkt\n\nVergleich der Gruppe-16-Hydride:\n\n| Molekül | Molmasse (g/mol) | Siedepunkt (°C) |\n| ------- | ---------------- | --------------- |\n| H₂O     | 18               | **+100**        |\n| H₂S     | 34               | −60             |\n| H₂Se    | 81               | −41             |\n| H₂Te    | 130              | −2              |\n\n**Ohne H-Brücken** würde Wasser bei etwa −80°C sieden – es wäre bei Raumtemperatur ein Gas!\n\n### 2. Hohe Wärmekapazität\n\nWasser speichert viel Energie: **c = 4.18 J/(g·K)**\n\n- Wichtig für das **Weltklima** (Ozeane als Wärmepuffer)\n- Wichtig für **Organismen** (Temperaturregulation)\n\n### 3. Dichteanomalie – Warum schwimmt Eis?\n\n**Beobachtung:** Eis ist *weniger* dicht als flüssiges Wasser (0.92 g/cm³ vs. 1.00 g/cm³)\n\n**Erklärung:**\n- Im Eis bilden H-Brücken eine **tetraedrische Gitterstruktur**\n- Diese Struktur hat viele **Hohlräume**\n- Beim Schmelzen bricht das Gitter teilweise zusammen\n- Die Moleküle rücken näher zusammen → höhere Dichte\n\n> 💡 **Merke:** Eis schwimmt, weil die H-Brücken im Festkörper eine offene Struktur erzwingen. Das ist für Gewässer lebenswichtig – Fische überleben im Winter unter der Eisdecke!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "12-14"
+        }
+      ],
+      "content": "# Wasserstoffbrücken in der Biologie\n\nH-Brücken spielen eine zentrale Rolle in biologischen Strukturen.\n\n## DNA-Doppelhelix\n\nDie beiden Stränge der DNA werden durch **Wasserstoffbrücken zwischen den Basenpaaren** zusammengehalten.\n\n### Basenpaarung\n\n| Basenpaar                | Anzahl H-Brücken |\n| ------------------------ | ---------------- |\n| Adenin (A) ↔ Thymin (T)  | **2**            |\n| Guanin (G) ↔ Cytosin (C) | **3**            |\n\n**Konsequenz:** DNA-Abschnitte mit hohem G-C-Anteil sind stabiler und haben einen höheren \"Schmelzpunkt\" (Temperatur, bei der sich die Stränge trennen).\n\n### Warum H-Brücken und nicht stärkere Bindungen?\n\n- **Stark genug**, um die Doppelhelix stabil zu halten\n- **Schwach genug**, um bei der Replikation und Transkription geöffnet zu werden\n\n## Weitere biologische Beispiele\n\n### Proteinstruktur\n\n- **α-Helix:** H-Brücken zwischen C=O und N-H Gruppen der Peptidbindungen\n- **β-Faltblatt:** H-Brücken zwischen parallelen Proteinsträngen\n\n### Clathrate (Gashydrate)\n\nMethan-Clathrat (\"brennendes Eis\"):\n- Methanmoleküle werden in einem **\"Käfig\" aus Wassermolekülen** eingeschlossen\n- Die Wassermoleküle bilden H-Brücken und formen polyederförmige Hohlräume\n- Stabil bei hohem Druck und tiefer Temperatur (z.B. am Meeresboden)\n\n> 💡 **Merke:** Wasserstoffbrücken sind der \"Klebstoff\" der Biologie – stark genug für Stabilität, schwach genug für Dynamik."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Atome müssen an Wasserstoff gebunden sein, damit sich H-Brücken ausbilden können?",
+      "options": [
+        "C, H, O",
+        "N, O, F",
+        "Cl, Br, I",
+        "Na, K, Li"
+      ],
+      "correctAnswer": "N, O, F",
+      "explanation": "Nur Stickstoff, Sauerstoff und Fluor sind elektronegativ genug (EN ≥ 3.0), um die für H-Brücken nötige starke Polarisierung der H-X-Bindung zu erzeugen.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum schwimmt Eis auf flüssigem Wasser?",
+      "options": [
+        "Weil Eis viele Luftblasen enthält",
+        "Weil die Gitterstruktur des Eises mehr Hohlraum beansprucht als die ungeordnete Flüssigkeit",
+        "Weil chemische Bindungen im Eis leichter sind"
+      ],
+      "correctAnswer": "Weil die Gitterstruktur des Eises mehr Hohlraum beansprucht als die ungeordnete Flüssigkeit",
+      "explanation": "Im Eis erzwingen die Wasserstoffbrücken eine tetraedrische Gitterstruktur mit großen Hohlräumen. Beim Schmelzen bricht diese Struktur teilweise zusammen und die Moleküle rücken näher zusammen – die Dichte steigt.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welches Basenpaar in der DNA wird stärker zusammengehalten?",
+      "options": [
+        "Adenin-Thymin (A-T)",
+        "Guanin-Cytosin (G-C)",
+        "Beide Paare sind gleich stark"
+      ],
+      "correctAnswer": "Guanin-Cytosin (G-C)",
+      "explanation": "G-C Basenpaare werden durch 3 Wasserstoffbrücken stabilisiert, A-T Paare nur durch 2. Daher sind G-C-reiche DNA-Abschnitte thermisch stabiler.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Ordne die folgenden Hydride nach steigendem Siedepunkt (niedrigster zuerst).",
+      "items": [
+        "H₂S (Schwefelwasserstoff)",
+        "H₂Se (Selenwasserstoff)",
+        "H₂O (Wasser)"
+      ],
+      "explanation": "H₂S und H₂Se können keine H-Brücken bilden (S und Se sind nicht elektronegativ genug). Ihre Siedepunkte hängen von Dispersionskräften ab. H₂O bildet starke H-Brücken und siedet daher viel höher als erwartet: H₂S (-60°C) < H₂Se (-41°C) < H₂O (+100°C).",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=oXMtDXVndz4",
+      "content": "# Wasserstoffbrückenbindung erklärt\n\nIn diesem Video von **Lehrerschmidt** wird anschaulich erklärt, wie Wasserstoffbrückenbindungen entstehen und warum sie für die besonderen Eigenschaften von Wasser verantwortlich sind."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "14-16"
+        }
+      ],
+      "content": "# Dispersionskräfte – Mechanismus\n\nWie können sich **unpolare Moleküle** (wie O₂, I₂ oder Methan) gegenseitig anziehen?\n\nDie Antwort: **Dispersionskräfte** (auch London-Kräfte genannt).\n\n## Das Problem\n\nUnpolare Moleküle haben:\n- Keinen permanenten Dipol\n- Symmetrische Elektronenverteilung\n\nTrotzdem können sie sich anziehen und sogar verflüssigt werden!\n\n## Der Mechanismus: Induzierte Dipole\n\n### Schritt 1: Momentaner Dipol entsteht\n\nDie Elektronenwolke eines Atoms ist ständig in Bewegung. Zufällig kann sich die Elektronendichte kurzzeitig auf eine Seite verlagern:\n\n**Symmetrisch** → **Momentan asymmetrisch** ($\\delta^-$ auf einer Seite, $\\delta^+$ auf der anderen)\n\n### Schritt 2: Nachbaratom wird polarisiert\n\nDer momentane Dipol des ersten Atoms **induziert** einen Dipol im Nachbaratom:\n- Die Elektronen des Nachbarn werden abgestoßen oder angezogen\n- Es entsteht ebenfalls ein kurzzeitiger Dipol\n\n### Schritt 3: Anziehung\n\nDie beiden induzierten Dipole ziehen sich kurzzeitig an. Obwohl diese Wechselwirkung nur für Bruchteile von Sekunden besteht, ist der **statistische Nettoeffekt** eine Anziehungskraft.\n\n## Beispiel: Iod in verschiedenen Lösungsmitteln\n\nI₂ (unpolar) löst sich in:\n- **Ethanol** (polar) – durch induzierte Dipole\n- **Hexan** (unpolar) – durch Dispersionskräfte zwischen I₂ und Hexan\n\n> 💡 **Merke:** Dispersionskräfte wirken in *allen* Molekülen – auch in polaren! Bei unpolaren Molekülen sind sie jedoch die *einzige* intermolekulare Kraft."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "16-18"
+        }
+      ],
+      "content": "# Polarisierbarkeit und Trends\n\nDie Stärke der Dispersionskräfte hängt von der **Polarisierbarkeit** ab.\n\n## Was ist Polarisierbarkeit?\n\nPolarisierbarkeit beschreibt, wie leicht sich die Elektronenwolke eines Atoms oder Moleküls verformen lässt.\n\n**Hohe Polarisierbarkeit** = leicht verformbare Elektronenwolke = stärkere induzierte Dipole\n\n## Einflussfaktoren\n\n### 1. Anzahl der Elektronen (Molmasse)\n\nMehr Elektronen → größere Elektronenwolke → leichter verformbar\n\n### 2. Größe des Atoms/Moleküls\n\nGrößere Atome haben Elektronen weiter vom Kern entfernt → schwächer gebunden → leichter verschiebbar\n\n## Trend bei Alkanen (Kohlenwasserstoffen)\n\n| Alkan  | Summenformel | Molmasse (g/mol) | Siedepunkt (°C) |\n| ------ | ------------ | ---------------- | --------------- |\n| Methan | CH₄          | 16               | −161            |\n| Ethan  | C₂H₆         | 30               | −89             |\n| Propan | C₃H₈         | 44               | −42             |\n| Butan  | C₄H₁₀        | 58               | −0.5            |\n| Pentan | C₅H₁₂        | 72               | +36             |\n\n**Beobachtung:** Der Siedepunkt steigt nahezu linear mit der Molmasse!\n\n## Trend bei Halogenen\n\n| Halogen | Molmasse (g/mol) | Aggregatzustand (RT) | Siedepunkt (°C) |\n| ------- | ---------------- | -------------------- | --------------- |\n| F₂      | 38               | Gas                  | −188            |\n| Cl₂     | 71               | Gas                  | −34             |\n| Br₂     | 160              | Flüssigkeit          | +59             |\n| I₂      | 254              | Feststoff            | +184            |\n\n**Erklärung:** Alle Halogenmoleküle sind unpolar (X₂). Der enorme Unterschied im Siedepunkt kommt ausschließlich von den **Dispersionskräften**, die mit zunehmender Größe stark ansteigen.\n\n> 💡 **Merke:** Größer = polarisierbarer = stärkere Dispersionskräfte = höherer Siedepunkt"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "18-20"
+        }
+      ],
+      "content": "# Übersicht: Intermolekulare Kräfte\n\nHier eine Zusammenfassung aller intermolekularen Kräfte, geordnet nach **typischer Stärke**:\n\n## Vergleichstabelle\n\n| Rang | Kraft           | Stärke (kJ/mol) | Wirkt zwischen...     | Beispiel    |\n| ---- | --------------- | --------------- | --------------------- | ----------- |\n| 1    | **Ion-Dipol**   | 40–600          | Ion + polares Molekül | NaCl in H₂O |\n| 2    | **H-Brücken**   | 5–30            | H–(N,O,F) + :N,:O,:F  | H₂O···H₂O   |\n| 3    | **Dipol-Dipol** | 2–10            | Polare Moleküle       | HCl···HCl   |\n| 4    | **Dispersion**  | 0.05–40         | Alle Moleküle         | CH₄···CH₄   |\n\n## Wichtige Punkte\n\n### Dispersionskräfte sind allgegenwärtig\n\n- Wirken in **allen** Molekülen (auch in polaren!)\n- Bei großen unpolaren Molekülen können sie sehr stark werden\n- Beispiel: Dispersionskräfte in I₂ sind stärker als Dipol-Dipol-Kräfte in HCl\n\n### Mehrere Kräfte wirken gleichzeitig\n\nBei polaren Molekülen addieren sich die Kräfte:\n\n**Ethanol (C₂H₅OH):**\n- Dispersionskräfte (alle Moleküle haben sie)\n- Dipol-Dipol-Kräfte (Ethanol ist polar)\n- Wasserstoffbrücken (O–H Gruppe vorhanden)\n\n### Praktische Anwendung: Siedepunkte vorhersagen\n\n1. **Struktur analysieren:** Polar? H-Brücken möglich?\n2. **Molmasse vergleichen:** Bei ähnlichen Molekültypen\n3. **Dominante Kraft identifizieren**\n\n> 💡 **Faustregel:** H-Brücken > Dipol-Dipol > Dispersion (bei kleinen Molekülen). Bei großen Molekülen können Dispersionskräfte dominieren!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum ist Iod (I₂) bei Raumtemperatur fest, während Fluor (F₂) gasförmig ist, obwohl beide Halogene unpolar sind?",
+      "options": [
+        "Iod hat stärkere Dipol-Dipol-Kräfte",
+        "Iod hat eine größere Masse und Elektronenwolke, was zu stärkeren Dispersionskräften führt",
+        "Fluor bildet Wasserstoffbrücken mit der Luft"
+      ],
+      "correctAnswer": "Iod hat eine größere Masse und Elektronenwolke, was zu stärkeren Dispersionskräften führt",
+      "explanation": "Beide Moleküle sind unpolar und haben nur Dispersionskräfte. Die Polarisierbarkeit nimmt mit der Größe der Elektronenwolke zu. Iod hat viel mehr Elektronen als Fluor, daher sind die Dispersionskräfte viel stärker.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche der folgenden Substanzen hat nur Dispersionskräfte als intermolekulare Anziehung?",
+      "options": [
+        "H₂O",
+        "HCl",
+        "CH₄",
+        "NaCl"
+      ],
+      "correctAnswer": "CH₄",
+      "explanation": "Methan (CH₄) ist ein unpolares Molekül (tetraedrische Symmetrie) und kann keine H-Brücken bilden. Es hat ausschließlich Dispersionskräfte. H₂O hat H-Brücken, HCl hat Dipol-Dipol-Kräfte, NaCl ist ein Ionengitter.",
+      "content": ""
+    },
+    {
+      "type": "ordering",
+      "question": "Ordne die Alkane nach steigendem Siedepunkt (niedrigster zuerst).",
+      "items": [
+        "Methan (CH₄)",
+        "Ethan (C₂H₆)",
+        "Propan (C₃H₈)",
+        "Butan (C₄H₁₀)"
+      ],
+      "explanation": "Alle Alkane sind unpolar und haben nur Dispersionskräfte. Je länger die Kette (höhere Molmasse), desto größer die Elektronenwolke und desto stärker die Dispersionskräfte. Siedepunkte: CH₄ (−161°C) < C₂H₆ (−89°C) < C₃H₈ (−42°C) < C₄H₁₀ (−0.5°C).",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=1w06rA8WdVM",
+      "content": "# Van-der-Waals-Kräfte\n\nIn diesem Video von **musstewissen Chemie** werden die Van-der-Waals-Kräfte (Dispersionskräfte) erklärt: Wie entstehen induzierte Dipole und warum können sich auch unpolare Moleküle anziehen?"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "20-22"
+        }
+      ],
+      "content": "# Verdampfung und Kondensation\n\n## Eigenschaften von Flüssigkeiten\n\nIn einer Flüssigkeit sind die Moleküle:\n- In **ständiger Bewegung** (thermische Energie)\n- **Eng beieinander** (im Gegensatz zu Gasen)\n- **Kaum komprimierbar** (im Gegensatz zu Gasen)\n\n## Verdampfung (Endotherm)\n\nBeim Verdampfen müssen Moleküle die **intermolekularen Kräfte** überwinden, um in die Gasphase zu gelangen.\n\n**Energiebilanz:** Energie wird aus der Umgebung aufgenommen → **endotherm**\n\n### Verdunstungskälte\n\nDurch Verdampfung wird der Umgebung Wärme entzogen:\n- **Schwitzen:** Verdunstender Schweiß kühlt die Haut\n- **Nasser Finger im Wind:** Fühlt sich kälter an\n\n### Boltzmann-Verteilung\n\nNicht alle Moleküle in einer Flüssigkeit haben die gleiche kinetische Energie!\n\n- Die Energie ist **statistisch verteilt** (Boltzmann-Verteilung)\n- Nur Moleküle mit **ausreichend hoher Energie** können die Oberfläche verlassen\n- Bei **höherer Temperatur** haben mehr Moleküle diese Mindestenergie\n\n## Kondensation (Exotherm)\n\nDer umgekehrte Prozess: Gasmoleküle treten in die Flüssigkeit ein.\n\n**Energiebilanz:** Energie wird freigesetzt → **exotherm**\n\n| Prozess      | Energiefluss                    | Phasenübergang |\n| ------------ | ------------------------------- | -------------- |\n| Verdampfung  | Energie aufgenommen (endotherm) | Flüssig → Gas  |\n| Kondensation | Energie freigesetzt (exotherm)  | Gas → Flüssig  |\n\n> 💡 **Merke:** Verdampfung kühlt, Kondensation wärmt. Das ist der Grund, warum Verbrennungen mit heißem Dampf besonders schmerzhaft sind – bei der Kondensation auf der Haut wird zusätzliche Energie freigesetzt!"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "22-24"
+        }
+      ],
+      "content": "# Dampfdruck und Gleichgewicht\n\n## Was ist Dampfdruck?\n\nIn einem **geschlossenen Gefäß** stellt sich ein Gleichgewicht ein:\n\n$$\\text{Rate der Verdampfung} = \\text{Rate der Kondensation}$$\n\nDer Druck, den der Dampf in diesem Gleichgewichtszustand ausübt, heißt **Gleichgewichts-Dampfdruck** (oder einfach \"Dampfdruck\").\n\n## Eigenschaften des Dampfdrucks\n\n### 1. Temperaturabhängigkeit\n\nDer Dampfdruck steigt **exponentiell** mit der Temperatur:\n- Höhere T → mehr Moleküle haben genug Energie zum Verdampfen\n- Mehr Moleküle in der Gasphase → höherer Druck\n\n### 2. Abhängigkeit von den IM-Kräften\n\n| IM-Kräfte   | Dampfdruck | Flüchtigkeit   | Beispiel     |\n| ----------- | ---------- | -------------- | ------------ |\n| **Schwach** | Hoch       | Flüchtig       | Diethylether |\n| **Stark**   | Niedrig    | Wenig flüchtig | Wasser       |\n\n**Erklärung:** Bei schwachen IM-Kräften können Moleküle leichter in die Gasphase entkommen → höherer Dampfdruck.\n\n### 3. Unabhängig von der Menge\n\nDer Dampfdruck hängt **nicht** von der Menge der Flüssigkeit ab!\n- 1 mL Wasser und 1 L Wasser haben bei gleicher Temperatur den gleichen Dampfdruck\n- Nur Temperatur und die Art der Substanz zählen\n\n## Flüchtigkeit\n\n**Flüchtige Substanzen** haben:\n- Schwache IM-Kräfte\n- Hohen Dampfdruck\n- Niedrigen Siedepunkt\n\nBeispiele: Aceton, Alkohol, Benzin (man riecht sie leicht)\n\n**Wenig flüchtige Substanzen** haben:\n- Starke IM-Kräfte\n- Niedrigen Dampfdruck\n- Hohen Siedepunkt\n\nBeispiele: Wasser, Glycerin, Speiseöl\n\n> 💡 **Merke:** Je höher der Dampfdruck, desto flüchtiger die Substanz – und desto leichter verdampft sie bei Raumtemperatur."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "24-26"
+        }
+      ],
+      "content": "# Siedepunkt und Druckabhängigkeit\n\n## Definition: Siedepunkt\n\nEine Flüssigkeit **siedet**, wenn ihr Dampfdruck gleich dem Außendruck ist.\n\n$$\\text{Dampfdruck} = \\text{Außendruck} \\Rightarrow \\text{Sieden}$$\n\n### Normaler Siedepunkt\n\nDer **normale Siedepunkt** ist die Temperatur, bei der der Dampfdruck genau **1 atm (760 mmHg = 1013 mbar)** beträgt.\n\n- Wasser: 100°C bei 1 atm\n- Ethanol: 78°C bei 1 atm\n\n## Druckabhängigkeit des Siedepunkts\n\n### Niedriger Außendruck → Niedrigerer Siedepunkt\n\n**Beispiel: Kochen in den Bergen**\n\n| Ort           | Höhe (m) | Luftdruck (mbar) | Siedepunkt H₂O (°C) |\n| ------------- | -------- | ---------------- | ------------------- |\n| Meeresspiegel | 0        | 1013             | 100                 |\n| Wien          | 170      | ~1000            | ~99.5               |\n| Zugspitze     | 2962     | ~700             | ~90                 |\n| Mount Everest | 8849     | ~330             | ~70                 |\n\n**Konsequenz:** Auf dem Mount Everest kocht Wasser schon bei 70°C – ein Ei würde nicht richtig gar werden!\n\n### Hoher Außendruck → Höherer Siedepunkt\n\n**Anwendung: Schnellkochtopf**\n\n- Druck im Topf: ~2 atm\n- Siedepunkt des Wassers: ~120°C\n- Vorteil: Schnelleres Garen bei höherer Temperatur\n\n## Warum bilden sich Blasen beim Sieden?\n\nBeim Sieden bilden sich Dampfblasen **im Inneren** der Flüssigkeit (nicht nur an der Oberfläche).\n\nDies passiert nur, wenn der Dampfdruck den Außendruck überwinden kann. Vorher verdampft die Flüssigkeit nur an der Oberfläche (Verdunstung).\n\n> 💡 **Merke:** Der Siedepunkt ist keine feste Stoffeigenschaft – er hängt vom Außendruck ab! Bei niedrigerem Druck siedet Wasser unter 100°C."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "26-28"
+        }
+      ],
+      "content": "# Oberflächenspannung und Kapillarität\n\n## Oberflächenspannung\n\n### Woher kommt sie?\n\nMoleküle im **Inneren** einer Flüssigkeit werden von allen Seiten gleichmäßig angezogen (von Nachbarmolekülen umgeben).\n\nMoleküle an der **Oberfläche** haben keine Nachbarn oberhalb – sie erfahren nur eine Netto-Kraft **nach innen**.\n\n**Konsequenz:** Die Oberfläche verhält sich wie eine gespannte elastische Haut.\n\n### Auswirkungen\n\n1. **Tropfenform:** Flüssigkeiten streben zur Kugelform (kleinste Oberfläche bei gegebenem Volumen)\n2. **Wasserläufer:** Können auf der Wasseroberfläche laufen\n3. **Energieaufwand:** Um die Oberfläche zu vergrößern, muss Arbeit verrichtet werden\n\n### Einfluss der IM-Kräfte\n\nStärkere IM-Kräfte → höhere Oberflächenspannung\n\n| Substanz    | Oberflächenspannung (mN/m) |\n| ----------- | -------------------------- |\n| Quecksilber | 485 (Metallbindung!)       |\n| Wasser      | 73 (H-Brücken)             |\n| Ethanol     | 22 (schwächere H-Brücken)  |\n\n## Kapillarität\n\nKapillarität beschreibt das Verhalten von Flüssigkeiten in **engen Röhren**.\n\n### Zwei konkurrierende Kräfte\n\n| Kraft        | Definition                                             |\n| ------------ | ------------------------------------------------------ |\n| **Kohäsion** | Anziehung zwischen Flüssigkeitsmolekülen untereinander |\n| **Adhäsion** | Anziehung zwischen Flüssigkeit und Behälterwand        |\n\n### Meniskusformen\n\n**Wasser in Glas (Adhäsion > Kohäsion):**\n- Wasser \"klettert\" am Glas hoch\n- **Konkaver Meniskus** (nach unten gewölbt)\n\n**Quecksilber in Glas (Kohäsion > Adhäsion):**\n- Quecksilber wird vom Glas abgestoßen\n- **Konvexer Meniskus** (nach oben gewölbt)\n\n> 💡 **Merke:** Kapillarkräfte sind der Grund, warum Wasser in Pflanzen aufsteigen kann und warum man beim Ablesen einer Bürette auf den tiefsten Punkt des Meniskus achten muss!"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was passiert mit dem Siedepunkt von Wasser, wenn man es auf dem Mount Everest kocht?",
+      "options": [
+        "Er bleibt bei 100 °C",
+        "Er steigt über 100 °C",
+        "Er sinkt unter 100 °C"
+      ],
+      "correctAnswer": "Er sinkt unter 100 °C",
+      "explanation": "Der Luftdruck auf dem Mount Everest ist deutlich geringer als auf Meereshöhe. Da Wasser siedet, wenn sein Dampfdruck den Außendruck erreicht, wird dieser Punkt schon bei niedrigerer Temperatur (ca. 70°C) erreicht.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welcher Prozess ist exotherm (Energie wird frei)?",
+      "options": [
+        "Verdampfen",
+        "Schmelzen",
+        "Kondensieren",
+        "Sublimieren"
+      ],
+      "correctAnswer": "Kondensieren",
+      "explanation": "Beim Kondensieren gehen Moleküle von der Gasphase in die Flüssigphase über. Dabei werden intermolekulare Bindungen gebildet, was Energie freisetzt (exotherm). Alle anderen Prozesse erfordern Energiezufuhr zum Aufbrechen von Bindungen (endotherm).",
+      "content": ""
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Aussagen zum Dampfdruck.",
+      "text": "Substanzen mit starken intermolekularen Kräften haben einen {1} Dampfdruck. Der Dampfdruck steigt {2} mit der Temperatur.",
+      "blanks": [
+        {
+          "correctAnswers": [
+            "niedrigen",
+            "geringen",
+            "kleinen"
+          ]
+        },
+        {
+          "correctAnswers": [
+            "exponentiell",
+            "stark"
+          ]
+        }
+      ],
+      "explanation": "Starke IM-Kräfte halten die Moleküle in der Flüssigkeit – weniger entkommen in die Gasphase, also niedriger Dampfdruck. Der Temperatureinfluss auf den Dampfdruck folgt einer Exponentialfunktion (Clausius-Clapeyron-Gleichung).",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=FjIuCq6Z38Q",
+      "content": "# Dampfdruckkurve und Phasendiagramm\n\nIn diesem Video von **Die Merkhilfe** wird erklärt, wie die Dampfdruckkurve aufgebaut ist und wie sie mit dem Phasendiagramm von Wasser zusammenhängt."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "28-30"
+        }
+      ],
+      "content": "# Phasenübergänge und Enthalpien\n\nBei Phasenübergängen wird Energie aufgenommen oder freigesetzt. Diese Energieänderungen werden als **Enthalpie** ($\\Delta H$) in kJ/mol gemessen.\n\n## Die sechs Phasenübergänge\n\n| Übergang       | Name          | Energiefluss  |\n| -------------- | ------------- | ------------- |\n| Fest → Flüssig | Schmelzen     | Endotherm (+) |\n| Flüssig → Fest | Erstarren     | Exotherm (−)  |\n| Flüssig → Gas  | Verdampfen    | Endotherm (+) |\n| Gas → Flüssig  | Kondensieren  | Exotherm (−)  |\n| Fest → Gas     | Sublimieren   | Endotherm (+) |\n| Gas → Fest     | Resublimieren | Exotherm (−)  |\n\n## Wichtige Enthalpien\n\n### Schmelzenthalpie ($\\Delta H_{\\text{schmelz}}$)\n\nEnergie zum Aufbrechen des Kristallgitters.\n\n**Wasser:** $\\Delta H_{\\text{schmelz}} = 6.0$ kJ/mol\n\n### Verdampfungsenthalpie ($\\Delta H_{\\text{vap}}$)\n\nEnergie zum vollständigen Überwinden der IM-Kräfte.\n\n**Wasser:** $\\Delta H_{\\text{vap}} = 40.7$ kJ/mol\n\n### Sublimationsenthalpie ($\\Delta H_{\\text{sub}}$)\n\nDa Sublimation = Schmelzen + Verdampfen (nur direkter):\n\n$$\\Delta H_{\\text{sub}} = \\Delta H_{\\text{schmelz}} + \\Delta H_{\\text{vap}}$$\n\n## Warum ist $\\Delta H_{\\text{vap}}$ so viel größer als $\\Delta H_{\\text{schmelz}}$?\n\n- **Schmelzen:** Nur Aufbrechen der regelmäßigen Gitterstruktur, IM-Kräfte bleiben größtenteils erhalten\n- **Verdampfen:** Vollständige Überwindung aller IM-Kräfte, Moleküle werden komplett getrennt\n\n> 💡 **Merke:** Die Verdampfungsenthalpie ist immer deutlich größer als die Schmelzenthalpie, weil beim Verdampfen alle intermolekularen Kräfte überwunden werden müssen."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "30-32"
+        }
+      ],
+      "content": "# Das Phasendiagramm\n\nEin Phasendiagramm zeigt, welcher **Aggregatzustand** bei gegebener Temperatur und gegebenem Druck stabil ist.\n\n## Aufbau\n\n**Achsen:**\n- **X-Achse:** Temperatur (T)\n- **Y-Achse:** Druck (P)\n\n**Bereiche:** Fest, Flüssig, Gasförmig\n\n**Linien:** Grenzen zwischen den Phasen = **Phasengleichgewichte**\n\n## Die drei Grenzlinien\n\n| Linie                 | Trennt...      | Heißt auch...     |\n| --------------------- | -------------- | ----------------- |\n| **Schmelzkurve**      | Fest ↔ Flüssig | Schmelzdruckkurve |\n| **Dampfdruckkurve**   | Flüssig ↔ Gas  | Siedekurve        |\n| **Sublimationskurve** | Fest ↔ Gas     | −                 |\n\n## Was bedeuten die Linien?\n\nAuf einer Linie existieren **beide Phasen gleichzeitig** im Gleichgewicht.\n\n**Beispiel Dampfdruckkurve:**\n- Jeder Punkt auf dieser Linie zeigt eine Kombination aus T und P, bei der Flüssigkeit und Gas im Gleichgewicht sind\n- Der normale Siedepunkt ist der Punkt bei P = 1 atm\n\n## Übergänge im Diagramm\n\nWenn du dich im Diagramm bewegst (T oder P änderst) und eine Linie überquerst, findet ein **Phasenübergang** statt.\n\n**Beispiel:**\n- Start: Festes Wasser bei −10°C, 1 atm\n- Erwärmen bei konstantem Druck → Linie bei 0°C überqueren → Schmelzen\n- Weiter erwärmen → Linie bei 100°C überqueren → Verdampfen\n\n> 💡 **Merke:** Ein Phasendiagramm ist wie eine \"Landkarte\" der Aggregatzustände – es zeigt dir, in welchem Zustand ein Stoff unter bestimmten Bedingungen vorliegt."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "32-34"
+        }
+      ],
+      "content": "# Tripelpunkt und Kritischer Punkt\n\nZwei besondere Punkte im Phasendiagramm verdienen besondere Aufmerksamkeit.\n\n## Der Tripelpunkt\n\nDer **Tripelpunkt** ist der einzige Punkt, an dem alle drei Phasen (fest, flüssig, gasförmig) **gleichzeitig im Gleichgewicht** existieren.\n\n### Werte für Wasser\n\n- **Temperatur:** 0.01°C (273.16 K)\n- **Druck:** 611 Pa = 0.006 atm = 4.58 mmHg\n\n### Bedeutung\n\n- Unterhalb des Tripelpunktdrucks kann **keine flüssige Phase** existieren\n- Dort geht fest direkt in gasförmig über (Sublimation)\n- Der Tripelpunkt ist eine Naturkonstante und wird zur Definition der Kelvin-Skala verwendet\n\n## Der Kritische Punkt\n\nDer **kritische Punkt** markiert das Ende der Dampfdruckkurve (Flüssig-Gas-Grenze).\n\n### Werte für Wasser\n\n- **Kritische Temperatur ($T_c$):** 374°C\n- **Kritischer Druck ($P_c$):** 218 atm (22.1 MPa)\n\n### Was passiert oberhalb des kritischen Punktes?\n\nOberhalb von $T_c$ und $P_c$:\n- Flüssigkeit und Gas sind **nicht mehr unterscheidbar**\n- Es entsteht eine **überkritische Flüssigkeit** (supercritical fluid)\n- Hat Eigenschaften von beiden: Dichte einer Flüssigkeit, Viskosität eines Gases\n\n### Anwendung: Überkritisches CO₂\n\n- Wird zur Entkoffeinierung von Kaffee verwendet\n- Löst Koffein wie eine Flüssigkeit\n- Verflüchtigt sich rückstandsfrei wie ein Gas\n\n> 💡 **Merke:** Am Tripelpunkt koexistieren alle drei Phasen. Oberhalb des kritischen Punktes verschwimmt die Grenze zwischen Flüssigkeit und Gas."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k11",
+          "pages": "34-36"
+        }
+      ],
+      "content": "# Vergleich: Wasser vs. Kohlendioxid\n\nDie Phasendiagramme von Wasser und CO₂ zeigen interessante Unterschiede.\n\n## Wasser: Die Anomalie\n\n**Besonderheit:** Die Schmelzkurve hat eine **negative Steigung** (lehnt nach links).\n\n| Eigenschaft             | Wasser       | \"Normale\" Stoffe |\n| ----------------------- | ------------ | ---------------- |\n| Dichte fest vs. flüssig | Eis < Wasser | Fest > Flüssig   |\n| Steigung Schmelzkurve   | Negativ      | Positiv          |\n\n### Effekt (Le Chatelier)\n\nErhöht man den Druck auf Eis bei knapp 0°C:\n- Das System weicht aus → in die Phase mit **höherer Dichte**\n- Bei Wasser ist das die **flüssige** Phase\n- **Eis schmilzt unter Druck!**\n\n**Anwendung:** Schlittschuhlaufen – unter der Kufe entsteht kurzzeitig ein dünner Wasserfilm\n\n## Kohlendioxid: Der Normalfall\n\n**Schmelzkurve:** Positive Steigung (Normalfall – Feststoff ist dichter)\n\n### Tripelpunkt bei hohem Druck\n\n| Stoff | Tripelpunkt-Druck |\n| ----- | ----------------- |\n| H₂O   | 0.006 atm         |\n| CO₂   | **5.19 atm**      |\n\n**Konsequenz:** Bei Normaldruck (1 atm) liegt man *unter* dem Tripelpunktdruck von CO₂!\n\n### Trockeneis sublimiert\n\nFestes CO₂ (\"Trockeneis\") bei −78°C und 1 atm:\n- Es gibt **keine flüssige Phase** bei diesem Druck\n- CO₂ **sublimiert** direkt von fest zu gasförmig\n- Daher der Name \"Trocken\"-Eis: Es wird nicht nass!\n\n### Flüssiges CO₂ im Feuerlöscher\n\nIn einem CO₂-Feuerlöscher herrscht hoher Druck (~50-70 bar). Dieser Druck liegt über dem Tripelpunktdruck, sodass flüssiges CO₂ existieren kann.\n\n> 💡 **Merke:** Wasser ist anomal (Eis schwimmt, schmilzt unter Druck). CO₂ sublimiert bei Normaldruck direkt, weil sein Tripelpunkt über 1 atm liegt."
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Sie haben festes CO₂ (Trockeneis) bei −80°C und 1 atm. Sie erwärmen es auf Raumtemperatur. Was passiert?",
+      "options": [
+        "Es schmilzt und verdampft dann",
+        "Es sublimiert direkt zu Gas",
+        "Es bleibt fest"
+      ],
+      "correctAnswer": "Es sublimiert direkt zu Gas",
+      "explanation": "Der Tripelpunkt von CO₂ liegt bei 5.19 atm. Da 1 atm unterhalb dieses Drucks liegt, existiert bei Normaldruck keine stabile flüssige Phase. Das feste CO₂ geht daher direkt in die Gasphase über (Sublimation).",
+      "content": ""
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was bedeutet der kritische Punkt im Phasendiagramm?",
+      "options": [
+        "Der Punkt, an dem Eis zu schmelzen beginnt",
+        "Der Punkt, an dem alle drei Phasen koexistieren",
+        "Der Punkt, ab dem Gas und Flüssigkeit nicht mehr unterscheidbar sind"
+      ],
+      "correctAnswer": "Der Punkt, ab dem Gas und Flüssigkeit nicht mehr unterscheidbar sind",
+      "explanation": "Oberhalb der kritischen Temperatur und des kritischen Drucks gibt es keine Phasengrenze mehr zwischen Flüssigkeit und Gas. Es entsteht eine überkritische Flüssigkeit mit Eigenschaften beider Phasen. Der Punkt mit allen drei Phasen ist der Tripelpunkt.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Begriffe des Phasendiagramms ihrer Bedeutung zu.",
+      "pairs": [
+        {
+          "left": "Tripelpunkt",
+          "right": "Alle drei Phasen koexistieren im Gleichgewicht"
+        },
+        {
+          "left": "Kritischer Punkt",
+          "right": "Flüssigkeit und Gas werden ununterscheidbar"
+        },
+        {
+          "left": "Schmelzkurve",
+          "right": "Grenzlinie zwischen fest und flüssig"
+        },
+        {
+          "left": "Dampfdruckkurve",
+          "right": "Grenzlinie zwischen flüssig und gasförmig"
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=kYJjYy_O-jQ",
+      "content": "# Phasendiagramm des Wassers\n\nIn diesem Video von **Studyflix** wird das Phasendiagramm von Wasser ausführlich erklärt: Tripelpunkt, kritischer Punkt und die Besonderheit der negativen Steigung der Schmelzkurve."
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Phasenübergänge im Alltag",
+      "scenario": "Du beobachtest verschiedene Alltagsphänomene und sollst sie mit deinem Wissen über Phasenübergänge und intermolekulare Kräfte erklären.",
+      "tasks": [
+        {
+          "description": "Warum beschlägt ein Spiegel im Bad nach dem Duschen?",
+          "solution": "Beim Duschen entsteht warmer Wasserdampf. Der Spiegel ist kälter als die umgebende Luft. An der kalten Oberfläche kondensiert der Wasserdampf zu kleinen Tröpfchen. Kondensation ist exotherm – dabei wird Energie an den Spiegel abgegeben."
+        },
+        {
+          "description": "Warum fühlt sich nasse Haut kalt an, wenn Wind weht?",
+          "solution": "Verdunstung ist endotherm – das Wasser auf der Haut nimmt Energie aus der Umgebung (der Haut) auf, um in die Gasphase überzugehen. Wind beschleunigt die Verdunstung, indem er die feuchte Luftschicht über der Haut wegträgt. Mehr Verdunstung = mehr Energieentzug = kälteres Gefühl."
+        },
+        {
+          "description": "Warum \"dampft\" Trockeneis, ohne dabei nass zu werden?",
+          "solution": "Trockeneis ist festes CO₂. Bei Normaldruck (1 atm) liegt der Tripelpunkt von CO₂ bei 5.19 atm – also oberhalb des aktuellen Drucks. Daher kann keine flüssige Phase existieren. Das CO₂ sublimiert direkt von fest zu gasförmig, ohne den Umweg über die Flüssigkeit. Deshalb bleibt alles \"trocken\"."
+        }
+      ],
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Wie viel Energie (in kJ) wird benötigt, um 100 g Eis von 0°C vollständig in Dampf von 100°C umzuwandeln?",
+      "hint": "Drei Schritte berechnen: 1) Schmelzen des Eises, 2) Erwärmen des Wassers, 3) Verdampfen des Wassers. Gegeben: ΔH_schmelz = 334 J/g, c_Wasser = 4.18 J/(g·K), ΔH_vap = 2260 J/g",
+      "correctAnswer": 301.2,
+      "unit": "kJ",
+      "tolerance": 2,
+      "solution": "**Schritt 1: Schmelzen (bei 0°C)**\nq₁ = m × ΔH_schmelz = 100 g × 334 J/g = 33.400 J\n\n**Schritt 2: Erwärmen (0°C → 100°C)**\nq₂ = m × c × ΔT = 100 g × 4.18 J/(g·K) × 100 K = 41.800 J\n\n**Schritt 3: Verdampfen (bei 100°C)**\nq₃ = m × ΔH_vap = 100 g × 2.260 J/g = 226.000 J\n\n**Gesamt:**\nQ = q₁ + q₂ + q₃ = 33.400 + 41.800 + 226.000 = 301.200 J = **301.2 kJ**\n",
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "question": "Bist du bereit für den Vorlesungstest?",
+      "checkpoints": [
+        "Ich kann die vier Arten intermolekularer Kräfte benennen und nach Stärke ordnen",
+        "Ich verstehe, warum Wasser anomale Eigenschaften hat (hoher Siedepunkt, Dichteanomalie)",
+        "Ich kann erklären, wie Dispersionskräfte entstehen und wovon ihre Stärke abhängt",
+        "Ich weiß, was Dampfdruck bedeutet und wie er von Temperatur und IM-Kräften abhängt",
+        "Ich kann ein Phasendiagramm lesen und Tripel- sowie kritischen Punkt erklären",
+        "Ich verstehe den Unterschied zwischen den Phasendiagrammen von Wasser und CO₂"
+      ],
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Hydratationsenthalpie sind korrekt? (Mehrfachauswahl)",
+      "options": [
+        "Die Hydratationsenthalpie von Li⁺ ist betragsmäßig größer als die von K⁺",
+        "Ionen mit höherer Ladung haben betragsmäßig kleinere Hydratationsenthalpien",
+        "Kleinere Ionen haben stärkere Ion-Dipol-Wechselwirkungen mit Wasser",
+        "Die Hydratationsenthalpie ist immer endotherm"
+      ],
+      "correctAnswers": [
+        "Die Hydratationsenthalpie von Li⁺ ist betragsmäßig größer als die von K⁺",
+        "Kleinere Ionen haben stärkere Ion-Dipol-Wechselwirkungen mit Wasser"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Eigenschaften des Wassers sind auf Wasserstoffbrückenbindungen zurückzuführen? (Mehrfachauswahl)",
+      "options": [
+        "Der hohe Siedepunkt im Vergleich zu H₂S",
+        "Die Tatsache, dass Eis auf Wasser schwimmt",
+        "Die blaue Farbe von Wasser in großen Mengen",
+        "Die hohe spezifische Wärmekapazität"
+      ],
+      "correctAnswers": [
+        "Der hohe Siedepunkt im Vergleich zu H₂S",
+        "Die Tatsache, dass Eis auf Wasser schwimmt",
+        "Die hohe spezifische Wärmekapazität"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Faktoren erhöhen die Stärke der Dispersionskräfte? (Mehrfachauswahl)",
+      "options": [
+        "Größere Molmasse",
+        "Größere Elektronenwolke",
+        "Höhere Polarität des Moleküls",
+        "Größere Oberfläche des Moleküls"
+      ],
+      "correctAnswers": [
+        "Größere Molmasse",
+        "Größere Elektronenwolke",
+        "Größere Oberfläche des Moleküls"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Dampfdruck sind korrekt? (Mehrfachauswahl)",
+      "options": [
+        "Substanzen mit starken IM-Kräften haben einen niedrigen Dampfdruck",
+        "Der Dampfdruck steigt linear mit der Temperatur",
+        "Am Siedepunkt entspricht der Dampfdruck dem Außendruck",
+        "Der Gleichgewichts-Dampfdruck hängt von der Menge der Flüssigkeit ab"
+      ],
+      "correctAnswers": [
+        "Substanzen mit starken IM-Kräften haben einen niedrigen Dampfdruck",
+        "Am Siedepunkt entspricht der Dampfdruck dem Außendruck"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Tripelpunkt sind korrekt? (Mehrfachauswahl)",
+      "options": [
+        "Alle drei Aggregatzustände existieren gleichzeitig im Gleichgewicht",
+        "Der Tripelpunkt von Wasser liegt bei etwa 0°C und 1 atm",
+        "Unterhalb des Tripelpunktdrucks kann keine flüssige Phase existieren",
+        "Der Tripelpunkt ist stoffspezifisch und eine wichtige Naturkonstante"
+      ],
+      "correctAnswers": [
+        "Alle drei Aggregatzustände existieren gleichzeitig im Gleichgewicht",
+        "Unterhalb des Tripelpunktdrucks kann keine flüssige Phase existieren",
+        "Der Tripelpunkt ist stoffspezifisch und eine wichtige Naturkonstante"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Unterschiede bestehen zwischen den Phasendiagrammen von Wasser und CO₂? (Mehrfachauswahl)",
+      "options": [
+        "Die Schmelzkurve von Wasser hat eine negative Steigung",
+        "CO₂ kann bei Normaldruck (1 atm) nicht in flüssiger Form existieren",
+        "Der Tripelpunkt von CO₂ liegt über 1 atm",
+        "Wasser sublimiert bei Normaldruck, CO₂ nicht"
+      ],
+      "correctAnswers": [
+        "Die Schmelzkurve von Wasser hat eine negative Steigung",
+        "CO₂ kann bei Normaldruck (1 atm) nicht in flüssiger Form existieren",
+        "Der Tripelpunkt von CO₂ liegt über 1 atm"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Schmelzpunkt (Tm) von DNA sind korrekt? (Mehrfachauswahl)",
+      "options": [
+        "DNA mit hohem G-C-Anteil hat einen höheren Schmelzpunkt",
+        "Die DNA-Stränge werden durch Wasserstoffbrücken zusammengehalten",
+        "A-T-Basenpaare bilden 3 Wasserstoffbrücken",
+        "Höhere Temperaturen destabilisieren die Doppelhelix"
+      ],
+      "correctAnswers": [
+        "DNA mit hohem G-C-Anteil hat einen höheren Schmelzpunkt",
+        "Die DNA-Stränge werden durch Wasserstoffbrücken zusammengehalten",
+        "Höhere Temperaturen destabilisieren die Doppelhelix"
+      ],
+      "explanation": ""
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu Struktur-Eigenschafts-Beziehungen sind korrekt? (Mehrfachauswahl)",
+      "options": [
+        "SiO₂ (Quarz) hat einen höheren Schmelzpunkt als NaCl",
+        "CH₄ hat den niedrigsten Schmelzpunkt der Reihe CH₄, H₂O, NaCl, SiO₂",
+        "Beim Schmelzen von NaCl werden Ionenbindungen überwunden",
+        "Beim Schmelzen von H₂O werden kovalente O-H-Bindungen gebrochen"
+      ],
+      "correctAnswers": [
+        "SiO₂ (Quarz) hat einen höheren Schmelzpunkt als NaCl",
+        "CH₄ hat den niedrigsten Schmelzpunkt der Reihe CH₄, H₂O, NaCl, SiO₂",
+        "Beim Schmelzen von NaCl werden Ionenbindungen überwunden"
+      ],
+      "explanation": ""
+    }
+  ],
+  "generatedAt": "2026-01-20T16:39:28.543Z"
+}
