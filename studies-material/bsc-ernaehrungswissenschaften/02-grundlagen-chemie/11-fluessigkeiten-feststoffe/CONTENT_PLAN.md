@@ -91,6 +91,7 @@ sources:
 ### Abschnitt 1: Einführung und Intermolekulare Kräfte
 
 #### 01-einfuehrung-im-kraefte.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Unterschied intra- vs. intermolekulare Kräfte
@@ -98,6 +99,7 @@ sources:
 - Bedeutung für physikalische Eigenschaften
 
 #### 02-ion-dipol-kraefte.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Mechanismus Ion-Dipol (Wasser als Dipol)
@@ -106,6 +108,7 @@ sources:
 - Formel: $M^{n+} + x H_2O \rightarrow [M(H_2O)_x]^{n+}$
 
 #### 03-dipol-dipol-kraefte.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Permanente Dipole
@@ -113,6 +116,7 @@ sources:
 - Tabelle mit Beispielen
 
 #### 04-check-ion-dipol.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Welche Kraft ist hauptsächlich dafür verantwortlich, dass sich Kochsalz (NaCl) in Wasser löst?
 **Optionen:** Dispersionskräfte | Dipol-Dipol-Kräfte | Ion-Dipol-Kräfte | Kovalente Bindungen
@@ -120,6 +124,7 @@ sources:
 **Erklärung:** Ionen des Salzes interagieren mit den permanenten Dipolen der Wassermoleküle.
 
 #### 05-check-dipol-siedepunkt.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Warum hat ICl einen höheren Siedepunkt als Br₂, obwohl beide fast die gleiche Masse haben?
 **Optionen:** ICl ist schwerer | ICl besitzt ein permanentes Dipolmoment, Br₂ nicht | Br₂ hat stärkere kovalente Bindungen | ICl bildet Wasserstoffbrücken
@@ -127,6 +132,7 @@ sources:
 **Erklärung:** ICl ist ein polares Molekül (EN-Differenz zwischen I und Cl), was zu Dipol-Dipol-Kräften führt.
 
 #### 06-matching-im-kraefte.md
+
 **Typ:** `matching`
 **Frage:** Ordne die intermolekularen Kräfte ihren Eigenschaften zu.
 **Paare:**
@@ -135,6 +141,7 @@ sources:
 - Dispersionskräfte → Wirkt in allen Molekülen durch induzierte Dipole
 
 #### 07-video-intermolekulare-kraefte.md
+
 **Typ:** `youtube-video`
 **URL:** https://www.youtube.com/watch?v=FhBKqKxJ3iM
 **Kanal:** musstewissen Chemie
@@ -145,6 +152,7 @@ sources:
 ### Abschnitt 2: Wasserstoffbrückenbindungen
 
 #### 08-wasserstoffbruecken-definition.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Definition H-Brücken als spezielle Dipol-Dipol-Kraft
@@ -152,6 +160,7 @@ sources:
 - Notation: X-H···:Y
 
 #### 09-wasserstoffbruecken-wasser.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Warum besonders stark in Wasser (O-H polar, 2 freie Elektronenpaare)
@@ -159,6 +168,7 @@ sources:
 - Dichteanomalie (Eis schwimmt) - tetraedrische Struktur
 
 #### 10-wasserstoffbruecken-biologie.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - DNA-Doppelhelix
@@ -166,6 +176,7 @@ sources:
 - Clathrate (Methanhydrat)
 
 #### 11-check-h-bruecken-atome.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Welche Atome müssen an Wasserstoff gebunden sein, damit sich H-Brücken ausbilden können?
 **Optionen:** C, H, O | N, O, F | Cl, Br, I | Na, K, Li
@@ -173,6 +184,7 @@ sources:
 **Erklärung:** Nur Stickstoff, Sauerstoff und Fluor sind elektronegativ genug.
 
 #### 12-check-eis-dichte.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Warum schwimmt Eis auf flüssigem Wasser?
 **Optionen:** Weil Eis Luftblasen enthält | Weil die Gitterstruktur des Eises mehr Hohlraum beansprucht als die ungeordnete Flüssigkeit | Weil chemische Bindungen im Eis schwerer sind
@@ -180,6 +192,7 @@ sources:
 **Erklärung:** Die H-Brücken erzwingen im Eis eine offene Struktur mit geringerer Dichte.
 
 #### 13-check-dna-basenpaare.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Welches Basenpaar in der DNA wird stärker zusammengehalten?
 **Optionen:** Adenin-Thymin | Guanin-Cytosin | Beide gleich stark
@@ -187,6 +200,7 @@ sources:
 **Erklärung:** G-C Paare bilden 3 Wasserstoffbrücken, A-T nur 2.
 
 #### 14-ordering-h-bruecken-staerke.md
+
 **Typ:** `ordering`
 **Frage:** Ordne die folgenden Hydride nach steigendem Siedepunkt (schwächste IM-Kräfte zuerst).
 **Items (korrekte Reihenfolge):**
@@ -195,6 +209,7 @@ sources:
 3. H₂O (starke H-Brücken)
 
 #### 15-video-wasserstoffbruecken.md
+
 **Typ:** `youtube-video`
 **URL:** https://www.youtube.com/watch?v=oXMtDXVndz4
 **Kanal:** Lehrerschmidt
@@ -205,6 +220,7 @@ sources:
 ### Abschnitt 3: Dispersionskräfte
 
 #### 16-dispersionskraefte-mechanismus.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Problem: Wie ziehen sich unpolare Moleküle an?
@@ -212,6 +228,7 @@ sources:
 - Beispiel: I₂ in verschiedenen Lösungsmitteln
 
 #### 17-polarisierbarkeit-trends.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Definition Polarisierbarkeit
@@ -219,6 +236,7 @@ sources:
 - Beispiel Alkane: CH₄ bis Butan mit Siedepunkten
 
 #### 18-uebersicht-im-kraefte.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Zusammenfassende Tabelle aller IM-Kräfte nach Stärke:
@@ -228,6 +246,7 @@ sources:
   4. Dispersion: 0.05-40 kJ/mol
 
 #### 19-check-iod-fluor.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Warum ist Iod (I₂) bei Raumtemperatur fest, während Fluor (F₂) gasförmig ist?
 **Optionen:** Iod hat stärkere Dipol-Dipol-Kräfte | Iod hat eine größere Masse und Elektronenwolke, was zu stärkeren Dispersionskräften führt | Fluor bildet H-Brücken
@@ -235,6 +254,7 @@ sources:
 **Erklärung:** Die Polarisierbarkeit nimmt mit der Größe der Elektronenwolke zu.
 
 #### 20-check-nur-dispersion.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Welche der folgenden Substanzen hat nur Dispersionskräfte als intermolekulare Anziehung?
 **Optionen:** H₂O | HCl | CH₄ | NaCl
@@ -242,6 +262,7 @@ sources:
 **Erklärung:** Methan ist unpolar und bildet keine H-Brücken.
 
 #### 21-ordering-siedepunkte-alkane.md
+
 **Typ:** `ordering`
 **Frage:** Ordne die Alkane nach steigendem Siedepunkt.
 **Items (korrekte Reihenfolge):**
@@ -251,6 +272,7 @@ sources:
 4. Butan (C₄H₁₀)
 
 #### 22-video-van-der-waals.md
+
 **Typ:** `youtube-video`
 **URL:** https://www.youtube.com/watch?v=1w06rA8WdVM
 **Kanal:** musstewissen Chemie
@@ -261,6 +283,7 @@ sources:
 ### Abschnitt 4: Eigenschaften von Flüssigkeiten
 
 #### 23-verdampfung-kondensation.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Flüssigkeit: Moleküle eng, kaum komprimierbar
@@ -269,6 +292,7 @@ sources:
 - Boltzmann-Verteilung der Energie
 
 #### 24-dampfdruck-gleichgewicht.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Gleichgewichts-Dampfdruck
@@ -277,6 +301,7 @@ sources:
 - Schwache IM-Kräfte → hoher Dampfdruck (flüchtig)
 
 #### 25-siedepunkt-druck.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Definition: Dampfdruck = Außendruck → Sieden
@@ -284,6 +309,7 @@ sources:
 - Druckabhängigkeit: Berg → niedriger SP
 
 #### 26-oberflaechenspannung.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Oberflächenspannung: Moleküle an Oberfläche nur nach innen gezogen
@@ -292,6 +318,7 @@ sources:
 - Konkaver Meniskus (Wasser) vs. konvexer (Quecksilber)
 
 #### 27-check-siedepunkt-berg.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Was passiert mit dem Siedepunkt von Wasser, wenn man es auf dem Mount Everest kocht?
 **Optionen:** Er bleibt bei 100 °C | Er steigt über 100 °C | Er sinkt unter 100 °C
@@ -299,6 +326,7 @@ sources:
 **Erklärung:** Der Luftdruck ist dort geringer, daher wird der Dampfdruck schon bei niedrigerer Temperatur erreicht.
 
 #### 28-check-exotherm.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Welcher Prozess ist exotherm (Energie wird frei)?
 **Optionen:** Verdampfen | Schmelzen | Kondensieren | Sublimieren
@@ -306,6 +334,7 @@ sources:
 **Erklärung:** Beim Bilden von Bindungen (Gas zu Flüssig) wird Energie frei.
 
 #### 29-fill-dampfdruck.md
+
 **Typ:** `fill-in-the-blank`
 **Frage:** Ergänze die Aussagen zum Dampfdruck.
 **Text:** Substanzen mit starken intermolekularen Kräften haben einen {1} Dampfdruck. Der Dampfdruck steigt {2} mit der Temperatur.
@@ -314,6 +343,7 @@ sources:
 2. exponentiell (Alternativen: stark)
 
 #### 30-video-dampfdruckkurve.md
+
 **Typ:** `youtube-video`
 **URL:** https://www.youtube.com/watch?v=FjIuCq6Z38Q
 **Kanal:** Die Merkhilfe
@@ -324,6 +354,7 @@ sources:
 ### Abschnitt 5: Phasenübergänge und Phasendiagramme
 
 #### 31-phasenuebergaenge-enthalpie.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Enthalpien: ΔH_schmelz, ΔH_vap, ΔH_sub
@@ -331,6 +362,7 @@ sources:
 - Zusammenhang: ΔH_sub = ΔH_schmelz + ΔH_vap
 
 #### 32-phasendiagramm-erklaerung.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Achsen: Druck (Y) vs. Temperatur (X)
@@ -338,6 +370,7 @@ sources:
 - Linien = Phasengleichgewichte
 
 #### 33-tripelpunkt-kritischer-punkt.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Tripelpunkt: Alle 3 Phasen im Gleichgewicht (Wasser: 0.0098°C, 4.58 mmHg)
@@ -345,6 +378,7 @@ sources:
 - Überkritische Flüssigkeit
 
 #### 34-vergleich-wasser-co2.md
+
 **Typ:** `learning-content`
 **Inhalt:**
 - Wasser: Negative Steigung der Schmelzkurve (Eis weniger dicht)
@@ -353,6 +387,7 @@ sources:
 - Trockeneis sublimiert
 
 #### 35-check-co2-sublimation.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Sie haben festes CO₂ bei -80°C und 1 atm. Sie erwärmen es auf Raumtemperatur. Was passiert?
 **Optionen:** Es schmilzt und verdampft dann | Es sublimiert direkt zu Gas | Nichts passiert
@@ -360,6 +395,7 @@ sources:
 **Erklärung:** Da 1 atm unterhalb des Tripelpunktdrucks von 5.19 atm liegt, ist die flüssige Phase nicht stabil.
 
 #### 36-check-kritischer-punkt.md
+
 **Typ:** `self-assessment-mc`
 **Frage:** Was bedeutet der kritische Punkt?
 **Optionen:** Der Punkt, an dem Eis schmilzt | Der Punkt, an dem drei Phasen koexistieren | Der Punkt, ab dem Gas und Flüssigkeit nicht mehr unterscheidbar sind
@@ -367,6 +403,7 @@ sources:
 **Erklärung:** Oberhalb von T_c kann Gas durch Druck nicht mehr verflüssigt werden.
 
 #### 37-matching-phasendiagramm.md
+
 **Typ:** `matching`
 **Frage:** Ordne die Begriffe des Phasendiagramms ihrer Bedeutung zu.
 **Paare:**
@@ -376,6 +413,7 @@ sources:
 - Dampfdruckkurve → Grenzlinie zwischen flüssig und gasförmig
 
 #### 38-video-phasendiagramm.md
+
 **Typ:** `youtube-video`
 **URL:** https://www.youtube.com/watch?v=kYJjYy_O-jQ
 **Kanal:** Studyflix
@@ -386,6 +424,7 @@ sources:
 ### Praxis und Abschluss
 
 #### 39-practice-phasenuebergaenge.md
+
 **Typ:** `practice-exercise`
 **Titel:** Phasenübergänge im Alltag
 **Szenario:** Du beobachtest verschiedene Alltagsphänomene und sollst sie mit deinem Wissen über Phasenübergänge erklären.
@@ -398,19 +437,21 @@ sources:
    → Lösung: Bei Normaldruck sublimiert CO₂ direkt (Tripelpunkt > 1 atm).
 
 #### 40-calculation-energie-eis-dampf.md
+
 **Typ:** `calculation`
 **Frage:** Wie viel Energie (in kJ) wird benötigt, um 100 g Eis von 0°C in Dampf von 100°C umzuwandeln? Gegeben: ΔH_schmelz = 334 J/g, ΔH_vap = 2260 J/g, c_Wasser = 4.18 J/(g·K).
 **Hinweis:** Drei Schritte: Schmelzen + Erwärmen + Verdampfen
 **correctAnswer:** 301.8
 **unit:** kJ
 **tolerance:** 1
-**Lösung:** 
+**Lösung:**
 - Schmelzen: 100 g × 334 J/g = 33400 J
 - Erwärmen: 100 g × 4.18 J/(g·K) × 100 K = 41800 J
 - Verdampfen: 100 g × 2260 J/g = 226000 J
 - Gesamt: 301200 J = 301.2 kJ
 
 #### 41-selbsttest-bereitschaft.md
+
 **Typ:** `self-assessment`
 **Frage:** Bist du bereit für den Vorlesungstest?
 **Checkpoints:**
@@ -426,6 +467,7 @@ sources:
 ## Detailplan questions/
 
 ### 01-hydratation-vergleich.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Aussagen zur Hydratationsenthalpie sind korrekt? (Mehrfachauswahl)
 **Optionen:**
@@ -438,6 +480,7 @@ sources:
 - Kleinere Ionen haben stärkere Ion-Dipol-Wechselwirkungen mit Wasser
 
 ### 02-h-bruecken-anomalien.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Eigenschaften des Wassers sind auf Wasserstoffbrückenbindungen zurückzuführen? (Mehrfachauswahl)
 **Optionen:**
@@ -451,6 +494,7 @@ sources:
 - Die hohe spezifische Wärmekapazität
 
 ### 03-dispersion-siedepunkte.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Faktoren erhöhen die Stärke der Dispersionskräfte? (Mehrfachauswahl)
 **Optionen:**
@@ -464,6 +508,7 @@ sources:
 - Größere Oberfläche des Moleküls
 
 ### 04-dampfdruck-im-kraefte.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Aussagen zum Dampfdruck sind korrekt? (Mehrfachauswahl)
 **Optionen:**
@@ -476,6 +521,7 @@ sources:
 - Am Siedepunkt entspricht der Dampfdruck dem Außendruck
 
 ### 05-phasendiagramm-interpretation.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Aussagen zum Tripelpunkt sind korrekt? (Mehrfachauswahl)
 **Optionen:**
@@ -489,6 +535,7 @@ sources:
 - Der Tripelpunkt ist stoffspezifisch
 
 ### 06-co2-wasser-vergleich.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Unterschiede bestehen zwischen den Phasendiagrammen von Wasser und CO₂? (Mehrfachauswahl)
 **Optionen:**
@@ -502,6 +549,7 @@ sources:
 - Der Tripelpunkt von CO₂ liegt über 1 atm
 
 ### 07-dna-schmelzpunkt.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Welche Aussagen zum Schmelzpunkt (Tm) von DNA sind korrekt? (Mehrfachauswahl)
 **Optionen:**
@@ -515,6 +563,7 @@ sources:
 - Höhere Temperaturen destabilisieren die Doppelhelix
 
 ### 08-struktur-eigenschaft.md
+
 **Typ:** `multiple-choice-multiple`
 **Frage:** Ordne die Substanzen korrekt: Welche haben den höchsten Schmelzpunkt? (Mehrfachauswahl der korrekten Aussagen)
 **Optionen:**
@@ -532,6 +581,7 @@ sources:
 ## Detailplan module-exam/ (2 Fragen aus dieser Vorlesung)
 
 ### exam-11-01-heizkurve.md
+
 **Typ:** `multiple-choice-multiple`
 **Schwierigkeit:** Hoch (Berechnung + Konzept)
 **Frage:** Sie erwärmen 50 g Eis von -10°C auf Dampf von 120°C. Welche Aussagen sind korrekt? (c_Eis=2.09, c_Wasser=4.18, c_Dampf=1.84 J/(g·K); ΔH_schmelz=334 J/g, ΔH_vap=2260 J/g)
@@ -546,6 +596,7 @@ sources:
 - Während des Schmelzens bleibt die Temperatur konstant
 
 ### exam-11-02-clausius-clapeyron.md
+
 **Typ:** `multiple-choice-multiple`
 **Schwierigkeit:** Hoch (Qualitative Anwendung)
 **Frage:** Im ln(P) vs. 1/T-Diagramm werden Ethanol (ΔH_vap=38 kJ/mol) und Wasser (ΔH_vap=41 kJ/mol) verglichen. Welche Aussagen sind korrekt?
