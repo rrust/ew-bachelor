@@ -306,6 +306,34 @@ dass die Antwort diese Formel enthält:
 
 ## Qualitätsprüfung
 
+### Workflow: Fragen-Qualität sicherstellen
+
+```bash
+# 1. Qualitätsprüfung ausführen
+node scripts/analyze-training-quality.js
+
+# 2. Probleme nach Priorität beheben:
+#    🔴 KRITISCH → MUSS behoben werden (Negativ-Fragen, Antwort in Frage)
+#    🟠 HOCH     → SOLLTE behoben werden (Längen, Spezifität)
+#    🟡 MITTEL   → KANN behoben werden (absolute Begriffe)
+
+# 3. Positions-Verteilung automatisch korrigieren (falls nötig)
+node scripts/fix-answer-positions.js
+
+# 4. Nach Korrekturen erneut prüfen
+node scripts/analyze-training-quality.js
+```
+
+### Qualitätsziele
+
+| Kategorie | Ziel | Akzeptabel |
+|-----------|------|------------|
+| Kritische Probleme | 0 | 0 |
+| Absolute Begriffe | 0 | < 10 |
+| Spezifitäts-Ungleichgewicht | 0 | < 5 |
+| Längen-Ungleichgewicht | 0 | < 100 |
+| Positions-Verteilung | je 25% | 20-30% pro Position |
+
 ### Scripts ausführen
 
 ```bash
@@ -365,11 +393,67 @@ Das Script zeigt auch:
 3. **Echte falsche Optionen** (plausibel aber falsch)
 4. **Konsistente Notation** (H₂O oder H2O, nicht mischen)
 5. **Schwierigkeit dem Level anpassen**
+6. **Alle Optionen ähnlich lang** (max. 50% Unterschied)
+7. **Zahlen/Details in ALLEN Optionen** (nicht nur in korrekten)
 
 ### DON'T ❌
 
-1. Keine Meta-Optionen
+1. Keine Meta-Optionen ("Alle genannten", "Keine der genannten")
 2. Keine mehrdeutigen Formulierungen
 3. Keine Trick-Fragen
 4. Korrekte Antwort NICHT systematisch die längste
 5. Keine doppelten Fragen zwischen Kapiteln
+6. Keine absoluten Begriffe in falschen Antworten ("immer", "niemals", "alle", "keine")
+7. Keine Negativ-Fragen ("Was ist NICHT korrekt?")
+
+## Häufige Probleme beheben
+
+### Problem: Absolute Begriffe
+
+```markdown
+# VORHER (Problem):
+- [ ] A. Alle Reaktionen sind exotherm     # "Alle" = absoluter Begriff!
+- [ ] B. Die Reaktion ist endotherm ✓
+
+# NACHHER (Korrigiert):
+- [ ] A. Die meisten Reaktionen sind exotherm
+- [ ] B. Die Reaktion ist endotherm ✓
+```
+
+**Ersetze:**
+- "alle" → "die meisten", "viele"
+- "immer" → "typischerweise", "in der Regel"
+- "niemals" → "selten", "kaum"
+- "keine" → "wenige", "kaum"
+
+### Problem: Längen-Ungleichgewicht
+
+```markdown
+# VORHER (Problem - korrekte Antwort 3x länger):
+- [ ] A. Wärme
+- [ ] B. Licht  
+- [ ] C. Schall
+- [ ] D. Die vollständige Umwandlung chemischer Energie in Wärme ✓
+
+# NACHHER (Korrigiert - alle ähnlich lang):
+- [ ] A. Freisetzung von Wärmeenergie
+- [ ] B. Emission von sichtbarem Licht
+- [ ] C. Abstrahlung von Schallwellen
+- [ ] D. Umwandlung in thermische Energie ✓
+```
+
+### Problem: Spezifitäts-Ungleichgewicht
+
+```markdown
+# VORHER (Problem - nur korrekte Antwort hat Zahlen):
+- [ ] A. Das Molekül ist polar
+- [ ] B. Es hat freie Elektronenpaare
+- [ ] C. Die Bindungsordnung beträgt 2,5 ✓
+- [ ] D. Es ist stabil
+
+# NACHHER (Korrigiert - alle haben Zahlen):
+- [ ] A. Die Bindungsordnung beträgt 1,5
+- [ ] B. Die Bindungsordnung beträgt 2,0
+- [ ] C. Die Bindungsordnung beträgt 2,5 ✓
+- [ ] D. Die Bindungsordnung beträgt 3,0
+```
