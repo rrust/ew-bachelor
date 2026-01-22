@@ -5,15 +5,15 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 5
 question: 'Ein Element X hat folgende Eigenschaften: Die dritte Ionisierungsenergie ist etwa 10-mal größer als die zweite. Welche Schlussfolgerungen sind korrekt?'
 options:
-  - 'Das Element steht in der 2. Hauptgruppe'
-  - 'Das Element bildet bevorzugt X²⁺-Ionen'
-  - 'Nach der Abgabe von 2 Elektronen liegt eine Edelgaskonfiguration vor'
-  - 'Es könnte sich um Magnesium oder Calcium handeln'
+  - 'Element X steht in der 2. Hauptgruppe'
+  - 'Element X bildet bevorzugt X²⁺-Ionen'
+  - 'Edelgaskonfiguration liegt nach Abgabe von 2 Elektronen vor'
+  - 'Magnesium oder Calcium können Element X sein'
 correctAnswers:
-  - 'Das Element steht in der 2. Hauptgruppe'
-  - 'Das Element bildet bevorzugt X²⁺-Ionen'
-  - 'Nach der Abgabe von 2 Elektronen liegt eine Edelgaskonfiguration vor'
-  - 'Es könnte sich um Magnesium oder Calcium handeln'
+  - 'Element X steht in der 2. Hauptgruppe'
+  - 'Element X bildet bevorzugt X²⁺-Ionen'
+  - 'Edelgaskonfiguration liegt nach Abgabe von 2 Elektronen vor'
+  - 'Magnesium oder Calcium können Element X sein'
 
 ---
 
@@ -51,15 +51,15 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 5
 question: 'Die Lanthanoid-Kontraktion beeinflusst die Eigenschaften der 5d-Übergangsmetalle. Welche Aussagen sind korrekt?'
 options:
-  - 'Hafnium (Hf) hat einen ähnlichen Atomradius wie Zirkonium (Zr), obwohl es eine Periode tiefer steht'
-  - 'Die 4f-Elektronen schirmen die Kernladung schlecht ab'
-  - 'Die Lanthanoid-Kontraktion führt zu einer Verkleinerung der Atomradien'
-  - 'Wolfram und Molybdän haben dadurch sehr ähnliche chemische Eigenschaften'
+  - 'Hafnium besitzt ähnlichen Atomradius wie Zirkonium trotz tieferer Periode'
+  - '4f-Elektronen schirmen Kernladung schlecht ab'
+  - 'Lanthanoid-Kontraktion führt zu Verkleinerung der Atomradien'
+  - 'Wolfram und Molybdän besitzen dadurch sehr ähnliche chemische Eigenschaften'
 correctAnswers:
-  - 'Hafnium (Hf) hat einen ähnlichen Atomradius wie Zirkonium (Zr), obwohl es eine Periode tiefer steht'
-  - 'Die 4f-Elektronen schirmen die Kernladung schlecht ab'
-  - 'Die Lanthanoid-Kontraktion führt zu einer Verkleinerung der Atomradien'
-  - 'Wolfram und Molybdän haben dadurch sehr ähnliche chemische Eigenschaften'
+  - 'Hafnium besitzt ähnlichen Atomradius wie Zirkonium trotz tieferer Periode'
+  - '4f-Elektronen schirmen Kernladung schlecht ab'
+  - 'Lanthanoid-Kontraktion führt zu Verkleinerung der Atomradien'
+  - 'Wolfram und Molybdän besitzen dadurch sehr ähnliche chemische Eigenschaften'
 
 ---
 
@@ -81,13 +81,13 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 5
 question: 'Das Element Gallium (Ga) schmilzt bereits bei 29,8°C, während Aluminium (Al) erst bei 660°C schmilzt. Welche Erklärung ist plausibel?'
 options:
-  - 'Gallium hat eine ungewöhnliche Kristallstruktur mit Ga₂-Einheiten'
-  - 'Die d-Elektronen bei Gallium führen zu schwächerer metallischer Bindung'
-  - 'Die vollständig gefüllte d-Unterschale bei Gallium verringert die Bindungsstärke'
-  - 'Aluminium hat stärkere Metall-Metall-Bindungen durch seine drei Valenzelektronen'
+  - 'Gallium besitzt ungewöhnliche Kristallstruktur mit Ga₂-Einheiten'
+  - 'd-Elektronen bei Gallium führen zu schwächerer metallischer Bindung'
+  - 'Vollständig gefüllte d-Unterschale bei Gallium verringert Bindungsstärke'
+  - 'Aluminium besitzt stärkere Metall-Metall-Bindungen durch drei Valenzelektronen'
 correctAnswers:
-  - 'Gallium hat eine ungewöhnliche Kristallstruktur mit Ga₂-Einheiten'
-  - 'Die vollständig gefüllte d-Unterschale bei Gallium verringert die Bindungsstärke'
+  - 'Gallium besitzt ungewöhnliche Kristallstruktur mit Ga₂-Einheiten'
+  - 'Vollständig gefüllte d-Unterschale bei Gallium verringert Bindungsstärke'
 
 ---
 
@@ -113,15 +113,15 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 5
 question: 'Ein Massenspektrometer zeigt für ein Element zwei Peaks bei m/z = 63 (Intensität 69,2%) und m/z = 65 (Intensität 30,8%). Die berechnete mittlere Atommasse beträgt 63,55 u. Welche Aussagen sind korrekt?'
 options:
-  - 'Es handelt sich um Kupfer'
-  - 'Das häufigere Isotop ist ⁶³Cu'
-  - 'Die Massendifferenz der Isotope beträgt 2 Neutronen'
-  - 'Beide Isotope haben 29 Protonen'
+  - 'Element ist Kupfer'
+  - 'Häufigeres Isotop ist ⁶³Cu'
+  - 'Massendifferenz der Isotope beträgt 2 Neutronen'
+  - 'Beide Isotope besitzen 29 Protonen'
 correctAnswers:
-  - 'Es handelt sich um Kupfer'
-  - 'Das häufigere Isotop ist ⁶³Cu'
-  - 'Die Massendifferenz der Isotope beträgt 2 Neutronen'
-  - 'Beide Isotope haben 29 Protonen'
+  - 'Element ist Kupfer'
+  - 'Häufigeres Isotop ist ⁶³Cu'
+  - 'Massendifferenz der Isotope beträgt 2 Neutronen'
+  - 'Beide Isotope besitzen 29 Protonen'
 
 ---
 

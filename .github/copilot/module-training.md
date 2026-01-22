@@ -163,7 +163,30 @@ Alle Antwortoptionen sollten **ähnlich lang** sein!
 - [ ] D. Elektromagnetische Strahlung ✓
 ```
 
-**Regel:** Korrekte Antworten dürfen maximal 50% länger sein als falsche.
+**Regeln:**
+
+- Korrekte Antworten dürfen maximal 50% länger sein als falsche
+- Jede Antwort idealerweise 40–100 Zeichen
+- Maximale Varianz zwischen kürzester und längster Antwort: ~20 Zeichen
+- Die richtige Antwort darf NICHT die längste sein
+
+### 📝 Grammatische Konsistenz
+
+Alle 4 Antworten müssen **identische grammatische Struktur** haben!
+
+```markdown
+# FALSCH - uneinheitliche Struktur:
+- [ ] A. Die Protonen im Kern
+- [ ] B. Neutronen bestimmen die Masse
+- [ ] C. Elektronen
+- [ ] D. Weil Atome neutral sind
+
+# BESSER - alle beginnen gleich:
+- [ ] A. Die Anzahl der Protonen im Kern
+- [ ] B. Die Anzahl der Neutronen im Kern
+- [ ] C. Die Summe aus Protonen und Neutronen
+- [ ] D. Die Anzahl der Valenzelektronen
+```
 
 ### 🎯 Spezifitäts-Balance
 
@@ -207,6 +230,26 @@ Falsche Antworten müssen **plausibel** sein – nicht offensichtlich falsch!
 - Häufige Missverständnisse nutzen
 - Ähnliche Konzepte verwenden
 - Typische Rechenfehler als Option anbieten
+- **Mind. 2 Distraktoren sollten für Laien kaum von der Lösung unterscheidbar sein**
+
+### 🔤 Synonyme statt Wiederholung
+
+**Wörter aus dem Fragetext dürfen in Antworten NICHT erscheinen** – nutze Synonyme!
+
+```markdown
+# FALSCH - "Ordnungszahl" wiederholt!
+**Was gibt die Ordnungszahl an?**
+- [ ] A. Die Ordnungszahl gibt die Protonenzahl an ✓
+
+# BESSER - Synonym verwenden:
+**Was gibt die Ordnungszahl an?**
+- [ ] A. Diese Kennzahl entspricht der Protonenzahl ✓
+```
+
+**Ausnahmen:**
+
+- Chemische Formeln (H₂O, NaCl) dürfen wiederholt werden
+- Fachbegriffe ohne gutes Synonym dürfen wiederholt werden
 
 ### 🚫 Keine Formulierungshinweise
 
@@ -279,30 +322,36 @@ dass die Antwort diese Formel enthält:
 - Definitionen abfragen
 - Einfache Fakten
 - Ja/Nein-Charakter
+- **Distraktoren:** Ähnlich klingende Begriffe, verwechselbare Fakten
+- Keine Berechnungen
 
 ### Level 2: Anwendung
 
-- Einfache Berechnungen
-- Konzepte anwenden
-- Beispiele erkennen
+- Konzeptionelles Verständnis gefordert
+- Einfache Berechnungen (Überschlagsrechnungen)
+- Konzepte anwenden, Beispiele erkennen
+- **Distraktoren:** Typische Fehlvorstellungen, Verwechslung von Ursache/Wirkung
 
 ### Level 3: Mittelschwer
 
-- Zusammenhänge verstehen
-- Mehrere Konzepte verbinden
+- Mehrere Konzepte müssen verknüpft werden
 - Transfer auf neue Situationen
+- Einfache Berechnungen (1-2 Schritte)
+- **Distraktoren:** Teilschritte als Lösung, falsche Verknüpfungen
 
 ### Level 4: Fortgeschritten
 
-- Komplexe Berechnungen
+- Komplexe Problemstellungen mit mehreren Variablen
+- Mehrstufige Berechnungen (3-5 Schritte)
 - Analyse von Szenarien
-- Kritische Bewertung
+- **Distraktoren:** Häufige Rechenfehler, falsche Formeln, Einheitenfehler
 
 ### Level 5: Experte
 
-- Prüfungsniveau
-- Mehrstufige Probleme
-- Grenzfälle und Ausnahmen
+- Integration von Wissen aus verschiedenen Kapiteln/Themen
+- Prüfungsniveau, mehrstufige Probleme
+- Komplexe Berechnungen und/oder Transfer auf neue Situationen
+- **Distraktoren:** Plausible aber unvollständige Lösungsansätze
 
 ## Qualitätsprüfung
 

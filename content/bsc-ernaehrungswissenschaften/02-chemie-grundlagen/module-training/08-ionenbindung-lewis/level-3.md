@@ -99,15 +99,15 @@ topic: 'Ionenbindung & Lewis'
 level: 3
 question: 'Welche Aussagen über die Gitterenergie sind korrekt?'
 options:
-  - 'Sie ist proportional zum Produkt der Ionenladungen'
-  - 'Sie ist umgekehrt proportional zum Ionenabstand'
+  - 'Gitterenergie ist proportional zum Produkt der Ionenladungen'
+  - 'Gitterenergie ist umgekehrt proportional zum Ionenabstand'
   - 'Höhere Gitterenergie bedeutet stabileres Ionengitter'
-  - 'Sie kann mit dem Born-Landé-Gleichung berechnet werden'
+  - 'Gitterenergie kann mit Born-Landé-Gleichung berechnet werden'
 correctAnswers:
-  - 'Sie ist proportional zum Produkt der Ionenladungen'
-  - 'Sie ist umgekehrt proportional zum Ionenabstand'
+  - 'Gitterenergie ist proportional zum Produkt der Ionenladungen'
+  - 'Gitterenergie ist umgekehrt proportional zum Ionenabstand'
   - 'Höhere Gitterenergie bedeutet stabileres Ionengitter'
-  - 'Sie kann mit dem Born-Landé-Gleichung berechnet werden'
+  - 'Gitterenergie kann mit Born-Landé-Gleichung berechnet werden'
 
 ---
 

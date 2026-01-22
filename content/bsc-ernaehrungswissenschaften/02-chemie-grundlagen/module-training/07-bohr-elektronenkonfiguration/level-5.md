@@ -95,16 +95,12 @@ level: 5
 question: 'Welche Aussagen zur Abschirmung und Penetration von Orbitalen sind korrekt?'
 options:
   - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
-  - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'
+  - 'Penetration erklärt Füllung von 4s vor 3d'
   - 'd- und f-Elektronen schirmen schlecht ab'
-  - 'Die effektive Kernladung ist für s- und p-Elektronen identisch'
+  - 'Effektive Kernladung ist für s- und p-Elektronen identisch'
 correctAnswers:
   - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
-  - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'
-  - 'd- und f-Elektronen schirmen schlecht ab'
-correctAnswers:
-  - 's-Elektronen penetrieren stärker zum Kern als p-Elektronen'
-  - 'Die Penetration erklärt, warum 4s vor 3d gefüllt wird'
+  - 'Penetration erklärt Füllung von 4s vor 3d'
   - 'd- und f-Elektronen schirmen schlecht ab'
 
 ---
@@ -129,15 +125,15 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 5
 question: 'Warum ist die dritte Ionisierungsenergie von Magnesium (Mg) viel höher als die zweite?'
 options:
-  - 'Das dritte Elektron kommt aus einer inneren, abgeschlossenen Schale'
-  - 'Mg²⁺ hat Edelgaskonfiguration'
-  - 'Die effektive Kernladung ist für das 2p-Elektron viel höher'
-  - 'Es muss die stabile Neon-Konfiguration aufgebrochen werden'
+  - 'Drittes Elektron stammt aus innerer, abgeschlossener Schale'
+  - 'Mg²⁺ besitzt Edelgaskonfiguration'
+  - 'Effektive Kernladung ist für das 2p-Elektron viel höher'
+  - 'Stabile Neon-Konfiguration muss aufgebrochen werden'
 correctAnswers:
-  - 'Das dritte Elektron kommt aus einer inneren, abgeschlossenen Schale'
-  - 'Mg²⁺ hat Edelgaskonfiguration'
-  - 'Die effektive Kernladung ist für das 2p-Elektron viel höher'
-  - 'Es muss die stabile Neon-Konfiguration aufgebrochen werden'
+  - 'Drittes Elektron stammt aus innerer, abgeschlossener Schale'
+  - 'Mg²⁺ besitzt Edelgaskonfiguration'
+  - 'Effektive Kernladung ist für das 2p-Elektron viel höher'
+  - 'Stabile Neon-Konfiguration muss aufgebrochen werden'
 
 ---
 

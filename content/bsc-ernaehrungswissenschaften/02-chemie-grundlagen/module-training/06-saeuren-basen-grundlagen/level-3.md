@@ -44,13 +44,13 @@ topic: 'Säuren & Basen Grundlagen'
 level: 3
 question: 'Erkläre, warum HF trotz hoher Elektronegativität von Fluor eine schwache Säure ist.'
 options:
-  - 'Die H-F-Bindung ist sehr stark'
-  - 'Fluor ist zu klein, um H⁺ abzugeben'
-  - 'Die Dissoziation ist energetisch ungünstig wegen der starken Bindung'
+  - 'H-F-Bindung ist außergewöhnlich stark'
+  - 'Fluor ist zu klein für H⁺-Abgabe'
+  - 'Dissoziation ist energetisch ungünstig wegen starker Bindung'
   - 'HF bildet Wasserstoffbrücken in Lösung'
 correctAnswers:
-  - 'Die H-F-Bindung ist sehr stark'
-  - 'Die Dissoziation ist energetisch ungünstig wegen der starken Bindung'
+  - 'H-F-Bindung ist außergewöhnlich stark'
+  - 'Dissoziation ist energetisch ungünstig wegen starker Bindung'
   - 'HF bildet Wasserstoffbrücken in Lösung'
 
 ---
