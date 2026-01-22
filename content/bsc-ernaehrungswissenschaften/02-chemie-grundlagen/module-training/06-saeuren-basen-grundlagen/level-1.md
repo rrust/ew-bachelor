@@ -122,8 +122,8 @@ topic: 'Säuren & Basen Grundlagen'
 level: 1
 question: 'Welche Aussage über die Neutralisation ist korrekt?'
 options:
-  - 'Die Reaktion benötigt Energiezufuhr'
-  - 'Säure und Base reagieren zu Salz und Wasser'
-  - 'Es entstehen gasförmige Produkte'
-  - 'Der pH-Wert der Lösung sinkt dabei'
-correctAnswer: 'Säure und Base reagieren zu Salz und Wasser'
+  - 'Reaktion benötigt Energiezufuhr'
+  - 'Säure und Base bilden Salz und Wasser'
+  - 'Reaktion erzeugt gasförmige Produkte'
+  - 'pH-Wert der Lösung sinkt dabei'
+correctAnswer: 'Säure und Base bilden Salz und Wasser'

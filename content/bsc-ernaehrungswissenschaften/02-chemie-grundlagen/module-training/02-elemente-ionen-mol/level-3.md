@@ -31,14 +31,14 @@ topic: 'Elemente, Ionen & Mol'
 level: 3
 question: 'Ein Ion hat 18 Elektronen und 16 Protonen. Welche Aussagen sind korrekt?'
 options:
-  - 'Es handelt sich um ein Sulfid-Ion (S²⁻)'
-  - 'Das Ion ist ein Anion'
-  - 'Das Ion hat 2 negative Ladungen'
-  - 'Es handelt sich um Argon'
+  - 'Ion ist ein Sulfid-Ion (S²⁻)'
+  - 'Ion ist ein Anion'
+  - 'Ion trägt 2 negative Ladungen'
+  - 'Ion ist Argon'
 correctAnswers:
-  - 'Es handelt sich um ein Sulfid-Ion (S²⁻)'
-  - 'Das Ion ist ein Anion'
-  - 'Das Ion hat 2 negative Ladungen'
+  - 'Ion ist ein Sulfid-Ion (S²⁻)'
+  - 'Ion ist ein Anion'
+  - 'Ion trägt 2 negative Ladungen'
 
 ---
 

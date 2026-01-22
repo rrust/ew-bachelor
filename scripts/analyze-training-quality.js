@@ -35,10 +35,13 @@ const problems = {
   lengthImbalance: [],
   specificityImbalance: [],
   obviousDistractors: [],
+  longestIsCorrect: [],
+  grammarInconsistency: [],
 
   // MITTEL
   absoluteTerms: [],
-  grammarHints: []
+  grammarHints: [],
+  questionWordInAnswer: []
 };
 
 // Statistiken
@@ -458,7 +461,103 @@ function checkQuestion(question, filePath, questionIndex) {
   });
 
   // ═══════════════════════════════════════════════════════════════════
-  // 8. POSITIONS-STATISTIK
+  // 8. LÄNGSTE ANTWORT = KORREKT CHECK
+  // ═══════════════════════════════════════════════════════════════════
+  if (
+    correctTexts.length > 0 &&
+    incorrectTexts.length > 0 &&
+    !isCalculationQuestion
+  ) {
+    const longestCorrect = Math.max(...correctTexts.map((t) => t.length));
+    const longestIncorrect = Math.max(...incorrectTexts.map((t) => t.length));
+    const longestOverall = Math.max(longestCorrect, longestIncorrect);
+
+    // Warnung wenn korrekte Antwort die eindeutig längste ist
+    if (
+      longestCorrect === longestOverall &&
+      longestCorrect > longestIncorrect * 1.2 &&
+      longestCorrect > 30
+    ) {
+      problems.longestIsCorrect.push({
+        location,
+        detail: `Korrekte Antwort ist längste: ${longestCorrect} vs. max. falsch: ${longestIncorrect} Zeichen`
+      });
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
+  // 9. GRAMMATISCHE KONSISTENZ CHECK
+  // ═══════════════════════════════════════════════════════════════════
+  if (question.options.length >= 4 && !isCalculationQuestion) {
+    // Prüfe Satzanfänge
+    const startsWithVerb = question.options.filter((o) =>
+      /^(ist|sind|hat|haben|wird|werden|kann|können|zeigt|liegt|enthält|besteht|führt|bewirkt)/i.test(
+        o
+      )
+    ).length;
+    const startsWithNoun = question.options.filter((o) =>
+      /^(der|die|das|ein|eine|einer)/i.test(o)
+    ).length;
+    const startsWithAdjective = question.options.filter((o) =>
+      /^[A-ZÄÖÜ][a-zäöüß]+e[rns]?\s/i.test(o)
+    ).length;
+
+    // Wenn manche mit Artikel/Verb anfangen und andere nicht
+    const patterns = [startsWithVerb, startsWithNoun].filter(
+      (n) => n > 0 && n < question.options.length
+    );
+    if (patterns.length > 0 && question.options.length === 4) {
+      const dominant = Math.max(
+        startsWithVerb,
+        startsWithNoun,
+        startsWithAdjective
+      );
+      const outliers = question.options.length - dominant;
+      if (outliers >= 2 && dominant >= 2) {
+        problems.grammarInconsistency.push({
+          location,
+          detail: `Uneinheitliche Satzstruktur: ${startsWithVerb}× Verb, ${startsWithNoun}× Artikel`
+        });
+      }
+    }
+  }
+
+  // ═══════════════════════════════════════════════════════════════════
+  // 10. FRAGE-WÖRTER IN ANTWORT (erweiterte Synonyme-Regel)
+  // ═══════════════════════════════════════════════════════════════════
+  const significantQuestionWords = questionKeywords.filter(
+    (w) => w.length >= 5
+  );
+
+  correctTexts.forEach((correctText) => {
+    const correctLower = correctText.toLowerCase();
+    const foundWords = significantQuestionWords.filter((qw) => {
+      // Escape Regex-Sonderzeichen für sichere Suche
+      const escapedQw = qw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      // Exakte Wort-Grenze prüfen
+      const regex = new RegExp(`\\b${escapedQw}\\b`, 'i');
+      return regex.test(correctLower);
+    });
+
+    if (foundWords.length >= 1) {
+      // Nur warnen wenn es keine chemische Formel oder Fachbegriff ist
+      const nonTechnical = foundWords.filter(
+        (w) =>
+          !/^(atom|molekül|elektron|proton|neutron|orbital|bindung|reaktion|lösung|säure|base)/.test(
+            w
+          )
+      );
+      if (nonTechnical.length >= 1) {
+        problems.questionWordInAnswer.push({
+          location,
+          detail: `Frage-Wort "${nonTechnical[0]}" in korrekter Antwort: "${correctText.substring(0, 50)}..."`
+        });
+      }
+    }
+  });
+
+  // ═══════════════════════════════════════════════════════════════════
+  // 11. POSITIONS-STATISTIK
   // ═══════════════════════════════════════════════════════════════════
   if (question.correctAnswer) {
     const idx = question.options.indexOf(question.correctAnswer);
@@ -548,6 +647,16 @@ const categories = [
     name: '🟠 Offensichtlich falsche Distraktoren',
     severity: 'HOCH'
   },
+  {
+    key: 'longestIsCorrect',
+    name: '🟠 Längste Antwort ist korrekt',
+    severity: 'HOCH'
+  },
+  {
+    key: 'grammarInconsistency',
+    name: '🟠 Uneinheitliche Grammatik-Struktur',
+    severity: 'HOCH'
+  },
 
   {
     key: 'absoluteTerms',
@@ -557,6 +666,11 @@ const categories = [
   {
     key: 'grammarHints',
     name: '🟡 Grammatik verrät Antwort',
+    severity: 'MITTEL'
+  },
+  {
+    key: 'questionWordInAnswer',
+    name: '🟡 Frage-Wort in Antwort (Synonyme nutzen!)',
     severity: 'MITTEL'
   }
 ];

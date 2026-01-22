@@ -18,11 +18,11 @@ topic: 'Reaktionen & Empirische Formeln'
 level: 1
 question: 'Was ist eine Analyserereaktion (Zersetzung)?'
 options:
-  - 'Mehrere Stoffe reagieren zu einem Produkt'
-  - 'Ein Element ersetzt ein anderes in einer Verbindung'
+  - 'Mehrere Stoffe verbinden sich zu einem Produkt'
+  - 'Element ersetzt anderes Element in Verbindung'
   - 'Zwei Verbindungen tauschen Bestandteile aus'
-  - 'Ein Stoff zerfällt in zwei oder mehr Stoffe'
-correctAnswer: 'Ein Stoff zerfällt in zwei oder mehr Stoffe'
+  - 'Stoff zerfällt in zwei oder mehr Stoffe'
+correctAnswer: 'Stoff zerfällt in zwei oder mehr Stoffe'
 
 ---
 
@@ -57,11 +57,11 @@ topic: 'Reaktionen & Empirische Formeln'
 level: 1
 question: 'Was ist eine Verbrennungsreaktion?'
 options:
-  - 'Eine Reaktion mit Wasser'
-  - 'Eine Reaktion mit Sauerstoff unter Freisetzung von Energie'
-  - 'Eine Reaktion ohne Energieänderung'
-  - 'Eine Reaktion mit Stickstoff'
-correctAnswer: 'Eine Reaktion mit Sauerstoff unter Freisetzung von Energie'
+  - 'Reaktion mit Wasser'
+  - 'Reaktion mit Sauerstoff unter Energiefreisetzung'
+  - 'Reaktion ohne Energieänderung'
+  - 'Reaktion mit Stickstoff'
+correctAnswer: 'Reaktion mit Sauerstoff unter Energiefreisetzung'
 
 ---
 

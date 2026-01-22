@@ -65,14 +65,14 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 3
 question: 'Ein Ion hat 18 Elektronen und 17 Protonen. Welche Aussagen treffen zu?'
 options:
-  - 'Es handelt sich um ein Chlorid-Ion (Cl⁻)'
-  - 'Das Ion ist negativ geladen'
-  - 'Das Ion hat die gleiche Elektronenkonfiguration wie Argon'
-  - 'Es handelt sich um ein Kalium-Ion (K⁺)'
+  - 'Es ist ein Chlorid-Ion (Cl⁻)'
+  - 'Es trägt eine negative Ladung'
+  - 'Es besitzt die Elektronenkonfiguration von Argon'
+  - 'Es ist ein Kalium-Ion (K⁺)'
 correctAnswers:
-  - 'Es handelt sich um ein Chlorid-Ion (Cl⁻)'
-  - 'Das Ion ist negativ geladen'
-  - 'Das Ion hat die gleiche Elektronenkonfiguration wie Argon'
+  - 'Es ist ein Chlorid-Ion (Cl⁻)'
+  - 'Es trägt eine negative Ladung'
+  - 'Es besitzt die Elektronenkonfiguration von Argon'
 
 ---
 

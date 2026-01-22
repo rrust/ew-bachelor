@@ -31,13 +31,13 @@ topic: 'Ionenbindung & Lewis'
 level: 5
 question: 'Wie unterscheiden sich die zwei Methoden zur Bestimmung der Gitterenergie (Kreisprozess vs. elektrostatische Berechnung)?'
 options:
-  - 'Der Kreisprozess ist experimentell, die Berechnung ist theoretisch'
-  - 'Der Kreisprozess nutzt den Hess''schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen'
+  - 'Kreisprozess ist experimentell, Berechnung ist theoretisch'
+  - 'Kreisprozess nutzt Hess''schen Satz, Berechnung nutzt Coulomb-Wechselwirkungen'
   - 'Abweichungen zwischen beiden deuten auf kovalente Anteile hin'
   - 'Beide Methoden liefern bei rein ionischen Verbindungen sehr ähnliche Werte'
 correctAnswers:
-  - 'Der Kreisprozess ist experimentell, die Berechnung ist theoretisch'
-  - 'Der Kreisprozess nutzt den Hess''schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen'
+  - 'Kreisprozess ist experimentell, Berechnung ist theoretisch'
+  - 'Kreisprozess nutzt Hess''schen Satz, Berechnung nutzt Coulomb-Wechselwirkungen'
   - 'Abweichungen zwischen beiden deuten auf kovalente Anteile hin'
 
 ---
@@ -111,13 +111,13 @@ topic: 'Ionenbindung & Lewis'
 level: 5
 question: 'Warum hat NO₂ ein ungepaartes Elektron, während NO₂⁻ diamagnetisch ist?'
 options:
-  - 'NO₂ hat 17 Valenzelektronen (ungerade Zahl)'
-  - 'NO₂⁻ hat 18 Valenzelektronen (gerade Zahl)'
-  - 'Das zusätzliche Elektron im NO₂⁻ paart das ungepaarte'
+  - 'NO₂ besitzt 17 Valenzelektronen (ungerade Zahl)'
+  - 'NO₂⁻ besitzt 18 Valenzelektronen (gerade Zahl)'
+  - 'Zusätzliches Elektron im NO₂⁻ paart das ungepaarte'
   - 'NO₂ ist ein Radikal'
 correctAnswers:
-  - 'NO₂ hat 17 Valenzelektronen (ungerade Zahl)'
-  - 'NO₂⁻ hat 18 Valenzelektronen (gerade Zahl)'
+  - 'NO₂ besitzt 17 Valenzelektronen (ungerade Zahl)'
+  - 'NO₂⁻ besitzt 18 Valenzelektronen (gerade Zahl)'
   - 'Das zusätzliche Elektron im NO₂⁻ paart das ungepaarte'
   - 'NO₂ ist ein Radikal'
 

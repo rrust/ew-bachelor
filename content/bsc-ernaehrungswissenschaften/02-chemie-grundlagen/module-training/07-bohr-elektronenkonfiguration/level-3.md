@@ -20,13 +20,13 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 3
 question: 'Warum hat Chrom (Cr, Z=24) die Konfiguration [Ar] 3d⁵ 4s¹ statt [Ar] 3d⁴ 4s²?'
 options:
-  - 'Halbgefüllte d-Orbitale sind besonders stabil'
-  - 'Das 4s-Orbital hat höhere Energie als 3d'
-  - 'Die symmetrische Verteilung der d-Elektronen ist energetisch günstiger'
-  - 'Chrom ist ein Übergangsmetall'
+  - 'Halbgefüllte d-Orbitale besitzen besondere Stabilität'
+  - '4s-Orbital besitzt höhere Energie als 3d'
+  - 'Symmetrische Verteilung der d-Elektronen ist energetisch günstiger'
+  - 'Chrom gehört zu den Übergangsmetallen'
 correctAnswers:
-  - 'Halbgefüllte d-Orbitale sind besonders stabil'
-  - 'Die symmetrische Verteilung der d-Elektronen ist energetisch günstiger'
+  - 'Halbgefüllte d-Orbitale besitzen besondere Stabilität'
+  - 'Symmetrische Verteilung der d-Elektronen ist energetisch günstiger'
 
 ---
 

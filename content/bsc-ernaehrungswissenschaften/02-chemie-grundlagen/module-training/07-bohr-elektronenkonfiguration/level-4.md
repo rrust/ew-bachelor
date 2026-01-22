@@ -5,13 +5,13 @@ topic: 'Bohr & Elektronenkonfiguration'
 level: 4
 question: 'Warum hat Kupfer (Cu, Z=29) die Elektronenkonfiguration [Ar] 3d¹⁰ 4s¹ statt der erwarteten [Ar] 3d⁹ 4s²?'
 options:
-  - 'Vollständig gefüllte d-Orbitale sind besonders stabil'
-  - 'Die Elektronenpaarungsenergie im 4s-Orbital ist günstig'
-  - 'Ein Elektron wechselt vom 4s ins 3d zur Stabilisierung'
+  - 'Vollständig gefüllte d-Orbitale besitzen besondere Stabilität'
+  - 'Elektronenpaarungsenergie im 4s-Orbital ist günstig'
+  - 'Elektron wechselt vom 4s ins 3d zur Stabilisierung'
   - 'Kupfer zeigt anomales Verhalten wie Chrom'
 correctAnswers:
-  - 'Vollständig gefüllte d-Orbitale sind besonders stabil'
-  - 'Ein Elektron wechselt vom 4s ins 3d zur Stabilisierung'
+  - 'Vollständig gefüllte d-Orbitale besitzen besondere Stabilität'
+  - 'Elektron wechselt vom 4s ins 3d zur Stabilisierung'
   - 'Kupfer zeigt anomales Verhalten wie Chrom'
 
 ---

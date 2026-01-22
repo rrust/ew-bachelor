@@ -83,15 +83,15 @@ topic: 'Gleichungen & Stöchiometrie'
 level: 3
 question: 'Welche Aussagen über die Gleichung 4 NH₃ + 5 O₂ → 4 NO + 6 H₂O sind korrekt?'
 options:
-  - '4 mol NH₃ reagieren mit 5 mol O₂'
-  - 'Es entstehen 6 mol H₂O pro 4 mol NH₃'
-  - 'Die Anzahl der H-Atome ist auf beiden Seiten gleich'
-  - 'Die Anzahl der O-Atome ist auf beiden Seiten gleich'
+  - 'Stoffmengenverhältnis NH₃:O₂ beträgt 4:5'
+  - 'Reaktion bildet 6 mol H₂O pro 4 mol NH₃'
+  - 'Anzahl der H-Atome ist auf beiden Seiten gleich'
+  - 'Anzahl der O-Atome ist auf beiden Seiten gleich'
 correctAnswers:
-  - '4 mol NH₃ reagieren mit 5 mol O₂'
-  - 'Es entstehen 6 mol H₂O pro 4 mol NH₃'
-  - 'Die Anzahl der H-Atome ist auf beiden Seiten gleich'
-  - 'Die Anzahl der O-Atome ist auf beiden Seiten gleich'
+  - 'Stoffmengenverhältnis NH₃:O₂ beträgt 4:5'
+  - 'Reaktion bildet 6 mol H₂O pro 4 mol NH₃'
+  - 'Anzahl der H-Atome ist auf beiden Seiten gleich'
+  - 'Anzahl der O-Atome ist auf beiden Seiten gleich'
 
 ---
 

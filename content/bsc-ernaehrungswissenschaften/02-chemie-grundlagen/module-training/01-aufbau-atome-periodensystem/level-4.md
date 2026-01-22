@@ -64,14 +64,14 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 4
 question: 'Erkläre die Elektronegativitätswerte: F (3,98), O (3,44), N (3,04), C (2,55). Welcher Trend wird hier sichtbar?'
 options:
-  - 'Die Elektronegativität nimmt innerhalb einer Periode von links nach rechts zu'
-  - 'Fluor ist das elektronegativste Element'
+  - 'Elektronegativität steigt in einer Periode von links nach rechts'
+  - 'Fluor besitzt die höchste Elektronegativität aller Elemente'
   - 'Kohlenstoff zieht Elektronen stärker an als Sauerstoff'
-  - 'Die Kernladung beeinflusst die Elektronegativität'
+  - 'Kernladung beeinflusst die Elektronegativität maßgeblich'
 correctAnswers:
-  - 'Die Elektronegativität nimmt innerhalb einer Periode von links nach rechts zu'
-  - 'Fluor ist das elektronegativste Element'
-  - 'Die Kernladung beeinflusst die Elektronegativität'
+  - 'Elektronegativität steigt in einer Periode von links nach rechts'
+  - 'Fluor besitzt die höchste Elektronegativität aller Elemente'
+  - 'Kernladung beeinflusst die Elektronegativität maßgeblich'
 
 ---
 
@@ -137,10 +137,10 @@ topic: 'Aufbau der Atome & Periodensystem'
 level: 4
 question: 'Warum ist der Atomradius von Kalium (K) größer als der von Calcium (Ca), obwohl beide in der 4. Periode stehen?'
 options:
-  - 'Calcium hat mehr Protonen und damit eine höhere effektive Kernladung'
-  - 'Die höhere Kernladung bei Calcium zieht die Elektronen stärker an'
-  - 'Kalium hat mehr Elektronen als Calcium'
-  - 'Bei Calcium ist die Abschirmung durch innere Elektronen stärker'
+  - 'Calcium besitzt mehr Protonen und höhere effektive Kernladung'
+  - 'Höhere Kernladung bei Calcium zieht Elektronen stärker an'
+  - 'Kalium besitzt mehr Elektronen als Calcium'
+  - 'Abschirmung durch innere Elektronen ist bei Calcium stärker'
 correctAnswers:
-  - 'Calcium hat mehr Protonen und damit eine höhere effektive Kernladung'
-  - 'Die höhere Kernladung bei Calcium zieht die Elektronen stärker an'
+  - 'Calcium besitzt mehr Protonen und höhere effektive Kernladung'
+  - 'Höhere Kernladung bei Calcium zieht Elektronen stärker an'
