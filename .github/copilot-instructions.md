@@ -44,6 +44,7 @@ Detaillierte Anleitungen in `.github/copilot/`:
 | [audio-workflow.md](copilot/audio-workflow.md)               | **Audio für Lerninhalte**   |
 | [audio-scripts.md](copilot/audio-scripts.md)                 | Audio-Script Format         |
 | [audio-generation.md](copilot/audio-generation.md)           | TTS-Generierung Details     |
+| [video-workflow.md](copilot/video-workflow.md)               | **YouTube-Videos finden**   |
 
 ## Quick Reference
 

@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-21T18:48:56.201Z",
+  "generatedAt": "2026-01-25T09:27:35.593Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -8976,6 +8976,347 @@
           "index": 75,
           "type": "self-assessment",
           "title": "Bin ich bereit für den Vorlesungs-Test?",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "18-saeuren-basen-gleichgewicht",
+      "topic": "Säure-Base-Gleichgewichte und Pufferlösungen",
+      "description": "Common Ion Effect, Pufferlösungen, Henderson-Hasselbalch-Gleichung, Titrationen",
+      "topics": [
+        "Säure-Base-Gleichgewichte und Pufferlösungen"
+      ],
+      "keywords": [
+        "säurebasegleichgewichte",
+        "pufferlösungen",
+        "common",
+        "ion",
+        "effect",
+        "hendersonhasselbalchgleichung",
+        "titrationen",
+        "gemeinsame",
+        "ioneneffekt",
+        "beschreibt",
+        "auswirkung",
+        "gleichgewicht",
+        "hinzugefügt",
+        "bereits",
+        "lösung",
+        "vorhanden",
+        "direkte",
+        "anwendung",
+        "prinzips",
+        "chatelier",
+        "grundprinzip",
+        "betrachten",
+        "schwache",
+        "base",
+        "ammoniak",
+        "wasser",
+        "times",
+        "ergibt",
+        "poh",
+        "zusammenfassung",
+        "phwert",
+        "reine",
+        "nhlösung",
+        "nhcl",
+        "fällt",
+        "drastisch",
+        "zugabe",
+        "salzes",
+        "obwohl",
+        "säure",
+        "zugegeben",
+        "dies",
+        "aktion",
+        "merksatz",
+        "gemeinsamen",
+        "ions",
+        "verschiebt",
+        "schwachen",
+        "säurebase",
+        "verringert",
+        "deren",
+        "dissoziationsgrad",
+        "passiert",
+        "flusssäurelösung",
+        "natriumfluorid",
+        "naf",
+        "essigsäurelösung",
+        "natriumacetat",
+        "versetzt",
+        "sodass",
+        "acetatkonzentration",
+        "beträgt",
+        "berechne",
+        "hkonzentration",
+        "moll",
+        "multipliziere",
+        "beeinflussung",
+        "gleichgewichtslage",
+        "merkhilfe",
+        "erklärt",
+        "chemische",
+        "gesetz",
+        "vom",
+        "kleinsten",
+        "zwang",
+        "grundlagen",
+        "pufferlösung",
+        "spezielle",
+        "ioneneffekts",
+        "ihre",
+        "hauptfunktion",
+        "phänderungen",
+        "widerstehen",
+        "säuren",
+        "basen",
+        "zusammensetzung",
+        "puffers",
+        "puffer",
+        "besteht",
+        "immer",
+        "zwei",
+        "komponenten",
+        "neutralisiert",
+        "hinzugefügte",
+        "ohionen",
+        "ihrer",
+        "konjugierten",
+        "hionen",
+        "wichtige",
+        "puffersysteme"
+      ],
+      "snippet": "Säure-Base-Gleichgewichte und Pufferlösungen Common Ion Effect, Pufferlösungen, Henderson-Hasselbalch-Gleichung, Titrationen Der gemeinsame Ionen-Effekt (Common Ion Effect) Der gemeinsame Ionen-Effekt...",
+      "itemCount": 22,
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Item 1",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "self-assessment-mc",
+          "title": "Was passiert mit dem pH-Wert einer Flusssäure-Lösung (HF), wenn Natriumfluorid (NaF) zugegeben wird?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "calculation",
+          "title": "Eine 0,50 M Essigsäure-Lösung (Ks = 1,8 × 10⁻⁵) wird mit Natriumacetat versetzt, sodass die Acetat-Konzentration 0,25 M beträgt. Berechne die H⁺-Konzentration in mol/L und multipliziere mit 10⁵.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "youtube-video",
+          "title": "Item 4",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "learning-content",
+          "title": "Item 5",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "self-assessment-mc",
+          "title": "Ein Puffer enthält gleiche Konzentrationen von Säure und konjugierter Base. Der pKs der Säure beträgt 4,75. Welchen pH-Wert hat die Lösung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "matching",
+          "title": "Ordne die Pufferkomponenten ihren konjugierten Partnern zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "youtube-video",
+          "title": "Item 8",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "learning-content",
+          "title": "Item 9",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "self-assessment-mc",
+          "title": "Ein Puffer enthält 0,5 mol Säure (HA) und 0,5 mol konjugierte Base (A⁻). Es werden 0,1 mol NaOH zugegeben. Wie lauten die Stoffmengen nach der Reaktion?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "calculation",
+          "title": "Ein Acetat-Puffer (pKs = 4,75) enthält 0,30 mol Essigsäure und 0,30 mol Acetat in 1 L. Nach Zugabe von 0,05 mol HCl: Berechne den pH-Wert (auf 2 Dezimalstellen).",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "youtube-video",
+          "title": "Item 12",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "learning-content",
+          "title": "Item 13",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "self-assessment-mc",
+          "title": "Für einen Puffer mit pH 9,0 soll ein Puffersystem gewählt werden. Welches ist am besten geeignet?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "learning-content",
+          "title": "Item 15",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "self-assessment-mc",
+          "title": "Welchen pH-Wert hat die Lösung am Äquivalenzpunkt bei der Titration von HCl mit KOH?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "youtube-video",
+          "title": "Item 17",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Item 18",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "self-assessment-mc",
+          "title": "Bei einer Titration von Essigsäure mit NaOH misst man am Halbäquivalenzpunkt einen pH von 4,75. Welche Aussage ist korrekt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "matching",
+          "title": "Ordne die Phasen einer Titration (schwache Säure + starke Base) den pH-Bereichen zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "youtube-video",
+          "title": "Item 21",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "self-assessment",
+          "title": "Bist du bereit für den Vorlesungstest zu Säure-Base-Gleichgewichten?",
           "typeKeywords": [
             "selbsttest",
             "checkliste",

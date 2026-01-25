@@ -1,0 +1,29 @@
+Hast du dich schon mal gefragt, warum Salzwasser den pH-Wert einer Lösung verändert, obwohl weder Säure noch Base zugegeben wird?
+
+Die Antwort liegt im gemeinsamen Ionen-Effekt.
+
+...
+
+Stell dir eine Ammoniak-Lösung vor. Das Ammoniak steht im Gleichgewicht mit Ammonium-Ionen und Hydroxid-Ionen.
+
+Was passiert, wenn wir jetzt Ammoniumchlorid zugeben? Dieses Salz setzt Ammonium-Ionen frei. Und genau diese Ionen sind bereits in der Lösung vorhanden.
+
+Die Lösung reagiert nach dem Prinzip von Le Chatelier. Sie versucht, der Störung auszuweichen, indem sie das Gleichgewicht nach links verschiebt.
+
+Das Ergebnis? Es werden Hydroxid-Ionen verbraucht. Der pH-Wert sinkt. Die Lösung wird weniger basisch.
+
+...
+
+Schauen wir uns das mit Zahlen an.
+
+Eine reine Ammoniak-Lösung mit 0,25 Mol pro Liter hat einen pH-Wert von 11,33.
+
+Fügen wir nun Ammoniumchlorid hinzu, sinkt der pH auf 9,65.
+
+Das ist ein Unterschied von fast 2 pH-Einheiten. Und das ohne jede Säure!
+
+...
+
+Der Merksatz dazu lautet: Die Zugabe eines gemeinsamen Ions verschiebt das Gleichgewicht einer schwachen Säure oder Base und verringert deren Dissoziationsgrad.
+
+Dieser Effekt ist die Grundlage für Pufferlösungen, die wir als nächstes betrachten werden.

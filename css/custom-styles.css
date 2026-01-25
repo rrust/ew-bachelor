@@ -401,11 +401,13 @@
 
 /* Subtle bottom shadow for app header */
 header.sticky {
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
+  box-shadow:
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
     0 1px 2px -1px rgba(0, 0, 0, 0.03);
 }
 .dark header.sticky {
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25),
+  box-shadow:
+    0 2px 4px -1px rgba(0, 0, 0, 0.25),
     0 1px 2px -1px rgba(0, 0, 0, 0.15);
 }
 
@@ -584,7 +586,9 @@ header.sticky {
   font-size: 1rem;
   line-height: 1;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -624,4 +628,40 @@ header.sticky {
 
 .formula-fullscreen-container .formula-expand-btn {
   display: none;
+}
+
+/* Compact lecture overview cards */
+#lecture-overview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Mini audio player in overview */
+#lecture-overview-content audio {
+  height: 32px;
+}
+
+#lecture-overview-content audio::-webkit-media-controls-panel {
+  background: transparent;
+}
+
+/* Line clamp for text overflow */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* YouTube embed in overview - responsive */
+#lecture-overview-content iframe {
+  border-radius: 0;
+}
+
+/* Touch-friendly tap targets */
+@media (max-width: 640px) {
+  #lecture-overview-content > div {
+    min-height: 44px;
+  }
 }

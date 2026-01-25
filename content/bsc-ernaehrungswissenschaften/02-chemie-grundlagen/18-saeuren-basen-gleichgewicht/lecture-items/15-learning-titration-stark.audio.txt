@@ -1,0 +1,35 @@
+Wie bestimmst du die genaue Konzentration einer Säure? Die Antwort ist die Titration.
+
+Dabei gibst du eine Lösung bekannter Konzentration tropfenweise zu, bis die Reaktion vollständig ist.
+
+...
+
+Schauen wir uns die Titration von Salzsäure mit Natronlauge an.
+
+Die Kurve hat einen charakteristischen Verlauf. Am Anfang ist der pH niedrig, etwa 1 bei 0,1 molarer Salzsäure.
+
+Während du Natronlauge zugibst, steigt der pH langsam an. Die überschüssige Säure dominiert noch.
+
+...
+
+Dann kommt der entscheidende Moment: der Äquivalenzpunkt.
+
+Hier wurde exakt so viel Base zugegeben, dass alle Säure neutralisiert ist. Die Stoffmenge der Salzsäure entspricht genau der Stoffmenge der Natronlauge.
+
+...
+
+Und jetzt das Wichtige: Bei der Titration einer starken Säure mit einer starken Base liegt der pH am Äquivalenzpunkt bei genau 7.
+
+Warum? Weil nur neutrale Ionen übrig bleiben. Natrium-Ionen und Chlorid-Ionen reagieren nicht mit Wasser.
+
+...
+
+Der Sprung am Äquivalenzpunkt ist extrem steil. Ein einziger Tropfen kann den pH um mehrere Einheiten verändern.
+
+Das liegt daran, dass zu diesem Zeitpunkt weder Säure noch Base einen Puffer bilden.
+
+...
+
+Nach dem Äquivalenzpunkt steigt der pH weiter. Jetzt bestimmt die überschüssige Natronlauge den Wert.
+
+In der Praxis nutzt man Indikatoren wie Phenolphthalein. Der Farbumschlag zeigt den Endpunkt an, der möglichst genau mit dem Äquivalenzpunkt übereinstimmen sollte.

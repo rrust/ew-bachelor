@@ -8,6 +8,7 @@
     "generate:training": "node scripts/generate-training-bundles.js",
     "generate:search-index": "node scripts/generate-search-index.js",
     "generate:achievements": "node scripts/generate-achievements.js",
+    "generate:audio": "node scripts/generate-audio.js",
     "validate:views": "node scripts/validate-views.js",
     "validate:content": "node scripts/validate-content.js",
     "validate:videos": "node scripts/validate-videos.js",

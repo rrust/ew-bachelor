@@ -1,0 +1,506 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "18-saeuren-basen-gleichgewicht",
+  "metadata": {
+    "topic": "Säure-Base-Gleichgewichte und Pufferlösungen",
+    "description": "Common Ion Effect, Pufferlösungen, Henderson-Hasselbalch-Gleichung, Titrationen",
+    "estimatedTime": 90,
+    "version": "1.0.0",
+    "sources": [
+      {
+        "id": "vorlesung-k18",
+        "title": "Vorlesungsfolien Kapitel 18",
+        "type": "pdf"
+      },
+      {
+        "id": "kotz-k18",
+        "title": "Kotz, Treichel, Townsend: Chemistry (Kap. 18)",
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        },
+        {
+          "sourceId": "kotz-k18"
+        }
+      ],
+      "content": "# Der gemeinsame Ionen-Effekt (Common Ion Effect)\n\nDer gemeinsame Ionen-Effekt beschreibt die Auswirkung auf ein Gleichgewicht, wenn ein Ion hinzugefügt wird, das bereits in der Lösung vorhanden ist. Er ist eine direkte Anwendung des **Prinzips von Le Chatelier**.\n\n## Grundprinzip\n\nBetrachten wir eine schwache Base wie Ammoniak im Gleichgewicht mit Wasser:\n\n$$\\text{NH}_3\\text{(aq)} + \\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{NH}_4^+\\text{(aq)} + \\text{OH}^-\\text{(aq)}$$\n\nWenn wir nun ein Salz zugeben, das eines der Produkt-Ionen enthält (z.B. Ammoniumchlorid NH₄Cl), fügen wir sogenannte **gemeinsame Ionen** (NH₄⁺) hinzu.\n\n## Auswirkung nach Le Chatelier\n\nDas System versucht, dem Zwang (Erhöhung der NH₄⁺-Konzentration) auszuweichen:\n\n1. Das Gleichgewicht verschiebt sich nach **links** (Richtung Edukte)\n2. Dabei werden OH⁻-Ionen verbraucht\n3. Die Konzentration von OH⁻ sinkt\n4. Der **pH-Wert sinkt** (wird weniger basisch)\n\n## Quantitative Betrachtung\n\nDer Effekt lässt sich quantitativ berechnen. Vergleichen wir zwei Szenarien:\n\n### Szenario A: Reine Ammoniak-Lösung (0,25 M NH₃)\n\nMit $K_b = 1{,}8 \\times 10^{-5}$ gilt:\n\n$$[\\text{OH}^-] = \\sqrt{K_b \\cdot 0{,}25} = 0{,}0021\\,\\text{M}$$\n\nDies ergibt pOH = 2,67 und **pH = 11,33**.\n\n### Szenario B: Mischung (0,25 M NH₃ + 0,10 M NH₄Cl)\n\nHier ist die Anfangskonzentration von NH₄⁺ bereits 0,10 M:\n\n$$[\\text{OH}^-] = K_b \\times \\frac{[\\text{NH}_3]}{[\\text{NH}_4^+]} = 1{,}8 \\times 10^{-5} \\times \\frac{0{,}25}{0{,}10} = 4{,}5 \\times 10^{-5}\\,\\text{M}$$\n\nDas ergibt pOH = 4,35 und **pH = 9,65**.\n\n## Zusammenfassung\n\n| Lösung           | pH-Wert |\n| ---------------- | ------- |\n| Reine NH₃-Lösung | 11,33   |\n| NH₃ + NH₄Cl      | 9,65    |\n\nDer pH-Wert fällt drastisch durch die Zugabe des Salzes – obwohl wir keine Säure zugegeben haben! Dies ist der Common Ion Effect in Aktion.\n\n> **Merksatz:** Die Zugabe eines gemeinsamen Ions verschiebt das Gleichgewicht einer schwachen Säure/Base und verringert deren Dissoziationsgrad.",
+      "audioFile": "01-learning-common-ion.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was passiert mit dem pH-Wert einer Flusssäure-Lösung (HF), wenn Natriumfluorid (NaF) zugegeben wird?",
+      "options": [
+        "Der pH-Wert sinkt, weil mehr H⁺-Ionen entstehen",
+        "Der pH-Wert steigt, weil das Gleichgewicht zur undissoziierten Säure verschoben wird",
+        "Der pH-Wert bleibt gleich, weil NaF ein neutrales Salz ist",
+        "Der pH-Wert steigt nur bei hohen NaF-Konzentrationen"
+      ],
+      "correctAnswer": "Der pH-Wert steigt, weil das Gleichgewicht zur undissoziierten Säure verschoben wird",
+      "explanation": "NaF liefert F⁻-Ionen (gemeinsames Ion). Nach Le Chatelier verschiebt sich das Gleichgewicht HF ⇌ H⁺ + F⁻ nach links. Dabei werden H⁺-Ionen verbraucht, wodurch der pH-Wert steigt.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Eine 0,50 M Essigsäure-Lösung (Ks = 1,8 × 10⁻⁵) wird mit Natriumacetat versetzt, sodass die Acetat-Konzentration 0,25 M beträgt. Berechne die H⁺-Konzentration in mol/L und multipliziere mit 10⁵.",
+      "correctAnswer": 3.6,
+      "unit": "",
+      "tolerance": 0.2,
+      "hint": "Verwende die Gleichgewichtsbeziehung: [H⁺] = Ks × [Säure]/[Base]. Das Ergebnis mit 10⁵ multiplizieren.",
+      "explanation": "[H⁺] = Ks × [HOAc]/[OAc⁻] = 1,8 × 10⁻⁵ × (0,50/0,25) = 1,8 × 10⁻⁵ × 2 = 3,6 × 10⁻⁵ M. Multipliziert mit 10⁵ ergibt 3,6.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=TRqqpAS4pqs",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        }
+      ],
+      "content": "Beeinflussung der Gleichgewichtslage (Die Merkhilfe). Erklärt das chemische Gleichgewicht und das Gesetz vom kleinsten Zwang (Le Chatelier)."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        },
+        {
+          "sourceId": "kotz-k18"
+        }
+      ],
+      "content": "# Pufferlösungen – Grundlagen\n\nEine Pufferlösung ist eine spezielle Anwendung des gemeinsamen Ionen-Effekts. Ihre Hauptfunktion ist es, **pH-Änderungen zu widerstehen**, wenn Säuren oder Basen hinzugefügt werden.\n\n## Zusammensetzung eines Puffers\n\nEin Puffer besteht immer aus zwei Komponenten:\n\n1. Einer **schwachen Säure** (neutralisiert hinzugefügte OH⁻-Ionen)\n2. Ihrer **konjugierten Base** (neutralisiert hinzugefügte H⁺-Ionen)\n\n### Wichtige Puffersysteme\n\n| Puffersystem    | Schwache Säure       | Konjugierte Base |\n| --------------- | -------------------- | ---------------- |\n| Acetat-Puffer   | CH₃COOH (Essigsäure) | CH₃COO⁻ (Acetat) |\n| Phosphat-Puffer | H₂PO₄⁻               | HPO₄²⁻           |\n| Ammonium-Puffer | NH₄⁺                 | NH₃              |\n| Carbonat-Puffer | H₂CO₃ / CO₂          | HCO₃⁻            |\n\n## Funktionsweise am Beispiel des Acetat-Puffers\n\n### Bei Zugabe einer starken Base (OH⁻)\n\nDie schwache Säure im Puffer reagiert:\n\n$$\\text{CH}_3\\text{COOH} + \\text{OH}^- \\rightarrow \\text{CH}_3\\text{COO}^- + \\text{H}_2\\text{O}$$\n\nDie OH⁻-Ionen werden fast vollständig abgefangen und in die schwach basische konjugierte Base und Wasser umgewandelt.\n\n### Bei Zugabe einer starken Säure (H⁺)\n\nDie konjugierte Base reagiert:\n\n$$\\text{CH}_3\\text{COO}^- + \\text{H}_3\\text{O}^+ \\rightarrow \\text{CH}_3\\text{COOH} + \\text{H}_2\\text{O}$$\n\nDie starken Protonen werden abgefangen und in die schwache Essigsäure umgewandelt.\n\n## Die Henderson-Hasselbalch-Gleichung\n\nUm den pH-Wert eines Puffers zu berechnen, verwenden wir die **Henderson-Hasselbalch-Gleichung**:\n\n$$\\text{pH} = \\text{p}K_s + \\log\\left(\\frac{[\\text{konjugierte Base}]}{[\\text{Säure}]}\\right)$$\n\n### Wichtige Erkenntnisse\n\n- Der pH-Wert wird primär durch den **pKs-Wert** der Säure bestimmt\n- Das **Konzentrationsverhältnis** von Base zu Säure ermöglicht die Feinjustierung\n- Wenn [Base] = [Säure], dann gilt: **pH = pKs** (da log(1) = 0)\n\n## Warum funktioniert ein Puffer?\n\nEin Puffer enthält immer beide Komponenten (Säure und Base) in ausreichender Menge:\n\n- Säure fängt zugegebene Base ab\n- Base fängt zugegebene Säure ab\n\nSolange beide Reservoire nicht erschöpft sind, bleibt der pH-Wert nahezu konstant.",
+      "audioFile": "05-learning-puffer.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Ein Puffer enthält gleiche Konzentrationen von Säure und konjugierter Base. Der pKs der Säure beträgt 4,75. Welchen pH-Wert hat die Lösung?",
+      "options": [
+        "pH = 7,00",
+        "pH = 4,75",
+        "pH = 9,25",
+        "pH = 2,38"
+      ],
+      "correctAnswer": "pH = 4,75",
+      "explanation": "Bei gleichen Konzentrationen von Säure und Base ist der Bruch in der Henderson-Hasselbalch-Gleichung gleich 1. Da log(1) = 0, gilt pH = pKs = 4,75.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Pufferkomponenten ihren konjugierten Partnern zu:",
+      "pairs": [
+        {
+          "left": "CH₃COOH (Essigsäure)",
+          "right": "CH₃COO⁻ (Acetat)"
+        },
+        {
+          "left": "NH₄⁺ (Ammonium)",
+          "right": "NH₃ (Ammoniak)"
+        },
+        {
+          "left": "H₂PO₄⁻ (Dihydrogenphosphat)",
+          "right": "HPO₄²⁻ (Hydrogenphosphat)"
+        },
+        {
+          "left": "H₂CO₃ (Kohlensäure)",
+          "right": "HCO₃⁻ (Hydrogencarbonat)"
+        }
+      ],
+      "explanation": "Ein Puffer besteht immer aus einem konjugierten Säure-Base-Paar. Die konjugierte Base entsteht durch Abgabe eines Protons von der Säure.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=jkP7F0wE8vE",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        }
+      ],
+      "content": "Pufferlösungen und Henderson-Hasselbalch-Gleichung (Die Merkhilfe). Definition von Puffersystemen, deren Funktionsweise im Teilchenmodell und Herleitung der Henderson-Hasselbalch-Gleichung."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        },
+        {
+          "sourceId": "kotz-k18"
+        }
+      ],
+      "content": "# Pufferkapazität und Berechnungen\n\n## Die 2-Schritt-Methode\n\nWenn eine starke Säure oder Base zu einem Puffer gegeben wird, erfolgt die Berechnung des neuen pH-Werts in zwei Schritten:\n\n### Schritt 1: Stöchiometrie (vollständige Reaktion)\n\nDie starke Säure oder Base reagiert **vollständig** mit dem entsprechenden Pufferpartner.\n\n| Zugabe            | Reaktion                 |\n| ----------------- | ------------------------ |\n| Starke Säure (H⁺) | H⁺ + Base → Säure        |\n| Starke Base (OH⁻) | OH⁻ + Säure → Base + H₂O |\n\n### Schritt 2: Gleichgewicht (Henderson-Hasselbalch)\n\nMit den **neuen Stoffmengen** berechnen wir den pH-Wert:\n\n$$\\text{pH} = \\text{p}K_s + \\log\\left(\\frac{n(\\text{Base})}{n(\\text{Säure})}\\right)$$\n\n> **Wichtig:** Da das Volumen bei Säure und Base gleich ist, kürzt es sich im Bruch. Wir können direkt mit Stoffmengen (mol) rechnen!\n\n## Beispielrechnung\n\n**Gegeben:** 1,0 L Puffer mit 0,100 mol NH₃ und 0,200 mol NH₄⁺ (pKs = 9,26)\n\n**Zugabe:** 0,020 mol NaOH (fest)\n\n### Schritt 1: Stöchiometrie\n\nNaOH reagiert mit der Säure-Komponente (NH₄⁺):\n\n$$\\text{NH}_4^+ + \\text{OH}^- \\rightarrow \\text{NH}_3 + \\text{H}_2\\text{O}$$\n\n| Substanz | Vorher (mol) | Änderung | Nachher (mol) |\n| -------- | ------------ | -------- | ------------- |\n| NH₄⁺     | 0,200        | −0,020   | **0,180**     |\n| NH₃      | 0,100        | +0,020   | **0,120**     |\n| OH⁻      | 0,020        | −0,020   | 0             |\n\n### Schritt 2: Henderson-Hasselbalch\n\n$$\\text{pH} = 9{,}26 + \\log\\left(\\frac{0{,}120}{0{,}180}\\right) = 9{,}26 + (-0{,}18) = 9{,}08$$\n\nDie pH-Änderung beträgt nur Δ = +0,13, obwohl eine starke Base zugegeben wurde!\n\n## Pufferwirkung: Wasser vs. Puffer\n\nBei Zugabe von 1 mL 1,0 M HCl:\n\n| Medium              | pH vorher | pH nachher | Änderung |\n| ------------------- | --------- | ---------- | -------- |\n| 1,0 L reines Wasser | 7,00      | 3,00       | −4,00    |\n| 1,0 L Acetat-Puffer | 4,68      | 4,67       | −0,01    |\n\n## Pufferkapazität\n\nDie **Pufferkapazität** beschreibt, wie viel Säure oder Base ein Puffer neutralisieren kann, bevor der pH-Wert stark abweicht.\n\n### Einflussfaktoren\n\n1. **Gesamtkonzentration:** Je höher die Konzentrationen von Säure und Base, desto größer die Kapazität\n2. **Verhältnis Base/Säure:** Die Kapazität ist am höchsten, wenn das Verhältnis nahe 1:1 liegt (pH ≈ pKs)\n\n### Faustregel\n\nEin Puffer funktioniert effektiv im Bereich:\n\n$$\\text{p}K_s - 1 < \\text{pH} < \\text{p}K_s + 1$$\n\n## Verdünnung eines Puffers\n\n**Wichtige Erkenntnis:** Das Verdünnen eines Puffers ändert den pH-Wert **nicht**!\n\nGrund: In der Henderson-Hasselbalch-Gleichung steht das Verhältnis der Konzentrationen. Beim Verdünnen werden beide Konzentrationen um denselben Faktor reduziert – das Verhältnis bleibt gleich.\n\n> **Aber:** Die Pufferkapazität sinkt durch Verdünnung, da weniger Säure und Base zur Verfügung stehen.",
+      "audioFile": "09-learning-pufferkapazitaet.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Ein Puffer enthält 0,5 mol Säure (HA) und 0,5 mol konjugierte Base (A⁻). Es werden 0,1 mol NaOH zugegeben. Wie lauten die Stoffmengen nach der Reaktion?",
+      "options": [
+        "0,6 mol HA und 0,4 mol A⁻",
+        "0,4 mol HA und 0,6 mol A⁻",
+        "0,5 mol HA und 0,6 mol A⁻",
+        "0,4 mol HA und 0,5 mol A⁻"
+      ],
+      "correctAnswer": "0,4 mol HA und 0,6 mol A⁻",
+      "explanation": "NaOH (Base) reagiert mit HA (Säure): HA + OH⁻ → A⁻ + H₂O. Die Säure nimmt um 0,1 mol ab (0,5 → 0,4), die konjugierte Base nimmt um 0,1 mol zu (0,5 → 0,6).",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Ein Acetat-Puffer (pKs = 4,75) enthält 0,30 mol Essigsäure und 0,30 mol Acetat in 1 L. Nach Zugabe von 0,05 mol HCl: Berechne den pH-Wert (auf 2 Dezimalstellen).",
+      "correctAnswer": 4.61,
+      "unit": "",
+      "tolerance": 0.05,
+      "hint": "Schritt 1: HCl reagiert mit Acetat (Base): A⁻ + H⁺ → HA. Schritt 2: Henderson-Hasselbalch mit neuen Stoffmengen.",
+      "explanation": "Nach Reaktion: n(HA) = 0,30 + 0,05 = 0,35 mol; n(A⁻) = 0,30 - 0,05 = 0,25 mol. pH = 4,75 + log(0,25/0,35) = 4,75 + log(0,714) = 4,75 - 0,15 = 4,60.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=Vpq0mYmoso4",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        }
+      ],
+      "content": "Pufferberechnungen (Chemie-ist-cool). Praxisnahe Beispielrechnung zur pH-Wert-Änderung nach Zugabe einer starken Säure/Base in ein bestehendes Puffersystem."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        },
+        {
+          "sourceId": "kotz-k18"
+        }
+      ],
+      "content": "# Puffer-Design\n\nDie Herstellung eines Puffers mit einem bestimmten pH-Wert erfordert eine systematische Vorgehensweise.\n\n## Schritt 1: Wahl der Säure\n\nWähle eine schwache Säure, deren **pKs-Wert nahe am gewünschten pH** liegt.\n\n### Beispiel\n\nGewünschter pH = 4,30\n\nVerfügbare Säuren:\n\n| Säure   | pKs  |\n| ------- | ---- |\n| HSO₄⁻   | 1,92 |\n| CH₃COOH | 4,74 |\n| HCN     | 9,40 |\n\n**Beste Wahl:** Essigsäure (pKs = 4,74), da dieser Wert am nächsten bei 4,30 liegt.\n\n## Schritt 2: Berechnung des Verhältnisses\n\nMit der Henderson-Hasselbalch-Gleichung berechnen wir das erforderliche Verhältnis:\n\n$$4{,}30 = 4{,}74 + \\log\\left(\\frac{[\\text{Base}]}{[\\text{Säure}]}\\right)$$\n\n$$-0{,}44 = \\log\\left(\\frac{[\\text{Base}]}{[\\text{Säure}]}\\right)$$\n\n$$\\frac{[\\text{Base}]}{[\\text{Säure}]} = 10^{-0{,}44} = 0{,}36$$\n\nFür pH 4,30 benötigen wir also etwa **1 Teil Acetat zu 2,8 Teilen Essigsäure**.\n\n## Optimaler Pufferbereich\n\nEin Puffer funktioniert am besten im Bereich:\n\n$$\\text{p}K_s \\pm 1$$\n\nAußerhalb dieses Bereichs wird das Verhältnis Base/Säure zu extrem (< 0,1 oder > 10), und die Pufferwirkung lässt stark nach.\n\n## Praktische Tipps\n\n1. **pKs-Wert beachten:** Wähle eine Säure mit pKs ≈ gewünschter pH\n2. **Ausreichende Konzentration:** Höhere Konzentrationen = bessere Pufferkapazität\n3. **Verhältnis 1:1 optimal:** Die beste Pufferwirkung liegt bei pH = pKs",
+      "audioFile": "13-learning-pufferdesign.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Für einen Puffer mit pH 9,0 soll ein Puffersystem gewählt werden. Welches ist am besten geeignet?",
+      "options": [
+        "Essigsäure/Acetat (pKs = 4,75)",
+        "Ammonium/Ammoniak (pKs = 9,25)",
+        "Phosphorsäure/Dihydrogenphosphat (pKs = 2,1)",
+        "Kohlensäure/Hydrogencarbonat (pKs = 6,4)"
+      ],
+      "correctAnswer": "Ammonium/Ammoniak (pKs = 9,25)",
+      "explanation": "Der pKs-Wert sollte möglichst nahe am gewünschten pH liegen. 9,25 ist am nächsten bei 9,0. Ein Puffer funktioniert optimal im Bereich pKs ± 1.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        },
+        {
+          "sourceId": "kotz-k18"
+        }
+      ],
+      "content": "# Titration: Starke Säure + Starke Base\n\nDie Titration ist eine quantitative Analysemethode, bei der eine Lösung bekannter Konzentration (Maßlösung) zu einer Probelösung gegeben wird, bis die Reaktion vollständig ist.\n\n## Titrationskurve: HCl mit NaOH\n\nBei der Titration einer starken Säure mit einer starken Base zeigt die Kurve einen charakteristischen Verlauf:\n\n<!-- SVG-Titrationskurve: Starke Säure + Starke Base -->\n<svg viewBox=\"0 0 320 220\" style=\"max-width: 400px; width: 100%;\" aria-label=\"Titrationskurve: pH steigt langsam, springt bei pH 7 am Äquivalenzpunkt steil an\"><rect width=\"320\" height=\"220\" fill=\"#fafafa\"/><line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"50\" y1=\"180\" x2=\"300\" y2=\"180\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"15\" y=\"25\" font-size=\"12\" fill=\"#333\">pH 14</text><text x=\"15\" y=\"100\" font-size=\"12\" fill=\"#333\">pH 7</text><text x=\"15\" y=\"170\" font-size=\"12\" fill=\"#333\">pH 1</text><line x1=\"50\" y1=\"100\" x2=\"300\" y2=\"100\" stroke=\"#ccc\" stroke-width=\"1\" stroke-dasharray=\"4\"/><polyline points=\"50,170 100,165 140,155 160,145 175,120 180,100 185,55 190,40 220,35 300,30\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"180\" cy=\"100\" r=\"5\" fill=\"#dc2626\"/><text x=\"185\" y=\"85\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\">ÄP (pH 7)</text><text x=\"160\" y=\"200\" font-size=\"12\" fill=\"#333\">V(NaOH) →</text></svg>\n\n## Die vier Bereiche\n\n### 1. Startpunkt (vor Zugabe)\n\nNur die starke Säure ist vorhanden. Bei 0,10 M HCl:\n\n$$\\text{pH} = -\\log(0{,}10) = 1{,}0$$\n\n### 2. Vor dem Äquivalenzpunkt\n\nDer pH-Wert steigt langsam an. Die überschüssige Säure dominiert noch den pH-Wert.\n\n### 3. Äquivalenzpunkt (ÄP)\n\nAm Äquivalenzpunkt wurden **gleiche Stoffmengen** Säure und Base gemischt:\n\n$$n(\\text{HCl}) = n(\\text{NaOH})$$\n\n**Wichtig:** Der pH-Wert beträgt genau **7,00**!\n\nGrund: Es liegen nur neutrale Ionen vor:\n- Na⁺ (von NaOH) → reagiert nicht mit Wasser\n- Cl⁻ (von HCl) → reagiert nicht mit Wasser\n\n### 4. Nach dem Äquivalenzpunkt\n\nÜberschüssiges NaOH bestimmt den pH-Wert. Bei starkem Überschuss nähert sich der pH dem Wert der Maßlösung an.\n\n## Der Sprung am Äquivalenzpunkt\n\nAm Äquivalenzpunkt ändert sich der pH-Wert sehr schnell – ein einziger Tropfen kann den pH um mehrere Einheiten ändern. Dies liegt daran, dass die gepufferte Wirkung der ursprünglichen Säure/Base wegfällt.\n\n## Praktische Aspekte\n\n- Der **Äquivalenzpunkt** ist der theoretische Punkt der vollständigen Reaktion\n- Der **Endpunkt** ist der experimentell beobachtete Punkt (z.B. Farbumschlag eines Indikators)\n- Beide sollten möglichst übereinstimmen",
+      "audioFile": "15-learning-titration-stark.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welchen pH-Wert hat die Lösung am Äquivalenzpunkt bei der Titration von HCl mit KOH?",
+      "options": [
+        "pH < 7 (sauer)",
+        "pH = 7 (neutral)",
+        "pH > 7 (basisch)",
+        "Der pH hängt von der Konzentration ab"
+      ],
+      "correctAnswer": "pH = 7 (neutral)",
+      "explanation": "Bei der Titration einer starken Säure mit einer starken Base entsteht am Äquivalenzpunkt nur neutrales Salz (KCl) und Wasser. Weder K⁺ noch Cl⁻ reagieren mit Wasser, daher ist der pH genau 7.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=g_v_7v2Sba8",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        }
+      ],
+      "content": "Säure-Base-Titration starke Säure/starke Base (Chemie - simpleclub). Visualisierung der Titrationskurve einer starken Säure, bei der der Äquivalenzpunkt exakt im Neutralpunkt (pH 7) liegt."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        },
+        {
+          "sourceId": "kotz-k18"
+        }
+      ],
+      "content": "# Titration: Schwache Säure + Starke Base\n\nDie Titration einer schwachen Säure mit einer starken Base (z.B. Essigsäure mit NaOH) zeigt einen deutlich anderen Kurvenverlauf als die Titration starker Säure/Base.\n\n## Die Titrationskurve\n\n<!-- SVG-Titrationskurve: Schwache Säure + Starke Base -->\n<svg viewBox=\"0 0 320 240\" style=\"max-width: 400px; width: 100%;\" aria-label=\"Titrationskurve: Start bei pH 3, flache Pufferregion, Sprung zu pH 9 am Äquivalenzpunkt\"><rect width=\"320\" height=\"240\" fill=\"#fafafa\"/><line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"200\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"50\" y1=\"200\" x2=\"300\" y2=\"200\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"10\" y=\"25\" font-size=\"11\" fill=\"#333\">pH 14</text><text x=\"10\" y=\"70\" font-size=\"11\" fill=\"#333\">pH 9</text><text x=\"10\" y=\"110\" font-size=\"11\" fill=\"#333\">pH 7</text><text x=\"10\" y=\"145\" font-size=\"11\" fill=\"#333\">pH 5</text><text x=\"10\" y=\"185\" font-size=\"11\" fill=\"#333\">pH 3</text><line x1=\"50\" y1=\"110\" x2=\"300\" y2=\"110\" stroke=\"#ccc\" stroke-width=\"1\" stroke-dasharray=\"4\"/><line x1=\"50\" y1=\"70\" x2=\"300\" y2=\"70\" stroke=\"#ccc\" stroke-width=\"1\" stroke-dasharray=\"4\"/><rect x=\"70\" y=\"130\" width=\"90\" height=\"50\" fill=\"#dbeafe\" opacity=\"0.5\"/><text x=\"85\" y=\"160\" font-size=\"10\" fill=\"#1e40af\">Puffer-Region</text><polyline points=\"50,180 80,170 110,150 130,145 150,138 165,120 180,70 190,55 210,45 300,35\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"110\" cy=\"150\" r=\"4\" fill=\"#059669\"/><text x=\"75\" y=\"125\" font-size=\"10\" fill=\"#059669\">Halb-ÄP</text><text x=\"75\" y=\"137\" font-size=\"9\" fill=\"#059669\">(pH = pKs)</text><circle cx=\"180\" cy=\"70\" r=\"5\" fill=\"#dc2626\"/><text x=\"188\" y=\"60\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\">ÄP</text><text x=\"188\" y=\"75\" font-size=\"10\" fill=\"#dc2626\">(pH > 7!)</text><text x=\"160\" y=\"218\" font-size=\"12\" fill=\"#333\">V(NaOH) →</text></svg>\n\n## Vier wichtige Bereiche\n\n### 1. Startpunkt (nur schwache Säure)\n\nBerechnung wie für eine schwache Säure:\n\n$$[\\text{H}^+] = \\sqrt{K_s \\cdot c_{\\text{Säure}}}$$\n\nDer pH-Wert liegt deutlich über 1, aber unter 7.\n\n**Beispiel:** 0,10 M Essigsäure (Ks = 1,8 × 10⁻⁵)\n\n$$[\\text{H}^+] = \\sqrt{1{,}8 \\times 10^{-5} \\times 0{,}10} = 1{,}34 \\times 10^{-3}\\,\\text{M}$$\n\npH = 2,87\n\n### 2. Puffer-Region (vor dem ÄP)\n\nWährend der Zugabe von NaOH entsteht ein **Puffer**:\n\n- Die Base neutralisiert einen Teil der schwachen Säure\n- Es bildet sich ein Gemisch aus schwacher Säure und konjugierter Base\n\n**Berechnung:** Henderson-Hasselbalch-Gleichung\n\n### Der Halbäquivalenzpunkt\n\nWenn genau die **Hälfte der Säure** neutralisiert ist:\n\n$$[\\text{Säure}] = [\\text{konjugierte Base}]$$\n\nDaraus folgt: **pH = pKs**\n\n> Der Halbäquivalenzpunkt ist der einfachste Weg, den pKs-Wert einer unbekannten Säure zu bestimmen!\n\n### 3. Äquivalenzpunkt\n\nAm Äquivalenzpunkt wurde alle Säure zur konjugierten Base umgesetzt.\n\n**Wichtig:** Der pH-Wert ist **größer als 7** (basisch)!\n\nGrund: Die konjugierte Base hydrolysiert:\n\n$$\\text{A}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HA} + \\text{OH}^-$$\n\n**Berechnung:**\n\n1. Berechne Kb aus Ks: $K_b = K_w / K_s$\n2. Berechne [OH⁻]: $[\\text{OH}^-] = \\sqrt{K_b \\cdot c_{\\text{Salz}}}$\n3. Berechne pOH und dann pH\n\n### 4. Nach dem Äquivalenzpunkt\n\nÜberschüssiges NaOH dominiert den pH-Wert. Die Hydrolyse der konjugierten Base kann vernachlässigt werden.\n\n## Vergleich: Äquivalenzpunkte\n\n| Titration       | pH am ÄP | Grund                           |\n| --------------- | -------- | ------------------------------- |\n| Stark + Stark   | 7,00     | Neutrales Salz                  |\n| Schwach + Stark | > 7      | Basische Hydrolyse des Produkts |\n| Stark + Schwach | < 7      | Saure Hydrolyse des Produkts    |",
+      "audioFile": "18-learning-titration-schwach.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Bei einer Titration von Essigsäure mit NaOH misst man am Halbäquivalenzpunkt einen pH von 4,75. Welche Aussage ist korrekt?",
+      "options": [
+        "Der pKs-Wert der Essigsäure beträgt 9,50",
+        "Der pKs-Wert der Essigsäure beträgt 4,75",
+        "Am Äquivalenzpunkt wird der pH ebenfalls 4,75 betragen",
+        "Die Essigsäure ist bereits vollständig neutralisiert"
+      ],
+      "correctAnswer": "Der pKs-Wert der Essigsäure beträgt 4,75",
+      "explanation": "Am Halbäquivalenzpunkt sind genau 50% der Säure neutralisiert. Dann gilt [Säure] = [Base], und nach Henderson-Hasselbalch ist pH = pKs. Der pH-Wert am ÄP wird höher sein (basisch).",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Phasen einer Titration (schwache Säure + starke Base) den pH-Bereichen zu:",
+      "pairs": [
+        {
+          "left": "Startpunkt",
+          "right": "pH zwischen 2 und 5 (schwach sauer)"
+        },
+        {
+          "left": "Halbäquivalenzpunkt",
+          "right": "pH = pKs der Säure"
+        },
+        {
+          "left": "Äquivalenzpunkt",
+          "right": "pH > 7 (basisch)"
+        },
+        {
+          "left": "Nach Äquivalenzpunkt",
+          "right": "pH wird von überschüssiger Base bestimmt"
+        }
+      ],
+      "explanation": "Die Titrationskurve zeigt charakteristische Bereiche: Start (schwache Säure), Pufferregion (mit Halb-ÄP bei pH = pKs), basischer Äquivalenzpunkt, und schließlich Dominanz der überschüssigen Base.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=ypneIpxK_sA",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k18"
+        }
+      ],
+      "content": "Säure-Base-Titration: Schwache Säure mit starker Base (Joerg Melzer). Detaillierte Analyse der Titrationskurve inklusive Pufferbereich, Halbäquivalenzpunkt und basischem Äquivalenzpunkt."
+    },
+    {
+      "type": "self-assessment",
+      "question": "Bist du bereit für den Vorlesungstest zu Säure-Base-Gleichgewichten?",
+      "checkpoints": [
+        "Ich kann den Common Ion Effect erklären und seine Auswirkung auf den pH-Wert vorhersagen",
+        "Ich weiß, woraus ein Puffer besteht und wie er funktioniert",
+        "Ich kann die Henderson-Hasselbalch-Gleichung anwenden",
+        "Ich kann pH-Änderungen nach Zugabe von Säure/Base zu einem Puffer berechnen (2-Schritt-Methode)",
+        "Ich kann einen Puffer für einen gewünschten pH-Wert entwerfen",
+        "Ich kenne den Unterschied zwischen Titrationen von starken und schwachen Säuren",
+        "Ich weiß, warum der Äquivalenzpunkt bei schwacher Säure + starker Base basisch ist",
+        "Ich verstehe die Bedeutung des Halbäquivalenzpunkts (pH = pKs)"
+      ],
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum gemeinsamen Ionen-Effekt (Common Ion Effect) sind korrekt?",
+      "options": [
+        "Er basiert auf dem Prinzip von Le Chatelier",
+        "Die Zugabe eines gemeinsamen Ions erhöht den Dissoziationsgrad einer schwachen Säure",
+        "Er führt zur Verschiebung des Gleichgewichts in Richtung der undissoziierten Form",
+        "Er tritt nur bei starken Säuren auf"
+      ],
+      "correctAnswers": [
+        "Er basiert auf dem Prinzip von Le Chatelier",
+        "Er führt zur Verschiebung des Gleichgewichts in Richtung der undissoziierten Form"
+      ],
+      "explanation": "Der Common Ion Effect ist eine Anwendung von Le Chatelier: Die Zugabe eines Produkt-Ions verschiebt das Gleichgewicht nach links (zur undissoziierten Form). Der Dissoziationsgrad sinkt dadurch. Der Effekt tritt bei schwachen Säuren und Basen auf, nicht bei starken."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Kombinationen bilden eine wirksame Pufferlösung?",
+      "options": [
+        "HCl und NaCl",
+        "CH₃COOH und CH₃COONa",
+        "NH₄Cl und NH₃",
+        "NaOH und NaCl"
+      ],
+      "correctAnswers": [
+        "CH₃COOH und CH₃COONa",
+        "NH₄Cl und NH₃"
+      ],
+      "explanation": "Ein Puffer besteht aus einer schwachen Säure und ihrer konjugierten Base. Essigsäure/Acetat und Ammonium/Ammoniak sind klassische Puffersysteme. HCl und NaOH sind starke Elektrolyte und bilden keine Puffer."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Pufferkapazität sind korrekt?",
+      "options": [
+        "Sie ist am höchsten, wenn pH = pKs gilt",
+        "Sie steigt mit zunehmender Konzentration der Pufferkomponenten",
+        "Sie ändert sich beim Verdünnen des Puffers",
+        "Ein Puffer wirkt effektiv im Bereich pKs ± 1"
+      ],
+      "correctAnswers": [
+        "Sie ist am höchsten, wenn pH = pKs gilt",
+        "Sie steigt mit zunehmender Konzentration der Pufferkomponenten",
+        "Ein Puffer wirkt effektiv im Bereich pKs ± 1"
+      ],
+      "explanation": "Die Pufferkapazität ist bei pH = pKs maximal (Verhältnis 1:1) und steigt mit der Konzentration. Beim Verdünnen sinkt die Kapazität, aber der pH-Wert bleibt gleich. Der effektive Bereich liegt bei pKs ± 1."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Ein Acetat-Puffer (pKs = 4,75) enthält 0,20 mol Essigsäure und 0,20 mol Acetat. Es werden 0,05 mol HCl zugegeben. Welche Aussagen sind korrekt?",
+      "options": [
+        "Die Acetat-Menge sinkt auf 0,15 mol",
+        "Die Essigsäure-Menge steigt auf 0,25 mol",
+        "Der pH-Wert sinkt unter den pKs-Wert",
+        "Die HCl reagiert mit der Essigsäure"
+      ],
+      "correctAnswers": [
+        "Die Acetat-Menge sinkt auf 0,15 mol",
+        "Die Essigsäure-Menge steigt auf 0,25 mol",
+        "Der pH-Wert sinkt unter den pKs-Wert"
+      ],
+      "explanation": "HCl reagiert mit der Base-Komponente (Acetat): OAc⁻ + H⁺ → HOAc. Acetat nimmt um 0,05 mol ab (0,15), Essigsäure nimmt zu (0,25). Da nun [Säure] > [Base], ist log(Base/Säure) negativ, also pH < pKs."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für die Herstellung eines Puffers mit pH 9,5 stehen verschiedene Puffersysteme zur Verfügung. Welche Aussagen sind korrekt?",
+      "options": [
+        "Ein Ammonium/Ammoniak-Puffer (pKs = 9,25) wäre geeignet",
+        "Ein Acetat-Puffer (pKs = 4,75) wäre geeignet",
+        "Das Verhältnis Base/Säure müsste größer als 1 sein",
+        "Der pKs-Wert sollte möglichst weit vom gewünschten pH entfernt sein"
+      ],
+      "correctAnswers": [
+        "Ein Ammonium/Ammoniak-Puffer (pKs = 9,25) wäre geeignet",
+        "Das Verhältnis Base/Säure müsste größer als 1 sein"
+      ],
+      "explanation": "Für pH 9,5 eignet sich Ammonium/Ammoniak (pKs = 9,25, nah am Ziel-pH). Da pH > pKs, muss [Base]/[Säure] > 1 sein. Der pKs sollte möglichst nah am gewünschten pH liegen (effektiver Bereich: pKs ± 1)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Titration einer starken Säure (HCl) mit einer starken Base (NaOH) sind korrekt?",
+      "options": [
+        "Der pH-Wert am Äquivalenzpunkt beträgt genau 7",
+        "Am Äquivalenzpunkt liegt ein neutrales Salz vor",
+        "Die Titrationskurve zeigt einen steilen Sprung am Äquivalenzpunkt",
+        "Der Äquivalenzpunkt liegt im basischen Bereich"
+      ],
+      "correctAnswers": [
+        "Der pH-Wert am Äquivalenzpunkt beträgt genau 7",
+        "Am Äquivalenzpunkt liegt ein neutrales Salz vor",
+        "Die Titrationskurve zeigt einen steilen Sprung am Äquivalenzpunkt"
+      ],
+      "explanation": "Bei starker Säure + starker Base entsteht ein neutrales Salz (NaCl), das nicht hydrolysiert. Der pH am ÄP ist genau 7. Der steile Sprung ermöglicht die Verwendung verschiedener Indikatoren."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Titration einer schwachen Säure mit einer starken Base sind korrekt?",
+      "options": [
+        "Der pH-Wert am Äquivalenzpunkt ist größer als 7",
+        "Am Halbäquivalenzpunkt gilt pH = pKs",
+        "Die konjugierte Base am Äquivalenzpunkt hydrolysiert im Wasser",
+        "Der Start-pH ist niedriger als bei einer gleichkonzentrierten starken Säure"
+      ],
+      "correctAnswers": [
+        "Der pH-Wert am Äquivalenzpunkt ist größer als 7",
+        "Am Halbäquivalenzpunkt gilt pH = pKs",
+        "Die konjugierte Base am Äquivalenzpunkt hydrolysiert im Wasser"
+      ],
+      "explanation": "Am ÄP liegt nur die konjugierte Base vor, die mit Wasser reagiert (Hydrolyse → OH⁻ → pH > 7). Am Halb-ÄP gilt [Säure] = [Base], also pH = pKs. Eine schwache Säure hat bei gleicher Konzentration einen höheren Start-pH als eine starke Säure."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Wahl von Indikatoren bei Titrationen sind korrekt?",
+      "options": [
+        "Der Umschlagbereich des Indikators sollte am Äquivalenzpunkt liegen",
+        "Phenolphthalein (Umschlag pH 8-10) eignet sich für schwache Säure + starke Base",
+        "Indikatoren sind selbst schwache Säuren oder Basen",
+        "Bei der Titration starker Säure/Base kann fast jeder Indikator verwendet werden"
+      ],
+      "correctAnswers": [
+        "Der Umschlagbereich des Indikators sollte am Äquivalenzpunkt liegen",
+        "Phenolphthalein (Umschlag pH 8-10) eignet sich für schwache Säure + starke Base",
+        "Indikatoren sind selbst schwache Säuren oder Basen",
+        "Bei der Titration starker Säure/Base kann fast jeder Indikator verwendet werden"
+      ],
+      "explanation": "Der Indikator zeigt den Endpunkt an und sollte im Bereich des ÄP umschlagen. Indikatoren sind konjugierte Säure-Base-Paare mit unterschiedlichen Farben. Bei stark/stark ist der pH-Sprung so groß, dass viele Indikatoren funktionieren."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Das Blutpuffersystem CO₂/HCO₃⁻ hält den Blut-pH bei etwa 7,4 (pKs = 6,1). Welche Aussagen sind korrekt?",
+      "options": [
+        "Das Verhältnis HCO₃⁻ zu CO₂ beträgt etwa 20:1",
+        "Hyperventilation führt zu einer Erhöhung des pH-Werts",
+        "Der Puffer funktioniert trotz des Abstands zwischen pH und pKs, weil CO₂ über die Lunge reguliert wird",
+        "Bei Hypoventilation sinkt der Blut-pH"
+      ],
+      "correctAnswers": [
+        "Das Verhältnis HCO₃⁻ zu CO₂ beträgt etwa 20:1",
+        "Hyperventilation führt zu einer Erhöhung des pH-Werts",
+        "Der Puffer funktioniert trotz des Abstands zwischen pH und pKs, weil CO₂ über die Lunge reguliert wird",
+        "Bei Hypoventilation sinkt der Blut-pH"
+      ],
+      "explanation": "pH 7,4 = 6,1 + log(Verhältnis) ergibt Verhältnis ≈ 20:1. Hyperventilation senkt CO₂ → pH steigt (respiratorische Alkalose). Der Körper kann CO₂ aktiv regulieren (offenes System). Hypoventilation erhöht CO₂ → pH sinkt."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Betrachte die Titrationskurve einer schwachen Säure mit starker Base. Welche Aussagen zu den charakteristischen Punkten sind korrekt?",
+      "options": [
+        "Der Anfangs-pH kann mit der Formel pH = ½(pKs - log c₀) berechnet werden",
+        "In der Puffer-Region ändert sich der pH nur langsam",
+        "Der steilste Anstieg der Kurve liegt am Äquivalenzpunkt",
+        "Nach dem Äquivalenzpunkt wird der pH durch die Hydrolyse des Salzes bestimmt"
+      ],
+      "correctAnswers": [
+        "In der Puffer-Region ändert sich der pH nur langsam",
+        "Der steilste Anstieg der Kurve liegt am Äquivalenzpunkt"
+      ],
+      "explanation": "Die Puffer-Region dämpft pH-Änderungen. Am ÄP ist der Sprung am steilsten, weil keine Pufferkapazität mehr vorhanden ist. Nach dem ÄP dominiert die überschüssige starke Base den pH, nicht die Salzhydrolyse. Die Anfangs-pH-Formel ist pH = ½(pKs - log c₀), nicht pH = ½(pKs + log c₀)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Ein Wissenschaftler möchte einen Phosphatpuffer für ein Enzymexperiment bei pH 7,2 herstellen. Das Phosphatsystem hat pKs-Werte von 2,1 (H₃PO₄), 7,2 (H₂PO₄⁻) und 12,4 (HPO₄²⁻). Welche Aussagen sind korrekt?",
+      "options": [
+        "Das Pufferpaar H₂PO₄⁻/HPO₄²⁻ ist optimal geeignet",
+        "Das Verhältnis H₂PO₄⁻ zu HPO₄²⁻ sollte 1:1 betragen",
+        "Das Pufferpaar H₃PO₄/H₂PO₄⁻ wäre ebenso gut geeignet",
+        "Die Pufferkapazität ist bei diesem pH maximal für das gewählte System"
+      ],
+      "correctAnswers": [
+        "Das Pufferpaar H₂PO₄⁻/HPO₄²⁻ ist optimal geeignet",
+        "Das Verhältnis H₂PO₄⁻ zu HPO₄²⁻ sollte 1:1 betragen",
+        "Die Pufferkapazität ist bei diesem pH maximal für das gewählte System"
+      ],
+      "explanation": "Der pKs von 7,2 (H₂PO₄⁻/HPO₄²⁻) entspricht genau dem gewünschten pH. Bei pH = pKs ist das Verhältnis 1:1 und die Pufferkapazität maximal. H₃PO₄/H₂PO₄⁻ (pKs = 2,1) wäre weit vom Ziel-pH entfernt."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Ein Puffer mit pH 5,00 wird analysiert. Er enthält eine einprotonige schwache Säure HA mit pKs = 4,50. Welche Aussagen sind korrekt?",
+      "options": [
+        "Die Konzentration der konjugierten Base ist höher als die der Säure",
+        "Das Verhältnis [A⁻]/[HA] beträgt etwa 3,16",
+        "Zugabe von 0,01 mol HCl zu 1 L dieses Puffers würde den pH stark senken",
+        "Der Puffer liegt innerhalb seines effektiven Bereichs"
+      ],
+      "correctAnswers": [
+        "Die Konzentration der konjugierten Base ist höher als die der Säure",
+        "Das Verhältnis [A⁻]/[HA] beträgt etwa 3,16",
+        "Der Puffer liegt innerhalb seines effektiven Bereichs"
+      ],
+      "explanation": "pH > pKs bedeutet [Base] > [Säure]. Das Verhältnis: 5,00 = 4,50 + log(x), also x = 10^0,5 ≈ 3,16. Der pH liegt im Bereich pKs ± 1 (3,5 bis 5,5). Die Stärke der pH-Änderung hängt von der Gesamtkonzentration ab – ohne diese Info lässt sich keine Aussage treffen."
+    }
+  ],
+  "generatedAt": "2026-01-25T09:27:35.340Z"
+}

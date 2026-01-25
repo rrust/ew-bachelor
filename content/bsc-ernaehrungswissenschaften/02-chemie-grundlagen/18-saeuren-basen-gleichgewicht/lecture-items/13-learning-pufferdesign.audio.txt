@@ -1,0 +1,33 @@
+Du sollst einen Puffer mit pH 4,3 herstellen. Wo fängst du an?
+
+...
+
+Die Antwort: Bei der Wahl der richtigen Säure.
+
+Du brauchst eine schwache Säure, deren pKs-Wert möglichst nahe am gewünschten pH liegt.
+
+Bei pH 4,3 wäre Essigsäure mit einem pKs von 4,74 eine gute Wahl. Sie liegt näher dran als zum Beispiel Blausäure mit pKs 9,4.
+
+...
+
+Im zweiten Schritt berechnest du das Verhältnis von Base zu Säure.
+
+Mit der Henderson-Hasselbalch-Gleichung stellst du um. Für pH 4,3 und pKs 4,74 ergibt sich ein Verhältnis von etwa 1 zu 2,8.
+
+Das heißt: Auf 1 Teil Acetat kommen 2,8 Teile Essigsäure.
+
+...
+
+Aber Achtung! Ein Puffer funktioniert nur in einem bestimmten Bereich. Und zwar pKs plus-minus eins.
+
+Außerhalb dieses Bereichs wird das Verhältnis zu extrem. Entweder zu viel Säure oder zu viel Base. Die Pufferwirkung lässt dann stark nach.
+
+...
+
+Drei praktische Tipps für dich:
+
+Erstens, wähle immer eine Säure mit pKs nahe am Ziel-pH.
+
+Zweitens, verwende ausreichend hohe Konzentrationen für eine gute Pufferkapazität.
+
+Drittens, das optimale Verhältnis ist 1 zu 1. Dann hast du die beste Pufferwirkung und der pH entspricht genau dem pKs.
