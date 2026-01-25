@@ -22,27 +22,27 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 ## Ionenbindung vs. Kovalente Bindung
 
-| Merkmal        | Ionenbindung         | Kovalente Bindung    |
-| -------------- | -------------------- | -------------------- |
-| Elektronenfluss| Übertragung          | Gemeinsame Nutzung   |
-| Partner        | Metall + Nichtmetall | Nichtmetall + Nichtm.|
-| Bindungstyp    | Elektrostatisch      | Elektronenpaar       |
-| Beispiel       | NaCl                 | H₂O, CO₂             |
+| Merkmal         | Ionenbindung         | Kovalente Bindung     |
+| --------------- | -------------------- | --------------------- |
+| Elektronenfluss | Übertragung          | Gemeinsame Nutzung    |
+| Partner         | Metall + Nichtmetall | Nichtmetall + Nichtm. |
+| Bindungstyp     | Elektrostatisch      | Elektronenpaar        |
+| Beispiel        | NaCl                 | H₂O, CO₂              |
 
 ***
 
 ## Valenzelektronen (Hauptgruppen)
 
-| Gruppe | Valenzelektronen | Beispiele          |
-| ------ | ---------------- | ------------------ |
-| 1      | 1                | H, Li, Na, K       |
-| 2      | 2                | Be, Mg, Ca         |
-| 13     | 3                | B, Al              |
-| 14     | 4                | C, Si              |
-| 15     | 5                | N, P               |
-| 16     | 6                | O, S               |
-| 17     | 7                | F, Cl, Br, I       |
-| 18     | 8                | He(2), Ne, Ar      |
+| Gruppe | Valenzelektronen | Beispiele     |
+| ------ | ---------------- | ------------- |
+| 1      | 1                | H, Li, Na, K  |
+| 2      | 2                | Be, Mg, Ca    |
+| 13     | 3                | B, Al         |
+| 14     | 4                | C, Si         |
+| 15     | 5                | N, P          |
+| 16     | 6                | O, S          |
+| 17     | 7                | F, Cl, Br, I  |
+| 18     | 8                | He(2), Ne, Ar |
 
 ***
 
@@ -61,21 +61,21 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 **Drei Ausnahmen:**
 
-| Ausnahme           | Beispiel  | Erklärung                    |
-| ------------------ | --------- | ---------------------------- |
-| Unterschreitung    | BF₃, BeCl₂| Weniger als 8 e⁻ am Zentral  |
-| Radikale           | NO, NO₂   | Ungerade Elektronenzahl      |
-| Erweitertes Oktett | PCl₅, SF₆ | Ab 3. Periode: d-Orbitale    |
+| Ausnahme           | Beispiel   | Erklärung                   |
+| ------------------ | ---------- | --------------------------- |
+| Unterschreitung    | BF₃, BeCl₂ | Weniger als 8 e⁻ am Zentral |
+| Radikale           | NO, NO₂    | Ungerade Elektronenzahl     |
+| Erweitertes Oktett | PCl₅, SF₆  | Ab 3. Periode: d-Orbitale   |
 
 ***
 
 ## Mehrfachbindungen
 
-| Bindung    | Elektronenpaare | σ-Bindungen | π-Bindungen |
-| ---------- | --------------- | ----------- | ----------- |
-| Einfach    | 1               | 1           | 0           |
-| Doppel     | 2               | 1           | 1           |
-| Dreifach   | 3               | 1           | 2           |
+| Bindung  | Elektronenpaare | σ-Bindungen | π-Bindungen |
+| -------- | --------------- | ----------- | ----------- |
+| Einfach  | 1               | 1           | 0           |
+| Doppel   | 2               | 1           | 1           |
+| Dreifach | 3               | 1           | 2           |
 
 **σ:** Frei drehbar, stabil
 **π:** Keine Rotation, reaktiver

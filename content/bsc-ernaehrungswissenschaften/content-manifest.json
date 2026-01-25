@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-25T11:48:08.675Z",
+  "generatedAt": "2026-01-25T15:14:51.096Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -43,8 +43,8 @@
       "version": "0.0.1"
     },
     "02-chemie-grundlagen/02-atome-formeln": {
-      "checksum": "0ba24003",
-      "sizeKB": 75.9,
+      "checksum": "f99dc6e3",
+      "sizeKB": 76.8,
       "itemCount": 55,
       "quizCount": 15,
       "topic": "Atome, Moleküle und Ionen",
@@ -53,8 +53,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/03-chemische-reaktionen": {
-      "checksum": "8fec86f5",
-      "sizeKB": 83.5,
+      "checksum": "a78aec92",
+      "sizeKB": 84.8,
       "itemCount": 57,
       "quizCount": 15,
       "topic": "Chemische Reaktionen",
@@ -63,8 +63,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/04-gleichungen-stoechiometrie": {
-      "checksum": "d3bda29c",
-      "sizeKB": 81.8,
+      "checksum": "12cedcfb",
+      "sizeKB": 82.6,
       "itemCount": 55,
       "quizCount": 15,
       "topic": "Gleichungen und Stöchiometrie",
@@ -73,8 +73,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/05-thermodynamik-enthalpie-kalorimetrie": {
-      "checksum": "afa31a99",
-      "sizeKB": 125,
+      "checksum": "1338adec",
+      "sizeKB": 126.4,
       "itemCount": 83,
       "quizCount": 12,
       "topic": "Thermodynamik, Enthalpie & Kalorimetrie",
@@ -83,8 +83,8 @@
       "version": "2.0.0"
     },
     "02-chemie-grundlagen/06-elektronenstruktur-atome": {
-      "checksum": "188bd396",
-      "sizeKB": 90.9,
+      "checksum": "063c693e",
+      "sizeKB": 92.3,
       "itemCount": 76,
       "quizCount": 12,
       "topic": "Die Elektronenstruktur der Atome",
@@ -93,8 +93,8 @@
       "version": "1.1.0"
     },
     "02-chemie-grundlagen/07-eigenschaften-atome-ionenbindung": {
-      "checksum": "dbbfb814",
-      "sizeKB": 76.5,
+      "checksum": "2c67e067",
+      "sizeKB": 77.9,
       "itemCount": 62,
       "quizCount": 12,
       "topic": "Eigenschaften der Atome und die Ionenbindung",
@@ -103,8 +103,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/08-kovalente-bindung": {
-      "checksum": "7dbf39be",
-      "sizeKB": 82.2,
+      "checksum": "f147bed5",
+      "sizeKB": 83.4,
       "itemCount": 63,
       "quizCount": 14,
       "topic": "Die Kovalente Bindung",
@@ -113,8 +113,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/09-molekuelstruktur-molekuelorbitale": {
-      "checksum": "276f8772",
-      "sizeKB": 72.8,
+      "checksum": "83c293e5",
+      "sizeKB": 74.1,
       "itemCount": 70,
       "quizCount": 14,
       "topic": "Molekülstruktur und Molekülorbitale",
@@ -123,8 +123,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/11-fluessigkeiten-feststoffe": {
-      "checksum": "0a431f0c",
-      "sizeKB": 50.8,
+      "checksum": "5db63654",
+      "sizeKB": 51.7,
       "itemCount": 42,
       "quizCount": 8,
       "topic": "Flüssigkeiten und Feststoffe",
@@ -133,8 +133,8 @@
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/13-loesungen": {
-      "checksum": "c3143e30",
-      "sizeKB": 83.9,
+      "checksum": "9421b98e",
+      "sizeKB": 85.2,
       "itemCount": 76,
       "quizCount": 12,
       "topic": "Lösungen",

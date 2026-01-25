@@ -33,10 +33,10 @@ $$Z^* = Z - S$$
 
 ## Atomradius-Trends
 
-| Richtung      | Trend       | Grund                           |
-| ------------- | ----------- | ------------------------------- |
-| → in Periode  | Nimmt ab    | Höheres Z*, stärkere Anziehung  |
-| ↓ in Gruppe   | Nimmt zu    | Zusätzliche Elektronenschale    |
+| Richtung     | Trend    | Grund                          |
+| ------------ | -------- | ------------------------------ |
+| → in Periode | Nimmt ab | Höheres Z*, stärkere Anziehung |
+| ↓ in Gruppe  | Nimmt zu | Zusätzliche Elektronenschale   |
 
 **Beispiel:** Li > Be > B > C > N > O > F
 
@@ -44,10 +44,10 @@ $$Z^* = Z - S$$
 
 ## Ionenradien
 
-| Ionentyp | Größenänderung      | Grund                        |
-| -------- | ------------------- | ---------------------------- |
-| Kation   | Kleiner als Atom    | e⁻ verloren, Z* > e⁻-Anzahl  |
-| Anion    | Größer als Atom     | e⁻ gewonnen, mehr Abstoßung  |
+| Ionentyp | Größenänderung   | Grund                       |
+| -------- | ---------------- | --------------------------- |
+| Kation   | Kleiner als Atom | e⁻ verloren, Z* > e⁻-Anzahl |
+| Anion    | Größer als Atom  | e⁻ gewonnen, mehr Abstoßung |
 
 **Isoelektronische Reihe (alle 10 e⁻):**
 O²⁻ > F⁻ > Ne > Na⁺ > Mg²⁺ > Al³⁺
@@ -61,10 +61,10 @@ O²⁻ > F⁻ > Ne > Na⁺ > Mg²⁺ > Al³⁺
 
 $$X(g) \rightarrow X^+(g) + e^-$$
 
-| Richtung      | Trend         | Grund                          |
-| ------------- | ------------- | ------------------------------ |
-| → in Periode  | Steigt        | Höheres Z*, e⁻ fester gebunden |
-| ↓ in Gruppe   | Sinkt         | e⁻ weiter vom Kern             |
+| Richtung     | Trend  | Grund                          |
+| ------------ | ------ | ------------------------------ |
+| → in Periode | Steigt | Höheres Z*, e⁻ fester gebunden |
+| ↓ in Gruppe  | Sinkt  | e⁻ weiter vom Kern             |
 
 **Anomalien:**
 - Be > B (gefülltes 2s stabiler)

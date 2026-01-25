@@ -35,7 +35,8 @@
           "pages": "1-3"
         }
       ],
-      "content": "## Das VSEPR-Modell\n\nDie **VSEPR-Theorie** (Valence Shell Electron Pair Repulsion) oder **Valenzelektronenpaar-Abstoßungs-Theorie** ist das wichtigste Modell zur Vorhersage der dreidimensionalen Gestalt von Molekülen.\n\n### Das Grundprinzip\n\nEin Molekül nimmt immer die Gestalt an, die die **Abstoßung zwischen den Valenzelektronenpaaren minimiert**.\n\n> 💡 **Merksatz:** Elektronenpaare sind negativ geladen und stoßen sich gegenseitig ab. Sie ordnen sich daher so weit wie möglich voneinander entfernt um das Zentralatom an.\n\n### Warum ist die Molekülform wichtig?\n\nDie dreidimensionale Struktur eines Moleküls bestimmt:\n\n- Seine **chemischen Eigenschaften** (Reaktivität)\n- Seine **physikalischen Eigenschaften** (Siedepunkt, Löslichkeit)\n- Seine **biologische Aktivität** (Enzym-Substrat-Wechselwirkungen)"
+      "content": "## Das VSEPR-Modell\n\nDie **VSEPR-Theorie** (Valence Shell Electron Pair Repulsion) oder **Valenzelektronenpaar-Abstoßungs-Theorie** ist das wichtigste Modell zur Vorhersage der dreidimensionalen Gestalt von Molekülen.\n\n### Das Grundprinzip\n\nEin Molekül nimmt immer die Gestalt an, die die **Abstoßung zwischen den Valenzelektronenpaaren minimiert**.\n\n> 💡 **Merksatz:** Elektronenpaare sind negativ geladen und stoßen sich gegenseitig ab. Sie ordnen sich daher so weit wie möglich voneinander entfernt um das Zentralatom an.\n\n### Warum ist die Molekülform wichtig?\n\nDie dreidimensionale Struktur eines Moleküls bestimmt:\n\n- Seine **chemischen Eigenschaften** (Reaktivität)\n- Seine **physikalischen Eigenschaften** (Siedepunkt, Löslichkeit)\n- Seine **biologische Aktivität** (Enzym-Substrat-Wechselwirkungen)",
+      "audioFile": "01-vsepr-einfuehrung.mp3"
     },
     {
       "type": "learning-content",
@@ -45,7 +46,8 @@
           "pages": "3-4"
         }
       ],
-      "content": "## Elektronengeometrie vs. Molekülgeometrie\n\nBeim VSEPR-Modell unterscheiden wir zwei wichtige Begriffe:\n\n### Elektronengeometrie\n\nDie Anordnung **aller** Elektronenpaare (bindende und freie) um das Zentralatom.\n\n### Molekülgeometrie\n\nDie Anordnung nur der **Atome** im Raum. Die freien Elektronenpaare sind \"unsichtbar\", bestimmen aber die Winkel.\n\n> ⚠️ **Wichtig:** Elektronengeometrie und Molekülgeometrie sind nur identisch, wenn **keine freien Elektronenpaare** am Zentralatom vorhanden sind.\n\n### Beispiel\n\nBei Methan (CH₄) sind beide Geometrien identisch:\n\n- 4 bindende Paare, 0 freie Paare\n- Elektronengeometrie: Tetraedrisch\n- Molekülgeometrie: Tetraedrisch\n\nBei Wasser (H₂O) unterscheiden sie sich:\n\n- 2 bindende Paare, 2 freie Paare\n- Elektronengeometrie: Tetraedrisch\n- Molekülgeometrie: Gewinkelt"
+      "content": "## Elektronengeometrie vs. Molekülgeometrie\n\nBeim VSEPR-Modell unterscheiden wir zwei wichtige Begriffe:\n\n### Elektronengeometrie\n\nDie Anordnung **aller** Elektronenpaare (bindende und freie) um das Zentralatom.\n\n### Molekülgeometrie\n\nDie Anordnung nur der **Atome** im Raum. Die freien Elektronenpaare sind \"unsichtbar\", bestimmen aber die Winkel.\n\n> ⚠️ **Wichtig:** Elektronengeometrie und Molekülgeometrie sind nur identisch, wenn **keine freien Elektronenpaare** am Zentralatom vorhanden sind.\n\n### Beispiel\n\nBei Methan (CH₄) sind beide Geometrien identisch:\n\n- 4 bindende Paare, 0 freie Paare\n- Elektronengeometrie: Tetraedrisch\n- Molekülgeometrie: Tetraedrisch\n\nBei Wasser (H₂O) unterscheiden sie sich:\n\n- 2 bindende Paare, 2 freie Paare\n- Elektronengeometrie: Tetraedrisch\n- Molekülgeometrie: Gewinkelt",
+      "audioFile": "02-elektronen-vs-molekuelgeometrie.mp3"
     },
     {
       "type": "learning-content",
@@ -55,7 +57,8 @@
           "pages": "4-6"
         }
       ],
-      "content": "## Grundlegende Geometrien\n\nJe nach Anzahl der Elektronenpaare um das Zentralatom ergeben sich folgende Basis-Strukturen (ohne freie Elektronenpaare):\n\n| Elektronenpaare | Geometrie            |  Winkel   | Beispiel  |\n| :-------------: | :------------------- | :-------: | :-------- |\n|        2        | Linear               |   180°    | BeF₂, CO₂ |\n|        3        | Trigonal-planar      |   120°    | BF₃       |\n|        4        | Tetraedrisch         |  109,5°   | CH₄       |\n|        5        | Trigonal-bipyramidal | 90°, 120° | PF₅       |\n|        6        | Oktaedrisch          |    90°    | SF₆       |\n\n### Die Logik dahinter\n\n- **2 Paare:** Maximaler Abstand bei 180° (linear)\n- **3 Paare:** Gleichmäßige Verteilung in der Ebene bei 120°\n- **4 Paare:** Tetraeder mit 109,5° ist die ideale 3D-Anordnung\n- **5 Paare:** Trigonale Bipyramide mit zwei Positionen (axial/äquatorial)\n- **6 Paare:** Oktaeder mit allen Winkeln bei 90°\n\n> 💡 Diese Geometrien gelten für die **Elektronengeometrie**. Die Molekülgeometrie kann davon abweichen, wenn freie Paare vorhanden sind."
+      "content": "## Grundlegende Geometrien\n\nJe nach Anzahl der Elektronenpaare um das Zentralatom ergeben sich folgende Basis-Strukturen (ohne freie Elektronenpaare):\n\n| Elektronenpaare | Geometrie            |  Winkel   | Beispiel  |\n| :-------------: | :------------------- | :-------: | :-------- |\n|        2        | Linear               |   180°    | BeF₂, CO₂ |\n|        3        | Trigonal-planar      |   120°    | BF₃       |\n|        4        | Tetraedrisch         |  109,5°   | CH₄       |\n|        5        | Trigonal-bipyramidal | 90°, 120° | PF₅       |\n|        6        | Oktaedrisch          |    90°    | SF₆       |\n\n### Die Logik dahinter\n\n- **2 Paare:** Maximaler Abstand bei 180° (linear)\n- **3 Paare:** Gleichmäßige Verteilung in der Ebene bei 120°\n- **4 Paare:** Tetraeder mit 109,5° ist die ideale 3D-Anordnung\n- **5 Paare:** Trigonale Bipyramide mit zwei Positionen (axial/äquatorial)\n- **6 Paare:** Oktaeder mit allen Winkeln bei 90°\n\n> 💡 Diese Geometrien gelten für die **Elektronengeometrie**. Die Molekülgeometrie kann davon abweichen, wenn freie Paare vorhanden sind.",
+      "audioFile": "03-grundgeometrien-tabelle.mp3"
     },
     {
       "type": "mermaid-diagram",
@@ -189,7 +192,8 @@
           "pages": "7-8"
         }
       ],
-      "content": "## Einfluss freier Elektronenpaare\n\nWenn freie (einsame) Elektronenpaare am Zentralatom vorhanden sind, unterscheidet sich die **Molekülgeometrie** von der **Elektronengeometrie**.\n\n### Warum machen freie Paare einen Unterschied?\n\nFreie Elektronenpaare benötigen **mehr Platz** als bindende Paare:\n\n- Sie werden nur von einem Kern angezogen (nicht von zwei wie bindende Paare)\n- Ihre Elektronenwolke ist \"dicker\" und breitet sich stärker aus\n- Sie drücken die bindenden Paare zusammen\n\n### Die Abstoßungs-Hierarchie\n\n| Abstoßung                       |   Stärke   |\n| :------------------------------ | :--------: |\n| Freies Paar ↔ Freies Paar       |  Stärkste  |\n| Freies Paar ↔ Bindendes Paar    |   Mittel   |\n| Bindendes Paar ↔ Bindendes Paar | Schwächste |\n\n> 💡 **Konsequenz:** Bindungswinkel werden kleiner, wenn freie Elektronenpaare vorhanden sind."
+      "content": "## Einfluss freier Elektronenpaare\n\nWenn freie (einsame) Elektronenpaare am Zentralatom vorhanden sind, unterscheidet sich die **Molekülgeometrie** von der **Elektronengeometrie**.\n\n### Warum machen freie Paare einen Unterschied?\n\nFreie Elektronenpaare benötigen **mehr Platz** als bindende Paare:\n\n- Sie werden nur von einem Kern angezogen (nicht von zwei wie bindende Paare)\n- Ihre Elektronenwolke ist \"dicker\" und breitet sich stärker aus\n- Sie drücken die bindenden Paare zusammen\n\n### Die Abstoßungs-Hierarchie\n\n| Abstoßung                       |   Stärke   |\n| :------------------------------ | :--------: |\n| Freies Paar ↔ Freies Paar       |  Stärkste  |\n| Freies Paar ↔ Bindendes Paar    |   Mittel   |\n| Bindendes Paar ↔ Bindendes Paar | Schwächste |\n\n> 💡 **Konsequenz:** Bindungswinkel werden kleiner, wenn freie Elektronenpaare vorhanden sind.",
+      "audioFile": "12-freie-paare-platz.mp3"
     },
     {
       "type": "learning-content",
@@ -199,7 +203,8 @@
           "pages": "8-9"
         }
       ],
-      "content": "## Beispiel: Ammoniak (NH₃)\n\n### Schritt-für-Schritt-Analyse\n\n1. **Lewis-Formel:** N hat 5 Valenzelektronen + 3 von H = 8 Elektronen (4 Paare)\n\n2. **Elektronengeometrie:** 4 Paare (3 bindend, 1 frei) → **Tetraedrisch**\n\n3. **Molekülgeometrie:** Da nur die Atome betrachtet werden → **Trigonal-pyramidal**\n\n4. **Bindungswinkel:** Kleiner als 109,5° (etwa 107°)\n\n### Warum ist der Winkel kleiner?\n\nDas freie Elektronenpaar am Stickstoff \"drückt\" die drei N-H-Bindungen zusammen. Es beansprucht mehr Raum als ein bindendes Paar.\n\n> 📊 **Merke:** Bei NH₃ ist die Elektronengeometrie tetraedrisch, aber die Molekülgeometrie trigonal-pyramidal!"
+      "content": "## Beispiel: Ammoniak (NH₃)\n\n### Schritt-für-Schritt-Analyse\n\n1. **Lewis-Formel:** N hat 5 Valenzelektronen + 3 von H = 8 Elektronen (4 Paare)\n\n2. **Elektronengeometrie:** 4 Paare (3 bindend, 1 frei) → **Tetraedrisch**\n\n3. **Molekülgeometrie:** Da nur die Atome betrachtet werden → **Trigonal-pyramidal**\n\n4. **Bindungswinkel:** Kleiner als 109,5° (etwa 107°)\n\n### Warum ist der Winkel kleiner?\n\nDas freie Elektronenpaar am Stickstoff \"drückt\" die drei N-H-Bindungen zusammen. Es beansprucht mehr Raum als ein bindendes Paar.\n\n> 📊 **Merke:** Bei NH₃ ist die Elektronengeometrie tetraedrisch, aber die Molekülgeometrie trigonal-pyramidal!",
+      "audioFile": "13-beispiel-ammoniak.mp3"
     },
     {
       "type": "learning-content",
@@ -209,7 +214,8 @@
           "pages": "9-10"
         }
       ],
-      "content": "## Beispiel: Wasser (H₂O)\n\n### Schritt-für-Schritt-Analyse\n\n1. **Lewis-Formel:** O hat 6 Valenzelektronen + 2 von H = 8 Elektronen (4 Paare)\n\n2. **Elektronengeometrie:** 4 Paare (2 bindend, 2 frei) → **Tetraedrisch**\n\n3. **Molekülgeometrie:** Mit 2 freien Paaren → **Gewinkelt** (bent)\n\n4. **Bindungswinkel:** Deutlich kleiner als 109,5° (104,5°)\n\n### Vergleich mit Ammoniak\n\n| Molekül | Bindende Paare | Freie Paare | Winkel |\n| :------ | :------------: | :---------: | :----: |\n| CH₄     |       4        |      0      | 109,5° |\n| NH₃     |       3        |      1      |  107°  |\n| H₂O     |       2        |      2      | 104,5° |\n\n> 💡 **Trend:** Je mehr freie Elektronenpaare, desto kleiner werden die Bindungswinkel."
+      "content": "## Beispiel: Wasser (H₂O)\n\n### Schritt-für-Schritt-Analyse\n\n1. **Lewis-Formel:** O hat 6 Valenzelektronen + 2 von H = 8 Elektronen (4 Paare)\n\n2. **Elektronengeometrie:** 4 Paare (2 bindend, 2 frei) → **Tetraedrisch**\n\n3. **Molekülgeometrie:** Mit 2 freien Paaren → **Gewinkelt** (bent)\n\n4. **Bindungswinkel:** Deutlich kleiner als 109,5° (104,5°)\n\n### Vergleich mit Ammoniak\n\n| Molekül | Bindende Paare | Freie Paare | Winkel |\n| :------ | :------------: | :---------: | :----: |\n| CH₄     |       4        |      0      | 109,5° |\n| NH₃     |       3        |      1      |  107°  |\n| H₂O     |       2        |      2      | 104,5° |\n\n> 💡 **Trend:** Je mehr freie Elektronenpaare, desto kleiner werden die Bindungswinkel.",
+      "audioFile": "14-beispiel-wasser.mp3"
     },
     {
       "type": "learning-content",
@@ -219,7 +225,8 @@
           "pages": "10-11"
         }
       ],
-      "content": "## Mehrfachbindungen im VSEPR-Modell\n\nBei Molekülen mit Doppel- oder Dreifachbindungen gilt eine wichtige Vereinfachung:\n\n> ⚡ **Regel:** Eine Mehrfachbindung zählt im VSEPR-Modell als **ein einzelner \"Elektronenklumpen\"** (Repulsion Unit).\n\n### Warum funktioniert das?\n\nAlle Elektronen einer Mehrfachbindung befinden sich zwischen denselben zwei Atomen. Sie agieren als eine Einheit bei der Abstoßung.\n\n### Beispiele\n\n| Molekül | Bindungen am Zentralatom | \"Klumpen\" | Geometrie       |\n| :------ | :----------------------- | :-------: | :-------------- |\n| CO₂     | 2 Doppelbindungen        |     2     | Linear          |\n| CH₂O    | 2 Einfach + 1 Doppel     |     3     | Trigonal-planar |\n| HCN     | 1 Einfach + 1 Dreifach   |     2     | Linear          |\n\n> 💡 **Merke:** Zähle die Anzahl der Bindungspartner (nicht die Anzahl der Bindungen!), plus freie Paare = Anzahl der \"Klumpen\"."
+      "content": "## Mehrfachbindungen im VSEPR-Modell\n\nBei Molekülen mit Doppel- oder Dreifachbindungen gilt eine wichtige Vereinfachung:\n\n> ⚡ **Regel:** Eine Mehrfachbindung zählt im VSEPR-Modell als **ein einzelner \"Elektronenklumpen\"** (Repulsion Unit).\n\n### Warum funktioniert das?\n\nAlle Elektronen einer Mehrfachbindung befinden sich zwischen denselben zwei Atomen. Sie agieren als eine Einheit bei der Abstoßung.\n\n### Beispiele\n\n| Molekül | Bindungen am Zentralatom | \"Klumpen\" | Geometrie       |\n| :------ | :----------------------- | :-------: | :-------------- |\n| CO₂     | 2 Doppelbindungen        |     2     | Linear          |\n| CH₂O    | 2 Einfach + 1 Doppel     |     3     | Trigonal-planar |\n| HCN     | 1 Einfach + 1 Dreifach   |     2     | Linear          |\n\n> 💡 **Merke:** Zähle die Anzahl der Bindungspartner (nicht die Anzahl der Bindungen!), plus freie Paare = Anzahl der \"Klumpen\".",
+      "audioFile": "15-mehrfachbindungen-als-klumpen.mp3"
     },
     {
       "type": "learning-content",
@@ -229,7 +236,8 @@
           "pages": "11-13"
         }
       ],
-      "content": "## Komplexere Moleküle mit mehreren Zentren\n\nGrößere Moleküle haben oft mehrere Atome, die als Zentralatome dienen. Jedes wird separat analysiert.\n\n### Formaldehyd (CH₂O)\n\n- **Zentralatom C:** 2 Einfachbindungen (zu H) + 1 Doppelbindung (zu O) = 3 Klumpen\n- **Geometrie am C:** Trigonal-planar (120°)\n\n### Methanol (CH₃OH)\n\n- **Am C:** 4 Bindungen → Tetraedrisch (109°)\n- **Am O:** 2 Bindungen + 2 freie Paare → Gewinkelt (ca. 104,5°)\n\n### Acetonitril (CH₃CN)\n\n- **Methyl-C:** 4 Bindungen → Tetraedrisch (109°)\n- **Cyan-C:** 1 Einfach + 1 Dreifachbindung = 2 Klumpen → Linear (180°)\n\n### Phenylalanin (Aminosäure)\n\n- **Ring-C-Atome:** Trigonal-planar (sp²)\n- **CH₂-Gruppe:** Tetraedrisch (sp³)\n- **N-Atom:** Trigonal-pyramidal (freies Paar)\n- **Carboxyl-C:** Trigonal-planar\n\n> 💡 **Strategie:** Bei großen Molekülen jedes potenzielle Zentralatom einzeln analysieren!"
+      "content": "## Komplexere Moleküle mit mehreren Zentren\n\nGrößere Moleküle haben oft mehrere Atome, die als Zentralatome dienen. Jedes wird separat analysiert.\n\n### Formaldehyd (CH₂O)\n\n- **Zentralatom C:** 2 Einfachbindungen (zu H) + 1 Doppelbindung (zu O) = 3 Klumpen\n- **Geometrie am C:** Trigonal-planar (120°)\n\n### Methanol (CH₃OH)\n\n- **Am C:** 4 Bindungen → Tetraedrisch (109°)\n- **Am O:** 2 Bindungen + 2 freie Paare → Gewinkelt (ca. 104,5°)\n\n### Acetonitril (CH₃CN)\n\n- **Methyl-C:** 4 Bindungen → Tetraedrisch (109°)\n- **Cyan-C:** 1 Einfach + 1 Dreifachbindung = 2 Klumpen → Linear (180°)\n\n### Phenylalanin (Aminosäure)\n\n- **Ring-C-Atome:** Trigonal-planar (sp²)\n- **CH₂-Gruppe:** Tetraedrisch (sp³)\n- **N-Atom:** Trigonal-pyramidal (freies Paar)\n- **Carboxyl-C:** Trigonal-planar\n\n> 💡 **Strategie:** Bei großen Molekülen jedes potenzielle Zentralatom einzeln analysieren!",
+      "audioFile": "16-beispiele-komplex.mp3"
     },
     {
       "type": "self-assessment-mc",
@@ -362,7 +370,8 @@
           "pages": "14-15"
         }
       ],
-      "content": "## Erweiterte Oktette: 5 Elektronenpaare\n\nElemente ab der 3. Periode (z.B. P, S, Cl, Br, I, Xe) können mehr als 4 Elektronenpaare um sich anordnen. Bei 5 Paaren entsteht eine **trigonal-bipyramidale** Elektronengeometrie.\n\n### Zwei verschiedene Positionen\n\nIn der trigonalen Bipyramide gibt es zwei unterschiedliche Positionen:\n\n1. **Axial:** Auf der Achse (oben/unten), 90° zu allen äquatorialen Nachbarn\n2. **Äquatorial:** In der Mittelebene (Gürtel), 120° zu äquatorialen Nachbarn\n\n### Wo sitzen freie Elektronenpaare?\n\n> ⚡ **Wichtige Regel:** Freie Elektronenpaare besetzen **immer die äquatorialen Positionen**!\n\n**Begründung:** In der äquatorialen Position hat ein Paar nur 2 Nachbarn im 90°-Winkel (die axialen). In der axialen Position wären es 3 Nachbarn im 90°-Winkel. Weniger 90°-Abstoßungen = stabiler."
+      "content": "## Erweiterte Oktette: 5 Elektronenpaare\n\nElemente ab der 3. Periode (z.B. P, S, Cl, Br, I, Xe) können mehr als 4 Elektronenpaare um sich anordnen. Bei 5 Paaren entsteht eine **trigonal-bipyramidale** Elektronengeometrie.\n\n### Zwei verschiedene Positionen\n\nIn der trigonalen Bipyramide gibt es zwei unterschiedliche Positionen:\n\n1. **Axial:** Auf der Achse (oben/unten), 90° zu allen äquatorialen Nachbarn\n2. **Äquatorial:** In der Mittelebene (Gürtel), 120° zu äquatorialen Nachbarn\n\n### Wo sitzen freie Elektronenpaare?\n\n> ⚡ **Wichtige Regel:** Freie Elektronenpaare besetzen **immer die äquatorialen Positionen**!\n\n**Begründung:** In der äquatorialen Position hat ein Paar nur 2 Nachbarn im 90°-Winkel (die axialen). In der axialen Position wären es 3 Nachbarn im 90°-Winkel. Weniger 90°-Abstoßungen = stabiler.",
+      "audioFile": "24-trigonal-bipyramidal.mp3"
     },
     {
       "type": "learning-content",
@@ -372,7 +381,8 @@
           "pages": "15-17"
         }
       ],
-      "content": "## Molekülgeometrien bei 5 Elektronenpaaren\n\nJe nach Anzahl der freien Paare ergeben sich aus der trigonal-bipyramidalen Elektronengeometrie verschiedene Molekülgeometrien:\n\n| Molekül | Bindend | Frei  | Molekülgeometrie     |\n| :------ | :-----: | :---: | :------------------- |\n| PF₅     |    5    |   0   | Trigonal-bipyramidal |\n| SF₄     |    4    |   1   | Wippe (Seesaw)       |\n| ClF₃    |    3    |   2   | T-förmig             |\n| XeF₂    |    2    |   3   | Linear               |\n\n### Visualisierung\n\n- **PF₅:** Alle 5 Positionen besetzt → vollständige Bipyramide\n- **SF₄:** 1 freies Paar äquatorial → \"Wippe\" (wie eine Schaukel)\n- **ClF₃:** 2 freie Paare äquatorial → T-Form\n- **XeF₂:** 3 freie Paare äquatorial → nur axiale F-Atome → Linear\n\n> 💡 Die freien Paare \"verschwinden\" bei der Molekülgeometrie, aber ihre Position (äquatorial) bleibt wichtig!"
+      "content": "## Molekülgeometrien bei 5 Elektronenpaaren\n\nJe nach Anzahl der freien Paare ergeben sich aus der trigonal-bipyramidalen Elektronengeometrie verschiedene Molekülgeometrien:\n\n| Molekül | Bindend | Frei  | Molekülgeometrie     |\n| :------ | :-----: | :---: | :------------------- |\n| PF₅     |    5    |   0   | Trigonal-bipyramidal |\n| SF₄     |    4    |   1   | Wippe (Seesaw)       |\n| ClF₃    |    3    |   2   | T-förmig             |\n| XeF₂    |    2    |   3   | Linear               |\n\n### Visualisierung\n\n- **PF₅:** Alle 5 Positionen besetzt → vollständige Bipyramide\n- **SF₄:** 1 freies Paar äquatorial → \"Wippe\" (wie eine Schaukel)\n- **ClF₃:** 2 freie Paare äquatorial → T-Form\n- **XeF₂:** 3 freie Paare äquatorial → nur axiale F-Atome → Linear\n\n> 💡 Die freien Paare \"verschwinden\" bei der Molekülgeometrie, aber ihre Position (äquatorial) bleibt wichtig!",
+      "audioFile": "25-strukturen-5-paare.mp3"
     },
     {
       "type": "learning-content",
@@ -382,7 +392,8 @@
           "pages": "17-18"
         }
       ],
-      "content": "## Erweiterte Oktette: 6 Elektronenpaare\n\nBei 6 Elektronenpaaren entsteht eine **oktaedrische** Elektronengeometrie.\n\n### Charakteristika des Oktaeders\n\n- Alle 6 Positionen sind **gleichwertig**\n- Alle Winkel betragen **90°**\n- Die Struktur ist hochsymmetrisch\n\n### Wo sitzen freie Elektronenpaare?\n\nDa alle Positionen gleichwertig sind, kann das erste freie Paar beliebig platziert werden. Bei **zwei freien Paaren** ordnen sie sich **gegenüberliegend** an (180° Abstand), um die Abstoßung zu minimieren.\n\n> 💡 **Beispiel SF₆:** 6 Bindungen, 0 freie Paare → perfekter Oktaeder mit 90°-Winkeln."
+      "content": "## Erweiterte Oktette: 6 Elektronenpaare\n\nBei 6 Elektronenpaaren entsteht eine **oktaedrische** Elektronengeometrie.\n\n### Charakteristika des Oktaeders\n\n- Alle 6 Positionen sind **gleichwertig**\n- Alle Winkel betragen **90°**\n- Die Struktur ist hochsymmetrisch\n\n### Wo sitzen freie Elektronenpaare?\n\nDa alle Positionen gleichwertig sind, kann das erste freie Paar beliebig platziert werden. Bei **zwei freien Paaren** ordnen sie sich **gegenüberliegend** an (180° Abstand), um die Abstoßung zu minimieren.\n\n> 💡 **Beispiel SF₆:** 6 Bindungen, 0 freie Paare → perfekter Oktaeder mit 90°-Winkeln.",
+      "audioFile": "26-oktaedrisch.mp3"
     },
     {
       "type": "learning-content",
@@ -392,7 +403,8 @@
           "pages": "18-20"
         }
       ],
-      "content": "## Molekülgeometrien bei 6 Elektronenpaaren\n\nAus der oktaedrischen Elektronengeometrie ergeben sich je nach Anzahl freier Paare:\n\n| Molekül | Bindend | Frei  | Molekülgeometrie      |\n| :------ | :-----: | :---: | :-------------------- |\n| SF₆     |    6    |   0   | Oktaedrisch           |\n| BrF₅    |    5    |   1   | Quadratisch-pyramidal |\n| XeF₄    |    4    |   2   | Quadratisch-planar    |\n\n### Details zu den Strukturen\n\n**SF₆ (Schwefelhexafluorid):**\n- Perfekter Oktaeder\n- Alle F-S-F Winkel = 90°\n- Sehr stabiles, ungiftiges Gas\n\n**BrF₅ (Brompentafluorid):**\n- 1 freies Paar nimmt eine Position ein\n- Die 5 F-Atome bilden eine quadratische Pyramide\n\n**XeF₄ (Xenontetrafluorid):**\n- 2 freie Paare stehen sich gegenüber (180°)\n- Die 4 F-Atome bilden ein Quadrat um Xe\n- Molekül ist planar (flach)\n\n> ⚠️ **Wichtig:** Bei XeF₄ sind die freien Paare trans-ständig (gegenüber), nicht cis-ständig (nebeneinander)!"
+      "content": "## Molekülgeometrien bei 6 Elektronenpaaren\n\nAus der oktaedrischen Elektronengeometrie ergeben sich je nach Anzahl freier Paare:\n\n| Molekül | Bindend | Frei  | Molekülgeometrie      |\n| :------ | :-----: | :---: | :-------------------- |\n| SF₆     |    6    |   0   | Oktaedrisch           |\n| BrF₅    |    5    |   1   | Quadratisch-pyramidal |\n| XeF₄    |    4    |   2   | Quadratisch-planar    |\n\n### Details zu den Strukturen\n\n**SF₆ (Schwefelhexafluorid):**\n- Perfekter Oktaeder\n- Alle F-S-F Winkel = 90°\n- Sehr stabiles, ungiftiges Gas\n\n**BrF₅ (Brompentafluorid):**\n- 1 freies Paar nimmt eine Position ein\n- Die 5 F-Atome bilden eine quadratische Pyramide\n\n**XeF₄ (Xenontetrafluorid):**\n- 2 freie Paare stehen sich gegenüber (180°)\n- Die 4 F-Atome bilden ein Quadrat um Xe\n- Molekül ist planar (flach)\n\n> ⚠️ **Wichtig:** Bei XeF₄ sind die freien Paare trans-ständig (gegenüber), nicht cis-ständig (nebeneinander)!",
+      "audioFile": "27-strukturen-6-paare.mp3"
     },
     {
       "type": "self-assessment-mc",
@@ -502,7 +514,8 @@
           "pages": "21-22"
         }
       ],
-      "content": "## Molekulare Polarität\n\nOb ein Molekül polar oder unpolar ist, hängt von zwei Faktoren ab:\n\n### Bedingungen für ein polares Molekül\n\n1. **Polare Bindungen:** Es müssen Bindungen zwischen Atomen mit unterschiedlicher Elektronegativität vorliegen.\n\n2. **Unsymmetrische Geometrie:** Die Dipolmomente der Bindungen dürfen sich nicht aufheben.\n\n> ⚡ **Wichtig:** Beide Bedingungen müssen erfüllt sein! Ein Molekül mit polaren Bindungen kann trotzdem unpolar sein, wenn es symmetrisch aufgebaut ist.\n\n### Beispiele\n\n| Molekül | Polare Bindungen? |   Symmetrisch?    | Molekül polar? |\n| :------ | :---------------: | :---------------: | :------------: |\n| CO₂     |     Ja (C=O)      |    Ja (linear)    |      Nein      |\n| H₂O     |     Ja (O-H)      | Nein (gewinkelt)  |       Ja       |\n| CH₄     |   Schwach (C-H)   | Ja (tetraedrisch) |      Nein      |\n| NH₃     |     Ja (N-H)      | Nein (pyramidal)  |       Ja       |"
+      "content": "## Molekulare Polarität\n\nOb ein Molekül polar oder unpolar ist, hängt von zwei Faktoren ab:\n\n### Bedingungen für ein polares Molekül\n\n1. **Polare Bindungen:** Es müssen Bindungen zwischen Atomen mit unterschiedlicher Elektronegativität vorliegen.\n\n2. **Unsymmetrische Geometrie:** Die Dipolmomente der Bindungen dürfen sich nicht aufheben.\n\n> ⚡ **Wichtig:** Beide Bedingungen müssen erfüllt sein! Ein Molekül mit polaren Bindungen kann trotzdem unpolar sein, wenn es symmetrisch aufgebaut ist.\n\n### Beispiele\n\n| Molekül | Polare Bindungen? |   Symmetrisch?    | Molekül polar? |\n| :------ | :---------------: | :---------------: | :------------: |\n| CO₂     |     Ja (C=O)      |    Ja (linear)    |      Nein      |\n| H₂O     |     Ja (O-H)      | Nein (gewinkelt)  |       Ja       |\n| CH₄     |   Schwach (C-H)   | Ja (tetraedrisch) |      Nein      |\n| NH₃     |     Ja (N-H)      | Nein (pyramidal)  |       Ja       |",
+      "audioFile": "34-polar-vs-unpolar.mp3"
     },
     {
       "type": "learning-content",
@@ -512,7 +525,8 @@
           "pages": "22-23"
         }
       ],
-      "content": "## Elektronegativität\n\nDie **Elektronegativität (χ oder EN)** ist ein Maß für die Fähigkeit eines Atoms, Bindungselektronen an sich zu ziehen.\n\n### Trends im Periodensystem\n\n- **Von links nach rechts:** EN nimmt zu\n- **Von oben nach unten:** EN nimmt ab\n\n### Wichtige EN-Werte (Pauling-Skala)\n\n| Element |  EN   | Anmerkung                     |\n| :------ | :---: | :---------------------------- |\n| F       |  4,0  | Höchste EN überhaupt          |\n| O       |  3,5  | Zweithöchste                  |\n| Cl      |  3,0  | Wichtig für organische Chemie |\n| N       |  3,0  | Wie Chlor                     |\n| C       |  2,5  | Referenzwert                  |\n| H       |  2,1  | Relativ niedrig               |\n\n### Bindungspolarität\n\nDie Differenz der EN-Werte bestimmt die Bindungspolarität:\n\n- **ΔEN < 0,5:** Unpolare Bindung\n- **0,5 < ΔEN < 1,7:** Polare kovalente Bindung\n- **ΔEN > 1,7:** Ionische Bindung (Faustregel)\n\n> 💡 Die Elektronen werden zum elektronegativeren Atom hin verschoben (δ⁻), das andere Atom wird positiv (δ⁺)."
+      "content": "## Elektronegativität\n\nDie **Elektronegativität (χ oder EN)** ist ein Maß für die Fähigkeit eines Atoms, Bindungselektronen an sich zu ziehen.\n\n### Trends im Periodensystem\n\n- **Von links nach rechts:** EN nimmt zu\n- **Von oben nach unten:** EN nimmt ab\n\n### Wichtige EN-Werte (Pauling-Skala)\n\n| Element |  EN   | Anmerkung                     |\n| :------ | :---: | :---------------------------- |\n| F       |  4,0  | Höchste EN überhaupt          |\n| O       |  3,5  | Zweithöchste                  |\n| Cl      |  3,0  | Wichtig für organische Chemie |\n| N       |  3,0  | Wie Chlor                     |\n| C       |  2,5  | Referenzwert                  |\n| H       |  2,1  | Relativ niedrig               |\n\n### Bindungspolarität\n\nDie Differenz der EN-Werte bestimmt die Bindungspolarität:\n\n- **ΔEN < 0,5:** Unpolare Bindung\n- **0,5 < ΔEN < 1,7:** Polare kovalente Bindung\n- **ΔEN > 1,7:** Ionische Bindung (Faustregel)\n\n> 💡 Die Elektronen werden zum elektronegativeren Atom hin verschoben (δ⁻), das andere Atom wird positiv (δ⁺).",
+      "audioFile": "35-elektronegativitaet.mp3"
     },
     {
       "type": "learning-content",
@@ -522,7 +536,8 @@
           "pages": "23-25"
         }
       ],
-      "content": "## Dipolmoment und Symmetrie\n\n### Das Dipolmoment\n\nDas **Dipolmoment (μ)** quantifiziert die Polarität eines Moleküls:\n\n$$\\mu = q \\cdot d$$\n\n- **q:** Größe der Teilladung\n- **d:** Abstand zwischen den Ladungsschwerpunkten\n- **Einheit:** Debye (D)\n\n### Wie Symmetrie Dipole aufhebt\n\nBindungsdipole sind Vektoren (Richtung + Betrag). In symmetrischen Molekülen können sie sich gegenseitig aufheben.\n\n**CO₂ (linear):**\n- Zwei C=O Dipole zeigen in entgegengesetzte Richtungen\n- Vektorielle Summe = 0\n- Molekül ist **unpolar**\n\n**H₂O (gewinkelt):**\n- Zwei O-H Dipole zeigen in ähnliche Richtung\n- Vektorielle Summe ≠ 0\n- Molekül ist **polar** (μ = 1,85 D)\n\n> 💡 **Merke:** Symmetrie kann polare Bindungen \"verstecken\" und das Gesamtmolekül unpolar machen!"
+      "content": "## Dipolmoment und Symmetrie\n\n### Das Dipolmoment\n\nDas **Dipolmoment (μ)** quantifiziert die Polarität eines Moleküls:\n\n$$\\mu = q \\cdot d$$\n\n- **q:** Größe der Teilladung\n- **d:** Abstand zwischen den Ladungsschwerpunkten\n- **Einheit:** Debye (D)\n\n### Wie Symmetrie Dipole aufhebt\n\nBindungsdipole sind Vektoren (Richtung + Betrag). In symmetrischen Molekülen können sie sich gegenseitig aufheben.\n\n**CO₂ (linear):**\n- Zwei C=O Dipole zeigen in entgegengesetzte Richtungen\n- Vektorielle Summe = 0\n- Molekül ist **unpolar**\n\n**H₂O (gewinkelt):**\n- Zwei O-H Dipole zeigen in ähnliche Richtung\n- Vektorielle Summe ≠ 0\n- Molekül ist **polar** (μ = 1,85 D)\n\n> 💡 **Merke:** Symmetrie kann polare Bindungen \"verstecken\" und das Gesamtmolekül unpolar machen!",
+      "audioFile": "36-symmetrie-dipolmoment.mp3"
     },
     {
       "type": "learning-content",
@@ -532,7 +547,8 @@
           "pages": "25-27"
         }
       ],
-      "content": "## Beispiele zur Polaritätsanalyse\n\n### CH₄ vs. CH₃F\n\n**Methan (CH₄):**\n- Tetraedrisch, vollständig symmetrisch\n- C-H Bindungen sind nur schwach polar\n- Dipole heben sich auf → **unpolar**\n\n**Fluormethan (CH₃F):**\n- Tetraedrisch, aber ein H durch F ersetzt\n- C-F Bindung ist stark polar\n- Symmetrie gebrochen → **polar**\n\n### BF₃ vs. PF₃\n\n**BF₃ (Bortrifluorid):**\n- Trigonal-planar, hochsymmetrisch\n- Alle B-F Dipole gleich, 120° zueinander\n- Vektorielle Summe = 0 → **unpolar**\n\n**PF₃ (Phosphortrifluorid):**\n- Trigonal-pyramidal (1 freies Paar)\n- Symmetrie gebrochen, Dipole addieren sich\n- Ergebnis: **polar**\n\n### Elektrostatisches Potenzial\n\nVisualisiert die Elektronenverteilung:\n- **Rot:** Hohe Elektronendichte (δ⁻)\n- **Blau:** Niedrige Elektronendichte (δ⁺)"
+      "content": "## Beispiele zur Polaritätsanalyse\n\n### CH₄ vs. CH₃F\n\n**Methan (CH₄):**\n- Tetraedrisch, vollständig symmetrisch\n- C-H Bindungen sind nur schwach polar\n- Dipole heben sich auf → **unpolar**\n\n**Fluormethan (CH₃F):**\n- Tetraedrisch, aber ein H durch F ersetzt\n- C-F Bindung ist stark polar\n- Symmetrie gebrochen → **polar**\n\n### BF₃ vs. PF₃\n\n**BF₃ (Bortrifluorid):**\n- Trigonal-planar, hochsymmetrisch\n- Alle B-F Dipole gleich, 120° zueinander\n- Vektorielle Summe = 0 → **unpolar**\n\n**PF₃ (Phosphortrifluorid):**\n- Trigonal-pyramidal (1 freies Paar)\n- Symmetrie gebrochen, Dipole addieren sich\n- Ergebnis: **polar**\n\n### Elektrostatisches Potenzial\n\nVisualisiert die Elektronenverteilung:\n- **Rot:** Hohe Elektronendichte (δ⁻)\n- **Blau:** Niedrige Elektronendichte (δ⁺)",
+      "audioFile": "37-beispiele-polaritaet.mp3"
     },
     {
       "type": "self-assessment-mc",
@@ -642,7 +658,8 @@
           "pages": "28-29"
         }
       ],
-      "content": "## Bindungsordnung\n\nDie **Bindungsordnung (BO)** gibt die Anzahl der chemischen Bindungen zwischen einem Paar von Atomen an.\n\n### Ganze Bindungsordnungen\n\n| Bindungstyp     | Bindungsordnung | Beispiel     |\n| :-------------- | :-------------: | :----------- |\n| Einfachbindung  |        1        | C-C in Ethan |\n| Doppelbindung   |        2        | C=C in Ethen |\n| Dreifachbindung |        3        | C≡C in Ethin |\n\n### Gebrochene Bindungsordnungen\n\nIn mesomeren Strukturen (Resonanz) können gebrochene Bindungsordnungen auftreten.\n\n**Beispiel: Nitrit-Ion (NO₂⁻)**\n\nDas Nitrit-Ion hat zwei mesomere Grenzstrukturen, in denen die Doppelbindung zwischen den beiden N-O Positionen wechselt.\n\n- Tatsächliche Bindungsordnung jeder N-O Bindung: **1,5**\n- Die reale Struktur ist ein Hybrid aus beiden Grenzstrukturen\n\n> 💡 **Merke:** Gebrochene Bindungsordnungen zeigen an, dass Elektronen delokalisiert sind."
+      "content": "## Bindungsordnung\n\nDie **Bindungsordnung (BO)** gibt die Anzahl der chemischen Bindungen zwischen einem Paar von Atomen an.\n\n### Ganze Bindungsordnungen\n\n| Bindungstyp     | Bindungsordnung | Beispiel     |\n| :-------------- | :-------------: | :----------- |\n| Einfachbindung  |        1        | C-C in Ethan |\n| Doppelbindung   |        2        | C=C in Ethen |\n| Dreifachbindung |        3        | C≡C in Ethin |\n\n### Gebrochene Bindungsordnungen\n\nIn mesomeren Strukturen (Resonanz) können gebrochene Bindungsordnungen auftreten.\n\n**Beispiel: Nitrit-Ion (NO₂⁻)**\n\nDas Nitrit-Ion hat zwei mesomere Grenzstrukturen, in denen die Doppelbindung zwischen den beiden N-O Positionen wechselt.\n\n- Tatsächliche Bindungsordnung jeder N-O Bindung: **1,5**\n- Die reale Struktur ist ein Hybrid aus beiden Grenzstrukturen\n\n> 💡 **Merke:** Gebrochene Bindungsordnungen zeigen an, dass Elektronen delokalisiert sind.",
+      "audioFile": "44-bindungsordnung-definition.mp3"
     },
     {
       "type": "learning-content",
@@ -652,7 +669,8 @@
           "pages": "29-31"
         }
       ],
-      "content": "## Zusammenhang: Bindungsordnung, Länge und Stärke\n\nEs gilt ein wichtiger Zusammenhang zwischen Bindungsordnung, Bindungslänge und Bindungsstärke:\n\n> ⚡ **Je höher die Bindungsordnung, desto...**\n> 1. **...kürzer** ist die Bindungslänge\n> 2. **...stärker** ist die Bindung (höhere Dissoziationsenergie)\n\n### Vergleich C-C Bindungen\n\n| Bindung |  BO   | Länge (pm) | Stärke (kJ/mol) |\n| :------ | :---: | :--------: | :-------------: |\n| C-C     |   1   |    154     |       346       |\n| C=C     |   2   |    134     |       602       |\n| C≡C     |   3   |    120     |       835       |\n\n### Erklärung\n\nMehr bindende Elektronenpaare zwischen den Kernen:\n- Ziehen die Kerne stärker zusammen → **kürzere Bindung**\n- Erfordern mehr Energie zum Trennen → **stärkere Bindung**\n\n> 💡 Die Bindungslänge und -stärke sind experimentell messbar und bestätigen die theoretischen Vorhersagen."
+      "content": "## Zusammenhang: Bindungsordnung, Länge und Stärke\n\nEs gilt ein wichtiger Zusammenhang zwischen Bindungsordnung, Bindungslänge und Bindungsstärke:\n\n> ⚡ **Je höher die Bindungsordnung, desto...**\n> 1. **...kürzer** ist die Bindungslänge\n> 2. **...stärker** ist die Bindung (höhere Dissoziationsenergie)\n\n### Vergleich C-C Bindungen\n\n| Bindung |  BO   | Länge (pm) | Stärke (kJ/mol) |\n| :------ | :---: | :--------: | :-------------: |\n| C-C     |   1   |    154     |       346       |\n| C=C     |   2   |    134     |       602       |\n| C≡C     |   3   |    120     |       835       |\n\n### Erklärung\n\nMehr bindende Elektronenpaare zwischen den Kernen:\n- Ziehen die Kerne stärker zusammen → **kürzere Bindung**\n- Erfordern mehr Energie zum Trennen → **stärkere Bindung**\n\n> 💡 Die Bindungslänge und -stärke sind experimentell messbar und bestätigen die theoretischen Vorhersagen.",
+      "audioFile": "45-laenge-staerke-zusammenhang.mp3"
     },
     {
       "type": "learning-content",
@@ -662,7 +680,8 @@
           "pages": "31-33"
         }
       ],
-      "content": "## Reaktionsenthalpie aus Bindungsenergien\n\nChemische Reaktionen beinhalten das Brechen und Bilden von Bindungen:\n\n- **Brechen** von Bindungen benötigt Energie (**endotherm**, +)\n- **Bilden** von Bindungen setzt Energie frei (**exotherm**, -)\n\n### Berechnungsformel\n\n$$\\Delta_r H \\approx \\sum BE_{\\text{gebrochen}} - \\sum BE_{\\text{gebildet}}$$\n\nwobei BE = Bindungsenergie (Bond Energy)\n\n### Rechenbeispiel: H₂ + Cl₂ → 2 HCl\n\n**Gegebene Bindungsenergien:**\n- H-H: 436 kJ/mol\n- Cl-Cl: 242 kJ/mol\n- H-Cl: 432 kJ/mol\n\n**Rechnung:**\n- Gebrochen: 1× H-H + 1× Cl-Cl = 436 + 242 = **+678 kJ**\n- Gebildet: 2× H-Cl = 2 × 432 = **-864 kJ**\n- Summe: 678 - 864 = **-186 kJ/mol**\n\n> 💡 **Negatives ΔH:** Die Reaktion ist exotherm (setzt Energie frei)."
+      "content": "## Reaktionsenthalpie aus Bindungsenergien\n\nChemische Reaktionen beinhalten das Brechen und Bilden von Bindungen:\n\n- **Brechen** von Bindungen benötigt Energie (**endotherm**, +)\n- **Bilden** von Bindungen setzt Energie frei (**exotherm**, -)\n\n### Berechnungsformel\n\n$$\\Delta_r H \\approx \\sum BE_{\\text{gebrochen}} - \\sum BE_{\\text{gebildet}}$$\n\nwobei BE = Bindungsenergie (Bond Energy)\n\n### Rechenbeispiel: H₂ + Cl₂ → 2 HCl\n\n**Gegebene Bindungsenergien:**\n- H-H: 436 kJ/mol\n- Cl-Cl: 242 kJ/mol\n- H-Cl: 432 kJ/mol\n\n**Rechnung:**\n- Gebrochen: 1× H-H + 1× Cl-Cl = 436 + 242 = **+678 kJ**\n- Gebildet: 2× H-Cl = 2 × 432 = **-864 kJ**\n- Summe: 678 - 864 = **-186 kJ/mol**\n\n> 💡 **Negatives ΔH:** Die Reaktion ist exotherm (setzt Energie frei).",
+      "audioFile": "46-reaktionsenthalpie-bindung.mp3"
     },
     {
       "type": "self-assessment-mc",
@@ -717,7 +736,8 @@
           "pages": "34-36"
         }
       ],
-      "content": "## Das Hybridisierungs-Konzept\n\nDie **Valenzbindungstheorie (VB-Theorie)** wurde von Linus Pauling entwickelt. Sie erklärt, wie Atome Bindungen eingehen.\n\n### Das Problem\n\nDie atomaren Orbitale (s, p, d) haben unterschiedliche Formen und Richtungen. Wie entstehen dann z.B. vier identische C-H Bindungen in Methan mit exakt 109,5°?\n\n### Die Lösung: Hybridisierung\n\n**Hybridisierung** ist das Mischen von Atomorbitalen zu neuen, gleichwertigen **Hybridorbitalen**.\n\n> 💡 **Beispiel Kohlenstoff in CH₄:**\n> - 1 s-Orbital + 3 p-Orbitale → 4 sp³-Hybridorbitale\n> - Alle 4 Orbitale sind identisch\n> - Sie zeigen in die Ecken eines Tetraeders (109,5°)\n\n### Wichtig\n\n- Die Anzahl der Hybridorbitale = Anzahl der gemischten Atomorbitale\n- Hybridorbitale sind energetisch gleichwertig\n- Die Form der Hybridorbitale ist asymmetrisch (ein großer, ein kleiner Lappen)"
+      "content": "## Das Hybridisierungs-Konzept\n\nDie **Valenzbindungstheorie (VB-Theorie)** wurde von Linus Pauling entwickelt. Sie erklärt, wie Atome Bindungen eingehen.\n\n### Das Problem\n\nDie atomaren Orbitale (s, p, d) haben unterschiedliche Formen und Richtungen. Wie entstehen dann z.B. vier identische C-H Bindungen in Methan mit exakt 109,5°?\n\n### Die Lösung: Hybridisierung\n\n**Hybridisierung** ist das Mischen von Atomorbitalen zu neuen, gleichwertigen **Hybridorbitalen**.\n\n> 💡 **Beispiel Kohlenstoff in CH₄:**\n> - 1 s-Orbital + 3 p-Orbitale → 4 sp³-Hybridorbitale\n> - Alle 4 Orbitale sind identisch\n> - Sie zeigen in die Ecken eines Tetraeders (109,5°)\n\n### Wichtig\n\n- Die Anzahl der Hybridorbitale = Anzahl der gemischten Atomorbitale\n- Hybridorbitale sind energetisch gleichwertig\n- Die Form der Hybridorbitale ist asymmetrisch (ein großer, ein kleiner Lappen)",
+      "audioFile": "50-hybridisierung-konzept.mp3"
     },
     {
       "type": "learning-content",
@@ -727,7 +747,8 @@
           "pages": "36-38"
         }
       ],
-      "content": "## Typen der Hybridisierung\n\nJe nachdem, welche Atomorbitale gemischt werden, entstehen unterschiedliche Hybridorbitale:\n\n| Hybridisierung | Orbitale     | Anzahl | Geometrie         |  Winkel  | Beispiele       |\n| :------------- | :----------- | :----: | :---------------- | :------: | :-------------- |\n| sp             | 1s + 1p      |   2    | Linear            |   180°   | BeF₂, CO₂, C₂H₂ |\n| sp²            | 1s + 2p      |   3    | Trigonal-planar   |   120°   | BF₃, C₂H₄       |\n| sp³            | 1s + 3p      |   4    | Tetraedrisch      |  109,5°  | CH₄, H₂O, NH₃   |\n| sp³d           | 1s + 3p + 1d |   5    | Trigonal-bipyram. | 90°/120° | PF₅             |\n| sp³d²          | 1s + 3p + 2d |   6    | Oktaedrisch       |   90°    | SF₆             |\n\n### Zusammenhang mit VSEPR\n\nDie Hybridisierung erklärt **warum** die VSEPR-Geometrien entstehen:\n\n- VSEPR sagt voraus: \"4 Paare → Tetraeder\"\n- Hybridisierung erklärt: \"sp³-Orbitale zeigen in Tetraederrichtungen\"\n\n> 💡 **Merke:** Die Hybridisierung wird durch die Anzahl der σ-Bindungen und freien Paare bestimmt!"
+      "content": "## Typen der Hybridisierung\n\nJe nachdem, welche Atomorbitale gemischt werden, entstehen unterschiedliche Hybridorbitale:\n\n| Hybridisierung | Orbitale     | Anzahl | Geometrie         |  Winkel  | Beispiele       |\n| :------------- | :----------- | :----: | :---------------- | :------: | :-------------- |\n| sp             | 1s + 1p      |   2    | Linear            |   180°   | BeF₂, CO₂, C₂H₂ |\n| sp²            | 1s + 2p      |   3    | Trigonal-planar   |   120°   | BF₃, C₂H₄       |\n| sp³            | 1s + 3p      |   4    | Tetraedrisch      |  109,5°  | CH₄, H₂O, NH₃   |\n| sp³d           | 1s + 3p + 1d |   5    | Trigonal-bipyram. | 90°/120° | PF₅             |\n| sp³d²          | 1s + 3p + 2d |   6    | Oktaedrisch       |   90°    | SF₆             |\n\n### Zusammenhang mit VSEPR\n\nDie Hybridisierung erklärt **warum** die VSEPR-Geometrien entstehen:\n\n- VSEPR sagt voraus: \"4 Paare → Tetraeder\"\n- Hybridisierung erklärt: \"sp³-Orbitale zeigen in Tetraederrichtungen\"\n\n> 💡 **Merke:** Die Hybridisierung wird durch die Anzahl der σ-Bindungen und freien Paare bestimmt!",
+      "audioFile": "51-hybridisierungstypen.mp3"
     },
     {
       "type": "learning-content",
@@ -737,7 +758,8 @@
           "pages": "38-40"
         }
       ],
-      "content": "## Sigma- und Pi-Bindungen\n\nEs gibt zwei Arten von kovalenten Bindungen, die sich in der Art der Orbitalüberlappung unterscheiden:\n\n### Sigma-Bindung (σ)\n\n- Entsteht durch **frontale** (Kopf-an-Kopf) Überlappung\n- Hohe Elektronendichte auf der Bindungsachse\n- **Rotation ist möglich** (um die Bindungsachse)\n- Jede Einfachbindung ist eine σ-Bindung\n\n### Pi-Bindung (π)\n\n- Entsteht durch **seitliche** Überlappung von p-Orbitalen\n- Elektronendichte ober- und unterhalb der Bindungsachse\n- **Rotation ist NICHT möglich** (würde die Überlappung brechen)\n- Kommen nur in Mehrfachbindungen vor\n\n### Zusammensetzung von Bindungen\n\n| Bindungstyp     | σ-Bindungen | π-Bindungen |\n| :-------------- | :---------: | :---------: |\n| Einfachbindung  |      1      |      0      |\n| Doppelbindung   |      1      |      1      |\n| Dreifachbindung |      1      |      2      |\n\n> ⚡ **Wichtig:** Die erste Bindung ist immer eine σ-Bindung!"
+      "content": "## Sigma- und Pi-Bindungen\n\nEs gibt zwei Arten von kovalenten Bindungen, die sich in der Art der Orbitalüberlappung unterscheiden:\n\n### Sigma-Bindung (σ)\n\n- Entsteht durch **frontale** (Kopf-an-Kopf) Überlappung\n- Hohe Elektronendichte auf der Bindungsachse\n- **Rotation ist möglich** (um die Bindungsachse)\n- Jede Einfachbindung ist eine σ-Bindung\n\n### Pi-Bindung (π)\n\n- Entsteht durch **seitliche** Überlappung von p-Orbitalen\n- Elektronendichte ober- und unterhalb der Bindungsachse\n- **Rotation ist NICHT möglich** (würde die Überlappung brechen)\n- Kommen nur in Mehrfachbindungen vor\n\n### Zusammensetzung von Bindungen\n\n| Bindungstyp     | σ-Bindungen | π-Bindungen |\n| :-------------- | :---------: | :---------: |\n| Einfachbindung  |      1      |      0      |\n| Doppelbindung   |      1      |      1      |\n| Dreifachbindung |      1      |      2      |\n\n> ⚡ **Wichtig:** Die erste Bindung ist immer eine σ-Bindung!",
+      "audioFile": "52-sigma-pi-bindungen.mp3"
     },
     {
       "type": "learning-content",
@@ -747,7 +769,8 @@
           "pages": "40-42"
         }
       ],
-      "content": "## Beispiel: Ethen (C₂H₄)\n\nEthen ist ein klassisches Beispiel für sp²-Hybridisierung und π-Bindungen.\n\n### Analyse\n\n**Kohlenstoff in Ethen:**\n- Jedes C bildet 3 σ-Bindungen (2× C-H, 1× C-C)\n- Hybridisierung: **sp²** (3 Hybridorbitale)\n- Geometrie: **Trigonal-planar** (120°)\n\n**Die C=C Doppelbindung:**\n- 1 σ-Bindung (sp²-sp² Überlappung)\n- 1 π-Bindung (p-p seitliche Überlappung)\n\n### Konsequenzen der π-Bindung\n\nDa die π-Bindung keine freie Rotation erlaubt:\n\n1. **Das Molekül ist planar** (alle 6 Atome in einer Ebene)\n2. **Cis/Trans-Isomerie** ist möglich bei substituierten Alkenen\n\n> 💡 **Beispiel:** cis-Buten und trans-Buten sind verschiedene Verbindungen, weil die Rotation um die C=C Doppelbindung verhindert ist."
+      "content": "## Beispiel: Ethen (C₂H₄)\n\nEthen ist ein klassisches Beispiel für sp²-Hybridisierung und π-Bindungen.\n\n### Analyse\n\n**Kohlenstoff in Ethen:**\n- Jedes C bildet 3 σ-Bindungen (2× C-H, 1× C-C)\n- Hybridisierung: **sp²** (3 Hybridorbitale)\n- Geometrie: **Trigonal-planar** (120°)\n\n**Die C=C Doppelbindung:**\n- 1 σ-Bindung (sp²-sp² Überlappung)\n- 1 π-Bindung (p-p seitliche Überlappung)\n\n### Konsequenzen der π-Bindung\n\nDa die π-Bindung keine freie Rotation erlaubt:\n\n1. **Das Molekül ist planar** (alle 6 Atome in einer Ebene)\n2. **Cis/Trans-Isomerie** ist möglich bei substituierten Alkenen\n\n> 💡 **Beispiel:** cis-Buten und trans-Buten sind verschiedene Verbindungen, weil die Rotation um die C=C Doppelbindung verhindert ist.",
+      "audioFile": "53-beispiel-ethen.mp3"
     },
     {
       "type": "self-assessment-mc",
@@ -880,7 +903,8 @@
           "pages": "43-44"
         }
       ],
-      "content": "## Die Molekülorbitaltheorie (MO-Theorie)\n\nDie **MO-Theorie** wurde von Robert Mulliken entwickelt und bietet einen alternativen Ansatz zur Beschreibung chemischer Bindungen.\n\n### Grundidee\n\nIm Gegensatz zur Valenzbindungstheorie, bei der Elektronen zwischen bestimmten Atompaaren lokalisiert sind, betrachtet die MO-Theorie Elektronen als **über das gesamte Molekül delokalisiert**.\n\n### Entstehung von Molekülorbitalen\n\nWenn Atomorbitale (AO) kombiniert werden, entstehen Molekülorbitale (MO):\n\n- **Anzahl bleibt erhalten:** Aus n Atomorbitalen entstehen n Molekülorbitale\n- **Lineare Kombination:** MOs entstehen durch Addition oder Subtraktion der Wellenfunktionen\n\n> 💡 **Vorteil der MO-Theorie:** Sie kann Eigenschaften erklären, die die VB-Theorie nicht kann (z.B. Paramagnetismus von O₂)."
+      "content": "## Die Molekülorbitaltheorie (MO-Theorie)\n\nDie **MO-Theorie** wurde von Robert Mulliken entwickelt und bietet einen alternativen Ansatz zur Beschreibung chemischer Bindungen.\n\n### Grundidee\n\nIm Gegensatz zur Valenzbindungstheorie, bei der Elektronen zwischen bestimmten Atompaaren lokalisiert sind, betrachtet die MO-Theorie Elektronen als **über das gesamte Molekül delokalisiert**.\n\n### Entstehung von Molekülorbitalen\n\nWenn Atomorbitale (AO) kombiniert werden, entstehen Molekülorbitale (MO):\n\n- **Anzahl bleibt erhalten:** Aus n Atomorbitalen entstehen n Molekülorbitale\n- **Lineare Kombination:** MOs entstehen durch Addition oder Subtraktion der Wellenfunktionen\n\n> 💡 **Vorteil der MO-Theorie:** Sie kann Eigenschaften erklären, die die VB-Theorie nicht kann (z.B. Paramagnetismus von O₂).",
+      "audioFile": "61-mo-theorie-einfuehrung.mp3"
     },
     {
       "type": "learning-content",
@@ -890,7 +914,8 @@
           "pages": "44-46"
         }
       ],
-      "content": "## Bindende und Antibindende Molekülorbitale\n\nWenn zwei Atomorbitale kombiniert werden, entstehen zwei Molekülorbitale mit unterschiedlichen Eigenschaften:\n\n### Bindendes MO (σ, π)\n\n- Entsteht durch **konstruktive** Überlagerung (Wellenfunktionen addieren sich)\n- **Niedrigere Energie** als die ursprünglichen Atomorbitale\n- Hohe Elektronendichte **zwischen** den Kernen\n- Stabilisiert die Bindung\n\n### Antibindendes MO (σ*, π*)\n\n- Entsteht durch **destruktive** Überlagerung (Wellenfunktionen subtrahieren sich)\n- **Höhere Energie** als die ursprünglichen Atomorbitale\n- **Knotenebene** zwischen den Kernen (keine Elektronendichte)\n- Destabilisiert die Bindung\n- Gekennzeichnet mit einem Stern (*)\n\n### Energieschema\n\n| Energieniveau | Orbital           | Besetzung        |\n| :-----------: | :---------------- | :--------------- |\n|     Hoch      | σ* (antibindend)  | Destabilisiert   |\n|     Mitte     | Atomorbitale (AO) | Ursprungszustand |\n|    Niedrig    | σ (bindend)       | Stabilisiert     |\n\n> ⚠️ **Wichtig:** Elektronen besetzen zuerst die energieärmeren bindenden Orbitale!"
+      "content": "## Bindende und Antibindende Molekülorbitale\n\nWenn zwei Atomorbitale kombiniert werden, entstehen zwei Molekülorbitale mit unterschiedlichen Eigenschaften:\n\n### Bindendes MO (σ, π)\n\n- Entsteht durch **konstruktive** Überlagerung (Wellenfunktionen addieren sich)\n- **Niedrigere Energie** als die ursprünglichen Atomorbitale\n- Hohe Elektronendichte **zwischen** den Kernen\n- Stabilisiert die Bindung\n\n### Antibindendes MO (σ*, π*)\n\n- Entsteht durch **destruktive** Überlagerung (Wellenfunktionen subtrahieren sich)\n- **Höhere Energie** als die ursprünglichen Atomorbitale\n- **Knotenebene** zwischen den Kernen (keine Elektronendichte)\n- Destabilisiert die Bindung\n- Gekennzeichnet mit einem Stern (*)\n\n### Energieschema\n\n| Energieniveau | Orbital           | Besetzung        |\n| :-----------: | :---------------- | :--------------- |\n|     Hoch      | σ* (antibindend)  | Destabilisiert   |\n|     Mitte     | Atomorbitale (AO) | Ursprungszustand |\n|    Niedrig    | σ (bindend)       | Stabilisiert     |\n\n> ⚠️ **Wichtig:** Elektronen besetzen zuerst die energieärmeren bindenden Orbitale!",
+      "audioFile": "62-bindend-antibindend.mp3"
     },
     {
       "type": "learning-content",
@@ -900,7 +925,8 @@
           "pages": "46-47"
         }
       ],
-      "content": "## Bindungsordnung in der MO-Theorie\n\nDie MO-Theorie ermöglicht eine quantitative Berechnung der Bindungsordnung:\n\n### Formel\n\n$$\\text{Bindungsordnung} = \\frac{1}{2} \\left( n_{\\text{bindend}} - n_{\\text{antibindend}} \\right)$$\n\nwobei:\n- $n_{\\text{bindend}}$ = Anzahl der Elektronen in bindenden MOs\n- $n_{\\text{antibindend}}$ = Anzahl der Elektronen in antibindenden MOs\n\n### Interpretation\n\n| Bindungsordnung | Bedeutung                                     |\n| :-------------: | :-------------------------------------------- |\n|        0        | Keine stabile Bindung                         |\n|        1        | Einfachbindung                                |\n|        2        | Doppelbindung                                 |\n|        3        | Dreifachbindung                               |\n| 0,5 / 1,5 / ... | Bindung mit teilweise antibindendem Charakter |\n\n### Beispiel: H₂\n\n- 2 Elektronen im bindenden σ₁ₛ-MO\n- 0 Elektronen im antibindenden σ₁ₛ*-MO\n- BO = ½ × (2 - 0) = **1** (Einfachbindung)"
+      "content": "## Bindungsordnung in der MO-Theorie\n\nDie MO-Theorie ermöglicht eine quantitative Berechnung der Bindungsordnung:\n\n### Formel\n\n$$\\text{Bindungsordnung} = \\frac{1}{2} \\left( n_{\\text{bindend}} - n_{\\text{antibindend}} \\right)$$\n\nwobei:\n- $n_{\\text{bindend}}$ = Anzahl der Elektronen in bindenden MOs\n- $n_{\\text{antibindend}}$ = Anzahl der Elektronen in antibindenden MOs\n\n### Interpretation\n\n| Bindungsordnung | Bedeutung                                     |\n| :-------------: | :-------------------------------------------- |\n|        0        | Keine stabile Bindung                         |\n|        1        | Einfachbindung                                |\n|        2        | Doppelbindung                                 |\n|        3        | Dreifachbindung                               |\n| 0,5 / 1,5 / ... | Bindung mit teilweise antibindendem Charakter |\n\n### Beispiel: H₂\n\n- 2 Elektronen im bindenden σ₁ₛ-MO\n- 0 Elektronen im antibindenden σ₁ₛ*-MO\n- BO = ½ × (2 - 0) = **1** (Einfachbindung)",
+      "audioFile": "63-bindungsordnung-mo.mp3"
     },
     {
       "type": "learning-content",
@@ -910,7 +936,8 @@
           "pages": "47-50"
         }
       ],
-      "content": "## Der Paramagnetismus von Sauerstoff (O₂)\n\nDies ist das **Schlüsselbeispiel** für den Erfolg der MO-Theorie!\n\n### Das Problem mit der VB-Theorie\n\nDie Lewis-Formel von O₂ zeigt eine Doppelbindung (O=O) mit allen Elektronen gepaart. Dies würde **Diamagnetismus** vorhersagen (wird von Magneten abgestoßen).\n\n**Experiment:** Flüssiger Sauerstoff ist **paramagnetisch** (wird von Magneten angezogen)!\n\n### Die MO-Erklärung\n\nIm MO-Energiediagramm von O₂:\n\n1. O₂ hat 16 Elektronen (8 von jedem O-Atom)\n2. Die letzten zwei Elektronen besetzen zwei **entartete** (energiegleiche) π*-Orbitale\n3. Nach der **Hundschen Regel** besetzen sie diese Orbitale **einzeln mit parallelem Spin**\n\n### Ergebnis\n\n- O₂ hat **2 ungepaarte Elektronen**\n- Ungepaarte Elektronen = **Paramagnetismus**\n- Bindungsordnung = ½ × (8 - 4) = 2 (Doppelbindung, stimmt!)\n\n> ⚡ **Die MO-Theorie erklärt korrekt, was die Lewis-Formel nicht kann!**"
+      "content": "## Der Paramagnetismus von Sauerstoff (O₂)\n\nDies ist das **Schlüsselbeispiel** für den Erfolg der MO-Theorie!\n\n### Das Problem mit der VB-Theorie\n\nDie Lewis-Formel von O₂ zeigt eine Doppelbindung (O=O) mit allen Elektronen gepaart. Dies würde **Diamagnetismus** vorhersagen (wird von Magneten abgestoßen).\n\n**Experiment:** Flüssiger Sauerstoff ist **paramagnetisch** (wird von Magneten angezogen)!\n\n### Die MO-Erklärung\n\nIm MO-Energiediagramm von O₂:\n\n1. O₂ hat 16 Elektronen (8 von jedem O-Atom)\n2. Die letzten zwei Elektronen besetzen zwei **entartete** (energiegleiche) π*-Orbitale\n3. Nach der **Hundschen Regel** besetzen sie diese Orbitale **einzeln mit parallelem Spin**\n\n### Ergebnis\n\n- O₂ hat **2 ungepaarte Elektronen**\n- Ungepaarte Elektronen = **Paramagnetismus**\n- Bindungsordnung = ½ × (8 - 4) = 2 (Doppelbindung, stimmt!)\n\n> ⚡ **Die MO-Theorie erklärt korrekt, was die Lewis-Formel nicht kann!**",
+      "audioFile": "64-o2-paramagnetismus.mp3"
     },
     {
       "type": "self-assessment-mc",
@@ -1275,5 +1302,5 @@
       "difficulty": "hard"
     }
   ],
-  "generatedAt": "2026-01-25T11:48:08.771Z"
+  "generatedAt": "2026-01-25T15:14:51.154Z"
 }

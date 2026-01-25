@@ -22,12 +22,12 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 ## Intermolekulare Kräfte (nach Stärke)
 
-| Kraft              | Stärke (kJ/mol) | Beispiel                    |
-| ------------------ | --------------- | --------------------------- |
-| Ion-Dipol          | 40–600          | NaCl in Wasser              |
-| H-Brücken          | 5–30            | H₂O, NH₃, HF                |
-| Dipol-Dipol        | 2–10            | HCl, ICl                    |
-| Dispersionskräfte  | 0.05–40         | Alle (dominant bei unpolar) |
+| Kraft             | Stärke (kJ/mol) | Beispiel                    |
+| ----------------- | --------------- | --------------------------- |
+| Ion-Dipol         | 40–600          | NaCl in Wasser              |
+| H-Brücken         | 5–30            | H₂O, NH₃, HF                |
+| Dipol-Dipol       | 2–10            | HCl, ICl                    |
+| Dispersionskräfte | 0.05–40         | Alle (dominant bei unpolar) |
 
 ***
 
@@ -58,11 +58,11 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 ## Dampfdruck & Siedepunkt
 
-| Begriff          | Definition                                      |
-| ---------------- | ----------------------------------------------- |
-| Dampfdruck       | Druck im Gleichgewicht Verdampfung/Kondensation |
-| Siedepunkt       | T bei der Dampfdruck = Außendruck               |
-| Normaler S.P.    | Bei 1 atm (760 mmHg)                            |
+| Begriff       | Definition                                      |
+| ------------- | ----------------------------------------------- |
+| Dampfdruck    | Druck im Gleichgewicht Verdampfung/Kondensation |
+| Siedepunkt    | T bei der Dampfdruck = Außendruck               |
+| Normaler S.P. | Bei 1 atm (760 mmHg)                            |
 
 **Merke:**
 - Starke IM-Kräfte → niedriger Dampfdruck → hoher Siedepunkt
@@ -74,21 +74,21 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 **Achsen:** Druck (y) vs. Temperatur (x)
 
-| Punkt           | Definition                                        |
-| --------------- | ------------------------------------------------- |
-| Tripelpunkt     | Alle 3 Phasen im Gleichgewicht (H₂O: 0.01°C)      |
-| Kritischer Pkt. | Ende der Flüssig-Gas-Kurve, überkritische Phase   |
+| Punkt           | Definition                                      |
+| --------------- | ----------------------------------------------- |
+| Tripelpunkt     | Alle 3 Phasen im Gleichgewicht (H₂O: 0.01°C)    |
+| Kritischer Pkt. | Ende der Flüssig-Gas-Kurve, überkritische Phase |
 
 ***
 
 ## Wasser vs. CO₂
 
-| Eigenschaft         | H₂O               | CO₂                  |
-| ------------------- | ----------------- | -------------------- |
-| Fest-Flüssig-Linie  | Negativ geneigt   | Positiv geneigt      |
-| Dichteanomalie      | Eis < Wasser      | Normal (Fest > Flüss)|
-| Bei 1 atm           | Alle 3 Phasen     | Nur fest + Gas       |
-| Trockeneis          | –                 | Sublimiert bei -78°C |
+| Eigenschaft        | H₂O             | CO₂                   |
+| ------------------ | --------------- | --------------------- |
+| Fest-Flüssig-Linie | Negativ geneigt | Positiv geneigt       |
+| Dichteanomalie     | Eis < Wasser    | Normal (Fest > Flüss) |
+| Bei 1 atm          | Alle 3 Phasen   | Nur fest + Gas        |
+| Trockeneis         | –               | Sublimiert bei -78°C  |
 
 ***
 

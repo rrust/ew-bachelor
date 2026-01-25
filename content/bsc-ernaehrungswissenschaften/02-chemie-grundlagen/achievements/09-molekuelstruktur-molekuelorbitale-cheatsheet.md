@@ -24,13 +24,13 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 **Grundprinzip:** Elektronenpaare ordnen sich so an, dass die Abstoßung minimal ist.
 
-| Elektronenpaare | Anordnung            | Winkel     |
-| --------------- | -------------------- | ---------- |
-| 2               | Linear               | 180°       |
-| 3               | Trigonal-planar      | 120°       |
-| 4               | Tetraedrisch         | 109.5°     |
-| 5               | Trigonal-bipyramidal | 90°/120°   |
-| 6               | Oktaedrisch          | 90°        |
+| Elektronenpaare | Anordnung            | Winkel   |
+| --------------- | -------------------- | -------- |
+| 2               | Linear               | 180°     |
+| 3               | Trigonal-planar      | 120°     |
+| 4               | Tetraedrisch         | 109.5°   |
+| 5               | Trigonal-bipyramidal | 90°/120° |
+| 6               | Oktaedrisch          | 90°      |
 
 ***
 
@@ -38,25 +38,25 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 
 **Freie Paare brauchen mehr Platz → Winkel werden kleiner**
 
-| Molekül | Paare (B+F) | Geometrie         | Winkel  |
-| ------- | ----------- | ----------------- | ------- |
-| CH₄     | 4+0         | Tetraedrisch      | 109.5°  |
-| NH₃     | 3+1         | Trigonal-pyramidal| 107°    |
-| H₂O     | 2+2         | Gewinkelt         | 104.5°  |
+| Molekül | Paare (B+F) | Geometrie          | Winkel |
+| ------- | ----------- | ------------------ | ------ |
+| CH₄     | 4+0         | Tetraedrisch       | 109.5° |
+| NH₃     | 3+1         | Trigonal-pyramidal | 107°   |
+| H₂O     | 2+2         | Gewinkelt          | 104.5° |
 
 ***
 
 ## Erweitertes Oktett (ab 3. Periode)
 
-| Struktur           | Paare (B+F) | Beispiel |
-| ------------------ | ----------- | -------- |
-| Trigonal-bipyram.  | 5+0         | PCl₅     |
-| Wippe              | 4+1         | SF₄      |
-| T-förmig           | 3+2         | ClF₃     |
-| Linear             | 2+3         | XeF₂     |
-| Oktaedrisch        | 6+0         | SF₆      |
-| Quadrat-pyramidal  | 5+1         | BrF₅     |
-| Quadrat-planar     | 4+2         | XeF₄     |
+| Struktur          | Paare (B+F) | Beispiel |
+| ----------------- | ----------- | -------- |
+| Trigonal-bipyram. | 5+0         | PCl₅     |
+| Wippe             | 4+1         | SF₄      |
+| T-förmig          | 3+2         | ClF₃     |
+| Linear            | 2+3         | XeF₂     |
+| Oktaedrisch       | 6+0         | SF₆      |
+| Quadrat-pyramidal | 5+1         | BrF₅     |
+| Quadrat-planar    | 4+2         | XeF₄     |
 
 **Freie Paare in äquatorialer Position (weniger 90°-Abstoßung)**
 
@@ -77,11 +77,11 @@ $$\text{Polar} = \text{polare Bindungen} + \text{asymmetrische Geometrie}$$
 
 ## Bindungsordnung, -länge, -stärke
 
-| Ordnung | Länge    | Stärke   | Beispiel      |
-| ------- | -------- | -------- | ------------- |
-| 1       | Lang     | Schwach  | C–C (154 pm)  |
-| 2       | Mittel   | Mittel   | C=C (134 pm)  |
-| 3       | Kurz     | Stark    | C≡C (120 pm)  |
+| Ordnung | Länge  | Stärke  | Beispiel     |
+| ------- | ------ | ------- | ------------ |
+| 1       | Lang   | Schwach | C–C (154 pm) |
+| 2       | Mittel | Mittel  | C=C (134 pm) |
+| 3       | Kurz   | Stark   | C≡C (120 pm) |
 
 **Merke:** Höhere Ordnung → kürzere Bindung → stärkere Bindung
 
@@ -89,13 +89,13 @@ $$\text{Polar} = \text{polare Bindungen} + \text{asymmetrische Geometrie}$$
 
 ## Hybridisierung
 
-| Typ    | Geometrie           | Winkel  | Beispiel |
-| ------ | ------------------- | ------- | -------- |
-| sp     | Linear              | 180°    | CO₂, C₂H₂|
-| sp²    | Trigonal-planar     | 120°    | C₂H₄, BF₃|
-| sp³    | Tetraedrisch        | 109.5°  | CH₄, H₂O |
-| sp³d   | Trigonal-bipyramidal| 90/120° | PCl₅     |
-| sp³d²  | Oktaedrisch         | 90°     | SF₆      |
+| Typ   | Geometrie            | Winkel  | Beispiel  |
+| ----- | -------------------- | ------- | --------- |
+| sp    | Linear               | 180°    | CO₂, C₂H₂ |
+| sp²   | Trigonal-planar      | 120°    | C₂H₄, BF₃ |
+| sp³   | Tetraedrisch         | 109.5°  | CH₄, H₂O  |
+| sp³d  | Trigonal-bipyramidal | 90/120° | PCl₅      |
+| sp³d² | Oktaedrisch          | 90°     | SF₆       |
 
 ***
 

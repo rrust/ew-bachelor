@@ -39,12 +39,12 @@ $$\sum m_{\text{Edukte}} = \sum m_{\text{Produkte}}$$
 
 ## Wichtige Formeln
 
-| Größe         | Formel                    | Einheit     |
-| ------------- | ------------------------- | ----------- |
-| Stoffmenge    | $n = \frac{m}{M}$         | mol         |
-| Molarität     | $c = \frac{n}{V}$         | mol/L (M)   |
-| Verdünnung    | $c_1 \cdot V_1 = c_2 \cdot V_2$ | -     |
-| Massenprozent | $w = \frac{m_{\text{Stoff}}}{m_{\text{ges}}} \cdot 100$ | % |
+| Größe         | Formel                                                  | Einheit   |
+| ------------- | ------------------------------------------------------- | --------- |
+| Stoffmenge    | $n = \frac{m}{M}$                                       | mol       |
+| Molarität     | $c = \frac{n}{V}$                                       | mol/L (M) |
+| Verdünnung    | $c_1 \cdot V_1 = c_2 \cdot V_2$                         | -         |
+| Massenprozent | $w = \frac{m_{\text{Stoff}}}{m_{\text{ges}}} \cdot 100$ | %         |
 
 ***
 
@@ -74,11 +74,11 @@ $$\text{Prozentuale Ausbeute} = \frac{\text{Tatsächliche Ausbeute}}{\text{Theor
 
 $$\text{pH} = -\log_{10}[\text{H}^+]$$
 
-| pH    | Charakter  | [H⁺]         |
-| ----- | ---------- | ------------ |
-| 0     | Stark sauer| 1 M          |
-| 7     | Neutral    | 10⁻⁷ M       |
-| 14    | Stark basisch| 10⁻¹⁴ M    |
+| pH  | Charakter     | [H⁺]    |
+| --- | ------------- | ------- |
+| 0   | Stark sauer   | 1 M     |
+| 7   | Neutral       | 10⁻⁷ M  |
+| 14  | Stark basisch | 10⁻¹⁴ M |
 
 **Merke:** pH + pOH = 14 (bei 25°C)
 
@@ -99,12 +99,12 @@ $$c_{\text{Säure}} \cdot V_{\text{Säure}} = c_{\text{Base}} \cdot V_{\text{Bas
 
 $$A = \varepsilon \cdot c \cdot d$$
 
-| Variable | Bedeutung              |
-| -------- | ---------------------- |
+| Variable | Bedeutung                  |
+| -------- | -------------------------- |
 | A        | Absorption (dimensionslos) |
-| ε        | Extinktionskoeffizient |
-| c        | Konzentration          |
-| d        | Schichtdicke           |
+| ε        | Extinktionskoeffizient     |
+| c        | Konzentration              |
+| d        | Schichtdicke               |
 
 **Anwendung:** Konzentrationsbestimmung durch Lichtabsorption
 
