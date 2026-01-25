@@ -1,0 +1,29 @@
+Das Haber-Bosch-Verfahren.
+
+Die Ammoniaksynthese ist eine der wichtigsten industriellen Anwendungen des chemischen Gleichgewichts.
+
+...
+
+Die Reaktion lautet: N zwei plus 3 H zwei reagiert zu 2 N H drei plus Wärme. Die Reaktionsenthalpie ist minus 92 Kilojoule pro Mol... also exotherm.
+
+...
+
+Das Problem: Bei Raumtemperatur ist K sehr groß, etwa 10 hoch 5... thermodynamisch günstig! Aber die Reaktion ist extrem langsam, weil die Stickstoff-Dreifachbindung sehr stabil ist.
+
+...
+
+Die Optimierung nach Le Chatelier:
+
+Erstens: Hoher Druck, 150 bis 300 bar. Auf der linken Seite sind 4 Gasteilchen, rechts nur 2. Hoher Druck begünstigt die Seite mit weniger Teilchen... also rechts.
+
+Zweitens: Das entstehende Ammoniak wird durch Verflüssigung entfernt. Produkt wegnehmen führt zu Verschiebung nach rechts.
+
+...
+
+Drittens: Die Temperatur ist ein Kompromiss. Niedrige Temperaturen wären gut für die Ausbeute, weil die Reaktion exotherm ist. Aber dann wäre die Reaktion zu langsam. Man arbeitet bei etwa 450 Grad als Kompromiss.
+
+Viertens: Ein Eisenkatalysator beschleunigt die Reaktion erheblich.
+
+...
+
+Das Verfahren produziert etwa 150 Millionen Tonnen Ammoniak pro Jahr. Es ist die Basis für Düngemittel und ernährt etwa die Hälfte der Weltbevölkerung. Fritz Haber erhielt 1918 den Nobelpreis dafür.

@@ -1,0 +1,33 @@
+Die Rolle des Katalysators.
+
+Katalysatoren werden oft bei Gleichgewichtsreaktionen eingesetzt. Doch was bewirken sie wirklich?
+
+...
+
+Was ein Katalysator tut:
+
+Er senkt die Aktivierungsenergie der Reaktion. Er beschleunigt beide Reaktionen, die Hin- und die Rückreaktion, gleichermaßen. Dadurch wird das Gleichgewicht schneller erreicht.
+
+...
+
+Aber Achtung! Was ein Katalysator nicht tut:
+
+Er verschiebt das Gleichgewicht nicht. Er ändert K nicht. Und er erhöht die Ausbeute nicht.
+
+...
+
+Warum verwendet man dann Katalysatoren? In der Industrie ist Zeit Geld.
+
+Ein Katalysator spart Zeit... das Gleichgewicht wird schneller erreicht.
+
+Er spart Energie... oft sind niedrigere Temperaturen möglich.
+
+Und er ermöglicht Reaktionen, die sonst viel zu langsam wären.
+
+...
+
+Ein Beispiel: Die Ammoniaksynthese. Ohne Katalysator wäre die Reaktion bei Raumtemperatur extrem langsam... sie würde Jahre dauern! Mit einem Eisenkatalysator läuft sie bei 400 bis 500 Grad in Sekunden ab.
+
+...
+
+Merksatz: Der Katalysator zeigt den Weg, ändert aber nicht das Ziel!

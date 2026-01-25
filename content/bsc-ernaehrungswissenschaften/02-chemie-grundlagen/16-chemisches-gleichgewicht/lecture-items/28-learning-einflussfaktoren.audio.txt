@@ -1,0 +1,37 @@
+Einflussfaktoren auf das Gleichgewicht.
+
+Le Chatelier beschreibt drei Wege, ein Gleichgewicht zu beeinflussen.
+
+...
+
+Erstens: Konzentration.
+
+Edukt zugeben führt zu einer Verschiebung nach rechts... das Edukt wird verbraucht.
+
+Produkt entfernen führt ebenfalls zu einer Verschiebung nach rechts... das Produkt wird nachgebildet.
+
+Umgekehrt: Produkt zugeben oder Edukt entfernen führt zu einer Verschiebung nach links.
+
+Ein Beispiel: Eisen drei plus und Thiocyanat reagieren zu einem roten Komplex. Gibt man mehr Eisen zu, entsteht mehr rotes Produkt... die Farbe wird intensiver.
+
+...
+
+Zweitens: Druck und Volumen. Das gilt nur bei Gasen!
+
+Druck erhöhen führt zur Verschiebung zur Seite mit weniger Gasteilchen.
+
+Ein Beispiel: N zwei O vier zu 2 N O zwei. Links 1 Teilchen, rechts 2 Teilchen. Druckerhöhung führt zur Verschiebung nach links.
+
+Wichtig: Wenn Delta n gleich 0 ist, hat Druck keinen Einfluss!
+
+...
+
+Drittens: Temperatur.
+
+Bei exothermen Reaktionen ist Wärme ein Produkt. Erwärmen führt zur Verschiebung nach links, K sinkt. Abkühlen führt zur Verschiebung nach rechts, K steigt.
+
+Bei endothermen Reaktionen ist es genau umgekehrt. Wärme ist ein Edukt. Erwärmen führt nach rechts.
+
+...
+
+Merksatz: Das System flieht vor der Wärme bei exothermen Reaktionen und sucht die Wärme bei endothermen Reaktionen.

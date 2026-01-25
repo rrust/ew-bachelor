@@ -1,0 +1,737 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "16-chemisches-gleichgewicht",
+  "metadata": {
+    "topic": "Chemisches Gleichgewicht",
+    "description": "Massenwirkungsgesetz, Reaktionsquotient, ICE-Tabellen, Le Chatelier, Haber-Bosch",
+    "estimatedTime": 90,
+    "version": "1.0.0",
+    "sources": [
+      {
+        "id": "vorlesung-k16",
+        "title": "Vorlesungsfolien Kapitel 16",
+        "type": "pdf"
+      },
+      {
+        "id": "kotz-k16",
+        "title": "Kotz, Treichel, Townsend: Chemistry (Kap. 16)",
+        "type": "book"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Was ist chemisches Gleichgewicht?\n\nViele chemische Reaktionen laufen nicht vollständig ab. Stattdessen stellt sich ein Zustand ein, in dem sowohl **Edukte als auch Produkte** gleichzeitig vorliegen. Dieser Zustand heißt **chemisches Gleichgewicht**.\n\n## Warum laufen Reaktionen nicht vollständig ab?\n\nBetrachten wir die Bildung von Stickstoffdioxid:\n\n$$\\text{N}_2\\text{O}_4\\text{(g)} \\rightleftharpoons 2\\text{NO}_2\\text{(g)}$$\n\nStartet man mit reinem N₂O₄, beginnt es zu zerfallen. Gleichzeitig rekombinieren entstandene NO₂-Moleküle wieder zu N₂O₄. Irgendwann sind beide Prozesse **gleich schnell** – das Gleichgewicht ist erreicht.\n\n## Das Gleichgewichts-Symbol\n\nDer Doppelpfeil ⇌ zeigt an, dass eine Reaktion in beide Richtungen ablaufen kann:\n\n| Symbol | Bedeutung                                       |\n| ------ | ----------------------------------------------- |\n| →      | Reaktion läuft nur in eine Richtung             |\n| ⇌      | Reaktion ist reversibel (Gleichgewicht möglich) |\n\n## Alltagsbeispiel: Sprudelflasche\n\nEine geschlossene Sprudelflasche enthält gelöstes CO₂ im Gleichgewicht mit CO₂-Gas über der Flüssigkeit:\n\n$$\\text{CO}_2\\text{(aq)} \\rightleftharpoons \\text{CO}_2\\text{(g)}$$\n\nBeim Öffnen entweicht Gas, das Gleichgewicht wird gestört, und weiteres CO₂ entweicht aus der Flüssigkeit – die Flasche \"sprudelt\".\n\n## Wichtige Erkenntnis\n\n> **Gleichgewicht bedeutet nicht, dass nichts passiert!** Die Reaktionen laufen weiter, aber Hin- und Rückreaktion heben sich gegenseitig auf.",
+      "audioFile": "01-learning-einfuehrung.mp3"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Dynamischer Charakter und Reversibilität\n\nDas chemische Gleichgewicht hat drei fundamentale Eigenschaften, die es von einem statischen Zustand unterscheiden.\n\n## 1. Dynamisch\n\nEin Gleichgewicht ist **nicht statisch**. Auf molekularer Ebene passiert ständig etwas:\n\n- Edukte reagieren zu Produkten (Hinreaktion)\n- Produkte reagieren zurück zu Edukten (Rückreaktion)\n- Beide Reaktionen laufen **gleich schnell** ab\n\nDie Konzentrationen bleiben konstant, weil sich Bildung und Abbau die Waage halten.\n\n## 2. Reversibel\n\nReversibel bedeutet **umkehrbar**. Das Gleichgewicht kann von beiden Seiten erreicht werden:\n\n| Startbedingung         | Ergebnis                                          |\n| ---------------------- | ------------------------------------------------- |\n| Nur Edukte vorhanden   | Reaktion läuft nach rechts bis zum Gleichgewicht  |\n| Nur Produkte vorhanden | Reaktion läuft nach links bis zum Gleichgewicht   |\n| Beliebige Mischung     | System stellt sich auf dasselbe Gleichgewicht ein |\n\n## 3. Konstante makroskopische Eigenschaften\n\nIm Gleichgewicht bleiben messbare Größen konstant:\n\n- Konzentrationen\n- Farbe (bei farbigen Stoffen)\n- Druck (bei Gasen)\n- pH-Wert (bei Säure-Base-Gleichgewichten)\n\n## Visualisierung: Eis-Wasser bei 0°C\n\nBei exakt 0°C befinden sich Eis und Wasser im Gleichgewicht:\n\n$$\\text{H}_2\\text{O(s)} \\rightleftharpoons \\text{H}_2\\text{O(l)}$$\n\n- Eiskristalle schmelzen ständig\n- Wassermoleküle gefrieren ständig\n- Beide Prozesse gleich schnell → Menge Eis und Wasser bleibt konstant\n\n> **Merksatz:** Ein dynamisches Gleichgewicht ist wie zwei gleich starke Teams beim Tauziehen – beide ziehen mit voller Kraft, aber das Seil bewegt sich nicht.",
+      "audioFile": "02-learning-dynamisch-reversibel.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Eigenschaft trifft auf ein chemisches System im Gleichgewicht zu?",
+      "options": [
+        "Die Reaktion stoppt vollständig auf molekularer Ebene",
+        "Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab",
+        "Nur die Hinreaktion findet statt",
+        "Die Konzentrationen ändern sich ständig"
+      ],
+      "correctAnswer": "Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab",
+      "explanation": "Ein chemisches Gleichgewicht ist dynamisch – die Reaktionen laufen weiter, aber Hin- und Rückreaktion sind gleich schnell. Dadurch bleiben die Konzentrationen konstant, obwohl auf molekularer Ebene ständig Umwandlungen stattfinden.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Beispiele für chemische Gleichgewichte\n\nChemische Gleichgewichte finden sich überall – in der Natur, im Labor und in der Industrie.\n\n## Farbwechsel bei Cobalt-Komplexen\n\nEin eindrucksvolles Beispiel ist der temperaturabhängige Farbwechsel:\n\n$$\\underbrace{\\text{Co(H}_2\\text{O)}_6\\text{Cl}_2}_{\\text{Rosa}} \\rightleftharpoons \\underbrace{\\text{Co(H}_2\\text{O)}_4\\text{Cl}_2}_{\\text{Blau}} + 2\\text{H}_2\\text{O}$$\n\n- Bei **niedrigen Temperaturen**: Rosa (hexaaqua-Komplex)\n- Bei **hohen Temperaturen**: Blau (tetraaqua-Komplex)\n\nDie Farbe zeigt an, wo das Gleichgewicht liegt!\n\n## Eisen-Thiocyanat: Das \"Blutfarben\"-Gleichgewicht\n\n$$\\text{Fe}^{3+}\\text{(aq)} + \\text{SCN}^-\\text{(aq)} \\rightleftharpoons \\text{Fe(SCN)}^{2+}\\text{(aq)}$$\n\n- Fe³⁺ (farblos) + SCN⁻ (farblos) → Fe(SCN)²⁺ (tiefrot)\n- Zugabe von Fe³⁺ oder SCN⁻ → intensivere Rotfärbung\n- Entfernen eines Ions → blassere Farbe\n\nDieses System wird oft verwendet, um Gleichgewichtsverschiebungen zu demonstrieren.\n\n## Geologische Prozesse: Tropfsteine\n\nDie Bildung von Stalaktiten und Stalagmiten basiert auf dem Kalk-Kohlensäure-Gleichgewicht:\n\n$$\\text{CaCO}_3\\text{(s)} + \\text{H}_2\\text{O(l)} + \\text{CO}_2\\text{(g)} \\rightleftharpoons \\text{Ca}^{2+}\\text{(aq)} + 2\\text{HCO}_3^-\\text{(aq)}$$\n\n1. **In der Höhle**: CO₂-arme Luft verschiebt das Gleichgewicht nach links\n2. **Ergebnis**: CaCO₃ fällt aus → Tropfstein wächst\n\nDieser Prozess dauert Jahrtausende!\n\n## Biologische Gleichgewichte\n\nAuch im Körper spielen Gleichgewichte eine zentrale Rolle:\n\n- **Hämoglobin-Sauerstoff**: Transport von O₂ im Blut\n- **Blutpuffer**: Konstanthaltung des pH-Werts\n- **Enzymreaktionen**: Viele sind reversibel",
+      "audioFile": "04-learning-beispiele.mp3"
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=PK5SlkdYDpA",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        }
+      ],
+      "content": "Das Video erklärt die Umkehrbarkeit von Reaktionen und den Zustand des dynamischen Gleichgewichts anhand anschaulicher Analogien."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Das Massenwirkungsgesetz (MWG)\n\nDas Massenwirkungsgesetz beschreibt quantitativ, wie die Konzentrationen von Edukten und Produkten im Gleichgewicht zusammenhängen.\n\n## Die allgemeine Formel\n\nFür eine beliebige Reaktion:\n\n$$a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D}$$\n\nlautet die **Gleichgewichtskonstante** $K_c$:\n\n$$K_c = \\frac{[\\text{C}]^c \\cdot [\\text{D}]^d}{[\\text{A}]^a \\cdot [\\text{B}]^b}$$\n\n## Die drei goldenen Regeln\n\n| Regel                               | Erklärung                                         |\n| ----------------------------------- | ------------------------------------------------- |\n| **Produkte oben**                   | Im Zähler stehen immer die Produkte               |\n| **Edukte unten**                    | Im Nenner stehen immer die Edukte                 |\n| **Koeffizienten werden Exponenten** | Die stöchiometrischen Faktoren werden zu Potenzen |\n\n## Beispiel: Stickstoffdioxid-Gleichgewicht\n\n$$2\\text{NO}_2\\text{(g)} \\rightleftharpoons \\text{N}_2\\text{O}_4\\text{(g)}$$\n\nDer Gleichgewichtsausdruck lautet:\n\n$$K_c = \\frac{[\\text{N}_2\\text{O}_4]}{[\\text{NO}_2]^2}$$\n\nBeachte: Die **2** vor NO₂ wird zum Exponenten!\n\n## Wichtige Eigenschaften von K\n\n- $K$ ist **temperaturabhängig** – bei anderer Temperatur anderer Wert\n- $K$ ist **dimensionslos** (in der Thermodynamik)\n- $K$ ändert sich **nicht** bei Konzentrationsänderungen\n- $K$ ändert sich **nicht** durch Katalysatoren\n\n## Was sagt der Wert von K aus?\n\n| K-Wert        | Bedeutung                                 |\n| ------------- | ----------------------------------------- |\n| $K \\gg 1$     | Produkte dominieren im Gleichgewicht      |\n| $K \\ll 1$     | Edukte dominieren im Gleichgewicht        |\n| $K \\approx 1$ | Ähnliche Mengen von Edukten und Produkten |",
+      "audioFile": "06-learning-mwg-definition.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wie lautet der Kc-Ausdruck für die Reaktion 2NO(g) + O₂(g) ⇌ 2NO₂(g)?",
+      "options": [
+        "Kc = [NO₂]² / ([NO]² · [O₂])",
+        "Kc = [NO]² · [O₂] / [NO₂]²",
+        "Kc = [NO₂] / ([NO] · [O₂])",
+        "Kc = 2[NO₂] / (2[NO] · [O₂])"
+      ],
+      "correctAnswer": "Kc = [NO₂]² / ([NO]² · [O₂])",
+      "explanation": "Produkte kommen in den Zähler, Edukte in den Nenner. Die stöchiometrischen Koeffizienten (hier die 2 vor NO und NO₂) werden zu Exponenten. Der Koeffizient von O₂ ist 1, daher kein Exponent nötig.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Heterogene Gleichgewichte\n\nBei heterogenen Gleichgewichten sind die Reaktionspartner in **verschiedenen Phasen** vorhanden (z.B. fest, flüssig, gasförmig).\n\n## Die wichtige Regel\n\n> **Reine Feststoffe (s) und reine Flüssigkeiten (l) tauchen NICHT im Gleichgewichtsausdruck auf!**\n\nDer Grund: Ihre Konzentration (Dichte geteilt durch Molmasse) ist konstant und wird in die Gleichgewichtskonstante eingerechnet.\n\n## Beispiel 1: Kalkzersetzung\n\n$$\\text{CaCO}_3\\text{(s)} \\rightleftharpoons \\text{Caite(s)} + \\text{CO}_2\\text{(g)}$$\n\nGleichgewichtsausdruck:\n\n$$K_c = [\\text{CO}_2]$$\n\nCaCO₃ und CaO sind Feststoffe → werden weggelassen!\n\n## Beispiel 2: Ammoniak in Wasser\n\n$$\\text{NH}_3\\text{(aq)} + \\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{NH}_4^+\\text{(aq)} + \\text{OH}^-\\text{(aq)}$$\n\nGleichgewichtsausdruck:\n\n$$K_c = \\frac{[\\text{NH}_4^+] \\cdot [\\text{OH}^-]}{[\\text{NH}_3]}$$\n\nWasser als reines Lösungsmittel → wird weggelassen!\n\n## Beispiel 3: Schwefelverbrennung\n\n$$\\text{S(s)} + \\text{O}_2\\text{(g)} \\rightleftharpoons \\text{SO}_2\\text{(g)}$$\n\nGleichgewichtsausdruck:\n\n$$K_c = \\frac{[\\text{SO}_2]}{[\\text{O}_2]}$$\n\nSchwefel ist ein Feststoff → wird weggelassen!\n\n## Zusammenfassung\n\n| Phase                 | Im K-Ausdruck? |\n| --------------------- | -------------- |\n| (g) Gas               | ✓ Ja           |\n| (aq) Gelöst           | ✓ Ja           |\n| (s) Feststoff         | ✗ Nein         |\n| (l) Reine Flüssigkeit | ✗ Nein         |\n\n> **Merkhilfe:** Nur was sich in der Konzentration ändern KANN, kommt in den K-Ausdruck!",
+      "audioFile": "08-learning-heterogene-gg.mp3"
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Regeln zum Massenwirkungsgesetz:",
+      "text": "Im Massenwirkungsgesetz stehen die {{Produkte}} im Zähler und die {{Edukte}} im Nenner. Die stöchiometrischen Koeffizienten werden zu {{Exponenten}}. Reine Feststoffe und reine {{Flüssigkeiten}} werden nicht in den K-Ausdruck aufgenommen.",
+      "blanks": [
+        {
+          "answer": "Produkte",
+          "alternatives": [
+            "produkte"
+          ]
+        },
+        {
+          "answer": "Edukte",
+          "alternatives": [
+            "edukte",
+            "Reaktanten"
+          ]
+        },
+        {
+          "answer": "Exponenten",
+          "alternatives": [
+            "exponenten",
+            "Potenzen"
+          ]
+        },
+        {
+          "answer": "Flüssigkeiten",
+          "alternatives": [
+            "flüssigkeiten",
+            "Lösungsmittel"
+          ]
+        }
+      ],
+      "explanation": "Das MWG folgt festen Regeln: Produkte oben, Edukte unten, Koeffizienten als Exponenten. Feststoffe und reine Flüssigkeiten haben konstante Konzentrationen und werden daher nicht berücksichtigt.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Berechne Kc für die Reaktion PCl₅ ⇌ PCl₃ + Cl₂, wenn im Gleichgewicht folgende Konzentrationen vorliegen: [PCl₅] = 0,028 M, [PCl₃] = 0,172 M, [Cl₂] = 0,086 M.",
+      "correctAnswer": 0.53,
+      "unit": "",
+      "tolerance": 0.02,
+      "hint": "Kc = [Produkte] / [Edukte]. Setze die gegebenen Konzentrationen in die Formel ein.",
+      "explanation": "Kc = ([PCl₃] · [Cl₂]) / [PCl₅] = (0,172 · 0,086) / 0,028 = 0,0148 / 0,028 = 0,53. Da K < 1, liegt das Gleichgewicht auf der Edukt-Seite (PCl₅).",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=bev7-jpBpFg",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        }
+      ],
+      "content": "Erklärt das Aufstellen des Massenwirkungsgesetzes, die Bedeutung der Gleichgewichtskonstante Kc und bietet Übungsbeispiele zur Berechnung."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Der Reaktionsquotient Q\n\nDer Reaktionsquotient Q beantwortet die Frage: **In welche Richtung wird die Reaktion laufen?**\n\n## Definition\n\nQ hat dieselbe Formel wie K, aber verwendet die **aktuellen** Konzentrationen zu einem beliebigen Zeitpunkt – nicht zwingend im Gleichgewicht.\n\nFür $a\\text{A} + b\\text{B} \\rightleftharpoons c\\text{C} + d\\text{D}$:\n\n$$Q = \\frac{[\\text{C}]^c \\cdot [\\text{D}]^d}{[\\text{A}]^a \\cdot [\\text{B}]^b}$$\n\n## Q vs. K: Die Vorhersage\n\n| Vergleich | Bedeutung         | Reaktionsrichtung               |\n| --------- | ----------------- | ------------------------------- |\n| $Q < K$   | Zu viele Edukte   | → nach rechts (Produkte bilden) |\n| $Q > K$   | Zu viele Produkte | ← nach links (Edukte bilden)    |\n| $Q = K$   | Gleichgewicht     | keine Nettoreaktion             |\n\n## Beispiel: Butan-Isobutan-Isomerisierung\n\n$$\\text{Butan} \\rightleftharpoons \\text{Isobutan}$$\n\nGegeben: $K = 2{,}5$\n\nAktuelle Konzentrationen: [Isobutan] = 0,35 M, [Butan] = 0,15 M\n\n$$Q = \\frac{[\\text{Isobutan}]}{[\\text{Butan}]} = \\frac{0{,}35}{0{,}15} = 2{,}33$$\n\nDa $Q = 2{,}33 < K = 2{,}5$:\n- Es gibt noch zu viel Butan (Edukt)\n- Reaktion läuft nach **rechts**\n- Es wird mehr Isobutan gebildet\n\n## Visualisierung\n\n<!-- SVG: Q vs K Reaktionsrichtung -->\n<svg viewBox=\"0 0 360 100\" style=\"max-width: 400px; width: 100%;\" aria-label=\"Q kleiner K: Reaktion nach rechts, Q gleich K: Gleichgewicht, Q größer K: Reaktion nach links\"><rect width=\"360\" height=\"100\" fill=\"#fafafa\"/><text x=\"60\" y=\"25\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" text-anchor=\"middle\">Q &lt; K</text><text x=\"180\" y=\"25\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" text-anchor=\"middle\">Q = K</text><text x=\"300\" y=\"25\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" text-anchor=\"middle\">Q &gt; K</text><polygon points=\"30,50 90,50 90,45 100,55 90,65 90,60 30,60\" fill=\"#2563eb\"/><rect x=\"155\" y=\"45\" width=\"50\" height=\"20\" fill=\"#22c55e\" rx=\"3\"/><text x=\"180\" y=\"59\" font-size=\"10\" fill=\"white\" text-anchor=\"middle\">GG</text><polygon points=\"330,50 270,50 270,45 260,55 270,65 270,60 330,60\" fill=\"#dc2626\"/><text x=\"60\" y=\"85\" font-size=\"11\" fill=\"#2563eb\" text-anchor=\"middle\">→ rechts</text><text x=\"180\" y=\"85\" font-size=\"11\" fill=\"#22c55e\" text-anchor=\"middle\">Gleichgewicht</text><text x=\"300\" y=\"85\" font-size=\"11\" fill=\"#dc2626\" text-anchor=\"middle\">← links</text></svg>\n\n> **Merksatz:** Das System strebt immer zu K. Ist Q kleiner, muss der Zähler (Produkte) wachsen. Ist Q größer, muss der Nenner (Edukte) wachsen.",
+      "audioFile": "12-learning-reaktionsquotient.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Wenn Q > K ist, in welche Richtung läuft die Reaktion?",
+      "options": [
+        "Nach rechts (Produktbildung)",
+        "Nach links (Eduktbildung)",
+        "Gar nicht, das System ist im Gleichgewicht",
+        "Das lässt sich nicht vorhersagen"
+      ],
+      "correctAnswer": "Nach links (Eduktbildung)",
+      "explanation": "Wenn Q > K, ist der Zähler (Produkte) im Vergleich zum Gleichgewichtswert zu groß. Das System reagiert, indem Produkte abgebaut und Edukte gebildet werden – die Reaktion läuft nach links.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Die ICE-Tabelle\n\nDie ICE-Methode ist ein systematischer Ansatz zur Berechnung von Gleichgewichtskonzentrationen.\n\n## Was bedeutet ICE?\n\n| Buchstabe | Bedeutung   | Erklärung                     |\n| --------- | ----------- | ----------------------------- |\n| **I**     | Initial     | Anfangskonzentrationen        |\n| **C**     | Change      | Änderung während der Reaktion |\n| **E**     | Equilibrium | Gleichgewichtskonzentrationen |\n\n## Die Methode Schritt für Schritt\n\n### Beispiel: H₂ + I₂ ⇌ 2HI mit Kc = 55,3\n\nStart: je 1,00 M H₂ und I₂, kein HI\n\n**Schritt 1: ICE-Tabelle aufstellen**\n\n|       | [H₂]   | [I₂]   | [HI] |\n| ----- | ------ | ------ | ---- |\n| **I** | 1,00   | 1,00   | 0    |\n| **C** | −x     | −x     | +2x  |\n| **E** | 1,00−x | 1,00−x | 2x   |\n\n**Schritt 2: In Kc einsetzen**\n\n$$K_c = \\frac{[\\text{HI}]^2}{[\\text{H}_2] \\cdot [\\text{I}_2]} = \\frac{(2x)^2}{(1{,}00-x)(1{,}00-x)} = 55{,}3$$\n\n**Schritt 3: Vereinfachen**\n\n$$\\frac{4x^2}{(1{,}00-x)^2} = 55{,}3$$\n\nDa beide Seiten Quadrate sind, können wir die Wurzel ziehen:\n\n$$\\frac{2x}{1{,}00-x} = 7{,}44$$\n\n**Schritt 4: Nach x auflösen**\n\n$$2x = 7{,}44 \\cdot (1{,}00-x)$$\n$$2x = 7{,}44 - 7{,}44x$$\n$$9{,}44x = 7{,}44$$\n$$x = 0{,}79$$\n\n**Schritt 5: Gleichgewichtskonzentrationen berechnen**\n\n- [H₂] = [I₂] = 1,00 − 0,79 = **0,21 M**\n- [HI] = 2 · 0,79 = **1,58 M**\n\n## Wichtige Tipps\n\n1. **Vorzeichen beachten:** Edukte nehmen ab (−), Produkte nehmen zu (+)\n2. **Stöchiometrie beachten:** Die Änderungen müssen im richtigen Verhältnis stehen\n3. **Negative Konzentrationen prüfen:** x darf nicht größer sein als die Anfangskonzentration!",
+      "audioFile": "14-learning-ice-tabelle.mp3"
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Buchstaben der ICE-Tabelle ihrer Bedeutung zu:",
+      "pairs": [
+        {
+          "left": "I",
+          "right": "Initial – Anfangskonzentrationen"
+        },
+        {
+          "left": "C",
+          "right": "Change – Änderung während der Reaktion"
+        },
+        {
+          "left": "E",
+          "right": "Equilibrium – Gleichgewichtskonzentrationen"
+        }
+      ],
+      "explanation": "ICE steht für Initial (Anfang), Change (Änderung) und Equilibrium (Gleichgewicht). Diese drei Zeilen bilden das Grundgerüst für systematische Gleichgewichtsberechnungen.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Für die Reaktion A ⇌ B gilt K = 9. Startkonzentrationen: [A] = 1,0 M, [B] = 0 M. Berechne die Gleichgewichtskonzentration von B.",
+      "correctAnswer": 0.9,
+      "unit": "M",
+      "tolerance": 0.05,
+      "hint": "Stelle eine ICE-Tabelle auf: [A] = 1−x, [B] = x. Setze in K = [B]/[A] ein und löse nach x.",
+      "explanation": "K = [B]/[A] = x/(1−x) = 9. Auflösen: x = 9(1−x) → x = 9 − 9x → 10x = 9 → x = 0,9 M. Die Gleichgewichtskonzentration von B beträgt 0,9 M.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Für N₂O₄(g) ⇌ 2NO₂(g) gilt Kc = 0,0059. Startkonzentration: [N₂O₄] = 0,50 M, [NO₂] = 0 M. Berechne die Gleichgewichtskonzentration von NO₂ (in M).",
+      "correctAnswer": 0.052,
+      "unit": "M",
+      "tolerance": 0.003,
+      "hint": "ICE-Tabelle: [N₂O₄] = 0,50−x, [NO₂] = 2x. Einsetzen ergibt: (2x)²/(0,50−x) = 0,0059. Das führt zu einer quadratischen Gleichung.",
+      "explanation": "Kc = (2x)²/(0,50−x) = 0,0059. Umformen: 4x² = 0,0059(0,50−x) → 4x² + 0,0059x − 0,00295 = 0. Mit der Mitternachtsformel: x = 0,026. Somit [NO₂] = 2x = 0,052 M.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Die Bedeutung von K\n\nDer Zahlenwert der Gleichgewichtskonstante K verrät viel über den Verlauf einer Reaktion.\n\n## K und die Lage des Gleichgewichts\n\n| K-Wert        | Interpretation                          | Beispiel             |\n| ------------- | --------------------------------------- | -------------------- |\n| $K > 10^3$    | Reaktion läuft fast vollständig ab      | Verbrennungen        |\n| $K \\approx 1$ | Edukte und Produkte in ähnlichen Mengen | Isomerisierungen     |\n| $K < 10^{-3}$ | Reaktion läuft kaum ab                  | Manche Löslichkeiten |\n\n## Anschauliche Beispiele\n\n### K = 10¹⁰ (sehr groß)\n\n$$K = \\frac{[\\text{Produkte}]}{[\\text{Edukte}]} = 10^{10}$$\n\nDas bedeutet: Im Gleichgewicht sind die Produkte **10 Milliarden mal** konzentrierter als die Edukte. Die Reaktion läuft praktisch vollständig ab.\n\n### K = 10⁻¹⁰ (sehr klein)\n\n$$K = \\frac{[\\text{Produkte}]}{[\\text{Edukte}]} = 10^{-10}$$\n\nDas bedeutet: Die Edukte sind **10 Milliarden mal** konzentrierter als die Produkte. Die Reaktion läuft praktisch nicht ab.\n\n## Beispiel: Silberchlorid-Löslichkeit\n\n$$\\text{AgCl(s)} \\rightleftharpoons \\text{Ag}^+\\text{(aq)} + \\text{Cl}^-\\text{(aq)}$$\n\n$K = 1{,}8 \\times 10^{-10}$ (sehr klein!)\n\n**Interpretation:** AgCl ist sehr schwer löslich. Das Gleichgewicht liegt stark auf der Seite des Feststoffs.\n\n## Zusammenhang mit ΔG°\n\nGroße K-Werte bedeuten negative ΔG°-Werte (spontane Reaktion):\n\n- $K > 1$ → $\\Delta G° < 0$ (exergon)\n- $K < 1$ → $\\Delta G° > 0$ (endergon)\n- $K = 1$ → $\\Delta G° = 0$ (Gleichgewicht)\n\n> **Merksatz:** Je größer K, desto mehr \"will\" die Reaktion zu den Produkten – thermodynamisch gesehen.",
+      "audioFile": "18-learning-k-bedeutung.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Ein K-Wert von 10¹⁰ bedeutet:",
+      "options": [
+        "Die Reaktion läuft fast gar nicht ab",
+        "Die Reaktion läuft fast vollständig ab (Produkte dominieren)",
+        "Die Reaktion ist extrem langsam",
+        "Die freie Enthalpie ΔG° ist positiv"
+      ],
+      "correctAnswer": "Die Reaktion läuft fast vollständig ab (Produkte dominieren)",
+      "explanation": "Ein sehr großes K bedeutet, dass im Gleichgewicht der Zähler (Produkte) viel größer ist als der Nenner (Edukte). Die Reaktion läuft praktisch vollständig ab. Beachte: K sagt nichts über die Geschwindigkeit aus!",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Thermodynamik und Gleichgewicht\n\nDie Gleichgewichtskonstante K ist direkt mit der freien Standardenthalpie ΔG° verknüpft.\n\n## Die fundamentale Gleichung\n\n$$\\Delta G° = -RT \\ln K$$\n\n| Symbol | Bedeutung               | Einheit           |\n| ------ | ----------------------- | ----------------- |\n| ΔG°    | Freie Standardenthalpie | J/mol oder kJ/mol |\n| R      | Gaskonstante            | 8,314 J/(mol·K)   |\n| T      | Absolute Temperatur     | K (Kelvin)        |\n| K      | Gleichgewichtskonstante | dimensionslos     |\n\n## Der Zusammenhang in Zahlen\n\nBei 25°C (298 K):\n\n| K    | ln K  | ΔG° (kJ/mol) | Interpretation |\n| ---- | ----- | ------------ | -------------- |\n| 10⁶  | 13,8  | −34          | Stark exergon  |\n| 10³  | 6,9   | −17          | Exergon        |\n| 1    | 0     | 0            | Gleichgewicht  |\n| 10⁻³ | −6,9  | +17          | Endergon       |\n| 10⁻⁶ | −13,8 | +34          | Stark endergon |\n\n## Praktische Anwendung\n\n**Beispiel:** Für eine Reaktion mit K = 100 bei 25°C:\n\n$$\\Delta G° = -8{,}314 \\cdot 298 \\cdot \\ln(100)$$\n$$\\Delta G° = -8{,}314 \\cdot 298 \\cdot 4{,}61$$\n$$\\Delta G° = -11{,}4 \\text{ kJ/mol}$$\n\nNegative ΔG° → Reaktion ist thermodynamisch begünstigt.\n\n## Wichtiger Hinweis\n\n> **K sagt nichts über die Geschwindigkeit!** Eine Reaktion kann ein sehr großes K haben, aber trotzdem extrem langsam sein (z.B. Diamant → Graphit).",
+      "audioFile": "20-learning-thermodynamik.mp3"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Manipulation von Gleichgewichtskonstanten\n\nWenn Reaktionsgleichungen verändert werden, ändern sich auch die K-Werte nach bestimmten Regeln.\n\n## Regel 1: Umkehrung der Reaktion\n\nWenn die Reaktion umgekehrt wird, wird K zum Kehrwert:\n\n$$\\text{A} \\rightleftharpoons \\text{B} \\quad K_1$$\n$$\\text{B} \\rightleftharpoons \\text{A} \\quad K_2 = \\frac{1}{K_1}$$\n\n**Beispiel:** Wenn K₁ = 4, dann K₂ = 1/4 = 0,25\n\n## Regel 2: Multiplikation der Koeffizienten\n\nWenn alle Koeffizienten mit n multipliziert werden, wird K zur n-ten Potenz erhoben:\n\n$$\\text{A} \\rightleftharpoons \\text{B} \\quad K_1$$\n$$2\\text{A} \\rightleftharpoons 2\\text{B} \\quad K_2 = (K_1)^2$$\n\n**Beispiel:** Wenn K₁ = 4 und n = 2, dann K₂ = 4² = 16\n\n## Regel 3: Addition von Reaktionen\n\nWenn zwei Reaktionen addiert werden, werden die K-Werte multipliziert:\n\n$$\\text{Reaktion 1:} \\quad K_1$$\n$$\\text{Reaktion 2:} \\quad K_2$$\n$$\\text{Gesamtreaktion:} \\quad K_{ges} = K_1 \\times K_2$$\n\n## Zusammenfassung\n\n| Operation           | Auswirkung auf K          |\n| ------------------- | ------------------------- |\n| Reaktion umkehren   | $K_{neu} = 1/K$           |\n| Koeffizienten × n   | $K_{neu} = K^n$           |\n| Reaktionen addieren | $K_{neu} = K_1 \\cdot K_2$ |\n\n## Praktisches Beispiel\n\nGegeben: $\\text{N}_2 + 3\\text{H}_2 \\rightleftharpoons 2\\text{NH}_3$ mit K = 6,0 × 10⁵\n\nGesucht: K für $\\text{NH}_3 \\rightleftharpoons \\frac{1}{2}\\text{N}_2 + \\frac{3}{2}\\text{H}_2$\n\n1. Umkehren: K' = 1/(6,0 × 10⁵)\n2. Koeffizienten halbieren (n = 0,5): K'' = (K')^0,5 = √(K')\n\n$$K'' = \\sqrt{\\frac{1}{6{,}0 \\times 10^5}} = 1{,}3 \\times 10^{-3}$$",
+      "audioFile": "21-learning-k-manipulation.mp3"
+    },
+    {
+      "type": "fill-in-the-blank",
+      "question": "Ergänze die Regeln zur Manipulation von K:",
+      "text": "Wenn eine Reaktion umgekehrt wird, ist das neue K gleich dem {{Kehrwert}} des ursprünglichen K. Wenn alle Koeffizienten mit 2 multipliziert werden, wird K zum {{Quadrat}} erhoben. Wenn zwei Reaktionen addiert werden, werden die K-Werte {{multipliziert}}.",
+      "blanks": [
+        {
+          "answer": "Kehrwert",
+          "alternatives": [
+            "kehrwert",
+            "Reziprok",
+            "1/K"
+          ]
+        },
+        {
+          "answer": "Quadrat",
+          "alternatives": [
+            "quadrat",
+            "zweiten Potenz"
+          ]
+        },
+        {
+          "answer": "multipliziert",
+          "alternatives": [
+            "miteinander multipliziert",
+            "malgenommen"
+          ]
+        }
+      ],
+      "explanation": "Bei Umkehrung → Kehrwert (1/K). Bei Multiplikation der Koeffizienten mit n → K^n. Bei Addition → Produkt der K-Werte.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Gasgleichgewichte: Kp vs. Kc\n\nBei Reaktionen mit Gasen kann man die Gleichgewichtskonstante entweder mit Konzentrationen (Kc) oder mit Partialdrücken (Kp) ausdrücken.\n\n## Kp – Die Druckform\n\nFür Gasreaktionen verwendet man oft Partialdrücke statt Konzentrationen:\n\n$$K_p = \\frac{(P_C)^c \\cdot (P_D)^d}{(P_A)^a \\cdot (P_B)^b}$$\n\nP steht für den Partialdruck in atm oder bar.\n\n## Der Zusammenhang zwischen Kp und Kc\n\n$$K_p = K_c \\cdot (RT)^{\\Delta n}$$\n\n| Symbol | Bedeutung                           |\n| ------ | ----------------------------------- |\n| R      | Gaskonstante = 0,0821 L·atm/(mol·K) |\n| T      | Temperatur in Kelvin                |\n| Δn     | Änderung der Molzahl an Gas         |\n\n## Berechnung von Δn\n\n$$\\Delta n = (\\text{Mol Gas Produkte}) - (\\text{Mol Gas Edukte})$$\n\n### Beispiele\n\n| Reaktion          | Δn               |\n| ----------------- | ---------------- |\n| H₂ + I₂ ⇌ 2HI     | (2) − (1+1) = 0  |\n| N₂ + 3H₂ ⇌ 2NH₃   | (2) − (1+3) = −2 |\n| PCl₅ ⇌ PCl₃ + Cl₂ | (1+1) − (1) = +1 |\n\n## Sonderfall: Δn = 0\n\nWenn die Anzahl der Gasmoleküle auf beiden Seiten gleich ist:\n\n$$K_p = K_c \\cdot (RT)^0 = K_c \\cdot 1 = K_c$$\n\n**Beispiel:** H₂ + I₂ ⇌ 2HI → Kp = Kc\n\n## Praktische Berechnung\n\n**Gegeben:** N₂ + 3H₂ ⇌ 2NH₃ bei 500 K, Kc = 6,0 × 10⁻²\n\n**Gesucht:** Kp\n\n$$\\Delta n = 2 - (1+3) = -2$$\n$$K_p = K_c \\cdot (RT)^{\\Delta n} = 6{,}0 \\times 10^{-2} \\cdot (0{,}0821 \\cdot 500)^{-2}$$\n$$K_p = 6{,}0 \\times 10^{-2} \\cdot (41{,}05)^{-2} = 6{,}0 \\times 10^{-2} \\cdot 5{,}9 \\times 10^{-4}$$\n$$K_p = 3{,}6 \\times 10^{-5}$$\n\n> **Merksatz:** Nur bei Gasreaktionen gibt es Kp. Δn bestimmt, ob Kp größer oder kleiner als Kc ist.",
+      "audioFile": "24-learning-kp-kc.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Für die Reaktion H₂(g) + I₂(g) ⇌ 2HI(g) ist Δn:",
+      "options": [
+        "+2",
+        "+1",
+        "0",
+        "-1"
+      ],
+      "correctAnswer": "0",
+      "explanation": "Δn = (Mol Gas Produkte) − (Mol Gas Edukte) = 2 − (1+1) = 0. Wenn Δn = 0, dann gilt Kp = Kc.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Für PCl₅(g) ⇌ PCl₃(g) + Cl₂(g) ist Kc = 0,042 bei 500 K. Berechne Kp. (R = 0,0821 L·atm/(mol·K))",
+      "correctAnswer": 1.72,
+      "unit": "",
+      "tolerance": 0.1,
+      "hint": "Bestimme zuerst Δn: Produkte haben 2 mol Gas, Edukt hat 1 mol Gas. Dann Kp = Kc · (RT)^Δn.",
+      "explanation": "Δn = (1+1) − 1 = +1. Kp = Kc · (RT)^1 = 0,042 · (0,0821 · 500) = 0,042 · 41,05 = 1,72.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Das Prinzip von Le Chatelier\n\nDas Prinzip von Le Chatelier (auch \"Prinzip des kleinsten Zwanges\") beschreibt, wie ein System im Gleichgewicht auf äußere Störungen reagiert.\n\n## Die Grundregel\n\n> **Wenn ein System im Gleichgewicht gestört wird, verschiebt sich das Gleichgewicht so, dass es der Störung entgegenwirkt.**\n\nDas System \"wehrt sich\" gegen die Änderung!\n\n## Arten von Störungen\n\nEin Gleichgewicht kann durch drei Faktoren gestört werden:\n\n1. **Konzentration** – Zugabe oder Entfernen von Stoffen\n2. **Druck/Volumen** – Bei Gasreaktionen\n3. **Temperatur** – Erwärmen oder Abkühlen\n\n## Wichtiger Unterschied\n\n| Störung        | Auswirkung auf K   |\n| -------------- | ------------------ |\n| Konzentration  | K bleibt gleich    |\n| Druck/Volumen  | K bleibt gleich    |\n| **Temperatur** | **K ändert sich!** |\n\n## Analogie: Der Körper\n\nLe Chatelier funktioniert wie die Homöostase im Körper:\n- Körpertemperatur steigt → Schwitzen beginnt (Gegenwirkung)\n- Blutzucker sinkt → Hungergefühl (Gegenwirkung)\n\nDas chemische System verhält sich ähnlich – es versucht, die Störung auszugleichen.\n\n## Anwendung\n\nLe Chatelier hilft vorherzusagen:\n- Wie man die Ausbeute eines Produkts steigern kann\n- Was passiert, wenn Reaktionsbedingungen geändert werden\n- Wie industrielle Prozesse optimiert werden können",
+      "audioFile": "27-learning-le-chatelier.mp3"
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Einflussfaktoren auf das Gleichgewicht\n\nLe Chatelier beschreibt drei Wege, ein Gleichgewicht zu beeinflussen.\n\n## 1. Konzentration\n\n| Aktion            | Reaktion des Systems                            |\n| ----------------- | ----------------------------------------------- |\n| Edukt zugeben     | → Verschiebung nach rechts (Edukt verbrauchen)  |\n| Edukt entfernen   | ← Verschiebung nach links (Edukt nachbilden)    |\n| Produkt zugeben   | ← Verschiebung nach links (Produkt verbrauchen) |\n| Produkt entfernen | → Verschiebung nach rechts (Produkt nachbilden) |\n\n**Beispiel:** Fe³⁺ + SCN⁻ ⇌ Fe(SCN)²⁺ (rot)\n- Zugabe von Fe³⁺ → mehr rotes Produkt → intensivere Farbe\n\n## 2. Druck/Volumen (nur bei Gasen!)\n\n| Aktion        | Reaktion des Systems                             |\n| ------------- | ------------------------------------------------ |\n| Druck erhöhen | → Verschiebung zur Seite mit weniger Gasteilchen |\n| Druck senken  | → Verschiebung zur Seite mit mehr Gasteilchen    |\n\n**Beispiel:** N₂O₄(g) ⇌ 2NO₂(g)\n- Links: 1 Teilchen, Rechts: 2 Teilchen\n- Druckerhöhung → Verschiebung nach links (N₂O₄)\n\n**Wichtig:** Wenn Δn = 0, hat Druck keinen Einfluss!\n\n## 3. Temperatur\n\nHier müssen wir wissen, ob die Reaktion exotherm oder endotherm ist.\n\n**Exotherme Reaktion** (ΔH < 0): Wärme ist ein \"Produkt\"\n$$\\text{A} \\rightleftharpoons \\text{B} + \\text{Wärme}$$\n\n| Aktion   | Reaktion                |\n| -------- | ----------------------- |\n| Erwärmen | ← nach links, K sinkt   |\n| Abkühlen | → nach rechts, K steigt |\n\n**Endotherme Reaktion** (ΔH > 0): Wärme ist ein \"Edukt\"\n$$\\text{A} + \\text{Wärme} \\rightleftharpoons \\text{B}$$\n\n| Aktion   | Reaktion                |\n| -------- | ----------------------- |\n| Erwärmen | → nach rechts, K steigt |\n| Abkühlen | ← nach links, K sinkt   |\n\n> **Merksatz:** Das System \"flieht\" vor der Wärme bei exothermen und \"sucht\" die Wärme bei endothermen Reaktionen.",
+      "audioFile": "28-learning-einflussfaktoren.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Die Reaktion A(g) + B(g) ⇌ C(g) ist exotherm. Was passiert bei Temperaturerhöhung?",
+      "options": [
+        "Gleichgewicht nach rechts, K steigt",
+        "Gleichgewicht nach links, K sinkt",
+        "Gleichgewicht nach rechts, K bleibt gleich",
+        "Keine Änderung"
+      ],
+      "correctAnswer": "Gleichgewicht nach links, K sinkt",
+      "explanation": "Bei exothermen Reaktionen ist Wärme ein \"Produkt\". Temperaturerhöhung ist wie Zugabe eines Produkts → System weicht nach links aus. Da Temperatur K beeinflusst, sinkt K bei exothermen Reaktionen wenn erwärmt wird.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Störung der Reaktion des Systems zu (für die Reaktion N₂ + 3H₂ ⇌ 2NH₃ + Wärme):",
+      "pairs": [
+        {
+          "left": "N₂ zugeben",
+          "right": "Verschiebung nach rechts"
+        },
+        {
+          "left": "NH₃ entfernen",
+          "right": "Verschiebung nach rechts"
+        },
+        {
+          "left": "Temperatur erhöhen",
+          "right": "Verschiebung nach links"
+        },
+        {
+          "left": "Druck erhöhen",
+          "right": "Verschiebung nach rechts"
+        }
+      ],
+      "explanation": "Edukt zugeben → rechts. Produkt entfernen → rechts. Exotherm + Erwärmen → links. Druck erhöhen bei Δn < 0 (4 → 2 Gasteilchen) → Seite mit weniger Teilchen = rechts.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Die Rolle des Katalysators\n\nKatalysatoren werden oft bei Gleichgewichtsreaktionen eingesetzt. Doch was bewirken sie wirklich?\n\n## Was ein Katalysator tut\n\n- Senkt die **Aktivierungsenergie** der Reaktion\n- Beschleunigt **beide** Reaktionen (Hin- UND Rückreaktion) gleichermaßen\n- Das Gleichgewicht wird **schneller** erreicht\n\n## Was ein Katalysator NICHT tut\n\n- Verschiebt das Gleichgewicht **nicht**\n- Ändert **K nicht**\n- Erhöht die Ausbeute **nicht**\n\n## Visualisierung\n\n<!-- SVG: Energiediagramm ohne/mit Katalysator -->\n<svg viewBox=\"0 0 400 180\" style=\"max-width: 450px; width: 100%;\" aria-label=\"Energiediagramm: Katalysator senkt Aktivierungsenergie\"><rect width=\"400\" height=\"180\" fill=\"#fafafa\"/><text x=\"100\" y=\"20\" font-size=\"12\" fill=\"#333\" font-weight=\"bold\">Ohne Katalysator</text><text x=\"290\" y=\"20\" font-size=\"12\" fill=\"#333\" font-weight=\"bold\">Mit Katalysator</text><line x1=\"20\" y1=\"140\" x2=\"180\" y2=\"140\" stroke=\"#333\" stroke-width=\"1\"/><line x1=\"220\" y1=\"140\" x2=\"380\" y2=\"140\" stroke=\"#333\" stroke-width=\"1\"/><path d=\"M 30 130 Q 100 30 170 130\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M 230 130 Q 300 70 370 130\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"30\" y1=\"130\" x2=\"30\" y2=\"30\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"3\"/><line x1=\"230\" y1=\"130\" x2=\"230\" y2=\"70\" stroke=\"#999\" stroke-width=\"1\" stroke-dasharray=\"3\"/><text x=\"10\" y=\"80\" font-size=\"10\" fill=\"#dc2626\">Ea hoch</text><text x=\"210\" y=\"100\" font-size=\"10\" fill=\"#2563eb\">Ea niedrig</text><text x=\"20\" y=\"155\" font-size=\"10\" fill=\"#666\">Start</text><text x=\"150\" y=\"155\" font-size=\"10\" fill=\"#666\">Ende</text><text x=\"220\" y=\"155\" font-size=\"10\" fill=\"#666\">Start</text><text x=\"350\" y=\"155\" font-size=\"10\" fill=\"#666\">Ende</text></svg>\n\nDer Katalysator senkt die Aktivierungsenergie (Ea), aber beide Kurven enden auf demselben Energieniveau – das Gleichgewicht bleibt unverändert!\n\n## Warum dann Katalysatoren?\n\nIn der Industrie ist Zeit Geld. Ein Katalysator:\n\n1. **Spart Zeit** – Gleichgewicht schneller erreicht\n2. **Spart Energie** – Niedrigere Temperatur möglich\n3. **Ermöglicht Reaktionen** – Die sonst zu langsam wären\n\n## Beispiel: Haber-Bosch\n\n$$\\text{N}_2 + 3\\text{H}_2 \\xrightarrow{\\text{Fe-Kat.}} 2\\text{NH}_3$$\n\nOhne Katalysator: Reaktion bei Raumtemperatur extrem langsam (Jahre!)\nMit Fe-Katalysator: Reaktion läuft bei 400-500°C in Sekunden ab\n\n> **Merksatz:** Der Katalysator zeigt den Weg, ändert aber nicht das Ziel!",
+      "audioFile": "31-learning-katalysator.mp3"
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=TRqqpAS4pqs",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        }
+      ],
+      "content": "Analysiert den Einfluss von Temperatur, Druck und Konzentration auf chemische Gleichgewichte nach dem Prinzip von Le Chatelier."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Das Haber-Bosch-Verfahren\n\nDas Haber-Bosch-Verfahren zur Ammoniaksynthese ist eine der wichtigsten industriellen Anwendungen des chemischen Gleichgewichts.\n\n## Die Reaktion\n\n$$\\text{N}_2\\text{(g)} + 3\\text{H}_2\\text{(g)} \\rightleftharpoons 2\\text{NH}_3\\text{(g)} + \\text{Wärme}$$\n\n$$\\Delta H° = -92{,}2 \\text{ kJ/mol}$$\n\n## Das Problem\n\nBei Raumtemperatur ist K sehr groß (10⁵) – thermodynamisch günstig! ABER: Die Reaktion ist extrem langsam, weil die N≡N-Dreifachbindung sehr stabil ist.\n\n## Die Optimierung nach Le Chatelier\n\n### 1. Hoher Druck (150-300 bar)\n\n- Links: 1 + 3 = 4 Gasteilchen\n- Rechts: 2 Gasteilchen\n- Hoher Druck → Verschiebung nach rechts ✓\n\n### 2. Entfernen von NH₃\n\n- Produkt wird abgeführt (durch Verflüssigung)\n- → Verschiebung nach rechts ✓\n\n### 3. Temperatur: Der Kompromiss\n\n| Temperatur | Ausbeute         | Geschwindigkeit |\n| ---------- | ---------------- | --------------- |\n| Niedrig    | Hoch (exotherm!) | Zu langsam      |\n| Hoch       | Niedrig          | Schnell         |\n| **~450°C** | **Mittel**       | **Akzeptabel**  |\n\nDie Betriebstemperatur ist ein Kompromiss zwischen Thermodynamik und Kinetik.\n\n### 4. Katalysator (Eisen)\n\n- Beschleunigt die Reaktion erheblich\n- Ermöglicht niedrigere Temperaturen\n- Ändert K nicht, nur die Geschwindigkeit\n\n## Typische Betriebsbedingungen\n\n| Parameter              | Wert                           |\n| ---------------------- | ------------------------------ |\n| Temperatur             | 400-500°C                      |\n| Druck                  | 150-300 bar                    |\n| Katalysator            | Fe mit Promotoren              |\n| Ausbeute pro Durchgang | ~15%                           |\n| Kreislaufführung       | Ja (unreagiertes N₂/H₂ zurück) |\n\n## Bedeutung\n\nDas Haber-Bosch-Verfahren:\n- Produziert ~150 Millionen Tonnen NH₃/Jahr\n- Basis für Düngemittel (ernährt ~50% der Weltbevölkerung)\n- Nobelpreis 1918 für Fritz Haber",
+      "audioFile": "33-learning-haber-bosch.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Warum arbeitet das Haber-Bosch-Verfahren bei hohem Druck?",
+      "options": [
+        "Weil Stickstoff unter Druck reaktiver wird",
+        "Weil 4 Gasteilchen zu 2 Gasteilchen reagieren und hoher Druck die Seite mit weniger Teilchen begünstigt",
+        "Weil der Katalysator nur unter Druck funktioniert",
+        "Weil die Reaktion sonst nicht stattfindet"
+      ],
+      "correctAnswer": "Weil 4 Gasteilchen zu 2 Gasteilchen reagieren und hoher Druck die Seite mit weniger Teilchen begünstigt",
+      "explanation": "Nach Le Chatelier weicht das System bei Druckerhöhung zur Seite mit weniger Gasteilchen aus. N₂ + 3H₂ (4 Teilchen) → 2NH₃ (2 Teilchen). Hoher Druck verschiebt das Gleichgewicht nach rechts zur Produktseite.",
+      "content": ""
+    },
+    {
+      "type": "practice-exercise",
+      "title": "Optimierung der Ammoniaksynthese",
+      "scenario": "Du bist Ingenieur in einer Ammoniakfabrik und sollst die Produktionsausbeute verbessern.",
+      "tasks": [
+        {
+          "description": "Die aktuelle Ausbeute liegt bei 15%. Welche Maßnahme erhöht die Ausbeute am stärksten: (A) Druck von 200 auf 400 bar erhöhen, (B) Temperatur von 450°C auf 550°C erhöhen, oder (C) Mehr Katalysator hinzufügen?",
+          "solution": "A – Druckerhöhung. Höherer Druck verschiebt das Gleichgewicht nach rechts. Temperaturerhöhung würde die Ausbeute sogar senken (exotherme Reaktion). Mehr Katalysator ändert nur die Geschwindigkeit, nicht die Gleichgewichtslage."
+        },
+        {
+          "description": "Warum wird die Reaktion trotzdem bei hoher Temperatur (450°C) betrieben, obwohl niedrigere Temperaturen thermodynamisch günstiger wären?",
+          "solution": "Bei niedrigeren Temperaturen wäre die Reaktion viel zu langsam. Die hohe Temperatur ist ein Kompromiss zwischen Thermodynamik (Ausbeute) und Kinetik (Geschwindigkeit). Der Katalysator hilft, aber selbst mit Katalysator wäre die Reaktion bei Raumtemperatur zu langsam für industrielle Produktion."
+        }
+      ],
+      "explanation": "Das Haber-Bosch-Verfahren zeigt den typischen Konflikt zwischen thermodynamischer Begünstigung und kinetischer Realisierbarkeit. Die Betriebsbedingungen sind immer ein Kompromiss.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k16"
+        },
+        {
+          "sourceId": "kotz-k16"
+        }
+      ],
+      "content": "# Berechnungen bei Gleichgewichtsstörungen\n\nWenn ein Gleichgewicht gestört wird, ist Q ≠ K. Das System läuft zu einem neuen Gleichgewichtszustand.\n\n## Die Methode\n\n1. **Altes Gleichgewicht bestimmen** (gegeben oder berechnen)\n2. **Störung anwenden** (neue Anfangskonzentrationen)\n3. **Q berechnen und mit K vergleichen** (Richtung bestimmen)\n4. **Neue ICE-Tabelle aufstellen**\n5. **Neues Gleichgewicht berechnen**\n\n## Beispiel: Phosgen-Gleichgewicht\n\n$$\\text{CO(g)} + \\text{Cl}_2\\text{(g)} \\rightleftharpoons \\text{COCl}_2\\text{(g)}$$\n\n### Schritt 1: Altes Gleichgewicht\n\nGegeben: [CO] = 0,30 M, [Cl₂] = 0,10 M, [COCl₂] = 0,60 M\n\n$$K_c = \\frac{[\\text{COCl}_2]}{[\\text{CO}][\\text{Cl}_2]} = \\frac{0{,}60}{0{,}30 \\times 0{,}10} = 20$$\n\n### Schritt 2: Störung anwenden\n\nZugabe von 0,40 M Cl₂\n\nNeue Anfangskonzentrationen:\n- [CO] = 0,30 M\n- [Cl₂] = 0,10 + 0,40 = **0,50 M**\n- [COCl₂] = 0,60 M\n\n### Schritt 3: Q berechnen\n\n$$Q = \\frac{0{,}60}{0{,}30 \\times 0{,}50} = 4$$\n\nDa Q = 4 < K = 20 → Reaktion läuft nach **rechts**\n\n### Schritt 4: ICE-Tabelle\n\n|       | [CO]   | [Cl₂]  | [COCl₂] |\n| ----- | ------ | ------ | ------- |\n| **I** | 0,30   | 0,50   | 0,60    |\n| **C** | −x     | −x     | +x      |\n| **E** | 0,30−x | 0,50−x | 0,60+x  |\n\n### Schritt 5: Einsetzen in K\n\n$$20 = \\frac{0{,}60 + x}{(0{,}30-x)(0{,}50-x)}$$\n\nDies führt zu einer quadratischen Gleichung. Die Lösung ergibt x ≈ 0,14 M.\n\n**Neue Gleichgewichtskonzentrationen:**\n- [CO] = 0,16 M\n- [Cl₂] = 0,36 M\n- [COCl₂] = 0,74 M\n\n> **Merksatz:** Bei Zugabe eines Reaktanten wird dieser teilweise verbraucht und das Produkt nimmt zu – aber K bleibt konstant!",
+      "audioFile": "36-learning-stoerung-rechnung.mp3"
+    },
+    {
+      "type": "calculation",
+      "question": "Ein System A ⇌ B ist im Gleichgewicht mit [A] = 0,20 M und [B] = 0,80 M (K = 4). Nun werden 0,30 M von A zugegeben. Berechne die neue Gleichgewichtskonzentration von B.",
+      "correctAnswer": 0.92,
+      "unit": "M",
+      "tolerance": 0.03,
+      "hint": "Nach Zugabe: [A]₀ = 0,50 M, [B]₀ = 0,80 M. Q = 0,80/0,50 = 1,6 < K → Reaktion nach rechts. ICE: [A] = 0,50−x, [B] = 0,80+x. Löse K = (0,80+x)/(0,50−x) = 4.",
+      "explanation": "K = [B]/[A] = (0,80+x)/(0,50−x) = 4. Auflösen: 0,80+x = 4(0,50−x) → 0,80+x = 2−4x → 5x = 1,20 → x = 0,24. Neue [B] = 0,80 + 0,24 = 0,92 M.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "question": "Bist du bereit für den Test zum chemischen Gleichgewicht?",
+      "checkpoints": [
+        "Ich kann erklären, was ein dynamisches Gleichgewicht ist",
+        "Ich kann den Kc-Ausdruck für eine beliebige Reaktion aufstellen",
+        "Ich weiß, welche Stoffe NICHT im K-Ausdruck erscheinen",
+        "Ich kann Q berechnen und die Reaktionsrichtung vorhersagen",
+        "Ich kann eine ICE-Tabelle aufstellen und anwenden",
+        "Ich verstehe den Zusammenhang zwischen K, ΔG° und der Lage des Gleichgewichts",
+        "Ich kann Kp aus Kc berechnen (und umgekehrt)",
+        "Ich kann vorhersagen, wie Konzentration, Druck und Temperatur das Gleichgewicht beeinflussen",
+        "Ich verstehe, warum ein Katalysator K nicht verändert",
+        "Ich kann die Bedingungen des Haber-Bosch-Verfahrens erklären"
+      ],
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen über das chemische Gleichgewicht sind korrekt?",
+      "options": [
+        "Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab",
+        "Die Reaktion stoppt vollständig auf molekularer Ebene",
+        "Das Gleichgewicht kann von Edukt- oder Produktseite erreicht werden",
+        "Die Konzentrationen von Edukten und Produkten sind immer gleich"
+      ],
+      "correctAnswers": [
+        "Hin- und Rückreaktion laufen mit gleicher Geschwindigkeit ab",
+        "Das Gleichgewicht kann von Edukt- oder Produktseite erreicht werden"
+      ],
+      "explanation": "Ein Gleichgewicht ist dynamisch (Reaktionen laufen weiter) und reversibel (von beiden Seiten erreichbar). Die Konzentrationen sind konstant, aber nicht gleich – sie hängen von K ab."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für die Reaktion 2SO₂(g) + O₂(g) ⇌ 2SO₃(g): Welche Aussagen zum Kc-Ausdruck sind korrekt?",
+      "options": [
+        "[SO₃] steht im Zähler",
+        "Der Exponent von [SO₂] ist 2",
+        "[O₂] steht im Zähler",
+        "Kc = [SO₃]² / ([SO₂]² · [O₂])"
+      ],
+      "correctAnswers": [
+        "[SO₃] steht im Zähler",
+        "Der Exponent von [SO₂] ist 2",
+        "Kc = [SO₃]² / ([SO₂]² · [O₂])"
+      ],
+      "explanation": "Produkte kommen in den Zähler (SO₃), Edukte in den Nenner (SO₂, O₂). Die stöchiometrischen Koeffizienten werden zu Exponenten: [SO₃]² und [SO₂]²."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Stoffe werden NICHT im Gleichgewichtsausdruck berücksichtigt?",
+      "options": [
+        "Reine Feststoffe wie CaCO₃(s)",
+        "Gelöste Ionen wie Na⁺(aq)",
+        "Reines Wasser als Lösungsmittel H₂O(l)",
+        "Gase wie CO₂(g)"
+      ],
+      "correctAnswers": [
+        "Reine Feststoffe wie CaCO₃(s)",
+        "Reines Wasser als Lösungsmittel H₂O(l)"
+      ],
+      "explanation": "Reine Feststoffe und reine Flüssigkeiten (wie Wasser als Lösungsmittel) haben konstante Konzentrationen und werden nicht im K-Ausdruck aufgeführt. Gelöste Stoffe (aq) und Gase (g) werden berücksichtigt."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für eine Reaktion mit K = 50 wurden aktuelle Konzentrationen gemessen und Q = 25 berechnet. Welche Aussagen sind korrekt?",
+      "options": [
+        "Das System ist im Gleichgewicht",
+        "Die Reaktion läuft nach rechts (zu den Produkten)",
+        "Es gibt zu viele Produkte im Vergleich zum Gleichgewicht",
+        "Q muss größer werden, um K zu erreichen"
+      ],
+      "correctAnswers": [
+        "Die Reaktion läuft nach rechts (zu den Produkten)",
+        "Q muss größer werden, um K zu erreichen"
+      ],
+      "explanation": "Q < K bedeutet: Der Zähler (Produkte) ist zu klein im Vergleich zu K. Die Reaktion läuft nach rechts, um mehr Produkte zu bilden. Dadurch steigt Q, bis Q = K (Gleichgewicht)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur ICE-Tabellen-Methode sind korrekt?",
+      "options": [
+        "I steht für die Anfangskonzentrationen",
+        "Die Änderungen (C) müssen die Stöchiometrie beachten",
+        "E gibt die Gleichgewichtskonzentrationen an",
+        "Die Änderung für Edukte ist immer positiv"
+      ],
+      "correctAnswers": [
+        "I steht für die Anfangskonzentrationen",
+        "Die Änderungen (C) müssen die Stöchiometrie beachten",
+        "E gibt die Gleichgewichtskonzentrationen an"
+      ],
+      "explanation": "ICE = Initial, Change, Equilibrium. Die Änderungen folgen der Stöchiometrie. Edukte werden verbraucht (negative Änderung), Produkte gebildet (positive Änderung)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen über die Bedeutung von K sind korrekt?",
+      "options": [
+        "K = 10⁸ bedeutet, dass Produkte stark überwiegen",
+        "K = 10⁻⁸ bedeutet, dass die Reaktion schnell abläuft",
+        "Wenn K > 1, ist ΔG° negativ",
+        "K gibt Auskunft über die Reaktionsgeschwindigkeit"
+      ],
+      "correctAnswers": [
+        "K = 10⁸ bedeutet, dass Produkte stark überwiegen",
+        "Wenn K > 1, ist ΔG° negativ"
+      ],
+      "explanation": "Ein großes K bedeutet, dass Produkte dominieren. K > 1 entspricht ΔG° < 0 (thermodynamisch begünstigt). K sagt NICHTS über die Geschwindigkeit aus – eine Reaktion kann ein großes K haben, aber trotzdem langsam sein."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für die Umrechnung von Kc zu Kp gilt Kp = Kc(RT)^Δn. Welche Aussagen sind korrekt?",
+      "options": [
+        "Δn = (Mol Gas Produkte) − (Mol Gas Edukte)",
+        "Wenn Δn = 0, dann gilt Kp = Kc",
+        "Feststoffe zählen bei Δn mit",
+        "Bei N₂ + 3H₂ ⇌ 2NH₃ ist Δn = −2"
+      ],
+      "correctAnswers": [
+        "Δn = (Mol Gas Produkte) − (Mol Gas Edukte)",
+        "Wenn Δn = 0, dann gilt Kp = Kc",
+        "Bei N₂ + 3H₂ ⇌ 2NH₃ ist Δn = −2"
+      ],
+      "explanation": "Δn bezieht sich nur auf Gase. Bei NH₃-Synthese: Δn = 2 − (1+3) = −2. Wenn Δn = 0, wird (RT)⁰ = 1, also Kp = Kc. Feststoffe haben keinen Partialdruck und zählen nicht."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für die Reaktion A(g) + B(g) ⇌ C(g) + D(g): Welche Konzentrationsänderungen verschieben das Gleichgewicht nach rechts?",
+      "options": [
+        "Zugabe von A",
+        "Entfernen von C",
+        "Zugabe von D",
+        "Entfernen von B"
+      ],
+      "correctAnswers": [
+        "Zugabe von A",
+        "Entfernen von C"
+      ],
+      "explanation": "Nach Le Chatelier: Edukt zugeben → rechts. Produkt entfernen → rechts. Produkt zugeben (D) → links. Edukt entfernen (B) → links."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für die Reaktion 2NO₂(g) ⇌ N₂O₄(g): Welche Aussagen zu Druckänderungen sind korrekt?",
+      "options": [
+        "Druckerhöhung verschiebt das Gleichgewicht nach rechts",
+        "Druckerhöhung ändert den Wert von K",
+        "Bei Druckerhöhung nimmt [N₂O₄] zu",
+        "Volumenverkleinerung hat den gleichen Effekt wie Druckerhöhung"
+      ],
+      "correctAnswers": [
+        "Druckerhöhung verschiebt das Gleichgewicht nach rechts",
+        "Bei Druckerhöhung nimmt [N₂O₄] zu",
+        "Volumenverkleinerung hat den gleichen Effekt wie Druckerhöhung"
+      ],
+      "explanation": "Links: 2 Teilchen, Rechts: 1 Teilchen. Druckerhöhung begünstigt die Seite mit weniger Teilchen (rechts). K ändert sich bei Druckänderung NICHT – nur bei Temperaturänderung. Volumenverkleinerung = Druckerhöhung."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Für die exotherme Reaktion N₂ + 3H₂ ⇌ 2NH₃ + Wärme: Welche Aussagen zur Temperaturänderung sind korrekt?",
+      "options": [
+        "Temperaturerhöhung verschiebt das Gleichgewicht nach links",
+        "Temperaturerhöhung erhöht den K-Wert",
+        "Abkühlung erhöht die Ausbeute an NH₃",
+        "Wärme wirkt wie ein Reaktionsprodukt"
+      ],
+      "correctAnswers": [
+        "Temperaturerhöhung verschiebt das Gleichgewicht nach links",
+        "Abkühlung erhöht die Ausbeute an NH₃",
+        "Wärme wirkt wie ein Reaktionsprodukt"
+      ],
+      "explanation": "Bei exothermen Reaktionen ist Wärme ein \"Produkt\". Erwärmen = \"Produkt zugeben\" → Verschiebung nach links, K sinkt. Abkühlung → Verschiebung nach rechts, mehr NH₃."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen über Katalysatoren und das chemische Gleichgewicht sind korrekt?",
+      "options": [
+        "Ein Katalysator beschleunigt nur die Hinreaktion",
+        "Ein Katalysator ändert den Wert von K nicht",
+        "Ein Katalysator beschleunigt das Erreichen des Gleichgewichts",
+        "Ein Katalysator erhöht die Ausbeute an Produkten"
+      ],
+      "correctAnswers": [
+        "Ein Katalysator ändert den Wert von K nicht",
+        "Ein Katalysator beschleunigt das Erreichen des Gleichgewichts"
+      ],
+      "explanation": "Ein Katalysator beschleunigt Hin- UND Rückreaktion gleichermaßen. Er ändert weder K noch die Gleichgewichtslage. Das Gleichgewicht wird nur schneller erreicht – die Ausbeute bleibt gleich."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Maßnahmen erhöhen die Ammoniakausbeute beim Haber-Bosch-Verfahren (N₂ + 3H₂ ⇌ 2NH₃, exotherm)?",
+      "options": [
+        "Erhöhung des Drucks",
+        "Erhöhung der Temperatur",
+        "Entfernen von NH₃ aus dem Reaktionsgemisch",
+        "Zugabe von mehr N₂"
+      ],
+      "correctAnswers": [
+        "Erhöhung des Drucks",
+        "Entfernen von NH₃ aus dem Reaktionsgemisch",
+        "Zugabe von mehr N₂"
+      ],
+      "explanation": "Hoher Druck begünstigt die Seite mit weniger Gasteilchen (rechts). NH₃ entfernen verschiebt nach rechts. N₂ zugeben verschiebt nach rechts. Temperaturerhöhung würde die Ausbeute SENKEN (exotherm!), wird aber für Geschwindigkeit benötigt."
+    }
+  ],
+  "generatedAt": "2026-01-25T10:41:35.287Z"
+}

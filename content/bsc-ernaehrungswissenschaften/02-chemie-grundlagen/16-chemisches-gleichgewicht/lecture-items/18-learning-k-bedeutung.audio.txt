@@ -1,0 +1,27 @@
+Die Bedeutung von K.
+
+Der Zahlenwert der Gleichgewichtskonstante K verrät viel über den Verlauf einer Reaktion.
+
+...
+
+Wenn K größer als 1000 ist, läuft die Reaktion fast vollständig ab. Ein Beispiel sind Verbrennungen.
+
+Wenn K ungefähr 1 ist, liegen Edukte und Produkte in ähnlichen Mengen vor.
+
+Wenn K kleiner als ein Tausendstel ist, läuft die Reaktion kaum ab.
+
+...
+
+Stell dir vor, K ist 10 hoch 10. Das bedeutet: Im Gleichgewicht sind die Produkte zehn Milliarden mal konzentrierter als die Edukte! Die Reaktion läuft praktisch vollständig ab.
+
+Umgekehrt: Wenn K 10 hoch minus 10 ist, sind die Edukte zehn Milliarden mal konzentrierter. Die Reaktion läuft praktisch nicht ab.
+
+...
+
+Ein Beispiel aus dem Alltag: Silberchlorid hat K gleich 1 Komma 8 mal 10 hoch minus 10... sehr klein! Das bedeutet, Silberchlorid ist sehr schwer löslich.
+
+...
+
+Es gibt auch einen Zusammenhang mit der freien Enthalpie. Große K-Werte bedeuten negative Delta G Werte... die Reaktion ist spontan und exergon.
+
+Merksatz: Je größer K, desto mehr will die Reaktion zu den Produkten... thermodynamisch gesehen.

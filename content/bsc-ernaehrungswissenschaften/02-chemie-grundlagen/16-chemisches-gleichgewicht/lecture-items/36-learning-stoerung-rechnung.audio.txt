@@ -1,0 +1,39 @@
+Berechnungen bei Gleichgewichtsstörungen.
+
+Wenn ein Gleichgewicht gestört wird, ist Q ungleich K. Das System läuft zu einem neuen Gleichgewichtszustand.
+
+...
+
+Die Methode in fünf Schritten:
+
+Erstens: Das alte Gleichgewicht bestimmen.
+
+Zweitens: Die Störung anwenden und neue Anfangskonzentrationen berechnen.
+
+Drittens: Q berechnen und mit K vergleichen, um die Reaktionsrichtung zu bestimmen.
+
+Viertens: Eine neue ICE-Tabelle aufstellen.
+
+Fünftens: Das neue Gleichgewicht berechnen.
+
+...
+
+Ein Beispiel: Das Phosgen-Gleichgewicht. C O plus Chlor zu C O Chlor zwei.
+
+Im alten Gleichgewicht haben wir K gleich 20.
+
+Nun wird Chlor zugegeben. Die Chlor-Konzentration steigt von 0 Komma 10 auf 0 Komma 50 Molar.
+
+...
+
+Q ist jetzt 4, also kleiner als K. Die Reaktion läuft nach rechts.
+
+Wir stellen eine neue ICE-Tabelle auf und setzen in K ein. Das führt zu einer quadratischen Gleichung.
+
+Die Lösung ergibt x etwa 0 Komma 14 Molar.
+
+...
+
+Die neuen Gleichgewichtskonzentrationen: C O ist 0 Komma 16 Molar, Chlor ist 0 Komma 36 Molar, und C O Chlor zwei ist 0 Komma 74 Molar.
+
+Merksatz: Bei Zugabe eines Reaktanten wird dieser teilweise verbraucht und das Produkt nimmt zu... aber K bleibt konstant!

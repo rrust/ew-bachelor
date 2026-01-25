@@ -1,0 +1,17 @@
+Was ist chemisches Gleichgewicht?
+
+Viele chemische Reaktionen laufen nicht vollständig ab. Stattdessen stellt sich ein Zustand ein, in dem sowohl Edukte als auch Produkte gleichzeitig vorliegen. Dieser Zustand heißt chemisches Gleichgewicht.
+
+...
+
+Warum ist das so? Betrachten wir ein Beispiel.
+
+N zwei O vier zerfällt zu Stickstoffdioxid. Startet man mit reinem N zwei O vier, beginnt es zu zerfallen. Gleichzeitig rekombinieren entstandene N O zwei Moleküle wieder zurück. Irgendwann sind beide Prozesse gleich schnell... das Gleichgewicht ist erreicht.
+
+...
+
+Ein Alltagsbeispiel ist die Sprudelflasche. In einer geschlossenen Flasche ist gelöstes C O zwei im Gleichgewicht mit C O zwei Gas über der Flüssigkeit. Beim Öffnen entweicht Gas, das Gleichgewicht wird gestört, und weiteres C O zwei entweicht aus der Flüssigkeit... die Flasche sprudelt.
+
+...
+
+Wichtig zu verstehen: Gleichgewicht bedeutet nicht, dass nichts passiert! Die Reaktionen laufen weiter, aber Hin- und Rückreaktion heben sich gegenseitig auf.

@@ -1,0 +1,27 @@
+Der Reaktionsquotient Q.
+
+Der Reaktionsquotient Q beantwortet die Frage: In welche Richtung wird die Reaktion laufen?
+
+...
+
+Q hat dieselbe Formel wie K, aber verwendet die aktuellen Konzentrationen zu einem beliebigen Zeitpunkt... nicht zwingend im Gleichgewicht.
+
+...
+
+Der Vergleich von Q und K verrät die Reaktionsrichtung.
+
+Wenn Q kleiner als K ist, gibt es zu viele Edukte. Die Reaktion läuft nach rechts, um mehr Produkte zu bilden.
+
+Wenn Q größer als K ist, gibt es zu viele Produkte. Die Reaktion läuft nach links, um mehr Edukte zu bilden.
+
+Wenn Q gleich K ist, sind wir im Gleichgewicht. Es findet keine Nettoreaktion statt.
+
+...
+
+Ein Beispiel: Butan reagiert zu Isobutan. K ist 2 Komma 5. Die aktuellen Konzentrationen ergeben Q gleich 2 Komma 33.
+
+Da Q kleiner als K ist, läuft die Reaktion nach rechts... es wird mehr Isobutan gebildet.
+
+...
+
+Merksatz: Das System strebt immer zu K. Ist Q kleiner, muss der Zähler wachsen. Ist Q größer, muss der Nenner wachsen.
