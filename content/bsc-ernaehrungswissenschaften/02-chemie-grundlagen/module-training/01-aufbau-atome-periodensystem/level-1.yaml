@@ -1,0 +1,103 @@
+# Level 1: Grundlagen - Aufbau der Atome & Periodensystem
+topic: 'Aufbau der Atome & Periodensystem'
+level: 1
+questions:
+  # Frage 1: Korrekt = B (Index 1)
+  - question: 'Aus welchen drei Teilchenarten besteht ein Atom?'
+    options:
+      - 'Aus Photonen, Neutronen und Elektronen'
+      - 'Aus Protonen, Neutronen und Elektronen'
+      - 'Aus Positronen, Neutronen und Protonen'
+      - 'Aus Quarks, Leptonen und Bosonen'
+      - 'Aus Molekülen, Ionen und Radikalen'
+    correct: [1]
+
+  # Frage 2: Korrekt = C (Index 2)
+  - question: 'Wo befinden sich die positiv geladenen Kernteilchen?'
+    options:
+      - 'In der äußersten Schale der Hülle'
+      - 'Gleichmäßig im Teilchen verteilt'
+      - 'Im Zentrum zusammen mit Neutronen'
+      - 'Zwischen Zentrum und Elektronenhülle'
+      - 'Außerhalb der Elektronenwolke'
+    correct: [2]
+
+  # Frage 3: Korrekt = D (Index 3)
+  - question: 'Was beschreibt die Kernladungszahl eines Elements?'
+    options:
+      - 'Die Menge der Neutronen im Zentrum'
+      - 'Die Gesamtmasse in atomaren Einheiten'
+      - 'Die Summe aller subatomaren Teilchen'
+      - 'Die Menge positiver Kernteilchen'
+      - 'Die Anzahl der besetzten Schalen'
+    correct: [3]
+
+  # Frage 4: Korrekt = E (Index 4)
+  - question: 'Welche elektrische Eigenschaft haben Elektronen?'
+    options:
+      - 'Sie tragen eine positive Ladung'
+      - 'Sie sind elektrisch vollkommen neutral'
+      - 'Ihre Ladung variiert je nach Element'
+      - 'Sie wechseln ständig ihre Polarität'
+      - 'Sie tragen eine negative Ladung'
+    correct: [4]
+
+  # Frage 5: Korrekt = A (Index 0)
+  - question: 'Was kennzeichnet Isotope eines Elements?'
+    options:
+      - 'Gleiche Protonenzahl, andere Neutronenzahl'
+      - 'Gleiche Neutronenzahl, andere Protonenzahl'
+      - 'Verschiedene Anzahl an Hüllelektronen'
+      - 'Unterschiedliche chemische Reaktivität'
+      - 'Abweichende Anzahl an Energieniveaus'
+    correct: [0]
+
+  # Frage 6: Korrekt = B (Index 1) - Synonyme verwendet!
+  - question: 'Wie viele Perioden enthält das Periodensystem?'
+    options:
+      - 'Es umfasst insgesamt fünf Stufen'
+      - 'Es umfasst insgesamt sieben Stufen'
+      - 'Es umfasst insgesamt sechs Stufen'
+      - 'Es umfasst insgesamt acht Stufen'
+      - 'Es umfasst insgesamt neun Stufen'
+    correct: [1]
+
+  # Frage 7: Korrekt = C (Index 2) - Synonyme verwendet!
+  - question: 'Wo findet man Natrium und Kalium im Periodensystem?'
+    options:
+      - 'Bei den Halogenen ganz rechts'
+      - 'Bei den Edelgasen am Rand'
+      - 'Bei den Alkalien ganz links'
+      - 'Bei den Erdalkalien daneben'
+      - 'Bei den d-Block-Elementen mittig'
+    correct: [2]
+
+  # Frage 8: Korrekt = D (Index 3)
+  - question: 'Welche Eigenschaft ist typisch für metallische Elemente?'
+    options:
+      - 'Geringe thermische Leitfähigkeit'
+      - 'Sprödes Verhalten unter Druck'
+      - 'Transparenz für Lichtstrahlen'
+      - 'Hohe elektrische Leitfähigkeit'
+      - 'Niedrige Schmelztemperaturen'
+    correct: [3]
+
+  # Frage 9: Korrekt = E (Index 4)
+  - question: 'Woraus setzt sich die Nukleonenzahl zusammen?'
+    options:
+      - 'Aus der Zahl der Hüllelektronen'
+      - 'Aus dem Atomgewicht in Gramm'
+      - 'Aus der Anzahl besetzter Schalen'
+      - 'Aus Elektronen- plus Protonenzahl'
+      - 'Aus Protonen- plus Neutronenzahl'
+    correct: [4]
+
+  # Frage 10: Korrekt = A (Index 0)
+  - question: 'Was trifft auf Halbmetalle wie Silicium zu?'
+    options:
+      - 'Sie leiten Strom temperaturabhängig'
+      - 'Sie sind bei Raumtemperatur gasförmig'
+      - 'Sie zeigen hohe Wärmeleitfähigkeit'
+      - 'Sie reagieren nicht mit Halogenen'
+      - 'Sie bilden stabile negative Ionen'
+    correct: [0]

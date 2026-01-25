@@ -268,6 +268,28 @@ function renderModuleTrainingView() {
       Diese Sitzung: ${moduleTrainingState.sessionCorrect}/${moduleTrainingState.sessionAnswered} richtig
     </div>
   `;
+
+  // Dev mode: highlight correct answers with light green border
+  if (window.isDevMode && window.isDevMode()) {
+    // Support both new format (correctAnswers array) and legacy format
+    let correctAnswers = currentQuestion.correctAnswers;
+    if (!correctAnswers || correctAnswers.length === 0) {
+      // Fallback to correctAnswer (single)
+      correctAnswers = currentQuestion.correctAnswer
+        ? [currentQuestion.correctAnswer]
+        : [];
+    }
+
+    // Use container to find options (more reliable than document)
+    const options = container.querySelectorAll('.module-training-option');
+    options.forEach((btn) => {
+      const optionText = btn.dataset.option;
+      if (correctAnswers.includes(optionText)) {
+        btn.classList.add('border-green-400', 'border-2');
+        btn.classList.remove('border-gray-200', 'dark:border-gray-600');
+      }
+    });
+  }
 }
 
 /**

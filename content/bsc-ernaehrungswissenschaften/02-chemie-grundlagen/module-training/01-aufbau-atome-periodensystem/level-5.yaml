@@ -1,0 +1,103 @@
+# Level 5: Synthese/Transfer - Aufbau der Atome & Periodensystem
+topic: 'Aufbau der Atome & Periodensystem'
+level: 5
+questions:
+  # Frage 1: Korrekt = A, C, D (Index 0, 2, 3)
+  - question: 'Ein unbekanntes Element X bildet das Oxid X₂O und reagiert heftig mit Wasser. Was gilt?'
+    options:
+      - 'X ist ein Alkalimetall'
+      - 'X steht in der zweiten Hauptgruppe'
+      - 'X hat ein Valenzelektron'
+      - 'X erzeugt einfach positive Kationen'
+      - 'X ist ein Edelgas'
+    correct: [0, 2, 3]
+
+  # Frage 2: Korrekt = B (Index 1)
+  - question: 'Die Ionisierungsenergien eines Elements sind: 578, 1817, 2745, 11578 kJ/mol. Welche Gruppe?'
+    options:
+      - 'Es befindet sich in der zweiten Spalte'
+      - 'Es befindet sich in der dritten Spalte'
+      - 'Es befindet sich in der vierten Spalte'
+      - 'Es befindet sich in der ersten Spalte'
+      - 'Es befindet sich in der fünften Spalte'
+    correct: [1]
+
+  # Frage 3: Korrekt = C, E (Index 2, 4)
+  - question: 'Element Y hat einen größeren Atomradius als Z, aber kleinere Elektronegativität. Was könnte zutreffen?'
+    options:
+      - 'Y und Z sind in der gleichen Periode und Y steht rechts'
+      - 'Y und Z sind Edelgase mit ähnlicher Reaktivität'
+      - 'Y steht in einer niedrigeren Gruppe als Z'
+      - 'Y und Z haben die gleiche Ordnungszahl'
+      - 'Y steht in einer höheren Periode als Z'
+    correct: [2, 4]
+
+  # Frage 4: Korrekt = D (Index 3)
+  - question: 'Ein Isotop hat eine Halbwertszeit von 5730 Jahren und wird zur Altersbestimmung genutzt. Welches?'
+    options:
+      - 'Es handelt sich um Uran-238'
+      - 'Es handelt sich um Kalium-40'
+      - 'Es handelt sich um Strontium-90'
+      - 'Es handelt sich um Kohlenstoff-14'
+      - 'Es handelt sich um Radium-226'
+    correct: [3]
+
+  # Frage 5: Korrekt = A, B, E (Index 0, 1, 4)
+  - question: 'Welche Schlüsse lassen sich aus der Stellung von Phosphor (Z=15) ziehen?'
+    options:
+      - 'Es befindet sich in Hauptgruppe fünf'
+      - 'Es besitzt fünf Valenzelektronen'
+      - 'Es ist ein typisches weiches Metall'
+      - 'Es erzeugt bevorzugt P⁵⁺-Kationen'
+      - 'Es befindet sich in der dritten Reihe'
+    correct: [0, 1, 4]
+
+  # Frage 6: Korrekt = B, C (Index 1, 2)
+  - question: 'Die Schmelzpunkte der Halogene steigen von Fluor zu Iod. Welche Erklärungen sind richtig?'
+    options:
+      - 'Die Ionenbindungen werden stärker'
+      - 'Die Van-der-Waals-Kräfte nehmen zu'
+      - 'Die Molekülmasse nimmt zu'
+      - 'Die Elektronegativität steigt'
+      - 'Die kovalenten Bindungen werden fester'
+    correct: [1, 2]
+
+  # Frage 7: Korrekt = A, D (Index 0, 3)
+  - question: 'Ein Ion mit 18 Elektronen und Ladung 2- wird gebildet. Was stimmt?'
+    options:
+      - 'Das Ausgangselement hat 16 Protonen'
+      - 'Das Ausgangselement hat 18 Protonen'
+      - 'Das Ausgangselement hat 20 Protonen'
+      - 'Es handelt sich um ein Sulfid-Ion'
+      - 'Es handelt sich um ein Chlorid-Ion'
+    correct: [0, 3]
+
+  # Frage 8: Korrekt = C (Index 2)
+  - question: 'Warum bildet Aluminium in Verbindungen die Oxidationsstufe +3 statt +1?'
+    options:
+      - 'Weil die erste Ionisierung viel Energie benötigt'
+      - 'Weil Aluminium nur drei Elektronen besitzt'
+      - 'Weil die Edelgaskonfiguration so erreicht wird'
+      - 'Weil die dritte Ionisierung wenig Energie braucht'
+      - 'Weil Aluminium ein Halogen ist'
+    correct: [2]
+
+  # Frage 9: Korrekt = B, D, E (Index 1, 3, 4)
+  - question: 'Vergleiche Na⁺, Mg²⁺ und Al³⁺. Welche Aussagen sind korrekt?'
+    options:
+      - 'Na⁺ hat den kleinsten Ionenradius'
+      - 'Alle haben die Neon-Konfiguration'
+      - 'Mg²⁺ hat die höchste Ladungsdichte'
+      - 'Al³⁺ hat den kleinsten Ionenradius'
+      - 'Sie sind alle isoelektronisch'
+    correct: [1, 3, 4]
+
+  # Frage 10: Korrekt = A, C (Index 0, 2)
+  - question: 'Ein Element zeigt Eigenschaften von Metallen und Nichtmetallen, leitet Strom mäßig. Was gilt?'
+    options:
+      - 'Es könnte Silicium oder Germanium sein'
+      - 'Es gehört zu den Alkalimetallen'
+      - 'Es wird als Halbmetall klassifiziert'
+      - 'Es steht in der ersten Hauptgruppe'
+      - 'Es ist ein typisches Edelgas'
+    correct: [0, 2]

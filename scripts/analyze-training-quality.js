@@ -49,15 +49,51 @@ const stats = {
   totalQuestions: 0,
   correctAnswerLengths: [],
   incorrectAnswerLengths: [],
-  correctPositions: { 0: 0, 1: 0, 2: 0, 3: 0 },
+  correctPositions: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 },
   chaptersAnalyzed: 0
 };
 
+// Parse new YAML format: { topic, level, questions: [...] }
 function parseYamlFile(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8');
   const questions = [];
 
-  // Split by --- to get individual question blocks
+  try {
+    // Try new format first (YAML with questions array)
+    const yaml = require('js-yaml');
+    const parsed = yaml.load(content);
+
+    if (parsed && Array.isArray(parsed.questions)) {
+      // New format: questions array with correct indices
+      for (const q of parsed.questions) {
+        const question = {
+          type: q.type || 'multiple-choice',
+          question: q.question || '',
+          options: q.options || [],
+          correctAnswer: null,
+          correctAnswers: [],
+          correctIndices: q.correct || []
+        };
+
+        // Convert indices to answer text
+        if (Array.isArray(q.correct) && q.correct.length > 0) {
+          question.correctAnswers = q.correct.map((idx) => q.options[idx]);
+          if (question.correctAnswers.length === 1) {
+            question.correctAnswer = question.correctAnswers[0];
+          }
+        }
+
+        if (question.question && question.options.length > 0) {
+          questions.push(question);
+        }
+      }
+      return questions;
+    }
+  } catch (e) {
+    // Fall through to legacy parsing
+  }
+
+  // Legacy format: Multi-document YAML with --- separators
   const blocks = content.split(/^---$/m).filter((b) => b.trim());
 
   for (const block of blocks) {
@@ -88,7 +124,7 @@ function parseYamlFile(filePath) {
         .replace(/^['"]|['"]$/g, '');
     }
 
-    // Parse options (array format)
+    // Legacy format: Parse options (array format)
     const optionsMatch = block.match(/options:\s*\n((?:\s+-\s+.+\n?)+)/);
     if (optionsMatch) {
       const optionLines = optionsMatch[1].match(
@@ -102,7 +138,7 @@ function parseYamlFile(filePath) {
       }
     }
 
-    // Parse correctAnswer (single)
+    // Legacy format: Parse correctAnswer (single)
     const correctMatch = block.match(/correctAnswer:\s*['"]?([^'"\n]+)['"]?/);
     if (correctMatch) {
       question.correctAnswer = correctMatch[1]
@@ -110,7 +146,7 @@ function parseYamlFile(filePath) {
         .replace(/^['"]|['"]$/g, '');
     }
 
-    // Parse correctAnswers (multiple)
+    // Legacy format: Parse correctAnswers (multiple)
     const correctMultiMatch = block.match(
       /correctAnswers:\s*\n((?:\s+-\s+.+\n?)+)/
     );
@@ -559,9 +595,16 @@ function checkQuestion(question, filePath, questionIndex) {
   // ═══════════════════════════════════════════════════════════════════
   // 11. POSITIONS-STATISTIK
   // ═══════════════════════════════════════════════════════════════════
-  if (question.correctAnswer) {
+  // Support both new format (correctIndices) and legacy format (correctAnswer)
+  if (question.correctIndices && question.correctIndices.length > 0) {
+    // New format: indices are already 0-based
+    const idx = question.correctIndices[0];
+    if (idx >= 0 && idx < 5) {
+      stats.correctPositions[idx]++;
+    }
+  } else if (question.correctAnswer) {
     const idx = question.options.indexOf(question.correctAnswer);
-    if (idx >= 0 && idx < 4) {
+    if (idx >= 0 && idx < 5) {
       stats.correctPositions[idx]++;
     }
   }
@@ -593,7 +636,9 @@ chapters.forEach((chapter) => {
   const chapterPath = path.join(trainingDir, chapter);
   const files = fs
     .readdirSync(chapterPath)
-    .filter((f) => f.endsWith('.md') && f.startsWith('level'));
+    .filter(
+      (f) => (f.endsWith('.yaml') || f.endsWith('.md')) && f.startsWith('level')
+    );
 
   files.forEach((file) => {
     const filePath = path.join(chapterPath, file);
@@ -735,18 +780,20 @@ const totalPositions = Object.values(stats.correctPositions).reduce(
   (a, b) => a + b,
   0
 );
-const expectedPct = 25;
+const expectedPct = 20; // 5 positions (A-E), each should have ~20%
 let positionWarning = false;
 
 if (totalPositions > 0) {
-  const posLabels = ['A', 'B', 'C', 'D'];
+  const posLabels = ['A', 'B', 'C', 'D', 'E'];
   Object.entries(stats.correctPositions).forEach(([idx, count]) => {
+    const numIdx = parseInt(idx, 10);
+    if (numIdx < 0 || numIdx > 4) return; // Skip invalid indices
     const pct = ((count / totalPositions) * 100).toFixed(1);
     const bar = '█'.repeat(Math.round((count / totalPositions) * 40));
     const deviation = Math.abs(parseFloat(pct) - expectedPct);
     const flag = deviation > 10 ? ' ⚠️' : '';
     if (deviation > 10) positionWarning = true;
-    console.log(`   ${posLabels[idx]}: ${bar} ${pct}%${flag}`);
+    console.log(`   ${posLabels[numIdx]}: ${bar} ${pct}%${flag}`);
   });
 
   if (positionWarning) {

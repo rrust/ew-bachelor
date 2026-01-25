@@ -1,0 +1,103 @@
+# Level 2: Verständnis - Aufbau der Atome & Periodensystem
+topic: 'Aufbau der Atome & Periodensystem'
+level: 2
+questions:
+  # Frage 1: Korrekt = B (Index 1)
+  - question: 'Warum ist ein Atom nach außen elektrisch neutral?'
+    options:
+      - 'Weil Neutronen die Ladung ausgleichen'
+      - 'Weil Protonen- und Elektronenzahl gleich ist'
+      - 'Weil der Kern rein positiv geladen ist'
+      - 'Weil Elektronen sich gegenseitig aufheben'
+      - 'Weil die Hülle den Kern abschirmt'
+    correct: [1]
+
+  # Frage 2: Korrekt = C (Index 2)
+  - question: 'Welche Rolle spielen Neutronen im Atomkern?'
+    options:
+      - 'Sie bestimmen die chemischen Eigenschaften'
+      - 'Sie tragen zur negativen Ladung bei'
+      - 'Sie erhöhen die Masse ohne Ladungsänderung'
+      - 'Sie binden die Elektronen an den Kern'
+      - 'Sie verringern die Kernladungszahl'
+    correct: [2]
+
+  # Frage 3: Korrekt = D (Index 3)
+  - question: 'Was passiert mit der Atomgröße in einer Periode von links nach rechts?'
+    options:
+      - 'Sie nimmt kontinuierlich zu'
+      - 'Sie bleibt nahezu konstant'
+      - 'Sie schwankt ohne erkennbares Muster'
+      - 'Sie nimmt tendenziell ab'
+      - 'Sie verdoppelt sich pro Element'
+    correct: [3]
+
+  # Frage 4: Korrekt = E (Index 4)
+  - question: 'Warum haben Isotope gleiche chemische Eigenschaften?'
+    options:
+      - 'Weil ihre Massenzahl identisch ist'
+      - 'Weil ihre Neutronenzahl gleich ist'
+      - 'Weil sie verschiedene Kernladungen haben'
+      - 'Weil ihre Elektronenhülle unterschiedlich ist'
+      - 'Weil ihre Elektronenzahl identisch ist'
+    correct: [4]
+
+  # Frage 5: Korrekt = A (Index 0)
+  - question: 'Welche Aussagen über Edelgase sind korrekt?'
+    options:
+      - 'Sie haben eine vollbesetzte Außenschale'
+      - 'Sie reagieren sehr leicht mit Metallen'
+      - 'Sie bilden bevorzugt negative Ionen'
+      - 'Sie leiten elektrischen Strom gut'
+      - 'Sie kommen nur künstlich hergestellt vor'
+    correct: [0]
+
+  # Frage 6: Korrekt = B, D (Index 1, 3)
+  - question: 'Was trifft auf die Alkalimetalle zu?'
+    options:
+      - 'Sie besitzen zwei Valenzelektronen'
+      - 'Sie reagieren heftig mit Wasser'
+      - 'Sie sind bei Raumtemperatur gasförmig'
+      - 'Sie bilden einfach positive Ionen'
+      - 'Sie haben hohe Schmelztemperaturen'
+    correct: [1, 3]
+
+  # Frage 7: Korrekt = C (Index 2)
+  - question: 'Warum nimmt die Ionisierungsenergie in einer Gruppe nach unten ab?'
+    options:
+      - 'Weil die Kernladung dort stark zunimmt'
+      - 'Weil weniger Elektronen vorhanden sind'
+      - 'Weil Valenzelektronen kernferner liegen'
+      - 'Weil die Atommasse dort stark abnimmt'
+      - 'Weil mehr Neutronen vorhanden sind'
+    correct: [2]
+
+  # Frage 8: Korrekt = A, E (Index 0, 4)
+  - question: 'Welche Eigenschaften zeigen Halogene?'
+    options:
+      - 'Sie bilden leicht negative Ionen'
+      - 'Sie sind gute elektrische Leiter'
+      - 'Sie reagieren träge mit anderen Stoffen'
+      - 'Sie besitzen metallischen Glanz'
+      - 'Sie haben hohe Elektronegativität'
+    correct: [0, 4]
+
+  # Frage 9: Korrekt = D (Index 3)
+  - question: 'Was erklärt die Ähnlichkeit der Elemente einer Gruppe?'
+    options:
+      - 'Die identische Anzahl an Protonen'
+      - 'Die gleiche Anzahl an Neutronen'
+      - 'Die übereinstimmende Atommasse'
+      - 'Die gleiche Anzahl an Valenzelektronen'
+      - 'Die identische Kernladungszahl'
+    correct: [3]
+
+  # Frage 10: Korrekt = E (Index 4)
+  - question: 'Warum sind Übergangsmetalle oft farbig?'
+    options:
+      - 'Weil ihre Valenzelektronen fest gebunden sind'
+      - 'Weil ihre Atomkerne besonders instabil sind'
+      - 'Weil sie nur in Verbindungen vorkommen'
+      - 'Weil ihre Außenschale vollständig gefüllt ist'
+      - 'Weil d-Elektronen bestimmtes Licht absorbieren'
+    correct: [4]
