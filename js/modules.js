@@ -505,7 +505,7 @@ function createModuleCard(
     cardHTML += `
         <div>
           <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-1">
-            <span class="flex items-center gap-1">${Icons.get('muscle', 'w-3 h-3')} Training</span>
+            <span class="flex items-center gap-1">${Icons.get('training', 'w-3 h-3')} Training</span>
             <span>${levelStars} ${trainingStats.percent}%</span>
           </div>
           <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
@@ -540,7 +540,7 @@ function createModuleCard(
 
     // Training button (NEW - links to module training)
     cardHTML += `<button class="module-training-btn text-sm px-2.5 py-1.5 bg-green-500 hover:bg-green-600 text-white font-medium rounded transition duration-200" title="Level-Training" data-module="${moduleId}">${Icons.get(
-      'muscle',
+      'training',
       'w-4 h-4'
     )}</button>`;
 
