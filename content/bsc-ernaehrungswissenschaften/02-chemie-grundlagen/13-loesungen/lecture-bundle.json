@@ -1061,6 +1061,196 @@
       "content": ""
     }
   ],
-  "quiz": [],
-  "generatedAt": "2026-01-25T11:38:01.982Z"
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen über Sättigungszustände von Lösungen sind korrekt?",
+      "options": [
+        "Eine gesättigte Lösung befindet sich im dynamischen Gleichgewicht zwischen Lösen und Kristallisieren",
+        "Übersättigte Lösungen sind thermodynamisch stabil und bleiben unbegrenzt bestehen",
+        "In einer ungesättigten Lösung kann sich noch zusätzlicher Stoff lösen",
+        "Das Prinzip \"Like dissolves like\" beschreibt, dass polare Stoffe in unpolaren Lösungsmitteln gut löslich sind"
+      ],
+      "correctAnswers": [
+        "Eine gesättigte Lösung befindet sich im dynamischen Gleichgewicht zwischen Lösen und Kristallisieren",
+        "In einer ungesättigten Lösung kann sich noch zusätzlicher Stoff lösen"
+      ],
+      "explanation": "Im gesättigten Zustand lösen sich ebenso viele Teilchen wie auskristallisieren – ein dynamisches Gleichgewicht. Übersättigte Lösungen sind hingegen instabil und kristallisieren bei Störung aus. \"Like dissolves like\" bedeutet, dass Ähnliches Ähnliches löst (polar in polar)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Lösungsenthalpie sind korrekt?",
+      "options": [
+        "Die Gitterenthalpie ist immer endotherm, da Energie zum Aufbrechen des Gitters benötigt wird",
+        "Die Hydratationsenthalpie ist immer exotherm, da Wasser-Ion-Wechselwirkungen Energie freisetzen",
+        "Wenn eine Lösung beim Mischen kalt wird, ist der Gesamtprozess exotherm",
+        "Bei Taschenwärmern wird die exotherme Kristallisation einer übersättigten Lösung genutzt"
+      ],
+      "correctAnswers": [
+        "Die Gitterenthalpie ist immer endotherm, da Energie zum Aufbrechen des Gitters benötigt wird",
+        "Die Hydratationsenthalpie ist immer exotherm, da Wasser-Ion-Wechselwirkungen Energie freisetzen",
+        "Bei Taschenwärmern wird die exotherme Kristallisation einer übersättigten Lösung genutzt"
+      ],
+      "explanation": "Wird eine Lösung kalt, entzieht sie der Umgebung Wärme – der Prozess ist endotherm (nicht exotherm). Die Gitterenthalpie erfordert Energiezufuhr, die Hydratation setzt Energie frei. Natriumacetat-Taschenwärmer nutzen die exotherme Kristallisation."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu Konzentrationseinheiten sind korrekt?",
+      "options": [
+        "Die Molalität ist temperaturunabhängig, da sie auf der Masse des Lösungsmittels basiert",
+        "Der Stoffmengenanteil hat die Einheit mol/L",
+        "Die Molarität ändert sich mit der Temperatur, da sich das Volumen der Lösung ändert",
+        "Bei der Berechnung der Molalität wird die Gesamtmasse der Lösung verwendet"
+      ],
+      "correctAnswers": [
+        "Die Molalität ist temperaturunabhängig, da sie auf der Masse des Lösungsmittels basiert",
+        "Die Molarität ändert sich mit der Temperatur, da sich das Volumen der Lösung ändert"
+      ],
+      "explanation": "Die Molalität (mol/kg Lösungsmittel) ist temperaturunabhängig. Die Molarität (mol/L Lösung) ändert sich bei Temperaturänderung, da sich das Volumen ausdehnt. Der Stoffmengenanteil ist dimensionslos (Verhältnis mol/mol). Bei der Molalität wird nur die Masse des Lösungsmittels verwendet, nicht die Gesamtmasse."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Ein Taucher in 30 m Tiefe (4 atm Gesamtdruck) atmet Druckluft mit 80% Stickstoff. Welche Aussagen sind korrekt?",
+      "options": [
+        "Die Stickstoffkonzentration im Blut ist in dieser Tiefe etwa viermal höher als an der Oberfläche",
+        "Beim schnellen Auftauchen können Gasblasen im Blut entstehen (Dekompressionskrankheit)",
+        "Das Henry-Gesetz beschreibt, dass die Gaslöslichkeit proportional zum Druck ist",
+        "Die Löslichkeit von Stickstoff nimmt mit steigender Wassertemperatur zu"
+      ],
+      "correctAnswers": [
+        "Die Stickstoffkonzentration im Blut ist in dieser Tiefe etwa viermal höher als an der Oberfläche",
+        "Beim schnellen Auftauchen können Gasblasen im Blut entstehen (Dekompressionskrankheit)",
+        "Das Henry-Gesetz beschreibt, dass die Gaslöslichkeit proportional zum Druck ist"
+      ],
+      "explanation": "Nach dem Henry-Gesetz (C = k·P) ist die Gaslöslichkeit direkt proportional zum Partialdruck. Bei 4 atm ist die N₂-Konzentration etwa 4× höher als bei 1 atm. Schnelles Auftauchen lässt das überschüssige Gas als Blasen austreten. Die Gaslöslichkeit nimmt bei höherer Temperatur typischerweise ab."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Raoult-Gesetz und zur Dampfdruckerniedrigung sind korrekt?",
+      "options": [
+        "Der Dampfdruck einer Lösung ist niedriger als der des reinen Lösungsmittels",
+        "Je mehr gelöster Stoff vorhanden ist, desto höher ist der Dampfdruck",
+        "Die Dampfdruckerniedrigung ist proportional zum Stoffmengenanteil des gelösten Stoffes",
+        "Das Raoult-Gesetz gilt streng nur für ideale Lösungen"
+      ],
+      "correctAnswers": [
+        "Der Dampfdruck einer Lösung ist niedriger als der des reinen Lösungsmittels",
+        "Die Dampfdruckerniedrigung ist proportional zum Stoffmengenanteil des gelösten Stoffes",
+        "Das Raoult-Gesetz gilt streng nur für ideale Lösungen"
+      ],
+      "explanation": "Gelöste Teilchen an der Oberfläche verringern die Anzahl der verdampfbaren Lösungsmittelmoleküle, wodurch der Dampfdruck sinkt. Je mehr gelöster Stoff, desto niedriger (nicht höher) der Dampfdruck. Das Raoult-Gesetz ist eine Idealisierung."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Gefrierpunktserniedrigung sind korrekt?",
+      "options": [
+        "Die Gefrierpunktserniedrigung ist proportional zur Molalität der Lösung",
+        "CaCl₂ senkt bei gleicher Molalität den Gefrierpunkt stärker als NaCl",
+        "Die kryoskopische Konstante hängt vom gelösten Stoff ab",
+        "Streusalz funktioniert, weil es den Gefrierpunkt von Wasser senkt"
+      ],
+      "correctAnswers": [
+        "Die Gefrierpunktserniedrigung ist proportional zur Molalität der Lösung",
+        "CaCl₂ senkt bei gleicher Molalität den Gefrierpunkt stärker als NaCl",
+        "Streusalz funktioniert, weil es den Gefrierpunkt von Wasser senkt"
+      ],
+      "explanation": "ΔT = K·m·i zeigt die Proportionalität zur Molalität. CaCl₂ hat i=3 (zerfällt in 3 Ionen), NaCl nur i=2, daher stärkere Wirkung. Die kryoskopische Konstante K hängt nur vom Lösungsmittel ab, nicht vom gelösten Stoff. Streusalz nutzt diesen Effekt zur Eisbekämpfung."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum Van't Hoff Faktor (i) sind korrekt?",
+      "options": [
+        "Für Glucose beträgt i = 1, da das Molekül nicht dissoziiert",
+        "Der experimentelle i-Wert für MgSO₄ ist kleiner als der theoretische Wert von 2",
+        "Ionenpaarbildung in konzentrierten Lösungen erhöht den Van't Hoff Faktor",
+        "Der Van't Hoff Faktor gibt an, in wie viele Teilchen ein Stoff in Lösung zerfällt"
+      ],
+      "correctAnswers": [
+        "Für Glucose beträgt i = 1, da das Molekül nicht dissoziiert",
+        "Der experimentelle i-Wert für MgSO₄ ist kleiner als der theoretische Wert von 2",
+        "Der Van't Hoff Faktor gibt an, in wie viele Teilchen ein Stoff in Lösung zerfällt"
+      ],
+      "explanation": "Nicht-Elektrolyte wie Glucose haben i=1. Bei Elektrolyten wie MgSO₄ (theoretisch i=2) ist der experimentelle Wert oft kleiner, da sich Ionenpaare bilden. Ionenpaarbildung reduziert die effektive Teilchenzahl und damit den i-Wert (nicht erhöht!)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Osmose und ihrer biologischen Bedeutung sind korrekt?",
+      "options": [
+        "Bei der Osmose wandert Wasser von niedriger zu höherer gelöster Stoffkonzentration",
+        "Rote Blutkörperchen in reinem Wasser platzen durch osmotischen Wassereinstrom",
+        "Eine isotonische Lösung hat dieselbe Konzentration wie das Zellinnere",
+        "In einer hypertonischen Lösung schwellen Zellen an und können platzen"
+      ],
+      "correctAnswers": [
+        "Bei der Osmose wandert Wasser von niedriger zu höherer gelöster Stoffkonzentration",
+        "Rote Blutkörperchen in reinem Wasser platzen durch osmotischen Wassereinstrom",
+        "Eine isotonische Lösung hat dieselbe Konzentration wie das Zellinnere"
+      ],
+      "explanation": "Osmose treibt Wasser durch semipermeable Membranen zur höher konzentrierten Seite. Reines Wasser ist hypotonisch – Wasser strömt in die Zelle, sie platzt (Hämolyse). In hypertonischer Lösung strömt Wasser aus der Zelle – sie schrumpft (nicht anschwellen)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Bestimmung der Molmasse durch Osmometrie sind korrekt?",
+      "options": [
+        "Der osmotische Druck ist proportional zur molaren Konzentration des gelösten Stoffes",
+        "Osmometrie eignet sich besonders gut für die Molmassenbestimmung großer Moleküle wie Proteine",
+        "Die Formel für den osmotischen Druck lautet Π = c·R·T, ähnlich dem idealen Gasgesetz",
+        "Die Gefrierpunktsmethode ist für Proteine genauer als die Osmometrie"
+      ],
+      "correctAnswers": [
+        "Der osmotische Druck ist proportional zur molaren Konzentration des gelösten Stoffes",
+        "Osmometrie eignet sich besonders gut für die Molmassenbestimmung großer Moleküle wie Proteine",
+        "Die Formel für den osmotischen Druck lautet Π = c·R·T, ähnlich dem idealen Gasgesetz"
+      ],
+      "explanation": "Π = cRT zeigt die Proportionalität zur Konzentration. Da der osmotische Druck selbst bei sehr verdünnten Lösungen messbar ist, eignet sich die Methode für große Moleküle. Bei Proteinen würde die geringe Molalität nur minimale Gefrierpunktserniedrigungen bewirken, daher ist Osmometrie vorzuziehen."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Wie verändert ein gelöster Stoff das Phasendiagramm von Wasser?",
+      "options": [
+        "Die Dampfdruckkurve verschiebt sich nach unten, da der Dampfdruck sinkt",
+        "Der Gefrierpunkt sinkt, was einer Verschiebung der Schmelzkurve nach links entspricht",
+        "Der Siedepunkt steigt, da höhere Temperaturen zum Erreichen des Umgebungsdrucks nötig sind",
+        "Der Tripelpunkt bleibt unverändert, da er nur vom reinen Stoff abhängt"
+      ],
+      "correctAnswers": [
+        "Die Dampfdruckkurve verschiebt sich nach unten, da der Dampfdruck sinkt",
+        "Der Gefrierpunkt sinkt, was einer Verschiebung der Schmelzkurve nach links entspricht",
+        "Der Siedepunkt steigt, da höhere Temperaturen zum Erreichen des Umgebungsdrucks nötig sind"
+      ],
+      "explanation": "Durch die Dampfdruckerniedrigung liegt die Kurve tiefer. Bei 1 atm muss man daher höher erhitzen (Siedepunktserhöhung) und tiefer kühlen (Gefrierpunktserniedrigung). Der Tripelpunkt einer Lösung ist nicht identisch mit dem des reinen Lösungsmittels, da alle drei Phasen betroffen sind."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Faktoren beeinflussen die Löslichkeit von Sauerstoff in Wasser?",
+      "options": [
+        "Höherer Partialdruck von O₂ erhöht die Löslichkeit nach dem Henry-Gesetz",
+        "Höhere Wassertemperatur erhöht die Löslichkeit von Gasen",
+        "Gelöste Salze im Wasser verringern die Gaslöslichkeit (Aussalzeffekt)",
+        "Die Gaslöslichkeit ist unabhängig von der chemischen Natur des Gases"
+      ],
+      "correctAnswers": [
+        "Höherer Partialdruck von O₂ erhöht die Löslichkeit nach dem Henry-Gesetz",
+        "Gelöste Salze im Wasser verringern die Gaslöslichkeit (Aussalzeffekt)"
+      ],
+      "explanation": "Nach dem Henry-Gesetz steigt die Löslichkeit mit dem Druck. Die Gaslöslichkeit sinkt bei höherer Temperatur (nicht steigt). Der Aussalzeffekt beschreibt, wie gelöste Ionen die Gaslöslichkeit reduzieren. Die Henry-Konstante ist spezifisch für jedes Gas – die Natur des Gases ist also relevant."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Beim Vergleich von Frostschutzmitteln (Ethylenglycol, Glycerin, NaCl) bei gleicher Masse pro kg Wasser – welche Aussagen sind korrekt?",
+      "options": [
+        "NaCl ist effektiver als Glycerin, da es in Ionen dissoziiert und mehr Teilchen liefert",
+        "Ethylenglycol hat eine kleinere Molmasse als Glycerin und liefert daher mehr Teilchen pro Gramm",
+        "Alle drei Stoffe wirken über die Gefrierpunktserniedrigung als kolligative Eigenschaft",
+        "Die Wirksamkeit hängt nur von der Masse des gelösten Stoffes ab, nicht von der Teilchenzahl"
+      ],
+      "correctAnswers": [
+        "NaCl ist effektiver als Glycerin, da es in Ionen dissoziiert und mehr Teilchen liefert",
+        "Ethylenglycol hat eine kleinere Molmasse als Glycerin und liefert daher mehr Teilchen pro Gramm",
+        "Alle drei Stoffe wirken über die Gefrierpunktserniedrigung als kolligative Eigenschaft"
+      ],
+      "explanation": "Die Gefrierpunktserniedrigung ist eine kolligative Eigenschaft, die von der Teilchenzahl abhängt. NaCl zerfällt in 2 Ionen (i=2), ist also effektiver. Bei gleicher Masse liefert die Substanz mit kleinerer Molmasse mehr Mol und damit mehr Teilchen. Kolligative Eigenschaften hängen von der Teilchenzahl ab, nicht von der Masse."
+    }
+  ],
+  "generatedAt": "2026-01-25T11:48:08.786Z"
 }
