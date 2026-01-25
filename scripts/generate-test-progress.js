@@ -36,6 +36,17 @@ const BADGES = {
 };
 
 /**
+ * Helper: Extract lecture IDs from module.lectures array
+ * Supports both new format (objects with id) and legacy format (strings)
+ * @param {Array} lectures - Array of lecture objects or strings
+ * @returns {Array} Array of lecture ID strings
+ */
+function getLectureIds(lectures) {
+  if (!lectures) return [];
+  return lectures.map((l) => (typeof l === 'object' ? l.id : l));
+}
+
+/**
  * Load studies from studies.json
  */
 function loadStudies() {
@@ -401,7 +412,7 @@ function generateBeginnerProgress(progress, modules) {
   const modulesToProcess = modules.slice(0, Math.min(2, modules.length));
 
   modulesToProcess.forEach((module, mIdx) => {
-    const lectures = module.lectures || [];
+    const lectures = getLectureIds(module.lectures);
     const lecturesToProcess = lectures.slice(0, Math.min(2, lectures.length));
 
     if (lecturesToProcess.length === 0) return;
@@ -436,7 +447,7 @@ function generateIntermediateProgress(progress, modules) {
   const modulesToProcess = modules.slice(0, halfModules);
 
   modulesToProcess.forEach((module) => {
-    const lectures = module.lectures || [];
+    const lectures = getLectureIds(module.lectures);
     if (lectures.length === 0) return;
 
     progress.modules[module.id] = {
@@ -478,7 +489,7 @@ function generateIntermediateProgress(progress, modules) {
 
 function generateAdvancedProgress(progress, modules) {
   modules.forEach((module, mIdx) => {
-    const lectures = module.lectures || [];
+    const lectures = getLectureIds(module.lectures);
     if (lectures.length === 0) return;
 
     // Skip last 1-2 modules to show "not complete"
@@ -519,7 +530,7 @@ function generateAdvancedProgress(progress, modules) {
 
 function generateCompleteProgress(progress, modules) {
   modules.forEach((module) => {
-    const lectures = module.lectures || [];
+    const lectures = getLectureIds(module.lectures);
     if (lectures.length === 0) return;
 
     progress.modules[module.id] = {
@@ -548,7 +559,7 @@ function generateCompleteProgress(progress, modules) {
 
 function generateMixedProgress(progress, modules) {
   modules.forEach((module, mIdx) => {
-    const lectures = module.lectures || [];
+    const lectures = getLectureIds(module.lectures);
     if (lectures.length === 0) return;
 
     // Earlier modules more likely to be complete

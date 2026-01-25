@@ -21,12 +21,10 @@ function renderProgressDashboard(modules, content) {
   document.getElementById('total-progress').textContent = `${Math.round(
     stats.overallProgress
   )}%`;
-  document.getElementById(
-    'modules-started'
-  ).textContent = `${stats.modulesStarted} / ${stats.totalModules}`;
-  document.getElementById(
-    'quizzes-completed'
-  ).textContent = `${stats.quizzesCompleted} / ${stats.totalQuizzes}`;
+  document.getElementById('modules-started').textContent =
+    `${stats.modulesStarted} / ${stats.totalModules}`;
+  document.getElementById('quizzes-completed').textContent =
+    `${stats.quizzesCompleted} / ${stats.totalQuizzes}`;
   document.getElementById('average-score').textContent = `${Math.round(
     stats.averageScore
   )}%`;
@@ -57,7 +55,11 @@ function calculateOverallStats(modules, content, progress) {
     const moduleProgress = progress.modules?.[module.id];
 
     // Use lectures from module metadata (works with lazy loading)
-    const lectureIds = module.lectures || [];
+    // Support both new format (objects with id) and legacy format (strings)
+    const lecturesRaw = module.lectures || [];
+    const lectureIds = lecturesRaw.map((l) =>
+      typeof l === 'object' ? l.id : l
+    );
 
     // Each lecture is assumed to have 1 quiz
     totalQuizzes += lectureIds.length;
@@ -159,7 +161,11 @@ function renderModuleProgressList(modules, content, progress) {
       const moduleProgress = progress.modules?.[module.id];
 
       // Use lectures from module metadata (works with lazy loading)
-      const lectureIds = module.lectures || [];
+      // Support both new format (objects with id) and legacy format (strings)
+      const lecturesRaw = module.lectures || [];
+      const lectureIds = lecturesRaw.map((l) =>
+        typeof l === 'object' ? l.id : l
+      );
       const hasContent = lectureIds.length > 0;
 
       // Calculate module stats from progress data
@@ -226,10 +232,10 @@ function renderModuleProgressList(modules, content, progress) {
               <div class="text-xs md:text-sm text-gray-600 dark:text-gray-400">${
                 module.ects
               } ECTS • ${
-        hasContent
-          ? `${completedLectures}/${totalLectures} Tests`
-          : 'Inhalt folgt'
-      }</div>
+                hasContent
+                  ? `${completedLectures}/${totalLectures} Tests`
+                  : 'Inhalt folgt'
+              }</div>
             </div>
           </div>
           <div class="text-right flex-shrink-0 ml-2">
@@ -263,18 +269,18 @@ function renderModuleProgressList(modules, content, progress) {
           </div>
         `
             : completedLectures === 0
-            ? `
+              ? `
           <div class="text-xs md:text-sm text-gray-500 dark:text-gray-400 italic">
             Noch nicht begonnen
           </div>
         `
-            : completedLectures === totalLectures
-            ? `
+              : completedLectures === totalLectures
+                ? `
           <div class="text-xs md:text-sm text-green-600 dark:text-green-400 font-bold flex items-center gap-1">
             ${Icons.get('check', 'w-4 h-4')} Modul abgeschlossen
           </div>
         `
-            : `
+                : `
           <div class="text-xs md:text-sm text-blue-600 dark:text-blue-400">
             In Bearbeitung
           </div>

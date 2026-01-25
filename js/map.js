@@ -59,7 +59,10 @@ function generateModuleMapGraph(modules, content) {
     const moduleLectures = module.lectures || [];
     const moduleContent = content[module.id];
 
-    moduleLectures.forEach((lectureId) => {
+    moduleLectures.forEach((lectureEntry) => {
+      // Support both new format (object with id) and legacy format (string)
+      const lectureId =
+        typeof lectureEntry === 'object' ? lectureEntry.id : lectureEntry;
       const lectureNodeId = sanitizeMermaidId(`${module.id}-${lectureId}`);
 
       // Try to get lecture topic from loaded content, fallback to formatted ID

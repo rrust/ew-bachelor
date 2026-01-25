@@ -156,12 +156,20 @@ function getLecturesForModule(moduleDir) {
 
     const lectureFile = path.join(moduleDir, entry.name, 'lecture.md');
     if (fs.existsSync(lectureFile)) {
-      lectures.push(entry.name);
+      // Read lecture.md to extract estimatedTime
+      const content = fs.readFileSync(lectureFile, 'utf-8');
+      const frontmatter = parseFrontmatter(content);
+      const estimatedTime = frontmatter?.estimatedTime || 0;
+
+      lectures.push({
+        id: entry.name,
+        estimatedTime: estimatedTime
+      });
     }
   }
 
   // Sort by folder name (number prefix ensures correct order)
-  return lectures.sort();
+  return lectures.sort((a, b) => a.id.localeCompare(b.id));
 }
 
 /**

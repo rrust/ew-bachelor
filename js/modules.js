@@ -21,7 +21,8 @@ function getModuleEstimatedTime(moduleId, APP_CONTENT) {
 function getModuleDetailedTime(moduleId, APP_CONTENT) {
   const module = APP_CONTENT[moduleId];
   const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
-  const lectureCount = moduleMeta?.lectures?.length || 0;
+  const lecturesData = moduleMeta?.lectures || [];
+  const lectureCount = lecturesData.length;
 
   // Estimate exam time: 5 min per lecture (2 questions per lecture × ~2.5 min each)
   const examTime = lectureCount * 5;
@@ -46,7 +47,20 @@ function getModuleDetailedTime(moduleId, APP_CONTENT) {
     }
   }
 
-  // In lazy-loading mode, estimate based on lecture count
+  // Try to use estimatedTime from modules.json (new format with objects)
+  if (lecturesData.length > 0 && typeof lecturesData[0] === 'object') {
+    let lectureTime = 0;
+    for (const lecture of lecturesData) {
+      lectureTime += lecture.estimatedTime || 0;
+    }
+    if (lectureTime > 0) {
+      // Estimate quiz time: ~20% of lecture time
+      const quizTime = Math.round(lectureTime * 0.2);
+      return { lectureTime, quizTime, lectureCount, examTime };
+    }
+  }
+
+  // Fallback: estimate based on lecture count (legacy format with string IDs)
   if (lectureCount > 0) {
     // Estimate: 45 min lecture + 15 min quiz per lecture
     return {
@@ -108,7 +122,11 @@ function getModuleStats(moduleId, APP_CONTENT, getUserProgress) {
 
   // Get module metadata from MODULES array for lecture count
   const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
-  const lectureIds = moduleMeta?.lectures || [];
+  // Support both new format (objects with id) and legacy format (strings)
+  const lecturesRaw = moduleMeta?.lectures || [];
+  const lectureIds = lecturesRaw.map((l) =>
+    typeof l === 'object' ? l.id : l
+  );
 
   // In lazy-loading mode, we may not have lecture data loaded
   // So we count quizzes from user progress instead
@@ -190,7 +208,11 @@ async function autoSyncAllModules(MODULES, container) {
 
   for (const module of unlockedModules) {
     const moduleId = module.id;
-    const lectureIds = module.lectures || [];
+    // Support both new format (objects with id) and legacy format (strings)
+    const lecturesRaw = module.lectures || [];
+    const lectureIds = lecturesRaw.map((l) =>
+      typeof l === 'object' ? l.id : l
+    );
 
     if (lectureIds.length === 0) continue;
 
@@ -635,7 +657,11 @@ async function displayLecturesForModule(
   const moduleData = MODULES.find((m) => m.id === moduleId);
 
   // Get lecture IDs from module metadata (works in lazy mode)
-  const lectureIds = moduleData?.lectures || [];
+  // Support both new format (objects with id) and legacy format (strings)
+  const lecturesRaw = moduleData?.lectures || [];
+  const lectureIds = lecturesRaw.map((l) =>
+    typeof l === 'object' ? l.id : l
+  );
 
   if (
     lectureIds.length === 0 &&

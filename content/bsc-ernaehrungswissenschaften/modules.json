@@ -7,9 +7,18 @@
     "order": 1,
     "description": "Einführung in die Grundlagen der Ernährungswissenschaft",
     "lectures": [
-      "01-grundlagen-zellbiologie",
-      "02-makronaehrstoffe-detail",
-      "03-fette-oele"
+      {
+        "id": "01-grundlagen-zellbiologie",
+        "estimatedTime": 25
+      },
+      {
+        "id": "02-makronaehrstoffe-detail",
+        "estimatedTime": 20
+      },
+      {
+        "id": "03-fette-oele",
+        "estimatedTime": 22
+      }
     ],
     "achievements": [
       "cell-biology-cheatsheet",
@@ -24,20 +33,62 @@
     "order": 2,
     "description": "Chemische Grundlagen für Ernährungswissenschaften",
     "lectures": [
-      "01-materie-messen",
-      "02-atome-formeln",
-      "03-chemische-reaktionen",
-      "04-gleichungen-stoechiometrie",
-      "05-thermodynamik-enthalpie-kalorimetrie",
-      "06-elektronenstruktur-atome",
-      "07-eigenschaften-atome-ionenbindung",
-      "08-kovalente-bindung",
-      "09-molekuelstruktur-molekuelorbitale",
-      "11-fluessigkeiten-feststoffe",
-      "13-loesungen",
-      "16-chemisches-gleichgewicht",
-      "17-saeuren-basen",
-      "18-saeuren-basen-gleichgewicht"
+      {
+        "id": "01-materie-messen",
+        "estimatedTime": 60
+      },
+      {
+        "id": "02-atome-formeln",
+        "estimatedTime": 60
+      },
+      {
+        "id": "03-chemische-reaktionen",
+        "estimatedTime": 75
+      },
+      {
+        "id": "04-gleichungen-stoechiometrie",
+        "estimatedTime": 90
+      },
+      {
+        "id": "05-thermodynamik-enthalpie-kalorimetrie",
+        "estimatedTime": 120
+      },
+      {
+        "id": "06-elektronenstruktur-atome",
+        "estimatedTime": 120
+      },
+      {
+        "id": "07-eigenschaften-atome-ionenbindung",
+        "estimatedTime": 100
+      },
+      {
+        "id": "08-kovalente-bindung",
+        "estimatedTime": 110
+      },
+      {
+        "id": "09-molekuelstruktur-molekuelorbitale",
+        "estimatedTime": 120
+      },
+      {
+        "id": "11-fluessigkeiten-feststoffe",
+        "estimatedTime": 60
+      },
+      {
+        "id": "13-loesungen",
+        "estimatedTime": 120
+      },
+      {
+        "id": "16-chemisches-gleichgewicht",
+        "estimatedTime": 90
+      },
+      {
+        "id": "17-saeuren-basen",
+        "estimatedTime": 90
+      },
+      {
+        "id": "18-saeuren-basen-gleichgewicht",
+        "estimatedTime": 90
+      }
     ],
     "achievements": [
       "materie-messen-cheatsheet",
