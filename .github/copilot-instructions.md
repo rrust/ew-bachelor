@@ -44,7 +44,7 @@ Detaillierte Anleitungen in `.github/copilot/`:
 | Datei                                                        | Thema                        |
 | ------------------------------------------------------------ | ---------------------------- |
 | [content-plan-creation.md](copilot/content-plan-creation.md) | CONTENT_PLAN.md erstellen    |
-| [content-generation.md](copilot/content-generation.md)       | **10-Schritte-Workflow**     |
+| [content-generation.md](copilot/content-generation.md)       | **11-Schritte-Workflow**     |
 | [content-verification.md](copilot/content-verification.md)   | **Vollständigkeits-Prüfung** |
 | [content-types.md](copilot/content-types.md)                 | YAML-Referenz aller Types    |
 | [validation.md](copilot/validation.md)                       | Validierungs-Befehle         |

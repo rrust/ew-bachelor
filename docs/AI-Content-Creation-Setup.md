@@ -114,7 +114,7 @@ Alle anderen Schritte laufen **automatisch** durch!
 
 **Speicherort:** `CONTENT_PLAN.md` im Material-Ordner
 
-### Phase 3: Automatisierte Content-Generierung (10 Schritte)
+### Phase 3: Automatisierte Content-Generierung (11 Schritte)
 
 **Tool:** GitHub Copilot (Agent Mode) + Claude Opus 4
 
@@ -122,17 +122,17 @@ Der Copilot-Agent führt diese Schritte automatisch aus:
 
 | Schritt | Beschreibung                    | Automatisch?      |
 | ------- | ------------------------------- | ----------------- |
-| 0       | Branch erstellen                | ✅                 |
 | 1       | Zielordner & CONTENT_PLAN lesen | ✅                 |
 | 2       | lecture.md erstellen            | ✅                 |
 | 3       | lecture-items/ erstellen        | ✅ (inkl. Videos)  |
 | 4       | questions/ erstellen            | ✅                 |
 | 5       | Videos verifizieren             | 🛑 Stop wenn nötig |
 | 6       | Achievement erstellen           | ✅                 |
-| 7       | Build & Validierung             | ✅                 |
+| 7       | Build, Validierung & Testdaten  | ✅                 |
 | 8       | Audio-Generierung               | ✅                 |
-| 9       | Git Commit & PR                 | ✅                 |
-| 10      | Merge nach Approval             | 🛑 Stop            |
+| 9       | CONTENT_PLAN Status-Update      | ✅                 |
+| 10      | Branch, Commit & PR             | ✅                 |
+| 11      | Merge nach Approval             | 🛑 Stop            |
 
 **Detaillierte Dokumentation:** Siehe [.github/copilot/content-generation.md](../.github/copilot/content-generation.md)
 
