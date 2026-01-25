@@ -33,11 +33,13 @@ Alle anderen Schritte laufen automatisch durch!
 flowchart TD
     A[Start: CONTENT_PLAN vorhanden] --> B[Schritte 1-4: Content generieren]
     B --> C{Schritt 5: Videos OK?}
-    C -->|Ja| D[Schritte 6-8: Achievement, Build, Audio]
+    C -->|Ja| D[Schritt 6: Achievement]
     C -->|Nein| E[🛑 STOP: Gemini-Prompt]
     E --> E2[User liefert Video-URLs]
     E2 --> C
-    D --> F[Schritt 9: CONTENT_PLAN Status ✅]
+    D --> D2[Schritt 7: Build & Testdaten]
+    D2 --> D3[Schritt 8: Audio]
+    D3 --> F[Schritt 9: CONTENT_PLAN Status ✅]
     
     subgraph Git["Git Workflow"]
         G[Schritt 10: Branch erstellen]
@@ -504,19 +506,19 @@ MAJOR  1.0.0 → 2.0.0   Komplett neu generiert
 
 ## Quick Reference: Alle Schritte
 
-| Schritt | Beschreibung        | Befehl/Aktion                       |
-| ------- | ------------------- | ----------------------------------- |
-| 1       | Zielordner & Plan   | `list_dir`, CONTENT_PLAN.md lesen   |
-| 2       | lecture.md          | Metadaten erstellen                 |
-| 3       | lecture-items/      | Alle Items gemäß Plan               |
-| 4       | questions/          | 12 MC-Multiple Fragen               |
-| 5       | Videos verifizieren | `npm run validate:videos`           |
-| 6       | Achievement         | Cheat-Sheet erstellen               |
-| 7       | Build & Validate    | `npm run build` + Testdaten         |
-| 8       | Audio               | Scripts + `npm run generate:audio`  |
-| 9       | CONTENT_PLAN Status | Status-Update im studies-material/  |
-| 10      | Branch, Commit & PR | `gh pr create --assignee @me`       |
-| 11      | Merge               | `gh pr merge` (nach User-OK!)       |
+| Schritt | Beschreibung        | Befehl/Aktion                      |
+| ------- | ------------------- | ---------------------------------- |
+| 1       | Zielordner & Plan   | `list_dir`, CONTENT_PLAN.md lesen  |
+| 2       | lecture.md          | Metadaten erstellen                |
+| 3       | lecture-items/      | Alle Items gemäß Plan              |
+| 4       | questions/          | 12 MC-Multiple Fragen              |
+| 5       | Videos verifizieren | `npm run validate:videos`          |
+| 6       | Achievement         | Cheat-Sheet erstellen              |
+| 7       | Build & Validate    | `npm run build` + Testdaten        |
+| 8       | Audio               | Scripts + `npm run generate:audio` |
+| 9       | CONTENT_PLAN Status | Status-Update im studies-material/ |
+| 10      | Branch, Commit & PR | `gh pr create --assignee @me`      |
+| 11      | Merge               | `gh pr merge` (nach User-OK!)      |
 
 ## Siehe auch
 

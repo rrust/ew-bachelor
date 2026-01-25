@@ -63,10 +63,12 @@ flowchart TD
     subgraph Phase3["Phase 3: Automatisierte Generierung"]
         C1[Content + Videos generieren]
         C1 --> C2{Videos OK?}
-        C2 -->|Ja| C3[Achievement + Build + Audio]
+        C2 -->|Ja| C3[Achievement]
         C2 -->|Nein| C4[🛑 Gemini: Ersatz-Videos]
         C4 --> C2
-        C3 --> C5[CONTENT_PLAN Status ✅]
+        C3 --> C3b[Build & Testdaten]
+        C3b --> C3c[Audio]
+        C3c --> C5[CONTENT_PLAN Status ✅]
     end
     
     subgraph Git["Git Workflow"]
