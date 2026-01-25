@@ -1,0 +1,35 @@
+Unser Blut hat einen pH-Wert von etwa 7,4. Schon eine kleine Abweichung kann lebensbedrohlich sein. Wie schafft es der Körper, diesen Wert so konstant zu halten?
+
+Die Antwort: Pufferlösungen.
+
+...
+
+Ein Puffer besteht immer aus zwei Komponenten. Erstens, einer schwachen Säure. Zweitens, ihrer konjugierten Base.
+
+Zusammen bilden sie ein Team, das pH-Änderungen abfängt.
+
+...
+
+Wie funktioniert das? Nehmen wir den Acetat-Puffer als Beispiel.
+
+Wenn jemand eine starke Base zugibt, also Hydroxid-Ionen, dann reagiert die Essigsäure mit diesen Ionen. Sie fängt sie ab und verwandelt sie in die schwach basische Acetat-Form.
+
+Wird stattdessen eine starke Säure zugegeben, übernimmt das Acetat. Es neutralisiert die aggressiven Protonen und verwandelt sie in die schwache Essigsäure.
+
+...
+
+Um den pH-Wert eines Puffers zu berechnen, verwenden wir die Henderson-Hasselbalch-Gleichung.
+
+Der pH ergibt sich aus dem pKs-Wert der Säure plus dem Logarithmus des Verhältnisses von Base zu Säure.
+
+...
+
+Zwei wichtige Erkenntnisse daraus:
+
+Erstens, der pH wird hauptsächlich durch den pKs-Wert bestimmt.
+
+Zweitens, wenn Base und Säure in gleicher Konzentration vorliegen, ist der pH gleich dem pKs. Denn der Logarithmus von 1 ist Null.
+
+...
+
+Merke dir: Ein Puffer funktioniert, solange beide Reservoire, also Säure und Base, nicht erschöpft sind.

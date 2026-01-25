@@ -1,0 +1,45 @@
+Die Titration einer schwachen Säure sieht völlig anders aus als bei einer starken. Und dieser Unterschied verrät viel über die Chemie dahinter.
+
+...
+
+Nehmen wir Essigsäure, die mit Natronlauge titriert wird.
+
+Am Start liegt der pH bei etwa 2,9. Das ist deutlich höher als bei Salzsäure. Logisch, denn Essigsäure dissoziiert nur teilweise.
+
+...
+
+Während der Zugabe passiert etwas Besonderes. Es entsteht ein Puffer!
+
+Die Natronlauge neutralisiert einen Teil der Essigsäure zu Acetat. Jetzt hast du schwache Säure und konjugierte Base nebeneinander.
+
+Die Kurve verläuft hier flach. Der pH steigt nur langsam. Das ist die Puffer-Region.
+
+...
+
+Ein wichtiger Punkt liegt genau in der Mitte. Der Halbäquivalenzpunkt.
+
+Hier wurde exakt die Hälfte der Säure neutralisiert. Säure und Base liegen in gleicher Konzentration vor.
+
+Und was bedeutet das? Der pH entspricht genau dem pKs-Wert der Säure!
+
+Das ist der einfachste Weg, den pKs einer unbekannten Säure zu bestimmen.
+
+...
+
+Am Äquivalenzpunkt ist alle Essigsäure zu Acetat geworden.
+
+Und jetzt kommt die Überraschung: Der pH liegt nicht bei 7, sondern darüber! Bei schwacher Säure und starker Base ist der Äquivalenzpunkt basisch.
+
+Warum? Das Acetat ist eine Base. Es reagiert mit Wasser und bildet Hydroxid-Ionen.
+
+...
+
+Merke dir diese Faustregel:
+
+Starke Säure plus starke Base ergibt pH 7 am Äquivalenzpunkt.
+
+Schwache Säure plus starke Base ergibt einen pH über 7.
+
+Starke Säure plus schwache Base ergibt einen pH unter 7.
+
+Das entstehende Salz bestimmt, ob die Lösung neutral, sauer oder basisch ist.

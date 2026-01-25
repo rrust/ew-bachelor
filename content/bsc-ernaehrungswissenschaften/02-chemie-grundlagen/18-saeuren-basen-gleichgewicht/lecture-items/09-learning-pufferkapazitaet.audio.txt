@@ -1,0 +1,41 @@
+Ein Puffer ist wie ein Stoßdämpfer für den pH-Wert. Aber wie viel kann er abfedern, bevor er versagt?
+
+Das beschreibt die Pufferkapazität.
+
+...
+
+Zuerst zur Berechnung. Wenn du eine starke Säure oder Base zu einem Puffer gibst, gehst du in zwei Schritten vor.
+
+Schritt eins: Stöchiometrie. Die starke Säure oder Base reagiert vollständig mit dem entsprechenden Pufferpartner. Das ist eine irreversible Reaktion.
+
+Schritt zwei: Gleichgewicht. Mit den neuen Stoffmengen wendest du die Henderson-Hasselbalch-Gleichung an.
+
+...
+
+Ein praktisches Beispiel. Du hast einen Liter Puffer mit 0,1 Mol Ammoniak und 0,2 Mol Ammonium.
+
+Jetzt gibst du 0,02 Mol Natriumhydroxid zu.
+
+Die Base reagiert mit dem Ammonium. Das Ammonium sinkt von 0,2 auf 0,18 Mol. Das Ammoniak steigt von 0,1 auf 0,12 Mol.
+
+Der neue pH-Wert? Mit Henderson-Hasselbalch kommst du auf 9,08.
+
+Die Änderung beträgt nur 0,13 Einheiten. Das ist die Kraft eines Puffers!
+
+...
+
+Zum Vergleich: Gibst du dieselbe Menge Säure zu reinem Wasser, fällt der pH von 7 auf 3. Eine Änderung um 4 Einheiten!
+
+...
+
+Die Pufferkapazität hängt von zwei Faktoren ab.
+
+Erstens, die Gesamtkonzentration. Je mehr Säure und Base vorhanden sind, desto mehr kann abgefangen werden.
+
+Zweitens, das Verhältnis. Die beste Kapazität hast du, wenn Säure und Base etwa gleich konzentriert sind.
+
+...
+
+Eine wichtige Faustregel: Ein Puffer funktioniert effektiv im Bereich pKs plus-minus eins.
+
+Und noch etwas: Verdünnst du einen Puffer, bleibt der pH-Wert gleich. Aber die Kapazität sinkt, weil weniger Reserven vorhanden sind.
