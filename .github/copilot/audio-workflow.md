@@ -4,14 +4,40 @@ Kompletter Workflow: Audio-Dateien für Lerninhalte erstellen.
 
 ## Quick Reference
 
-**Befehl:** "Erstelle Audio-Dateien für Modul X, Kapitel Y"
+**Befehl:** "Erstelle Audio-Dateien für Vorlesung X" oder "Audio-Content für Vorlesung X generieren"
 
-**Was passiert:**
+**Was Copilot automatisch macht:**
 
 1. Learning-Content Items im Kapitel identifizieren
 2. Für jedes Item ein Audio-Script erstellen (`.audio.txt`)
-3. MP3s mit Edge TTS generieren
-4. Build ausführen → Audio-Player erscheint in der App
+3. **Batch-Script ausführen:** `npm run generate:audio -- --lecture XX --force`
+4. **Build ausführen:** `npm run build`
+5. Fertig – Audio-Player erscheint in der App
+
+⚠️ **WICHTIG:** Bei Audio-Anfragen IMMER den kompletten Workflow durchführen!
+Nicht nur Scripts erstellen, sondern auch MP3-Generierung und Build anstoßen.
+
+## Batch-Script Verwendung
+
+```bash
+# Nur fehlende Audio-Dateien generieren
+npm run generate:audio
+
+# Alle Audio-Dateien neu generieren (--force)
+npm run generate:audio -- --force
+
+# Nur bestimmte Vorlesung
+npm run generate:audio -- --lecture 18
+
+# Nur bestimmtes Modul
+npm run generate:audio -- --module 02
+
+# Kombiniert mit Force
+npm run generate:audio -- --lecture 18 --force
+
+# Dry-Run (zeigt was generiert würde)
+npm run generate:audio -- --dry-run
+```
 
 ## Voraussetzungen
 
@@ -69,13 +95,13 @@ Für jedes Learning-Content Item:
 
 ⚠️ **KRITISCH:** Plain Text, kein Markdown!
 
-| ❌ NICHT verwenden | ✅ Stattdessen |
-|--------------------|----------------|
-| `# Überschrift`    | Direkt Text    |
-| `**fett**`         | Normaler Text  |
-| `- Liste`          | "Erstens, ..." |
-| `$H_2O$`           | "H zwei O"     |
-| `[Link](url)`      | Weglassen      |
+| ❌ NICHT verwenden | ✅ Stattdessen  |
+| ----------------- | -------------- |
+| `# Überschrift`   | Direkt Text    |
+| `**fett**`        | Normaler Text  |
+| `- Liste`         | "Erstens, ..." |
+| `$H_2O$`          | "H zwei O"     |
+| `[Link](url)`     | Weglassen      |
 
 #### Stil-Regeln
 
@@ -87,58 +113,49 @@ Für jedes Learning-Content Item:
 
 #### Einstiegs-Varianten (NICHT "Heute lernen wir...")
 
-| Typ | Beispiel |
-|-----|----------|
-| Frage | "Warum explodiert Natrium in Wasser?" |
-| Fakt | "Ein Atom ist zu 99,9% leerer Raum." |
-| Kontrast | "Phosphor brennt spontan. Stickstoff ist träge." |
+| Typ          | Beispiel                                            |
+| ------------ | --------------------------------------------------- |
+| Frage        | "Warum explodiert Natrium in Wasser?"               |
+| Fakt         | "Ein Atom ist zu 99,9% leerer Raum."                |
+| Kontrast     | "Phosphor brennt spontan. Stickstoff ist träge."    |
 | Alltagsbezug | "Jeder Kaffee enthält Milliarden Koffein-Moleküle." |
 
 #### Pausen (kein SSML!)
 
-| Technik | Wirkung | Beispiel |
-|---------|---------|----------|
-| `...` | Pause (~1-2s) | "Denk darüber nach..." |
+| Technik   | Wirkung       | Beispiel                 |
+| --------- | ------------- | ------------------------ |
+| `...`     | Pause (~1-2s) | "Denk darüber nach..."   |
 | `... ...` | Längere Pause | "Wichtig... ... Weiter." |
-| Leerzeile | Absatz-Pause | Text trennen |
+| Leerzeile | Absatz-Pause  | Text trennen             |
 
 #### Formel-Aussprache
 
-| Formel | Aussprache |
-|--------|------------|
-| $H_2O$ | "H zwei O" |
-| $CO_2$ | "C O zwei" |
+| Formel     | Aussprache                 |
+| ---------- | -------------------------- |
+| $H_2O$     | "H zwei O"                 |
+| $CO_2$     | "C O zwei"                 |
 | $E = mc^2$ | "E gleich m mal c Quadrat" |
-| g/mol | "Gramm pro Mol" |
+| g/mol      | "Gramm pro Mol"            |
 
-### Schritt 5: MP3s generieren
+### Schritt 5: MP3s generieren (Batch-Script)
 
-```bash
-# Einzelne Datei:
-edge-tts --voice de-DE-FlorianMultilingualNeural \
-  -f 01-learning-xyz.audio.txt \
-  --write-media 01-learning-xyz.mp3
-
-# Alle im Ordner:
-cd content/.../lecture-items/
-for f in *.audio.txt; do
-  echo "Generating: ${f%.audio.txt}.mp3"
-  edge-tts --voice de-DE-FlorianMultilingualNeural \
-    -f "$f" --write-media "${f%.audio.txt}.mp3"
-done
-```
-
-### Schritt 6: Optional – Vorlesungs-Audio
-
-Für die `lecture.md` (Kapitel-Einführung):
+Nach Erstellung aller Audio-Scripts das Batch-Script ausführen:
 
 ```bash
-# Im Vorlesungs-Ordner:
-edge-tts --voice de-DE-FlorianMultilingualNeural \
-  -f lecture.audio.txt --write-media lecture.mp3
+# Für eine bestimmte Vorlesung (z.B. Vorlesung 18)
+npm run generate:audio -- --lecture 18 --force
+
+# Für ein ganzes Modul
+npm run generate:audio -- --module 02 --force
 ```
 
-### Schritt 7: Build & Test
+Das Script:
+- Findet alle `.audio.txt` Dateien
+- Generiert MP3s parallel (3 gleichzeitig)
+- Überspringt bereits aktuelle Dateien (ohne `--force`)
+- Zeigt Fortschritt und Zusammenfassung
+
+### Schritt 6: Build ausführen
 
 ```bash
 npm run build  # Registriert audioFile in Bundles
@@ -148,31 +165,26 @@ Im Browser prüfen: Audio-Player erscheint bei Learning-Content Items.
 
 ## Beispiel: Kompletter Durchlauf
 
-**Anfrage:** "Erstelle Audio-Dateien für Modul 2, Kapitel 1"
+**Anfrage:** "Bitte den Audio-Content für Vorlesung 18 generieren"
+
+**Copilot macht automatisch:**
 
 ```bash
-# 1. Ordner: content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/01-materie-messen/
+# 1. Ordner identifizieren
+content/bsc-ernaehrungswissenschaften/02-chemie-grundlagen/18-saeuren-basen-gleichgewicht/
 
-# 2. Learning-Content Items finden:
-grep -l "type: 'learning-content'" .../lecture-items/*.md
-# → 01-einfuehrung-chemie.md, 02-wissenschaftliche-methode.md, ...
-
-# 3. Für jedes Item Audio-Script erstellen:
-# → 01-einfuehrung-chemie.audio.txt
-# → 02-wissenschaftliche-methode.audio.txt
+# 2. Learning-Content Items lesen und Audio-Scripts erstellen
+# → 01-learning-common-ion.audio.txt
+# → 05-learning-puffer.audio.txt
 # → ...
 
-# 4. MP3s generieren:
-cd .../lecture-items/
-for f in *.audio.txt; do
-  edge-tts --voice de-DE-FlorianMultilingualNeural \
-    -f "$f" --write-media "${f%.audio.txt}.mp3"
-done
+# 3. MP3s mit Batch-Script generieren
+npm run generate:audio -- --lecture 18 --force
 
-# 5. Build:
+# 4. Build ausführen
 npm run build
 
-# 6. Fertig!
+# 5. Fertig!
 ```
 
 ## Dateistruktur (Ergebnis)
@@ -194,12 +206,12 @@ content/.../01-materie-messen/
 
 ## Stimmen-Auswahl
 
-| Voice | Beschreibung |
-|-------|--------------|
-| `de-DE-FlorianMultilingualNeural` | **Default** – Männlich, natürlich |
-| `de-DE-SeraphinaMultilingualNeural` | Weiblich, natürlich |
-| `de-AT-JonasNeural` | Männlich, österreichisch |
-| `de-AT-IngridNeural` | Weiblich, österreichisch |
+| Voice                               | Beschreibung                      |
+| ----------------------------------- | --------------------------------- |
+| `de-DE-FlorianMultilingualNeural`   | **Default** – Männlich, natürlich |
+| `de-DE-SeraphinaMultilingualNeural` | Weiblich, natürlich               |
+| `de-AT-JonasNeural`                 | Männlich, österreichisch          |
+| `de-AT-IngridNeural`                | Weiblich, österreichisch          |
 
 ## Checkliste
 
@@ -209,15 +221,15 @@ content/.../01-materie-messen/
 - [ ] Formeln ausgeschrieben
 - [ ] Eigenständiger, engaging Inhalt
 - [ ] Wissenschaftlich korrekt
-- [ ] MP3s generiert und neben .md platziert
+- [ ] `npm run generate:audio -- --lecture XX --force` ausgeführt
 - [ ] `npm run build` ausgeführt
 - [ ] Im Browser getestet
 
 ## Troubleshooting
 
-| Problem | Lösung |
-|---------|--------|
+| Problem                       | Lösung                                  |
+| ----------------------------- | --------------------------------------- |
 | `edge-tts: command not found` | `pip3 install edge-tts` und PATH prüfen |
-| Markdown wird vorgelesen | `.audio.txt` muss Plain Text sein! |
-| Audio-Player fehlt | `npm run build` ausführen |
-| Falsche Aussprache | Wörter trennen, Zahlen ausschreiben |
+| Markdown wird vorgelesen      | `.audio.txt` muss Plain Text sein!      |
+| Audio-Player fehlt            | `npm run build` ausführen               |
+| Falsche Aussprache            | Wörter trennen, Zahlen ausschreiben     |
