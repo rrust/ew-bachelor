@@ -1,0 +1,27 @@
+Die meisten chemischen Reaktionen finden nicht in abgeschlossenen Behältern statt, sondern in offenen Gefäßen bei konstantem Luftdruck. Für diese typische Laborsituation führen wir eine neue Größe ein: die Enthalpie.
+
+...
+
+Die wichtigste Beziehung, die du dir merken solltest: Bei konstantem Druck entspricht die übertragene Wärme direkt der Enthalpieänderung. Also q p gleich Delta H.
+
+Das kleine p zeigt an, dass der Druck konstant gehalten wird.
+
+...
+
+Der Zusammenhang zur inneren Energie lautet: Delta H gleich Delta U plus P mal Delta V.
+
+Die Enthalpie beinhaltet also die innere Energie plus die Volumenarbeit.
+
+...
+
+Wann ist der Unterschied zwischen Delta H und Delta U relevant?
+
+Wenn nur Feststoffe und Flüssigkeiten beteiligt sind, ist die Volumenänderung sehr klein. Dann gilt Delta H ungefähr gleich Delta U.
+
+Wenn Gase beteiligt sind, aber die Anzahl der Gasmoleküle vor und nach der Reaktion gleich bleibt, ist der Unterschied auch klein.
+
+Nur wenn sich die Anzahl der Gasmoleküle signifikant ändert, wird der Unterschied zwischen Enthalpie und innerer Energie relevant.
+
+...
+
+Der praktische Vorteil der Enthalpie: Bei konstantem Druck, also unter typischen Laborbedingungen, entspricht die messbare Wärmemenge direkt der Enthalpieänderung. Wir müssen die Volumenarbeit nicht extra berechnen, sie ist schon enthalten.

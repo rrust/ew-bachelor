@@ -1,0 +1,33 @@
+Übung macht den Meister! Schauen wir uns ein paar Beispiele zum Ausgleichen an.
+
+...
+
+Beispiel eins: Aluminium reagiert mit Brom.
+
+Unausgeglichen: Aluminium plus Br zwei ergibt Aluminium zwei Br sechs.
+
+Rechts haben wir zwei Aluminium und sechs Brom. Links brauchen wir also zwei Aluminium und drei Br zwei, denn drei mal zwei ist sechs.
+
+Die ausgeglichene Gleichung: zwei Al plus drei Br zwei ergibt Al zwei Br sechs.
+
+...
+
+Beispiel zwei: Die Verbrennung von Propan. Das ist besonders wichtig, weil Verbrennungen auch bei der Verstoffwechselung von Nährstoffen eine Rolle spielen!
+
+Unausgeglichen: C drei H acht plus O zwei ergibt C O zwei plus H zwei O.
+
+Gehen wir systematisch vor.
+
+Kohlenstoff: Links drei, also brauchen wir rechts drei C O zwei.
+
+Wasserstoff: Links acht, also brauchen wir rechts vier H zwei O.
+
+Sauerstoff: Rechts haben wir jetzt sechs aus dem C O zwei plus vier aus dem Wasser, macht zehn. Also brauchen wir links fünf O zwei.
+
+Die Lösung: C drei H acht plus fünf O zwei ergibt drei C O zwei plus vier H zwei O.
+
+Kontrolle: Kohlenstoff drei gleich drei. Wasserstoff acht gleich acht. Sauerstoff zehn gleich zehn. Alles stimmt!
+
+...
+
+Bei ungeraden Sauerstoffzahlen auf der Produktseite musst du oft alle Koeffizienten verdoppeln.

@@ -1,0 +1,33 @@
+Du hast 36 Gramm Wasser. Wie viele Moleküle sind das?
+
+Diese Art von Umrechnung wirst du ständig brauchen. Die gute Nachricht: Es sind nur zwei Formeln.
+
+...
+
+In der Chemie arbeiten wir mit drei zusammenhängenden Größen.
+
+Die Masse m, angegeben in Gramm. Das ist, was die Waage zeigt.
+
+Die Stoffmenge n, angegeben in Mol. Das sind die Pakete, mit denen Chemiker rechnen.
+
+Die Teilchenzahl N, also die tatsächliche Anzahl der Teilchen.
+
+...
+
+Die erste Grundformel verbindet Masse und Stoffmenge: n gleich m geteilt durch M. Die Stoffmenge ist die Masse geteilt durch die molare Masse. Umgekehrt: m gleich n mal M.
+
+Die zweite Grundformel verbindet Stoffmenge und Teilchenzahl: N gleich n mal N A. Die Teilchenzahl ist die Stoffmenge mal die Avogadro-Konstante. Umgekehrt: n gleich N geteilt durch N A.
+
+...
+
+Rechnen wir das Beispiel durch: Wie viele Wassermoleküle sind in 36 Gramm Wasser?
+
+Schritt 1: Stoffmenge berechnen. n gleich m geteilt durch M, also 36 Gramm geteilt durch 18 Gramm pro Mol. Das ergibt 2 Mol.
+
+Schritt 2: Teilchenzahl berechnen. N gleich n mal N A, also 2 mal 6,022 mal 10 hoch 23. Das ergibt 1,204 mal 10 hoch 24 Moleküle.
+
+...
+
+Merke dir diese typischen Umrechnungswege: Von Masse zur Stoffmenge teilst du durch M. Von Stoffmenge zur Teilchenzahl multiplizierst du mit N A. Von Masse direkt zur Teilchenzahl: erst durch M teilen, dann mit N A multiplizieren.
+
+Das Mol steht immer in der Mitte der Umrechnungen!

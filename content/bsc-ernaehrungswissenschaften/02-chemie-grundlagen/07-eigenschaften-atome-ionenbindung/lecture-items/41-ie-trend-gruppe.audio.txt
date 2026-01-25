@@ -1,0 +1,15 @@
+Innerhalb einer Gruppe sinkt die Ionisierungsenergie von oben nach unten.
+
+Der Grund ist der größere Atomradius. Je weiter unten in der Gruppe, desto mehr Schalen gibt es. Die Valenzelektronen sind weiter vom Kern entfernt. Und nach dem Coulomb-Gesetz nimmt die Anziehungskraft mit dem Quadrat der Entfernung ab.
+
+...
+
+Die Konsequenz: Bei größeren Atomen lassen sich die Elektronen leichter entfernen.
+
+Schauen wir die Alkalimetalle. Lithium in der zweiten Schale hat 520 Kilojoule pro Mol. Natrium in der dritten Schale hat 496. Kalium in der vierten Schale hat 419. Rubidium in der fünften Schale hat 403. Und Cäsium in der sechsten Schale hat nur noch 376 Kilojoule pro Mol.
+
+Von Lithium zu Cäsium sinkt die Ionisierungsenergie um fast 30 Prozent!
+
+...
+
+Das erklärt, warum Cäsium eine der niedrigsten Ionisierungsenergien hat und daher extrem reaktiv ist. Es gibt sein Valenzelektron sehr leicht ab.

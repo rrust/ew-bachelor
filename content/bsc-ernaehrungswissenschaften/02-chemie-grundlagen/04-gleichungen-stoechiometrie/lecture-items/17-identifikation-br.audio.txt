@@ -1,0 +1,29 @@
+Wie findest du heraus, welcher Stoff der begrenzende Reaktant ist? Es gibt eine systematische Methode.
+
+...
+
+Schritt eins: Berechne die Stoffmenge für jeden Reaktanten. Also n gleich m geteilt durch M für jeden Stoff.
+
+Schritt zwei: Vergleiche das tatsächliche Verhältnis der Mol-Zahlen mit dem theoretischen Verhältnis aus der Reaktionsgleichung.
+
+...
+
+Nehmen wir Aluminium und Chlor. Die Gleichung sagt: Zwei Mol Aluminium reagieren mit drei Mol Chlor.
+
+Das theoretische Verhältnis von Chlor zu Aluminium ist also drei Halbe, das sind 1,5.
+
+...
+
+Jetzt messen wir, was tatsächlich da ist. Wir haben 5,4 Gramm Aluminium und 8,1 Gramm Chlor.
+
+Das sind 0,2 Mol Aluminium und 0,114 Mol Chlor.
+
+Das tatsächliche Verhältnis ist 0,114 geteilt durch 0,2, also 0,57.
+
+...
+
+0,57 ist kleiner als 1,5. Das bedeutet: Relativ gesehen haben wir zu wenig Chlor. Chlor ist also der begrenzende Reaktant.
+
+...
+
+Die Regel ist einfach: Ist das tatsächliche Verhältnis kleiner als das theoretische, ist der Stoff im Zähler limitierend. Ist es größer, ist der Stoff im Nenner limitierend.

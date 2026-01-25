@@ -1,0 +1,23 @@
+Formalladungen helfen zu entscheiden, welche Lewis-Struktur am wahrscheinlichsten ist.
+
+Was ist eine Formalladung? Es ist eine gedankliche Ladung, die einem Atom zugeordnet wird. Dabei nimmt man an, dass alle Bindungselektronen gleichmäßig geteilt werden.
+
+Wichtig: Formalladungen sind keine echten Ladungen. Sie sind ein Buchführungs-Tool.
+
+...
+
+Die Formel lautet: Formalladung gleich Gruppenzahl minus die Hälfte der Bindungselektronen minus die freien Elektronen.
+
+Die Gruppenzahl sind die Valenzelektronen des freien Atoms. Die Bindungselektronen sind alle Elektronen in Bindungen. Davon nimmst du die Hälfte, weil sie geteilt werden. Die freien Elektronen gehören dem Atom allein.
+
+...
+
+Es gibt eine vereinfachte Version zum schnellen Rechnen: Formalladung gleich Gruppenzahl minus Striche minus Punkte.
+
+Striche sind die Anzahl der Bindungen. Punkte sind die Anzahl der freien Elektronen, nicht der Paare.
+
+...
+
+Eine wichtige Kontrollregel: Die Summe aller Formalladungen muss der Gesamtladung des Moleküls entsprechen.
+
+Bei einem neutralen Molekül ist die Summe 0. Bei einem Anion mit Ladung n minus ist die Summe minus n. Bei einem Kation mit Ladung n plus ist die Summe plus n.

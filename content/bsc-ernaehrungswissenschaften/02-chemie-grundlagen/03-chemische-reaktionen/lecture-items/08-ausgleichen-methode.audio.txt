@@ -1,0 +1,37 @@
+Wie gleicht man eine Reaktionsgleichung aus? Es gibt eine systematische Methode.
+
+...
+
+Schritt eins: Schreib die unausgeglichene Gleichung mit den korrekten Formeln auf.
+
+Schritt zwei: Zähl jeden Atomtyp auf beiden Seiten.
+
+Schritt drei: Pass die Koeffizienten an. Fang am besten mit dem komplexesten Molekül an.
+
+Schritt vier: Kontrolliere, ob alle Atome ausgeglichen sind.
+
+...
+
+Ein paar praktische Tipps.
+
+Beginne mit den Metallen. Die kommen oft nur in einem Molekül vor, das macht es einfacher.
+
+Lass Sauerstoff für zuletzt. O zwei lässt sich am Ende leicht anpassen.
+
+Wenn du Brüche bekommst, verdopple alle Koeffizienten.
+
+Und ganz wichtig: Immer am Ende kontrollieren!
+
+...
+
+Ein Beispiel: Eisen reagiert mit Chlor zu Eisentrichlorid.
+
+Unausgeglichen: Fe plus Cl zwei ergibt Fe Cl drei.
+
+Eisen stimmt schon, eins zu eins. Aber Chlor? Links zwei, rechts drei. Das passt nicht.
+
+Wir brauchen drei halbe Cl zwei, also anderthalb. Aber Brüche wollen wir vermeiden!
+
+Also verdoppeln wir alles: zwei Fe plus drei Cl zwei ergibt zwei Fe Cl drei.
+
+Jetzt: Eisen zwei zu zwei, stimmt. Chlor sechs zu sechs, stimmt auch. Fertig!

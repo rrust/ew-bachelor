@@ -1,0 +1,17 @@
+Ethen, C zwei H vier... ein klassisches Beispiel für s p zwei Hybridisierung und Pi-Bindungen.
+
+Jeder Kohlenstoff bildet drei Sigma-Bindungen. Zwei zu Wasserstoff und eine zum anderen Kohlenstoff.
+
+Die Hybridisierung? s p zwei. Drei Hybridorbitale. Die Geometrie ist trigonal-planar mit 120 Grad...
+
+Aber was ist mit der Doppelbindung?
+
+Die C gleich C Doppelbindung besteht aus zwei Teilen. Erstens eine Sigma-Bindung durch Überlappung der s p zwei Hybridorbitale. Zweitens eine Pi-Bindung durch seitliche Überlappung der übrigen p-Orbitale...
+
+Die Pi-Bindung hat wichtige Konsequenzen.
+
+Erstens: Das Molekül ist planar. Alle sechs Atome liegen in einer Ebene.
+
+Zweitens: Rotation um die C gleich C Bindung ist verhindert. Das ermöglicht cis-trans-Isomerie bei substituierten Alkenen...
+
+cis-Buten und trans-Buten sind verschiedene Verbindungen... weil die Rotation um die Doppelbindung verhindert ist.

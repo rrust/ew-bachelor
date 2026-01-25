@@ -1,0 +1,19 @@
+Die Molalität ist ein Konzentrationsmaß mit einem besonderen Vorteil.
+
+...
+
+Anders als die Molarität, die sich auf das Volumen bezieht, bezieht sich die Molalität auf die Masse des Lösungsmittels.
+
+m gleich Stoffmenge des gelösten Stoffes geteilt durch Masse des Lösungsmittels in Kilogramm. Die Einheit ist Mol pro Kilogramm.
+
+...
+
+Warum ist das wichtig? Volumen ändert sich mit der Temperatur. Wenn eine Lösung erwärmt wird, dehnt sie sich aus, die Molarität sinkt. Aber die Masse bleibt konstant, egal wie warm oder kalt es ist.
+
+Deshalb ist die Molalität temperaturunabhängig. Das macht sie unverzichtbar für thermodynamische Berechnungen.
+
+...
+
+Besonders wichtig wird die Molalität bei den kolligativen Eigenschaften. Gefrierpunktserniedrigung und Siedepunktserhöhung werden in Molalität angegeben, nicht in Molarität.
+
+Ein Beispiel: Zwei Mol Glucose in 500 Gramm Wasser ergeben vier Mol pro Kilogramm.

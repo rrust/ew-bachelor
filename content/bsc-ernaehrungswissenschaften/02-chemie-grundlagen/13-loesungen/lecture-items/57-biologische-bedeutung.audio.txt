@@ -1,0 +1,17 @@
+Warum platzen rote Blutkörperchen in reinem Wasser? Warum welken Pflanzen bei Trockenheit? Die Antwort ist Osmose.
+
+...
+
+Zellen haben semipermeable Membranen. Je nach Umgebung passiert Verschiedenes.
+
+In einer isotonischen Lösung, gleiche Konzentration innen wie außen, gibt es keinen Nettofluss von Wasser. Die Zelle bleibt normal.
+
+In einer hypotonischen Lösung, außen verdünnter als innen, strömt Wasser in die Zelle. Sie schwillt an und kann platzen. Bei roten Blutkörperchen heißt das Hämolyse.
+
+In einer hypertonischen Lösung, außen konzentrierter als innen, strömt Wasser aus der Zelle. Sie schrumpft. Bei Blutkörperchen nennt man das Krenation.
+
+...
+
+Deshalb müssen Infusionslösungen isotonisch sein. null Komma neun Prozent Natriumchlorid oder fünf Prozent Glucose haben den richtigen osmotischen Druck, um die Blutzellen nicht zu schädigen.
+
+Bei Pflanzen sorgt der osmotische Druck für den Turgor, die Prallheit der Zellen. Ohne genug Wasser geht der Turgor verloren, die Pflanze welkt.

@@ -1,0 +1,17 @@
+Kationen entstehen, wenn neutrale Atome Elektronen abgeben. Das ist typisch für Metalle. Natrium wird zu Natrium plus, indem es ein Elektron verliert.
+
+Und hier ist ein wichtiger Trend: Kationen sind immer kleiner als ihre neutralen Ursprungsatome.
+
+...
+
+Warum sind Kationen kleiner?
+
+Zwei Effekte wirken zusammen.
+
+Erstens: Verlust der äußeren Schale. Oft wird durch die Abgabe der Valenzelektronen die äußerste Hauptschale komplett geleert. Bei Lithium zum Beispiel hat das Atom die Konfiguration 1s zwei, 2s eins. Das Lithium-plus-Ion hat nur noch 1s zwei. Die ganze zweite Schale ist weg!
+
+Zweitens: Erhöhte Anziehung. Die Anzahl der Protonen bleibt gleich, aber die Anzahl der Elektronen sinkt. Das Verhältnis Protonen zu Elektronen steigt. Die verbleibenden Elektronen werden stärker angezogen.
+
+...
+
+Bei Lithium schrumpft der Radius von 152 Pikometer im Atom auf 78 Pikometer im Kation. Das ist fast eine Halbierung!

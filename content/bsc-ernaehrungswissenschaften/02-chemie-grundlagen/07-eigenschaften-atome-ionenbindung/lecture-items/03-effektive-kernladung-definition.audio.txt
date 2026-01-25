@@ -1,0 +1,19 @@
+Ein Valenzelektron spürt nicht die volle positive Ladung des Atomkerns. Warum nicht?
+
+Weil die inneren Elektronen wie ein Schild wirken. Sie schirmen die positive Ladung teilweise ab.
+
+...
+
+Die effektive Kernladung, Z Stern genannt, ist die positive Nettoladung, die ein Elektron tatsächlich spürt.
+
+Die Formel ist einfach: Z Stern gleich Z minus S.
+
+Dabei ist Z die Kernladung, also die Anzahl der Protonen. Und S ist die Abschirmungskonstante, die näherungsweise der Zahl der inneren Elektronen entspricht.
+
+...
+
+Nehmen wir Lithium als Beispiel. Es hat 3 Protonen und 3 Elektronen. Zwei Elektronen sitzen in der 1s-Schale, also der inneren Schale. Ein Elektron sitzt in der 2s-Schale, das ist das Valenzelektron.
+
+Was spürt dieses Valenzelektron? Z Stern gleich 3 minus 2, also plus 1.
+
+Statt der vollen plus 3 Ladung spürt es nur etwa plus 1. Die inneren Elektronen schirmen zwei Drittel der Kernladung ab!

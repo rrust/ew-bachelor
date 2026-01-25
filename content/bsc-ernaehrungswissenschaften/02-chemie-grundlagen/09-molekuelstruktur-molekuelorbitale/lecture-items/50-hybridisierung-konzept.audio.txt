@@ -1,0 +1,19 @@
+Wie entstehen vier identische C-H Bindungen in Methan mit exakt 109,5 Grad?
+
+Die atomaren Orbitale s, p und d haben unterschiedliche Formen und Richtungen. Das passt nicht zusammen...
+
+Die Lösung heißt Hybridisierung.
+
+Hybridisierung ist das Mischen von Atomorbitalen zu neuen, gleichwertigen Hybridorbitalen...
+
+Bei Kohlenstoff in Methan werden ein s-Orbital und drei p-Orbitale gemischt. Es entstehen vier s p drei Hybridorbitale... s p drei, also ein s und drei p.
+
+Diese vier Orbitale sind identisch. Und sie zeigen in die Ecken eines Tetraeders mit 109,5 Grad...
+
+Wichtige Regeln:
+
+Die Anzahl der Hybridorbitale entspricht der Anzahl der gemischten Atomorbitale. Vier Orbitale rein, vier Orbitale raus.
+
+Hybridorbitale sind energetisch gleichwertig. Und ihre Form ist asymmetrisch... ein großer und ein kleiner Lappen.
+
+Die Hybridisierung erklärt, warum die VSEPR-Geometrien entstehen!

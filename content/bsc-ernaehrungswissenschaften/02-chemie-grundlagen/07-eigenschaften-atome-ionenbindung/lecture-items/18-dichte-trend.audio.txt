@@ -1,0 +1,17 @@
+Die Dichte der Übergangsmetalle nimmt innerhalb einer Periode deutlich zu. Die dichtesten Elemente im gesamten Periodensystem sind Osmium mit 22,6 Gramm pro Kubikzentimeter und Iridium mit 22,4 Gramm pro Kubikzentimeter.
+
+Warum steigt die Dichte so stark?
+
+...
+
+Die Dichte ist Masse geteilt durch Volumen.
+
+Bei Übergangsmetallen steigt die Atommasse deutlich, weil mehr Protonen und Neutronen hinzukommen. Aber der Atomradius bleibt fast konstant, also bleibt auch das Volumen fast konstant.
+
+Mehr Masse bei gleichem Volumen ergibt eine höhere Dichte.
+
+...
+
+Stell dir einen Koffer vor, der gleich groß bleibt, aber mit immer schwereren Sachen gefüllt wird. Der Koffer wird immer schwerer, obwohl er nicht größer wird.
+
+Die fast konstanten Radien bei Übergangsmetallen führen also dazu, dass die Dichte innerhalb einer Periode stark zunimmt.

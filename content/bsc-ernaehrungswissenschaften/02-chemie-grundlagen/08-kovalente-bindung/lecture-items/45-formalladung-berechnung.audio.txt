@@ -1,0 +1,37 @@
+Üben wir die Berechnung von Formalladungen an Beispielen.
+
+...
+
+Beispiel 1: Wasser, H zwei O. Der Sauerstoff hat 2 Bindungen und 4 freie Elektronen.
+
+Formalladung von O: 6 minus 2 minus 4 gleich 0.
+
+Jeder Wasserstoff hat 1 Bindung und 0 freie Elektronen.
+
+Formalladung von H: 1 minus 1 minus 0 gleich 0.
+
+Alle Formalladungen sind 0. Das ist ideal.
+
+...
+
+Beispiel 2: Das Hydronium-Ion, H drei O plus. Sauerstoff hat hier 3 Bindungen und nur 2 freie Elektronen.
+
+Formalladung von O: 6 minus 3 minus 2 gleich plus 1.
+
+Die Wasserstoffe haben wie immer Formalladung 0.
+
+Die Summe ist 0 plus 0 plus 0 plus 1 gleich plus 1. Das entspricht der Ionenladung. Stimmt!
+
+...
+
+Beispiel 3: Das Ammonium-Ion, N H vier plus. Stickstoff hat 4 Bindungen und 0 freie Elektronen.
+
+Formalladung von N: 5 minus 4 minus 0 gleich plus 1.
+
+Jeder Wasserstoff hat Formalladung 0.
+
+Die Summe ist wieder plus 1, wie die Ionenladung.
+
+...
+
+Die Summe der Formalladungen muss immer der Gesamtladung entsprechen. Das ist eine gute Kontrolle, ob du richtig gerechnet hast.

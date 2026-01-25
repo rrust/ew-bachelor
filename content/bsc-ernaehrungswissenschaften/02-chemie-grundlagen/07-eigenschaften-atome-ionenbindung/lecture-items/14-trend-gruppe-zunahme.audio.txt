@@ -1,0 +1,13 @@
+Innerhalb einer Gruppe nimmt der Atomradius von oben nach unten zu. Warum?
+
+Wenn wir im Periodensystem nach unten gehen, werden neue Hauptschalen besetzt. Die Hauptquantenzahl n steigt. Diese äußeren Orbitale sind weiter vom Kern entfernt. Und die Anziehungskraft des Kerns nimmt mit der Entfernung ab.
+
+...
+
+Schauen wir die Alkalimetalle an. Lithium in Schale 2 hat einen Radius von 152 Pikometer. Natrium in Schale 3 hat 186 Pikometer. Kalium in Schale 4 hat 227 Pikometer. Rubidium in Schale 5 hat 248 Pikometer. Und Cäsium in Schale 6 hat 265 Pikometer.
+
+Der Radius nimmt von Lithium bis Cäsium fast um das Doppelte zu!
+
+...
+
+Stell dir die Schalen wie Zwiebelringe vor. Jede neue Periode fügt einen neuen Ring hinzu. Die äußeren Elektronen sind dadurch weiter vom Zentrum, also dem Kern, entfernt. Das Atom wird insgesamt größer.

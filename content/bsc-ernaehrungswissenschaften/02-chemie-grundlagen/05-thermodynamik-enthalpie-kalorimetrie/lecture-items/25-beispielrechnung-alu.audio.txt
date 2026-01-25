@@ -1,0 +1,25 @@
+Schauen wir uns eine konkrete Berechnung an. Wir kühlen 25 Gramm Aluminium von 310 Grad auf 37 Grad ab. Wie viel Energie gibt das Aluminium dabei ab?
+
+...
+
+Wir nutzen die Formel q gleich m mal c mal Delta T.
+
+Die Masse ist 25 Gramm. Die spezifische Wärmekapazität von Aluminium ist 0,897 Joule pro Gramm mal Kelvin.
+
+Die Temperaturänderung berechnen wir als Endtemperatur minus Anfangstemperatur. Das ergibt 37 minus 310, also minus 273 Kelvin.
+
+...
+
+Jetzt setzen wir ein: q gleich 25 Gramm mal 0,897 mal minus 273 Kelvin.
+
+Das ergibt minus 6120 Joule oder minus 6,12 Kilojoule.
+
+...
+
+Was bedeutet das negative Vorzeichen? Es zeigt uns, dass das Aluminium Wärme abgegeben hat, nicht aufgenommen. Das System hat Energie verloren, die an die Umgebung übertragen wurde.
+
+...
+
+Als Merkhilfe: Wenn q positiv ist, nimmt der Stoff Energie auf und wird wärmer. Wenn q negativ ist, gibt der Stoff Energie ab und wird kälter.
+
+Das Vorzeichen ergibt sich automatisch aus dem Vorzeichen von Delta T!

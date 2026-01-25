@@ -1,0 +1,23 @@
+Bei komplexeren Reaktionen verliert man schnell den Überblick. Die Mengentabelle ist ein praktisches Werkzeug, um alle Werte systematisch zu organisieren.
+
+...
+
+Du erstellst eine Tabelle mit einer Spalte für jeden Stoff. In den Zeilen notierst du: Anfangswerte, Veränderung, und Endwerte. Jeweils in Mol und in Gramm.
+
+...
+
+Das Vorzeichen verrät dir, ob ein Stoff verbraucht wird oder entsteht. Minus bedeutet: Der Stoff wird weniger, er ist ein Edukt. Plus bedeutet: Der Stoff nimmt zu, er ist ein Produkt.
+
+...
+
+Die entscheidende Beziehung ist: Alle Veränderungen stehen im Verhältnis der Koeffizienten.
+
+Wenn Ammoniumnitrat den Koeffizienten eins hat und Wasser den Koeffizienten zwei, dann ändert sich die Mol-Zahl von Wasser doppelt so stark wie die von Ammoniumnitrat.
+
+...
+
+Am Ende kontrollierst du: Die Summe aller Massen muss konstant bleiben. Wenn links 454 Gramm standen, müssen rechts auch 454 Gramm stehen.
+
+...
+
+Diese Tabelle ist besonders nützlich, wenn mehrere Reaktanten und Produkte beteiligt sind. Du behältst den Überblick und kannst Rechenfehler sofort erkennen.

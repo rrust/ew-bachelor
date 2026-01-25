@@ -1,0 +1,19 @@
+Hast du dich schon einmal gefragt, warum eine brennende Erdnuss genug Energie liefert, um eine Tasse Wasser zu erhitzen?
+
+Die Antwort liegt in der Thermochemie, also dem Teilgebiet der Chemie, das sich mit Energieumsätzen bei chemischen Reaktionen beschäftigt.
+
+...
+
+Jede chemische Bindung speichert Energie. Wenn Bindungen gebrochen oder neu gebildet werden, wird diese Energie umgewandelt.
+
+Ein faszinierendes Beispiel ist die Brennstoffzelle. Hier reagieren Wasserstoff und Sauerstoff zu Wasser. Aber anders als bei einer simplen Verbrennung wird die chemische Energie direkt in elektrischen Strom umgewandelt, viel effizienter als in einem herkömmlichen Motor.
+
+...
+
+Die Reaktion läuft dabei in zwei getrennten Teilschritten ab: Am Minuspol werden Wasserstoffmoleküle oxidiert, sie geben Elektronen ab. Am Pluspol werden diese Elektronen genutzt, um Sauerstoff zu reduzieren.
+
+Das Geniale daran: Die Elektronen fließen durch einen äußeren Stromkreis und verrichten dabei Arbeit, zum Beispiel zum Antrieb eines Autos.
+
+...
+
+Merke dir: Die Thermochemie hilft uns zu verstehen, warum manche Reaktionen Wärme freisetzen, wie bei der Verbrennung, und andere Wärme aufnehmen, wie beim Verdampfen von Wasser.

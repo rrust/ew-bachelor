@@ -1,0 +1,23 @@
+Stöchiometrie klingt kompliziert, aber eigentlich ist es nichts anderes als das Rezeptbuch der Chemie.
+
+Stell dir vor, du backst einen Kuchen. Das Rezept sagt dir genau: Zwei Eier, 200 Gramm Mehl, 100 Gramm Zucker. Wenn du doppelt so viele Kuchen backen willst, verdoppelst du alle Zutaten. So einfach ist Stöchiometrie im Kern.
+
+...
+
+Das Wort kommt aus dem Griechischen. Stoicheion bedeutet Element, und metron bedeutet Maß. Wir messen also die Verhältnisse zwischen den Elementen in chemischen Reaktionen.
+
+...
+
+Warum ist das für Ernährungswissenschaften wichtig?
+
+Denk an die Zellatmung. Wie viel Glucose braucht dein Körper, um eine bestimmte Menge Energie zu produzieren? Oder wie viel Calcium nimmst du tatsächlich aus einem Glas Milch auf? Das sind alles stöchiometrische Fragen.
+
+...
+
+In dieser Vorlesung lernst du einen systematischen Vier-Schritte-Plan, mit dem du jede stöchiometrische Aufgabe lösen kannst.
+
+Du wirst verstehen, was ein begrenzender Reaktant ist, wie man Ausbeuten berechnet, und wie man mit Lösungen und dem pH-Wert arbeitet.
+
+...
+
+Am Ende kannst du Reaktionsgleichungen nicht nur lesen, sondern auch quantitativ auswerten. Das ist das mathematische Handwerkszeug jedes Chemikers.

@@ -1,0 +1,27 @@
+Fassen wir die drei räumlichen Quantenzahlen zusammen.
+
+...
+
+n, die Hauptquantenzahl, bestimmt Schale, Energie und Größe. Erlaubte Werte: eins, zwei, drei und so weiter.
+
+l, die Nebenquantenzahl, bestimmt die Form, also die Unterschale. Erlaubte Werte: null bis n minus eins.
+
+m l, die Magnetquantenzahl, bestimmt die Orientierung im Raum. Erlaubte Werte: minus l bis plus l.
+
+...
+
+Schauen wir uns die dritte Schale an, n gleich drei.
+
+Die drei s Unterschale hat l gleich null, m l gleich null. Ein Orbital.
+
+Die drei p Unterschale hat l gleich eins, m l kann minus eins, null oder plus eins sein. Drei Orbitale.
+
+Die drei d Unterschale hat l gleich zwei, m l kann minus zwei bis plus zwei sein. Fünf Orbitale.
+
+Insgesamt neun Orbitale in der dritten Schale.
+
+...
+
+Kontrolle: Neun Orbitale mal maximal zwei Elektronen ergibt 18 Elektronen. Das passt zur Formel zwei n Quadrat gleich zwei mal neun gleich 18.
+
+Ein Orbital ist durch die drei Zahlen n, l und m l eindeutig bestimmt. Wie eine Adresse mit Straße, Hausnummer und Stockwerk.

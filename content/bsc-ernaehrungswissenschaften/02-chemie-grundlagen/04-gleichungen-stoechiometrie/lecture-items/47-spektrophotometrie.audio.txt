@@ -1,0 +1,29 @@
+Manche Stoffe absorbieren Licht bestimmter Wellenlängen. Das nutzt die Spektrophotometrie zur Konzentrationsbestimmung.
+
+...
+
+Je mehr von einem Stoff in Lösung ist, desto mehr Licht wird absorbiert. Dieser Zusammenhang ist linear und wird durch das Lambert-Beer-Gesetz beschrieben.
+
+A gleich Epsilon mal l mal c.
+
+...
+
+A ist die Absorption oder Extinktion. Das ist der Messwert, dimensionslos.
+
+Epsilon ist der molare Absorptionskoeffizient. Der ist für jeden Stoff bei jeder Wellenlänge charakteristisch.
+
+l ist die Schichtdicke, also wie breit die Küvette ist, typischerweise ein Zentimeter.
+
+c ist die Konzentration, die du suchst.
+
+...
+
+In der Praxis misst du nicht nur eine Probe. Du erstellst eine Kalibriergerade.
+
+Dazu bereitest du Standardlösungen mit bekannten Konzentrationen vor. Du misst deren Absorption und trägst die Werte auf: Absorption gegen Konzentration. Das ergibt eine Gerade.
+
+Dann misst du deine unbekannte Probe und liest die Konzentration an der Geraden ab.
+
+...
+
+In der Ernährungswissenschaft ist das extrem nützlich. Du kannst Proteine messen, Vitamine, Mineralien, DNA. Und das alles schnell und mit kleinen Probenmengen.

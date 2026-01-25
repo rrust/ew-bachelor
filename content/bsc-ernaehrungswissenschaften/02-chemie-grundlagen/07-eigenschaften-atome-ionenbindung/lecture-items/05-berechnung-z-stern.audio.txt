@@ -1,0 +1,15 @@
+Lass uns Z Stern für ein paar Elemente berechnen. Die vereinfachte Methode: Wir ziehen einfach die Anzahl der inneren Elektronen von der Kernladung ab.
+
+...
+
+Lithium. Ordnungszahl 3, Konfiguration 1s zwei, 2s eins. Die 1s-Elektronen sind die inneren Elektronen, das sind 2. Z Stern von Lithium ist also 3 minus 2, gleich plus 1.
+
+Beryllium. Ordnungszahl 4, Konfiguration 1s zwei, 2s zwei. Wieder 2 innere Elektronen. Z Stern ist 4 minus 2, gleich plus 2.
+
+Bor. Ordnungszahl 5, Konfiguration 1s zwei, 2s zwei, 2p eins. Immer noch nur 2 innere Elektronen. Z Stern ist 5 minus 2, gleich plus 3.
+
+...
+
+Die tatsächlichen Werte nach den Slater-Regeln weichen etwas ab. Für Lithium etwa plus 1,28. Für Fluor plus 5,13. Aber der Trend bleibt gleich.
+
+Das bedeutet: Die Valenzelektronen im Fluor spüren eine etwa fünfmal stärkere Anziehung als im Lithium. Das erklärt viele chemische Unterschiede zwischen diesen Elementen.

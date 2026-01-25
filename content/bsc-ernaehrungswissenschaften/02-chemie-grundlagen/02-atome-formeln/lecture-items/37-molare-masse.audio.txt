@@ -1,0 +1,27 @@
+Wie viel wiegt eigentlich ein Mol Glucose?
+
+Mit der molaren Masse kannst du das in Sekunden berechnen.
+
+...
+
+Die molare Masse, Symbol M, ist die Masse von einem Mol einer Substanz. Sie wird in Gramm pro Mol angegeben.
+
+Bei Elementen ist es einfach: Die molare Masse entspricht zahlenmäßig dem Atomgewicht im Periodensystem.
+
+Wasserstoff hat ein Atomgewicht von 1,008 u, also eine molare Masse von 1,008 Gramm pro Mol. Kohlenstoff hat 12,01 u, also 12,01 Gramm pro Mol. Sauerstoff 16 Gramm pro Mol, Stickstoff 14,01 Gramm pro Mol.
+
+...
+
+Bei Verbindungen addierst du einfach die molaren Massen aller Atome.
+
+Wasser, H zwei O: Zweimal Wasserstoff plus einmal Sauerstoff. 2 mal 1,008 plus 16 gleich 18,02 Gramm pro Mol.
+
+Ethanol, C zwei H sechs O: 2 mal 12,01 plus 6 mal 1,008 plus 16. Das ergibt 24,02 plus 6,05 plus 16, also 46,07 Gramm pro Mol.
+
+Glucose, C sechs H zwölf O sechs: 6 mal 12,01 plus 12 mal 1,008 plus 6 mal 16. Das sind 72,06 plus 12,10 plus 96, also 180,16 Gramm pro Mol.
+
+...
+
+Ein Praxistipp für Klausuren: Oft darfst du mit gerundeten Werten rechnen. Wasserstoff etwa 1, Kohlenstoff 12, Stickstoff 14, Sauerstoff 16, Schwefel 32.
+
+Das macht die Rechnungen schneller und die Ergebnisse sind meist genau genug.

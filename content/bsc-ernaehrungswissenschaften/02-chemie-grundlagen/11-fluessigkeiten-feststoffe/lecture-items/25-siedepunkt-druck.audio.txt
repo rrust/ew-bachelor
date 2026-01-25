@@ -1,0 +1,29 @@
+Auf dem Mount Everest kocht Wasser bei 70 Grad. Ein Ei wird dort nie richtig gar. Warum?
+
+Der Siedepunkt hängt vom Außendruck ab.
+
+...
+
+Eine Flüssigkeit siedet, wenn ihr Dampfdruck gleich dem Außendruck ist. Dampfdruck gleich Außendruck bedeutet Sieden.
+
+Der normale Siedepunkt ist definiert als die Temperatur, bei der der Dampfdruck genau eine Atmosphäre beträgt. Für Wasser ist das 100 Grad Celsius. Für Ethanol 78 Grad.
+
+...
+
+Was passiert bei niedrigerem Außendruck?
+
+In den Bergen ist der Luftdruck geringer. Auf der Zugspitze nur noch etwa 700 Millibar statt 1013. Das Wasser muss nicht so viel Dampfdruck aufbauen, um zu sieden. Es reichen schon 90 Grad.
+
+Auf dem Mount Everest mit 330 Millibar siedet Wasser bei ungefähr 70 Grad. Zu niedrig, um ein Ei zu kochen.
+
+...
+
+Umgekehrt funktioniert es auch.
+
+Im Schnellkochtopf herrscht ein Druck von etwa 2 Atmosphären. Der Dampfdruck des Wassers muss höher werden, bevor es siedet. Das passiert erst bei etwa 120 Grad. Das Essen gart schneller, weil die Temperatur höher ist.
+
+...
+
+Eine wichtige Beobachtung: Beim Sieden bilden sich Dampfblasen im Inneren der Flüssigkeit, nicht nur an der Oberfläche. Das passiert erst, wenn der Dampfdruck den Außendruck überwinden kann. Vorher verdampft die Flüssigkeit nur an der Oberfläche. Das nennt man Verdunstung.
+
+Der Siedepunkt ist also keine feste Stoffeigenschaft. Er hängt vom Außendruck ab.

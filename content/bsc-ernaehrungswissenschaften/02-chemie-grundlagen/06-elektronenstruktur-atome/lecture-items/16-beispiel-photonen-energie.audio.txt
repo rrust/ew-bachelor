@@ -1,0 +1,23 @@
+Wie viel Energie trägt eigentlich ein Mol roter Photonen? Rechnen wir es durch.
+
+...
+
+Rotes Licht hat eine Wellenlänge von 700 Nanometern und eine Frequenz von 4,29 mal zehn hoch vierzehn Hertz.
+
+Schritt eins: Die Energie eines einzelnen Photons.
+
+E gleich h mal Nü. Also 6,626 mal zehn hoch minus 34 Joule mal Sekunde, multipliziert mit 4,29 mal zehn hoch 14 pro Sekunde.
+
+Das ergibt 2,84 mal zehn hoch minus 19 Joule. Pro einzelnes Photon.
+
+...
+
+Schritt zwei: Die Energie pro Mol.
+
+Wir multiplizieren mit der Avogadro-Konstante, 6,022 mal zehn hoch 23 pro Mol.
+
+2,84 mal zehn hoch minus 19 Joule mal 6,022 mal zehn hoch 23 pro Mol ergibt etwa 171.000 Joule pro Mol. Das sind 171 Kilojoule pro Mol.
+
+...
+
+Interessant: Typische chemische Bindungsenergien liegen bei 150 bis 400 Kilojoule pro Mol. Sichtbares Licht kann also photochemische Reaktionen auslösen. Und UV-Licht erst recht!

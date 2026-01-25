@@ -1,0 +1,15 @@
+2s-Elektronen zeigen ein interessantes Verhalten. Sie dringen teilweise in die Region der 1s-Elektronen ein. Dieses Phänomen heißt Penetration, also Durchdringung.
+
+Was bedeutet das für die Energie?
+
+...
+
+Durch diese Durchdringung spüren 2s-Elektronen zeitweise eine höhere positive Ladung als erwartet. Das führt dazu, dass die Energie des 2s-Orbitals niedriger ist als die des 2p-Orbitals.
+
+Stell dir vor, der Kern ist ein Magnet und die Elektronen sind Eisenspäne. Ein stärkerer Magnet, also höheres Z Stern, zieht die Späne eng an. Ein schwächerer Magnet lässt sie weiter verteilt.
+
+...
+
+Wenn Z Stern innerhalb einer Periode steigt, passiert Folgendes: Die Orbitale werden stärker zum Kern gezogen. Die Orbitalenergien werden abgesenkt, also negativer. Und die Elektronen werden fester gehalten.
+
+Die Konsequenz: Je höher Z Stern, desto tiefer liegen die Orbitale und desto mehr Energie braucht man, um ein Elektron zu entfernen.

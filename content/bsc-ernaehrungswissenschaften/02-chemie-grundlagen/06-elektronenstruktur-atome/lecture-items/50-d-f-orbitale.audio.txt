@@ -1,0 +1,21 @@
+Bei höheren Quantenzahlen werden die Orbitalformen komplexer.
+
+...
+
+d-Orbitale haben l gleich zwei. Pro Schale gibt es fünf davon. Die Form ist meist kleeblattförmig mit vier Lappen. Aber eines, das d z zwei, sieht anders aus: wie eine Hantel mit einem Ring darum.
+
+d-Orbitale gibt es erst ab n gleich drei, also drei d, vier d, fünf d und so weiter.
+
+Die fünf d-Orbitale heißen: d x y, d x z, d y z, d x Quadrat minus y Quadrat, und d z Quadrat.
+
+...
+
+f-Orbitale haben l gleich drei. Pro Schale gibt es sieben davon. Die Formen sind sehr komplex, meist sechs bis acht Lappen.
+
+f-Orbitale gibt es erst ab n gleich vier. Sie sind vor allem bei den Lanthanoiden und Actinoiden relevant.
+
+...
+
+Zusammenfassung der Elektronen pro Unterschale: s-Orbitale fassen zwei, p-Orbitale sechs, d-Orbitale zehn, f-Orbitale vierzehn Elektronen.
+
+Für die Grundlagen-Chemie sind vor allem s, p und d wichtig. f-Orbitale braucht ihr erst bei den Lanthanoiden.

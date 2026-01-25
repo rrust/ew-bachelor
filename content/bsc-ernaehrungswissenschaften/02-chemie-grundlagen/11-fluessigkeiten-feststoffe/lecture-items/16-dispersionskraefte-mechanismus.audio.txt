@@ -1,0 +1,21 @@
+Sauerstoff, Iod, Methan. Alles unpolare Moleküle ohne permanenten Dipol. Trotzdem können sie verflüssigt werden. Wie ziehen sie sich an?
+
+Die Antwort sind Dispersionskräfte, auch London-Kräfte genannt.
+
+...
+
+Unpolare Moleküle haben eine symmetrische Elektronenverteilung. Keinen Dipol. Keine Dipol-Dipol-Kräfte. Trotzdem existiert eine Anziehung. Der Mechanismus funktioniert in drei Schritten.
+
+Schritt eins: Die Elektronenwolke eines Atoms ist ständig in Bewegung. Zufällig kann sich die Elektronendichte kurzzeitig auf eine Seite verlagern. Für einen Moment entsteht ein asymmetrisches Gebilde mit einer partiell negativen und einer partiell positiven Seite. Ein momentaner Dipol.
+
+...
+
+Schritt zwei: Dieser momentane Dipol beeinflusst das Nachbaratom. Die Elektronen des Nachbarn werden abgestoßen oder angezogen. Es entsteht ebenfalls ein kurzzeitiger Dipol, ein induzierter Dipol.
+
+Schritt drei: Die beiden induzierten Dipole ziehen sich an. Diese Wechselwirkung besteht nur für Bruchteile von Sekunden. Aber der statistische Nettoeffekt ist eine messbare Anziehungskraft.
+
+...
+
+Ein praktisches Beispiel: Iod ist unpolar, zwei gleiche Atome. Trotzdem löst es sich sowohl in polarem Ethanol als auch in unpolarem Hexan. In beiden Fällen sind es Dispersionskräfte, die die Wechselwirkung ermöglichen.
+
+Die wichtige Erkenntnis? Dispersionskräfte wirken in allen Molekülen. Auch in polaren! Bei unpolaren Molekülen sind sie jedoch die einzige intermolekulare Kraft.

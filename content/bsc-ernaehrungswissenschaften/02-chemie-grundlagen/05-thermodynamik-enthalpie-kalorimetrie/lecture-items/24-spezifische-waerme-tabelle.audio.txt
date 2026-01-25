@@ -1,0 +1,23 @@
+Wasser ist in vielerlei Hinsicht ein besonderer Stoff. Das zeigt sich auch bei der spezifischen Wärmekapazität.
+
+...
+
+Flüssiges Wasser hat eine spezifische Wärmekapazität von 4,184 Joule pro Gramm mal Kelvin. Das ist etwa vier bis fünfmal höher als bei den meisten anderen Stoffen!
+
+Zum Vergleich: Aluminium hat nur 0,897, Eisen 0,449 und Kupfer nur 0,385 Joule pro Gramm mal Kelvin.
+
+Selbst Eis hat mit 2,03 nur etwa die Hälfte der Wärmekapazität von flüssigem Wasser.
+
+...
+
+Warum ist Wasser so besonders? Die Antwort liegt in den Wasserstoffbrücken zwischen den Wassermolekülen.
+
+Wenn wir Wärme zuführen, wird ein großer Teil der Energie verwendet, um diese Wasserstoffbrücken zu dehnen oder zu brechen. Das erhöht die potentielle Energie der Moleküle. Nur ein kleinerer Teil erhöht die kinetische Energie, also die Temperatur.
+
+...
+
+Diese hohe Wärmekapazität hat wichtige praktische Auswirkungen.
+
+Ozeane wirken als riesige Klimapuffer. Sie speichern enorme Wärmemengen, ohne sich stark zu erwärmen. Im Winter geben sie diese gespeicherte Wärme wieder ab, weshalb Küstenklima milder ist als Kontinentalklima.
+
+Auch als Kühlmittel ist Wasser ideal, weil es viel Wärme aufnehmen kann, ohne zu heiß zu werden.

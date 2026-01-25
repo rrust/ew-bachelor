@@ -1,0 +1,29 @@
+Wenn es mehrere mögliche Lewis-Strukturen gibt, helfen Formalladungen bei der Entscheidung: Welche Struktur ist die stabilste?
+
+...
+
+Regel 1: Minimale Formalladungen.
+
+Die vorherrschende Struktur ist diejenige mit den kleinsten Formalladungen. Idealerweise sind alle 0.
+
+Warum? Ladungstrennung kostet Energie. Eine Struktur mit allen Formalladungen gleich 0 ist optimal. Eine mit plus 1 und minus 1 ist akzeptabel. Eine mit plus 2 oder minus 2 ist ungünstig und instabil.
+
+...
+
+Regel 2: Negative Ladung am elektronegativen Atom.
+
+Falls Ladungen unvermeidbar sind, sollte die negative Ladung am elektronegativeren Atom liegen.
+
+In Kohlenmonoxid zum Beispiel ist es günstiger, wenn der Sauerstoff die negative Ladung trägt. Sauerstoff ist elektronegativer als Kohlenstoff und kann negative Ladung besser stabilisieren.
+
+...
+
+Regel 3: Gleichnamige Ladungen vermeiden.
+
+Benachbarte Atome sollten nicht beide positiv oder beide negativ sein. Gleichnamige Ladungen stoßen sich ab. Das ist energetisch ungünstig.
+
+...
+
+Zusammengefasst: Minimiere die Formalladungen. Wenn Ladungen nötig sind, platziere die negative am elektronegativeren Atom. Und vermeide benachbarte gleichnamige Ladungen.
+
+Diese Regeln helfen, die wichtigste Resonanzstruktur zu identifizieren.

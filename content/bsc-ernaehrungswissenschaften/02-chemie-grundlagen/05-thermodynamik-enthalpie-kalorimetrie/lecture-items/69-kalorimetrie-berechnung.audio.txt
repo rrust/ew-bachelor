@@ -1,0 +1,25 @@
+Bei der Auswertung von Kalorimetrie-Experimenten nutzen wir das Prinzip der Energieerhaltung. Die gesamte bei der Reaktion freigesetzte Wärme muss irgendwo hin.
+
+...
+
+Die Gesamtwärme setzt sich aus zwei Teilen zusammen: Die Wärme, die das Wasser aufnimmt, plus die Wärme, die die Bombe selbst aufnimmt.
+
+...
+
+Für das Wasser nutzen wir die bekannte Formel q gleich m mal c mal Delta T. Die Masse des Wassers, multipliziert mit der spezifischen Wärmekapazität von Wasser, also 4,184 Joule pro Gramm Kelvin, multipliziert mit der Temperaturänderung.
+
+...
+
+Für die Bombe ist die Rechnung etwas anders. Hier nutzen wir q gleich C mal Delta T, wobei C die Wärmekapazität des Geräts ist, nicht die spezifische Wärmekapazität. Die Einheit ist Joule pro Kelvin.
+
+Diese Gerätekonstante beinhaltet die Wärmeaufnahme aller Metallteile: Stahlbehälter, Rührer, Thermometer und so weiter. Sie wird bei der Kalibrierung des Kalorimeters bestimmt.
+
+...
+
+Die Reaktionsenergie berechnet sich dann als Delta U gleich minus q gesamt.
+
+Das negative Vorzeichen, weil die Reaktion exotherm ist. Die Reaktion gibt Energie ab, die dann von Wasser und Bombe aufgenommen wird.
+
+...
+
+Um die molare Verbrennungsenergie zu erhalten, teilen wir durch die Stoffmenge: Delta U molar gleich Delta U geteilt durch n. Die Stoffmenge n berechnet sich als Masse der Probe geteilt durch Molmasse.

@@ -1,0 +1,25 @@
+Führen wir die Rechnung jetzt komplett durch. Wir haben festgestellt, dass Chlor der begrenzende Reaktant ist. Was bedeutet das für die Produktmenge?
+
+...
+
+Wir haben 0,114 Mol Chlor. Laut Gleichung entstehen aus drei Mol Chlor ein Mol Aluminiumbromid.
+
+Also: 0,114 mal ein Drittel ergibt 0,038 Mol Produkt.
+
+Die Molmasse von Aluminiumbromid beträgt 266 Gramm pro Mol. Damit erhalten wir 10,1 Gramm Produkt.
+
+...
+
+Jetzt die spannende Frage: Wie viel Aluminium bleibt übrig?
+
+Aus drei Mol Chlor werden zwei Mol Aluminium verbraucht. Also 0,114 mal zwei Drittel ergibt 0,076 Mol verbrauchtes Aluminium.
+
+Wir hatten 0,2 Mol. Es bleiben also 0,124 Mol übrig. Das sind 3,35 Gramm.
+
+...
+
+Zur Kontrolle: Wir hatten anfangs 5,4 plus 8,1 Gramm, insgesamt 13,5 Gramm.
+
+Am Ende haben wir 3,35 Gramm Aluminium, null Gramm Chlor, und 10,1 Gramm Produkt. Die Summe ist 13,45 Gramm.
+
+Der kleine Unterschied kommt von Rundungsfehlern. Die Massenerhaltung ist erfüllt.

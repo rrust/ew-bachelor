@@ -1,0 +1,19 @@
+Konzentrationen lassen sich auf verschiedene Arten angeben. Der Stoffmengenanteil, auch Mol-Bruch genannt, ist eine davon.
+
+...
+
+Die Idee ist einfach. Du teilst die Stoffmenge einer Komponente durch die Gesamtstoffmenge aller Komponenten.
+
+X gleich n A geteilt durch n gesamt.
+
+...
+
+Das Ergebnis ist eine dimensionslose Zahl zwischen null und eins. Mol geteilt durch Mol kürzt sich weg. Und wenn du alle Stoffmengenanteile addierst, ergibt das immer exakt eins.
+
+...
+
+Ein Beispiel: Du hast eine Mischung aus zwei Mol Ethanol und acht Mol Wasser. Der Stoffmengenanteil von Ethanol ist zwei geteilt durch zehn, also null Komma zwei. Der von Wasser ist acht geteilt durch zehn, also null Komma acht.
+
+Zusammen: null Komma zwei plus null Komma acht gleich eins.
+
+Der Stoffmengenanteil ist besonders wichtig für das Raoultsche Gesetz, das wir später kennenlernen werden.

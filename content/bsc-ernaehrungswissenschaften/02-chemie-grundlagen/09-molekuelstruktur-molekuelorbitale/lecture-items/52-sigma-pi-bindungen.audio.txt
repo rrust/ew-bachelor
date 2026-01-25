@@ -1,0 +1,17 @@
+Es gibt zwei Arten von kovalenten Bindungen... und sie unterscheiden sich in der Art der Orbitalüberlappung.
+
+Die Sigma-Bindung entsteht durch frontale Überlappung... Kopf an Kopf. Die Elektronendichte liegt auf der Bindungsachse. Und wichtig: Rotation um die Bindungsachse ist möglich.
+
+Jede Einfachbindung ist eine Sigma-Bindung.
+
+Die Pi-Bindung entsteht durch seitliche Überlappung von p-Orbitalen. Die Elektronendichte liegt ober- und unterhalb der Bindungsachse...
+
+Und hier der entscheidende Unterschied: Rotation ist nicht möglich! Sie würde die seitliche Überlappung brechen.
+
+Pi-Bindungen kommen nur in Mehrfachbindungen vor.
+
+Wie setzt sich das zusammen?
+
+Eine Einfachbindung besteht aus einer Sigma-Bindung. Eine Doppelbindung besteht aus einer Sigma-Bindung plus einer Pi-Bindung. Eine Dreifachbindung besteht aus einer Sigma-Bindung plus zwei Pi-Bindungen...
+
+Merke: Die erste Bindung ist immer eine Sigma-Bindung!

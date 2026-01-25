@@ -1,0 +1,23 @@
+Erwin Schrödinger entwickelte 1926 die mathematische Beschreibung für Elektronen als Wellen.
+
+...
+
+Die Lösungen seiner Gleichung heißen Wellenfunktionen und werden mit dem griechischen Buchstaben Psi bezeichnet.
+
+Psi selbst hat keine direkte physikalische Bedeutung. Aber Psi Quadrat gibt die Aufenthaltswahrscheinlichkeit des Elektrons an!
+
+...
+
+Was ist ein Orbital? Ein Orbital ist der dreidimensionale Raum, in dem sich ein Elektron mit einer bestimmten Wahrscheinlichkeit aufhält. Meist definieren wir die Grenze bei 90 Prozent Wahrscheinlichkeit.
+
+...
+
+Der Unterschied zum Bohr-Modell ist fundamental. Bohr: feste Kreisbahn, Elektron an einem Punkt, exakte Position. Quantenmechanik: Wahrscheinlichkeitswolke, Elektron verschmiert, nur Wahrscheinlichkeiten.
+
+Statt zweidimensionaler Kreise haben wir dreidimensionale Wolken.
+
+...
+
+Stell dir vor, du machst tausend Fotos eines Elektrons zu verschiedenen Zeitpunkten und überlagst sie. Das resultierende Bild zeigt, wo das Elektron am häufigsten war. Das ist das Orbital.
+
+Orbitale sind nicht die Bahnen des Elektrons. Sie sind statistische Aufenthaltsbereiche.

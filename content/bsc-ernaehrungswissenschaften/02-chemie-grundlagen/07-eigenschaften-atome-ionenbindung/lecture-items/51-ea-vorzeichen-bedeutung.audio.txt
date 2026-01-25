@@ -1,0 +1,19 @@
+Das Vorzeichen der Elektronenaffinität verrät viel über die Stabilität des Anions.
+
+...
+
+Bei negativer Elektronenaffinität wird Energie abgegeben, wenn das Atom ein Elektron aufnimmt. Das bedeutet: Das Atom will das Elektron. Das gebildete Anion ist stabil. Je negativer der Wert, desto stabiler das Anion.
+
+Chlor hat minus 349 Kilojoule pro Mol, sehr stabil. Fluor hat minus 328 Kilojoule pro Mol, ebenfalls sehr stabil. Sauerstoff hat minus 141 Kilojoule pro Mol, stabil. Schwefel hat minus 200 Kilojoule pro Mol, stabil.
+
+...
+
+Bei positiver Elektronenaffinität muss Energie zugeführt werden. Das Atom will das Elektron nicht. Das Anion wäre instabil.
+
+Die Edelgase sind das beste Beispiel. Helium hat plus 21 Kilojoule pro Mol. Neon hat plus 29. Argon hat plus 35. Ihre Valenzschale ist bereits voll, ein zusätzliches Elektron müsste in die nächste Schale, und das ist energetisch ungünstig.
+
+Auch Beryllium hat mit plus 19 eine positive Elektronenaffinität, weil seine s-Unterschale bereits voll ist.
+
+...
+
+Merke dir: Negative Elektronenaffinität bedeutet elektronen-hungrig, das ist typisch für Nichtmetalle.

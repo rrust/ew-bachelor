@@ -1,0 +1,11 @@
+Aus der oktaedrischen Elektronengeometrie ergeben sich je nach Anzahl freier Paare verschiedene Molekülgeometrien...
+
+Schwefelhexafluorid mit sechs bindenden und null freien Paaren ist ein perfekter Oktaeder. Alle F-S-F Winkel betragen 90 Grad.
+
+Brompentafluorid hat fünf bindende und ein freies Paar. Ein freies Paar nimmt eine Position ein. Die fünf Fluor-Atome bilden eine quadratische Pyramide...
+
+Xenontetrafluorid ist besonders interessant. Es hat vier bindende und zwei freie Paare. Die beiden freien Paare stehen sich gegenüber... also trans-ständig mit 180 Grad Abstand.
+
+Die vier Fluor-Atome bilden ein Quadrat um das Xenon. Das Molekül ist planar, also flach...
+
+Wichtig: Die freien Paare sind trans-ständig, nicht cis-ständig. Würden sie nebeneinander sitzen, wäre die Abstoßung größer.

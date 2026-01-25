@@ -1,0 +1,27 @@
+Warum schmilzt Kochsalz bei 801 Grad, aber Magnesiumoxid erst bei fast 3000 Grad?
+
+Die Antwort liefert das Coulomb-Gesetz.
+
+...
+
+Ionische Verbindungen, also Salze, werden durch elektrostatische Anziehung zwischen entgegengesetzt geladenen Ionen zusammengehalten. Die Stärke dieser Anziehung beschreibt das Coulomb-Gesetz.
+
+Die Formel lautet: F gleich k mal Q eins mal Q zwei geteilt durch d Quadrat.
+
+Dabei ist F die Kraft der Anziehung, k die Coulomb-Konstante, Q eins und Q zwei sind die Ladungen der Ionen, und d ist der Abstand zwischen ihnen.
+
+...
+
+Zwei Faktoren entscheiden über die Stärke der Bindung.
+
+Erstens: Die Ladung der Ionen. Je höher die Ladungen, desto stärker die Anziehung.
+
+Bei Natriumchlorid mit Na plus und Cl minus ist das Ladungsprodukt 1 mal 1 gleich 1. Bei Magnesiumoxid mit Mg zwei plus und O zwei minus ist es 2 mal 2 gleich 4, also viermal stärker. Bei Aluminiumoxid mit Al drei plus und O zwei minus ist es 3 mal 2 gleich 6, sechsmal stärker.
+
+Zweitens: Der Abstand, also die Ionenradien. Je kleiner die Ionen, desto geringer der Abstand d, und desto stärker die Anziehung. Wichtig: Die Kraft nimmt mit dem Quadrat des Abstands ab! Halbiert man den Abstand, vervierfacht sich die Kraft.
+
+...
+
+Die Konsequenz für den Schmelzpunkt ist klar: Stärkere elektrostatische Anziehung bedeutet, dass mehr Energie nötig ist zum Trennen, und das bedeutet einen höheren Schmelzpunkt.
+
+Natriumchlorid mit Ladungen plus eins und minus eins schmilzt bei 801 Grad Celsius. Magnesiumoxid mit plus zwei und minus zwei schmilzt erst bei 2852 Grad!

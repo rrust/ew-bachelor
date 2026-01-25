@@ -1,0 +1,25 @@
+Wenn wir die gesamte Energie eines chemischen Systems beschreiben wollen, brauchen wir einen Begriff, der alles zusammenfasst. Das ist die innere Energie, symbolisiert mit dem Buchstaben U.
+
+...
+
+Die innere Energie ist einfach die Summe aus kinetischer Energie und potentieller Energie aller Teilchen im System. Also U gleich PE plus KE.
+
+...
+
+Wovon hängt sie ab? Drei Faktoren sind entscheidend.
+
+Erstens die Anzahl der Teilchen, also die Masse. Mehr Teilchen bedeuten höhere innere Energie.
+
+Zweitens die Art der Teilchen. Unterschiedliche Stoffe mit unterschiedlichen Bindungen und Strukturen haben unterschiedliche potentielle Energie.
+
+Drittens die Temperatur. Höhere Temperatur bedeutet höhere kinetische Energie und damit höhere innere Energie.
+
+...
+
+Besonders wichtig für die Praxis: Je höher die Temperatur, desto höher die innere Energie. Deshalb können wir Temperaturänderungen nutzen, um Änderungen der inneren Energie zu überwachen. Genau das ist die Grundlage der Kalorimetrie!
+
+...
+
+Eine Einschränkung gibt es allerdings: Wir können die absolute innere Energie eines Systems nicht direkt messen. Was wir messen können, ist nur die Änderung, also Delta U, die Differenz zwischen Endzustand und Anfangszustand.
+
+Die innere Energie ist übrigens eine Zustandsgröße. Das bedeutet, sie hängt nur vom aktuellen Zustand ab, nicht davon, wie das System dorthin gelangt ist.

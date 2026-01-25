@@ -1,0 +1,25 @@
+Warum riecht man Aceton sofort, aber Olivenöl kaum? Der Unterschied liegt im Dampfdruck.
+
+...
+
+Stell dir eine Flüssigkeit in einem geschlossenen Gefäß vor. Moleküle verdampfen von der Oberfläche. Der Dampf sammelt sich über der Flüssigkeit. Aber einige Gasmoleküle kehren auch zurück und kondensieren.
+
+Irgendwann stellt sich ein Gleichgewicht ein. Die Rate der Verdampfung gleicht der Rate der Kondensation. Der Druck, den der Dampf in diesem Zustand ausübt, ist der Gleichgewichts-Dampfdruck.
+
+...
+
+Der Dampfdruck hat drei wichtige Eigenschaften.
+
+Erstens, er steigt exponentiell mit der Temperatur. Bei höherer Temperatur haben mehr Moleküle genug Energie zum Verdampfen. Mehr Moleküle in der Gasphase bedeuten höheren Druck.
+
+Zweitens, er hängt von den intermolekularen Kräften ab. Schwache intermolekulare Kräfte bedeuten, dass Moleküle leicht in die Gasphase entkommen. Das ergibt einen hohen Dampfdruck. Diethylether hat einen hohen Dampfdruck. Wasser mit seinen starken Wasserstoffbrücken hat einen niedrigeren.
+
+Drittens, und das ist wichtig, der Dampfdruck ist unabhängig von der Menge der Flüssigkeit. Ein Milliliter Wasser und ein Liter Wasser haben bei gleicher Temperatur exakt den gleichen Dampfdruck.
+
+...
+
+Flüchtige Substanzen haben schwache intermolekulare Kräfte, hohen Dampfdruck und niedrigen Siedepunkt. Man riecht sie leicht. Aceton, Alkohol, Benzin.
+
+Wenig flüchtige Substanzen haben starke intermolekulare Kräfte, niedrigen Dampfdruck und hohen Siedepunkt. Wasser, Glycerin, Speiseöl.
+
+Je höher der Dampfdruck, desto flüchtiger die Substanz.

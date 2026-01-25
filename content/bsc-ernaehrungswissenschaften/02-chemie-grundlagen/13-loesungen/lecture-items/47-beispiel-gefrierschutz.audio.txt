@@ -1,0 +1,21 @@
+Wie viel Salz brauchst du, um vier Liter Wasser bis minus zehn Grad gefrierbeständig zu machen? Rechnen wir das durch.
+
+...
+
+Gegeben: Die gewünschte Erniedrigung ist zehn Grad. Die kryoskopische Konstante von Wasser ist eins Komma acht sechs. Der Van't Hoff Faktor von Natriumchlorid ist zwei.
+
+...
+
+Schritt eins: Wir stellen die Formel nach der Molalität um.
+
+m gleich Delta T geteilt durch K G P mal i. Das ergibt zehn geteilt durch eins Komma acht sechs mal zwei, also zehn geteilt durch drei Komma sieben zwei.
+
+Die benötigte Molalität ist zwei Komma sechs neun Mol pro Kilogramm.
+
+Schritt zwei: Wir berechnen die Stoffmenge. Zwei Komma sechs neun Mol pro Kilogramm mal vier Kilogramm Wasser ergibt zehn Komma sieben sechs Mol Natriumchlorid.
+
+Schritt drei: Wir rechnen in Masse um. Zehn Komma sieben sechs Mol mal 58 Komma vier vier Gramm pro Mol ergibt 629 Gramm.
+
+...
+
+Du brauchst also etwa 630 Gramm Salz für vier Liter Wasser, um einen Gefrierpunkt von minus zehn Grad zu erreichen.

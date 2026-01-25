@@ -1,0 +1,17 @@
+Legt man eine Rosine in Wasser, wird sie prall. Legt man eine Traube in konzentrierte Zuckerlösung, schrumpft sie. Das ist Osmose.
+
+...
+
+Osmose ist der Fluss von Lösungsmittelmolekülen durch eine semipermeable Membran. Semipermeabel bedeutet halbdurchlässig. Kleine Moleküle wie Wasser kommen durch, große Moleküle oder Ionen nicht.
+
+Das Wasser wandert immer von der Seite mit niedriger Konzentration zur Seite mit hoher Konzentration. Es verdünnt die konzentrierte Lösung.
+
+...
+
+Warum passiert das? Das System strebt nach höherer Entropie, nach mehr Unordnung. Ein Konzentrationsausgleich bedeutet maximale Verteilung der Teilchen.
+
+Der Fluss stoppt erst, wenn die Konzentrationen gleich sind. Oder wenn ein Gegendruck aufgebaut wird, der den Fluss verhindert.
+
+...
+
+Bei der Rosine fließt Wasser hinein, weil das Rosineninnere konzentrierter ist als das umgebende Wasser. Bei der Traube in Zuckerlösung ist es umgekehrt.

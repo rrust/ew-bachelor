@@ -1,0 +1,31 @@
+Wenn wir Eis in Dampf verwandeln wollen, müssen wir mehrere Schritte durchlaufen. Jeder Schritt braucht seine eigene Energie.
+
+Rechnen wir das für 500 Gramm Eis bei null Grad durch.
+
+...
+
+Schritt eins: Das Schmelzen. Hier nutzen wir die Formel q gleich m mal L.
+
+500 Gramm mal 333 Joule pro Gramm ergibt 166.500 Joule. Das ist die Energie, um das Eis bei null Grad in Wasser bei null Grad zu verwandeln. Die Temperatur bleibt konstant!
+
+...
+
+Schritt zwei: Das Aufheizen des Wassers von null auf hundert Grad. Hier nutzen wir q gleich m mal c mal Delta T.
+
+500 Gramm mal 4,184 Joule pro Gramm Kelvin mal 100 Kelvin ergibt 209.200 Joule.
+
+...
+
+Schritt drei: Das Verdampfen. Wieder q gleich m mal L.
+
+500 Gramm mal 2260 Joule pro Gramm ergibt 1.130.000 Joule. Das ist die Energie, um das Wasser bei hundert Grad in Dampf bei hundert Grad zu verwandeln. Wieder bleibt die Temperatur konstant!
+
+...
+
+Addieren wir alles: 166.500 plus 209.200 plus 1.130.000 Joule ergibt insgesamt 1.505.700 Joule, also etwa 1,5 Megajoule.
+
+...
+
+Schau dir die Anteile an: Das Schmelzen braucht nur 11 Prozent der Energie. Das Aufheizen nur 14 Prozent. Aber das Verdampfen verschlingt 75 Prozent, also drei Viertel der Gesamtenergie!
+
+Das zeigt, wie energieintensiv der Übergang von flüssig zu gasförmig wirklich ist.

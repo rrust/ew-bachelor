@@ -1,0 +1,19 @@
+Wie bestimmt man die Molmasse eines Proteins? Nicht über Gefrierpunkt oder Siedepunkt, die Änderungen wären viel zu klein. Aber der osmotische Druck hilft.
+
+...
+
+Bei Makromolekülen mit Molmassen über zehntausend Gramm pro Mol sind Gefrierpunktserniedrigung und Siedepunktserhöhung unmessbar klein. Der osmotische Druck aber ist auch bei sehr verdünnten Lösungen noch gut messbar.
+
+...
+
+Ein Beispiel: Du löst 35 Gramm Hämoglobin in einem Liter Wasser und misst einen osmotischen Druck von zehn Millimeter Quecksilbersäule bei 25 Grad.
+
+Schritt eins: Druck umrechnen. Zehn geteilt durch 760 ergibt null Komma null eins drei zwei Atmosphären.
+
+Schritt zwei: Konzentration berechnen. c gleich Pi geteilt durch R mal T. Das ergibt fünf Komma drei neun mal zehn hoch minus vier Mol pro Liter.
+
+Schritt drei: Molmasse berechnen. M gleich Masse geteilt durch Stoffmenge. 35 Gramm geteilt durch fünf Komma drei neun mal zehn hoch minus vier Mol ergibt 65.000 Gramm pro Mol.
+
+...
+
+So wissen wir: Hämoglobin hat eine Molmasse von etwa 65.000 Gramm pro Mol.

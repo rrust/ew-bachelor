@@ -1,0 +1,19 @@
+Chemische Reaktionen... sie beinhalten immer das Brechen und Bilden von Bindungen.
+
+Und hier gilt eine einfache Regel:
+
+Das Brechen von Bindungen benötigt Energie. Das ist endotherm, also positiv...
+
+Das Bilden von Bindungen setzt Energie frei. Das ist exotherm, also negativ.
+
+Mit Bindungsenergien kann man die Reaktionsenthalpie abschätzen. Man addiert die Energie für alle gebrochenen Bindungen... und subtrahiert die Energie für alle gebildeten Bindungen.
+
+Ein Beispiel: H zwei plus C L zwei reagiert zu zwei H C L.
+
+Gebrochen werden: eine H-H Bindung mit 436 Kilojoule und eine C L-C L Bindung mit 242 Kilojoule. Das sind zusammen plus 678 Kilojoule.
+
+Gebildet werden: zwei H-C L Bindungen mit je 432 Kilojoule. Das sind minus 864 Kilojoule.
+
+Die Summe? 678 minus 864 gleich minus 186 Kilojoule pro Mol...
+
+Negatives Delta H bedeutet: Die Reaktion ist exotherm. Sie setzt Energie frei.

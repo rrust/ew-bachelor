@@ -1,0 +1,27 @@
+Was passiert, wenn eine reversible Reaktion in einem geschlossenen Gefäß lange genug läuft?
+
+Sie erreicht einen besonderen Zustand: das dynamische Gleichgewicht.
+
+...
+
+Was bedeutet das genau?
+
+Im dynamischen Gleichgewicht laufen Hin- und Rückreaktion mit gleicher Geschwindigkeit ab.
+
+Das klingt paradox, aber es ist wichtig zu verstehen: Die Reaktionen stoppen nicht! Sie laufen auf Teilchenebene ständig weiter. Aber nach außen hin sieht es so aus, als würde nichts mehr passieren. Die Konzentrationen bleiben konstant.
+
+...
+
+Stell dir einen Bahnhof vor. Ständig steigen Leute ein und aus. Aber wenn gleich viele einsteigen wie aussteigen, bleibt die Anzahl der Menschen am Bahnsteig gleich. Das System ist im Gleichgewicht, obwohl ständig Bewegung herrscht.
+
+...
+
+Wichtig: Im Gleichgewicht sind die Konzentrationen von Edukten und Produkten nicht unbedingt gleich! Sie sind nur konstant. Das Verhältnis hängt davon ab, wie das Gleichgewicht liegt.
+
+...
+
+Ein Beispiel aus der Natur: Tropfsteinbildung in Höhlen.
+
+Calcium-Ionen und Hydrogencarbonat stehen im Gleichgewicht mit Kalk, Kohlendioxid und Wasser.
+
+In der Höhle entweicht C O zwei. Das Gleichgewicht verschiebt sich, und Kalk fällt aus. So entstehen über Jahrtausende Stalaktiten und Stalagmiten.

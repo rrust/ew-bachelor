@@ -1,0 +1,13 @@
+Ein Atom hat keine scharfe Grenze. Die Elektronenwolke erstreckt sich theoretisch bis ins Unendliche. Wie definieren wir also den Atomradius?
+
+...
+
+In der Praxis verwenden wir den kovalenten Radius. Das ist die Hälfte des Abstands zwischen zwei Atomkernen, wenn sie eine chemische Bindung bilden.
+
+Nehmen wir Chlor als Beispiel. In einem Chlor-zwei-Molekül beträgt der Bindungsabstand 198 Pikometer. Der Atomradius von Chlor ist also 198 geteilt durch 2, gleich 99 Pikometer.
+
+...
+
+Es gibt auch andere Radiustypen. Der metallische Radius ist die Hälfte des Abstands im Metallgitter, typisch für Metalle. Der Van-der-Waals-Radius beschreibt den Abstand bei nicht-bindender Berührung, etwa bei Edelgasen.
+
+Wichtig ist: Atomradien sind keine absoluten Werte. Sie hängen von der Messmethode ab. Für Vergleiche im Periodensystem verwenden wir konsistente Werte, damit die Trends sichtbar werden.

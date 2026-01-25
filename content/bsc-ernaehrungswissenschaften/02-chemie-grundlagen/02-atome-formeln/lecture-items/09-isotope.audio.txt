@@ -1,0 +1,29 @@
+Wusstest du, dass nicht alle Wasserstoffatome gleich sind?
+
+Manche sind schwerer als andere, und das hat wichtige Konsequenzen.
+
+...
+
+Isotope sind Atome desselben Elements, also mit gleicher Protonenzahl, die sich aber in der Anzahl der Neutronen unterscheiden.
+
+Der Merksatz ist einfach: Gleiche Protonenzahl, aber unterschiedliche Neutronenzahl bedeutet Isotope.
+
+...
+
+Schauen wir uns Wasserstoff an. Wasserstoff hat drei natürlich vorkommende Isotope.
+
+Protium, geschrieben als H-1, hat ein Proton und null Neutronen. Es macht 99,98 Prozent des natürlichen Wasserstoffs aus.
+
+Deuterium, H-2, hat ein Proton und ein Neutron. Es macht nur 0,02 Prozent aus.
+
+Tritium, H-3, hat ein Proton und zwei Neutronen. Es kommt nur in Spuren vor und ist radioaktiv.
+
+...
+
+Auch Kohlenstoff hat mehrere Isotope. C-12 mit 6 Protonen und 6 Neutronen ist stabil und macht 98,9 Prozent aus. C-13 mit einem zusätzlichen Neutron ist ebenfalls stabil. C-14 mit 8 Neutronen ist radioaktiv und wird für die berühmte Radiokarbondatierung verwendet.
+
+...
+
+Wichtig zu verstehen: Isotope verhalten sich chemisch nahezu identisch, weil sie dieselbe Elektronenzahl haben. Physikalisch unterscheiden sie sich aber durch ihre unterschiedliche Masse.
+
+Und manche Isotope sind radioaktiv, was bedeutet, dass ihr instabiler Kern zerfällt.

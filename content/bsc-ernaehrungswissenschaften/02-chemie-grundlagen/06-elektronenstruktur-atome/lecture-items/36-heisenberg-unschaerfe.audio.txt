@@ -1,0 +1,25 @@
+1927 zeigte Werner Heisenberg, dass die Natur ein fundamentales Geheimnis bewahrt.
+
+...
+
+Die Unschärferelation: Delta x mal Delta p ist größer oder gleich h geteilt durch vier Pi.
+
+Delta x ist die Ungenauigkeit des Ortes. Delta p die Ungenauigkeit des Impulses, also Masse mal Geschwindigkeit.
+
+...
+
+Was bedeutet das? Es ist prinzipiell unmöglich, gleichzeitig den Ort und den Impuls eines Teilchens exakt zu kennen.
+
+Je genauer wir den Ort wissen, desto ungenauer der Impuls. Je genauer wir den Impuls kennen, desto ungenauer der Ort.
+
+...
+
+Das ist keine technische Beschränkung. Es ist kein Problem unserer Messgeräte. Es ist ein fundamentales Naturgesetz. Die Natur selbst weiß nicht genau, wo das Elektron ist, wenn sein Impuls definiert ist.
+
+...
+
+Die Konsequenz für Atome? Wir können nicht mehr von festen Bahnen sprechen wie bei Bohr!
+
+Wenn ein Elektron auf einer exakten Bahn wäre, wüssten wir sowohl seinen Ort als auch seinen Impuls genau. Das widerspricht der Unschärferelation.
+
+Stattdessen müssen wir von Aufenthaltswahrscheinlichkeiten sprechen. Von Orbitalen.

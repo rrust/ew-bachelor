@@ -1,0 +1,25 @@
+Wie viel Gramm Produkt bekommst du aus 100 Gramm Reaktant?
+
+Diese Frage begegnet dir ständig in der Chemie. Zum Glück gibt es einen systematischen Weg, sie zu beantworten. Den Vier-Schritte-Plan.
+
+...
+
+Das Grundprinzip: Stöchiometrische Berechnungen laufen immer über die Stoffmenge, also über Mol.
+
+Schritt eins: Rechne die gegebene Masse in Mol um. Die Formel ist n gleich m geteilt durch M. Also Stoffmenge gleich Masse geteilt durch Molmasse.
+
+...
+
+Schritt zwei: Jetzt kommt der stöchiometrische Faktor ins Spiel. Du liest aus der Reaktionsgleichung das Mol-Verhältnis ab und rechnest von Mol Reaktant auf Mol Produkt um.
+
+Wenn zum Beispiel aus zwei Mol A drei Mol B entstehen, dann multiplizierst du mit drei Halben.
+
+...
+
+Schritt drei: Zurück in die Masse. Du multiplizierst die Mol des Produkts mit seiner Molmasse, und erhältst die Masse in Gramm.
+
+...
+
+Also zusammengefasst: Masse rein, Mol hin, Faktor drauf, Gramm raus.
+
+Dieser Dreisatz über die Stoffmenge funktioniert für jede chemische Reaktion. Wenn du ihn einmal verstanden hast, kannst du jedes stöchiometrische Problem lösen.

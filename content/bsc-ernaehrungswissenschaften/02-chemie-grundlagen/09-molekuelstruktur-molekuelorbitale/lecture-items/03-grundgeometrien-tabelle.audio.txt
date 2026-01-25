@@ -1,0 +1,13 @@
+Es gibt fünf grundlegende Geometrien, die du kennen solltest. Sie ergeben sich aus der Anzahl der Elektronenpaare um das Zentralatom.
+
+Beginnen wir mit zwei Paaren. Der maximale Abstand liegt bei 180 Grad. Das ergibt eine lineare Anordnung. Beispiele sind Berylliumfluorid oder Kohlendioxid...
+
+Bei drei Paaren verteilen sich diese gleichmäßig in einer Ebene bei 120 Grad. Die Geometrie heißt trigonal-planar. Ein typisches Beispiel ist Bortrifluorid.
+
+Vier Paare? Da wird es dreidimensional. Ein Tetraeder mit 109,5 Grad ist die ideale Anordnung. Methan ist das Paradebeispiel...
+
+Bei fünf Paaren entsteht eine trigonal-bipyramidale Struktur. Hier gibt es zwei verschiedene Positionen mit Winkeln von 90 und 120 Grad. Phosphorpentafluorid zeigt diese Struktur.
+
+Und bei sechs Paaren? Da entsteht ein Oktaeder mit allen Winkeln bei 90 Grad. Schwefelhexafluorid ist das klassische Beispiel...
+
+Diese fünf Geometrien sind die Basisstrukturen. Merke: Sie gelten für die Elektronengeometrie. Die Molekülgeometrie kann abweichen, wenn freie Paare vorhanden sind.

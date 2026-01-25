@@ -1,0 +1,23 @@
+Warum wird ein Gefäß bei manchen Reaktionen warm und bei anderen kalt? Die Antwort liegt in der Richtung des Energieflusses.
+
+...
+
+Bei exothermen Prozessen fließt Energie vom System zur Umgebung. Das System gibt Energie ab, seine Temperatur sinkt. Die Umgebung nimmt diese Energie auf, und das Gefäß wird warm.
+
+Delta H, die Enthalpieänderung, ist dabei negativ.
+
+Beispiele sind Verbrennungsreaktionen, Neutralisationen, die Kristallisation aus übersättigter Lösung, oder die Kondensation von Wasserdampf.
+
+...
+
+Bei endothermen Prozessen läuft es genau umgekehrt. Energie fließt von der Umgebung zum System. Das System nimmt Energie auf, seine Temperatur steigt. Die Umgebung verliert Energie, und das Gefäß wird kalt.
+
+Delta H ist dabei positiv.
+
+Beispiele sind das Verdampfen von Wasser, das Schmelzen von Eis, die Photosynthese, oder das Lösen von Ammoniumnitrat in Wasser, wie in einer Kältepackung.
+
+...
+
+Eine praktische Faustregel: Wenn sich ein Reaktionsgefäß während der Reaktion warm anfühlt, ist der Prozess exotherm. Fühlt es sich kalt an, ist der Prozess endotherm.
+
+Aber Achtung: Wir fühlen immer die Temperatur der Umgebung, also des Gefäßes, nicht die des Systems selbst!

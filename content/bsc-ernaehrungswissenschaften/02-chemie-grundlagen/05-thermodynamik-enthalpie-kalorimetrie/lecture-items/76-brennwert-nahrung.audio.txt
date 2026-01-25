@@ -1,0 +1,31 @@
+Die Thermochemie ist nicht nur für Chemiker relevant. Sie ist die wissenschaftliche Grundlage für die Energieangaben auf Lebensmittelverpackungen.
+
+...
+
+Der Brennwert gibt an, wie viel Energie bei der vollständigen Oxidation eines Nährstoffs freigesetzt wird. Aber es gibt einen wichtigen Unterschied zwischen physikalischem und physiologischem Brennwert.
+
+Der physikalische Brennwert wird im Bombenkalorimeter gemessen: vollständige Verbrennung der Substanz.
+
+Der physiologische Brennwert ist die tatsächlich im Körper nutzbare Energie. Sie ist etwas niedriger, weil nicht alles vollständig absorbiert oder verwertet wird.
+
+...
+
+Die typischen Brennwerte der Makronährstoffe solltest du dir merken.
+
+Kohlenhydrate: 17 Kilojoule pro Gramm, das entspricht 4 Kilokalorien pro Gramm.
+
+Proteine: ebenfalls 17 Kilojoule oder 4 Kilokalorien pro Gramm.
+
+Fette: 37 Kilojoule pro Gramm, das entspricht 9 Kilokalorien pro Gramm.
+
+Ethanol: 29 Kilojoule oder 7 Kilokalorien pro Gramm.
+
+...
+
+Interessant: Der physikalische Brennwert von Protein ist mit 23 Kilojoule pro Gramm höher als der physiologische Wert von 17 Kilojoule. Warum?
+
+Proteine werden im Körper nicht vollständig zu CO2 und H2O abgebaut. Der Stickstoff wird als Harnstoff ausgeschieden, der noch Energie enthält. Diese verlorene Energie wird vom physiologischen Brennwert abgezogen.
+
+...
+
+Die vereinfachten Werte 4, 4, 9 für Kohlenhydrate, Protein und Fett in Kilokalorien pro Gramm sind die Basis für das Kalorienzählen auf Lebensmittelverpackungen.

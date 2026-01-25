@@ -1,0 +1,21 @@
+Die fundamentale Formel der Quantenphysik verbindet Energie und Frequenz.
+
+E gleich h mal Nü.
+
+...
+
+E ist die Energie eines Quants in Joule. h ist die Planck-Konstante, 6,626 mal zehn hoch minus 34 Joule mal Sekunde. Und Nü ist die Frequenz in Hertz.
+
+Da Lichtgeschwindigkeit gleich Lambda mal Nü ist, können wir auch schreiben: E gleich h mal c geteilt durch Lambda.
+
+...
+
+Was bedeutet das praktisch?
+
+Kurze Wellenlänge, also hohe Frequenz, bedeutet hohe Energie. Lange Wellenlänge, niedrige Frequenz, bedeutet niedrige Energie.
+
+Das erklärt, warum UV-Strahlung Sonnenbrand verursacht. Die kurze Wellenlänge bedeutet hohe Energie. Und warum Radiowellen harmlos durch uns hindurchgehen: Lange Wellenlänge, niedrige Energie.
+
+...
+
+Diese Formel war der erste Hinweis, dass Licht Teilchencharakter hat. Jedes Photon trägt ein bestimmtes Energiequant.

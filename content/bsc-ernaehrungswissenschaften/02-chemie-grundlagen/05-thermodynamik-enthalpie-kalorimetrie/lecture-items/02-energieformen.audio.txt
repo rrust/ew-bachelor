@@ -1,0 +1,19 @@
+Was genau ist eigentlich Energie? Und was unterscheidet sie von Wärme?
+
+Diese beiden Begriffe werden im Alltag oft durcheinander geworfen, aber in der Physik haben sie ganz präzise Bedeutungen.
+
+...
+
+Energie ist die Fähigkeit, Arbeit zu leisten oder Wärme zu übertragen. Sie kann in vielen Formen auftreten: als Licht, als Bewegung, als elektrischer Strom, oder auch in chemischen Bindungen gespeichert.
+
+Wärme hingegen ist spezieller. Sie beschreibt ausschließlich die Energie, die zwischen zwei Objekten fließt, weil sie unterschiedliche Temperaturen haben.
+
+...
+
+Wichtig: Wärme ist kein Stoff, der in einem Körper gespeichert ist! Sie existiert nur während des Transfers, also während die Energie von warm nach kalt fließt.
+
+Dieser Fluss geschieht immer spontan, von warm nach kalt, niemals umgekehrt.
+
+...
+
+Für die Ernährungswissenschaft ist das besonders relevant: Der Brennwert von Lebensmitteln gibt an, wie viel Energie bei der vollständigen Oxidation der Nährstoffe freigesetzt wird. Das ist eine direkte Anwendung der Thermochemie in deinem Fachgebiet.

@@ -1,0 +1,13 @@
+Eine isoelektronische Reihe besteht aus Atomen und Ionen, die die gleiche Anzahl an Elektronen besitzen, aber eine unterschiedliche Kernladung haben.
+
+...
+
+Schauen wir die 10-Elektronen-Reihe an. Alle folgenden Teilchen haben 10 Elektronen, also die Neon-Konfiguration: 1s zwei, 2s zwei, 2p sechs.
+
+Stickstoff-drei-minus hat 7 Protonen und 10 Elektronen. Oxid, also Sauerstoff-zwei-minus, hat 8 Protonen und 10 Elektronen. Fluorid hat 9 Protonen und 10 Elektronen. Neon hat 10 Protonen und 10 Elektronen. Natrium-plus hat 11 Protonen und 10 Elektronen. Magnesium-zwei-plus hat 12 Protonen und 10 Elektronen. Und Aluminium-drei-plus hat 13 Protonen und 10 Elektronen.
+
+...
+
+Was haben sie alle gemeinsam? Die gleiche Elektronenkonfiguration und die gleiche Anzahl an Elektronen. Aber unterschiedlich viele Protonen.
+
+Das macht isoelektronische Teilchen so interessant: Wir können direkt vergleichen, wie sich die Kernladung auf die Größe auswirkt, wenn die Elektronenzahl konstant ist.

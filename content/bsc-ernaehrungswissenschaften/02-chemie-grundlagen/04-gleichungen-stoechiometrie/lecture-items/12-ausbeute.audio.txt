@@ -1,0 +1,27 @@
+In einer perfekten Welt würdest du genau so viel Produkt erhalten, wie die Stöchiometrie vorhersagt. Aber die Realität sieht anders aus.
+
+...
+
+Es gibt viele Gründe, warum du weniger bekommst als berechnet.
+
+Nebenreaktionen können auftreten. Nicht alle Edukte reagieren zum gewünschten Produkt. Beim Umfüllen, Filtrieren und Trocknen geht Material verloren. Und bei reversiblen Reaktionen wird nie hundert Prozent Umsatz erreicht.
+
+...
+
+Deshalb unterscheiden wir drei Begriffe.
+
+Die theoretische Ausbeute ist das Maximum, das die Stöchiometrie vorhersagt. Die tatsächliche Ausbeute ist das, was du wirklich im Labor isolierst. Und die prozentuale Ausbeute setzt beide ins Verhältnis.
+
+...
+
+Die Formel ist einfach: Prozentuale Ausbeute gleich tatsächliche Ausbeute geteilt durch theoretische Ausbeute, mal hundert.
+
+...
+
+Nehmen wir unser Ammoniumnitrat-Beispiel. Theoretisch sollten 250 Gramm Distickstoffoxid entstehen. Im Labor erhältst du aber nur 131 Gramm.
+
+131 geteilt durch 250 mal hundert ergibt 52 Prozent Ausbeute.
+
+...
+
+In der organischen Synthese sind 60 bis 80 Prozent oft schon sehr gut. Bei der Pharmaproduktion strebt man dagegen über 95 Prozent an, weil jeder Verlust teuer ist.

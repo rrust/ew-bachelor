@@ -1,0 +1,25 @@
+Was hält Wassermoleküle zusammen, sodass Wasser bei Raumtemperatur flüssig ist statt gasförmig?
+
+Die Antwort liegt in den intermolekularen Kräften.
+
+...
+
+Zunächst eine wichtige Unterscheidung. Intramolekulare Kräfte wirken innerhalb eines Moleküls. Das sind die starken kovalenten Bindungen, zum Beispiel die O-H Bindungen im Wassermolekül. Diese Kräfte sind sehr stark, typischerweise 100 bis 400 Kilojoule pro Mol.
+
+Intermolekulare Kräfte hingegen wirken zwischen verschiedenen Molekülen. Sie sind deutlich schwächer, nur 0,05 bis 40 Kilojoule pro Mol. Aber sie bestimmen die physikalischen Eigenschaften eines Stoffes. Siedepunkt, Schmelzpunkt, Viskosität und Oberflächenspannung hängen alle von diesen Kräften ab.
+
+...
+
+Es gibt vier Haupttypen intermolekularer Kräfte.
+
+Erstens, Ion-Dipol-Kräfte zwischen Ionen und polaren Molekülen.
+
+Zweitens, Wasserstoffbrückenbindungen, ein Spezialfall bei Wasserstoff an Stickstoff, Sauerstoff oder Fluor.
+
+Drittens, Dipol-Dipol-Kräfte zwischen Molekülen mit permanentem Dipol.
+
+Und viertens, Dispersionskräfte, die in allen Molekülen auftreten.
+
+...
+
+Diese Kräfte erklären, warum chemisch ähnliche Stoffe völlig unterschiedliche physikalische Eigenschaften haben können. Denk an Wasser und Schwefelwasserstoff. Beide haben ähnliche Struktur, aber Wasser siedet bei plus 100 Grad Celsius, Schwefelwasserstoff bei minus 60. Der Unterschied liegt in den intermolekularen Kräften.

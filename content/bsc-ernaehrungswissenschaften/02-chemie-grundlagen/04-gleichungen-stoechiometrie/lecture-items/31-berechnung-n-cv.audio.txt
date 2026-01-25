@@ -1,0 +1,47 @@
+Mit der Formel n gleich c mal V können wir berechnen, wie viel Substanz wir zum Herstellen einer Lösung benötigen.
+
+...
+
+Schauen wir uns ein konkretes Beispiel an.
+
+Wie viel Gramm Oxalsäure benötigen wir für 250 Milliliter einer 0,05 molaren Lösung?
+
+Die molare Masse von Oxalsäure ist 90 Gramm pro Mol.
+
+...
+
+Schritt eins... Wir berechnen zuerst die benötigte Stoffmenge.
+
+n gleich c mal V ergibt 0,05 Mol pro Liter mal 0,25 Liter.
+
+Das sind 0,0125 Mol.
+
+...
+
+Schritt zwei... Jetzt rechnen wir die Stoffmenge in Masse um.
+
+m gleich n mal M ergibt 0,0125 Mol mal 90 Gramm pro Mol.
+
+Das sind 1,13 Gramm Oxalsäure.
+
+...
+
+Wie gehen wir praktisch vor?
+
+Erst wiegen wir die 1,13 Gramm Oxalsäure ab.
+
+Dann geben wir sie in einen 250 Milliliter Messkolben.
+
+Wir fügen etwas destilliertes Wasser hinzu und lösen die Substanz.
+
+Danach füllen wir mit Wasser genau bis zur Eichmarke auf.
+
+...
+
+Wichtige Fehlerquellen... Wenn wir zuerst das Wasser in den Kolben geben, wird das Volumen ungenau.
+
+Füllen wir nicht bis zur Marke auf, ist die Konzentration zu hoch.
+
+Füllen wir über die Marke, ist sie zu niedrig.
+
+Die goldene Regel lautet... Immer zuerst der Feststoff, dann das Lösungsmittel.

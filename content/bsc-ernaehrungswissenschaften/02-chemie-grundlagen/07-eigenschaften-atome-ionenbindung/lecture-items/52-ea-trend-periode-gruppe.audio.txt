@@ -1,0 +1,19 @@
+Die Elektronenaffinität zeigt zwei Trends im Periodensystem.
+
+...
+
+In der Periode, von links nach rechts, wird die Elektronenaffinität zunehmend negativer. Das bedeutet stärkere Affinität für Elektronen.
+
+Warum? Die effektive Kernladung Z Stern steigt. Das führt zu stärkerer Anziehung für das aufzunehmende Elektron. Besonders die Halogene ziehen Elektronen stark an, weil sie nur noch ein Elektron für die Edelgaskonfiguration brauchen.
+
+...
+
+In der Gruppe, von oben nach unten, wird die Elektronenaffinität meist weniger negativ. Das bedeutet schwächere Affinität.
+
+Warum? Der Atomradius wird größer. Das aufzunehmende Elektron ist weiter vom Kern entfernt. Die Anziehungskraft ist geringer.
+
+...
+
+Zusammengefasst: In der Periode nach rechts wird sie negativer wegen höherem Z Stern. In der Gruppe nach unten wird sie weniger negativ wegen größerem Radius.
+
+Die Halogene in Gruppe 17 haben die negativsten Elektronenaffinitäten. Die Aufnahme eines Elektrons ist für sie energetisch sehr günstig.

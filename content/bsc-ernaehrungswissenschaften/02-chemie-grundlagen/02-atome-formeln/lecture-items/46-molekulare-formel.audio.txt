@@ -1,0 +1,33 @@
+Die empirische Formel von Benzol ist CH. Aber ein Molekül besteht nicht aus einem Kohlenstoff und einem Wasserstoff.
+
+Wie kommt man zur echten Molekularformel?
+
+...
+
+Die Molekularformel, auch Summenformel genannt, gibt die tatsächliche Anzahl aller Atome in einem Molekül an. Sie ist immer ein ganzzahliges Vielfaches der empirischen Formel.
+
+Die Gleichung lautet: Molekularformel gleich n mal empirische Formel.
+
+...
+
+Um von der empirischen zur Molekularformel zu gelangen, brauchst du die molare Masse der Verbindung. Die wird oft experimentell bestimmt, zum Beispiel durch Massenspektrometrie.
+
+Die Formel für n ist: n gleich molare Masse der Verbindung geteilt durch molare Masse der empirischen Formel.
+
+...
+
+Beim Beispiel Benzol: Die empirische Formel ist CH mit einer molaren Masse von 12 plus 1 gleich 13 Gramm pro Mol. Die experimentell bestimmte molare Masse der Verbindung ist 78 Gramm pro Mol.
+
+n gleich 78 geteilt durch 13 gleich 6.
+
+Die Molekularformel ist also 6 mal CH, also C sechs H sechs.
+
+...
+
+Noch ein Beispiel: Borhydrid. Die Massenanalyse ergibt 81,1 Prozent Bor und 18,9 Prozent Wasserstoff. Die experimentelle molare Masse ist 53,3 Gramm pro Mol.
+
+Aus der Massenanalyse ergibt sich die empirische Formel B zwei H fünf. Die molare Masse davon ist 2 mal 10,8 plus 5 mal 1, also 26,6 Gramm pro Mol.
+
+n gleich 53,3 geteilt durch 26,6 gleich 2.
+
+Die Molekularformel ist also B vier H zehn.

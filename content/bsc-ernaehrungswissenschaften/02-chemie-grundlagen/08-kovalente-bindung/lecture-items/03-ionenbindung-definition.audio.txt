@@ -1,0 +1,17 @@
+Bei der Ionenbindung werden Elektronen vollständig übertragen. Ein Atom gibt sie ab, ein anderes nimmt sie auf.
+
+Klassisches Beispiel: Natriumchlorid, also Kochsalz.
+
+Natrium ist ein Metall mit niedriger Ionisierungsenergie. Es gibt sein einziges Valenzelektron leicht ab und wird zum positiv geladenen Natrium-Ion.
+
+Chlor ist ein Nichtmetall mit hoher Elektronenaffinität. Es nimmt das Elektron gerne auf und wird zum negativ geladenen Chlorid-Ion.
+
+...
+
+Diese entgegengesetzt geladenen Ionen ziehen sich elektrostatisch an. Und zwar nicht nur ein Paar, sondern Milliarden von Ionen. Sie ordnen sich in einem regelmäßigen Gitter an. Das ist der Ionenkristall.
+
+Ionische Verbindungen haben typische Eigenschaften. Hohe Schmelzpunkte, weil die elektrostatischen Kräfte stark sind. Sie sind spröde, weil eine Verschiebung dazu führt, dass gleichnamige Ladungen nebeneinander kommen und sich abstoßen. Und sie leiten Strom, aber nur als Schmelze oder gelöst in Wasser, wenn die Ionen frei beweglich sind.
+
+...
+
+Merke dir: Ionenbindungen entstehen durch Elektronenübertragung und führen zu geladenen Teilchen.

@@ -1,0 +1,23 @@
+Jetzt ein komplexeres Beispiel. Das Sulfit-Ion, S O drei mit zweifach negativer Ladung.
+
+Schritt 1: Zentralatom. Zwischen Schwefel und Sauerstoff hat Schwefel die niedrigere Elektronegativität. Schwefel ist das Zentralatom.
+
+...
+
+Schritt 2: Valenzelektronen zählen. Schwefel hat 6. Jeder der 3 Sauerstoffe hat auch 6. Und die negative Ladung von 2 minus bedeutet, wir addieren 2 Elektronen dazu.
+
+6 plus 18 plus 2 ergibt 26 Elektronen. Das sind 13 Paare.
+
+Wichtig bei Ionen: Bei Anionen werden Elektronen addiert, bei Kationen subtrahiert.
+
+...
+
+Schritt 3: Gerüst zeichnen. 3 Einfachbindungen von Schwefel zu den 3 Sauerstoffen. Das verbraucht 3 Paare. Übrig sind 10 Paare.
+
+Schritt 4: Außenatome auffüllen. Jeder Sauerstoff braucht 3 weitere Paare für sein Oktett, da er bereits 1 Paar durch die Bindung hat. 3 mal 3 ergibt 9 Paare verbraucht. Übrig bleibt 1 Paar.
+
+Dieses letzte Paar kommt als freies Elektronenpaar an den Schwefel.
+
+...
+
+Das Ergebnis: Schwefel hat 3 Bindungen plus 1 freies Paar, also 8 Elektronen. Jeder Sauerstoff hat 1 Bindung plus 3 freie Paare, also auch 8 Elektronen. Die Gesamtladung ist 2 minus. Alles stimmt.

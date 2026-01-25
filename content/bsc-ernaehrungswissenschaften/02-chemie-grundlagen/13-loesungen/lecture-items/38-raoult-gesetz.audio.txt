@@ -1,0 +1,19 @@
+Gibst du Zucker ins Wasser, sinkt der Dampfdruck. Das Raoultsche Gesetz beschreibt diesen Effekt quantitativ.
+
+...
+
+Die Formel lautet: P der Lösung gleich X des Lösungsmittels mal P null des reinen Lösungsmittels.
+
+P null ist der Dampfdruck des reinen Wassers bei einer bestimmten Temperatur. X ist der Stoffmengenanteil des Wassers in der Lösung. Da immer etwas gelöst ist, ist X kleiner als eins. Und deshalb ist P kleiner als P null.
+
+...
+
+Aber warum sinkt der Dampfdruck überhaupt?
+
+Stell dir die Oberfläche der Lösung vor. Dort befinden sich jetzt auch Zuckermoleküle, nicht nur Wassermoleküle. Die Zuckermoleküle nehmen Platz ein und blockieren Wassermoleküle daran, in die Gasphase überzutreten.
+
+Weniger Wassermoleküle an der Oberfläche bedeutet weniger Verdampfung, bedeutet niedrigerer Dampfdruck.
+
+...
+
+Die Dampfdruckerniedrigung ist die Basis für alle anderen kolligativen Eigenschaften. Siedepunktserhöhung, Gefrierpunktserniedrigung, alles folgt daraus.

@@ -1,0 +1,29 @@
+pH-Berechnungen sind reine Logarithmus-Rechnungen. Wenn du den Taschenrechner bedienen kannst, ist es einfach.
+
+...
+
+Von der Konzentration zum pH: Du nimmst den Logarithmus der Konzentration und kehrst das Vorzeichen um.
+
+Beispiel: Die Konzentration ist 1,6 mal zehn hoch minus drei Mol pro Liter.
+
+Auf dem Taschenrechner eingeben: 1,6 E minus 3. Dann die LOG-Taste drücken. Das Ergebnis ist minus 2,8. Vorzeichen umkehren: Der pH ist 2,8.
+
+...
+
+Vom pH zur Konzentration geht es umgekehrt. Du rechnest zehn hoch minus pH.
+
+Beispiel: Der pH ist 3,12.
+
+Auf dem Taschenrechner: Minus 3,12 eingeben, dann die zehn-hoch-x-Taste drücken. Das Ergebnis ist 7,6 mal zehn hoch minus vier Mol pro Liter.
+
+...
+
+Für basische Lösungen gibt es den pOH-Wert. Er ist definiert als minus Logarithmus der Hydroxid-Ionen-Konzentration.
+
+Bei 25 Grad gilt: pH plus pOH gleich vierzehn.
+
+Wenn der pH 10 ist, ist der pOH 4. Das ist eine basische Lösung.
+
+...
+
+Mit diesen zwei Formeln kannst du jeden Säure-Base-Wert umrechnen. Übe es ein paar Mal, dann wird es zur Routine.

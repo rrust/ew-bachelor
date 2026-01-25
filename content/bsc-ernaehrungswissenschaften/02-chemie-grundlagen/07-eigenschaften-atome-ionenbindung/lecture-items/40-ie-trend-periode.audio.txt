@@ -1,0 +1,19 @@
+Innerhalb einer Periode steigt die Ionisierungsenergie von links nach rechts.
+
+Zwei Faktoren wirken zusammen.
+
+...
+
+Erstens: Die effektive Kernladung steigt. Mehr Protonen bedeutet stärkere Anziehung. Die Valenzelektronen werden fester gehalten.
+
+Zweitens: Der Atomradius sinkt. Kleinere Atome haben ihre Elektronen näher am Kern. Näher am Kern bedeutet stärkere Anziehung.
+
+...
+
+Die Konsequenz: Es wird von links nach rechts immer schwerer, ein Elektron zu entfernen.
+
+Schauen wir die zweite Periode. Lithium hat 520 Kilojoule pro Mol. Beryllium 900. Kohlenstoff 1086. Stickstoff 1402. Fluor 1681. Und Neon erreicht 2081 Kilojoule pro Mol.
+
+Der Trend ist eindeutig: Die Edelgase haben die höchsten Ionisierungsenergien! Sie geben ihre Elektronen am ungernsten ab.
+
+Es gibt kleine Abweichungen, zum Beispiel ist Bor niedriger als Beryllium und Sauerstoff niedriger als Stickstoff. Aber der generelle Trend ist klar.

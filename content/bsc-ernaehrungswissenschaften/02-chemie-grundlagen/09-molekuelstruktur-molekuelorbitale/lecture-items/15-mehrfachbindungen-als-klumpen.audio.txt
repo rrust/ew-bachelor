@@ -1,0 +1,15 @@
+Bei Molekülen mit Doppel- oder Dreifachbindungen gilt eine wichtige Vereinfachung...
+
+Eine Mehrfachbindung zählt im VSEPR-Modell als ein einzelner Elektronenklumpen.
+
+Warum funktioniert das?
+
+Alle Elektronen einer Mehrfachbindung befinden sich zwischen denselben zwei Atomen. Sie agieren als eine Einheit bei der Abstoßung...
+
+Kohlendioxid hat zwei Doppelbindungen. Das sind aber nur zwei Klumpen... daher ist es linear.
+
+Formaldehyd hat zwei Einfachbindungen zu Wasserstoff und eine Doppelbindung zu Sauerstoff. Das macht drei Klumpen... also trigonal-planar.
+
+Blausäure hat eine Einfachbindung und eine Dreifachbindung. Wieder zwei Klumpen... also linear.
+
+Die Faustregel: Zähle die Anzahl der Bindungspartner, nicht die Anzahl der Bindungen. Plus die freien Paare. Das ergibt die Anzahl der Klumpen... und damit die Geometrie.

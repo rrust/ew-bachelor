@@ -1,0 +1,29 @@
+Wolfgang Pauli formulierte 1925 ein fundamentales Prinzip. Elektronen sind Individualisten.
+
+...
+
+Das Pauli-Ausschlussprinzip lautet: In einem Atom dürfen keine zwei Elektronen in allen vier Quantenzahlen übereinstimmen.
+
+...
+
+Was bedeutet das praktisch? Zwei Elektronen im selben Orbital haben die gleichen Werte für n, l und m l. Sie müssen sich also im Spin unterscheiden!
+
+Das erste Elektron hat Spin plus einhalb, Pfeil nach oben. Das zweite hat Spin minus einhalb, Pfeil nach unten.
+
+Ein drittes Elektron müsste einen der Spin-Werte wiederholen. Das ist verboten.
+
+...
+
+Daraus folgt direkt: Maximal zwei Elektronen pro Orbital.
+
+...
+
+Nehmen wir das eins s Orbital als Beispiel. Das erste Elektron hat n gleich eins, l gleich null, m l gleich null, m s gleich plus einhalb.
+
+Das zweite Elektron: gleiche Werte für n, l und m l, aber m s gleich minus einhalb.
+
+Ein drittes? Müsste plus einhalb oder minus einhalb wiederholen. Unmöglich!
+
+Helium mit zwei Elektronen kann beide im eins s unterbringen. Lithium mit drei Elektronen muss das dritte ins zwei s setzen.
+
+Das Pauli-Prinzip erklärt den Aufbau des Periodensystems!

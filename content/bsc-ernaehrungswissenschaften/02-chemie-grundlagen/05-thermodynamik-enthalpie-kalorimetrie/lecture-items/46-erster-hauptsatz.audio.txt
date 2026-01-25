@@ -1,0 +1,25 @@
+Der Erste Hauptsatz der Thermodynamik ist eine der fundamentalsten Gleichungen der Physik. Er verknüpft die Änderung der inneren Energie mit Wärme und Arbeit.
+
+...
+
+Die Gleichung lautet: Delta U gleich q plus w.
+
+Delta U ist die Änderung der inneren Energie. q ist die übertragene Wärme. Und w ist die verrichtete Arbeit. Alle Größen werden in Joule gemessen.
+
+...
+
+Die Vorzeichenkonventionen sind entscheidend für alle Berechnungen.
+
+Für Wärme gilt: Wenn Energie ins System hineinfließt, ist q positiv. Das ist ein endothermer Prozess. Wenn Energie aus dem System herausfließt, ist q negativ. Das ist exotherm.
+
+Für Arbeit gilt: Wenn Arbeit am System verrichtet wird, also Energie hineinkommt, ist w positiv. Das passiert bei Kompression. Wenn das System Arbeit leistet, also Energie abgibt, ist w negativ. Das passiert bei Expansion.
+
+...
+
+In Worten ausgedrückt besagt der Erste Hauptsatz: Die Änderung der inneren Energie eines Systems entspricht der Summe aus zugeführter Wärme und verrichteter Arbeit.
+
+...
+
+Da Energie weder erzeugt noch vernichtet werden kann, muss die Änderung der inneren Energie des Systems und der Umgebung zusammen immer null ergeben.
+
+Was das System verliert, nimmt die Umgebung auf, und umgekehrt.

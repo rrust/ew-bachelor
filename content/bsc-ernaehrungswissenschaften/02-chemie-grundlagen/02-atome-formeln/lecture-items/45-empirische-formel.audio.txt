@@ -1,0 +1,35 @@
+Glucose hat die Formel C sechs H zwölf O sechs. Aber wie findet man das überhaupt heraus?
+
+Der erste Schritt führt zur empirischen Formel.
+
+...
+
+Die empirische Formel, auch Verhältnisformel genannt, gibt das kleinste ganzzahlige Verhältnis der Atome in einer Verbindung an.
+
+Ein interessantes Beispiel: Glucose mit der Molekularformel C sechs H zwölf O sechs und Essigsäure mit C zwei H vier O zwei haben dieselbe empirische Formel, nämlich CH zwei O. Das Verhältnis von Kohlenstoff zu Wasserstoff zu Sauerstoff ist in beiden Fällen 1 zu 2 zu 1.
+
+Auch Benzol mit der Molekularformel C sechs H sechs hat eine einfache empirische Formel: CH.
+
+...
+
+Wie berechnet man die empirische Formel aus Massenprozenten? In vier Schritten.
+
+Schritt 1: Nimm an, du hast 100 Gramm der Verbindung. Dann entspricht der Prozentanteil direkt der Grammzahl.
+
+Schritt 2: Rechne die Gramm in Mol um, indem du durch das jeweilige Atomgewicht teilst.
+
+Schritt 3: Teile alle Molwerte durch den kleinsten Wert.
+
+Schritt 4: Falls nötig, multipliziere mit einer kleinen Zahl, um ganzzahlige Werte zu erhalten.
+
+...
+
+Ein Beispiel: Eine Verbindung enthält 40 Prozent Kohlenstoff, 6,7 Prozent Wasserstoff und 53,3 Prozent Sauerstoff.
+
+Bei 100 Gramm hast du also 40 Gramm C, 6,7 Gramm H und 53,3 Gramm O.
+
+In Mol: 40 geteilt durch 12 gleich 3,33 Mol C. 6,7 geteilt durch 1 gleich 6,7 Mol H. 53,3 geteilt durch 16 gleich 3,33 Mol O.
+
+Durch den kleinsten Wert 3,33 teilen: C ist 1, H ist 2, O ist 1.
+
+Die empirische Formel ist also CH zwei O.

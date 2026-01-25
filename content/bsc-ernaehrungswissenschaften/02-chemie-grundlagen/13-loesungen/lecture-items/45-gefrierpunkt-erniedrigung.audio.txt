@@ -1,0 +1,17 @@
+Streusalz im Winter funktioniert, weil es den Gefrierpunkt des Wassers senkt. Und dieses Prinzip ist viel stärker messbar als die Siedepunktserhöhung.
+
+...
+
+Warum sinkt der Gefrierpunkt? Um ein Kristallgitter zu bilden, müssen sich Wassermoleküle regelmäßig anordnen. Gelöste Teilchen stören diese Ordnung. Sie sitzen im Weg und müssen erst aussortiert werden. Dafür braucht man niedrigere Temperaturen.
+
+...
+
+Die Formel ist analog zur Siedepunktserhöhung: Delta T Gefrierpunkt gleich K G P mal m mal i.
+
+K G P ist die kryoskopische Konstante, für Wasser eins Komma acht sechs Grad Celsius mal Kilogramm pro Mol.
+
+...
+
+Vergleiche das mit der ebullioskopischen Konstante von null Komma fünf eins zwei. Der Gefrierpunkt sinkt also drei Komma sechs mal stärker als der Siedepunkt steigt!
+
+Eine einmolale Lösung hat einen Gefrierpunkt von minus eins Komma acht sechs Grad Celsius. Das ist gut messbar und wird für analytische Zwecke genutzt.

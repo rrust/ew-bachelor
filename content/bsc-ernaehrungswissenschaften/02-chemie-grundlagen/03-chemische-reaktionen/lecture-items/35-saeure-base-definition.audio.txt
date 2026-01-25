@@ -1,0 +1,37 @@
+Was sind eigentlich Säuren und Basen? Die Antwort hängt davon ab, wen du fragst!
+
+Es gibt verschiedene Definitionen. Die zwei wichtigsten solltest du kennen.
+
+...
+
+Die ältere Definition stammt von Arrhenius aus dem Jahr 1884.
+
+Nach Arrhenius ist eine Säure ein Stoff, der in Wasser H-plus-Ionen bildet. Also Protonen oder Hydronium-Ionen.
+
+Eine Base ist ein Stoff, der in Wasser OH-minus-Ionen bildet, also Hydroxid-Ionen.
+
+Das Problem: Diese Definition gilt nur für wässrige Lösungen.
+
+...
+
+Die modernere Definition stammt von Brønsted und Lowry aus 1923.
+
+Hier ist eine Säure ein Protonendonator. Sie gibt H-plus ab.
+
+Und eine Base ist ein Protonenakzeptor. Sie nimmt H-plus auf.
+
+Das ist viel allgemeiner und erklärt auch Reaktionen ohne Wasser.
+
+...
+
+Ein Beispiel: Ammoniak.
+
+Ammoniak nimmt ein Proton vom Wasser auf und wird zu Ammonium. Nach Brønsted ist Ammoniak eine Base, weil es ein Proton aufnimmt.
+
+...
+
+Noch etwas Wichtiges: Konjugierte Säure-Base-Paare.
+
+Wenn eine Säure ein Proton abgibt, entsteht ihre konjugierte Base. Wenn eine Base ein Proton aufnimmt, entsteht ihre konjugierte Säure.
+
+Das sind immer Paare, die sich um genau ein Proton unterscheiden.

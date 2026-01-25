@@ -1,0 +1,23 @@
+Jedes Elektron in einem Atom hat eine eindeutige Adresse. Diese Adresse besteht aus vier Quantenzahlen. Beginnen wir mit der wichtigsten.
+
+...
+
+Die Hauptquantenzahl n bestimmt drei Dinge: Die Schale oder das Energieniveau. Die Größe des Orbitals. Und die Energie des Elektrons.
+
+Die erlaubten Werte sind eins, zwei, drei, vier und so weiter.
+
+...
+
+n gleich eins ist die K-Schale, entspricht der ersten Periode im Periodensystem. n gleich zwei die L-Schale, zweite Periode. n gleich drei die M-Schale. Und so weiter.
+
+...
+
+Die Zusammenhänge sind einfach: Größeres n bedeutet, das Elektron ist weiter vom Kern entfernt. Größeres n bedeutet höhere Energie. Größeres n bedeutet auch ein größeres Orbital.
+
+...
+
+Wie viele Elektronen passen maximal in eine Schale? Die Formel lautet: Zwei n Quadrat.
+
+In der ersten Schale also maximal zwei Elektronen. In der zweiten acht. In der dritten 18. In der vierten 32.
+
+Die Hauptquantenzahl entspricht der Zeilennummer im Periodensystem, in der das äußerste Elektron zu finden ist.

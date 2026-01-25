@@ -1,0 +1,17 @@
+Die M O Theorie ermöglicht eine quantitative Berechnung der Bindungsordnung...
+
+Die Formel: Bindungsordnung gleich ein halb mal die Differenz aus bindenden und antibindenden Elektronen.
+
+Was bedeuten die Ergebnisse?
+
+Bindungsordnung null heißt: Keine stabile Bindung. Eins bedeutet Einfachbindung. Zwei bedeutet Doppelbindung. Drei bedeutet Dreifachbindung...
+
+Auch gebrochene Werte wie 0,5 oder 1,5 sind möglich. Sie zeigen Bindungen mit teilweise antibindendem Charakter.
+
+Ein Beispiel: Wasserstoff, H zwei.
+
+Es hat zwei Elektronen. Beide sitzen im bindenden Sigma-Orbital. Null Elektronen im antibindenden Orbital...
+
+Bindungsordnung gleich ein halb mal zwei minus null gleich eins. Eine Einfachbindung... stimmt!
+
+Diese Berechnung erklärt auch, warum Helium zwei nicht existiert. Mit vier Elektronen wären beide Orbitale besetzt... Bindungsordnung null.

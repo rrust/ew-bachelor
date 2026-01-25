@@ -1,0 +1,17 @@
+Die Elektronenaffinität ist das energetische Gegenstück zur Ionisierungsenergie. Sie beschreibt die Energieänderung bei der Aufnahme eines Elektrons.
+
+Die Definition lautet: Die Elektronenaffinität ist die Energie, die umgesetzt wird, wenn ein Atom in der Gasphase ein Elektron aufnimmt, um ein Anion zu bilden.
+
+...
+
+Anders als bei der Ionisierungsenergie kann die Elektronenaffinität positiv oder negativ sein.
+
+Ein negativer Wert bedeutet: Energie wird freigesetzt. Das Atom will das Elektron aufnehmen.
+
+Ein positiver Wert bedeutet: Energie muss zugeführt werden. Das Atom will das Elektron nicht.
+
+...
+
+Nehmen wir Chlor als Beispiel. Wenn ein Chloratom im Gaszustand ein Elektron aufnimmt, wird es zum Chlorid-Ion. Dabei werden 349 Kilojoule pro Mol frei. Die Elektronenaffinität ist also minus 349 Kilojoule pro Mol.
+
+Das Chlorid-Ion ist sehr stabil, weil bei seiner Bildung so viel Energie frei wird.

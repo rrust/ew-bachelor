@@ -1,0 +1,31 @@
+786 Kilojoule pro Mol für Kochsalz, aber fast 3900 für Magnesiumoxid. Was sagen diese Zahlen aus?
+
+Sie beschreiben die Gitterenergie, und die bestimmt viele Eigenschaften eines Salzes.
+
+...
+
+Die Gitterenergie ist die Energie, die freigesetzt wird, wenn gasförmige Ionen ein festes Ionengitter bilden. Umgekehrt betrachtet ist es die Energie, die benötigt wird, um ein Ionengitter vollständig in gasförmige Ionen zu zerlegen.
+
+...
+
+Vergleichen wir Natriumchlorid und Magnesiumoxid.
+
+Natriumchlorid besteht aus Na plus und Cl minus, Ladungsprodukt 1, Gitterenergie 786 Kilojoule pro Mol, Schmelzpunkt 801 Grad.
+
+Magnesiumoxid besteht aus Mg zwei plus und O zwei minus, Ladungsprodukt 4, Gitterenergie 3850 Kilojoule pro Mol, Schmelzpunkt 2852 Grad.
+
+Magnesiumoxid hat also eine etwa fünfmal höhere Gitterenergie als Kochsalz, weil die Ionenladungen höher sind.
+
+...
+
+Zwei Faktoren beeinflussen die Gitterenergie.
+
+Der wichtigste ist die Ladung der Ionen. Höhere Ladung bedeutet höhere Gitterenergie.
+
+Der zweite ist die Größe der Ionen. Kleinere Ionen können näher zusammenrücken, der Abstand wird kürzer, und die Gitterenergie steigt.
+
+...
+
+In der Praxis hat die Gitterenergie mehrere Konsequenzen. Salze mit hoher Gitterenergie sind schwerer löslich. Sie haben höhere Schmelzpunkte. Und sie werden für hitzebeständige Anwendungen genutzt.
+
+Feuerfeste Materialien in Öfen bestehen oft aus Aluminiumoxid oder Magnesiumoxid. Der Grund? Ihre extrem hohe Gitterenergie sorgt für die nötige Hitzebeständigkeit.

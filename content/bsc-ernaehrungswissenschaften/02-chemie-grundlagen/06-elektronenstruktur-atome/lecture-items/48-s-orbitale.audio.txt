@@ -1,0 +1,23 @@
+Die s-Orbitale sind die einfachsten. Perfekte Kugeln.
+
+...
+
+Ihre Charakteristika: Kugelförmig, also sphärisch symmetrisch. Die Nebenquantenzahl l ist null. Pro Schale gibt es nur ein s-Orbital, da m l nur null sein kann. Und sie haben keine bevorzugte Richtung im Raum.
+
+...
+
+Die Größe hängt von n ab. Das eins s Orbital ist die kleinste Kugel, direkt am Kern. Das zwei s ist größer. Das drei s noch größer. Und so weiter.
+
+...
+
+Ein interessantes Detail sind Knotenflächen. Eine Knotenfläche ist ein Bereich, wo die Aufenthaltswahrscheinlichkeit exakt null ist.
+
+Die Formel: Anzahl radialer Knotenflächen gleich n minus l minus eins.
+
+Das eins s hat keine Knotenfläche. Das zwei s hat eine. Das drei s hat zwei.
+
+...
+
+Das zwei s Orbital ist also keine hohle Kugel. Es hat eine innere Region mit hoher Aufenthaltswahrscheinlichkeit, dann eine Knotenebene wo Psi null ist, und dann eine äußere Region.
+
+s-Elektronen können dem Kern sehr nahe kommen. Das ist wichtig für die Abschirmung anderer Elektronen.

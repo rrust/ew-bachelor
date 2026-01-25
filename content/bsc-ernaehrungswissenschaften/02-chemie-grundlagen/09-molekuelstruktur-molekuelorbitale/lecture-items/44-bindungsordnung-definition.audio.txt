@@ -1,0 +1,13 @@
+Die Bindungsordnung... sie gibt an, wie viele chemische Bindungen zwischen einem Paar von Atomen existieren.
+
+Eine Einfachbindung hat die Bindungsordnung eins. Eine Doppelbindung hat zwei. Eine Dreifachbindung hat drei...
+
+Aber es gibt auch gebrochene Bindungsordnungen!
+
+Das passiert bei mesomeren Strukturen, also bei Resonanz...
+
+Nehmen wir das Nitrit-Ion, N O zwei minus. Es hat zwei mesomere Grenzstrukturen. In einer liegt die Doppelbindung links, in der anderen rechts.
+
+Die Realität? Ein Hybrid aus beiden Strukturen. Jede N-O Bindung hat eine Bindungsordnung von 1,5...
+
+Das ist keine theoretische Spielerei. Gebrochene Bindungsordnungen zeigen an, dass Elektronen delokalisiert sind. Sie verteilen sich über mehrere Bindungen... Das stabilisiert das Molekül.

@@ -1,0 +1,41 @@
+Redoxreaktionen lassen sich in zwei Halbreaktionen zerlegen: die Oxidation und die Reduktion.
+
+Das macht es viel übersichtlicher!
+
+...
+
+Schauen wir uns die Reaktion von Aluminium mit Kupfer-Ionen an.
+
+Die Gesamtreaktion: Zwei Aluminium fest plus drei Kupfer-zwei-plus ergibt zwei Aluminium-drei-plus plus drei Kupfer fest.
+
+...
+
+Die Oxidations-Halbreaktion zeigt nur, was mit Aluminium passiert.
+
+Aluminium wird zu Aluminium-drei-plus und gibt dabei drei Elektronen ab.
+
+Aluminium wird oxidiert.
+
+...
+
+Die Reduktions-Halbreaktion zeigt, was mit Kupfer passiert.
+
+Kupfer-zwei-plus nimmt zwei Elektronen auf und wird zu Kupfer.
+
+Kupfer-Ionen werden reduziert.
+
+...
+
+Jetzt kommt der wichtige Teil: Elektronenausgleich!
+
+Die Elektronen, die abgegeben werden, müssen gleich der Anzahl aufgenommener Elektronen sein.
+
+Aluminium gibt drei Elektronen ab. Kupfer-zwei-plus nimmt nur zwei auf.
+
+Also multiplizieren wir: Zwei Aluminium geben sechs Elektronen ab. Drei Kupfer-zwei-plus nehmen sechs Elektronen auf.
+
+Jetzt stimmt die Bilanz!
+
+...
+
+Wenn wir die Halbreaktionen addieren, kürzen sich die Elektronen weg. In der Gesamtreaktion erscheinen keine freien Elektronen mehr. Sie werden vollständig übertragen.

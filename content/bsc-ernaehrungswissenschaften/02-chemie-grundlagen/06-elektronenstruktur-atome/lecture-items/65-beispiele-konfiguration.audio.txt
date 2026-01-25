@@ -1,0 +1,31 @@
+Jetzt wird es praktisch. Wie schreibt man Elektronenkonfigurationen auf?
+
+...
+
+Die Schreibweise: Orbital mit hochgestellter Elektronenzahl.
+
+Beispiel Natrium: Eins s zwei, zwei s zwei, zwei p sechs, drei s eins.
+
+...
+
+Die ersten Elemente sind einfach. Wasserstoff: eins s eins. Helium: eins s zwei. Lithium: eins s zwei, zwei s eins. Beryllium: eins s zwei, zwei s zwei.
+
+Ab Bor füllen wir die p-Orbitale. Bor: eins s zwei, zwei s zwei, zwei p eins. Kohlenstoff: zwei p zwei. Stickstoff: zwei p drei. Sauerstoff: zwei p vier. Fluor: zwei p fünf. Neon: zwei p sechs.
+
+...
+
+Bei den Übergangsmetallen wird es interessanter. Scandium mit 21 Elektronen: eins s zwei, zwei s zwei, zwei p sechs, drei s zwei, drei p sechs, vier s zwei, drei d eins.
+
+Eisen mit 26 Elektronen: Gleicher Kern, aber vier s zwei, drei d sechs.
+
+Zink mit 30: vier s zwei, drei d zehn.
+
+...
+
+Aber Vorsicht, es gibt Ausnahmen! Halbvolle und volle d-Schalen sind besonders stabil.
+
+Chrom hat nicht vier s zwei, drei d vier, sondern vier s eins, drei d fünf. Die d-Schale ist halb voll.
+
+Kupfer hat nicht vier s zwei, drei d neun, sondern vier s eins, drei d zehn. Die d-Schale ist voll.
+
+Die d-Schale wird auf Kosten eines s-Elektrons gefüllt.

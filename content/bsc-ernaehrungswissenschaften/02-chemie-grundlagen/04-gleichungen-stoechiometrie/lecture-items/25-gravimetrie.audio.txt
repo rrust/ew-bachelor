@@ -1,0 +1,25 @@
+Eine der ältesten und genauesten Analysemethoden ist die Gravimetrie. Das Prinzip ist verblüffend einfach: Du wiegst etwas.
+
+...
+
+Genauer gesagt: Du wandelst den gesuchten Stoff in eine unlösliche Verbindung um. Diese fällt als Niederschlag aus. Dann filterst du den Niederschlag, trocknest ihn, und wiegst ihn. Aus der Masse rechnest du zurück auf die ursprüngliche Stoffmenge.
+
+...
+
+Ein klassisches Beispiel ist die Sulfatbestimmung. Du willst wissen, wie viel Natriumsulfat in einer Probe ist.
+
+Du gibst Bariumchlorid-Lösung dazu. Das Sulfat reagiert mit Barium zu Bariumsulfat, einem schwerlöslichen weißen Niederschlag.
+
+...
+
+Jetzt wiegst du das Bariumsulfat. Sagen wir, es sind 1,0882 Gramm.
+
+Die Molmasse von Bariumsulfat ist 233 Gramm pro Mol. Also hast du 0,00466 Mol.
+
+Da die Stöchiometrie eins zu eins ist, waren das auch 0,00466 Mol Sulfat in der Probe.
+
+Multipliziert mit der Molmasse von Natriumsulfat ergibt das 0,662 Gramm.
+
+...
+
+Die Gravimetrie hat große Vorteile: Waagen sind extrem präzise, und du brauchst keine teuren Geräte. Allerdings ist die Methode zeitaufwändig.

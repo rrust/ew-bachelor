@@ -1,0 +1,17 @@
+Was passiert mit der effektiven Kernladung, wenn wir in einer Periode von links nach rechts gehen?
+
+Sie nimmt zu. Und das hat einen interessanten Grund.
+
+...
+
+Mit jedem Element steigt die Protonenzahl um eins. Gleichzeitig steigt auch die Elektronenzahl um eins. Aber das neue Elektron kommt in die gleiche Schale, nicht in eine neue.
+
+Hier liegt der Trick: Elektronen in der gleichen Schale schirmen sich gegenseitig nur schlecht ab!
+
+Die inneren Rumpfelektronen bleiben konstant. Aber die Protonenzahl steigt. Also erfahren die Valenzelektronen eine immer stärkere Anziehung.
+
+...
+
+Schauen wir die zweite Periode an. Bei Lithium ist Z Stern etwa plus 1. Bei Beryllium plus 2. Bei Bor plus 3. Und so weiter bis Fluor mit plus 7.
+
+Die Konsequenz: Vom Lithium zum Fluor werden die Valenzelektronen immer stärker zum Kern gezogen. Deshalb werden die Atome kleiner, obwohl sie mehr Elektronen haben!

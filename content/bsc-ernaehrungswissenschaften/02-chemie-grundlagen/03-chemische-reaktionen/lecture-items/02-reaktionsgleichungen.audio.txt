@@ -1,0 +1,25 @@
+Stell dir vor, du hast ein Rezept vor dir. Links die Zutaten, rechts das fertige Gericht. Genau so funktioniert eine chemische Reaktionsgleichung!
+
+Links stehen die Edukte, also die Ausgangsstoffe. Rechts die Produkte, also was dabei herauskommt. Und der Pfeil dazwischen zeigt die Richtung der Reaktion.
+
+...
+
+Schauen wir uns ein Beispiel an. Zink reagiert mit Iod zu Zinkiodid. In Formelschreibweise: Zink plus I zwei ergibt Zink I zwei.
+
+...
+
+Jetzt zu einem wichtigen Detail: Die Koeffizienten.
+
+Das sind die Zahlen vor den Formeln. Sie geben das Mengenverhältnis an.
+
+Zum Beispiel: vier Aluminium plus drei O zwei ergibt zwei Aluminium zwei O drei.
+
+Diese Gleichung kannst du auf zwei Ebenen lesen.
+
+Auf Teilchenebene bedeutet sie: vier Atome Aluminium plus drei Moleküle Sauerstoff ergeben zwei Formeleinheiten Aluminiumoxid.
+
+Auf molarer Ebene: vier Mol Aluminium plus drei Mol Sauerstoff ergeben zwei Mol Aluminiumoxid.
+
+...
+
+Wichtig! Die Koeffizienten stehen vor der Formel und geben die Menge an. Die kleinen Zahlen innerhalb der Formel, die Indizes, gehören zur Formel selbst. Die darfst du niemals verändern!

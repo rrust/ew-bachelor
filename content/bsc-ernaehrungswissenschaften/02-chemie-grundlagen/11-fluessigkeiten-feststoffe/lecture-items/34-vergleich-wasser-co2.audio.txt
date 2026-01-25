@@ -1,0 +1,29 @@
+Warum heißt festes CO2 Trockeneis? Warum wird es beim Auftauen nicht nass?
+
+Die Antwort liegt im Phasendiagramm.
+
+...
+
+Wasser zeigt eine Anomalie. Die Schmelzkurve hat eine negative Steigung. Sie lehnt nach links.
+
+Das ist ungewöhnlich. Bei den meisten Stoffen ist der Feststoff dichter als die Flüssigkeit. Die Schmelzkurve hat dann eine positive Steigung.
+
+Bei Wasser ist es umgekehrt. Eis ist weniger dicht als flüssiges Wasser. Erhöht man den Druck auf Eis bei knapp null Grad, weicht das System in die Phase mit höherer Dichte aus. Das ist die flüssige Phase. Eis schmilzt unter Druck!
+
+Das erklärt, warum Schlittschuhlaufen funktioniert. Unter der schmalen Kufe entsteht hoher Druck. Ein dünner Wasserfilm bildet sich.
+
+...
+
+CO2 ist der Normalfall. Die Schmelzkurve hat positive Steigung. Der Feststoff ist dichter.
+
+Aber der entscheidende Unterschied liegt im Tripelpunkt. Bei Wasser liegt er bei 0,006 Atmosphären. Bei CO2 bei 5,19 Atmosphären!
+
+Bei Normaldruck, also einer Atmosphäre, liegt man unter dem Tripelpunktdruck von CO2. Das bedeutet: Bei Normaldruck gibt es kein flüssiges CO2!
+
+Trockeneis bei minus 78 Grad und einer Atmosphäre sublimiert direkt von fest zu gasförmig. Es wird nie flüssig. Daher der Name Trockeneis.
+
+...
+
+Im CO2-Feuerlöscher herrscht hoher Druck, 50 bis 70 Bar. Das liegt über dem Tripelpunktdruck. Dort kann flüssiges CO2 existieren.
+
+Wasser ist anomal, Eis schwimmt und schmilzt unter Druck. CO2 sublimiert bei Normaldruck, weil sein Tripelpunkt über einer Atmosphäre liegt.

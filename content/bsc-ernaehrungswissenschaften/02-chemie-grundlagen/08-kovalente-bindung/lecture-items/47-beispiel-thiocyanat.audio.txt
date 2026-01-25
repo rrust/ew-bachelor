@@ -1,0 +1,33 @@
+Das Thiocyanat-Ion ist ein anspruchsvolles Beispiel für die Anwendung von Formalladungen. S C N mit einfach negativer Ladung.
+
+Valenzelektronen: Schwefel 6, Kohlenstoff 4, Stickstoff 5, plus 1 für die Ladung. Das ergibt 16 Elektronen.
+
+...
+
+Es gibt drei Hauptstrukturen mit unterschiedlichen Formalladungen.
+
+Struktur 1: Einfachbindung zwischen Schwefel und Kohlenstoff, Dreifachbindung zwischen Kohlenstoff und Stickstoff.
+
+Die Formalladungen sind: Schwefel minus 1, Kohlenstoff 0, Stickstoff 0. Die Summe ist minus 1, stimmt.
+
+...
+
+Struktur 2: Zwei Doppelbindungen. S Doppelbindung C Doppelbindung N.
+
+Die Formalladungen sind: Schwefel 0, Kohlenstoff 0, Stickstoff minus 1. Die Summe ist wieder minus 1.
+
+...
+
+Struktur 3: Dreifachbindung zwischen Schwefel und Kohlenstoff, Einfachbindung zu Stickstoff.
+
+Die Formalladungen sind: Schwefel plus 1, Kohlenstoff 0, Stickstoff minus 2. Die Summe ist minus 1.
+
+...
+
+Welche Strukturen sind stabiler?
+
+Struktur 1 und 2 haben kleine Formalladungen, maximal minus 1. Sie sind günstig.
+
+Struktur 3 hat hohe Ladungstrennung, plus 1 und minus 2. Das ist ungünstig.
+
+Die Strukturen 1 und 2 tragen beide zum Hybrid bei. Struktur 3 ist wegen der hohen Ladungen weniger wichtig.

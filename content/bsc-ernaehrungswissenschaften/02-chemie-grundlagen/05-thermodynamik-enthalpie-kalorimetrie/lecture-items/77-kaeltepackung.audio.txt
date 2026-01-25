@@ -1,0 +1,37 @@
+Hast du dich schon einmal gefragt, wie eine Kältepackung funktioniert? Die, die man drückt, und plötzlich wird sie kalt?
+
+Die Antwort ist ein wunderbares Beispiel für eine endotherme Reaktion im Alltag.
+
+...
+
+In der Kältepackung befindet sich festes Ammoniumnitrat und Wasser, getrennt durch eine dünne Wand. Wenn du die Packung drückst, reißt diese Wand, das Salz löst sich im Wasser, und die Lösung wird kalt.
+
+Die Reaktion lautet: Festes Ammoniumnitrat geht in Lösung und dissoziiert in Ammoniumionen und Nitrationen.
+
+...
+
+Berechnen wir die Lösungsenthalpie mit Bildungsenthalpien.
+
+Festes Ammoniumnitrat hat minus 365,6 Kilojoule pro Mol. Die wässrigen Ammoniumionen haben minus 132,5. Die wässrigen Nitrationen haben minus 205.
+
+Delta r H Grad gleich Produkte minus Edukte. Also minus 132,5 plus minus 205 minus, in Klammern, minus 365,6.
+
+Das ergibt minus 337,5 plus 365,6, also plus 28,1 Kilojoule pro Mol.
+
+...
+
+Delta H ist positiv, also ist die Reaktion endotherm! Das System, also die Lösung, entzieht der Umgebung, also der verletzten Körperstelle, Wärme. Dadurch sinkt die Temperatur, und genau das ist der gewünschte Kühleffekt.
+
+...
+
+Rechnen wir: Wie viel Ammoniumnitrat braucht man, um 100 Gramm Wasser um 20 Grad zu kühlen?
+
+Die benötigte Energieentnahme ist q gleich 100 Gramm mal 4,184 Joule pro Gramm Kelvin mal 20 Kelvin, also 8370 Joule oder 8,37 Kilojoule.
+
+Die nötige Stoffmenge ist 8,37 Kilojoule geteilt durch 28,1 Kilojoule pro Mol, ergibt 0,298 Mol.
+
+Die Masse ist 0,298 Mol mal 80 Gramm pro Mol, ergibt knapp 24 Gramm.
+
+...
+
+Solche Berechnungen sind typisch für die Entwicklung von medizinischen Kältepackungen!

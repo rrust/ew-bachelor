@@ -1,0 +1,19 @@
+Wie misst man eigentlich, wie viel Energie in einem Brennstoff steckt? Dafür gibt es ein spezielles Gerät: das Bombenkalorimeter.
+
+...
+
+Das Prinzip ist elegant: Eine Probe wird in reinem Sauerstoff verbrannt. Die dabei freigesetzte Wärme erhöht die Temperatur des umgebenden Wassers. Aus der Temperaturerhöhung können wir die Verbrennungsenergie berechnen.
+
+...
+
+Der Aufbau besteht aus mehreren Komponenten. Das Herzstück ist die sogenannte Bombe, ein druckfester Stahlbehälter, in dem die Probe unter Sauerstoffdruck verbrannt wird. Die Bombe ist von einem Wasserbad umgeben, das die freigesetzte Wärme aufnimmt.
+
+Ein präzises Thermometer misst die Temperaturerhöhung. Ein Rührer sorgt dafür, dass die Temperatur im Wasserbad gleichmäßig verteilt ist. Und eine Isolierung verhindert den Wärmeaustausch mit der äußeren Umgebung.
+
+...
+
+Eine wichtige Eigenschaft: Da die Bombe ein starrer Stahlbehälter ist, bleibt das Volumen konstant. Das ist ein sogenannter isochorer Prozess.
+
+Bei konstantem Volumen misst man direkt die Änderung der inneren Energie, Delta U, nicht die Enthalpie Delta H.
+
+Der Unterschied ist bei den meisten Verbrennungsreaktionen jedoch gering, nur wenige Prozent, weil die Volumenarbeit klein ist.

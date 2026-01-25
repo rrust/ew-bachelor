@@ -1,0 +1,19 @@
+Ob ein Molekül polar oder unpolar ist... das beeinflusst alles. Löslichkeit, Siedepunkt, biologische Wirkung.
+
+Aber wann ist ein Molekül polar?
+
+Zwei Bedingungen müssen erfüllt sein...
+
+Erstens: Es müssen polare Bindungen vorliegen. Das bedeutet Bindungen zwischen Atomen mit unterschiedlicher Elektronegativität.
+
+Zweitens: Die Geometrie muss unsymmetrisch sein. Die Dipolmomente der Bindungen dürfen sich nicht gegenseitig aufheben.
+
+Beide Bedingungen müssen erfüllt sein!
+
+Ein Molekül mit polaren Bindungen kann trotzdem unpolar sein... wenn es symmetrisch aufgebaut ist.
+
+Kohlendioxid hat polare C gleich O Bindungen. Aber es ist linear und symmetrisch... die Dipole heben sich auf. Unpolar.
+
+Wasser hat polare O-H Bindungen. Und es ist gewinkelt, also unsymmetrisch... die Dipole addieren sich. Polar.
+
+Methan? Die C-H Bindungen sind nur schwach polar. Und die tetraedrische Symmetrie lässt alles verschwinden... unpolar.

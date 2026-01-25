@@ -1,0 +1,15 @@
+Je nachdem, welche Atomorbitale gemischt werden, entstehen unterschiedliche Hybridorbitale...
+
+s p Hybridisierung: Ein s-Orbital plus ein p-Orbital. Das ergibt zwei Hybridorbitale. Die Geometrie ist linear mit 180 Grad. Beispiele sind Berylliumfluorid und Kohlendioxid.
+
+s p zwei Hybridisierung: Ein s-Orbital plus zwei p-Orbitale. Das ergibt drei Hybridorbitale. Die Geometrie ist trigonal-planar mit 120 Grad. Beispiele sind Bortrifluorid und Ethen.
+
+s p drei Hybridisierung: Ein s-Orbital plus drei p-Orbitale. Das ergibt vier Hybridorbitale. Die Geometrie ist tetraedrisch mit 109,5 Grad. Beispiele sind Methan, Wasser und Ammoniak...
+
+Bei erweiterten Oktetten kommen d-Orbitale hinzu.
+
+s p drei d Hybridisierung ergibt fünf Orbitale in trigonal-bipyramidaler Anordnung.
+
+s p drei d zwei Hybridisierung ergibt sechs Orbitale in oktaedrischer Anordnung.
+
+Die Hybridisierung wird durch die Anzahl der Sigma-Bindungen und freien Paare bestimmt!

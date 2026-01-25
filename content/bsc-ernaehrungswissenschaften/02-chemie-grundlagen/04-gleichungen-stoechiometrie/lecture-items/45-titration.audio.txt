@@ -1,0 +1,25 @@
+Du hast eine Säurelösung unbekannter Konzentration. Wie findest du heraus, wie konzentriert sie ist? Mit einer Titration.
+
+...
+
+Das Prinzip: Du gibst langsam eine Base bekannter Konzentration zur Säure, bis beide exakt reagiert haben. Dieser Punkt heißt Äquivalenzpunkt.
+
+Am Äquivalenzpunkt ist die Stoffmenge der Säure gleich der Stoffmenge der Base, natürlich angepasst an die Stöchiometrie.
+
+...
+
+Praktisch verwendest du eine Bürette. Das ist ein graduiertes Glasrohr mit Hahn. Du füllst die Base hinein und lässt sie tropfenweise in den Kolben mit der Säure fließen.
+
+Im Kolben ist ein Indikator. Das ist ein Farbstoff, der bei einem bestimmten pH-Wert die Farbe wechselt.
+
+...
+
+Phenolphthalein zum Beispiel ist farblos in saurer Lösung und wird rosa in basischer. Sobald die Lösung rosa bleibt, hast du den Äquivalenzpunkt erreicht.
+
+...
+
+Du liest das verbrauchte Volumen an der Bürette ab. Mit der bekannten Konzentration der Base berechnest du deren Stoffmenge. Und daraus ergibt sich die unbekannte Konzentration der Säure.
+
+...
+
+Die Titration ist eine der wichtigsten Analysemethoden in der Chemie. Sie ist präzise, einfach und braucht nur grundlegende Laborausrüstung.

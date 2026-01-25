@@ -1,0 +1,23 @@
+Isoelektronische Spezies sind Teilchen, die strukturell verwandt sind, obwohl sie aus verschiedenen Atomen bestehen.
+
+Zwei Spezies sind isoelektronisch, wenn sie die gleiche Anzahl an Valenzelektronen haben und die gleiche Lewis-Struktur besitzen.
+
+...
+
+Das klassische Beispiel sind Stickstoff und Kohlenmonoxid.
+
+N zwei hat 5 plus 5 gleich 10 Valenzelektronen. C O hat 4 plus 6 gleich 10 Valenzelektronen. Beide haben eine Dreifachbindung und je ein freies Paar an den Außenatomen.
+
+Obwohl N zwei aus zwei gleichen Atomen besteht und C O aus zwei verschiedenen, haben sie die gleiche Struktur.
+
+...
+
+Es gibt weitere Beispiele. Kohlenstoffdioxid, Distickstoffmonoxid und das Nitronium-Ion haben alle 16 Valenzelektronen und eine lineare Struktur mit zwei Doppelbindungen.
+
+Carbonat, Nitrat und Schwefeltrioxid haben 24 Valenzelektronen und zeigen alle Resonanzstrukturen.
+
+...
+
+Die Bedeutung? Isoelektronische Spezies haben ähnliche Geometrien, ähnliche Bindungslängen und oft ähnliche chemische Eigenschaften.
+
+Gleiche Elektronenzahl plus gleiche Struktur gleich isoelektronisch. Diese Teilchen verhalten sich chemisch oft ähnlich.

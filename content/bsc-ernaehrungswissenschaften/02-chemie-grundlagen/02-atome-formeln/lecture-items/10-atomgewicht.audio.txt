@@ -1,0 +1,29 @@
+Warum steht im Periodensystem bei Chlor nicht 35, sondern 35,45?
+
+Die Antwort liegt in der natürlichen Mischung der Isotope.
+
+...
+
+Da Elemente in der Natur als Mischung verschiedener Isotope vorkommen, ist das im Periodensystem angegebene Atomgewicht ein gewichteter Durchschnitt aller natürlich vorkommenden Isotope.
+
+Die Berechnungsformel lautet: Atomgewicht gleich Summe aus Masse mal Häufigkeit für jedes Isotop.
+
+...
+
+Rechnen wir das am Beispiel von Lithium durch. Lithium kommt in zwei stabilen Isotopen vor: Li-6 mit einer Masse von 6,015 u und einer Häufigkeit von 7,5 Prozent, sowie Li-7 mit 7,016 u und 92,5 Prozent Häufigkeit.
+
+Die Rechnung: 6,015 mal 0,075 plus 7,016 mal 0,925. Das ergibt 0,451 plus 6,490, also 6,94 u.
+
+Und genau dieser Wert steht im Periodensystem!
+
+...
+
+Noch ein Beispiel: Chlor. Chlor-35 hat eine Masse von 34,97 u und macht 75,8 Prozent aus. Chlor-37 hat 36,97 u und macht 24,2 Prozent aus.
+
+34,97 mal 0,758 plus 36,97 mal 0,242 ergibt 35,45 u.
+
+Deshalb ist das Atomgewicht von Chlor keine ganze Zahl, obwohl einzelne Atome nur ganzzahlige Massen haben können.
+
+...
+
+Übrigens: Die gesamte Skala der Atommassen basiert auf Kohlenstoff-12, das per Definition exakt 12 u wiegt.

@@ -1,0 +1,31 @@
+Nicht alle chemischen Reaktionen sind Einbahnstraßen. Viele können auch rückwärts ablaufen!
+
+Solche Reaktionen nennen wir reversibel, also umkehrbar.
+
+...
+
+In Gleichungen erkennst du reversible Reaktionen am Doppelpfeil. Nicht ein einfacher Pfeil nach rechts, sondern zwei Pfeile, einer nach rechts und einer nach links.
+
+Das bedeutet: Die Hinreaktion und die Rückreaktion laufen gleichzeitig ab.
+
+...
+
+Ein berühmtes Beispiel ist der Haber-Bosch-Prozess, die industrielle Herstellung von Ammoniak.
+
+Stickstoff plus drei Wasserstoff bilden zwei Ammoniak. Aber gleichzeitig zerfällt Ammoniak auch wieder in Stickstoff und Wasserstoff.
+
+Beide Reaktionen laufen nebeneinander her.
+
+...
+
+Wann ist eine Reaktion reversibel?
+
+Wenn die Produkte unter denselben Bedingungen wieder zu Edukten reagieren können. In einem geschlossenen System können beide Reaktionen ablaufen. Und die Geschwindigkeiten beider Reaktionen können sich angleichen.
+
+...
+
+Ein Alltagsbeispiel: Kohlensäure in deinem Mineralwasser.
+
+C O zwei löst sich im Wasser und bildet Kohlensäure. Aber die Kohlensäure zerfällt auch wieder, und C O zwei entweicht.
+
+Deshalb wird eine offene Flasche Sprudel mit der Zeit schal. Das Gleichgewicht verschiebt sich, weil das Gas entweicht.

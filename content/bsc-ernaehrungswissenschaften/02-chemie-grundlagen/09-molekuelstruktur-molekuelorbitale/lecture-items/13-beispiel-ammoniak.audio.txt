@@ -1,0 +1,17 @@
+Schauen wir uns Ammoniak genauer an... N H drei.
+
+Stickstoff hat fünf Valenzelektronen. Dazu kommen drei Elektronen von den drei Wasserstoffatomen. Das macht zusammen acht Elektronen... also vier Elektronenpaare.
+
+Drei dieser Paare sind bindend, eines ist frei...
+
+Die Elektronengeometrie? Mit vier Paaren ist sie tetraedrisch.
+
+Aber die Molekülgeometrie? Da wir nur die Atome betrachten, sehen wir eine pyramidenförmige Struktur... genauer gesagt trigonal-pyramidal.
+
+Und der Bindungswinkel?
+
+Im perfekten Tetraeder wäre er 109,5 Grad. Aber bei Ammoniak ist er kleiner, etwa 107 Grad...
+
+Warum? Das freie Elektronenpaar am Stickstoff drückt die drei N-H-Bindungen zusammen. Es beansprucht mehr Raum als ein bindendes Paar.
+
+Merke dir: Bei Ammoniak ist die Elektronengeometrie tetraedrisch, aber die Molekülgeometrie trigonal-pyramidal!

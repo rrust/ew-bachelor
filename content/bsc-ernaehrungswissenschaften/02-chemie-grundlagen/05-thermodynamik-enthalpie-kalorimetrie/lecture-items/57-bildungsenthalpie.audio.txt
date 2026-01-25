@@ -1,0 +1,29 @@
+Die Standard-Bildungsenthalpie ist ein zentraler Begriff, den du für viele Berechnungen brauchst.
+
+...
+
+Die Definition lautet: Die Standard-Bildungsenthalpie Delta f H Grad ist die Enthalpieänderung, wenn ein Mol einer Verbindung aus ihren Elementen im Standardzustand gebildet wird.
+
+...
+
+Und jetzt die goldene Regel, die du nie vergessen darfst: Für alle Elemente im Standardzustand ist die Bildungsenthalpie per Definition null.
+
+Sauerstoffgas hat Delta f H Grad gleich null. Kohlenstoff als Graphit hat null. Eisen als Feststoff hat null. Wasserstoffgas hat null.
+
+Das ist keine Messung, sondern eine Festlegung. Die Elemente im Standardzustand sind unser Referenzpunkt.
+
+...
+
+Für Verbindungen gibt es Tabellenwerte. Flüssiges Wasser hat minus 285,8 Kilojoule pro Mol. Kohlendioxid hat minus 393,5. Glucose hat sogar minus 1274 Kilojoule pro Mol.
+
+...
+
+Was sagen die Vorzeichen aus?
+
+Eine negative Bildungsenthalpie bedeutet, dass die Verbindung stabiler ist als die Elemente, aus denen sie besteht. Bei ihrer Bildung wird Energie frei.
+
+Eine positive Bildungsenthalpie bedeutet, dass die Verbindung weniger stabil ist als die Elemente. Man muss Energie zuführen, um sie zu bilden.
+
+...
+
+Die meisten stabilen Verbindungen haben negative Bildungsenthalpien, denn bei ihrer Bildung wird Energie freigesetzt.

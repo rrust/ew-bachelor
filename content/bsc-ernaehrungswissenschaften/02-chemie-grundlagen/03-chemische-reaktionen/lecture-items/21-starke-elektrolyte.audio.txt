@@ -1,0 +1,27 @@
+Leitet deine Lösung Strom? Diese Frage verrät viel über die chemische Natur eines Stoffes!
+
+Stoffe werden danach klassifiziert, ob ihre wässrigen Lösungen elektrischen Strom leiten. Die Leitfähigkeit basiert auf der Anwesenheit von beweglichen Ionen.
+
+...
+
+Starke Elektrolyte zerfallen in Wasser vollständig in Ionen. Deshalb leiten sie Strom sehr gut.
+
+Welche Stoffe sind starke Elektrolyte?
+
+Erstens: Gut lösliche Salze. Natriumchlorid zum Beispiel zerfällt komplett in Natrium-Ionen und Chlorid-Ionen.
+
+Zweitens: Starke Säuren wie Salzsäure. Sie dissoziieren vollständig.
+
+Drittens: Starke Basen wie Natriumhydroxid.
+
+...
+
+Woran erkennst du starke Elektrolyte in Gleichungen?
+
+Am einfachen Pfeil! Der einfache Pfeil zeigt, dass die Reaktion nur in eine Richtung läuft. Die Dissoziation ist vollständig.
+
+Es gibt praktisch keine undissoziierten Moleküle mehr in der Lösung. Alles liegt als Ionen vor.
+
+...
+
+Zusammengefasst: Starke Elektrolyte, vollständige Dissoziation, hohe Leitfähigkeit, einfacher Pfeil in der Gleichung.

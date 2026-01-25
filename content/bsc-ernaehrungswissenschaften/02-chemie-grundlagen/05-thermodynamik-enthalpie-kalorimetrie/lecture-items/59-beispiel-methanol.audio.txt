@@ -1,0 +1,33 @@
+Rechnen wir eine konkrete Aufgabe durch: Was ist die Reaktionsenthalpie für die vollständige Verbrennung von Methanol?
+
+...
+
+Die Reaktionsgleichung lautet: Ein Mol gasförmiges Methanol plus anderthalb Mol Sauerstoff reagiert zu einem Mol Kohlendioxid plus zwei Mol Wasserdampf.
+
+...
+
+Aus der Tabelle entnehmen wir die Bildungsenthalpien. Gasförmiges Methanol hat minus 201,5 Kilojoule pro Mol. Sauerstoff als Element hat null. Kohlendioxid hat minus 393,5. Und Wasserdampf hat minus 241,8 Kilojoule pro Mol.
+
+...
+
+Schritt eins: Die Summe der Produkte berechnen.
+
+Ein mal minus 393,5 für das CO2 plus zwei mal minus 241,8 für die zwei Wassermoleküle. Das ergibt minus 393,5 minus 483,6, insgesamt minus 877,1 Kilojoule.
+
+...
+
+Schritt zwei: Die Summe der Edukte berechnen.
+
+Ein mal minus 201,5 für das Methanol plus anderthalb mal null für den Sauerstoff. Das ergibt minus 201,5 Kilojoule.
+
+...
+
+Schritt drei: Die Differenz bilden.
+
+Delta r H Grad gleich Produkte minus Edukte, also minus 877,1 minus, in Klammern minus 201,5.
+
+Minus 877,1 plus 201,5 ergibt minus 675,6 Kilojoule pro Mol.
+
+...
+
+Das negative Vorzeichen zeigt: Die Reaktion ist exotherm. Pro Mol verbranntem Methanol werden 675,6 Kilojoule Energie freigesetzt. Das ist der Heizwert, den du in Brennstofftabellen findest.

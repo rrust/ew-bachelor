@@ -1,0 +1,19 @@
+Anionen entstehen, wenn neutrale Atome Elektronen aufnehmen. Das ist typisch für Nichtmetalle. Chlor nimmt ein Elektron auf und wird zu Chlorid.
+
+Hier ist der Gegentrend: Anionen sind immer größer als ihre neutralen Ursprungsatome.
+
+...
+
+Warum sind Anionen größer?
+
+Erstens: Erhöhte Abstoßung. Ein zusätzliches Elektron wird in die Valenzschale aufgenommen. Mehr Elektronen bedeutet mehr Elektron-Elektron-Abstoßung. Die Elektronenwolke dehnt sich aus.
+
+Zweitens: Geringere effektive Anziehung. Die Kernladung bleibt gleich, aber es müssen mehr Elektronen gebunden werden. Die Anziehung pro Elektron sinkt.
+
+...
+
+Schauen wir Fluor an. Das Atom hat 9 Elektronen und 9 Protonen, mit einem Radius von 71 Pikometer. Das Fluorid-Anion hat 10 Elektronen, aber immer noch nur 9 Protonen. Der Radius steigt auf 133 Pikometer.
+
+Das ist fast eine Verdopplung!
+
+Merke dir: Bei Anionen bleiben die Protonen gleich, aber die Elektronen nehmen zu. Mehr Abstoßung bedeutet größerer Radius.

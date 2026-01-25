@@ -1,0 +1,15 @@
+Einem Atom können nacheinander mehrere Elektronen entrissen werden. Das Atom wird zum einfach positiven Ion, dann zum zweifach positiven Ion, dann zum dreifach positiven Ion, und so weiter.
+
+Dabei steigen die Ionisierungsenergien mit jedem Schritt.
+
+...
+
+Warum wird es immer schwerer?
+
+Nehmen wir Magnesium. Die erste Ionisierungsenergie I eins beträgt 738 Kilojoule pro Mol, um vom Atom zum einfach positiven Ion zu kommen. Die zweite Ionisierungsenergie I zwei beträgt 1451 Kilojoule pro Mol, um vom einfach zum zweifach positiven Ion zu kommen. Das ist etwa das Doppelte!
+
+...
+
+Bei jeder Ionisierung steigt das Verhältnis Protonen zu Elektronen. Die verbleibenden Elektronen werden stärker angezogen. Man braucht mehr Energie, um sie zu entfernen.
+
+Beim Magnesium-plus-Ion gibt es 12 Protonen, aber nur noch 11 Elektronen. Die Anziehung pro Elektron ist höher, also muss man mehr Energie aufwenden, um das nächste Elektron zu entfernen.

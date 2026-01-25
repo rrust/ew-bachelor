@@ -1,0 +1,19 @@
+1913 stellte Niels Bohr ein Modell vor, das die Linienspektren erklären konnte. Drei revolutionäre Postulate.
+
+...
+
+Erstes Postulat: Elektronen bewegen sich auf bestimmten, festen Kreisbahnen um den Kern. Nicht alle Bahnen sind erlaubt, nur bestimmte, stabile Bahnen existieren.
+
+...
+
+Zweites Postulat: Jede Bahn entspricht einem bestimmten Energieniveau. Die Hauptquantenzahl n kennzeichnet diese Niveaus. n gleich eins ist der Grundzustand mit der niedrigsten Energie. n gleich zwei der erste angeregte Zustand. Und so weiter.
+
+Je größer n, desto weiter ist das Elektron vom Kern entfernt, desto höher seine Energie.
+
+...
+
+Drittes Postulat: Energie wird nur absorbiert oder emittiert, wenn ein Elektron von einer Bahn auf eine andere springt.
+
+Bei Absorption springt das Elektron auf ein höheres Niveau und nimmt Energie auf. Bei Emission fällt es auf ein niedrigeres Niveau und gibt Energie als Photon ab.
+
+Die Energie des Photons entspricht genau der Energiedifferenz zwischen den Niveaus. Daher die diskreten Linien im Spektrum!

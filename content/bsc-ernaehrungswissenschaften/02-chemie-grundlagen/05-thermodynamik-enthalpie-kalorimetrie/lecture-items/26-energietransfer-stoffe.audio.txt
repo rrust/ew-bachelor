@@ -1,0 +1,21 @@
+Was passiert, wenn du ein heißes Metallstück in kaltes Wasser tauchst? Die Antwort kennst du intuitiv: Das Metall kühlt ab, das Wasser erwärmt sich. Aber wie können wir das quantitativ beschreiben?
+
+...
+
+Bei einem idealen, isolierten System gilt das Prinzip der Energieerhaltung. Die Energie, die der warme Stoff abgibt, nimmt der kalte Stoff auf. Nichts geht verloren.
+
+Mathematisch ausgedrückt: q warm plus q kalt gleich null. Oder umgestellt: q warm gleich minus q kalt.
+
+...
+
+Setzen wir die Grundformel ein, erhalten wir: Masse mal spezifische Wärme mal Delta T des Metalls ist gleich minus Masse mal spezifische Wärme mal Delta T des Wassers.
+
+...
+
+Wenn beide Stoffe schließlich die gleiche Endtemperatur haben, können wir diese Mischtemperatur berechnen.
+
+Die Formel dafür ist: T Mix gleich m eins mal c eins mal T eins plus m zwei mal c zwei mal T zwei, geteilt durch m eins mal c eins plus m zwei mal c zwei.
+
+...
+
+Diese Berechnungen sind nicht nur theoretisch interessant. Sie werden praktisch genutzt, um unbekannte spezifische Wärmekapazitäten zu bestimmen, Kühlsysteme zu dimensionieren oder kalorimetrische Messungen auszuwerten.

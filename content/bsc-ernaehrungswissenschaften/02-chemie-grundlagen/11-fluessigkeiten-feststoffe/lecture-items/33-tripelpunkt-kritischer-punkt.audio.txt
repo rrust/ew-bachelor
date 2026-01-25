@@ -1,0 +1,25 @@
+Zwei besondere Punkte im Phasendiagramm verdienen besondere Aufmerksamkeit. Der Tripelpunkt und der kritische Punkt.
+
+...
+
+Der Tripelpunkt ist der einzige Ort, an dem alle drei Phasen gleichzeitig im Gleichgewicht existieren. Fest, flüssig und gasförmig, alle zusammen.
+
+Für Wasser liegt der Tripelpunkt bei 0,01 Grad Celsius und 611 Pascal. Das sind nur 0,006 Atmosphären.
+
+Die praktische Bedeutung: Unterhalb des Tripelpunktdrucks kann keine flüssige Phase existieren. Dort geht fest direkt in gasförmig über, das ist Sublimation. Der Tripelpunkt ist so reproduzierbar, dass er zur Definition der Kelvin-Temperaturskala verwendet wird.
+
+...
+
+Am anderen Ende des Spektrums liegt der kritische Punkt. Er markiert das Ende der Dampfdruckkurve.
+
+Für Wasser liegt der kritische Punkt bei 374 Grad Celsius und 218 Atmosphären.
+
+Was passiert oberhalb des kritischen Punktes?
+
+Flüssigkeit und Gas werden ununterscheidbar. Es entsteht ein überkritisches Fluid. Diese Substanz hat faszinierende Eigenschaften. Die Dichte einer Flüssigkeit, aber die Viskosität eines Gases.
+
+...
+
+Eine praktische Anwendung ist überkritisches CO2 zur Entkoffeinierung von Kaffee. Es löst das Koffein wie eine Flüssigkeit. Dann wird der Druck gesenkt und das CO2 verflüchtigt sich rückstandsfrei wie ein Gas.
+
+Am Tripelpunkt koexistieren alle drei Phasen. Oberhalb des kritischen Punktes verschwimmt die Grenze zwischen Flüssigkeit und Gas.

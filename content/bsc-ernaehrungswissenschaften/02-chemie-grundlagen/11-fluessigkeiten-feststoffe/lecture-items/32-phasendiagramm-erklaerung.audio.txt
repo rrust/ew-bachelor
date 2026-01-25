@@ -1,0 +1,25 @@
+Ein Phasendiagramm ist wie eine Landkarte der Aggregatzustände. Es zeigt dir genau, in welchem Zustand ein Stoff unter bestimmten Bedingungen vorliegt.
+
+...
+
+Der Aufbau ist einfach. Auf der X-Achse die Temperatur, auf der Y-Achse der Druck. Das Diagramm ist in drei Bereiche unterteilt: fest, flüssig, gasförmig.
+
+Die Grenzen zwischen den Bereichen sind Linien, die Phasengleichgewichte markieren.
+
+Die Schmelzkurve trennt fest und flüssig. Die Dampfdruckkurve trennt flüssig und gasförmig. Die Sublimationskurve trennt fest und gasförmig.
+
+...
+
+Was bedeuten diese Linien?
+
+Auf einer Linie existieren beide Phasen gleichzeitig im Gleichgewicht. Nimm die Dampfdruckkurve. Jeder Punkt auf dieser Linie zeigt eine Kombination aus Temperatur und Druck, bei der Flüssigkeit und Gas im Gleichgewicht sind.
+
+Der normale Siedepunkt? Das ist einfach der Punkt auf der Dampfdruckkurve bei einem Druck von einer Atmosphäre.
+
+...
+
+Wenn du dich im Diagramm bewegst und eine Linie überquerst, findet ein Phasenübergang statt.
+
+Ein Beispiel. Start: festes Wasser bei minus 10 Grad und einer Atmosphäre. Du erwärmst bei konstantem Druck. Bei null Grad überquerst du die Schmelzkurve. Das Eis schmilzt. Du erwärmst weiter. Bei 100 Grad überquerst du die Dampfdruckkurve. Das Wasser verdampft.
+
+Das Phasendiagramm zeigt dir den gesamten Weg.

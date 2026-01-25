@@ -1,0 +1,17 @@
+Die Molekülorbitaltheorie... ein alternativer Ansatz zur Beschreibung chemischer Bindungen.
+
+Im Gegensatz zur Valenzbindungstheorie, bei der Elektronen zwischen bestimmten Atompaaren lokalisiert sind, betrachtet die M O Theorie Elektronen als über das gesamte Molekül delokalisiert...
+
+Das ist ein fundamentaler Unterschied.
+
+Wie entstehen Molekülorbitale?
+
+Wenn Atomorbitale kombiniert werden, entstehen Molekülorbitale. Die Anzahl bleibt erhalten... aus n Atomorbitalen entstehen n Molekülorbitale.
+
+Die Entstehung erfolgt durch lineare Kombination. Man addiert oder subtrahiert die Wellenfunktionen der Atomorbitale...
+
+Warum ist die M O Theorie wichtig?
+
+Sie kann Eigenschaften erklären, die die Valenzbindungstheorie nicht kann. Das berühmteste Beispiel ist der Paramagnetismus von Sauerstoff...
+
+Dazu gleich mehr.

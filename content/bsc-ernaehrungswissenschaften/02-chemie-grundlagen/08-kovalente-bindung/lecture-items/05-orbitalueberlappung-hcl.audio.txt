@@ -1,0 +1,19 @@
+Schauen wir uns die Orbitalüberlappung am konkreten Beispiel von Chlorwasserstoff an. H Cl.
+
+Wasserstoff hat die Elektronenkonfiguration 1 s eins. Das heißt, ein Elektron sitzt in einem kugelförmigen 1 s Orbital.
+
+Chlor hat die Konfiguration Neon 3 s zwei 3 p fünf. In den 3 p Orbitalen sind fünf Elektronen. Das bedeutet, ein 3 p Orbital ist nur halb besetzt. Dieses Orbital hat eine Hantelform mit zwei Keulen.
+
+...
+
+Was passiert bei der Bindungsbildung?
+
+Wasserstoff und Chlor nähern sich. Das kugelförmige 1 s Orbital des Wasserstoffs überlappt mit einer Keule des 3 p Orbitals vom Chlor. Die beiden Elektronen, eins vom Wasserstoff und eins vom Chlor, bilden jetzt ein gemeinsames Bindungselektronenpaar.
+
+Die Elektronen halten sich bevorzugt zwischen den beiden Kernen auf. Dort ist die Elektronendichte am höchsten.
+
+...
+
+Diese Art der Bindung nennt man Sigma-Bindung. Sie entsteht durch frontale Überlappung der Orbitale.
+
+Noch etwas Wichtiges: Die Bindung ist polar. Chlor zieht die Elektronen stärker an als Wasserstoff. Deshalb liegt die Elektronendichte etwas näher am Chlor.

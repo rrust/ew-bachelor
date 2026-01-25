@@ -1,0 +1,27 @@
+Schwefeldioxid ist ein klassisches Beispiel für Mesomerie. S O zwei.
+
+Zählen wir die Elektronen: Schwefel hat 6, jeder Sauerstoff auch 6. Das ergibt 18 Valenzelektronen, also 9 Paare.
+
+...
+
+Wenn wir die Lewis-Formel zeichnen, gibt es zwei Möglichkeiten, wo die Doppelbindung sitzt.
+
+In Grenzstruktur 1 hat der linke Sauerstoff die Doppelbindung zum Schwefel, der rechte nur eine Einfachbindung.
+
+In Grenzstruktur 2 ist es umgekehrt. Der rechte Sauerstoff hat die Doppelbindung, der linke die Einfachbindung.
+
+...
+
+Welche Struktur ist nun richtig? Keine von beiden. Und doch beide.
+
+Experimentelle Messungen zeigen: Beide Schwefel-Sauerstoff-Bindungen sind exakt gleich lang, nämlich 143 Pikometer. Beide sind gleich stark.
+
+Das Molekül ist weder Struktur 1 noch Struktur 2, sondern ein Hybrid aus beiden.
+
+...
+
+Die Bindungsordnung können wir berechnen. In einer Struktur ist die Bindung einfach, in der anderen doppelt. Der Durchschnitt ist 1 plus 2 geteilt durch 2 gleich 1,5.
+
+Jede Schwefel-Sauerstoff-Bindung ist also anderthalbfach. Stärker als eine Einfachbindung, aber schwächer als eine Doppelbindung.
+
+Äquivalente Grenzstrukturen tragen gleich viel zum Hybrid bei.

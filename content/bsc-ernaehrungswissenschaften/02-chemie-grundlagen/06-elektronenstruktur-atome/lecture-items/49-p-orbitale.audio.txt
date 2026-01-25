@@ -1,0 +1,23 @@
+Die p-Orbitale sehen aus wie Hanteln. Zwei Lappen, die sich vom Kern aus erstrecken.
+
+...
+
+Die Charakteristika: Hantelform mit zwei Lappen. Die Nebenquantenzahl l ist eins. Pro Schale gibt es drei p-Orbitale, p x, p y und p z.
+
+...
+
+Die drei p-Orbitale sind identisch in Form und Größe, aber unterschiedlich orientiert. p x liegt entlang der x-Achse. p y entlang der y-Achse. p z entlang der z-Achse.
+
+Die Orbitale stehen senkrecht zueinander, im 90-Grad-Winkel.
+
+...
+
+Jedes p-Orbital hat eine Knotenebene durch den Kern. Bei p x ist es die y z Ebene, also dort wo x gleich null ist. Bei p y die x z Ebene. Bei p z die x y Ebene.
+
+Am Kernort selbst ist die Aufenthaltswahrscheinlichkeit null. Das ist ein fundamentaler Unterschied zu s-Orbitalen!
+
+...
+
+Wichtig: p-Orbitale gibt es erst ab der zweiten Schale. Bei n gleich eins kann l nur null sein.
+
+Die drei p-Orbitale können zusammen sechs Elektronen aufnehmen. Drei Orbitale mal zwei Elektronen.

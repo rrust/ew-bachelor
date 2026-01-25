@@ -1,0 +1,23 @@
+Mit tabellierten Bildungsenthalpien kannst du die Enthalpieänderung beliebiger Reaktionen berechnen, ohne sie direkt messen zu müssen.
+
+...
+
+Die zentrale Formel lautet: Delta r H Grad gleich Summe der Bildungsenthalpien der Produkte minus Summe der Bildungsenthalpien der Edukte.
+
+Kurz gesagt: Produkte minus Edukte.
+
+...
+
+Die Schritte sind: Zuerst die Reaktionsgleichung aufstellen und ausgleichen. Dann die Bildungsenthalpien für alle Stoffe nachschlagen. Dann die stöchiometrischen Koeffizienten berücksichtigen, also mit den Vorfaktoren multiplizieren. Dann die Formel anwenden, Summe der Produkte minus Summe der Edukte. Und schließlich das Vorzeichen prüfen: negativ bedeutet exotherm, positiv bedeutet endotherm.
+
+...
+
+Warum funktioniert diese Formel? Sie ist eine direkte Anwendung des Satzes von Hess.
+
+Jede Reaktion lässt sich gedanklich zerlegen in zwei Schritte: Erstens werden alle Edukte in ihre Elemente zerlegt, das ist die Umkehrung ihrer Bildungsreaktion, also minus Delta f H Grad. Zweitens werden alle Produkte aus den Elementen gebildet, also plus Delta f H Grad.
+
+Die Elemente kürzen sich heraus, und übrig bleibt: Produkte minus Edukte.
+
+...
+
+Vergiss nicht: Elemente im Standardzustand haben Delta f H Grad gleich null. Sie erscheinen zwar in der Gleichung, tragen aber nicht zur Summe bei.

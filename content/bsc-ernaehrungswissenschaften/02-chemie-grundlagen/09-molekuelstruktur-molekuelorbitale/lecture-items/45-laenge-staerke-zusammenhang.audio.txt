@@ -1,0 +1,15 @@
+Es gibt einen wichtigen Zusammenhang zwischen Bindungsordnung, Bindungslänge und Bindungsstärke...
+
+Je höher die Bindungsordnung, desto kürzer ist die Bindung. Und desto stärker ist sie auch.
+
+Schauen wir uns die C-C Bindungen an.
+
+Eine C-C Einfachbindung hat die Bindungsordnung eins. Sie ist 154 Pikometer lang und hat eine Stärke von 346 Kilojoule pro Mol...
+
+Eine C gleich C Doppelbindung? Bindungsordnung zwei. Nur noch 134 Pikometer lang. Und 602 Kilojoule pro Mol stark.
+
+Und eine C dreifach C Bindung? Bindungsordnung drei. Nur noch 120 Pikometer... und satte 835 Kilojoule pro Mol.
+
+Die Erklärung? Mehr bindende Elektronenpaare zwischen den Kernen ziehen diese stärker zusammen... kürzere Bindung. Und sie erfordern mehr Energie zum Trennen... stärkere Bindung.
+
+Diese Werte sind experimentell messbar und bestätigen die theoretischen Vorhersagen.
