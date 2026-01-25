@@ -1,0 +1,35 @@
+Der pH-Wert ist eines der wichtigsten Konzepte in der Chemie.
+
+Aber was bedeutet er eigentlich?
+
+...
+
+Alles beginnt mit der Eigendissoziation des Wassers.
+
+Wasser ist amphiprotisch... es kann sowohl als Säure als auch als Base reagieren.
+
+In reinem Wasser reagieren zwei Wassermoleküle miteinander.
+
+Dabei entstehen Hydronium-Ionen und Hydroxid-Ionen.
+
+...
+
+Das Ionenprodukt des Wassers bei fünfundzwanzig Grad ist zehn hoch minus vierzehn.
+
+Das bedeutet: In neutralem Wasser haben wir zehn hoch minus sieben Mol pro Liter Hydronium-Ionen.
+
+...
+
+Jetzt zum pH-Wert.
+
+Der pH ist einfach der negative Logarithmus der Hydronium-Ionen-Konzentration.
+
+Bei zehn hoch minus sieben ist der pH gleich sieben... das ist neutral.
+
+...
+
+Der fundamentale Zusammenhang lautet: pH plus pOH gleich vierzehn.
+
+Ist der pH kleiner als sieben? Dann ist die Lösung sauer.
+
+Ist er größer als sieben? Dann ist sie basisch.

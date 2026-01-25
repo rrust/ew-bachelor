@@ -1,0 +1,526 @@
+{
+  "moduleId": "02-chemie-grundlagen",
+  "lectureId": "17-saeuren-basen",
+  "metadata": {
+    "topic": "Säuren und Basen",
+    "description": "Brønsted-Lowry Theorie, pH-Wert, Säurekonstanten, Salzhydrolyse, Lewis-Säuren",
+    "estimatedTime": 90,
+    "version": "1.0.0",
+    "sources": [
+      {
+        "id": "vorlesung-k17",
+        "title": "Vorlesungsfolien Kapitel 17",
+        "url": "https://moodle.univie.ac.at/pluginfile.php/31885040/mod_resource/content/0/Kapitel17fixed.pdf",
+        "type": "pdf"
+      }
+    ]
+  },
+  "items": [
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "1-5"
+        }
+      ],
+      "content": "# Säuren und Basen – Einführung\n\nSäuren und Basen begegnen uns überall im Alltag: Der saure Geschmack von Zitronen stammt von der **Zitronensäure**, der Schmerz eines Ameisenbisses wird durch **Ameisensäure** ($\\text{HCO}_2\\text{H}$) verursacht.\n\n## Brønsted-Lowry Theorie\n\nDie gebräuchlichste Definition von Säuren und Basen stammt von Brønsted und Lowry:\n\n| Begriff   | Definition                                |\n| --------- | ----------------------------------------- |\n| **Säure** | Protonendonator – gibt $\\text{H}^+$ ab    |\n| **Base**  | Protonenakzeptor – nimmt $\\text{H}^+$ auf |\n\n## Konjugierte Säure-Base-Paare\n\nBei jeder Säure-Base-Reaktion entsteht ein **konjugiertes Paar**:\n\n$$\\text{Säure} + \\text{Base} \\rightleftharpoons \\text{konj. Base} + \\text{konj. Säure}$$\n\n### Beispiel: Ammoniak in Wasser\n\n$$\\text{NH}_3\\text{(aq)} + \\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{NH}_4^+\\text{(aq)} + \\text{OH}^-\\text{(aq)}$$\n\n| Rolle             | Stoff                | Erklärung                        |\n| ----------------- | -------------------- | -------------------------------- |\n| Base              | $\\text{NH}_3$        | Nimmt $\\text{H}^+$ auf           |\n| Konjugierte Säure | $\\text{NH}_4^+$      | Kann $\\text{H}^+$ wieder abgeben |\n| Säure             | $\\text{H}_2\\text{O}$ | Gibt $\\text{H}^+$ ab             |\n| Konjugierte Base  | $\\text{OH}^-$        | Kann $\\text{H}^+$ aufnehmen      |\n\n## Merke\n\nJede Säure hat eine konjugierte Base und umgekehrt. Sie unterscheiden sich nur durch **ein einziges Proton** ($\\text{H}^+$).\n\n| Säure                   | Konjugierte Base |\n| ----------------------- | ---------------- |\n| $\\text{HCl}$            | $\\text{Cl}^-$    |\n| $\\text{H}_2\\text{SO}_4$ | $\\text{HSO}_4^-$ |\n| $\\text{NH}_4^+$         | $\\text{NH}_3$    |\n| $\\text{H}_2\\text{O}$    | $\\text{OH}^-$    |",
+      "audioFile": "01-learning-einfuehrung.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was definiert eine Base nach Brønsted-Lowry?",
+      "options": [
+        "Sie gibt Hydroxid-Ionen ab",
+        "Sie nimmt Elektronenpaare auf",
+        "Sie nimmt Protonen (H⁺) auf",
+        "Sie gibt Protonen (H⁺) ab"
+      ],
+      "correctAnswer": "Sie nimmt Protonen (H⁺) auf",
+      "explanation": "Nach Brønsted-Lowry sind Basen Protonenakzeptoren – sie nehmen H⁺-Ionen auf. Das Abgeben von Hydroxid-Ionen ist die ältere Arrhenius-Definition.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Säuren ihren konjugierten Basen zu:",
+      "pairs": [
+        {
+          "left": "HCl",
+          "right": "Cl⁻"
+        },
+        {
+          "left": "H₂SO₄",
+          "right": "HSO₄⁻"
+        },
+        {
+          "left": "NH₄⁺",
+          "right": "NH₃"
+        },
+        {
+          "left": "H₂O",
+          "right": "OH⁻"
+        },
+        {
+          "left": "H₂S",
+          "right": "HS⁻"
+        }
+      ],
+      "explanation": "Konjugierte Säure-Base-Paare unterscheiden sich immer um genau ein Proton (H⁺). Die Säure hat ein H⁺ mehr als ihre konjugierte Base.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=RX5iq2BNPKo",
+      "content": "Säure-Base-Chemie einfach erklärt: Definition, Reaktionsgleichung und Beispiele zur Brønsted-Lowry Theorie."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "6-10"
+        }
+      ],
+      "content": "# Stärke von Säuren und Basen\n\nDie Stärke einer Säure oder Base hängt davon ab, wie vollständig sie in Wasser dissoziiert.\n\n## Starke Säuren und Basen\n\n**Starke Säuren** dissoziieren in Wasser zu **100%** – das Gleichgewicht liegt vollständig auf der Produktseite.\n\n### Die wichtigsten starken Säuren\n\n| Formel                  | Name          |\n| ----------------------- | ------------- |\n| $\\text{HCl}$            | Salzsäure     |\n| $\\text{HNO}_3$          | Salpetersäure |\n| $\\text{H}_2\\text{SO}_4$ | Schwefelsäure |\n| $\\text{HClO}_4$         | Perchlorsäure |\n\nReaktion (kein Gleichgewicht, sondern vollständige Reaktion):\n\n$$\\text{HCl(aq)} + \\text{H}_2\\text{O(l)} \\rightarrow \\text{H}_3\\text{O}^+\\text{(aq)} + \\text{Cl}^-\\text{(aq)}$$\n\n**Starke Basen** sind meist Hydroxide der Alkali- und Erdalkalimetalle:\n\n| Formel            | Name            |\n| ----------------- | --------------- |\n| $\\text{NaOH}$     | Natriumhydroxid |\n| $\\text{KOH}$      | Kaliumhydroxid  |\n| $\\text{Ca(OH)}_2$ | Calciumhydroxid |\n\n## Schwache Säuren und Basen\n\n**Schwache Säuren** dissoziieren nur teilweise (oft < 5%). Es stellt sich ein Gleichgewicht ein:\n\n$$\\text{CH}_3\\text{COOH(aq)} + \\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{CH}_3\\text{COO}^-\\text{(aq)} + \\text{H}_3\\text{O}^+\\text{(aq)}$$\n\n### Beispiele schwacher Säuren\n\n| Formel                   | Name        |\n| ------------------------ | ----------- |\n| $\\text{CH}_3\\text{COOH}$ | Essigsäure  |\n| $\\text{HF}$              | Flusssäure  |\n| $\\text{HCN}$             | Blausäure   |\n| $\\text{H}_2\\text{CO}_3$  | Kohlensäure |\n\n## Der Zusammenhang der Stärke\n\n> **Wichtige Regel:** Je stärker eine Säure, desto schwächer ihre konjugierte Base – und umgekehrt!\n\n| Säure                | Stärke       | Konjugierte Base | Stärke         |\n| -------------------- | ------------ | ---------------- | -------------- |\n| $\\text{HCl}$         | sehr stark   | $\\text{Cl}^-$    | extrem schwach |\n| $\\text{HF}$          | schwach      | $\\text{F}^-$     | mäßig stark    |\n| $\\text{H}_2\\text{O}$ | sehr schwach | $\\text{OH}^-$    | stark          |\n\nSäure-Base-Reaktionen verlaufen immer vom **stärkeren** zum **schwächeren** Paar.",
+      "audioFile": "05-learning-staerke.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche der folgenden Säuren ist eine starke Säure?",
+      "options": [
+        "Essigsäure (CH₃COOH)",
+        "Flusssäure (HF)",
+        "Salpetersäure (HNO₃)",
+        "Kohlensäure (H₂CO₃)"
+      ],
+      "correctAnswer": "Salpetersäure (HNO₃)",
+      "explanation": "HNO₃ gehört neben HCl, H₂SO₄ und HClO₄ zu den klassischen starken Säuren, die in Wasser vollständig dissoziieren. HF ist trotz ihrer Gefährlichkeit eine schwache Säure!",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Substanzen ihrer Stärke zu:",
+      "pairs": [
+        {
+          "left": "HCl",
+          "right": "Starke Säure"
+        },
+        {
+          "left": "CH₃COOH",
+          "right": "Schwache Säure"
+        },
+        {
+          "left": "NaOH",
+          "right": "Starke Base"
+        },
+        {
+          "left": "NH₃",
+          "right": "Schwache Base"
+        },
+        {
+          "left": "HF",
+          "right": "Schwache Säure"
+        }
+      ],
+      "explanation": "Starke Säuren (HCl, HNO₃, H₂SO₄) dissoziieren vollständig. Schwache Säuren (HF, CH₃COOH) stellen ein Gleichgewicht ein. NaOH ist eine starke Base, NH₃ eine schwache Base.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=x93KKVDahKY",
+      "content": "Die Säure-Theorie nach Brønsted: Starke und schwache Säuren im Vergleich."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "11-15"
+        }
+      ],
+      "content": "# Der pH-Wert\n\n## Eigendissoziation des Wassers\n\nWasser ist **amphiprotisch** – es kann sowohl als Säure als auch als Base reagieren. In reinem Wasser findet die Autoprotolyse statt:\n\n$$2\\,\\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{H}_3\\text{O}^+\\text{(aq)} + \\text{OH}^-\\text{(aq)}$$\n\nDas **Ionenprodukt des Wassers** bei 25°C:\n\n$$K_w = [\\text{H}_3\\text{O}^+][\\text{OH}^-] = 1{,}0 \\cdot 10^{-14}$$\n\n## Neutrale, saure und basische Lösungen\n\n| Lösung  | Bedingung                                | $[\\text{H}_3\\text{O}^+]$ bei 25°C |\n| ------- | ---------------------------------------- | --------------------------------- |\n| Neutral | $[\\text{H}_3\\text{O}^+] = [\\text{OH}^-]$ | $1{,}0 \\cdot 10^{-7}$ M           |\n| Sauer   | $[\\text{H}_3\\text{O}^+] > [\\text{OH}^-]$ | $> 1{,}0 \\cdot 10^{-7}$ M         |\n| Basisch | $[\\text{H}_3\\text{O}^+] < [\\text{OH}^-]$ | $< 1{,}0 \\cdot 10^{-7}$ M         |\n\n## pH- und pOH-Skala\n\nDer pH-Wert ist ein Maß für die Hydronium-Ionen-Konzentration:\n\n$$\\text{pH} = -\\log[\\text{H}_3\\text{O}^+]$$\n\nAnalog der pOH-Wert:\n\n$$\\text{pOH} = -\\log[\\text{OH}^-]$$\n\n### Der fundamentale Zusammenhang\n\n$$\\text{pH} + \\text{pOH} = 14{,}00 \\quad \\text{(bei 25°C)}$$\n\n## Umrechnungen\n\n| Von | Nach                     | Formel                                     |\n| --- | ------------------------ | ------------------------------------------ |\n| pH  | $[\\text{H}_3\\text{O}^+]$ | $[\\text{H}_3\\text{O}^+] = 10^{-\\text{pH}}$ |\n| pOH | $[\\text{OH}^-]$          | $[\\text{OH}^-] = 10^{-\\text{pOH}}$         |\n| pH  | pOH                      | $\\text{pOH} = 14 - \\text{pH}$              |\n\n## Beispielrechnung\n\nFür eine 0,020 M $\\text{HNO}_3$ Lösung (starke Säure, vollständige Dissoziation):\n\n$$[\\text{H}_3\\text{O}^+] = 0{,}020\\,\\text{M}$$\n\n$$\\text{pH} = -\\log(0{,}020) = 1{,}70$$\n\n$$\\text{pOH} = 14{,}00 - 1{,}70 = 12{,}30$$",
+      "audioFile": "09-learning-ph-wert.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welchen pH-Wert hat eine Lösung mit [H₃O⁺] = 1,0 × 10⁻³ M?",
+      "options": [
+        "pH = 11",
+        "pH = 3",
+        "pH = -3",
+        "pH = 7"
+      ],
+      "correctAnswer": "pH = 3",
+      "explanation": "pH = -log(10⁻³) = 3. Der negative Logarithmus von 10⁻³ ist 3. Ein pH von 3 zeigt eine saure Lösung an.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Berechne den pH-Wert einer 0,0050 M HCl-Lösung. HCl ist eine starke Säure und dissoziiert vollständig.",
+      "correctAnswer": 2.3,
+      "unit": "",
+      "tolerance": 0.1,
+      "hint": "Bei starken Säuren gilt: [H₃O⁺] = Konzentration der Säure. Dann pH = -log[H₃O⁺]",
+      "explanation": "[H₃O⁺] = 0,0050 M = 5,0 × 10⁻³ M. pH = -log(5,0 × 10⁻³) = 2,30",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=Mf1dA2odnh8",
+      "content": "Der pH-Wert erklärt: Ionenprodukt des Wassers und pH-Berechnung."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "16-22"
+        }
+      ],
+      "content": "# Gleichgewichte schwacher Säuren und Basen\n\n## Die Säurekonstante $K_s$\n\nFür eine schwache Säure $\\text{HA}$ gilt das Gleichgewicht:\n\n$$\\text{HA(aq)} + \\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{H}_3\\text{O}^+\\text{(aq)} + \\text{A}^-\\text{(aq)}$$\n\nDie Säurekonstante (auch $K_a$ genannt):\n\n$$K_s = \\frac{[\\text{H}_3\\text{O}^+][\\text{A}^-]}{[\\text{HA}]}$$\n\n> **Merkregel:** Je kleiner $K_s$, desto schwächer die Säure.\n\nDer $pK_s$-Wert ist der negative Logarithmus:\n\n$$pK_s = -\\log K_s$$\n\n> **Merkregel:** Je größer $pK_s$, desto schwächer die Säure.\n\n## Die Basenkonstante $K_b$\n\nFür eine schwache Base $\\text{B}$:\n\n$$\\text{B(aq)} + \\text{H}_2\\text{O(l)} \\rightleftharpoons \\text{BH}^+\\text{(aq)} + \\text{OH}^-\\text{(aq)}$$\n\n$$K_b = \\frac{[\\text{BH}^+][\\text{OH}^-]}{[\\text{B}]}$$\n\n## Der fundamentale Zusammenhang\n\nFür ein konjugiertes Säure-Base-Paar gilt immer:\n\n$$K_s \\cdot K_b = K_w = 1{,}0 \\cdot 10^{-14}$$\n\n$$pK_s + pK_b = 14$$\n\n## pH-Berechnung schwacher Säuren\n\nDa schwache Säuren nicht vollständig dissoziieren, brauchen wir eine Gleichgewichtsberechnung.\n\n### Die Näherungsformel\n\nFür schwache Säuren mit kleinem $K_s$ gilt:\n\n$$[\\text{H}_3\\text{O}^+] \\approx \\sqrt{K_s \\cdot C_0}$$\n\nwobei $C_0$ die Anfangskonzentration der Säure ist.\n\n### Beispiel: 1,0 M Essigsäure\n\nGegeben: $K_s = 1{,}8 \\cdot 10^{-5}$\n\n$$[\\text{H}_3\\text{O}^+] = \\sqrt{1{,}8 \\cdot 10^{-5} \\cdot 1{,}0} = 4{,}2 \\cdot 10^{-3}\\,\\text{M}$$\n\n$$\\text{pH} = -\\log(4{,}2 \\cdot 10^{-3}) = 2{,}37$$\n\n### Wann ist die Näherung erlaubt?\n\nDie Näherung ist zulässig, wenn:\n\n$$100 \\cdot K_s < C_0$$\n\nAndernfalls muss die quadratische Gleichung gelöst werden.",
+      "audioFile": "13-learning-gleichgewicht.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was bedeutet ein sehr kleiner Ks-Wert für eine Säure?",
+      "options": [
+        "Sie dissoziiert fast vollständig",
+        "Sie ist eine sehr starke Säure",
+        "Das Gleichgewicht liegt stark auf der Seite der undissoziierten Säure",
+        "Sie hat einen sehr niedrigen pH-Wert"
+      ],
+      "correctAnswer": "Das Gleichgewicht liegt stark auf der Seite der undissoziierten Säure",
+      "explanation": "Ein kleiner Ks-Wert bedeutet, dass der Zähler (Produkte, also Ionen) klein im Vergleich zum Nenner (undissoziierte Säure HA) ist. Die Säure bleibt größtenteils undissoziiert – sie ist schwach.",
+      "content": ""
+    },
+    {
+      "type": "calculation",
+      "question": "Berechne den pH-Wert einer 0,10 M Ameisensäure-Lösung. Ks = 1,8 × 10⁻⁴. Verwende die Näherungsformel [H₃O⁺] ≈ √(Ks × C₀).",
+      "correctAnswer": 2.37,
+      "unit": "",
+      "tolerance": 0.1,
+      "hint": "Setze Ks und C₀ in die Wurzelformel ein, dann berechne pH = -log[H₃O⁺]",
+      "explanation": "[H₃O⁺] = √(1,8 × 10⁻⁴ × 0,10) = √(1,8 × 10⁻⁵) = 4,24 × 10⁻³ M. pH = -log(4,24 × 10⁻³) = 2,37",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=fNSmtxQ7zv4",
+      "content": "pH-Wert-Berechnung für schwache einprotonige Säuren mit der Näherungsformel."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "23-28"
+        }
+      ],
+      "content": "# Salze und Hydrolyse\n\nWenn Salze in Wasser gelöst werden, können sie den pH-Wert beeinflussen. Diese Reaktion von Ionen mit Wasser nennt man **Hydrolyse**.\n\n## Die vier Typen von Salzlösungen\n\n### Typ 1: Starke Base + Starke Säure → Neutral\n\nBeispiele: $\\text{NaCl}$, $\\text{KNO}_3$\n\n- **pH ≈ 7** (neutral)\n- Weder Kation noch Anion reagieren mit Wasser\n- $\\text{Na}^+$ und $\\text{Cl}^-$ sind spektator-Ionen\n\n### Typ 2: Starke Base + Schwache Säure → Basisch\n\nBeispiele: $\\text{NaCH}_3\\text{COO}$ (Natriumacetat), $\\text{NaClO}$\n\n- **pH > 7** (basisch)\n- Das Anion ist die konjugierte Base einer schwachen Säure\n- Hydrolyse-Reaktion:\n\n$$\\text{A}^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{HA} + \\text{OH}^-$$\n\n### Typ 3: Schwache Base + Starke Säure → Sauer\n\nBeispiele: $\\text{NH}_4\\text{Cl}$ (Ammoniumchlorid)\n\n- **pH < 7** (sauer)\n- Das Kation ist die konjugierte Säure einer schwachen Base\n- Hydrolyse-Reaktion:\n\n$$\\text{BH}^+ + \\text{H}_2\\text{O} \\rightleftharpoons \\text{B} + \\text{H}_3\\text{O}^+$$\n\n### Typ 4: Schwache Base + Schwache Säure → Kommt drauf an\n\nBeispiel: $\\text{NH}_4\\text{CH}_3\\text{COO}$ (Ammoniumacetat)\n\nDer pH hängt vom Verhältnis der Konstanten ab:\n\n| Bedingung                                | Ergebnis |\n| ---------------------------------------- | -------- |\n| $K_s(\\text{Kation}) > K_b(\\text{Anion})$ | sauer    |\n| $K_b(\\text{Anion}) > K_s(\\text{Kation})$ | basisch  |\n| $K_s \\approx K_b$                        | neutral  |\n\n## Zusammenfassung\n\n| Salz-Typ  | Kation von    | Anion von      | pH           |\n| --------- | ------------- | -------------- | ------------ |\n| NaCl      | starke Base   | starke Säure   | 7            |\n| NaCH₃COO  | starke Base   | schwache Säure | > 7          |\n| NH₄Cl     | schwache Base | starke Säure   | < 7          |\n| NH₄CH₃COO | schwache Base | schwache Säure | vergleichen! |",
+      "audioFile": "17-learning-salze-hydrolyse.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welchen pH-Wert erwarten Sie beim Lösen von Natriumacetat (NaCH₃COO) in Wasser?",
+      "options": [
+        "pH < 7 (sauer)",
+        "pH = 7 (neutral)",
+        "pH > 7 (basisch)",
+        "Kann man nicht vorhersagen"
+      ],
+      "correctAnswer": "pH > 7 (basisch)",
+      "explanation": "Natriumacetat stammt von NaOH (starke Base) und Essigsäure (schwache Säure). Das Acetat-Ion (CH₃COO⁻) ist die konjugierte Base einer schwachen Säure und reagiert mit Wasser unter Bildung von OH⁻-Ionen.",
+      "content": ""
+    },
+    {
+      "type": "matching",
+      "question": "Ordne die Salze dem erwarteten pH-Bereich zu:",
+      "pairs": [
+        {
+          "left": "NaCl",
+          "right": "neutral (pH ≈ 7)"
+        },
+        {
+          "left": "NH₄Cl",
+          "right": "sauer (pH < 7)"
+        },
+        {
+          "left": "Na₂CO₃",
+          "right": "basisch (pH > 7)"
+        },
+        {
+          "left": "KNO₃",
+          "right": "neutral (pH ≈ 7)"
+        },
+        {
+          "left": "NaCH₃COO",
+          "right": "basisch (pH > 7)"
+        }
+      ],
+      "explanation": "Salze aus starker Base + starker Säure sind neutral. Salze mit dem Anion einer schwachen Säure (CO₃²⁻, CH₃COO⁻) sind basisch. Salze mit dem Kation einer schwachen Base (NH₄⁺) sind sauer.",
+      "content": ""
+    },
+    {
+      "type": "youtube-video",
+      "url": "https://www.youtube.com/watch?v=yu6fJtlYMTs",
+      "content": "Säure-Base-Reaktionen: pH-, pKs- und Ks-Werte zusammengefasst."
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "29-31"
+        }
+      ],
+      "content": "# Mehrprotonige Säuren\n\nSäuren, die mehr als ein Proton abgeben können, dissoziieren **stufenweise**.\n\n## Beispiel: Phosphorsäure (H₃PO₄)\n\nPhosphorsäure ist dreiprotonig und dissoziiert in drei Stufen:\n\n| Stufe | Reaktion                                                                        | Konstante |\n| ----- | ------------------------------------------------------------------------------- | --------- |\n| 1     | $\\text{H}_3\\text{PO}_4 \\rightleftharpoons \\text{H}^+ + \\text{H}_2\\text{PO}_4^-$ | $K_{s1}$  |\n| 2     | $\\text{H}_2\\text{PO}_4^- \\rightleftharpoons \\text{H}^+ + \\text{HPO}_4^{2-}$     | $K_{s2}$  |\n| 3     | $\\text{HPO}_4^{2-} \\rightleftharpoons \\text{H}^+ + \\text{PO}_4^{3-}$            | $K_{s3}$  |\n\n## Der wichtige Trend\n\n$$K_{s1} \\gg K_{s2} \\gg K_{s3}$$\n\nDas erste Proton wird am leichtesten abgegeben:\n\n- Nach Abgabe des ersten $\\text{H}^+$ ist das verbleibende Ion **negativ geladen**\n- Es ist schwieriger, ein positives $\\text{H}^+$ von einem negativen Ion abzuspalten\n- Jede weitere Dissoziation wird ungünstiger\n\n## Konsequenz für pH-Berechnungen\n\nDa $K_{s1}$ meist viel größer ist als die folgenden Konstanten, wird der pH-Wert fast ausschließlich durch den **ersten Dissoziationsschritt** bestimmt.\n\n### Beispiel: pH von 0,1 M H₂SO₄\n\n$\\text{H}_2\\text{SO}_4$ ist besonders:\n\n- 1. Stufe: **Starke Säure** (vollständige Dissoziation)\n- 1. Stufe: Schwache Säure ($K_{s2} = 1{,}2 \\cdot 10^{-2}$)\n\nBei verdünnten Lösungen kann die 2. Stufe oft vernachlässigt werden.\n\n## Weitere mehrprotonige Säuren\n\n| Säure                   | Anzahl Protonen | Vorkommen                  |\n| ----------------------- | --------------- | -------------------------- |\n| $\\text{H}_2\\text{CO}_3$ | 2               | Kohlensäure (Blutpuffer)   |\n| $\\text{H}_2\\text{S}$    | 2               | Schwefelwasserstoff        |\n| $\\text{H}_3\\text{PO}_4$ | 3               | Phosphorsäure (Zellpuffer) |\n| $\\text{H}_2\\text{SO}_4$ | 2               | Schwefelsäure              |",
+      "audioFile": "21-learning-mehrprotonig.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Welche Aussage über mehrprotonige Säuren ist korrekt?",
+      "options": [
+        "Alle Protonen werden gleichzeitig abgegeben",
+        "Ks1 ist der kleinste Wert der Dissoziationskonstanten",
+        "Der pH-Wert wird hauptsächlich durch den ersten Dissoziationsschritt bestimmt",
+        "Die dritte Dissoziationsstufe ist am stärksten"
+      ],
+      "correctAnswer": "Der pH-Wert wird hauptsächlich durch den ersten Dissoziationsschritt bestimmt",
+      "explanation": "Da Ks1 >> Ks2 >> Ks3 gilt, stammt der Großteil der H⁺-Ionen aus dem ersten Dissoziationsschritt. Jede weitere Dissoziation wird durch die negative Ladung des Anions erschwert.",
+      "content": ""
+    },
+    {
+      "type": "learning-content",
+      "sourceRefs": [
+        {
+          "sourceId": "vorlesung-k17",
+          "pages": "32-36"
+        }
+      ],
+      "content": "# Lewis-Säuren und -Basen\n\nDie **Lewis-Theorie** ist die umfassendste Definition von Säuren und Basen.\n\n## Definition\n\n| Begriff         | Definition                  |\n| --------------- | --------------------------- |\n| **Lewis-Säure** | Elektronenpaar-**Akzeptor** |\n| **Lewis-Base**  | Elektronenpaar-**Donator**  |\n\n## Der Vorteil der Lewis-Definition\n\nDiese Definition erklärt auch Reaktionen, bei denen **kein Proton** übertragen wird!\n\n### Beispiel: BF₃ + NH₃\n\n$$\\text{BF}_3 + \\text{NH}_3 \\rightarrow \\text{F}_3\\text{B-NH}_3$$\n\n- $\\text{BF}_3$ hat eine **Elektronenlücke** am Bor → Lewis-Säure\n- $\\text{NH}_3$ hat ein **freies Elektronenpaar** am Stickstoff → Lewis-Base\n- Es bildet sich eine **koordinative Bindung**\n\n## Metallionen als Lewis-Säuren\n\nMetallionen in Wasser (z.B. $\\text{Al}^{3+}$, $\\text{Fe}^{3+}$) wirken als Lewis-Säuren:\n\n$$\\text{Fe}^{3+} + 6\\,\\text{H}_2\\text{O} \\rightarrow [\\text{Fe}(\\text{H}_2\\text{O})_6]^{3+}$$\n\nDiese hydratisierten Ionen können Protonen abgeben und machen die Lösung sauer:\n\n$$[\\text{Fe}(\\text{H}_2\\text{O})_6]^{3+} + \\text{H}_2\\text{O} \\rightleftharpoons [\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{OH})]^{2+} + \\text{H}_3\\text{O}^+$$\n\n> **Merkregel:** Je kleiner das Ion und je höher die Ladung, desto stärker die Lewis-Säure.\n\n## Struktur und Säurestärke bei Oxosäuren\n\nDie Stärke von Oxosäuren (z.B. $\\text{HOCl}$, $\\text{HOClO}$, $\\text{HOClO}_2$) steigt mit der Anzahl der Sauerstoffatome.\n\n### Der induktive Effekt\n\nElektronegative Atome (wie $\\text{Cl}$, $\\text{F}$ oder zusätzliche $\\text{O}$-Atome):\n\n1. Ziehen Elektronendichte vom zentralen Atom ab\n2. Schwächen die $\\text{O-H}$-Bindung\n3. Stabilisieren das entstehende Anion\n4. → Erhöhen die Säurestärke\n\n| Säure              | Formel           | $pK_s$ | Säurestärke |\n| ------------------ | ---------------- | ------ | ----------- |\n| Hypochlorige Säure | $\\text{HOCl}$    | 7,5    | schwach     |\n| Chlorige Säure     | $\\text{HOClO}$   | 2,0    | mittel      |\n| Chlorsäure         | $\\text{HOClO}_2$ | −1     | stark       |\n| Perchlorsäure      | $\\text{HOClO}_3$ | −10    | sehr stark  |",
+      "audioFile": "23-learning-lewis.mp3"
+    },
+    {
+      "type": "self-assessment-mc",
+      "question": "Was ist eine Lewis-Säure?",
+      "options": [
+        "Ein Protonendonator",
+        "Ein Elektronenpaarakzeptor",
+        "Ein Elektronenpaardonator",
+        "Ein Hydroxid-Donator"
+      ],
+      "correctAnswer": "Ein Elektronenpaarakzeptor",
+      "explanation": "Nach Lewis sind Säuren Elektronenpaarakzeptoren. Dies erweitert den Säurebegriff über Protonenübertragungen hinaus, z.B. auf Metallionen oder Moleküle wie BF₃.",
+      "content": ""
+    },
+    {
+      "type": "self-assessment",
+      "question": "Bist du bereit für den Vorlesungstest zu Säuren und Basen?",
+      "checkpoints": [
+        "Ich kann die Brønsted-Lowry Definition von Säuren und Basen erklären",
+        "Ich kann konjugierte Säure-Base-Paare identifizieren",
+        "Ich kann starke von schwachen Säuren unterscheiden",
+        "Ich kann den pH-Wert aus der H₃O⁺-Konzentration berechnen",
+        "Ich kann den pH-Wert einer schwachen Säure mit der Näherungsformel berechnen",
+        "Ich verstehe den Zusammenhang zwischen Ks, pKs, Kb und pKb",
+        "Ich kann vorhersagen, ob eine Salzlösung sauer, neutral oder basisch ist",
+        "Ich kann erklären, warum mehrprotonige Säuren stufenweise dissoziieren",
+        "Ich kann Lewis-Säuren und Lewis-Basen definieren und Beispiele nennen"
+      ],
+      "content": ""
+    }
+  ],
+  "quiz": [
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Brønsted-Lowry Definition sind korrekt?",
+      "options": [
+        "Eine Säure ist ein Protonendonator",
+        "Eine Base muss Hydroxid-Ionen enthalten",
+        "Wasser kann sowohl als Säure als auch als Base wirken",
+        "Konjugierte Paare unterscheiden sich um ein Elektron"
+      ],
+      "correctAnswers": [
+        "Eine Säure ist ein Protonendonator",
+        "Wasser kann sowohl als Säure als auch als Base wirken"
+      ],
+      "explanation": "Nach Brønsted-Lowry sind Säuren Protonendonatoren und Basen Protonenakzeptoren. Wasser ist amphiprotisch. Konjugierte Paare unterscheiden sich um ein Proton, nicht ein Elektron."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Paare sind korrekte konjugierte Säure-Base-Paare?",
+      "options": [
+        "HCl und Cl⁻",
+        "NH₄⁺ und NH₃",
+        "H₂O und H₂",
+        "H₂SO₄ und SO₄²⁻"
+      ],
+      "correctAnswers": [
+        "HCl und Cl⁻",
+        "NH₄⁺ und NH₃"
+      ],
+      "explanation": "Konjugierte Paare unterscheiden sich um genau ein H⁺. HCl/Cl⁻ und NH₄⁺/NH₃ sind korrekt. H₂O/H₂ ist falsch (unterscheidet sich um O). H₂SO₄/SO₄²⁻ ist falsch (unterscheidet sich um 2 H⁺, das wäre HSO₄⁻)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu starken Säuren sind korrekt?",
+      "options": [
+        "HNO₃ und HCl sind starke Säuren",
+        "Starke Säuren dissoziieren vollständig in Wasser",
+        "HF ist eine starke Säure",
+        "Die konjugierte Base einer starken Säure ist sehr schwach"
+      ],
+      "correctAnswers": [
+        "HNO₃ und HCl sind starke Säuren",
+        "Starke Säuren dissoziieren vollständig in Wasser",
+        "Die konjugierte Base einer starken Säure ist sehr schwach"
+      ],
+      "explanation": "HNO₃ und HCl dissoziieren vollständig (100%). HF ist trotz ihrer Gefährlichkeit eine schwache Säure (Ks = 6,8 × 10⁻⁴). Die konjugierten Basen starker Säuren (z.B. Cl⁻, NO₃⁻) sind extrem schwache Basen."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zum pH-Wert sind korrekt?",
+      "options": [
+        "pH + pOH = 14 bei 25°C",
+        "Ein pH von 3 bedeutet [H₃O⁺] = 10⁻³ M",
+        "In einer sauren Lösung ist der pH größer als 7",
+        "Das Ionenprodukt Kw = 1,0 × 10⁻¹⁴ bei 25°C"
+      ],
+      "correctAnswers": [
+        "pH + pOH = 14 bei 25°C",
+        "Ein pH von 3 bedeutet [H₃O⁺] = 10⁻³ M",
+        "Das Ionenprodukt Kw = 1,0 × 10⁻¹⁴ bei 25°C"
+      ],
+      "explanation": "pH + pOH = 14 ist der fundamentale Zusammenhang. [H₃O⁺] = 10^(-pH), also bei pH 3: 10⁻³ M. In sauren Lösungen ist der pH kleiner als 7 (nicht größer). Kw = 1,0 × 10⁻¹⁴ bei Standardbedingungen."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu Ks und pKs sind korrekt?",
+      "options": [
+        "Ein größerer Ks-Wert bedeutet eine stärkere Säure",
+        "pKs + pKb = 14 für konjugierte Paare",
+        "Ein großer pKs-Wert bedeutet eine starke Säure",
+        "Für schwache Säuren gilt [H₃O⁺] ≈ √(Ks × C₀)"
+      ],
+      "correctAnswers": [
+        "Ein größerer Ks-Wert bedeutet eine stärkere Säure",
+        "pKs + pKb = 14 für konjugierte Paare",
+        "Für schwache Säuren gilt [H₃O⁺] ≈ √(Ks × C₀)"
+      ],
+      "explanation": "Größerer Ks = mehr Dissoziation = stärkere Säure. pKs + pKb = 14 gilt immer für konjugierte Paare. Ein großer pKs bedeutet kleine Ks = schwache Säure (nicht stark!). Die Näherungsformel gilt für schwache Säuren."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Salzlösungen reagieren basisch?",
+      "options": [
+        "NaCl-Lösung",
+        "Na₂CO₃-Lösung",
+        "NH₄Cl-Lösung",
+        "NaCH₃COO-Lösung (Natriumacetat)"
+      ],
+      "correctAnswers": [
+        "Na₂CO₃-Lösung",
+        "NaCH₃COO-Lösung (Natriumacetat)"
+      ],
+      "explanation": "Na₂CO₃ und NaCH₃COO enthalten Anionen schwacher Säuren (CO₃²⁻, CH₃COO⁻), die mit Wasser unter OH⁻-Bildung reagieren. NaCl ist neutral (starke Säure + starke Base). NH₄Cl ist sauer (Kation einer schwachen Base)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu mehrprotonigen Säuren sind korrekt?",
+      "options": [
+        "Die Dissoziationskonstanten nehmen von Stufe zu Stufe ab (Ks1 > Ks2 > Ks3)",
+        "Der pH wird hauptsächlich durch den ersten Dissoziationsschritt bestimmt",
+        "Alle Protonen werden gleichzeitig abgegeben",
+        "H₃PO₄ ist eine dreiprotonige Säure"
+      ],
+      "correctAnswers": [
+        "Die Dissoziationskonstanten nehmen von Stufe zu Stufe ab (Ks1 > Ks2 > Ks3)",
+        "Der pH wird hauptsächlich durch den ersten Dissoziationsschritt bestimmt",
+        "H₃PO₄ ist eine dreiprotonige Säure"
+      ],
+      "explanation": "Mehrprotonige Säuren dissoziieren stufenweise mit abnehmender Stärke. Die erste Stufe bestimmt den pH. H₃PO₄ kann 3 Protonen abgeben. Die Protonen werden nacheinander abgegeben, nicht gleichzeitig."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Lewis-Theorie sind korrekt?",
+      "options": [
+        "Eine Lewis-Säure ist ein Elektronenpaarakzeptor",
+        "BF₃ ist eine Lewis-Säure",
+        "Jede Brønsted-Base ist auch eine Lewis-Base",
+        "Metallionen in Wasser können als Lewis-Säuren wirken"
+      ],
+      "correctAnswers": [
+        "Eine Lewis-Säure ist ein Elektronenpaarakzeptor",
+        "BF₃ ist eine Lewis-Säure",
+        "Jede Brønsted-Base ist auch eine Lewis-Base",
+        "Metallionen in Wasser können als Lewis-Säuren wirken"
+      ],
+      "explanation": "Alle Aussagen sind korrekt. Lewis-Säuren nehmen Elektronenpaare auf. BF₃ hat eine Elektronenlücke. Brønsted-Basen haben freie Elektronenpaare zum Donieren. Metallionen wie Fe³⁺ oder Al³⁺ koordinieren Wassermoleküle."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zu Pufferlösungen sind korrekt?",
+      "options": [
+        "Ein Puffer besteht aus einer schwachen Säure und ihrer konjugierten Base",
+        "Der Blutpuffer basiert auf dem H₂CO₃/HCO₃⁻-System",
+        "Puffer können unbegrenzt Säure aufnehmen ohne pH-Änderung",
+        "Am Halbäquivalenzpunkt einer Titration gilt pH = pKs"
+      ],
+      "correctAnswers": [
+        "Ein Puffer besteht aus einer schwachen Säure und ihrer konjugierten Base",
+        "Der Blutpuffer basiert auf dem H₂CO₃/HCO₃⁻-System",
+        "Am Halbäquivalenzpunkt einer Titration gilt pH = pKs"
+      ],
+      "explanation": "Puffer bestehen aus schwachen Säure-Base-Paaren. Der Bicarbonat-Puffer ist der wichtigste Blutpuffer. Puffer haben eine begrenzte Kapazität! Am Halbäquivalenzpunkt sind [HA] = [A⁻], daher pH = pKs (Henderson-Hasselbalch)."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Aussagen zur Titration einer schwachen Säure mit einer starken Base sind korrekt?",
+      "options": [
+        "Der Äquivalenzpunkt liegt im basischen Bereich (pH > 7)",
+        "Am Anfang ist der pH höher als bei einer starken Säure gleicher Konzentration",
+        "Der pH-Sprung am Äquivalenzpunkt ist größer als bei starker Säure mit starker Base",
+        "Im Pufferbereich ändert sich der pH nur wenig bei Basenzugabe"
+      ],
+      "correctAnswers": [
+        "Der Äquivalenzpunkt liegt im basischen Bereich (pH > 7)",
+        "Am Anfang ist der pH höher als bei einer starken Säure gleicher Konzentration",
+        "Im Pufferbereich ändert sich der pH nur wenig bei Basenzugabe"
+      ],
+      "explanation": "Bei schwachen Säuren liegt der ÄP basisch (Anion hydrolysiert). Schwache Säuren haben höheren Start-pH. Der pH-Sprung ist kleiner (nicht größer) als bei stark/stark. Der Pufferbereich zeigt flachen pH-Verlauf."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Welche Stoffe sind amphoter (können als Säure und Base reagieren)?",
+      "options": [
+        "Wasser (H₂O)",
+        "Hydrogencarbonat-Ion (HCO₃⁻)",
+        "Chlorid-Ion (Cl⁻)",
+        "Dihydrogenphosphat-Ion (H₂PO₄⁻)"
+      ],
+      "correctAnswers": [
+        "Wasser (H₂O)",
+        "Hydrogencarbonat-Ion (HCO₃⁻)",
+        "Dihydrogenphosphat-Ion (H₂PO₄⁻)"
+      ],
+      "explanation": "Amphotere Stoffe können sowohl Protonen aufnehmen als auch abgeben. H₂O, HCO₃⁻ und H₂PO₄⁻ haben diese Eigenschaft. Cl⁻ ist die konjugierte Base einer starken Säure und reagiert praktisch nicht mit Wasser."
+    },
+    {
+      "type": "multiple-choice-multiple",
+      "question": "Beim Mischen von 50 mL 0,1 M HCl mit 50 mL 0,1 M NaOH – welche Aussagen sind korrekt?",
+      "options": [
+        "Der pH der resultierenden Lösung ist 7",
+        "Es liegt eine vollständige Neutralisation vor",
+        "Die resultierende Lösung enthält NaCl",
+        "Die Lösung ist stark basisch"
+      ],
+      "correctAnswers": [
+        "Der pH der resultierenden Lösung ist 7",
+        "Es liegt eine vollständige Neutralisation vor",
+        "Die resultierende Lösung enthält NaCl"
+      ],
+      "explanation": "Gleiche Stoffmengen von HCl und NaOH neutralisieren sich vollständig. Es entsteht NaCl (neutral, pH = 7). Die Lösung ist weder sauer noch basisch, da NaCl aus starker Säure und starker Base stammt."
+    }
+  ],
+  "generatedAt": "2026-01-25T10:09:32.728Z"
+}

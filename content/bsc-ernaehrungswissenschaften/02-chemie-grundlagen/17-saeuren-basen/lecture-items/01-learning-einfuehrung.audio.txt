@@ -1,0 +1,29 @@
+Säuren und Basen begegnen uns überall im Alltag.
+
+Der saure Geschmack von Zitronen? Der kommt von der Zitronensäure. Und der Schmerz eines Ameisenbisses? Das ist die Ameisensäure.
+
+...
+
+Was genau ist aber eine Säure? Die beste Erklärung liefert die Brønsted-Lowry Theorie.
+
+Eine Säure ist ein Protonendonator... sie gibt also H plus Ionen ab.
+
+Eine Base ist ein Protonenakzeptor... sie nimmt H plus Ionen auf.
+
+...
+
+Bei jeder Säure-Base-Reaktion entsteht ein sogenanntes konjugiertes Paar.
+
+Nehmen wir Ammoniak in Wasser als Beispiel.
+
+Ammoniak nimmt ein Proton vom Wasser auf und wird dabei zum Ammonium-Ion.
+
+Das Wasser gibt ein Proton ab und wird zum Hydroxid-Ion.
+
+...
+
+Die wichtige Regel dabei: Jede Säure hat eine konjugierte Base... und umgekehrt.
+
+Sie unterscheiden sich immer nur um genau ein Proton.
+
+Salzsäure und Chlorid-Ion... Schwefelsäure und Hydrogensulfat... Ammonium und Ammoniak.
