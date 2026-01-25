@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-25T09:27:35.593Z",
+  "generatedAt": "2026-01-25T10:09:33.031Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -8976,6 +8976,377 @@
           "index": 75,
           "type": "self-assessment",
           "title": "Bin ich bereit für den Vorlesungs-Test?",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "17-saeuren-basen",
+      "topic": "Säuren und Basen",
+      "description": "Brønsted-Lowry Theorie, pH-Wert, Säurekonstanten, Salzhydrolyse, Lewis-Säuren",
+      "topics": [
+        "Säuren und Basen"
+      ],
+      "keywords": [
+        "säuren",
+        "basen",
+        "brnstedlowry",
+        "theorie",
+        "phwert",
+        "säurekonstanten",
+        "salzhydrolyse",
+        "lewissäuren",
+        "einführung",
+        "begegnen",
+        "uns",
+        "überall",
+        "alltag",
+        "saure",
+        "geschmack",
+        "zitronen",
+        "stammt",
+        "zitronensäure",
+        "schmerz",
+        "ameisenbisses",
+        "ameisensäure",
+        "verursacht",
+        "gebräuchlichste",
+        "definition",
+        "brnsted",
+        "lowry",
+        "begriff",
+        "säure",
+        "protonendonator",
+        "gibt",
+        "base",
+        "protonenakzeptor",
+        "nimmt",
+        "konjugierte",
+        "säurebasepaare",
+        "säurebasereaktion",
+        "entsteht",
+        "konjugiertes",
+        "paar",
+        "textnhtexthtextnhtexthtexthtextotexthtextohtexthtexthtexthcltextcltexthtextsotexthsotextnhtextnhtexthtextotextoh",
+        "definiert",
+        "ordne",
+        "ihren",
+        "konjugierten",
+        "säurebasechemie",
+        "einfach",
+        "erklärt",
+        "reaktionsgleichung",
+        "beispiele",
+        "stärke",
+        "hängt",
+        "davon",
+        "vollständig",
+        "wasser",
+        "dissoziiert",
+        "starke",
+        "dissoziieren",
+        "gleichgewicht",
+        "liegt",
+        "produktseite",
+        "wichtigsten",
+        "starken",
+        "formel",
+        "name",
+        "salzsäure",
+        "salpetersäure",
+        "schwefelsäure",
+        "perchlorsäure",
+        "reaktion",
+        "sondern",
+        "vollständige",
+        "textnaohtextkohtextcaohtexthcltextcltexthftextftexthtextotextoh",
+        "stark",
+        "säurebasereaktionen",
+        "verlaufen",
+        "immer",
+        "vom",
+        "stärkeren",
+        "schwächeren",
+        "welche",
+        "folgenden",
+        "substanzen",
+        "ihrer",
+        "säuretheorie",
+        "schwache",
+        "vergleich",
+        "eigendissoziation",
+        "wassers",
+        "amphiprotisch",
+        "sowohl",
+        "reagieren",
+        "reinem",
+        "findet",
+        "autoprotolyse",
+        "statt",
+        "texthtextotexthtexto",
+        "textoh",
+        "cdot",
+        "texthtexto",
+        "textphtextohtextoh"
+      ],
+      "snippet": "Säuren und Basen Brønsted-Lowry Theorie, pH-Wert, Säurekonstanten, Salzhydrolyse, Lewis-Säuren Säuren und Basen – Einführung Säuren und Basen begegnen uns überall im Alltag: Der saure Geschmack von Zi...",
+      "itemCount": 25,
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Item 1",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "self-assessment-mc",
+          "title": "Was definiert eine Base nach Brønsted-Lowry?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "matching",
+          "title": "Ordne die Säuren ihren konjugierten Basen zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "youtube-video",
+          "title": "Item 4",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "learning-content",
+          "title": "Item 5",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "self-assessment-mc",
+          "title": "Welche der folgenden Säuren ist eine starke Säure?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "matching",
+          "title": "Ordne die Substanzen ihrer Stärke zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "youtube-video",
+          "title": "Item 8",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "learning-content",
+          "title": "Item 9",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "self-assessment-mc",
+          "title": "Welchen pH-Wert hat eine Lösung mit [H₃O⁺] = 1,0 × 10⁻³ M?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "calculation",
+          "title": "Berechne den pH-Wert einer 0,0050 M HCl-Lösung. HCl ist eine starke Säure und dissoziiert vollständig.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "youtube-video",
+          "title": "Item 12",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "learning-content",
+          "title": "Item 13",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "self-assessment-mc",
+          "title": "Was bedeutet ein sehr kleiner Ks-Wert für eine Säure?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "calculation",
+          "title": "Berechne den pH-Wert einer 0,10 M Ameisensäure-Lösung. Ks = 1,8 × 10⁻⁴. Verwende die Näherungsformel [H₃O⁺] ≈ √(Ks × C₀).",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "youtube-video",
+          "title": "Item 16",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "learning-content",
+          "title": "Item 17",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "self-assessment-mc",
+          "title": "Welchen pH-Wert erwarten Sie beim Lösen von Natriumacetat (NaCH₃COO) in Wasser?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "matching",
+          "title": "Ordne die Salze dem erwarteten pH-Bereich zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "youtube-video",
+          "title": "Item 20",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "learning-content",
+          "title": "Item 21",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "self-assessment-mc",
+          "title": "Welche Aussage über mehrprotonige Säuren ist korrekt?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "learning-content",
+          "title": "Item 23",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "self-assessment-mc",
+          "title": "Was ist eine Lewis-Säure?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "self-assessment",
+          "title": "Bist du bereit für den Vorlesungstest zu Säuren und Basen?",
           "typeKeywords": [
             "selbsttest",
             "checkliste",

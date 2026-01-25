@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-25T09:27:35.295Z",
+  "generatedAt": "2026-01-25T10:09:32.591Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -140,6 +140,16 @@
       "topic": "Lösungen",
       "description": "Eigenschaften von Lösungen, Konzentrationsmaße, Thermodynamik des Lösungsprozesses, kolligative Eigenschaften und Osmose",
       "estimatedTime": 120,
+      "version": "1.0.0"
+    },
+    "02-chemie-grundlagen/17-saeuren-basen": {
+      "checksum": "4c521a02",
+      "sizeKB": 33.9,
+      "itemCount": 25,
+      "quizCount": 12,
+      "topic": "Säuren und Basen",
+      "description": "Brønsted-Lowry Theorie, pH-Wert, Säurekonstanten, Salzhydrolyse, Lewis-Säuren",
+      "estimatedTime": 90,
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/18-saeuren-basen-gleichgewicht": {
