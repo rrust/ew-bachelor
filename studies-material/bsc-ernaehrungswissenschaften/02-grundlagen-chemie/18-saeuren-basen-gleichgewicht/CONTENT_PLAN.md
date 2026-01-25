@@ -1,5 +1,14 @@
 # CONTENT_PLAN: Säure-Base-Gleichgewichte und Pufferlösungen (Kapitel 18)
 
+## Status
+
+| Schritt            | Status | Datum      | Details             |
+| ------------------ | ------ | ---------- | ------------------- |
+| Content generiert  | ✅      | 2026-01-25 | 34 Items, 12 Fragen |
+| Videos verifiziert | ✅      | 2026-01-25 | Alle funktionieren  |
+| Audio generiert    | ✅      | 2026-01-25 | 6 MP3s              |
+| PR gemerged        | ✅      | 2026-01-25 | Bereits auf main    |
+
 ## Abschnitt 1: Common Ion Effect & Le Chatelier
 
 | Nr  | Dateiname                    | Typ                | Beschreibung                           |
