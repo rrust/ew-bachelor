@@ -1,0 +1,27 @@
+Stell dir vor, du machst Sandwiches. Für jedes Sandwich brauchst du zwei Scheiben Brot, eine Scheibe Käse und ein Salatblatt.
+
+Du hast zehn Brotscheiben, drei Käsescheiben und acht Salatblätter. Wie viele Sandwiches kannst du machen?
+
+...
+
+Das Brot reicht für fünf Sandwiches. Der Salat reicht für acht. Aber der Käse reicht nur für drei.
+
+Also kannst du nur drei Sandwiches machen. Der Käse limitiert das Ergebnis.
+
+...
+
+Genau so funktioniert der begrenzende Reaktant in der Chemie.
+
+Wenn du die Edukte nicht im exakten stöchiometrischen Verhältnis einsetzt, wird einer der Stoffe zuerst aufgebraucht. Das ist der begrenzende Reaktant.
+
+Der andere Stoff bleibt übrig. Das ist der Überschussreaktant.
+
+...
+
+Entscheidend ist: Die maximale Produktmenge wird immer vom begrenzenden Reaktanten bestimmt. Es ist egal, wie viel vom anderen Stoff noch da ist.
+
+...
+
+Bei Zink und Salzsäure zum Beispiel: Wenn du mehr Zink als Salzsäure hast, ist die Salzsäure der begrenzende Reaktant. Sie wird zuerst verbraucht, und Zink bleibt übrig.
+
+Alle Berechnungen zur Produktmenge musst du dann auf Basis der Salzsäure durchführen.

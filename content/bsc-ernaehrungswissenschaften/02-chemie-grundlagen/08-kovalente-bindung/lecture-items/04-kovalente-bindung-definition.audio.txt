@@ -1,0 +1,17 @@
+Bei der kovalenten Bindung passiert etwas ganz anderes als bei der Ionenbindung. Hier werden Elektronen nicht übertragen, sondern geteilt.
+
+Stell dir zwei Atome vor, die sich nähern. Jedes bringt ein ungepaartes Elektron mit. Statt dass eines das Elektron abgibt und das andere es aufnimmt, teilen sie sich das Elektronenpaar gemeinsam.
+
+...
+
+Das klingt harmonisch, aber es ist ein Kräftegleichgewicht. Beide Kerne ziehen die Elektronen an. Das ist die anziehende Kraft. Gleichzeitig stoßen sich die beiden positiven Kerne gegenseitig ab. Und auch die negativen Elektronen stoßen sich untereinander ab.
+
+Der stabile Bindungszustand entsteht genau dort, wo die Gesamtenergie minimal ist. Das ist bei einem bestimmten Bindungsabstand.
+
+...
+
+Wie entsteht die Bindung konkret? Durch Orbitalüberlappung. Die Atomorbitale benachbarter Atome überlappen im Bereich zwischen den Kernen. Dort halten sich die Elektronen bevorzugt auf. Die Elektronendichte ist zwischen den Kernen am höchsten.
+
+In Strukturformeln zeichnen wir kovalente Bindungen als Striche. H Strich H für Wasserstoff. H Strich Cl für Chlorwasserstoff.
+
+Kovalente Bindungen entstehen also durch Elektronenteilung. Beide Atome nutzen das gemeinsame Elektronenpaar.

@@ -1,0 +1,21 @@
+Im Phasendiagramm sieht man alle kolligativen Effekte auf einen Blick.
+
+...
+
+Verglichen mit reinem Wasser passieren drei Dinge, wenn du einen Stoff löst.
+
+Die Dampfdruckkurve verschiebt sich nach unten. Das ist die Dampfdruckerniedrigung durch die gelösten Teilchen.
+
+Der Siedepunkt verschiebt sich nach rechts, zu höheren Temperaturen. Weil der Dampfdruck niedriger ist, braucht man mehr Wärme, um eine Atmosphäre zu erreichen.
+
+Der Gefrierpunkt verschiebt sich nach links, zu niedrigeren Temperaturen. Die gelösten Teilchen stören die Kristallbildung.
+
+...
+
+Interessant ist das Verhältnis. Für Wasser ist die kryoskopische Konstante eins Komma acht sechs, die ebullioskopische nur null Komma fünf eins zwei. Der Gefrierpunkt sinkt also etwa drei Komma sechs mal stärker als der Siedepunkt steigt.
+
+Bei einer einmolalen Lösung: Gefrierpunkt minus eins Komma acht sechs Grad, Siedepunkt hundert Komma fünf eins Grad.
+
+...
+
+Die Gefrierpunktserniedrigung ist deshalb praktischer für analytische Messungen. Der Effekt ist größer und leichter zu messen.

@@ -1,0 +1,23 @@
+Das Periodensystem der Elemente ist wie eine Landkarte der Chemie. Wenn du es lesen kannst, weißt du eine Menge über jedes Element.
+
+...
+
+Im 19. Jahrhundert ordnete Dmitri Mendeleev die damals bekannten Elemente nach steigender Atommasse und bemerkte etwas Erstaunliches: Die chemischen Eigenschaften wiederholten sich in regelmäßigen Abständen, also periodisch.
+
+Heute ordnen wir die Elemente nach steigender Ordnungszahl, also nach der Anzahl der Protonen.
+
+...
+
+Das Periodensystem hat zwei wichtige Strukturelemente: Perioden und Gruppen.
+
+Perioden sind die horizontalen Zeilen. Es gibt sieben davon. Die Periodennummer verrät dir die Anzahl der Elektronenschalen. Elemente in derselben Periode haben also gleich viele Schalen.
+
+Gruppen sind die vertikalen Spalten. Es gibt 18 davon. Elemente in derselben Gruppe haben ähnliche chemische Eigenschaften. Warum? Weil sie die gleiche Anzahl von Valenzelektronen haben, also Elektronen in der äußersten Schale.
+
+...
+
+Das Periodensystem ist in verschiedene Bereiche unterteilt. Links und in der Mitte findest du die Metalle: Sie leiten Strom, glänzen und sind formbar. Rechts oben, plus Wasserstoff, sind die Nichtmetalle: oft schlechte Leiter und häufig Gase. Dazwischen liegen die Halbmetalle mit gemischten Eigenschaften. Und in der Mitte, im sogenannten d-Block, befinden sich die Übergangsmetalle mit ihren variablen Oxidationsstufen.
+
+...
+
+Für jedes Element findest du im Periodensystem das Elementsymbol, die Ordnungszahl, das Atomgewicht und den Elementnamen.

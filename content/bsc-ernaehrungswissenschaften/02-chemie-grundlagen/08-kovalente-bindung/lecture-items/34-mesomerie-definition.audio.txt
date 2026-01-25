@@ -1,0 +1,19 @@
+Manchmal gibt es mehrere gleichwertige Möglichkeiten, eine Lewis-Formel zu zeichnen. Das Phänomen heißt Mesomerie oder Resonanz.
+
+Aber Vorsicht: Das bedeutet nicht, dass das Molekül zwischen verschiedenen Strukturen hin und her springt.
+
+...
+
+Das Kernkonzept ist: Die wahre Struktur eines Moleküls ist ein Hybrid, eine Mischform aus allen möglichen Lewis-Formeln. Keine der einzelnen Formeln zeigt die Realität allein.
+
+Die verschiedenen Möglichkeiten heißen mesomere Grenzformeln oder Resonanzstrukturen. Sie werden durch einen Doppelpfeil verbunden.
+
+...
+
+Dieser Doppelpfeil ist wichtig zu verstehen. Er bedeutet nicht, dass ein Gleichgewicht vorliegt. Er bedeutet nicht, dass sich die Strukturen umwandeln. Er bedeutet: Die Elektronen sind delokalisiert.
+
+In Wirklichkeit sind die Elektronen nicht an einer Stelle fixiert, sondern über mehrere Atome verschmiert. Die einzelnen Grenzformeln sind nur Hilfskonstruktionen, um dies darzustellen.
+
+...
+
+Verwechsle den Resonanz-Doppelpfeil niemals mit dem Gleichgewichtspfeil bei chemischen Reaktionen. Der Resonanzpfeil hat zwei Spitzen nach links und rechts. Der Gleichgewichtspfeil hat zwei halbe Pfeile übereinander.

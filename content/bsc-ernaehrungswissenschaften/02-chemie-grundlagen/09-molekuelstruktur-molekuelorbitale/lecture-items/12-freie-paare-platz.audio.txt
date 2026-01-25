@@ -1,0 +1,15 @@
+Freie Elektronenpaare am Zentralatom... sie machen den Unterschied.
+
+Wenn freie Paare vorhanden sind, unterscheidet sich die Molekülgeometrie von der Elektronengeometrie. Aber warum?
+
+Freie Elektronenpaare benötigen mehr Platz als bindende Paare...
+
+Der Grund: Ein freies Paar wird nur von einem einzigen Kern angezogen. Ein bindendes Paar hingegen wird von zwei Kernen angezogen... es wird sozusagen in die Länge gezogen.
+
+Die Elektronenwolke eines freien Paares ist dadurch dicker. Sie breitet sich stärker aus und drückt die bindenden Paare zusammen...
+
+Es gibt eine klare Hierarchie der Abstoßung:
+
+Am stärksten ist die Abstoßung zwischen zwei freien Paaren. Dann kommt die Abstoßung zwischen einem freien und einem bindenden Paar... Und am schwächsten ist die Abstoßung zwischen zwei bindenden Paaren.
+
+Die Konsequenz? Bindungswinkel werden kleiner, wenn freie Elektronenpaare vorhanden sind. Das erklärt, warum Wasser einen kleineren Winkel hat als Methan.

@@ -1,0 +1,27 @@
+Stell dir vor, du möchtest die Reaktionsenthalpie einer Reaktion berechnen, die im Labor schwer durchzuführen ist. Geht das auch ohne direktes Messen?
+
+Ja! Und zwar mit dem Satz von Hess.
+
+...
+
+Die Enthalpie ist eine Zustandsgröße. Das bedeutet, die Änderung Delta H hängt nur vom Anfangs- und Endzustand ab, nicht vom Reaktionsweg.
+
+Egal wie viele Zwischenschritte eine Reaktion hat, die Gesamtänderung der Enthalpie ist immer gleich.
+
+...
+
+Das Gesetz der konstanten Wärmesummen besagt: Wenn eine Reaktion die Summe aus zwei oder mehreren anderen Reaktionen ist, dann ist die Netto-Enthalpieänderung die Summe der Delta H Werte der Teilreaktionen.
+
+...
+
+Nehmen wir die Bildung von flüssigem Wasser als Beispiel.
+
+Weg A ist der direkte Weg: Wasserstoff plus Sauerstoff reagiert direkt zu flüssigem Wasser. Delta H ist minus 286 Kilojoule.
+
+Weg B geht über zwei Schritte: Erst bildet sich Wasserdampf mit Delta H eins von minus 242 Kilojoule. Dann kondensiert der Dampf zu flüssigem Wasser mit Delta H zwei von minus 44 Kilojoule.
+
+Die Summe von Weg B? Minus 242 plus minus 44 ergibt minus 286 Kilojoule. Identisch mit Weg A!
+
+...
+
+Die praktische Bedeutung ist enorm: Mit dem Satz von Hess können wir Reaktionsenthalpien berechnen, die experimentell schwer zugänglich sind, indem wir sie aus einfacher messbaren Reaktionen zusammensetzen.

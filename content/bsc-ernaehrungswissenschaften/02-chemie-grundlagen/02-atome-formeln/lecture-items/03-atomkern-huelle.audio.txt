@@ -1,0 +1,21 @@
+Ein Atom ist zu 99,9 Prozent leerer Raum.
+
+Klingt unglaublich, oder? Aber genau so ist es.
+
+...
+
+Ein Atom besteht aus zwei Hauptbereichen: dem Atomkern und der Elektronenhülle.
+
+Der Atomkern enthält die Protonen und Neutronen, die zusammen auch Nukleonen genannt werden. Dieser winzige Kern trägt fast die gesamte Masse des Atoms, obwohl er im Vergleich zum Gesamtatom verschwindend klein ist. Weil die Protonen positiv geladen sind, hat der Kern insgesamt eine positive Ladung.
+
+Die Elektronenhülle umgibt den Kern. Hier bewegen sich die Elektronen in einer sogenannten Elektronenwolke. Diese Hülle macht das eigentliche Volumen des Atoms aus. Bei neutralen Atomen gleicht die negative Ladung der Elektronen genau die positive Ladung des Kerns aus.
+
+...
+
+Um dir die Größenverhältnisse vorzustellen, hilft diese Analogie: Wenn ein Atom so groß wäre wie ein Fußballstadion mit etwa 200 Metern Durchmesser, dann wäre der Atomkern nur so groß wie eine Erbse im Mittelkreis.
+
+In Zahlen: Der Atomdurchmesser beträgt etwa 10 hoch minus 10 Meter, also etwa 100 Pikometer. Der Kerndurchmesser ist mit 10 hoch minus 15 Metern etwa 100.000-mal kleiner.
+
+...
+
+Diese riesige Menge an leerem Raum erklärt übrigens, warum manche Strahlung einfach durch Materie hindurchgehen kann. Sie passiert einfach den leeren Raum zwischen Kern und Hülle.

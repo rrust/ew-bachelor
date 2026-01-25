@@ -1,0 +1,27 @@
+In der Chemie arbeiten wir ständig mit Lösungen. Aber wie beschreiben wir, wie konzentriert eine Lösung ist? Die Antwort ist die Molarität.
+
+...
+
+Die Molarität gibt an, wie viel Mol eines Stoffes in einem Liter Lösung gelöst sind.
+
+Die Formel ist: c gleich n geteilt durch V. Also Konzentration gleich Stoffmenge geteilt durch Volumen.
+
+Die Einheit ist Mol pro Liter, oft abgekürzt als großes M für molar.
+
+...
+
+Wichtig: Das Volumen bezieht sich auf die gesamte Lösung, nicht nur auf das Lösungsmittel. Wenn du Salz in Wasser löst, wird das Gesamtvolumen etwas größer als das reine Wasservolumen.
+
+...
+
+Eine 0,5 molare Kochsalzlösung enthält ein halbes Mol Natriumchlorid pro Liter.
+
+Die Molmasse von Natriumchlorid ist etwa 58 Gramm pro Mol. Also sind das 29 Gramm Salz pro Liter Lösung.
+
+...
+
+Umgekehrt, wenn du die Molarität und das Volumen kennst, kannst du die Stoffmenge berechnen: n gleich c mal V.
+
+Bei 0,5 Mol pro Liter und 0,1 Liter Lösung hast du 0,05 Mol Salz.
+
+Diese einfache Formel nutzt du ständig bei Laborberechnungen.

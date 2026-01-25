@@ -1,0 +1,19 @@
+Die Ionisierungsenergie ist immer positiv, das heißt die Reaktion ist endotherm. Man muss Energie zuführen.
+
+Warum? Das Elektron wird vom positiv geladenen Kern angezogen. Man muss Energie aufwenden, um diese Anziehung zu überwinden. Das Elektron verlässt das Atom nicht freiwillig.
+
+...
+
+Bei Magnesium zum Beispiel braucht man 738 Kilojoule pro Mol, um einem Mol Magnesium-Atomen jeweils ein Elektron zu entreißen.
+
+...
+
+Was sagt uns die Höhe der Ionisierungsenergie?
+
+Eine hohe Ionisierungsenergie bedeutet: Elektronen sind fest gebunden, das Element ist schwer zu ionisieren. Das ist typisch für Nichtmetalle. Helium zum Beispiel hat 2372 Kilojoule pro Mol.
+
+Eine niedrige Ionisierungsenergie bedeutet: Elektronen sind locker gebunden, das Element ist leicht zu ionisieren. Das ist typisch für Metalle. Cäsium zum Beispiel hat nur 376 Kilojoule pro Mol.
+
+...
+
+Elemente mit niedriger Ionisierungsenergie geben ihre Elektronen in chemischen Reaktionen leicht ab. Das macht sie zu reaktiven Metallen.

@@ -1,0 +1,23 @@
+Warum löst sich Kochsalz in Wasser, aber nicht in Speiseöl?
+
+Die Antwort sind Ion-Dipol-Kräfte.
+
+...
+
+Wasser ist ein stark polares Molekül. Das Sauerstoffatom trägt eine partielle negative Ladung, die Wasserstoffatome tragen partielle positive Ladungen.
+
+Wenn Kochsalz, also Natriumchlorid, in Wasser kommt, passiert Folgendes. Die positiv geladenen Natriumionen werden vom negativen Sauerstoff angezogen. Die negativ geladenen Chloridionen werden von den positiven Wasserstoffatomen angezogen.
+
+...
+
+Die Wassermoleküle ordnen sich um die Ionen herum an und bilden eine sogenannte Hydrathülle. Dabei wird Energie frei, die Hydratationsenthalpie.
+
+Wie stark diese Kräfte sind, hängt von zwei Faktoren ab.
+
+Erstens, die Ionenladung. Je höher die Ladung, desto stärker die Anziehung. Magnesium zwei plus hat eine viel stärkere Hydratationsenthalpie als Lithium plus.
+
+Zweitens, der Ionenradius. Je kleiner das Ion, desto näher kommen die Wassermoleküle, desto stärker die Wechselwirkung. Lithium plus bindet Wasser stärker als Kalium plus.
+
+...
+
+Die praktische Bedeutung? Ion-Dipol-Kräfte sind der Grund, warum sich Salze in Wasser lösen. Die freiwerdende Hydratationsenergie kompensiert die aufzuwendende Gitterenergie. In unpolarem Öl gibt es diese Kräfte nicht, deshalb löst sich Salz dort nicht.

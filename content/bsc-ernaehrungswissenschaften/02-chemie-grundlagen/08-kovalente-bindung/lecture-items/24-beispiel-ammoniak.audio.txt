@@ -1,0 +1,19 @@
+Wenden wir die 4-Schritte-Strategie auf Ammoniak an. N H drei.
+
+Schritt 1: Zentralatom bestimmen. Zwischen Stickstoff und Wasserstoff wählen wir Stickstoff, denn Wasserstoff kann nie Zentralatom sein.
+
+...
+
+Schritt 2: Valenzelektronen zählen. Stickstoff hat 5 Valenzelektronen. Jeder der 3 Wasserstoffe hat 1. Das ergibt zusammen 8 Elektronen, also 4 Paare.
+
+Schritt 3: Gerüst zeichnen. 3 Einfachbindungen vom Stickstoff zu den 3 Wasserstoffen. Das verbraucht 3 Paare. Übrig bleibt 1 Paar.
+
+...
+
+Schritt 4: Restliche Elektronen verteilen. Die Wasserstoffe haben bereits ihr Duplett. Jeder hat 2 Elektronen durch die Bindung. Das letzte Paar kommt als freies Elektronenpaar an den Stickstoff.
+
+Das Ergebnis: Stickstoff hat 3 Bindungspaare plus 1 freies Paar. Das sind 4 Paare, also 8 Elektronen. Oktett erfüllt.
+
+...
+
+Übrigens, dieses freie Elektronenpaar am Stickstoff ist der Grund, warum Ammoniak als Base wirken kann. Es kann ein Proton aufnehmen und dabei sein freies Paar teilen.

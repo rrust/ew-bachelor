@@ -1,0 +1,25 @@
+Elektronen sind faul. Sie besetzen zuerst die Orbitale mit der niedrigsten Energie.
+
+...
+
+Das ist das Aufbauprinzip. Die Befüllungsreihenfolge lautet:
+
+Eins s, dann zwei s, dann zwei p, dann drei s, drei p, vier s, drei d, vier p, fünf s, vier d und so weiter.
+
+...
+
+Moment, vier s vor drei d? Obwohl n gleich vier größer ist als n gleich drei?
+
+Die Erklärung: Die Energie hängt nicht nur von n ab, sondern auch von l. Im neutralen Atom hat das vier s Orbital eine etwas niedrigere Energie als drei d.
+
+...
+
+Es gibt eine Merkregel, die Diagonalregel. Man schreibt die Orbitale in einem Schema auf und liest entlang der Diagonalen von oben rechts nach unten links.
+
+Eins s. Dann zwei s. Dann zwei p und drei s. Dann drei p und vier s. Dann drei d, vier p und fünf s. Und so weiter.
+
+...
+
+Aber Achtung: Bei Ionen kann sich die Reihenfolge ändern! Und bei d- und f-Elementen gibt es Ausnahmen, zum Beispiel Chrom und Kupfer.
+
+Das Periodensystem ist nach dem Aufbauprinzip geordnet. Die Struktur des Periodensystems spiegelt die Befüllung der Orbitale wider.

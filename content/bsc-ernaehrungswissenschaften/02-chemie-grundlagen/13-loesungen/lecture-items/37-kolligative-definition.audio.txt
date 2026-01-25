@@ -1,0 +1,17 @@
+Kolligative Eigenschaften haben eine verblüffende Gemeinsamkeit: Es ist egal, was du löst. Es zählt nur, wie viele Teilchen.
+
+...
+
+Das Wort kolligativ kommt vom lateinischen colligere, sammeln. Diese Eigenschaften hängen nur von der Anzahl der gelösten Teilchen ab, nicht von deren chemischer Art.
+
+Es gibt vier davon. Die Dampfdruckerniedrigung, die Siedepunktserhöhung, die Gefrierpunktserniedrigung und der osmotische Druck.
+
+...
+
+Der entscheidende Punkt ist die Teilchenzahl. Ein Mol Glucose ergibt ein Mol Teilchen in Lösung. Ein Mol Natriumchlorid ergibt zwei Mol Teilchen, weil es in Natriumionen und Chloridionen zerfällt. Ein Mol Calciumchlorid ergibt sogar drei Mol Teilchen.
+
+...
+
+Deshalb senkt Salz den Gefrierpunkt stärker als Zucker bei gleicher Stoffmenge. Nicht weil es Salz ist, sondern weil es mehr Teilchen liefert.
+
+Das ist das faszinierende an kolligativen Eigenschaften. Die Chemie ist egal. Es zählt nur die Zahl.

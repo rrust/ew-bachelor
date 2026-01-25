@@ -1,0 +1,29 @@
+Der pH-Wert begegnet dir überall. Beim Bluttest, bei Lebensmitteln, bei Reinigungsmitteln. Aber was bedeutet er eigentlich?
+
+...
+
+Der pH-Wert ist ein Maß dafür, wie sauer oder basisch eine Lösung ist.
+
+Die Definition ist: pH gleich minus Logarithmus der Hydronium-Ionen-Konzentration.
+
+Kurz gesagt: Je mehr H drei O plus Ionen in der Lösung sind, desto niedriger ist der pH-Wert, desto saurer ist die Lösung.
+
+...
+
+Die pH-Skala reicht typischerweise von null bis vierzehn.
+
+Unter sieben ist sauer. Magensäure hat einen pH von eins bis zwei. Zitronensaft liegt bei etwa drei.
+
+Genau sieben ist neutral. Das ist reines Wasser.
+
+Über sieben ist basisch. Seife hat einen pH von neun bis zehn. Haushaltsreiniger können bis zwölf gehen.
+
+...
+
+Wichtig: Die Skala ist logarithmisch. Eine Änderung um eine pH-Einheit bedeutet eine zehnfache Änderung der Konzentration.
+
+Von pH drei auf pH vier sinkt die Konzentration auf ein Zehntel. Von pH fünf auf pH drei steigt sie um den Faktor hundert.
+
+...
+
+Für deinen Körper ist der Blut-pH lebenswichtig. Er muss zwischen 7,35 und 7,45 bleiben. Schon kleine Abweichungen können gefährlich sein.

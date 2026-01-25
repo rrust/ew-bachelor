@@ -1,0 +1,19 @@
+Die Ionisierungsenergie ist ein Maß dafür, wie fest ein Atom seine Elektronen bindet.
+
+Sie ist definiert als die minimal benötigte Energie, um das am schwächsten gebundene Elektron aus einem isolierten Atom im Gaszustand vollständig zu entfernen.
+
+...
+
+Drei wichtige Bedingungen dabei.
+
+Erstens: Das Atom muss im Gaszustand vorliegen, isoliert ohne Wechselwirkungen mit anderen Atomen.
+
+Zweitens: Es wird das am schwächsten gebundene Elektron entfernt, also das Valenzelektron.
+
+Drittens: Das Elektron wird vollständig entfernt, theoretisch ins Unendliche.
+
+...
+
+Die erste Ionisierungsenergie wird oft als I eins oder IE eins geschrieben. Das beschreibt den Prozess, bei dem ein neutrales Atom im Gaszustand zu einem einfach positiv geladenen Ion wird, plus einem freien Elektron.
+
+Die übliche Einheit ist Kilojoule pro Mol. Wasserstoff zum Beispiel hat eine Ionisierungsenergie von 1312 Kilojoule pro Mol.

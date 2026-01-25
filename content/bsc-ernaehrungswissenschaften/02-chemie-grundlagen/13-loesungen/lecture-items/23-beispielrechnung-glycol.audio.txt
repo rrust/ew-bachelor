@@ -1,0 +1,19 @@
+Lass uns alle Konzentrationsmaße an einem praktischen Beispiel durchrechnen. Wir nehmen Ethylenglycol, das Frostschutzmittel für Autokühler.
+
+...
+
+Gegeben: 62 Komma eins Gramm Glycol in 250 Gramm Wasser. Die molare Masse von Glycol beträgt 62 Komma eins Gramm pro Mol, wir haben also genau ein Mol Glycol.
+
+...
+
+Schritt eins: Wie viel Mol Wasser haben wir? 250 Gramm geteilt durch 18 Komma null zwei Gramm pro Mol ergibt 13 Komma neun Mol.
+
+Schritt zwei: Der Stoffmengenanteil von Glycol. Ein Mol geteilt durch 14 Komma neun Mol gesamt, das sind null Komma null sechs sieben zwei.
+
+Schritt drei: Die Molalität. Ein Mol geteilt durch null Komma 250 Kilogramm Wasser ergibt vier Mol pro Kilogramm.
+
+Schritt vier: Der Massenanteil. 62 Komma eins Gramm geteilt durch 312 Komma eins Gramm Gesamtmasse, mal hundert, ergibt 19 Komma neun Prozent.
+
+...
+
+Drei verschiedene Konzentrationsmaße, drei verschiedene Zahlen, aber alle beschreiben dieselbe Lösung.

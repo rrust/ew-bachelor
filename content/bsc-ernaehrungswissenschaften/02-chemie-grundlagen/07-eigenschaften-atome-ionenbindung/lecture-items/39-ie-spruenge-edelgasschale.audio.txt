@@ -1,0 +1,19 @@
+Bei Magnesium gibt es einen dramatischen Sprung zwischen der zweiten und dritten Ionisierungsenergie.
+
+I eins beträgt 738 Kilojoule pro Mol. I zwei beträgt 1451, etwa das Doppelte. Aber I drei springt auf 7733 Kilojoule pro Mol! Das ist mehr als das Fünffache von I zwei!
+
+...
+
+Warum dieser riesige Sprung?
+
+Nach der Entfernung der beiden Valenzelektronen aus der 3s-Schale hat Magnesium-zwei-plus die Edelgaskonfiguration von Neon: 1s zwei, 2s zwei, 2p sechs.
+
+Das dritte Elektron müsste aus dieser stabilen inneren Schale entfernt werden. Die 2p-Elektronen sind viel näher am Kern. Sie werden viel stärker angezogen. Ihre Entfernung erfordert enorm viel Energie.
+
+...
+
+Diese Sprünge sind so charakteristisch, dass sie die Gruppennummer verraten!
+
+Bei Natrium in Gruppe 1 ist der Sprung zwischen I eins und I zwei. Bei Magnesium in Gruppe 2 zwischen I zwei und I drei. Bei Aluminium in Gruppe 3 zwischen I drei und I vier.
+
+Metalle geben Elektronen nur bis zur Edelgaskonfiguration leicht ab. Darüber hinaus wird es extrem schwer.

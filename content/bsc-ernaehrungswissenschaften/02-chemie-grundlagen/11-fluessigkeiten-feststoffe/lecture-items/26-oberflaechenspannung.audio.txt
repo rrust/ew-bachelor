@@ -1,0 +1,27 @@
+Wie kann ein Wasserläufer auf dem Wasser laufen? Die Antwort ist Oberflächenspannung.
+
+...
+
+Moleküle im Inneren einer Flüssigkeit werden von allen Seiten gleichmäßig angezogen. Nachbarn überall.
+
+Moleküle an der Oberfläche haben ein Problem. Oberhalb von ihnen ist nichts, zumindest keine anderen Flüssigkeitsmoleküle. Sie werden nur von unten und von der Seite angezogen. Die Netto-Kraft zeigt nach innen.
+
+Das Ergebnis? Die Oberfläche verhält sich wie eine gespannte elastische Haut.
+
+...
+
+Das erklärt mehrere Phänomene.
+
+Tropfen nehmen Kugelform an, weil die Kugel bei gegebenem Volumen die kleinste Oberfläche hat. Wasserläufer können auf dem Wasser laufen, weil ihr Gewicht die Oberflächenhaut nicht durchbricht. Und um die Oberfläche zu vergrößern, muss Arbeit verrichtet werden.
+
+Stärkere intermolekulare Kräfte bedeuten höhere Oberflächenspannung. Quecksilber mit seiner starken Metallbindung hat eine Oberflächenspannung von 485 Millinewton pro Meter. Wasser mit seinen Wasserstoffbrücken erreicht 73. Ethanol mit schwächeren Wasserstoffbrücken nur 22.
+
+...
+
+Eng verwandt ist die Kapillarität, das Verhalten von Flüssigkeiten in engen Röhren. Hier konkurrieren zwei Kräfte. Kohäsion, die Anziehung der Flüssigkeitsmoleküle untereinander. Und Adhäsion, die Anziehung zwischen Flüssigkeit und Behälterwand.
+
+Bei Wasser in Glas ist die Adhäsion stärker. Das Wasser klettert am Glas hoch und bildet einen nach unten gewölbten Meniskus.
+
+Bei Quecksilber in Glas dominiert die Kohäsion. Das Quecksilber wird vom Glas abgestoßen und bildet einen nach oben gewölbten Meniskus.
+
+Kapillarkräfte lassen Wasser in Pflanzen aufsteigen. Und beim Ablesen einer Bürette achtet man auf den tiefsten Punkt des Meniskus.

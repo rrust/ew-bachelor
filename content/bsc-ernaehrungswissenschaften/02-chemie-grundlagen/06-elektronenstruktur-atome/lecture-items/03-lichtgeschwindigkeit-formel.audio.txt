@@ -1,0 +1,19 @@
+Licht ist unglaublich schnell. Es legt in einer Sekunde fast 300.000 Kilometer zurück. Aber hier kommt das Interessante: Alle elektromagnetischen Wellen reisen mit exakt der gleichen Geschwindigkeit im Vakuum.
+
+...
+
+Die fundamentale Beziehung lautet: c gleich Lambda mal Nü.
+
+c ist die Lichtgeschwindigkeit, etwa 3 mal zehn hoch acht Meter pro Sekunde. Lambda ist die Wellenlänge. Nü ist die Frequenz.
+
+...
+
+Da c konstant ist, besteht eine inverse Proportionalität zwischen Wellenlänge und Frequenz. Lange Wellen wie Radiowellen haben niedrige Frequenzen. Kurze Wellen wie Röntgenstrahlen haben hohe Frequenzen.
+
+...
+
+Rechnen wir ein Beispiel. Rotes Licht hat eine Wellenlänge von 700 Nanometern. Das sind 7 mal zehn hoch minus sieben Meter.
+
+Die Frequenz berechnen wir: Nü gleich c durch Lambda. Also 3 mal zehn hoch acht geteilt durch 7 mal zehn hoch minus sieben. Das ergibt etwa 4,3 mal zehn hoch vierzehn Hertz.
+
+Wichtig: Immer erst in SI Einheiten umrechnen, also Meter statt Nanometer!

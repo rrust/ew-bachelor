@@ -1,0 +1,23 @@
+Warum gibt Natrium so leicht ein Elektron ab, während Chlor unbedingt eines aufnehmen will?
+
+Beide wollen dasselbe erreichen: die stabile Edelgaskonfiguration.
+
+...
+
+Ionen sind elektrisch geladene Teilchen, die durch Aufnahme oder Abgabe von Elektronen entstehen.
+
+Kationen sind positiv geladene Ionen. Sie entstehen, wenn Atome Elektronen abgeben. Eine Eselsbrücke: Kationen sind positiv, und Kationen gehen zur Kathode, die negativ geladen ist.
+
+Typisch für Metalle: Natrium mit 11 Elektronen gibt eines ab und wird zu Na plus mit 10 Elektronen. Magnesium gibt zwei ab und wird zu Mg zwei plus. Aluminium gibt drei ab und wird zu Al drei plus. Alle drei haben dann die Elektronenkonfiguration von Neon mit 10 Elektronen.
+
+...
+
+Anionen sind negativ geladene Ionen. Sie entstehen durch Aufnahme von Elektronen. Die Eselsbrücke: Anionen sind negativ und gehen zur Anode, die positiv geladen ist.
+
+Typisch für Nichtmetalle: Chlor mit 17 Elektronen nimmt eines auf und wird zu Cl minus mit 18 Elektronen. Sauerstoff nimmt zwei auf und wird zu O zwei minus. Stickstoff nimmt drei auf und wird zu N drei minus.
+
+...
+
+Das Periodensystem verrät dir die typische Ionenladung. Gruppe 1, die Alkalimetalle, bilden plus eins. Gruppe 2, die Erdalkalimetalle, plus zwei. Gruppe 13 bildet plus drei. Gruppe 15 bildet minus drei. Gruppe 16 bildet minus zwei. Gruppe 17, die Halogene, bildet minus eins.
+
+Vorsicht bei Übergangsmetallen! Sie können verschiedene Ladungen haben, zum Beispiel Eisen als Fe zwei plus oder Fe drei plus.

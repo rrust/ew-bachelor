@@ -1,0 +1,43 @@
+Rechnen wir eine vollständige Kalorimetrie-Aufgabe mit konkreten Zahlen durch.
+
+Wir verbrennen ein Gramm Oktan, C8H18, im Bombenkalorimeter. Das Wasserbad enthält 1200 Gramm Wasser. Die Wärmekapazität der Bombe beträgt 837 Joule pro Kelvin. Die Temperatur steigt von 25 auf 33,2 Grad Celsius.
+
+...
+
+Schritt eins: Die Temperaturänderung berechnen.
+
+33,2 minus 25 ergibt 8,2 Kelvin.
+
+...
+
+Schritt zwei: Die Wärme berechnen, die das Wasser aufnimmt.
+
+1200 Gramm mal 4,184 Joule pro Gramm Kelvin mal 8,2 Kelvin ergibt 41.170 Joule.
+
+...
+
+Schritt drei: Die Wärme berechnen, die die Bombe aufnimmt.
+
+837 Joule pro Kelvin mal 8,2 Kelvin ergibt 6.860 Joule.
+
+...
+
+Schritt vier: Die Gesamtwärme addieren.
+
+41.170 plus 6.860 ergibt 48.030 Joule, also 48 Kilojoule.
+
+...
+
+Schritt fünf: Die Reaktionsenergie bestimmen.
+
+Da die Energie freigesetzt wurde, ist Delta U gleich minus 48 Kilojoule pro Gramm Oktan.
+
+...
+
+Für die molare Verbrennungsenergie multiplizieren wir mit der Molmasse. Oktan hat eine Molmasse von 114 Gramm pro Mol.
+
+Minus 48 Kilojoule pro Gramm mal 114 Gramm pro Mol ergibt minus 5472 Kilojoule pro Mol.
+
+...
+
+Das zeigt, warum Oktan, ein Hauptbestandteil von Benzin, ein so effektiver Treibstoff ist. Bei der Verbrennung eines Mols werden enorme Energiemengen freigesetzt!

@@ -1,0 +1,15 @@
+Um Lewis-Formeln zu zeichnen, musst du wissen, wie viele Valenzelektronen ein Atom hat. Aber was sind Valenzelektronen eigentlich?
+
+Valenzelektronen sind die Elektronen in der äußersten Schale. Sie sind für die chemische Bindung verantwortlich. Die inneren Elektronen in vollständig besetzten Schalen nehmen dagegen nicht an Bindungen teil.
+
+...
+
+Für Hauptgruppenelemente gibt es eine einfache Regel: Die Anzahl der Valenzelektronen entspricht der Gruppennummer.
+
+Kohlenstoff steht in Gruppe 4, hat also 4 Valenzelektronen. Stickstoff in Gruppe 5 hat 5. Sauerstoff in Gruppe 6 hat 6. Fluor und Chlor in Gruppe 7 haben 7.
+
+...
+
+Bei Elementen wie Brom musst du aufpassen. Brom hat die Konfiguration Argon 3 d zehn 4 s zwei 4 p fünf. Die d-Elektronen gehören zu einer inneren Schale. Die zählen nicht als Valenzelektronen. Brom hat also 7 Valenzelektronen, wie alle Halogene.
+
+Die Regel ist wirklich so einfach: Gruppennummer gleich Valenzelektronenzahl. Das brauchst du für jede Lewis-Formel.

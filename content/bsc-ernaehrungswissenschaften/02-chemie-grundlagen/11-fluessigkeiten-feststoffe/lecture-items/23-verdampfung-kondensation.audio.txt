@@ -1,0 +1,23 @@
+Warum fühlt sich nasse Haut im Wind kalt an? Das Phänomen heißt Verdunstungskälte und erklärt sich durch die Thermodynamik von Verdampfung und Kondensation.
+
+...
+
+In einer Flüssigkeit sind die Moleküle in ständiger Bewegung, haben thermische Energie, sind eng beieinander und kaum komprimierbar.
+
+Beim Verdampfen müssen Moleküle die intermolekularen Kräfte überwinden, um in die Gasphase zu gelangen. Dafür brauchen sie Energie. Diese Energie wird aus der Umgebung aufgenommen. Der Prozess ist endotherm.
+
+Das ist die Verdunstungskälte. Schweiß verdunstet und kühlt dabei die Haut. Ein nasser Finger im Wind fühlt sich kälter an.
+
+...
+
+Aber nicht alle Moleküle können verdampfen. Die kinetische Energie in einer Flüssigkeit ist nicht gleichmäßig verteilt, sondern folgt der Boltzmann-Verteilung. Einige Moleküle sind schnell, andere langsam.
+
+Nur die schnellsten Moleküle, die mit ausreichend hoher Energie, können die Oberfläche verlassen. Bei höherer Temperatur haben mehr Moleküle diese Mindestenergie.
+
+...
+
+Kondensation ist der umgekehrte Prozess. Gasmoleküle treten in die Flüssigkeit ein und Energie wird freigesetzt. Der Prozess ist exotherm.
+
+Das erklärt, warum Verbrennungen mit heißem Wasserdampf besonders schmerzhaft sind. Der Dampf hat nicht nur eine hohe Temperatur. Bei der Kondensation auf der Haut wird zusätzlich die Kondensationswärme freigesetzt. Ein doppelter Energieeintrag.
+
+Verdampfung kühlt, Kondensation wärmt. Diese Balance bestimmt viele Alltagsphänomene.

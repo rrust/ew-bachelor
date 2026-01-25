@@ -1,0 +1,25 @@
+Bei Mehrfachbindungen unterscheiden wir zwei verschiedene Bindungstypen: Sigma und Pi.
+
+Die Sigma-Bindung entsteht durch frontale Orbitalüberlappung. Kopf an Kopf. Die Elektronendichte liegt auf der Verbindungsachse zwischen den Kernen. Jede Einfachbindung ist eine Sigma-Bindung. Und sie erlaubt freie Rotation um die Bindungsachse.
+
+...
+
+Die Pi-Bindung entsteht durch seitliche Orbitalüberlappung. Schulter an Schulter. Die Elektronendichte liegt oberhalb und unterhalb der Verbindungsachse. Pi-Bindungen kommen nur in Mehrfachbindungen vor. Und sie verhindern freie Rotation.
+
+...
+
+Wie setzen sich Mehrfachbindungen zusammen?
+
+Eine Einfachbindung besteht aus 1 Sigma-Bindung.
+
+Eine Doppelbindung besteht aus 1 Sigma-Bindung plus 1 Pi-Bindung.
+
+Eine Dreifachbindung besteht aus 1 Sigma-Bindung plus 2 Pi-Bindungen.
+
+...
+
+Am Beispiel von Kohlenstoffdioxid: Jede Doppelbindung ist 1 Sigma plus 1 Pi. Das Molekül hat also insgesamt 2 Sigma und 2 Pi Bindungen.
+
+Am Beispiel von Stickstoff: Die Dreifachbindung N Dreifachbindung N ist 1 Sigma plus 2 Pi.
+
+Die Regel ist einfach: Die erste Bindung ist immer Sigma. Jede weitere ist Pi.

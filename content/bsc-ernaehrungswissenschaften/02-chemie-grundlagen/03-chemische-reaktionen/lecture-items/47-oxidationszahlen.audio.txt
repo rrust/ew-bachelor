@@ -1,0 +1,31 @@
+Oxidationszahlen sind ein Buchführungssystem für Elektronen. Sie helfen dir zu erkennen, wo Elektronen übertragen werden.
+
+...
+
+Die wichtigsten Regeln solltest du kennen.
+
+Elemente haben immer die Oxidationszahl null. Zink, Sauerstoff als O zwei, Eisen... alle null.
+
+Einfache Ionen haben als Oxidationszahl ihre Ionenladung. Natrium-plus hat plus eins, Chlorid-minus hat minus eins.
+
+Sauerstoff hat meistens minus zwei. In Wasser, in C O zwei, fast überall.
+
+Wasserstoff hat meistens plus eins.
+
+Und ganz wichtig: Die Summe aller Oxidationszahlen in einem neutralen Molekül muss null sein. In einem Ion muss sie der Ionenladung entsprechen.
+
+...
+
+Ein paar Ausnahmen solltest du kennen.
+
+In Peroxiden wie Wasserstoffperoxid hat Sauerstoff minus eins statt minus zwei.
+
+In Metallhydriden hat Wasserstoff minus eins statt plus eins.
+
+Und Fluor ist so elektronegativ, dass es immer minus eins hat. Sogar wenn es mit Sauerstoff verbunden ist!
+
+...
+
+Die Schreibweise: Oxidationszahlen werden oft über das Element geschrieben. Plus eins über Wasserstoff, minus zwei über Sauerstoff.
+
+Merke: Die Summe muss immer stimmen!

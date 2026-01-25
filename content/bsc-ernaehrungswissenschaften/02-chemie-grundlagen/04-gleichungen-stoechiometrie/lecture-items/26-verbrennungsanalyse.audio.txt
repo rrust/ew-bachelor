@@ -1,0 +1,27 @@
+Woraus besteht eine unbekannte organische Verbindung? Die Verbrennungsanalyse gibt dir die Antwort.
+
+...
+
+Das Prinzip: Du verbrennst die Probe vollständig. Der gesamte Kohlenstoff landet im C O zwei. Der gesamte Wasserstoff landet im Wasser. Dann misst du die Massen von C O zwei und Wasser und rechnest zurück.
+
+...
+
+Ein Beispiel: Du verbrennst 0,115 Gramm einer unbekannten Substanz und erhältst 0,379 Gramm C O zwei und 0,1035 Gramm Wasser.
+
+...
+
+Wie viel Kohlenstoff war in der Probe? Die Molmasse von C O zwei ist 44 Gramm pro Mol. Also 0,379 geteilt durch 44 ergibt 0,00861 Mol C O zwei.
+
+Da jedes C O zwei genau ein Kohlenstoff enthält, sind das auch 0,00861 Mol Kohlenstoff.
+
+...
+
+Wie viel Wasserstoff war in der Probe? Die Molmasse von Wasser ist 18 Gramm pro Mol. Also 0,1035 geteilt durch 18 ergibt 0,00574 Mol Wasser.
+
+Aber Achtung: Jedes Wassermolekül enthält zwei Wasserstoffatome. Also sind das 0,0115 Mol Wasserstoff.
+
+...
+
+Das Verhältnis von Wasserstoff zu Kohlenstoff ist 0,0115 geteilt durch 0,00861, also etwa 1,33. Das entspricht vier zu drei.
+
+Die empirische Formel ist damit C drei H vier.

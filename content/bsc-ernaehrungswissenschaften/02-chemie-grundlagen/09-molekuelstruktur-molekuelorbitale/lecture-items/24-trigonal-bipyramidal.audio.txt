@@ -1,0 +1,17 @@
+Elemente ab der dritten Periode können mehr als vier Elektronenpaare um sich anordnen. Das nennt man erweiterte Oktette...
+
+Bei fünf Paaren entsteht eine trigonal-bipyramidale Elektronengeometrie.
+
+Diese Struktur hat eine Besonderheit: Es gibt zwei verschiedene Positionen.
+
+Die axialen Positionen sind oben und unten auf der Achse. Sie stehen im 90-Grad-Winkel zu allen Nachbarn in der Mittelebene...
+
+Die äquatorialen Positionen liegen in der Mittelebene, sozusagen am Gürtel. Sie stehen im 120-Grad-Winkel zueinander.
+
+Wo sitzen nun freie Elektronenpaare?
+
+Freie Elektronenpaare besetzen immer die äquatorialen Positionen!
+
+Warum? In der äquatorialen Position hat ein Paar nur zwei Nachbarn im 90-Grad-Winkel... nämlich die beiden axialen. In der axialen Position wären es drei Nachbarn im 90-Grad-Winkel.
+
+Weniger 90-Grad-Abstoßungen bedeutet weniger Energie... also stabiler.

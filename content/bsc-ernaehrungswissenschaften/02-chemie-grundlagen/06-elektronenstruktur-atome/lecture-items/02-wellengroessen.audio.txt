@@ -1,0 +1,15 @@
+Wie beschreiben wir eigentlich eine Welle? Drei Größen sind entscheidend.
+
+...
+
+Erstens, die Wellenlänge. Das ist der Abstand von einem Wellenberg zum nächsten. Wir kürzen sie mit dem griechischen Buchstaben Lambda ab. Für sichtbares Licht messen wir sie in Nanometern. Ein Nanometer ist ein milliardstel Meter.
+
+...
+
+Zweitens, die Frequenz. Sie sagt uns, wie viele Wellenberge pro Sekunde an einem Punkt vorbeikommen. Das Symbol ist Nü, ein griechischer Buchstabe. Die Einheit heißt Hertz. Rotes Licht hat etwa 4,3 mal zehn hoch vierzehn Hertz. Das sind 430 Billionen Schwingungen pro Sekunde!
+
+...
+
+Drittens, die Amplitude. Das ist die Höhe der Welle. Sie bestimmt, wie hell das Licht ist, aber nicht welche Farbe es hat.
+
+Wichtig zum Merken: Die Wellenlänge bestimmt die Farbe. Die Amplitude bestimmt die Helligkeit.

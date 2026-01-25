@@ -1,0 +1,25 @@
+Die Oktettregel gilt nicht immer. Manche Atome bilden stabile Verbindungen mit weniger als 8 Elektronen.
+
+Die Hauptvertreter sind Bor und Beryllium aus der 2. Periode.
+
+...
+
+Schauen wir uns Bortrifluorid an, B F drei.
+
+Elektronen zählen: Bor hat 3, jedes Fluor hat 7. Das ergibt 24 Elektronen.
+
+Die Lewis-Struktur: Bor bildet 3 Einfachbindungen zu 3 Fluor-Atomen. Jedes Fluor hat 3 freie Paare, also ein Oktett. Aber Bor hat nur 6 Elektronen, nämlich 3 Bindungspaare.
+
+...
+
+Man könnte auf die Idee kommen, eine Doppelbindung B Doppelbindung F zu zeichnen. Dann hätte Bor ein Oktett. Aber dann müsste Fluor eine positive Formalladung tragen.
+
+Das Problem: Fluor ist das elektronegativste Element überhaupt. Eine positive Ladung an Fluor ist extrem ungünstig.
+
+Deshalb ist die Struktur mit Elektronenmangel am Bor stabiler als die mit positiver Ladung am Fluor.
+
+...
+
+Die Konsequenz: Bortrifluorid ist eine Lewis-Säure. Es hat ein leeres Orbital und kann ein Elektronenpaar von einem Donor aufnehmen.
+
+Elektronenmangel-Verbindungen sind oft starke Lewis-Säuren. Sie suchen nach Elektronenpaaren.

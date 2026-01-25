@@ -1,0 +1,27 @@
+Friedrich Hund fand eine Regel für die Besetzung energiegleicher Orbitale.
+
+...
+
+Die Hund'sche Regel: Entartete Orbitale werden erst einfach mit gleichem Spin besetzt, bevor Elektronenpaarung eintritt.
+
+...
+
+Stell dir einen Bus vor. Passagiere setzen sich zuerst auf leere Doppelsitze, bevor sie sich zu jemandem dazusetzen. Elektronen verhalten sich genauso!
+
+...
+
+Beispiel Stickstoff mit sieben Elektronen. Die Konfiguration ist eins s zwei, zwei s zwei, zwei p drei.
+
+Die drei zwei p Elektronen verteilen sich auf die drei p-Orbitale. Jedes bekommt ein Elektron mit gleichem Spin, Pfeil hoch, Pfeil hoch, Pfeil hoch.
+
+Falsch wäre: Zwei Elektronen gepaart in einem p-Orbital und ein einzelnes in einem anderen.
+
+...
+
+Warum ist das energetisch günstiger? Elektronen mit gleichem Spin halten durch das Pauli-Prinzip Abstand. Weniger Elektron-Elektron-Abstoßung. Niedrigere Gesamtenergie.
+
+...
+
+Ein praktischer Effekt: Atome mit ungepaarten Elektronen sind paramagnetisch. Sie werden von Magneten angezogen.
+
+Die Hund'sche Regel gilt für alle Unterschalen mit mehreren Orbitalen: p, d und f.

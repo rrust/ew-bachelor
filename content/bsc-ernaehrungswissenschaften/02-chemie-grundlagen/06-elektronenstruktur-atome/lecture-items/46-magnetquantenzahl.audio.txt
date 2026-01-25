@@ -1,0 +1,27 @@
+Die dritte Quantenzahl sagt uns, wie das Orbital im Raum ausgerichtet ist.
+
+...
+
+Die Magnetquantenzahl m l kann Werte von minus l bis plus l annehmen, einschließlich null.
+
+Die Anzahl möglicher Werte, also die Anzahl der Orbitale pro Unterschale, ist zwei l plus eins.
+
+...
+
+Für s-Orbitale mit l gleich null gibt es nur einen Wert: m l gleich null. Also ein Orbital.
+
+Für p-Orbitale mit l gleich eins: m l kann minus eins, null oder plus eins sein. Drei Orbitale.
+
+Für d-Orbitale: Fünf Werte, also fünf Orbitale.
+
+Für f-Orbitale: Sieben Werte, sieben Orbitale.
+
+...
+
+Die drei p-Orbitale haben dieselbe Form, unterscheiden sich aber in ihrer Orientierung. p x liegt entlang der x-Achse, p y entlang der y-Achse, p z entlang der z-Achse.
+
+Diese drei Orbitale stehen senkrecht zueinander, im 90-Grad-Winkel.
+
+...
+
+Wichtig: Alle Orbitale einer Unterschale haben die gleiche Energie. Man sagt, sie sind entartet.

@@ -1,0 +1,19 @@
+Jedes Element hat einen einzigartigen Fingerabdruck. Nicht am Finger, sondern im Licht, das es aussendet.
+
+...
+
+Wenn weißes Licht durch ein Prisma fällt, sehen wir einen Regenbogen mit fließenden Farbübergängen. Das ist ein kontinuierliches Spektrum.
+
+Aber wenn wir Hochspannung an ein Gas anlegen, zum Beispiel Wasserstoff oder Neon, leuchtet das Gas. Schicken wir dieses Licht durch ein Prisma, sehen wir etwas völlig anderes: Nur einzelne, scharfe farbige Linien!
+
+Das ist ein Linienemissionsspektrum.
+
+...
+
+Warum ist das so wichtig? Jedes Element hat sein eigenes, einzigartiges Muster von Linien. Die Linien erscheinen immer bei exakt denselben Wellenlängen. Damit können wir Elemente identifizieren, sogar in fernen Sternen!
+
+...
+
+Johann Balmer entdeckte 1885, dass die sichtbaren Linien im Wasserstoffspektrum einer mathematischen Formel folgen. Die Balmer-Serie: Rot bei 656 Nanometern, blaugrün bei 486, blau bei 434, violett bei 410 Nanometern.
+
+Diese Regelmäßigkeit deutete auf eine geordnete Atomstruktur hin.

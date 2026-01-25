@@ -1,0 +1,21 @@
+Wenn du auf eine Lebensmittelverpackung schaust, siehst du Energieangaben in Kilojoule und Kilokalorien. Aber woher kommen diese Einheiten, und wie rechnet man sie um?
+
+...
+
+Historisch gesehen wurde die Kalorie als Energieeinheit verwendet. Eine Kalorie ist die Wärmemenge, die man braucht, um ein Gramm Wasser um ein Grad Celsius zu erwärmen.
+
+Aber Vorsicht bei der Verpackung: Die Kalorie auf Lebensmitteln ist eigentlich eine Kilokalorie, also tausend Kalorien! In den USA schreibt man oft Calorie mit großem C, um das zu kennzeichnen.
+
+...
+
+In der Wissenschaft nutzen wir die SI-Einheit Joule. Die Umrechnung ist: Eine Kalorie entspricht 4,184 Joule.
+
+Daraus folgt: Eine Kilokalorie entspricht 4184 Joule oder 4,184 Kilojoule.
+
+...
+
+Für die Praxis bedeutet das: Ein Schokoriegel mit 250 Kilokalorien liefert etwa 1046 Kilojoule. Der empfohlene Tagesbedarf von 2000 Kilokalorien entspricht rund 8,4 Megajoule.
+
+...
+
+Auf europäischen Lebensmitteln stehen immer beide Einheiten. Achte darauf, mit welcher du rechnest, sonst vervierfachst du schnell mal den Fehler!

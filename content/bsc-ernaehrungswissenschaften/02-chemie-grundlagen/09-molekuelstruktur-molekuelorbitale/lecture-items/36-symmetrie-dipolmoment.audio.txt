@@ -1,0 +1,13 @@
+Das Dipolmoment quantifiziert die Polarität eines Moleküls...
+
+Es berechnet sich aus der Größe der Teilladung mal dem Abstand zwischen den Ladungsschwerpunkten. Die Einheit ist Debye.
+
+Aber hier kommt der entscheidende Punkt: Bindungsdipole sind Vektoren. Sie haben eine Richtung und einen Betrag...
+
+In symmetrischen Molekülen können sich diese Vektoren gegenseitig aufheben.
+
+Schauen wir Kohlendioxid an. Es ist linear. Die beiden C gleich O Dipole zeigen in exakt entgegengesetzte Richtungen... Sie addieren sich zu null. Das Molekül ist unpolar.
+
+Bei Wasser ist es anders. Es ist gewinkelt. Die beiden O-H Dipole zeigen in ähnliche Richtungen... Sie addieren sich zu einem resultierenden Dipol. Das Molekül ist polar mit einem Dipolmoment von 1,85 Debye.
+
+Merke: Symmetrie kann polare Bindungen verstecken und das Gesamtmolekül unpolar machen!

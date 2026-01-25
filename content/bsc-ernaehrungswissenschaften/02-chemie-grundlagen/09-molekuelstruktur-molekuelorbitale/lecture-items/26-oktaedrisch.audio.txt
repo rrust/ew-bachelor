@@ -1,0 +1,15 @@
+Bei sechs Elektronenpaaren entsteht eine oktaedrische Elektronengeometrie...
+
+Der Oktaeder hat besondere Eigenschaften: Alle sechs Positionen sind gleichwertig. Alle Winkel betragen 90 Grad. Und die Struktur ist hochsymmetrisch.
+
+Das hat Konsequenzen für die Platzierung freier Elektronenpaare.
+
+Da alle Positionen gleichwertig sind, kann das erste freie Paar beliebig platziert werden...
+
+Aber was passiert bei zwei freien Paaren?
+
+Sie ordnen sich gegenüberliegend an, also mit 180 Grad Abstand. Das minimiert die Abstoßung zwischen ihnen...
+
+Ein klassisches Beispiel ist Schwefelhexafluorid, S F sechs. Es hat sechs Bindungen und null freie Paare. Die Struktur ist ein perfekter Oktaeder mit 90-Grad-Winkeln.
+
+Dieses Molekül ist übrigens sehr stabil und ungiftig... es wird sogar als Isoliergas in der Elektrotechnik verwendet.

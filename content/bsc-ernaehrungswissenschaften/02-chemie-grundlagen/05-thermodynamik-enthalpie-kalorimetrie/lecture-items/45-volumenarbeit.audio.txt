@@ -1,0 +1,27 @@
+Wenn ein Gas expandiert, drückt es die umgebende Luft beiseite. Dabei wird Arbeit verrichtet. Diese Volumenarbeit, auch PV-Arbeit genannt, spielt eine wichtige Rolle bei chemischen Reaktionen mit Gasen.
+
+...
+
+Betrachten wir die Sublimation von Trockeneis, also festem Kohlendioxid. Das feste CO2 geht direkt in die Gasphase über, ohne vorher flüssig zu werden.
+
+Dabei passieren zwei Dinge. Erstens steigt die innere Energie, denn Gasmoleküle haben mehr Energie als Feststoffmoleküle.
+
+Zweitens verdrängt das entstehende Gas die umgebende Luft. Es leistet Volumenarbeit.
+
+...
+
+Die Formel für Volumenarbeit lautet: w gleich minus P mal Delta V.
+
+w ist die Arbeit in Joule. P ist der äußere Druck. Und Delta V ist die Volumenänderung.
+
+...
+
+Das negative Vorzeichen ist wichtig für das Verständnis.
+
+Bei einer Expansion ist Delta V positiv, das Volumen nimmt zu. Dann wird w negativ. Das bedeutet: Das System leistet Arbeit an der Umgebung und gibt Energie ab.
+
+Bei einer Kompression ist Delta V negativ, das Volumen nimmt ab. Dann wird w positiv. Die Umgebung leistet Arbeit am System und führt ihm Energie zu.
+
+...
+
+Merke dir: Wenn ein Gas expandiert, schiebt es die Umgebung weg und gibt dabei Energie ab.

@@ -1,0 +1,19 @@
+In der Theorie sollte Natriumchlorid einen Van't Hoff Faktor von zwei haben. In der Praxis misst man eins Komma acht sieben. Warum die Abweichung?
+
+...
+
+Der Grund heißt Ionenpaarbildung.
+
+In echten Lösungen ziehen sich Kationen und Anionen gegenseitig an. Sie bleiben nicht vollständig getrennt. Zeitweise bilden sich Ionenpaare, die sich wie ein einziges Teilchen verhalten.
+
+Natrium plus und Chlorid minus bilden kurzzeitig ein Natrium-Chlorid-Paar. Das reduziert die effektive Teilchenzahl.
+
+...
+
+Je höher die Ladungen, desto stärker der Effekt. Die Coulomb-Kraft zwischen Ionen ist proportional zum Produkt der Ladungen.
+
+Bei Magnesiumsulfat, mit zweifach geladenen Magnesium- und Sulfationen, ist die Anziehung viermal stärker als bei Natriumchlorid. Der theoretische Faktor wäre zwei, gemessen wird nur eins Komma zwei eins.
+
+...
+
+Fazit: Bei verdünnten Lösungen ist der Effekt klein und wir können mit den idealen Werten rechnen. Bei konzentrierten Lösungen muss man die realen, gemessenen Faktoren verwenden.

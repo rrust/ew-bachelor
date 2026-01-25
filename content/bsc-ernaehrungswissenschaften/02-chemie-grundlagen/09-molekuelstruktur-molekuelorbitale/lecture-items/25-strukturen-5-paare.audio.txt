@@ -1,0 +1,11 @@
+Aus der trigonal-bipyramidalen Elektronengeometrie entstehen je nach Anzahl der freien Paare verschiedene Molekülgeometrien...
+
+Phosphorpentafluorid hat fünf bindende und null freie Paare. Alle fünf Positionen sind besetzt... die Molekülgeometrie ist trigonal-bipyramidal.
+
+Schwefeltetrafluorid hat vier bindende und ein freies Paar. Das freie Paar sitzt äquatorial. Die Form erinnert an eine Wippe oder Schaukel... im Englischen sagt man Seesaw.
+
+Chlortrifluorid hat drei bindende und zwei freie Paare. Beide freien Paare sitzen äquatorial. Übrig bleibt eine T-Form...
+
+Und Xenondifluorid? Zwei bindende und drei freie Paare. Alle drei äquatorialen Positionen sind von freien Paaren besetzt. Nur die axialen Fluor-Atome bleiben... das ergibt eine lineare Struktur.
+
+Bemerkenswert: Die freien Paare verschwinden bei der Molekülgeometrie. Aber ihre Position im Äquator bleibt wichtig für das Verständnis!

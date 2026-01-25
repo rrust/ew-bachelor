@@ -1,0 +1,23 @@
+Die Energieänderung bei einem Quantensprung lässt sich exakt berechnen.
+
+...
+
+Grundformel: Delta E gleich E End minus E Initial. Die Energieänderung ist die Differenz zwischen End- und Anfangszustand.
+
+Für das Wasserstoffatom gibt es die Rydberg-Gleichung. Delta E gleich minus R H mal h mal c, multipliziert mit der Differenz von eins durch n End Quadrat minus eins durch n Initial Quadrat.
+
+Die Rydberg-Konstante mal h mal c ergibt 2,18 mal zehn hoch minus 18 Joule.
+
+...
+
+Was bedeutet das Vorzeichen? Ist Delta E negativ, wird Energie frei. Das Elektron fällt auf ein niedrigeres Niveau und sendet ein Photon aus. Das ist Emission.
+
+Ist Delta E positiv, wird Energie benötigt. Das Elektron springt nach oben. Das ist Absorption.
+
+...
+
+Beispiel: Übergang von n gleich zwei nach n gleich eins.
+
+Delta E gleich minus 2,18 mal zehn hoch minus 18 Joule mal eins minus 0,25. Das ist minus 1,64 mal zehn hoch minus 18 Joule.
+
+Das negative Vorzeichen zeigt: Emission. Die entsprechende Wellenlänge liegt bei 121,6 Nanometern im UV-Bereich.

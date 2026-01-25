@@ -1,0 +1,49 @@
+Wie berechnet man Oxidationszahlen? Schauen wir uns drei Beispiele an.
+
+...
+
+Beispiel eins: Schwefelsäure, H zwei S O vier.
+
+Wasserstoff ist plus eins, Sauerstoff ist minus zwei. Die Summe muss null sein, weil das Molekül neutral ist.
+
+Rechnen wir: Zwei mal plus eins für Wasserstoff, plus x für Schwefel, plus vier mal minus zwei für Sauerstoff, gleich null.
+
+Das ergibt: plus zwei plus x minus acht gleich null.
+
+Also: x gleich plus sechs.
+
+Schwefel hat in Schwefelsäure die Oxidationszahl plus sechs.
+
+...
+
+Beispiel zwei: Das Permanganat-Ion, Mn O vier minus.
+
+Sauerstoff hat minus zwei. Die Summe muss minus eins sein, weil das Ion einfach negativ geladen ist.
+
+x plus vier mal minus zwei gleich minus eins.
+
+x minus acht gleich minus eins.
+
+x gleich plus sieben.
+
+Mangan hat hier die Oxidationszahl plus sieben. Ziemlich hoch!
+
+...
+
+Beispiel drei: Das Dichromat-Ion, Cr zwei O sieben zwei minus.
+
+Sauerstoff hat minus zwei. Die Summe muss minus zwei sein.
+
+Zwei mal x plus sieben mal minus zwei gleich minus zwei.
+
+Zwei x minus vierzehn gleich minus zwei.
+
+Zwei x gleich plus zwölf.
+
+x gleich plus sechs.
+
+Jedes Chrom hat die Oxidationszahl plus sechs.
+
+...
+
+Mit etwas Übung geht das Berechnen schnell!

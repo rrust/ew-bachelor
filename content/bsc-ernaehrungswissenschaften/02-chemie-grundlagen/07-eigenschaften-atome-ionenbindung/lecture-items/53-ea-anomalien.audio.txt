@@ -1,0 +1,17 @@
+Nicht alles folgt den erwarteten Trends. Es gibt einige wichtige Ausnahmen bei der Elektronenaffinität.
+
+...
+
+Erste Anomalie: Die Edelgase haben positive Elektronenaffinitäten. Ihre Valenzschale ist bereits voll. Ein zusätzliches Elektron müsste in die nächste Schale, und das ist energetisch ungünstig. Helium hat plus 21, Neon plus 29, Argon plus 35 Kilojoule pro Mol.
+
+...
+
+Zweite Anomalie: Stickstoff hat eine Elektronenaffinität von etwa null Kilojoule pro Mol.
+
+Warum? Das Stickstoffatom hat die Konfiguration 2p drei, also eine halb gefüllte p-Schale. Jedes p-Orbital hat genau ein Elektron. Ein zusätzliches Elektron müsste sich mit einem der vorhandenen Elektronen paaren. Die dabei entstehende Abstoßung, die Paarungsenergie, kompensiert den Energiegewinn durch die Kern-Anziehung.
+
+...
+
+Dritte Anomalie: Chlor hat eine höhere, also negativere, Elektronenaffinität als Fluor. Obwohl Fluor über Chlor steht! Fluor hat minus 328, Chlor hat minus 349 Kilojoule pro Mol.
+
+Das ist eine wichtige Anomalie, die wir uns genauer anschauen.

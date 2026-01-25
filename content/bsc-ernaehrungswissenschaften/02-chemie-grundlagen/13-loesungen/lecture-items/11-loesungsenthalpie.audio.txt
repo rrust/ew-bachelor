@@ -1,0 +1,17 @@
+Warum wird manche Lösung warm und andere kalt? Die Antwort liegt in der Lösungsenthalpie.
+
+...
+
+Wenn sich ein Salz löst, passieren zwei Dinge gleichzeitig.
+
+Erstens muss das Kristallgitter aufgebrochen werden. Dafür braucht man Energie. Die Gitterenthalpie ist immer positiv, also endotherm.
+
+Zweitens lagern sich Wassermoleküle an die freigesetzten Ionen an. Dabei wird Energie frei. Die Hydratationsenthalpie ist immer negativ, also exotherm.
+
+...
+
+Die Lösungsenthalpie ist die Summe aus beiden. Delta H Lösung gleich Delta H Gitter plus Delta H Hydratation.
+
+Wenn die Hydratation mehr Energie freisetzt als das Aufbrechen des Gitters kostet, wird die Lösung warm. Das ist exothermes Lösen.
+
+Wenn das Aufbrechen des Gitters mehr Energie kostet als die Hydratation liefert, wird die Lösung kalt. Das ist endothermes Lösen.

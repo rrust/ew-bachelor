@@ -1,0 +1,15 @@
+Beim VSEPR-Modell müssen wir zwei Begriffe unterscheiden, die oft verwechselt werden.
+
+Der erste Begriff ist die Elektronengeometrie. Sie beschreibt die Anordnung aller Elektronenpaare um das Zentralatom... also sowohl bindende als auch freie Elektronenpaare.
+
+Der zweite Begriff ist die Molekülgeometrie. Sie beschreibt nur die Anordnung der Atome im Raum. Die freien Elektronenpaare sind hier sozusagen unsichtbar... sie bestimmen aber trotzdem die Winkel.
+
+Wann sind beide Geometrien identisch?
+
+Nur dann, wenn keine freien Elektronenpaare am Zentralatom vorhanden sind.
+
+Ein Beispiel: Methan, also C H vier. Es hat vier bindende Paare und null freie Paare. Sowohl die Elektronengeometrie als auch die Molekülgeometrie sind tetraedrisch...
+
+Bei Wasser, H zwei O, sieht es anders aus. Es hat zwei bindende Paare und zwei freie Paare. Die Elektronengeometrie ist tetraedrisch... aber die Molekülgeometrie? Die ist gewinkelt...
+
+Die freien Paare sind unsichtbar, aber sie sind trotzdem da und beeinflussen die Struktur.

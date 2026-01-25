@@ -1,0 +1,19 @@
+Warum perlt Mineralwasser, wenn du die Flasche öffnest? Das Henry-Gesetz erklärt es.
+
+...
+
+Gase lösen sich ganz anders als Feststoffe. Ihre Löslichkeit hängt vom Druck ab. Je höher der Druck über der Flüssigkeit, desto mehr Gas löst sich.
+
+Das ist das Henry-Gesetz. Die Konzentration des gelösten Gases ist proportional zum Partialdruck des Gases.
+
+C gleich k H mal P.
+
+...
+
+k H ist die Henry-Konstante, eine stoffspezifische Größe. Kohlendioxid hat eine relativ hohe Henry-Konstante, es löst sich also gut in Wasser. Stickstoff und Sauerstoff haben niedrigere Werte.
+
+...
+
+In einer geschlossenen Mineralwasserflasche herrscht hoher Kohlendioxiddruck. Viel Gas ist gelöst. Beim Öffnen fällt der Druck auf Atmosphärenniveau. Das Gleichgewicht verschiebt sich, und der überschüssige Kohlendioxid entweicht als Bläschen.
+
+Dasselbe Prinzip erklärt auch die Taucherkrankheit, aber dazu gleich mehr.

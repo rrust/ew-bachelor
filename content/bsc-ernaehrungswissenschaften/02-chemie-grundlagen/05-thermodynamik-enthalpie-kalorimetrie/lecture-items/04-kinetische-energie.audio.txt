@@ -1,0 +1,31 @@
+Warum bewegen sich Moleküle in heißem Wasser schneller als in kaltem? Die Antwort liegt in der kinetischen Energie, der Bewegungsenergie.
+
+...
+
+Auf molekularer Ebene zeigt sich diese Bewegungsenergie in drei verschiedenen Formen.
+
+Erstens die Translation: Das gesamte Molekül bewegt sich durch den Raum, von einem Ort zum anderen.
+
+Zweitens die Rotation: Das Molekül dreht sich um seine eigenen Achsen, ohne seinen Ort zu wechseln.
+
+Drittens die Vibration: Die Atome innerhalb des Moleküls schwingen gegeneinander, rhythmisch aufeinander zu und voneinander weg.
+
+...
+
+Und jetzt kommt der entscheidende Zusammenhang: Die Temperatur eines Stoffes ist ein direktes Maß für die mittlere kinetische Energie seiner Teilchen.
+
+Bei hoher Temperatur bewegen sich die Teilchen schnell und intensiv. Bei niedriger Temperatur sind sie langsamer und gedämpfter. Am absoluten Nullpunkt, bei null Kelvin, kommt praktisch alle Translationsbewegung zum Stillstand.
+
+...
+
+Die drei Aggregatzustände unterscheiden sich genau darin, wie viel kinetische Energie die Teilchen haben.
+
+Im Festkörper ist sie niedrig, nur Vibration ist möglich.
+
+In Flüssigkeiten ist sie höher, Translation und Rotation sind begrenzt möglich.
+
+In Gasen ist die kinetische Energie hoch, alle drei Bewegungsformen sind stark ausgeprägt.
+
+...
+
+Wenn wir einem Stoff Wärme zuführen, erhöhen wir die kinetische Energie seiner Teilchen, und genau deshalb steigt die Temperatur.

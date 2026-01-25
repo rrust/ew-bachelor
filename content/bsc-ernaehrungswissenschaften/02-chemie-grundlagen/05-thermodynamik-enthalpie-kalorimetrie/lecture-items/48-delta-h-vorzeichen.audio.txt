@@ -1,0 +1,25 @@
+Das Vorzeichen von Delta H verrät dir sofort, ob eine Reaktion Energie freisetzt oder aufnimmt.
+
+...
+
+Die Grundformel ist: Delta H gleich H Produkte minus H Reaktanten. Also Endzustand minus Anfangszustand.
+
+...
+
+Wenn die Enthalpie der Produkte niedriger ist als die der Reaktanten, ist Delta H negativ. Die Reaktion ist exotherm und setzt Energie frei.
+
+Wenn die Enthalpie der Produkte höher ist als die der Reaktanten, ist Delta H positiv. Die Reaktion ist endotherm und nimmt Energie auf.
+
+...
+
+Ein Beispiel für exotherm: Die Bildung von Wasserdampf aus Wasserstoff und Sauerstoff hat ein Delta H von minus 241,8 Kilojoule pro Mol. Die Produkte haben eine niedrigere Enthalpie als die Edukte. Diese Differenz wird als Wärme freigesetzt.
+
+...
+
+Ein Beispiel für endotherm: Das Schmelzen von Eis hat ein Delta H von plus 6,01 Kilojoule pro Mol. Das flüssige Wasser hat eine höhere Enthalpie als das Eis. Die benötigte Energie wird der Umgebung entzogen.
+
+...
+
+Als Merkhilfe: Delta H negativ bedeutet Energie geht raus, exotherm, das Gefäß wird warm.
+
+Delta H positiv bedeutet Energie geht rein, endotherm, das Gefäß wird kalt.

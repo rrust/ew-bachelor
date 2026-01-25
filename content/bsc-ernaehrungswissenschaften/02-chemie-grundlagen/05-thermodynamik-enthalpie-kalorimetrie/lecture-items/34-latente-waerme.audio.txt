@@ -1,0 +1,29 @@
+Hier ist ein Phänomen, das zunächst paradox erscheint: Du führst einem Stoff Energie zu, aber seine Temperatur ändert sich nicht!
+
+Wie kann das sein?
+
+...
+
+Das passiert bei Phasenübergängen, also beim Schmelzen, Verdampfen oder anderen Zustandsänderungen. Die zugeführte Energie wird vollständig verwendet, um die Anziehungskräfte zwischen den Teilchen zu überwinden, nicht um die Temperatur zu erhöhen.
+
+Diese verborgene Energie nennen wir latente Wärme, vom lateinischen Wort latens für verborgen.
+
+...
+
+Bei Wasser sind die beiden wichtigsten Übergänge das Schmelzen und das Verdampfen.
+
+Die Schmelzwärme beträgt 333 Joule pro Gramm. So viel Energie braucht man, um ein Gramm Eis bei null Grad in Wasser bei null Grad umzuwandeln.
+
+Die Verdampfungswärme ist viel höher: 2260 Joule pro Gramm. Das sind fast siebenmal so viel wie die Schmelzwärme!
+
+...
+
+Die Formel für Phasenübergänge ist einfach: q gleich m mal L, wobei L die spezifische Umwandlungswärme ist.
+
+...
+
+Warum ist die Verdampfungswärme so viel höher als die Schmelzwärme? Beim Verdampfen müssen alle Wasserstoffbrücken komplett aufgebrochen werden, damit die Moleküle als freie Gasteilchen entweichen können. Beim Schmelzen werden die Bindungen nur gelockert, nicht vollständig getrennt.
+
+...
+
+Und denke daran: Während eines Phasenübergangs bleibt die Temperatur konstant, egal wie viel Energie du zuführst. Die Temperatur steigt erst wieder, wenn der gesamte Stoff den Übergang abgeschlossen hat.

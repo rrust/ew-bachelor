@@ -1,0 +1,31 @@
+Die zweite Quantenzahl bestimmt die Form des Orbitals.
+
+...
+
+Die Nebenquantenzahl l, auch Drehimpulsquantenzahl genannt, kann Werte von null bis n minus eins annehmen.
+
+Bei n gleich eins kann l nur null sein. Bei n gleich zwei kann l null oder eins sein. Bei n gleich drei: null, eins oder zwei. Und so weiter.
+
+...
+
+Jeder l-Wert hat einen Buchstaben. l gleich null heißt s, wie sharp. Diese Orbitale sind kugelförmig.
+
+l gleich eins heißt p, wie principal. Hantelförmig.
+
+l gleich zwei heißt d, wie diffuse. Meist kleeblattförmig.
+
+l gleich drei heißt f, wie fundamental. Komplexe Formen.
+
+...
+
+Beispiele für Orbitalbezeichnungen: eins s bedeutet n gleich eins, l gleich null. Eine Kugel in der ersten Schale.
+
+Zwei p bedeutet n gleich zwei, l gleich eins. Eine Hantel in der zweiten Schale.
+
+Drei d bedeutet n gleich drei, l gleich zwei. Ein Kleeblatt in der dritten Schale.
+
+...
+
+Jede Schale hat bestimmte Unterschalen. Die erste nur s. Die zweite s und p. Die dritte s, p und d. Die vierte s, p, d und f.
+
+Die Nebenquantenzahl bestimmt die Form, nicht die Größe!

@@ -1,0 +1,19 @@
+Die Ionisierungsenergie bestimmt, wie leicht ein Metall seine Elektronen abgibt und damit wie reaktiv es ist.
+
+Bei niedriger Ionisierungsenergie ist die Elektronenabgabe leicht. Das Metall ist reaktiv.
+
+Bei hoher Ionisierungsenergie ist die Elektronenabgabe schwer. Das Metall ist unreaktiv.
+
+...
+
+Metalle mit niedriger Ionisierungsenergie sind gute Reduktionsmittel. Sie geben ihre Elektronen leicht ab. Dabei werden sie selbst oxidiert und reduzieren andere Stoffe.
+
+...
+
+Schauen wir die Reaktion der Alkalimetalle mit Wasser.
+
+Lithium mit 520 Kilojoule pro Mol reagiert mäßig, mit Blasenbildung. Natrium mit 496 Kilojoule pro Mol reagiert heftig und schmilzt dabei. Kalium mit 419 reagiert sehr heftig und entzündet sich. Rubidium mit 403 reagiert explosiv. Und Cäsium mit nur 376 Kilojoule pro Mol reagiert ebenfalls explosiv.
+
+...
+
+Je niedriger die Ionisierungsenergie, desto heftiger die Reaktion! Die sinkende Ionisierungsenergie in der Gruppe erklärt, warum Cäsium viel reaktiver ist als Lithium.

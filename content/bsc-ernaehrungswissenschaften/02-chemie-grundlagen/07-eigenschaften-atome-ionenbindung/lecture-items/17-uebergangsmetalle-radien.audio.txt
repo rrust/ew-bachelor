@@ -1,0 +1,17 @@
+Bei den Übergangselementen, dem d-Block, verhalten sich die Radien anders als bei den Hauptgruppenelementen.
+
+Die Atomradien nehmen zu Beginn einer Übergangsmetall-Reihe ab, bleiben dann aber über einen weiten Bereich nahezu konstant und steigen am Ende leicht an.
+
+...
+
+Warum ist das so?
+
+Die Elektronen werden in die d-Unterschale aufgefüllt, die unterhalb der äußersten s-Unterschale liegt. Zum Beispiel wird 3d gefüllt, während 4s bereits besetzt ist.
+
+Diese d-Elektronen schirmen die äußeren s-Elektronen effektiv ab. Dadurch bleibt die effektive Kernladung auf die 4s-Elektronen annähernd konstant.
+
+...
+
+Da Z Stern kaum steigt, ändert sich auch der Radius kaum!
+
+Das erklärt übrigens auch, warum Übergangsmetalle chemisch sehr ähnliche Eigenschaften haben. Ihre Valenzelektronen in der 4s-Schale sehen fast die gleiche effektive Kernladung.

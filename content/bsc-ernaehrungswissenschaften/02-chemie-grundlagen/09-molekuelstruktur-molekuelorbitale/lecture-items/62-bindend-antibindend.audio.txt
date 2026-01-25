@@ -1,0 +1,13 @@
+Wenn zwei Atomorbitale kombiniert werden, entstehen zwei Molekülorbitale mit sehr unterschiedlichen Eigenschaften...
+
+Das bindende Molekülorbital entsteht durch konstruktive Überlagerung. Die Wellenfunktionen addieren sich.
+
+Es hat eine niedrigere Energie als die ursprünglichen Atomorbitale. Die Elektronendichte ist hoch zwischen den Kernen... Das stabilisiert die Bindung.
+
+Das antibindende Molekülorbital entsteht durch destruktive Überlagerung. Die Wellenfunktionen subtrahieren sich.
+
+Es hat eine höhere Energie als die ursprünglichen Atomorbitale. Zwischen den Kernen gibt es eine Knotenebene mit null Elektronendichte... Das destabilisiert die Bindung.
+
+Antibindende Orbitale werden mit einem Stern gekennzeichnet. Sigma Stern, Pi Stern...
+
+Elektronen besetzen zuerst die energieärmeren bindenden Orbitale. Erst wenn diese voll sind, werden die antibindenden besetzt.

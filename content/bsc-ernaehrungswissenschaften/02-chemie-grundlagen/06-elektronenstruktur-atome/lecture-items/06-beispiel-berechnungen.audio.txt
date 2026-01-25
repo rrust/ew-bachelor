@@ -1,0 +1,19 @@
+Üben wir das Rechnen mit Wellenlänge und Frequenz an zwei verschiedenen Strahlungsarten.
+
+...
+
+Erstes Beispiel: Ein Mikrowellenherd arbeitet mit einer Wellenlänge von 2,5 Zentimetern. Was ist die Frequenz?
+
+Wir rechnen 2,5 Zentimeter in Meter um: Das sind 0,025 Meter, also 2,5 mal zehn hoch minus zwei Meter.
+
+Jetzt setzen wir ein: Nü gleich c durch Lambda. Also 3 mal zehn hoch acht geteilt durch 2,5 mal zehn hoch minus zwei. Das ergibt 1,2 mal zehn hoch zehn Hertz. Das sind 12 Gigahertz.
+
+...
+
+Zweites Beispiel: Gelbes Natriumlicht hat 589 Nanometer Wellenlänge. Das sind 5,89 mal zehn hoch minus sieben Meter.
+
+Die Frequenz: 3 mal zehn hoch acht geteilt durch 5,89 mal zehn hoch minus sieben. Das ergibt etwa 5,1 mal zehn hoch vierzehn Hertz.
+
+...
+
+Vergleichen wir: Das gelbe Licht hat eine etwa 40.000 mal höhere Frequenz als die Mikrowellenstrahlung! Das zeigt, wie enorm der Unterschied im elektromagnetischen Spektrum ist.

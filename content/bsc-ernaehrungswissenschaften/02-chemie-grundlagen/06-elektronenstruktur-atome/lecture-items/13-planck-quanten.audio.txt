@@ -1,0 +1,19 @@
+Im Jahr 1900 passierte etwas Revolutionäres. Max Planck stellte die Physik auf den Kopf.
+
+Die klassische Physik nahm an, dass Energie kontinuierlich ist. Wie Wasser, das man in beliebig kleine Portionen aufteilen kann.
+
+...
+
+Planck entdeckte bei der Untersuchung von Wärmestrahlung, dass die klassischen Formeln falsche Vorhersagen lieferten. Seine Lösung war radikal:
+
+Energie kann nur in diskreten Paketen abgegeben oder aufgenommen werden. Diese kleinsten Energiepakete nannte er Quanten.
+
+...
+
+Planck führte eine neue Naturkonstante ein: h, die Planck-Konstante. Ihr Wert: 6,626 mal zehn hoch minus 34 Joule mal Sekunde.
+
+Diese winzige Zahl markiert die Grenze zwischen klassischer Physik und Quantenphysik.
+
+...
+
+Stell dir Energie wie eine Treppe vor, nicht wie eine Rampe. Du kannst nur ganze Stufen nehmen, keine halben. Das war der Beginn der Quantenphysik.

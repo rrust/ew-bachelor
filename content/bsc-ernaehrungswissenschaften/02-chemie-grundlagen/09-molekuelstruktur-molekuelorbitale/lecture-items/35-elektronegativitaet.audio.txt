@@ -1,0 +1,19 @@
+Die Elektronegativität... ein Maß dafür, wie stark ein Atom Bindungselektronen an sich zieht.
+
+Im Periodensystem gibt es klare Trends.
+
+Von links nach rechts nimmt die Elektronegativität zu. Von oben nach unten nimmt sie ab...
+
+Fluor hat mit 4,0 die höchste Elektronegativität überhaupt. Es ist der gierigste Elektronenfänger.
+
+Sauerstoff folgt mit 3,5. Dann Chlor und Stickstoff mit je 3,0...
+
+Kohlenstoff liegt bei 2,5... ein guter Referenzwert. Wasserstoff ist mit 2,1 relativ niedrig.
+
+Wie bestimmt man nun die Bindungspolarität?
+
+Man schaut auf die Differenz der Elektronegativitätswerte...
+
+Bei einer Differenz unter 0,5 ist die Bindung unpolar. Zwischen 0,5 und 1,7 ist sie polar kovalent. Und über 1,7 spricht man von einer ionischen Bindung... als Faustregel.
+
+Die Elektronen verschieben sich zum elektronegativeren Atom. Dieses wird teilweise negativ... delta minus. Das andere teilweise positiv... delta plus.

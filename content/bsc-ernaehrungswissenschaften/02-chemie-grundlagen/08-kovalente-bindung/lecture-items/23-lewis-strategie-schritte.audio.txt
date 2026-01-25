@@ -1,0 +1,19 @@
+Lewis-Strukturen zu zeichnen ist keine Kunst, sondern eine systematische Methode. Mit diesen 4 Schritten kommst du zum Ziel.
+
+...
+
+Schritt 1: Bestimme das Zentralatom. Wasserstoff ist niemals Zentralatom, weil er nur eine Bindung eingehen kann. Das Atom mit der niedrigsten Elektronenaffinität steht meist in der Mitte.
+
+Schritt 2: Zähle die Valenzelektronen. Gruppennummer gleich Valenzelektronen. Bei Anionen addierst du die Ladungszahl dazu. Bei Kationen ziehst du sie ab.
+
+...
+
+Schritt 3: Zeichne das Gerüst. Verbinde das Zentralatom mit Einfachbindungen zu den Außenatomen. Jede Bindung verbraucht 2 Elektronen, also ein Paar.
+
+Schritt 4: Verteile die restlichen Elektronen. Zuerst füllst du die Außenatome auf ihr Oktett auf. Dann kommt das Zentralatom dran. Falls das Zentralatom danach immer noch kein Oktett hat, musst du Mehrfachbindungen einführen.
+
+...
+
+Diese 4 Fragen beantwortest du der Reihe nach: Wer steht in der Mitte? Wie viele Elektronen stehen zur Verfügung? Wer ist mit wem verbunden? Und wo kommen die restlichen Elektronen hin?
+
+Folge diesen Schritten konsequent. So vermeidest du Fehler.

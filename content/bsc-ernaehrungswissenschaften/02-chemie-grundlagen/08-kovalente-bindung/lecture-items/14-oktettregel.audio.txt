@@ -1,0 +1,23 @@
+Die Oktettregel ist das wichtigste Prinzip beim Zeichnen von Lewis-Formeln.
+
+Das Prinzip ist einfach: Atome streben danach, von 8 Valenzelektronen umgeben zu sein. Das entspricht der stabilen Edelgaskonfiguration.
+
+...
+
+Mathematisch ausgedrückt: Bindungspaare plus nichtbindende Paare ergibt 4 Paare, also 8 Elektronen.
+
+Sauerstoff zum Beispiel hat 6 Valenzelektronen. Um auf 8 zu kommen, braucht er 2 weitere. Diese bekommt er durch 2 Bindungen. Die restlichen 4 Elektronen bilden 2 freie Paare.
+
+Stickstoff hat 5 Valenzelektronen. Er braucht 3 weitere und geht daher typischerweise 3 Bindungen ein. Die übrigen 2 Elektronen bilden 1 freies Paar.
+
+Kohlenstoff hat 4 Valenzelektronen und braucht 4 weitere. Er geht also 4 Bindungen ein und hat keine freien Paare.
+
+...
+
+Eine wichtige Ausnahme: Wasserstoff strebt nur nach 2 Elektronen, nicht nach 8. Seine erste Schale kann maximal 2 Elektronen aufnehmen. Deshalb geht Wasserstoff immer nur eine Bindung ein.
+
+...
+
+Warum ist das Oktett so stabil? Weil die Edelgase mit ihren vollen äußeren Schalen extrem unreaktiv sind. Andere Atome erreichen diese Stabilität durch Bindungen.
+
+Aber Vorsicht: Die Oktettregel ist eine Faustregel, keine absolute Regel. Es gibt Ausnahmen, die wir später besprechen.

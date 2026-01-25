@@ -1,0 +1,31 @@
+Natriumchlorid, Calciumoxid, Eisen-drei-oxid. Wie kommen diese Namen zustande?
+
+Die IUPAC-Nomenklatur folgt klaren Regeln.
+
+...
+
+Bei der Benennung ionischer Verbindungen gilt eine einfache Grundregel: Erst das Kation, dann das Anion.
+
+Für Kationen aus Hauptgruppenmetallen verwendest du einfach den Elementnamen. Natrium, Calcium, Aluminium.
+
+Bei Übergangsmetallen, die verschiedene Oxidationsstufen haben können, fügst du eine römische Ziffer in Klammern hinzu. Eisen zwei plus heißt Eisen-zwei, Eisen drei plus heißt Eisen-drei. Kupfer eins plus ist Kupfer-eins, Kupfer zwei plus ist Kupfer-zwei.
+
+...
+
+Für Anionen gilt: Einatomige Anionen bekommen die Endung I-D. Chlor wird zu Chlorid, Sauerstoff zu Oxid, Schwefel zu Sulfid, Stickstoff zu Nitrid.
+
+Mehratomige Anionen haben eigene Namen, die du lernen musst. Sulfat, Nitrat, Phosphat und so weiter.
+
+...
+
+Einige Beispiele für einfache Salze: Na Cl ist Natriumchlorid. Ca O ist Calciumoxid. Mg S ist Magnesiumsulfid. Al zwei O drei ist Aluminiumoxid.
+
+Bei Übergangsmetallen musst du die Oxidationsstufe angeben: Fe O ist Eisen-zwei-oxid, weil Eisen hier plus zwei hat. Fe zwei O drei ist Eisen-drei-oxid.
+
+...
+
+Salze mit mehratomigen Ionen: Na zwei SO vier ist Natriumsulfat. Ca, Klammer, NO drei, Klammer zu, Index 2 ist Calciumnitrat. Klammer NH vier Klammer zu, Index 2, CO drei ist Ammoniumcarbonat.
+
+Bei Übergangsmetallen mit mehratomigen Ionen: Fe zwei, Klammer, SO vier, Klammer zu, Index 3 ist Eisen-drei-sulfat.
+
+Die Faustregel: Bei Übergangsmetallen immer die Oxidationsstufe angeben!

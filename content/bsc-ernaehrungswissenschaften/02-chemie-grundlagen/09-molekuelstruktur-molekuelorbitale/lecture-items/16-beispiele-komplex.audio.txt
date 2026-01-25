@@ -1,0 +1,11 @@
+Größere Moleküle haben oft mehrere Atome, die als Zentralatome dienen. Jedes wird separat analysiert...
+
+Nehmen wir Formaldehyd. Am Kohlenstoff haben wir zwei Einfachbindungen zu Wasserstoff und eine Doppelbindung zu Sauerstoff. Das sind drei Klumpen... also trigonal-planar mit 120 Grad.
+
+Bei Methanol wird es interessanter. Am Kohlenstoff gibt es vier Bindungen... tetraedrisch mit 109 Grad. Aber am Sauerstoff? Zwei Bindungen plus zwei freie Paare... gewinkelt, etwa 104,5 Grad.
+
+Acetonitril zeigt noch mehr Vielfalt. Der Methyl-Kohlenstoff hat vier Bindungen... tetraedrisch. Aber der Cyan-Kohlenstoff? Eine Einfachbindung plus eine Dreifachbindung... das sind nur zwei Klumpen, also linear mit 180 Grad.
+
+Und bei einer Aminosäure wie Phenylalanin? Da hast du verschiedene Geometrien im selben Molekül. Ring-Kohlenstoffe sind trigonal-planar. Die C H zwei Gruppe ist tetraedrisch. Das Stickstoffatom ist trigonal-pyramidal wegen des freien Paars...
+
+Die Strategie: Bei großen Molekülen jedes potenzielle Zentralatom einzeln analysieren!

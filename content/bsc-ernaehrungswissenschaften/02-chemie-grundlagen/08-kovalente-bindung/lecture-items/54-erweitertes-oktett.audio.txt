@@ -1,0 +1,25 @@
+Manche Atome können mehr als 8 Elektronen um sich haben. Das nennt man erweitertes Oktett.
+
+Die Voraussetzung sind verfügbare d-Orbitale. Das erweiterte Oktett ist erst ab der 3. Periode möglich, da diese Elemente über d-Orbitale verfügen.
+
+Die wichtigsten Elemente sind Phosphor, Schwefel, Chlor, Brom und Iod.
+
+...
+
+Beispiel: Schwefeltetrafluorid, S F vier.
+
+Elektronen zählen: Schwefel hat 6, jedes Fluor hat 7. Das ergibt 34 Elektronen.
+
+Die Lewis-Struktur: 4 Einfachbindungen vom Schwefel zu den 4 Fluor-Atomen. Das sind 8 Elektronen. Jedes Fluor bekommt 3 freie Paare, das sind 24 Elektronen.
+
+Übrig bleiben 2 Elektronen. Die werden 1 freies Paar am Schwefel.
+
+Das Ergebnis: Schwefel hat 5 Elektronenpaare, also 10 Elektronen. Mehr als ein Oktett!
+
+...
+
+Warum geht das nicht bei Sauerstoff? Sauerstoff ist in der 2. Periode. Er hat keine d-Orbitale. Deshalb existiert S F vier und S F sechs, aber O F vier nicht.
+
+Die Regel: Erweiterte Oktette erfordern d-Orbitale. Die gibt es nur ab Periode 3.
+
+Weitere Beispiele sind P Cl fünf mit 5 Elektronenpaaren, S F sechs mit 6 Paaren und Xenontetrafluorid mit 6 Paaren, davon 4 Bindungen und 2 freie Paare.

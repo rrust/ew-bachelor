@@ -1,0 +1,21 @@
+Der Van't Hoff Faktor i erklärt, warum Salz den Gefrierpunkt stärker senkt als Zucker.
+
+...
+
+Der Faktor gibt an, in wie viele Teilchen ein Stoff beim Lösen zerfällt.
+
+Molekulare Stoffe wie Glucose oder Harnstoff zerfallen nicht. i ist eins.
+
+Natriumchlorid zerfällt in Natrium plus und Chlorid minus. i ist zwei.
+
+Calciumchlorid zerfällt in ein Calcium zwei plus und zwei Chlorid minus. i ist drei.
+
+Aluminiumchlorid zerfällt in ein Aluminium drei plus und drei Chlorid minus. i ist vier.
+
+...
+
+Das hat praktische Konsequenzen. Bei gleicher Molalität von einem Mol pro Kilogramm senkt Glucose den Gefrierpunkt um eins Komma acht sechs Grad. Natriumchlorid senkt ihn um drei Komma sieben zwei Grad, also doppelt so stark.
+
+...
+
+Deshalb ist Streusalz so effektiv. Nicht weil es chemisch besonders wäre, sondern weil es doppelt so viele Teilchen liefert wie ein molekularer Stoff.

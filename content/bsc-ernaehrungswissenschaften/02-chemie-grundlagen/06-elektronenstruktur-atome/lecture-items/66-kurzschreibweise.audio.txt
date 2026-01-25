@@ -1,0 +1,29 @@
+Bei schweren Atomen werden Elektronenkonfigurationen lang und unübersichtlich. Die Kurzschreibweise hilft.
+
+...
+
+Das Prinzip: Wir schreiben das Symbol des vorhergehenden Edelgases in eckige Klammern und fügen nur die zusätzlichen Elektronen hinzu.
+
+...
+
+Die Edelgase dienen als Referenz. Helium in eckigen Klammern steht für eins s zwei. Neon in Klammern für eins s zwei, zwei s zwei, zwei p sechs. Argon für die komplette Konfiguration bis drei p sechs. Krypton bis vier p sechs.
+
+...
+
+Beispiele. Natrium mit elf Elektronen. Vollständig: eins s zwei, zwei s zwei, zwei p sechs, drei s eins.
+
+Kurz: Neon in eckigen Klammern, drei s eins. Viel übersichtlicher!
+
+Chlor: Neon in Klammern, drei s zwei, drei p fünf.
+
+Calcium: Argon in Klammern, vier s zwei.
+
+Eisen: Argon in Klammern, vier s zwei, drei d sechs.
+
+Brom: Argon in Klammern, vier s zwei, drei d zehn, vier p fünf.
+
+...
+
+Die Vorteile sind klar: Schneller zu schreiben. Die Valenzelektronen, also die außerhalb des Edelgaskerns, werden hervorgehoben. Und es verdeutlicht die Stellung im Periodensystem.
+
+Merke: Die Valenzelektronen bestimmen die chemischen Eigenschaften!

@@ -1,0 +1,17 @@
+Warum ist Wasser gewinkelt und Kohlendioxid linear?
+
+Die Antwort liegt in der dreidimensionalen Anordnung der Elektronen. Das Modell, das diese Frage beantwortet, heißt VSEPR...
+
+Ausgeschrieben bedeutet das Valenzelektronenpaar-Abstoßungs-Theorie.
+
+Das Grundprinzip ist einfach: Elektronenpaare sind negativ geladen. Und negative Ladungen stoßen sich gegenseitig ab...
+
+Deshalb ordnen sich die Elektronenpaare um ein Zentralatom so weit wie möglich voneinander entfernt an. Sie suchen sozusagen den größtmöglichen Abstand zueinander.
+
+Ein Molekül nimmt immer die Gestalt an, die diese Abstoßung minimiert.
+
+Und warum ist die Molekülform überhaupt wichtig?
+
+Die dreidimensionale Struktur eines Moleküls bestimmt seine chemischen Eigenschaften, also wie reaktiv es ist. Sie bestimmt auch seine physikalischen Eigenschaften wie den Siedepunkt oder die Löslichkeit...
+
+Und besonders spannend für die Ernährungswissenschaften: Die Molekülform ist entscheidend für biologische Aktivität. Enzyme erkennen ihre Substrate nur, wenn die Form passt... wie ein Schlüssel zum Schloss.

@@ -1,0 +1,27 @@
+Du hast eine konzentrierte Stammlösung und brauchst eine verdünnte Lösung. Wie viel Wasser musst du zugeben?
+
+Die Antwort liefert eine der nützlichsten Formeln der Laborchemie: c eins mal V eins gleich c zwei mal V zwei.
+
+...
+
+Warum funktioniert das? Beim Verdünnen ändert sich das Volumen, aber die Stoffmenge des gelösten Stoffes bleibt konstant. Du verteilst dieselbe Menge Teilchen auf ein größeres Volumen.
+
+Stoffmenge ist Konzentration mal Volumen. Wenn die Stoffmenge vorher und nachher gleich ist, gilt c eins V eins gleich c zwei V zwei.
+
+...
+
+Ein Beispiel: Du hast 50 Milliliter einer 3-molaren Natriumhydroxid-Lösung und brauchst eine 0,5-molare Lösung.
+
+Einsetzen: 3 Mol pro Liter mal 50 Milliliter gleich 0,5 Mol pro Liter mal V zwei.
+
+V zwei ist 3 mal 50 geteilt durch 0,5, also 300 Milliliter.
+
+...
+
+Das Endvolumen ist 300 Milliliter. Du hattest 50 Milliliter Stammlösung. Also musst du 250 Milliliter Wasser zugeben.
+
+...
+
+Merke dir: Beim Verdünnen wird die Konzentration kleiner, das Volumen größer, aber die Stoffmenge bleibt gleich.
+
+Im Labor gibst du übrigens immer die Stammlösung zum Wasser, nicht umgekehrt. Das ist sicherer, besonders bei konzentrierten Säuren.

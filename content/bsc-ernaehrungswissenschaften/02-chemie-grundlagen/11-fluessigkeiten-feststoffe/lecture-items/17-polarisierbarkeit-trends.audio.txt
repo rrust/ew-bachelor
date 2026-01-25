@@ -1,0 +1,27 @@
+Fluor siedet bei minus 188 Grad, Iod bei plus 184 Grad. Beide sind unpolare Moleküle aus zwei gleichen Atomen. Woher kommt dieser enorme Unterschied von über 370 Grad?
+
+Die Antwort ist Polarisierbarkeit.
+
+...
+
+Polarisierbarkeit beschreibt, wie leicht sich die Elektronenwolke eines Atoms oder Moleküls verformen lässt. Je leichter die Verformung, desto stärkere induzierte Dipole können entstehen, desto stärker die Dispersionskräfte.
+
+Zwei Faktoren bestimmen die Polarisierbarkeit.
+
+Erstens, die Anzahl der Elektronen. Mehr Elektronen bedeuten eine größere Elektronenwolke, die leichter verformbar ist.
+
+Zweitens, die Größe des Atoms. In größeren Atomen sind die äußeren Elektronen weiter vom Kern entfernt, schwächer gebunden und leichter verschiebbar.
+
+...
+
+Bei den Alkanen siehst du den Effekt perfekt. Methan mit 16 Gramm pro Mol siedet bei minus 161 Grad. Ethan mit 30 Gramm pro Mol bei minus 89. Propan bei minus 42. Butan bei etwa minus 1. Pentan bei plus 36 Grad.
+
+Der Siedepunkt steigt nahezu linear mit der Molmasse. Größere Moleküle haben mehr Elektronen, sind polarisierbarer, haben stärkere Dispersionskräfte.
+
+...
+
+Bei den Halogenen ist der Effekt noch dramatischer. Fluor ist ein Gas bei Raumtemperatur. Chlor auch noch. Brom ist eine Flüssigkeit. Und Iod? Ein Feststoff mit glänzenden Kristallen.
+
+Alle vier sind unpolar. Der einzige Unterschied ist die Größe. Und damit die Stärke der Dispersionskräfte.
+
+Die Faustregel: Größer bedeutet polarisierbarer, bedeutet stärkere Dispersionskräfte, bedeutet höherer Siedepunkt.

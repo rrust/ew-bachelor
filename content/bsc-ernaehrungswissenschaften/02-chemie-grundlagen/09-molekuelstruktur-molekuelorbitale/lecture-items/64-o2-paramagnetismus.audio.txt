@@ -1,0 +1,17 @@
+Der Paramagnetismus von Sauerstoff... das Schlüsselbeispiel für den Erfolg der M O Theorie!
+
+Das Problem: Die Lewis-Formel von O zwei zeigt eine Doppelbindung mit allen Elektronen gepaart. Das würde Diamagnetismus vorhersagen... Abstoßung durch Magnete.
+
+Aber das Experiment zeigt etwas anderes: Flüssiger Sauerstoff ist paramagnetisch! Er wird von Magneten angezogen...
+
+Wie erklärt die M O Theorie das?
+
+Sauerstoff hat 16 Elektronen, acht von jedem Atom. Im M O Energiediagramm werden sie auf die Orbitale verteilt...
+
+Die letzten zwei Elektronen besetzen zwei energiegleiche Pi-Stern-Orbitale. Nach der Hundschen Regel besetzen sie diese einzeln mit parallelem Spin...
+
+Das Ergebnis: Sauerstoff hat zwei ungepaarte Elektronen! Ungepaarte Elektronen bedeuten Paramagnetismus.
+
+Die Bindungsordnung? Ein halb mal acht minus vier gleich zwei. Eine Doppelbindung... stimmt auch!
+
+Die M O Theorie erklärt korrekt, was die Lewis-Formel nicht kann.

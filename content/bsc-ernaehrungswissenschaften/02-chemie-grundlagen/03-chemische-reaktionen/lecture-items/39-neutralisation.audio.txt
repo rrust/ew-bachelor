@@ -1,0 +1,41 @@
+Was passiert, wenn Säure und Base aufeinandertreffen?
+
+Eine Neutralisation! Dabei entstehen Wasser und ein Salz.
+
+...
+
+Das Grundprinzip ist einfach: Säure plus Base ergibt Salz plus Wasser.
+
+...
+
+Schauen wir uns ein konkretes Beispiel an: Salzsäure trifft auf Natronlauge.
+
+H Cl plus Na O H ergibt Na Cl plus H zwei O.
+
+Das entstehende Salz ist Kochsalz!
+
+Die Netto-Ionengleichung für starke Säuren und Basen ist besonders elegant: H-plus plus O H-minus ergibt Wasser. Das ist im Prinzip die ganze Reaktion.
+
+...
+
+Welches Salz entsteht?
+
+Das Kation kommt von der Base. Also Natrium von Natriumhydroxid.
+
+Das Anion kommt von der Säure. Also Chlorid von Salzsäure.
+
+Zusammen: Natriumchlorid.
+
+...
+
+Wichtige Anwendungen der Neutralisation?
+
+Antazida neutralisieren überschüssige Magensäure.
+
+Bei der Titration nutzt man Neutralisation zur quantitativen Bestimmung von Konzentrationen.
+
+Und in Lebensmitteln und im Körper wird der pH-Wert oft durch kontrollierte Neutralisation eingestellt.
+
+...
+
+Wichtig für die Praxis: Bei der Neutralisation reagieren gleiche Stoffmengen von H-plus und O H-minus. Das ist das Prinzip hinter jeder Titration!

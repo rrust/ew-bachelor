@@ -1,0 +1,23 @@
+Wasserstoffbrücken sind der Klebstoff der Biologie. Stark genug für Stabilität, schwach genug für Dynamik.
+
+...
+
+Das beste Beispiel ist die DNA. Die beiden Stränge der Doppelhelix werden durch Wasserstoffbrücken zwischen den Basenpaaren zusammengehalten.
+
+Adenin und Thymin bilden zwei Wasserstoffbrücken. Guanin und Cytosin bilden drei.
+
+Das hat praktische Konsequenzen. DNA-Abschnitte mit hohem G-C-Anteil sind stabiler. Sie haben einen höheren Schmelzpunkt, also die Temperatur, bei der sich die Stränge trennen.
+
+...
+
+Aber warum überhaupt Wasserstoffbrücken? Warum nicht stärkere kovalente Bindungen?
+
+Die Antwort liegt in der Balance. Wasserstoffbrücken sind stark genug, um die Doppelhelix stabil zu halten. Aber sie sind schwach genug, um bei der Replikation und Transkription geöffnet zu werden. Die Zelle braucht beides.
+
+...
+
+Auch in Proteinen spielen Wasserstoffbrücken eine zentrale Rolle. Die Alpha-Helix wird durch Wasserstoffbrücken zwischen den C gleich O und N-H Gruppen der Peptidbindungen stabilisiert. Das Beta-Faltblatt entsteht durch Wasserstoffbrücken zwischen parallelen Proteinsträngen.
+
+...
+
+Ein faszinierendes Beispiel sind Clathrate, auch Gashydrate genannt. Bei Methan-Clathrat, manchmal brennendes Eis genannt, werden Methanmoleküle in einem Käfig aus Wassermolekülen eingeschlossen. Die Wassermoleküle bilden Wasserstoffbrücken und formen polyederförmige Hohlräume. Diese Strukturen sind am Meeresboden unter hohem Druck stabil und enthalten enorme Mengen an Methan.

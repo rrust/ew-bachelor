@@ -1,0 +1,35 @@
+Warum braucht man viel mehr Energie, um Wasser zu verdampfen als es zu schmelzen?
+
+Die Antwort liegt in den Enthalpien der Phasenübergänge.
+
+...
+
+Es gibt sechs Phasenübergänge.
+
+Schmelzen, von fest zu flüssig, ist endotherm. Das Erstarren, der umgekehrte Weg, ist exotherm.
+
+Verdampfen, von flüssig zu gasförmig, ist endotherm. Kondensieren ist exotherm.
+
+Sublimieren, von fest direkt zu gasförmig, ist endotherm. Resublimieren ist exotherm.
+
+...
+
+Die Schmelzenthalpie, Delta H Schmelz, ist die Energie zum Aufbrechen des Kristallgitters. Für Wasser sind das 6 Kilojoule pro Mol.
+
+Die Verdampfungsenthalpie, Delta H Vap, ist die Energie zum vollständigen Überwinden der intermolekularen Kräfte. Für Wasser sind das 40,7 Kilojoule pro Mol.
+
+Die Verdampfungsenthalpie ist fast siebenmal größer!
+
+...
+
+Warum dieser große Unterschied?
+
+Beim Schmelzen wird nur die regelmäßige Gitterstruktur aufgebrochen. Die intermolekularen Kräfte bleiben größtenteils erhalten. Die Moleküle sind immer noch eng beieinander, nur nicht mehr so geordnet.
+
+Beim Verdampfen werden alle intermolekularen Kräfte vollständig überwunden. Die Moleküle werden komplett voneinander getrennt und bewegen sich unabhängig in der Gasphase.
+
+...
+
+Die Sublimationsenthalpie entspricht logischerweise der Summe aus Schmelz- und Verdampfungsenthalpie. Man geht beide Schritte, nur eben direkt ohne flüssige Zwischenstufe.
+
+Die Verdampfungsenthalpie ist immer deutlich größer als die Schmelzenthalpie. Bei jedem Stoff.

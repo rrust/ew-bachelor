@@ -1,0 +1,21 @@
+In einer chemischen Reaktion kann Materie weder aus dem Nichts entstehen noch einfach verschwinden. Das ist das Gesetz der Massenerhaltung, formuliert von Lavoisier im 18. Jahrhundert.
+
+...
+
+Was bedeutet das praktisch?
+
+Schau dir die Reaktion von Aluminium mit Brom an. Auf der linken Seite stehen zwei Aluminium-Atome und drei Brom-Moleküle, also sechs Brom-Atome insgesamt. Auf der rechten Seite entsteht Aluminiumbromid mit genau zwei Aluminium und sechs Brom.
+
+Die Zahlen stimmen überein. Das ist kein Zufall, sondern ein fundamentales Naturgesetz.
+
+...
+
+Die Zahlen vor den chemischen Formeln heißen Koeffizienten oder stöchiometrische Faktoren. Sie geben das Mol-Verhältnis an.
+
+Wichtig: Du darfst beim Ausgleichen einer Gleichung nur die Koeffizienten ändern. Die kleinen Zahlen in der Formel selbst, die Indizes, sind tabu. Denn die beschreiben, wie das Molekül aufgebaut ist.
+
+...
+
+Ein Koeffizient Zwei vor H zwei O bedeutet: Zwei Wassermoleküle. Aber du kannst nicht einfach H vier O zwei schreiben. Das wäre ein völlig anderer Stoff.
+
+Dieses Mol-Verhältnis aus den Koeffizienten ist der Schlüssel für alle weiteren Berechnungen.

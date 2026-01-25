@@ -1,0 +1,27 @@
+1788 formulierte Antoine Lavoisier eines der grundlegendsten Prinzipien der Chemie: Das Gesetz der Erhaltung der Masse.
+
+Was bedeutet das?
+
+...
+
+Atome können bei einer chemischen Reaktion weder erschaffen noch vernichtet werden. Sie werden nur neu angeordnet.
+
+Denk an Legosteine. Du kannst sie umbauen, aber du hast am Ende genauso viele Steine wie am Anfang.
+
+Das bedeutet für jede Reaktion: Die Gesamtmasse der Edukte ist gleich der Gesamtmasse der Produkte. Und die Anzahl jedes Atomtyps bleibt auf beiden Seiten gleich.
+
+...
+
+Schauen wir uns die Wassersynthese an.
+
+Unausgeglichen: H zwei plus O zwei ergibt H zwei O.
+
+Links haben wir zwei Wasserstoffatome und zwei Sauerstoffatome. Rechts aber nur zwei Wasserstoff und ein Sauerstoff. Das passt nicht!
+
+Ausgeglichen lautet die Gleichung: zwei H zwei plus O zwei ergibt zwei H zwei O.
+
+Jetzt haben wir links vier Wasserstoff und zwei Sauerstoff. Rechts auch vier Wasserstoff und zwei Sauerstoff. Perfekt!
+
+...
+
+Beim Ausgleichen darfst du nur die Koeffizienten ändern, also die Zahlen vor den Formeln. Die Indizes innerhalb der Formeln bleiben immer unverändert!

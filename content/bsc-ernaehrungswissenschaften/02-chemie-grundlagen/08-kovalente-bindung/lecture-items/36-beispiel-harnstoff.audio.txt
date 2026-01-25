@@ -1,0 +1,23 @@
+Harnstoff mit der Summenformel N H zwei in Klammern zwei C O ist ein wichtiges Biomolekül. Es ist das Endprodukt des Aminosäurestoffwechsels. Schauen wir uns die Lewis-Struktur an.
+
+...
+
+Schritt 1: Valenzelektronen zählen. Kohlenstoff hat 4. Sauerstoff hat 6. Zwei Stickstoffe haben 2 mal 5 gleich 10. Und vier Wasserstoffe haben 4 mal 1 gleich 4.
+
+Das ergibt 24 Valenzelektronen insgesamt.
+
+Schritt 2: Gerüst aufbauen. Kohlenstoff ist das Zentralatom. An ihm hängen der Sauerstoff und die beiden Stickstoffatome. An jedem Stickstoff hängen zwei Wasserstoffe.
+
+...
+
+Mit nur Einfachbindungen hätte der Kohlenstoff nur 6 Elektronen: 3 Bindungen zu O, N und N. Das ist kein Oktett.
+
+Die Lösung ist eine Doppelbindung zwischen Kohlenstoff und Sauerstoff. C Doppelbindung O.
+
+Jetzt hat der Kohlenstoff 4 Bindungen, also 8 Elektronen. Der Sauerstoff hat eine Doppelbindung plus 2 freie Paare, also auch 8 Elektronen. Jeder Stickstoff hat 3 Bindungen plus 1 freies Paar.
+
+...
+
+Interessant ist: Das Molekül hat insgesamt 4 freie Elektronenpaare. 2 am Sauerstoff und je 1 an den beiden Stickstoffen.
+
+Bei komplexen Molekülen hilft es, zuerst das Gerüst zu zeichnen und dann systematisch aufzufüllen.

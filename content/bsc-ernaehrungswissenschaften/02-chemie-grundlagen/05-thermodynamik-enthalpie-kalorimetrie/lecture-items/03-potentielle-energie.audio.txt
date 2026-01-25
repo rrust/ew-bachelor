@@ -1,0 +1,19 @@
+Stell dir vor, du hältst einen Ball in der Hand. Solange du ihn festhältst, passiert nichts. Aber lässt du ihn los, fällt er zu Boden. Woher kommt die Energie für diese Bewegung?
+
+Sie steckte die ganze Zeit in der Lage des Balls. Das nennen wir potentielle Energie oder Lageenergie.
+
+...
+
+In der Chemie betrachten wir die potentielle Energie auf atomarer Ebene. Positive und negative Ionen ziehen sich gegenseitig an. Wenn sie weit voneinander entfernt sind, haben sie hohe potentielle Energie. Nähern sie sich an, sinkt diese Energie.
+
+Denke an Natriumchlorid, also Kochsalz. Wenn sich die positiven Natriumionen und die negativen Chloridionen zu einem Kristall zusammenlagern, sinkt ihre potentielle Energie erheblich. Der entstehende Kristall ist stabiler als die getrennten Ionen.
+
+...
+
+Daraus folgt ein fundamentales Prinzip: Systeme streben Zustände niedriger potentieller Energie an, weil diese stabiler sind.
+
+Das erklärt, warum Atome Bindungen eingehen: Im gebundenen Zustand haben sie niedrigere potentielle Energie als im ungebundenen.
+
+...
+
+Wenn eine Bindung gebildet wird, wird Energie freigesetzt. Die potentielle Energie sinkt. Umgekehrt muss man Energie aufwenden, um eine Bindung zu brechen. Die potentielle Energie steigt dabei.

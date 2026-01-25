@@ -1,0 +1,19 @@
+Warum braucht eine Badewanne voll Wasser viel länger zum Aufheizen als eine Tasse? Und warum erwärmt sich ein Metallstück schneller als die gleiche Menge Wasser?
+
+Die Antwort liegt in der Wärmekapazität.
+
+...
+
+Die Wärmekapazität eines Körpers gibt an, wie viel Wärme man zuführen muss, um seine Temperatur um ein Grad zu erhöhen. Je größer der Körper, desto größer die Wärmekapazität. Die Einheit ist Joule pro Kelvin.
+
+Aber um verschiedene Stoffe vergleichbar zu machen, brauchen wir die spezifische Wärmekapazität, symbolisiert mit dem kleinen c.
+
+...
+
+Die spezifische Wärmekapazität bezieht sich auf genau ein Gramm der Substanz. Sie gibt an, wie viel Energie nötig ist, um ein Gramm eines Stoffes um ein Kelvin zu erwärmen. Die Einheit ist Joule pro Gramm mal Kelvin.
+
+...
+
+Der Zusammenhang zwischen beiden Größen ist einfach: Die Wärmekapazität eines Körpers ist gleich seiner Masse mal der spezifischen Wärmekapazität des Materials.
+
+Eine Badewanne voll Wasser hat also eine viel größere Wärmekapazität als eine Tasse, weil sie viel mehr Masse enthält, obwohl das Material, also das Wasser, das gleiche ist.

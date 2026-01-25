@@ -1,0 +1,21 @@
+Stickstoff und Kohlenmonoxid haben fast die gleiche Molmasse, ungefähr 28 Gramm pro Mol. Trotzdem siedet Kohlenmonoxid 4 Grad höher als Stickstoff. Warum?
+
+Der Unterschied sind Dipol-Dipol-Kräfte.
+
+...
+
+Bei polaren Molekülen ist die Elektronendichte ungleich verteilt. Ein Ende ist partiell negativ, das andere partiell positiv. Wenn sich solche Moleküle begegnen, zieht die positive Seite des einen die negative Seite des anderen an.
+
+...
+
+Ein deutlicheres Beispiel: Brom und Iodchlorid.
+
+Brom besteht aus zwei gleichen Atomen. Die Elektronenverteilung ist symmetrisch, kein Dipol, keine Dipol-Dipol-Kräfte. Siedepunkt plus 59 Grad.
+
+Iodchlorid hat ähnliche Molmasse, etwa 162 gegenüber 160 bei Brom. Aber Chlor ist elektronegativer als Iod. Die Elektronen werden zum Chlor gezogen. Es entsteht ein Dipol. Siedepunkt plus 97 Grad.
+
+Das sind 38 Grad Unterschied bei fast gleicher Masse!
+
+...
+
+Die Regel ist einfach. Bei ähnlicher Molmasse führen Dipol-Dipol-Kräfte zu höheren Siedepunkten. Die zusätzliche Anziehung zwischen den polaren Molekülen muss beim Verdampfen überwunden werden. Dafür braucht man mehr Energie, also eine höhere Temperatur.

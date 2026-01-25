@@ -1,0 +1,17 @@
+In einer isoelektronischen Reihe gilt eine einfache Regel: Je mehr Protonen, desto kleiner das Teilchen.
+
+...
+
+Da die Elektronenzahl identisch ist, bestimmt allein die Kernladung die Größe. Mehr Protonen bedeutet stärkere Anziehung. Stärkere Anziehung zieht die Elektronen näher zum Kern. Das Ergebnis ist ein kleinerer Radius.
+
+...
+
+Schauen wir die 10-Elektronen-Reihe an.
+
+Oxid mit 8 Protonen hat einen Radius von 140 Pikometer. Fluorid mit 9 Protonen hat 133 Pikometer. Natrium-plus mit 11 Protonen hat 102 Pikometer. Magnesium-zwei-plus mit 12 Protonen hat 72 Pikometer. Und Aluminium-drei-plus mit 13 Protonen hat nur noch 53 Pikometer.
+
+Die Reihenfolge nach Größe ist also: Oxid größer als Fluorid größer als Natrium-plus größer als Magnesium-zwei-plus größer als Aluminium-drei-plus.
+
+...
+
+Stell dir 10 Gummibälle in einem Netz vor. Je stärker du am Netz ziehst, also je mehr Protonen, desto enger werden die Bälle zusammengedrückt. Alle haben die gleiche Anzahl Bälle, aber unterschiedlich starken Zug vom Zentrum.

@@ -1,0 +1,27 @@
+Was macht Wasserstoffbrücken so besonders? Warum sind sie stärker als normale Dipol-Dipol-Kräfte?
+
+...
+
+Wasserstoffbrücken treten nur auf, wenn ein Wasserstoffatom direkt an eines von drei stark elektronegativen Atomen gebunden ist: Fluor, Sauerstoff oder Stickstoff.
+
+Eine kleine Eselsbrücke: Für Ordentliche Noten. F, O, N.
+
+...
+
+Die Notation sieht so aus: X Strich H, drei Punkte, Doppelpunkt Y.
+
+X und Y sind dabei Fluor, Sauerstoff oder Stickstoff. Der Strich zeigt die starke kovalente Bindung. Die drei Punkte zeigen die Wasserstoffbrücke. Und der Doppelpunkt steht für das freie Elektronenpaar am Akzeptor-Atom.
+
+...
+
+Warum sind diese Bindungen so stark?
+
+Erstens, die X-H Bindung ist extrem polar. Die Elektronegativitätsdifferenz zwischen Sauerstoff und Wasserstoff ist zum Beispiel 1,4.
+
+Zweitens, Wasserstoff ist winzig. Er hat keine inneren Elektronen. Der positive Kern kommt dem Akzeptor-Atom sehr nahe.
+
+Drittens, Fluor, Sauerstoff und Stickstoff haben freie Elektronenpaare als Andockstellen.
+
+...
+
+Die typische Stärke einer Wasserstoffbrücke liegt bei 5 bis 30 Kilojoule pro Mol. Das ist etwa zehnmal stärker als normale Dipol-Dipol-Kräfte. Stark genug, um die physikalischen Eigenschaften dramatisch zu verändern.

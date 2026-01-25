@@ -1,0 +1,17 @@
+Ein Experiment, das du bitte nicht nachmachen solltest: Die elektrische Essiggurke.
+
+Schließt man eine Essiggurke an Netzspannung an, beginnt sie gelblich-orange zu leuchten. Warum?
+
+...
+
+Die Gurke enthält Salzwasser mit Natrium-Ionen. Der elektrische Strom regt die Natriumatome an. Wenn die Elektronen zurück in ihren Grundzustand fallen, senden sie Licht aus. Und Natrium hat eine charakteristische gelbe Doppellinie bei 589 Nanometern.
+
+...
+
+Das gleiche Prinzip erklärt viele Alltagsphänomene. Natriumdampflampen, wie sie früher an Straßen standen, leuchten gelb-orange. Neonröhren rot. Leuchtstoffröhren nutzen Quecksilberdampf und Leuchtstoffe für weißes Licht. Feuerwerk? Verschiedene Elemente für verschiedene Farben!
+
+...
+
+In der analytischen Chemie nutzen wir die Flammenfärbung. Lithium färbt die Flamme rot, Natrium gelb, Kalium violett, Kupfer grün-blau.
+
+Für die Ernährungswissenschaft: Mit Flammenphotometrie lässt sich der Natrium- und Kaliumgehalt in Lebensmitteln bestimmen!

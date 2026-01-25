@@ -1,0 +1,13 @@
+Vergleichen wir einige Beispiele zur Polaritätsanalyse...
+
+Methan gegen Fluormethan. Methan ist tetraedrisch und vollständig symmetrisch. Die schwach polaren C-H Bindungen heben sich auf... unpolar.
+
+Fluormethan? Immer noch tetraedrisch. Aber ein Wasserstoff ist durch Fluor ersetzt. Die C-F Bindung ist stark polar. Die Symmetrie ist gebrochen... polar.
+
+Oder Bortrifluorid gegen Phosphortrifluorid.
+
+Bortrifluorid ist trigonal-planar und hochsymmetrisch. Alle B-F Dipole sind gleich und stehen im 120-Grad-Winkel zueinander. Die vektorielle Summe ist null... unpolar.
+
+Phosphortrifluorid hingegen ist trigonal-pyramidal... es hat ein freies Elektronenpaar. Die Symmetrie ist gebrochen. Die Dipole addieren sich... polar.
+
+Die Visualisierung des elektrostatischen Potenzials zeigt die Elektronenverteilung. Rote Bereiche bedeuten hohe Elektronendichte, delta minus. Blaue Bereiche bedeuten niedrige Elektronendichte, delta plus.

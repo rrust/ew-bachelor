@@ -1,0 +1,35 @@
+Wenn ein Molekül eine ungerade Anzahl an Valenzelektronen hat, kann nicht jedes Elektron gepaart sein. Solche Teilchen heißen freie Radikale.
+
+Ein freies Radikal ist ein Teilchen mit mindestens einem ungepaarten Elektron.
+
+...
+
+Beispiel: Stickstoffmonoxid, N O.
+
+Elektronen zählen: Stickstoff hat 5, Sauerstoff hat 6. Das ergibt 11 Elektronen. Eine ungerade Zahl!
+
+Egal wie wir die Lewis-Struktur zeichnen, es bleibt immer 1 ungepaartes Elektron übrig. Meist wird es am Stickstoff lokalisiert dargestellt.
+
+...
+
+Radikale haben besondere Eigenschaften.
+
+Sie sind paramagnetisch. Ungepaarte Elektronen werden von Magnetfeldern angezogen.
+
+Sie sind sehr reaktiv. Sie haben das Bestreben, das einsame Elektron zu paaren.
+
+Sie sind oft kurzlebig. Sie reagieren schnell mit anderen Molekülen.
+
+...
+
+Aber Radikale sind nicht nur gefährlich. Sie spielen auch wichtige biologische Rollen.
+
+Stickstoffmonoxid ist ein Signalmolekül. Es reguliert den Blutdruck.
+
+Sauerstoffradikale verursachen oxidativen Stress und Zellschäden. Antioxidantien fangen diese Radikale ab.
+
+...
+
+Die Erkennung ist einfach: Wenn die Gesamtzahl der Valenzelektronen ungerade ist, handelt es sich um ein Radikal.
+
+N O hat 11 Elektronen, also ein Radikal. N O zwei hat 17, auch ein Radikal. O zwei hat 12 Elektronen, also kein klassisches Radikal, obwohl es ein sogenanntes Biradikal mit 2 ungepaarten Elektronen ist.

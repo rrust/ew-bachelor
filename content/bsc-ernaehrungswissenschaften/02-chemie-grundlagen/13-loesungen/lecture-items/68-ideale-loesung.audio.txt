@@ -1,0 +1,21 @@
+Manche Lösungen verhalten sich perfekt vorhersagbar. Das sind ideale Lösungen. Aber sie sind selten.
+
+...
+
+Eine ideale Lösung erfüllt das Raoultsche Gesetz exakt. Dafür müssen die Wechselwirkungen zwischen den Komponenten alle gleich stark sein.
+
+Die Kraft zwischen A und B muss genauso stark sein wie die Kraft zwischen A und A und zwischen B und B.
+
+...
+
+Wenn das erfüllt ist, passiert beim Mischen nichts Unerwartetes. Keine Wärme wird frei oder aufgenommen. Das Volumen ändert sich nicht. Delta H Mischung und Delta V Mischung sind beide null.
+
+...
+
+In der Praxis kommen strukturell ähnliche Substanzen dem nahe. Benzol und Toluol zum Beispiel, beides aromatische Kohlenwasserstoffe. Oder Hexan und Heptan, beides unpolare Alkane.
+
+Ethanol und Wasser dagegen sind nicht ideal. Sie bilden Wasserstoffbrücken untereinander, und beim Mischen werden bestehende Brücken gestört und neue gebildet.
+
+...
+
+Perfekt ideale Lösungen existieren nicht. Aber für viele Berechnungen ist die Näherung gut genug.

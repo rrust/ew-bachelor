@@ -1,0 +1,19 @@
+Einstein erhielt 1921 den Nobelpreis. Nicht für die Relativitätstheorie, sondern für seine Erklärung des photoelektrischen Effekts.
+
+...
+
+Das Experiment: Licht trifft auf eine Metalloberfläche und schlägt Elektronen heraus. Aber das Verhalten war rätselhaft.
+
+Es gibt eine Mindestfrequenz. Unterhalb dieser passiert gar nichts. Intensiveres Licht unter dieser Schwelle schlägt keine Elektronen heraus, egal wie hell es ist. Aber schwaches Licht über der Schwelle, schlägt sofort Elektronen heraus.
+
+...
+
+Die klassische Wellentheorie konnte das nicht erklären. Eine stärkere Welle sollte doch mehr Energie liefern!
+
+Einstein's Lösung: Licht besteht aus Teilchen, Photonen genannt. Jedes Photon trägt genau ein Energiequant, E gleich h mal Nü.
+
+Ein einzelnes Photon überträgt seine gesamte Energie an ein Elektron. Ist diese Energie kleiner als die Austrittsarbeit, passiert nichts. Ist sie größer oder gleich, wird das Elektron emittiert.
+
+...
+
+Der photoelektrische Effekt bewies: Licht verhält sich wie Teilchen. Das war ein Meilenstein zur Quantenmechanik.

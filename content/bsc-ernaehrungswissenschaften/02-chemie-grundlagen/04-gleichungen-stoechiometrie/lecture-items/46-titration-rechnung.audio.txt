@@ -1,0 +1,35 @@
+Ein konkretes Beispiel: Wie viel Apfelsäure steckt in einem Apfel?
+
+...
+
+Du analysierst einen 77-Gramm-Apfel. Die enthaltene Apfelsäure titrierst du mit Natriumhydroxid. Du verbrauchst 22,9 Milliliter einer 1-molaren Lösung.
+
+...
+
+Schritt eins: Berechne die Stoffmenge der Base.
+
+n gleich c mal V. Also 1 Mol pro Liter mal 0,0229 Liter ergibt 0,0229 Mol Natriumhydroxid.
+
+...
+
+Schritt zwei: Wie viel Apfelsäure entspricht das?
+
+Apfelsäure ist eine diprotische Säure. Sie hat zwei saure Wasserstoffatome. Deshalb braucht ein Mol Säure zwei Mol Base zur Neutralisation.
+
+Also: 0,0229 Mol Base mal ein Halbes ergibt 0,0115 Mol Säure.
+
+...
+
+Schritt drei: Die Masse der Säure.
+
+Die Molmasse von Apfelsäure ist 134 Gramm pro Mol. Also 0,0115 mal 134 ergibt 1,54 Gramm.
+
+...
+
+Schritt vier: Der Massenanteil.
+
+1,54 Gramm Säure geteilt durch 77 Gramm Apfel mal hundert ergibt etwa 2 Prozent.
+
+...
+
+Der Apfel enthält also ungefähr 2 Prozent Apfelsäure. Das ist typisch für säuerliche Apfelsorten und erklärt ihren erfrischenden Geschmack.

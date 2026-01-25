@@ -1,0 +1,27 @@
+Bevor wir in die Details gehen, hier ein Überblick über die drei Haupttrends.
+
+Erster Trend: Atomradien.
+
+Wenn du im Periodensystem nach rechts gehst, innerhalb einer Periode, nehmen die Atomradien ab. Das liegt an der höheren effektiven Kernladung.
+
+Wenn du nach unten gehst, innerhalb einer Gruppe, nehmen die Radien zu. Jede neue Periode fügt eine neue Hauptschale hinzu.
+
+...
+
+Zweiter Trend: Ionisierungsenergie.
+
+In der Periode nach rechts steigt sie, weil die Elektronen fester gebunden sind.
+
+In der Gruppe nach unten sinkt sie, weil die Valenzelektronen weiter vom Kern entfernt sind.
+
+...
+
+Dritter Trend: Elektronenaffinität.
+
+Nach rechts wird sie negativer, das bedeutet stärkere Anziehung für neue Elektronen.
+
+Nach unten wird sie weniger negativ, also schwächere Anziehung.
+
+...
+
+Der Schlüssel zum Verständnis aller drei Trends ist die effektive Kernladung, die wir mit Z Stern bezeichnen. Darauf schauen wir jetzt genauer.

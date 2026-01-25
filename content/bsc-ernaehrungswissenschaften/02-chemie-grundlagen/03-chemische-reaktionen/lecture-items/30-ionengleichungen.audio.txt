@@ -1,0 +1,27 @@
+Für Reaktionen in wässriger Lösung gibt es verschiedene Schreibweisen. Jede hat ihre Berechtigung!
+
+...
+
+Die erste ist die Stoffgleichung, auch Molekülgleichung genannt. Hier werden alle Verbindungen als Formeleinheiten geschrieben, so wie du sie aus dem Alltag kennst.
+
+Bleinitrat plus Kaliumchromat ergibt Bleichromat und Kaliumnitrat.
+
+...
+
+Die zweite ist die vollständige Ionengleichung. Hier werden alle starken Elektrolyte in ihre Ionen aufgelöst.
+
+Das sieht dann so aus: Blei-zwei-plus, Nitrat-Ionen, Kalium-Ionen und Chromat-Ionen reagieren zu festem Bleichromat plus den Kalium- und Nitrat-Ionen.
+
+...
+
+Und die dritte ist die Netto-Ionengleichung, auch verkürzte Ionengleichung genannt.
+
+Hier streichen wir die Zuschauer-Ionen. Das sind Ionen, die auf beiden Seiten unverändert erscheinen. Sie nehmen an der eigentlichen Reaktion gar nicht teil.
+
+Im Beispiel sind Kalium-Ionen und Nitrat-Ionen die Zuschauer. Die Netto-Ionengleichung lautet dann einfach: Blei-zwei-plus plus Chromat ergibt festes Bleichromat.
+
+...
+
+Wie stellst du eine Netto-Ionengleichung auf?
+
+Erst die Stoffgleichung aufstellen und ausgleichen. Dann alle löslichen starken Elektrolyte in Ionen auflösen. Feststoffe, Gase und schwache Elektrolyte bleiben als Moleküle. Dann Ionen streichen, die auf beiden Seiten gleich sind. Und zum Schluss kontrollieren: Stimmen Ladung und Masse?

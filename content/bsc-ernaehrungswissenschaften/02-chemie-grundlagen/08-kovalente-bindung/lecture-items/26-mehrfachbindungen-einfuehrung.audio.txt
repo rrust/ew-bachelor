@@ -1,0 +1,25 @@
+Manchmal reichen Einfachbindungen nicht aus, um die Oktettregel zu erfüllen. Dann brauchen wir Mehrfachbindungen.
+
+Schauen wir uns Kohlenstoffdioxid an, C O zwei.
+
+...
+
+Elektronen zählen: Kohlenstoff hat 4, jeder Sauerstoff hat 6. Das ergibt 16 Elektronen, also 8 Paare.
+
+Gerüst zeichnen: O Strich C Strich O. 2 Bindungen verbrauchen 2 Paare. 6 Paare sind übrig.
+
+Sauerstoffe auffüllen: Jeder bekommt 3 Paare. Das verbraucht 6 Paare.
+
+...
+
+Jetzt kommt das Problem: Alle Elektronen sind verbraucht. Aber der Kohlenstoff hat nur 4 Elektronen, 2 Bindungen mal 2. Das ist kein Oktett!
+
+Die Lösung: Wir klappen je ein freies Paar von jedem Sauerstoff in die Bindung. Es entstehen zwei Doppelbindungen.
+
+Das Ergebnis: O Doppelbindung C Doppelbindung O. Der Kohlenstoff hat jetzt 4 Bindungen, also 8 Elektronen. Jeder Sauerstoff hat eine Doppelbindung plus 2 freie Paare, also auch 8 Elektronen.
+
+...
+
+Die Regel ist: Mehrfachbindungen werden eingeführt, wenn das Zentralatom nach dem Auffüllen der Außenatome noch kein Oktett hat.
+
+Typische Elemente mit Mehrfachbindungen sind Kohlenstoff, Stickstoff, Sauerstoff, Schwefel und Phosphor.

@@ -1,0 +1,29 @@
+Eine Formel, die du dir unbedingt merken solltest: q gleich m mal c mal Delta T. Sie ist das zentrale Werkzeug für Wärmeberechnungen in der Chemie.
+
+...
+
+Was bedeuten die einzelnen Variablen?
+
+q ist die übertragene Wärmeenergie in Joule.
+
+m ist die Masse des Stoffes in Gramm.
+
+c ist die spezifische Wärmekapazität in Joule pro Gramm mal Kelvin.
+
+Und Delta T ist die Temperaturänderung, also Endtemperatur minus Anfangstemperatur, in Kelvin oder Grad Celsius.
+
+...
+
+Die Formel ergibt sich aus drei logischen Überlegungen.
+
+Mehr Masse bedeutet mehr Energie nötig. Größere Temperaturänderung bedeutet mehr Energie nötig. Und höhere spezifische Wärme bedeutet ebenfalls mehr Energie nötig.
+
+...
+
+Besonders wichtig ist das Vorzeichen. Wenn die Endtemperatur höher ist als die Anfangstemperatur, ist Delta T positiv, und damit auch q. Der Stoff wird erwärmt und nimmt Energie auf.
+
+Ist die Endtemperatur niedriger, ist Delta T negativ, und q wird ebenfalls negativ. Der Stoff kühlt ab und gibt Energie ab.
+
+...
+
+Eine wichtige Einschränkung: Diese Formel gilt nur, solange kein Phasenübergang stattfindet. Beim Schmelzen oder Verdampfen brauchen wir andere Formeln, nämlich die für latente Wärme.

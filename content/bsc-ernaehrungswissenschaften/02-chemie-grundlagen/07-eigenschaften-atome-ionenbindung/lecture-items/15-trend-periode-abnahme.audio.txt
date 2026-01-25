@@ -1,0 +1,17 @@
+Innerhalb einer Periode nimmt der Atomradius von links nach rechts ab. Das wirkt auf den ersten Blick paradox, denn wir fügen ja Elektronen hinzu!
+
+...
+
+Der Grund ist die steigende effektive Kernladung. Die Protonenzahl steigt. Die neuen Elektronen kommen aber in die gleiche Schale. Und Elektronen in der gleichen Schale schirmen sich schlecht gegenseitig ab.
+
+Höheres Z Stern bedeutet stärkere Anziehung. Die Elektronenwolke wird kontrahiert, also zusammengezogen.
+
+...
+
+Schauen wir die dritte Periode. Natrium hat 11 Protonen und einen Radius von 186 Pikometer. Dann Magnesium mit 160, Aluminium mit 143, Silizium mit 117, Phosphor mit 115, Schwefel mit 104. Und schließlich Chlor mit 17 Protonen und nur noch 99 Pikometer.
+
+Von Natrium bis Chlor, das ist fast eine Halbierung des Radius!
+
+...
+
+Der Periodentrend ist also die direkte Konsequenz der steigenden effektiven Kernladung. Mehr Protonen ziehen die Elektronen stärker an, das Atom schrumpft.

@@ -1,0 +1,17 @@
+Die Lewis-Schreibweise ist eine einfache Methode, um die Elektronenverteilung in Molekülen darzustellen. Benannt ist sie nach G. N. Lewis, einem amerikanischen Chemiker.
+
+Es gibt zwei zentrale Begriffe, die du kennen musst.
+
+...
+
+Erstens: Das Bindungspaar, abgekürzt BP. Das ist ein Elektronenpaar, das zwischen zwei Atomen geteilt wird. In Strukturformeln zeichnen wir es als Strich zwischen den Atomsymbolen. Zum Beispiel H Strich Cl für die Bindung in Chlorwasserstoff.
+
+Zweitens: Das nichtbindende Paar, auch freies Elektronenpaar oder einsames Paar genannt, abgekürzt NBP. Das ist ein Elektronenpaar, das nur einem Atom gehört. Es wird als Punktepaar oder Strich am Atom dargestellt.
+
+...
+
+Für die Elektronenzählung ist wichtig: Jeder Strich steht für 2 Elektronen. Jedes Punktepaar steht auch für 2 Elektronen. Ein einzelner Punkt wäre 1 Elektron, das kommt bei Radikalen vor.
+
+Bei Wasser zum Beispiel hat der Sauerstoff 2 Bindungspaare zu den Wasserstoffen und 2 freie Elektronenpaare. Bei Ammoniak hat der Stickstoff 3 Bindungspaare und 1 freies Paar.
+
+Merke dir: BP ist geteilt, NBP gehört einem Atom allein.

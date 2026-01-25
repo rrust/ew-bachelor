@@ -1,0 +1,37 @@
+Wie viele Wassermoleküle sind in einem Glas Wasser?
+
+Etwa 10 hoch 25, also eine Eins mit 25 Nullen. Solche Zahlen sind unpraktisch zum Arbeiten.
+
+Deshalb haben Chemiker das Mol erfunden.
+
+...
+
+Atome und Moleküle sind so winzig, dass wir sie nicht einzeln zählen können. Deshalb arbeiten Chemiker mit Paketen, den Molen.
+
+Ein Mol ist die Stoffmenge, die genauso viele Teilchen enthält, wie Atome in exakt 12 Gramm des Kohlenstoff-Isotops C-12 enthalten sind.
+
+Diese Zahl ist die Avogadro-Konstante: 6,022 mal 10 hoch 23 Teilchen pro Mol.
+
+...
+
+Was bedeutet das konkret?
+
+Ein Mol Kohlenstoff enthält 6,022 mal 10 hoch 23 Kohlenstoffatome.
+
+Ein Mol Wasser enthält 6,022 mal 10 hoch 23 Wassermoleküle.
+
+Ein Mol Natriumionen enthält 6,022 mal 10 hoch 23 Na-plus-Ionen.
+
+...
+
+Um dir diese unvorstellbar große Zahl vorzustellen: Wenn man jede Sekunde ein Atom zählen würde, bräuchte man etwa 19 Billionen Jahre, um ein einziges Mol zu zählen. Das Universum ist erst 14 Milliarden Jahre alt!
+
+...
+
+Warum ist das Mol so nützlich?
+
+Erstens: Ein Mol eines Elements in Gramm entspricht zahlenmäßig dem Atomgewicht in u. Kohlenstoff hat das Atomgewicht 12 u, also wiegt ein Mol Kohlenstoff 12 Gramm.
+
+Zweitens: Es ermöglicht einfache Umrechnungen zwischen Masse und Teilchenzahl.
+
+Drittens: Chemische Reaktionen laufen in festen Teilchenverhältnissen ab, nicht in Massenverhältnissen. Das Mol hilft, diese Verhältnisse zu berechnen.

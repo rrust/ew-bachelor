@@ -1,0 +1,23 @@
+Bevor wir Energiebilanzen aufstellen können, müssen wir genau festlegen, was wir eigentlich betrachten. Wo ist die Grenze zwischen dem, was wir untersuchen, und allem anderen?
+
+...
+
+In der Thermodynamik definieren wir das System als das Objekt unserer Untersuchung. Das kann der Inhalt eines Becherglases sein, die reagierenden Chemikalien, oder ein anderer klar abgegrenzter Bereich.
+
+Die Umgebung ist alles außerhalb des Systems: das Becherglas selbst, die Luft im Raum, das Thermometer, der Labortisch.
+
+...
+
+System und Umgebung können Energie austauschen. Dieser Austausch ist der Kern der Thermodynamik.
+
+Wenn Energie in Form von Wärme fließt, geschieht das immer spontan vom wärmeren zum kühleren Objekt. Dieser Prozess läuft so lange, bis beide die gleiche Temperatur haben.
+
+...
+
+Diesen Zustand nennen wir thermisches Gleichgewicht. Im thermischen Gleichgewicht findet kein Netto-Wärmefluss mehr statt.
+
+...
+
+Die klare Trennung zwischen System und Umgebung ist wichtig, weil sie uns erlaubt, Vorzeichen korrekt zu bestimmen. Energie, die ins System hineinfließt, bekommt ein positives Vorzeichen. Energie, die herausfließt, bekommt ein negatives.
+
+Nur so können wir Reaktionen eindeutig als exotherm oder endotherm klassifizieren.

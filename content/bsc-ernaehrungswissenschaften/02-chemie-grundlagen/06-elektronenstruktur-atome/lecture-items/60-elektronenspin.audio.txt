@@ -1,0 +1,23 @@
+Neben den drei räumlichen Quantenzahlen gibt es eine vierte. Sie beschreibt etwas, das wir uns kaum vorstellen können: den Spin des Elektrons.
+
+...
+
+Die Spinquantenzahl m s beschreibt die Drehrichtung des Elektrons um seine eigene Achse.
+
+Es gibt nur zwei mögliche Werte: Plus einhalb oder minus einhalb.
+
+...
+
+Symbolisch stellen wir das so dar: Plus einhalb heißt Spin up, Symbol ein Pfeil nach oben. Minus einhalb heißt Spin down, Symbol ein Pfeil nach unten.
+
+...
+
+Die Konsequenz für Orbitale: Da jedes Elektron einen von zwei Spinzuständen haben kann, gilt: Jedes Orbital kann maximal zwei Elektronen aufnehmen. Eines mit Spin up, eines mit Spin down.
+
+Zwei Elektronen im selben Orbital heißen Elektronenpaar und haben entgegengesetzten Spin: Pfeil hoch, Pfeil runter.
+
+...
+
+Die vollständige Adresse eines Elektrons besteht aus vier Quantenzahlen: n für die Schale, l für die Form, m l für die Orientierung, und m s für den Spin.
+
+Beispiel: Ein Elektron im zwei p Orbital könnte die Quantenzahlen n gleich zwei, l gleich eins, m l gleich null für p z, und m s gleich plus einhalb haben.

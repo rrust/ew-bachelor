@@ -1,0 +1,27 @@
+Zeit für eine Zusammenfassung der intermolekularen Kräfte.
+
+...
+
+Nach typischer Stärke geordnet.
+
+Die stärksten sind Ion-Dipol-Kräfte, 40 bis 600 Kilojoule pro Mol. Sie wirken zwischen einem Ion und einem polaren Molekül. Das klassische Beispiel ist Natriumchlorid in Wasser.
+
+Dann kommen Wasserstoffbrücken, 5 bis 30 Kilojoule pro Mol. Sie brauchen Wasserstoff an Stickstoff, Sauerstoff oder Fluor. Und ein freies Elektronenpaar am Akzeptor.
+
+Dipol-Dipol-Kräfte sind schwächer, 2 bis 10 Kilojoule pro Mol. Sie wirken zwischen allen polaren Molekülen.
+
+Dispersionskräfte schließlich reichen von 0,05 bis 40 Kilojoule pro Mol. Sie wirken in allen Molekülen, auch in polaren.
+
+...
+
+Drei wichtige Punkte zum Merken.
+
+Erstens, Dispersionskräfte sind allgegenwärtig. Jedes Molekül hat sie. Bei großen unpolaren Molekülen können sie sogar sehr stark werden. Die Dispersionskräfte in Iod sind stärker als die Dipol-Dipol-Kräfte in Salzsäure.
+
+Zweitens, mehrere Kräfte wirken gleichzeitig. Ethanol zum Beispiel hat Dispersionskräfte, Dipol-Dipol-Kräfte und Wasserstoffbrücken.
+
+...
+
+Drittens, für Siedepunkt-Vorhersagen analysierst du zuerst die Struktur. Ist das Molekül polar? Sind Wasserstoffbrücken möglich? Dann vergleichst du die Molmasse bei ähnlichen Molekültypen. Und identifizierst die dominante Kraft.
+
+Die Faustregel für kleine Moleküle: Wasserstoffbrücken sind stärker als Dipol-Dipol, stärker als Dispersion. Aber bei großen Molekülen können Dispersionskräfte dominieren!

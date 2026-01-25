@@ -1,0 +1,23 @@
+1924 stellte Louis de Broglie eine kühne Frage: Wenn Licht sowohl Welle als auch Teilchen sein kann, warum dann nicht auch Materie?
+
+...
+
+De Broglie postulierte: Jedes bewegte Objekt hat eine zugeordnete Wellenlänge.
+
+Lambda gleich h geteilt durch m mal v.
+
+h ist die Planck-Konstante. m die Masse des Teilchens. v seine Geschwindigkeit.
+
+...
+
+Warum bemerken wir das im Alltag nicht?
+
+Rechnen wir: Ein Baseball mit 145 Gramm und 40 Metern pro Sekunde. Die Wellenlänge? Etwa zehn hoch minus 34 Meter. Unvorstellbar klein, weit unter jeder messbaren Distanz.
+
+Aber ein Elektron? Masse 9,1 mal zehn hoch minus 31 Kilogramm, Geschwindigkeit eine Million Meter pro Sekunde. Die Wellenlänge? Etwa 0,7 Nanometer!
+
+Das ist im Bereich von Atomabständen. Hier ist der Wellencharakter messbar und wichtig!
+
+...
+
+Das ist der Schlüssel: Makroskopische Objekte haben zu viel Masse für messbare Wellenlängen. Aber für Elektronen ist die Wellennatur fundamental.

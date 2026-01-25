@@ -1,0 +1,26 @@
+Ammoniumnitrat zerfällt bei Erhitzung in Distickstoffoxid und Wasserdampf. Dieses Beispiel zeigt den Vier-Schritte-Plan in Aktion.
+
+...
+
+Gegeben sind 454 Gramm Ammoniumnitrat. Wie viel Distickstoffoxid und wie viel Wasser entstehen?
+
+Schritt eins: Wir rechnen die Masse in Mol um. Die Molmasse von N H vier N O drei beträgt 80 Gramm pro Mol. Also: 454 geteilt durch 80 ergibt 5,67 Mol.
+
+...
+
+Schritt zwei: Das Mol-Verhältnis aus der Gleichung. Ein Mol Ammoniumnitrat ergibt ein Mol Distickstoffoxid und zwei Mol Wasser.
+
+Für Distickstoffoxid: 5,67 Mol mal eins ist 5,67 Mol.
+Für Wasser: 5,67 Mol mal zwei ist 11,34 Mol.
+
+...
+
+Schritt drei: Zurück zur Masse. Distickstoffoxid hat eine Molmasse von 44 Gramm pro Mol. Also 5,67 mal 44 ergibt 250 Gramm.
+
+Wasser hat 18 Gramm pro Mol. Also 11,34 mal 18 ergibt 204 Gramm.
+
+...
+
+Jetzt der Kontrollschritt: Wir addieren die Produktmassen. 250 plus 204 ergibt 454 Gramm.
+
+Das ist exakt die Masse des Edukts. Die Massenerhaltung ist erfüllt. Unsere Rechnung stimmt.

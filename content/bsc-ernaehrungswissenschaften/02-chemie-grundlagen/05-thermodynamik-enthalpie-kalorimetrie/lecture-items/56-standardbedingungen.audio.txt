@@ -1,0 +1,21 @@
+Um thermodynamische Werte aus verschiedenen Quellen vergleichen zu können, brauchen wir einheitliche Bedingungen. Diese nennen wir Standardbedingungen.
+
+...
+
+Die Standardbedingungen sind: Der Druck beträgt eine Atmosphäre oder 101,3 Kilopascal. Die Konzentration beträgt ein Mol pro Liter. Und die Temperatur beträgt 25 Grad Celsius, also 298 Kelvin.
+
+Standardwerte werden mit einem hochgestellten Kreis gekennzeichnet, dem sogenannten Plimsoll-Symbol. Also Delta H Grad für Standardenthalpieänderung.
+
+...
+
+Wichtig: Die Standardtemperatur von 25 Grad ist keine physikalische Notwendigkeit. Sie ist eine praktische Konvention, weil sie nahe der Raumtemperatur liegt. Viele Tabellenwerte beziehen sich auf diese Temperatur.
+
+...
+
+Bei Standardbedingungen hat jeder Stoff seinen charakteristischen Aggregatzustand.
+
+Wasser ist flüssig. Sauerstoff ist gasförmig. Kohlenstoff liegt als fester Graphit vor. Eisen ist fest. Quecksilber ist flüssig.
+
+...
+
+Beim Berechnen von Reaktionsenthalpien muss der Aggregatzustand unbedingt beachtet werden! Die Enthalpie von Wasserdampf ist anders als die von flüssigem Wasser. Wenn du den falschen Zustand verwendest, sind deine Ergebnisse falsch.

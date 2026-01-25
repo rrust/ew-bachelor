@@ -1,0 +1,21 @@
+Rechnen wir den Dampfdruck unserer Glycol-Lösung aus.
+
+...
+
+Wir hatten 62 Komma eins Gramm Ethylenglycol in 250 Gramm Wasser. Der Stoffmengenanteil von Glycol war null Komma null sechs sieben zwei.
+
+Bei 30 Grad Celsius hat reines Wasser einen Dampfdruck von 31 Komma acht Millimeter Quecksilbersäule.
+
+...
+
+Schritt eins: Der Stoffmengenanteil des Wassers ist eins minus null Komma null sechs sieben zwei, also null Komma neun drei zwei acht.
+
+Schritt zwei: Wir wenden das Raoultsche Gesetz an. P Wasser gleich null Komma neun drei zwei acht mal 31 Komma acht Millimeter Quecksilbersäule.
+
+Das ergibt 29 Komma sieben Millimeter Quecksilbersäule.
+
+...
+
+Der Dampfdruck ist also von 31 Komma acht auf 29 Komma sieben gesunken. Eine Erniedrigung von zwei Komma eins Millimeter Quecksilbersäule, etwa sechs Komma sechs Prozent.
+
+Klingt wenig? Warte ab, was das für den Siede- und Gefrierpunkt bedeutet.

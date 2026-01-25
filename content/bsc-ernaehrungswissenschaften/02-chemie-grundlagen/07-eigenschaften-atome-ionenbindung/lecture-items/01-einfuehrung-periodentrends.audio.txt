@@ -1,0 +1,17 @@
+Das Periodensystem ist weit mehr als eine bloße Auflistung von Elementen. Es zeigt systematische Trends, die sich periodisch wiederholen...
+
+Stell dir vor, du könntest vorhersagen, wie ein Element reagiert, nur weil du seine Position im Periodensystem kennst. Genau das ist möglich, wenn du die Periodentrends verstehst.
+
+In diesem Kapitel schauen wir uns drei fundamentale Eigenschaften an.
+
+Erstens: Atom- und Ionengrößen. Warum ist Cäsium fast dreimal so groß wie Helium?
+
+Zweitens: Ionisierungsenergien. Wie viel Energie braucht man, um einem Atom ein Elektron zu entreißen?
+
+Drittens: Elektronenaffinitäten. Wie viel Energie wird umgesetzt, wenn ein Atom ein Elektron aufnimmt?
+
+...
+
+All diese Eigenschaften lassen sich auf die elektronische Struktur zurückführen. Es geht um das Zusammenspiel zwischen der Anziehung durch den positiven Kern und der Abstoßung der Elektronen untereinander.
+
+Die zentrale Idee ist einfach: Wenn wir verstehen, wie stark der Kern die Elektronen anzieht, können wir die meisten Periodentrends erklären.

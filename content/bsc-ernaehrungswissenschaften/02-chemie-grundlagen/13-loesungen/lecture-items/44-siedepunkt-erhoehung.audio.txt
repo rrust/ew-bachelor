@@ -1,0 +1,19 @@
+Salzwasser kocht bei etwas mehr als hundert Grad. Das ist die Siedepunktserhöhung.
+
+...
+
+Erinnere dich: Der Dampfdruck einer Lösung ist niedriger als der des reinen Lösungsmittels. Eine Flüssigkeit siedet, wenn ihr Dampfdruck den Außendruck erreicht, normalerweise eine Atmosphäre.
+
+Da der Dampfdruck niedriger ist, braucht die Lösung mehr Temperatur, um diesen Außendruck zu erreichen. Sie siedet später.
+
+...
+
+Die Formel lautet: Delta T Siedepunkt gleich E S P mal m mal i.
+
+E S P ist die ebullioskopische Konstante, für Wasser null Komma fünf eins zwei Grad Celsius mal Kilogramm pro Mol. m ist die Molalität und i der Van't Hoff Faktor.
+
+...
+
+Bei einer einmolalen Zuckerlösung in Wasser ist i gleich eins. Die Siedepunktserhöhung beträgt also null Komma fünf eins zwei Grad Celsius.
+
+Beim Kochen macht das kaum einen Unterschied. Aber für präzise chemische Messungen ist es wichtig.

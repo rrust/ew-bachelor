@@ -1,0 +1,27 @@
+Was macht Kohlenstoff zu Kohlenstoff und nicht zu Stickstoff?
+
+Die Antwort liegt in einer einzigen Zahl: der Ordnungszahl.
+
+...
+
+Die Ordnungszahl, mit dem Symbol Z, gibt die Anzahl der Protonen im Atomkern an. Und hier ist der Schlüsselpunkt: Diese Zahl definiert die Identität eines Elements. Jedes Element hat eine eindeutige Ordnungszahl.
+
+Wasserstoff hat Z gleich 1, also ein Proton. Kohlenstoff hat Z gleich 6, sechs Protonen. Aluminium hat Z gleich 13, und Eisen hat Z gleich 26.
+
+Bei einem neutralen Atom entspricht die Anzahl der Elektronen übrigens genau der Anzahl der Protonen.
+
+...
+
+Neben der Ordnungszahl gibt es die Massenzahl, Symbol A. Sie ist die Summe aus Protonen und Neutronen im Kern.
+
+A gleich Z plus N, wobei N die Neutronenzahl ist.
+
+...
+
+In der Nuklid-Schreibweise wird ein Atom so dargestellt: Die Massenzahl A steht oben links, die Ordnungszahl Z steht unten links, und dann kommt das Elementsymbol.
+
+Ein Beispiel: Aluminium-27 wird geschrieben als 27 oben, 13 unten, Al. Die Massenzahl ist 27, die Ordnungszahl ist 13, und die Anzahl der Neutronen berechnet sich als 27 minus 13, also 14 Neutronen.
+
+...
+
+Diese einfache Subtraktion, N gleich A minus Z, brauchst du immer wieder. Merke sie dir gut!

@@ -1,0 +1,19 @@
+Aus der Oktettregel lässt sich ableiten, wie viele Bindungen ein Atom typischerweise eingeht.
+
+Für die Gruppen 1 bis 4 gilt: Bindungszahl gleich Gruppennummer.
+
+Wasserstoff, Lithium, Natrium in Gruppe 1 machen 1 Bindung. Beryllium und Magnesium in Gruppe 2 machen 2. Bor und Aluminium in Gruppe 3 machen 3. Kohlenstoff und Silizium in Gruppe 4 machen 4 Bindungen.
+
+...
+
+Für die Gruppen 5 bis 7 gilt eine andere Regel: Bindungszahl gleich 8 minus Gruppennummer.
+
+Stickstoff und Phosphor in Gruppe 5 machen 3 Bindungen und haben 1 freies Paar. Sauerstoff und Schwefel in Gruppe 6 machen 2 Bindungen und haben 2 freie Paare. Fluor, Chlor und Brom in Gruppe 7 machen 1 Bindung und haben 3 freie Paare.
+
+...
+
+Woher kommt das? Nehmen wir Stickstoff als Beispiel. Er hat 5 Valenzelektronen. Für ein Oktett braucht er 8 minus 5 gleich 3 weitere Elektronen. Diese bekommt er durch 3 Bindungspaare, also 3 Bindungspartner. Die restlichen 2 Elektronen bilden 1 freies Paar.
+
+Bei Ammoniak, N H drei, sieht man das perfekt. Stickstoff macht 3 Bindungen zu 3 Wasserstoffen und hat 1 freies Elektronenpaar. Jeder Wasserstoff macht genau 1 Bindung.
+
+Diese Regeln gelten für normale Moleküle. Bei Ionen und manchen Verbindungen gibt es Abweichungen.

@@ -1,0 +1,25 @@
+Energie kann weder erzeugt noch vernichtet werden. Das ist einer der fundamentalsten Sätze der Physik, bekannt als der Erste Hauptsatz der Thermodynamik.
+
+...
+
+Aber wenn Energie nicht verschwinden kann, was passiert dann bei chemischen Reaktionen? Die Antwort: Energie wird umgewandelt, von einer Form in eine andere.
+
+...
+
+Betrachten wir eine exotherme Reaktion. Wenn die potentielle Energie der Produkte niedriger ist als die der Edukte, muss die Energiedifferenz irgendwo hin. Sie wird als kinetische Energie freigesetzt.
+
+Auf molekularer Ebene bedeutet höhere kinetische Energie eine höhere Temperatur. Wir spüren das als Wärme.
+
+Bei exothermen Reaktionen gilt also: Die potentielle Energie sinkt, die kinetische Energie steigt, die Temperatur erhöht sich, und Wärme wird an die Umgebung abgegeben.
+
+...
+
+Bei endothermen Reaktionen ist es umgekehrt. Die potentielle Energie steigt, dafür sinkt die kinetische Energie, die Temperatur fällt, und Wärme wird aus der Umgebung aufgenommen.
+
+...
+
+Dieses Prinzip erklärt viele Alltagsphänomene. Verbrennung setzt Wärme frei, weil die Bindungen in Kohlendioxid und Wasser stabiler sind als in den Ausgangsstoffen plus Sauerstoff.
+
+Verdampfung kostet Energie, weil die Teilchen die Anziehungskräfte zwischen ihnen überwinden müssen.
+
+Und die chemische Energie in unserer Nahrung wärmt uns, weil der Stoffwechsel letztlich ein exothermer Prozess ist.

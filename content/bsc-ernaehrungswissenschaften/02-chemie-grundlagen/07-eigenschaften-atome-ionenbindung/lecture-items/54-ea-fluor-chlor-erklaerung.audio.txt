@@ -1,0 +1,19 @@
+Nach dem Periodentrend sollte Fluor die höchste, also negativste, Elektronenaffinität haben. Es ist elektronegativer, steht weiter oben in der Gruppe und hat die höhere effektive Kernladung.
+
+Aber Chlor mit minus 349 Kilojoule pro Mol übertrifft Fluor mit nur minus 328 Kilojoule pro Mol. Wie kann das sein?
+
+...
+
+Die Erklärung liegt in der Ladungsdichte.
+
+Das Fluor-Atom ist extrem klein, nur 71 Pikometer Radius. Die sieben Valenzelektronen drängen sich auf sehr kleinem Raum. Das führt zu hoher Ladungsdichte.
+
+Wenn jetzt ein achtes Elektron hinzukommt, muss es in diesen bereits sehr dichten Raum eindringen. Es erfährt starke Abstoßung durch die sieben vorhandenen Elektronen. Diese Abstoßung verringert den Energiegewinn.
+
+...
+
+Chlor ist größer, mit 99 Pikometer Radius. Die Elektronen verteilen sich auf größerem Raum. Geringere Ladungsdichte bedeutet weniger Abstoßung für das neue Elektron. Mehr Energie wird netto freigesetzt.
+
+...
+
+Chlor ist also der Rekordhalter der Elektronenaffinität, nicht Fluor! Bei Fluor ist die Abstoßung durch die kompakte Elektronenhülle so stark, dass sie den Vorteil der höheren Kernladung überkompensiert.

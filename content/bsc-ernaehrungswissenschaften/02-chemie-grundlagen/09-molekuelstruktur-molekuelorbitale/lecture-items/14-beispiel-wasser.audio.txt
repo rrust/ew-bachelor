@@ -1,0 +1,15 @@
+Wasser... ein einfaches Molekül, aber strukturell faszinierend.
+
+Sauerstoff hat sechs Valenzelektronen. Dazu kommen zwei von den beiden Wasserstoffatomen. Das macht acht Elektronen... also vier Paare.
+
+Aber diesmal: Nur zwei Paare sind bindend, und zwei sind frei...
+
+Die Elektronengeometrie ist wieder tetraedrisch... vier Paare ordnen sich immer tetraedrisch an.
+
+Aber die Molekülgeometrie? Mit zwei freien Paaren sehen wir nur noch zwei Atome am Zentralatom. Das ergibt eine gewinkelte Struktur...
+
+Der Bindungswinkel ist deutlich kleiner als beim Tetraeder. Er beträgt nur 104,5 Grad.
+
+Vergleichen wir die Reihe: Methan mit vier bindenden und null freien Paaren hat 109,5 Grad... Ammoniak mit drei bindenden und einem freien Paar hat 107 Grad... Und Wasser mit zwei bindenden und zwei freien Paaren hat 104,5 Grad.
+
+Der Trend ist klar: Je mehr freie Elektronenpaare, desto kleiner werden die Bindungswinkel.

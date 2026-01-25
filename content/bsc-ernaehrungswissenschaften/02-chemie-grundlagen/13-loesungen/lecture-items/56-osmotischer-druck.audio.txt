@@ -1,0 +1,21 @@
+Der osmotische Druck ist überraschend hoch. Eine einmolare Lösung erzeugt fast 25 Atmosphären!
+
+...
+
+Der osmotische Druck, Symbol Pi, ist der Druck, den man aufwenden muss, um den Wasserfluss durch eine semipermeable Membran zu stoppen.
+
+Die Formel ähnelt dem idealen Gasgesetz. Pi gleich c mal R mal T.
+
+c ist die Molarität, R die Gaskonstante, null Komma null acht zwei eins Liter-Atmosphäre pro Kelvin-Mol, und T die Temperatur in Kelvin.
+
+...
+
+Bei Elektrolyten kommt der Van't Hoff Faktor dazu. Pi gleich i mal c mal R mal T.
+
+...
+
+Rechnen wir ein Beispiel. Bei 25 Grad Celsius, also 298 Kelvin, und einer Konzentration von einem Mol pro Liter:
+
+Pi gleich eins mal null Komma null acht zwei eins mal 298, das ergibt 24 Komma fünf Atmosphären.
+
+Das entspricht einer Wassersäule von etwa 250 Metern! Osmotischer Druck ist eine gewaltige Kraft.

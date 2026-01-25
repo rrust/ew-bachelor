@@ -1,0 +1,19 @@
+Das Bohr-Modell war ein Durchbruch. Aber es hat seine Grenzen.
+
+...
+
+Was kann das Modell? Es erklärt das Linienspektrum des Wasserstoffs exakt. Es führt das Konzept quantisierter Energieniveaus ein. Es erklärt, warum Atome nicht kollabieren. Und es sagt die richtige Ionisierungsenergie für Wasserstoff voraus.
+
+...
+
+Aber was kann es nicht? Es funktioniert nur für Systeme mit einem Elektron. Wasserstoff, Helium plus, Lithium zwei plus. Bei Atomen mit mehreren Elektronen versagt es.
+
+Und es widerspricht einem fundamentalen Prinzip, das wir gleich kennenlernen werden: der Heisenberg'schen Unschärferelation. Elektronen auf festen Bahnen sind physikalisch nicht haltbar.
+
+...
+
+Das Bohr-Modell behandelt Elektronen wie kleine Planeten auf Umlaufbahnen. Aber die Quantenmechanik zeigte später: Elektronen haben Wellencharakter. Sie können nicht auf exakte Bahnen festgelegt werden.
+
+Die Lösung kam durch die Wellenmechanik. Statt Bahnen gibt es Orbitale. Statt exakter Positionen gibt es Wahrscheinlichkeitswolken.
+
+Bohr war ein wichtiges Sprungbrett, aber nicht das letzte Wort.

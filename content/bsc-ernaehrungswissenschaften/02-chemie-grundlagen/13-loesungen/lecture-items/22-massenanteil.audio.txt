@@ -1,0 +1,17 @@
+Zehn Prozent, fünf Prozent, null Komma neun Prozent. Der Massenanteil ist wahrscheinlich das bekannteste Konzentrationsmaß im Alltag.
+
+...
+
+Die Rechnung ist einfach. Du teilst die Masse des gelösten Stoffes durch die Gesamtmasse der Lösung und multiplizierst mit hundert.
+
+Die Gesamtmasse ist die Summe aus gelöstem Stoff und Lösungsmittel.
+
+...
+
+Physiologische Kochsalzlösung hat null Komma neun Prozent Natriumchlorid. Haushaltsessig enthält etwa fünf Prozent Essigsäure. Konzentrierte Schwefelsäure hat 98 Prozent.
+
+...
+
+Aber Vorsicht! Der Massenanteil sagt nichts über die Stoffmenge aus. Zehn Prozent Glucose sind nicht das Gleiche wie zehn Prozent Natriumchlorid.
+
+Glucose hat eine molare Masse von 180 Gramm pro Mol, Natriumchlorid nur 58. Bei gleichem Massenanteil enthält die Salzlösung also viel mehr Teilchen. Das wird wichtig, wenn wir über kolligative Eigenschaften sprechen.
