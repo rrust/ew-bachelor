@@ -966,6 +966,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       lectureTopic: lecture?.topic || currentLectureId
     });
 
+    // Get studyId from settings for audio URLs
+    const settings = getAppSettings();
+    const activeStudyId = settings.activeStudyId;
+
     window.LectureModule.showLectureOverview(
       currentModuleId,
       currentLectureId,
@@ -991,7 +995,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           `/module/${currentModuleId}/lecture/${currentLectureId}/item/${lectureState.currentIndex}`,
           document.title.split(' - ')[0]
         );
-      }
+      },
+      activeStudyId
     );
   }
 

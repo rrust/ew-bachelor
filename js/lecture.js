@@ -1006,6 +1006,7 @@ function updateLectureNav(
  * @param {Object} elements - DOM elements
  * @param {Function} updateURL - URL update function
  * @param {Function} startLectureAtIndex - Function to start at specific index
+ * @param {string} studyId - Study ID for building asset paths
  */
 function showLectureOverview(
   currentModuleId,
@@ -1015,7 +1016,8 @@ function showLectureOverview(
   lectureState,
   elements,
   updateURL,
-  startLectureAtIndex
+  startLectureAtIndex,
+  studyId = null
 ) {
   const overviewContent = document.getElementById('lecture-overview-content');
   const overviewTitle = document.getElementById('lecture-overview-title');
@@ -1171,10 +1173,36 @@ function showLectureOverview(
   }
   overviewDescription.textContent = descriptionText;
 
+  // Helper to extract YouTube video ID
+  function getYouTubeVideoId(url) {
+    if (!url) return null;
+    try {
+      const urlObj = new URL(url);
+      return urlObj.searchParams.get('v') || url.split('/').pop();
+    } catch {
+      return url.split('/').pop();
+    }
+  }
+
+  // Helper to build audio URL for an item
+  function getItemAudioUrl(item) {
+    if (!item.audioFile || !studyId) return null;
+    return item.audioFile === 'lecture.mp3'
+      ? `content/${studyId}/${currentModuleId}/${currentLectureId}/${item.audioFile}`
+      : `content/${studyId}/${currentModuleId}/${currentLectureId}/lecture-items/${item.audioFile}`;
+  }
+
   lectureState.currentItems.forEach((item, index) => {
     const card = document.createElement('div');
-    card.className =
-      'bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow cursor-pointer';
+
+    // Check if this is an embedded media item
+    const isYouTubeVideo = item.type === 'youtube-video';
+    const hasAudio = item.audioFile && studyId;
+
+    // Compact styling - less padding, smaller fonts
+    card.className = isYouTubeVideo
+      ? 'bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden'
+      : 'bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow cursor-pointer';
 
     let typeLabel = '';
     let badgeClass = '';
@@ -1273,24 +1301,68 @@ function showLectureOverview(
         preview = 'Unbekannter Inhaltstyp';
     }
 
-    card.innerHTML = `
-      <div class="flex items-start justify-between mb-3">
-        <span class="text-xs font-semibold px-2 py-1 rounded-full ${badgeClass}">${typeLabel}</span>
-        <span class="text-sm text-gray-500 dark:text-gray-400">Schritt ${
-          index + 1
-        }</span>
-      </div>
-      <h3 class="text-lg font-semibold mb-2">${preview}</h3>
-      ${
-        description
-          ? `<p class="text-sm text-gray-600 dark:text-gray-400">${description}</p>`
-          : ''
-      }
-    `;
-
-    card.addEventListener('click', () => {
-      startLectureAtIndex(index);
-    });
+    // Build card content based on type
+    if (isYouTubeVideo) {
+      // Compact YouTube thumbnail card
+      const videoId = getYouTubeVideoId(item.url);
+      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+      card.className = 'bg-white dark:bg-gray-800 rounded-lg shadow-md p-3 hover:shadow-lg transition-shadow cursor-pointer';
+      card.innerHTML = `
+        <div class="flex items-center gap-3">
+          <div class="relative flex-shrink-0 w-24 h-14 rounded overflow-hidden bg-gray-200 dark:bg-gray-700">
+            <img src="${thumbnailUrl}" alt="Video Thumbnail" class="w-full h-full object-cover">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+              <svg class="w-8 h-8 text-white drop-shadow-lg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-full ${badgeClass}">${typeLabel}</span>
+              <span class="text-xs text-gray-400">Schritt ${index + 1}</span>
+            </div>
+            <p class="text-sm font-medium truncate">${preview}</p>
+          </div>
+        </div>
+      `;
+      card.addEventListener('click', () => startLectureAtIndex(index));
+    } else if (hasAudio && item.type === 'learning-content') {
+      // Learning content with mini audio player
+      const audioUrl = getItemAudioUrl(item);
+      card.innerHTML = `
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full ${badgeClass}">${typeLabel}</span>
+            <span class="text-xs text-gray-400">Schritt ${index + 1}</span>
+          </div>
+        </div>
+        <p class="text-sm font-medium mb-2 line-clamp-2">${preview}</p>
+        <div class="flex items-center gap-2 bg-gray-50 dark:bg-gray-700/50 rounded-lg p-2" onclick="event.stopPropagation()">
+          <span class="text-lg">🎧</span>
+          <audio controls class="h-8 flex-1 min-w-0" preload="metadata" style="height: 32px;">
+            <source src="${audioUrl}" type="audio/mpeg">
+          </audio>
+        </div>
+      `;
+      card.addEventListener('click', (e) => {
+        if (!e.target.closest('audio')) {
+          startLectureAtIndex(index);
+        }
+      });
+    } else {
+      // Compact standard card
+      card.innerHTML = `
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 min-w-0 flex-1">
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full ${badgeClass} flex-shrink-0">${typeLabel}</span>
+            <span class="text-sm font-medium truncate">${preview}</span>
+          </div>
+          <span class="text-xs text-gray-400 flex-shrink-0 ml-2">Schritt ${index + 1}</span>
+        </div>
+      `;
+      card.addEventListener('click', () => startLectureAtIndex(index));
+    }
 
     overviewContent.appendChild(card);
   });
