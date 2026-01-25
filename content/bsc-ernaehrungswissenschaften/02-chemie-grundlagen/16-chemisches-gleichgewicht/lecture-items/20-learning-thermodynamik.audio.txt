@@ -1,0 +1,27 @@
+Thermodynamik und Gleichgewicht.
+
+Die Gleichgewichtskonstante K ist direkt mit der freien Standardenthalpie Delta G Null verknüpft.
+
+...
+
+Die fundamentale Gleichung lautet: Delta G Null gleich minus R T mal natürlicher Logarithmus von K.
+
+R ist die Gaskonstante, 8 Komma 314 Joule pro Mol Kelvin. T ist die absolute Temperatur in Kelvin.
+
+...
+
+Der Zusammenhang in Zahlen bei 25 Grad Celsius:
+
+Wenn K gleich 10 hoch 6 ist, ist Delta G Null etwa minus 34 Kilojoule pro Mol... stark exergon.
+
+Wenn K gleich 1 ist, ist Delta G Null gleich Null... Gleichgewicht.
+
+Wenn K gleich 10 hoch minus 6 ist, ist Delta G Null etwa plus 34 Kilojoule pro Mol... stark endergon.
+
+...
+
+Ein praktisches Beispiel: Für eine Reaktion mit K gleich 100 bei 25 Grad ergibt sich Delta G Null gleich minus 11 Komma 4 Kilojoule pro Mol. Negatives Delta G bedeutet, die Reaktion ist thermodynamisch begünstigt.
+
+...
+
+Aber Vorsicht! K sagt nichts über die Geschwindigkeit. Eine Reaktion kann ein sehr großes K haben und trotzdem extrem langsam sein. Das beste Beispiel: Diamant zu Graphit ist thermodynamisch begünstigt, aber dauert Millionen Jahre.

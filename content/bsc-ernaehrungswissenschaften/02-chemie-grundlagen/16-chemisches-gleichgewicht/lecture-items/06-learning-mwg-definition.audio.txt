@@ -1,0 +1,31 @@
+Das Massenwirkungsgesetz.
+
+Das Massenwirkungsgesetz beschreibt quantitativ, wie die Konzentrationen von Edukten und Produkten im Gleichgewicht zusammenhängen.
+
+...
+
+Die allgemeine Formel lautet: K c gleich Produkte hoch ihre Koeffizienten, geteilt durch Edukte hoch ihre Koeffizienten.
+
+...
+
+Es gibt drei goldene Regeln.
+
+Erstens: Produkte stehen im Zähler, also oben.
+
+Zweitens: Edukte stehen im Nenner, also unten.
+
+Drittens: Die stöchiometrischen Koeffizienten werden zu Exponenten.
+
+...
+
+Ein Beispiel: Zwei N O zwei reagiert zu N zwei O vier.
+
+Der Gleichgewichtsausdruck lautet: K c gleich die Konzentration von N zwei O vier, geteilt durch die Konzentration von N O zwei zum Quadrat. Beachte... die Zwei vor N O zwei wird zum Exponenten!
+
+...
+
+Wichtige Eigenschaften von K: K ist temperaturabhängig... bei anderer Temperatur hat K einen anderen Wert. Aber K ändert sich nicht bei Konzentrationsänderungen und nicht durch Katalysatoren.
+
+...
+
+Was sagt der Wert von K aus? Wenn K viel größer als eins ist, dominieren Produkte. Wenn K viel kleiner als eins ist, dominieren Edukte. Wenn K ungefähr eins ist, liegen ähnliche Mengen von beiden vor.

@@ -1,0 +1,23 @@
+Heterogene Gleichgewichte.
+
+Bei heterogenen Gleichgewichten sind die Reaktionspartner in verschiedenen Phasen vorhanden... zum Beispiel fest, flüssig oder gasförmig.
+
+...
+
+Die wichtigste Regel lautet: Reine Feststoffe und reine Flüssigkeiten tauchen nicht im Gleichgewichtsausdruck auf!
+
+Warum? Ihre Konzentration ist konstant und wird in die Gleichgewichtskonstante eingerechnet.
+
+...
+
+Ein Beispiel: Kalkzersetzung. Calciumcarbonat zerfällt zu Calciumoxid und C O zwei. Da Calciumcarbonat und Calciumoxid Feststoffe sind, werden sie weggelassen. K c ist einfach gleich der Konzentration von C O zwei.
+
+...
+
+Ein anderes Beispiel: Ammoniak in Wasser. Wasser als reines Lösungsmittel wird weggelassen. Im K-Ausdruck erscheinen nur die gelösten Teilchen: Ammonium, Hydroxid und Ammoniak.
+
+...
+
+Die Regel zusammengefasst: Gase und gelöste Stoffe kommen in den K-Ausdruck. Feststoffe und reine Flüssigkeiten nicht.
+
+Merkhilfe: Nur was sich in der Konzentration ändern kann, kommt in den K-Ausdruck!

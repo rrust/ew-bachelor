@@ -1,0 +1,37 @@
+Die ICE-Tabelle.
+
+Die ICE-Methode ist ein systematischer Ansatz zur Berechnung von Gleichgewichtskonzentrationen.
+
+...
+
+Was bedeutet ICE?
+
+I steht für Initial... die Anfangskonzentrationen.
+
+C steht für Change... die Änderung während der Reaktion.
+
+E steht für Equilibrium... die Gleichgewichtskonzentrationen.
+
+...
+
+Schauen wir uns ein Beispiel an. H zwei plus I zwei reagiert zu 2 H I. K c ist 55 Komma 3.
+
+Am Anfang haben wir je 1 Molar H zwei und I zwei, aber kein H I.
+
+...
+
+Schritt 1: Wir stellen die ICE-Tabelle auf. In der Change-Zeile schreiben wir minus x für die Edukte und plus 2 x für das Produkt... wegen der Stöchiometrie.
+
+Schritt 2: Wir setzen in K c ein. 55 Komma 3 gleich 2 x zum Quadrat geteilt durch 1 minus x zum Quadrat.
+
+Schritt 3: Da beide Seiten Quadrate sind, können wir die Wurzel ziehen.
+
+Schritt 4: Wir lösen nach x auf und erhalten x gleich 0 Komma 79.
+
+...
+
+Die Gleichgewichtskonzentrationen sind: H zwei und I zwei jeweils 0 Komma 21 Molar. H I ist 1 Komma 58 Molar.
+
+...
+
+Wichtige Tipps: Edukte nehmen ab mit minus, Produkte nehmen zu mit plus. Die Änderungen müssen im richtigen stöchiometrischen Verhältnis stehen.

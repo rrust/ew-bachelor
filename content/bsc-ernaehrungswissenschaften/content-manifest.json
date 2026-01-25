@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-25T10:20:38.667Z",
+  "generatedAt": "2026-01-25T10:41:35.142Z",
   "lectures": {
     "01-ernaehrungslehre-grundlagen/01-grundlagen-zellbiologie": {
       "checksum": "095b7bca",
@@ -140,6 +140,16 @@
       "topic": "Lösungen",
       "description": "Eigenschaften von Lösungen, Konzentrationsmaße, Thermodynamik des Lösungsprozesses, kolligative Eigenschaften und Osmose",
       "estimatedTime": 120,
+      "version": "1.0.0"
+    },
+    "02-chemie-grundlagen/16-chemisches-gleichgewicht": {
+      "checksum": "2800edd9",
+      "sizeKB": 56,
+      "itemCount": 37,
+      "quizCount": 12,
+      "topic": "Chemisches Gleichgewicht",
+      "description": "Massenwirkungsgesetz, Reaktionsquotient, ICE-Tabellen, Le Chatelier, Haber-Bosch",
+      "estimatedTime": 90,
       "version": "1.0.0"
     },
     "02-chemie-grundlagen/17-saeuren-basen": {

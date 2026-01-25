@@ -1,0 +1,31 @@
+Manipulation von Gleichgewichtskonstanten.
+
+Wenn Reaktionsgleichungen verändert werden, ändern sich auch die K-Werte nach bestimmten Regeln.
+
+...
+
+Regel 1: Umkehrung der Reaktion.
+
+Wenn die Reaktion umgekehrt wird, wird K zum Kehrwert. Aus A nach B mit K gleich 4 wird B nach A mit K gleich ein Viertel, also 0 Komma 25.
+
+...
+
+Regel 2: Multiplikation der Koeffizienten.
+
+Wenn alle Koeffizienten mit n multipliziert werden, wird K zur n-ten Potenz erhoben. Verdoppelt man die Koeffizienten, quadriert man K. Aus K gleich 4 wird K gleich 16.
+
+...
+
+Regel 3: Addition von Reaktionen.
+
+Wenn zwei Reaktionen addiert werden, werden die K-Werte multipliziert. K gesamt gleich K 1 mal K 2.
+
+...
+
+Ein praktisches Beispiel: Die Ammoniaksynthese hat K gleich 6 mal 10 hoch 5.
+
+Gesucht ist K für die Rückreaktion mit halbierten Koeffizienten.
+
+Erst umkehren: K Strich gleich 1 durch 6 mal 10 hoch 5.
+
+Dann halbieren, also die Wurzel ziehen: K neu gleich 1 Komma 3 mal 10 hoch minus 3.

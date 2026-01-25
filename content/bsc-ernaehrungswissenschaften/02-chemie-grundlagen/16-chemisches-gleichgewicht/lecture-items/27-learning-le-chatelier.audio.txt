@@ -1,0 +1,27 @@
+Das Prinzip von Le Chatelier.
+
+Le Chatelier, auch Prinzip des kleinsten Zwanges genannt, beschreibt wie ein System im Gleichgewicht auf äußere Störungen reagiert.
+
+...
+
+Die Grundregel lautet: Wenn ein System im Gleichgewicht gestört wird, verschiebt sich das Gleichgewicht so, dass es der Störung entgegenwirkt.
+
+Das System wehrt sich gegen die Änderung!
+
+...
+
+Ein Gleichgewicht kann durch drei Faktoren gestört werden:
+
+Erstens durch Konzentration... Zugabe oder Entfernen von Stoffen.
+
+Zweitens durch Druck oder Volumen... das gilt nur bei Gasreaktionen.
+
+Drittens durch Temperatur... Erwärmen oder Abkühlen.
+
+...
+
+Wichtiger Unterschied: Bei Konzentrations- und Druckänderungen bleibt K gleich. Aber bei Temperaturänderungen ändert sich K!
+
+...
+
+Eine Analogie: Le Chatelier funktioniert wie die Homöostase im Körper. Körpertemperatur steigt... Schwitzen beginnt als Gegenwirkung. Blutzucker sinkt... Hungergefühl entsteht. Das chemische System verhält sich ähnlich... es versucht, die Störung auszugleichen.

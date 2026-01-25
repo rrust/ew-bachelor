@@ -1,0 +1,19 @@
+Dynamischer Charakter und Reversibilität.
+
+Das chemische Gleichgewicht hat drei fundamentale Eigenschaften.
+
+...
+
+Erstens: Es ist dynamisch. Ein Gleichgewicht ist nicht statisch. Auf molekularer Ebene passiert ständig etwas. Edukte reagieren zu Produkten, und gleichzeitig reagieren Produkte zurück zu Edukten. Beide Reaktionen laufen gleich schnell ab. Deshalb bleiben die Konzentrationen konstant.
+
+...
+
+Zweitens: Es ist reversibel. Das bedeutet umkehrbar. Das Gleichgewicht kann von beiden Seiten erreicht werden. Egal ob du mit Edukten oder Produkten startest... das System stellt sich auf dasselbe Gleichgewicht ein.
+
+...
+
+Drittens: Konstante makroskopische Eigenschaften. Im Gleichgewicht bleiben messbare Größen konstant... Konzentrationen, Farbe, Druck oder pH-Wert.
+
+...
+
+Eine gute Analogie: Ein dynamisches Gleichgewicht ist wie zwei gleich starke Teams beim Tauziehen. Beide ziehen mit voller Kraft, aber das Seil bewegt sich nicht.

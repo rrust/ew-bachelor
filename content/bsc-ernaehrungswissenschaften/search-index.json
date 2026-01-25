@@ -1,6 +1,6 @@
 {
   "studyId": "bsc-ernaehrungswissenschaften",
-  "generatedAt": "2026-01-25T10:20:38.956Z",
+  "generatedAt": "2026-01-25T10:41:35.542Z",
   "entries": [
     {
       "moduleId": "01-ernaehrungslehre-grundlagen",
@@ -8976,6 +8976,495 @@
           "index": 75,
           "type": "self-assessment",
           "title": "Bin ich bereit für den Vorlesungs-Test?",
+          "typeKeywords": [
+            "selbsttest",
+            "checkliste",
+            "assessment"
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": "02-chemie-grundlagen",
+      "lectureId": "16-chemisches-gleichgewicht",
+      "topic": "Chemisches Gleichgewicht",
+      "description": "Massenwirkungsgesetz, Reaktionsquotient, ICE-Tabellen, Le Chatelier, Haber-Bosch",
+      "topics": [
+        "Chemisches Gleichgewicht"
+      ],
+      "keywords": [
+        "chemisches",
+        "gleichgewicht",
+        "massenwirkungsgesetz",
+        "reaktionsquotient",
+        "icetabellen",
+        "chatelier",
+        "haberbosch",
+        "viele",
+        "chemische",
+        "reaktionen",
+        "laufen",
+        "vollständig",
+        "stattdessen",
+        "stellt",
+        "zustand",
+        "sowohl",
+        "edukte",
+        "produkte",
+        "gleichzeitig",
+        "vorliegen",
+        "heißt",
+        "warum",
+        "betrachten",
+        "bildung",
+        "stickstoffdioxid",
+        "beim",
+        "öffnen",
+        "entweicht",
+        "gas",
+        "gestört",
+        "weiteres",
+        "flüssigkeit",
+        "flasche",
+        "sprudelt",
+        "wichtige",
+        "erkenntnis",
+        "bedeutet",
+        "nichts",
+        "passiert",
+        "weiter",
+        "hin",
+        "rückreaktion",
+        "heben",
+        "gegenseitig",
+        "dynamischer",
+        "charakter",
+        "reversibilität",
+        "drei",
+        "fundamentale",
+        "eigenschaften",
+        "statischen",
+        "unterscheiden",
+        "dynamisch",
+        "statisch",
+        "molekularer",
+        "ebene",
+        "ständig",
+        "etwas",
+        "reagieren",
+        "produkten",
+        "hinreaktion",
+        "zurück",
+        "edukten",
+        "beide",
+        "gleich",
+        "schnell",
+        "konzentrationen",
+        "bleiben",
+        "konstant",
+        "abbau",
+        "waage",
+        "halten",
+        "reversibel",
+        "umkehrbar",
+        "beiden",
+        "seiten",
+        "erreicht",
+        "startbedingung",
+        "ergebnis",
+        "vorhanden",
+        "reaktion",
+        "läuft",
+        "rechts",
+        "links",
+        "beliebige",
+        "mischung",
+        "system",
+        "dasselbe",
+        "konstante",
+        "makroskopische",
+        "messbare",
+        "größen",
+        "farbe",
+        "farbigen",
+        "stoffen",
+        "druck",
+        "gasen",
+        "phwert",
+        "säurebasegleichgewichten",
+        "visualisierung"
+      ],
+      "snippet": "Chemisches Gleichgewicht Massenwirkungsgesetz, Reaktionsquotient, ICE-Tabellen, Le Chatelier, Haber-Bosch Was ist chemisches Gleichgewicht? Viele chemische Reaktionen laufen nicht vollständig ab. Stat...",
+      "itemCount": 37,
+      "quizCount": 12,
+      "items": [
+        {
+          "index": 0,
+          "type": "learning-content",
+          "title": "Item 1",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 1,
+          "type": "learning-content",
+          "title": "Item 2",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 2,
+          "type": "self-assessment-mc",
+          "title": "Welche Eigenschaft trifft auf ein chemisches System im Gleichgewicht zu?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 3,
+          "type": "learning-content",
+          "title": "Item 4",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 4,
+          "type": "youtube-video",
+          "title": "Item 5",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 5,
+          "type": "learning-content",
+          "title": "Item 6",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 6,
+          "type": "self-assessment-mc",
+          "title": "Wie lautet der Kc-Ausdruck für die Reaktion 2NO(g) + O₂(g) ⇌ 2NO₂(g)?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 7,
+          "type": "learning-content",
+          "title": "Item 8",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 8,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Regeln zum Massenwirkungsgesetz:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 9,
+          "type": "calculation",
+          "title": "Berechne Kc für die Reaktion PCl₅ ⇌ PCl₃ + Cl₂, wenn im Gleichgewicht folgende Konzentrationen vorliegen: [PCl₅] = 0,028 M, [PCl₃] = 0,172 M, [Cl₂] = 0,086 M.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 10,
+          "type": "youtube-video",
+          "title": "Item 11",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 11,
+          "type": "learning-content",
+          "title": "Item 12",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 12,
+          "type": "self-assessment-mc",
+          "title": "Wenn Q > K ist, in welche Richtung läuft die Reaktion?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 13,
+          "type": "learning-content",
+          "title": "Item 14",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 14,
+          "type": "matching",
+          "title": "Ordne die Buchstaben der ICE-Tabelle ihrer Bedeutung zu:",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 15,
+          "type": "calculation",
+          "title": "Für die Reaktion A ⇌ B gilt K = 9. Startkonzentrationen: [A] = 1,0 M, [B] = 0 M. Berechne die Gleichgewichtskonzentration von B.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 16,
+          "type": "calculation",
+          "title": "Für N₂O₄(g) ⇌ 2NO₂(g) gilt Kc = 0,0059. Startkonzentration: [N₂O₄] = 0,50 M, [NO₂] = 0 M. Berechne die Gleichgewichtskonzentration von NO₂ (in M).",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 17,
+          "type": "learning-content",
+          "title": "Item 18",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 18,
+          "type": "self-assessment-mc",
+          "title": "Ein K-Wert von 10¹⁰ bedeutet:",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 19,
+          "type": "learning-content",
+          "title": "Item 20",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 20,
+          "type": "learning-content",
+          "title": "Item 21",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 21,
+          "type": "fill-in-the-blank",
+          "title": "Ergänze die Regeln zur Manipulation von K:",
+          "typeKeywords": [
+            "lückentext",
+            "übung",
+            "ausfüllen"
+          ]
+        },
+        {
+          "index": 22,
+          "type": "learning-content",
+          "title": "Item 23",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 23,
+          "type": "self-assessment-mc",
+          "title": "Für die Reaktion H₂(g) + I₂(g) ⇌ 2HI(g) ist Δn:",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 24,
+          "type": "calculation",
+          "title": "Für PCl₅(g) ⇌ PCl₃(g) + Cl₂(g) ist Kc = 0,042 bei 500 K. Berechne Kp. (R = 0,0821 L·atm/(mol·K))",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 25,
+          "type": "learning-content",
+          "title": "Item 26",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 26,
+          "type": "learning-content",
+          "title": "Item 27",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 27,
+          "type": "self-assessment-mc",
+          "title": "Die Reaktion A(g) + B(g) ⇌ C(g) ist exotherm. Was passiert bei Temperaturerhöhung?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 28,
+          "type": "matching",
+          "title": "Ordne die Störung der Reaktion des Systems zu (für die Reaktion N₂ + 3H₂ ⇌ 2NH₃ + Wärme):",
+          "typeKeywords": [
+            "zuordnung",
+            "matching",
+            "übung"
+          ]
+        },
+        {
+          "index": 29,
+          "type": "learning-content",
+          "title": "Item 30",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 30,
+          "type": "youtube-video",
+          "title": "Item 31",
+          "typeKeywords": [
+            "video",
+            "youtube",
+            "film",
+            "clip"
+          ]
+        },
+        {
+          "index": 31,
+          "type": "learning-content",
+          "title": "Item 32",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 32,
+          "type": "self-assessment-mc",
+          "title": "Warum arbeitet das Haber-Bosch-Verfahren bei hohem Druck?",
+          "typeKeywords": [
+            "selbsttest",
+            "quiz",
+            "frage"
+          ]
+        },
+        {
+          "index": 33,
+          "type": "practice-exercise",
+          "title": "Optimierung der Ammoniaksynthese",
+          "typeKeywords": [
+            "übung",
+            "praxis",
+            "aufgabe"
+          ]
+        },
+        {
+          "index": 34,
+          "type": "learning-content",
+          "title": "Item 35",
+          "typeKeywords": [
+            "lerninhalt",
+            "inhalt",
+            "text"
+          ]
+        },
+        {
+          "index": 35,
+          "type": "calculation",
+          "title": "Ein System A ⇌ B ist im Gleichgewicht mit [A] = 0,20 M und [B] = 0,80 M (K = 4). Nun werden 0,30 M von A zugegeben. Berechne die neue Gleichgewichtskonzentration von B.",
+          "typeKeywords": [
+            "berechnung",
+            "rechnung",
+            "formel"
+          ]
+        },
+        {
+          "index": 36,
+          "type": "self-assessment",
+          "title": "Bist du bereit für den Test zum chemischen Gleichgewicht?",
           "typeKeywords": [
             "selbsttest",
             "checkliste",

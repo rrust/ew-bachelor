@@ -1,5 +1,14 @@
 # CONTENT_PLAN: Säuren und Basen (Kapitel 17)
 
+## Status
+
+| Schritt            | Status | Datum      | Details             |
+| ------------------ | ------ | ---------- | ------------------- |
+| Content generiert  | ✅      | 2026-01-25 | 39 Items, 12 Fragen |
+| Videos verifiziert | ✅      | 2026-01-25 | Alle funktionieren  |
+| Audio generiert    | ✅      | 2026-01-25 | 7 MP3s              |
+| PR gemerged        | ✅      | 2026-01-25 | Bereits auf main    |
+
 ## Abschnitt 1: Einführung und Definitionen
 
 | Nr  | Dateiname                        | Typ                | Beschreibung                                   |

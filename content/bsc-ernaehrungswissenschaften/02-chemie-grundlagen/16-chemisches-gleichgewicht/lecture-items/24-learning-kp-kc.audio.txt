@@ -1,0 +1,27 @@
+K p versus K c bei Gasgleichgewichten.
+
+Bei Reaktionen mit Gasen kann man die Gleichgewichtskonstante entweder mit Konzentrationen oder mit Partialdrücken ausdrücken.
+
+...
+
+K p ist die Druckform. Statt Konzentrationen verwendet man Partialdrücke in Atmosphären oder Bar.
+
+Der Zusammenhang zwischen K p und K c lautet: K p gleich K c mal R T hoch Delta n.
+
+...
+
+Delta n ist die Änderung der Molzahl an Gas. Man berechnet: Mol Gas Produkte minus Mol Gas Edukte.
+
+...
+
+Beispiele: Bei H zwei plus I zwei zu 2 H I ist Delta n gleich 2 minus 2 gleich 0.
+
+Bei der Ammoniaksynthese N zwei plus 3 H zwei zu 2 N H drei ist Delta n gleich 2 minus 4 gleich minus 2.
+
+...
+
+Wichtiger Sonderfall: Wenn Delta n gleich 0 ist, dann ist K p gleich K c. Das passiert wenn die Anzahl der Gasmoleküle auf beiden Seiten gleich ist.
+
+...
+
+Eine praktische Berechnung: Ammoniaksynthese bei 500 Kelvin mit K c gleich 6 mal 10 hoch minus 2. Delta n ist minus 2. Einsetzen ergibt K p gleich 3 Komma 6 mal 10 hoch minus 5.
