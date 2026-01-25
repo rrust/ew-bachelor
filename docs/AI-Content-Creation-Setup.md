@@ -16,94 +16,125 @@ Dieses Setup nutzt zwei kostenlose AI-Tools zur Erstellung von Lerninhalten:
 
 ---
 
-## Content-Struktur V4 (NEU)
+## Content-Struktur V4
 
 Jeder Abschnitt einer Vorlesung folgt dem Muster **Lernen → Überprüfen → Anwenden**:
 
-```text
-┌─────────────────────────────────────────────────────────────────────────┐
-│  ABSCHNITT                                                               │
-│  ├── 📚 Lerninhalte (learning-content)                                   │
-│  │       Theorie, Konzepte, Formeln                                     │
-│  │                                                                       │
-│  ├── ✅ Verständnis-Checks (direkt nach dem Lerninhalt)                  │
-│  │       • self-assessment-mc (einfache MC-Fragen)                      │
-│  │       • fill-in-the-blank (Lückentexte)                              │
-│  │       • matching (Zuordnungsaufgaben)                                │
-│  │       • ordering (Sortieraufgaben)                                   │
-│  │                                                                       │
-│  ├── 🧮 Praxis-Übung (practice-exercise, calculation)                   │
-│  │       Alltagsbezogene Anwendung des Gelernten                        │
-│  │                                                                       │
-│  └── 📺 Video (youtube-video)                                           │
-│          An thematisch passender Stelle                                 │
-└─────────────────────────────────────────────────────────────────────────┘
+### Abschnitts-Struktur
 
-Am Ende der Vorlesung:
-┌─────────────────────────────────────────────────────────────────────────┐
-│  📋 Selbsttest (self-assessment)                                         │
-│      Checkliste: Bin ich bereit für den Vorlesungs-Test?                │
-│                                                                         │
-│  📝 Vorlesungs-Test (questions/)                                         │
-│      12 schwierige multiple-choice-multiple Fragen                      │
-│      Nur Mehrfachauswahl! Universitäts-Prüfungsniveau                   │
-│                                                                         │
-│  🎓 Modul-Prüfungsfragen (module-exam/)                                  │
-│      2 sehr schwierige Transferfragen pro Vorlesung                     │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+| Phase            | Typ                  | Beschreibung                   |
+| ---------------- | -------------------- | ------------------------------ |
+| 📚 **Lernen**     | `learning-content`   | Theorie, Konzepte, Formeln     |
+| ✅ **Überprüfen** | `self-assessment-mc` | Einfache MC-Fragen             |
+|                  | `fill-in-the-blank`  | Lückentexte                    |
+|                  | `matching`           | Zuordnungsaufgaben             |
+|                  | `ordering`           | Sortieraufgaben                |
+| 🧮 **Anwenden**   | `practice-exercise`  | Alltagsbezogene Anwendung      |
+|                  | `calculation`        | Berechnungen                   |
+| 📺 **Video**      | `youtube-video`      | An thematisch passender Stelle |
+
+### Vorlesungs-Abschluss
+
+| Typ                 | Beschreibung                                    |
+| ------------------- | ----------------------------------------------- |
+| 📋 `self-assessment` | Checkliste: Bin ich bereit für den Test?        |
+| 📝 `questions/`      | 12 schwierige `multiple-choice-multiple` Fragen |
+| 🎓 `module-exam/`    | 2 sehr schwierige Transferfragen pro Vorlesung  |
 
 ---
 
-## Der Workflow (3 Phasen)
+## Der Workflow (3 Phasen + Automatisierung)
 
-⚠️ **WICHTIG: Alle 3 Phasen müssen in Reihenfolge durchgeführt werden!**
+Der gesamte Workflow ist weitgehend automatisiert. Es gibt nur **2 Stop-Points**, an denen manuelle Eingriffe nötig sind.
 
-```text
-┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 1: Rohmaterial zusammenstellen                                   │
-│  Tools: VS Code (Copilot) + Google AI Studio (Gemini Pro)               │
-│                                                                         │
-│  1a) Deep Research mit Web-Grounding → Vorlesung.md                     │
-│  1b) Video-Recherche:                                                   │
-│      - In VS Code: Copilot erstellt Video-Prompt für Gemini             │
-│      - In Gemini: Prompt mit Web-Grounding ausführen                    │
-│      - Ergebnis als Videos.md speichern + oEmbed verifizieren           │
-│                                                                         │
-│  → Speichern in: studies-material/{studyId}/NN-modul/NN-vorlesung/      │
-└───────────────────────────────┬─────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 2: CONTENT_PLAN.md erstellen und verifizieren                    │
-│  Tool: VS Code (Copilot) + manuelle Prüfung                             │
-│  - Definiert EXAKT welche Dateien erstellt werden                       │
-│  - Dateinamen, Typen, Reihenfolge festlegen                             │
-│  - Videos aus Videos.md an passender Stelle einplanen                   │
-│  - Plan prüfen und bei Bedarf überarbeiten                              │
-│  - ERST NACH VERIFIZIERUNG zu Phase 3!                                  │
-│  → Speichern als: CONTENT_PLAN.md im Material-Ordner                    │
-└───────────────────────────────┬─────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  PHASE 3: Content EXAKT nach CONTENT_PLAN generieren                    │
-│  Tool: GitHub Copilot (Agent Mode) + Claude Opus 4                      │
-│  ⚠️ CONTENT_PLAN.md ist VERBINDLICH - keine eigene Struktur!            │
-│  - Jede Zeile im Plan = eine Datei erstellen                            │
-│  - Dateiname und Typ EXAKT wie im Plan                                  │
-│  - Videos aus Videos.md mit verifizierten URLs einbinden                │
-│  → Speichern in: content/{studyId}/NN-modul/NN-vorlesung/               │
-└───────────────────────────────┬─────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│  Commit & Push                                                          │
-│  - git add + commit + push                                              │
-│  - GitHub Action generiert automatisch alle JSON-Dateien                │
-│  - Validieren: Tools → "Inhalte validieren" in der App                  │
-└─────────────────────────────────────────────────────────────────────────┘
+### Workflow-Übersicht
+
+```mermaid
+flowchart TD
+    subgraph Phase1["Phase 1: Rohmaterial"]
+        A1[Deep Research mit Gemini] --> A2[Vorlesung.md erstellen]
+    end
+    
+    subgraph Phase2["Phase 2: Planung"]
+        B1[CONTENT_PLAN.md erstellen]
+        B1 --> B2[Plan prüfen]
+    end
+    
+    subgraph Phase3["Phase 3: Automatisierte Generierung"]
+        C1[Content + Videos generieren]
+        C1 --> C2{Videos OK?}
+        C2 -->|Ja| C3[Achievement + Build + Audio]
+        C2 -->|Nein| C4[🛑 Gemini: Ersatz-Videos]
+        C4 --> C2
+        C3 --> C5[CONTENT_PLAN Status ✅]
+    end
+    
+    subgraph Git["Git Workflow"]
+        G1[Branch erstellen]
+        G1 --> G2[Commit & PR]
+        G2 --> G3{Merge?}
+        G3 -->|User: Ja| G4[Merge & Cleanup]
+        G3 -->|User: Nein| G5[Review]
+        G5 --> G2
+    end
+    
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+    Phase3 --> Git
+    G4 --> Z[✅ Fertig]
 ```
+
+### Stop-Go Points
+
+| Phase | Stop-Point          | Grund                  | Aktion                          |
+| ----- | ------------------- | ---------------------- | ------------------------------- |
+| **3** | Video-Verifizierung | Videos nicht verfügbar | Gemini-Prompt für Ersatz-Videos |
+| **3** | Merge               | Qualitätsprüfung       | User muss explizit bestätigen   |
+
+Alle anderen Schritte laufen **automatisch** durch!
+
+### Phase 1: Rohmaterial zusammenstellen
+
+**Tools:** Google AI Studio (Gemini Pro)
+
+1. **Deep Research** mit Web-Grounding → `Vorlesung.md`
+
+**Speicherort:** `studies-material/{studyId}/NN-modul/NN-vorlesung/`
+
+> **Hinweis:** Video-Recherche ist NICHT mehr Teil von Phase 1. Der Copilot-Agent schlägt automatisch passende Videos vor (Schritt 3). Nur bei ungültigen Videos wird Gemini benötigt (Stop-Point in Schritt 5).
+
+### Phase 2: CONTENT_PLAN.md erstellen
+
+**Tool:** VS Code (Copilot) + manuelle Prüfung
+
+- Definiert **EXAKT** welche Dateien erstellt werden
+- Dateinamen, Typen, Reihenfolge festlegen
+- Video-Platzhalter an passenden Stellen einplanen (URLs werden automatisch gefunden)
+- Plan prüfen und bei Bedarf überarbeiten
+
+**Speicherort:** `CONTENT_PLAN.md` im Material-Ordner
+
+### Phase 3: Automatisierte Content-Generierung (10 Schritte)
+
+**Tool:** GitHub Copilot (Agent Mode) + Claude Opus 4
+
+Der Copilot-Agent führt diese Schritte automatisch aus:
+
+| Schritt | Beschreibung                    | Automatisch?      |
+| ------- | ------------------------------- | ----------------- |
+| 0       | Branch erstellen                | ✅                 |
+| 1       | Zielordner & CONTENT_PLAN lesen | ✅                 |
+| 2       | lecture.md erstellen            | ✅                 |
+| 3       | lecture-items/ erstellen        | ✅ (inkl. Videos)  |
+| 4       | questions/ erstellen            | ✅                 |
+| 5       | Videos verifizieren             | 🛑 Stop wenn nötig |
+| 6       | Achievement erstellen           | ✅                 |
+| 7       | Build & Validierung             | ✅                 |
+| 8       | Audio-Generierung               | ✅                 |
+| 9       | Git Commit & PR                 | ✅                 |
+| 10      | Merge nach Approval             | 🛑 Stop            |
+
+**Detaillierte Dokumentation:** Siehe [.github/copilot/content-generation.md](../.github/copilot/content-generation.md)
 
 ---
 
@@ -144,111 +175,59 @@ Anforderungen:
 
 ---
 
-## Video-Recherche Workflow
+## Fallback: Video-Ersatz mit Gemini
 
-**Zweck:** Passende YouTube-Videos für jede Vorlesung finden und verifizieren
+> **Hinweis:** Dieser Schritt ist nur nötig, wenn die automatisch vorgeschlagenen Videos nicht funktionieren (Stop-Point in Schritt 5).
 
-### Workflow-Schritte
+Der Copilot-Agent schlägt automatisch passende YouTube-Videos vor und verifiziert sie mit oEmbed. Nur wenn Videos nicht verfügbar oder nicht einbettbar sind, wird dieser Gemini-Fallback benötigt.
 
-1. **In VS Code:** Copilot bitten, einen Video-Recherche-Prompt für die Vorlesung zu erstellen
-2. **In Google AI Studio:** Prompt mit Web-Grounding ausführen
-3. **Ergebnis:** Markdown-Tabelle kopieren und als `Videos.md` im Material-Ordner speichern
-4. **Verifizieren:** Jede Video-URL mit oEmbed-API prüfen (siehe unten)
+### Wann wird Gemini benötigt?
 
-### Schritt 1: Prompt generieren lassen (VS Code)
+| Situation                     | Aktion                          |
+| ----------------------------- | ------------------------------- |
+| Video HTTP 401/403/404        | Ersatz-Video mit Gemini suchen  |
+| simpleclub-Video erkannt      | Ersatz-Video mit Gemini suchen  |
+| Kein passendes Video gefunden | Gemini mit Web-Grounding nutzen |
 
-Öffne den CONTENT_PLAN.md der Vorlesung und sage zu Copilot:
+### Gemini-Prompt für Ersatz-Videos
 
-```text
-Gib mir bitte einen Video-Prompt für diese Vorlesung für Google Gemini
-```
-
-Copilot (mit Claude Sonnet/Opus) analysiert die Themen und erstellt einen passenden Recherche-Prompt.
-
-### Schritt 2: Gemini-Prompt ausführen
-
-Kopiere den generierten Prompt in Google AI Studio (mit **Web-Grounding aktiviert**).
-
-**Beispiel-Prompt-Struktur:**
+Kopiere diesen Prompt in Google AI Studio (mit **Web-Grounding aktiviert**):
 
 ```text
-Du bist ein Experte für Chemie-Didaktik und recherchierst YouTube-Videos für eine Lern-App.
+Ich brauche deutsche YouTube-Videos für eine universitäre Chemie-Vorlesung zum Thema "[THEMA]".
 
-## Aufgabe
-Finde passende deutschsprachige YouTube-Videos für die Vorlesung "[THEMA]".
+Zielgruppe: Studierende im 1. Semester Ernährungswissenschaften (Universität Wien)
 
-## Benötigte Videos
-
-### Video 1: [Thema]
-**Inhalt:** [Beschreibung der gewünschten Inhalte]
-
-### Video 2: [Thema]
-**Inhalt:** [Beschreibung der gewünschten Inhalte]
-
+Benötigte Themen:
+1. [Thema 1] - [Kurzbeschreibung]
+2. [Thema 2] - [Kurzbeschreibung]
 [...]
 
-## Anforderungen an Videos
-- ✅ Deutschsprachig
-- ✅ Max. 15 Minuten Länge (optimal: 5-10 Min.)
-- ✅ Gute Erklärungen für Studienanfänger
-- ✅ KEIN simpleclub (Embedding blockiert!)
-- ✅ Veröffentlicht nach 2018 (aktuelle Didaktik)
-- ✅ Ein Video pro Thema (keine Alternativen)
+BLACKLIST - Diese Kanäle NICHT verwenden (blockieren Embedding):
+- simpleclub (author_name enthält "simpleclub")
 
-## Ausgabeformat
-⚠️ WICHTIG: Gib das Ergebnis als kopierfähigen Markdown-Text aus!
+Bevorzugte Kanäle (Whitelist):
+- Lehrerschmidt
+- Die Merkhilfe
+- musstewissen Chemie
+- StudyTiger
 
-Beginne mit diesem Header:
+KRITISCH: oEmbed-Verifizierung
+Für jedes Video die API aufrufen:
+https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json
 
-# YouTube-Videos: [Vorlesungstitel]
+- HTTP 200 + JSON = verwendbar
+- Prüfe author_name auf "simpleclub" - wenn enthalten, ABLEHNEN!
 
-> **Status:** ⏳ oEmbed-Verifizierung ausstehend
->
-> **Hinweis:** KEINE simpleclub-Videos (Embedding blockiert)
-
----
-
-Dann für JEDES Video eine Tabelle im folgenden Format:
-
-## [Nummer]. [Thema]
-
-| Eigenschaft  | Wert                                       |
-| ------------ | ------------------------------------------ |
-| **Titel**    | [Exakter Titel des Videos]                 |
-| **Kanal**    | [Kanalname]                                |
-| **URL**      | https://www.youtube.com/watch?v=[VIDEO-ID] |
-| **Video-ID** | `[VIDEO-ID]`                               |
-| **Länge**    | [Minuten:Sekunden]                         |
-| **oEmbed**   | ⏳ zu verifizieren                          |
-
----
+Ausgabeformat als YAML:
+- thema: "1. [Thema]"
+  titel: "[Videotitel aus oEmbed]"
+  url: "https://www.youtube.com/watch?v=..."
+  kanal: "[author_name aus oEmbed]"
+  oembed_verified: true
 ```
 
-### Schritt 3: Videos.md speichern
-
-1. Kopiere den **kompletten Markdown-Text** aus Geminis Antwort
-2. Erstelle eine neue Datei: `studies-material/{studyId}/NN-modul/NN-vorlesung/Videos.md`
-3. Füge den Markdown-Text ein und speichere
-
-### Schritt 4: oEmbed-Verifizierung
-
-**JEDE Video-URL muss verifiziert werden!**
-
-```bash
-# Im Terminal ausführen:
-curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"
-```
-
-| Ergebnis         | Bedeutung                        |
-| ---------------- | -------------------------------- |
-| HTTP 200 + JSON  | ✅ Video verfügbar und einbettbar |
-| HTTP 401/403/404 | ❌ NICHT verwenden                |
-
-Aktualisiere `Videos.md` mit dem Verifizierungs-Status:
-
-```markdown
-| **oEmbed**   | ✓ verifiziert                          |
-```
+Nach Erhalt der Ersatz-URLs diese in die entsprechenden `youtube-video` Items eintragen und erneut `npm run validate:videos` ausführen.
 
 ---
 

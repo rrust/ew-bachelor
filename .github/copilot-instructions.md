@@ -19,15 +19,23 @@ Diese Regeln dürfen **NIEMALS** missachtet werden:
 
 ### Formatierung
 
-- **NIEMALS ASCII-Art oder Box-Zeichnungen** – Tabellen, Listen, Mermaid stattdessen
+- **NIEMALS ASCII-Art oder Box-Zeichnungen** – Tabellen, Listen, Mermaid oder SVG stattdessen
+- **Diagramme:** Mermaid ODER Inline-SVG (siehe unten)
 - **Mermaid:** Nur `flowchart`, `graph`, `sequenceDiagram`, `classDiagram`, `stateDiagram`
 - **Mermaid:** Max. 3-5 Wörter pro Box (Mobile!)
+- **Inline-SVG:** KEINE Zeilenumbrüche im `<svg>`-Tag – alles in einer Zeile!
+- **SVG-Beispiel:** `<svg viewBox="0 0 320 220" style="max-width: 400px; width: 100%;" aria-label="Beschreibung">...</svg>`
 - **MC-Antworten:** Korrekte Antwort NICHT systematisch die längste!
 
 ### KaTeX
 
 - **Aggregatzustände:** `\text{Na}_{\text{(s)}}` nicht `\text{Na}_{(s)}`
 - **Ionen mit Aggregatzuständen vermeiden** – `\text{Na}^+_{(aq)}` rendert nicht!
+
+### Video-Validierung
+
+- **IMMER `npm run validate:videos`** – NIEMALS manuelle curl-Befehle!
+- **Script findet alle Videos automatisch** – prüft oEmbed + simpleclub-Blacklist
 
 ## Spezialisierte Instruktionen
 
@@ -36,7 +44,7 @@ Detaillierte Anleitungen in `.github/copilot/`:
 | Datei                                                        | Thema                        |
 | ------------------------------------------------------------ | ---------------------------- |
 | [content-plan-creation.md](copilot/content-plan-creation.md) | CONTENT_PLAN.md erstellen    |
-| [content-generation.md](copilot/content-generation.md)       | **8-Schritte-Workflow**      |
+| [content-generation.md](copilot/content-generation.md)       | **10-Schritte-Workflow**     |
 | [content-verification.md](copilot/content-verification.md)   | **Vollständigkeits-Prüfung** |
 | [content-types.md](copilot/content-types.md)                 | YAML-Referenz aller Types    |
 | [validation.md](copilot/validation.md)                       | Validierungs-Befehle         |

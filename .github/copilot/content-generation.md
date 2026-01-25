@@ -1,22 +1,56 @@
 # Content Generation
 
-Inhalte aus CONTENT_PLAN generieren – **interaktiver Workflow mit Bestätigung nach jedem Schritt**.
+Inhalte aus CONTENT_PLAN generieren – **automatisierter Workflow mit definierten Stop-Go Points**.
 
-## Überblick: 8-Schritte-Workflow
+## Überblick: 10-Schritte-Workflow
 
 ```text
 Schritt 1: Zielordner & CONTENT_PLAN lesen
 Schritt 2: lecture.md erstellen
 Schritt 3: lecture-items/ erstellen
 Schritt 4: questions/ erstellen
-Schritt 5: Videos verifizieren          ← oEmbed-Prüfung!
-Schritt 6: Achievement erstellen         ← Cheat-Sheet!
+Schritt 5: Videos verifizieren          ← 🛑 STOP: Gemini für fehlende Videos!
+Schritt 6: Achievement erstellen
 Schritt 7: Build & Validierung
-Schritt 8: Audio-Generierung             ← TTS!
+Schritt 8: Audio-Generierung
+Schritt 9: CONTENT_PLAN Status-Update   ← Im studies-material/
+Schritt 10: Branch, Commit & PR         ← Git
+Schritt 11: Merge nach Approval         ← 🛑 STOP: User-Bestätigung!
 ```
 
-⚠️ **WICHTIG:** Nach jedem Schritt den User fragen:
-> "Schritt X abgeschlossen. Soll ich mit Schritt Y fortfahren?"
+### Stop-Go Points (manuelle Eingriffe nötig)
+
+| Schritt | Grund                  | Aktion                            |
+| ------- | ---------------------- | --------------------------------- |
+| **5**   | Videos nicht verfügbar | User muss Gemini-Prompt verwenden |
+| **11**  | Merge-Approval         | User muss explizit bestätigen     |
+
+Alle anderen Schritte laufen automatisch durch!
+
+## Prozess-Visualisierung
+
+```mermaid
+flowchart TD
+    A[Start: CONTENT_PLAN vorhanden] --> B[Schritte 1-4: Content generieren]
+    B --> C{Schritt 5: Videos OK?}
+    C -->|Ja| D[Schritte 6-8: Achievement, Build, Audio]
+    C -->|Nein| E[🛑 STOP: Gemini-Prompt]
+    E --> E2[User liefert Video-URLs]
+    E2 --> C
+    D --> F[Schritt 9: CONTENT_PLAN Status ✅]
+    
+    subgraph Git["Git Workflow"]
+        G[Schritt 10: Branch erstellen]
+        G --> H[Commit & PR]
+        H --> I{Schritt 11: Merge?}
+        I -->|User: Ja| J[Merge & Cleanup]
+        I -->|User: Nein| K[Review/Änderungen]
+        K --> H
+    end
+    
+    F --> Git
+    J --> L[✅ Fertig]
+```
 
 ## Schritt 1: Zielordner & CONTENT_PLAN
 
@@ -58,8 +92,6 @@ Der Plan definiert:
 - `Vorlesung.md` – Hauptinhalt mit Zitationen
 - `Videos.md` – Bereits verifizierte YouTube-Videos (falls vorhanden)
 
-> ✅ **Nachfragen:** "Zielordner und CONTENT_PLAN ermittelt. Soll ich mit der lecture.md fortfahren?"
-
 ## Schritt 2: lecture.md erstellen
 
 ```yaml
@@ -78,8 +110,6 @@ sources:
     type: 'book'
 ---
 ```
-
-> ✅ **Nachfragen:** "lecture.md erstellt. Soll ich die lecture-items generieren?"
 
 ## Schritt 3: lecture-items/ erstellen
 
@@ -134,8 +164,6 @@ VORLESUNGS-ENDE
 
 ⚠️ Videos NICHT am Ende sammeln – an thematisch passender Stelle!
 
-> ✅ **Nachfragen:** "Alle lecture-items erstellt. Soll ich die Quiz-Fragen generieren?"
-
 ## Schritt 4: questions/ erstellen
 
 Nur `multiple-choice-multiple` für Vorlesungs-Tests!
@@ -158,19 +186,27 @@ explanation: 'Ionenbindungen sind ungerichtet und entstehen zwischen Metallen un
 
 **Anzahl:** 12 Fragen pro Vorlesung
 
-> ✅ **Nachfragen:** "12 Quiz-Fragen erstellt. Soll ich die YouTube-Videos verifizieren?"
-
 ## Schritt 5: Videos verifizieren
 
 ⚠️ **KRITISCH:** Alle YouTube-Videos MÜSSEN vor dem Abschluss verifiziert werden!
 
 ### Video-Validierung ausführen
 
+**IMMER das Batch-Script verwenden – NIEMALS manuelle curl-Befehle!**
+
 ```bash
+# Nach Erstellung der Video-Items das Script ausführen:
 npm run validate:videos
-# oder für spezifisches Studium:
+
+# Für spezifische Vorlesung (prüft alle Videos im Studium):
 node scripts/validate-videos.js bsc-ernaehrungswissenschaften
 ```
+
+Das Script:
+- Findet automatisch alle `youtube-video` Items
+- Prüft jede URL via oEmbed API
+- Erkennt simpleclub-Videos (Blacklist)
+- Gibt klare Zusammenfassung mit ✅/❌ Status
 
 ### Ergebnis-Interpretation
 
@@ -272,8 +308,6 @@ Herzlichen Glückwunsch! Du hast das Quiz mit Gold-Status bestanden.
 - [ ] Inhalt ist kompakt und nützlich als Nachschlagewerk
 - [ ] Keine zu langen Tabellen (Mobile-Darstellung!)
 
-> ✅ **Nachfragen:** "Achievement erstellt. Soll ich Build und Validierung durchführen?"
-
 ## Schritt 7: Build & Validierung
 
 ```bash
@@ -300,8 +334,6 @@ node scripts/generate-test-progress.js
 - [ ] validate:videos alle ✅
 - [ ] markdownlint ohne Fehler
 - [ ] Im Browser getestet (Tools → Inhalte validieren)
-
-> ✅ **Nachfragen:** "Validierung erfolgreich. Soll ich die Audio-Dateien generieren?"
 
 ## Schritt 8: Audio-Generierung
 
@@ -345,7 +377,122 @@ npm run generate:audio -- --dry-run
 npm run build  # Registriert audioFile in Bundles
 ```
 
-> ✅ **Abschluss:** "Audio-Dateien generiert. Die Vorlesung ist vollständig!"
+> ✅ **Abschluss:** "Audio-Dateien generiert. Weiter mit Git-Workflow."
+
+## Schritt 9: CONTENT_PLAN Status-Update
+
+**VOR dem Git-Workflow** den CONTENT_PLAN im `studies-material/` Ordner aktualisieren:
+
+```markdown
+## Status
+
+| Schritt            | Status | Datum      | Details             |
+| ------------------ | ------ | ---------- | ------------------- |
+| Content generiert  | ✅      | 2026-01-25 | 37 Items, 12 Fragen |
+| Videos verifiziert | ✅      | 2026-01-25 | 3/4 funktionieren   |
+| Audio generiert    | ✅      | 2026-01-25 | 16 MP3s             |
+| PR gemerged        | ⏳      | -          | -                   |
+```
+
+> **Hinweis:** `PR gemerged` bleibt auf ⏳ bis der Merge erfolgt ist.
+
+## Schritt 10: Branch, Commit & PR
+
+### 10.1 Branch erstellen
+
+```bash
+# Auf main wechseln und aktualisieren
+git checkout main
+git pull
+
+# Feature-Branch erstellen
+git checkout -b content/NN-vorlesung-titel
+# Beispiel: content/16-chemisches-gleichgewicht
+```
+
+### 10.2 Atomic Commits erstellen
+
+```bash
+# Alle Änderungen prüfen
+git status
+
+# Atomic Commits nach Komponente
+git add content/{path}/lecture.md
+git commit -m "content: add lecture metadata for [Vorlesung]"
+
+git add content/{path}/lecture-items/
+git commit -m "content: add lecture items for [Vorlesung]"
+
+git add content/{path}/questions/
+git commit -m "content: add quiz questions for [Vorlesung]"
+
+git add content/{path}/../achievements/
+git commit -m "content: add achievement for [Vorlesung]"
+
+# Oder: Ein kombinierter Commit für die gesamte Vorlesung
+git add content/{path}/
+git add content/{path}/../achievements/*-{vorlesung}*.md
+git commit -m "content: add complete [Vorlesung] lecture"
+```
+
+### 10.2 Push & PR erstellen
+
+```bash
+# Branch pushen
+git push -u origin content/NN-vorlesung-titel
+
+# PR erstellen mit GitHub CLI
+gh pr create \
+  --title "content: add [Vorlesung Titel] lecture" \
+  --body "## Neue Vorlesung: [Titel]
+
+### Erstellt
+- [ ] lecture.md mit Metadaten
+- [ ] XX lecture-items (learning-content, MC, etc.)
+- [ ] 12 Quiz-Fragen
+- [ ] X YouTube-Videos (verifiziert)
+- [ ] Achievement/Cheat-Sheet
+- [ ] XX Audio-Dateien
+
+### Validierung
+- [ ] \`npm run build\` erfolgreich
+- [ ] \`npm run validate:content\` ohne Fehler
+- [ ] \`npm run validate:videos\` alle ✅
+- [ ] Browser-Test bestanden" \
+  --assignee @me
+```
+
+> ✅ **Nachfragen:** "PR erstellt: [PR-URL]. Soll ich nach Review mergen?"
+
+## Schritt 11: Merge nach Approval
+
+⚠️ **STOP-POINT:** Immer auf explizite User-Bestätigung warten!
+
+```bash
+# Nach User-Approval:
+gh pr merge --squash --delete-branch
+
+# Zurück zu main
+git checkout main
+git pull
+```
+
+### 11.1 CONTENT_PLAN Status-Update
+
+Nach erfolgreichem Merge den CONTENT_PLAN im `studies-material/` Ordner aktualisieren:
+
+```markdown
+## Status
+
+| Schritt            | Status | Datum      | Details             |
+| ------------------ | ------ | ---------- | ------------------- |
+| Content generiert  | ✅      | 2026-01-25 | 37 Items, 12 Fragen |
+| Videos verifiziert | ✅      | 2026-01-25 | 3/4 funktionieren   |
+| Audio generiert    | ✅      | 2026-01-25 | 16 MP3s             |
+| PR gemerged        | ✅      | 2026-01-25 | PR #123             |
+```
+
+> ✅ **Abschluss:** "Vorlesung [Titel] wurde erfolgreich gemerged und CONTENT_PLAN aktualisiert!"
 
 ## Lecture Versioning
 
@@ -367,6 +514,9 @@ MAJOR  1.0.0 → 2.0.0   Komplett neu generiert
 | 6       | Achievement         | Cheat-Sheet erstellen              |
 | 7       | Build & Validate    | `npm run build && validate`        |
 | 8       | Audio               | Scripts + `npm run generate:audio` |
+| 9       | CONTENT_PLAN Status | Status-Update im studies-material/ |
+| 10      | Branch, Commit & PR | `gh pr create --assignee @me`      |
+| 11      | Merge               | `gh pr merge` (nach User-OK!)      |
 
 ## Siehe auch
 

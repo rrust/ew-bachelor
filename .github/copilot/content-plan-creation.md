@@ -16,6 +16,15 @@ Der CONTENT_PLAN definiert **exakt** welche Dateien für eine Vorlesung erstellt
 ```markdown
 # CONTENT_PLAN: [Vorlesungstitel]
 
+## Status
+
+| Schritt            | Status | Datum | Details |
+| ------------------ | ------ | ----- | ------- |
+| Content generiert  | ⏳      | -     | -       |
+| Videos verifiziert | ⏳      | -     | -       |
+| Audio generiert    | ⏳      | -     | -       |
+| PR gemerged        | ⏳      | -     | -       |
+
 ## Abschnitt 1: [Thema]
 
 | Nr  | Dateiname                 | Typ                | Beschreibung         |
@@ -83,6 +92,7 @@ Am Ende jeder Vorlesung:
 
 ## Checkliste für CONTENT_PLAN
 
+- [ ] Status-Tabelle am Anfang (nach Titel)
 - [ ] Jeder Abschnitt hat learning-content VOR den Checks
 - [ ] Verständnis-Checks DIREKT nach dem Lerninhalt
 - [ ] Videos thematisch platziert (nicht am Ende)
@@ -95,6 +105,15 @@ Am Ende jeder Vorlesung:
 
 ```markdown
 # CONTENT_PLAN: Ionenbindung und Kristallstrukturen
+
+## Status
+
+| Schritt            | Status | Datum | Details |
+| ------------------ | ------ | ----- | ------- |
+| Content generiert  | ⏳      | -     | -       |
+| Videos verifiziert | ⏳      | -     | -       |
+| Audio generiert    | ⏳      | -     | -       |
+| PR gemerged        | ⏳      | -     | -       |
 
 ## Abschnitt 1: Grundlagen der Ionenbindung
 
@@ -134,22 +153,63 @@ Am Ende jeder Vorlesung:
 | 02  | 02-gitterenergie-faktoren.md  | multiple-choice-multiple |
 | 03  | 03-kristallstrukturen.md      | multiple-choice-multiple |
 [... 12 Fragen total]
+
+## Status
+
+| Schritt            | Status | Datum | Details |
+| ------------------ | ------ | ----- | ------- |
+| Content generiert  | ⏳      | -     | -       |
+| Videos verifiziert | ⏳      | -     | -       |
+| Audio generiert    | ⏳      | -     | -       |
+| PR gemerged        | ⏳      | -     | -       |
 ```
 
 ## Videos aus Videos.md einplanen
 
-Wenn `Videos.md` im Material-Ordner existiert:
+## Videos im CONTENT_PLAN
 
+Videos werden als Platzhalter eingeplant. Der Copilot-Agent findet automatisch passende YouTube-URLs während der Generierung (Schritt 3).
+
+**Falls `Videos.md` im Material-Ordner existiert:**
 1. Videos durchlesen und Thema verstehen
 2. Im CONTENT_PLAN an passender Stelle einfügen
 3. Nur verifizierte Videos (oEmbed ✓) verwenden
 
+**Falls keine `Videos.md` existiert:**
+Video-Platzhalter mit Themenbeschreibung einfügen – URLs werden automatisch gefunden.
+
 ```markdown
 ## Abschnitt 2: Gitterenergie
 
-| Nr  | Dateiname                       | Typ              | Beschreibung                                |
-| --- | ------------------------------- | ---------------- | ------------------------------------------- |
-| 04  | 04-learning-gitterenergie.md    | learning-content | Born-Landé-Gleichung                        |
-| 05  | 05-video-gitterenergie.md       | youtube-video    | Video: "Gitterenergie berechnen" (Kanal XY) |
-| 06  | 06-calculation-gitterenergie.md | calculation      | Übung zur Berechnung                        |
+| Nr  | Dateiname                       | Typ              | Beschreibung                 |
+| --- | ------------------------------- | ---------------- | ---------------------------- |
+| 04  | 04-learning-gitterenergie.md    | learning-content | Born-Landé-Gleichung         |
+| 05  | 05-video-gitterenergie.md       | youtube-video    | Video: Gitterenergie erklärt |
+| 06  | 06-calculation-gitterenergie.md | calculation      | Übung zur Berechnung         |
 ```
+
+> **Hinweis:** Der Copilot-Agent verifiziert alle Videos automatisch mit `npm run validate:videos`. Nur bei ungültigen Videos wird der Gemini-Fallback benötigt.
+
+## Status-Update nach Generierung
+
+Nach Abschluss der Content-Generierung wird der Status im CONTENT_PLAN aktualisiert:
+
+```markdown
+## Status
+
+| Schritt            | Status | Datum      | Details             |
+| ------------------ | ------ | ---------- | ------------------- |
+| Content generiert  | ✅      | 2026-01-25 | 37 Items, 12 Fragen |
+| Videos verifiziert | ✅      | 2026-01-25 | 3/4 funktionieren   |
+| Audio generiert    | ✅      | 2026-01-25 | 16 MP3s             |
+| PR gemerged        | ✅      | 2026-01-25 | PR #123             |
+```
+
+**Status-Symbole:**
+
+| Symbol | Bedeutung                   |
+| ------ | --------------------------- |
+| ⏳      | Ausstehend                  |
+| ✅      | Abgeschlossen               |
+| ❌      | Fehlgeschlagen/Übersprungen |
+| 🔄      | In Bearbeitung              |
