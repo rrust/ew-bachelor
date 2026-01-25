@@ -304,3 +304,23 @@ content/{studyId}/{moduleId}/module-training/
 - [ ] Ähnliche Antwortlängen
 - [ ] Grammatisch konsistent
 - [ ] `analyze-training-quality.js` ohne kritische Fehler
+- [ ] `generate-training-bundles.js` ausgeführt
+- [ ] `generate-test-progress.js` ausgeführt (Testdaten aktualisiert)
+
+## Befehle nach Generierung
+
+Nach dem Erstellen/Ändern von Training-Fragen:
+
+```bash
+# 1. Qualität prüfen
+node scripts/analyze-training-quality.js
+
+# 2. Training-Bundle generieren
+node scripts/generate-training-bundles.js [studyId]
+
+# 3. Testdaten aktualisieren (WICHTIG!)
+node scripts/generate-test-progress.js
+
+# 4. Optional: Im Browser testen
+# → Modul-Training öffnen, Dev-Mode aktivieren
+```
