@@ -124,9 +124,7 @@ function getModuleStats(moduleId, APP_CONTENT, getUserProgress) {
   const moduleMeta = window.MODULES?.find((m) => m.id === moduleId);
   // Support both new format (objects with id) and legacy format (strings)
   const lecturesRaw = moduleMeta?.lectures || [];
-  const lectureIds = lecturesRaw.map((l) =>
-    typeof l === 'object' ? l.id : l
-  );
+  const lectureIds = lecturesRaw.map((l) => (typeof l === 'object' ? l.id : l));
 
   // In lazy-loading mode, we may not have lecture data loaded
   // So we count quizzes from user progress instead
@@ -659,9 +657,7 @@ async function displayLecturesForModule(
   // Get lecture IDs from module metadata (works in lazy mode)
   // Support both new format (objects with id) and legacy format (strings)
   const lecturesRaw = moduleData?.lectures || [];
-  const lectureIds = lecturesRaw.map((l) =>
-    typeof l === 'object' ? l.id : l
-  );
+  const lectureIds = lecturesRaw.map((l) => (typeof l === 'object' ? l.id : l));
 
   if (
     lectureIds.length === 0 &&

@@ -13,53 +13,22 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-// Parse multi-document YAML file (separated by ---)
-function parseMultiDocYaml(content) {
-  const documents = [];
-
-  // Split by --- but keep track of document boundaries
-  // Each document starts with --- and ends with ---
-  const lines = content.split('\n');
-  let currentDoc = [];
-  let inDocument = false;
-
-  for (const line of lines) {
-    if (line.trim() === '---') {
-      if (inDocument && currentDoc.length > 0) {
-        // End of document
-        try {
-          const parsed = yaml.load(currentDoc.join('\n'));
-          if (parsed && parsed.question) {
-            documents.push(parsed);
-          }
-        } catch (e) {
-          console.warn('  ⚠️  YAML parse error:', e.message);
-        }
-        currentDoc = [];
-        inDocument = false;
-      } else {
-        // Start of document
-        inDocument = true;
-        currentDoc = [];
-      }
-    } else if (inDocument) {
-      currentDoc.push(line);
+// Parse YAML file with questions array (new format)
+// Format: { topic: '...', level: N, questions: [...] }
+function parseYamlQuestionsFile(content) {
+  try {
+    const parsed = yaml.load(content);
+    if (parsed && Array.isArray(parsed.questions)) {
+      return {
+        topic: parsed.topic || '',
+        level: parsed.level || 1,
+        questions: parsed.questions
+      };
     }
+  } catch (e) {
+    console.warn('  ⚠️  YAML parse error:', e.message);
   }
-
-  // Handle last document if not closed
-  if (currentDoc.length > 0) {
-    try {
-      const parsed = yaml.load(currentDoc.join('\n'));
-      if (parsed && parsed.question) {
-        documents.push(parsed);
-      }
-    } catch (e) {
-      console.warn('  ⚠️  YAML parse error:', e.message);
-    }
-  }
-
-  return documents;
+  return { topic: '', level: 1, questions: [] };
 }
 
 // Get all study IDs
@@ -145,23 +114,28 @@ function processModuleTraining(studyId, moduleId, moduleDir) {
 
     // Process each level (1-5)
     for (let level = 1; level <= 5; level++) {
-      const levelFile = path.join(topicDir, `level-${level}.md`);
+      // Support both .yaml and .md extensions (prefer .yaml)
+      let levelFile = path.join(topicDir, `level-${level}.yaml`);
+      if (!fs.existsSync(levelFile)) {
+        levelFile = path.join(topicDir, `level-${level}.md`);
+      }
 
       if (!fs.existsSync(levelFile)) {
         continue;
       }
 
       const content = fs.readFileSync(levelFile, 'utf-8');
-      const levelQuestions = parseMultiDocYaml(content);
+      const parsed = parseYamlQuestionsFile(content);
+      const levelQuestions = parsed.questions;
+
+      // Extract topic title from file metadata
+      if (topicTitle === topicId && parsed.topic) {
+        topicTitle = parsed.topic;
+      }
 
       // Process each question
       for (let i = 0; i < levelQuestions.length; i++) {
         const q = levelQuestions[i];
-
-        // Extract topic title from first question
-        if (topicTitle === topicId && q.topic) {
-          topicTitle = q.topic;
-        }
 
         // Normalize question format
         const normalized = {
@@ -171,8 +145,12 @@ function processModuleTraining(studyId, moduleId, moduleDir) {
           type: q.type || 'multiple-choice'
         };
 
-        // Handle correctAnswer vs correctAnswers
-        if (q.correctAnswers) {
+        // Handle correct (array of indices) or correctAnswer/correctAnswers (text values)
+        if (Array.isArray(q.correct)) {
+          // New format: correct is array of 0-based indices
+          normalized.correctIndices = q.correct;
+          normalized.correctAnswers = q.correct.map((idx) => q.options[idx]);
+        } else if (q.correctAnswers) {
           normalized.correctAnswers = q.correctAnswers;
         } else if (q.correctAnswer) {
           normalized.correctAnswers = [q.correctAnswer];

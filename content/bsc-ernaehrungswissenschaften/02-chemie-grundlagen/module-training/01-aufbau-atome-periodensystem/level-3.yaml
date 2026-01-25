@@ -1,0 +1,103 @@
+# Level 3: Anwendung - Aufbau der Atome & Periodensystem
+topic: 'Aufbau der Atome & Periodensystem'
+level: 3
+questions:
+  # Frage 1: Korrekt = B (Index 1)
+  - question: 'Ein Element hat 17 Protonen. Wie viele Valenzelektronen besitzt es?'
+    options:
+      - 'Es hat genau sechs Außenelektronen'
+      - 'Es hat genau sieben Außenelektronen'
+      - 'Es hat genau acht Außenelektronen'
+      - 'Es hat genau fünf Außenelektronen'
+      - 'Es hat genau drei Außenelektronen'
+    correct: [1]
+
+  # Frage 2: Korrekt = C (Index 2)
+  - question: 'Chlor-35 und Chlor-37 unterscheiden sich wodurch?'
+    options:
+      - 'Durch die Anzahl ihrer Protonen'
+      - 'Durch die Anzahl ihrer Elektronen'
+      - 'Durch die Anzahl ihrer Neutronen'
+      - 'Durch ihre chemische Reaktivität'
+      - 'Durch ihre Stellung im Periodensystem'
+    correct: [2]
+
+  # Frage 3: Korrekt = D (Index 3)
+  - question: 'Welches Ion bildet Natrium bevorzugt?'
+    options:
+      - 'Ein zweifach positiv geladenes Ion'
+      - 'Ein einfach negativ geladenes Ion'
+      - 'Ein zweifach negativ geladenes Ion'
+      - 'Ein einfach positiv geladenes Ion'
+      - 'Ein dreifach positiv geladenes Ion'
+    correct: [3]
+
+  # Frage 4: Korrekt = A, C (Index 0, 2)
+  - question: 'Welche Aussagen über Kohlenstoff-12 sind richtig?'
+    options:
+      - 'Es enthält sechs Protonen im Kern'
+      - 'Es enthält zwölf Neutronen im Kern'
+      - 'Es enthält sechs Neutronen im Kern'
+      - 'Es hat die Ordnungszahl zwölf'
+      - 'Es ist ein radioaktives Isotop'
+    correct: [0, 2]
+
+  # Frage 5: Korrekt = E (Index 4)
+  - question: 'Magnesium steht in Periode 3, Gruppe 2. Wie viele Schalen hat es?'
+    options:
+      - 'Es hat genau eine Elektronenschale'
+      - 'Es hat genau zwei Elektronenschalen'
+      - 'Es hat genau vier Elektronenschalen'
+      - 'Es hat genau fünf Elektronenschalen'
+      - 'Es hat genau drei Elektronenschalen'
+    correct: [4]
+
+  # Frage 6: Korrekt = B (Index 1)
+  - question: 'Welches Element hat die höchste Elektronegativität?'
+    options:
+      - 'Sauerstoff mit dem Wert 3,5'
+      - 'Fluor mit dem höchsten Wert'
+      - 'Chlor mit dem Wert 3,0'
+      - 'Stickstoff mit dem Wert 3,0'
+      - 'Brom mit dem Wert 2,8'
+    correct: [1]
+
+  # Frage 7: Korrekt = A, D (Index 0, 3)
+  - question: 'Ein Atom hat 20 Protonen und 20 Neutronen. Was stimmt?'
+    options:
+      - 'Es handelt sich um Calcium'
+      - 'Die Massenzahl beträgt zwanzig'
+      - 'Es hat zehn Valenzelektronen'
+      - 'Die Massenzahl beträgt vierzig'
+      - 'Es steht in der dritten Periode'
+    correct: [0, 3]
+
+  # Frage 8: Korrekt = C (Index 2)
+  - question: 'Warum bildet Schwefel bevorzugt S²⁻-Ionen?'
+    options:
+      - 'Weil es zwei Elektronen abgeben möchte'
+      - 'Weil es acht Elektronen aufnehmen möchte'
+      - 'Weil es zwei Elektronen aufnehmen möchte'
+      - 'Weil es sechs Elektronen abgeben möchte'
+      - 'Weil es nur positive Ionen erzeugt'
+    correct: [2]
+
+  # Frage 9: Korrekt = D, E (Index 3, 4)
+  - question: 'Welche Elemente gehören zu den Erdalkalimetallen?'
+    options:
+      - 'Natrium und Kalium zählen dazu'
+      - 'Fluor und Chlor zählen dazu'
+      - 'Helium und Neon zählen dazu'
+      - 'Calcium und Magnesium zählen dazu'
+      - 'Barium und Strontium zählen dazu'
+    correct: [3, 4]
+
+  # Frage 10: Korrekt = A (Index 0)
+  - question: 'Ein Ion hat 10 Elektronen und 11 Protonen. Was ist es?'
+    options:
+      - 'Es ist ein Natrium-Kation'
+      - 'Es ist ein Neon-Atom'
+      - 'Es ist ein Fluor-Anion'
+      - 'Es ist ein Magnesium-Kation'
+      - 'Es ist ein Sauerstoff-Anion'
+    correct: [0]

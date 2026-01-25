@@ -2,507 +2,305 @@
 
 Erstellung von Modul-Trainings-Fragen (Casual Training Mode).
 
-## Fragen-Struktur
+## Übersicht
 
-Training-Fragen sind **unabhängig** von Vorlesungs-Content und dienen dem wiederholenden Üben.
+Training-Fragen sind **unabhängig** von Vorlesungs-Nummern und nach **Themengebieten** organisiert.
 
-### Aufbau: 15 Kapitel × 5 Level × 10 Fragen = 750 Fragen
-
-```text
-Level 1: Definitionen & Grundbegriffe     (IDs 1-150)
-Level 2: Einfache Anwendung               (IDs 151-300)
-Level 3: Mittlere Komplexität             (IDs 301-450)
-Level 4: Fortgeschritten                  (IDs 451-600)
-Level 5: Experte, Berechnungen            (IDs 601-750)
-```
-
-## Fragen-Format
-
-```markdown
-## Frage 1
-**Was ist die Ordnungszahl eines Elements?**
-
-- [ ] A. Die Anzahl der Neutronen im Kern
-- [ ] B. Die Anzahl der Protonen im Kern
-- [ ] C. Die Summe aus Protonen und Neutronen
-- [ ] D. Die Anzahl der Elektronen in der äußeren Schale
-
-**Richtige Antworten:** B
-
----
-```
-
-### Format-Regeln
-
-| Element      | Format                      | Häufiger Fehler            |
-| ------------ | --------------------------- | -------------------------- |
-| Frage-Header | `## Frage X`                | `### Frage X`              |
-| Fragetext    | `**Text?**`                 | Ohne Sternchen             |
-| Optionen     | `- [ ] A. Text`             | `- A) Text`                |
-| Antworten    | `**Richtige Antworten:** A` | `**Korrekte Antwort:** A`  |
-| Mehrere      | `A, B, C`                   | `A,B,C` (ohne Leerzeichen) |
-| Trenner      | `---`                       | Fehlend                    |
-
-### Gültige Antwort-Kombinationen
+### Struktur pro Modul
 
 ```text
-Einzeln:  A, B, C, D
-Zweier:   A, B | A, C | A, D | B, C | B, D | C, D
-Dreier:   A, B, C | A, B, D | A, C, D | B, C, D
-Alle:     A, B, C, D
+15 Kapitel × 5 Level × 10 Fragen = 750 Fragen
 ```
 
-## Kritische Regeln
+### Antwort-Schema
 
-### ❌ VERBOTEN: Meta-Optionen
+| Level | Antwortmöglichkeiten | Korrekte Antworten |
+| ----- | -------------------- | ------------------ |
+| 1     | 5 (A-E)              | Immer 1            |
+| 2-3   | 5 (A-E)              | 1-3                |
+| 4-5   | 5 (A-E)              | 1-5                |
 
-```markdown
-# FALSCH - niemals verwenden!
-- [ ] D. Alle genannten sind korrekt
-- [ ] D. Keine der genannten
-- [ ] D. A und B sind beide richtig
-- [ ] D. Sowohl A als auch C
+## Generierungs-Workflow
+
+Wenn du aufgefordert wirst, Modul-Training-Fragen zu generieren:
+
+### 1. Kapitel-Definition lesen
+
+Lies die Kapitel-Definitionen aus:
+```
+studies-material/{studyId}/{moduleId}/module-training.md
 ```
 
-**Lösung:** Echte falsche Option einfügen, Antwort auf `A, B, C` ändern.
-
-### ❌ VERBOTEN: Negativ-Fragen
-
-```markdown
-# FALSCH - niemals verwenden!
-**Welche Aussage ist NICHT korrekt?**
-**Was trifft NICHT zu?**
-**Welche Option ist falsch?**
-**Was ist KEINE Eigenschaft von...?**
+Beispiel für Chemie:
+```
+studies-material/bsc-ernaehrungswissenschaften/02-grundlagen-chemie/module-training.md
 ```
 
-**Warum?** Negativ-Fragen sind kognitiv belastender und führen zu Verwirrung.
-**Lösung:** Positiv formulieren: "Welche Aussage ist korrekt?"
+### 2. Relevante Vorlesungen lesen (optional)
 
-**Auch verboten:**
-- "kein", "keine", "keines"
-- "nie", "niemals"
-- "inkorrekt", "unzutreffend"
-
-```markdown
-# FALSCH:
-**Welches Element bildet KEINE Ionen?**
-
-# BESSER:
-**Welches Element bildet bevorzugt kovalente Bindungen?**
+Für inhaltliche Tiefe können die zugehörigen Vorlesungen gelesen werden:
+```
+content/{studyId}/{moduleId}/{lectureId}/lecture-items/
 ```
 
-### ❌ VERBOTEN: Antwort in Frage verraten
+### 3. Fragen generieren
 
-```markdown
-# FALSCH - Antwort wird verraten!
-**Was beschreibt die Ionisierungsenergie?**
-- [ ] A. Die Ionisierungsenergie ist die Energie zur Entfernung eines Elektrons
-#         ^^^^^^^^^^^^^^^^ Begriff aus der Frage wiederholt!
+Generiere 10 Fragen für das angeforderte Kapitel und Level im YAML-Format.
 
-# BESSER:
-- [ ] A. Energie zur Entfernung eines Elektrons aus einem Atom
+### 4. Output speichern
+
+Speichere in:
+```
+content/{studyId}/{moduleId}/module-training/{kapitelNr}-{kapitelName}/level-{X}.yaml
 ```
 
-### ❌ VERBOTEN: Frage-Begriff in Antwort
+## Output-Format
 
-```markdown
-# FALSCH - triviale Antwort!
-**Was ist eine Doppelbindung?**
-- [ ] A. Doppelte Umsetzung zwischen Ionen
-#         ^^^^^^^ Begriff aus Frage!
-
-# BESSER:
-- [ ] A. Ionentausch zwischen zwei Verbindungen
+```yaml
+# level-1.yaml
+topic: 'Aufbau der Atome & Periodensystem'
+level: 1
+questions:
+  - question: 'Aus welchen Teilchen besteht ein Atom?'
+    options:
+      - 'Nur aus Protonen und Elektronen im Kern'
+      - 'Ausschließlich aus Neutronen und Elektronen'
+      - 'Aus Protonen, Neutronen und Elektronen'
+      - 'Nur aus positiv geladenen Teilchen'
+      - 'Aus Molekülen und verschiedenen Ionen'
+    correct: [2]  # 0-basiert, C ist korrekt
+    
+  - question: 'Wo befinden sich Protonen und Neutronen?'
+    options:
+      - 'In der äußeren Elektronenschale des Atoms'
+      - 'Gleichmäßig im gesamten Atom verteilt'
+      - 'Im zentralen Kern des Atoms'
+      - 'Zwischen Atomkern und Elektronenhülle'
+      - 'Außerhalb der Elektronenwolke'
+    correct: [2]
 ```
 
-### ❌ VERBOTEN: Doppelte Optionen
+### Für Multiple Correct (Level 2-5)
 
-```markdown
-# FALSCH - Case-Sensitivity bei Formeln!
-- [ ] A. N = m × Nₐ
-- [ ] D. N = M × Nₐ   # M ≠ m in Chemie!
+```yaml
+  - question: 'Welche Aussagen über Isotope sind korrekt?'
+    options:
+      - 'Isotope haben die gleiche Anzahl an Protonen'
+      - 'Isotope haben unterschiedliche Neutronenzahlen'
+      - 'Isotope haben verschiedene Ordnungszahlen'
+      - 'Isotope zeigen identische chemische Eigenschaften'
+      - 'Isotope besitzen unterschiedliche Massenzahlen'
+    correct: [0, 1, 4]  # A, B, E sind korrekt
 ```
 
-### ❌ VERBOTEN: Alle 4 korrekt
+## Qualitätsregeln
 
-Wenn alle 4 Optionen korrekt sind:
+### ❌ VERBOTEN
 
-- Benutzer muss ALLE auswählen
-- Sehr verwirrend
-- **Besser:** 3 korrekte + 1 falsche
+1. **Meta-Optionen**
+   - "Alle genannten sind korrekt"
+   - "Keine der genannten"
+   - "A und B sind beide richtig"
 
-### ⚠️ PRÜFEN: Singular vs. Plural
+2. **Negativ-Fragen**
+   - "Was ist NICHT korrekt?"
+   - "Welche Aussage trifft NICHT zu?"
 
-```markdown
-# Inkonsistent:
-**Welche Aussagen sind korrekt?**   # Plural
-**Richtige Antworten:** B           # Nur eine!
+3. **Frage-Keywords in korrekter Antwort**
+   - ❌ Frage: "Wie viele **Perioden** hat das **Periodensystem**?"
+   - ❌ Antwort: "Das **Periodensystem** hat sieben **Perioden**"
+   - ✅ Antwort: "Es sind insgesamt sieben waagerechte Reihen"
+   - **Regel:** Verwende SYNONYME oder Umschreibungen für Schlüsselbegriffe!
 
-# Lösung: Fragetext anpassen
-**Welche Aussage ist korrekt?**
-```
+4. **Absolute Begriffe als Muster**
+   - Wörter wie "immer", "niemals", "alle", "keine", "ausschließlich", "nur"
+   - ❌ NICHT nur in falschen Antworten verwenden (verrät die Lösung!)
+   - ✅ Entweder in ALLEN Optionen vermeiden ODER gleichmäßig verteilen
 
-## Qualitätskriterien für Antworten
+5. **Längen-Muster**
+   - ❌ Korrekte Antwort ist die längste
+   - ❌ Korrekte Antwort ist deutlich kürzer als alle anderen
+   - ✅ Alle 5 Optionen haben ähnliche Länge (±10 Zeichen)
 
-### 📏 Längen-Balance
+### ✅ ERFORDERLICH
 
-Alle Antwortoptionen sollten **ähnlich lang** sein!
+1. **5 Antwortmöglichkeiten** (A-E)
 
-```markdown
-# FALSCH - korrekte Antwort viel länger!
-- [ ] A. Wärme
-- [ ] B. Licht
-- [ ] C. Schall
-- [ ] D. Die Freisetzung von Energie in Form von elektromagnetischer Strahlung ✓
+2. **Längen-Balance (KRITISCH!)**
+   - Ziel: Alle Optionen 35-55 Zeichen
+   - Maximum: 65 Zeichen pro Option
+   - Varianz: Max. 15 Zeichen zwischen kürzester und längster
+   - **VOR dem Speichern prüfen:** Ist die korrekte Antwort die längste? → Kürzen!
 
-# BESSER - alle ähnlich lang:
-- [ ] A. Freisetzung von Wärmeenergie
-- [ ] B. Emission von sichtbarem Licht
-- [ ] C. Abstrahlung von Schallwellen
-- [ ] D. Elektromagnetische Strahlung ✓
-```
+3. **Positions-Verteilung (KRITISCH!)**
+   - Bei 10 Fragen: Korrekte Antwort auf jeder Position (A-E) genau 2×
+   - Verteilung pro Level: A=2, B=2, C=2, D=2, E=2
+   - **NIEMALS** alle korrekten Antworten auf Position B oder C!
 
-**Regeln:**
+4. **Synonym-Nutzung für Frage-Keywords**
+   - Jedes Hauptwort aus der Frage muss in der korrekten Antwort umschrieben werden
+   - Beispiele:
+     - "Atom" → "kleinste Einheit", "Teilchen"
+     - "Periodensystem" → "Elementtafel", "Anordnung der Elemente"
+     - "Protonen" → "positiv geladene Kernteilchen"
+     - "Elektronen" → "negativ geladene Hüllteilchen"
 
-- Korrekte Antworten dürfen maximal 50% länger sein als falsche
-- Jede Antwort idealerweise 40–100 Zeichen
-- Maximale Varianz zwischen kürzester und längster Antwort: ~20 Zeichen
-- Die richtige Antwort darf NICHT die längste sein
+5. **Grammatische Konsistenz**
+   - Alle 5 Optionen beginnen gleich (z.B. alle mit Artikel, alle mit Verb)
+   - Alle 5 Optionen enden gleich (z.B. alle mit Substantiv)
 
-### 📝 Grammatische Konsistenz
+6. **Plausible Distraktoren**
+   - Mind. 2 Distraktoren für Laien kaum unterscheidbar von Lösung
+   - Basierend auf typischen Fehlvorstellungen
+   - Falsche Antworten müssen inhaltlich sinnvoll klingen
 
-Alle 4 Antworten müssen **identische grammatische Struktur** haben!
+### 📋 CHECKLISTE VOR SPEICHERN
 
-```markdown
-# FALSCH - uneinheitliche Struktur:
-- [ ] A. Die Protonen im Kern
-- [ ] B. Neutronen bestimmen die Masse
-- [ ] C. Elektronen
-- [ ] D. Weil Atome neutral sind
+Für jede der 10 Fragen prüfen:
 
-# BESSER - alle beginnen gleich:
-- [ ] A. Die Anzahl der Protonen im Kern
-- [ ] B. Die Anzahl der Neutronen im Kern
-- [ ] C. Die Summe aus Protonen und Neutronen
-- [ ] D. Die Anzahl der Valenzelektronen
-```
+- [ ] Keine Keywords aus der Frage in der korrekten Antwort?
+- [ ] Korrekte Antwort ist NICHT die längste Option?
+- [ ] Alle Optionen zwischen 35-55 Zeichen?
+- [ ] Keine absoluten Begriffe NUR in falschen Antworten?
+- [ ] Position der korrekten Antwort variiert (2× pro Position A-E)?
 
-### 🎯 Spezifitäts-Balance
+## Level-Anforderungen
 
-Korrekte Antworten dürfen NICHT spezifischer sein als falsche!
-
-```markdown
-# FALSCH - nur korrekte Antwort hat Zahlen!
-- [ ] A. Enthält Protonen
-- [ ] B. Enthält Neutronen
-- [ ] C. Hat 6 Protonen und 6 Neutronen ✓  # Zu spezifisch!
-- [ ] D. Ist ein Atom
-
-# BESSER - alle gleich spezifisch:
-- [ ] A. Hat 6 Protonen und 8 Neutronen
-- [ ] B. Hat 8 Protonen und 6 Neutronen
-- [ ] C. Hat 6 Protonen und 6 Neutronen ✓
-- [ ] D. Hat 12 Protonen und 6 Neutronen
-```
-
-### 🎭 Plausible Distraktoren
-
-Falsche Antworten müssen **plausibel** sein – nicht offensichtlich falsch!
-
-```markdown
-# FALSCH - D ist offensichtlich falsch!
-**Welches Element ist ein Edelgas?**
-- [ ] A. Helium ✓
-- [ ] B. Sauerstoff
-- [ ] C. Stickstoff
-- [ ] D. Banane    # Offensichtlich falsch!
-
-# BESSER - alle sind Elemente:
-- [ ] A. Helium ✓
-- [ ] B. Sauerstoff
-- [ ] C. Stickstoff
-- [ ] D. Wasserstoff
-```
-
-**Technik für Distraktoren:**
-
-- Häufige Missverständnisse nutzen
-- Ähnliche Konzepte verwenden
-- Typische Rechenfehler als Option anbieten
-- **Mind. 2 Distraktoren sollten für Laien kaum von der Lösung unterscheidbar sein**
-
-### 🔤 Synonyme statt Wiederholung
-
-**Wörter aus dem Fragetext dürfen in Antworten NICHT erscheinen** – nutze Synonyme!
-
-```markdown
-# FALSCH - "Ordnungszahl" wiederholt!
-**Was gibt die Ordnungszahl an?**
-- [ ] A. Die Ordnungszahl gibt die Protonenzahl an ✓
-
-# BESSER - Synonym verwenden:
-**Was gibt die Ordnungszahl an?**
-- [ ] A. Diese Kennzahl entspricht der Protonenzahl ✓
-```
-
-**Ausnahmen:**
-
-- Chemische Formeln (H₂O, NaCl) dürfen wiederholt werden
-- Fachbegriffe ohne gutes Synonym dürfen wiederholt werden
-
-### 🚫 Keine Formulierungshinweise
-
-Vermeide Wörter, die Hinweise geben:
-
-| In falschen Antworten   | Warum problematisch?              |
-| ----------------------- | --------------------------------- |
-| "immer", "niemals"      | Absolute Aussagen sind oft falsch |
-| "alle", "keine"         | Extremaussagen vermeiden          |
-| "nur", "ausschließlich" | Zu einschränkend                  |
-
-| In korrekten Antworten   | Warum problematisch?                    |
-| ------------------------ | --------------------------------------- |
-| "häufig", "meistens"     | Qualifizierte Aussagen sind oft richtig |
-| "kann", "typischerweise" | Zu vorsichtig formuliert                |
-| "in der Regel"           | Verräterisch vorsichtig                 |
-
-```markdown
-# FALSCH - "immer" verrät, dass B falsch ist!
-- [ ] A. Wasser löst polare Stoffe ✓
-- [ ] B. Wasser löst immer alle Stoffe  # "immer" = oft falsch!
-
-# BESSER - neutral formuliert:
-- [ ] A. Wasser löst polare Stoffe ✓
-- [ ] B. Wasser löst unpolare Stoffe
-```
-
-### 📊 Positions-Verteilung
-
-Korrekte Antworten **MÜSSEN gleichmäßig verteilt** sein:
-
-| Position | Ziel | Problem wenn abweichend        |
-| -------- | ---- | ------------------------------ |
-| A        | ~25% | Zu oft A → Muster erkennbar    |
-| B        | ~25% | Zu oft B → Muster erkennbar    |
-| C        | ~25% | Zu selten C → Muster erkennbar |
-| D        | ~25% | Zu selten D → Muster erkennbar |
-
-**Bei 10 Fragen pro Level:**
-- 2-3× A, 2-3× B, 2-3× C, 2-3× D
-- **NIEMALS** alle korrekten Antworten auf Position A!
-- Das Script `fix-answer-positions.js` kann die Verteilung automatisch korrigieren
-
-```bash
-# Positions-Verteilung automatisch korrigieren
-node scripts/fix-answer-positions.js
-```
-
-### ✅ Chemische Formeln sind OKAY
-
-Wenn die Frage nach einer spezifischen Verbindung fragt, ist es **unvermeidlich und erlaubt**, 
-dass die Antwort diese Formel enthält:
-
-```markdown
-# ERLAUBT - Formeln müssen in Frage und Antwort vorkommen
-**Klassifiziere H₂SO₄, HNO₃, CH₃COOH nach Säurestärke:**
-- [ ] A. H₂SO₄ und HNO₃ dissoziieren vollständig ✓  # Formeln hier sind OKAY!
-
-# AUCH ERLAUBT - Konzeptbegriffe die zum Thema gehören
-**Was zeigt das Pourbaix-Diagramm für Fe?**
-- [ ] A. Zeigt wo Fe, Fe²⁺, Fe³⁺ vorliegen ✓  # Fe muss hier vorkommen!
-```
-
-**Faustregel:** Wenn die Frage NACH X fragt, muss die Antwort X enthalten dürfen.
-
-## Schwierigkeitsgrade
-
-### Level 1: Grundbegriffe
-
-- Definitionen abfragen
-- Einfache Fakten
-- Ja/Nein-Charakter
-- **Distraktoren:** Ähnlich klingende Begriffe, verwechselbare Fakten
+### Level 1: Grundlagen
+- Reine Wissensabfrage
 - Keine Berechnungen
+- Distraktoren: ähnlich klingende Begriffe
 
-### Level 2: Anwendung
+**Beispiel:**
+```yaml
+question: 'Was gibt die Ordnungszahl eines Elements an?'
+options:
+  - 'Die Anzahl der Neutronen im Atomkern'
+  - 'Die Anzahl der Protonen im Atomkern'
+  - 'Die Gesamtmasse des Atoms in Dalton'
+  - 'Die Anzahl der Valenzelektronen'
+  - 'Die Summe aus Protonen und Neutronen'
+correct: [1]
+```
 
-- Konzeptionelles Verständnis gefordert
-- Einfache Berechnungen (Überschlagsrechnungen)
-- Konzepte anwenden, Beispiele erkennen
-- **Distraktoren:** Typische Fehlvorstellungen, Verwechslung von Ursache/Wirkung
+### Level 2: Verständnis
+- Konzeptionelles Verständnis
+- Ursache-Wirkung erkennen
+- Höchstens Überschlagsrechnungen
 
-### Level 3: Mittelschwer
+**Beispiel:**
+```yaml
+question: 'Warum leiten Metalle elektrischen Strom?'
+options:
+  - 'Ihre Atome sind positiv geladen'
+  - 'Sie besitzen frei bewegliche Elektronen'
+  - 'Ihre Kristallstruktur ist kubisch'
+  - 'Sie haben eine hohe Dichte'
+  - 'Ihre Bindungen sind rein ionisch'
+correct: [1]
+```
 
-- Mehrere Konzepte müssen verknüpft werden
-- Transfer auf neue Situationen
+### Level 3: Anwendung
+- Mehrere Konzepte verknüpfen
 - Einfache Berechnungen (1-2 Schritte)
-- **Distraktoren:** Teilschritte als Lösung, falsche Verknüpfungen
 
-### Level 4: Fortgeschritten
+**Beispiel:**
+```yaml
+question: 'Wie viel Mol sind 44 g CO₂ (M = 44 g/mol)?'
+options:
+  - '0,5 mol aufgrund der Verdopplung'
+  - '1,0 mol nach der Formel n = m/M'
+  - '2,0 mol wegen zwei Sauerstoffatomen'
+  - '22,4 mol entsprechend dem Molvolumen'
+  - '44 mol da Masse gleich Molmasse'
+correct: [1]
+```
 
-- Komplexe Problemstellungen mit mehreren Variablen
+### Level 4: Analyse
+- Komplexe Problemstellungen
 - Mehrstufige Berechnungen (3-5 Schritte)
-- Analyse von Szenarien
-- **Distraktoren:** Häufige Rechenfehler, falsche Formeln, Einheitenfehler
 
-### Level 5: Experte
+**Beispiel:**
+```yaml
+question: 'Bei der Verbrennung von 12 g Kohlenstoff mit 32 g O₂ entstehen wie viel g CO₂?'
+options:
+  - '22 g da Summe der Atommassen'
+  - '44 g entsprechend der Stöchiometrie'
+  - '88 g wegen doppelter Sauerstoffmenge'
+  - '24 g durch Halbierung der Masse'
+  - '66 g als Mittelwert der Massen'
+correct: [1]
+```
 
-- Integration von Wissen aus verschiedenen Kapiteln/Themen
-- Prüfungsniveau, mehrstufige Probleme
-- Komplexe Berechnungen und/oder Transfer auf neue Situationen
-- **Distraktoren:** Plausible aber unvollständige Lösungsansätze
+### Level 5: Synthese/Transfer
+- Integration verschiedener Themen
+- Unbekannte Kontexte
+- Komplexe Szenarien
 
-## Qualitätsprüfung
+**Beispiel:**
+```yaml
+question: 'Ein unbekanntes Gas hat bei 0°C und 1 atm die Dichte 1,96 g/L. Welche Aussagen sind korrekt?'
+options:
+  - 'Die molare Masse beträgt etwa 44 g/mol'
+  - 'Es könnte sich um Kohlendioxid handeln'
+  - 'Das Gas ist leichter als Luft'
+  - 'Die Stoffmenge pro Liter ist 0,045 mol'
+  - 'Es handelt sich um ein zweiatomiges Gas'
+correct: [0, 1, 3]
+```
 
-### Workflow: Fragen-Qualität sicherstellen
+## Post-Processing
+
+Nach der Generierung wird das Qualitäts-Script ausgeführt:
 
 ```bash
-# 1. Qualitätsprüfung ausführen
-node scripts/analyze-training-quality.js
-
-# 2. Probleme nach Priorität beheben:
-#    🔴 KRITISCH → MUSS behoben werden (Negativ-Fragen, Antwort in Frage)
-#    🟠 HOCH     → SOLLTE behoben werden (Längen, Spezifität)
-#    🟡 MITTEL   → KANN behoben werden (absolute Begriffe)
-
-# 3. Positions-Verteilung automatisch korrigieren (falls nötig)
-node scripts/fix-answer-positions.js
-
-# 4. Nach Korrekturen erneut prüfen
 node scripts/analyze-training-quality.js
 ```
 
-### Qualitätsziele
+Das Script prüft:
+- Längen-Balance
+- Positions-Verteilung (korrigiert automatisch)
+- Negativ-Fragen
+- Meta-Optionen
+- Grammatik-Konsistenz
 
-| Kategorie                   | Ziel   | Akzeptabel          |
-| --------------------------- | ------ | ------------------- |
-| Kritische Probleme          | 0      | 0                   |
-| Absolute Begriffe           | 0      | < 10                |
-| Spezifitäts-Ungleichgewicht | 0      | < 5                 |
-| Längen-Ungleichgewicht      | 0      | < 100               |
-| Positions-Verteilung        | je 25% | 20-30% pro Position |
+Bei zu vielen Problemen: Kapitel neu generieren.
 
-### Scripts ausführen
+## Beispiel-Aufruf
 
-```bash
-# Qualitätsprüfung für fertige Trainings-Fragen (YAML-Format)
-node scripts/analyze-training-quality.js
+**User:** "Generiere Modul-Training-Fragen für Modul 2 (Chemie), Kapitel 1, Level 1"
 
-# Technische Probleme finden (Format, doppelte Optionen, etc.)
-node scripts/analyzeQuestions.js
+**Copilot:**
+1. Liest `studies-material/.../02-grundlagen-chemie/module-training.md`
+2. Identifiziert Kapitel 1: "Aufbau der Atome & Periodensystem"
+3. Generiert 10 Fragen im YAML-Format
+4. Speichert in `content/.../module-training/01-aufbau-atome-periodensystem/level-1.yaml`
 
-# Bei 0 kritischen Problemen:
-node scripts/convertQuestions.js
+## Dateistruktur
+
+```text
+content/{studyId}/{moduleId}/module-training/
+├── training.md                              # Metadaten
+├── training-bundle.json                     # Generiert durch Build
+├── 01-aufbau-atome-periodensystem/
+│   ├── level-1.yaml
+│   ├── level-2.yaml
+│   ├── level-3.yaml
+│   ├── level-4.yaml
+│   └── level-5.yaml
+├── 02-elemente-ionen-mol/
+│   ├── level-1.yaml
+│   └── ...
+└── ...
 ```
 
-### analyze-training-quality.js prüft
+## Checkliste vor Commit
 
-Das Hauptscript für Qualitätsprüfung. Zeigt:
-
-| Kategorie                 | Schwere  | Beschreibung                          |
-| ------------------------- | -------- | ------------------------------------- |
-| Negativ-Fragen            | KRITISCH | NICHT, kein, nie in Frage             |
-| Antwort in Frage          | KRITISCH | Antwort-Keywords in Frage enthalten   |
-| Frage-Begriff in Antwort  | KRITISCH | Frage-Begriff erscheint in Antwort    |
-| Längen-Ungleichgewicht    | HOCH     | Korrekte Antwort >50% länger          |
-| Spezifitäts-Imbalance     | HOCH     | Nur korrekte Antworten haben Details  |
-| Offensichtl. Distraktoren | HOCH     | Falsche Antworten zu leicht erkennbar |
-| Absolute Begriffe         | MITTEL   | "immer/nie" in falschen Antworten     |
-
-**Statistiken:**
-- **Längen-Balance** – Verhältnis korrekt/falsch sollte < 1.3x sein
-- **Positions-Verteilung** – A/B/C/D sollten je ~25% haben
-
-### analyzeQuestions.js prüft (technisch)
-
-| Kategorie         | Schwere  | Beschreibung            |
-| ----------------- | -------- | ----------------------- |
-| Doppelte Optionen | KRITISCH | Gleiche Option mehrfach |
-| Leere Optionen    | KRITISCH | Option A/B/C/D fehlt    |
-| Ungültige Antwort | KRITISCH | z.B. "E" oder "A,B"     |
-| Fehlende Optionen | KRITISCH | Weniger als 4 Optionen  |
-| "Alle genannten"  | HOCH     | Meta-Optionen           |
-| Alle 4 korrekt    | MITTEL   | A, B, C, D              |
-| Duplikate         | MITTEL   | Gleiche Fragen          |
-
-### Statistiken beachten
-
-Das Script zeigt auch:
-
-- **Durchschnittliche Antwortlängen** – Sollten ~gleich sein
-- **Positions-Verteilung** – A/B/C/D sollten je ~25% haben
-
-## Best Practices
-
-### DO ✅
-
-1. **Eindeutige Fragen**
-2. **Klare, unterscheidbare Optionen**
-3. **Echte falsche Optionen** (plausibel aber falsch)
-4. **Konsistente Notation** (H₂O oder H2O, nicht mischen)
-5. **Schwierigkeit dem Level anpassen**
-6. **Alle Optionen ähnlich lang** (max. 50% Unterschied)
-7. **Zahlen/Details in ALLEN Optionen** (nicht nur in korrekten)
-
-### DON'T ❌
-
-1. Keine Meta-Optionen ("Alle genannten", "Keine der genannten")
-2. Keine mehrdeutigen Formulierungen
-3. Keine Trick-Fragen
-4. Korrekte Antwort NICHT systematisch die längste
-5. Keine doppelten Fragen zwischen Kapiteln
-6. Keine absoluten Begriffe in falschen Antworten ("immer", "niemals", "alle", "keine")
-7. Keine Negativ-Fragen ("Was ist NICHT korrekt?")
-
-## Häufige Probleme beheben
-
-### Problem: Absolute Begriffe
-
-```markdown
-# VORHER (Problem):
-- [ ] A. Alle Reaktionen sind exotherm     # "Alle" = absoluter Begriff!
-- [ ] B. Die Reaktion ist endotherm ✓
-
-# NACHHER (Korrigiert):
-- [ ] A. Die meisten Reaktionen sind exotherm
-- [ ] B. Die Reaktion ist endotherm ✓
-```
-
-**Ersetze:**
-- "alle" → "die meisten", "viele"
-- "immer" → "typischerweise", "in der Regel"
-- "niemals" → "selten", "kaum"
-- "keine" → "wenige", "kaum"
-
-### Problem: Längen-Ungleichgewicht
-
-```markdown
-# VORHER (Problem - korrekte Antwort 3x länger):
-- [ ] A. Wärme
-- [ ] B. Licht  
-- [ ] C. Schall
-- [ ] D. Die vollständige Umwandlung chemischer Energie in Wärme ✓
-
-# NACHHER (Korrigiert - alle ähnlich lang):
-- [ ] A. Freisetzung von Wärmeenergie
-- [ ] B. Emission von sichtbarem Licht
-- [ ] C. Abstrahlung von Schallwellen
-- [ ] D. Umwandlung in thermische Energie ✓
-```
-
-### Problem: Spezifitäts-Ungleichgewicht
-
-```markdown
-# VORHER (Problem - nur korrekte Antwort hat Zahlen):
-- [ ] A. Das Molekül ist polar
-- [ ] B. Es hat freie Elektronenpaare
-- [ ] C. Die Bindungsordnung beträgt 2,5 ✓
-- [ ] D. Es ist stabil
-
-# NACHHER (Korrigiert - alle haben Zahlen):
-- [ ] A. Die Bindungsordnung beträgt 1,5
-- [ ] B. Die Bindungsordnung beträgt 2,0
-- [ ] C. Die Bindungsordnung beträgt 2,5 ✓
-- [ ] D. Die Bindungsordnung beträgt 3,0
-```
+- [ ] 10 Fragen pro Level
+- [ ] 5 Antwortmöglichkeiten pro Frage
+- [ ] Korrekte Anzahl korrekter Antworten (Level-abhängig)
+- [ ] Keine Meta-Optionen
+- [ ] Keine Negativ-Fragen
+- [ ] Ähnliche Antwortlängen
+- [ ] Grammatisch konsistent
+- [ ] `analyze-training-quality.js` ohne kritische Fehler

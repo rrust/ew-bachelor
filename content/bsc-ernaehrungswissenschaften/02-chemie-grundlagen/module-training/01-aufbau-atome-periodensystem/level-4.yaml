@@ -1,0 +1,103 @@
+# Level 4: Analyse - Aufbau der Atome & Periodensystem
+topic: 'Aufbau der Atome & Periodensystem'
+level: 4
+questions:
+  # Frage 1: Korrekt = B, D (Index 1, 3)
+  - question: 'Uran-238 zerfällt zu Thorium-234. Was passiert dabei?'
+    options:
+      - 'Zwei Neutronen werden abgegeben'
+      - 'Die Ordnungszahl sinkt um zwei'
+      - 'Die Elektronenzahl bleibt gleich'
+      - 'Ein Heliumkern wird emittiert'
+      - 'Die Massenzahl bleibt konstant'
+    correct: [1, 3]
+
+  # Frage 2: Korrekt = C (Index 2)
+  - question: 'Warum ist die zweite Ionisierungsenergie von Natrium viel höher als die erste?'
+    options:
+      - 'Weil das nächste Elektron weiter vom Kern entfernt ist'
+      - 'Weil Natrium nur ein Valenzelektron besitzt'
+      - 'Weil das nächste Elektron aus einer inneren Schale stammt'
+      - 'Weil die Kernladung durch Ionisierung abnimmt'
+      - 'Weil Neutronen die Bindung verstärken'
+    correct: [2]
+
+  # Frage 3: Korrekt = A, C, E (Index 0, 2, 4)
+  - question: 'Welche Aussagen über die Elektronenkonfiguration von Eisen (Z=26) stimmen?'
+    options:
+      - 'Die 3d-Orbitale sind teilweise besetzt'
+      - 'Die Elektronen befinden sich nur in s-Orbitalen'
+      - 'Es besitzt insgesamt 26 Elektronen'
+      - 'Die 4d-Orbitale sind vollständig gefüllt'
+      - 'Die 4s-Orbitale sind vor den 3d-Orbitalen gefüllt'
+    correct: [0, 2, 4]
+
+  # Frage 4: Korrekt = D (Index 3)
+  - question: 'Ordne die Atomradien: Na, Mg, Al. Welche Reihenfolge stimmt?'
+    options:
+      - 'Al größer als Mg größer als Na'
+      - 'Mg größer als Na größer als Al'
+      - 'Die drei haben sehr ähnliche Radien'
+      - 'Na größer als Mg größer als Al'
+      - 'Al größer als Na größer als Mg'
+    correct: [3]
+
+  # Frage 5: Korrekt = E (Index 4)
+  - question: 'Ein Element bildet ein Oxid der Formel X₂O₃. In welcher Gruppe steht es?'
+    options:
+      - 'Es befindet sich in der ersten Spalte'
+      - 'Es befindet sich in der zweiten Spalte'
+      - 'Es befindet sich in der vierten Spalte'
+      - 'Es befindet sich in der sechsten Spalte'
+      - 'Es befindet sich in der dritten Spalte'
+    correct: [4]
+
+  # Frage 6: Korrekt = A, B (Index 0, 1)
+  - question: 'Welche Trends gelten für die Elektronegativität im Periodensystem?'
+    options:
+      - 'Sie steigt in einer Periode nach rechts'
+      - 'Sie sinkt in einer Gruppe nach unten'
+      - 'Sie ist bei Metallen am höchsten'
+      - 'Sie bleibt in einer Periode konstant'
+      - 'Sie steigt in einer Gruppe nach unten'
+    correct: [0, 1]
+
+  # Frage 7: Korrekt = C (Index 2)
+  - question: 'Warum ist Lithium trotz geringer Massenzahl dichter als Natrium?'
+    options:
+      - 'Weil das leichtere Element mehr Neutronen enthält'
+      - 'Weil Natrium weniger Protonen besitzt'
+      - 'Weil das leichtere Element kleinere Atome hat'
+      - 'Weil das leichtere Element eine höhere Molmasse hat'
+      - 'Weil Natrium mehr Elektronen abstößt'
+    correct: [2]
+
+  # Frage 8: Korrekt = B, D, E (Index 1, 3, 4)
+  - question: 'Was gilt für Elemente der 4. Periode?'
+    options:
+      - 'Sie haben maximal drei Elektronenschalen'
+      - 'Sie umfassen auch Übergangsmetalle'
+      - 'Sie besitzen ausschließlich s-Elektronen'
+      - 'Kalium ist das erste Element dieser Reihe'
+      - 'Krypton ist das letzte Element dieser Reihe'
+    correct: [1, 3, 4]
+
+  # Frage 9: Korrekt = A (Index 0)
+  - question: 'Welches Ion hat die gleiche Elektronenkonfiguration wie Argon?'
+    options:
+      - 'Das Chlorid-Ion Cl⁻ hat diese Konfiguration'
+      - 'Das Natrium-Ion Na⁺ hat diese Konfiguration'
+      - 'Das Magnesium-Ion Mg²⁺ hat diese Konfiguration'
+      - 'Das Kalium-Atom K hat diese Konfiguration'
+      - 'Das Calcium-Atom Ca hat diese Konfiguration'
+    correct: [0]
+
+  # Frage 10: Korrekt = C, D (Index 2, 3)
+  - question: 'Welche Eigenschaften hat das Element mit der Konfiguration [Ne] 3s² 3p⁵?'
+    options:
+      - 'Es ist ein reaktionsträges Edelgas'
+      - 'Es ist ein weiches Alkalimetall'
+      - 'Es ist ein reaktives Halogen'
+      - 'Es bildet bevorzugt einfach negative Ionen'
+      - 'Es leitet elektrischen Strom sehr gut'
+    correct: [2, 3]
