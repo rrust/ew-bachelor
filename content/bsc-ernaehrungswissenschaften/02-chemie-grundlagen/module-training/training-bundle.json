@@ -2,12 +2,12 @@
   "moduleId": "02-chemie-grundlagen",
   "title": "Modul-Training: Grundlagen der Chemie",
   "description": "Level-basiertes Training zur Prüfungsvorbereitung",
-  "totalQuestions": 374,
+  "totalQuestions": 375,
   "totalTopics": 15,
   "questionsPerLevel": 10,
   "levels": 5,
   "version": "1.0.0",
-  "generatedAt": "2026-01-21T18:48:56.086Z",
+  "generatedAt": "2026-01-25T09:27:35.484Z",
   "topics": [
     {
       "id": "01-aufbau-atome-periodensystem",
@@ -193,16 +193,16 @@
             "id": "01-aufbau-atome-periodensystem:3:2",
             "question": "Ein Ion hat 18 Elektronen und 17 Protonen. Welche Aussagen treffen zu?",
             "options": [
-              "Es handelt sich um ein Chlorid-Ion (Cl⁻)",
-              "Das Ion ist negativ geladen",
-              "Das Ion hat die gleiche Elektronenkonfiguration wie Argon",
-              "Es handelt sich um ein Kalium-Ion (K⁺)"
+              "Es ist ein Chlorid-Ion (Cl⁻)",
+              "Es trägt eine negative Ladung",
+              "Es besitzt die Elektronenkonfiguration von Argon",
+              "Es ist ein Kalium-Ion (K⁺)"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Es handelt sich um ein Chlorid-Ion (Cl⁻)",
-              "Das Ion ist negativ geladen",
-              "Das Ion hat die gleiche Elektronenkonfiguration wie Argon"
+              "Es ist ein Chlorid-Ion (Cl⁻)",
+              "Es trägt eine negative Ladung",
+              "Es besitzt die Elektronenkonfiguration von Argon"
             ]
           },
           {
@@ -270,16 +270,16 @@
             "id": "01-aufbau-atome-periodensystem:4:2",
             "question": "Erkläre die Elektronegativitätswerte: F (3,98), O (3,44), N (3,04), C (2,55). Welcher Trend wird hier sichtbar?",
             "options": [
-              "Die Elektronegativität nimmt innerhalb einer Periode von links nach rechts zu",
-              "Fluor ist das elektronegativste Element",
+              "Elektronegativität steigt in einer Periode von links nach rechts",
+              "Fluor besitzt die höchste Elektronegativität aller Elemente",
               "Kohlenstoff zieht Elektronen stärker an als Sauerstoff",
-              "Die Kernladung beeinflusst die Elektronegativität"
+              "Kernladung beeinflusst die Elektronegativität maßgeblich"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Die Elektronegativität nimmt innerhalb einer Periode von links nach rechts zu",
-              "Fluor ist das elektronegativste Element",
-              "Die Kernladung beeinflusst die Elektronegativität"
+              "Elektronegativität steigt in einer Periode von links nach rechts",
+              "Fluor besitzt die höchste Elektronegativität aller Elemente",
+              "Kernladung beeinflusst die Elektronegativität maßgeblich"
             ]
           },
           {
@@ -318,17 +318,17 @@
             "id": "01-aufbau-atome-periodensystem:5:0",
             "question": "Ein Element X hat folgende Eigenschaften: Die dritte Ionisierungsenergie ist etwa 10-mal größer als die zweite. Welche Schlussfolgerungen sind korrekt?",
             "options": [
-              "Das Element steht in der 2. Hauptgruppe",
-              "Das Element bildet bevorzugt X²⁺-Ionen",
-              "Nach der Abgabe von 2 Elektronen liegt eine Edelgaskonfiguration vor",
-              "Es könnte sich um Magnesium oder Calcium handeln"
+              "Element X steht in der 2. Hauptgruppe",
+              "Element X bildet bevorzugt X²⁺-Ionen",
+              "Edelgaskonfiguration liegt nach Abgabe von 2 Elektronen vor",
+              "Magnesium oder Calcium können Element X sein"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Das Element steht in der 2. Hauptgruppe",
-              "Das Element bildet bevorzugt X²⁺-Ionen",
-              "Nach der Abgabe von 2 Elektronen liegt eine Edelgaskonfiguration vor",
-              "Es könnte sich um Magnesium oder Calcium handeln"
+              "Element X steht in der 2. Hauptgruppe",
+              "Element X bildet bevorzugt X²⁺-Ionen",
+              "Edelgaskonfiguration liegt nach Abgabe von 2 Elektronen vor",
+              "Magnesium oder Calcium können Element X sein"
             ]
           },
           {
@@ -567,16 +567,16 @@
             "id": "02-elemente-ionen-mol:3:1",
             "question": "Ein Ion hat 18 Elektronen und 16 Protonen. Welche Aussagen sind korrekt?",
             "options": [
-              "Es handelt sich um ein Sulfid-Ion (S²⁻)",
-              "Das Ion ist ein Anion",
-              "Das Ion hat 2 negative Ladungen",
-              "Es handelt sich um Argon"
+              "Ion ist ein Sulfid-Ion (S²⁻)",
+              "Ion ist ein Anion",
+              "Ion trägt 2 negative Ladungen",
+              "Ion ist Argon"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Es handelt sich um ein Sulfid-Ion (S²⁻)",
-              "Das Ion ist ein Anion",
-              "Das Ion hat 2 negative Ladungen"
+              "Ion ist ein Sulfid-Ion (S²⁻)",
+              "Ion ist ein Anion",
+              "Ion trägt 2 negative Ladungen"
             ]
           },
           {
@@ -972,17 +972,17 @@
             "id": "03-gleichungen-stoechiometrie:3:3",
             "question": "Welche Aussagen über die Gleichung 4 NH₃ + 5 O₂ → 4 NO + 6 H₂O sind korrekt?",
             "options": [
-              "4 mol NH₃ reagieren mit 5 mol O₂",
-              "Es entstehen 6 mol H₂O pro 4 mol NH₃",
-              "Die Anzahl der H-Atome ist auf beiden Seiten gleich",
-              "Die Anzahl der O-Atome ist auf beiden Seiten gleich"
+              "Stoffmengenverhältnis NH₃:O₂ beträgt 4:5",
+              "Reaktion bildet 6 mol H₂O pro 4 mol NH₃",
+              "Anzahl der H-Atome ist auf beiden Seiten gleich",
+              "Anzahl der O-Atome ist auf beiden Seiten gleich"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "4 mol NH₃ reagieren mit 5 mol O₂",
-              "Es entstehen 6 mol H₂O pro 4 mol NH₃",
-              "Die Anzahl der H-Atome ist auf beiden Seiten gleich",
-              "Die Anzahl der O-Atome ist auf beiden Seiten gleich"
+              "Stoffmengenverhältnis NH₃:O₂ beträgt 4:5",
+              "Reaktion bildet 6 mol H₂O pro 4 mol NH₃",
+              "Anzahl der H-Atome ist auf beiden Seiten gleich",
+              "Anzahl der O-Atome ist auf beiden Seiten gleich"
             ]
           },
           {
@@ -1184,14 +1184,14 @@
             "id": "04-reaktionen-empirische-formeln:1:2",
             "question": "Was ist eine Verbrennungsreaktion?",
             "options": [
-              "Eine Reaktion mit Wasser",
-              "Eine Reaktion mit Sauerstoff unter Freisetzung von Energie",
-              "Eine Reaktion ohne Energieänderung",
-              "Eine Reaktion mit Stickstoff"
+              "Reaktion mit Wasser",
+              "Reaktion mit Sauerstoff unter Energiefreisetzung",
+              "Reaktion ohne Energieänderung",
+              "Reaktion mit Stickstoff"
             ],
             "type": "multiple-choice",
             "correctAnswers": [
-              "Eine Reaktion mit Sauerstoff unter Freisetzung von Energie"
+              "Reaktion mit Sauerstoff unter Energiefreisetzung"
             ]
           },
           {
@@ -2491,15 +2491,15 @@
             "id": "07-bohr-elektronenkonfiguration:4:0",
             "question": "Warum hat Kupfer (Cu, Z=29) die Elektronenkonfiguration [Ar] 3d¹⁰ 4s¹ statt der erwarteten [Ar] 3d⁹ 4s²?",
             "options": [
-              "Vollständig gefüllte d-Orbitale sind besonders stabil",
-              "Die Elektronenpaarungsenergie im 4s-Orbital ist günstig",
-              "Ein Elektron wechselt vom 4s ins 3d zur Stabilisierung",
+              "Vollständig gefüllte d-Orbitale besitzen besondere Stabilität",
+              "Elektronenpaarungsenergie im 4s-Orbital ist günstig",
+              "Elektron wechselt vom 4s ins 3d zur Stabilisierung",
               "Kupfer zeigt anomales Verhalten wie Chrom"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Vollständig gefüllte d-Orbitale sind besonders stabil",
-              "Ein Elektron wechselt vom 4s ins 3d zur Stabilisierung",
+              "Vollständig gefüllte d-Orbitale besitzen besondere Stabilität",
+              "Elektron wechselt vom 4s ins 3d zur Stabilisierung",
               "Kupfer zeigt anomales Verhalten wie Chrom"
             ]
           },
@@ -2608,19 +2608,35 @@
           },
           {
             "id": "07-bohr-elektronenkonfiguration:5:3",
-            "question": "Warum ist die dritte Ionisierungsenergie von Magnesium (Mg) viel höher als die zweite?",
+            "question": "Welche Aussagen zur Abschirmung und Penetration von Orbitalen sind korrekt?",
             "options": [
-              "Das dritte Elektron kommt aus einer inneren, abgeschlossenen Schale",
-              "Mg²⁺ hat Edelgaskonfiguration",
-              "Die effektive Kernladung ist für das 2p-Elektron viel höher",
-              "Es muss die stabile Neon-Konfiguration aufgebrochen werden"
+              "s-Elektronen penetrieren stärker zum Kern als p-Elektronen",
+              "Penetration erklärt Füllung von 4s vor 3d",
+              "d- und f-Elektronen schirmen schlecht ab",
+              "Effektive Kernladung ist für s- und p-Elektronen identisch"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Das dritte Elektron kommt aus einer inneren, abgeschlossenen Schale",
-              "Mg²⁺ hat Edelgaskonfiguration",
-              "Die effektive Kernladung ist für das 2p-Elektron viel höher",
-              "Es muss die stabile Neon-Konfiguration aufgebrochen werden"
+              "s-Elektronen penetrieren stärker zum Kern als p-Elektronen",
+              "Penetration erklärt Füllung von 4s vor 3d",
+              "d- und f-Elektronen schirmen schlecht ab"
+            ]
+          },
+          {
+            "id": "07-bohr-elektronenkonfiguration:5:4",
+            "question": "Warum ist die dritte Ionisierungsenergie von Magnesium (Mg) viel höher als die zweite?",
+            "options": [
+              "Drittes Elektron stammt aus innerer, abgeschlossener Schale",
+              "Mg²⁺ besitzt Edelgaskonfiguration",
+              "Effektive Kernladung ist für das 2p-Elektron viel höher",
+              "Stabile Neon-Konfiguration muss aufgebrochen werden"
+            ],
+            "type": "multiple-choice-multiple",
+            "correctAnswers": [
+              "Drittes Elektron stammt aus innerer, abgeschlossener Schale",
+              "Mg²⁺ besitzt Edelgaskonfiguration",
+              "Effektive Kernladung ist für das 2p-Elektron viel höher",
+              "Stabile Neon-Konfiguration muss aufgebrochen werden"
             ]
           }
         ]
@@ -2941,15 +2957,15 @@
             "id": "08-ionenbindung-lewis:5:1",
             "question": "Wie unterscheiden sich die zwei Methoden zur Bestimmung der Gitterenergie (Kreisprozess vs. elektrostatische Berechnung)?",
             "options": [
-              "Der Kreisprozess ist experimentell, die Berechnung ist theoretisch",
-              "Der Kreisprozess nutzt den Hess'schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen",
+              "Kreisprozess ist experimentell, Berechnung ist theoretisch",
+              "Kreisprozess nutzt Hess'schen Satz, Berechnung nutzt Coulomb-Wechselwirkungen",
               "Abweichungen zwischen beiden deuten auf kovalente Anteile hin",
               "Beide Methoden liefern bei rein ionischen Verbindungen sehr ähnliche Werte"
             ],
             "type": "multiple-choice-multiple",
             "correctAnswers": [
-              "Der Kreisprozess ist experimentell, die Berechnung ist theoretisch",
-              "Der Kreisprozess nutzt den Hess'schen Satz, die Berechnung nutzt Coulomb-Wechselwirkungen",
+              "Kreisprozess ist experimentell, Berechnung ist theoretisch",
+              "Kreisprozess nutzt Hess'schen Satz, Berechnung nutzt Coulomb-Wechselwirkungen",
               "Abweichungen zwischen beiden deuten auf kovalente Anteile hin"
             ]
           },
