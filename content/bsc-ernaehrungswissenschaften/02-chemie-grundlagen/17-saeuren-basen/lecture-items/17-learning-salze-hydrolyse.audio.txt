@@ -1,0 +1,45 @@
+Was passiert, wenn man ein Salz in Wasser löst?
+
+Die Ionen können mit Wasser reagieren... das nennt man Hydrolyse.
+
+...
+
+Es gibt vier verschiedene Fälle.
+
+Erster Fall: Das Salz stammt von einer starken Base und einer starken Säure.
+
+Beispiele sind Natriumchlorid oder Kaliumnitrat.
+
+Der pH ist neutral... etwa sieben.
+
+Weder das Kation noch das Anion reagieren mit Wasser.
+
+...
+
+Zweiter Fall: Starke Base plus schwache Säure.
+
+Beispiel: Natriumacetat.
+
+Das Acetat-Ion ist die konjugierte Base der schwachen Essigsäure.
+
+Es reagiert mit Wasser und bildet Hydroxid-Ionen.
+
+Der pH ist größer als sieben... also basisch.
+
+...
+
+Dritter Fall: Schwache Base plus starke Säure.
+
+Beispiel: Ammoniumchlorid.
+
+Das Ammonium-Ion kann Protonen abgeben.
+
+Der pH ist kleiner als sieben... also sauer.
+
+...
+
+Vierter Fall: Schwache Base plus schwache Säure.
+
+Hier kommt es auf das Verhältnis der Konstanten an.
+
+Ist Ks größer als Kb? Dann sauer. Ist Kb größer? Dann basisch.

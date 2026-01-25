@@ -33,18 +33,19 @@ Diese Regeln dürfen **NIEMALS** missachtet werden:
 
 Detaillierte Anleitungen in `.github/copilot/`:
 
-| Datei                                                        | Thema                       |
-| ------------------------------------------------------------ | --------------------------- |
-| [content-plan-creation.md](copilot/content-plan-creation.md) | CONTENT_PLAN.md erstellen   |
-| [content-generation.md](copilot/content-generation.md)       | Inhalte aus Plan generieren |
-| [content-types.md](copilot/content-types.md)                 | YAML-Referenz aller Types   |
-| [validation.md](copilot/validation.md)                       | Validierungs-Befehle        |
-| [git-workflow.md](copilot/git-workflow.md)                   | Branches, Commits, PRs      |
-| [module-training.md](copilot/module-training.md)             | Training-Fragen             |
-| [audio-workflow.md](copilot/audio-workflow.md)               | **Audio für Lerninhalte**   |
-| [audio-scripts.md](copilot/audio-scripts.md)                 | Audio-Script Format         |
-| [audio-generation.md](copilot/audio-generation.md)           | TTS-Generierung Details     |
-| [video-workflow.md](copilot/video-workflow.md)               | **YouTube-Videos finden**   |
+| Datei                                                        | Thema                        |
+| ------------------------------------------------------------ | ---------------------------- |
+| [content-plan-creation.md](copilot/content-plan-creation.md) | CONTENT_PLAN.md erstellen    |
+| [content-generation.md](copilot/content-generation.md)       | **8-Schritte-Workflow**      |
+| [content-verification.md](copilot/content-verification.md)   | **Vollständigkeits-Prüfung** |
+| [content-types.md](copilot/content-types.md)                 | YAML-Referenz aller Types    |
+| [validation.md](copilot/validation.md)                       | Validierungs-Befehle         |
+| [git-workflow.md](copilot/git-workflow.md)                   | Branches, Commits, PRs       |
+| [module-training.md](copilot/module-training.md)             | Training-Fragen              |
+| [audio-workflow.md](copilot/audio-workflow.md)               | **Audio für Lerninhalte**    |
+| [audio-scripts.md](copilot/audio-scripts.md)                 | Audio-Script Format          |
+| [audio-generation.md](copilot/audio-generation.md)           | TTS-Generierung Details      |
+| [video-workflow.md](copilot/video-workflow.md)               | **YouTube-Videos finden**    |
 
 ## Quick Reference
 
@@ -66,6 +67,7 @@ Detaillierte Anleitungen in `.github/copilot/`:
 ```bash
 npm run build                    # JSON regenerieren
 npm run validate:content         # Content prüfen
+npm run validate:videos          # YouTube-Videos prüfen (oEmbed)
 npm run validate:views           # Views prüfen
 npx markdownlint-cli2 "**/*.md"  # Markdown linten (OHNE --fix!)
 ```

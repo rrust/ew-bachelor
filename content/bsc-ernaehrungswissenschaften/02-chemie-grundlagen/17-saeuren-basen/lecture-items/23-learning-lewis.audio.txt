@@ -1,0 +1,39 @@
+Die Lewis-Theorie erweitert unser Verständnis von Säuren und Basen.
+
+Sie geht über die reine Protonenübertragung hinaus.
+
+...
+
+Nach Lewis ist eine Säure ein Elektronenpaarakzeptor.
+
+Eine Base ist ein Elektronenpaardonator.
+
+...
+
+Das klingt kompliziert, ist aber sehr nützlich.
+
+Diese Definition erklärt auch Reaktionen, bei denen gar kein Proton übertragen wird.
+
+...
+
+Ein klassisches Beispiel: Bortrifluorid reagiert mit Ammoniak.
+
+Bortrifluorid hat eine Elektronenlücke am Bor... es ist die Lewis-Säure.
+
+Ammoniak hat ein freies Elektronenpaar am Stickstoff... es ist die Lewis-Base.
+
+Sie bilden zusammen eine koordinative Bindung.
+
+...
+
+Metallionen in Wasser sind ebenfalls Lewis-Säuren.
+
+Eisen drei plus zum Beispiel koordiniert sechs Wassermoleküle.
+
+Dabei kann ein Proton abgespalten werden... die Lösung wird sauer.
+
+...
+
+Eine wichtige Regel: Je kleiner das Ion und je höher die Ladung... desto stärker die Lewis-Säure.
+
+Das erklärt, warum Eisenchlorid-Lösungen sauer reagieren, Natriumchlorid-Lösungen aber neutral bleiben.

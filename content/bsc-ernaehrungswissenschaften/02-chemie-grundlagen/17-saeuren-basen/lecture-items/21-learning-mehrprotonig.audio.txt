@@ -1,0 +1,41 @@
+Manche Säuren können mehr als ein Proton abgeben.
+
+Diese nennt man mehrprotonige Säuren.
+
+...
+
+Das Besondere: Sie dissoziieren stufenweise... nicht alle Protonen auf einmal.
+
+Nehmen wir Phosphorsäure als Beispiel.
+
+Sie ist dreiprotonig und dissoziiert in drei Stufen.
+
+Zuerst gibt H drei P O vier ein Proton ab und wird zu H zwei P O vier minus.
+
+Dann kommt die zweite Stufe... H P O vier zwei minus.
+
+Und schließlich die dritte... P O vier drei minus.
+
+...
+
+Dabei gilt ein wichtiger Trend.
+
+Die erste Dissoziationskonstante ist viel größer als die zweite.
+
+Und die zweite ist viel größer als die dritte.
+
+...
+
+Warum ist das so?
+
+Nach Abgabe des ersten Protons ist das Teilchen negativ geladen.
+
+Es ist viel schwieriger, ein positives Proton von einem negativen Ion abzuspalten.
+
+...
+
+Die praktische Konsequenz:
+
+Der pH-Wert wird fast ausschließlich durch die erste Dissoziationsstufe bestimmt.
+
+Die weiteren Stufen können bei der Berechnung oft vernachlässigt werden.

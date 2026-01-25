@@ -8,6 +8,7 @@ Alle Validierungen und Qualitätsprüfungen.
 | ---------------------------------------- | --------------------------- |
 | `npm run build`                          | JSON-Dateien regenerieren   |
 | `npm run validate:content`               | Content-Struktur prüfen     |
+| `npm run validate:videos`                | YouTube-Videos prüfen       |
 | `npm run validate:views`                 | View-Vollständigkeit prüfen |
 | `npx markdownlint-cli2 "**/*.md"`        | Markdown-Syntax prüfen      |
 | `node scripts/generate-test-progress.js` | Testdaten regenerieren      |
@@ -37,6 +38,16 @@ npm run validate:views                     # Views vollständig?
 
 ## YouTube-Video-Verifizierung
 
+### Batch-Validierung
+
+```bash
+npm run validate:videos
+# oder für spezifisches Studium:
+node scripts/validate-videos.js bsc-ernaehrungswissenschaften
+```
+
+### Manuelle Prüfung
+
 Jede Video-URL MUSS vor Verwendung geprüft werden:
 
 ```bash
@@ -49,6 +60,7 @@ curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDE
 | HTTP 401/403/404                           | ❌ NICHT verwenden |
 
 **Bekannte Probleme:**
+
 - simpleclub Videos → Embedding oft blockiert
 - Alte Videos → Können gelöscht sein
 - Geo-Blocking → In AT/DE prüfen

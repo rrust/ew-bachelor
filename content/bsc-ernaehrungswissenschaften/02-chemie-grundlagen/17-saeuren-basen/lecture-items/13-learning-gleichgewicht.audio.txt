@@ -1,0 +1,39 @@
+Bei schwachen Säuren wird es etwas komplizierter.
+
+Sie dissoziieren nicht vollständig... es stellt sich ein Gleichgewicht ein.
+
+...
+
+Dafür gibt es die Säurekonstante Ks... manchmal auch Ka genannt.
+
+Sie beschreibt, wie weit das Gleichgewicht auf der Produktseite liegt.
+
+Je kleiner Ks... desto schwächer die Säure.
+
+...
+
+Der pKs-Wert ist der negative Logarithmus von Ks.
+
+Je größer der pKs... desto schwächer die Säure.
+
+...
+
+Für ein konjugiertes Säure-Base-Paar gilt immer:
+
+Ks mal Kb gleich Kw... also zehn hoch minus vierzehn.
+
+Und pKs plus pKb gleich vierzehn.
+
+...
+
+Wie berechnet man nun den pH einer schwachen Säure?
+
+Hier gibt es eine praktische Näherungsformel.
+
+Die Hydronium-Ionen-Konzentration ist ungefähr gleich der Wurzel aus Ks mal der Anfangskonzentration.
+
+...
+
+Diese Näherung gilt, wenn Ks deutlich kleiner ist als die Konzentration.
+
+Als Faustregel: Hundert mal Ks sollte kleiner sein als die Anfangskonzentration.
