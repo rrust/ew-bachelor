@@ -247,7 +247,10 @@ function renderModuleTrainingView() {
   }
 
   // If exercises-only mode but NO exercises for this level, show message
-  if (trainingMode === TRAINING_MODES.EXERCISES_ONLY && exercises.length === 0) {
+  if (
+    trainingMode === TRAINING_MODES.EXERCISES_ONLY &&
+    exercises.length === 0
+  ) {
     container.innerHTML = `
       <div class="text-center py-12">
         <div class="mb-4 flex justify-center">
@@ -824,11 +827,13 @@ function renderExerciseView() {
         <button
           onclick="window.exitExerciseMode()"
           class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-          title="Zurück zu MC-Fragen"
+          title="Übung beenden"
         >
           ✕
         </button>
       </div>
+      <!-- Training Mode Toggle -->
+      ${renderTrainingModeToggle(bundle, training.currentLevel)}
     </div>
     
     <!-- Topic badge -->
