@@ -1,0 +1,95 @@
+# Kapitel 12: Aggregatzustände & Phasenübergänge
+# Level 2: Verständnis
+
+topic: 'Aggregatzustände & Phasenübergänge'
+level: 2
+questions:
+  - question: 'Warum steigt der Dampfdruck mit der Temperatur?'
+    options:
+      - 'Mehr Moleküle haben genug Energie zum Verdampfen'
+      - 'Die kinetische Energie der Moleküle steigt'
+      - 'Das Gleichgewicht verschiebt sich zur Gasphase'
+      - 'Die Flüssigkeit wird schwerer'
+      - 'Die Clausius-Clapeyron-Gleichung beschreibt den Zusammenhang'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zu Wasserstoffbrücken und Siedepunkt sind korrekt?'
+    options:
+      - 'H-Brücken erhöhen den Siedepunkt'
+      - 'H₂O siedet höher als erwartet für seine Masse'
+      - 'Mehr Energie wird zum Trennen der Moleküle benötigt'
+      - 'NH₃ und HF zeigen ähnliche Anomalien'
+      - 'CH₄ hat einen niedrigen Siedepunkt (keine H-Brücken)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum hat Wasser eine ungewöhnliche Dichte-Anomalie?'
+    options:
+      - 'Eis ist weniger dicht als flüssiges Wasser'
+      - 'H-Brücken im Eis erzeugen offene Struktur'
+      - 'Wasser hat maximale Dichte bei 4°C'
+      - 'Eis schwimmt auf Wasser'
+      - 'Die Dichte steigt kontinuierlich beim Abkühlen'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Faktoren beeinflussen den Siedepunkt einer Substanz?'
+    options:
+      - 'Stärke der intermolekularen Kräfte'
+      - 'Molekulare Masse'
+      - 'Molekülform und Polarität'
+      - 'Die Farbe des Stoffes'
+      - 'Wasserstoffbrücken, Dipol-Dipol, London-Kräfte'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was besagt die Clausius-Clapeyron-Gleichung?'
+    options:
+      - 'Sie beschreibt die T-Abhängigkeit des Dampfdrucks'
+      - 'ln(P₂/P₁) = ΔHvap/R × (1/T₁ - 1/T₂)'
+      - 'Höhere ΔHvap bedeutet steileren Anstieg'
+      - 'Sie erlaubt die Berechnung von Siedepunkten'
+      - 'P ist unabhängig von T'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum siedet Wasser bei niedrigerem Druck bei niedrigerer Temperatur?'
+    options:
+      - 'Der Dampfdruck muss nur den niedrigeren Außendruck erreichen'
+      - 'Auf Bergen siedet Wasser unter 100°C'
+      - 'Im Schnellkochtopf ist der Druck höher → Siedepunkt höher'
+      - 'Siedepunkt und Druck sind voneinander unabhängig'
+      - 'Das erklärt, warum Kochen in großer Höhe länger dauert'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zum kritischen Punkt sind korrekt?'
+    options:
+      - 'Oberhalb gibt es keinen Unterschied zwischen Flüssigkeit und Gas'
+      - 'Es existiert eine überkritische Phase'
+      - 'Für H₂O: Tc = 374°C, Pc = 218 atm'
+      - 'Überkritisches CO₂ wird als Lösungsmittel verwendet'
+      - 'Der kritische Punkt liegt unter dem Tripelpunkt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum sublimiert Trockeneis (CO₂) bei Normaldruck?'
+    options:
+      - 'Der Tripelpunkt von CO₂ liegt bei 5,2 atm'
+      - 'Bei 1 atm existiert keine flüssige Phase'
+      - 'Fest geht direkt in Gas über'
+      - 'CO₂ schmilzt bei Normaldruck'
+      - 'Sublimation bei -78°C'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zu intermolekularen Kräften und Aggregatzuständen sind korrekt?'
+    options:
+      - 'Starke Kräfte → höhere Siede- und Schmelzpunkte'
+      - 'Ionenverbindungen haben sehr hohe Schmelzpunkte'
+      - 'Gase haben schwache intermolekulare Wechselwirkungen'
+      - 'London-Kräfte sind bei unpolaren Stoffen dominant'
+      - 'Die Kräfte haben keinen Einfluss auf Aggregatzustände'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum bleibt die Temperatur während des Schmelzens konstant?'
+    options:
+      - 'Die Energie wird zum Brechen der Bindungen verwendet'
+      - 'Schmelzenthalpie wird absorbiert'
+      - 'Die kinetische Energie bleibt gleich'
+      - 'Das System ist im Phasengleichgewicht'
+      - 'Die Temperatur steigt kontinuierlich'
+    correct: [0, 1, 2, 3]

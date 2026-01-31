@@ -1,0 +1,95 @@
+# Kapitel 4: Chemische Reaktionen & Empirische Formeln
+# Level 3: Anwendung
+
+topic: 'Chemische Reaktionen & Empirische Formeln'
+level: 3
+questions:
+  - question: 'Wie hoch ist der Massenanteil von Kohlenstoff in CO₂ (M = 44 g/mol)?'
+    options:
+      - '12%'
+      - '27,3%'
+      - '32%'
+      - '72,7%'
+      - '50%'
+    correct: [1]
+
+  - question: 'Eine Verbindung enthält 40% C, 6,7% H und 53,3% O. Welche empirische Formel hat sie?'
+    options:
+      - 'CHO'
+      - 'CH₂O'
+      - 'C₂H₄O'
+      - 'CHO₂'
+      - 'C₃H₆O₃'
+    correct: [1]
+
+  - question: 'Welcher Reaktionstyp ist: Zn + CuSO₄ → ZnSO₄ + Cu?'
+    options:
+      - 'Synthese'
+      - 'Zersetzung'
+      - 'Einfache Verdrängung'
+      - 'Doppelte Umsetzung'
+      - 'Neutralisation'
+    correct: [2]
+
+  - question: 'Die empirische Formel einer Verbindung ist CH₂O, die molare Masse 180 g/mol. Welche Molekülformel hat sie?'
+    options:
+      - 'C₃H₆O₃'
+      - 'C₄H₈O₄'
+      - 'C₅H₁₀O₅'
+      - 'C₆H₁₂O₆'
+      - 'C₂H₄O₂'
+    correct: [3]
+
+  - question: 'Welche Produkte entstehen bei der vollständigen Verbrennung von Ethanol (C₂H₅OH)?'
+    options:
+      - 'CO und H₂O'
+      - 'CO₂ und H₂O'
+      - 'C und H₂O'
+      - 'CO₂ und H₂'
+      - 'CH₄ und O₂'
+    correct: [1]
+
+  - question: 'Welcher Reaktionstyp ist: AgNO₃ + NaCl → AgCl↓ + NaNO₃?'
+    options:
+      - 'Synthese'
+      - 'Zersetzung'
+      - 'Einfache Verdrängung'
+      - 'Doppelte Umsetzung (Fällung)'
+      - 'Verbrennung'
+    correct: [3]
+
+  - question: 'Eine Verbindung enthält 52,2% C, 13% H und 34,8% O. Wie hoch ist das Molverhältnis C:H:O?'
+    options:
+      - '1:1:1'
+      - '2:4:1'
+      - '1:3:1'
+      - '2:6:1'
+      - '3:8:2'
+    correct: [3]
+
+  - question: 'Welches Metall kann Eisen aus einer FeSO₄-Lösung verdrängen?'
+    options:
+      - 'Kupfer'
+      - 'Silber'
+      - 'Gold'
+      - 'Zink'
+      - 'Platin'
+    correct: [3]
+
+  - question: 'Die Summe der Massenanteile in einer reinen Verbindung ist?'
+    options:
+      - 'Variabel'
+      - 'Abhängig von der Masse'
+      - '100%'
+      - '50%'
+      - 'Unbekannt ohne Analyse'
+    correct: [2]
+
+  - question: 'Welche Aussagen zu CaCO₃ → CaO + CO₂ sind korrekt?'
+    options:
+      - 'Es ist eine Zersetzungsreaktion'
+      - 'Es entstehen zwei Produkte'
+      - 'Wärme wird benötigt (endotherm)'
+      - 'Es ist eine Synthese'
+      - 'CO₂ ist ein Gas'
+    correct: [0, 1, 2, 4]

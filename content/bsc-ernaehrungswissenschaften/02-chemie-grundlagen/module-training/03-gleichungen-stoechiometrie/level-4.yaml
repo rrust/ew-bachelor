@@ -1,0 +1,96 @@
+# Kapitel 3: Chemische Gleichungen & Stöchiometrie
+# Level 4: Analyse
+# 10 Fragen, 1-5 korrekte Antworten, komplexere Berechnungen
+
+topic: 'Chemische Gleichungen & Stöchiometrie'
+level: 4
+questions:
+  - question: '10 g H₂ und 80 g O₂ reagieren zu H₂O. Welcher Reaktand limitiert? (M: H₂ = 2, O₂ = 32 g/mol)'
+    options:
+      - 'Wasserstoff limitiert'
+      - 'Sauerstoff limitiert'
+      - 'n(H₂) = 5 mol, n(O₂) = 2,5 mol'
+      - 'Für 5 mol H₂ braucht man 2,5 mol O₂'
+      - 'Beide Reaktanden werden vollständig verbraucht'
+    correct: [1, 2, 3]
+
+  - question: 'Bei der Reaktion 2 Al + 3 Cl₂ → 2 AlCl₃ reagieren 5,4 g Al mit überschüssigem Cl₂. Wie viel g AlCl₃ entstehen? (M: Al = 27, AlCl₃ = 133,5 g/mol)'
+    options:
+      - '13,35 g'
+      - '26,7 g'
+      - '40,05 g'
+      - '0,2 mol Al ergeben 0,2 mol AlCl₃'
+      - 'Das Verhältnis Al:AlCl₃ ist 1:1'
+    correct: [1, 3, 4]
+
+  - question: 'Eine Reaktion hat eine Ausbeute von 80%. Wie viel g Produkt erhält man theoretisch aus 100 g Edukt, wenn laut Stöchiometrie 50 g entstehen sollten?'
+    options:
+      - '40 g'
+      - '50 g'
+      - '80 g'
+      - 'Theoretische Ausbeute = 50 g'
+      - 'Tatsächliche Ausbeute = 0,8 × 50 g'
+    correct: [0, 3, 4]
+
+  - question: '20 g CaCO₃ (M = 100 g/mol) werden erhitzt. Wie viel g CO₂ (M = 44 g/mol) entstehen bei vollständiger Zersetzung?'
+    options:
+      - '4,4 g'
+      - '8,8 g'
+      - '11,2 g'
+      - 'n(CaCO₃) = 0,2 mol'
+      - 'n(CO₂) = n(CaCO₃) wegen 1:1-Verhältnis'
+    correct: [1, 3, 4]
+
+  - question: 'Für 2 KClO₃ → 2 KCl + 3 O₂: Wie viel mol O₂ aus 245 g KClO₃ (M = 122,5 g/mol)?'
+    options:
+      - '1,5 mol'
+      - '2 mol'
+      - '3 mol'
+      - '4,5 mol'
+      - '2 mol KClO₃ ergeben 3 mol O₂'
+    correct: [2, 4]
+
+  - question: 'Bei Fe₂O₃ + 3 C → 2 Fe + 3 CO: Wie viel g Kohlenstoff für 160 g Fe₂O₃ (M = 160 g/mol)?'
+    options:
+      - '12 g'
+      - '24 g'
+      - '36 g'
+      - '1 mol Fe₂O₃ braucht 3 mol C'
+      - 'M(C) = 12 g/mol'
+    correct: [2, 3, 4]
+
+  - question: 'Welche Aussagen zu Zn + 2 HCl → ZnCl₂ + H₂ sind korrekt, wenn 6,5 g Zn (M = 65 g/mol) eingesetzt werden?'
+    options:
+      - 'n(Zn) = 0,1 mol'
+      - 'Es werden 0,2 mol HCl benötigt'
+      - 'Es entstehen 0,1 mol H₂'
+      - 'Die Masse H₂ beträgt 0,2 g'
+      - 'Das Volumen H₂ bei STP ist 2,24 L'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: '8,5 g NH₃ (M = 17 g/mol) und 18 g HCl (M = 36,5 g/mol) reagieren. Was stimmt?'
+    options:
+      - 'n(NH₃) = 0,5 mol'
+      - 'n(HCl) ≈ 0,49 mol'
+      - 'NH₃ ist im Überschuss'
+      - 'HCl limitiert die Reaktion'
+      - 'Es entstehen ca. 0,49 mol NH₄Cl'
+    correct: [0, 1, 3, 4]
+
+  - question: 'Eine prozentuale Ausbeute von 75% bedeutet bei einer theoretischen Ausbeute von 40 g?'
+    options:
+      - 'Tatsächlich erhält man 30 g'
+      - 'Tatsächlich erhält man 53,3 g'
+      - '25% des Produkts gehen verloren'
+      - 'Ausbeute = (tatsächlich/theoretisch) × 100%'
+      - 'Nebenreaktionen oder Verluste reduzieren die Ausbeute'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Für die Neutralisation: HCl + NaOH → NaCl + H₂O. Wie viel mL 0,5 M NaOH neutralisieren 25 mL 0,4 M HCl?'
+    options:
+      - '10 mL'
+      - '20 mL'
+      - '25 mL'
+      - 'n(HCl) = 0,01 mol'
+      - 'V(NaOH) = n/c = 0,01/0,5 = 0,02 L'
+    correct: [1, 3, 4]

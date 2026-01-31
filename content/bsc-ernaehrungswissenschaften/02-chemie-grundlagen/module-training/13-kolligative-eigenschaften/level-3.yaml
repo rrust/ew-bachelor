@@ -1,0 +1,95 @@
+# Kapitel 13: Kolligative Eigenschaften
+# Level 3: Anwendung
+
+topic: 'Kolligative Eigenschaften'
+level: 3
+questions:
+  - question: 'Berechne ΔTf für 1 mol NaCl in 1 kg Wasser (Kf = 1,86 K·kg/mol, i = 2)'
+    options:
+      - '1,86 K'
+      - '3,72 K'
+      - '0,93 K'
+      - '5,58 K'
+      - '7,44 K'
+    correct: [1]
+
+  - question: 'Welche Lösung hat den niedrigsten Gefrierpunkt?'
+    options:
+      - '1 m Glucose'
+      - '1 m NaCl'
+      - '1 m CaCl₂'
+      - '1 m Harnstoff'
+      - 'Alle gleich'
+    correct: [2]
+
+  - question: 'Berechne den osmotischen Druck einer 0,1 M Glucose-Lösung bei 25°C (R = 8,314 J/(mol·K))'
+    options:
+      - '2,48 atm'
+      - '0,248 atm'
+      - '24,8 atm'
+      - '0,0248 atm'
+      - '248 atm'
+    correct: [0]
+
+  - question: "Welchen van't Hoff-Faktor hat MgCl₂?"
+    options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    correct: [2]
+
+  - question: 'Eine 0,5 m Glucose-Lösung in Wasser: Berechne ΔTb (Kb = 0,512 K·kg/mol)'
+    options:
+      - '0,256 K'
+      - '0,512 K'
+      - '1,024 K'
+      - '0,128 K'
+      - '2,048 K'
+    correct: [0]
+
+  - question: 'Welche Lösung ist isoton zu 0,9% NaCl (physiologische Kochsalzlösung)?'
+    options:
+      - '0,9% Glucose'
+      - '5% Glucose'
+      - '0,45% NaCl'
+      - '1,8% NaCl'
+      - '10% Glucose'
+    correct: [1]
+
+  - question: '58,5 g NaCl werden in 500 g Wasser gelöst. Wie groß ist ΔTf? (Kf = 1,86, i = 2)'
+    options:
+      - '3,72 K'
+      - '7,44 K'
+      - '1,86 K'
+      - '14,88 K'
+      - '0,93 K'
+    correct: [1]
+
+  - question: 'Welcher osmotische Druck herrscht im Blutplasma bei 37°C (c ≈ 0,3 osmol/L)?'
+    options:
+      - 'Etwa 7,7 atm'
+      - 'Etwa 0,77 atm'
+      - 'Etwa 77 atm'
+      - 'Etwa 0,077 atm'
+      - 'Etwa 770 atm'
+    correct: [0]
+
+  - question: 'Berechne die Molmasse eines Stoffes: 5 g in 100 g Wasser ergeben ΔTf = 0,93 K (Kf = 1,86)'
+    options:
+      - '100 g/mol'
+      - '50 g/mol'
+      - '200 g/mol'
+      - '25 g/mol'
+      - '400 g/mol'
+    correct: [0]
+
+  - question: 'Welche Konzentration an Ethylenglykol (M = 62 g/mol) schützt bis -20°C? (Kf = 1,86 K·kg/mol)'
+    options:
+      - 'Etwa 10,75 mol/kg'
+      - 'Etwa 5,4 mol/kg'
+      - 'Etwa 2,7 mol/kg'
+      - 'Etwa 21,5 mol/kg'
+      - 'Etwa 1,35 mol/kg'
+    correct: [0]

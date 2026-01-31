@@ -1,0 +1,95 @@
+# Kapitel 9: Elektronegativität, Polarität & VSEPR
+# Level 5: Synthese/Transfer
+
+topic: 'Elektronegativität, Polarität & VSEPR'
+level: 5
+questions:
+  - question: 'Warum ist Wasser ein außergewöhnlich gutes Lösungsmittel?'
+    options:
+      - 'Hohe Polarität (Dipolmoment 1,85 D)'
+      - 'Kann Wasserstoffbrücken bilden'
+      - 'Kleine Molekülgröße erlaubt gute Solvatation'
+      - 'Hohe Dielektrizitätskonstante schwächt ionische Wechselwirkungen'
+      - 'Löst polare und ionische Stoffe gut'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie beeinflusst die Molekülform die biologische Aktivität?'
+    options:
+      - 'Enzyme erkennen Substrate durch Form (Schlüssel-Schloss)'
+      - 'Chirale Moleküle können unterschiedlich wirken'
+      - 'Die 3D-Struktur bestimmt Wechselwirkungen'
+      - 'Medikamente müssen zur Zielstruktur passen'
+      - 'VSEPR hilft Molekülformen vorherzusagen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum haben perfluorierte Verbindungen wie PTFE (Teflon) ungewöhnliche Eigenschaften?'
+    options:
+      - 'C-F Bindungen sind sehr stark und polar'
+      - 'F hat die höchste Elektronegativität'
+      - 'Die Oberfläche ist hydrophob trotz polarer Bindungen'
+      - 'Symmetrie der CF₂-Einheiten führt zu keinem Netto-Dipol'
+      - 'Geringe Wechselwirkungen mit anderen Stoffen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt die Geometrie bei der Photosynthese?'
+    options:
+      - 'Chlorophyll hat eine planare Porphyrin-Struktur'
+      - 'Die Form ermöglicht effiziente Lichtabsorption'
+      - 'Mg²⁺ im Zentrum ist quadratisch-planar koordiniert'
+      - 'Die Geometrie beeinflusst die Elektronenübertragung'
+      - 'Ähnliche Strukturen finden sich in Hämoglobin'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist die Bindung in HF stärker polar als in HI?'
+    options:
+      - 'F hat höhere EN als I'
+      - 'Die EN-Differenz H-F ist größer'
+      - 'HF hat ein größeres Dipolmoment'
+      - 'HF bildet stärkere Wasserstoffbrücken'
+      - 'I ist größer und weniger elektronegativ'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur molekularen Erkennung durch Geruchsrezeptoren sind korrekt?'
+    options:
+      - 'Die Molekülform beeinflusst den Geruch'
+      - 'Funktionelle Gruppen und ihre Position sind wichtig'
+      - 'Spiegelbildisomere können unterschiedlich riechen'
+      - 'Rezeptoren erkennen 3D-Strukturen'
+      - 'VSEPR-Vorhersagen helfen Geruchsstoffe zu verstehen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die VSEPR-Theorie die Struktur von Proteinen?'
+    options:
+      - 'Lokale Geometrie an C, N, O folgt VSEPR'
+      - 'sp³-C ist tetraedrisch'
+      - 'Peptidbindungen sind planar (sp² an C und N)'
+      - 'Wasserstoffbrücken stabilisieren die Struktur'
+      - 'Seitenketten haben charakteristische Geometrien'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist CO₂ unpolar, aber SO₂ polar?'
+    options:
+      - 'CO₂ ist linear (180°), Dipole heben sich auf'
+      - 'SO₂ ist gewinkelt (ca. 119°)'
+      - 'S hat ein freies Elektronenpaar'
+      - 'Die S=O Dipole addieren sich'
+      - 'Geometrie bestimmt die Polarität des Moleküls'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat die Molekülpolarität für Zellmembranen?'
+    options:
+      - 'Phospholipide haben polare Köpfe und unpolare Schwänze'
+      - 'Die Doppelschicht bildet sich wegen hydrophober Effekte'
+      - 'Polare Stoffe können die Membran nicht passieren'
+      - 'Ionenkanäle ermöglichen selektiven Transport'
+      - 'Die Struktur erklärt Membranpermeabilität'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Geometrie von Xenon-Verbindungen sind korrekt?'
+    options:
+      - 'XeF₂ ist linear (2 BP, 3 FP)'
+      - 'XeF₄ ist quadratisch-planar (4 BP, 2 FP)'
+      - 'XeF₆ hat eine verzerrte oktaedrische Geometrie'
+      - 'Xenon bildet Verbindungen wegen seiner Größe'
+      - 'Die freien Paare beeinflussen die Geometrie stark'
+    correct: [0, 1, 2, 3, 4]

@@ -1,0 +1,95 @@
+# Kapitel 7: Bohr-Modell & Elektronenkonfigurationen
+# Level 5: Synthese/Transfer
+
+topic: 'Bohr-Modell & Elektronenkonfigurationen'
+level: 5
+questions:
+  - question: 'Warum zeigen Flammentests charakteristische Farben?'
+    options:
+      - 'Elektronen werden angeregt und emittieren Licht beim Rückfall'
+      - 'Die Wellenlänge entspricht der Energiedifferenz'
+      - 'Jedes Element hat typische Energieniveaus'
+      - 'Na zeigt gelb (589 nm), K zeigt violett'
+      - 'Dies erklärt das Bohrsche Atommodell'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum leitet Kupfer Strom besser als Eisen?'
+    options:
+      - 'Cu hat freie 4s-Elektronen'
+      - 'Die volle 3d-Schale ist stabil'
+      - 'Die Elektronenbeweglichkeit ist hoch'
+      - 'Eisen hat d-Elektronen die lokalisiert sind'
+      - 'Die Elektronenkonfiguration beeinflusst Leitfähigkeit'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Warum bildet Sauerstoff O₂ und nicht O₃ als stabile Form?'
+    options:
+      - 'O hat 6 Valenzelektronen (2s² 2p⁴)'
+      - 'Zwei O-Atome teilen 2 Elektronenpaare'
+      - 'O₂ erreicht das Oktett für beide Atome'
+      - 'O₃ (Ozon) ist weniger stabil'
+      - 'Die Bindungsordnung in O₂ ist 2'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu Lanthaniden sind korrekt?'
+    options:
+      - 'Sie füllen die 4f-Orbitale'
+      - 'Sie haben ähnliche chemische Eigenschaften'
+      - 'Die 4f-Elektronen sind tief im Atom'
+      - 'Die Lanthaniden-Kontraktion beeinflusst Atomradien'
+      - 'Sie werden auch "Seltene Erden" genannt'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Atom zeigt eine Emissionslinie bei 656 nm. Welche Aussagen sind korrekt?'
+    options:
+      - 'Dies liegt im roten Bereich des Spektrums'
+      - 'Es handelt sich um die H-alpha-Linie des Wasserstoffs'
+      - 'Ein Elektron fällt von n=3 auf n=2'
+      - 'E = hν = hc/λ bestimmt die Energie'
+      - 'Atomspektren sind charakteristisch für jedes Element'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum sind Edelmetalle wie Gold chemisch inert?'
+    options:
+      - 'Sie haben relativ volle d-Orbitale'
+      - 'Hohe Ionisierungsenergie'
+      - 'Die relativistische Kontraktion der s-Orbitale'
+      - 'Starke Abschirmung durch d-Elektronen'
+      - 'Gold hat die Konfiguration [Xe] 4f¹⁴ 5d¹⁰ 6s¹'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu Übergangsmetall-Komplexen sind korrekt?'
+    options:
+      - 'd-Orbitale können Liganden aufnehmen'
+      - 'Kristallfeld-Aufspaltung verursacht Farben'
+      - 'Die Anzahl der d-Elektronen beeinflusst Magnetismus'
+      - 'Komplexe wie [Cu(H₂O)₆]²⁺ sind farbig'
+      - 'Die d-d-Übergänge absorbieren sichtbares Licht'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist Eisen(II) leicht zu Eisen(III) oxidierbar?'
+    options:
+      - 'Fe²⁺ [Ar] 3d⁶ ist weniger stabil als Fe³⁺ [Ar] 3d⁵'
+      - 'Halb gefüllte Orbitale sind stabiler'
+      - 'Das 6. d-Elektron ist relativ leicht zu entfernen'
+      - 'Rost enthält Fe₂O₃ (Fe³⁺)'
+      - 'Hämoglobin enthält Fe²⁺, das zu Fe³⁺ oxidiert werden kann'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Elektronenkonfiguration erwarten Sie für ein neutrales Element mit 24 Protonen?'
+    options:
+      - '[Ar] 3d⁴ 4s² wäre nach Aufbauprinzip'
+      - '[Ar] 3d⁵ 4s¹ ist die tatsächliche Konfiguration'
+      - 'Es handelt sich um Chrom'
+      - 'Halb gefüllte d-Orbitale sind stabiler'
+      - 'Chrom ist ein Ausnahmeelement'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum können Seltenerd-Ionen wie Eu³⁺ als Leuchtstoffe verwendet werden?'
+    options:
+      - 'f-f-Übergänge emittieren scharfe Spektrallinien'
+      - 'Die f-Orbitale sind von äußeren Schalen abgeschirmt'
+      - 'Charakteristische Emissionswellenlängen'
+      - 'Eu³⁺ emittiert rotes Licht'
+      - 'Anwendung in Bildschirmen und LED'
+    correct: [0, 1, 2, 3, 4]

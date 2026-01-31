@@ -1,0 +1,96 @@
+# Kapitel 3: Chemische Gleichungen & Stöchiometrie
+# Level 5: Synthese/Transfer
+# 10 Fragen, 1-5 korrekte Antworten, komplexe Szenarien
+
+topic: 'Chemische Gleichungen & Stöchiometrie'
+level: 5
+questions:
+  - question: 'Bei der Herstellung von Ammoniak (N₂ + 3 H₂ → 2 NH₃) werden 28 g N₂ und 8 g H₂ eingesetzt. Welche Aussagen sind korrekt?'
+    options:
+      - 'n(N₂) = 1 mol, n(H₂) = 4 mol'
+      - 'Stickstoff ist der limitierende Reaktand'
+      - 'Es können maximal 2 mol NH₃ entstehen'
+      - '1 mol H₂ bleibt im Überschuss'
+      - 'Die Masse an NH₃ beträgt maximal 34 g'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Gemisch aus 10 g CaCO₃ und 10 g MgCO₃ wird erhitzt. Wie viel g CO₂ entstehen? (M: CaCO₃ = 100, MgCO₃ = 84 g/mol)'
+    options:
+      - '4,4 g aus CaCO₃'
+      - '5,24 g aus MgCO₃'
+      - 'Insgesamt etwa 9,6 g CO₂'
+      - 'n(CaCO₃) = 0,1 mol, n(MgCO₃) = 0,119 mol'
+      - 'Beide Carbonate zersetzen sich im Verhältnis 1:1 zu CO₂'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Erz enthält 80% Fe₂O₃. Wie viel kg Fe können aus 1000 kg Erz gewonnen werden? (M: Fe₂O₃ = 160, Fe = 56 g/mol)'
+    options:
+      - '280 kg'
+      - '560 kg'
+      - '800 kg Fe₂O₃ sind im Erz'
+      - 'n(Fe₂O₃) = 5000 mol'
+      - 'n(Fe) = 10000 mol da 2 Fe pro Fe₂O₃'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Bei der Elektrolyse von Wasser entstehen 11,2 L O₂ (STP). Wie viel L H₂ entstehen und wie viel g H₂O wurden zersetzt?'
+    options:
+      - '22,4 L H₂'
+      - '11,2 L H₂'
+      - '18 g H₂O wurden zersetzt'
+      - '36 g H₂O wurden zersetzt'
+      - 'Das Volumenverhältnis H₂:O₂ ist 2:1'
+    correct: [0, 3, 4]
+
+  - question: 'Eine mehrstufige Synthese hat zwei Schritte mit je 90% Ausbeute. Wie hoch ist die Gesamtausbeute?'
+    options:
+      - '90%'
+      - '81%'
+      - '180%'
+      - 'Ausbeuten werden multipliziert'
+      - '0,9 × 0,9 = 0,81'
+    correct: [1, 3, 4]
+
+  - question: 'Zur Herstellung von 100 g Aspirin (C₉H₈O₄, M = 180 g/mol) bei 70% Ausbeute: Wie viel g Salicylsäure (C₇H₆O₃, M = 138 g/mol) werden mindestens benötigt?'
+    options:
+      - 'Etwa 110 g'
+      - 'Etwa 76,7 g theoretisch'
+      - 'Etwa 109,5 g wegen der Ausbeute'
+      - 'Das Stoffmengenverhältnis ist 1:1'
+      - 'Theoretisch: 0,556 mol = 76,7 g'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Bei der Verbrennung eines Kohlenwasserstoffs entstehen 88 g CO₂ und 36 g H₂O. Welcher ist es?'
+    options:
+      - 'n(CO₂) = 2 mol → 2 C-Atome'
+      - 'n(H₂O) = 2 mol → 4 H-Atome'
+      - 'Die Summenformel ist C₂H₄'
+      - 'Es könnte Ethen sein'
+      - 'Das Verhältnis C:H ist 1:2'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Airbag enthält NaN₃, das sich zersetzt: 2 NaN₃ → 2 Na + 3 N₂. Wie viel g NaN₃ für 70 L N₂ (STP)?'
+    options:
+      - 'n(N₂) = 3,125 mol'
+      - 'n(NaN₃) = 2,08 mol'
+      - 'Etwa 135 g NaN₃ (M = 65 g/mol)'
+      - 'Das Verhältnis NaN₃:N₂ ist 2:3'
+      - 'Pro mol N₂ werden ⅔ mol NaN₃ benötigt'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Bei einer Verdrängungsreaktion reagiert Zn mit CuSO₄. Welche Masse Kupfer scheidet sich ab, wenn 130 g Zn (M = 65 g/mol) mit überschüssiger CuSO₄-Lösung reagieren?'
+    options:
+      - '64 g'
+      - '128 g'
+      - 'n(Zn) = 2 mol'
+      - 'n(Cu) = n(Zn) = 2 mol'
+      - 'M(Cu) = 64 g/mol'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Ein Gemisch aus Methan und Ethan (50 mol-% jeweils) verbrennt vollständig. Wie viel mol CO₂ pro mol Gemisch?'
+    options:
+      - '1 mol CO₂ aus CH₄'
+      - '2 mol CO₂ aus C₂H₆'
+      - 'Im Schnitt 1,5 mol CO₂ pro mol Gemisch'
+      - 'CH₄ + 2 O₂ → CO₂ + 2 H₂O'
+      - '2 C₂H₆ + 7 O₂ → 4 CO₂ + 6 H₂O'
+    correct: [0, 1, 2, 3, 4]

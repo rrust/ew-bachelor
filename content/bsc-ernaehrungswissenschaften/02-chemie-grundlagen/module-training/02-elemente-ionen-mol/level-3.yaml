@@ -1,0 +1,96 @@
+# Kapitel 2: Elemente, Ionen & Mol-Konzept
+# Level 3: Anwendung
+# 10 Fragen, 1-3 korrekte Antworten, einfache Berechnungen
+
+topic: 'Elemente, Ionen & Mol-Konzept'
+level: 3
+questions:
+  - question: 'Wie viel Mol sind 36 g Wasser (M = 18 g/mol)?'
+    options:
+      - '0,5 mol'
+      - '1 mol'
+      - '2 mol'
+      - '18 mol'
+      - '36 mol'
+    correct: [2]
+
+  - question: 'Welche Masse haben 0,5 mol Natriumchlorid (M = 58,5 g/mol)?'
+    options:
+      - '29,25 g'
+      - '58,5 g'
+      - '117 g'
+      - '0,5 g'
+      - '14,6 g'
+    correct: [0]
+
+  - question: 'Wie viele Moleküle sind in 2 mol Kohlendioxid enthalten?'
+    options:
+      - '6,02 × 10²³'
+      - '1,20 × 10²⁴'
+      - '3,01 × 10²³'
+      - '1,20 × 10²²'
+      - '2 × 10²³'
+    correct: [1]
+
+  - question: 'Die molare Masse von Glucose (C₆H₁₂O₆) beträgt etwa?'
+    options:
+      - '90 g/mol'
+      - '120 g/mol'
+      - '150 g/mol'
+      - '180 g/mol'
+      - '210 g/mol'
+    correct: [3]
+
+  - question: 'Welche Stoffmenge entspricht 3,01 × 10²³ Atomen?'
+    options:
+      - '0,25 mol'
+      - '0,5 mol'
+      - '1 mol'
+      - '2 mol'
+      - '3 mol'
+    correct: [1]
+
+  - question: 'Wie viel Gramm sind 0,1 mol Schwefelsäure (M = 98 g/mol)?'
+    options:
+      - '9,8 g'
+      - '49 g'
+      - '98 g'
+      - '980 g'
+      - '0,98 g'
+    correct: [0]
+
+  - question: 'Welche Aussagen zur Berechnung von n = m/M sind korrekt?'
+    options:
+      - 'n ist die Stoffmenge in Mol'
+      - 'm ist die Masse in Gramm'
+      - 'M ist die Molmasse in g/mol'
+      - 'Das Ergebnis hat die Einheit Gramm'
+      - 'Die Formel kann nach m umgestellt werden: m = n × M'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Wie viele Atome sind in 12 g Kohlenstoff (M = 12 g/mol)?'
+    options:
+      - '1,0 × 10²³ Atome'
+      - '6,02 × 10²³ Atome'
+      - '1,20 × 10²⁴ Atome'
+      - '12 Atome'
+      - '3,01 × 10²³ Atome'
+    correct: [1]
+
+  - question: 'Welche Ionenladungen sind bei Kaliumoxid (K₂O) zu erwarten?'
+    options:
+      - 'K⁺ und O²⁻'
+      - 'K²⁺ und O⁻'
+      - 'Zwei Kalium-Ionen pro Oxid-Ion'
+      - 'Die Gesamtladung der Formeleinheit ist null'
+      - 'Sauerstoff nimmt zwei Elektronen auf'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Wie viel Mol Sauerstoffatome sind in 1 mol H₂O enthalten?'
+    options:
+      - '0,5 mol'
+      - '1 mol'
+      - '2 mol'
+      - '3 mol'
+      - '18 mol'
+    correct: [1]

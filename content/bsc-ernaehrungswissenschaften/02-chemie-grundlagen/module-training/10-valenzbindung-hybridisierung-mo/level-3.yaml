@@ -1,0 +1,95 @@
+# Kapitel 10: Valenzbindungstheorie, Hybridisierung & MO-Theorie
+# Level 3: Anwendung
+
+topic: 'Valenzbindungstheorie, Hybridisierung & MO-Theorie'
+level: 3
+questions:
+  - question: 'Welche Hybridisierung hat Kohlenstoff in Ethen (C₂H₄)?'
+    options:
+      - 'sp'
+      - 'sp²'
+      - 'sp³'
+      - 'sp³d'
+      - 'dsp²'
+    correct: [1]
+
+  - question: 'Wie viele σ- und π-Bindungen hat eine C≡C Dreifachbindung?'
+    options:
+      - '3 σ, 0 π'
+      - '2 σ, 1 π'
+      - '1 σ, 2 π'
+      - '0 σ, 3 π'
+      - '1 σ, 1 π'
+    correct: [2]
+
+  - question: 'Welche Hybridisierung hat Stickstoff in Ammoniak (NH₃)?'
+    options:
+      - 'sp'
+      - 'sp²'
+      - 'sp³'
+      - 'sp³d'
+      - 'Keine Hybridisierung'
+    correct: [2]
+
+  - question: 'Welche Bindungsordnung hat O₂ laut MO-Theorie?'
+    options:
+      - '1'
+      - '1,5'
+      - '2'
+      - '2,5'
+      - '3'
+    correct: [2]
+
+  - question: 'Welche Hybridisierung hat Kohlenstoff in CO₂?'
+    options:
+      - 'sp'
+      - 'sp²'
+      - 'sp³'
+      - 'sp³d'
+      - 'sp³d²'
+    correct: [0]
+
+  - question: 'Wie viele σ- und π-Bindungen hat ein Molekül Ethin (C₂H₂)?'
+    options:
+      - '3 σ, 2 π'
+      - '5 σ, 0 π'
+      - '2 σ, 3 π'
+      - '4 σ, 1 π'
+      - '2 σ, 2 π'
+    correct: [0]
+
+  - question: 'Welche Bindungsordnung hat He₂ laut MO-Theorie?'
+    options:
+      - '0 (existiert nicht)'
+      - '0,5'
+      - '1'
+      - '1,5'
+      - '2'
+    correct: [0]
+
+  - question: 'Welche Hybridisierung hat Bor in BF₃?'
+    options:
+      - 'sp'
+      - 'sp²'
+      - 'sp³'
+      - 'sp³d'
+      - 'dsp²'
+    correct: [1]
+
+  - question: 'Wie viele σ-Bindungen hat Benzol (C₆H₆)?'
+    options:
+      - '6'
+      - '9'
+      - '12'
+      - '15'
+      - '18'
+    correct: [2]
+
+  - question: 'Welche Bindungsordnung hat NO laut MO-Theorie?'
+    options:
+      - '1,5'
+      - '2'
+      - '2,5'
+      - '3'
+      - '3,5'
+    correct: [2]

@@ -1,0 +1,95 @@
+# Kapitel 13: Kolligative Eigenschaften
+# Level 1: Grundlagen
+
+topic: 'Kolligative Eigenschaften'
+level: 1
+questions:
+  - question: 'Was sind kolligative Eigenschaften?'
+    options:
+      - 'Eigenschaften, die von der Art der gelösten Teilchen abhängen'
+      - 'Eigenschaften, die nur von der Anzahl der gelösten Teilchen abhängen'
+      - 'Eigenschaften, die von der Farbe abhängen'
+      - 'Chemische Reaktionen'
+      - 'Eigenschaften des reinen Lösungsmittels'
+    correct: [1]
+
+  - question: 'Was ist Dampfdruckerniedrigung?'
+    options:
+      - 'Die Erhöhung des Dampfdrucks durch gelöste Stoffe'
+      - 'Die Senkung des Dampfdrucks durch gelöste Teilchen'
+      - 'Die Änderung der Farbe'
+      - 'Die chemische Reaktion mit Wasser'
+      - 'Die Erhöhung der Viskosität'
+    correct: [1]
+
+  - question: 'Was ist Siedepunktserhöhung?'
+    options:
+      - 'Der Siedepunkt sinkt durch gelöste Stoffe'
+      - 'Der Siedepunkt steigt durch gelöste Teilchen'
+      - 'Der Siedepunkt bleibt konstant'
+      - 'Der Schmelzpunkt sinkt'
+      - 'Die Lösung verdampft nicht'
+    correct: [1]
+
+  - question: 'Was ist Gefrierpunktserniedrigung?'
+    options:
+      - 'Der Gefrierpunkt steigt durch gelöste Stoffe'
+      - 'Der Gefrierpunkt sinkt durch gelöste Teilchen'
+      - 'Der Gefrierpunkt bleibt gleich'
+      - 'Die Lösung gefriert sofort'
+      - 'Der Siedepunkt sinkt'
+    correct: [1]
+
+  - question: 'Was ist Osmose?'
+    options:
+      - 'Die Diffusion von gelösten Stoffen'
+      - 'Der Fluss von Lösungsmittel durch eine semipermeable Membran'
+      - 'Eine chemische Reaktion'
+      - 'Die Verdampfung von Wasser'
+      - 'Die Auflösung von Salz'
+    correct: [1]
+
+  - question: 'Was ist osmotischer Druck?'
+    options:
+      - 'Der Druck, der nötig ist um Osmose zu stoppen'
+      - 'Der Dampfdruck'
+      - 'Der atmosphärische Druck'
+      - 'Der Druck im Vakuum'
+      - 'Der Wasserdruck'
+    correct: [0]
+
+  - question: 'Was bedeutet "semipermeabel"?'
+    options:
+      - 'Für alle Stoffe durchlässig'
+      - 'Für das Lösungsmittel durchlässig, nicht für gelöste Stoffe'
+      - 'Für nichts durchlässig'
+      - 'Nur für Gase durchlässig'
+      - 'Nur für Feststoffe durchlässig'
+    correct: [1]
+
+  - question: 'Warum streut man Salz auf vereiste Straßen?'
+    options:
+      - 'Um den Gefrierpunkt zu erhöhen'
+      - 'Um den Gefrierpunkt zu erniedrigen'
+      - 'Um die Straße zu färben'
+      - 'Um chemische Reaktionen auszulösen'
+      - 'Um den Dampfdruck zu erhöhen'
+    correct: [1]
+
+  - question: "Was ist der van't Hoff-Faktor (i)?"
+    options:
+      - 'Die Anzahl der Teilchen, in die ein Stoff dissoziiert'
+      - 'Die Molmasse'
+      - 'Die Konzentration'
+      - 'Die Temperatur'
+      - 'Der Druck'
+    correct: [0]
+
+  - question: "Welchen van't Hoff-Faktor hat NaCl in Wasser?"
+    options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '0'
+    correct: [1]

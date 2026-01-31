@@ -1,0 +1,95 @@
+# Kapitel 8: Ionische Bindung & Lewis-Strukturen
+# Level 2: Verständnis
+
+topic: 'Ionische Bindung & Lewis-Strukturen'
+level: 2
+questions:
+  - question: 'Warum bildet Natrium ein Na⁺-Ion?'
+    options:
+      - 'Durch Abgabe von einem Elektron erreicht es die Edelgaskonfiguration'
+      - 'Die Ionisierungsenergie für das erste Elektron ist niedrig'
+      - 'Na hat 1 Valenzelektron in der Außenschale'
+      - 'Na nimmt ein Elektron auf'
+      - 'Die entstehende Ladung wird durch Cl⁻ neutralisiert'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Eigenschaften haben Ionenverbindungen?'
+    options:
+      - 'Hohe Schmelz- und Siedepunkte'
+      - 'Spröde Kristalle'
+      - 'Leiten Strom als Schmelze oder in Lösung'
+      - 'Gut löslich in unpolaren Lösungsmitteln'
+      - 'Leiten Strom im festen Zustand nicht'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was beeinflusst die Gitterenergie?'
+    options:
+      - 'Die Ladung der Ionen'
+      - 'Der Radius der Ionen'
+      - 'Höhere Ladung → höhere Gitterenergie'
+      - 'Kleinere Ionen → höhere Gitterenergie'
+      - 'Die Farbe der Ionen'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum ist MgO schwerer löslich als NaCl?'
+    options:
+      - 'Mg²⁺ und O²⁻ haben höhere Ladungen'
+      - 'Die Gitterenergie von MgO ist höher'
+      - 'Die Hydratationsenthalpie kompensiert nicht'
+      - 'MgO hat einen höheren Schmelzpunkt'
+      - 'NaCl hat Ionen mit Ladung ±1'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Ausnahmen von der Oktettregel gibt es?'
+    options:
+      - 'Elektronenarme Verbindungen (z.B. BF₃ mit 6 e⁻)'
+      - 'Radikale mit ungepaarten Elektronen (z.B. NO)'
+      - 'Hypervalente Verbindungen (z.B. SF₆ mit 12 e⁻)'
+      - 'Alle Verbindungen folgen der Oktettregel'
+      - 'Elemente der 3. Periode können mehr als 8 haben'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Wie erkennt man bindende und freie Elektronenpaare in Lewis-Strukturen?'
+    options:
+      - 'Bindende Paare stehen zwischen Atomen'
+      - 'Freie Paare befinden sich an einem Atom'
+      - 'Striche zeigen Bindungen'
+      - 'Punkte oder Striche an einem Atom zeigen freie Paare'
+      - 'Beide Typen haben unterschiedliche Farben'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum haben Ionenverbindungen hohe Schmelzpunkte?'
+    options:
+      - 'Die elektrostatische Anziehung im Gitter ist stark'
+      - 'Viel Energie wird zum Trennen der Ionen benötigt'
+      - 'Die Gitterenergie ist hoch'
+      - 'Ionenbindungen sind schwach'
+      - 'Im Gitter gibt es viele Wechselwirkungen'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zur Elektroneutralität in Ionenverbindungen sind korrekt?'
+    options:
+      - 'Positive und negative Ladungen sind ausgeglichen'
+      - 'Die Gesamtladung der Formeleinheit ist null'
+      - 'CaCl₂: 1 × (+2) + 2 × (-1) = 0'
+      - 'Alle Ionen haben die gleiche Ladung'
+      - 'Das Verhältnis der Ionen richtet sich nach den Ladungen'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was bedeutet eine Doppelbindung in einer Lewis-Struktur?'
+    options:
+      - 'Zwei Elektronenpaare werden geteilt'
+      - 'Vier Elektronen befinden sich zwischen den Atomen'
+      - 'Sie wird als zwei Striche dargestellt'
+      - 'Sie ist stärker als eine Einfachbindung'
+      - 'Sie ist ein einzelnes Elektron'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum leiten Salze in Lösung den elektrischen Strom?'
+    options:
+      - 'Die Ionen sind frei beweglich'
+      - 'Kationen wandern zur Kathode'
+      - 'Anionen wandern zur Anode'
+      - 'Im festen Zustand sind Ionen fixiert'
+      - 'Elektronen werden durch die Lösung transportiert'
+    correct: [0, 1, 2, 3]

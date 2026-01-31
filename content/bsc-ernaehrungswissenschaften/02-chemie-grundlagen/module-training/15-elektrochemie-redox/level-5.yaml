@@ -1,0 +1,95 @@
+# Kapitel 15: Elektrochemie & Redox
+# Level 5: Synthese/Transfer
+
+topic: 'Elektrochemie & Redox'
+level: 5
+questions:
+  - question: 'Welche Rolle spielt Elektrochemie in der Energiewende?'
+    options:
+      - 'Batterien für Elektromobilität und Netzspeicher'
+      - 'Brennstoffzellen für saubere Energieumwandlung'
+      - 'Elektrolyse für grüne Wasserstoffproduktion'
+      - 'Power-to-Gas-Konzepte nutzen Elektrolyse'
+      - 'Redox-Flow-Batterien für stationäre Speicher'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie funktioniert die elektrochemische Wasseraufbereitung?'
+    options:
+      - 'Elektrolyse erzeugt Desinfektionsmittel in situ'
+      - 'Elektrochlorierung für Trinkwasser'
+      - 'Elektrokoagulation entfernt Schwermetalle'
+      - 'Elektrochemische Oxidation baut organische Stoffe ab'
+      - 'Kapazitive Entionisierung für Entsalzung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung haben Redoxreaktionen für die Lebensmittelchemie?'
+    options:
+      - 'Oxidation von Fetten führt zu Ranzigkeit'
+      - 'Antioxidantien wie Vitamin C schützen'
+      - 'Maillard-Reaktion involviert Redoxprozesse'
+      - 'Bräunung von Obst durch Polyphenoloxidase'
+      - 'Ascorbinsäure als Reduktionsmittel'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie nutzt der Körper Redoxreaktionen für die Energiegewinnung?'
+    options:
+      - 'Atmungskette: schrittweise Elektronenübertragung'
+      - 'O₂ ist finaler Elektronenakzeptor'
+      - 'Potentialgefälle treibt Protonenpumpen an'
+      - 'ATP-Synthese durch chemiosmotische Kopplung'
+      - 'ΔG° ≈ -218 kJ/mol für NADH-Oxidation mit O₂'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielen Redoxreaktionen bei oxidativem Stress?'
+    options:
+      - 'Reaktive Sauerstoffspezies (ROS) entstehen im Stoffwechsel'
+      - 'Superoxid, H₂O₂, Hydroxylradikal schädigen Zellen'
+      - 'Antioxidative Enzyme: SOD, Katalase, Glutathionperoxidase'
+      - 'Nicht-enzymatische Antioxidantien: Vitamin E, C, Polyphenole'
+      - 'Balance zwischen ROS und Antioxidantien wichtig'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat Elektrochemie für die Metallgewinnung?'
+    options:
+      - 'Aluminium-Elektrolyse aus Bauxit (Hall-Héroult)'
+      - 'Kupfer-Raffination durch Elektrolyse'
+      - 'Chlor-Alkali-Elektrolyse für Cl₂, NaOH, H₂'
+      - 'Galvanotechnik für Beschichtungen'
+      - 'Elektrolyse ermöglicht Reinheiten > 99,99%'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie funktionieren bioelektrochemische Systeme?'
+    options:
+      - 'Mikrobielle Brennstoffzellen nutzen Bakterien als Katalysator'
+      - 'Organische Stoffe werden zu Strom oxidiert'
+      - 'Anwendung in Abwasserbehandlung'
+      - 'Mikrobielle Elektrosynthese: CO₂ zu organischen Produkten'
+      - 'Biokathoden und Bioanoden in Entwicklung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat die Elektrochemie für die Umweltanalytik?'
+    options:
+      - 'Voltammetrie für Spurenmetalle'
+      - 'Potentiometrische Sensoren für pH, Ionen'
+      - 'Amperometrische Sauerstoffmessung (BOD)'
+      - 'Anodic Stripping Voltammetry für Schwermetalle'
+      - 'Elektrochemische Biosensoren für Pestizide'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie beeinflusst der pH-Wert Redoxreaktionen?'
+    options:
+      - 'Viele Redoxpotentiale sind pH-abhängig'
+      - 'E = E° - (0,059 × m/n) × pH für H⁺-beteiligte Reaktionen'
+      - 'Pourbaix-Diagramme zeigen pH-Potential-Beziehungen'
+      - 'Korrosion von Fe ist pH-abhängig'
+      - 'Biologische Redoxprozesse oft pH-sensitiv'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche zukünftigen Entwicklungen gibt es in der Elektrochemie?'
+    options:
+      - 'Festkörperbatterien für höhere Sicherheit'
+      - 'Natrium-Ionen-Batterien als Li-Alternative'
+      - 'CO₂-Elektrolyse zu Synthesegas oder Chemikalien'
+      - 'Künstliche Photosynthese mit Photoelektroden'
+      - 'Superkondensatoren für schnelle Energiespeicherung'
+    correct: [0, 1, 2, 3, 4]

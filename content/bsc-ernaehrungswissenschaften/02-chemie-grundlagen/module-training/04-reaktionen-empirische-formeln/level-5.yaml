@@ -1,0 +1,95 @@
+# Kapitel 4: Chemische Reaktionen & Empirische Formeln
+# Level 5: Synthese/Transfer
+
+topic: 'Chemische Reaktionen & Empirische Formeln'
+level: 5
+questions:
+  - question: 'Bei der Verbrennung von 0,92 g Ethanol entstehen 1,76 g CO₂ und 1,08 g H₂O. Welche Aussagen sind korrekt?'
+    options:
+      - 'n(C) = 0,04 mol aus dem CO₂'
+      - 'n(H) = 0,12 mol aus dem H₂O'
+      - 'Das Molverhältnis C:H ist 1:3'
+      - 'Die empirische Formel ist C₂H₆O'
+      - 'Die Molekülformel von Ethanol ist C₂H₅OH'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein unbekanntes Metalloxid enthält 70% Metall. Die molare Masse ist 160 g/mol. Welches Oxid ist es?'
+    options:
+      - 'FeO'
+      - 'Fe₂O₃'
+      - 'CuO'
+      - 'Die Metallmasse pro mol ist 112 g'
+      - 'Bei Fe₂O₃: 2 × 56 = 112 g Eisen'
+    correct: [1, 3, 4]
+
+  - question: 'Eine organische Säure hat 26,7% C, 2,2% H und 71,1% O. M = 90 g/mol. Welche ist es?'
+    options:
+      - 'Essigsäure (CH₃COOH)'
+      - 'Oxalsäure (HOOC-COOH)'
+      - 'Ameisensäure (HCOOH)'
+      - 'Die empirische Formel ist CHO₂'
+      - 'M(CHO₂) = 45 g/mol, Faktor = 2'
+    correct: [1, 3, 4]
+
+  - question: 'Bei einer Thermitreaktion gilt: 2 Al + Fe₂O₃ → Al₂O₃ + 2 Fe. Welche Aussagen stimmen?'
+    options:
+      - 'Aluminium reduziert Eisenoxid'
+      - 'Aluminium wird oxidiert'
+      - 'Eisen wird reduziert'
+      - 'Die Reaktion ist stark exotherm'
+      - 'Aluminium ist das Reduktionsmittel'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Eine Fällungsreaktion: Pb(NO₃)₂ + 2 KI → PbI₂↓ + 2 KNO₃. Welche Aussagen sind korrekt?'
+    options:
+      - 'Es ist eine doppelte Umsetzung'
+      - 'PbI₂ ist schwerlöslich'
+      - 'K⁺ und NO₃⁻ sind Zuschauer-Ionen'
+      - 'Die Nettogleichung ist Pb²⁺ + 2 I⁻ → PbI₂'
+      - 'Das Blei wird oxidiert'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Ein Mineral enthält Ca, C und O. Analyse: 40% Ca, 12% C, 48% O. Welche Formel?'
+    options:
+      - 'CaCO₃'
+      - 'CaC₂O₄'
+      - 'Ca₂CO₃'
+      - 'n(Ca):n(C):n(O) = 1:1:3'
+      - 'Es ist Calciumcarbonat (Kalkstein)'
+    correct: [0, 3, 4]
+
+  - question: 'Bei der Elektrolyse von Wasser: 2 H₂O → 2 H₂ + O₂. Welche Aussagen sind korrekt?'
+    options:
+      - 'Wasser wird zersetzt'
+      - 'Die Reaktion ist endotherm'
+      - 'Das Volumenverhältnis H₂:O₂ ist 2:1'
+      - 'An der Kathode entsteht Wasserstoff'
+      - 'Die Reaktion erfordert elektrische Energie'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Kohlenwasserstoff verbrennt: C₄H₁₀ + O₂ → CO₂ + H₂O. Wie viel mol O₂ pro mol Butan?'
+    options:
+      - '5 mol'
+      - '6,5 mol'
+      - '8 mol'
+      - 'C₄H₁₀ + 6,5 O₂ → 4 CO₂ + 5 H₂O'
+      - 'Oder: 2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O'
+    correct: [1, 3, 4]
+
+  - question: 'Eine Verbindung aus N und H hat 82,4% N. Welche Formel hat sie?'
+    options:
+      - 'NH₃'
+      - 'N₂H₂'
+      - 'N₂H₄'
+      - 'n(N):n(H) = 1:2 bei N₂H₄'
+      - 'M(N₂H₄) = 32 g/mol, 28/32 = 87,5% N'
+    correct: [2, 3]
+
+  - question: 'Bei der Bildung von Rost: 4 Fe + 3 O₂ + 6 H₂O → 4 Fe(OH)₃. Welche Aussagen sind korrekt?'
+    options:
+      - 'Eisen wird oxidiert'
+      - 'Es ist eine Korrosionsreaktion'
+      - 'Wasser ist am Reaktionsprozess beteiligt'
+      - 'Sauerstoff ist das Oxidationsmittel'
+      - 'Die Reaktion ist langsam (nicht explosiv)'
+    correct: [0, 1, 2, 3, 4]

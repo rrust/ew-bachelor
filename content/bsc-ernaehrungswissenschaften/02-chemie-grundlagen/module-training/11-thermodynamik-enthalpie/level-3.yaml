@@ -1,0 +1,95 @@
+# Kapitel 11: Thermodynamik & Enthalpie
+# Level 3: Anwendung
+
+topic: 'Thermodynamik & Enthalpie'
+level: 3
+questions:
+  - question: 'Welche Reaktion ist exotherm?'
+    options:
+      - 'Photosynthese'
+      - 'Verbrennung von Methan'
+      - 'Elektrolyse von Wasser'
+      - 'Schmelzen von Eis'
+      - 'Verdampfen von Wasser'
+    correct: [1]
+
+  - question: 'Berechne ΔH° für: C(s) + O₂(g) → CO₂(g) wenn ΔHf°(CO₂) = -394 kJ/mol'
+    options:
+      - '+394 kJ/mol'
+      - '-394 kJ/mol'
+      - '0 kJ/mol'
+      - '-197 kJ/mol'
+      - '+788 kJ/mol'
+    correct: [1]
+
+  - question: 'Welche Aussage zur Reaktion N₂ + 3H₂ → 2NH₃ (ΔH = -92 kJ) ist korrekt?'
+    options:
+      - 'Die Reaktion ist exotherm'
+      - 'Die Bildung von 1 mol NH₃ setzt 46 kJ frei'
+      - 'Wärme wird frei'
+      - 'Die Umkehrreaktion ist endotherm'
+      - 'Die Reaktion ist endotherm'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Wie viel Wärme wird bei der Verbrennung von 2 mol CH₄ frei? (ΔH°c = -890 kJ/mol)'
+    options:
+      - '-445 kJ'
+      - '-890 kJ'
+      - '-1780 kJ'
+      - '+1780 kJ'
+      - '+890 kJ'
+    correct: [2]
+
+  - question: 'Die Standardbildungsenthalpie von H₂O(l) ist -286 kJ/mol. Was bedeutet das?'
+    options:
+      - 'Bei der Bildung aus H₂ und O₂ werden 286 kJ/mol frei'
+      - 'Wasser ist stabiler als die Elemente'
+      - 'Die Reaktion H₂ + ½O₂ → H₂O ist exotherm'
+      - 'Die Reaktion ist endotherm'
+      - 'Die Bindungen in Wasser sind stark'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Mit Hess: Gegeben sind C + O₂ → CO₂ (ΔH = -394 kJ) und CO + ½O₂ → CO₂ (ΔH = -283 kJ). Was ist ΔH für C + ½O₂ → CO?'
+    options:
+      - '-677 kJ'
+      - '-111 kJ'
+      - '+111 kJ'
+      - '-394 kJ'
+      - '-283 kJ'
+    correct: [1]
+
+  - question: '50 g Wasser werden von 20°C auf 80°C erhitzt. Wie viel Wärme ist nötig? (c = 4,18 J/(g·K))'
+    options:
+      - '6,27 kJ'
+      - '12,54 kJ'
+      - '16,72 kJ'
+      - '25,08 kJ'
+      - '4,18 kJ'
+    correct: [1]
+
+  - question: 'Welche Aussage zur Neutralisationsenthalpie von starker Säure + starker Base ist korrekt?'
+    options:
+      - 'ΔH ≈ -57 kJ/mol (für H⁺ + OH⁻ → H₂O)'
+      - 'Die Reaktion ist exotherm'
+      - 'Der Wert ist unabhängig von der Säure/Base'
+      - 'Bei schwachen Säuren weicht der Wert ab'
+      - 'Die Reaktion ist endotherm'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Was ist die Verbrennungsenthalpie von Glucose (C₆H₁₂O₆)?'
+    options:
+      - 'Etwa +2800 kJ/mol'
+      - 'Etwa -2800 kJ/mol'
+      - 'Die Reaktion ist exotherm'
+      - 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O'
+      - 'Diese Energie nutzt der Körper'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Berechne ΔH für: 2H₂(g) + O₂(g) → 2H₂O(l), wenn ΔHf°(H₂O,l) = -286 kJ/mol'
+    options:
+      - '-143 kJ'
+      - '-286 kJ'
+      - '-572 kJ'
+      - '+572 kJ'
+      - '+286 kJ'
+    correct: [2]

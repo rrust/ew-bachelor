@@ -1,0 +1,95 @@
+# Kapitel 14: Säuren & Basen (Fortgeschritten)
+# Level 1: Grundlagen
+
+topic: 'Säuren & Basen (Fortgeschritten)'
+level: 1
+questions:
+  - question: 'Was ist der pKs-Wert?'
+    options:
+      - 'Der negative dekadische Logarithmus der Säurekonstante Ks'
+      - 'Der pH-Wert einer Säure'
+      - 'Die Konzentration der Säure'
+      - 'Die Molmasse der Säure'
+      - 'Der Siedepunkt der Säure'
+    correct: [0]
+
+  - question: 'Was ist ein Puffer?'
+    options:
+      - 'Eine reine Säure'
+      - 'Ein System das den pH-Wert bei Zugabe von Säure/Base stabilisiert'
+      - 'Eine starke Base'
+      - 'Reines Wasser'
+      - 'Ein Indikator'
+    correct: [1]
+
+  - question: 'Woraus besteht ein Puffersystem?'
+    options:
+      - 'Nur aus einer starken Säure'
+      - 'Aus schwacher Säure und ihrer konjugierten Base'
+      - 'Nur aus Wasser'
+      - 'Aus zwei starken Säuren'
+      - 'Aus einem Indikator'
+    correct: [1]
+
+  - question: 'Was ist die Henderson-Hasselbalch-Gleichung?'
+    options:
+      - 'pH = pKs + log([A⁻]/[HA])'
+      - 'pH = -log[H⁺]'
+      - 'pOH = -log[OH⁻]'
+      - 'Kw = [H⁺][OH⁻]'
+      - 'n = m/M'
+    correct: [0]
+
+  - question: 'Was ist der Äquivalenzpunkt bei einer Titration?'
+    options:
+      - 'Der Startpunkt der Titration'
+      - 'Der Punkt, an dem Säure und Base genau neutralisiert sind'
+      - 'Der Endpunkt der Messung'
+      - 'Der pH-Wert 7'
+      - 'Die maximale Pufferkapazität'
+    correct: [1]
+
+  - question: 'Was ist ein Indikator?'
+    options:
+      - 'Ein Stoff, der seine Farbe je nach pH-Wert ändert'
+      - 'Ein starker Säure'
+      - 'Ein Lösungsmittel'
+      - 'Ein Katalysator'
+      - 'Ein Puffer'
+    correct: [0]
+
+  - question: 'Was beschreibt die Säurekonstante Ks?'
+    options:
+      - 'Die Stärke einer Säure (Dissoziationsgleichgewicht)'
+      - 'Die Konzentration'
+      - 'Das Volumen'
+      - 'Die Temperatur'
+      - 'Die Farbe'
+    correct: [0]
+
+  - question: 'Was bedeutet ein niedriger pKs-Wert?'
+    options:
+      - 'Schwache Säure'
+      - 'Starke Säure'
+      - 'Neutral'
+      - 'Basisch'
+      - 'Keine Reaktion'
+    correct: [1]
+
+  - question: 'Was ist der pKb-Wert?'
+    options:
+      - 'Der negative dekadische Logarithmus der Basenkonstante Kb'
+      - 'Der pH-Wert einer Base'
+      - 'Die Konzentration der Base'
+      - 'Die Molmasse der Base'
+      - 'Der pKs-Wert'
+    correct: [0]
+
+  - question: 'Welche Beziehung gilt für pKs und pKb eines konjugierten Säure-Base-Paares?'
+    options:
+      - 'pKs + pKb = 14 (bei 25°C)'
+      - 'pKs = pKb'
+      - 'pKs - pKb = 7'
+      - 'pKs × pKb = 14'
+      - 'pKs / pKb = 1'
+    correct: [0]

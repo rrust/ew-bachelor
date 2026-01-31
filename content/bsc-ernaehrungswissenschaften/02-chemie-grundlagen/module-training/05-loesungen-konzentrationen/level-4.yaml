@@ -1,0 +1,95 @@
+# Kapitel 5: Lösungen & Konzentrationen
+# Level 4: Analyse
+
+topic: 'Lösungen & Konzentrationen'
+level: 4
+questions:
+  - question: '200 mL einer 0,5 M NaCl-Lösung und 300 mL einer 0,3 M NaCl-Lösung werden gemischt. Welche Konzentration resultiert?'
+    options:
+      - '0,32 M'
+      - '0,38 M'
+      - '0,40 M'
+      - 'n₁ = 0,1 mol, n₂ = 0,09 mol'
+      - 'c = 0,19 mol / 0,5 L = 0,38 M'
+    correct: [1, 3, 4]
+
+  - question: 'Eine 2 M H₂SO₄-Lösung soll zu einer 0,1 M verdünnt werden. Welcher Verdünnungsfaktor ist nötig?'
+    options:
+      - '5'
+      - '10'
+      - '20'
+      - 'V₂/V₁ = c₁/c₂ = 2/0,1'
+      - 'Für 100 mL: 5 mL Säure + 95 mL Wasser'
+    correct: [2, 3, 4]
+
+  - question: 'Welche Masse CaCl₂ (M = 111 g/mol) für 250 mL einer 0,2 M Lösung?'
+    options:
+      - '2,78 g'
+      - '5,55 g'
+      - '11,1 g'
+      - 'n = 0,05 mol'
+      - 'm = 0,05 × 111 = 5,55 g'
+    correct: [1, 3, 4]
+
+  - question: 'Eine Lösung enthält 4 g NaOH (M = 40 g/mol) in 500 mL. Welche Aussagen stimmen?'
+    options:
+      - 'n = 0,1 mol NaOH'
+      - 'c = 0,2 M'
+      - 'c(OH⁻) = 0,2 M'
+      - 'Der pH-Wert ist 13'
+      - 'Der pOH ist 1'
+    correct: [0, 1, 2]
+
+  - question: 'Wie viel mL 12 M HCl und wie viel mL Wasser für 500 mL 1 M HCl?'
+    options:
+      - '41,7 mL HCl + 458,3 mL H₂O'
+      - '50 mL HCl + 450 mL H₂O'
+      - 'c₁V₁ = c₂V₂ → V₁ = 500 × 1/12'
+      - 'V₁ ≈ 41,7 mL'
+      - 'Wasser zum Auffüllen auf 500 mL'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Die Dichte einer 20%-igen (w/w) H₂SO₄-Lösung ist 1,14 g/mL. Welche Molarität hat sie?'
+    options:
+      - '1,16 M'
+      - '2,33 M'
+      - '4,66 M'
+      - '1000 mL wiegen 1140 g'
+      - 'm(H₂SO₄) = 228 g/L → n = 2,33 mol'
+    correct: [1, 3, 4]
+
+  - question: 'Eine 0,15 M CaCl₂-Lösung: Welche Ionenkonzentrationen?'
+    options:
+      - 'c(Ca²⁺) = 0,15 M'
+      - 'c(Cl⁻) = 0,30 M'
+      - 'CaCl₂ → Ca²⁺ + 2 Cl⁻'
+      - 'c(Cl⁻) = 0,15 M'
+      - 'Die Gesamtionenkonzentration ist 0,45 M'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Bei der Titration von 25 mL HCl mit 0,1 M NaOH werden 30 mL verbraucht. Welche Konzentration hat die HCl?'
+    options:
+      - '0,08 M'
+      - '0,10 M'
+      - '0,12 M'
+      - 'n(NaOH) = n(HCl) = 0,003 mol'
+      - 'c(HCl) = 0,003/0,025 = 0,12 M'
+    correct: [2, 3, 4]
+
+  - question: 'Wie viel Wasser muss zu 100 mL einer 0,5 M Lösung gegeben werden, um 0,1 M zu erhalten?'
+    options:
+      - '100 mL'
+      - '200 mL'
+      - '400 mL'
+      - 'V₂ = 500 mL gesamt'
+      - 'Zugabe = 500 - 100 = 400 mL'
+    correct: [2, 3, 4]
+
+  - question: 'Eine isotonische Kochsalzlösung hat 0,9% (w/v). Welche Molarität entspricht das? (M = 58,5 g/mol)'
+    options:
+      - '0,10 M'
+      - '0,15 M'
+      - '0,20 M'
+      - '9 g NaCl pro Liter'
+      - 'n = 9/58,5 ≈ 0,154 mol'
+    correct: [1, 3, 4]

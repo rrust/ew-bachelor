@@ -1,0 +1,95 @@
+# Kapitel 6: Säuren & Basen (Grundlagen)
+# Level 5: Synthese/Transfer
+
+topic: 'Säuren & Basen (Grundlagen)'
+level: 5
+questions:
+  - question: 'Magensäure hat pH ≈ 1. Welche Aussagen sind korrekt?'
+    options:
+      - 'c(H⁺) ≈ 0,1 M'
+      - 'Die Hauptsäure ist HCl'
+      - 'Antazida neutralisieren die Säure'
+      - 'Bei Sodbrennen steigt der pH im Ösophagus'
+      - 'Protonenpumpeninhibitoren reduzieren die H⁺-Produktion'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Beim Backen reagiert Backpulver (NaHCO₃) mit Säure. Welche Aussagen stimmen?'
+    options:
+      - 'NaHCO₃ + H⁺ → Na⁺ + H₂O + CO₂'
+      - 'Das entstehende CO₂ lockert den Teig'
+      - 'NaHCO₃ ist eine schwache Base'
+      - 'Die Reaktion ist eine Neutralisation'
+      - 'Weinstein oder Zitronensäure liefern H⁺'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Blut hat einen pH von 7,4. Was passiert bei Azidose (pH < 7,35)?'
+    options:
+      - 'c(H⁺) ist erhöht'
+      - 'Der Körper versucht, pH zu normalisieren'
+      - 'Atmung kann kompensieren (CO₂ abatmen)'
+      - 'Bicarbonat-Puffer ist wichtig'
+      - 'pH = 7,0 wäre lebensbedrohlich'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Schwimmbad hat pH = 7,8. Welche Aussagen sind korrekt?'
+    options:
+      - 'Die Lösung ist leicht basisch'
+      - 'c(OH⁻) > c(H⁺)'
+      - 'Zur Absenkung wird Säure zugegeben'
+      - 'pH = 6,3 × 10⁻⁸ M H⁺'
+      - 'Chlor desinfiziert besser bei pH 7,2-7,6'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Essigsäure (pKs = 4,76) reagiert mit Wasser. Welche Aussagen zur 0,1 M Lösung stimmen?'
+    options:
+      - 'pH ≈ 2,88'
+      - 'Der Dissoziationsgrad ist etwa 1,3%'
+      - 'c(H⁺) ≈ 1,3 × 10⁻³ M'
+      - 'CH₃COOH ⇌ CH₃COO⁻ + H⁺'
+      - 'Die Gleichgewichtskonstante ist Ka = 10⁻⁴·⁷⁶'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Bei einer Säure-Base-Titration: Welche Aussagen zur Äquivalenzpunkt-Bestimmung stimmen?'
+    options:
+      - 'Am Äquivalenzpunkt: n(Säure) = n(Base)'
+      - 'Der pH ändert sich dort stark'
+      - 'Indikatoren zeigen den Umschlag'
+      - 'Bei starker Säure + starker Base: pH = 7'
+      - 'Bei schwacher Säure + starker Base: pH > 7'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Kohlensäure in Mineralwasser: H₂CO₃ ⇌ HCO₃⁻ + H⁺. Welche Aussagen sind korrekt?'
+    options:
+      - 'Kohlensäure ist eine schwache zweiprotonige Säure'
+      - 'CO₂ + H₂O ⇌ H₂CO₃'
+      - 'Das Prickeln kommt vom gelösten CO₂'
+      - 'pKs1 ≈ 6,35'
+      - 'Das System ist ein wichtiger Blutpuffer'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Saurer Regen hat pH ≈ 4. Welche Aussagen stimmen?'
+    options:
+      - 'Hauptursache: SO₂ und NOx in der Atmosphäre'
+      - 'SO₂ + H₂O → H₂SO₃'
+      - 'Schädigt Kalkstein: CaCO₃ + 2 H⁺ → Ca²⁺ + H₂O + CO₂'
+      - 'Normaler Regen hat pH ≈ 5,6 (wegen CO₂)'
+      - 'pH 4 ist 100× saurer als pH 6'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Aminosäuren sind amphoter. Welche Aussagen stimmen?'
+    options:
+      - 'Sie haben eine Amino- und eine Carboxygruppe'
+      - 'Am isoelektrischen Punkt: Nettoladung = 0'
+      - 'In saurer Lösung: positiv geladen'
+      - 'In basischer Lösung: negativ geladen'
+      - 'Sie bilden Zwitterionen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Bei der Herstellung von Seife reagiert Fett mit NaOH. Welche Aussagen zur Verseifung stimmen?'
+    options:
+      - 'Es entstehen Glycerin und Seife (Natriumsalze von Fettsäuren)'
+      - 'Die Reaktion ist eine Hydrolyse'
+      - 'NaOH ist die Base'
+      - 'Fettsäuren werden freigesetzt und neutralisiert'
+      - 'Seifenlösung ist leicht basisch'
+    correct: [0, 1, 2, 3, 4]

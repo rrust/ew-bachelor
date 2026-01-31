@@ -1,0 +1,95 @@
+# Kapitel 4: Chemische Reaktionen & Empirische Formeln
+# Level 4: Analyse
+
+topic: 'Chemische Reaktionen & Empirische Formeln'
+level: 4
+questions:
+  - question: 'Bei der Analyse einer Verbindung werden 2,2 g CO₂ und 0,9 g H₂O erhalten. Welche Aussagen stimmen?'
+    options:
+      - 'n(C) = 0,05 mol (aus CO₂)'
+      - 'n(H) = 0,1 mol (aus H₂O)'
+      - 'Das Verhältnis C:H ist 1:2'
+      - 'Die empirische Formel könnte CH₂ sein'
+      - 'Die Verbindung enthält nur C und H'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Eine Verbindung hat die Zusammensetzung: 26,7% C, 2,2% H und 71,1% O. Welche empirische Formel?'
+    options:
+      - 'CHO'
+      - 'CHO₂'
+      - 'CH₂O'
+      - 'C₂H₂O₄'
+      - 'CHO₂ (Verhältnis 1:1:2)'
+    correct: [1, 4]
+
+  - question: 'Eisenoxid kann mit Kohlenstoff zu Eisen reduziert werden. Welche Aussagen sind korrekt?'
+    options:
+      - 'Fe₂O₃ + 3 C → 2 Fe + 3 CO'
+      - 'Eisen wird reduziert (Elektronenaufnahme)'
+      - 'Kohlenstoff wird oxidiert'
+      - 'Es ist eine Redoxreaktion'
+      - 'Kohlenstoff ist das Reduktionsmittel'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Die Verbrennung von 1,0 g eines Kohlenwasserstoffs ergibt 3,14 g CO₂ und 1,29 g H₂O. Was ist die empirische Formel?'
+    options:
+      - 'CH₂'
+      - 'CH₃'
+      - 'CH₄'
+      - 'C₂H₆'
+      - 'n(C) ≈ 0,071 mol, n(H) ≈ 0,143 mol'
+    correct: [0, 4]
+
+  - question: 'Bei der Reaktion von Natrium mit Wasser entstehen NaOH und H₂. Welche Aussagen stimmen?'
+    options:
+      - '2 Na + 2 H₂O → 2 NaOH + H₂'
+      - 'Es ist eine Verdrängungsreaktion'
+      - 'Natrium verdrängt Wasserstoff'
+      - 'Die Reaktion ist stark exotherm'
+      - 'Es entsteht eine Base'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Ein Hydrat hat die Formel CuSO₄·5H₂O. Wie hoch ist der Massenanteil des Wassers? (M = 250 g/mol)'
+    options:
+      - '18%'
+      - '36%'
+      - '45%'
+      - '54%'
+      - 'Die Wassermasse ist 90 g/mol'
+    correct: [1]
+
+  - question: 'Welche Molekülformel hat eine Verbindung mit empirischer Formel NO₂ und M = 92 g/mol?'
+    options:
+      - 'NO₂'
+      - 'N₂O₂'
+      - 'N₂O₄'
+      - 'N₃O₆'
+      - 'M(NO₂) = 46 g/mol, Faktor = 2'
+    correct: [2, 4]
+
+  - question: 'Bei welcher Reaktion findet eine Oxidation statt?'
+    options:
+      - 'Fe → Fe²⁺ + 2 e⁻'
+      - 'Cu²⁺ + 2 e⁻ → Cu'
+      - 'S + O₂ → SO₂'
+      - 'H₂ + ½ O₂ → H₂O'
+      - 'Elektronenabgabe ist Oxidation'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Eine Analyse ergibt: 0,6 g C, 0,1 g H, 0,8 g O. Welche empirische Formel hat die Verbindung?'
+    options:
+      - 'CHO'
+      - 'CH₂O'
+      - 'C₂H₄O₂'
+      - 'n(C) = 0,05 mol, n(H) = 0,1 mol, n(O) = 0,05 mol'
+      - 'Verhältnis 1:2:1'
+    correct: [1, 3, 4]
+
+  - question: 'Beim Erhitzen von Kaliumchlorat entsteht Sauerstoff. Welche Aussagen sind korrekt?'
+    options:
+      - '2 KClO₃ → 2 KCl + 3 O₂'
+      - 'Es ist eine Zersetzung'
+      - 'KClO₃ ist das Oxidationsmittel'
+      - 'Chlor wird reduziert'
+      - 'Sauerstoff wird freigesetzt'
+    correct: [0, 1, 3, 4]

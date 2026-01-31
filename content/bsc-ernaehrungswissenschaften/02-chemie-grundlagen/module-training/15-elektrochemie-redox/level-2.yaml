@@ -1,0 +1,95 @@
+# Kapitel 15: Elektrochemie & Redox
+# Level 2: Verständnis
+
+topic: 'Elektrochemie & Redox'
+level: 2
+questions:
+  - question: 'Welche Aussagen zur Redoxreaktion sind korrekt?'
+    options:
+      - 'Oxidation und Reduktion laufen immer gekoppelt ab'
+      - 'Die Elektronenbilanz muss ausgeglichen sein'
+      - 'Das Oxidationsmittel wird reduziert'
+      - 'Das Reduktionsmittel wird oxidiert'
+      - 'Sie können unabhängig voneinander ablaufen'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Standardpotential sind korrekt?'
+    options:
+      - 'Gemessen bei 25°C, 1 M Konzentration, 1 bar'
+      - 'Angegeben als Reduktionspotential'
+      - 'Positives E° = starkes Oxidationsmittel'
+      - 'Negatives E° = starkes Reduktionsmittel'
+      - 'Die Einheit ist Ampere'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum galvanischen Element sind korrekt?'
+    options:
+      - 'Die Anode ist der Minuspol (Oxidation)'
+      - 'Die Kathode ist der Pluspol (Reduktion)'
+      - 'Elektronen fließen von Anode zu Kathode im äußeren Kreislauf'
+      - 'Eine Salzbrücke schließt den Ionenkreislauf'
+      - 'Anode und Kathode können vertauscht werden'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Elektrolyse sind korrekt?'
+    options:
+      - 'Umkehrung des galvanischen Elements'
+      - 'Die Anode ist der Pluspol'
+      - 'Oxidation an der Anode'
+      - 'Reduktion an der Kathode'
+      - 'Läuft freiwillig ab'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur elektrochemischen Spannungsreihe sind korrekt?'
+    options:
+      - 'Ordnet Metalle nach ihrem Reduktionspotential'
+      - 'Unedle Metalle haben negatives E°'
+      - 'Edle Metalle haben positives E°'
+      - 'Vorhersage von Redoxreaktionen möglich'
+      - 'Die Reihenfolge ändert sich mit der Temperatur'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Korrosion sind korrekt?'
+    options:
+      - 'Elektrochemische Oxidation von Metallen'
+      - 'Rost: Fe → Fe²⁺ + 2e⁻'
+      - 'Sauerstoff und Wasser beschleunigen'
+      - 'Lokale galvanische Elemente entstehen'
+      - 'Korrosion ist eine Reduktion'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Korrosionsschutz sind korrekt?'
+    options:
+      - 'Galvanisieren: Überzug mit edlerem Metall'
+      - 'Opferanode: Unedleres Metall schützt'
+      - 'Lackieren: Trennung vom Elektrolyt'
+      - 'Passivierung: Oxidschicht als Schutz'
+      - 'Korrosion kann nicht verhindert werden'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Nernst-Gleichung sind korrekt?'
+    options:
+      - 'Beschreibt konzentrationsabhängiges Potential'
+      - 'E = E° - (RT/nF) × ln(Q)'
+      - 'Bei Standardbedingungen: E = E°'
+      - 'Q ist der Reaktionsquotient'
+      - 'Die Temperatur hat keinen Einfluss'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zu Batterien sind korrekt?'
+    options:
+      - 'Primärzellen: nicht wiederaufladbar'
+      - 'Sekundärzellen (Akkus): wiederaufladbar'
+      - 'Lithium-Ionen-Akkus nutzen Li⁺-Transport'
+      - 'Die Spannung hängt von den Elektrodenmaterialien ab'
+      - 'Alle Batterien haben die gleiche Spannung'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Brennstoffzelle sind korrekt?'
+    options:
+      - 'Kontinuierliche Zufuhr von Brennstoff'
+      - 'H₂ + ½O₂ → H₂O (Wasserstoff-Brennstoffzelle)'
+      - 'Direkte Umwandlung chemischer in elektrische Energie'
+      - 'Höherer Wirkungsgrad als Verbrennung möglich'
+      - 'Keine chemische Reaktion involviert'
+    correct: [0, 1, 2, 3]

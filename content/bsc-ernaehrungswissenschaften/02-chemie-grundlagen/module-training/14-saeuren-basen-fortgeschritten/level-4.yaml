@@ -1,0 +1,95 @@
+# Kapitel 14: Säuren & Basen (Fortgeschritten)
+# Level 4: Analyse
+
+topic: 'Säuren & Basen (Fortgeschritten)'
+level: 4
+questions:
+  - question: 'Wie bereitet man 1 L Acetat-Puffer pH 5,0 aus 0,1 M Essigsäure und festem Natriumacetat (M = 82 g/mol)?'
+    options:
+      - 'pH = pKs + log([A⁻]/[HA]) → [A⁻]/[HA] = 1,74'
+      - 'Bei 0,1 M HA braucht man 0,174 M Acetat'
+      - '0,174 mol × 82 g/mol = 14,3 g Natriumacetat'
+      - 'In 1 L 0,1 M Essigsäure lösen'
+      - 'Man benötigt 82 g Natriumacetat'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Titration einer mehrprotonigen Säure sind korrekt?'
+    options:
+      - 'Bei H₃PO₄ gibt es 3 Äquivalenzpunkte'
+      - 'Jeder Äquivalenzpunkt verbraucht gleichviel Base'
+      - 'Die Stufen sind nur trennbar wenn ΔpKs > 3'
+      - 'Bei H₂SO₄ ist nur der 2. Äquivalenzpunkt sichtbar'
+      - 'Alle Stufen sind immer klar erkennbar'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Wie berechnet man den pH am Äquivalenzpunkt der Titration von 0,1 M Essigsäure mit NaOH?'
+    options:
+      - 'Am ÄP liegt nur Acetat vor (konjugierte Base)'
+      - 'Kb = Kw/Ks = 10⁻¹⁴/1,74×10⁻⁵ = 5,75×10⁻¹⁰'
+      - '[OH⁻] = √(Kb × c) = √(5,75×10⁻¹⁰ × 0,05)'
+      - 'pOH ≈ 5,3 → pH ≈ 8,7'
+      - 'Der pH ist genau 7,0'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Azidose und Alkalose sind korrekt?'
+    options:
+      - 'Azidose: Blut-pH unter 7,35'
+      - 'Alkalose: Blut-pH über 7,45'
+      - 'Respiratorisch: durch CO₂-Änderung'
+      - 'Metabolisch: durch HCO₃⁻-Änderung'
+      - 'Der Körper kann nicht kompensieren'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Bicarbonat-Puffer im Blut sind korrekt?'
+    options:
+      - 'pKs von H₂CO₃ ist 6,1 (effektiv, inkl. CO₂)'
+      - 'Normales Verhältnis [HCO₃⁻]/[H₂CO₃] ≈ 20:1'
+      - 'Dies ergibt pH = 6,1 + log(20) = 7,4'
+      - 'Die Lunge steuert den Nenner, die Niere den Zähler'
+      - 'Das Verhältnis ist immer 1:1'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Wie viel 0,1 M HCl ist nötig, um den pH von 100 mL Puffer (0,1 M HA + 0,2 M A⁻, pKs = 5) von pH 5,3 auf pH 5,0 zu senken?'
+    options:
+      - 'Anfang: [A⁻]/[HA] = 2 → pH = 5 + 0,3 = 5,3 ✓'
+      - 'Ziel: [A⁻]/[HA] = 1 → pH = 5,0'
+      - 'HA muss von 0,01 mol auf 0,015 mol steigen'
+      - 'A⁻ sinkt von 0,02 mol auf 0,015 mol'
+      - '0,005 mol HCl = 50 mL 0,1 M HCl'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zum isoelektrischen Punkt (pI) von Aminosäuren sind korrekt?'
+    options:
+      - 'pI = (pKs1 + pKs2)/2 für einfache Aminosäuren'
+      - 'Am pI ist die Nettoladung null'
+      - 'Das Zwitterion dominiert'
+      - 'Saure AS haben niedrigen pI, basische hohen'
+      - 'Der pI ist für alle Aminosäuren gleich'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Pufferung durch Proteine sind korrekt?'
+    options:
+      - 'Histidin-Reste puffern im physiologischen Bereich'
+      - 'pKs von Histidin-Imidazol ≈ 6,0'
+      - 'Hämoglobin ist wichtiger Blutpuffer'
+      - 'Proteine haben viele ionisierbare Gruppen'
+      - 'Proteine haben keine Pufferwirkung'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Komplexität der Blutpufferung sind korrekt?'
+    options:
+      - 'Bicarbonat-Puffer: Hauptsystem'
+      - 'Phosphat-Puffer: intrazellulär wichtig'
+      - 'Protein-Puffer: Hämoglobin, Albumin'
+      - 'Alle Systeme sind über H⁺ gekoppelt'
+      - 'Kompensation möglich (renal/respiratorisch)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt man den Bohr-Effekt (CO₂-Einfluss auf O₂-Bindung)?'
+    options:
+      - 'CO₂ + H₂O → H₂CO₃ → H⁺ + HCO₃⁻'
+      - 'Niedriger pH (mehr H⁺) senkt O₂-Affinität'
+      - 'Im Gewebe wird O₂ leichter abgegeben'
+      - 'In der Lunge umgekehrt: bessere O₂-Aufnahme'
+      - 'Histidin-Reste am Hämoglobin beteiligt'
+    correct: [0, 1, 2, 3, 4]

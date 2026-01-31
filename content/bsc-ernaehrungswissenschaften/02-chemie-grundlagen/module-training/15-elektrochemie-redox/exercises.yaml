@@ -1,0 +1,365 @@
+# Kapitel 15: Elektrochemie & Redox
+# Praktische Übungen
+
+topic: 'Elektrochemie & Redox'
+blueprintType: 'electrochemistry-calculation'
+exercises:
+  # Level 1: Grundlegend (2-3 Schritte)
+  - id: 'ex-15-01'
+    title: 'Zellspannung berechnen'
+    level: 1
+
+    task: |
+      Berechne die Standard-Zellspannung einer galvanischen Zelle aus:
+      - Zinkelektrode: E°(Zn²⁺/Zn) = -0,76 V
+      - Kupferelektrode: E°(Cu²⁺/Cu) = +0,34 V
+
+    hints:
+      keyword: 'E°zelle = E°Kathode - E°Anode'
+      approach: |
+        1. Kathode = höheres Potential (wird reduziert)
+        2. Anode = niedrigeres Potential (wird oxidiert)
+        3. E°zelle berechnen
+      overview: |
+        - Kathode: Cu (E° = +0,34 V)
+        - Anode: Zn (E° = -0,76 V)
+        - E°zelle = 0,34 - (-0,76) = 1,10 V
+
+    steps:
+      - description: 'Kathode und Anode identifizieren'
+        solution: 'Kathode: Cu (höheres E°), Anode: Zn (niedrigeres E°)'
+      - description: 'Zellspannung berechnen'
+        solution: 'E°zelle = E°Kathode - E°Anode = 0,34 V - (-0,76 V) = 1,10 V'
+
+    finalAnswer: 'E°zelle = 1,10 V'
+
+    relatedCheatsheets:
+      - 'elektrochemie-cheatsheet'
+
+  - id: 'ex-15-02'
+    title: 'Freiwilligkeit einer Redoxreaktion'
+    level: 1
+
+    task: |
+      Läuft folgende Reaktion freiwillig ab?
+
+      Ag⁺ + Fe → Ag + Fe²⁺
+
+      E°(Ag⁺/Ag) = +0,80 V, E°(Fe²⁺/Fe) = -0,44 V
+
+    hints:
+      keyword: 'Positives E°zelle = spontan'
+      approach: |
+        1. Oxidation: Fe → Fe²⁺
+        2. Reduktion: Ag⁺ → Ag
+        3. E°zelle berechnen und Vorzeichen prüfen
+      overview: |
+        - E°zelle = 0,80 - (-0,44) = 1,24 V
+        - Positiv → Reaktion läuft freiwillig
+
+    steps:
+      - description: 'Teilreaktionen identifizieren'
+        solution: 'Ox: Fe → Fe²⁺ + 2e⁻, Red: 2Ag⁺ + 2e⁻ → 2Ag'
+      - description: 'Zellspannung berechnen'
+        solution: 'E°zelle = 0,80 V - (-0,44 V) = 1,24 V > 0'
+
+    finalAnswer: 'Ja, die Reaktion läuft freiwillig ab (E°zelle = +1,24 V)'
+
+  # Level 2: Einfach (3-4 Schritte)
+  - id: 'ex-15-03'
+    title: 'Gibbs-Energie aus Zellspannung'
+    level: 2
+
+    task: |
+      Berechne ΔG° für die Reaktion:
+      Zn + Cu²⁺ → Zn²⁺ + Cu
+
+      E°zelle = 1,10 V, n = 2 Elektronen
+      F = 96485 C/mol
+
+    hints:
+      keyword: 'ΔG° = -nFE°'
+      approach: |
+        1. Formel anwenden
+        2. Einheiten beachten: C × V = J
+        3. In kJ umrechnen
+      overview: |
+        - ΔG° = -2 × 96485 × 1,10
+        - ΔG° = -212,3 kJ/mol
+
+    steps:
+      - description: 'Formel aufstellen'
+        solution: 'ΔG° = -nFE°'
+      - description: 'Werte einsetzen'
+        solution: 'ΔG° = -2 × 96485 C/mol × 1,10 V'
+      - description: 'Berechnen (C × V = J)'
+        solution: 'ΔG° = -212267 J/mol = -212,3 kJ/mol'
+
+    finalAnswer: 'ΔG° = -212,3 kJ/mol (spontane Reaktion)'
+
+  - id: 'ex-15-04'
+    title: 'Gleichgewichtskonstante aus E°'
+    level: 2
+
+    task: |
+      Berechne die Gleichgewichtskonstante K für:
+      Zn + Cu²⁺ ⇌ Zn²⁺ + Cu
+
+      E°zelle = 1,10 V, n = 2, T = 25°C
+
+      Formel: log K = nE°/0,0592
+
+    hints:
+      keyword: 'Großes E° → sehr großes K'
+      approach: |
+        1. log K = nE°/0,0592 einsetzen
+        2. K = 10^(log K) berechnen
+      overview: |
+        - log K = 2 × 1,10 / 0,0592 = 37,2
+        - K = 10^37,2 ≈ 1,6 × 10³⁷
+
+    steps:
+      - description: 'log K berechnen'
+        solution: 'log K = (2 × 1,10 V) / 0,0592 V = 37,2'
+      - description: 'K berechnen'
+        solution: 'K = 10^37,2 = 1,6 × 10³⁷'
+      - description: 'Interpretation'
+        solution: 'Extrem großes K → Reaktion verläuft praktisch vollständig'
+
+    finalAnswer: 'K = 1,6 × 10³⁷'
+
+  # Level 3: Mittel (4-5 Schritte)
+  - id: 'ex-15-05'
+    title: 'Nernst-Gleichung anwenden'
+    level: 3
+
+    task: |
+      Berechne das Potential einer Kupferelektrode bei [Cu²⁺] = 0,01 M.
+
+      E°(Cu²⁺/Cu) = +0,34 V, n = 2, T = 25°C
+
+      Nernst: E = E° - (0,0592/n) × log(1/[Cu²⁺])
+
+    hints:
+      keyword: 'Konzentration < 1 M → E < E°'
+      approach: |
+        1. Nernst-Gleichung aufstellen
+        2. log(1/0,01) = log(100) = 2
+        3. E berechnen
+      overview: |
+        - E = 0,34 - (0,0592/2) × log(1/0,01)
+        - E = 0,34 - 0,0296 × 2 = 0,28 V
+
+    steps:
+      - description: 'Nernst-Gleichung für Reduktion'
+        solution: 'Cu²⁺ + 2e⁻ → Cu: E = E° - (0,0592/n) × log(1/[Cu²⁺])'
+      - description: 'Logarithmus berechnen'
+        solution: 'log(1/0,01) = log(100) = 2'
+      - description: 'In Gleichung einsetzen'
+        solution: 'E = 0,34 V - (0,0592/2) × 2'
+      - description: 'Berechnen'
+        solution: 'E = 0,34 V - 0,0592 V = 0,28 V'
+
+    finalAnswer: 'E = +0,28 V'
+
+  - id: 'ex-15-06'
+    title: 'Elektrolyse - Stoffmenge aus Ladung'
+    level: 3
+
+    task: |
+      Wie viel Gramm Kupfer werden abgeschieden, wenn 2,0 A für 1 Stunde
+      durch eine CuSO₄-Lösung fließen?
+
+      Cu²⁺ + 2e⁻ → Cu
+      M(Cu) = 63,5 g/mol, F = 96485 C/mol
+
+    hints:
+      keyword: 'Q = I × t, dann n(e⁻) = Q/F'
+      approach: |
+        1. Ladung Q berechnen
+        2. Stoffmenge Elektronen
+        3. Stoffmenge Cu (÷2)
+        4. Masse Cu
+      overview: |
+        - Q = 2,0 A × 3600 s = 7200 C
+        - n(e⁻) = 7200/96485 = 0,0746 mol
+        - n(Cu) = 0,0373 mol → m = 2,37 g
+
+    steps:
+      - description: 'Ladung berechnen'
+        solution: 'Q = I × t = 2,0 A × 3600 s = 7200 C'
+      - description: 'Stoffmenge Elektronen'
+        solution: 'n(e⁻) = Q/F = 7200/96485 = 0,0746 mol'
+      - description: 'Stoffmenge Cu (2 e⁻ pro Cu)'
+        solution: 'n(Cu) = n(e⁻)/2 = 0,0746/2 = 0,0373 mol'
+      - description: 'Masse Cu'
+        solution: 'm(Cu) = n × M = 0,0373 × 63,5 = 2,37 g'
+
+    finalAnswer: 'm(Cu) = 2,37 g'
+
+  # Level 4: Komplex (5-7 Schritte)
+  - id: 'ex-15-07'
+    title: 'Konzentrationszelle berechnen'
+    level: 4
+
+    task: |
+      Eine Konzentrationszelle besteht aus zwei Cu-Elektroden in CuSO₄-Lösungen:
+      - Lösung 1: [Cu²⁺] = 1,0 M
+      - Lösung 2: [Cu²⁺] = 0,001 M
+
+      Berechne die Zellspannung bei 25°C.
+      E°(Cu²⁺/Cu) = +0,34 V
+
+    hints:
+      keyword: 'Bei Konzentrationszelle: E° = 0, nur Konzentrationsdifferenz zählt'
+      approach: |
+        1. Beide E mit Nernst berechnen
+        2. Oder: E = (0,0592/n) × log([Cu²⁺]₁/[Cu²⁺]₂)
+        3. Verdünnte Seite = Anode
+      overview: |
+        - E = (0,0592/2) × log(1,0/0,001)
+        - E = 0,0296 × 3 = 0,089 V
+
+    steps:
+      - description: 'Kathode und Anode bestimmen'
+        solution: 'Kathode: konzentrierte Lösung (1,0 M), Anode: verdünnte (0,001 M)'
+      - description: 'Potentialdifferenz mit Nernst'
+        solution: 'Ezelle = (0,0592/n) × log([Cu²⁺]Kathode/[Cu²⁺]Anode)'
+      - description: 'Werte einsetzen'
+        solution: 'Ezelle = (0,0592/2) × log(1,0/0,001)'
+      - description: 'log berechnen'
+        solution: 'log(1000) = 3'
+      - description: 'Spannung berechnen'
+        solution: 'Ezelle = 0,0296 × 3 = 0,089 V'
+
+    finalAnswer: 'Ezelle = 0,089 V = 89 mV'
+
+  - id: 'ex-15-08'
+    title: 'Elektrolyse von Wasser'
+    level: 4
+
+    task: |
+      Bei der Elektrolyse von Wasser sollen 2,0 L H₂ (bei STP) erzeugt werden.
+
+      a) Wie viel Coulomb werden benötigt?
+      b) Wie lange dauert es bei 5,0 A?
+
+      2H₂O → 2H₂ + O₂ (Kathode: 2H⁺ + 2e⁻ → H₂)
+      Vm = 22,4 L/mol, F = 96485 C/mol
+
+    hints:
+      keyword: '2 e⁻ pro H₂-Molekül'
+      approach: |
+        1. n(H₂) aus Volumen
+        2. n(e⁻) = 2 × n(H₂)
+        3. Q = n(e⁻) × F
+        4. t = Q/I
+      overview: |
+        - n(H₂) = 2,0/22,4 = 0,089 mol
+        - n(e⁻) = 0,178 mol
+        - Q = 17200 C, t = 3440 s ≈ 57 min
+
+    steps:
+      - description: 'Stoffmenge H₂'
+        solution: 'n(H₂) = V/Vm = 2,0/22,4 = 0,0893 mol'
+      - description: 'Stoffmenge Elektronen'
+        solution: 'n(e⁻) = 2 × n(H₂) = 2 × 0,0893 = 0,179 mol'
+      - description: 'Ladung berechnen'
+        solution: 'Q = n(e⁻) × F = 0,179 × 96485 = 17250 C'
+      - description: 'Zeit berechnen'
+        solution: 't = Q/I = 17250/5,0 = 3450 s'
+      - description: 'In Minuten umrechnen'
+        solution: 't = 3450 s ÷ 60 = 57,5 min ≈ 58 min'
+
+    finalAnswer: |
+      a) Q = 17250 C
+      b) t = 58 Minuten
+
+  # Level 5: Anspruchsvoll (6-8+ Schritte)
+  - id: 'ex-15-09'
+    title: 'pH-Abhängigkeit des Potentials'
+    level: 5
+
+    task: |
+      Berechne das Potential der Wasserstoffelektrode bei pH 7 und 25°C.
+
+      2H⁺ + 2e⁻ → H₂
+      E° = 0,00 V (Definition), p(H₂) = 1 bar
+
+      Nernst: E = E° - (0,0592/n) × log([H₂]/[H⁺]²)
+
+    hints:
+      keyword: 'pH in [H⁺] umrechnen, dann Nernst'
+      approach: |
+        1. [H⁺] aus pH
+        2. Nernst-Gleichung für H₂/H⁺
+        3. log-Term berechnen
+      overview: |
+        - [H⁺] = 10⁻⁷ M
+        - E = 0 - (0,0592/2) × log(1/(10⁻⁷)²)
+        - E = -0,414 V
+
+    steps:
+      - description: '[H⁺] aus pH berechnen'
+        solution: '[H⁺] = 10^(-pH) = 10^(-7) = 1×10⁻⁷ M'
+      - description: 'Nernst-Gleichung aufstellen'
+        solution: 'E = E° - (0,0592/2) × log(p(H₂)/[H⁺]²)'
+      - description: 'Werte einsetzen (p(H₂) = 1)'
+        solution: 'E = 0 - 0,0296 × log(1/(10⁻⁷)²)'
+      - description: 'log-Term berechnen'
+        solution: 'log(1/10⁻¹⁴) = log(10¹⁴) = 14'
+      - description: 'E berechnen'
+        solution: 'E = 0 - 0,0296 × 14 = -0,414 V'
+      - description: 'Alternative: E = -0,0592 × pH'
+        solution: 'E = -0,0592 × 7 = -0,414 V (Schnellformel)'
+
+    finalAnswer: 'E = -0,414 V bei pH 7'
+
+  - id: 'ex-15-10'
+    title: 'Galvanische Korrosion'
+    level: 5
+
+    task: |
+      Ein Eisennagel (E° = -0,44 V) steckt in Kupferblech (E° = +0,34 V).
+      Der Kontakt ist mit Salzwasser benetzt.
+
+      a) Welches Metall korrodiert?
+      b) Berechne die treibende Kraft (E°zelle)
+      c) Wie viel mg Eisen korrodieren pro Coulomb übertragener Ladung?
+
+      M(Fe) = 55,8 g/mol, Fe → Fe²⁺ + 2e⁻
+
+    hints:
+      keyword: 'Unedleres Metall = Anode = korrodiert'
+      approach: |
+        1. Potentiale vergleichen
+        2. Zellspannung berechnen
+        3. Masse pro Coulomb: m = (M × Q)/(n × F)
+      overview: |
+        - Fe korrodiert (Anode, E° = -0,44 V)
+        - E°zelle = 0,34 - (-0,44) = 0,78 V
+        - m/Q = 55,8/(2 × 96485) = 0,289 mg/C
+
+    steps:
+      - description: 'Anode und Kathode bestimmen'
+        solution: 'Anode: Fe (E° = -0,44 V, niedriger), Kathode: Cu (E° = +0,34 V)'
+      - description: 'Welches Metall korrodiert?'
+        solution: 'Eisen korrodiert (wird oxidiert an der Anode)'
+      - description: 'Zellspannung berechnen'
+        solution: 'E°zelle = E°Kathode - E°Anode = 0,34 - (-0,44) = 0,78 V'
+      - description: 'Faraday-Gesetz für Masse pro Ladung'
+        solution: 'm = (M × Q)/(n × F), also m/Q = M/(n × F)'
+      - description: 'Werte einsetzen'
+        solution: 'm/Q = 55,8 g/mol / (2 × 96485 C/mol)'
+      - description: 'Berechnen'
+        solution: 'm/Q = 55,8 / 192970 = 2,89 × 10⁻⁴ g/C = 0,289 mg/C'
+      - description: 'Interpretation'
+        solution: 'Pro Coulomb korrodieren 0,289 mg Eisen - bei 1 A wären das 0,289 mg/s'
+
+    finalAnswer: |
+      a) Eisen korrodiert (unedler)
+      b) E°zelle = 0,78 V (treibende Kraft)
+      c) 0,289 mg Fe pro Coulomb
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'

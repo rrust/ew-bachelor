@@ -1,0 +1,95 @@
+# Kapitel 6: Säuren & Basen (Grundlagen)
+# Level 4: Analyse
+
+topic: 'Säuren & Basen (Grundlagen)'
+level: 4
+questions:
+  - question: '50 mL einer 0,2 M H₂SO₄ werden mit NaOH neutralisiert. Wie viel mol NaOH werden benötigt?'
+    options:
+      - '0,01 mol'
+      - '0,02 mol'
+      - 'n(H₂SO₄) = 0,01 mol'
+      - 'H₂SO₄ ist zweiprotonig → 0,02 mol NaOH'
+      - 'Verhältnis H₂SO₄:NaOH = 1:2'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Eine Lösung hat pH = 4. Welche Aussagen sind korrekt?'
+    options:
+      - 'c(H⁺) = 10⁻⁴ M'
+      - 'c(OH⁻) = 10⁻¹⁰ M'
+      - 'pOH = 10'
+      - 'Die Lösung ist sauer'
+      - 'c(H⁺) × c(OH⁻) = 10⁻¹⁴'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Bei der Reaktion von 0,05 mol Na₂CO₃ mit überschüssiger HCl entstehen wie viel mol CO₂?'
+    options:
+      - '0,025 mol'
+      - '0,05 mol'
+      - '0,1 mol'
+      - 'Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂'
+      - 'Das Verhältnis Na₂CO₃:CO₂ ist 1:1'
+    correct: [1, 3, 4]
+
+  - question: 'Welche Lösung hat den niedrigsten pH-Wert?'
+    options:
+      - '0,1 M HCl'
+      - '0,1 M CH₃COOH'
+      - '0,01 M HCl'
+      - '1 M CH₃COOH'
+      - '0,1 M HCl hat pH = 1'
+    correct: [0, 4]
+
+  - question: 'Was passiert, wenn man gleiche Volumina 0,1 M HCl und 0,1 M NaOH mischt?'
+    options:
+      - 'Die Lösung wird neutral'
+      - 'pH ≈ 7'
+      - 'Es entsteht NaCl-Lösung'
+      - 'Die Ionen reagieren vollständig'
+      - 'Es bleibt saure Lösung übrig'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Eine Lösung enthält 0,1 M HCl und 0,1 M CH₃COOH. Welche Aussagen stimmen?'
+    options:
+      - 'Der pH-Wert ist hauptsächlich durch HCl bestimmt'
+      - 'c(H⁺) ≈ 0,1 M (von HCl)'
+      - 'Essigsäure trägt wenig zu c(H⁺) bei'
+      - 'pH ≈ 1'
+      - 'Die Gesamtsäurekonzentration ist 0,2 M'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Bei pH = 2 und Volumen 100 mL: Wie viel mol H⁺ sind in der Lösung?'
+    options:
+      - '0,001 mol'
+      - '0,01 mol'
+      - '0,1 mol'
+      - 'c(H⁺) = 0,01 M'
+      - 'n = 0,01 × 0,1 = 0,001 mol'
+    correct: [0, 3, 4]
+
+  - question: 'Welche Base neutralisiert 0,1 mol H₂SO₄ vollständig?'
+    options:
+      - '0,1 mol NaOH'
+      - '0,2 mol NaOH'
+      - '0,1 mol Ca(OH)₂'
+      - 'Ca(OH)₂ hat 2 OH⁻ pro Formeleinheit'
+      - 'H₂SO₄ + Ca(OH)₂ → CaSO₄ + 2 H₂O'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Bei der Titration einer unbekannten Säure werden 40 mL 0,1 M NaOH für 20 mL Säure benötigt. Wie viele H⁺ pro Molekül?'
+    options:
+      - '1'
+      - '2'
+      - '3'
+      - 'n(NaOH) = 0,004 mol'
+      - 'Verhältnis NaOH:Säure = 2:1'
+    correct: [1, 3, 4]
+
+  - question: 'Welche Aussagen zur Autoprotolyse von Wasser sind korrekt?'
+    options:
+      - '2 H₂O ⇌ H₃O⁺ + OH⁻'
+      - 'Kw = c(H⁺) × c(OH⁻) = 10⁻¹⁴ bei 25°C'
+      - 'In reinem Wasser: c(H⁺) = c(OH⁻) = 10⁻⁷ M'
+      - 'pH + pOH = 14'
+      - 'Kw ist temperaturabhängig'
+    correct: [0, 1, 2, 3, 4]

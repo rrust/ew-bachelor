@@ -1,0 +1,96 @@
+# Kapitel 2: Elemente, Ionen & Mol-Konzept
+# Level 1: Grundlagen (Wissen)
+# 10 Fragen, jeweils 1 korrekte Antwort
+
+topic: 'Elemente, Ionen & Mol-Konzept'
+level: 1
+questions:
+  - question: 'Was beschreibt die Avogadro-Konstante?'
+    options:
+      - 'Die Masse eines einzelnen Atoms in Gramm'
+      - 'Die Teilchenzahl in einem Mol eines Stoffes'
+      - 'Die Dichte von Gasen bei Normalbedingungen'
+      - 'Das Volumen von einem Mol Flüssigkeit'
+      - 'Die Ladung eines einzelnen Elektrons'
+    correct: [1]
+
+  - question: 'Welchen Wert hat die Avogadro-Konstante ungefähr?'
+    options:
+      - '3,14 × 10²³ Teilchen pro Mol'
+      - '6,02 × 10²³ Teilchen pro Mol'
+      - '9,81 × 10²³ Teilchen pro Mol'
+      - '1,66 × 10⁻²⁴ Teilchen pro Mol'
+      - '2,99 × 10⁸ Teilchen pro Mol'
+    correct: [1]
+
+  - question: 'Was ist ein Kation?'
+    options:
+      - 'Ein negativ geladenes Teilchen'
+      - 'Ein elektrisch neutrales Atom'
+      - 'Ein positiv geladenes Teilchen'
+      - 'Ein Atomkern ohne Elektronen'
+      - 'Ein Molekül aus zwei Atomen'
+    correct: [2]
+
+  - question: 'Wie entsteht ein Anion?'
+    options:
+      - 'Durch Abgabe von Elektronen'
+      - 'Durch Aufnahme von Elektronen'
+      - 'Durch Abgabe von Protonen'
+      - 'Durch Aufnahme von Neutronen'
+      - 'Durch Kernspaltung des Atoms'
+    correct: [1]
+
+  - question: 'Was gibt die molare Masse an?'
+    options:
+      - 'Die Masse eines einzelnen Teilchens'
+      - 'Die Masse von einem Mol eines Stoffes'
+      - 'Die Anzahl der Atome pro Gramm'
+      - 'Das Volumen bei Standardbedingungen'
+      - 'Die Dichte eines reinen Elements'
+    correct: [1]
+
+  - question: 'In welcher Einheit wird die molare Masse angegeben?'
+    options:
+      - 'Gramm (g)'
+      - 'Gramm pro Mol (g/mol)'
+      - 'Mol pro Liter (mol/L)'
+      - 'Kilogramm pro Kubikmeter'
+      - 'Atomare Masseneinheiten (u)'
+    correct: [1]
+
+  - question: 'Welches Symbol hat das Element Natrium?'
+    options:
+      - 'N'
+      - 'Na'
+      - 'S'
+      - 'So'
+      - 'Nt'
+    correct: [1]
+
+  - question: 'Was bedeutet das Symbol Fe?'
+    options:
+      - 'Fluor'
+      - 'Eisen'
+      - 'Fermium'
+      - 'Francium'
+      - 'Flerovium'
+    correct: [1]
+
+  - question: 'Was ist die Stoffmenge n?'
+    options:
+      - 'Die Masse eines Stoffes in Gramm'
+      - 'Die Anzahl der Mole eines Stoffes'
+      - 'Die Dichte einer Lösung'
+      - 'Das Volumen bei Normaldruck'
+      - 'Die Konzentration pro Liter'
+    correct: [1]
+
+  - question: 'Welche Ladung hat ein Chlorid-Ion?'
+    options:
+      - '+1'
+      - '+2'
+      - '-1'
+      - '-2'
+      - '0 (neutral)'
+    correct: [2]

@@ -1,0 +1,95 @@
+# Kapitel 11: Thermodynamik & Enthalpie
+# Level 2: Verständnis
+
+topic: 'Thermodynamik & Enthalpie'
+level: 2
+questions:
+  - question: 'Warum ist der Satz von Hess nützlich?'
+    options:
+      - 'Man kann ΔH aus anderen Reaktionen berechnen'
+      - 'Nicht direkt messbare Reaktionen können berechnet werden'
+      - 'Die Reaktionsenthalpie ist eine Zustandsgröße'
+      - 'Der Weg spielt keine Rolle, nur Start und Ende'
+      - 'Er erlaubt keine Berechnungen'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zu Bildungsenthalpien sind korrekt?'
+    options:
+      - 'ΔHf° von Elementen im Standardzustand ist 0'
+      - 'ΔH°Reaktion = Σ ΔHf°(Produkte) - Σ ΔHf°(Edukte)'
+      - 'Negative ΔHf° zeigt stabile Verbindung an'
+      - 'O₂(g) hat ΔHf° = 0'
+      - 'H₂O(l) hat negative ΔHf°'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie berechnet man ΔH aus Bindungsenergien?'
+    options:
+      - 'ΔH = Σ BE(Edukte gebrochen) - Σ BE(Produkte gebildet)'
+      - 'Bindungsbruch kostet Energie (endotherm)'
+      - 'Bindungsbildung setzt Energie frei (exotherm)'
+      - 'BE sind Durchschnittswerte'
+      - 'Die Berechnung ist exakt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum sind Verbrennungsreaktionen meist stark exotherm?'
+    options:
+      - 'Es bilden sich starke Bindungen in CO₂ und H₂O'
+      - 'Die C=O und O-H Bindungen sind sehr stark'
+      - 'Die freigesetzte Energie überwiegt die aufgewendete'
+      - 'Verbrennung ist immer endotherm'
+      - 'ΔH der Verbrennung ist negativ'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zur Reaktionsenthalpie sind korrekt?'
+    options:
+      - 'Sie ist die Wärme bei konstantem Druck'
+      - 'ΔH = qp (Wärme bei konstantem Druck)'
+      - 'Sie hängt vom Reaktionsweg ab'
+      - 'Enthalpie ist eine Zustandsfunktion'
+      - 'ΔH ändert das Vorzeichen bei Umkehrung'
+    correct: [0, 1, 3, 4]
+
+  - question: 'Was bestimmt ob eine Reaktion spontan abläuft?'
+    options:
+      - 'Nur die Enthalpie'
+      - 'Enthalpie und Entropie gemeinsam'
+      - 'Die Gibbs-Energie ΔG = ΔH - TΔS'
+      - 'ΔG < 0 bedeutet spontan'
+      - 'Nur exotherme Reaktionen sind spontan'
+    correct: [1, 2, 3]
+
+  - question: 'Warum hat Graphit eine niedrigere Enthalpie als Diamant?'
+    options:
+      - 'Graphit ist die thermodynamisch stabilere Form'
+      - 'Diamant hat höhere Energie (metastabil)'
+      - 'Die Umwandlung Diamant → Graphit ist exotherm'
+      - 'Graphit hat stärkere Bindungen'
+      - 'Diamant ist die stabilere Form'
+    correct: [0, 1, 2]
+
+  - question: 'Welche Aussagen zum Energiediagramm einer exothermen Reaktion sind korrekt?'
+    options:
+      - 'Produkte liegen energetisch tiefer als Edukte'
+      - 'Die Aktivierungsenergie ist die Barriere'
+      - 'ΔH ist der Unterschied zwischen Edukt- und Produkt-Niveau'
+      - 'Katalysatoren senken die Aktivierungsenergie'
+      - 'Katalysatoren ändern ΔH'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum benötigt das Auflösen von NH₄NO₃ Wärme aus der Umgebung?'
+    options:
+      - 'Der Lösungsprozess ist endotherm'
+      - 'Die Gitterenergie ist höher als die Hydratationsenthalpie'
+      - 'ΔHLösung ist positiv'
+      - 'Die Lösung kühlt sich ab (Kältekompresse)'
+      - 'Der Prozess ist immer exotherm'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zu Kalorimetrie sind korrekt?'
+    options:
+      - 'q = mcΔT berechnet die Wärmemenge'
+      - 'c ist die spezifische Wärmekapazität'
+      - 'Ein Kalorimeter misst Wärmeänderungen'
+      - 'Bei exothermen Reaktionen steigt T'
+      - 'm ist die Molmasse'
+    correct: [0, 1, 2, 3]

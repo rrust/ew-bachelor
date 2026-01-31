@@ -1,0 +1,95 @@
+# Kapitel 15: Elektrochemie & Redox
+# Level 3: Anwendung
+
+topic: 'Elektrochemie & Redox'
+level: 3
+questions:
+  - question: 'Berechne die Zellspannung: Zn (E° = -0,76 V) | Cu (E° = +0,34 V)'
+    options:
+      - 'E°zelle = 0,34 V - (-0,76 V) = 1,10 V'
+      - 'E°zelle = 0,42 V'
+      - 'E°zelle = -0,42 V'
+      - 'E°zelle = -1,10 V'
+      - 'E°zelle = 0,76 V'
+    correct: [0]
+
+  - question: 'Welches Metall wird in der Zink-Kupfer-Zelle oxidiert?'
+    options:
+      - 'Zink (geringeres Reduktionspotential)'
+      - 'Kupfer'
+      - 'Beide'
+      - 'Keines'
+      - 'Abhängig von der Temperatur'
+    correct: [0]
+
+  - question: 'Bestimme die Oxidationszahlen in H₂SO₄'
+    options:
+      - 'H: +1, S: +6, O: -2'
+      - 'H: +2, S: +4, O: -2'
+      - 'H: 0, S: +6, O: 0'
+      - 'H: +1, S: +4, O: -1'
+      - 'H: -1, S: +6, O: -2'
+    correct: [0]
+
+  - question: 'Welche Reaktion läuft freiwillig ab? Fe²⁺ (E° = -0,44 V), Ag⁺ (E° = +0,80 V)'
+    options:
+      - 'Fe + 2Ag⁺ → Fe²⁺ + 2Ag (E°zelle = 1,24 V)'
+      - 'Fe²⁺ + 2Ag → Fe + 2Ag⁺'
+      - 'Keine Reaktion'
+      - 'Beide Richtungen möglich'
+      - 'Abhängig vom pH-Wert'
+    correct: [0]
+
+  - question: 'Wie viel Kupfer (M = 63,5 g/mol) scheidet sich bei Elektrolyse mit 2 F (2 × 96485 C) ab?'
+    options:
+      - '63,5 g (Cu²⁺ + 2e⁻ → Cu, n = 1 mol)'
+      - '31,75 g'
+      - '127 g'
+      - '96,5 g'
+      - '192,97 g'
+    correct: [0]
+
+  - question: 'Welche Stoffmenge Elektronen entspricht 96485 C?'
+    options:
+      - '1 mol (= 1 Faraday)'
+      - '2 mol'
+      - '0,5 mol'
+      - '10 mol'
+      - '0,1 mol'
+    correct: [0]
+
+  - question: 'Bei der Elektrolyse von NaCl-Lösung entstehen an der Anode:'
+    options:
+      - 'Chlorgas (Cl₂)'
+      - 'Natriummetall'
+      - 'Wasserstoff'
+      - 'Sauerstoff'
+      - 'Natriumhydroxid'
+    correct: [0]
+
+  - question: 'Bei der Elektrolyse von NaCl-Lösung entstehen an der Kathode:'
+    options:
+      - 'Wasserstoff und OH⁻ (Na⁺ bleibt in Lösung)'
+      - 'Natriummetall'
+      - 'Chlorgas'
+      - 'Sauerstoff'
+      - 'Natriumchlorid'
+    correct: [0]
+
+  - question: 'Berechne das Potential einer Zn²⁺/Zn-Elektrode bei [Zn²⁺] = 0,01 M (E° = -0,76 V, RT/nF ≈ 0,0296 V bei 25°C für n=2)'
+    options:
+      - 'E = -0,76 + 0,0296 × log(0,01) = -0,76 - 0,059 = -0,82 V'
+      - 'E = -0,76 V'
+      - 'E = -0,70 V'
+      - 'E = -0,90 V'
+      - 'E = -0,50 V'
+    correct: [0]
+
+  - question: 'Welche Aussage zur Silber-Silberchlorid-Elektrode ist korrekt?'
+    options:
+      - 'Häufige Referenzelektrode in der Praxis'
+      - 'E° = +0,22 V gegen SHE'
+      - 'Ag|AgCl|KCl-Lösung'
+      - 'Stabiler und einfacher als SHE'
+      - 'Die Standardwasserstoffelektrode'
+    correct: [0, 1, 2, 3]

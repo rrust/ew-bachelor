@@ -1,0 +1,394 @@
+# Kapitel 04: Reaktionen & Empirische Formeln
+# Praktische Übungen
+
+topic: 'Reaktionen & Empirische Formeln'
+blueprintType: 'empirical-formula-calculation'
+exercises:
+  # Level 1: Grundlegend (2-3 Schritte)
+  - id: 'ex-04-01'
+    title: 'Empirische Formel aus Massenanteilen'
+    level: 1
+
+    task: |
+      Eine Verbindung enthält 40,0% Kohlenstoff, 6,7% Wasserstoff und 53,3% Sauerstoff.
+
+      Bestimme die empirische Formel der Verbindung.
+
+      Molmassen: C = 12 g/mol, H = 1 g/mol, O = 16 g/mol
+
+    hints:
+      keyword: 'Massenprozent → Stoffmenge → kleinstes Verhältnis'
+      approach: |
+        1. Annahme: 100 g Probe → Massen = Prozentangaben
+        2. Stoffmengen berechnen: n = m/M
+        3. Durch kleinste Stoffmenge teilen
+      overview: |
+        - n(C) = 40/12 = 3,33 mol
+        - n(H) = 6,7/1 = 6,7 mol
+        - n(O) = 53,3/16 = 3,33 mol
+        - Verhältnis: 1:2:1 → CH₂O
+
+    steps:
+      - description: 'Annahme: 100 g Probe, Massen berechnen'
+        solution: 'm(C) = 40,0 g, m(H) = 6,7 g, m(O) = 53,3 g'
+      - description: 'Stoffmengen berechnen'
+        solution: 'n(C) = 40,0/12 = 3,33 mol, n(H) = 6,7/1 = 6,7 mol, n(O) = 53,3/16 = 3,33 mol'
+      - description: 'Durch kleinste Stoffmenge teilen'
+        solution: 'C: 3,33/3,33 = 1, H: 6,7/3,33 = 2, O: 3,33/3,33 = 1'
+
+    finalAnswer: 'Empirische Formel: CH₂O'
+
+    relatedCheatsheets:
+      - 'reaktionen-formeln-cheatsheet'
+
+  - id: 'ex-04-02'
+    title: 'Empirische Formel einer Eisenoxid-Verbindung'
+    level: 1
+
+    task: |
+      Eine Eisenoxid-Verbindung enthält 70,0% Eisen und 30,0% Sauerstoff.
+
+      Bestimme die empirische Formel.
+
+      Molmassen: Fe = 56 g/mol, O = 16 g/mol
+
+    hints:
+      keyword: 'Stoffmengenverhältnis bestimmen'
+      approach: |
+        1. Bei 100 g: m(Fe) = 70 g, m(O) = 30 g
+        2. Stoffmengen berechnen
+        3. Verhältnis ermitteln
+      overview: |
+        - n(Fe) = 70/56 = 1,25 mol
+        - n(O) = 30/16 = 1,875 mol
+        - Verhältnis: 1,25:1,875 = 2:3 → Fe₂O₃
+
+    steps:
+      - description: 'Stoffmengen berechnen'
+        solution: 'n(Fe) = 70,0/56 = 1,25 mol, n(O) = 30,0/16 = 1,875 mol'
+      - description: 'Durch kleinste Stoffmenge teilen'
+        solution: 'Fe: 1,25/1,25 = 1, O: 1,875/1,25 = 1,5'
+      - description: 'Mit 2 multiplizieren für ganze Zahlen'
+        solution: 'Fe: 1×2 = 2, O: 1,5×2 = 3'
+
+    finalAnswer: 'Empirische Formel: Fe₂O₃'
+
+  # Level 2: Einfach (3-4 Schritte)
+  - id: 'ex-04-03'
+    title: 'Molekülformel aus empirischer Formel'
+    level: 2
+
+    task: |
+      Die empirische Formel einer Verbindung ist CH₂O.
+      Die Molmasse beträgt 180 g/mol.
+
+      Bestimme die Molekülformel.
+
+      Molmassen: C = 12 g/mol, H = 1 g/mol, O = 16 g/mol
+
+    hints:
+      keyword: 'Molmasse der empirischen Formel → Faktor'
+      approach: |
+        1. Molmasse der empirischen Formel berechnen
+        2. Faktor = M(Molekül)/M(empirisch)
+        3. Indices multiplizieren
+      overview: |
+        - M(CH₂O) = 12 + 2 + 16 = 30 g/mol
+        - Faktor = 180/30 = 6
+        - Molekülformel: C₆H₁₂O₆
+
+    steps:
+      - description: 'Molmasse der empirischen Formel berechnen'
+        solution: 'M(CH₂O) = 12 + 2×1 + 16 = 30 g/mol'
+      - description: 'Faktor berechnen'
+        solution: 'n = 180 g/mol ÷ 30 g/mol = 6'
+      - description: 'Indices mit Faktor multiplizieren'
+        solution: 'C: 1×6 = 6, H: 2×6 = 12, O: 1×6 = 6'
+
+    finalAnswer: 'Molekülformel: C₆H₁₂O₆ (Glucose)'
+
+  - id: 'ex-04-04'
+    title: 'Verbrennungsanalyse - nur C und H'
+    level: 2
+
+    task: |
+      Bei der Verbrennung von 2,00 g einer Verbindung (nur C und H) entstehen
+      6,29 g CO₂ und 2,57 g H₂O.
+
+      Bestimme die empirische Formel.
+
+      Molmassen: CO₂ = 44 g/mol, H₂O = 18 g/mol, C = 12 g/mol, H = 1 g/mol
+
+    hints:
+      keyword: 'CO₂ → C, H₂O → H'
+      approach: |
+        1. Stoffmenge CO₂ → Stoffmenge C
+        2. Stoffmenge H₂O → Stoffmenge H (×2!)
+        3. Verhältnis bestimmen
+      overview: |
+        - n(CO₂) = 6,29/44 = 0,143 mol = n(C)
+        - n(H₂O) = 2,57/18 = 0,143 mol → n(H) = 0,286 mol
+        - Verhältnis C:H = 1:2 → CH₂
+
+    steps:
+      - description: 'Stoffmenge CO₂ und damit C berechnen'
+        solution: 'n(CO₂) = 6,29/44 = 0,143 mol → n(C) = 0,143 mol'
+      - description: 'Stoffmenge H₂O und damit H berechnen'
+        solution: 'n(H₂O) = 2,57/18 = 0,143 mol → n(H) = 2 × 0,143 = 0,286 mol'
+      - description: 'Verhältnis bestimmen'
+        solution: 'C:H = 0,143:0,286 = 1:2'
+
+    finalAnswer: 'Empirische Formel: CH₂'
+
+  # Level 3: Mittel (4-5 Schritte)
+  - id: 'ex-04-05'
+    title: 'Verbrennungsanalyse mit O-Bestimmung'
+    level: 3
+
+    task: |
+      Bei der Verbrennung von 1,50 g einer organischen Verbindung (C, H, O)
+      entstehen 2,20 g CO₂ und 0,90 g H₂O.
+
+      Bestimme die empirische Formel.
+
+      Molmassen: CO₂ = 44 g/mol, H₂O = 18 g/mol
+
+    hints:
+      keyword: 'O-Masse durch Differenz'
+      approach: |
+        1. m(C) aus CO₂ berechnen
+        2. m(H) aus H₂O berechnen
+        3. m(O) = m(Probe) - m(C) - m(H)
+        4. Stoffmengen und Verhältnis
+      overview: |
+        - m(C) = 0,60 g, m(H) = 0,10 g
+        - m(O) = 1,50 - 0,60 - 0,10 = 0,80 g
+        - Verhältnis: 1:2:1 → CH₂O
+
+    steps:
+      - description: 'Masse C aus CO₂'
+        solution: 'n(CO₂) = 2,20/44 = 0,050 mol → m(C) = 0,050 × 12 = 0,60 g'
+      - description: 'Masse H aus H₂O'
+        solution: 'n(H₂O) = 0,90/18 = 0,050 mol → m(H) = 0,050 × 2 = 0,10 g'
+      - description: 'Masse O durch Differenz'
+        solution: 'm(O) = 1,50 - 0,60 - 0,10 = 0,80 g'
+      - description: 'Stoffmengen berechnen'
+        solution: 'n(C) = 0,050 mol, n(H) = 0,10 mol, n(O) = 0,80/16 = 0,050 mol'
+      - description: 'Verhältnis bestimmen'
+        solution: 'C:H:O = 0,050:0,10:0,050 = 1:2:1'
+
+    finalAnswer: 'Empirische Formel: CH₂O'
+
+  - id: 'ex-04-06'
+    title: 'Redoxreaktion ausgleichen'
+    level: 3
+
+    task: |
+      Gleiche die folgende Redoxreaktion in saurer Lösung aus:
+
+      MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺
+
+    hints:
+      keyword: 'Teilgleichungen für Oxidation und Reduktion'
+      approach: |
+        1. Oxidation: Fe²⁺ → Fe³⁺ + e⁻
+        2. Reduktion: MnO₄⁻ → Mn²⁺ (mit H₂O und H⁺)
+        3. Elektronenausgleich
+        4. Zusammenführen
+      overview: |
+        - Ox: Fe²⁺ → Fe³⁺ + e⁻ (×5)
+        - Red: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O
+        - Gesamt: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O
+
+    steps:
+      - description: 'Oxidations-Teilgleichung aufstellen'
+        solution: 'Fe²⁺ → Fe³⁺ + e⁻'
+      - description: 'Reduktions-Teilgleichung aufstellen'
+        solution: 'MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O'
+      - description: 'Elektronen ausgleichen (×5 für Oxidation)'
+        solution: '5 Fe²⁺ → 5 Fe³⁺ + 5e⁻'
+      - description: 'Teilgleichungen addieren'
+        solution: 'MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O'
+
+    finalAnswer: 'MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O'
+
+  # Level 4: Komplex (5-7 Schritte)
+  - id: 'ex-04-07'
+    title: 'Verbrennungsanalyse mit Stickstoff'
+    level: 4
+
+    task: |
+      3,00 g einer Verbindung (C, H, N) liefern bei vollständiger Verbrennung:
+      - 4,40 g CO₂
+      - 1,80 g H₂O
+      - 1,12 L N₂ (bei STP: 22,4 L/mol)
+
+      Bestimme die empirische und Molekülformel (M = 60 g/mol).
+
+    hints:
+      keyword: 'Drei Elemente aus drei Produkten'
+      approach: |
+        1. n(C) aus CO₂
+        2. n(H) aus H₂O
+        3. n(N) aus N₂ (×2!)
+        4. Empirische Formel
+        5. Molekülformel aus Molmasse
+      overview: |
+        - n(C) = 0,10 mol, n(H) = 0,20 mol
+        - n(N₂) = 0,05 mol → n(N) = 0,10 mol
+        - Verhältnis 1:2:1 → CH₂N
+        - Faktor = 60/28 ≈ 2 → C₂H₄N₂
+
+    steps:
+      - description: 'Stoffmenge C aus CO₂'
+        solution: 'n(CO₂) = 4,40/44 = 0,10 mol → n(C) = 0,10 mol'
+      - description: 'Stoffmenge H aus H₂O'
+        solution: 'n(H₂O) = 1,80/18 = 0,10 mol → n(H) = 0,20 mol'
+      - description: 'Stoffmenge N aus N₂'
+        solution: 'n(N₂) = 1,12/22,4 = 0,05 mol → n(N) = 0,10 mol'
+      - description: 'Verhältnis bestimmen'
+        solution: 'C:H:N = 0,10:0,20:0,10 = 1:2:1'
+      - description: 'Molmasse empirische Formel'
+        solution: 'M(CH₂N) = 12 + 2 + 14 = 28 g/mol'
+      - description: 'Faktor und Molekülformel'
+        solution: 'n = 60/28 ≈ 2 → C₂H₄N₂'
+
+    finalAnswer: |
+      Empirische Formel: CH₂N
+      Molekülformel: C₂H₄N₂
+
+  - id: 'ex-04-08'
+    title: 'Komplexe Redoxreaktion ausgleichen'
+    level: 4
+
+    task: |
+      Gleiche die Reaktion in saurer Lösung aus:
+
+      Cr₂O₇²⁻ + C₂H₅OH → Cr³⁺ + CH₃CHO
+      (Dichromat oxidiert Ethanol zu Acetaldehyd)
+
+    hints:
+      keyword: 'Oxidationszahlen bestimmen, dann Teilgleichungen'
+      approach: |
+        1. Oxidationszahlen: Cr(+6→+3), C(-2→-1)
+        2. Reduktion: Cr₂O₇²⁻ → 2Cr³⁺
+        3. Oxidation: C₂H₅OH → CH₃CHO
+        4. Elektronen, H⁺, H₂O ausgleichen
+      overview: |
+        - Reduktion: Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O
+        - Oxidation: C₂H₅OH → CH₃CHO + 2H⁺ + 2e⁻ (×3)
+        - Gesamt: Cr₂O₇²⁻ + 3C₂H₅OH + 8H⁺ → 2Cr³⁺ + 3CH₃CHO + 7H₂O
+
+    steps:
+      - description: 'Oxidationszahlen bestimmen'
+        solution: 'Cr: +6 → +3 (Reduktion), C in -CH₂OH: -1 → 0 in CHO (Oxidation)'
+      - description: 'Reduktions-Teilgleichung'
+        solution: 'Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O'
+      - description: 'Oxidations-Teilgleichung'
+        solution: 'C₂H₅OH → CH₃CHO + 2H⁺ + 2e⁻'
+      - description: 'Elektronen ausgleichen (Ox ×3)'
+        solution: '3 C₂H₅OH → 3 CH₃CHO + 6H⁺ + 6e⁻'
+      - description: 'Addieren und H⁺ vereinfachen'
+        solution: 'Cr₂O₇²⁻ + 3C₂H₅OH + 14H⁺ → 2Cr³⁺ + 3CH₃CHO + 7H₂O + 6H⁺'
+      - description: 'H⁺ kürzen: 14 - 6 = 8'
+        solution: 'Cr₂O₇²⁻ + 3C₂H₅OH + 8H⁺ → 2Cr³⁺ + 3CH₃CHO + 7H₂O'
+
+    finalAnswer: 'Cr₂O₇²⁻ + 3C₂H₅OH + 8H⁺ → 2Cr³⁺ + 3CH₃CHO + 7H₂O'
+
+  # Level 5: Anspruchsvoll (6-8+ Schritte)
+  - id: 'ex-04-09'
+    title: 'Komplette Analyse einer unbekannten Verbindung'
+    level: 5
+
+    task: |
+      Eine organische Verbindung (C, H, O) wird analysiert:
+      - 5,00 g Probe liefern 7,33 g CO₂ und 3,00 g H₂O
+      - Die Dampfdichte bei STP ist 3,21 g/L
+
+      Bestimme:
+      a) Die empirische Formel
+      b) Die Molmasse aus der Dampfdichte
+      c) Die Molekülformel
+
+      (Tipp: Bei STP gilt M = ρ × Vm mit Vm = 22,4 L/mol)
+
+    hints:
+      keyword: 'Dampfdichte → Molmasse, dann Faktor'
+      approach: |
+        1. Massen von C und H aus Verbrennungsprodukten
+        2. Masse O durch Differenz
+        3. Stoffmengenverhältnis → empirische Formel
+        4. Molmasse aus Dampfdichte: M = ρ × Vm
+        5. Faktor → Molekülformel
+      overview: |
+        - m(C) = 2,00 g, m(H) = 0,33 g, m(O) = 2,67 g
+        - Verhältnis: 1:2:1 → CH₂O
+        - M = 3,21 × 22,4 = 72 g/mol
+        - Faktor = 72/30 = 2,4 ≈ nicht ganzzahlig? → Prüfen!
+
+    steps:
+      - description: 'Masse C aus CO₂'
+        solution: 'n(CO₂) = 7,33/44 = 0,167 mol → m(C) = 0,167 × 12 = 2,00 g'
+      - description: 'Masse H aus H₂O'
+        solution: 'n(H₂O) = 3,00/18 = 0,167 mol → m(H) = 0,167 × 2 = 0,33 g'
+      - description: 'Masse O durch Differenz'
+        solution: 'm(O) = 5,00 - 2,00 - 0,33 = 2,67 g'
+      - description: 'Stoffmengen berechnen'
+        solution: 'n(C) = 0,167, n(H) = 0,33, n(O) = 2,67/16 = 0,167 mol'
+      - description: 'Verhältnis bestimmen'
+        solution: 'C:H:O = 0,167:0,33:0,167 = 1:2:1 → CH₂O'
+      - description: 'Molmasse aus Dampfdichte'
+        solution: 'M = ρ × Vm = 3,21 g/L × 22,4 L/mol = 71,9 ≈ 72 g/mol'
+      - description: 'Faktor und Molekülformel'
+        solution: 'M(CH₂O) = 30 g/mol, Faktor = 72/30 = 2,4 → nächste ganze Zahl prüfen'
+      - description: 'Prüfung: C₂H₄O₂ oder C₃H₆O₃?'
+        solution: 'C₂H₄O₂: M = 60 (zu klein), C₃H₆O₃: M = 90 (zu groß) → experimenteller Fehler, wahrscheinlich C₂H₄O₂'
+
+    finalAnswer: |
+      a) Empirische Formel: CH₂O
+      b) Molmasse: ~72 g/mol (experimentell)
+      c) Wahrscheinlich C₂H₄O₂ (Essigsäure, M = 60) oder Messfehler
+
+  - id: 'ex-04-10'
+    title: 'Redoxreaktion in basischer Lösung'
+    level: 5
+
+    task: |
+      Gleiche die Reaktion in basischer Lösung aus:
+
+      MnO₄⁻ + SO₃²⁻ → MnO₂ + SO₄²⁻
+
+    hints:
+      keyword: 'Erst sauer ausgleichen, dann H⁺ mit OH⁻ neutralisieren'
+      approach: |
+        1. Teilgleichungen in saurer Lösung
+        2. Elektronen ausgleichen
+        3. H⁺ durch Addition von OH⁻ zu H₂O umwandeln
+        4. H₂O vereinfachen
+      overview: |
+        - Red: MnO₄⁻ + 4H⁺ + 3e⁻ → MnO₂ + 2H₂O (×2)
+        - Ox: SO₃²⁻ + H₂O → SO₄²⁻ + 2H⁺ + 2e⁻ (×3)
+        - Dann: H⁺ + OH⁻ → H₂O
+
+    steps:
+      - description: 'Reduktions-Teilgleichung (sauer)'
+        solution: 'MnO₄⁻ + 4H⁺ + 3e⁻ → MnO₂ + 2H₂O'
+      - description: 'Oxidations-Teilgleichung (sauer)'
+        solution: 'SO₃²⁻ + H₂O → SO₄²⁻ + 2H⁺ + 2e⁻'
+      - description: 'Elektronen ausgleichen: Red ×2, Ox ×3'
+        solution: '2MnO₄⁻ + 8H⁺ + 6e⁻ → 2MnO₂ + 4H₂O | 3SO₃²⁻ + 3H₂O → 3SO₄²⁻ + 6H⁺ + 6e⁻'
+      - description: 'Addieren (sauer)'
+        solution: '2MnO₄⁻ + 3SO₃²⁻ + 8H⁺ + 3H₂O → 2MnO₂ + 3SO₄²⁻ + 4H₂O + 6H⁺'
+      - description: 'H⁺ und H₂O vereinfachen'
+        solution: '2MnO₄⁻ + 3SO₃²⁻ + 2H⁺ → 2MnO₂ + 3SO₄²⁻ + H₂O'
+      - description: 'In basisch umwandeln: +2OH⁻ auf beiden Seiten'
+        solution: '2MnO₄⁻ + 3SO₃²⁻ + 2H⁺ + 2OH⁻ → 2MnO₂ + 3SO₄²⁻ + H₂O + 2OH⁻'
+      - description: 'H⁺ + OH⁻ → H₂O ersetzen'
+        solution: '2MnO₄⁻ + 3SO₃²⁻ + 2H₂O → 2MnO₂ + 3SO₄²⁻ + H₂O + 2OH⁻'
+      - description: 'H₂O vereinfachen'
+        solution: '2MnO₄⁻ + 3SO₃²⁻ + H₂O → 2MnO₂ + 3SO₄²⁻ + 2OH⁻'
+
+    finalAnswer: '2MnO₄⁻ + 3SO₃²⁻ + H₂O → 2MnO₂ + 3SO₄²⁻ + 2OH⁻'
+
+    relatedBlueprints:
+      - 'empirical-formula-calculation-blueprint'

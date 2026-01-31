@@ -1,0 +1,95 @@
+# Kapitel 15: Elektrochemie & Redox
+# Level 4: Analyse
+
+topic: 'Elektrochemie & Redox'
+level: 4
+questions:
+  - question: 'Welche Aussagen zur Konzentrationsabhängigkeit des Potentials sind korrekt?'
+    options:
+      - 'Nernst-Gleichung: E = E° - (0,059/n) × log(Q) bei 25°C'
+      - 'Höhere [Ox] erhöht das Potential'
+      - 'Höhere [Red] erniedrigt das Potential'
+      - 'Konzentrationsänderung um Faktor 10 ändert E um 59/n mV'
+      - 'Die Konzentration hat keinen Einfluss auf E'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Bestimmung von ΔG° aus E°zelle sind korrekt?'
+    options:
+      - 'ΔG° = -nFE°'
+      - 'Positives E° bedeutet negatives ΔG° (spontan)'
+      - 'n = Zahl der übertragenen Elektronen'
+      - 'F = 96485 C/mol'
+      - 'Negatives E° bedeutet spontane Reaktion'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Bestimmung der Gleichgewichtskonstante K aus E° sind korrekt?'
+    options:
+      - 'ln K = nFE°/RT'
+      - 'Bei 25°C: log K = nE°/0,059'
+      - 'Großes E° = großes K'
+      - 'Im Gleichgewicht ist E = 0'
+      - 'K ist unabhängig von E°'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Redoxtitration sind korrekt?'
+    options:
+      - 'Äquivalenzpunkt durch Potentialsprung erkennbar'
+      - 'Potentiometrie misst E kontinuierlich'
+      - 'Kaliumpermanganat als Selbstindikator'
+      - 'Cer(IV) für genaue Titrationen'
+      - 'Der pH-Wert ist irrelevant'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zu biologischen Redoxreaktionen sind korrekt?'
+    options:
+      - 'NAD⁺/NADH ist wichtiges Redoxpaar (E° = -0,32 V)'
+      - 'FAD/FADH₂ überträgt Elektronen'
+      - 'Cytochrome enthalten Häm-Eisen'
+      - 'Elektronentransportkette nutzt Potentialgefälle'
+      - 'ATP wird durch Oxidation von NADH hergestellt'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu Überspannung bei der Elektrolyse sind korrekt?'
+    options:
+      - 'Zusätzliche Spannung über theoretischem Wert nötig'
+      - 'Kinetische Hemmung der Elektrodenreaktion'
+      - 'H₂-Überspannung an verschiedenen Metallen unterschiedlich'
+      - 'Ermöglicht z.B. Zink-Elektrolyse aus wässriger Lösung'
+      - 'Überspannung ist immer vernachlässigbar'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Bleiakkumulator sind korrekt?'
+    options:
+      - 'Pb + PbO₂ + 2H₂SO₄ ⇌ 2PbSO₄ + 2H₂O'
+      - 'Zellspannung etwa 2 V'
+      - '6 Zellen in Reihe = 12 V Autobatterie'
+      - 'Wiederaufladbar durch Umkehr der Reaktion'
+      - 'Enthält keine Säure'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur galvanischen Verzinkung sind korrekt?'
+    options:
+      - 'Zink als Opferanode schützt Stahl'
+      - 'Zink oxidiert bevorzugt (E° = -0,76 V < E°Fe = -0,44 V)'
+      - 'Kathodischer Korrosionsschutz'
+      - 'Auch bei Beschädigung der Schicht wirksam'
+      - 'Nur wirksam wenn die Zinkschicht intakt ist'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Lithium-Ionen-Akku sind korrekt?'
+    options:
+      - 'Li⁺ wandert zwischen Anode (Graphit) und Kathode (LiCoO₂)'
+      - 'Hohe Energiedichte im Vergleich zu Blei-Akkus'
+      - 'Zellspannung etwa 3,7 V'
+      - 'Brennbar bei Beschädigung (Thermal Runaway)'
+      - 'Funktioniert nur bei tiefen Temperaturen'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zu elektrochemischen Sensoren sind korrekt?'
+    options:
+      - 'Amperometrisch: Strom proportional zur Konzentration'
+      - 'Potentiometrisch: Spannung zeigt Konzentration'
+      - 'Glucosemessung mit Enzym-Elektroden'
+      - 'pH-Elektrode als ionenselektive Elektrode'
+      - 'O₂-Sensoren in vielen Anwendungen'
+    correct: [0, 1, 2, 3, 4]

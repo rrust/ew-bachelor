@@ -1,0 +1,95 @@
+# Kapitel 6: Säuren & Basen (Grundlagen)
+# Level 3: Anwendung
+
+topic: 'Säuren & Basen (Grundlagen)'
+level: 3
+questions:
+  - question: 'Welchen pH-Wert hat eine 0,01 M HCl-Lösung?'
+    options:
+      - '1'
+      - '2'
+      - '3'
+      - '12'
+      - '13'
+    correct: [1]
+
+  - question: 'Welchen pH-Wert hat eine 0,001 M NaOH-Lösung?'
+    options:
+      - '3'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+    correct: [1]
+
+  - question: 'Wie viel mL 0,1 M NaOH neutralisieren 50 mL 0,1 M HCl?'
+    options:
+      - '25 mL'
+      - '50 mL'
+      - '100 mL'
+      - '150 mL'
+      - '200 mL'
+    correct: [1]
+
+  - question: 'Welche Produkte entstehen bei: H₂SO₄ + 2 NaOH →?'
+    options:
+      - 'NaSO₄ + H₂O'
+      - 'Na₂SO₄ + 2 H₂O'
+      - 'Na₂SO₄ + H₂O'
+      - 'NaHSO₄ + H₂O'
+      - 'Na₂O + H₂SO₄'
+    correct: [1]
+
+  - question: 'Welchen pH-Wert hat eine 0,1 M HNO₃-Lösung?'
+    options:
+      - '0'
+      - '1'
+      - '7'
+      - '13'
+      - '14'
+    correct: [1]
+
+  - question: 'Bei der Titration von 25 mL HCl mit 0,1 M NaOH werden 20 mL verbraucht. Welche Konzentration hat HCl?'
+    options:
+      - '0,05 M'
+      - '0,08 M'
+      - '0,10 M'
+      - '0,125 M'
+      - '0,20 M'
+    correct: [1]
+
+  - question: 'Welche Aussagen zur Reaktion Mg + 2 HCl → MgCl₂ + H₂ sind korrekt?'
+    options:
+      - 'Magnesium reagiert mit der Säure'
+      - 'Es entsteht Wasserstoffgas'
+      - 'Das Metall wird oxidiert'
+      - 'H⁺ wird zu H₂ reduziert'
+      - 'Es ist keine Säure-Base-Reaktion'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Säure-Base-Paare sind konjugiert?'
+    options:
+      - 'HNO₃/NO₃⁻'
+      - 'NH₄⁺/NH₃'
+      - 'H₂O/OH⁻'
+      - 'H₂SO₄/SO₄²⁻'
+      - 'HCl/NaCl'
+    correct: [0, 1, 2]
+
+  - question: 'Welchen pOH-Wert hat eine Lösung mit pH = 3?'
+    options:
+      - '3'
+      - '7'
+      - '11'
+      - '14'
+      - '17'
+    correct: [2]
+
+  - question: 'Was entsteht bei: CaCO₃ + 2 HCl →?'
+    options:
+      - 'CaCl₂ + H₂O + CO₂'
+      - 'Ca(OH)₂ + Cl₂'
+      - 'CaCl + H₂CO₃'
+      - 'CaO + HCl + CO₂'
+      - 'Ca + Cl₂ + H₂O'
+    correct: [0]

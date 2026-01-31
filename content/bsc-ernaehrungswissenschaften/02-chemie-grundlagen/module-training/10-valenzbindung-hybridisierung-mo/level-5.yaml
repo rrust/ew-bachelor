@@ -1,0 +1,95 @@
+# Kapitel 10: Valenzbindungstheorie, Hybridisierung & MO-Theorie
+# Level 5: Synthese/Transfer
+
+topic: 'Valenzbindungstheorie, Hybridisierung & MO-Theorie'
+level: 5
+questions:
+  - question: 'Warum absorbieren konjugierte Systeme längerwelliges Licht?'
+    options:
+      - 'Die π-Elektronen sind über mehrere Bindungen delokalisiert'
+      - 'Die HOMO-LUMO-Lücke wird kleiner'
+      - 'Weniger Energie für elektronische Anregung nötig'
+      - 'Carotinoide sind gelb-orange wegen langer Konjugation'
+      - 'MO-Theorie erklärt die Farbigkeit'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt die Hybridisierung bei der Reaktivität von Alkinen?'
+    options:
+      - 'Das sp-C-H ist acider als sp³-C-H'
+      - 'Höherer s-Anteil = stärkere Bindung zum H'
+      - 'Höherer s-Anteil = mehr Elektronegativität des C'
+      - 'Acetylen kann als schwache Säure reagieren'
+      - 'pKa-Werte: Alkan ~50, Alken ~44, Alkin ~25'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die MO-Theorie die Stabilität von Benzol?'
+    options:
+      - 'Die 6 π-Elektronen besetzen 3 bindende MOs'
+      - 'Alle bindenden MOs sind voll, alle antibindenden leer'
+      - 'Resonanzstabilisierung durch Delokalisierung'
+      - 'Die aromatische Stabilität beträgt ~150 kJ/mol'
+      - 'Hückel-Regel: 4n+2 π-Elektronen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist CO giftig für aerobe Organismen?'
+    options:
+      - 'CO bindet stark an Fe²⁺ im Hämoglobin'
+      - 'Die Bindung ist stärker als die von O₂'
+      - 'CO ist ein guter σ-Donor und π-Akzeptor'
+      - 'Die Hybridisierung und MO-Struktur erklären die Affinität'
+      - 'CO blockiert den Sauerstofftransport'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu Graphit vs. Diamant sind aus MO-Sicht korrekt?'
+    options:
+      - 'Graphit: sp²-C, delokalisierte π-Elektronen'
+      - 'Diamant: sp³-C, alle Elektronen lokalisiert'
+      - 'Graphit leitet Strom wegen freier π-Elektronen'
+      - 'Die unterschiedliche Hybridisierung bestimmt die Eigenschaften'
+      - 'Diamant hat ein breites Bandgap (Isolator)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die VB-Theorie die Bindung in Übergangsmetallkomplexen?'
+    options:
+      - 'd-Orbitale hybridisieren mit s- und p-Orbitalen'
+      - 'dsp³ führt zu trigonal-bipyramidaler Geometrie'
+      - 'd²sp³ führt zu oktaedrischer Geometrie'
+      - 'Liganden liefern Elektronenpaare'
+      - 'Die Koordinationszahl hängt von der Hybridisierung ab'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum haben Ethylen-Derivate cis-trans-Isomerie?'
+    options:
+      - 'Keine freie Rotation um die C=C Doppelbindung'
+      - 'Die π-Bindung würde bei Rotation brechen'
+      - 'π-Orbitale müssen parallel überlappen'
+      - 'Unterschiedliche Substituenten an C=C ermöglichen Isomere'
+      - 'Die Rotationsbarriere beträgt ~270 kJ/mol'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat die MO-Theorie für Halbleiter?'
+    options:
+      - 'Bandstruktur entsteht aus vielen überlappenden MOs'
+      - 'Valenzband und Leitungsband sind getrennt'
+      - 'Die Bandlücke bestimmt die Leitfähigkeit'
+      - 'Silizium hat eine kleine Bandlücke'
+      - 'Dotierung fügt Zustände in der Bandlücke hinzu'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Bindung in Allenen (C=C=C) sind korrekt?'
+    options:
+      - 'Das mittlere C ist sp-hybridisiert'
+      - 'Die äußeren C sind sp²-hybridisiert'
+      - 'Die π-Bindungen stehen senkrecht zueinander'
+      - 'Die Substituenten an den Enden sind um 90° verdreht'
+      - 'Allene können chiral sein'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die MO-Theorie Fluoreszenz und Phosphoreszenz?'
+    options:
+      - 'Elektronenanregung von HOMO zu LUMO'
+      - 'Fluoreszenz: schneller Rückfall mit Lichtemission'
+      - 'Phosphoreszenz: Übergang zu Triplett-Zustand'
+      - 'Die Energiedifferenz bestimmt die Wellenlänge'
+      - 'Anwendung in Leuchtstoffen und OLEDs'
+    correct: [0, 1, 2, 3, 4]

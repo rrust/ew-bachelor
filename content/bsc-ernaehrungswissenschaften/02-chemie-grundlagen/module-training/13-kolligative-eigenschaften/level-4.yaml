@@ -1,0 +1,95 @@
+# Kapitel 13: Kolligative Eigenschaften
+# Level 4: Analyse
+
+topic: 'Kolligative Eigenschaften'
+level: 4
+questions:
+  - question: 'Ein Protein (50 g in 1 L Wasser) zeigt π = 0,123 atm bei 25°C. Berechne die Molmasse.'
+    options:
+      - 'M ≈ 10.000 g/mol'
+      - 'π = cRT → c = π/(RT) = 0,005 mol/L'
+      - 'c = n/V → n = 0,005 mol'
+      - 'M = m/n = 50/0,005 = 10.000 g/mol'
+      - 'M ≈ 1.000 g/mol'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Umkehrosmose sind korrekt?'
+    options:
+      - 'Druck größer als π wird angelegt'
+      - 'Wasser fließt von konzentriert nach verdünnt'
+      - 'Meerwasserentsalzung funktioniert so'
+      - 'Der Mindestdruck entspricht dem osmotischen Druck'
+      - 'Es ist energetisch sehr günstig'
+    correct: [0, 1, 2, 3]
+
+  - question: "Warum ist der gemessene van't Hoff-Faktor von 0,1 M NaCl etwa 1,87 statt 2?"
+    options:
+      - 'Ionenpaarbildung: Na⁺ und Cl⁻ assoziieren teilweise'
+      - 'Etwa 13% der Ionen liegen als Paare vor'
+      - 'Bei stärkerer Verdünnung nähert sich i → 2'
+      - 'Die Debye-Hückel-Theorie erklärt dies'
+      - 'NaCl dissoziiert vollständig'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Vergleich der Empfindlichkeit kolligativer Methoden sind korrekt?'
+    options:
+      - 'Osmotischer Druck ist am empfindlichsten'
+      - 'Bei 0,001 M: π ≈ 0,024 atm (messbar)'
+      - 'Bei 0,001 M: ΔTf ≈ 0,002 K (schwer messbar)'
+      - 'Osmometrie für große Moleküle (Polymere)'
+      - 'Alle Methoden sind gleich empfindlich'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Dialyse sind korrekt?'
+    options:
+      - 'Kleine Moleküle diffundieren durch die Membran'
+      - 'Große Moleküle (Proteine) bleiben zurück'
+      - 'Gleichgewicht stellt sich ein'
+      - 'Anwendung: Blutwäsche (Hämodialyse)'
+      - 'Es ist ein osmotischer Prozess'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Eine wässrige Lösung gefriert bei -2,79°C. Was ist die Osmolarität? (Kf = 1,86)'
+    options:
+      - '1,5 osmol/kg'
+      - 'm × i = ΔTf/Kf = 2,79/1,86 = 1,5'
+      - 'Die Osmolarität gibt die Gesamtzahl gelöster Teilchen an'
+      - '0,75 mol/kg eines 2:1 Elektrolyten würde passen'
+      - '3,0 osmol/kg'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Osmolarität physiologischer Flüssigkeiten sind korrekt?'
+    options:
+      - 'Blutplasma: etwa 290 mosmol/L'
+      - 'Intrazelluläre Flüssigkeit: ähnlich'
+      - 'Isotonie wichtig für Zellintegrität'
+      - 'Infusionslösungen müssen isoosmotisch sein'
+      - 'Hyperosmolare Lösungen lassen Zellen schrumpfen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Berechne die Siedepunktserhöhung für Meerwasser (3,5% NaCl, ~0,6 m, i ≈ 1,9)'
+    options:
+      - 'ΔTb ≈ 0,58 K'
+      - 'ΔTb = Kb × m × i = 0,512 × 0,6 × 1,9'
+      - 'Meerwasser siedet etwas über 100°C'
+      - 'ΔTb ≈ 1,0 K'
+      - 'Der Effekt ist vernachlässigbar'
+    correct: [0, 1, 2]
+
+  - question: 'Welche Aussagen zum Vergleich von CaCl₂ vs. NaCl als Streusalz sind korrekt?'
+    options:
+      - 'CaCl₂ hat i ≈ 3 (vs. i ≈ 2 für NaCl)'
+      - 'Gleiche Masse CaCl₂ erniedrigt Tf stärker'
+      - 'CaCl₂ funktioniert bei tieferen Temperaturen'
+      - 'CaCl₂ ist teurer als NaCl'
+      - 'Beide haben den gleichen Effekt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Onkotischen (kolloidosmotischen) Druck sind korrekt?'
+    options:
+      - 'Verursacht durch Proteine im Blutplasma'
+      - 'Etwa 25-28 mmHg (ca. 0,03 atm)'
+      - 'Hält Flüssigkeit in den Blutgefäßen'
+      - 'Albumin ist hauptverantwortlich'
+      - 'Bei niedrigem Albumin: Ödeme'
+    correct: [0, 1, 2, 3, 4]

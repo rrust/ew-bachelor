@@ -1,0 +1,95 @@
+# Kapitel 4: Chemische Reaktionen & Empirische Formeln
+# Level 2: Verständnis
+
+topic: 'Chemische Reaktionen & Empirische Formeln'
+level: 2
+questions:
+  - question: 'Warum unterscheiden sich empirische und Molekülformel oft?'
+    options:
+      - 'Die Molekülformel ist ein Vielfaches der empirischen Formel'
+      - 'Beide zeigen das tatsächliche Atomverhältnis'
+      - 'Die empirische Formel zeigt nur das kürzbare Verhältnis'
+      - 'Nicht alle Verbindungen haben eine Molekülformel'
+      - 'Ionenverbindungen haben nur empirische Formeln'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur prozentualen Zusammensetzung sind korrekt?'
+    options:
+      - 'Die Summe aller Massenanteile ist 100%'
+      - 'Der Massenanteil hängt von der molaren Masse ab'
+      - 'Massenanteil = (Masse Element / Masse Verbindung) × 100%'
+      - 'Alle Elemente haben den gleichen Massenanteil'
+      - 'Die Berechnung erfordert die molare Masse'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Wie unterscheiden sich Synthese und Zersetzung?'
+    options:
+      - 'Synthese: A + B → AB'
+      - 'Zersetzung: AB → A + B'
+      - 'Beide sind Umkehrreaktionen zueinander'
+      - 'Bei beiden entstehen neue Stoffe'
+      - 'Zersetzung erfordert immer Energie'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Wann verdrängt ein Metall ein anderes aus einer Lösung?'
+    options:
+      - 'Wenn es reaktiver (unedler) ist'
+      - 'Wenn es weiter unten in der Spannungsreihe steht'
+      - 'Wenn es ein negativeres Standardpotential hat'
+      - 'Wenn es schwerer ist'
+      - 'Nur in saurer Lösung'
+    correct: [0, 2]
+
+  - question: 'Welche Bedingungen begünstigen eine Fällungsreaktion?'
+    options:
+      - 'Es entsteht ein schwer lösliches Salz'
+      - 'Die Ionen bleiben in Lösung'
+      - 'Das Löslichkeitsprodukt wird überschritten'
+      - 'Ein Niederschlag bildet sich'
+      - 'Die Reaktion ist reversibel'
+    correct: [0, 2, 3]
+
+  - question: 'Was passiert bei einer Neutralisation?'
+    options:
+      - 'Säure und Base reagieren zu Salz und Wasser'
+      - 'H⁺ und OH⁻ bilden Wasser'
+      - 'Die Lösung wird neutral (pH = 7)'
+      - 'Es entsteht immer ein Niederschlag'
+      - 'Wärme wird frei (exotherm)'
+    correct: [0, 1, 4]
+
+  - question: 'Wie berechnet man den Massenanteil von Sauerstoff in H₂O?'
+    options:
+      - 'w(O) = M(O) / M(H₂O) × 100%'
+      - 'w(O) = 16 / 18 × 100% = 88,9%'
+      - 'Die molare Masse von H₂O ist 18 g/mol'
+      - 'Wasserstoff hat den Massenanteil 11,1%'
+      - 'Die Summe der Massenanteile ist 100%'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Was ist charakteristisch für Verbrennungsreaktionen?'
+    options:
+      - 'Reaktion mit Sauerstoff'
+      - 'Stark exotherm'
+      - 'Es entstehen Oxide'
+      - 'Immer reversibel'
+      - 'Bei organischen Stoffen: CO₂ und H₂O'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Wann haben empirische und Molekülformel den gleichen Wert?'
+    options:
+      - 'Bei H₂O (nicht kürzbar)'
+      - 'Bei NH₃ (nicht kürzbar)'
+      - 'Bei C₆H₁₂O₆ (kürzbar zu CH₂O)'
+      - 'Wenn das Verhältnis bereits das kleinste ist'
+      - 'Bei allen einatomigen Gasen'
+    correct: [0, 1, 3]
+
+  - question: 'Was zeigt die Reaktionsgleichung 2 H₂ + O₂ → 2 H₂O?'
+    options:
+      - 'Eine Synthese-Reaktion'
+      - 'Eine Verbrennung'
+      - 'Eine exotherme Reaktion'
+      - 'Eine Zersetzung'
+      - 'Das Stoffmengenverhältnis 2:1:2'
+    correct: [0, 1, 2, 4]

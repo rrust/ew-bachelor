@@ -1,0 +1,96 @@
+# Kapitel 2: Elemente, Ionen & Mol-Konzept
+# Level 4: Analyse
+# 10 Fragen, 1-5 korrekte Antworten, komplexere Berechnungen
+
+topic: 'Elemente, Ionen & Mol-Konzept'
+level: 4
+questions:
+  - question: 'Eine Probe enthält 1,505 × 10²⁴ Atome eines Elements. Wie viel Mol sind das?'
+    options:
+      - '0,5 mol'
+      - '1,5 mol'
+      - '2,5 mol'
+      - '3,0 mol'
+      - '15 mol'
+    correct: [2]
+
+  - question: 'Wie viele Ionen sind in 5,85 g NaCl (M = 58,5 g/mol) enthalten?'
+    options:
+      - '6,02 × 10²² Ionen (nur Na⁺)'
+      - '6,02 × 10²² Ionen (nur Cl⁻)'
+      - '1,20 × 10²³ Ionen (Na⁺ und Cl⁻ zusammen)'
+      - '0,1 mol Formeleinheiten sind enthalten'
+      - 'Je 0,1 mol Na⁺ und 0,1 mol Cl⁻'
+    correct: [2, 3, 4]
+
+  - question: 'Welche Masse hat ein einzelnes Kohlenstoffatom (M = 12 g/mol)?'
+    options:
+      - '12 g'
+      - '2 × 10⁻²³ g'
+      - '6 × 10⁻²³ g'
+      - '1,66 × 10⁻²⁴ g'
+      - '12 u (atomare Masseneinheiten)'
+    correct: [1]
+
+  - question: 'In 100 g CaCO₃ (M = 100 g/mol) sind wie viele Atome insgesamt?'
+    options:
+      - '6,02 × 10²³ (eine Formeleinheit)'
+      - '1,20 × 10²⁴ (2 Arten von Atomen)'
+      - '3,01 × 10²⁴ (5 Atome pro Formeleinheit × 1 mol)'
+      - '1 mol CaCO₃ enthält 5 mol Atome'
+      - '5 Atome pro Formeleinheit: 1 Ca, 1 C, 3 O'
+    correct: [2, 3, 4]
+
+  - question: 'Wie viel Mol Wasserstoffatome sind in 9 g Wasser (M = 18 g/mol)?'
+    options:
+      - '0,5 mol H-Atome'
+      - '1 mol H-Atome'
+      - '2 mol H-Atome'
+      - '0,5 mol H₂O bedeuten 1 mol H-Atome'
+      - 'Pro H₂O-Molekül sind 2 H-Atome vorhanden'
+    correct: [1, 3, 4]
+
+  - question: 'Ein Stoff hat die Masse 4,4 g und enthält 6,02 × 10²² Moleküle. Welche molare Masse hat er?'
+    options:
+      - '22 g/mol'
+      - '44 g/mol'
+      - '88 g/mol'
+      - 'Die Stoffmenge beträgt 0,1 mol'
+      - 'M = m/n = 4,4 g / 0,1 mol'
+    correct: [1, 3, 4]
+
+  - question: 'Welche Aussagen zu Al₂O₃ (M = 102 g/mol) sind korrekt?'
+    options:
+      - 'Enthält Al³⁺ und O²⁻ Ionen'
+      - 'Die Formel entspricht der Elektroneutralität'
+      - '102 g enthalten 2 mol Al-Atome und 3 mol O-Atome'
+      - 'Ein mol Al₂O₃ enthält 5 mol Atome insgesamt'
+      - 'Die Ionenladungen summieren sich zu null'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie viel Gramm Eisen (M = 56 g/mol) enthalten 1,505 × 10²⁴ Atome?'
+    options:
+      - '28 g'
+      - '56 g'
+      - '112 g'
+      - '140 g'
+      - '2,5 mol Fe sind enthalten'
+    correct: [3, 4]
+
+  - question: 'Welches Element hat die kleinste Atommasse unter den folgenden?'
+    options:
+      - 'Kohlenstoff (C)'
+      - 'Stickstoff (N)'
+      - 'Sauerstoff (O)'
+      - 'Wasserstoff (H)'
+      - 'Helium (He)'
+    correct: [3]
+
+  - question: 'In 1 mol Ethanol (C₂H₅OH) sind wie viele mol Atome insgesamt?'
+    options:
+      - '6 mol (2C + 5H + 1O + 1H)'
+      - '8 mol (2C + 6H)'
+      - '9 mol (2 + 6 + 1 Atome)'
+      - 'Die Summenformel ist C₂H₆O'
+      - 'Pro Molekül gibt es 9 Atome'
+    correct: [2, 3, 4]

@@ -1,0 +1,96 @@
+# Kapitel 3: Chemische Gleichungen & Stöchiometrie
+# Level 2: Verständnis
+# 10 Fragen, 1-3 korrekte Antworten
+
+topic: 'Chemische Gleichungen & Stöchiometrie'
+level: 2
+questions:
+  - question: 'Warum dürfen Indices beim Ausgleichen nicht verändert werden?'
+    options:
+      - 'Indices zeigen die Zusammensetzung der Verbindung'
+      - 'Änderung würde einen anderen Stoff ergeben'
+      - 'Nur Koeffizienten dürfen angepasst werden'
+      - 'Indices bestimmen die Reaktionsgeschwindigkeit'
+      - 'Das ist eine willkürliche Konvention'
+    correct: [0, 1, 2]
+
+  - question: 'Welche Aussagen zur Massenerhaltung sind korrekt?'
+    options:
+      - 'Die Gesamtmasse der Edukte entspricht der Produktmasse'
+      - 'Atome werden weder erzeugt noch vernichtet'
+      - 'Masse kann in Energie umgewandelt werden (bei chemischen Reaktionen vernachlässigbar)'
+      - 'Die Anzahl der Moleküle bleibt immer gleich'
+      - 'Jede Atomsorte ist auf beiden Seiten gleich oft vorhanden'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Bei der Reaktion 2 H₂ + O₂ → 2 H₂O bedeuten die Koeffizienten?'
+    options:
+      - '2 mol Wasserstoff reagieren mit 1 mol Sauerstoff'
+      - '2 Moleküle H₂ reagieren mit 1 Molekül O₂'
+      - 'Das Stoffmengenverhältnis ist 2:1:2'
+      - 'Es werden 2 Liter H₂ benötigt'
+      - 'Die Koeffizienten geben Mol-Verhältnisse an'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Warum ist ein Reaktand "limitierend"?'
+    options:
+      - 'Er bestimmt die maximale Produktmenge'
+      - 'Er wird vollständig verbraucht'
+      - 'Der andere Reaktand bleibt im Überschuss'
+      - 'Er hat die größte molare Masse'
+      - 'Die Reaktion stoppt, wenn er aufgebraucht ist'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was ist der Unterschied zwischen Brutto- und Nettogleichung?'
+    options:
+      - 'Die Bruttogleichung zeigt alle Ionen'
+      - 'Die Nettogleichung zeigt nur reagierende Spezies'
+      - 'Zuschauer-Ionen werden in der Nettogleichung weggelassen'
+      - 'Beide Gleichungen haben die gleiche Masse'
+      - 'Die Bruttogleichung ist immer länger'
+    correct: [0, 1, 2]
+
+  - question: 'Wann liegt ein Reaktand im Überschuss vor?'
+    options:
+      - 'Wenn nach der Reaktion noch etwas davon übrig ist'
+      - 'Wenn mehr vorhanden ist als stöchiometrisch nötig'
+      - 'Wenn er der limitierende Reaktand ist'
+      - 'Der Überschuss kann berechnet werden'
+      - 'Die Produktmenge wird davon nicht beeinflusst'
+    correct: [0, 1, 3, 4]
+
+  - question: 'Welche Gleichung ist korrekt ausgeglichen?'
+    options:
+      - 'N₂ + 3 H₂ → 2 NH₃'
+      - 'N₂ + H₂ → NH₃'
+      - '2 N + 3 H₂ → 2 NH₃'
+      - 'N₂ + 3 H₂ → NH₃'
+      - '2 N₂ + 6 H₂ → 4 NH₃'
+    correct: [0, 4]
+
+  - question: 'Warum ist die Ausbeute oft kleiner als 100%?'
+    options:
+      - 'Nebenreaktionen verbrauchen Edukte'
+      - 'Produktverluste bei der Aufarbeitung'
+      - 'Gleichgewichtsreaktionen laufen nicht vollständig ab'
+      - 'Die Massenerhaltung gilt nicht'
+      - 'Praktische Faktoren reduzieren die Ausbeute'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was zeigt der Doppelpfeil ⇌ in einer Gleichung an?'
+    options:
+      - 'Die Reaktion ist reversibel'
+      - 'Es stellt sich ein Gleichgewicht ein'
+      - 'Die Reaktion ist irreversibel'
+      - 'Hin- und Rückreaktion laufen gleichzeitig ab'
+      - 'Nur die Hinreaktion findet statt'
+    correct: [0, 1, 3]
+
+  - question: 'Wie erkennt man den limitierenden Reaktanden rechnerisch?'
+    options:
+      - 'Er hat die kleinste Stoffmenge'
+      - 'Stoffmengen durch stöchiometrische Koeffizienten teilen'
+      - 'Der kleinste Quotient zeigt den limitierenden Reaktanden'
+      - 'Der Stoff mit der größten Masse limitiert'
+      - 'Beide Stoffmengen miteinander vergleichen'
+    correct: [1, 2]
