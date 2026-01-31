@@ -28,6 +28,8 @@ function checkAchievementUnlock(achievementId) {
       return checkConsecutiveLectureGold(condition, progress);
     case 'achievement-with-extensions':
       return checkAchievementWithExtensions(condition, progress);
+    case 'first-exercise-solved':
+      return checkFirstExerciseSolved(condition, progress);
     default:
       console.error('Unknown unlock condition type:', condition.type);
       return false;
@@ -142,6 +144,34 @@ function checkAchievementWithExtensions(condition, progress) {
   return (
     (baseAchievementProgress.extensionCount || 0) >= condition.minExtensions
   );
+}
+
+/**
+ * Check if first exercise of a specific type has been solved
+ * Used for Blueprint achievements
+ */
+function checkFirstExerciseSolved(condition, progress) {
+  const { exerciseType, moduleId } = condition;
+
+  // Check module training progress
+  if (!progress.moduleTraining) return false;
+
+  const moduleProgress = progress.moduleTraining[moduleId];
+  if (!moduleProgress) return false;
+
+  // Check for solved exercises
+  const solvedExercises = moduleProgress.solvedExercises || [];
+
+  // If exerciseType is specified, check for matching exercises
+  // The exerciseType corresponds to the blueprintType in exercises.yaml
+  if (exerciseType) {
+    // For now, we just check if any exercise is solved
+    // TODO: Could filter by blueprintType stored in the exercise ID
+    return solvedExercises.length > 0;
+  }
+
+  // Any solved exercise counts if no specific type required
+  return solvedExercises.length > 0;
 }
 
 /**

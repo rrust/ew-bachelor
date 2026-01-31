@@ -18,6 +18,8 @@ YAML-Referenz für alle Content-Typen in der Lern-App.
 | `multiple-choice`          | **ALLE**    | ❌              | Quiz (1 richtig)       |
 | `multiple-choice-multiple` | **ALLE**    | ❌              | Quiz (mehrere richtig) |
 | `achievement`              | **ALLE**    | ✅ Cheat-Sheet  | Belohnung              |
+| `achievement` (blueprint)  | **ALLE**    | ✅ Lösungsweg   | Übungs-Blueprint       |
+| `training-exercise`        | YAML-Datei  | ❌              | Modul-Training-Übung   |
 
 ## Content-Types im Detail
 
@@ -257,6 +259,143 @@ warningThreshold: 7
 
 Inhalt hier...
 ```
+
+### achievement (Blueprint)
+
+Blueprint als Belohnung für gelöste praktische Übungen im Modul-Training.
+
+```yaml
+---
+type: 'achievement'
+achievementType: 'blueprint'
+id: 'stoichiometry-calculation-blueprint'
+title: 'Stöchiometrie Blueprint'
+description: 'Systematischer Lösungsweg für stöchiometrische Berechnungen'
+icon: 'beaker'
+contentType: 'markdown'
+unlockCondition:
+  type: 'first-exercise-solved'
+  exerciseType: 'stoichiometry-calculation'
+  moduleId: '02-chemie-grundlagen'
+defaultDuration: 30
+extensionDuration: 14
+warningThreshold: 7
+---
+
+# Stöchiometrie Blueprint
+
+## Allgemeiner Lösungsweg
+
+### Schritt 1: Reaktionsgleichung aufstellen
+...
+```
+
+**Blueprint vs. Cheatsheet:**
+
+| Eigenschaft       | Cheatsheet                | Blueprint                      |
+| ----------------- | ------------------------- | ------------------------------ |
+| `achievementType` | (nicht gesetzt)           | `'blueprint'`                  |
+| Unlock            | Quiz Gold-Badge           | Erste Übung eines Typs gelöst  |
+| Inhalt            | Kompakte Zusammenfassung  | Lösungsweg mit Musterbeispiel  |
+| Verlängerung      | Tokens oder Quick-Renewal | Tokens oder Übung erneut lösen |
+
+---
+
+## Modul-Training Content-Types
+
+### training-exercise (Praktische Übung)
+
+Praktische Übung für Modul-Training mit schrittweisem Lösungsweg.
+
+**Datei:** `exercises.yaml` im Kapitel-Ordner
+
+```yaml
+# exercises.yaml
+topic: 'Chemische Gleichungen & Stöchiometrie'
+blueprintType: 'stoichiometry-calculation'  # Verknüpfung zum Blueprint
+exercises:
+  - id: 'ex-03-01'
+    title: 'Verbrennung von Kohlenstoff'
+    level: 3  # 1-5 Schwierigkeitsstufe
+    
+    task: |
+      Bei der vollständigen Verbrennung von 12,0 g Kohlenstoff
+      mit Sauerstoff entsteht Kohlendioxid.
+      
+      Berechne:
+      a) Die Stoffmenge an Kohlenstoff
+      b) Die benötigte Masse an Sauerstoff
+      c) Die entstehende Masse an CO₂
+    
+    hints:
+      keyword: 'Stoffmengenverhältnis aus Reaktionsgleichung'
+      approach: |
+        1. Reaktionsgleichung aufstellen
+        2. Stoffmengen über n = m/M berechnen
+        3. Stöchiometrische Verhältnisse anwenden
+      overview: |
+        - Reaktionsgleichung: C + O₂ → CO₂
+        - n(C) = 1,0 mol
+        - n(O₂) = 1,0 mol → m(O₂) = 32,0 g
+        - n(CO₂) = 1,0 mol → m(CO₂) = 44,0 g
+    
+    steps:
+      - description: 'Reaktionsgleichung aufstellen'
+        solution: 'C + O₂ → CO₂'
+      - description: 'Stoffmenge von Kohlenstoff berechnen (n = m/M)'
+        solution: 'n(C) = 12,0 g / 12,0 g/mol = 1,0 mol'
+      - description: 'Stoffmenge O₂ aus stöchiometrischem Verhältnis (1:1)'
+        solution: 'n(O₂) = 1,0 mol'
+      - description: 'Masse des Sauerstoffs berechnen (m = n × M)'
+        solution: 'm(O₂) = 1,0 mol × 32,0 g/mol = 32,0 g'
+      - description: 'Stoffmenge CO₂ aus Verhältnis (1:1)'
+        solution: 'n(CO₂) = 1,0 mol'
+      - description: 'Masse des Kohlendioxids berechnen'
+        solution: 'm(CO₂) = 1,0 mol × 44,0 g/mol = 44,0 g'
+    
+    finalAnswer: |
+      a) n(C) = 1,0 mol
+      b) m(O₂) = 32,0 g
+      c) m(CO₂) = 44,0 g
+    
+    relatedCheatsheets:
+      - 'stoechiometrie-cheatsheet'
+    relatedBlueprints:
+      - 'stoichiometry-calculation-blueprint'
+```
+
+**Pflichtfelder:**
+
+| Feld                  | Typ    | Beschreibung                    |
+| --------------------- | ------ | ------------------------------- |
+| `id`                  | string | Eindeutige ID (z.B. `ex-03-01`) |
+| `title`               | string | Kurzer Titel der Übung          |
+| `level`               | number | Schwierigkeitsstufe 1-5         |
+| `task`                | string | Aufgabenstellung (Markdown)     |
+| `hints.keyword`       | string | Stichwort-Hinweis               |
+| `hints.approach`      | string | Lösungsansatz                   |
+| `hints.overview`      | string | Lösungsweg-Übersicht            |
+| `steps`               | array  | Liste der Lösungsschritte       |
+| `steps[].description` | string | Beschreibung des Schritts       |
+| `steps[].solution`    | string | Lösung des Schritts             |
+| `finalAnswer`         | string | Endergebnis (Markdown)          |
+
+**Optionale Felder:**
+
+| Feld                 | Typ   | Beschreibung              |
+| -------------------- | ----- | ------------------------- |
+| `relatedCheatsheets` | array | Verknüpfte Cheatsheet-IDs |
+| `relatedBlueprints`  | array | Verknüpfte Blueprint-IDs  |
+
+**Level-Definitionen für Übungen:**
+
+| Level | Komplexität   | Schritte | Beispiel                             |
+| ----- | ------------- | -------- | ------------------------------------ |
+| 1     | Grundlegend   | 2-3      | Einfache n=m/M Berechnung            |
+| 2     | Einfach       | 3-4      | Mol-Berechnung mit Umrechnung        |
+| 3     | Mittel        | 4-5      | Stöchiometrie mit Reaktionsgleichung |
+| 4     | Komplex       | 5-7      | Mehrstufige Reaktion, Ausbeute       |
+| 5     | Anspruchsvoll | 6-8+     | Transfer, unbekannte Kontexte        |
 
 ## Häufige Fehler
 

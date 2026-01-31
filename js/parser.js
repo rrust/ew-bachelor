@@ -143,6 +143,7 @@ function parseAchievement(content, filePath) {
       title: doc.attributes.title,
       description: doc.attributes.description,
       icon: doc.attributes.icon || '🏆',
+      achievementType: doc.attributes.achievementType || 'cheatsheet', // 'cheatsheet' or 'blueprint'
       contentType: doc.attributes.contentType || 'markdown',
       unlockCondition: doc.attributes.unlockCondition || {},
       defaultDuration: doc.attributes.defaultDuration || 30,

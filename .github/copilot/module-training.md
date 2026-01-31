@@ -1,18 +1,26 @@
 # Module Training
 
-Erstellung von Modul-Trainings-Fragen (Casual Training Mode).
+Erstellung von Modul-Trainings-Fragen und praktischen Übungen (Casual Training Mode).
 
 ## Übersicht
 
-Training-Fragen sind **unabhängig** von Vorlesungs-Nummern und nach **Themengebieten** organisiert.
+Training-Inhalte sind **unabhängig** von Vorlesungs-Nummern und nach **Themengebieten** organisiert.
 
 ### Struktur pro Modul
 
 ```text
-15 Kapitel × 5 Level × 10 Fragen = 750 Fragen
+Multiple-Choice:  15 Kapitel × 5 Level × 10 Fragen = 750 Fragen
+Praktische Übungen: ~10 Kapitel × 5 Level × 2 Übungen = ~100 Übungen
 ```
 
-### Antwort-Schema
+### Inhalts-Typen
+
+| Typ                    | Beschreibung                   | Bewertung       |
+| ---------------------- | ------------------------------ | --------------- |
+| **Multiple-Choice**    | Wissens- und Verständnisfragen | Automatisch     |
+| **Praktische Übungen** | Berechnungen auf Papier        | Selbstkontrolle |
+
+### Antwort-Schema (MC)
 
 | Level | Antwortmöglichkeiten | Korrekte Antworten |
 | ----- | -------------------- | ------------------ |
@@ -324,3 +332,198 @@ node scripts/generate-test-progress.js
 # 4. Optional: Im Browser testen
 # → Modul-Training öffnen, Dev-Mode aktivieren
 ```
+
+---
+
+## Praktische Übungen
+
+### Übersicht
+
+Praktische Übungen sind Berechnungsaufgaben, die auf Papier gelöst und selbst kontrolliert werden.
+
+**Kapitel mit Übungen:**
+
+| Kapitel                        | Übungen | Begründung              |
+| ------------------------------ | ------- | ----------------------- |
+| 01 Atome & PSE                 | ❌       | Faktenwissen            |
+| 02 Elemente, Ionen & Mol       | ✅ 10    | Mol-Berechnungen        |
+| 03 Gleichungen & Stöchiometrie | ✅ 10    | Kernthema               |
+| 04 Reaktionen & Formeln        | ✅ 10    | Empirische Formeln      |
+| 05 Lösungen & Konzentrationen  | ✅ 10    | Verdünnungsrechnungen   |
+| 06 Säuren & Basen (Grundl.)    | ⚠️ 5     | Einfache Neutralisation |
+| 07 Bohr & Elektronenkonf.      | ⚠️ 5     | Konfigurationen         |
+| 08 Ionenbindung & Lewis        | ⚠️ 5     | Lewis-Strukturen        |
+| 09 Polarität & VSEPR           | ⚠️ 5     | Geometrie               |
+| 10 Hybridisierung & MO         | ⚠️ 5     | Bindungsordnung         |
+| 11 Thermodynamik               | ✅ 10    | Hess, Enthalpie         |
+| 12 Aggregatzustände            | ⚠️ 5     | Clausius-Clapeyron      |
+| 13 Kolligative Eig.            | ✅ 10    | ΔT, Osmose              |
+| 14 Säuren & Basen (Fortg.)     | ✅ 10    | pH, pKs, Puffer         |
+| 15 Elektrochemie               | ✅ 10    | Nernst, Faraday         |
+
+### Generierungs-Workflow für Übungen
+
+#### 1. Kapitel-Definition lesen
+
+Wie bei MC-Fragen aus `module-training.md` im Material-Ordner.
+
+#### 2. Übungen generieren
+
+Generiere 2 Übungen pro Level (= 10 Übungen pro Kapitel) im YAML-Format.
+
+#### 3. Output speichern
+
+Speichere in:
+```text
+content/{studyId}/{moduleId}/module-training/{kapitelNr}-{kapitelName}/exercises.yaml
+```
+
+### Übungs-Format
+
+```yaml
+# exercises.yaml
+topic: 'Chemische Gleichungen & Stöchiometrie'
+blueprintType: 'stoichiometry-calculation'
+exercises:
+  # Level 1: Grundlegend (2-3 Schritte)
+  - id: 'ex-03-01'
+    title: 'Stoffmenge berechnen'
+    level: 1
+    
+    task: |
+      Berechne die Stoffmenge von 36 g Wasser (H₂O).
+      Molare Masse: M(H₂O) = 18 g/mol
+    
+    hints:
+      keyword: 'Formel n = m/M anwenden'
+      approach: |
+        1. Gegebene Werte identifizieren
+        2. Formel n = m/M einsetzen
+      overview: |
+        - m = 36 g
+        - M = 18 g/mol
+        - n = 36/18 = 2 mol
+    
+    steps:
+      - description: 'Gegebene Werte notieren'
+        solution: 'm(H₂O) = 36 g, M(H₂O) = 18 g/mol'
+      - description: 'Formel für Stoffmenge anwenden'
+        solution: 'n = m/M = 36 g / 18 g/mol = 2 mol'
+    
+    finalAnswer: 'n(H₂O) = 2 mol'
+    
+    relatedCheatsheets:
+      - 'mol-konzept-cheatsheet'
+
+  # Level 3: Mittel (4-5 Schritte)
+  - id: 'ex-03-02'
+    title: 'Verbrennung von Kohlenstoff'
+    level: 3
+    
+    task: |
+      Bei der vollständigen Verbrennung von 12,0 g Kohlenstoff
+      mit Sauerstoff entsteht Kohlendioxid.
+      
+      Berechne:
+      a) Die Stoffmenge an Kohlenstoff
+      b) Die benötigte Masse an Sauerstoff
+      c) Die entstehende Masse an CO₂
+    
+    hints:
+      keyword: 'Stoffmengenverhältnis aus Reaktionsgleichung'
+      approach: |
+        1. Reaktionsgleichung aufstellen
+        2. Stoffmengen über n = m/M berechnen
+        3. Stöchiometrische Verhältnisse anwenden
+      overview: |
+        - Reaktionsgleichung: C + O₂ → CO₂
+        - n(C) = 1,0 mol
+        - n(O₂) = 1,0 mol → m(O₂) = 32,0 g
+        - n(CO₂) = 1,0 mol → m(CO₂) = 44,0 g
+    
+    steps:
+      - description: 'Reaktionsgleichung aufstellen'
+        solution: 'C + O₂ → CO₂'
+      - description: 'Stoffmenge von Kohlenstoff berechnen'
+        solution: 'n(C) = 12,0 g / 12,0 g/mol = 1,0 mol'
+      - description: 'Stoffmenge O₂ aus Verhältnis (1:1)'
+        solution: 'n(O₂) = 1,0 mol'
+      - description: 'Masse O₂ berechnen'
+        solution: 'm(O₂) = 1,0 mol × 32,0 g/mol = 32,0 g'
+      - description: 'Masse CO₂ berechnen (Verhältnis 1:1)'
+        solution: 'm(CO₂) = 1,0 mol × 44,0 g/mol = 44,0 g'
+    
+    finalAnswer: |
+      a) n(C) = 1,0 mol
+      b) m(O₂) = 32,0 g
+      c) m(CO₂) = 44,0 g
+    
+    relatedBlueprints:
+      - 'stoichiometry-calculation-blueprint'
+```
+
+### Level-Definitionen für Übungen
+
+| Level | Komplexität   | Schritte | Beispiel                             |
+| ----- | ------------- | -------- | ------------------------------------ |
+| 1     | Grundlegend   | 2-3      | Einfache n=m/M Berechnung            |
+| 2     | Einfach       | 3-4      | Mol-Berechnung mit Umrechnung        |
+| 3     | Mittel        | 4-5      | Stöchiometrie mit Reaktionsgleichung |
+| 4     | Komplex       | 5-7      | Mehrstufige Reaktion, Ausbeute       |
+| 5     | Anspruchsvoll | 6-8+     | Transfer, unbekannte Kontexte        |
+
+### Qualitätsregeln für Übungen
+
+#### ✅ ERFORDERLICH
+
+1. **Eindeutige Aufgabenstellung**
+   - Alle benötigten Werte angegeben
+   - Klare Fragestellung (was ist gesucht?)
+   - Keine mehrdeutigen Formulierungen
+
+2. **Schrittweise Lösung**
+   - Jeder Schritt ist ein logischer Teilschritt
+   - Beschreibung erklärt WAS gemacht wird
+   - Lösung zeigt WIE es gemacht wird
+
+3. **Hint-Struktur**
+   - `keyword`: Ein Begriff, der den Lösungsansatz verrät
+   - `approach`: 2-4 Schritte als Übersicht
+   - `overview`: Zusammenfassung mit Zahlen
+
+4. **Realistische Werte**
+   - Keine zu komplexen Zahlen (außer Level 5)
+   - Plausible chemische Größenordnungen
+   - Einheiten immer angegeben
+
+#### ❌ VERBOTEN
+
+1. **Unlösbare Aufgaben**
+   - Fehlende Angaben
+   - Widersprüchliche Werte
+
+2. **Triviale Übungen**
+   - Nur Einsetzen eines Wertes (außer Level 1)
+   - Keine echte Berechnung
+
+3. **Zu lange Lösungswege**
+   - Mehr als 8 Schritte (wird unübersichtlich)
+
+### Beispiel-Aufruf für Übungen
+
+**User:** "Generiere Übungen für Modul 2 (Chemie), Kapitel 3 (Stöchiometrie)"
+
+**Copilot:**
+1. Liest `studies-material/.../02-grundlagen-chemie/module-training.md`
+2. Identifiziert Kapitel 3: "Chemische Gleichungen & Stöchiometrie"
+3. Generiert 2 Übungen pro Level (10 total) im YAML-Format
+4. Speichert in `content/.../module-training/03-gleichungen-stoechiometrie/exercises.yaml`
+
+### Checkliste für Übungen
+
+- [ ] 2 Übungen pro Level (10 total, wenn Kapitel Übungen hat)
+- [ ] Alle Pflichtfelder vorhanden (id, title, level, task, hints, steps, finalAnswer)
+- [ ] Schritte sind logisch aufgebaut
+- [ ] Hints bauen aufeinander auf (keyword → approach → overview)
+- [ ] Realistische Werte und Größenordnungen
+- [ ] blueprintType verknüpft passenden Blueprint
