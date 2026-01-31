@@ -1,0 +1,95 @@
+# Kapitel 8: Ionische Bindung & Lewis-Strukturen
+# Level 3: Anwendung
+
+topic: 'Ionische Bindung & Lewis-Strukturen'
+level: 3
+questions:
+  - question: 'Welche Lewis-Struktur hat Wasser (H₂O)?'
+    options:
+      - 'O mit 2 H verbunden, O hat 2 freie Elektronenpaare'
+      - 'O mit 2 H verbunden, O hat 4 freie Elektronenpaare'
+      - 'H mit 2 O verbunden'
+      - 'Lineare Struktur ohne freie Paare'
+      - '8 Valenzelektronen insgesamt'
+    correct: [0, 4]
+
+  - question: 'Welche Formel hat die Ionenverbindung aus Calcium und Chlor?'
+    options:
+      - 'CaCl'
+      - 'CaCl₂'
+      - 'Ca₂Cl'
+      - 'CaCl₃'
+      - 'Ca₂Cl₃'
+    correct: [1]
+
+  - question: 'Wie viele Valenzelektronen hat CO₂ insgesamt?'
+    options:
+      - '8'
+      - '12'
+      - '16'
+      - '20'
+      - '24'
+    correct: [2]
+
+  - question: 'Zeichne die Lewis-Struktur von N₂. Welche Bindung liegt vor?'
+    options:
+      - 'Einfachbindung'
+      - 'Doppelbindung'
+      - 'Dreifachbindung'
+      - 'Keine Bindung'
+      - 'Ionenbindung'
+    correct: [2]
+
+  - question: 'Welches Ion bildet Sauerstoff typischerweise?'
+    options:
+      - 'O⁺'
+      - 'O²⁺'
+      - 'O⁻'
+      - 'O²⁻'
+      - 'O³⁻'
+    correct: [3]
+
+  - question: 'Welche Ionenverbindung entsteht aus Aluminium und Sauerstoff?'
+    options:
+      - 'AlO'
+      - 'Al₂O'
+      - 'AlO₂'
+      - 'Al₂O₃'
+      - 'Al₃O₂'
+    correct: [3]
+
+  - question: 'Wie viele freie Elektronenpaare hat Ammoniak (NH₃) am Stickstoff?'
+    options:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+    correct: [1]
+
+  - question: 'Welche Lewis-Struktur hat HCl?'
+    options:
+      - 'H-Cl mit 3 freien Paaren am Cl'
+      - 'H-Cl mit 1 freiem Paar am Cl'
+      - 'H=Cl Doppelbindung'
+      - 'Ionische Struktur H⁺ Cl⁻'
+      - '8 Valenzelektronen total'
+    correct: [0, 4]
+
+  - question: 'Welche Formel hat die Verbindung aus Natrium und Sauerstoff?'
+    options:
+      - 'NaO'
+      - 'Na₂O'
+      - 'NaO₂'
+      - 'Na₂O₂'
+      - 'Na₃O'
+    correct: [1]
+
+  - question: 'Wie viele bindende und freie Elektronenpaare hat Methan (CH₄)?'
+    options:
+      - '4 bindende, 0 freie'
+      - '2 bindende, 2 freie'
+      - '3 bindende, 1 freies'
+      - '1 bindendes, 3 freie'
+      - '4 bindende, 4 freie'
+    correct: [0]

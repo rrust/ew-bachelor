@@ -1,0 +1,95 @@
+# Kapitel 10: Valenzbindungstheorie, Hybridisierung & MO-Theorie
+# Level 2: Verständnis
+
+topic: 'Valenzbindungstheorie, Hybridisierung & MO-Theorie'
+level: 2
+questions:
+  - question: 'Warum hybridisiert Kohlenstoff im Methan sp³?'
+    options:
+      - 'Um 4 äquivalente Bindungen zu bilden'
+      - 'Die tetraedrische Anordnung minimiert Abstoßung'
+      - 'Ein s- und drei p-Orbitale werden gemischt'
+      - 'Die Hybridorbitale haben 109,5° Winkel'
+      - 'Kohlenstoff kann nur Doppelbindungen bilden'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur sp²-Hybridisierung sind korrekt?'
+    options:
+      - 'Ein s- und zwei p-Orbitale werden gemischt'
+      - 'Es entstehen 3 Hybridorbitale in einer Ebene'
+      - 'Der Winkel zwischen den Hybriden ist 120°'
+      - 'Ein p-Orbital bleibt unhybridisiert'
+      - 'Typisch für Doppelbindungen wie in C=C'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum besteht eine Doppelbindung aus einer σ- und einer π-Bindung?'
+    options:
+      - 'Die σ-Bindung bildet sich durch frontale Überlappung'
+      - 'Die π-Bindung entsteht durch seitliche p-Orbital-Überlappung'
+      - 'Beide Bindungen nutzen unterschiedliche Orbitale'
+      - 'π-Bindungen sind schwächer als σ-Bindungen'
+      - 'Die σ-Bindung ist rotationssymmetrisch'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur MO-Theorie von H₂ sind korrekt?'
+    options:
+      - 'Zwei 1s-Orbitale kombinieren zu σ und σ*'
+      - 'σ ist bindend (niedrigere Energie)'
+      - 'σ* ist antibindend (höhere Energie)'
+      - 'Beide Elektronen besetzen das σ-Orbital'
+      - 'Die Bindungsordnung ist 1'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie berechnet man die Bindungsordnung?'
+    options:
+      - 'BO = (bindende e⁻ - antibindende e⁻) / 2'
+      - 'BO = 0 bedeutet kein stabiles Molekül'
+      - 'BO = 1 entspricht einer Einfachbindung'
+      - 'BO = 3 entspricht einer Dreifachbindung'
+      - 'Höhere BO bedeutet stärkere Bindung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist O₂ paramagnetisch?'
+    options:
+      - 'O₂ hat 2 ungepaarte Elektronen'
+      - 'Diese befinden sich in π*-Orbitalen'
+      - 'Die MO-Theorie erklärt dies korrekt'
+      - 'Lewis-Strukturen sagen Diamagnetismus voraus'
+      - 'O₂ wird von Magneten angezogen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Hybridisierung zeigt Acetylen (C₂H₂)?'
+    options:
+      - 'sp³'
+      - 'sp²'
+      - 'sp'
+      - 'Jedes C hat 2 sp-Hybridorbitale'
+      - 'Die C≡C Dreifachbindung hat 1 σ und 2 π'
+    correct: [2, 3, 4]
+
+  - question: 'Warum sind π-Bindungen reaktiver als σ-Bindungen?'
+    options:
+      - 'π-Elektronen sind weniger fest gebunden'
+      - 'Die Elektronendichte liegt über/unter der Bindungsachse'
+      - 'Sie sind leichter zugänglich für Reaktionen'
+      - 'σ-Bindungen haben stärkere Überlappung'
+      - 'Additionsreaktionen an Doppelbindungen sind häufig'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu σ-Bindungen sind korrekt?'
+    options:
+      - 'Sie entstehen durch Kopf-zu-Kopf-Überlappung'
+      - 'Die Elektronendichte liegt auf der Bindungsachse'
+      - 'Freie Rotation ist um σ-Bindungen möglich'
+      - 'Jede Einfachbindung ist eine σ-Bindung'
+      - 'σ-Bindungen sind generell stärker als π-Bindungen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum hat N₂ eine sehr starke Bindung?'
+    options:
+      - 'Die Bindungsordnung ist 3 (Dreifachbindung)'
+      - 'Es gibt 1 σ und 2 π-Bindungen'
+      - 'Die Bindungsenergie ist 945 kJ/mol'
+      - 'Die MO-Besetzung zeigt 6 bindende und 0 antibindende Elektronen in der Valenzsschale'
+      - 'N₂ ist daher sehr unreaktiv'
+    correct: [0, 1, 2, 4]

@@ -1,0 +1,95 @@
+# Kapitel 12: Aggregatzustände & Phasenübergänge
+# Level 3: Anwendung
+
+topic: 'Aggregatzustände & Phasenübergänge'
+level: 3
+questions:
+  - question: 'Welcher Stoff hat den höchsten Siedepunkt?'
+    options:
+      - 'CH₄ (Methan)'
+      - 'NH₃ (Ammoniak)'
+      - 'H₂O (Wasser)'
+      - 'H₂S (Schwefelwasserstoff)'
+      - 'HCl (Chlorwasserstoff)'
+    correct: [2]
+
+  - question: 'Bei welchem Druck siedet Wasser bei 80°C?'
+    options:
+      - 'Bei etwa 0,5 atm'
+      - 'Bei etwa 1 atm'
+      - 'Bei etwa 2 atm'
+      - 'Bei etwa 5 atm'
+      - 'Bei 0 atm'
+    correct: [0]
+
+  - question: 'In welcher Phase befindet sich Wasser bei 0,5 atm und 50°C?'
+    options:
+      - 'Fest'
+      - 'Flüssig'
+      - 'Gasförmig'
+      - 'Am Tripelpunkt'
+      - 'Überkritisch'
+    correct: [1]
+
+  - question: 'Welche Verdampfungsenthalpie hat Wasser ungefähr?'
+    options:
+      - '6 kJ/mol'
+      - '40 kJ/mol'
+      - '100 kJ/mol'
+      - '286 kJ/mol'
+      - '500 kJ/mol'
+    correct: [1]
+
+  - question: 'In welcher Reihenfolge steigen die Siedepunkte?'
+    options:
+      - 'He < Ne < Ar < Kr'
+      - 'Kr < Ar < Ne < He'
+      - 'Ne < He < Ar < Kr'
+      - 'Ar < Kr < He < Ne'
+      - 'He < Ar < Ne < Kr'
+    correct: [0]
+
+  - question: 'Bei welcher Temperatur und welchem Druck ist der Tripelpunkt von Wasser?'
+    options:
+      - '0°C und 1 atm'
+      - '100°C und 1 atm'
+      - '0,01°C und 0,006 atm'
+      - '374°C und 218 atm'
+      - '-78°C und 5 atm'
+    correct: [2]
+
+  - question: 'Welcher Phasenübergang setzt Energie frei?'
+    options:
+      - 'Schmelzen'
+      - 'Verdampfen'
+      - 'Sublimation'
+      - 'Kondensation'
+      - 'Alle Übergänge von geordnet zu ungeordnet'
+    correct: [3]
+
+  - question: 'Wie viel Energie braucht man, um 18 g Eis bei 0°C zu schmelzen? (ΔHfus = 6 kJ/mol)'
+    options:
+      - '3 kJ'
+      - '6 kJ'
+      - '12 kJ'
+      - '18 kJ'
+      - '36 kJ'
+    correct: [1]
+
+  - question: 'Welche Aussagen zum Kochen in einem Schnellkochtopf sind korrekt?'
+    options:
+      - 'Der Druck ist höher als 1 atm'
+      - 'Wasser siedet bei über 100°C'
+      - 'Essen gart schneller'
+      - 'Der Dampfdruck wird erhöht'
+      - 'Wasser siedet bei unter 100°C'
+    correct: [0, 1, 2]
+
+  - question: 'Welcher Stoff sublimiert bei Normaldruck?'
+    options:
+      - 'Wasser'
+      - 'Ethanol'
+      - 'Kohlendioxid (Trockeneis)'
+      - 'Kochsalz'
+      - 'Quecksilber'
+    correct: [2]

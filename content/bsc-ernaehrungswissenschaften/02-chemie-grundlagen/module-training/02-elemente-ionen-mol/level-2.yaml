@@ -1,0 +1,96 @@
+# Kapitel 2: Elemente, Ionen & Mol-Konzept
+# Level 2: Verständnis
+# 10 Fragen, 1-3 korrekte Antworten
+
+topic: 'Elemente, Ionen & Mol-Konzept'
+level: 2
+questions:
+  - question: 'Warum gibt Natrium bei der Ionenbildung ein Elektron ab?'
+    options:
+      - 'Um die stabile Edelgaskonfiguration von Neon zu erreichen'
+      - 'Weil Natrium ein Nichtmetall ist'
+      - 'Um negativ geladen zu werden'
+      - 'Weil es mehr Protonen als Elektronen hat'
+      - 'Um seine Masse zu verringern'
+    correct: [0]
+
+  - question: 'Welche Aussagen über das Mol-Konzept sind korrekt?'
+    options:
+      - 'Ein Mol enthält immer die gleiche Teilchenzahl'
+      - 'Die molare Masse ist bei allen Stoffen gleich'
+      - 'Die Avogadro-Zahl verbindet Teilchenzahl und Stoffmenge'
+      - 'Ein Mol Wasser hat die gleiche Masse wie ein Mol Eisen'
+      - 'Das Mol ist eine SI-Basiseinheit'
+    correct: [0, 2, 4]
+
+  - question: 'Warum hat ein Calcium-Ion die Ladung +2?'
+    options:
+      - 'Calcium gibt zwei Elektronen ab für die Edelgaskonfiguration'
+      - 'Calcium nimmt zwei Protonen auf'
+      - 'Calcium steht in der zweiten Hauptgruppe'
+      - 'Calcium hat zwei Valenzelektronen abzugeben'
+      - 'Beide Aussagen über Elektronenabgabe sind richtig'
+    correct: [0, 2, 3]
+
+  - question: 'Wie verhält sich die molare Masse zur relativen Atommasse?'
+    options:
+      - 'Sie sind numerisch gleich mit verschiedenen Einheiten'
+      - 'Die molare Masse ist immer doppelt so groß'
+      - 'Die relative Atommasse hat die Einheit g/mol'
+      - 'Die molare Masse hat die Einheit g/mol'
+      - 'Sie haben keinen Zusammenhang zueinander'
+    correct: [0, 3]
+
+  - question: 'Was passiert bei der Ionisierung von Chlor?'
+    options:
+      - 'Chlor gibt ein Elektron ab'
+      - 'Chlor nimmt ein Elektron auf'
+      - 'Es entsteht ein Chlorid-Ion mit Ladung -1'
+      - 'Es entsteht ein Chlor-Kation'
+      - 'Chlor erreicht die Edelgaskonfiguration von Argon'
+    correct: [1, 2, 4]
+
+  - question: 'Welche Elemente bilden typischerweise Kationen?'
+    options:
+      - 'Alkalimetalle wie Natrium und Kalium'
+      - 'Halogene wie Chlor und Brom'
+      - 'Erdalkalimetalle wie Calcium und Magnesium'
+      - 'Edelgase wie Helium und Neon'
+      - 'Metalle geben Elektronen ab'
+    correct: [0, 2, 4]
+
+  - question: 'Warum ist die Stoffmenge wichtiger als die Masse für chemische Reaktionen?'
+    options:
+      - 'Atome reagieren in bestimmten Anzahlverhältnissen'
+      - 'Die Masse bleibt bei Reaktionen nicht erhalten'
+      - 'Stoffmenge gibt Teilchenzahl an, die für Reaktionen relevant ist'
+      - 'Massenangaben sind ungenauer als Stoffmengen'
+      - 'Stöchiometrie basiert auf Stoffmengenverhältnissen'
+    correct: [0, 2, 4]
+
+  - question: 'Was bedeutet eine molare Masse von 18 g/mol für Wasser?'
+    options:
+      - 'Ein Wassermolekül wiegt 18 Gramm'
+      - 'Ein Mol Wasser hat die Masse 18 Gramm'
+      - '18 Gramm Wasser enthalten 6,02 × 10²³ Moleküle'
+      - 'Die Summenformel von Wasser ist H₁₈O'
+      - 'Die relative Molekülmasse von Wasser beträgt 18'
+    correct: [1, 2, 4]
+
+  - question: 'Welche Ionen entstehen aus Magnesiumchlorid (MgCl₂)?'
+    options:
+      - 'Ein Mg²⁺-Ion und zwei Cl⁻-Ionen'
+      - 'Zwei Mg⁺-Ionen und ein Cl²⁻-Ion'
+      - 'Die Gesamtladung ist null (Elektroneutralität)'
+      - 'Magnesium bildet ein zweifach positiv geladenes Ion'
+      - 'Chlor bildet einfach negativ geladene Ionen'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Woher kommt der Name "Mol" für die Stoffmenge?'
+    options:
+      - 'Vom lateinischen Wort für Haufen oder Menge'
+      - 'Vom Entdecker Amedeo Avogadro'
+      - 'Von der Abkürzung für Molekül'
+      - 'Es ist eine Kurzform von "Molekül"'
+      - 'Das Mol ist verwandt mit dem Wort Molekül'
+    correct: [0, 4]

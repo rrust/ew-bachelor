@@ -1,0 +1,95 @@
+# Kapitel 10: Valenzbindungstheorie, Hybridisierung & MO-Theorie
+# Level 4: Analyse
+
+topic: 'Valenzbindungstheorie, Hybridisierung & MO-Theorie'
+level: 4
+questions:
+  - question: 'Welche Aussagen zum MO-Diagramm von O₂ sind korrekt?'
+    options:
+      - 'Die Elektronenkonfiguration ist σ₂s² σ*₂s² σ₂p² π₂p⁴ π*₂p²'
+      - '8 bindende und 4 antibindende Elektronen in Valenzorbitalen'
+      - 'Bindungsordnung = (8-4)/2 = 2'
+      - 'Die 2 ungepaarten Elektronen sind in π*₂p'
+      - 'O₂ ist paramagnetisch'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Warum ist F₂ stabiler als F₂⁺?'
+    options:
+      - 'F₂ hat Bindungsordnung 1'
+      - 'F₂⁺ hat nur 13 Elektronen, BO = 1,5'
+      - 'F₂⁺ hat höhere Bindungsordnung (stärker)'
+      - 'Entfernung eines antibindenden Elektrons verstärkt die Bindung'
+      - 'F₂⁺ ist stärker gebunden als F₂'
+    correct: [0, 3, 4]
+
+  - question: 'Welche Hybridisierung hat Schwefel in SF₆?'
+    options:
+      - 'sp³'
+      - 'sp³d'
+      - 'sp³d²'
+      - 'Es gibt 6 äquivalente S-F Bindungen'
+      - 'Die Geometrie ist oktaedrisch'
+    correct: [2, 3, 4]
+
+  - question: 'Welche Aussagen zur Bindung in Benzol sind korrekt?'
+    options:
+      - 'Alle C sind sp²-hybridisiert'
+      - 'Das unhybridisierte p-Orbital liegt senkrecht zum Ring'
+      - 'Die 6 p-Elektronen sind delokalisiert'
+      - 'Es gibt abwechselnd Einzel- und Doppelbindungen'
+      - 'Die Bindungsordnung jeder C-C Bindung ist 1,5'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Warum ist CO ein stärkeres σ-Donor als N₂?'
+    options:
+      - 'CO hat ein freies Elektronenpaar am C'
+      - 'Dieses Paar ist energetisch höher (reaktiver)'
+      - 'CO bildet starke Komplexe mit Metallen'
+      - 'N₂ hat symmetrische Elektronenverteilung'
+      - 'CO ist isoelektronisch mit N₂, aber polar'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Elektronenkonfiguration hat N₂ im MO-Schema?'
+    options:
+      - 'σ₂s² σ*₂s² π₂p⁴ σ₂p²'
+      - 'Die π-Orbitale sind vor dem σ₂p gefüllt (bei N₂)'
+      - 'Bindungsordnung = (8-2)/2 = 3'
+      - 'Alle Elektronen sind gepaart (diamagnetisch)'
+      - 'Die Dreifachbindung ist sehr stark'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Hybridisierung in Formaldehyd (H₂CO) sind korrekt?'
+    options:
+      - 'C ist sp²-hybridisiert'
+      - 'O ist sp²-hybridisiert'
+      - 'Die C=O Doppelbindung hat 1 σ und 1 π'
+      - 'Die Geometrie am C ist trigonal-planar'
+      - 'Die C-H Bindungen nutzen sp²-Hybridorbitale'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Was passiert wenn man O₂ ionisiert zu O₂⁺?'
+    options:
+      - 'Ein Elektron aus π*₂p wird entfernt'
+      - 'Die Bindungsordnung steigt auf 2,5'
+      - 'Die Bindung wird stärker und kürzer'
+      - 'O₂⁺ hat 1 ungepaartes Elektron'
+      - 'O₂⁺ ist diamagnetisch'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Hybridisierung zeigt Phosphor in PCl₅?'
+    options:
+      - 'sp³'
+      - 'sp³d'
+      - 'sp³d²'
+      - '5 P-Cl Bindungen mit trigonal-bipyramidaler Geometrie'
+      - 'Axiale und äquatoriale Positionen sind unterschiedlich'
+    correct: [1, 3, 4]
+
+  - question: 'Warum ist CO₂ unpolar obwohl C sp-hybridisiert ist?'
+    options:
+      - 'Die beiden C=O Bindungen zeigen in entgegengesetzte Richtungen'
+      - 'Die Dipole heben sich auf'
+      - 'sp-Hybridisierung führt zu linearer Geometrie (180°)'
+      - 'Jede C=O Bindung ist polar'
+      - 'Symmetrie führt zu keinem Netto-Dipolmoment'
+    correct: [0, 1, 2, 3, 4]

@@ -1,0 +1,95 @@
+# Kapitel 6: Säuren & Basen (Grundlagen)
+# Level 2: Verständnis
+
+topic: 'Säuren & Basen (Grundlagen)'
+level: 2
+questions:
+  - question: 'Warum ist HCl eine starke Säure?'
+    options:
+      - 'Sie dissoziiert vollständig in Wasser'
+      - 'Die Bindung H-Cl ist leicht zu spalten'
+      - 'Cl⁻ ist eine sehr schwache konjugierte Base'
+      - 'Sie hat einen niedrigen pKs-Wert'
+      - 'Sie reagiert explosiv'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Neutralisation sind korrekt?'
+    options:
+      - 'H⁺ + OH⁻ → H₂O'
+      - 'Die Reaktion ist exotherm'
+      - 'Es entsteht immer ein neutrales Salz'
+      - 'Die Ionenanzahl bleibt gleich'
+      - 'Es bilden sich immer Wasser und ein Salz'
+    correct: [0, 1, 4]
+
+  - question: 'Warum ist NH₃ eine schwache Base?'
+    options:
+      - 'Es dissoziiert nur teilweise'
+      - 'Es bildet NH₄⁺ und OH⁻ im Gleichgewicht'
+      - 'Der pKb-Wert ist relativ hoch'
+      - 'Es hat kein OH⁻ in seiner Formel'
+      - 'Es ist ein Gas'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Was unterscheidet Konzentration von Stärke bei Säuren?'
+    options:
+      - 'Konzentration: Menge pro Volumen'
+      - 'Stärke: Grad der Dissoziation'
+      - 'Eine verdünnte starke Säure ist trotzdem stark'
+      - 'Eine konzentrierte schwache Säure bleibt schwach'
+      - 'Beide Begriffe sind identisch'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Eigenschaften haben saure Lösungen?'
+    options:
+      - 'pH < 7'
+      - 'c(H⁺) > c(OH⁻)'
+      - 'Reagieren mit unedlen Metallen'
+      - 'Schmecken sauer'
+      - 'Färben Lackmus rot'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Was passiert bei der Reaktion von HCl mit NaOH?'
+    options:
+      - 'HCl + NaOH → NaCl + H₂O'
+      - 'Es entsteht Kochsalz'
+      - 'Die Lösung wird neutral (bei gleichen Stoffmengen)'
+      - 'Wärme wird frei'
+      - 'Die Ionen Na⁺ und Cl⁻ bleiben in Lösung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist H₂SO₄ eine zweiprotonige Säure?'
+    options:
+      - 'Sie kann zwei H⁺-Ionen abgeben'
+      - 'H₂SO₄ → H⁺ + HSO₄⁻ → 2 H⁺ + SO₄²⁻'
+      - 'Die erste Dissoziation ist stärker'
+      - 'Sie hat zwei Schwefelatome'
+      - 'Der pKs1 ist niedriger als pKs2'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was ist eine amphotere Verbindung?'
+    options:
+      - 'Kann als Säure und Base reagieren'
+      - 'Beispiel: Wasser (H₂O)'
+      - 'Beispiel: Aminosäuren'
+      - 'Hat nur eine Reaktionsmöglichkeit'
+      - 'Je nach Reaktionspartner Säure oder Base'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zu Indikatoren sind korrekt?'
+    options:
+      - 'Ändern ihre Farbe abhängig vom pH-Wert'
+      - 'Sind selbst schwache Säuren oder Basen'
+      - 'Beispiele: Lackmus, Phenolphthalein'
+      - 'Zeigen den Umschlagspunkt bei Titrationen'
+      - 'Universalindikator zeigt viele Farben'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist eine 0,1 M HCl-Lösung saurer als eine 0,1 M Essigsäure?'
+    options:
+      - 'HCl dissoziiert vollständig'
+      - 'Essigsäure dissoziiert nur teilweise'
+      - 'c(H⁺) ist bei HCl höher'
+      - 'Der pH-Wert von HCl ist niedriger'
+      - 'Essigsäure ist eine starke Säure'
+    correct: [0, 1, 2, 3]

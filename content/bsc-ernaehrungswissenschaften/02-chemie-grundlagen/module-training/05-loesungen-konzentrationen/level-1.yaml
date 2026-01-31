@@ -1,0 +1,95 @@
+# Kapitel 5: Lösungen & Konzentrationen
+# Level 1: Grundlagen (Wissen)
+
+topic: 'Lösungen & Konzentrationen'
+level: 1
+questions:
+  - question: 'Was ist das Lösungsmittel in einer Lösung?'
+    options:
+      - 'Der Stoff, der in geringerer Menge vorliegt'
+      - 'Der Stoff, der in größerer Menge vorliegt'
+      - 'Der Stoff, der sich auflöst'
+      - 'Der feste Bestandteil'
+      - 'Der gasförmige Bestandteil'
+    correct: [1]
+
+  - question: 'Was bedeutet Molarität (c)?'
+    options:
+      - 'Masse pro Volumen'
+      - 'Stoffmenge pro Volumen in mol/L'
+      - 'Masse pro Masse'
+      - 'Teilchenzahl pro Gramm'
+      - 'Volumen pro Stoffmenge'
+    correct: [1]
+
+  - question: 'Welche Einheit hat die Molarität?'
+    options:
+      - 'g/L'
+      - 'mol/L oder M'
+      - 'kg/mol'
+      - 'L/mol'
+      - '%'
+    correct: [1]
+
+  - question: 'Was ist eine gesättigte Lösung?'
+    options:
+      - 'Eine Lösung ohne gelösten Stoff'
+      - 'Eine Lösung, die keinen weiteren Stoff mehr lösen kann'
+      - 'Eine sehr verdünnte Lösung'
+      - 'Eine Lösung bei hoher Temperatur'
+      - 'Eine Lösung mit Gasen'
+    correct: [1]
+
+  - question: 'Was bedeutet "verdünnen"?'
+    options:
+      - 'Lösungsmittel entfernen'
+      - 'Mehr gelösten Stoff hinzufügen'
+      - 'Lösungsmittel hinzufügen'
+      - 'Die Lösung erhitzen'
+      - 'Die Lösung filtrieren'
+    correct: [2]
+
+  - question: 'Was ist der Massenanteil (w)?'
+    options:
+      - 'Stoffmenge geteilt durch Volumen'
+      - 'Masse des gelösten Stoffes geteilt durch Gesamtmasse'
+      - 'Volumen geteilt durch Masse'
+      - 'Teilchenzahl pro Mol'
+      - 'Dichte der Lösung'
+    correct: [1]
+
+  - question: 'Welche Formel beschreibt die Molarität?'
+    options:
+      - 'c = m/V'
+      - 'c = n/V'
+      - 'c = V/n'
+      - 'c = m/M'
+      - 'c = n × V'
+    correct: [1]
+
+  - question: 'Was ist eine übersättigte Lösung?'
+    options:
+      - 'Eine Lösung mit weniger Stoff als die Sättigung erlaubt'
+      - 'Eine Lösung mit mehr gelöstem Stoff als normal möglich'
+      - 'Eine Lösung bei Raumtemperatur'
+      - 'Eine neutrale Lösung'
+      - 'Eine Lösung ohne Elektrolyte'
+    correct: [1]
+
+  - question: 'Was gibt die Löslichkeit an?'
+    options:
+      - 'Die Geschwindigkeit des Lösens'
+      - 'Die maximale Menge, die sich in einem Lösungsmittel löst'
+      - 'Die Farbe der Lösung'
+      - 'Den pH-Wert der Lösung'
+      - 'Die Dichte der Lösung'
+    correct: [1]
+
+  - question: 'Welches Symbol steht für Molarität?'
+    options:
+      - 'm'
+      - 'c oder M'
+      - 'n'
+      - 'w'
+      - 'ρ'
+    correct: [1]

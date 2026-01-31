@@ -1,0 +1,95 @@
+# Kapitel 8: Ionische Bindung & Lewis-Strukturen
+# Level 1: Grundlagen
+
+topic: 'Ionische Bindung & Lewis-Strukturen'
+level: 1
+questions:
+  - question: 'Wie entsteht eine Ionenbindung?'
+    options:
+      - 'Durch Elektronenteilung zwischen Atomen'
+      - 'Durch Elektronenübertragung von Metall auf Nichtmetall'
+      - 'Durch magnetische Anziehung'
+      - 'Durch Kernfusion'
+      - 'Durch van-der-Waals-Kräfte'
+    correct: [1]
+
+  - question: 'Was ist ein Ionengitter?'
+    options:
+      - 'Eine zufällige Anordnung von Atomen'
+      - 'Eine regelmäßige 3D-Anordnung von Ionen'
+      - 'Ein einzelnes Ionenpaar'
+      - 'Eine flüssige Substanz'
+      - 'Ein Gas aus Ionen'
+    correct: [1]
+
+  - question: 'Was zeigt eine Lewis-Struktur?'
+    options:
+      - 'Die Kernladung des Atoms'
+      - 'Die Valenzelektronen als Punkte oder Striche'
+      - 'Die Neutronenzahl'
+      - 'Die Masse des Atoms'
+      - 'Die Dichte des Stoffes'
+    correct: [1]
+
+  - question: 'Was besagt die Oktettregel?'
+    options:
+      - 'Atome haben immer 8 Protonen'
+      - 'Atome streben 8 Valenzelektronen an'
+      - 'Ionen haben 8 positive Ladungen'
+      - 'Moleküle bestehen aus 8 Atomen'
+      - 'Die Masse muss durch 8 teilbar sein'
+    correct: [1]
+
+  - question: 'Welche Ionen bildet Natriumchlorid?'
+    options:
+      - 'Na²⁺ und Cl²⁻'
+      - 'Na⁺ und Cl⁻'
+      - 'Na⁻ und Cl⁺'
+      - 'Na³⁺ und Cl³⁻'
+      - 'Na und Cl (neutral)'
+    correct: [1]
+
+  - question: 'Was ist ein bindendes Elektronenpaar?'
+    options:
+      - 'Ein Paar freier Elektronen'
+      - 'Zwei Elektronen, die von zwei Atomen geteilt werden'
+      - 'Zwei Protonen im Kern'
+      - 'Zwei Neutronen'
+      - 'Ein einzelnes Elektron'
+    correct: [1]
+
+  - question: 'Was ist ein freies Elektronenpaar (lone pair)?'
+    options:
+      - 'Ein Elektronenpaar in einer Bindung'
+      - 'Ein Elektronenpaar, das nicht an einer Bindung beteiligt ist'
+      - 'Ein ungepaartes Elektron'
+      - 'Elektronen im Atomkern'
+      - 'Elektronen in der ersten Schale'
+    correct: [1]
+
+  - question: 'Welches Element bildet typischerweise Kationen?'
+    options:
+      - 'Chlor'
+      - 'Natrium'
+      - 'Sauerstoff'
+      - 'Fluor'
+      - 'Schwefel'
+    correct: [1]
+
+  - question: 'Wie wird eine Einfachbindung in der Lewis-Struktur dargestellt?'
+    options:
+      - 'Als ein einzelner Punkt'
+      - 'Als ein Strich zwischen zwei Atomen'
+      - 'Als drei Striche'
+      - 'Als Kreis'
+      - 'Als Dreieck'
+    correct: [1]
+
+  - question: 'Was ist Gitterenergie?'
+    options:
+      - 'Die Energie eines freien Ions'
+      - 'Die Energie zur Bildung des Ionengitters aus freien Ionen'
+      - 'Die kinetische Energie der Ionen'
+      - 'Die Energie der Kernspaltung'
+      - 'Die Wärme beim Schmelzen'
+    correct: [1]

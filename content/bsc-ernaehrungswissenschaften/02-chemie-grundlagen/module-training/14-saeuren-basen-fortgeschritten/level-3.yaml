@@ -1,0 +1,95 @@
+# Kapitel 14: Säuren & Basen (Fortgeschritten)
+# Level 3: Anwendung
+
+topic: 'Säuren & Basen (Fortgeschritten)'
+level: 3
+questions:
+  - question: 'Berechne den pH eines Puffers aus 0,1 M Essigsäure und 0,1 M Natriumacetat (pKs = 4,76)'
+    options:
+      - '4,76'
+      - '7,00'
+      - '3,76'
+      - '5,76'
+      - '2,76'
+    correct: [0]
+
+  - question: 'Wie ändert sich der pH, wenn das Verhältnis [A⁻]/[HA] = 10 ist? (pKs = 4,76)'
+    options:
+      - 'pH = 5,76'
+      - 'pH = 4,76'
+      - 'pH = 3,76'
+      - 'pH = 6,76'
+      - 'pH = 7,00'
+    correct: [0]
+
+  - question: 'Ein Puffer enthält 0,2 M HA und 0,1 M A⁻ (pKs = 5,0). Berechne den pH.'
+    options:
+      - 'pH = 4,70'
+      - 'pH = 5,00'
+      - 'pH = 5,30'
+      - 'pH = 4,00'
+      - 'pH = 6,00'
+    correct: [0]
+
+  - question: 'Wie viel mL 0,1 M NaOH neutralisiert 25 mL 0,1 M HCl vollständig?'
+    options:
+      - '25 mL'
+      - '50 mL'
+      - '12,5 mL'
+      - '100 mL'
+      - '10 mL'
+    correct: [0]
+
+  - question: 'Welchen pKb-Wert hat die konjugierte Base einer Säure mit pKs = 4,76?'
+    options:
+      - '9,24'
+      - '4,76'
+      - '7,00'
+      - '14,00'
+      - '0,24'
+    correct: [0]
+
+  - question: 'Berechne Ks aus pKs = 4,76'
+    options:
+      - '1,74 × 10⁻⁵'
+      - '4,76'
+      - '1,74 × 10⁵'
+      - '1,0 × 10⁻⁷'
+      - '2,88 × 10⁻⁵'
+    correct: [0]
+
+  - question: 'Ein Puffer soll pH 7,2 haben. Welches Verhältnis [A⁻]/[HA] braucht man bei pKs = 7,0?'
+    options:
+      - '1,58 (etwa 3:2)'
+      - '1,00'
+      - '2,00'
+      - '0,50'
+      - '10,0'
+    correct: [0]
+
+  - question: 'Wie viel mol HCl kann 1 L Puffer (0,1 M HA + 0,1 M A⁻) theoretisch neutralisieren?'
+    options:
+      - '0,1 mol (bis A⁻ aufgebraucht)'
+      - '0,2 mol'
+      - '0,05 mol'
+      - '1,0 mol'
+      - '0,01 mol'
+    correct: [0]
+
+  - question: 'Bei welchem pH hat ein Phosphatpuffer (pKs = 7,2) seine maximale Pufferkapazität?'
+    options:
+      - 'pH 7,2'
+      - 'pH 7,0'
+      - 'pH 7,4'
+      - 'pH 6,2'
+      - 'pH 8,2'
+    correct: [0]
+
+  - question: 'Berechne den pH am Halbäquivalenzpunkt der Titration von Essigsäure (pKs = 4,76)'
+    options:
+      - '4,76'
+      - '7,00'
+      - '8,76'
+      - '2,38'
+      - '9,24'
+    correct: [0]

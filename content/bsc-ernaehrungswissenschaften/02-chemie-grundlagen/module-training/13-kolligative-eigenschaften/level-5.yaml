@@ -1,0 +1,95 @@
+# Kapitel 13: Kolligative Eigenschaften
+# Level 5: Synthese/Transfer
+
+topic: 'Kolligative Eigenschaften'
+level: 5
+questions:
+  - question: 'Wie regulieren Fische in Salzwasser ihre Osmolarität?'
+    options:
+      - 'Meerwasserfische sind hypoosmotisch zur Umgebung'
+      - 'Sie verlieren Wasser durch Osmose'
+      - 'Aktive Ausscheidung von Salz über Kiemen'
+      - 'Trinken von Meerwasser und Salzausscheidung'
+      - 'Osmoregulation kostet Energie (ATP)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielen kolligative Eigenschaften bei der Kryokonservierung?'
+    options:
+      - 'Kryoprotektiva senken den Gefrierpunkt'
+      - 'DMSO und Glycerol verhindern Eiskristallbildung'
+      - 'Vitrifikation (Glasbildung) statt Kristallisation'
+      - 'Zellschäden durch Eiskristalle werden vermieden'
+      - 'Osmotischer Stress beim Auftauen kritisch'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die Osmose den Wassertransport in Pflanzen?'
+    options:
+      - 'Wurzeln haben höhere Osmolarität als Boden'
+      - 'Wasser folgt dem osmotischen Gradienten'
+      - 'Wurzeldruck durch Osmose'
+      - 'Transpiration erzeugt zusätzlichen Sog'
+      - 'Mineralien werden aktiv aufgenommen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat der osmotische Druck für die Nierenphysiologie?'
+    options:
+      - 'Glomeruläre Filtration durch Druckdifferenz'
+      - 'Der onkotische Druck hält Protein im Blut'
+      - 'Konzentrierungsgradient im Nierenmark'
+      - 'ADH reguliert Wasserrückresorption'
+      - 'Osmolarität des Urins kann stark variieren'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie funktioniert die Entsalzung durch Forward Osmosis?'
+    options:
+      - 'Eine "Draw Solution" mit höherer Osmolarität'
+      - 'Wasser diffundiert spontan durch die Membran'
+      - 'Keine externe Druckquelle nötig (vs. Umkehrosmose)'
+      - 'Die Draw Solution muss regeneriert werden'
+      - 'Energieeffizienter als Umkehrosmose'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielen kolligative Eigenschaften bei Insekten-Frostschutz?'
+    options:
+      - 'Akkumulation von Glycerol und Trehalose'
+      - 'Gefrierpunkt der Körperflüssigkeit sinkt'
+      - 'Manche Insekten tolerieren -40°C'
+      - 'Antifreeze-Proteine verstärken den Effekt'
+      - 'Kältestarre vs. Frosttoleranz'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie beeinflusst die Osmolarität von Sportgetränken deren Absorption?'
+    options:
+      - 'Hypotone Getränke werden schneller absorbiert'
+      - 'Isotone Getränke ersetzen verlorene Elektrolyte'
+      - 'Hypertone Getränke können Flüssigkeit entziehen'
+      - 'Die Magenentleerung hängt von der Osmolarität ab'
+      - 'Optimale Osmolarität für schnelle Hydratation'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung haben kolligative Eigenschaften für Lebensmittelkonservierung?'
+    options:
+      - 'Hohe Zuckerkonzentration (Marmelade) senkt aw-Wert'
+      - 'Hohe Salzkonzentration (Pökeln) entzieht Mikroben Wasser'
+      - 'Osmotischer Stress hemmt Mikrobenwachstum'
+      - 'Die Wasseraktivität (aw) ist entscheidend'
+      - 'Konservierung ohne Kühlung möglich'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur osmotischen Therapie bei Hirnödemen sind korrekt?'
+    options:
+      - 'Mannitol-Infusion erhöht Plasma-Osmolarität'
+      - 'Wasser wird aus dem Gehirn gezogen'
+      - 'Schnelle Wirkung bei erhöhtem Hirndruck'
+      - 'Mannitol wird nicht verstoffwechselt'
+      - 'Hypertone NaCl-Lösung wirkt ähnlich'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt man die Wirkung von Abführmitteln auf osmotischer Basis?'
+    options:
+      - 'Osmotisch aktive Stoffe werden nicht resorbiert'
+      - 'Sie ziehen Wasser in den Darm'
+      - 'Beispiele: Lactulose, Macrogol, MgSO₄'
+      - 'Der Stuhl wird weicher'
+      - 'Elektrolytstörungen bei Überdosierung möglich'
+    correct: [0, 1, 2, 3, 4]

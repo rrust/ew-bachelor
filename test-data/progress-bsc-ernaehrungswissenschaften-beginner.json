@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-01-31T09:02:39.092Z",
+  "exportedAt": "2026-01-31T10:38:34.621Z",
   "version": "2.0",
   "studyId": "bsc-ernaehrungswissenschaften",
   "settings": {
@@ -8,25 +8,26 @@
   },
   "progress": {
     "userName": "TestUser",
-    "startedAt": "2025-11-27T09:02:39.092Z",
+    "startedAt": "2025-12-21T10:38:34.620Z",
     "modules": {
       "01-ernaehrungslehre-grundlagen": {
         "status": "in-progress",
         "lectures": {
           "01-grundlagen-zellbiologie": {
-            "score": 56,
+            "score": 50,
             "badge": "bronze"
-          },
-          "02-makronaehrstoffe-detail": {
-            "score": 13,
-            "badge": "none"
           }
         },
         "achievements": {}
       },
       "02-chemie-grundlagen": {
         "status": "in-progress",
-        "lectures": {},
+        "lectures": {
+          "02-atome-formeln": {
+            "score": 22,
+            "badge": "none"
+          }
+        },
         "achievements": {}
       }
     },
@@ -48,31 +49,31 @@
       "02-chemie-grundlagen": {
         "currentLevel": 1,
         "answeredCorrectly": [
-          "04-reaktionen-empirische-formeln:1:0",
-          "07-bohr-elektronenkonfiguration:1:1",
           "10-valenzbindung-hybridisierung-mo:1:1",
-          "11-thermodynamik-enthalpie:1:1",
-          "02-elemente-ionen-mol:1:1",
-          "08-ionenbindung-lewis:1:1",
-          "05-loesungen-konzentrationen:1:1",
           "06-saeuren-basen-grundlagen:1:0",
-          "02-elemente-ionen-mol:1:0",
-          "13-kolligative-eigenschaften:1:0",
-          "08-ionenbindung-lewis:1:0",
-          "03-gleichungen-stoechiometrie:1:1",
-          "12-aggregatzustaende-phasendiagramme:1:0",
+          "01-aufbau-atome-periodensystem:1:0",
+          "08-ionenbindung-lewis:1:1",
           "05-loesungen-konzentrationen:1:0",
-          "12-aggregatzustaende-phasendiagramme:1:1",
           "04-reaktionen-empirische-formeln:1:1",
-          "06-saeuren-basen-grundlagen:1:1",
+          "11-thermodynamik-enthalpie:1:1",
+          "08-ionenbindung-lewis:1:0",
+          "02-elemente-ionen-mol:1:1",
           "09-polaritaet-vsepr:1:1",
-          "09-polaritaet-vsepr:1:0",
+          "03-gleichungen-stoechiometrie:1:0",
+          "13-kolligative-eigenschaften:1:0",
+          "01-aufbau-atome-periodensystem:1:1",
+          "04-reaktionen-empirische-formeln:1:0",
+          "06-saeuren-basen-grundlagen:1:1",
+          "11-thermodynamik-enthalpie:1:0",
+          "12-aggregatzustaende-phasendiagramme:1:1",
+          "03-gleichungen-stoechiometrie:1:1",
           "07-bohr-elektronenkonfiguration:1:0",
           "10-valenzbindung-hybridisierung-mo:1:0",
-          "01-aufbau-atome-periodensystem:1:1",
-          "03-gleichungen-stoechiometrie:1:0",
-          "11-thermodynamik-enthalpie:1:0",
-          "01-aufbau-atome-periodensystem:1:0"
+          "12-aggregatzustaende-phasendiagramme:1:0",
+          "02-elemente-ionen-mol:1:0",
+          "07-bohr-elektronenkonfiguration:1:1",
+          "05-loesungen-konzentrationen:1:1",
+          "09-polaritaet-vsepr:1:0"
         ],
         "totalCorrect": 25,
         "completedAt": null

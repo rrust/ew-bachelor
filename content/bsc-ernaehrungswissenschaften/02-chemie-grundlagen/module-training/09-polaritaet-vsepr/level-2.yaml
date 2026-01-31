@@ -1,0 +1,95 @@
+# Kapitel 9: Elektronegativität, Polarität & VSEPR
+# Level 2: Verständnis
+
+topic: 'Elektronegativität, Polarität & VSEPR'
+level: 2
+questions:
+  - question: 'Warum ist die H-F Bindung polarer als die H-Cl Bindung?'
+    options:
+      - 'Fluor ist elektronegativer als Chlor'
+      - 'Die EN-Differenz H-F ist größer'
+      - 'Die Elektronendichte liegt mehr bei F'
+      - 'Chlor ist größer'
+      - 'H-F ist eine Ionenbindung'
+    correct: [0, 1, 2]
+
+  - question: 'Warum ist CO₂ unpolar trotz polarer C=O Bindungen?'
+    options:
+      - 'Die Dipolmomente heben sich auf'
+      - 'Das Molekül ist linear und symmetrisch'
+      - 'Die C=O Bindungen zeigen in entgegengesetzte Richtungen'
+      - 'CO₂ hat keine Bindungen'
+      - 'Die Geometrie führt zu keinem Netto-Dipol'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zur VSEPR-Theorie sind korrekt?'
+    options:
+      - 'Elektronenpaare stoßen sich ab'
+      - 'Sie ordnen sich mit maximalem Abstand an'
+      - 'Freie Paare benötigen mehr Platz als bindende'
+      - 'Nur bindende Paare beeinflussen die Geometrie'
+      - 'Die Geometrie minimiert die Abstoßung'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Warum ist der H-O-H Winkel in Wasser kleiner als 109,5°?'
+    options:
+      - 'Die 2 freien Elektronenpaare drücken die Bindungen zusammen'
+      - 'Freie Paare brauchen mehr Raum'
+      - 'Der tatsächliche Winkel ist etwa 104,5°'
+      - 'Wasser ist tetraedrisch angeordnet'
+      - 'Bindungspaare stoßen freie Paare ab'
+    correct: [0, 1, 2]
+
+  - question: 'Welche Eigenschaften haben polare Moleküle?'
+    options:
+      - 'Sie haben ein Dipolmoment'
+      - 'Sie lösen sich gut in polaren Lösungsmitteln'
+      - 'Sie zeigen stärkere zwischenmolekulare Kräfte'
+      - 'Sie sind immer gasförmig'
+      - 'Positive und negative Teilladungen sind getrennt'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Wie beeinflusst die Elektronegativitätsdifferenz den Bindungscharakter?'
+    options:
+      - 'ΔEN = 0: rein kovalent'
+      - 'ΔEN < 0,5: weitgehend unpolar'
+      - 'ΔEN 0,5-1,7: polar kovalent'
+      - 'ΔEN > 1,7: ionisch'
+      - 'Fließende Übergänge zwischen den Typen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Form hat NH₃ und warum?'
+    options:
+      - 'Trigonal-pyramidal'
+      - 'Es gibt 3 Bindungspaare und 1 freies Paar'
+      - 'Das freie Paar nimmt eine der tetraedrischen Positionen ein'
+      - 'Linear wegen der 3 H-Atome'
+      - 'Der H-N-H Winkel ist etwa 107°'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Warum löst sich Zucker gut in Wasser?'
+    options:
+      - 'Zucker hat viele OH-Gruppen (polar)'
+      - 'Polare Gruppen wechselwirken mit Wassermolekülen'
+      - 'Wasserstoffbrücken bilden sich'
+      - 'Zucker ist ionisch'
+      - '"Gleiches löst Gleiches"'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zu Elektronegativitätstrends sind korrekt?'
+    options:
+      - 'EN nimmt im PSE von links nach rechts zu'
+      - 'EN nimmt von unten nach oben zu'
+      - 'Fluor hat EN = 4,0 (höchster Wert)'
+      - 'Metalle haben niedrige EN'
+      - 'Edelgase haben keine definierte EN'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist BF₃ trigonal-planar?'
+    options:
+      - 'Es hat 3 Bindungspaare und keine freien Paare am B'
+      - '120° zwischen den Bindungen ist optimal'
+      - 'Die Abstoßung der 3 Paare wird minimiert'
+      - 'Bor hat nur 6 Valenzelektronen'
+      - 'Es hat eine tetraedrische Geometrie'
+    correct: [0, 1, 2, 3]

@@ -1,0 +1,95 @@
+# Kapitel 7: Bohr-Modell & Elektronenkonfigurationen
+# Level 1: Grundlagen
+
+topic: 'Bohr-Modell & Elektronenkonfigurationen'
+level: 1
+questions:
+  - question: 'Was besagt das Bohr-Modell des Atoms?'
+    options:
+      - 'Elektronen befinden sich überall im Atom'
+      - 'Elektronen bewegen sich auf festen Bahnen um den Kern'
+      - 'Elektronen haben keine Energie'
+      - 'Alle Atome sind gleich groß'
+      - 'Der Kern enthält Elektronen'
+    correct: [1]
+
+  - question: 'Was ist ein Orbital?'
+    options:
+      - 'Die exakte Bahn eines Elektrons'
+      - 'Ein Bereich mit hoher Aufenthaltswahrscheinlichkeit für Elektronen'
+      - 'Der Atomkern'
+      - 'Eine chemische Bindung'
+      - 'Ein Neutron'
+    correct: [1]
+
+  - question: 'Wie viele Elektronen passen maximal in die erste Schale (K)?'
+    options:
+      - '1'
+      - '2'
+      - '8'
+      - '18'
+      - '32'
+    correct: [1]
+
+  - question: 'Welche Hauptquantenzahl hat die dritte Schale?'
+    options:
+      - 'n = 1'
+      - 'n = 2'
+      - 'n = 3'
+      - 'n = 4'
+      - 'n = 5'
+    correct: [2]
+
+  - question: 'Was sind Valenzelektronen?'
+    options:
+      - 'Elektronen im Atomkern'
+      - 'Elektronen in der äußersten Schale'
+      - 'Elektronen in der innersten Schale'
+      - 'Gepaarte Elektronen'
+      - 'Negativ geladene Protonen'
+    correct: [1]
+
+  - question: 'Welche Orbitale gibt es in der zweiten Schale?'
+    options:
+      - 'Nur s-Orbitale'
+      - 's- und p-Orbitale'
+      - 's-, p- und d-Orbitale'
+      - 's-, p-, d- und f-Orbitale'
+      - 'Keine Orbitale'
+    correct: [1]
+
+  - question: 'Wie viele Elektronen passen in ein p-Orbital?'
+    options:
+      - '1'
+      - '2'
+      - '6'
+      - '8'
+      - '10'
+    correct: [1]
+
+  - question: 'Wie viele p-Orbitale gibt es pro Unterschale?'
+    options:
+      - '1'
+      - '2'
+      - '3'
+      - '5'
+      - '7'
+    correct: [2]
+
+  - question: 'Was besagt das Pauli-Prinzip?'
+    options:
+      - 'Elektronen füllen niedrigste Energie zuerst'
+      - 'Ein Orbital enthält maximal 2 Elektronen mit entgegengesetztem Spin'
+      - 'Elektronen besetzen erst einzeln, dann gepaart'
+      - 'Alle Elektronen haben den gleichen Spin'
+      - 'Orbitale haben unendlich Platz'
+    correct: [1]
+
+  - question: 'Was ist die Elektronenkonfiguration von Helium?'
+    options:
+      - '1s¹'
+      - '1s²'
+      - '2s²'
+      - '1s² 2s²'
+      - '1p²'
+    correct: [1]

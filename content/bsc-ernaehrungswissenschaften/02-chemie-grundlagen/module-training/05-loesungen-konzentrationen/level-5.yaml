@@ -1,0 +1,95 @@
+# Kapitel 5: Lösungen & Konzentrationen
+# Level 5: Synthese/Transfer
+
+topic: 'Lösungen & Konzentrationen'
+level: 5
+questions:
+  - question: 'Ein Infusionsbeutel enthält 500 mL 5%-ige (w/v) Glucoselösung. Wie viel mol Glucose (M = 180 g/mol) sind enthalten?'
+    options:
+      - '0,14 mol'
+      - '25 g Glucose in 500 mL'
+      - 'Das entspricht 50 g/L'
+      - 'c = 50/180 ≈ 0,28 M'
+      - 'n = 0,28 × 0,5 = 0,14 mol'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Aus 100 mL einer 2 M und 200 mL einer 0,5 M Lösung desselben Stoffes wird eine Mischung hergestellt. Welche Konzentration?'
+    options:
+      - '0,67 M'
+      - '1,00 M'
+      - '1,25 M'
+      - 'n₁ = 0,2 mol, n₂ = 0,1 mol'
+      - 'c = 0,3 mol / 0,3 L = 1,0 M'
+    correct: [1, 3, 4]
+
+  - question: 'Eine Phosphatlösung enthält 0,1 M Na₃PO₄. Welche Aussagen zur Ionenkonzentration sind korrekt?'
+    options:
+      - 'c(Na⁺) = 0,3 M'
+      - 'c(PO₄³⁻) = 0,1 M'
+      - 'Na₃PO₄ → 3 Na⁺ + PO₄³⁻'
+      - 'Die Gesamtionenkonzentration ist 0,4 M'
+      - 'Die Ladungen sind ausgeglichen: 3(+1) + (-3) = 0'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Zur Herstellung von 500 mL einer 0,2 M Pufferlösung werden 0,1 M Essigsäure und 0,3 M Natriumacetat benötigt. Wie viel mL von jedem?'
+    options:
+      - '250 mL von jeder'
+      - 'Mischung ergibt Durchschnittskonzentration'
+      - 'Für c = 0,2 M: gewichteter Durchschnitt'
+      - '375 mL + 125 mL (nach Verdünnungsformel)'
+      - 'Die Stoffmengen addieren sich'
+    correct: [0, 1, 4]
+
+  - question: 'Die Löslichkeit von KNO₃ beträgt 316 g/L bei 70°C. Welche Molarität entspricht das? (M = 101 g/mol)'
+    options:
+      - '1,56 M'
+      - '3,13 M'
+      - '4,69 M'
+      - 'n = 316/101 ≈ 3,13 mol/L'
+      - 'Bei Abkühlung kristallisiert der Überschuss'
+    correct: [1, 3, 4]
+
+  - question: 'Ein Laborant soll 2 L einer 0,25 M Na₂SO₄-Lösung (M = 142 g/mol) herstellen. Was braucht er?'
+    options:
+      - '35,5 g Na₂SO₄'
+      - '71 g Na₂SO₄'
+      - 'n = 0,5 mol'
+      - 'm = 0,5 × 142 = 71 g'
+      - 'Auffüllen auf 2 L mit Wasser'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Eine 98%-ige H₂SO₄ (ρ = 1,84 g/mL, M = 98 g/mol) soll auf 1 M verdünnt werden. Wie viel mL der konz. Säure pro Liter?'
+    options:
+      - '27,2 mL'
+      - '54,3 mL'
+      - '108,7 mL'
+      - 'c(konz.) = (1,84 × 0,98 × 1000)/98 = 18,4 M'
+      - 'V = 1000 × 1/18,4 ≈ 54,3 mL'
+    correct: [1, 3, 4]
+
+  - question: 'Ein Elektrolyt-Getränk enthält 20 mmol/L Na⁺ und 10 mmol/L K⁺. Wie viel g NaCl und KCl in 500 mL? (M: NaCl = 58,5, KCl = 74,5)'
+    options:
+      - '0,59 g NaCl und 0,37 g KCl'
+      - 'n(Na⁺) = 0,01 mol in 500 mL'
+      - 'n(K⁺) = 0,005 mol in 500 mL'
+      - 'm(NaCl) = 0,01 × 58,5 = 0,585 g'
+      - 'm(KCl) = 0,005 × 74,5 = 0,373 g'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Bei der Osmose zwischen 0,1 M NaCl und 0,1 M Glucose: Was passiert?'
+    options:
+      - 'NaCl-Lösung ist hyperosmolar (mehr Teilchen)'
+      - 'Wasser fließt zur NaCl-Seite'
+      - 'NaCl dissoziiert: 0,2 mol Teilchen/L'
+      - 'Glucose dissoziiert nicht: 0,1 mol Teilchen/L'
+      - 'Die osmotischen Konzentrationen sind unterschiedlich'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Eine Stammlösung hat 10 M. Wie stellt man eine Verdünnungsreihe mit 1 M, 0,1 M und 0,01 M her?'
+    options:
+      - '1:10 Verdünnung für jeden Schritt'
+      - '1 mL + 9 mL ergibt 1:10'
+      - 'Serielle Verdünnung ist effizient'
+      - '10 M → 1 M → 0,1 M → 0,01 M'
+      - 'Jeder Schritt reduziert um Faktor 10'
+    correct: [0, 1, 2, 3, 4]

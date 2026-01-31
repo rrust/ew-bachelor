@@ -1,0 +1,95 @@
+# Kapitel 14: Säuren & Basen (Fortgeschritten)
+# Level 2: Verständnis
+
+topic: 'Säuren & Basen (Fortgeschritten)'
+level: 2
+questions:
+  - question: 'Welche Aussagen zur Henderson-Hasselbalch-Gleichung sind korrekt?'
+    options:
+      - 'Sie berechnet den pH-Wert von Pufferlösungen'
+      - 'pH = pKs wenn [HA] = [A⁻]'
+      - 'Das Verhältnis [A⁻]/[HA] bestimmt den pH'
+      - 'Sie gilt für schwache Säuren und ihre konjugierten Basen'
+      - 'Sie gilt nur für starke Säuren'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Pufferkapazität sind korrekt?'
+    options:
+      - 'Sie beschreibt wie viel Säure/Base ein Puffer neutralisieren kann'
+      - 'Höhere Pufferkonzentration = höhere Kapazität'
+      - 'Maximale Kapazität bei pH = pKs'
+      - 'Außerhalb pKs ± 1 ist die Kapazität gering'
+      - 'Die Pufferkapazität ist unabhängig von der Konzentration'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Acetat-Puffer sind korrekt?'
+    options:
+      - 'Besteht aus Essigsäure und Natriumacetat'
+      - 'pKs der Essigsäure ≈ 4,76'
+      - 'Puffert effektiv im Bereich pH 3,76-5,76'
+      - 'Wird in biochemischen Anwendungen genutzt'
+      - 'Puffert im neutralen Bereich um pH 7'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Phosphatpuffer sind korrekt?'
+    options:
+      - 'Wichtig für biologische Systeme'
+      - 'H₂PO₄⁻/HPO₄²⁻ hat pKs ≈ 7,2'
+      - 'Puffert im physiologischen Bereich'
+      - 'Wird oft in Labors verwendet'
+      - 'Hat drei mögliche Pufferbereiche'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Titrationskurve einer schwachen Säure sind korrekt?'
+    options:
+      - 'Der pH steigt langsam am Anfang'
+      - 'Am Halbäquivalenzpunkt: pH = pKs'
+      - 'Steiler Anstieg am Äquivalenzpunkt'
+      - 'Der Äquivalenzpunkt liegt über pH 7'
+      - 'Die Kurve ist symmetrisch'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum liegt der Äquivalenzpunkt einer schwachen Säure über pH 7?'
+    options:
+      - 'Die konjugierte Base reagiert mit Wasser'
+      - 'A⁻ + H₂O ⇌ HA + OH⁻'
+      - 'Es entsteht ein basisches Salz'
+      - 'Die Hydrolyse des Anions'
+      - 'Die starke Säure neutralisiert vollständig'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Blutpuffer-System sind korrekt?'
+    options:
+      - 'Hauptsächlich CO₂/HCO₃⁻-Puffer'
+      - 'Hält den pH bei etwa 7,4'
+      - 'CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻'
+      - 'Die Lunge reguliert CO₂, die Niere HCO₃⁻'
+      - 'Der Puffer ist unabhängig von der Atmung'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Auswahl eines Indikators sind korrekt?'
+    options:
+      - 'Der Umschlagbereich sollte den Äquivalenzpunkt enthalten'
+      - 'Phenolphthalein für starke Säure + starke Base'
+      - 'Methylorange für schwache Base + starke Säure'
+      - 'Der Umschlagbereich liegt meist bei pKHIn ± 1'
+      - 'Jeder Indikator funktioniert für jede Titration'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Mehrprotonigen Säuren sind korrekt?'
+    options:
+      - 'Sie haben mehrere pKs-Werte'
+      - 'H₃PO₄ hat drei Dissoziationsstufen'
+      - 'pKs1 < pKs2 < pKs3'
+      - 'Jede Stufe hat einen eigenen Äquivalenzpunkt'
+      - 'Alle Protonen werden gleichzeitig abgegeben'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Carbonat-System sind korrekt?'
+    options:
+      - 'H₂CO₃/HCO₃⁻: pKs1 ≈ 6,4'
+      - 'HCO₃⁻/CO₃²⁻: pKs2 ≈ 10,3'
+      - 'Wichtig für Ozean-pH und Klimawandel'
+      - 'CO₂-Lösung in Wasser bildet H₂CO₃'
+      - 'Die Gleichgewichte sind unabhängig voneinander'
+    correct: [0, 1, 2, 3]

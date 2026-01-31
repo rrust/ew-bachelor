@@ -1,0 +1,95 @@
+# Kapitel 4: Chemische Reaktionen & Empirische Formeln
+# Level 1: Grundlagen (Wissen)
+
+topic: 'Chemische Reaktionen & Empirische Formeln'
+level: 1
+questions:
+  - question: 'Was ist eine Synthese-Reaktion?'
+    options:
+      - 'Eine Reaktion, bei der ein Stoff zerfällt'
+      - 'Eine Reaktion, bei der mehrere Stoffe zu einem werden'
+      - 'Eine Reaktion mit Sauerstoff'
+      - 'Eine Reaktion in wässriger Lösung'
+      - 'Eine Reaktion mit Katalysator'
+    correct: [1]
+
+  - question: 'Was zeigt die empirische Formel?'
+    options:
+      - 'Die tatsächliche Anzahl der Atome im Molekül'
+      - 'Das kleinste ganzzahlige Verhältnis der Atome'
+      - 'Die Masse des Moleküls'
+      - 'Die räumliche Struktur'
+      - 'Die Reaktionsgeschwindigkeit'
+    correct: [1]
+
+  - question: 'Was ist eine Zersetzungsreaktion?'
+    options:
+      - 'Ein Stoff zerfällt in mehrere einfachere Stoffe'
+      - 'Zwei Stoffe verbinden sich zu einem'
+      - 'Atome werden zwischen Molekülen ausgetauscht'
+      - 'Ein Metall verdrängt ein anderes'
+      - 'Säure und Base neutralisieren sich'
+    correct: [0]
+
+  - question: 'Welche Formel ist eine Summenformel (Molekülformel)?'
+    options:
+      - 'CH₂O'
+      - 'C₆H₁₂O₆'
+      - 'NaCl'
+      - 'HO'
+      - 'CH'
+    correct: [1]
+
+  - question: 'Was bedeutet "prozentuale Zusammensetzung"?'
+    options:
+      - 'Der Massenanteil jedes Elements in einer Verbindung'
+      - 'Die Anzahl der Atome pro Molekül'
+      - 'Das Volumenverhältnis der Gase'
+      - 'Die Dichte der Substanz'
+      - 'Die Reaktionsausbeute'
+    correct: [0]
+
+  - question: 'Was ist eine Verdrängungsreaktion?'
+    options:
+      - 'Ein reaktiveres Element ersetzt ein weniger reaktives'
+      - 'Zwei Elemente verbinden sich'
+      - 'Ein Stoff zerfällt in Elemente'
+      - 'Wasser wird gebildet'
+      - 'Gase entweichen aus einer Lösung'
+    correct: [0]
+
+  - question: 'Welche Reaktion ist eine Verbrennung?'
+    options:
+      - 'NaCl → Na + Cl₂'
+      - 'CH₄ + O₂ → CO₂ + H₂O'
+      - 'Zn + Cu²⁺ → Zn²⁺ + Cu'
+      - 'H₂O → H₂ + O₂'
+      - 'NaOH + HCl → NaCl + H₂O'
+    correct: [1]
+
+  - question: 'Was ist eine Austauschreaktion (Doppelte Umsetzung)?'
+    options:
+      - 'Zwei Verbindungen tauschen ihre Partner aus'
+      - 'Ein Element ersetzt ein anderes'
+      - 'Ein Stoff verbrennt'
+      - 'Ein Stoff zerfällt'
+      - 'Zwei Elemente verbinden sich'
+    correct: [0]
+
+  - question: 'Welche empirische Formel hat Glucose (C₆H₁₂O₆)?'
+    options:
+      - 'C₆H₁₂O₆'
+      - 'CH₂O'
+      - 'CHO'
+      - 'C₃H₆O₃'
+      - 'C₂H₄O₂'
+    correct: [1]
+
+  - question: 'Was ist eine exotherme Reaktion?'
+    options:
+      - 'Eine Reaktion, die Wärme aufnimmt'
+      - 'Eine Reaktion, die Wärme abgibt'
+      - 'Eine Reaktion ohne Energieänderung'
+      - 'Eine Reaktion mit Katalysator'
+      - 'Eine Reaktion im Gleichgewicht'
+    correct: [1]

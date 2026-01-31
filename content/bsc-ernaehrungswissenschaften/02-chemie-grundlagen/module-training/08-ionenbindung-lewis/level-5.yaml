@@ -1,0 +1,95 @@
+# Kapitel 8: Ionische Bindung & Lewis-Strukturen
+# Level 5: Synthese/Transfer
+
+topic: 'Ionische Bindung & Lewis-Strukturen'
+level: 5
+questions:
+  - question: 'Warum ist Diamant härter als Kochsalz trotz ähnlicher Struktur?'
+    options:
+      - 'Diamant hat kovalente Bindungen in alle Richtungen'
+      - 'Jedes C ist mit 4 anderen C verbunden'
+      - 'In NaCl gibt es Spaltebenen zwischen Ionen'
+      - 'Kovalente C-C Bindungen sind stärker als ionische Na-Cl'
+      - 'Ionengitter haben charakteristische Schwachstellen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Lewis-Struktur hat Stickstoffmonoxid (NO)?'
+    options:
+      - 'Es ist ein Radikal mit einem ungepaarten Elektron'
+      - 'Die Oktettregel ist verletzt'
+      - 'NO hat 11 Valenzelektronen (ungerade Zahl)'
+      - 'Es gibt Resonanzstrukturen'
+      - 'NO ist biologisch wichtig (Signalmolekül)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum bildet CO eine Dreifachbindung und ist sehr stabil?'
+    options:
+      - 'C und O teilen 6 Elektronen'
+      - 'Beide Atome erreichen das Oktett'
+      - 'CO ist isoelektronisch mit N₂'
+      - 'Die Bindungsenergie ist sehr hoch'
+      - 'CO hat ein freies Elektronenpaar am C'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt die Polarisierbarkeit bei Ionenbindungen?'
+    options:
+      - 'Kleine Kationen mit hoher Ladung polarisieren Anionen'
+      - 'Große Anionen sind leicht polarisierbar'
+      - 'Starke Polarisation führt zu kovalentem Charakter'
+      - 'AgI hat mehr kovalenten Charakter als NaCl'
+      - 'Fajans Regeln beschreiben diese Effekte'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum sind Lithium-Ionen-Batterien so erfolgreich?'
+    options:
+      - 'Li⁺ ist sehr klein und leicht'
+      - 'Hohe Energie pro Masse'
+      - 'Li hat niedrige Ionisierungsenergie'
+      - 'Li⁺ kann reversibel in Strukturen eingelagert werden'
+      - 'Die Gitterenergien der Li-Verbindungen sind günstig'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Lewis-Struktur hat Blausäure (HCN)?'
+    options:
+      - 'H-C≡N mit Dreifachbindung zwischen C und N'
+      - 'C hat keine freien Elektronenpaare'
+      - 'N hat ein freies Elektronenpaar'
+      - 'Insgesamt 10 Valenzelektronen'
+      - 'Die Struktur ist linear'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist PCl₅ möglich, aber NCl₅ nicht?'
+    options:
+      - 'P kann d-Orbitale nutzen (3. Periode)'
+      - 'N hat keine d-Orbitale (2. Periode)'
+      - 'P kann mehr als 8 Valenzelektronen haben'
+      - 'N ist auf 8 Valenzelektronen beschränkt'
+      - 'PCl₅ ist trigonal-bipyramidal'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Löslichkeit von Ionenverbindungen sind korrekt?'
+    options:
+      - 'Lösung ist günstig wenn Hydratationsenthalpie > Gitterenergie'
+      - 'Kleine hochgeladene Ionen werden stark hydratisiert'
+      - 'Enthalpie und Entropie bestimmen die Löslichkeit'
+      - 'Silberhalogenide sind schwerlöslich'
+      - 'Die Gitterenergie muss überwunden werden'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Lewis-Struktur hat Xenondifluorid (XeF₂)?'
+    options:
+      - 'Xe ist das Zentralatom mit 2 F-Atomen'
+      - 'Xe hat 3 freie Elektronenpaare'
+      - 'Die Struktur ist linear'
+      - 'Edelgase können Verbindungen bilden'
+      - 'Xe hat 10 Valenzelektronen (hypervalent)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum kristallisiert NaCl in einer kubischen Struktur?'
+    options:
+      - 'Optimale Packung für Ionen mit ähnlichem Radius'
+      - 'Jedes Na⁺ ist von 6 Cl⁻ umgeben'
+      - 'Maximale elektrostatische Anziehung'
+      - 'Minimierung der Abstoßung gleichnamiger Ionen'
+      - 'Die Koordinationszahl ist 6 für beide Ionen'
+    correct: [0, 1, 2, 3, 4]

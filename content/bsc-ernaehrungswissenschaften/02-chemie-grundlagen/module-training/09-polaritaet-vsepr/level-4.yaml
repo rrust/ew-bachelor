@@ -1,0 +1,95 @@
+# Kapitel 9: Elektronegativität, Polarität & VSEPR
+# Level 4: Analyse
+
+topic: 'Elektronegativität, Polarität & VSEPR'
+level: 4
+questions:
+  - question: 'Welche Aussagen zur Geometrie von XeF₄ sind korrekt?'
+    options:
+      - 'Xe hat 4 Bindungspaare und 2 freie Paare'
+      - 'Die Elektronenpaaranordnung ist oktaedrisch'
+      - 'Die Molekülform ist quadratisch-planar'
+      - 'Die freien Paare stehen trans zueinander'
+      - 'Alle F-Atome liegen in einer Ebene'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist CHCl₃ polar, aber CCl₄ unpolar?'
+    options:
+      - 'CHCl₃ ist nicht symmetrisch'
+      - 'CCl₄ ist tetraedrisch und symmetrisch'
+      - 'In CHCl₃ heben sich die Dipole nicht auf'
+      - 'H und Cl haben unterschiedliche EN'
+      - 'In CCl₄ zeigen alle C-Cl Dipole nach außen (Summe = 0)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Bindungspolarität in H₂O sind korrekt?'
+    options:
+      - 'O ist elektronegativer als H'
+      - 'Die O-H Bindung ist polar (δ⁺ am H, δ⁻ am O)'
+      - 'Die gewinkelte Form führt zu einem Netto-Dipol'
+      - 'Wasser hat ein großes Dipolmoment'
+      - 'Die Polarität ermöglicht Wasserstoffbrücken'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Form hat IF₅ und warum?'
+    options:
+      - 'Es hat 5 Bindungspaare und 1 freies Paar'
+      - 'Die Elektronenpaaranordnung ist oktaedrisch'
+      - 'Die Molekülform ist quadratisch-pyramidal'
+      - 'Das freie Paar nimmt eine axiale Position ein'
+      - 'Alle F-Atome sind äquivalent'
+    correct: [0, 1, 2]
+
+  - question: 'Wie beeinflusst die Hybridisierung die Geometrie?'
+    options:
+      - 'sp → linear (180°)'
+      - 'sp² → trigonal-planar (120°)'
+      - 'sp³ → tetraedrisch (109,5°)'
+      - 'Die Hybridisierung bestimmt die Winkel'
+      - 'sp³d → trigonal-bipyramidal'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu ICl₄⁻ sind korrekt?'
+    options:
+      - 'I hat 4 Bindungspaare und 2 freie Paare'
+      - 'Die Ladung kommt von einem zusätzlichen Elektron'
+      - 'Die Form ist quadratisch-planar'
+      - 'Die Elektronenpaaranordnung ist oktaedrisch'
+      - 'Die freien Paare sind trans-ständig'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum hat SF₄ eine "Wippe"-Form (seesaw)?'
+    options:
+      - 'Es gibt 4 Bindungspaare und 1 freies Paar'
+      - 'Die Elektronenpaaranordnung ist trigonal-bipyramidal'
+      - 'Das freie Paar nimmt eine äquatoriale Position ein'
+      - 'Äquatoriale Position minimiert Abstoßung'
+      - 'Die Form ist C₂v symmetrisch'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Dipol-Dipol-Wechselwirkung sind korrekt?'
+    options:
+      - 'Polare Moleküle ziehen sich an (+ zu -)'
+      - 'Sie beeinflussen Siedepunkt und Löslichkeit'
+      - 'Sie sind schwächer als kovalente Bindungen'
+      - 'Sie treten nur zwischen identischen Molekülen auf'
+      - 'HCl zeigt Dipol-Dipol-Wechselwirkungen'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Geometrie hat BrF₅?'
+    options:
+      - 'Trigonal-bipyramidal'
+      - 'Oktaedrisch'
+      - 'Quadratisch-pyramidal'
+      - 'Es hat 5 Bindungspaare und 1 freies Paar'
+      - 'Das freie Paar ist am Br'
+    correct: [2, 3, 4]
+
+  - question: 'Wie erklärt VSEPR die Geometrie von Ozon (O₃)?'
+    options:
+      - 'Das mittlere O hat 2 Bindungsbereiche und 1 freies Paar'
+      - 'Die Form ist gewinkelt'
+      - 'Der Winkel ist etwa 117°'
+      - 'Resonanzstrukturen beeinflussen die Bindungsordnung'
+      - 'Das freie Paar komprimiert den Winkel etwas'
+    correct: [0, 1, 2, 3, 4]

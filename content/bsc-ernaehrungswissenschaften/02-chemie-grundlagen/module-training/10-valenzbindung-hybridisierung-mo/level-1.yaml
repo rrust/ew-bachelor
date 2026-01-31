@@ -1,0 +1,95 @@
+# Kapitel 10: Valenzbindungstheorie, Hybridisierung & MO-Theorie
+# Level 1: Grundlagen
+
+topic: 'Valenzbindungstheorie, Hybridisierung & MO-Theorie'
+level: 1
+questions:
+  - question: 'Was beschreibt die Valenzbindungstheorie (VB)?'
+    options:
+      - 'Die Bewegung von Elektronen im Kern'
+      - 'Die Überlappung von Atomorbitalen zu Bindungen'
+      - 'Die Masse von Molekülen'
+      - 'Die Ionisierung von Atomen'
+      - 'Die Radioaktivität'
+    correct: [1]
+
+  - question: 'Was ist Hybridisierung?'
+    options:
+      - 'Die Spaltung von Molekülen'
+      - 'Die Mischung von Atomorbitalen zu neuen Hybridorbitalen'
+      - 'Die Bildung von Ionen'
+      - 'Eine chemische Reaktion'
+      - 'Die Trennung von Elektronen'
+    correct: [1]
+
+  - question: 'Welche Hybridisierung hat Kohlenstoff in Methan (CH₄)?'
+    options:
+      - 'sp'
+      - 'sp²'
+      - 'sp³'
+      - 'sp³d'
+      - 'sp³d²'
+    correct: [2]
+
+  - question: 'Was ist eine σ-Bindung (Sigma-Bindung)?'
+    options:
+      - 'Eine seitliche Überlappung von Orbitalen'
+      - 'Eine Überlappung entlang der Bindungsachse'
+      - 'Eine Ionenbindung'
+      - 'Eine Wasserstoffbrücke'
+      - 'Eine metallische Bindung'
+    correct: [1]
+
+  - question: 'Was ist eine π-Bindung (Pi-Bindung)?'
+    options:
+      - 'Eine Überlappung entlang der Bindungsachse'
+      - 'Eine seitliche Überlappung von p-Orbitalen'
+      - 'Eine Ionenbindung'
+      - 'Eine kovalente Einfachbindung'
+      - 'Eine Wasserstoffbrücke'
+    correct: [1]
+
+  - question: 'Was beschreibt die MO-Theorie (Molekülorbitaltheorie)?'
+    options:
+      - 'Elektronen in lokalisierten Atomorbitalen'
+      - 'Elektronen in Orbitalen, die das ganze Molekül umfassen'
+      - 'Die Masse des Moleküls'
+      - 'Nur ionische Bindungen'
+      - 'Kernspaltung'
+    correct: [1]
+
+  - question: 'Was ist ein bindendes Molekülorbital?'
+    options:
+      - 'Ein MO mit höherer Energie als die Atomorbitale'
+      - 'Ein MO mit niedrigerer Energie als die Atomorbitale'
+      - 'Ein Orbital im Atomkern'
+      - 'Ein Orbital ohne Elektronen'
+      - 'Ein antibindendes Orbital'
+    correct: [1]
+
+  - question: 'Was ist ein antibindendes Molekülorbital?'
+    options:
+      - 'Ein MO mit niedrigerer Energie'
+      - 'Ein MO mit höherer Energie und einer Knotenebene'
+      - 'Ein Orbital, das immer voll besetzt ist'
+      - 'Ein ionisches Orbital'
+      - 'Ein s-Orbital'
+    correct: [1]
+
+  - question: 'Wie viele Hybridorbitale bilden sich bei sp³-Hybridisierung?'
+    options:
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+    correct: [2]
+
+  - question: 'Was ist die Bindungsordnung?'
+    options:
+      - 'Die Anzahl der Atome im Molekül'
+      - 'Die Anzahl der Elektronenpaare zwischen zwei Atomen'
+      - 'Die Masse des Moleküls'
+      - 'Die Ladung des Ions'
+      - 'Die Anzahl der Protonen'
+    correct: [1]

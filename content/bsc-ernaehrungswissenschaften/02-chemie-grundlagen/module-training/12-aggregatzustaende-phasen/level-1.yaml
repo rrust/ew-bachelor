@@ -1,0 +1,95 @@
+# Kapitel 12: Aggregatzustände & Phasenübergänge
+# Level 1: Grundlagen
+
+topic: 'Aggregatzustände & Phasenübergänge'
+level: 1
+questions:
+  - question: 'Was sind die drei klassischen Aggregatzustände?'
+    options:
+      - 'Flüssig, gasförmig, ionisch'
+      - 'Fest, flüssig, gasförmig'
+      - 'Kristallin, amorph, plasma'
+      - 'Solid, liquid, vapor'
+      - 'Nur fest und flüssig'
+    correct: [1]
+
+  - question: 'Was passiert beim Schmelzen?'
+    options:
+      - 'Ein Feststoff wird gasförmig'
+      - 'Ein Feststoff wird flüssig'
+      - 'Eine Flüssigkeit wird fest'
+      - 'Ein Gas wird flüssig'
+      - 'Ein Gas wird fest'
+    correct: [1]
+
+  - question: 'Was ist Sublimation?'
+    options:
+      - 'Fest direkt zu Gas ohne flüssige Phase'
+      - 'Flüssig zu Gas'
+      - 'Gas zu Flüssig'
+      - 'Flüssig zu Fest'
+      - 'Gas zu Fest'
+    correct: [0]
+
+  - question: 'Was ist der Siedepunkt?'
+    options:
+      - 'Die Temperatur, bei der ein Stoff schmilzt'
+      - 'Die Temperatur, bei der der Dampfdruck gleich dem Außendruck ist'
+      - 'Die Temperatur, bei der ein Stoff fest wird'
+      - 'Die niedrigste mögliche Temperatur'
+      - 'Die Raumtemperatur'
+    correct: [1]
+
+  - question: 'Was ist Verdampfung?'
+    options:
+      - 'Der Übergang von fest zu flüssig'
+      - 'Der Übergang von flüssig zu gasförmig'
+      - 'Der Übergang von gas zu flüssig'
+      - 'Der Übergang von fest zu gas'
+      - 'Eine chemische Reaktion'
+    correct: [1]
+
+  - question: 'Was ist Kondensation?'
+    options:
+      - 'Gas wird zu Flüssigkeit'
+      - 'Flüssigkeit wird zu Gas'
+      - 'Fest wird zu Flüssigkeit'
+      - 'Flüssigkeit wird zu Fest'
+      - 'Fest wird zu Gas'
+    correct: [0]
+
+  - question: 'Was ist ein Phasendiagramm?'
+    options:
+      - 'Ein Diagramm der chemischen Struktur'
+      - 'Ein Diagramm, das zeigt welche Phase bei P und T stabil ist'
+      - 'Ein Diagramm der Elektronenkonfiguration'
+      - 'Ein Bindungsdiagramm'
+      - 'Ein Reaktionsschema'
+    correct: [1]
+
+  - question: 'Was ist der Tripelpunkt?'
+    options:
+      - 'Der Punkt, an dem alle drei Phasen koexistieren'
+      - 'Der höchste Siedepunkt'
+      - 'Der tiefste Schmelzpunkt'
+      - 'Die normale Siedetemperatur'
+      - 'Der Gefrierpunkt'
+    correct: [0]
+
+  - question: 'Was versteht man unter Dampfdruck?'
+    options:
+      - 'Der Druck einer Flüssigkeit'
+      - 'Der Druck des Dampfes im Gleichgewicht mit seiner Flüssigkeit'
+      - 'Der atmosphärische Druck'
+      - 'Der Druck im Vakuum'
+      - 'Der Druck bei 0°C'
+    correct: [1]
+
+  - question: 'Was ist der kritische Punkt?'
+    options:
+      - 'Der Gefrierpunkt'
+      - 'Der Punkt, oberhalb dessen keine Verflüssigung durch Druck möglich ist'
+      - 'Der normale Siedepunkt'
+      - 'Der Schmelzpunkt'
+      - 'Der Tripelpunkt'
+    correct: [1]

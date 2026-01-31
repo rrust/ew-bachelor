@@ -1,0 +1,95 @@
+# Kapitel 8: Ionische Bindung & Lewis-Strukturen
+# Level 4: Analyse
+
+topic: 'Ionische Bindung & Lewis-Strukturen'
+level: 4
+questions:
+  - question: 'Welche Verbindung hat die höhere Gitterenergie: NaCl oder MgO?'
+    options:
+      - 'MgO wegen höherer Ionenladungen'
+      - 'NaCl wegen größerer Ionen'
+      - 'MgO: 2+ und 2- vs. NaCl: 1+ und 1-'
+      - 'Die Gitterenergie ist proportional zu q₁ × q₂'
+      - 'Kleinere Ionenradien erhöhen die Gitterenergie zusätzlich'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Welche Lewis-Struktur hat Ozon (O₃)?'
+    options:
+      - 'Alle O sind äquivalent'
+      - 'Das mittlere O hat eine Doppel- und eine Einfachbindung'
+      - 'Es gibt Resonanzstrukturen'
+      - 'Die tatsächliche Struktur ist ein Hybrid'
+      - 'Alle Bindungen sind gleich lang (1,5-fach)'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur formalen Ladung in Lewis-Strukturen sind korrekt?'
+    options:
+      - 'Formale Ladung = Valenzelektronen - (freie e⁻ + ½ bindende e⁻)'
+      - 'Die Summe aller formalen Ladungen = Gesamtladung des Moleküls'
+      - 'Strukturen mit niedrigeren formalen Ladungen sind stabiler'
+      - 'Negative formale Ladung bevorzugt elektronegativere Atome'
+      - 'Formale Ladung ist die tatsächliche Ladung'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum ist SF₆ stabil trotz 12 Valenzelektronen am Schwefel?'
+    options:
+      - 'Schwefel kann d-Orbitale nutzen (Hypervalenz)'
+      - 'Schwefel ist in der 3. Periode'
+      - 'Die Oktettregel gilt nur streng für die 2. Periode'
+      - 'SF₆ ist oktaedrisch'
+      - 'Jede S-F-Bindung ist eine Einfachbindung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Resonanzstrukturen hat das Carbonat-Ion (CO₃²⁻)?'
+    options:
+      - 'Es gibt drei äquivalente Resonanzstrukturen'
+      - 'Eine C=O Doppelbindung und zwei C-O Einfachbindungen'
+      - 'Alle C-O Bindungen sind in Realität gleich lang'
+      - 'Die Bindungsordnung ist 1,33'
+      - 'Die negative Ladung ist delokalisiert'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Ionenverbindung hat den höchsten Schmelzpunkt?'
+    options:
+      - 'NaCl (801°C)'
+      - 'MgO (2852°C)'
+      - 'CaO (2572°C)'
+      - 'KCl (770°C)'
+      - 'MgO hat die höchste Gitterenergie'
+    correct: [1, 4]
+
+  - question: 'Welche Lewis-Struktur hat Phosphorsäure (H₃PO₄)?'
+    options:
+      - 'P ist das Zentralatom'
+      - 'P hat eine Doppelbindung zu einem O'
+      - 'P hat drei OH-Gruppen'
+      - 'Phosphor hat mehr als 8 Valenzelektronen'
+      - 'P ist hypervalent mit 10 Elektronen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist BF₃ elektronenar (nur 6 e⁻ am Bor)?'
+    options:
+      - 'Bor hat nur 3 Valenzelektronen'
+      - 'Jedes F trägt ein Elektron zur Bindung bei'
+      - 'BF₃ ist eine Lewis-Säure (Elektronenpaarakzeptor)'
+      - 'Es kann ein Elektronenpaar aufnehmen (z.B. von NH₃)'
+      - 'Die Oktettregel wird hier verletzt'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zum Born-Haber-Kreisprozess sind korrekt?'
+    options:
+      - 'Er ermöglicht die Berechnung der Gitterenergie'
+      - 'Er nutzt den Satz von Hess'
+      - 'Enthält Ionisierungs- und Elektronenaffinitäts-Schritte'
+      - 'Sublimations- und Dissoziationsenergien sind enthalten'
+      - 'Die Summe aller Energien im Kreislauf ist null'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Lewis-Struktur hat das Sulfat-Ion (SO₄²⁻)?'
+    options:
+      - 'S ist das Zentralatom mit 4 O-Atomen'
+      - 'Resonanzstrukturen mit verschiedenen Doppelbindungen'
+      - 'Die Gesamtladung ist -2'
+      - 'Schwefel ist hypervalent'
+      - 'Die S-O Bindungsordnung ist im Durchschnitt 1,5'
+    correct: [0, 1, 2, 3, 4]

@@ -109,6 +109,9 @@
       "colligative-calculation-blueprint",
       "concentration-calculation-blueprint",
       "electrochemistry-calculation-blueprint",
+      "electron-configuration-blueprint",
+      "empirical-formula-calculation-blueprint",
+      "lewis-structure-blueprint",
       "mol-calculation-blueprint",
       "stoichiometry-calculation-blueprint",
       "thermodynamics-calculation-blueprint"

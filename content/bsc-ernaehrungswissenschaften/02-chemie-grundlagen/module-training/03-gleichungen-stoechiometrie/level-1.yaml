@@ -1,0 +1,96 @@
+# Kapitel 3: Chemische Gleichungen & Stöchiometrie
+# Level 1: Grundlagen (Wissen)
+# 10 Fragen, jeweils 1 korrekte Antwort
+
+topic: 'Chemische Gleichungen & Stöchiometrie'
+level: 1
+questions:
+  - question: 'Was steht bei einer Reaktionsgleichung auf der linken Seite?'
+    options:
+      - 'Die Produkte der Reaktion'
+      - 'Die Edukte der Reaktion'
+      - 'Die Katalysatoren'
+      - 'Die Reaktionsbedingungen'
+      - 'Die Energiebilanz'
+    correct: [1]
+
+  - question: 'Was bedeutet der Pfeil in einer Reaktionsgleichung?'
+    options:
+      - 'Die Reaktion ist reversibel'
+      - 'Edukte werden zu Produkten umgewandelt'
+      - 'Die Reaktion benötigt Wärme'
+      - 'Die Masse nimmt zu'
+      - 'Die Reaktion ist langsam'
+    correct: [1]
+
+  - question: 'Was sind Koeffizienten in einer Reaktionsgleichung?'
+    options:
+      - 'Die Indices in den chemischen Formeln'
+      - 'Die Zahlen vor den Formeln'
+      - 'Die Ladungen der Ionen'
+      - 'Die Oxidationszahlen'
+      - 'Die molaren Massen'
+    correct: [1]
+
+  - question: 'Welches Gesetz liegt dem Ausgleichen von Gleichungen zugrunde?'
+    options:
+      - 'Das Gesetz der konstanten Proportionen'
+      - 'Das Gesetz der Massenerhaltung'
+      - 'Das ideale Gasgesetz'
+      - 'Das Gesetz der multiplen Proportionen'
+      - 'Das Massenwirkungsgesetz'
+    correct: [1]
+
+  - question: 'Was ist der limitierende Reaktand?'
+    options:
+      - 'Der Stoff, der im Überschuss vorliegt'
+      - 'Der Stoff, der zuerst verbraucht wird'
+      - 'Der Stoff mit der größten Masse'
+      - 'Der Katalysator der Reaktion'
+      - 'Das Hauptprodukt der Reaktion'
+    correct: [1]
+
+  - question: 'Was bedeutet "stöchiometrisch"?'
+    options:
+      - 'Die Reaktion läuft schnell ab'
+      - 'Die Mengenverhältnisse entsprechen der Gleichung'
+      - 'Die Reaktion ist exotherm'
+      - 'Die Reaktion ist reversibel'
+      - 'Die Produkte sind gasförmig'
+    correct: [1]
+
+  - question: 'Wie viele Atome müssen links und rechts der Gleichung sein?'
+    options:
+      - 'Links mehr als rechts'
+      - 'Rechts mehr als links'
+      - 'Gleich viele von jeder Sorte'
+      - 'Die Summe muss 100 sein'
+      - 'Es gibt keine Regel dafür'
+    correct: [2]
+
+  - question: 'Was zeigen die Koeffizienten einer ausgeglichenen Gleichung?'
+    options:
+      - 'Die molaren Massen der Stoffe'
+      - 'Die Stoffmengenverhältnisse der Reaktion'
+      - 'Die Reaktionsgeschwindigkeit'
+      - 'Die Siedepunkte der Stoffe'
+      - 'Die Aggregatzustände'
+    correct: [1]
+
+  - question: 'Was bedeutet das Symbol (aq) hinter einer Formel?'
+    options:
+      - 'Der Stoff ist fest'
+      - 'Der Stoff ist gasförmig'
+      - 'Der Stoff ist in Wasser gelöst'
+      - 'Der Stoff ist flüssig'
+      - 'Der Stoff ist ein Katalysator'
+    correct: [2]
+
+  - question: 'Was ist die theoretische Ausbeute?'
+    options:
+      - 'Die tatsächlich erhaltene Produktmenge'
+      - 'Die maximal mögliche Produktmenge laut Stöchiometrie'
+      - 'Die Masse des limitierenden Reaktanden'
+      - 'Die Summe aller Eduktemassen'
+      - 'Der Prozentsatz der Reaktion'
+    correct: [1]

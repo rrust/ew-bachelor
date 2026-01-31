@@ -1,0 +1,95 @@
+# Kapitel 7: Bohr-Modell & Elektronenkonfigurationen
+# Level 3: Anwendung
+
+topic: 'Bohr-Modell & Elektronenkonfigurationen'
+level: 3
+questions:
+  - question: 'Welche Elektronenkonfiguration hat Sauerstoff (Z = 8)?'
+    options:
+      - '1s² 2s² 2p²'
+      - '1s² 2s² 2p⁴'
+      - '1s² 2s² 2p⁶'
+      - '1s² 2p⁶'
+      - '2s² 2p⁴'
+    correct: [1]
+
+  - question: 'Wie viele Valenzelektronen hat Chlor (Z = 17)?'
+    options:
+      - '1'
+      - '5'
+      - '7'
+      - '8'
+      - '17'
+    correct: [2]
+
+  - question: 'Welche Elektronenkonfiguration hat Kalium (Z = 19)?'
+    options:
+      - '[Ar] 4s¹'
+      - '[Ar] 3d¹'
+      - '[Ne] 3s² 3p⁶ 4s¹'
+      - '1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹'
+      - 'Alle außer [Ar] 3d¹'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Welches Element hat die Konfiguration [He] 2s² 2p¹?'
+    options:
+      - 'Beryllium'
+      - 'Bor'
+      - 'Kohlenstoff'
+      - 'Stickstoff'
+      - 'Lithium'
+    correct: [1]
+
+  - question: 'Wie viele ungepaarte Elektronen hat Stickstoff (Z = 7)?'
+    options:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    correct: [2]
+
+  - question: 'Welche Elektronenkonfiguration hat Fe²⁺ (Z = 26)?'
+    options:
+      - '[Ar] 3d⁶'
+      - '[Ar] 3d⁴ 4s²'
+      - '[Ar] 3d⁵ 4s¹'
+      - '[Ar] 4s² 3d⁴'
+      - '[Ar] 3d⁸'
+    correct: [0]
+
+  - question: 'In welchem Block des Periodensystems steht Schwefel?'
+    options:
+      - 's-Block'
+      - 'p-Block'
+      - 'd-Block'
+      - 'f-Block'
+      - 'Übergangsmetalle'
+    correct: [1]
+
+  - question: 'Welche Konfiguration hat das Cl⁻-Ion?'
+    options:
+      - '[Ne] 3s² 3p⁵'
+      - '[Ne] 3s² 3p⁶'
+      - '[Ar]'
+      - 'Isoelektronisch mit Argon'
+      - '18 Elektronen insgesamt'
+    correct: [1, 2, 3, 4]
+
+  - question: 'Wie viele Elektronen passen maximal in die n = 3 Schale?'
+    options:
+      - '8'
+      - '18'
+      - '32'
+      - '2n² = 2 × 9 = 18'
+      - 's(2) + p(6) + d(10) = 18'
+    correct: [1, 3, 4]
+
+  - question: 'Welches Element hat 3 Valenzelektronen und steht in Periode 3?'
+    options:
+      - 'Bor'
+      - 'Aluminium'
+      - 'Gallium'
+      - '[Ne] 3s² 3p¹'
+      - 'Gruppe 13'
+    correct: [1, 3, 4]

@@ -1,10 +1,16 @@
 # Module Training Development
 
-Anleitung zur Erstellung von Modul-Training-Fragen für den Casual Training Mode.
+Anleitung zur Erstellung von Modul-Training-Inhalten für den Casual Training Mode.
 
 ## Übersicht
 
 Das Modul-Training bietet level-basiertes Üben unabhängig von Vorlesungen. Studierende können Themengebiete in 5 Schwierigkeitsstufen trainieren.
+
+### Inhaltstypen
+
+1. **Multiple-Choice-Fragen** – Automatisch bewertete Wissensfragen
+2. **Praktische Übungen** – Berechnungsaufgaben mit Selbstkontrolle
+3. **Blueprints** – Lösungsweg-Templates als Achievement
 
 ### Struktur
 
@@ -17,7 +23,8 @@ content/{studyId}/{moduleId}/module-training/
 │   ├── level-2.yaml                        # 10 Verständnis-Fragen
 │   ├── level-3.yaml                        # 10 Anwendungs-Fragen
 │   ├── level-4.yaml                        # 10 Analyse-Fragen
-│   └── level-5.yaml                        # 10 Synthese-Fragen
+│   ├── level-5.yaml                        # 10 Synthese-Fragen
+│   └── exercises.yaml                      # Praktische Übungen (optional)
 ├── 02-kapitel-name/
 │   └── ...
 └── ...
@@ -29,10 +36,12 @@ content/{studyId}/{moduleId}/module-training/
 | -------------------- | -------------- |
 | Kapitel              | 15             |
 | Level pro Kapitel    | 5              |
-| Fragen pro Level     | 10             |
-| **Gesamt pro Modul** | **750 Fragen** |
+| MC-Fragen pro Level  | 10             |
+| **MC-Fragen gesamt** | **750**        |
+| Praktische Übungen   | bis zu 10/Kap. |
+| Blueprints           | ~10            |
 
-## Workflow
+## Workflow: MC-Fragen
 
 ```mermaid
 flowchart TD
@@ -67,7 +76,62 @@ flowchart TD
     style Abschluss fill:#e8f5e9
 ```
 
-## YAML-Format
+## Workflow: Praktische Übungen
+
+```mermaid
+flowchart TD
+    A[Übung wird angezeigt] --> B[User löst auf Papier]
+    
+    B --> C{Braucht Hilfe?}
+    C -->|Ja| D[Hint 1: Stichwort]
+    D --> E{Weiter?}
+    E -->|Ja| F[Hint 2: Lösungsansatz]
+    F --> G{Weiter?}
+    G -->|Ja| H[Hint 3: Vollständiger Lösungsweg]
+    
+    C -->|Nein| I[Lösungsschritte kontrollieren]
+    H --> I
+    
+    I --> J[Schritt 1: Beschreibung aufdecken]
+    J --> K[Schritt 1: Lösung aufdecken]
+    K --> L[Schritt 2: Beschreibung aufdecken]
+    L --> M[...]
+    M --> N[Alle Schritte aufgedeckt]
+    
+    N --> O[Gesamter Lösungsweg sichtbar]
+    O --> P{Selbstkontrolle}
+    P -->|Richtig| Q[✅ Als gelöst markieren]
+    P -->|Falsch| R[❌ Wird wiederholt]
+    
+    Q --> S[Blueprint-Check]
+    R --> S
+    S --> T{Erste Übung dieser Art?}
+    T -->|Ja| U[🎉 Blueprint freigeschaltet!]
+    T -->|Nein| V[Weiter zum nächsten Item]
+    U --> V
+```
+
+### Kapitel mit Übungen
+
+| Kapitel | Name                        | Übungen | Begründung                   |
+| ------- | --------------------------- | ------- | ---------------------------- |
+| 01      | Aufbau Atome & PSE          | ❌       | Faktenwissen, keine Rechnung |
+| 02      | Elemente, Ionen & Mol       | ✅ 10    | Mol-Berechnungen             |
+| 03      | Gleichungen & Stöchiometrie | ✅ 5     | Kernthema für Berechnungen   |
+| 04      | Reaktionen & Formeln        | ✅ 10    | Empirische Formeln, Redox    |
+| 05      | Lösungen & Konzentrationen  | ✅ 10    | Verdünnungsrechnungen        |
+| 06      | Säuren & Basen (Grundlagen) | ❌       | Einfache Konzepte            |
+| 07      | Bohr & Elektronenkonfig.    | ❌       | Konfigurationen schreiben    |
+| 08      | Ionenbindung & Lewis        | ❌       | Lewis-Strukturen             |
+| 09      | Polarität & VSEPR           | ❌       | Geometrie bestimmen          |
+| 10      | Hybridisierung & MO         | ❌       | Bindungsordnung              |
+| 11      | Thermodynamik & Enthalpie   | ✅ 10    | Hess, Enthalpie-Berechnungen |
+| 12      | Aggregatzustände & Phasen   | ❌       | Phasendiagramme              |
+| 13      | Kolligative Eigenschaften   | ✅ 10    | Berechnungen ΔT, Osmose      |
+| 14      | Säuren & Basen (Fortg.)     | ✅ 10    | pH, pKs, Puffer              |
+| 15      | Elektrochemie & Redox       | ✅ 10    | Nernst, Faraday              |
+
+## YAML-Format: MC-Fragen
 
 ### Level 1-5 Datei
 
@@ -108,7 +172,82 @@ questions:
     correct: [0, 1, 4]  # A, B, E sind korrekt
 ```
 
-## Level-Definitionen
+## YAML-Format: Praktische Übungen
+
+```yaml
+# exercises.yaml
+topic: 'Chemische Gleichungen & Stöchiometrie'
+blueprintType: 'stoichiometry-calculation'
+exercises:
+  - id: 'ex-03-01'
+    title: 'Verbrennung von Kohlenstoff'
+    level: 3
+    
+    task: |
+      Bei der vollständigen Verbrennung von 12,0 g Kohlenstoff
+      mit Sauerstoff entsteht Kohlendioxid.
+      
+      Berechne:
+      a) Die Stoffmenge an Kohlenstoff
+      b) Die benötigte Masse an Sauerstoff
+      c) Die entstehende Masse an CO₂
+    
+    hints:
+      keyword: 'Stoffmengenverhältnis aus Reaktionsgleichung'
+      approach: |
+        1. Reaktionsgleichung aufstellen
+        2. Stoffmengen über n = m/M berechnen
+        3. Stöchiometrische Verhältnisse anwenden
+      overview: |
+        - Reaktionsgleichung: C + O₂ → CO₂
+        - n(C) = 1,0 mol
+        - n(O₂) = 1,0 mol → m(O₂) = 32,0 g
+    
+    steps:
+      - description: 'Reaktionsgleichung aufstellen'
+        solution: 'C + O₂ → CO₂'
+      - description: 'Stoffmenge von Kohlenstoff berechnen'
+        solution: 'n(C) = 12,0 g / 12,0 g/mol = 1,0 mol'
+      - description: 'Masse CO₂ berechnen'
+        solution: 'm(CO₂) = 1,0 mol × 44,0 g/mol = 44,0 g'
+    
+    finalAnswer: |
+      a) n(C) = 1,0 mol
+      b) m(O₂) = 32,0 g
+      c) m(CO₂) = 44,0 g
+    
+    relatedBlueprints:
+      - 'stoichiometry-calculation-blueprint'
+```
+
+### Übungs-Level-Definitionen
+
+| Level | Komplexität   | Schritte | Beispiel                             |
+| ----- | ------------- | -------- | ------------------------------------ |
+| 1     | Grundlegend   | 2-3      | Einfache n=m/M Berechnung            |
+| 2     | Einfach       | 3-4      | Mol-Berechnung mit Umrechnung        |
+| 3     | Mittel        | 4-5      | Stöchiometrie mit Reaktionsgleichung |
+| 4     | Komplex       | 5-7      | Mehrstufige Reaktion, Ausbeute       |
+| 5     | Anspruchsvoll | 6-8+     | Transfer, unbekannte Kontexte        |
+
+## Blueprints
+
+Blueprints sind detaillierte Anleitungen für bestimmte Aufgabentypen:
+
+| Blueprint-ID                              | Titel                   | Freigeschaltet durch      |
+| ----------------------------------------- | ----------------------- | ------------------------- |
+| `mol-calculation-blueprint`               | Mol-Berechnungen        | Erste Mol-Übung gelöst    |
+| `stoichiometry-calculation-blueprint`     | Stöchiometrie           | Erste Stöchiometrie-Übung |
+| `concentration-calculation-blueprint`     | Konzentrationen         | Erste Verdünnungs-Übung   |
+| `empirical-formula-calculation-blueprint` | Empirische Formeln      | Erste Formel-Übung        |
+| `thermodynamics-calculation-blueprint`    | Thermodynamik           | Erste Hess-Übung          |
+| `colligative-calculation-blueprint`       | Kolligative Eig.        | Erste Osmose-Übung        |
+| `acid-base-calculation-blueprint`         | Säure-Base              | Erste pH-Übung            |
+| `electrochemistry-calculation-blueprint`  | Elektrochemie           | Erste Nernst-Übung        |
+| `lewis-structure-blueprint`               | Lewis-Strukturen        | Erste Lewis-Übung         |
+| `electron-configuration-blueprint`        | Elektronenkonfiguration | Erste Konfig-Übung        |
+
+## Level-Definitionen (MC)
 
 | Level | Typ         | Kognitive Stufe            | Korrekte Antworten |
 | ----- | ----------- | -------------------------- | ------------------ |
@@ -190,6 +329,28 @@ node scripts/generate-training-bundles.js bsc-ernaehrungswissenschaften
 [ ] training-bundle.json aktualisiert
 ```
 
+### Praktische Übungen
+
+```text
+[ ] Alle Pflichtfelder (id, title, level, task, hints, steps, finalAnswer)
+[ ] Schritte sind logisch aufgebaut
+[ ] Hints bauen aufeinander auf (keyword → approach → overview)
+[ ] Realistische Werte und Größenordnungen
+[ ] blueprintType verknüpft passenden Blueprint
+[ ] generate-training-bundles.js erfolgreich
+[ ] generate-test-progress.js ausgeführt
+```
+
+## Trainings-Modus-Einstellungen
+
+Nutzer können wählen zwischen:
+
+- **Nur MC-Fragen** – Klassisches Quiz-Format
+- **Nur Übungen** – Fokus auf Berechnungen
+- **Beides** (Standard) – Gemischtes Training
+
+Die Einstellung wird in localStorage persistiert.
+
 ## Kapitel-Definitionen
 
 Die Kapitel-Definitionen befinden sich in:
@@ -221,4 +382,5 @@ Generiere Modul-Training-Fragen für Modul 2 (Chemie), Kapitel 1, Level 1
 
 - [CONTENT_DEVELOPMENT.md](CONTENT_DEVELOPMENT.md) – Allgemeine Content-Entwicklung
 - [CONTENT_TEMPLATES.md](CONTENT_TEMPLATES.md) – YAML-Templates
+- [ACHIEVEMENT_SYSTEM.md](ACHIEVEMENT_SYSTEM.md) – Achievement-System inkl. Blueprints
 - [.github/copilot/module-training.md](../.github/copilot/module-training.md) – Copilot-Instruktionen

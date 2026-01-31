@@ -1,0 +1,95 @@
+# Kapitel 5: Lösungen & Konzentrationen
+# Level 2: Verständnis
+
+topic: 'Lösungen & Konzentrationen'
+level: 2
+questions:
+  - question: 'Warum bleibt bei der Verdünnung die Stoffmenge konstant?'
+    options:
+      - 'Nur Lösungsmittel wird hinzugefügt'
+      - 'Die Anzahl der gelösten Teilchen ändert sich nicht'
+      - 'c₁V₁ = c₂V₂ beschreibt diesen Zusammenhang'
+      - 'Die Masse des Stoffes bleibt gleich'
+      - 'Die Konzentration nimmt ab'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie beeinflusst die Temperatur die Löslichkeit von Feststoffen?'
+    options:
+      - 'Höhere Temperatur erhöht meist die Löslichkeit'
+      - 'Die Löslichkeit ist temperaturunabhängig'
+      - 'Das Lösen ist oft endotherm'
+      - 'Molekülbewegung wird schneller'
+      - 'Es gibt Ausnahmen (z.B. Ce₂(SO₄)₃)'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Was unterscheidet Molarität von Molalität?'
+    options:
+      - 'Molarität: mol/L Lösung'
+      - 'Molalität: mol/kg Lösungsmittel'
+      - 'Molarität ist temperaturabhängig'
+      - 'Molalität ist temperaturunabhängig'
+      - 'Beide haben die gleiche Einheit'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum ist die Verdünnungsformel c₁V₁ = c₂V₂ gültig?'
+    options:
+      - 'Die Stoffmenge vor und nach der Verdünnung ist gleich'
+      - 'n = c × V bleibt konstant'
+      - 'Nur das Volumen ändert sich'
+      - 'Die Masse des Lösungsmittels bleibt gleich'
+      - 'Die Konzentration ist umgekehrt proportional zum Volumen'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was passiert bei der Kristallisation aus einer übersättigten Lösung?'
+    options:
+      - 'Überschüssiger gelöster Stoff fällt aus'
+      - 'Es bilden sich Kristalle'
+      - 'Die Lösung wird gesättigt'
+      - 'Energie wird freigesetzt'
+      - 'Die Löslichkeit steigt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Faktoren beeinflussen die Löslichkeit von Gasen in Wasser?'
+    options:
+      - 'Höhere Temperatur verringert die Löslichkeit'
+      - 'Höherer Druck erhöht die Löslichkeit'
+      - 'Henry-Gesetz beschreibt den Druck-Effekt'
+      - 'Polarität des Gases ist irrelevant'
+      - 'Salze in Lösung verringern die Gaslöslichkeit'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zur Massenkonzentration (ρ) sind korrekt?'
+    options:
+      - 'ρ = m/V (Masse pro Volumen)'
+      - 'Einheit ist g/L'
+      - 'Unterscheidet sich von der Dichte'
+      - 'Ist identisch mit der Molarität'
+      - 'Wird in der Medizin oft verwendet'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Warum ist Wasser ein gutes Lösungsmittel für Salze?'
+    options:
+      - 'Wasser ist polar'
+      - 'Wassermoleküle können Ionen hydratisieren'
+      - 'Die Dielektrizitätskonstante ist hoch'
+      - 'Wasser ist unpolar'
+      - 'Ionengitter werden durch Hydratation aufgelöst'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was bedeutet "gleiche Osmolarität"?'
+    options:
+      - 'Gleiche Teilchenzahl pro Volumen'
+      - 'Gleiche Masse pro Volumen'
+      - 'Kein osmotischer Druckunterschied'
+      - 'Die Lösungen sind isotonisch'
+      - 'Unterschiedliche Stoffe können gleiche Osmolarität haben'
+    correct: [0, 2, 3, 4]
+
+  - question: 'Wie verhält sich der Stoffmengenbruch bei Verdünnung?'
+    options:
+      - 'Er nimmt ab'
+      - 'Er bleibt konstant'
+      - 'x = n(Stoff) / n(gesamt)'
+      - 'Die Summe aller Stoffmengenbrüche ist 1'
+      - 'Er ist dimensionslos'
+    correct: [0, 2, 3, 4]

@@ -1,0 +1,95 @@
+# Kapitel 14: Säuren & Basen (Fortgeschritten)
+# Level 5: Synthese/Transfer
+
+topic: 'Säuren & Basen (Fortgeschritten)'
+level: 5
+questions:
+  - question: 'Wie beeinflusst die Ernährung den Säure-Basen-Haushalt?'
+    options:
+      - 'Proteinreiche Kost produziert Säuren (Sulfat, Phosphat)'
+      - 'Obst/Gemüse liefern basische Äquivalente (Citrat → HCO₃⁻)'
+      - 'Die Niere kompensiert durch H⁺-Ausscheidung'
+      - 'Extreme Diäten können Azidose/Alkalose verursachen'
+      - 'PRAL-Wert (Potential Renal Acid Load) quantifiziert dies'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielen Puffer bei der Enzymkatalyse?'
+    options:
+      - 'Enzyme haben pH-Optima'
+      - 'pH beeinflusst Ionisation katalytischer Reste'
+      - 'Puffer stabilisieren den pH im Assay'
+      - 'HEPES, TRIS sind gängige biochemische Puffer'
+      - 'Der pH beeinflusst Substratbindung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt man die Wirkung von Antazida?'
+    options:
+      - 'Mg(OH)₂, Al(OH)₃ neutralisieren Magensäure'
+      - 'Sie erhöhen den pH im Magen'
+      - 'Linderung bei Sodbrennen und Reflux'
+      - 'CaCO₃ setzt zusätzlich CO₂ frei'
+      - 'Überdosierung kann Alkalose verursachen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat der pH für die Lebensmittelkonservierung?'
+    options:
+      - 'Niedriger pH hemmt viele Mikroorganismen'
+      - 'Milchsäuregärung senkt pH (Sauerkraut, Joghurt)'
+      - 'Essigsäure in Marinaden und Pickles'
+      - 'pH < 4,6 verhindert Clostridium botulinum'
+      - 'Konservierung ohne Kühlung möglich'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie funktioniert die pH-Regulation in Mitochondrien?'
+    options:
+      - 'Protonengradient über innere Membran'
+      - 'Matrix pH ≈ 8, Intermembranraum pH ≈ 7'
+      - 'Gradient treibt ATP-Synthese an'
+      - 'Elektronentransportkette pumpt H⁺'
+      - 'Die chemiosmotische Kopplung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt der pH bei der Proteindenaturierung?'
+    options:
+      - 'Extreme pH-Werte ändern Ladungen der AS'
+      - 'Salzbrücken und H-Brücken werden gestört'
+      - 'Die 3D-Struktur geht verloren'
+      - 'Beispiel: Säuredenaturierung von Casein'
+      - 'Reversibel oder irreversibel je nach Protein'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung hat der pH für die Medikamentenwirkung?'
+    options:
+      - 'Viele Medikamente sind schwache Säuren oder Basen'
+      - 'Nur die ungeladene Form durchdringt Membranen gut'
+      - 'Ion-Trapping in Kompartimenten mit anderem pH'
+      - 'Aspirin wird im sauren Magen besser absorbiert'
+      - 'pKs bestimmt Verteilung im Körper'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie beeinflusst der pH die Schwermetall-Toxizität?'
+    options:
+      - 'Saurer pH erhöht Schwermetall-Löslichkeit'
+      - 'Saurer Regen mobilisiert Al³⁺ aus Böden'
+      - 'Aluminium schädigt Wurzeln und Fische'
+      - 'Kalkung neutralisiert saure Böden'
+      - 'pH beeinflusst Speziation der Metalle'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt der pH bei der Kariesentstehung?'
+    options:
+      - 'Bakterien produzieren Säuren aus Zucker'
+      - 'Bei pH < 5,5 löst sich Zahnschmelz (Hydroxylapatit)'
+      - 'Speichel puffert und remineralisiert'
+      - 'Fluorid erhöht die Säureresistenz'
+      - 'Häufige Säureexposition schadet mehr als Menge'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Auswirkungen hat die Ozeanversauerung?'
+    options:
+      - 'CO₂-Absorption senkt den Ozean-pH'
+      - 'Von pH 8,2 auf etwa 8,1 seit 1850'
+      - 'CaCO₃-Bildung für Korallen und Muscheln erschwert'
+      - 'Carbonat-Sättigung sinkt'
+      - 'Prognose: weitere 0,3-0,4 pH-Einheiten bis 2100'
+    correct: [0, 1, 2, 3, 4]

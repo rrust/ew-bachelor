@@ -1,0 +1,95 @@
+# Kapitel 9: Elektronegativität, Polarität & VSEPR
+# Level 1: Grundlagen
+
+topic: 'Elektronegativität, Polarität & VSEPR'
+level: 1
+questions:
+  - question: 'Was ist Elektronegativität?'
+    options:
+      - 'Die Anzahl der Elektronen eines Atoms'
+      - 'Die Fähigkeit eines Atoms, Bindungselektronen anzuziehen'
+      - 'Die Masse des Atoms'
+      - 'Die Anzahl der Protonen'
+      - 'Die Ionisierungsenergie'
+    correct: [1]
+
+  - question: 'Welches Element hat die höchste Elektronegativität?'
+    options:
+      - 'Sauerstoff'
+      - 'Chlor'
+      - 'Fluor'
+      - 'Stickstoff'
+      - 'Kohlenstoff'
+    correct: [2]
+
+  - question: 'Was ist eine polare Bindung?'
+    options:
+      - 'Eine Bindung zwischen gleichen Atomen'
+      - 'Eine Bindung mit ungleicher Elektronenverteilung'
+      - 'Eine Ionenbindung'
+      - 'Eine metallische Bindung'
+      - 'Eine Wasserstoffbrückenbindung'
+    correct: [1]
+
+  - question: 'Wofür steht VSEPR?'
+    options:
+      - 'Valenzelektronenpaar-Abstoßungsmodell'
+      - 'Very Simple Electron Pair Reaction'
+      - 'Variable Structure Electron Pair Rule'
+      - 'Valence Shell Electron Pair Repulsion'
+      - 'Volume of Shell Electron Pairs'
+    correct: [0, 3]
+
+  - question: 'Was bestimmt die Molekülgeometrie nach VSEPR?'
+    options:
+      - 'Die Masse der Atome'
+      - 'Die Abstoßung zwischen Elektronenpaaren'
+      - 'Die Farbe des Moleküls'
+      - 'Die Temperatur'
+      - 'Der Druck'
+    correct: [1]
+
+  - question: 'Welche Form hat ein Molekül mit 4 Bindungspaaren und 0 freien Paaren?'
+    options:
+      - 'Linear'
+      - 'Gewinkelt'
+      - 'Tetraedrisch'
+      - 'Trigonal-planar'
+      - 'Oktaedrisch'
+    correct: [2]
+
+  - question: 'Was ist ein Dipolmoment?'
+    options:
+      - 'Die Masse des Moleküls'
+      - 'Ein Maß für die Ladungstrennung im Molekül'
+      - 'Die Bindungsenergie'
+      - 'Die Reaktionsgeschwindigkeit'
+      - 'Die Siedetemperatur'
+    correct: [1]
+
+  - question: 'Welche Form hat CO₂?'
+    options:
+      - 'Gewinkelt'
+      - 'Linear'
+      - 'Tetraedrisch'
+      - 'Trigonal-planar'
+      - 'Pyramidal'
+    correct: [1]
+
+  - question: 'Was bedeutet es, wenn ein Molekül "unpolar" ist?'
+    options:
+      - 'Es hat keine Bindungen'
+      - 'Die Ladungsverteilung ist symmetrisch'
+      - 'Es löst sich gut in Wasser'
+      - 'Es hat ionische Bindungen'
+      - 'Es ist ein Edelgas'
+    correct: [1]
+
+  - question: 'Welche Form hat Wasser (H₂O)?'
+    options:
+      - 'Linear'
+      - 'Gewinkelt'
+      - 'Tetraedrisch'
+      - 'Trigonal-planar'
+      - 'Pyramidal'
+    correct: [1]

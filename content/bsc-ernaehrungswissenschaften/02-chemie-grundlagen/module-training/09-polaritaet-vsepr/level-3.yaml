@@ -1,0 +1,95 @@
+# Kapitel 9: Elektronegativität, Polarität & VSEPR
+# Level 3: Anwendung
+
+topic: 'Elektronegativität, Polarität & VSEPR'
+level: 3
+questions:
+  - question: 'Welche Elektronegativitätsdifferenz hat H-Cl? (EN: H = 2,1; Cl = 3,0)'
+    options:
+      - '0,5'
+      - '0,9'
+      - '1,5'
+      - '2,1'
+      - '5,1'
+    correct: [1]
+
+  - question: 'Welche Molekülgeometrie hat CH₄?'
+    options:
+      - 'Linear'
+      - 'Trigonal-planar'
+      - 'Tetraedrisch'
+      - 'Gewinkelt'
+      - 'Oktaedrisch'
+    correct: [2]
+
+  - question: 'Welches Molekül ist polar?'
+    options:
+      - 'CO₂'
+      - 'H₂O'
+      - 'CH₄'
+      - 'CCl₄'
+      - 'N₂'
+    correct: [1]
+
+  - question: 'Welchen Bindungswinkel hat ein tetraedrisches Molekül?'
+    options:
+      - '90°'
+      - '104,5°'
+      - '109,5°'
+      - '120°'
+      - '180°'
+    correct: [2]
+
+  - question: 'Welche Form hat PCl₅?'
+    options:
+      - 'Tetraedrisch'
+      - 'Quadratisch-planar'
+      - 'Trigonal-bipyramidal'
+      - 'Oktaedrisch'
+      - 'Linear'
+    correct: [2]
+
+  - question: 'Welches Molekül hat das größte Dipolmoment?'
+    options:
+      - 'CO₂'
+      - 'H₂O'
+      - 'CH₄'
+      - 'CCl₄'
+      - 'HF'
+    correct: [4]
+
+  - question: 'Welche Form hat SO₂?'
+    options:
+      - 'Linear'
+      - 'Gewinkelt'
+      - 'Trigonal-planar'
+      - 'Tetraedrisch'
+      - 'T-förmig'
+    correct: [1]
+
+  - question: 'Welches Molekül ist unpolar?'
+    options:
+      - 'HCl'
+      - 'NH₃'
+      - 'BF₃'
+      - 'H₂O'
+      - 'CHCl₃'
+    correct: [2]
+
+  - question: 'Wie viele Elektronenpaare sind am Zentralatom von SF₆?'
+    options:
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+    correct: [2]
+
+  - question: 'Welche Form hat ClF₃?'
+    options:
+      - 'Trigonal-planar'
+      - 'Pyramidal'
+      - 'T-förmig'
+      - 'Linear'
+      - 'Tetraedrisch'
+    correct: [2]

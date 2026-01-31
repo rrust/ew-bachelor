@@ -1,0 +1,95 @@
+# Kapitel 11: Thermodynamik & Enthalpie
+# Level 5: Synthese/Transfer
+
+topic: 'Thermodynamik & Enthalpie'
+level: 5
+questions:
+  - question: 'Warum kann der Körper aus Fett mehr Energie gewinnen als aus Kohlenhydraten (pro Gramm)?'
+    options:
+      - 'Fette sind stärker reduziert (mehr C-H Bindungen)'
+      - 'Bei der Oxidation wird mehr Energie frei'
+      - 'Fette: ~37 kJ/g vs. Kohlenhydrate: ~17 kJ/g'
+      - 'Fette haben weniger Sauerstoff im Molekül'
+      - 'Die Verbrennungsenthalpie pro Gramm ist höher'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die Thermodynamik die Proteinfaltung?'
+    options:
+      - 'Die native Struktur hat niedrigste freie Energie'
+      - 'ΔG = ΔH - TΔS wird minimiert'
+      - 'Wasserstoffbrücken und hydrophobe Effekte tragen bei'
+      - 'Der Entropieverlust wird durch Enthalpie kompensiert'
+      - 'Falsch gefaltete Proteine haben höhere ΔG'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche thermodynamischen Konzepte erklären, warum Eisschmelze bei 0°C stattfindet?'
+    options:
+      - 'Bei 0°C ist ΔG = 0 (Gleichgewicht)'
+      - 'ΔH > 0 (endotherm) und ΔS > 0'
+      - 'Unter 0°C: ΔG > 0, Schmelzen nicht spontan'
+      - 'Über 0°C: ΔG < 0, Schmelzen spontan'
+      - 'T = ΔH/ΔS am Schmelzpunkt'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist die Haber-Bosch-Synthese bei niedrigen Temperaturen thermodynamisch günstiger?'
+    options:
+      - 'N₂ + 3H₂ ⇌ 2NH₃ ist exotherm (ΔH < 0)'
+      - 'Niedrige T verschiebt das Gleichgewicht zu NH₃'
+      - 'Aber: niedrige T = langsame Reaktion'
+      - 'Kompromiss: ~450°C mit Katalysator'
+      - 'Hoher Druck begünstigt die Produktseite'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt ΔH bei Brennstoffzellen?'
+    options:
+      - 'H₂ + ½O₂ → H₂O hat ΔH = -286 kJ/mol'
+      - 'Diese Enthalpie wird (teilweise) in elektrische Energie umgewandelt'
+      - 'Der Wirkungsgrad hängt von ΔG ab'
+      - 'ΔG ≈ -237 kJ/mol (nutzbare Energie)'
+      - 'Die Differenz geht als Wärme verloren'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist die Verbrennungsenthalpie von Ethanol geringer als die von Ethan (pro Mol)?'
+    options:
+      - 'Ethanol ist bereits teilweise oxidiert (hat ein O)'
+      - 'C₂H₅OH: ΔHc ≈ -1367 kJ/mol'
+      - 'C₂H₆: ΔHc ≈ -1560 kJ/mol'
+      - 'Weniger Oxidationsarbeit bei Ethanol nötig'
+      - 'C-O Bindungen sind schwächer als C-H'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Wie erklärt die Thermodynamik den Kalkkreislauf in der Natur?'
+    options:
+      - 'CaCO₃ → Caite + CO₂ ist endotherm (ΔH > 0)'
+      - 'CaO + H₂O → Ca(OH)₂ ist exotherm'
+      - 'Ca(OH)₂ + CO₂ → CaCO₃ + H₂O'
+      - 'Der Gesamtprozess ist ein Kreislauf'
+      - 'Energie aus Verbrennung treibt die Zersetzung'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zu Wärmepaketen (exotherme Kristallisation) sind korrekt?'
+    options:
+      - 'Übersättigte Na-Acetat-Lösung kristallisiert exotherm'
+      - 'Die Kristallisation setzt Wärme frei'
+      - 'ΔH der Auflösung ist endotherm'
+      - 'Der umgekehrte Prozess (Kristallisation) ist exotherm'
+      - 'Das Prinzip nutzt latente Wärme'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist die Atmungskette so effizient?'
+    options:
+      - 'Die Oxidation erfolgt in kleinen Schritten'
+      - 'ΔG wird schrittweise genutzt (nicht als Wärme verloren)'
+      - 'ATP-Synthese koppelt an die Elektronentransport'
+      - 'Der Wirkungsgrad beträgt etwa 40%'
+      - 'Direkte Verbrennung würde nur Wärme erzeugen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche thermodynamischen Prinzipien erklären endergone gekoppelte Reaktionen?'
+    options:
+      - 'Eine exergone Reaktion treibt eine endergone an'
+      - 'ATP-Hydrolyse (ΔG < 0) koppelt mit ungünstigen Reaktionen'
+      - 'Die Summe der ΔG-Werte muss negativ sein'
+      - 'Enzyme ermöglichen die Kopplung'
+      - 'Beispiel: Phosphorylierung von Glucose'
+    correct: [0, 1, 2, 3, 4]

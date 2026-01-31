@@ -1,0 +1,95 @@
+# Kapitel 6: Säuren & Basen (Grundlagen)
+# Level 1: Grundlagen
+
+topic: 'Säuren & Basen (Grundlagen)'
+level: 1
+questions:
+  - question: 'Was ist eine Säure nach Arrhenius?'
+    options:
+      - 'Ein Stoff, der OH⁻-Ionen abgibt'
+      - 'Ein Stoff, der H⁺-Ionen in Wasser freisetzt'
+      - 'Ein Stoff mit pH > 7'
+      - 'Ein Elektronenpaar-Akzeptor'
+      - 'Ein Stoff ohne Ladung'
+    correct: [1]
+
+  - question: 'Was ist eine Base nach Arrhenius?'
+    options:
+      - 'Ein Stoff, der H⁺-Ionen abgibt'
+      - 'Ein Stoff, der OH⁻-Ionen in Wasser freisetzt'
+      - 'Ein Stoff mit pH < 7'
+      - 'Ein Elektronenpaar-Donor'
+      - 'Ein neutraler Stoff'
+    correct: [1]
+
+  - question: 'Was entsteht bei einer Neutralisation?'
+    options:
+      - 'Nur Wasser'
+      - 'Salz und Wasser'
+      - 'Nur ein Salz'
+      - 'Eine Säure'
+      - 'Eine Base'
+    correct: [1]
+
+  - question: 'Was ist eine starke Säure?'
+    options:
+      - 'Eine Säure mit hoher Konzentration'
+      - 'Eine Säure, die vollständig dissoziiert'
+      - 'Eine Säure mit niedrigem pH'
+      - 'Eine Säure mit vielen Atomen'
+      - 'Eine Säure, die langsam reagiert'
+    correct: [1]
+
+  - question: 'Welches ist eine starke Säure?'
+    options:
+      - 'Essigsäure (CH₃COOH)'
+      - 'Salzsäure (HCl)'
+      - 'Kohlensäure (H₂CO₃)'
+      - 'Phosphorsäure (H₃PO₄)'
+      - 'Blausäure (HCN)'
+    correct: [1]
+
+  - question: 'Was ist eine schwache Base?'
+    options:
+      - 'Eine Base mit niedriger Konzentration'
+      - 'Eine Base, die nur teilweise dissoziiert'
+      - 'Eine Base mit hohem pH'
+      - 'Eine verdünnte Lösung'
+      - 'Eine starke Säure'
+    correct: [1]
+
+  - question: 'Was ist das Produkt von H⁺ + OH⁻?'
+    options:
+      - 'H₂'
+      - 'O₂'
+      - 'H₂O'
+      - 'H₂O₂'
+      - 'HO'
+    correct: [2]
+
+  - question: 'Welchen pH-Wert hat eine neutrale Lösung bei 25°C?'
+    options:
+      - '0'
+      - '1'
+      - '7'
+      - '14'
+      - '10'
+    correct: [2]
+
+  - question: 'Was ist NaOH?'
+    options:
+      - 'Eine Säure'
+      - 'Eine starke Base'
+      - 'Ein Salz'
+      - 'Ein Puffer'
+      - 'Eine schwache Base'
+    correct: [1]
+
+  - question: 'Was ist das konjugierte Säure-Base-Paar zu HCl/Cl⁻?'
+    options:
+      - 'HCl ist die Säure, Cl⁻ die konjugierte Base'
+      - 'Cl⁻ ist die Säure, HCl die Base'
+      - 'Beide sind Säuren'
+      - 'Beide sind Basen'
+      - 'Es gibt kein Paar'
+    correct: [0]

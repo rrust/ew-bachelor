@@ -1,0 +1,95 @@
+# Kapitel 7: Bohr-Modell & Elektronenkonfigurationen
+# Level 2: Verständnis
+
+topic: 'Bohr-Modell & Elektronenkonfigurationen'
+level: 2
+questions:
+  - question: 'Warum hat die zweite Schale maximal 8 Elektronen?'
+    options:
+      - '2n² mit n=2 ergibt 8'
+      - 's-Orbital (2) + p-Orbitale (6) = 8'
+      - 'Die dritte Schale hat mehr Platz'
+      - 'Es gibt ein s- und drei p-Orbitale'
+      - 'Das ist die Oktettregel-Grundlage'
+    correct: [0, 1, 3, 4]
+
+  - question: 'Was besagt die Hundsche Regel?'
+    options:
+      - 'Orbitale gleicher Energie werden erst einzeln besetzt'
+      - 'Elektronen haben parallelen Spin in halb besetzten Orbitalen'
+      - 'Dies maximiert die Stabilität'
+      - 'Erst Paaren, dann einzeln besetzen'
+      - 'Das 3d-Orbital wird vor dem 4s gefüllt'
+    correct: [0, 1, 2]
+
+  - question: 'Warum wird 4s vor 3d besetzt?'
+    options:
+      - '4s hat niedrigere Energie als 3d'
+      - 'Das Aufbauprinzip bestimmt die Reihenfolge'
+      - '4s ist weiter vom Kern entfernt'
+      - 'Die (n+l)-Regel erklärt die Reihenfolge'
+      - '3d hat mehr Orbitale'
+    correct: [0, 1, 3]
+
+  - question: 'Welche Aussagen zur Elektronenkonfiguration sind korrekt?'
+    options:
+      - 'Sie zeigt die Verteilung der Elektronen'
+      - 'Unterschalen werden nach Energie geordnet'
+      - 'Die Kurzschreibweise nutzt Edelgas-Kerne'
+      - 'Alle Atome haben die gleiche Konfiguration'
+      - 'Valenzelektronen bestimmen die Chemie'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Was bedeutet die Konfiguration [Ne] 3s² 3p³?'
+    options:
+      - 'Das Element hat 10 + 5 = 15 Elektronen'
+      - 'Es ist Phosphor (P)'
+      - 'Es hat 5 Valenzelektronen'
+      - 'Es ist ein Nichtmetall'
+      - '[Ne] steht für die ersten 10 Elektronen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum sind Edelgase chemisch inert?'
+    options:
+      - 'Sie haben vollständig gefüllte Außenschalen'
+      - 'Die Elektronenkonfiguration ist stabil'
+      - 'Sie geben ungern Elektronen ab oder auf'
+      - 'Sie haben keine Valenzelektronen'
+      - 'Ihre Ionisierungsenergie ist sehr hoch'
+    correct: [0, 1, 2, 4]
+
+  - question: 'Welche Aussagen zu d-Orbitalen sind korrekt?'
+    options:
+      - 'Es gibt 5 d-Orbitale pro Unterschale'
+      - 'Jedes d-Orbital fasst 2 Elektronen'
+      - 'd-Orbitale beginnen ab n = 3'
+      - 'd-Orbitale haben komplexere Formen als s und p'
+      - 'd-Elektronen sind typisch für Übergangsmetalle'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum hat Chrom die Konfiguration [Ar] 3d⁵ 4s¹ statt [Ar] 3d⁴ 4s²?'
+    options:
+      - 'Halb gefüllte d-Unterschalen sind besonders stabil'
+      - 'Symmetrische Besetzung ist energetisch günstiger'
+      - 'Es ist eine Ausnahme vom Aufbauprinzip'
+      - 'Kupfer zeigt ähnliches Verhalten'
+      - 'Die Regel gilt für alle Elemente'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Beziehung besteht zwischen Periodensystem und Elektronenkonfiguration?'
+    options:
+      - 'Die Periode entspricht der höchsten Hauptquantenzahl'
+      - 'Die Hauptgruppe zeigt die Valenzelektronenzahl'
+      - 's-Block: Gruppen 1-2'
+      - 'p-Block: Gruppen 13-18'
+      - 'd-Block: Übergangsmetalle'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Was ist der Unterschied zwischen Grundzustand und angeregtem Zustand?'
+    options:
+      - 'Im Grundzustand ist die Energie minimal'
+      - 'Im angeregten Zustand sind Elektronen auf höheren Niveaus'
+      - 'Anregung erfordert Energiezufuhr'
+      - 'Angeregte Atome können Licht emittieren'
+      - 'Der Grundzustand ist instabil'
+    correct: [0, 1, 2, 3]

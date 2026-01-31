@@ -1,0 +1,95 @@
+# Kapitel 5: Lösungen & Konzentrationen
+# Level 3: Anwendung
+
+topic: 'Lösungen & Konzentrationen'
+level: 3
+questions:
+  - question: 'Wie viel mol NaCl sind in 500 mL einer 0,2 M Lösung?'
+    options:
+      - '0,05 mol'
+      - '0,1 mol'
+      - '0,2 mol'
+      - '0,4 mol'
+      - '1 mol'
+    correct: [1]
+
+  - question: 'Welches Volumen einer 0,5 M HCl-Lösung enthält 0,25 mol HCl?'
+    options:
+      - '125 mL'
+      - '250 mL'
+      - '500 mL'
+      - '750 mL'
+      - '1000 mL'
+    correct: [2]
+
+  - question: 'Eine Lösung enthält 5,85 g NaCl (M = 58,5 g/mol) in 250 mL. Welche Molarität hat sie?'
+    options:
+      - '0,1 M'
+      - '0,2 M'
+      - '0,4 M'
+      - '0,5 M'
+      - '1,0 M'
+    correct: [2]
+
+  - question: 'Wie viel mL einer 6 M HCl-Lösung werden benötigt, um 500 mL einer 0,6 M Lösung herzustellen?'
+    options:
+      - '25 mL'
+      - '50 mL'
+      - '100 mL'
+      - '250 mL'
+      - '300 mL'
+    correct: [1]
+
+  - question: 'Eine 10%-ige (w/w) NaCl-Lösung: Wie viel g NaCl in 200 g Lösung?'
+    options:
+      - '10 g'
+      - '20 g'
+      - '40 g'
+      - '50 g'
+      - '100 g'
+    correct: [1]
+
+  - question: 'Welche Masse Glucose (M = 180 g/mol) für 2 L einer 0,5 M Lösung?'
+    options:
+      - '90 g'
+      - '180 g'
+      - '270 g'
+      - '360 g'
+      - '450 g'
+    correct: [1]
+
+  - question: 'Eine Lösung wird von 100 mL auf 500 mL verdünnt. Wie ändert sich die Konzentration?'
+    options:
+      - 'Sie wird 5-mal kleiner'
+      - 'Sie verdoppelt sich'
+      - 'Sie bleibt gleich'
+      - 'Sie wird 5-mal größer'
+      - 'Sie halbiert sich'
+    correct: [0]
+
+  - question: 'Der Massenanteil von NaOH in einer Lösung ist 4%. Wie viel g NaOH in 500 g Lösung?'
+    options:
+      - '4 g'
+      - '10 g'
+      - '20 g'
+      - '40 g'
+      - '50 g'
+    correct: [2]
+
+  - question: '250 mL einer 0,8 M Lösung werden mit Wasser auf 1 L verdünnt. Welche Konzentration resultiert?'
+    options:
+      - '0,1 M'
+      - '0,2 M'
+      - '0,4 M'
+      - '0,8 M'
+      - '3,2 M'
+    correct: [1]
+
+  - question: 'Wie viele Ionen sind in 100 mL einer 0,1 M NaCl-Lösung?'
+    options:
+      - '6,02 × 10²¹'
+      - '1,20 × 10²²'
+      - '6,02 × 10²²'
+      - '1,20 × 10²³'
+      - '0,01 mol NaCl = 0,02 mol Ionen'
+    correct: [1, 4]

@@ -1,0 +1,95 @@
+# Kapitel 11: Thermodynamik & Enthalpie
+# Level 4: Analyse
+
+topic: 'Thermodynamik & Enthalpie'
+level: 4
+questions:
+  - question: 'Mit dem Satz von Hess: Berechne ΔH für S(s) + O₂(g) → SO₂(g) aus: S(s) + 3/2O₂(g) → SO₃(g) (ΔH = -396 kJ) und SO₂(g) + ½O₂(g) → SO₃(g) (ΔH = -99 kJ)'
+    options:
+      - '-297 kJ'
+      - '-495 kJ'
+      - '+297 kJ'
+      - '-396 + 99 = -297 kJ'
+      - 'Man muss die zweite Reaktion umkehren'
+    correct: [0, 3, 4]
+
+  - question: 'Welche Aussagen zum Born-Haber-Kreisprozess für NaCl sind korrekt?'
+    options:
+      - 'Er berechnet die Gitterenergie indirekt'
+      - 'Sublimation von Na, Ionisierung, Dissoziation von Cl₂, EA von Cl'
+      - 'Die Summe aller Schritte ergibt ΔHf°(NaCl)'
+      - 'Gitterenergie ist die größte Komponente'
+      - 'Der Kreisprozess nutzt den Satz von Hess'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist die Verbrennung von Propan exothermer als die von Methan (pro Mol)?'
+    options:
+      - 'Propan hat mehr C-H und C-C Bindungen'
+      - 'Mehr CO₂ und H₂O werden gebildet'
+      - 'ΔHc(Propan) ≈ -2220 kJ/mol vs. ΔHc(CH₄) ≈ -890 kJ/mol'
+      - 'Propan hat 3 C-Atome, Methan nur 1'
+      - 'Pro Gramm ist Methan energiereicher'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Enthalpie bei Phasenübergängen sind korrekt?'
+    options:
+      - 'Schmelzen ist endotherm (ΔHfus > 0)'
+      - 'Verdampfen ist endotherm (ΔHvap > 0)'
+      - 'Kondensation ist exotherm'
+      - 'Sublimation: ΔHsub = ΔHfus + ΔHvap'
+      - 'Erstarren setzt Wärme frei'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Berechne ΔH für die Hydrolyse von ATP (ATP + H₂O → ADP + Pi) wenn bekannt ist: Bildungsenthalpien und Reaktionsenthalpie ≈ -31 kJ/mol'
+    options:
+      - 'Die Reaktion ist exergonisch (ΔG < 0)'
+      - 'ATP ist ein "energiereiches" Molekül'
+      - 'Die Phosphatbindung ist nicht "hochenergetisch"'
+      - 'Die Hydrolyse-Enthalpie ist nur ein Teil der freien Energie'
+      - 'Die tatsächliche Nutzenergie hängt von Bedingungen ab'
+    correct: [0, 1, 3, 4]
+
+  - question: 'Welche Aussagen zur Wärmekapazität von Wasser sind korrekt?'
+    options:
+      - 'c(H₂O) = 4,18 J/(g·K) ist ungewöhnlich hoch'
+      - 'Wasserstoffbrücken speichern Energie'
+      - 'Wasser mildert Temperaturschwankungen'
+      - 'Das erklärt das moderate Küstenklima'
+      - 'Eis hat eine niedrigere Wärmekapazität'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Mit Bindungsenergien: Schätze ΔH für H₂ + Cl₂ → 2HCl (BE: H-H = 436, Cl-Cl = 242, H-Cl = 431 kJ/mol)'
+    options:
+      - '-184 kJ'
+      - 'Gebrochen: 436 + 242 = 678 kJ'
+      - 'Gebildet: 2 × 431 = 862 kJ'
+      - 'ΔH = 678 - 862 = -184 kJ'
+      - 'Die Reaktion ist exotherm'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum hat Eis eine positive Schmelzenthalpie obwohl es schmilzt?'
+    options:
+      - 'Energie wird benötigt um H-Brücken zu brechen'
+      - 'Das System nimmt Energie auf (endotherm)'
+      - 'ΔHfus(Eis) = +6,01 kJ/mol'
+      - 'Die Energie kommt aus der Umgebung'
+      - 'Schmelzen ist exotherm'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Gibbs-Helmholtz-Gleichung sind korrekt?'
+    options:
+      - 'ΔG = ΔH - TΔS'
+      - 'Bei hohen T dominiert der Entropieterm'
+      - 'Exotherme Reaktionen (ΔH<0) sind oft spontan'
+      - 'Positive Entropieänderung (ΔS>0) begünstigt Spontaneität'
+      - 'Endotherme Reaktionen können bei hohen T spontan sein'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Berechne die Enthalpie der Ionisation: Na(g) → Na⁺(g) + e⁻ wenn Na(s) → Na(g) (ΔH = 108 kJ) und Na(s) → Na⁺(g) + e⁻ (ΔH = 604 kJ)'
+    options:
+      - '496 kJ'
+      - '712 kJ'
+      - '604 kJ'
+      - 'Ionisation(g) = Gesamt - Sublimation = 604 - 108'
+      - 'Die erste Ionisierungsenergie von Na ist 496 kJ/mol'
+    correct: [0, 3, 4]

@@ -1,0 +1,95 @@
+# Kapitel 12: Aggregatzustände & Phasenübergänge
+# Level 5: Synthese/Transfer
+
+topic: 'Aggregatzustände & Phasenübergänge'
+level: 5
+questions:
+  - question: 'Warum ist die Verdunstungskühlung biologisch wichtig?'
+    options:
+      - 'Schweiß kühlt durch Verdampfungsenthalpie'
+      - 'Die hohe ΔHvap von Wasser macht den Effekt stark'
+      - 'Etwa 2,4 kJ pro Gramm verdampftes Wasser'
+      - 'Thermoregulation bei Säugetieren'
+      - 'Pflanzen nutzen Transpiration ähnlich'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielen Phasenübergänge in der Atmosphäre?'
+    options:
+      - 'Wolkenbildung durch Kondensation'
+      - 'Niederschlag als Regen oder Schnee'
+      - 'Latente Wärme beeinflusst Wetter'
+      - 'Verdampfung von Ozeanen treibt den Wasserkreislauf'
+      - 'Hagel: Schichtweise Gefrieren und Schmelzen'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie funktionieren Kühlschränke thermodynamisch?'
+    options:
+      - 'Kältemittel verdampft bei niedrigem Druck (nimmt Wärme auf)'
+      - 'Kompression erhöht T und P'
+      - 'Kondensation bei hohem Druck (gibt Wärme ab)'
+      - 'Expansion senkt T wieder'
+      - 'Ein Kreisprozess transportiert Wärme'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum gibt es auf dem Mars kein flüssiges Wasser an der Oberfläche?'
+    options:
+      - 'Der atmosphärische Druck ist zu niedrig (~0,006 atm)'
+      - 'Unterhalb des Tripelpunkts von Wasser'
+      - 'Wasser kann nur fest oder gasförmig existieren'
+      - 'Eis sublimiert direkt'
+      - 'Das Phasendiagramm erklärt dies'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Bedeutung haben Clathrate (Gashydrate) für das Klima?'
+    options:
+      - 'Methan eingeschlossen in Eis-Käfigen'
+      - 'Große Mengen in Permafrost und Ozeanboden'
+      - 'Erwärmung könnte Methan freisetzen'
+      - 'Methan ist ein starkes Treibhausgas'
+      - 'Ein potentieller Kipppunkt im Klimasystem'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie erklärt die Phasenthermodynamik Eislaufen?'
+    options:
+      - 'Druckschmelzen unter der Kufe wurde früher angenommen'
+      - 'Der Effekt ist zu gering für diese Erklärung'
+      - 'Oberflächenschmelzen durch Reibungswärme'
+      - 'Eine quasi-flüssige Schicht existiert auf Eis'
+      - 'Die wahre Ursache ist komplexer'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Rolle spielt überkritisches CO₂ in der Industrie?'
+    options:
+      - 'Oberhalb von 31°C und 74 bar'
+      - 'Eigenschaften zwischen Gas und Flüssigkeit'
+      - 'Gutes Lösungsmittel für unpolare Stoffe'
+      - 'Verwendung bei der Koffein-Extraktion'
+      - 'Umweltfreundliche Alternative zu organischen Lösungsmitteln'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Warum ist die Schmelzwärme von Eis wichtig für das Erdklima?'
+    options:
+      - 'Große Energiemengen für das Schmelzen von Eis nötig'
+      - 'Polkappen puffern Temperaturschwankungen'
+      - 'Das Schmelzen verzögert die Erwärmung'
+      - 'Beim Gefrieren wird Wärme frei (Herbst/Winter)'
+      - 'Latente Wärme stabilisiert das Klima'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Lyophilisation (Gefriertrocknung) von Proteinen sind korrekt?'
+    options:
+      - 'Proteine werden in gefrorenem Zustand getrocknet'
+      - 'Sublimation schont die Struktur'
+      - 'Kryoprotektiva (z.B. Trehalose) schützen'
+      - 'Wichtig für Impfstoffe und Enzyme'
+      - 'Langzeitstabilität wird verbessert'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie beeinflusst der Wasserkreislauf den Energiehaushalt der Erde?'
+    options:
+      - 'Verdampfung transportiert Energie von der Oberfläche'
+      - 'Kondensation in Wolken setzt Energie frei'
+      - 'Latente Wärme ist wichtiger als fühlbare Wärme'
+      - 'Etwa 25% der Sonneneinstrahlung geht in Verdampfung'
+      - 'Der Wasserkreislauf verteilt Wärme global'
+    correct: [0, 1, 2, 3, 4]

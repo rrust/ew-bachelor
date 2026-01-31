@@ -1,0 +1,95 @@
+# Kapitel 12: Aggregatzustände & Phasenübergänge
+# Level 4: Analyse
+
+topic: 'Aggregatzustände & Phasenübergänge'
+level: 4
+questions:
+  - question: 'Mit der Clausius-Clapeyron-Gleichung: Der Dampfdruck von Wasser ist 31,8 mmHg bei 30°C. Bei welcher T ist P = 760 mmHg? (ΔHvap = 40,7 kJ/mol)'
+    options:
+      - 'Bei etwa 100°C'
+      - 'ln(760/31,8) = (40700/8,314) × (1/303 - 1/T)'
+      - 'Dies ist der normale Siedepunkt'
+      - 'Die Gleichung ermöglicht die Berechnung'
+      - 'Bei etwa 50°C'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Phasendiagramm von Wasser sind korrekt?'
+    options:
+      - 'Die Schmelzkurve hat eine negative Steigung'
+      - 'Höherer Druck senkt den Schmelzpunkt'
+      - 'Eis kann durch Druck geschmolzen werden'
+      - 'Das ist untypisch für die meisten Stoffe'
+      - 'Die Anomalie erklärt Schlittschuhlaufen teilweise'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Wie berechnet man die Energie zum Erhitzen von 100 g Eis von -20°C zu Dampf bei 100°C?'
+    options:
+      - 'Q = Q(Eis erwärmen) + Q(schmelzen) + Q(Wasser erwärmen) + Q(verdampfen)'
+      - 'c(Eis) ≈ 2,1 J/(g·K), c(Wasser) = 4,18 J/(g·K)'
+      - 'ΔHfus ≈ 334 J/g, ΔHvap ≈ 2260 J/g'
+      - 'Die Verdampfungswärme ist der größte Anteil'
+      - 'Es wird nur eine Energiemenge benötigt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Dampfdruckgleichgewicht sind korrekt?'
+    options:
+      - 'Verdampfungs- und Kondensationsrate sind gleich'
+      - 'Der Dampfdruck ist eine Stoffkonstante (bei gegebener T)'
+      - 'Das System ist geschlossen'
+      - 'Dynamisches Gleichgewicht'
+      - 'Keine Verdampfung findet statt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum ist die Verdampfungsenthalpie von Wasser ungewöhnlich hoch?'
+    options:
+      - 'Viele Wasserstoffbrücken müssen gebrochen werden'
+      - 'ΔHvap(H₂O) = 40,7 kJ/mol'
+      - 'H₂S hat nur ~19 kJ/mol (keine H-Brücken)'
+      - 'Die hohe ΔHvap erklärt Kühleffekt beim Schwitzen'
+      - 'Die Verdampfungsenthalpie ist niedrig'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Gefriertrocknung sind korrekt?'
+    options:
+      - 'Das Material wird erst eingefroren'
+      - 'Dann wird bei niedrigem Druck sublimiert'
+      - 'Wasser geht von fest direkt zu gas'
+      - 'Die Struktur bleibt weitgehend erhalten'
+      - 'Anwendung bei Lebensmitteln und Pharmazeutika'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Reihenfolge der Siedepunkte ist korrekt für die Halogenwasserstoffe?'
+    options:
+      - 'HF > HI > HBr > HCl'
+      - 'HF hat H-Brücken (hoher Siedepunkt)'
+      - 'HI > HBr > HCl wegen steigender London-Kräfte'
+      - 'HCl hat den niedrigsten Siedepunkt'
+      - 'Die Reihe ist HCl > HBr > HI > HF'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Überkühlung und Überhitzung sind korrekt?'
+    options:
+      - 'Überkühlung: Flüssigkeit bleibt unter dem Gefrierpunkt flüssig'
+      - 'Keimbildung ist nötig für Kristallisation'
+      - 'Überhitzung: Flüssigkeit bleibt über dem Siedepunkt flüssig'
+      - 'Siedeverzug kann gefährlich sein'
+      - 'Diese Zustände sind thermodynamisch stabil'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Berechne die Energie zum vollständigen Verdampfen von 36 g Wasser bei 100°C (ΔHvap = 40,7 kJ/mol)'
+    options:
+      - '81,4 kJ'
+      - '40,7 kJ'
+      - '20,35 kJ'
+      - 'n = 36/18 = 2 mol'
+      - 'Q = n × ΔHvap = 2 × 40,7 kJ'
+    correct: [0, 3, 4]
+
+  - question: 'Welche Aussagen zur Dampfdruckerniedrigung durch gelöste Stoffe sind korrekt?'
+    options:
+      - 'Gelöste Teilchen senken den Dampfdruck'
+      - 'Das ist eine kolligative Eigenschaft'
+      - 'Weniger Lösungsmittelmoleküle an der Oberfläche'
+      - 'Der Siedepunkt steigt'
+      - 'Dies wird bei Frostschutzmitteln genutzt'
+    correct: [0, 1, 2, 3, 4]

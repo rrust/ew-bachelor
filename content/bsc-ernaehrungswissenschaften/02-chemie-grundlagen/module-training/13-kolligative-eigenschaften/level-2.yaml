@@ -1,0 +1,95 @@
+# Kapitel 13: Kolligative Eigenschaften
+# Level 2: Verständnis
+
+topic: 'Kolligative Eigenschaften'
+level: 2
+questions:
+  - question: 'Warum sind kolligative Eigenschaften unabhängig von der Art der Teilchen?'
+    options:
+      - 'Nur die Anzahl der Teilchen reduziert den Molenbruch des Lösungsmittels'
+      - 'Mehr Teilchen → weniger Lösungsmittelmoleküle an der Oberfläche'
+      - 'Die chemische Natur spielt keine Rolle für den Dampfdruck'
+      - 'Dies gilt nur für ideale Lösungen'
+      - 'Die Farbe der Lösung ist entscheidend'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum Raoultschen Gesetz sind korrekt?'
+    options:
+      - 'P = P° × χ (Dampfdruck × Molenbruch)'
+      - 'Der Dampfdruck sinkt proportional zum Molenbruch des Gelösten'
+      - 'Es gilt für ideale Lösungen'
+      - 'ΔP = P° × χgelöst'
+      - 'Es gilt nur für Elektrolyte'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum erhöht sich der Siedepunkt einer Lösung?'
+    options:
+      - 'Der Dampfdruck ist niedriger als beim reinen Lösungsmittel'
+      - 'Höhere Temperatur nötig um Dampfdruck = Außendruck'
+      - 'ΔTb = Kb × m × i (molale Siedepunktserhöhung)'
+      - 'Kb ist die ebullioskopische Konstante'
+      - 'Der Siedepunkt sinkt immer'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Wie funktioniert Gefrierpunktserniedrigung?'
+    options:
+      - 'Gelöste Teilchen stören die Kristallbildung'
+      - 'Niedrigere Temperatur nötig zum Gefrieren'
+      - 'ΔTf = Kf × m × i (molale Gefrierpunktserniedrigung)'
+      - 'Kf ist die kryoskopische Konstante'
+      - 'Der Gefrierpunkt steigt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zum osmotischen Druck sind korrekt?'
+    options:
+      - "π = i × c × R × T (van't Hoff Gleichung)"
+      - 'Proportional zur Konzentration'
+      - 'Wichtig für biologische Systeme'
+      - 'Kann sehr hoch sein bei konzentrierten Lösungen'
+      - 'Osmotischer Druck ist unabhängig von der Konzentration'
+    correct: [0, 1, 2, 3]
+
+  - question: "Warum ist der van't Hoff-Faktor bei Elektrolyten >1?"
+    options:
+      - 'Elektrolyte dissoziieren in Ionen'
+      - 'NaCl → Na⁺ + Cl⁻ ergibt i = 2'
+      - 'Mehr Teilchen als Formeleinheiten'
+      - 'CaCl₂ hat i ≈ 3'
+      - 'Glucose hat i = 1 (dissoziiert nicht)'
+    correct: [0, 1, 2, 3, 4]
+
+  - question: 'Welche Aussagen zur Osmose in biologischen Systemen sind korrekt?'
+    options:
+      - 'Zellen müssen die Osmolarität regulieren'
+      - 'In hypertoner Lösung schrumpfen Zellen'
+      - 'In hypotoner Lösung schwellen Zellen'
+      - 'Isotone Lösungen verursachen keine Netto-Wasserfluss'
+      - 'Der osmotische Druck ist unwichtig für Zellen'
+    correct: [0, 1, 2, 3]
+
+  - question: "Warum ist der experimentelle van't Hoff-Faktor oft kleiner als der theoretische?"
+    options:
+      - 'Ionenpaarbildung in konzentrierten Lösungen'
+      - 'Nicht alle Ionen sind vollständig getrennt'
+      - 'Elektrostatische Anziehung zwischen Ionen'
+      - 'Bei Verdünnung nähert sich i dem theoretischen Wert'
+      - 'Der theoretische Wert ist immer exakt'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Welche Aussagen zur Molmassen-Bestimmung durch kolligative Eigenschaften sind korrekt?'
+    options:
+      - 'Gefrierpunktserniedrigung kann zur M-Bestimmung genutzt werden'
+      - 'Osmotischer Druck ist am empfindlichsten'
+      - 'M = (m × Kf) / (ΔTf × Masse Lösungsmittel)'
+      - 'Geeignet für Polymere und Proteine'
+      - 'Diese Methoden sind nicht mehr in Verwendung'
+    correct: [0, 1, 2, 3]
+
+  - question: 'Warum wird Ethylenglykol als Frostschutzmittel verwendet?'
+    options:
+      - 'Es erniedrigt den Gefrierpunkt stark'
+      - 'Es ist wasserlöslich'
+      - 'Es erhöht auch den Siedepunkt'
+      - 'Es ist nicht korrosiv'
+      - 'Es hat einen höheren Siedepunkt als Wasser'
+    correct: [0, 1, 2, 3]

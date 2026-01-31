@@ -1,0 +1,95 @@
+# Kapitel 15: Elektrochemie & Redox
+# Level 1: Grundlagen
+
+topic: 'Elektrochemie & Redox'
+level: 1
+questions:
+  - question: 'Was ist eine Oxidation?'
+    options:
+      - 'Abgabe von Elektronen'
+      - 'Aufnahme von Elektronen'
+      - 'Abgabe von Protonen'
+      - 'Aufnahme von Protonen'
+      - 'Abgabe von Neutronen'
+    correct: [0]
+
+  - question: 'Was ist eine Reduktion?'
+    options:
+      - 'Abgabe von Elektronen'
+      - 'Aufnahme von Elektronen'
+      - 'Abgabe von Protonen'
+      - 'Aufnahme von Protonen'
+      - 'Erhöhung der Oxidationszahl'
+    correct: [1]
+
+  - question: 'Was ist ein Oxidationsmittel?'
+    options:
+      - 'Ein Stoff, der selbst reduziert wird und andere oxidiert'
+      - 'Ein Stoff, der selbst oxidiert wird'
+      - 'Ein Katalysator'
+      - 'Ein Lösungsmittel'
+      - 'Ein Elektrolyt'
+    correct: [0]
+
+  - question: 'Was ist ein Reduktionsmittel?'
+    options:
+      - 'Ein Stoff, der selbst oxidiert wird und andere reduziert'
+      - 'Ein Stoff, der selbst reduziert wird'
+      - 'Ein Katalysator'
+      - 'Ein Lösungsmittel'
+      - 'Ein Elektrolyt'
+    correct: [0]
+
+  - question: 'Was ist die Oxidationszahl?'
+    options:
+      - 'Die formale Ladung eines Atoms in einer Verbindung'
+      - 'Die Anzahl der Elektronen'
+      - 'Die Anzahl der Protonen'
+      - 'Die Massenzahl'
+      - 'Die Kernladungszahl'
+    correct: [0]
+
+  - question: 'Welche Oxidationszahl hat Sauerstoff in den meisten Verbindungen?'
+    options:
+      - '-2'
+      - '+2'
+      - '0'
+      - '-1'
+      - '+1'
+    correct: [0]
+
+  - question: 'Welche Oxidationszahl hat Wasserstoff in Verbindungen mit Nichtmetallen?'
+    options:
+      - '+1'
+      - '-1'
+      - '0'
+      - '+2'
+      - '-2'
+    correct: [0]
+
+  - question: 'Was ist ein galvanisches Element?'
+    options:
+      - 'Eine Anordnung zur Umwandlung chemischer in elektrische Energie'
+      - 'Ein Elektrolysegerät'
+      - 'Ein Thermometer'
+      - 'Ein Katalysator'
+      - 'Ein Puffer'
+    correct: [0]
+
+  - question: 'Was geschieht bei der Elektrolyse?'
+    options:
+      - 'Elektrische Energie erzwingt eine chemische Reaktion'
+      - 'Chemische Energie wird in elektrische umgewandelt'
+      - 'Wärme wird erzeugt'
+      - 'Licht wird absorbiert'
+      - 'Keine chemische Reaktion findet statt'
+    correct: [0]
+
+  - question: 'Was ist die Standardwasserstoffelektrode (SHE)?'
+    options:
+      - 'Die Referenzelektrode mit E° = 0 V per Definition'
+      - 'Eine Batterie'
+      - 'Ein Thermometer'
+      - 'Ein Katalysator'
+      - 'Ein Oxidationsmittel'
+    correct: [0]
