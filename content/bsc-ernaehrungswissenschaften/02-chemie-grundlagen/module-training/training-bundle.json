@@ -3,11 +3,12 @@
   "title": "Modul-Training: Grundlagen der Chemie",
   "description": "Level-basiertes Training zur Prüfungsvorbereitung",
   "totalQuestions": 50,
-  "totalTopics": 1,
+  "totalExercises": 65,
+  "totalTopics": 8,
   "questionsPerLevel": 10,
   "levels": 5,
   "version": "1.0.0",
-  "generatedAt": "2026-01-25T16:41:42.851Z",
+  "generatedAt": "2026-01-31T09:17:08.682Z",
   "topics": [
     {
       "id": "01-aufbau-atome-periodensystem",
@@ -968,6 +969,2323 @@
           }
         ]
       }
+    },
+    {
+      "id": "02-elemente-ionen-mol",
+      "title": "02-elemente-ionen-mol",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-02-01",
+            "title": "Stoffmenge aus Teilchenzahl",
+            "level": 1,
+            "task": "In einem Behälter befinden sich 3,011 × 10²³ Wassermoleküle.\n\nBerechne die Stoffmenge in Mol.\n\nGegeben: Avogadro-Konstante Nₐ = 6,022 × 10²³ mol⁻¹\n",
+            "hints": {
+              "keyword": "Formel n = N/Nₐ",
+              "approach": "1. Gegebene Werte identifizieren\n2. Formel n = N/Nₐ anwenden\n",
+              "overview": "N = 3,011 × 10²³\nNₐ = 6,022 × 10²³ mol⁻¹\nn = 3,011/6,022 = 0,5 mol\n"
+            },
+            "steps": [
+              {
+                "description": "Gegebene Werte notieren",
+                "solution": "N = 3,011 × 10²³, Nₐ = 6,022 × 10²³ mol⁻¹"
+              },
+              {
+                "description": "Stoffmenge berechnen mit n = N/Nₐ",
+                "solution": "n = (3,011 × 10²³) / (6,022 × 10²³ mol⁻¹) = 0,5 mol"
+              }
+            ],
+            "finalAnswer": "n = 0,5 mol",
+            "relatedCheatsheets": [
+              "atome-formeln-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-02-02",
+            "title": "Teilchenzahl aus Stoffmenge",
+            "level": 1,
+            "task": "Wie viele Eisenatome sind in 2 mol Eisen enthalten?\n\nGegeben: Nₐ = 6,022 × 10²³ mol⁻¹\n",
+            "hints": {
+              "keyword": "Formel N = n × Nₐ",
+              "approach": "1. Gegebene Werte identifizieren\n2. Formel N = n × Nₐ anwenden\n",
+              "overview": "n = 2 mol\nN = 2 × 6,022 × 10²³ = 1,2044 × 10²⁴\n"
+            },
+            "steps": [
+              {
+                "description": "Gegebene Werte notieren",
+                "solution": "n(Fe) = 2 mol, Nₐ = 6,022 × 10²³ mol⁻¹"
+              },
+              {
+                "description": "Teilchenzahl berechnen mit N = n × Nₐ",
+                "solution": "N = 2 mol × 6,022 × 10²³ mol⁻¹ = 1,2044 × 10²⁴ Atome"
+              }
+            ],
+            "finalAnswer": "N = 1,2044 × 10²⁴ Eisenatome",
+            "relatedCheatsheets": [
+              "atome-formeln-cheatsheet"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "id": "ex-02-03",
+            "title": "Molare Masse berechnen",
+            "level": 2,
+            "task": "Berechne die molare Masse von Schwefelsäure (H₂SO₄).\n\nGegeben:\nM(H) = 1,0 g/mol\nM(S) = 32,1 g/mol\nM(O) = 16,0 g/mol\n",
+            "hints": {
+              "keyword": "Summe der Atommassen",
+              "approach": "1. Anzahl jedes Atoms bestimmen\n2. Einzelne Massen berechnen\n3. Alle Massen addieren\n",
+              "overview": "H₂SO₄: 2×H + 1×S + 4×O\nM = 2×1,0 + 32,1 + 4×16,0 = 98,1 g/mol\n"
+            },
+            "steps": [
+              {
+                "description": "Anzahl der Atome aus Formel ablesen",
+                "solution": "H₂SO₄ enthält: 2 H, 1 S, 4 O"
+              },
+              {
+                "description": "Masse der H-Atome berechnen",
+                "solution": "2 × 1,0 g/mol = 2,0 g/mol"
+              },
+              {
+                "description": "Masse der S-Atome berechnen",
+                "solution": "1 × 32,1 g/mol = 32,1 g/mol"
+              },
+              {
+                "description": "Masse der O-Atome berechnen",
+                "solution": "4 × 16,0 g/mol = 64,0 g/mol"
+              },
+              {
+                "description": "Molare Masse addieren",
+                "solution": "M(H₂SO₄) = 2,0 + 32,1 + 64,0 = 98,1 g/mol"
+              }
+            ],
+            "finalAnswer": "M(H₂SO₄) = 98,1 g/mol",
+            "relatedCheatsheets": [
+              "atome-formeln-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-02-04",
+            "title": "Masse aus Stoffmenge und molarer Masse",
+            "level": 2,
+            "task": "Welche Masse haben 0,25 mol Natriumchlorid (NaCl)?\n\nGegeben:\nM(Na) = 23,0 g/mol\nM(Cl) = 35,5 g/mol\n",
+            "hints": {
+              "keyword": "Formel m = n × M",
+              "approach": "1. Molare Masse von NaCl berechnen\n2. Mit Stoffmenge multiplizieren\n",
+              "overview": "M(NaCl) = 23,0 + 35,5 = 58,5 g/mol\nm = 0,25 × 58,5 = 14,625 g\n"
+            },
+            "steps": [
+              {
+                "description": "Molare Masse von NaCl berechnen",
+                "solution": "M(NaCl) = 23,0 + 35,5 = 58,5 g/mol"
+              },
+              {
+                "description": "Masse berechnen mit m = n × M",
+                "solution": "m = 0,25 mol × 58,5 g/mol = 14,625 g ≈ 14,6 g"
+              }
+            ],
+            "finalAnswer": "m(NaCl) = 14,6 g",
+            "relatedCheatsheets": [
+              "atome-formeln-cheatsheet"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "id": "ex-02-05",
+            "title": "Von Masse zu Teilchenzahl",
+            "level": 3,
+            "task": "Wie viele Moleküle sind in 9 g Wasser (H₂O) enthalten?\n\nGegeben:\nM(H) = 1,0 g/mol, M(O) = 16,0 g/mol\nNₐ = 6,022 × 10²³ mol⁻¹\n",
+            "hints": {
+              "keyword": "Erst n berechnen, dann N",
+              "approach": "1. Molare Masse von H₂O berechnen\n2. Stoffmenge n = m/M berechnen\n3. Teilchenzahl N = n × Nₐ berechnen\n",
+              "overview": "M = 18 g/mol\nn = 9/18 = 0,5 mol\nN = 0,5 × 6,022 × 10²³ = 3,011 × 10²³\n"
+            },
+            "steps": [
+              {
+                "description": "Molare Masse von H₂O berechnen",
+                "solution": "M(H₂O) = 2 × 1,0 + 16,0 = 18,0 g/mol"
+              },
+              {
+                "description": "Stoffmenge berechnen",
+                "solution": "n = 9 g / 18,0 g/mol = 0,5 mol"
+              },
+              {
+                "description": "Teilchenzahl berechnen",
+                "solution": "N = 0,5 mol × 6,022 × 10²³ mol⁻¹ = 3,011 × 10²³ Moleküle"
+              }
+            ],
+            "finalAnswer": "N = 3,011 × 10²³ H₂O-Moleküle",
+            "relatedBlueprints": [
+              "mol-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-02-06",
+            "title": "Ionenanzahl in Salz",
+            "level": 3,
+            "task": "5,85 g Natriumchlorid (NaCl) werden in Wasser gelöst.\n\nBerechne:\na) Die Stoffmenge NaCl\nb) Die Anzahl der Na⁺-Ionen\nc) Die Anzahl der Cl⁻-Ionen\n\nGegeben: M(NaCl) = 58,5 g/mol, Nₐ = 6,022 × 10²³ mol⁻¹\n",
+            "hints": {
+              "keyword": "NaCl dissoziiert vollständig: 1:1 Verhältnis",
+              "approach": "1. Stoffmenge NaCl berechnen\n2. NaCl → Na⁺ + Cl⁻ (Verhältnis 1:1:1)\n3. Ionenanzahl mit Nₐ berechnen\n",
+              "overview": "n(NaCl) = 0,1 mol\nn(Na⁺) = n(Cl⁻) = 0,1 mol\nN(Ionen) = 0,1 × 6,022 × 10²³ = 6,022 × 10²²\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge NaCl berechnen",
+                "solution": "n(NaCl) = 5,85 g / 58,5 g/mol = 0,1 mol"
+              },
+              {
+                "description": "Dissoziation: Stoffmengenverhältnis",
+                "solution": "NaCl → Na⁺ + Cl⁻ (1:1:1), also n(Na⁺) = n(Cl⁻) = 0,1 mol"
+              },
+              {
+                "description": "Anzahl Na⁺-Ionen berechnen",
+                "solution": "N(Na⁺) = 0,1 mol × 6,022 × 10²³ mol⁻¹ = 6,022 × 10²² Ionen"
+              },
+              {
+                "description": "Anzahl Cl⁻-Ionen berechnen",
+                "solution": "N(Cl⁻) = 0,1 mol × 6,022 × 10²³ mol⁻¹ = 6,022 × 10²² Ionen"
+              }
+            ],
+            "finalAnswer": "a) n(NaCl) = 0,1 mol\nb) N(Na⁺) = 6,022 × 10²² Ionen\nc) N(Cl⁻) = 6,022 × 10²² Ionen\n",
+            "relatedBlueprints": [
+              "mol-calculation-blueprint"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "id": "ex-02-07",
+            "title": "Prozentualer Massenanteil",
+            "level": 4,
+            "task": "Berechne den prozentualen Massenanteil von Stickstoff\nin Ammoniumnitrat (NH₄NO₃).\n\nGegeben:\nM(N) = 14,0 g/mol\nM(H) = 1,0 g/mol\nM(O) = 16,0 g/mol\n",
+            "hints": {
+              "keyword": "w = (Masse des Elements / Gesamtmasse) × 100%",
+              "approach": "1. Anzahl N-Atome bestimmen\n2. Molare Masse der Verbindung berechnen\n3. Masse des Stickstoffs berechnen\n4. Prozentanteil berechnen\n",
+              "overview": "NH₄NO₃: 2 N, 4 H, 3 O\nM = 80 g/mol\nM(N-Anteil) = 28 g/mol\nw(N) = 28/80 × 100% = 35%\n"
+            },
+            "steps": [
+              {
+                "description": "Anzahl der Atome aus Formel ablesen",
+                "solution": "NH₄NO₃ enthält: 2 N, 4 H, 3 O"
+              },
+              {
+                "description": "Molare Masse berechnen",
+                "solution": "M = 2×14,0 + 4×1,0 + 3×16,0 = 28 + 4 + 48 = 80 g/mol"
+              },
+              {
+                "description": "Masse des Stickstoffs im Mol",
+                "solution": "M(N-Anteil) = 2 × 14,0 g/mol = 28 g/mol"
+              },
+              {
+                "description": "Prozentanteil berechnen",
+                "solution": "w(N) = (28 g/mol / 80 g/mol) × 100% = 35%"
+              }
+            ],
+            "finalAnswer": "w(N) = 35%",
+            "relatedBlueprints": [
+              "mol-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-02-08",
+            "title": "Ionenanzahl in Calcium-Verbindung",
+            "level": 4,
+            "task": "11,1 g Calciumchlorid (CaCl₂) werden vollständig in Wasser gelöst.\n\nBerechne:\na) Die Stoffmenge CaCl₂\nb) Die Gesamtzahl der Ionen in der Lösung\n\nGegeben: M(Ca) = 40,1 g/mol, M(Cl) = 35,5 g/mol\nNₐ = 6,022 × 10²³ mol⁻¹\n",
+            "hints": {
+              "keyword": "CaCl₂ → Ca²⁺ + 2 Cl⁻ (1 Formeleinheit → 3 Ionen)",
+              "approach": "1. Molare Masse CaCl₂ berechnen\n2. Stoffmenge berechnen\n3. Dissoziation: 1 CaCl₂ → 3 Ionen\n4. Gesamtionenzahl berechnen\n",
+              "overview": "M(CaCl₂) = 111 g/mol\nn = 0,1 mol\nPro Formeleinheit: 3 Ionen\nN(Ionen) = 0,1 × 3 × Nₐ = 1,81 × 10²³\n"
+            },
+            "steps": [
+              {
+                "description": "Molare Masse CaCl₂ berechnen",
+                "solution": "M(CaCl₂) = 40,1 + 2 × 35,5 = 40,1 + 71,0 = 111,1 g/mol"
+              },
+              {
+                "description": "Stoffmenge berechnen",
+                "solution": "n(CaCl₂) = 11,1 g / 111,1 g/mol = 0,1 mol"
+              },
+              {
+                "description": "Dissoziation analysieren",
+                "solution": "CaCl₂ → Ca²⁺ + 2 Cl⁻ (1 Formeleinheit ergibt 3 Ionen)"
+              },
+              {
+                "description": "Gesamtzahl der Ionen berechnen",
+                "solution": "N(Ionen) = 0,1 mol × 3 × 6,022 × 10²³ mol⁻¹ = 1,81 × 10²³ Ionen"
+              }
+            ],
+            "finalAnswer": "a) n(CaCl₂) = 0,1 mol\nb) N(Ionen) = 1,81 × 10²³ Ionen (davon 6,02 × 10²² Ca²⁺ und 1,20 × 10²³ Cl⁻)\n",
+            "relatedBlueprints": [
+              "mol-calculation-blueprint"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "id": "ex-02-09",
+            "title": "Empirische Formel aus Massenanteilen",
+            "level": 5,
+            "task": "Eine organische Verbindung enthält:\n- 40,0% Kohlenstoff\n- 6,7% Wasserstoff\n- 53,3% Sauerstoff\n\nBestimme die empirische Formel.\n\nGegeben: M(C) = 12,0 g/mol, M(H) = 1,0 g/mol, M(O) = 16,0 g/mol\n",
+            "hints": {
+              "keyword": "Prozente als Gramm annehmen, dann Stoffmengen vergleichen",
+              "approach": "1. 100 g Probe annehmen → Prozente = Gramm\n2. Stoffmenge jedes Elements berechnen\n3. Durch kleinste Stoffmenge teilen\n4. Auf ganze Zahlen runden/multiplizieren\n",
+              "overview": "n(C) = 40/12 = 3,33 mol\nn(H) = 6,7/1 = 6,7 mol\nn(O) = 53,3/16 = 3,33 mol\nVerhältnis: 1:2:1 → CH₂O\n"
+            },
+            "steps": [
+              {
+                "description": "100 g Probe annehmen",
+                "solution": "m(C) = 40,0 g, m(H) = 6,7 g, m(O) = 53,3 g"
+              },
+              {
+                "description": "Stoffmenge Kohlenstoff berechnen",
+                "solution": "n(C) = 40,0 g / 12,0 g/mol = 3,33 mol"
+              },
+              {
+                "description": "Stoffmenge Wasserstoff berechnen",
+                "solution": "n(H) = 6,7 g / 1,0 g/mol = 6,7 mol"
+              },
+              {
+                "description": "Stoffmenge Sauerstoff berechnen",
+                "solution": "n(O) = 53,3 g / 16,0 g/mol = 3,33 mol"
+              },
+              {
+                "description": "Durch kleinste Stoffmenge teilen",
+                "solution": "C: 3,33/3,33 = 1, H: 6,7/3,33 = 2, O: 3,33/3,33 = 1"
+              },
+              {
+                "description": "Empirische Formel aufstellen",
+                "solution": "Verhältnis C:H:O = 1:2:1 → Empirische Formel: CH₂O"
+              }
+            ],
+            "finalAnswer": "Empirische Formel: CH₂O",
+            "relatedBlueprints": [
+              "mol-calculation-blueprint",
+              "empirical-formula-blueprint"
+            ]
+          },
+          {
+            "id": "ex-02-10",
+            "title": "Molekülformel aus empirischer Formel",
+            "level": 5,
+            "task": "Die empirische Formel einer Verbindung ist CH₂O.\nDie molare Masse beträgt 180 g/mol.\n\nBestimme die Molekülformel.\n\nGegeben: M(C) = 12,0 g/mol, M(H) = 1,0 g/mol, M(O) = 16,0 g/mol\n",
+            "hints": {
+              "keyword": "Faktor = M(Verbindung) / M(empirische Formel)",
+              "approach": "1. Molare Masse der empirischen Formel berechnen\n2. Faktor = M(gesamt) / M(empirisch) berechnen\n3. Empirische Formel mit Faktor multiplizieren\n",
+              "overview": "M(CH₂O) = 30 g/mol\nFaktor = 180/30 = 6\nMolekülformel: C₆H₁₂O₆\n"
+            },
+            "steps": [
+              {
+                "description": "Molare Masse der empirischen Formel berechnen",
+                "solution": "M(CH₂O) = 12,0 + 2×1,0 + 16,0 = 30 g/mol"
+              },
+              {
+                "description": "Faktor berechnen",
+                "solution": "Faktor = 180 g/mol / 30 g/mol = 6"
+              },
+              {
+                "description": "Molekülformel bestimmen",
+                "solution": "(CH₂O)₆ = C₆H₁₂O₆"
+              },
+              {
+                "description": "Kontrolle der molaren Masse",
+                "solution": "M(C₆H₁₂O₆) = 6×12 + 12×1 + 6×16 = 72 + 12 + 96 = 180 g/mol ✓"
+              }
+            ],
+            "finalAnswer": "Molekülformel: C₆H₁₂O₆ (Glucose)",
+            "relatedBlueprints": [
+              "mol-calculation-blueprint",
+              "empirical-formula-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "mol-calculation"
+    },
+    {
+      "id": "03-gleichungen-stoechiometrie",
+      "title": "03-gleichungen-stoechiometrie",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-03-01",
+            "title": "Stoffmenge aus Masse berechnen",
+            "level": 1,
+            "task": "Berechne die Stoffmenge von 88 g Kohlenstoffdioxid (CO₂).\n\nGegeben: M(CO₂) = 44 g/mol\n",
+            "hints": {
+              "keyword": "Formel n = m/M",
+              "approach": "1. Gegebene Werte identifizieren (m und M)\n2. Formel n = m/M anwenden\n",
+              "overview": "m = 88 g, M = 44 g/mol\nn = 88/44 = 2 mol\n"
+            },
+            "steps": [
+              {
+                "description": "Gegebene Werte notieren",
+                "solution": "m(CO₂) = 88 g, M(CO₂) = 44 g/mol"
+              },
+              {
+                "description": "Stoffmenge berechnen mit n = m/M",
+                "solution": "n = 88 g ÷ 44 g/mol = 2 mol"
+              }
+            ],
+            "finalAnswer": "n(CO₂) = 2 mol",
+            "relatedCheatsheets": [
+              "atome-formeln-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-03-02",
+            "title": "Masse aus Stoffmenge berechnen",
+            "level": 1,
+            "task": "Berechne die Masse von 0,5 mol Wasser (H₂O).\n\nGegeben: M(H₂O) = 18 g/mol\n",
+            "hints": {
+              "keyword": "Formel m = n × M",
+              "approach": "1. Gegebene Werte identifizieren (n und M)\n2. Formel m = n × M anwenden\n",
+              "overview": "n = 0,5 mol, M = 18 g/mol\nm = 0,5 × 18 = 9 g\n"
+            },
+            "steps": [
+              {
+                "description": "Gegebene Werte notieren",
+                "solution": "n(H₂O) = 0,5 mol, M(H₂O) = 18 g/mol"
+              },
+              {
+                "description": "Masse berechnen mit m = n × M",
+                "solution": "m = 0,5 mol × 18 g/mol = 9 g"
+              }
+            ],
+            "finalAnswer": "m(H₂O) = 9 g",
+            "relatedCheatsheets": [
+              "atome-formeln-cheatsheet"
+            ]
+          }
+        ],
+        "2": [],
+        "3": [
+          {
+            "id": "ex-03-03",
+            "title": "Verbrennung von Magnesium",
+            "level": 3,
+            "task": "Bei der Verbrennung von Magnesium an Luft entsteht Magnesiumoxid:\n\n2 Mg + O₂ → 2 MgO\n\nEs werden 24,3 g Magnesium verbrannt.\n\nBerechne:\na) Die Stoffmenge des eingesetzten Magnesiums\nb) Die Masse des entstehenden Magnesiumoxids\n\nGegeben: M(Mg) = 24,3 g/mol, M(MgO) = 40,3 g/mol\n",
+            "hints": {
+              "keyword": "Stöchiometrisches Verhältnis 2:2 = 1:1",
+              "approach": "1. Stoffmenge von Mg berechnen\n2. Stöchiometrisches Verhältnis aus Gleichung ablesen\n3. Stoffmenge von MgO bestimmen\n4. Masse von MgO berechnen\n",
+              "overview": "n(Mg) = 1 mol\nVerhältnis Mg:MgO = 2:2 = 1:1\nn(MgO) = 1 mol\nm(MgO) = 40,3 g\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge von Magnesium berechnen",
+                "solution": "n(Mg) = 24,3 g ÷ 24,3 g/mol = 1,0 mol"
+              },
+              {
+                "description": "Stöchiometrisches Verhältnis ablesen",
+                "solution": "Aus 2 Mg + O₂ → 2 MgO: Verhältnis Mg:MgO = 2:2 = 1:1"
+              },
+              {
+                "description": "Stoffmenge MgO aus Verhältnis bestimmen",
+                "solution": "n(MgO) = n(Mg) = 1,0 mol"
+              },
+              {
+                "description": "Masse von MgO berechnen",
+                "solution": "m(MgO) = 1,0 mol × 40,3 g/mol = 40,3 g"
+              }
+            ],
+            "finalAnswer": "a) n(Mg) = 1,0 mol\nb) m(MgO) = 40,3 g\n",
+            "relatedBlueprints": [
+              "stoichiometry-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-03-04",
+            "title": "Reaktion von Eisen mit Schwefel",
+            "level": 3,
+            "task": "Eisen reagiert mit Schwefel zu Eisen(II)-sulfid:\n\nFe + S → FeS\n\nWie viel Gramm Schwefel werden benötigt, um 11,2 g Eisen vollständig umzusetzen?\n\nGegeben: M(Fe) = 56 g/mol, M(S) = 32 g/mol\n",
+            "hints": {
+              "keyword": "Verhältnis Fe:S = 1:1",
+              "approach": "1. Stoffmenge von Fe berechnen\n2. Stöchiometrisches Verhältnis: 1:1\n3. Stoffmenge von S = Stoffmenge von Fe\n4. Masse von S berechnen\n",
+              "overview": "n(Fe) = 0,2 mol\nn(S) = 0,2 mol\nm(S) = 6,4 g\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge von Eisen berechnen",
+                "solution": "n(Fe) = 11,2 g ÷ 56 g/mol = 0,2 mol"
+              },
+              {
+                "description": "Stöchiometrisches Verhältnis ablesen",
+                "solution": "Aus Fe + S → FeS: Verhältnis Fe:S = 1:1"
+              },
+              {
+                "description": "Stoffmenge von Schwefel bestimmen",
+                "solution": "n(S) = n(Fe) = 0,2 mol"
+              },
+              {
+                "description": "Masse von Schwefel berechnen",
+                "solution": "m(S) = 0,2 mol × 32 g/mol = 6,4 g"
+              }
+            ],
+            "finalAnswer": "m(S) = 6,4 g",
+            "relatedBlueprints": [
+              "stoichiometry-calculation-blueprint"
+            ]
+          }
+        ],
+        "4": [],
+        "5": [
+          {
+            "id": "ex-03-05",
+            "title": "Ammoniaksynthese mit limitierendem Reaktanden",
+            "level": 5,
+            "task": "Bei der Ammoniaksynthese reagieren Stickstoff und Wasserstoff:\n\nN₂ + 3 H₂ → 2 NH₃\n\nEs stehen 28 g Stickstoff und 9 g Wasserstoff zur Verfügung.\n\nBerechne:\na) Welcher Reaktand ist im Überschuss?\nb) Wie viel Gramm Ammoniak können maximal entstehen?\nc) Wie viel Gramm des Überschuss-Reaktanden bleiben übrig?\n\nGegeben: M(N₂) = 28 g/mol, M(H₂) = 2 g/mol, M(NH₃) = 17 g/mol\n",
+            "hints": {
+              "keyword": "Limitierender Reaktand bestimmt Produktmenge",
+              "approach": "1. Stoffmengen beider Edukte berechnen\n2. Aus Verhältnis 1:3 prüfen, welcher limitiert\n3. Mit limitierendem Reaktanden die Produktmenge berechnen\n4. Überschuss berechnen\n",
+              "overview": "n(N₂) = 1 mol, n(H₂) = 4,5 mol\nFür 1 mol N₂ braucht man 3 mol H₂ → N₂ limitiert\nn(NH₃) = 2 mol → m(NH₃) = 34 g\nH₂-Überschuss: 4,5 - 3 = 1,5 mol → 3 g\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge von Stickstoff berechnen",
+                "solution": "n(N₂) = 28 g ÷ 28 g/mol = 1,0 mol"
+              },
+              {
+                "description": "Stoffmenge von Wasserstoff berechnen",
+                "solution": "n(H₂) = 9 g ÷ 2 g/mol = 4,5 mol"
+              },
+              {
+                "description": "Benötigtes H₂ für vorhandenes N₂ berechnen",
+                "solution": "Für 1 mol N₂ braucht man 3 mol H₂ (Verhältnis 1:3)"
+              },
+              {
+                "description": "Limitierenden Reaktanden identifizieren",
+                "solution": "Vorhanden: 4,5 mol H₂, benötigt: 3 mol → H₂ im Überschuss, N₂ limitiert"
+              },
+              {
+                "description": "Stoffmenge NH₃ aus limitierendem Reaktanden",
+                "solution": "n(NH₃) = 2 × n(N₂) = 2 × 1,0 mol = 2,0 mol (Verhältnis 1:2)"
+              },
+              {
+                "description": "Masse von Ammoniak berechnen",
+                "solution": "m(NH₃) = 2,0 mol × 17 g/mol = 34 g"
+              },
+              {
+                "description": "Überschuss an Wasserstoff berechnen",
+                "solution": "n(H₂, übrig) = 4,5 mol - 3,0 mol = 1,5 mol → m = 1,5 × 2 = 3 g"
+              }
+            ],
+            "finalAnswer": "a) Wasserstoff ist im Überschuss (Stickstoff ist limitierend)\nb) m(NH₃) = 34 g\nc) m(H₂, übrig) = 3 g\n",
+            "relatedBlueprints": [
+              "stoichiometry-calculation-blueprint",
+              "limiting-reagent-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "stoichiometry-calculation"
+    },
+    {
+      "id": "05-loesungen-konzentrationen",
+      "title": "05-loesungen-konzentrationen",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-05-01",
+            "title": "Molarität berechnen",
+            "level": 1,
+            "task": "In 500 mL Lösung sind 5,85 g Natriumchlorid (NaCl) gelöst.\n\nBerechne die Molarität (Stoffmengenkonzentration) der Lösung.\n\nGegeben: M(NaCl) = 58,5 g/mol\n",
+            "hints": {
+              "keyword": "c = n/V (Stoffmenge pro Volumen)",
+              "approach": "1. Stoffmenge berechnen: n = m/M\n2. Volumen in Liter umrechnen\n3. Konzentration berechnen: c = n/V\n",
+              "overview": "n = 5,85/58,5 = 0,1 mol\nV = 0,5 L\nc = 0,1/0,5 = 0,2 mol/L\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge NaCl berechnen",
+                "solution": "n = 5,85 g / 58,5 g/mol = 0,1 mol"
+              },
+              {
+                "description": "Volumen in Liter umrechnen",
+                "solution": "V = 500 mL = 0,5 L"
+              },
+              {
+                "description": "Molarität berechnen",
+                "solution": "c = 0,1 mol / 0,5 L = 0,2 mol/L = 0,2 M"
+              }
+            ],
+            "finalAnswer": "c(NaCl) = 0,2 mol/L",
+            "relatedCheatsheets": [
+              "loesungen-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-05-02",
+            "title": "Masse aus Konzentration",
+            "level": 1,
+            "task": "Wie viel Gramm Glucose (C₆H₁₂O₆) sind in 250 mL einer\n0,5 M Lösung enthalten?\n\nGegeben: M(C₆H₁₂O₆) = 180 g/mol\n",
+            "hints": {
+              "keyword": "Erst n = c × V, dann m = n × M",
+              "approach": "1. Stoffmenge berechnen: n = c × V\n2. Masse berechnen: m = n × M\n",
+              "overview": "n = 0,5 × 0,25 = 0,125 mol\nm = 0,125 × 180 = 22,5 g\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge berechnen",
+                "solution": "n = 0,5 mol/L × 0,25 L = 0,125 mol"
+              },
+              {
+                "description": "Masse berechnen",
+                "solution": "m = 0,125 mol × 180 g/mol = 22,5 g"
+              }
+            ],
+            "finalAnswer": "m(Glucose) = 22,5 g",
+            "relatedCheatsheets": [
+              "loesungen-cheatsheet"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "id": "ex-05-03",
+            "title": "Massenanteil berechnen",
+            "level": 2,
+            "task": "20 g Kochsalz werden in 180 g Wasser gelöst.\n\nBerechne den Massenanteil (w) des Salzes in der Lösung.\n",
+            "hints": {
+              "keyword": "w = m(Stoff) / m(Lösung)",
+              "approach": "1. Gesamtmasse der Lösung berechnen\n2. Massenanteil berechnen\n3. In Prozent umrechnen\n",
+              "overview": "m(Lösung) = 20 + 180 = 200 g\nw = 20/200 = 0,1 = 10%\n"
+            },
+            "steps": [
+              {
+                "description": "Gesamtmasse der Lösung berechnen",
+                "solution": "m(Lösung) = m(NaCl) + m(H₂O) = 20 g + 180 g = 200 g"
+              },
+              {
+                "description": "Massenanteil berechnen",
+                "solution": "w = m(NaCl) / m(Lösung) = 20 g / 200 g = 0,1"
+              },
+              {
+                "description": "In Prozent umrechnen",
+                "solution": "w = 0,1 × 100% = 10%"
+              }
+            ],
+            "finalAnswer": "w(NaCl) = 10% (oder 0,1)",
+            "relatedCheatsheets": [
+              "loesungen-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-05-04",
+            "title": "Verdünnung berechnen",
+            "level": 2,
+            "task": "Wie viel mL einer 2 M HCl-Lösung werden benötigt,\num 500 mL einer 0,1 M Lösung herzustellen?\n",
+            "hints": {
+              "keyword": "Verdünnungsformel: c₁ × V₁ = c₂ × V₂",
+              "approach": "1. Verdünnungsformel aufstellen\n2. Nach V₁ umstellen\n3. Werte einsetzen\n",
+              "overview": "c₁ × V₁ = c₂ × V₂\n2 × V₁ = 0,1 × 500\nV₁ = 25 mL\n"
+            },
+            "steps": [
+              {
+                "description": "Verdünnungsformel aufstellen",
+                "solution": "c₁ × V₁ = c₂ × V₂"
+              },
+              {
+                "description": "Nach V₁ umstellen",
+                "solution": "V₁ = (c₂ × V₂) / c₁"
+              },
+              {
+                "description": "Werte einsetzen und berechnen",
+                "solution": "V₁ = (0,1 mol/L × 500 mL) / 2 mol/L = 25 mL"
+              }
+            ],
+            "finalAnswer": "V₁ = 25 mL der 2 M HCl-Lösung",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "id": "ex-05-05",
+            "title": "Molarität aus Massenanteil",
+            "level": 3,
+            "task": "Eine wässrige Schwefelsäure-Lösung hat einen Massenanteil\nvon 49% H₂SO₄ und eine Dichte von 1,38 g/mL.\n\nBerechne die Molarität der Lösung.\n\nGegeben: M(H₂SO₄) = 98 g/mol\n",
+            "hints": {
+              "keyword": "Erst Masse pro Liter, dann Stoffmenge",
+              "approach": "1. Masse von 1 L Lösung berechnen\n2. Masse H₂SO₄ aus Massenanteil\n3. Stoffmenge berechnen\n4. Molarität = n/V\n",
+              "overview": "m(1L) = 1380 g\nm(H₂SO₄) = 0,49 × 1380 = 676,2 g\nn = 676,2/98 = 6,9 mol\nc = 6,9 M\n"
+            },
+            "steps": [
+              {
+                "description": "Masse von 1 L Lösung berechnen",
+                "solution": "m(Lösung) = ρ × V = 1,38 g/mL × 1000 mL = 1380 g"
+              },
+              {
+                "description": "Masse H₂SO₄ in 1 L berechnen",
+                "solution": "m(H₂SO₄) = w × m(Lösung) = 0,49 × 1380 g = 676,2 g"
+              },
+              {
+                "description": "Stoffmenge H₂SO₄ berechnen",
+                "solution": "n = 676,2 g / 98 g/mol = 6,9 mol"
+              },
+              {
+                "description": "Molarität angeben",
+                "solution": "c = n/V = 6,9 mol / 1 L = 6,9 mol/L"
+              }
+            ],
+            "finalAnswer": "c(H₂SO₄) = 6,9 mol/L",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-05-06",
+            "title": "Ionenkonzentration",
+            "level": 3,
+            "task": "100 mL einer 0,3 M Calciumchlorid-Lösung (CaCl₂) werden hergestellt.\n\nBerechne:\na) Die Konzentration der Ca²⁺-Ionen\nb) Die Konzentration der Cl⁻-Ionen\nc) Die Gesamtionenkonzentration\n",
+            "hints": {
+              "keyword": "CaCl₂ → Ca²⁺ + 2 Cl⁻",
+              "approach": "1. Dissoziation aufschreiben\n2. Stöchiometrische Verhältnisse anwenden\n3. Konzentrationen berechnen\n",
+              "overview": "c(Ca²⁺) = 0,3 M\nc(Cl⁻) = 2 × 0,3 = 0,6 M\nc(gesamt) = 0,3 + 0,6 = 0,9 M\n"
+            },
+            "steps": [
+              {
+                "description": "Dissoziation aufschreiben",
+                "solution": "CaCl₂ → Ca²⁺ + 2 Cl⁻"
+              },
+              {
+                "description": "Konzentration Ca²⁺ berechnen",
+                "solution": "c(Ca²⁺) = c(CaCl₂) = 0,3 mol/L"
+              },
+              {
+                "description": "Konzentration Cl⁻ berechnen",
+                "solution": "c(Cl⁻) = 2 × c(CaCl₂) = 2 × 0,3 = 0,6 mol/L"
+              },
+              {
+                "description": "Gesamtionenkonzentration berechnen",
+                "solution": "c(gesamt) = c(Ca²⁺) + c(Cl⁻) = 0,3 + 0,6 = 0,9 mol/L"
+              }
+            ],
+            "finalAnswer": "a) c(Ca²⁺) = 0,3 mol/L\nb) c(Cl⁻) = 0,6 mol/L\nc) c(gesamt) = 0,9 mol/L\n",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "id": "ex-05-07",
+            "title": "Mischen von Lösungen",
+            "level": 4,
+            "task": "200 mL einer 0,5 M NaCl-Lösung werden mit 300 mL einer\n0,2 M NaCl-Lösung gemischt.\n\nBerechne die Konzentration der resultierenden Lösung.\n",
+            "hints": {
+              "keyword": "n(gesamt) = n₁ + n₂, dann c = n/V(gesamt)",
+              "approach": "1. Stoffmenge in Lösung 1 berechnen\n2. Stoffmenge in Lösung 2 berechnen\n3. Gesamtstoffmenge addieren\n4. Gesamtvolumen addieren\n5. Neue Konzentration berechnen\n",
+              "overview": "n₁ = 0,5 × 0,2 = 0,1 mol\nn₂ = 0,2 × 0,3 = 0,06 mol\nn(ges) = 0,16 mol\nV(ges) = 0,5 L\nc = 0,16/0,5 = 0,32 M\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge in Lösung 1 berechnen",
+                "solution": "n₁ = c₁ × V₁ = 0,5 mol/L × 0,2 L = 0,1 mol"
+              },
+              {
+                "description": "Stoffmenge in Lösung 2 berechnen",
+                "solution": "n₂ = c₂ × V₂ = 0,2 mol/L × 0,3 L = 0,06 mol"
+              },
+              {
+                "description": "Gesamtstoffmenge berechnen",
+                "solution": "n(gesamt) = n₁ + n₂ = 0,1 + 0,06 = 0,16 mol"
+              },
+              {
+                "description": "Gesamtvolumen berechnen",
+                "solution": "V(gesamt) = V₁ + V₂ = 0,2 + 0,3 = 0,5 L"
+              },
+              {
+                "description": "Neue Konzentration berechnen",
+                "solution": "c = n(gesamt) / V(gesamt) = 0,16 mol / 0,5 L = 0,32 mol/L"
+              }
+            ],
+            "finalAnswer": "c(NaCl) = 0,32 mol/L",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-05-08",
+            "title": "Lösungsherstellung mit Dihydrat",
+            "level": 4,
+            "task": "Es sollen 250 mL einer 0,2 M CuSO₄-Lösung hergestellt werden.\nVerfügbar ist nur Kupfersulfat-Pentahydrat (CuSO₄ · 5 H₂O).\n\nWie viel Gramm des Hydrats werden benötigt?\n\nGegeben: M(CuSO₄ · 5 H₂O) = 249,7 g/mol\n",
+            "hints": {
+              "keyword": "1 mol Hydrat enthält 1 mol CuSO₄",
+              "approach": "1. Benötigte Stoffmenge CuSO₄ berechnen\n2. Diese entspricht der Stoffmenge des Hydrats\n3. Masse des Hydrats berechnen\n",
+              "overview": "n(CuSO₄) = 0,2 × 0,25 = 0,05 mol\nn(Hydrat) = 0,05 mol\nm = 0,05 × 249,7 = 12,49 g\n"
+            },
+            "steps": [
+              {
+                "description": "Benötigte Stoffmenge CuSO₄ berechnen",
+                "solution": "n(CuSO₄) = c × V = 0,2 mol/L × 0,25 L = 0,05 mol"
+              },
+              {
+                "description": "Stoffmenge des Hydrats",
+                "solution": "1 mol CuSO₄ · 5 H₂O enthält 1 mol CuSO₄, also n(Hydrat) = 0,05 mol"
+              },
+              {
+                "description": "Masse des Hydrats berechnen",
+                "solution": "m = n × M = 0,05 mol × 249,7 g/mol = 12,485 g ≈ 12,5 g"
+              }
+            ],
+            "finalAnswer": "m(CuSO₄ · 5 H₂O) = 12,5 g",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "id": "ex-05-09",
+            "title": "Titration zur Konzentrationsbestimmung",
+            "level": 5,
+            "task": "25,0 mL einer HCl-Lösung unbekannter Konzentration werden\nmit 0,1 M NaOH-Lösung titriert. Der Äquivalenzpunkt wird\nbei 18,5 mL NaOH erreicht.\n\nBerechne:\na) Die Stoffmenge NaOH am Äquivalenzpunkt\nb) Die Konzentration der HCl-Lösung\nc) Die Masse HCl in 100 mL der Lösung\n\nGegeben: M(HCl) = 36,5 g/mol\n",
+            "hints": {
+              "keyword": "HCl + NaOH → NaCl + H₂O (1:1 Verhältnis)",
+              "approach": "1. Stoffmenge NaOH berechnen\n2. Reaktionsgleichung → Stoffmenge HCl\n3. Konzentration HCl berechnen\n4. Masse in 100 mL berechnen\n",
+              "overview": "n(NaOH) = 0,1 × 0,0185 = 0,00185 mol\nn(HCl) = 0,00185 mol\nc(HCl) = 0,00185/0,025 = 0,074 M\nm(100 mL) = 0,074 × 0,1 × 36,5 = 0,27 g\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge NaOH berechnen",
+                "solution": "n(NaOH) = c × V = 0,1 mol/L × 0,0185 L = 0,00185 mol"
+              },
+              {
+                "description": "Reaktionsgleichung und Verhältnis",
+                "solution": "HCl + NaOH → NaCl + H₂O (Verhältnis 1:1)"
+              },
+              {
+                "description": "Stoffmenge HCl = Stoffmenge NaOH",
+                "solution": "n(HCl) = n(NaOH) = 0,00185 mol"
+              },
+              {
+                "description": "Konzentration HCl berechnen",
+                "solution": "c(HCl) = n/V = 0,00185 mol / 0,025 L = 0,074 mol/L"
+              },
+              {
+                "description": "Stoffmenge in 100 mL berechnen",
+                "solution": "n(100 mL) = 0,074 mol/L × 0,1 L = 0,0074 mol"
+              },
+              {
+                "description": "Masse HCl berechnen",
+                "solution": "m(HCl) = 0,0074 mol × 36,5 g/mol = 0,27 g"
+              }
+            ],
+            "finalAnswer": "a) n(NaOH) = 0,00185 mol = 1,85 mmol\nb) c(HCl) = 0,074 mol/L\nc) m(HCl) in 100 mL = 0,27 g\n",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint",
+              "titration-blueprint"
+            ]
+          },
+          {
+            "id": "ex-05-10",
+            "title": "Serienverdünnung",
+            "level": 5,
+            "task": "Aus einer 1 M Stammlösung soll durch zweimalige 1:10-Verdünnung\neine finale Lösung hergestellt werden.\n\na) Welche Konzentration hat die Endlösung?\nb) Für 100 mL Endlösung: Wie viel mL Stammlösung werden insgesamt benötigt?\nc) Alternativ: Wie würdest du 100 mL Endlösung in einem Schritt herstellen?\n",
+            "hints": {
+              "keyword": "Verdünnungsfaktor multipliziert sich",
+              "approach": "1. Verdünnungsfaktor berechnen\n2. Endkonzentration berechnen\n3. Für Einzelschritte: Volumina rückrechnen\n4. Für Direktverdünnung: Verdünnungsformel\n",
+              "overview": "Verdünnung: 1:10 × 1:10 = 1:100\nc(Ende) = 1 M / 100 = 0,01 M\nV(Stamm) direkt = 1 mL auf 100 mL\n"
+            },
+            "steps": [
+              {
+                "description": "Gesamtverdünnungsfaktor berechnen",
+                "solution": "Verdünnungsfaktor = 10 × 10 = 100"
+              },
+              {
+                "description": "Endkonzentration berechnen",
+                "solution": "c(Ende) = c(Stamm) / 100 = 1 M / 100 = 0,01 M"
+              },
+              {
+                "description": "Schritt 1: 1:10-Verdünnung",
+                "solution": "10 mL Stammlösung + 90 mL Wasser → 100 mL à 0,1 M"
+              },
+              {
+                "description": "Schritt 2: 1:10-Verdünnung",
+                "solution": "10 mL der 0,1 M + 90 mL Wasser → 100 mL à 0,01 M"
+              },
+              {
+                "description": "Stammlösungsverbrauch",
+                "solution": "Indirekt: 10 mL, aber nur 10 mL der Zwischenlösung verwendet"
+              },
+              {
+                "description": "Direkte Verdünnung mit c₁V₁ = c₂V₂",
+                "solution": "V₁ = (0,01 M × 100 mL) / 1 M = 1 mL Stammlösung + 99 mL Wasser"
+              }
+            ],
+            "finalAnswer": "a) c(Ende) = 0,01 M (= 10 mM)\nb) Für Serienverdünnung: 10 mL Stammlösung werden verwendet\nc) Direktmethode: 1 mL Stammlösung + 99 mL Wasser\n",
+            "relatedBlueprints": [
+              "concentration-calculation-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "concentration-calculation"
+    },
+    {
+      "id": "11-thermodynamik-enthalpie",
+      "title": "11-thermodynamik-enthalpie",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-11-01",
+            "title": "Enthalpieänderung aus Bindungsenergien",
+            "level": 1,
+            "task": "Bei einer Reaktion werden 436 kJ/mol an Bindungsenergie aufgewendet\n(Bindungen brechen) und 569 kJ/mol werden frei (Bindungen bilden).\n\nBerechne die Reaktionsenthalpie ΔH.\n",
+            "hints": {
+              "keyword": "ΔH = Energie(Bruch) - Energie(Bildung)",
+              "approach": "1. Bindungsbruch = positive Energie (aufgewendet)\n2. Bindungsbildung = negative Energie (freigesetzt)\n3. Differenz bilden\n",
+              "overview": "ΔH = 436 - 569 = -133 kJ/mol\nNegativ → exotherm\n"
+            },
+            "steps": [
+              {
+                "description": "Energie für Bindungsbruch identifizieren",
+                "solution": "Aufgewendet: +436 kJ/mol"
+              },
+              {
+                "description": "Energie bei Bindungsbildung identifizieren",
+                "solution": "Freigesetzt: -569 kJ/mol (Vorzeichen negativ)"
+              },
+              {
+                "description": "Reaktionsenthalpie berechnen",
+                "solution": "ΔH = 436 kJ/mol - 569 kJ/mol = -133 kJ/mol"
+              }
+            ],
+            "finalAnswer": "ΔH = -133 kJ/mol (exotherme Reaktion)",
+            "relatedCheatsheets": [
+              "thermodynamik-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-11-02",
+            "title": "Wärme bei Temperaturänderung",
+            "level": 1,
+            "task": "100 g Wasser werden von 20°C auf 80°C erwärmt.\n\nBerechne die benötigte Wärmemenge.\n\nGegeben: c(Wasser) = 4,18 J/(g·K)\n",
+            "hints": {
+              "keyword": "Q = m × c × ΔT",
+              "approach": "1. Temperaturdifferenz berechnen\n2. Formel Q = m × c × ΔT anwenden\n",
+              "overview": "ΔT = 80 - 20 = 60 K\nQ = 100 × 4,18 × 60 = 25.080 J\n"
+            },
+            "steps": [
+              {
+                "description": "Temperaturdifferenz berechnen",
+                "solution": "ΔT = 80°C - 20°C = 60 K (= 60°C)"
+              },
+              {
+                "description": "Wärmemenge berechnen",
+                "solution": "Q = 100 g × 4,18 J/(g·K) × 60 K = 25.080 J = 25,08 kJ"
+              }
+            ],
+            "finalAnswer": "Q = 25,08 kJ",
+            "relatedCheatsheets": [
+              "thermodynamik-cheatsheet"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "id": "ex-11-03",
+            "title": "Bildungsenthalpie zur Reaktionsenthalpie",
+            "level": 2,
+            "task": "Berechne die Reaktionsenthalpie für die Verbrennung von Methan:\nCH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l)\n\nGegeben (Standardbildungsenthalpien):\nΔfH°(CH₄) = -74,8 kJ/mol\nΔfH°(CO₂) = -393,5 kJ/mol\nΔfH°(H₂O) = -285,8 kJ/mol\nΔfH°(O₂) = 0 kJ/mol (Element)\n",
+            "hints": {
+              "keyword": "ΔrH° = Σ ΔfH°(Produkte) - Σ ΔfH°(Edukte)",
+              "approach": "1. Summe der Bildungsenthalpien der Produkte\n2. Summe der Bildungsenthalpien der Edukte\n3. Differenz bilden\n",
+              "overview": "Produkte: -393,5 + 2×(-285,8) = -965,1 kJ\nEdukte: -74,8 + 0 = -74,8 kJ\nΔrH° = -965,1 - (-74,8) = -890,3 kJ\n"
+            },
+            "steps": [
+              {
+                "description": "Summe für Produkte berechnen",
+                "solution": "Σ Produkte = ΔfH°(CO₂) + 2×ΔfH°(H₂O) = -393,5 + 2×(-285,8) = -965,1 kJ/mol"
+              },
+              {
+                "description": "Summe für Edukte berechnen",
+                "solution": "Σ Edukte = ΔfH°(CH₄) + 2×ΔfH°(O₂) = -74,8 + 0 = -74,8 kJ/mol"
+              },
+              {
+                "description": "Reaktionsenthalpie berechnen",
+                "solution": "ΔrH° = -965,1 - (-74,8) = -890,3 kJ/mol"
+              }
+            ],
+            "finalAnswer": "ΔrH° = -890,3 kJ/mol (stark exotherm)",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-11-04",
+            "title": "Kalorimetrie - Verbrennungswärme",
+            "level": 2,
+            "task": "In einem Kalorimeter werden 1,50 g einer Substanz verbrannt.\nDie Temperatur steigt von 22,0°C auf 27,5°C.\nDie Wärmekapazität des Kalorimeters beträgt 3,24 kJ/K.\n\nBerechne die Verbrennungsenthalpie pro Gramm.\n",
+            "hints": {
+              "keyword": "Q = C × ΔT (Kalorimeterkonstante)",
+              "approach": "1. Temperaturdifferenz berechnen\n2. Wärmemenge berechnen\n3. Auf 1 g umrechnen\n",
+              "overview": "ΔT = 5,5 K\nQ = 3,24 × 5,5 = 17,82 kJ\nq = 17,82/1,5 = 11,88 kJ/g\n"
+            },
+            "steps": [
+              {
+                "description": "Temperaturdifferenz berechnen",
+                "solution": "ΔT = 27,5°C - 22,0°C = 5,5 K"
+              },
+              {
+                "description": "Wärmemenge berechnen",
+                "solution": "Q = C × ΔT = 3,24 kJ/K × 5,5 K = 17,82 kJ"
+              },
+              {
+                "description": "Verbrennungsenthalpie pro Gramm",
+                "solution": "q = Q/m = 17,82 kJ / 1,50 g = 11,88 kJ/g"
+              }
+            ],
+            "finalAnswer": "Verbrennungsenthalpie = 11,88 kJ/g",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "id": "ex-11-05",
+            "title": "Hess-Satz Anwendung",
+            "level": 3,
+            "task": "Berechne die Bildungsenthalpie von CO(g) aus folgenden Daten:\n\n(1) C(s) + O₂(g) → CO₂(g)      ΔH₁ = -393,5 kJ/mol\n(2) CO(g) + ½ O₂(g) → CO₂(g)   ΔH₂ = -283,0 kJ/mol\n\nGesucht: C(s) + ½ O₂(g) → CO(g)   ΔfH°(CO) = ?\n",
+            "hints": {
+              "keyword": "Reaktionen so kombinieren, dass Zielreaktion entsteht",
+              "approach": "1. Zielreaktion aufschreiben\n2. Reaktion (2) umkehren\n3. Mit Reaktion (1) addieren\n4. Enthalpien entsprechend verrechnen\n",
+              "overview": "Reaktion (1): C + O₂ → CO₂, ΔH = -393,5\nReaktion (2) umgekehrt: CO₂ → CO + ½O₂, ΔH = +283,0\nSumme: C + ½O₂ → CO, ΔH = -110,5 kJ\n"
+            },
+            "steps": [
+              {
+                "description": "Zielreaktion identifizieren",
+                "solution": "C(s) + ½ O₂(g) → CO(g)"
+              },
+              {
+                "description": "Reaktion (2) umkehren",
+                "solution": "CO₂(g) → CO(g) + ½ O₂(g), ΔH = +283,0 kJ/mol"
+              },
+              {
+                "description": "Reaktionen addieren",
+                "solution": "C + O₂ → CO₂ plus CO₂ → CO + ½O₂ ergibt: C + ½O₂ → CO"
+              },
+              {
+                "description": "Enthalpien addieren",
+                "solution": "ΔfH°(CO) = -393,5 + 283,0 = -110,5 kJ/mol"
+              }
+            ],
+            "finalAnswer": "ΔfH°(CO) = -110,5 kJ/mol",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint",
+              "hess-law-blueprint"
+            ]
+          },
+          {
+            "id": "ex-11-06",
+            "title": "Mischtemperatur berechnen",
+            "level": 3,
+            "task": "150 g Wasser (25°C) werden mit 100 g Wasser (75°C) gemischt.\n\nBerechne die Mischtemperatur (Wärmeverlust vernachlässigt).\n\nGegeben: c(Wasser) = 4,18 J/(g·K)\n",
+            "hints": {
+              "keyword": "Wärmeabgabe = Wärmeaufnahme",
+              "approach": "1. Wärmegleichung aufstellen\n2. m₁c(T-T₁) = m₂c(T₂-T)\n3. Nach T auflösen\n",
+              "overview": "150(T-25) = 100(75-T)\n150T - 3750 = 7500 - 100T\n250T = 11250\nT = 45°C\n"
+            },
+            "steps": [
+              {
+                "description": "Wärmegleichung aufstellen",
+                "solution": "Qaufgenommen = Qabgegeben → m₁c(T-T₁) = m₂c(T₂-T)"
+              },
+              {
+                "description": "Werte einsetzen (c kürzt sich)",
+                "solution": "150(T-25) = 100(75-T)"
+              },
+              {
+                "description": "Gleichung auflösen",
+                "solution": "150T - 3750 = 7500 - 100T → 250T = 11250"
+              },
+              {
+                "description": "Mischtemperatur berechnen",
+                "solution": "T = 11250/250 = 45°C"
+              }
+            ],
+            "finalAnswer": "Mischtemperatur T = 45°C",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "id": "ex-11-07",
+            "title": "Gibbs-Energie berechnen",
+            "level": 4,
+            "task": "Für eine Reaktion gilt bei 25°C:\nΔH° = -100 kJ/mol\nΔS° = -200 J/(mol·K)\n\na) Berechne ΔG° bei 25°C\nb) Bei welcher Temperatur ist ΔG° = 0?\nc) Ist die Reaktion bei 25°C spontan?\n",
+            "hints": {
+              "keyword": "ΔG = ΔH - T·ΔS",
+              "approach": "1. Einheiten angleichen (kJ vs J)\n2. ΔG bei 25°C berechnen\n3. ΔG = 0 setzen und nach T auflösen\n4. Vorzeichen von ΔG interpretieren\n",
+              "overview": "T = 298 K\nΔG = -100 - 298×(-0,2) = -100 + 59,6 = -40,4 kJ\nBei ΔG = 0: T = ΔH/ΔS = 100/0,2 = 500 K\n"
+            },
+            "steps": [
+              {
+                "description": "Temperatur in Kelvin und Einheiten angleichen",
+                "solution": "T = 25 + 273 = 298 K; ΔS° = -200 J/(mol·K) = -0,2 kJ/(mol·K)"
+              },
+              {
+                "description": "ΔG° bei 25°C berechnen",
+                "solution": "ΔG° = ΔH° - T·ΔS° = -100 - 298×(-0,2) = -100 + 59,6 = -40,4 kJ/mol"
+              },
+              {
+                "description": "Gleichgewichtstemperatur (ΔG = 0) berechnen",
+                "solution": "0 = ΔH° - T·ΔS° → T = ΔH°/ΔS° = -100/(-0,2) = 500 K = 227°C"
+              },
+              {
+                "description": "Spontanität beurteilen",
+                "solution": "ΔG° < 0 → Reaktion ist bei 25°C spontan (exergonisch)"
+              }
+            ],
+            "finalAnswer": "a) ΔG° = -40,4 kJ/mol\nb) ΔG° = 0 bei T = 500 K (227°C)\nc) Ja, die Reaktion ist bei 25°C spontan (ΔG° < 0)\n",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint",
+              "gibbs-energy-blueprint"
+            ]
+          },
+          {
+            "id": "ex-11-08",
+            "title": "Kalorimetrie mit Reaktion",
+            "level": 4,
+            "task": "50 mL 1,0 M HCl werden mit 50 mL 1,0 M NaOH im Kalorimeter gemischt.\nDie Temperatur steigt von 22,0°C auf 28,8°C.\n\nBerechne die Neutralisationsenthalpie.\n\nAnnahme: Dichte = 1 g/mL, c = 4,18 J/(g·K)\n",
+            "hints": {
+              "keyword": "Q = m·c·ΔT, dann durch Stoffmenge teilen",
+              "approach": "1. Masse der Lösung berechnen\n2. Wärme berechnen\n3. Stoffmenge der Reaktion berechnen\n4. Enthalpie pro Mol berechnen\n",
+              "overview": "m = 100 g, ΔT = 6,8 K\nQ = 100 × 4,18 × 6,8 = 2842 J\nn = 0,05 mol\nΔH = -2842/0,05 = -56,8 kJ/mol\n"
+            },
+            "steps": [
+              {
+                "description": "Masse der Lösung berechnen",
+                "solution": "m = (50 + 50) mL × 1 g/mL = 100 g"
+              },
+              {
+                "description": "Temperaturdifferenz",
+                "solution": "ΔT = 28,8 - 22,0 = 6,8 K"
+              },
+              {
+                "description": "Wärme berechnen",
+                "solution": "Q = 100 g × 4,18 J/(g·K) × 6,8 K = 2842,4 J = 2,84 kJ"
+              },
+              {
+                "description": "Stoffmenge der Reaktion",
+                "solution": "n(HCl) = n(NaOH) = 0,05 L × 1 mol/L = 0,05 mol"
+              },
+              {
+                "description": "Neutralisationsenthalpie berechnen",
+                "solution": "ΔH = -Q/n = -2,84 kJ / 0,05 mol = -56,8 kJ/mol"
+              }
+            ],
+            "finalAnswer": "Neutralisationsenthalpie ΔH = -56,8 kJ/mol (exotherm)",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "id": "ex-11-09",
+            "title": "Komplexe Hess-Anwendung",
+            "level": 5,
+            "task": "Berechne die Reaktionsenthalpie für:\n2 Fe(s) + 3/2 O₂(g) → Fe₂O₃(s)\n\nGegeben:\n(1) 2 Fe(s) + 6 HCl(aq) → 2 FeCl₃(aq) + 3 H₂(g)   ΔH₁ = -198 kJ\n(2) Fe₂O₃(s) + 6 HCl(aq) → 2 FeCl₃(aq) + 3 H₂O(l) ΔH₂ = -160 kJ\n(3) H₂(g) + ½ O₂(g) → H₂O(l)                      ΔH₃ = -286 kJ\n",
+            "hints": {
+              "keyword": "Reaktionen so kombinieren, dass Zielgleichung entsteht",
+              "approach": "1. Zielreaktion analysieren\n2. Reaktion (2) umkehren\n3. Reaktion (3) mit 3 multiplizieren\n4. Alle kombinieren\n",
+              "overview": "(1) + (2 umgekehrt) + 3×(3)\n= -198 + 160 + 3×(-286)\n= -198 + 160 - 858 = -896 kJ\n"
+            },
+            "steps": [
+              {
+                "description": "Zielreaktion: 2 Fe + 3/2 O₂ → Fe₂O₃",
+                "solution": "Fe und O₂ als Edukte, Fe₂O₃ als Produkt benötigt"
+              },
+              {
+                "description": "Reaktion (1) liefert 2 Fe als Edukt",
+                "solution": "2 Fe + 6 HCl → 2 FeCl₃ + 3 H₂, ΔH = -198 kJ"
+              },
+              {
+                "description": "Reaktion (2) umkehren für Fe₂O₃ als Produkt",
+                "solution": "2 FeCl₃ + 3 H₂O → Fe₂O₃ + 6 HCl, ΔH = +160 kJ"
+              },
+              {
+                "description": "Reaktion (3) ×3 um 3 H₂ zu verbrauchen",
+                "solution": "3 H₂ + 3/2 O₂ → 3 H₂O, ΔH = 3×(-286) = -858 kJ"
+              },
+              {
+                "description": "Alle Reaktionen addieren",
+                "solution": "2 Fe + 3/2 O₂ → Fe₂O₃ (HCl, FeCl₃, H₂, H₂O kürzen sich)"
+              },
+              {
+                "description": "Enthalpien addieren",
+                "solution": "ΔH = -198 + 160 + (-858) = -896 kJ"
+              }
+            ],
+            "finalAnswer": "ΔfH°(Fe₂O₃) = -896 kJ/mol",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint",
+              "hess-law-blueprint"
+            ]
+          },
+          {
+            "id": "ex-11-10",
+            "title": "Temperaturabhängigkeit der Reaktion",
+            "level": 5,
+            "task": "Eine Reaktion hat:\nΔH° = +50 kJ/mol\nΔS° = +150 J/(mol·K)\n\na) Bei welcher Temperatur wird die Reaktion spontan?\nb) Berechne ΔG° bei 100°C und 500°C\nc) Erkläre das Ergebnis chemisch\n",
+            "hints": {
+              "keyword": "Reaktion mit ΔH > 0 und ΔS > 0 ist bei hohen T spontan",
+              "approach": "1. Gleichgewichtstemperatur ΔG = 0 bestimmen\n2. ΔG bei beiden Temperaturen berechnen\n3. Ergebnis interpretieren\n",
+              "overview": "T(eq) = ΔH/ΔS = 50000/150 = 333 K = 60°C\nBei 100°C: ΔG = 50 - 373×0,15 = -5,95 kJ (spontan)\nBei 500°C: ΔG = 50 - 773×0,15 = -65,95 kJ (stark spontan)\n"
+            },
+            "steps": [
+              {
+                "description": "Einheiten angleichen",
+                "solution": "ΔS° = 150 J/(mol·K) = 0,15 kJ/(mol·K)"
+              },
+              {
+                "description": "Gleichgewichtstemperatur berechnen",
+                "solution": "ΔG = 0: T = ΔH°/ΔS° = 50/0,15 = 333 K = 60°C"
+              },
+              {
+                "description": "ΔG° bei 100°C (373 K) berechnen",
+                "solution": "ΔG° = 50 - 373×0,15 = 50 - 55,95 = -5,95 kJ/mol"
+              },
+              {
+                "description": "ΔG° bei 500°C (773 K) berechnen",
+                "solution": "ΔG° = 50 - 773×0,15 = 50 - 115,95 = -65,95 kJ/mol"
+              },
+              {
+                "description": "Interpretation",
+                "solution": "Reaktion wird ab 60°C spontan; bei höheren T wird sie thermodynamisch immer günstiger"
+              },
+              {
+                "description": "Chemische Erklärung",
+                "solution": "Endotherme Reaktion mit Entropiezunahme → entropiegetrieben bei hohen Temperaturen"
+              }
+            ],
+            "finalAnswer": "a) Reaktion wird spontan ab T > 333 K (60°C)\nb) ΔG°(100°C) = -5,95 kJ/mol; ΔG°(500°C) = -65,95 kJ/mol\nc) Entropiegetriebene Reaktion: Bei ΔH > 0 und ΔS > 0 überwiegt der TΔS-Term bei hohen T\n",
+            "relatedBlueprints": [
+              "thermodynamics-calculation-blueprint",
+              "gibbs-energy-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "thermodynamics-calculation"
+    },
+    {
+      "id": "13-kolligative-eigenschaften",
+      "title": "13-kolligative-eigenschaften",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-13-01",
+            "title": "Siedepunktserhöhung berechnen",
+            "level": 1,
+            "task": "Berechne die Siedepunktserhöhung einer Lösung von 0,5 mol\nGlucose in 1 kg Wasser.\n\nGegeben: Keb(Wasser) = 0,512 K·kg/mol\n",
+            "hints": {
+              "keyword": "ΔTeb = Keb × m (Molalität)",
+              "approach": "1. Molalität berechnen\n2. Siedepunktserhöhung berechnen\n",
+              "overview": "m = 0,5 mol/kg\nΔTeb = 0,512 × 0,5 = 0,256 K\n"
+            },
+            "steps": [
+              {
+                "description": "Molalität bestimmen",
+                "solution": "m = n/m(Lösungsmittel) = 0,5 mol / 1 kg = 0,5 mol/kg"
+              },
+              {
+                "description": "Siedepunktserhöhung berechnen",
+                "solution": "ΔTeb = Keb × m = 0,512 K·kg/mol × 0,5 mol/kg = 0,256 K"
+              }
+            ],
+            "finalAnswer": "ΔTeb = 0,26 K (Siedepunkt = 100,26°C)",
+            "relatedCheatsheets": [
+              "loesungen-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-13-02",
+            "title": "Gefrierpunktserniedrigung",
+            "level": 1,
+            "task": "18,0 g Glucose (M = 180 g/mol) werden in 500 g Wasser gelöst.\n\nBerechne die Gefrierpunktserniedrigung.\n\nGegeben: Kf(Wasser) = 1,86 K·kg/mol\n",
+            "hints": {
+              "keyword": "ΔTf = Kf × m",
+              "approach": "1. Stoffmenge berechnen\n2. Molalität berechnen\n3. ΔTf berechnen\n",
+              "overview": "n = 18/180 = 0,1 mol\nm = 0,1/0,5 = 0,2 mol/kg\nΔTf = 1,86 × 0,2 = 0,372 K\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge Glucose berechnen",
+                "solution": "n = 18,0 g / 180 g/mol = 0,1 mol"
+              },
+              {
+                "description": "Molalität berechnen",
+                "solution": "m = 0,1 mol / 0,5 kg = 0,2 mol/kg"
+              },
+              {
+                "description": "Gefrierpunktserniedrigung berechnen",
+                "solution": "ΔTf = 1,86 K·kg/mol × 0,2 mol/kg = 0,372 K"
+              }
+            ],
+            "finalAnswer": "ΔTf = 0,37 K (Gefrierpunkt = -0,37°C)",
+            "relatedCheatsheets": [
+              "loesungen-cheatsheet"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "id": "ex-13-03",
+            "title": "Osmotischer Druck",
+            "level": 2,
+            "task": "Berechne den osmotischen Druck einer 0,2 M Glucose-Lösung bei 25°C.\n\nGegeben: R = 8,314 J/(mol·K)\n",
+            "hints": {
+              "keyword": "π = c × R × T",
+              "approach": "1. Temperatur in Kelvin\n2. vant-Hoff-Gleichung anwenden\n3. Einheiten beachten (Pa oder bar)\n",
+              "overview": "T = 298 K\nπ = 0,2 × 8,314 × 298\nπ = 495,5 kPa ≈ 4,95 bar\n"
+            },
+            "steps": [
+              {
+                "description": "Temperatur in Kelvin",
+                "solution": "T = 25 + 273 = 298 K"
+              },
+              {
+                "description": "vant-Hoff-Gleichung anwenden",
+                "solution": "π = c × R × T = 0,2 mol/L × 8,314 J/(mol·K) × 298 K"
+              },
+              {
+                "description": "Berechnen (J/L = Pa × 10³)",
+                "solution": "π = 495,5 J/L = 495,5 kPa = 4,95 bar"
+              }
+            ],
+            "finalAnswer": "π ≈ 4,95 bar (≈ 495 kPa)",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-13-04",
+            "title": "Elektrolyt-Lösung - vant-Hoff-Faktor",
+            "level": 2,
+            "task": "Berechne die Gefrierpunktserniedrigung einer 0,1 m NaCl-Lösung.\n\nGegeben:\nKf = 1,86 K·kg/mol\ni = 2 (vollständige Dissoziation)\n",
+            "hints": {
+              "keyword": "ΔTf = i × Kf × m",
+              "approach": "1. vant-Hoff-Faktor berücksichtigen\n2. Formel mit i multiplizieren\n",
+              "overview": "ΔTf = 2 × 1,86 × 0,1 = 0,372 K\n"
+            },
+            "steps": [
+              {
+                "description": "Dissoziation beachten",
+                "solution": "NaCl → Na⁺ + Cl⁻ (2 Teilchen pro Formeleinheit, i = 2)"
+              },
+              {
+                "description": "Erweiterte Formel anwenden",
+                "solution": "ΔTf = i × Kf × m = 2 × 1,86 K·kg/mol × 0,1 mol/kg"
+              },
+              {
+                "description": "Berechnen",
+                "solution": "ΔTf = 0,372 K"
+              }
+            ],
+            "finalAnswer": "ΔTf = 0,37 K (Gefrierpunkt = -0,37°C)",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "id": "ex-13-05",
+            "title": "Molare Masse aus Gefrierpunktserniedrigung",
+            "level": 3,
+            "task": "5,0 g einer unbekannten Substanz werden in 100 g Wasser gelöst.\nDer Gefrierpunkt sinkt auf -0,93°C.\n\nBestimme die molare Masse der Substanz.\n\nGegeben: Kf(Wasser) = 1,86 K·kg/mol\n",
+            "hints": {
+              "keyword": "M = Kf × m(Substanz) / (ΔTf × m(Lösungsmittel))",
+              "approach": "1. ΔTf bestimmen\n2. Molalität aus ΔTf berechnen\n3. Stoffmenge berechnen\n4. Molare Masse berechnen\n",
+              "overview": "ΔTf = 0,93 K\nm = 0,93/1,86 = 0,5 mol/kg\nn = 0,5 × 0,1 = 0,05 mol\nM = 5/0,05 = 100 g/mol\n"
+            },
+            "steps": [
+              {
+                "description": "Gefrierpunktserniedrigung",
+                "solution": "ΔTf = 0 - (-0,93) = 0,93 K"
+              },
+              {
+                "description": "Molalität berechnen",
+                "solution": "m = ΔTf / Kf = 0,93 K / 1,86 K·kg/mol = 0,5 mol/kg"
+              },
+              {
+                "description": "Stoffmenge berechnen",
+                "solution": "n = m × m(Lösungsmittel) = 0,5 mol/kg × 0,1 kg = 0,05 mol"
+              },
+              {
+                "description": "Molare Masse berechnen",
+                "solution": "M = m(Substanz) / n = 5,0 g / 0,05 mol = 100 g/mol"
+              }
+            ],
+            "finalAnswer": "M = 100 g/mol",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-13-06",
+            "title": "Dampfdruckerniedrigung",
+            "level": 3,
+            "task": "Berechne den Dampfdruck einer Lösung aus 90 g Glucose (M = 180 g/mol)\nin 180 g Wasser bei 100°C.\n\nGegeben: p°(Wasser, 100°C) = 101,3 kPa\n",
+            "hints": {
+              "keyword": "Raoult: p = x(Lösungsmittel) × p°",
+              "approach": "1. Stoffmengen berechnen\n2. Stoffmengenbruch des Wassers\n3. Dampfdruck nach Raoult\n",
+              "overview": "n(Glucose) = 0,5 mol, n(H₂O) = 10 mol\nx(H₂O) = 10/10,5 = 0,952\np = 0,952 × 101,3 = 96,5 kPa\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmenge Glucose",
+                "solution": "n(Glucose) = 90 g / 180 g/mol = 0,5 mol"
+              },
+              {
+                "description": "Stoffmenge Wasser",
+                "solution": "n(H₂O) = 180 g / 18 g/mol = 10 mol"
+              },
+              {
+                "description": "Stoffmengenbruch Wasser",
+                "solution": "x(H₂O) = 10 / (10 + 0,5) = 10/10,5 = 0,952"
+              },
+              {
+                "description": "Dampfdruck nach Raoult",
+                "solution": "p = x(H₂O) × p° = 0,952 × 101,3 kPa = 96,5 kPa"
+              }
+            ],
+            "finalAnswer": "p = 96,5 kPa (Dampfdruckerniedrigung Δp = 4,8 kPa)",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "id": "ex-13-07",
+            "title": "Dissoziationsgrad aus osmotischem Druck",
+            "level": 4,
+            "task": "Eine 0,1 M Essigsäure-Lösung hat bei 25°C einen osmotischen\nDruck von 253 kPa.\n\nBerechne den Dissoziationsgrad α.\n\nGegeben: R = 8,314 J/(mol·K)\n",
+            "hints": {
+              "keyword": "i = 1 + α (für 1:1 Elektrolyte)",
+              "approach": "1. Theoretischen π berechnen (ohne Dissoziation)\n2. Tatsächlichen vant-Hoff-Faktor bestimmen\n3. α aus i = 1 + α berechnen\n",
+              "overview": "π(theor.) = 0,1 × 8,314 × 298 = 247,8 kPa\ni = 253/247,8 = 1,021\nα = 1,021 - 1 = 0,021 = 2,1%\n"
+            },
+            "steps": [
+              {
+                "description": "Temperatur in Kelvin",
+                "solution": "T = 298 K"
+              },
+              {
+                "description": "Theoretischer osmotischer Druck (i = 1)",
+                "solution": "π(theor.) = c×R×T = 0,1 × 8,314 × 298 = 247,8 kPa"
+              },
+              {
+                "description": "Experimenteller vant-Hoff-Faktor",
+                "solution": "i = π(exp.)/π(theor.) = 253/247,8 = 1,021"
+              },
+              {
+                "description": "Dissoziationsgrad berechnen",
+                "solution": "i = 1 + α → α = i - 1 = 1,021 - 1 = 0,021"
+              },
+              {
+                "description": "In Prozent",
+                "solution": "α = 0,021 = 2,1%"
+              }
+            ],
+            "finalAnswer": "α = 0,021 (2,1% dissoziiert)",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-13-08",
+            "title": "Frostschutzmittel berechnen",
+            "level": 4,
+            "task": "Wie viel Gramm Ethylenglykol (M = 62 g/mol) müssen zu 5 L Wasser\ngegeben werden, um den Gefrierpunkt auf -15°C zu senken?\n\nGegeben: Kf = 1,86 K·kg/mol, ρ(Wasser) ≈ 1 kg/L\n",
+            "hints": {
+              "keyword": "ΔTf = Kf × m, dann Masse berechnen",
+              "approach": "1. ΔTf bestimmen\n2. Benötigte Molalität berechnen\n3. Stoffmenge berechnen\n4. Masse berechnen\n",
+              "overview": "ΔTf = 15 K\nm = 15/1,86 = 8,06 mol/kg\nn = 8,06 × 5 = 40,3 mol\nm = 40,3 × 62 = 2499 g\n"
+            },
+            "steps": [
+              {
+                "description": "Gefrierpunktserniedrigung",
+                "solution": "ΔTf = 0 - (-15) = 15 K"
+              },
+              {
+                "description": "Benötigte Molalität",
+                "solution": "m = ΔTf / Kf = 15 K / 1,86 K·kg/mol = 8,06 mol/kg"
+              },
+              {
+                "description": "Masse des Wassers",
+                "solution": "m(H₂O) = 5 L × 1 kg/L = 5 kg"
+              },
+              {
+                "description": "Stoffmenge Ethylenglykol",
+                "solution": "n = m × m(H₂O) = 8,06 mol/kg × 5 kg = 40,3 mol"
+              },
+              {
+                "description": "Masse Ethylenglykol",
+                "solution": "m = n × M = 40,3 mol × 62 g/mol = 2499 g ≈ 2,5 kg"
+              }
+            ],
+            "finalAnswer": "m(Ethylenglykol) ≈ 2,5 kg",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "id": "ex-13-09",
+            "title": "Umkehrosmose - Mindestdruck",
+            "level": 5,
+            "task": "Meerwasser hat eine Salzkonzentration von ca. 3,5% (w/w) NaCl.\n\nBerechne den Mindestdruck für eine Umkehrosmose-Anlage bei 25°C.\n\nGegeben:\nM(NaCl) = 58,5 g/mol\nR = 8,314 J/(mol·K)\nρ(Meerwasser) ≈ 1,025 kg/L\n",
+            "hints": {
+              "keyword": "Mindestdruck = osmotischer Druck der Lösung",
+              "approach": "1. Massenkonzentration → Stoffmengenkonzentration\n2. vant-Hoff-Faktor (i = 2) berücksichtigen\n3. Osmotischen Druck berechnen\n",
+              "overview": "3,5% → 35 g/L NaCl → 0,6 mol/L\nMit i = 2: c(eff) = 1,2 mol/L\nπ = 1,2 × 8,314 × 298 = 2973 kPa ≈ 29,7 bar\n"
+            },
+            "steps": [
+              {
+                "description": "Massenkonzentration bestimmen",
+                "solution": "3,5% von 1025 g/L = 35,9 g/L NaCl"
+              },
+              {
+                "description": "Stoffmengenkonzentration NaCl",
+                "solution": "c(NaCl) = 35,9 g/L / 58,5 g/mol = 0,614 mol/L"
+              },
+              {
+                "description": "Effektive Konzentration mit i = 2",
+                "solution": "c(eff) = i × c = 2 × 0,614 = 1,228 mol/L"
+              },
+              {
+                "description": "Temperatur in Kelvin",
+                "solution": "T = 298 K"
+              },
+              {
+                "description": "Osmotischer Druck berechnen",
+                "solution": "π = c(eff) × R × T = 1,228 × 8,314 × 298 = 3043 kPa"
+              },
+              {
+                "description": "In bar umrechnen",
+                "solution": "π ≈ 30,4 bar"
+              }
+            ],
+            "finalAnswer": "Mindestdruck für Umkehrosmose ≈ 30 bar",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-13-10",
+            "title": "Komplexe kolligative Analyse",
+            "level": 5,
+            "task": "Eine wässrige Lösung einer Säure HA hat folgende Eigenschaften:\n- Massenanteil: 10%\n- Dichte: 1,05 g/mL\n- Gefrierpunkt: -3,72°C\n\nBestimme:\na) Die molare Masse von HA\nb) Den Dissoziationsgrad α\n\nGegeben: Kf = 1,86 K·kg/mol\n",
+            "hints": {
+              "keyword": "Erst M ohne Dissoziation, dann α aus Differenz",
+              "approach": "1. Konzentration berechnen\n2. Theoretische M (ohne Dissoziation)\n3. Mit experimentellem ΔTf vergleichen\n4. i und α bestimmen\n",
+              "overview": "Experimentelles ΔTf = 3,72 K\nMolalität (scheinbar) = 2 mol/kg\nWenn M = 40 g/mol: m(real) = 2,5 mol/kg\ni = 3,72/(1,86×2,5) = 0,8... → nein, anderer Ansatz\n"
+            },
+            "steps": [
+              {
+                "description": "Masse HA in 1 kg Lösung",
+                "solution": "m(HA) = 0,1 × 1000 g = 100 g; m(H₂O) = 900 g = 0,9 kg"
+              },
+              {
+                "description": "Scheinbare Molalität aus ΔTf",
+                "solution": "m(scheinbar) = ΔTf/Kf = 3,72/1,86 = 2,0 mol/kg"
+              },
+              {
+                "description": "Für i = 2 (Säure dissoziiert): m(real) = 1,0 mol/kg",
+                "solution": "Wenn HA vollständig dissoziiert: m(scheinbar) = 2×m(real)"
+              },
+              {
+                "description": "Stoffmenge HA",
+                "solution": "n = m(real) × 0,9 kg = 1,0 mol/kg × 0,9 kg = 0,9 mol (wenn i=2)"
+              },
+              {
+                "description": "Molare Masse (bei i = 2)",
+                "solution": "M = 100 g / 0,9 mol = 111 g/mol"
+              },
+              {
+                "description": "Prüfung mit i = 1 + α",
+                "solution": "Bei α < 1: M wäre größer. Annahme α ≈ 1 gibt M ≈ 111 g/mol"
+              }
+            ],
+            "finalAnswer": "a) M ≈ 111 g/mol (entspricht z.B. einer mittelstarken Säure)\nb) α ≈ 100% (nahezu vollständige Dissoziation bei dieser ΔTf)\n\nHinweis: Für exakte Lösung wäre iterativer Ansatz nötig.\n",
+            "relatedBlueprints": [
+              "colligative-calculation-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "colligative-calculation"
+    },
+    {
+      "id": "14-saeuren-basen-fortgeschritten",
+      "title": "14-saeuren-basen-fortgeschritten",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-14-01",
+            "title": "pH-Wert einer starken Säure",
+            "level": 1,
+            "task": "Berechne den pH-Wert einer 0,01 M Salzsäure (HCl).\n\nHinweis: HCl ist eine starke Säure und dissoziiert vollständig.\n",
+            "hints": {
+              "keyword": "pH = -lg[H⁺]",
+              "approach": "1. [H⁺] aus Konzentration bestimmen\n2. pH-Formel anwenden\n",
+              "overview": "[H⁺] = 0,01 M = 10⁻² M\npH = -lg(10⁻²) = 2\n"
+            },
+            "steps": [
+              {
+                "description": "H⁺-Konzentration bestimmen",
+                "solution": "HCl → H⁺ + Cl⁻ (vollständig), also [H⁺] = c(HCl) = 0,01 M"
+              },
+              {
+                "description": "pH-Wert berechnen",
+                "solution": "pH = -lg[H⁺] = -lg(0,01) = -lg(10⁻²) = 2"
+              }
+            ],
+            "finalAnswer": "pH = 2",
+            "relatedCheatsheets": [
+              "saeuren-basen-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-14-02",
+            "title": "pH-Wert einer starken Base",
+            "level": 1,
+            "task": "Berechne den pH-Wert einer 0,001 M Natronlauge (NaOH).\n\nHinweis: NaOH ist eine starke Base.\n",
+            "hints": {
+              "keyword": "pOH = -lg[OH⁻], pH = 14 - pOH",
+              "approach": "1. [OH⁻] bestimmen\n2. pOH berechnen\n3. pH = 14 - pOH\n",
+              "overview": "[OH⁻] = 0,001 = 10⁻³ M\npOH = 3\npH = 14 - 3 = 11\n"
+            },
+            "steps": [
+              {
+                "description": "OH⁻-Konzentration bestimmen",
+                "solution": "NaOH → Na⁺ + OH⁻ (vollständig), also [OH⁻] = 0,001 M = 10⁻³ M"
+              },
+              {
+                "description": "pOH-Wert berechnen",
+                "solution": "pOH = -lg(10⁻³) = 3"
+              },
+              {
+                "description": "pH-Wert berechnen",
+                "solution": "pH = 14 - pOH = 14 - 3 = 11"
+              }
+            ],
+            "finalAnswer": "pH = 11",
+            "relatedCheatsheets": [
+              "saeuren-basen-cheatsheet"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "id": "ex-14-03",
+            "title": "pH-Wert einer schwachen Säure",
+            "level": 2,
+            "task": "Berechne den pH-Wert einer 0,1 M Essigsäure (CH₃COOH).\n\nGegeben: pKₛ = 4,76\n",
+            "hints": {
+              "keyword": "pH = ½(pKₛ - lg c₀)",
+              "approach": "1. Näherungsformel für schwache Säure anwenden\n2. Werte einsetzen\n",
+              "overview": "pH = ½(pKₛ - lg c₀)\npH = ½(4,76 - lg 0,1)\npH = ½(4,76 + 1) = 2,88\n"
+            },
+            "steps": [
+              {
+                "description": "Näherungsformel identifizieren",
+                "solution": "Für schwache Säuren: pH = ½(pKₛ - lg c₀)"
+              },
+              {
+                "description": "lg c₀ berechnen",
+                "solution": "lg(0,1) = lg(10⁻¹) = -1"
+              },
+              {
+                "description": "pH berechnen",
+                "solution": "pH = ½(4,76 - (-1)) = ½(4,76 + 1) = ½ × 5,76 = 2,88"
+              }
+            ],
+            "finalAnswer": "pH = 2,88",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-14-04",
+            "title": "Dissoziationsgrad berechnen",
+            "level": 2,
+            "task": "In einer 0,1 M Essigsäure-Lösung beträgt [H⁺] = 1,34 × 10⁻³ M.\n\nBerechne:\na) Den Dissoziationsgrad α\nb) Den Prozentsatz der dissoziierten Moleküle\n",
+            "hints": {
+              "keyword": "α = [H⁺]/c₀",
+              "approach": "1. Dissoziationsgrad = [H⁺] / Anfangskonzentration\n2. In Prozent umrechnen\n",
+              "overview": "α = 1,34×10⁻³ / 0,1 = 0,0134\n= 1,34%\n"
+            },
+            "steps": [
+              {
+                "description": "Dissoziationsgrad berechnen",
+                "solution": "α = [H⁺]/c₀ = (1,34 × 10⁻³ M) / (0,1 M) = 0,0134"
+              },
+              {
+                "description": "In Prozent umrechnen",
+                "solution": "α × 100% = 0,0134 × 100% = 1,34%"
+              }
+            ],
+            "finalAnswer": "a) α = 0,0134\nb) 1,34% der Essigsäure-Moleküle sind dissoziiert\n",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "id": "ex-14-05",
+            "title": "Henderson-Hasselbalch für Puffer",
+            "level": 3,
+            "task": "Ein Acetatpuffer enthält 0,2 M Essigsäure und 0,3 M Natriumacetat.\n\nBerechne den pH-Wert des Puffers.\n\nGegeben: pKₛ(Essigsäure) = 4,76\n",
+            "hints": {
+              "keyword": "Henderson-Hasselbalch: pH = pKₛ + lg([A⁻]/[HA])",
+              "approach": "1. Säure (HA) und konjugierte Base (A⁻) identifizieren\n2. Verhältnis berechnen\n3. Henderson-Hasselbalch anwenden\n",
+              "overview": "[A⁻]/[HA] = 0,3/0,2 = 1,5\npH = 4,76 + lg(1,5)\npH = 4,76 + 0,18 = 4,94\n"
+            },
+            "steps": [
+              {
+                "description": "Säure und Base identifizieren",
+                "solution": "HA = CH₃COOH (Essigsäure), A⁻ = CH₃COO⁻ (Acetat)"
+              },
+              {
+                "description": "Konzentrationsverhältnis berechnen",
+                "solution": "[A⁻]/[HA] = 0,3/0,2 = 1,5"
+              },
+              {
+                "description": "Logarithmus berechnen",
+                "solution": "lg(1,5) = 0,176 ≈ 0,18"
+              },
+              {
+                "description": "Henderson-Hasselbalch anwenden",
+                "solution": "pH = pKₛ + lg([A⁻]/[HA]) = 4,76 + 0,18 = 4,94"
+              }
+            ],
+            "finalAnswer": "pH = 4,94",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint",
+              "buffer-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-14-06",
+            "title": "pKₛ aus pH und Konzentrationen",
+            "level": 3,
+            "task": "Eine 0,05 M Lösung einer schwachen Säure HA hat pH = 3,0.\n\nBerechne:\na) Die H⁺-Konzentration\nb) Die Säurekonstante Kₛ\nc) Den pKₛ-Wert\n",
+            "hints": {
+              "keyword": "Kₛ = [H⁺]²/c₀ für schwache Säuren",
+              "approach": "1. [H⁺] aus pH berechnen\n2. Kₛ = [H⁺]²/(c₀ - [H⁺]) ≈ [H⁺]²/c₀\n3. pKₛ = -lg(Kₛ)\n",
+              "overview": "[H⁺] = 10⁻³ M\nKₛ = (10⁻³)²/0,05 = 2×10⁻⁵\npKₛ = 4,7\n"
+            },
+            "steps": [
+              {
+                "description": "H⁺-Konzentration aus pH",
+                "solution": "[H⁺] = 10⁻pH = 10⁻³ M = 0,001 M"
+              },
+              {
+                "description": "Prüfung ob Näherung gilt",
+                "solution": "[H⁺] << c₀ (0,001 << 0,05), Näherung erlaubt"
+              },
+              {
+                "description": "Säurekonstante berechnen",
+                "solution": "Kₛ = [H⁺]²/c₀ = (10⁻³)²/0,05 = 10⁻⁶/0,05 = 2×10⁻⁵"
+              },
+              {
+                "description": "pKₛ berechnen",
+                "solution": "pKₛ = -lg(Kₛ) = -lg(2×10⁻⁵) = 5 - lg(2) = 5 - 0,3 = 4,7"
+              }
+            ],
+            "finalAnswer": "a) [H⁺] = 10⁻³ M = 1 mM\nb) Kₛ = 2 × 10⁻⁵\nc) pKₛ = 4,7\n",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "id": "ex-14-07",
+            "title": "Puffer-Herstellung",
+            "level": 4,
+            "task": "Es soll 500 mL eines Acetatpuffers mit pH = 5,0 und\nGesamtacetatkonzentration = 0,2 M hergestellt werden.\n\nBerechne die benötigten Massen an:\na) Essigsäure (M = 60 g/mol)\nb) Natriumacetat (M = 82 g/mol)\n\nGegeben: pKₛ = 4,76\n",
+            "hints": {
+              "keyword": "Henderson-Hasselbalch umstellen, dann Stoffmengen berechnen",
+              "approach": "1. Verhältnis [A⁻]/[HA] aus HH berechnen\n2. Mit c(gesamt) = [HA] + [A⁻] kombinieren\n3. Einzelkonzentrationen berechnen\n4. Massen berechnen\n",
+              "overview": "[A⁻]/[HA] = 10^(5,0-4,76) = 1,74\n[HA] + [A⁻] = 0,2\n[HA] = 0,073 M, [A⁻] = 0,127 M\n"
+            },
+            "steps": [
+              {
+                "description": "Verhältnis aus Henderson-Hasselbalch",
+                "solution": "pH = pKₛ + lg([A⁻]/[HA]) → [A⁻]/[HA] = 10^(pH-pKₛ) = 10^(0,24) = 1,74"
+              },
+              {
+                "description": "Gleichungssystem aufstellen",
+                "solution": "[A⁻] = 1,74 × [HA] und [A⁻] + [HA] = 0,2 M"
+              },
+              {
+                "description": "HA-Konzentration berechnen",
+                "solution": "1,74×[HA] + [HA] = 0,2 → 2,74×[HA] = 0,2 → [HA] = 0,073 M"
+              },
+              {
+                "description": "A⁻-Konzentration berechnen",
+                "solution": "[A⁻] = 0,2 - 0,073 = 0,127 M"
+              },
+              {
+                "description": "Masse Essigsäure berechnen",
+                "solution": "m(HA) = 0,073 mol/L × 0,5 L × 60 g/mol = 2,19 g"
+              },
+              {
+                "description": "Masse Natriumacetat berechnen",
+                "solution": "m(NaOAc) = 0,127 mol/L × 0,5 L × 82 g/mol = 5,21 g"
+              }
+            ],
+            "finalAnswer": "a) m(Essigsäure) = 2,19 g\nb) m(Natriumacetat) = 5,21 g\n",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint",
+              "buffer-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-14-08",
+            "title": "Pufferkapazität",
+            "level": 4,
+            "task": "Zu 100 mL eines Acetatpuffers (pH 4,76, c = 0,1 M jeweils HA und A⁻)\nwerden 5 mL 1 M HCl zugegeben.\n\nBerechne den neuen pH-Wert.\n\nGegeben: pKₛ = 4,76\n",
+            "hints": {
+              "keyword": "Säure reagiert mit Base-Komponente des Puffers",
+              "approach": "1. Stoffmengen vor Zugabe berechnen\n2. Säurezugabe als Reaktion: A⁻ + H⁺ → HA\n3. Neue Stoffmengen berechnen\n4. Henderson-Hasselbalch anwenden\n",
+              "overview": "n(A⁻)₀ = 0,01 mol, n(HA)₀ = 0,01 mol\nn(H⁺) = 0,005 mol\nn(A⁻)neu = 0,005 mol, n(HA)neu = 0,015 mol\npH = 4,76 + lg(0,005/0,015) = 4,28\n"
+            },
+            "steps": [
+              {
+                "description": "Stoffmengen im Puffer",
+                "solution": "n(HA) = n(A⁻) = 0,1 mol/L × 0,1 L = 0,01 mol"
+              },
+              {
+                "description": "Stoffmenge zugegebene Säure",
+                "solution": "n(H⁺) = 1 mol/L × 0,005 L = 0,005 mol"
+              },
+              {
+                "description": "Reaktion: A⁻ + H⁺ → HA",
+                "solution": "n(A⁻)neu = 0,01 - 0,005 = 0,005 mol, n(HA)neu = 0,01 + 0,005 = 0,015 mol"
+              },
+              {
+                "description": "Neues Verhältnis",
+                "solution": "[A⁻]/[HA] = 0,005/0,015 = 1/3"
+              },
+              {
+                "description": "Neuer pH-Wert",
+                "solution": "pH = 4,76 + lg(1/3) = 4,76 - 0,48 = 4,28"
+              }
+            ],
+            "finalAnswer": "pH (neu) = 4,28",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint",
+              "buffer-calculation-blueprint"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "id": "ex-14-09",
+            "title": "Titrationskurve - Äquivalenzpunkt",
+            "level": 5,
+            "task": "50 mL einer 0,1 M Essigsäure werden mit 0,1 M NaOH titriert.\n\nBerechne:\na) Das Volumen NaOH am Äquivalenzpunkt\nb) Den pH-Wert am Äquivalenzpunkt\nc) Den pH-Wert am Halbäquivalenzpunkt\n\nGegeben: pKₛ = 4,76\n",
+            "hints": {
+              "keyword": "Am ÄP nur Base vorhanden, am HAP: pH = pKₛ",
+              "approach": "1. Volumen am ÄP aus Stöchiometrie\n2. Am ÄP: Acetat-Hydrolyse → pH > 7\n3. Am HAP: [HA] = [A⁻] → pH = pKₛ\n",
+              "overview": "V(ÄP) = 50 mL\nc(Acetat) = 0,05 M im ÄP\npH(ÄP) ≈ 8,7\npH(HAP) = 4,76\n"
+            },
+            "steps": [
+              {
+                "description": "Volumen am Äquivalenzpunkt",
+                "solution": "n(HA) = n(OH⁻) → 0,1×0,05 = 0,1×V(NaOH) → V = 50 mL"
+              },
+              {
+                "description": "Am ÄP: nur Acetat vorhanden",
+                "solution": "n(Acetat) = 0,005 mol in 100 mL → c = 0,05 M"
+              },
+              {
+                "description": "Acetat-Hydrolyse: A⁻ + H₂O ⇌ HA + OH⁻",
+                "solution": "pKb = 14 - pKₛ = 14 - 4,76 = 9,24; Kb = 5,75 × 10⁻¹⁰"
+              },
+              {
+                "description": "pH am Äquivalenzpunkt berechnen",
+                "solution": "pOH = ½(pKb - lg c) = ½(9,24 + 1,3) = 5,27 → pH = 14 - 5,27 = 8,73"
+              },
+              {
+                "description": "Am Halbäquivalenzpunkt",
+                "solution": "[HA] = [A⁻] → lg([A⁻]/[HA]) = 0 → pH = pKₛ = 4,76"
+              }
+            ],
+            "finalAnswer": "a) V(NaOH) am ÄP = 50 mL\nb) pH am ÄP = 8,73 (basisch wegen Acetat-Hydrolyse)\nc) pH am HAP = 4,76 = pKₛ\n",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint",
+              "titration-blueprint"
+            ]
+          },
+          {
+            "id": "ex-14-10",
+            "title": "Mehrprotonige Säure",
+            "level": 5,
+            "task": "Berechne den pH-Wert einer 0,1 M Phosphorsäure-Lösung (H₃PO₄).\n\nGegeben:\npKₛ₁ = 2,15\npKₛ₂ = 7,20\npKₛ₃ = 12,35\n",
+            "hints": {
+              "keyword": "Bei mehrprotonigen Säuren dominiert die erste Dissoziation",
+              "approach": "1. Prüfen ob Kₛ₁ >> Kₛ₂\n2. Nur erste Dissoziation berücksichtigen\n3. Wie einprotonige schwache Säure rechnen\n",
+              "overview": "Kₛ₁/Kₛ₂ ≈ 10⁵ >> 1, also nur H₃PO₄ ⇌ H₂PO₄⁻ + H⁺ relevant\npH = ½(pKₛ₁ - lg c₀) = ½(2,15 + 1) = 1,58\n"
+            },
+            "steps": [
+              {
+                "description": "Verhältnis Kₛ₁/Kₛ₂ prüfen",
+                "solution": "Kₛ₁/Kₛ₂ = 10^(7,20-2,15) = 10^5,05 ≈ 10⁵ >> 1"
+              },
+              {
+                "description": "Schlussfolgerung",
+                "solution": "Zweite und dritte Dissoziation vernachlässigbar"
+              },
+              {
+                "description": "Behandlung wie einprotonige schwache Säure",
+                "solution": "H₃PO₄ ⇌ H₂PO₄⁻ + H⁺ mit Kₛ₁"
+              },
+              {
+                "description": "Näherungsformel anwenden",
+                "solution": "pH = ½(pKₛ₁ - lg c₀) = ½(2,15 - lg 0,1) = ½(2,15 + 1)"
+              },
+              {
+                "description": "pH berechnen",
+                "solution": "pH = ½ × 3,15 = 1,575 ≈ 1,58"
+              },
+              {
+                "description": "Prüfung der Näherung",
+                "solution": "[H⁺] = 10^(-1,58) = 0,026 M << c₀, Näherung gültig"
+              }
+            ],
+            "finalAnswer": "pH = 1,58",
+            "relatedBlueprints": [
+              "acid-base-calculation-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "acid-base-calculation"
+    },
+    {
+      "id": "15-elektrochemie",
+      "title": "15-elektrochemie",
+      "questions": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "exercises": {
+        "1": [
+          {
+            "id": "ex-15-01",
+            "title": "Standardzellspannung berechnen",
+            "level": 1,
+            "task": "Berechne die Standardzellspannung einer galvanischen Zelle\naus Zink und Kupfer.\n\nGegeben:\nE°(Zn²⁺/Zn) = -0,76 V\nE°(Cu²⁺/Cu) = +0,34 V\n",
+            "hints": {
+              "keyword": "E°(Zelle) = E°(Kathode) - E°(Anode)",
+              "approach": "1. Kathode und Anode identifizieren\n2. Formel anwenden\n",
+              "overview": "Zn ist unedler → Anode\nCu ist edler → Kathode\nE° = 0,34 - (-0,76) = 1,10 V\n"
+            },
+            "steps": [
+              {
+                "description": "Anode und Kathode identifizieren",
+                "solution": "Zn ist unedler (negativeres E°) → Anode; Cu ist edler → Kathode"
+              },
+              {
+                "description": "Zellspannung berechnen",
+                "solution": "E°(Zelle) = E°(Kathode) - E°(Anode) = 0,34 - (-0,76) = 1,10 V"
+              }
+            ],
+            "finalAnswer": "E°(Zelle) = 1,10 V",
+            "relatedCheatsheets": [
+              "chemische-reaktionen-cheatsheet"
+            ]
+          },
+          {
+            "id": "ex-15-02",
+            "title": "Oxidationszahlen bestimmen",
+            "level": 1,
+            "task": "Bestimme die Oxidationszahlen aller Atome in:\na) H₂SO₄\nb) KMnO₄\n",
+            "hints": {
+              "keyword": "Regeln: H = +1, O = -2, Summe = Ladung",
+              "approach": "1. Bekannte Oxidationszahlen einsetzen\n2. Unbekannte aus Summe = 0 berechnen\n",
+              "overview": "H₂SO₄: H = +1, O = -2, S = +6\nKMnO₄: K = +1, O = -2, Mn = +7\n"
+            },
+            "steps": [
+              {
+                "description": "H₂SO₄: H und O einsetzen",
+                "solution": "H = +1 (×2 = +2), O = -2 (×4 = -8), Summe muss 0 sein"
+              },
+              {
+                "description": "S berechnen",
+                "solution": "+2 + S + (-8) = 0 → S = +6"
+              },
+              {
+                "description": "KMnO₄: K und O einsetzen",
+                "solution": "K = +1, O = -2 (×4 = -8), Summe muss 0 sein"
+              },
+              {
+                "description": "Mn berechnen",
+                "solution": "+1 + Mn + (-8) = 0 → Mn = +7"
+              }
+            ],
+            "finalAnswer": "a) H₂SO₄: H = +1, S = +6, O = -2\nb) KMnO₄: K = +1, Mn = +7, O = -2\n",
+            "relatedCheatsheets": [
+              "chemische-reaktionen-cheatsheet"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "id": "ex-15-03",
+            "title": "Spontaneität einer Redoxreaktion",
+            "level": 2,
+            "task": "Prüfe, ob folgende Reaktion spontan abläuft:\nCu(s) + 2 Ag⁺(aq) → Cu²⁺(aq) + 2 Ag(s)\n\nGegeben:\nE°(Cu²⁺/Cu) = +0,34 V\nE°(Ag⁺/Ag) = +0,80 V\n",
+            "hints": {
+              "keyword": "Reaktion spontan wenn E°(Zelle) > 0",
+              "approach": "1. Identifiziere Oxidation und Reduktion\n2. E°(Zelle) berechnen\n3. Vorzeichen interpretieren\n",
+              "overview": "Cu wird oxidiert (Anode)\nAg⁺ wird reduziert (Kathode)\nE° = 0,80 - 0,34 = 0,46 V > 0 → spontan\n"
+            },
+            "steps": [
+              {
+                "description": "Reaktionen identifizieren",
+                "solution": "Cu → Cu²⁺ + 2e⁻ (Oxidation), 2 Ag⁺ + 2e⁻ → 2 Ag (Reduktion)"
+              },
+              {
+                "description": "Anode und Kathode",
+                "solution": "Cu ist Anode (wird oxidiert), Ag ist Kathode"
+              },
+              {
+                "description": "Zellspannung berechnen",
+                "solution": "E°(Zelle) = E°(Kathode) - E°(Anode) = 0,80 - 0,34 = 0,46 V"
+              },
+              {
+                "description": "Spontaneität beurteilen",
+                "solution": "E° > 0 → ΔG < 0 → Reaktion ist spontan"
+              }
+            ],
+            "finalAnswer": "Ja, die Reaktion läuft spontan ab (E° = +0,46 V)",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-15-04",
+            "title": "Gibbs-Energie aus Zellspannung",
+            "level": 2,
+            "task": "Berechne ΔG° für die Daniell-Zelle (Zn/Cu).\n\nGegeben:\nE°(Zelle) = 1,10 V\nz = 2 (übertragene Elektronen)\nF = 96485 C/mol\n",
+            "hints": {
+              "keyword": "ΔG° = -z × F × E°",
+              "approach": "1. Formel anwenden\n2. Einheiten beachten (J vs kJ)\n",
+              "overview": "ΔG° = -2 × 96485 × 1,10\n= -212.267 J = -212 kJ\n"
+            },
+            "steps": [
+              {
+                "description": "Formel aufstellen",
+                "solution": "ΔG° = -z × F × E°"
+              },
+              {
+                "description": "Werte einsetzen",
+                "solution": "ΔG° = -2 × 96485 C/mol × 1,10 V = -212.267 J/mol"
+              },
+              {
+                "description": "In kJ umrechnen",
+                "solution": "ΔG° = -212,3 kJ/mol"
+              }
+            ],
+            "finalAnswer": "ΔG° = -212 kJ/mol (spontan)",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint"
+            ]
+          }
+        ],
+        "3": [
+          {
+            "id": "ex-15-05",
+            "title": "Nernst-Gleichung anwenden",
+            "level": 3,
+            "task": "Berechne das Elektrodenpotential einer Cu-Elektrode in\neiner 0,001 M Cu²⁺-Lösung bei 25°C.\n\nGegeben:\nE°(Cu²⁺/Cu) = +0,34 V\nR = 8,314 J/(mol·K)\nF = 96485 C/mol\n",
+            "hints": {
+              "keyword": "E = E° + (0,059/z) × lg[Mⁿ⁺]",
+              "approach": "1. z = 2 für Cu²⁺/Cu\n2. Nernst-Gleichung anwenden\n3. Logarithmus berechnen\n",
+              "overview": "E = 0,34 + (0,059/2) × lg(0,001)\n= 0,34 + 0,0295 × (-3)\n= 0,34 - 0,0885 = 0,25 V\n"
+            },
+            "steps": [
+              {
+                "description": "Anzahl übertragener Elektronen",
+                "solution": "Cu²⁺ + 2e⁻ → Cu, also z = 2"
+              },
+              {
+                "description": "Vereinfachte Nernst-Gleichung bei 25°C",
+                "solution": "E = E° + (0,059/z) × lg[Cu²⁺]"
+              },
+              {
+                "description": "Logarithmus berechnen",
+                "solution": "lg(0,001) = lg(10⁻³) = -3"
+              },
+              {
+                "description": "Potential berechnen",
+                "solution": "E = 0,34 + (0,059/2) × (-3) = 0,34 - 0,0885 = 0,252 V"
+              }
+            ],
+            "finalAnswer": "E = 0,25 V",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint",
+              "nernst-equation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-15-06",
+            "title": "Elektrolyse - Masse berechnen",
+            "level": 3,
+            "task": "Bei der Elektrolyse einer CuSO₄-Lösung fließt 30 Minuten lang\nein Strom von 2 A.\n\nWie viel Gramm Kupfer werden an der Kathode abgeschieden?\n\nGegeben: M(Cu) = 63,5 g/mol, F = 96485 C/mol\n",
+            "hints": {
+              "keyword": "Q = I × t, dann n = Q/(z×F)",
+              "approach": "1. Ladungsmenge berechnen\n2. Stoffmenge über Faraday berechnen\n3. Masse berechnen\n",
+              "overview": "Q = 2 × 1800 = 3600 C\nn = 3600/(2×96485) = 0,0187 mol\nm = 0,0187 × 63,5 = 1,18 g\n"
+            },
+            "steps": [
+              {
+                "description": "Zeit in Sekunden",
+                "solution": "t = 30 min × 60 s/min = 1800 s"
+              },
+              {
+                "description": "Ladungsmenge berechnen",
+                "solution": "Q = I × t = 2 A × 1800 s = 3600 C"
+              },
+              {
+                "description": "Stoffmenge Cu berechnen (z = 2)",
+                "solution": "n = Q/(z×F) = 3600 C / (2 × 96485 C/mol) = 0,0187 mol"
+              },
+              {
+                "description": "Masse Cu berechnen",
+                "solution": "m = n × M = 0,0187 mol × 63,5 g/mol = 1,18 g"
+              }
+            ],
+            "finalAnswer": "m(Cu) = 1,18 g",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint",
+              "electrolysis-blueprint"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "id": "ex-15-07",
+            "title": "Konzentrationszelle",
+            "level": 4,
+            "task": "Eine Konzentrationszelle besteht aus zwei Cu-Elektroden in\nCu²⁺-Lösungen mit c₁ = 1,0 M und c₂ = 0,01 M.\n\nBerechne die Zellspannung bei 25°C.\n\nGegeben: E°(Cu²⁺/Cu) = 0,34 V\n",
+            "hints": {
+              "keyword": "E(Zelle) = (0,059/z) × lg(c₁/c₂)",
+              "approach": "1. Bei Konzentrationszelle: E° hebt sich auf\n2. EMK hängt nur vom Konzentrationsverhältnis ab\n",
+              "overview": "E = (0,059/2) × lg(1,0/0,01)\n= 0,0295 × lg(100)\n= 0,0295 × 2 = 0,059 V\n"
+            },
+            "steps": [
+              {
+                "description": "Konzentrationszelle verstehen",
+                "solution": "Beide Elektroden sind gleich, nur Konzentrationen unterschiedlich"
+              },
+              {
+                "description": "Anode und Kathode identifizieren",
+                "solution": "Verdünnte Lösung: Oxidation (Anode), Konz. Lösung: Reduktion (Kathode)"
+              },
+              {
+                "description": "EMK-Formel für Konzentrationszelle",
+                "solution": "E = (0,059/z) × lg(c₁/c₂) wobei c₁ > c₂"
+              },
+              {
+                "description": "Konzentrationsverhältnis",
+                "solution": "c₁/c₂ = 1,0/0,01 = 100"
+              },
+              {
+                "description": "Zellspannung berechnen",
+                "solution": "E = (0,059/2) × lg(100) = 0,0295 × 2 = 0,059 V"
+              }
+            ],
+            "finalAnswer": "E(Zelle) = 0,059 V = 59 mV",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint",
+              "nernst-equation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-15-08",
+            "title": "Elektrolyse - Gasvolumen",
+            "level": 4,
+            "task": "Bei der Elektrolyse von Wasser fließt 1 Stunde lang ein Strom von 5 A.\n\nBerechne das Volumen des entstehenden:\na) Wasserstoffs (Kathode)\nb) Sauerstoffs (Anode)\n\nbei Normalbedingungen (V_m = 22,4 L/mol)\n\nGegeben: F = 96485 C/mol\n",
+            "hints": {
+              "keyword": "2 H₂O → 2 H₂ + O₂ (Kathode z=2, Anode z=4)",
+              "approach": "1. Ladungsmenge berechnen\n2. Stoffmenge H₂ (z = 2 pro H₂)\n3. Stoffmenge O₂ (halb so viel)\n4. Volumina berechnen\n",
+              "overview": "Q = 5 × 3600 = 18000 C\nn(H₂) = 18000/(2×96485) = 0,093 mol\nn(O₂) = 0,047 mol\nV(H₂) = 2,09 L, V(O₂) = 1,05 L\n"
+            },
+            "steps": [
+              {
+                "description": "Ladungsmenge berechnen",
+                "solution": "Q = I × t = 5 A × 3600 s = 18000 C"
+              },
+              {
+                "description": "Stoffmenge H₂ (2e⁻ pro H₂-Molekül)",
+                "solution": "n(H₂) = Q/(2×F) = 18000/(2×96485) = 0,0933 mol"
+              },
+              {
+                "description": "Stoffmenge O₂ (Verhältnis H₂:O₂ = 2:1)",
+                "solution": "n(O₂) = n(H₂)/2 = 0,0933/2 = 0,0467 mol"
+              },
+              {
+                "description": "Volumen H₂ bei Normalbedingungen",
+                "solution": "V(H₂) = 0,0933 mol × 22,4 L/mol = 2,09 L"
+              },
+              {
+                "description": "Volumen O₂ bei Normalbedingungen",
+                "solution": "V(O₂) = 0,0467 mol × 22,4 L/mol = 1,05 L"
+              }
+            ],
+            "finalAnswer": "a) V(H₂) = 2,09 L\nb) V(O₂) = 1,05 L\n",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint",
+              "electrolysis-blueprint"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "id": "ex-15-09",
+            "title": "Gleichgewichtskonstante aus Zellspannung",
+            "level": 5,
+            "task": "Berechne die Gleichgewichtskonstante K für die Reaktion:\nZn(s) + Cu²⁺(aq) ⇌ Zn²⁺(aq) + Cu(s)\n\nGegeben:\nE°(Zelle) = 1,10 V\nz = 2\nBei 25°C: RT/F × ln(10) = 0,059 V\n",
+            "hints": {
+              "keyword": "Im Gleichgewicht E = 0, also E° = (0,059/z) × lg K",
+              "approach": "1. Bei Gleichgewicht: E = 0\n2. Nernst-Gleichung umstellen\n3. K berechnen\n",
+              "overview": "E° = (0,059/z) × lg K\nlg K = z × E° / 0,059 = 2 × 1,10 / 0,059 = 37,3\nK = 10^37,3 ≈ 2 × 10³⁷\n"
+            },
+            "steps": [
+              {
+                "description": "Grundlage: Im Gleichgewicht gilt E = 0",
+                "solution": "Nernst: 0 = E° - (0,059/z) × lg Q, im GG ist Q = K"
+              },
+              {
+                "description": "Umstellen nach lg K",
+                "solution": "lg K = z × E° / 0,059"
+              },
+              {
+                "description": "Werte einsetzen",
+                "solution": "lg K = 2 × 1,10 / 0,059 = 2,20 / 0,059 = 37,3"
+              },
+              {
+                "description": "K berechnen",
+                "solution": "K = 10^37,3 ≈ 2 × 10³⁷"
+              },
+              {
+                "description": "Interpretation",
+                "solution": "Sehr große K → Reaktion läuft praktisch vollständig ab"
+              }
+            ],
+            "finalAnswer": "K ≈ 2 × 10³⁷ (Reaktion nahezu vollständig)",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint",
+              "nernst-equation-blueprint"
+            ]
+          },
+          {
+            "id": "ex-15-10",
+            "title": "Redoxgleichung ausgleichen",
+            "level": 5,
+            "task": "Gleiche folgende Redoxgleichung im sauren Medium aus:\nMnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺\n",
+            "hints": {
+              "keyword": "Teilgleichungen aufstellen, Elektronen ausgleichen",
+              "approach": "1. Oxidation und Reduktion trennen\n2. Atome und Ladungen ausgleichen\n3. Elektronen angleichen\n4. Addieren\n",
+              "overview": "Red: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O\nOx: Fe²⁺ → Fe³⁺ + e⁻ (×5)\nGesamt: MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O\n"
+            },
+            "steps": [
+              {
+                "description": "Oxidation identifizieren",
+                "solution": "Fe²⁺ → Fe³⁺ + e⁻ (Oxidationszahl: +2 → +3)"
+              },
+              {
+                "description": "Reduktion identifizieren",
+                "solution": "MnO₄⁻ → Mn²⁺ (Oxidationszahl: +7 → +2)"
+              },
+              {
+                "description": "Reduktion ausgleichen (saures Medium)",
+                "solution": "MnO₄⁻ + 8 H⁺ + 5 e⁻ → Mn²⁺ + 4 H₂O"
+              },
+              {
+                "description": "Elektronen angleichen (kgV = 5)",
+                "solution": "Oxidation ×5: 5 Fe²⁺ → 5 Fe³⁺ + 5 e⁻"
+              },
+              {
+                "description": "Gleichungen addieren",
+                "solution": "MnO₄⁻ + 8 H⁺ + 5 Fe²⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O"
+              },
+              {
+                "description": "Kontrolle der Ladungsbilanz",
+                "solution": "Links: -1 + 8 + 10 = +17; Rechts: +2 + 15 + 0 = +17 ✓"
+              }
+            ],
+            "finalAnswer": "MnO₄⁻ + 8 H⁺ + 5 Fe²⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O",
+            "relatedBlueprints": [
+              "electrochemistry-calculation-blueprint",
+              "redox-balancing-blueprint"
+            ]
+          }
+        ]
+      },
+      "blueprintType": "electrochemistry-calculation"
     }
   ]
 }

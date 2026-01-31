@@ -1,0 +1,419 @@
+# Praktische Übungen: Thermodynamik & Reaktionsenthalpie
+# 10 Übungen (2 pro Level)
+
+topic: 'Thermodynamik & Reaktionsenthalpie'
+blueprintType: 'thermodynamics-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-11-01'
+    title: 'Enthalpieänderung aus Bindungsenergien'
+    level: 1
+
+    task: |
+      Bei einer Reaktion werden 436 kJ/mol an Bindungsenergie aufgewendet
+      (Bindungen brechen) und 569 kJ/mol werden frei (Bindungen bilden).
+
+      Berechne die Reaktionsenthalpie ΔH.
+
+    hints:
+      keyword: 'ΔH = Energie(Bruch) - Energie(Bildung)'
+      approach: |
+        1. Bindungsbruch = positive Energie (aufgewendet)
+        2. Bindungsbildung = negative Energie (freigesetzt)
+        3. Differenz bilden
+      overview: |
+        ΔH = 436 - 569 = -133 kJ/mol
+        Negativ → exotherm
+
+    steps:
+      - description: 'Energie für Bindungsbruch identifizieren'
+        solution: 'Aufgewendet: +436 kJ/mol'
+      - description: 'Energie bei Bindungsbildung identifizieren'
+        solution: 'Freigesetzt: -569 kJ/mol (Vorzeichen negativ)'
+      - description: 'Reaktionsenthalpie berechnen'
+        solution: 'ΔH = 436 kJ/mol - 569 kJ/mol = -133 kJ/mol'
+
+    finalAnswer: 'ΔH = -133 kJ/mol (exotherme Reaktion)'
+
+    relatedCheatsheets:
+      - 'thermodynamik-cheatsheet'
+
+  - id: 'ex-11-02'
+    title: 'Wärme bei Temperaturänderung'
+    level: 1
+
+    task: |
+      100 g Wasser werden von 20°C auf 80°C erwärmt.
+
+      Berechne die benötigte Wärmemenge.
+
+      Gegeben: c(Wasser) = 4,18 J/(g·K)
+
+    hints:
+      keyword: 'Q = m × c × ΔT'
+      approach: |
+        1. Temperaturdifferenz berechnen
+        2. Formel Q = m × c × ΔT anwenden
+      overview: |
+        ΔT = 80 - 20 = 60 K
+        Q = 100 × 4,18 × 60 = 25.080 J
+
+    steps:
+      - description: 'Temperaturdifferenz berechnen'
+        solution: 'ΔT = 80°C - 20°C = 60 K (= 60°C)'
+      - description: 'Wärmemenge berechnen'
+        solution: 'Q = 100 g × 4,18 J/(g·K) × 60 K = 25.080 J = 25,08 kJ'
+
+    finalAnswer: 'Q = 25,08 kJ'
+
+    relatedCheatsheets:
+      - 'thermodynamik-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 2: Einfach (3-4 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-11-03'
+    title: 'Bildungsenthalpie zur Reaktionsenthalpie'
+    level: 2
+
+    task: |
+      Berechne die Reaktionsenthalpie für die Verbrennung von Methan:
+      CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l)
+
+      Gegeben (Standardbildungsenthalpien):
+      ΔfH°(CH₄) = -74,8 kJ/mol
+      ΔfH°(CO₂) = -393,5 kJ/mol
+      ΔfH°(H₂O) = -285,8 kJ/mol
+      ΔfH°(O₂) = 0 kJ/mol (Element)
+
+    hints:
+      keyword: 'ΔrH° = Σ ΔfH°(Produkte) - Σ ΔfH°(Edukte)'
+      approach: |
+        1. Summe der Bildungsenthalpien der Produkte
+        2. Summe der Bildungsenthalpien der Edukte
+        3. Differenz bilden
+      overview: |
+        Produkte: -393,5 + 2×(-285,8) = -965,1 kJ
+        Edukte: -74,8 + 0 = -74,8 kJ
+        ΔrH° = -965,1 - (-74,8) = -890,3 kJ
+
+    steps:
+      - description: 'Summe für Produkte berechnen'
+        solution: 'Σ Produkte = ΔfH°(CO₂) + 2×ΔfH°(H₂O) = -393,5 + 2×(-285,8) = -965,1 kJ/mol'
+      - description: 'Summe für Edukte berechnen'
+        solution: 'Σ Edukte = ΔfH°(CH₄) + 2×ΔfH°(O₂) = -74,8 + 0 = -74,8 kJ/mol'
+      - description: 'Reaktionsenthalpie berechnen'
+        solution: 'ΔrH° = -965,1 - (-74,8) = -890,3 kJ/mol'
+
+    finalAnswer: 'ΔrH° = -890,3 kJ/mol (stark exotherm)'
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+
+  - id: 'ex-11-04'
+    title: 'Kalorimetrie - Verbrennungswärme'
+    level: 2
+
+    task: |
+      In einem Kalorimeter werden 1,50 g einer Substanz verbrannt.
+      Die Temperatur steigt von 22,0°C auf 27,5°C.
+      Die Wärmekapazität des Kalorimeters beträgt 3,24 kJ/K.
+
+      Berechne die Verbrennungsenthalpie pro Gramm.
+
+    hints:
+      keyword: 'Q = C × ΔT (Kalorimeterkonstante)'
+      approach: |
+        1. Temperaturdifferenz berechnen
+        2. Wärmemenge berechnen
+        3. Auf 1 g umrechnen
+      overview: |
+        ΔT = 5,5 K
+        Q = 3,24 × 5,5 = 17,82 kJ
+        q = 17,82/1,5 = 11,88 kJ/g
+
+    steps:
+      - description: 'Temperaturdifferenz berechnen'
+        solution: 'ΔT = 27,5°C - 22,0°C = 5,5 K'
+      - description: 'Wärmemenge berechnen'
+        solution: 'Q = C × ΔT = 3,24 kJ/K × 5,5 K = 17,82 kJ'
+      - description: 'Verbrennungsenthalpie pro Gramm'
+        solution: 'q = Q/m = 17,82 kJ / 1,50 g = 11,88 kJ/g'
+
+    finalAnswer: 'Verbrennungsenthalpie = 11,88 kJ/g'
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-11-05'
+    title: 'Hess-Satz Anwendung'
+    level: 3
+
+    task: |
+      Berechne die Bildungsenthalpie von CO(g) aus folgenden Daten:
+
+      (1) C(s) + O₂(g) → CO₂(g)      ΔH₁ = -393,5 kJ/mol
+      (2) CO(g) + ½ O₂(g) → CO₂(g)   ΔH₂ = -283,0 kJ/mol
+
+      Gesucht: C(s) + ½ O₂(g) → CO(g)   ΔfH°(CO) = ?
+
+    hints:
+      keyword: 'Reaktionen so kombinieren, dass Zielreaktion entsteht'
+      approach: |
+        1. Zielreaktion aufschreiben
+        2. Reaktion (2) umkehren
+        3. Mit Reaktion (1) addieren
+        4. Enthalpien entsprechend verrechnen
+      overview: |
+        Reaktion (1): C + O₂ → CO₂, ΔH = -393,5
+        Reaktion (2) umgekehrt: CO₂ → CO + ½O₂, ΔH = +283,0
+        Summe: C + ½O₂ → CO, ΔH = -110,5 kJ
+
+    steps:
+      - description: 'Zielreaktion identifizieren'
+        solution: 'C(s) + ½ O₂(g) → CO(g)'
+      - description: 'Reaktion (2) umkehren'
+        solution: 'CO₂(g) → CO(g) + ½ O₂(g), ΔH = +283,0 kJ/mol'
+      - description: 'Reaktionen addieren'
+        solution: 'C + O₂ → CO₂ plus CO₂ → CO + ½O₂ ergibt: C + ½O₂ → CO'
+      - description: 'Enthalpien addieren'
+        solution: 'ΔfH°(CO) = -393,5 + 283,0 = -110,5 kJ/mol'
+
+    finalAnswer: 'ΔfH°(CO) = -110,5 kJ/mol'
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+      - 'hess-law-blueprint'
+
+  - id: 'ex-11-06'
+    title: 'Mischtemperatur berechnen'
+    level: 3
+
+    task: |
+      150 g Wasser (25°C) werden mit 100 g Wasser (75°C) gemischt.
+
+      Berechne die Mischtemperatur (Wärmeverlust vernachlässigt).
+
+      Gegeben: c(Wasser) = 4,18 J/(g·K)
+
+    hints:
+      keyword: 'Wärmeabgabe = Wärmeaufnahme'
+      approach: |
+        1. Wärmegleichung aufstellen
+        2. m₁c(T-T₁) = m₂c(T₂-T)
+        3. Nach T auflösen
+      overview: |
+        150(T-25) = 100(75-T)
+        150T - 3750 = 7500 - 100T
+        250T = 11250
+        T = 45°C
+
+    steps:
+      - description: 'Wärmegleichung aufstellen'
+        solution: 'Qaufgenommen = Qabgegeben → m₁c(T-T₁) = m₂c(T₂-T)'
+      - description: 'Werte einsetzen (c kürzt sich)'
+        solution: '150(T-25) = 100(75-T)'
+      - description: 'Gleichung auflösen'
+        solution: '150T - 3750 = 7500 - 100T → 250T = 11250'
+      - description: 'Mischtemperatur berechnen'
+        solution: 'T = 11250/250 = 45°C'
+
+    finalAnswer: 'Mischtemperatur T = 45°C'
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 4: Komplex (5-7 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-11-07'
+    title: 'Gibbs-Energie berechnen'
+    level: 4
+
+    task: |
+      Für eine Reaktion gilt bei 25°C:
+      ΔH° = -100 kJ/mol
+      ΔS° = -200 J/(mol·K)
+
+      a) Berechne ΔG° bei 25°C
+      b) Bei welcher Temperatur ist ΔG° = 0?
+      c) Ist die Reaktion bei 25°C spontan?
+
+    hints:
+      keyword: 'ΔG = ΔH - T·ΔS'
+      approach: |
+        1. Einheiten angleichen (kJ vs J)
+        2. ΔG bei 25°C berechnen
+        3. ΔG = 0 setzen und nach T auflösen
+        4. Vorzeichen von ΔG interpretieren
+      overview: |
+        T = 298 K
+        ΔG = -100 - 298×(-0,2) = -100 + 59,6 = -40,4 kJ
+        Bei ΔG = 0: T = ΔH/ΔS = 100/0,2 = 500 K
+
+    steps:
+      - description: 'Temperatur in Kelvin und Einheiten angleichen'
+        solution: 'T = 25 + 273 = 298 K; ΔS° = -200 J/(mol·K) = -0,2 kJ/(mol·K)'
+      - description: 'ΔG° bei 25°C berechnen'
+        solution: 'ΔG° = ΔH° - T·ΔS° = -100 - 298×(-0,2) = -100 + 59,6 = -40,4 kJ/mol'
+      - description: 'Gleichgewichtstemperatur (ΔG = 0) berechnen'
+        solution: '0 = ΔH° - T·ΔS° → T = ΔH°/ΔS° = -100/(-0,2) = 500 K = 227°C'
+      - description: 'Spontanität beurteilen'
+        solution: 'ΔG° < 0 → Reaktion ist bei 25°C spontan (exergonisch)'
+
+    finalAnswer: |
+      a) ΔG° = -40,4 kJ/mol
+      b) ΔG° = 0 bei T = 500 K (227°C)
+      c) Ja, die Reaktion ist bei 25°C spontan (ΔG° < 0)
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+      - 'gibbs-energy-blueprint'
+
+  - id: 'ex-11-08'
+    title: 'Kalorimetrie mit Reaktion'
+    level: 4
+
+    task: |
+      50 mL 1,0 M HCl werden mit 50 mL 1,0 M NaOH im Kalorimeter gemischt.
+      Die Temperatur steigt von 22,0°C auf 28,8°C.
+
+      Berechne die Neutralisationsenthalpie.
+
+      Annahme: Dichte = 1 g/mL, c = 4,18 J/(g·K)
+
+    hints:
+      keyword: 'Q = m·c·ΔT, dann durch Stoffmenge teilen'
+      approach: |
+        1. Masse der Lösung berechnen
+        2. Wärme berechnen
+        3. Stoffmenge der Reaktion berechnen
+        4. Enthalpie pro Mol berechnen
+      overview: |
+        m = 100 g, ΔT = 6,8 K
+        Q = 100 × 4,18 × 6,8 = 2842 J
+        n = 0,05 mol
+        ΔH = -2842/0,05 = -56,8 kJ/mol
+
+    steps:
+      - description: 'Masse der Lösung berechnen'
+        solution: 'm = (50 + 50) mL × 1 g/mL = 100 g'
+      - description: 'Temperaturdifferenz'
+        solution: 'ΔT = 28,8 - 22,0 = 6,8 K'
+      - description: 'Wärme berechnen'
+        solution: 'Q = 100 g × 4,18 J/(g·K) × 6,8 K = 2842,4 J = 2,84 kJ'
+      - description: 'Stoffmenge der Reaktion'
+        solution: 'n(HCl) = n(NaOH) = 0,05 L × 1 mol/L = 0,05 mol'
+      - description: 'Neutralisationsenthalpie berechnen'
+        solution: 'ΔH = -Q/n = -2,84 kJ / 0,05 mol = -56,8 kJ/mol'
+
+    finalAnswer: 'Neutralisationsenthalpie ΔH = -56,8 kJ/mol (exotherm)'
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-11-09'
+    title: 'Komplexe Hess-Anwendung'
+    level: 5
+
+    task: |
+      Berechne die Reaktionsenthalpie für:
+      2 Fe(s) + 3/2 O₂(g) → Fe₂O₃(s)
+
+      Gegeben:
+      (1) 2 Fe(s) + 6 HCl(aq) → 2 FeCl₃(aq) + 3 H₂(g)   ΔH₁ = -198 kJ
+      (2) Fe₂O₃(s) + 6 HCl(aq) → 2 FeCl₃(aq) + 3 H₂O(l) ΔH₂ = -160 kJ
+      (3) H₂(g) + ½ O₂(g) → H₂O(l)                      ΔH₃ = -286 kJ
+
+    hints:
+      keyword: 'Reaktionen so kombinieren, dass Zielgleichung entsteht'
+      approach: |
+        1. Zielreaktion analysieren
+        2. Reaktion (2) umkehren
+        3. Reaktion (3) mit 3 multiplizieren
+        4. Alle kombinieren
+      overview: |
+        (1) + (2 umgekehrt) + 3×(3)
+        = -198 + 160 + 3×(-286)
+        = -198 + 160 - 858 = -896 kJ
+
+    steps:
+      - description: 'Zielreaktion: 2 Fe + 3/2 O₂ → Fe₂O₃'
+        solution: 'Fe und O₂ als Edukte, Fe₂O₃ als Produkt benötigt'
+      - description: 'Reaktion (1) liefert 2 Fe als Edukt'
+        solution: '2 Fe + 6 HCl → 2 FeCl₃ + 3 H₂, ΔH = -198 kJ'
+      - description: 'Reaktion (2) umkehren für Fe₂O₃ als Produkt'
+        solution: '2 FeCl₃ + 3 H₂O → Fe₂O₃ + 6 HCl, ΔH = +160 kJ'
+      - description: 'Reaktion (3) ×3 um 3 H₂ zu verbrauchen'
+        solution: '3 H₂ + 3/2 O₂ → 3 H₂O, ΔH = 3×(-286) = -858 kJ'
+      - description: 'Alle Reaktionen addieren'
+        solution: '2 Fe + 3/2 O₂ → Fe₂O₃ (HCl, FeCl₃, H₂, H₂O kürzen sich)'
+      - description: 'Enthalpien addieren'
+        solution: 'ΔH = -198 + 160 + (-858) = -896 kJ'
+
+    finalAnswer: 'ΔfH°(Fe₂O₃) = -896 kJ/mol'
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+      - 'hess-law-blueprint'
+
+  - id: 'ex-11-10'
+    title: 'Temperaturabhängigkeit der Reaktion'
+    level: 5
+
+    task: |
+      Eine Reaktion hat:
+      ΔH° = +50 kJ/mol
+      ΔS° = +150 J/(mol·K)
+
+      a) Bei welcher Temperatur wird die Reaktion spontan?
+      b) Berechne ΔG° bei 100°C und 500°C
+      c) Erkläre das Ergebnis chemisch
+
+    hints:
+      keyword: 'Reaktion mit ΔH > 0 und ΔS > 0 ist bei hohen T spontan'
+      approach: |
+        1. Gleichgewichtstemperatur ΔG = 0 bestimmen
+        2. ΔG bei beiden Temperaturen berechnen
+        3. Ergebnis interpretieren
+      overview: |
+        T(eq) = ΔH/ΔS = 50000/150 = 333 K = 60°C
+        Bei 100°C: ΔG = 50 - 373×0,15 = -5,95 kJ (spontan)
+        Bei 500°C: ΔG = 50 - 773×0,15 = -65,95 kJ (stark spontan)
+
+    steps:
+      - description: 'Einheiten angleichen'
+        solution: 'ΔS° = 150 J/(mol·K) = 0,15 kJ/(mol·K)'
+      - description: 'Gleichgewichtstemperatur berechnen'
+        solution: 'ΔG = 0: T = ΔH°/ΔS° = 50/0,15 = 333 K = 60°C'
+      - description: 'ΔG° bei 100°C (373 K) berechnen'
+        solution: 'ΔG° = 50 - 373×0,15 = 50 - 55,95 = -5,95 kJ/mol'
+      - description: 'ΔG° bei 500°C (773 K) berechnen'
+        solution: 'ΔG° = 50 - 773×0,15 = 50 - 115,95 = -65,95 kJ/mol'
+      - description: 'Interpretation'
+        solution: 'Reaktion wird ab 60°C spontan; bei höheren T wird sie thermodynamisch immer günstiger'
+      - description: 'Chemische Erklärung'
+        solution: 'Endotherme Reaktion mit Entropiezunahme → entropiegetrieben bei hohen Temperaturen'
+
+    finalAnswer: |
+      a) Reaktion wird spontan ab T > 333 K (60°C)
+      b) ΔG°(100°C) = -5,95 kJ/mol; ΔG°(500°C) = -65,95 kJ/mol
+      c) Entropiegetriebene Reaktion: Bei ΔH > 0 und ΔS > 0 überwiegt der TΔS-Term bei hohen T
+
+    relatedBlueprints:
+      - 'thermodynamics-calculation-blueprint'
+      - 'gibbs-energy-blueprint'

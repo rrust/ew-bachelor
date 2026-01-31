@@ -2,6 +2,7 @@
  * Generate Training Bundles
  *
  * Creates pre-compiled JSON bundles for module training content.
+ * Includes both MC questions and practical exercises.
  *
  * Usage: node generate-training-bundles.js [studyId]
  *
@@ -29,6 +30,24 @@ function parseYamlQuestionsFile(content) {
     console.warn('  ⚠️  YAML parse error:', e.message);
   }
   return { topic: '', level: 1, questions: [] };
+}
+
+// Parse exercises.yaml file
+// Format: { topic: '...', blueprintType: '...', exercises: [...] }
+function parseExercisesFile(content) {
+  try {
+    const parsed = yaml.load(content);
+    if (parsed && Array.isArray(parsed.exercises)) {
+      return {
+        topic: parsed.topic || '',
+        blueprintType: parsed.blueprintType || null,
+        exercises: parsed.exercises
+      };
+    }
+  } catch (e) {
+    console.warn('  ⚠️  Exercises YAML parse error:', e.message);
+  }
+  return { topic: '', blueprintType: null, exercises: [] };
 }
 
 // Get all study IDs
@@ -104,15 +123,18 @@ function processModuleTraining(studyId, moduleId, moduleDir) {
   const topicFolders = getTopicFolders(trainingDir);
   const topics = [];
   let totalQuestions = 0;
+  let totalExercises = 0;
 
   for (const topicId of topicFolders) {
     const topicDir = path.join(trainingDir, topicId);
 
     // Extract topic title from first question
     let topicTitle = topicId;
+    let blueprintType = null;
     const questions = { 1: [], 2: [], 3: [], 4: [], 5: [] };
+    const exercises = { 1: [], 2: [], 3: [], 4: [], 5: [] };
 
-    // Process each level (1-5)
+    // Process each level (1-5) for MC questions
     for (let level = 1; level <= 5; level++) {
       // Support both .yaml and .md extensions (prefer .yaml)
       let levelFile = path.join(topicDir, `level-${level}.yaml`);
@@ -156,16 +178,76 @@ function processModuleTraining(studyId, moduleId, moduleDir) {
           normalized.correctAnswers = [q.correctAnswer];
         }
 
+        // Add related resources if present
+        if (q.relatedCheatsheets) {
+          normalized.relatedCheatsheets = q.relatedCheatsheets;
+        }
+        if (q.relatedBlueprints) {
+          normalized.relatedBlueprints = q.relatedBlueprints;
+        }
+
         questions[level].push(normalized);
         totalQuestions++;
       }
     }
 
-    topics.push({
+    // Process exercises.yaml if present
+    const exercisesFile = path.join(topicDir, 'exercises.yaml');
+    if (fs.existsSync(exercisesFile)) {
+      const exercisesContent = fs.readFileSync(exercisesFile, 'utf-8');
+      const parsedExercises = parseExercisesFile(exercisesContent);
+
+      // Get blueprintType for this topic
+      if (parsedExercises.blueprintType) {
+        blueprintType = parsedExercises.blueprintType;
+      }
+
+      // Process each exercise
+      for (const ex of parsedExercises.exercises) {
+        const level = ex.level || 3; // Default to level 3 if not specified
+
+        const normalizedExercise = {
+          id: ex.id,
+          title: ex.title,
+          level: level,
+          task: ex.task,
+          hints: ex.hints || {},
+          steps: ex.steps || [],
+          finalAnswer: ex.finalAnswer
+        };
+
+        // Add related resources
+        if (ex.relatedCheatsheets) {
+          normalizedExercise.relatedCheatsheets = ex.relatedCheatsheets;
+        }
+        if (ex.relatedBlueprints) {
+          normalizedExercise.relatedBlueprints = ex.relatedBlueprints;
+        }
+
+        exercises[level].push(normalizedExercise);
+        totalExercises++;
+      }
+    }
+
+    // Count exercises per topic
+    const exerciseCount = Object.values(exercises).reduce(
+      (sum, arr) => sum + arr.length,
+      0
+    );
+
+    const topicData = {
       id: topicId,
       title: topicTitle,
       questions: questions
-    });
+    };
+
+    // Only add exercises if there are any
+    if (exerciseCount > 0) {
+      topicData.exercises = exercises;
+      topicData.blueprintType = blueprintType;
+    }
+
+    topics.push(topicData);
   }
 
   // Create training bundle
@@ -174,6 +256,7 @@ function processModuleTraining(studyId, moduleId, moduleDir) {
     title: meta.title || `Modul-Training: ${moduleId}`,
     description: meta.description || '',
     totalQuestions: totalQuestions,
+    totalExercises: totalExercises,
     totalTopics: topics.length,
     questionsPerLevel: meta.questionsPerLevel || 10,
     levels: 5,
@@ -186,7 +269,7 @@ function processModuleTraining(studyId, moduleId, moduleDir) {
   const bundlePath = path.join(trainingDir, 'training-bundle.json');
   fs.writeFileSync(bundlePath, JSON.stringify(bundle, null, 2));
 
-  return bundle;
+  return { bundle, totalExercises };
 }
 
 // Main function
@@ -201,6 +284,7 @@ function main() {
 
   let totalBundles = 0;
   let totalQuestions = 0;
+  let totalExercises = 0;
 
   for (const studyId of studyIds) {
     const studyDir = path.join(contentDir, studyId);
@@ -223,14 +307,20 @@ function main() {
 
       console.log(`   📁 Module: ${moduleId}`);
 
-      const bundle = processModuleTraining(studyId, moduleId, moduleDir);
+      const result = processModuleTraining(studyId, moduleId, moduleDir);
+      const bundle = result.bundle;
+      const exerciseCount = result.totalExercises;
 
-      console.log(
-        `      ✅ ${bundle.totalTopics} topics, ${bundle.totalQuestions} questions`
-      );
+      // Build output string
+      let output = `      ✅ ${bundle.totalTopics} topics, ${bundle.totalQuestions} questions`;
+      if (exerciseCount > 0) {
+        output += `, ${exerciseCount} exercises`;
+      }
+      console.log(output);
 
       totalBundles++;
       totalQuestions += bundle.totalQuestions;
+      totalExercises += exerciseCount;
     }
 
     console.log('');
@@ -239,6 +329,9 @@ function main() {
   console.log('─'.repeat(50));
   console.log(`✅ Generated ${totalBundles} training bundle(s)`);
   console.log(`   ❓ Total questions: ${totalQuestions}`);
+  if (totalExercises > 0) {
+    console.log(`   🧮 Total exercises: ${totalExercises}`);
+  }
 }
 
 main();

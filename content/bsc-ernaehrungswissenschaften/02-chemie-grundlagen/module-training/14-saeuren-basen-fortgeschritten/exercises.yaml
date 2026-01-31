@@ -1,0 +1,411 @@
+# Praktische Übungen: Säuren & Basen (Fortgeschritten)
+# 10 Übungen (2 pro Level)
+
+topic: 'Säuren & Basen (Fortgeschritten)'
+blueprintType: 'acid-base-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-14-01'
+    title: 'pH-Wert einer starken Säure'
+    level: 1
+
+    task: |
+      Berechne den pH-Wert einer 0,01 M Salzsäure (HCl).
+
+      Hinweis: HCl ist eine starke Säure und dissoziiert vollständig.
+
+    hints:
+      keyword: 'pH = -lg[H⁺]'
+      approach: |
+        1. [H⁺] aus Konzentration bestimmen
+        2. pH-Formel anwenden
+      overview: |
+        [H⁺] = 0,01 M = 10⁻² M
+        pH = -lg(10⁻²) = 2
+
+    steps:
+      - description: 'H⁺-Konzentration bestimmen'
+        solution: 'HCl → H⁺ + Cl⁻ (vollständig), also [H⁺] = c(HCl) = 0,01 M'
+      - description: 'pH-Wert berechnen'
+        solution: 'pH = -lg[H⁺] = -lg(0,01) = -lg(10⁻²) = 2'
+
+    finalAnswer: 'pH = 2'
+
+    relatedCheatsheets:
+      - 'saeuren-basen-cheatsheet'
+
+  - id: 'ex-14-02'
+    title: 'pH-Wert einer starken Base'
+    level: 1
+
+    task: |
+      Berechne den pH-Wert einer 0,001 M Natronlauge (NaOH).
+
+      Hinweis: NaOH ist eine starke Base.
+
+    hints:
+      keyword: 'pOH = -lg[OH⁻], pH = 14 - pOH'
+      approach: |
+        1. [OH⁻] bestimmen
+        2. pOH berechnen
+        3. pH = 14 - pOH
+      overview: |
+        [OH⁻] = 0,001 = 10⁻³ M
+        pOH = 3
+        pH = 14 - 3 = 11
+
+    steps:
+      - description: 'OH⁻-Konzentration bestimmen'
+        solution: 'NaOH → Na⁺ + OH⁻ (vollständig), also [OH⁻] = 0,001 M = 10⁻³ M'
+      - description: 'pOH-Wert berechnen'
+        solution: 'pOH = -lg(10⁻³) = 3'
+      - description: 'pH-Wert berechnen'
+        solution: 'pH = 14 - pOH = 14 - 3 = 11'
+
+    finalAnswer: 'pH = 11'
+
+    relatedCheatsheets:
+      - 'saeuren-basen-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 2: Einfach (3-4 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-14-03'
+    title: 'pH-Wert einer schwachen Säure'
+    level: 2
+
+    task: |
+      Berechne den pH-Wert einer 0,1 M Essigsäure (CH₃COOH).
+
+      Gegeben: pKₛ = 4,76
+
+    hints:
+      keyword: 'pH = ½(pKₛ - lg c₀)'
+      approach: |
+        1. Näherungsformel für schwache Säure anwenden
+        2. Werte einsetzen
+      overview: |
+        pH = ½(pKₛ - lg c₀)
+        pH = ½(4,76 - lg 0,1)
+        pH = ½(4,76 + 1) = 2,88
+
+    steps:
+      - description: 'Näherungsformel identifizieren'
+        solution: 'Für schwache Säuren: pH = ½(pKₛ - lg c₀)'
+      - description: 'lg c₀ berechnen'
+        solution: 'lg(0,1) = lg(10⁻¹) = -1'
+      - description: 'pH berechnen'
+        solution: 'pH = ½(4,76 - (-1)) = ½(4,76 + 1) = ½ × 5,76 = 2,88'
+
+    finalAnswer: 'pH = 2,88'
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+
+  - id: 'ex-14-04'
+    title: 'Dissoziationsgrad berechnen'
+    level: 2
+
+    task: |
+      In einer 0,1 M Essigsäure-Lösung beträgt [H⁺] = 1,34 × 10⁻³ M.
+
+      Berechne:
+      a) Den Dissoziationsgrad α
+      b) Den Prozentsatz der dissoziierten Moleküle
+
+    hints:
+      keyword: 'α = [H⁺]/c₀'
+      approach: |
+        1. Dissoziationsgrad = [H⁺] / Anfangskonzentration
+        2. In Prozent umrechnen
+      overview: |
+        α = 1,34×10⁻³ / 0,1 = 0,0134
+        = 1,34%
+
+    steps:
+      - description: 'Dissoziationsgrad berechnen'
+        solution: 'α = [H⁺]/c₀ = (1,34 × 10⁻³ M) / (0,1 M) = 0,0134'
+      - description: 'In Prozent umrechnen'
+        solution: 'α × 100% = 0,0134 × 100% = 1,34%'
+
+    finalAnswer: |
+      a) α = 0,0134
+      b) 1,34% der Essigsäure-Moleküle sind dissoziiert
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-14-05'
+    title: 'Henderson-Hasselbalch für Puffer'
+    level: 3
+
+    task: |
+      Ein Acetatpuffer enthält 0,2 M Essigsäure und 0,3 M Natriumacetat.
+
+      Berechne den pH-Wert des Puffers.
+
+      Gegeben: pKₛ(Essigsäure) = 4,76
+
+    hints:
+      keyword: 'Henderson-Hasselbalch: pH = pKₛ + lg([A⁻]/[HA])'
+      approach: |
+        1. Säure (HA) und konjugierte Base (A⁻) identifizieren
+        2. Verhältnis berechnen
+        3. Henderson-Hasselbalch anwenden
+      overview: |
+        [A⁻]/[HA] = 0,3/0,2 = 1,5
+        pH = 4,76 + lg(1,5)
+        pH = 4,76 + 0,18 = 4,94
+
+    steps:
+      - description: 'Säure und Base identifizieren'
+        solution: 'HA = CH₃COOH (Essigsäure), A⁻ = CH₃COO⁻ (Acetat)'
+      - description: 'Konzentrationsverhältnis berechnen'
+        solution: '[A⁻]/[HA] = 0,3/0,2 = 1,5'
+      - description: 'Logarithmus berechnen'
+        solution: 'lg(1,5) = 0,176 ≈ 0,18'
+      - description: 'Henderson-Hasselbalch anwenden'
+        solution: 'pH = pKₛ + lg([A⁻]/[HA]) = 4,76 + 0,18 = 4,94'
+
+    finalAnswer: 'pH = 4,94'
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+      - 'buffer-calculation-blueprint'
+
+  - id: 'ex-14-06'
+    title: 'pKₛ aus pH und Konzentrationen'
+    level: 3
+
+    task: |
+      Eine 0,05 M Lösung einer schwachen Säure HA hat pH = 3,0.
+
+      Berechne:
+      a) Die H⁺-Konzentration
+      b) Die Säurekonstante Kₛ
+      c) Den pKₛ-Wert
+
+    hints:
+      keyword: 'Kₛ = [H⁺]²/c₀ für schwache Säuren'
+      approach: |
+        1. [H⁺] aus pH berechnen
+        2. Kₛ = [H⁺]²/(c₀ - [H⁺]) ≈ [H⁺]²/c₀
+        3. pKₛ = -lg(Kₛ)
+      overview: |
+        [H⁺] = 10⁻³ M
+        Kₛ = (10⁻³)²/0,05 = 2×10⁻⁵
+        pKₛ = 4,7
+
+    steps:
+      - description: 'H⁺-Konzentration aus pH'
+        solution: '[H⁺] = 10⁻pH = 10⁻³ M = 0,001 M'
+      - description: 'Prüfung ob Näherung gilt'
+        solution: '[H⁺] << c₀ (0,001 << 0,05), Näherung erlaubt'
+      - description: 'Säurekonstante berechnen'
+        solution: 'Kₛ = [H⁺]²/c₀ = (10⁻³)²/0,05 = 10⁻⁶/0,05 = 2×10⁻⁵'
+      - description: 'pKₛ berechnen'
+        solution: 'pKₛ = -lg(Kₛ) = -lg(2×10⁻⁵) = 5 - lg(2) = 5 - 0,3 = 4,7'
+
+    finalAnswer: |
+      a) [H⁺] = 10⁻³ M = 1 mM
+      b) Kₛ = 2 × 10⁻⁵
+      c) pKₛ = 4,7
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 4: Komplex (5-7 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-14-07'
+    title: 'Puffer-Herstellung'
+    level: 4
+
+    task: |
+      Es soll 500 mL eines Acetatpuffers mit pH = 5,0 und
+      Gesamtacetatkonzentration = 0,2 M hergestellt werden.
+
+      Berechne die benötigten Massen an:
+      a) Essigsäure (M = 60 g/mol)
+      b) Natriumacetat (M = 82 g/mol)
+
+      Gegeben: pKₛ = 4,76
+
+    hints:
+      keyword: 'Henderson-Hasselbalch umstellen, dann Stoffmengen berechnen'
+      approach: |
+        1. Verhältnis [A⁻]/[HA] aus HH berechnen
+        2. Mit c(gesamt) = [HA] + [A⁻] kombinieren
+        3. Einzelkonzentrationen berechnen
+        4. Massen berechnen
+      overview: |
+        [A⁻]/[HA] = 10^(5,0-4,76) = 1,74
+        [HA] + [A⁻] = 0,2
+        [HA] = 0,073 M, [A⁻] = 0,127 M
+
+    steps:
+      - description: 'Verhältnis aus Henderson-Hasselbalch'
+        solution: 'pH = pKₛ + lg([A⁻]/[HA]) → [A⁻]/[HA] = 10^(pH-pKₛ) = 10^(0,24) = 1,74'
+      - description: 'Gleichungssystem aufstellen'
+        solution: '[A⁻] = 1,74 × [HA] und [A⁻] + [HA] = 0,2 M'
+      - description: 'HA-Konzentration berechnen'
+        solution: '1,74×[HA] + [HA] = 0,2 → 2,74×[HA] = 0,2 → [HA] = 0,073 M'
+      - description: 'A⁻-Konzentration berechnen'
+        solution: '[A⁻] = 0,2 - 0,073 = 0,127 M'
+      - description: 'Masse Essigsäure berechnen'
+        solution: 'm(HA) = 0,073 mol/L × 0,5 L × 60 g/mol = 2,19 g'
+      - description: 'Masse Natriumacetat berechnen'
+        solution: 'm(NaOAc) = 0,127 mol/L × 0,5 L × 82 g/mol = 5,21 g'
+
+    finalAnswer: |
+      a) m(Essigsäure) = 2,19 g
+      b) m(Natriumacetat) = 5,21 g
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+      - 'buffer-calculation-blueprint'
+
+  - id: 'ex-14-08'
+    title: 'Pufferkapazität'
+    level: 4
+
+    task: |
+      Zu 100 mL eines Acetatpuffers (pH 4,76, c = 0,1 M jeweils HA und A⁻)
+      werden 5 mL 1 M HCl zugegeben.
+
+      Berechne den neuen pH-Wert.
+
+      Gegeben: pKₛ = 4,76
+
+    hints:
+      keyword: 'Säure reagiert mit Base-Komponente des Puffers'
+      approach: |
+        1. Stoffmengen vor Zugabe berechnen
+        2. Säurezugabe als Reaktion: A⁻ + H⁺ → HA
+        3. Neue Stoffmengen berechnen
+        4. Henderson-Hasselbalch anwenden
+      overview: |
+        n(A⁻)₀ = 0,01 mol, n(HA)₀ = 0,01 mol
+        n(H⁺) = 0,005 mol
+        n(A⁻)neu = 0,005 mol, n(HA)neu = 0,015 mol
+        pH = 4,76 + lg(0,005/0,015) = 4,28
+
+    steps:
+      - description: 'Stoffmengen im Puffer'
+        solution: 'n(HA) = n(A⁻) = 0,1 mol/L × 0,1 L = 0,01 mol'
+      - description: 'Stoffmenge zugegebene Säure'
+        solution: 'n(H⁺) = 1 mol/L × 0,005 L = 0,005 mol'
+      - description: 'Reaktion: A⁻ + H⁺ → HA'
+        solution: 'n(A⁻)neu = 0,01 - 0,005 = 0,005 mol, n(HA)neu = 0,01 + 0,005 = 0,015 mol'
+      - description: 'Neues Verhältnis'
+        solution: '[A⁻]/[HA] = 0,005/0,015 = 1/3'
+      - description: 'Neuer pH-Wert'
+        solution: 'pH = 4,76 + lg(1/3) = 4,76 - 0,48 = 4,28'
+
+    finalAnswer: 'pH (neu) = 4,28'
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+      - 'buffer-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-14-09'
+    title: 'Titrationskurve - Äquivalenzpunkt'
+    level: 5
+
+    task: |
+      50 mL einer 0,1 M Essigsäure werden mit 0,1 M NaOH titriert.
+
+      Berechne:
+      a) Das Volumen NaOH am Äquivalenzpunkt
+      b) Den pH-Wert am Äquivalenzpunkt
+      c) Den pH-Wert am Halbäquivalenzpunkt
+
+      Gegeben: pKₛ = 4,76
+
+    hints:
+      keyword: 'Am ÄP nur Base vorhanden, am HAP: pH = pKₛ'
+      approach: |
+        1. Volumen am ÄP aus Stöchiometrie
+        2. Am ÄP: Acetat-Hydrolyse → pH > 7
+        3. Am HAP: [HA] = [A⁻] → pH = pKₛ
+      overview: |
+        V(ÄP) = 50 mL
+        c(Acetat) = 0,05 M im ÄP
+        pH(ÄP) ≈ 8,7
+        pH(HAP) = 4,76
+
+    steps:
+      - description: 'Volumen am Äquivalenzpunkt'
+        solution: 'n(HA) = n(OH⁻) → 0,1×0,05 = 0,1×V(NaOH) → V = 50 mL'
+      - description: 'Am ÄP: nur Acetat vorhanden'
+        solution: 'n(Acetat) = 0,005 mol in 100 mL → c = 0,05 M'
+      - description: 'Acetat-Hydrolyse: A⁻ + H₂O ⇌ HA + OH⁻'
+        solution: 'pKb = 14 - pKₛ = 14 - 4,76 = 9,24; Kb = 5,75 × 10⁻¹⁰'
+      - description: 'pH am Äquivalenzpunkt berechnen'
+        solution: 'pOH = ½(pKb - lg c) = ½(9,24 + 1,3) = 5,27 → pH = 14 - 5,27 = 8,73'
+      - description: 'Am Halbäquivalenzpunkt'
+        solution: '[HA] = [A⁻] → lg([A⁻]/[HA]) = 0 → pH = pKₛ = 4,76'
+
+    finalAnswer: |
+      a) V(NaOH) am ÄP = 50 mL
+      b) pH am ÄP = 8,73 (basisch wegen Acetat-Hydrolyse)
+      c) pH am HAP = 4,76 = pKₛ
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'
+      - 'titration-blueprint'
+
+  - id: 'ex-14-10'
+    title: 'Mehrprotonige Säure'
+    level: 5
+
+    task: |
+      Berechne den pH-Wert einer 0,1 M Phosphorsäure-Lösung (H₃PO₄).
+
+      Gegeben:
+      pKₛ₁ = 2,15
+      pKₛ₂ = 7,20
+      pKₛ₃ = 12,35
+
+    hints:
+      keyword: 'Bei mehrprotonigen Säuren dominiert die erste Dissoziation'
+      approach: |
+        1. Prüfen ob Kₛ₁ >> Kₛ₂
+        2. Nur erste Dissoziation berücksichtigen
+        3. Wie einprotonige schwache Säure rechnen
+      overview: |
+        Kₛ₁/Kₛ₂ ≈ 10⁵ >> 1, also nur H₃PO₄ ⇌ H₂PO₄⁻ + H⁺ relevant
+        pH = ½(pKₛ₁ - lg c₀) = ½(2,15 + 1) = 1,58
+
+    steps:
+      - description: 'Verhältnis Kₛ₁/Kₛ₂ prüfen'
+        solution: 'Kₛ₁/Kₛ₂ = 10^(7,20-2,15) = 10^5,05 ≈ 10⁵ >> 1'
+      - description: 'Schlussfolgerung'
+        solution: 'Zweite und dritte Dissoziation vernachlässigbar'
+      - description: 'Behandlung wie einprotonige schwache Säure'
+        solution: 'H₃PO₄ ⇌ H₂PO₄⁻ + H⁺ mit Kₛ₁'
+      - description: 'Näherungsformel anwenden'
+        solution: 'pH = ½(pKₛ₁ - lg c₀) = ½(2,15 - lg 0,1) = ½(2,15 + 1)'
+      - description: 'pH berechnen'
+        solution: 'pH = ½ × 3,15 = 1,575 ≈ 1,58'
+      - description: 'Prüfung der Näherung'
+        solution: '[H⁺] = 10^(-1,58) = 0,026 M << c₀, Näherung gültig'
+
+    finalAnswer: 'pH = 1,58'
+
+    relatedBlueprints:
+      - 'acid-base-calculation-blueprint'

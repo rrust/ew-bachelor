@@ -88,13 +88,27 @@ function renderAchievementsGallery(filter = 'all') {
  * Create HTML for an achievement card
  */
 function createAchievementCard(achievement) {
-  const { id, title, description, icon, currentStatus, progress } = achievement;
+  const {
+    id,
+    title,
+    description,
+    icon,
+    currentStatus,
+    progress,
+    achievementType
+  } = achievement;
 
   let statusBadge = '';
   let statusIcon = '';
   let statusColor = '';
   let cardClass = 'cursor-pointer hover:shadow-lg';
   let daysRemaining = '';
+
+  // Determine if this is a blueprint (vs cheatsheet)
+  const isBlueprint = achievementType === 'blueprint';
+  const typeBadge = isBlueprint
+    ? `<span class="bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 text-xs px-1.5 py-0.5 rounded mr-1">${Icons.get('pencil', 'w-3 h-3 inline')} Blueprint</span>`
+    : '';
 
   switch (currentStatus) {
     case 'locked':
@@ -147,7 +161,7 @@ function createAchievementCard(achievement) {
         <div class="flex-shrink-0 mt-0.5">${achievementIcon}</div>
         <div class="flex-grow min-w-0">
           <div class="flex items-start justify-between gap-3 mb-1">
-            <h3 class="font-bold text-sm">${title}</h3>
+            <h3 class="font-bold text-sm">${typeBadge}${title}</h3>
             <span class="${statusColor} text-white text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0">
               ${statusBadge}
             </span>
@@ -181,6 +195,8 @@ function getUnlockConditionDescription(condition) {
       return `${condition.count} aufeinanderfolgende Gold-Badges erreichen`;
     case 'achievement-with-extensions':
       return 'Vorheriges Achievement erfolgreich verlängern';
+    case 'first-exercise-solved':
+      return 'Erste praktische Übung im Modul-Training lösen';
     default:
       return 'Bedingungen erfüllen';
   }
@@ -309,7 +325,26 @@ function setupAchievementsListeners() {
   });
 }
 
+/**
+ * Show achievement modal by ID (for linking from other views)
+ */
+function showAchievementModalById(achievementId) {
+  if (!window.APP_CONTENT || !window.APP_CONTENT.achievements) {
+    console.warn('[AchievementsUI] Achievements not loaded');
+    return;
+  }
+
+  const achievement = window.APP_CONTENT.achievements[achievementId];
+  if (!achievement) {
+    console.warn('[AchievementsUI] Achievement not found:', achievementId);
+    return;
+  }
+
+  showAchievementModal(achievement);
+}
+
 // Expose functions to global scope
 window.renderAchievementsGallery = renderAchievementsGallery;
 window.showAchievementModal = showAchievementModal;
+window.showAchievementModalById = showAchievementModalById;
 window.setupAchievementsListeners = setupAchievementsListeners;

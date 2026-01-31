@@ -222,6 +222,38 @@ function recordCorrectTrainingAnswer(moduleId, questionId) {
 }
 
 /**
+ * Records a solved exercise
+ * @param {string} moduleId - Module ID
+ * @param {string} exerciseId - Exercise ID (e.g., "ex-03-01")
+ * @param {string} topicId - Topic/Chapter ID
+ * @returns {Object} Updated training progress
+ */
+function recordSolvedExercise(moduleId, exerciseId, topicId) {
+  const training = getModuleTrainingProgress(moduleId);
+
+  // Initialize exercises tracking if needed
+  if (!training.solvedExercises) {
+    training.solvedExercises = [];
+  }
+
+  // Add to solved exercises if not already there
+  const fullId = `${topicId}:${exerciseId}`;
+  if (!training.solvedExercises.includes(fullId)) {
+    training.solvedExercises.push(fullId);
+  }
+
+  saveModuleTrainingProgress(moduleId, training);
+
+  // Check for blueprint unlock (any solved exercise unlocks the blueprint)
+  // Trigger achievement check
+  if (window.refreshAchievements) {
+    window.refreshAchievements();
+  }
+
+  return training;
+}
+
+/**
  * Checks if all questions of current level are answered correctly
  * and advances to next level if so
  * @param {string} moduleId - Module ID
@@ -504,6 +536,7 @@ window.importProgress = importProgress;
 window.getModuleTrainingProgress = getModuleTrainingProgress;
 window.saveModuleTrainingProgress = saveModuleTrainingProgress;
 window.recordCorrectTrainingAnswer = recordCorrectTrainingAnswer;
+window.recordSolvedExercise = recordSolvedExercise;
 window.checkAndAdvanceLevel = checkAndAdvanceLevel;
 window.getRemainingQuestions = getRemainingQuestions;
 window.resetModuleTrainingProgress = resetModuleTrainingProgress;
