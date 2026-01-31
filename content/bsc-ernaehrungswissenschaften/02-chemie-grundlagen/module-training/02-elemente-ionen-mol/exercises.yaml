@@ -1,0 +1,406 @@
+# Praktische Übungen: Elemente, Ionen & Mol-Konzept
+# 10 Übungen (2 pro Level)
+
+topic: 'Elemente, Ionen & Mol-Konzept'
+blueprintType: 'mol-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-02-01'
+    title: 'Stoffmenge aus Teilchenzahl'
+    level: 1
+
+    task: |
+      In einem Behälter befinden sich 3,011 × 10²³ Wassermoleküle.
+
+      Berechne die Stoffmenge in Mol.
+
+      Gegeben: Avogadro-Konstante Nₐ = 6,022 × 10²³ mol⁻¹
+
+    hints:
+      keyword: 'Formel n = N/Nₐ'
+      approach: |
+        1. Gegebene Werte identifizieren
+        2. Formel n = N/Nₐ anwenden
+      overview: |
+        N = 3,011 × 10²³
+        Nₐ = 6,022 × 10²³ mol⁻¹
+        n = 3,011/6,022 = 0,5 mol
+
+    steps:
+      - description: 'Gegebene Werte notieren'
+        solution: 'N = 3,011 × 10²³, Nₐ = 6,022 × 10²³ mol⁻¹'
+      - description: 'Stoffmenge berechnen mit n = N/Nₐ'
+        solution: 'n = (3,011 × 10²³) / (6,022 × 10²³ mol⁻¹) = 0,5 mol'
+
+    finalAnswer: 'n = 0,5 mol'
+
+    relatedCheatsheets:
+      - 'atome-formeln-cheatsheet'
+
+  - id: 'ex-02-02'
+    title: 'Teilchenzahl aus Stoffmenge'
+    level: 1
+
+    task: |
+      Wie viele Eisenatome sind in 2 mol Eisen enthalten?
+
+      Gegeben: Nₐ = 6,022 × 10²³ mol⁻¹
+
+    hints:
+      keyword: 'Formel N = n × Nₐ'
+      approach: |
+        1. Gegebene Werte identifizieren
+        2. Formel N = n × Nₐ anwenden
+      overview: |
+        n = 2 mol
+        N = 2 × 6,022 × 10²³ = 1,2044 × 10²⁴
+
+    steps:
+      - description: 'Gegebene Werte notieren'
+        solution: 'n(Fe) = 2 mol, Nₐ = 6,022 × 10²³ mol⁻¹'
+      - description: 'Teilchenzahl berechnen mit N = n × Nₐ'
+        solution: 'N = 2 mol × 6,022 × 10²³ mol⁻¹ = 1,2044 × 10²⁴ Atome'
+
+    finalAnswer: 'N = 1,2044 × 10²⁴ Eisenatome'
+
+    relatedCheatsheets:
+      - 'atome-formeln-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 2: Einfach (3-4 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-02-03'
+    title: 'Molare Masse berechnen'
+    level: 2
+
+    task: |
+      Berechne die molare Masse von Schwefelsäure (H₂SO₄).
+
+      Gegeben:
+      M(H) = 1,0 g/mol
+      M(S) = 32,1 g/mol
+      M(O) = 16,0 g/mol
+
+    hints:
+      keyword: 'Summe der Atommassen'
+      approach: |
+        1. Anzahl jedes Atoms bestimmen
+        2. Einzelne Massen berechnen
+        3. Alle Massen addieren
+      overview: |
+        H₂SO₄: 2×H + 1×S + 4×O
+        M = 2×1,0 + 32,1 + 4×16,0 = 98,1 g/mol
+
+    steps:
+      - description: 'Anzahl der Atome aus Formel ablesen'
+        solution: 'H₂SO₄ enthält: 2 H, 1 S, 4 O'
+      - description: 'Masse der H-Atome berechnen'
+        solution: '2 × 1,0 g/mol = 2,0 g/mol'
+      - description: 'Masse der S-Atome berechnen'
+        solution: '1 × 32,1 g/mol = 32,1 g/mol'
+      - description: 'Masse der O-Atome berechnen'
+        solution: '4 × 16,0 g/mol = 64,0 g/mol'
+      - description: 'Molare Masse addieren'
+        solution: 'M(H₂SO₄) = 2,0 + 32,1 + 64,0 = 98,1 g/mol'
+
+    finalAnswer: 'M(H₂SO₄) = 98,1 g/mol'
+
+    relatedCheatsheets:
+      - 'atome-formeln-cheatsheet'
+
+  - id: 'ex-02-04'
+    title: 'Masse aus Stoffmenge und molarer Masse'
+    level: 2
+
+    task: |
+      Welche Masse haben 0,25 mol Natriumchlorid (NaCl)?
+
+      Gegeben:
+      M(Na) = 23,0 g/mol
+      M(Cl) = 35,5 g/mol
+
+    hints:
+      keyword: 'Formel m = n × M'
+      approach: |
+        1. Molare Masse von NaCl berechnen
+        2. Mit Stoffmenge multiplizieren
+      overview: |
+        M(NaCl) = 23,0 + 35,5 = 58,5 g/mol
+        m = 0,25 × 58,5 = 14,625 g
+
+    steps:
+      - description: 'Molare Masse von NaCl berechnen'
+        solution: 'M(NaCl) = 23,0 + 35,5 = 58,5 g/mol'
+      - description: 'Masse berechnen mit m = n × M'
+        solution: 'm = 0,25 mol × 58,5 g/mol = 14,625 g ≈ 14,6 g'
+
+    finalAnswer: 'm(NaCl) = 14,6 g'
+
+    relatedCheatsheets:
+      - 'atome-formeln-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-02-05'
+    title: 'Von Masse zu Teilchenzahl'
+    level: 3
+
+    task: |
+      Wie viele Moleküle sind in 9 g Wasser (H₂O) enthalten?
+
+      Gegeben:
+      M(H) = 1,0 g/mol, M(O) = 16,0 g/mol
+      Nₐ = 6,022 × 10²³ mol⁻¹
+
+    hints:
+      keyword: 'Erst n berechnen, dann N'
+      approach: |
+        1. Molare Masse von H₂O berechnen
+        2. Stoffmenge n = m/M berechnen
+        3. Teilchenzahl N = n × Nₐ berechnen
+      overview: |
+        M = 18 g/mol
+        n = 9/18 = 0,5 mol
+        N = 0,5 × 6,022 × 10²³ = 3,011 × 10²³
+
+    steps:
+      - description: 'Molare Masse von H₂O berechnen'
+        solution: 'M(H₂O) = 2 × 1,0 + 16,0 = 18,0 g/mol'
+      - description: 'Stoffmenge berechnen'
+        solution: 'n = 9 g / 18,0 g/mol = 0,5 mol'
+      - description: 'Teilchenzahl berechnen'
+        solution: 'N = 0,5 mol × 6,022 × 10²³ mol⁻¹ = 3,011 × 10²³ Moleküle'
+
+    finalAnswer: 'N = 3,011 × 10²³ H₂O-Moleküle'
+
+    relatedBlueprints:
+      - 'mol-calculation-blueprint'
+
+  - id: 'ex-02-06'
+    title: 'Ionenanzahl in Salz'
+    level: 3
+
+    task: |
+      5,85 g Natriumchlorid (NaCl) werden in Wasser gelöst.
+
+      Berechne:
+      a) Die Stoffmenge NaCl
+      b) Die Anzahl der Na⁺-Ionen
+      c) Die Anzahl der Cl⁻-Ionen
+
+      Gegeben: M(NaCl) = 58,5 g/mol, Nₐ = 6,022 × 10²³ mol⁻¹
+
+    hints:
+      keyword: 'NaCl dissoziiert vollständig: 1:1 Verhältnis'
+      approach: |
+        1. Stoffmenge NaCl berechnen
+        2. NaCl → Na⁺ + Cl⁻ (Verhältnis 1:1:1)
+        3. Ionenanzahl mit Nₐ berechnen
+      overview: |
+        n(NaCl) = 0,1 mol
+        n(Na⁺) = n(Cl⁻) = 0,1 mol
+        N(Ionen) = 0,1 × 6,022 × 10²³ = 6,022 × 10²²
+
+    steps:
+      - description: 'Stoffmenge NaCl berechnen'
+        solution: 'n(NaCl) = 5,85 g / 58,5 g/mol = 0,1 mol'
+      - description: 'Dissoziation: Stoffmengenverhältnis'
+        solution: 'NaCl → Na⁺ + Cl⁻ (1:1:1), also n(Na⁺) = n(Cl⁻) = 0,1 mol'
+      - description: 'Anzahl Na⁺-Ionen berechnen'
+        solution: 'N(Na⁺) = 0,1 mol × 6,022 × 10²³ mol⁻¹ = 6,022 × 10²² Ionen'
+      - description: 'Anzahl Cl⁻-Ionen berechnen'
+        solution: 'N(Cl⁻) = 0,1 mol × 6,022 × 10²³ mol⁻¹ = 6,022 × 10²² Ionen'
+
+    finalAnswer: |
+      a) n(NaCl) = 0,1 mol
+      b) N(Na⁺) = 6,022 × 10²² Ionen
+      c) N(Cl⁻) = 6,022 × 10²² Ionen
+
+    relatedBlueprints:
+      - 'mol-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 4: Komplex (5-7 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-02-07'
+    title: 'Prozentualer Massenanteil'
+    level: 4
+
+    task: |
+      Berechne den prozentualen Massenanteil von Stickstoff
+      in Ammoniumnitrat (NH₄NO₃).
+
+      Gegeben:
+      M(N) = 14,0 g/mol
+      M(H) = 1,0 g/mol
+      M(O) = 16,0 g/mol
+
+    hints:
+      keyword: 'w = (Masse des Elements / Gesamtmasse) × 100%'
+      approach: |
+        1. Anzahl N-Atome bestimmen
+        2. Molare Masse der Verbindung berechnen
+        3. Masse des Stickstoffs berechnen
+        4. Prozentanteil berechnen
+      overview: |
+        NH₄NO₃: 2 N, 4 H, 3 O
+        M = 80 g/mol
+        M(N-Anteil) = 28 g/mol
+        w(N) = 28/80 × 100% = 35%
+
+    steps:
+      - description: 'Anzahl der Atome aus Formel ablesen'
+        solution: 'NH₄NO₃ enthält: 2 N, 4 H, 3 O'
+      - description: 'Molare Masse berechnen'
+        solution: 'M = 2×14,0 + 4×1,0 + 3×16,0 = 28 + 4 + 48 = 80 g/mol'
+      - description: 'Masse des Stickstoffs im Mol'
+        solution: 'M(N-Anteil) = 2 × 14,0 g/mol = 28 g/mol'
+      - description: 'Prozentanteil berechnen'
+        solution: 'w(N) = (28 g/mol / 80 g/mol) × 100% = 35%'
+
+    finalAnswer: 'w(N) = 35%'
+
+    relatedBlueprints:
+      - 'mol-calculation-blueprint'
+
+  - id: 'ex-02-08'
+    title: 'Ionenanzahl in Calcium-Verbindung'
+    level: 4
+
+    task: |
+      11,1 g Calciumchlorid (CaCl₂) werden vollständig in Wasser gelöst.
+
+      Berechne:
+      a) Die Stoffmenge CaCl₂
+      b) Die Gesamtzahl der Ionen in der Lösung
+
+      Gegeben: M(Ca) = 40,1 g/mol, M(Cl) = 35,5 g/mol
+      Nₐ = 6,022 × 10²³ mol⁻¹
+
+    hints:
+      keyword: 'CaCl₂ → Ca²⁺ + 2 Cl⁻ (1 Formeleinheit → 3 Ionen)'
+      approach: |
+        1. Molare Masse CaCl₂ berechnen
+        2. Stoffmenge berechnen
+        3. Dissoziation: 1 CaCl₂ → 3 Ionen
+        4. Gesamtionenzahl berechnen
+      overview: |
+        M(CaCl₂) = 111 g/mol
+        n = 0,1 mol
+        Pro Formeleinheit: 3 Ionen
+        N(Ionen) = 0,1 × 3 × Nₐ = 1,81 × 10²³
+
+    steps:
+      - description: 'Molare Masse CaCl₂ berechnen'
+        solution: 'M(CaCl₂) = 40,1 + 2 × 35,5 = 40,1 + 71,0 = 111,1 g/mol'
+      - description: 'Stoffmenge berechnen'
+        solution: 'n(CaCl₂) = 11,1 g / 111,1 g/mol = 0,1 mol'
+      - description: 'Dissoziation analysieren'
+        solution: 'CaCl₂ → Ca²⁺ + 2 Cl⁻ (1 Formeleinheit ergibt 3 Ionen)'
+      - description: 'Gesamtzahl der Ionen berechnen'
+        solution: 'N(Ionen) = 0,1 mol × 3 × 6,022 × 10²³ mol⁻¹ = 1,81 × 10²³ Ionen'
+
+    finalAnswer: |
+      a) n(CaCl₂) = 0,1 mol
+      b) N(Ionen) = 1,81 × 10²³ Ionen (davon 6,02 × 10²² Ca²⁺ und 1,20 × 10²³ Cl⁻)
+
+    relatedBlueprints:
+      - 'mol-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-02-09'
+    title: 'Empirische Formel aus Massenanteilen'
+    level: 5
+
+    task: |
+      Eine organische Verbindung enthält:
+      - 40,0% Kohlenstoff
+      - 6,7% Wasserstoff
+      - 53,3% Sauerstoff
+
+      Bestimme die empirische Formel.
+
+      Gegeben: M(C) = 12,0 g/mol, M(H) = 1,0 g/mol, M(O) = 16,0 g/mol
+
+    hints:
+      keyword: 'Prozente als Gramm annehmen, dann Stoffmengen vergleichen'
+      approach: |
+        1. 100 g Probe annehmen → Prozente = Gramm
+        2. Stoffmenge jedes Elements berechnen
+        3. Durch kleinste Stoffmenge teilen
+        4. Auf ganze Zahlen runden/multiplizieren
+      overview: |
+        n(C) = 40/12 = 3,33 mol
+        n(H) = 6,7/1 = 6,7 mol
+        n(O) = 53,3/16 = 3,33 mol
+        Verhältnis: 1:2:1 → CH₂O
+
+    steps:
+      - description: '100 g Probe annehmen'
+        solution: 'm(C) = 40,0 g, m(H) = 6,7 g, m(O) = 53,3 g'
+      - description: 'Stoffmenge Kohlenstoff berechnen'
+        solution: 'n(C) = 40,0 g / 12,0 g/mol = 3,33 mol'
+      - description: 'Stoffmenge Wasserstoff berechnen'
+        solution: 'n(H) = 6,7 g / 1,0 g/mol = 6,7 mol'
+      - description: 'Stoffmenge Sauerstoff berechnen'
+        solution: 'n(O) = 53,3 g / 16,0 g/mol = 3,33 mol'
+      - description: 'Durch kleinste Stoffmenge teilen'
+        solution: 'C: 3,33/3,33 = 1, H: 6,7/3,33 = 2, O: 3,33/3,33 = 1'
+      - description: 'Empirische Formel aufstellen'
+        solution: 'Verhältnis C:H:O = 1:2:1 → Empirische Formel: CH₂O'
+
+    finalAnswer: 'Empirische Formel: CH₂O'
+
+    relatedBlueprints:
+      - 'mol-calculation-blueprint'
+      - 'empirical-formula-blueprint'
+
+  - id: 'ex-02-10'
+    title: 'Molekülformel aus empirischer Formel'
+    level: 5
+
+    task: |
+      Die empirische Formel einer Verbindung ist CH₂O.
+      Die molare Masse beträgt 180 g/mol.
+
+      Bestimme die Molekülformel.
+
+      Gegeben: M(C) = 12,0 g/mol, M(H) = 1,0 g/mol, M(O) = 16,0 g/mol
+
+    hints:
+      keyword: 'Faktor = M(Verbindung) / M(empirische Formel)'
+      approach: |
+        1. Molare Masse der empirischen Formel berechnen
+        2. Faktor = M(gesamt) / M(empirisch) berechnen
+        3. Empirische Formel mit Faktor multiplizieren
+      overview: |
+        M(CH₂O) = 30 g/mol
+        Faktor = 180/30 = 6
+        Molekülformel: C₆H₁₂O₆
+
+    steps:
+      - description: 'Molare Masse der empirischen Formel berechnen'
+        solution: 'M(CH₂O) = 12,0 + 2×1,0 + 16,0 = 30 g/mol'
+      - description: 'Faktor berechnen'
+        solution: 'Faktor = 180 g/mol / 30 g/mol = 6'
+      - description: 'Molekülformel bestimmen'
+        solution: '(CH₂O)₆ = C₆H₁₂O₆'
+      - description: 'Kontrolle der molaren Masse'
+        solution: 'M(C₆H₁₂O₆) = 6×12 + 12×1 + 6×16 = 72 + 12 + 96 = 180 g/mol ✓'
+
+    finalAnswer: 'Molekülformel: C₆H₁₂O₆ (Glucose)'
+
+    relatedBlueprints:
+      - 'mol-calculation-blueprint'
+      - 'empirical-formula-blueprint'

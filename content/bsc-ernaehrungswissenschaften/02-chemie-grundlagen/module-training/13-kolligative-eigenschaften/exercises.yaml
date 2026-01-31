@@ -1,0 +1,408 @@
+# Praktische Übungen: Kolligative Eigenschaften
+# 10 Übungen (2 pro Level)
+
+topic: 'Kolligative Eigenschaften'
+blueprintType: 'colligative-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-13-01'
+    title: 'Siedepunktserhöhung berechnen'
+    level: 1
+    
+    task: |
+      Berechne die Siedepunktserhöhung einer Lösung von 0,5 mol
+      Glucose in 1 kg Wasser.
+      
+      Gegeben: Keb(Wasser) = 0,512 K·kg/mol
+    
+    hints:
+      keyword: 'ΔTeb = Keb × m (Molalität)'
+      approach: |
+        1. Molalität berechnen
+        2. Siedepunktserhöhung berechnen
+      overview: |
+        m = 0,5 mol/kg
+        ΔTeb = 0,512 × 0,5 = 0,256 K
+    
+    steps:
+      - description: 'Molalität bestimmen'
+        solution: 'm = n/m(Lösungsmittel) = 0,5 mol / 1 kg = 0,5 mol/kg'
+      - description: 'Siedepunktserhöhung berechnen'
+        solution: 'ΔTeb = Keb × m = 0,512 K·kg/mol × 0,5 mol/kg = 0,256 K'
+    
+    finalAnswer: 'ΔTeb = 0,26 K (Siedepunkt = 100,26°C)'
+    
+    relatedCheatsheets:
+      - 'loesungen-cheatsheet'
+
+  - id: 'ex-13-02'
+    title: 'Gefrierpunktserniedrigung'
+    level: 1
+    
+    task: |
+      18,0 g Glucose (M = 180 g/mol) werden in 500 g Wasser gelöst.
+      
+      Berechne die Gefrierpunktserniedrigung.
+      
+      Gegeben: Kf(Wasser) = 1,86 K·kg/mol
+    
+    hints:
+      keyword: 'ΔTf = Kf × m'
+      approach: |
+        1. Stoffmenge berechnen
+        2. Molalität berechnen
+        3. ΔTf berechnen
+      overview: |
+        n = 18/180 = 0,1 mol
+        m = 0,1/0,5 = 0,2 mol/kg
+        ΔTf = 1,86 × 0,2 = 0,372 K
+    
+    steps:
+      - description: 'Stoffmenge Glucose berechnen'
+        solution: 'n = 18,0 g / 180 g/mol = 0,1 mol'
+      - description: 'Molalität berechnen'
+        solution: 'm = 0,1 mol / 0,5 kg = 0,2 mol/kg'
+      - description: 'Gefrierpunktserniedrigung berechnen'
+        solution: 'ΔTf = 1,86 K·kg/mol × 0,2 mol/kg = 0,372 K'
+    
+    finalAnswer: 'ΔTf = 0,37 K (Gefrierpunkt = -0,37°C)'
+    
+    relatedCheatsheets:
+      - 'loesungen-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 2: Einfach (3-4 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-13-03'
+    title: 'Osmotischer Druck'
+    level: 2
+    
+    task: |
+      Berechne den osmotischen Druck einer 0,2 M Glucose-Lösung bei 25°C.
+      
+      Gegeben: R = 8,314 J/(mol·K)
+    
+    hints:
+      keyword: 'π = c × R × T'
+      approach: |
+        1. Temperatur in Kelvin
+        2. vant-Hoff-Gleichung anwenden
+        3. Einheiten beachten (Pa oder bar)
+      overview: |
+        T = 298 K
+        π = 0,2 × 8,314 × 298
+        π = 495,5 kPa ≈ 4,95 bar
+    
+    steps:
+      - description: 'Temperatur in Kelvin'
+        solution: 'T = 25 + 273 = 298 K'
+      - description: 'vant-Hoff-Gleichung anwenden'
+        solution: 'π = c × R × T = 0,2 mol/L × 8,314 J/(mol·K) × 298 K'
+      - description: 'Berechnen (J/L = Pa × 10³)'
+        solution: 'π = 495,5 J/L = 495,5 kPa = 4,95 bar'
+    
+    finalAnswer: 'π ≈ 4,95 bar (≈ 495 kPa)'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  - id: 'ex-13-04'
+    title: 'Elektrolyt-Lösung - vant-Hoff-Faktor'
+    level: 2
+    
+    task: |
+      Berechne die Gefrierpunktserniedrigung einer 0,1 m NaCl-Lösung.
+      
+      Gegeben:
+      Kf = 1,86 K·kg/mol
+      i = 2 (vollständige Dissoziation)
+    
+    hints:
+      keyword: 'ΔTf = i × Kf × m'
+      approach: |
+        1. vant-Hoff-Faktor berücksichtigen
+        2. Formel mit i multiplizieren
+      overview: |
+        ΔTf = 2 × 1,86 × 0,1 = 0,372 K
+    
+    steps:
+      - description: 'Dissoziation beachten'
+        solution: 'NaCl → Na⁺ + Cl⁻ (2 Teilchen pro Formeleinheit, i = 2)'
+      - description: 'Erweiterte Formel anwenden'
+        solution: 'ΔTf = i × Kf × m = 2 × 1,86 K·kg/mol × 0,1 mol/kg'
+      - description: 'Berechnen'
+        solution: 'ΔTf = 0,372 K'
+    
+    finalAnswer: 'ΔTf = 0,37 K (Gefrierpunkt = -0,37°C)'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-13-05'
+    title: 'Molare Masse aus Gefrierpunktserniedrigung'
+    level: 3
+    
+    task: |
+      5,0 g einer unbekannten Substanz werden in 100 g Wasser gelöst.
+      Der Gefrierpunkt sinkt auf -0,93°C.
+      
+      Bestimme die molare Masse der Substanz.
+      
+      Gegeben: Kf(Wasser) = 1,86 K·kg/mol
+    
+    hints:
+      keyword: 'M = Kf × m(Substanz) / (ΔTf × m(Lösungsmittel))'
+      approach: |
+        1. ΔTf bestimmen
+        2. Molalität aus ΔTf berechnen
+        3. Stoffmenge berechnen
+        4. Molare Masse berechnen
+      overview: |
+        ΔTf = 0,93 K
+        m = 0,93/1,86 = 0,5 mol/kg
+        n = 0,5 × 0,1 = 0,05 mol
+        M = 5/0,05 = 100 g/mol
+    
+    steps:
+      - description: 'Gefrierpunktserniedrigung'
+        solution: 'ΔTf = 0 - (-0,93) = 0,93 K'
+      - description: 'Molalität berechnen'
+        solution: 'm = ΔTf / Kf = 0,93 K / 1,86 K·kg/mol = 0,5 mol/kg'
+      - description: 'Stoffmenge berechnen'
+        solution: 'n = m × m(Lösungsmittel) = 0,5 mol/kg × 0,1 kg = 0,05 mol'
+      - description: 'Molare Masse berechnen'
+        solution: 'M = m(Substanz) / n = 5,0 g / 0,05 mol = 100 g/mol'
+    
+    finalAnswer: 'M = 100 g/mol'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  - id: 'ex-13-06'
+    title: 'Dampfdruckerniedrigung'
+    level: 3
+    
+    task: |
+      Berechne den Dampfdruck einer Lösung aus 90 g Glucose (M = 180 g/mol)
+      in 180 g Wasser bei 100°C.
+      
+      Gegeben: p°(Wasser, 100°C) = 101,3 kPa
+    
+    hints:
+      keyword: 'Raoult: p = x(Lösungsmittel) × p°'
+      approach: |
+        1. Stoffmengen berechnen
+        2. Stoffmengenbruch des Wassers
+        3. Dampfdruck nach Raoult
+      overview: |
+        n(Glucose) = 0,5 mol, n(H₂O) = 10 mol
+        x(H₂O) = 10/10,5 = 0,952
+        p = 0,952 × 101,3 = 96,5 kPa
+    
+    steps:
+      - description: 'Stoffmenge Glucose'
+        solution: 'n(Glucose) = 90 g / 180 g/mol = 0,5 mol'
+      - description: 'Stoffmenge Wasser'
+        solution: 'n(H₂O) = 180 g / 18 g/mol = 10 mol'
+      - description: 'Stoffmengenbruch Wasser'
+        solution: 'x(H₂O) = 10 / (10 + 0,5) = 10/10,5 = 0,952'
+      - description: 'Dampfdruck nach Raoult'
+        solution: 'p = x(H₂O) × p° = 0,952 × 101,3 kPa = 96,5 kPa'
+    
+    finalAnswer: 'p = 96,5 kPa (Dampfdruckerniedrigung Δp = 4,8 kPa)'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 4: Komplex (5-7 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-13-07'
+    title: 'Dissoziationsgrad aus osmotischem Druck'
+    level: 4
+    
+    task: |
+      Eine 0,1 M Essigsäure-Lösung hat bei 25°C einen osmotischen
+      Druck von 253 kPa.
+      
+      Berechne den Dissoziationsgrad α.
+      
+      Gegeben: R = 8,314 J/(mol·K)
+    
+    hints:
+      keyword: 'i = 1 + α (für 1:1 Elektrolyte)'
+      approach: |
+        1. Theoretischen π berechnen (ohne Dissoziation)
+        2. Tatsächlichen vant-Hoff-Faktor bestimmen
+        3. α aus i = 1 + α berechnen
+      overview: |
+        π(theor.) = 0,1 × 8,314 × 298 = 247,8 kPa
+        i = 253/247,8 = 1,021
+        α = 1,021 - 1 = 0,021 = 2,1%
+    
+    steps:
+      - description: 'Temperatur in Kelvin'
+        solution: 'T = 298 K'
+      - description: 'Theoretischer osmotischer Druck (i = 1)'
+        solution: 'π(theor.) = c×R×T = 0,1 × 8,314 × 298 = 247,8 kPa'
+      - description: 'Experimenteller vant-Hoff-Faktor'
+        solution: 'i = π(exp.)/π(theor.) = 253/247,8 = 1,021'
+      - description: 'Dissoziationsgrad berechnen'
+        solution: 'i = 1 + α → α = i - 1 = 1,021 - 1 = 0,021'
+      - description: 'In Prozent'
+        solution: 'α = 0,021 = 2,1%'
+    
+    finalAnswer: 'α = 0,021 (2,1% dissoziiert)'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  - id: 'ex-13-08'
+    title: 'Frostschutzmittel berechnen'
+    level: 4
+    
+    task: |
+      Wie viel Gramm Ethylenglykol (M = 62 g/mol) müssen zu 5 L Wasser
+      gegeben werden, um den Gefrierpunkt auf -15°C zu senken?
+      
+      Gegeben: Kf = 1,86 K·kg/mol, ρ(Wasser) ≈ 1 kg/L
+    
+    hints:
+      keyword: 'ΔTf = Kf × m, dann Masse berechnen'
+      approach: |
+        1. ΔTf bestimmen
+        2. Benötigte Molalität berechnen
+        3. Stoffmenge berechnen
+        4. Masse berechnen
+      overview: |
+        ΔTf = 15 K
+        m = 15/1,86 = 8,06 mol/kg
+        n = 8,06 × 5 = 40,3 mol
+        m = 40,3 × 62 = 2499 g
+    
+    steps:
+      - description: 'Gefrierpunktserniedrigung'
+        solution: 'ΔTf = 0 - (-15) = 15 K'
+      - description: 'Benötigte Molalität'
+        solution: 'm = ΔTf / Kf = 15 K / 1,86 K·kg/mol = 8,06 mol/kg'
+      - description: 'Masse des Wassers'
+        solution: 'm(H₂O) = 5 L × 1 kg/L = 5 kg'
+      - description: 'Stoffmenge Ethylenglykol'
+        solution: 'n = m × m(H₂O) = 8,06 mol/kg × 5 kg = 40,3 mol'
+      - description: 'Masse Ethylenglykol'
+        solution: 'm = n × M = 40,3 mol × 62 g/mol = 2499 g ≈ 2,5 kg'
+    
+    finalAnswer: 'm(Ethylenglykol) ≈ 2,5 kg'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-13-09'
+    title: 'Umkehrosmose - Mindestdruck'
+    level: 5
+    
+    task: |
+      Meerwasser hat eine Salzkonzentration von ca. 3,5% (w/w) NaCl.
+      
+      Berechne den Mindestdruck für eine Umkehrosmose-Anlage bei 25°C.
+      
+      Gegeben:
+      M(NaCl) = 58,5 g/mol
+      R = 8,314 J/(mol·K)
+      ρ(Meerwasser) ≈ 1,025 kg/L
+    
+    hints:
+      keyword: 'Mindestdruck = osmotischer Druck der Lösung'
+      approach: |
+        1. Massenkonzentration → Stoffmengenkonzentration
+        2. vant-Hoff-Faktor (i = 2) berücksichtigen
+        3. Osmotischen Druck berechnen
+      overview: |
+        3,5% → 35 g/L NaCl → 0,6 mol/L
+        Mit i = 2: c(eff) = 1,2 mol/L
+        π = 1,2 × 8,314 × 298 = 2973 kPa ≈ 29,7 bar
+    
+    steps:
+      - description: 'Massenkonzentration bestimmen'
+        solution: '3,5% von 1025 g/L = 35,9 g/L NaCl'
+      - description: 'Stoffmengenkonzentration NaCl'
+        solution: 'c(NaCl) = 35,9 g/L / 58,5 g/mol = 0,614 mol/L'
+      - description: 'Effektive Konzentration mit i = 2'
+        solution: 'c(eff) = i × c = 2 × 0,614 = 1,228 mol/L'
+      - description: 'Temperatur in Kelvin'
+        solution: 'T = 298 K'
+      - description: 'Osmotischer Druck berechnen'
+        solution: 'π = c(eff) × R × T = 1,228 × 8,314 × 298 = 3043 kPa'
+      - description: 'In bar umrechnen'
+        solution: 'π ≈ 30,4 bar'
+    
+    finalAnswer: 'Mindestdruck für Umkehrosmose ≈ 30 bar'
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'
+
+  - id: 'ex-13-10'
+    title: 'Komplexe kolligative Analyse'
+    level: 5
+    
+    task: |
+      Eine wässrige Lösung einer Säure HA hat folgende Eigenschaften:
+      - Massenanteil: 10%
+      - Dichte: 1,05 g/mL
+      - Gefrierpunkt: -3,72°C
+      
+      Bestimme:
+      a) Die molare Masse von HA
+      b) Den Dissoziationsgrad α
+      
+      Gegeben: Kf = 1,86 K·kg/mol
+    
+    hints:
+      keyword: 'Erst M ohne Dissoziation, dann α aus Differenz'
+      approach: |
+        1. Konzentration berechnen
+        2. Theoretische M (ohne Dissoziation)
+        3. Mit experimentellem ΔTf vergleichen
+        4. i und α bestimmen
+      overview: |
+        Experimentelles ΔTf = 3,72 K
+        Molalität (scheinbar) = 2 mol/kg
+        Wenn M = 40 g/mol: m(real) = 2,5 mol/kg
+        i = 3,72/(1,86×2,5) = 0,8... → nein, anderer Ansatz
+    
+    steps:
+      - description: 'Masse HA in 1 kg Lösung'
+        solution: 'm(HA) = 0,1 × 1000 g = 100 g; m(H₂O) = 900 g = 0,9 kg'
+      - description: 'Scheinbare Molalität aus ΔTf'
+        solution: 'm(scheinbar) = ΔTf/Kf = 3,72/1,86 = 2,0 mol/kg'
+      - description: 'Für i = 2 (Säure dissoziiert): m(real) = 1,0 mol/kg'
+        solution: 'Wenn HA vollständig dissoziiert: m(scheinbar) = 2×m(real)'
+      - description: 'Stoffmenge HA'
+        solution: 'n = m(real) × 0,9 kg = 1,0 mol/kg × 0,9 kg = 0,9 mol (wenn i=2)'
+      - description: 'Molare Masse (bei i = 2)'
+        solution: 'M = 100 g / 0,9 mol = 111 g/mol'
+      - description: 'Prüfung mit i = 1 + α'
+        solution: 'Bei α < 1: M wäre größer. Annahme α ≈ 1 gibt M ≈ 111 g/mol'
+    
+    finalAnswer: |
+      a) M ≈ 111 g/mol (entspricht z.B. einer mittelstarken Säure)
+      b) α ≈ 100% (nahezu vollständige Dissoziation bei dieser ΔTf)
+      
+      Hinweis: Für exakte Lösung wäre iterativer Ansatz nötig.
+    
+    relatedBlueprints:
+      - 'colligative-calculation-blueprint'

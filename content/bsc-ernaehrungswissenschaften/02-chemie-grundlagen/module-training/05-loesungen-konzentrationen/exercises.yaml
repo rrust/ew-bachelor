@@ -1,0 +1,412 @@
+# Praktische Übungen: Lösungen & Konzentrationen
+# 10 Übungen (2 pro Level)
+
+topic: 'Lösungen & Konzentrationen'
+blueprintType: 'concentration-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-05-01'
+    title: 'Molarität berechnen'
+    level: 1
+
+    task: |
+      In 500 mL Lösung sind 5,85 g Natriumchlorid (NaCl) gelöst.
+
+      Berechne die Molarität (Stoffmengenkonzentration) der Lösung.
+
+      Gegeben: M(NaCl) = 58,5 g/mol
+
+    hints:
+      keyword: 'c = n/V (Stoffmenge pro Volumen)'
+      approach: |
+        1. Stoffmenge berechnen: n = m/M
+        2. Volumen in Liter umrechnen
+        3. Konzentration berechnen: c = n/V
+      overview: |
+        n = 5,85/58,5 = 0,1 mol
+        V = 0,5 L
+        c = 0,1/0,5 = 0,2 mol/L
+
+    steps:
+      - description: 'Stoffmenge NaCl berechnen'
+        solution: 'n = 5,85 g / 58,5 g/mol = 0,1 mol'
+      - description: 'Volumen in Liter umrechnen'
+        solution: 'V = 500 mL = 0,5 L'
+      - description: 'Molarität berechnen'
+        solution: 'c = 0,1 mol / 0,5 L = 0,2 mol/L = 0,2 M'
+
+    finalAnswer: 'c(NaCl) = 0,2 mol/L'
+
+    relatedCheatsheets:
+      - 'loesungen-cheatsheet'
+
+  - id: 'ex-05-02'
+    title: 'Masse aus Konzentration'
+    level: 1
+
+    task: |
+      Wie viel Gramm Glucose (C₆H₁₂O₆) sind in 250 mL einer
+      0,5 M Lösung enthalten?
+
+      Gegeben: M(C₆H₁₂O₆) = 180 g/mol
+
+    hints:
+      keyword: 'Erst n = c × V, dann m = n × M'
+      approach: |
+        1. Stoffmenge berechnen: n = c × V
+        2. Masse berechnen: m = n × M
+      overview: |
+        n = 0,5 × 0,25 = 0,125 mol
+        m = 0,125 × 180 = 22,5 g
+
+    steps:
+      - description: 'Stoffmenge berechnen'
+        solution: 'n = 0,5 mol/L × 0,25 L = 0,125 mol'
+      - description: 'Masse berechnen'
+        solution: 'm = 0,125 mol × 180 g/mol = 22,5 g'
+
+    finalAnswer: 'm(Glucose) = 22,5 g'
+
+    relatedCheatsheets:
+      - 'loesungen-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 2: Einfach (3-4 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-05-03'
+    title: 'Massenanteil berechnen'
+    level: 2
+
+    task: |
+      20 g Kochsalz werden in 180 g Wasser gelöst.
+
+      Berechne den Massenanteil (w) des Salzes in der Lösung.
+
+    hints:
+      keyword: 'w = m(Stoff) / m(Lösung)'
+      approach: |
+        1. Gesamtmasse der Lösung berechnen
+        2. Massenanteil berechnen
+        3. In Prozent umrechnen
+      overview: |
+        m(Lösung) = 20 + 180 = 200 g
+        w = 20/200 = 0,1 = 10%
+
+    steps:
+      - description: 'Gesamtmasse der Lösung berechnen'
+        solution: 'm(Lösung) = m(NaCl) + m(H₂O) = 20 g + 180 g = 200 g'
+      - description: 'Massenanteil berechnen'
+        solution: 'w = m(NaCl) / m(Lösung) = 20 g / 200 g = 0,1'
+      - description: 'In Prozent umrechnen'
+        solution: 'w = 0,1 × 100% = 10%'
+
+    finalAnswer: 'w(NaCl) = 10% (oder 0,1)'
+
+    relatedCheatsheets:
+      - 'loesungen-cheatsheet'
+
+  - id: 'ex-05-04'
+    title: 'Verdünnung berechnen'
+    level: 2
+
+    task: |
+      Wie viel mL einer 2 M HCl-Lösung werden benötigt,
+      um 500 mL einer 0,1 M Lösung herzustellen?
+
+    hints:
+      keyword: 'Verdünnungsformel: c₁ × V₁ = c₂ × V₂'
+      approach: |
+        1. Verdünnungsformel aufstellen
+        2. Nach V₁ umstellen
+        3. Werte einsetzen
+      overview: |
+        c₁ × V₁ = c₂ × V₂
+        2 × V₁ = 0,1 × 500
+        V₁ = 25 mL
+
+    steps:
+      - description: 'Verdünnungsformel aufstellen'
+        solution: 'c₁ × V₁ = c₂ × V₂'
+      - description: 'Nach V₁ umstellen'
+        solution: 'V₁ = (c₂ × V₂) / c₁'
+      - description: 'Werte einsetzen und berechnen'
+        solution: 'V₁ = (0,1 mol/L × 500 mL) / 2 mol/L = 25 mL'
+
+    finalAnswer: 'V₁ = 25 mL der 2 M HCl-Lösung'
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-05-05'
+    title: 'Molarität aus Massenanteil'
+    level: 3
+
+    task: |
+      Eine wässrige Schwefelsäure-Lösung hat einen Massenanteil
+      von 49% H₂SO₄ und eine Dichte von 1,38 g/mL.
+
+      Berechne die Molarität der Lösung.
+
+      Gegeben: M(H₂SO₄) = 98 g/mol
+
+    hints:
+      keyword: 'Erst Masse pro Liter, dann Stoffmenge'
+      approach: |
+        1. Masse von 1 L Lösung berechnen
+        2. Masse H₂SO₄ aus Massenanteil
+        3. Stoffmenge berechnen
+        4. Molarität = n/V
+      overview: |
+        m(1L) = 1380 g
+        m(H₂SO₄) = 0,49 × 1380 = 676,2 g
+        n = 676,2/98 = 6,9 mol
+        c = 6,9 M
+
+    steps:
+      - description: 'Masse von 1 L Lösung berechnen'
+        solution: 'm(Lösung) = ρ × V = 1,38 g/mL × 1000 mL = 1380 g'
+      - description: 'Masse H₂SO₄ in 1 L berechnen'
+        solution: 'm(H₂SO₄) = w × m(Lösung) = 0,49 × 1380 g = 676,2 g'
+      - description: 'Stoffmenge H₂SO₄ berechnen'
+        solution: 'n = 676,2 g / 98 g/mol = 6,9 mol'
+      - description: 'Molarität angeben'
+        solution: 'c = n/V = 6,9 mol / 1 L = 6,9 mol/L'
+
+    finalAnswer: 'c(H₂SO₄) = 6,9 mol/L'
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'
+
+  - id: 'ex-05-06'
+    title: 'Ionenkonzentration'
+    level: 3
+
+    task: |
+      100 mL einer 0,3 M Calciumchlorid-Lösung (CaCl₂) werden hergestellt.
+
+      Berechne:
+      a) Die Konzentration der Ca²⁺-Ionen
+      b) Die Konzentration der Cl⁻-Ionen
+      c) Die Gesamtionenkonzentration
+
+    hints:
+      keyword: 'CaCl₂ → Ca²⁺ + 2 Cl⁻'
+      approach: |
+        1. Dissoziation aufschreiben
+        2. Stöchiometrische Verhältnisse anwenden
+        3. Konzentrationen berechnen
+      overview: |
+        c(Ca²⁺) = 0,3 M
+        c(Cl⁻) = 2 × 0,3 = 0,6 M
+        c(gesamt) = 0,3 + 0,6 = 0,9 M
+
+    steps:
+      - description: 'Dissoziation aufschreiben'
+        solution: 'CaCl₂ → Ca²⁺ + 2 Cl⁻'
+      - description: 'Konzentration Ca²⁺ berechnen'
+        solution: 'c(Ca²⁺) = c(CaCl₂) = 0,3 mol/L'
+      - description: 'Konzentration Cl⁻ berechnen'
+        solution: 'c(Cl⁻) = 2 × c(CaCl₂) = 2 × 0,3 = 0,6 mol/L'
+      - description: 'Gesamtionenkonzentration berechnen'
+        solution: 'c(gesamt) = c(Ca²⁺) + c(Cl⁻) = 0,3 + 0,6 = 0,9 mol/L'
+
+    finalAnswer: |
+      a) c(Ca²⁺) = 0,3 mol/L
+      b) c(Cl⁻) = 0,6 mol/L
+      c) c(gesamt) = 0,9 mol/L
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 4: Komplex (5-7 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-05-07'
+    title: 'Mischen von Lösungen'
+    level: 4
+
+    task: |
+      200 mL einer 0,5 M NaCl-Lösung werden mit 300 mL einer
+      0,2 M NaCl-Lösung gemischt.
+
+      Berechne die Konzentration der resultierenden Lösung.
+
+    hints:
+      keyword: 'n(gesamt) = n₁ + n₂, dann c = n/V(gesamt)'
+      approach: |
+        1. Stoffmenge in Lösung 1 berechnen
+        2. Stoffmenge in Lösung 2 berechnen
+        3. Gesamtstoffmenge addieren
+        4. Gesamtvolumen addieren
+        5. Neue Konzentration berechnen
+      overview: |
+        n₁ = 0,5 × 0,2 = 0,1 mol
+        n₂ = 0,2 × 0,3 = 0,06 mol
+        n(ges) = 0,16 mol
+        V(ges) = 0,5 L
+        c = 0,16/0,5 = 0,32 M
+
+    steps:
+      - description: 'Stoffmenge in Lösung 1 berechnen'
+        solution: 'n₁ = c₁ × V₁ = 0,5 mol/L × 0,2 L = 0,1 mol'
+      - description: 'Stoffmenge in Lösung 2 berechnen'
+        solution: 'n₂ = c₂ × V₂ = 0,2 mol/L × 0,3 L = 0,06 mol'
+      - description: 'Gesamtstoffmenge berechnen'
+        solution: 'n(gesamt) = n₁ + n₂ = 0,1 + 0,06 = 0,16 mol'
+      - description: 'Gesamtvolumen berechnen'
+        solution: 'V(gesamt) = V₁ + V₂ = 0,2 + 0,3 = 0,5 L'
+      - description: 'Neue Konzentration berechnen'
+        solution: 'c = n(gesamt) / V(gesamt) = 0,16 mol / 0,5 L = 0,32 mol/L'
+
+    finalAnswer: 'c(NaCl) = 0,32 mol/L'
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'
+
+  - id: 'ex-05-08'
+    title: 'Lösungsherstellung mit Dihydrat'
+    level: 4
+
+    task: |
+      Es sollen 250 mL einer 0,2 M CuSO₄-Lösung hergestellt werden.
+      Verfügbar ist nur Kupfersulfat-Pentahydrat (CuSO₄ · 5 H₂O).
+
+      Wie viel Gramm des Hydrats werden benötigt?
+
+      Gegeben: M(CuSO₄ · 5 H₂O) = 249,7 g/mol
+
+    hints:
+      keyword: '1 mol Hydrat enthält 1 mol CuSO₄'
+      approach: |
+        1. Benötigte Stoffmenge CuSO₄ berechnen
+        2. Diese entspricht der Stoffmenge des Hydrats
+        3. Masse des Hydrats berechnen
+      overview: |
+        n(CuSO₄) = 0,2 × 0,25 = 0,05 mol
+        n(Hydrat) = 0,05 mol
+        m = 0,05 × 249,7 = 12,49 g
+
+    steps:
+      - description: 'Benötigte Stoffmenge CuSO₄ berechnen'
+        solution: 'n(CuSO₄) = c × V = 0,2 mol/L × 0,25 L = 0,05 mol'
+      - description: 'Stoffmenge des Hydrats'
+        solution: '1 mol CuSO₄ · 5 H₂O enthält 1 mol CuSO₄, also n(Hydrat) = 0,05 mol'
+      - description: 'Masse des Hydrats berechnen'
+        solution: 'm = n × M = 0,05 mol × 249,7 g/mol = 12,485 g ≈ 12,5 g'
+
+    finalAnswer: 'm(CuSO₄ · 5 H₂O) = 12,5 g'
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-05-09'
+    title: 'Titration zur Konzentrationsbestimmung'
+    level: 5
+
+    task: |
+      25,0 mL einer HCl-Lösung unbekannter Konzentration werden
+      mit 0,1 M NaOH-Lösung titriert. Der Äquivalenzpunkt wird
+      bei 18,5 mL NaOH erreicht.
+
+      Berechne:
+      a) Die Stoffmenge NaOH am Äquivalenzpunkt
+      b) Die Konzentration der HCl-Lösung
+      c) Die Masse HCl in 100 mL der Lösung
+
+      Gegeben: M(HCl) = 36,5 g/mol
+
+    hints:
+      keyword: 'HCl + NaOH → NaCl + H₂O (1:1 Verhältnis)'
+      approach: |
+        1. Stoffmenge NaOH berechnen
+        2. Reaktionsgleichung → Stoffmenge HCl
+        3. Konzentration HCl berechnen
+        4. Masse in 100 mL berechnen
+      overview: |
+        n(NaOH) = 0,1 × 0,0185 = 0,00185 mol
+        n(HCl) = 0,00185 mol
+        c(HCl) = 0,00185/0,025 = 0,074 M
+        m(100 mL) = 0,074 × 0,1 × 36,5 = 0,27 g
+
+    steps:
+      - description: 'Stoffmenge NaOH berechnen'
+        solution: 'n(NaOH) = c × V = 0,1 mol/L × 0,0185 L = 0,00185 mol'
+      - description: 'Reaktionsgleichung und Verhältnis'
+        solution: 'HCl + NaOH → NaCl + H₂O (Verhältnis 1:1)'
+      - description: 'Stoffmenge HCl = Stoffmenge NaOH'
+        solution: 'n(HCl) = n(NaOH) = 0,00185 mol'
+      - description: 'Konzentration HCl berechnen'
+        solution: 'c(HCl) = n/V = 0,00185 mol / 0,025 L = 0,074 mol/L'
+      - description: 'Stoffmenge in 100 mL berechnen'
+        solution: 'n(100 mL) = 0,074 mol/L × 0,1 L = 0,0074 mol'
+      - description: 'Masse HCl berechnen'
+        solution: 'm(HCl) = 0,0074 mol × 36,5 g/mol = 0,27 g'
+
+    finalAnswer: |
+      a) n(NaOH) = 0,00185 mol = 1,85 mmol
+      b) c(HCl) = 0,074 mol/L
+      c) m(HCl) in 100 mL = 0,27 g
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'
+      - 'titration-blueprint'
+
+  - id: 'ex-05-10'
+    title: 'Serienverdünnung'
+    level: 5
+
+    task: |
+      Aus einer 1 M Stammlösung soll durch zweimalige 1:10-Verdünnung
+      eine finale Lösung hergestellt werden.
+
+      a) Welche Konzentration hat die Endlösung?
+      b) Für 100 mL Endlösung: Wie viel mL Stammlösung werden insgesamt benötigt?
+      c) Alternativ: Wie würdest du 100 mL Endlösung in einem Schritt herstellen?
+
+    hints:
+      keyword: 'Verdünnungsfaktor multipliziert sich'
+      approach: |
+        1. Verdünnungsfaktor berechnen
+        2. Endkonzentration berechnen
+        3. Für Einzelschritte: Volumina rückrechnen
+        4. Für Direktverdünnung: Verdünnungsformel
+      overview: |
+        Verdünnung: 1:10 × 1:10 = 1:100
+        c(Ende) = 1 M / 100 = 0,01 M
+        V(Stamm) direkt = 1 mL auf 100 mL
+
+    steps:
+      - description: 'Gesamtverdünnungsfaktor berechnen'
+        solution: 'Verdünnungsfaktor = 10 × 10 = 100'
+      - description: 'Endkonzentration berechnen'
+        solution: 'c(Ende) = c(Stamm) / 100 = 1 M / 100 = 0,01 M'
+      - description: 'Schritt 1: 1:10-Verdünnung'
+        solution: '10 mL Stammlösung + 90 mL Wasser → 100 mL à 0,1 M'
+      - description: 'Schritt 2: 1:10-Verdünnung'
+        solution: '10 mL der 0,1 M + 90 mL Wasser → 100 mL à 0,01 M'
+      - description: 'Stammlösungsverbrauch'
+        solution: 'Indirekt: 10 mL, aber nur 10 mL der Zwischenlösung verwendet'
+      - description: 'Direkte Verdünnung mit c₁V₁ = c₂V₂'
+        solution: 'V₁ = (0,01 M × 100 mL) / 1 M = 1 mL Stammlösung + 99 mL Wasser'
+
+    finalAnswer: |
+      a) c(Ende) = 0,01 M (= 10 mM)
+      b) Für Serienverdünnung: 10 mL Stammlösung werden verwendet
+      c) Direktmethode: 1 mL Stammlösung + 99 mL Wasser
+
+    relatedBlueprints:
+      - 'concentration-calculation-blueprint'

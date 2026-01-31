@@ -1,0 +1,415 @@
+# Praktische Übungen: Elektrochemie
+# 10 Übungen (2 pro Level)
+
+topic: 'Elektrochemie'
+blueprintType: 'electrochemistry-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-15-01'
+    title: 'Standardzellspannung berechnen'
+    level: 1
+
+    task: |
+      Berechne die Standardzellspannung einer galvanischen Zelle
+      aus Zink und Kupfer.
+
+      Gegeben:
+      E°(Zn²⁺/Zn) = -0,76 V
+      E°(Cu²⁺/Cu) = +0,34 V
+
+    hints:
+      keyword: 'E°(Zelle) = E°(Kathode) - E°(Anode)'
+      approach: |
+        1. Kathode und Anode identifizieren
+        2. Formel anwenden
+      overview: |
+        Zn ist unedler → Anode
+        Cu ist edler → Kathode
+        E° = 0,34 - (-0,76) = 1,10 V
+
+    steps:
+      - description: 'Anode und Kathode identifizieren'
+        solution: 'Zn ist unedler (negativeres E°) → Anode; Cu ist edler → Kathode'
+      - description: 'Zellspannung berechnen'
+        solution: 'E°(Zelle) = E°(Kathode) - E°(Anode) = 0,34 - (-0,76) = 1,10 V'
+
+    finalAnswer: 'E°(Zelle) = 1,10 V'
+
+    relatedCheatsheets:
+      - 'chemische-reaktionen-cheatsheet'
+
+  - id: 'ex-15-02'
+    title: 'Oxidationszahlen bestimmen'
+    level: 1
+
+    task: |
+      Bestimme die Oxidationszahlen aller Atome in:
+      a) H₂SO₄
+      b) KMnO₄
+
+    hints:
+      keyword: 'Regeln: H = +1, O = -2, Summe = Ladung'
+      approach: |
+        1. Bekannte Oxidationszahlen einsetzen
+        2. Unbekannte aus Summe = 0 berechnen
+      overview: |
+        H₂SO₄: H = +1, O = -2, S = +6
+        KMnO₄: K = +1, O = -2, Mn = +7
+
+    steps:
+      - description: 'H₂SO₄: H und O einsetzen'
+        solution: 'H = +1 (×2 = +2), O = -2 (×4 = -8), Summe muss 0 sein'
+      - description: 'S berechnen'
+        solution: '+2 + S + (-8) = 0 → S = +6'
+      - description: 'KMnO₄: K und O einsetzen'
+        solution: 'K = +1, O = -2 (×4 = -8), Summe muss 0 sein'
+      - description: 'Mn berechnen'
+        solution: '+1 + Mn + (-8) = 0 → Mn = +7'
+
+    finalAnswer: |
+      a) H₂SO₄: H = +1, S = +6, O = -2
+      b) KMnO₄: K = +1, Mn = +7, O = -2
+
+    relatedCheatsheets:
+      - 'chemische-reaktionen-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 2: Einfach (3-4 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-15-03'
+    title: 'Spontaneität einer Redoxreaktion'
+    level: 2
+
+    task: |
+      Prüfe, ob folgende Reaktion spontan abläuft:
+      Cu(s) + 2 Ag⁺(aq) → Cu²⁺(aq) + 2 Ag(s)
+
+      Gegeben:
+      E°(Cu²⁺/Cu) = +0,34 V
+      E°(Ag⁺/Ag) = +0,80 V
+
+    hints:
+      keyword: 'Reaktion spontan wenn E°(Zelle) > 0'
+      approach: |
+        1. Identifiziere Oxidation und Reduktion
+        2. E°(Zelle) berechnen
+        3. Vorzeichen interpretieren
+      overview: |
+        Cu wird oxidiert (Anode)
+        Ag⁺ wird reduziert (Kathode)
+        E° = 0,80 - 0,34 = 0,46 V > 0 → spontan
+
+    steps:
+      - description: 'Reaktionen identifizieren'
+        solution: 'Cu → Cu²⁺ + 2e⁻ (Oxidation), 2 Ag⁺ + 2e⁻ → 2 Ag (Reduktion)'
+      - description: 'Anode und Kathode'
+        solution: 'Cu ist Anode (wird oxidiert), Ag ist Kathode'
+      - description: 'Zellspannung berechnen'
+        solution: 'E°(Zelle) = E°(Kathode) - E°(Anode) = 0,80 - 0,34 = 0,46 V'
+      - description: 'Spontaneität beurteilen'
+        solution: 'E° > 0 → ΔG < 0 → Reaktion ist spontan'
+
+    finalAnswer: 'Ja, die Reaktion läuft spontan ab (E° = +0,46 V)'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+
+  - id: 'ex-15-04'
+    title: 'Gibbs-Energie aus Zellspannung'
+    level: 2
+
+    task: |
+      Berechne ΔG° für die Daniell-Zelle (Zn/Cu).
+
+      Gegeben:
+      E°(Zelle) = 1,10 V
+      z = 2 (übertragene Elektronen)
+      F = 96485 C/mol
+
+    hints:
+      keyword: 'ΔG° = -z × F × E°'
+      approach: |
+        1. Formel anwenden
+        2. Einheiten beachten (J vs kJ)
+      overview: |
+        ΔG° = -2 × 96485 × 1,10
+        = -212.267 J = -212 kJ
+
+    steps:
+      - description: 'Formel aufstellen'
+        solution: 'ΔG° = -z × F × E°'
+      - description: 'Werte einsetzen'
+        solution: 'ΔG° = -2 × 96485 C/mol × 1,10 V = -212.267 J/mol'
+      - description: 'In kJ umrechnen'
+        solution: 'ΔG° = -212,3 kJ/mol'
+
+    finalAnswer: 'ΔG° = -212 kJ/mol (spontan)'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-15-05'
+    title: 'Nernst-Gleichung anwenden'
+    level: 3
+
+    task: |
+      Berechne das Elektrodenpotential einer Cu-Elektrode in
+      einer 0,001 M Cu²⁺-Lösung bei 25°C.
+
+      Gegeben:
+      E°(Cu²⁺/Cu) = +0,34 V
+      R = 8,314 J/(mol·K)
+      F = 96485 C/mol
+
+    hints:
+      keyword: 'E = E° + (0,059/z) × lg[Mⁿ⁺]'
+      approach: |
+        1. z = 2 für Cu²⁺/Cu
+        2. Nernst-Gleichung anwenden
+        3. Logarithmus berechnen
+      overview: |
+        E = 0,34 + (0,059/2) × lg(0,001)
+        = 0,34 + 0,0295 × (-3)
+        = 0,34 - 0,0885 = 0,25 V
+
+    steps:
+      - description: 'Anzahl übertragener Elektronen'
+        solution: 'Cu²⁺ + 2e⁻ → Cu, also z = 2'
+      - description: 'Vereinfachte Nernst-Gleichung bei 25°C'
+        solution: 'E = E° + (0,059/z) × lg[Cu²⁺]'
+      - description: 'Logarithmus berechnen'
+        solution: 'lg(0,001) = lg(10⁻³) = -3'
+      - description: 'Potential berechnen'
+        solution: 'E = 0,34 + (0,059/2) × (-3) = 0,34 - 0,0885 = 0,252 V'
+
+    finalAnswer: 'E = 0,25 V'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+      - 'nernst-equation-blueprint'
+
+  - id: 'ex-15-06'
+    title: 'Elektrolyse - Masse berechnen'
+    level: 3
+
+    task: |
+      Bei der Elektrolyse einer CuSO₄-Lösung fließt 30 Minuten lang
+      ein Strom von 2 A.
+
+      Wie viel Gramm Kupfer werden an der Kathode abgeschieden?
+
+      Gegeben: M(Cu) = 63,5 g/mol, F = 96485 C/mol
+
+    hints:
+      keyword: 'Q = I × t, dann n = Q/(z×F)'
+      approach: |
+        1. Ladungsmenge berechnen
+        2. Stoffmenge über Faraday berechnen
+        3. Masse berechnen
+      overview: |
+        Q = 2 × 1800 = 3600 C
+        n = 3600/(2×96485) = 0,0187 mol
+        m = 0,0187 × 63,5 = 1,18 g
+
+    steps:
+      - description: 'Zeit in Sekunden'
+        solution: 't = 30 min × 60 s/min = 1800 s'
+      - description: 'Ladungsmenge berechnen'
+        solution: 'Q = I × t = 2 A × 1800 s = 3600 C'
+      - description: 'Stoffmenge Cu berechnen (z = 2)'
+        solution: 'n = Q/(z×F) = 3600 C / (2 × 96485 C/mol) = 0,0187 mol'
+      - description: 'Masse Cu berechnen'
+        solution: 'm = n × M = 0,0187 mol × 63,5 g/mol = 1,18 g'
+
+    finalAnswer: 'm(Cu) = 1,18 g'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+      - 'electrolysis-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 4: Komplex (5-7 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-15-07'
+    title: 'Konzentrationszelle'
+    level: 4
+
+    task: |
+      Eine Konzentrationszelle besteht aus zwei Cu-Elektroden in
+      Cu²⁺-Lösungen mit c₁ = 1,0 M und c₂ = 0,01 M.
+
+      Berechne die Zellspannung bei 25°C.
+
+      Gegeben: E°(Cu²⁺/Cu) = 0,34 V
+
+    hints:
+      keyword: 'E(Zelle) = (0,059/z) × lg(c₁/c₂)'
+      approach: |
+        1. Bei Konzentrationszelle: E° hebt sich auf
+        2. EMK hängt nur vom Konzentrationsverhältnis ab
+      overview: |
+        E = (0,059/2) × lg(1,0/0,01)
+        = 0,0295 × lg(100)
+        = 0,0295 × 2 = 0,059 V
+
+    steps:
+      - description: 'Konzentrationszelle verstehen'
+        solution: 'Beide Elektroden sind gleich, nur Konzentrationen unterschiedlich'
+      - description: 'Anode und Kathode identifizieren'
+        solution: 'Verdünnte Lösung: Oxidation (Anode), Konz. Lösung: Reduktion (Kathode)'
+      - description: 'EMK-Formel für Konzentrationszelle'
+        solution: 'E = (0,059/z) × lg(c₁/c₂) wobei c₁ > c₂'
+      - description: 'Konzentrationsverhältnis'
+        solution: 'c₁/c₂ = 1,0/0,01 = 100'
+      - description: 'Zellspannung berechnen'
+        solution: 'E = (0,059/2) × lg(100) = 0,0295 × 2 = 0,059 V'
+
+    finalAnswer: 'E(Zelle) = 0,059 V = 59 mV'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+      - 'nernst-equation-blueprint'
+
+  - id: 'ex-15-08'
+    title: 'Elektrolyse - Gasvolumen'
+    level: 4
+
+    task: |
+      Bei der Elektrolyse von Wasser fließt 1 Stunde lang ein Strom von 5 A.
+
+      Berechne das Volumen des entstehenden:
+      a) Wasserstoffs (Kathode)
+      b) Sauerstoffs (Anode)
+
+      bei Normalbedingungen (V_m = 22,4 L/mol)
+
+      Gegeben: F = 96485 C/mol
+
+    hints:
+      keyword: '2 H₂O → 2 H₂ + O₂ (Kathode z=2, Anode z=4)'
+      approach: |
+        1. Ladungsmenge berechnen
+        2. Stoffmenge H₂ (z = 2 pro H₂)
+        3. Stoffmenge O₂ (halb so viel)
+        4. Volumina berechnen
+      overview: |
+        Q = 5 × 3600 = 18000 C
+        n(H₂) = 18000/(2×96485) = 0,093 mol
+        n(O₂) = 0,047 mol
+        V(H₂) = 2,09 L, V(O₂) = 1,05 L
+
+    steps:
+      - description: 'Ladungsmenge berechnen'
+        solution: 'Q = I × t = 5 A × 3600 s = 18000 C'
+      - description: 'Stoffmenge H₂ (2e⁻ pro H₂-Molekül)'
+        solution: 'n(H₂) = Q/(2×F) = 18000/(2×96485) = 0,0933 mol'
+      - description: 'Stoffmenge O₂ (Verhältnis H₂:O₂ = 2:1)'
+        solution: 'n(O₂) = n(H₂)/2 = 0,0933/2 = 0,0467 mol'
+      - description: 'Volumen H₂ bei Normalbedingungen'
+        solution: 'V(H₂) = 0,0933 mol × 22,4 L/mol = 2,09 L'
+      - description: 'Volumen O₂ bei Normalbedingungen'
+        solution: 'V(O₂) = 0,0467 mol × 22,4 L/mol = 1,05 L'
+
+    finalAnswer: |
+      a) V(H₂) = 2,09 L
+      b) V(O₂) = 1,05 L
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+      - 'electrolysis-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-15-09'
+    title: 'Gleichgewichtskonstante aus Zellspannung'
+    level: 5
+
+    task: |
+      Berechne die Gleichgewichtskonstante K für die Reaktion:
+      Zn(s) + Cu²⁺(aq) ⇌ Zn²⁺(aq) + Cu(s)
+
+      Gegeben:
+      E°(Zelle) = 1,10 V
+      z = 2
+      Bei 25°C: RT/F × ln(10) = 0,059 V
+
+    hints:
+      keyword: 'Im Gleichgewicht E = 0, also E° = (0,059/z) × lg K'
+      approach: |
+        1. Bei Gleichgewicht: E = 0
+        2. Nernst-Gleichung umstellen
+        3. K berechnen
+      overview: |
+        E° = (0,059/z) × lg K
+        lg K = z × E° / 0,059 = 2 × 1,10 / 0,059 = 37,3
+        K = 10^37,3 ≈ 2 × 10³⁷
+
+    steps:
+      - description: 'Grundlage: Im Gleichgewicht gilt E = 0'
+        solution: 'Nernst: 0 = E° - (0,059/z) × lg Q, im GG ist Q = K'
+      - description: 'Umstellen nach lg K'
+        solution: 'lg K = z × E° / 0,059'
+      - description: 'Werte einsetzen'
+        solution: 'lg K = 2 × 1,10 / 0,059 = 2,20 / 0,059 = 37,3'
+      - description: 'K berechnen'
+        solution: 'K = 10^37,3 ≈ 2 × 10³⁷'
+      - description: 'Interpretation'
+        solution: 'Sehr große K → Reaktion läuft praktisch vollständig ab'
+
+    finalAnswer: 'K ≈ 2 × 10³⁷ (Reaktion nahezu vollständig)'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+      - 'nernst-equation-blueprint'
+
+  - id: 'ex-15-10'
+    title: 'Redoxgleichung ausgleichen'
+    level: 5
+
+    task: |
+      Gleiche folgende Redoxgleichung im sauren Medium aus:
+      MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺
+
+    hints:
+      keyword: 'Teilgleichungen aufstellen, Elektronen ausgleichen'
+      approach: |
+        1. Oxidation und Reduktion trennen
+        2. Atome und Ladungen ausgleichen
+        3. Elektronen angleichen
+        4. Addieren
+      overview: |
+        Red: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O
+        Ox: Fe²⁺ → Fe³⁺ + e⁻ (×5)
+        Gesamt: MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O
+
+    steps:
+      - description: 'Oxidation identifizieren'
+        solution: 'Fe²⁺ → Fe³⁺ + e⁻ (Oxidationszahl: +2 → +3)'
+      - description: 'Reduktion identifizieren'
+        solution: 'MnO₄⁻ → Mn²⁺ (Oxidationszahl: +7 → +2)'
+      - description: 'Reduktion ausgleichen (saures Medium)'
+        solution: 'MnO₄⁻ + 8 H⁺ + 5 e⁻ → Mn²⁺ + 4 H₂O'
+      - description: 'Elektronen angleichen (kgV = 5)'
+        solution: 'Oxidation ×5: 5 Fe²⁺ → 5 Fe³⁺ + 5 e⁻'
+      - description: 'Gleichungen addieren'
+        solution: 'MnO₄⁻ + 8 H⁺ + 5 Fe²⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O'
+      - description: 'Kontrolle der Ladungsbilanz'
+        solution: 'Links: -1 + 8 + 10 = +17; Rechts: +2 + 15 + 0 = +17 ✓'
+
+    finalAnswer: 'MnO₄⁻ + 8 H⁺ + 5 Fe²⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O'
+
+    relatedBlueprints:
+      - 'electrochemistry-calculation-blueprint'
+      - 'redox-balancing-blueprint'

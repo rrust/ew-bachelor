@@ -1,0 +1,219 @@
+# Praktische Übungen: Chemische Gleichungen & Stöchiometrie
+# 5 Test-Übungen zur Validierung des Formats
+
+topic: 'Chemische Gleichungen & Stöchiometrie'
+blueprintType: 'stoichiometry-calculation'
+
+exercises:
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 1: Grundlegend (2-3 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-03-01'
+    title: 'Stoffmenge aus Masse berechnen'
+    level: 1
+
+    task: |
+      Berechne die Stoffmenge von 88 g Kohlenstoffdioxid (CO₂).
+
+      Gegeben: M(CO₂) = 44 g/mol
+
+    hints:
+      keyword: 'Formel n = m/M'
+      approach: |
+        1. Gegebene Werte identifizieren (m und M)
+        2. Formel n = m/M anwenden
+      overview: |
+        m = 88 g, M = 44 g/mol
+        n = 88/44 = 2 mol
+
+    steps:
+      - description: 'Gegebene Werte notieren'
+        solution: 'm(CO₂) = 88 g, M(CO₂) = 44 g/mol'
+      - description: 'Stoffmenge berechnen mit n = m/M'
+        solution: 'n = 88 g ÷ 44 g/mol = 2 mol'
+
+    finalAnswer: 'n(CO₂) = 2 mol'
+
+    relatedCheatsheets:
+      - 'atome-formeln-cheatsheet'
+
+  - id: 'ex-03-02'
+    title: 'Masse aus Stoffmenge berechnen'
+    level: 1
+
+    task: |
+      Berechne die Masse von 0,5 mol Wasser (H₂O).
+
+      Gegeben: M(H₂O) = 18 g/mol
+
+    hints:
+      keyword: 'Formel m = n × M'
+      approach: |
+        1. Gegebene Werte identifizieren (n und M)
+        2. Formel m = n × M anwenden
+      overview: |
+        n = 0,5 mol, M = 18 g/mol
+        m = 0,5 × 18 = 9 g
+
+    steps:
+      - description: 'Gegebene Werte notieren'
+        solution: 'n(H₂O) = 0,5 mol, M(H₂O) = 18 g/mol'
+      - description: 'Masse berechnen mit m = n × M'
+        solution: 'm = 0,5 mol × 18 g/mol = 9 g'
+
+    finalAnswer: 'm(H₂O) = 9 g'
+
+    relatedCheatsheets:
+      - 'atome-formeln-cheatsheet'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 3: Mittel (4-5 Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-03-03'
+    title: 'Verbrennung von Magnesium'
+    level: 3
+
+    task: |
+      Bei der Verbrennung von Magnesium an Luft entsteht Magnesiumoxid:
+
+      2 Mg + O₂ → 2 MgO
+
+      Es werden 24,3 g Magnesium verbrannt.
+
+      Berechne:
+      a) Die Stoffmenge des eingesetzten Magnesiums
+      b) Die Masse des entstehenden Magnesiumoxids
+
+      Gegeben: M(Mg) = 24,3 g/mol, M(MgO) = 40,3 g/mol
+
+    hints:
+      keyword: 'Stöchiometrisches Verhältnis 2:2 = 1:1'
+      approach: |
+        1. Stoffmenge von Mg berechnen
+        2. Stöchiometrisches Verhältnis aus Gleichung ablesen
+        3. Stoffmenge von MgO bestimmen
+        4. Masse von MgO berechnen
+      overview: |
+        n(Mg) = 1 mol
+        Verhältnis Mg:MgO = 2:2 = 1:1
+        n(MgO) = 1 mol
+        m(MgO) = 40,3 g
+
+    steps:
+      - description: 'Stoffmenge von Magnesium berechnen'
+        solution: 'n(Mg) = 24,3 g ÷ 24,3 g/mol = 1,0 mol'
+      - description: 'Stöchiometrisches Verhältnis ablesen'
+        solution: 'Aus 2 Mg + O₂ → 2 MgO: Verhältnis Mg:MgO = 2:2 = 1:1'
+      - description: 'Stoffmenge MgO aus Verhältnis bestimmen'
+        solution: 'n(MgO) = n(Mg) = 1,0 mol'
+      - description: 'Masse von MgO berechnen'
+        solution: 'm(MgO) = 1,0 mol × 40,3 g/mol = 40,3 g'
+
+    finalAnswer: |
+      a) n(Mg) = 1,0 mol
+      b) m(MgO) = 40,3 g
+
+    relatedBlueprints:
+      - 'stoichiometry-calculation-blueprint'
+
+  - id: 'ex-03-04'
+    title: 'Reaktion von Eisen mit Schwefel'
+    level: 3
+
+    task: |
+      Eisen reagiert mit Schwefel zu Eisen(II)-sulfid:
+
+      Fe + S → FeS
+
+      Wie viel Gramm Schwefel werden benötigt, um 11,2 g Eisen vollständig umzusetzen?
+
+      Gegeben: M(Fe) = 56 g/mol, M(S) = 32 g/mol
+
+    hints:
+      keyword: 'Verhältnis Fe:S = 1:1'
+      approach: |
+        1. Stoffmenge von Fe berechnen
+        2. Stöchiometrisches Verhältnis: 1:1
+        3. Stoffmenge von S = Stoffmenge von Fe
+        4. Masse von S berechnen
+      overview: |
+        n(Fe) = 0,2 mol
+        n(S) = 0,2 mol
+        m(S) = 6,4 g
+
+    steps:
+      - description: 'Stoffmenge von Eisen berechnen'
+        solution: 'n(Fe) = 11,2 g ÷ 56 g/mol = 0,2 mol'
+      - description: 'Stöchiometrisches Verhältnis ablesen'
+        solution: 'Aus Fe + S → FeS: Verhältnis Fe:S = 1:1'
+      - description: 'Stoffmenge von Schwefel bestimmen'
+        solution: 'n(S) = n(Fe) = 0,2 mol'
+      - description: 'Masse von Schwefel berechnen'
+        solution: 'm(S) = 0,2 mol × 32 g/mol = 6,4 g'
+
+    finalAnswer: 'm(S) = 6,4 g'
+
+    relatedBlueprints:
+      - 'stoichiometry-calculation-blueprint'
+
+  # ═══════════════════════════════════════════════════════════════
+  # LEVEL 5: Anspruchsvoll (6+ Schritte)
+  # ═══════════════════════════════════════════════════════════════
+
+  - id: 'ex-03-05'
+    title: 'Ammoniaksynthese mit limitierendem Reaktanden'
+    level: 5
+
+    task: |
+      Bei der Ammoniaksynthese reagieren Stickstoff und Wasserstoff:
+
+      N₂ + 3 H₂ → 2 NH₃
+
+      Es stehen 28 g Stickstoff und 9 g Wasserstoff zur Verfügung.
+
+      Berechne:
+      a) Welcher Reaktand ist im Überschuss?
+      b) Wie viel Gramm Ammoniak können maximal entstehen?
+      c) Wie viel Gramm des Überschuss-Reaktanden bleiben übrig?
+
+      Gegeben: M(N₂) = 28 g/mol, M(H₂) = 2 g/mol, M(NH₃) = 17 g/mol
+
+    hints:
+      keyword: 'Limitierender Reaktand bestimmt Produktmenge'
+      approach: |
+        1. Stoffmengen beider Edukte berechnen
+        2. Aus Verhältnis 1:3 prüfen, welcher limitiert
+        3. Mit limitierendem Reaktanden die Produktmenge berechnen
+        4. Überschuss berechnen
+      overview: |
+        n(N₂) = 1 mol, n(H₂) = 4,5 mol
+        Für 1 mol N₂ braucht man 3 mol H₂ → N₂ limitiert
+        n(NH₃) = 2 mol → m(NH₃) = 34 g
+        H₂-Überschuss: 4,5 - 3 = 1,5 mol → 3 g
+
+    steps:
+      - description: 'Stoffmenge von Stickstoff berechnen'
+        solution: 'n(N₂) = 28 g ÷ 28 g/mol = 1,0 mol'
+      - description: 'Stoffmenge von Wasserstoff berechnen'
+        solution: 'n(H₂) = 9 g ÷ 2 g/mol = 4,5 mol'
+      - description: 'Benötigtes H₂ für vorhandenes N₂ berechnen'
+        solution: 'Für 1 mol N₂ braucht man 3 mol H₂ (Verhältnis 1:3)'
+      - description: 'Limitierenden Reaktanden identifizieren'
+        solution: 'Vorhanden: 4,5 mol H₂, benötigt: 3 mol → H₂ im Überschuss, N₂ limitiert'
+      - description: 'Stoffmenge NH₃ aus limitierendem Reaktanden'
+        solution: 'n(NH₃) = 2 × n(N₂) = 2 × 1,0 mol = 2,0 mol (Verhältnis 1:2)'
+      - description: 'Masse von Ammoniak berechnen'
+        solution: 'm(NH₃) = 2,0 mol × 17 g/mol = 34 g'
+      - description: 'Überschuss an Wasserstoff berechnen'
+        solution: 'n(H₂, übrig) = 4,5 mol - 3,0 mol = 1,5 mol → m = 1,5 × 2 = 3 g'
+
+    finalAnswer: |
+      a) Wasserstoff ist im Überschuss (Stickstoff ist limitierend)
+      b) m(NH₃) = 34 g
+      c) m(H₂, übrig) = 3 g
+
+    relatedBlueprints:
+      - 'stoichiometry-calculation-blueprint'
+      - 'limiting-reagent-blueprint'
