@@ -246,6 +246,32 @@ function renderModuleTrainingView() {
     return;
   }
 
+  // If exercises-only mode but NO exercises for this level, show message
+  if (trainingMode === TRAINING_MODES.EXERCISES_ONLY && exercises.length === 0) {
+    container.innerHTML = `
+      <div class="text-center py-12">
+        <div class="mb-4 flex justify-center">
+          ${window.getIcon ? window.getIcon('pencil', 'w-16 h-16 text-gray-400') : ''}
+        </div>
+        <h3 class="text-xl font-bold mb-2">Keine Übungen für Level ${training.currentLevel}</h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">
+          Für dieses Level gibt es keine praktischen Übungen.<br>
+          Wechsle den Modus oder wähle ein anderes Level.
+        </p>
+        ${renderTrainingModeToggle(bundle, training.currentLevel)}
+        <div class="mt-6">
+          <button
+            onclick="window.showView && window.showView('moduleMap')"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition"
+          >
+            Zurück zu den Modulen
+          </button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
   // If "both" mode, randomly decide (30% chance for exercise if available)
   if (
     trainingMode === TRAINING_MODES.BOTH &&
@@ -542,15 +568,22 @@ window.nextModuleTrainingQuestion = nextModuleTrainingQuestion;
  * @returns {string} HTML string
  */
 function renderTrainingModeToggle(bundle, currentLevel) {
-  // Check if any exercises exist for this level
-  const exercises = getAvailableExercises(
-    moduleTrainingState.moduleId,
-    bundle,
-    currentLevel
-  );
+  // Check if any exercises exist in the bundle (across all levels)
+  let hasAnyExercises = false;
+  for (const topic of bundle.topics) {
+    if (topic.exercises && Object.keys(topic.exercises).length > 0) {
+      for (const level in topic.exercises) {
+        if (topic.exercises[level] && topic.exercises[level].length > 0) {
+          hasAnyExercises = true;
+          break;
+        }
+      }
+    }
+    if (hasAnyExercises) break;
+  }
 
-  if (exercises.length === 0) {
-    return ''; // No exercises, no toggle needed
+  if (!hasAnyExercises) {
+    return ''; // No exercises in bundle, no toggle needed
   }
 
   const currentMode = getTrainingMode();
