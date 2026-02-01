@@ -1,96 +1,94 @@
-# Kapitel 3: Chemische Gleichungen & Stöchiometrie
-# Level 1: Grundlagen (Wissen)
-# 10 Fragen, jeweils 1 korrekte Antwort
-
 topic: 'Chemische Gleichungen & Stöchiometrie'
 level: 1
 questions:
-  - question: 'Was steht bei einer Reaktionsgleichung auf der linken Seite?'
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
+  - question: 'Was steht links vom Reaktionspfeil?'
     options:
-      - 'Die Produkte der Reaktion'
-      - 'Die Edukte der Reaktion'
-      - 'Die Katalysatoren'
-      - 'Die Reaktionsbedingungen'
-      - 'Die Energiebilanz'
+      - 'Die Ausgangsstoffe der Reaktion'         # 33 Zeichen ← KORREKT (A)
+      - 'Die entstehenden Endprodukte'            # 30 Zeichen
+      - 'Die freigesetzte Energiemenge'           # 31 Zeichen
+      - 'Die benötigte Aktivierungsenergie'       # 35 Zeichen
+      - 'Der Katalysator der Umwandlung'          # 32 Zeichen
+    correct: [0]
+
+  - question: 'Was bedeutet das Gesetz der Massenerhaltung?'
+    options:
+      - 'Energie kann beliebig erzeugt werden'    # 38 Zeichen
+      - 'Masse bleibt bei Reaktionen konstant'    # 38 Zeichen ← KORREKT (B)
+      - 'Atome können neu erschaffen werden'      # 36 Zeichen
+      - 'Reaktionen verlaufen ohne Massenverlust nie' # 43 Zeichen
+      - 'Produkte sind schwerer als Edukte'       # 35 Zeichen
     correct: [1]
 
-  - question: 'Was bedeutet der Pfeil in einer Reaktionsgleichung?'
+  - question: 'Was zeigen die Koeffizienten in einer Reaktionsgleichung?'
     options:
-      - 'Die Reaktion ist reversibel'
-      - 'Edukte werden zu Produkten umgewandelt'
-      - 'Die Reaktion benötigt Wärme'
-      - 'Die Masse nimmt zu'
-      - 'Die Reaktion ist langsam'
-    correct: [1]
+      - 'Die Temperaturen während der Reaktion'   # 39 Zeichen
+      - 'Die Geschwindigkeit der Umwandlung'      # 36 Zeichen
+      - 'Die Stoffmengenverhältnisse der Teilnehmer' # 43 Zeichen ← KORREKT (C)
+      - 'Die Ladungen aller beteiligten Ionen'    # 38 Zeichen
+      - 'Die Schmelzpunkte der Reinstoffe'        # 34 Zeichen
+    correct: [2]
 
-  - question: 'Was sind Koeffizienten in einer Reaktionsgleichung?'
+  - question: 'Was passiert beim Ausgleichen einer Gleichung?'
     options:
-      - 'Die Indices in den chemischen Formeln'
-      - 'Die Zahlen vor den Formeln'
-      - 'Die Ladungen der Ionen'
-      - 'Die Oxidationszahlen'
-      - 'Die molaren Massen'
-    correct: [1]
-
-  - question: 'Welches Gesetz liegt dem Ausgleichen von Gleichungen zugrunde?'
-    options:
-      - 'Das Gesetz der konstanten Proportionen'
-      - 'Das Gesetz der Massenerhaltung'
-      - 'Das ideale Gasgesetz'
-      - 'Das Gesetz der multiplen Proportionen'
-      - 'Das Massenwirkungsgesetz'
-    correct: [1]
+      - 'Die Formeln werden neu geschrieben'      # 38 Zeichen
+      - 'Die Indices werden angepasst'            # 30 Zeichen
+      - 'Neue Elemente werden hinzugefügt'        # 34 Zeichen
+      - 'Koeffizienten werden eingefügt'          # 32 Zeichen ← KORREKT (D)
+      - 'Reaktionspfeile werden umgedreht'        # 34 Zeichen
+    correct: [3]
 
   - question: 'Was ist der limitierende Reaktand?'
     options:
-      - 'Der Stoff, der im Überschuss vorliegt'
-      - 'Der Stoff, der zuerst verbraucht wird'
-      - 'Der Stoff mit der größten Masse'
-      - 'Der Katalysator der Reaktion'
-      - 'Das Hauptprodukt der Reaktion'
+      - 'Der Stoff mit der höchsten Konzentration'  # 42 Zeichen
+      - 'Der Katalysator der chemischen Reaktion'   # 41 Zeichen
+      - 'Das Produkt mit der größten Ausbeute'      # 38 Zeichen
+      - 'Der Stoff der im Überschuss vorliegt'      # 38 Zeichen
+      - 'Der Stoff der zuerst verbraucht wird'      # 38 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Was steht rechts vom Reaktionspfeil?'
+    options:
+      - 'Die gebildeten Reaktionsprodukte'        # 34 Zeichen ← KORREKT (A)
+      - 'Die eingesetzten Ausgangsmaterialien'    # 38 Zeichen
+      - 'Die notwendigen Reaktionsbedingungen'    # 38 Zeichen
+      - 'Die verwendeten Katalysatorstoffe'       # 35 Zeichen
+      - 'Die zugeführte Aktivierungsenergie'      # 36 Zeichen
+    correct: [0]
+
+  - question: 'Was muss beim Ausgleichen unverändert bleiben?'
+    options:
+      - 'Die Reihenfolge der Reaktionspartner'    # 38 Zeichen
+      - 'Die Indices in den Summenformeln'        # 34 Zeichen ← KORREKT (B)
+      - 'Die Aggregatzustände der Substanzen'     # 37 Zeichen
+      - 'Die Position des Reaktionspfeils'        # 34 Zeichen
+      - 'Die Richtung des Energieflusses'         # 33 Zeichen
     correct: [1]
 
-  - question: 'Was bedeutet "stöchiometrisch"?'
+  - question: 'Was ist eine ausgeglichene chemische Gleichung?'
     options:
-      - 'Die Reaktion läuft schnell ab'
-      - 'Die Mengenverhältnisse entsprechen der Gleichung'
-      - 'Die Reaktion ist exotherm'
-      - 'Die Reaktion ist reversibel'
-      - 'Die Produkte sind gasförmig'
-    correct: [1]
-
-  - question: 'Wie viele Atome müssen links und rechts der Gleichung sein?'
-    options:
-      - 'Links mehr als rechts'
-      - 'Rechts mehr als links'
-      - 'Gleich viele von jeder Sorte'
-      - 'Die Summe muss 100 sein'
-      - 'Es gibt keine Regel dafür'
+      - 'Eine Formel ohne Koeffizienten'          # 32 Zeichen
+      - 'Eine Reaktion ohne Energieumsatz'        # 34 Zeichen
+      - 'Gleiche Atomanzahl auf beiden Seiten'    # 38 Zeichen ← KORREKT (C)
+      - 'Ein Gleichgewicht ohne Stoffumsatz'      # 36 Zeichen
+      - 'Eine Umwandlung ohne Katalysator'        # 34 Zeichen
     correct: [2]
 
-  - question: 'Was zeigen die Koeffizienten einer ausgeglichenen Gleichung?'
+  - question: 'Worauf basiert die Stöchiometrie?'
     options:
-      - 'Die molaren Massen der Stoffe'
-      - 'Die Stoffmengenverhältnisse der Reaktion'
-      - 'Die Reaktionsgeschwindigkeit'
-      - 'Die Siedepunkte der Stoffe'
-      - 'Die Aggregatzustände'
-    correct: [1]
+      - 'Auf der Messung von Temperaturen'        # 34 Zeichen
+      - 'Auf der Bestimmung von Drücken'          # 32 Zeichen
+      - 'Auf der Analyse von Spektren'            # 30 Zeichen
+      - 'Auf festen Mengenverhältnissen'          # 32 Zeichen ← KORREKT (D)
+      - 'Auf der Berechnung von Geschwindigkeiten' # 41 Zeichen
+    correct: [3]
 
-  - question: 'Was bedeutet das Symbol (aq) hinter einer Formel?'
+  - question: 'Was gibt der Koeffizient "2" vor H₂O an?'
     options:
-      - 'Der Stoff ist fest'
-      - 'Der Stoff ist gasförmig'
-      - 'Der Stoff ist in Wasser gelöst'
-      - 'Der Stoff ist flüssig'
-      - 'Der Stoff ist ein Katalysator'
-    correct: [2]
-
-  - question: 'Was ist die theoretische Ausbeute?'
-    options:
-      - 'Die tatsächlich erhaltene Produktmenge'
-      - 'Die maximal mögliche Produktmenge laut Stöchiometrie'
-      - 'Die Masse des limitierenden Reaktanden'
-      - 'Die Summe aller Eduktemassen'
-      - 'Der Prozentsatz der Reaktion'
-    correct: [1]
+      - 'Zwei Wasserstoffatome pro Molekül'       # 35 Zeichen
+      - 'Zwei Sauerstoffatome im Molekül'         # 33 Zeichen
+      - 'Die Oxidationszahl des Sauerstoffs'      # 36 Zeichen
+      - 'Die Ladung des Wassermoleküls'           # 31 Zeichen
+      - 'Zwei Formeleinheiten der Verbindung'     # 37 Zeichen ← KORREKT (E)
+    correct: [4]

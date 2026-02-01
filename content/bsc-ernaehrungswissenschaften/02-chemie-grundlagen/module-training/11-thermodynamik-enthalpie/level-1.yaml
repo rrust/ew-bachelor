@@ -1,95 +1,94 @@
-# Kapitel 11: Thermodynamik & Enthalpie
-# Level 1: Grundlagen
-
-topic: 'Thermodynamik & Enthalpie'
+topic: 'Thermodynamik & Reaktionsenthalpie'
 level: 1
 questions:
-  - question: 'Was ist Enthalpie (H)?'
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
+  - question: 'Was ist eine exotherme Reaktion?'
     options:
-      - 'Die Masse eines Systems'
-      - 'Der Wärmeinhalt eines Systems bei konstantem Druck'
-      - 'Die Geschwindigkeit einer Reaktion'
-      - 'Die Elektronegativität'
-      - 'Die Temperatur'
+      - 'Eine Reaktion die Wärme freisetzt'       # 35 Zeichen ← KORREKT (A)
+      - 'Eine Umwandlung die Energie aufnimmt'    # 38 Zeichen
+      - 'Ein Prozess ohne Energieveränderung'     # 37 Zeichen
+      - 'Eine Reaktion nur bei hohen Drücken'     # 37 Zeichen
+      - 'Ein Vorgang der Licht absorbiert'        # 34 Zeichen
+    correct: [0]
+
+  - question: 'Was beschreibt die Enthalpie H?'
+    options:
+      - 'Die Geschwindigkeit einer Reaktion'      # 36 Zeichen
+      - 'Den Wärmeinhalt eines Systems'           # 31 Zeichen ← KORREKT (B)
+      - 'Die Anzahl der Reaktionspartner'         # 33 Zeichen
+      - 'Die elektrische Leitfähigkeit'           # 31 Zeichen
+      - 'Den Aggregatzustand der Produkte'        # 34 Zeichen
     correct: [1]
 
-  - question: 'Was bedeutet "exotherm"?'
+  - question: 'Was bedeutet ein negatives ΔH?'
     options:
-      - 'Die Reaktion nimmt Wärme auf'
-      - 'Die Reaktion gibt Wärme ab'
-      - 'Die Reaktion ist im Gleichgewicht'
-      - 'Keine Energieänderung'
-      - 'Die Reaktion benötigt Katalysator'
-    correct: [1]
-
-  - question: 'Was ist ΔH?'
-    options:
-      - 'Die Änderung der Masse'
-      - 'Die Änderung der Enthalpie'
-      - 'Die Reaktionsgeschwindigkeit'
-      - 'Die Temperatur'
-      - 'Die Konzentration'
-    correct: [1]
+      - 'Die Reaktion benötigt Energiezufuhr'     # 37 Zeichen
+      - 'Das System bleibt energetisch neutral'   # 39 Zeichen
+      - 'Es wird Wärme an die Umgebung abgegeben' # 41 Zeichen ← KORREKT (C)
+      - 'Die Temperatur sinkt im Reaktionsgefäß'  # 40 Zeichen
+      - 'Keine chemische Reaktion findet statt'   # 39 Zeichen
+    correct: [2]
 
   - question: 'Was besagt der Satz von Hess?'
     options:
-      - 'Die Enthalpieänderung ist wegunabhängig'
-      - 'Alle Reaktionen sind exotherm'
-      - 'Die Masse bleibt erhalten'
-      - 'Die Temperatur ist konstant'
-      - 'Katalysatoren ändern ΔH'
-    correct: [0]
+      - 'Alle Reaktionen sind endotherm'          # 32 Zeichen
+      - 'Reaktionswärme ist immer positiv'        # 34 Zeichen
+      - 'Enthalpie hängt vom Druck ab'            # 30 Zeichen
+      - 'Enthalpie ist wegunabhängig'             # 29 Zeichen ← KORREKT (D)
+      - 'Nur Gase zeigen Wärmeeffekte'            # 30 Zeichen
+    correct: [3]
 
   - question: 'Was ist die Standardbildungsenthalpie?'
     options:
-      - 'Die Energie bei Raumtemperatur'
-      - 'ΔH für die Bildung von 1 mol Verbindung aus Elementen'
-      - 'Die Masse des Produkts'
-      - 'Die Siedetemperatur'
-      - 'Die Elektronenaffinität'
+      - 'Die Energie zum Schmelzen eines Stoffes' # 41 Zeichen
+      - 'Die Wärme beim Verdampfen einer Substanz' # 42 Zeichen
+      - 'Die Energie einer Neutralisationsreaktion' # 43 Zeichen
+      - 'Der Wärmeinhalt eines idealen Gases'     # 37 Zeichen
+      - 'Wärme bei Bildung aus den Elementen'     # 37 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Was misst ein Kalorimeter?'
+    options:
+      - 'Die Wärmemenge bei einer Reaktion'       # 35 Zeichen ← KORREKT (A)
+      - 'Den Druck in einem geschlossenen Gefäß'  # 40 Zeichen
+      - 'Die Lichtintensität einer Flamme'        # 34 Zeichen
+      - 'Die Geschwindigkeit der Teilchen'        # 34 Zeichen
+      - 'Das Volumen eines Gases'                 # 25 Zeichen
+    correct: [0]
+
+  - question: 'Was ist charakteristisch für endotherme Reaktionen?'
+    options:
+      - 'Sie laufen spontan und schnell ab'       # 33 Zeichen
+      - 'Sie nehmen Wärme aus der Umgebung auf'   # 39 Zeichen ← KORREKT (B)
+      - 'Sie setzen große Mengen Licht frei'      # 36 Zeichen
+      - 'Sie finden nur in Flüssigkeiten statt'   # 39 Zeichen
+      - 'Sie benötigen keine Aktivierungsenergie' # 41 Zeichen
     correct: [1]
 
-  - question: 'Was ist die Standardbedingung für thermodynamische Daten?'
+  - question: 'In welcher Einheit wird Enthalpie angegeben?'
     options:
-      - '0°C und 1 atm'
-      - '25°C und 1 bar'
-      - '100°C und 1 atm'
-      - '0 K und 0 bar'
-      - '50°C und 2 bar'
-    correct: [1]
-
-  - question: 'Welches Vorzeichen hat ΔH bei einer exothermen Reaktion?'
-    options:
-      - 'Positiv (+)'
-      - 'Negativ (-)'
-      - 'Null'
-      - 'Unbekannt'
-      - 'Immer 100'
-    correct: [1]
-
-  - question: 'Was ist eine endotherme Reaktion?'
-    options:
-      - 'Eine Reaktion, die Wärme abgibt'
-      - 'Eine Reaktion, die Wärme aufnimmt'
-      - 'Eine Reaktion ohne Energieänderung'
-      - 'Eine sehr schnelle Reaktion'
-      - 'Eine Reaktion mit Katalysator'
-    correct: [1]
-
-  - question: 'Was ist die Bindungsenergie?'
-    options:
-      - 'Die Masse einer Bindung'
-      - 'Die Energie zum Brechen einer Bindung'
-      - 'Die Länge einer Bindung'
-      - 'Die Elektronegativität'
-      - 'Die Anzahl der Bindungen'
-    correct: [1]
-
-  - question: 'Was ist die Einheit der Enthalpie?'
-    options:
-      - 'Kelvin'
-      - 'Kilogramm'
-      - 'Joule oder kJ/mol'
-      - 'Meter'
-      - 'Sekunde'
+      - 'In Grad Celsius oder Kelvin'             # 29 Zeichen
+      - 'In Mol pro Liter Lösung'                 # 27 Zeichen
+      - 'In Kilojoule pro Mol Substanz'           # 33 Zeichen ← KORREKT (C)
+      - 'In Pascal oder Bar Druck'                # 26 Zeichen
+      - 'In Gramm pro Kubikzentimeter'            # 30 Zeichen
     correct: [2]
+
+  - question: 'Was passiert bei der Verbrennung von Methan?'
+    options:
+      - 'Das System nimmt Wärme auf'              # 28 Zeichen
+      - 'Die Umgebung kühlt sich ab'              # 28 Zeichen
+      - 'Keine Energieänderung tritt auf'         # 33 Zeichen
+      - 'Wärme wird an die Umgebung abgegeben'    # 38 Zeichen ← KORREKT (D)
+      - 'Nur Lichtenergie wird freigesetzt'       # 35 Zeichen
+    correct: [3]
+
+  - question: 'Was bedeutet Standardbedingungen in der Thermodynamik?'
+    options:
+      - 'Druck von 10 Bar und 500 Kelvin Temperatur' # 43 Zeichen
+      - 'Vakuum bei 0 Kelvin absoluter Nullpunkt'    # 41 Zeichen
+      - 'Variable Werte je nach Stoffeigenschaft'    # 41 Zeichen
+      - 'Umgebung bei 100 Grad Celsius Siedepunkt'   # 42 Zeichen
+      - 'Raumtemperatur von 298 K und 1 Bar Druck'   # 42 Zeichen ← KORREKT (E)
+    correct: [4]

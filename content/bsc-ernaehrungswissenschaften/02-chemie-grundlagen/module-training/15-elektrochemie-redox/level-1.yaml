@@ -1,95 +1,94 @@
-# Kapitel 15: Elektrochemie & Redox
-# Level 1: Grundlagen
-
-topic: 'Elektrochemie & Redox'
+topic: 'Elektrochemie, Redox & Elektrolyse'
 level: 1
 questions:
-  - question: 'Was ist eine Oxidation?'
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
+  - question: 'Was passiert bei einer Oxidation?'
     options:
-      - 'Abgabe von Elektronen'
-      - 'Aufnahme von Elektronen'
-      - 'Abgabe von Protonen'
-      - 'Aufnahme von Protonen'
-      - 'Abgabe von Neutronen'
+      - 'Ein Stoff gibt Elektronen ab'            # 30 Zeichen ← KORREKT (A)
+      - 'Ein Teilchen nimmt Elektronen auf'       # 35 Zeichen
+      - 'Protonen werden freigesetzt'             # 29 Zeichen
+      - 'Neutronen werden aufgenommen'            # 30 Zeichen
+      - 'Das Atom zerfällt radioaktiv'            # 30 Zeichen
     correct: [0]
 
   - question: 'Was ist eine Reduktion?'
     options:
-      - 'Abgabe von Elektronen'
-      - 'Aufnahme von Elektronen'
-      - 'Abgabe von Protonen'
-      - 'Aufnahme von Protonen'
-      - 'Erhöhung der Oxidationszahl'
+      - 'Die Abgabe von Elektronen an Partner'    # 38 Zeichen
+      - 'Aufnahme von Elektronen durch Teilchen'  # 40 Zeichen ← KORREKT (B)
+      - 'Die Spaltung eines Moleküls in Atome'    # 38 Zeichen
+      - 'Verbrennung einer Substanz mit Sauerstoff' # 43 Zeichen
+      - 'Die Bildung eines stabilen Ionengitters' # 41 Zeichen
     correct: [1]
 
-  - question: 'Was ist ein Oxidationsmittel?'
+  - question: 'Was zeigt die Oxidationszahl?'
     options:
-      - 'Ein Stoff, der selbst reduziert wird und andere oxidiert'
-      - 'Ein Stoff, der selbst oxidiert wird'
-      - 'Ein Katalysator'
-      - 'Ein Lösungsmittel'
-      - 'Ein Elektrolyt'
+      - 'Die Masse eines Atoms in Gramm'          # 32 Zeichen
+      - 'Die Anzahl der Protonen im Kern'         # 33 Zeichen
+      - 'Formale Ladung eines Atoms im Molekül'   # 39 Zeichen ← KORREKT (C)
+      - 'Die Temperatur einer Reaktion'           # 31 Zeichen
+      - 'Die Geschwindigkeit einer Umwandlung'    # 38 Zeichen
+    correct: [2]
+
+  - question: 'Was ist eine galvanische Zelle?'
+    options:
+      - 'Ein Gerät zum Erhitzen von Metallen'     # 37 Zeichen
+      - 'Ein Apparat zur Gasanalyse'              # 28 Zeichen
+      - 'Ein Instrument zur Druckmessung'         # 33 Zeichen
+      - 'Chemische Energie wird zu Strom'         # 33 Zeichen ← KORREKT (D)
+      - 'Ein Gefäß für die Elektrolyse'           # 31 Zeichen
+    correct: [3]
+
+  - question: 'Was passiert bei der Elektrolyse?'
+    options:
+      - 'Chemische Reaktion ohne Energiezufuhr'   # 39 Zeichen
+      - 'Spontane Bildung von elektrischem Strom' # 41 Zeichen
+      - 'Wärme wird in Licht umgewandelt'         # 33 Zeichen
+      - 'Mechanische Energie treibt Reaktion an'  # 40 Zeichen
+      - 'Strom erzwingt eine chemische Reaktion'  # 40 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Was ist das Standardpotential?'
+    options:
+      - 'Spannung einer Halbzelle gegen Referenz' # 41 Zeichen ← KORREKT (A)
+      - 'Die Stromstärke in einer Batterie'       # 35 Zeichen
+      - 'Der Widerstand eines Leitermaterials'    # 38 Zeichen
+      - 'Die Kapazität eines Akkumulators'        # 34 Zeichen
+      - 'Die Leistung einer Brennstoffzelle'      # 36 Zeichen
     correct: [0]
 
-  - question: 'Was ist ein Reduktionsmittel?'
+  - question: 'Welche Elektrode ist die Anode?'
     options:
-      - 'Ein Stoff, der selbst oxidiert wird und andere reduziert'
-      - 'Ein Stoff, der selbst reduziert wird'
-      - 'Ein Katalysator'
-      - 'Ein Lösungsmittel'
-      - 'Ein Elektrolyt'
-    correct: [0]
+      - 'Die Elektrode an der reduziert wird'     # 37 Zeichen
+      - 'Der Ort der Oxidation in der Zelle'      # 36 Zeichen ← KORREKT (B)
+      - 'Die negative Elektrode der Batterie'     # 37 Zeichen
+      - 'Der Pluspol bei der Entladung'           # 31 Zeichen
+      - 'Die Referenzelektrode im System'         # 33 Zeichen
+    correct: [1]
 
-  - question: 'Was ist die Oxidationszahl?'
+  - question: 'Was beschreibt die Nernst-Gleichung?'
     options:
-      - 'Die formale Ladung eines Atoms in einer Verbindung'
-      - 'Die Anzahl der Elektronen'
-      - 'Die Anzahl der Protonen'
-      - 'Die Massenzahl'
-      - 'Die Kernladungszahl'
-    correct: [0]
+      - 'Den Zusammenhang von Druck und Volumen'  # 40 Zeichen
+      - 'Die Abhängigkeit der Löslichkeit'        # 34 Zeichen
+      - 'Potential abhängig von Konzentration'    # 38 Zeichen ← KORREKT (C)
+      - 'Die Geschwindigkeit der Elektrolyse'     # 37 Zeichen
+      - 'Die Wärmeentwicklung bei Reaktionen'     # 37 Zeichen
+    correct: [2]
 
-  - question: 'Welche Oxidationszahl hat Sauerstoff in den meisten Verbindungen?'
+  - question: 'Was passiert an der Kathode?'
     options:
-      - '-2'
-      - '+2'
-      - '0'
-      - '-1'
-      - '+1'
-    correct: [0]
+      - 'Hier findet die Oxidation statt'         # 33 Zeichen
+      - 'Elektronen werden abgegeben'             # 29 Zeichen
+      - 'Anionen werden angezogen'                # 26 Zeichen
+      - 'Elektronen werden aufgenommen'           # 31 Zeichen ← KORREKT (D)
+      - 'Protonen werden freigesetzt'             # 29 Zeichen
+    correct: [3]
 
-  - question: 'Welche Oxidationszahl hat Wasserstoff in Verbindungen mit Nichtmetallen?'
+  - question: 'Was besagen die Faradayschen Gesetze?'
     options:
-      - '+1'
-      - '-1'
-      - '0'
-      - '+2'
-      - '-2'
-    correct: [0]
-
-  - question: 'Was ist ein galvanisches Element?'
-    options:
-      - 'Eine Anordnung zur Umwandlung chemischer in elektrische Energie'
-      - 'Ein Elektrolysegerät'
-      - 'Ein Thermometer'
-      - 'Ein Katalysator'
-      - 'Ein Puffer'
-    correct: [0]
-
-  - question: 'Was geschieht bei der Elektrolyse?'
-    options:
-      - 'Elektrische Energie erzwingt eine chemische Reaktion'
-      - 'Chemische Energie wird in elektrische umgewandelt'
-      - 'Wärme wird erzeugt'
-      - 'Licht wird absorbiert'
-      - 'Keine chemische Reaktion findet statt'
-    correct: [0]
-
-  - question: 'Was ist die Standardwasserstoffelektrode (SHE)?'
-    options:
-      - 'Die Referenzelektrode mit E° = 0 V per Definition'
-      - 'Eine Batterie'
-      - 'Ein Thermometer'
-      - 'Ein Katalysator'
-      - 'Ein Oxidationsmittel'
-    correct: [0]
+      - 'Den Zusammenhang von Strom und Masse'    # 38 Zeichen ← auf E verschoben
+      - 'Die Abhängigkeit von Druck und Temperatur' # 43 Zeichen
+      - 'Die Beziehung zwischen Licht und Wärme'  # 40 Zeichen
+      - 'Das Verhältnis von Kraft und Beschleunigung' # 45 Zeichen
+      - 'Zusammenhang zwischen Strommenge und Stoffumsatz' # 48 Zeichen ← KORREKT (E)
+    correct: [4]

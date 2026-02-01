@@ -1,95 +1,94 @@
-# Kapitel 10: Valenzbindungstheorie, Hybridisierung & MO-Theorie
-# Level 1: Grundlagen
-
-topic: 'Valenzbindungstheorie, Hybridisierung & MO-Theorie'
+topic: 'Valenzbindung, Hybridisierung & MO-Theorie'
 level: 1
 questions:
-  - question: 'Was beschreibt die Valenzbindungstheorie (VB)?'
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
+  - question: 'Was ist eine σ-Bindung?'
     options:
-      - 'Die Bewegung von Elektronen im Kern'
-      - 'Die Überlappung von Atomorbitalen zu Bindungen'
-      - 'Die Masse von Molekülen'
-      - 'Die Ionisierung von Atomen'
-      - 'Die Radioaktivität'
+      - 'Überlappung entlang der Kernachse'       # 35 Zeichen ← KORREKT (A)
+      - 'Seitliche Überlappung von Orbitalen'     # 37 Zeichen
+      - 'Eine rein elektrostatische Anziehung'    # 38 Zeichen
+      - 'Die Bindung in einem Ionengitter'        # 34 Zeichen
+      - 'Eine metallische Bindung im Kristall'    # 38 Zeichen
+    correct: [0]
+
+  - question: 'Was bedeutet sp³-Hybridisierung?'
+    options:
+      - 'Drei s-Orbitale und ein p-Orbital mischen' # 43 Zeichen
+      - 'Ein s- und drei p-Orbitale verschmelzen'   # 41 Zeichen ← KORREKT (B)
+      - 'Vier d-Orbitale bilden neue Formen'        # 36 Zeichen
+      - 'Nur p-Orbitale werden kombiniert'          # 34 Zeichen
+      - 'Zwei s-Orbitale verbinden sich'            # 34 Zeichen
     correct: [1]
 
-  - question: 'Was ist Hybridisierung?'
+  - question: 'Was ist charakteristisch für π-Bindungen?'
     options:
-      - 'Die Spaltung von Molekülen'
-      - 'Die Mischung von Atomorbitalen zu neuen Hybridorbitalen'
-      - 'Die Bildung von Ionen'
-      - 'Eine chemische Reaktion'
-      - 'Die Trennung von Elektronen'
-    correct: [1]
-
-  - question: 'Welche Hybridisierung hat Kohlenstoff in Methan (CH₄)?'
-    options:
-      - 'sp'
-      - 'sp²'
-      - 'sp³'
-      - 'sp³d'
-      - 'sp³d²'
+      - 'Direkte Überlappung entlang der Achse'   # 39 Zeichen
+      - 'Sie entstehen nur in Ionenverbindungen'  # 40 Zeichen
+      - 'Seitliche Überlappung von p-Orbitalen'   # 39 Zeichen ← KORREKT (C)
+      - 'Sie sind stärker als Sigma-Bindungen'    # 38 Zeichen
+      - 'Sie bilden sich nur bei Metallen'        # 34 Zeichen
     correct: [2]
 
-  - question: 'Was ist eine σ-Bindung (Sigma-Bindung)?'
+  - question: 'Welche Hybridisierung hat Kohlenstoff in Methan?'
     options:
-      - 'Eine seitliche Überlappung von Orbitalen'
-      - 'Eine Überlappung entlang der Bindungsachse'
-      - 'Eine Ionenbindung'
-      - 'Eine Wasserstoffbrücke'
-      - 'Eine metallische Bindung'
-    correct: [1]
+      - 'Eine sp-Hybridisierung mit zwei Orbitalen'  # 43 Zeichen
+      - 'Eine sp²-Hybridisierung für drei Partner'   # 42 Zeichen
+      - 'Keine Hybridisierung der Orbitale'          # 35 Zeichen
+      - 'Eine sp³-Hybridisierung für vier Partner'   # 42 Zeichen ← KORREKT (D)
+      - 'Eine d²sp³-Hybridisierung im Komplex'       # 40 Zeichen
+    correct: [3]
 
-  - question: 'Was ist eine π-Bindung (Pi-Bindung)?'
+  - question: 'Was beschreibt die Bindungsordnung?'
     options:
-      - 'Eine Überlappung entlang der Bindungsachse'
-      - 'Eine seitliche Überlappung von p-Orbitalen'
-      - 'Eine Ionenbindung'
-      - 'Eine kovalente Einfachbindung'
-      - 'Eine Wasserstoffbrücke'
-    correct: [1]
-
-  - question: 'Was beschreibt die MO-Theorie (Molekülorbitaltheorie)?'
-    options:
-      - 'Elektronen in lokalisierten Atomorbitalen'
-      - 'Elektronen in Orbitalen, die das ganze Molekül umfassen'
-      - 'Die Masse des Moleküls'
-      - 'Nur ionische Bindungen'
-      - 'Kernspaltung'
-    correct: [1]
-
-  - question: 'Was ist ein bindendes Molekülorbital?'
-    options:
-      - 'Ein MO mit höherer Energie als die Atomorbitale'
-      - 'Ein MO mit niedrigerer Energie als die Atomorbitale'
-      - 'Ein Orbital im Atomkern'
-      - 'Ein Orbital ohne Elektronen'
-      - 'Ein antibindendes Orbital'
-    correct: [1]
+      - 'Die Reihenfolge der Orbitalbesetzung'    # 38 Zeichen
+      - 'Die Anzahl der Protonen im Molekül'      # 36 Zeichen
+      - 'Die räumliche Anordnung der Atome'       # 35 Zeichen
+      - 'Die Temperatur der Bindungsbildung'      # 36 Zeichen
+      - 'Die Anzahl der Bindungen zwischen Atomen' # 41 Zeichen ← KORREKT (E)
+    correct: [4]
 
   - question: 'Was ist ein antibindendes Molekülorbital?'
     options:
-      - 'Ein MO mit niedrigerer Energie'
-      - 'Ein MO mit höherer Energie und einer Knotenebene'
-      - 'Ein Orbital, das immer voll besetzt ist'
-      - 'Ein ionisches Orbital'
-      - 'Ein s-Orbital'
+      - 'Ein Orbital das die Bindung schwächt'    # 38 Zeichen ← KORREKT (A)
+      - 'Ein besonders starkes Bindungsorbital'   # 39 Zeichen
+      - 'Ein Orbital nur im Atomkern'             # 29 Zeichen
+      - 'Ein nichtexistierendes Orbital'          # 30 Zeichen
+      - 'Ein Orbital ohne Elektronen'             # 29 Zeichen
+    correct: [0]
+
+  - question: 'Wie viele Bindungen hat eine Dreifachbindung?'
+    options:
+      - 'Drei Sigma-Bindungen hintereinander'     # 37 Zeichen
+      - 'Eine Sigma- und zwei Pi-Bindungen'       # 35 Zeichen ← KORREKT (B)
+      - 'Drei unabhängige Pi-Bindungen'           # 31 Zeichen
+      - 'Zwei Sigma- und eine Pi-Bindung'         # 33 Zeichen
+      - 'Nur eine sehr starke Bindung'            # 30 Zeichen
     correct: [1]
 
-  - question: 'Wie viele Hybridorbitale bilden sich bei sp³-Hybridisierung?'
+  - question: 'Welchen Winkel hat ein sp³-hybridisiertes Atom?'
     options:
-      - '2'
-      - '3'
-      - '4'
-      - '5'
-      - '6'
+      - 'Genau neunzig Grad zwischen Bindungen'   # 39 Zeichen
+      - 'Exakt einhundertachtzig Grad linear'     # 37 Zeichen
+      - 'Etwa einhundertneun Grad Tetraederwinkel' # 42 Zeichen ← KORREKT (C)
+      - 'Genau einhundertzwanzig Grad planar'     # 37 Zeichen
+      - 'Variable Winkel ohne festen Wert'        # 34 Zeichen
     correct: [2]
 
-  - question: 'Was ist die Bindungsordnung?'
+  - question: 'Was passiert bei der Orbitalüberlappung?'
     options:
-      - 'Die Anzahl der Atome im Molekül'
-      - 'Die Anzahl der Elektronenpaare zwischen zwei Atomen'
-      - 'Die Masse des Moleküls'
-      - 'Die Ladung des Ions'
-      - 'Die Anzahl der Protonen'
-    correct: [1]
+      - 'Die Elektronen werden zerstört'          # 34 Zeichen
+      - 'Die Atomkerne verschmelzen miteinander'  # 40 Zeichen
+      - 'Die Orbitale stoßen sich ab'             # 29 Zeichen
+      - 'Es entstehen Molekülorbitale'            # 30 Zeichen ← KORREKT (D)
+      - 'Die Neutronen werden freigesetzt'        # 34 Zeichen
+    correct: [3]
+
+  - question: 'Welche Hybridisierung zeigt eine Doppelbindung?'
+    options:
+      - 'Immer eine sp³-Hybridisierung'           # 33 Zeichen
+      - 'Keine Hybridisierung erforderlich'       # 35 Zeichen
+      - 'Ausschließlich d-Orbital-Beteiligung'    # 38 Zeichen
+      - 'Eine reine s-Orbital-Kombination'        # 34 Zeichen
+      - 'Typischerweise sp²-Hybridisierung'       # 35 Zeichen ← KORREKT (E)
+    correct: [4]

@@ -1,95 +1,94 @@
-# Kapitel 13: Kolligative Eigenschaften
-# Level 1: Grundlagen
-
 topic: 'Kolligative Eigenschaften'
 level: 1
 questions:
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
   - question: 'Was sind kolligative Eigenschaften?'
     options:
-      - 'Eigenschaften, die von der Art der gelösten Teilchen abhängen'
-      - 'Eigenschaften, die nur von der Anzahl der gelösten Teilchen abhängen'
-      - 'Eigenschaften, die von der Farbe abhängen'
-      - 'Chemische Reaktionen'
-      - 'Eigenschaften des reinen Lösungsmittels'
-    correct: [1]
-
-  - question: 'Was ist Dampfdruckerniedrigung?'
-    options:
-      - 'Die Erhöhung des Dampfdrucks durch gelöste Stoffe'
-      - 'Die Senkung des Dampfdrucks durch gelöste Teilchen'
-      - 'Die Änderung der Farbe'
-      - 'Die chemische Reaktion mit Wasser'
-      - 'Die Erhöhung der Viskosität'
-    correct: [1]
-
-  - question: 'Was ist Siedepunktserhöhung?'
-    options:
-      - 'Der Siedepunkt sinkt durch gelöste Stoffe'
-      - 'Der Siedepunkt steigt durch gelöste Teilchen'
-      - 'Der Siedepunkt bleibt konstant'
-      - 'Der Schmelzpunkt sinkt'
-      - 'Die Lösung verdampft nicht'
-    correct: [1]
-
-  - question: 'Was ist Gefrierpunktserniedrigung?'
-    options:
-      - 'Der Gefrierpunkt steigt durch gelöste Stoffe'
-      - 'Der Gefrierpunkt sinkt durch gelöste Teilchen'
-      - 'Der Gefrierpunkt bleibt gleich'
-      - 'Die Lösung gefriert sofort'
-      - 'Der Siedepunkt sinkt'
-    correct: [1]
-
-  - question: 'Was ist Osmose?'
-    options:
-      - 'Die Diffusion von gelösten Stoffen'
-      - 'Der Fluss von Lösungsmittel durch eine semipermeable Membran'
-      - 'Eine chemische Reaktion'
-      - 'Die Verdampfung von Wasser'
-      - 'Die Auflösung von Salz'
-    correct: [1]
-
-  - question: 'Was ist osmotischer Druck?'
-    options:
-      - 'Der Druck, der nötig ist um Osmose zu stoppen'
-      - 'Der Dampfdruck'
-      - 'Der atmosphärische Druck'
-      - 'Der Druck im Vakuum'
-      - 'Der Wasserdruck'
+      - 'Eigenschaften abhängig von Teilchenzahl' # 41 Zeichen ← KORREKT (A)
+      - 'Eigenschaften die von der Masse abhängen' # 42 Zeichen
+      - 'Charakteristika nur für reine Stoffe'    # 38 Zeichen
+      - 'Merkmale die von der Farbe abhängen'     # 37 Zeichen
+      - 'Eigenschaften bestimmt durch Kristallform' # 43 Zeichen
     correct: [0]
 
-  - question: 'Was bedeutet "semipermeabel"?'
+  - question: 'Was passiert mit dem Siedepunkt bei gelöstem Stoff?'
     options:
-      - 'Für alle Stoffe durchlässig'
-      - 'Für das Lösungsmittel durchlässig, nicht für gelöste Stoffe'
-      - 'Für nichts durchlässig'
-      - 'Nur für Gase durchlässig'
-      - 'Nur für Feststoffe durchlässig'
+      - 'Der Siedepunkt bleibt unverändert'       # 35 Zeichen
+      - 'Der Siedepunkt erhöht sich'              # 28 Zeichen ← KORREKT (B)
+      - 'Der Siedepunkt sinkt deutlich'           # 31 Zeichen
+      - 'Der Siedepunkt schwankt zufällig'        # 34 Zeichen
+      - 'Der Siedepunkt ist nicht messbar'        # 34 Zeichen
     correct: [1]
 
-  - question: 'Warum streut man Salz auf vereiste Straßen?'
+  - question: 'Was bewirkt Salz auf Eis?'
     options:
-      - 'Um den Gefrierpunkt zu erhöhen'
-      - 'Um den Gefrierpunkt zu erniedrigen'
-      - 'Um die Straße zu färben'
-      - 'Um chemische Reaktionen auszulösen'
-      - 'Um den Dampfdruck zu erhöhen'
-    correct: [1]
+      - 'Die Schmelztemperatur steigt an'         # 33 Zeichen
+      - 'Das Eis wird stabiler und härter'        # 34 Zeichen
+      - 'Der Gefrierpunkt wird erniedrigt'        # 34 Zeichen ← KORREKT (C)
+      - 'Das Eis verdampft schneller'             # 29 Zeichen
+      - 'Es passiert keine Veränderung'           # 31 Zeichen
+    correct: [2]
 
-  - question: "Was ist der van't Hoff-Faktor (i)?"
+  - question: 'Was ist der osmotische Druck?'
     options:
-      - 'Die Anzahl der Teilchen, in die ein Stoff dissoziiert'
-      - 'Die Molmasse'
-      - 'Die Konzentration'
-      - 'Die Temperatur'
-      - 'Der Druck'
+      - 'Der Dampfdruck über einer Lösung'        # 34 Zeichen
+      - 'Die Kraft beim Schmelzen von Eis'        # 34 Zeichen
+      - 'Die Kompressibilität einer Flüssigkeit'  # 40 Zeichen
+      - 'Druck durch Wasserbewegung durch Membran' # 41 Zeichen ← KORREKT (D)
+      - 'Der atmosphärische Luftdruck'            # 30 Zeichen
+    correct: [3]
+
+  - question: 'Was beschreibt das Raoultsche Gesetz?'
+    options:
+      - 'Den Zusammenhang von Druck und Volumen'  # 40 Zeichen
+      - 'Die Abhängigkeit der Viskosität'         # 33 Zeichen
+      - 'Die Änderung der Löslichkeit'            # 30 Zeichen
+      - 'Die Kristallisationsgeschwindigkeit'     # 33 Zeichen
+      - 'Die Dampfdruckerniedrigung durch Lösung' # 41 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Wovon hängen kolligative Eigenschaften ab?'
+    options:
+      - 'Von der Anzahl gelöster Teilchen'        # 34 Zeichen ← KORREKT (A)
+      - 'Von der Farbe des gelösten Stoffes'      # 36 Zeichen
+      - 'Von der chemischen Formel allein'        # 34 Zeichen
+      - 'Von der Kristallstruktur des Stoffes'    # 38 Zeichen
+      - 'Von der Größe der Lösungsmittelmoleküle' # 41 Zeichen
     correct: [0]
 
-  - question: "Welchen van't Hoff-Faktor hat NaCl in Wasser?"
+  - question: 'Was ist eine semipermeable Membran?'
     options:
-      - '1'
-      - '2'
-      - '3'
-      - '4'
-      - '0'
+      - 'Eine für alle Stoffe durchlässige Schicht' # 43 Zeichen
+      - 'Eine selektiv durchlässige Trennschicht'   # 41 Zeichen ← KORREKT (B)
+      - 'Eine vollständig undurchlässige Barriere'  # 42 Zeichen
+      - 'Eine Schicht die nur Gase durchlässt'      # 38 Zeichen
+      - 'Ein Filter der alle Ionen zurückhält'      # 38 Zeichen
     correct: [1]
+
+  - question: 'Was ist der van-t-Hoff-Faktor?'
+    options:
+      - 'Die Molmasse eines gelösten Stoffes'     # 37 Zeichen
+      - 'Die Dichte einer wässrigen Lösung'       # 35 Zeichen
+      - 'Faktor für Teilchenzahl durch Dissoziation' # 44 Zeichen ← KORREKT (C)
+      - 'Die Temperaturabhängigkeit der Löslichkeit' # 45 Zeichen
+      - 'Der Koeffizient der Wärmeleitfähigkeit'  # 40 Zeichen
+    correct: [2]
+
+  - question: 'Was passiert bei der Osmose?'
+    options:
+      - 'Gelöste Stoffe wandern durch eine Membran' # 43 Zeichen
+      - 'Die Lösung verdampft vollständig'        # 34 Zeichen
+      - 'Feststoffe lösen sich im Wasser auf'     # 37 Zeichen
+      - 'Wasser wandert zur konzentrierteren Seite' # 43 Zeichen ← KORREKT (D)
+      - 'Die Membran löst sich langsam auf'       # 35 Zeichen
+    correct: [3]
+
+  - question: 'Welche Stoffe zeigen die größte Siedepunktserhöhung?'
+    options:
+      - 'Stoffe die sich gar nicht auflösen'      # 36 Zeichen
+      - 'Substanzen mit sehr großer Molmasse'     # 37 Zeichen
+      - 'Nur reine organische Verbindungen'       # 35 Zeichen
+      - 'Gase unter sehr hohem Druck'             # 29 Zeichen
+      - 'Elektrolyte die in Ionen zerfallen'      # 38 Zeichen ← KORREKT (E)
+    correct: [4]

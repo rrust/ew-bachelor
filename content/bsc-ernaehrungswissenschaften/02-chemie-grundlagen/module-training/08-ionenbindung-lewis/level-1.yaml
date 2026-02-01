@@ -1,95 +1,94 @@
-# Kapitel 8: Ionische Bindung & Lewis-Strukturen
-# Level 1: Grundlagen
-
 topic: 'Ionische Bindung & Lewis-Strukturen'
 level: 1
 questions:
-  - question: 'Wie entsteht eine Ionenbindung?'
-    options:
-      - 'Durch Elektronenteilung zwischen Atomen'
-      - 'Durch Elektronenübertragung von Metall auf Nichtmetall'
-      - 'Durch magnetische Anziehung'
-      - 'Durch Kernfusion'
-      - 'Durch van-der-Waals-Kräfte'
-    correct: [1]
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
 
-  - question: 'Was ist ein Ionengitter?'
+  - question: 'Wie entsteht eine ionische Bindung?'
     options:
-      - 'Eine zufällige Anordnung von Atomen'
-      - 'Eine regelmäßige 3D-Anordnung von Ionen'
-      - 'Ein einzelnes Ionenpaar'
-      - 'Eine flüssige Substanz'
-      - 'Ein Gas aus Ionen'
-    correct: [1]
+      - 'Durch Übertragung von Ladungsträgern'    # 38 Zeichen ← KORREKT (A)
+      - 'Durch gemeinsame Nutzung von Teilchen'   # 39 Zeichen
+      - 'Durch magnetische Anziehungskräfte'      # 36 Zeichen
+      - 'Durch Verschmelzung von Atomkernen'      # 36 Zeichen
+      - 'Durch Abstoßung gleicher Ladungen'       # 35 Zeichen
+    correct: [0]
 
   - question: 'Was zeigt eine Lewis-Struktur?'
     options:
-      - 'Die Kernladung des Atoms'
-      - 'Die Valenzelektronen als Punkte oder Striche'
-      - 'Die Neutronenzahl'
-      - 'Die Masse des Atoms'
-      - 'Die Dichte des Stoffes'
+      - 'Die Masse aller Atome im Molekül'        # 36 Zeichen
+      - 'Valenzelektronen als Punkte oder Striche' # 41 Zeichen ← KORREKT (B)
+      - 'Die Geschwindigkeit der Teilchen'        # 34 Zeichen
+      - 'Die Farbe der chemischen Substanz'       # 35 Zeichen
+      - 'Den Aggregatzustand bei Raumtemperatur'  # 40 Zeichen
     correct: [1]
 
-  - question: 'Was besagt die Oktettregel?'
+  - question: 'Was ist die Oktettregel?'
     options:
-      - 'Atome haben immer 8 Protonen'
-      - 'Atome streben 8 Valenzelektronen an'
-      - 'Ionen haben 8 positive Ladungen'
-      - 'Moleküle bestehen aus 8 Atomen'
-      - 'Die Masse muss durch 8 teilbar sein'
-    correct: [1]
+      - 'Jedes Atom hat genau acht Protonen'      # 36 Zeichen
+      - 'Alle Elemente haben acht Isotope'        # 36 Zeichen
+      - 'Atome streben acht Außenelektronen an'   # 39 Zeichen ← KORREKT (C)
+      - 'Ionengitter haben acht Ecken'            # 30 Zeichen
+      - 'Moleküle bestehen aus acht Atomen'       # 35 Zeichen
+    correct: [2]
 
-  - question: 'Welche Ionen bildet Natriumchlorid?'
+  - question: 'Was ist ein freies Elektronenpaar?'
     options:
-      - 'Na²⁺ und Cl²⁻'
-      - 'Na⁺ und Cl⁻'
-      - 'Na⁻ und Cl⁺'
-      - 'Na³⁺ und Cl³⁻'
-      - 'Na und Cl (neutral)'
-    correct: [1]
+      - 'Elektronen die sich frei bewegen'        # 34 Zeichen
+      - 'Ungepaarte Elektronen im Orbital'        # 34 Zeichen
+      - 'Elektronen zwischen zwei Atomkernen'     # 37 Zeichen
+      - 'Zwei gepaarte nichtbindende Elektronen'  # 40 Zeichen ← KORREKT (D)
+      - 'Elektronen ohne Spin im s-Orbital'       # 35 Zeichen
+    correct: [3]
+
+  - question: 'Was ist charakteristisch für ein Ionengitter?'
+    options:
+      - 'Es besteht nur aus neutralen Molekülen'  # 40 Zeichen
+      - 'Die Teilchen sind ungeordnet verteilt'   # 39 Zeichen
+      - 'Es leitet Strom im festen Zustand'       # 35 Zeichen
+      - 'Es enthält nur kovalente Bindungen'      # 36 Zeichen
+      - 'Regelmäßige Anordnung von Ionen'         # 33 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Welche Elemente bilden typischerweise Kationen?'
+    options:
+      - 'Die Metalle der ersten Hauptgruppen'     # 37 Zeichen ← KORREKT (A)
+      - 'Die Edelgase der achten Hauptgruppe'     # 37 Zeichen
+      - 'Die Halogene der siebten Gruppe'         # 33 Zeichen
+      - 'Nur die Elemente der Nebengruppen'       # 35 Zeichen
+      - 'Ausschließlich die Nichtmetalle'         # 33 Zeichen
+    correct: [0]
 
   - question: 'Was ist ein bindendes Elektronenpaar?'
     options:
-      - 'Ein Paar freier Elektronen'
-      - 'Zwei Elektronen, die von zwei Atomen geteilt werden'
-      - 'Zwei Protonen im Kern'
-      - 'Zwei Neutronen'
-      - 'Ein einzelnes Elektron'
+      - 'Elektronen die nur einem Atom gehören'   # 39 Zeichen
+      - 'Zwei Elektronen zwischen zwei Atomen'    # 38 Zeichen ← KORREKT (B)
+      - 'Alle Elektronen der inneren Schalen'     # 37 Zeichen
+      - 'Die Protonen im Molekül gemeinsam'       # 35 Zeichen
+      - 'Neutronen die Atome verbinden'           # 31 Zeichen
     correct: [1]
 
-  - question: 'Was ist ein freies Elektronenpaar (lone pair)?'
+  - question: 'Welches Element ist eine Ausnahme zur Oktettregel?'
     options:
-      - 'Ein Elektronenpaar in einer Bindung'
-      - 'Ein Elektronenpaar, das nicht an einer Bindung beteiligt ist'
-      - 'Ein ungepaartes Elektron'
-      - 'Elektronen im Atomkern'
-      - 'Elektronen in der ersten Schale'
-    correct: [1]
+      - 'Das Element Kohlenstoff mit vier Bindungen' # 43 Zeichen
+      - 'Das Element Stickstoff mit drei Bindungen'  # 43 Zeichen
+      - 'Das Wasserstoffelement mit nur zwei'       # 39 Zeichen ← KORREKT (C)
+      - 'Das Element Sauerstoff mit zwei Bindungen' # 43 Zeichen
+      - 'Das Element Fluor mit einer Bindung'       # 37 Zeichen
+    correct: [2]
 
-  - question: 'Welches Element bildet typischerweise Kationen?'
+  - question: 'Was ist die Gitterenergie?'
     options:
-      - 'Chlor'
-      - 'Natrium'
-      - 'Sauerstoff'
-      - 'Fluor'
-      - 'Schwefel'
-    correct: [1]
+      - 'Die Wärme beim Schmelzen des Gitters'    # 38 Zeichen
+      - 'Die Energie zum Verdampfen von Ionen'    # 38 Zeichen
+      - 'Die kinetische Energie der Ionen'        # 34 Zeichen
+      - 'Energie bei Gitterbildung aus Ionen'     # 37 Zeichen ← KORREKT (D)
+      - 'Die Aktivierungsenergie der Reaktion'    # 38 Zeichen
+    correct: [3]
 
-  - question: 'Wie wird eine Einfachbindung in der Lewis-Struktur dargestellt?'
+  - question: 'Wie viele Punkte hat Sauerstoff in der Lewis-Formel?'
     options:
-      - 'Als ein einzelner Punkt'
-      - 'Als ein Strich zwischen zwei Atomen'
-      - 'Als drei Striche'
-      - 'Als Kreis'
-      - 'Als Dreieck'
-    correct: [1]
-
-  - question: 'Was ist Gitterenergie?'
-    options:
-      - 'Die Energie eines freien Ions'
-      - 'Die Energie zur Bildung des Ionengitters aus freien Ionen'
-      - 'Die kinetische Energie der Ionen'
-      - 'Die Energie der Kernspaltung'
-      - 'Die Wärme beim Schmelzen'
-    correct: [1]
+      - 'Genau zwei Punkte für die Bindungen'     # 37 Zeichen
+      - 'Insgesamt vier Punkte dargestellt'       # 35 Zeichen
+      - 'Nur ein einziger Punkt vorhanden'        # 34 Zeichen
+      - 'Es werden gar keine Punkte gezeigt'      # 36 Zeichen
+      - 'Sechs Punkte für die Valenzelektronen'   # 39 Zeichen ← KORREKT (E)
+    correct: [4]

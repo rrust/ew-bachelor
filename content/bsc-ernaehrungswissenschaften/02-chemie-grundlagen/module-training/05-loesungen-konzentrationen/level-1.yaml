@@ -1,95 +1,94 @@
-# Kapitel 5: Lösungen & Konzentrationen
-# Level 1: Grundlagen (Wissen)
-
 topic: 'Lösungen & Konzentrationen'
 level: 1
 questions:
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
   - question: 'Was ist das Lösungsmittel in einer Lösung?'
     options:
-      - 'Der Stoff, der in geringerer Menge vorliegt'
-      - 'Der Stoff, der in größerer Menge vorliegt'
-      - 'Der Stoff, der sich auflöst'
-      - 'Der feste Bestandteil'
-      - 'Der gasförmige Bestandteil'
+      - 'Die Komponente im größten Anteil'        # 36 Zeichen ← KORREKT (A)
+      - 'Der Stoff der sich auflöst'              # 28 Zeichen
+      - 'Das entstehende Reaktionsprodukt'        # 34 Zeichen
+      - 'Die feste Phase am Gefäßboden'           # 31 Zeichen
+      - 'Der gasförmige Anteil im Gemisch'        # 34 Zeichen
+    correct: [0]
+
+  - question: 'Was gibt die Molarität einer Lösung an?'
+    options:
+      - 'Die Masse des gelösten Stoffes in Gramm' # 41 Zeichen
+      - 'Stoffmenge pro Liter der Lösung'         # 33 Zeichen ← KORREKT (B)
+      - 'Das Volumen des Lösungsmittels'          # 32 Zeichen
+      - 'Die Temperatur der Flüssigkeit'          # 32 Zeichen
+      - 'Die Dichte des Gesamtgemisches'          # 32 Zeichen
     correct: [1]
 
-  - question: 'Was bedeutet Molarität (c)?'
+  - question: 'Was bedeutet es wenn eine Lösung gesättigt ist?'
     options:
-      - 'Masse pro Volumen'
-      - 'Stoffmenge pro Volumen in mol/L'
-      - 'Masse pro Masse'
-      - 'Teilchenzahl pro Gramm'
-      - 'Volumen pro Stoffmenge'
-    correct: [1]
-
-  - question: 'Welche Einheit hat die Molarität?'
-    options:
-      - 'g/L'
-      - 'mol/L oder M'
-      - 'kg/mol'
-      - 'L/mol'
-      - '%'
-    correct: [1]
-
-  - question: 'Was ist eine gesättigte Lösung?'
-    options:
-      - 'Eine Lösung ohne gelösten Stoff'
-      - 'Eine Lösung, die keinen weiteren Stoff mehr lösen kann'
-      - 'Eine sehr verdünnte Lösung'
-      - 'Eine Lösung bei hoher Temperatur'
-      - 'Eine Lösung mit Gasen'
-    correct: [1]
-
-  - question: 'Was bedeutet "verdünnen"?'
-    options:
-      - 'Lösungsmittel entfernen'
-      - 'Mehr gelösten Stoff hinzufügen'
-      - 'Lösungsmittel hinzufügen'
-      - 'Die Lösung erhitzen'
-      - 'Die Lösung filtrieren'
+      - 'Die Lösung enthält keinen gelösten Stoff' # 42 Zeichen
+      - 'Die Temperatur erreicht den Siedepunkt'   # 40 Zeichen
+      - 'Maximal mögliche Stoffmenge ist gelöst'   # 40 Zeichen ← KORREKT (C)
+      - 'Der Druck im Gefäß ist zu hoch'           # 32 Zeichen
+      - 'Das Lösungsmittel ist verdampft'          # 33 Zeichen
     correct: [2]
 
-  - question: 'Was ist der Massenanteil (w)?'
+  - question: 'Was passiert bei einer Verdünnung?'
     options:
-      - 'Stoffmenge geteilt durch Volumen'
-      - 'Masse des gelösten Stoffes geteilt durch Gesamtmasse'
-      - 'Volumen geteilt durch Masse'
-      - 'Teilchenzahl pro Mol'
-      - 'Dichte der Lösung'
+      - 'Der Siedepunkt wird stark erhöht'        # 34 Zeichen
+      - 'Die chemische Struktur verändert sich'   # 39 Zeichen
+      - 'Neuer gelöster Stoff wird zugegeben'     # 37 Zeichen
+      - 'Lösungsmittel wird hinzugefügt'          # 32 Zeichen ← KORREKT (D)
+      - 'Die Temperatur wird gesenkt'             # 29 Zeichen
+    correct: [3]
+
+  - question: 'Was beschreibt der Massenanteil?'
+    options:
+      - 'Das Volumen pro Liter Gesamtlösung'      # 36 Zeichen
+      - 'Die Teilchenzahl in einem Mol'           # 31 Zeichen
+      - 'Die Temperaturabhängigkeit der Dichte'   # 39 Zeichen
+      - 'Die Anzahl der gelösten Moleküle'        # 34 Zeichen
+      - 'Prozent der Masse am Gesamtgewicht'      # 36 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Was ist eine ungesättigte Lösung?'
+    options:
+      - 'Noch mehr Stoff könnte gelöst werden'    # 38 Zeichen ← KORREKT (A)
+      - 'Die maximale Stoffmenge ist erreicht'    # 38 Zeichen
+      - 'Kristalle fallen bereits aus'            # 30 Zeichen
+      - 'Das Lösungsmittel ist verdampft'         # 33 Zeichen
+      - 'Die Lösung befindet sich im Gleichgewicht' # 43 Zeichen
+    correct: [0]
+
+  - question: 'In welcher Einheit wird Molarität angegeben?'
+    options:
+      - 'In Gramm pro hundert Milliliter'         # 35 Zeichen
+      - 'In Mol pro Liter Lösung'                 # 27 Zeichen ← KORREKT (B)
+      - 'In Prozent der Gesamtmasse'              # 28 Zeichen
+      - 'In Kilogramm pro Kubikmeter'             # 29 Zeichen
+      - 'In Teilchen pro Milliliter'              # 28 Zeichen
     correct: [1]
 
-  - question: 'Welche Formel beschreibt die Molarität?'
+  - question: 'Was beeinflusst die Löslichkeit eines Stoffes?'
     options:
-      - 'c = m/V'
-      - 'c = n/V'
-      - 'c = V/n'
-      - 'c = m/M'
-      - 'c = n × V'
-    correct: [1]
+      - 'Nur die Farbe des Lösungsmittels'        # 34 Zeichen
+      - 'Ausschließlich der Luftdruck'            # 30 Zeichen
+      - 'Unter anderem die Temperatur'            # 30 Zeichen ← KORREKT (C)
+      - 'Lediglich das Gefäßmaterial'             # 29 Zeichen
+      - 'Nur die Form des Behälters'              # 28 Zeichen
+    correct: [2]
+
+  - question: 'Was ist der gelöste Stoff in Salzwasser?'
+    options:
+      - 'Das flüssige Wasser im Gemisch'          # 32 Zeichen
+      - 'Der Wasserdampf über der Lösung'         # 33 Zeichen
+      - 'Die Luft die sich im Wasser löst'        # 34 Zeichen
+      - 'Das Natriumchlorid im Wasser'            # 30 Zeichen ← KORREKT (D)
+      - 'Die Wasserstoffbrückenbindungen'         # 33 Zeichen
+    correct: [3]
 
   - question: 'Was ist eine übersättigte Lösung?'
     options:
-      - 'Eine Lösung mit weniger Stoff als die Sättigung erlaubt'
-      - 'Eine Lösung mit mehr gelöstem Stoff als normal möglich'
-      - 'Eine Lösung bei Raumtemperatur'
-      - 'Eine neutrale Lösung'
-      - 'Eine Lösung ohne Elektrolyte'
-    correct: [1]
-
-  - question: 'Was gibt die Löslichkeit an?'
-    options:
-      - 'Die Geschwindigkeit des Lösens'
-      - 'Die maximale Menge, die sich in einem Lösungsmittel löst'
-      - 'Die Farbe der Lösung'
-      - 'Den pH-Wert der Lösung'
-      - 'Die Dichte der Lösung'
-    correct: [1]
-
-  - question: 'Welches Symbol steht für Molarität?'
-    options:
-      - 'm'
-      - 'c oder M'
-      - 'n'
-      - 'w'
-      - 'ρ'
-    correct: [1]
+      - 'Eine Lösung ohne gelösten Stoff'         # 33 Zeichen
+      - 'Ein Gemisch das noch Stoff aufnimmt'     # 37 Zeichen
+      - 'Eine verdünnte wässrige Lösung'          # 32 Zeichen
+      - 'Ein System im thermischen Gleichgewicht' # 41 Zeichen
+      - 'Mehr gelöst als eigentlich möglich'      # 36 Zeichen ← KORREKT (E)
+    correct: [4]

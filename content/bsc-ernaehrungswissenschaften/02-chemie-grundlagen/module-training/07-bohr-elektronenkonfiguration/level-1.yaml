@@ -1,95 +1,94 @@
-# Kapitel 7: Bohr-Modell & Elektronenkonfigurationen
-# Level 1: Grundlagen
-
 topic: 'Bohr-Modell & Elektronenkonfigurationen'
 level: 1
 questions:
-  - question: 'Was besagt das Bohr-Modell des Atoms?'
-    options:
-      - 'Elektronen befinden sich überall im Atom'
-      - 'Elektronen bewegen sich auf festen Bahnen um den Kern'
-      - 'Elektronen haben keine Energie'
-      - 'Alle Atome sind gleich groß'
-      - 'Der Kern enthält Elektronen'
-    correct: [1]
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
 
-  - question: 'Was ist ein Orbital?'
+  - question: 'Was besagt das Bohrsche Atommodell?'
     options:
-      - 'Die exakte Bahn eines Elektrons'
-      - 'Ein Bereich mit hoher Aufenthaltswahrscheinlichkeit für Elektronen'
-      - 'Der Atomkern'
-      - 'Eine chemische Bindung'
-      - 'Ein Neutron'
-    correct: [1]
-
-  - question: 'Wie viele Elektronen passen maximal in die erste Schale (K)?'
-    options:
-      - '1'
-      - '2'
-      - '8'
-      - '18'
-      - '32'
-    correct: [1]
-
-  - question: 'Welche Hauptquantenzahl hat die dritte Schale?'
-    options:
-      - 'n = 1'
-      - 'n = 2'
-      - 'n = 3'
-      - 'n = 4'
-      - 'n = 5'
-    correct: [2]
+      - 'Elektronen kreisen auf festen Bahnen'    # 38 Zeichen ← KORREKT (A)
+      - 'Der Atomkern besteht nur aus Protonen'   # 39 Zeichen
+      - 'Alle Teilchen bewegen sich zufällig'     # 37 Zeichen
+      - 'Neutronen umkreisen den Atomkern'        # 34 Zeichen
+      - 'Atome sind massiv und unteilbar'         # 33 Zeichen
+    correct: [0]
 
   - question: 'Was sind Valenzelektronen?'
     options:
-      - 'Elektronen im Atomkern'
-      - 'Elektronen in der äußersten Schale'
-      - 'Elektronen in der innersten Schale'
-      - 'Gepaarte Elektronen'
-      - 'Negativ geladene Protonen'
+      - 'Die Teilchen im innersten Energieniveau' # 41 Zeichen
+      - 'Die Elektronen der äußersten Schale'     # 37 Zeichen ← KORREKT (B)
+      - 'Alle negativ geladenen Kernteilchen'     # 37 Zeichen
+      - 'Die Protonen in der Elektronenhülle'     # 37 Zeichen
+      - 'Die Neutronen zwischen den Schalen'      # 36 Zeichen
     correct: [1]
 
-  - question: 'Welche Orbitale gibt es in der zweiten Schale?'
+  - question: 'Wie viele Elektronen fasst die erste Schale maximal?'
     options:
-      - 'Nur s-Orbitale'
-      - 's- und p-Orbitale'
-      - 's-, p- und d-Orbitale'
-      - 's-, p-, d- und f-Orbitale'
-      - 'Keine Orbitale'
-    correct: [1]
-
-  - question: 'Wie viele Elektronen passen in ein p-Orbital?'
-    options:
-      - '1'
-      - '2'
-      - '6'
-      - '8'
-      - '10'
-    correct: [1]
-
-  - question: 'Wie viele p-Orbitale gibt es pro Unterschale?'
-    options:
-      - '1'
-      - '2'
-      - '3'
-      - '5'
-      - '7'
+      - 'Bis zu acht negative Ladungsträger'      # 36 Zeichen
+      - 'Maximal achtzehn Hüllelektronen'         # 33 Zeichen
+      - 'Höchstens zwei negative Teilchen'        # 34 Zeichen ← KORREKT (C)
+      - 'Genau sechs Valenzelektronen'            # 30 Zeichen
+      - 'Mindestens vier Ladungsträger'           # 31 Zeichen
     correct: [2]
+
+  - question: 'Was besagt die Hundsche Regel?'
+    options:
+      - 'Orbitale werden paarweise besetzt'       # 35 Zeichen
+      - 'Elektronen füllen die höchsten zuerst'   # 39 Zeichen
+      - 'Alle Elektronen haben gleichen Spin'     # 37 Zeichen
+      - 'Erst alle einfach, dann doppelt besetzen' # 41 Zeichen ← KORREKT (D)
+      - 'Kernladung bestimmt die Schalenanzahl'   # 39 Zeichen
+    correct: [3]
+
+  - question: 'Was gibt die Hauptquantenzahl n an?'
+    options:
+      - 'Die Form des jeweiligen Orbitals'        # 34 Zeichen
+      - 'Die magnetische Orientierung im Raum'    # 38 Zeichen
+      - 'Die Drehrichtung des Elektrons'          # 32 Zeichen
+      - 'Die Anzahl der Protonen im Kern'         # 33 Zeichen
+      - 'Die Schale und das Energieniveau'        # 34 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Welches Orbital wird bei Kohlenstoff zuerst gefüllt?'
+    options:
+      - 'Das kugelförmige 1s-Orbital zuerst'      # 36 Zeichen ← KORREKT (A)
+      - 'Eines der hantelförmigen 2p-Orbitale'    # 38 Zeichen
+      - 'Das energiereiche 3d-Orbital'            # 30 Zeichen
+      - 'Ein 4f-Orbital der vierten Schale'       # 35 Zeichen
+      - 'Das 2s-Orbital vor allen anderen'        # 34 Zeichen
+    correct: [0]
 
   - question: 'Was besagt das Pauli-Prinzip?'
     options:
-      - 'Elektronen füllen niedrigste Energie zuerst'
-      - 'Ein Orbital enthält maximal 2 Elektronen mit entgegengesetztem Spin'
-      - 'Elektronen besetzen erst einzeln, dann gepaart'
-      - 'Alle Elektronen haben den gleichen Spin'
-      - 'Orbitale haben unendlich Platz'
+      - 'Jede Schale fasst unbegrenzt Elektronen' # 41 Zeichen
+      - 'Maximal zwei Elektronen pro Orbital'     # 37 Zeichen ← KORREKT (B)
+      - 'Alle Orbitale haben die gleiche Energie' # 41 Zeichen
+      - 'Elektronen stoßen sich niemals ab'       # 35 Zeichen
+      - 'Der Spin ist für alle Teilchen gleich'   # 39 Zeichen
     correct: [1]
 
-  - question: 'Was ist die Elektronenkonfiguration von Helium?'
+  - question: 'Wie ist ein s-Orbital räumlich geformt?'
     options:
-      - '1s¹'
-      - '1s²'
-      - '2s²'
-      - '1s² 2s²'
-      - '1p²'
-    correct: [1]
+      - 'Es hat eine hantelförmige Gestalt'       # 35 Zeichen
+      - 'Es zeigt eine kleeblattartige Form'      # 36 Zeichen
+      - 'Es ist kugelförmig und symmetrisch'      # 36 Zeichen ← KORREKT (C)
+      - 'Es hat eine ringförmige Struktur'        # 34 Zeichen
+      - 'Es ist kegelförmig nach außen'           # 31 Zeichen
+    correct: [2]
+
+  - question: 'Wie viele p-Orbitale existieren pro Energieniveau?'
+    options:
+      - 'Nur ein einziges dieser Orbitale'        # 34 Zeichen
+      - 'Es sind insgesamt fünf vorhanden'        # 34 Zeichen
+      - 'Sieben dieser Orbitale existieren'       # 35 Zeichen
+      - 'Genau drei auf jedem Energieniveau'      # 36 Zeichen ← KORREKT (D)
+      - 'Die Anzahl variiert je nach Niveau'      # 38 Zeichen
+    correct: [3]
+
+  - question: 'Was bedeutet die Elektronenkonfiguration 1s²2s²?'
+    options:
+      - 'Zwei volle Schalen mit je acht Teilchen' # 41 Zeichen
+      - 'Insgesamt sechs Elektronen im Atom'      # 38 Zeichen
+      - 'Ein Atom mit einer unvollständigen Schale' # 43 Zeichen
+      - 'Die Anordnung eines radioaktiven Isotops'  # 42 Zeichen
+      - 'Vier Elektronen in zwei Orbitalen'       # 37 Zeichen ← KORREKT (E)
+    correct: [4]

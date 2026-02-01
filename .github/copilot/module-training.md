@@ -2,6 +2,61 @@
 
 Erstellung von Modul-Trainings-Fragen und praktischen Übungen (Casual Training Mode).
 
+## ⚠️ KRITISCHE QUALITÄTSREGELN – VOR JEDER FRAGE BEACHTEN!
+
+Diese Regeln sind **ABSOLUT VERBINDLICH**. Fragen, die diese Regeln verletzen, sind unbrauchbar.
+
+### 🚨 HÄUFIGSTES PROBLEM: Längste Antwort ist korrekt!
+
+Die KI tendiert dazu, korrekte Antworten ausführlicher zu formulieren. Das ist **INAKZEPTABEL**!
+
+**LÖSUNG: Schreibe ERST die korrekte Antwort (kurz!), dann verlängere die falschen Antworten.**
+
+| Regel                              | Umsetzung                                                         |
+| ---------------------------------- | ----------------------------------------------------------------- |
+| **Korrekte Antwort NICHT längste** | Korrekte: 30-40 Zeichen. Falsche: 35-50 Zeichen.                  |
+| **Alle Optionen ähnlich lang**     | Max. 15 Zeichen Unterschied zwischen kürzester und längster       |
+| **Position variieren**             | Pro 10 Fragen: A=2, B=2, C=2, D=2, E=2 korrekte Antworten         |
+| **Keine Keywords wiederholen**     | Frage-Begriff "Atom" → Antwort: "kleinste Einheit" (NICHT "Atom") |
+
+### 📋 SELBST-PRÜFUNG VOR SPEICHERN (PFLICHT!)
+
+Für **JEDE** der 10 Fragen diese Checkliste durchgehen:
+
+```text
+□ Ist die korrekte Antwort die längste? → FALSCHE VERLÄNGERN!
+□ Sind alle 5 Optionen 35-50 Zeichen lang?
+□ Kommt ein Hauptwort der Frage in der korrekten Antwort vor? → UMSCHREIBEN!
+□ Position der korrekten Antwort notiert? (Ziel: 2× pro Position A-E)
+□ Absolute Begriffe ("immer", "niemals", "alle") gleichmäßig verteilt?
+```
+
+### 🎯 BEISPIEL: So geht's RICHTIG
+
+```yaml
+# ❌ FALSCH: Korrekte Antwort ist viel länger
+- question: 'Was ist ein Ion?'
+  options:
+    - 'Ein neutrales Atom'                                    # 18 Zeichen
+    - 'Ein Molekül'                                           # 11 Zeichen
+    - 'Ein Atom mit elektrischer Ladung durch Elektronenabgabe oder -aufnahme'  # 70 Zeichen ← KORREKT
+    - 'Ein Element'                                           # 11 Zeichen
+    - 'Ein Proton'                                            # 10 Zeichen
+  correct: [2]
+
+# ✅ RICHTIG: Alle Optionen ähnlich lang, korrekte ist NICHT die längste
+- question: 'Was ist ein Ion?'
+  options:
+    - 'Ein Atom ohne jegliche Kernveränderung'                # 38 Zeichen
+    - 'Ein elektrisch geladenes Teilchen'                     # 35 Zeichen ← KORREKT
+    - 'Ein zusammengesetztes Molekülgebilde'                  # 38 Zeichen
+    - 'Eine chemische Verbindung aus Metallen'                # 40 Zeichen
+    - 'Ein stabiles Edelgas-Konfigurationsteil'               # 41 Zeichen
+  correct: [1]  # Position B (nicht immer A oder C!)
+```
+
+---
+
 ## Übersicht
 
 Training-Inhalte sind **unabhängig** von Vorlesungs-Nummern und nach **Themengebieten** organisiert.

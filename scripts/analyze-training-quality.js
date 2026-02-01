@@ -10,10 +10,27 @@
  * - Plausibilität: Falsche Antworten müssen plausibel sein
  * - Formulierungshinweise: Keine verräterischen Wörter
  * - Negativ-Fragen: Keine "nicht" oder "NICHT" Fragen
+ *
+ * Verwendung:
+ *   node scripts/analyze-training-quality.js          # Alle Level
+ *   node scripts/analyze-training-quality.js --level 1  # Nur Level 1
+ *   node scripts/analyze-training-quality.js --level 1,2  # Level 1 und 2
  */
 
 const fs = require('fs');
 const path = require('path');
+
+// Parse command line arguments
+const args = process.argv.slice(2);
+let levelFilter = null;
+
+const levelArgIndex = args.indexOf('--level');
+if (levelArgIndex !== -1 && args[levelArgIndex + 1]) {
+  levelFilter = args[levelArgIndex + 1]
+    .split(',')
+    .map((l) => parseInt(l.trim(), 10));
+  console.log(`\n📌 Filter: Nur Level ${levelFilter.join(', ')}\n`);
+}
 
 const trainingDir = path.join(
   __dirname,
@@ -634,11 +651,23 @@ console.log(`Gefundene Kapitel: ${chapters.length}`);
 
 chapters.forEach((chapter) => {
   const chapterPath = path.join(trainingDir, chapter);
-  const files = fs
+  let files = fs
     .readdirSync(chapterPath)
     .filter(
       (f) => (f.endsWith('.yaml') || f.endsWith('.md')) && f.startsWith('level')
     );
+
+  // Apply level filter if specified
+  if (levelFilter) {
+    files = files.filter((f) => {
+      const match = f.match(/level-(\d+)/);
+      if (match) {
+        const fileLevel = parseInt(match[1], 10);
+        return levelFilter.includes(fileLevel);
+      }
+      return false;
+    });
+  }
 
   files.forEach((file) => {
     const filePath = path.join(chapterPath, file);

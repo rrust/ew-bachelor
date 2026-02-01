@@ -1,95 +1,94 @@
-# Kapitel 6: Säuren & Basen (Grundlagen)
-# Level 1: Grundlagen
-
 topic: 'Säuren & Basen (Grundlagen)'
 level: 1
 questions:
-  - question: 'Was ist eine Säure nach Arrhenius?'
-    options:
-      - 'Ein Stoff, der OH⁻-Ionen abgibt'
-      - 'Ein Stoff, der H⁺-Ionen in Wasser freisetzt'
-      - 'Ein Stoff mit pH > 7'
-      - 'Ein Elektronenpaar-Akzeptor'
-      - 'Ein Stoff ohne Ladung'
-    correct: [1]
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
 
-  - question: 'Was ist eine Base nach Arrhenius?'
+  - question: 'Was gibt eine Säure nach Arrhenius ab?'
     options:
-      - 'Ein Stoff, der H⁺-Ionen abgibt'
-      - 'Ein Stoff, der OH⁻-Ionen in Wasser freisetzt'
-      - 'Ein Stoff mit pH < 7'
-      - 'Ein Elektronenpaar-Donor'
-      - 'Ein neutraler Stoff'
-    correct: [1]
+      - 'Wasserstoff-Ionen in wässriger Lösung'   # 39 Zeichen ← KORREKT (A)
+      - 'Hydroxid-Ionen beim Auflösen'            # 32 Zeichen
+      - 'Elektronen an das Lösungsmittel'         # 33 Zeichen
+      - 'Neutronen aus dem Atomkern'              # 28 Zeichen
+      - 'Sauerstoffatome an die Umgebung'         # 33 Zeichen
+    correct: [0]
 
   - question: 'Was entsteht bei einer Neutralisation?'
     options:
-      - 'Nur Wasser'
-      - 'Salz und Wasser'
-      - 'Nur ein Salz'
-      - 'Eine Säure'
-      - 'Eine Base'
+      - 'Eine starke Säure und ein Metall'        # 34 Zeichen
+      - 'Wasser und ein Salz als Produkte'        # 34 Zeichen ← KORREKT (B)
+      - 'Ein Edelgas und freie Elektronen'        # 34 Zeichen
+      - 'Eine Base und ein Metalloxid'            # 30 Zeichen
+      - 'Wasserstoffgas und Sauerstoff'           # 31 Zeichen
     correct: [1]
 
-  - question: 'Was ist eine starke Säure?'
+  - question: 'Was ist charakteristisch für starke Säuren?'
     options:
-      - 'Eine Säure mit hoher Konzentration'
-      - 'Eine Säure, die vollständig dissoziiert'
-      - 'Eine Säure mit niedrigem pH'
-      - 'Eine Säure mit vielen Atomen'
-      - 'Eine Säure, die langsam reagiert'
-    correct: [1]
-
-  - question: 'Welches ist eine starke Säure?'
-    options:
-      - 'Essigsäure (CH₃COOH)'
-      - 'Salzsäure (HCl)'
-      - 'Kohlensäure (H₂CO₃)'
-      - 'Phosphorsäure (H₃PO₄)'
-      - 'Blausäure (HCN)'
-    correct: [1]
-
-  - question: 'Was ist eine schwache Base?'
-    options:
-      - 'Eine Base mit niedriger Konzentration'
-      - 'Eine Base, die nur teilweise dissoziiert'
-      - 'Eine Base mit hohem pH'
-      - 'Eine verdünnte Lösung'
-      - 'Eine starke Säure'
-    correct: [1]
-
-  - question: 'Was ist das Produkt von H⁺ + OH⁻?'
-    options:
-      - 'H₂'
-      - 'O₂'
-      - 'H₂O'
-      - 'H₂O₂'
-      - 'HO'
+      - 'Sie dissoziieren nur teilweise im Wasser' # 42 Zeichen
+      - 'Sie reagieren nicht mit unedlen Metallen' # 42 Zeichen
+      - 'Sie spalten vollständig in Ionen auf'     # 38 Zeichen ← KORREKT (C)
+      - 'Sie haben einen pH-Wert über sieben'      # 37 Zeichen
+      - 'Sie bilden unlösliche Niederschläge'      # 37 Zeichen
     correct: [2]
 
-  - question: 'Welchen pH-Wert hat eine neutrale Lösung bei 25°C?'
+  - question: 'Welche Ionen setzen Basen nach Arrhenius frei?'
     options:
-      - '0'
-      - '1'
-      - '7'
-      - '14'
-      - '10'
-    correct: [2]
+      - 'Positiv geladene Wasserstoffionen'       # 35 Zeichen
+      - 'Negativ geladene Chloridionen'           # 31 Zeichen
+      - 'Elektrisch neutrale Wassermoleküle'      # 36 Zeichen
+      - 'Negativ geladene Hydroxidionen'          # 32 Zeichen ← KORREKT (D)
+      - 'Positiv geladene Natriumionen'           # 31 Zeichen
+    correct: [3]
 
-  - question: 'Was ist NaOH?'
+  - question: 'Was ist ein Säure-Base-Paar?'
     options:
-      - 'Eine Säure'
-      - 'Eine starke Base'
-      - 'Ein Salz'
-      - 'Ein Puffer'
-      - 'Eine schwache Base'
-    correct: [1]
+      - 'Zwei Säuren die miteinander reagieren'   # 39 Zeichen
+      - 'Ein Salz und sein Kristallwasser'        # 34 Zeichen
+      - 'Zwei Basen in wässriger Lösung'          # 32 Zeichen
+      - 'Ein Metall und sein Oxid zusammen'       # 35 Zeichen
+      - 'Teilchen die sich durch H⁺ unterscheiden' # 41 Zeichen ← KORREKT (E)
+    correct: [4]
 
-  - question: 'Was ist das konjugierte Säure-Base-Paar zu HCl/Cl⁻?'
+  - question: 'Welche Substanz ist eine typische starke Base?'
     options:
-      - 'HCl ist die Säure, Cl⁻ die konjugierte Base'
-      - 'Cl⁻ ist die Säure, HCl die Base'
-      - 'Beide sind Säuren'
-      - 'Beide sind Basen'
-      - 'Es gibt kein Paar'
+      - 'Natriumhydroxid in wässriger Lösung'     # 37 Zeichen ← KORREKT (A)
+      - 'Kohlensäure in Mineralwasser'            # 30 Zeichen
+      - 'Essigsäure in Haushaltsessig'            # 30 Zeichen
+      - 'Ammoniak als schwache Verbindung'        # 34 Zeichen
+      - 'Schwefelsäure als starke Säure'          # 32 Zeichen
     correct: [0]
+
+  - question: 'Was bedeutet der Begriff Dissoziation bei Säuren?'
+    options:
+      - 'Die Verdampfung bei hoher Temperatur'    # 38 Zeichen
+      - 'Die Aufspaltung in geladene Teilchen'    # 38 Zeichen ← KORREKT (B)
+      - 'Die Kristallisation aus der Lösung'      # 36 Zeichen
+      - 'Die Verbindung mit Metallionen'          # 32 Zeichen
+      - 'Die Reaktion mit Sauerstoff'             # 29 Zeichen
+    correct: [1]
+
+  - question: 'Was kennzeichnet schwache Säuren?'
+    options:
+      - 'Sie lösen sich gar nicht in Wasser auf'  # 40 Zeichen
+      - 'Sie haben keine chemische Wirkung'       # 35 Zeichen
+      - 'Sie dissoziieren nur zum Teil'           # 31 Zeichen ← KORREKT (C)
+      - 'Sie enthalten keine Wasserstoffatome'    # 40 Zeichen
+      - 'Sie reagieren nur mit edlen Metallen'    # 38 Zeichen
+    correct: [2]
+
+  - question: 'Welche Reaktion findet bei HCl in Wasser statt?'
+    options:
+      - 'Es bildet sich ein unlösliches Salz'     # 37 Zeichen
+      - 'Das Wasser verdampft vollständig'        # 34 Zeichen
+      - 'Wasserstoff entweicht als Gas'           # 31 Zeichen
+      - 'Es entstehen H⁺ und Cl⁻ Ionen'           # 31 Zeichen ← KORREKT (D)
+      - 'Das Chlor oxidiert den Sauerstoff'       # 35 Zeichen
+    correct: [3]
+
+  - question: 'Welche Farbe zeigt Lackmus in saurer Lösung?'
+    options:
+      - 'Der Indikator färbt sich grün'           # 33 Zeichen
+      - 'Der Farbstoff wird farblos transparent'  # 40 Zeichen
+      - 'Die Lösung erscheint gelb bis orange'    # 38 Zeichen
+      - 'Das Lackmus bleibt unverändert violett'  # 40 Zeichen
+      - 'Die Farbe wechselt zu rot'               # 27 Zeichen ← KORREKT (E)
+    correct: [4]

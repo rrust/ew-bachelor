@@ -1,95 +1,94 @@
-# Kapitel 4: Chemische Reaktionen & Empirische Formeln
-# Level 1: Grundlagen (Wissen)
-
 topic: 'Chemische Reaktionen & Empirische Formeln'
 level: 1
 questions:
-  - question: 'Was ist eine Synthese-Reaktion?'
-    options:
-      - 'Eine Reaktion, bei der ein Stoff zerfällt'
-      - 'Eine Reaktion, bei der mehrere Stoffe zu einem werden'
-      - 'Eine Reaktion mit Sauerstoff'
-      - 'Eine Reaktion in wässriger Lösung'
-      - 'Eine Reaktion mit Katalysator'
-    correct: [1]
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
 
-  - question: 'Was zeigt die empirische Formel?'
+  - question: 'Was passiert bei einer Synthesereaktion?'
     options:
-      - 'Die tatsächliche Anzahl der Atome im Molekül'
-      - 'Das kleinste ganzzahlige Verhältnis der Atome'
-      - 'Die Masse des Moleküls'
-      - 'Die räumliche Struktur'
-      - 'Die Reaktionsgeschwindigkeit'
-    correct: [1]
-
-  - question: 'Was ist eine Zersetzungsreaktion?'
-    options:
-      - 'Ein Stoff zerfällt in mehrere einfachere Stoffe'
-      - 'Zwei Stoffe verbinden sich zu einem'
-      - 'Atome werden zwischen Molekülen ausgetauscht'
-      - 'Ein Metall verdrängt ein anderes'
-      - 'Säure und Base neutralisieren sich'
+      - 'Mehrere Stoffe bilden einen neuen'       # 35 Zeichen ← KORREKT (A)
+      - 'Ein Stoff zerfällt in Bestandteile'      # 36 Zeichen
+      - 'Ionen tauschen ihre Bindungspartner'     # 37 Zeichen
+      - 'Elektronen werden übertragen'            # 30 Zeichen
+      - 'Atome werden radioaktiv zerstört'        # 34 Zeichen
     correct: [0]
 
-  - question: 'Welche Formel ist eine Summenformel (Molekülformel)?'
+  - question: 'Was zeigt die empirische Formel einer Verbindung?'
     options:
-      - 'CH₂O'
-      - 'C₆H₁₂O₆'
-      - 'NaCl'
-      - 'HO'
-      - 'CH'
+      - 'Die exakte Anzahl aller Atome im Molekül'  # 42 Zeichen
+      - 'Das einfachste ganzzahlige Atomverhältnis' # 41 Zeichen ← KORREKT (B)
+      - 'Die räumliche Anordnung der Bindungen'     # 39 Zeichen
+      - 'Die elektrische Ladung der Verbindung'     # 39 Zeichen
+      - 'Die Reaktivität gegenüber Wasser'          # 34 Zeichen
     correct: [1]
 
-  - question: 'Was bedeutet "prozentuale Zusammensetzung"?'
+  - question: 'Was geschieht bei einer Zersetzungsreaktion?'
     options:
-      - 'Der Massenanteil jedes Elements in einer Verbindung'
-      - 'Die Anzahl der Atome pro Molekül'
-      - 'Das Volumenverhältnis der Gase'
-      - 'Die Dichte der Substanz'
-      - 'Die Reaktionsausbeute'
+      - 'Zwei Elemente verbinden sich zu einem'   # 39 Zeichen
+      - 'Ionen wandern zu den Elektroden'         # 33 Zeichen
+      - 'Ein Stoff zerfällt in Einzelteile'       # 35 Zeichen ← KORREKT (C)
+      - 'Metalle lösen sich in Säuren auf'        # 34 Zeichen
+      - 'Gase reagieren zu einer Flüssigkeit'     # 37 Zeichen
+    correct: [2]
+
+  - question: 'Was versteht man unter Massenanteil?'
+    options:
+      - 'Die Anzahl der Atome in einem Mol'       # 35 Zeichen
+      - 'Die Ladung eines bestimmten Ions'        # 34 Zeichen
+      - 'Die Bindungsenergie pro Molekül'         # 33 Zeichen
+      - 'Prozent eines Elements in der Masse'     # 37 Zeichen ← KORREKT (D)
+      - 'Die Dichte einer reinen Substanz'        # 34 Zeichen
+    correct: [3]
+
+  - question: 'Was ist eine Austauschreaktion?'
+    options:
+      - 'Eine Reaktion die Energie freisetzt'     # 37 Zeichen
+      - 'Eine Verbrennung mit Sauerstoff'         # 33 Zeichen
+      - 'Eine Neutralisation von Säure und Base'  # 40 Zeichen
+      - 'Eine Reaktion ohne Katalysatorbeteiligung' # 41 Zeichen
+      - 'Ein Partnertausch zwischen Verbindungen' # 41 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Welcher Reaktionstyp liegt vor wenn Eisen rostet?'
+    options:
+      - 'Eine Verbindung mit Luftsauerstoff'      # 36 Zeichen ← KORREKT (A)
+      - 'Eine Zerlegung in die Grundstoffe'       # 35 Zeichen
+      - 'Ein Austausch von Bindungspartnern'      # 36 Zeichen
+      - 'Eine Neutralisation mit Wasser'          # 32 Zeichen
+      - 'Eine Spaltung durch Elektrizität'        # 34 Zeichen
     correct: [0]
 
-  - question: 'Was ist eine Verdrängungsreaktion?'
+  - question: 'Was unterscheidet Molekül- von Verhältnisformel?'
     options:
-      - 'Ein reaktiveres Element ersetzt ein weniger reaktives'
-      - 'Zwei Elemente verbinden sich'
-      - 'Ein Stoff zerfällt in Elemente'
-      - 'Wasser wird gebildet'
-      - 'Gase entweichen aus einer Lösung'
-    correct: [0]
-
-  - question: 'Welche Reaktion ist eine Verbrennung?'
-    options:
-      - 'NaCl → Na + Cl₂'
-      - 'CH₄ + O₂ → CO₂ + H₂O'
-      - 'Zn + Cu²⁺ → Zn²⁺ + Cu'
-      - 'H₂O → H₂ + O₂'
-      - 'NaOH + HCl → NaCl + H₂O'
+      - 'Nur die Schreibweise mit Klammern'       # 35 Zeichen
+      - 'Tatsächliche versus minimale Atomzahl'   # 41 Zeichen ← KORREKT (B)
+      - 'Die Angabe der Aggregatzustände'         # 33 Zeichen
+      - 'Die Darstellung der Bindungswinkel'      # 36 Zeichen
+      - 'Lediglich die verwendeten Symbole'       # 35 Zeichen
     correct: [1]
 
-  - question: 'Was ist eine Austauschreaktion (Doppelte Umsetzung)?'
+  - question: 'Wie ermittelt man die empirische Formel experimentell?'
     options:
-      - 'Zwei Verbindungen tauschen ihre Partner aus'
-      - 'Ein Element ersetzt ein anderes'
-      - 'Ein Stoff verbrennt'
-      - 'Ein Stoff zerfällt'
-      - 'Zwei Elemente verbinden sich'
-    correct: [0]
+      - 'Durch Messung des Schmelzpunktes'        # 34 Zeichen
+      - 'Durch Bestimmung der Kristallform'       # 35 Zeichen
+      - 'Durch Elementaranalyse der Substanz'     # 37 Zeichen ← KORREKT (C)
+      - 'Durch Berechnung der Bindungsenergie'    # 38 Zeichen
+      - 'Durch Messung der elektrischen Leitfähigkeit' # 44 Zeichen
+    correct: [2]
 
-  - question: 'Welche empirische Formel hat Glucose (C₆H₁₂O₆)?'
+  - question: 'Was ist charakteristisch für Verbrennungsreaktionen?'
     options:
-      - 'C₆H₁₂O₆'
-      - 'CH₂O'
-      - 'CHO'
-      - 'C₃H₆O₃'
-      - 'C₂H₄O₂'
-    correct: [1]
+      - 'Sie verlaufen immer ohne Lichterscheinung' # 41 Zeichen
+      - 'Sie benötigen keine Aktivierungsenergie'   # 41 Zeichen
+      - 'Sie laufen nur bei tiefen Temperaturen ab' # 42 Zeichen
+      - 'Es findet Reaktion mit Sauerstoff statt'   # 41 Zeichen ← KORREKT (D)
+      - 'Sie sind vollständig reversibel'           # 33 Zeichen
+    correct: [3]
 
-  - question: 'Was ist eine exotherme Reaktion?'
+  - question: 'Was bedeutet C₆H₁₂O₆ für Glucose?'
     options:
-      - 'Eine Reaktion, die Wärme aufnimmt'
-      - 'Eine Reaktion, die Wärme abgibt'
-      - 'Eine Reaktion ohne Energieänderung'
-      - 'Eine Reaktion mit Katalysator'
-      - 'Eine Reaktion im Gleichgewicht'
-    correct: [1]
+      - 'Die räumliche Struktur des Zuckers'      # 36 Zeichen
+      - 'Die Löslichkeit in verschiedenen Medien' # 41 Zeichen
+      - 'Die Schmelz- und Siedetemperatur'        # 34 Zeichen
+      - 'Die Reaktivität mit anderen Stoffen'     # 37 Zeichen
+      - 'Die tatsächliche Atomzahl im Molekül'    # 38 Zeichen ← KORREKT (E)
+    correct: [4]

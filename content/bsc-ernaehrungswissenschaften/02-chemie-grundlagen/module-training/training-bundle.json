@@ -8,7 +8,7 @@
   "questionsPerLevel": 10,
   "levels": 5,
   "version": "1.0.0",
-  "generatedAt": "2026-01-31T10:38:26.215Z",
+  "generatedAt": "2026-02-01T17:16:54.934Z",
   "topics": [
     {
       "id": "01-aufbau-atome-periodensystem",
@@ -17,182 +17,182 @@
         "1": [
           {
             "id": "01-aufbau-atome-periodensystem:1:0",
-            "question": "Aus welchen drei Teilchenarten besteht ein Atom?",
+            "question": "Welche Teilchen befinden sich im Atomkern?",
             "options": [
-              "Aus Photonen, Neutronen und Elektronen",
-              "Aus Protonen, Neutronen und Elektronen",
-              "Aus Positronen, Neutronen und Protonen",
-              "Aus Quarks, Leptonen und Bosonen",
-              "Aus Molekülen, Ionen und Radikalen"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Aus Protonen, Neutronen und Elektronen"
-            ]
-          },
-          {
-            "id": "01-aufbau-atome-periodensystem:1:1",
-            "question": "Wo befinden sich die positiv geladenen Kernteilchen?",
-            "options": [
-              "In der äußersten Schale der Hülle",
-              "Gleichmäßig im Teilchen verteilt",
-              "Im Zentrum zusammen mit Neutronen",
-              "Zwischen Zentrum und Elektronenhülle",
-              "Außerhalb der Elektronenwolke"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              2
-            ],
-            "correctAnswers": [
-              "Im Zentrum zusammen mit Neutronen"
-            ]
-          },
-          {
-            "id": "01-aufbau-atome-periodensystem:1:2",
-            "question": "Was beschreibt die Kernladungszahl eines Elements?",
-            "options": [
-              "Die Menge der Neutronen im Zentrum",
-              "Die Gesamtmasse in atomaren Einheiten",
-              "Die Summe aller subatomaren Teilchen",
-              "Die Menge positiver Kernteilchen",
-              "Die Anzahl der besetzten Schalen"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              3
-            ],
-            "correctAnswers": [
-              "Die Menge positiver Kernteilchen"
-            ]
-          },
-          {
-            "id": "01-aufbau-atome-periodensystem:1:3",
-            "question": "Welche elektrische Eigenschaft haben Elektronen?",
-            "options": [
-              "Sie tragen eine positive Ladung",
-              "Sie sind elektrisch vollkommen neutral",
-              "Ihre Ladung variiert je nach Element",
-              "Sie wechseln ständig ihre Polarität",
-              "Sie tragen eine negative Ladung"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              4
-            ],
-            "correctAnswers": [
-              "Sie tragen eine negative Ladung"
-            ]
-          },
-          {
-            "id": "01-aufbau-atome-periodensystem:1:4",
-            "question": "Was kennzeichnet Isotope eines Elements?",
-            "options": [
-              "Gleiche Protonenzahl, andere Neutronenzahl",
-              "Gleiche Neutronenzahl, andere Protonenzahl",
-              "Verschiedene Anzahl an Hüllelektronen",
-              "Unterschiedliche chemische Reaktivität",
-              "Abweichende Anzahl an Energieniveaus"
+              "Protonen und Neutronen gemeinsam",
+              "Ausschließlich die negativen Elektronen",
+              "Nur die elektrisch neutralen Teilchen",
+              "Elektronen und Photonen zusammen",
+              "Alle subatomaren Partikel gemischt"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Gleiche Protonenzahl, andere Neutronenzahl"
+              "Protonen und Neutronen gemeinsam"
             ]
           },
           {
-            "id": "01-aufbau-atome-periodensystem:1:5",
-            "question": "Wie viele Perioden enthält das Periodensystem?",
+            "id": "01-aufbau-atome-periodensystem:1:1",
+            "question": "Was gibt die Ordnungszahl eines Elements an?",
             "options": [
-              "Es umfasst insgesamt fünf Stufen",
-              "Es umfasst insgesamt sieben Stufen",
-              "Es umfasst insgesamt sechs Stufen",
-              "Es umfasst insgesamt acht Stufen",
-              "Es umfasst insgesamt neun Stufen"
+              "Die Gesamtmasse aller Kernbausteine",
+              "Die Anzahl positiver Kernbausteine",
+              "Die Summe von Kern- und Hüllteilchen",
+              "Die Zahl der neutralen Kernteilchen",
+              "Den prozentualen Anteil im Universum"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Es umfasst insgesamt sieben Stufen"
+              "Die Anzahl positiver Kernbausteine"
             ]
           },
           {
-            "id": "01-aufbau-atome-periodensystem:1:6",
-            "question": "Wo findet man Natrium und Kalium im Periodensystem?",
+            "id": "01-aufbau-atome-periodensystem:1:2",
+            "question": "Was unterscheidet Isotope eines Elements?",
             "options": [
-              "Bei den Halogenen ganz rechts",
-              "Bei den Edelgasen am Rand",
-              "Bei den Alkalien ganz links",
-              "Bei den Erdalkalien daneben",
-              "Bei den d-Block-Elementen mittig"
+              "Die Anzahl der positiven Ladungsträger",
+              "Die chemischen Reaktionseigenschaften",
+              "Die Anzahl der neutralen Kernteilchen",
+              "Die Position in der Elementanordnung",
+              "Die Anzahl der negativen Hüllteilchen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "Bei den Alkalien ganz links"
+              "Die Anzahl der neutralen Kernteilchen"
+            ]
+          },
+          {
+            "id": "01-aufbau-atome-periodensystem:1:3",
+            "question": "Was bezeichnet man als Massenzahl?",
+            "options": [
+              "Die Anzahl der Hüllenelektronen",
+              "Das Gewicht in Gramm pro Teilchen",
+              "Die Nummer der horizontalen Reihe",
+              "Summe aus Protonen und Neutronen",
+              "Die relative Häufigkeit auf der Erde"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Summe aus Protonen und Neutronen"
+            ]
+          },
+          {
+            "id": "01-aufbau-atome-periodensystem:1:4",
+            "question": "Wie sind die Elemente im Periodensystem angeordnet?",
+            "options": [
+              "Nach alphabetischer Reihenfolge sortiert",
+              "Nach dem Entdeckungsdatum geordnet",
+              "Nach der Häufigkeit auf der Erde",
+              "Nach der Dichte der reinen Substanz",
+              "Nach steigender Kernladungszahl"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Nach steigender Kernladungszahl"
+            ]
+          },
+          {
+            "id": "01-aufbau-atome-periodensystem:1:5",
+            "question": "Was kennzeichnet die Elemente einer Periode?",
+            "options": [
+              "Sie haben die gleiche Schalenanzahl",
+              "Sie zeigen identisches Reaktionsverhalten",
+              "Sie besitzen dieselbe Kernladungszahl",
+              "Sie haben die gleiche Elektronenzahl",
+              "Sie weisen identische Massenzahlen auf"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              0
+            ],
+            "correctAnswers": [
+              "Sie haben die gleiche Schalenanzahl"
+            ]
+          },
+          {
+            "id": "01-aufbau-atome-periodensystem:1:6",
+            "question": "Was haben Elemente einer Hauptgruppe gemeinsam?",
+            "options": [
+              "Die identische Anzahl an Kernbausteinen",
+              "Die gleiche Zahl an Außenelektronen",
+              "Die exakt übereinstimmende Atommasse",
+              "Den identischen Aggregatzustand",
+              "Die gleiche Anzahl an Energieniveaus"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              1
+            ],
+            "correctAnswers": [
+              "Die gleiche Zahl an Außenelektronen"
             ]
           },
           {
             "id": "01-aufbau-atome-periodensystem:1:7",
             "question": "Welche Eigenschaft ist typisch für metallische Elemente?",
             "options": [
-              "Geringe thermische Leitfähigkeit",
-              "Sprödes Verhalten unter Druck",
-              "Transparenz für Lichtstrahlen",
-              "Hohe elektrische Leitfähigkeit",
-              "Niedrige Schmelztemperaturen"
+              "Sie sind bei Raumtemperatur gasförmig",
+              "Sie leiten keinen elektrischen Strom",
+              "Sie leiten Wärme und Elektrizität gut",
+              "Sie haben sehr hohe Elektronegativität",
+              "Sie kommen nur als Verbindungen vor"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              2
+            ],
+            "correctAnswers": [
+              "Sie leiten Wärme und Elektrizität gut"
+            ]
+          },
+          {
+            "id": "01-aufbau-atome-periodensystem:1:8",
+            "question": "Wo befinden sich die Nichtmetalle im Periodensystem?",
+            "options": [
+              "In der ersten und zweiten Hauptgruppe",
+              "Ausschließlich in den Nebengruppen",
+              "Gleichmäßig über alle Gruppen verteilt",
+              "Im oberen rechten Bereich der Tafel",
+              "Nur in der untersten horizontalen Reihe"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               3
             ],
             "correctAnswers": [
-              "Hohe elektrische Leitfähigkeit"
+              "Im oberen rechten Bereich der Tafel"
             ]
           },
           {
-            "id": "01-aufbau-atome-periodensystem:1:8",
-            "question": "Woraus setzt sich die Nukleonenzahl zusammen?",
+            "id": "01-aufbau-atome-periodensystem:1:9",
+            "question": "Was sind Halbmetalle im Periodensystem?",
             "options": [
-              "Aus der Zahl der Hüllelektronen",
-              "Aus dem Atomgewicht in Gramm",
-              "Aus der Anzahl besetzter Schalen",
-              "Aus Elektronen- plus Protonenzahl",
-              "Aus Protonen- plus Neutronenzahl"
+              "Elemente die nur halb so schwer sind",
+              "Stoffe die ausschließlich Ionen bilden",
+              "Atome mit halbierter Elektronenzahl",
+              "Elemente die radioaktiv zerfallen",
+              "Grenzgänger zwischen Metall und Nichtmetall"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               4
             ],
             "correctAnswers": [
-              "Aus Protonen- plus Neutronenzahl"
-            ]
-          },
-          {
-            "id": "01-aufbau-atome-periodensystem:1:9",
-            "question": "Was trifft auf Halbmetalle wie Silicium zu?",
-            "options": [
-              "Sie leiten Strom temperaturabhängig",
-              "Sie sind bei Raumtemperatur gasförmig",
-              "Sie zeigen hohe Wärmeleitfähigkeit",
-              "Sie reagieren nicht mit Halogenen",
-              "Sie bilden stabile negative Ionen"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              0
-            ],
-            "correctAnswers": [
-              "Sie leiten Strom temperaturabhängig"
+              "Grenzgänger zwischen Metall und Nichtmetall"
             ]
           }
         ],
@@ -977,182 +977,182 @@
         "1": [
           {
             "id": "02-elemente-ionen-mol:1:0",
-            "question": "Was beschreibt die Avogadro-Konstante?",
+            "question": "Was entsteht wenn ein Atom Elektronen abgibt?",
             "options": [
-              "Die Masse eines einzelnen Atoms in Gramm",
-              "Die Teilchenzahl in einem Mol eines Stoffes",
-              "Die Dichte von Gasen bei Normalbedingungen",
-              "Das Volumen von einem Mol Flüssigkeit",
-              "Die Ladung eines einzelnen Elektrons"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Teilchenzahl in einem Mol eines Stoffes"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:1",
-            "question": "Welchen Wert hat die Avogadro-Konstante ungefähr?",
-            "options": [
-              "3,14 × 10²³ Teilchen pro Mol",
-              "6,02 × 10²³ Teilchen pro Mol",
-              "9,81 × 10²³ Teilchen pro Mol",
-              "1,66 × 10⁻²⁴ Teilchen pro Mol",
-              "2,99 × 10⁸ Teilchen pro Mol"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "6,02 × 10²³ Teilchen pro Mol"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:2",
-            "question": "Was ist ein Kation?",
-            "options": [
-              "Ein negativ geladenes Teilchen",
-              "Ein elektrisch neutrales Atom",
               "Ein positiv geladenes Teilchen",
-              "Ein Atomkern ohne Elektronen",
-              "Ein Molekül aus zwei Atomen"
+              "Ein negativ geladenes Molekül",
+              "Ein elektrisch neutrales Isotop",
+              "Ein radioaktives Zerfallsprodukt",
+              "Eine stabile Edelgasverbindung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              2
+              0
             ],
             "correctAnswers": [
               "Ein positiv geladenes Teilchen"
             ]
           },
           {
-            "id": "02-elemente-ionen-mol:1:3",
-            "question": "Wie entsteht ein Anion?",
+            "id": "02-elemente-ionen-mol:1:1",
+            "question": "Was ist die Avogadro-Zahl?",
             "options": [
-              "Durch Abgabe von Elektronen",
-              "Durch Aufnahme von Elektronen",
-              "Durch Abgabe von Protonen",
-              "Durch Aufnahme von Neutronen",
-              "Durch Kernspaltung des Atoms"
+              "Die Masse eines einzelnen Atoms in Gramm",
+              "Teilchenanzahl in einem Mol Substanz",
+              "Die Ladung eines einzelnen Elektrons",
+              "Der Radius eines durchschnittlichen Atoms",
+              "Die Bindungsenergie in Kilojoule"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Durch Aufnahme von Elektronen"
+              "Teilchenanzahl in einem Mol Substanz"
             ]
           },
           {
-            "id": "02-elemente-ionen-mol:1:4",
-            "question": "Was gibt die molare Masse an?",
+            "id": "02-elemente-ionen-mol:1:2",
+            "question": "Was beschreibt die molare Masse?",
             "options": [
-              "Die Masse eines einzelnen Teilchens",
-              "Die Masse von einem Mol eines Stoffes",
-              "Die Anzahl der Atome pro Gramm",
-              "Das Volumen bei Standardbedingungen",
-              "Die Dichte eines reinen Elements"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Masse von einem Mol eines Stoffes"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:5",
-            "question": "In welcher Einheit wird die molare Masse angegeben?",
-            "options": [
-              "Gramm (g)",
-              "Gramm pro Mol (g/mol)",
-              "Mol pro Liter (mol/L)",
-              "Kilogramm pro Kubikmeter",
-              "Atomare Masseneinheiten (u)"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Gramm pro Mol (g/mol)"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:6",
-            "question": "Welches Symbol hat das Element Natrium?",
-            "options": [
-              "N",
-              "Na",
-              "S",
-              "So",
-              "Nt"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Na"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:7",
-            "question": "Was bedeutet das Symbol Fe?",
-            "options": [
-              "Fluor",
-              "Eisen",
-              "Fermium",
-              "Francium",
-              "Flerovium"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eisen"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:8",
-            "question": "Was ist die Stoffmenge n?",
-            "options": [
-              "Die Masse eines Stoffes in Gramm",
-              "Die Anzahl der Mole eines Stoffes",
-              "Die Dichte einer Lösung",
-              "Das Volumen bei Normaldruck",
-              "Die Konzentration pro Liter"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Anzahl der Mole eines Stoffes"
-            ]
-          },
-          {
-            "id": "02-elemente-ionen-mol:1:9",
-            "question": "Welche Ladung hat ein Chlorid-Ion?",
-            "options": [
-              "+1",
-              "+2",
-              "-1",
-              "-2",
-              "0 (neutral)"
+              "Die Dichte einer chemischen Substanz",
+              "Die Anzahl der Bindungen im Molekül",
+              "Gramm pro Mol einer Substanz",
+              "Die Schmelztemperatur in Kelvin",
+              "Den Siedepunkt unter Normaldruck"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "-1"
+              "Gramm pro Mol einer Substanz"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:3",
+            "question": "Was passiert bei der Bildung eines Anions?",
+            "options": [
+              "Das Teilchen verliert mehrere Protonen",
+              "Die Kernladung erhöht sich deutlich",
+              "Das Atom wird zu einem Edelgas",
+              "Es werden Elektronen aufgenommen",
+              "Die Massenzahl verringert sich stark"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Es werden Elektronen aufgenommen"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:4",
+            "question": "Welches Elementsymbol steht für Natrium?",
+            "options": [
+              "Das Symbol \"N\" aus dem Lateinischen",
+              "Die Abkürzung \"Nt\" für Natrium",
+              "Das Zeichen \"So\" vom deutschen Namen",
+              "Die Buchstaben \"Nm\" international",
+              "Das Kürzel \"Na\" vom lateinischen Namen"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Das Kürzel \"Na\" vom lateinischen Namen"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:5",
+            "question": "Was gibt die Stoffmenge in Mol an?",
+            "options": [
+              "Eine bestimmte Teilchenanzahl",
+              "Das Volumen einer Flüssigkeit",
+              "Die Temperatur einer Reaktion",
+              "Den Druck in einem Behälter",
+              "Die Geschwindigkeit einer Umwandlung"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              0
+            ],
+            "correctAnswers": [
+              "Eine bestimmte Teilchenanzahl"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:6",
+            "question": "Welches Element hat das Symbol K?",
+            "options": [
+              "Das sehr reaktive Erdalkalimetall",
+              "Ein weiches silbriges Alkalimetall",
+              "Das häufigste Element der Erdkruste",
+              "Ein radioaktives Schwermetall",
+              "Das leichteste aller Halogene"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              1
+            ],
+            "correctAnswers": [
+              "Ein weiches silbriges Alkalimetall"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:7",
+            "question": "Wie viele Teilchen enthält ein Mol?",
+            "options": [
+              "Genau eine Million Moleküle",
+              "Etwa eine Milliarde Atome",
+              "Rund 6 mal 10 hoch 23 Teilchen",
+              "Exakt 100 Billionen Partikel",
+              "Ungefähr 10 hoch 10 Einheiten"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              2
+            ],
+            "correctAnswers": [
+              "Rund 6 mal 10 hoch 23 Teilchen"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:8",
+            "question": "Was kennzeichnet ein Kation?",
+            "options": [
+              "Es besitzt mehr negative Ladungsträger",
+              "Es ist immer elektrisch neutral",
+              "Es enthält keine Kernbausteine",
+              "Es trägt positive elektrische Ladung",
+              "Es besteht nur aus Neutronen"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Es trägt positive elektrische Ladung"
+            ]
+          },
+          {
+            "id": "02-elemente-ionen-mol:1:9",
+            "question": "Welche Einheit hat die molare Masse?",
+            "options": [
+              "Kilogramm pro Kubikzentimeter",
+              "Joule pro Mol und Kelvin",
+              "Mol pro Liter Lösung",
+              "Pascal mal Kubikmeter",
+              "Gramm pro Mol Substanz"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Gramm pro Mol Substanz"
             ]
           }
         ],
@@ -2346,182 +2346,182 @@
         "1": [
           {
             "id": "03-gleichungen-stoechiometrie:1:0",
-            "question": "Was steht bei einer Reaktionsgleichung auf der linken Seite?",
+            "question": "Was steht links vom Reaktionspfeil?",
             "options": [
-              "Die Produkte der Reaktion",
-              "Die Edukte der Reaktion",
-              "Die Katalysatoren",
-              "Die Reaktionsbedingungen",
-              "Die Energiebilanz"
+              "Die Ausgangsstoffe der Reaktion",
+              "Die entstehenden Endprodukte",
+              "Die freigesetzte Energiemenge",
+              "Die benötigte Aktivierungsenergie",
+              "Der Katalysator der Umwandlung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Die Edukte der Reaktion"
+              "Die Ausgangsstoffe der Reaktion"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:1",
-            "question": "Was bedeutet der Pfeil in einer Reaktionsgleichung?",
+            "question": "Was bedeutet das Gesetz der Massenerhaltung?",
             "options": [
-              "Die Reaktion ist reversibel",
-              "Edukte werden zu Produkten umgewandelt",
-              "Die Reaktion benötigt Wärme",
-              "Die Masse nimmt zu",
-              "Die Reaktion ist langsam"
+              "Energie kann beliebig erzeugt werden",
+              "Masse bleibt bei Reaktionen konstant",
+              "Atome können neu erschaffen werden",
+              "Reaktionen verlaufen ohne Massenverlust nie",
+              "Produkte sind schwerer als Edukte"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Edukte werden zu Produkten umgewandelt"
+              "Masse bleibt bei Reaktionen konstant"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:2",
-            "question": "Was sind Koeffizienten in einer Reaktionsgleichung?",
+            "question": "Was zeigen die Koeffizienten in einer Reaktionsgleichung?",
             "options": [
-              "Die Indices in den chemischen Formeln",
-              "Die Zahlen vor den Formeln",
-              "Die Ladungen der Ionen",
-              "Die Oxidationszahlen",
-              "Die molaren Massen"
+              "Die Temperaturen während der Reaktion",
+              "Die Geschwindigkeit der Umwandlung",
+              "Die Stoffmengenverhältnisse der Teilnehmer",
+              "Die Ladungen aller beteiligten Ionen",
+              "Die Schmelzpunkte der Reinstoffe"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Die Zahlen vor den Formeln"
+              "Die Stoffmengenverhältnisse der Teilnehmer"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:3",
-            "question": "Welches Gesetz liegt dem Ausgleichen von Gleichungen zugrunde?",
+            "question": "Was passiert beim Ausgleichen einer Gleichung?",
             "options": [
-              "Das Gesetz der konstanten Proportionen",
-              "Das Gesetz der Massenerhaltung",
-              "Das ideale Gasgesetz",
-              "Das Gesetz der multiplen Proportionen",
-              "Das Massenwirkungsgesetz"
+              "Die Formeln werden neu geschrieben",
+              "Die Indices werden angepasst",
+              "Neue Elemente werden hinzugefügt",
+              "Koeffizienten werden eingefügt",
+              "Reaktionspfeile werden umgedreht"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Das Gesetz der Massenerhaltung"
+              "Koeffizienten werden eingefügt"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:4",
             "question": "Was ist der limitierende Reaktand?",
             "options": [
-              "Der Stoff, der im Überschuss vorliegt",
-              "Der Stoff, der zuerst verbraucht wird",
-              "Der Stoff mit der größten Masse",
-              "Der Katalysator der Reaktion",
-              "Das Hauptprodukt der Reaktion"
+              "Der Stoff mit der höchsten Konzentration",
+              "Der Katalysator der chemischen Reaktion",
+              "Das Produkt mit der größten Ausbeute",
+              "Der Stoff der im Überschuss vorliegt",
+              "Der Stoff der zuerst verbraucht wird"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Der Stoff, der zuerst verbraucht wird"
+              "Der Stoff der zuerst verbraucht wird"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:5",
-            "question": "Was bedeutet \"stöchiometrisch\"?",
+            "question": "Was steht rechts vom Reaktionspfeil?",
             "options": [
-              "Die Reaktion läuft schnell ab",
-              "Die Mengenverhältnisse entsprechen der Gleichung",
-              "Die Reaktion ist exotherm",
-              "Die Reaktion ist reversibel",
-              "Die Produkte sind gasförmig"
+              "Die gebildeten Reaktionsprodukte",
+              "Die eingesetzten Ausgangsmaterialien",
+              "Die notwendigen Reaktionsbedingungen",
+              "Die verwendeten Katalysatorstoffe",
+              "Die zugeführte Aktivierungsenergie"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Die Mengenverhältnisse entsprechen der Gleichung"
+              "Die gebildeten Reaktionsprodukte"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:6",
-            "question": "Wie viele Atome müssen links und rechts der Gleichung sein?",
+            "question": "Was muss beim Ausgleichen unverändert bleiben?",
             "options": [
-              "Links mehr als rechts",
-              "Rechts mehr als links",
-              "Gleich viele von jeder Sorte",
-              "Die Summe muss 100 sein",
-              "Es gibt keine Regel dafür"
+              "Die Reihenfolge der Reaktionspartner",
+              "Die Indices in den Summenformeln",
+              "Die Aggregatzustände der Substanzen",
+              "Die Position des Reaktionspfeils",
+              "Die Richtung des Energieflusses"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              2
+              1
             ],
             "correctAnswers": [
-              "Gleich viele von jeder Sorte"
+              "Die Indices in den Summenformeln"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:7",
-            "question": "Was zeigen die Koeffizienten einer ausgeglichenen Gleichung?",
+            "question": "Was ist eine ausgeglichene chemische Gleichung?",
             "options": [
-              "Die molaren Massen der Stoffe",
-              "Die Stoffmengenverhältnisse der Reaktion",
-              "Die Reaktionsgeschwindigkeit",
-              "Die Siedepunkte der Stoffe",
-              "Die Aggregatzustände"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Stoffmengenverhältnisse der Reaktion"
-            ]
-          },
-          {
-            "id": "03-gleichungen-stoechiometrie:1:8",
-            "question": "Was bedeutet das Symbol (aq) hinter einer Formel?",
-            "options": [
-              "Der Stoff ist fest",
-              "Der Stoff ist gasförmig",
-              "Der Stoff ist in Wasser gelöst",
-              "Der Stoff ist flüssig",
-              "Der Stoff ist ein Katalysator"
+              "Eine Formel ohne Koeffizienten",
+              "Eine Reaktion ohne Energieumsatz",
+              "Gleiche Atomanzahl auf beiden Seiten",
+              "Ein Gleichgewicht ohne Stoffumsatz",
+              "Eine Umwandlung ohne Katalysator"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "Der Stoff ist in Wasser gelöst"
+              "Gleiche Atomanzahl auf beiden Seiten"
+            ]
+          },
+          {
+            "id": "03-gleichungen-stoechiometrie:1:8",
+            "question": "Worauf basiert die Stöchiometrie?",
+            "options": [
+              "Auf der Messung von Temperaturen",
+              "Auf der Bestimmung von Drücken",
+              "Auf der Analyse von Spektren",
+              "Auf festen Mengenverhältnissen",
+              "Auf der Berechnung von Geschwindigkeiten"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Auf festen Mengenverhältnissen"
             ]
           },
           {
             "id": "03-gleichungen-stoechiometrie:1:9",
-            "question": "Was ist die theoretische Ausbeute?",
+            "question": "Was gibt der Koeffizient \"2\" vor H₂O an?",
             "options": [
-              "Die tatsächlich erhaltene Produktmenge",
-              "Die maximal mögliche Produktmenge laut Stöchiometrie",
-              "Die Masse des limitierenden Reaktanden",
-              "Die Summe aller Eduktemassen",
-              "Der Prozentsatz der Reaktion"
+              "Zwei Wasserstoffatome pro Molekül",
+              "Zwei Sauerstoffatome im Molekül",
+              "Die Oxidationszahl des Sauerstoffs",
+              "Die Ladung des Wassermoleküls",
+              "Zwei Formeleinheiten der Verbindung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Die maximal mögliche Produktmenge laut Stöchiometrie"
+              "Zwei Formeleinheiten der Verbindung"
             ]
           }
         ],
@@ -3601,182 +3601,182 @@
         "1": [
           {
             "id": "04-reaktionen-empirische-formeln:1:0",
-            "question": "Was ist eine Synthese-Reaktion?",
+            "question": "Was passiert bei einer Synthesereaktion?",
             "options": [
-              "Eine Reaktion, bei der ein Stoff zerfällt",
-              "Eine Reaktion, bei der mehrere Stoffe zu einem werden",
-              "Eine Reaktion mit Sauerstoff",
-              "Eine Reaktion in wässriger Lösung",
-              "Eine Reaktion mit Katalysator"
+              "Mehrere Stoffe bilden einen neuen",
+              "Ein Stoff zerfällt in Bestandteile",
+              "Ionen tauschen ihre Bindungspartner",
+              "Elektronen werden übertragen",
+              "Atome werden radioaktiv zerstört"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Eine Reaktion, bei der mehrere Stoffe zu einem werden"
+              "Mehrere Stoffe bilden einen neuen"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:1",
-            "question": "Was zeigt die empirische Formel?",
+            "question": "Was zeigt die empirische Formel einer Verbindung?",
             "options": [
-              "Die tatsächliche Anzahl der Atome im Molekül",
-              "Das kleinste ganzzahlige Verhältnis der Atome",
-              "Die Masse des Moleküls",
-              "Die räumliche Struktur",
-              "Die Reaktionsgeschwindigkeit"
+              "Die exakte Anzahl aller Atome im Molekül",
+              "Das einfachste ganzzahlige Atomverhältnis",
+              "Die räumliche Anordnung der Bindungen",
+              "Die elektrische Ladung der Verbindung",
+              "Die Reaktivität gegenüber Wasser"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Das kleinste ganzzahlige Verhältnis der Atome"
+              "Das einfachste ganzzahlige Atomverhältnis"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:2",
-            "question": "Was ist eine Zersetzungsreaktion?",
+            "question": "Was geschieht bei einer Zersetzungsreaktion?",
             "options": [
-              "Ein Stoff zerfällt in mehrere einfachere Stoffe",
-              "Zwei Stoffe verbinden sich zu einem",
-              "Atome werden zwischen Molekülen ausgetauscht",
-              "Ein Metall verdrängt ein anderes",
-              "Säure und Base neutralisieren sich"
+              "Zwei Elemente verbinden sich zu einem",
+              "Ionen wandern zu den Elektroden",
+              "Ein Stoff zerfällt in Einzelteile",
+              "Metalle lösen sich in Säuren auf",
+              "Gase reagieren zu einer Flüssigkeit"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              2
             ],
             "correctAnswers": [
-              "Ein Stoff zerfällt in mehrere einfachere Stoffe"
+              "Ein Stoff zerfällt in Einzelteile"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:3",
-            "question": "Welche Formel ist eine Summenformel (Molekülformel)?",
+            "question": "Was versteht man unter Massenanteil?",
             "options": [
-              "CH₂O",
-              "C₆H₁₂O₆",
-              "NaCl",
-              "HO",
-              "CH"
+              "Die Anzahl der Atome in einem Mol",
+              "Die Ladung eines bestimmten Ions",
+              "Die Bindungsenergie pro Molekül",
+              "Prozent eines Elements in der Masse",
+              "Die Dichte einer reinen Substanz"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "C₆H₁₂O₆"
+              "Prozent eines Elements in der Masse"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:4",
-            "question": "Was bedeutet \"prozentuale Zusammensetzung\"?",
+            "question": "Was ist eine Austauschreaktion?",
             "options": [
-              "Der Massenanteil jedes Elements in einer Verbindung",
-              "Die Anzahl der Atome pro Molekül",
-              "Das Volumenverhältnis der Gase",
-              "Die Dichte der Substanz",
-              "Die Reaktionsausbeute"
+              "Eine Reaktion die Energie freisetzt",
+              "Eine Verbrennung mit Sauerstoff",
+              "Eine Neutralisation von Säure und Base",
+              "Eine Reaktion ohne Katalysatorbeteiligung",
+              "Ein Partnertausch zwischen Verbindungen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              4
             ],
             "correctAnswers": [
-              "Der Massenanteil jedes Elements in einer Verbindung"
+              "Ein Partnertausch zwischen Verbindungen"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:5",
-            "question": "Was ist eine Verdrängungsreaktion?",
+            "question": "Welcher Reaktionstyp liegt vor wenn Eisen rostet?",
             "options": [
-              "Ein reaktiveres Element ersetzt ein weniger reaktives",
-              "Zwei Elemente verbinden sich",
-              "Ein Stoff zerfällt in Elemente",
-              "Wasser wird gebildet",
-              "Gase entweichen aus einer Lösung"
+              "Eine Verbindung mit Luftsauerstoff",
+              "Eine Zerlegung in die Grundstoffe",
+              "Ein Austausch von Bindungspartnern",
+              "Eine Neutralisation mit Wasser",
+              "Eine Spaltung durch Elektrizität"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Ein reaktiveres Element ersetzt ein weniger reaktives"
+              "Eine Verbindung mit Luftsauerstoff"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:6",
-            "question": "Welche Reaktion ist eine Verbrennung?",
+            "question": "Was unterscheidet Molekül- von Verhältnisformel?",
             "options": [
-              "NaCl → Na + Cl₂",
-              "CH₄ + O₂ → CO₂ + H₂O",
-              "Zn + Cu²⁺ → Zn²⁺ + Cu",
-              "H₂O → H₂ + O₂",
-              "NaOH + HCl → NaCl + H₂O"
+              "Nur die Schreibweise mit Klammern",
+              "Tatsächliche versus minimale Atomzahl",
+              "Die Angabe der Aggregatzustände",
+              "Die Darstellung der Bindungswinkel",
+              "Lediglich die verwendeten Symbole"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "CH₄ + O₂ → CO₂ + H₂O"
+              "Tatsächliche versus minimale Atomzahl"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:7",
-            "question": "Was ist eine Austauschreaktion (Doppelte Umsetzung)?",
+            "question": "Wie ermittelt man die empirische Formel experimentell?",
             "options": [
-              "Zwei Verbindungen tauschen ihre Partner aus",
-              "Ein Element ersetzt ein anderes",
-              "Ein Stoff verbrennt",
-              "Ein Stoff zerfällt",
-              "Zwei Elemente verbinden sich"
+              "Durch Messung des Schmelzpunktes",
+              "Durch Bestimmung der Kristallform",
+              "Durch Elementaranalyse der Substanz",
+              "Durch Berechnung der Bindungsenergie",
+              "Durch Messung der elektrischen Leitfähigkeit"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              2
             ],
             "correctAnswers": [
-              "Zwei Verbindungen tauschen ihre Partner aus"
+              "Durch Elementaranalyse der Substanz"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:8",
-            "question": "Welche empirische Formel hat Glucose (C₆H₁₂O₆)?",
+            "question": "Was ist charakteristisch für Verbrennungsreaktionen?",
             "options": [
-              "C₆H₁₂O₆",
-              "CH₂O",
-              "CHO",
-              "C₃H₆O₃",
-              "C₂H₄O₂"
+              "Sie verlaufen immer ohne Lichterscheinung",
+              "Sie benötigen keine Aktivierungsenergie",
+              "Sie laufen nur bei tiefen Temperaturen ab",
+              "Es findet Reaktion mit Sauerstoff statt",
+              "Sie sind vollständig reversibel"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "CH₂O"
+              "Es findet Reaktion mit Sauerstoff statt"
             ]
           },
           {
             "id": "04-reaktionen-empirische-formeln:1:9",
-            "question": "Was ist eine exotherme Reaktion?",
+            "question": "Was bedeutet C₆H₁₂O₆ für Glucose?",
             "options": [
-              "Eine Reaktion, die Wärme aufnimmt",
-              "Eine Reaktion, die Wärme abgibt",
-              "Eine Reaktion ohne Energieänderung",
-              "Eine Reaktion mit Katalysator",
-              "Eine Reaktion im Gleichgewicht"
+              "Die räumliche Struktur des Zuckers",
+              "Die Löslichkeit in verschiedenen Medien",
+              "Die Schmelz- und Siedetemperatur",
+              "Die Reaktivität mit anderen Stoffen",
+              "Die tatsächliche Atomzahl im Molekül"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Eine Reaktion, die Wärme abgibt"
+              "Die tatsächliche Atomzahl im Molekül"
             ]
           }
         ],
@@ -5032,180 +5032,180 @@
             "id": "05-loesungen-konzentrationen:1:0",
             "question": "Was ist das Lösungsmittel in einer Lösung?",
             "options": [
-              "Der Stoff, der in geringerer Menge vorliegt",
-              "Der Stoff, der in größerer Menge vorliegt",
-              "Der Stoff, der sich auflöst",
-              "Der feste Bestandteil",
-              "Der gasförmige Bestandteil"
+              "Die Komponente im größten Anteil",
+              "Der Stoff der sich auflöst",
+              "Das entstehende Reaktionsprodukt",
+              "Die feste Phase am Gefäßboden",
+              "Der gasförmige Anteil im Gemisch"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Der Stoff, der in größerer Menge vorliegt"
+              "Die Komponente im größten Anteil"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:1",
-            "question": "Was bedeutet Molarität (c)?",
+            "question": "Was gibt die Molarität einer Lösung an?",
             "options": [
-              "Masse pro Volumen",
-              "Stoffmenge pro Volumen in mol/L",
-              "Masse pro Masse",
-              "Teilchenzahl pro Gramm",
-              "Volumen pro Stoffmenge"
+              "Die Masse des gelösten Stoffes in Gramm",
+              "Stoffmenge pro Liter der Lösung",
+              "Das Volumen des Lösungsmittels",
+              "Die Temperatur der Flüssigkeit",
+              "Die Dichte des Gesamtgemisches"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Stoffmenge pro Volumen in mol/L"
+              "Stoffmenge pro Liter der Lösung"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:2",
-            "question": "Welche Einheit hat die Molarität?",
+            "question": "Was bedeutet es wenn eine Lösung gesättigt ist?",
             "options": [
-              "g/L",
-              "mol/L oder M",
-              "kg/mol",
-              "L/mol",
-              "%"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "mol/L oder M"
-            ]
-          },
-          {
-            "id": "05-loesungen-konzentrationen:1:3",
-            "question": "Was ist eine gesättigte Lösung?",
-            "options": [
-              "Eine Lösung ohne gelösten Stoff",
-              "Eine Lösung, die keinen weiteren Stoff mehr lösen kann",
-              "Eine sehr verdünnte Lösung",
-              "Eine Lösung bei hoher Temperatur",
-              "Eine Lösung mit Gasen"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eine Lösung, die keinen weiteren Stoff mehr lösen kann"
-            ]
-          },
-          {
-            "id": "05-loesungen-konzentrationen:1:4",
-            "question": "Was bedeutet \"verdünnen\"?",
-            "options": [
-              "Lösungsmittel entfernen",
-              "Mehr gelösten Stoff hinzufügen",
-              "Lösungsmittel hinzufügen",
-              "Die Lösung erhitzen",
-              "Die Lösung filtrieren"
+              "Die Lösung enthält keinen gelösten Stoff",
+              "Die Temperatur erreicht den Siedepunkt",
+              "Maximal mögliche Stoffmenge ist gelöst",
+              "Der Druck im Gefäß ist zu hoch",
+              "Das Lösungsmittel ist verdampft"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "Lösungsmittel hinzufügen"
+              "Maximal mögliche Stoffmenge ist gelöst"
+            ]
+          },
+          {
+            "id": "05-loesungen-konzentrationen:1:3",
+            "question": "Was passiert bei einer Verdünnung?",
+            "options": [
+              "Der Siedepunkt wird stark erhöht",
+              "Die chemische Struktur verändert sich",
+              "Neuer gelöster Stoff wird zugegeben",
+              "Lösungsmittel wird hinzugefügt",
+              "Die Temperatur wird gesenkt"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Lösungsmittel wird hinzugefügt"
+            ]
+          },
+          {
+            "id": "05-loesungen-konzentrationen:1:4",
+            "question": "Was beschreibt der Massenanteil?",
+            "options": [
+              "Das Volumen pro Liter Gesamtlösung",
+              "Die Teilchenzahl in einem Mol",
+              "Die Temperaturabhängigkeit der Dichte",
+              "Die Anzahl der gelösten Moleküle",
+              "Prozent der Masse am Gesamtgewicht"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Prozent der Masse am Gesamtgewicht"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:5",
-            "question": "Was ist der Massenanteil (w)?",
+            "question": "Was ist eine ungesättigte Lösung?",
             "options": [
-              "Stoffmenge geteilt durch Volumen",
-              "Masse des gelösten Stoffes geteilt durch Gesamtmasse",
-              "Volumen geteilt durch Masse",
-              "Teilchenzahl pro Mol",
-              "Dichte der Lösung"
+              "Noch mehr Stoff könnte gelöst werden",
+              "Die maximale Stoffmenge ist erreicht",
+              "Kristalle fallen bereits aus",
+              "Das Lösungsmittel ist verdampft",
+              "Die Lösung befindet sich im Gleichgewicht"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Masse des gelösten Stoffes geteilt durch Gesamtmasse"
+              "Noch mehr Stoff könnte gelöst werden"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:6",
-            "question": "Welche Formel beschreibt die Molarität?",
+            "question": "In welcher Einheit wird Molarität angegeben?",
             "options": [
-              "c = m/V",
-              "c = n/V",
-              "c = V/n",
-              "c = m/M",
-              "c = n × V"
+              "In Gramm pro hundert Milliliter",
+              "In Mol pro Liter Lösung",
+              "In Prozent der Gesamtmasse",
+              "In Kilogramm pro Kubikmeter",
+              "In Teilchen pro Milliliter"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "c = n/V"
+              "In Mol pro Liter Lösung"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:7",
-            "question": "Was ist eine übersättigte Lösung?",
+            "question": "Was beeinflusst die Löslichkeit eines Stoffes?",
             "options": [
-              "Eine Lösung mit weniger Stoff als die Sättigung erlaubt",
-              "Eine Lösung mit mehr gelöstem Stoff als normal möglich",
-              "Eine Lösung bei Raumtemperatur",
-              "Eine neutrale Lösung",
-              "Eine Lösung ohne Elektrolyte"
+              "Nur die Farbe des Lösungsmittels",
+              "Ausschließlich der Luftdruck",
+              "Unter anderem die Temperatur",
+              "Lediglich das Gefäßmaterial",
+              "Nur die Form des Behälters"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Eine Lösung mit mehr gelöstem Stoff als normal möglich"
+              "Unter anderem die Temperatur"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:8",
-            "question": "Was gibt die Löslichkeit an?",
+            "question": "Was ist der gelöste Stoff in Salzwasser?",
             "options": [
-              "Die Geschwindigkeit des Lösens",
-              "Die maximale Menge, die sich in einem Lösungsmittel löst",
-              "Die Farbe der Lösung",
-              "Den pH-Wert der Lösung",
-              "Die Dichte der Lösung"
+              "Das flüssige Wasser im Gemisch",
+              "Der Wasserdampf über der Lösung",
+              "Die Luft die sich im Wasser löst",
+              "Das Natriumchlorid im Wasser",
+              "Die Wasserstoffbrückenbindungen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Die maximale Menge, die sich in einem Lösungsmittel löst"
+              "Das Natriumchlorid im Wasser"
             ]
           },
           {
             "id": "05-loesungen-konzentrationen:1:9",
-            "question": "Welches Symbol steht für Molarität?",
+            "question": "Was ist eine übersättigte Lösung?",
             "options": [
-              "m",
-              "c oder M",
-              "n",
-              "w",
-              "ρ"
+              "Eine Lösung ohne gelösten Stoff",
+              "Ein Gemisch das noch Stoff aufnimmt",
+              "Eine verdünnte wässrige Lösung",
+              "Ein System im thermischen Gleichgewicht",
+              "Mehr gelöst als eigentlich möglich"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "c oder M"
+              "Mehr gelöst als eigentlich möglich"
             ]
           }
         ],
@@ -6454,182 +6454,182 @@
         "1": [
           {
             "id": "06-saeuren-basen-grundlagen:1:0",
-            "question": "Was ist eine Säure nach Arrhenius?",
+            "question": "Was gibt eine Säure nach Arrhenius ab?",
             "options": [
-              "Ein Stoff, der OH⁻-Ionen abgibt",
-              "Ein Stoff, der H⁺-Ionen in Wasser freisetzt",
-              "Ein Stoff mit pH > 7",
-              "Ein Elektronenpaar-Akzeptor",
-              "Ein Stoff ohne Ladung"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Ein Stoff, der H⁺-Ionen in Wasser freisetzt"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:1",
-            "question": "Was ist eine Base nach Arrhenius?",
-            "options": [
-              "Ein Stoff, der H⁺-Ionen abgibt",
-              "Ein Stoff, der OH⁻-Ionen in Wasser freisetzt",
-              "Ein Stoff mit pH < 7",
-              "Ein Elektronenpaar-Donor",
-              "Ein neutraler Stoff"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Ein Stoff, der OH⁻-Ionen in Wasser freisetzt"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:2",
-            "question": "Was entsteht bei einer Neutralisation?",
-            "options": [
-              "Nur Wasser",
-              "Salz und Wasser",
-              "Nur ein Salz",
-              "Eine Säure",
-              "Eine Base"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Salz und Wasser"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:3",
-            "question": "Was ist eine starke Säure?",
-            "options": [
-              "Eine Säure mit hoher Konzentration",
-              "Eine Säure, die vollständig dissoziiert",
-              "Eine Säure mit niedrigem pH",
-              "Eine Säure mit vielen Atomen",
-              "Eine Säure, die langsam reagiert"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eine Säure, die vollständig dissoziiert"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:4",
-            "question": "Welches ist eine starke Säure?",
-            "options": [
-              "Essigsäure (CH₃COOH)",
-              "Salzsäure (HCl)",
-              "Kohlensäure (H₂CO₃)",
-              "Phosphorsäure (H₃PO₄)",
-              "Blausäure (HCN)"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Salzsäure (HCl)"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:5",
-            "question": "Was ist eine schwache Base?",
-            "options": [
-              "Eine Base mit niedriger Konzentration",
-              "Eine Base, die nur teilweise dissoziiert",
-              "Eine Base mit hohem pH",
-              "Eine verdünnte Lösung",
-              "Eine starke Säure"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eine Base, die nur teilweise dissoziiert"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:6",
-            "question": "Was ist das Produkt von H⁺ + OH⁻?",
-            "options": [
-              "H₂",
-              "O₂",
-              "H₂O",
-              "H₂O₂",
-              "HO"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              2
-            ],
-            "correctAnswers": [
-              "H₂O"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:7",
-            "question": "Welchen pH-Wert hat eine neutrale Lösung bei 25°C?",
-            "options": [
-              "0",
-              "1",
-              "7",
-              "14",
-              "10"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              2
-            ],
-            "correctAnswers": [
-              "7"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:8",
-            "question": "Was ist NaOH?",
-            "options": [
-              "Eine Säure",
-              "Eine starke Base",
-              "Ein Salz",
-              "Ein Puffer",
-              "Eine schwache Base"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eine starke Base"
-            ]
-          },
-          {
-            "id": "06-saeuren-basen-grundlagen:1:9",
-            "question": "Was ist das konjugierte Säure-Base-Paar zu HCl/Cl⁻?",
-            "options": [
-              "HCl ist die Säure, Cl⁻ die konjugierte Base",
-              "Cl⁻ ist die Säure, HCl die Base",
-              "Beide sind Säuren",
-              "Beide sind Basen",
-              "Es gibt kein Paar"
+              "Wasserstoff-Ionen in wässriger Lösung",
+              "Hydroxid-Ionen beim Auflösen",
+              "Elektronen an das Lösungsmittel",
+              "Neutronen aus dem Atomkern",
+              "Sauerstoffatome an die Umgebung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "HCl ist die Säure, Cl⁻ die konjugierte Base"
+              "Wasserstoff-Ionen in wässriger Lösung"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:1",
+            "question": "Was entsteht bei einer Neutralisation?",
+            "options": [
+              "Eine starke Säure und ein Metall",
+              "Wasser und ein Salz als Produkte",
+              "Ein Edelgas und freie Elektronen",
+              "Eine Base und ein Metalloxid",
+              "Wasserstoffgas und Sauerstoff"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              1
+            ],
+            "correctAnswers": [
+              "Wasser und ein Salz als Produkte"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:2",
+            "question": "Was ist charakteristisch für starke Säuren?",
+            "options": [
+              "Sie dissoziieren nur teilweise im Wasser",
+              "Sie reagieren nicht mit unedlen Metallen",
+              "Sie spalten vollständig in Ionen auf",
+              "Sie haben einen pH-Wert über sieben",
+              "Sie bilden unlösliche Niederschläge"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              2
+            ],
+            "correctAnswers": [
+              "Sie spalten vollständig in Ionen auf"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:3",
+            "question": "Welche Ionen setzen Basen nach Arrhenius frei?",
+            "options": [
+              "Positiv geladene Wasserstoffionen",
+              "Negativ geladene Chloridionen",
+              "Elektrisch neutrale Wassermoleküle",
+              "Negativ geladene Hydroxidionen",
+              "Positiv geladene Natriumionen"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Negativ geladene Hydroxidionen"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:4",
+            "question": "Was ist ein Säure-Base-Paar?",
+            "options": [
+              "Zwei Säuren die miteinander reagieren",
+              "Ein Salz und sein Kristallwasser",
+              "Zwei Basen in wässriger Lösung",
+              "Ein Metall und sein Oxid zusammen",
+              "Teilchen die sich durch H⁺ unterscheiden"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Teilchen die sich durch H⁺ unterscheiden"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:5",
+            "question": "Welche Substanz ist eine typische starke Base?",
+            "options": [
+              "Natriumhydroxid in wässriger Lösung",
+              "Kohlensäure in Mineralwasser",
+              "Essigsäure in Haushaltsessig",
+              "Ammoniak als schwache Verbindung",
+              "Schwefelsäure als starke Säure"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              0
+            ],
+            "correctAnswers": [
+              "Natriumhydroxid in wässriger Lösung"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:6",
+            "question": "Was bedeutet der Begriff Dissoziation bei Säuren?",
+            "options": [
+              "Die Verdampfung bei hoher Temperatur",
+              "Die Aufspaltung in geladene Teilchen",
+              "Die Kristallisation aus der Lösung",
+              "Die Verbindung mit Metallionen",
+              "Die Reaktion mit Sauerstoff"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              1
+            ],
+            "correctAnswers": [
+              "Die Aufspaltung in geladene Teilchen"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:7",
+            "question": "Was kennzeichnet schwache Säuren?",
+            "options": [
+              "Sie lösen sich gar nicht in Wasser auf",
+              "Sie haben keine chemische Wirkung",
+              "Sie dissoziieren nur zum Teil",
+              "Sie enthalten keine Wasserstoffatome",
+              "Sie reagieren nur mit edlen Metallen"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              2
+            ],
+            "correctAnswers": [
+              "Sie dissoziieren nur zum Teil"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:8",
+            "question": "Welche Reaktion findet bei HCl in Wasser statt?",
+            "options": [
+              "Es bildet sich ein unlösliches Salz",
+              "Das Wasser verdampft vollständig",
+              "Wasserstoff entweicht als Gas",
+              "Es entstehen H⁺ und Cl⁻ Ionen",
+              "Das Chlor oxidiert den Sauerstoff"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Es entstehen H⁺ und Cl⁻ Ionen"
+            ]
+          },
+          {
+            "id": "06-saeuren-basen-grundlagen:1:9",
+            "question": "Welche Farbe zeigt Lackmus in saurer Lösung?",
+            "options": [
+              "Der Indikator färbt sich grün",
+              "Der Farbstoff wird farblos transparent",
+              "Die Lösung erscheint gelb bis orange",
+              "Das Lackmus bleibt unverändert violett",
+              "Die Farbe wechselt zu rot"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Die Farbe wechselt zu rot"
             ]
           }
         ],
@@ -7576,182 +7576,182 @@
         "1": [
           {
             "id": "07-bohr-elektronenkonfiguration:1:0",
-            "question": "Was besagt das Bohr-Modell des Atoms?",
+            "question": "Was besagt das Bohrsche Atommodell?",
             "options": [
-              "Elektronen befinden sich überall im Atom",
-              "Elektronen bewegen sich auf festen Bahnen um den Kern",
-              "Elektronen haben keine Energie",
-              "Alle Atome sind gleich groß",
-              "Der Kern enthält Elektronen"
+              "Elektronen kreisen auf festen Bahnen",
+              "Der Atomkern besteht nur aus Protonen",
+              "Alle Teilchen bewegen sich zufällig",
+              "Neutronen umkreisen den Atomkern",
+              "Atome sind massiv und unteilbar"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Elektronen bewegen sich auf festen Bahnen um den Kern"
+              "Elektronen kreisen auf festen Bahnen"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:1",
-            "question": "Was ist ein Orbital?",
+            "question": "Was sind Valenzelektronen?",
             "options": [
-              "Die exakte Bahn eines Elektrons",
-              "Ein Bereich mit hoher Aufenthaltswahrscheinlichkeit für Elektronen",
-              "Der Atomkern",
-              "Eine chemische Bindung",
-              "Ein Neutron"
+              "Die Teilchen im innersten Energieniveau",
+              "Die Elektronen der äußersten Schale",
+              "Alle negativ geladenen Kernteilchen",
+              "Die Protonen in der Elektronenhülle",
+              "Die Neutronen zwischen den Schalen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein Bereich mit hoher Aufenthaltswahrscheinlichkeit für Elektronen"
+              "Die Elektronen der äußersten Schale"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:2",
-            "question": "Wie viele Elektronen passen maximal in die erste Schale (K)?",
+            "question": "Wie viele Elektronen fasst die erste Schale maximal?",
             "options": [
-              "1",
-              "2",
-              "8",
-              "18",
-              "32"
+              "Bis zu acht negative Ladungsträger",
+              "Maximal achtzehn Hüllelektronen",
+              "Höchstens zwei negative Teilchen",
+              "Genau sechs Valenzelektronen",
+              "Mindestens vier Ladungsträger"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "2"
+              "Höchstens zwei negative Teilchen"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:3",
-            "question": "Welche Hauptquantenzahl hat die dritte Schale?",
+            "question": "Was besagt die Hundsche Regel?",
             "options": [
-              "n = 1",
-              "n = 2",
-              "n = 3",
-              "n = 4",
-              "n = 5"
+              "Orbitale werden paarweise besetzt",
+              "Elektronen füllen die höchsten zuerst",
+              "Alle Elektronen haben gleichen Spin",
+              "Erst alle einfach, dann doppelt besetzen",
+              "Kernladung bestimmt die Schalenanzahl"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              2
+              3
             ],
             "correctAnswers": [
-              "n = 3"
+              "Erst alle einfach, dann doppelt besetzen"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:4",
-            "question": "Was sind Valenzelektronen?",
+            "question": "Was gibt die Hauptquantenzahl n an?",
             "options": [
-              "Elektronen im Atomkern",
-              "Elektronen in der äußersten Schale",
-              "Elektronen in der innersten Schale",
-              "Gepaarte Elektronen",
-              "Negativ geladene Protonen"
+              "Die Form des jeweiligen Orbitals",
+              "Die magnetische Orientierung im Raum",
+              "Die Drehrichtung des Elektrons",
+              "Die Anzahl der Protonen im Kern",
+              "Die Schale und das Energieniveau"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Elektronen in der äußersten Schale"
+              "Die Schale und das Energieniveau"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:5",
-            "question": "Welche Orbitale gibt es in der zweiten Schale?",
+            "question": "Welches Orbital wird bei Kohlenstoff zuerst gefüllt?",
             "options": [
-              "Nur s-Orbitale",
-              "s- und p-Orbitale",
-              "s-, p- und d-Orbitale",
-              "s-, p-, d- und f-Orbitale",
-              "Keine Orbitale"
+              "Das kugelförmige 1s-Orbital zuerst",
+              "Eines der hantelförmigen 2p-Orbitale",
+              "Das energiereiche 3d-Orbital",
+              "Ein 4f-Orbital der vierten Schale",
+              "Das 2s-Orbital vor allen anderen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "s- und p-Orbitale"
+              "Das kugelförmige 1s-Orbital zuerst"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:6",
-            "question": "Wie viele Elektronen passen in ein p-Orbital?",
+            "question": "Was besagt das Pauli-Prinzip?",
             "options": [
-              "1",
-              "2",
-              "6",
-              "8",
-              "10"
+              "Jede Schale fasst unbegrenzt Elektronen",
+              "Maximal zwei Elektronen pro Orbital",
+              "Alle Orbitale haben die gleiche Energie",
+              "Elektronen stoßen sich niemals ab",
+              "Der Spin ist für alle Teilchen gleich"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "2"
+              "Maximal zwei Elektronen pro Orbital"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:7",
-            "question": "Wie viele p-Orbitale gibt es pro Unterschale?",
+            "question": "Wie ist ein s-Orbital räumlich geformt?",
             "options": [
-              "1",
-              "2",
-              "3",
-              "5",
-              "7"
+              "Es hat eine hantelförmige Gestalt",
+              "Es zeigt eine kleeblattartige Form",
+              "Es ist kugelförmig und symmetrisch",
+              "Es hat eine ringförmige Struktur",
+              "Es ist kegelförmig nach außen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "3"
+              "Es ist kugelförmig und symmetrisch"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:8",
-            "question": "Was besagt das Pauli-Prinzip?",
+            "question": "Wie viele p-Orbitale existieren pro Energieniveau?",
             "options": [
-              "Elektronen füllen niedrigste Energie zuerst",
-              "Ein Orbital enthält maximal 2 Elektronen mit entgegengesetztem Spin",
-              "Elektronen besetzen erst einzeln, dann gepaart",
-              "Alle Elektronen haben den gleichen Spin",
-              "Orbitale haben unendlich Platz"
+              "Nur ein einziges dieser Orbitale",
+              "Es sind insgesamt fünf vorhanden",
+              "Sieben dieser Orbitale existieren",
+              "Genau drei auf jedem Energieniveau",
+              "Die Anzahl variiert je nach Niveau"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Ein Orbital enthält maximal 2 Elektronen mit entgegengesetztem Spin"
+              "Genau drei auf jedem Energieniveau"
             ]
           },
           {
             "id": "07-bohr-elektronenkonfiguration:1:9",
-            "question": "Was ist die Elektronenkonfiguration von Helium?",
+            "question": "Was bedeutet die Elektronenkonfiguration 1s²2s²?",
             "options": [
-              "1s¹",
-              "1s²",
-              "2s²",
-              "1s² 2s²",
-              "1p²"
+              "Zwei volle Schalen mit je acht Teilchen",
+              "Insgesamt sechs Elektronen im Atom",
+              "Ein Atom mit einer unvollständigen Schale",
+              "Die Anordnung eines radioaktiven Isotops",
+              "Vier Elektronen in zwei Orbitalen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "1s²"
+              "Vier Elektronen in zwei Orbitalen"
             ]
           }
         ],
@@ -8722,182 +8722,182 @@
         "1": [
           {
             "id": "08-ionenbindung-lewis:1:0",
-            "question": "Wie entsteht eine Ionenbindung?",
+            "question": "Wie entsteht eine ionische Bindung?",
             "options": [
-              "Durch Elektronenteilung zwischen Atomen",
-              "Durch Elektronenübertragung von Metall auf Nichtmetall",
-              "Durch magnetische Anziehung",
-              "Durch Kernfusion",
-              "Durch van-der-Waals-Kräfte"
+              "Durch Übertragung von Ladungsträgern",
+              "Durch gemeinsame Nutzung von Teilchen",
+              "Durch magnetische Anziehungskräfte",
+              "Durch Verschmelzung von Atomkernen",
+              "Durch Abstoßung gleicher Ladungen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Durch Elektronenübertragung von Metall auf Nichtmetall"
+              "Durch Übertragung von Ladungsträgern"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:1",
-            "question": "Was ist ein Ionengitter?",
+            "question": "Was zeigt eine Lewis-Struktur?",
             "options": [
-              "Eine zufällige Anordnung von Atomen",
-              "Eine regelmäßige 3D-Anordnung von Ionen",
-              "Ein einzelnes Ionenpaar",
-              "Eine flüssige Substanz",
-              "Ein Gas aus Ionen"
+              "Die Masse aller Atome im Molekül",
+              "Valenzelektronen als Punkte oder Striche",
+              "Die Geschwindigkeit der Teilchen",
+              "Die Farbe der chemischen Substanz",
+              "Den Aggregatzustand bei Raumtemperatur"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Eine regelmäßige 3D-Anordnung von Ionen"
+              "Valenzelektronen als Punkte oder Striche"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:2",
-            "question": "Was zeigt eine Lewis-Struktur?",
+            "question": "Was ist die Oktettregel?",
             "options": [
-              "Die Kernladung des Atoms",
-              "Die Valenzelektronen als Punkte oder Striche",
-              "Die Neutronenzahl",
-              "Die Masse des Atoms",
-              "Die Dichte des Stoffes"
+              "Jedes Atom hat genau acht Protonen",
+              "Alle Elemente haben acht Isotope",
+              "Atome streben acht Außenelektronen an",
+              "Ionengitter haben acht Ecken",
+              "Moleküle bestehen aus acht Atomen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Die Valenzelektronen als Punkte oder Striche"
+              "Atome streben acht Außenelektronen an"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:3",
-            "question": "Was besagt die Oktettregel?",
+            "question": "Was ist ein freies Elektronenpaar?",
             "options": [
-              "Atome haben immer 8 Protonen",
-              "Atome streben 8 Valenzelektronen an",
-              "Ionen haben 8 positive Ladungen",
-              "Moleküle bestehen aus 8 Atomen",
-              "Die Masse muss durch 8 teilbar sein"
+              "Elektronen die sich frei bewegen",
+              "Ungepaarte Elektronen im Orbital",
+              "Elektronen zwischen zwei Atomkernen",
+              "Zwei gepaarte nichtbindende Elektronen",
+              "Elektronen ohne Spin im s-Orbital"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Atome streben 8 Valenzelektronen an"
+              "Zwei gepaarte nichtbindende Elektronen"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:4",
-            "question": "Welche Ionen bildet Natriumchlorid?",
+            "question": "Was ist charakteristisch für ein Ionengitter?",
             "options": [
-              "Na²⁺ und Cl²⁻",
-              "Na⁺ und Cl⁻",
-              "Na⁻ und Cl⁺",
-              "Na³⁺ und Cl³⁻",
-              "Na und Cl (neutral)"
+              "Es besteht nur aus neutralen Molekülen",
+              "Die Teilchen sind ungeordnet verteilt",
+              "Es leitet Strom im festen Zustand",
+              "Es enthält nur kovalente Bindungen",
+              "Regelmäßige Anordnung von Ionen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Na⁺ und Cl⁻"
+              "Regelmäßige Anordnung von Ionen"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:5",
-            "question": "Was ist ein bindendes Elektronenpaar?",
+            "question": "Welche Elemente bilden typischerweise Kationen?",
             "options": [
-              "Ein Paar freier Elektronen",
-              "Zwei Elektronen, die von zwei Atomen geteilt werden",
-              "Zwei Protonen im Kern",
-              "Zwei Neutronen",
-              "Ein einzelnes Elektron"
+              "Die Metalle der ersten Hauptgruppen",
+              "Die Edelgase der achten Hauptgruppe",
+              "Die Halogene der siebten Gruppe",
+              "Nur die Elemente der Nebengruppen",
+              "Ausschließlich die Nichtmetalle"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Zwei Elektronen, die von zwei Atomen geteilt werden"
+              "Die Metalle der ersten Hauptgruppen"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:6",
-            "question": "Was ist ein freies Elektronenpaar (lone pair)?",
+            "question": "Was ist ein bindendes Elektronenpaar?",
             "options": [
-              "Ein Elektronenpaar in einer Bindung",
-              "Ein Elektronenpaar, das nicht an einer Bindung beteiligt ist",
-              "Ein ungepaartes Elektron",
-              "Elektronen im Atomkern",
-              "Elektronen in der ersten Schale"
+              "Elektronen die nur einem Atom gehören",
+              "Zwei Elektronen zwischen zwei Atomen",
+              "Alle Elektronen der inneren Schalen",
+              "Die Protonen im Molekül gemeinsam",
+              "Neutronen die Atome verbinden"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein Elektronenpaar, das nicht an einer Bindung beteiligt ist"
+              "Zwei Elektronen zwischen zwei Atomen"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:7",
-            "question": "Welches Element bildet typischerweise Kationen?",
+            "question": "Welches Element ist eine Ausnahme zur Oktettregel?",
             "options": [
-              "Chlor",
-              "Natrium",
-              "Sauerstoff",
-              "Fluor",
-              "Schwefel"
+              "Das Element Kohlenstoff mit vier Bindungen",
+              "Das Element Stickstoff mit drei Bindungen",
+              "Das Wasserstoffelement mit nur zwei",
+              "Das Element Sauerstoff mit zwei Bindungen",
+              "Das Element Fluor mit einer Bindung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Natrium"
+              "Das Wasserstoffelement mit nur zwei"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:8",
-            "question": "Wie wird eine Einfachbindung in der Lewis-Struktur dargestellt?",
+            "question": "Was ist die Gitterenergie?",
             "options": [
-              "Als ein einzelner Punkt",
-              "Als ein Strich zwischen zwei Atomen",
-              "Als drei Striche",
-              "Als Kreis",
-              "Als Dreieck"
+              "Die Wärme beim Schmelzen des Gitters",
+              "Die Energie zum Verdampfen von Ionen",
+              "Die kinetische Energie der Ionen",
+              "Energie bei Gitterbildung aus Ionen",
+              "Die Aktivierungsenergie der Reaktion"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Als ein Strich zwischen zwei Atomen"
+              "Energie bei Gitterbildung aus Ionen"
             ]
           },
           {
             "id": "08-ionenbindung-lewis:1:9",
-            "question": "Was ist Gitterenergie?",
+            "question": "Wie viele Punkte hat Sauerstoff in der Lewis-Formel?",
             "options": [
-              "Die Energie eines freien Ions",
-              "Die Energie zur Bildung des Ionengitters aus freien Ionen",
-              "Die kinetische Energie der Ionen",
-              "Die Energie der Kernspaltung",
-              "Die Wärme beim Schmelzen"
+              "Genau zwei Punkte für die Bindungen",
+              "Insgesamt vier Punkte dargestellt",
+              "Nur ein einziger Punkt vorhanden",
+              "Es werden gar keine Punkte gezeigt",
+              "Sechs Punkte für die Valenzelektronen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Die Energie zur Bildung des Ionengitters aus freien Ionen"
+              "Sechs Punkte für die Valenzelektronen"
             ]
           }
         ],
@@ -9847,189 +9847,187 @@
     },
     {
       "id": "09-polaritaet-vsepr",
-      "title": "Elektronegativität, Polarität & VSEPR",
+      "title": "Polarität & VSEPR-Modell",
       "questions": {
         "1": [
           {
             "id": "09-polaritaet-vsepr:1:0",
-            "question": "Was ist Elektronegativität?",
+            "question": "Was beschreibt die Elektronegativität?",
             "options": [
-              "Die Anzahl der Elektronen eines Atoms",
-              "Die Fähigkeit eines Atoms, Bindungselektronen anzuziehen",
-              "Die Masse des Atoms",
-              "Die Anzahl der Protonen",
-              "Die Ionisierungsenergie"
+              "Anziehungskraft auf Bindungselektronen",
+              "Die Anzahl der freien Elektronenpaare",
+              "Die Größe des jeweiligen Atomkerns",
+              "Die Masse der Valenzelektronen",
+              "Die Ladung der inneren Schalen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Die Fähigkeit eines Atoms, Bindungselektronen anzuziehen"
+              "Anziehungskraft auf Bindungselektronen"
             ]
           },
           {
             "id": "09-polaritaet-vsepr:1:1",
-            "question": "Welches Element hat die höchste Elektronegativität?",
+            "question": "Wann ist eine Bindung polar?",
             "options": [
-              "Sauerstoff",
-              "Chlor",
-              "Fluor",
-              "Stickstoff",
-              "Kohlenstoff"
+              "Wenn beide Atome identisch sind",
+              "Bei ungleicher Elektronenverteilung",
+              "Wenn keine Elektronen geteilt werden",
+              "Bei vollständiger Elektronenübertragung",
+              "Wenn das Molekül linear aufgebaut ist"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              2
+              1
             ],
             "correctAnswers": [
-              "Fluor"
+              "Bei ungleicher Elektronenverteilung"
             ]
           },
           {
             "id": "09-polaritaet-vsepr:1:2",
-            "question": "Was ist eine polare Bindung?",
-            "options": [
-              "Eine Bindung zwischen gleichen Atomen",
-              "Eine Bindung mit ungleicher Elektronenverteilung",
-              "Eine Ionenbindung",
-              "Eine metallische Bindung",
-              "Eine Wasserstoffbrückenbindung"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eine Bindung mit ungleicher Elektronenverteilung"
-            ]
-          },
-          {
-            "id": "09-polaritaet-vsepr:1:3",
             "question": "Wofür steht VSEPR?",
             "options": [
+              "Eine Methode zur Massenbestimmung",
+              "Ein Verfahren zur Farbmessung",
               "Valenzelektronenpaar-Abstoßungsmodell",
-              "Very Simple Electron Pair Reaction",
-              "Variable Structure Electron Pair Rule",
-              "Valence Shell Electron Pair Repulsion",
-              "Volume of Shell Electron Pairs"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              0,
-              3
-            ],
-            "correctAnswers": [
-              "Valenzelektronenpaar-Abstoßungsmodell",
-              "Valence Shell Electron Pair Repulsion"
-            ]
-          },
-          {
-            "id": "09-polaritaet-vsepr:1:4",
-            "question": "Was bestimmt die Molekülgeometrie nach VSEPR?",
-            "options": [
-              "Die Masse der Atome",
-              "Die Abstoßung zwischen Elektronenpaaren",
-              "Die Farbe des Moleküls",
-              "Die Temperatur",
-              "Der Druck"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Abstoßung zwischen Elektronenpaaren"
-            ]
-          },
-          {
-            "id": "09-polaritaet-vsepr:1:5",
-            "question": "Welche Form hat ein Molekül mit 4 Bindungspaaren und 0 freien Paaren?",
-            "options": [
-              "Linear",
-              "Gewinkelt",
-              "Tetraedrisch",
-              "Trigonal-planar",
-              "Oktaedrisch"
+              "Eine Technik zur Temperaturmessung",
+              "Ein System zur Dichteberechnung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "Tetraedrisch"
+              "Valenzelektronenpaar-Abstoßungsmodell"
+            ]
+          },
+          {
+            "id": "09-polaritaet-vsepr:1:3",
+            "question": "Welche Molekülform hat Methan nach VSEPR?",
+            "options": [
+              "Eine flache quadratische Anordnung",
+              "Eine lineare Struktur im Raum",
+              "Eine trigonal-pyramidale Form",
+              "Eine tetraedrische Geometrie",
+              "Eine trigonal-planare Struktur"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Eine tetraedrische Geometrie"
+            ]
+          },
+          {
+            "id": "09-polaritaet-vsepr:1:4",
+            "question": "Was ist ein Dipolmoment?",
+            "options": [
+              "Die Masse des gesamten Moleküls",
+              "Die Anzahl der Atome in der Formel",
+              "Der Siedepunkt einer Verbindung",
+              "Die Größe des jeweiligen Atomkerns",
+              "Maß für Ladungstrennung im Molekül"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Maß für Ladungstrennung im Molekül"
+            ]
+          },
+          {
+            "id": "09-polaritaet-vsepr:1:5",
+            "question": "Welches Molekül ist unpolar trotz polarer Bindungen?",
+            "options": [
+              "Kohlendioxid durch symmetrischen Bau",
+              "Wasser wegen der Winkelstruktur",
+              "Ammoniak mit drei Bindungspartnern",
+              "Fluorwasserstoff als kleine Verbindung",
+              "Schwefeldioxid durch gewinkelte Form"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              0
+            ],
+            "correctAnswers": [
+              "Kohlendioxid durch symmetrischen Bau"
             ]
           },
           {
             "id": "09-polaritaet-vsepr:1:6",
-            "question": "Was ist ein Dipolmoment?",
+            "question": "Was beeinflusst die Molekülgeometrie nach VSEPR?",
             "options": [
-              "Die Masse des Moleküls",
-              "Ein Maß für die Ladungstrennung im Molekül",
-              "Die Bindungsenergie",
-              "Die Reaktionsgeschwindigkeit",
-              "Die Siedetemperatur"
+              "Nur die Farbe der beteiligten Atome",
+              "Die Abstoßung der Elektronenpaare",
+              "Die Temperatur der Umgebung allein",
+              "Die Masse der einzelnen Atomkerne",
+              "Der Druck im umgebenden Medium"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein Maß für die Ladungstrennung im Molekül"
+              "Die Abstoßung der Elektronenpaare"
             ]
           },
           {
             "id": "09-polaritaet-vsepr:1:7",
-            "question": "Welche Form hat CO₂?",
+            "question": "Welche Form hat ein Molekül mit drei bindenden Paaren?",
             "options": [
-              "Gewinkelt",
-              "Linear",
-              "Tetraedrisch",
-              "Trigonal-planar",
-              "Pyramidal"
+              "Eine lineare Anordnung der Atome",
+              "Eine quadratisch-planare Struktur",
+              "Eine trigonal-planare Geometrie",
+              "Eine oktaedrische Raumstruktur",
+              "Eine T-förmige Molekülstruktur"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Linear"
+              "Eine trigonal-planare Geometrie"
             ]
           },
           {
             "id": "09-polaritaet-vsepr:1:8",
-            "question": "Was bedeutet es, wenn ein Molekül \"unpolar\" ist?",
+            "question": "Warum ist Wasser ein polares Molekül?",
             "options": [
-              "Es hat keine Bindungen",
-              "Die Ladungsverteilung ist symmetrisch",
-              "Es löst sich gut in Wasser",
-              "Es hat ionische Bindungen",
-              "Es ist ein Edelgas"
+              "Die Bindungen sind vollkommen unpolar",
+              "Es hat eine perfekt lineare Struktur",
+              "Alle Atome haben gleiche Elektronegativität",
+              "Durch gewinkelte Form und polare Bindungen",
+              "Wegen seiner extrem hohen Atommasse"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Die Ladungsverteilung ist symmetrisch"
+              "Durch gewinkelte Form und polare Bindungen"
             ]
           },
           {
             "id": "09-polaritaet-vsepr:1:9",
-            "question": "Welche Form hat Wasser (H₂O)?",
+            "question": "Was passiert bei großem Elektronegativitätsunterschied?",
             "options": [
-              "Linear",
-              "Gewinkelt",
-              "Tetraedrisch",
-              "Trigonal-planar",
-              "Pyramidal"
+              "Die Bindung wird zunehmend unpolar",
+              "Die Atome stoßen sich gegenseitig ab",
+              "Das Molekül wird immer symmetrischer",
+              "Die Bindungsenergie sinkt auf null",
+              "Die Bindung wird stärker polar/ionisch"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Gewinkelt"
+              "Die Bindung wird stärker polar/ionisch"
             ]
           }
         ],
@@ -10973,187 +10971,187 @@
     },
     {
       "id": "10-valenzbindung-hybridisierung-mo",
-      "title": "Valenzbindungstheorie, Hybridisierung & MO-Theorie",
+      "title": "Valenzbindung, Hybridisierung & MO-Theorie",
       "questions": {
         "1": [
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:0",
-            "question": "Was beschreibt die Valenzbindungstheorie (VB)?",
+            "question": "Was ist eine σ-Bindung?",
             "options": [
-              "Die Bewegung von Elektronen im Kern",
-              "Die Überlappung von Atomorbitalen zu Bindungen",
-              "Die Masse von Molekülen",
-              "Die Ionisierung von Atomen",
-              "Die Radioaktivität"
+              "Überlappung entlang der Kernachse",
+              "Seitliche Überlappung von Orbitalen",
+              "Eine rein elektrostatische Anziehung",
+              "Die Bindung in einem Ionengitter",
+              "Eine metallische Bindung im Kristall"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Die Überlappung von Atomorbitalen zu Bindungen"
+              "Überlappung entlang der Kernachse"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:1",
-            "question": "Was ist Hybridisierung?",
+            "question": "Was bedeutet sp³-Hybridisierung?",
             "options": [
-              "Die Spaltung von Molekülen",
-              "Die Mischung von Atomorbitalen zu neuen Hybridorbitalen",
-              "Die Bildung von Ionen",
-              "Eine chemische Reaktion",
-              "Die Trennung von Elektronen"
+              "Drei s-Orbitale und ein p-Orbital mischen",
+              "Ein s- und drei p-Orbitale verschmelzen",
+              "Vier d-Orbitale bilden neue Formen",
+              "Nur p-Orbitale werden kombiniert",
+              "Zwei s-Orbitale verbinden sich"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Die Mischung von Atomorbitalen zu neuen Hybridorbitalen"
+              "Ein s- und drei p-Orbitale verschmelzen"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:2",
-            "question": "Welche Hybridisierung hat Kohlenstoff in Methan (CH₄)?",
+            "question": "Was ist charakteristisch für π-Bindungen?",
             "options": [
-              "sp",
-              "sp²",
-              "sp³",
-              "sp³d",
-              "sp³d²"
+              "Direkte Überlappung entlang der Achse",
+              "Sie entstehen nur in Ionenverbindungen",
+              "Seitliche Überlappung von p-Orbitalen",
+              "Sie sind stärker als Sigma-Bindungen",
+              "Sie bilden sich nur bei Metallen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "sp³"
+              "Seitliche Überlappung von p-Orbitalen"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:3",
-            "question": "Was ist eine σ-Bindung (Sigma-Bindung)?",
+            "question": "Welche Hybridisierung hat Kohlenstoff in Methan?",
             "options": [
-              "Eine seitliche Überlappung von Orbitalen",
-              "Eine Überlappung entlang der Bindungsachse",
-              "Eine Ionenbindung",
-              "Eine Wasserstoffbrücke",
-              "Eine metallische Bindung"
+              "Eine sp-Hybridisierung mit zwei Orbitalen",
+              "Eine sp²-Hybridisierung für drei Partner",
+              "Keine Hybridisierung der Orbitale",
+              "Eine sp³-Hybridisierung für vier Partner",
+              "Eine d²sp³-Hybridisierung im Komplex"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Eine Überlappung entlang der Bindungsachse"
+              "Eine sp³-Hybridisierung für vier Partner"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:4",
-            "question": "Was ist eine π-Bindung (Pi-Bindung)?",
+            "question": "Was beschreibt die Bindungsordnung?",
             "options": [
-              "Eine Überlappung entlang der Bindungsachse",
-              "Eine seitliche Überlappung von p-Orbitalen",
-              "Eine Ionenbindung",
-              "Eine kovalente Einfachbindung",
-              "Eine Wasserstoffbrücke"
+              "Die Reihenfolge der Orbitalbesetzung",
+              "Die Anzahl der Protonen im Molekül",
+              "Die räumliche Anordnung der Atome",
+              "Die Temperatur der Bindungsbildung",
+              "Die Anzahl der Bindungen zwischen Atomen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Eine seitliche Überlappung von p-Orbitalen"
+              "Die Anzahl der Bindungen zwischen Atomen"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:5",
-            "question": "Was beschreibt die MO-Theorie (Molekülorbitaltheorie)?",
+            "question": "Was ist ein antibindendes Molekülorbital?",
             "options": [
-              "Elektronen in lokalisierten Atomorbitalen",
-              "Elektronen in Orbitalen, die das ganze Molekül umfassen",
-              "Die Masse des Moleküls",
-              "Nur ionische Bindungen",
-              "Kernspaltung"
+              "Ein Orbital das die Bindung schwächt",
+              "Ein besonders starkes Bindungsorbital",
+              "Ein Orbital nur im Atomkern",
+              "Ein nichtexistierendes Orbital",
+              "Ein Orbital ohne Elektronen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Elektronen in Orbitalen, die das ganze Molekül umfassen"
+              "Ein Orbital das die Bindung schwächt"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:6",
-            "question": "Was ist ein bindendes Molekülorbital?",
+            "question": "Wie viele Bindungen hat eine Dreifachbindung?",
             "options": [
-              "Ein MO mit höherer Energie als die Atomorbitale",
-              "Ein MO mit niedrigerer Energie als die Atomorbitale",
-              "Ein Orbital im Atomkern",
-              "Ein Orbital ohne Elektronen",
-              "Ein antibindendes Orbital"
+              "Drei Sigma-Bindungen hintereinander",
+              "Eine Sigma- und zwei Pi-Bindungen",
+              "Drei unabhängige Pi-Bindungen",
+              "Zwei Sigma- und eine Pi-Bindung",
+              "Nur eine sehr starke Bindung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein MO mit niedrigerer Energie als die Atomorbitale"
+              "Eine Sigma- und zwei Pi-Bindungen"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:7",
-            "question": "Was ist ein antibindendes Molekülorbital?",
+            "question": "Welchen Winkel hat ein sp³-hybridisiertes Atom?",
             "options": [
-              "Ein MO mit niedrigerer Energie",
-              "Ein MO mit höherer Energie und einer Knotenebene",
-              "Ein Orbital, das immer voll besetzt ist",
-              "Ein ionisches Orbital",
-              "Ein s-Orbital"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Ein MO mit höherer Energie und einer Knotenebene"
-            ]
-          },
-          {
-            "id": "10-valenzbindung-hybridisierung-mo:1:8",
-            "question": "Wie viele Hybridorbitale bilden sich bei sp³-Hybridisierung?",
-            "options": [
-              "2",
-              "3",
-              "4",
-              "5",
-              "6"
+              "Genau neunzig Grad zwischen Bindungen",
+              "Exakt einhundertachtzig Grad linear",
+              "Etwa einhundertneun Grad Tetraederwinkel",
+              "Genau einhundertzwanzig Grad planar",
+              "Variable Winkel ohne festen Wert"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "4"
+              "Etwa einhundertneun Grad Tetraederwinkel"
+            ]
+          },
+          {
+            "id": "10-valenzbindung-hybridisierung-mo:1:8",
+            "question": "Was passiert bei der Orbitalüberlappung?",
+            "options": [
+              "Die Elektronen werden zerstört",
+              "Die Atomkerne verschmelzen miteinander",
+              "Die Orbitale stoßen sich ab",
+              "Es entstehen Molekülorbitale",
+              "Die Neutronen werden freigesetzt"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Es entstehen Molekülorbitale"
             ]
           },
           {
             "id": "10-valenzbindung-hybridisierung-mo:1:9",
-            "question": "Was ist die Bindungsordnung?",
+            "question": "Welche Hybridisierung zeigt eine Doppelbindung?",
             "options": [
-              "Die Anzahl der Atome im Molekül",
-              "Die Anzahl der Elektronenpaare zwischen zwei Atomen",
-              "Die Masse des Moleküls",
-              "Die Ladung des Ions",
-              "Die Anzahl der Protonen"
+              "Immer eine sp³-Hybridisierung",
+              "Keine Hybridisierung erforderlich",
+              "Ausschließlich d-Orbital-Beteiligung",
+              "Eine reine s-Orbital-Kombination",
+              "Typischerweise sp²-Hybridisierung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Die Anzahl der Elektronenpaare zwischen zwei Atomen"
+              "Typischerweise sp²-Hybridisierung"
             ]
           }
         ],
@@ -12103,187 +12101,187 @@
     },
     {
       "id": "11-thermodynamik-enthalpie",
-      "title": "Thermodynamik & Enthalpie",
+      "title": "Thermodynamik & Reaktionsenthalpie",
       "questions": {
         "1": [
           {
             "id": "11-thermodynamik-enthalpie:1:0",
-            "question": "Was ist Enthalpie (H)?",
+            "question": "Was ist eine exotherme Reaktion?",
             "options": [
-              "Die Masse eines Systems",
-              "Der Wärmeinhalt eines Systems bei konstantem Druck",
-              "Die Geschwindigkeit einer Reaktion",
-              "Die Elektronegativität",
-              "Die Temperatur"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Der Wärmeinhalt eines Systems bei konstantem Druck"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:1",
-            "question": "Was bedeutet \"exotherm\"?",
-            "options": [
-              "Die Reaktion nimmt Wärme auf",
-              "Die Reaktion gibt Wärme ab",
-              "Die Reaktion ist im Gleichgewicht",
-              "Keine Energieänderung",
-              "Die Reaktion benötigt Katalysator"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Reaktion gibt Wärme ab"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:2",
-            "question": "Was ist ΔH?",
-            "options": [
-              "Die Änderung der Masse",
-              "Die Änderung der Enthalpie",
-              "Die Reaktionsgeschwindigkeit",
-              "Die Temperatur",
-              "Die Konzentration"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Änderung der Enthalpie"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:3",
-            "question": "Was besagt der Satz von Hess?",
-            "options": [
-              "Die Enthalpieänderung ist wegunabhängig",
-              "Alle Reaktionen sind exotherm",
-              "Die Masse bleibt erhalten",
-              "Die Temperatur ist konstant",
-              "Katalysatoren ändern ΔH"
+              "Eine Reaktion die Wärme freisetzt",
+              "Eine Umwandlung die Energie aufnimmt",
+              "Ein Prozess ohne Energieveränderung",
+              "Eine Reaktion nur bei hohen Drücken",
+              "Ein Vorgang der Licht absorbiert"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Die Enthalpieänderung ist wegunabhängig"
+              "Eine Reaktion die Wärme freisetzt"
             ]
           },
           {
-            "id": "11-thermodynamik-enthalpie:1:4",
-            "question": "Was ist die Standardbildungsenthalpie?",
+            "id": "11-thermodynamik-enthalpie:1:1",
+            "question": "Was beschreibt die Enthalpie H?",
             "options": [
-              "Die Energie bei Raumtemperatur",
-              "ΔH für die Bildung von 1 mol Verbindung aus Elementen",
-              "Die Masse des Produkts",
-              "Die Siedetemperatur",
-              "Die Elektronenaffinität"
+              "Die Geschwindigkeit einer Reaktion",
+              "Den Wärmeinhalt eines Systems",
+              "Die Anzahl der Reaktionspartner",
+              "Die elektrische Leitfähigkeit",
+              "Den Aggregatzustand der Produkte"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "ΔH für die Bildung von 1 mol Verbindung aus Elementen"
+              "Den Wärmeinhalt eines Systems"
             ]
           },
           {
-            "id": "11-thermodynamik-enthalpie:1:5",
-            "question": "Was ist die Standardbedingung für thermodynamische Daten?",
+            "id": "11-thermodynamik-enthalpie:1:2",
+            "question": "Was bedeutet ein negatives ΔH?",
             "options": [
-              "0°C und 1 atm",
-              "25°C und 1 bar",
-              "100°C und 1 atm",
-              "0 K und 0 bar",
-              "50°C und 2 bar"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "25°C und 1 bar"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:6",
-            "question": "Welches Vorzeichen hat ΔH bei einer exothermen Reaktion?",
-            "options": [
-              "Positiv (+)",
-              "Negativ (-)",
-              "Null",
-              "Unbekannt",
-              "Immer 100"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Negativ (-)"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:7",
-            "question": "Was ist eine endotherme Reaktion?",
-            "options": [
-              "Eine Reaktion, die Wärme abgibt",
-              "Eine Reaktion, die Wärme aufnimmt",
-              "Eine Reaktion ohne Energieänderung",
-              "Eine sehr schnelle Reaktion",
-              "Eine Reaktion mit Katalysator"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Eine Reaktion, die Wärme aufnimmt"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:8",
-            "question": "Was ist die Bindungsenergie?",
-            "options": [
-              "Die Masse einer Bindung",
-              "Die Energie zum Brechen einer Bindung",
-              "Die Länge einer Bindung",
-              "Die Elektronegativität",
-              "Die Anzahl der Bindungen"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              1
-            ],
-            "correctAnswers": [
-              "Die Energie zum Brechen einer Bindung"
-            ]
-          },
-          {
-            "id": "11-thermodynamik-enthalpie:1:9",
-            "question": "Was ist die Einheit der Enthalpie?",
-            "options": [
-              "Kelvin",
-              "Kilogramm",
-              "Joule oder kJ/mol",
-              "Meter",
-              "Sekunde"
+              "Die Reaktion benötigt Energiezufuhr",
+              "Das System bleibt energetisch neutral",
+              "Es wird Wärme an die Umgebung abgegeben",
+              "Die Temperatur sinkt im Reaktionsgefäß",
+              "Keine chemische Reaktion findet statt"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               2
             ],
             "correctAnswers": [
-              "Joule oder kJ/mol"
+              "Es wird Wärme an die Umgebung abgegeben"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:3",
+            "question": "Was besagt der Satz von Hess?",
+            "options": [
+              "Alle Reaktionen sind endotherm",
+              "Reaktionswärme ist immer positiv",
+              "Enthalpie hängt vom Druck ab",
+              "Enthalpie ist wegunabhängig",
+              "Nur Gase zeigen Wärmeeffekte"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Enthalpie ist wegunabhängig"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:4",
+            "question": "Was ist die Standardbildungsenthalpie?",
+            "options": [
+              "Die Energie zum Schmelzen eines Stoffes",
+              "Die Wärme beim Verdampfen einer Substanz",
+              "Die Energie einer Neutralisationsreaktion",
+              "Der Wärmeinhalt eines idealen Gases",
+              "Wärme bei Bildung aus den Elementen"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Wärme bei Bildung aus den Elementen"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:5",
+            "question": "Was misst ein Kalorimeter?",
+            "options": [
+              "Die Wärmemenge bei einer Reaktion",
+              "Den Druck in einem geschlossenen Gefäß",
+              "Die Lichtintensität einer Flamme",
+              "Die Geschwindigkeit der Teilchen",
+              "Das Volumen eines Gases"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              0
+            ],
+            "correctAnswers": [
+              "Die Wärmemenge bei einer Reaktion"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:6",
+            "question": "Was ist charakteristisch für endotherme Reaktionen?",
+            "options": [
+              "Sie laufen spontan und schnell ab",
+              "Sie nehmen Wärme aus der Umgebung auf",
+              "Sie setzen große Mengen Licht frei",
+              "Sie finden nur in Flüssigkeiten statt",
+              "Sie benötigen keine Aktivierungsenergie"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              1
+            ],
+            "correctAnswers": [
+              "Sie nehmen Wärme aus der Umgebung auf"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:7",
+            "question": "In welcher Einheit wird Enthalpie angegeben?",
+            "options": [
+              "In Grad Celsius oder Kelvin",
+              "In Mol pro Liter Lösung",
+              "In Kilojoule pro Mol Substanz",
+              "In Pascal oder Bar Druck",
+              "In Gramm pro Kubikzentimeter"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              2
+            ],
+            "correctAnswers": [
+              "In Kilojoule pro Mol Substanz"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:8",
+            "question": "Was passiert bei der Verbrennung von Methan?",
+            "options": [
+              "Das System nimmt Wärme auf",
+              "Die Umgebung kühlt sich ab",
+              "Keine Energieänderung tritt auf",
+              "Wärme wird an die Umgebung abgegeben",
+              "Nur Lichtenergie wird freigesetzt"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              3
+            ],
+            "correctAnswers": [
+              "Wärme wird an die Umgebung abgegeben"
+            ]
+          },
+          {
+            "id": "11-thermodynamik-enthalpie:1:9",
+            "question": "Was bedeutet Standardbedingungen in der Thermodynamik?",
+            "options": [
+              "Druck von 10 Bar und 500 Kelvin Temperatur",
+              "Vakuum bei 0 Kelvin absoluter Nullpunkt",
+              "Variable Werte je nach Stoffeigenschaft",
+              "Umgebung bei 100 Grad Celsius Siedepunkt",
+              "Raumtemperatur von 298 K und 1 Bar Druck"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              4
+            ],
+            "correctAnswers": [
+              "Raumtemperatur von 298 K und 1 Bar Druck"
             ]
           }
         ],
@@ -13592,187 +13590,187 @@
     },
     {
       "id": "12-aggregatzustaende-phasen",
-      "title": "Aggregatzustände & Phasenübergänge",
+      "title": "Aggregatzustände & Phasendiagramme",
       "questions": {
         "1": [
           {
             "id": "12-aggregatzustaende-phasen:1:0",
-            "question": "Was sind die drei klassischen Aggregatzustände?",
+            "question": "Was passiert beim Schmelzen eines Feststoffs?",
             "options": [
-              "Flüssig, gasförmig, ionisch",
-              "Fest, flüssig, gasförmig",
-              "Kristallin, amorph, plasma",
-              "Solid, liquid, vapor",
-              "Nur fest und flüssig"
+              "Übergang von fest zu flüssig",
+              "Umwandlung von Gas zu Feststoff",
+              "Direkte Verdampfung ohne Zwischenstufe",
+              "Kondensation von Dampf zu Eis",
+              "Zerlegung in die einzelnen Atome"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Fest, flüssig, gasförmig"
+              "Übergang von fest zu flüssig"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:1",
-            "question": "Was passiert beim Schmelzen?",
+            "question": "Was zeigt ein Phasendiagramm?",
             "options": [
-              "Ein Feststoff wird gasförmig",
-              "Ein Feststoff wird flüssig",
-              "Eine Flüssigkeit wird fest",
-              "Ein Gas wird flüssig",
-              "Ein Gas wird fest"
+              "Die chemische Zusammensetzung einer Probe",
+              "Aggregatzustände bei Druck und Temperatur",
+              "Die Geschwindigkeit chemischer Reaktionen",
+              "Die elektrische Leitfähigkeit eines Stoffes",
+              "Die Kristallstruktur von Festkörpern"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein Feststoff wird flüssig"
+              "Aggregatzustände bei Druck und Temperatur"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:2",
-            "question": "Was ist Sublimation?",
+            "question": "Was ist der Tripelpunkt?",
             "options": [
-              "Fest direkt zu Gas ohne flüssige Phase",
-              "Flüssig zu Gas",
-              "Gas zu Flüssig",
-              "Flüssig zu Fest",
-              "Gas zu Fest"
+              "Der Punkt höchster Temperatur",
+              "Der Schnittpunkt dreier Phasengrenzen",
+              "Koexistenz aller drei Aggregatzustände",
+              "Die kritische Dichte eines Stoffes",
+              "Der niedrigste erreichbare Druck"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              2
             ],
             "correctAnswers": [
-              "Fest direkt zu Gas ohne flüssige Phase"
+              "Koexistenz aller drei Aggregatzustände"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:3",
-            "question": "Was ist der Siedepunkt?",
+            "question": "Was ist Sublimation?",
             "options": [
-              "Die Temperatur, bei der ein Stoff schmilzt",
-              "Die Temperatur, bei der der Dampfdruck gleich dem Außendruck ist",
-              "Die Temperatur, bei der ein Stoff fest wird",
-              "Die niedrigste mögliche Temperatur",
-              "Die Raumtemperatur"
+              "Der Übergang von flüssig zu gasförmig",
+              "Das Schmelzen eines kristallinen Stoffes",
+              "Die Kondensation von Dampf zu Wasser",
+              "Direkter Übergang von fest zu gasförmig",
+              "Das Gefrieren einer Flüssigkeit"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Die Temperatur, bei der der Dampfdruck gleich dem Außendruck ist"
+              "Direkter Übergang von fest zu gasförmig"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:4",
-            "question": "Was ist Verdampfung?",
+            "question": "Was kennzeichnet den kritischen Punkt?",
             "options": [
-              "Der Übergang von fest zu flüssig",
-              "Der Übergang von flüssig zu gasförmig",
-              "Der Übergang von gas zu flüssig",
-              "Der Übergang von fest zu gas",
-              "Eine chemische Reaktion"
+              "Gas und Flüssigkeit sind unterscheidbar",
+              "Der Stoff existiert nur als Feststoff",
+              "Der Dampfdruck erreicht sein Minimum",
+              "Alle drei Phasen existieren gemeinsam",
+              "Kein Unterschied mehr zwischen Phasen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Der Übergang von flüssig zu gasförmig"
+              "Kein Unterschied mehr zwischen Phasen"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:5",
-            "question": "Was ist Kondensation?",
+            "question": "Was beschreibt der Dampfdruck?",
             "options": [
-              "Gas wird zu Flüssigkeit",
-              "Flüssigkeit wird zu Gas",
-              "Fest wird zu Flüssigkeit",
-              "Flüssigkeit wird zu Fest",
-              "Fest wird zu Gas"
+              "Druck des Dampfes über der Flüssigkeit",
+              "Die Masse des verdampften Materials",
+              "Die Temperatur beim Siedevorgang",
+              "Die Viskosität einer Flüssigkeit",
+              "Die Wärmeleitfähigkeit des Dampfes"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Gas wird zu Flüssigkeit"
+              "Druck des Dampfes über der Flüssigkeit"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:6",
-            "question": "Was ist ein Phasendiagramm?",
+            "question": "Was passiert bei der Kondensation?",
             "options": [
-              "Ein Diagramm der chemischen Struktur",
-              "Ein Diagramm, das zeigt welche Phase bei P und T stabil ist",
-              "Ein Diagramm der Elektronenkonfiguration",
-              "Ein Bindungsdiagramm",
-              "Ein Reaktionsschema"
+              "Ein Feststoff wird zu einem Gas",
+              "Gas wird zu einer Flüssigkeit",
+              "Eine Flüssigkeit gefriert zu Eis",
+              "Ein Kristall schmilzt zu Flüssigkeit",
+              "Ein Stoff zersetzt sich in Elemente"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein Diagramm, das zeigt welche Phase bei P und T stabil ist"
+              "Gas wird zu einer Flüssigkeit"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:7",
-            "question": "Was ist der Tripelpunkt?",
+            "question": "Wie verändert sich der Siedepunkt mit dem Druck?",
             "options": [
-              "Der Punkt, an dem alle drei Phasen koexistieren",
-              "Der höchste Siedepunkt",
-              "Der tiefste Schmelzpunkt",
-              "Die normale Siedetemperatur",
-              "Der Gefrierpunkt"
+              "Er bleibt immer konstant bei 100 Grad",
+              "Er sinkt bei zunehmendem Druck stark",
+              "Er steigt mit zunehmendem Druck an",
+              "Er ist unabhängig von äußeren Faktoren",
+              "Er schwankt zufällig ohne Zusammenhang"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              2
             ],
             "correctAnswers": [
-              "Der Punkt, an dem alle drei Phasen koexistieren"
+              "Er steigt mit zunehmendem Druck an"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:8",
-            "question": "Was versteht man unter Dampfdruck?",
+            "question": "Was passiert beim Erstarren?",
             "options": [
-              "Der Druck einer Flüssigkeit",
-              "Der Druck des Dampfes im Gleichgewicht mit seiner Flüssigkeit",
-              "Der atmosphärische Druck",
-              "Der Druck im Vakuum",
-              "Der Druck bei 0°C"
+              "Eine Substanz wird gasförmig",
+              "Der Stoff löst sich in Wasser auf",
+              "Die Temperatur steigt stark an",
+              "Flüssigkeit wird zum Festkörper",
+              "Gas kondensiert zu einer Flüssigkeit"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Der Druck des Dampfes im Gleichgewicht mit seiner Flüssigkeit"
+              "Flüssigkeit wird zum Festkörper"
             ]
           },
           {
             "id": "12-aggregatzustaende-phasen:1:9",
-            "question": "Was ist der kritische Punkt?",
+            "question": "Was ist Resublimation?",
             "options": [
-              "Der Gefrierpunkt",
-              "Der Punkt, oberhalb dessen keine Verflüssigung durch Druck möglich ist",
-              "Der normale Siedepunkt",
-              "Der Schmelzpunkt",
-              "Der Tripelpunkt"
+              "Der Übergang von flüssig zu gasförmig",
+              "Das Schmelzen bei hohem Druck",
+              "Die Verdampfung einer Lösung",
+              "Das Sieden bei Normaldruck",
+              "Direkter Übergang von Gas zu Feststoff"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Der Punkt, oberhalb dessen keine Verflüssigung durch Druck möglich ist"
+              "Direkter Übergang von Gas zu Feststoff"
             ]
           }
         ],
@@ -14725,180 +14723,180 @@
             "id": "13-kolligative-eigenschaften:1:0",
             "question": "Was sind kolligative Eigenschaften?",
             "options": [
-              "Eigenschaften, die von der Art der gelösten Teilchen abhängen",
-              "Eigenschaften, die nur von der Anzahl der gelösten Teilchen abhängen",
-              "Eigenschaften, die von der Farbe abhängen",
-              "Chemische Reaktionen",
-              "Eigenschaften des reinen Lösungsmittels"
+              "Eigenschaften abhängig von Teilchenzahl",
+              "Eigenschaften die von der Masse abhängen",
+              "Charakteristika nur für reine Stoffe",
+              "Merkmale die von der Farbe abhängen",
+              "Eigenschaften bestimmt durch Kristallform"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              0
             ],
             "correctAnswers": [
-              "Eigenschaften, die nur von der Anzahl der gelösten Teilchen abhängen"
+              "Eigenschaften abhängig von Teilchenzahl"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:1",
-            "question": "Was ist Dampfdruckerniedrigung?",
+            "question": "Was passiert mit dem Siedepunkt bei gelöstem Stoff?",
             "options": [
-              "Die Erhöhung des Dampfdrucks durch gelöste Stoffe",
-              "Die Senkung des Dampfdrucks durch gelöste Teilchen",
-              "Die Änderung der Farbe",
-              "Die chemische Reaktion mit Wasser",
-              "Die Erhöhung der Viskosität"
+              "Der Siedepunkt bleibt unverändert",
+              "Der Siedepunkt erhöht sich",
+              "Der Siedepunkt sinkt deutlich",
+              "Der Siedepunkt schwankt zufällig",
+              "Der Siedepunkt ist nicht messbar"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Die Senkung des Dampfdrucks durch gelöste Teilchen"
+              "Der Siedepunkt erhöht sich"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:2",
-            "question": "Was ist Siedepunktserhöhung?",
+            "question": "Was bewirkt Salz auf Eis?",
             "options": [
-              "Der Siedepunkt sinkt durch gelöste Stoffe",
-              "Der Siedepunkt steigt durch gelöste Teilchen",
-              "Der Siedepunkt bleibt konstant",
-              "Der Schmelzpunkt sinkt",
-              "Die Lösung verdampft nicht"
+              "Die Schmelztemperatur steigt an",
+              "Das Eis wird stabiler und härter",
+              "Der Gefrierpunkt wird erniedrigt",
+              "Das Eis verdampft schneller",
+              "Es passiert keine Veränderung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Der Siedepunkt steigt durch gelöste Teilchen"
+              "Der Gefrierpunkt wird erniedrigt"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:3",
-            "question": "Was ist Gefrierpunktserniedrigung?",
+            "question": "Was ist der osmotische Druck?",
             "options": [
-              "Der Gefrierpunkt steigt durch gelöste Stoffe",
-              "Der Gefrierpunkt sinkt durch gelöste Teilchen",
-              "Der Gefrierpunkt bleibt gleich",
-              "Die Lösung gefriert sofort",
-              "Der Siedepunkt sinkt"
+              "Der Dampfdruck über einer Lösung",
+              "Die Kraft beim Schmelzen von Eis",
+              "Die Kompressibilität einer Flüssigkeit",
+              "Druck durch Wasserbewegung durch Membran",
+              "Der atmosphärische Luftdruck"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              3
             ],
             "correctAnswers": [
-              "Der Gefrierpunkt sinkt durch gelöste Teilchen"
+              "Druck durch Wasserbewegung durch Membran"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:4",
-            "question": "Was ist Osmose?",
+            "question": "Was beschreibt das Raoultsche Gesetz?",
             "options": [
-              "Die Diffusion von gelösten Stoffen",
-              "Der Fluss von Lösungsmittel durch eine semipermeable Membran",
-              "Eine chemische Reaktion",
-              "Die Verdampfung von Wasser",
-              "Die Auflösung von Salz"
+              "Den Zusammenhang von Druck und Volumen",
+              "Die Abhängigkeit der Viskosität",
+              "Die Änderung der Löslichkeit",
+              "Die Kristallisationsgeschwindigkeit",
+              "Die Dampfdruckerniedrigung durch Lösung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Der Fluss von Lösungsmittel durch eine semipermeable Membran"
+              "Die Dampfdruckerniedrigung durch Lösung"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:5",
-            "question": "Was ist osmotischer Druck?",
+            "question": "Wovon hängen kolligative Eigenschaften ab?",
             "options": [
-              "Der Druck, der nötig ist um Osmose zu stoppen",
-              "Der Dampfdruck",
-              "Der atmosphärische Druck",
-              "Der Druck im Vakuum",
-              "Der Wasserdruck"
+              "Von der Anzahl gelöster Teilchen",
+              "Von der Farbe des gelösten Stoffes",
+              "Von der chemischen Formel allein",
+              "Von der Kristallstruktur des Stoffes",
+              "Von der Größe der Lösungsmittelmoleküle"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Der Druck, der nötig ist um Osmose zu stoppen"
+              "Von der Anzahl gelöster Teilchen"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:6",
-            "question": "Was bedeutet \"semipermeabel\"?",
+            "question": "Was ist eine semipermeable Membran?",
             "options": [
-              "Für alle Stoffe durchlässig",
-              "Für das Lösungsmittel durchlässig, nicht für gelöste Stoffe",
-              "Für nichts durchlässig",
-              "Nur für Gase durchlässig",
-              "Nur für Feststoffe durchlässig"
+              "Eine für alle Stoffe durchlässige Schicht",
+              "Eine selektiv durchlässige Trennschicht",
+              "Eine vollständig undurchlässige Barriere",
+              "Eine Schicht die nur Gase durchlässt",
+              "Ein Filter der alle Ionen zurückhält"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Für das Lösungsmittel durchlässig, nicht für gelöste Stoffe"
+              "Eine selektiv durchlässige Trennschicht"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:7",
-            "question": "Warum streut man Salz auf vereiste Straßen?",
+            "question": "Was ist der van-t-Hoff-Faktor?",
             "options": [
-              "Um den Gefrierpunkt zu erhöhen",
-              "Um den Gefrierpunkt zu erniedrigen",
-              "Um die Straße zu färben",
-              "Um chemische Reaktionen auszulösen",
-              "Um den Dampfdruck zu erhöhen"
+              "Die Molmasse eines gelösten Stoffes",
+              "Die Dichte einer wässrigen Lösung",
+              "Faktor für Teilchenzahl durch Dissoziation",
+              "Die Temperaturabhängigkeit der Löslichkeit",
+              "Der Koeffizient der Wärmeleitfähigkeit"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Um den Gefrierpunkt zu erniedrigen"
+              "Faktor für Teilchenzahl durch Dissoziation"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:8",
-            "question": "Was ist der van't Hoff-Faktor (i)?",
+            "question": "Was passiert bei der Osmose?",
             "options": [
-              "Die Anzahl der Teilchen, in die ein Stoff dissoziiert",
-              "Die Molmasse",
-              "Die Konzentration",
-              "Die Temperatur",
-              "Der Druck"
+              "Gelöste Stoffe wandern durch eine Membran",
+              "Die Lösung verdampft vollständig",
+              "Feststoffe lösen sich im Wasser auf",
+              "Wasser wandert zur konzentrierteren Seite",
+              "Die Membran löst sich langsam auf"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              3
             ],
             "correctAnswers": [
-              "Die Anzahl der Teilchen, in die ein Stoff dissoziiert"
+              "Wasser wandert zur konzentrierteren Seite"
             ]
           },
           {
             "id": "13-kolligative-eigenschaften:1:9",
-            "question": "Welchen van't Hoff-Faktor hat NaCl in Wasser?",
+            "question": "Welche Stoffe zeigen die größte Siedepunktserhöhung?",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4",
-              "0"
+              "Stoffe die sich gar nicht auflösen",
+              "Substanzen mit sehr großer Molmasse",
+              "Nur reine organische Verbindungen",
+              "Gase unter sehr hohem Druck",
+              "Elektrolyte die in Ionen zerfallen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "2"
+              "Elektrolyte die in Ionen zerfallen"
             ]
           }
         ],
@@ -16190,182 +16188,182 @@
         "1": [
           {
             "id": "14-saeuren-basen-fortgeschritten:1:0",
-            "question": "Was ist der pKs-Wert?",
+            "question": "Was gibt der pH-Wert an?",
             "options": [
-              "Der negative dekadische Logarithmus der Säurekonstante Ks",
-              "Der pH-Wert einer Säure",
-              "Die Konzentration der Säure",
-              "Die Molmasse der Säure",
-              "Der Siedepunkt der Säure"
+              "Die Konzentration an Wasserstoffionen",
+              "Die Masse des gelösten Salzes",
+              "Die Temperatur der wässrigen Lösung",
+              "Das Volumen der verwendeten Säure",
+              "Die Dichte der chemischen Verbindung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Der negative dekadische Logarithmus der Säurekonstante Ks"
+              "Die Konzentration an Wasserstoffionen"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:1",
-            "question": "Was ist ein Puffer?",
+            "question": "Was bedeutet ein pH-Wert von sieben?",
             "options": [
-              "Eine reine Säure",
-              "Ein System das den pH-Wert bei Zugabe von Säure/Base stabilisiert",
-              "Eine starke Base",
-              "Reines Wasser",
-              "Ein Indikator"
+              "Die Lösung ist stark basisch",
+              "Die Lösung ist neutral",
+              "Die Lösung ist stark sauer",
+              "Die Lösung enthält kein Wasser",
+              "Die Konzentration ist unbekannt"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Ein System das den pH-Wert bei Zugabe von Säure/Base stabilisiert"
+              "Die Lösung ist neutral"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:2",
-            "question": "Woraus besteht ein Puffersystem?",
+            "question": "Was ist ein Puffersystem?",
             "options": [
-              "Nur aus einer starken Säure",
-              "Aus schwacher Säure und ihrer konjugierten Base",
-              "Nur aus Wasser",
-              "Aus zwei starken Säuren",
-              "Aus einem Indikator"
+              "Eine Lösung die sofort reagiert",
+              "Ein Gemisch das Farbe wechselt",
+              "Lösung die pH-Änderung abfängt",
+              "Eine rein anorganische Verbindung",
+              "Ein System ohne chemische Reaktion"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              2
             ],
             "correctAnswers": [
-              "Aus schwacher Säure und ihrer konjugierten Base"
+              "Lösung die pH-Änderung abfängt"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:3",
-            "question": "Was ist die Henderson-Hasselbalch-Gleichung?",
+            "question": "Was beschreibt der pKs-Wert?",
             "options": [
-              "pH = pKs + log([A⁻]/[HA])",
-              "pH = -log[H⁺]",
-              "pOH = -log[OH⁻]",
-              "Kw = [H⁺][OH⁻]",
-              "n = m/M"
+              "Die Molmasse einer Säure in Gramm",
+              "Die Löslichkeit in organischen Medien",
+              "Die Farbe einer sauren Lösung",
+              "Die Säurestärke als logarithmische Größe",
+              "Die Schmelztemperatur der Säure"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              3
             ],
             "correctAnswers": [
-              "pH = pKs + log([A⁻]/[HA])"
+              "Die Säurestärke als logarithmische Größe"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:4",
-            "question": "Was ist der Äquivalenzpunkt bei einer Titration?",
+            "question": "Was ist die konjugierte Base einer Säure?",
             "options": [
-              "Der Startpunkt der Titration",
-              "Der Punkt, an dem Säure und Base genau neutralisiert sind",
-              "Der Endpunkt der Messung",
-              "Der pH-Wert 7",
-              "Die maximale Pufferkapazität"
+              "Eine völlig unabhängige Substanz",
+              "Das Lösungsmittel der Reaktion",
+              "Ein neutrales Salz der Reaktion",
+              "Der Katalysator einer Umwandlung",
+              "Die Säure nach Protonenabgabe"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              1
+              4
             ],
             "correctAnswers": [
-              "Der Punkt, an dem Säure und Base genau neutralisiert sind"
+              "Die Säure nach Protonenabgabe"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:5",
-            "question": "Was ist ein Indikator?",
+            "question": "Was ist ein Indikator in der Säure-Base-Chemie?",
             "options": [
-              "Ein Stoff, der seine Farbe je nach pH-Wert ändert",
-              "Ein starker Säure",
-              "Ein Lösungsmittel",
-              "Ein Katalysator",
-              "Ein Puffer"
+              "Stoff der Farbe bei pH-Änderung wechselt",
+              "Ein Katalysator für die Neutralisation",
+              "Das Lösungsmittel der chemischen Reaktion",
+              "Ein Messinstrument für die Temperatur",
+              "Eine Schutzschicht gegen Korrosion"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Ein Stoff, der seine Farbe je nach pH-Wert ändert"
+              "Stoff der Farbe bei pH-Änderung wechselt"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:6",
-            "question": "Was beschreibt die Säurekonstante Ks?",
+            "question": "Was ist die Henderson-Hasselbalch-Gleichung?",
             "options": [
-              "Die Stärke einer Säure (Dissoziationsgleichgewicht)",
-              "Die Konzentration",
-              "Das Volumen",
-              "Die Temperatur",
-              "Die Farbe"
-            ],
-            "type": "multiple-choice",
-            "correctIndices": [
-              0
-            ],
-            "correctAnswers": [
-              "Die Stärke einer Säure (Dissoziationsgleichgewicht)"
-            ]
-          },
-          {
-            "id": "14-saeuren-basen-fortgeschritten:1:7",
-            "question": "Was bedeutet ein niedriger pKs-Wert?",
-            "options": [
-              "Schwache Säure",
-              "Starke Säure",
-              "Neutral",
-              "Basisch",
-              "Keine Reaktion"
+              "Formel für die Dichte von Lösungen",
+              "Berechnung des pH-Werts von Puffern",
+              "Gleichung für den osmotischen Druck",
+              "Formel für die Reaktionsgeschwindigkeit",
+              "Berechnung der Aktivierungsenergie"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Starke Säure"
+              "Berechnung des pH-Werts von Puffern"
+            ]
+          },
+          {
+            "id": "14-saeuren-basen-fortgeschritten:1:7",
+            "question": "Was definiert Brønsted-Lowry als Säure?",
+            "options": [
+              "Einen Stoff der Elektronen aufnimmt",
+              "Eine Substanz die nur in Wasser reagiert",
+              "Einen Protonendonator in der Reaktion",
+              "Ein Metall das Wasserstoff freisetzt",
+              "Eine Verbindung mit Sauerstoffatomen"
+            ],
+            "type": "multiple-choice",
+            "correctIndices": [
+              2
+            ],
+            "correctAnswers": [
+              "Einen Protonendonator in der Reaktion"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:8",
-            "question": "Was ist der pKb-Wert?",
+            "question": "Was passiert am Äquivalenzpunkt einer Titration?",
             "options": [
-              "Der negative dekadische Logarithmus der Basenkonstante Kb",
-              "Der pH-Wert einer Base",
-              "Die Konzentration der Base",
-              "Die Molmasse der Base",
-              "Der pKs-Wert"
+              "Die Lösung beginnt zu kristallisieren",
+              "Der Indikator verliert seine Wirkung",
+              "Die Reaktionsgeschwindigkeit wird null",
+              "Säure und Base sind vollständig umgesetzt",
+              "Die Temperatur erreicht ihren Höchstwert"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              3
             ],
             "correctAnswers": [
-              "Der negative dekadische Logarithmus der Basenkonstante Kb"
+              "Säure und Base sind vollständig umgesetzt"
             ]
           },
           {
             "id": "14-saeuren-basen-fortgeschritten:1:9",
-            "question": "Welche Beziehung gilt für pKs und pKb eines konjugierten Säure-Base-Paares?",
+            "question": "Was ist eine Lewis-Säure?",
             "options": [
-              "pKs + pKb = 14 (bei 25°C)",
-              "pKs = pKb",
-              "pKs - pKb = 7",
-              "pKs × pKb = 14",
-              "pKs / pKb = 1"
+              "Ein Stoff der Protonen abgibt",
+              "Eine Verbindung die Hydroxid bildet",
+              "Ein Molekül das Wasser spaltet",
+              "Eine Base nach der Arrhenius-Definition",
+              "Ein Elektronenpaar-Akzeptor"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              4
             ],
             "correctAnswers": [
-              "pKs + pKb = 14 (bei 25°C)"
+              "Ein Elektronenpaar-Akzeptor"
             ]
           }
         ],
@@ -17656,187 +17654,187 @@
     },
     {
       "id": "15-elektrochemie-redox",
-      "title": "Elektrochemie & Redox",
+      "title": "Elektrochemie, Redox & Elektrolyse",
       "questions": {
         "1": [
           {
             "id": "15-elektrochemie-redox:1:0",
-            "question": "Was ist eine Oxidation?",
+            "question": "Was passiert bei einer Oxidation?",
             "options": [
-              "Abgabe von Elektronen",
-              "Aufnahme von Elektronen",
-              "Abgabe von Protonen",
-              "Aufnahme von Protonen",
-              "Abgabe von Neutronen"
+              "Ein Stoff gibt Elektronen ab",
+              "Ein Teilchen nimmt Elektronen auf",
+              "Protonen werden freigesetzt",
+              "Neutronen werden aufgenommen",
+              "Das Atom zerfällt radioaktiv"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "Abgabe von Elektronen"
+              "Ein Stoff gibt Elektronen ab"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:1",
             "question": "Was ist eine Reduktion?",
             "options": [
-              "Abgabe von Elektronen",
-              "Aufnahme von Elektronen",
-              "Abgabe von Protonen",
-              "Aufnahme von Protonen",
-              "Erhöhung der Oxidationszahl"
+              "Die Abgabe von Elektronen an Partner",
+              "Aufnahme von Elektronen durch Teilchen",
+              "Die Spaltung eines Moleküls in Atome",
+              "Verbrennung einer Substanz mit Sauerstoff",
+              "Die Bildung eines stabilen Ionengitters"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               1
             ],
             "correctAnswers": [
-              "Aufnahme von Elektronen"
+              "Aufnahme von Elektronen durch Teilchen"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:2",
-            "question": "Was ist ein Oxidationsmittel?",
+            "question": "Was zeigt die Oxidationszahl?",
             "options": [
-              "Ein Stoff, der selbst reduziert wird und andere oxidiert",
-              "Ein Stoff, der selbst oxidiert wird",
-              "Ein Katalysator",
-              "Ein Lösungsmittel",
-              "Ein Elektrolyt"
+              "Die Masse eines Atoms in Gramm",
+              "Die Anzahl der Protonen im Kern",
+              "Formale Ladung eines Atoms im Molekül",
+              "Die Temperatur einer Reaktion",
+              "Die Geschwindigkeit einer Umwandlung"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              2
             ],
             "correctAnswers": [
-              "Ein Stoff, der selbst reduziert wird und andere oxidiert"
+              "Formale Ladung eines Atoms im Molekül"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:3",
-            "question": "Was ist ein Reduktionsmittel?",
+            "question": "Was ist eine galvanische Zelle?",
             "options": [
-              "Ein Stoff, der selbst oxidiert wird und andere reduziert",
-              "Ein Stoff, der selbst reduziert wird",
-              "Ein Katalysator",
-              "Ein Lösungsmittel",
-              "Ein Elektrolyt"
+              "Ein Gerät zum Erhitzen von Metallen",
+              "Ein Apparat zur Gasanalyse",
+              "Ein Instrument zur Druckmessung",
+              "Chemische Energie wird zu Strom",
+              "Ein Gefäß für die Elektrolyse"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              3
             ],
             "correctAnswers": [
-              "Ein Stoff, der selbst oxidiert wird und andere reduziert"
+              "Chemische Energie wird zu Strom"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:4",
-            "question": "Was ist die Oxidationszahl?",
+            "question": "Was passiert bei der Elektrolyse?",
             "options": [
-              "Die formale Ladung eines Atoms in einer Verbindung",
-              "Die Anzahl der Elektronen",
-              "Die Anzahl der Protonen",
-              "Die Massenzahl",
-              "Die Kernladungszahl"
+              "Chemische Reaktion ohne Energiezufuhr",
+              "Spontane Bildung von elektrischem Strom",
+              "Wärme wird in Licht umgewandelt",
+              "Mechanische Energie treibt Reaktion an",
+              "Strom erzwingt eine chemische Reaktion"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              4
             ],
             "correctAnswers": [
-              "Die formale Ladung eines Atoms in einer Verbindung"
+              "Strom erzwingt eine chemische Reaktion"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:5",
-            "question": "Welche Oxidationszahl hat Sauerstoff in den meisten Verbindungen?",
+            "question": "Was ist das Standardpotential?",
             "options": [
-              "-2",
-              "+2",
-              "0",
-              "-1",
-              "+1"
+              "Spannung einer Halbzelle gegen Referenz",
+              "Die Stromstärke in einer Batterie",
+              "Der Widerstand eines Leitermaterials",
+              "Die Kapazität eines Akkumulators",
+              "Die Leistung einer Brennstoffzelle"
             ],
             "type": "multiple-choice",
             "correctIndices": [
               0
             ],
             "correctAnswers": [
-              "-2"
+              "Spannung einer Halbzelle gegen Referenz"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:6",
-            "question": "Welche Oxidationszahl hat Wasserstoff in Verbindungen mit Nichtmetallen?",
+            "question": "Welche Elektrode ist die Anode?",
             "options": [
-              "+1",
-              "-1",
-              "0",
-              "+2",
-              "-2"
+              "Die Elektrode an der reduziert wird",
+              "Der Ort der Oxidation in der Zelle",
+              "Die negative Elektrode der Batterie",
+              "Der Pluspol bei der Entladung",
+              "Die Referenzelektrode im System"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              1
             ],
             "correctAnswers": [
-              "+1"
+              "Der Ort der Oxidation in der Zelle"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:7",
-            "question": "Was ist ein galvanisches Element?",
+            "question": "Was beschreibt die Nernst-Gleichung?",
             "options": [
-              "Eine Anordnung zur Umwandlung chemischer in elektrische Energie",
-              "Ein Elektrolysegerät",
-              "Ein Thermometer",
-              "Ein Katalysator",
-              "Ein Puffer"
+              "Den Zusammenhang von Druck und Volumen",
+              "Die Abhängigkeit der Löslichkeit",
+              "Potential abhängig von Konzentration",
+              "Die Geschwindigkeit der Elektrolyse",
+              "Die Wärmeentwicklung bei Reaktionen"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              2
             ],
             "correctAnswers": [
-              "Eine Anordnung zur Umwandlung chemischer in elektrische Energie"
+              "Potential abhängig von Konzentration"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:8",
-            "question": "Was geschieht bei der Elektrolyse?",
+            "question": "Was passiert an der Kathode?",
             "options": [
-              "Elektrische Energie erzwingt eine chemische Reaktion",
-              "Chemische Energie wird in elektrische umgewandelt",
-              "Wärme wird erzeugt",
-              "Licht wird absorbiert",
-              "Keine chemische Reaktion findet statt"
+              "Hier findet die Oxidation statt",
+              "Elektronen werden abgegeben",
+              "Anionen werden angezogen",
+              "Elektronen werden aufgenommen",
+              "Protonen werden freigesetzt"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              3
             ],
             "correctAnswers": [
-              "Elektrische Energie erzwingt eine chemische Reaktion"
+              "Elektronen werden aufgenommen"
             ]
           },
           {
             "id": "15-elektrochemie-redox:1:9",
-            "question": "Was ist die Standardwasserstoffelektrode (SHE)?",
+            "question": "Was besagen die Faradayschen Gesetze?",
             "options": [
-              "Die Referenzelektrode mit E° = 0 V per Definition",
-              "Eine Batterie",
-              "Ein Thermometer",
-              "Ein Katalysator",
-              "Ein Oxidationsmittel"
+              "Den Zusammenhang von Strom und Masse",
+              "Die Abhängigkeit von Druck und Temperatur",
+              "Die Beziehung zwischen Licht und Wärme",
+              "Das Verhältnis von Kraft und Beschleunigung",
+              "Zusammenhang zwischen Strommenge und Stoffumsatz"
             ],
             "type": "multiple-choice",
             "correctIndices": [
-              0
+              4
             ],
             "correctAnswers": [
-              "Die Referenzelektrode mit E° = 0 V per Definition"
+              "Zusammenhang zwischen Strommenge und Stoffumsatz"
             ]
           }
         ],

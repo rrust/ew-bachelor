@@ -25,7 +25,14 @@ Diese Regeln dürfen **NIEMALS** missachtet werden:
 - **Mermaid:** Max. 3-5 Wörter pro Box (Mobile!)
 - **Inline-SVG:** KEINE Zeilenumbrüche im `<svg>`-Tag – alles in einer Zeile!
 - **SVG-Beispiel:** `<svg viewBox="0 0 320 220" style="max-width: 400px; width: 100%;" aria-label="Beschreibung">...</svg>`
-- **MC-Antworten:** Korrekte Antwort NICHT systematisch die längste!
+
+### MC-Fragen (Modul-Training)
+
+- **Korrekte Antwort NICHT längste!** – ERST korrekte kurz schreiben, DANN falsche verlängern
+- **Alle 5 Optionen ähnlich lang:** 35-50 Zeichen, max. ±15 Zeichen Varianz
+- **Position variieren:** Pro 10 Fragen: A=2, B=2, C=2, D=2, E=2
+- **Keine Frage-Keywords in korrekter Antwort** – Synonyme verwenden!
+- **VOR SPEICHERN: Selbst-Prüfung!** – Siehe [module-training.md](copilot/module-training.md)
 
 ### KaTeX
 

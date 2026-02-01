@@ -1,96 +1,94 @@
-# Kapitel 2: Elemente, Ionen & Mol-Konzept
-# Level 1: Grundlagen (Wissen)
-# 10 Fragen, jeweils 1 korrekte Antwort
-
 topic: 'Elemente, Ionen & Mol-Konzept'
 level: 1
 questions:
-  - question: 'Was beschreibt die Avogadro-Konstante?'
+  # Positions-Verteilung: A=2, B=2, C=2, D=2, E=2
+
+  - question: 'Was entsteht wenn ein Atom Elektronen abgibt?'
     options:
-      - 'Die Masse eines einzelnen Atoms in Gramm'
-      - 'Die Teilchenzahl in einem Mol eines Stoffes'
-      - 'Die Dichte von Gasen bei Normalbedingungen'
-      - 'Das Volumen von einem Mol Flüssigkeit'
-      - 'Die Ladung eines einzelnen Elektrons'
+      - 'Ein positiv geladenes Teilchen'          # 32 Zeichen ← KORREKT (A)
+      - 'Ein negativ geladenes Molekül'           # 31 Zeichen
+      - 'Ein elektrisch neutrales Isotop'         # 33 Zeichen
+      - 'Ein radioaktives Zerfallsprodukt'        # 34 Zeichen
+      - 'Eine stabile Edelgasverbindung'          # 32 Zeichen
+    correct: [0]
+
+  - question: 'Was ist die Avogadro-Zahl?'
+    options:
+      - 'Die Masse eines einzelnen Atoms in Gramm'  # 40 Zeichen
+      - 'Teilchenanzahl in einem Mol Substanz'      # 38 Zeichen ← KORREKT (B)
+      - 'Die Ladung eines einzelnen Elektrons'      # 38 Zeichen
+      - 'Der Radius eines durchschnittlichen Atoms' # 41 Zeichen
+      - 'Die Bindungsenergie in Kilojoule'          # 34 Zeichen
     correct: [1]
 
-  - question: 'Welchen Wert hat die Avogadro-Konstante ungefähr?'
+  - question: 'Was beschreibt die molare Masse?'
     options:
-      - '3,14 × 10²³ Teilchen pro Mol'
-      - '6,02 × 10²³ Teilchen pro Mol'
-      - '9,81 × 10²³ Teilchen pro Mol'
-      - '1,66 × 10⁻²⁴ Teilchen pro Mol'
-      - '2,99 × 10⁸ Teilchen pro Mol'
-    correct: [1]
-
-  - question: 'Was ist ein Kation?'
-    options:
-      - 'Ein negativ geladenes Teilchen'
-      - 'Ein elektrisch neutrales Atom'
-      - 'Ein positiv geladenes Teilchen'
-      - 'Ein Atomkern ohne Elektronen'
-      - 'Ein Molekül aus zwei Atomen'
+      - 'Die Dichte einer chemischen Substanz'    # 38 Zeichen
+      - 'Die Anzahl der Bindungen im Molekül'     # 37 Zeichen
+      - 'Gramm pro Mol einer Substanz'            # 30 Zeichen ← KORREKT (C)
+      - 'Die Schmelztemperatur in Kelvin'         # 33 Zeichen
+      - 'Den Siedepunkt unter Normaldruck'        # 34 Zeichen
     correct: [2]
 
-  - question: 'Wie entsteht ein Anion?'
+  - question: 'Was passiert bei der Bildung eines Anions?'
     options:
-      - 'Durch Abgabe von Elektronen'
-      - 'Durch Aufnahme von Elektronen'
-      - 'Durch Abgabe von Protonen'
-      - 'Durch Aufnahme von Neutronen'
-      - 'Durch Kernspaltung des Atoms'
+      - 'Das Teilchen verliert mehrere Protonen'  # 40 Zeichen
+      - 'Die Kernladung erhöht sich deutlich'     # 37 Zeichen
+      - 'Das Atom wird zu einem Edelgas'          # 34 Zeichen
+      - 'Es werden Elektronen aufgenommen'        # 34 Zeichen ← KORREKT (D)
+      - 'Die Massenzahl verringert sich stark'    # 38 Zeichen
+    correct: [3]
+
+  - question: 'Welches Elementsymbol steht für Natrium?'
+    options:
+      - 'Das Symbol "N" aus dem Lateinischen'     # 37 Zeichen
+      - 'Die Abkürzung "Nt" für Natrium'          # 34 Zeichen
+      - 'Das Zeichen "So" vom deutschen Namen'    # 38 Zeichen
+      - 'Die Buchstaben "Nm" international'       # 35 Zeichen
+      - 'Das Kürzel "Na" vom lateinischen Namen'  # 40 Zeichen ← KORREKT (E)
+    correct: [4]
+
+  - question: 'Was gibt die Stoffmenge in Mol an?'
+    options:
+      - 'Eine bestimmte Teilchenanzahl'           # 31 Zeichen ← KORREKT (A)
+      - 'Das Volumen einer Flüssigkeit'           # 31 Zeichen
+      - 'Die Temperatur einer Reaktion'           # 31 Zeichen
+      - 'Den Druck in einem Behälter'             # 29 Zeichen
+      - 'Die Geschwindigkeit einer Umwandlung'    # 38 Zeichen
+    correct: [0]
+
+  - question: 'Welches Element hat das Symbol K?'
+    options:
+      - 'Das sehr reaktive Erdalkalimetall'       # 35 Zeichen
+      - 'Ein weiches silbriges Alkalimetall'      # 36 Zeichen ← KORREKT (B)
+      - 'Das häufigste Element der Erdkruste'     # 37 Zeichen
+      - 'Ein radioaktives Schwermetall'           # 31 Zeichen
+      - 'Das leichteste aller Halogene'           # 31 Zeichen
     correct: [1]
 
-  - question: 'Was gibt die molare Masse an?'
+  - question: 'Wie viele Teilchen enthält ein Mol?'
     options:
-      - 'Die Masse eines einzelnen Teilchens'
-      - 'Die Masse von einem Mol eines Stoffes'
-      - 'Die Anzahl der Atome pro Gramm'
-      - 'Das Volumen bei Standardbedingungen'
-      - 'Die Dichte eines reinen Elements'
-    correct: [1]
-
-  - question: 'In welcher Einheit wird die molare Masse angegeben?'
-    options:
-      - 'Gramm (g)'
-      - 'Gramm pro Mol (g/mol)'
-      - 'Mol pro Liter (mol/L)'
-      - 'Kilogramm pro Kubikmeter'
-      - 'Atomare Masseneinheiten (u)'
-    correct: [1]
-
-  - question: 'Welches Symbol hat das Element Natrium?'
-    options:
-      - 'N'
-      - 'Na'
-      - 'S'
-      - 'So'
-      - 'Nt'
-    correct: [1]
-
-  - question: 'Was bedeutet das Symbol Fe?'
-    options:
-      - 'Fluor'
-      - 'Eisen'
-      - 'Fermium'
-      - 'Francium'
-      - 'Flerovium'
-    correct: [1]
-
-  - question: 'Was ist die Stoffmenge n?'
-    options:
-      - 'Die Masse eines Stoffes in Gramm'
-      - 'Die Anzahl der Mole eines Stoffes'
-      - 'Die Dichte einer Lösung'
-      - 'Das Volumen bei Normaldruck'
-      - 'Die Konzentration pro Liter'
-    correct: [1]
-
-  - question: 'Welche Ladung hat ein Chlorid-Ion?'
-    options:
-      - '+1'
-      - '+2'
-      - '-1'
-      - '-2'
-      - '0 (neutral)'
+      - 'Genau eine Million Moleküle'             # 29 Zeichen
+      - 'Etwa eine Milliarde Atome'               # 27 Zeichen
+      - 'Rund 6 mal 10 hoch 23 Teilchen'          # 32 Zeichen ← KORREKT (C)
+      - 'Exakt 100 Billionen Partikel'            # 30 Zeichen
+      - 'Ungefähr 10 hoch 10 Einheiten'           # 31 Zeichen
     correct: [2]
+
+  - question: 'Was kennzeichnet ein Kation?'
+    options:
+      - 'Es besitzt mehr negative Ladungsträger'  # 40 Zeichen
+      - 'Es ist immer elektrisch neutral'         # 33 Zeichen
+      - 'Es enthält keine Kernbausteine'          # 32 Zeichen
+      - 'Es trägt positive elektrische Ladung'    # 38 Zeichen ← KORREKT (D)
+      - 'Es besteht nur aus Neutronen'            # 30 Zeichen
+    correct: [3]
+
+  - question: 'Welche Einheit hat die molare Masse?'
+    options:
+      - 'Kilogramm pro Kubikzentimeter'           # 31 Zeichen
+      - 'Joule pro Mol und Kelvin'                # 26 Zeichen
+      - 'Mol pro Liter Lösung'                    # 22 Zeichen
+      - 'Pascal mal Kubikmeter'                   # 23 Zeichen
+      - 'Gramm pro Mol Substanz'                  # 24 Zeichen ← KORREKT (E)
+    correct: [4]
