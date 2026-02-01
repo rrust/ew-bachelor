@@ -338,10 +338,22 @@ function renderModuleTrainingView() {
 
     <!-- Question -->
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
-      <h3 class="text-lg font-medium mb-6">${escapeHtml(currentQuestion.question)}</h3>
+      <h3 class="text-lg font-medium mb-4">${escapeHtml(currentQuestion.question)}</h3>
+      
+      <!-- Hint for multiple correct answers -->
+      ${
+        currentQuestion.correctAnswers &&
+        currentQuestion.correctAnswers.length > 1
+          ? `
+      <p class="text-sm text-blue-600 dark:text-blue-400 mb-4 font-medium">
+        ℹ️ Mehrere Antworten sind richtig. Wähle alle richtigen aus.
+      </p>
+      `
+          : ''
+      }
 
       <!-- Options -->
-      <div id="module-training-options" class="space-y-3">
+      <div id="module-training-options" class="space-y-3" data-multiple="${currentQuestion.correctAnswers && currentQuestion.correctAnswers.length > 1 ? 'true' : 'false'}">
         ${shuffledOptions
           .map(
             (option, index) => `
@@ -427,22 +439,52 @@ function renderLevelStars(level) {
 function selectModuleTrainingOption(button) {
   if (moduleTrainingState.hasAnswered) return;
 
-  // Deselect all
-  const options = document.querySelectorAll('.module-training-option');
-  options.forEach((opt) => {
-    opt.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900');
-    opt.classList.add('border-gray-200', 'dark:border-gray-600');
-  });
+  const optionsContainer = document.getElementById('module-training-options');
+  const isMultiple = optionsContainer?.dataset.multiple === 'true';
 
-  // Select clicked
-  button.classList.remove('border-gray-200', 'dark:border-gray-600');
-  button.classList.add('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900');
+  if (isMultiple) {
+    // Toggle selection for multiple-choice
+    const isSelected = button.classList.contains('border-blue-500');
+    if (isSelected) {
+      // Deselect
+      button.classList.remove(
+        'border-blue-500',
+        'bg-blue-50',
+        'dark:bg-blue-900'
+      );
+      button.classList.add('border-gray-200', 'dark:border-gray-600');
+    } else {
+      // Select
+      button.classList.remove('border-gray-200', 'dark:border-gray-600');
+      button.classList.add('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900');
+    }
+  } else {
+    // Single-choice: Deselect all others
+    const options = document.querySelectorAll('.module-training-option');
+    options.forEach((opt) => {
+      opt.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900');
+      opt.classList.add('border-gray-200', 'dark:border-gray-600');
+    });
 
-  // Enable submit button
+    // Select clicked
+    button.classList.remove('border-gray-200', 'dark:border-gray-600');
+    button.classList.add('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900');
+  }
+
+  // Enable submit button if at least one option is selected
+  const selectedOptions = document.querySelectorAll(
+    '.module-training-option.border-blue-500'
+  );
   const submitBtn = document.getElementById('module-training-submit');
-  submitBtn.disabled = false;
-  submitBtn.className =
-    'bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition';
+  if (selectedOptions.length > 0) {
+    submitBtn.disabled = false;
+    submitBtn.className =
+      'bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition';
+  } else {
+    submitBtn.disabled = true;
+    submitBtn.className =
+      'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 font-bold py-3 px-8 rounded-lg cursor-not-allowed transition';
+  }
 }
 
 /**
@@ -451,19 +493,30 @@ function selectModuleTrainingOption(button) {
 function submitModuleTrainingAnswer() {
   if (moduleTrainingState.hasAnswered) return;
 
-  const selectedBtn = document.querySelector(
+  const selectedBtns = document.querySelectorAll(
     '.module-training-option.border-blue-500'
   );
-  if (!selectedBtn) return;
+  if (selectedBtns.length === 0) return;
 
-  const selectedOption = selectedBtn.dataset.option;
+  // Collect all selected options
+  const selectedOptions = Array.from(selectedBtns).map(
+    (btn) => btn.dataset.option
+  );
   const { currentQuestion, moduleId, bundle } = moduleTrainingState;
 
   // Check if correct (handle both single and multiple correct answers)
   const correctAnswers = currentQuestion.correctAnswers || [
     currentQuestion.correctAnswer
   ];
-  const isCorrect = correctAnswers.includes(selectedOption);
+
+  // For multiple-choice: ALL correct answers must be selected AND no wrong ones
+  const allCorrectSelected = correctAnswers.every((answer) =>
+    selectedOptions.includes(answer)
+  );
+  const noWrongSelected = selectedOptions.every((option) =>
+    correctAnswers.includes(option)
+  );
+  const isCorrect = allCorrectSelected && noWrongSelected;
 
   moduleTrainingState.hasAnswered = true;
   moduleTrainingState.sessionAnswered++;
@@ -485,11 +538,12 @@ function submitModuleTrainingAnswer() {
   options.forEach((opt) => {
     const optionText = opt.dataset.option;
     const isThisCorrect = correctAnswers.includes(optionText);
-    const isSelected = opt === selectedBtn;
+    const isSelected = selectedOptions.includes(optionText);
 
     opt.onclick = null; // Disable further clicks
 
     if (isThisCorrect) {
+      // Correct answers are always highlighted green
       opt.classList.remove(
         'border-gray-200',
         'dark:border-gray-600',
@@ -498,9 +552,20 @@ function submitModuleTrainingAnswer() {
         'dark:bg-blue-900'
       );
       opt.classList.add('border-green-500', 'bg-green-50', 'dark:bg-green-900');
-    } else if (isSelected && !isCorrect) {
+    } else if (isSelected) {
+      // Wrong answer was selected - highlight red
       opt.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900');
       opt.classList.add('border-red-500', 'bg-red-50', 'dark:bg-red-900');
+    }
+
+    // Add "Deine Wahl" marker to selected options
+    if (isSelected) {
+      const marker = document.createElement('span');
+      marker.className = isThisCorrect
+        ? 'ml-2 text-xs font-medium bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200 px-2 py-0.5 rounded'
+        : 'ml-2 text-xs font-medium bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200 px-2 py-0.5 rounded';
+      marker.textContent = '← Deine Wahl';
+      opt.appendChild(marker);
     }
   });
 
