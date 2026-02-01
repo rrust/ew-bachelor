@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was steht links vom Reaktionspfeil?'
     options:
-      - 'Die Ausgangsstoffe der Reaktion'         # 33 Zeichen ← KORREKT (A)
-      - 'Die entstehenden Endprodukte'            # 30 Zeichen
-      - 'Die freigesetzte Energiemenge'           # 31 Zeichen
-      - 'Die benötigte Aktivierungsenergie'       # 35 Zeichen
-      - 'Der Katalysator der Umwandlung'          # 32 Zeichen
+      - 'Die Ausgangsstoffe der Reaktion' # 33 Zeichen ← KORREKT (A)
+      - 'Die entstehenden Endprodukte' # 30 Zeichen
+      - 'Die freigesetzte Energiemenge' # 31 Zeichen
+      - 'Die benötigte Aktivierungsenergie' # 35 Zeichen
+      - 'Der Katalysator der Umwandlung' # 32 Zeichen
     correct: [0]
 
   - question: 'Was bedeutet das Gesetz der Massenerhaltung?'
     options:
-      - 'Energie kann beliebig erzeugt werden'    # 38 Zeichen
-      - 'Masse bleibt bei Reaktionen konstant'    # 38 Zeichen ← KORREKT (B)
-      - 'Atome können neu erschaffen werden'      # 36 Zeichen
+      - 'Energie kann beliebig erzeugt werden' # 38 Zeichen
+      - 'Masse bleibt bei Reaktionen konstant' # 38 Zeichen ← KORREKT (B)
+      - 'Atome können neu erschaffen werden' # 36 Zeichen
       - 'Reaktionen verlaufen ohne Massenverlust nie' # 43 Zeichen
-      - 'Produkte sind schwerer als Edukte'       # 35 Zeichen
+      - 'Produkte sind schwerer als Edukte' # 35 Zeichen
     correct: [1]
 
   - question: 'Was zeigen die Koeffizienten in einer Reaktionsgleichung?'
     options:
-      - 'Die Temperaturen während der Reaktion'   # 39 Zeichen
-      - 'Die Geschwindigkeit der Umwandlung'      # 36 Zeichen
+      - 'Die Temperaturen während der Reaktion' # 39 Zeichen
+      - 'Die Geschwindigkeit der Umwandlung' # 36 Zeichen
       - 'Die Stoffmengenverhältnisse der Teilnehmer' # 43 Zeichen ← KORREKT (C)
-      - 'Die Ladungen aller beteiligten Ionen'    # 38 Zeichen
-      - 'Die Schmelzpunkte der Reinstoffe'        # 34 Zeichen
+      - 'Die Ladungen aller beteiligten Ionen' # 38 Zeichen
+      - 'Die Schmelzpunkte der Reinstoffe' # 34 Zeichen
     correct: [2]
 
   - question: 'Was passiert beim Ausgleichen einer Gleichung?'
     options:
-      - 'Die Formeln werden neu geschrieben'      # 38 Zeichen
-      - 'Die Indices werden angepasst'            # 30 Zeichen
-      - 'Neue Elemente werden hinzugefügt'        # 34 Zeichen
-      - 'Koeffizienten werden eingefügt'          # 32 Zeichen ← KORREKT (D)
-      - 'Reaktionspfeile werden umgedreht'        # 34 Zeichen
+      - 'Die Formeln werden neu geschrieben' # 38 Zeichen
+      - 'Die Indices werden angepasst' # 30 Zeichen
+      - 'Neue Elemente werden hinzugefügt' # 34 Zeichen
+      - 'Koeffizienten werden eingefügt' # 32 Zeichen ← KORREKT (D)
+      - 'Reaktionspfeile werden umgedreht' # 34 Zeichen
     correct: [3]
 
   - question: 'Was ist der limitierende Reaktand?'
     options:
-      - 'Der Stoff mit der höchsten Konzentration'  # 42 Zeichen
-      - 'Der Katalysator der chemischen Reaktion'   # 41 Zeichen
-      - 'Das Produkt mit der größten Ausbeute'      # 38 Zeichen
-      - 'Der Stoff der im Überschuss vorliegt'      # 38 Zeichen
-      - 'Der Stoff der zuerst verbraucht wird'      # 38 Zeichen ← KORREKT (E)
+      - 'Der Stoff mit der höchsten Konzentration' # 42 Zeichen
+      - 'Der Katalysator der chemischen Reaktion' # 41 Zeichen
+      - 'Das Produkt mit der größten Ausbeute' # 38 Zeichen
+      - 'Der Stoff der im Überschuss vorliegt' # 38 Zeichen
+      - 'Der Stoff der zuerst verbraucht wird' # 38 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was steht rechts vom Reaktionspfeil?'
     options:
-      - 'Die gebildeten Reaktionsprodukte'        # 34 Zeichen ← KORREKT (A)
-      - 'Die eingesetzten Ausgangsmaterialien'    # 38 Zeichen
-      - 'Die notwendigen Reaktionsbedingungen'    # 38 Zeichen
-      - 'Die verwendeten Katalysatorstoffe'       # 35 Zeichen
-      - 'Die zugeführte Aktivierungsenergie'      # 36 Zeichen
+      - 'Die gebildeten Reaktionsprodukte' # 34 Zeichen ← KORREKT (A)
+      - 'Die eingesetzten Ausgangsmaterialien' # 38 Zeichen
+      - 'Die notwendigen Reaktionsbedingungen' # 38 Zeichen
+      - 'Die verwendeten Katalysatorstoffe' # 35 Zeichen
+      - 'Die zugeführte Aktivierungsenergie' # 36 Zeichen
     correct: [0]
 
   - question: 'Was muss beim Ausgleichen unverändert bleiben?'
     options:
-      - 'Die Reihenfolge der Reaktionspartner'    # 38 Zeichen
-      - 'Die Indices in den Summenformeln'        # 34 Zeichen ← KORREKT (B)
-      - 'Die Aggregatzustände der Substanzen'     # 37 Zeichen
-      - 'Die Position des Reaktionspfeils'        # 34 Zeichen
-      - 'Die Richtung des Energieflusses'         # 33 Zeichen
+      - 'Die Reihenfolge der Reaktionspartner' # 38 Zeichen
+      - 'Die Indices in den Summenformeln' # 34 Zeichen ← KORREKT (B)
+      - 'Die Aggregatzustände der Substanzen' # 37 Zeichen
+      - 'Die Position des Reaktionspfeils' # 34 Zeichen
+      - 'Die Richtung des Energieflusses' # 33 Zeichen
     correct: [1]
 
   - question: 'Was ist eine ausgeglichene chemische Gleichung?'
     options:
-      - 'Eine Formel ohne Koeffizienten'          # 32 Zeichen
-      - 'Eine Reaktion ohne Energieumsatz'        # 34 Zeichen
-      - 'Gleiche Atomanzahl auf beiden Seiten'    # 38 Zeichen ← KORREKT (C)
-      - 'Ein Gleichgewicht ohne Stoffumsatz'      # 36 Zeichen
-      - 'Eine Umwandlung ohne Katalysator'        # 34 Zeichen
+      - 'Eine Formel ohne Koeffizienten' # 32 Zeichen
+      - 'Eine Reaktion ohne Energieumsatz' # 34 Zeichen
+      - 'Gleiche Atomanzahl auf beiden Seiten' # 38 Zeichen ← KORREKT (C)
+      - 'Ein Gleichgewicht ohne Stoffumsatz' # 36 Zeichen
+      - 'Eine Umwandlung ohne Katalysator' # 34 Zeichen
     correct: [2]
 
   - question: 'Worauf basiert die Stöchiometrie?'
     options:
-      - 'Auf der Messung von Temperaturen'        # 34 Zeichen
-      - 'Auf der Bestimmung von Drücken'          # 32 Zeichen
-      - 'Auf der Analyse von Spektren'            # 30 Zeichen
-      - 'Auf festen Mengenverhältnissen'          # 32 Zeichen ← KORREKT (D)
+      - 'Auf der Messung von Temperaturen' # 34 Zeichen
+      - 'Auf der Bestimmung von Drücken' # 32 Zeichen
+      - 'Auf der Analyse von Spektren' # 30 Zeichen
+      - 'Auf festen Mengenverhältnissen' # 32 Zeichen ← KORREKT (D)
       - 'Auf der Berechnung von Geschwindigkeiten' # 41 Zeichen
     correct: [3]
 
   - question: 'Was gibt der Koeffizient "2" vor H₂O an?'
     options:
-      - 'Zwei Wasserstoffatome pro Molekül'       # 35 Zeichen
-      - 'Zwei Sauerstoffatome im Molekül'         # 33 Zeichen
-      - 'Die Oxidationszahl des Sauerstoffs'      # 36 Zeichen
-      - 'Die Ladung des Wassermoleküls'           # 31 Zeichen
-      - 'Zwei Formeleinheiten der Verbindung'     # 37 Zeichen ← KORREKT (E)
+      - 'Zwei Wasserstoffatome pro Molekül' # 35 Zeichen
+      - 'Zwei Sauerstoffatome im Molekül' # 33 Zeichen
+      - 'Die Oxidationszahl des Sauerstoffs' # 36 Zeichen
+      - 'Die Ladung des Wassermoleküls' # 31 Zeichen
+      - 'Zwei Formeleinheiten der Verbindung' # 37 Zeichen ← KORREKT (E)
     correct: [4]

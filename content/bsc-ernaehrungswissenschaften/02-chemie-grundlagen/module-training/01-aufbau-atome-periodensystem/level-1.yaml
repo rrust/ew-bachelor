@@ -5,90 +5,90 @@ questions:
 
   - question: 'Welche Teilchen befinden sich im Atomkern?'
     options:
-      - 'Protonen und Neutronen gemeinsam'        # 36 Zeichen ← KORREKT (A)
+      - 'Protonen und Neutronen gemeinsam' # 36 Zeichen ← KORREKT (A)
       - 'Ausschließlich die negativen Elektronen' # 41 Zeichen
-      - 'Nur die elektrisch neutralen Teilchen'   # 39 Zeichen
-      - 'Elektronen und Photonen zusammen'        # 34 Zeichen
-      - 'Alle subatomaren Partikel gemischt'      # 36 Zeichen
+      - 'Nur die elektrisch neutralen Teilchen' # 39 Zeichen
+      - 'Elektronen und Photonen zusammen' # 34 Zeichen
+      - 'Alle subatomaren Partikel gemischt' # 36 Zeichen
     correct: [0]
 
   - question: 'Was gibt die Ordnungszahl eines Elements an?'
     options:
-      - 'Die Gesamtmasse aller Kernbausteine'     # 37 Zeichen
-      - 'Die Anzahl positiver Kernbausteine'      # 36 Zeichen ← KORREKT (B)
-      - 'Die Summe von Kern- und Hüllteilchen'    # 38 Zeichen
-      - 'Die Zahl der neutralen Kernteilchen'     # 37 Zeichen
-      - 'Den prozentualen Anteil im Universum'    # 38 Zeichen
+      - 'Die Gesamtmasse aller Kernbausteine' # 37 Zeichen
+      - 'Die Anzahl positiver Kernbausteine' # 36 Zeichen ← KORREKT (B)
+      - 'Die Summe von Kern- und Hüllteilchen' # 38 Zeichen
+      - 'Die Zahl der neutralen Kernteilchen' # 37 Zeichen
+      - 'Den prozentualen Anteil im Universum' # 38 Zeichen
     correct: [1]
 
   - question: 'Was unterscheidet Isotope eines Elements?'
     options:
-      - 'Die Anzahl der positiven Ladungsträger'  # 40 Zeichen
-      - 'Die chemischen Reaktionseigenschaften'   # 39 Zeichen
-      - 'Die Anzahl der neutralen Kernteilchen'   # 39 Zeichen ← KORREKT (C)
-      - 'Die Position in der Elementanordnung'    # 38 Zeichen
-      - 'Die Anzahl der negativen Hüllteilchen'   # 39 Zeichen
+      - 'Die Anzahl der positiven Ladungsträger' # 40 Zeichen
+      - 'Die chemischen Reaktionseigenschaften' # 39 Zeichen
+      - 'Die Anzahl der neutralen Kernteilchen' # 39 Zeichen ← KORREKT (C)
+      - 'Die Position in der Elementanordnung' # 38 Zeichen
+      - 'Die Anzahl der negativen Hüllteilchen' # 39 Zeichen
     correct: [2]
 
   - question: 'Was bezeichnet man als Massenzahl?'
     options:
-      - 'Die Anzahl der Hüllenelektronen'         # 33 Zeichen
-      - 'Das Gewicht in Gramm pro Teilchen'       # 35 Zeichen
-      - 'Die Nummer der horizontalen Reihe'       # 35 Zeichen
-      - 'Summe aus Protonen und Neutronen'        # 34 Zeichen ← KORREKT (D)
-      - 'Die relative Häufigkeit auf der Erde'    # 38 Zeichen
+      - 'Die Anzahl der Hüllenelektronen' # 33 Zeichen
+      - 'Das Gewicht in Gramm pro Teilchen' # 35 Zeichen
+      - 'Die Nummer der horizontalen Reihe' # 35 Zeichen
+      - 'Summe aus Protonen und Neutronen' # 34 Zeichen ← KORREKT (D)
+      - 'Die relative Häufigkeit auf der Erde' # 38 Zeichen
     correct: [3]
 
   - question: 'Wie sind die Elemente im Periodensystem angeordnet?'
     options:
-      - 'Nach alphabetischer Reihenfolge sortiert'  # 40 Zeichen
-      - 'Nach dem Entdeckungsdatum geordnet'        # 36 Zeichen
-      - 'Nach der Häufigkeit auf der Erde'          # 34 Zeichen
-      - 'Nach der Dichte der reinen Substanz'       # 37 Zeichen
-      - 'Nach steigender Kernladungszahl'           # 33 Zeichen ← KORREKT (E)
+      - 'Nach alphabetischer Reihenfolge sortiert' # 40 Zeichen
+      - 'Nach dem Entdeckungsdatum geordnet' # 36 Zeichen
+      - 'Nach der Häufigkeit auf der Erde' # 34 Zeichen
+      - 'Nach der Dichte der reinen Substanz' # 37 Zeichen
+      - 'Nach steigender Kernladungszahl' # 33 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was kennzeichnet die Elemente einer Periode?'
     options:
-      - 'Sie haben die gleiche Schalenanzahl'     # 37 Zeichen ← KORREKT (A)
+      - 'Sie haben die gleiche Schalenanzahl' # 37 Zeichen ← KORREKT (A)
       - 'Sie zeigen identisches Reaktionsverhalten' # 41 Zeichen
-      - 'Sie besitzen dieselbe Kernladungszahl'   # 39 Zeichen
-      - 'Sie haben die gleiche Elektronenzahl'    # 38 Zeichen
-      - 'Sie weisen identische Massenzahlen auf'  # 40 Zeichen
+      - 'Sie besitzen dieselbe Kernladungszahl' # 39 Zeichen
+      - 'Sie haben die gleiche Elektronenzahl' # 38 Zeichen
+      - 'Sie weisen identische Massenzahlen auf' # 40 Zeichen
     correct: [0]
 
   - question: 'Was haben Elemente einer Hauptgruppe gemeinsam?'
     options:
       - 'Die identische Anzahl an Kernbausteinen' # 41 Zeichen
-      - 'Die gleiche Zahl an Außenelektronen'     # 37 Zeichen ← KORREKT (B)
-      - 'Die exakt übereinstimmende Atommasse'    # 40 Zeichen
-      - 'Den identischen Aggregatzustand'         # 33 Zeichen
-      - 'Die gleiche Anzahl an Energieniveaus'    # 38 Zeichen
+      - 'Die gleiche Zahl an Außenelektronen' # 37 Zeichen ← KORREKT (B)
+      - 'Die exakt übereinstimmende Atommasse' # 40 Zeichen
+      - 'Den identischen Aggregatzustand' # 33 Zeichen
+      - 'Die gleiche Anzahl an Energieniveaus' # 38 Zeichen
     correct: [1]
 
   - question: 'Welche Eigenschaft ist typisch für metallische Elemente?'
     options:
-      - 'Sie sind bei Raumtemperatur gasförmig'   # 39 Zeichen
-      - 'Sie leiten keinen elektrischen Strom'    # 38 Zeichen
-      - 'Sie leiten Wärme und Elektrizität gut'   # 39 Zeichen ← KORREKT (C)
-      - 'Sie haben sehr hohe Elektronegativität'  # 40 Zeichen
-      - 'Sie kommen nur als Verbindungen vor'     # 37 Zeichen
+      - 'Sie sind bei Raumtemperatur gasförmig' # 39 Zeichen
+      - 'Sie leiten keinen elektrischen Strom' # 38 Zeichen
+      - 'Sie leiten Wärme und Elektrizität gut' # 39 Zeichen ← KORREKT (C)
+      - 'Sie haben sehr hohe Elektronegativität' # 40 Zeichen
+      - 'Sie kommen nur als Verbindungen vor' # 37 Zeichen
     correct: [2]
 
   - question: 'Wo befinden sich die Nichtmetalle im Periodensystem?'
     options:
-      - 'In der ersten und zweiten Hauptgruppe'   # 39 Zeichen
-      - 'Ausschließlich in den Nebengruppen'      # 36 Zeichen
-      - 'Gleichmäßig über alle Gruppen verteilt'  # 40 Zeichen
-      - 'Im oberen rechten Bereich der Tafel'     # 37 Zeichen ← KORREKT (D)
+      - 'In der ersten und zweiten Hauptgruppe' # 39 Zeichen
+      - 'Ausschließlich in den Nebengruppen' # 36 Zeichen
+      - 'Gleichmäßig über alle Gruppen verteilt' # 40 Zeichen
+      - 'Im oberen rechten Bereich der Tafel' # 37 Zeichen ← KORREKT (D)
       - 'Nur in der untersten horizontalen Reihe' # 41 Zeichen
     correct: [3]
 
   - question: 'Was sind Halbmetalle im Periodensystem?'
     options:
-      - 'Elemente die nur halb so schwer sind'    # 38 Zeichen
-      - 'Stoffe die ausschließlich Ionen bilden'  # 40 Zeichen
-      - 'Atome mit halbierter Elektronenzahl'     # 37 Zeichen
-      - 'Elemente die radioaktiv zerfallen'       # 35 Zeichen
+      - 'Elemente die nur halb so schwer sind' # 38 Zeichen
+      - 'Stoffe die ausschließlich Ionen bilden' # 40 Zeichen
+      - 'Atome mit halbierter Elektronenzahl' # 37 Zeichen
+      - 'Elemente die radioaktiv zerfallen' # 35 Zeichen
       - 'Grenzgänger zwischen Metall und Nichtmetall' # 42 Zeichen ← KORREKT (E)
     correct: [4]

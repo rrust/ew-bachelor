@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was ist eine σ-Bindung?'
     options:
-      - 'Überlappung entlang der Kernachse'       # 35 Zeichen ← KORREKT (A)
-      - 'Seitliche Überlappung von Orbitalen'     # 37 Zeichen
-      - 'Eine rein elektrostatische Anziehung'    # 38 Zeichen
-      - 'Die Bindung in einem Ionengitter'        # 34 Zeichen
-      - 'Eine metallische Bindung im Kristall'    # 38 Zeichen
+      - 'Überlappung entlang der Kernachse' # 35 Zeichen ← KORREKT (A)
+      - 'Seitliche Überlappung von Orbitalen' # 37 Zeichen
+      - 'Eine rein elektrostatische Anziehung' # 38 Zeichen
+      - 'Die Bindung in einem Ionengitter' # 34 Zeichen
+      - 'Eine metallische Bindung im Kristall' # 38 Zeichen
     correct: [0]
 
   - question: 'Was bedeutet sp³-Hybridisierung?'
     options:
       - 'Drei s-Orbitale und ein p-Orbital mischen' # 43 Zeichen
-      - 'Ein s- und drei p-Orbitale verschmelzen'   # 41 Zeichen ← KORREKT (B)
-      - 'Vier d-Orbitale bilden neue Formen'        # 36 Zeichen
-      - 'Nur p-Orbitale werden kombiniert'          # 34 Zeichen
-      - 'Zwei s-Orbitale verbinden sich'            # 34 Zeichen
+      - 'Ein s- und drei p-Orbitale verschmelzen' # 41 Zeichen ← KORREKT (B)
+      - 'Vier d-Orbitale bilden neue Formen' # 36 Zeichen
+      - 'Nur p-Orbitale werden kombiniert' # 34 Zeichen
+      - 'Zwei s-Orbitale verbinden sich' # 34 Zeichen
     correct: [1]
 
   - question: 'Was ist charakteristisch für π-Bindungen?'
     options:
-      - 'Direkte Überlappung entlang der Achse'   # 39 Zeichen
-      - 'Sie entstehen nur in Ionenverbindungen'  # 40 Zeichen
-      - 'Seitliche Überlappung von p-Orbitalen'   # 39 Zeichen ← KORREKT (C)
-      - 'Sie sind stärker als Sigma-Bindungen'    # 38 Zeichen
-      - 'Sie bilden sich nur bei Metallen'        # 34 Zeichen
+      - 'Direkte Überlappung entlang der Achse' # 39 Zeichen
+      - 'Sie entstehen nur in Ionenverbindungen' # 40 Zeichen
+      - 'Seitliche Überlappung von p-Orbitalen' # 39 Zeichen ← KORREKT (C)
+      - 'Sie sind stärker als Sigma-Bindungen' # 38 Zeichen
+      - 'Sie bilden sich nur bei Metallen' # 34 Zeichen
     correct: [2]
 
   - question: 'Welche Hybridisierung hat Kohlenstoff in Methan?'
     options:
-      - 'Eine sp-Hybridisierung mit zwei Orbitalen'  # 43 Zeichen
-      - 'Eine sp²-Hybridisierung für drei Partner'   # 42 Zeichen
-      - 'Keine Hybridisierung der Orbitale'          # 35 Zeichen
-      - 'Eine sp³-Hybridisierung für vier Partner'   # 42 Zeichen ← KORREKT (D)
-      - 'Eine d²sp³-Hybridisierung im Komplex'       # 40 Zeichen
+      - 'Eine sp-Hybridisierung mit zwei Orbitalen' # 43 Zeichen
+      - 'Eine sp²-Hybridisierung für drei Partner' # 42 Zeichen
+      - 'Keine Hybridisierung der Orbitale' # 35 Zeichen
+      - 'Eine sp³-Hybridisierung für vier Partner' # 42 Zeichen ← KORREKT (D)
+      - 'Eine d²sp³-Hybridisierung im Komplex' # 40 Zeichen
     correct: [3]
 
   - question: 'Was beschreibt die Bindungsordnung?'
     options:
-      - 'Die Reihenfolge der Orbitalbesetzung'    # 38 Zeichen
-      - 'Die Anzahl der Protonen im Molekül'      # 36 Zeichen
-      - 'Die räumliche Anordnung der Atome'       # 35 Zeichen
-      - 'Die Temperatur der Bindungsbildung'      # 36 Zeichen
+      - 'Die Reihenfolge der Orbitalbesetzung' # 38 Zeichen
+      - 'Die Anzahl der Protonen im Molekül' # 36 Zeichen
+      - 'Die räumliche Anordnung der Atome' # 35 Zeichen
+      - 'Die Temperatur der Bindungsbildung' # 36 Zeichen
       - 'Die Anzahl der Bindungen zwischen Atomen' # 41 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was ist ein antibindendes Molekülorbital?'
     options:
-      - 'Ein Orbital das die Bindung schwächt'    # 38 Zeichen ← KORREKT (A)
-      - 'Ein besonders starkes Bindungsorbital'   # 39 Zeichen
-      - 'Ein Orbital nur im Atomkern'             # 29 Zeichen
-      - 'Ein nichtexistierendes Orbital'          # 30 Zeichen
-      - 'Ein Orbital ohne Elektronen'             # 29 Zeichen
+      - 'Ein Orbital das die Bindung schwächt' # 38 Zeichen ← KORREKT (A)
+      - 'Ein besonders starkes Bindungsorbital' # 39 Zeichen
+      - 'Ein Orbital nur im Atomkern' # 29 Zeichen
+      - 'Ein nichtexistierendes Orbital' # 30 Zeichen
+      - 'Ein Orbital ohne Elektronen' # 29 Zeichen
     correct: [0]
 
   - question: 'Wie viele Bindungen hat eine Dreifachbindung?'
     options:
-      - 'Drei Sigma-Bindungen hintereinander'     # 37 Zeichen
-      - 'Eine Sigma- und zwei Pi-Bindungen'       # 35 Zeichen ← KORREKT (B)
-      - 'Drei unabhängige Pi-Bindungen'           # 31 Zeichen
-      - 'Zwei Sigma- und eine Pi-Bindung'         # 33 Zeichen
-      - 'Nur eine sehr starke Bindung'            # 30 Zeichen
+      - 'Drei Sigma-Bindungen hintereinander' # 37 Zeichen
+      - 'Eine Sigma- und zwei Pi-Bindungen' # 35 Zeichen ← KORREKT (B)
+      - 'Drei unabhängige Pi-Bindungen' # 31 Zeichen
+      - 'Zwei Sigma- und eine Pi-Bindung' # 33 Zeichen
+      - 'Nur eine sehr starke Bindung' # 30 Zeichen
     correct: [1]
 
   - question: 'Welchen Winkel hat ein sp³-hybridisiertes Atom?'
     options:
-      - 'Genau neunzig Grad zwischen Bindungen'   # 39 Zeichen
-      - 'Exakt einhundertachtzig Grad linear'     # 37 Zeichen
+      - 'Genau neunzig Grad zwischen Bindungen' # 39 Zeichen
+      - 'Exakt einhundertachtzig Grad linear' # 37 Zeichen
       - 'Etwa einhundertneun Grad Tetraederwinkel' # 42 Zeichen ← KORREKT (C)
-      - 'Genau einhundertzwanzig Grad planar'     # 37 Zeichen
-      - 'Variable Winkel ohne festen Wert'        # 34 Zeichen
+      - 'Genau einhundertzwanzig Grad planar' # 37 Zeichen
+      - 'Variable Winkel ohne festen Wert' # 34 Zeichen
     correct: [2]
 
   - question: 'Was passiert bei der Orbitalüberlappung?'
     options:
-      - 'Die Elektronen werden zerstört'          # 34 Zeichen
-      - 'Die Atomkerne verschmelzen miteinander'  # 40 Zeichen
-      - 'Die Orbitale stoßen sich ab'             # 29 Zeichen
-      - 'Es entstehen Molekülorbitale'            # 30 Zeichen ← KORREKT (D)
-      - 'Die Neutronen werden freigesetzt'        # 34 Zeichen
+      - 'Die Elektronen werden zerstört' # 34 Zeichen
+      - 'Die Atomkerne verschmelzen miteinander' # 40 Zeichen
+      - 'Die Orbitale stoßen sich ab' # 29 Zeichen
+      - 'Es entstehen Molekülorbitale' # 30 Zeichen ← KORREKT (D)
+      - 'Die Neutronen werden freigesetzt' # 34 Zeichen
     correct: [3]
 
   - question: 'Welche Hybridisierung zeigt eine Doppelbindung?'
     options:
-      - 'Immer eine sp³-Hybridisierung'           # 33 Zeichen
-      - 'Keine Hybridisierung erforderlich'       # 35 Zeichen
-      - 'Ausschließlich d-Orbital-Beteiligung'    # 38 Zeichen
-      - 'Eine reine s-Orbital-Kombination'        # 34 Zeichen
-      - 'Typischerweise sp²-Hybridisierung'       # 35 Zeichen ← KORREKT (E)
+      - 'Immer eine sp³-Hybridisierung' # 33 Zeichen
+      - 'Keine Hybridisierung erforderlich' # 35 Zeichen
+      - 'Ausschließlich d-Orbital-Beteiligung' # 38 Zeichen
+      - 'Eine reine s-Orbital-Kombination' # 34 Zeichen
+      - 'Typischerweise sp²-Hybridisierung' # 35 Zeichen ← KORREKT (E)
     correct: [4]

@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was passiert beim Schmelzen eines Feststoffs?'
     options:
-      - 'Übergang von fest zu flüssig'            # 30 Zeichen ← KORREKT (A)
-      - 'Umwandlung von Gas zu Feststoff'         # 33 Zeichen
-      - 'Direkte Verdampfung ohne Zwischenstufe'  # 40 Zeichen
-      - 'Kondensation von Dampf zu Eis'           # 31 Zeichen
-      - 'Zerlegung in die einzelnen Atome'        # 34 Zeichen
+      - 'Übergang von fest zu flüssig' # 30 Zeichen ← KORREKT (A)
+      - 'Umwandlung von Gas zu Feststoff' # 33 Zeichen
+      - 'Direkte Verdampfung ohne Zwischenstufe' # 40 Zeichen
+      - 'Kondensation von Dampf zu Eis' # 31 Zeichen
+      - 'Zerlegung in die einzelnen Atome' # 34 Zeichen
     correct: [0]
 
   - question: 'Was zeigt ein Phasendiagramm?'
     options:
-      - 'Die chemische Zusammensetzung einer Probe'  # 43 Zeichen
-      - 'Aggregatzustände bei Druck und Temperatur'  # 43 Zeichen ← KORREKT (B)
-      - 'Die Geschwindigkeit chemischer Reaktionen'  # 43 Zeichen
+      - 'Die chemische Zusammensetzung einer Probe' # 43 Zeichen
+      - 'Aggregatzustände bei Druck und Temperatur' # 43 Zeichen ← KORREKT (B)
+      - 'Die Geschwindigkeit chemischer Reaktionen' # 43 Zeichen
       - 'Die elektrische Leitfähigkeit eines Stoffes' # 45 Zeichen
-      - 'Die Kristallstruktur von Festkörpern'       # 38 Zeichen
+      - 'Die Kristallstruktur von Festkörpern' # 38 Zeichen
     correct: [1]
 
   - question: 'Was ist der Tripelpunkt?'
     options:
-      - 'Der Punkt höchster Temperatur'           # 31 Zeichen
-      - 'Der Schnittpunkt dreier Phasengrenzen'   # 39 Zeichen
-      - 'Koexistenz aller drei Aggregatzustände'  # 40 Zeichen ← KORREKT (C)
-      - 'Die kritische Dichte eines Stoffes'      # 36 Zeichen
-      - 'Der niedrigste erreichbare Druck'        # 34 Zeichen
+      - 'Der Punkt höchster Temperatur' # 31 Zeichen
+      - 'Der Schnittpunkt dreier Phasengrenzen' # 39 Zeichen
+      - 'Koexistenz aller drei Aggregatzustände' # 40 Zeichen ← KORREKT (C)
+      - 'Die kritische Dichte eines Stoffes' # 36 Zeichen
+      - 'Der niedrigste erreichbare Druck' # 34 Zeichen
     correct: [2]
 
   - question: 'Was ist Sublimation?'
     options:
-      - 'Der Übergang von flüssig zu gasförmig'   # 39 Zeichen
+      - 'Der Übergang von flüssig zu gasförmig' # 39 Zeichen
       - 'Das Schmelzen eines kristallinen Stoffes' # 42 Zeichen
-      - 'Die Kondensation von Dampf zu Wasser'    # 38 Zeichen
+      - 'Die Kondensation von Dampf zu Wasser' # 38 Zeichen
       - 'Direkter Übergang von fest zu gasförmig' # 41 Zeichen ← KORREKT (D)
-      - 'Das Gefrieren einer Flüssigkeit'         # 33 Zeichen
+      - 'Das Gefrieren einer Flüssigkeit' # 33 Zeichen
     correct: [3]
 
   - question: 'Was kennzeichnet den kritischen Punkt?'
     options:
       - 'Gas und Flüssigkeit sind unterscheidbar' # 41 Zeichen
-      - 'Der Stoff existiert nur als Feststoff'   # 39 Zeichen
-      - 'Der Dampfdruck erreicht sein Minimum'    # 38 Zeichen
-      - 'Alle drei Phasen existieren gemeinsam'   # 39 Zeichen
-      - 'Kein Unterschied mehr zwischen Phasen'   # 39 Zeichen ← KORREKT (E)
+      - 'Der Stoff existiert nur als Feststoff' # 39 Zeichen
+      - 'Der Dampfdruck erreicht sein Minimum' # 38 Zeichen
+      - 'Alle drei Phasen existieren gemeinsam' # 39 Zeichen
+      - 'Kein Unterschied mehr zwischen Phasen' # 39 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was beschreibt der Dampfdruck?'
     options:
-      - 'Druck des Dampfes über der Flüssigkeit'  # 40 Zeichen ← KORREKT (A)
-      - 'Die Masse des verdampften Materials'     # 37 Zeichen
-      - 'Die Temperatur beim Siedevorgang'        # 34 Zeichen
-      - 'Die Viskosität einer Flüssigkeit'        # 34 Zeichen
-      - 'Die Wärmeleitfähigkeit des Dampfes'      # 36 Zeichen
+      - 'Druck des Dampfes über der Flüssigkeit' # 40 Zeichen ← KORREKT (A)
+      - 'Die Masse des verdampften Materials' # 37 Zeichen
+      - 'Die Temperatur beim Siedevorgang' # 34 Zeichen
+      - 'Die Viskosität einer Flüssigkeit' # 34 Zeichen
+      - 'Die Wärmeleitfähigkeit des Dampfes' # 36 Zeichen
     correct: [0]
 
   - question: 'Was passiert bei der Kondensation?'
     options:
-      - 'Ein Feststoff wird zu einem Gas'         # 33 Zeichen
-      - 'Gas wird zu einer Flüssigkeit'           # 31 Zeichen ← KORREKT (B)
-      - 'Eine Flüssigkeit gefriert zu Eis'        # 34 Zeichen
-      - 'Ein Kristall schmilzt zu Flüssigkeit'    # 38 Zeichen
-      - 'Ein Stoff zersetzt sich in Elemente'     # 37 Zeichen
+      - 'Ein Feststoff wird zu einem Gas' # 33 Zeichen
+      - 'Gas wird zu einer Flüssigkeit' # 31 Zeichen ← KORREKT (B)
+      - 'Eine Flüssigkeit gefriert zu Eis' # 34 Zeichen
+      - 'Ein Kristall schmilzt zu Flüssigkeit' # 38 Zeichen
+      - 'Ein Stoff zersetzt sich in Elemente' # 37 Zeichen
     correct: [1]
 
   - question: 'Wie verändert sich der Siedepunkt mit dem Druck?'
     options:
-      - 'Er bleibt immer konstant bei 100 Grad'   # 39 Zeichen
-      - 'Er sinkt bei zunehmendem Druck stark'    # 38 Zeichen
-      - 'Er steigt mit zunehmendem Druck an'      # 36 Zeichen ← KORREKT (C)
-      - 'Er ist unabhängig von äußeren Faktoren'  # 40 Zeichen
-      - 'Er schwankt zufällig ohne Zusammenhang'  # 40 Zeichen
+      - 'Er bleibt immer konstant bei 100 Grad' # 39 Zeichen
+      - 'Er sinkt bei zunehmendem Druck stark' # 38 Zeichen
+      - 'Er steigt mit zunehmendem Druck an' # 36 Zeichen ← KORREKT (C)
+      - 'Er ist unabhängig von äußeren Faktoren' # 40 Zeichen
+      - 'Er schwankt zufällig ohne Zusammenhang' # 40 Zeichen
     correct: [2]
 
   - question: 'Was passiert beim Erstarren?'
     options:
-      - 'Eine Substanz wird gasförmig'            # 30 Zeichen
-      - 'Der Stoff löst sich in Wasser auf'       # 35 Zeichen
-      - 'Die Temperatur steigt stark an'          # 32 Zeichen
-      - 'Flüssigkeit wird zum Festkörper'         # 33 Zeichen ← KORREKT (D)
-      - 'Gas kondensiert zu einer Flüssigkeit'    # 38 Zeichen
+      - 'Eine Substanz wird gasförmig' # 30 Zeichen
+      - 'Der Stoff löst sich in Wasser auf' # 35 Zeichen
+      - 'Die Temperatur steigt stark an' # 32 Zeichen
+      - 'Flüssigkeit wird zum Festkörper' # 33 Zeichen ← KORREKT (D)
+      - 'Gas kondensiert zu einer Flüssigkeit' # 38 Zeichen
     correct: [3]
 
   - question: 'Was ist Resublimation?'
     options:
-      - 'Der Übergang von flüssig zu gasförmig'   # 39 Zeichen
-      - 'Das Schmelzen bei hohem Druck'           # 31 Zeichen
-      - 'Die Verdampfung einer Lösung'            # 30 Zeichen
-      - 'Das Sieden bei Normaldruck'              # 28 Zeichen
-      - 'Direkter Übergang von Gas zu Feststoff'  # 40 Zeichen ← KORREKT (E)
+      - 'Der Übergang von flüssig zu gasförmig' # 39 Zeichen
+      - 'Das Schmelzen bei hohem Druck' # 31 Zeichen
+      - 'Die Verdampfung einer Lösung' # 30 Zeichen
+      - 'Das Sieden bei Normaldruck' # 28 Zeichen
+      - 'Direkter Übergang von Gas zu Feststoff' # 40 Zeichen ← KORREKT (E)
     correct: [4]

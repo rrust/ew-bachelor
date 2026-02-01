@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was beschreibt die Elektronegativität?'
     options:
-      - 'Anziehungskraft auf Bindungselektronen'  # 40 Zeichen ← KORREKT (A)
-      - 'Die Anzahl der freien Elektronenpaare'   # 39 Zeichen
-      - 'Die Größe des jeweiligen Atomkerns'      # 36 Zeichen
-      - 'Die Masse der Valenzelektronen'          # 32 Zeichen
-      - 'Die Ladung der inneren Schalen'          # 32 Zeichen
+      - 'Anziehungskraft auf Bindungselektronen' # 40 Zeichen ← KORREKT (A)
+      - 'Die Anzahl der freien Elektronenpaare' # 39 Zeichen
+      - 'Die Größe des jeweiligen Atomkerns' # 36 Zeichen
+      - 'Die Masse der Valenzelektronen' # 32 Zeichen
+      - 'Die Ladung der inneren Schalen' # 32 Zeichen
     correct: [0]
 
   - question: 'Wann ist eine Bindung polar?'
     options:
-      - 'Wenn beide Atome identisch sind'         # 33 Zeichen
-      - 'Bei ungleicher Elektronenverteilung'     # 37 Zeichen ← KORREKT (B)
-      - 'Wenn keine Elektronen geteilt werden'    # 38 Zeichen
+      - 'Wenn beide Atome identisch sind' # 33 Zeichen
+      - 'Bei ungleicher Elektronenverteilung' # 37 Zeichen ← KORREKT (B)
+      - 'Wenn keine Elektronen geteilt werden' # 38 Zeichen
       - 'Bei vollständiger Elektronenübertragung' # 41 Zeichen
-      - 'Wenn das Molekül linear aufgebaut ist'   # 39 Zeichen
+      - 'Wenn das Molekül linear aufgebaut ist' # 39 Zeichen
     correct: [1]
 
   - question: 'Wofür steht VSEPR?'
     options:
-      - 'Eine Methode zur Massenbestimmung'       # 35 Zeichen
-      - 'Ein Verfahren zur Farbmessung'           # 31 Zeichen
-      - 'Valenzelektronenpaar-Abstoßungsmodell'   # 39 Zeichen ← KORREKT (C)
-      - 'Eine Technik zur Temperaturmessung'      # 38 Zeichen
-      - 'Ein System zur Dichteberechnung'         # 35 Zeichen
+      - 'Eine Methode zur Massenbestimmung' # 35 Zeichen
+      - 'Ein Verfahren zur Farbmessung' # 31 Zeichen
+      - 'Valenzelektronenpaar-Abstoßungsmodell' # 39 Zeichen ← KORREKT (C)
+      - 'Eine Technik zur Temperaturmessung' # 38 Zeichen
+      - 'Ein System zur Dichteberechnung' # 35 Zeichen
     correct: [2]
 
   - question: 'Welche Molekülform hat Methan nach VSEPR?'
     options:
-      - 'Eine flache quadratische Anordnung'      # 36 Zeichen
-      - 'Eine lineare Struktur im Raum'           # 31 Zeichen
-      - 'Eine trigonal-pyramidale Form'           # 31 Zeichen
-      - 'Eine tetraedrische Geometrie'            # 30 Zeichen ← KORREKT (D)
-      - 'Eine trigonal-planare Struktur'          # 32 Zeichen
+      - 'Eine flache quadratische Anordnung' # 36 Zeichen
+      - 'Eine lineare Struktur im Raum' # 31 Zeichen
+      - 'Eine trigonal-pyramidale Form' # 31 Zeichen
+      - 'Eine tetraedrische Geometrie' # 30 Zeichen ← KORREKT (D)
+      - 'Eine trigonal-planare Struktur' # 32 Zeichen
     correct: [3]
 
   - question: 'Was ist ein Dipolmoment?'
     options:
-      - 'Die Masse des gesamten Moleküls'         # 33 Zeichen
-      - 'Die Anzahl der Atome in der Formel'      # 36 Zeichen
-      - 'Der Siedepunkt einer Verbindung'         # 33 Zeichen
-      - 'Die Größe des jeweiligen Atomkerns'      # 36 Zeichen
-      - 'Maß für Ladungstrennung im Molekül'      # 36 Zeichen ← KORREKT (E)
+      - 'Die Masse des gesamten Moleküls' # 33 Zeichen
+      - 'Die Anzahl der Atome in der Formel' # 36 Zeichen
+      - 'Der Siedepunkt einer Verbindung' # 33 Zeichen
+      - 'Die Größe des jeweiligen Atomkerns' # 36 Zeichen
+      - 'Maß für Ladungstrennung im Molekül' # 36 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Welches Molekül ist unpolar trotz polarer Bindungen?'
     options:
-      - 'Kohlendioxid durch symmetrischen Bau'    # 38 Zeichen ← KORREKT (A)
-      - 'Wasser wegen der Winkelstruktur'         # 33 Zeichen
-      - 'Ammoniak mit drei Bindungspartnern'      # 36 Zeichen
-      - 'Fluorwasserstoff als kleine Verbindung'  # 40 Zeichen
-      - 'Schwefeldioxid durch gewinkelte Form'    # 38 Zeichen
+      - 'Kohlendioxid durch symmetrischen Bau' # 38 Zeichen ← KORREKT (A)
+      - 'Wasser wegen der Winkelstruktur' # 33 Zeichen
+      - 'Ammoniak mit drei Bindungspartnern' # 36 Zeichen
+      - 'Fluorwasserstoff als kleine Verbindung' # 40 Zeichen
+      - 'Schwefeldioxid durch gewinkelte Form' # 38 Zeichen
     correct: [0]
 
   - question: 'Was beeinflusst die Molekülgeometrie nach VSEPR?'
     options:
-      - 'Nur die Farbe der beteiligten Atome'     # 37 Zeichen
-      - 'Die Abstoßung der Elektronenpaare'       # 35 Zeichen ← KORREKT (B)
-      - 'Die Temperatur der Umgebung allein'      # 36 Zeichen
-      - 'Die Masse der einzelnen Atomkerne'       # 35 Zeichen
-      - 'Der Druck im umgebenden Medium'          # 32 Zeichen
+      - 'Nur die Farbe der beteiligten Atome' # 37 Zeichen
+      - 'Die Abstoßung der Elektronenpaare' # 35 Zeichen ← KORREKT (B)
+      - 'Die Temperatur der Umgebung allein' # 36 Zeichen
+      - 'Die Masse der einzelnen Atomkerne' # 35 Zeichen
+      - 'Der Druck im umgebenden Medium' # 32 Zeichen
     correct: [1]
 
   - question: 'Welche Form hat ein Molekül mit drei bindenden Paaren?'
     options:
-      - 'Eine lineare Anordnung der Atome'        # 34 Zeichen
-      - 'Eine quadratisch-planare Struktur'       # 35 Zeichen
-      - 'Eine trigonal-planare Geometrie'         # 33 Zeichen ← KORREKT (C)
-      - 'Eine oktaedrische Raumstruktur'          # 32 Zeichen
-      - 'Eine T-förmige Molekülstruktur'          # 32 Zeichen
+      - 'Eine lineare Anordnung der Atome' # 34 Zeichen
+      - 'Eine quadratisch-planare Struktur' # 35 Zeichen
+      - 'Eine trigonal-planare Geometrie' # 33 Zeichen ← KORREKT (C)
+      - 'Eine oktaedrische Raumstruktur' # 32 Zeichen
+      - 'Eine T-förmige Molekülstruktur' # 32 Zeichen
     correct: [2]
 
   - question: 'Warum ist Wasser ein polares Molekül?'
     options:
-      - 'Die Bindungen sind vollkommen unpolar'   # 39 Zeichen
-      - 'Es hat eine perfekt lineare Struktur'    # 38 Zeichen
+      - 'Die Bindungen sind vollkommen unpolar' # 39 Zeichen
+      - 'Es hat eine perfekt lineare Struktur' # 38 Zeichen
       - 'Alle Atome haben gleiche Elektronegativität' # 45 Zeichen
       - 'Durch gewinkelte Form und polare Bindungen' # 43 Zeichen ← KORREKT (D)
-      - 'Wegen seiner extrem hohen Atommasse'     # 37 Zeichen
+      - 'Wegen seiner extrem hohen Atommasse' # 37 Zeichen
     correct: [3]
 
   - question: 'Was passiert bei großem Elektronegativitätsunterschied?'
     options:
-      - 'Die Bindung wird zunehmend unpolar'      # 36 Zeichen
-      - 'Die Atome stoßen sich gegenseitig ab'    # 38 Zeichen
-      - 'Das Molekül wird immer symmetrischer'    # 38 Zeichen
-      - 'Die Bindungsenergie sinkt auf null'      # 36 Zeichen
-      - 'Die Bindung wird stärker polar/ionisch'  # 40 Zeichen ← KORREKT (E)
+      - 'Die Bindung wird zunehmend unpolar' # 36 Zeichen
+      - 'Die Atome stoßen sich gegenseitig ab' # 38 Zeichen
+      - 'Das Molekül wird immer symmetrischer' # 38 Zeichen
+      - 'Die Bindungsenergie sinkt auf null' # 36 Zeichen
+      - 'Die Bindung wird stärker polar/ionisch' # 40 Zeichen ← KORREKT (E)
     correct: [4]

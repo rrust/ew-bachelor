@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was entsteht wenn ein Atom Elektronen abgibt?'
     options:
-      - 'Ein positiv geladenes Teilchen'          # 32 Zeichen ← KORREKT (A)
-      - 'Ein negativ geladenes Molekül'           # 31 Zeichen
-      - 'Ein elektrisch neutrales Isotop'         # 33 Zeichen
-      - 'Ein radioaktives Zerfallsprodukt'        # 34 Zeichen
-      - 'Eine stabile Edelgasverbindung'          # 32 Zeichen
+      - 'Ein positiv geladenes Teilchen' # 32 Zeichen ← KORREKT (A)
+      - 'Ein negativ geladenes Molekül' # 31 Zeichen
+      - 'Ein elektrisch neutrales Isotop' # 33 Zeichen
+      - 'Ein radioaktives Zerfallsprodukt' # 34 Zeichen
+      - 'Eine stabile Edelgasverbindung' # 32 Zeichen
     correct: [0]
 
   - question: 'Was ist die Avogadro-Zahl?'
     options:
-      - 'Die Masse eines einzelnen Atoms in Gramm'  # 40 Zeichen
-      - 'Teilchenanzahl in einem Mol Substanz'      # 38 Zeichen ← KORREKT (B)
-      - 'Die Ladung eines einzelnen Elektrons'      # 38 Zeichen
+      - 'Die Masse eines einzelnen Atoms in Gramm' # 40 Zeichen
+      - 'Teilchenanzahl in einem Mol Substanz' # 38 Zeichen ← KORREKT (B)
+      - 'Die Ladung eines einzelnen Elektrons' # 38 Zeichen
       - 'Der Radius eines durchschnittlichen Atoms' # 41 Zeichen
-      - 'Die Bindungsenergie in Kilojoule'          # 34 Zeichen
+      - 'Die Bindungsenergie in Kilojoule' # 34 Zeichen
     correct: [1]
 
   - question: 'Was beschreibt die molare Masse?'
     options:
-      - 'Die Dichte einer chemischen Substanz'    # 38 Zeichen
-      - 'Die Anzahl der Bindungen im Molekül'     # 37 Zeichen
-      - 'Gramm pro Mol einer Substanz'            # 30 Zeichen ← KORREKT (C)
-      - 'Die Schmelztemperatur in Kelvin'         # 33 Zeichen
-      - 'Den Siedepunkt unter Normaldruck'        # 34 Zeichen
+      - 'Die Dichte einer chemischen Substanz' # 38 Zeichen
+      - 'Die Anzahl der Bindungen im Molekül' # 37 Zeichen
+      - 'Gramm pro Mol einer Substanz' # 30 Zeichen ← KORREKT (C)
+      - 'Die Schmelztemperatur in Kelvin' # 33 Zeichen
+      - 'Den Siedepunkt unter Normaldruck' # 34 Zeichen
     correct: [2]
 
   - question: 'Was passiert bei der Bildung eines Anions?'
     options:
-      - 'Das Teilchen verliert mehrere Protonen'  # 40 Zeichen
-      - 'Die Kernladung erhöht sich deutlich'     # 37 Zeichen
-      - 'Das Atom wird zu einem Edelgas'          # 34 Zeichen
-      - 'Es werden Elektronen aufgenommen'        # 34 Zeichen ← KORREKT (D)
-      - 'Die Massenzahl verringert sich stark'    # 38 Zeichen
+      - 'Das Teilchen verliert mehrere Protonen' # 40 Zeichen
+      - 'Die Kernladung erhöht sich deutlich' # 37 Zeichen
+      - 'Das Atom wird zu einem Edelgas' # 34 Zeichen
+      - 'Es werden Elektronen aufgenommen' # 34 Zeichen ← KORREKT (D)
+      - 'Die Massenzahl verringert sich stark' # 38 Zeichen
     correct: [3]
 
   - question: 'Welches Elementsymbol steht für Natrium?'
     options:
-      - 'Das Symbol "N" aus dem Lateinischen'     # 37 Zeichen
-      - 'Die Abkürzung "Nt" für Natrium'          # 34 Zeichen
-      - 'Das Zeichen "So" vom deutschen Namen'    # 38 Zeichen
-      - 'Die Buchstaben "Nm" international'       # 35 Zeichen
-      - 'Das Kürzel "Na" vom lateinischen Namen'  # 40 Zeichen ← KORREKT (E)
+      - 'Das Symbol "N" aus dem Lateinischen' # 37 Zeichen
+      - 'Die Abkürzung "Nt" für Natrium' # 34 Zeichen
+      - 'Das Zeichen "So" vom deutschen Namen' # 38 Zeichen
+      - 'Die Buchstaben "Nm" international' # 35 Zeichen
+      - 'Das Kürzel "Na" vom lateinischen Namen' # 40 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was gibt die Stoffmenge in Mol an?'
     options:
-      - 'Eine bestimmte Teilchenanzahl'           # 31 Zeichen ← KORREKT (A)
-      - 'Das Volumen einer Flüssigkeit'           # 31 Zeichen
-      - 'Die Temperatur einer Reaktion'           # 31 Zeichen
-      - 'Den Druck in einem Behälter'             # 29 Zeichen
-      - 'Die Geschwindigkeit einer Umwandlung'    # 38 Zeichen
+      - 'Eine bestimmte Teilchenanzahl' # 31 Zeichen ← KORREKT (A)
+      - 'Das Volumen einer Flüssigkeit' # 31 Zeichen
+      - 'Die Temperatur einer Reaktion' # 31 Zeichen
+      - 'Den Druck in einem Behälter' # 29 Zeichen
+      - 'Die Geschwindigkeit einer Umwandlung' # 38 Zeichen
     correct: [0]
 
   - question: 'Welches Element hat das Symbol K?'
     options:
-      - 'Das sehr reaktive Erdalkalimetall'       # 35 Zeichen
-      - 'Ein weiches silbriges Alkalimetall'      # 36 Zeichen ← KORREKT (B)
-      - 'Das häufigste Element der Erdkruste'     # 37 Zeichen
-      - 'Ein radioaktives Schwermetall'           # 31 Zeichen
-      - 'Das leichteste aller Halogene'           # 31 Zeichen
+      - 'Das sehr reaktive Erdalkalimetall' # 35 Zeichen
+      - 'Ein weiches silbriges Alkalimetall' # 36 Zeichen ← KORREKT (B)
+      - 'Das häufigste Element der Erdkruste' # 37 Zeichen
+      - 'Ein radioaktives Schwermetall' # 31 Zeichen
+      - 'Das leichteste aller Halogene' # 31 Zeichen
     correct: [1]
 
   - question: 'Wie viele Teilchen enthält ein Mol?'
     options:
-      - 'Genau eine Million Moleküle'             # 29 Zeichen
-      - 'Etwa eine Milliarde Atome'               # 27 Zeichen
-      - 'Rund 6 mal 10 hoch 23 Teilchen'          # 32 Zeichen ← KORREKT (C)
-      - 'Exakt 100 Billionen Partikel'            # 30 Zeichen
-      - 'Ungefähr 10 hoch 10 Einheiten'           # 31 Zeichen
+      - 'Genau eine Million Moleküle' # 29 Zeichen
+      - 'Etwa eine Milliarde Atome' # 27 Zeichen
+      - 'Rund 6 mal 10 hoch 23 Teilchen' # 32 Zeichen ← KORREKT (C)
+      - 'Exakt 100 Billionen Partikel' # 30 Zeichen
+      - 'Ungefähr 10 hoch 10 Einheiten' # 31 Zeichen
     correct: [2]
 
   - question: 'Was kennzeichnet ein Kation?'
     options:
-      - 'Es besitzt mehr negative Ladungsträger'  # 40 Zeichen
-      - 'Es ist immer elektrisch neutral'         # 33 Zeichen
-      - 'Es enthält keine Kernbausteine'          # 32 Zeichen
-      - 'Es trägt positive elektrische Ladung'    # 38 Zeichen ← KORREKT (D)
-      - 'Es besteht nur aus Neutronen'            # 30 Zeichen
+      - 'Es besitzt mehr negative Ladungsträger' # 40 Zeichen
+      - 'Es ist immer elektrisch neutral' # 33 Zeichen
+      - 'Es enthält keine Kernbausteine' # 32 Zeichen
+      - 'Es trägt positive elektrische Ladung' # 38 Zeichen ← KORREKT (D)
+      - 'Es besteht nur aus Neutronen' # 30 Zeichen
     correct: [3]
 
   - question: 'Welche Einheit hat die molare Masse?'
     options:
-      - 'Kilogramm pro Kubikzentimeter'           # 31 Zeichen
-      - 'Joule pro Mol und Kelvin'                # 26 Zeichen
-      - 'Mol pro Liter Lösung'                    # 22 Zeichen
-      - 'Pascal mal Kubikmeter'                   # 23 Zeichen
-      - 'Gramm pro Mol Substanz'                  # 24 Zeichen ← KORREKT (E)
+      - 'Kilogramm pro Kubikzentimeter' # 31 Zeichen
+      - 'Joule pro Mol und Kelvin' # 26 Zeichen
+      - 'Mol pro Liter Lösung' # 22 Zeichen
+      - 'Pascal mal Kubikmeter' # 23 Zeichen
+      - 'Gramm pro Mol Substanz' # 24 Zeichen ← KORREKT (E)
     correct: [4]

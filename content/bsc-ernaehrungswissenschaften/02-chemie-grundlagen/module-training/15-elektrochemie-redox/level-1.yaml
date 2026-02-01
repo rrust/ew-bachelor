@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was passiert bei einer Oxidation?'
     options:
-      - 'Ein Stoff gibt Elektronen ab'            # 30 Zeichen ← KORREKT (A)
-      - 'Ein Teilchen nimmt Elektronen auf'       # 35 Zeichen
-      - 'Protonen werden freigesetzt'             # 29 Zeichen
-      - 'Neutronen werden aufgenommen'            # 30 Zeichen
-      - 'Das Atom zerfällt radioaktiv'            # 30 Zeichen
+      - 'Ein Stoff gibt Elektronen ab' # 30 Zeichen ← KORREKT (A)
+      - 'Ein Teilchen nimmt Elektronen auf' # 35 Zeichen
+      - 'Protonen werden freigesetzt' # 29 Zeichen
+      - 'Neutronen werden aufgenommen' # 30 Zeichen
+      - 'Das Atom zerfällt radioaktiv' # 30 Zeichen
     correct: [0]
 
   - question: 'Was ist eine Reduktion?'
     options:
-      - 'Die Abgabe von Elektronen an Partner'    # 38 Zeichen
-      - 'Aufnahme von Elektronen durch Teilchen'  # 40 Zeichen ← KORREKT (B)
-      - 'Die Spaltung eines Moleküls in Atome'    # 38 Zeichen
+      - 'Die Abgabe von Elektronen an Partner' # 38 Zeichen
+      - 'Aufnahme von Elektronen durch Teilchen' # 40 Zeichen ← KORREKT (B)
+      - 'Die Spaltung eines Moleküls in Atome' # 38 Zeichen
       - 'Verbrennung einer Substanz mit Sauerstoff' # 43 Zeichen
       - 'Die Bildung eines stabilen Ionengitters' # 41 Zeichen
     correct: [1]
 
   - question: 'Was zeigt die Oxidationszahl?'
     options:
-      - 'Die Masse eines Atoms in Gramm'          # 32 Zeichen
-      - 'Die Anzahl der Protonen im Kern'         # 33 Zeichen
-      - 'Formale Ladung eines Atoms im Molekül'   # 39 Zeichen ← KORREKT (C)
-      - 'Die Temperatur einer Reaktion'           # 31 Zeichen
-      - 'Die Geschwindigkeit einer Umwandlung'    # 38 Zeichen
+      - 'Die Masse eines Atoms in Gramm' # 32 Zeichen
+      - 'Die Anzahl der Protonen im Kern' # 33 Zeichen
+      - 'Formale Ladung eines Atoms im Molekül' # 39 Zeichen ← KORREKT (C)
+      - 'Die Temperatur einer Reaktion' # 31 Zeichen
+      - 'Die Geschwindigkeit einer Umwandlung' # 38 Zeichen
     correct: [2]
 
   - question: 'Was ist eine galvanische Zelle?'
     options:
-      - 'Ein Gerät zum Erhitzen von Metallen'     # 37 Zeichen
-      - 'Ein Apparat zur Gasanalyse'              # 28 Zeichen
-      - 'Ein Instrument zur Druckmessung'         # 33 Zeichen
-      - 'Chemische Energie wird zu Strom'         # 33 Zeichen ← KORREKT (D)
-      - 'Ein Gefäß für die Elektrolyse'           # 31 Zeichen
+      - 'Ein Gerät zum Erhitzen von Metallen' # 37 Zeichen
+      - 'Ein Apparat zur Gasanalyse' # 28 Zeichen
+      - 'Ein Instrument zur Druckmessung' # 33 Zeichen
+      - 'Chemische Energie wird zu Strom' # 33 Zeichen ← KORREKT (D)
+      - 'Ein Gefäß für die Elektrolyse' # 31 Zeichen
     correct: [3]
 
   - question: 'Was passiert bei der Elektrolyse?'
     options:
-      - 'Chemische Reaktion ohne Energiezufuhr'   # 39 Zeichen
+      - 'Chemische Reaktion ohne Energiezufuhr' # 39 Zeichen
       - 'Spontane Bildung von elektrischem Strom' # 41 Zeichen
-      - 'Wärme wird in Licht umgewandelt'         # 33 Zeichen
-      - 'Mechanische Energie treibt Reaktion an'  # 40 Zeichen
-      - 'Strom erzwingt eine chemische Reaktion'  # 40 Zeichen ← KORREKT (E)
+      - 'Wärme wird in Licht umgewandelt' # 33 Zeichen
+      - 'Mechanische Energie treibt Reaktion an' # 40 Zeichen
+      - 'Strom erzwingt eine chemische Reaktion' # 40 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was ist das Standardpotential?'
     options:
       - 'Spannung einer Halbzelle gegen Referenz' # 41 Zeichen ← KORREKT (A)
-      - 'Die Stromstärke in einer Batterie'       # 35 Zeichen
-      - 'Der Widerstand eines Leitermaterials'    # 38 Zeichen
-      - 'Die Kapazität eines Akkumulators'        # 34 Zeichen
-      - 'Die Leistung einer Brennstoffzelle'      # 36 Zeichen
+      - 'Die Stromstärke in einer Batterie' # 35 Zeichen
+      - 'Der Widerstand eines Leitermaterials' # 38 Zeichen
+      - 'Die Kapazität eines Akkumulators' # 34 Zeichen
+      - 'Die Leistung einer Brennstoffzelle' # 36 Zeichen
     correct: [0]
 
   - question: 'Welche Elektrode ist die Anode?'
     options:
-      - 'Die Elektrode an der reduziert wird'     # 37 Zeichen
-      - 'Der Ort der Oxidation in der Zelle'      # 36 Zeichen ← KORREKT (B)
-      - 'Die negative Elektrode der Batterie'     # 37 Zeichen
-      - 'Der Pluspol bei der Entladung'           # 31 Zeichen
-      - 'Die Referenzelektrode im System'         # 33 Zeichen
+      - 'Die Elektrode an der reduziert wird' # 37 Zeichen
+      - 'Der Ort der Oxidation in der Zelle' # 36 Zeichen ← KORREKT (B)
+      - 'Die negative Elektrode der Batterie' # 37 Zeichen
+      - 'Der Pluspol bei der Entladung' # 31 Zeichen
+      - 'Die Referenzelektrode im System' # 33 Zeichen
     correct: [1]
 
   - question: 'Was beschreibt die Nernst-Gleichung?'
     options:
-      - 'Den Zusammenhang von Druck und Volumen'  # 40 Zeichen
-      - 'Die Abhängigkeit der Löslichkeit'        # 34 Zeichen
-      - 'Potential abhängig von Konzentration'    # 38 Zeichen ← KORREKT (C)
-      - 'Die Geschwindigkeit der Elektrolyse'     # 37 Zeichen
-      - 'Die Wärmeentwicklung bei Reaktionen'     # 37 Zeichen
+      - 'Den Zusammenhang von Druck und Volumen' # 40 Zeichen
+      - 'Die Abhängigkeit der Löslichkeit' # 34 Zeichen
+      - 'Potential abhängig von Konzentration' # 38 Zeichen ← KORREKT (C)
+      - 'Die Geschwindigkeit der Elektrolyse' # 37 Zeichen
+      - 'Die Wärmeentwicklung bei Reaktionen' # 37 Zeichen
     correct: [2]
 
   - question: 'Was passiert an der Kathode?'
     options:
-      - 'Hier findet die Oxidation statt'         # 33 Zeichen
-      - 'Elektronen werden abgegeben'             # 29 Zeichen
-      - 'Anionen werden angezogen'                # 26 Zeichen
-      - 'Elektronen werden aufgenommen'           # 31 Zeichen ← KORREKT (D)
-      - 'Protonen werden freigesetzt'             # 29 Zeichen
+      - 'Hier findet die Oxidation statt' # 33 Zeichen
+      - 'Elektronen werden abgegeben' # 29 Zeichen
+      - 'Anionen werden angezogen' # 26 Zeichen
+      - 'Elektronen werden aufgenommen' # 31 Zeichen ← KORREKT (D)
+      - 'Protonen werden freigesetzt' # 29 Zeichen
     correct: [3]
 
   - question: 'Was besagen die Faradayschen Gesetze?'
     options:
-      - 'Den Zusammenhang von Strom und Masse'    # 38 Zeichen ← auf E verschoben
+      - 'Den Zusammenhang von Strom und Masse' # 38 Zeichen ← auf E verschoben
       - 'Die Abhängigkeit von Druck und Temperatur' # 43 Zeichen
-      - 'Die Beziehung zwischen Licht und Wärme'  # 40 Zeichen
+      - 'Die Beziehung zwischen Licht und Wärme' # 40 Zeichen
       - 'Das Verhältnis von Kraft und Beschleunigung' # 45 Zeichen
       - 'Zusammenhang zwischen Strommenge und Stoffumsatz' # 48 Zeichen ← KORREKT (E)
     correct: [4]

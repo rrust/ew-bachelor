@@ -7,88 +7,88 @@ questions:
     options:
       - 'Eigenschaften abhängig von Teilchenzahl' # 41 Zeichen ← KORREKT (A)
       - 'Eigenschaften die von der Masse abhängen' # 42 Zeichen
-      - 'Charakteristika nur für reine Stoffe'    # 38 Zeichen
-      - 'Merkmale die von der Farbe abhängen'     # 37 Zeichen
+      - 'Charakteristika nur für reine Stoffe' # 38 Zeichen
+      - 'Merkmale die von der Farbe abhängen' # 37 Zeichen
       - 'Eigenschaften bestimmt durch Kristallform' # 43 Zeichen
     correct: [0]
 
   - question: 'Was passiert mit dem Siedepunkt bei gelöstem Stoff?'
     options:
-      - 'Der Siedepunkt bleibt unverändert'       # 35 Zeichen
-      - 'Der Siedepunkt erhöht sich'              # 28 Zeichen ← KORREKT (B)
-      - 'Der Siedepunkt sinkt deutlich'           # 31 Zeichen
-      - 'Der Siedepunkt schwankt zufällig'        # 34 Zeichen
-      - 'Der Siedepunkt ist nicht messbar'        # 34 Zeichen
+      - 'Der Siedepunkt bleibt unverändert' # 35 Zeichen
+      - 'Der Siedepunkt erhöht sich' # 28 Zeichen ← KORREKT (B)
+      - 'Der Siedepunkt sinkt deutlich' # 31 Zeichen
+      - 'Der Siedepunkt schwankt zufällig' # 34 Zeichen
+      - 'Der Siedepunkt ist nicht messbar' # 34 Zeichen
     correct: [1]
 
   - question: 'Was bewirkt Salz auf Eis?'
     options:
-      - 'Die Schmelztemperatur steigt an'         # 33 Zeichen
-      - 'Das Eis wird stabiler und härter'        # 34 Zeichen
-      - 'Der Gefrierpunkt wird erniedrigt'        # 34 Zeichen ← KORREKT (C)
-      - 'Das Eis verdampft schneller'             # 29 Zeichen
-      - 'Es passiert keine Veränderung'           # 31 Zeichen
+      - 'Die Schmelztemperatur steigt an' # 33 Zeichen
+      - 'Das Eis wird stabiler und härter' # 34 Zeichen
+      - 'Der Gefrierpunkt wird erniedrigt' # 34 Zeichen ← KORREKT (C)
+      - 'Das Eis verdampft schneller' # 29 Zeichen
+      - 'Es passiert keine Veränderung' # 31 Zeichen
     correct: [2]
 
   - question: 'Was ist der osmotische Druck?'
     options:
-      - 'Der Dampfdruck über einer Lösung'        # 34 Zeichen
-      - 'Die Kraft beim Schmelzen von Eis'        # 34 Zeichen
-      - 'Die Kompressibilität einer Flüssigkeit'  # 40 Zeichen
+      - 'Der Dampfdruck über einer Lösung' # 34 Zeichen
+      - 'Die Kraft beim Schmelzen von Eis' # 34 Zeichen
+      - 'Die Kompressibilität einer Flüssigkeit' # 40 Zeichen
       - 'Druck durch Wasserbewegung durch Membran' # 41 Zeichen ← KORREKT (D)
-      - 'Der atmosphärische Luftdruck'            # 30 Zeichen
+      - 'Der atmosphärische Luftdruck' # 30 Zeichen
     correct: [3]
 
   - question: 'Was beschreibt das Raoultsche Gesetz?'
     options:
-      - 'Den Zusammenhang von Druck und Volumen'  # 40 Zeichen
-      - 'Die Abhängigkeit der Viskosität'         # 33 Zeichen
-      - 'Die Änderung der Löslichkeit'            # 30 Zeichen
-      - 'Die Kristallisationsgeschwindigkeit'     # 33 Zeichen
+      - 'Den Zusammenhang von Druck und Volumen' # 40 Zeichen
+      - 'Die Abhängigkeit der Viskosität' # 33 Zeichen
+      - 'Die Änderung der Löslichkeit' # 30 Zeichen
+      - 'Die Kristallisationsgeschwindigkeit' # 33 Zeichen
       - 'Die Dampfdruckerniedrigung durch Lösung' # 41 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Wovon hängen kolligative Eigenschaften ab?'
     options:
-      - 'Von der Anzahl gelöster Teilchen'        # 34 Zeichen ← KORREKT (A)
-      - 'Von der Farbe des gelösten Stoffes'      # 36 Zeichen
-      - 'Von der chemischen Formel allein'        # 34 Zeichen
-      - 'Von der Kristallstruktur des Stoffes'    # 38 Zeichen
+      - 'Von der Anzahl gelöster Teilchen' # 34 Zeichen ← KORREKT (A)
+      - 'Von der Farbe des gelösten Stoffes' # 36 Zeichen
+      - 'Von der chemischen Formel allein' # 34 Zeichen
+      - 'Von der Kristallstruktur des Stoffes' # 38 Zeichen
       - 'Von der Größe der Lösungsmittelmoleküle' # 41 Zeichen
     correct: [0]
 
   - question: 'Was ist eine semipermeable Membran?'
     options:
       - 'Eine für alle Stoffe durchlässige Schicht' # 43 Zeichen
-      - 'Eine selektiv durchlässige Trennschicht'   # 41 Zeichen ← KORREKT (B)
-      - 'Eine vollständig undurchlässige Barriere'  # 42 Zeichen
-      - 'Eine Schicht die nur Gase durchlässt'      # 38 Zeichen
-      - 'Ein Filter der alle Ionen zurückhält'      # 38 Zeichen
+      - 'Eine selektiv durchlässige Trennschicht' # 41 Zeichen ← KORREKT (B)
+      - 'Eine vollständig undurchlässige Barriere' # 42 Zeichen
+      - 'Eine Schicht die nur Gase durchlässt' # 38 Zeichen
+      - 'Ein Filter der alle Ionen zurückhält' # 38 Zeichen
     correct: [1]
 
   - question: 'Was ist der van-t-Hoff-Faktor?'
     options:
-      - 'Die Molmasse eines gelösten Stoffes'     # 37 Zeichen
-      - 'Die Dichte einer wässrigen Lösung'       # 35 Zeichen
+      - 'Die Molmasse eines gelösten Stoffes' # 37 Zeichen
+      - 'Die Dichte einer wässrigen Lösung' # 35 Zeichen
       - 'Faktor für Teilchenzahl durch Dissoziation' # 44 Zeichen ← KORREKT (C)
       - 'Die Temperaturabhängigkeit der Löslichkeit' # 45 Zeichen
-      - 'Der Koeffizient der Wärmeleitfähigkeit'  # 40 Zeichen
+      - 'Der Koeffizient der Wärmeleitfähigkeit' # 40 Zeichen
     correct: [2]
 
   - question: 'Was passiert bei der Osmose?'
     options:
       - 'Gelöste Stoffe wandern durch eine Membran' # 43 Zeichen
-      - 'Die Lösung verdampft vollständig'        # 34 Zeichen
-      - 'Feststoffe lösen sich im Wasser auf'     # 37 Zeichen
+      - 'Die Lösung verdampft vollständig' # 34 Zeichen
+      - 'Feststoffe lösen sich im Wasser auf' # 37 Zeichen
       - 'Wasser wandert zur konzentrierteren Seite' # 43 Zeichen ← KORREKT (D)
-      - 'Die Membran löst sich langsam auf'       # 35 Zeichen
+      - 'Die Membran löst sich langsam auf' # 35 Zeichen
     correct: [3]
 
   - question: 'Welche Stoffe zeigen die größte Siedepunktserhöhung?'
     options:
-      - 'Stoffe die sich gar nicht auflösen'      # 36 Zeichen
-      - 'Substanzen mit sehr großer Molmasse'     # 37 Zeichen
-      - 'Nur reine organische Verbindungen'       # 35 Zeichen
-      - 'Gase unter sehr hohem Druck'             # 29 Zeichen
-      - 'Elektrolyte die in Ionen zerfallen'      # 38 Zeichen ← KORREKT (E)
+      - 'Stoffe die sich gar nicht auflösen' # 36 Zeichen
+      - 'Substanzen mit sehr großer Molmasse' # 37 Zeichen
+      - 'Nur reine organische Verbindungen' # 35 Zeichen
+      - 'Gase unter sehr hohem Druck' # 29 Zeichen
+      - 'Elektrolyte die in Ionen zerfallen' # 38 Zeichen ← KORREKT (E)
     correct: [4]

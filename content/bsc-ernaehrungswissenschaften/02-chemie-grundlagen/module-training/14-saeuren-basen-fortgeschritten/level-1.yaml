@@ -5,90 +5,90 @@ questions:
 
   - question: 'Was gibt der pH-Wert an?'
     options:
-      - 'Die Konzentration an Wasserstoffionen'   # 39 Zeichen ← KORREKT (A)
-      - 'Die Masse des gelösten Salzes'           # 33 Zeichen
-      - 'Die Temperatur der wässrigen Lösung'     # 37 Zeichen
-      - 'Das Volumen der verwendeten Säure'       # 35 Zeichen
-      - 'Die Dichte der chemischen Verbindung'    # 38 Zeichen
+      - 'Die Konzentration an Wasserstoffionen' # 39 Zeichen ← KORREKT (A)
+      - 'Die Masse des gelösten Salzes' # 33 Zeichen
+      - 'Die Temperatur der wässrigen Lösung' # 37 Zeichen
+      - 'Das Volumen der verwendeten Säure' # 35 Zeichen
+      - 'Die Dichte der chemischen Verbindung' # 38 Zeichen
     correct: [0]
 
   - question: 'Was bedeutet ein pH-Wert von sieben?'
     options:
-      - 'Die Lösung ist stark basisch'            # 32 Zeichen
-      - 'Die Lösung ist neutral'                  # 24 Zeichen ← KORREKT (B)
-      - 'Die Lösung ist stark sauer'              # 30 Zeichen
-      - 'Die Lösung enthält kein Wasser'          # 32 Zeichen
-      - 'Die Konzentration ist unbekannt'         # 33 Zeichen
+      - 'Die Lösung ist stark basisch' # 32 Zeichen
+      - 'Die Lösung ist neutral' # 24 Zeichen ← KORREKT (B)
+      - 'Die Lösung ist stark sauer' # 30 Zeichen
+      - 'Die Lösung enthält kein Wasser' # 32 Zeichen
+      - 'Die Konzentration ist unbekannt' # 33 Zeichen
     correct: [1]
 
   - question: 'Was ist ein Puffersystem?'
     options:
-      - 'Eine Lösung die sofort reagiert'         # 33 Zeichen
-      - 'Ein Gemisch das Farbe wechselt'          # 32 Zeichen
-      - 'Lösung die pH-Änderung abfängt'          # 32 Zeichen ← KORREKT (C)
-      - 'Eine rein anorganische Verbindung'       # 35 Zeichen
-      - 'Ein System ohne chemische Reaktion'      # 36 Zeichen
+      - 'Eine Lösung die sofort reagiert' # 33 Zeichen
+      - 'Ein Gemisch das Farbe wechselt' # 32 Zeichen
+      - 'Lösung die pH-Änderung abfängt' # 32 Zeichen ← KORREKT (C)
+      - 'Eine rein anorganische Verbindung' # 35 Zeichen
+      - 'Ein System ohne chemische Reaktion' # 36 Zeichen
     correct: [2]
 
   - question: 'Was beschreibt der pKs-Wert?'
     options:
-      - 'Die Molmasse einer Säure in Gramm'       # 35 Zeichen
-      - 'Die Löslichkeit in organischen Medien'   # 39 Zeichen
-      - 'Die Farbe einer sauren Lösung'           # 31 Zeichen
+      - 'Die Molmasse einer Säure in Gramm' # 35 Zeichen
+      - 'Die Löslichkeit in organischen Medien' # 39 Zeichen
+      - 'Die Farbe einer sauren Lösung' # 31 Zeichen
       - 'Die Säurestärke als logarithmische Größe' # 41 Zeichen ← KORREKT (D)
-      - 'Die Schmelztemperatur der Säure'         # 33 Zeichen
+      - 'Die Schmelztemperatur der Säure' # 33 Zeichen
     correct: [3]
 
   - question: 'Was ist die konjugierte Base einer Säure?'
     options:
-      - 'Eine völlig unabhängige Substanz'        # 34 Zeichen
-      - 'Das Lösungsmittel der Reaktion'          # 32 Zeichen
-      - 'Ein neutrales Salz der Reaktion'         # 33 Zeichen
-      - 'Der Katalysator einer Umwandlung'        # 34 Zeichen
-      - 'Die Säure nach Protonenabgabe'           # 31 Zeichen ← KORREKT (E)
+      - 'Eine völlig unabhängige Substanz' # 34 Zeichen
+      - 'Das Lösungsmittel der Reaktion' # 32 Zeichen
+      - 'Ein neutrales Salz der Reaktion' # 33 Zeichen
+      - 'Der Katalysator einer Umwandlung' # 34 Zeichen
+      - 'Die Säure nach Protonenabgabe' # 31 Zeichen ← KORREKT (E)
     correct: [4]
 
   - question: 'Was ist ein Indikator in der Säure-Base-Chemie?'
     options:
       - 'Stoff der Farbe bei pH-Änderung wechselt' # 41 Zeichen ← KORREKT (A)
-      - 'Ein Katalysator für die Neutralisation'   # 40 Zeichen
+      - 'Ein Katalysator für die Neutralisation' # 40 Zeichen
       - 'Das Lösungsmittel der chemischen Reaktion' # 43 Zeichen
-      - 'Ein Messinstrument für die Temperatur'    # 39 Zeichen
-      - 'Eine Schutzschicht gegen Korrosion'       # 36 Zeichen
+      - 'Ein Messinstrument für die Temperatur' # 39 Zeichen
+      - 'Eine Schutzschicht gegen Korrosion' # 36 Zeichen
     correct: [0]
 
   - question: 'Was ist die Henderson-Hasselbalch-Gleichung?'
     options:
-      - 'Formel für die Dichte von Lösungen'      # 36 Zeichen
-      - 'Berechnung des pH-Werts von Puffern'     # 37 Zeichen ← KORREKT (B)
-      - 'Gleichung für den osmotischen Druck'     # 37 Zeichen
+      - 'Formel für die Dichte von Lösungen' # 36 Zeichen
+      - 'Berechnung des pH-Werts von Puffern' # 37 Zeichen ← KORREKT (B)
+      - 'Gleichung für den osmotischen Druck' # 37 Zeichen
       - 'Formel für die Reaktionsgeschwindigkeit' # 41 Zeichen
-      - 'Berechnung der Aktivierungsenergie'      # 36 Zeichen
+      - 'Berechnung der Aktivierungsenergie' # 36 Zeichen
     correct: [1]
 
   - question: 'Was definiert Brønsted-Lowry als Säure?'
     options:
-      - 'Einen Stoff der Elektronen aufnimmt'     # 37 Zeichen
+      - 'Einen Stoff der Elektronen aufnimmt' # 37 Zeichen
       - 'Eine Substanz die nur in Wasser reagiert' # 42 Zeichen
-      - 'Einen Protonendonator in der Reaktion'   # 39 Zeichen ← KORREKT (C)
-      - 'Ein Metall das Wasserstoff freisetzt'    # 38 Zeichen
-      - 'Eine Verbindung mit Sauerstoffatomen'    # 38 Zeichen
+      - 'Einen Protonendonator in der Reaktion' # 39 Zeichen ← KORREKT (C)
+      - 'Ein Metall das Wasserstoff freisetzt' # 38 Zeichen
+      - 'Eine Verbindung mit Sauerstoffatomen' # 38 Zeichen
     correct: [2]
 
   - question: 'Was passiert am Äquivalenzpunkt einer Titration?'
     options:
-      - 'Die Lösung beginnt zu kristallisieren'   # 39 Zeichen
-      - 'Der Indikator verliert seine Wirkung'    # 38 Zeichen
-      - 'Die Reaktionsgeschwindigkeit wird null'  # 40 Zeichen
+      - 'Die Lösung beginnt zu kristallisieren' # 39 Zeichen
+      - 'Der Indikator verliert seine Wirkung' # 38 Zeichen
+      - 'Die Reaktionsgeschwindigkeit wird null' # 40 Zeichen
       - 'Säure und Base sind vollständig umgesetzt' # 43 Zeichen ← KORREKT (D)
       - 'Die Temperatur erreicht ihren Höchstwert' # 42 Zeichen
     correct: [3]
 
   - question: 'Was ist eine Lewis-Säure?'
     options:
-      - 'Ein Stoff der Protonen abgibt'           # 31 Zeichen
-      - 'Eine Verbindung die Hydroxid bildet'     # 37 Zeichen
-      - 'Ein Molekül das Wasser spaltet'          # 32 Zeichen
+      - 'Ein Stoff der Protonen abgibt' # 31 Zeichen
+      - 'Eine Verbindung die Hydroxid bildet' # 37 Zeichen
+      - 'Ein Molekül das Wasser spaltet' # 32 Zeichen
       - 'Eine Base nach der Arrhenius-Definition' # 41 Zeichen
-      - 'Ein Elektronenpaar-Akzeptor'             # 29 Zeichen ← KORREKT (E)
+      - 'Ein Elektronenpaar-Akzeptor' # 29 Zeichen ← KORREKT (E)
     correct: [4]
